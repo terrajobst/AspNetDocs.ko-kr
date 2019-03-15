@@ -2,7 +2,7 @@
 uid: web-forms/overview/older-versions-getting-started/index
 title: 이전 버전-시작 하는 Web Forms | Microsoft Docs
 author: rick-anderson
-description: ASP.NET Web Forms 4 및 이전 버전의 설명서입니다.
+description: ASP.NET Web Forms 4 및 이전 버전에 대 한 자습서입니다.
 ms.author: riande
 ms.date: 10/18/2014
 ms.assetid: e03585c2-80bf-4083-99ba-9fcbc883ccd8
@@ -11,7 +11,7 @@ msc.type: chapter
 ---
 <a name="older-versions---web-forms-getting-started"></a>이전 버전의 경우 Web Forms 시작
 ====================
-> ASP.NET Web Forms 4 및 이전 버전의 설명서입니다.
+> ASP.NET Web Forms 4 및 이전 버전에 대 한 자습서입니다.
 
 
 - [ASP.NET 4 - Tailspin Spyworks](tailspin-spyworks/index.md)
