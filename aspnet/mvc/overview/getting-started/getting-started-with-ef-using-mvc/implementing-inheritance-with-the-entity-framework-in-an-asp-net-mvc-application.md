@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.assetid: 08834147-77ec-454a-bb7a-d931d2a40dab
 msc.legacyurl: /mvc/overview/getting-started/getting-started-with-ef-using-mvc/implementing-inheritance-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: 79513edce7ac3044f6f547149400cba7d307edfa
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3ebabd626e0b862e09f19552648406aab959f882
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57027640"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423314"
 ---
 # <a name="template-implement-inheritance-with-ef-in-an-aspnet-mvc-5-app"></a>템플릿: ASP.NET MVC 5 앱에서 EF 사용 하 여 상속을 구현 합니다.
 
@@ -73,7 +73,7 @@ TPC 및 TPH 상속 패턴 일반적으로 더 나은 성능을 제공 TPT 상속
 
 ## <a name="update-instructor-and-student"></a>강사 및 학생 업데이트
 
-이제 업데이트를 *Instructor.cs* 하 고 *Sudent.cs* 값에서 상속 하는 *Person.sc*.
+이제 업데이트를 *Instructor.cs* 하 고 *Student.cs* 값에서 상속 하는 *Person.sc*.
 
 *Instructor.cs*를 파생 합니다 `Instructor` 에서 클래스를 `Person` 클래스 및 키 및 이름 필드를 제거 합니다. 해당 코드는 다음 예제와 같이 나타납니다.
 

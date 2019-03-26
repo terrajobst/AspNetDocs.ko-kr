@@ -8,12 +8,12 @@ ms.date: 02/05/2013
 ms.assetid: a8367c6d-ef94-4dff-a010-5eff9e6eea96
 msc.legacyurl: /single-page-application/overview/introduction/other-libraries
 msc.type: authoredcontent
-ms.openlocfilehash: 53c97580b45bb40a6c3256c8038ec5c8b861b69f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5503a00df707ee79282a32c77ed2287e93cf8f48
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57025220"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425472"
 ---
 <a name="know-a-library-other-than-knockout"></a>Knockout 이외의 라이브러리를 알고 있으신가요?
 ====================
@@ -48,7 +48,7 @@ Ember와 SPA 템플릿 Handlebars 및 EmberJS 템플릿을 사용 하 여 Knocko
 
 [핫 수건 SPA 템플릿](../templates/hottowel-template.md)합니다. 이 템플릿은 손쉽게, Knockout, RequireJS 및 Twitter Bootstrap을 비롯 한 여러 JavaScript 라이브러리에서 제공 합니다.
 
-핫 수건 teample 여기에 나열 된 다른 템플릿을 사용 하 여 비교를 빌드할 수 있습니다 고유한 더 완전 한 응용 프로그램을 제공 합니다. 더 많은 개념을 알아야 할 있지만 이러한를 이해 하면이 템플릿을 사용자에 게 원하는 것입니다. 및 초에서 해야 모든 도구와 SPA SPA를 빌드하려면 싶지만 시작, 실행 부하 과다 수건을 사용 하 여 위치를 결정할 수 없는 경우에 작성 해야 합니다.
+Hot Towel 템플릿 여기에 나열 된 다른 템플릿을 사용 하 여 비교를 빌드할 수 있습니다 고유한 더 완전 한 응용 프로그램을 제공 합니다. 더 많은 개념을 알아야 할 있지만 이러한를 이해 하면이 템플릿을 사용자에 게 원하는 것입니다. 및 초에서 해야 모든 도구와 SPA SPA를 빌드하려면 싶지만 시작, 실행 부하 과다 수건을 사용 하 여 위치를 결정할 수 없는 경우에 작성 해야 합니다.
 
 ## <a name="feature-table"></a>기능 테이블
 
@@ -60,7 +60,7 @@ Ember와 SPA 템플릿 Handlebars 및 EmberJS 템플릿을 사용 하 여 Knocko
 |      할 일 샘플       |  &#10003;   |          |    &#10003;    | &#10003;  | &#10003; |           |
 |     기본 템플릿      |             | &#10003; |                |           |          | &#10003;  |
 | 탐색 및 기록 |             | &#10003; |    &#10003;    |           | &#10003; | &#10003;  |
-|        Libaries        |             |          |                |           |          |           |
+|        라이브러리       |             |          |                |           |          |           |
 |        Angular         |             |          |    &#10003;    |           |          |           |
 |    &#8195;백본     |             | &#10003; |                |           |          |           |
 |         Breeze         |             |          |    &#10003;    | &#10003;  |          | &#10003;  |

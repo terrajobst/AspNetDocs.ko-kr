@@ -8,12 +8,12 @@ ms.date: 07/17/2006
 ms.assetid: 56e15b33-93b8-43ad-8e19-44c6647ea05c
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/implementing-optimistic-concurrency-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 700770946caa68fca2b3101dd91a683d10aae052
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 08a9e1db4f8c34b438d45c0fb74d852bbd249615
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57059630"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422781"
 ---
 <a name="implementing-optimistic-concurrency-c"></a>낙관적 동시성 구현(C#)
 ====================
@@ -60,7 +60,7 @@ ms.locfileid: "57059630"
 **그림 2**: Update 또는 Delete 성공에는 원래 값 해야 수 값과 같은 현재 데이터베이스에 대 한 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-cs/_static/image6.png))
 
 
-낙관적 동시성을 구현 하는 방법은 여러 가지가 있습니다 (참조 [Peter A. Bromberg](http://peterbromberg.net/)의 [Optmistic 동시성 업데이트 논리](http://www.eggheadcafe.com/articles/20050719.asp) 간략히 다양 한 옵션에 대 한). ADO.NET 입력 데이터 집합에는 확인란의 눈금만 사용 하 여 구성할 수 있는 한 구현을 제공 합니다. 입력 데이터 집합의 TableAdapter 보강 TableAdapter의 낙관적 동시성을 사용 하도록 설정 `UPDATE` 하 고 `DELETE` 모든의 원래 값의 비교를 포함 하도록 문을 `WHERE` 절. 다음 `UPDATE` 문을 현재 데이터베이스 값 GridView에서 레코드를 업데이트 하는 경우 원래 검색 된 값과 같은 경우에 해당 이름 및 제품의 가격을 예를 들어 업데이트 합니다. `@ProductName` 및 `@UnitPrice` 반면 매개 변수는 사용자가 입력 한 새 값이 포함 `@original_ProductName` 및 `@original_UnitPrice` 편집 단추를 클릭할 때 GridView에 원래 로드 된 값을 포함 합니다.
+낙관적 동시성을 구현 하는 방법은 여러 가지가 있습니다 (참조 [Peter A. Bromberg](http://peterbromberg.net/)의 [낙관적 동시성 업데이트 논리](http://www.eggheadcafe.com/articles/20050719.asp) 간략히 다양 한 옵션에 대 한). ADO.NET 입력 데이터 집합에는 확인란의 눈금만 사용 하 여 구성할 수 있는 한 구현을 제공 합니다. 입력 데이터 집합의 TableAdapter 보강 TableAdapter의 낙관적 동시성을 사용 하도록 설정 `UPDATE` 하 고 `DELETE` 모든의 원래 값의 비교를 포함 하도록 문을 `WHERE` 절. 다음 `UPDATE` 문을 현재 데이터베이스 값 GridView에서 레코드를 업데이트 하는 경우 원래 검색 된 값과 같은 경우에 해당 이름 및 제품의 가격을 예를 들어 업데이트 합니다. `@ProductName` 및 `@UnitPrice` 반면 매개 변수는 사용자가 입력 한 새 값이 포함 `@original_ProductName` 및 `@original_UnitPrice` 편집 단추를 클릭할 때 GridView에 원래 로드 된 값을 포함 합니다.
 
 
 [!code-sql[Main](implementing-optimistic-concurrency-cs/samples/sample1.sql)]

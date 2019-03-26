@@ -8,12 +8,12 @@ ms.date: 03/27/2007
 ms.assetid: 5776281d-4637-4d1e-a65b-2621d2cade44
 msc.legacyurl: /web-forms/overview/data-access/working-with-binary-files/including-a-file-upload-option-when-adding-a-new-record-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 22ca0d85fac598b2f845be4bd5c18fdcbd3bc3a8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 2c23cbac0a94607a05de4e1ef5b8e5b0874a1a5e
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061770"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424198"
 ---
 <a name="including-a-file-upload-option-when-adding-a-new-record-vb"></a>새 레코드를 추가할 때 파일 업로드 옵션 포함(VB)
 ====================
@@ -73,7 +73,7 @@ ms.locfileid: "57061770"
 [!code-vb[Main](including-a-file-upload-option-when-adding-a-new-record-vb/samples/sample2.vb)]
 
 > [!NOTE]
-> 추가 하기 전에 입력 데이터 집합을 저장 했는지를 `InsertWithPicture` BLL 방법입니다. 이후를 `CategoriesTableAdapter` 클래스 코드는 자동으로 생성 된 입력 데이터 집합에 기반한 don t 변경 내용을 입력 데이터 집합에 먼저 저장 하는 경우는 `Adapter` t 성공한 속성에 알고는 `InsertWithPicture` 메서드.
+> 추가 하기 전에 입력 데이터 집합을 저장 했는지를 `InsertWithPicture` BLL 방법입니다. 있으므로 합니다 `CategoriesTableAdapter` 클래스 코드는 자동으로 생성 된 입력 데이터 집합에 기반한 don t 변경 내용을 입력 데이터 집합에 먼저 저장 하는 경우는 `Adapter` 속성에 대 한 알 수 없습니다는 `InsertWithPicture` 메서드.
 
 
 ## <a name="step-3-listing-the-existing-categories-and-their-binary-data"></a>3단계: 기존 범주 및 해당 이진 데이터를 나열합니다.
@@ -231,7 +231,7 @@ Let s 삽입 인터페이스를 테스트 하려면 잠시 및 `ItemInserting` �
 **그림 9**: 경고 메시지를 표시 하는 경우 잘못 된 파일 형식 업로드 됩니다 ([클릭 하 여 큰 이미지 보기](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image16.png))
 
 
-확인 한 후 페이지 사진을 업로드할 필요 및 획득된 t PDF가 아닌 또는 비 JPG 파일을 사용할 수, 유효한 JPG 그림을 사용 하 여 새 범주 추가 브로슈어 필드를 비워 두면 됩니다. 삽입 단추를 클릭 한 후 페이지 포스트백 됩니다 및 새 레코드를 추가할 수는 `Categories` 데이터베이스에 직접 저장 s 이미지를 업로드 한 이진 콘텐츠를 사용 하 여 테이블입니다. GridView 업데이트 되 고 새로 추가 된 범주에 대 한 행을 표시 하지만 새 범주의 사진을 그림 10과 같이 올바르게 렌더링 되지 않습니다.
+확인 한 후 그림을 업로드할 수 없습니다 PDF가 아닌 또는 비 JPG 파일을 사용할 수를 유효한 JPG 그림을 사용 하 여 새 범주를 추가할 필요 브로슈어 필드를 비워 두면 됩니다. 삽입 단추를 클릭 한 후 페이지 포스트백 됩니다 및 새 레코드를 추가할 수는 `Categories` 데이터베이스에 직접 저장 s 이미지를 업로드 한 이진 콘텐츠를 사용 하 여 테이블입니다. GridView 업데이트 되 고 새로 추가 된 범주에 대 한 행을 표시 하지만 새 범주의 사진을 그림 10과 같이 올바르게 렌더링 되지 않습니다.
 
 
 [![새 범주의의 그림 표시 되지 않습니다](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image10.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image17.png)

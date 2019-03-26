@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 84c7baca-1c54-4c44-8f52-4282122d6acb
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-dependency-injection
 msc.type: authoredcontent
-ms.openlocfilehash: 3f9222c7b485f552da91f4875c882db7e03cdd0a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 52aba3fa5948d32180fbf135444433771b17756d
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046750"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425644"
 ---
 # <a name="aspnet-mvc-4-dependency-injection"></a>ASP.NET MVC 4 종속성 주입
 
@@ -361,7 +361,7 @@ ms.locfileid: "57046750"
     (코드 조각- *ASP.NET 종속성 주입-Ex02-랩 등록 CustomViewPageActivator*)
 
     [!code-csharp[Main](aspnet-mvc-4-dependency-injection/samples/sample16.cs)]
-5. ASP.NET MVC 4 기본 종속성 확인자 인스턴스의 바꿉니다 **UnityDependencyResolver**합니다. 이 작업을 수행 하려면 바꿉니다 **Initialise** 콘텐츠를 다음 코드로 메서드:
+5. ASP.NET MVC 4 기본 종속성 확인자 인스턴스의 바꿉니다 **UnityDependencyResolver**합니다. 이 작업을 수행 하려면 바꿉니다 **초기화** 콘텐츠를 다음 코드로 메서드:
 
     (코드 조각- *ASP.NET 종속성 주입-Ex02-랩 업데이트 종속성 확인자*)
 
@@ -508,7 +508,7 @@ ms.locfileid: "57046750"
 
 설치할 수 있습니다 **Microsoft Visual Studio Express 2012 for Web** 또는 다른 &quot;Express&quot; 사용 하 여 버전을 **[Microsoft Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx)**. 다음 지침을 설치 하는 데 필요한 단계를 안내 *Visual studio Express 2012 for Web* 사용 하 여 *Microsoft Web Platform Installer*합니다.
 
-1. 로 이동 [ [ https://go.microsoft.com/? linkid 9810169 =](https://go.microsoft.com/?linkid=9810169)](https://go.microsoft.com/?linkid=9810169)합니다. 또는, 이미 설치한 경우 웹 플랫폼 설치 관리자를 열 수 있습니다 하 고 제품에 대 한 검색 &quot; <em>Visual Studio Express 2012 for Windows Azure SDK를 사용 하 여 Web</em>&quot;합니다.
+1. [https://go.microsoft.com/?linkid=9810169](https://go.microsoft.com/?linkid=9810169)으로 이동합니다. 또는, 이미 설치한 경우 웹 플랫폼 설치 관리자를 열 수 있습니다 하 고 제품에 대 한 검색 &quot; <em>Visual Studio Express 2012 for Windows Azure SDK를 사용 하 여 Web</em>&quot;합니다.
 2. 클릭할 **지금 설치**합니다. 없는 경우 **웹 플랫폼 설치 관리자** 를 다운로드 하 여 앱을 먼저 설치 리디렉션됩니다.
 3. 한 번 **웹 플랫폼 설치 관리자** 열려 있는 경우 클릭 **설치** 는 설치를 시작 합니다.
 

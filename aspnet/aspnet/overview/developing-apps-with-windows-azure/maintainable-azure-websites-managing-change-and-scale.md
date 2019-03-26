@@ -8,18 +8,18 @@ ms.date: 07/16/2014
 ms.assetid: ecfd0eb4-c4ad-44e6-9db9-a2a66611ff6a
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/maintainable-azure-websites-managing-change-and-scale
 msc.type: authoredcontent
-ms.openlocfilehash: bc6de2f0c8b2cd958c198abb90fc4ad97613e973
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 315e89c81782edf0875c65afd27153102d733050
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57054540"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424250"
 ---
 <a name="hands-on-lab-maintainable-azure-websites-managing-change-and-scale"></a>실습: 유지 관리 가능한 Azure 웹 사이트: 변경 및 확장 관리
 ====================
 [웹 캠프 팀](https://twitter.com/webcamps)
 
-[웹 캠프 학습 키트 다운로드](http://aka.ms/webcamps-training-kit)
+[웹 캠프 학습 키트 다운로드](https://aka.ms/webcamps-training-kit)
 
 > Microsoft Azure를 통해 쉽게 빌드 및 프로덕션 환경에 웹 사이트를 배포 합니다. 응용 프로그램 라이브 되 면 완료 되지 않았음을 있습니다 하지만 하면 이제 막 시작! 변경 요구 사항, 데이터베이스 업데이트, 확장성 등을 처리 해야 합니다. 다행 스럽게도 Azure App Service에서는 다양 한 원활 하 게 실행 하 여 사이트를 유지 하는 데 유용한 기능을 사용 하 여 설명 합니다.
 >
@@ -31,7 +31,7 @@ ms.locfileid: "57054540"
 >
 > SQL Database를 사용 하 여 응용 프로그램의 새 버전을 배포 하는 경우 생산성 데이터베이스를 최신 상태로 유지 하는 것이 반드시 합니다. 에 감사 드립니다 **Entity Framework Code First 마이그레이션을**, 개발 및 데이터 모델의 배포 환경을 몇 분 안에 업데이트 간소화 되었습니다. 이 실습 랩에서 Microsoft Azure에서 프로덕션 환경에 웹 앱을 배포할 때 발생할 수 있습니다 다른 항목에 표시 됩니다.
 >
-> 웹 캠프 교육 키트에서에서 사용할 수 있는 모든 샘플 코드 및 코드 조각 포함 됩니다 [ http://aka.ms/webcamps-training-kit ](http://aka.ms/webcamps-training-kit)합니다.
+> 웹 캠프 교육 키트에서에서 사용할 수 있는 모든 샘플 코드 및 코드 조각 포함 됩니다 [ https://aka.ms/webcamps-training-kit ](https://aka.ms/webcamps-training-kit)합니다.
 >
 > 이 항목의 자세한 자세한 검사를 참조 하세요. 합니다 [전자책은 Azure를 사용 하 여 실제 클라우드 앱 빌드](building-real-world-cloud-apps-with-windows-azure/introduction.md)합니다.
 
@@ -62,10 +62,10 @@ ms.locfileid: "57054540"
 - [GIT 버전 제어 시스템입니다.](http://git-scm.com/download)
 - Microsoft Azure 구독
 
-    - 등록을 [무료 평가판](http://aka.ms/watk-freetrial)
-    - 인 경우 Visual Studio Professional, Test Professional, Premium 또는 Ultimate with MSDN 또는 MSDN 플랫폼 구독자를 활성화 하 [MSDN 혜택](http://aka.ms/watk-msdn) 개발 및 Azure에서 테스트를 시작 하려면 지금
-    - [BizSpark](http://aka.ms/watk-bizspark) Azure를 자동으로 수신 하는 멤버는 Visual Studio Ultimate with MSDN subscription을 통해 혜택
-    - 멤버는 [Microsoft Partner Network](http://aka.ms/watk-mpn) Cloud Essentials 프로그램에는 무료로 월간 Azure 크레딧 수신
+    - 등록을 [무료 평가판](https://aka.ms/watk-freetrial)
+    - 인 경우 Visual Studio Professional, Test Professional, Premium 또는 Ultimate with MSDN 또는 MSDN 플랫폼 구독자를 활성화 하 [MSDN 혜택](https://aka.ms/watk-msdn) 개발 및 Azure에서 테스트를 시작 하려면 지금
+    - [BizSpark](https://aka.ms/watk-bizspark) Azure를 자동으로 수신 하는 멤버는 Visual Studio Ultimate with MSDN subscription을 통해 혜택
+    - 멤버는 [Microsoft Partner Network](https://aka.ms/watk-mpn) Cloud Essentials 프로그램에는 무료로 월간 Azure 크레딧 수신
 
 <a id="Setup"></a>
 ### <a name="setup"></a>설정

@@ -2,24 +2,24 @@
 uid: web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4
 title: ASP.NET Web API 사용 하 여 OData v4의는 개방형 형식만 | Microsoft Docs
 author: microsoft
-description: OData v4의 개방형 형식 stuctured 있는 형식인 형식 정의에서 선언 된 속성 외에 동적 속성을 포함 합니다. 열기...
+description: OData v4의 개방형 형식인 경우 형식 정의에서 선언 된 속성 외에 동적 속성을 포함 하는 구조적된 형식 열기...
 ms.author: riande
 ms.date: 09/15/2014
 ms.assetid: f25f5ac5-4800-4950-abe5-c97750a27fc6
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4
 msc.type: authoredcontent
-ms.openlocfilehash: 77771d85532b8b622c2ad4ca219a38990e474c9c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f901e5efc38e5cda6eb606b6bc1ecfe7dea3599c
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57042590"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423433"
 ---
 <a name="open-types-in-odata-v4-with-aspnet-web-api"></a>ASP.NET Web API 사용 하 여 OData v4의 종류를 열려면
 ====================
 by [Microsoft](https://github.com/microsoft)
 
-> OData v4의는 *형식을 열* stuctured 형식이 형식 정의에서 선언 된 속성 외에 동적 속성을 포함 하는 합니다. 개방형 형식 데이터 모델에 유연성을 추가할 수 있습니다. 이 자습서에서는 ASP.NET Web API OData의 개방형 형식을 사용 하는 방법을 보여 줍니다.
+> OData v4의는 *형식을 열* 형식 정의에서 선언 된 속성 외에 동적 속성을 포함 하는 구조화 된 형식입니다. 개방형 형식 데이터 모델에 유연성을 추가할 수 있습니다. 이 자습서에서는 ASP.NET Web API OData의 개방형 형식을 사용 하는 방법을 보여 줍니다.
 > 
 > 이 자습서에서는 ASP.NET Web API에서 OData 끝점을 만드는 방법을 이미 알고 있다고 가정 합니다. 그렇지 않은 경우 먼저 읽으십시오 [OData v4 엔드포인트 만들기](create-an-odata-v4-endpoint.md) 첫 번째입니다.
 > 

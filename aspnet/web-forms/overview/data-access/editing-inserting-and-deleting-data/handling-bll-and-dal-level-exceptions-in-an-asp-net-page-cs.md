@@ -8,12 +8,12 @@ ms.date: 07/17/2006
 ms.assetid: 49d8a66c-3ea8-4087-839f-179d1d94512a
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 0d4fa3e3e7bbe335af31423ec4fdd60e9791c2b0
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: dea7b1e8cd5be795acd27868066384fe52b065f7
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57043310"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422196"
 ---
 <a name="handling-bll--and-dal-level-exceptions-in-an-aspnet-page-c"></a>ASP.NET 페이지에서 BLL 및 DAL 수준의 예외 처리(C#)
 ====================
@@ -98,7 +98,7 @@ GridView의 스마트 태그에서 편집 사용 확인란을 마지막으로 �
 
 ## <a name="step-2-gracefully-handling-dal-level-exceptions"></a>2단계: DAL 수준의 예외를 정상적으로 처리
 
-사용자 편집된 제품의 이름, 가격 및 재고 단위에 대 한 올바른 값을 입력 하는 경우 편집할 수는 GridView 쌓아가는 작동을 하는 동안 잘못 된 값을 입력 하면 예외가 발생 합니다. 예를 들어, 생략를 `ProductName` 원인 값을 [NoNullAllowedException](https://msdn.microsoft.com/library/default.asp?url=/library/cpref/html/frlrfsystemdatanonullallowedexceptionclasstopic.asp) 이후 throw 될 수는 `ProductName` 속성에는 `ProdcutsRow` 클래스에 해당 `AllowDBNull` 속성이로 설정 `false`같으면는 데이터베이스 다운 된 경우는 `SqlException` 데이터베이스에 연결 하려고 할 때 TableAdapter에서 throw 됩니다. 작업을 수행 하지 않고 이러한 예외 버블링 데이터 액세스 계층에서 비즈니스 논리 계층으로 다음 ASP.NET 페이지에 마지막으로 ASP.NET 런타임에서 합니다.
+사용자 편집된 제품의 이름, 가격 및 재고 단위에 대 한 올바른 값을 입력 하는 경우 편집할 수는 GridView 쌓아가는 작동을 하는 동안 잘못 된 값을 입력 하면 예외가 발생 합니다. 예를 들어, 생략를 `ProductName` 원인 값을 [NoNullAllowedException](https://msdn.microsoft.com/library/default.asp?url=/library/cpref/html/frlrfsystemdatanonullallowedexceptionclasstopic.asp) 이후 throw 될 수는 `ProductName` 속성에는 `ProductsRow` 클래스에 해당 `AllowDBNull` 속성이로 설정 `false`같으면는 데이터베이스 다운 된 경우는 `SqlException` 데이터베이스에 연결 하려고 할 때 TableAdapter에서 throw 됩니다. 작업을 수행 하지 않고 이러한 예외 버블링 데이터 액세스 계층에서 비즈니스 논리 계층으로 다음 ASP.NET 페이지에 마지막으로 ASP.NET 런타임에서 합니다.
 
 웹 응용 프로그램은 구성 하는 방법 및 응용 프로그램을 방문 하는 여부에 따라 `localhost`, 일반 서버 오류 페이지, 자세한 오류 보고서 또는 친숙 한 웹 페이지에서 처리 되지 않은 예외가 발생할 수 있습니다. 참조 [웹 응용 프로그램 오류 처리 ASP.NET](http://www.15seconds.com/issue/030102.htm) 하며 [customErrors 요소](https://msdn.microsoft.com/library/h0hfz6fc(VS.80).aspx) ASP.NET 런타임 예외로에 응답 하는 방법에 대 한 자세한 내용은 합니다.
 

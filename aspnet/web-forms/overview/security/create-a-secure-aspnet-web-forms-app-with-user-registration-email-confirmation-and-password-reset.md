@@ -8,12 +8,12 @@ ms.date: 10/02/2014
 ms.assetid: 0a8d6044-5fab-4213-82d6-5618d5601358
 msc.legacyurl: /web-forms/overview/security/create-a-secure-aspnet-web-forms-app-with-user-registration-email-confirmation-and-password-reset
 msc.type: authoredcontent
-ms.openlocfilehash: acc13776840408756901e20589b9efacc83ff2a9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1bd90f0ceddee7d9e18c1cac2fadfb2c84841f19
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57053650"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424640"
 ---
 <a name="create-a-secure-aspnet-web-forms-app-with-user-registration-email-confirmation-and-password-reset-c"></a>사용자 등록, 전자 메일 확인 및 암호 재설정 기능이 있는 보안 ASP.NET Web Forms 앱 만들기(C#)
 ====================
@@ -64,7 +64,7 @@ ms.locfileid: "57053650"
 
 ## <a name="email-confirmation"></a>전자 메일 확인
 
-다른 사용자에 가장 하지 않는 것을 확인 하려면 새 사용자를 등록 하는 동안 전자 메일을 확인 하는 것이 좋습니다 (즉, 다른 사용자의 전자 메일을 사용 하 여 등록 하지 않은). 방지 하려는 토론 포럼을 설치한 가정 `"bob@cpandl.com"` 로 등록에서 `"joe@contoso.com"`합니다. 전자 메일 확인 하지 않고 `"joe@contoso.com"` 앱에서 원치 않는 전자 메일을 가져올 수 없습니다. Bob 실수로 등록 가정 `"bib@cpandl.com"` 를 눈치채 및 그 앱에 올바른 전자 메일 없는 때문에 암호 복구를 사용할 수 있습니다. 전자 메일 확인은 봇부터에서만 제한 된 보호를 제공 하 고 결정된 스패머가에서 보호를 제공 하지 않습니다.
+다른 사용자에 가장 하지 않는 것을 확인 하려면 새 사용자를 등록 하는 동안 전자 메일을 확인 하는 것이 좋습니다 (즉, 다른 사용자의 전자 메일을 사용 하 여 등록 하지 않은). 방지 하려는 토론 포럼을 설치한 가정 `"bob@cpandl.com"` 로 등록에서 `"joe@contoso.com"`합니다. 전자 메일 확인 하지 않고 `"joe@contoso.com"` 앱에서 원치 않는 전자 메일을 가져올 수 없습니다. 등록 실수로 Bob 가정 `"bib@cpandl.com"` 를 눈치채 및 그 앱에 올바른 전자 메일 없는 때문에 암호 복구를 사용할 수 있습니다. 전자 메일 확인은 봇부터에서만 제한 된 보호를 제공 하 고 결정된 스패머가에서 보호를 제공 하지 않습니다.
 
 일반적으로 새 사용자가 메일, SMS 문자 메시지 또는 다른 메커니즘 학인합니다 전에 웹 사이트에 데이터를 게시 하지 못하도록 좋습니다. 아래 섹션에서 전자 메일 확인을 사용 하도록 설정 하 고 새로 등록 된 사용자가 자신의 전자 메일 확인 될 때까지 로그인 하지 못하도록 하려면 코드를 수정 합니다. 이 자습서에서는 SendGrid 메일 서비스를 사용 합니다.
 
@@ -152,7 +152,7 @@ ms.locfileid: "57053650"
 <a id="rsend"></a>
 ## <a name="resend-email-confirmation-link"></a>전자 메일 확인 링크 다시 보내기
 
-사용자는 새 로컬 계정을 만들고 나면 로그온 하기 전에 사용 해야 하는 확인 링크를 전자 메일로 전송 되는 합니다. 사용자 실수로 삭제 확인 전자 메일 또는 전자 메일 절대 도착 하는 경우 확인 링크 다시 전송 해야 합니다. 코드 변경에는이 기능을 사용 하는 방법을 보여 줍니다.
+사용자는 새 로컬 계정을 만들고 나면 로그온 하기 전에 사용 해야 하는 확인 링크를 전자 메일로 전송 되는 합니다. 사용자 확인 전자 메일을 실수로 삭제 또는 전자 메일 절대 도착 하는 경우 확인 링크 다시 전송 해야 합니다. 코드 변경에는이 기능을 사용 하는 방법을 보여 줍니다.
 
 1. Visual Studio에서 엽니다는 **Login.aspx.cs** 코드 숨김 및 후 다음 이벤트 처리기를 추가 합니다 `LogIn` 이벤트 처리기:   
 

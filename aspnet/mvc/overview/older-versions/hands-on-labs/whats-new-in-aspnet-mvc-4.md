@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 48f7feb3-872f-485d-b96f-e30011ff8c4a
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/whats-new-in-aspnet-mvc-4
 msc.type: authoredcontent
-ms.openlocfilehash: 9d5a51a5887ecbbc96fce1416b88aa849bc3674e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0c4b7b2641c91cbb63ec46fa707c004f7273a303
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57053500"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422690"
 ---
 # <a name="whats-new-in-aspnet-mvc-4"></a>ASP.NET MVC 4의 새로운 기능
 
@@ -144,7 +144,7 @@ ASP.NET MVC 4는 체계적인 디자인 패턴 및 ASP.NET 및.NET framework의 
     *jQuery 유효성 검사*
 
     > [!NOTE]
-    > 두 섹션에서는 첫 번째 섹션에서 로그인 하는 알림 altenativelly google (기본적으로 사용 안 함)와 같은 다른 인증 서비스를 사용 하 여 로그인 하면 두 번째 섹션에 사이트에서 등록 계정으로 기록할 수 있습니다.
+    > 사이트에서 등록 된 계정을 사용 하 여에 로그인 할 수 있습니다 또는 google (기본적으로 사용 안 함)와 같은 다른 인증 서비스를 사용 하 여 두 번째 섹션에서 로그인 할 수 있습니다 첫 번째 섹션의 섹션에서는 두 개의 로그를 확인 합니다.
 5. 디버거를 중지 하 고 Visual Studio로 돌아가서 브라우저를 닫습니다.
 6. 파일을 엽니다 **AuthConfig.cs** 아래에 **앱\_시작** 폴더입니다.
 7. Google 클라이언트를 등록 하려면 마지막 줄에서 주석 제거 *OAuth* 인증 합니다.
@@ -429,7 +429,7 @@ ASP.NET MVC 4 웹 사이트에 모바일 및 태블릿 브라우저의 개발을
 <a id="Task_2_-_Creating_Mobile_Views"></a>
 #### <a name="task-2---creating-mobile-views"></a>작업 2-모바일 뷰 만들기
 
-이 태스크에서는 모바일 장치에서 더 나은 appareance에 적용할 콘텐츠를 사용 하 여 인덱스 보기의 모바일 버전을 만들어집니다.
+이 태스크에서는 모바일 장치에서 더 좋은 모양을에 적용할 콘텐츠를 사용 하 여 인덱스 보기의 모바일 버전을 만들어집니다.
 
 1. 복사 합니다 **Views\Home\Index.cshtml** 확인 하 고 붙여 넣어 복사본 만들기, 새 파일 이름 바꾸기 **Index.Mobile.cshtml**합니다.
 2. 열린 새 생성 **Index.Mobile.cshtml** 살펴보고로 기존 &lt;ul&gt; 이 코드를 사용 하 여 태그입니다. 이 작업을 수행 하 여 업데이트 됩니다. 합니다 &lt;ul&gt; jQuery에서 모바일 테마를 사용 하려면 jQuery 모바일 데이터 주석 사용한 태그입니다.
@@ -512,15 +512,15 @@ jQuery Mobile의 기본 테마에는 문자를 지정 된 5 견본 포함 (a, b,
 
     새 메서드를 사용 하 여 부분 뷰 **ViewContext.HttpContext.GetOverriddenBrowser()** 웹 요청의 원점을 확인 하 여 데스크톱 또는 모바일 뷰를 전환 하려면 해당 링크를 표시 합니다.
 
-    합니다 **GetOverridenBrowser** 메서드가 반환 되는 **HttpBrowserCapabilitiesBase** 사용자 에이전트 요청에 대 한 현재 설정에 해당 하는 인스턴스 (실제 또는 재정의). 같은 속성을 가져오는 데이 값을 사용할 수 있습니다 **IsMobileDevice**합니다.
+    합니다 **GetOverriddenBrowser** 메서드가 반환 되는 **HttpBrowserCapabilitiesBase** 사용자 에이전트 요청에 대 한 현재 설정에 해당 하는 인스턴스 (실제 또는 재정의). 같은 속성을 가져오는 데이 값을 사용할 수 있습니다 **IsMobileDevice**합니다.
 
     ![부분 뷰 ViewSwitcher](whats-new-in-aspnet-mvc-4/_static/image30.png "ViewSwitcher 부분 뷰")
 
     *ViewSwitcher 부분 뷰*
 4. 엽니다는 **ViewSwitcherController.cs** 클래스에는 **컨트롤러** 폴더입니다. 체크 아웃 해당 SwitchView 작업 ViewSwitcher 구성 요소의 링크에서 호출 되 고 새로운 HttpContext 메서드를 확인할 수 있습니다.
 
-    - 합니다 **HttpContext.ClearOverridenBrowser()** 메서드는 현재 요청에 대 한 재정의 된 사용자 에이전트를 제거 합니다.
-    - 합니다 **HttpContext.SetOverridenBrowser()** 메서드는 지정 된 사용자 에이전트를 사용 하 여 요청의 실제 사용자 에이전트 값을 재정의 합니다.  
+    - 합니다 **HttpContext.ClearOverriddenBrowser()** 메서드는 현재 요청에 대 한 재정의 된 사용자 에이전트를 제거 합니다.
+    - 합니다 **HttpContext.SetOverriddenBrowser()** 메서드는 지정 된 사용자 에이전트를 사용 하 여 요청의 실제 사용자 에이전트 값을 재정의 합니다.  
         ![ViewSwitcher 컨트롤러](whats-new-in-aspnet-mvc-4/_static/image31.png "ViewSwitcher 컨트롤러")  
 *ViewSwitcher 컨트롤러*
 
@@ -580,8 +580,8 @@ jQuery Mobile의 기본 테마에는 문자를 지정 된 5 견본 포함 (a, b,
 > [!NOTE]
 > 이러한 방식의 iPhone 데모를 위해 간소화 되었으며 (에 대 한 예제 테스트는 대/소문자 구분) 모든 iPhone 사용자 에이전트 문자열에 대 한 예상 대로 작동 하지 않을 수 있습니다에 대 한 요청을 테스트 합니다.
 
-4. 복사본을 만듭니다를  **\_Layout.Mobile.cshtml** 파일을 **Views\Shared** 폴더에 복사를 바꾸고 &quot; **\_Layout.iPhone.csthml**&quot;.
-5. 오픈  **\_Layout.iPhone.csthml** 이전 단계에서 만들었습니다.
+4. 복사본을 만듭니다를  **\_Layout.Mobile.cshtml** 파일을 **Views\Shared** 폴더에 복사를 바꾸고 &quot; **\_Layout.iPhone.cshtml**&quot;.
+5. 오픈  **\_Layout.iPhone.cshtml** 이전 단계에서 만들었습니다.
 6. 으로 설정 된 데이터 역할 특성을 사용 하 여 div 요소를 찾습니다 **페이지** 변경 합니다 **데이터 테마** 특성을 &quot; **는**&quot;합니다.
 
 
@@ -904,7 +904,7 @@ Microsoft.NET Framework 4.5에서는 C# 및 Visual Basic.NET 프로그래밍의 
 1. 로 이동 합니다 [Windows Azure 관리 포털](https://manage.windowsazure.com/) 구독과 연결 된 Microsoft 자격 증명을 사용 하 여 로그인 합니다.
 
     > [!NOTE]
-    > Windows Azure를 사용 하 여 10 개의 ASP.NET 웹 사이트를 무료로 호스트할 수 있으며 다음 트래픽 증가 따라 확장할 수 있습니다. 등록할 수 있습니다 [여기](http://aka.ms/aspnet-hol-azure)합니다.
+    > Windows Azure를 사용 하 여 10 개의 ASP.NET 웹 사이트를 무료로 호스트할 수 있으며 다음 트래픽 증가 따라 확장할 수 있습니다. 등록할 수 있습니다 [여기](https://aka.ms/aspnet-hol-azure)합니다.
 
     ![Windows Azure 포털에 로그온](whats-new-in-aspnet-mvc-4/_static/image61.png "Windows Azure 포털에 로그온")
 

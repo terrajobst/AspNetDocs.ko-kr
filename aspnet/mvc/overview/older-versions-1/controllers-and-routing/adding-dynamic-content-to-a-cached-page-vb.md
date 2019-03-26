@@ -8,12 +8,12 @@ ms.date: 01/27/2009
 ms.assetid: 68acd884-fb57-4486-a1be-aaa93e380780
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/adding-dynamic-content-to-a-cached-page-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 121a3a35c8255f1423d7008930315f76bbb8e8f9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b361470c769b61a7b407797158eb695fe5084eda
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57053100"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423496"
 ---
 <a name="adding-dynamic-content-to-a-cached-page-vb"></a>캐시된 페이지에 동적 콘텐츠 추가(VB)
 ====================
@@ -72,7 +72,7 @@ RenderNews 메서드 WriteSubstitution() 메서드에 전달 됩니다. RenderNe
 
 목록 4 두 메서드를 노출 하는 Visual Basic 모듈을 포함 되어 있습니다. RenderBanner() 및 RenderBannerInternal() 합니다. RenderBanner() 메서드를 실제 도우미 메서드를 나타냅니다. 이 메서드는 다른 도우미 메서드와 마찬가지로 뷰에서 Html.RenderBanner()를 호출할 수 있도록 표준 ASP.NET MVC HtmlHelper 클래스를 확장 합니다.
 
-RenderBanner() 메서드 RenderBannerInternal() WriteSubsitution() 메서드에 전달 HttpResponse.WriteSubstitution() 메서드를 호출 합니다.
+RenderBanner() 메서드 RenderBannerInternal() WriteSubstitution() 메서드에 전달 HttpResponse.WriteSubstitution() 메서드를 호출 합니다.
 
 RenderBannerInternal() 메서드는 전용 메서드입니다. 이 메서드는 도우미 메서드도 노출할 수 없습니다. RenderBannerInternal() 메서드는 임의로 세 배너 광고 이미지 목록에서 하나의 배너 광고 이미지를 반환합니다.
 
