@@ -8,12 +8,12 @@ ms.date: 08/03/2007
 ms.assetid: 57459065-ed7c-4dfe-ac9c-54c093abc261
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/working-with-computed-columns-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 5ef548c627cd40159bb3961f479401657a2ac394
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 097d68bdcde7de713ce2e7c829c0611d4c82d64d
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57041940"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424757"
 ---
 <a name="working-with-computed-columns-c"></a>계산 열 작업(C#)
 ====================
@@ -32,7 +32,7 @@ Microsoft SQL Server에 대 한 허용  *[계산 열](https://msdn.microsoft.com
 
 계산 임시 SQL 문을 사용 하 여 TableAdapter 사용 하 여 열을 사용 하는 한 가지 문제는 TableAdapter s `INSERT` 및 `UPDATE` 쿼리 TableAdapter 구성 마법사를 완료할 때마다 자동으로 다시 생성 됩니다. 계산된 열에서 수동으로 제거 되므로 합니다 `INSERT` 및 `UPDATE` 쿼리 마법사를 다시 실행 하는 경우에 나타납니다. Tableadapter는 저장된 프로시저를 사용 하지 않습니다 하지만이 오류에서 저하, 3 단계에서에서 제기 하는 자체 쿼크를 갖지 합니다.
 
-이 자습서에서는 계산된 열을 추가 합니다 `Suppliers` Northwind 데이터베이스의 테이블을 만든 다음이 테이블의 계산된 열과 작동 하도록 해당 TableAdapter. TableAdapter 구성 마법사를 사용 하는 경우이 사용자 지정 유효 하지 t 손실 되도록 하는 대신 임시 SQL 문이 저장된 프로시저를 사용 하 여 TableAdapter를 얻게 됩니다.
+이 자습서에서는 계산된 열을 추가 합니다 `Suppliers` Northwind 데이터베이스의 테이블을 만든 다음이 테이블의 계산된 열과 작동 하도록 해당 TableAdapter. TableAdapter 구성 마법사를 사용 하는 경우 사용자 지정이 손실 되지 않도록 하는 대신 임시 SQL 문이 저장된 프로시저를 사용 하 여 TableAdapter를 얻게 됩니다.
 
 Let s 시작!
 

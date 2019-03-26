@@ -8,12 +8,12 @@ ms.date: 07/27/2010
 ms.assetid: 18700815-8e6c-4489-91af-7ea9dab6529e
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/use-ajax-to-deliver-dynamic-updates
 msc.type: authoredcontent
-ms.openlocfilehash: e902881d3dab6a902cb747a197a32f317d199723
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 71e566523d658eb8198453f354a12e63a4c38495
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57025990"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58421039"
 ---
 <a name="use-ajax-to-deliver-dynamic-updates"></a>AJAX를 사용하여 동적 업데이트 제공
 ====================
@@ -78,7 +78,7 @@ AJAX 사용 하 여 세부 정보 보기에서 등록 동작 메서드를 호출
 
 핵심 ASP.NET AJAX 클라이언트 쪽 스크립트 라이브러리를 참조 하는 첫 번째 라이브러리입니다. 이 파일 (압축) 크기가 약 24 k 핵심 클라이언트 쪽 AJAX 기능이 포함 되어 있습니다. 두 번째 라이브러리에는 ASP.NET MVC의 기본 제공 AJAX 도우미 메서드 (곧 사용 하겠습니다)와 통합 되는 유틸리티 함수가 포함 됩니다.
 
-RSVP 컨트롤러에서 우리의 RSVPForEvent 작업 메서드를 호출 하는 AJAX 호출을 수행 하는 발견 된 "등록 되지 않습니다이 이벤트에 대 한" 메시지를 대신에서는 대신 렌더링 되도록 링크는 푸시 될 때 이전에 추가한 보기 템플릿 코드를 업데이트 한 다음 수 있습니다. 및 사용자 RSVPs:
+RSVP 컨트롤러에서 우리의 RSVPForEvent 작업 메서드를 호출 하는 AJAX 호출을 수행 하는 "등록 되지 않습니다이 이벤트에 대 한" 메시지를 출력 하는 대신에서는 대신 렌더링 되도록 링크는 푸시 될 때 이전에 추가한 보기 템플릿 코드를 업데이트 한 다음 수 있습니다. 및 사용자 RSVPs:
 
 [!code-aspx[Main](use-ajax-to-deliver-dynamic-updates/samples/sample6.aspx)]
 

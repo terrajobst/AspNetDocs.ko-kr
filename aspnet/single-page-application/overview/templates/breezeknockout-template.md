@@ -8,12 +8,12 @@ ms.date: 01/30/2013
 ms.assetid: 3bd94827-3c59-448f-abc3-36e6df4858db
 msc.legacyurl: /single-page-application/overview/templates/breezeknockout-template
 msc.type: authoredcontent
-ms.openlocfilehash: 006d360748674a645ceddb82017f68b0f80f041b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 478ee9f851a395c68701347c04534bfe72d94512
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57025840"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424861"
 ---
 <a name="breezeknockout-template"></a>Breeze/Knockout 템플릿
 ====================
@@ -83,7 +83,7 @@ Ctrl-F5 키를 눌러 빌드하고 디버깅 하지 않고 응용 프로그램�
 
 유효성 검사 논리는 간단 하 여 클라이언트 쪽 수행된. 서버 모델 클래스에 유효성 검사 특성은 클라이언트에 전파 하 고 클라이언트는 서버에 연결 하기 전에 자동으로 실행 합니다.
 
-네트워크 트래픽을 검토 합니다. 설치 오류를 검색 하는 경우 서버에 대 한 호출 되었는지 확인 합니다. "/ Api/Todo/SaveChanges"로 POST 요청에 유효한 각 변경이 했습니다. Breeze 변경 내용을 번들 및 보내 함께 단일 요청으로 Web API 컨트롤러에 `SaveChanges` 메서드. PUT, POST 및 각 항목에 대 한 요청을 개별적으로 삭제 합니다. 그러면 KockoutJS SPA 템플릿에서 다릅니다.
+네트워크 트래픽을 검토 합니다. 설치 오류를 검색 하는 경우 서버에 대 한 호출 되었는지 확인 합니다. "/ Api/Todo/SaveChanges"로 POST 요청에 유효한 각 변경이 했습니다. Breeze 변경 내용을 번들 및 보내 함께 단일 요청으로 Web API 컨트롤러에 `SaveChanges` 메서드. PUT, POST 및 각 항목에 대 한 요청을 개별적으로 삭제 합니다. 그러면 KnockoutJS SPA 템플릿에서 다릅니다.
 
 ## <a name="peek-inside"></a>내 보기
 
@@ -99,7 +99,7 @@ KnockoutJS SPA 템플릿 조사 했습니다, 하는 경우이 매우 친숙 해
 
 ![](http://www.breezejs.com/sites/all/images/spa-template/ServerArchitecture.png)
 
-기본 아키텍처 KockoutJS SPA 템플릿와 같습니다. 그러나 구현은 훨씬 더 간단 합니다. Dto 삭제 하 고 Entity Framework 세부 정보를 대부분 Breeze.NET에 게 위임 된 키를 누릅니다.
+기본 아키텍처 KnockoutJS SPA 템플릿와 같습니다. 그러나 구현은 훨씬 더 간단 합니다. Dto 삭제 하 고 Entity Framework 세부 정보를 대부분 Breeze.NET에 게 위임 된 키를 누릅니다.
 
 ## <a name="next-steps"></a>다음 단계
 

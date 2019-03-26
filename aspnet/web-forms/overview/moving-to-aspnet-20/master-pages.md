@@ -8,12 +8,12 @@ ms.date: 02/20/2005
 ms.assetid: 9c0cce4d-efd9-4c14-b0e8-a1a140abb3f4
 msc.legacyurl: /web-forms/overview/moving-to-aspnet-20/master-pages
 msc.type: authoredcontent
-ms.openlocfilehash: f40eb338a1b6b8eebb6578dd7938e96a05b1617f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 644beb37bf893a590be03dd0929c5870af6fbe87
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57055120"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425771"
 ---
 <a name="master-pages"></a>마스터 페이지
 ====================
@@ -94,7 +94,7 @@ ASP.NET 2.0에서 마스터 페이지에서 보기 좋게 사항은 모두 이�
 
 1. 테이블의 각 셀에 커서를 놓고 설정 합니다 *valign* 속성을 *위쪽*합니다.
 2. 도구 상자에서 테이블 (헤더 셀입니다.)의 맨 위 셀에는 각각의 ContentPlaceHolder 컨트롤로 삽입
-3. 이 각각의 ContentPlaceHolder 컨트롤로 삽입할 때에 행 높이 차지 하는 거의 전체 페이지 그림 4 에서처럼 알 수 있습니다. Dont 신경 써야 하는 시점에서.
+3. 이 각각의 ContentPlaceHolder 컨트롤로 삽입할 때에 행 높이 차지 하는 거의 전체 페이지 그림 4 에서처럼 알 수 있습니다. 없는 고려해 야 하는 시점에서.
 
 
 ![빈 공간이 ContentPlaceHolder로 같은 셀에서](master-pages/_static/image1.gif)
@@ -127,7 +127,7 @@ ASP.NET 2.0에서 마스터 페이지에서 보기 좋게 사항은 모두 이�
 2. 선택 exercise1.master 선택에서 마스터 페이지 대화 상자 그림 7 에서처럼 합니다.
 3. 새 콘텐츠 페이지를 추가 하려면 확인을 클릭 합니다.
 
-새 콘텐츠 페이지는 마스터 페이지에 있는 각 ContentPlaceHolder 컨트롤에 대 한 콘텐츠 컨트롤을 사용 하 여 Visual Studio에 나타납니다. 기본적으로 콘텐츠 컨트롤은 빈 사용자 고유의 콘텐츠를 추가할 수 있도록 합니다. 분류 처럼을 마스터 페이지의 ContentPlaceHolder 컨트롤로의 콘텐츠를 사용할 수 있도록 하는 경우 단순히 스마트 태그 기호 (컨트롤의 오른쪽 위 모서리에 있는 작은 검은색 화살표)를 클릭 하 고 선택 *마스터 콘텐츠 기본값으로* 스마트 태그에 표시 된 것 처럼 **그림 8**합니다. 이렇게 하면 메뉴 항목으로 변경 *사용자 지정 콘텐츠 만들기*합니다. 이때 클릭 하는 특정 콘텐츠 컨트롤에 대 한 사용자 지정 콘텐츠를 정의할 수 있도록 마스터 페이지에서 콘텐츠를 제거 합니다.
+새 콘텐츠 페이지는 마스터 페이지에 있는 각 ContentPlaceHolder 컨트롤에 대 한 콘텐츠 컨트롤을 사용 하 여 Visual Studio에 나타납니다. 기본적으로 콘텐츠 컨트롤은 빈 사용자 고유의 콘텐츠를 추가할 수 있도록 합니다. 마스터 페이지의 ContentPlaceHolder 컨트롤로의 콘텐츠를 사용할 수 있도록 하려는 경우 단순히 스마트 태그 기호 (컨트롤의 오른쪽 위 모서리에 있는 작은 검은색 화살표)를 클릭 하 고 선택 *마스터 콘텐츠 기본값으로* 스마트 태그에 표시 된 것 처럼 **그림 8**합니다. 이렇게 하면 메뉴 항목으로 변경 *사용자 지정 콘텐츠 만들기*합니다. 이때 클릭 하는 특정 콘텐츠 컨트롤에 대 한 사용자 지정 콘텐츠를 정의할 수 있도록 마스터 페이지에서 콘텐츠를 제거 합니다.
 
 
 ![기본적으로 마스터 페이지 콘텐츠를 콘텐츠 컨트롤을 설정 합니다.](master-pages/_static/image4.gif)

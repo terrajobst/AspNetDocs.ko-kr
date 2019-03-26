@@ -8,12 +8,12 @@ ms.date: 03/08/2013
 ms.assetid: db31e909-563a-4516-aadd-62aa210ac7e4
 msc.legacyurl: /single-page-application/overview/templates/breezeangular-template
 msc.type: authoredcontent
-ms.openlocfilehash: a3e8b42cdadf99df6971a278834b1429e129ce72
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a3021f166262ee953b0cbe9ea88762a385925b88
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57041190"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423106"
 ---
 <a name="breezeangular-template"></a>Breeze/Angular 템플릿
 ====================
@@ -30,7 +30,7 @@ Breeze/Angular SPA 템플릿 변형 켜져 합니다 [KnockoutJS SPA 템플릿](
 
 ![](http://www.breezejs.com/sites/all/images/spa-template/NgRunningTodoPage.png)
 
-외부적으로, 응용 프로그램에서는 KnockoutJS SPA 템플릿 매우 유사 합니다. 하지만 내부적 상당히 다릅니다. KnockoutJS 템플릿 Knockout을 사용 하 여 데이터 바인딩 및 데이터 액세스에 대 한 원시 AJAX에 대 한 합니다. Breeze/Angular 템플릿 데이터 액세스에 대 한 데이터 바인딩 및 설치에 대 한 Angular를 사용합니다. 이러한 libaries 페이지 탐색 및 기록을 비롯 한 추가 기능을 사용 합니다.
+외부적으로, 응용 프로그램에서는 KnockoutJS SPA 템플릿 매우 유사 합니다. 하지만 내부적 상당히 다릅니다. KnockoutJS 템플릿 Knockout을 사용 하 여 데이터 바인딩 및 데이터 액세스에 대 한 원시 AJAX에 대 한 합니다. Breeze/Angular 템플릿 데이터 액세스에 대 한 데이터 바인딩 및 설치에 대 한 Angular를 사용합니다. 이러한 라이브러리를 페이지 탐색 및 기록을 비롯 한 추가 기능을 사용 합니다.
 
 응용 프로그램에 대 한 페이지는 다음과 같습니다.
 
@@ -89,7 +89,7 @@ Ctrl-F5 키를 눌러 빌드하고 디버깅 하지 않고 응용 프로그램�
 
 유효성 검사 논리는 간단 하 여 클라이언트 쪽 수행된. 서버 모델 클래스에 유효성 검사 특성은 클라이언트에 전파 하 고 클라이언트는 서버에 연결 하기 전에 자동으로 실행 합니다.
 
-네트워크 트래픽을 검토 합니다. 설치 오류를 검색 하는 경우 서버에 대 한 호출 되었는지 확인 합니다. "/ Api/Todo/SaveChanges"로 POST 요청에 유효한 각 변경이 했습니다. Breeze 변경 내용을 번들 및 보내 함께 단일 요청으로 Web API 컨트롤러에 `SaveChanges` 메서드. PUT, POST 및 각 항목에 대 한 요청을 개별적으로 삭제 합니다. 그러면 KockoutJS SPA 템플릿에서 다릅니다.
+네트워크 트래픽을 검토 합니다. 설치 오류를 검색 하는 경우 서버에 대 한 호출 되었는지 확인 합니다. "/ Api/Todo/SaveChanges"로 POST 요청에 유효한 각 변경이 했습니다. Breeze 변경 내용을 번들 및 보내 함께 단일 요청으로 Web API 컨트롤러에 `SaveChanges` 메서드. PUT, POST 및 각 항목에 대 한 요청을 개별적으로 삭제 합니다. 그러면 KnockoutJS SPA 템플릿에서 다릅니다.
 
 또한 페이지에 대 한를 TodoList 사이 전환 하는 경우 네트워크 트래픽이 것을 볼 수 있습니다. 로컬 설치 캐시 하도록 제한 된 쿼리 때문입니다.
 
@@ -107,7 +107,7 @@ UI 아키텍처 컨트롤러에서 지 원하는 프레젠테이션 코드에서
 
 ![](http://www.breezejs.com/sites/all/images/spa-template/ServerArchitecture.png)
 
-기본 아키텍처 KockoutJS SPA 템플릿와 같습니다. 그러나 구현은 훨씬 더 간단 합니다. Dto 삭제 하 고 Entity Framework 세부 정보를 대부분 Breeze.NET에 게 위임 된 키를 누릅니다.
+기본 아키텍처 KnockoutJS SPA 템플릿와 같습니다. 그러나 구현은 훨씬 더 간단 합니다. Dto 삭제 하 고 Entity Framework 세부 정보를 대부분 Breeze.NET에 게 위임 된 키를 누릅니다.
 
 ## <a name="next-steps"></a>다음 단계
 

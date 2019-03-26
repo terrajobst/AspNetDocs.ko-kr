@@ -8,12 +8,12 @@ ms.date: 09/13/2006
 ms.assetid: 06c6bbd2-4bdc-435b-87a3-df2c868f4baa
 msc.legacyurl: /web-forms/overview/data-access/custom-button-actions/adding-and-responding-to-buttons-to-a-gridview-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 0834d43f95bd19fffb603dcde640714bd779fd80
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3ebbf60ada1f50bb704118d0e81fb3c97c7e4386
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57031560"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422233"
 ---
 <a name="adding-and-responding-to-buttons-to-a-gridview-vb"></a>GridView에 단추를 추가하고 응답(VB)
 ====================
@@ -113,7 +113,7 @@ FormView s 템플릿에 모든 제품을 중단 단추를 추가 하기 전에 �
 **그림 8**: 명명 된 새 ObjectDataSource 만들려면 `SuppliersProductsDataSource` ([큰 이미지를 보려면 클릭](adding-and-responding-to-buttons-to-a-gridview-vb/_static/image20.png))
 
 
-이 ObjectDataSource의 ProductsBLL 클래스를 사용 하도록 구성 `GetProductsBySupplierID(supplierID)` 메서드 (그림 9 참조). 시이 GridView의 제품 가격을 조정 하면, 하는 동안 t를 사용 하 여 편집 또는 GridView에서 기능을 삭제 하는 기본 제공 됩니다. 따라서 설정할 수 있습니다 (없음) 드롭 다운 목록 ObjectDataSource s에 대 한 UPDATE, INSERT 및 DELETE 탭 합니다.
+이 ObjectDataSource의 ProductsBLL 클래스를 사용 하도록 구성 `GetProductsBySupplierID(supplierID)` 메서드 (그림 9 참조). 이 GridView 조정 제품 s 가격를 허용 하는 동안 편집 또는 GridView에서 기능을 삭제 하는 기본 제공을 사용 하지 않습니다. 따라서 설정할 수 있습니다 (없음) 드롭 다운 목록 ObjectDataSource s에 대 한 UPDATE, INSERT 및 DELETE 탭 합니다.
 
 
 [![S GetProductsBySupplierID(supplierID) 메서드 ProductsBLL 클래스를 사용 하는 데이터 원본의 구성](adding-and-responding-to-buttons-to-a-gridview-vb/_static/image22.png)](adding-and-responding-to-buttons-to-a-gridview-vb/_static/image21.png)

@@ -8,12 +8,12 @@ ms.date: 01/12/2012
 ms.assetid: 8921d7f2-21f0-427a-8b27-2df7251174b0
 msc.legacyurl: /mvc/overview/older-versions/working-with-the-dropdownlist-box-and-jquery/examining-how-aspnet-mvc-scaffolds-the-dropdownlist-helper
 msc.type: authoredcontent
-ms.openlocfilehash: 542790b7f475cc641ed26ff3187c25c25118e0ed
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ef83ef22e17ab7bda035d0f11ab936fe56d58800
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57037830"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423028"
 ---
 <a name="examining--how--aspnet-mvc-scaffolds-the-dropdownlist-helper"></a>ASP.NET MVC가 DropDownList 도우미를 스캐폴드하는 방법 검사
 ====================
@@ -197,7 +197,7 @@ ViewModels 폴더에서 새 클래스를 만들고 `AlbumSelectListViewModel`합
 
 ### <a name="which-approach-should-you-use"></a>어떤 방법을 언제 사용 하나요?
 
-표시 된 세 방법 모두 acceptible 됩니다. 대부분의 개발자 explictily 전달 하려는 합니다 `SelectList` 에 `DropDownList` 를 사용 하 여를 `ViewBag`합니다. 이 방법은 컬렉션에 대 한 적합 한 이름을 사용 하 여 유연성을 제공 하는 추가 이점이 있습니다. 중요 한 점은 이름을 지정할 수 없습니다는 `ViewBag SelectList` 모델 속성 이름이 같은 개체입니다.
+표시 된 세 방법 모두 허용 됩니다. 많은 개발자가 명시적으로 전달 하려는 합니다 `SelectList` 에 `DropDownList` 를 사용 하 여를 `ViewBag`합니다. 이 방법은 컬렉션에 대 한 적합 한 이름을 사용 하 여 유연성을 제공 하는 추가 이점이 있습니다. 중요 한 점은 이름을 지정할 수 없습니다는 `ViewBag SelectList` 모델 속성 이름이 같은 개체입니다.
 
 일부 개발자는 ViewModel 접근을 선호 합니다. 다른 자세한 태그를 고려 하 고 HTML ViewModel 방식의 단점은 생성 합니다.
 

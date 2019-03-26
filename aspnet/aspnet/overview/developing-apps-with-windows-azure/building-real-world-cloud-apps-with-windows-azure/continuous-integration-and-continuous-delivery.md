@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: eaece9f5-f80c-428b-b771-5db66d275b7d
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/continuous-integration-and-continuous-delivery
 msc.type: authoredcontent
-ms.openlocfilehash: f701488025ec84a17651f9abff43f84531d35689
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b384fe08ebd6a106b9469debfb13014e87534b8f
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046940"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425927"
 ---
 <a name="continuous-integration-and-continuous-delivery-building-real-world-cloud-apps-with-azure"></a>연속 통합 및 지속적인 업데이트 (Azure 사용 하 여 빌드 실제 클라우드 앱)
 ====================
@@ -32,7 +32,7 @@ ms.locfileid: "57046940"
 
 일반적으로 개발 및 스테이징 환경에 지속적인 업데이트를 수행 하는 것이 좋습니다. Microsoft에도 대부분의 팀은 프로덕션 배포에 대 한 수동 검토 및 승인 프로세스를 필요합니다. 프로덕션 배포 하는지 확인 하려는 개발 팀에서 사용자를 키 지원의 경우 또는 트래픽이 낮은 기간 동안 사용할 수 있을 때 발생 합니다. 이지만 되도록 개발자가 체크 인을 변경 하 고 환경 개발 및 테스트 환경을 완전히 자동화할 수 없도록 nothing 승인 테스트에 대 한 설정입니다.
 
-다음에서 다이어그램 [는 Microsoft Patterns and Practices 전자책 지속적인 업데이트에 대 한](http://aka.ms/ReleasePipeline) 일반적인 워크플로 보여 줍니다. 원래 컨텍스트의 전체 크기 이미지를 표시를 클릭 합니다.
+다음에서 다이어그램 [는 Microsoft Patterns and Practices 전자책 지속적인 업데이트에 대 한](https://aka.ms/ReleasePipeline) 일반적인 워크플로 보여 줍니다. 원래 컨텍스트의 전체 크기 이미지를 표시를 클릭 합니다.
 
 [![연속 배달 워크플로](continuous-integration-and-continuous-delivery/_static/image1.png)](https://msdn.microsoft.com/library/dn449955.aspx)
 
@@ -66,7 +66,7 @@ Azure DevOps 서비스 턴키 프로젝트 관리, 팀 공동 작업 및 소스 
 
 다음 리소스를 참조 하세요.
 
-- [Team Foundation Server 2012 사용 하 여 릴리스 파이프라인 빌드](http://aka.ms/ReleasePipeline)합니다. 전자책, 실습 및 샘플 코드에서 Microsoft Patterns and Practices, 지속적인 업데이트를 자세히 소개를 제공 합니다. Visual Studio Lab Management 및 Visual Studio Release Management의 내부적 사용 합니다.
+- [Team Foundation Server 2012 사용 하 여 릴리스 파이프라인 빌드](https://aka.ms/ReleasePipeline)합니다. 전자책, 실습 및 샘플 코드에서 Microsoft Patterns and Practices, 지속적인 업데이트를 자세히 소개를 제공 합니다. Visual Studio Lab Management 및 Visual Studio Release Management의 내부적 사용 합니다.
 - [ALM Ranger DevOps 도구 및 지침](https://aka.ms/vsarsolutions/)합니다. ALM Rangers DevOps Workbench 샘플 도우미 솔루션 및 공동 작업 패턴을 사용 하 여 실질적인 지침을 도입 &amp; 사례 책 *TFS 2012를 사용 하 여 릴리스 파이프라인을 만들*를 시작 하는 좋은 방법으로 DevOps의 개념과 &amp; Release Management를 TFS 2012에 대 한 및 평가 합니다. 지침에는 한 번 빌드하여 여러 환경에 배포 하는 방법을 보여 줍니다.
 - [Visual Studio 2012를 사용한 연속 배달 테스트](https://msdn.microsoft.com/library/jj159345.aspx)합니다. 전자책을 참고 하 여 Microsoft Patterns and Practices에 지속적인 업데이트를 사용 하 여 자동화 된 테스트를 통합 하는 방법에 설명 합니다.
 - [WindowsAzureDeploymentTracker](https://github.com/RyanTBerry/WindowsAzureDeploymentTracker). 소스 코드를 캡처하고 (레이블 기반)는 TFS에서 빌드, 빌드, 패키지의 특정 측면을 구성 하는 DevOps 역할에서 허용 하는 사용자가 Azure로 푸시 설계 된 도구입니다. 도구 "롤백" 이전에 배포 된 버전으로 작업을 사용 하도록 설정 하기 위해 배포 프로세스를 추적 합니다. 이 도구는 외부 종속성이 없습니다 하며 TFS Api 및 Azure SDK에는 독립 실행형를 사용 하 여 작동할 수 있습니다.

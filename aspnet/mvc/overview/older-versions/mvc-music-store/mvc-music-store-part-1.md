@@ -8,12 +8,12 @@ ms.date: 04/21/2011
 ms.assetid: bd356ca3-5bdb-4067-9dac-c9e9923a86e8
 msc.legacyurl: /mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-1
 msc.type: authoredcontent
-ms.openlocfilehash: d84a525221e40b79853be55069367134d17fb5ec
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0f252fd5c0e5962353720e47ba888d2b6b325a1c
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57035960"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58421910"
 ---
 <a name="part-1-overview-and-file-new-project"></a>1부: 개요 및 파일->새 프로젝트
 ====================
@@ -60,7 +60,7 @@ MVC Music Store 자습서 응용 프로그램을 소개 하 고 웹 개발을 �
 
 ![](mvc-music-store-part-1/_static/image6.jpg)
 
-고객 faceing 페이지 외에도 앨범, 관리자 만들 수 있는 편집의 목록을 보여 주는 관리자 섹션을 빌드 및 앨범을 삭제도 했습니다.
+고객 지향 페이지 외에도 앨범, 관리자 만들 수 있는 편집의 목록을 보여 주는 관리자 섹션을 빌드 및 앨범을 삭제도 했습니다.
 
 ![](mvc-music-store-part-1/_static/image7.jpg)
 

@@ -8,12 +8,12 @@ ms.date: 03/31/2014
 ms.assetid: 9e10a700-8d91-4d2e-a31e-b8b569fe867c
 msc.legacyurl: /web-api/overview/advanced/configuring-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 57066b8ce3254caf59cf927d16d96f8bc22a8acd
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 270268b77f398084169843e20b0a2bf9f1c2a011
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046480"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423158"
 ---
 <a name="configuring-aspnet-web-api-2"></a>ASP.NET Web API 2 구성
 ====================
@@ -30,7 +30,7 @@ ms.locfileid: "57046480"
 <a id="settings"></a>
 ## <a name="configuration-settings"></a>Configuration 설정
 
-Web API 구성 설정에 정의 된 [HttpConfiguration](https://msdn.microsoft.com/library/system.web.http.httpconfiguration.aspx) 클래스입니다.
+웹 API 구성 설정에 정의 된 [HttpConfiguration](https://msdn.microsoft.com/library/system.web.http.httpconfiguration.aspx) 클래스.
 
 | 멤버 | 설명 |
 | --- | --- |
@@ -53,7 +53,7 @@ Web API 구성 설정에 정의 된 [HttpConfiguration](https://msdn.microsoft.c
 <a id="webhost"></a>
 ## <a name="configuring-web-api-with-aspnet-hosting"></a>Web API를 사용 하 여 ASP.NET 호스팅 구성
 
-ASP.NET 응용 프로그램에서 Web API를 호출 하 여 구성 합니다 [GlobalConfiguration.Configure](https://msdn.microsoft.com/library/system.web.http.globalconfiguration.configure.aspx) 에 **응용 프로그램\_시작** 메서드. 합니다 **구성** 메서드는 형식의 단일 매개 변수를 사용 하 여 대리자 **HttpConfiguration**합니다. 모든 대리자 내에 구성 수행 합니다.
+ASP.NET 응용 프로그램에서 Web API를 호출 하 여 구성 합니다 [GlobalConfiguration.Configure](https://msdn.microsoft.com/library/system.web.http.globalconfiguration.configure.aspx) 에 **응용 프로그램\_시작** 메서드. 합니다 **구성** 메서드는 형식의 단일 매개 변수를 사용 하 여 대리자 **HttpConfiguration**합니다. 모든 대리자 내에서 구성을 수행 합니다.
 
 익명 대리자를 사용 하는 예제는 다음과 같습니다.
 

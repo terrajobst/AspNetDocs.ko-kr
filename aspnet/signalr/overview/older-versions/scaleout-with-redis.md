@@ -8,12 +8,12 @@ ms.date: 05/01/2013
 ms.assetid: 6abecf80-8ffa-41ba-b0d9-1d9edbe7687b
 msc.legacyurl: /signalr/overview/older-versions/scaleout-with-redis
 msc.type: authoredcontent
-ms.openlocfilehash: 74294bd04d5649f2ec54e58adb744f5e30525162
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bdeb9624180206b33d8fdb22b4a4fdaf4cb92294
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57050590"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424770"
 ---
 <a name="signalr-scaleout-with-redis-signalr-1x"></a>Redis로 SignalR 규모 확장(SignalR 1.x)
 ====================
@@ -125,7 +125,7 @@ IIS 역할을 추가 합니다. WebSocket 프로토콜을 포함 하 여 "응용
 
 ![](scaleout-with-redis/_static/image6.png)
 
-**설치 웹 배포 3.0.** IIS 관리자를 실행 하면, Microsoft 웹 플랫폼을 설치 하 라는 메시지가 나타납니다 것 또는 할 수 있습니다 [다운로드를 intstaller](https://go.microsoft.com/fwlink/?LinkId=255386)합니다. 플랫폼 설치 관리자에서 웹 배포에 대 한 검색 하 고 웹 배포 3.0 설치
+**설치 웹 배포 3.0.** IIS 관리자를 실행 하면, Microsoft 웹 플랫폼을 설치 하 라는 메시지가 나타납니다 것 또는 할 수 있습니다 [설치 관리자 다운로드](https://go.microsoft.com/fwlink/?LinkId=255386)합니다. 플랫폼 설치 관리자에서 웹 배포에 대 한 검색 하 고 웹 배포 3.0 설치
 
 ![](scaleout-with-redis/_static/image7.png)
 

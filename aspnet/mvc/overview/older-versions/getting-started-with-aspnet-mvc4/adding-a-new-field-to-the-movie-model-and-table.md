@@ -8,12 +8,12 @@ ms.date: 08/28/2012
 ms.assetid: 9ef2c4f1-a305-4e0a-9fb8-bfbd9ef331d9
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc4/adding-a-new-field-to-the-movie-model-and-table
 msc.type: authoredcontent
-ms.openlocfilehash: 0f9b659b67a9a62635091b1e87169bce1218281a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a1f56a48c0c5b16993a853532689a2b524a1f92e
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57060700"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425446"
 ---
 <a name="adding-a-new-field-to-the-movie-model-and-table"></a>영화 모델 및 테이블에 새 필드 추가
 ====================
@@ -142,7 +142,7 @@ Code First 마이그레이션을에 다른 클래스 파일을 만듭니다는 *
 
 `add-migration` 명령은 마이그레이션 프레임 워크에 DB 새 모델로 마이그레이션하는 데 필요한 코드를 만들고 현재 동영상 DB 스키마를 사용 하 여 현재 영화 모델 검사를 지시 합니다. AddRatingMig는 임의 이며 마이그레이션 파일 이름을 지정 하는 데 사용 됩니다. 마이그레이션 단계에 대 한 의미 있는 이름을 사용 하는 것이 유용 합니다.
 
-이 명령은 완료 되 면 Visual Studio 새 정의 하는 클래스 파일을 엽니다 `DbMIgration` 파생 클래스에서 및를 `Up` 메서드는 새 열을 만드는 코드를 볼 수 있습니다.
+이 명령은 완료 되 면 Visual Studio 새 정의 하는 클래스 파일을 엽니다 `DbMigration` 파생 클래스에서 및를 `Up` 메서드는 새 열을 만드는 코드를 볼 수 있습니다.
 
 [!code-csharp[Main](adding-a-new-field-to-the-movie-model-and-table/samples/sample8.cs)]
 

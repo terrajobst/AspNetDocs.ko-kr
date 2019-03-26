@@ -8,12 +8,12 @@ ms.date: 07/27/2010
 ms.assetid: f731990a-0a81-4d62-81df-87d676cdedd6
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/use-ajax-to-implement-mapping-scenarios
 msc.type: authoredcontent
-ms.openlocfilehash: f7de23ca46e6dc00fe8075e28068a8b3f95d02cd
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 9beddfcaf568bf374271fb9fcb3af3a38aff4b72
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57053260"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424835"
 ---
 <a name="use-ajax-to-implement-mapping-scenarios"></a>AJAX를 사용하여 매핑 시나리오 구현
 ====================
@@ -150,7 +150,7 @@ AJAX 구현은 해제를 완료 하려면 사용자 가까이 dinners 그래픽 
 
 [!code-csharp[Main](use-ajax-to-implement-mapping-scenarios/samples/sample10.cs)]
 
-내부적으로 SearchController의 SearchByLocation 작업 메서드는 주변 dinners의 목록을 가져오려면 DinnerRespository에 FindByLocation 메서드를 호출 합니다. 클라이언트에 직접 Dinner 개체를 반환, 보다는 하지만 그 대신 JsonDinner 개체 반환 합니다. 저녁 식사 속성 하위 집합을 노출 하는 JsonDinner 클래스 (예: 보안상의 이유로 저녁 주최 있는 사람의 이름을 공개 하지 않습니다). 또한 Dinner – 존재 하지 않는 한 특정 dinner 연관 RSVP 개체의 수를 계산 하 여 동적으로 계산 되는 RSVPCount 속성을 포함 합니다.
+내부적으로 SearchController의 SearchByLocation 작업 메서드는 주변 dinners의 목록을 가져오려면 DinnerRepository에 FindByLocation 메서드를 호출 합니다. 클라이언트에 직접 Dinner 개체를 반환, 보다는 하지만 그 대신 JsonDinner 개체 반환 합니다. 저녁 식사 속성 하위 집합을 노출 하는 JsonDinner 클래스 (예: 보안상의 이유로 저녁 주최 있는 사람의 이름을 공개 하지 않습니다). 또한 Dinner – 존재 하지 않는 한 특정 dinner 연관 RSVP 개체의 수를 계산 하 여 동적으로 계산 되는 RSVPCount 속성을 포함 합니다.
 
 다음 컨트롤러 기본 클래스에서 Json() 도우미 메서드를 사용 하 여 dinners JSON 기반 통신 형식을 사용 하 여 시퀀스를 반환 하는 것입니다. JSON은 간단한 데이터 구조를 나타내기 위한 표준 텍스트 형식입니다. 다음은 두 JsonDinner 개체의 JSON 형식 목록을 모양은 우리의 동작 메서드에서 반환 되는 경우의 예:
 

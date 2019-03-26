@@ -8,21 +8,20 @@ ms.date: 04/09/2015
 ms.assetid: 0f78aec2-f509-46fa-b20f-d5208425d8ec
 msc.legacyurl: /identity/overview/getting-started/aspnet-identity-recommended-resources
 msc.type: authoredcontent
-ms.openlocfilehash: 1d5b44ccce423dda8ac77029e361a531b6c91b26
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 14a8ec16fe741d87a23bfa45046386a2c08d2f27
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57056350"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424341"
 ---
-<a name="aspnet-identity-recommended-resources"></a>ASP.NET Identity 권장 리소스
-====================
+# <a name="aspnet-identity-recommended-resources"></a>ASP.NET Identity 권장 리소스
+
 [Rick Anderson]((https://twitter.com/RickAndMSFT))
 
 > 이 항목에서는 ASP.NET Id를 사용 하는 방법에 대 한 설명서 리소스에 대 한 링크를 제공 합니다.
-> 
+>
 > 훌륭한 블로그 게시물을 알고 있는 경우 [stackoverflow](http://stackoverflow.com) 스레드나 다른 것이 유용한 링크 [메일을 보내세요](mailto:aspnetue@microsoft.com?subject=Identity recommended resources) 링크를 사용 하 여 하거나이 페이지의 맨 아래에 메시지를 남깁니다.
-
 
 - [ASP.NET ID 시작](#gettingstarted)
 - [새 추천된 해야 읽기 문서](#feat)
@@ -35,6 +34,7 @@ ms.locfileid: "57056350"
 - [Q: &amp; 를 (질문/답변)](#qand)
 
 <a id="gettingstarted"></a>
+
 ## <a name="getting-started-with-aspnet-identity"></a>ASP.NET Identity 시작
 
 - [Facebook, Twitter, LinkedIn 및 Google OAuth2 sign-on을 사용 하 여 MVC 5 앱](../../../mvc/overview/security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on.md) 이 자습서에서는 Facebook 및 Google OAuth 2 권한 부여를 사용 하 여 ASP.NET MVC 5 앱을 작성 하는 방법을 보여 줍니다. 또한 Id 데이터베이스에 데이터를 추가 하는 방법을 보여 줍니다.
@@ -44,6 +44,7 @@ ms.locfileid: "57056350"
 - [SMS 및 전자 메일 2단계 인증을 사용하는 ASP.NET MVC 5 앱](../../../mvc/overview/security/aspnet-mvc-5-app-with-sms-and-email-two-factor-authentication.md)
 
 <a id="feat"></a>
+
 ## <a name="new-featured-must-read-articles"></a>새 추천된 해야 읽기 문서
 
 - [연습: Microsoft 계정 인증을 사용 하 여 ASP.NET MVC Id](http://www.benday.com/2014/02/25/walkthrough-asp-net-mvc-identity-with-microsoft-account-authentication/) 여 [Benjamin 일](http://www.benday.com/about/)
@@ -53,6 +54,7 @@ ms.locfileid: "57056350"
 - [ASP.NET Id 2.0: 사용자 및 역할을 사용자 지정](http://typecastexception.com/post/2014/06/22/ASPNET-Identity-20-Customizing-Users-and-Roles.aspx)
 
 <a id="adv"></a>
+
 ## <a name="intermediate-aspnet-identity"></a>중간 ASP.NET Id
 
 - [계정 확인 및 ASP.NET Id와 암호 복구](../features-api/account-confirmation-and-password-recovery-with-aspnet-identity.md)
@@ -64,6 +66,7 @@ ms.locfileid: "57056350"
 - [ASP.NET Id – 사용자 잠금](http://tech.trailmax.info/2014/06/asp-net-identity-user-lockout/)
 
 <a id="samp"></a>
+
 ## <a name="where-to-ask-questions-request-features-report-a-bug-and-nightly-builds"></a>질문, 기능 요청, 버그 및 야간 빌드 보고서 위치
 
 - StackOverflow에 대 한 태그를 사용 하 여 [aspnet id](http://stackoverflow.com/questions/tagged/asp.net-identity)
@@ -71,6 +74,7 @@ ms.locfileid: "57056350"
 - [GitHub에서 ASP.NET Id](https://github.com/aspnet/AspNetIdentity) Get 야간 빌드, 요청 기능 버그를 엽니다.
 
 <a id="blog"></a>
+
 ## <a name="blog-posts-on-identity"></a>Id에 대 한 블로그 게시물
 
 - [ASP.NET Id에서 SecurityStamp 란?](http://stackoverflow.com/questions/19487322/what-is-asp-net-identitys-iusersecuritystampstoretuser-interface/19505060#19505060)
@@ -120,6 +124,7 @@ ms.locfileid: "57056350"
 - [ASP.NET 멤버 자격에서 ASP.NET Id 이동](http://webdojo.sharepoint.com/ajmatthews/_layouts/15/start.aspx#/Lists/Posts/Post.aspx?ID=2) Alistair Matthews 여
 
 <a id="video"></a>
+
 ## <a name="videos"></a>비디오
 
 - Channel 9 [ASP.NET 응용 프로그램 및 서비스 보안: 최신 응용 프로그램에 대 한 보안 생기](https://channel9.msdn.com/Events/TechEd/NorthAmerica/2014/DEV-B421#fbid=PhVT9E1WRtr?hashlink=fbid) Ido Flatow 여
@@ -132,6 +137,7 @@ ms.locfileid: "57056350"
 - [체코어 ASP.NET Id](https://www.youtube.com/watch?v=tVbZp5brcpY) 이 강의 살펴보겠습니다 기본 인증을 배포 하는 방법, Facebook, Twitter 등의 외부 id 공급자에 대 한 지원을 추가 하는 방법 및 일회용 암호 (OTP)를 사용 하는 방법입니다. [ASP.NET Id je nástupce 멤버 자격 역할 공급자를&#367; v tedy knihovna ASP.NET pro zajišt&#283;ní autentizace uživatel&#367;합니다. V této p&#345;ednášce si ukážeme, jak nasad]
 
 <a id="cust"></a>
+
 ## <a name="custom-storage-providers-for-aspnet-identity"></a>ASP.NET Id에 대 한 사용자 지정 저장소 공급자
 
 고유한 공급자를 작성 하려는 경우 읽을 [개요의 사용자 지정 저장소 공급자 ASP.NET Id에 대 한](../extensibility/overview-of-custom-storage-providers-for-aspnet-identity.md) 하 고 [ASP.NET Identity 구현](http://odetocode.com/blogs/scott/archive/2014/01/20/implementing-asp-net-identity.aspx) 다음 나열 된 OSS 프로젝트 중 하나의 소스를 검사 하 고 아래.
@@ -144,7 +150,7 @@ ms.locfileid: "57056350"
 - [Azure Table Storage](https://www.nuget.org/packages/accidentalfish.aspnet.identity.azure/) James randall 합니다.
 - Azure Table Storage: [AspNet.Identity.TableStorage](https://github.com/stuartleeks/leeksnet.AspNet.Identity.TableStorage) 하 여 [ @stuartleeks ](https://twitter.com/stuartleeks)합니다.
 - [CouchDB / Daniel Wertheim 여 Cloudant입니다.](https://github.com/danielwertheim/mycouch.aspnet.identity)
-- 탄력적 검색[h: 탄력적 Identity](https://github.com/bmbsqd/elastic-identity) Bombsquad AB. 여
+- [Elastic Search: 탄력적 Identity](https://github.com/bmbsqd/elastic-identity) Bombsquad AB. 여
 - [MongoDB](http://www.nuget.org/packages/MongoDB.AspNet.Identity/) Jonathan Sheely Jonathan Sheely 여 합니다.
 - [NHibernate.AspNet.Identity](https://github.com/milesibastos/NHibernate.AspNet.Identity) Antônio Milesi Bastos 여 합니다.
 - [RavenDB](http://www.nuget.org/packages/AspNet.Identity.RavenDB/1.0.0) by [@tourismgeek](https://twitter.com/tourismgeek).
@@ -153,11 +159,13 @@ ms.locfileid: "57056350"
 - "데이터베이스 먼저" 사용자 저장소에 대 한 EF 코드를 생성할 T4 템플릿: [AspNet.Identity.EntityFramework](https://github.com/cbfrank/AspNet.Identity.EntityFramework)
 
 <a id="additional"></a>
+
 ## <a name="additional-aspnet-identity-resources"></a>ASP.NET Id 추가 리소스
 
 - [Yahoo 및 LinkedIn OAuth 보안 공급자를 OWIN에 대 한 소개](http://blog.beabigrockstar.com/introducing-the-yahoo-linkedin-oauth-security-providers-for-owin/) Yahoo와 LinkedIn 지침은 Jerrie Pelser 여 합니다.
 
 <a id="qand"></a>
+
 ## <a name="qampa-questionanswer"></a>Q:&amp;를 (질문/답변)
 
 - Q: 잠긴 설정한 "기억" (해당 컴퓨터/브라우저 2FA를 통해 이동할 수 있으므로) 사용자가 잠겨 있지는 합니다. 이유와 방법 수 없도록 하려는? 답변 [여기](http://stackoverflow.com/questions/24312247/locked-out-users-can-login-if-they-have-auth-cookie)합니다.
@@ -177,6 +185,6 @@ ms.locfileid: "57056350"
 - Q: 보안 토큰은 무효화 하는 방법 답변 [여기](http://stackoverflow.com/questions/22755700/revoke-token-generated-by-usertokenprovider-in-asp-net-identity-2-0/22767286#22767286)합니다.
 - Q: 방법 쿠키 미들웨어에서 저장소 클레임은? 답변 [여기](http://stackoverflow.com/questions/22320632/storing-retrieving-user-data-without-database-when-using-owin-cookie-authenticat/22541856#22541856)합니다.
 - Q: PIN 또는 MVC 앱 내에서 각 작업 메서드를 확인 하는 보안 않고 동작 메서드에 요청 마다 PIN을 입력 하지 못하도록 사용자가 성공 합니다 저장 하려고 합니다. 답변 [여기](http://stackoverflow.com/questions/22479958/security-check-an-user-to-a-access-controller-action/22486075#22486075)합니다.
-- Q: 에 DB에 소셜 공급자에서 반환 된 전자 메일 주소가 저장 방법은 무엇입니까 있는 것? 답변 [여기](http://stackoverflow.com/questions/22888397/save-claims-to-db-on-login/22970969#22970969):
+- Q: 살펴보는 것에 DB에 소셜 공급자에서 반환 된 이메일 주소를 저장 하는 방법을 합니까? 답변 [여기](http://stackoverflow.com/questions/22888397/save-claims-to-db-on-login/22970969#22970969):
 - Q: 사용자가 로그인 할 때 둘 다 사용 하 여/사용 하 여 스케일 아웃 "기억" 쿠키를 검색할 수 있습니다 하는 방법 답변 [여기](http://stackoverflow.com/questions/22956486/how-can-i-detect-when-a-user-logs-in-with-microsoft-aspnet-identity/22970698#22970698)합니다.
 - Q: SignIn을 호출한 후 OWIN 사용 하 여 ASP.NET Id에서 클레임을 수정할 수 있나요? 대답: SignIn 호출 동일 사용자에 대 한 클레임을 수정 하려고 할 때 수행 하는 어떤 작업이 있습니다. 기본적으로 후속 요청에 표시 하는 새 클레임을 표시 하는 이유는 쿠키로 serialize 할 ClaimsIdentity 발생 합니다.

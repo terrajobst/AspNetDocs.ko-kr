@@ -8,12 +8,12 @@ ms.date: 02/20/2007
 ms.assetid: a8fa72ee-8328-4854-a419-c1b271772303
 msc.legacyurl: /web-forms/overview/data-access/accessing-the-database-directly-from-an-aspnet-page/implementing-optimistic-concurrency-with-the-sqldatasource-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 7695ffad0599701840da83670af3940569e01c21
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 879f0f491461ec49c4eef9dc8add747ac2b22f90
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57037780"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422105"
 ---
 <a name="implementing-optimistic-concurrency-with-the-sqldatasource-vb"></a>SqlDataSource를 사용하여 낙관적 동시성 구현(VB)
 ====================
@@ -28,7 +28,7 @@ ms.locfileid: "57037780"
 
 이전 자습서에서 삽입, 업데이트 및 삭제 기능 SqlDataSource 컨트롤을 추가 하는 방법을 살펴보았습니다. 즉, 이러한 기능을 제공 해야 해당 지정 `INSERT`, `UPDATE`, 또는 `DELETE` s control에서 SQL 문을 `InsertCommand`합니다 `UpdateCommand`, 또는 `DeleteCommand` 함께 적절 한 속성 매개 변수를 `InsertParameters`, `UpdateParameters`, 및 `DeleteParameters` 컬렉션입니다. 이러한 속성 및 컬렉션을 수동으로 지정할 수 있습니다, 데이터 소스 구성 마법사가 고급 단추는 생성을 제공 `INSERT`, `UPDATE`, 및 `DELETE` 문을 확인란을 통해 생성 되는 자동-이러한 문을 기반으로 `SELECT` 문입니다.
 
-생성 함께 `INSERT`, `UPDATE`, 및 `DELETE` 문을 확인란을 고급 SQL 생성 옵션 대화 상자를 사용 하 여 낙관적 동시성 옵션 포함 (그림 1 참조). 옵션을 선택 하면 합니다 `WHERE` 자동으로 생성 된 절 `UPDATE` 및 `DELETE` 만 업데이트를 수행 하려면 문을 수정 되거나 삭제 기본 데이터베이스 데이터 영업일 기준 t 사용자 이후 수정 된 경우 마지막으로 로드 데이터 표입니다.
+생성 함께 `INSERT`, `UPDATE`, 및 `DELETE` 문을 확인란을 고급 SQL 생성 옵션 대화 상자를 사용 하 여 낙관적 동시성 옵션 포함 (그림 1 참조). 이 옵션을 선택 하는 경우는 `WHERE` 자동으로 생성 된 절 `UPDATE` 및 `DELETE` 문은 업데이트를 수행 하 여 사용자 모눈에 데이터를 마지막으로 로드 한 후에 기본 데이터베이스 데이터를 수정 되지 않았는지 경우 삭제 하거나 하도록 수정 되었습니다.
 
 
 ![고급에서 낙관적 동시성 지원을 추가할 수 있습니다 SQL 생성 옵션 대화 상자](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image1.gif)
@@ -52,7 +52,7 @@ ms.locfileid: "57037780"
 **그림 2**: 두 명의 사용자가 동시에 업데이트할 시기는 레코드가 있는 s 잠재적인 한 명의 사용자가 다른가 Overwrite로 변경 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image2.png))
 
 
-이 시나리오의 형태를 펼치기 하지 못하도록 [동시성 제어](http://en.wikipedia.org/wiki/Concurrency_control) 구현 해야 합니다. [낙관적 동시성](http://en.wikipedia.org/wiki/Optimistic_concurrency_control) 이 자습서의 포커스는 있을 동시성 충돌 합니다, 대부분의 이러한 충돌-t 이득 시간 발생 가정 하에서 작동 합니다. 따라서는 충돌이 발생 하는 경우 낙관적 동시성 제어 하기만 하면 사용자에 게 알려을 다른 사용자가 동일한 데이터를 수정 하기 때문에 해당 변경 내용 수 t 저장 합니다.
+이 시나리오의 형태를 펼치기 하지 못하도록 [동시성 제어](http://en.wikipedia.org/wiki/Concurrency_control) 구현 해야 합니다. [낙관적 동시성](http://en.wikipedia.org/wiki/Optimistic_concurrency_control) 가정 합니다, 동시성 충돌이 발생할 수 있습니다 위치 하는 동안 하에 작동이 자습서의 초점 대부분의 경우 이러한 충돌이 발생 하지 않습니다. 따라서는 충돌이 발생 하는 경우 낙관적 동시성 제어 하기만 하면 사용자에 게 알려을 다른 사용자가 동일한 데이터를 수정 하기 때문에 해당 변경 내용 수 t 저장 합니다.
 
 > [!NOTE]
 > 응용 프로그램의 많은 동시성 충돌 되도록 하거나 이러한 충돌은 허용 가능할 경우 가정 있는 경우 다음 비관적 동시성 제어 대신 사용할 수 있습니다. 다시 참조를 [낙관적 동시성 구현](../editing-inserting-and-deleting-data/implementing-optimistic-concurrency-vb.md) 자습서 비관적 동시성 제어에 대 한 더 상세히 논의 합니다.
@@ -66,7 +66,7 @@ ms.locfileid: "57037780"
 **그림 3**: Update 또는 Delete 성공에는 원래 값 해야 수 값과 같은 현재 데이터베이스에 대 한 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image4.png))
 
 
-낙관적 동시성을 구현 하는 방법은 여러 가지가 있습니다 (참조 [Peter A. Bromberg](http://peterbromberg.net/) s [Optmistic 동시성 업데이트 논리](http://www.eggheadcafe.com/articles/20050719.asp) 간략히 다양 한 옵션에 대 한). SqlDataSource에서 (뿐만 아니라 ADO.NET 입력 데이터 집합 데이터 액세스 계층에 사용 되는) 사용 방법을 보완 합니다 `WHERE` 모든 원래 값의 비교를 포함 하는 절. 다음 `UPDATE` 문을 현재 데이터베이스 값 GridView에서 레코드를 업데이트 하는 경우 원래 검색 된 값과 같은 경우에 해당 이름 및 제품의 가격을 예를 들어 업데이트 합니다. `@ProductName` 및 `@UnitPrice` 반면 매개 변수는 사용자가 입력 한 새 값이 포함 `@original_ProductName` 및 `@original_UnitPrice` 편집 단추를 클릭할 때 GridView에 원래 로드 된 값을 포함 합니다.
+낙관적 동시성을 구현 하는 방법은 여러 가지가 있습니다 (참조 [Peter A. Bromberg](http://peterbromberg.net/)의 [낙관적 동시성 업데이트 논리](http://www.eggheadcafe.com/articles/20050719.asp) 간략히 다양 한 옵션에 대 한). SqlDataSource에서 (뿐만 아니라 ADO.NET 입력 데이터 집합 데이터 액세스 계층에 사용 되는) 사용 방법을 보완 합니다 `WHERE` 모든 원래 값의 비교를 포함 하는 절. 다음 `UPDATE` 문을 현재 데이터베이스 값 GridView에서 레코드를 업데이트 하는 경우 원래 검색 된 값과 같은 경우에 해당 이름 및 제품의 가격을 예를 들어 업데이트 합니다. `@ProductName` 및 `@UnitPrice` 반면 매개 변수는 사용자가 입력 한 새 값이 포함 `@original_ProductName` 및 `@original_UnitPrice` 편집 단추를 클릭할 때 GridView에 원래 로드 된 값을 포함 합니다.
 
 
 [!code-sql[Main](implementing-optimistic-concurrency-with-the-sqldatasource-vb/samples/sample1.sql)]
@@ -129,7 +129,7 @@ ms.locfileid: "57037780"
 
 [!code-sql[Main](implementing-optimistic-concurrency-with-the-sqldatasource-vb/samples/sample6.sql)]
 
-`UnitPrice` 열에는 `Products` 테이블에 있을 수 `NULL` 값입니다. 특정 레코드가 있는 경우는 `NULL` 에 대 한 값 `UnitPrice`의 `WHERE` 절 부분 `[UnitPrice] = @original_UnitPrice` 됩니다 *항상* 때문에 False로 평가 `NULL = NULL` 항상 False를 반환 합니다. 따라서 레코드는 포함 `NULL` 값을 편집 하거나 삭제할 수로 `UPDATE` 및 `DELETE` 문을 `WHERE` 절 성공한 t 반환 행을 업데이트 하거나 삭제 합니다.
+`UnitPrice` 열에는 `Products` 테이블에 있을 수 `NULL` 값입니다. 특정 레코드가 있는 경우는 `NULL` 에 대 한 값 `UnitPrice`의 `WHERE` 절 부분 `[UnitPrice] = @original_UnitPrice` 됩니다 *항상* 때문에 False로 평가 `NULL = NULL` 항상 False를 반환 합니다. 따라서 레코드 포함 하는 `NULL` 값을 편집 하거나 삭제할 수로 `UPDATE` 하 고 `DELETE` 문을 `WHERE` 절을 업데이트 하거나 삭제할 행을 반환 하지 않습니다.
 
 > [!NOTE]
 > 이 버그의 2004 년 6 월에에서 Microsoft로 보고 먼저 되었습니다 [SqlDataSource 생성 된 잘못 된 SQL 문을](https://connect.microsoft.com/VisualStudio/feedback/ViewFeedback.aspx?FeedbackID=93937) 되었으며 나타내기 ASP.NET의 다음 버전에서 수정 될 예정입니다.
@@ -189,7 +189,7 @@ GridView에 다음과 같이이 수정에 확인 한 후 GridView, SqlDataSource
 > 동일한 방식으로 작동을 삭제 합니다. 두 개의 브라우저 창을 열고, 하나를 사용 하 여 특정된 제품을 편집한 다음 해당 변경 내용을 저장 하 여 시작 합니다. 변경 내용을 하나의 브라우저에서을 저장 한 후 다른 동일한 제품에 대 한 삭제 단추를 클릭 합니다. 원래 값 don t 일치 하므로 합니다 `DELETE` 문이의 `WHERE` 절 삭제 자동으로 실패 합니다.
 
 
-두 번째 브라우저 창에서 최종 사용자가의 관점에서 [업데이트] 단추를 클릭 한 후 표 미리 편집 모드를 반환 하지만 해당 변경 내용이 손실 합니다. 그러나 여기서 s는 해당 변경 내용을 동작 t 시각적 피드백이 없습니다. 이상적으로 사용자가 변경 내용을 동시성 위반을 손실 되 면 d 알릴 수 하 고, 아마도, 표 편집 모드로 유지 합니다. 가이 작업을 수행 하는 방법을 살펴볼 수 있습니다.
+두 번째 브라우저 창에서 최종 사용자가의 관점에서 [업데이트] 단추를 클릭 한 후 표 미리 편집 모드를 반환 하지만 해당 변경 내용이 손실 합니다. 그러나 여기서 s는 변경 하지는 시각적 피드백 없음. 이상적으로 사용자가 변경 내용을 동시성 위반을 손실 되 면 d 알릴 수 하 고, 아마도, 표 편집 모드로 유지 합니다. 가이 작업을 수행 하는 방법을 살펴볼 수 있습니다.
 
 ## <a name="step-3-determining-when-a-concurrency-violation-has-occurred"></a>3단계: 동시성 위반이 발생 했을 때를 확인 합니다.
 

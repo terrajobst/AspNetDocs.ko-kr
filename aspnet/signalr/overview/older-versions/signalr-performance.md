@@ -8,12 +8,12 @@ ms.date: 07/03/2013
 ms.assetid: 9594d644-66b6-4223-acdd-23e29a6e4c46
 msc.legacyurl: /signalr/overview/older-versions/signalr-performance
 msc.type: authoredcontent
-ms.openlocfilehash: 4158cb055088f3da752020e577007ffe80856b60
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 55e38762dbc7caf31989d65ebf70516a458cfb00
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57055960"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425537"
 ---
 <a name="signalr-performance-signalr-1x"></a>SignalR 성능(SignalR 1.x)
 ====================
@@ -148,7 +148,7 @@ SignalR 성능 카운터를 제거 하려면 다음 매개 변수를 사용 하 
 
 - **연결 된 연결**
 - **다시 연결**
-- **연결 Disonnected**
+- **연결이 끊긴 연결**
 - **현재 연결**
 
 **메시지 메트릭스**

@@ -8,12 +8,12 @@ ms.date: 07/16/2014
 ms.assetid: ba07958c-42e1-4da0-81db-ba6925ed6db0
 msc.legacyurl: /signalr/overview/getting-started/real-time-web-applications-with-signalr
 msc.type: authoredcontent
-ms.openlocfilehash: d4998c8b739b4b1a06699a17464a7399a87a8595
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3db54a134e8f842cab1d3471c69f5a8e2039d83d
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57039490"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423613"
 ---
 <a name="hands-on-lab-real-time-web-applications-with-signalr"></a>실습: SignalR을 사용하는 실시간 웹 애플리케이션
 ====================
@@ -22,7 +22,7 @@ ms.locfileid: "57039490"
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
-[웹 캠프 학습 키트 다운로드](http://aka.ms/webcamps-training-kit)
+[웹 캠프 학습 키트 다운로드](https://aka.ms/webcamps-training-kit)
 
 > 실시간 웹 응용 프로그램 기능을 실시간으로 발생 하는 대로 연결 된 클라이언트에 콘텐츠 서버 쪽을 푸시할 수 있습니다. ASP.NET 개발자에 게 **ASP.NET SignalR** 응용 프로그램에 실시간 웹 기능을 추가 하려면 라이브러리입니다. 이 여러 전송, 클라이언트 및 서버의 가장 사용 가능한 전송 가장 사용 가능한 전송 선택 하면 자동으로 활용 합니다. 활용 **WebSocket**, 브라우저와 서버 간의 양방향 통신을 사용 하도록 설정 하는 HTML5 API.
 > 
@@ -34,7 +34,7 @@ ms.locfileid: "57039490"
 > 
 > ![SignalR 아키텍처](real-time-web-applications-with-signalr/_static/image1.png)
 > 
-> 웹 캠프 교육 키트에서에서 사용할 수 있는 모든 샘플 코드 및 코드 조각 포함 됩니다 [ http://aka.ms/webcamps-training-kit ](http://aka.ms/webcamps-training-kit)합니다.
+> 웹 캠프 교육 키트에서에서 사용할 수 있는 모든 샘플 코드 및 코드 조각 포함 됩니다 [ https://aka.ms/webcamps-training-kit ](https://aka.ms/webcamps-training-kit)합니다.
 
 
 <a id="Overview"></a>

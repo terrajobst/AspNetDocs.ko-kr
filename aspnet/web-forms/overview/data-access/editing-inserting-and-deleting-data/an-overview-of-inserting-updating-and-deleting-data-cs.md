@@ -8,12 +8,12 @@ ms.date: 07/17/2006
 ms.assetid: b651dc58-93c7-4f83-a74e-3b99f6d60848
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/an-overview-of-inserting-updating-and-deleting-data-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 82f1127b01c211a2af91623d4df7ca10dcad6d8a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6c8a07d7b0819df4deb566644fe36bc504d2a2ca
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57041080"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424575"
 ---
 <a name="an-overview-of-inserting-updating-and-deleting-data-c"></a>삽입, 업데이트 및 삭제 (C#) 개요
 ====================
@@ -179,7 +179,7 @@ GridView 속성 창이 나 선언적 구문을 통해 ObjectDataSource에 바인
 에 할당 된 값을 `DeleteParameters` 의 값은는 `DataKeyNames` 있는 삭제 단추를 클릭 한 행에 대 한 필드입니다. 따라서 것이 중요 하는 GridView의 `DataKeyNames` 속성이 올바르게 설정 해야 합니다. 없을 경우는 `DeleteParameters` 할당할는 `null` 값에서 발생 하지 것입니다 모든 단계 1에서 2 단계에서에서 레코드를 삭제 합니다.
 
 > [!NOTE]
-> 합니다 `DataKeys` 컬렉션 즉 GridView s control 상태에 저장 됩니다는 `DataKeys` GridView가의 뷰 상태를 사용 하지 않도록 설정 된 경우에 다시 게시를 통해 값이 저장 됩니다. 그러나 것이 매우 중요 한 편집 또는 삭제 (기본 동작)을 지 원하는 Gridview에 대 한 뷰 상태 유지 사용 하도록 설정 합니다. GridView가 설정 하는 경우 `EnableViewState` 속성을 `false`편집 및 삭제 동작 것으로 충분할 단일 사용자에 대 한 되지만 이러한 동시 사용자가 실수로 수는 가능성이 있는 데이터를 삭제 하는 동시 사용자의 경우 삭제 또는 편집을 기록 하는 동작 t 의도 합니다. 내 블로그 항목, [경고: 동시성 문제 사용 하 여 ASP.NET 2.0 Gridview/DetailsView/FormViews 편집 하는 지원 및/또는 삭제 하 고 있는 뷰 상태가 사용 불가능](http://scottonwriting.net/sowblog/archive/2006/10/03/163215.aspx), 자세한 내용은 합니다.
+> 합니다 `DataKeys` 컬렉션 즉 GridView s control 상태에 저장 됩니다는 `DataKeys` GridView가의 뷰 상태를 사용 하지 않도록 설정 된 경우에 다시 게시를 통해 값이 저장 됩니다. 그러나 것이 매우 중요 한 편집 또는 삭제 (기본 동작)을 지 원하는 Gridview에 대 한 뷰 상태 유지 사용 하도록 설정 합니다. GridView가 설정 하는 경우 `EnableViewState` 속성을 `false`편집 및 삭제 동작 것으로 충분할 단일 사용자에 대 한 되지만 이러한 동시 사용자가 실수로 수는 가능성이 있는 데이터를 삭제 하는 동시 사용자의 경우 삭제 또는 의도 하는 레코드를 편집 합니다. 내 블로그 항목, [경고: 동시성 문제 사용 하 여 ASP.NET 2.0 Gridview/DetailsView/FormViews 편집 하는 지원 및/또는 삭제 하 고 있는 뷰 상태가 사용 불가능](http://scottonwriting.net/sowblog/archive/2006/10/03/163215.aspx), 자세한 내용은 합니다.
 
 
 이 동일한 경고 DetailsViews FormViews에도 적용 됩니다.

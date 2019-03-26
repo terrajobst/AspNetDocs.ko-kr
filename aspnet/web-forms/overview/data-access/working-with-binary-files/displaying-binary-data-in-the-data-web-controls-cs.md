@@ -8,12 +8,12 @@ ms.date: 03/27/2007
 ms.assetid: 5cbeb9f8-5f92-4ba8-87ae-0b4d460ae6d4
 msc.legacyurl: /web-forms/overview/data-access/working-with-binary-files/displaying-binary-data-in-the-data-web-controls-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 50d7f8eceb4772c628f7f6ef71f110de03dd9348
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 026fce7544f40ff333a5c0a500bc53c7fd434080
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57047170"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422092"
 ---
 <a name="displaying-binary-data-in-the-data-web-controls-c"></a>데이터 웹 컨트롤에 이진 데이터 표시(C#)
 ====================
@@ -183,7 +183,7 @@ S 페이지 코드 숨김 클래스에 다음 코드를 추가 합니다 `Page_L
 경우에이 예외를 발생 수를 `CategoriesTableAdapter` s `GetCategoryWithBinaryDataByCategoryID` 메서드의 `SELECT` 문이 임시 SQL 문을 사용 하 고 있습니다 ve TableAdapter s에 대 한 마법사를 다시 실행 하는 경우 발생할 수 있는 기본 쿼리의 열 목록으로 돌아갔습니다. 주 쿼리입니다. 확인 되도록 `GetCategoryWithBinaryDataByCategoryID` 메서드 s `SELECT` 문을 계속 포함 됩니다는 `Picture` 열입니다.
 
 > [!NOTE]
-> 때마다는 `DisplayCategoryPicture.aspx` 가 방문 하면 데이터베이스를 액세스 하 고 지정 된 범주의 그림 데이터가 반환 됩니다. 를 사용자가 마지막으로 본 후 범주의 그림 영업일 기준 t 변경 하지만 이것이 불필요 한 노동력 낭비입니다. 에 대 한 HTTP를 사용 하면 다행히 *조건부 가져옵니다*합니다. 조건부 GET을 사용 하 여 HTTP 요청을 하는 클라이언트를 따라 보냅니다는 [ `If-Modified-Since` HTTP 헤더](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html) 클라이언트가 웹 서버에서이 리소스를 마지막으로 검색 시간과 날짜를 제공 하는 합니다. 웹 서버를 사용 하 여 응답할 수 있습니다이 날짜를 지정 하는 이후 콘텐츠가 변경 되지 않은 경우는 [수정 되지 않음 상태 코드 (304)](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) 요청 된 리소스의 콘텐츠를 다시 보내면 포기 하 고 있습니다. 즉,이 기술을 사용 클라이언트에서 마지막으로 액세스 하므로 수정 되지 않은 경우에 다시 리소스에 대 한 콘텐츠를 보낼 수 없도록 웹 서버를 필요가 없습니다.
+> 때마다는 `DisplayCategoryPicture.aspx` 가 방문 하면 데이터베이스를 액세스 하 고 지정 된 범주의 그림 데이터가 반환 됩니다. 그러나 범주의 그림에는 사용자가 마지막으로 본 후 변경 되지 않았으면, 불필요 한 노동력 낭비입니다. 에 대 한 HTTP를 사용 하면 다행히 *조건부 가져옵니다*합니다. 조건부 GET을 사용 하 여 HTTP 요청을 하는 클라이언트를 따라 보냅니다는 [ `If-Modified-Since` HTTP 헤더](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html) 클라이언트가 웹 서버에서이 리소스를 마지막으로 검색 시간과 날짜를 제공 하는 합니다. 웹 서버를 사용 하 여 응답할 수 있습니다이 날짜를 지정 하는 이후 콘텐츠가 변경 되지 않은 경우는 [수정 되지 않음 상태 코드 (304)](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) 요청 된 리소스의 콘텐츠를 다시 보내면 포기 하 고 있습니다. 즉,이 기술을 사용 클라이언트에서 마지막으로 액세스 하므로 수정 되지 않은 경우에 다시 리소스에 대 한 콘텐츠를 보낼 수 없도록 웹 서버를 필요가 없습니다.
 
 
 그러나이 동작을 구현 하 추가 해야를 `PictureLastModified` 열을를 `Categories` 캡처할 때 테이블을 `Picture` 열을 확인 하기 위한 코드 뿐만 아니라 마지막으로 업데이트를 `If-Modified-Since` 헤더입니다. 대 한 자세한 내용은 합니다 `If-Modified-Since` 헤더 및 조건부 GET 워크플로 참조 하세요 [RSS 해커에 대 한 HTTP 조건부 GET](http://fishbowl.pastiche.org/2002/10/21/http_conditional_get_for_rss_hackers) 및 [는 자세히 살펴보고 ASP.NET 페이지에서 HTTP 요청을 수행](http://aspnet.4guysfromrolla.com/articles/122204-1.aspx)합니다.

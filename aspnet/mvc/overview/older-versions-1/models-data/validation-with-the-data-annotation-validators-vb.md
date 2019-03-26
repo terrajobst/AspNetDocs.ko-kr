@@ -8,12 +8,12 @@ ms.date: 05/29/2009
 ms.assetid: 0d23ff2b-f2ec-434a-be3b-1180beeccba3
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/validation-with-the-data-annotation-validators-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 8159693adced7f102f6fe1457d7b103f8596d231
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6bfe11a40bbdf0cd9dfe4d81d9c7436a5adb9491
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57025550"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58420688"
 ---
 <a name="validation-with-the-data-annotation-validators-vb"></a>데이터 주석 유효성 검사기를 사용한 유효성 검사(VB)
 ====================
@@ -55,7 +55,7 @@ Microsoft.Web.Mvc.DataAnnotations.dll 어셈블리와 System.ComponentModel.Data
 데이터 주석 모델 바인더를 사용 하면 유효성 검사기 특성을 사용 하면 유효성 검사를 수행 합니다. System.ComponentModel.DataAnnotations 네임 스페이스 다음 유효성 검사기 특성을 포함 합니다.
 
 - 범위는-속성의 값을 지정 된 범위의 값 사이가 여부를 확인할 수 있습니다.
-- ReqularExpression-를 사용 하면 속성의 값이 지정 된 정규식 패턴과 일치 여부를 확인할 수 있습니다.
+- RegularExpression-를 사용 하면 속성의 값이 지정 된 정규식 패턴과 일치 여부를 확인할 수 있습니다.
 - 필요한 – 필요에 따라 속성을 표시할 수 있습니다.
 - StringLength-를 사용 하는 문자열 속성에 대 한 최대 길이 지정할 수 있습니다.
 - 유효성 검사-모든 유효성 검사기 특성에 대 한 기본 클래스입니다.

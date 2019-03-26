@@ -2,18 +2,18 @@
 uid: web-forms/overview/data-access/paging-and-sorting/sorting-custom-paged-data-cs
 title: 사용자 지정 페이징 정렬 데이터 (C#) | Microsoft Docs
 author: rick-anderson
-description: 이전 자습서에서 웹 페이지에서 데이터를 presentating 때 사용자 지정 페이징을 구현 하는 방법을 알게 되었습니다. 이 자습서에서는 이전 확장 하는 방법을 표시 하는 중...
+description: 이전 자습서에서 웹 페이지에서 데이터를 표시할 때는 사용자 지정 페이징을 구현 하는 방법을 알게 되었습니다. 이 자습서에서는 이전 확장 하는 방법을 표시 하는 중...
 ms.author: riande
 ms.date: 08/15/2006
 ms.assetid: 778baa4e-4af8-4665-947e-7a01d1a4dff2
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting/sorting-custom-paged-data-cs
 msc.type: authoredcontent
-ms.openlocfilehash: cc0ca571957f29afd7e3a2657e58272f804fc6ef
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ebc6be8c41251190a0124fe5f3d2c154f1ad4450
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034710"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425650"
 ---
 <a name="sorting-custom-paged-data-c"></a>사용자 지정 페이징 데이터 정렬(C#)
 ====================
@@ -21,7 +21,7 @@ ms.locfileid: "57034710"
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_26_CS.exe) 또는 [PDF 다운로드](sorting-custom-paged-data-cs/_static/datatutorial26cs1.pdf)
 
-> 이전 자습서에서 웹 페이지에서 데이터를 presentating 때 사용자 지정 페이징을 구현 하는 방법을 알게 되었습니다. 이 자습서 정렬 사용자 지정 페이징 지원을 포함 하도록 앞의 예제를 확장 하는 방법을 볼 수 있습니다.
+> 이전 자습서에서 웹 페이지에서 데이터를 표시할 때는 사용자 지정 페이징을 구현 하는 방법을 알게 되었습니다. 이 자습서 정렬 사용자 지정 페이징 지원을 포함 하도록 앞의 예제를 확장 하는 방법을 볼 수 있습니다.
 
 
 ## <a name="introduction"></a>소개

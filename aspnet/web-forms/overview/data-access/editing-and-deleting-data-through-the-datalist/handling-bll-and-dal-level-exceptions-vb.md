@@ -8,12 +8,12 @@ ms.date: 10/30/2006
 ms.assetid: ca665073-b379-4239-9404-f597663ca65e
 msc.legacyurl: /web-forms/overview/data-access/editing-and-deleting-data-through-the-datalist/handling-bll-and-dal-level-exceptions-vb
 msc.type: authoredcontent
-ms.openlocfilehash: e71ad365ecbfc1bb33117a6c93e7108a4b3866a6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d52fadc1ddcc101d5815df6f1c1bc5eeba95d9b8
+ms.sourcegitcommit: 62db31596a7da029263cf06335aff12236fb3186
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57053020"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58440367"
 ---
 <a name="handling-bll--and-dal-level-exceptions-vb"></a>BLL 및 DAL 수준의 예외 처리(VB)
 ====================
@@ -30,7 +30,7 @@ ms.locfileid: "57053020"
 
 설명한 것 처럼 합니다 [처리 BLL 및 DAL 수준의 예외 ASP.NET 페이지에서](../editing-inserting-and-deleting-data/handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs.md) 자습서에서는 비즈니스 논리 또는 데이터 액세스 계층에 대 한 깊이 있는에서 예외가 발생 하는 경우 예외 세부 정보로 되돌아가며 ObjectDataSource 및 GridView 하 고. 정상적으로 만들어 이러한 예외를 처리 하는 방법에 살펴보았습니다 `Updated` 또는 `RowUpdated` ObjectDataSource에 GridView, 예외를 확인 하 고 다음 예외 처리 되었음을 나타내는 이벤트 처리기입니다.
 
-그러나 우리의 DataList 자습서, ObjectDataSource를 사용 하 여 데이터 업데이트 및 삭제에 대 한 유효 하지 t입니다. 대신, BLL에 대해 직접 노력 합니다. BLL 또는 DAL에서 발생 한 예외를 감지 하려면 예외 처리는 ASP.NET 페이지의 코드 숨김 내의 코드를 구현 해야 합니다. 이 자습서에서는 더 요령껏 워크플로 업데이트 하는 편집 가능한 DataList s 하는 동안 발생 하는 예외를 처리 하는 방법을 살펴보겠습니다.
+그러나이 DataList 자습서, 데이터 업데이트 및 삭제에 대 한 ObjectDataSource를 사용 하지 않습니다. 대신, BLL에 대해 직접 노력 합니다. BLL 또는 DAL에서 발생 한 예외를 감지 하려면 예외 처리는 ASP.NET 페이지의 코드 숨김 내의 코드를 구현 해야 합니다. 이 자습서에서는 더 요령껏 워크플로 업데이트 하는 편집 가능한 DataList s 하는 동안 발생 하는 예외를 처리 하는 방법을 살펴보겠습니다.
 
 > [!NOTE]
 > 에 *An 개요의 편집 및 DataList에서 데이터 삭제* ObjectDataSource를 사용 하 여 업데이트에 대 한 편집 및 DataList에서 데이터 삭제에 대 한 다양 한 기법을 설명한 자습서에서는 몇 가지 기술을 관련 및 삭제 중입니다. 이러한 기법을 사용 하는 경우, ObjectDataSource s 통한 BLL 또는 DAL에서 예외를 처리할 수 있습니다 `Updated` 또는 `Deleted` 이벤트 처리기입니다.
@@ -131,7 +131,7 @@ GridView 및 ObjectDataSource 제공 예외 되었으면 여부를 나타내기 
 
 이 자습서에서는 예외 처리를 추가 하 여 워크플로 업데이트 하는 편집 가능한 DataList s를 추가 하는 방법을 살펴보았습니다를 `Try ... Catch` 차단 된 `UpdateCommand` 이벤트 처리기입니다. 업데이트 워크플로 중에 예외가 발생 하는 경우는 `Catch` 블록의 코드 실행에서 유용한 정보를 표시 합니다 `ExceptionDetails` 레이블.
 
-이 시점에서 DataList는 처음에 발생 한 예외를 방지 하기. 음수 가격 예외가 발생 합니다을 하지 않은 것을 알고 있는 경우에 t는 아직 이러한 잘못 된 입력을 입력에서 사용자를 사전에 방지 하기 위해 모든 기능을 추가 합니다. 유효성 검사 컨트롤에 추가 하 여 잘못 된 사용자 입력에 의해 발생 하는 예외를 완화 하는 방법 다음 자습서에서 살펴보겠습니다는 `EditItemTemplate`합니다.
+이 시점에서 DataList는 처음에 발생 한 예외를 방지 하기. 음수 가격 예외가 발생 됩니다는 사실에 이러한 잘못 된 입력을 입력에서 사용자를 사전에 방지 하기 위해 모든 기능을 아직 추가 하지 않은 했습니다. 유효성 검사 컨트롤에 추가 하 여 잘못 된 사용자 입력에 의해 발생 하는 예외를 완화 하는 방법 다음 자습서에서 살펴보겠습니다는 `EditItemTemplate`합니다.
 
 즐거운 프로그래밍!
 

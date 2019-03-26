@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: f97a1145-6470-4bca-8f15-ccfb25fb903c
 msc.legacyurl: /web-forms/overview/deployment/deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production
 msc.type: authoredcontent
-ms.openlocfilehash: 7cb9c949936c3af73d4c904d401c36d4d83f3e18
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 998191a21388d76fb18b59fca9bcea7a40507c86
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57045690"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425576"
 ---
 <a name="application-lifecycle-management-from-development-to-production"></a>애플리케이션 수명 주기 관리: 개발부터 프로덕션까지
 ====================
@@ -26,7 +26,7 @@ ms.locfileid: "57045690"
 > 항목에 대 한 대략적인 개요를 제공 하도록 설계 되었습니다를 [시리즈의 자습서](deploying-web-applications-in-enterprise-scenarios.md) 기업에서 웹 배포 합니다. 여기에 설명 된 개념 중 일부를 잘 모르는 경우 걱정 하지 마세요&#x2014;다음에 나오는 자습서에서 이러한 작업 및 기술 모두 자세한 정보를 제공 합니다.
 > 
 > > [!NOTE]
-> > 단순성 만들기 쉽도록이 항목이에서는 배포 프로세스의 일부로 데이터베이스 업데이트를 설명 하지 않습니다. 그러나 많은 엔터프라이즈 배포 시나리오의 요구 사항에는 데이터베이스 기능을 사용 하 여 증분 업데이트 하기 및이 자습서 시리즈의 뒷부분에서이 작업을 수행 하는 방법에 지침을 찾을 수 있습니다. 자세한 내용은 [데이터베이스 프로젝트 배포](../web-deployment-in-the-enterprise/deploying-database-projects.md)합니다.
+> > 편의상이 항목에서는 배포 프로세스의 일부로 데이터베이스 업데이트를 설명 하지 않습니다. 그러나 많은 엔터프라이즈 배포 시나리오의 요구 사항에는 데이터베이스 기능을 사용 하 여 증분 업데이트 하기 및이 자습서 시리즈의 뒷부분에서이 작업을 수행 하는 방법에 지침을 찾을 수 있습니다. 자세한 내용은 [데이터베이스 프로젝트 배포](../web-deployment-in-the-enterprise/deploying-database-projects.md)합니다.
 
 
 ## <a name="overview"></a>개요

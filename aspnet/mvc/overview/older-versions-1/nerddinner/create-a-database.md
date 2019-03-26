@@ -8,12 +8,12 @@ ms.date: 07/27/2010
 ms.assetid: 983f3ffa-08b8-4868-b8c9-aa34593fc683
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/create-a-database
 msc.type: authoredcontent
-ms.openlocfilehash: b6ab0740f251889f0fa0561809cac2bbe79bcb3a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 48ca2984ca8e4ec5b2bc49952a8718aa26138aea
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57064910"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423704"
 ---
 <a name="create-a-database"></a>데이터베이스 만들기
 ====================
@@ -94,7 +94,7 @@ Ctrl + S를 입력 하 여 또는 사용 하 여 테이블 저장 한 다음 됩
 
 이제 데이터베이스 내에서 두 테이블이 있습니다. 마지막 스키마 디자인 단계 각 Dinner 행 0 개 이상의 RSVP 행에 적용 되는 연결 수 있도록 이러한 두 테이블 간에 "일대다" 관계를 설정 됩니다. "Dinners" 테이블에서 "DinnerID" 열에 외래 키 관계에 RSVP 테이블의 "DinnerID" 열을 구성 하 여이 작업을 수행 합니다.
 
-이렇게 하려면에서는 엽니다 참석 여부 회신은 테이블 디자이너에서는 서버 탐색기에서 두 번 클릭 합니다. 그 안의 "DinnerID" 열 선택 한 다음 마우스 오른쪽 단추로 클릭 하 고 "Relationshps..." 상황에 맞는 메뉴 명령을 선택:
+이렇게 하려면에서는 엽니다 참석 여부 회신은 테이블 디자이너에서는 서버 탐색기에서 두 번 클릭 합니다. 그 안의 "DinnerID" 열 선택 후 마우스 오른쪽 단추로 클릭 하 고 "관계..."를 선택 상황에 맞는 메뉴 명령:
 
 ![](create-a-database/_static/image12.png)
 

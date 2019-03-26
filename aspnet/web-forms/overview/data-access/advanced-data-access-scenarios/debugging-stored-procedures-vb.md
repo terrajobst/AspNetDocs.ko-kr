@@ -8,12 +8,12 @@ ms.date: 08/03/2007
 ms.assetid: 9ed8ccb5-5f31-4eb4-976d-cabf4b45ca09
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/debugging-stored-procedures-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 5d951fab4fea59226e5d34bbf468377d436df944
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 106f7498a70339556d0662a986d71a01a21074ab
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046200"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424536"
 ---
 <a name="debugging-stored-procedures-vb"></a>저장 프로시저 디버그(VB)
 ====================
@@ -48,7 +48,7 @@ SQL Server 2005에는 T-SQL 및 관리 되는 데이터베이스 개체에 대 �
 
 Visual Studio는 로컬 및 원격 SQL Server 인스턴스에서 저장된 프로시저를 디버깅할 수 있습니다. 로컬 SQL Server 인스턴스를 Visual Studio와 동일한 컴퓨터에 설치 되어 있는 경우 사용 중인 SQL Server 데이터베이스 개발 컴퓨터에 없는 경우, 원격 인스턴스를 간주 됩니다. 이 자습서에 대 한 사용 중인 로컬 SQL Server 인스턴스. 원격 SQL server 인스턴스에서 저장된 프로시저를 디버깅할 때 로컬 인스턴스에서 저장된 프로시저를 디버깅 하는 보다 자세한 구성 단계 필요 합니다.
 
-로컬 SQL Server 인스턴스를 사용 하는 경우 1 단계부터 시작 하 고 끝에이 자습서를 통해 작업 수 있습니다. 그러나 원격 SQL Server 인스턴스를 사용 하는 경우 하면 디버깅 하는 경우 확인 하는 첫 번째 필요가 원격 인스턴스에 있는 SQL Server 로그인이 Windows 사용자 계정 사용 하 여 개발 컴퓨터에 기록 됩니다. Moveover,이 데이터베이스 로그인 및 실행 중인 ASP.NET 응용 프로그램에서 데이터베이스에 연결할 때 사용할 데이터베이스 로그인을 둘 다의 구성원 이어야는 `sysadmin` 역할입니다. 원격 인스턴스에 섹션에서 Visual Studio 및 SQL Server 원격 인스턴스를 디버그 구성에 대 한 자세한 내용은이 자습서의 끝에서 T-SQL 디버깅 데이터베이스 개체를 참조 하십시오.
+로컬 SQL Server 인스턴스를 사용 하는 경우 1 단계부터 시작 하 고 끝에이 자습서를 통해 작업 수 있습니다. 그러나 원격 SQL Server 인스턴스를 사용 하는 경우 하면 디버깅 하는 경우 확인 하는 첫 번째 필요가 원격 인스턴스에 있는 SQL Server 로그인이 Windows 사용자 계정 사용 하 여 개발 컴퓨터에 기록 됩니다. 또한이 데이터베이스 로그인 및 실행 중인 ASP.NET 응용 프로그램에서 데이터베이스에 연결할 때 사용할 데이터베이스 로그인을 둘 다의 구성원 이어야는 `sysadmin` 역할입니다. 원격 인스턴스에 섹션에서 Visual Studio 및 SQL Server 원격 인스턴스를 디버그 구성에 대 한 자세한 내용은이 자습서의 끝에서 T-SQL 디버깅 데이터베이스 개체를 참조 하십시오.
 
 마지막으로 디버깅 T-SQL 데이터베이스 개체에 대 한 지원 되지 않음을 디버깅.NET 응용 프로그램에 대 한 지원으로 다양 한 기능으로 이해 합니다. 예를 들어, 중단점 조건 및 필터가 지원 되지 않으며, 디버깅 창의 하위 집합을 사용할 수 있습니다. 편집 하며 계속 하기를 사용할 수 없습니다, 유효 하지 않게 등 직접 실행 창 렌더링 됩니다. 참조 [디버거 명령 및 기능에 대 한 제한](https://msdn.microsoft.com/library/ms165035(VS.80).aspx) 자세한 내용은 합니다.
 

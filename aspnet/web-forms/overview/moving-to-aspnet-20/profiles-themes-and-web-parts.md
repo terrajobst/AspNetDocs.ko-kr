@@ -8,12 +8,12 @@ ms.date: 02/20/2005
 ms.assetid: 92df4051-77c6-492c-bd34-23d24189cea4
 msc.legacyurl: /web-forms/overview/moving-to-aspnet-20/profiles-themes-and-web-parts
 msc.type: authoredcontent
-ms.openlocfilehash: 98559c2a378c72bc5664faafe5436753050b574f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 010adaba61b15ca4421c2d3a4a7590becb53897b
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062770"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422852"
 ---
 <a name="profiles-themes-and-web-parts"></a>프로필, 테마 및 웹 파트
 ====================
@@ -222,7 +222,7 @@ PreInit 메서드를 페이지 수명 주기 때문에 테마를 적용 하는 �
 3. 웹 구성 파일의 파일 목록에서 선택 하 고 추가 클릭 합니다.
 4. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 새 항목 추가 선택 합니다.
 5. 스킨 파일을 선택 하 고 추가 클릭 합니다.
-6. 분류 앱 내에서 파일을 배치 하려는 경우 메시지가 표시 되 면 예 클릭\_테마 폴더입니다.
+6. 앱 내에서 파일을 배치 하려는 경우 메시지가 표시 되 면 예 클릭\_테마 폴더입니다.
 7. 앱 내에서 SkinFile 폴더를 마우스 오른쪽 단추로 클릭\_테마 폴더 솔루션 탐색기에서 새 항목 추가 선택 합니다.
 8. 파일의 목록에서 스타일 시트를 선택 하 고 추가 클릭 합니다. 이제 모든 새 테마를 구현 하는 데 필요한 파일이 있습니다. 그러나 Visual Studio는 테마 폴더 SkinFile 선정 하였습니다. 해당 폴더에서 마우스 CoolTheme 이름을 변경 합니다.
 9. SkinFile.skin 파일을 열고 파일의 끝 다음 코드를 추가 합니다. 

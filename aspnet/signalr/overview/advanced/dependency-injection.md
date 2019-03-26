@@ -8,12 +8,12 @@ ms.date: 06/10/2014
 ms.assetid: a14121ae-02cf-4024-8af0-9dd0dc810690
 msc.legacyurl: /signalr/overview/advanced/dependency-injection
 msc.type: authoredcontent
-ms.openlocfilehash: 54e263e277852d2d478ce5bccd4164254498831a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 957facaf2988fedb6615e95701af5155cbcb23d2
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57024750"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423093"
 ---
 <a name="dependency-injection-in-signalr"></a>SignalR에서 종속성 주입
 ====================
@@ -59,7 +59,7 @@ ms.locfileid: "57024750"
 
 [!code-csharp[Main](dependency-injection/samples/sample3.cs)]
 
-개체는 선택 하 여 처리 하지 않습니다 이제 `ILogger` 사용 하도록 합니다. Swich 있습니다 `ILogger` 에 종속 된 개체를 변경 하지 않고 구현 합니다.
+개체는 선택 하 여 처리 하지 않습니다 이제 `ILogger` 사용 하도록 합니다. 전환할 수 있습니다 `ILogger` 에 종속 된 개체를 변경 하지 않고 구현 합니다.
 
 [!code-csharp[Main](dependency-injection/samples/sample4.cs)]
 
@@ -179,7 +179,7 @@ SignalR 내 Ninject를 사용 하려면에서 파생 된 클래스를 만듭니�
 
 [!code-csharp[Main](dependency-injection/samples/sample18.cs)]
 
-이 코드 creatres 반환 하는 익명 함수는 **IHubConnection**합니다. 합니다 **WhenInjectedInto** 메서드를 만들 때만이 함수를 사용 하려면 Ninject 지시 `IStockTicker` 인스턴스. 이유는 SignalR 만들어지는 **IHubConnectionContext** 내부적으로 인스턴스 SignalR을 만드는 방법을 재정의를 만들 필요가 없습니다. 이 함수에만 적용 됩니다는 `StockTicker` 클래스입니다.
+이 코드를 반환 하는 익명 함수를 만듭니다는 **IHubConnection**합니다. 합니다 **WhenInjectedInto** 메서드를 만들 때만이 함수를 사용 하려면 Ninject 지시 `IStockTicker` 인스턴스. 이유는 SignalR 만들어지는 **IHubConnectionContext** 내부적으로 인스턴스 SignalR을 만드는 방법을 재정의를 만들 필요가 없습니다. 이 함수에만 적용 됩니다는 `StockTicker` 클래스입니다.
 
 종속성 확인자에 전달 된 **MapSignalR** 허브 구성을 추가 하 여 메서드:
 

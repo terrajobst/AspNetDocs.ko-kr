@@ -8,12 +8,12 @@ ms.date: 03/02/2009
 ms.assetid: df6cf4b7-0bb3-4c4e-b17a-bd78a759a6bc
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/performing-simple-validation-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 1d0bd6917bab61b17d1cafcf0cd9eb1983275dc8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 31faf2e89e6acb25854455902c1a6fdffebd293c
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57057650"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423184"
 ---
 <a name="performing-simple-validation-vb"></a>간단한 유효성 검사 수행(VB)
 ====================
@@ -90,7 +90,7 @@ HTML의 모양을 입력 필드는 유효성 검사 오류가 있을 때에 수�
 
 - 입력-유효성 검사-error-적용 된 &lt;입력&gt; Html.TextBox() 도우미에 의해 렌더링 된 태그입니다.
 - 필드-유효성 검사-error-적용 된 &lt;s p a n&gt; Html.ValidationMessage() 도우미에 의해 렌더링 된 태그입니다.
-- 유효성 검사-요약-오류-를 적용 합니다 &lt;ul&gt; Html.ValidationSumamry() 도우미에 의해 렌더링 된 태그입니다.
+- 유효성 검사-요약-오류-를 적용 합니다 &lt;ul&gt; Html.ValidationSummary() 도우미에 의해 렌더링 된 태그입니다.
 
 이러한 연계 스타일 시트 클래스를 수정 하 고 따라서 콘텐츠 폴더에 있는 Site.css 파일을 수정 하 여 모양의 유효성 검사 오류를 수정할 수 있습니다.
 

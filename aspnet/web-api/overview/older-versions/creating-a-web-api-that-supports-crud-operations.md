@@ -8,12 +8,12 @@ ms.date: 01/28/2012
 ms.assetid: c125ca47-606a-4d6f-a1fc-1fc62928af93
 msc.legacyurl: /web-api/overview/older-versions/creating-a-web-api-that-supports-crud-operations
 msc.type: authoredcontent
-ms.openlocfilehash: ba061b26b8527e447f25f6046057542a54f989a8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f3cb0004075ef7687ca1096bd407c342b4d0b7be
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57052920"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423752"
 ---
 <a name="enabling-crud-operations-in-aspnet-web-api-1"></a>ASP.NET Web API 1에서에서 CRUD 작업을 사용 하도록 설정
 ====================
@@ -109,7 +109,7 @@ ProductStore API에 대 한 데이터 제품 구성, 라는 새 클래스를 만
 
 [!code-csharp[Main](creating-a-web-api-that-supports-crud-operations/samples/sample2.cs)]
 
-이제 다른 클래스 라는 Models 폴더를 추가 &quot;ProductRepository 합니다.&quot; 이 클래스는 `IProductRespository` 인터페이스를 구현합니다. 다음 구현을 추가 합니다.
+이제 다른 클래스 라는 Models 폴더를 추가 &quot;ProductRepository 합니다.&quot; 이 클래스는 `IProductRepository` 인터페이스를 구현합니다. 다음 구현을 추가 합니다.
 
 [!code-csharp[Main](creating-a-web-api-that-supports-crud-operations/samples/sample3.cs)]
 
@@ -133,7 +133,7 @@ ASP.NET MVC를 사용 하 여 보았다면 다음 이미 잘 알고 있다면 �
 ![](creating-a-web-api-that-supports-crud-operations/_static/image7.png)
 
 > [!NOTE]
-> 프로그램 contollers 컨트롤러 라는 폴더에 배치 하는 데 필요한 것입니다. 폴더 이름은 중요 하지 않습니다. 원본 파일을 구성 하려면 편리한 방법일 뿐 이며
+> 컨트롤러 컨트롤러 라는 폴더에 배치 하는 데 필요한 것입니다. 폴더 이름은 중요 하지 않습니다. 원본 파일을 구성 하려면 편리한 방법일 뿐 이며
 
 
 합니다 **컨트롤러 추가** Controllers 폴더에서 ProductsController.cs 라는 파일을 자동으로 만들어집니다. 이 파일이 열려 있지 않으면 이미를 열려는 파일을 두 번 클릭 합니다. 다음을 추가 합니다 **를 사용 하 여** 문:
@@ -216,7 +216,7 @@ PUT을 사용 하 여 제품을 업데이트 하는 것은 간단 합니다.
 
 ## <a name="deleting-a-resource"></a>리소스를 삭제합니다.
 
-resourse를 삭제 하려면 "삭제 중..." 메서드를 정의 합니다.
+리소스를 삭제 하려면 "삭제..."를 정의 합니다. 메서드입니다.
 
 [!code-csharp[Main](creating-a-web-api-that-supports-crud-operations/samples/sample12.cs)]
 

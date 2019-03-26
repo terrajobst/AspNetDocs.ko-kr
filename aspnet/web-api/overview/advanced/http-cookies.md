@@ -8,12 +8,12 @@ ms.date: 09/17/2012
 ms.assetid: 243db2ec-8f67-4a5e-a382-4ddcec4b4164
 msc.legacyurl: /web-api/overview/advanced/http-cookies
 msc.type: authoredcontent
-ms.openlocfilehash: 61e0c47efdd92a3a0b329930aeec757b446eb9b8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ee717085a02f4c5f5d664cfd2fa82c21864e4055
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57044740"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425823"
 ---
 <a name="http-cookies-in-aspnet-web-api"></a>ASP.NET Web API의 HTTP 쿠키
 ====================
@@ -25,7 +25,7 @@ ms.locfileid: "57044740"
 
 이 섹션에서는 쿠키 HTTP 수준에서 구현 하는 방법에 대해 간략하게 설명 합니다. 자세한 내용은 참조 하세요 [RFC 6265](http://tools.ietf.org/html/rfc6265)합니다.
 
-쿠키는 HTTP 응답에는 서버에 보내는 데이터의 일부입니다. (선택 사항) 클라이언트는 쿠키를 저장 하 고 subsequet 요청에 반환 합니다. 이렇게 하면 클라이언트 및 서버 상태를 공유할 수 있습니다. 쿠키를 설정 하려면 서버 응답에서 Set-cookie 헤더를 포함 합니다. 쿠키의 형식은 선택적 특성이 있는 이름-값 쌍을 합니다. 예를 들어:
+쿠키는 HTTP 응답에는 서버에 보내는 데이터의 일부입니다. (선택 사항) 클라이언트는 쿠키를 저장 하 고 이후 요청에서 반환 합니다. 이렇게 하면 클라이언트 및 서버 상태를 공유할 수 있습니다. 쿠키를 설정 하려면 서버 응답에서 Set-cookie 헤더를 포함 합니다. 쿠키의 형식은 선택적 특성이 있는 이름-값 쌍을 합니다. 예를 들어:
 
 [!code-powershell[Main](http-cookies/samples/sample1.ps1)]
 

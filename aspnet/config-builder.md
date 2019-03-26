@@ -7,12 +7,12 @@ ms.author: riande
 ms.date: 10/29/2018
 ms.technology: aspnet
 msc.type: content
-ms.openlocfilehash: 4dcc62573fad13ec8b37b2c59e884eec7ca80b92
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5e2f3781623af5a32149e1db1c17b67ce43b7da0
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57030650"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423974"
 ---
 # <a name="configuration-builders-for-aspnet"></a>ASP.NET에 대 한 구성 작성기
 
@@ -191,7 +191,7 @@ ms.locfileid: "57030650"
 
 이 구성 작성기는 유사한 기능을 제공 [ASP.NET Core 암호 관리자](/aspnet/core/security/app-secrets)합니다.
 
-합니다 [UserSecretsConfigBuilder](https://www.nuget.org/packages/Microsoft.Configuration.ConfigurationBuilders.UserSecrets/) .NET Framework 프로젝트에서 사용할 수 있지만 암호 파일을 지정 해야 합니다. 정의할 수 있습니다는 `UserSecretsId` 프로젝트의 속성이 파일을 읽기 위한 올바른 위치에 원시 비밀 파일을 만듭니다. 외부 프로젝트 종속성을 유지 하려면 비밀 파일에는 서식이 지정 된 XML입니다. XML 서식 지정는 구현 세부 정보 이며 형식 방법에 의존 해야 합니다. 공유 하는 경우는 *secrets.json* .NET Core 프로젝트를 사용 하 여 파일을 사용 하는 것이 좋습니다는 [SimpleJsonConfigBuilder](#simplejsonconfig)합니다. `SimpleJsonConfigBuilder` .NET Core도 고려해 야 변경 될 수 있습니다 구현 세부 정보에 대 한 서식을 지정 합니다.
+합니다 [UserSecretsConfigBuilder](https://www.nuget.org/packages/Microsoft.Configuration.ConfigurationBuilders.UserSecrets/) .NET Framework 프로젝트에서 사용할 수 있지만 암호 파일을 지정 해야 합니다. 정의할 수 있습니다는 `UserSecretsId` 프로젝트의 속성이 파일을 읽기 위한 올바른 위치에 원시 비밀 파일을 만듭니다. 외부 프로젝트 종속성을 유지 하려면 비밀 파일에는 서식이 지정 된 XML입니다. XML 서식 지정는 구현 세부 정보 이며 형식 방법에 의존 해야 합니다. 공유 하는 경우는 *secrets.json* .NET Core 프로젝트를 사용 하 여 파일을 사용 하는 것이 좋습니다는 [SimpleJsonConfigBuilder](#simplejsonconfigbuilder)합니다. `SimpleJsonConfigBuilder` .NET Core도 고려해 야 변경 될 수 있습니다 구현 세부 정보에 대 한 서식을 지정 합니다.
 
 구성에 대 한 특성 `UserSecretsConfigBuilder`:
 

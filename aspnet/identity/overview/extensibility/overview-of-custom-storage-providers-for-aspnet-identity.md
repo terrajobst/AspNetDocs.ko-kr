@@ -8,12 +8,12 @@ ms.date: 10/13/2014
 ms.assetid: 681a9204-462e-4260-9a0b-19f0644d6ad7
 msc.legacyurl: /identity/overview/extensibility/overview-of-custom-storage-providers-for-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: e7461098f93bf64d6ff0d0e4ecdb64338f96be8b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d819fabf4f367c8f6d0ce857bc248a2b812c2b21
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57064060"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422209"
 ---
 <a name="overview-of-custom-storage-providers-for-aspnet-identity"></a>ASP.NET Identity에 대한 사용자 지정 스토리지 공급자 개요
 ====================
@@ -82,7 +82,7 @@ ASP.NET Id에 대 한 사용자 지정된 저장소 공급자를 만들려면이
 
 저장소 공급자 자유롭게 사용자 지정에 대 한 리포지토리를 디자인할 때 많이 있습니다. 응용 프로그램에서 사용 하려는 기능에 대 한 리포지토리를 만들 해야 합니다. 예를 들어, 응용 프로그램에서 역할을 사용 하지 않는 경우 역할 또는 사용자 역할에 대 한 저장소를 만들 필요가 없습니다. 기술 및 기존 인프라에는 ASP.NET Identity의 기본 구현에서 매우 다른 구조가 필요할 수 있습니다. 데이터 액세스 계층, 리포지토리의 구조와 작동 하는 논리를 제공 합니다.
 
-ASP.NET Identity 2.0에 대 한 데이터 저장소의 MySQL 문서로 참조 하세요 [MySQLIdentity.sql](https://aspnet.codeplex.com/SourceControl/latest#Samples/Identity/AspNet.Identity.MySQL/MySQLIdentity.sql)합니다.
+MySQL 구현 하는 ASP.NET Identity 2.0에 대 한 데이터 리포지토리를 참조 하세요 [MySQLIdentity.sql](https://aspnet.codeplex.com/SourceControl/latest#Samples/Identity/AspNet.Identity.MySQL/MySQLIdentity.sql)합니다.
 
 데이터 액세스 계층을 데이터 원본에 ASP.NET Id에서 데이터를 저장 하는 논리를 제공 합니다. 사용자 지정된 저장소 공급자에 대 한 데이터 액세스 계층 사용자 및 역할 정보를 저장 하는 다음 클래스를 포함할 수 있습니다.
 

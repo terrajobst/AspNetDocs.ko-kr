@@ -8,18 +8,18 @@ ms.date: 07/16/2014
 ms.assetid: 09e82351-816b-402d-acd1-0f9ac6901d16
 msc.legacyurl: /visual-studio/overview/2013/visual-studio-2013-web-tools
 msc.type: authoredcontent
-ms.openlocfilehash: 82248efd767c1110b9a4067b7d0c0e2ecafcbef9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 54d86de49bf61305b17fc80964723c518abd467b
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049890"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423249"
 ---
 <a name="hands-on-lab-visual-studio-2013-web-tools"></a>실습: Visual Studio 2013 웹 도구
 ====================
 [웹 캠프 팀](https://twitter.com/webcamps)
 
-[웹 캠프 학습 키트 다운로드](http://aka.ms/webcamps-training-kit)
+[웹 캠프 학습 키트 다운로드](https://aka.ms/webcamps-training-kit)
 
 > Visual Studio는는 뛰어난 개발 환경입니다. NET 기반의 Windows 및 웹 프로젝트를 제공 합니다. 프로젝트 없이 독립 실행형 파일을 편집 하려면 쉽게 사용할 수 있는 강력한 텍스트 편집기를 포함 합니다.
 > 
@@ -27,7 +27,7 @@ ms.locfileid: "57049890"
 > 
 > 이 전원의 모든 확장을 쉽게 확장 요구에 맞게 강력한 새 기능을 사용 하 여 편집기를 사용할 수도 있습니다. Web Essentials는 대부분 웹 관련 향상 된 Visual Studio의 컬렉션입니다. 여기에 많은 새 IntelliSense 완성 (특히에 대 한 CSS), 새 브라우저 링크 기능, 자동 JSHint JavaScript에 대 한 파일, HTML 및 CSS 및 최신 웹 개발에 필수적인 기타 많은 기능이 대 한 새 경고 합니다.
 > 
-> 웹 캠프 교육 키트에서에서 사용할 수 있는 모든 샘플 코드 및 코드 조각 포함 됩니다 [ http://aka.ms/webcamps-training-kit ](http://aka.ms/webcamps-training-kit)합니다.
+> 웹 캠프 교육 키트에서에서 사용할 수 있는 모든 샘플 코드 및 코드 조각 포함 됩니다 [ https://aka.ms/webcamps-training-kit ](https://aka.ms/webcamps-training-kit)합니다.
 
 
 <a id="Overview"></a>
@@ -224,7 +224,7 @@ ms.locfileid: "57049890"
     ![Site.css 파일을 열면](visual-studio-2013-web-tools/_static/image16.png "Site.css 파일 열기")
 
     *Site.css 파일 열기*
-5. 키를 눌러 **CTRL** + **F** 형식과 **.flip containter.front** CSS 선택기를 찾으려고 합니다.
+5. 키를 눌러 **CTRL** + **F** 형식과 **.flip 컨테이너.front** CSS 선택기를 찾으려고 합니다.
 6. 색 편집기를 열고 클래스의 테두리 속성에 밝은 파란색 사각형을 클릭 합니다.
 
     ![색 선택기를 열어](visual-studio-2013-web-tools/_static/image17.png "색 편집기 열기")

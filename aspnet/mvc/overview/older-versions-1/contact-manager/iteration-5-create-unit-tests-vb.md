@@ -8,12 +8,12 @@ ms.date: 02/20/2009
 ms.assetid: c6e5c036-2265-4fa7-a9eb-47f197bdc262
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager/iteration-5-create-unit-tests-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 6aee4c01c1555dd2ea95d26a005d61ddab09f6fe
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8b34a9f7690777cfcc79d87a5e19586646d5b0d9
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062150"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425706"
 ---
 <a name="iteration-5--create-unit-tests-vb"></a>반복 #5-단위 테스트 만들기 (VB)
 ====================
@@ -146,7 +146,7 @@ ContactManager.Tests 프로젝트의 Models 라는 새 폴더를 만듭니다. �
 
 - CreateContact()-테스트는 CreateContact() 유효한 연락처를 메서드에 전달 되 면 true를 반환 합니다.
 - CreateContactRequiredFirstName()-오류 메시지가 모델 상태 때 누락 된 이름을 가진 연락처 추가 되어 있는지 테스트 CreateContact() 메서드에 전달 됩니다.
-- CreateContactRequredLastName()-오류 메시지가 모델 상태 때 누락 된 성 가진 연락처를 추가 되어 있는지 테스트 CreateContact() 메서드에 전달 됩니다.
+- CreateContactRequiredLastName()-오류 메시지가 모델 상태 때 누락 된 성 가진 연락처를 추가 되어 있는지 테스트 CreateContact() 메서드에 전달 됩니다.
 - CreateContactInvalidPhone()-오류 메시지가 모델 상태 때 잘못 된 전화 번호를 사용 하 여 연락처를 추가 되어 있는지 테스트 CreateContact() 메서드에 전달 됩니다.
 - CreateContactInvalidEmail()-오류 메시지가 모델 상태 때 잘못 된 전자 메일 주소를 사용 하 여 연락처를 추가 되어 있는지 테스트 CreateContact() 메서드에 전달 됩니다...
 

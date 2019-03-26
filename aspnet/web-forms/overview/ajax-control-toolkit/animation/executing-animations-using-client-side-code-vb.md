@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: f7073f50-d765-456d-9957-926ce60f35f6
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/executing-animations-using-client-side-code-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 08cba7fa04249da4f0c7baa8e730ac75489e0efc
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d9933af3f1be20177c958413173746fe087dec43
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57048380"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425810"
 ---
 <a name="executing-animations-using-client-side-code-vb"></a>클라이언트 쪽 코드를 사용하여 애니메이션 실행(VB)
 ====================
@@ -46,7 +46,7 @@ ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이�
 
 [!code-aspx[Main](executing-animations-using-client-side-code-vb/samples/sample4.aspx)]
 
-내 합니다 `<Animations>` 노드를 사용 하 여 `<OnClick>` 애니메이션 사용자 한 번만 실행 패널에서 클릭 합니다. Parallelly 실행할 두 애니메이션을 추가 합니다.
+내 합니다 `<Animations>` 노드를 사용 하 여 `<OnClick>` 애니메이션 사용자 한 번만 실행 패널에서 클릭 합니다. 병렬로 실행할 두 애니메이션을 추가 합니다.
 
 [!code-xml[Main](executing-animations-using-client-side-code-vb/samples/sample5.xml)]
 

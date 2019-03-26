@@ -8,12 +8,12 @@ ms.date: 08/15/2006
 ms.assetid: b895e37e-0e69-45cc-a7e4-17ddd2e1b38d
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting/paging-and-sorting-report-data-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 2e1cc844122b0fdebbc0be09f88baa11a461ab8e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 23f14251c280e1da3a51612ed538ecbc0f5b8d54
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57038620"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424354"
 ---
 <a name="paging-and-sorting-report-data-vb"></a>페이징 및 정렬 보고서 데이터(VB)
 ====================
@@ -194,7 +194,7 @@ S를 GridView의 페이징 인터페이스의 기본 모양을 개선 하기 위
 
 [!code-vb[Main](paging-and-sorting-report-data-vb/samples/sample6.vb)]
 
-항목의 선택을 취소 하면이 코드가 시작 되는 `PageList` DropDownList 합니다. 하나의 비현실적 t를 변경 하려면 페이지 수가 예상 하지만 다른 사용자가 동시에 시스템을 사용 하 여, 추가 되었거나에서 레코드를 제거 하므로, 불필요 한 보일 수 있지만이 `Products` 테이블입니다. 이러한 삽입 또는 삭제는 데이터 페이지 수를 변경할 수 있습니다.
+항목의 선택을 취소 하면이 코드가 시작 되는 `PageList` DropDownList 합니다. 하나를 변경 하려면 페이지 수가 넣기를 기대할 수 있지만 다른 사용자가 동시에 시스템을 사용 하 여, 추가 되었거나에서 레코드를 제거, 불필요 한 보일 수 있지만이 `Products` 테이블입니다. 이러한 삽입 또는 삭제는 데이터 페이지 수를 변경할 수 있습니다.
 
 다음으로 페이지 번호를 다시 만들고 보유 하 고 현재 GridView에 매핑되는 해야 `PageIndex` 기본적으로 선택 합니다. 0에서 루프를 사용 하 여이 위해서는 `PageCount - 1`, 새 추가 `ListItem` 설정 및 각 반복에서 해당 `Selected` 속성을 현재 반복 인덱스를 GridView가 같으면 true `PageIndex` 속성입니다.
 
@@ -253,7 +253,7 @@ GridView가 스마트 태그에서 정렬 사용 옵션을 선택 하기만 하�
 
 [!code-aspx[Main](paging-and-sorting-report-data-vb/samples/sample9.aspx)]
 
-필드를 구성할 수 있습니다 있도록 것을 지우는 불가능 s 해당 `SortExpression` 속성 (빈 문자열에 할당). 이 예는 imagine에서는 하지 않으려는 고객 가격으로 제품을 정렬할 수 있도록 합니다. 합니다 `UnitPrice` BoundField의 `SortExpression` 선언적 태그 또는 (액세스할 수 있는 GridView가 스마트 태그에 있는 열 편집 링크를 클릭 하 여) 필드 대화 상자를 통해 속성을 제거할 수 있습니다.
+필드를 구성할 수 있습니다 있도록 것을 지우는 불가능 s 해당 `SortExpression` 속성 (빈 문자열에 할당). 이 설명 하기 가격으로 제품을 정렬 하는 고객 수 있도록 하려고 하지 않은 한다고 가정 합니다. 합니다 `UnitPrice` BoundField의 `SortExpression` 선언적 태그 또는 (액세스할 수 있는 GridView가 스마트 태그에 있는 열 편집 링크를 클릭 하 여) 필드 대화 상자를 통해 속성을 제거할 수 있습니다.
 
 
 ![UnitPrice 오름차순으로 정렬 하 여 결과 정렬 된 것](paging-and-sorting-report-data-vb/_static/image27.png)

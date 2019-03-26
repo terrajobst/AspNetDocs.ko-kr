@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 969ab824-1b98-4552-81fe-b60ef5fc6887
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-custom-action-filters
 msc.type: authoredcontent
-ms.openlocfilehash: 0170fda6849c1dfb53b44908ea55ba2cad0dd067
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 4c8628cc289610e287c0a3bc3c8a4c7a833c9fde
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57036620"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423418"
 ---
 # <a name="aspnet-mvc-4-custom-action-filters"></a>ASP.NET MVC 4 사용자 지정 작업 필터
 
@@ -261,7 +261,7 @@ ASP.NET MVC는 작업 메서드가 호출 되기 전후 필터링 논리를 실�
     [!code-csharp[Main](aspnet-mvc-4-custom-action-filters/samples/sample9.cs)]
 
     > [!NOTE]
-    > 이 사용자 지정 작업 필터는 이전 연습에서 만든 것 보다 거의 동일 합니다. 주요 차이점은 있는지는 *&quot;하 여 기록&quot;* 본 필터를 식별 하는이 새 클래스의이 이름으로 업데이트 하는 특성의 로그를 등록 합니다.
+    > 이 사용자 지정 작업 필터는 이전 연습에서 만든 것 보다 거의 동일 합니다. 주요 차이점은 있는지 합니다 *&quot;다른 이름으로 기록&quot;* 필터 등록 로그를 식별 하는이 새 클래스의이 이름을 사용 하 여 업데이트 된 특성입니다.
 
 <a id="Ex2Task2"></a>
 
@@ -325,7 +325,7 @@ ASP.NET MVC는 작업 메서드가 호출 되기 전후 필터링 논리를 실�
 <a id="Task_4_Registering_Filters_Globally"></a>
 #### <a name="task-4-registering-filters-globally"></a>작업 4: 전역 필터 등록
 
-이 태스크에서는 새 필터를 등록 하는 솔루션 업데이트 됩니다 (**MyNewCustomActionFilter**) 글로벌 필터로 합니다. 이 작업을 수행 하 여 이전 태스크와 같이 StoreController 것 뿐만 아니라 응용 프로그램에 모든 작업 perfomed로 트리거할 수 됩니다.
+이 태스크에서는 새 필터를 등록 하는 솔루션 업데이트 됩니다 (**MyNewCustomActionFilter**) 글로벌 필터로 합니다. 이 작업을 수행 하 여 이전 태스크와 같이 StoreController 것 뿐만 아니라 응용 프로그램에서 실행 되는 모든 작업으로 트리거할 수 됩니다.
 
 1. **StoreController** 클래스를 제거할 **[MyNewCustomActionFilter]** 특성과 order 속성에서 **[CustomActionFilter]** 합니다. 이 파일은 다음과 같아야 합니다.
 
@@ -375,7 +375,7 @@ ASP.NET MVC는 작업 메서드가 호출 되기 전후 필터링 논리를 실�
 
 설치할 수 있습니다 **Microsoft Visual Studio Express 2012 for Web** 또는 다른 &quot;Express&quot; 사용 하 여 버전을 **[Microsoft Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx)**. 다음 지침을 설치 하는 데 필요한 단계를 안내 *Visual studio Express 2012 for Web* 사용 하 여 *Microsoft Web Platform Installer*합니다.
 
-1. 로 이동 [ [ https://go.microsoft.com/? linkid 9810169 =](https://go.microsoft.com/?linkid=9810169)](https://go.microsoft.com/?linkid=9810169)합니다. 또는, 이미 설치한 경우 웹 플랫폼 설치 관리자를 열 수 있습니다 하 고 제품에 대 한 검색 &quot; <em>Visual Studio Express 2012 for Windows Azure SDK를 사용 하 여 Web</em>&quot;합니다.
+1. [https://go.microsoft.com/?linkid=9810169](https://go.microsoft.com/?linkid=9810169)으로 이동합니다. 또는, 이미 설치한 경우 웹 플랫폼 설치 관리자를 열 수 있습니다 하 고 제품에 대 한 검색 &quot; <em>Visual Studio Express 2012 for Windows Azure SDK를 사용 하 여 Web</em>&quot;합니다.
 2. 클릭할 **지금 설치**합니다. 없는 경우 **웹 플랫폼 설치 관리자** 를 다운로드 하 여 앱을 먼저 설치 리디렉션됩니다.
 3. 한 번 **웹 플랫폼 설치 관리자** 열려 있는 경우 클릭 **설치** 는 설치를 시작 합니다.
 
@@ -419,7 +419,7 @@ ASP.NET MVC는 작업 메서드가 호출 되기 전후 필터링 논리를 실�
 1. 로 이동 합니다 [Windows Azure 관리 포털](https://manage.windowsazure.com/) 구독과 연결 된 Microsoft 자격 증명을 사용 하 여 로그인 합니다.
 
     > [!NOTE]
-    > Windows Azure를 사용 하 여 10 개의 ASP.NET 웹 사이트를 무료로 호스트할 수 있으며 다음 트래픽 증가 따라 확장할 수 있습니다. 등록할 수 있습니다 [여기](http://aka.ms/aspnet-hol-azure)합니다.
+    > Windows Azure를 사용 하 여 10 개의 ASP.NET 웹 사이트를 무료로 호스트할 수 있으며 다음 트래픽 증가 따라 확장할 수 있습니다. 등록할 수 있습니다 [여기](https://aka.ms/aspnet-hol-azure)합니다.
 
     ![Windows Azure 포털에 로그온](aspnet-mvc-4-custom-action-filters/_static/image17.png "Windows Azure 포털에 로그온")
 

@@ -8,12 +8,12 @@ ms.date: 06/26/2007
 ms.assetid: 48e2a4ae-77ca-4208-a204-c38c690ffb59
 msc.legacyurl: /web-forms/overview/data-access/working-with-batched-data/batch-inserting-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 58338d8bfdd782167aafaa440f2d549d6eeb838e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1078087e9ff2564e94a5b1df1efb6c96928524c7
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034230"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424926"
 ---
 <a name="batch-inserting-vb"></a>일괄 삽입(VB)
 ====================
@@ -195,7 +195,7 @@ CompareValidator 단가 텍스트 상자 설정의 각 추가 합니다 `Control
 다음으로 삽입 인터페이스에서 배송 및 취소 단추 컨트롤에서 추가 제품에 대 한 이벤트 처리기를 만듭니다. 이러한 단추 중 하나를 클릭할 때 표시 인터페이스를 다시 전환 해야 합니다. 만들 `Click` 둘 다에 대 한 이벤트 처리기를 호출 하는 단추 컨트롤 `ReturnToDisplayInterface`를 일시적으로 추가 하는 메서드. 숨기기 외에도 `InsertingInterface` 패널과 보여 주는 `DisplayInterface` 패널은 `ReturnToDisplayInterface` 메서드를 미리 편집 상태로 웹 컨트롤을 반환 해야 합니다. Dropdownlist를 설정 하는 것이 `SelectedIndex` 속성을 0과 정리는 `Text` TextBox 컨트롤의 속성입니다.
 
 > [!NOTE]
-> 어떤 일이 발생 하는 것이 좋습니다 경우에서는 동작 t 표시 인터페이스를 반환 하기 전에 미리 편집 상태로 컨트롤을 반환 합니다. 사용자 제품 배송 프로세스 단추를 클릭 하 고 배송을에서 제품을 입력 하 고 추가 제품 배송을 클릭 수 있습니다. 이 제품을 추가 하 고 사용자는 표시 인터페이스를 반환 합니다. 이 시점에서 사용자는 다른 운송을 통해를 추가 하 려 수 있습니다. 삽입 인터페이스 있지만 DropDownList 돌아왔을 프로세스 제품 배송과 단추를 클릭 하면 선택 항목 및 입력란 값은 여전히 채울 수 이전 값입니다.
+> 어떤 일이 발생 하는 것이 좋습니다. 표시 인터페이스를 반환 하기 전에 미리 편집 상태로 컨트롤을 반환 하지 않은 것입니다. 사용자 제품 배송 프로세스 단추를 클릭 하 고 배송을에서 제품을 입력 하 고 추가 제품 배송을 클릭 수 있습니다. 이 제품을 추가 하 고 사용자는 표시 인터페이스를 반환 합니다. 이 시점에서 사용자는 다른 운송을 통해를 추가 하 려 수 있습니다. 삽입 인터페이스 있지만 DropDownList 돌아왔을 프로세스 제품 배송과 단추를 클릭 하면 선택 항목 및 입력란 값은 여전히 채울 수 이전 값입니다.
 
 
 [!code-vb[Main](batch-inserting-vb/samples/sample5.vb)]
@@ -215,7 +215,7 @@ CompareValidator 단가 텍스트 상자 설정의 각 추가 합니다 `Control
 
 ## <a name="step-4-adding-the-products"></a>4단계: 제품 추가
 
-모든 제품을 배송 단추 s에서 추가 제품의 데이터베이스에 저장 하려면이 자습서에 남아 있는 `Click` 이벤트 처리기입니다. 만들어 이렇게를 `ProductsDataTable` 추가 `ProductsRow` 제공 된 제품 이름 각각에 대 한 인스턴스. 이 한 번 `ProductsRow` s에 대 한 호출을 만들겠습니다 추가한 합니다 `ProductsBLL` s 클래스 `UpdateWithTransaction` 전달 하는 메서드는 `ProductsDataTable`합니다. 이전에 설명한 대로 `UpdateWithTransaction` 메서드를 다시 생성 된를 [트랜잭션 내에서 데이터베이스 수정 내용을 래핑](wrapping-database-modifications-within-a-transaction-vb.md) 자습서를 전달을 `ProductsDataTable` 에 `ProductsTableAdapter` s `UpdateWithTransaction` 메서드. 여기에서 ADO.NET 트랜잭션이 시작 및 TableAdatper 문제는 `INSERT` 데이터베이스에 추가 된 각 문을 `ProductsRow` DataTable에서. 모든 제품이 오류 없이 추가 될 트랜잭션이 커밋될 때 가정 하 고, 그렇지 않으면이 롤백됩니다.
+모든 제품을 배송 단추 s에서 추가 제품의 데이터베이스에 저장 하려면이 자습서에 남아 있는 `Click` 이벤트 처리기입니다. 만들어 이렇게를 `ProductsDataTable` 추가 `ProductsRow` 제공 된 제품 이름 각각에 대 한 인스턴스. 이 한 번 `ProductsRow` s에 대 한 호출을 만들겠습니다 추가한 합니다 `ProductsBLL` s 클래스 `UpdateWithTransaction` 전달 하는 메서드는 `ProductsDataTable`합니다. 이전에 설명한 대로 `UpdateWithTransaction` 메서드를 다시 생성 된를 [트랜잭션 내에서 데이터베이스 수정 내용을 래핑](wrapping-database-modifications-within-a-transaction-vb.md) 자습서를 전달을 `ProductsDataTable` 에 `ProductsTableAdapter`의 `UpdateWithTransaction` 메서드. 여기에서 ADO.NET 트랜잭션이 시작 및 TableAdapter 문제는 `INSERT` 데이터베이스에 추가 된 각 문을 `ProductsRow` DataTable에서. 모든 제품이 오류 없이 추가 될 트랜잭션이 커밋될 때 가정 하 고, 그렇지 않으면이 롤백됩니다.
 
 배송 단추 s에서 추가 제품에 대 한 코드 `Click` 이벤트 처리기도 약간의 오류 검사를 수행 해야 합니다. 없습니다 RequiredFieldValidators 삽입 인터페이스에서 사용 되므로 사용자는 해당 이름을 생략 하는 동안 가격을 제품에 대 한 입력할 수 있습니다. S 제품 이름을 필수 이므로 해야 이러한 조건을 화면의 경우 사용자 알림 및 삽입을 사용 하 여 진행 되지 않습니다. 전체 `Click` 이벤트 처리기 코드는 다음과 같습니다.
 

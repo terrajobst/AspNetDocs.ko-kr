@@ -8,12 +8,12 @@ ms.date: 09/13/2006
 ms.assetid: f555c531-bf33-4699-9987-42dbfef23c1f
 msc.legacyurl: /web-forms/overview/data-access/displaying-data-with-the-datalist-and-repeater/showing-multiple-records-per-row-with-the-datalist-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 7a23e8897e4fbdf84c4d6916c22bad9687fa5ee6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: e8b5493694b24e4187ecb69ca8d2eff6a8507985
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046500"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58421221"
 ---
 <a name="showing-multiple-records-per-row-with-the-datalist-control-vb"></a>DataList 컨트롤을 사용하여 행마다 여러 레코드 표시(VB)
 ====================
@@ -66,7 +66,7 @@ Visual Studio에서 자동으로 만들고 새 ObjectDataSource DataList 바인�
 
 기본 동작 하는 동안 DataList 열과 다중 행이 단일 열 테이블에서에서 해당 항목을 레이아웃 하는 것이 동작은 쉽게 변경할 수 있습니다 DataList s 통해 [ `RepeatDirection` 속성](https://msdn.microsoft.com/system.web.ui.webcontrols.datalist.repeatdirection.aspx)합니다. 합니다 `RepeatDirection` 속성의 두 가지 값 중 하나를 사용할 수 있습니다: `Horizontal` 또는 `Vertical` (기본값).
 
-변경 하 여는 `RepeatDirection` 속성을 `Vertical` 에 `Horizontal`, DataList를 데이터 원본 항목 마다 하나의 열을 만드는 해당 레코드는 단일 행에 렌더링 합니다. 이 효과 보여 주기 위해 디자이너에서 DataList 클릭 한 다음 속성 창에서 변경 된 `RepeatDirection` 속성을 `Vertical` 에 `Horiztonal`입니다. 즉시이 작업을 수행 하면 디자이너 레이아웃 조정 합니다 DataList s, 단일 행 및 다중 열 인터페이스 만들기 (그림 3 참조).
+변경 하 여는 `RepeatDirection` 속성을 `Vertical` 에 `Horizontal`, DataList를 데이터 원본 항목 마다 하나의 열을 만드는 해당 레코드는 단일 행에 렌더링 합니다. 이 효과 보여 주기 위해 디자이너에서 DataList 클릭 한 다음 속성 창에서 변경 된 `RepeatDirection` 속성을 `Vertical` 에 `Horizontal`입니다. 즉시이 작업을 수행 하면 디자이너 레이아웃 조정 합니다 DataList s, 단일 행 및 다중 열 인터페이스 만들기 (그림 3 참조).
 
 
 [![RepeatDirection 속성 결정 하는 방법의 방향 DataList s 항목이 배치 아웃](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image8.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image7.png)

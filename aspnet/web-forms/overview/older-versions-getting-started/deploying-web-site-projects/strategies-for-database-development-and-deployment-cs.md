@@ -8,12 +8,12 @@ ms.date: 04/23/2009
 ms.assetid: 3e8b0627-3eb7-488e-807e-067cba7cec05
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/strategies-for-database-development-and-deployment-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 029c17d5f996f595aef1af68c3ddb9b21f99f5cf
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 4ea1713541c30623c0f7c8387318549dd36a125f
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046800"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423587"
 ---
 <a name="strategies-for-database-development-and-deployment-c"></a>데이터베이스 개발 및 배포 전략(C#)
 ====================
@@ -66,7 +66,7 @@ ms.locfileid: "57046800"
 
 Prose에 데이터베이스 변경 내용을 문서화의 주된 이점은 단순성입니다. 데이터베이스 개체 만들기 및 변경에 대 한 SQL 구문 사용 하 여 t 필요 경험 하지. 대신 prose에 변경 내용을 기록 하 고 SQL Server Management Studio가 그래픽 사용자 인터페이스를 통해 구현 수입니다.
 
-Prose에 변경 로그 아닙니다, 사실 매우 정교 하 고 획득 t 작업 범위에서 큰와 같은 특정 프로젝트의 경우 잘 유지 관리 데이터 모델에 자주 변경 했거나 여러 개발자가 포함 됩니다. 하지만 작은 프리랜서 프로젝트만 가끔 변경 내용을 데이터 모델에 있는 없고 여기서 누구나 개발자 해박 한 배경 지식을 데이터베이스 개체 만들기 및 변경에 대 한 SQL 구문에서 잘 작동 하는이 방법을 보았습니다.
+Prose에 변경 로그 인정, 없습니다 매우 정교한을 범위에서 큰와 같은 특정 프로젝트에서 잘 작동 하지 않습니다를 유지 관리 하는 데이터 모델에 자주 변경 하거나 여러 개발자가 포함 됩니다. 하지만 작은 프리랜서 프로젝트만 가끔 변경 내용을 데이터 모델에 있는 없고 여기서 누구나 개발자 해박 한 배경 지식을 데이터베이스 개체 만들기 및 변경에 대 한 SQL 구문에서 잘 작동 하는이 방법을 보았습니다.
 
 > [!NOTE]
 > 변경 로그에 정보를 상태인 동안 기술적으로 배포 시간까지에 변경 내용의 기록을 유지 것을 권장 합니다. 하지만 단일 유지 관리 하는 대신 적이 변경 로그 파일 증가 하는 것이 좋습니다 각 데이터베이스 버전에 대 한 다른 변경 로그 파일입니다. 일반적으로 원하는 버전으로 데이터베이스를 배포할 때마다. 변경 로그의 로그를 유지 하 여, 시작 기준선에서 다시 만들 수 있습니다 데이터베이스 버전 변경 로그 버전 1에서에서 시작 스크립트를 실행 하 여 및 재현해 야 버전에 도달할 때까지 계속할 수 없습니다.

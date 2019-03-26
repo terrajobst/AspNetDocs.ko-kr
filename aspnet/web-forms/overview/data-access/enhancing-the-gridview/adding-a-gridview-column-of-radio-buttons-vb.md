@@ -8,12 +8,12 @@ ms.date: 03/06/2007
 ms.assetid: 2e31b60b-8723-4f14-b7ee-37859454dc3b
 msc.legacyurl: /web-forms/overview/data-access/enhancing-the-gridview/adding-a-gridview-column-of-radio-buttons-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 76b3dbd502eff7c97f57fdacd120ac2312aaceae
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 262e4e303daeda56b6590c8f2f925850b216f300
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061020"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422339"
 ---
 <a name="adding-a-gridview-column-of-radio-buttons-vb"></a>라디오 단추의 GridView 열 추가(VB)
 ====================
@@ -179,7 +179,7 @@ RadioButton 웹 컨트롤에 추가 된 `ItemTemplate`, 브라우저를 통해�
 
 [!code-aspx[Main](adding-a-gridview-column-of-radio-buttons-vb/samples/sample5.aspx)]
 
-이때 `GetUniqueRadioButton` 하 고 `GetRadioButtonValue` 적절 한 반환 하는 코드 숨김 클래스에 정의 된 메서드는 것 `id` 및 `value` 각 라디오 단추에 대 한 값을 특성입니다. 이 방법은 할당 하는 데는 `id` 및 `value` 특성 이지만 지정 해야 하는 경우 짧은 대체는 `checked` 데이터 먼저 GridView에 바인딩될 때 구문이 실행 되므로 특성 값입니다. 따라서 GridView에 뷰 상태를 사용 하는 경우 형식 지정 메서드와만 발생 시기는 페이지가 처음 로드 (또는 데이터 원본에 GridView 명시적으로 차츰 되는 경우) 및 설정 하는 함수의 따라서는 `checked` t-이득 특성에서 호출할 수 다시 게시 합니다. 이 s 보다 미묘한 문제를 및 잠시이 그대로 하므로이 문서의 범위를 벗어납니다. 그러나 수행, 위의 접근 방식을 사용해 보시기 바랍니다 했으며 막히면 수 있는 지점을 통해 작동 합니다. 이러한는 연습-이득 t 작업 버전으로 가까이 얻게, 깊이 있는 이해가 GridView 및 데이터 바인딩 수명 주기를 촉진 도움이 됩니다.
+이때 `GetUniqueRadioButton` 하 고 `GetRadioButtonValue` 적절 한 반환 하는 코드 숨김 클래스에 정의 된 메서드는 것 `id` 및 `value` 각 라디오 단추에 대 한 값을 특성입니다. 이 방법은 할당 하는 데는 `id` 및 `value` 특성 이지만 지정 해야 하는 경우 짧은 대체는 `checked` 데이터 먼저 GridView에 바인딩될 때 구문이 실행 되므로 특성 값입니다. 따라서 GridView에 뷰 상태를 사용 하는 경우 형식 지정 메서드와만 발생 시기는 페이지가 처음 로드 (또는 데이터 원본에 GridView 명시적으로 차츰 되는 경우) 및 설정 하는 함수의 따라서는 `checked` 특성에서 호출할 수 없습니다 다시 게시 합니다. 이 s 보다 미묘한 문제를 및 잠시이 그대로 하므로이 문서의 범위를 벗어납니다. 그러나 수행, 위의 접근 방식을 사용해 보시기 바랍니다 했으며 막히면 수 있는 지점을 통해 작동 합니다. 이러한 연습 않습니다 얻게 있습니다 가까이 작업 버전으로, 깊이 있는 이해가 GridView 및 데이터 바인딩 수명 주기를 촉진 도움이 됩니다.
 
 추가 하는 것을 다른 삽입 사용자 지정 방법 템플릿과이 자습서를 사용 하는 방법은에 하위 수준 태그를 [리터럴 컨트롤](https://msdn.microsoft.com/library/sz4949ks(VS.80).aspx) 템플릿에 합니다. GridView에서 다음 `RowCreated` 또는 `RowDataBound` 이벤트 처리기를 리터럴 컨트롤을 프로그래밍 방식으로 액세스할 수 있습니다 및 해당 `Text` 속성이를 내보내는 태그에 설정 합니다.
 

@@ -8,12 +8,12 @@ ms.date: 01/20/2014
 ms.assetid: e3d3e7ba-87f0-4032-bdd3-31f3c1aa9d9c
 msc.legacyurl: /web-api/overview/advanced/dependency-injection
 msc.type: authoredcontent
-ms.openlocfilehash: 318a2f1c587feb360212a390bb5de7bdc127513d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d5011d42d0c2200bc782ab548f6bfa0d952f6e72
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57043870"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58420922"
 ---
 <a name="dependency-injection-in-aspnet-web-api-2"></a>ASP.NET Web API 2에서에서 종속성 주입
 ====================
@@ -49,7 +49,7 @@ Entity Framework를 사용 하 여 데이터베이스에서 항목을 저장 하
 
 - 바꾸려는 경우 `ProductRepository` 를 다른 구현 해야 컨트롤러 클래스를 수정 합니다.
 - 경우는 `ProductRepository` 종속성에 컨트롤러 내에서 구성 해야 합니다. 여러 컨트롤러를 사용 하 여 대규모 프로젝트에 대 한 구성 코드 프로젝트에 분산 됩니다.
-- 하기 어렵습니다 단위 테스트, 컨트롤러 데이터베이스를 쿼리하고도 하드 코딩 되어 있습니다. 단위 테스트의 경우와 두고 디자인 가능 하지는 mock 또는 스텁 리포지토리를 사용 해야 합니다.
+- 하기 어렵습니다 단위 테스트, 컨트롤러 데이터베이스를 쿼리하고도 하드 코딩 되어 있습니다. 단위 테스트에 대 한 현재 디자인 가능 하지는 mock 또는 스텁 리포지토리를 사용 해야 합니다.
 
 이러한 문제를 처리할 수 있었습니다 *삽입* 저장소 컨트롤러입니다. 첫째, 리팩터링는 `ProductRepository` 인터페이스 클래스:
 

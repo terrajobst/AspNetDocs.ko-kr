@@ -8,24 +8,24 @@ ms.date: 07/16/2014
 ms.assetid: 4fe2558d-67cc-4d12-a5c1-6fb9f6f16137
 msc.legacyurl: /visual-studio/overview/2013/one-aspnet-integrating-aspnet-web-forms-mvc-and-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: c18911680b59448cd67190f71e951a3fcf3d0478
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 85e4369ee458043eec59fb27e317d18466f61f32
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57044130"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422534"
 ---
 <a name="hands-on-lab-one-aspnet-integrating-aspnet-web-forms-mvc-and-web-api"></a>실습: 하나의 ASP.NET: ASP.NET Web Forms, MVC 및 Web API 통합
 ====================
 [웹 캠프 팀](https://twitter.com/webcamps)
 
-[웹 캠프 학습 키트 다운로드](http://aka.ms/webcamps-training-kit)
+[웹 캠프 학습 키트 다운로드](https://aka.ms/webcamps-training-kit)
 
 > ASP.NET은 웹 사이트, 앱 및 MVC, Web API 등과 같은 특수 한 기술을 사용 하 여 서비스를 빌드하기 위한 프레임 워크입니다. 확장을 사용 하 여 ASP.NET에서 생성 된 후 표시를 표현 해야 이러한 기술을 통합 하 고 있었는지 최근 작업으로 작업 **One ASP.NET**합니다.
 > 
 > Visual Studio 2013 응용 프로그램을 빌드하고 프로젝트 중 하나에 모든 ASP.NET 기술을 사용 하 여 수 있는 새로운 통합형된 프로젝트 시스템인을 소개 합니다. 이 기능은, 스틱을 프로젝트의 시작 부분에 한 기술을 선택 하지 않아도 되며 대신 하나의 프로젝트 내에서 여러 ASP.NET 프레임 워크를 사용 하도록 할.
 > 
-> 웹 캠프 교육 키트에서에서 사용할 수 있는 모든 샘플 코드 및 코드 조각 포함 됩니다 [ http://aka.ms/webcamps-training-kit ](http://aka.ms/webcamps-training-kit)합니다.
+> 웹 캠프 교육 키트에서에서 사용할 수 있는 모든 샘플 코드 및 코드 조각 포함 됩니다 [ https://aka.ms/webcamps-training-kit ](https://aka.ms/webcamps-training-kit)합니다.
 
 
 <a id="Overview"></a>

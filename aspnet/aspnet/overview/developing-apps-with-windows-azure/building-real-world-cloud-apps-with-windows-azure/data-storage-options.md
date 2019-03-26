@@ -8,15 +8,15 @@ ms.date: 06/12/2014
 ms.assetid: e51fcecb-cb33-4f9e-8428-6d2b3d0fe1bf
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/data-storage-options
 msc.type: authoredcontent
-ms.openlocfilehash: 17e11c33d6bf2a75e99e3bda4d6ab89c5b1631f9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 9969a68a3e1aa043845fb5affd6d3b73dec4136d
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57042860"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425394"
 ---
-<a name="data-storage-options-building-real-world-cloud-apps-with-azure"></a>데이터 저장소 옵션 (실제 클라우드 앱 빌드 Azure 사용 하 여)
-====================
+# <a name="data-storage-options-building-real-world-cloud-apps-with-azure"></a>데이터 저장소 옵션 (실제 클라우드 앱 빌드 Azure 사용 하 여)
+
 하 여 [Mike Wasson](https://github.com/MikeWasson)하십시오 [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
 
 [다운로드 해결 프로젝트](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자책 다운로드](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
@@ -62,13 +62,13 @@ NoSQL 데이터베이스에 저장할 수 있는 데이터의 대용량 적시�
 
 Azure에서 [HDInsight](https://azure.microsoft.com/services/hdinsight/) 처리, 분석 및 Hadoop의 기능을 사용 하 여 빅 데이터에서 새로운 통찰력을 얻을 수 있습니다. 예를 들어, 웹 서버 로그 분석을 사용할 수 있습니다.
 
-- 저장소 계정에 웹 서버 로깅을 사용 하도록 설정 합니다. 이 응용 프로그램에 모든 HTTP 요청에 대 한 Blob Service에 로그를 쓸 Azure를 설정 합니다. Blob Service는 기본적으로 클라우드 파일 저장소 및 HDInsight를 사용 하 여 원활 하 게 통합 됩니다. 
+- 저장소 계정에 웹 서버 로깅을 사용 하도록 설정 합니다. 이 응용 프로그램에 모든 HTTP 요청에 대 한 Blob Service에 로그를 쓸 Azure를 설정 합니다. Blob Service는 기본적으로 클라우드 파일 저장소 및 HDInsight를 사용 하 여 원활 하 게 통합 됩니다.
 
     ![Blob Storage에 로그](data-storage-options/_static/image2.png)
-- 앱 트래픽을 가져옵니다, 웹 서버 IIS 로그 Blob 저장소에 작성 됩니다. 
+- 앱 트래픽을 가져옵니다, 웹 서버 IIS 로그 Blob 저장소에 작성 됩니다.
 
     ![웹 서버 로그](data-storage-options/_static/image3.png)
-- 포털에서 클릭 **새로 만들기** - **Data Services** - **HDInsight** - **빨리 만들기**, 고는 HDInsight 클러스터 이름, 클러스터 크기 (HDInsight 클러스터 데이터 노드 수) 및 사용자 이름 및 HDInsight 클러스터에 대 한 암호를 지정 합니다. 
+- 포털에서 클릭 **새로 만들기** - **Data Services** - **HDInsight** - **빨리 만들기**, 고는 HDInsight 클러스터 이름, 클러스터 크기 (HDInsight 클러스터 데이터 노드 수) 및 사용자 이름 및 HDInsight 클러스터에 대 한 암호를 지정 합니다.
 
     ![HDInsight](data-storage-options/_static/image4.png)
 
@@ -175,7 +175,7 @@ Fix It 응용 프로그램 작업을 저장 하는 관계형 데이터베이스�
 
 ![만든 새 SQL Database](data-storage-options/_static/image10.png)
 
-Azure는 몇에서 시간 (초) 어떤 필요할 수 있습니다 하루 하므로 주 또는 온-프레미스 환경에서 수행 하는 데 더 합니다. 스크립트에서 또는 관리 API를 사용 하 여 자동으로 데이터베이스를 작성할 수 손쉽게를 확장할 수 있습니다 동적으로 여러 < 된 > 데이터베이스에 데이터를 분산 하 여 응용 프로그램에 대 한 프로그래밍 되었습니다 하기만 하 고 있습니다. < /o : p >
+Azure는 몇에서 시간 (초) 어떤 필요할 수 있습니다 하루 하므로 주 또는 온-프레미스 환경에서 수행 하는 데 더 합니다. 및 스크립트에서 또는 관리 API를 사용 하 여 자동으로 데이터베이스를 작성할 수 손쉽게를 확장할 수 있습니다 동적으로 여러 데이터베이스 간에 데이터를 분산 하 여 응용 프로그램에 대 한 프로그래밍 되었습니다 하기만 합니다.
 
 이것이 우리의 플랫폼-as a Service 모델의 예입니다. 서버를 관리할 필요가 없습니다, 그리고 것입니다. 백업에 걱정할 필요가 없습니다, 그리고 것입니다. 고가용성-에서 실행 중인 데이터베이스의 데이터를 자동으로 세 명의 서버에 걸쳐 복제 됩니다. 소멸 되는 컴퓨터에서는 자동으로 장애 조치 하 고 데이터가 손실 됩니다. 서버는 정기적으로 패치를 신경 쓸 필요가 없습니다.
 
@@ -267,7 +267,7 @@ VM에서 SQL Server를 사용 하려는 경우 사용자 고유의 SQL Server �
 
 데이터베이스 플랫폼을 선택 합니다.
 
-- [확장성이 뛰어난 솔루션에 대 한 데이터 액세스: SQL, NoSQL 및 Polyglot 지 속성을 사용 하 여](http://aka.ms/dag-doc)입니다. 전자책 Microsoft Patterns and Practices에서 깊이에서 여러 종류의 데이터를 이동 하는 클라우드 응용 프로그램에 사용할 수 있는 저장 합니다.
+- [확장성이 뛰어난 솔루션에 대 한 데이터 액세스: SQL, NoSQL 및 Polyglot 지 속성을 사용 하 여](https://aka.ms/dag-doc)입니다. 전자책 Microsoft Patterns and Practices에서 깊이에서 여러 종류의 데이터를 이동 하는 클라우드 응용 프로그램에 사용할 수 있는 저장 합니다.
 - [Microsoft Patterns and Practices-Azure 지침](https://msdn.microsoft.com/library/ff898430.aspx)합니다. 데이터 일관성 입문서, 데이터 복제 및 동기화 지침, 인덱스 테이블 패턴, 구체화 된 뷰 패턴을 참조 하세요.
 - [BASE: Acid 대안](http://queue.acm.org/detail.cfm?id=1394128)합니다. 데이터 일관성 및 확장성에 대 한 절충에 대 한 문서.
 - [7 7 주 데이터베이스: 최신 데이터베이스 및 NoSQL 이동 가이드](https://www.amazon.com/Seven-Databases-Weeks-Modern-Movement/dp/1934356921)합니다. 책인 Eric 레드먼드와 R. Jim Wilson입니다. 현재 사용할 수 있는 데이터 저장소 플랫폼의 범위에 직접 도입 하는 데 적극 권장 합니다.

@@ -8,12 +8,12 @@ ms.date: 07/04/2012
 ms.assetid: 91ee29ee-0689-40ee-914a-e7dd733b6622
 msc.legacyurl: /web-api/overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-6
 msc.type: authoredcontent
-ms.openlocfilehash: 642ff4554ed3664af0b5cc8e49d6b236c568131b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 21cfbd0bf691ea033e9a5a873ab49c83507750d5
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57054440"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425966"
 ---
 <a name="part-6-creating-product-and-order-controllers"></a>6부: 제품 및 주문 컨트롤러 만들기
 ====================
@@ -96,7 +96,7 @@ HTTP 응답에는 제품 수량을 사용 하 여 배열을 포함 됩니다.
 
 [!code-json[Main](using-web-api-with-entity-framework-part-6/samples/sample10.json)]
 
-이 잘 구성 된 순서가 및 Entity Framework는 기꺼이 데이터베이스에 삽입 합니다. 하지만 이전에 존재 하지 않는 제품 엔터티를 포함 합니다. 클라이언트는 데이터베이스에 새 제품을 만들었습니다! Koala 곰 주문을 나타날 때 순서 공급 처리 부서에 보안 컨텍스트로 실행 됩니다. 교훈은, POST 또는 PUT 요청에서 허용 하는 데이터에 대 한 매우 주의 해야 합니다.
+이 잘 구성 된 순서가 및 Entity Framework는 기꺼이 데이터베이스에 삽입 합니다. 하지만 이전에 존재 하지 않는 제품 엔터티를 포함 합니다. 클라이언트는 데이터베이스에 새 제품을 만들었습니다! Koala 곰 주문을 나타날 때 주문이 행 부서에 보안 컨텍스트로 실행 됩니다. 교훈은, POST 또는 PUT 요청에서 허용 하는 데이터에 대 한 매우 주의 해야 합니다.
 
 이 문제를 방지 하려면 변경 된 `PostOrder` 되려면 메서드는 `OrderDTO` 인스턴스. 사용 된 `OrderDTO` 만들려면를 `Order`합니다.
 

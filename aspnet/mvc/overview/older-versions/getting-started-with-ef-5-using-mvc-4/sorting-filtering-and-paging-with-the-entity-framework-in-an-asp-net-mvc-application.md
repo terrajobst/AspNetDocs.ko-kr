@@ -8,12 +8,12 @@ ms.date: 07/30/2013
 ms.assetid: 8af630e0-fffa-4110-9eca-c96e201b2724
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/sorting-filtering-and-paging-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: 8bea3d4bc19a5a47240abeb2cc015116814a8fdf
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: afd1551d72fa3a5b925d7499c86731db4b6f0b61
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57043040"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422014"
 ---
 <a name="sorting-filtering-and-paging-with-the-entity-framework-in-an-aspnet-mvc-application-3-of-10"></a>정렬, 필터링 및 페이징 (3 / 10) ASP.NET MVC 응용 프로그램에서 Entity Framework를 사용 하 여
 ====================
@@ -89,7 +89,7 @@ ms.locfileid: "57043040"
 
 [!code-csharp[Main](sorting-filtering-and-paging-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample4.cs?highlight=1,7-11)]
 
-`searchString` 매개 변수를 `Index` 메서드에 추가했습니다. 또한 LINQ 문에 추가한는 `where` clausethat 이름 또는 성을 검색 문자열을 포함 하는 학생만 선택 합니다. 검색 문자열 값을 인덱스 뷰에 추가할 텍스트 상자에서 수신 됩니다. 추가 하는 문에 [여기서](https://msdn.microsoft.com/library/bb535040.aspx) 절은 검색할 값이 있는 경우에 실행 됩니다.
+`searchString` 매개 변수를 `Index` 메서드에 추가했습니다. 또한 LINQ 문에 추가한는 `where` 이름 또는 성을 검색 문자열이 포함 된 학생만 선택 하는 절. 검색 문자열 값을 인덱스 뷰에 추가할 텍스트 상자에서 수신 됩니다. 추가 하는 문에 [여기서](https://msdn.microsoft.com/library/bb535040.aspx) 절은 검색할 값이 있는 경우에 실행 됩니다.
 
 > [!NOTE]
 > 대부분의 메모리 내 컬렉션에 확장 메서드 또는 Entity Framework 엔터티 집합에 대해 동일한 메서드를 호출할 수 있습니다. 결과 일반적으로 동일 하지만 경우에 따라 다를 수 있습니다. 예를 들어,.NET Framework 구현의 `Contains` 메서드, 빈 문자열을 전달 하지만 SQL Server Compact 4.0에 대 한 Entity Framework 공급자를 빈 문자열에 대 한 0 개 행을 반환 하는 경우 모든 행을 반환 합니다. 따라서 예제에서 코드 (배치 합니다 `Where` 내에서 문을 `if` 문)는 모든 버전의 SQL Server에 대 한 동일한 결과 얻을 수 있는지. 또한.NET Framework 구현의 `Contains` 메서드는 기본적으로 대/소문자 구분 비교를 수행 하지만 Entity Framework SQL Server 공급자는 기본적으로 대/소문자 구분 비교를 수행 합니다. 따라서 호출을 `ToUpper` 테스트를 명시적으로 대/소문자 확인 메서드를 사용 하면 결과가 반환 하는 저장소를 사용 하 여 나중에 코드를 변경할 때 변경 되지 않습니다는 `IEnumerable` 컬렉션 대신는 `IQueryable` 개체. (`IEnumerable` 컬렉션에서 `Contains` 메서드를 호출하면 .NET Framework 구현을 가져오고 `IQueryable` 개체에서 호출하면 데이터베이스 공급자 구현을 가져옵니다.)

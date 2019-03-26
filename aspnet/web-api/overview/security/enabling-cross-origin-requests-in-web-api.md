@@ -8,12 +8,12 @@ ms.date: 01/29/2019
 ms.assetid: 9b265a5a-6a70-4a82-adce-2d7c56ae8bdd
 msc.legacyurl: /web-api/overview/security/enabling-cross-origin-requests-in-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 97a0027194b019b09e220493dcb593e682027fe3
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c9d3e4b05103d270ad95908177bb2981338a4ae1
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046010"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425290"
 ---
 <a name="enable-cross-origin-requests-in-aspnet-web-api-2"></a>ASP.NET Web API 2에서 크로스-원본 요청을 사용 하도록 설정
 ====================
@@ -278,7 +278,7 @@ jQuery를 사용할 경우:
 
 ## <a name="custom-cors-policy-providers"></a>사용자 지정 CORS 정책 공급자
 
-합니다 **[EnableCors]** 구현 특성을 **ICorsPolicyProvider** 인터페이스입니다. 파생 되는 클래스를 만들어 사용자 지정 구현을 제공할 수 있습니다 **특성** 구현 **ICorsProlicyProvider**합니다.
+합니다 **[EnableCors]** 구현 특성을 **ICorsPolicyProvider** 인터페이스입니다. 파생 되는 클래스를 만들어 사용자 지정 구현을 제공할 수 있습니다 **특성** 구현 **ICorsPolicyProvider**합니다.
 
 [!code-csharp[Main](enabling-cross-origin-requests-in-web-api/samples/sample21.cs)]
 

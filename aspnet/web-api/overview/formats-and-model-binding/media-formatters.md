@@ -8,12 +8,12 @@ ms.date: 01/20/2014
 ms.assetid: 4c56f64a-086a-44ce-99c2-4c69604cd7fd
 msc.legacyurl: /web-api/overview/formats-and-model-binding/media-formatters
 msc.type: authoredcontent
-ms.openlocfilehash: 7b7ba2fb3f1bba0447e700c84a017266cba305e6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bd54a1d8ae3a2913c9d8a11c5b31ba1c829450d2
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57045020"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425316"
 ---
 <a name="media-formatters-in-aspnet-web-api-2"></a>ASP.NET Web API 2의에서 미디어 포맷터
 ====================
@@ -46,7 +46,7 @@ HTTP 메시지에 엔터티 본문이 포함 된 경우 콘텐츠 형식 헤더�
 미디어 포맷터를 만들려면 이러한 클래스 중 하나에서 파생 됩니다.
 
 - [MediaTypeFormatter](https://msdn.microsoft.com/library/system.net.http.formatting.mediatypeformatter.aspx). 이 클래스는 비동기 읽기 및 쓰기 메서드.
-- [BufferedMediaTypeFormatter](https://msdn.microsoft.com/library/system.net.http.formatting.bufferedmediatypeformatter.aspx). 이 클래스에서 파생 됩니다 **MediaTypeFormatter** sychronous 읽기/쓰기 메서드를 사용 합니다.
+- [BufferedMediaTypeFormatter](https://msdn.microsoft.com/library/system.net.http.formatting.bufferedmediatypeformatter.aspx). 이 클래스에서 파생 됩니다 **MediaTypeFormatter** 동기 읽기/쓰기 메서드를 사용 합니다.
 
 파생 **BufferedMediaTypeFormatter** 비동기 코드가 없는 것 이지만 I/O 하는 동안 호출 스레드가 차단할 수 있으므로 더 간단 합니다.
 
@@ -56,7 +56,7 @@ HTTP 메시지에 엔터티 본문이 포함 된 경우 콘텐츠 형식 헤더�
 
 [!code-csharp[Main](media-formatters/samples/sample3.cs)]
 
-CSV 포맷터를 구현 하려면에서 파생 된 클래스를 정의 **BufferedMediaTypeFormater**:
+CSV 포맷터를 구현 하려면에서 파생 된 클래스를 정의 **BufferedMediaTypeFormatter**:
 
 [!code-csharp[Main](media-formatters/samples/sample4.cs)]
 

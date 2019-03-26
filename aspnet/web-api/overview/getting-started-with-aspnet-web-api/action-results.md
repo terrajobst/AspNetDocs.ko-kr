@@ -8,12 +8,12 @@ ms.date: 02/03/2014
 ms.assetid: 2fc4797c-38ef-4cc7-926c-ca431c4739e8
 msc.legacyurl: /web-api/overview/getting-started-with-aspnet-web-api/action-results
 msc.type: authoredcontent
-ms.openlocfilehash: b2b5ae5e5cef19e75a184aa28ac838a31e5ef1fd
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c255cebfd6b0c632c000d24288a4dd4cf73c8a1c
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061780"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422040"
 ---
 <a name="action-results-in-web-api-2"></a>Web API 2의 작업 결과
 ====================
@@ -83,7 +83,7 @@ Web API 요청에 Accept 헤더를 사용 하 여 포맷터 선택. 자세한 �
 
 컨트롤러 작업을 반환 하는 경우는 **IHttpActionResult**, Web API를 호출 합니다 **ExecuteAsync** 메서드를를 **HttpResponseMessage**합니다. 변환 후 합니다 **HttpResponseMessage** HTTP 응답 메시지에 있습니다.
 
-한 간단한 않아도 됨 다음과 같습니다 **IHttpActionResult** 를 만드는 일반 텍스트 응답:
+간단한 구현을 다음과 같습니다 **IHttpActionResult** 는 일반 텍스트 응답을 만듭니다.
 
 [!code-csharp[Main](action-results/samples/sample7.cs)]
 

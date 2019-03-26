@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 38ac8250-8854-444c-b9ab-8998faa41c5a
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/dynamicpopulate/using-dynamicpopulate-with-a-user-control-and-javascript-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 110f6dd05d038438bc061d3ee907a5e2da8968c6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: cf8b6de7274c3ae025464e1b01a365ec158ae5f8
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062300"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424393"
 ---
 <a name="using-dynamicpopulate-with-a-user-control-and-javascript-c"></a>사용자 정의 컨트롤 및 JavaScript에 DynamicPopulate 사용(C#)
 ====================
@@ -52,7 +52,7 @@ A &lt; `label` &gt; 서버에서 가져온 데이터를 표시할 요소가 사�
 
 [!code-aspx[Main](using-dynamicpopulate-with-a-user-control-and-javascript-cs/samples/sample5.aspx)]
 
-컨트롤에 사용 되는 이상한 ID를 적어 둡니다 있습니다 다시: `mcd1$myDate` 대신 `myDate`합니다. 이전에 JavaScript 코드를 `mcd1_dpe1` 액세스 하는 `DynamicPopulateExtender` 대신 `dpe1`합니다. 사용 하는 경우이 명명 전략은 특별 한 요구 사항 `DynamicPopulateExtender` 사용자 컨트롤입니다. 또한 모든 작동 하도록 특정 방식으로 사용자 컨트롤을 포함 해야 합니다. 새 ASP.NET 페이지를 만들고 방금 구현한 사용자 컨트롤에 대 한 태그 접두사를 등록 합니다.
+컨트롤에 사용 되는 이상한 ID를 적어 둡니다 있습니다 다시: `mcd1$myDate` 대신 `myDate`합니다. 이전에 JavaScript 코드를 `mcd1_dpe1` 액세스 하는 `DynamicPopulateExtender` 대신 `dpe1`합니다. 사용 하는 경우이 명명 전략은 특별 한 요구 사항 `DynamicPopulateExtender` 사용자 컨트롤입니다. 또한 모든 작동 하도록 특정 방식으로 사용자 정의 컨트롤을 포함 해야 합니다. 새 ASP.NET 페이지를 만들고 방금 구현한 사용자 컨트롤에 대 한 태그 접두사를 등록 합니다.
 
 [!code-aspx[Main](using-dynamicpopulate-with-a-user-control-and-javascript-cs/samples/sample6.aspx)]
 

@@ -8,12 +8,12 @@ ms.date: 02/25/2014
 ms.assetid: 66a837e9-600b-4b72-97a9-19804231c64a
 msc.legacyurl: /web-api/overview/testing-and-debugging/tracing-in-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: e0d525e497cf41a79820417a9c832fa6b5cd7f8a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 59bce8c511167e8ba8a8db6f1842e352c90f3039
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57031540"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424900"
 ---
 <a name="tracing-in-aspnet-web-api-2"></a>ASP.NET Web API 2에서 추적
 ====================
@@ -89,7 +89,7 @@ Trace 문 Visual Studio의 출력 창에 기록 됩니다. (에서 합니다 **�
 
 이 섹션에서는 웹 API에 대 한 사용자 지정 추적 작성기를 작성 하는 방법을 설명 합니다.
 
-Microsoft.AspNet.WebApi.Tracing 패키지는 Web API는 보다 일반적인 추적 인프라를 기반으로 합니다. Microsoft.AspNet.WebApi.Tracing를 사용 하는 대신도 연결 하 여 일부 다른 추적/고 라이브러리와 같은 [NLog](http://nlog-project.org/) 하거나 [log4net](http://logging.apache.org/log4net/)합니다.
+Microsoft.AspNet.WebApi.Tracing 패키지는 Web API는 보다 일반적인 추적 인프라를 기반으로 합니다. Microsoft.AspNet.WebApi.Tracing를 사용 하는 대신도 연결 하 여 일부 다른 추적/로깅 라이브러리와 같은 [NLog](http://nlog-project.org/) 하거나 [log4net](http://logging.apache.org/log4net/)합니다.
 
 추적을 수집 하려면 구현 합니다 **ITraceWriter** 인터페이스입니다. 간단한 예는 다음과 같습니다.
 
@@ -113,7 +113,7 @@ Microsoft.AspNet.WebApi.Tracing 패키지는 Web API는 보다 일반적인 추�
 
 Web API에서 추적에 사용 된 *외관* 패턴: 추적을 사용 하는 경우 Web API 추적 호출을 수행 하는 클래스를 사용 하 여 요청 파이프라인의 여러 부분을 래핑합니다.
 
-예를 들어 컨트롤러를 선택할 때 파이프라인을 사용 하 여 **IHttpControllerSelector** 인터페이스입니다. pipleline 사용 하도록 설정 하는 추적 기능을 구현 하는 클래스를 삽입 **IHttpControllerSelector** 하지만 실제 구현을 통해 호출 합니다.
+예를 들어 컨트롤러를 선택할 때 파이프라인을 사용 하 여 **IHttpControllerSelector** 인터페이스입니다. 파이프라인을 사용 하도록 설정 하는 추적 기능을 구현 하는 클래스를 삽입 **IHttpControllerSelector** 하지만 실제 구현을 통해 호출 합니다.
 
 ![Web API 추적 외관 패턴을 사용합니다.](tracing-in-aspnet-web-api/_static/image8.png)
 

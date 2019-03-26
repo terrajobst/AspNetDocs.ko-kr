@@ -8,12 +8,12 @@ ms.date: 02/20/2009
 ms.assetid: 92c70297-4430-4e4e-919a-9c2333a8d09a
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager/iteration-4-make-the-application-loosely-coupled-vb
 msc.type: authoredcontent
-ms.openlocfilehash: be6ddbdfbe8da33871355c2a7917a7ce7008d81b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a319e2eb71da1bf693b1bd14ae368c844e7daeb1
+ms.sourcegitcommit: 62db31596a7da029263cf06335aff12236fb3186
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57054870"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58440263"
 ---
 <a name="iteration-4--make-the-application-loosely-coupled-vb"></a>반복 #4 – 응용 프로그램을 느슨하게 결합 (VB) 확인
 ====================
@@ -61,7 +61,7 @@ by [Microsoft](https://github.com/microsoft)
 
 응용 프로그램은 느슨하게 결합 되어 있는 경우 다른 한편으로 할 수 있습니다 변경 내용을 응용 프로그램의 한 부분에는 응용 프로그램의 다른 부분을 건드리지 않고. 예를 들어, 컨트롤러 또는 유효성 검사 논리를 수정 하지 않고 데이터 액세스 기술을 전환할 수 있습니다.
 
-이 반복에서 점을 이용 더 느슨하게 결합 된 응용 프로그램으로 연락처 관리자 응용 프로그램을 리팩터링 하는 몇 가지 소프트웨어 디자인 패턴입니다. 작업을 완료 했습니다 t-이득 Contact Manager 수행할는 해당 동작 t 전에 작업을 수행 합니다. 그러나 나중에 보다 쉽게 응용 프로그램을 변경 하려면 드리겠습니다.
+이 반복에서 점을 이용 더 느슨하게 결합 된 응용 프로그램으로 연락처 관리자 응용 프로그램을 리팩터링 하는 몇 가지 소프트웨어 디자인 패턴입니다. 작업을 완료 했습니다 Contact Manager-이득 t 수행 하기 전에 수행 하지 않은 것입니다. 그러나 나중에 보다 쉽게 응용 프로그램을 변경 하려면 드리겠습니다.
 
 > [!NOTE] 
 > 
@@ -165,7 +165,7 @@ IContactManagerService 인터페이스 목록 5에 포함 됩니다.
 
 그러나이 서비스 계층 컨트롤러 계층에 다시 유효성 검사 오류 메시지를 전달할 수 해야 합니다. 컨트롤러 및 서비스 계층을 결합 하지 않고 유효성 검사 오류 메시지를 통신 하도록 서비스 계층에는 어떻게 설정할 수 있습니다.에서는? 라는 소프트웨어 디자인 패턴을 활용 합니다 [데코레이터 패턴](http://en.wikipedia.org/wiki/Decorator_pattern)합니다.
 
-컨트롤러는 ModelStateDictionary ModelState 라는 사용 하 여 유효성 검사 오류를 나타냅니다. 따라서 ModelState 컨트롤러 계층에서 서비스 계층에 전달 하 고 싶은 생각이 들 수 있습니다. 그러나 ModelState를 사용 하 여 서비스 계층에는 서비스 계층에 종속 되 게 ASP.NET MVC 프레임 워크의 기능입니다. ASP.NET MVC 응용 프로그램 대신 WPF 응용 프로그램을 사용 하 여 서비스 계층을 사용 하려는 향후 때문에 잘못 된 것. 이 경우 비현실적 t ModelStateDictionary 클래스를 사용 하 여 ASP.NET MVC 프레임 워크를 참조 하려고 합니다.
+컨트롤러는 ModelStateDictionary ModelState 라는 사용 하 여 유효성 검사 오류를 나타냅니다. 따라서 ModelState 컨트롤러 계층에서 서비스 계층에 전달 하 고 싶은 생각이 들 수 있습니다. 그러나 ModelState를 사용 하 여 서비스 계층에는 서비스 계층에 종속 되 게 ASP.NET MVC 프레임 워크의 기능입니다. ASP.NET MVC 응용 프로그램 대신 WPF 응용 프로그램을 사용 하 여 서비스 계층을 사용 하려는 향후 때문에 잘못 된 것. 이런 경우 ModelStateDictionary 클래스를 사용 하 여 ASP.NET MVC 프레임 워크 참조 않을 수 있습니다.
 
 Decorator 패턴을 사용 하는 인터페이스를 구현 하기 위해 새 클래스에서 기존 클래스를 래핑할 수 있습니다. Contact Manager 프로젝트는 7에 포함 된 ModelStateWrapper 클래스를 포함 합니다. ModelStateWrapper 클래스 목록 8에서 인터페이스를 구현합니다.
 

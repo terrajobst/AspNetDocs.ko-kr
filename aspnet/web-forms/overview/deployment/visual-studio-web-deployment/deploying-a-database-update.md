@@ -8,12 +8,12 @@ ms.date: 02/15/2013
 ms.assetid: 9cad0833-486a-4474-a7f3-7715542ec4ce
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/deploying-a-database-update
 msc.type: authoredcontent
-ms.openlocfilehash: 5c9b0c71e2e0d35645e975e9adb7086e65bcf4c3
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5145f0a9bfe615fa98a7341841f72597594de1e4
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57026840"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424263"
 ---
 <a name="aspnet-web-deployment-using-visual-studio-deploying-a-database-update"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 데이터베이스 업데이트 배포
 ====================
@@ -50,7 +50,7 @@ Birth date 열을 추가 하면이 섹션에서는 합니다 `Person` 기본 클
 
     [!code-powershell[Main](deploying-a-database-update/samples/sample3.ps1)]
 
-    이 명령은 완료 되 면 Visual Studio 새 정의 하는 클래스 파일을 엽니다 `DbMIgration` 클래스 및는 `Up` 메서드는 새 열을 만드는 코드를 볼 수 있습니다. 합니다 `Up` 변경 내용을 구현 하는 경우 메서드는 열을 만듭니다 및 `Down` 롤백하는 변경 하는 경우 메서드는 열을 삭제 합니다.
+    이 명령은 완료 되 면 Visual Studio 새 정의 하는 클래스 파일을 엽니다 `DbMigration` 클래스 및는 `Up` 메서드는 새 열을 만드는 코드를 볼 수 있습니다. 합니다 `Up` 변경 내용을 구현 하는 경우 메서드는 열을 만듭니다 및 `Down` 롤백하는 변경 하는 경우 메서드는 열을 삭제 합니다.
 
     ![AddBirthDate_migration_code](deploying-a-database-update/_static/image1.png)
 4. 솔루션을 빌드하고에서 다음 명령을 입력 합니다 **패키지 관리자 콘솔** 창 (ContosoUniversity.DAL 프로젝트 여전히 선택 되어 있는지 확인):

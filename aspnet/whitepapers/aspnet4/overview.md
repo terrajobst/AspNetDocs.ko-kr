@@ -8,12 +8,12 @@ ms.date: 02/10/2010
 ms.assetid: d7729af4-1eda-4ff2-8b61-dbbe4fc11d10
 msc.legacyurl: /whitepapers/aspnet4
 msc.type: content
-ms.openlocfilehash: 775286df610df9040cbf04125b1742b6befa055b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 93ee29ae125e9442ee755998768a8105dfb485c0
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57043160"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424302"
 ---
 <a name="aspnet-4-and-visual-studio-2010-web-development-overview"></a>ASP.NET 4 및 Visual Studio 2010 웹 개발 개요
 ====================
@@ -945,7 +945,7 @@ ASP.NET 4에는 작업의 주요 영역 중 하나는 최신 HTML 표준을 준�
 
 ASP.NET 3.5 SP1 및 이전 버전의 프레임 워크는 다음과 같이 렌더링 됩니다. 합니다 *사용 하지 않도록 설정* 모든 컨트롤에 대 한 HTML 태그에 특성 *Enabled* 속성이로 설정 *false*합니다. 그러나 HTML 4.01 사양에 따라 *입력* 요소에는이 특성이 있어야 합니다.
 
-ASP.NET 4에서 설정할 수 있습니다 합니다 *controlRenderingCompatabilityVersion* "3.5" 다음 예제와 같이 속성:
+ASP.NET 4에서 설정할 수 있습니다 합니다 *controlRenderingCompatibilityVersion* "3.5" 다음 예제와 같이 속성:
 
 [!code-xml[Main](overview/samples/sample70.xml)]
 
@@ -957,7 +957,7 @@ ASP.NET 4에서 설정할 수 있습니다 합니다 *controlRenderingCompatabil
 
 [!code-html[Main](overview/samples/sample72.html)]
 
-ASP.NET 4에서 설정할 수 있습니다 합니다 *controlRenderingCompatabilityVersion* "4.0"입니다. 이 경우 렌더링 되는 제어 *입력* 요소가 렌더링 됩니다는 *사용 하지 않도록 설정* 때 특성 컨트롤의 *사용* 속성이 *false* . HTML 렌더링 되지 않는 컨트롤 *입력* 요소 대신 렌더링을 *클래스* 컨트롤에 대 한 비활성화 된 모양을 정의 하는 데 사용할 수 있는 CSS 클래스를 참조 하는 특성입니다. 예를 들어 합니다 *레이블* 앞의 예제에 표시 되는 컨트롤은 다음 태그를 생성 합니다.
+ASP.NET 4에서 설정할 수 있습니다 합니다 *controlRenderingCompatibilityVersion* "4.0"입니다. 이 경우 렌더링 되는 제어 *입력* 요소가 렌더링 됩니다는 *사용 하지 않도록 설정* 때 특성 컨트롤의 *사용* 속성이 *false* . HTML 렌더링 되지 않는 컨트롤 *입력* 요소 대신 렌더링을 *클래스* 컨트롤에 대 한 비활성화 된 모양을 정의 하는 데 사용할 수 있는 CSS 클래스를 참조 하는 특성입니다. 예를 들어 합니다 *레이블* 앞의 예제에 표시 되는 컨트롤은 다음 태그를 생성 합니다.
 
 [!code-html[Main](overview/samples/sample73.html)]
 

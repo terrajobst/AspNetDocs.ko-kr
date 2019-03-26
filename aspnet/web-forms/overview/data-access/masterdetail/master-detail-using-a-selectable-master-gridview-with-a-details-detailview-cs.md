@@ -8,12 +8,12 @@ ms.date: 03/31/2010
 ms.assetid: 0f982827-f8f9-420d-b36b-57b23f5aa519
 msc.legacyurl: /web-forms/overview/data-access/masterdetail/master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 9d75c80b4c1bac5011acc896d91ff2fcd5a19298
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a5623c34ad7f8c9b5effed318a04b204ab66ecaa
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57064800"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425199"
 ---
 <a name="masterdetail-using-a-selectable-master-gridview-with-a-details-detailview-c"></a>세부 정보 DetailView와 함께 선택 가능한 마스터 GridView를 사용하는 마스터/세부 정보(C#)
 ====================
@@ -153,7 +153,7 @@ CommandField 추가 설정 선택 옵션을 선택 합니다 `ProductsGrid` Grid
 
 이 단원과 이전 세 가지 자습서를 다양 한 마스터/세부 정보 보고서를 표시 하기 위한 기술 살펴보았습니다. 이 자습서를 살펴보았습니다 마스터 레코드와 동일한 페이지에 선택한 마스터 레코드에 대 한 세부 정보를 표시할 DetailsView를 보관 하 선택 가능한 GridView를 사용 합니다. 이전 자습서에서 하나의 웹 페이지 및 다른 세부 정보 레코드에서 마스터 레코드를 표시 하는 Dropdownlist를 사용 하 여 마스터/세부 정보 보고서를 표시 하는 방법에 살펴보았습니다.
 
-이 자습서의 마스터/세부 정보 보고서는 검사를 완료 했습니다. 다음 tutorialwe부터 GridView, DetailsView 및 FormView 사용 하 여 사용자 지정 된 형식의 탐색을 시작 해 보겠습니다. 에 바인딩된 데이터를 기반으로 이러한 컨트롤의 모양을 사용자 지정 하는 방법, GridView의 바닥글에 데이터를 요약 하는 방법 및 뛰어난 레이아웃에 대 한 제어를 가져오려면 템플릿을 사용 하는 방법을 살펴보겠습니다.
+이 자습서의 마스터/세부 정보 보고서는 검사를 완료 했습니다. 다음 자습서를 사용 하 여 시작 GridView, DetailsView 및 FormView 사용 하 여 사용자 지정 된 형식의 탐색을 살펴보겠습니다. 에 바인딩된 데이터를 기반으로 이러한 컨트롤의 모양을 사용자 지정 하는 방법, GridView의 바닥글에 데이터를 요약 하는 방법 및 뛰어난 레이아웃에 대 한 제어를 가져오려면 템플릿을 사용 하는 방법을 살펴보겠습니다.
 
 즐거운 프로그래밍!
 

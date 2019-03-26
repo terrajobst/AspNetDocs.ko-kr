@@ -8,12 +8,12 @@ ms.date: 03/26/2015
 ms.assetid: c205805f-efdd-4fa7-9616-f26eab180611
 msc.legacyurl: /mvc/overview/performance/profile-and-debug-your-aspnet-mvc-app-with-glimpse
 msc.type: authoredcontent
-ms.openlocfilehash: 94a72f22cbcd7fa84528dde502cceaa1e26dcaa1
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ea149b6450cf02c993c7690752a05396802336be
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049230"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425056"
 ---
 <a name="profile-and-debug-your-aspnet-mvc-app-with-glimpse"></a>Glimpse를 사용하여 ASP.NET MVC 앱 프로파일링 및 디버그
 ====================
@@ -58,7 +58,7 @@ NuGet 패키지 관리자 콘솔에서 또는 Glimpse를 설치할 수 있습니
 
 표시 즐겨찾기 모음에 있는 경우 있습니다 수 Glimpse 단추 끌어서 bookmarklets로 추가 합니다.
 
-![Glimpse boookmarklets IE](profile-and-debug-your-aspnet-mvc-app-with-glimpse/_static/image5.png)
+![Glimpse bookmarklets IE](profile-and-debug-your-aspnet-mvc-app-with-glimpse/_static/image5.png)
 
 이제 앱을 탐색할 수 있습니다 및 **표시를 헤드** (hud가) 페이지의 맨 아래에 표시 됩니다.
 
@@ -104,11 +104,11 @@ Tom Dykstra 수정 했지만 미해결 [EF 6/MVC 5 자습서](../getting-started
 <a id="da"></a>
 ## <a name="using-glimpse-on-azure"></a>Glimpse를 사용 하 여 Azure에서
 
-간략 한 기본 보안 정책을 이해 표시할 데이터를 로컬 호스트에서 허용 합니다. 원격 서버 (예: Azure에서 웹 앱)에서이 데이터를 볼 수 있도록이 보안 정책을 변경할 수 있습니다. Azure에서 테스트 환경에 대 한 아래쪽까지 강조 표시를 추가 합니다 *web.confg* 눈에 볼 수 있도록 파일:
+간략 한 기본 보안 정책을 이해 표시할 데이터를 로컬 호스트에서 허용 합니다. 원격 서버 (예: Azure에서 웹 앱)에서이 데이터를 볼 수 있도록이 보안 정책을 변경할 수 있습니다. Azure에서 테스트 환경에 대 한 아래쪽까지 강조 표시를 추가 합니다 *web.config* 눈에 볼 수 있도록 파일:
 
 [!code-xml[Main](profile-and-debug-your-aspnet-mvc-app-with-glimpse/samples/sample3.xml?highlight=2-6)]
 
-모든 사용자만이 변경으로 원격 사이트에 간략 한 데이터를 볼 수입니다. 에 배포할 수 있도록 적용 된 게시 프로필 (예를 들어 사용자 Azure 테스트 proifle.)를 사용 하는 경우 게시 프로필에 위의 태그를 추가 하는 것이 좋습니다. 간략 한 데이터를 제한 하려면 추가 `canViewGlimpseData` 역할만 간략 한 데이터를 보려면이 역할의 사용자를 허용 합니다.
+모든 사용자만이 변경으로 원격 사이트에 간략 한 데이터를 볼 수입니다. 에 배포할 수 있도록 적용 된 해당 게시 프로필 (예를 들어 Azure 테스트 추가 하십시오.)를 사용 하는 경우 게시 프로필에 위의 태그를 추가 하는 것이 좋습니다. 간략 한 데이터를 제한 하려면 추가 `canViewGlimpseData` 역할만 간략 한 데이터를 보려면이 역할의 사용자를 허용 합니다.
 
 주석을 제거 합니다 *GlimpseSecurityPolicy.cs* 파일을 변경 합니다 [IsInRole](https://msdn.microsoft.com/library/system.security.principal.iprincipal.isinrole(v=vs.110).aspx) 에서 호출 `Administrator` 에 `canViewGlimpseData` 역할:
 

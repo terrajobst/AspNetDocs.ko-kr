@@ -8,12 +8,12 @@ ms.date: 05/20/2012
 ms.assetid: 0dd51b30-bf5a-419f-a1b7-2817ccca3c7d
 msc.legacyurl: /web-api/overview/formats-and-model-binding/content-negotiation
 msc.type: authoredcontent
-ms.openlocfilehash: e936bdfa52f786ec86d3e84eac3cd644225b6f92
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 9cfbed49c1022fbf26160e89aed3ab474f5e0fdc
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57039250"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425693"
 ---
 <a name="content-negotiation-in-aspnet-web-api"></a>ASP.NET Web API에서에서 콘텐츠 협상
 ====================
@@ -48,7 +48,7 @@ CLR 형식으로 리소스를 반환 하는 Web API 컨트롤러, 파이프라�
 
 [!code-console[Main](content-negotiation/samples/sample3.cmd)]
 
-이 예제에서는 클라이언트 요청 JSON, Javascript 또는 "anything" (\*/\*). 응답의 JSON 표현으로 받은 서버는 `Product` 개체입니다. 응답의 Content-type 헤더에 설정 됩니다 &quot;application/json&quot;합니다.
+이 예제에서는 클라이언트 요청 JSON, Javascript 또는 "anything" (\*/\*). 서버 응답의 JSON 표현으로는 `Product` 개체입니다. 응답의 Content-type 헤더에 설정 됩니다 &quot;application/json&quot;합니다.
 
 컨트롤러를 반환할 수도 있습니다는 **HttpResponseMessage** 개체입니다. 응답 본문에 대 한 CLR 개체를 지정 하려면 호출을 **CreateResponse** 확장 메서드:
 
@@ -62,7 +62,7 @@ CLR 형식으로 리소스를 반환 하는 Web API 컨트롤러, 파이프라�
 
 먼저, 파이프라인을 가져옵니다 합니다 **IContentNegotiator** 서비스를 **HttpConfiguration** 개체입니다. 미디어 포맷터 목록을 가져옵니다 합니다 **HttpConfiguration.Formatters** 컬렉션입니다.
 
-다음으로 파이프라인을 호출 **IContentNegotiatior.Negotiate**를 전달 합니다.
+다음으로 파이프라인을 호출 **IContentNegotiator.Negotiate**를 전달 합니다.
 
 - Serialize 할 개체의 형식
 - 미디어 포맷터의 컬렉션
@@ -73,7 +73,7 @@ CLR 형식으로 리소스를 반환 하는 Web API 컨트롤러, 파이프라�
 - 사용 하는 포맷터
 - 응답에 대 한 미디어 유형
 
-포맷터가 있으면 합니다 **Negotiate** 메서드가 반환 **null**, 클라이언트 받는 HTTP 오류 406 (허용 되지 않음).
+포맷터가 있으면 합니다 **Negotiate** 메서드가 반환 **null**, 클라이언트는 HTTP 오류 406 (허용 되지 않음).
 
 다음 코드는 컨트롤러 콘텐츠 협상 수 직접 호출 하는 방법을 보여 줍니다.
 

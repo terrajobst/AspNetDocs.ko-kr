@@ -8,12 +8,12 @@ ms.date: 07/04/2012
 ms.assetid: 6b9ae3c4-0274-4170-a1bb-9df9c546b2a9
 msc.legacyurl: /web-api/overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-3
 msc.type: authoredcontent
-ms.openlocfilehash: 7ad0ec27021514b447e569e479a9e9127e3f75fa
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0fc533fb3673639769ecdfa8b3d02ff40133cb27
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57037650"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58421625"
 ---
 <a name="part-3-creating-an-admin-controller"></a>3부: 관리 컨트롤러 만들기
 ====================
@@ -95,7 +95,7 @@ Entity Framework에는 시작 시 데이터베이스를 채우고 모델 변경 
 
 이 시점에서 클라이언트 코드를 작성 하지 않은 것 이지만 웹 디버깅 하는 HTTP 또는 웹 브라우저를 사용 하 여 API와 같은 도구를 호출할 수 있습니다 [Fiddler](http://www.fiddler2.com/fiddler2/)합니다. Visual Studio에서 f5 키를 눌러 디버깅을 시작 합니다. 웹 브라우저가 열립니다 `http://localhost:*portnum*/`, 여기서 *portnum* 일부 포트 번호입니다.
 
-HTTP 요청을 보내는 "`http://localhost:*portnum*/api/admin`합니다. Entify 프레임 워크를 만들고 데이터베이스를 시드하고 해야 하기 때문에 첫 번째 요청을 완료 하려면 느려질 수 있습니다. 응답에 다음과 비슷한 수행 해야합니다.
+HTTP 요청을 보내는 "`http://localhost:*portnum*/api/admin`합니다. Entity Framework를 만들고 데이터베이스를 시드하고 해야 하기 때문에 첫 번째 요청을 완료 하려면 느려질 수 있습니다. 응답에 다음과 비슷한 수행 해야합니다.
 
 [!code-console[Main](using-web-api-with-entity-framework-part-3/samples/sample6.cmd)]
 

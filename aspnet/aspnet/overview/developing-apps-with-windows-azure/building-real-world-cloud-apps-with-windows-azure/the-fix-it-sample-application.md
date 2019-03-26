@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: 1bc333c5-f096-4ea7-b170-779accc21c1a
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/the-fix-it-sample-application
 msc.type: authoredcontent
-ms.openlocfilehash: de3c8ea29f2c271136f58d8165bb92f4ab28ce83
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a73fac6107be45455465b506a019bcc9a41b1deb
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034220"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425524"
 ---
 <a name="appendix-the-fix-it-sample-application-building-real-world-cloud-apps-with-azure"></a>부록: 수정이 샘플 응용 프로그램 (Azure 사용 하 여 실제 클라우드 앱 빌드)
 ====================
@@ -376,13 +376,13 @@ Fix It 응용 프로그램을 실행 하는 방법은 두 가지 있습니다.
 
 클라우드 서비스를 배포 하기 전에 구성 파일의 일부를 업데이트 해야 합니다.
 
-MyFixIt.WorkerRoler\app.config에서 아래 `connectionStrings`, 값을 `appdb` SQL Database에 대 한 실제 연결 문자열을 사용 하 여 연결 문자열. 포털에서 연결 문자열을 가져올 수 있습니다. 포털에서 클릭 **SQL Database** - **appdb** - **ADO.Net, ODBC, PHP 및 JDBC에 대 한 View SQL Database 연결 문자열**합니다. ADO.NET 연결 문자열을 복사 하 고 app.config 파일에 값을 붙여넣습니다. 대체 "{하\_암호\_여기}" 데이터베이스 암호를 사용 하 여 합니다. (에서 데이터베이스 암호를 지정한 MVC 앱을 배포 하는 스크립트를 사용 한다고 가정 하면는 `SqlDatabasePassword` 스크립트 매개 변수.)
+MyFixIt.WorkerRole\app.config에서 아래 `connectionStrings`, 값을 `appdb` SQL Database에 대 한 실제 연결 문자열을 사용 하 여 연결 문자열. 포털에서 연결 문자열을 가져올 수 있습니다. 포털에서 클릭 **SQL Database** - **appdb** - **ADO.Net, ODBC, PHP 및 JDBC에 대 한 View SQL Database 연결 문자열**합니다. ADO.NET 연결 문자열을 복사 하 고 app.config 파일에 값을 붙여넣습니다. 대체 "{하\_암호\_여기}" 데이터베이스 암호를 사용 하 여 합니다. (에서 데이터베이스 암호를 지정한 MVC 앱을 배포 하는 스크립트를 사용 한다고 가정 하면는 `SqlDatabasePassword` 스크립트 매개 변수.)
 
 결과 다음과 같이 표시 됩니다.
 
 [!code-xml[Main](the-fix-it-sample-application/samples/sample32.xml)]
 
-동일한 MyFixIt.WorkerRoler\app.config 파일에 아래 `appSettings`, Azure storage 계정에 대 한 두 개의 자리 표시자 값을 바꿉니다.
+동일한 MyFixIt.WorkerRole\app.config 파일에 아래 `appSettings`, Azure storage 계정에 대 한 두 개의 자리 표시자 값을 바꿉니다.
 
 [!code-xml[Main](the-fix-it-sample-application/samples/sample33.xml?highlight=2-3)]
 

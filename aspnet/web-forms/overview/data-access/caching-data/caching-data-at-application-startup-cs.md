@@ -8,12 +8,12 @@ ms.date: 05/30/2007
 ms.assetid: 22ca8efa-7cd1-45a7-b9ce-ce6eb3b3ff95
 msc.legacyurl: /web-forms/overview/data-access/caching-data/caching-data-at-application-startup-cs
 msc.type: authoredcontent
-ms.openlocfilehash: c97058e5fd54dfd0393ec5ad020ad957d9719784
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 692b2a13664a9a5153a85a230dd513b022518316
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57064070"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423990"
 ---
 <a name="caching-data-at-application-startup-c"></a>애플리케이션 시작 시 데이터 캐싱(C#)
 ====================
@@ -103,7 +103,7 @@ Ve 누계 구현에서는 데이터베이스 테이블에서 Northwind는 기존
 
 [!code-csharp[Main](caching-data-at-application-startup-cs/samples/sample5.cs)]
 
-시간 기반 만료 되지 않도록 데이터 캐시에 항목을 추가 하려면 사용 합니다 `System.Web.Caching.Cache.NoAbsoluteExpiration` 및 `System.Web.Caching.Cache.NoSlidingExpiration` 입력된 매개 변수 값입니다. 데이터 캐시의 특정 오버 로드 `Insert` 지정할 수 있도록 선택한 메서드를 *우선 순위* 캐시 항목의 합니다. 우선 순위는 사용 가능한 메모리가 부족 하면 캐시에서 청소에 항목을 결정 하는 데 사용 됩니다. 여기서 사용 하 여 우선 순위 `NotRemovable`, 청소이 캐시 항목-t 이득 있는지 확인 하는 합니다.
+시간 기반 만료 되지 않도록 데이터 캐시에 항목을 추가 하려면 사용 합니다 `System.Web.Caching.Cache.NoAbsoluteExpiration` 및 `System.Web.Caching.Cache.NoSlidingExpiration` 입력된 매개 변수 값입니다. 데이터 캐시의 특정 오버 로드 `Insert` 지정할 수 있도록 선택한 메서드를 *우선 순위* 캐시 항목의 합니다. 우선 순위는 사용 가능한 메모리가 부족 하면 캐시에서 청소에 항목을 결정 하는 데 사용 됩니다. 여기서 사용 하 여 우선 순위 `NotRemovable`를 통해이 캐시 항목을 청소 수 없습니다.
 
 > [!NOTE]
 > 이 자습서의 다운로드 구현 된 `StaticCache` 클래스 정적 멤버 변수 접근 방식을 사용 합니다. 응용 프로그램 상태 및 데이터 캐시 기술에 대 한 코드는 클래스 파일의 주석을 사용할 수 있습니다.

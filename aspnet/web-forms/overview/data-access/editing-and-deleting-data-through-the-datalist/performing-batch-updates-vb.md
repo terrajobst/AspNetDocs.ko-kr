@@ -8,12 +8,12 @@ ms.date: 10/30/2006
 ms.assetid: 8dac22a7-91de-4e3b-888f-a4c438b03851
 msc.legacyurl: /web-forms/overview/data-access/editing-and-deleting-data-through-the-datalist/performing-batch-updates-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 67ab034880c8140e6156721956059b7cdd3f077b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c903dd64ba7dd19a8af63224ee54629086279bf6
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034940"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425888"
 ---
 <a name="performing-batch-updates-vb"></a>일괄 처리 업데이트 수행(VB)
 ====================
@@ -126,7 +126,7 @@ DataList 및 집합 위에 단추 웹 컨트롤을 추가 하 여 시작 해당 
 
 ## <a name="updating-only-those-addresses-that-have-been-modified"></a>수정 된 주소에만 업데이트
 
-이 자습서 호출에 사용 된 일괄 처리 업데이트 알고리즘 합니다 `UpdateSupplierAddress` 에 대 한 메서드 *모든* 공급자가 해당 주소 정보가 변경 되었는지 여부에 관계 없이 DataList, 합니다. 이러한 과제를 안겨 유효 하지 t 일반적으로 성능 문제를 업데이트 하는 동안 데이터베이스 테이블에 변경 내용을 다시 감사 하는 경우 불필요 한 레코드를 발생할 수 있습니다 이러한 합니다. 예를 들어 트리거를 사용 하 여 모든 기록 `UPDATE` s를 `Suppliers` 사용자 하나 수행 여부에 관계 없이 시스템에서 각 공급자에 대 한 새 감사 레코드를 만들 수는 모두 업데이트 단추를 클릭할 때마다 감사 테이블에 테이블 변경 내용입니다.
+이 자습서 호출에 사용 된 일괄 처리 업데이트 알고리즘 합니다 `UpdateSupplierAddress` 에 대 한 메서드 *모든* 공급자가 해당 주소 정보가 변경 되었는지 여부에 관계 없이 DataList, 합니다. 이러한 시각 업데이트 일반적으로 성능 문제를가 아닌 중 데이터베이스 테이블에 변경 내용을 다시 감사 하는 경우 불필요 한 레코드도 이어질 수 있습니다. 예를 들어 트리거를 사용 하 여 모든 기록 `UPDATE` s를 `Suppliers` 사용자 하나 수행 여부에 관계 없이 시스템에서 각 공급자에 대 한 새 감사 레코드를 만들 수는 모두 업데이트 단추를 클릭할 때마다 감사 테이블에 테이블 변경 내용입니다.
 
 ADO.NET DataTable 및 DataAdapter 클래스를 데이터베이스 통신만 수정, 삭제 및 새 레코드를 결과 일괄 처리 업데이트를 지원 하도록 설계 되었습니다. DataTable의 각 행에는 [ `RowState` 속성](https://msdn.microsoft.com/library/system.data.datarow.rowstate.aspx) 는 행에서 수정, 삭제 하는 DataTable에 추가 되었습니다 그대로 유지 하는지 여부를 나타냅니다. DataTable을 채울 처음 때 모든 행 변경 되지 않은 상태로 표시 됩니다. 수정 된 행을 표시 행 s 열의 모든 값을 변경 합니다.
 

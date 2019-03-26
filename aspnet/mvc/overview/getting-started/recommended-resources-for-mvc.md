@@ -8,19 +8,19 @@ ms.date: 04/10/2014
 ms.assetid: 7958d725-e958-4566-a85b-535eeb985f94
 msc.legacyurl: /mvc/overview/getting-started/recommended-resources-for-mvc
 msc.type: authoredcontent
-ms.openlocfilehash: cbd72233fb5688c27d3675e2621eab58a64db80c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f57ce4236abe71de3f6f60cb2d7930f7ae9a8d7a
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57047090"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423912"
 ---
-<a name="mvc-recommended-resources"></a>MVC 권장 리소스
-====================
+# <a name="mvc-recommended-resources"></a>MVC 권장 리소스
+
 [Rick Anderson]((https://twitter.com/RickAndMSFT))
 
 > 이 항목에서는 ASP.NET MVC 5에 대 한 설명서 리소스에 대 한 링크를 제공합니다. 훌륭한 블로그 게시물을 알고 있는 경우 [stackoverflow](http://stackoverflow.com/) 스레드나 유용할를 전송 하는 다른 모든 링크 [me](mailto:aspnetue@microsoft.com?subject=Great ASP.NET MVC link) 링크를 사용 하 여 전자 메일입니다. 여기에 제공 된 링크를 주기적으로 업데이트 됩니다. 이전 찾을 수 있습니다 (해도 대부분의 경우 여전히 관련) ASP.NET MVC의 링크를 클릭 합니다 [MSDN 콘텐츠 맵](https://msdn.microsoft.com/library/gg416514(v=vs.108).aspx)합니다.
-> 
+>
 > 질문에 대 한 답변을 받으세요 또는 문제에 적합 한 위치를 [ASP.NET MVC 포럼](https://forums.asp.net/1146.aspx/1?MVC) 하거나 [stackoverflow](http://stackoverflow.com/questions/tagged/mvc+asp.net-mvc)합니다.
 > <a id="gettingstarted"></a>
 
@@ -63,8 +63,8 @@ ms.locfileid: "57047090"
     - [팁과 요령 Visual Studio 2013에서](https://channel9.msdn.com/Events/Build/2014/2-582) Cathy Sullivan 여
     - [새 Sdk 사용 하 여 어디서 나 자동화 도구 및 Azure에서 서비스](https://channel9.msdn.com/Events/Build/2014/3-621) Brady Gaster, Joe Levy 여
     - [Azure 웹 사이트 Chris 콤 피, Nir Mashkowski를 사용 하 여 새로운 기능](https://channel9.msdn.com/Events/Build/2014/3-625)
-    - [큰 빌드: Azure 고객 으로부터 얻은](https://channel9.msdn.com/Events/Build/2014/3-633) 여 Chris Clayton, Mark Simms   
-        [ASP.NET 및 AngularJS 단일 페이지 응용 프로그램 빌드](https://channel9.msdn.com/Events/Build/2014/3-644) David Catuhe, Jon Galloway 여
+    - [큰 빌드: Azure 고객 으로부터 얻은](https://channel9.msdn.com/Events/Build/2014/3-633) 여 Chris Clayton, Mark Simms
+    - [ASP.NET 및 AngularJS 단일 페이지 응용 프로그램 빌드](https://channel9.msdn.com/Events/Build/2014/3-644) David Catuhe, Jon Galloway 여
     - [디자인 및 하이브리드 클라우드 솔루션 설계자에 대 한 구현](https://channel9.msdn.com/Events/Build/2014/3-632)
     - [Azure 리소스 그룹 모델: 최신 클라우드를 위한 최신 관리](https://channel9.msdn.com/Events/Build/2014/2-607) Gautam Thapar, Nathan Totten 여
     - [ASP.NET Web API 2.1 사용 하 여 모바일 앱에 대 한 Web Api 빌드](https://channel9.msdn.com/Events/Build/2014/3-603) Daniel Roth 여
@@ -168,8 +168,7 @@ ms.locfileid: "57047090"
 - [도넛 캐싱 및 Asp.Net MVC 4 사용 하 여 캐싱 도넛형 구멍](http://www.dotnet-tricks.com/Tutorial/mvc/ODJa210113-Donut-Caching-and-Donut-Hole-Caching-with-Asp.Net-MVC-4.html)
 - [예제를 사용 하 여 Asp.Net MVC에서 캐싱 이해](http://www.dotnet-tricks.com/Tutorial/mvc/4R5c050113-Understanding-Caching-in-Asp.Net-MVC-with-example.html)
 - [http://webdevchecklist.com/asp.net/performance/](http://webdevchecklist.com/asp.net/performance/)
-- [ASP.NET MVC 뷰 모델: Entity Framework &amp; JSON Serialization](http://www.dotnetexpertguide.com/2013/06/aspnet-mvc-view-model-entity-framework-json-serialization.html)  
- Nandip Makwana 불필요 한 serialization 자식 엔터티를 제거 하 여 유용한 팁 성능이 향상 됩니다 (및 낮은 CPU 사용량)을 보여 줍니다.
+- [ASP.NET MVC 뷰 모델: Entity Framework &amp; JSON Serialization](http://www.dotnetexpertguide.com/2013/06/aspnet-mvc-view-model-entity-framework-json-serialization.html) Nandip Makwana 불필요 한 serialization 자식 엔터티를 제거 하 여 유용한 팁 성능이 향상 됩니다 (및 낮은 CPU 사용량)을 보여 줍니다.
 - [Async 및 Await](http://blog.stephencleary.com/2012/02/async-and-await.html) Stephen Cleary 하 여 ASP.NET에서
 - [디버깅 및 이해를 사용 하 여 성능](http://www.hanselman.com/blog/NuGetPackageOfTheWeek5DebuggingASPNETMVCApplicationsWithGlimpse.aspx)
 - [비동기 부분 뷰를 사용 하 여 ASP.NET MVC 웹 사이트의 체감된 성능을 개선합니다](http://blog.michaelckennedy.net/2012/11/13/improve-perceived-performance-of-asp-net-mvc-websites-with-async-partialviews/)
@@ -365,7 +364,7 @@ ms.locfileid: "57047090"
 - [ASP.NET MVC를 사용 하 여 서비스 WebP 이미지](http://friism.com/serving-webp-images-with-asp-net-mvc)
 - [자세한 ASP.NET MVC 파이프라인](http://www.dotnet-tricks.com/Tutorial/mvc/LYHK270114-Detailed-ASP.NET-MVC-Pipeline.html)
 - [MVC에서 중첩 레이아웃](http://astutelogic.com/nesting-layouts-in-mvc/) Russell 영에서
-- 필자[mplementing RichTextEditor 또는 ASP.NET MVC의 WYSIWYG (TinyMCE)](http://www.dotnetfunda.com/articles/show/2657/implementing-richtexteditor-or-wysiwyg-tinymce-in-aspnet-mvc) Sheo Narayan 여
+- [ASP.NET MVC에서 RichTextEditor 또는 WYSIWYG (TinyMCE) 구현](http://www.dotnetfunda.com/articles/show/2657/implementing-richtexteditor-or-wysiwyg-tinymce-in-aspnet-mvc) Sheo Narayan 여
 - [ASP.NET MVC에서 익명 형식의 컬렉션을 사용 하 여 뷰를 바인딩](http://www.dotnetfunda.com/articles/show/2655/binding-views-with-anonymous-type-collection-in-aspnet-mvc) Sheo Narayan 여
 - [Html5 캔버스를 ASP.NET MVC에서 이미지로 저장](http://www.dotnetfunda.com/articles/show/2665/saving-html-5-canvas-as-image-in-aspnet-mvc) Sheo Narayan 여
 - [이미지 크기와 ASP.NET MVC를 사용 하 여 데이터베이스 페이지의 위치를 유지 관리](http://www.dotnetfunda.com/articles/show/2783/maintaining-image-size-and-position-on-the-page-in-database-using-aspn) Sheo Narayan 여

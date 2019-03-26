@@ -8,12 +8,12 @@ ms.date: 10/17/2006
 ms.assetid: ee20742f-6fb7-49a0-a009-058fe363aacb
 msc.legacyurl: /web-forms/overview/data-access/filtering-scenarios-with-the-datalist-and-repeater/master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 3a10d6e5f60efad1f88c5acc8371a24dbf8d2cb7
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 73a93c93932a004e76cf4ef7be1b3308ef6b991f
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061810"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422898"
 ---
 <a name="masterdetail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb"></a>세부 정보 DataList와 함께 마스터 레코드의 글머리 기호 목록을 사용하는 마스터/세부 정보(VB)
 ====================
@@ -100,7 +100,7 @@ CSS 클래스를 추가 하 고 태그를 구성한 후의 `CategoriesAndProduct
 [!code-aspx[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample4.aspx)]
 
 > [!NOTE]
-> 이 자습서에 대 한 반복기 사용 하도록 설정 하는 해당 뷰 상태의 있어야 합니다 (생략 참고는 `EnableViewState="False"` Repeater가 선언적 구문에서). 3 단계에서는 만듭니다 이벤트 처리기가의 반복기에 대 한 `ItemCommand` 이벤트를 업데이트 합니다 DataList의 ObjectDataSource `SelectParameters` 컬렉션입니다. 반복기가의 `ItemCommand`그러나 보기 상태가 비활성화 되 면 t 실행 성공 합니다. 참조 [는 ASP.NET 질문는 Stumper](http://scottonwriting.net/sowblog/posts/1263.aspx) 및 [자사 솔루션](http://scottonwriting.net/sowBlog/posts/1268.aspx) 이유에 대 한 자세한 내용은 뷰 상태를 Repeater s에 대 한 사용 해야 합니다 `ItemCommand` 이벤트가 발생 합니다.
+> 이 자습서에 대 한 반복기 사용 하도록 설정 하는 해당 뷰 상태의 있어야 합니다 (생략 참고는 `EnableViewState="False"` Repeater가 선언적 구문에서). 3 단계에서는 만듭니다 이벤트 처리기가의 반복기에 대 한 `ItemCommand` 이벤트를 업데이트 합니다 DataList의 ObjectDataSource `SelectParameters` 컬렉션입니다. 그러나 반복기가의 `ItemCommand`, 보기 상태가 비활성화 되는 경우 발생 하지 않습니다. 참조 [는 ASP.NET 질문는 Stumper](http://scottonwriting.net/sowblog/posts/1263.aspx) 및 [자사 솔루션](http://scottonwriting.net/sowBlog/posts/1268.aspx) 이유에 대 한 자세한 내용은 뷰 상태를 Repeater s에 대 한 사용 해야 합니다 `ItemCommand` 이벤트가 발생 합니다.
 
 
 인 LinkButton 합니다 `ID` 속성 값이 `ViewCategory` 되지 않은 해당 `Text` 속성 집합입니다. 범주 이름을 표시 하려면 바로 원했던 것을 하는 경우는 설정 텍스트 속성 선언적으로 데이터 바인딩 구문을 통해 다음과 같이 합니다.

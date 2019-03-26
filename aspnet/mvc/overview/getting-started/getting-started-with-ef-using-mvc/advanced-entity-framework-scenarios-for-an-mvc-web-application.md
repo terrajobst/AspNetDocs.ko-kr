@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.assetid: f35a9b0c-49ef-4cde-b06d-19d1543feb0b
 msc.legacyurl: /mvc/overview/getting-started/getting-started-with-ef-using-mvc/advanced-entity-framework-scenarios-for-an-mvc-web-application
 msc.type: authoredcontent
-ms.openlocfilehash: d0208c8890467ec6044d807aeee7c7ae02e18790
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d7cc83a5b78a60f575f5c3065079679189296a0c
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57032520"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425277"
 ---
 # <a name="tutorial-learn-about-advanced-ef-scenarios-for-an-mvc-5-web-app"></a>자습서: MVC 5 웹 앱에 대 한 고급 EF 시나리오에 대해 알아봅니다
 
@@ -85,7 +85,7 @@ LINQ를 사용 하는 것이 아니라 SQL에서 직접이 데이터를 검색 �
 
 Contoso University 관리자 대량 변경 내용이 모든 강좌에 대 한 학점 수를 변경 하는 등 데이터베이스에서 수행할 수 있으려면 가정 합니다. 대학에 과목이 많은 경우 엔터티로 모두 검색하여 개별적으로 변경하는 것은 비효율적입니다. 이 섹션의 모든 강좌에 대 한 학점 수를 변경 하는 비율을 지정 하려면 사용자를 사용 하도록 설정 하는 웹 페이지를 구현 하 고 SQL을 실행 하 여 변경 해야 `UPDATE` 문입니다. 
 
-*CourseContoller.cs*에 추가 `UpdateCourseCredits` 메서드를 `HttpGet` 고 `HttpPost`:
+*CourseController.cs*에 추가 `UpdateCourseCredits` 메서드를 `HttpGet` 고 `HttpPost`:
 
 [!code-csharp[Main](advanced-entity-framework-scenarios-for-an-mvc-web-application/samples/sample4.cs)]
 

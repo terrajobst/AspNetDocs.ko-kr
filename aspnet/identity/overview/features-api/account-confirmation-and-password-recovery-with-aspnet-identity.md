@@ -8,12 +8,12 @@ ms.date: 01/23/2019
 ms.assetid: 8d54180d-f826-4df7-b503-7debf5ed9fb3
 msc.legacyurl: /identity/overview/features-api/account-confirmation-and-password-recovery-with-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: 47dc2c1044a5964624ba2f8af4f174a2fd99d3e8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 04e4bbc8b6405dc60b8335191d88920028eef599
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049690"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424848"
 ---
 # <a name="account-confirmation-and-password-recovery-with-aspnet-identity-c"></a>ASP.NET Id를 사용 하 여 확인 및 암호 복구 계정 (C#)
 
@@ -132,7 +132,7 @@ OWIN `AuthenticationManager.SignIn` 메서드에 전달 된 `ClaimsIdentity` 사
 
 ## <a name="email-confirmation"></a>전자 메일 확인
 
-새 사용자가 다른 사용자에 가장 하지 않는 것을 확인 하려면 등록 전자 메일을 확인 하는 것이 좋습니다 (즉, 다른 사용자의 전자 메일을 사용 하 여 등록 하지 않은). 방지 하려는 토론 포럼을 설치한 가정 `"bob@example.com"` 로 등록에서 `"joe@contoso.com"`합니다. 전자 메일 확인 하지 않고 `"joe@contoso.com"` 앱에서 원치 않는 전자 메일을 가져올 수 없습니다. Bob 실수로 등록 가정 `"bib@example.com"` 를 눈치채 및 그 앱에 올바른 전자 메일 없는 때문에 암호 복구를 사용할 수 있습니다. 전자 메일 확인은 봇부터에서만 제한 된 보호를 제공 하며 결정된 스패머가에서 보호를 제공 하지 않습니다, 그리고 여러 작업 전자 메일 별칭을 등록 하는 데 사용할 수 있는 합니다. 아래 샘플에서는 사용자 (이들에 의해 사용 하 여 등록할 전자 메일 계정에 수신 확인 링크를 선택 합니다.)는 계정을 확인 될 때까지 암호를 변경 하는 일을 할 수 없습니다. 예를 들어 확인 하 고 해당 프로필에 변경 된 경우 사용자 전자 메일을 보내거나, 관리자가 만든 새 계정에 암호 재설정에 대 한 링크를 보내는 다른 시나리오에이 작업 흐름을 적용할 수 있습니다. 일반적으로 새 사용자가 전자 메일, SMS 문자 메시지 또는 다른 메커니즘을 통해 학인합니다 전에 웹 사이트에 데이터를 게시 하지 못하도록 좋습니다. <a id="build"></a>
+새 사용자가 다른 사용자에 가장 하지 않는 것을 확인 하려면 등록 전자 메일을 확인 하는 것이 좋습니다 (즉, 다른 사용자의 전자 메일을 사용 하 여 등록 하지 않은). 방지 하려는 토론 포럼을 설치한 가정 `"bob@example.com"` 로 등록에서 `"joe@contoso.com"`합니다. 전자 메일 확인 하지 않고 `"joe@contoso.com"` 앱에서 원치 않는 전자 메일을 가져올 수 없습니다. 등록 실수로 Bob 가정 `"bib@example.com"` 를 눈치채 및 그 앱에 올바른 전자 메일 없는 때문에 암호 복구를 사용할 수 있습니다. 전자 메일 확인은 봇부터에서만 제한 된 보호를 제공 하며 결정된 스패머가에서 보호를 제공 하지 않습니다, 그리고 여러 작업 전자 메일 별칭을 등록 하는 데 사용할 수 있는 합니다. 아래 샘플에서는 사용자 (이들에 의해 사용 하 여 등록할 전자 메일 계정에 수신 확인 링크를 선택 합니다.)는 계정을 확인 될 때까지 암호를 변경 하는 일을 할 수 없습니다. 예를 들어 확인 하 고 해당 프로필에 변경 된 경우 사용자 전자 메일을 보내거나, 관리자가 만든 새 계정에 암호 재설정에 대 한 링크를 보내는 다른 시나리오에이 작업 흐름을 적용할 수 있습니다. 일반적으로 새 사용자가 전자 메일, SMS 문자 메시지 또는 다른 메커니즘을 통해 학인합니다 전에 웹 사이트에 데이터를 게시 하지 못하도록 좋습니다. <a id="build"></a>
 
 ## <a name="build-a-more-complete-sample"></a>자세한 샘플 빌드
 

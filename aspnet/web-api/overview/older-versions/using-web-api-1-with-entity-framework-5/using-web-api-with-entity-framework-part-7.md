@@ -8,12 +8,12 @@ ms.date: 07/04/2012
 ms.assetid: eb32a17b-626c-4373-9a7d-3387992f3c04
 msc.legacyurl: /web-api/overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-7
 msc.type: authoredcontent
-ms.openlocfilehash: bb4704e7f4f13fab04acdbdd642174884517e18a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 91a6496e2640668c58ec0493d47d909e2de67367
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57042410"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58421352"
 ---
 <a name="part-7-creating-the-main-page"></a>7부: 기본 페이지 만들기
 ====================
@@ -61,7 +61,7 @@ ms.locfileid: "57042410"
 이러한 함수를 다음으로, 추가 `AppViewModel`:
 
 - `resetCart` 카트에서 모든 항목을 제거합니다.
-- `getDetails` 주문에 대 한 세부 정보를 가져옵니다 (새 pusing 하 여 `OrderDetailsViewModel` 에 `details` 목록).
+- `getDetails` 주문에 대 한 세부 정보를 가져옵니다 (새 푸시하여 `OrderDetailsViewModel` 에 `details` 목록).
 - `createOrder` 새 주문을 만들고 장바구니를 비웁니다.
 
 

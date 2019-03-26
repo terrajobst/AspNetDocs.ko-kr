@@ -8,12 +8,12 @@ ms.date: 08/15/2012
 ms.assetid: c7e4e1ab-4932-4614-9f53-aaf7c706d498
 msc.legacyurl: /mvc/overview/views/using-page-inspector-in-aspnet-mvc
 msc.type: authoredcontent
-ms.openlocfilehash: 0dea8b077878139a3f513cb51447b86a93fe55b8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: abb1ef355bd7614daaab8c205d9d53065856cd23
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57057710"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424367"
 ---
 <a name="using-page-inspector-in-aspnet-mvc"></a>ASP.NET MVC에서 페이지 검사기 사용
 ====================
@@ -139,7 +139,7 @@ Visual Studio 2012에서 단추로 보기에서 프로젝트를 선택 **페이�
 
 클릭 **검사** 를 검사 모드에서 페이지 검사기를 배치 합니다.
 
-"Logohere" 라고 표시 되는 페이지의 위쪽을 클릭 합니다. 보다 세부적으로 마우스 포인터를 이동 하면 브라우저 창에 표시를 변경 하는 더 이상 특정 요소를 검사 하 고 없습니다.
+"사용자 로고는 여기" 라고 표시 되는 페이지의 위쪽을 클릭 합니다. 보다 세부적으로 마우스 포인터를 이동 하면 브라우저 창에 표시를 변경 하는 더 이상 특정 요소를 검사 하 고 없습니다.
 
 이제 마우스 포인터를 이동 합니다 **HTML** 창입니다. 마우스 포인터를 이동 하면 페이지 검사기 내의 요소를 설명 합니다 **HTML** 창 고 브라우저 창에서 해당 요소를 강조 표시 합니다.
 

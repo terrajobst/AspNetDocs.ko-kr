@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 25ebaf1f-5a9f-423d-98c7-1d694e93664f
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/triggering-an-animation-in-another-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 132f9f85eccabc890308984b9e78ed1d2212c57a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b390ebfaec695a1c2565a91acaa38dbcc10a8959
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046860"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425797"
 ---
 <a name="triggering-an-animation-in-another-control-vb"></a>다른 컨트롤에서 애니메이션 트리거(VB)
 ====================
@@ -54,7 +54,7 @@ ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이�
 
 [!code-aspx[Main](triggering-an-animation-in-another-control-vb/samples/sample6.aspx)]
 
-특별 한 순서는 개별 애니메이션 note 합니다. 첫째, 단추 애니메이션 실행 되 면 비활성화를 가져옵니다. 있기 때문 없습니다 `AnimationTarget` 특성을 `<EnableAction>` 원래 컨트롤 요소를이 애니메이션을 적용할: 단추입니다. Parallelly 애니메이션 다음 두 단계를 수행 됩니다 (`<Parallel>` 요소). 둘 다 해당 `AnimationTarget` 특성으로 설정 `"Panel1"`, 따라서 패널에 단추가 아닌 애니메이션을 적용 합니다.
+특별 한 순서는 개별 애니메이션 note 합니다. 첫째, 단추 애니메이션 실행 되 면 비활성화를 가져옵니다. 있기 때문 없습니다 `AnimationTarget` 특성을 `<EnableAction>` 원래 컨트롤 요소를이 애니메이션을 적용할: 단추입니다. 다음 두 애니메이션 단계를 병렬로 수행 됩니다 (`<Parallel>` 요소). 둘 다 해당 `AnimationTarget` 특성으로 설정 `"Panel1"`, 따라서 패널에 단추가 아닌 애니메이션을 적용 합니다.
 
 
 [![창 애니메이션을 시작 하는 단추 마우스 클릭](triggering-an-animation-in-another-control-vb/_static/image2.png)](triggering-an-animation-in-another-control-vb/_static/image1.png)

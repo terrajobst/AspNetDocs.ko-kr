@@ -8,12 +8,12 @@ ms.date: 04/23/2009
 ms.assetid: 1e33d1c6-3f9f-4c26-81e2-2a8f8907bb05
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/configuring-a-website-that-uses-application-services-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 4cec939795c2b3abfd51c894f985dfd2eb7bc361
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 2cfe18b99af7b04d18a52e64b77e1b9a6b204f75
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058340"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423440"
 ---
 <a name="configuring-a-website-that-uses-application-services-c"></a>애플리케이션 서비스를 사용하는 웹 사이트 구성(C#)
 ====================
@@ -138,7 +138,7 @@ S를 사용 하 여 프로덕션 데이터베이스에 데이터베이스 개체
 **그림 4**: 데이터베이스 개체를 프로덕션 데이터베이스에 추가 되었는지 확인 ([클릭 하 여 큰 이미지 보기](configuring-a-website-that-uses-application-services-cs/_static/image12.jpg))
 
 
-사용 해야만 `aspnet_regsql.exe` 처음으로 또는 응용 프로그램 서비스를 사용 하 여 시작 된 후 처음으로 웹 응용 프로그램을 배포 하는 경우 도구입니다. 프로덕션 데이터베이스에서이 데이터베이스 개체 들이 되 면 이러한이 t 다시 추가 하거나 수정 해야를 했습니다.
+사용 해야만 `aspnet_regsql.exe` 처음으로 또는 응용 프로그램 서비스를 사용 하 여 시작 된 후 처음으로 웹 응용 프로그램을 배포 하는 경우 도구입니다. 이러한 데이터베이스는 다시 추가 하거나 수정할 필요가 프로덕션 데이터베이스에서 개체가 됩니다.
 
 ### <a name="copying-user-accounts-from-development-to-production"></a>개발에서 프로덕션 사용자 계정 복사
 
@@ -148,7 +148,7 @@ S를 사용 하 여 프로덕션 데이터베이스에 데이터베이스 개체
 
 외에 합니다 `ApplicationId` 열을 `aspnet_Applications` 테이블도 포함 되어 있습니다를 `ApplicationName` 응용 프로그램에 대 한 더 친숙 한 이름을 제공 하는 열. 웹 사이트를 지시 해야 로그인 페이지에서 사용자가 자격 증명 유효성 검사와 같은 사용자 계정을 사용 하려고 하는 경우는 `SqlMembershipProvider` 클래스를 사용 하려면 응용 프로그램입니다. 응용 프로그램 이름을 제공 하 여이 및이 수행 하는 일반적으로 공급자가 구성에서 값을 가져옵니다 `Web.config` -를 통해 특히는 `applicationName` 특성입니다.
 
-그러나 합니다 `applicationName` 특성에 지정 되지 않은 `Web.config`? 이러한 경우 멤버 자격 시스템으로 응용 프로그램 루트 경로 사용 합니다 `applicationName` 값입니다. 경우는 `applicationName` 특성 명시적으로 설정 하지 않으면 `Web.config`, 그런 다음 되 고 다른 응용 프로그램 루트를 사용 하 여 개발 환경과 프로덕션 환경 및 다른 응용 프로그램과 연결 수는 응용 프로그램 서비스의 이름입니다. 개발 환경에서 생성 된 해당 사용자가 없는 경우 이러한 불일치가 발생 하는 경우는 `ApplicationId` 와 일치 하지 않는 값을 `ApplicationId` 프로덕션 환경에 대 한 값입니다. 결과적 된다는 t-이득 해당 사용자가 로그인 할 수 있습니다.
+그러나 합니다 `applicationName` 특성에 지정 되지 않은 `Web.config`? 이러한 경우 멤버 자격 시스템으로 응용 프로그램 루트 경로 사용 합니다 `applicationName` 값입니다. 경우는 `applicationName` 특성 명시적으로 설정 하지 않으면 `Web.config`, 그런 다음 되 고 다른 응용 프로그램 루트를 사용 하 여 개발 환경과 프로덕션 환경 및 다른 응용 프로그램과 연결 수는 응용 프로그램 서비스의 이름입니다. 개발 환경에서 생성 된 해당 사용자가 없는 경우 이러한 불일치가 발생 하는 경우는 `ApplicationId` 와 일치 하지 않는 값을 `ApplicationId` 프로덕션 환경에 대 한 값입니다. 결과 해당 사용자를 로그인 할 수 없습니다.
 
 > [!NOTE]
 > 한다면이 경우-일치 하지 않습니다를 사용 하 여 프로덕션에 복사 하는 사용자 계정과 `ApplicationId` 값이 잘못 된 업데이트 쿼리를 작성할 수 있습니다 `ApplicationId` 값을 `ApplicationId` 프로덕션에서 사용 합니다. 업데이트 되 면 개발 환경에서 생성 된 계정을 가진 사용자가 이제 프로덕션 환경에서 웹 응용 프로그램에 로그인 할 것입니다.

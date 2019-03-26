@@ -8,18 +8,18 @@ ms.date: 06/09/2009
 ms.assetid: 5bc1afd5-2484-4528-b158-ab218ba150e8
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/processing-unhandled-exceptions-cs
 msc.type: authoredcontent
-ms.openlocfilehash: d94f0a3c931100d2c79513b1ad7ae0e77d7fcff6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a8b029e7187881c14117fa813ce787b51a561382
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57060710"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424515"
 ---
 <a name="processing-unhandled-exceptions-c"></a>처리되지 않은 예외 처리(C#)
 ====================
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
-[예제 코드 살펴보기 및 다운로드](https://github.com/aspnet/Docs/tree/master/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/processing-unhandled-exceptions-cs/samples) ([다운로드 방법](/aspnet/core/tutorials/index#how-to-download-a-sample))
+[예제 코드 살펴보기 및 다운로드](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/processing-unhandled-exceptions-cs/samples) ([다운로드 방법](/aspnet/core/tutorials/index#how-to-download-a-sample))
 
 > 프로덕션 환경에서 웹 응용 프로그램에서 런타임 오류가 발생할 때 개발자에 게 알림를 시간에 나중에 진단 수 있도록 오류 로그에 중요 한 것입니다. 이 자습서에는 ASP.NET 런타임 오류를 처리 하 고 ASP.NET 런타임이까지 처리 되지 않은 예외가 거품을 받을 때마다 실행할 사용자 지정 코드가 있는 한 가지 방법은 조사 하는 방법을 간략하게를 설명 합니다.
 

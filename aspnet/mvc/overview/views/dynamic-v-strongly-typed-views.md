@@ -8,12 +8,12 @@ ms.date: 01/27/2011
 ms.assetid: 0cbd88da-0da6-4605-b222-2835c6478304
 msc.legacyurl: /mvc/overview/views/dynamic-v-strongly-typed-views
 msc.type: authoredcontent
-ms.openlocfilehash: bd00fccc44019b2e401247de1532d2abcb5dd396
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bde40f609db25f590108bfc2396071c0033a1326
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57057020"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423340"
 ---
 <a name="dynamic-v-strongly-typed-views"></a>Dynamic v. 강력한 형식의 보기
 ====================
@@ -56,6 +56,6 @@ IndexNotStonglyTyped() 메서드를 마우스 오른쪽 단추로 클릭 하 고
 
 새 템플릿 보기 내에서 intellisense 지원을 가져옵니다.
 
-[![7002.intellesince[1]](dynamic-v-strongly-typed-views/_static/image8.png)](dynamic-v-strongly-typed-views/_static/image7.png)
+[![7002.IntelliSense[1]](dynamic-v-strongly-typed-views/_static/image8.png)](dynamic-v-strongly-typed-views/_static/image7.png)
 
 C# 프로젝트를 다운로드할 수 있습니다 [여기](https://blogs.msdn.com/cfs-file.ashx/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-11-73-SSMS/1817.Mvc3ViewDemo.zip)합니다.

@@ -8,12 +8,12 @@ ms.date: 08/29/2011
 ms.assetid: 21a178de-4c5a-4211-8a9c-74ec576c0f30
 msc.legacyurl: /mvc/overview/older-versions/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-2
 msc.type: authoredcontent
-ms.openlocfilehash: 9b27ccc6ce26e8266947c531d299ba69bbec4fde
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5eff66b701d775a553a51437e540619b4524a58f
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57055830"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58421559"
 ---
 <a name="using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc---part-2"></a>ASP.NET MVC-2 부에서 HTML5 및 jQuery UI Datepicker 팝업 일정 사용
 ====================
@@ -24,7 +24,7 @@ ms.locfileid: "57055830"
 
 ## <a name="adding-an-automatic-datetime-template"></a>자동 날짜/시간 서식 파일을 추가합니다.
 
-이 자습서의 첫 번째 부분을 명시적으로 서식 지정을 지정 하려면 모델에 특성을 추가 하는 방법 및 모델을 렌더링 하는 데 사용 되는 템플릿을 명시적으로 지정 하는 방법을 살펴보았습니다. 예를 들어 합니다 [DisplayFormat](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.displayformatattribute.aspx) 다음 코드가 명시적으로 특성에 대 한 서식을 지정 합니다 `ReleaseDate` 속성입니다.
+이 자습서의 첫 번째 부분을 명시적으로 서식 지정을 지정 하려면 모델에 특성을 추가 하는 방법 및 모델을 렌더링 하는 데 사용 되는 템플릿을 명시적으로 지정 하는 방법을 살펴보았습니다. 예를 들어, 합니다 [DisplayFormat](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.displayformatattribute.aspx) 형식에 다음 코드에서 명시적으로 지정 합니다 `ReleaseDate` 속성.
 
 [!code-csharp[Main](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-2/samples/sample1.cs)]
 
@@ -104,7 +104,7 @@ Ctrl+F5를 눌러 응용 프로그램을 실행합니다.
 
 이 이번에는 `ReleaseDate` 빨간색 굵게 하지 않고 시간 날짜를 표시 하는 속성입니다. 데이터의 이름을 가진 템플릿 형식 있음을 보여줍니다 (이 경우 `DateTime`)는 자동으로 해당 형식의 모든 모델 속성을 표시 하는 데 사용 됩니다. 이름을 바꾼 후는 *DateTime.cshtml* 파일을 *LoudDateTime.cshtml*, ASP.NET에서 템플릿을 찾을 수 없는 합니다 *Views\Movies\DisplayTemplates* 폴더를 사용 하므로 합니다 *DateTime.cshtml* 템플릿에서 * Views\Movies\Shared\* 폴더입니다.
 
-(일치 하는 템플릿 이므로 대/소문자 구분, 없습니다 템플릿 파일 이름을 사용 하 여 만든 모든 대/소문자 구분 합니다. 예를 들어 *DATETIME.chstml, datetime.cshtml*, 및 *DaTeTiMe.cshtml* 일치 모든는 `DateTime` 형식입니다.)
+(일치 하는 템플릿 이므로 대/소문자 구분, 없습니다 템플릿 파일 이름을 사용 하 여 만든 모든 대/소문자 구분 합니다. 예를 들어 *DATETIME.cshtml, datetime.cshtml*, 및 *DaTeTiMe.cshtml* 일치 모든는 `DateTime` 형식입니다.)
 
 검토 하려면:이 시점에서 `ReleaseDate` 필드를 사용 하 여 표시 되는 *Views\Movies\DisplayTemplates\DateTime.cshtml* 서식 파일을 간단한 날짜 형식을 사용 하 여 데이터를 표시 하지만 그렇지 않으면 없는 특수 형식으로 추가 합니다.
 

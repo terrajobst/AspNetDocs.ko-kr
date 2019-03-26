@@ -8,12 +8,12 @@ ms.date: 09/13/2006
 ms.assetid: 8b7fcf7b-722b-498d-a4e4-7c93701e0c95
 msc.legacyurl: /web-forms/overview/data-access/displaying-data-with-the-datalist-and-repeater/nested-data-web-controls-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 297d76da5bf049ec68a351562f96f3587b059b55
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5e0807f6db3ad4ef9377843d60824e6cd43dd245
+ms.sourcegitcommit: 62db31596a7da029263cf06335aff12236fb3186
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061870"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58440380"
 ---
 <a name="nested-data-web-controls-vb"></a>중첩된 데이터 웹 컨트롤(VB)
 ====================
@@ -140,7 +140,7 @@ Repeater s `DataSource` 속성에서 해당 데이터가 제공 됨을 나타내
 이 새 기술을 사용 하도록 변경 후 잠시 브라우저를 통해 페이지를 봅니다. ObjectDataSource를 사용 하는 경우 출력을 출력에 동일 해야 하 고 `ItemDataBound` 이벤트 처리기 방법 (그림 5 스크린 샷 참조를 다시 참조).
 
 > [!NOTE]
-> 만들려는 busywork 등장이 그리 대단해는 `GetProductsInCategory(categoryID)` ASP.NET의 페이지 코드 숨김 클래스의 메서드. 간단히이 메서드의 인스턴스를 만들고, 합니다 `ProductsBLL` 클래스 및 결과 반환 합니다. 해당 `GetProductsByCategoryID(categoryID)` 메서드. 이유만이 메서드를 호출 내부 Repeater, 데이터 바인딩 구문을 통해 같은: `DataSource='<%# ProductsBLL.GetProductsByCategoryID(CType(Eval("CategoryID"), Integer)) %>'`? 이 구문은 현재 구현은 t 작업 성공 하지만 `ProductsBLL` 클래스 (있으므로 `GetProductsByCategoryID(categoryID)` 메서드는 인스턴스 메서드), 수정할 수 있습니다 `ProductsBLL` 정적 포함 하도록 `GetProductsByCategoryID(categoryID)` 메서드 포함 정적클래스가또는`Instance()` 의 새 인스턴스를 반환 하는 방법의 `ProductsBLL` 클래스입니다.
+> 만들려는 busywork 등장이 그리 대단해는 `GetProductsInCategory(categoryID)` ASP.NET의 페이지 코드 숨김 클래스의 메서드. 간단히이 메서드의 인스턴스를 만들고, 합니다 `ProductsBLL` 클래스 및 결과 반환 합니다. 해당 `GetProductsByCategoryID(categoryID)` 메서드. 이유만이 메서드를 호출 내부 Repeater, 데이터 바인딩 구문을 통해 같은: `DataSource='<%# ProductsBLL.GetProductsByCategoryID(CType(Eval("CategoryID"), Integer)) %>'`? 이 구문은 현재 구현에서는 작동 하지 않습니다 하지만 `ProductsBLL` 클래스 (있으므로 `GetProductsByCategoryID(categoryID)` 메서드는 인스턴스 메서드), 수정할 수 있습니다 `ProductsBLL` 정적 포함 하도록 `GetProductsByCategoryID(categoryID)` 메서드 포함 정적클래스가또는`Instance()` 의 새 인스턴스를 반환 하는 방법의 `ProductsBLL` 클래스입니다.
 
 
 이러한 수정에 필요 하지 않게는 동안는 `GetProductsInCategory(categoryID)` ASP.NET의 페이지 코드 숨김 클래스에서 메서드를 코드 숨김 클래스의 메서드를 제공 보다 유연 하 게 앞으로 살펴보겠지만 곧를 검색 한 데이터로 작업 합니다.
@@ -151,7 +151,7 @@ Repeater s `DataSource` 속성에서 해당 데이터가 제공 됨을 나타내
 
 지정 된 *N* 시스템의 범주가이 방법은이 네트워크 *N* + 1 호출 데이터베이스 하나의 데이터베이스만 쿼리 범주의 모든 차례로 *N* 제품에 대 한 호출 각 범주에만 사용 합니다. 그러나 모든 범주 및 제품의 모든 다른 두 개의 데이터베이스 호출 한 번 호출에 필요한 모든 데이터를 검색할 수 있습니다, 했습니다. 이러한 제품 이므로 필터링 할 수 있으면 모든 제품을 현재 일치 하는 제품에만 `CategoryID` s 해당 범주에 바인딩된 내부 반복기입니다.
 
-이 기능을 제공 하기만 하면 약간의 수정 된 `GetProductsInCategory(categoryID)` ASP.NET의 페이지 코드 숨김 클래스는 메서드. 맹목적으로 결과 반환 하는 대신를 `ProductsBLL` s 클래스 `GetProductsByCategoryID(categoryID)` 메서드를 원하므로 대신 처음으로 액세스 *모든* 제품 (t 되지 않았고 해당 하는 경우 되었습니다 이미 액세스)의 필터링된 된 보기에만 다음 다시 돌아와 전달 기능을 기반으로 제품 `CategoryID`합니다.
+이 기능을 제공 하기만 하면 약간의 수정 된 `GetProductsInCategory(categoryID)` ASP.NET의 페이지 코드 숨김 클래스는 메서드. 맹목적으로 결과 반환 하는 대신 합니다 `ProductsBLL` s 클래스 `GetProductsByCategoryID(categoryID)` 메서드를 원하므로 대신 처음으로 액세스 *모든* (이미 액세스 하지 않는) 하는 경우 제품의 필터링된 된 보기에만 다음 다시 돌아와 전달 기능을 기반으로 제품 `CategoryID`합니다.
 
 
 [!code-vb[Main](nested-data-web-controls-vb/samples/sample8.vb)]

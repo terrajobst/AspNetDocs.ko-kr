@@ -8,12 +8,12 @@ ms.date: 03/06/2014
 ms.assetid: 7ef5f73c-ca60-43c1-bdb2-702800347e7e
 msc.legacyurl: /visual-studio/overview/2013/aspnet-and-web-tools-20132-preview-for-visual-studio-2013-release-notes
 msc.type: authoredcontent
-ms.openlocfilehash: 2a22c5b686cb8e02054f421f78a8fc910af7ce28
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bbb38ddde49cdeea4255e0e05bd559ddd9e5f692
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062740"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425992"
 ---
 <a name="aspnet-and-web-tools-20132--for-visual-studio-2013-release-notes"></a>Visual Studio 2013용 ASP.NET 및 Web Tools 2013.2 릴리스 정보
 ====================
@@ -112,7 +112,7 @@ Firefox에서 경고를 표시 하므로 자체 인증서 저장소를 사용 �
 
     `<div data-bind="text: foo.bar.baz.etc" />`
 
-    표시 IntelilSense JavaScript 개체의 전체 IntelliSense입니다.
+    표시 되는 IntelliSense는 JavaScript 개체의 전체 IntelliSense를 합니다.
 
     ![Intellisense 보여 주는 전체 JavaScript 개체](aspnet-and-web-tools-20132-preview-for-visual-studio-2013-release-notes/_static/image15.png)
 - **새 URL 선택 대화 상자에서 HTML, Razor, CSS, LESS 및 Sass 문서**: VS 2013 Web Forms 페이지 외부 없는 URL 선택 대화 상자를 사용 하 여 제공 합니다. 새 URL 선택기 HTML, Razor, css, LESS 및 Sass 편집기가 이해 하는 대화 무료, fluent 입력 선택 '..' 및 img 태그 및 링크에 대 한 필터 파일을 적절 하 게 나열 합니다.
@@ -177,12 +177,13 @@ Azure를 추가 했습니다 ["원격 리소스 만들기"](https://docs.microso
 NuGet 2.8.1 RTM은 2014 년 4 월 출시 됩니다. 다음 릴리스 정보에서 쟁점은 있지만 하십시오 합니다 [전체 릴리스 정보](http://docs.nuget.org/docs/release-notes/nuget-2.8) 이러한 변경에 대 한 자세한 내용은 합니다.
 
 - **대상 Windows Phone 8.1 응용 프로그램**: NuGet 2.8.1는 이제 Windows Phone 8.1 응용 프로그램 '이 WindowsPhoneApp', 'WPA', 'WindowsPhoneApp81' 및 'WPA81' 대상 프레임 워크 모니커를 사용 하 여 대상으로 지원 합니다.
+
 - **종속성에 대 한 확인을 패치**: 패키지 종속성을 해결 하는 경우 NuGet 패키지에서 종속성을 충족 하는 가장 낮은 주 및 부 패키지 버전을 선택 하는 전략을 구현 지금까지 했습니다. 그러나 주 및 부 버전을 달리 패치 버전을 항상 해결 된 가장 높은 버전으로 합니다. 좋은 의도로 동작 이지만 종속성을 사용 하 여 패키지를 설치 하는 것에 대 한 결정성이 부족을 만들었습니다.
 - **DependencyVersion 스위치**: NuGet 2.8 변경 하지만 합니다 *기본* 동작 종속성을 해결 하는 것에 대 한 추가-DependencyVersion 스위치를 통해 종속성 확인 프로세스를 보다 정밀 하 게 제어 패키지 관리자 콘솔에서. 스위치를 통해 가능한 가장 낮은 버전 (기본 동작), 가능한 최상 버전을 가장 높은 부 또는 패치 버전에 대 한 종속성을 확인할 수 있습니다. 이 스위치는 powershell 명령에서 설치 패키지 에서만 작동합니다.
 - **DependencyVersion 특성**: 위에서 설명한, NuGet에도 기능에 대 한 허용 nuget.config 파일에서 새 특성을 설정 하려면-DependencyVersion 스위치 외에도 정의 기본값은 어떤 호출-DependencyVersion 스위치를 지정 하지 않은 경우 설치 패키지입니다. 이 값이 모든 설치 패키지 작업에 대 한 NuGet 패키지 관리자 대화 상자도 적용 됩니다. 이 값을 설정 하려면 아래 특성 nuget.config 파일에 추가 합니다.
 
     `<config> <add key="dependencyversion" value="Highest" /> </config>`
-- **-Whatif를 사용 하 여 NuGet 작업 미리 보기**: 일부 NuGet 패키지 전체 종속성 그래프를 포함할 수 있으며 따라서이 수를 설치 하는 동안 유용할 제거 또는 업데이트 작업을 먼저 발생 하는 결과 확인 하려면. 표준 PowerShell을 추가 하는 NuGet 2.8-명령을 적용 되는 패키지의 완전 한 클로저 시각화를 활성화 하는 패키지 설치, 제거 패키지 및 패키지 업데이트 명령을 어떻게 전환 합니다.
+- **-WhatIf를 사용 하 여 NuGet 작업 미리 보기**: 일부 NuGet 패키지 전체 종속성 그래프를 포함할 수 있으며 따라서이 수를 설치 하는 동안 유용할 제거 또는 업데이트 작업을 먼저 발생 하는 결과 확인 하려면. 표준 PowerShell을 추가 하는 NuGet 2.8-명령을 적용 되는 패키지의 완전 한 클로저 시각화를 활성화 하는 패키지 설치, 제거 패키지 및 패키지 업데이트 명령을 어떻게 전환 합니다.
 - **패키지를 다운 그레이드**: 새로운 기능을 조사 하기 위해 패키지의 시험판 버전을 설치 하 고 마지막 안정적인 버전으로 롤백하려면 다음 결정을 일반적이 지 않은 것입니다. NuGet 2.8 이전에이 시험판 패키지 및 해당 종속성을 제거 하 고 다음 이전 버전을 설치 하는 여러 단계의 프로세스가 이었습니다. 그러나 NuGet 2.8을 사용 하 여 업데이트 패키지를 이제 롤백됩니다 전체 패키지 클로저 (예: 패키지의 종속성 트리) 이전 버전으로 합니다.
 - **개발 종속성**: 개발 프로세스를 최적화 하는 데 사용 되는 도구를 포함 하는 NuGet 패키지로-다양 한 기능을 제공할 수 있습니다. 이후이 경우 새 패키지의 종속성 게시 구성이 요소를 새 패키지를 개발 하는 데 도움이 될 수 있지만 이러한 고려 되어야 합니다. NuGet 2.8을 developmentDependency.nuspec 파일에 자신을 식별 하는 패키지를 수 있습니다. 설치 하는 경우에이 메타 데이터는 패키지가 설치 된 프로젝트의 packages.config 파일에 추가 됩니다. Packages.config 파일은 나중에 분석할 NuGet 종속성에 대 한 nuget.exe 팩 중 때 개발 종속성으로 표시 하는 이러한 종속성 제외 됩니다.
 - **다양 한 플랫폼에 대 한 개별 packages.config 파일**: 여러 대상 플랫폼에 대 한 응용 프로그램을 개발 하는 경우 각 해당 빌드 환경에 대해 다른 프로젝트 파일을 저장 하는 일반적인 것입니다. 패키지에 다양 한 플랫폼에 대 한 지원 수준이 다양 한 대로도 여러 프로젝트 파일에서 다른 NuGet 패키지 사용에 일반적입니다. 다양 한 플랫폼 관련 프로젝트 파일에 대 한 다른 packages.config 파일을 만들어이 시나리오에 대 한 향상 된 지원을 제공 하는 NuGet 2.8 합니다.
@@ -205,7 +206,7 @@ NuGet 2.8.1 RTM은 2014 년 4 월 출시 됩니다. 다음 릴리스 정보에�
 - [특성 라우팅 기능 향상](../../../mvc/overview/releases/mvc51-release-notes.md#AttributeRouting)
 - [부트스트랩 편집기 템플릿 지원](../../../mvc/overview/releases/mvc51-release-notes.md#Bootstrap)
 - [보기에서 열거형 지원](../../../mvc/overview/releases/mvc51-release-notes.md#Enum)
-- [Unobstrusive 지원 MinLength / MaxLength 특성](../../../mvc/overview/releases/mvc51-release-notes.md#Unobtrusive)
+- [비간섭 지원 MinLength / MaxLength 특성](../../../mvc/overview/releases/mvc51-release-notes.md#Unobtrusive)
 - ['This'이 컨텍스트 눈에 띄지 않는 ajax 지원](../../../mvc/overview/releases/mvc51-release-notes.md#thisContext)
 - 다양 한 [버그 수정](https://aspnetwebstack.codeplex.com/workitem/list/advanced?keyword=&status=Closed&type=All&priority=All&release=v5.1%20Preview%7cv5.1%20RTM&assignedTo=All&component=MVC&sortField=AssignedTo&sortDirection=Ascending&page=0&reasonClosed=Fixed)
 

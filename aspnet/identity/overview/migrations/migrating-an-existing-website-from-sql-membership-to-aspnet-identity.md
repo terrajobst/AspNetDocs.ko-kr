@@ -8,19 +8,18 @@ ms.date: 12/19/2014
 ms.assetid: 220d3d75-16b2-4240-beae-a5b534f06419
 msc.legacyurl: /identity/overview/migrations/migrating-an-existing-website-from-sql-membership-to-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: 393d14799973e9126379743f63f79a7131206f38
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b80f2f5cc4702c3e406d8989905c56508711e788
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57037820"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58426083"
 ---
-<a name="migrating-an-existing-website-from-sql-membership-to-aspnet-identity"></a>기존 웹 사이트를 SQL 멤버 자격에서 ASP.NET Identity로 마이그레이션
-====================
+# <a name="migrating-an-existing-website-from-sql-membership-to-aspnet-identity"></a>기존 웹 사이트를 SQL 멤버 자격에서 ASP.NET Identity로 마이그레이션
+
 하 여 [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Suhas Joshi](https://github.com/suhasj)
 
 > 이 자습서에서는 사용자와 역할 데이터를 SQL 멤버 자격을 사용 하 여 새 ASP.NET Id 시스템에 만든 기존 웹 응용 프로그램을 마이그레이션하는 단계를를 보여 줍니다. 이 방법은 ASP.NET Id와 후크를 기존/신규 클래스에 의해 필요한 하나에 기존 데이터베이스 스키마를 변경 하는 것입니다. 데이터베이스 마이그레이션되면이 방법을 채택 하면, 향후 업데이트에서 Id로 간편 하 게 처리 됩니다.
-
 
 이 자습서에서는 데이터를 사용자 및 역할을 만들려면 Visual Studio 2010을 사용 하 여 만든 웹 응용 프로그램 템플릿 (Web Forms) 수행 됩니다. Id 시스템에 필요한 테이블에 기존 데이터베이스를 마이그레이션하려면 다음 SQL 스크립트 사용 됩니다. 다음에서는 필요한 NuGet 패키지를 설치 하 고 멤버 자격 관리에 대 한 Id 시스템을 사용 하는 새 계정 관리 페이지를 추가 합니다. 마이그레이션 테스트를 SQL 멤버 자격을 사용 하 여 만든 사용자가 로그인 할 수 있어야 하 고 새 사용자를 등록할 수 있어야 합니다. 전체 샘플을 찾을 수 있습니다 [여기](https://aspnet.codeplex.com/SourceControl/latest#Samples/Identity/SQLMembership-Identity-OWIN/)합니다. 참고 항목 [ASP.NET 멤버 자격에서 ASP.NET Id로 마이그레이션](http://travis.io/blog/2015/03/24/migrate-from-aspnet-membership-to-aspnet-identity.html)합니다.
 
@@ -50,7 +49,7 @@ ms.locfileid: "57037820"
 
 1. 웹 또는와 함께 Visual Studio 2013 용 Visual Studio Express 2013을 설치 합니다 [최신 업데이트](https://www.microsoft.com/download/details.aspx?id=44921)합니다.
 2. Visual Studio의 설치 된 버전에서 위의 프로젝트를 엽니다. SQL Server Express 설치 되어 있지 않으면 컴퓨터에서 연결 문자열에서 SQL Express를 사용 하므로 프로젝트를 열면 프롬프트가 표시 됩니다. SQL Express를 설치 하거나로 해결 변경 LocalDb 연결 문자열을 선택할 수 있습니다. 이 문서에 대 한 LocalDb에 변경 됩니다 것입니다.
-3. Web.config를 열고 연결 문자열을 변경 합니다. (LocalDb) v11.0 SQLExpess입니다. 제거할 ' 사용자 인스턴스 = true' 연결 문자열에서.
+3. Web.config를 열고 연결 문자열을 변경 합니다. (LocalDb) v11.0 SQLExpress입니다. 제거할 ' 사용자 인스턴스 = true' 연결 문자열에서.
 
     ![](migrating-an-existing-website-from-sql-membership-to-aspnet-identity/_static/image3.jpg)
 4. 서버 탐색기를 열고 테이블 스키마 및 데이터를 확인할 수 있습니다.
@@ -115,7 +114,7 @@ ASP.NET Id 시스템에 필요한 스키마에 기존 데이터베이스를 마�
 
 [!INCLUDE[](../../../includes/identity/alter-command-exception.md)]
 
-여기서 수도 있게 추가 변경 내용은 새 열을 추가 하 고 데이터 복사를 시작으로이 데이터베이스 생성 스크립트를 사용할 수 있습니다. 이의 장점은 생성 하는 것을 `_MigrationHistory` EntityFramework 모델 클래스 Identity 릴리스 이후 버전에 대 한 변경 하는 경우 데이터베이스 스키마를 수정 하려면 사용 되는 테이블입니다. 
+여기서 수도 있게 추가 변경 내용은 새 열을 추가 하 고 데이터 복사를 시작으로이 데이터베이스 생성 스크립트를 사용할 수 있습니다. 이의 장점은 생성 하는 것을 `_MigrationHistory` EntityFramework 모델 클래스 Identity 릴리스 이후 버전에 대 한 변경 하는 경우 데이터베이스 스키마를 수정 하려면 사용 되는 테이블입니다.
 
 SQL 멤버 자격 사용자 정보를 다른 뿐만 namely 전자 메일 Id 사용자 모델 클래스에서 속성, 암호 시도 횟수, 마지막 로그인 날짜, 마지막 잠금 날짜 등 했습니다. 유용한 정보 이며 Id 시스템에 전달 하 고 싶습니다. 사용자 모델에 추가 속성을 추가 하 고 데이터베이스의 테이블 열에 다시 매핑할 수 여이 수행할 수 있습니다. 이렇게 할 클래스를 추가 하 여 해당 서브 클래스는 `IdentityUser` 모델입니다. 이 사용자 지정 클래스에 속성을 추가 하 고 테이블을 만들 때 해당 열을 추가 하려면 SQL 스크립트를 편집할 수 있습니다. 이 클래스에 대 한 코드는 문서에 자세히 설명 합니다. 만들기 위한 SQL 스크립트를 `AspnetUsers` 테이블 수는 새 속성 추가
 
@@ -125,7 +124,7 @@ SQL 멤버 자격 사용자 정보를 다른 뿐만 namely 전자 메일 Id 사�
 
 [!code-sql[Main](migrating-an-existing-website-from-sql-membership-to-aspnet-identity/samples/sample2.sql)]
 
-위의 SQL 문에서 각 사용자에 대 한 정보를 *aspnet\_사용자가* 하 고 *aspnet\_멤버 자격* 테이블의 열으로 복사 됩니다는  *AspnetUsers* 테이블입니다. 여기서만 수정 경우 암호를 복사 하는 것입니다. SQL 멤버 자격에는 암호에 대 한 암호화 알고리즘 사용 'PasswordSalt' 및 'PasswordFormat' 않으므로 복사 하는 너무 해시 된 암호와 함께 Id로 암호 해독을 위한 사용 될 수 있도록 합니다. 이 사용자 지정 암호 hasher를 후크 하는 경우 문서의 내용을 설명 합니다. 
+위의 SQL 문에서 각 사용자에 대 한 정보를 *aspnet\_사용자가* 하 고 *aspnet\_멤버 자격* 테이블의 열으로 복사 됩니다는  *AspnetUsers* 테이블입니다. 여기서만 수정 경우 암호를 복사 하는 것입니다. SQL 멤버 자격에는 암호에 대 한 암호화 알고리즘 사용 'PasswordSalt' 및 'PasswordFormat' 않으므로 복사 하는 너무 해시 된 암호와 함께 Id로 암호 해독을 위한 사용 될 수 있도록 합니다. 이 사용자 지정 암호 hasher를 후크 하는 경우 문서의 내용을 설명 합니다.
 
 이 스크립트 파일은이 샘플에 특정 합니다. 추가 테이블을 포함 하는 응용 프로그램의 경우 사용자 모델 클래스에 추가 속성을 추가 하 고 AspnetUsers 테이블의 열에 매핑할 비슷한 방식이 개발자를 따르면 됩니다. 스크립트를 실행 하려면
 
@@ -158,7 +157,7 @@ SQL 멤버 자격 사용자 정보를 다른 뿐만 namely 전자 메일 Id 사�
 
 이 샘플에서는 AspNetRoles, AspNetUserClaims, AspNetLogins 및 AspNetUserRole 테이블에는 Id 시스템의 기존 구현과 비슷합니다는 열입니다. 따라서 이러한 테이블에 매핑하는 기존 클래스를 다시 사용할 수 했습니다. AspNetUser 테이블에는 SQL 멤버 자격 테이블에서 추가 정보를 저장 하는 데 사용 되는 몇 개의 추가 열입니다. 'IdentityUser'의 기존 구현을 확장 및 추가 속성을 추가 하는 모델 클래스를 만들어이 매핑할 수 있습니다.
 
-1. 연관 모델 프로젝트의 폴더에에서 사용자 클래스를 추가 합니다. 클래스의 이름을 'AspnetUsers' 테이블의 '판별자' 열에 추가 된 데이터를 일치 해야 합니다.
+1. 프로젝트에서 Models 폴더를 만들고 사용자 클래스를 추가 합니다. 클래스의 이름을 'AspnetUsers' 테이블의 '판별자' 열에 추가 된 데이터를 일치 해야 합니다.
 
     ![](migrating-an-existing-website-from-sql-membership-to-aspnet-identity/_static/image10.png)
 
@@ -199,7 +198,7 @@ SQL 멤버 자격 사용자 정보를 다른 뿐만 namely 전자 메일 Id 사�
 - Register.aspx.cs 및 Login.aspx.cs 코드 숨김 클래스 사용의 `UserManager` 사용자를 만들려면 Identity 패키지에서 합니다. 이 예제에서는 앞에서 언급 한 단계에 따라 Models 폴더에 추가 합니다. UserManager를 사용 합니다.
 - 클래스 뒤 Register.aspx.cs 및 Login.aspx.cs 코드에서 IdentityUser 대신 생성 하는 사용자 클래스를 사용 합니다. 이 사용자 지정 클래스에서 Id 시스템에 연결 합니다.
 - 데이터베이스를 만드는 부분을 건너뛸 수 있습니다.
-- 개발자를 현재 응용 프로그램 ID와 일치 하는 새 사용자에 대 한 응용 프로그램 Id를 설정 해야 합니다. 이 Register.aspx.cs 클래스에서 사용자 개체를 만들기 전에이 응용 프로그램에 대 한 응용 프로그램 Id를 쿼리 및 사용자를 만들기 전에 설정 하 여 수행할 수 있습니다. 
+- 개발자를 현재 응용 프로그램 ID와 일치 하는 새 사용자에 대 한 응용 프로그램 Id를 설정 해야 합니다. 이 Register.aspx.cs 클래스에서 사용자 개체를 만들기 전에이 응용 프로그램에 대 한 응용 프로그램 Id를 쿼리 및 사용자를 만들기 전에 설정 하 여 수행할 수 있습니다.
 
     예제:
 

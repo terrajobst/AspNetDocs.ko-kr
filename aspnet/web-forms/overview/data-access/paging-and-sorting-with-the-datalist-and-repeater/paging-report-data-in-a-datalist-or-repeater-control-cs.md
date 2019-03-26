@@ -8,12 +8,12 @@ ms.date: 11/13/2006
 ms.assetid: e8e0809b-25c4-4c3b-8d12-9a17048148ae
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting-with-the-datalist-and-repeater/paging-report-data-in-a-datalist-or-repeater-control-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 4212b7bff41d76eaef18d638cf28441b50061159
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bd66affc6ceab864ca753287f484a37c7671f20f
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57024630"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423054"
 ---
 <a name="paging-report-data-in-a-datalist-or-repeater-control-c"></a>DataList 또는 반복기 컨트롤에서 보고서 데이터 페이징(C#)
 ====================
@@ -127,7 +127,7 @@ UPDATE, INSERT에서에서 드롭 다운 목록을 설정 하 고 탭 (없음)�
 
 다시 게시할 때마다 페이지 인덱스 및 페이지 크기 값을 저장 해야 합니다. 이러한 뷰 상태에 저장할 수 있습니다, 쿼리 문자열에 유지, 세션 변수에 저장 또는 다른 기술을 사용 하 여 저장 합니다. 이 자습서에 대 한 특정 페이지 수를 책갈피에 데이터의 장점이 있는 쿼리 문자열을 사용 하겠습니다.
 
-특히 쿼리 문자열 필드 pageIndex 및에 대 한 pageSize를 사용 합니다 `pageIndex` 및 `pageSize` 매개 변수를 각각 (그림 7 참조). 시간을 내어 이러한 매개 변수에 대 한 기본값을 설정으로 t-이득 querystring 값을 사용자가이 페이지를 처음 방문할 때 제공 되어야 합니다. 에 대 한 `pageIndex`을 기본값 0으로 설정 (데이터의 첫 페이지에 표시 됩니다) 및 `pageSize` 4가 기본값입니다.
+특히 쿼리 문자열 필드 pageIndex 및에 대 한 pageSize를 사용 합니다 `pageIndex` 및 `pageSize` 매개 변수를 각각 (그림 7 참조). 시간을 내어 이러한 매개 변수에 대 한 기본값을 설정으로 쿼리 문자열 값은 사용자가이 페이지를 처음 방문할 때 표시 되지 않습니다. 에 대 한 `pageIndex`을 기본값 0으로 설정 (데이터의 첫 페이지에 표시 됩니다) 및 `pageSize` 4가 기본값입니다.
 
 
 [![PageIndex 및 pageSize 매개 변수에 대 한 원본으로 쿼리 문자열 사용](paging-report-data-in-a-datalist-or-repeater-control-cs/_static/image14.png)](paging-report-data-in-a-datalist-or-repeater-control-cs/_static/image13.png)

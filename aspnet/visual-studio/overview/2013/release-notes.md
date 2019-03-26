@@ -8,12 +8,12 @@ ms.date: 10/17/2013
 ms.assetid: 08815768-2702-42ae-ae85-0a59934a11d1
 msc.legacyurl: /visual-studio/overview/2013/release-notes
 msc.type: authoredcontent
-ms.openlocfilehash: 43878bc101ef97e8bbb6c150f4125707da7660c9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: cd6197a9cbed822ba874a19823521a3711be9201
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57027440"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422716"
 ---
 <a name="aspnet-and-web-tools-for-visual-studio-2013-release-notes"></a>Visual Studio 2013용 ASP.NET 및 Web Tools 릴리스 정보
 ====================
@@ -357,7 +357,7 @@ OWIN 표준 호환성을 위해 이러한 방법으로 바뀌었습니다 `MapSi
 
 ### <a name="cross-domain-support"></a>도메인 간 지원
 
-SignalR 1.x에서 도메인 간 요청 된 단일 EnableCrossDomain 플래그로 제어. 이 플래그는 JSONP 및 CORS 요청을 제어 합니다. 모든 CORS 지원 유연성을 높이기 위해 SignalR의 서버 구성 요소에서 제거 되었습니다 (JavaScript lients 여전히 CORS 일반적으로 사용 하는 브라우저에서 지 원하는 검색 되었을 때), 새 OWIN 미들웨어입니다. 이러한 시나리오를 지원 하기 위해 사용할 수 있게 되었습니다.
+SignalR 1.x에서 도메인 간 요청 된 단일 EnableCrossDomain 플래그로 제어. 이 플래그는 JSONP 및 CORS 요청을 제어 합니다. 모든 CORS 지원 유연성을 높이기 위해 SignalR의 서버 구성 요소에서 제거 되었습니다 (JavaScript 클라이언트 여전히 CORS 일반적으로 사용 하는 브라우저에서 지 원하는 검색 되었을 때), 새 OWIN 미들웨어입니다. 이러한 시나리오를 지원 하기 위해 사용할 수 있게 되었습니다.
 
 SignalR 2.0의 경우 JSONP는 클라이언트에서 (지 원하는 데 필요한 도메인 간 요청 이전 브라우저에서)를 설정 하 여 명시적으로 설정 해야 `EnableJSONP` 에 `HubConfiguration` 개체를 `true`다음과 같이 합니다. JSONP는 CORS 보다 안전 하지 않은 것 처럼 기본적으로 비활성화 됩니다.
 

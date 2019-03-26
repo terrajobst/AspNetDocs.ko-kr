@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 187ee9cd-bc70-479b-bfed-f568b8da96eb
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-helpers-forms-and-validation
 msc.type: authoredcontent
-ms.openlocfilehash: 8671ae8e9408e6f05135fa27d56480477521c4ba
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 45aab00140f63cd84ea1b7ba22f655b0e4373f97
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57056780"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423080"
 ---
 # <a name="aspnet-mvc-4-helpers-forms-and-validation"></a>ASP.NET MVC 4 도우미, 폼 및 유효성 검사
 
@@ -710,7 +710,7 @@ StoreManager 인덱스 페이지에 한 가지 잠재적인 문제가 있습니�
     > 
     > 또한 사용자 지정 동작을 갖는 모든 컨트롤러에 ClientValidationEnabled 특성을 할당할 수 있습니다.
 2. 오픈 **Create.cshtml** 언제 **Views\StoreManager**합니다.
-3. 다음 스크립트 파일이 있는지 확인 **jquery.validate** 하 고 **jquery.validate.unobtrusive**, 보기 통해 참조 되는 &quot; **~/bundles/jqueryval** &quot; 번들입니다.
+3. 다음 스크립트 파일이 있는지 확인 **jquery.validate** 하 고 **jquery.validate.unobtrusive**를 통해 뷰에서 참조 되는 &quot; **~/bundles/jqueryval** &quot; 번들입니다.
 
     [!code-cshtml[Main](aspnet-mvc-4-helpers-forms-and-validation/samples/sample22.cshtml)]
 

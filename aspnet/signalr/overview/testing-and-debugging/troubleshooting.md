@@ -8,12 +8,12 @@ ms.date: 06/10/2014
 ms.assetid: 4b559e6c-4fb0-4a04-9812-45cf08ae5779
 msc.legacyurl: /signalr/overview/testing-and-debugging/troubleshooting
 msc.type: authoredcontent
-ms.openlocfilehash: 38802814fbb748513274f1fd8a33521fafd48ed3
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c9ccfa00d768f767cee7705372c157199572d2ed
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57039410"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422586"
 ---
 <a name="signalr-troubleshooting"></a>SignalR 문제 해결
 ====================
@@ -87,7 +87,7 @@ SignalR 두 통신 모델을 사용합니다. 허브 및 PersistentConnections �
 
 [!code-csharp[Main](troubleshooting/samples/sample3.cs)]
 
-**C# 서버 코드 여러 응용 프로그램이 있는 경우 허브에 또는 여러 허브에 대 한 경로 매핑하는**
+**C#여러 응용 프로그램이 있는 경우 여러 허브 또는 허브에 대 한 경로 매핑하는 서버 코드**
 
 [!code-css[Main](troubleshooting/samples/sample4.css)]
 

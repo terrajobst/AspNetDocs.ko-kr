@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: 7e97cfc3-d830-4002-8ff7-5790d1ff49e6
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/more-patterns-and-guidance
 msc.type: authoredcontent
-ms.openlocfilehash: 3de929ff7253928f2f9cd9b033ef6c643744e91c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 87dbbc0b598a6592b511383a5487a04b302b0994
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57050800"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425667"
 ---
 <a name="more-patterns-and-guidance-building-real-world-cloud-apps-with-azure"></a>더 많은 패턴 및 지침 (Azure 사용 하 여 빌드 실제 클라우드 앱)
 ====================
@@ -61,7 +61,7 @@ ms.locfileid: "57050800"
 코드 샘플
 
 - [Fix It 응용 프로그램이 전자책을 함께 제공 되는](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4?cdn_id=2013-12-03-002)합니다.
-- [Visual Studio 2012 용 C#에서 Azure의 서비스 기본 사항 클라우드](http://aka.ms/csf)합니다. Microsoft 코드 갤러리 사이트에서 다운로드 가능한 프로젝트 코드와 설명서를 개발 하 여 Microsoft 고객 자문 팀 (CAT)를 포함 합니다. 다양 한 FailSafe와 빌드 비디오 시리즈 및 FailSafe 백서에서 권장 모범 사례를 보여 줍니다. 코드 갤러리 페이지에 대 한 링크가 프로젝트의 제작자에 의해 광범위 한 설명서 참조-특히 [클라우드 서비스 기본 사항 wiki 컬렉션](https://social.technet.microsoft.com/wiki/contents/articles/17987.cloud-service-fundamentals.aspx) 프로젝트 설명 위쪽 파란색 상자에 링크 합니다. 이 프로젝트 및 해당 설명서 아직 적극적으로 개발 중인를 서로 유사 하지만 이전 백서 보다 많은 항목에 대 한 정보에 더 적합 합니다.
+- [Visual Studio 2012 용 C#에서 Azure의 서비스 기본 사항 클라우드](https://aka.ms/csf)합니다. Microsoft 코드 갤러리 사이트에서 다운로드 가능한 프로젝트 코드와 설명서를 개발 하 여 Microsoft 고객 자문 팀 (CAT)를 포함 합니다. 다양 한 FailSafe와 빌드 비디오 시리즈 및 FailSafe 백서에서 권장 모범 사례를 보여 줍니다. 코드 갤러리 페이지에 대 한 링크가 프로젝트의 제작자에 의해 광범위 한 설명서 참조-특히 [클라우드 서비스 기본 사항 wiki 컬렉션](https://social.technet.microsoft.com/wiki/contents/articles/17987.cloud-service-fundamentals.aspx) 프로젝트 설명 위쪽 파란색 상자에 링크 합니다. 이 프로젝트 및 해당 설명서 아직 적극적으로 개발 중인를 서로 유사 하지만 이전 백서 보다 많은 항목에 대 한 정보에 더 적합 합니다.
 
 하드 카피 서적
 
@@ -101,7 +101,7 @@ Microsoft의 다른 많은 동료 검토 하 고 초안 및 코드 주석 처리
 - Edward Wu-SSO 쿼리에 대 한 샘플 코드를 제공 합니다.
 - Guang Yang-PowerShell 자동화 스크립트를 작성 했습니다.
 
-멤버는 [Microsoft 개발자 지침 Advisory Council](http://aka.ms/DGAC) (DGAC)도 검토 하 고 초안에 주석으로 처리 합니다.
+멤버는 [Microsoft 개발자 지침 Advisory Council](https://aka.ms/DGAC) (DGAC)도 검토 하 고 초안에 주석으로 처리 합니다.
 
 - Jean-Luc Boucho
 - Catalin Gheorghiu

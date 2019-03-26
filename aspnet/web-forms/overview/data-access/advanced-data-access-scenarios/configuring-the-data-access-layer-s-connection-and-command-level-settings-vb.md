@@ -8,12 +8,12 @@ ms.date: 08/03/2007
 ms.assetid: d57dfa2b-d627-45cb-b5b1-abbf3159d770
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/configuring-the-data-access-layer-s-connection-and-command-level-settings-vb
 msc.type: authoredcontent
-ms.openlocfilehash: d44372ef3eaf7634d3bf3a82bd2c1eb1d710f786
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 37c537931008045c5c6438fe2097652438c7e8b1
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57032370"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424913"
 ---
 <a name="configuring-the-data-access-layers-connection--and-command-level-settings-vb"></a>데이터 액세스 레이어의 연결 및 명령 수준 설정 구성(VB)
 ====================
@@ -106,7 +106,7 @@ TableAdapter 클래스의 인스턴스가 만들어질 때, 멤버 변수 `_conn
 
 이 partial 클래스는 기본 연결 개체의 속성을 하나만 노출: `ConnectionString`합니다. 전체 연결 개체를 TableAdapter의 범위를 벗어나면 사용할 수 있도록 하려는 경우 변경할 수 있습니다 또는 `Connection`의 속성 보호 수준입니다. 1 단계에서에서 검사할 자동으로 생성 된 코드를 설명 하는 TableAdapter s 했습니다 `Connection` 속성으로 표시 됩니다 `Friend`, 것만 액세스할 수 있는지는 동일한 어셈블리에 클래스로 의미 합니다. 이 변경할 수 있지만 TableAdapter s를 통해 `ConnectionModifier` 속성입니다.
 
-열기는 `Northwind` 데이터 집합을 클릭 합니다 `ProductsTableAdatper` 디자이너에서 속성 창으로 이동 합니다. 이 표시 됩니다는 `ConnectionModifier` 기본값인으로 `Assembly`합니다. 있도록를 `Connection` 변경 형식화 된 데이터 집합의 어셈블리 외부에서 사용할 수 있는 속성을 `ConnectionModifier` 속성을 `Public`입니다.
+열기는 `Northwind` 데이터 집합을 클릭 합니다 `ProductsTableAdapter` 디자이너에서 속성 창으로 이동 합니다. 이 표시 됩니다는 `ConnectionModifier` 기본값인으로 `Assembly`합니다. 있도록를 `Connection` 변경 형식화 된 데이터 집합의 어셈블리 외부에서 사용할 수 있는 속성을 `ConnectionModifier` 속성을 `Public`입니다.
 
 
 [![연결 속성 s 액세스 가능성 수준 ConnectionModifier 속성을 통해 구성할 수 있습니다.](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image7.png)](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image6.png)

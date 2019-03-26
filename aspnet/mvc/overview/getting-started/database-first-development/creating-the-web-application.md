@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.assetid: bc8f2bd5-ff57-4dcd-8418-a5bd517d8953
 msc.legacyurl: /mvc/overview/getting-started/database-first-development/creating-the-web-application
 msc.type: authoredcontent
-ms.openlocfilehash: dced55386c3f810e406c5c2b3f0071b45e3b2dbd
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 481a0ee9b19e5d35d736b2cc937a124900bce446
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57041580"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58426135"
 ---
 # <a name="tutorial-create-the-the-web-application-and-data-models-for-ef-database-first-with-aspnet-mvc"></a>자습서: 만들기는 웹 응용 프로그램 및 데이터 모델 EF에 대 한 ASP.NET MVC를 사용 하 여 첫 번째 데이터베이스
 
@@ -64,7 +64,7 @@ ms.locfileid: "57041580"
 
 개발 환경 내에 정의 된 데이터베이스 연결에 있는 경우 미리 선택이 연결 중 하나가 표시 될 수 있습니다. 그러나이 자습서의 첫 번째 부분에서 만든 데이터베이스에 새 연결을 만들려고 할 수도 있습니다. 클릭 합니다 **새 연결** 단추입니다.
 
-연결 속성 창에서 데이터베이스에 만들어진 로컬 서버의 이름을 제공 합니다 (이 예제의 **(localdb) \Projects13**). 서버 이름을 입력 한 후 사용 가능한 데이터베이스에서의 ContosoUniversityData를 선택 합니다.
+연결 속성 창에서 데이터베이스에 만들어진 로컬 서버의 이름을 제공 합니다 (이 예제의 **(localdb) \ProjectsV13**). 서버 이름을 입력 한 후 사용 가능한 데이터베이스에서의 ContosoUniversityData를 선택 합니다.
 
 ![연결 속성 설정](creating-the-web-application/_static/image8.png)
 

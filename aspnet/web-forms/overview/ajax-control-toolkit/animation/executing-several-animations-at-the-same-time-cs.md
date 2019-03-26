@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 219149e1-3ee9-4b79-8fe4-7433f6b7d15b
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/executing-several-animations-at-the-same-time-cs
 msc.type: authoredcontent
-ms.openlocfilehash: d70f7b9170cbd3307dae4cdb4f9ee735e3c5bee8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f228ca600691ea4820ecdb79dea5e70054975f32
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57032770"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422950"
 ---
 <a name="executing-several-animations-at-the-same-time-c"></a>(C#) 동시에 여러 애니메이션을 실행합니다.
 ====================
@@ -52,7 +52,7 @@ ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이�
 
 [!code-aspx[Main](executing-several-animations-at-the-same-time-cs/samples/sample5.aspx)]
 
-및 실제로:이 스크립트를 실행 하면 패널이 표시 되 면이 조정 하는 (threefolding 보다 더 많은 너비와 halfing 높이가) 동시에 페이드 아웃 하 고 있습니다.
+실제로 및: 패널 다음 크기 조정 (너비 보다 더 커지고 및 높이 양분) 표시 되 고 동시에 페이드 아웃이 스크립트를 실행 합니다.
 
 
 [![패널 페이드아웃 되며 (해당 콘텐츠를 브라우저의 렌더링 엔진 덕분 포함) 크기 조정](executing-several-animations-at-the-same-time-cs/_static/image2.png)](executing-several-animations-at-the-same-time-cs/_static/image1.png)

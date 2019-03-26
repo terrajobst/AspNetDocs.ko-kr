@@ -8,12 +8,12 @@ ms.date: 04/03/2015
 ms.assetid: 81ee500f-fc37-40d6-8722-f1b64720fbb6
 msc.legacyurl: /mvc/overview/security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on
 msc.type: authoredcontent
-ms.openlocfilehash: 611a4b59b2ea2eee771f4060fb5d5af041b2ccc6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 132560c0280a2e4096ea4e9a715c32bc880a8b82
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061890"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58421429"
 ---
 <a name="create-an-aspnet-mvc-5-app-with-facebook-twitter-linkedin-and-google-oauth2-sign-on-c"></a>Facebook, Twitter, LinkedIn 및 Google OAuth2 로그온을 제공하는 ASP.NET MVC 5 앱 만들기(C#)
 ====================
@@ -92,7 +92,7 @@ Google 및 Facebook과 같은 인증 공급자에 연결 하려면 IIS Express S
 6. 선택 된 **웹** 탭을 선택한 다음 SSL URL을 붙여 넣습니다 합니다 **프로젝트 Url** 상자입니다. 파일을 저장 합니다 (Ctl + S). 이 URL을 Facebook 및 Google 인증 앱을 구성 해야 합니다.  
   
     ![](create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on/_static/image10.png)
-7. 추가 된 [RequireHttps](https://msdn.microsoft.com/library/system.web.mvc.requirehttpsattribute.aspx) 특성을 `Home` 모든 요청을 요구 하는 컨트롤러에서 HTTPS를 사용 해야 합니다. 추가 하는 것 보다 안전한 방법을 사용 합니다 [RequireHttps](https://msdn.microsoft.com/library/system.web.mvc.requirehttpsattribute.aspx) 응용 프로그램에는 필터입니다. 섹션을 참조 하세요 &quot;SSL 및 권한 부여 특성을 사용 하 여 응용 프로그램 보호&quot; tutoral 내에서 [인증 및 SQL DB를 사용 하 여 ASP.NET MVC 앱을 만들고 Azure App Service에 배포](https://docs.microsoft.com/aspnet/core/security/authorization/secure-data)합니다. Home 컨트롤러의 일부는 다음과 같습니다.
+7. 추가 된 [RequireHttps](https://msdn.microsoft.com/library/system.web.mvc.requirehttpsattribute.aspx) 특성을 `Home` 모든 요청을 요구 하는 컨트롤러에서 HTTPS를 사용 해야 합니다. 추가 하는 것 보다 안전한 방법을 사용 합니다 [RequireHttps](https://msdn.microsoft.com/library/system.web.mvc.requirehttpsattribute.aspx) 응용 프로그램에는 필터입니다. 섹션을 참조 하세요 &quot;SSL 및 권한 부여 특성을 사용 하 여 응용 프로그램 보호&quot; 내 자습서에서 [인증 및 SQL DB를 사용 하 여 ASP.NET MVC 앱을 만들고 Azure App Service에 배포](https://docs.microsoft.com/aspnet/core/security/authorization/secure-data)합니다. Home 컨트롤러의 일부는 다음과 같습니다.
 
     [!code-csharp[Main](create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on/samples/sample1.cs?highlight=1)]
 8. Ctrl+F5를 눌러 응용 프로그램을 실행합니다. 이전에 인증서를 설치한 경우이 섹션의 나머지 부분을 건너뛰고 이동할 [OAuth 2 용 Google 앱 만들기 및 앱 프로젝트에 연결 하는](#goog), 그렇지 않은 경우 자체 서명 된 신뢰 지침에 따라 IIS Express에서 생성 하는 인증서입니다.  

@@ -8,12 +8,12 @@ ms.date: 07/11/2013
 ms.assetid: e42c8388-04ed-4341-9fdb-41b1b4c06320
 msc.legacyurl: /web-api/overview/formats-and-model-binding/parameter-binding-in-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 4d29f087cd658faf1fadb0d9a85e9f32c03a2b3f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a022138c594154109ff0bfba85949099e6b2d2a2
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57059000"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422755"
 ---
 <a name="parameter-binding-in-aspnet-web-api"></a>ASP.NET Web API에서에서 매개 변수 바인딩
 ====================
@@ -182,7 +182,7 @@ ETag를 가져옵니다을 여부를 나타내는 열거형도 정의 합니다 
 
 [!code-csharp[Main](parameter-binding-in-aspnet-web-api/samples/sample23.cs)]
 
-외에 **ParameterBindingAttribute**에 사용자 지정을 추가 하는 것에 대 한 다른 후크 **HttpParameterBinding**합니다. 에 **HttpConfiguration** 개체를 **ParameterBindingRules** 속성은 컬렉션 형식의 anomymous 함수 (**HttpParameterDescriptor**  - &gt; **HttpParameterBinding**). 예를 들어, 모든 ETag 매개 변수는 GET 메서드를 사용 하는 규칙을 추가할 수 있습니다 `ETagParameterBinding` 사용 하 여 `if-none-match`:
+외에 **ParameterBindingAttribute**에 사용자 지정을 추가 하는 것에 대 한 다른 후크 **HttpParameterBinding**합니다. 에 **HttpConfiguration** 개체를 **ParameterBindingRules** 속성은 컬렉션 형식의 익명 함수 (**HttpParameterDescriptor**  - &gt; **HttpParameterBinding**). 예를 들어, 모든 ETag 매개 변수는 GET 메서드를 사용 하는 규칙을 추가할 수 있습니다 `ETagParameterBinding` 사용 하 여 `if-none-match`:
 
 [!code-csharp[Main](parameter-binding-in-aspnet-web-api/samples/sample24.cs)]
 

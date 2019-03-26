@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: b7dba543-73c3-4534-a9a0-ba70fa2c6a8a
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-fundamentals
 msc.type: authoredcontent
-ms.openlocfilehash: d8e837a5d56871d271590859c2e82336111cc87a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d3bc39a37cace003c3fda6691f0dd7f893128b07
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029410"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425251"
 ---
 # <a name="aspnet-mvc-4-fundamentals"></a>ASP.NET MVC 4 기본 사항
 
@@ -389,7 +389,7 @@ MVC 프레임 워크를 사용 하지 않는 ASP.NET 응용 프로그램에서 �
    (C#)
 
     [!code-cshtml[Main](aspnet-mvc-4-fundamentals/samples/sample7.cshtml)]
-5. 각 페이지의 본문 섹션을 렌더링 하는 div를 포함 합니다. 바꿉니다  <strong>@RenderBody()</strong> 다음 higlighted 코드를 사용 하 여: (C#)
+5. 각 페이지의 본문 섹션을 렌더링 하는 div를 포함 합니다. 바꿉니다  <strong>@RenderBody()</strong> 강조 표시 된 코드를 다음으로: (C#)
 
     [!code-cshtml[Main](aspnet-mvc-4-fundamentals/samples/sample8.cshtml)]
 
@@ -800,7 +800,7 @@ A **StoreBrowseViewModel** 선택한 장르가 일치 하는 앨범에 표시할
    > 
    > 이 방법은 작동 하지만 하드 코드 된 문자열에 따라 다릅니다. 나중에 컨트롤러를 바꾸면를 사용 하는 경우에이 명령이 수동으로 변경 합니다. 더 나은 방법은 사용 하는 **HTML 도우미** 메서드. ASP.NET MVC에는 이러한 작업에 사용할 수 있는 HTML 도우미 메서드를 포함 합니다. **Html.ActionLink()** 도우미 메서드를 사용 하면 손쉽게 HTML 만들 **&lt;를&gt;** 링크, URL 경로 URL로 인코딩된 제대로 확인 합니다.
    > 
-   > Htlm.ActionLink 여러 오버 로드가 있습니다. 이 연습의 세 매개 변수를 사용 하는 것을 사용 합니다.
+   > Html.ActionLink 여러 오버 로드가 있습니다. 이 연습의 세 매개 변수를 사용 하는 것을 사용 합니다.
    > 
    > 1. 장르 이름을 표시 하는 링크 텍스트
    > 2. 컨트롤러 작업 이름 (**찾아보기**)
@@ -1017,7 +1017,7 @@ A **StoreBrowseViewModel** 선택한 장르가 일치 하는 앨범에 표시할
 1. 로 이동 합니다 [Windows Azure 관리 포털](https://manage.windowsazure.com/) 구독과 연결 된 Microsoft 자격 증명을 사용 하 여 로그인 합니다.
 
     > [!NOTE]
-    > Windows Azure를 사용 하 여 10 개의 ASP.NET 웹 사이트를 무료로 호스트할 수 있으며 다음 트래픽 증가 따라 확장할 수 있습니다. 등록할 수 있습니다 [여기](http://aka.ms/aspnet-hol-azure)합니다.
+    > Windows Azure를 사용 하 여 10 개의 ASP.NET 웹 사이트를 무료로 호스트할 수 있으며 다음 트래픽 증가 따라 확장할 수 있습니다. 등록할 수 있습니다 [여기](https://aka.ms/aspnet-hol-azure)합니다.
 
     ![Windows Azure 포털에 로그온](aspnet-mvc-4-fundamentals/_static/image48.png "Windows Azure 포털에 로그온")
 

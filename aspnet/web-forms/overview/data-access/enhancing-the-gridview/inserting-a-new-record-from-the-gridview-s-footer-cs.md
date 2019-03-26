@@ -8,12 +8,12 @@ ms.date: 03/06/2007
 ms.assetid: 49545652-98af-46ba-9dbc-9ab529805d9b
 msc.legacyurl: /web-forms/overview/data-access/enhancing-the-gridview/inserting-a-new-record-from-the-gridview-s-footer-cs
 msc.type: authoredcontent
-ms.openlocfilehash: ae27b25a0a7f37cc273d88d7165c8be33ce2f6cc
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3524983e347cc5ca0d34b2abe463477244a1129e
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57052530"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425459"
 ---
 <a name="inserting-a-new-record-from-the-gridviews-footer-c"></a>GridView의 바닥글에서 새 레코드 삽입(C#)
 ====================
@@ -207,7 +207,7 @@ GridView의 기본 편집 기능을 이용 하면 GridView 자동으로 처리�
 [!code-csharp[Main](inserting-a-new-record-from-the-gridview-s-footer-cs/samples/sample6.cs)]
 
 > [!NOTE]
-> 궁금할 이벤트 처리기 걸린다면 확인 하는 이유는 `Page.IsValid` 속성입니다. 결국 획득된 t 포스트백은 잘못 된 데이터 삽입 인터페이스에 제공 된 경우 표시 하지 않을 수 있습니까? 이 가정으로 JavaScript를 비활성화 되지 않은 사용자나 클라이언트 쪽 유효성 검사 논리를 우회 하는 단계를 수행 하는 올바릅니다. 즉, 하나에 의존 하지 않아야 엄격 하 게 클라이언트 쪽 유효성 검사 서버 쪽 유효성 검사를 데이터로 작업 하기 전에 항상 수행 되어야 합니다.
+> 궁금할 이벤트 처리기 걸린다면 확인 하는 이유는 `Page.IsValid` 속성입니다. 결국 않습니다 다시 게시 하지 않을 잘못 된 데이터 삽입 인터페이스에 제공 된 경우? 이 가정으로 JavaScript를 비활성화 되지 않은 사용자나 클라이언트 쪽 유효성 검사 논리를 우회 하는 단계를 수행 하는 올바릅니다. 즉, 하나에 의존 하지 않아야 엄격 하 게 클라이언트 쪽 유효성 검사 서버 쪽 유효성 검사를 데이터로 작업 하기 전에 항상 수행 되어야 합니다.
 
 
 1 단계에서에서 만든 합니다 `ProductsDataSource` ObjectDataSource 되도록 해당 `Insert()` 메서드 매핑되는 `ProductsBLL` s 클래스 `AddProduct` 메서드. 에 새 레코드를 삽입 하는 `Products` 테이블 ObjectDataSource가 호출할 수 있습니다 단순히 `Insert()` 메서드:

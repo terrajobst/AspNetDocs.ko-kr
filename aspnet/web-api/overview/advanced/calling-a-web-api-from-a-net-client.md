@@ -7,18 +7,18 @@ ms.author: riande
 ms.date: 11/24/2017
 msc.legacyurl: /web-api/overview/advanced/calling-a-web-api-from-a-net-client
 msc.type: authoredcontent
-ms.openlocfilehash: be237bee43bc5e32939cb0b3e0948fd8b35bd1eb
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0c360f580285967c8fab8d33ccbb9557a7316ee1
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058990"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423141"
 ---
 <a name="call-a-web-api-from-a-net-client-c"></a>.NET 클라이언트 (C#)에서 Web API 호출
 ====================
 하 여 [Mike Wasson](https://github.com/MikeWasson) 고 [Rick Anderson](https://twitter.com/RickAndMSFT)
 
-[완료 된 프로젝트 다운로드](https://github.com/aspnet/Docs/tree/master/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client/sample)합니다. [지침을 다운로드하세요](/aspnet/core/tutorials/#how-to-download-a-sample). 
+[완료 된 프로젝트 다운로드](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client/sample)합니다. [지침을 다운로드하세요](/aspnet/core/tutorials/#how-to-download-a-sample). 
 
 이 자습서에서는.NET 응용 프로그램, web API를 호출 하는 방법을 보여 줍니다.를 사용 하 여 [System.Net.Http.HttpClient 합니다.](https://msdn.microsoft.com/library/system.net.http.httpclient(v=vs.110).aspx)
 
@@ -164,7 +164,7 @@ GET, 같은 삭제 요청 되지 않은 요청 본문입니다. 삭제를 사용
 
 클라이언트 앱을 테스트 합니다.
 
-1. [다운로드](https://github.com/aspnet/Docs/tree/master/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client/sample/server) 및 서버 앱을 실행 합니다. [지침을 다운로드하세요](/aspnet/core/tutorials/#how-to-download-a-sample). 서버 앱이 작동을 확인 합니다. Exaxmple에 대 한 `http://localhost:64195/api/products` 제품 목록을 반환 해야 합니다.
+1. [다운로드](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client/sample/server) 및 서버 앱을 실행 합니다. [지침을 다운로드하세요](/aspnet/core/tutorials/#how-to-download-a-sample). 서버 앱이 작동을 확인 합니다. 예를 들어 `http://localhost:64195/api/products` 제품 목록을 반환 해야 합니다.
 2. HTTP 요청에 대 한 기본 URI를 설정 합니다. 서버 앱에서 사용 되는 포트를 포트 번호를 변경 합니다.
     [!code-csharp[Main](calling-a-web-api-from-a-net-client/sample/client/Program.cs?name=snippet5&highlight=2)]
 

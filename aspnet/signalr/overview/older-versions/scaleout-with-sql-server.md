@@ -8,12 +8,12 @@ ms.date: 05/01/2013
 ms.assetid: 1dca7967-8296-444a-9533-837eb284e78c
 msc.legacyurl: /signalr/overview/older-versions/scaleout-with-sql-server
 msc.type: authoredcontent
-ms.openlocfilehash: 7fd05a4487be4cc96fa945cf08226841e3f01806
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: eb0d6cd23563f72bb382b3a3304d03294f783ad8
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57032350"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425849"
 ---
 <a name="signalr-scaleout-with-sql-server-signalr-1x"></a>SQL Server로 SignalR 규모 확장(SignalR 1.x)
 ====================
@@ -97,7 +97,7 @@ IIS 역할을 추가 합니다. WebSocket 프로토콜을 포함 하 여 "응용
 
 ![](scaleout-with-sql-server/_static/image5.png)
 
-**설치 웹 배포 3.0.** IIS 관리자를 실행 하면, Microsoft 웹 플랫폼을 설치 하 라는 메시지가 나타납니다 것 또는 할 수 있습니다 [다운로드를 intstaller](https://go.microsoft.com/fwlink/?LinkId=255386)합니다. 플랫폼 설치 관리자에서 웹 배포에 대 한 검색 하 고 웹 배포 3.0 설치
+**설치 웹 배포 3.0.** IIS 관리자를 실행 하면, Microsoft 웹 플랫폼을 설치 하 라는 메시지가 나타납니다 것 또는 할 수 있습니다 [설치 관리자 다운로드](https://go.microsoft.com/fwlink/?LinkId=255386)합니다. 플랫폼 설치 관리자에서 웹 배포에 대 한 검색 하 고 웹 배포 3.0 설치
 
 ![](scaleout-with-sql-server/_static/image6.png)
 

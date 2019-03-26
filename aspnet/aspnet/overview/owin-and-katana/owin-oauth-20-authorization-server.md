@@ -8,12 +8,12 @@ ms.date: 01/28/2019
 ms.assetid: 20acee16-c70c-41e9-b38f-92bfcf9a4c1c
 msc.legacyurl: /aspnet/overview/owin-and-katana/owin-oauth-20-authorization-server
 msc.type: authoredcontent
-ms.openlocfilehash: b8451d2d9e346bd5e2f51ba45e48030a5221b549
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d5c8262d48c79616ca3069c37077ba99ffafb650
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57059750"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58426052"
 ---
 # <a name="owin-oauth-20-authorization-server"></a>OWIN OAuth 2.0 권한 부여 서버
 
@@ -238,7 +238,7 @@ Startup 클래스를 만들고 인증 및 Web API를 구성 합니다. 참조 *A
 
 - `UseCors` 메서드는 모든 도메인에 대 한 CORS를 사용 하면 됩니다.
 - `UseOAuthBearerAuthentication` 메서드를 수신 하 고 권한 부여 요청 헤더에서 전달자 토큰의 유효성을 검사 하는 OAuth 전달자 토큰 인증 미들웨어를 활성화 합니다.
-- `Config.SuppressDefaultHostAuthenticaiton` 기본 억제 하므로 모든 요청은 익명 이어야이 호출 후, 앱에서 인증 된 보안 주체를 호스트 합니다.
+- `Config.SuppressDefaultHostAuthentication` 기본 억제 하므로 모든 요청은 익명 이어야이 호출 후, 앱에서 인증 된 보안 주체를 호스트 합니다.
 - `HostAuthenticationFilter` 지정된 된 인증 형식에 대해서만 인증을 사용 하도록 설정 합니다. 이 경우 전달자 인증 유형을 것입니다.
 
 인증된 된 id를 보여 주기 위해 ApiController 출력 현재 사용자의 클레임을 만듭니다.
