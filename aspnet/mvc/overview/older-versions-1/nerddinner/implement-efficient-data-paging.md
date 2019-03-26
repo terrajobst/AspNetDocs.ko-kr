@@ -8,12 +8,12 @@ ms.date: 07/27/2010
 ms.assetid: adea836d-dbc2-4005-94ea-53aef09e9e34
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/implement-efficient-data-paging
 msc.type: authoredcontent
-ms.openlocfilehash: 2bef690355cd1f89a15a67f0c49775296d551136
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 9a0b3357ef4ac9c884877474454089cc71692b7d
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57060160"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58426096"
 ---
 <a name="implement-efficient-data-paging"></a>효율적인 데이터 페이징 구현
 ====================
@@ -42,7 +42,7 @@ Index () 작업 메서드에서 DinnersController 클래스 내에서 현재 같
 
 ![](implement-efficient-data-paging/_static/image1.png)
 
-### <a name="understanding-iquerablelttgt"></a>이해 IQuerable&lt;T&gt;
+### <a name="understanding-iqueryablelttgt"></a>이해 IQueryable&lt;T&gt;
 
 *IQueryable&lt;T&gt;*  LINQ를 사용 하 여.NET 3.5의 일부로 도입 하는 인터페이스입니다. 에서는 사용할 수 있는의 페이징 지원을 구현 하기 위해 강력한 "지연 된 실행" 시나리오를 사용 합니다.
 

@@ -8,12 +8,12 @@ ms.date: 02/06/2013
 ms.assetid: b91e6424-1544-4747-bd0b-d1f8418c9653
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-security-guidance
 msc.type: authoredcontent
-ms.openlocfilehash: 4ba53e15dab83368097a58ba4d0d2e46d113d1d2
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0e43ec6b1cbe922b00f0f71d08aed4d0f4c08af8
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57065250"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425862"
 ---
 <a name="security-guidance-for-aspnet-web-api-2-odata"></a>ASP.NET Web API 2에 대 한 보안 지침 OData
 ====================
@@ -25,7 +25,7 @@ ms.locfileid: "57065250"
 
 쿼리 의미 체계 엔터티 데이터 모델 (EDM)에서 기본 모델 형식 기반으로 합니다. EDM에서 속성을 제외할 수 있습니다 및 쿼리에 표시 되지 않습니다. 예를 들어 모델에는 급여 속성을 포함 하는 직원 형식 포함 되어 있습니다. 클라이언트에서 숨기려면 EDM에서이 속성을 제외 수 있습니다.
 
-두 가지는 제외를 EDM 속성입니다. 설정할 수 있습니다 합니다 **[IgnoreDataMember]** 모델 클래스의 속성을 특성:
+EDM에서 속성을 제외 하는 방법은 두 가지가 있습니다. 설정할 수 있습니다 합니다 **[IgnoreDataMember]** 모델 클래스의 속성을 특성:
 
 [!code-csharp[Main](odata-security-guidance/samples/sample1.cs)]
 

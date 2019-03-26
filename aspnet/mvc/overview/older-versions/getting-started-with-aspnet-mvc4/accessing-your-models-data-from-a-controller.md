@@ -8,12 +8,12 @@ ms.date: 08/28/2012
 ms.assetid: 61e0206d-7f32-4018-992d-0a51b48b37dc
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc4/accessing-your-models-data-from-a-controller
 msc.type: authoredcontent
-ms.openlocfilehash: 6d4d2a5f30e55cc876632f9f1bf73ab534a702ad
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bd258491ae1eb4c4e8bc9fb9c4b36d27fc626110
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57048170"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422651"
 ---
 <a name="accessing-your-models-data-from-a-controller"></a>컨트롤러에서 모델의 데이터에 액세스
 ====================
@@ -105,7 +105,7 @@ ASP.NET MVC는 또한 형식화 된 데이터 또는 개체를 뷰 템플릿으�
 
 때문에 `Model` 개체는 강력한 (으로 `IEnumerable<Movie>` 개체), 각 `item` 루프에 있는 개체 형식의 `Movie`합니다. 다른 이점과 함께이 의미는 코드의 컴파일 타임 검사을 얻고 완벽 하 게 코드 편집기에서 IntelliSense 지원 합니다.
 
-![ModelIntellisene](accessing-your-models-data-from-a-controller/_static/image5.png)
+![ModelIntelliSense](accessing-your-models-data-from-a-controller/_static/image5.png)
 
 ## <a name="working-with-sql-server-localdb"></a>SQL Server LocalDB 사용
 

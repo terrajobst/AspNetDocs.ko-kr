@@ -8,12 +8,12 @@ ms.date: 02/20/2005
 ms.assetid: f2339485-5d78-4c5e-8c0a-dc9b8a315345
 msc.legacyurl: /web-forms/overview/moving-to-aspnet-20/membership
 msc.type: authoredcontent
-ms.openlocfilehash: d7fa3cb61608ea089141931cb9362359cdc92619
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d4fab68555eeb27420e60a28aca2f2c0fb9a73e3
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57031470"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58421520"
 ---
 <a name="membership"></a>멤버 자격입니다.
 ====================
@@ -42,7 +42,7 @@ ASP.NET 2.0의 멤버 자격만 폼 인증을 사용 하 여 주요 advancement 
 
 ## <a name="creating-the-membership-database"></a>멤버 자격 데이터베이스를 만드는 중
 
-하는 경우 사용 하 고 SQL Server 7.0을 사용 하 여 aspnet을 나중에 멤버 자격이 저장소로 사용할 수 또는\_regsql 유틸리티 (사용 가능한 가장 쉽게 Visual Studio.NET 2005 명령 프롬프트에서) 데이터베이스를 구성 합니다. Aspnet\_regsql 유틸리티 명령 프롬프트 도구 또는 GUI 마법사를 통해 사용할 수 있습니다. 마법사 방법은 데이터베이스를 구성 하는 가장 쉬운 방법은 합니다. 마법사에 액세스 하려면 다음 명령을 실행 하기만 하면 됩니다.
+SQL Server 7.0을 사용 하는 경우 aspnet을 나중에 멤버 자격이 저장소로 사용할 수\_regsql 유틸리티 (사용 가능한 가장 쉽게 Visual Studio.NET 2005 명령 프롬프트에서) 데이터베이스를 구성 합니다. Aspnet\_regsql 유틸리티 명령 프롬프트 도구 또는 GUI 마법사를 통해 사용할 수 있습니다. 마법사 방법은 데이터베이스를 구성 하는 가장 쉬운 방법은 합니다. 마법사에 액세스 하려면 다음 명령을 실행 하기만 하면 됩니다.
 
 `aspnet_regsql W`
 
@@ -107,7 +107,7 @@ Windows 인터페이스를 시작 하려면 인터넷 정보 서비스 스냅인
 
 ## <a name="login-control"></a>로그인 컨트롤
 
-Login 컨트롤 멤버 자격 시스템에 로그인 할 사용자 인터페이스를 제공 합니다. 사용자 이름 및 암호 textboxt 및 로그인 단추를 사용 하 여 제공 합니다. 권한이 있는 사용자에 대 한 등록에 대 한 링크와 같은 기타 일반적인 여러 기능 수행 되므로 확인란을 허용 하는 자동으로 로그인 하면 후속 아직 방문 등 암호 힌트에 대 한 링크입니다. Login 컨트롤의 모든 기능을 컨트롤의 속성을 통해 사용자 지정할 수 있습니다.
+Login 컨트롤 멤버 자격 시스템에 로그인 할 사용자 인터페이스를 제공 합니다. 사용자 이름 및 암호 텍스트 상자와 로그인 단추를 사용 하 여 제공 합니다. 권한이 있는 사용자에 대 한 등록에 대 한 링크와 같은 기타 일반적인 여러 기능 수행 되므로 확인란을 허용 하는 자동으로 로그인 하면 후속 아직 방문 등 암호 힌트에 대 한 링크입니다. Login 컨트롤의 모든 기능을 컨트롤의 속성을 통해 사용자 지정할 수 있습니다.
 
 Asp.net에서 1.x에서 개발자는 상당한 양의 폼 인증을 사용 하는 경우 조회를 수행 하는 코드를 작성 해야 했습니다. ASP.NET 2.0 멤버 자격을 사용 하 여 코드를 전혀 작성 하지 않고 사용자를 확인할 수 있습니다. ASP.NET는 수에 자동으로 사용자의 조회를 수행 합니다. (ASP.NET 멤버 자격을 사용 하지 않고 로그인 컨트롤을 사용 중인 경우 사용할 수 있습니다 합니다 **OnAuthenticate** 사용자의 유효성을 검사 하는 방법입니다.)
 

@@ -15,7 +15,7 @@ msc.type: chapter
 
 [!INCLUDE [consider RP](../../../../includes/razor.md)]
 
-다음이 자습서 시리즈에서는 ASP.NET MVC에 설명 합니다. 원본에 있는 [GitHub](https://github.com/aspnet/Docs/tree/master/aspnet/mvc/overview/getting-started/introduction/sample/MvcMovie/MvcMovie)
+다음이 자습서 시리즈에서는 ASP.NET MVC에 설명 합니다. 원본에 있는 [GitHub](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/mvc/overview/getting-started/introduction/sample/MvcMovie/MvcMovie)
 
 - [시작](getting-started.md)
 - [컨트롤러 추가](adding-a-controller.md)

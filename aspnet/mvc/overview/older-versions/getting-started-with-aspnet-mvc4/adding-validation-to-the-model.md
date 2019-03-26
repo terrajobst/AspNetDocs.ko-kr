@@ -8,12 +8,12 @@ ms.date: 08/28/2012
 ms.assetid: 5d9a2999-fcc4-4c45-a018-271fddf74a3b
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc4/adding-validation-to-the-model
 msc.type: authoredcontent
-ms.openlocfilehash: 5819d789f31b9452d40ae3aa7f821f101ae126ce
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c0cfd4f900c88f953cf7004a987bc267a1e1b4a2
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049480"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422035"
 ---
 <a name="adding-validation-to-the-model"></a>모델에 유효성 검사 추가
 ====================
@@ -55,7 +55,7 @@ ASP.NET MVC 및 Entity Framework Code First에서 제공 되는 유효성 검사
 
 [!code-console[Main](adding-validation-to-the-model/samples/sample3.cmd)]
 
-이 명령은 완료 되 면 Visual Studio 새 정의 하는 클래스 파일을 엽니다 `DbMIgration` 지정한 이름을 가진 파생 클래스 (*AddDataAnnotationsMig*), 및는 `Up` 메서드를 업데이트 하는 코드를 볼 수 있습니다 스키마 제약 조건입니다. 합니다 `Title` 하 고 `Genre` 필드는 더 이상 null을 허용 (즉, 값을 입력 해야 합니다) 및 `Rating` 필드의 최대 길이 5입니다.
+이 명령은 완료 되 면 Visual Studio 새 정의 하는 클래스 파일을 엽니다 `DbMigration` 지정한 이름을 가진 파생 클래스 (*AddDataAnnotationsMig*), 및는 `Up` 메서드를 업데이트 하는 코드를 볼 수 있습니다 스키마 제약 조건입니다. 합니다 `Title` 하 고 `Genre` 필드는 더 이상 null을 허용 (즉, 값을 입력 해야 합니다) 및 `Rating` 필드의 최대 길이 5입니다.
 
 이 유효성 검사 특성은 적용되는 모델 속성에 시행하려는 동작을 지정합니다. 합니다 `Required` 특성 속성 값을 가져야 합니다 나타내고이 샘플에서는 영화에 대 한 값에는 `Title`, `ReleaseDate`, `Genre`, 및 `Price` 유효 하기 위해 속성입니다. `Range` 특성은 지정된 범위 내의 값을 제한합니다. `StringLength` 특성을 사용하면 문자열 속성의 최대 길이와, 필요에 따라 최소 길이를 설정할 수 있습니다. 내장 형식 (같은 `decimal, int, float, DateTime`)는 기본적으로 필요 하 고 필요 하지 않습니다는 `Required` 특성입니다.
 

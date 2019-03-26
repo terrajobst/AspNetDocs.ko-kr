@@ -8,12 +8,12 @@ ms.date: 01/30/2013
 ms.assetid: 04d5f142-5f62-494a-b5ea-4f3d068d34cb
 msc.legacyurl: /single-page-application/overview/templates/emberjs-template
 msc.type: authoredcontent
-ms.openlocfilehash: fbc3b1d299ace27d38d895e42b8e3bb3b51b36f8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 69331dc1cf2aacf306b55b49402f7df90f5e2c99
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57027320"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58421976"
 ---
 <a name="emberjs-template"></a>EmberJS 템플릿
 ====================
@@ -149,7 +149,7 @@ Ember와 Url, 경로 이름, 컨트롤러 및 템플릿을 일치 하도록 명�
 
 [!code-html[Main](emberjs-template/samples/sample12.html)]
 
-합니다 `HtmlHelperExtensions` Controllers/HtmlHelperExensions.cs에에서 정의 된 클래스 도우미를 정의 할 때 파일을 캐시 하 고 템플릿 삽입 함수 **디버그** 로 설정 되어 **true** Web.config 파일에서. 이 함수는 Views/Home/App.cshtml에 정의 된 ASP.NET MVC 뷰 파일에서 호출 됩니다.
+합니다 `HtmlHelperExtensions` Controllers/HtmlHelperExtensions.cs에에서 정의 된 클래스 도우미를 정의 할 때 파일을 캐시 하 고 템플릿 삽입 함수 **디버그** 로 설정 되어 **true** Web.config 파일에서. 이 함수는 Views/Home/App.cshtml에 정의 된 ASP.NET MVC 뷰 파일에서 호출 됩니다.
 
 [!code-cshtml[Main](emberjs-template/samples/sample13.cshtml)]
 

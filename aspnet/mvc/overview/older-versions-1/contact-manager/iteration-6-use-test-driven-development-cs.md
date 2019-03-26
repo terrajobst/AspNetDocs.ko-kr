@@ -8,12 +8,12 @@ ms.date: 02/20/2009
 ms.assetid: 013c3c26-7dc3-41d1-8064-f233c86008b5
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager/iteration-6-use-test-driven-development-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 3c4358a1b979ab95d8ac25551e21ee95d75e5eae
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d456952bea9a1933247382f4786809b0b2f32034
+ms.sourcegitcommit: 62db31596a7da029263cf06335aff12236fb3186
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57026200"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58440328"
 ---
 <a name="iteration-6--use-test-driven-development-c"></a>반복 #6-테스트 기반 개발 (C#) 사용
 ====================
@@ -80,9 +80,9 @@ by [Microsoft](https://github.com/microsoft)
 
 ## <a name="what-gets-tested"></a>어떤 테스트를 가져옵니다.
 
-이전 반복에서 설명한 대로 일반적으로 데이터 액세스 논리에 대 한 단위 테스트를 작성 하거나 하지 논리를 확인 합니다. 데이터베이스에 액세스 하는 느린 작업 이므로 데이터 액세스 논리에 대 한 t 쓰기 단위 테스트 하지. 뷰 논리에 대 한 t 쓰기 단위 테스트 보기에 액세스 하므로 작업이 비교적 느립니다는 웹 서버를 스핀업 하지. T 해서는 테스트 매우 빠른에 반복 해 서 실행할 수 있습니다 하지 않는 한 단위 테스트를 작성
+이전 반복에서 설명한 대로 일반적으로 데이터 액세스 논리에 대 한 단위 테스트를 작성 하거나 하지 논리를 확인 합니다. 데이터베이스에 액세스 하는 느린 작업 이므로 데이터 액세스 논리에 대 한 t 쓰기 단위 테스트 하지. 뷰 논리에 대 한 t 쓰기 단위 테스트 보기에 액세스 하므로 작업이 비교적 느립니다는 웹 서버를 스핀업 하지. 테스트 매우 빠른에 반복 해 서 실행할 수 있습니다 하지 않는 한 단위 테스트 작성 해서는 안 됩니다.
 
-테스트 기반 개발, 단위 테스트에 고정 하기 때문에 집중 처음 컨트롤러 및 비즈니스 논리를 작성 합니다. 에서는 데이터베이스 또는 뷰를 변경 하지 마세요. T 땀이 자습서의 끝까지이 뷰를 만들거나 데이터베이스를 수정 합니다. 테스트할 무엇부터 시작 하겠습니다.
+테스트 기반 개발, 단위 테스트에 고정 하기 때문에 집중 처음 컨트롤러 및 비즈니스 논리를 작성 합니다. 에서는 데이터베이스 또는 뷰를 변경 하지 마세요. 데이터베이스를 수정 하거나이 자습서의 끝까지 뷰를 만들 하지 않습니다. 테스트할 무엇부터 시작 하겠습니다.
 
 ## <a name="creating-user-stories"></a>사용자 스토리 만들기
 
@@ -249,7 +249,7 @@ T도 빌드가 하시면이 시점에서 응용 프로그램 t 수 있도록 첫
 | 이름 | nvarchar(50) | False |
 
 
-다음으로, Contacts 테이블에서 모든 데이터를 삭제 해야 (땀이 고, 그렇지 t 연락처 및 그룹이 테이블 간의 관계를 만들 수)입니다. 아래 단계를 수행합니다.
+다음으로, Contacts 테이블에서 모든 데이터를 삭제 해야 (이 고, 그렇지에서는 없게 연락처 및 그룹이 테이블 간에 관계 만들기). 아래 단계를 수행합니다.
 
 1. Contacts 테이블을 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을 선택 **테이블 데이터 표시**합니다.
 2. 모든 행을 삭제 합니다.
@@ -309,7 +309,7 @@ T도 빌드가 하시면이 시점에서 응용 프로그램 t 수 있도록 첫
 
 [!code-csharp[Main](iteration-6-use-test-driven-development-cs/samples/sample14.cs)]
 
-에서는 연락처 그룹 작업과 관련 된 방법 중 하나는 되지 않았습니까 실제로 구현 합니다. 현재 EntityContactManagerRepository 클래스에 각 IContactManagerRepository 인터페이스에 나열 된 연락처 그룹 방법에 대 한 스텁 메서드가 있습니다. 예를 들어 ListGroups() 메서드는 현재 다음과 같이 표시 됩니다.
+실제로 연락처 그룹 작업과 관련 된 방법 중 하나를 구현 하지 않은 했습니다. 현재 EntityContactManagerRepository 클래스에 각 IContactManagerRepository 인터페이스에 나열 된 연락처 그룹 방법에 대 한 스텁 메서드가 있습니다. 예를 들어 ListGroups() 메서드는 현재 다음과 같이 표시 됩니다.
 
 [!code-csharp[Main](iteration-6-use-test-driven-development-cs/samples/sample15.cs)]
 

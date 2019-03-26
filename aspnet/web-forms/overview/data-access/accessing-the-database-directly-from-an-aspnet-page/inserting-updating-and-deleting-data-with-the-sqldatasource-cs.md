@@ -8,12 +8,12 @@ ms.date: 02/20/2007
 ms.assetid: a526f0ec-779e-4a2b-a476-6604090d25ce
 msc.legacyurl: /web-forms/overview/data-access/accessing-the-database-directly-from-an-aspnet-page/inserting-updating-and-deleting-data-with-the-sqldatasource-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 2c52fcf746d80899d7ea568c8110c4dfa610224c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 06c5fea8a058f15e72d455cf0e15b462d8f91e38
+ms.sourcegitcommit: 62db31596a7da029263cf06335aff12236fb3186
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57041370"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58440393"
 ---
 <a name="inserting-updating-and-deleting-data-with-the-sqldatasource-c"></a>SqlDataSource를 사용하여 데이터 삽입, 업데이트 및 삭제(C#)
 ====================
@@ -119,7 +119,7 @@ SqlDataSource에서 레코드를 모두 반환 하는 것이 시점에서 `Produ
 삭제 단추를 클릭 하면 포스트백이 발생할 GridView 할당 합니다 `ProductID` 매개 변수 값의 합니다 `DataKeys` 해당 삭제 단추 클릭 되었는지 및 SqlDataSource s 호출 행의 컬렉션 값 `Delete()` 메서드. SqlDataSource 컨트롤에서 그런 다음 데이터베이스에 연결 하 고 실행 된 `DELETE` 문입니다. GridView는 SqlDataSource를 다시 시작 하 고 (포함 하는 더 이상만 삭제 된 레코드) 제품의 현재 집합을 표시 하려면 다음 다시 바인딩합니다.
 
 > [!NOTE]
-> GridView를 사용 하므로 해당 `DataKeys` SqlDataSource 매개 변수를 채울 컬렉션입니다이 중요 한 s는 GridView s `DataKeyNames` 하 고 기본 키를 구성 하는 열에 속성을 설정할 수 SqlDataSource의 `SelectCommand` 반환 이러한 열입니다. 또한 해당가 SqlDataSource에서 매개 변수 이름을 지정 하는 중요 `DeleteCommand` 로 설정 된 `@ProductID`합니다. 경우는 `DataKeyNames` 속성이 설정 되어 있지 않거나 매개 변수 이름이 지정 되지 않은 `@ProductsID`삭제 단추를 클릭 하면 포스트백을 되지만 획득된 t 실제로 모든 레코드를 삭제 합니다.
+> GridView를 사용 하므로 해당 `DataKeys` SqlDataSource 매개 변수를 채울 컬렉션입니다이 중요 한 s는 GridView s `DataKeyNames` 하 고 기본 키를 구성 하는 열에 속성을 설정할 수 SqlDataSource의 `SelectCommand` 반환 이러한 열입니다. 또한 해당가 SqlDataSource에서 매개 변수 이름을 지정 하는 중요 `DeleteCommand` 로 설정 된 `@ProductID`합니다. 경우는 `DataKeyNames` 속성이 설정 되어 있지 않거나 매개 변수 이름이 지정 되지 않은 `@ProductsID`, 포스트백을 발생 하지만 실제로 모든 레코드를 삭제 하지 않습니다 삭제 단추를 클릭 합니다.
 
 
 그림 5이 상호이 작용을 그래픽으로 보여 줍니다. 다시 참조를 [삽입, 업데이트 및 삭제와 관련 된 이벤트 검사](../editing-inserting-and-deleting-data/examining-the-events-associated-with-inserting-updating-and-deleting-cs.md) 삽입, 업데이트 및 데이터 웹 컨트롤에서에서 삭제와 관련 된 이벤트 체인에 더 자세히 알아보려면 자습서입니다.
@@ -192,7 +192,7 @@ DetailsView의 데이터 수정 기능을 켜려면 삽입 사용, 편집 사용
 
 동안 합니다 `INSERT`, `UPDATE`, 및 `DELETE` 문을 수동으로 입력할 수 있습니다,이 시간을 절약 하는 것이 좋습니다. 처음에 데이터를 방금 다시 가져오는 있도록 SqlDataSource를 설정 합니다 `Products` 테이블입니다. 자동으로 생성할 수 있도록 테이블 또는 뷰 화면에서 데이터 소스 구성 마법사가의 지정 열을 사용 합니다 `INSERT`, `UPDATE`, 및 `DELETE` 문입니다. 그런 다음 마법사를 완료 한 후 속성 창에서 SelectQuery 구성 하도록 선택 (하거나, 또는 돌아가서 데이터 소스 구성 마법사를 사용 하 여 지정 된 사용자 지정 SQL 문 또는 저장된 프로시저 옵션). 그런 다음 업데이트를 `SELECT` 포함 하도록 문을 `JOIN` 구문입니다. 이 기술은 자동으로 생성 된 SQL 문이 시간 절약 혜택을 제공 하 고 더 사용자 지정 허용 `SELECT` 문입니다.
 
-자동으로 생성 하는 또 다른 제한은 `INSERT`, `UPDATE`, 및 `DELETE` 문을 열에는 `INSERT` 및 `UPDATE` 문을 기반으로 하 여 반환 되는 열을 `SELECT` 문. 그러나 더 많거나 적은 필드를 삽입 하거나 업데이트할 해야 합니다. 예를 들어, 2 단계에서에서 예제에서는 아마도 하고자 합니다 `UnitPrice` BoundField 읽기 전용으로 설정 합니다. 이런 경우 해당 해서는 t 나타나지는 `UpdateCommand`합니다. 또는 GridView에서 표시 되지 않는 테이블 필드의 값을 설정 하는 것이 좋겠습니다. 예를 들어, 새 추가 하는 경우 레코드 좋겠습니다는 `QuantityPerUnit` 값 TODO로 설정 합니다.
+자동으로 생성 하는 또 다른 제한은 `INSERT`, `UPDATE`, 및 `DELETE` 문을 열에는 `INSERT` 및 `UPDATE` 문을 기반으로 하 여 반환 되는 열을 `SELECT` 문. 그러나 더 많거나 적은 필드를 삽입 하거나 업데이트할 해야 합니다. 예를 들어, 2 단계에서에서 예제에서는 아마도 하고자 합니다 `UnitPrice` BoundField 읽기 전용으로 설정 합니다. 이 경우에 표시 하지 않아야 합니다 `UpdateCommand`합니다. 또는 GridView에서 표시 되지 않는 테이블 필드의 값을 설정 하는 것이 좋겠습니다. 예를 들어, 새 추가 하는 경우 레코드 좋겠습니다는 `QuantityPerUnit` 값 TODO로 설정 합니다.
 
 이러한 사용자 지정이 필요한 경우 속성 창, 사용자 지정 SQL 문 지정 또는 마법사에서 또는 선언적 구문을 통해 저장된 프로시저 옵션을 통해 이러한 수동으로 수행 해야 합니다.
 
@@ -204,7 +204,7 @@ DetailsView의 데이터 수정 기능을 켜려면 삽입 사용, 편집 사용
 
 순서 대로 데이터에 대 한 자신의 기본 삽입, 편집 및 삭제 기능을 활용 하려면 웹 컨트롤에 바인딩되어 있는 데이터 소스 컨트롤 이러한 기능을 제공 해야 합니다. SqlDataSource에 대 한 즉 `INSERT`, `UPDATE`, 및 `DELETE` SQL 문을에 할당 되어야 합니다는 `InsertCommand`, `UpdateCommand`, 및 `DeleteCommand` 속성입니다. 이러한 속성 및 해당 매개 변수 컬렉션 수동으로 추가 하거나 데이터 소스 구성 마법사를 통해 자동으로 생성 될 수 있습니다. 이 자습서에서는 두 가지 방법을 살펴보았습니다.
 
-ObjectDataSource를 사용 하 여 낙관적 동시성을 사용 하 여 검사할 합니다 [낙관적 동시성 구현](../editing-inserting-and-deleting-data/implementing-optimistic-concurrency-cs.md) 자습서입니다. SqlDataSource 컨트롤 낙관적 동시성 지원도 제공 합니다. 자동으로 생성 하는 경우 2 단계에서에서 설명한 것 처럼 합니다 `INSERT`, `UPDATE`, 및 `DELETE` 문, 마법사를 사용 하 여 낙관적 동시성 옵션을 제공 합니다. 다음 자습서에서 살펴보겠지만 SqlDataSource를 사용 하 여 낙관적 동시성을 사용 하 여 수정 합니다 `WHERE` 절을 `UPDATE` 및 `DELETE` 문을 다른 열에 대 한 값을 t 데이터를 마지막으로 이후 변경 되지 않았고는 되도록 페이지에 표시 합니다.
+ObjectDataSource를 사용 하 여 낙관적 동시성을 사용 하 여 검사할 합니다 [낙관적 동시성 구현](../editing-inserting-and-deleting-data/implementing-optimistic-concurrency-cs.md) 자습서입니다. SqlDataSource 컨트롤 낙관적 동시성 지원도 제공 합니다. 자동으로 생성 하는 경우 2 단계에서에서 설명한 것 처럼 합니다 `INSERT`, `UPDATE`, 및 `DELETE` 문, 마법사를 사용 하 여 낙관적 동시성 옵션을 제공 합니다. 다음 자습서에서 살펴보겠지만 SqlDataSource를 사용 하 여 낙관적 동시성을 사용 하 여 수정 합니다 `WHERE` 절을 `UPDATE` 및 `DELETE` 문은 데이터를 마지막으로 하므로 다른 열에 대 한 값을 변경 하지 않은 확인 하기 위해 페이지에 표시 합니다.
 
 즐거운 프로그래밍!
 

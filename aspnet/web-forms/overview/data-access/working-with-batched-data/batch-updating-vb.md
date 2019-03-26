@@ -8,12 +8,12 @@ ms.date: 06/26/2007
 ms.assetid: d191a204-d7ea-458d-b81c-0b9049ecb55f
 msc.legacyurl: /web-forms/overview/data-access/working-with-batched-data/batch-updating-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 76c475b67943b77d99630e087ed46fe6d5f11a03
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: dc40c056aa951b94ca0af2af339d9c7987ffd987
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57078565"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58426031"
 ---
 <a name="batch-updating-vb"></a>일괄 업데이트(VB)
 ====================
@@ -241,7 +241,7 @@ GridView가 이후 해당 TemplateFields에 정의 된 인터페이스를 편집
 
 각 행에 대 한는 `ProductID` 에서 놓은는 `DataKeys` 컬렉션 및 적절 한 `ProductsRow` 에서 선택 된를 `ProductsDataTable`합니다. 네 가지 TemplateField 입력된 컨트롤을 참조 하는 프로그래밍 방식으로 및 해당 값에 할당 합니다 `ProductsRow` 속성 인스턴스. 각 GridView 후 s 행에 값 사용 되어 업데이트를 `ProductsDataTable`, 해당 s BLL s에 전달 `UpdateWithTransaction` 메서드를 호출 하는, 이전 자습서에서 살펴본 것 처럼 간단히 DAL s에 `UpdateWithTransaction` 메서드.
 
-이 자습서에 사용 된 일괄 처리 업데이트 알고리즘에서 각 행을 업데이트 합니다 `ProductsDataTable`의 제품 정보가 변경 되었는지 여부에 관계 없이 GridView의 행에 해당 하는 합니다. 이러한 과제를 안겨 유효 하지 t 일반적으로 성능 문제를 업데이트 하는 동안 데이터베이스 테이블에 변경 내용을 다시 감사 하는 경우 불필요 한 레코드를 발생할 수 있습니다 이러한 합니다. 다시 합니다 [일괄 처리 업데이트 수행](../editing-and-deleting-data-through-the-datalist/performing-batch-updates-vb.md) 자습서 DataList를 사용 하 여 인터페이스를 업데이트 하는 일괄 처리를 탐색 하 고만 실제로 사용자가 수정 된 레코드만 업데이트 하는 코드를 추가 합니다. 기술을 사용 하 여 자유롭게 [일괄 처리 업데이트 수행](../editing-and-deleting-data-through-the-datalist/performing-batch-updates-vb.md) 원하는 경우이 자습서에서는 코드를 업데이트 합니다.
+이 자습서에 사용 된 일괄 처리 업데이트 알고리즘에서 각 행을 업데이트 합니다 `ProductsDataTable`의 제품 정보가 변경 되었는지 여부에 관계 없이 GridView의 행에 해당 하는 합니다. 이러한 시각 업데이트 일반적으로 성능 문제를가 아닌 중 데이터베이스 테이블에 변경 내용을 다시 감사 하는 경우 불필요 한 레코드도 이어질 수 있습니다. 다시 합니다 [일괄 처리 업데이트 수행](../editing-and-deleting-data-through-the-datalist/performing-batch-updates-vb.md) 자습서 DataList를 사용 하 여 인터페이스를 업데이트 하는 일괄 처리를 탐색 하 고만 실제로 사용자가 수정 된 레코드만 업데이트 하는 코드를 추가 합니다. 기술을 사용 하 여 자유롭게 [일괄 처리 업데이트 수행](../editing-and-deleting-data-through-the-datalist/performing-batch-updates-vb.md) 원하는 경우이 자습서에서는 코드를 업데이트 합니다.
 
 > [!NOTE]
 > Visual Studio GridView s에 기본 키 값의 원본 데이터를 자동으로 할당 스마트 태그를 통해 GridView에 데이터 원본을 바인딩할 경우 `DataKeyNames` 속성입니다. 바인딩하지 않았습니다 ObjectDataSource GridView가 스마트 태그를 통해 GridView에 1 단계에에서 설명 된 대로 경우 GridView가 수동으로 설정 해야 합니다 `DataKeyNames` 속성에 액세스 하기 위해 ProductID는 `ProductID` 통해 각 행에 대 한 값을 `DataKeys` 컬렉션입니다.
@@ -269,7 +269,7 @@ GridView가 이후 해당 TemplateFields에 정의 된 인터페이스를 편집
 
 `BatchMethodAlternate` 비어 있는 새를 만들어 시작 `ProductsDataTable` 라는 `products`합니다. 그런 다음 GridView의 단계별로 `Rows` 컬렉션 및 BLL s를 사용 하 여 특정 제품 정보를 가져옵니다 하는 각 행에 대 한 `GetProductByProductID(productID)` 메서드. 검색 `ProductsRow` 인스턴스에 해당 속성을 동일한 방식으로 업데이트 `BatchUpdate`, 뒤에 가져온 행을 업데이트 합니다 `products` `ProductsDataTable` DataTable s를 통해 [ `ImportRow(DataRow)` 메서드](https://msdn.microsoft.com/library/system.data.datatable.importrow(VS.80).aspx).
 
-후 합니다 `For Each` 루프가 완료 되 면 `products` 하나가 포함 되어 있습니다 `ProductsRow` GridView의 각 행에 대 한 인스턴스. 이후 각를 `ProductsRow` 에 추가 된 인스턴스를 `products` (대신 업데이트) 맹목적으로 전달 되도록 하는 경우를 `UpdateWithTransaction` 메서드를 `ProductsTableAdatper` 레코드의 각 데이터베이스에 삽입 하려고 합니다. 대신, 각이 행의 수정 되었다는 사실을 (추가 됨)을 지정 해야 합니다.
+후 합니다 `For Each` 루프가 완료 되 면 `products` 하나가 포함 되어 있습니다 `ProductsRow` GridView의 각 행에 대 한 인스턴스. 이후 각를 `ProductsRow` 에 추가 된 인스턴스를 `products` (대신 업데이트) 맹목적으로 전달 되도록 하는 경우를 `UpdateWithTransaction` 메서드를 `ProductsTableAdapter` 레코드의 각 데이터베이스에 삽입 하려고 합니다. 대신, 각이 행의 수정 되었다는 사실을 (추가 됨)을 지정 해야 합니다.
 
 명명 된 BLL에 새 메서드를 추가 하 여 수행할 수 있습니다이 `UpdateProductsWithTransaction`합니다. `UpdateProductsWithTransaction`아래와 같이 설정 합니다 `RowState` 각를 `ProductsRow` 인스턴스를 `ProductsDataTable` 에 `Modified` 다음 전달를 `ProductsDataTable` DAL s에 `UpdateWithTransaction` 메서드.
 

@@ -8,12 +8,12 @@ ms.date: 07/17/2006
 ms.assetid: 6331e02e-c465-4cdf-bd3f-f07680c289d6
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/adding-client-side-confirmation-when-deleting-vb
 msc.type: authoredcontent
-ms.openlocfilehash: deae088d1daa63e2936aedf80eded18588b1ec60
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 2b0d7aeab357a0009c44a29ff66f22ce8a744a90
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57026900"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422153"
 ---
 <a name="adding-client-side-confirmation-when-deleting-vb"></a>삭제할 때 클라이언트 쪽 확인 추가(VB)
 ====================
@@ -38,7 +38,7 @@ JavaScript `confirm(string)` 함수 확인 두 단추-와 함께 제공 됩니�
 **그림 1**: JavaScript `confirm(string)` 모달, 클라이언트 쪽 Messagebox를 표시 하는 메서드
 
 
-값 없이 폼 전송 하는 동안 `false` 가 반환 되는 클라이언트측 이벤트 처리기에서 폼 제출을 취소 됩니다. 이 기능을 사용 수 있다고 Delete 단추의 클라이언트측 `onclick` 이벤트 처리기에 대 한 호출의 값을 반환 `confirm("Are you sure you want to delete this product?")`합니다. 사용자가 [취소]를 클릭 하면 `confirm(string)` false에 취소 하려면 폼 제출을 발생을 반환 합니다. 다시 게시를 사용 하 여 t 작업이 적용 된 삭제 단추를 클릭 한 제품 삭제할 수 있습니다. 그러나 확인 대화 상자에서 확인을 클릭 하는 경우 포스트백 지날수록 계속 하 고 제품 삭제 됩니다. 참조 하세요 [JavaScript를 사용 하 여 s `confirm()` 컨트롤이 폼 제출을 방법](http://www.webreference.com/programming/javascript/confirm/) 이 기술에 대 한 자세한 내용은 합니다.
+값 없이 폼 전송 하는 동안 `false` 가 반환 되는 클라이언트측 이벤트 처리기에서 폼 제출을 취소 됩니다. 이 기능을 사용 수 있다고 Delete 단추의 클라이언트측 `onclick` 이벤트 처리기에 대 한 호출의 값을 반환 `confirm("Are you sure you want to delete this product?")`합니다. 사용자가 [취소]를 클릭 하면 `confirm(string)` false에 취소 하려면 폼 제출을 발생을 반환 합니다. 다시 게시를 사용 하 여 해당 삭제 단추를 클릭 한 제품을 삭제 되지 않습니다. 그러나 확인 대화 상자에서 확인을 클릭 하는 경우 포스트백 지날수록 계속 하 고 제품 삭제 됩니다. 참조 하세요 [JavaScript를 사용 하 여 s `confirm()` 컨트롤이 폼 제출을 방법](http://www.webreference.com/programming/javascript/confirm/) 이 기술에 대 한 자세한 내용은 합니다.
 
 필요한 클라이언트 측 스크립트 추가 CommandField를 사용할 때 보다 템플릿을 사용 하는 경우 약간 다릅니다. 따라서이 자습서에서는 살펴보겠습니다 FormView 및 GridView 예제입니다.
 

@@ -8,12 +8,12 @@ ms.date: 08/14/2010
 ms.assetid: ff03dcc0-da97-458d-838f-0823e7482642
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part2
 msc.type: authoredcontent
-ms.openlocfilehash: 9a8ecac5203234c140783bbe3a518d35f6a57675
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b593c6225c05c7405c9d8b78abfd29a087d47b04
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058000"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58421261"
 ---
 <a name="adding-a-controller"></a>컨트롤러 추가
 ====================
@@ -56,7 +56,7 @@ ASP.NET MVC는 들어오는 URL에 따라 다른 컨트롤러 클래스 (및 그
 
 /[Controller]/[ActionName]/[Parameters]
 
-URL의 첫 번째 부분 실행할 컨트롤러 클래스를 결정 합니다. 따라서 /HelloWorld HelloWorldController 클래스에 매핑됩니다. URL의 두 번째 부분 클래스에 대 한 작업 메서드를 결정 합니다. /HelloWorld/Index 없었다는 실행 HelloWorldcontroller 클래스의 index () 메서드. 만 위의 /HelloWorld 및 인덱스 암시 된 메서드를 방문 해야 함을 알 수 있습니다. 이 "Index" 라는 메서드를 명시적으로 지정 하지 않으면 컨트롤러에서 호출 되는 기본 방법 때문입니다.
+URL의 첫 번째 부분 실행할 컨트롤러 클래스를 결정 합니다. 따라서 /HelloWorld HelloWorldController 클래스에 매핑됩니다. URL의 두 번째 부분 클래스에 대 한 작업 메서드를 결정 합니다. /HelloWorld/Index 없었다는 실행 HelloWorldController 클래스의 index () 메서드. 만 위의 /HelloWorld 및 인덱스 암시 된 메서드를 방문 해야 함을 알 수 있습니다. 이 "Index" 라는 메서드를 명시적으로 지정 하지 않으면 컨트롤러에서 호출 되는 기본 방법 때문입니다.
 
 [![내 기본 작업](getting-started-with-mvc-part2/_static/image8.png)](getting-started-with-mvc-part2/_static/image7.png)
 

@@ -8,12 +8,12 @@ ms.date: 08/15/2006
 ms.assetid: f3897a74-cc6a-4032-8f68-465f155e296a
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting/creating-a-customized-sorting-user-interface-vb
 msc.type: authoredcontent
-ms.openlocfilehash: b12baa5075b4e67018d8a98a92e807d1778737c8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 63e31d719991dddec2168524187c304256d1b4e0
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57054700"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58426109"
 ---
 <a name="creating-a-customized-sorting-user-interface-vb"></a>사용자 지정된 정렬 사용자 인터페이스 만들기(VB)
 ====================
@@ -79,7 +79,7 @@ GridView 데이터 원본에 바인딩되는 경우 생성 된 `GridViewRow` 데
 **그림 3**: 한 가지 방법은 데이터 원본에 행 구분 기호를 추가 해야
 
 
-특별 한 구분 기호 레코드가 없습니다; 때문에 따옴표로 단어 구분 기호 레코드 사용 아니라 우리가 해야 어떤 이유로 든 플래그 일반 데이터 행이 아닌 구분 기호를 데이터 원본에서 특정 레코드를 제공 하는입니다. 이 예제에서는 바인딩 다시 것에 대 한는 `ProductsDataTable` GridView로 구성 된 인스턴스 `ProductRows`합니다. 레코드 구분 기호 행으로 설정 하 여 플래그 수에서는 해당 `CategoryID` 속성을 `-1` (이후 값 수 t 일반적으로 존재).
+특별 한 구분 기호 레코드가 없습니다; 때문에 따옴표로 단어 구분 기호 레코드 사용 아니라 우리가 해야 어떤 이유로 든 플래그 일반 데이터 행이 아닌 구분 기호를 데이터 원본에서 특정 레코드를 제공 하는입니다. 이 예제에서는 바인딩 다시 것에 대 한는 `ProductsDataTable` GridView로 구성 된 인스턴스 `ProductRows`합니다. 레코드 구분 기호 행으로 설정 하 여 플래그 수에서는 해당 `CategoryID` 속성을 `-1` (때문에 이러한 값은 일반적으로 존재 없습니다).
 
 이 기법을 활용 하려면 d 해야 다음 단계를 수행 합니다.
 
