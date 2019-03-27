@@ -8,12 +8,12 @@ ms.date: 01/28/2019
 ms.assetid: c39b9965-545c-4b04-8f55-21be7f28a9e5
 msc.legacyurl: /aspnet/overview/web-development-best-practices/what-not-to-do-in-aspnet-and-what-to-do-instead
 msc.type: authoredcontent
-ms.openlocfilehash: 512d2e2b39467635390fa175546f79d8c9f89f4a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a09169327d8eed45a83b232354af74a14aa89817
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57038150"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425043"
 ---
 # <a name="what-not-to-do-in-aspnet-and-what-to-do-instead"></a>ASP.NET에서 하지 말아야 하는 일과 해야 하는 일
 
@@ -151,7 +151,7 @@ SQL 명령에 대 한 값을 안전 하 게 인코딩 명령 매개 변수 같�
 
 권장 사항: False로 설정 하지 마십시오.
 
-기본적으로 EnbableViewStateMac 설정을 true로 합니다. 응용 프로그램 뷰 상태에 사용 하지 않는 경우에 EnableViewStateMac를 false로 설정 하지 마십시오. 이 값을 false로 설정 하 게 응용 프로그램 사이트 간 스크립팅에 취약 합니다.
+기본적으로 EnableViewStateMac 설정을 true로 합니다. 응용 프로그램 뷰 상태에 사용 하지 않는 경우에 EnableViewStateMac를 false로 설정 하지 마십시오. 이 값을 false로 설정 하 게 응용 프로그램 사이트 간 스크립팅에 취약 합니다.
 
 ASP.NET 4.5.2부터 런타임에서 적용 **EnableViewStateMac = true**합니다. False로 설정 하는 경우에 런타임은이 값을 무시 하 고 true로 설정 된 값으로 진행 됩니다. 자세한 내용은 [ASP.NET 4.5.2 및 EnableViewStateMac](https://blogs.msdn.com/b/webdev/archive/2014/05/07/asp-net-4-5-2-and-enableviewstatemac.aspx)합니다.
 

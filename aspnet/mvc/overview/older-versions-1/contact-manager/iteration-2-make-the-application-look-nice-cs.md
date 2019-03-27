@@ -8,12 +8,12 @@ ms.date: 02/20/2009
 ms.assetid: f1173feb-11ee-4017-8f3f-86599ea6ae13
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager/iteration-2-make-the-application-look-nice-cs
 msc.type: authoredcontent
-ms.openlocfilehash: c8bbd20cb64fb27a0a6de2cdc14743f6961f4bf0
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d5e12f4ec9a6e8c53ee88388355ecfbd81b100c3
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57057880"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422275"
 ---
 <a name="iteration-2--make-the-application-look-nice-c"></a>반복 #2 – 응용 프로그램 모양 꾸미기 (C#) 확인
 ====================
@@ -112,7 +112,7 @@ ASP.NET MVC 디자인 갤러리에는 다양 한 디자인 스타일 좋은 선�
 
 그러나 웹 사이트에 대 한 완전히 고유한 설계를 만들 수 해야 합니다. 이런 경우는 웹 사이트 디자인 회사를 사용 하려면 것이 좋습니다. 연락처 관리자 응용 프로그램 디자인에 대 한이 방법을 사용 하기로 했습니다.
 
-반복 # 1의 연락처 관리자를 압축 하 고 프로젝트 디자인 회사에 전송 합니다. 이러한 동작 t 문제가 없는 (아깝다는 에서도!), Visual Studio를 소유 하지 않았습니다. Microsoft Visual Web Developer를 무료로 다운로드할 수 있었습니다 합니다 [ https://www.asp.net ](https://www.asp.net) 웹 사이트 및 Visual Web Developer에서 연락처 관리자 응용 프로그램을 엽니다. 몇 일, 이러한 그림 7의 설계를 생성 했습니다.
+반복 # 1의 연락처 관리자를 압축 하 고 프로젝트 디자인 회사에 전송 합니다. Visual Studio (아깝다는 에서도!)을 소유 하지 않은 하지만 하지 않은 문제가 발생 합니다. Microsoft Visual Web Developer를 무료로 다운로드할 수 있었습니다 합니다 [ https://www.asp.net ](https://www.asp.net) 웹 사이트 및 Visual Web Developer에서 연락처 관리자 응용 프로그램을 엽니다. 몇 일, 이러한 그림 7의 설계를 생성 했습니다.
 
 
 [![새 프로젝트 대화 상자](iteration-2-make-the-application-look-nice-cs/_static/image7.jpg)](iteration-2-make-the-application-look-nice-cs/_static/image13.png)

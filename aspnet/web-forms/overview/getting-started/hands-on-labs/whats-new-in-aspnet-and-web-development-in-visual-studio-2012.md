@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 6d40d276-1642-4a77-b6c9-02ac914f6805
 msc.legacyurl: /web-forms/overview/getting-started/hands-on-labs/whats-new-in-aspnet-and-web-development-in-visual-studio-2012
 msc.type: authoredcontent
-ms.openlocfilehash: 263a6e0aed51a681193333b53eff8f03847fc3aa
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6d5af6563bdf3872110497f4b142dd7353c8d64c
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57047580"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58426122"
 ---
 <a name="whats-new-in-aspnet-and-web-development-in-visual-studio-2012"></a>Visual Studio 2012의 새로운 ASP.NET 및 웹 개발 기능
 ====================
@@ -737,7 +737,7 @@ Visual Studio JavaScript 편집기를 액세스할 수 있고 구성 코드 모�
 1. 로 이동 합니다 [Windows Azure 관리 포털](https://manage.windowsazure.com/) 구독과 연결 된 Microsoft 자격 증명을 사용 하 여 로그인 합니다.
 
     > [!NOTE]
-    > Windows Azure를 사용 하 여 10 개의 ASP.NET 웹 사이트를 무료로 호스트할 수 있으며 다음 트래픽 증가 따라 확장할 수 있습니다. 등록할 수 있습니다 [여기](http://aka.ms/aspnet-hol-azure)합니다.
+    > Windows Azure를 사용 하 여 10 개의 ASP.NET 웹 사이트를 무료로 호스트할 수 있으며 다음 트래픽 증가 따라 확장할 수 있습니다. 등록할 수 있습니다 [여기](https://aka.ms/aspnet-hol-azure)합니다.
 
     ![Windows Azure 포털에 로그온](whats-new-in-aspnet-and-web-development-in-visual-studio-2012/_static/image64.png "Windows Azure 포털에 로그온")
 
