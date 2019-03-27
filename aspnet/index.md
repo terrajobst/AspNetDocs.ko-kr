@@ -399,7 +399,7 @@ description: 'ASP.NET 및 ASP.NET 웹 애플리케이션을 개발하는 방법�
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>실시간</h3>
-                                                    <p>ASP.NET SignalR 2 및 Visual Studio를 사용하여 채팅 애플리케이션을 빌드하는 방법을 배웁니다.</p>
+                                                    <p>ASP.NET SignalR 2 및 Visual Studio를 사용하여 채팅 애플리케이션을 빌드하는 방법을 알아봅니다.</p>
                                                 </div>
                                             </div>
                                         </div>
