@@ -8,12 +8,12 @@ ms.date: 08/03/2007
 ms.assetid: 8be9a51b-ea6b-46c7-bfa2-476d9b14c24c
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/creating-stored-procedures-and-user-defined-functions-with-managed-code-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 438ebfa474ab510d90738c4a3ee40e172d838dcb
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1596e1c8c1b96fd41c842169b95914c7b02cf196
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57030330"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424627"
 ---
 <a name="creating-stored-procedures-and-user-defined-functions-with-managed-code-vb"></a>관리 코드를 사용하여 저장 프로시저 및 사용자 정의 함수 만들기(VB)
 ====================
@@ -303,7 +303,7 @@ Clr 사용 구성 완료를 사용 하 여 관리 되는 실행 준비가 기꺼
 
 [!code-vb[Main](creating-stored-procedures-and-user-defined-functions-with-managed-code-vb/samples/sample7.vb)]
 
-두 메서드는 단순히 해당 DAL 메서드 호출 및 반환 된 `ProductsDataTable` 인스턴스. `DataObjectMethodAttribute` 각 메서드 위의 태그 하면 이러한 메서드를 ObjectDataSource가의 구성 데이터 원본 마법사의 선택 탭의 드롭다운 목록에 포함 되어야 합니다.
+두 메서드는 단순히 해당 DAL 메서드 호출 및 반환 된 `ProductsDataTable` 인스턴스. `DataObjectMethodAttribute` 각 메서드 위의 태그 하면 이러한 메서드를 ObjectDataSource가의 데이터 소스 구성 마법사의 선택 탭의 드롭다운 목록에 포함 되어야 합니다.
 
 ## <a name="step-8-invoking-the-managed-stored-procedures-from-the-presentation-layer"></a>8단계: 프레젠테이션 계층에서 관리 되는 저장된 프로시저를 호출합니다.
 
