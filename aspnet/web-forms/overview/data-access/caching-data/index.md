@@ -2,12 +2,18 @@
 uid: web-forms/overview/data-access/caching-data/index
 title: 데이터 캐싱 | Microsoft Docs
 author: rick-anderson
-description: 'ObjectDataSource 컨트롤을 사용 하 여 프레젠테이션 계층에 캐싱을 적용 하는 방법과 사이트 성능을 향상할 수 있는 캐싱,이 자습서 집합에서 설명 하는 중...'
+description: ObjectDataSource 컨트롤을 사용 하 여 프레젠테이션 계층에 캐싱을 적용 하는 방법과 사이트 성능을 향상할 수 있는 캐싱,이 자습서 집합에서 설명 하는 중...
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 7d7ee56c-a867-4777-9407-ec8f73a605a3
 msc.legacyurl: /web-forms/overview/data-access/caching-data
 msc.type: chapter
+ms.openlocfilehash: daa92182f2c28a7fd79d584c0a647f6a15700d12
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57021190"
 ---
 <a name="caching-data"></a><span data-ttu-id="7dbee-103">데이터 캐싱</span><span class="sxs-lookup"><span data-stu-id="7dbee-103">Caching Data</span></span>
 ====================

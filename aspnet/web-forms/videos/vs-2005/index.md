@@ -2,12 +2,18 @@
 uid: web-forms/videos/vs-2005/index
 title: Visual Studio 2005 | Microsoft Docs
 author: rick-anderson
-description: '테스트, 배포 및 기타 작업을 수행 하려면 Visual Studio 2005, Team System 및 추가 기능을 사용 하는 방법입니다.'
+description: 테스트, 배포 및 기타 작업을 수행 하려면 Visual Studio 2005, Team System 및 추가 기능을 사용 하는 방법입니다.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 1bcf9a1c-ed34-4ed0-ab91-253df08fc6ff
 msc.legacyurl: /web-forms/videos/vs-2005
 msc.type: chapter
+ms.openlocfilehash: 0085424743ad2592dd06c58adba801bd676f2c0f
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57022060"
 ---
 <a name="visual-studio-2005"></a><span data-ttu-id="0f6f5-103">Visual Studio 2005</span><span class="sxs-lookup"><span data-stu-id="0f6f5-103">Visual Studio 2005</span></span>
 ====================

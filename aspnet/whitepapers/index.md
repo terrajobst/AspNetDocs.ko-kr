@@ -6,8 +6,14 @@ description: 이 페이지에서 설치 하 고 ASP.NET을 구성 하는 데 빠
 ms.author: riande
 ms.date: 11/15/2011
 ms.assetid: 3824e2d7-446f-406b-9c8b-5a1634359a78
-msc.legacyurl: null
+msc.legacyurl: ''
 msc.type: content
+ms.openlocfilehash: 3e463e0fb8e6af228480fc4795e1bd0ee5badac9
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57022020"
 ---
 <a name="whitepapers"></a><span data-ttu-id="b8f53-103">백서</span><span class="sxs-lookup"><span data-stu-id="b8f53-103">Whitepapers</span></span>
 ====================

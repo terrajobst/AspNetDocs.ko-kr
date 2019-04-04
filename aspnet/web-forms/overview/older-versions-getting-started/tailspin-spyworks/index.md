@@ -2,12 +2,18 @@
 uid: web-forms/overview/older-versions-getting-started/tailspin-spyworks/index
 title: ASP.NET 4-Tailspin Spyworks | Microsoft Docs
 author: rick-anderson
-description: '쇼핑, 체크 아웃 및 관리를 포함 하는 온라인 상점을 구축 하려면 ASP.NET 4의 새 기능을 사용 하는 방법.'
+description: 쇼핑, 체크 아웃 및 관리를 포함 하는 온라인 상점을 구축 하려면 ASP.NET 4의 새 기능을 사용 하는 방법.
 ms.author: riande
 ms.date: 08/08/2011
 ms.assetid: caeb0bcb-b2e3-4c37-a1d5-420bb4e917ac
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/tailspin-spyworks
 msc.type: chapter
+ms.openlocfilehash: 812a6b57558535785f58e28873380621279a9585
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57022310"
 ---
 <a name="aspnet-4---tailspin-spyworks"></a><span data-ttu-id="81fe7-103">ASP.NET 4 - Tailspin Spyworks</span><span class="sxs-lookup"><span data-stu-id="81fe7-103">ASP.NET 4 - Tailspin Spyworks</span></span>
 ====================
