@@ -2,12 +2,18 @@
 uid: web-forms/overview/deployment/configuring-server-environments-for-web-deployment/index
 title: ASP.NET 4-엔터프라이즈 배포 시리즈 2 서버 구성 | Microsoft Docs
 author: rick-anderson
-description: '이 자습서에서는 한 번의 클릭 또는 자동화 된 지원, 웹 사이트 배포 및 다양 한 다른 시나리오에는 게시 서버 환경을 설정 하는 방법을 보여 줍니다...'
+description: 이 자습서에서는 한 번의 클릭 또는 자동화 된 지원, 웹 사이트 배포 및 다양 한 다른 시나리오에는 게시 서버 환경을 설정 하는 방법을 보여 줍니다...
 ms.author: riande
 ms.date: 05/16/2012
 ms.assetid: 489b414b-2322-4385-8638-04e08c0b6c90
 msc.legacyurl: /web-forms/overview/deployment/configuring-server-environments-for-web-deployment
 msc.type: chapter
+ms.openlocfilehash: 559718b0ddb4ffc892ea166c7c3a4dfaf36e3691
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57023650"
 ---
 <a name="aspnet-4---enterprise-deployment-series-2-configuring-servers"></a>ASP.NET 4 - 엔터프라이즈 배포 시리즈 2 서버 구성
 ====================

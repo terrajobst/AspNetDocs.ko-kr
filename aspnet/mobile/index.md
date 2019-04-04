@@ -6,8 +6,14 @@ description: 어떻게 ASP.NET 손쉽게 모바일 웹 응용 프로그램에 �
 ms.author: riande
 ms.date: 01/28/2011
 ms.assetid: 71217425-e015-41af-b88a-1f4472f81886
-msc.legacyurl: null
+msc.legacyurl: ''
 msc.type: content
+ms.openlocfilehash: c09089bc84304ec3ea91d069f183d57665763f58
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57018960"
 ---
 <a name="mobile-apps--sites-with-aspnet"></a>Mobile Apps 및 ASP.NET 사용한 사이트
 ====================

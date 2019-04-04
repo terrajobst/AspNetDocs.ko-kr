@@ -2,12 +2,18 @@
 uid: web-forms/overview/data-access/introduction/index
 title: 소개 | Microsoft Docs
 author: rick-anderson
-description: '이 소개 하는 일련의 자습서 사이트 전체에 액세스 DAL (데이터 계층), 한 계층 BLL (비즈니스 논리), 및 일관 된 모양을 만드는 방법에 설명 합니다.'
+description: 이 소개 하는 일련의 자습서 사이트 전체에 액세스 DAL (데이터 계층), 한 계층 BLL (비즈니스 논리), 및 일관 된 모양을 만드는 방법에 설명 합니다.
 ms.author: riande
 ms.date: 11/11/2011
 ms.assetid: 74f3a86b-81fa-4d64-820a-304613f72caa
 msc.legacyurl: /web-forms/overview/data-access/introduction
 msc.type: chapter
+ms.openlocfilehash: 7f161727e5ad1dd509e308de939a11da4e061b70
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57019530"
 ---
 <a name="introduction"></a>소개
 ====================

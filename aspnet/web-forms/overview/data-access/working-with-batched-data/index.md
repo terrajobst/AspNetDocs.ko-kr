@@ -2,12 +2,18 @@
 uid: web-forms/overview/data-access/working-with-batched-data/index
 title: 일괄 처리 된 데이터 사용 | Microsoft Docs
 author: rick-anderson
-description: '이 자습서는 업데이트, 삭제 및 트랜잭션을 사용 하 여 데이터의 일괄 처리 삽입 살펴봅니다.'
+description: 이 자습서는 업데이트, 삭제 및 트랜잭션을 사용 하 여 데이터의 일괄 처리 삽입 살펴봅니다.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 95a1d7d3-7fc2-44ac-b27b-912e0e045ee5
 msc.legacyurl: /web-forms/overview/data-access/working-with-batched-data
 msc.type: chapter
+ms.openlocfilehash: 6f62a21af3b85bc341c202b7b44d6703c2da655c
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57019260"
 ---
 <a name="working-with-batched-data"></a>일괄 처리된 데이터 사용
 ====================

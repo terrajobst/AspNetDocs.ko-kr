@@ -1,6 +1,6 @@
 ---
 uid: web-api/overview/security/index
-title: '보안, 인증 및 ASP.NET Web API에서에서 권한 부여 | Microsoft Docs'
+title: 보안, 인증 및 ASP.NET Web API에서에서 권한 부여 | Microsoft Docs
 author: rick-anderson
 description: 웹 API에 대 한 보안 문제입니다.
 ms.author: riande
@@ -8,6 +8,12 @@ ms.date: 12/11/2012
 ms.assetid: bb38add0-5223-4b04-9b12-245911af865a
 msc.legacyurl: /web-api/overview/security
 msc.type: chapter
+ms.openlocfilehash: 3f1adfdecd4a2031af0f71f15351088627169773
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57024110"
 ---
 <a name="security-authentication-and-authorization-in-aspnet-web-api"></a>보안, 인증 및 ASP.NET Web API에서에서 권한 부여
 ====================

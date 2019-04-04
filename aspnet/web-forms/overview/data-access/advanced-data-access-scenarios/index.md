@@ -2,12 +2,18 @@
 uid: web-forms/overview/data-access/advanced-data-access-scenarios/index
 title: 고급 데이터 액세스 시나리오 | Microsoft Docs
 author: rick-anderson
-description: '이러한 자습서에는 저장된 프로시저 및 계산된 열을 사용 하는 방법, 데이터베이스 테이블 조인을 사용 하는 방법 및 데이터 연결 정보를 암호화 하는 방법을 포함 하는 중...'
+description: 이러한 자습서에는 저장된 프로시저 및 계산된 열을 사용 하는 방법, 데이터베이스 테이블 조인을 사용 하는 방법 및 데이터 연결 정보를 암호화 하는 방법을 포함 하는 중...
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 00d198ed-fddc-4fd3-a86e-3f29c5f707cc
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios
 msc.type: chapter
+ms.openlocfilehash: 6c0abbe94f743a24541a79c6dd4144d8992cd224
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57020590"
 ---
 <a name="advanced-data-access-scenarios"></a>고급 데이터 액세스 시나리오
 ====================

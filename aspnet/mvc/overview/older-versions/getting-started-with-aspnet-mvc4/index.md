@@ -2,12 +2,18 @@
 uid: mvc/overview/older-versions/getting-started-with-aspnet-mvc4/index
 title: ASP.NET MVC 4 시작 | Microsoft Docs
 author: rick-anderson
-description: '이 자습서 시리즈는 Microsoft Visual Web Developer 2010 Express 서비스 팩 1, w를 사용 하 여 ASP.NET MVC 웹 응용 프로그램을 빌드하는 기본 사항을 설명 하는 중...'
+description: 이 자습서 시리즈는 Microsoft Visual Web Developer 2010 Express 서비스 팩 1, w를 사용 하 여 ASP.NET MVC 웹 응용 프로그램을 빌드하는 기본 사항을 설명 하는 중...
 ms.author: riande
 ms.date: 02/15/2012
 ms.assetid: a35183ac-cbcb-4070-9233-6331cde921ad
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc4
 msc.type: chapter
+ms.openlocfilehash: 73b01c8f2cd1d36ff5f4dc2020df2e14f6a0f290
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57022870"
 ---
 <a name="getting-started-with-aspnet-mvc-4"></a>ASP.NET MVC 4 시작
 ====================

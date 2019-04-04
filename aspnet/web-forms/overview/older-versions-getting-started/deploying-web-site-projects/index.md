@@ -2,12 +2,18 @@
 uid: web-forms/overview/older-versions-getting-started/deploying-web-site-projects/index
 title: Visual Studio 2008 및 이전 버전의 웹 사이트 프로젝트 배포 | Microsoft Docs
 author: rick-anderson
-description: 'ASP.NET 웹 응용 프로그램은 일반적으로 설계, 생성 및 로컬 개발 환경에서 테스트 및 프로덕션 환경 o에 배포 해야 하는 중...'
+description: ASP.NET 웹 응용 프로그램은 일반적으로 설계, 생성 및 로컬 개발 환경에서 테스트 및 프로덕션 환경 o에 배포 해야 하는 중...
 ms.author: riande
 ms.date: 05/16/2012
 ms.assetid: 6f72bde8-f2f1-4e4a-94e5-494c3c153c14
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects
 msc.type: chapter
+ms.openlocfilehash: 4400195da0ca1167de8556f9339cd2a5f7414131
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57022470"
 ---
 <a name="deploying-web-site-projects-in-visual-studio-2008-and-earlier"></a>Visual Studio 2008 이하에서 웹 사이트 프로젝트 배포
 ====================

@@ -1,13 +1,19 @@
 ---
 uid: web-forms/overview/data-access/editing-inserting-and-deleting-data/index
-title: '편집, 삽입 및 삭제 | Microsoft Docs'
+title: 편집, 삽입 및 삭제 | Microsoft Docs
 author: rick-anderson
-description: '이러한 자습서 BLL 메서드에 ObjectDataSource 컨트롤의 메서드를 매핑하는 방법 및 GridView, DetailsView 및 FormView co를 구성 하는 방법을 표시 하는 중...'
+description: 이러한 자습서 BLL 메서드에 ObjectDataSource 컨트롤의 메서드를 매핑하는 방법 및 GridView, DetailsView 및 FormView co를 구성 하는 방법을 표시 하는 중...
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 9fc60498-ced4-47c6-b2cf-8d464e6aeef8
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data
 msc.type: chapter
+ms.openlocfilehash: e1eeed7541ad9c088cb87784ac33cc2f53fb8ed2
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57020880"
 ---
 <a name="editing-inserting-and-deleting-data"></a>데이터 편집, 삽입 및 삭제
 ====================

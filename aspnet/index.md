@@ -6,7 +6,13 @@ author: Rick-Anderson
 ms.author: riande
 title: ASP.NET 설명서
 ms.date: 08/24/2018
-description: 'ASP.NET 및 ASP.NET 웹 애플리케이션을 개발하는 방법을 알아봅니다. 설명서, 예제 코드, 자습서 등을 가져옵니다.'
+description: ASP.NET 및 ASP.NET 웹 애플리케이션을 개발하는 방법을 알아봅니다. 설명서, 예제 코드, 자습서 등을 가져옵니다.
+ms.openlocfilehash: d46c4b3f39a540244905be3e6cb9a48373613190
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423750"
 ---
 <div id="main" class="v2">
     <div class="container">
