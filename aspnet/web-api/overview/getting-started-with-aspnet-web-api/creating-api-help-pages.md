@@ -61,7 +61,7 @@ Web API를 만들 때 유용 도움말 페이지를 만들려면 다른 개발�
 
 에 **Visual Basic** 응용 프로그램: `Install-Package Microsoft.AspNet.WebApi.HelpPage.VB`
 
-두 개의 패키지, C# 및 Visual basic 있습니다. 프로젝트와 일치 하는 것을 사용 해야 합니다.
+두 개의 패키지, C# 및 Visual Basic 있습니다. 프로젝트와 일치 하는 것을 사용 해야 합니다.
 
 이 명령은 필요한 어셈블리를 설치 하 고 (영역/HelpPage 폴더에 있음) 도움말 페이지에 대 한 MVC 보기 추가 합니다. 도움말 페이지에 대 한 링크를 수동으로 추가 해야 합니다. URI가 /Help. Razor 보기에서 링크를 만들려면 다음을 추가 합니다.
 

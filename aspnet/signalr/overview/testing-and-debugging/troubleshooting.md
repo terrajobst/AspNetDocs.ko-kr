@@ -332,7 +332,7 @@ WebSocket 프로토콜을 사용 하지만 네트워크 프록시 요청 헤더�
 
 ### <a name="caller-state-cannot-be-accessed-from-clientscaller-in-visual-basic-or-in-a-strongly-typed-hub-conversion-from-type-taskof-object-to-type-string-is-not-valid-error"></a>호출자가 상태 Clients.Caller Visual Basic 또는 강력한 형식의 허브;에서 액세스할 수 없습니다. "'String' 형식으로 형식 'Task (Of Object)'로의 변환이 잘못 되었습니다." 오류
 
-Visual basic에서 또는 강력한 형식의 허브의 호출자 상태에 액세스 하려면 사용 합니다 `Clients.CallerState` 속성 (SignalR 2.1에 도입 됨) 대신 `Clients.Caller`합니다.
+Visual Basic에서 또는 강력한 형식의 허브의 호출자 상태에 액세스 하려면 사용 합니다 `Clients.CallerState` 속성 (SignalR 2.1에 도입 됨) 대신 `Clients.Caller`합니다.
 
 <a id="vs"></a>
 
