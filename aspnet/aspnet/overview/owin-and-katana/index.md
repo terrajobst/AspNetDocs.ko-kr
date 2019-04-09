@@ -8,23 +8,23 @@ ms.date: 05/30/2013
 ms.assetid: 37e005e9-2f1c-4039-b6ef-15612e0fdbc9
 msc.legacyurl: /aspnet/overview/owin-and-katana
 msc.type: chapter
-ms.openlocfilehash: e528bbfb4513d25b6a77fa2263dc744fb5e52df6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a8ba1ca6b54ae58c23e51981cedebc636fba679e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57019160"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59385594"
 ---
-<a name="owin-and-katana"></a><span data-ttu-id="4eb58-103">OWIN 및 Katana</span><span class="sxs-lookup"><span data-stu-id="4eb58-103">OWIN and Katana</span></span>
-====================
-> <span data-ttu-id="4eb58-104">Katana는 유연한 집합 빌드하고.NET OWIN 기반 웹 응용 프로그램에 대 한 Open Web Interface를 호스트 하기 위한 구성 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="4eb58-104">Katana is a flexible set of components for building and hosting Open Web Interface for .NET (OWIN)-based web applications.</span></span>
+# <a name="owin-and-katana"></a><span data-ttu-id="74c61-103">OWIN 및 Katana</span><span class="sxs-lookup"><span data-stu-id="74c61-103">OWIN and Katana</span></span>
+
+> <span data-ttu-id="74c61-104">Katana는 유연한 집합 빌드하고.NET OWIN 기반 웹 응용 프로그램에 대 한 Open Web Interface를 호스트 하기 위한 구성 요소입니다.</span><span class="sxs-lookup"><span data-stu-id="74c61-104">Katana is a flexible set of components for building and hosting Open Web Interface for .NET (OWIN)-based web applications.</span></span>
 
 
-- [<span data-ttu-id="4eb58-105">프로젝트 Katana 개요</span><span class="sxs-lookup"><span data-stu-id="4eb58-105">An Overview of Project Katana</span></span>](an-overview-of-project-katana.md)
-- [<span data-ttu-id="4eb58-106">OWIN 및 Katana 시작</span><span class="sxs-lookup"><span data-stu-id="4eb58-106">Getting Started with OWIN and Katana</span></span>](getting-started-with-owin-and-katana.md)
-- [<span data-ttu-id="4eb58-107">Katana 샘플</span><span class="sxs-lookup"><span data-stu-id="4eb58-107">Katana Samples</span></span>](katana-samples.md)
-- [<span data-ttu-id="4eb58-108">OWIN 시작 클래스 검색</span><span class="sxs-lookup"><span data-stu-id="4eb58-108">OWIN Startup Class Detection</span></span>](owin-startup-class-detection.md)
-- [<span data-ttu-id="4eb58-109">Katana에서 Windows 인증 사용</span><span class="sxs-lookup"><span data-stu-id="4eb58-109">Enabling Windows Authentication in Katana</span></span>](enabling-windows-authentication-in-katana.md)
-- [<span data-ttu-id="4eb58-110">IIS 통합 파이프라인의 OWIN 미들웨어</span><span class="sxs-lookup"><span data-stu-id="4eb58-110">OWIN Middleware in the IIS Integrated Pipeline</span></span>](owin-middleware-in-the-iis-integrated-pipeline.md)
-- [<span data-ttu-id="4eb58-111">OWIN OAuth 2.0 권한 부여 서버</span><span class="sxs-lookup"><span data-stu-id="4eb58-111">OWIN OAuth 2.0 Authorization Server</span></span>](owin-oauth-20-authorization-server.md)
-- [<span data-ttu-id="4eb58-112">Azure 작업자 역할에 OWIN 호스트</span><span class="sxs-lookup"><span data-stu-id="4eb58-112">Host OWIN in an Azure Worker Role</span></span>](host-owin-in-an-azure-worker-role.md)
+- [<span data-ttu-id="74c61-105">프로젝트 Katana 개요</span><span class="sxs-lookup"><span data-stu-id="74c61-105">An Overview of Project Katana</span></span>](an-overview-of-project-katana.md)
+- [<span data-ttu-id="74c61-106">OWIN 및 Katana 시작</span><span class="sxs-lookup"><span data-stu-id="74c61-106">Getting Started with OWIN and Katana</span></span>](getting-started-with-owin-and-katana.md)
+- [<span data-ttu-id="74c61-107">Katana 샘플</span><span class="sxs-lookup"><span data-stu-id="74c61-107">Katana Samples</span></span>](katana-samples.md)
+- [<span data-ttu-id="74c61-108">OWIN 시작 클래스 검색</span><span class="sxs-lookup"><span data-stu-id="74c61-108">OWIN Startup Class Detection</span></span>](owin-startup-class-detection.md)
+- [<span data-ttu-id="74c61-109">Katana에서 Windows 인증 사용</span><span class="sxs-lookup"><span data-stu-id="74c61-109">Enabling Windows Authentication in Katana</span></span>](enabling-windows-authentication-in-katana.md)
+- [<span data-ttu-id="74c61-110">IIS 통합 파이프라인의 OWIN 미들웨어</span><span class="sxs-lookup"><span data-stu-id="74c61-110">OWIN Middleware in the IIS Integrated Pipeline</span></span>](owin-middleware-in-the-iis-integrated-pipeline.md)
+- [<span data-ttu-id="74c61-111">OWIN OAuth 2.0 권한 부여 서버</span><span class="sxs-lookup"><span data-stu-id="74c61-111">OWIN OAuth 2.0 Authorization Server</span></span>](owin-oauth-20-authorization-server.md)
+- [<span data-ttu-id="74c61-112">Azure 작업자 역할에 OWIN 호스트</span><span class="sxs-lookup"><span data-stu-id="74c61-112">Host OWIN in an Azure Worker Role</span></span>](host-owin-in-an-azure-worker-role.md)

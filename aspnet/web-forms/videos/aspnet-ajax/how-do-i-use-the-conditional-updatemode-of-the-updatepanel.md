@@ -8,22 +8,22 @@ ms.date: 08/01/2007
 ms.assetid: 10b5bad3-4c18-464f-9454-0b3e60b7b8be
 msc.legacyurl: /web-forms/videos/aspnet-ajax/how-do-i-use-the-conditional-updatemode-of-the-updatepanel
 msc.type: video
-ms.openlocfilehash: d1d407863340ad143c9859263ff66d538ca00335
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: c05d4f262d56dfba858443b830d72ff0520b65d7
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423834"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381421"
 ---
-<a name="how-do-i-use-the-conditional-updatemode-of-the-updatepanel"></a><span data-ttu-id="56195-105">[어떻게 할까요?] UpdatePanel의 조건부 UpdateMode 사용</span><span class="sxs-lookup"><span data-stu-id="56195-105">[How Do I:] Use the Conditional UpdateMode of the UpdatePanel?</span></span>
-====================
-<span data-ttu-id="56195-106">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="56195-106">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+# <a name="how-do-i-use-the-conditional-updatemode-of-the-updatepanel"></a><span data-ttu-id="09c31-105">[어떻게 할까요?] UpdatePanel의 조건부 UpdateMode 사용</span><span class="sxs-lookup"><span data-stu-id="09c31-105">[How Do I:] Use the Conditional UpdateMode of the UpdatePanel?</span></span>
 
-<span data-ttu-id="56195-107">ASP.NET AJAX UpdatePanel 'Always' 또는 '조건부'로 설정할 수 있습니다 하는 UpdateMode 속성을 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="56195-107">The ASP.NET AJAX UpdatePanel includes an UpdateMode property that may be set to 'Always' or 'Conditional'.</span></span> <span data-ttu-id="56195-108">기본값은 항상이 경우 UpdatePanel은 항상 콘텐츠를 업데이트 비동기 포스트백 도중 합니다.</span><span class="sxs-lookup"><span data-stu-id="56195-108">The default is Always, in which case the UpdatePanel will always update its content during an asynchronous postback.</span></span> <span data-ttu-id="56195-109">이 비디오는 UpdateMode는 UpdatePanel 사례는만 콘텐츠를 업데이트 서버 쪽 코드 업데이트 메서드를 호출 하는 경우, 조건부를 설정할 수 있습니다 하는 방법을 알아봅니다.</span><span class="sxs-lookup"><span data-stu-id="56195-109">In this video we learn how we can set the UpdateMode to Conditional, in which case the UpdatePanel will only update its content when our server-side code calls its Update method.</span></span> <span data-ttu-id="56195-110">이 옵션을 사용 하면 C# 또는 Visual Basic 코드에서 조건부 논리를 사용 하 여 UpdatePanel 현재 비동기 포스트백을 수행 하는 동안 콘텐츠를 업데이트 합니다 있는지 여부를 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="56195-110">This allows you to use conditional logic in your C# or Visual Basic code to determine whether the UpdatePanel will update its content during the current asynchronous postback.</span></span>
+<span data-ttu-id="09c31-106">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="09c31-106">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-[<span data-ttu-id="56195-111">&#9654;비디오 (13 분)</span><span class="sxs-lookup"><span data-stu-id="56195-111">&#9654; Watch video (13 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-the-conditional-updatemode-of-the-updatepanel)
+<span data-ttu-id="09c31-107">ASP.NET AJAX UpdatePanel 'Always' 또는 '조건부'로 설정할 수 있습니다 하는 UpdateMode 속성을 포함 합니다.</span><span class="sxs-lookup"><span data-stu-id="09c31-107">The ASP.NET AJAX UpdatePanel includes an UpdateMode property that may be set to 'Always' or 'Conditional'.</span></span> <span data-ttu-id="09c31-108">기본값은 항상이 경우 UpdatePanel은 항상 콘텐츠를 업데이트 비동기 포스트백 도중 합니다.</span><span class="sxs-lookup"><span data-stu-id="09c31-108">The default is Always, in which case the UpdatePanel will always update its content during an asynchronous postback.</span></span> <span data-ttu-id="09c31-109">이 비디오는 UpdateMode는 UpdatePanel 사례는만 콘텐츠를 업데이트 서버 쪽 코드 업데이트 메서드를 호출 하는 경우, 조건부를 설정할 수 있습니다 하는 방법을 알아봅니다.</span><span class="sxs-lookup"><span data-stu-id="09c31-109">In this video we learn how we can set the UpdateMode to Conditional, in which case the UpdatePanel will only update its content when our server-side code calls its Update method.</span></span> <span data-ttu-id="09c31-110">이 옵션을 사용 하면 C# 또는 Visual Basic 코드에서 조건부 논리를 사용 하 여 UpdatePanel 현재 비동기 포스트백을 수행 하는 동안 콘텐츠를 업데이트 합니다 있는지 여부를 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="09c31-110">This allows you to use conditional logic in your C# or Visual Basic code to determine whether the UpdatePanel will update its content during the current asynchronous postback.</span></span>
+
+[<span data-ttu-id="09c31-111">&#9654;비디오 (13 분)</span><span class="sxs-lookup"><span data-stu-id="09c31-111">&#9654; Watch video (13 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-the-conditional-updatemode-of-the-updatepanel)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="56195-112">[이전](how-do-i-determine-whether-an-asynchronous-postback-has-occurred.md)
-> [다음](how-do-i-implement-the-persistent-communications-pattern-with-the-updatepanel.md)</span><span class="sxs-lookup"><span data-stu-id="56195-112">[Previous](how-do-i-determine-whether-an-asynchronous-postback-has-occurred.md)
+> <span data-ttu-id="09c31-112">[이전](how-do-i-determine-whether-an-asynchronous-postback-has-occurred.md)
+> [다음](how-do-i-implement-the-persistent-communications-pattern-with-the-updatepanel.md)</span><span class="sxs-lookup"><span data-stu-id="09c31-112">[Previous](how-do-i-determine-whether-an-asynchronous-postback-has-occurred.md)
 [Next](how-do-i-implement-the-persistent-communications-pattern-with-the-updatepanel.md)</span></span>
