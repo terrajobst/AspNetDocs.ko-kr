@@ -8,15 +8,15 @@ ms.date: 08/18/2011
 ms.assetid: 05e4c88f-5101-4277-a323-b6774d98f69e
 msc.legacyurl: /web-forms/overview/deployment
 msc.type: chapter
-ms.openlocfilehash: 660987c11fe57a858d5fa552a10e38e65a3d5555
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8536c771e5e343bd545b6824bec6f8b85489a7d4
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57023410"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59416534"
 ---
-<a name="deployment"></a>배포
-====================
+# <a name="deployment"></a>배포
+
 > 서버에 ASP.NET Web Forms 프로젝트를 배포 하는 방법입니다.
 
 
@@ -38,7 +38,7 @@ ms.locfileid: "57023410"
 
     - [Visual Studio 2010을 사용하여 엔터프라이즈 시나리오에서 웹 애플리케이션 배포](deploying-web-applications-in-enterprise-scenarios/deploying-web-applications-in-enterprise-scenarios.md)
     - [엔터프라이즈 웹 배포: 시나리오 개요](deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md)
-    - [응용 프로그램 수명 주기 관리: 개발부터 프로덕션까지](deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production.md)
+    - [애플리케이션 수명 주기 관리: 개발부터 프로덕션까지](deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production.md)
 - [ASP.NET 4 - 엔터프라이즈 배포 시리즈 1](web-deployment-in-the-enterprise/index.md)
 
     - [기업에서 웹 배포](web-deployment-in-the-enterprise/web-deployment-in-the-enterprise.md)
@@ -73,11 +73,11 @@ ms.locfileid: "57023410"
     - [웹 배포용 TFS Build Server 구성](configuring-team-foundation-server-for-web-deployment/configuring-a-tfs-build-server-for-web-deployment.md)
     - [배포를 지원하는 빌드 정의 만들기](configuring-team-foundation-server-for-web-deployment/creating-a-build-definition-that-supports-deployment.md)
     - [특정 빌드 배포](configuring-team-foundation-server-for-web-deployment/deploying-a-specific-build.md)
-    - [Team 빌드 배포를 위한 권한 구성](configuring-team-foundation-server-for-web-deployment/configuring-permissions-for-team-build-deployment.md)
+    - [Team Build 배포를 위한 권한 구성](configuring-team-foundation-server-for-web-deployment/configuring-permissions-for-team-build-deployment.md)
 - [ASP.NET 4 - 엔터프라이즈 배포 시리즈 4 고급 토픽](advanced-enterprise-web-deployment/index.md)
 
     - [고급 엔터프라이즈 웹 배포](advanced-enterprise-web-deployment/advanced-enterprise-web-deployment.md)
-    - ["가상 시나리오" 배포 수행](advanced-enterprise-web-deployment/performing-a-what-if-deployment.md)
+    - [“가상 시나리오” 배포 수행](advanced-enterprise-web-deployment/performing-a-what-if-deployment.md)
     - [다중 환경을 위한 데이터베이스 배포 사용자 지정](advanced-enterprise-web-deployment/customizing-database-deployments-for-multiple-environments.md)
     - [테스트 환경에 데이터베이스 역할 멤버 자격 배포](advanced-enterprise-web-deployment/deploying-database-role-memberships-to-test-environments.md)
     - [엔터프라이즈 환경에 멤버 자격 데이터베이스 배포](advanced-enterprise-web-deployment/deploying-membership-databases-to-enterprise-environments.md)

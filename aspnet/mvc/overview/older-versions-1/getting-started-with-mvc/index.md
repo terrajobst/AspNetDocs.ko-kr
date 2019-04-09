@@ -8,15 +8,15 @@ ms.date: 11/08/2011
 ms.assetid: 057f01bf-0ad9-488a-ae75-c8f85b8e1f23
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc
 msc.type: chapter
-ms.openlocfilehash: 22e344b0667ac596bea75884df6aadd8e6a5ff92
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 08be9368049e97baecf9ae81e496950b1349d18f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57021870"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59414909"
 ---
-<a name="getting-started-with-mvc"></a>MVC 시작
-====================
+# <a name="getting-started-with-mvc"></a>MVC 시작
+
 > ASP.NET MVC 소개 하는 초보자를 위한 자습서 시리즈입니다. 읽기 및 쓰기 데이터베이스에서 간단한 웹 응용 프로그램을 만듭니다.
 
 

@@ -8,15 +8,15 @@ ms.date: 11/14/2011
 ms.assetid: 6a25069b-c80f-45f3-a901-4548442c37b6
 msc.legacyurl: /web-forms/videos/aspnet-35/how-do-i
 msc.type: chapter
-ms.openlocfilehash: 45026082904fb8c740f34e1e9ae31153c1e551a5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8a7251971410ef2539e3957039de33af6e74371c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57019850"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59415455"
 ---
-<a name="how-do-i"></a>작업 절차
-====================
+# <a name="how-do-i"></a>작업 절차
+
 > 이 다중 파트 비디오 시리즈는 ASP.NET 3.5 및 Visual Studio 2008의 새로운 기능을 활용 하는 방법을 보여 줍니다.
 
 
@@ -30,4 +30,4 @@ ms.locfileid: "57019850"
 - [Entity Framework 시작](how-do-i-get-started-with-the-entity-framework.md)
 - [새 엔터티 데이터 원본 사용](how-do-i-use-the-new-entity-data-source.md)
 - [Entity Framework를 사용하여 그래프 직렬화](how-do-i-serialize-a-graph-with-the-entity-framework.md)
-- [MSBuild를 사용하여 ASP.NET 컴파일러를 자동화 하고 유틸리티 병합](how-do-i-use-msbuild-to-automate-the-aspnet-compiler-and-merge-utilities.md)
+- [MSBuild를 사용하여 ASP.NET 컴파일러를 자동화하고 유틸리티 병합](how-do-i-use-msbuild-to-automate-the-aspnet-compiler-and-merge-utilities.md)

@@ -8,15 +8,15 @@ ms.date: 02/20/2007
 ms.assetid: a8fa72ee-8328-4854-a419-c1b271772303
 msc.legacyurl: /web-forms/overview/data-access/accessing-the-database-directly-from-an-aspnet-page/implementing-optimistic-concurrency-with-the-sqldatasource-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 879f0f491461ec49c4eef9dc8add747ac2b22f90
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: da0df163d7c3b68246a84ff490471e64c142a8f0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422105"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59416521"
 ---
-<a name="implementing-optimistic-concurrency-with-the-sqldatasource-vb"></a>SqlDataSource를 사용하여 낙관적 동시성 구현(VB)
-====================
+# <a name="implementing-optimistic-concurrency-with-the-sqldatasource-vb"></a>SqlDataSource를 사용하여 낙관적 동시성 구현(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_50_VB.exe) 또는 [PDF 다운로드](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/datatutorial50vb1.pdf)
@@ -47,7 +47,7 @@ ms.locfileid: "58422105"
 그림 2에서는이 상호 작용을 보여 줍니다.
 
 
-[![두 명의 사용자가 동시에 레코드를 업데이트 하는 경우 있습니다 s 잠재적인 사용자 s에 대 한 변경을 다른를 덮어쓰려면](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image2.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image1.png)
+[![W경우 두 사용자가 동시에 업데이트를 레코드 있습니다 s 잠재적 사용자 s에 대 한 다른 덮어쓰기 변경](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image2.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image1.png)
 
 **그림 2**: 두 명의 사용자가 동시에 업데이트할 시기는 레코드가 있는 s 잠재적인 한 명의 사용자가 다른가 Overwrite로 변경 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image2.png))
 
@@ -61,7 +61,7 @@ ms.locfileid: "58422105"
 낙관적 동시성 제어 업데이트나 삭제 프로세스를 시작 하는 경우와 마찬가지로 업데이트 되거나 삭제 된 레코드에 동일한 값 함으로써 작동 합니다. 예를 들어, 편집할 수는 GridView의 편집 단추를 클릭 하면 s 레코드 값을 데이터베이스에서 읽고 텍스트 상자 및 기타 웹 컨트롤에 표시 합니다. GridView에서 원래 값이 저장 됩니다. 사용자가 변경 하 고, [업데이트] 단추를 클릭 한 후에 이후를 `UPDATE` 문에 사용 되는 원래 값 및 새 값을 고려 하며 원래 값을 사용자가 편집을 시작 하는 경우 기본 데이터베이스 레코드에만 업데이트 데이터베이스에서 값으로 동일합니다. 그림 3에서는이 이벤트 시퀀스를 보여 줍니다.
 
 
-[![성공 하려면 업데이트 또는 삭제, 원래 값을 현재 데이터베이스 값 이어야 합니다.](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image3.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image3.png)
+[![F또는 현재 데이터베이스 값에 원래 값 같아야 되려면 Update 또는 Delete를](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image3.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image3.png)
 
 **그림 3**: Update 또는 Delete 성공에는 원래 값 해야 수 값과 같은 현재 데이터베이스에 대 한 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image4.png))
 
@@ -78,7 +78,7 @@ ms.locfileid: "58422105"
 열어서 시작 합니다 `OptimisticConcurrency.aspx` 에서 페이지를 `SqlDataSource` 폴더입니다. 설정 디자이너 도구 상자에서 SqlDataSource 컨트롤을 끌어 해당 `ID` 속성을 `ProductsDataSourceWithOptimisticConcurrency`입니다. 다음으로, 컨트롤 s 스마트 태그의 데이터 소스 구성 링크를 클릭 합니다. 마법사의 첫 번째 화면에서 사용 하 여 작업을 선택 합니다 `NORTHWINDConnectionString` 다음을 클릭 합니다.
 
 
-[![위해 사용 하 여 작업을 선택 합니다.](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image4.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image5.png)
+[![C작업을 위해 사용 하 여 설치할](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image4.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image5.png)
 
 **그림 4**: 작업을 선택 합니다 `NORTHWINDConnectionString` ([큰 이미지를 보려면 클릭](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image6.png))
 
@@ -86,7 +86,7 @@ ms.locfileid: "58422105"
 사용자가 편집할 수 있도록 하는 GridView를 추가할 예정이 예는 `Products` 테이블입니다. 따라서 Select 문 화면 구성에서 선택는 `Products` 드롭 다운 목록에서 테이블을 선택 합니다 `ProductID`, `ProductName`, `UnitPrice`, 및 `Discontinued` 그림 5에 표시 된 대로 열.
 
 
-[![Products 테이블에서 ProductID, ProductName, UnitPrice, 및 지원 되지 않는 열 반환](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image5.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image7.png)
+[![From Products 테이블에는 ProductID, ProductName, UnitPrice, 및 지원 되지 않는 열을 반환](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image5.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image7.png)
 
 **그림 5**: `Products` 테이블을 반환 합니다 `ProductID`, `ProductName`, `UnitPrice`, 및 `Discontinued` 열 ([전체 크기 이미지를 보려면 클릭](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image8.png))
 
@@ -152,7 +152,7 @@ ms.locfileid: "58422105"
 낙관적 동시성을 지원 하도록 SqlDataSource를 사용 하 여에이 동시성 제어를 활용 하는 페이지 데이터 웹 컨트롤을 추가 합니다. 이 자습서에서는 편집을 제공 하는 GridView를 추가 및 삭제 기능을 사용 수 있습니다. 이렇게 하려면 GridView 집합과 디자이너 도구 상자에서 끌어 해당 `ID` 에 `Products`입니다. GridView가 스마트 태그에 바인딩하지는 `ProductsDataSourceWithOptimisticConcurrency` 1 단계에서에서 추가한 SqlDataSource 컨트롤입니다. 마지막으로, 스마트 태그에서 편집을 사용 하도록 설정 및 삭제 사용 옵션을 선택 합니다.
 
 
-[![SqlDataSource를 GridView을 바인딩하고 편집 및 삭제를 사용 하도록 설정](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image6.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image9.png)
+[![BSqlDataSource를 사용 하도록 설정 편집 및 삭제 하는 GridView 찾기](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image6.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image9.png)
 
 **그림 6**: SqlDataSource 및 편집 사용 및 삭제에 GridView를 바인딩 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image10.png))
 
@@ -173,7 +173,7 @@ GridView에 다음과 같이이 수정에 확인 한 후 GridView, SqlDataSource
 두 번째 브라우저 창에서 제품 이름 원래 값으로 나감) (하지만 가격을 변경 하 고 업데이트를 클릭 합니다. 포스트백에서 표는 미리 편집 모드를 반환 하지만 가격 변경 기록 되지 않습니다. 두 번째 브라우저는 이전 가격으로 새 제품 이름 같은 첫 번째 값을 보여 줍니다. 두 번째 브라우저 창에서 변경한 내용을 손실 되었습니다. 또한 변경 내용이 손실 대신 자동으로 예외 없거나 동시성 위반을 방금 발생 했음을 나타내는 메시지가 발생 합니다.
 
 
-[![두 번째 브라우저 창에서 변경 내용이 자동으로 손실](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image7.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image11.png)
+[![T그는 두 번째 브라우저 창이 자동으로 손실 된 변경](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image7.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image11.png)
 
 **그림 7**: 두 번째 브라우저 창이 자동으로 손실 된의 변경 내용 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image12.png))
 
@@ -196,7 +196,7 @@ GridView에 다음과 같이이 수정에 확인 한 후 GridView, SqlDataSource
 동시성 위반을가 변경 하나에 거부 되므로 동시성 위반이 발생 했을 때 사용자에 게 경고할 좋을 것입니다. 사용자 경고를 통해의 컨트롤을 추가 레이블 웹 라는 페이지의 맨 위에 `ConcurrencyViolationMessage` 해당 `Text` 메시지를 표시 하는 속성: 업데이트 하거나 다른 사용자가 동시에 업데이트 된 레코드를 삭제 하려고 했습니다. 다른 사용자의 변경 내용을 검토 하 고 업데이트를 다시 실행 하거나 삭제 하십시오. 가 레이블 컨트롤을 설정 `CssClass` 에 정의 된 CSS 클래스에는 경고로 속성 `Styles.css` 빨간색, 기울임꼴, 굵게 및 큰 글꼴의 텍스트를 표시 하는 합니다. 마지막으로 s 레이블 설정 `Visible` 하 고 `EnableViewState` 속성을 `False`입니다. 명시적으로 설정한 포스트백에만 제외 하 고 레이블을 숨기는이 해당 `Visible` 속성을 `True`입니다.
 
 
-[![경고를 표시 하려면 페이지에는 레이블 컨트롤 추가](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image8.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image13.png)
+[![A경고를 표시 하려면 페이지 레이블 컨트롤을 dd](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image8.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image13.png)
 
 **그림 8**: 경고를 표시 하려면 페이지에 레이블 컨트롤을 추가 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image14.png))
 
@@ -213,7 +213,7 @@ GridView에 다음과 같이이 수정에 확인 한 후 GridView, SqlDataSource
 그림 9 있듯이 이러한 두 이벤트 처리기를 사용 하 여 동시성 위반이 발생할 때마다 확실 메시지가 표시 됩니다.
 
 
-[![동시성 위반이 발생 하는 경우 메시지가 표시 됩니다.](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image9.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image15.png)
+[![A 동시성 위반이 발생 하는 경우 메시지가 표시 됩니다](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image9.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image15.png)
 
 **그림 9**: 동시성 위반이 발생 하는 경우 메시지가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-with-the-sqldatasource-vb/_static/image16.png))
 

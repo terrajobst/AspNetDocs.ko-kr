@@ -8,15 +8,15 @@ ms.date: 10/05/2007
 ms.assetid: c812231d-e811-4048-9922-b34df1d0f300
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-use-cascading-style-sheets-for-web-page-layout
 msc.type: video
-ms.openlocfilehash: 4ec1f66065d27fcf1b10ffca0b3c899a417ecc53
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8ac51219a3734d3d2c8657bcfac159e28faa7d7c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57041990"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59417288"
 ---
-<a name="how-do-i-use-cascading-style-sheets-for-web-page-layout"></a>[어떻게 할까요?] 스타일 시트를 사용 하 여 웹 페이지 레이아웃에 대 한?
-====================
+# <a name="how-do-i-use-cascading-style-sheets-for-web-page-layout"></a>[어떻게 할까요?] 스타일 시트를 사용 하 여 웹 페이지 레이아웃에 대 한?
+
 [Chris Pels](https://twitter.com/chrispels)
 
 이 비디오를 사용 하는 방법을 알아봅니다 `<div>` 강력 하 고 더 높은 성능 웹 페이지를 만드는 연계 스타일 시트 (CSS)와 함께에서 요소입니다. `<div>`기반된 접근 방식을 비교할 수는 `<table>` 기반 레이아웃 방법을 통해 최근 몇 년 동안 대부분의 웹 사이트에서 사용 합니다. 그런 다음 여러 CSS 기반 접근 방식은 표시 됩니다, 범위의 요소를 부동으로 절대 위치에서. CSS 사용 하 여 디자인에서 구조적 HTML 분리의 이점을 알아봅니다.

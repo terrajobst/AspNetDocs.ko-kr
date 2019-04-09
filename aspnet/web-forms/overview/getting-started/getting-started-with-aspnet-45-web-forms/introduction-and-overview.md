@@ -8,15 +8,15 @@ ms.date: 01/09/2019
 ms.assetid: 9b96eaa1-8ef0-4338-a2e8-e0f970bfaf68
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/introduction-and-overview
 msc.type: authoredcontent
-ms.openlocfilehash: b51ffda9aa10dd8b1fe98c4b56f70994eb016cec
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 3a39e8d1979a743101d728eb3430e9aa0efb1252
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425719"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59415637"
 ---
-<a name="getting-started-with-aspnet-45-web-forms-and-visual-studio-2017"></a>ASP.NET 4.5 Web Forms 및 Visual Studio 2017을 사용 하 여 시작
-====================
+# <a name="getting-started-with-aspnet-45-web-forms-and-visual-studio-2017"></a>ASP.NET 4.5 Web Forms 및 Visual Studio 2017을 사용 하 여 시작
+
 
 [Wingtip Toys 샘플 프로젝트 (C#)를 다운로드](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 또는 [전자책 (PDF) 다운로드](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
 
@@ -182,7 +182,7 @@ Visual Studio에 대 한 다음 note:
 
 자습서 시리즈를 완료 한 후 퀴즈를 배운 내용을 테스트 하 고 주요 개념을 보강 합니다. 각 질문 설명 및 추가 지침에 대 한 링크를 제공합니다.
 
- * [ASP.NET Web Forms 퀴즈](https://blogs.msdn.microsoft.com/erikreitan/2016/01/08/asp-net-web-forms-quiz/) 
+* [ASP.NET Web Forms 퀴즈](https://blogs.msdn.microsoft.com/erikreitan/2016/01/08/asp-net-web-forms-quiz/) 
 
 ## <a name="tutorial-support-and-comments"></a>자습서 지원 및 주석
 

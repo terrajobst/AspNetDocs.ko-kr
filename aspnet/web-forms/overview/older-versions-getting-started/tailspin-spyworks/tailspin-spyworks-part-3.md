@@ -8,15 +8,15 @@ ms.date: 07/21/2010
 ms.assetid: 94ea1a70-a9bc-4241-8f36-08366d64bab9
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-3
 msc.type: authoredcontent
-ms.openlocfilehash: f55b29a271dbdb72d3e2249ed74517b77d78cf5e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: badae58d5b43fb2674f4918f54f999ff48d0b5b0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034850"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59418016"
 ---
-<a name="part-3-layout-and-category-menu"></a>3부: 레이아웃 및 범주 메뉴
-====================
+# <a name="part-3-layout-and-category-menu"></a>3부: 레이아웃 및 범주 메뉴
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 > Tailspin Spyworks.NET 플랫폼에 대 한 강력 하 고 확장 가능한 응용 프로그램을 생성 하는 방법을 매우 단순 하는 방법을 보여 줍니다. 해제 쇼핑, 체크 아웃 및 관리를 포함 하는 온라인 상점을 만들려고 ASP.NET 4에서 강력한 새 기능을 사용 하는 방법을 보여 줍니다.
@@ -66,7 +66,7 @@ EDS를 EntityDataSource ID 속성을 설정 해 보겠습니다\_범주\_메뉴 
 
 ASP.NET 구문 &lt;% # %&gt; 는 약식 규칙 내에 포함 된 모든 및 결과 "Line"를 실행 하도록 런타임에 지시입니다.
 
-문이 Eval("CategoryName") 지시는 바인딩된 데이터 항목 컬렉션의 현재 항목에 대 한 "CatagoryName" 엔터티 모델 항목 이름의 값을 인출 합니다. 이 값은 매우 강력한 기능에 대 한 간결한 구문입니다.
+문을 Eval("CategoryName") 지시는 바인딩된 데이터 항목 컬렉션의 현재 항목에 대 한 "CategoryName" 엔터티 모델 항목 이름의 값을 인출 합니다. 이 값은 매우 강력한 기능에 대 한 간결한 구문입니다.
 
 이제 응용 프로그램을 실행할 수 있습니다.
 

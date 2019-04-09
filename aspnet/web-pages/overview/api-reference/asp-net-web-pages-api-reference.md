@@ -8,15 +8,15 @@ ms.date: 02/10/2014
 ms.assetid: 4001cb9b-3bfd-4ace-8a89-1561d8421e2c
 msc.legacyurl: /web-pages/overview/api-reference/asp-net-web-pages-api-reference
 msc.type: authoredcontent
-ms.openlocfilehash: 656987f8a725f81dbca7a72594d7d03bc542fabe
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 547b1932c4f8d3684c668561e3fe568a0f272925
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57063860"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59416508"
 ---
-<a name="aspnet-web-pages-razor-api-quick-reference"></a>ASP.NET 웹 페이지 (Razor) API 빠른 참조
-====================
+# <a name="aspnet-web-pages-razor-api-quick-reference"></a>ASP.NET 웹 페이지 (Razor) API 빠른 참조
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 페이지에는 가장 일반적으로 사용 되는 개체, 속성 및 Razor 구문이 있는 ASP.NET 웹 페이지를 프로그래밍 하는 방법의 간단한 예를 사용 하 여 목록을 포함 합니다.
@@ -37,7 +37,7 @@ ms.locfileid: "57063860"
 이 페이지에는 다음에 대 한 참조 정보가 들어 있습니다.
 
 - [클래스](#Classes)
-- [Data](#Data)
+- [데이터](#Data)
 - [도우미](#Helpers)
 - [유효성 검사](#Validation)
 
@@ -689,7 +689,7 @@ SMTP 서버에 대 한 암호를 설정합니다. 일반적으로이 속성 설�
 
 ### `WebMail.SmtpServer`
 
-SMTP 서버 이름을 설정합니다. 일반적으로이 속성 설정 된<em>\_AppStart</em> 페이지입니다.
+SMTP 서버 이름을 설정합니다. 일반적으로이 속성 설정 된  *\_AppStart* 페이지입니다.
 
 [!code-html[Main](asp-net-web-pages-api-reference/samples/sample105.html)]
 

@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: e1fec43e-1daf-49d2-b0c7-7f1b930455cc
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/dynamicpopulate/dynamically-populating-a-control-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 1f37a3a41c7b83738f97c0daacd781c52b55abc8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 42c1cd684196c026f1435cba289fc2535187087c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029510"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59417301"
 ---
-<a name="dynamically-populating-a-control-c"></a>동적으로 컨트롤 채우기(C#)
-====================
+# <a name="dynamically-populating-a-control-c"></a>동적으로 컨트롤 채우기(C#)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/d/8/f/d8f2f6f9-1b7c-46ad-9252-e1fc81bdea3e/dynamicpopulate0.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/dynamicpopulate0CS.pdf)
@@ -66,7 +66,7 @@ by [Christian Wenz](https://github.com/wenz)
 브라우저에서 ASP.NET 페이지를 실행 하 고 단추 클릭 월-일-연도 형식의 현재 날짜를 받게 됩니다.
 
 
-[![서버에서 날짜를 검색 하는 단추 클릭](dynamically-populating-a-control-cs/_static/image2.png)](dynamically-populating-a-control-cs/_static/image1.png)
+[![A 서버에서 날짜를 검색 하는 단추를 클릭](dynamically-populating-a-control-cs/_static/image2.png)](dynamically-populating-a-control-cs/_static/image1.png)
 
 서버에서 날짜를 검색 하는 단추 클릭 ([클릭 하 여 큰 이미지 보기](dynamically-populating-a-control-cs/_static/image3.png))
 

@@ -8,15 +8,15 @@ ms.date: 01/27/2009
 ms.assetid: 2ddd4407-d143-4a94-877c-21771bfb97a6
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/adding-dynamic-content-to-a-cached-page-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 26e40ff9659a4b8552b2a087c7c948c9f1f1554c
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: c126270304178d178f4b8f9739fa5c51e5dd0551
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58424172"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59415364"
 ---
-<a name="adding-dynamic-content-to-a-cached-page-c"></a>캐시된 페이지에 동적 콘텐츠 추가(C#)
-====================
+# <a name="adding-dynamic-content-to-a-cached-page-c"></a>캐시된 페이지에 동적 콘텐츠 추가(C#)
+
 by [Microsoft](https://github.com/microsoft)
 
 > 같은 페이지의 동적이 고 캐시 된 콘텐츠를 조합 하는 방법에 알아봅니다. 캐시 후 대체를 사용 하는 배너 광고 또는 뉴스 항목을 캐시에 출력 하는 페이지 내에서 같은 동적 콘텐츠를 표시할 수 있습니다.
@@ -44,7 +44,7 @@ by [Microsoft](https://github.com/microsoft)
 
 캐시 후 대체를 이용 하려면 HttpResponse.WriteSubstitution() 메서드를 호출 합니다. 동적 콘텐츠를 사용 하 여 캐시 된 페이지의 영역을 바꾸려면 WriteSubstitution() 메서드 코드를 설정 합니다. 목록 2 뷰에서 임의의 뉴스 항목을 표시 하려면 WriteSubstitution() 메서드가 사용 됩니다.
 
-**Listing 2 – Views\Home\Index.aspx**
+**2 – Views\Home\Index.aspx 나열**
 
 [!code-aspx[Main](adding-dynamic-content-to-a-cached-page-cs/samples/sample2.aspx)]
 
@@ -93,10 +93,6 @@ RenderBannerInternal() 메서드는 전용 메서드입니다. 이 메서드는 
 이 자습서는 캐시 된 페이지의 콘텐츠를 동적으로 업데이트 하는 방법을 설명 합니다. 캐시 된 페이지에 지정 된 수를 동적 콘텐츠를 사용 하도록 설정 하려면 HttpResponse.WriteSubstitution() 메서드를 사용 하는 방법을 알아보았습니다. HTML 도우미 메서드 내 WriteSubstitution() 메서드에 대 한 호출을 캡슐화 하는 방법을 알아보았습니다.
 
 가능한 – 웹 응용 프로그램의 성능에 상당한 영향을 미칠 수 있습니다이 캐싱을 활용 합니다. 이 자습서에서 설명 했 듯이 캐싱 페이지에 동적 콘텐츠를 표시 해야 하는 경우에 사용할 수 있습니다.
-
-## 
-
-## 
 
 > [!div class="step-by-step"]
 > [이전](improving-performance-with-output-caching-cs.md)
