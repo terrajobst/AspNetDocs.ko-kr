@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 70d5d106-b547-442c-a7fd-3492b3e3d646
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/reorderlist/using-postbacks-with-reorderlist-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 426e31bc9804c97b551b9c36679d2b821700b915
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6f8f74b74080104980e1db866d695fe7c6d9d5fc
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57063630"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59393355"
 ---
-<a name="using-postbacks-with-reorderlist-c"></a>ReorderList에 포스트백 사용(C#)
-====================
+# <a name="using-postbacks-with-reorderlist-c"></a>ReorderList에 포스트백 사용(C#)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/ReorderList4.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/reorderlist4CS.pdf)
@@ -62,7 +62,7 @@ by [Christian Wenz](https://github.com/wenz)
 [!code-aspx[Main](using-postbacks-with-reorderlist-cs/samples/sample6.aspx)]
 
 
-[![포스트백 트리거 각 순서 변경](using-postbacks-with-reorderlist-cs/_static/image2.png)](using-postbacks-with-reorderlist-cs/_static/image1.png)
+[![E포스트백을 트리거 대 한 ach 재정렬](using-postbacks-with-reorderlist-cs/_static/image2.png)](using-postbacks-with-reorderlist-cs/_static/image1.png)
 
 각 다시 정렬 포스트백을 트리거합니다 ([클릭 하 여 큰 이미지 보기](using-postbacks-with-reorderlist-cs/_static/image3.png))
 

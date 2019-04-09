@@ -8,15 +8,15 @@ ms.date: 07/17/2006
 ms.assetid: 22e99600-8d18-4a94-a20e-a3a62bb63798
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/customizing-the-data-modification-interface-cs
 msc.type: authoredcontent
-ms.openlocfilehash: f7004192edd636f4660f3184c3e725a6bfda865c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 727ef89069d3f1ddf22e993e1e3dceb144a43389
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57050600"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59390625"
 ---
-<a name="customizing-the-data-modification-interface-c"></a>데이터 수정 인터페이스 사용자 지정(C#)
-====================
+# <a name="customizing-the-data-modification-interface-c"></a>데이터 수정 인터페이스 사용자 지정(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_20_CS.exe) 또는 [PDF 다운로드](customizing-the-data-modification-interface-cs/_static/datatutorial20cs1.pdf)
@@ -31,7 +31,7 @@ BoundFields 및 CheckBoxFields GridView 및 DetailsView 컨트롤에서 사용 �
 에 [이전 자습서](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs.md) 유효성 검사 웹 컨트롤을 추가 하 여 데이터 수정 인터페이스 사용자 지정 하는 방법에 살펴보았습니다. 이 자습서는 BoundField 및 CheckBoxField의 표준 텍스트 상자를 대체 합니다. 실제 데이터 컬렉션 웹 컨트롤 및 대체 입력된 웹 컨트롤을 사용 하 여 CheckBox 컨트롤을 사용자 지정 하는 방법을 살펴보겠습니다. 특히, 제품의 이름, 범주, 공급자 및 지원 되지 않는 상태를 업데이트할 수 있도록 편집 가능한 GridView를 빌드 해 보겠습니다. 특정 행을 편집할 때 category와 supplier 필드도 렌더링 됩니다. Dropdownlist, 사용 가능한 범주 및 공급자에서 선택 집합을 포함 하 합니다. 또한 두 가지 옵션을 제공 하는 RadioButtonList 컨트롤과 CheckBoxField의 기본을 확인란을에서는 바꿉니다. "활성" 및 "중단"입니다.
 
 
-[![GridView의 편집 인터페이스 Dropdownlist 및 라디오 단추가 포함 됩니다.](customizing-the-data-modification-interface-cs/_static/image2.png)](customizing-the-data-modification-interface-cs/_static/image1.png)
+[![TGridView의 편집 인터페이스 포함 Dropdownlist 및 라디오 단추](customizing-the-data-modification-interface-cs/_static/image2.png)](customizing-the-data-modification-interface-cs/_static/image1.png)
 
 **그림 1**: GridView의 편집 인터페이스 포함 Dropdownlist 및 라디오 단추 ([클릭 하 여 큰 이미지 보기](customizing-the-data-modification-interface-cs/_static/image3.png))
 
@@ -56,7 +56,7 @@ BoundFields 및 CheckBoxFields GridView 및 DetailsView 컨트롤에서 사용 �
 사용 하 여는 `UpdateProduct` 편집할 수는 GridView를 만들 준비가 오버 로드를 추가 합니다. 열기를 `CustomizedUI.aspx` 페이지를 `EditInsertDelete` 폴더 GridView 컨트롤을 디자이너에 추가 합니다. 다음으로 새 ObjectDataSource GridView의 스마트 태그를 만듭니다. 통해 제품 정보를 검색할 ObjectDataSource 구성 합니다 `ProductBLL` 클래스의 `GetProducts()` 메서드를 사용 하 여 제품 데이터 업데이트는 `UpdateProduct` 방금 만든 오버 로드. INSERT 및 DELETE 탭에서 드롭 다운 목록에서 (없음)를 선택 합니다.
 
 
-[![방금 만든 UpdateProduct 오버 로드를 사용 하는 ObjectDataSource 구성](customizing-the-data-modification-interface-cs/_static/image5.png)](customizing-the-data-modification-interface-cs/_static/image4.png)
+[![CObjectDataSource의 UpdateProduct 오버 로드 방금 만든 데 onfigure](customizing-the-data-modification-interface-cs/_static/image5.png)](customizing-the-data-modification-interface-cs/_static/image4.png)
 
 **그림 2**: ObjectDataSource를 사용 하 여 구성 합니다 `UpdateProduct` 방금 만든 오버 로드 ([큰 이미지를 보려면 클릭](customizing-the-data-modification-interface-cs/_static/image6.png))
 
@@ -80,7 +80,7 @@ ObjectDataSource를 제품 값의 하위 집합만 업데이트 하도록 구성
 이러한 변경 이후 디자이너가 비슷합니다 그림 3, 아래에 표시 된 GridView의 선언적 구문을 사용 하 여 합니다.
 
 
-[![GridView에서 불필요 한 필드를 제거 합니다.](customizing-the-data-modification-interface-cs/_static/image8.png)](customizing-the-data-modification-interface-cs/_static/image7.png)
+[![RGridView에서 불필요 한 필드를 제거](customizing-the-data-modification-interface-cs/_static/image8.png)](customizing-the-data-modification-interface-cs/_static/image7.png)
 
 **그림 3**: GridView에서 불필요 한 필드를 제거 ([클릭 하 여 큰 이미지 보기](customizing-the-data-modification-interface-cs/_static/image9.png))
 
@@ -90,7 +90,7 @@ ObjectDataSource를 제품 값의 하위 집합만 업데이트 하도록 구성
 이 시점에서 GridView의 읽기 전용 동작이 완료 되었습니다. 데이터를 볼 때 각 제품 공급 업체, 제품의 이름, 범주를 보여 주는 GridView의 행으로 렌더링 되 고 상태를 중단 합니다.
 
 
-[![GridView의 읽기 전용 인터페이스는 완료](customizing-the-data-modification-interface-cs/_static/image11.png)](customizing-the-data-modification-interface-cs/_static/image10.png)
+[![TGridView의 읽기 전용 인터페이스는 완료](customizing-the-data-modification-interface-cs/_static/image11.png)](customizing-the-data-modification-interface-cs/_static/image10.png)
 
 **그림 4**: GridView의 읽기 전용 인터페이스는 완료 ([클릭 하 여 큰 이미지 보기](customizing-the-data-modification-interface-cs/_static/image12.png))
 
@@ -124,7 +124,7 @@ BoundField 읽기 전용으로 표시 된 이후 모두를 `ItemTemplate` 및 `E
 이전 자습서에서 살펴본 대로 디자이너를 통해 또는 선언적 구문에서 직접 템플릿을 편집할 수 있습니다. 디자이너를 통해 편집을 GridView의 스마트 태그에서 템플릿 편집 링크를 클릭 하 고 범주 필드를 사용 하 여 작업을 선택 `EditItemTemplate`합니다. 웹 컨트롤을 제거 하 고 DropDownList의 ID 속성을 설정 하는 DropDownList 컨트롤을 사용 하 여 대체 `Categories`합니다.
 
 
-[![텍스트 상자를 제거 하 고는 EditItemTemplate DropDownList 추가](customizing-the-data-modification-interface-cs/_static/image14.png)](customizing-the-data-modification-interface-cs/_static/image13.png)
+[![R제거 된 텍스트 상자 및 추가 EditItemTemplate DropDownList](customizing-the-data-modification-interface-cs/_static/image14.png)](customizing-the-data-modification-interface-cs/_static/image13.png)
 
 **그림 5**: 텍스트 상자를 제거 하 고는 DropDownList를 추가 합니다 `EditItemTemplate` ([큰 이미지를 보려면 클릭](customizing-the-data-modification-interface-cs/_static/image15.png))
 
@@ -132,7 +132,7 @@ BoundField 읽기 전용으로 표시 된 이후 모두를 `ItemTemplate` 및 `E
 다음 사용 가능한 범주를 사용 하 여 DropDownList를 채우는 해야 합니다. DropDownList의 스마트 태그의 데이터 소스 선택 링크를 클릭 하 고 명명 된 새 ObjectDataSource를 만들도록 선택할 `CategoriesDataSource`합니다.
 
 
-[![CategoriesDataSource 라는 새 ObjectDataSource 컨트롤 만들기](customizing-the-data-modification-interface-cs/_static/image17.png)](customizing-the-data-modification-interface-cs/_static/image16.png)
+[![C새 ObjectDataSource 컨트롤 이라는 CategoriesDataSource reate](customizing-the-data-modification-interface-cs/_static/image17.png)](customizing-the-data-modification-interface-cs/_static/image16.png)
 
 **그림 6**: 명명 된 새 ObjectDataSource 컨트롤을 만듭니다 `CategoriesDataSource` ([큰 이미지를 보려면 클릭](customizing-the-data-modification-interface-cs/_static/image18.png))
 
@@ -140,7 +140,7 @@ BoundField 읽기 전용으로 표시 된 이후 모두를 `ItemTemplate` 및 `E
 모든 범주를 반환 하는이 ObjectDataSource가 바인딩할 하는 `CategoriesBLL` 클래스의 `GetCategories()` 메서드.
 
 
-[![ObjectDataSource CategoriesBLL의 GetCategories() 메서드에 바인딩](customizing-the-data-modification-interface-cs/_static/image20.png)](customizing-the-data-modification-interface-cs/_static/image19.png)
+[![Bind CategoriesBLL의 GetCategories() 메서드에 ObjectDataSource](customizing-the-data-modification-interface-cs/_static/image20.png)](customizing-the-data-modification-interface-cs/_static/image19.png)
 
 **그림 7**: ObjectDataSource를 바인딩하는 `CategoriesBLL`의 `GetCategories()` 메서드 ([클릭 하 여 큰 이미지 보기](customizing-the-data-modification-interface-cs/_static/image21.png))
 
@@ -148,7 +148,7 @@ BoundField 읽기 전용으로 표시 된 이후 모두를 `ItemTemplate` 및 `E
 마지막으로, DropDownList의 설정을 구성 되도록 합니다 `CategoryName` 필드는 각 DropDownList에 표시 됩니다 `ListItem` 사용 하 여는 `CategoryID` 값으로 사용 되는 필드입니다.
 
 
-[![범주 필드 표시 있고 CategoryID 값으로 사용 됩니다.](customizing-the-data-modification-interface-cs/_static/image23.png)](customizing-the-data-modification-interface-cs/_static/image22.png)
+[![H평균 값으로 사용 하 여 CategoryID 및 CategoryName 필드가 표시](customizing-the-data-modification-interface-cs/_static/image23.png)](customizing-the-data-modification-interface-cs/_static/image22.png)
 
 **그림 8**: 가 합니다 `CategoryName` 필드가 표시 하며 `CategoryID` 값으로 사용 ([전체 크기 이미지를 보려면 클릭](customizing-the-data-modification-interface-cs/_static/image24.png))
 
@@ -167,7 +167,7 @@ BoundField 읽기 전용으로 표시 된 이후 모두를 `ItemTemplate` 및 `E
 두는 Dropdownlist를 추가한 후 `EditItemTemplate` 브라우저에서 페이지를 로드 및 Chef 100 케이준 Seasoning 제품에 대 한 편집 단추를 클릭 합니다. 그림 9에서 알 수 있듯이, 제품의 category와 supplier 열 공급자에서 선택 하 고 사용 가능한 범주를 포함 하는 드롭다운 목록으로 렌더링 됩니다. 그러나 합니다 *첫 번째* 모두 드롭 다운 목록에서 항목 기본적으로 선택 됩니다 (음료 범주) 및 특이 한 액체 공급자에 New Orleans 케이준에서 제공 하는 Condiment는 Chef 100 케이준 Seasoning Delights 합니다.
 
 
-[![드롭다운 목록에서 첫 번째 항목은 기본적으로 선택](customizing-the-data-modification-interface-cs/_static/image26.png)](customizing-the-data-modification-interface-cs/_static/image25.png)
+[![T또한 드롭다운 목록에서 첫 번째 항목은 기본적으로 선택 됩니다](customizing-the-data-modification-interface-cs/_static/image26.png)](customizing-the-data-modification-interface-cs/_static/image25.png)
 
 **그림 9**: 드롭다운 목록에서 첫 번째 항목은 기본적으로 선택 됩니다 ([클릭 하 여 큰 이미지 보기](customizing-the-data-modification-interface-cs/_static/image27.png))
 
@@ -181,7 +181,7 @@ BoundField 읽기 전용으로 표시 된 이후 모두를 `ItemTemplate` 및 `E
 또는 디자이너를 통해 템플릿을 편집 하 고 DropDownList의 스마트 태그에서 데이터 바인딩 편집 링크를 클릭 하 여 DropDownList의 데이터 바인딩을 설정할 수 있습니다. 다음으로 나타내는 합니다 `SelectedValue` 속성에 각각 바인딩해야 합니다 `CategoryID` 양방향 데이터 바인딩을 사용 하 여 필드 (그림 10 참조). 바인딩할 선언적 또는 디자이너 프로세스를 반복 합니다 `SupplierID` 데이터 필드를 `Suppliers` DropDownList 합니다.
 
 
-[![CategoryID 양방향 데이터 바인딩을 사용 하 여 DropDownList의 SelectedValue 속성에 바인딩](customizing-the-data-modification-interface-cs/_static/image29.png)](customizing-the-data-modification-interface-cs/_static/image28.png)
+[![B양방향 데이터 바인딩을 사용 하 여 DropDownList의 SelectedValue 속성에 대 한 CategoryID 찾기](customizing-the-data-modification-interface-cs/_static/image29.png)](customizing-the-data-modification-interface-cs/_static/image28.png)
 
 **그림 10**: 바인딩하는 `CategoryID` DropDownList의 하 `SelectedValue` 를 사용 하 여 양방향 데이터 바인딩 속성 ([전체 크기 이미지를 보려면 클릭](customizing-the-data-modification-interface-cs/_static/image30.png))
 
@@ -189,7 +189,7 @@ BoundField 읽기 전용으로 표시 된 이후 모두를 `ItemTemplate` 및 `E
 바인딩이 적용 된 후의 `SelectedValue` Dropdownlist 두의 속성을 편집된 하는 제품의 category와 supplier 열은 기본적으로 현재 제품의 값입니다. 업데이트를 클릭 하면를 `CategoryID` 하 고 `SupplierID` 선택한 드롭 다운 목록 항목의 값에 전달 됩니다는 `UpdateProduct` 메서드. 데이터 바인딩 문을 추가한; 후 그림 11은 자습서 Chef 100 케이준 Seasoning 선택한 드롭다운 목록에서 항목와 되는 방식 올바르게 Condiment New Orleans 케이준 Delights note 합니다.
 
 
-[![기본적으로 선택 되어 편집할 제품의 현재 범주 및 공급자 값](customizing-the-data-modification-interface-cs/_static/image32.png)](customizing-the-data-modification-interface-cs/_static/image31.png)
+[![T그 편집할 제품의 현재 범주 및 공급자 값은 기본적으로 선택 됩니다](customizing-the-data-modification-interface-cs/_static/image32.png)](customizing-the-data-modification-interface-cs/_static/image31.png)
 
 **그림 11**: 편집할 제품의 현재 범주 및 공급자 값은 기본적으로 선택 됩니다 ([클릭 하 여 큰 이미지 보기](customizing-the-data-modification-interface-cs/_static/image33.png))
 
@@ -219,7 +219,7 @@ Dropdownlist 두를 설정 하 여 시작 `AppendDataBoundItems` 속성을 `true
 이 사용 하 여 추가 `ListItem`, 이제 편집 인터페이스를 할당할 수 있습니다 `NULL` 제품의 값 `CategoryID` 및 `SupplierID` 그림 12에 나와 있는 것 처럼 필드입니다.
 
 
-[![제품의 범주 또는 공급 업체에 대해 NULL 값을 할당할 (없음)을 선택 합니다.](customizing-the-data-modification-interface-cs/_static/image35.png)](customizing-the-data-modification-interface-cs/_static/image34.png)
+[![C설치할 제품의 범주 또는 공급 업체에 대해 NULL 값을 할당할 (없음)](customizing-the-data-modification-interface-cs/_static/image35.png)](customizing-the-data-modification-interface-cs/_static/image34.png)
 
 **그림 12**: 할당할 선택 (없음)를 `NULL` 제품의 범주 또는 공급 업체에 대 한 값 ([큰 이미지를 보려면 클릭](customizing-the-data-modification-interface-cs/_static/image36.png))
 
@@ -233,7 +233,7 @@ Dropdownlist 두를 설정 하 여 시작 `AppendDataBoundItems` 속성을 `true
 확인란을 모두 대체 합니다 `ItemTemplate` 및 `EditItemTemplate` RadioButtonList 컨트롤과 두 RadioButtonLists' 설정 `ID` 속성을 `DiscontinuedChoice`입니다. 다음으로, 나타냅니다는 RadioButtonLists 해야 각각 포함 하는 두 개의 라디오 단추를 레이블이 지정 된 "활성" 값이 "False" 및 "중단" 레이블이 지정 된 값이 "True" 인. 입력 하거나이 수행 하는 `<asp:ListItem>` 선언적 구문 또는 사용을 통해 직접 요소를 `ListItem` 디자이너에서 컬렉션 편집기입니다. 그림 13은는 `ListItem` 컬렉션 편집기 후 두 개의 라디오 단추 옵션 지정 되었습니다.
 
 
-[![추가](customizing-the-data-modification-interface-cs/_static/image38.png)](customizing-the-data-modification-interface-cs/_static/image37.png)
+[![Add](customizing-the-data-modification-interface-cs/_static/image38.png)](customizing-the-data-modification-interface-cs/_static/image37.png)
 
 **그림 13**: RadioButtonList에 "활성" 및 "지원 되지 않는" 옵션 추가 ([클릭 하 여 큰 이미지 보기](customizing-the-data-modification-interface-cs/_static/image39.png))
 
@@ -250,7 +250,7 @@ RadioButtonList 컨트롤의 할당 해야 `SelectedValue` 제품에 따라 적�
 이러한 변경으로는 `Discontinued` 열 확인란 목록에서 라디오 단추 쌍 (그림 14 참조)로 변환 되었습니다. 제품을 편집할 때 적절 한 라디오 단추를 선택한 다른 라디오 단추를 선택 하 고 업데이트를 클릭 하 여 제품의 지원 되지 않는 상태를 업데이트할 수 있습니다.
 
 
-[![지원 되지 않는 확인란 라디오 단추 쌍으로 대체 되었습니다.](customizing-the-data-modification-interface-cs/_static/image41.png)](customizing-the-data-modification-interface-cs/_static/image40.png)
+[![T그 Discontinued 확인란 라디오 단추 쌍으로 대체 되었습니다](customizing-the-data-modification-interface-cs/_static/image41.png)](customizing-the-data-modification-interface-cs/_static/image40.png)
 
 **그림 14**: 지원 되지 않는 확인란 바뀌었습니다 라디오 단추 쌍 ([클릭 하 여 큰 이미지 보기](customizing-the-data-modification-interface-cs/_static/image42.png))
 

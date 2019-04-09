@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: afa59dfa-fef1-43d3-8fdd-aea3be36ed3c
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/numericupdown/creating-a-numeric-up-down-control-with-a-web-service-backend-vb
 msc.type: authoredcontent
-ms.openlocfilehash: bf69b3e6932df528e8ccd2348ffa6f13132f99f8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0442b5e22e44e0767825026b26ad3da55777b962
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029490"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59384268"
 ---
-<a name="creating-a-numeric-updown-control-with-a-web-service-backend-vb"></a>웹 서비스 백 엔드를 사용하여 숫자 위로/아래로 컨트롤 만들기(VB)
-====================
+# <a name="creating-a-numeric-updown-control-with-a-web-service-backend-vb"></a>웹 서비스 백 엔드를 사용하여 숫자 위로/아래로 컨트롤 만들기(VB)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/numericupdown1.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/numericupdown1VB.pdf)
@@ -54,7 +54,7 @@ ASP.NET AJAX Control Toolkit에 포함 된 `NumericUpDown` 텍스트 상자에 �
 페이지를 실행 하는 방법을 텍스트 상자에 값을 항상 두 배로 위쪽 단추를 클릭 하 고 아래쪽 단추를 클릭할 때 절반이 됩니다 알 수 있습니다.
 
 
-[![2의 제곱 된 번호만 표시](creating-a-numeric-up-down-control-with-a-web-service-backend-vb/_static/image2.png)](creating-a-numeric-up-down-control-with-a-web-service-backend-vb/_static/image1.png)
+[![O2의 제곱 된 있는 숫자 표시](creating-a-numeric-up-down-control-with-a-web-service-backend-vb/_static/image2.png)](creating-a-numeric-up-down-control-with-a-web-service-backend-vb/_static/image1.png)
 
 2의 제곱 된 번호만 표시 ([클릭 하 여 큰 이미지 보기](creating-a-numeric-up-down-control-with-a-web-service-backend-vb/_static/image3.png))
 

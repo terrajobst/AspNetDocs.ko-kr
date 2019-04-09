@@ -8,15 +8,15 @@ ms.date: 06/26/2013
 ms.assetid: 23fc77da-2725-4434-99a0-ff872d96336b
 msc.legacyurl: /web-api/overview/web-api-routing-and-actions/create-a-rest-api-with-attribute-routing
 msc.type: authoredcontent
-ms.openlocfilehash: 18a44c280e6df1603837938d24d7d639d8c87cc2
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a58daa96410de734619bf65f84346137c7d3cf44
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57055180"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59393303"
 ---
-<a name="create-a-rest-api-with-attribute-routing-in-aspnet-web-api-2"></a>ASP.NET Web API 2에서에서 특성 라우팅을 사용 하 여 REST API 만들기
-====================
+# <a name="create-a-rest-api-with-attribute-routing-in-aspnet-web-api-2"></a>ASP.NET Web API 2에서에서 특성 라우팅을 사용 하 여 REST API 만들기
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 Web API 2에는 새 형식을 지 원하는 라우팅의 호출 *특성 라우팅은*합니다. 특성 라우팅의 일반적인 개요를 참조 하세요 [Web API 2에서 특성 라우팅](attribute-routing-in-web-api-2.md)합니다. 이 자습서에서는 사용할지 특성 라우팅은 컬렉션에 대 한 REST API를 만드는 합니다. API에는 다음 작업을 지원 해야 합니다.
@@ -181,8 +181,7 @@ Ctrl+Shift+B를 눌러 프로젝트를 빌드합니다. Entity Framework 리플�
 
 ## <a name="get-books-by-genre"></a>장르별 책 가져오기
 
-클라이언트는 GET 요청을 전송 하는 데 특정 장르에 책 목록을 가져오려고 `/api/books/genre`, 여기서 *장르* 장르의 이름입니다. 
-  `/api/books/fantasy` 등을 예로 들 수 있습니다.
+클라이언트는 GET 요청을 전송 하는 데 특정 장르에 책 목록을 가져오려고 `/api/books/genre`, 여기서 *장르* 장르의 이름입니다. `/api/books/fantasy` 등을 예로 들 수 있습니다.
 
 다음 메서드를 추가 `BooksController`합니다.
 

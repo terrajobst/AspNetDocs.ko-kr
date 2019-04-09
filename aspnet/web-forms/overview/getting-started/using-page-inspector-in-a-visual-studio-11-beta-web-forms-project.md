@@ -8,24 +8,24 @@ ms.date: 08/15/2012
 ms.assetid: 2ece0bf4-aae5-4ff4-8f62-28e0819d4f86
 msc.legacyurl: /web-forms/overview/getting-started/using-page-inspector-in-a-visual-studio-11-beta-web-forms-project
 msc.type: authoredcontent
-ms.openlocfilehash: d2c377f8466f8f324b75ce60860aa00c11bc0ffe
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c39e1cf42fde382a9e74d7f865f0dac1aa62ddc8
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058480"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59384242"
 ---
-<a name="using-page-inspector-for-visual-studio-2012-in-aspnet-web-forms"></a>ASP.NET Web Forms에서 Visual Studio 2012용 페이지 검사기 사용
-====================
+# <a name="using-page-inspector-for-visual-studio-2012-in-aspnet-web-forms"></a>ASP.NET Web Forms에서 Visual Studio 2012용 페이지 검사기 사용
+
 Tim Ammann 여
 
 > Visual Studio 2012 용 페이지 검사기는 통합 된 브라우저를 사용 하 여 웹 개발 도구입니다. 통합 된 브라우저에서 모든 요소를 선택 하 고 요소의 소스 및 CSS 페이지 검사기를 즉시 강조 표시 합니다. 응용 프로그램에서 모든 페이지를 탐색, 신속 하 게 렌더링 된 태그의 원본을 살펴봅니다를 Visual Studio 환경 내에서 바로 브라우저 도구를 사용 합니다.
 > 
-> 이 자습서 shwos 검사 모드를 활성화 한 후 신속 하 게 찾아 CSS 규칙 및 웹 프로젝트 내에서 텍스트를 편집 하는 방법입니다. 이 자습서에서는 Web Forms 응용 프로그램 프로젝트를 사용 하지만 웹 사이트 프로젝트에 대 한 페이지 검사기를 사용할 수도 있습니다 및 [MVC](https://go.microsoft.com/?linkid=9802002) 응용 프로그램입니다.
+> 이 자습서에서는 검사 모드를 활성화 한 후 신속 하 게 찾아 CSS 규칙 및 웹 프로젝트 내에서 텍스트를 편집 하는 방법을 보여 줍니다. 이 자습서에서는 Web Forms 응용 프로그램 프로젝트를 사용 하지만 웹 사이트 프로젝트에 대 한 페이지 검사기를 사용할 수도 있습니다 및 [MVC](https://go.microsoft.com/?linkid=9802002) 응용 프로그램입니다.
 > 
 > 이 자습서에는 다음 섹션이 있습니다.
 > 
-> [필수 조건](#_1_prerequisites)
+> [전제 조건](#_1_prerequisites)
 > 
 > [웹 응용 프로그램 만들기](#_2_creating_a)
 > 

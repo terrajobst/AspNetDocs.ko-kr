@@ -8,15 +8,15 @@ ms.date: 08/03/2007
 ms.assetid: c655c324-2ffa-4c21-8265-a254d79a693d
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/debugging-stored-procedures-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 4558a309248c89483d198f47f731eee2a266695f
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 9ac206edee58542ced24ce89adc3393d7a3c1c37
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58421468"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59392172"
 ---
-<a name="debugging-stored-procedures-c"></a>저장 프로시저 디버그(C#)
-====================
+# <a name="debugging-stored-procedures-c"></a>저장 프로시저 디버그(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_74_CS.zip) 또는 [PDF 다운로드](debugging-stored-procedures-cs/_static/datatutorial74cs1.pdf)
@@ -67,7 +67,7 @@ Visual Studio를 사용 하면 쉽게 데이터베이스 개체를 직접 디버
 에 대 한 값을 입력 한 후의 `@CategoryID` 매개 변수를 저장된 프로시저 실행 됩니다. 하지만 완료 될 때까지 실행 하는 대신 디버거가 첫 번째 문에서 실행을 중단 합니다. 저장된 프로시저의 현재 위치를 나타내는 여백에 있는 노란색 화살표는 note 합니다. 확인 및 조사식 창을 통해 또는 저장된 프로시저의 매개 변수 이름을 마우스로 매개 변수 값을 편집할 수 있습니다.
 
 
-[![저장 프로시저의 첫 번째 문에서 디버거 중지](debugging-stored-procedures-cs/_static/image3.png)](debugging-stored-procedures-cs/_static/image2.png)
+[![T저장 프로시저의 첫 번째 문에서 중지 그 디버거](debugging-stored-procedures-cs/_static/image3.png)](debugging-stored-procedures-cs/_static/image2.png)
 
 **그림 2**: 디버거가 저장 프로시저의 첫 번째 문에서 중지 ([클릭 하 여 큰 이미지 보기](debugging-stored-procedures-cs/_static/image4.png))
 
@@ -85,7 +85,7 @@ Visual Studio를 사용 하면 쉽게 데이터베이스 개체를 직접 디버
 응용 프로그램에서 호출한 저장된 프로시저를 디버깅을 시작할 수 있습니다, 전에 SQL Server 디버거를 사용 하 여 통합을 ASP.NET 웹 응용 프로그램에 지시 해야 합니다. 솔루션 탐색기에서 웹 사이트 이름을 마우스 오른쪽 단추로 클릭 하 여 시작 (`ASPNET_Data_Tutorial_74_CS`). 상황에 맞는 메뉴에서 속성 페이지 옵션을 선택 하 고, 왼쪽에서 시작 옵션 항목 선택, 디버거 섹션에서 SQL Server 확인란 (그림 3 참조).
 
 
-[![응용 프로그램의 속성 페이지에서 SQL Server 확인란](debugging-stored-procedures-cs/_static/image6.png)](debugging-stored-procedures-cs/_static/image5.png)
+[![C도대체 응용 프로그램의 속성 페이지에서에서 확인란을 SQL Server](debugging-stored-procedures-cs/_static/image6.png)](debugging-stored-procedures-cs/_static/image5.png)
 
 **그림 3**: 속성 페이지 응용 프로그램에서에서 SQL Server 확인란 ([클릭 하 여 큰 이미지 보기](debugging-stored-procedures-cs/_static/image7.png))
 
@@ -108,7 +108,7 @@ Visual Studio를 사용 하면 쉽게 데이터베이스 개체를 직접 디버
 열기는 `Products_SelectByCategoryID` 의 시작 부분에 중단점을 설정 하 고 저장 프로시저는 `SELECT` 적절 한 위치에서 여백을 클릭 하 여 문이나의 시작 부분에 커서를 배치 하 여는 `SELECT` 문과 f9입니다. 그림 4에서 알 수 있듯이, 중단점 여백에 빨간색 원으로 표시 합니다.
 
 
-[![Products_SelectByCategoryID에 중단점을 설정 저장 프로시저](debugging-stored-procedures-cs/_static/image9.png)](debugging-stored-procedures-cs/_static/image8.png)
+[![S예: 저장 프로시저는 Products_SelectByCategoryID 중단점](debugging-stored-procedures-cs/_static/image9.png)](debugging-stored-procedures-cs/_static/image8.png)
 
 **그림 4**: 중단점을 설정 합니다 `Products_SelectByCategoryID` 저장 프로시저 ([큰 이미지를 보려면 클릭](debugging-stored-procedures-cs/_static/image10.png))
 
@@ -126,12 +126,12 @@ Visual Studio를 사용 하면 쉽게 데이터베이스 개체를 직접 디버
 합니다 `Products_SelectByCategoryID` 저장된 프로시저에서 만든 합니다 [사용 하 여 기존 저장 프로시저는 입력 데이터 집합의 Tableadapter에 대 한](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-cs.md) 자습서입니다. 해당 하는 웹 페이지 (`~/AdvancedDAL/ExistingSprocs.aspx`)이 저장된 프로시저에서 반환 된 결과 표시 하는 GridView를 포함 합니다. 브라우저를 통해이 페이지를 방문 합니다. 페이지의 중단점에 도달 하면는 `Products_SelectByCategoryID` 저장된 프로시저 소진 하 고 Visual Studio에 제어를 반환 합니다. 마찬가지로 1 단계에서에서 s 문 저장된 프로시저 및 뷰를 통해 단계를 매개 변수 값을 수정 합니다.
 
 
-[![ExistingSprocs.aspx 페이지에는 처음에 음료 표시](debugging-stored-procedures-cs/_static/image13.png)](debugging-stored-procedures-cs/_static/image12.png)
+[![T그 ExistingSprocs.aspx 페이지를 처음에 음료 표시](debugging-stored-procedures-cs/_static/image13.png)](debugging-stored-procedures-cs/_static/image12.png)
 
 **그림 6**: 합니다 `ExistingSprocs.aspx` 페이지에는 처음에 Beverages 표시 됩니다 ([큰 이미지를 보려면 클릭](debugging-stored-procedures-cs/_static/image14.png))
 
 
-[![저장 프로시저의 중단점에 도달 했습니다.](debugging-stored-procedures-cs/_static/image16.png)](debugging-stored-procedures-cs/_static/image15.png)
+[![T또한 저장 프로시저의 중단점에 도달 했습니다](debugging-stored-procedures-cs/_static/image16.png)](debugging-stored-procedures-cs/_static/image15.png)
 
 **그림 7**: 중단점에 도달 하는 저장 프로시저 s ([클릭 하 여 큰 이미지 보기](debugging-stored-procedures-cs/_static/image17.png))
 
@@ -139,12 +139,12 @@ Visual Studio를 사용 하면 쉽게 데이터베이스 개체를 직접 디버
 그림 7 표시 값의에서 조사식 창으로는 `@CategoryID` 매개 변수는 1입니다. 때문에 이것이 합니다 `ExistingSprocs.aspx` 페이지 있는 음료 범주에서 제품을 처음에 표시를 `CategoryID` 값이 1입니다. 드롭다운 목록에서 다른 범주를 선택 합니다. 이렇게 포스트백 하 고 다시 실행 된 `Products_SelectByCategoryID` 저장 프로시저입니다. 마찬가지로 이번 중단점에 도달 합니다 `@CategoryID` s 선택한 드롭다운 목록에서 항목을 반영 하는 매개 변수의 값 `CategoryID`합니다.
 
 
-[![드롭다운 목록에서 다른 범주를 선택 합니다.](debugging-stored-procedures-cs/_static/image19.png)](debugging-stored-procedures-cs/_static/image18.png)
+[![C설치할 드롭 다운 목록에서 다른 범주](debugging-stored-procedures-cs/_static/image19.png)](debugging-stored-procedures-cs/_static/image18.png)
 
 **그림 8**: 드롭다운 목록에서 다른 범주를 선택 ([클릭 하 여 큰 이미지 보기](debugging-stored-procedures-cs/_static/image20.png))
 
 
-[![@CategoryID 웹 페이지에서 선택한 범주를 반영 하는 매개 변수](debugging-stored-procedures-cs/_static/image22.png)](debugging-stored-procedures-cs/_static/image21.png)
+[![T그 @CategoryID 매개 변수는 웹 페이지에서 범주 선택 반영](debugging-stored-procedures-cs/_static/image22.png)](debugging-stored-procedures-cs/_static/image21.png)
 
 **그림 9**: 합니다 `@CategoryID` 매개 변수 반영 웹 페이지에서 범주를 선택 합니다 ([큰 이미지를 보려면 클릭](debugging-stored-procedures-cs/_static/image23.png))
 

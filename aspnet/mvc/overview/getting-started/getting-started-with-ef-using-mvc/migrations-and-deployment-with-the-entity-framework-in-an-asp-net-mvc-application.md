@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.assetid: d4dfc435-bda6-4621-9762-9ba270f8de4e
 msc.legacyurl: /mvc/overview/getting-started/getting-started-with-ef-using-mvc/migrations-and-deployment-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: dd6bf5d8eb8a05dad1d230ef40c9b863e2af7094
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1f25a9afdf379d725496bd88f6ac192ab19930ca
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57036990"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59384515"
 ---
 # <a name="tutorial-use-ef-migrations-in-an-aspnet-mvc-app-and-deploy-to-azure"></a>자습서: ASP.NET MVC 앱에서 EF 마이그레이션을 사용 하 고 Azure에 배포
 
@@ -168,8 +168,8 @@ Azure SQL database로 데이터베이스를 배포할 수 있습니다. SQL data
 10. 수정할 [데이터 정렬](/sql/relational-databases/collations/collation-and-unicode-support) 필요에 따라 합니다.
 11. 관리자가 입력 **SQL 관리자 사용자 이름** 하 고 **SQL 관리자 암호**합니다.
 
-   - 선택한 경우 **새 SQL Database 서버**, 새 이름 및 데이터베이스를 액세스 하는 경우 나중에 사용할 암호를 정의 합니다.
-   - 이전에 만든 서버를 선택한 경우 해당 서버에 대 한 자격 증명을 입력 합니다.
+    - 선택한 경우 **새 SQL Database 서버**, 새 이름 및 데이터베이스를 액세스 하는 경우 나중에 사용할 암호를 정의 합니다.
+    - 이전에 만든 서버를 선택한 경우 해당 서버에 대 한 자격 증명을 입력 합니다.
 
 12. Application Insights를 사용 하 여 App Service에 대 한 원격 분석 수집을 사용할 수 있습니다. 간단한 구성을 사용 하 여 Application Insights는 중요 한 이벤트, 예외, 종속성, 요청 및 추적 정보를 수집합니다. Application Insights에 대 한 자세한 내용은 참조 하세요 [Azure Monitor](https://azure.microsoft.com/services/monitor/)합니다.
 13. 클릭 **만들기** 마친를 나타내기 위해 맨 아래에 있습니다.

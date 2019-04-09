@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 684f0c28-a490-4e5b-b5e5-5dfb77464b49
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/cascadingdropdown/using-cascadingdropdown-with-a-database-cs
 msc.type: authoredcontent
-ms.openlocfilehash: ed5057ee942ce57503b038cbd856fefaa3d287ce
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ef40d71828237a3d086c7c1bb05de56e0770f588
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57042570"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59391275"
 ---
-<a name="using-cascadingdropdown-with-a-database-c"></a>데이터베이스에 CascadingDropDown 사용(C#)
-====================
+# <a name="using-cascadingdropdown-with-a-database-c"></a>데이터베이스에 CascadingDropDown 사용(C#)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/9/0/7/907760b1-2c60-4f81-aeb6-ca416a573b0d/cascadingdropdown1.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/cascadingdropdown1CS.pdf)
@@ -86,12 +86,12 @@ CascadingDropDown을 호출한 웹 메서드의 시그니처는 다음과 같습
 ASP.NET 페이지를 로드 하 고 잠시 후 공급 업체 목록 25 개 항목으로 채워집니다. 하나의 항목을 선택 하 고 두 번째 드롭다운 목록을 데이터로 채워지는 방법을 확인 합니다.
 
 
-[![첫 번째 목록은 자동으로 채워집니다.](using-cascadingdropdown-with-a-database-cs/_static/image2.png)](using-cascadingdropdown-with-a-database-cs/_static/image1.png)
+[![T그 첫 번째 목록에 대 한 연결이 자동으로 채워집니다](using-cascadingdropdown-with-a-database-cs/_static/image2.png)](using-cascadingdropdown-with-a-database-cs/_static/image1.png)
 
 첫 번째 목록은 자동으로 채워집니다 ([클릭 하 여 큰 이미지 보기](using-cascadingdropdown-with-a-database-cs/_static/image3.png))
 
 
-[![두 번째 목록의 첫 번째 목록에서 선택 항목에 따라 채워집니다.](using-cascadingdropdown-with-a-database-cs/_static/image5.png)](using-cascadingdropdown-with-a-database-cs/_static/image4.png)
+[![T첫 번째 목록에서 선택 항목에 따라 그 두 번째 목록이 채워질 때](using-cascadingdropdown-with-a-database-cs/_static/image5.png)](using-cascadingdropdown-with-a-database-cs/_static/image4.png)
 
 첫 번째 목록에서 선택 항목에 따라 두 번째 목록 채워집니다 ([클릭 하 여 큰 이미지 보기](using-cascadingdropdown-with-a-database-cs/_static/image6.png))
 

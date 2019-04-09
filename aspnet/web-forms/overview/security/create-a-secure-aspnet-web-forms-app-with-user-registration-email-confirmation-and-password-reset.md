@@ -8,15 +8,15 @@ ms.date: 10/02/2014
 ms.assetid: 0a8d6044-5fab-4213-82d6-5618d5601358
 msc.legacyurl: /web-forms/overview/security/create-a-secure-aspnet-web-forms-app-with-user-registration-email-confirmation-and-password-reset
 msc.type: authoredcontent
-ms.openlocfilehash: 1bd90f0ceddee7d9e18c1cac2fadfb2c84841f19
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 3df728891103de9c8e461ab9507237c9b14e8251
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58424640"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59390690"
 ---
-<a name="create-a-secure-aspnet-web-forms-app-with-user-registration-email-confirmation-and-password-reset-c"></a>사용자 등록, 전자 메일 확인 및 암호 재설정 기능이 있는 보안 ASP.NET Web Forms 앱 만들기(C#)
-====================
+# <a name="create-a-secure-aspnet-web-forms-app-with-user-registration-email-confirmation-and-password-reset-c"></a>사용자 등록, 전자 메일 확인 및 암호 재설정 기능이 있는 보안 ASP.NET Web Forms 앱 만들기(C#)
+
 [Erik Reitan](https://github.com/Erikre)
 
 > 이 자습서에서는 사용자 등록, 전자 메일 확인 및 ASP.NET Id 멤버 자격 시스템을 사용 하 여 암호를 사용 하 여 ASP.NET Web Forms 앱을 빌드하는 방법을 보여 줍니다. 이 자습서 Rick Anderson의 기반한 [MVC 자습서](../../../mvc/overview/security/create-an-aspnet-mvc-5-web-app-with-email-confirmation-and-password-reset.md)합니다.

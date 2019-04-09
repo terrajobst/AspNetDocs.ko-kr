@@ -8,15 +8,15 @@ ms.date: 05/28/2015
 ms.assetid: 7e85c70e-1a88-4408-8b3d-29611c7713ed
 msc.legacyurl: /web-pages/overview/getting-started/introducing-aspnet-web-pages-2/publishing
 msc.type: authoredcontent
-ms.openlocfilehash: bd6611a03ee4940f5d4176ce23464f313b9ec884
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ece436d44908497d6cf10017ba1ee285bfb4a5b2
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029760"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59382105"
 ---
-<a name="introducing-aspnet-web-pages---publishing-a-site-by-using-webmatrix"></a>ASP.NET Web Pages-WebMatrix를 사용 하 여 사이트를 게시 소개
-====================
+# <a name="introducing-aspnet-web-pages---publishing-a-site-by-using-webmatrix"></a>ASP.NET Web Pages-WebMatrix를 사용 하 여 사이트를 게시 소개
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 자습서는 ASP.NET Web Pages 및 Microsoft WebMatrix를 소개 하는 자습서 집합에서 마지막 3 부입니다. 다른 사용자가 작업할 수 있도록 사이트를 인터넷에 게시 하는 방법에 설명 합니다. 통해 시리즈를 완료 했다고 가정 하 [ASP.NET Web Pages 사이트에 대 한 일관성 확인을 만드는](https://go.microsoft.com/fwlink/?LinkId=251585)합니다.

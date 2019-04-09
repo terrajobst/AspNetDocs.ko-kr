@@ -2,26 +2,26 @@
 uid: web-forms/overview/older-versions-getting-started/master-pages/control-id-naming-in-content-pages-vb
 title: 콘텐츠 페이지 (VB)에서 ID 명명 제어 | Microsoft Docs
 author: rick-anderson
-description: Contentplaceholder 명명 컨테이너 역할을 하 고 따라서 (FindConrol)를 통해 어려운 컨트롤을 사용 하 여 프로그래밍 방식으로 작업을 확인 하는 방법을 보여 줍니다...
+description: Contentplaceholder 명명 컨테이너 역할을 하 고 따라서 (FindControl)를 통해 어려운 컨트롤을 사용 하 여 프로그래밍 방식으로 작업을 확인 하는 방법을 보여 줍니다...
 ms.author: riande
 ms.date: 06/10/2008
 ms.assetid: dbb024a6-f043-4fc5-ad66-56556711875b
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/control-id-naming-in-content-pages-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 6e9a751538ca28250e4e776ff2c6c3f0185ffbe6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: dd60d02c2c3840edd4c0e1244623fcea0cb2db0b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57059310"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59386322"
 ---
-<a name="control-id-naming-in-content-pages-vb"></a>콘텐츠 페이지에서 컨트롤 ID 이름 지정(VB)
-====================
+# <a name="control-id-naming-in-content-pages-vb"></a>콘텐츠 페이지에서 컨트롤 ID 이름 지정(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/e/e/f/eef369f5-743a-4a52-908f-b6532c4ce0a4/ASPNET_MasterPages_Tutorial_05_VB.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/8/f/6/8f6349e4-6554-405a-bcd7-9b094ba5089a/ASPNET_MasterPages_Tutorial_05_VB.pdf)
 
-> Contentplaceholder 명명 컨테이너 역할을 하 고 따라서 (FindConrol)를 통해 어려운 컨트롤을 사용 하 여 프로그래밍 방식으로 작업을 확인 하는 방법을 보여 줍니다. 이 문제와 해결 방법에 살펴봅니다. 결과 ClientID 값을 프로그래밍 방식으로 액세스 하는 방법을 설명 합니다.
+> Contentplaceholder 명명 컨테이너 역할을 하 고 따라서 (FindControl)를 통해 어려운 컨트롤을 사용 하 여 프로그래밍 방식으로 작업을 확인 하는 방법을 보여 줍니다. 이 문제와 해결 방법에 살펴봅니다. 결과 ClientID 값을 프로그래밍 방식으로 액세스 하는 방법을 설명 합니다.
 
 
 ## <a name="introduction"></a>소개
@@ -83,7 +83,7 @@ ASP.NET 수정 사항을 더 잘 이해 하려면 엔진에 게는 렌더링 된
 그림 3에서는 Visual Studio의 디자이너를 통해 볼 때 페이지를 보여 줍니다.
 
 
-[![페이지에는 세 개의 웹 컨트롤이 포함 됩니다:는 텍스트, 단추 및 레이블](control-id-naming-in-content-pages-vb/_static/image4.png)](control-id-naming-in-content-pages-vb/_static/image3.png)
+[![T그 페이지 포함 된 3 개의 웹 컨트롤: 텍스트, 단추 및 레이블을](control-id-naming-in-content-pages-vb/_static/image4.png)](control-id-naming-in-content-pages-vb/_static/image3.png)
 
 **그림 03**: 페이지 포함 세 개의 웹 컨트롤이:는 텍스트, 단추 및 레이블 ([클릭 하 여 큰 이미지 보기](control-id-naming-in-content-pages-vb/_static/image5.png))
 
@@ -133,7 +133,7 @@ ASP.NET 수정 사항을 더 잘 이해 하려면 엔진에 게는 렌더링 된
 이 코드를 입력 한 후 참조를 `IDIssues.aspx` 브라우저를 통해 페이지에서 나가를 입력 하 고 "제출" 단추를 클릭 합니다. "제출" 단추를 클릭 하면는 `NullReferenceException` 발생 (그림 5 참조).
 
 
-[![NullReferenceException이 발생](control-id-naming-in-content-pages-vb/_static/image8.png)](control-id-naming-in-content-pages-vb/_static/image7.png)
+[![A NullReferenceException이 발생](control-id-naming-in-content-pages-vb/_static/image8.png)](control-id-naming-in-content-pages-vb/_static/image7.png)
 
 **그림 05**: A `NullReferenceException` 발생 하는 ([큰 이미지를 보려면 클릭](control-id-naming-in-content-pages-vb/_static/image9.png))
 
@@ -173,7 +173,7 @@ ASP.NET 수정 사항을 더 잘 이해 하려면 엔진에 게는 렌더링 된
 이 경우 브라우저를 통해 페이지를 방문 하 나가를 입력 하 고 "제출" 단추를 클릭 하면 메시지를 표시 합니다 `Results` 레이블, 예상 대로입니다.
 
 
-[![사용자의 나이 레이블에 표시 됩니다.](control-id-naming-in-content-pages-vb/_static/image11.png)](control-id-naming-in-content-pages-vb/_static/image10.png)
+[![T사용자의 나이 레이블에 표시 되는](control-id-naming-in-content-pages-vb/_static/image11.png)](control-id-naming-in-content-pages-vb/_static/image10.png)
 
 **그림 06**: 사용자의 나이 레이블에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](control-id-naming-in-content-pages-vb/_static/image12.png))
 
@@ -200,7 +200,7 @@ ASP.NET 수정 사항을 더 잘 이해 하려면 엔진에 게는 렌더링 된
 이 코드를 반환 합니다 `IDIssues.aspx` 페이지의 코드 숨김 클래스와 현재 주석 `FindControl` 메서드 호출 합니다. 에 대 한 호출으로 교체할 `Page.FindControlRecursive("controlID")`합니다. 확장 메서드에 대 한 간단한 것 IntelliSense 드롭다운 목록에 내에서 직접 표시 되어야 합니다. 그림 7에서 알 수 있듯이, 입력 하면 `Page` 기간을 누릅니다 하 고는 `FindControlRecursive` 메서드는 드롭다운 다른와 함께 IntelliSense에 포함 되어 `Control` 클래스 메서드.
 
 
-[![확장 메서드 IntelliSense 드롭다운-목록에 포함 된](control-id-naming-in-content-pages-vb/_static/image14.png)](control-id-naming-in-content-pages-vb/_static/image13.png)
+[![Extension는 메서드가 포함 되어에서 IntelliSense 드롭다운](control-id-naming-in-content-pages-vb/_static/image14.png)](control-id-naming-in-content-pages-vb/_static/image13.png)
 
 **그림 07**: 확장 메서드가에서 IntelliSense 드롭다운에 포함 됩니다 ([클릭 하 여 큰 이미지 보기](control-id-naming-in-content-pages-vb/_static/image15.png))
 

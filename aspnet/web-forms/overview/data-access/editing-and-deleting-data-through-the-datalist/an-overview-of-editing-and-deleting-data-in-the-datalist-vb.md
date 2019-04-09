@@ -8,15 +8,15 @@ ms.date: 10/30/2006
 ms.assetid: 9410a23c-9697-4f07-bd71-e62b0ceac655
 msc.legacyurl: /web-forms/overview/data-access/editing-and-deleting-data-through-the-datalist/an-overview-of-editing-and-deleting-data-in-the-datalist-vb
 msc.type: authoredcontent
-ms.openlocfilehash: b1c7834e67f7682f82ecd0b2b5140260d104aecc
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 4bea4e70dd0c06fbcb0374d1c6a869c06d7e68b7
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57035790"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59387947"
 ---
-<a name="an-overview-of-editing-and-deleting-data-in-the-datalist-vb"></a>DataList (VB)에서 데이터 편집 및 삭제의 개요
-====================
+# <a name="an-overview-of-editing-and-deleting-data-in-the-datalist-vb"></a>DataList (VB)에서 데이터 편집 및 삭제의 개요
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_36_VB.exe) 또는 [PDF 다운로드](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/datatutorial36vb1.pdf)
@@ -59,7 +59,7 @@ ms.locfileid: "57035790"
 다른 폴더와 같이 `Default.aspx` 에 `EditDeleteDataList` 폴더 섹션의 자습서를 나열 합니다. 이전에 설명한 대로 `SectionLevelTutorialListing.ascx` 사용자 컨트롤은이 기능을 제공 합니다. 따라서이 사용자 정의 컨트롤을 추가 `Default.aspx`의 디자인 뷰에서 페이지의 솔루션 탐색기에서 끌어 합니다.
 
 
-[![Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image3.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image2.png)
+[![Add Default.aspx SectionLevelTutorialListing.ascx 사용자 정의 컨트롤](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image3.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image2.png)
 
 **그림 2**: 추가 된 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤 `Default.aspx` ([클릭 하 여 큰 이미지 보기](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image4.png))
 
@@ -107,12 +107,12 @@ ms.locfileid: "57035790"
 열어서 시작 합니다 `Basics.aspx` 페이지는 `EditDeleteDataList` 폴더 디자인 뷰에서 페이지 DataList를 추가 및 합니다. 다음으로 DataList s 스마트 태그에서 새 ObjectDataSource를 만듭니다. 제품 데이터를 사용 하 여 작업을 하 고 있으므로 사용 하도록 구성 된 `ProductsBLL` 클래스입니다. 검색할 *모든* 제품을 선택 합니다 `GetProducts()` 메서드 선택 탭에서 합니다.
 
 
-[![ProductsBLL 클래스를 사용 하는 ObjectDataSource 구성](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image7.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image6.png)
+[![Configure ProductsBLL 클래스를 사용 하는 ObjectDataSource](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image7.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image6.png)
 
 **그림 4**: ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLL` 클래스 ([큰 이미지를 보려면 클릭](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image8.png))
 
 
-[![GetProducts() 메서드를 사용 하 여 제품 정보를 반환 합니다.](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image10.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image9.png)
+[![R돌아가기 GetProducts() 메서드를 사용 하 여 제품 정보 ()](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image10.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image9.png)
 
 **그림 5**: 사용 하 여 제품 정보를 반환 합니다 `GetProducts()` 메서드 ([큰 이미지를 보려면 클릭](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image11.png))
 
@@ -120,7 +120,7 @@ ms.locfileid: "57035790"
 새 데이터를 삽입 하기 위한 GridView와 같은 DataList이 못합니다. 따라서 선택 삽입 탭에서 드롭 다운 목록에서 옵션 (없음). 또한 업데이트 하므로 UPDATE 및 DELETE 탭에 선택한 (없음) 및 삭제 BLL을 통해 프로그래밍 방식으로 수행 됩니다.
 
 
-[![드롭 다운 목록 ObjectDataSource가의 삽입, 업데이트 및 삭제 하는 탭 (없음)으로 설정 되어 있는지 확인 합니다.](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image13.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image12.png)
+[![C삽입 하 여 드롭다운 목록에서 ObjectDataSource는 onfirm, 업데이트 및 삭제 하는 탭 (없음)으로 설정 됩니다](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image13.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image12.png)
 
 **그림 6**: ObjectDataSource가의 삽입, 업데이트 및 삭제 하는 탭의 드롭다운 목록 (None)으로 설정 되어 있는지 확인 ([클릭 하 여 큰 이미지 보기](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image14.png))
 
@@ -139,7 +139,7 @@ ObjectDataSource를 구성한 후 디자이너를 반환 합니다. 마침을 �
 시간을 내어 브라우저를 통해 진행 상황을 확인 합니다. 그림 7에서 알 수 있듯이, DataList 두 열에 각 제품에 대 한 제품 이름과 단위 가격을 표시 합니다.
 
 
-[![제품 이름 및 가격과 2 열 DataList에 표시 됩니다.](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image16.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image15.png)
+[![T그리고 제품 이름 및 가격과 2 열 DataList에 표시 됩니다](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image16.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image15.png)
 
 **그림 7**: 제품 이름 및 가격과 2 열 DataList에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image17.png))
 
@@ -147,7 +147,7 @@ ObjectDataSource를 구성한 후 디자이너를 반환 합니다. 마침을 �
 > [!NOTE]
 > DataList 많은 업데이트 및 삭제 프로세스에 필요한 속성이 있으며 이러한 값은 뷰 상태에 저장 됩니다. 따라서는 DataList를 구축을 지 원하는 편집 하거나 데이터를 삭제 하는 경우 반드시 DataList의 뷰 상태를 사용할 수 있습니다.  
 >   
->  예리한 독자는 편집 가능한 Gridview, DetailsViews를, FormViews 만들 때 뷰 상태를 사용 하지 않도록 설정할 수 있었습니다 기억할 것입니다. 이 ASP.NET 2.0 웹 컨트롤을 포함할 수 있으므로 *상태를 제어*는 보기 상태와 비슷하지만 필수 것으로 간주 되는 포스트백 간에 상태가 유지 됩니다.
+> 예리한 독자는 편집 가능한 Gridview, DetailsViews를, FormViews 만들 때 뷰 상태를 사용 하지 않도록 설정할 수 있었습니다 기억할 것입니다. 이 ASP.NET 2.0 웹 컨트롤을 포함할 수 있으므로 *상태를 제어*는 보기 상태와 비슷하지만 필수 것으로 간주 되는 포스트백 간에 상태가 유지 됩니다.
 
 
 단순히 trivial 상태 정보를 생략 되지만 컨트롤 상태를 포함 하는 편집 및 삭제 하는 데 필요한 상태를 유지 관리 GridView에서 상태 보기를 사용 하지 않도록 설정 합니다. ASP.NET 1.x 기간에서 만든 것, DataList 컨트롤 상태를 사용 하지 않습니다 하며 사용 하도록 설정 하는 보기 상태 이므로 있어야 합니다. 참조 [컨트롤 상태 vs. 뷰 상태](https://msdn.microsoft.com/library/1whwt1k7.aspx) 컨트롤 상태와 뷰 상태에서 어떻게 다른의 목적에 대 한 자세한 내용은 합니다.
@@ -161,7 +161,7 @@ GridView 컨트롤은 필드 (BoundFields, CheckBoxFields, TemplateFields, 및 �
 `EditItemTemplate` (템플릿 편집 옵션을 선택 하면 DataList s 스마트 태그에서)에서 선언적으로 또는 디자이너를 통해 만들 수 있습니다. 템플릿 편집 옵션을 사용 하려면 먼저 스마트 태그에 있는 템플릿 편집 링크를 클릭 한 다음 선택 된 `EditItemTemplate` 드롭 다운 목록에서 항목입니다.
 
 
-[![DataList의 EditItemTemplate 사용 하도록 선택](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image19.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image18.png)
+[![ODataList의 EditItemTemplate 작업 (태평양 표준시)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image19.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image18.png)
 
 **그림 8**: S DataList와 함께 작업 하도록 선택할 `EditItemTemplate` ([큰 이미지를 보려면 클릭](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image20.png))
 
@@ -169,7 +169,7 @@ GridView 컨트롤은 필드 (BoundFields, CheckBoxFields, TemplateFields, 및 �
 그런 다음 제품 이름에을 입력: 및 가격: 두 TextBox 컨트롤에 도구 상자에서 끌어와서는 `EditItemTemplate` 디자이너 인터페이스. 설정 된 텍스트 상자 `ID` 속성을 `ProductName` 고 `UnitPrice`입니다.
 
 
-[![제품의 이름 및 가격에 대 한 입력란을 추가 합니다.](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image22.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image21.png)
+[![Add 이름이 제품 및 가격에 대 한 텍스트](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image22.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image21.png)
 
 **그림 9**: 이름이 제품에 대 한 텍스트 상자 및 가격 추가 ([클릭 하 여 큰 이미지 보기](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image23.png))
 
@@ -198,7 +198,7 @@ GridView 컨트롤은 필드 (BoundFields, CheckBoxFields, TemplateFields, 및 �
 에 추가 합니다 `EditItemTemplate` 두 개의 단추 웹 컨트롤을 하나입니다 `CommandName` 업데이트 및 다른 s 취소로 설정 됩니다. 이러한 두 단추 웹 컨트롤을 추가한 후 디자이너 다음과 비슷하게 표시 됩니다.
 
 
-[![업데이트를 추가 하 고 단추는 EditItemTemplate 취소](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image26.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image25.png)
+[![Add 업데이트 및 취소 단추를 EditItemTemplate](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image26.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image25.png)
 
 **그림 11**: 업데이트 및 취소 단추를 추가 합니다 `EditItemTemplate` ([큰 이미지를 보려면 클릭](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image27.png))
 
@@ -215,7 +215,7 @@ GridView 컨트롤은 필드 (BoundFields, CheckBoxFields, TemplateFields, 및 �
 이 편집 단추를 추가한 후 잠시 브라우저를 통해 페이지를 봅니다. 이 또한이를 사용 하 여 각 제품 목록을 편집 단추를 포함 해야 합니다.
 
 
-[![업데이트를 추가 하 고 단추는 EditItemTemplate 취소](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image29.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image28.png)
+[![Add 업데이트 및 취소 단추를 EditItemTemplate](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image29.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image28.png)
 
 **그림 12**: 업데이트 및 취소 단추를 추가 합니다 `EditItemTemplate` ([큰 이미지를 보려면 클릭](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image30.png))
 
@@ -235,7 +235,7 @@ DataList s 이후 `EditCommand` 이벤트 편집 단추를 클릭할 때 발생�
 이 이벤트 처리기를 추가한 후 브라우저에서 페이지를 다시 확인 합니다. 클릭 한 제품 편집 가능한 (그림 13 참조)를 사용 하면 이제 편집 단추를 클릭 합니다.
 
 
-[![편집 단추는 편집 가능한 제품을 클릭 하면](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image32.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image31.png)
+[![C비위를 맞추는 데 편집 단추는 제품 편집 가능한](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image32.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image31.png)
 
 **그림 13**: 제품 편집 가능 하면 [편집] 단추 ([클릭 하 여 큰 이미지 보기](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image33.png))
 
@@ -283,17 +283,17 @@ S 변경; 사용자를 저장 하는 1 및 2 단계 3-4 단계 돌아갈 DataLis
 사용 하 여 합니다 `EditCommand`, `CancelCommand`, 및 `UpdateCommand` 이벤트 처리기를 완료, 이름 및 제품의 가격이 방문자를 편집할 수 있습니다. 그림 14-16 중인 편집이 워크플로 보여 줍니다.
 
 
-[![읽기 전용 모드에서 모든 제품을 첫 번째 페이지를 방문 하는 경우](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image35.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image34.png)
+[![W첫 번째 페이지에서 모든 제품을 방문 하는 경우 읽기 전용 모드에 있는](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image35.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image34.png)
 
 **그림 14**: 읽기 전용 모드에 있는 모든 제품 페이지를 처음 방문 하는 경우 ([클릭 하 여 큰 이미지 보기](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image36.png))
 
 
-[![제품 이름의 가격을 업데이트 하려면 편집 단추를 클릭 합니다.](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image38.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image37.png)
+[![T편집 단추를 클릭 하는 s 제품 이름, 가격, o 업데이트](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image38.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image37.png)
 
 **그림 15**: 제품 이름이 나 가격을 업데이트 하려면 편집 단추를 클릭 합니다. ([클릭 하 여 큰 이미지 보기](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image39.png))
 
 
-[![값을 변경한 후 읽기 전용 모드를 반환 하는 업데이트를 클릭 합니다.](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image41.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image40.png)
+[![A값을 읽기 전용 모드로 돌아가려면 업데이트를 클릭 변경할 뒤](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image41.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image40.png)
 
 **그림 16**: 변경 된 값을 읽기 전용 모드로 돌아가려면 업데이트를 클릭 한 후 ([클릭 하 여 큰 이미지 보기](an-overview-of-editing-and-deleting-data-in-the-datalist-vb/_static/image42.png))
 

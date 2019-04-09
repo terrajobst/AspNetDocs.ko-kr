@@ -8,15 +8,15 @@ ms.date: 10/17/2013
 ms.assetid: 4085de68-d243-4378-8a64-86236ea8d2da
 msc.legacyurl: /mvc/overview/getting-started/introduction/adding-a-new-field
 msc.type: authoredcontent
-ms.openlocfilehash: bcc1de15b49b51461f76c9ac8f1bee4555ea101d
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: a5de73d93d0af21a3b59d6c21014810184292adb
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422430"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379354"
 ---
-<a name="adding-a-new-field"></a>새 필드 추가
-====================
+# <a name="adding-a-new-field"></a>새 필드 추가
+
 [Rick Anderson]((https://twitter.com/RickAndMSFT))
 
 [!INCLUDE [Tutorial Note](sample/code-location.md)]
@@ -75,7 +75,7 @@ Visual Studio가 열립니다는 *Configuration.cs* 파일입니다. 대체는 `
 > 
 > 이 코드 제목 고유 가정 합니다. 중복 된 제목에 수동으로 추가한 경우 마이그레이션을 수행한 다음에 다음 예외를 얻게 됩니다.   
 > 
->  *시퀀스에 요소가 둘 이상*  
+> *시퀀스에 요소가 둘 이상*  
 > 
 > 에 대 한 자세한 내용은 합니다 [AddOrUpdate](https://msdn.microsoft.com/library/system.data.entity.migrations.idbsetextensions.addorupdate(v=vs.103).aspx) 메서드를 참조 하십시오 [EF 4.3 AddOrUpdate 메서드를 사용 하 여 주의](http://thedatafarm.com/blog/data-access/take-care-with-ef-4-3-addorupdate-method/)...
 

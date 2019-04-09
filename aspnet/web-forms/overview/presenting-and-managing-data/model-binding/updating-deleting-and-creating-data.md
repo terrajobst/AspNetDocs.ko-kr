@@ -8,15 +8,15 @@ ms.date: 02/27/2014
 ms.assetid: 602baa94-5a4f-46eb-a717-7a9e539c1db4
 msc.legacyurl: /web-forms/overview/presenting-and-managing-data/model-binding/updating-deleting-and-creating-data
 msc.type: authoredcontent
-ms.openlocfilehash: 127543b0696b01f136b340d07f6f806b6a6fb1eb
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0ac1982a9476ea324f2faea0bf06f9406f9af1cf
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57056530"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59389325"
 ---
-<a name="updating-deleting-and-creating-data-with-model-binding-and-web-forms"></a>업데이트, 삭제 및 데이터 모델 바인딩 및 web forms를 사용 하 여 만들기
-====================
+# <a name="updating-deleting-and-creating-data-with-model-binding-and-web-forms"></a>업데이트, 삭제 및 데이터 모델 바인딩 및 web forms를 사용 하 여 만들기
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 자습서 시리즈에서는 모델 바인딩을 사용 하 여 ASP.NET Web Forms 프로젝트의 기본 사항을 보여 줍니다. 모델 바인딩 보다 직관적인 데이터 원본 개체 (예: ObjectDataSource 또는 SqlDataSource) 처리 하는 보다 데이터 상호 작용 하 게 합니다. 이 시리즈 소개 자료를 사용 하 여 시작 하 고 나중에 자습서에서 고급 개념을 이동 합니다.

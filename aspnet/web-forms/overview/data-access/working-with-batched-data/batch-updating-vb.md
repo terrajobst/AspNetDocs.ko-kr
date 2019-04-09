@@ -8,15 +8,15 @@ ms.date: 06/26/2007
 ms.assetid: d191a204-d7ea-458d-b81c-0b9049ecb55f
 msc.legacyurl: /web-forms/overview/data-access/working-with-batched-data/batch-updating-vb
 msc.type: authoredcontent
-ms.openlocfilehash: dc40c056aa951b94ca0af2af339d9c7987ffd987
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: d1809c869253ecb454e427a5092015a69009da5c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58426031"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59386946"
 ---
-<a name="batch-updating-vb"></a>일괄 업데이트(VB)
-====================
+# <a name="batch-updating-vb"></a>일괄 업데이트(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_64_VB.zip) 또는 [PDF 다운로드](batch-updating-vb/_static/datatutorial64vb1.pdf)
@@ -31,7 +31,7 @@ ms.locfileid: "58426031"
 이 자습서의 각 행이 편집 가능한 (그림 1 참조) GridView를 빌드 해 보겠습니다. 각 행의 편집 인터페이스에 여기의 편집 열 필요가 없습니다를 렌더링 하므로 업데이트 및 취소 단추가 있습니다. 대신는 두 개의 제품 업데이트 페이지를 클릭 하면 GridView 행을 열거 하 고 데이터베이스를 업데이트 합니다.
 
 
-[![GridView의 각 행은 편집 가능](batch-updating-vb/_static/image1.gif)](batch-updating-vb/_static/image1.png)
+[![E대 한 ach GridView의 행은 편집 가능](batch-updating-vb/_static/image1.gif)](batch-updating-vb/_static/image1.png)
 
 **그림 1**: GridView의 각 행은 편집 가능 ([클릭 하 여 큰 이미지 보기](batch-updating-vb/_static/image2.png))
 
@@ -57,12 +57,12 @@ Let s 시작!
 GridView를 만드는 지 걱정 되기 전에 편집할 수 있는 다음 행, s 단순히 제품 정보를 표시 하 여 시작 합니다. 열기는 `BatchUpdate.aspx` 페이지에 `BatchData` 폴더 및 디자이너 도구 상자에서 끌어서 GridView입니다. GridView가 설정 `ID` 하 `ProductsGrid` 하 고 스마트 태그, 라는 새로운 ObjectDataSource는 바인딩할 선택 `ProductsDataSource`합니다. 해당 데이터를 검색할 ObjectDataSource를 구성 합니다 `ProductsBLL` s 클래스 `GetProducts` 메서드.
 
 
-[![ProductsBLL 클래스를 사용 하는 ObjectDataSource 구성](batch-updating-vb/_static/image2.gif)](batch-updating-vb/_static/image3.png)
+[![Configure ProductsBLL 클래스를 사용 하는 ObjectDataSource](batch-updating-vb/_static/image2.gif)](batch-updating-vb/_static/image3.png)
 
 **그림 2**: ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLL` 클래스 ([큰 이미지를 보려면 클릭](batch-updating-vb/_static/image4.png))
 
 
-[![GetProducts 메서드를 사용 하 여 제품 데이터 검색](batch-updating-vb/_static/image3.gif)](batch-updating-vb/_static/image5.png)
+[![Retrieve GetProducts 메서드를 사용 하 여 제품 데이터](batch-updating-vb/_static/image3.gif)](batch-updating-vb/_static/image5.png)
 
 **그림 3**: 사용 하 여 제품 데이터를 검색 합니다 `GetProducts` 메서드 ([큰 이미지를 보려면 클릭](batch-updating-vb/_static/image6.png))
 
@@ -70,7 +70,7 @@ GridView를 만드는 지 걱정 되기 전에 편집할 수 있는 다음 행, 
 GridView와 같은 ObjectDataSource가의 수정 기능을 행 단위로에서 작동 하도록 설계 됩니다. 레코드 집합을 업데이트 하기 위해 데이터를 일괄 처리 및 BLL에 전달 하는 ASP.NET 페이지의 코드 숨김 클래스에 약간의 코드를 작성 해야 합니다. 따라서 탭을 설정할 드롭 다운 목록을 ObjectDataSource에서 업데이트, 삽입 및 삭제를 (없음). 마법사를 완료 하려면 마침을 클릭 합니다.
 
 
-[![UPDATE, INSERT 드롭 다운 목록을 설정 하 고 탭 삭제 (없음)](batch-updating-vb/_static/image4.gif)](batch-updating-vb/_static/image7.png)
+[![SUPDATE, INSERT 및 DELETE 탭 (없음)에 있는 드롭다운 목록은 et](batch-updating-vb/_static/image4.gif)](batch-updating-vb/_static/image7.png)
 
 **그림 4**: 설정 드롭다운 목록에서 업데이트, 삽입 및 삭제 하는 탭 (없음) ([클릭 하 여 큰 이미지 보기](batch-updating-vb/_static/image8.png))
 
@@ -107,7 +107,7 @@ GridView가 스마트 태그에서 필드 대화 상자를 열려면 열 편집 
 RequiredFieldValidator를 다음으로, 추가 `ItemTemplate` 사용자는 각 제품의 이름에 대 한 값을 확인 합니다. 설정 합니다 `ControlToValidate` productname, 속성을 `ErrorMessage` 속성에는 제품의 이름을 제공 해야 합니다. 하며 `Text` 속성을 \*입니다. 이러한 추가 마치면는 `ItemTemplate`, 화면 그림 6 비슷하게 표시 됩니다.
 
 
-[![텍스트 상자와는 RequiredFieldValidator ProductName TemplateField 이제 포함](batch-updating-vb/_static/image6.gif)](batch-updating-vb/_static/image9.png)
+[![T그 ProductName TemplateField 이제 텍스트 상자 및 RequiredFieldValidator](batch-updating-vb/_static/image6.gif)](batch-updating-vb/_static/image9.png)
 
 **그림 6**: 합니다 `ProductName` TemplateField 이제 텍스트 상자 및 RequiredFieldValidator ([큰 이미지를 보려면 클릭](batch-updating-vb/_static/image10.png))
 
@@ -117,7 +117,7 @@ RequiredFieldValidator를 다음으로, 추가 `ItemTemplate` 사용자는 각 �
 CompareValidator 추가 합니다 `UnitPrice` s `ItemTemplate` 되도록 사용자가 입력 한 값 보다 크거나 같은 $0.00 유효한 통화 값입니다. 유효성 검사기가 설정 `ControlToValidate` 속성을 UnitPrice, 해당 `ErrorMessage` 속성에 유효한 통화 값을 입력 해야 합니다. 모든 통화 기호.를 생략 하세요 해당 `Text` 속성을 \*, 해당 `Type` 속성을 `Currency`, 해당 `Operator` 속성을 `GreaterThanEqual`, 및 해당 `ValueToCompare` 속성을 0입니다.
 
 
-[![가격 입력 되도록 CompareValidator는 음수가 아닌 통화 값 추가](batch-updating-vb/_static/image7.gif)](batch-updating-vb/_static/image11.png)
+[![Add는 CompareValidator 가격 입력 했는지 확인 하는 음수가 아닌 통화 값](batch-updating-vb/_static/image7.gif)](batch-updating-vb/_static/image11.png)
 
 **그림 7**: 추가 가격 입력 되도록 CompareValidator는 음수가 아닌 통화 값 ([클릭 하 여 큰 이미지 보기](batch-updating-vb/_static/image12.png))
 
@@ -135,12 +135,12 @@ CompareValidator 추가 합니다 `UnitPrice` s `ItemTemplate` 되도록 사용�
 DropDownList를 도구 상자에서 끌어 합니다 `CategoryName` TemplateField s `ItemTemplate`설정, 해당 `ID` 에 `Categories`입니다. 이 시점에서 우리는 일반적으로 Dropdownlist의 데이터 원본을 정의할 해당 스마트 태그를 통해 새 ObjectDataSource 만들기. 그러나 내 ObjectDataSource 추가이 `ItemTemplate`, 각 GridView 행에 대해 만든 ObjectDataSource 인스턴스 결과 합니다. 대신 만든을 GridView의 TemplateFields 외부 ObjectDataSource 사용 수 있습니다. 아래에 디자이너 도구 상자에서 ObjectDataSource를 끌어서 템플릿 편집을 종료 합니다 `ProductsDataSource` ObjectDataSource 합니다. 이름을 새 ObjectDataSource `CategoriesDataSource` 사용 하도록 구성 하는 `CategoriesBLL` s 클래스 `GetCategories` 메서드.
 
 
-[![CategoriesBLL 클래스를 사용 하는 ObjectDataSource 구성](batch-updating-vb/_static/image8.gif)](batch-updating-vb/_static/image13.png)
+[![Configure CategoriesBLL 클래스를 사용 하는 ObjectDataSource](batch-updating-vb/_static/image8.gif)](batch-updating-vb/_static/image13.png)
 
 **그림 8**: ObjectDataSource를 사용 하 여 구성 합니다 `CategoriesBLL` 클래스 ([큰 이미지를 보려면 클릭](batch-updating-vb/_static/image14.png))
 
 
-[![GetCategories 메서드를 사용 하 여 범주 데이터를 검색 합니다.](batch-updating-vb/_static/image9.gif)](batch-updating-vb/_static/image15.png)
+[![Retrieve GetCategories 메서드를 사용 하 여 범주 데이터](batch-updating-vb/_static/image9.gif)](batch-updating-vb/_static/image15.png)
 
 **그림 9**: 사용 하 여 범주 데이터를 검색 합니다 `GetCategories` 메서드 ([큰 이미지를 보려면 클릭](batch-updating-vb/_static/image16.png))
 
@@ -148,7 +148,7 @@ DropDownList를 도구 상자에서 끌어 합니다 `CategoryName` TemplateFiel
 이 ObjectDataSource를 사용 하 여 데이터를 검색 하는 단순히, 드롭 다운 목록에서 UPDATE 및 DELETE 탭 (없음)을 설정 합니다. 마법사를 완료 하려면 마침을 클릭 합니다.
 
 
-[![집합에 UPDATE 및 DELETE 탭 (없음)을 드롭다운 목록](batch-updating-vb/_static/image10.gif)](batch-updating-vb/_static/image17.png)
+[![SUPDATE 및 DELETE 탭 (없음)을 드롭 다운 목록 et](batch-updating-vb/_static/image10.gif)](batch-updating-vb/_static/image17.png)
 
 **그림 10**: (없음)로 업데이트 및 삭제 하는 탭의 드롭다운 목록을 설정 ([클릭 하 여 큰 이미지 보기](batch-updating-vb/_static/image18.png))
 
@@ -161,7 +161,7 @@ DropDownList를 도구 상자에서 끌어 합니다 `CategoryName` TemplateFiel
 사용 하 여 합니다 `CategoriesDataSource` 를 만들고 구성한 돌아갑니다 합니다 `CategoryName` TemplateField의 `ItemTemplate` DropDownList s 스마트 태그에서 데이터 원본 선택 링크를 클릭 합니다. 데이터 소스 구성 마법사에서 선택 합니다 `CategoriesDataSource` 첫 번째 드롭다운 목록에서 옵션을 선택할 `CategoryName` 표시에 사용 하 고 `CategoryID` 값으로.
 
 
-[![DropDownList를 CategoriesDataSource에 바인딩](batch-updating-vb/_static/image11.gif)](batch-updating-vb/_static/image19.png)
+[![BDropDownList CategoriesDataSource 찾기](batch-updating-vb/_static/image11.gif)](batch-updating-vb/_static/image19.png)
 
 **그림 11**: DropDownList를 바인딩하는 `CategoriesDataSource` ([큰 이미지를 보려면 클릭](batch-updating-vb/_static/image20.png))
 
@@ -190,7 +190,7 @@ DropDownList를 도구 상자에서 끌어 합니다 `CategoryName` TemplateFiel
 에서는 ve 진행 상황을 보려면 일시 중지 하지 않고 GridView가 템플릿에 변경 횟수를 수행 합니다. 시간을 내어 브라우저를 통해 진행 상황을 확인 합니다. 사용 하 여 각 행은 렌더링 그림 13에서 볼 수 있듯이 해당 `ItemTemplate`, 인터페이스 편집 셀 s를 포함 하는 합니다.
 
 
-[![각 GridView 행은 편집 가능](batch-updating-vb/_static/image13.gif)](batch-updating-vb/_static/image21.png)
+[![E대 한 ach GridView 행은 편집 가능](batch-updating-vb/_static/image13.gif)](batch-updating-vb/_static/image21.png)
 
 **그림 13**: 각 GridView 행은 편집 가능 ([클릭 하 여 큰 이미지 보기](batch-updating-vb/_static/image22.png))
 
@@ -223,7 +223,7 @@ GridView가 이후 해당 TemplateFields에 정의 된 인터페이스를 편집
 그림 16에서는 단추 웹 컨트롤을 추가한 후 브라우저를 통해 볼 때이 페이지 및 서식 지정 변경 내용을 보여 줍니다.
 
 
-[![이제 페이지에는 두 업데이트 제품 단추가 포함 되어 있습니다.](batch-updating-vb/_static/image16.gif)](batch-updating-vb/_static/image23.png)
+[![T그 페이지 이제 포함 두 업데이트 제품 단추](batch-updating-vb/_static/image16.gif)](batch-updating-vb/_static/image23.png)
 
 **그림 16**: 페이지 이제 포함 두 업데이트 제품 단추 ([클릭 하 여 큰 이미지 보기](batch-updating-vb/_static/image24.png))
 

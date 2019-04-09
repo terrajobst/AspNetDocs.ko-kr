@@ -8,15 +8,15 @@ ms.date: 01/02/2019
 ms.assetid: a585c9a2-7c8e-478b-9706-90f3739c50d1
 msc.legacyurl: /web-forms/overview/performance-and-caching/using-asynchronous-methods-in-aspnet-45
 msc.type: authoredcontent
-ms.openlocfilehash: d7985fcd48e1282437cc3a7d3c1b528af2e44ae0
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: a47d428830fa6c43bcb9ce797d65b73891b44618
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425784"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381889"
 ---
-<a name="using-asynchronous-methods-in-aspnet-45"></a>ASP.NET 4.5에서 비동기 메서드 사용
-====================
+# <a name="using-asynchronous-methods-in-aspnet-45"></a>ASP.NET 4.5에서 비동기 메서드 사용
+
 [Rick Anderson]((https://twitter.com/RickAndMSFT))
 
 > 이 자습서를 사용 하 여 비동기 ASP.NET Web Forms 응용 프로그램을 빌드하는 기본 사항 설명 [Visual Studio Express 2012 for Web](https://www.microsoft.com/visualstudio/11), Microsoft Visual Studio의 무료 버전입니다. 사용할 수도 있습니다 [Visual Studio 2012](https://www.microsoft.com/visualstudio/11)합니다. 다음 섹션에서는이 자습서에 포함 됩니다.
@@ -31,7 +31,7 @@ ms.locfileid: "58425784"
 > - [높은 동시성/높은 대기 시간 웹 서비스 호출에 대 한 서버 구성](#ServerConfig)
 > 
 > 전체 샘플은이 자습서에서 제공 됩니다.  
->  [https://github.com/RickAndMSFT/Async-ASP.NET/](https://github.com/RickAndMSFT/Async-ASP.NET/) 에 [GitHub](https://github.com/) 사이트입니다.
+> [https://github.com/RickAndMSFT/Async-ASP.NET/](https://github.com/RickAndMSFT/Async-ASP.NET/) 에 [GitHub](https://github.com/) 사이트입니다.
 
 
 조합 하 여 웹 페이지를 ASP.NET 4.5 [.NET 4.5](https://msdn.microsoft.com/library/w0x726c2(VS.110).aspx) 형식의 개체를 반환 하는 비동기 메서드를 등록할 수 있습니다 [태스크](https://msdn.microsoft.com/library/system.threading.tasks.task.aspx)합니다. .NET Framework 4 라고 하는 비동기 프로그래밍 개념을 도입을 [태스크](https://msdn.microsoft.com/library/system.threading.tasks.task.aspx) ASP.NET 4.5를 지원 하 고 [태스크](https://msdn.microsoft.com/library/system.threading.tasks.task.aspx)합니다. 작업으로 표시 됩니다는 **태스크** 형식과 관련 된 형식을 합니다 [System.Threading.Tasks](https://msdn.microsoft.com/library/system.threading.tasks.aspx) 네임 스페이스입니다. 이 비동기 지원을 사용 하 여을 기반으로 하는.NET Framework 4.5를 [await](https://msdn.microsoft.com/library/hh156528(VS.110).aspx) 하 고 [비동기](https://msdn.microsoft.com/library/hh156513(VS.110).aspx) 키워드를 사용 하는 [태스크](https://msdn.microsoft.com/library/system.threading.tasks.task.aspx) 이전 보다 훨씬 덜 복잡 한 개체 비동기 접근 방법입니다. 합니다 [await](https://msdn.microsoft.com/library/hh156528(VS.110).aspx) 키워드는 코드 조각의 코드의 다른 부분에서 비동기적으로 대기 해야 하는 구문 축약형 나타내는입니다. 합니다 [비동기](https://msdn.microsoft.com/library/hh156513(VS.110).aspx) 키워드에는 작업 기반 비동기 메서드로 메서드를 표시 하는 데 사용할 수 있는 힌트를 나타냅니다. 조합 **await**를 **비동기**, 및 **태스크** 개체를 사용 하면 훨씬 쉽게.NET 4.5에서 비동기 코드를 작성할 수 있습니다. 비동기 메서드에 대 한 새 모델 이라고 합니다 *작업 기반 비동기 패턴* (**누릅니다**). 이 자습서에서는 사용 하 여 비동기 프로그래밍 지식이 있다고 가정 [await](https://msdn.microsoft.com/library/hh156528(VS.110).aspx) 하 고 [비동기](https://msdn.microsoft.com/library/hh156513(VS.110).aspx) 키워드와 [태스크](https://msdn.microsoft.com/library/system.threading.tasks.task.aspx) 네임 스페이스입니다.
@@ -192,7 +192,7 @@ ASP.NET 비동기 페이지를 포함 해야 합니다 [페이지](https://msdn.
 
     - IIS 관리자를 열고 응용 프로그램 풀 창으로 이동 합니다.
     - 선택한 대상 응용 프로그램 풀을 마우스 오른쪽 단추로 클릭 **고급 설정**합니다.  
-        ![advanced](using-asynchronous-methods-in-aspnet-45/_static/image4.png)
+        ![고급](using-asynchronous-methods-in-aspnet-45/_static/image4.png)
     - 에 **고급 설정** 대화 상자에서 변경 *Queue Length* 5,000 1,000 개에서.  
         ![큐 길이](using-asynchronous-methods-in-aspnet-45/_static/image5.png)  
   

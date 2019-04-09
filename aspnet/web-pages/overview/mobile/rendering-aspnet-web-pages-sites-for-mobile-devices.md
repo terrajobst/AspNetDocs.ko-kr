@@ -8,15 +8,15 @@ ms.date: 02/17/2014
 ms.assetid: f15ab392-c05e-4269-83bf-7c6d2b8c8ec8
 msc.legacyurl: /web-pages/overview/mobile/rendering-aspnet-web-pages-sites-for-mobile-devices
 msc.type: authoredcontent
-ms.openlocfilehash: dd06a54d396bd85eeef7c004ee115828d541a2c1
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: dbcd25331387f8606343e551302bc3ed1f9b2c25
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57031110"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379510"
 ---
-<a name="rendering-aspnet-web-pages-razor-sites-for-mobile-devices"></a>모바일 장치에 대 한 ASP.NET 웹 페이지 (Razor) 사이트 렌더링
-====================
+# <a name="rendering-aspnet-web-pages-razor-sites-for-mobile-devices"></a>모바일 장치에 대 한 ASP.NET 웹 페이지 (Razor) 사이트 렌더링
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 문서에는 모바일 장치에 적절 하 게 렌더링 하는 ASP.NET Web Pages (Razor) 사이트에서 페이지를 만드는 방법을 설명 합니다.
@@ -37,7 +37,7 @@ ms.locfileid: "57031110"
 
 ASP.NET 웹 페이지를 통해 모바일 또는 다른 장치에서 콘텐츠 렌더링에 대 한 사용자 지정 표시를 만들 수 있습니다.
 
-ASP.NET 웹 페이지 사이트에서 장치별 페이지를 만드는 가장 간단한 방법은 다음과 같이 파일 명명 패턴을 사용 하 여: <em>FileName.</em><em>Mobile</em><em>.cshtml</em>. 페이지의 두 버전을 만들 수 있습니다 (예를 들어 라는 하나 <em>MyFile.cshtml</em> 및 이름이 <em>MyFile.Mobile.cshtml</em>). 런타임 시 모바일 장치를 요청 하는 경우 <em>MyFile.cshtml</em>에서 콘텐츠를 렌더링 하는 ASP.NET <em>MyFile.Mobile.cshtml</em>합니다. 그렇지 않으면 <em>MyFile.cshtml</em> 렌더링 됩니다.
+ASP.NET 웹 페이지 사이트에서 장치별 페이지를 만드는 가장 간단한 방법은 다음과 같이 파일 명명 패턴을 사용 하 여: *FileName.Mobile.cshtml*. 페이지의 두 버전을 만들 수 있습니다 (예를 들어 라는 하나 *MyFile.cshtml* 및 이름이 *MyFile.Mobile.cshtml*). 런타임 시 모바일 장치를 요청 하는 경우 *MyFile.cshtml*에서 콘텐츠를 렌더링 하는 ASP.NET *MyFile.Mobile.cshtml*합니다. 그렇지 않으면 *MyFile.cshtml* 렌더링 됩니다.
 
 다음 예제에서는 모바일 장치에 대 한 콘텐츠 페이지를 추가 하 여 모바일 렌더링을 사용 하도록 설정 하는 방법을 보여 줍니다. *Page1.cshtml* 콘텐츠 탐색 세로 막대를 포함 합니다. *Page1.Mobile.cshtml* 콘텐츠는 동일 하지만 보충 기사를 생략 합니다.
 

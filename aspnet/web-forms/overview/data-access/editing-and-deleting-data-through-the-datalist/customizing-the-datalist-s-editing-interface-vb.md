@@ -8,15 +8,15 @@ ms.date: 10/30/2006
 ms.assetid: 718628e2-224c-455f-b33a-a41efd48d5a0
 msc.legacyurl: /web-forms/overview/data-access/editing-and-deleting-data-through-the-datalist/customizing-the-datalist-s-editing-interface-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 8105d2d118bdaa7e6c826479fbd8ed18f5aeaac1
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1c99ce1528b1a28a4ec470a05d62abef6d4bb888
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57038480"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59391860"
 ---
-<a name="customizing-the-datalists-editing-interface-vb"></a>DataList의 편집 인터페이스 사용자 지정(VB)
-====================
+# <a name="customizing-the-datalists-editing-interface-vb"></a>DataList의 편집 인터페이스 사용자 지정(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_40_VB.exe) 또는 [PDF 다운로드](customizing-the-datalist-s-editing-interface-vb/_static/datatutorial40vb1.pdf)
@@ -37,7 +37,7 @@ ms.locfileid: "57038480"
 이 자습서에서는 Dropdownlist 및 CheckBox를 포함 하는 DataList에 대 한 다양 한 편집 인터페이스를 만들겠습니다. 특히, 제품 정보를 나열 하 고 s 제품 이름, 공급 업체, 범주 및 지원 되지 않는 상태 업데이트를 허용 하는 DataList를 만들겠습니다 (그림 1 참조).
 
 
-[![TextBox, Dropdownlist 두 및 CheckBox 편집 인터페이스 포함](customizing-the-datalist-s-editing-interface-vb/_static/image2.png)](customizing-the-datalist-s-editing-interface-vb/_static/image1.png)
+[![T그 편집 인터페이스에는 TextBox, Dropdownlist 두 확인란을 포함](customizing-the-datalist-s-editing-interface-vb/_static/image2.png)](customizing-the-datalist-s-editing-interface-vb/_static/image1.png)
 
 **그림 1**: TextBox, Dropdownlist 두 및 CheckBox 편집 인터페이스에 포함 되어 있습니다 ([클릭 하 여 큰 이미지 보기](customizing-the-datalist-s-editing-interface-vb/_static/image3.png))
 
@@ -47,7 +47,7 @@ ms.locfileid: "57038480"
 DataList s 편집할 수 있는 인터페이스를 만들 수 있습니다, 전에 먼저 읽기 전용 인터페이스를 작성 해야 합니다. 열어서 시작 합니다 `CustomizedUI.aspx` 에서 페이지를 `EditDeleteDataList` 폴더 디자이너에서 페이지로 DataList 추가 설정 및 해당 `ID` 속성을 `Products`입니다. DataList s 스마트 태그에서 새 ObjectDataSource를 만듭니다. 이름을 새 ObjectDataSource `ProductsDataSource` 에서 데이터를 검색 하도록 구성 하는 `ProductsBLL` s 클래스 `GetProducts` 메서드. 로 이전 편집 가능한 DataList 자습서를 사용 하 여 업데이트 편집된 제품의 정보는 비즈니스 논리 계층으로 직접 이동 하 여. 그에 따라 삽입, 업데이트, 드롭 다운 목록을 설정 하 고 탭 (없음)을 삭제 합니다.
 
 
-[![(없음)을 업데이트, 삽입 및 삭제 탭 드롭 다운 목록 설정](customizing-the-datalist-s-editing-interface-vb/_static/image5.png)](customizing-the-datalist-s-editing-interface-vb/_static/image4.png)
+[![S(없음)을 업데이트, 삽입 및 삭제 탭 드롭 다운 목록 et](customizing-the-datalist-s-editing-interface-vb/_static/image5.png)](customizing-the-datalist-s-editing-interface-vb/_static/image4.png)
 
 **그림 2**: (없음)로 업데이트, 삽입 및 탭 드롭다운 목록이 삭제를 설정 ([클릭 하 여 큰 이미지 보기](customizing-the-datalist-s-editing-interface-vb/_static/image6.png))
 
@@ -60,7 +60,7 @@ ObjectDataSource를 구성한 후 Visual Studio 기본값 만들어집니다 `It
 위의 태그를 사용 하 여 제품 정보 레이아웃을 &lt;h4&gt; s 제품 이름 및 네 개의 열에 대 한 제목 `<table>` 나머지 필드에 대 한 합니다. 합니다 `ProductPropertyLabel` 하 고 `ProductPropertyValue` 에 정의 된 CSS 클래스를 `Styles.css`, 이전 자습서에서 설명 했습니다. 그림 3에서는 브라우저를 통해 볼 때 진행 상황을 보여 줍니다.
 
 
-[![이름, 공급 업체, 범주, 지원 되지 않는 상태 및 각 제품의 가격이 표시 됩니다.](customizing-the-datalist-s-editing-interface-vb/_static/image8.png)](customizing-the-datalist-s-editing-interface-vb/_static/image7.png)
+[![T그 이름, 공급 업체, 범주, 지원 되지 않는 상태 및 각 제품의 가격이 표시 됩니다](customizing-the-datalist-s-editing-interface-vb/_static/image8.png)](customizing-the-datalist-s-editing-interface-vb/_static/image7.png)
 
 **그림 3**: 이름, 공급 업체, 범주, 지원 되지 않는 상태 및 각 제품의 가격이 표시 됩니다 ([클릭 하 여 큰 이미지 보기](customizing-the-datalist-s-editing-interface-vb/_static/image9.png))
 
@@ -72,7 +72,7 @@ ObjectDataSource를 구성한 후 Visual Studio 기본값 만들어집니다 `It
 편집 인터페이스를 사용자 지정 하려면 DataList s 스마트 태그에서 템플릿 편집 링크를 클릭 하 고 선택 된 `EditItemTemplate` 드롭 다운 목록에서 옵션입니다. DropDownList를 추가 합니다 `EditItemTemplate` 설정 및 해당 `ID` 에 `Categories`입니다.
 
 
-[![DropDownList 범주에 대 한 추가](customizing-the-datalist-s-editing-interface-vb/_static/image11.png)](customizing-the-datalist-s-editing-interface-vb/_static/image10.png)
+[![A범주에 대 한 DropDownList dd](customizing-the-datalist-s-editing-interface-vb/_static/image11.png)](customizing-the-datalist-s-editing-interface-vb/_static/image10.png)
 
 **그림 4**: DropDownList 범주에 대 한 추가 ([클릭 하 여 큰 이미지 보기](customizing-the-datalist-s-editing-interface-vb/_static/image12.png))
 
@@ -80,12 +80,12 @@ ObjectDataSource를 구성한 후 Visual Studio 기본값 만들어집니다 `It
 다음으로, DropDownList s 스마트 태그에서 데이터 소스 선택 옵션을 만들고 라는 새로운 ObjectDataSource는 `CategoriesDataSource`합니다. 이 ObjectDataSource를 사용 하 여 구성 합니다 `CategoriesBLL` s 클래스 `GetCategories()` 메서드 (그림 5 참조). 다음으로, DropDownList의 데이터 소스 구성 마법사는 각에 사용할 데이터 필드에 대 한을 프롬프트 `ListItem` s `Text` 고 `Value` 속성입니다. DropDownList을 표시 합니다 `CategoryName` 데이터 필드와 사용을 `CategoryID` 그림 6 에서처럼 값으로.
 
 
-[![CategoriesDataSource 라는 새로운 ObjectDataSource는 만들기](customizing-the-datalist-s-editing-interface-vb/_static/image14.png)](customizing-the-datalist-s-editing-interface-vb/_static/image13.png)
+[![C새 ObjectDataSource 라는 CategoriesDataSource reate](customizing-the-datalist-s-editing-interface-vb/_static/image14.png)](customizing-the-datalist-s-editing-interface-vb/_static/image13.png)
 
 **그림 5**: 명명 된 새 ObjectDataSource 만들려면 `CategoriesDataSource` ([큰 이미지를 보려면 클릭](customizing-the-datalist-s-editing-interface-vb/_static/image15.png))
 
 
-[![DropDownList의 표시를 구성 하 고 필드 값](customizing-the-datalist-s-editing-interface-vb/_static/image17.png)](customizing-the-datalist-s-editing-interface-vb/_static/image16.png)
+[![Configure DropDownList의 표시 및 값 필드](customizing-the-datalist-s-editing-interface-vb/_static/image17.png)](customizing-the-datalist-s-editing-interface-vb/_static/image16.png)
 
 **그림 6**: DropDownList의 표시 및 값 필드 구성 ([클릭 하 여 큰 이미지 보기](customizing-the-datalist-s-editing-interface-vb/_static/image18.png))
 
@@ -102,7 +102,7 @@ Dropdownlist 두를 추가한 후 지원 되지 않는 상태에 대 한 확인�
 [!code-aspx[Main](customizing-the-datalist-s-editing-interface-vb/samples/sample2.aspx)]
 
 
-[![편집 인터페이스는 읽기 전용 인터페이스와 같은 아웃 배치](customizing-the-datalist-s-editing-interface-vb/_static/image20.png)](customizing-the-datalist-s-editing-interface-vb/_static/image19.png)
+[![T그 편집 인터페이스는 읽기 전용 인터페이스와 같은 배치 아웃](customizing-the-datalist-s-editing-interface-vb/_static/image20.png)](customizing-the-datalist-s-editing-interface-vb/_static/image19.png)
 
 **그림 7**: 편집 인터페이스는 읽기 전용 인터페이스와 같은 아웃 배치 ([클릭 하 여 큰 이미지 보기](customizing-the-datalist-s-editing-interface-vb/_static/image21.png))
 
@@ -119,7 +119,7 @@ Dropdownlist 두를 추가한 후 지원 되지 않는 상태에 대 한 확인�
 이러한 두 명의 이벤트 처리기 위치에 편집 단추를 클릭 하면 편집 인터페이스를 표시 하 고 읽기 전용 모드로 편집된 된 항목을 반환 취소 단추를 클릭 합니다. 그림 8에서는 Chef 한 100 s 수프 편집 버튼을 클릭 한 후 DataList를 보여 줍니다. 이후로 ve 모든 데이터 바인딩 구문을 편집 인터페이스에 추가 하는 `ProductName` 텍스트 상자가 비어를 `Discontinued` 에서 확인란을 선택 취소 하 고 첫 번째 항목을 선택 합니다 `Categories` 및 `Suppliers` Dropdownlist.
 
 
-[![편집 인터페이스의 편집 단추 표시를 클릭합니다.](customizing-the-datalist-s-editing-interface-vb/_static/image23.png)](customizing-the-datalist-s-editing-interface-vb/_static/image22.png)
+[![C편집 인터페이스 편집 단추 표시를 클릭 하](customizing-the-datalist-s-editing-interface-vb/_static/image23.png)](customizing-the-datalist-s-editing-interface-vb/_static/image22.png)
 
 **그림 8**: 편집 인터페이스 표시 [편집] 단추 ([클릭 하 여 큰 이미지 보기](customizing-the-datalist-s-editing-interface-vb/_static/image24.png))
 
@@ -131,7 +131,7 @@ Dropdownlist 두를 추가한 후 지원 되지 않는 상태에 대 한 확인�
 할당를 `ProductName` 데이터 필드 값을는 `ProductName` s 텍스트 상자에 붙여넣습니다 `Text` 속성을 `CategoryID` 및 `SupplierID` 데이터 필드 값을를 `Categories` 및 `Suppliers` Dropdownlist `SelectedValue` 속성 및 `Discontinued` 데이터 필드에 값을 `Discontinued` 확인란 `Checked` 속성. 디자이너 또는 선언적 태그를 통해 직접 이러한 변경을 수행한 후 브라우저를 통해 페이지를 다시 방문 하 고 Chef 한 100의 수프에 대 한 편집 단추를 클릭 합니다. 그림 9에서 알 수 있듯이, 데이터 바인딩 구문을 텍스트 상자, Dropdownlist, 및 확인란에 현재 값을 추가 했습니다.
 
 
-[![편집 인터페이스의 편집 단추 표시를 클릭합니다.](customizing-the-datalist-s-editing-interface-vb/_static/image26.png)](customizing-the-datalist-s-editing-interface-vb/_static/image25.png)
+[![C편집 인터페이스 편집 단추 표시를 클릭 하](customizing-the-datalist-s-editing-interface-vb/_static/image26.png)](customizing-the-datalist-s-editing-interface-vb/_static/image25.png)
 
 **그림 9**: 편집 인터페이스 표시 [편집] 단추 ([클릭 하 여 큰 이미지 보기](customizing-the-datalist-s-editing-interface-vb/_static/image27.png))
 
@@ -167,7 +167,7 @@ DataList의 Dropdownlist 태그 이러한 변경을 수행한 후 `EditItemTempl
 시간을 내어 브라우저를 통해 진행 상황을 확인 합니다. 제품을 편집할 때는 유의 합니다 `Categories` 및 `Suppliers` Dropdownlist 두 (없음)가 DropDownList의 시작 옵션입니다.
 
 
-[![범주 및 공급 업체 Dropdownlist 포함 (None) 옵션](customizing-the-datalist-s-editing-interface-vb/_static/image29.png)](customizing-the-datalist-s-editing-interface-vb/_static/image28.png)
+[![T그 범주 및 공급 업체 Dropdownlist를 포함 하는 (없음) 옵션](customizing-the-datalist-s-editing-interface-vb/_static/image29.png)](customizing-the-datalist-s-editing-interface-vb/_static/image28.png)
 
 **그림 10**: 합니다 `Categories` 하 고 `Suppliers` Dropdownlist를 포함 하는 (없음) 옵션 ([클릭 하 여 큰 이미지 보기](customizing-the-datalist-s-editing-interface-vb/_static/image30.png))
 

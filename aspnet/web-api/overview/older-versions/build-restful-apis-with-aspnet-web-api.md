@@ -1,25 +1,30 @@
 ---
 uid: web-api/overview/older-versions/build-restful-apis-with-aspnet-web-api
-title: ASP.NET Web API 사용 하 여 RESTful Api 빌드 | Microsoft Docs
+title: ASP.NET Web API-ASP.NET 사용 하 여 RESTful Api 빌드 4.x
 author: rick-anderson
-description: 최근 몇 년 동안에서 HTTP HTML 페이지를 제공 하는 동안만 아님을 지우기 되었습니다 있습니다. 몇 o를 사용 하 여 웹 Api를 빌드하기 위한 강력한 플랫폼 이기도 하는 중...
+description: '실습: 웹 API를 사용 하 여 asp.net에서 4.x를 연락처 관리자 응용 프로그램에 대 한 간단한 REST API를 빌드하 합니다.'
 ms.author: riande
 ms.date: 02/18/2013
+ms.custom: seoapril2019
 ms.assetid: 87daa99f-3810-407e-b969-dd28a192959d
 msc.legacyurl: /web-api/overview/older-versions/build-restful-apis-with-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: f1f5ebbf5170f205be331b6402951fb429196046
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 3ba7f2d186e6f0837a32f69f964cec19fe625953
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423717"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59391483"
 ---
-<a name="build-restful-apis-with-aspnet-web-api"></a>ASP.NET Web API 사용 하 여 RESTful Api 빌드
-====================
+# <a name="build-restful-apis-with-aspnet-web-api"></a>ASP.NET Web API 사용 하 여 RESTful Api 빌드
+
 [웹 캠프 팀](https://twitter.com/webcamps)
 
-> 최근 몇 년 동안에서 HTTP HTML 페이지를 제공 하는 동안만 아님을 지우기 되었습니다 있습니다. 와 같은 몇 가지 간단한 개념 및 몇 가지 동사 (GET, POST 등)을 사용 하는 웹 Api를 빌드하기 위한 강력한 플랫폼 이기도 *Uri* 하 고 *헤더*합니다. ASP.NET Web API는 HTTP 프로그래밍을 단순화 하는 구성 요소 집합입니다. ASP.NET MVC 런타임은 기반 하기 때문에 Web API http 전송 하위 수준 세부 정보를 자동으로 처리 합니다. 동시에, Web API는 자연스럽 게 HTTP 프로그래밍 모델을 노출합니다. 사실, Web API의 한 가지 목표를 *되지* 실제로 http를 추상화 합니다. 결과적으로, 웹 API는 유연 하 고 쉽게 확장할 수 있습니다. 이 실습 랩에서 연락처 관리자 응용 프로그램에 대 한 간단한 REST API를 빌드하 Web API를 사용 합니다. 또한 API를 사용 하려면 클라이언트를 빌드합니다. REST 아키텍처 스타일은 아니지만 분명 HTTP에 대 한 올바른 접근 방법 HTTP-활용할 수 있는 효과적인 방법을 것으로 입증 된 합니다. 대화 상대 관리자는 나열, 추가 및 다른 연락처를 제거 하기 위한 RESTful를 노출 합니다. 이 랩에서 HTTP REST에 대 한 기본적인 지식이 필요 하 고 HTML, JavaScript 및 jQuery의 기본 작동 지식이 있다고 가정 합니다.
+> 실습: 웹 API를 사용 하 여 asp.net에서 4.x를 연락처 관리자 응용 프로그램에 대 한 간단한 REST API를 빌드하 합니다. 또한 API를 사용 하려면 클라이언트를 빌드합니다.
+
+최근 몇 년 동안에서 HTTP HTML 페이지를 제공 하는 동안만 아님을 지우기 되었습니다 있습니다. 와 같은 몇 가지 간단한 개념 및 몇 가지 동사 (GET, POST 등)을 사용 하는 웹 Api를 빌드하기 위한 강력한 플랫폼 이기도 *Uri* 하 고 *헤더*합니다. ASP.NET Web API는 HTTP 프로그래밍을 단순화 하는 구성 요소 집합입니다. ASP.NET MVC 런타임은 기반 하기 때문에 Web API http 전송 하위 수준 세부 정보를 자동으로 처리 합니다. 동시에, Web API는 자연스럽 게 HTTP 프로그래밍 모델을 노출합니다. 사실, Web API의 한 가지 목표를 *되지* 실제로 http를 추상화 합니다. 결과적으로, 웹 API는 유연 하 고 쉽게 확장할 수 있습니다.  REST 아키텍처 스타일은 아니지만 분명 HTTP에 대 한 올바른 접근 방법 HTTP-활용할 수 있는 효과적인 방법을 것으로 입증 된 합니다. 대화 상대 관리자는 나열, 추가 및 다른 연락처를 제거 하기 위한 RESTful를 노출 합니다. 
+
+이 랩에서 HTTP REST에 대 한 기본적인 지식이 필요 하 고 HTML, JavaScript 및 jQuery의 기본 작동 지식이 있다고 가정 합니다.
 > 
 > > [!NOTE]
 > > ASP.NET 웹 사이트에서 ASP.NET Web API 프레임 워크에 전용 영역이 [ https://asp.net/web-api ](https://asp.net/web-api)합니다. 이 사이트는 계속 최신 정보, 샘플 및 웹 API와 관련 된 뉴스 따라서 확인 자주 제공 거의 모든 장치 또는 개발 프레임 워크를 사용할 수 있는 사용자 지정 Web Api를 만드는 아트를 철저히 하려는 경우.
@@ -417,7 +422,7 @@ ms.locfileid: "58423717"
 > 또한 Azure는 다음이 응용이 프로그램을 배포할 수 [부록 c: 웹 배포를 사용 하 여 ASP.NET MVC 4 응용 프로그램 게시](#AppendixC)합니다.
 
 
-* * *
+---
 
 <a id="Summary"></a>
 ## <a name="summary"></a>요약

@@ -8,15 +8,15 @@ ms.date: 04/23/2009
 ms.assetid: 9c31a42f-d8bb-4c0f-9ccc-597d4f70ac42
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/configuring-a-website-that-uses-application-services-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 472770477e83fc0bbe24995e5558d0e8624082ae
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: b8ec246c2f35f3d7fa5bcf67aa6f157195028176
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58426005"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379523"
 ---
-<a name="configuring-a-website-that-uses-application-services-vb"></a>애플리케이션 서비스를 사용하는 웹 사이트 구성(VB)
-====================
+# <a name="configuring-a-website-that-uses-application-services-vb"></a>애플리케이션 서비스를 사용하는 웹 사이트 구성(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/E/6/F/E6FE3A1F-EE3A-4119-989A-33D1A9F6F6DD/ASPNET_Hosting_Tutorial_09_VB.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/C/3/9/C391A649-B357-4A7B-BAA4-48C96871FEA6/aspnet_tutorial09_AppServicesConfig_vb.pdf)
@@ -106,7 +106,7 @@ S를 사용 하 여 프로덕션 데이터베이스에 데이터베이스 개체
 이 도구는 용도 설명 하는 시작 화면을 표시 하 여 시작 합니다. 그림 1에 나와 있는 "설치 옵션 선택" 화면에 고급을 클릭 합니다. 여기에서 응용 프로그램 서비스 데이터베이스 개체 또는 데이터베이스에서 제거할 추가를 선택할 수 있습니다. 프로덕션 데이터베이스에 이러한 개체를 추가 하려고 하기 때문에 "응용 프로그램 서비스에 대 한 SQL Server 구성" 옵션을 선택 하 고 클릭 합니다.
 
 
-[![응용 프로그램 서비스에 대 한 SQL Server를 구성 하려면 선택 합니다.](configuring-a-website-that-uses-application-services-vb/_static/image2.jpg)](configuring-a-website-that-uses-application-services-vb/_static/image1.jpg)
+[![C응용 프로그램 서비스에 대 한 SQL Server 구성에 설치할](configuring-a-website-that-uses-application-services-vb/_static/image2.jpg)](configuring-a-website-that-uses-application-services-vb/_static/image1.jpg)
 
 **그림 1**: 응용 프로그램 서비스에 대 한 SQL server 구성 선택 ([클릭 하 여 큰 이미지 보기](configuring-a-website-that-uses-application-services-vb/_static/image3.jpg))
 
@@ -117,7 +117,7 @@ S를 사용 하 여 프로덕션 데이터베이스에 데이터베이스 개체
 > 데이터베이스 서버 및 자격 증명을 입력 한 후 데이터베이스 드롭다운 목록을 확장 하는 경우 오류가 발생할 수 있습니다. 합니다 `aspnet_regsql.exe` 쿼리 도구를 `sysdatabases` 시스템 테이블에이 정보는 공개적으로 사용할 수 있도록 회사 잠금 해당 데이터베이스 서버를 호스트 하는 일부 웹 서버에서 데이터베이스 목록을 검색 합니다. 이 오류가 발생할 경우 데이터베이스 이름을 드롭다운 목록에 직접 입력할 수 있습니다.
 
 
-[![데이터베이스의 연결 정보를 사용 하 여 도구를 제공 합니다.](configuring-a-website-that-uses-application-services-vb/_static/image5.jpg)](configuring-a-website-that-uses-application-services-vb/_static/image4.jpg)
+[![S연결 정보 도구와 데이터베이스 s upply](configuring-a-website-that-uses-application-services-vb/_static/image5.jpg)](configuring-a-website-that-uses-application-services-vb/_static/image4.jpg)
 
 **그림 2**: 도구와 데이터베이스의 연결 정보를 제공 합니다. ([클릭 하 여 큰 이미지 보기](configuring-a-website-that-uses-application-services-vb/_static/image6.jpg))
 
@@ -125,7 +125,7 @@ S를 사용 하 여 프로덕션 데이터베이스에 데이터베이스 개체
 후속 스크린 응용 프로그램 서비스 데이터베이스 개체를 지정한 데이터베이스에 추가 될 예정인 수행 되는 정보, 즉 작업을 요약 합니다. 이 작업을 완료 옆에 있는 클릭 합니다. 몇 분 후 (그림 3 참조) 데이터베이스 개체를 추가한는 주목할 최종 화면이 표시 됩니다.
 
 
-[![성공 했습니다. 프로덕션 데이터베이스에 추가 된 응용 프로그램 서비스 데이터베이스 개체](configuring-a-website-that-uses-application-services-vb/_static/image8.jpg)](configuring-a-website-that-uses-application-services-vb/_static/image7.jpg)
+[![Success! 응용 프로그램 서비스 데이터베이스 개체는 프로덕션 데이터베이스에 추가 된](configuring-a-website-that-uses-application-services-vb/_static/image8.jpg)](configuring-a-website-that-uses-application-services-vb/_static/image7.jpg)
 
 **그림 3**: 성공 응용 프로그램 서비스 데이터베이스 개체에 추가 된 프로덕션 데이터베이스 ([클릭 하 여 큰 이미지 보기](configuring-a-website-that-uses-application-services-vb/_static/image9.jpg))
 
@@ -133,7 +133,7 @@ S를 사용 하 여 프로덕션 데이터베이스에 데이터베이스 개체
 를 응용 프로그램 서비스 데이터베이스 개체를 프로덕션 데이터베이스에 성공적으로 추가 되었는지 확인 하려면 SQL Server Management Studio 열고 프로덕션 데이터베이스에 연결 합니다. 이제 데이터베이스에서 응용 프로그램 서비스 데이터베이스 테이블 그림 4에서 알 수 있듯이, 표시 `aspnet_Applications`하십시오 `aspnet_Membership`, `aspnet_Users`등.
 
 
-[![데이터베이스 개체를 프로덕션 데이터베이스에 추가 되었는지 확인 합니다.](configuring-a-website-that-uses-application-services-vb/_static/image11.jpg)](configuring-a-website-that-uses-application-services-vb/_static/image10.jpg)
+[![C데이터베이스 개체를 프로덕션 데이터베이스에 추가 되었는지 onfirm](configuring-a-website-that-uses-application-services-vb/_static/image11.jpg)](configuring-a-website-that-uses-application-services-vb/_static/image10.jpg)
 
 **그림 4**: 데이터베이스 개체를 프로덕션 데이터베이스에 추가 되었는지 확인 ([클릭 하 여 큰 이미지 보기](configuring-a-website-that-uses-application-services-vb/_static/image12.jpg))
 
@@ -172,7 +172,7 @@ ASP.NET 웹 사이트 관리 도구 (WSAT) 쉽게 만들고 및 사용자 계정
 > ASP.NET 웹 로그인 관련 컨트롤을 함께 멤버 자격 및 역할 Api를 사용 하는 방법은 읽을 수 있는지에 대 한 필자의 [ *웹 사이트 보안 자습서*](../../older-versions-security/introduction/security-basics-and-asp-net-support-cs.md)합니다. CreateUserWizard 컨트롤 사용자 지정에 대 한 자세한 내용은 참조는 [ *사용자 계정 만들기* ](../../older-versions-security/membership/creating-user-accounts-vb.md) 하 고 [ *추가 사용자 정보 저장* ](../../older-versions-security/membership/storing-additional-user-information-vb.md) 자습서 또는 체크 아웃 [ *Erich Peterson* ](http://www.erichpeterson.com/) 의 기사 [ *CreateUserWizard 컨트롤 사용자 지정* ](http://aspnet.4guysfromrolla.com/articles/070506-1.aspx).
 
 
-[![관리자는 새 사용자 계정을 만들 수 있습니다.](configuring-a-website-that-uses-application-services-vb/_static/image14.jpg)](configuring-a-website-that-uses-application-services-vb/_static/image13.jpg)
+[![A새 사용자 계정을 만들 수 있습니다 dministrators](configuring-a-website-that-uses-application-services-vb/_static/image14.jpg)](configuring-a-website-that-uses-application-services-vb/_static/image13.jpg)
 
 **그림 5**: 관리자 수 있습니다 새 사용자 계정 만들기 ([클릭 하 여 큰 이미지 보기](configuring-a-website-that-uses-application-services-vb/_static/image15.jpg))
 

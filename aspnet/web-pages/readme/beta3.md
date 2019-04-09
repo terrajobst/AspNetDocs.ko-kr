@@ -8,15 +8,15 @@ ms.date: 01/10/2011
 ms.assetid: ffa3d5c9-91e5-4da3-b409-560b0c7fbbf0
 msc.legacyurl: /web-pages/readme/beta3
 msc.type: content
-ms.openlocfilehash: 3d729d1b0615533dddceff484acb3d42247f6cab
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7f0c5ff599235157bd11f5f86a26b8882e0f29dc
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57060500"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381811"
 ---
-<a name="web-matrix-and-aspnet-web-pages-razor-beta-3-release-readme"></a>WebMatrix 및 ASP.NET 웹 페이지(Razor) 베타 3 릴리스 추가 정보
-====================
+# <a name="web-matrix-and-aspnet-web-pages-razor-beta-3-release-readme"></a>WebMatrix 및 ASP.NET 웹 페이지(Razor) 베타 3 릴리스 추가 정보
+
 > WebMatrix 및 ASP.NET 웹 페이지(Razor) 베타 3 릴리스 추가 정보
 
 2010 년 11 월 9
@@ -28,7 +28,7 @@ ms.locfileid: "57060500"
 - [새 기능, 변경 및 Beta 3 릴리스에의 알려진 문제](#Known_Issues)
 
     - [WebMatrix 설치 문제](#Known_Issues_Installation)
-    - [ASP.NET 웹 페이지 2](#Known_Issues_ASPNET)
+    - [ASP.NET Web Pages](#Known_Issues_ASPNET)
     - [SQL Server Compact](#Known_Issues_SQL_Server_Compact)
     - [응용 프로그램 설치](#Known_Issues_Installing_Applications)
     - [응용 프로그램 게시](#Known_Issues_Publishing_Applications)
@@ -116,7 +116,7 @@ ms.locfileid: "57060500"
 
 문서의이 섹션에서는 새로운 기능, 변경 및 Razor 구문이 있는 ASP.NET 웹 페이지의 베타 3 릴리스를 사용 하 여 알려진된 문제에 설명합니다.
 
-- [새로운 기능](#NewFeatures)
+- [새 기능](#NewFeatures)
 - [변경 내용](#Changes)
 - [문제](#Issues)
 
@@ -381,17 +381,17 @@ ms.locfileid: "57060500"
 > [!code-vb[Main](beta3/samples/sample16.vb)]
 
 
-#### <a name="issue-microsoft-visual-c-2008-runtime-libraries-are-required"></a>문제: Microsoft Visual c + + 2008 런타임 라이브러리는 필요
+#### <a name="issue-microsoft-visual-c-2008-runtime-libraries-are-required"></a>문제: Microsoft Visual C++ 2008 런타임 라이브러리는 필요
 
-> 네이티브 Dll의 SQL Server Compact 4.0에는 Microsoft Visual c + + 2008 런타임 라이브러리 ((x86, IA64 및 x64), 서비스 팩 1에 필요합니다.
+> Microsoft Visual 네이티브 Dll의 SQL Server Compact 4.0 필요 C++ 2008 런타임 라이브러리 ((x86, IA64 및 x64), 서비스 팩 1입니다.
 > 
 > **해결 방법**  
-> .NET Framework 3.5 SP1을 설치 합니다. Visual c + + 2008 런타임 라이브러리 SP1도 설치 합니다. 다음 위치에서 라이브러리를 다운로드할 수 있습니다.   
+> .NET Framework 3.5 SP1을 설치 합니다. 시각적 개체도 설치 C++ 2008 런타임 라이브러리 SP1. 다음 위치에서 라이브러리를 다운로드할 수 있습니다.   
 >   
-> [Microsoft Visual c + + 2008 서비스 팩 1 재배포 가능 패키지 ATL 보안 업데이트](https://go.microsoft.com/fwlink/?LinkId=194827)
+> [Microsoft Visual C++ 2008 서비스 팩 1 재배포 가능 패키지 ATL 보안 업데이트](https://go.microsoft.com/fwlink/?LinkId=194827)
 > 
 > [!NOTE]
-> .NET Framework 2.0, 3.0, 설치 또는 4 *되지* Visual c + + 2008 런타임 라이브러리에 SP1을 설치 합니다.
+> .NET Framework 2.0, 3.0, 설치 또는 4 *되지* 시각적 개체 설치 C++ 2008 런타임 라이브러리 SP1.
 
 
 #### <a name="issue-if-sql-server-compact-is-installed-prior-to-installing-net-framework-on-the-computer-its-provider-invariant-name-is-not-registered-in-the-net-framework-machineconfig-file"></a>문제: .NET Framework machine.config 파일에 해당 공급자 고정 이름 등록 되지 않은 컴퓨터에.NET Framework를 설치 하기 전에 SQL Server Compact를 설치 하는 경우
@@ -548,6 +548,6 @@ WebMatrix 베타 3에 대 한 자세한 내용은 다음 웹 사이트를 참조
 - [ASP.NET](https://asp.net/webmatrix)
 - [Microsoft.com/web](https://www.microsoft.com/web)
 
-* * *
+---
 
 © 2010 Microsoft Corporation. All Rights Reserved. [사용 약관](https://msdn.microsoft.cos/cc300389.aspx)합니다.

@@ -8,15 +8,15 @@ ms.date: 10/14/2017
 ms.assetid: 8935bf14-ca6d-4a4e-9dbe-b96ce74cef49
 msc.legacyurl: /ajax/cdn
 msc.type: content
-ms.openlocfilehash: 6fd91f8c05462b603d6911e16bd48ec618d635d9
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 6cea53021ce92e3936b06481008a86dd0590a117
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425732"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59387440"
 ---
-<a name="microsoft-ajax-content-delivery-network"></a>Microsoft Ajax Content Delivery Network
-====================
+# <a name="microsoft-ajax-content-delivery-network"></a>Microsoft Ajax Content Delivery Network
+
 > [!WARNING]
 > 프로덕션 응용 프로그램 CDN 자산 한 강한 종속성을 사용 하지 않아야 합니다. 응용 프로그램 참조 CDN 자산에 대 한 테스트 하 고 CDN을 사용할 수 없는 경우 대체 (fallback) 자산을 사용 해야 합니다.
 >

@@ -8,15 +8,15 @@ ms.date: 03/02/2009
 ms.assetid: cb33b28c-3025-4bd1-a1fa-eaa3af7bb56f
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/creating-an-action-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 243248ee30c6a2db7f102f7743d0393d4a6a9d24
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c66e066bd3e241e667924dacc114f57151df822a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57056130"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59389559"
 ---
-<a name="creating-an-action-c"></a>작업 만들기(C#)
-====================
+# <a name="creating-an-action-c"></a>작업 만들기(C#)
+
 by [Microsoft](https://github.com/microsoft)
 
 > ASP.NET MVC 컨트롤러에 새 작업을 추가 하는 방법에 알아봅니다. 작업 메서드에 대 한 요구 사항에 알아봅니다.
@@ -57,7 +57,7 @@ by [Microsoft](https://github.com/microsoft)
 /Work/CompanySecrets 브라우저의 주소 표시줄에 입력 하 여 CompanySecrets() 컨트롤러 작업을 호출 하려고 하면 그림 1에서 오류 메시지를 받게 됩니다.
 
 
-[![NonAction 메서드 호출](creating-an-action-cs/_static/image1.jpg)](creating-an-action-cs/_static/image1.png)
+[![Invoking NonAction 메서드](creating-an-action-cs/_static/image1.jpg)](creating-an-action-cs/_static/image1.png)
 
 **그림 01**: NonAction 메서드 호출 ([클릭 하 여 큰 이미지 보기](creating-an-action-cs/_static/image2.png))
 

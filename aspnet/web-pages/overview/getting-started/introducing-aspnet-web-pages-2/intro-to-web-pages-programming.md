@@ -8,15 +8,15 @@ ms.date: 06/17/2015
 ms.assetid: 7526ed45-a97d-4e8a-8301-01324ef0eff9
 msc.legacyurl: /web-pages/overview/getting-started/introducing-aspnet-web-pages-2/intro-to-web-pages-programming
 msc.type: authoredcontent
-ms.openlocfilehash: ec1c055d1b3f6ca5c6374a18840c2595bb368e0e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 81c2c6f0070a409c289128ccf5d39f9fff788b48
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034560"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59387349"
 ---
-<a name="introducing-aspnet-web-pages---programming-basics"></a>ASP.NET 웹 페이지 프로그래밍 기본 사항 소개
-====================
+# <a name="introducing-aspnet-web-pages---programming-basics"></a>ASP.NET 웹 페이지 프로그래밍 기본 사항 소개
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 자습서 Razor 구문이 있는 ASP.NET 웹 페이지에서 프로그램에는 방법에 대 한 개요를 제공합니다.
@@ -162,7 +162,7 @@ If가 방금 추가한 새로운 조건입니다. 코드에는 조건이 다음�
 
 [!code-csharp[Main](intro-to-web-pages-programming/samples/sample7.cs)]
 
-식 또는 값에 대 한 변수를 사용 하 여 테스트할 수 있습니다는 <em>논리 연산자</em> 또는 <em>비교 연산자</em>: 같음 (= =), 보다 큼 (&gt;), 보다 작은 (&lt;), 보다 크거나 같음 (&gt;=), 보다 작거나 같음 (&lt;=) 합니다. ! 같지 않음 연산자 의미 =-예를 들어 경우 (을! = 0) 의미 <em>경우</em> <em>는</em><em>0과 같지 않은</em>합니다.
+식 또는 값에 대 한 변수를 사용 하 여 테스트할 수 있습니다는 *논리 연산자* 또는 *비교 연산자*: 같음 (= =), 보다 큼 (&gt;), 보다 작은 (&lt;), 보다 크거나 같음 (&gt;=), 보다 작거나 같음 (&lt;=) 합니다. ! 같지 않음 연산자 의미 =-예를 들어 경우 (을! = 0) 의미 *경우는 0과 같지 않은*합니다.
 
 > [!NOTE]
 > 같음 (= =)에 대 한 비교 연산자가 동일 하 게 =을 확인 해야 합니다. = 연산자에만 값을 할당 하는 (var을 = 2). 이러한 연산자를 혼합 하면 오류가 얻게 또는 이상한 결과 받게 됩니다.
@@ -354,7 +354,7 @@ G 키 키보드에서 IntelliSense GetHtml 메서드를 찾습니다는 참조 �
 
 ## <a name="additional-resources"></a>추가 리소스
 
-- [Razor 구문을 사용 하 여 ASP.NET 웹 프로그래밍 소개](https://go.microsoft.com/fwlink/?LinkID=202890)
+- [Razor 구문을 사용하는 ASP.NET 웹 프로그래밍 소개](https://go.microsoft.com/fwlink/?LinkID=202890)
 - [Twitter 도우미](../../ui-layouts-and-themes/twitter-helper.md)
 
 > [!div class="step-by-step"]

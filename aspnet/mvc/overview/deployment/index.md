@@ -1,23 +1,24 @@
 ---
 uid: mvc/overview/deployment/index
-title: 배포 | Microsoft Docs
+title: ASP.NET MVC 5.0 Deployment - ASP.NET 4.x
 author: rick-anderson
-description: 서버에 ASP.NET MVC 프로젝트를 배포 하는 방법입니다.
+description: 서버에 ASP.NET MVC 5.0 프로젝트를 배포 하는 방법입니다.
 ms.author: riande
 ms.date: 08/18/2011
+ms.custom: seoapril2019
 ms.assetid: 31922c31-59df-4399-99d2-e935a476f16a
 msc.legacyurl: /mvc/overview/deployment
 msc.type: chapter
-ms.openlocfilehash: caf5801dcec8c586626e830dafc1ab01c9c0e6d9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f4fb7ccaf9e6fbecf414d1bdfe7b4cae3218de4b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57022950"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59389923"
 ---
 # <a name="aspnet-mvc-deployment"></a>ASP.NET MVC 배포
 
-> 서버에 ASP.NET MVC 프로젝트를 배포 하는 방법입니다.
+> 서버에 ASP.NET MVC 5.0 프로젝트를 배포 하는 방법입니다.
 
 - [Visual Studio 및 ASP.NET 웹 배포 개요](https://msdn.microsoft.com/library/dd394698)
 - [ASP.NET MVC 애플리케이션을 Windows 컨테이너로 마이그레이션](docker-aspnetmvc.md)

@@ -8,15 +8,15 @@ ms.date: 04/23/2009
 ms.assetid: 0177dabd-d888-449f-91b2-24190cf5e842
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/configuring-the-production-web-application-to-use-the-production-database-cs
 msc.type: authoredcontent
-ms.openlocfilehash: e2560ae7a845c27f7fa5f420eaf1d89618397c60
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: fa05645db9d43a836cc75b399153dd2e2c288f7c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57056740"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59388768"
 ---
-<a name="configuring-the-production-web-application-to-use-the-production-database-c"></a>프로덕션 데이터베이스를 사용하도록 프로덕션 웹 애플리케이션 구성(C#)
-====================
+# <a name="configuring-the-production-web-application-to-use-the-production-database-c"></a>프로덕션 데이터베이스를 사용하도록 프로덕션 웹 애플리케이션 구성(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/E/6/F/E6FE3A1F-EE3A-4119-989A-33D1A9F6F6DD/ASPNET_Hosting_Tutorial_08_CS.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/C/3/9/C391A649-B357-4A7B-BAA4-48C96871FEA6/aspnet_tutorial08_DBConfig_cs.pdf)
@@ -53,7 +53,7 @@ ms.locfileid: "57056740"
 Visual Studio를 열고 다음 서버 탐색기 창에 탐색 (Visual Web developer에서이 창 이라고 데이터베이스 탐색기). 데이터 연결 옵션을 단추로 클릭 하 고 상황에 맞는 메뉴에서 추가 연결 옵션을 선택 합니다. 그러면 그림 1 에서처럼 마법사. 적절 한 데이터 원본을 선택 하 고 계속을 클릭 합니다.
 
 
-[![서버 탐색기에 새 데이터베이스를 추가 하려면 선택 합니다.](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image2.jpg)](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image1.jpg) 
+[![C서버 탐색기에 새 데이터베이스를 추가 하려면 설치할](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image2.jpg)](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image1.jpg) 
 
 **그림 1**: 서버 탐색기에 새 데이터베이스를 추가 하려면 선택 ([클릭 하 여 큰 이미지 보기](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image3.jpg))
 
@@ -61,7 +61,7 @@ Visual Studio를 열고 다음 서버 탐색기 창에 탐색 (Visual Web develo
 다음으로, 다양 한 데이터베이스 연결 정보를 지정 (그림 2 참조). 웹 호스팅 회사를 사용 하 여 등록할 때 해당 데이터베이스 서버 이름, 데이터베이스 이름, 사용자 이름 및 암호를 사용 하는 데이터베이스에 연결 하 고 등 데이터베이스에 연결 하는 방법에 정보를 제공 하 고 있어야 합니다. 이 정보를 입력 한 후이 마법사를 완료 하 고 서버 탐색기에 데이터베이스를 추가 하려면 확인을 클릭 합니다.
 
 
-[![데이터베이스 연결 정보 지정](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image5.jpg)](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image4.jpg) 
+[![S데이터베이스 연결 정보 지정](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image5.jpg)](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image4.jpg) 
 
 **그림 2**: 데이터베이스 연결 정보 지정 ([클릭 하 여 큰 이미지 보기](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image6.jpg))
 
@@ -91,7 +91,7 @@ Visual Studio를 열고 다음 서버 탐색기 창에 탐색 (Visual Web develo
 프로덕션 사이트에 배포 되 면 브라우저를 통해 프로덕션 사이트를 방문 합니다. 데이터 기반 응용 프로그램을 로컬로 실행할 때와 동일한 사용자 환경을 즐길 수 및 표시 됩니다. 물론 프로덕션에서 웹 사이트를 방문 하는 경우 사이트 전원이 프로덕션 데이터베이스 서버에서 데이터베이스를 사용 하 여 개발에서 개발 환경에서 웹 사이트를 방문 하는 반면 있습니다. 그림 3 합니다 *가르치는 직접 ASP.NET 3.5 24 시간 동안에서* 프로덕션 환경 (참고의 브라우저 주소 표시줄에서 URL)에서 웹 사이트에서 페이지를 검토 합니다.
 
 
-[![데이터 기반 응용 프로그램은 이제 사용 가능한에서 프로덕션!](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image8.jpg)](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image7.jpg) 
+[![T또한 데이터 기반 응용 프로그램은 이제 사용 가능한에서 프로덕션 환경에서!](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image8.jpg)](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image7.jpg) 
 
 **그림 3**: 데이터 기반 응용 프로그램은 이제 사용 가능한에서 프로덕션! ([클릭 하 여 큰 이미지 보기](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image9.jpg))
 

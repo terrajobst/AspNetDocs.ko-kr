@@ -8,15 +8,15 @@ ms.date: 01/16/2006
 ms.assetid: 39ad66b4-30f3-48da-b157-b7ffe65b671b
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-make-greater-use-of-caching
 msc.type: video
-ms.openlocfilehash: 12bd2739500551dcb366a2460b2657cf158307a0
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 78108edae6736242d497b88f376ac7d6766d530b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57031450"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59389338"
 ---
-<a name="how-do-i-make-greater-use-of-caching"></a>[어떻게 할까요?] 캐싱의 고급 사용을 확인 하는?
-====================
+# <a name="how-do-i-make-greater-use-of-caching"></a>[어떻게 할까요?] 캐싱의 고급 사용을 확인 하는?
+
 by [Microsoft](https://github.com/microsoft)
 
 부분 페이지 출력 캐싱, 데이터 프레젠테이션 컨트롤을 XML 파일을 효율적으로 바인딩하는 방법을 보여 주는 캐시 API의 개요를 뒤의 데모를 시청 하세요.

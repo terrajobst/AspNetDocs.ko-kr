@@ -8,15 +8,15 @@ ms.date: 02/20/2009
 ms.assetid: 5b033582-1646-42c2-b20d-7edc8814e970
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager/iteration-1-create-the-application-vb
 msc.type: authoredcontent
-ms.openlocfilehash: f1909279f36c0bd3bfb22fe7a892ef8cfad3052f
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 9228fd7bb1a816dc1e7e068c47ee603b91c6c218
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422872"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59389780"
 ---
-<a name="iteration-1--create-the-application-vb"></a>반복 #1 – (VB) 응용 프로그램 만들기
-====================
+# <a name="iteration-1--create-the-application-vb"></a>반복 #1 – (VB) 응용 프로그램 만들기
+
 by [Microsoft](https://github.com/microsoft)
 
 [코드 다운로드](iteration-1-create-the-application-vb/_static/contactmanager_1_vb1.zip)
@@ -91,7 +91,7 @@ ASP.NET MVC 웹 응용 프로그램 프로젝트입니다. Visual Studio를 시�
 .NET Framework 3.5 맨 위에 있는 드롭다운 목록에서 선택 되어 있는지 확인의 오른쪽의 **새 프로젝트** 대화 합니다. 그렇지 않은 경우 ASP.NET MVC 웹 응용 프로그램 템플릿을 표시 되지 않습니다.
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image1.jpg)](iteration-1-create-the-application-vb/_static/image1.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image1.jpg)](iteration-1-create-the-application-vb/_static/image1.png)
 
 **그림 01**: 새 프로젝트 대화 상자 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image2.png))
 
@@ -103,7 +103,7 @@ ASP.NET MVC 응용 프로그램을 **단위 테스트 프로젝트 만들기** �
 > Visual Web Developer는 테스트 프로젝트를 지원 하지 않으므로 얻지 못하는 단위 테스트 프로젝트 만들기 대화 상자 Visual Web Developer를 사용 하는 경우.
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image2.jpg)](iteration-1-create-the-application-vb/_static/image3.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image2.jpg)](iteration-1-create-the-application-vb/_static/image3.png)
 
 **그림 02**: 단위 테스트 프로젝트 만들기 대화 상자 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image4.png))
 
@@ -111,7 +111,7 @@ ASP.NET MVC 응용 프로그램을 **단위 테스트 프로젝트 만들기** �
 ASP.NET MVC 응용 프로그램 Visual Studio 솔루션 탐색기 창에 나타납니다 (그림 3 참조). Don t 메뉴 옵션을 선택 하 여이 창을 열 수 있습니다 다음 솔루션 탐색기 창 표시 **보기, 솔루션 탐색기**합니다. 솔루션에 두 개의 프로젝트 알림: ASP.NET MVC 프로젝트와 테스트 프로젝트. ASP.NET MVC 프로젝트 이름이 ContactManager 및 테스트 프로젝트 이름이 ContactManager.Tests 합니다.
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image3.jpg)](iteration-1-create-the-application-vb/_static/image5.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image3.jpg)](iteration-1-create-the-application-vb/_static/image5.png)
 
 **그림 03**: 솔루션 탐색기 창 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image6.png))
 
@@ -141,7 +141,7 @@ Microsoft SQL Server, Oracle, MySQL 및 IBM DB2 데이터베이스를 비롯 한
 앱을 마우스 오른쪽 단추로 클릭 하 여 새 데이터베이스를 만들\_솔루션 탐색기 창 및 메뉴 옵션을 선택 하면 데이터 폴더 **추가, 새 항목**합니다. 에 **새 항목 추가** 대화 상자에서 선택 합니다 **데이터** 범주 및 **SQL Server 데이터베이스** 템플릿 (그림 4 참조). 새 데이터베이스 ContactManagerDB.mdf 이름과 확인 단추를 클릭 합니다.
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image4.jpg)](iteration-1-create-the-application-vb/_static/image7.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image4.jpg)](iteration-1-create-the-application-vb/_static/image7.png)
 
 **그림 04**: 새 Microsoft SQL Server Express 데이터베이스를 만드는 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image8.png))
 
@@ -156,7 +156,7 @@ Microsoft SQL Server, Oracle, MySQL 및 IBM DB2 데이터베이스를 비롯 한
 데이터베이스 테이블, 뷰, 트리거 및 저장된 프로시저와 같은 새 데이터베이스 개체를 만들려면 서버 탐색기 창에서 사용할 수 있습니다. 테이블 폴더를 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을 선택 **새 테이블 추가**합니다. 데이터베이스 테이블 디자이너 나타납니다 (그림 5 참조).
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image5.jpg)](iteration-1-create-the-application-vb/_static/image9.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image5.jpg)](iteration-1-create-the-application-vb/_static/image9.png)
 
 **그림 05**: 데이터베이스 테이블 디자이너 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image10.png))
 
@@ -203,22 +203,22 @@ ASP.NET MVC 응용 프로그램 모델, 뷰 및 컨트롤러 구성 됩니다. �
 5. 에 **데이터베이스 개체 선택** 단계 테이블 (그림 9 참조) 확인란을 선택 합니다. 데이터 모델 (에 하나만 Contacts 테이블) 데이터베이스에 포함 된 모든 테이블이 포함 됩니다. 네임 스페이스를 입력 *모델*합니다. 마법사를 완료 하려면 "마침" 단추를 클릭 합니다.
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image6.jpg)](iteration-1-create-the-application-vb/_static/image11.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image6.jpg)](iteration-1-create-the-application-vb/_static/image11.png)
 
 **그림 06**: 새 항목 추가 대화 상자 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image12.png))
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image7.jpg)](iteration-1-create-the-application-vb/_static/image13.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image7.jpg)](iteration-1-create-the-application-vb/_static/image13.png)
 
 **그림 07**: Model 콘텐츠 선택 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image14.png))
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image8.jpg)](iteration-1-create-the-application-vb/_static/image15.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image8.jpg)](iteration-1-create-the-application-vb/_static/image15.png)
 
 **그림 08**: 데이터 연결 선택 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image16.png))
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image9.jpg)](iteration-1-create-the-application-vb/_static/image17.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image9.jpg)](iteration-1-create-the-application-vb/_static/image17.png)
 
 **그림 09**: 데이터베이스 개체 선택 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image18.png))
 
@@ -228,7 +228,7 @@ ASP.NET MVC 응용 프로그램 모델, 뷰 및 컨트롤러 구성 됩니다. �
 엔터티 데이터 모델 마법사 기반 데이터베이스 테이블 이름으로 클래스 이름을 생성 합니다. 거의 항상 마법사에서 생성 된 클래스의 이름을 변경 해야 합니다. 디자이너에서 연락처 클래스를 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을 선택 **이름 바꾸기**합니다. (단일) 담당자에 게 연락처 (복수)에서 클래스의 이름을 변경 합니다. 클래스 이름으로 변경한 후 클래스는 그림 10 처럼 표시 됩니다.
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image10.jpg)](iteration-1-create-the-application-vb/_static/image19.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image10.jpg)](iteration-1-create-the-application-vb/_static/image19.png)
 
 **그림 10**: Contact 클래스 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image20.png))
 
@@ -242,7 +242,7 @@ ASP.NET MVC 응용 프로그램 모델, 뷰 및 컨트롤러 구성 됩니다. �
 솔루션 탐색기 창에서 컨트롤러 폴더를 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을 선택 하 여 홈 컨트롤러 클래스를 만듭니다 **추가, 컨트롤러** (그림 11 참조). 확인 확인란 **Create, Update 및 세부 정보 시나리오에 대 한 작업 메서드를 추가**합니다. 이 확인란을 클릭 하기 전에 선택 되어 있는지 확인 합니다 **추가** 단추입니다.
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image11.jpg)](iteration-1-create-the-application-vb/_static/image21.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image11.jpg)](iteration-1-create-the-application-vb/_static/image21.png)
 
 **그림 11**: 홈 컨트롤러 추가 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image22.png))
 
@@ -272,7 +272,7 @@ Index () 메서드를 연락처 데이터베이스 테이블에서 모든 연락
 Index () 메서드를 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을 선택 하 여 인덱스 뷰를 만든 **뷰 추가** (그림 12 참조). 이 메뉴 옵션을 선택 하면 열립니다는 **뷰 추가** 대화 상자 (그림 13 참조).
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image12.jpg)](iteration-1-create-the-application-vb/_static/image23.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image12.jpg)](iteration-1-create-the-application-vb/_static/image23.png)
 
 **그림 12**: 인덱스 뷰 추가 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image24.png))
 
@@ -280,7 +280,7 @@ Index () 메서드를 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션
 에 **뷰 추가** 대화 상자에서 레이블이 지정 된 확인란 **강력한 형식의 뷰를 만들**합니다. 데이터 클래스 ContactManager.Contact 보기 및 콘텐츠 목록 보기를 선택 합니다. 이러한 옵션을 선택 하면 연락처 레코드의 목록을 표시 하는 보기를 생성 합니다.
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image13.jpg)](iteration-1-create-the-application-vb/_static/image25.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image13.jpg)](iteration-1-create-the-application-vb/_static/image25.png)
 
 **그림 13**: 뷰 추가 대화 상자 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image26.png))
 
@@ -300,7 +300,7 @@ Index () 메서드를 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션
 인덱스 보기를 수정한 후에 연락처 관리자 응용 프로그램을 실행할 수 있습니다. 디버깅 시작 메뉴 옵션 디버그을 선택 하거나 간단히 f5 키를 누릅니다. 처음으로 응용 프로그램을 실행 하면 대화 상자를 그림 14에서 가져옵니다. 옵션을 선택 **디버깅을 사용 하려면 Web.config 파일 수정** 확인 단추를 클릭 합니다.
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image14.jpg)](iteration-1-create-the-application-vb/_static/image27.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image14.jpg)](iteration-1-create-the-application-vb/_static/image27.png)
 
 **그림 14**: 디버깅 사용 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image28.png))
 
@@ -308,7 +308,7 @@ Index () 메서드를 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션
 인덱스 보기는 기본적으로 반환 됩니다. 이 보기 연락처 데이터베이스 테이블에서 데이터의 모든를 나열 합니다 (그림 15 참조).
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image15.jpg)](iteration-1-create-the-application-vb/_static/image29.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image15.jpg)](iteration-1-create-the-application-vb/_static/image29.png)
 
 **그림 15**: 인덱스 보기 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image30.png))
 
@@ -336,7 +336,7 @@ Create () 메서드의 본문에 새 연락처 데이터베이스에 삽입 하�
 두 create () 메서드 중 하나를 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을 선택 하 여 새 연락처 만들기에 대 한 HTML 폼을 생성할 수 있습니다 **뷰 추가** (그림 16 참조).
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image16.jpg)](iteration-1-create-the-application-vb/_static/image31.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image16.jpg)](iteration-1-create-the-application-vb/_static/image31.png)
 
 **그림 16**: 만들기 뷰 추가 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image32.png))
 
@@ -344,7 +344,7 @@ Create () 메서드의 본문에 새 연락처 데이터베이스에 삽입 하�
 에 **뷰 추가** 대화 상자에서 선택 합니다 **ContactManager.Contact** 클래스 및 **만들기** 콘텐츠 보기에 대 한 옵션 (그림 17 참조). 클릭할 때 합니다 **추가** 보기를 자동으로 생성 하는 만들기 단추입니다.
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image17.jpg)](iteration-1-create-the-application-vb/_static/image33.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image17.jpg)](iteration-1-create-the-application-vb/_static/image33.png)
 
 **그림 17**: 분해 하는 페이지가 표시 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image34.png))
 
@@ -358,7 +358,7 @@ Create () 메서드의 본문에 새 연락처 데이터베이스에 삽입 하�
 Create () 메서드를 수정 하 고 만들기 뷰 추가 후에 연락처 관리자 응용 프로그램을 실행 하 고 새 연락처를 만들 수 있습니다. 클릭 합니다 **새로 만들기** 만들기 뷰를 이동할 인덱스 보기에 표시 되는 링크입니다. 그림 18에서 보기가 표시 됩니다.
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image18.jpg)](iteration-1-create-the-application-vb/_static/image35.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image18.jpg)](iteration-1-create-the-application-vb/_static/image35.png)
 
 **그림 18**: Create View ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image36.png))
 
@@ -380,7 +380,7 @@ Entity Framework는 수정 된 연락처 데이터베이스에 저장 하는 데
 편집 양식 되 메서드를 마우스 오른쪽 단추로 클릭 하 고 추가 보기 메뉴 옵션을 선택 하 여 포함 하는 뷰를 생성할 수 있습니다. 뷰 추가 대화 상자에서 선택 합니다 **ContactManager.Models.Contact** 클래스와 **편집** 콘텐츠 보기 (그림 19 참조).
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image19.jpg)](iteration-1-create-the-application-vb/_static/image37.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image19.jpg)](iteration-1-create-the-application-vb/_static/image37.png)
 
 **그림 19**: 편집 뷰 추가 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image38.png))
 
@@ -409,7 +409,7 @@ Entity Framework는 수정 된 연락처 데이터베이스에 저장 하는 데
 첫 번째 delete () 메서드는 데이터베이스에서 연락처 레코드를 삭제 하는 확인 형태를 반환 합니다. (Figure20 참조). 두 번째 delete () 메서드는 데이터베이스에 대해 실제 삭제 작업을 수행합니다. 원래 연락처 데이터베이스에서 검색 되 면 데이터베이스 삭제 하는 데 Entity Framework DeleteObject() 및 savechanges () 메서드를 호출 됩니다.
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image20.jpg)](iteration-1-create-the-application-vb/_static/image39.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image20.jpg)](iteration-1-create-the-application-vb/_static/image39.png)
 
 **그림 20**: 삭제 확인 보기로 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image40.png))
 
@@ -419,7 +419,7 @@ Entity Framework는 수정 된 연락처 데이터베이스에 저장 하는 데
 {.id = item.Id})%&gt;
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image21.jpg)](iteration-1-create-the-application-vb/_static/image41.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image21.jpg)](iteration-1-create-the-application-vb/_static/image41.png)
 
 **그림 21**: 인덱스 편집 링크를 사용 하 여 뷰 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image42.png))
 
@@ -429,7 +429,7 @@ Entity Framework는 수정 된 연락처 데이터베이스에 저장 하는 데
 와 달리 목록, 만들기 및 편집 보기의 경우 뷰 추가 대화 상자에 삭제 뷰를 만드는 옵션 대신 선택 합니다 **ContactManager.Models.Contact** 데이터 클래스 및 **빈** 콘텐츠 보기입니다. 콘텐츠 옵션 뷰를 직접 만들 필요는 빈 뷰를 선택 합니다.
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image22.jpg)](iteration-1-create-the-application-vb/_static/image43.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image22.jpg)](iteration-1-create-the-application-vb/_static/image43.png)
 
 **그림 22**: 삭제 확인 보기로 추가 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image44.png))
 
@@ -447,12 +447,12 @@ Entity Framework는 수정 된 연락처 데이터베이스에 저장 하는 데
 이 문제는 쉽게 해결할 수 있습니다. 첫째, Home 컨트롤러의 이름을 리팩터링 해야 합니다. HomeController 클래스 Visual Studio 코드 편집기에서 열고, 클래스의 이름을 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을 선택 **이름 바꾸기**합니다. 이 메뉴 옵션을 선택 하면 이름 바꾸기 대화 상자를 엽니다.
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image23.jpg)](iteration-1-create-the-application-vb/_static/image45.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image23.jpg)](iteration-1-create-the-application-vb/_static/image45.png)
 
 **그림 23**: 컨트롤러 이름 리팩터링 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image46.png))
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image24.jpg)](iteration-1-create-the-application-vb/_static/image47.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image24.jpg)](iteration-1-create-the-application-vb/_static/image47.png)
 
 **그림 24**: 이름 바꾸기 대화 상자를 사용 하 여 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image48.png))
 
@@ -462,7 +462,7 @@ Entity Framework는 수정 된 연락처 데이터베이스에 저장 하는 데
 이 변경을 수행한 후 응용 프로그램은 더 이상 Home 컨트롤러를 해야 합니다. 응용 프로그램을 실행 하면 그림 25에서 오류 페이지를 얻게 됩니다.
 
 
-[![새 프로젝트 대화 상자](iteration-1-create-the-application-vb/_static/image25.jpg)](iteration-1-create-the-application-vb/_static/image49.png)
+[![T새 프로젝트 대화 상자의 그](iteration-1-create-the-application-vb/_static/image25.jpg)](iteration-1-create-the-application-vb/_static/image49.png)
 
 **그림 25**: 기본 컨트롤러 없음 ([클릭 하 여 큰 이미지 보기](iteration-1-create-the-application-vb/_static/image50.png))
 

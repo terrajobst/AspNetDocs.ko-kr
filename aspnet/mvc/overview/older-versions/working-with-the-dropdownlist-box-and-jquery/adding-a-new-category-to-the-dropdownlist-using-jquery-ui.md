@@ -8,15 +8,15 @@ ms.date: 01/12/2012
 ms.assetid: 44aa1ac4-6ea2-48a2-972d-52710c48eae5
 msc.legacyurl: /mvc/overview/older-versions/working-with-the-dropdownlist-box-and-jquery/adding-a-new-category-to-the-dropdownlist-using-jquery-ui
 msc.type: authoredcontent
-ms.openlocfilehash: 9fb95d22be473a4318520a391fa424106246a054
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 99bb37f95ddbad775c9c50ff5faf985b631473d0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062190"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59386751"
 ---
-<a name="adding-a-new-category-to-the-dropdownlist-using-jquery-ui"></a>jQuery UI를 사용하여 DropDownList에 새 범주 추가
-====================
+# <a name="adding-a-new-category-to-the-dropdownlist-using-jquery-ui"></a>jQuery UI를 사용하여 DropDownList에 새 범주 추가
+
 [Rick Anderson]((https://twitter.com/RickAndMSFT))
 
 HTML `Select` 태그 고정된 범주 데이터 목록 표시에 적합 하지만 새 범주를 추가 해야 하는 경우도 많습니다. 데이터베이스에 있는 범주를 "Opera" 장르를 추가 하려는 경우를 가정? 이 섹션에서는 새 범주를 추가 하려면 사용할 수 있습니다 대화 상자를 추가 하려면 jQuery UI를 사용 합니다. 아래 이미지에서는 브라우저에서 UI를 제공 하는 방법을 보여 줍니다.

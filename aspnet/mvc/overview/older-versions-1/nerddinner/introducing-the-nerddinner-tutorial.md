@@ -8,15 +8,15 @@ ms.date: 07/27/2010
 ms.assetid: 397522d5-0402-4b94-b810-a2fb564f869d
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/introducing-the-nerddinner-tutorial
 msc.type: authoredcontent
-ms.openlocfilehash: d5efab525841b5c526aa3b656f27b1c42cc74648
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ebd49295ea165ba4ef1a25398cff7dddcfa54f11
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57053250"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59392198"
 ---
-<a name="introducing-the-nerddinner-tutorial"></a>NerdDinner 자습서 소개
-====================
+# <a name="introducing-the-nerddinner-tutorial"></a>NerdDinner 자습서 소개
+
 [Scott Hanselman](https://github.com/shanselman)
 
 [PDF 다운로드](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf)
@@ -60,18 +60,18 @@ Dinner 참여에 관심이 있는 경우 로그인 하거나 사이트에 등록
 
 파일-를 사용 하 여 NerdDinner 응용 프로그램을 시작 하겠습니다&gt;새로운 ASP.NET MVC 프로젝트를 만들려면 Visual Studio 내에서 새 프로젝트 명령입니다. 그런 다음 증분 방식으로 추가 기능 및 기능. 이 과정에서 설명 하겠습니다.
 
-1. [새 ASP.NET MVC 프로젝트를 만드는 방법](# "새 ASP.NET MVC 프로젝트 만들기")
-2. [데이터베이스를 만드는 방법](# "데이터베이스 만들기")
-3. [비즈니스 규칙 유효성 검사를 사용 하 여 모델을 빌드하는 방법](# "비즈니스 규칙 유효성 검사를 사용 하 여 모델 빌드")
-4. [목록/세부 정보 UI 구현 하려면 컨트롤러와 뷰를 사용 하는 방법](# "사용 하 여 컨트롤러 및 뷰 목록/세부 정보 UI 구현")
-5. [CRUD를 제공 하는 방법 (만들기, 읽기, 업데이트, 삭제) 데이터 양식 항목 지원](# "제공 CRUD (만들기, 읽기, 업데이트, 삭제) 데이터 양식 항목 지원")
-6. [ViewData 사용 및 ViewModel 클래스를 구현 하는 방법](# "ViewData 사용 및 ViewModel 클래스 구현")
-7. [마스터 페이지 및 부분을 사용 하 여 UI를 다시 사용 하는 방법](# "다시 사용 하 여 UI를 사용 하 여 마스터 페이지 및 부분")
-8. [효율적인 데이터 페이징 구현 하는 방법을](# "구현 효율적인 데이터 페이징")
-9. [인증 및 권한 부여를 사용 하 여 응용 프로그램을 보호 하는 방법](# "보안 응용 프로그램 사용 하 여 인증 및 권한 부여")
-10. [AJAX를 사용 하 여 동적 업데이트를 제공 하는 방법](# "동적 업데이트를 제공 하도록 AJAX 사용")
-11. [AJAX를 사용 하 여 매핑 시나리오를 구현 하는 방법](# "매핑 시나리오 구현에 AJAX 사용")
-12. [자동화 된 단위 테스트를 사용 하는 방법](# "자동화 된 단위 테스트를 사용 하도록 설정")
+1. [새 ASP.NET MVC 프로젝트를 만드는 방법](create-a-new-aspnet-mvc-project.md)
+2. [데이터베이스를 만드는 방법](create-a-database.md)
+3. [비즈니스 규칙 유효성 검사를 사용 하 여 모델을 빌드하는 방법](build-a-model-with-business-rule-validations.md)
+4. [목록/세부 정보 UI 구현 하려면 컨트롤러와 뷰를 사용 하는 방법](use-controllers-and-views-to-implement-a-listingdetails-ui.md)
+5. [CRUD를 제공 하는 방법 (만들기, 읽기, 업데이트, 삭제) 데이터 양식 항목 지원](provide-crud-create-read-update-delete-data-form-entry-support.md)
+6. [ViewData 사용 및 ViewModel 클래스를 구현 하는 방법](use-viewdata-and-implement-viewmodel-classes.md)
+7. [마스터 페이지 및 부분을 사용 하 여 UI를 다시 사용 하는 방법](re-use-ui-using-master-pages-and-partials.md)
+8. [효율적인 데이터 페이징 구현 하는 방법](implement-efficient-data-paging.md)
+9. [인증 및 권한 부여를 사용 하 여 응용 프로그램을 보호 하는 방법](secure-applications-using-authentication-and-authorization.md)
+10. [AJAX를 사용 하 여 동적 업데이트를 제공 하는 방법](use-ajax-to-deliver-dynamic-updates.md)
+11. [AJAX를 사용 하 여 매핑 시나리오를 구현 하는 방법](use-ajax-to-implement-mapping-scenarios.md)
+12. [자동화 된 단위 테스트를 사용 하는 방법](enable-automated-unit-testing.md)
 
 NerdDinner의 고유한 복사본을 빌드할 수 있습니다 각 완료 하 여 처음부터 단계에서는이 챕터에 연습입니다. 또는 여기에서 소스 코드의 전체 버전을 다운로드할 수 있습니다. [GitHub에서 NerdDinner](https://github.com/AspNetMVPSamples/NerdDinner)합니다. 또한 필요에 따라 수도 있습니다 [이 자습서에서는 무료 PDF 버전을 다운로드](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf) 하려면 오프 라인 자습서를 읽어 보세요.
 

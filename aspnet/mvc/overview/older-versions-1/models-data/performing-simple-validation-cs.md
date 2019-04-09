@@ -8,15 +8,15 @@ ms.date: 03/02/2009
 ms.assetid: 21383c9d-6aea-4bad-a99b-b5f2c9d6503f
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/performing-simple-validation-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 8ee1d892cd58534c2b64455efed01aa8c2dfdcce
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 12fe89ec83a33ece2971c8186783326d165cbf79
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061990"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59388506"
 ---
-<a name="performing-simple-validation-c"></a>간단한 유효성 검사 수행(C#)
-====================
+# <a name="performing-simple-validation-c"></a>간단한 유효성 검사 수행(C#)
+
 [Stephen walther가](https://github.com/StephenWalther)
 
 > ASP.NET MVC 응용 프로그램에서 유효성 검사를 수행 하는 방법에 알아봅니다. 이 자습서에서는 Stephen walther가 모델 상태 수 및 HTML 유효성 검사 도우미를 소개합니다.
@@ -56,12 +56,12 @@ Html.ValidationMessage() 및 Html.ValidationSummary() 도우미 ASP.NET MVC 스 
 뷰를 추가 하기 전에 응용 프로그램을 빌드하는 것이 있는지 확인 합니다. 클래스 목록에 나타나지이 고, 그렇지 합니다 **데이터 클래스 보기** 드롭다운 목록입니다.
 
 
-[![새 프로젝트 대화 상자](performing-simple-validation-cs/_static/image1.jpg)](performing-simple-validation-cs/_static/image1.png)
+[![T새 프로젝트 대화 상자의 그](performing-simple-validation-cs/_static/image1.jpg)](performing-simple-validation-cs/_static/image1.png)
 
 **그림 01**: 뷰 추가 ([클릭 하 여 큰 이미지 보기](performing-simple-validation-cs/_static/image2.png))
 
 
-[![새 프로젝트 대화 상자](performing-simple-validation-cs/_static/image2.jpg)](performing-simple-validation-cs/_static/image3.png)
+[![T새 프로젝트 대화 상자의 그](performing-simple-validation-cs/_static/image2.jpg)](performing-simple-validation-cs/_static/image3.png)
 
 **그림 02**: 강력한 형식의 뷰 만들기 ([클릭 하 여 큰 이미지 보기](performing-simple-validation-cs/_static/image4.png))
 
@@ -79,7 +79,7 @@ Html.ValidationMessage() 도우미는 HTML 폼 필드의 각 항목 옆에 있�
 그림 3에 있는 페이지에는 누락 된 필드와 값이 잘못 된 양식이 제출 되 면 유효성 검사 도우미에서 렌더링 하는 오류 메시지를 보여 줍니다.
 
 
-[![새 프로젝트 대화 상자](performing-simple-validation-cs/_static/image3.jpg)](performing-simple-validation-cs/_static/image5.png)
+[![T새 프로젝트 대화 상자의 그](performing-simple-validation-cs/_static/image3.jpg)](performing-simple-validation-cs/_static/image5.png)
 
 **그림 03**: 문제 제출 Create view ([클릭 하 여 큰 이미지 보기](performing-simple-validation-cs/_static/image6.png))
 
@@ -104,7 +104,7 @@ HTML의 모양을 입력 필드는 유효성 검사 오류가 있을 때에 수�
 제품을 만들기 위한 HTML 양식을 전송 하면 가격 필드와 UnitsInStock 필드에 대 한 값이 없는 잘못 된 값을 입력 하 고 하는 경우 그림 4에 표시 되는 유효성 검사 메시지를 얻을 수 있습니다. 수행할 유효성 검사 오류 메시지에 이러한 출처에서?
 
 
-[![새 프로젝트 대화 상자](performing-simple-validation-cs/_static/image4.jpg)](performing-simple-validation-cs/_static/image7.png)
+[![T새 프로젝트 대화 상자의 그](performing-simple-validation-cs/_static/image4.jpg)](performing-simple-validation-cs/_static/image7.png)
 
 **그림 04**: 유효성 검사 오류 prebinding ([클릭 하 여 큰 이미지 보기](performing-simple-validation-cs/_static/image8.png))
 

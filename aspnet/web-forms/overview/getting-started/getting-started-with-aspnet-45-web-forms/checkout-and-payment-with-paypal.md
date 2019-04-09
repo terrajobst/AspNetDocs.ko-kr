@@ -8,15 +8,15 @@ ms.date: 09/08/2014
 ms.assetid: 664ec95e-b0c9-4f43-a39f-798d0f2a7e08
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/checkout-and-payment-with-paypal
 msc.type: authoredcontent
-ms.openlocfilehash: b59a395e255823a732aef1b899612063e09b2424
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a0895c2246bc08f50645a865ce2dfffecfbb56a6
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034630"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59391158"
 ---
-<a name="checkout-and-payment-with-paypal"></a>PayPal로 체크 아웃 및 지불
-====================
+# <a name="checkout-and-payment-with-paypal"></a>PayPal로 체크 아웃 및 지불
+
 [Erik Reitan](https://github.com/Erikre)
 
 [Wingtip Toys 샘플 프로젝트 (C#)를 다운로드](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 또는 [전자책 (PDF) 다운로드](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
@@ -250,7 +250,7 @@ ASP.NET Web Forms는 멤버 자격 및 인증에 대 한 향상 된 옵션을 �
 
 PayPal는 온라인 merchants에서 지불을 수락 하는 웹 기반 청구 플랫폼. 이 자습서에는 다음 PayPal의 체크 아웃 Express 기능을 응용 프로그램에 통합 하는 방법을 설명 합니다. 빠른 체크 아웃 PayPal 해당 쇼핑 카트에 추가한 항목에 대 한 요금을 지불 하는 데 사용할 수가 있습니다.
 
-### <a name="create-paylpal-test-accounts"></a>PaylPal 테스트 계정 만들기
+### <a name="create-paypal-test-accounts"></a>PayPal 테스트 계정 만들기
 
 테스트 환경 PayPal을 사용 하려면 만들고 해야 개발자 테스트 계정을 확인 합니다. 테스트 실행 계정 및 판매자 테스트 구매자를 만들려면 개발자 테스트 계정을 사용 합니다. 또한 개발자 테스트 계정 자격 증명을 Wingtip Toys 샘플 응용 프로그램을 PayPal 테스트 환경에 액세스할 수 있습니다.
 
@@ -277,7 +277,7 @@ PayPal는 온라인 merchants에서 지불을 수락 하는 웹 기반 청구 �
 7. 클릭 하 여 buyer 테스트 계정을 만들 합니다 **계정 만들기** 단추입니다.  
  합니다 **샌드박스 테스트 계정** 페이지가 표시 됩니다. 
 
-    ![체크 아웃 및 PayPal-PaylPal 계정 사용 하 여 지불](checkout-and-payment-with-paypal/_static/image17.png)
+    ![체크 아웃 및 PayPal-PayPal 계정으로 지불](checkout-and-payment-with-paypal/_static/image17.png)
 8. 에 **샌드박스 테스트 계정** 페이지를 클릭 합니다 **진행자** 전자 메일 계정.  
     **프로필** 하 고 **알림** 옵션이 나타납니다.
 9. 선택 된 **프로필** 옵션을 선택한 다음 클릭 **API 자격 증명이** 판매자 테스트 계정에 대 한 API 자격 증명을 보려면.

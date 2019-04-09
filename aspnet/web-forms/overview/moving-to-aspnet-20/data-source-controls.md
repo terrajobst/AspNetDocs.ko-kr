@@ -8,15 +8,15 @@ ms.date: 02/20/2005
 ms.assetid: 78fd0e92-f9c6-4e96-a5e9-0375b307a828
 msc.legacyurl: /web-forms/overview/moving-to-aspnet-20/data-source-controls
 msc.type: authoredcontent
-ms.openlocfilehash: ba00024e93beba6eab226dd0d381d8734061e095
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3ba9fdaaf655f6510d3ebf6ce0930fbf4000add3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57038880"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59388870"
 ---
-<a name="data-source-controls"></a>데이터 소스 제어
-====================
+# <a name="data-source-controls"></a>데이터 소스 제어
+
 by [Microsoft](https://github.com/microsoft)
 
 > DataGrid 컨트롤을 ASP.NET 1.x 웹 응용 프로그램에서 데이터 액세스에서 크게 개선 표시 합니다. 그러나 되지 않은 것으로 사용자에 게 친숙 대로 되었을 수 있습니다. 여전히 상당한 양의 코드가에서 많은 유용한 기능을 가져오는 데 필요 합니다. 등에서 모든 데이터 액세스 1.x의 모델입니다.

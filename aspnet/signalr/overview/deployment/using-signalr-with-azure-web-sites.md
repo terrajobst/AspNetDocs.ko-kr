@@ -8,15 +8,15 @@ ms.date: 07/01/2015
 ms.assetid: 2a7517a0-b88c-4162-ade3-9bf6ca7062fd
 msc.legacyurl: /signalr/overview/deployment/using-signalr-with-azure-web-sites
 msc.type: authoredcontent
-ms.openlocfilehash: 13eb5d29a2c40f52aed4b569ec8695f014a05f03
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 531aba3753bf97b8bf1763a22615fb811b375286
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57036520"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379146"
 ---
-<a name="using-signalr-with-web-apps-in-azure-app-service"></a>Azure App Service에서 Web Apps에 SignalR 사용
-====================
+# <a name="using-signalr-with-web-apps-in-azure-app-service"></a>Azure App Service에서 Web Apps에 SignalR 사용
+
 [Patrick Fletcher](https://github.com/pfletcher)
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
@@ -56,7 +56,7 @@ ASP.NET SignalR 새로운 수준의 서버와 웹 또는.NET 클라이언트 간
 
 SignalR은 온-프레미스 서버에 배포와 Azure에 응용 프로그램을 배포 하는 데 특정 복잡 한 문제를 추가 하지 않습니다. SignalR을 사용 하는 응용 프로그램 구성 또는 기타 설정을 변경 하지 않고 Azure에서 호스팅할 수 있습니다 (그러나 Websocket 지원에 대 한 참조 [Azure App Service에서 사용 하도록 설정 하면 Websocket](#websocket) 아래.) 이 자습서에서 만든 응용 프로그램 배포 하는 [초보자를 위한 자습서](../getting-started/tutorial-getting-started-with-signalr.md) azure.
 
-**필수 조건**
+**전제 조건**
 
 - Visual Studio 2013. Visual Studio가 없는 Visual Studio 2013 Express for Web의 Azure SDK 설치에 포함 됩니다.
 - [Visual Studio 2013 용 azure SDK 2.3](https://go.microsoft.com/fwlink/?linkid=324322&clcid=0x409) 나 [Visual Studio 2012 용 Azure SDK 2.3](https://go.microsoft.com/fwlink/p/?linkid=323511)합니다.

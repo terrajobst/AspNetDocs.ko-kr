@@ -8,15 +8,15 @@ ms.date: 11/17/2011
 ms.assetid: 3fc23eed-921d-4d46-a610-a2d156e4bd03
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-creating-and-installing-deployment-packages-12-of-12
 msc.type: authoredcontent
-ms.openlocfilehash: 2923501289f31243a7341848ed3f7c2142c98e75
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7e3c8b2adbe8d5248bed7299fb5e784a753f3851
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57041970"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59382168"
 ---
-<a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-troubleshooting-12-of-12"></a>SQL Server Compact Visual Studio 또는 Visual Web Developer를 사용 하 여를 사용 하 여 ASP.NET 웹 응용 프로그램을 배포 합니다. 문제 해결 (12 12)
-====================
+# <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-troubleshooting-12-of-12"></a>SQL Server Compact Visual Studio 또는 Visual Web Developer를 사용 하 여를 사용 하 여 ASP.NET 웹 응용 프로그램을 배포 합니다. 문제 해결 (12 12)
+
 [Tom Dykstra](https://github.com/tdykstra)
 
 [시작 프로젝트 다운로드](http://code.msdn.microsoft.com/Deploying-an-ASPNET-Web-4e31366b)
@@ -113,7 +113,7 @@ IIS에서 ASP.NET 4 설치 되지 않았습니다. 에 배포 하는 서버는 �
 
 ### <a name="possible-cause-and-solution"></a>가능한 원인 및 해결
 
-엽니다는 *Web.config* 배포 된 사이트에 연결 문자열 값으로 시작 하는지 여부를 확인 하는 파일 `$(ReplacableToken_`다음 예제와 같이:
+엽니다는 *Web.config* 배포 된 사이트에 연결 문자열 값으로 시작 하는지 여부를 확인 하는 파일 `$(ReplaceableToken_`다음 예제와 같이:
 
 [!code-xml[Main](deployment-to-a-hosting-provider-creating-and-installing-deployment-packages-12-of-12/samples/sample9.xml)]
 

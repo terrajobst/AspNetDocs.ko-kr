@@ -8,15 +8,15 @@ ms.date: 10/05/2010
 ms.assetid: dddc8812-a0bc-49f9-aafb-caf2064c2b8c
 msc.legacyurl: /mvc/mvc3
 msc.type: content
-ms.openlocfilehash: 82d18865815568c5df9768fd9dd403f11ebd1714
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 42c28bb7082781ffdf8f2f0fb46f14387e614043
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57045430"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59389533"
 ---
-<a name="aspnet-mvc-3"></a>ASP.NET MVC 3
-====================
+# <a name="aspnet-mvc-3"></a>ASP.NET MVC 3
+
 > *(2011 년 4 월 포함 Tools 업데이트)*
 > 
 > ASP.NET MVC 3은 ASP.NET 및.NET Framework의 기능과 체계적인 디자인 패턴을 사용 하 여 확장성이 뛰어난 표준 기반 웹 응용 프로그램을 빌드하기 위한 프레임 워크입니다.

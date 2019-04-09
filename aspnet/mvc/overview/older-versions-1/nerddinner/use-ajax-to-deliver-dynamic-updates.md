@@ -8,15 +8,15 @@ ms.date: 07/27/2010
 ms.assetid: 18700815-8e6c-4489-91af-7ea9dab6529e
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/use-ajax-to-deliver-dynamic-updates
 msc.type: authoredcontent
-ms.openlocfilehash: 71e566523d658eb8198453f354a12e63a4c38495
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 56ebc40aa500b62811bac0a5041fa9aa4f91f4ae
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58421039"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59391054"
 ---
-<a name="use-ajax-to-deliver-dynamic-updates"></a>AJAX를 사용하여 동적 업데이트 제공
-====================
+# <a name="use-ajax-to-deliver-dynamic-updates"></a>AJAX를 사용하여 동적 업데이트 제공
+
 by [Microsoft](https://github.com/microsoft)
 
 [PDF 다운로드](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf)
@@ -114,7 +114,7 @@ JQuery를 사용 하려면 먼저 스크립트 참조를 추가 합니다. 때�
 
 *팁: VS 2008 sp1 JavaScript 파일 (jQuery 포함)에 대 한 다양 한 intellisense를 지 원하는 JavaScript intellisense 핫픽스를 설치 했는지 확인 합니다. 다운로드할 수 있습니다. http://tinyurl.com/vs2008javascripthotfix*
 
-JQuery를 자주 사용 하 여 작성 된 코드는 전역 "$ ()"를 사용 하 여 CSS 선택기를 사용 하 여 하나 이상의 HTML 요소를 검색 하는 JavaScript 메서드. 예를 들어 <em>$("#rsvpmsg")</em> rsvpmsg의 id 사용 하 여 모든 HTML 요소를 선택 하는 동안 <em>$(".something")</em> "휴대 하는 것" CSS를 사용 하 여 모든 요소를 선택 하는 클래스 이름입니다. "Return 모든 선택 된 라디오 단추"와 같은 보다 고급 수준의 쿼리를 작성할 수도 있습니다와 같은 선택기 쿼리를 사용 하 여: <em>$("입력 [@type= 라디오] [@checked]")</em>합니다.
+JQuery를 자주 사용 하 여 작성 된 코드는 전역 "$ ()"를 사용 하 여 CSS 선택기를 사용 하 여 하나 이상의 HTML 요소를 검색 하는 JavaScript 메서드. 예를 들어 *$("#rsvpmsg")* rsvpmsg의 id 사용 하 여 모든 HTML 요소를 선택 하는 동안 *$(".something")* "휴대 하는 것" CSS를 사용 하 여 모든 요소를 선택 하는 클래스 이름입니다. "Return 모든 선택 된 라디오 단추"와 같은 보다 고급 수준의 쿼리를 작성할 수도 있습니다와 같은 선택기 쿼리를 사용 하 여: *$("입력 [@type= 라디오] [@checked]")* 합니다.
 
 숨기기와 같은 작업을 수행 하도록에서 메서드를 호출 하 여 요소를 선택한 후: *$("#rsvpmsg").hide();*
 

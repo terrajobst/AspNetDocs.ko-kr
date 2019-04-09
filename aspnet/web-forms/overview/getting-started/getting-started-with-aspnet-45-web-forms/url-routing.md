@@ -8,15 +8,15 @@ ms.date: 09/08/2014
 ms.assetid: 4f4bf092-c400-471f-a876-78fda0417890
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/url-routing
 msc.type: authoredcontent
-ms.openlocfilehash: d9f0779d560d6ec7796a16dc2996b959dd171c80
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 992cea256302231ee7031a21c798117b73eaa01c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062360"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59384326"
 ---
-<a name="url-routing"></a>URL 라우팅
-====================
+# <a name="url-routing"></a>URL 라우팅
+
 [Erik Reitan](https://github.com/Erikre)
 
 [Wingtip Toys 샘플 프로젝트 (C#)를 다운로드](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 또는 [전자책 (PDF) 다운로드](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
@@ -79,7 +79,7 @@ Wingtip Toys 샘플 응용 프로그램 시작 되 면 호출 하 여 `Applicati
 
 > [!NOTE] 
 > 
-> **선택 사항**
+> **Optional**
 > 
 > 쉽게 이동 하 여 코드를 관리할 찾을 수 있습니다는 `RegisterCustomRoutes` 메서드는 별도 클래스입니다. 에 *논리* 폴더를 별도 만들기 `RouteActions` 클래스입니다. 위의 이동 `RegisterCustomRoutes` 메서드를 *Global.asax.cs* 파일을 새 `RoutesActions` 클래스입니다. 사용 합니다 `RoleActions` 클래스 및 `createAdmin` 메서드를 호출 하는 방법의 예로 `RegisterCustomRoutes` 메서드에서 *Global.asax.cs* 파일입니다.
 

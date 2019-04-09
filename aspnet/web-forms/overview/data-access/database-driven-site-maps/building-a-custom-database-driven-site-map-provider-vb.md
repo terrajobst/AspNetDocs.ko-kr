@@ -8,15 +8,15 @@ ms.date: 06/26/2007
 ms.assetid: f904cd2c-a408-4484-9324-8b8d7fe33893
 msc.legacyurl: /web-forms/overview/data-access/database-driven-site-maps/building-a-custom-database-driven-site-map-provider-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 55658c563b6dd3c3b097e562cb1fe036bbfce815
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ed54ba79635877faa3da774214057e7804432f65
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57040750"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59391886"
 ---
-<a name="building-a-custom-database-driven-site-map-provider-vb"></a>사용자 지정 데이터베이스 중심 사이트 맵 공급자 빌드(VB)
-====================
+# <a name="building-a-custom-database-driven-site-map-provider-vb"></a>사용자 지정 데이터베이스 중심 사이트 맵 공급자 빌드(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_62_VB.zip) 또는 [PDF 다운로드](building-a-custom-database-driven-site-map-provider-vb/_static/datatutorial62vb1.pdf)
@@ -31,7 +31,7 @@ ASP.NET 2.0의 사이트 맵 기능을 사용 하면 페이지 개발자가 XML 
 기본 XML 기반 사이트 맵 공급자에는 이러한 자습서에 대 한 사이트 맵의 구조는 상당히 정적인와 같은 경우에 작동 합니다. 그러나 대부분의 시나리오에서 보다 동적인 사이트 맵이 필요 합니다. 그림 1에서 각 범주 및 제품 웹 사이트 s 구조의 섹션으로 표시 하는 위치에 표시 된 사이트 맵을 것이 좋습니다. 이 사이트 맵을 사용 하 여 루트 노드에 해당 하는 웹 페이지를 방문 하 나열 될 수 있습니다 모든 범주를 특정 범주의 웹 페이지를 방문 하는 해당 범주 제품은 나열 하 고 특정 제품의 웹 페이지 보기는 해당 제품 s 세부 정보를 표시 합니다.
 
 
-[![범주 및 제품 구성 사이트 맵의 구조](building-a-custom-database-driven-site-map-provider-vb/_static/image1.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image1.png)
+[![T그 범주 및 제품 구성 구조 사이트 맵 s](building-a-custom-database-driven-site-map-provider-vb/_static/image1.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image1.png)
 
 **그림 1**: 범주 및 제품 구성 사이트 맵의 구조 ([클릭 하 여 큰 이미지 보기](building-a-custom-database-driven-site-map-provider-vb/_static/image2.png))
 
@@ -84,12 +84,12 @@ T 필요 하지에서는이 섹션에 대 한 하나의 자습서 이므로 `Def
 열기는 `Default.aspx` 페이지를 `SiteMapProvider` 폴더 및 설정 디자이너 도구 상자에서 GridView 끌어서 해당 `ID` 에 `Categories`합니다. GridView가 스마트 태그에서 바인딩할 라는 한 새 ObjectDataSource `CategoriesDataSource` 사용 하 여 해당 데이터를 검색할 수 있도록 구성 하 고는 `CategoriesBLL` s 클래스 `GetCategories` 메서드. 만이 GridView 범주를 표시 하 고 데이터 수정 기능을 제공 하지 않습니다, UPDATE, INSERT에서에서 드롭 다운 목록을 설정 하 고 탭 (없음)를 삭제 합니다.
 
 
-[![GetCategories 메서드를 사용 하 여 범주를 반환 하는 ObjectDataSource 구성](building-a-custom-database-driven-site-map-provider-vb/_static/image4.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image3.png)
+[![Configure GetCategories 메서드를 사용 하 여 범주를 반환 하는 ObjectDataSource](building-a-custom-database-driven-site-map-provider-vb/_static/image4.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image3.png)
 
 **그림 4**: 범주 사용을 반환 하는 ObjectDataSource를 구성 합니다 `GetCategories` 메서드 ([큰 이미지를 보려면 클릭](building-a-custom-database-driven-site-map-provider-vb/_static/image4.png))
 
 
-[![UPDATE, INSERT 드롭 다운 목록을 설정 하 고 탭 삭제 (없음)](building-a-custom-database-driven-site-map-provider-vb/_static/image5.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image5.png)
+[![SUPDATE, INSERT 및 DELETE 탭 (없음)에 있는 드롭다운 목록은 et](building-a-custom-database-driven-site-map-provider-vb/_static/image5.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image5.png)
 
 **그림 5**: 설정 드롭다운 목록에서 업데이트, 삽입 및 삭제 하는 탭 (없음) ([클릭 하 여 큰 이미지 보기](building-a-custom-database-driven-site-map-provider-vb/_static/image6.png))
 
@@ -112,7 +112,7 @@ ObjectDataSource를 만들고 GridView의 필드를 사용자 지정 후 두 개
 그림 7은 `Default.aspx` 브라우저를 통해 볼 때. S 제품 보기 범주를 클릭 하면 링크 하면 `ProductsByCategory.aspx?CategoryID=categoryID`, 3 단계에서에서 빌드할 것입니다.
 
 
-[![보기 제품 링크를 사용 하 여 함께 나열 된 각 범주는](building-a-custom-database-driven-site-map-provider-vb/_static/image7.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image7.png)
+[![E보기 제품 링크를 사용 하 여 함께 나열 된 대 한 ach 범주입니다.](building-a-custom-database-driven-site-map-provider-vb/_static/image7.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image7.png)
 
 **그림 7**: 범주별 보기 제품 링크를 사용 하 여 함께 나열 됩니다 ([클릭 하 여 큰 이미지 보기](building-a-custom-database-driven-site-map-provider-vb/_static/image8.png))
 
@@ -122,7 +122,7 @@ ObjectDataSource를 만들고 GridView의 필드를 사용자 지정 후 두 개
 엽니다는 `ProductsByCategory.aspx` 페이지 및 추가 이름을 지정 하는 GridView `ProductsByCategory`합니다. 스마트 태그를 바인딩할 GridView 라는 새로운 ObjectDataSource는 `ProductsByCategoryDataSource`합니다. ObjectDataSource 사용 하도록 구성 합니다 `ProductsBLL` s 클래스 `GetProductsByCategoryID(categoryID)` 메서드 집합과 드롭다운 목록 (None) UPDATE, INSERT 및 DELETE 탭에 있습니다.
 
 
-[![ProductsBLL 클래스의 GetProductsByCategoryID(categoryID) 메서드를 사용 하 여](building-a-custom-database-driven-site-map-provider-vb/_static/image8.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image9.png)
+[![Use s GetProductsByCategoryID(categoryID) 메서드 ProductsBLL 클래스](building-a-custom-database-driven-site-map-provider-vb/_static/image8.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image9.png)
 
 **그림 8**: 사용 된 `ProductsBLL` s 클래스 `GetProductsByCategoryID(categoryID)` 메서드 ([클릭 하 여 큰 이미지 보기](building-a-custom-database-driven-site-map-provider-vb/_static/image10.png))
 
@@ -130,7 +130,7 @@ ObjectDataSource를 만들고 GridView의 필드를 사용자 지정 후 두 개
 데이터 소스 구성 마법사의 마지막 단계에 대 한 매개 변수 소스 묻는 *categoryID*합니다. 이 정보는 쿼리 문자열 필드를 통해 전달 되므로 `CategoryID`QueryString 드롭 다운 목록에서 선택 하 고 그림 9 에서처럼 CategoryID QueryStringField 텍스트 상자에 입력 합니다. 마법사를 완료 하려면 마침을 클릭 합니다.
 
 
-[![CategoryID Querystring 필드를 사용 하 여 categoryid 매개 변수](building-a-custom-database-driven-site-map-provider-vb/_static/image9.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image11.png)
+[![Use CategoryID Querystring 필드 categoryID 매개 변수](building-a-custom-database-driven-site-map-provider-vb/_static/image9.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image11.png)
 
 **그림 9**: 사용 된 `CategoryID` 에 대 한 Querystring 필드를 *categoryID* 매개 변수 ([클릭 하 여 큰 이미지 보기](building-a-custom-database-driven-site-map-provider-vb/_static/image12.png))
 
@@ -153,7 +153,7 @@ ObjectDataSource를 만들고 GridView의 필드를 사용자 지정 후 두 개
 보기 돌아갑니다 `Default.aspx` 음료에 대 한 링크를 통해 브라우저를 제품 보기를 클릭 합니다. 이렇게 하면 `ProductsByCategory.aspx?CategoryID=1`, 음료 범주에 속하는 Northwind 데이터베이스의 이름, 가격 및 제품의 공급 업체 표시 (그림 11 참조). 범주 목록 페이지에 사용자를 반환 하는 링크를 포함 하려면이 페이지를 좀 더 강화 하려면 자유롭게 (`Default.aspx`) 및 DetailsView 또는 FormView 컨트롤을 선택한 범주의 이름 및 설명을 표시 합니다.
 
 
-[![음료 이름, 가격 및 공급 업체 표시 됩니다.](building-a-custom-database-driven-site-map-provider-vb/_static/image11.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image13.png)
+[![T그 음료 이름, 가격 및 공급 업체는 표시](building-a-custom-database-driven-site-map-provider-vb/_static/image11.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image13.png)
 
 **그림 11**: 음료 이름, 가격 및 공급 업체 표시 됩니다 ([클릭 하 여 큰 이미지 보기](building-a-custom-database-driven-site-map-provider-vb/_static/image14.png))
 
@@ -163,7 +163,7 @@ ObjectDataSource를 만들고 GridView의 필드를 사용자 지정 후 두 개
 마지막 페이지 `ProductDetails.aspx`, 선택한 제품 세부 정보를 표시 합니다. 열기 `ProductDetails.aspx` 디자이너 도구 상자에서을 DetailsView를 끕니다. 집합 DetailsView s `ID` 속성을 `ProductInfo` 지울 및 해당 `Height` 고 `Width` 속성 값입니다. 스마트 태그를 바인딩할 DetailsView 라는 한 새 ObjectDataSource `ProductDataSource`, ObjectDataSource에서 해당 데이터를 가져오도록 구성 합니다 `ProductsBLL` s 클래스 `GetProductByProductID(productID)` 메서드. 2, 3 단계에서 만든 이전 웹 페이지와 마찬가지로 UPDATE, INSERT에서에서 드롭 다운 목록을 설정 하 고 탭 (없음)를 삭제 합니다.
 
 
-[![GetProductByProductID(productID) 메서드를 사용 하는 ObjectDataSource 구성](building-a-custom-database-driven-site-map-provider-vb/_static/image12.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image15.png)
+[![Configure GetProductByProductID(productID) 메서드를 사용 하는 ObjectDataSource](building-a-custom-database-driven-site-map-provider-vb/_static/image12.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image15.png)
 
 **그림 12**: ObjectDataSource를 사용 하 여 구성 합니다 `GetProductByProductID(productID)` 메서드 ([큰 이미지를 보려면 클릭](building-a-custom-database-driven-site-map-provider-vb/_static/image16.png))
 
@@ -171,7 +171,7 @@ ObjectDataSource를 만들고 GridView의 필드를 사용자 지정 후 두 개
 원본에 대 한 프롬프트 데이터 소스 구성 마법사의 마지막 단계는 *productID* 매개 변수입니다. 쿼리 문자열 필드를 통해이 데이터가 있으므로 `ProductID`, QueryString을 ProductID QueryStringField 텍스트 상자의 드롭 다운 목록을 설정 합니다. 마지막으로 마법사를 완료 하려면 "마침" 단추를 클릭 합니다.
 
 
-[![ProductID ProductID Querystring 필드에서 해당 값을 가져오려고 매개 변수를 구성 합니다.](building-a-custom-database-driven-site-map-provider-vb/_static/image13.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image17.png)
+[![Configure productID ProductID Querystring 필드에서 해당 값을 가져오려고 매개 변수](building-a-custom-database-driven-site-map-provider-vb/_static/image13.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image17.png)
 
 **그림 13**: 구성 합니다 *productID* 매개 변수에서 값을 가져오려고 합니다 `ProductID` Querystring 필드 ([클릭 하 여 큰 이미지 보기](building-a-custom-database-driven-site-map-provider-vb/_static/image18.png))
 
@@ -196,7 +196,7 @@ ObjectDataSource를 만들고 GridView의 필드를 사용자 지정 후 두 개
 그림 15에서는 그림 1에서 하지만 보다 자세히 살펴본 구현 세부 정보를 사용 하 여 일반 사이트 맵 구조를 보여 줍니다.
 
 
-[![각 있으면이 속성 같은 Title, Url, 키 및 등](building-a-custom-database-driven-site-map-provider-vb/_static/image16.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image15.gif)
+[![E대 한 ach 있으면 속성 같은 Title, Url, 키 및 등에](building-a-custom-database-driven-site-map-provider-vb/_static/image16.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image15.gif)
 
 **그림 15**: 각 `SiteMapNode` 와 같은 속성에 `Title`, `Url`, `Key`등에 ([클릭 하 여 큰 이미지 보기](building-a-custom-database-driven-site-map-provider-vb/_static/image17.gif))
 
@@ -205,7 +205,7 @@ ObjectDataSource를 만들고 GridView의 필드를 사용자 지정 후 두 개
 
 경우는 `SiteMap`의 클래스 속성에 액세스, 메모리로 일부 영구 매체에서 사이트 맵 구조를 serialize 해야 하 합니다. 그러나 사이트 맵 직렬화 논리는 어렵지 않습니다에 코딩 된 `SiteMap` 클래스입니다. 대신 런타임에 합니다 `SiteMap` 클래스에는 사이트 맵 결정 *공급자* serialization에 사용할 합니다. 기본적으로 [ `XmlSiteMapProvider` 클래스](https://msdn.microsoft.com/library/system.web.xmlsitemapprovider.aspx) 사용 되는 올바른 형식의 XML 파일에서 사이트 맵의 구조를 소리내어 합니다. 그러나 약간의 작업을 사용 하 여 고유한 사용자 지정 사이트 맵 공급자를 만들 수 있습니다.
 
-모든 사이트 맵 공급자에서 파생 되어야 합니다는 [ `SiteMapProvider` 클래스](https://msdn.microsoft.com/library/system.web.sitemapprovider.aspx)필수 메서드를 포함 하는 고 사이트에 필요한 속성 공급자 매핑하지만 다양 한 구현 세부 정보를 생략 합니다. 두 번째 클래스인 [ `StaticSiteMapProvider` ](https://msdn.microsoft.com/library/system.web.staticsitemapprovider.aspx)를 확장 합니다 `SiteMapProvider` 클래스 및 더욱 강력한 구현은 필요한 기능을 포함 합니다. 내부적으로 `StaticSiteMapProvider` 저장 합니다 `SiteMapNode` 에 매핑할 사이트의 인스턴스를 `Hashtable` 와 같은 메서드를 제공 하 고 `AddNode(child, parent)`, `RemoveNode(siteMapNode),` 및 `Clear()` 를 추가 및 제거 `SiteMapNode` 내부를 `Hashtable`. `XmlSiteMapProvider`는 `StaticSiteMapProvider`에서 파생됩니다.
+모든 사이트 맵 공급자에서 파생 되어야 합니다는 [ `SiteMapProvider` 클래스](https://msdn.microsoft.com/library/system.web.sitemapprovider.aspx)필수 메서드를 포함 하는 고 사이트에 필요한 속성 공급자 매핑하지만 다양 한 구현 세부 정보를 생략 합니다. 두 번째 클래스인 [ `StaticSiteMapProvider` ](https://msdn.microsoft.com/library/system.web.staticsitemapprovider.aspx)를 확장 합니다 `SiteMapProvider` 클래스 및 더욱 강력한 구현은 필요한 기능을 포함 합니다. 내부적으로 `StaticSiteMapProvider` 저장 합니다 `SiteMapNode` 에 매핑할 사이트의 인스턴스를 `Hashtable` 와 같은 메서드를 제공 하 고 `AddNode(child, parent)`, `RemoveNode(siteMapNode),` 및 `Clear()` 를 추가 및 제거 `SiteMapNode` 내부를 `Hashtable`. `XmlSiteMapProvider` 파생 된 `StaticSiteMapProvider`합니다.
 
 확장 하는 사용자 지정 사이트 맵 공급자를 만들 때 `StaticSiteMapProvider`, 두 가지가 있습니다 추상 재정의 해야 합니다: [ `BuildSiteMap` ](https://msdn.microsoft.com/library/system.web.staticsitemapprovider.buildsitemap.aspx) 하 고 [ `GetRootNodeCore` ](https://msdn.microsoft.com/library/system.web.sitemapprovider.getrootnodecore.aspx)합니다. `BuildSiteMap`해당 이름에서 알 수 있듯이 영구 저장소에서 사이트 맵 구조를 로드 하 고 메모리에서 생성 하는 일을 담당 합니다. `GetRootNodeCore` 사이트 맵의 루트 노드를 반환합니다.
 
@@ -280,7 +280,7 @@ Northwind 데이터베이스의 제품 범주와 사이트 맵을 작성 하는 
 사용자 지정 사이트 맵 공급자를 만들고 등록의 `Web.config`, 탐색 컨트롤을 추가 하려면 준비 된 것을 `Default.aspx`, `ProductsByCategory.aspx`, 및 `ProductDetails.aspx` 페이지에 `SiteMapProvider` 폴더. 열어서 시작 합니다 `Default.aspx` 끌어서 페이지는 `SiteMapPath` 디자이너 도구 상자에서. SiteMapPath 컨트롤을 도구 상자의 탐색 섹션에 있습니다.
 
 
-[![Default.aspx로는 SiteMapPath를 추가 합니다.](building-a-custom-database-driven-site-map-provider-vb/_static/image19.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image18.gif)
+[![Add는 SiteMapPath Default.aspx로](building-a-custom-database-driven-site-map-provider-vb/_static/image19.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image18.gif)
 
 **그림 16**: 추가 하는 SiteMapPath `Default.aspx` ([큰 이미지를 보려면 클릭](building-a-custom-database-driven-site-map-provider-vb/_static/image20.gif))
 
@@ -290,7 +290,7 @@ SiteMapPath 컨트롤 사이트 맵 내에서 현재 페이지의 위치를 나�
 브라우저를 통해이 페이지를 보려면 잠시 시간이 소요 됩니다. 그림 16에 추가 하는 SiteMapPath 해당 데이터를 가져오는 기본 사이트 맵 공급자를 사용 하 여 `Web.sitemap`입니다. 따라서, 이동 경로 탐색 표시 홈 &gt; 사이트 맵에서 오른쪽 위 모서리에 있는 이동 경로 탐색에서와 마찬가지로 사용자 지정 합니다.
 
 
-[![기본 사이트 맵 공급자를 사용 하 여 이동 경로 탐색](building-a-custom-database-driven-site-map-provider-vb/_static/image22.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image21.gif)
+[![T이동 경로 탐색 사용 하는 기본 사이트 맵 공급자](building-a-custom-database-driven-site-map-provider-vb/_static/image22.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image21.gif)
 
 **그림 17**: 이동 경로 기본 사이트 맵 공급자를 사용 하 여 ([클릭 하 여 큰 이미지 보기](building-a-custom-database-driven-site-map-provider-vb/_static/image23.gif))
 
@@ -298,7 +298,7 @@ SiteMapPath 컨트롤 사이트 맵 내에서 현재 페이지의 위치를 나�
 그림 16에 추가 하는 SiteMapPath 6 단계에서에서 만든 사용자 지정 사이트 맵 공급자를 사용 하도록 설정 해당 [ `SiteMapProvider` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.sitemappath.sitemapprovider.aspx) northwind에에서는 할당 된 이름에는 `NorthwindSiteMapProvider` 에서 `Web.config`합니다. 아쉽게도 디자이너 계속 기본 사이트 맵 공급자를 사용 하 여 있지만이 속성을 변경한 후 브라우저를 통해 페이지를 방문 하는 경우 이동 경로 탐색 이제는 사용자 지정 사이트 맵 공급자 확인할 수 있습니다.
 
 
-[![이제 사용 하 여 사용자 지정 사이트 맵 공급자 NorthwindSiteMapProvider 이동 경로 탐색](building-a-custom-database-driven-site-map-provider-vb/_static/image25.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image24.gif)
+[![T이동 경로 탐색 지금 사용 하 여 사용자 지정 사이트 맵 공급자 NorthwindSiteMapProvider](building-a-custom-database-driven-site-map-provider-vb/_static/image25.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image24.gif)
 
 **그림 18**: 이동 경로 탐색은 이제 사용자 지정 사이트 맵 공급자 사용 `NorthwindSiteMapProvider` ([큰 이미지를 보려면 클릭](building-a-custom-database-driven-site-map-provider-vb/_static/image26.gif))
 
@@ -306,7 +306,7 @@ SiteMapPath 컨트롤 사이트 맵 내에서 현재 페이지의 위치를 나�
 SiteMapPath 컨트롤에 더 많은 기능 사용자 인터페이스를 표시 합니다 `ProductsByCategory.aspx` 고 `ProductDetails.aspx` 페이지입니다. SiteMapPath를 설정 하는 이러한 페이지에 추가 된 `SiteMapProvider` Northwind로 모두 속성. `Default.aspx` 음료, 제품 보기 링크에 Chai 차에 대 한 세부 정보 보기 링크를 클릭 합니다. 그림 19에서 알 수 있듯이, 이동 경로 탐색 현재 사이트 맵 섹션 (Chai Tea) 및 해당 상위 항목을 포함 합니다. Beverages 및 모든 범주입니다.
 
 
-[![이제 사용 하 여 사용자 지정 사이트 맵 공급자 NorthwindSiteMapProvider 이동 경로 탐색](building-a-custom-database-driven-site-map-provider-vb/_static/image27.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image21.png)
+[![T이동 경로 탐색 지금 사용 하 여 사용자 지정 사이트 맵 공급자 NorthwindSiteMapProvider](building-a-custom-database-driven-site-map-provider-vb/_static/image27.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image21.png)
 
 **그림 19**: 이동 경로 탐색은 이제 사용자 지정 사이트 맵 공급자 사용 `NorthwindSiteMapProvider` ([큰 이미지를 보려면 클릭](building-a-custom-database-driven-site-map-provider-vb/_static/image22.png))
 
@@ -314,7 +314,7 @@ SiteMapPath 컨트롤에 더 많은 기능 사용자 인터페이스를 표시 �
 Menu 및 TreeView 컨트롤과 같은 SiteMapPath 외에도 다른 탐색 사용자 인터페이스 요소를 사용할 수 있습니다. 합니다 `Default.aspx`, `ProductsByCategory.aspx`, 및 `ProductDetails.aspx` 예를 들어이 자습서에서는 다운로드에서 페이지 메뉴 컨트롤 (그림 20 참조) 모두 포함 합니다. 참조 [ASP.NET 2.0 검사 s 사이트 탐색 기능](http://aspnet.4guysfromrolla.com/articles/111605-1.aspx) 및 [사이트 탐색 컨트롤을 사용 하](https://quickstarts.asp.net/QuickStartv20/aspnet/doc/navigation/sitenavcontrols.aspx) 섹션을 [ASP.NET 2.0 퀵 스타트](https://quickstarts.asp.net/QuickStartv20/aspnet/) 더 자세히 살펴보려면를 탐색 컨트롤 및 ASP.NET 2.0의 사이트 맵 시스템입니다.
 
 
-[![메뉴 컨트롤에는 각 범주 및 제품 나열](building-a-custom-database-driven-site-map-provider-vb/_static/image29.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image28.gif)
+[![T그 메뉴 컨트롤에는 각 범주 및 제품 나열](building-a-custom-database-driven-site-map-provider-vb/_static/image29.gif)](building-a-custom-database-driven-site-map-provider-vb/_static/image28.gif)
 
 **그림 20**: 메뉴 컨트롤 나열 각 범주 및 제품 ([클릭 하 여 큰 이미지 보기](building-a-custom-database-driven-site-map-provider-vb/_static/image30.gif))
 

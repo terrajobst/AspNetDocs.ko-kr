@@ -8,15 +8,15 @@ ms.date: 11/16/2009
 ms.assetid: d4df6c61-9ca2-4e7c-8b65-749847f15d2c
 msc.legacyurl: /web-forms/videos/net-4/ajax/aspnet-4-quick-hit-imperative-javascript-syntax-for-microsoft-client-side-controls
 msc.type: video
-ms.openlocfilehash: 844f08e8008ae5ef4d0ccb79bb56dd6dee756b1b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8e2aa1d2bbef02ddf26f252150121897383f1772
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57039240"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59391288"
 ---
-<a name="aspnet-4-quick-hit---imperative-javascript-syntax-for-microsoft-client-side-controls"></a>ASP.NET 4 "빠른 Hit"-Microsoft 클라이언트 쪽에 대 한 명령적 JavaScript 구문 제어
-====================
+# <a name="aspnet-4-quick-hit---imperative-javascript-syntax-for-microsoft-client-side-controls"></a>ASP.NET 4 "빠른 Hit"-Microsoft 클라이언트 쪽에 대 한 명령적 JavaScript 구문 제어
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 이 비디오에서는 Microsoft 클라이언트 쪽 컨트롤에 대 한 명령적 JavaScript 구문에 배웁니다. 

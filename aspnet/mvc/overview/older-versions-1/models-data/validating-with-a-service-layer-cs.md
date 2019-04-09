@@ -8,15 +8,15 @@ ms.date: 03/02/2009
 ms.assetid: 4eabc535-b8a1-43f5-bb99-cfeb86db0fca
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/validating-with-a-service-layer-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 69ff78949589017d12a791231e38b400b49f2917
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 9b2a7e00b3c50a946ad0f2518880892f103a5c1b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57051840"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59387115"
 ---
-<a name="validating-with-a-service-layer-c"></a>서비스 레이어를 사용한 유효성 검사(C#)
-====================
+# <a name="validating-with-a-service-layer-c"></a>서비스 레이어를 사용한 유효성 검사(C#)
+
 [Stephen walther가](https://github.com/StephenWalther)
 
 > 사용자 유효성 검사 논리는 별도 서비스 계층 및 컨트롤러 작업에서 이동 하는 방법에 알아봅니다. 이 자습서에서는 Stephen walther가 컨트롤러 계층에서 서비스 계층을 격리 하 여 중요 한 부분의 분리를 선명 하 게 유지할 수 있습니다에 대해 설명 합니다.

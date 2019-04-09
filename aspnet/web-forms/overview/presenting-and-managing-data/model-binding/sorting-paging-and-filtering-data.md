@@ -8,15 +8,15 @@ ms.date: 02/27/2014
 ms.assetid: 266e7866-e327-4687-b29d-627a0925e87d
 msc.legacyurl: /web-forms/overview/presenting-and-managing-data/model-binding/sorting-paging-and-filtering-data
 msc.type: authoredcontent
-ms.openlocfilehash: 624f98cea6030e0b7b022f86c4c1aa37f1db9726
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1159d75ec5b2f7e5ac94da0a15acf24b5400798b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57065780"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59387478"
 ---
-<a name="sorting-paging-and-filtering-data-with-model-binding-and-web-forms"></a>정렬, 페이징 및 모델 바인딩 및 web forms를 사용 하 여 데이터를 필터링 합니다.
-====================
+# <a name="sorting-paging-and-filtering-data-with-model-binding-and-web-forms"></a>정렬, 페이징 및 모델 바인딩 및 web forms를 사용 하 여 데이터를 필터링 합니다.
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 자습서 시리즈에서는 모델 바인딩을 사용 하 여 ASP.NET Web Forms 프로젝트의 기본 사항을 보여 줍니다. 모델 바인딩 보다 직관적인 데이터 원본 개체 (예: ObjectDataSource 또는 SqlDataSource) 처리 하는 보다 데이터 상호 작용 하 게 합니다. 이 시리즈 소개 자료를 사용 하 여 시작 하 고 나중에 자습서에서 고급 개념을 이동 합니다.
@@ -61,7 +61,7 @@ GridView에서 정렬 사용 하지 않는 것이 쉽습니다. Student.aspx 파
 
 모델 바인딩을 사용 하면 모델 바인딩 메서드에서 매개 변수의 값을 설정 하는 방법을 지정 하는 몇 가지 특성을 추가 합니다. 이러한 특성은는 **System.Web.ModelBinding** 네임 스페이스입니다. 다음과 같은 변경 내용이 해당됩니다.
 
-- Control
+- 컨트롤
 - 쿠키
 - Form
 - 프로필

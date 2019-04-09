@@ -8,15 +8,15 @@ ms.date: 06/12/2014
 ms.assetid: cc1ad51b-40c3-4c68-8620-9aaa0fd1f6cf
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/queue-centric-work-pattern
 msc.type: authoredcontent
-ms.openlocfilehash: 03b6950104b6f293271d9f9a0feed4071e9b1174
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0d6d8375425f3a0cb915c2f7844f6c5191ea4e95
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57056940"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59392016"
 ---
-<a name="queue-centric-work-pattern-building-real-world-cloud-apps-with-azure"></a>큐 중심 작업 패턴 (실제 클라우드 앱 빌드 Azure 사용 하 여)
-====================
+# <a name="queue-centric-work-pattern-building-real-world-cloud-apps-with-azure"></a>큐 중심 작업 패턴 (실제 클라우드 앱 빌드 Azure 사용 하 여)
+
 하 여 [Mike Wasson](https://github.com/MikeWasson)하십시오 [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
 
 [다운로드 해결 프로젝트](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자책 다운로드](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)

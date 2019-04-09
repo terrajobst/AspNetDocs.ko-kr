@@ -8,15 +8,15 @@ ms.date: 12/13/2013
 ms.assetid: cd844025-ccad-41ce-8694-595f1022a49f
 msc.legacyurl: /web-api/overview/testing-and-debugging/mocking-entity-framework-when-unit-testing-aspnet-web-api-2
 msc.type: authoredcontent
-ms.openlocfilehash: 7ed2d543ca019e926a87e6897aa0d8a0784f4796
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 3dddc1fd38a5384e40f9fa109da9d8c1424ef01a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422625"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59387258"
 ---
-<a name="mocking-entity-framework-when-unit-testing-aspnet-web-api-2"></a>Entity Framework 머킹 때 단위 테스트 ASP.NET Web API 2
-====================
+# <a name="mocking-entity-framework-when-unit-testing-aspnet-web-api-2"></a>Entity Framework 머킹 때 단위 테스트 ASP.NET Web API 2
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 [완료 된 프로젝트 다운로드](https://code.msdn.microsoft.com/Unit-Testing-with-ASPNET-1374bc11)
@@ -36,7 +36,7 @@ ms.locfileid: "58422625"
 
 이 항목에는 다음과 같은 단원이 포함되어 있습니다.
 
-- [필수 조건](#prereqs)
+- [전제 조건](#prereqs)
 - [코드 다운로드](#download)
 - [단위 테스트 프로젝트를 사용 하 여 응용 프로그램 만들기](#appwithunittest)
 - [모델 클래스 만들기](#modelclass)

@@ -8,15 +8,15 @@ ms.date: 10/16/2008
 ms.assetid: 81190124-d0f6-4e4b-a48f-2613cc5a6aa7
 msc.legacyurl: /mvc/videos/mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-22-restructuring-rerouting-and-paypal
 msc.type: video
-ms.openlocfilehash: 189125563764d4eb8e8bc42befb21239be1bd8d5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 772ddf69baf8daf5d3f0b13ed92efb80c561c38b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049190"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59388835"
 ---
-<a name="aspnet-mvc-storefront-part-22-restructuring-rerouting-and-paypal"></a>ASP.NET MVC Storefront 22부: 구조 변경, 경로 재정의 및 PayPal
-====================
+# <a name="aspnet-mvc-storefront-part-22-restructuring-rerouting-and-paypal"></a>ASP.NET MVC Storefront 22부: 구조 변경, 경로 재정의 및 PayPal
+
 [Rob Conery](https://github.com/robconery)
 
 이 에피소드에서 일부 작업을 정리 하기 위해 약간 재구성 I. 또한 훨씬 더 간단해 집니다 경로 변경 합니다. 마지막으로, PayPal로 체크 아웃 옵션을 추가합니다.

@@ -8,15 +8,15 @@ ms.date: 02/17/2014
 ms.assetid: 360bc6e1-84c5-4b8e-a84c-ea48ab807aa4
 msc.legacyurl: /web-pages/overview/performance-and-traffic/14-analyzing-traffic
 msc.type: authoredcontent
-ms.openlocfilehash: 57e6a0d4681f147faa5e9ca3b6ed0ef287d6a381
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a99ed5cc8875ef9f39234e3f394b46b5782d0bc1
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57059600"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59390222"
 ---
-<a name="tracking-visitor-information-analytics-for-an-aspnet-web-pages-razor-site"></a>ASP.NET 웹 페이지 (Razor) 사이트에 대 한 방문자 정보 (분석)를 추적합니다.
-====================
+# <a name="tracking-visitor-information-analytics-for-an-aspnet-web-pages-razor-site"></a>ASP.NET 웹 페이지 (Razor) 사이트에 대 한 방문자 정보 (분석)를 추적합니다.
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 문서는 ASP.NET Web Pages (Razor) 웹 사이트의 페이지에 웹 분석을 추가 하려면 도우미를 사용 하는 방법을 설명 합니다.

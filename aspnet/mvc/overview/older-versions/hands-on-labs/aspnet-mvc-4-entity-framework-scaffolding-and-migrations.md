@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 093c1362-f10b-407c-a708-be370f4b62b0
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-entity-framework-scaffolding-and-migrations
 msc.type: authoredcontent
-ms.openlocfilehash: 649f83d54bfdb3367d9cea056a53a614f982adec
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: ca47f6fe6d55153354d38fcf1ba5e844215279b2
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422963"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59389039"
 ---
 # <a name="aspnet-mvc-4-entity-framework-scaffolding-and-migrations"></a>ASP.NET MVC 4 Entity Framework 스캐폴딩 및 마이그레이션
 
@@ -58,7 +58,7 @@ ASP.NET MVC 4 컨트롤러 메서드를 사용 하 여 익숙한 또는 완료 �
 
 이 문서의 부록 참조할 수 있습니다 사용 하는 방법을 알아보려면 원하는 고 Visual Studio 코드 조각을 사용 하 여 잘 모르는 경우 &quot; [부록 b: 코드 조각을 사용 하 여](#AppendixB)&quot;합니다.
 
-* * *
+---
 
 <a id="Exercises"></a>
 
@@ -110,7 +110,7 @@ ASP.NET MVC 4 컨트롤러 메서드를 사용 하 여 익숙한 또는 완료 �
 
     ![응용 프로그램 빌드](aspnet-mvc-4-entity-framework-scaffolding-and-migrations/_static/image3.png "응용 프로그램 빌드")
 
-    *애플리케이션 빌드*
+    *응용 프로그램 빌드*
 7. 솔루션 탐색기에서 컨트롤러 폴더를 마우스 오른쪽 단추로 클릭 하 고 선택 **추가 | 컨트롤러**합니다.
 8. 컨트롤러 이름을 *PersonController* 하 고 완료 합니다 **스 캐 폴딩 옵션** 다음 값으로.
 
@@ -231,7 +231,7 @@ ASP.NET MVC 4 컨트롤러 메서드를 사용 하 여 익숙한 또는 완료 �
 
     ![데이터베이스를 업데이트할](aspnet-mvc-4-entity-framework-scaffolding-and-migrations/_static/image17.png "데이터베이스 업데이트")
 
-    *데이터베이스를 업데이트 하는 중*
+    *데이터베이스 업데이트*
 
     추가 됩니다는 **MiddleName** 열에는 **사용자** 테이블의 현재 정의와 일치 하는 **Person** 클래스.
 9. 데이터베이스 업데이트 되 면 컨트롤러 폴더를 마우스 오른쪽 단추로 클릭 하 고 선택 **추가 | 컨트롤러** 컨트롤러를 추가 하려면 사용자 다시 (동일한 값을 사용 하 여 전체). 이렇게 하면 기존 메서드와 새 특성을 추가 하는 뷰 업데이트 됩니다.
@@ -260,7 +260,7 @@ ASP.NET MVC 4 컨트롤러 메서드를 사용 하 여 익숙한 또는 완료 �
 
     ![중간 이름 edition](aspnet-mvc-4-entity-framework-scaffolding-and-migrations/_static/image21.png "중간 edition")
 
-* * *
+---
 
 <a id="Summary"></a>
 

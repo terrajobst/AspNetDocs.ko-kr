@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 4da43d77-f6c4-43a8-9124-f1e8e1c8f0a2
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/popup/using-multiple-popup-controls-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 81b0dbd794d31bc3c55bff4ba8110c590b88b509
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ee66e166d24bb80008671c84f6512d5c54707fcf
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049940"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59389819"
 ---
-<a name="using-multiple-popup-controls-vb"></a>여러 팝업 컨트롤 사용(VB)
-====================
+# <a name="using-multiple-popup-controls-vb"></a>여러 팝업 컨트롤 사용(VB)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/PopupControl1.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/popupcontrol1VB.pdf)
@@ -49,7 +49,7 @@ ASP.NET AJAX와 Control Toolkit의 기능을 활성화 하기 위해 합니다 `
 이제 텍스트 필드 내에서 클릭할 때마다 일정 필드 아래에 표시에서 날짜를 선택할 수 있습니다. (텍스트 상자에 선택한 날짜를 다시 시작에서 다룰 다양 한 자습서입니다.)
 
 
-[![텍스트 상자에 사용자가 클릭 하면 달력이 나타납니다.](using-multiple-popup-controls-vb/_static/image2.png)](using-multiple-popup-controls-vb/_static/image1.png)
+[![T그 달력에는 텍스트 상자에 사용자가 클릭할 때 표시](using-multiple-popup-controls-vb/_static/image2.png)](using-multiple-popup-controls-vb/_static/image1.png)
 
 텍스트 상자에 사용자가 클릭 하면 달력이 나타납니다 ([클릭 하 여 큰 이미지 보기](using-multiple-popup-controls-vb/_static/image3.png))
 

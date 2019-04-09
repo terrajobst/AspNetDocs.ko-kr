@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 7963890b-4ea3-4a1c-b65d-6098a3d56f62
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/modalpopup/handling-postbacks-from-a-modalpopup-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 9bcb1ad058b800f3f957cafff07a5a54b44178a6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 54dd3bae21e661e0b17cab6a71f0df33b6712bcd
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57035450"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59388558"
 ---
-<a name="handling-postbacks-from-a-modalpopup-c"></a>ModalPopup에서 포스트백 처리(C#)
-====================
+# <a name="handling-postbacks-from-a-modalpopup-c"></a>ModalPopup에서 포스트백 처리(C#)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/2/4/0/24052038-f942-4336-905b-b60ae56f0dd5/ModalPopup3.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/modalpopup3CS.pdf)
@@ -55,7 +55,7 @@ ASP.NET AJAX와 Control Toolkit의 기능을 활성화 하기 위해 합니다 `
 [!code-csharp[Main](handling-postbacks-from-a-modalpopup-cs/samples/sample6.cs)]
 
 
-[![모달 팝업은 포스트백을 발생 시키는](handling-postbacks-from-a-modalpopup-cs/_static/image2.png)](handling-postbacks-from-a-modalpopup-cs/_static/image1.png)
+[![T그 모달 팝업 포스트백을 발생 시키는](handling-postbacks-from-a-modalpopup-cs/_static/image2.png)](handling-postbacks-from-a-modalpopup-cs/_static/image1.png)
 
 모달 팝업은 포스트백을 발생 시키는 ([클릭 하 여 큰 이미지 보기](handling-postbacks-from-a-modalpopup-cs/_static/image3.png))
 

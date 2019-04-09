@@ -8,15 +8,15 @@ ms.date: 02/20/2005
 ms.assetid: 72d90cd0-b3d9-454c-b2eb-ed0d9812f32c
 msc.legacyurl: /web-forms/overview/moving-to-aspnet-20/improvements-in-visual-studio-2005
 msc.type: authoredcontent
-ms.openlocfilehash: 60259ceb99de536410aa5f53db64fb2dca68bf66
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a580b678a943695969b7f3acd2f7a033bd0b6ee3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57037360"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379771"
 ---
-<a name="improvements-in-visual-studio-2005"></a>Visual Studio 2005의 개선 사항
-====================
+# <a name="improvements-in-visual-studio-2005"></a>Visual Studio 2005의 개선 사항
+
 by [Microsoft](https://github.com/microsoft)
 
 > Visual Studio 2005 웹 응용 프로그램 개발자가 향상 된 기능 및 향상 된 웹 프로젝트의 긴 목록을 제공합니다.
@@ -438,7 +438,7 @@ FTP를 통해 연 웹 응용 프로그램을 원격으로 디버그할 수 이�
 
 ## <a name="aspnet-development-server"></a>ASP.NET Development Server
 
-앞에서 설명한 마십시오,으로 Visual Studio 2005는 ASP.NET 개발 서버 라는 웹 서버를 사용 하 여 제공 됩니다. (ASP.NET Development Server는 라고도 Cassini.) 이 웹 서버가 찾아보기 및 파일 시스템에서 실행 되는 웹 응용 프로그램을 디버그 하는 편리한 수단입니다.
+이미 설명한 대로 Visual Studio 2005에는 ASP.NET 개발 서버 라는 웹 서버를 사용 하 여 제공 됩니다. (ASP.NET Development Server는 라고도 Cassini.) 이 웹 서버가 찾아보기 및 파일 시스템에서 실행 되는 웹 응용 프로그램을 디버그 하는 편리한 수단입니다.
 
 ASP.NET Development Server는 제한 된 웹 서버입니다. 원격 연결을 허용 하지 않습니다, 그리고 웹 서버를 시작한 사용자 이외의 다른 사용자의 모든 요청을 허용 하지 않습니다. 또한 없기 ASP 페이지를 제공 하는 기능입니다. ASP.NET 리소스 및 HTML 리소스 (이미지, CSS 파일 등 포함)만 제공 됩니다.
 

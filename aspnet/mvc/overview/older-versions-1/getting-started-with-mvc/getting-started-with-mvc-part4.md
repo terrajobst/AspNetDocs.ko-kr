@@ -8,15 +8,15 @@ ms.date: 08/14/2010
 ms.assetid: 742df67f-484d-4ef3-af6b-8c791e556b43
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part4
 msc.type: authoredcontent
-ms.openlocfilehash: 596a491b4152da341a7779236dab17967a6de670
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b75057f3128662a9bbdd641dc0a7c1ba09fbbe87
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57044220"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59388194"
 ---
-<a name="creating-a-database"></a>데이터베이스 만들기
-====================
+# <a name="creating-a-database"></a>데이터베이스 만들기
+
 [Scott Hanselman](https://github.com/shanselman)
 
 > ASP.NET MVC의 기본 사항을 소개 하는 초보자를 위한 자습서입니다. 읽기 및 쓰기 데이터베이스는 간단한 웹 응용 프로그램을 만들어야 합니다. 방문 합니다 [ASP.NET MVC 학습 센터](../../../index.md) 자습서 및 샘플 다른 ASP.NET MVC를 찾아볼 수 있습니다.
@@ -32,11 +32,11 @@ ms.locfileid: "57044220"
 
 연결 추가 대화 상자에서 입력 ". \SQLEXPRESS"에서 서버 이름의 새 데이터베이스의 이름으로 "Movies"를 입력 합니다.
 
-[![연결 대화 상자를 추가 합니다.](getting-started-with-mvc-part4/_static/image4.png)](getting-started-with-mvc-part4/_static/image3.png)
+[![A연결 대화 상자 dd](getting-started-with-mvc-part4/_static/image4.png)](getting-started-with-mvc-part4/_static/image3.png)
 
 확인을 클릭 하면 해당 데이터베이스를 만들려는 경우 라는 나타납니다. 예 선택 합니다.
 
-[![영화를 만드시겠습니까?](getting-started-with-mvc-part4/_static/image6.png)](getting-started-with-mvc-part4/_static/image5.png)
+[![C영화 reate]?(getting-started-with-mvc-part4/_static/image6.png)](getting-started-with-mvc-part4/_static/image5.png)
 
 이제 서버 탐색기에서 빈 데이터베이스를 했습니다.
 
@@ -44,7 +44,7 @@ ms.locfileid: "57044220"
 
 테이블을 마우스 오른쪽 단추로 클릭 하 고 테이블 추가 클릭 합니다. 테이블 디자이너에 표시 됩니다. Id "," 제목 "," ReleaseDate "," 장르 "및" 가격에 대 한 열을 추가 합니다. ID 열을 마우스 오른쪽 단추로 클릭 하 고 클릭 기본 키를 설정 합니다. 유사 내 디자인 분야는 다음과 같습니다.
 
-[![데이터베이스 테이블 편집기](getting-started-with-mvc-part4/_static/image9.png)](getting-started-with-mvc-part4/_static/image8.png)
+[![D데이터베이스 테이블 편집기](getting-started-with-mvc-part4/_static/image9.png)](getting-started-with-mvc-part4/_static/image8.png)
 
 또한 Id 열을 선택 하 고 열 속성 아래에서 "Id 사양" "예."로 변경
 
@@ -52,11 +52,11 @@ ms.locfileid: "57044220"
 
 수행할 적지, 도구 모음에서 저장 아이콘을 클릭 하거나 파일을 선택 | 메뉴에서 저장 하 고 테이블 이름을 "**영화**" (단일). 데이터베이스 및 테이블을 만들었습니다!
 
-[![이름 선택](getting-started-with-mvc-part4/_static/image13.png)](getting-started-with-mvc-part4/_static/image12.png)
+[![C설치할 이름](getting-started-with-mvc-part4/_static/image13.png)](getting-started-with-mvc-part4/_static/image12.png)
 
 서버 탐색기로 돌아가서 Movie 테이블을 마우스 오른쪽 단추로 클릭 하 고 "테이블 데이터 표시."를 선택 합니다. 데이터베이스에 일부 데이터가 있으므로 몇 가지 영화를 입력 합니다.
 
-[![데이터베이스 테이블 편집](getting-started-with-mvc-part4/_static/image15.png)](getting-started-with-mvc-part4/_static/image14.png)
+[![D테이블 편집 데이터베이스](getting-started-with-mvc-part4/_static/image15.png)](getting-started-with-mvc-part4/_static/image14.png)
 
 ## <a name="creating-a-model"></a>모델 만들기
 
@@ -72,7 +72,7 @@ ms.locfileid: "57044220"
 
 표시 되는 새 대화 상자에서 데이터베이스에서 생성을 선택 합니다. 데이터베이스를 방금 만들었습니다 때문만 해야 새 데이터베이스 및 해당 테이블에 대 한 엔터티 프레임 워크에 알립니다. 웹 응용 프로그램의 구성에서 데이터베이스 연결 저장 옆에 클릭 합니다. 이제 테이블 및 동영상을 확인 확인란을 선택 하 고 완료 합니다.
 
-[![엔터티 데이터 모델 마법사](getting-started-with-mvc-part4/_static/image21.png)](getting-started-with-mvc-part4/_static/image20.png)
+[![E증가할수록 데이터 모델 마법사](getting-started-with-mvc-part4/_static/image21.png)](getting-started-with-mvc-part4/_static/image20.png)
 
 이제 Entity Framework 디자이너에서 새 동영상 테이블을 참조 하 고 코드에서 액세스할 수 있습니다.
 

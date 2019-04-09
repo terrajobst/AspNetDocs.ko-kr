@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.assetid: 1568247f-60b5-4eca-96e0-e661fbb2b273
 msc.legacyurl: /signalr/overview/getting-started/tutorial-server-broadcast-with-signalr
 msc.type: authoredcontent
-ms.openlocfilehash: a243c78c7d552f1c82a88c6083871fcd16538618
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: aa8c0be6e4a758da34fc6eed902e31049d0a9a9c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57065760"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379731"
 ---
 # <a name="tutorial-server-broadcast-with-signalr-2"></a>자습서: SignalR 2를 사용 하 여 브로드캐스트 서버
 
@@ -43,7 +43,7 @@ ms.locfileid: "57065760"
 
 ## <a name="prerequisites"></a>전제 조건
 
- * [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) 사용 하 여 합니다 **ASP.NET 및 웹 개발** 워크 로드.
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) 사용 하 여 합니다 **ASP.NET 및 웹 개발** 워크 로드.
 
 ## <a name="create-the-project"></a>프로젝트를 만듭니다.
 
@@ -75,7 +75,7 @@ ms.locfileid: "57065760"
 
 ### <a name="create-the-stocktickerhub-and-stockticker-classes"></a>StockTickerHub 및 StockTicker 클래스 만들기
 
-서버와 클라이언트 간 상호 작용을 처리 하는 SignalR 허브 API를 사용 합니다. `StockTickerHub` 에서 파생 된 클래스는 `SignalRHub` 클래스 처리할 클라이언트에서 연결 및 메서드 호출을 수신 합니다. 주식 데이터를 유지 관리를 실행 해야는 `Timer` 개체입니다. `Timer` 개체는 주기적으로 클라이언트 연결의 독립적인 가격 업데이트를 트리거합니다. 이러한 함수 넣을 수 없습니다는 `Hub` 허브는 일시적인 클래스입니다. 앱을 만듭니다는 `Hub` 허브 연결 서버에 클라이언트에서 호출 등의 각 작업에 대 한 클래스 인스턴스. 따라서 주식 데이터를 유지 하 고, 가격을 업데이트, 브로드캐스트 가격 업데이트 하는 메커니즘은 별도 클래스에서 실행 해야 합니다. 클래스의 이름을 지정할 수 `StockTicker`입니다.
+서버와 클라이언트 간 상호 작용을 처리 하는 SignalR 허브 API를 사용 합니다. A `StockTickerHub` SignalR에서 파생 된 클래스 `Hub` 클래스 처리할 클라이언트에서 연결 및 메서드 호출을 수신 합니다. 주식 데이터를 유지 관리를 실행 해야는 `Timer` 개체입니다. `Timer` 개체는 주기적으로 클라이언트 연결의 독립적인 가격 업데이트를 트리거합니다. 이러한 함수 넣을 수 없습니다는 `Hub` 허브는 일시적인 클래스입니다. 앱을 만듭니다는 `Hub` 허브 연결 서버에 클라이언트에서 호출 등의 각 작업에 대 한 클래스 인스턴스. 따라서 주식 데이터를 유지 하 고, 가격을 업데이트, 브로드캐스트 가격 업데이트 하는 메커니즘은 별도 클래스에서 실행 해야 합니다. 클래스의 이름을 지정할 수 `StockTicker`입니다.
 
 ![StockTicker에서 브로드캐스트](tutorial-server-broadcast-with-signalr/_static/image3.png)
 

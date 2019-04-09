@@ -8,15 +8,15 @@ ms.date: 07/04/2012
 ms.assetid: 6b9ae3c4-0274-4170-a1bb-9df9c546b2a9
 msc.legacyurl: /web-api/overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-3
 msc.type: authoredcontent
-ms.openlocfilehash: 0fc533fb3673639769ecdfa8b3d02ff40133cb27
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: de4bb063d2a6c1bdb4aeffdadb161ef19efd2b78
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58421625"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59390950"
 ---
-<a name="part-3-creating-an-admin-controller"></a>3부: 관리 컨트롤러 만들기
-====================
+# <a name="part-3-creating-an-admin-controller"></a>3부: 관리 컨트롤러 만들기
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 [완료 된 프로젝트 다운로드](http://code.msdn.microsoft.com/ASP-NET-Web-API-with-afa30545)

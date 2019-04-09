@@ -8,15 +8,15 @@ ms.date: 10/26/2007
 ms.assetid: 1f2e5f5b-8be1-4acc-ae36-a2e0d140251a
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-use-validation-controls-in-aspnet
 msc.type: video
-ms.openlocfilehash: da8831e179360dda870d6ee3d667118094983894
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 17204583d986f7938c38dc373cb296df01f16424
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57047820"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59386855"
 ---
-<a name="how-do-i--use-validation-controls-in-aspnet"></a>[어떻게 할까요?]  ASP.NET에서 유효성 검사 컨트롤 사용
-====================
+# <a name="how-do-i--use-validation-controls-in-aspnet"></a>[어떻게 할까요?]  ASP.NET에서 유효성 검사 컨트롤 사용
+
 [Chris Pels](https://twitter.com/chrispels)
 
 이 비디오에서는 ASP.NET에서 사용할 수 있는 유효성 검사 컨트롤을 사용 하 여 웹 페이지에 유효성 검사를 구현 하는 방법에 알아봅니다. RequiredFieldValidator 및 RegularExpressionValidator 다룰 같은 모든 주요 유효성 검사를 제어 합니다. 또한 표준 유효성 검사기 중 하나가 요구 사항에 맞지 않을 때 CustomValidator를 사용 하는 방법에 알아봅니다. 서버 및 클라이언트 쪽 유효성 검사 옵션을 모두 표시 됩니다. UI 컨트롤에 유효성 검사와 여러 유효성 검사 single 수행 하는 방법을 참조 하세요.

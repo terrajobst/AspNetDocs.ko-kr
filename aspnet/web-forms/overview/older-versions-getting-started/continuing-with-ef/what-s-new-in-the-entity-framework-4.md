@@ -8,15 +8,15 @@ ms.date: 01/26/2011
 ms.assetid: 393df4a8-b1db-44c4-9db7-2b533ca887d0
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/continuing-with-ef/what-s-new-in-the-entity-framework-4
 msc.type: authoredcontent
-ms.openlocfilehash: 402e7ace1abad899d32ed179d6b68de4e5a129f5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0bc24a59e09728a5ecb6e18378c4cde0c8e046f2
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57045720"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59387453"
 ---
-<a name="whats-new-in-the-entity-framework-40"></a>Entity Framework 4.0의 새로운 기능
-====================
+# <a name="whats-new-in-the-entity-framework-40"></a>Entity Framework 4.0의 새로운 기능
+
 [Tom Dykstra](https://github.com/tdykstra)
 
 > 이 자습서 시리즈에서 만든 Contoso University 웹 응용 프로그램 빌드를 [Entity Framework를 사용 하 여 시작](../getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1.md) 자습서 시리즈입니다. 이전 자습서를 완료 하지 않은 경우이 자습서에 대 한 시작 지점으로 할 수 있습니다 [응용 프로그램을 다운로드](https://code.msdn.microsoft.com/ASPNET-Web-Forms-97f8ee9a) 만들어졌을 것입니다. 할 수도 있습니다 [응용 프로그램을 다운로드](https://code.msdn.microsoft.com/ASPNET-Web-Forms-6c7197aa) 전체 자습서 시리즈에서 만들어집니다. 이 자습서에 대 한 질문이 있으면 하기를 게시할 수 있습니다 합니다 [ASP.NET Entity Framework 포럼](https://forums.asp.net/1227.aspx)합니다.
@@ -135,7 +135,7 @@ Contoso University 관리자가 저장된 프로시저를 만들고 데이터 �
 
 [![Image14](what-s-new-in-the-entity-framework-4/_static/image26.png)](what-s-new-in-the-entity-framework-4/_static/image25.png)
 
-에 **연결 속성** 대화 상자, 로컬 SQL Server Express 인스턴스를 선택 하 고, 데이터베이스 이름을 `AlumniAsssociation`입니다.
+에 **연결 속성** 대화 상자, 로컬 SQL Server Express 인스턴스를 선택 하 고, 데이터베이스 이름을 `AlumniAssociation`입니다.
 
 [![Image15](what-s-new-in-the-entity-framework-4/_static/image28.png)](what-s-new-in-the-entity-framework-4/_static/image27.png)
 

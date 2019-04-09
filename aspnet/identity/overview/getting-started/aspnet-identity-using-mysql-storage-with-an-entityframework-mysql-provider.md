@@ -1,22 +1,23 @@
 ---
 uid: identity/overview/getting-started/aspnet-identity-using-mysql-storage-with-an-entityframework-mysql-provider
-title: 'ASP.NET Identity: EntityFramework MySQL 공급자를 사용 하 여 MySQL 저장소를 사용 하 여 (C#) | Microsoft Docs'
+title: 'ASP.NET Identity: EntityFramework MySQL 공급자를 사용 하 여 MySQL 저장소를 사용 하 여 (C#)-ASP.NET 4.x'
 author: maumar
 description: 이 자습서에서는 MySQL 견실한 EntityFramework (SQL 클라이언트 공급자)를 사용 하 여 기본 데이터 저장소 메커니즘에 ASP.NET Id에 대 한 대체 하는 방법...
 ms.author: riande
 ms.date: 12/10/2013
 ms.assetid: 15253312-a92c-43ba-908e-b5dacd3d08b8
+ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/getting-started/aspnet-identity-using-mysql-storage-with-an-entityframework-mysql-provider
 msc.type: authoredcontent
-ms.openlocfilehash: f510c9bcaf83c6a68e835a7d82555653459df856
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6a73efb7d577cc70ca5ebaa69e8fdd03f3735ae4
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57041800"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379666"
 ---
-<a name="aspnet-identity-using-mysql-storage-with-an-entityframework-mysql-provider-c"></a>ASP.NET Identity: EntityFramework MySQL 공급자에 MySQL 스토리지 사용(C#)
-====================
+# <a name="aspnet-identity-using-mysql-storage-with-an-entityframework-mysql-provider-c"></a>ASP.NET Identity: EntityFramework MySQL 공급자에 MySQL 스토리지 사용(C#)
+
 하 여 [Maurycy Markowski](https://github.com/maumar)하십시오 [Raquel Soares De Almeida](https://github.com/raquelsa), [Robert McMurray](https://github.com/rmcmurray)
 
 > 이 자습서에서는 기본 데이터 저장소 메커니즘을 교체 하는 방법을 보여 줍니다 [ **ASP.NET Id** ](introduction-to-aspnet-identity.md) (SQL 클라이언트 공급자) EntityFramework MySQL 공급자를 사용 하 여 합니다.
