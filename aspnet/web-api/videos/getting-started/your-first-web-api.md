@@ -8,18 +8,18 @@ ms.date: 02/15/2012
 ms.assetid: fda768fb-50f5-4046-8fda-6f199d27bce7
 msc.legacyurl: /web-api/videos/getting-started/your-first-web-api
 msc.type: video
-ms.openlocfilehash: 2254910f7562803a0a0000e3a4f1cb8c23904dbd
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c9ef2f961eece67ab98071de863d8e60bc307e03
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57028300"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59410879"
 ---
-<a name="aspnet-web-api-part-1-your-first-web-api"></a><span data-ttu-id="824ba-103">ASP.NET Web API, 1부: 첫 번째 Web API</span><span class="sxs-lookup"><span data-stu-id="824ba-103">ASP.NET Web API, Part 1: Your First Web API</span></span>
-====================
-<span data-ttu-id="824ba-104">[Jon Galloway](https://github.com/jongalloway)</span><span class="sxs-lookup"><span data-stu-id="824ba-104">by [Jon Galloway](https://github.com/jongalloway)</span></span>
+# <a name="aspnet-web-api-part-1-your-first-web-api"></a><span data-ttu-id="45de0-103">ASP.NET Web API, 1부: 첫 번째 Web API</span><span class="sxs-lookup"><span data-stu-id="45de0-103">ASP.NET Web API, Part 1: Your First Web API</span></span>
+
+<span data-ttu-id="45de0-104">[Jon Galloway](https://github.com/jongalloway)</span><span class="sxs-lookup"><span data-stu-id="45de0-104">by [Jon Galloway](https://github.com/jongalloway)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="824ba-105">이 비디오는 시험판 버전의 ASP.NET Web API에서 정보를 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="824ba-105">This video contains information from a pre-release version of ASP.NET Web API.</span></span> <span data-ttu-id="824ba-106">변경 내용에 대 한 내용은에서 업데이트 된 샘플 코드를 참조 하십시오. [https://code.msdn.microsoft.com/ASPNET-Web-API-JavaScript-d0d64dd7](https://code.msdn.microsoft.com/ASPNET-Web-API-JavaScript-d0d64dd7)</span><span class="sxs-lookup"><span data-stu-id="824ba-106">For information on what changed, see the updated sample code at [https://code.msdn.microsoft.com/ASPNET-Web-API-JavaScript-d0d64dd7](https://code.msdn.microsoft.com/ASPNET-Web-API-JavaScript-d0d64dd7)</span></span>
+> <span data-ttu-id="45de0-105">이 비디오는 시험판 버전의 ASP.NET Web API에서 정보를 포함합니다.</span><span class="sxs-lookup"><span data-stu-id="45de0-105">This video contains information from a pre-release version of ASP.NET Web API.</span></span> <span data-ttu-id="45de0-106">변경 내용에 대 한 내용은에서 업데이트 된 샘플 코드를 참조 하십시오. [https://code.msdn.microsoft.com/ASPNET-Web-API-JavaScript-d0d64dd7](https://code.msdn.microsoft.com/ASPNET-Web-API-JavaScript-d0d64dd7)</span><span class="sxs-lookup"><span data-stu-id="45de0-106">For information on what changed, see the updated sample code at [https://code.msdn.microsoft.com/ASPNET-Web-API-JavaScript-d0d64dd7](https://code.msdn.microsoft.com/ASPNET-Web-API-JavaScript-d0d64dd7)</span></span>
 
-[<span data-ttu-id="824ba-107">&#9654;비디오 (3 분)</span><span class="sxs-lookup"><span data-stu-id="824ba-107">&#9654; Watch video (3 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/your-first-web-api)
+[<span data-ttu-id="45de0-107">&#9654;비디오 (3 분)</span><span class="sxs-lookup"><span data-stu-id="45de0-107">&#9654; Watch video (3 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/your-first-web-api)

@@ -8,24 +8,24 @@ ms.date: 10/05/2011
 ms.assetid: 98c78dad-22bf-45cd-807e-c2f3f59011b9
 msc.legacyurl: /web-forms/videos/aspnet-web-forms-vnext
 msc.type: chapter
-ms.openlocfilehash: acf0e31e487733a99b1c7b02a1a773c61ffc12b9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3b3efb3d5356d6009b86b93405de2cd8d8cddd43
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57024070"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59404236"
 ---
-<a name="aspnet-45"></a><span data-ttu-id="c8247-103">ASP.NET 4.5</span><span class="sxs-lookup"><span data-stu-id="c8247-103">ASP.NET 4.5</span></span>
-====================
-> <span data-ttu-id="c8247-104">ASP.NET 4.5에서 도입 된 새로운 Web Forms 기능에 대 한</span><span class="sxs-lookup"><span data-stu-id="c8247-104">About new Web Forms features introduced in ASP.NET 4.5.</span></span>
+# <a name="aspnet-45"></a><span data-ttu-id="3f6f4-103">ASP.NET 4.5</span><span class="sxs-lookup"><span data-stu-id="3f6f4-103">ASP.NET 4.5</span></span>
+
+> <span data-ttu-id="3f6f4-104">ASP.NET 4.5에서 도입 된 새로운 Web Forms 기능에 대 한</span><span class="sxs-lookup"><span data-stu-id="3f6f4-104">About new Web Forms features introduced in ASP.NET 4.5.</span></span>
 
 
-- [<span data-ttu-id="c8247-105">강력한 형식의 데이터 컨트롤</span><span class="sxs-lookup"><span data-stu-id="c8247-105">Strongly Typed Data Controls</span></span>](aspnet-vnext-videos-strongly-typed-data-controls.md)
-- [<span data-ttu-id="c8247-106">모델 바인딩 파트 1 - 데이터 선택</span><span class="sxs-lookup"><span data-stu-id="c8247-106">Model Binding Part 1 - Selecting Data</span></span>](aspnet-vnext-videos-model-binding-part-1-selecting-data.md)
-- [<span data-ttu-id="c8247-107">모델 바인딩 파트 2 - 필터링</span><span class="sxs-lookup"><span data-stu-id="c8247-107">Model Binding Part 2 - Filtering</span></span>](aspnet-vnext-videos-model-binding-part-2-filtering.md)
-- [<span data-ttu-id="c8247-108">모델 바인딩 파트 3 - 업데이트</span><span class="sxs-lookup"><span data-stu-id="c8247-108">Model Binding Part 3 - Updating</span></span>](aspnet-vnext-videos-model-binding-part-3-updating.md)
-- [<span data-ttu-id="c8247-109">ASP.NET 4.5 Web Forms 모델 바인딩</span><span class="sxs-lookup"><span data-stu-id="c8247-109">ASP.NET 4.5 Web Forms Model Binding</span></span>](aspnet-45-web-forms-model-binding.md)
-- [<span data-ttu-id="c8247-110">ASP.NET 4.5 Web Forms 강력한 형식의 데이터 컨트롤</span><span class="sxs-lookup"><span data-stu-id="c8247-110">ASP.NET 4.5 Web Forms Strong Typed Data Controls</span></span>](aspnet-45-web-forms-strong-typed-data-controls.md)
-- [<span data-ttu-id="c8247-111">묶음 및 축소</span><span class="sxs-lookup"><span data-stu-id="c8247-111">Bundling and Minification</span></span>](aspnet-vnext-videos-bundling-and-minification.md)
-- [<span data-ttu-id="c8247-112">다음 버전의 ASP.NET 시작</span><span class="sxs-lookup"><span data-stu-id="c8247-112">Getting Started with the Next Version of ASP.NET</span></span>](getting-started-with-the-next-version-of-aspnet.md)
-- [<span data-ttu-id="c8247-113">ASP.NET 및 Web Tools 2012.2</span><span class="sxs-lookup"><span data-stu-id="c8247-113">ASP.NET and Web Tools 2012.2</span></span>](aspnet-and-web-tools-20122.md)
+- [<span data-ttu-id="3f6f4-105">강력한 형식의 데이터 컨트롤</span><span class="sxs-lookup"><span data-stu-id="3f6f4-105">Strongly Typed Data Controls</span></span>](aspnet-vnext-videos-strongly-typed-data-controls.md)
+- [<span data-ttu-id="3f6f4-106">모델 바인딩 1부 - 데이터 선택</span><span class="sxs-lookup"><span data-stu-id="3f6f4-106">Model Binding Part 1 - Selecting Data</span></span>](aspnet-vnext-videos-model-binding-part-1-selecting-data.md)
+- [<span data-ttu-id="3f6f4-107">모델 바인딩 2부 - 필터링</span><span class="sxs-lookup"><span data-stu-id="3f6f4-107">Model Binding Part 2 - Filtering</span></span>](aspnet-vnext-videos-model-binding-part-2-filtering.md)
+- [<span data-ttu-id="3f6f4-108">모델 바인딩 3부 - 업데이트</span><span class="sxs-lookup"><span data-stu-id="3f6f4-108">Model Binding Part 3 - Updating</span></span>](aspnet-vnext-videos-model-binding-part-3-updating.md)
+- [<span data-ttu-id="3f6f4-109">ASP.NET 4.5 Web Forms 모델 바인딩</span><span class="sxs-lookup"><span data-stu-id="3f6f4-109">ASP.NET 4.5 Web Forms Model Binding</span></span>](aspnet-45-web-forms-model-binding.md)
+- [<span data-ttu-id="3f6f4-110">ASP.NET 4.5 Web Forms 강력한 형식의 데이터 컨트롤</span><span class="sxs-lookup"><span data-stu-id="3f6f4-110">ASP.NET 4.5 Web Forms Strong Typed Data Controls</span></span>](aspnet-45-web-forms-strong-typed-data-controls.md)
+- [<span data-ttu-id="3f6f4-111">묶음 및 축소</span><span class="sxs-lookup"><span data-stu-id="3f6f4-111">Bundling and Minification</span></span>](aspnet-vnext-videos-bundling-and-minification.md)
+- [<span data-ttu-id="3f6f4-112">다음 버전의 ASP.NET 시작</span><span class="sxs-lookup"><span data-stu-id="3f6f4-112">Getting Started with the Next Version of ASP.NET</span></span>](getting-started-with-the-next-version-of-aspnet.md)
+- [<span data-ttu-id="3f6f4-113">ASP.NET 및 Web Tools 2012.2</span><span class="sxs-lookup"><span data-stu-id="3f6f4-113">ASP.NET and Web Tools 2012.2</span></span>](aspnet-and-web-tools-20122.md)
