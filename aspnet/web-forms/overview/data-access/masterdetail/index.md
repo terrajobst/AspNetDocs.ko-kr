@@ -8,23 +8,23 @@ ms.date: 10/05/2011
 ms.assetid: 104e4d22-22cf-44a4-aefe-f604f62e0cf8
 msc.legacyurl: /web-forms/overview/data-access/masterdetail
 msc.type: chapter
-ms.openlocfilehash: 756cc2082338a13888fb146734dc75a5fbbf777f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 24fa671ae633cb0816d689ce4189598f62f13525
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57022170"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59394629"
 ---
-<a name="masterdetail"></a><span data-ttu-id="4608f-103">마스터/세부 정보</span><span class="sxs-lookup"><span data-stu-id="4608f-103">Master/Detail</span></span>
-====================
-> <span data-ttu-id="4608f-104">이러한 자습서에는 드롭다운 목록 및 세부 정보 GridView 컨트롤에 마스터 레코드를 표시 하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="4608f-104">These tutorials show how to display master records in a drop-down list and details in a GridView control.</span></span>
+# <a name="masterdetail"></a><span data-ttu-id="3a49a-103">마스터/세부 정보</span><span class="sxs-lookup"><span data-stu-id="3a49a-103">Master/Detail</span></span>
+
+> <span data-ttu-id="3a49a-104">이러한 자습서에는 드롭다운 목록 및 세부 정보 GridView 컨트롤에 마스터 레코드를 표시 하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="3a49a-104">These tutorials show how to display master records in a drop-down list and details in a GridView control.</span></span>
 
 
-- [<span data-ttu-id="4608f-105">DropDownList 한 개로 마스터/세부 정보 필터링(C#)</span><span class="sxs-lookup"><span data-stu-id="4608f-105">Master/Detail Filtering With a DropDownList (C#)</span></span>](master-detail-filtering-with-a-dropdownlist-cs.md)
-- [<span data-ttu-id="4608f-106">DropDownList 두 개로 마스터/세부 정보 필터링(C#)</span><span class="sxs-lookup"><span data-stu-id="4608f-106">Master/Detail Filtering With Two DropDownLists (C#)</span></span>](master-detail-filtering-with-two-dropdownlists-cs.md)
-- [<span data-ttu-id="4608f-107">두 페이지에 걸쳐 마스터/세부 정보 필터링(C#)</span><span class="sxs-lookup"><span data-stu-id="4608f-107">Master/Detail Filtering Across Two Pages (C#)</span></span>](master-detail-filtering-across-two-pages-cs.md)
-- [<span data-ttu-id="4608f-108">세부 정보 DetailView와 함께 선택 가능한 마스터 GridView를 사용하는 마스터/세부 정보(C#)</span><span class="sxs-lookup"><span data-stu-id="4608f-108">Master/Detail Using a Selectable Master GridView with a Details DetailView (C#)</span></span>](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs.md)
-- [<span data-ttu-id="4608f-109">DropDownList 한 개로 마스터/세부 정보 필터링(VB)</span><span class="sxs-lookup"><span data-stu-id="4608f-109">Master/Detail Filtering With a DropDownList (VB)</span></span>](master-detail-filtering-with-a-dropdownlist-vb.md)
-- [<span data-ttu-id="4608f-110">DropDownList 두 개로 마스터/세부 정보 필터링(VB)</span><span class="sxs-lookup"><span data-stu-id="4608f-110">Master/Detail Filtering With Two DropDownLists (VB)</span></span>](master-detail-filtering-with-two-dropdownlists-vb.md)
-- [<span data-ttu-id="4608f-111">두 페이지에 걸쳐 마스터/세부 정보 필터링(VB)</span><span class="sxs-lookup"><span data-stu-id="4608f-111">Master/Detail Filtering Across Two Pages (VB)</span></span>](master-detail-filtering-across-two-pages-vb.md)
-- [<span data-ttu-id="4608f-112">세부 정보 DetailView와 함께 선택 가능한 마스터 GridView를 사용하는 마스터/세부 정보(VB)</span><span class="sxs-lookup"><span data-stu-id="4608f-112">Master/Detail Using a Selectable Master GridView with a Details DetailView (VB)</span></span>](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb.md)
+- [<span data-ttu-id="3a49a-105">DropDownList 한 개로 마스터/세부 정보 필터링(C#)</span><span class="sxs-lookup"><span data-stu-id="3a49a-105">Master/Detail Filtering With a DropDownList (C#)</span></span>](master-detail-filtering-with-a-dropdownlist-cs.md)
+- [<span data-ttu-id="3a49a-106">DropDownList 두 개로 마스터/세부 정보 필터링(C#)</span><span class="sxs-lookup"><span data-stu-id="3a49a-106">Master/Detail Filtering With Two DropDownLists (C#)</span></span>](master-detail-filtering-with-two-dropdownlists-cs.md)
+- [<span data-ttu-id="3a49a-107">두 페이지에 걸쳐 마스터/세부 정보 필터링(C#)</span><span class="sxs-lookup"><span data-stu-id="3a49a-107">Master/Detail Filtering Across Two Pages (C#)</span></span>](master-detail-filtering-across-two-pages-cs.md)
+- [<span data-ttu-id="3a49a-108">세부 정보 DetailView와 함께 선택 가능한 마스터 GridView를 사용하는 마스터/세부 정보(C#)</span><span class="sxs-lookup"><span data-stu-id="3a49a-108">Master/Detail Using a Selectable Master GridView with a Details DetailView (C#)</span></span>](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs.md)
+- [<span data-ttu-id="3a49a-109">DropDownList 한 개로 마스터/세부 정보 필터링(VB)</span><span class="sxs-lookup"><span data-stu-id="3a49a-109">Master/Detail Filtering With a DropDownList (VB)</span></span>](master-detail-filtering-with-a-dropdownlist-vb.md)
+- [<span data-ttu-id="3a49a-110">DropDownList 두 개로 마스터/세부 정보 필터링(VB)</span><span class="sxs-lookup"><span data-stu-id="3a49a-110">Master/Detail Filtering With Two DropDownLists (VB)</span></span>](master-detail-filtering-with-two-dropdownlists-vb.md)
+- [<span data-ttu-id="3a49a-111">두 페이지에 걸쳐 마스터/세부 정보 필터링(VB)</span><span class="sxs-lookup"><span data-stu-id="3a49a-111">Master/Detail Filtering Across Two Pages (VB)</span></span>](master-detail-filtering-across-two-pages-vb.md)
+- [<span data-ttu-id="3a49a-112">세부 정보 DetailView와 함께 선택 가능한 마스터 GridView를 사용하는 마스터/세부 정보(VB)</span><span class="sxs-lookup"><span data-stu-id="3a49a-112">Master/Detail Using a Selectable Master GridView with a Details DetailView (VB)</span></span>](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb.md)
