@@ -8,15 +8,15 @@ ms.date: 05/08/2008
 ms.assetid: 026e7932-aea4-42c9-8661-c1392407dc4f
 msc.legacyurl: /web-forms/videos/aspnet-dynamic-data/how-do-i-enable-inline-gridview-editing
 msc.type: video
-ms.openlocfilehash: e5dcd16a3f2e6a209ad343cf86ef3542d12f1b7d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 18070636b96683efdf96f8c3e8eb7d2fd12cc067
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57044790"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59422111"
 ---
-<a name="how-do-i-enable-inline-gridview-editing"></a>인라인 GridView 편집 사용 하려면 어떻게 하나요?
-====================
+# <a name="how-do-i-enable-inline-gridview-editing"></a>인라인 GridView 편집 사용 하려면 어떻게 하나요?
+
 [Scott Hanselman](https://github.com/shanselman)
 
 이제 편집 및 세부 정보 보기를 사용 하 여 사이트를 만든 방법을 수행할 수 있도록에서 인라인 편집을 **GridView** 제어? 이 비디오에서는 살펴보고 방법과 터치 라우팅입니다.

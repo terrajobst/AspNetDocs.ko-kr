@@ -1,6 +1,6 @@
 ---
 uid: mvc/videos/mvc-2/how-do-i/aspnet-mvc-how-10-minute-technical-video-for-developers
-title: 'ASP.NET MVC: 방법? 개발자를 위한 10 분 기술 비디오 | Microsoft Docs'
+title: 'ASP.NET MVC: 방법은 간단 합니다. 개발자를 위한 10 분 기술 비디오 | Microsoft Docs'
 author: robconery
 description: 것과 같은 ASP.NET MVC를 사용 하 여 작업에 대 한 개요입니다.
 ms.author: riande
@@ -8,15 +8,15 @@ ms.date: 08/21/2009
 ms.assetid: 8aef4323-19d5-4b64-95a1-cec156f7cae5
 msc.legacyurl: /mvc/videos/mvc-2/how-do-i/aspnet-mvc-how-10-minute-technical-video-for-developers
 msc.type: video
-ms.openlocfilehash: 714f3f5d58637c11d963efd8548b00a36d0c4584
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8c7d9c57007da3b75ba7d71fe88528ad45b7c6e6
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57025970"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421877"
 ---
-<a name="aspnet-mvc-how-10-minute-technical-video-for-developers"></a>ASP.NET MVC: 방법? 개발자를 위한 10 분 기술 비디오
-====================
+# <a name="aspnet-mvc-how-10-minute-technical-video-for-developers"></a>ASP.NET MVC: 방법은 간단 합니다. 개발자를 위한 10 분 기술 비디오
+
 [Rob Conery](https://github.com/robconery)
 
 것과 같은 ASP.NET MVC를 사용 하 여 작업에 대 한 개요입니다.

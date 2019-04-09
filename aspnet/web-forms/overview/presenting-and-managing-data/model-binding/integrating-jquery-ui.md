@@ -8,15 +8,15 @@ ms.date: 02/27/2014
 ms.assetid: 3cbab37b-fb0f-4751-9ec4-74e068c3f380
 msc.legacyurl: /web-forms/overview/presenting-and-managing-data/model-binding/integrating-jquery-ui
 msc.type: authoredcontent
-ms.openlocfilehash: ff1b17295c58d40d55bdcd4346b83121b579bb4c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5e9cbb4ca4c45fabfa53f9e3d2537250f1231ba0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57030960"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421968"
 ---
-<a name="integrating-jquery-ui-datepicker-with-model-binding-and-web-forms"></a>모델 바인딩 및 web forms를 사용 하 여 JQuery UI Datepicker 통합
-====================
+# <a name="integrating-jquery-ui-datepicker-with-model-binding-and-web-forms"></a>모델 바인딩 및 web forms를 사용 하 여 JQuery UI Datepicker 통합
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 자습서 시리즈에서는 모델 바인딩을 사용 하 여 ASP.NET Web Forms 프로젝트의 기본 사항을 보여 줍니다. 모델 바인딩 보다 직관적인 데이터 원본 개체 (예: ObjectDataSource 또는 SqlDataSource) 처리 하는 보다 데이터 상호 작용 하 게 합니다. 이 시리즈 소개 자료를 사용 하 여 시작 하 고 나중에 자습서에서 고급 개념을 이동 합니다.
