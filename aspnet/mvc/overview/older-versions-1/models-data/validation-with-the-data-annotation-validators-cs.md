@@ -8,15 +8,15 @@ ms.date: 05/29/2009
 ms.assetid: 7ca8013e-9dfc-4e33-8336-cdccfd5f9414
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/validation-with-the-data-annotation-validators-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 203e49e67d8a9c6eb9dbf605a8d7d860737de073
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 300fc9f7e82fe8201b083de9e740e1620f5d09b9
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57065740"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411815"
 ---
-<a name="validation-with-the-data-annotation-validators-c"></a>데이터 주석 유효성 검사기를 사용한 유효성 검사(C#)
-====================
+# <a name="validation-with-the-data-annotation-validators-c"></a>데이터 주석 유효성 검사기를 사용한 유효성 검사(C#)
+
 by [Microsoft](https://github.com/microsoft)
 
 > ASP.NET MVC 응용 프로그램 내에서 유효성 검사를 수행 하려면 데이터 주석 모델 바인더를 활용 합니다. 다양 한 유형의 유효성 검사기 특성을 사용 하 고 Microsoft Entity Framework에서 사용 하는 방법에 알아봅니다.

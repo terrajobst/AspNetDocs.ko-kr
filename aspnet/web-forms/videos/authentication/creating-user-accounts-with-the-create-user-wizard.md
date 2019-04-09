@@ -8,15 +8,15 @@ ms.date: 08/22/2008
 ms.assetid: fe023ad0-a25e-48e6-a43a-304e113f1fca
 msc.legacyurl: /web-forms/videos/authentication/creating-user-accounts-with-the-create-user-wizard
 msc.type: video
-ms.openlocfilehash: 7aba0123446cd1ef14c58324022f9a31e2fc5d2f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d1eff0f8a0671f554b07f00328d7f28573553581
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57024290"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411633"
 ---
-<a name="creating-user-accounts-with-the-create-user-wizard"></a>사용자 만들기 마법사로 사용자 계정 만들기
-====================
+# <a name="creating-user-accounts-with-the-create-user-wizard"></a>사용자 만들기 마법사로 사용자 계정 만들기
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 이 비디오에서는 Joe Stagner에 ASP.NET 및 Visual Studio에 로그인 컨트롤 컬렉션에 함께 제공 되는 사용자 만들기 마법사를 사용 하 여 사용자를 만드는 방법을 보여 줍니다. 이 비디오에 대 한 자세한 내용은 "사용자 계정 만들기" 보안 자습서를 읽어 보세요. ([C#](../../overview/older-versions-security/membership/creating-user-accounts-cs.md)하십시오 [VB](../../overview/older-versions-security/membership/creating-user-accounts-vb.md)).

@@ -8,15 +8,15 @@ ms.date: 05/27/2008
 ms.assetid: 990262a5-4c06-472a-8083-ed11e14f1e5a
 msc.legacyurl: /mvc/videos/mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-4-linq-to-sql-spike
 msc.type: video
-ms.openlocfilehash: b48d16532daacab3db8e398d911c28390eefff23
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 937451d8cfa5bb96ca6abebf440af86c2c2746ab
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57060540"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411464"
 ---
-<a name="aspnet-mvc-storefront-part-4-linq-to-sql-spike"></a>ASP.NET MVC Storefront 4부: LINQ To SQL Spike
-====================
+# <a name="aspnet-mvc-storefront-part-4-linq-to-sql-spike"></a>ASP.NET MVC Storefront 4부: LINQ To SQL Spike
+
 [Rob Conery](https://github.com/robconery)
 
 Rob 만듭니다 "급증"-내 데이터 액세스 패턴에 대 한 많은 기능이 생각 또는 영감을 테스트 하려면-되도록 해당 Linq To Sql 작동 합니다.

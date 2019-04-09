@@ -8,15 +8,15 @@ ms.date: 08/14/2010
 ms.assetid: e8f1515c-c277-47ff-a23e-224118f13f02
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part3
 msc.type: authoredcontent
-ms.openlocfilehash: f55e558dd056e86bdd2310894959aef02a9d8de2
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3eff3aceea302c51e6970bb13fbee3a8bf98a71d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046880"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411984"
 ---
-<a name="adding-a-view"></a>보기 추가
-====================
+# <a name="adding-a-view"></a>보기 추가
+
 [Scott Hanselman](https://github.com/shanselman)
 
 > ASP.NET MVC의 기본 사항을 소개 하는 초보자를 위한 자습서입니다. 읽기 및 쓰기 데이터베이스는 간단한 웹 응용 프로그램을 만들어야 합니다. 방문 합니다 [ASP.NET MVC 학습 센터](../../../index.md) 자습서 및 샘플 다른 ASP.NET MVC를 찾아볼 수 있습니다.
@@ -38,7 +38,7 @@ Index () 메서드를 사용할 수 있는 프로젝트를 뷰 템플릿으로 �
 
 우리는 인덱스 메서드에서 사용할 수 있는 보기 템플릿을 만들려고 하는 방법에 대 한 몇 가지 옵션을 제공 하는 "뷰 추가" 대화 상자가 표시 됩니다. 지금은 없습니다 아무것도 변경 및 추가 단추를 클릭 합니다.
 
-[![뷰 추가 대화 상자](getting-started-with-mvc-part3/_static/image3.png)](getting-started-with-mvc-part3/_static/image2.png)
+[![A보기 대화 상자 dd](getting-started-with-mvc-part3/_static/image3.png)](getting-started-with-mvc-part3/_static/image2.png)
 
 추가 클릭 하면 새 폴더 및 새 파일 나타납니다 솔루션 폴더에 다음과 같이 합니다. 이제 뷰 및 Index.aspx 파일에 HelloWorld 폴더를 해당 폴더 내에 있어야 합니다.
 
@@ -50,7 +50,7 @@ Index () 메서드를 사용할 수 있는 프로젝트를 뷰 템플릿으로 �
 
 응용 프로그램을 실행 하 고 방문 [ `http://localhost:xx/HelloWorld` ](http://localhostxx) 브라우저에서 다시 합니다. 이 예제에서 컨트롤러의 인덱스 메서드에서 모든 작업을 수행 하지 않은 하지만 보기 템플릿 파일을 사용 하 여 클라이언트에 다시 응답을 렌더링 하려고 했습니다 나타내는 "반환 View()"를 호출 하지 못했습니다. 에서는 않았습니다 지정 하지 않으므로 명시적으로 사용 하 여 뷰 템플릿 파일의 이름, Index.aspx 뷰 파일을 사용 하 여 \Views\HelloWorld 폴더 내에 ASP.NET MVC 기본값입니다. 이제에서는 하드 코드 된 뷰에 문자열이 표시 했습니다.
 
-[![Windows Internet Explorer 인덱스](getting-started-with-mvc-part3/_static/image7.png)](getting-started-with-mvc-part3/_static/image6.png)
+[![Index - Windows Internet Explorer](getting-started-with-mvc-part3/_static/image7.png)](getting-started-with-mvc-part3/_static/image6.png)
 
 잘 찾습니다. 그러나 브라우저의 제목 "Index" 라는 페이지의 큰 제목에 "내 MVC 응용 프로그램입니다." 라는 것을 알합니다 이러한 파일을 변경해 보겠습니다.
 
@@ -109,11 +109,11 @@ HelloWorldController.cs 파일 및 새 "WelcomeViewModel" 클래스를 추가 �
 
 또한 기억할지이 WelcomeViewModel에 대 한 보기 때문에 입력 하는 동안 확인 (결혼 여부는, 기억?)은 모델 개체 아래 스크린샷에 표시 된 참조 될 때마다 유용한 Intellisense를 시작 하기:
 
-[![NumTime 소스 코드](getting-started-with-mvc-part3/_static/image12.png)](getting-started-with-mvc-part3/_static/image11.png)
+[![N소스 코드 umTime](getting-started-with-mvc-part3/_static/image12.png)](getting-started-with-mvc-part3/_static/image11.png)
 
 응용 프로그램을 실행 하 고 방문 `http://localhost:xx/HelloWorld/Welcome?name=Scott&numtimes=4` 다시 합니다. URL에서 데이터 취하고 이제 자동으로 컨트롤러에 전달 될, 컨트롤러 ViewModel에 대 한 데이터를 패키지 하 고 보기에 해당 개체를 전달 합니다. 사용자에 게 HTML로 데이터를 표시 하는 보다 뷰.
 
-[![시작-Windows Internet Explorer](getting-started-with-mvc-part3/_static/image14.png)](getting-started-with-mvc-part3/_static/image13.png)
+[![W문서-Windows Internet Explorer](getting-started-with-mvc-part3/_static/image14.png)](getting-started-with-mvc-part3/_static/image13.png)
 
 물론 특정 유형의 모델에 대 한 "M" 이지만 데이터베이스 유형은 하지 했습니다. 새로운 지금까지 학습 한 동영상의 데이터베이스를 만들어 보겠습니다.
 

@@ -8,15 +8,15 @@ ms.date: 01/27/2009
 ms.assetid: ff8322c9-12f3-4e24-aba6-a38046b9bb0d
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-vb
 msc.type: authoredcontent
-ms.openlocfilehash: c1f64f57d4c23fe225a8268042104254e17dc456
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b3c6726c2d08e2e6ac37501f2ab455e427df82bb
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57044250"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59414057"
 ---
-<a name="creating-model-classes-with-the-entity-framework-vb"></a>Entity Framework를 사용하여 모델 클래스 만들기(VB)
-====================
+# <a name="creating-model-classes-with-the-entity-framework-vb"></a>Entity Framework를 사용하여 모델 클래스 만들기(VB)
+
 by [Microsoft](https://github.com/microsoft)
 
 > 이 자습서에서는 Microsoft Entity Framework를 사용 하 여 ASP.NET MVC를 사용 하는 방법을 알아봅니다. ADO.NET 엔터티 데이터 모델을 만들려면 엔터티 마법사를 사용 하는 방법을 알아봅니다. 이 자습서의이 코스를 통해 선택, 삽입, 업데이트 및 Entity Framework를 사용 하 여 데이터베이스 데이터를 삭제 하는 방법을 보여 주는 웹 응용 프로그램을 빌드합니다.
@@ -132,7 +132,7 @@ Entity Framework를 사용 하려면 엔터티 데이터 모델을 만들려고 
 
 영화 레코드를 표시 하려면 보기 목록 2에 사용 됩니다.
 
-**Listing 2 – Views\Home\Index.aspx**
+**2 – Views\Home\Index.aspx 나열**
 
 [!code-aspx[Main](creating-model-classes-with-the-entity-framework-vb/samples/sample3.aspx)]
 

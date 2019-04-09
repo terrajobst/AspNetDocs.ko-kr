@@ -8,15 +8,15 @@ ms.date: 02/24/2012
 ms.assetid: 257373bb-eab0-47bc-b5a2-37a9e91666d6
 msc.legacyurl: /web-forms/videos/data-access/linq-videos-from-the-vb-team
 msc.type: chapter
-ms.openlocfilehash: 67c6aaf358d4c7c2764493e8c17e1d5245096014
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3db35464b448727ef3477a90149459a46e0f76d7
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57022810"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59412166"
 ---
-<a name="linq-videos-from-the-vb-team"></a>VB 팀의 LINQ 비디오
-====================
+# <a name="linq-videos-from-the-vb-team"></a>VB 팀의 LINQ 비디오
+
 > 이러한 비디오는 시간 및 Visual Studio 2008에 포함 된 Visual Basic 9.0의 새로운 LINQ 언어 기능을 중심으로 하는 콘텐츠의 절반을 통해 제공 합니다.
 
 

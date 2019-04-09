@@ -8,15 +8,15 @@ ms.date: 02/17/2014
 ms.assetid: e158bed7-226f-4275-b02e-7553bd58c669
 msc.legacyurl: /web-pages/overview/ui-layouts-and-themes/18-customizing-site-wide-behavior
 msc.type: authoredcontent
-ms.openlocfilehash: ca7c241d6e4d1e4baa581faf2bda4ed275b4e785
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 2763cae0f8124cfcaccfd737622cb17b6dd947e1
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57030950"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59413297"
 ---
-<a name="customizing-site-wide-behavior-for-aspnet-web-pages-razor-sites"></a>ASP.NET 웹 페이지 (Razor) 사이트에 대 한 사이트 전체 동작을 사용자 지정
-====================
+# <a name="customizing-site-wide-behavior-for-aspnet-web-pages-razor-sites"></a>ASP.NET 웹 페이지 (Razor) 사이트에 대 한 사이트 전체 동작을 사용자 지정
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 문서에서는 ASP.NET Web Pages (Razor) 웹 사이트에서 페이지에 대 한 사이트 쪽 설정을 확인 하는 방법에 설명 합니다.

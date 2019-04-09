@@ -1,23 +1,26 @@
 ---
 uid: web-api/overview/odata-support-in-aspnet-web-api/supporting-odata-query-options
-title: ASP.NET Web API 2 OData 쿼리 옵션 지원 | Microsoft Docs
+title: ASP.NET Web API 2-ASP.NET에서에서 OData 쿼리 옵션을 지 원하는 4.x
 author: MikeWasson
-description: ''
+description: 코드 예제를 사용 하 여 개요 ASP.NET에 대 한 ASP.NET Web API 2에서 지 원하는 OData 쿼리 옵션을 표시 4.x 합니다.
 ms.author: riande
 ms.date: 02/04/2013
+ms.custom: seoapril2019
 ms.assetid: 50e6e62b-e72e-4a29-8293-4b67377bd21f
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/supporting-odata-query-options
 msc.type: authoredcontent
-ms.openlocfilehash: 8745183125c9dd1dcc7cb0e146367a893bdb0170
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 428e4942e42436585049c1e84cd7b07a4a79c0d1
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57050880"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411568"
 ---
-<a name="supporting-odata-query-options-in-aspnet-web-api-2"></a>ASP.NET Web API 2에서에서 OData 쿼리 옵션 지원
-====================
+# <a name="supporting-odata-query-options-in-aspnet-web-api-2"></a>ASP.NET Web API 2에서에서 OData 쿼리 옵션 지원
+
 [Mike Wasson](https://github.com/MikeWasson)
+
+코드 예제를 사용 하 여이 개요에서는 ASP.NET에 대 한 ASP.NET Web API 2에서 지원 되는 OData 쿼리 옵션을 보여 줍니다. 4.x 합니다. 
 
 OData는 OData 쿼리를 수정 하는 매개 변수를 정의 합니다. 클라이언트는 요청 URI의 쿼리 문자열에서 이러한 매개 변수를 보냅니다. 예를 들어, 클라이언트가 결과 정렬 하려면 $orderby 매개 변수를 사용 합니다.
 

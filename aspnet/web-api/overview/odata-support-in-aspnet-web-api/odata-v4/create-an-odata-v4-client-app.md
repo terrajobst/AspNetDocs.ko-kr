@@ -8,15 +8,15 @@ ms.date: 06/26/2014
 ms.assetid: 47202362-3808-4add-9a69-c9d1f91d5e4e
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v4/create-an-odata-v4-client-app
 msc.type: authoredcontent
-ms.openlocfilehash: 4d62a64006e2a500e0379419dbebe7ddff16fba5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 14d4b01a2ea8a4582294053416b626e7f1801b50
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061200"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411516"
 ---
-<a name="create-an-odata-v4-client-app-c"></a>OData v4 클라이언트 앱 만들기(C#)
-====================
+# <a name="create-an-odata-v4-client-app-c"></a>OData v4 클라이언트 앱 만들기(C#)
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 이전 자습서에서 CRUD 작업을 지 원하는 기본 OData 서비스를 만들었습니다. 이제 서비스에 대 한 클라이언트를 만들어 보겠습니다.

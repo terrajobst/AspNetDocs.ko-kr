@@ -8,15 +8,15 @@ ms.date: 07/16/2007
 ms.assetid: 9fb155e0-1379-482c-963d-af7dc0397d76
 msc.legacyurl: /web-forms/videos/vs-2005/how-do-i-publish-and-analyze-test-results
 msc.type: video
-ms.openlocfilehash: a575dd0af20bb1565606c93e5a189b7a3e35ff3d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 80289680e4d40ec903524d9f4752b71d13db790e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57053880"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59413505"
 ---
-<a name="how-do-i-publish-and-analyze-test-results"></a>[어떻게 할까요?] 게시 및 테스트 결과 분석?
-====================
+# <a name="how-do-i-publish-and-analyze-test-results"></a>[어떻게 할까요?] 게시 및 테스트 결과 분석?
+
 [Chris Menegay](https://twitter.com/CMenegay)
 
 Visual Studio Team System을 사용 하면 프로젝트 진행에 따라 프로젝트의 코드 품질 차트 변경을 할 수 있습니다. 이 비디오에서는 Team Foundation Server 프로젝트 데이터베이스에 테스트 결과 게시할 빌드 번호를 사용 하 여 결과 연결 하는 방법을 설명 합니다. 알 수는 결과 게시 된 후 사용할 수 있습니다 보고서 관리자 빌드 테스트 결과에 변경 내용의 그래픽 표현을 볼 수 있습니다.

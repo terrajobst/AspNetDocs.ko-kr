@@ -8,15 +8,15 @@ ms.date: 01/28/2011
 ms.assetid: 51b447d5-eaa1-4df1-917c-f4f2746ed62d
 msc.legacyurl: /mobile/tested-devices
 msc.type: content
-ms.openlocfilehash: 4576e176f3b5d6e3a1fbec16f098c64ec3f0d54d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ecf8b7d90358fa0410ded9bd33c711016b4cd1d4
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034380"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411061"
 ---
-<a name="aspnet-mobile-controls-tested-devices"></a>ASP.NET 모바일 컨트롤 테스트를 마친 디바이스
-====================
+# <a name="aspnet-mobile-controls-tested-devices"></a>ASP.NET 모바일 컨트롤 테스트를 마친 디바이스
+
 > 다음 장치 및 브라우저 Microsoft Mobile Internet Toolkit v1.0 및 ASP.NET 모바일 컨트롤을 사용 하 여 테스트 되었습니다.
 > 
 > - Microsoft Mobile Internet Toolkit [MMIT 1.0]: *(2002 년 1 월 15 일)*

@@ -8,15 +8,15 @@ ms.date: 11/14/2011
 ms.assetid: 93486ab8-7a8c-4075-935a-83900817b3db
 msc.legacyurl: /web-forms/videos/aspnet-35/aspnet-ajax
 msc.type: chapter
-ms.openlocfilehash: ac46b096c549e0e582801a6db7134c9396eb26e5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c9915bf881342b02124893d5272781f4b6bbb074
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57021990"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411919"
 ---
-<a name="aspnet-ajax"></a>ASP.NET Ajax
-====================
+# <a name="aspnet-ajax"></a>ASP.NET Ajax
+
 > 이 비디오 시리즈는 ASP.NET 응용 프로그램에 Ajax 기능을 추가 하는 방법을 살펴봅니다.
 
 

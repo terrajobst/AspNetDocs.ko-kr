@@ -8,15 +8,15 @@ ms.date: 05/04/2012
 ms.assetid: b28d3e2d-0bb4-4e29-a780-af810b964722
 msc.legacyurl: /web-forms/overview/deployment/configuring-team-foundation-server-for-web-deployment/creating-a-team-project-in-tfs
 msc.type: authoredcontent
-ms.openlocfilehash: 9218a22ff221dc7067662c58ccd3e758fca493b7
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1e727e8124e1f045f8ef25ab7a3d4efbafd4290a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062520"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411217"
 ---
-<a name="creating-a-team-project-in-tfs"></a>TFS에서 팀 프로젝트 만들기
-====================
+# <a name="creating-a-team-project-in-tfs"></a>TFS에서 팀 프로젝트 만들기
+
 [Jason lee 공저](https://github.com/jrjlee)
 
 [PDF 다운로드](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
@@ -106,7 +106,8 @@ ms.locfileid: "57062520"
 
    > [!NOTE]
    > 표시 될 수 있습니다는 <strong>HTTP 404 찾을 수 없음</strong> 이중 HTTP 인코딩 버그로 인해 오류가 발생 했습니다. 이 경우이 사용 하 여 URL을 바꿉니다.   
-   > `[site_collection_URL]/_layouts/permsetup.aspx` 예를 들어:  
+   > `[site_collection_URL]/_layouts/permsetup.aspx`
+   > 예를 들어:  
    > `http://tfs/sites/Fabrikam%20Web%20Projects/_layouts/permsetup.aspx` 
 8. 에 **그룹이이 사이트에 대 한 설정** 페이지, 팀 프로젝트를 생성 하는 사용자를 추가 합니다 **소유자** 그룹을 마우스 클릭 **확인**합니다.
 

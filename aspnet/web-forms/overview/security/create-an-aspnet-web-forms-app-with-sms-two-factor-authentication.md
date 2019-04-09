@@ -8,15 +8,15 @@ ms.date: 10/09/2014
 ms.assetid: 716264ae-ab72-45de-bfc5-53a6237089cf
 msc.legacyurl: /web-forms/overview/security/create-an-aspnet-web-forms-app-with-sms-two-factor-authentication
 msc.type: authoredcontent
-ms.openlocfilehash: 7ad3b7a453a40f2708902ae5b9e5cb75b931d54d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 2010de510cf44bba1b95d29dbdb573ab78f452f7
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57028720"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411360"
 ---
-<a name="create-an-aspnet-web-forms-app-with-sms-two-factor-authentication-c"></a>SMS 2단계 인증을 사용하는 ASP.NET Web Forms 앱 만들기(C#)
-====================
+# <a name="create-an-aspnet-web-forms-app-with-sms-two-factor-authentication-c"></a>SMS 2단계 인증을 사용하는 ASP.NET Web Forms 앱 만들기(C#)
+
 [Erik Reitan](https://github.com/Erikre)
 
 [전자 메일 및 SMS 2 단계 인증을 사용 하 여 ASP.NET Web Forms 앱 다운로드](https://code.msdn.microsoft.com/ASPNET-Web-Forms-App-with-5a0ff94e)
@@ -108,7 +108,7 @@ ms.locfileid: "57028720"
 <a id="addRes"></a>
 ## <a name="additional-resources"></a>추가 리소스
 
-- [ASP.NET ID와 SMS 및 전자 메일을 사용한 2단계 인증](../../../identity/overview/features-api/two-factor-authentication-using-sms-and-email-with-aspnet-identity.md)
+- [ASP.NET Identity에서 SMS 및 전자 메일을 사용한 2단계 인증](../../../identity/overview/features-api/two-factor-authentication-using-sms-and-email-with-aspnet-identity.md)
 - [링크를 ASP.NET Id 권장 리소스](../../../identity/overview/getting-started/aspnet-identity-recommended-resources.md)
 - [멤버 자격, OAuth 및 SQL Database를 사용 하 여 보안 ASP.NET Web Forms 앱을 Azure 웹 사이트에 배포](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-deploy-aspnet-webforms-app-membership-oauth-sql-database/)
 - [ASP.NET Web Forms 자습서 시리즈-OAuth 2.0 공급자 추가](../getting-started/getting-started-with-aspnet-45-web-forms/checkout-and-payment-with-paypal.md#OAuthWebForms)

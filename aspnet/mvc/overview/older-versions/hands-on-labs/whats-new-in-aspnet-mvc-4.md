@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 48f7feb3-872f-485d-b96f-e30011ff8c4a
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/whats-new-in-aspnet-mvc-4
 msc.type: authoredcontent
-ms.openlocfilehash: 0c4b7b2641c91cbb63ec46fa707c004f7273a303
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: b9da2522cfaed324a23f43265d4e234ebb4950bd
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422690"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411126"
 ---
 # <a name="whats-new-in-aspnet-mvc-4"></a>ASP.NET MVC 4의 새로운 기능
 
@@ -173,14 +173,14 @@ ASP.NET MVC 4는 체계적인 디자인 패턴 및 ASP.NET 및.NET framework의 
 
    *ASP.NET MVC 4 인터넷 응용 프로그램 프로젝트 템플릿*
 
-   - **HTML 5 태그**
+    - **HTML 5 Markup**
 
        새 테마 태그를 확인 하려면 템플릿 뷰를 찾습니다.
 
        ![Razor 및 HTML5 태그 About.cshtml를 사용 하 여 새 템플릿. ](whats-new-in-aspnet-mvc-4/_static/image10.png "About.cshtml Razor 및 HTML5 태그를 사용 하 여 새 서식 파일입니다.")
 
        *HTML5 및 Razor 태그 (About.cshtml)를 사용 하 여 새 템플릿.*
-   - **업데이트 된 JavaScript 라이브러리**
+    - **업데이트 된 JavaScript 라이브러리**
 
        KnockoutJS, 풍부한 만들 수 있는 JavaScript MVVM 프레임 워크 및 JavaScript 및 HTML을 사용 하 여 응답성이 뛰어난 웹 응용 프로그램에 이제 ASP.NET MVC 4 기본 템플릿이 포함 되어 있습니다. 같은 mvc 3, jQuery 및 jQuery UI 라이브러리도 포함 되어 ASP.NET MVC 4입니다.
 
@@ -250,11 +250,11 @@ ASP.NET MVC 4 웹 사이트에 모바일 및 태블릿 브라우저의 개발을
 > 미디어 쿼리의 기본 형식은 다음과 같습니다. @media \[범위: 모든 | 핸드헬드 | 인쇄 | 프로젝션 | 화면\] ([속성: 값] 및... [속성: 값])
 
 
-미디어 쿼리 예: &gt;  <strong>@media 모든 및 (최대 너비: 1000px) 및 (최소 너비: 700px) {}:</strong> 700px 1000px 사이의 모든 해상도 대해
+미디어 쿼리 예: &gt;  **@media 모든 및 (최대 너비: 1000px) 및 (최소 너비: 700px) {}:** 700px 1000px 사이의 모든 해상도 대해
 
-> <strong>@media 화면 및 (최소 너비: 400px) 및 (최대 너비: 700px) { ... }:</strong> 화면에 대해서만 해상도 400 700px 사이 여야 합니다.
+> **@media 화면 및 (최소 너비: 400px) 및 (최대 너비: 700px) { ... }:** 화면에 대해서만 해상도 400 700px 사이 여야 합니다.
 > 
-> <strong>@media 핸드헬드 및 (최소 너비: 20em), 화면 및 (최소 너비: 20em) {...}:</strong> 휴대 장치 (휴대폰 및 장치) 및 화면 최소 너비는 20em 보다 커야 합니다.
+> **@media 핸드헬드 및 (최소 너비: 20em), 화면 및 (최소 너비: 20em) {...}:** 휴대 장치 (휴대폰 및 장치) 및 화면 최소 너비는 20em 보다 커야 합니다.
 > 
 > 이 대 한 자세한 정보를 찾을 수 있습니다 합니다 [W3C 사이트](http://www.w3.org/TR/css3-mediaqueries/)합니다.
 
@@ -263,7 +263,7 @@ ASP.NET MVC 4 웹 사이트에 모바일 및 태블릿 브라우저의 개발을
 
 1. 엽니다는 **PhotoGallery.sln** 솔루션 작업 1에서 만든 하 고 선택 합니다 **PhotoGallery** 프로젝트. 키를 눌러 **F5** 솔루션을 실행 합니다.
 2. 브라우저의 너비 절반 또는 원래 크기의 1/4 보다 작은 windows 설정 크기를 조정 합니다. 헤더 항목을 사용 하 여 어떻게 알 수 있습니다. 일부 요소는 헤더의 표시 영역에 나타나지 않습니다.
-3. 오픈 <strong>Site.css</strong> 에 Visual Studio 솔루션 탐색기에서 파일 <strong>콘텐츠</strong> 프로젝트 폴더입니다. 키를 눌러 <strong>CTRL + F</strong> 검색을 통합된 하는 Visual Studio를 열고 쓸 수 <strong>@media</strong> 찾으려고 합니다 <strong>CSS 미디어 쿼리</strong>합니다.
+3. 오픈 **Site.css** 에 Visual Studio 솔루션 탐색기에서 파일 **콘텐츠** 프로젝트 폴더입니다. 키를 눌러 **CTRL + F** 검색을 통합된 하는 Visual Studio를 열고 쓸 수 **@media** 찾으려고 합니다 **CSS 미디어 쿼리**합니다.
 
     이 템플릿에 정의 된 미디어 쿼리 조건은 이러한 방식으로 작동 합니다. 브라우저의 창 크기 미만인 **850 px**,이 미디어 블록 내에 정의 된 CSS 규칙이 적용 됩니다.
 
@@ -274,13 +274,13 @@ ASP.NET MVC 4 웹 사이트에 모바일 및 태블릿 브라우저의 개발을
 
     ![페이지 왼쪽에 적용 하는 합니다 @media 생략 되 면 오른쪽 스타일에서에서 스타일](whats-new-in-aspnet-mvc-4/_static/image17.png "페이지 왼쪽에 적용 하는 @media 오른쪽 스타일의 스타일을 생략 하면")
 
-    <em>페이지 왼쪽에 적용 되는 @media 생략 되 면 오른쪽 스타일에서에서 스타일</em>
+    *페이지 왼쪽에 적용 되는 @media 생략 되 면 오른쪽 스타일에서에서 스타일*
 
     이제 모바일 장치에서 어떤 일이 생기 확인해 보겠습니다.
 
     ![페이지 왼쪽에 적용 하는 합니다 @media 생략 되 면 오른쪽 스타일에서에서 스타일](whats-new-in-aspnet-mvc-4/_static/image18.png "페이지 왼쪽에 적용 하는 @media 오른쪽 스타일의 스타일을 생략 하면")
 
-    <em>페이지 왼쪽에 적용 되는 @media 생략 되 면 오른쪽 스타일에서에서 스타일</em>
+    *페이지 왼쪽에 적용 되는 @media 생략 되 면 오른쪽 스타일에서에서 스타일*
 
     웹 브라우저에서 페이지를 렌더링할 때 변경 되지 않았는지 매우 중요 한 모바일 장치를 사용 하는 경우 알 수 있습니다 하지만 차이점 보다 명확 하 게 됩니다. 이미지의 왼쪽에는 사용자 지정 스타일 가독성을 향상 볼 수 있습니다.
 
@@ -543,11 +543,11 @@ jQuery Mobile의 기본 테마에는 문자를 지정 된 5 견본 포함 (a, b,
     ![바탕 화면 보기에서 렌더링 전환기 보고](whats-new-in-aspnet-mvc-4/_static/image32.png "바탕 화면 보기에서 렌더링 하는 뷰 전환기")
 
     *바탕 화면 보기에서 렌더링 하는 뷰 전환기*
-7. 모바일 뷰로 다시 전환 하 고 찾아보기 <strong>에 대 한</strong> 페이지 (http://localhost[port]/Home/About). About.Mobile.cshtml 뷰를 만들지 않은, 경우에 정보 페이지 표시 됩니다 모바일 레이아웃을 사용 하 여 (\_Layout.Mobile.cshtml).
+7. 모바일 뷰로 다시 전환 하 고 찾아보기 **에 대 한** 페이지 (http://localhost[port]/Home/About). About.Mobile.cshtml 뷰를 만들지 않은, 경우에 정보 페이지 표시 됩니다 모바일 레이아웃을 사용 하 여 (\_Layout.Mobile.cshtml).
 
     ![페이지에 대 한](whats-new-in-aspnet-mvc-4/_static/image33.png "페이지에 대 한")
 
-    *페이지에 대 한*
+    *정보 페이지*
 8. 마지막으로, 데스크톱 웹 브라우저에서 사이트를 엽니다. 이전 업데이트에 영향을 미치지 않습니다 바탕 화면 보기를 확인 합니다.
 
     ![바탕 화면 보기 PhotoGallery](whats-new-in-aspnet-mvc-4/_static/image34.png "PhotoGallery 바탕 화면 보기")
@@ -764,7 +764,7 @@ Microsoft.NET Framework 4.5에서는 C# 및 Visual Basic.NET 프로그래밍의 
 
 설치할 수 있습니다 **Microsoft Visual Studio Express 2012 for Web** 또는 다른 &quot;Express&quot; 사용 하 여 버전을 **[Microsoft Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx)**. 다음 지침을 설치 하는 데 필요한 단계를 안내 *Visual studio Express 2012 for Web* 사용 하 여 *Microsoft Web Platform Installer*합니다.
 
-1. 로 이동 [ [ https://go.microsoft.com/?linkid=9810169 ](https://go.microsoft.com/?linkid=9810169) ](https://go.microsoft.com/?linkid=9810169)합니다. 또는, 이미 설치한 경우 웹 플랫폼 설치 관리자를 열 수 있습니다 하 고 제품에 대 한 검색 &quot; <em>Visual Studio Express 2012 for Windows Azure SDK를 사용 하 여 Web</em>&quot;합니다.
+1. 로 이동 [ [ https://go.microsoft.com/?linkid=9810169 ](https://go.microsoft.com/?linkid=9810169) ](https://go.microsoft.com/?linkid=9810169)합니다. 또는, 이미 설치한 경우 웹 플랫폼 설치 관리자를 열 수 있습니다 하 고 제품에 대 한 검색 &quot; *Visual Studio Express 2012 for Windows Azure SDK를 사용 하 여 Web*&quot;합니다.
 2. 클릭할 **지금 설치**합니다. 없는 경우 **웹 플랫폼 설치 관리자** 를 다운로드 하 여 앱을 먼저 설치 리디렉션됩니다.
 3. 한 번 **웹 플랫폼 설치 관리자** 열려 있는 경우 클릭 **설치** 는 설치를 시작 합니다.
 
@@ -805,7 +805,7 @@ Microsoft.NET Framework 4.5에서는 C# 및 Visual Basic.NET 프로그래밍의 
 <a id="Task_1_-_Installing_WebMatrix_2"></a>
 #### <a name="task-1---installing-webmatrix-2"></a>작업 1-WebMatrix 설치 2
 
-1. 로 이동 [ [ https://go.microsoft.com/?linkid=9809776 ](https://go.microsoft.com/?linkid=9809776) ](https://go.microsoft.com/?linkid=9810169)합니다. 또는, 이미 설치한 경우 웹 플랫폼 설치 관리자를 열 수 있습니다 하 고 제품에 대 한 검색 &quot; <em>WebMatrix 2</em>&quot;합니다.
+1. 로 이동 [ [ https://go.microsoft.com/?linkid=9809776 ](https://go.microsoft.com/?linkid=9809776) ](https://go.microsoft.com/?linkid=9810169)합니다. 또는, 이미 설치한 경우 웹 플랫폼 설치 관리자를 열 수 있습니다 하 고 제품에 대 한 검색 &quot; *WebMatrix 2*&quot;합니다.
 2. 클릭할 **지금 설치**합니다. 없는 경우 **웹 플랫폼 설치 관리자** 를 다운로드 하 여 앱을 먼저 설치 리디렉션됩니다.
 3. 한 번 **웹 플랫폼 설치 관리자** 열려 있는 경우 클릭 **설치** 는 설치를 시작 합니다.
 
@@ -875,7 +875,7 @@ Microsoft.NET Framework 4.5에서는 C# 및 Visual Basic.NET 프로그래밍의 
 3. 에 &quot;브라우저&quot; 대화 상자에서 클릭 **추가**합니다.
 4. 에 &quot;프로그램 추가&quot; 대화 상자에서 다음 값을 사용 합니다.
 
-   - <strong>프로그램</strong>: C:\Users\*{CurrentUser}<em>\AppData\Local\Microsoft\WebMatrix\Extensions\20\iPhoneSimulator\ElectricMobileSim\ElectricMobileSim.exe * (경로 적절 하 게 업데이트)</em>
+   - **프로그램**: C:\Users\*{CurrentUser}*\AppData\Local\Microsoft\WebMatrix\Extensions\20\iPhoneSimulator\ElectricMobileSim\ElectricMobileSim.exe *(경로 적절 하 게 업데이트)*
    - **인수**: &quot;1&quot;
    - **이름을**: iPhone 시뮬레이터
 

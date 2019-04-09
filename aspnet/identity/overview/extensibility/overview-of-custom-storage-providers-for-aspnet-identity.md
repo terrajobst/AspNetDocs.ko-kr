@@ -1,22 +1,23 @@
 ---
 uid: identity/overview/extensibility/overview-of-custom-storage-providers-for-aspnet-identity
-title: ASP.NET Id에 대 한 사용자 지정 저장소 공급자 개요 | Microsoft Docs
+title: ASP.NET Id-ASP.NET에 대 한 사용자 지정 저장소 공급자 개요 4.x
 author: Rick-Anderson
 description: ASP.NET Id는 사용자 고유의 저장소 공급자를 만들고 응용은 작업이 다시 실행 하지 않고 응용 프로그램에 연결할 수 있는 확장 가능한 시스템...
 ms.author: riande
 ms.date: 10/13/2014
 ms.assetid: 681a9204-462e-4260-9a0b-19f0644d6ad7
+ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/extensibility/overview-of-custom-storage-providers-for-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: d819fabf4f367c8f6d0ce857bc248a2b812c2b21
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 71201e9d91080855350349b966fe7916ce21a909
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422209"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411269"
 ---
-<a name="overview-of-custom-storage-providers-for-aspnet-identity"></a>ASP.NET Identity에 대한 사용자 지정 스토리지 공급자 개요
-====================
+# <a name="overview-of-custom-storage-providers-for-aspnet-identity"></a>ASP.NET Identity에 대한 사용자 지정 스토리지 공급자 개요
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > ASP.NET Id는 확장 가능한 시스템 사용자 고유의 저장소 공급자를 만들고 응용 프로그램을 다시 사용 하지 않고 응용 프로그램에 연결할 수 있습니다. 이 항목에서는 ASP.NET Id에 대 한 사용자 지정된 저장소 공급자를 만드는 방법을 설명 합니다. 사용자 고유의 저장소 공급자를 만들기 위한 중요 한 개념을 설명 하는 사용자 지정 저장소 공급자를 구현 하는 단계별 연습 것만 합니다.

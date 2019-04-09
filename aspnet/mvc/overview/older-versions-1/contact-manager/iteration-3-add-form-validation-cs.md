@@ -8,15 +8,15 @@ ms.date: 02/20/2009
 ms.assetid: 51a0d175-913b-43d8-95e3-840fb96ad1a9
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager/iteration-3-add-form-validation-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 4115b3898415d63ffb122f3d0fea93022f2baa02
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 973878ef0afd62035b3fc840371e6c6223c8951c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57030420"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59413791"
 ---
-<a name="iteration-3--add-form-validation-c"></a>반복 #3-양식 유효성 검사 추가 (C#)
-====================
+# <a name="iteration-3--add-form-validation-c"></a>반복 #3-양식 유효성 검사 추가 (C#)
+
 by [Microsoft](https://github.com/microsoft)
 
 [코드 다운로드](iteration-3-add-form-validation-cs/_static/contactmanager_3_cs1.zip)
@@ -51,7 +51,7 @@ by [Microsoft](https://github.com/microsoft)
 연락처 관리자 응용 프로그램의이 두 번째 반복에서는 기본 양식 유효성 검사를 추가합니다. 사용자를 방지할 수를 필요한 형식의 필드에 대 한 값을 입력 하지 않고 연락처를 제출 합니다. 또한 전화 번호 및 전자 메일 주소 (그림 1 참조) 유효성을 검사 합니다.
 
 
-[![새 프로젝트 대화 상자](iteration-3-add-form-validation-cs/_static/image1.jpg)](iteration-3-add-form-validation-cs/_static/image1.png)
+[![T새 프로젝트 대화 상자의 그](iteration-3-add-form-validation-cs/_static/image1.jpg)](iteration-3-add-form-validation-cs/_static/image1.png)
 
 **그림 01**: 유효성 검사를 사용 하 여 폼 ([클릭 하 여 큰 이미지 보기](iteration-3-add-form-validation-cs/_static/image2.png))
 

@@ -8,15 +8,15 @@ ms.date: 06/19/2008
 ms.assetid: 9a0f04b9-6a49-4e2c-9c12-03ab71ab2705
 msc.legacyurl: /mvc/videos/mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-12-mocking
 msc.type: video
-ms.openlocfilehash: 0af5799a779f19f19f8eaeab5c554d90993ca4af
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 481b3185b2050d2ac944da8969ce68353f89a3ef
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57051780"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411529"
 ---
-<a name="aspnet-mvc-storefront-part-12-mocking"></a>ASP.NET MVC Storefront 12부: 모의
-====================
+# <a name="aspnet-mvc-storefront-part-12-mocking"></a>ASP.NET MVC Storefront 12부: 모의
+
 [Rob Conery](https://github.com/robconery)
 
 이 에피소드에서 내 UserController에 대 한 인증 작업 내를 테스트할 수 있도록 모의 구현 합니다.

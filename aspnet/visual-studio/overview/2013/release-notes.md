@@ -8,15 +8,15 @@ ms.date: 10/17/2013
 ms.assetid: 08815768-2702-42ae-ae85-0a59934a11d1
 msc.legacyurl: /visual-studio/overview/2013/release-notes
 msc.type: authoredcontent
-ms.openlocfilehash: cd6197a9cbed822ba874a19823521a3711be9201
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 8234bd1b7eb74d9b03e507f00d9ad937314288be
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422716"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411282"
 ---
-<a name="aspnet-and-web-tools-for-visual-studio-2013-release-notes"></a>Visual Studio 2013용 ASP.NET 및 Web Tools 릴리스 정보
-====================
+# <a name="aspnet-and-web-tools-for-visual-studio-2013-release-notes"></a>Visual Studio 2013용 ASP.NET 및 Web Tools 릴리스 정보
+
 by [Microsoft](https://github.com/microsoft)
 
 > 이 문서에서는 Visual Studio 2013 용 ASP.NET 및 웹 도구 릴리스를 설명 합니다.
@@ -25,7 +25,7 @@ by [Microsoft](https://github.com/microsoft)
 ## <a name="contents"></a>목차
 
 - [설치 참고 사항](#TOC1)
-- [문서](#TOC2)
+- [설명서](#TOC2)
 - [소프트웨어 요구 사항](#TOC4)
 
 ### <a name="new-features-in-aspnet-and-web-tools-for-visual-studio-2013"></a>ASP.NET 및 Web Tools for Visual Studio 2013의 새로운 기능
@@ -42,7 +42,7 @@ by [Microsoft](https://github.com/microsoft)
 - [ASP.NET MVC 5](#TOC10)
 - [ASP.NET Web API 2](#TOC11)
 - [ASP.NET SignalR](#TOC13)
-- [ASP.NET Id](#TOC8)
+- [ASP.NET ID](#TOC8)
 - [Microsoft OWIN 구성 요소](#TOC7)
 - [Entity Framework 6](#ef6)
 - [ASP.NET Razor 3](#TOC14)
@@ -135,7 +135,7 @@ Azure SDK for.NET 2.2를 사용 하 여 Visual Studio 2013에서 사용할 수 �
 자세한 내용은 다음 리소스를 참조하세요.
 
 - [Azure App Service에서 ASP.NET 웹 앱 만들기](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-get-started/)
-- [Visual Studio를 사용하여 Azure App Service의 웹앱 문제 해결](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-troubleshoot-visual-studio/)
+- [Visual Studio를 사용 하 여 Azure App Service에서 웹 앱 문제 해결](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-troubleshoot-visual-studio/)
 
 <a id="publish"></a>
 ## <a name="web-publish-enhancements"></a>향상 된 기능으로 웹 게시

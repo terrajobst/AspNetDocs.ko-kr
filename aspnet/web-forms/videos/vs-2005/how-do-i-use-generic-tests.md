@@ -8,15 +8,15 @@ ms.date: 07/16/2007
 ms.assetid: e129b2c2-8587-4ff1-b455-7f14cb28bcf9
 msc.legacyurl: /web-forms/videos/vs-2005/how-do-i-use-generic-tests
 msc.type: video
-ms.openlocfilehash: fabeff4743a28015b55c98071e8df40015710dd1
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 32d970a5eba2eb7a5344c43e65e40c0ff6670632
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57035810"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411685"
 ---
-<a name="how-do-i-use-generic-tests"></a>[어떻게 할까요?] 제네릭 테스트 사용
-====================
+# <a name="how-do-i-use-generic-tests"></a>[어떻게 할까요?] 제네릭 테스트 사용
+
 [Chris Menegay](https://twitter.com/CMenegay)
 
 제네릭 테스트는 래핑된 이며 Visual Studio Team System에서 테스트로 사용할 수 있는 기존 프로그램입니다. 이 비디오 래핑된 셸 프로그램을 테스트 환경에서 입력된 값을 수락 하는 방법 및 프로그램의 출력 값 테스트 통과 또는 실패 여부를 결정 하는 방법의 데모를 볼 수 있습니다.
