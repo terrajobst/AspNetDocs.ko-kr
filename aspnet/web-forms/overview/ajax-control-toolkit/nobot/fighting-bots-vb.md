@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: e9803150-452d-4521-97e3-d75d5599383c
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/nobot/fighting-bots-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 8b2a2d2d72bfcf3ce8b3b345fda0bad5a37818ee
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6baf5447d31d00b89cb7ddf526553456fecbbf6e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57026470"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409475"
 ---
-<a name="fighting-bots-vb"></a>대체 봇(VB)
-====================
+# <a name="fighting-bots-vb"></a>대체 봇(VB)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/NoBot0.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/nobot0VB.pdf)
@@ -65,7 +65,7 @@ by [Christian Wenz](https://github.com/wenz)
 이 스크립트를 실행 및 JavaScript를 비활성화 또는 처음 2 초 안에 양식을 제출 하거나 30 초 내에 7 번 양식을 제출, 오류 메시지가 표시 됩니다. 그러나이 컨트롤을 현명 하 게 사용, 사용자의 약 90 95% 활성화 하는 JavaScript가 사용자의 5 ~ 10% 실패는 `NoBot`의 테스트 합니다.
 
 
-[![이 오류 메시지는 봇 인해 발생할 수 있습니다.](fighting-bots-vb/_static/image2.png)](fighting-bots-vb/_static/image1.png)
+[![T그의 오류 메시지는 봇 인해 발생 했을 수](fighting-bots-vb/_static/image2.png)](fighting-bots-vb/_static/image1.png)
 
 이 오류 메시지는 봇 인해 발생할 수 있습니다 ([클릭 하 여 큰 이미지 보기](fighting-bots-vb/_static/image3.png))
 

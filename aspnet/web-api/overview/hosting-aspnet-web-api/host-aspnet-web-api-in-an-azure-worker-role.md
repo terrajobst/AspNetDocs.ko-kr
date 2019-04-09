@@ -1,22 +1,23 @@
 ---
 uid: web-api/overview/hosting-aspnet-web-api/host-aspnet-web-api-in-an-azure-worker-role
-title: ASP.NET Web API 2 Azure 작업자 역할에 호스트 | Microsoft Docs
+title: 호스트 ASP.NET Web API 2에서 Azure 작업자 역할-ASP.NET 4.x
 author: MikeWasson
-description: 이 자습서에 OWIN을 사용 하 여 Web API 프레임 워크 자체 호스트 하는 Azure 작업자 역할에서 ASP.NET Web API를 호스트 하는 방법을 보여줍니다. .NET (OWIN) 독일에 대 한 open Web Interface...
+description: '자습서: ASP.NET Web API에 OWIN 자체 호스트 하는 Web API 프레임 워크를 사용 하 여 Azure 작업자 역할을 호스트 합니다.'
 ms.author: riande
 ms.date: 04/02/2014
+ms.custom: seoapril2019
 ms.assetid: 6980ee2e-d6b0-4a08-8fb6-ab96362dd0e3
 msc.legacyurl: /web-api/overview/hosting-aspnet-web-api/host-aspnet-web-api-in-an-azure-worker-role
 msc.type: authoredcontent
-ms.openlocfilehash: 40cb1a4514beaf81e7ed75bbd3e478f2ba146fe5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bfb23aafb814010e8651965dad91ca20a37fd786
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57063920"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59404626"
 ---
-<a name="host-aspnet-web-api-2-in-an-azure-worker-role"></a>ASP.NET Web API 2 Azure 작업자 역할에서 호스트
-====================
+# <a name="host-aspnet-web-api-2-in-an-azure-worker-role"></a>ASP.NET Web API 2 Azure 작업자 역할에서 호스트
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 > 이 자습서에 OWIN을 사용 하 여 Web API 프레임 워크 자체 호스트 하는 Azure 작업자 역할에서 ASP.NET Web API를 호스트 하는 방법을 보여줍니다.
@@ -163,4 +164,4 @@ Azure 활동 로그 창에 배포 진행률이 표시 됩니다. 앱을 배포�
 ## <a name="additional-resources"></a>추가 리소스
 
 - [프로젝트 Katana 개요](../../../aspnet/overview/owin-and-katana/an-overview-of-project-katana.md)
-- [Katana Project on GitHub](https://github.com/aspnet/AspNetKatana)
+- [GitHub에서 Katana 프로젝트](https://github.com/aspnet/AspNetKatana)

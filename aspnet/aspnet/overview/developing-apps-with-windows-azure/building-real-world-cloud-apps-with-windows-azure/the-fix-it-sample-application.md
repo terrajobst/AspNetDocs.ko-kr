@@ -8,15 +8,15 @@ ms.date: 06/12/2014
 ms.assetid: 1bc333c5-f096-4ea7-b170-779accc21c1a
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/the-fix-it-sample-application
 msc.type: authoredcontent
-ms.openlocfilehash: a73fac6107be45455465b506a019bcc9a41b1deb
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: d3a965ccf7ca001d3178819f88836b59f2893bb0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425524"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59406420"
 ---
-<a name="appendix-the-fix-it-sample-application-building-real-world-cloud-apps-with-azure"></a>부록: 수정이 샘플 응용 프로그램 (Azure 사용 하 여 실제 클라우드 앱 빌드)
-====================
+# <a name="appendix-the-fix-it-sample-application-building-real-world-cloud-apps-with-azure"></a>부록: 수정이 샘플 응용 프로그램 (Azure 사용 하 여 실제 클라우드 앱 빌드)
+
 하 여 [Mike Wasson](https://github.com/MikeWasson)하십시오 [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
 
 [이 프로젝트 수정 프로그램을 다운로드](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4)
@@ -25,8 +25,8 @@ ms.locfileid: "58425524"
 
 이 부록에는 실제 세계 클라우드 앱 빌드 Azure 전자책 Fix It 샘플 응용 프로그램을 다운로드할 수 있습니다 하는 방법에 대 한 추가 정보를 제공 하는 다음 섹션을 포함 합니다.
 
-- [알려진된 문제](#knownissues)
-- [모범 사례](#bestpractices)
+- [알려진 문제](#knownissues)
+- [최선의 방법](#bestpractices)
 - [로컬 컴퓨터에서 Visual Studio에서 앱을 실행 하는 방법](#run-in-vs)
 - [Windows PowerShell 스크립트를 사용 하 여 Azure App Service Web Apps에 기본 앱을 배포 하는 방법](#deploybase)
 - [Windows PowerShell 스크립트 문제 해결](#troubleshooting)

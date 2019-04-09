@@ -8,15 +8,15 @@ ms.date: 10/05/2011
 ms.assetid: 76242ce9-e611-41d2-95e8-dc5f406d4bfc
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit
 msc.type: chapter
-ms.openlocfilehash: ad68d8f074bc3c453e991abf7f8d393fbe9740ba
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 795283c33d63272b29b91fd7037c3463bc71abad
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57020310"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59410749"
 ---
-<a name="older-versions---ajax-control-toolkit"></a>이전 버전 - Ajax 컨트롤 도구 키트
-====================
+# <a name="older-versions---ajax-control-toolkit"></a>이전 버전 - Ajax 컨트롤 도구 키트
+
 > Ajax Control Toolkit를 사용 하 여 시작 하는 방법 및 가장 인기 있는 컨트롤의 일부를 사용 하는 방법. DevExpress 무료 및 오픈 소스 Ajax Control Toolkit 유지 관리 합니다.
 > 
 > 
@@ -26,10 +26,10 @@ ms.locfileid: "57020310"
 - [시작](getting-started/index.md)
 
     - [AJAX 컨트롤 도구 키트 시작(C#)](getting-started/get-started-with-the-ajax-control-toolkit-cs.md)
-    - [Using AJAX 컨트롤 도구 키트 컨트롤 및 컨트롤 Extenders 사용(C#)](getting-started/using-ajax-control-toolkit-controls-and-control-extenders-cs.md)
+    - [Using AJAX 컨트롤 도구 키트 컨트롤 및 컨트롤 Extender 사용(C#)](getting-started/using-ajax-control-toolkit-controls-and-control-extenders-cs.md)
     - [사용자 지정 AJAX 컨트롤 도구 키트 컨트롤 Extender 만들기(C#)](getting-started/creating-a-custom-ajax-control-toolkit-control-extender-cs.md)
     - [AJAX 컨트롤 도구 키트 시작(VB)](getting-started/get-started-with-the-ajax-control-toolkit-vb.md)
-    - [Using AJAX 컨트롤 도구 키트 컨트롤 및 컨트롤 Extenders 사용(VB)](getting-started/using-ajax-control-toolkit-controls-and-control-extenders-vb.md)
+    - [Using AJAX 컨트롤 도구 키트 컨트롤 및 컨트롤 Extender 사용(VB)](getting-started/using-ajax-control-toolkit-controls-and-control-extenders-vb.md)
     - [사용자 지정 AJAX 컨트롤 도구 키트 컨트롤 Extender 만들기(VB)](getting-started/creating-a-custom-ajax-control-toolkit-control-extender-vb.md)
 - [Accordion](accordion/index.md)
 
@@ -81,8 +81,8 @@ ms.locfileid: "57020310"
     - [JavaScript에서 패널 축소 및 확장(VB)](collapsiblepanel/collapsing-and-expanding-a-panel-from-javascript-vb.md)
 - [ColorPicker](colorpicker/index.md)
 
-    - [ColorPicker Control Extender(C#)](colorpicker/using-the-colorpicker-control-extender-cs.md)
-    - [ColorPicker Control Extender(VB)](colorpicker/using-the-colorpicker-control-extender-vb.md)
+    - [ColorPicker 컨트롤 Extender(C#)](colorpicker/using-the-colorpicker-control-extender-cs.md)
+    - [ColorPicker 컨트롤 Extender(VB)](colorpicker/using-the-colorpicker-control-extender-vb.md)
 - [ComboBox](combobox/index.md)
 
     - [ComboBox 컨트롤(C#)](combobox/how-do-i-use-the-combobox-control-cs.md)

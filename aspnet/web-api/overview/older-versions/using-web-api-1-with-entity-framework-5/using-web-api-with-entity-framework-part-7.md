@@ -8,15 +8,15 @@ ms.date: 07/04/2012
 ms.assetid: eb32a17b-626c-4373-9a7d-3387992f3c04
 msc.legacyurl: /web-api/overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-7
 msc.type: authoredcontent
-ms.openlocfilehash: 91a6496e2640668c58ec0493d47d909e2de67367
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 028631f8855e4d94bebb0e965de75c4025e22859
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58421352"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409267"
 ---
-<a name="part-7-creating-the-main-page"></a>7부: 기본 페이지 만들기
-====================
+# <a name="part-7-creating-the-main-page"></a>7부: 기본 페이지 만들기
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 [완료 된 프로젝트 다운로드](http://code.msdn.microsoft.com/ASP-NET-Web-API-with-afa30545)
@@ -83,7 +83,7 @@ ms.locfileid: "58421352"
 
 "순서에 추가" 단추 호출 `addItemToCart` 에 `ProductViewModel` 제품에 대 한 인스턴스. 이 Knockout.js의 뛰어난 기능을 보여 줍니다. 다른 보기 모델에 포함 되어 있으면 보기-모델 내부 모델 바인딩을 적용할 수 있습니다. 이 예제에서는 내에서 바인딩에 합니다 `foreach` 각각에 적용 되는 `ProductViewModel` 인스턴스. 이 방법은 단일 보기-모델에 배치 하는 모든 기능 보다 훨씬 더 명확 합니다.
 
-**Cart**
+**카트**
 
 카트 바인딩을 다음과 같습니다.
 
@@ -91,7 +91,7 @@ ms.locfileid: "58421352"
 
 이 카트 배열을 반복 하 고 이름, 가격 및 수량을 표시 합니다. 연결 "제거" 및 "주문 작성" 단추를 뷰 모델 함수에 바인딩되어 있는지 note 합니다.
 
-**주문**
+**Orders**
 
 주문 목록에 대 한 바인딩을 다음과 같습니다.
 

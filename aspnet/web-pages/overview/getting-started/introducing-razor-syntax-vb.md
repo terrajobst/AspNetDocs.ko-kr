@@ -8,15 +8,15 @@ ms.date: 02/07/2014
 ms.assetid: 5da59646-e973-41cd-88a9-c6b2c0594027
 msc.legacyurl: /web-pages/overview/getting-started/introducing-razor-syntax-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 17a3a4925766b74446955a8e3a6fddbf9d29a721
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: e6b63afb9492e810e19999c7c7ffe074ad510bda
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061910"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59406771"
 ---
-<a name="introduction-to-aspnet-web-programming-using-the-razor-syntax-visual-basic"></a>Razor 구문 (Visual Basic)를 사용 하 여 ASP.NET 웹 프로그래밍 소개
-====================
+# <a name="introduction-to-aspnet-web-programming-using-the-razor-syntax-visual-basic"></a>Razor 구문 (Visual Basic)를 사용 하 여 ASP.NET 웹 프로그래밍 소개
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 문서에서는 프로그래밍 개요 ASP.NET 웹 페이지 Razor 구문 및 Visual Basic을 사용 하 여 합니다. ASP.NET은 웹 서버에서 동적 웹 페이지를 실행 하기 위한 Microsoft의 기술입니다.
@@ -179,7 +179,7 @@ Visual Basic 언어는 대/소문자 구분 아닙니다. 프로그래밍 키워
 
 이전 기본 예제 ASP.NET 웹 페이지를 만드는 방법 및 서버 코드는 HTML 태그를 추가 하는 방법을 살펴보았습니다. 여기 Visual Basic을 사용 하 여 Razor 구문을 사용 하 여 ASP.NET 서버 코드를 작성 하는 기본적인 알아봅니다 &#8212; , 프로그래밍 언어 규칙입니다.
 
-(특히 경우 C, c + +, C#, Visual Basic 또는 JavaScript를 사용한) 프로그래밍에 익숙한 경우 어떤 매기면 많은 익숙할 것입니다. 기능을 살펴보고 WebMatrix 코드가 태그에 추가 하는 방법을 익히는 필요할 것 *.vbhtml* 파일입니다.
+프로그래밍 경험이 있는 경우 (C를 사용한 경우에 특히 C++, C#, Visual Basic 또는 JavaScript)를 읽는 여기의 대부분에 게 익숙할 것입니다. 기능을 살펴보고 WebMatrix 코드가 태그에 추가 하는 방법을 익히는 필요할 것 *.vbhtml* 파일입니다.
 
 ### <a id="BM_CombiningTextMarkupAndCode"></a>  텍스트, 태그 및 코드 블록의 코드를 결합합니다.
 
@@ -284,7 +284,9 @@ Razor 구문 주석은 코드 블록 내에서 사용 하거나 작은따옴표�
         <strong>Example</strong>
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsInt(), IsInt()`
@@ -296,7 +298,9 @@ Razor 구문 주석은 코드 블록 내에서 사용 하거나 작은따옴표�
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample23.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsBool(), IsBool()`
@@ -308,7 +312,9 @@ Razor 구문 주석은 코드 블록 내에서 사용 하거나 작은따옴표�
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample24.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsFloat(), IsFloat()`
@@ -320,7 +326,9 @@ Razor 구문 주석은 코드 블록 내에서 사용 하거나 작은따옴표�
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample25.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsDecimal(), IsDecimal()`
@@ -332,7 +340,9 @@ Razor 구문 주석은 코드 블록 내에서 사용 하거나 작은따옴표�
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample26.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsDateTime(), IsDateTime()`
@@ -344,7 +354,9 @@ Razor 구문 주석은 코드 블록 내에서 사용 하거나 작은따옴표�
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample27.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `ToString()`
@@ -374,7 +386,9 @@ Razor 구문 주석은 코드 블록 내에서 사용 하거나 작은따옴표�
         <strong>Examples</strong>
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `+ - * /`
@@ -386,7 +400,9 @@ Razor 구문 주석은 코드 블록 내에서 사용 하거나 작은따옴표�
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample29.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `=`
@@ -398,7 +414,9 @@ Razor 구문 주석은 코드 블록 내에서 사용 하거나 작은따옴표�
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample30.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `<>`
@@ -410,7 +428,9 @@ Razor 구문 주석은 코드 블록 내에서 사용 하거나 작은따옴표�
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample31.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `< > <= >=`
@@ -422,7 +442,9 @@ Razor 구문 주석은 코드 블록 내에서 사용 하거나 작은따옴표�
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample32.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `&`
@@ -434,7 +456,9 @@ Razor 구문 주석은 코드 블록 내에서 사용 하거나 작은따옴표�
         [!code-vbhtml[Main](introducing-razor-syntax-vb/samples/sample33.vbhtml)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `+= -=`
@@ -446,7 +470,9 @@ Razor 구문 주석은 코드 블록 내에서 사용 하거나 작은따옴표�
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample34.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `.`
@@ -458,7 +484,9 @@ Razor 구문 주석은 코드 블록 내에서 사용 하거나 작은따옴표�
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample35.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `()`
@@ -470,7 +498,9 @@ Razor 구문 주석은 코드 블록 내에서 사용 하거나 작은따옴표�
         [!code-vbhtml[Main](introducing-razor-syntax-vb/samples/sample36.vbhtml)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `Not`
@@ -482,7 +512,9 @@ Razor 구문 주석은 코드 블록 내에서 사용 하거나 작은따옴표�
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample37.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AndAlso OrElse`
@@ -713,4 +745,4 @@ ASP.NET에서 가장 기본적인 개체는 페이지입니다. 조건에 맞는
 ### <a name="reference-documentation"></a>참조 설명서
 
 - [ASP.NET](https://msdn.microsoft.com/library/ee532866.aspx)
-- [Visual Basic 언어](https://msdn.microsoft.com/library/2x7h1hfk.aspx)
+- [Visual Basic Language](https://msdn.microsoft.com/library/2x7h1hfk.aspx)

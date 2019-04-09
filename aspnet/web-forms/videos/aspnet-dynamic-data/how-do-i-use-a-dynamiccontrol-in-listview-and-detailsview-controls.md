@@ -8,15 +8,15 @@ ms.date: 05/08/2008
 ms.assetid: 816175a2-47b1-49ba-b346-cfb1ee33096a
 msc.legacyurl: /web-forms/videos/aspnet-dynamic-data/how-do-i-use-a-dynamiccontrol-in-listview-and-detailsview-controls
 msc.type: video
-ms.openlocfilehash: ce587fd1cb73178c75d291a6cb7a7e3f24d29390
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 4916885afff0900d85f7ef58b84abc50144aa29e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57040220"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59406329"
 ---
-<a name="how-do-i-use-a-dynamiccontrol-in-listview-and-detailsview-controls"></a>ListView 및 DetailsView 컨트롤에서 DynamicControl 사용
-====================
+# <a name="how-do-i-use-a-dynamiccontrol-in-listview-and-detailsview-controls"></a>ListView 및 DetailsView 컨트롤에서 DynamicControl 사용
+
 [Scott Hanselman](https://github.com/shanselman)
 
 이 비디오는 동적 데이터를 사용 하 여 한 번 및 없이 한 번을 두 번 작성 된 동일한 응용 프로그램을 비교 합니다. 추가한 진행에서 **DynamicControl** 개체를 **ListView** 하 고 **DetailsView** 컨트롤입니다.

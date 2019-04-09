@@ -8,20 +8,20 @@ ms.date: 10/06/2010
 ms.assetid: f44c166e-7e91-48a0-a6f8-d9285f3594e5
 msc.legacyurl: /whitepapers/mvc3-release-notes
 msc.type: content
-ms.openlocfilehash: 7342b5f4a7e2327f3f3850941510a6e46ec30842
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 36bc314c6709c34863d86158419257be99f4084f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57063870"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59407109"
 ---
-<a name="aspnet-mvc-3"></a>ASP.NET MVC 3
-====================
+# <a name="aspnet-mvc-3"></a>ASP.NET MVC 3
+
 - [개요](#overview)
 - [설치 참고 사항](#installation-notes)
 - [소프트웨어 요구 사항](#software-requirements)
-- [문서](#documentation)
-- [지원](#support)
+- [설명서](#documentation)
+- [Support(지원)](#support)
 - [ASP.NET MVC 2 프로젝트를 업그레이드 하는 ASP.NET mvc 3 도구 업데이트](#upgrading)
 - [ASP.NET MVC 3 도구 업데이트 (2011 년 4 월 12 일)](#tu-changes)
 
@@ -39,7 +39,7 @@ ms.locfileid: "57063870"
     - [수정 됨: 반대로 되 고 그 안에 공백 결과 포함 하는 Razor 식의 일부를 붙여 넣는 방법](#RTM-3)
     - [수정 됨: 구문 색 지정 및 IntelliSense 사용 하지 않도록 설정 편집기에서 열려 있는 Razor 파일의 이름 바꾸기](#RTM-4)
     - [알려진 문제](#RTM-KI)
-    - [주요 변경 내용](#RTM-BC)
+    - [주요 변경 사항](#RTM-BC)
 - [ASP.NET MVC 3 릴리스 후보 2 (2010 년 12 월 10 일)](#_Toc2)
 
     - [프로젝트 템플릿 1.4.4 jQuery, jQuery 유효성 검사 1.7 및 jQuery UI 1.8.6 1.8.6y UI 포함 하도록 변경](#_Toc2_1)
@@ -55,7 +55,7 @@ ms.locfileid: "57063870"
     - [엔진별 파일 이름을 지원 하도록 뷰 엔진에 추가 "FileExtensions" 속성](#_Toc2_10)
     - ["For" 특성에 대 한 올바른 값을 내보낼 고정된 "LabelFor" 도우미](#_Toc2_11)
     - [명시적 값 우선 순위 모델 바인딩 중에 고정된 "RenderAction" 메서드](#_Toc2_12)
-    - [주요 변경 내용](#_Toc2_BC)
+    - [주요 변경 사항](#_Toc2_BC)
     - [알려진 문제](#_Toc2_KI)
 - [ASP.NET MVC 3 Release Candidate (2010 년 11 월 9 일)](#TOC_ASP_NET_3_RC)
 
@@ -68,7 +68,7 @@ ms.locfileid: "57063870"
     - [자식 작업 출력 캐싱](#_Toc276711791)
     - ["뷰 추가" 대화 상자 개선 사항](#_Toc276711792)
     - [Granular Request Validation](#_Toc276711793)
-    - [주요 변경 내용](#_Toc276711794)
+    - [주요 변경 사항](#_Toc276711794)
     - [알려진 문제](#_Toc276711795)
 - [ASP 합니다. MVC 3 베타 정보 (2010 년 10 월 6 일)](#TOC_ASP_NET_3_Beta)
 
@@ -86,9 +86,9 @@ ms.locfileid: "57063870"
     - [ValidateInputAttribute 보다 세부적으로 제어](#0.1__Toc274034226)
     - [도우미 변환할 밑줄 하이픈 익명 개체를 사용 하 여 지정 된 HTML 특성 이름](#0.1__Toc274034227)
     - [버그 수정](#0.1__Toc274034228)
-    - [주요 변경 내용](#0.1__Toc274034229)
+    - [주요 변경 사항](#0.1__Toc274034229)
     - [알려진 문제](#0.1__Toc274034230)
-- [고 지 사항](#0.1__Toc274034231)
+- [고지 사항](#0.1__Toc274034231)
 
 <a id="overview"></a>
 ## <a name="overview"></a>개요
@@ -435,7 +435,7 @@ ASP.NET MVC 3 용 프로젝트 템플릿 이제 최신 버전을 포함 jQuery, 
 <a id="_Toc2_10"></a>
 ### <a name="fixed-model-declaration-to-not-add-whitespace-to-the-document"></a>고정 @model 문서에 공백을 추가 하지 않는 선언
 
-이전 릴리스에서 <em>@model</em> 뷰의 맨 위에 있는 선언 렌더링된 된 HTML 출력에 빈 줄을 추가 합니다. 이 선언에 공백이 발생 하지 않도록 있도록 수정 되었습니다.
+이전 릴리스에서 *@model* 뷰의 맨 위에 있는 선언 렌더링된 된 HTML 출력에 빈 줄을 추가 합니다. 이 선언에 공백이 발생 하지 않도록 있도록 수정 되었습니다.
 
 <a id="_Toc2_11"></a>
 ### <a name="added-fileextensions-property-to-view-engines-to-support-engine-specific-file-names"></a>엔진별 파일 이름을 지원 하도록 뷰 엔진에 추가 "FileExtensions" 속성
@@ -462,7 +462,7 @@ ASP.NET MVC 3 용 프로젝트 템플릿 이제 최신 버전을 포함 jQuery, 
 - ASP.NET MVC의 이전 버전에서는 작업 필터는 몇 가지 경우에서를 제외한 요청당 생성 되었습니다. 이 동작은 동작을 보장된 하지만 구현 세부 정보는 단순히 되지 및 필터에 대 한 계약 상태 비저장으로 간주 하는 것 이었습니다. ASP.NET MVC 3의 필터는 더 적극적으로 캐시 됩니다. 따라서 잘못 인스턴스 상태를 저장 하는 모든 사용자 지정 작업 필터는 손상 될 수 있습니다.
 - 예외 필터에 대 한 실행 순서는 예외 필터에 대 한 변경 되었습니다 *순서* 값입니다. 예외 필터는 동일한 컨트롤러에서 ASP.NET MVC 2 및 이전 버전에서는 *순서* 작업 메서드의 예외 필터 전에 실행 된 동작 메서드가 있는 값입니다. 이 일반적으로 경우에 예외 필터가 적용 된 지정 된 *순서* 값입니다. ASP.NET MVC 3에서이 순서가 반대로 변경 되었습니다 가장 구체적인 예외 처리기를 먼저 실행 되도록 합니다. 이전 버전에서와 같이 하는 경우는 *순서* 속성을 명시적으로 지정 하면 필터는 지정된 된 순서 대로 실행 됩니다.
 - 라는 새 속성을 *FileExtensions* 에 추가 된 합니다 *VirtualPathProviderViewEngine* 기본 클래스입니다. ASP.NET 조회 뷰 경로 (이름)가 아니라, 보기만이 새 속성으로 지정 된 목록에 포함 된 파일 확장명을 가진 것으로 간주 됩니다. 이것이 Web Form 보기에 대 한 사용자 지정 파일 확장명을 사용 하도록 설정 하려면 사용자 지정 빌드 공급자를 등록 하 고 이름 대신 전체 경로 사용 하 여 해당 뷰를 참조 하는 공급자 응용 프로그램의 주요 변경 내용입니다. 값을 수정 하려면이 문제를 해결 합니다 *FileExtensions* 속성을 사용자 지정 파일 확장명을 포함 합니다.
-- 직접 구현 하는 사용자 지정 컨트롤러 팩터리 구현을 합니다 <em>IControllerFactory</em> 인터페이스의 새 구현을 제공 해야 <em>GetControllerSessionBehavior</em>  <em>이 릴리스에서 인터페이스에 추가 된 메서드</em>합니다. 일반적으로 것이 좋습니다 수행 하지이 인터페이스를 직접 구현 하는 대신에서 클래스를 파생 <em>DefaultControllerFactory</em>합니다.
+- 직접 구현 하는 사용자 지정 컨트롤러 팩터리 구현을 합니다 *IControllerFactory* 인터페이스의 새 구현을 제공 해야 *GetControllerSessionBehavior* 했던 메서드 이 릴리스에서 인터페이스에 추가 합니다. 일반적으로 것이 좋습니다 수행 하지이 인터페이스를 직접 구현 하는 대신에서 클래스를 파생 *DefaultControllerFactory*합니다.
 
 <a id="_Toc2_KI"></a>
 ## <a name="known-issues"></a>알려진 문제

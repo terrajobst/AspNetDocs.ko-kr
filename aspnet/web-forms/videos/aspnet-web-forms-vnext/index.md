@@ -8,22 +8,22 @@ ms.date: 10/05/2011
 ms.assetid: 98c78dad-22bf-45cd-807e-c2f3f59011b9
 msc.legacyurl: /web-forms/videos/aspnet-web-forms-vnext
 msc.type: chapter
-ms.openlocfilehash: acf0e31e487733a99b1c7b02a1a773c61ffc12b9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3b3efb3d5356d6009b86b93405de2cd8d8cddd43
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57024070"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59404236"
 ---
-<a name="aspnet-45"></a>ASP.NET 4.5
-====================
+# <a name="aspnet-45"></a>ASP.NET 4.5
+
 > ASP.NET 4.5에서 도입 된 새로운 Web Forms 기능에 대 한
 
 
 - [강력한 형식의 데이터 컨트롤](aspnet-vnext-videos-strongly-typed-data-controls.md)
-- [모델 바인딩 파트 1 - 데이터 선택](aspnet-vnext-videos-model-binding-part-1-selecting-data.md)
-- [모델 바인딩 파트 2 - 필터링](aspnet-vnext-videos-model-binding-part-2-filtering.md)
-- [모델 바인딩 파트 3 - 업데이트](aspnet-vnext-videos-model-binding-part-3-updating.md)
+- [모델 바인딩 1부 - 데이터 선택](aspnet-vnext-videos-model-binding-part-1-selecting-data.md)
+- [모델 바인딩 2부 - 필터링](aspnet-vnext-videos-model-binding-part-2-filtering.md)
+- [모델 바인딩 3부 - 업데이트](aspnet-vnext-videos-model-binding-part-3-updating.md)
 - [ASP.NET 4.5 Web Forms 모델 바인딩](aspnet-45-web-forms-model-binding.md)
 - [ASP.NET 4.5 Web Forms 강력한 형식의 데이터 컨트롤](aspnet-45-web-forms-strong-typed-data-controls.md)
 - [묶음 및 축소](aspnet-vnext-videos-bundling-and-minification.md)

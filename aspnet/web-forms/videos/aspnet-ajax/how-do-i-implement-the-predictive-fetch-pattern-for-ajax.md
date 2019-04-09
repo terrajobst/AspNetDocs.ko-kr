@@ -8,15 +8,15 @@ ms.date: 02/13/2007
 ms.assetid: 4ecca278-0cd6-4198-8382-802359b30120
 msc.legacyurl: /web-forms/videos/aspnet-ajax/how-do-i-implement-the-predictive-fetch-pattern-for-ajax
 msc.type: video
-ms.openlocfilehash: 9403f2ca18660f257d7d624301cd66a7234ba7a2
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d9bb8452b18130fa70c7922a92559db0ae007758
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029260"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59407005"
 ---
-<a name="how-do-i-implement-the-predictive-fetch-pattern-for-ajax"></a>[어떻게 할까요?] AJAX에 대 한 예측 페치 패턴을 구현
-====================
+# <a name="how-do-i-implement-the-predictive-fetch-pattern-for-ajax"></a>[어떻게 할까요?] AJAX에 대 한 예측 페치 패턴을 구현
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 여기서 AJAX 엔진은 사용자의 상호 작용의 현재 상태를 사용 하 여 콘텐츠의 집합 다음 필요할지 예측, AJAX에 대 한 예측 페치 패턴의 구현을 보여 줍니다 하 고 서버에서 해당 데이터를 사전 인출 합니다. 반응이 빠른 사용자 환경을 제공합니다.

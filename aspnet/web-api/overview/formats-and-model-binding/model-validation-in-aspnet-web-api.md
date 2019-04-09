@@ -1,25 +1,26 @@
 ---
 uid: web-api/overview/formats-and-model-binding/model-validation-in-aspnet-web-api
-title: ASP.NET Web API의에서 모델 유효성 검사 | Microsoft Docs
+title: 모델 유효성 검사에서 ASP.NET Web API-ASP.NET 4.x
 author: MikeWasson
-description: ''
+description: ASP.NET에 대 한 ASP.NET Web API의 모델 유효성 검사 개요 4.x 합니다.
 ms.author: riande
 ms.date: 07/20/2012
+ms.custom: seoapril2019
 ms.assetid: 7d061207-22b8-4883-bafa-e89b1e7749ca
 msc.legacyurl: /web-api/overview/formats-and-model-binding/model-validation-in-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 611a6466e160387592df678b3b8556625ff8e234
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d4e792f8cc2f79c2ab82c5a74fd50f49475fac4f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033410"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59404574"
 ---
-<a name="model-validation-in-aspnet-web-api"></a>ASP.NET Web API의에서 모델 유효성 검사
-====================
+# <a name="model-validation-in-aspnet-web-api"></a>ASP.NET Web API의에서 모델 유효성 검사
+
 [Mike Wasson](https://github.com/MikeWasson)
 
-클라이언트가 웹 API에 데이터를 전송, 처리를 수행 하기 전에 데이터를 유효성 검사 하려는 경우가 많습니다. 이 문서에서는 모델에 주석 달기, 데이터 유효성 검사에 대 한 주석을 사용 하 여 web API에에서 대 한 유효성 검사 오류를 처리 하는 방법을 보여 줍니다.
+이 문서에서는 모델에 주석 달기, 데이터 유효성 검사에 대 한 주석을 사용 하 여 web API에에서 대 한 유효성 검사 오류를 처리 하는 방법을 보여 줍니다. 클라이언트가 웹 API에 데이터를 전송, 처리를 수행 하기 전에 데이터를 유효성 검사 하려는 경우가 많습니다. 
 
 ## <a name="data-annotations"></a>데이터 주석
 

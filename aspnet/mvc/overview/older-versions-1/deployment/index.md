@@ -8,15 +8,15 @@ ms.date: 09/28/2011
 ms.assetid: 1e9204db-664c-4376-aa50-1fb9e245a4d9
 msc.legacyurl: /mvc/overview/older-versions-1/deployment
 msc.type: chapter
-ms.openlocfilehash: f6ad66f93e0bc4efbd85c2d0b25ff70eef9deee0
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f14784a1b5ae54873b9777dcdadd9dc32689ec5a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57022510"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59408435"
 ---
-<a name="deployment"></a>배포
-====================
+# <a name="deployment"></a>배포
+
 > 이 자습서에서는 ASP.NET MVC 및 다른 버전의 IIS 사용 하 여 라우팅을 사용 하는 방법을 알아봅니다.
 
 

@@ -8,15 +8,15 @@ ms.date: 06/10/2014
 ms.assetid: 3751f5e7-59db-4be0-a290-50abc24e5c84
 msc.legacyurl: /signalr/overview/performance/signalr-performance
 msc.type: authoredcontent
-ms.openlocfilehash: 3326c2e600854fc7a4435d96c45b04a6188d3937
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b0da3032e22123f415bf9865e264832739c29f61
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046740"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409020"
 ---
-<a name="signalr-performance"></a>SignalR 성능
-====================
+# <a name="signalr-performance"></a>SignalR 성능
+
 [Patrick Fletcher](https://github.com/pfletcher)
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
@@ -206,7 +206,7 @@ SignalR 성능 카운터를 제거 하려면 다음 매개 변수를 사용 하 
 - **오류: 허브 호출 합계**
 - **오류: 초당 허브 호출**
 - **오류: 전송 합계**
-- **오류: Transport/Sec**
+- **오류: 전송 수/초**
 
 <a id="scaleout_metrics"></a>
 

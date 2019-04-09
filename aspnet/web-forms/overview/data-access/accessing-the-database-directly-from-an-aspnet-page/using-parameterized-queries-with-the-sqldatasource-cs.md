@@ -8,15 +8,15 @@ ms.date: 02/20/2007
 ms.assetid: 9128aaac-afe2-449f-84b2-bb1d035083c4
 msc.legacyurl: /web-forms/overview/data-access/accessing-the-database-directly-from-an-aspnet-page/using-parameterized-queries-with-the-sqldatasource-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 654c0ce5520a206e5e8e2fd20bed92ac1075bfe9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7a6401e881fd66ab21b58fd7d86085e0bc228b6a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57035900"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59410853"
 ---
-<a name="using-parameterized-queries-with-the-sqldatasource-c"></a>SqlDataSource와 함께 매개 변수가 있는 쿼리 사용(C#)
-====================
+# <a name="using-parameterized-queries-with-the-sqldatasource-c"></a>SqlDataSource와 함께 매개 변수가 있는 쿼리 사용(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_48_CS.exe) 또는 [PDF 다운로드](using-parameterized-queries-with-the-sqldatasource-cs/_static/datatutorial48cs1.pdf)
@@ -61,7 +61,7 @@ SqlDataSource 컨트롤의 데이터 소스 구성 마법사는 데이터베이�
 SqlDataSource 컨트롤을 사용 하 여 데이터베이스에서 반환할 데이터를 선택할 때 데이터 소스 구성 마법사를 단순히 기존 테이블에서 반환 하거나 (그림 1 참조)을 보려면 열을 선택할 수 있습니다. 자동으로 수행 하는 sql 작성 `SELECT` 문을 데이터베이스로 전달 되는 내용 때 SqlDataSource의 `Select()` 메서드가 실행 됩니다. 이전 자습서에서 했던 것 처럼 드롭 다운 목록에서 Products 테이블을 선택 하 고 확인 합니다 `ProductID`, `ProductName`, 및 `UnitPrice` 열입니다.
 
 
-[![테이블 또는 보기에서 반환할 열을 선택 합니다.](using-parameterized-queries-with-the-sqldatasource-cs/_static/image1.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image1.png)
+[![P반환 테이블 또는 뷰에서 열을 클릭](using-parameterized-queries-with-the-sqldatasource-cs/_static/image1.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image1.png)
 
 **그림 1**: 반환 테이블 또는 뷰에서 열 선택 ([클릭 하 여 큰 이미지 보기](using-parameterized-queries-with-the-sqldatasource-cs/_static/image2.png))
 
@@ -71,7 +71,7 @@ SqlDataSource 컨트롤을 사용 하 여 데이터베이스에서 반환할 데
 예를 들어 let s 해당 결과만 반환 위치는 `UnitPrice` $25.00 보다 작거나 같은 값이 있습니다. 따라서 선택할 `UnitPrice` 열의 드롭다운 목록에서 및 &lt;연산자 드롭다운 목록에서 =. 하드 코드 된 매개 변수 값 (예: $25.00)를 사용 하는 경우 또는 매개 변수 값을 프로그래밍 방식으로 지정할 경우 원본 드롭다운 목록에서 없음를 선택 합니다. 다음으로, 25.00 값 텍스트 상자에 하드 코드 된 매개 변수 값을 입력 하 고 추가 단추를 클릭 하 여 프로세스를 완료 합니다.
 
 
-[![반환 된 결과 제한 합니다 추가 WHERE 절 대화 상자](using-parameterized-queries-with-the-sqldatasource-cs/_static/image2.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image3.png)
+[![L추가 위치 절 대화 상자에서 반환 된 결과 imit](using-parameterized-queries-with-the-sqldatasource-cs/_static/image2.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image3.png)
 
 **그림 2**: 추가에서 반환 된 결과 제한할 `WHERE` 절 대화 상자 ([큰 이미지를 보려면 클릭](using-parameterized-queries-with-the-sqldatasource-cs/_static/image4.png))
 
@@ -93,7 +93,7 @@ SqlDataSource 컨트롤을 사용 하 여 데이터베이스에서 반환할 데
 때 SqlDataSource s `Select()` 메서드가 호출 되는 `UnitPrice` 매개 변수 값 (25.00)에 적용 됩니다는 `@UnitPrice` 의 매개 변수는 `SelectCommand` 데이터베이스로 전송 되기 전에 합니다. 결과 $25.00 작거나에서 반환 된 제품에만 `Products` 테이블입니다. 확인이 페이지에 GridView를 추가,이 데이터 원본에 바인딩하지 한 다음 브라우저를 통해 페이지를 봅니다. 그림 3에서 확인 된 $25.00, 보다 작거나 같은 나열 된 제품만 표시 됩니다.
 
 
-[![이러한 제품 보다 작음 또는 $25.00 같음만 표시 됩니다.](using-parameterized-queries-with-the-sqldatasource-cs/_static/image3.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image5.png)
+[![O있는 해당 제품 보다 작음 또는 $25.00 같음 표시](using-parameterized-queries-with-the-sqldatasource-cs/_static/image3.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image5.png)
 
 **그림 3**: 이러한 제품 보다 작음 또는 $25.00 같음만 표시 됩니다 ([클릭 하 여 큰 이미지 보기](using-parameterized-queries-with-the-sqldatasource-cs/_static/image6.png))
 
@@ -110,7 +110,7 @@ SqlDataSource 컨트롤을 사용 하 여 데이터베이스에서 반환할 데
 쿼리 (직접 또는 쿼리 작성기를 통해)을 입력 한 후 다음을 클릭 합니다.
 
 
-[![매개 변수 값 보다 작은 제품만 반환](using-parameterized-queries-with-the-sqldatasource-cs/_static/image4.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image7.png)
+[![R만 해당 제품 보다 작음 또는 매개 변수 값을 같음 돌아가기 ()](using-parameterized-queries-with-the-sqldatasource-cs/_static/image4.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image7.png)
 
 **그림 4**: 반환만 해당 제품 보다 작음 또는 매개 변수 값을 같음 ([클릭 하 여 큰 이미지 보기](using-parameterized-queries-with-the-sqldatasource-cs/_static/image8.png))
 
@@ -118,7 +118,7 @@ SqlDataSource 컨트롤을 사용 하 여 데이터베이스에서 반환할 데
 쿼리 매개 변수를 포함 하므로 마법사의 다음 화면 매개 변수 값의 원본에 대 한 요청입니다. 매개 변수 원본 드롭다운 목록에서 컨트롤을 선택 하 고 `MaxPrice` (s 텍스트 상자 컨트롤 `ID` 값) ControlID 드롭 다운 목록에서. 사용자가 모든 텍스트를 입력 하지 경우에서 사용 하는 선택적 기본 값을 입력할 수도 있습니다는 `MaxPrice` 텍스트 상자에 붙여넣습니다. 당분간, 기본 값을 입력 하지 마십시오.
 
 
-[![텍스트 속성은 매개 변수 원본으로 사용 MaxPrice TextBox s](using-parameterized-queries-with-the-sqldatasource-cs/_static/image5.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image9.png)
+[![T매개 변수 원본으로 사용 되 그 MaxPrice TextBox의 텍스트 속성](using-parameterized-queries-with-the-sqldatasource-cs/_static/image5.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image9.png)
 
 **그림 5**: 합니다 `MaxPrice` 텍스트 상자 s `Text` 속성은 매개 변수 원본으로 사용 ([클릭 하 여 큰 이미지 보기](using-parameterized-queries-with-the-sqldatasource-cs/_static/image10.png))
 
@@ -133,7 +133,7 @@ SqlDataSource s 내에서 매개 변수 `<SelectParameters>` 섹션은는 `Contr
 브라우저를 통해이 페이지를 보려면 1 분이 걸립니다. 먼저 페이지를 방문 하는 경우 또는 때마다는 `MaxPrice` 텍스트 상자에 GridView에 레코드가 표시 됩니다 값이 없는 합니다.
 
 
-[![표시 되는 경우는 MaxPrice 텍스트 상자에 비어 있는 레코드가 없습니다.](using-parameterized-queries-with-the-sqldatasource-cs/_static/image6.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image11.png)
+[![No 레코드를 표시 하면 the MaxPrice 텍스트 상자가 비어 있는](using-parameterized-queries-with-the-sqldatasource-cs/_static/image6.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image11.png)
 
 **그림 6**: 레코드가 없는 경우에 표시 된 `MaxPrice` 텍스트 상자가 비어 있지 않습니다 ([큰 이미지를 보려면 클릭](using-parameterized-queries-with-the-sqldatasource-cs/_static/image12.png))
 
@@ -143,7 +143,7 @@ SqlDataSource s 내에서 매개 변수 `<SelectParameters>` 섹션은는 `Contr
 5.00 같은 텍스트 상자에 값을 입력 하 고 일치 하는 제품 표시 단추를 클릭 합니다. 포스트백에서 SqlDataSource GridView 해당 매개 변수 원본 중 하나는 변경에 알립니다. 따라서 GridView 제품 작거나 같거나 $5.00를 표시, SqlDataSource에 다시 바인딩합니다.
 
 
-[![제품 보다 작음 또는 $5.00 같음 표시](using-parameterized-queries-with-the-sqldatasource-cs/_static/image7.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image13.png)
+[![P표시 되는 $5.00 작거나 roducts](using-parameterized-queries-with-the-sqldatasource-cs/_static/image7.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image13.png)
 
 **그림 7**: 제품 보다 작음 또는 $5.00 같음 표시 됩니다 ([클릭 하 여 큰 이미지 보기](using-parameterized-queries-with-the-sqldatasource-cs/_static/image14.png))
 
@@ -162,7 +162,7 @@ SqlDataSource s 내에서 매개 변수 `<SelectParameters>` 섹션은는 `Contr
 이 `WHERE` 절에서 반환 *모든* 경우 기록 합니다 `@MaximumPrice` 매개 변수와 같으면 `-1.0`합니다. 매개 변수 값에는 없는 경우 `-1.0`, 제품만입니다 `UnitPrice` 보다 작거나 같음는 `@MaximumPrice` 매개 변수 값이 반환 됩니다. 기본값을 설정 하 여는 `@MaximumPrice` 매개 변수를 `-1.0`, 첫 번째 페이지 로드 시 (또는 때마다를 `MaxPrice` TextBox 비어 있습니다.), `@MaximumPrice` 의 값이 포함 됩니다 `-1.0` 모든 제품이 표시 됩니다.
 
 
-[![이제 모든 제품이 표시 때 the MaxPrice 텍스트 상자가 비어 있는](using-parameterized-queries-with-the-sqldatasource-cs/_static/image8.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image15.png)
+[![Now 모든 제품은 표시 하면 the MaxPrice 텍스트 상자가 비어 있는](using-parameterized-queries-with-the-sqldatasource-cs/_static/image8.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image15.png)
 
 **그림 8**: 모든 제품은 표시 때 이제는 `MaxPrice` 텍스트 상자가 비어 있지 않습니다 ([큰 이미지를 보려면 클릭](using-parameterized-queries-with-the-sqldatasource-cs/_static/image16.png))
 
@@ -185,7 +185,7 @@ S let 라는 Northwind 데이터베이스의 새 저장된 프로시저 만들�
 저장된 프로시저를 저장 하려면 저장 아이콘 (또는 Ctrl + S)를 클릭 합니다. Stored Procedures 폴더에서 마우스 오른쪽 단추로 클릭 하 고 실행을 선택 하 여 저장된 프로시저를 테스트할 수 있습니다. 묻는 메시지가 나타납니다 s 저장된 프로시저 매개 변수에 대 한 (`@CategoryID`, 이런에서), 후 출력 창에는 결과 표시 되어야 합니다.
 
 
-[![GetProductsByCategory 저장 프로시저를 사용 하 여 실행 하는 경우는 @CategoryID 1](using-parameterized-queries-with-the-sqldatasource-cs/_static/image9.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image17.png)
+[![T그 GetProductsByCategory 저장 프로시저 실행 한 경우는 @CategoryID 1](using-parameterized-queries-with-the-sqldatasource-cs/_static/image9.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image17.png)
 
 **그림 9**: 합니다 `GetProductsByCategory` 사용 하 여 실행 하는 경우 저장 프로시저를 `@CategoryID` 1 ([전체 크기 이미지를 보려면 클릭](using-parameterized-queries-with-the-sqldatasource-cs/_static/image18.png))
 
@@ -193,7 +193,7 @@ S let 라는 Northwind 데이터베이스의 새 저장된 프로시저 만들�
 이 저장된 프로시저를 사용 하 여 음료 범주를 GridView에 모든 제품을 전시 하기 s 수 있습니다. 페이지에 새 GridView를 추가 하 고 명명 된 새 SqlDataSource에 바인딩할 `BeverageProductsDataSource`합니다. 사용자 지정 SQL 문 또는 저장된 프로시저 화면 지정 계속, 저장 프로시저 라디오 단추를 선택 하 고, 선택는 `GetProductsByCategory` 드롭 다운 목록에서 프로시저를 저장 합니다.
 
 
-[![GetProductsByCategory 선택 드롭다운 목록에서 프로시저를 저장 합니다.](using-parameterized-queries-with-the-sqldatasource-cs/_static/image10.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image19.png)
+[![S드롭다운 목록에서 GetProductsByCategory 저장 프로시저 선택](using-parameterized-queries-with-the-sqldatasource-cs/_static/image10.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image19.png)
 
 **그림 10**: 선택 된 `GetProductsByCategory` 드롭 다운 목록에서 저장 프로시저 ([큰 이미지를 보려면 클릭](using-parameterized-queries-with-the-sqldatasource-cs/_static/image20.png))
 
@@ -201,7 +201,7 @@ S let 라는 Northwind 데이터베이스의 새 저장된 프로시저 만들�
 저장된 프로시저 입력된 매개 변수를 허용 하므로 (`@CategoryID`),이 매개 변수의 값에 대 한 원본을 지정 하도록 요청 다음을 클릭 합니다. 음료 `CategoryID` 1 이므로 매개 변수 원본 드롭다운 목록에 없음 두고 DefaultValue 텍스트 상자에 1을 입력 합니다.
 
 
-[![하드 코드 된 값이 1 사용 하 여 음료 범주에서 제품을 반환 하려면](using-parameterized-queries-with-the-sqldatasource-cs/_static/image11.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image21.png)
+[![Use 음료 범주에서 제품을 반환할 Hard-Coded 값 1](using-parameterized-queries-with-the-sqldatasource-cs/_static/image11.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image21.png)
 
 **그림 11**: Hard-Coded 값이 1 음료 범주에서 제품을 반환 하는 데 ([클릭 하 여 큰 이미지 보기](using-parameterized-queries-with-the-sqldatasource-cs/_static/image22.png))
 
@@ -214,7 +214,7 @@ S let 라는 Northwind 데이터베이스의 새 저장된 프로시저 만들�
 브라우저에서 페이지를 테스트 합니다. 하지만 음료 범주에 속하는 제품만 표시 됩니다 *모든* 이후 제품의 필드가 표시 됩니다는 `GetProductsByCategory` 에서 열의 모든 저장된 프로시저 반환을 `Products` 테이블입니다. 수 없습니다, 그리고 물론 제한 하거나 GridView가의 열 편집 대화 상자에서 GridView에 표시 되는 필드를 사용자 지정 합니다.
 
 
-[![음료 모두 표시](using-parameterized-queries-with-the-sqldatasource-cs/_static/image12.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image23.png)
+[![A음료 모두 표시 됩니다](using-parameterized-queries-with-the-sqldatasource-cs/_static/image12.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image23.png)
 
 **그림 12**: 음료 모두 표시 됩니다 ([클릭 하 여 큰 이미지 보기](using-parameterized-queries-with-the-sqldatasource-cs/_static/image24.png))
 
@@ -246,7 +246,7 @@ S 범주를 표시할 `CategoryName` 값, 페이지 레이블 웹 컨트롤을 �
 `randomCategoryView[0]` 첫 번째 개체가 반환 `DataRowView` DataView에 있습니다. `randomCategoryView[0]["CategoryName"]` 값을 반환 합니다 `CategoryName` 이 첫 번째 행의 열입니다. DataView는 느슨한 형 note 합니다. 특정 열 값을 참조 하는 열 이름 (이 경우 CategoryName) 문자열로 전달 해야 합니다. 그림 13에 표시 되는 메시지를 표시 합니다 `CategoryNameLabel` 페이지를 보고 하는 경우. 표시 되는 실제 범주 이름에서 임의로 선택은 물론,는 `RandomCategoryDataSource` 포스트백 등 페이지를 방문할 때마다에서 SqlDataSource 합니다.
 
 
-[![이름은 임의로 선택한 범주 s](using-parameterized-queries-with-the-sqldatasource-cs/_static/image13.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image25.png)
+[![T그 범주를 임의로 선택의 이름이 표시 됩니다](using-parameterized-queries-with-the-sqldatasource-cs/_static/image13.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image25.png)
 
 **그림 13**: 이름은 임의로 선택한 범주 s ([클릭 하 여 큰 이미지 보기](using-parameterized-queries-with-the-sqldatasource-cs/_static/image26.png))
 
@@ -270,7 +270,7 @@ SqlDataSource와 함께 무작위로 선택할 범주를 범주의 제품을 나
 페이지에 GridView를 추가 하 여 시작 하 고 명명 된 새 SqlDataSource에 바인딩할 `ProductsByCategoryDataSource`합니다. 3 단계에서에서 수행한 마찬가지로, SqlDataSource 호출 하도록 구성 된 `GetProductsByCategory` 저장 프로시저입니다. None, 매개 변수 원본 드롭다운 목록에서 설정 된 채로 하지만 프로그래밍 방식으로 기본 값이 설정으로 기본 값을 입력 하지 않으면.
 
 
-[![매개 변수 원본 또는 기본 값을 지정 하지 않으면](using-parameterized-queries-with-the-sqldatasource-cs/_static/image14.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image27.png)
+[![Do 매개 변수 원본 또는 기본 값을 지정 하지](using-parameterized-queries-with-the-sqldatasource-cs/_static/image14.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image27.png)
 
 **그림 14**: 매개 변수 원본 또는 기본 값을 지정 하지 않습니다 ([클릭 하 여 큰 이미지 보기](using-parameterized-queries-with-the-sqldatasource-cs/_static/image28.png))
 
@@ -288,7 +288,7 @@ SqlDataSource 마법사를 완료 한 후 결과 선언적 태그는 다음과 �
 이 또한을 사용 하 여 페이지를 임의로 선택 된 범주와 관련 된 제품이 표시 되는 GridView를 포함 합니다.
 
 
-[![매개 변수 원본 또는 기본 값을 지정 하지 않으면](using-parameterized-queries-with-the-sqldatasource-cs/_static/image15.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image29.png)
+[![Do 매개 변수 원본 또는 기본 값을 지정 하지](using-parameterized-queries-with-the-sqldatasource-cs/_static/image15.gif)](using-parameterized-queries-with-the-sqldatasource-cs/_static/image29.png)
 
 **그림 15**: 매개 변수 원본 또는 기본 값을 지정 하지 않습니다 ([클릭 하 여 큰 이미지 보기](using-parameterized-queries-with-the-sqldatasource-cs/_static/image30.png))
 

@@ -8,15 +8,15 @@ ms.date: 07/27/2010
 ms.assetid: bbb976e5-6150-4283-a374-c22fbafe29f5
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/provide-crud-create-read-update-delete-data-form-entry-support
 msc.type: authoredcontent
-ms.openlocfilehash: 45d74249a34fc7e37e9776a398615d2f613a7582
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 242665b3ba2e2ad2157abbe2c44ae207f15e72ce
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57031740"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59410866"
 ---
-<a name="provide-crud-create-read-update-delete-data-form-entry-support"></a>CRUD(만들기, 읽기, 업데이트, 삭제) 데이터 양식 항목 지원 제공
-====================
+# <a name="provide-crud-create-read-update-delete-data-form-entry-support"></a>CRUD(만들기, 읽기, 업데이트, 삭제) 데이터 양식 항목 지원 제공
+
 by [Microsoft](https://github.com/microsoft)
 
 [PDF 다운로드](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf)
@@ -36,20 +36,20 @@ by [Microsoft](https://github.com/microsoft)
 
 두 Url에 대 한 지원을 구현 하는 DinnersController에 작업 메서드 이전에 추가한: */Dinners* 하 고 */Dinners 세부 정보 / [id]* 합니다.
 
-| **URL** | **VERB** | **용도** |
+| **URL** | **동사** | **용도** |
 | --- | --- | --- |
 | */Dinners/* | 가져오기 | 예정 된 dinners는 HTML 목록을 표시 합니다. |
 | */Dinners/Details/[id]* | 가져오기 | 특정 저녁에 대 한 정보를 표시 합니다. |
 
-이제 세 가지 추가 Url을 구현 하는 작업 메서드를 추가 합니다. <em>/Dinners/편집 / [id], Dinners/만들기,</em>하 고<em>/Dinners/삭제 / [id]</em>합니다. 이러한 Url 편집 기존 Dinners 새 Dinners 만들고 Dinners 삭제에 대 한 지원을 사용 하도록 설정 됩니다.
+이제 세 가지 추가 Url을 구현 하는 작업 메서드를 추가 합니다. */Dinners/편집 / [id]* 를 *Dinners/만들기*, 및 */Dinners/삭제 / [id]* 합니다. 이러한 Url 편집 기존 Dinners 새 Dinners 만들고 Dinners 삭제에 대 한 지원을 사용 하도록 설정 됩니다.
 
 이러한 새 Url 사용 하 여 HTTP GET 및 HTTP POST 동사 상호 작용 지원할 예정입니다. 다음이 Url에 HTTP GET 요청 데이터 (폼 데이터로 Dinner "편집"의 경우, "만들기"의 경우 빈 폼 및 삭제 확인 화면이 "삭제"의 경우)의 초기 HTML 보기를 표시 됩니다. 다음이 Url에 HTTP POST 요청 우리의 DinnerRepository (그리고 데이터베이스에는 여기에서) Dinner 데이터를 저장/업데이트/삭제 됩니다.
 
-| **URL** | **VERB** | **용도** |
+| **URL** | **동사** | **용도** |
 | --- | --- | --- |
 | */Dinners/Edit/[id]* | 가져오기 | 저녁 식사 데이터로 채워진 편집 가능한 HTML 폼을 표시 합니다. |
 | 올리기 | 데이터베이스에 특정 저녁 폼 변경 내용을 저장 합니다. |
-| */Dinners/Create* | 가져오기 | 사용자가 새 Dinners 정의할 수 있는 빈 HTML 폼을 표시 합니다. |
+| */ Dinners/만들기* | 가져오기 | 사용자가 새 Dinners 정의할 수 있는 빈 HTML 폼을 표시 합니다. |
 | 올리기 | 새 Dinner 만들고 데이터베이스에 저장 합니다. |
 | */Dinners/Delete/[id]* | 가져오기 | 삭제 확인 화면을 표시 합니다. |
 | 올리기 | 데이터베이스에서 지정한 저녁 식사를 삭제합니다. |
@@ -138,7 +138,7 @@ HTTP POST 시나리오 처리 여부를 나타내는 "AcceptVerbs" 특성에는 
 
 [!code-csharp[Main](provide-crud-create-read-update-delete-data-form-entry-support/samples/sample9.cs)]
 
-오버 로드 된 작업 메서드에 [AcceptVerbs] 특성이 적용 되 면 ASP.NET MVC는 자동으로 들어오는 HTTP 동사에 따라 적절 한 동작 메서드에 디스패치 요청을 처리 합니다. HTTP POST 요청을 <em>/Dinners/편집 / [id]</em> Url에 다른 모든 HTTP 동사 요청 하는 동안 위의 편집 메서드를 이동 <em>/Dinners/편집 / [id]</em>Url 될 첫 번째 편집 메서드에 구현 했습니다 (않았습니다 있음 없습니다 [AcceptVerbs] 특성).
+오버 로드 된 작업 메서드에 [AcceptVerbs] 특성이 적용 되 면 ASP.NET MVC는 자동으로 들어오는 HTTP 동사에 따라 적절 한 동작 메서드에 디스패치 요청을 처리 합니다. HTTP POST 요청을 */Dinners/편집 / [id]* Url에 다른 모든 HTTP 동사 요청 하는 동안 위의 편집 메서드를 이동 */Dinners/편집 / [id]* Url 될 첫 번째 편집 메서드에 구현 했습니다 (않았습니다 있음 없는 `[AcceptVerbs]` 특성).
 
 | **쪽 항목: HTTP 동사를 통해 구분 이유?** |
 | --- |
@@ -228,7 +228,7 @@ Html.ValidationMessage() 도우미 메서드는 또한 개발자가 표시 되�
 
 [!code-aspx[Main](provide-crud-create-read-update-delete-data-form-entry-support/samples/sample18.aspx)]
 
-위의 코드 출력:  <em>&lt;p a n class = "필드 유효성 검사 오류"&gt;\*&lt;s&gt;</em>기본 오류 텍스트에 대 한 오류가 있으면 대신 합니다 EventDate 속성입니다.
+위의 코드 출력: *&lt;p a n class = "필드 유효성 검사 오류"&gt;\*&lt;s&gt;* 기본 오류 텍스트에 대 한 오류가 있으면 대신 합니다 EventDate 속성입니다.
 
 ##### <a name="htmlvalidationsummary-helper-method"></a>Html.ValidationSummary() Helper Method
 

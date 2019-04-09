@@ -8,15 +8,15 @@ ms.date: 07/16/2008
 ms.assetid: 10ba9106-514c-4776-8277-9c31312ceed2
 msc.legacyurl: /web-forms/videos/authentication/how-to-setup-and-use-cookie-less-authentication-in-an-aspnet-application
 msc.type: video
-ms.openlocfilehash: d929477850aeba321d92f0df85bcc516ffa3d4f5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ff6e21dad7598146a681615913dcbd37f72001ee
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57035370"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59404392"
 ---
-<a name="how-to-setup-and-use-cookie-less-authentication-in-an-aspnet-application"></a>ASP.NET 응용 프로그램에서 쿠키 없는 인증 설정 및 사용 하는 방법
-====================
+# <a name="how-to-setup-and-use-cookie-less-authentication-in-an-aspnet-application"></a>ASP.NET 응용 프로그램에서 쿠키 없는 인증 설정 및 사용 하는 방법
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 Joe Stagner에서 쿠키 없는 인증을 사용 하는 방법을 보여 주기 위해 이전 코드 예제를 사용 합니다. 이 데모에 대 한 자세한 내용은 자습서 위치한 [여기](../../overview/older-versions-security/introduction/forms-authentication-configuration-and-advanced-topics-vb.md)합니다.

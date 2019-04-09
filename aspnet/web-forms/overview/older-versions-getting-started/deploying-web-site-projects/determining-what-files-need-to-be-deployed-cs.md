@@ -8,15 +8,15 @@ ms.date: 04/01/2009
 ms.assetid: f8d78a88-cc91-40d8-bce3-3d7954f6033b
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/determining-what-files-need-to-be-deployed-cs
 msc.type: authoredcontent
-ms.openlocfilehash: ad759cefc372f6276ce1b16beea7282d9685ef82
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c17e3afaf4406489a14d0537a33fef384d6c5a19
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029920"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59408968"
 ---
-<a name="determining-what-files-need-to-be-deployed-c"></a>배포할 파일 확인(C#)
-====================
+# <a name="determining-what-files-need-to-be-deployed-c"></a>배포할 파일 확인(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/4/5/F/45F815EC-8B0E-46D3-9FB8-2DC015CCA306/ASPNET_Hosting_Tutorial_02_CS.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial02_FilesToDeploy_cs.pdf)
@@ -34,7 +34,7 @@ ASP.NET 웹 응용 프로그램 개발 환경에서 프로덕션 환경에 ASP.N
 
 ASP.NET 웹 페이지 태그 및 소스 코드를 선언적으로 나뉩니다. 선언적 태그 부분 포함 HTML 웹 컨트롤 및 데이터 바인딩 구문을 사용 합니다. Visual Basic 또는 C# 코드로 작성 된 이벤트 처리기를 포함 하는 코드 부분입니다. 태그 및 코드 일부를 다른 파일에 일반적으로 구분 됩니다. `WebPage.aspx` 하는 동안 선언적 태그를 포함 `WebPage.aspx.cs` 코드를 포함 합니다.
 
-현재 날짜 및 시간 페이지를 로드할 때 텍스트 속성을 설정할 레이블 컨트롤을 포함 하는 Clock.aspx 라는 ASP.NET 페이지를 것이 좋습니다. 선언적 태그 부분 (에 `Clock.aspx`)-Label 웹 컨트롤에 대 한 태그를 포함 하는`<asp:Label runat="server" id="TimeLabel" />` -코드 부분 (에 `Clock.aspx.cs`)는 것이 `Page_Load` 다음 코드를 사용 하 여 이벤트 처리기:
+현재 날짜 및 시간 페이지를 로드할 때 텍스트 속성을 설정할 레이블 컨트롤을 포함 하는 Clock.aspx 라는 ASP.NET 페이지를 것이 좋습니다. 선언적 태그 부분 (에 `Clock.aspx`)-Label 웹 컨트롤에 대 한 태그를 포함 하는`<asp:Label runat="server" id="TimeLabel" />` -코드 부분 (에 `Clock.aspx.cs`)는 것이 `Page_Load` 이벤트 처리기를 다음 코드로:
 
 [!code-csharp[Main](determining-what-files-need-to-be-deployed-cs/samples/sample1.cs)]
 
@@ -93,7 +93,7 @@ Microsoft Visual Studio 2005 서비스 팩 1 릴리스되면 웹 응용 프로�
 그림 1에서는 브라우저를 통해 볼 때도 서 리뷰 웹 사이트의 스크린 샷을 보여 줍니다. 페이지를 참조 하는 여기 ~ /`Tech/TYASP35.aspx`, 책을 검토 하는 *가르치는 직접 ASP.NET 3.5 24 시간 동안에서*합니다. 페이지 맨 왼쪽된 열에서 메뉴에 걸쳐 있는 이동 경로에 정의 된 사이트 맵 구조에 기반한 `Web.sitemap`합니다. 오른쪽 위 모서리에서 이미지는 이미지에 있는 책 표지를 `Images` 폴더입니다. 웹 사이트의 모양과 느낌은 가장 중요 한 페이지 레이아웃 마스터 페이지에서 정의 되는 동안 Styles 폴더의 CSS 파일에 의해 명시 하는 스타일 시트 규칙 연계를 통해 정의 된 `Site.master`합니다.
 
 
-[![서평 웹 사이트의 다양 한 제목 제공](determining-what-files-need-to-be-deployed-cs/_static/image2.png)](determining-what-files-need-to-be-deployed-cs/_static/image1.png)
+[![T웹 사이트 서평 제공 다양 한 제목에서 검토](determining-what-files-need-to-be-deployed-cs/_static/image2.png)](determining-what-files-need-to-be-deployed-cs/_static/image1.png)
 
 **그림 1:** 서평 웹 사이트는 다양 한 제목에서의 검토를 제공 ([클릭 하 여 큰 이미지 보기](determining-what-files-need-to-be-deployed-cs/_static/image3.png))
 
@@ -116,7 +116,7 @@ Microsoft Visual Studio 2005 서비스 팩 1 릴리스되면 웹 응용 프로�
 그림 2에서는 책 검토 웹 응용 프로그램 프로젝트를 구성 하는 파일을 보여 줍니다.
 
 
-[![솔루션 탐색기에서 웹 응용 프로그램 프로젝트를 구성 하는 파일 나열](determining-what-files-need-to-be-deployed-cs/_static/image5.png)](determining-what-files-need-to-be-deployed-cs/_static/image4.png)
+[![T웹 응용 프로그램 프로젝트를 구성 하는 파일을 나열 그 솔루션 탐색기](determining-what-files-need-to-be-deployed-cs/_static/image5.png)](determining-what-files-need-to-be-deployed-cs/_static/image4.png)
 
 **그림 2**: 솔루션 탐색기에서 웹 응용 프로그램 프로젝트를 구성 하는 파일 나열
 
@@ -143,7 +143,7 @@ Visual Studio에서 빌드 메뉴 옵션은 웹 응용 프로그램 프로젝트
 그림 3에서는 책 검토 웹 사이트 프로젝트를 구성 하는 파일을 보여 줍니다.
 
 
- [![웹 사이트 프로젝트를 구성 하는 파일을 나열 하는 솔루션 탐색기](determining-what-files-need-to-be-deployed-cs/_static/image7.png)](determining-what-files-need-to-be-deployed-cs/_static/image6.png) 
+ [![T웹 사이트 프로젝트를 구성 하는 파일을 나열 그 솔루션 탐색기](determining-what-files-need-to-be-deployed-cs/_static/image7.png)](determining-what-files-need-to-be-deployed-cs/_static/image6.png) 
 
 **그림 3**: 웹 사이트 프로젝트를 구성 하는 파일을 나열 하는 솔루션 탐색기
 

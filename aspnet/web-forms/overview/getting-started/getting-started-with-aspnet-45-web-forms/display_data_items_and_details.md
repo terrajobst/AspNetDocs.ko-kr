@@ -8,15 +8,15 @@ ms.date: 1/04/2019
 ms.assetid: 64a491a8-0ed6-4c2f-9c1c-412962eb6006
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/display_data_items_and_details
 msc.type: authoredcontent
-ms.openlocfilehash: acc2f8e78375ef0455d467e2af750ecbee623224
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 54896da5565c9383f13fc352da26bbdc3cb63a76
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57044640"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59405367"
 ---
-<a name="display-data-items-and-details"></a>데이터 항목 및 세부 정보
-====================
+# <a name="display-data-items-and-details"></a>데이터 항목 및 세부 정보
+
 [Erik Reitan](https://github.com/Erikre)
 
 > 이 자습서 시리즈에서는 ASP.NET 4.7 및 Microsoft Visual Studio 2017을 사용 하 여 ASP.NET Web Forms 응용 프로그램을 빌드하는 기본 사항을 설명 합니다.
@@ -39,9 +39,9 @@ ms.locfileid: "57044640"
 
 서버 컨트롤에 데이터를 바인딩할 몇 가지 다른 옵션을 사용할 수 있습니다. 가장 일반적인 다음과 같습니다.
 
- * 데이터 소스 컨트롤 추가
- * 코드를 직접 추가
- * 모델 바인딩을 사용 하 여
+* 데이터 소스 컨트롤 추가
+* 코드를 직접 추가
+* 모델 바인딩을 사용 하 여
 
 ### <a name="use-a-data-source-control-to-bind-data"></a>데이터 소스 컨트롤을 사용 하 여 데이터를 바인딩할
 

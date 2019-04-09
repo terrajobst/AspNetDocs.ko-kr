@@ -8,15 +8,15 @@ ms.date: 05/18/2012
 ms.assetid: 99253c4e-a125-4c21-85e7-a6dd74d93892
 msc.legacyurl: /web-pages/overview/getting-started
 msc.type: chapter
-ms.openlocfilehash: d46c4100bf169caa5dfd0f265e16d00d519ac847
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3e5b9d1a3bac0cf1ab042f473f8fd508069000a5
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57022240"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59408578"
 ---
-<a name="getting-started-with-aspnet-web-pages"></a>ASP.NET 웹 페이지를 사용 하 여 시작
-====================
+# <a name="getting-started-with-aspnet-web-pages"></a>ASP.NET 웹 페이지를 사용 하 여 시작
+
 > Web Pages 및 WebMatrix는 모든 설치, 시작 및 사이트를 배포 하는 방법 및 됩니다.
 
 
@@ -29,9 +29,9 @@ ms.locfileid: "57022240"
 - [ASP.NET 웹 페이지 소개](introducing-aspnet-web-pages-2/index.md)
 
     - [시작](introducing-aspnet-web-pages-2/getting-started.md)
-    - [프로그래밍 기본](introducing-aspnet-web-pages-2/intro-to-web-pages-programming.md)
+    - [프로그래밍 기본 사항](introducing-aspnet-web-pages-2/intro-to-web-pages-programming.md)
     - [데이터 표시](introducing-aspnet-web-pages-2/displaying-data.md)
-    - [HTML 양식 기본](introducing-aspnet-web-pages-2/form-basics.md)
+    - [HTML 양식 기본 사항](introducing-aspnet-web-pages-2/form-basics.md)
     - [양식을 사용하여 데이터베이스 데이터 입력](introducing-aspnet-web-pages-2/entering-data.md)
     - [데이터베이스 데이터 업데이트](introducing-aspnet-web-pages-2/updating-data.md)
     - [데이터베이스 데이터 삭제](introducing-aspnet-web-pages-2/deleting-data.md)

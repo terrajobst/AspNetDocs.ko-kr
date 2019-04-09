@@ -8,15 +8,15 @@ ms.date: 03/31/2010
 ms.assetid: 41c818b7-603a-402b-8847-890a63547b6f
 msc.legacyurl: /web-forms/overview/data-access/custom-formatting/displaying-summary-information-in-the-gridview-s-footer-vb
 msc.type: authoredcontent
-ms.openlocfilehash: dfb78ee1e5da2774254cbe685b8dfd3dc7d46af9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 69548e637a35c4fd5d0f3356e279f1f0370fad39
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062450"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409449"
 ---
-<a name="displaying-summary-information-in-the-gridviews-footer-vb"></a>GridView의 바닥글에 요약 정보 표시(VB)
-====================
+# <a name="displaying-summary-information-in-the-gridviews-footer-vb"></a>GridView의 바닥글에 요약 정보 표시(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/5/7/0/57084608-dfb3-4781-991c-407d086e2adc/ASPNET_Data_Tutorial_15_VB.exe) 또는 [PDF 다운로드](displaying-summary-information-in-the-gridview-s-footer-vb/_static/datatutorial15vb1.pdf)
@@ -37,7 +37,7 @@ ms.locfileid: "57062450"
 이 자습서에서는 이러한 문제를 해결 하는 방법을 살펴보겠습니다. 특히 GridView에 표시 되는 선택한 범주의 제품을 사용 하 여 드롭다운 목록에서 범주를 나열 하는 페이지를 만들겠습니다. GridView 재고 및 주문 해당 범주의 제품에 대 한 평균 가격과 단위의 총 수를 보여 주는 바닥글 행이 포함 됩니다.
 
 
-[![GridView의 바닥글 행에 요약 정보가 표시 됩니다.](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image2.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image1.png)
+[![SGridView의 바닥글 행에 정보가 표시 됩니다 ummary](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image2.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image1.png)
 
 **그림 1**: GridView의 바닥글 행에 요약 정보가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image3.png))
 
@@ -51,12 +51,12 @@ ms.locfileid: "57062450"
 열어서 시작 합니다 `SummaryDataInFooter.aspx` 페이지에 `CustomFormatting` 폴더입니다. DropDownList 컨트롤을 추가 하 고 설정 해당 `ID` 에 `Categories`입니다. 다음으로, DropDownList의 스마트 태그의 데이터 소스 선택 링크를 클릭 하 고 라는 새 ObjectDataSource를 추가 하도록 선택할 `CategoriesDataSource` 를 호출 하는 `CategoriesBLL` 클래스의 `GetCategories()` 메서드.
 
 
-[![CategoriesDataSource 라는 새 ObjectDataSource를 추가 합니다.](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image5.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image4.png)
+[![A새 ObjectDataSource 라는 CategoriesDataSource dd](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image5.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image4.png)
 
 **그림 2**: 추가 명명 된 새 ObjectDataSource `CategoriesDataSource` ([큰 이미지를 보려면 클릭](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image6.png))
 
 
-[![CategoriesBLL 클래스의 GetCategories() 메서드를 호출 하는 ObjectDataSource가](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image8.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image7.png)
+[![HObjectDataSource ave CategoriesBLL 클래스의 GetCategories() 메서드를 호출](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image8.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image7.png)
 
 **그림 3**: ObjectDataSource 호출 있어야 합니다 `CategoriesBLL` 클래스의 `GetCategories()` 메서드 ([클릭 하 여 큰 이미지 보기](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image9.png))
 
@@ -64,7 +64,7 @@ ms.locfileid: "57062450"
 ObjectDataSource를 구성한 후 마법사 반환 DropDownList의 데이터 소스 구성 마법사는 데이터 필드 값을 지정 해야 표시 하는 하나는 값에 해당 하의 DropDownList의 `ListItem` s입니다. 있어야 합니다 `CategoryName` 필드를 표시 하 고 사용 하 여는 `CategoryID` 값으로.
 
 
-[![텍스트 및 ListItems에 대 한 값으로 CategoryName 및 CategoryID 필드를 각각 사용](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image11.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image10.png)
+[![UCategoryName se 각각 CategoryID는 ListItems에 대 한 값으로 텍스트 필드 및](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image11.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image10.png)
 
 **그림 4**: 사용 하 여는 `CategoryName` 및 `CategoryID` 로 필드를 `Text` 및 `Value` 에 대 한 합니다 `ListItem` s, 각각 ([전체 크기 이미지를 보려면 클릭](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image12.png))
 
@@ -72,7 +72,7 @@ ObjectDataSource를 구성한 후 마법사 반환 DropDownList의 데이터 소
 DropDownList 했으므로 시점에서 (`Categories`) 시스템의 범주를 나열 하는 합니다. 이제 선택한 범주에 속하는 해당 제품을 나열 하는 GridView를 추가 해야 합니다. 그러나 수행 하기 전에 잠시 DropDownList의 스마트 태그에 AutoPostBack 사용 확인란 합니다. 에 설명 된 대로 합니다 *마스터/세부 정보 필터링으로 DropDownList* DropDownList의을 설정 하 여 자습서 `AutoPostBack` 속성을 `True` 페이지 게시 될 다시 DropDownList 값이 변경 될 때마다 합니다. 이렇게 하면 새로 고쳐져 야 GridView 새로 선택한 범주에 대 한 해당 제품을 표시 합니다. 경우는 `AutoPostBack` 속성이 `False` (기본값), 변경 범주 포스트백을 발생 하지 않습니다 하 고 따라서 나열된 된 제품 업데이트 되지 않습니다.
 
 
-[![확인란을 사용 하도록 설정 AutoPostBack DropDownList의 스마트 태그](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image14.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image13.png)
+[![CDropDownList의 스마트 태그에서 사용 하도록 설정 AutoPostBack 확인란 도대체](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image14.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image13.png)
 
 **그림 5**: 확인란을 사용 하도록 설정 AutoPostBack DropDownList의 스마트 태그 ([클릭 하 여 큰 이미지 보기](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image15.png))
 
@@ -80,7 +80,7 @@ DropDownList 했으므로 시점에서 (`Categories`) 시스템의 범주를 나
 선택한 범주에 대 한 제품을 전시 하기 위해 페이지에 GridView 컨트롤을 추가 합니다. GridView의 설정 `ID` 하 `ProductsInCategory` 라는 새 ObjectDataSource를 바인딩할 `ProductsInCategoryDataSource`합니다.
 
 
-[![ProductsInCategoryDataSource 라는 새 ObjectDataSource를 추가 합니다.](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image17.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image16.png)
+[![A새 ObjectDataSource 라는 ProductsInCategoryDataSource dd](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image17.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image16.png)
 
 **그림 6**: 추가 명명 된 새 ObjectDataSource `ProductsInCategoryDataSource` ([큰 이미지를 보려면 클릭](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image18.png))
 
@@ -88,7 +88,7 @@ DropDownList 했으므로 시점에서 (`Categories`) 시스템의 범주를 나
 호출 되도록 ObjectDataSource를 구성 합니다 `ProductsBLL` 클래스의 `GetProductsByCategoryID(categoryID)` 메서드.
 
 
-[![GetProductsByCategoryID(categoryID) 메서드를 호출 하는 ObjectDataSource가](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image20.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image19.png)
+[![HObjectDataSource Invoke GetProductsByCategoryID(categoryID) 메서드 ave](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image20.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image19.png)
 
 **그림 7**: ObjectDataSource 호출 있어야 합니다 `GetProductsByCategoryID(categoryID)` 메서드 ([큰 이미지를 보려면 클릭](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image21.png))
 
@@ -96,7 +96,7 @@ DropDownList 했으므로 시점에서 (`Categories`) 시스템의 범주를 나
 이후를 `GetProductsByCategoryID(categoryID)` 메서드는 입력된 매개 변수에서는 마법사의 마지막 단계에서 매개 변수 값의 원본을 지정할 수 있습니다. 선택한 범주에서 제품을 표시 하기 위해 있는에서 가져온 매개 변수는 `Categories` DropDownList 합니다.
 
 
-[![선택한 범주 드롭다운 목록에서 categoryID 매개 변수 값 가져오기](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image23.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image22.png)
+[![G선택한 범주 드롭다운 목록에서 매개 변수 값 categoryID et](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image23.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image22.png)
 
 **그림 8**: 가져오기의 *`categoryID`* 선택한 범주 드롭다운 목록에서 매개 변수 값 ([클릭 하 여 큰 이미지 보기](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image24.png))
 
@@ -109,7 +109,7 @@ DropDownList 했으므로 시점에서 (`Categories`) 시스템의 범주를 나
 이 시점에서 주문 선택한 범주에 속하는 해당 제품에 대 한 이름, 단가, 재고 단위 및 단위를 보여 주는 마스터/세부 정보 보고서를 완벽 하 게 작동 했습니다.
 
 
-[![선택한 범주 드롭다운 목록에서 categoryID 매개 변수 값 가져오기](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image26.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image25.png)
+[![G선택한 범주 드롭다운 목록에서 매개 변수 값 categoryID et](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image26.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image25.png)
 
 **그림 9**: 가져오기의 *`categoryID`* 선택한 범주 드롭다운 목록에서 매개 변수 값 ([클릭 하 여 큰 이미지 보기](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image27.png))
 
@@ -119,7 +119,7 @@ DropDownList 했으므로 시점에서 (`Categories`) 시스템의 범주를 나
 GridView 컨트롤을 머리글 및 바닥글 행을 표시할 수 있습니다. 이러한 행의 값에 따라 표시 되는 `ShowHeader` 하 고 `ShowFooter` 속성을 각각 `ShowHeader` 기본값으로 `True` 및 `ShowFooter` 에 `False`. 단순히 GridView의 바닥글을 포함 하려면 해당 `ShowFooter` 속성을 `True`입니다.
 
 
-[![GridView의 ShowFooter 속성도 True로 설정](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image29.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image28.png)
+[![Set GridView의 ShowFooter 속성을 true로](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image29.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image28.png)
 
 **그림 10**: GridView의 설정 `ShowFooter` 속성을 `True` ([클릭 하 여 큰 이미지 보기](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image30.png))
 
@@ -127,7 +127,7 @@ GridView 컨트롤을 머리글 및 바닥글 행을 표시할 수 있습니다.
 바닥글 행 GridView;에 정의 된 필드의 각 셀에 그러나 이러한 셀은 기본적으로 비어 있습니다. 시간을 내어 브라우저에서 진행 상황을 보고 합니다. 사용 하 여 합니다 `ShowFooter` 속성으로 `True`를 GridView에는 빈 바닥글 행이 포함 됩니다.
 
 
-[![GridView 이제 바닥글 행이 포함 됩니다.](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image32.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image31.png)
+[![T바닥글 행을 이제 그 GridView](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image32.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image31.png)
 
 **그림 11**: GridView 이제 바닥글 행이 포함 됩니다 ([클릭 하 여 큰 이미지 보기](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image33.png))
 
@@ -149,7 +149,7 @@ GridView 컨트롤을 머리글 및 바닥글 행을 표시할 수 있습니다.
 이 변경은 아래 스크린샷, 바닥글을 통해 더 명확 하 게 돋보이게 합니다.
 
 
-[![GridView의 바닥글 행에는 이제 빨강 배경색에](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image35.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image34.png)
+[![TGridView의 바닥글 행에는 이제 빨강 배경색에](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image35.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image34.png)
 
 **그림 12**: GridView의 바닥글 행 빨강 배경색 설정 되었습니다 ([클릭 하 여 큰 이미지 보기](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image36.png))
 
@@ -203,7 +203,7 @@ GridView의 바닥글 표시를 사용 하 여 다음 미국의 당면 과제를
 그림 13이이 코드를 추가한 다음 보고서를 보여 줍니다. 참고 하는 방법을 `ToString("c")` 하면 평균 가격 요약 정보가 통화 형식으로 지정 되어야 합니다.
 
 
-[![GridView의 바닥글 행에는 이제 빨강 배경색에](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image38.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image37.png)
+[![TGridView의 바닥글 행에는 이제 빨강 배경색에](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image38.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image37.png)
 
 **그림 13**: GridView의 바닥글 행 빨강 배경색 설정 되었습니다 ([클릭 하 여 큰 이미지 보기](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image39.png))
 

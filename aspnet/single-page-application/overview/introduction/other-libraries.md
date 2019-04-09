@@ -8,15 +8,15 @@ ms.date: 02/05/2013
 ms.assetid: a8367c6d-ef94-4dff-a010-5eff9e6eea96
 msc.legacyurl: /single-page-application/overview/introduction/other-libraries
 msc.type: authoredcontent
-ms.openlocfilehash: 5503a00df707ee79282a32c77ed2287e93cf8f48
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 70ced1d53b66fbe5ced3606413594707099dda28
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425472"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59406446"
 ---
-<a name="know-a-library-other-than-knockout"></a>Knockout 이외의 라이브러리를 알고 있으신가요?
-====================
+# <a name="know-a-library-other-than-knockout"></a>Knockout 이외의 라이브러리를 알고 있으신가요?
+
 [제작: Mads Kristensen](https://github.com/madskristensen)
 
 합니다 [단일 페이지 응용 프로그램 (SPA) 템플릿](knockoutjs-template.md) 단일 페이지 응용 프로그램 작성을 시작 하는 좋은 방법입니다. 템플릿을 사용 하 여 [KnockoutJS](http://knockoutjs.com/) DOM 요소를 응용 프로그램 데이터를 바인딩합니다.

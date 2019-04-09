@@ -8,15 +8,15 @@ ms.date: 01/27/2009
 ms.assetid: 0e7b4d85-2c46-4eaf-b6a8-6cd566a67334
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/improving-performance-with-output-caching-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 9402d7e053ef11eeefa92d112b05ec255d5ec6f7
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0f824bd5e080d42a9df3525ca47b87bcef407f7a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033670"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59405627"
 ---
-<a name="improving-performance-with-output-caching-vb"></a>출력 캐싱을 통한 성능 향상(VB)
-====================
+# <a name="improving-performance-with-output-caching-vb"></a>출력 캐싱을 통한 성능 향상(VB)
+
 by [Microsoft](https://github.com/microsoft)
 
 > 이 자습서에서는 출력 캐싱을 활용 하 여 ASP.NET MVC 웹 응용 프로그램의 성능을 크게 개선할 수 있습니다 하는 방법에 대해 알아봅니다. 동일한 콘텐츠를 각 시간 작업을 호출 하는 새 사용자를 만들 필요가 없습니다 있도록 컨트롤러 작업에서 반환 된 결과 캐시 하는 방법을 알아봅니다.
@@ -46,7 +46,7 @@ ASP.NET MVC의 베타 버전에서는 출력 캐싱에 적합 하지 않습니�
 
 목록 1에서 Home 컨트롤러 목록 2에서 인덱스 뷰를 반환합니다. 이 보기에 대 한 특별 합니다. 인덱스 보기는 현재 시간을 표시 하기만 하면 됩니다 (그림 1 참조).
 
-**Listing 2 – Views\Home\Index.aspx**
+**2 – Views\Home\Index.aspx 나열**
 
 [!code-aspx[Main](improving-performance-with-output-caching-vb/samples/sample2.aspx)]
 
@@ -85,7 +85,7 @@ ASP.NET MVC의 베타 버전에서는 출력 캐싱에 적합 하지 않습니�
 
 예를 들어 목록 3에서 컨트롤러를 현재 사용자 이름을 반환 하는 GetName() 라는 작업을 노출 합니다. Jack 웹 사이트에 로그인 하 고 GetName() 작업을 호출 하는 경우 다음 동작 문자열을 반환 합니다 "Hi Jack"입니다. Jill (질) 웹 사이트에 로그인 하 고 GetName() 작업 호출 이후에 다음 그녀는 또한 받습니다 문자열을 "Hi Jack". 문자열은 Jack 컨트롤러 작업을 처음 호출 후 모든 사용자에 대 한 웹 서버에 캐시 됩니다.
 
-**Listing 3 – Controllers\BadUserController.vb**
+**3 – Controllers\BadUserController.vb 나열**
 
 [!code-vb[Main](improving-performance-with-output-caching-vb/samples/sample3.vb)]
 
@@ -95,7 +95,7 @@ ASP.NET MVC의 베타 버전에서는 출력 캐싱에 적합 하지 않습니�
 
 목록 4의 수정 된 컨트롤러 GetName() 작업의 출력을 캐시합니다. 그러나 콘텐츠는 브라우저 및 서버에 없는 캐시 됩니다. 이런 방식으로 여러 사용자가 GetName() 메서드를 호출 하는 경우, 각 사용자는 자신의 사용자 이름 및 다른 사람의 사용자 이름을 가져옵니다.
 
-**Listing 4 – Controllers\UserController.vb**
+**4-Controllers\UserController.vb 나열**
 
 [!code-vb[Main](improving-performance-with-output-caching-vb/samples/sample4.vb)]
 
