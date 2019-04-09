@@ -1,22 +1,23 @@
 ---
 uid: identity/overview/features-api/two-factor-authentication-using-sms-and-email-with-aspnet-identity
-title: ASP.NET Id와 SMS 및 전자 메일을 사용 하 여 2 단계 인증 | Microsoft Docs
+title: 2 단계 인증 SMS 및 전자 메일을 사용 하 여 ASP.NET id-ASP.NET 4.x
 author: HaoK
 description: 이 자습서에서는 SMS 및 전자 메일을 사용 하 여 2 단계 인증 (2FA)을 설정 하는 방법을 보여줍니다. Rick anderson이 문서가 작성 된 ( @RickAndMSFT ) Pr.,...
 ms.author: riande
 ms.date: 09/15/2015
 ms.assetid: 053e23c4-13c9-40fa-87cb-3e9b0823b31e
+ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/features-api/two-factor-authentication-using-sms-and-email-with-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: 4b253923696e35e59c196578a232f53c11671d16
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c41fc06ad98665f7d48efde030c1341b06e49dd0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57043170"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59395293"
 ---
-<a name="two-factorauthentication-using-sms-and-email-with-aspnet-identity"></a>ASP.NET Id와 SMS 및 전자 메일을 사용 하 여 2 단계 인증
-====================
+# <a name="two-factorauthentication-using-sms-and-email-with-aspnet-identity"></a>ASP.NET Id와 SMS 및 전자 메일을 사용 하 여 2 단계 인증
+
 하 여 [Hao 둘러싼](https://github.com/HaoK)를 [Pranav Rastogi](https://github.com/rustd)하십시오 [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Suhas Joshi](https://github.com/suhasj)
 
 > 이 자습서에서는 SMS 및 전자 메일을 사용 하 여 2 단계 인증 (2FA)을 설정 하는 방법을 보여줍니다.
@@ -52,8 +53,8 @@ ms.locfileid: "57043170"
    이 자습서에서는 [SendGrid](http://sendgrid.com/) 전자 메일을 보내는 하 고 [Twilio](https://www.twilio.com/) 하거나 [ASPSMS](https://www.aspsms.com/asp.net/identity/testcredits/) sms 문자 보내기에 대 한 합니다. `Identity.Samples` 패키지에서는 사용할 코드를 설치 합니다.
 3. 설정 된 [SSL을 사용 하도록 프로젝트](../../../mvc/overview/security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on.md)합니다.
 4. *선택 사항*: 지침에 따라 내 [전자 메일 확인 자습서](account-confirmation-and-password-recovery-with-aspnet-identity.md) SendGrid 후크 다음 앱을 실행 및 전자 메일 계정을 등록 합니다.
-5. * 선택 사항: * 샘플에서 데모 전자 메일 링크 확인 코드를 제거 (의 `ViewBag.Link` account 컨트롤러의 코드입니다. 참조 된 `DisplayEmail` 및 `ForgotPasswordConfirmation` razor 뷰와 작업 메서드).
-6. <em>선택 사항: * 제거 합니다 `ViewBag.Status` 코드는 *Views\Account\VerifyCode.cshtml 관리 및 계정 컨트롤러에서 들어오고</em> 및 <em>Views\Manage\VerifyPhoneNumber.cshtml</em> razor 뷰. 유지할 수 있습니다는 `ViewBag.Status` 후크 및 전자 메일 및 SMS 메시지를 보낼 필요 없이 로컬에서이 앱은 작동 하는 방법을 테스트 하려면 표시 합니다.
+5. *선택 사항:* 이 샘플에서 데모 전자 메일 링크 확인 코드를 제거 (의 `ViewBag.Link` account 컨트롤러의 코드입니다. 참조 된 `DisplayEmail` 및 `ForgotPasswordConfirmation` razor 뷰와 작업 메서드).
+6. *선택 사항:* 제거는 `ViewBag.Status` 관리 및 계정 컨트롤러에서 코드를 *Views\Account\VerifyCode.cshtml* 하 고 *Views\Manage\VerifyPhoneNumber.cshtml* razor 뷰. 유지할 수 있습니다는 `ViewBag.Status` 후크 및 전자 메일 및 SMS 메시지를 보낼 필요 없이 로컬에서이 앱은 작동 하는 방법을 테스트 하려면 표시 합니다.
 
 > [!NOTE]
 > 경고: 이 샘플의 보안 설정을 변경 하면 프로덕션 앱 변경 내용을 명시적으로 호출 하는 보안 감사를 수행 해야 합니다.
@@ -281,6 +282,6 @@ QR 코드 생성기 같은 자세한 2FA 공급자를 추가 하거나 자신이
 - [Facebook, Twitter, LinkedIn 및 Google OAuth2 sign-on을 사용 하 여 MVC 5 앱](../../../mvc/overview/security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on.md) 또한 사용자가 테이블에 프로필 정보를 추가 하는 방법을 보여 줍니다.
 - [ASP.NET MVC 및 Id 2.0: 기본 사항을 이해](http://typecastexception.com/post/2014/04/20/ASPNET-MVC-and-Identity-20-Understanding-the-Basics.aspx) John Atten 여 합니다.
 - [계정 확인 및 ASP.NET Id와 암호 복구](account-confirmation-and-password-recovery-with-aspnet-identity.md)
-- [ASP.NET ID 소개](../getting-started/introduction-to-aspnet-identity.md)
+- [ASP.NET Identity 소개](../getting-started/introduction-to-aspnet-identity.md)
 - [ASP.NET Id 2.0.0의 RTM 발표](https://blogs.msdn.com/b/webdev/archive/2014/03/20/test-announcing-rtm-of-asp-net-identity-2-0-0.aspx) Pranav rastogi 합니다.
 - [ASP.NET Id 2.0: 계정 유효성 검사 및 2 단계 인증 설정](http://typecastexception.com/post/2014/04/20/ASPNET-Identity-20-Setting-Up-Account-Validation-and-Two-Factor-Authorization.aspx) John Atten 여 합니다.

@@ -8,15 +8,15 @@ ms.date: 05/28/2015
 ms.assetid: c85ec591-f8d7-4882-b763-de6ab9f3df7a
 msc.legacyurl: /web-pages/overview/getting-started/introducing-aspnet-web-pages-2/layouts
 msc.type: authoredcontent
-ms.openlocfilehash: a6a007678d58547e9987ebda46bd08ae8aea66f7
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 58f3ec28914a604aa911cc3cb73733f0d58fd49f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046180"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59390418"
 ---
-<a name="introducing-aspnet-web-pages---creating-a-consistent-layout"></a>ASP.NET 웹 페이지 소개-일관적인 레이아웃 만들기
-====================
+# <a name="introducing-aspnet-web-pages---creating-a-consistent-layout"></a>ASP.NET 웹 페이지 소개-일관적인 레이아웃 만들기
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 자습서에서는 사용 하는 방법을 보여 줍니다 *레이아웃* ASP.NET 웹 페이지를 사용 하는 사이트에서 페이지에 일관 된 모양을 만들려고 합니다. 통해 시리즈를 완료 했다고 가정 하 [ASP.NET 웹 페이지에서 데이터베이스 데이터 삭제](https://go.microsoft.com/fwlink/?LinkId=251584)합니다.
@@ -146,7 +146,7 @@ ASP.NET은에 Movies.cshtml 페이지의 콘텐츠를 병합 합니다  *\_Layou
 
 합니다 `Page` 개체가 모두에서 사용할 수 있습니다 *.cshtml* 페이지 이며이 위해 namely 페이지 및 해당 레이아웃 간에 정보를 공유 합니다.
 
-엽니다는<em>\_Layout.cshtml</em> 페이지입니다. 변경 된 `<title>` 요소 하므로이 태그는 다음과 같습니다.
+엽니다는  *\_Layout.cshtml* 페이지입니다. 변경 된 `<title>` 요소 하므로이 태그는 다음과 같습니다.
 
 [!code-html[Main](layouts/samples/sample9.html)]
 

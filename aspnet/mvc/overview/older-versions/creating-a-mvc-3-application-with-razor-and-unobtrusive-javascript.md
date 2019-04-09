@@ -8,15 +8,15 @@ ms.date: 11/01/2010
 ms.assetid: 658b149b-d770-46bf-8b4b-4e47cca242f3
 msc.legacyurl: /mvc/overview/older-versions/creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript
 msc.type: authoredcontent
-ms.openlocfilehash: f60ca3e76fda8a18da1ad83e955e5e4759f5e3af
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 91c96cc413e63ad2fc160ffbb473c4f3e1ada3e4
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57053170"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59401064"
 ---
-<a name="creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript"></a>Razor 및 Unobtrusive JavaScript를 사용하여 MVC 3 애플리케이션 만들기
-====================
+# <a name="creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript"></a>Razor 및 Unobtrusive JavaScript를 사용하여 MVC 3 애플리케이션 만들기
+
 by [Microsoft](https://github.com/microsoft)
 
 > 사용자 목록 샘플 웹 응용 프로그램에서는 Razor 보기 엔진을 사용 하 여 ASP.NET MVC 3 응용 프로그램을 만드는 얼마나 간단한 지 보여 줍니다. 샘플 응용 프로그램 작성, 표시, 편집 및 삭제 사용자 등의 기능을 포함 하는 가상의 사용자 목록 웹 사이트를 만드는 ASP.NET MVC 버전 3 사용 하 여 새로운 Razor 보기 엔진 및 Visual Studio 2010을 사용 하는 방법을 보여 줍니다.
@@ -36,7 +36,7 @@ by [Microsoft](https://github.com/microsoft)
 
 자습서를 시작 하려면 Visual Studio 2010 열고 사용 하 여 새 프로젝트를 *ASP.NET MVC 3 웹 응용 프로그램* 템플릿. 응용 프로그램의 이름을 &quot;Mvc3Razor&quot;합니다.
 
-[![새 MVC 3 프로젝트](creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript/_static/image3.png)](creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript/_static/image2.png)
+[![NMVC 3 프로젝트를 활용 하면 초보](creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript/_static/image3.png)](creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript/_static/image2.png)
 
 에 **새 ASP.NET MVC 3 프로젝트** 대화 상자에서 **인터넷 응용 프로그램**Razor 보기 엔진을 선택한 다음 클릭 **확인**합니다.
 

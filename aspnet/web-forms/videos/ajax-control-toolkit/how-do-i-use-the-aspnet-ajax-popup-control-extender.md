@@ -8,15 +8,15 @@ ms.date: 01/26/2007
 ms.assetid: ecd34391-958f-410c-849d-cfaa2dd414dd
 msc.legacyurl: /web-forms/videos/ajax-control-toolkit/how-do-i-use-the-aspnet-ajax-popup-control-extender
 msc.type: video
-ms.openlocfilehash: 9ebd580473d6c4305fb2ae9f568678002843b6ca
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: be086315943d9d680faa2a8bc784c2b995425903
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046910"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59398399"
 ---
-<a name="how-do-i-use-the-aspnet-ajax-popup-control-extender"></a>[어떻게 할까요?] ASP.NET AJAX Popup 컨트롤 Extender 사용
-====================
+# <a name="how-do-i-use-the-aspnet-ajax-popup-control-extender"></a>[어떻게 할까요?] ASP.NET AJAX Popup 컨트롤 Extender 사용
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 이 비디오는 ASP.NET AJAX Control Toolkit에 포함 된 팝업 컨트롤 extender의 사용을 보여 줍니다. 팝업 대화 상자가 포커스를 받을 때 옵션 목록이 표시 되도록 TextBox 컨트롤을 확장 하는 방법에 알아봅니다.

@@ -8,15 +8,15 @@ ms.date: 01/30/2007
 ms.assetid: 04204f69-4c73-4219-982d-9c58d510118e
 msc.legacyurl: /web-forms/videos/aspnet-ajax/how-do-i-use-the-aspnet-ajax-client-library-controls
 msc.type: video
-ms.openlocfilehash: dd00126bccdedf9c564cf42dbc18ae0d1d27d032
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ede7bf36e927f1d216643f20aae6e1b515263d33
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058710"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59385557"
 ---
-<a name="how-do-i-use-the-aspnet-ajax-client-library-controls"></a>[어떻게 할까요?] ASP.NET AJAX 클라이언트 라이브러리 컨트롤 사용
-====================
+# <a name="how-do-i-use-the-aspnet-ajax-client-library-controls"></a>[어떻게 할까요?] ASP.NET AJAX 클라이언트 라이브러리 컨트롤 사용
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 ASP.NET AJAX 클라이언트 라이브러리에서 스크립트 및 컨트롤을 사용 하 여 클라이언트 쪽 프로그래밍 환경을 보여 줍니다. 클라이언트 컨트롤 클라이언트 쪽 사용자 인터페이스 환경에 작업, 동작 및 데이터 바인딩을 추가합니다.

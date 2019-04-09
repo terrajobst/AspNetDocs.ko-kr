@@ -8,15 +8,15 @@ ms.date: 10/04/2013
 ms.assetid: 46cbfe20-b4dc-449b-9016-80657dd44fbe
 msc.legacyurl: /visual-studio/overview/2013/using-browser-link
 msc.type: authoredcontent
-ms.openlocfilehash: f470aa7e425d16aec3f67d2a0ebb664a3e7eac41
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 723a38de4569b0bb58817c70aabb84fef8e19591
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57055040"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59395097"
 ---
-<a name="using-browser-link-in-visual-studio-2013"></a>Visual Studio 2013의 브라우저 링크 사용
-====================
+# <a name="using-browser-link-in-visual-studio-2013"></a>Visual Studio 2013의 브라우저 링크 사용
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 브라우저 링크는 개발 환경 및 하나 이상의 웹 브라우저 간에 통신 채널을 만드는 Visual Studio 2013의 새로운 기능입니다. 브라우저 간 테스트에 유용한 여러 브라우저에서 웹 응용 프로그램에 한 번만 새로 고치려면 브라우저 링크를 사용할 수 있습니다.
@@ -64,7 +64,7 @@ Visual Studio에서 변경 된 &lt;h1&gt; 홈 페이지의 제목:
 
 ![](using-browser-link/_static/image8.png)
 
-**참고**
+**노트**
 
 - 브라우저 링크를 사용 하도록 설정 하려면 `debug=true` 에 [ &lt;컴파일&gt; ](https://msdn.microsoft.com/library/s10awwz0(v=vs.85).aspx) 프로젝트의 Web.config 파일의 요소입니다.
 - 응용 프로그램은 로컬 호스트에서 실행 되어야 합니다.

@@ -1,22 +1,23 @@
 ---
 uid: identity/overview/getting-started/developing-aspnet-apps-with-windows-azure-active-directory
-title: Azure Active Directory 사용 하 여 ASP.NET 앱 개발 | Microsoft Docs
+title: Azure Active Directory-ASP.NET 사용 하 여 ASP.NET 앱을 개발 4.x
 author: Rick-Anderson
 description: Azure Active Directory 용 Microsoft ASP.NET 도구를 사용 하면 간단 하 게 Azure에서 호스팅된 웹 응용 프로그램에 대 한 인증을 사용 하도록 설정 합니다. Azure 인증을 사용할 수 있습니다...
 ms.author: riande
 ms.date: 08/14/2014
 ms.assetid: 457d7eaf-ee76-4ceb-9082-c7c1721435ad
+ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/getting-started/developing-aspnet-apps-with-windows-azure-active-directory
 msc.type: authoredcontent
-ms.openlocfilehash: 7f0e569458c9a294cc281b86e731c2fda48768be
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6f8b926c78097b68e6a159f2fdd30e7b8a6477a0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57027850"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59395175"
 ---
-<a name="developing-aspnet-apps-with-azure-active-directory"></a>Azure Active Directory를 사용하여 ASP.NET 앱 개발
-====================
+# <a name="developing-aspnet-apps-with-azure-active-directory"></a>Azure Active Directory를 사용하여 ASP.NET 앱 개발
+
 [Rick Anderson]((https://twitter.com/RickAndMSFT))
 
 Microsoft ASP.NET 도구에서 호스팅되는 웹 앱에 대 한 인증 사용을 간소화 하는 Azure Active Directory에 대 한 [Azure](https://www.windowsazure.com/home/features/web-sites/)합니다. 조직에서 온-프레미스 Active Directory에서 동기화 하는 회사 계정 또는 사용자 고유의 사용자 지정 Azure Active Directory 도메인에서 만든 사용자가 Office 365 사용자를 인증 하도록 Azure 인증을 사용할 수 있습니다. Windows Azure 인증을 사용 하면 단일을 사용 하 여 사용자를 인증 하도록 응용 프로그램 구성 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) 테 넌 트입니다.

@@ -8,15 +8,15 @@ ms.date: 04/04/2007
 ms.assetid: 806a8bfe-54be-4c96-8ffd-66303cc2b2f9
 msc.legacyurl: /web-forms/videos/ajax-control-toolkit/how-do-i-use-the-aspnet-ajax-maskededit-controls
 msc.type: video
-ms.openlocfilehash: 9cfc614376354e740ab1e4da8cee1f6de4996aaf
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 4b97b05e16275867db5157e3eaf2ea8db28b4c30
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57032250"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59397138"
 ---
-<a name="how-do-i-use-the-aspnet-ajax-maskededit-controls"></a>[어떻게 할까요?] ASP.NET AJAX MaskedEdit 컨트롤 사용
-====================
+# <a name="how-do-i-use-the-aspnet-ajax-maskededit-controls"></a>[어떻게 할까요?] ASP.NET AJAX MaskedEdit 컨트롤 사용
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 ASP.NET AJAX Control Toolkit MaskedEdit 컨트롤 및 프롬프트, 스타일, 사용자가 텍스트 상자에 입력 데이터 유효성 검사를 함께 작동 하는 MaskedEditValidator 컨트롤을 제공 합니다. 이렇게 하면 올바른 형식 및 형식으로 입력 된 데이터 인지에 즉각적인 시각적 피드백을 사용 하 여 사용자를 제공 하는 웹 페이지입니다.

@@ -8,15 +8,15 @@ ms.date: 10/05/2011
 ms.assetid: 8996b59e-042c-4395-b28a-f1ab95ac16af
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting-with-the-datalist-and-repeater
 msc.type: chapter
-ms.openlocfilehash: d92c21dc854f849cea22ae3e4feb5559cb50270e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 59c0a820e30f302ac56dd000837f40f7c13fe183
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57019830"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59401129"
 ---
-<a name="paging-and-sorting-with-the-datalist-and-repeater"></a>DataList 및 반복기를 사용하여 페이징 및 정렬
-====================
+# <a name="paging-and-sorting-with-the-datalist-and-repeater"></a>DataList 및 반복기를 사용하여 페이징 및 정렬
+
 > 이러한 자습서에는 페이징 및 정렬에 대 한 매우 유연한 UI를 만들기 위해 DataList 또는 Repeater 컨트롤 페이징 지원을 추가 하는 방법을 보여 줍니다.
 
 

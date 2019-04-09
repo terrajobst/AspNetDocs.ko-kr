@@ -8,15 +8,15 @@ ms.date: 01/27/2009
 ms.assetid: 418bb07e-f369-4119-b4b0-08f890f7abb2
 msc.legacyurl: /mvc/overview/older-versions-1/security/authenticating-users-with-windows-authentication-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 0f46af21841a60fe4257cb30b78abdfd421c66bd
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3c12f2a3d253df1ed9d8b25001edf13a04da26f5
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57039390"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59394889"
 ---
-<a name="authenticating-users-with-windows-authentication-c"></a>Windows 인증으로 사용자 인증(C#)
-====================
+# <a name="authenticating-users-with-windows-authentication-c"></a>Windows 인증으로 사용자 인증(C#)
+
 by [Microsoft](https://github.com/microsoft)
 
 > MVC 응용 프로그램의 컨텍스트에서 Windows 인증을 사용 하는 방법에 알아봅니다. 응용 프로그램의 웹 구성 파일 내에서 Windows 인증을 사용 하는 방법 및 IIS를 사용 하 여 인증을 구성 하는 방법에 알아봅니다. 마지막으로, 특정 Windows 사용자나 그룹에 대 한 컨트롤러 작업에 대 한 액세스를 제한 하려면 [Authorize] 특성을 사용 하는 방법에 알아봅니다.

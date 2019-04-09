@@ -8,15 +8,15 @@ ms.date: 10/16/2008
 ms.assetid: 5fee879b-8bde-42a9-a434-60ba6b1cf747
 msc.legacyurl: /mvc/overview/older-versions-1/views/passing-data-to-view-master-pages-cs
 msc.type: authoredcontent
-ms.openlocfilehash: e04a9b274b735af05a8e08dc7d8f34f0d83605be
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 863fe772a1d79201b83da8498bf7e981acf7fd0e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57038050"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59401077"
 ---
-<a name="passing-data-to-view-master-pages-c"></a>보기 마스터 페이지에 데이터 전달(C#)
-====================
+# <a name="passing-data-to-view-master-pages-c"></a>보기 마스터 페이지에 데이터 전달(C#)
+
 by [Microsoft](https://github.com/microsoft)
 
 [PDF 다운로드](http://download.microsoft.com/download/e/f/3/ef3f2ff6-7424-48f7-bdaa-180ef64c3490/ASPNET_MVC_Tutorial_13_CS.pdf)
@@ -33,7 +33,7 @@ by [Microsoft](https://github.com/microsoft)
 영화 데이터베이스 응용 프로그램을 빌드하는 하 고 영화 범주 목록 응용 프로그램에서 모든 페이지에 표시 하려는 imagine (그림 1 참조). 또한 영화 범주 목록 데이터베이스 테이블에 저장 되도록 한다고 가정 합니다. 이 경우 데이터베이스에서 범주를 검색 및 보기 마스터 페이지 내에 영화 범주 목록을 렌더링 하는 것이 없게 합니다.
 
 
-[![보기 마스터 페이지에 동영상 범주 표시](passing-data-to-view-master-pages-cs/_static/image2.png)](passing-data-to-view-master-pages-cs/_static/image1.png)
+[![D보기 마스터 페이지에 isplaying 영화 categories](passing-data-to-view-master-pages-cs/_static/image2.png)](passing-data-to-view-master-pages-cs/_static/image1.png)
 
 **그림 01**: 보기 마스터 페이지에 동영상 범주를 표시 ([클릭 하 여 큰 이미지 보기](passing-data-to-view-master-pages-cs/_static/image3.png))
 
@@ -59,7 +59,7 @@ MVC 응용 프로그램의 컨트롤러 작업에 의해 – 보기 마스터 �
 또한 Details() 작업 범주 및 영화 라는 두 개의 키를 추가 합니다. 범주 키를 다시 한 번 보기 마스터 페이지에서 표시 하는 영화 범주 목록을 나타냅니다. 영화 키 세부 정보 보기 페이지에서 표시 하는 특정 범주에는 영화 목록을 나타냅니다 (그림 2 참조).
 
 
-[![세부 정보 보기](passing-data-to-view-master-pages-cs/_static/image5.png)](passing-data-to-view-master-pages-cs/_static/image4.png)
+[![T그리고 세부 정보 보기](passing-data-to-view-master-pages-cs/_static/image5.png)](passing-data-to-view-master-pages-cs/_static/image4.png)
 
 **그림 02**: 세부 정보 보기 ([클릭 하 여 큰 이미지 보기](passing-data-to-view-master-pages-cs/_static/image6.png))
 

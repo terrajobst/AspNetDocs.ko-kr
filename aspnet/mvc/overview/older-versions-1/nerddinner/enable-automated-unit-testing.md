@@ -8,15 +8,15 @@ ms.date: 07/27/2010
 ms.assetid: a19ff2ce-3f7e-4358-9a51-a1403da9c63e
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/enable-automated-unit-testing
 msc.type: authoredcontent
-ms.openlocfilehash: 74abf391bb4aab3ff0d5079e0a24ba20287e18fb
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b0c9cd7ab36a8414e0d7d50a68b05bb09a5f24f1
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049460"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59387908"
 ---
-<a name="enable-automated-unit-testing"></a>자동화된 유닛 테스트 사용
-====================
+# <a name="enable-automated-unit-testing"></a>자동화된 유닛 테스트 사용
+
 by [Microsoft](https://github.com/microsoft)
 
 [PDF 다운로드](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf)
@@ -98,7 +98,7 @@ Visual Studio 2008 Professional (및 이상 버전)에 IDE 내에서 Visual Stud
 
 *참고: VS 테스트 결과 창에는 기본적으로 클래스 이름 열을 표시 되지 않습니다. 테스트 결과 창 내에서 마우스 오른쪽 단추로 클릭 하 고 열 추가/제거 메뉴 명령을 사용 하 여이 추가할 수 있습니다.*
 
-두 개의 테스트를 실행 하 고 – 수와 초의 일부만 걸린 전달 둘 다 참조 합니다. 수 이제 이동 하 고 이러한 두 가지 도우미 메서드-IsUserHost() 및 Dinner 클래스에 추가한 IsUserRegisterd() – 설명 뿐만 아니라 특정 규칙 유효성 검사를 확인 하는 추가 테스트를 만들어 확장. 저녁 식사 클래스에 대 한 이러한 모든 테스트를 하지 되도록 훨씬 쉽고 안전 하 게 새 비즈니스 규칙 및 유효성 검사를 나중에 추가 합니다. 저녁을를 새 규칙 논리를 추가 하 고 시간 (초) 내에서 이전 하는 논리 기능 중 하나 손상 되지 않은 것을 확인 수 있습니다.
+두 개의 테스트를 실행 하 고 – 수와 초의 일부만 걸린 전달 둘 다 참조 합니다. 수 이제 이동 하 고 이러한 두 가지 도우미 메서드-IsUserHost() 및 Dinner 클래스에 추가한 IsUserRegistered() – 설명 뿐만 아니라 특정 규칙 유효성 검사를 확인 하는 추가 테스트를 만들어 확장. 저녁 식사 클래스에 대 한 이러한 모든 테스트를 하지 되도록 훨씬 쉽고 안전 하 게 새 비즈니스 규칙 및 유효성 검사를 나중에 추가 합니다. 저녁을를 새 규칙 논리를 추가 하 고 시간 (초) 내에서 이전 하는 논리 기능 중 하나 손상 되지 않은 것을 확인 수 있습니다.
 
 어떻게 설명이 포함 된 테스트 이름을 사용 하 여 쉽게 파악한 다음 각 테스트를 확인 하는 것을 확인 합니다. 사용 하는 것이 좋습니다 합니다 **도구-&gt;옵션** 메뉴 명령, 여는 테스트 도구-&gt;테스트 실행 구성 화면 및 검사는 "실패 했거나 결과가 불충분 한 단위 테스트 결과 두 번 클릭 하면 표시 테스트의 실패 지점"확인란을 선택 합니다. 이렇게 하면 테스트 결과 창에서 오류를 두 번 클릭 하 고 어설션 실패를 즉시 이동할 수 있습니다.
 
@@ -211,7 +211,7 @@ FakeDinnerRepository 클래스 IDinnerRepository 인터페이스를 구현 하�
 
 | **쪽 항목: 종속성 주입 프레임 워크** |
 | --- |
-| 정상적으로 작동 하지만 종속성의 수를 관리 하기 어렵게 할 수 있는데요 수동 종속성 주입 (예: 위의 기꺼이)를 수행 하 고 응용 프로그램의 구성 요소를 늘립니다. 여러 종속성 주입 프레임 워크는 더 많은 종속성 관리 유연성을 제공 하는 데 도움이 되는.NET에 존재 합니다. 라고도 "Inversion of Control" (IoC) 컨테이너에 이러한 프레임 워크를 지정 하 고 (가장 자주 사용 하 여 런타임에 생성자 주입 개체 종속성을 전달 하기 위한 구성 지원 추가 수준을 사용할 수 있는 메커니즘 제공 ). 일부 더 인기 있는 OSS 종속성 주입.NET의 IOC 프레임 워크를 포함 하는 /: AutoFac, Ninject, Spring.NET, StructureMap과 및 Windsor입니다. ASP.NET MVC 확장성 개발자의 해상도 컨트롤러의 인스턴스화를 참여할 수 있도록 하 고 종속성 주입을 사용 하도록 설정 하는 Api 노출 / IoC 프레임 워크가이 프로세스 내에서 완전히 통합 될 수 있습니다. DI/IOC 프레임 워크를 사용 하 여 것도 허용를 고를 DinnerRepositorys 간의 결합을 완전히 제거는 우리의 DinnersController –에서 기본 생성자를 제거 합니다. 종속성 주입 사용 하지 않으므로 / NerdDinner 응용 프로그램을 사용 하 여 IOC 프레임 워크입니다. 하지만 것 NerdDinner 코드 베이스 및 기능 증가 하는 경우 향후 고려할 수 있습니다. |
+| 정상적으로 작동 하지만 종속성의 수를 관리 하기 어렵게 할 수 있는데요 수동 종속성 주입 (예: 위의 기꺼이)를 수행 하 고 응용 프로그램의 구성 요소를 늘립니다. 여러 종속성 주입 프레임 워크는 더 많은 종속성 관리 유연성을 제공 하는 데 도움이 되는.NET에 존재 합니다. 라고도 "Inversion of Control" (IoC) 컨테이너에 이러한 프레임 워크를 지정 하 고 (가장 자주 사용 하 여 런타임에 생성자 주입 개체 종속성을 전달 하기 위한 구성 지원 추가 수준을 사용할 수 있는 메커니즘 제공 ). 일부 더 인기 있는 OSS 종속성 주입.NET의 IOC 프레임 워크를 포함 하는 /: AutoFac, Ninject, Spring.NET, StructureMap과 및 Windsor입니다. ASP.NET MVC 확장성 개발자의 해상도 컨트롤러의 인스턴스화를 참여할 수 있도록 하 고 종속성 주입을 사용 하도록 설정 하는 Api 노출 / IoC 프레임 워크가이 프로세스 내에서 완전히 통합 될 수 있습니다. DI/IOC 프레임 워크를 사용 하 여 것도 허용를 고를 DinnerRepository 간의 결합을 완전히 제거는 우리의 DinnersController –에서 기본 생성자를 제거 합니다. 종속성 주입 사용 하지 않으므로 / NerdDinner 응용 프로그램을 사용 하 여 IOC 프레임 워크입니다. 하지만 것 NerdDinner 코드 베이스 및 기능 증가 하는 경우 향후 고려할 수 있습니다. |
 
 ### <a name="creating-edit-action-unit-tests"></a>편집 작업 단위 테스트 만들기
 

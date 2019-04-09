@@ -8,15 +8,15 @@ ms.date: 02/18/2013
 ms.assetid: 0a1f88bd-97da-4ed1-86f1-605199dc75a4
 msc.legacyurl: /web-forms/overview/getting-started/hands-on-labs/whats-new-in-web-forms-in-aspnet-45
 msc.type: authoredcontent
-ms.openlocfilehash: 78cb6dec71e6b4974fdea4f205d1a36ebdfc3104
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 52f6ec17fb21019e93ebf2795e95d5b27e4edbe6
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58424446"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59401744"
 ---
-<a name="whats-new-in-web-forms-in-aspnet-45"></a>ASP.NET 4.5의 새로운 Web Forms 기능
-====================
+# <a name="whats-new-in-web-forms-in-aspnet-45"></a>ASP.NET 4.5의 새로운 Web Forms 기능
+
 [웹 캠프 팀](https://twitter.com/webcamps)
 
 > 새 버전의 ASP.NET Web Forms 다양 한 데이터로 작업 하는 경우 사용자 환경 개선에 집중 하는 향상 된 기능을 소개 합니다.
@@ -400,7 +400,7 @@ ASP.NET 4.5 Web Forms에 대 한 데이터 주석 유효성 검사를 소개합�
     > 
     > 몇 가지 사용 예:
     > 
-    > [키]: Specifies that an attribute is the unique identifier
+    > [Key]: Specifies that an attribute is the unique identifier
     > 
     > [Range(0.4, 0.5, ErrorMessage=&quot;{Write an error message}&quot;]: Double range
     > 
@@ -612,7 +612,7 @@ Asp.net에서 요청 유효성 검사 기능에는 특정 수준의 교차 사�
 > 또한 Azure는 다음이 응용이 프로그램을 배포할 수 [부록 b: 웹 배포를 사용 하 여 ASP.NET MVC 4 응용 프로그램 게시](#AppendixB)합니다.
 
 
-* * *
+---
 
 <a id="Summary"></a>
 ## <a name="summary"></a>요약

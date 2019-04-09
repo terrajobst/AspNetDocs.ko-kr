@@ -8,15 +8,15 @@ ms.date: 07/30/2013
 ms.assetid: 64906a1d-f734-41cf-9615-ee95f8740996
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/advanced-entity-framework-scenarios-for-an-mvc-web-application
 msc.type: authoredcontent
-ms.openlocfilehash: 18a292ada33936ea03f2d51427c160541424c8d1
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: a1218b1fb5a8ee28ea6ee3d3c5af979e86821ed7
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425615"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59391197"
 ---
-<a name="advanced-entity-framework-scenarios-for-an-mvc-web-application-10-of-10"></a>MVC 웹 응용 프로그램 (10 / 10)에 대 한 고급 Entity Framework 시나리오
-====================
+# <a name="advanced-entity-framework-scenarios-for-an-mvc-web-application-10-of-10"></a>MVC 웹 응용 프로그램 (10 / 10)에 대 한 고급 Entity Framework 시나리오
+
 [Tom Dykstra](https://github.com/tdykstra)
 
 [완료 된 프로젝트 다운로드](http://code.msdn.microsoft.com/Getting-Started-with-dd0e2ed8)
@@ -316,7 +316,8 @@ Visual Studio를 끝냅니다. 프로젝트를 열어야 하 고 다시 시도 �
 
 오류 메시지:
 
-*HTTP 오류 500.19-내부 서버 오류 요청된 된 페이지는 페이지의 관련된 구성 데이터가 잘못 되어 액세스할 수 없습니다.*
+*HTTP 오류 500.19 - 내부 서버 오류  
+페이지의 관련된 구성 데이터가 잘못 되어 요청된 된 페이지를 액세스할 수 없습니다.*
 
 해결책:
 
@@ -326,7 +327,7 @@ Visual Studio를 끝냅니다. 프로젝트를 열어야 하 고 다시 시도 �
 
 오류 메시지:
 
-*SQL Server에 연결을 설정 하는 동안 네트워크 관련 또는 인스턴스 관련 오류가 발생 했습니다. 서버를 찾을 수 없거나 액세스할 수 없습니다. 인스턴스 이름이 올바르고 SQL Server 원격 연결을 허용 하도록 구성 되어 있는지 확인 합니다. (공급자: SQL 네트워크 인터페이스, 오류: 26-지정 된 서버/인스턴스 찾기 오류)*
+*SQL Server에 연결하는 중에 네트워크 관련 오류 또는 인스턴스별 오류가 발생했습니다. 서버를 찾을 수 없거나 액세스할 수 없습니다. 인스턴스 이름이 올바르고 SQL Server가 원격 연결을 허용하도록 구성되어 있는지 확인합니다. (공급자: SQL 네트워크 인터페이스, 오류: 26 - 지정된 서버/인스턴스 찾기 오류)*
 
 해결책:
 

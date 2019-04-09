@@ -8,15 +8,15 @@ ms.date: 08/03/2007
 ms.assetid: 57459065-ed7c-4dfe-ac9c-54c093abc261
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/working-with-computed-columns-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 097d68bdcde7de713ce2e7c829c0611d4c82d64d
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: b9419b3834b2d592858a510befcd5de460b97044
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58424757"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59401662"
 ---
-<a name="working-with-computed-columns-c"></a>계산 열 작업(C#)
-====================
+# <a name="working-with-computed-columns-c"></a>계산 열 작업(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_71_CS.zip) 또는 [PDF 다운로드](working-with-computed-columns-cs/_static/datatutorial71cs1.pdf)
@@ -54,7 +54,7 @@ SQL에서 문자열을 연결 수는 참고를 사용 하 여는 `+` 연산자�
 이 계산된 열을 추가한 후 그림 1의 스크린샷 같은 화면이 표시 됩니다.
 
 
-[![FullContactName Suppliers 테이블에 명명 된 계산된 열 추가](working-with-computed-columns-cs/_static/image2.png)](working-with-computed-columns-cs/_static/image1.png)
+[![ASuppliers 테이블에 열 이름이 FullContactName 계산을 dd](working-with-computed-columns-cs/_static/image2.png)](working-with-computed-columns-cs/_static/image1.png)
 
 **그림 1**: 계산 된 열 이라는 추가 `FullContactName` 에 `Suppliers` 테이블 ([클릭 하 여 큰 이미지 보기](working-with-computed-columns-cs/_static/image3.png))
 
@@ -79,7 +79,7 @@ Let s 보려면 잠시 데이터 액세스 계층에서 작업을 시작 하기 
 결과 포함 하는 그림 2에서 볼 수 있듯이 `FullContactName`, 나열 하는 합니다 `CompanyName`, `ContactName`, 및 `ContactTitle` 는 형식 d q u o;를 사용 하 여 열`ContactName` (`ContactTitle`, `CompanyName`) .
 
 
-[![FullContactName 형식 ContactName (ContactTitle, CompanyName) 사용](working-with-computed-columns-cs/_static/image5.png)](working-with-computed-columns-cs/_static/image4.png)
+[![TFullContactName 사용 (ContactTitle, CompanyName) 형식 ContactName](working-with-computed-columns-cs/_static/image5.png)](working-with-computed-columns-cs/_static/image4.png)
 
 **그림 2**: 합니다 `FullContactName` 형식을 사용 `ContactName` (`ContactTitle`를 `CompanyName`) ([클릭 하 여 큰 이미지 보기](working-with-computed-columns-cs/_static/image6.png))
 
@@ -97,7 +97,7 @@ Let s 보려면 잠시 데이터 액세스 계층에서 작업을 시작 하기 
 열어서 시작 합니다 `NorthwindWithSprocs` 데이터 집합에는 `~/App_Code/DAL` 폴더. 디자이너에서 마우스를 상황에 맞는 메뉴에서 새 TableAdapter를 추가 하려면 선택 합니다. TableAdapter 구성 마법사를 시작 됩니다. 데이터를 쿼리 하는 데이터베이스를 지정 합니다. (`NORTHWNDConnectionString` 에서 `Web.config`) 다음을 클릭 합니다. 쿼리 및 수정에 대 한 저장된 프로시저를 아직 만들지 않은 것 이므로 `Suppliers` 테이블 만들기 마법사에 만들고 되 고 다음을 클릭 되도록 새 저장된 프로시저 옵션을 선택 합니다.
 
 
-[![새 저장된 프로시저 만들기 옵션을 선택 합니다.](working-with-computed-columns-cs/_static/image8.png)](working-with-computed-columns-cs/_static/image7.png)
+[![C새 저장 프로시저 옵션을 설치할 만들기](working-with-computed-columns-cs/_static/image8.png)](working-with-computed-columns-cs/_static/image7.png)
 
 **그림 3**: 새 저장된 프로시저 만들기 옵션을 선택 ([클릭 하 여 큰 이미지 보기](working-with-computed-columns-cs/_static/image9.png))
 
@@ -110,7 +110,7 @@ Let s 보려면 잠시 데이터 액세스 계층에서 작업을 시작 하기 
 주 쿼리를 입력 하 고 다음을 클릭 합니다 마법사를 사용 하면 생성 된 네 개의 저장된 프로시저 이름을 수 있도록 합니다. 이러한 저장된 프로시저의 이름을 `Suppliers_Select`, `Suppliers_Insert`를 `Suppliers_Update`, 및 `Suppliers_Delete`그림 4에서 볼 수 있듯이, 합니다.
 
 
-[![자동 생성 저장된 프로시저의 이름을 사용자 지정](working-with-computed-columns-cs/_static/image11.png)](working-with-computed-columns-cs/_static/image10.png)
+[![Customize Auto-Generated 저장 프로시저의 이름](working-with-computed-columns-cs/_static/image11.png)](working-with-computed-columns-cs/_static/image10.png)
 
 **그림 4**: Auto-Generated 저장 프로시저의 이름을 사용자 지정 ([클릭 하 여 큰 이미지 보기](working-with-computed-columns-cs/_static/image12.png))
 
@@ -118,7 +118,7 @@ Let s 보려면 잠시 데이터 액세스 계층에서 작업을 시작 하기 
 다음 마법사 단계를 사용 하면 TableAdapter의 메서드 이름을 지정 하 고 데이터 액세스 및 업데이트 하는 데 패턴을 지정할 수 있습니다. 이 옵션을 선택 하는 모든 세 개의 확인란 유지 되지만 이름을 바꿀 합니다 `GetData` 메서드를 `GetSuppliers`입니다. 마법사를 완료 하려면 마침을 클릭 합니다.
 
 
-[![GetData 메서드 GetSuppliers에 이름 바꾸기](working-with-computed-columns-cs/_static/image14.png)](working-with-computed-columns-cs/_static/image13.png)
+[![RGetData 메서드 GetSuppliers ename](working-with-computed-columns-cs/_static/image14.png)](working-with-computed-columns-cs/_static/image13.png)
 
 **그림 5**: 이름 바꾸기는 `GetData` 메서드를 `GetSuppliers` ([클릭 하 여 큰 이미지 보기](working-with-computed-columns-cs/_static/image15.png))
 
@@ -142,7 +142,7 @@ Let s 보려면 잠시 데이터 액세스 계층에서 작업을 시작 하기 
 데이터 집합 디자이너로 돌아온 다음으로, 마우스 오른쪽 단추로 클릭는 `SuppliersTableAdapter`, 상황에 맞는 메뉴에서 구성 선택 합니다. 합니다 `Suppliers_Select` 열에 포함 되어 이제는 `FullContactName` 데이터 열 컬렉션의 열입니다.
 
 
-[![DataTable의 열을 업데이트 하려면 TableAdapter의 구성 마법사 실행](working-with-computed-columns-cs/_static/image17.png)](working-with-computed-columns-cs/_static/image16.png)
+[![R취소 DataTable의 열을 업데이트 하려면 TableAdapter의 구성 마법사](working-with-computed-columns-cs/_static/image17.png)](working-with-computed-columns-cs/_static/image16.png)
 
 **그림 6**: Tableadapter의 DataTable의 열을 업데이트 하려면 구성 마법사를 실행 합니다. ([클릭 하 여 큰 이미지 보기](working-with-computed-columns-cs/_static/image18.png))
 
@@ -150,7 +150,7 @@ Let s 보려면 잠시 데이터 액세스 계층에서 작업을 시작 하기 
 마법사를 완료 하려면 마침을 클릭 합니다. 이 자동으로 해당 열을 추가 하 여 `SuppliersDataTable`입니다. TableAdapter 마법사가 지능적 감지 하는 `FullContactName` 열은 계산된 열 및 읽기 전용입니다. 따라서 s 열을 설정 합니다 `ReadOnly` 속성을 `true`입니다. 이 확인 하려면에서 열을 선택 합니다 `SuppliersDataTable` 속성 창으로 이동한 다음 (그림 7 참조). 합니다 `FullContactName` 열 s `DataType` 및 `MaxLength` 속성도 적절 하 게 설정 됩니다.
 
 
-[![FullContactName 열이 읽기 전용으로 표시 되어](working-with-computed-columns-cs/_static/image20.png)](working-with-computed-columns-cs/_static/image19.png)
+[![T읽기 전용으로 표시 되어 그 FullContactName 열](working-with-computed-columns-cs/_static/image20.png)](working-with-computed-columns-cs/_static/image19.png)
 
 **그림 7**: 합니다 `FullContactName` 열은 읽기 전용으로 표시 됩니다 ([큰 이미지를 보려면 클릭](working-with-computed-columns-cs/_static/image21.png))
 
@@ -162,7 +162,7 @@ Let s 보려면 잠시 데이터 액세스 계층에서 작업을 시작 하기 
 마우스 오른쪽 단추로 클릭는 `SuppliersTableAdapter` 데이터 집합 디자인에서 상황에 맞는 메뉴에서 추가 쿼리 옵션을 선택 합니다. 3 단계에서에서 했던 것 처럼 자동으로 새 저장된 프로시저 만들기 옵션을 선택 하 여 미국에 대 한 새 저장된 프로시저를 생성 (참조 다시 그림 3이 마법사 단계 스크린샷). 이 메서드는 여러 열을 사용 하 여 레코드를 반환 하 고, 행을 반환 하는 선택 된 SQL 쿼리를 사용 하 고 다음을 클릭을 나타냅니다.
 
 
-[![옵션 행을 반환 하는 선택](working-with-computed-columns-cs/_static/image23.png)](working-with-computed-columns-cs/_static/image22.png)
+[![C설치할 옵션 행을 반환 하는 SELECT](working-with-computed-columns-cs/_static/image23.png)](working-with-computed-columns-cs/_static/image22.png)
 
 **그림 8**: 옵션 행을 반환 하는 선택 ([클릭 하 여 큰 이미지 보기](working-with-computed-columns-cs/_static/image24.png))
 
@@ -175,7 +175,7 @@ Let s 보려면 잠시 데이터 액세스 계층에서 작업을 시작 하기 
 다음 화면에서는 자동으로 생성 되는 저장된 프로시저 이름입니다. 이 저장된 프로시저 이름을 `Suppliers_SelectBySupplierID` 다음을 클릭 합니다.
 
 
-[![저장된 프로시저 Suppliers_SelectBySupplierID 이름](working-with-computed-columns-cs/_static/image26.png)](working-with-computed-columns-cs/_static/image25.png)
+[![N저장 프로시저 Suppliers_SelectBySupplierID \ 이름](working-with-computed-columns-cs/_static/image26.png)](working-with-computed-columns-cs/_static/image25.png)
 
 **그림 9**: 저장 프로시저의 이름을 `Suppliers_SelectBySupplierID` ([큰 이미지를 보려면 클릭](working-with-computed-columns-cs/_static/image27.png))
 
@@ -183,7 +183,7 @@ Let s 보려면 잠시 데이터 액세스 계층에서 작업을 시작 하기 
 마지막으로, 마법사의 메시지에 패턴 및 TableAdapter에 사용할 메서드 이름에 액세스 하는 데이터입니다. 이 옵션을 선택 확인란을 모두 유지 되지만 이름을 바꿀 합니다 `FillBy` 및 `GetDataBy` 방법 `FillBySupplierID` 및 `GetSupplierBySupplierID`각각.
 
 
-[![TableAdapter 메서드 FillBySupplierID 이름과 GetSupplierBySupplierID](working-with-computed-columns-cs/_static/image29.png)](working-with-computed-columns-cs/_static/image28.png)
+[![Name TableAdapter 메서드 FillBySupplierID 및 GetSupplierBySupplierID](working-with-computed-columns-cs/_static/image29.png)](working-with-computed-columns-cs/_static/image28.png)
 
 **그림 10**: TableAdapter 메서드 이름을 `FillBySupplierID` 하 고 `GetSupplierBySupplierID` ([클릭 하 여 큰 이미지 보기](working-with-computed-columns-cs/_static/image30.png))
 
@@ -210,7 +210,7 @@ Let s 보려면 잠시 데이터 액세스 계층에서 작업을 시작 하기 
 계산 열이 추가 합니다 `Suppliers` DAL 테이블 및 BLL 적절 하 게 업데이트를 사용 하는 ASP.NET 페이지를 빌드할 준비가 `FullContactName` 계산된 열입니다. 열어서 시작 합니다 `ComputedColumns.aspx` 페이지에서 `AdvancedDAL` 폴더 및 디자이너 도구 상자에서 끌어서 GridView입니다. 집합 GridView s `ID` 속성을 `Suppliers` 및 스마트 태그를 바인딩할 라는 새로운 ObjectDataSource는 `SuppliersDataSource`합니다. ObjectDataSource를 사용 하 여 구성 된 `SuppliersBLLWithSprocs` 추가한 클래스 6 단계에서에서 백업 하 고 다음을 클릭 합니다.
 
 
-[![SuppliersBLLWithSprocs 클래스를 사용 하는 ObjectDataSource 구성](working-with-computed-columns-cs/_static/image32.png)](working-with-computed-columns-cs/_static/image31.png)
+[![Configure SuppliersBLLWithSprocs 클래스를 사용 하는 ObjectDataSource](working-with-computed-columns-cs/_static/image32.png)](working-with-computed-columns-cs/_static/image31.png)
 
 **그림 11**: ObjectDataSource를 사용 하 여 구성 합니다 `SuppliersBLLWithSprocs` 클래스 ([큰 이미지를 보려면 클릭](working-with-computed-columns-cs/_static/image33.png))
 
@@ -229,7 +229,7 @@ GridView 및 ObjectDataSource 같은이 편집을 마치면 선언적 태그는 
 그런 다음 브라우저를 통해이 페이지를 방문 합니다. 각 공급 업체를 포함 하는 표에 나열 됩니다 그림 12에서 볼 수 있듯이 `FullContactName` 열에서 값이 단순히 연결 하 여 다른 세 개의 열으로 포맷 `ContactName` (`ContactTitle`, `CompanyName`).
 
 
-[![각 공급 업체는 표에 나열 된](working-with-computed-columns-cs/_static/image35.png)](working-with-computed-columns-cs/_static/image34.png)
+[![E공급 업체는 표에 나열 된 대 한 ach](working-with-computed-columns-cs/_static/image35.png)](working-with-computed-columns-cs/_static/image34.png)
 
 **그림 12**: 각 공급 업체는 표에 나열 된 ([클릭 하 여 큰 이미지 보기](working-with-computed-columns-cs/_static/image36.png))
 
@@ -237,7 +237,7 @@ GridView 및 ObjectDataSource 같은이 편집을 마치면 선언적 태그는 
 특정 공급 업체 포스트백을 발생 시키는 있으며 해당 행에 렌더링에 대 한 편집 단추를 클릭 하면 (그림 13 참조) 인터페이스의 편집 합니다. 처음 세 열 편집 인터페이스의 기본에서 렌더링-TextBox 컨트롤 `Text` 속성 데이터 필드의 값으로 설정 됩니다. 그러나 `FullContactName` 텍스트 열에 그대로 있습니다. 데이터 소스 구성 마법사를 완료할 때 GridView에는 BoundFields 추가 된 경우는 `FullContactName` BoundField s `ReadOnly` 속성이 설정 되 `true` 때문에 해당 `FullContactName` 열에는 `SuppliersDataTable` 에 해당 `ReadOnly` 속성이 설정 `true`합니다. 4 단계에서에서 설명 했 듯이 합니다 `FullContactName` s `ReadOnly` 속성이 설정 되 `true` TableAdapter 열 계산된 열 되었는지 검색 합니다.
 
 
-[![FullContactName 열이 편집할 수 없습니다.](working-with-computed-columns-cs/_static/image38.png)](working-with-computed-columns-cs/_static/image37.png)
+[![TFullContactName 열 담당 하 고 편집할 수 없습니다](working-with-computed-columns-cs/_static/image38.png)](working-with-computed-columns-cs/_static/image37.png)
 
 **그림 13**: 합니다 `FullContactName` 열이 편집할 수 없습니다 ([큰 이미지를 보려면 클릭](working-with-computed-columns-cs/_static/image39.png))
 

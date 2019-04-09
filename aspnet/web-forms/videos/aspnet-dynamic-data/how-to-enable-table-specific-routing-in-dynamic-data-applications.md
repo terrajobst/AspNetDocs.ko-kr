@@ -8,15 +8,15 @@ ms.date: 10/23/2008
 ms.assetid: cfbfa166-2f92-4f21-889c-95c9bef436cc
 msc.legacyurl: /web-forms/videos/aspnet-dynamic-data/how-to-enable-table-specific-routing-in-dynamic-data-applications
 msc.type: video
-ms.openlocfilehash: 972e7c2812fd300cfd501db1c1adebdedcda0833
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a1b099aedc6fa0824df3281cca55543bcfd4d159
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049720"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59386784"
 ---
-<a name="how-to-enable-table-specific-routing-in-dynamic-data-applications"></a>Dynamic Data 응용 프로그램에서 테이블 관련 라우팅 사용 하도록 설정 하는 방법
-====================
+# <a name="how-to-enable-table-specific-routing-in-dynamic-data-applications"></a>Dynamic Data 응용 프로그램에서 테이블 관련 라우팅 사용 하도록 설정 하는 방법
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 이 비디오에서 라우팅 테이블 관련.aspx 파일 사용 하 여 ASP.NET 동적 데이터 응용 프로그램에 사용자 지정 워크플로 논리를 추가 하는 방법에 알아봅니다.

@@ -1,27 +1,28 @@
 ---
 uid: web-api/overview/getting-started-with-aspnet-web-api/creating-api-help-pages
-title: ASP.NET Web API에 대 한 도움말 페이지 만들기 | Microsoft Docs
+title: ASP.NET Web API-ASP.NET에 대 한 도움말 페이지를 만드는 4.x
 author: MikeWasson
-description: ''
+description: 코드를 사용 하 여이 자습서에는 ASP.NET에서 ASP.NET Web API에 대 한 도움말 페이지를 만드는 방법을 보여 줍니다 4.x 합니다.
 ms.author: riande
 ms.date: 04/01/2013
+ms.custom: seoapril2019
 ms.assetid: 0150e67b-c50d-4613-83ea-7b4ef8cacc5a
 msc.legacyurl: /web-api/overview/getting-started-with-aspnet-web-api/creating-api-help-pages
 msc.type: authoredcontent
-ms.openlocfilehash: fba368e4017fea65ff96e2540d486662cc6b45f8
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: e3f6a9b8a6835b034a075d580cd9a33136969990
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423730"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59395019"
 ---
-<a name="creating-help-pages-for-aspnet-web-api"></a>ASP.NET Web API에 대 한 도움말 페이지 만들기
-====================
+# <a name="creating-help-pages-for-aspnet-web-api"></a>ASP.NET Web API에 대 한 도움말 페이지 만들기
+
 [Mike Wasson](https://github.com/MikeWasson)
 
-Web API를 만들 때 유용 도움말 페이지를 만들려면 다른 개발자가 API를 호출 하는 방법을 알 수 있도록 합니다. 문서의 모든 작업을 수동으로 만들 수 있지만 최대한 자동 생성 하는 것이 좋습니다.
+코드를 사용 하 여이 자습서에는 ASP.NET에서 ASP.NET Web API에 대 한 도움말 페이지를 만드는 방법을 보여 줍니다 4.x 합니다.
 
-이 작업을 쉽게 하려면 ASP.NET Web API 도움말 페이지를 자동으로 생성에 대 한 라이브러리를 런타임에 제공 합니다.
+Web API를 만들 때 유용 도움말 페이지를 만들려면 다른 개발자가 API를 호출 하는 방법을 알 수 있도록 합니다. 문서의 모든 작업을 수동으로 만들 수 있지만 최대한 자동 생성 하는 것이 좋습니다. 이 작업을 쉽게 하려면 ASP.NET Web API 도움말 페이지를 자동으로 생성에 대 한 라이브러리를 런타임에 제공 합니다.
 
 ![](creating-api-help-pages/_static/image1.png)
 
@@ -61,7 +62,7 @@ Web API를 만들 때 유용 도움말 페이지를 만들려면 다른 개발�
 
 에 **Visual Basic** 응용 프로그램: `Install-Package Microsoft.AspNet.WebApi.HelpPage.VB`
 
-두 개의 패키지, C# 및 Visual Basic 있습니다. 프로젝트와 일치 하는 것을 사용 해야 합니다.
+두 개의 패키지, C# 및 Visual basic 있습니다. 프로젝트와 일치 하는 것을 사용 해야 합니다.
 
 이 명령은 필요한 어셈블리를 설치 하 고 (영역/HelpPage 폴더에 있음) 도움말 페이지에 대 한 MVC 보기 추가 합니다. 도움말 페이지에 대 한 링크를 수동으로 추가 해야 합니다. URI가 /Help. Razor 보기에서 링크를 만들려면 다음을 추가 합니다.
 

@@ -8,15 +8,15 @@ ms.date: 05/18/2012
 ms.assetid: 1a2ed0e8-63da-4110-9896-e2731d86f7c4
 msc.legacyurl: /web-pages/overview
 msc.type: book
-ms.openlocfilehash: f95d998b838e262dd1843c882dae466a88c23ad5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b4c9e9eb85f6ba9a1e2b2d0a1bbaf027ee25bc0d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57023990"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381850"
 ---
-<a name="web-pages-guidance"></a>웹 페이지 지침
-====================
+# <a name="web-pages-guidance"></a>웹 페이지 지침
+
 - [시작](getting-started/index.md)
 
     - [Visual Studio에서 ASP.NET 웹 페이지 프로그래밍](getting-started/program-asp-net-web-pages-in-visual-studio.md)
@@ -28,9 +28,9 @@ ms.locfileid: "57023990"
     - [ASP.NET 웹 페이지 소개](getting-started/introducing-aspnet-web-pages-2/index.md)
 
         - [시작](getting-started/introducing-aspnet-web-pages-2/getting-started.md)
-        - [프로그래밍 기본](getting-started/introducing-aspnet-web-pages-2/intro-to-web-pages-programming.md)
+        - [프로그래밍 기본 사항](getting-started/introducing-aspnet-web-pages-2/intro-to-web-pages-programming.md)
         - [데이터 표시](getting-started/introducing-aspnet-web-pages-2/displaying-data.md)
-        - [HTML 양식 기본](getting-started/introducing-aspnet-web-pages-2/form-basics.md)
+        - [HTML 양식 기본 사항](getting-started/introducing-aspnet-web-pages-2/form-basics.md)
         - [양식을 사용하여 데이터베이스 데이터 입력](getting-started/introducing-aspnet-web-pages-2/entering-data.md)
         - [데이터베이스 데이터 업데이트](getting-started/introducing-aspnet-web-pages-2/updating-data.md)
         - [데이터베이스 데이터 삭제](getting-started/introducing-aspnet-web-pages-2/deleting-data.md)
@@ -51,7 +51,7 @@ ms.locfileid: "57023990"
     - [도우미 설치](ui-layouts-and-themes/installing-helpers.md)
     - [ASP.NET 웹 페이지와 Twitter 도우미](ui-layouts-and-themes/twitter-helper.md)
     - [ASP.NET 웹 페이지 사이트에 맵 표시](ui-layouts-and-themes/displaying-maps-in-an-aspnet-web-pages-site.md)
-- [모바일](mobile/index.md)
+- [휴대폰](mobile/index.md)
 
     - [모바일 디바이스를 위한 ASP.NET 웹 페이지 사이트 렌더링](mobile/rendering-aspnet-web-pages-sites-for-mobile-devices.md)
 - [데이터 작업](data/index.md)
@@ -78,8 +78,8 @@ ms.locfileid: "57023990"
     - [ASP.NET API 빠른 참조](api-reference/asp-net-web-pages-api-reference.md)
 - [릴리스](releases/index.md)
 
-    - [ASP.NET Web Pages 3.2의 새로운 기능](releases/whats-new-in-aspnet-web-pages-32.md)
-    - [ASP.NET Web Pages 3.1의 새로운 기능](releases/whats-new-aspnet-web-pages-31.md)
+    - [ASP.NET 웹 페이지 3.2의 새로운 기능](releases/whats-new-in-aspnet-web-pages-32.md)
+    - [ASP.NET 웹 페이지 3.1의 새로운 기능](releases/whats-new-aspnet-web-pages-31.md)
     - [ASP.NET 웹 페이지 2의 주요 기능](releases/top-features-in-web-pages-2.md)
     - [ASP.NET 웹 페이지 2 개발자 미리 보기 추가 정보](releases/aspnet-web-pages-2-developer-preview-readme.md)
     - [여러 버전의 ASP.NET 웹 페이지를 나란히 실행](releases/running-v1-and-v2-sites-side-by-side.md)

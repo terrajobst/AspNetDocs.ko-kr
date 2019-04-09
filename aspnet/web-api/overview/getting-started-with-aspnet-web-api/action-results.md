@@ -1,22 +1,23 @@
 ---
 uid: web-api/overview/getting-started-with-aspnet-web-api/action-results
-title: Web API 2에서에서 작업의 결과 | Microsoft Docs
+title: 작업의 결과 Web API 2-ASP.NET 4.x
 author: MikeWasson
-description: ''
+description: ASP.NET Web API ASP.NET에서 HTTP 응답 메시지에 컨트롤러 작업에서 반환 값을 변환 하는 방법에 대해 설명 4.x 합니다.
 ms.author: riande
 ms.date: 02/03/2014
+ms.custom: seoapril2019
 ms.assetid: 2fc4797c-38ef-4cc7-926c-ca431c4739e8
 msc.legacyurl: /web-api/overview/getting-started-with-aspnet-web-api/action-results
 msc.type: authoredcontent
-ms.openlocfilehash: c255cebfd6b0c632c000d24288a4dd4cf73c8a1c
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 87f71938a5c5f38d3a456ba9339540f67e236e1a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422040"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59400895"
 ---
-<a name="action-results-in-web-api-2"></a>Web API 2의 작업 결과
-====================
+# <a name="action-results-in-web-api-2"></a>Web API 2의 작업 결과
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 이 항목에서는 ASP.NET Web API HTTP 응답 메시지에 컨트롤러 작업에서 반환 값을 변환 하는 방법을 설명 합니다.

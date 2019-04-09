@@ -8,15 +8,15 @@ ms.date: 06/26/2007
 ms.assetid: cf025e08-48fc-4385-b176-8610aa7b5565
 msc.legacyurl: /web-forms/overview/data-access/working-with-batched-data/batch-inserting-cs
 msc.type: authoredcontent
-ms.openlocfilehash: afcfc92b4e0db8092f83b67c6c227af91bdc0cbb
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 49bdb8e6429449417f2a5ecb2a00101928e3c82e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58426053"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59401025"
 ---
-<a name="batch-inserting-c"></a>일괄 삽입(C#)
-====================
+# <a name="batch-inserting-c"></a>일괄 삽입(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_66_CS.zip) 또는 [PDF 다운로드](batch-inserting-cs/_static/datatutorial66cs1.pdf)
@@ -33,7 +33,7 @@ ms.locfileid: "58426053"
 약간의 작업을 사용 하 여 공급자 및 범주를 한 번 일련의 제품 이름과 단위 가격이 입력 한 다음 데이터베이스에 새 제품을 추가 하는 단추를 클릭을 선택할 수 있도록 해 주는 인터페이스를 삽입 하는 일괄 처리를 만들 수 있습니다 (그림 1 참조). 각 제품 추가 됨에 따라 해당 `ProductName` 및 `UnitPrice` 데이터 필드는 텍스트 상자에 입력 된 값을 할당 하는 동안 해당 `CategoryID` 및 `SupplierID` 값 상위 fo 폼에서 Dropdownlist의 값이 할당 됩니다. `Discontinued` 하 고 `UnitsOnOrder` 값의 하드 코드 된 값으로 설정 됩니다 `false` 0, 각각.
 
 
-[![일괄 처리 삽입 인터페이스](batch-inserting-cs/_static/image2.png)](batch-inserting-cs/_static/image1.png)
+[![T또한 일괄 처리 삽입 인터페이스](batch-inserting-cs/_static/image2.png)](batch-inserting-cs/_static/image1.png)
 
 **그림 1**: 일괄 처리 삽입 인터페이스 ([클릭 하 여 큰 이미지 보기](batch-inserting-cs/_static/image3.png))
 
@@ -49,7 +49,7 @@ ms.locfileid: "58426053"
 열어서 시작 합니다 `BatchInsert.aspx` 페이지는 `BatchData` 폴더 및 디자이너 도구 상자에서 끌어서 패널 (그림 2 참조). 설정 패널 s `ID` 속성을 `DisplayInterface`입니다. 디자이너에 패널을 추가 하는 경우 해당 `Height` 고 `Width` 속성 50px를 125px를 각각 설정 됩니다. 속성 창에서 이러한 속성 값을 지웁니다.
 
 
-[![디자이너 도구 상자에서 패널을 끌어 옵니다.](batch-inserting-cs/_static/image5.png)](batch-inserting-cs/_static/image4.png)
+[![D디자이너 도구 상자에서 패널 rag](batch-inserting-cs/_static/image5.png)](batch-inserting-cs/_static/image4.png)
 
 **그림 2**: 디자이너 도구 상자에서 패널을 끌어 옵니다. ([클릭 하 여 큰 이미지 보기](batch-inserting-cs/_static/image6.png))
 
@@ -57,12 +57,12 @@ ms.locfileid: "58426053"
 그런 다음 패널에 단추와 GridView 컨트롤을 끕니다. S 단추 설정 `ID` 속성을 `ProcessShipment` 고 `Text` 프로세스 제품 배송과 속성입니다. 집합 GridView s `ID` 속성을 `ProductsGrid` 및 스마트 태그를 바인딩할 라는 새로운 ObjectDataSource는 `ProductsDataSource`합니다. ObjectDataSource에서 해당 데이터를 가져오도록 구성 합니다 `ProductsBLL` s 클래스 `GetProducts` 메서드. 데이터 표시에이 GridView를 사용 하므로 삽입, 업데이트, 드롭 다운 목록을 설정 하 고 탭 (없음)를 삭제 합니다. 데이터 소스 구성 마법사를 완료 하려면 마침을 클릭 합니다.
 
 
-[![S ProductsBLL 클래스 GetProducts 메서드에서 반환 되는 데이터를 표시 합니다.](batch-inserting-cs/_static/image8.png)](batch-inserting-cs/_static/image7.png)
+[![Display s GetProducts 메서드 ProductsBLL 클래스에서 반환 된 데이터](batch-inserting-cs/_static/image8.png)](batch-inserting-cs/_static/image7.png)
 
 **그림 3**: 반환 된 데이터를 표시 합니다 `ProductsBLL` s 클래스 `GetProducts` 메서드 ([클릭 하 여 큰 이미지 보기](batch-inserting-cs/_static/image9.png))
 
 
-[![UPDATE, INSERT 드롭 다운 목록을 설정 하 고 탭 삭제 (없음)](batch-inserting-cs/_static/image11.png)](batch-inserting-cs/_static/image10.png)
+[![SUPDATE, INSERT 및 DELETE 탭 (없음)에 있는 드롭다운 목록은 et](batch-inserting-cs/_static/image11.png)](batch-inserting-cs/_static/image10.png)
 
 **그림 4**: 설정 드롭다운 목록에서 업데이트, 삽입 및 삭제 하는 탭 (없음) ([클릭 하 여 큰 이미지 보기](batch-inserting-cs/_static/image12.png))
 
@@ -79,7 +79,7 @@ ObjectDataSource 마법사를 완료 한 후 Visual Studio는 BoundFields 및 �
 시간을 내어 브라우저를 통해 진행 상황을 확인 합니다. 그림 5에서 알 수 있듯이, 한 번에 10 개 제품을 나열 하는 GridView 위에 프로세스 제품 배송과 단추가 표시 됩니다.
 
 
-[![제품을 나열 하 고 정렬 및 페이징 기능을 제공 하는 GridView](batch-inserting-cs/_static/image14.png)](batch-inserting-cs/_static/image13.png)
+[![T그 GridView에는 제품 및 제공 정렬 및 페이징 기능 나열](batch-inserting-cs/_static/image14.png)](batch-inserting-cs/_static/image13.png)
 
 **그림 5**: 제품 및 제공 정렬 및 페이징 기능을 나열 하는 GridView ([클릭 하 여 큰 이미지 보기](batch-inserting-cs/_static/image15.png))
 
@@ -109,7 +109,7 @@ ObjectDataSource 마법사를 완료 한 후 Visual Studio는 BoundFields 및 �
 입력이 태그를 사용 하 여 디자인 뷰로 돌아갑니다. 이 `<table>` 그림 6에서 볼 수 있듯이 디자이너에서 네 개의 열과 7 행 테이블로 표시 됩니다.
 
 
-[![삽입 인터페이스에 구성 된 열을 4-7 행 테이블](batch-inserting-cs/_static/image17.png)](batch-inserting-cs/_static/image16.png)
+[![T인터페이스 삽입은 구성 하는 그 열을 4-7 행 테이블](batch-inserting-cs/_static/image17.png)](batch-inserting-cs/_static/image16.png)
 
 **그림 6**: 삽입 인터페이스에 구성 된 열을 4-7 행 테이블 ([클릭 하 여 큰 이미지 보기](batch-inserting-cs/_static/image18.png))
 
@@ -119,7 +119,7 @@ ObjectDataSource 마법사를 완료 한 후 Visual Studio는 BoundFields 및 �
 DropDownList의 공급자를 설정 `ID` 속성을 `Suppliers` 라는 새 ObjectDataSource를 바인딩할 `SuppliersDataSource`합니다. 해당 데이터를 검색할 새 ObjectDataSource 구성 합니다 `SuppliersBLL` s 클래스 `GetSuppliers` 메서드와 업데이트 집합 탭 (없음) s 드롭 다운 목록. 마법사를 완료 하려면 마침을 클릭 합니다.
 
 
-[![S SuppliersBLL 클래스 GetSuppliers 메서드를 사용 하는 ObjectDataSource 구성](batch-inserting-cs/_static/image20.png)](batch-inserting-cs/_static/image19.png)
+[![Configure SuppliersBLL 클래스의 GetSuppliers 메서드를 사용 하는 ObjectDataSource](batch-inserting-cs/_static/image20.png)](batch-inserting-cs/_static/image19.png)
 
 **그림 7**: ObjectDataSource를 사용 하 여 구성 합니다 `SuppliersBLL` s 클래스 `GetSuppliers` 메서드 ([클릭 하 여 큰 이미지 보기](batch-inserting-cs/_static/image21.png))
 
@@ -127,7 +127,7 @@ DropDownList의 공급자를 설정 `ID` 속성을 `Suppliers` 라는 새 Object
 가 `Suppliers` DropDownList 표시 합니다 `CompanyName` 데이터 필드와 사용 하 여는 `SupplierID` 으로 데이터 필드 해당 `ListItem`의 값입니다.
 
 
-[![CompanyName 데이터 필드를 표시 하 고 값으로 SupplierID 사용](batch-inserting-cs/_static/image23.png)](batch-inserting-cs/_static/image22.png)
+[![Display CompanyName 데이터 필드 및 값으로 사용 하 여 SupplierID](batch-inserting-cs/_static/image23.png)](batch-inserting-cs/_static/image22.png)
 
 **그림 8**: 표시 된 `CompanyName` 데이터 필드와 사용 하 여 `SupplierID` 값으로 ([클릭 하 여 큰 이미지 보기](batch-inserting-cs/_static/image24.png))
 
@@ -137,7 +137,7 @@ DropDownList의 공급자를 설정 `ID` 속성을 `Suppliers` 라는 새 Object
 Dropdownlist 이러한 두 추가 되었으며 적절 하 게 구성 된 경우, ObjectDataSources에 바인딩된 후 화면은 그림 9와 비슷하게 표시 됩니다.
 
 
-[![공급자 및 범주 Dropdownlist 머리글 행을 포함 하는 이제](batch-inserting-cs/_static/image26.png)](batch-inserting-cs/_static/image25.png)
+[![T머리글 행 그는 이제 공급자 및 범주 Dropdownlist 포함](batch-inserting-cs/_static/image26.png)](batch-inserting-cs/_static/image25.png)
 
 **그림 9**: 헤더 행 이제 포함 된 `Suppliers` 및 `Categories` Dropdownlist ([전체 크기 이미지를 보려면 클릭](batch-inserting-cs/_static/image27.png))
 
@@ -157,7 +157,7 @@ CompareValidator 단가 텍스트 상자 설정의 각 추가 합니다 `Control
 이 시점에서 화면 그림 10 유사 합니다.
 
 
-[![삽입 인터페이스 이제 텍스트 상자 제품에 대 한 이름 및 가격](batch-inserting-cs/_static/image29.png)](batch-inserting-cs/_static/image28.png)
+[![T그 삽입 인터페이스 이제 포함 텍스트 상자 제품 이름 및 가격](batch-inserting-cs/_static/image29.png)](batch-inserting-cs/_static/image28.png)
 
 **그림 10**: 삽입 인터페이스 이제 포함 텍스트 상자 제품 이름 및 가격에 대 한 ([클릭 하 여 큰 이미지 보기](batch-inserting-cs/_static/image30.png))
 
@@ -171,7 +171,7 @@ CompareValidator 단가 텍스트 상자 설정의 각 추가 합니다 `Control
 그림 11에서는 레이블을 추가 및 구성 된 후 Visual Studio 디자이너를 보여 줍니다.
 
 
-[![두 개의 패널 컨트롤 위에 statuslabel은 컨트롤 배치](batch-inserting-cs/_static/image32.png)](batch-inserting-cs/_static/image31.png)
+[![P바꾸기 statuslabel은 컨트롤 위에 두 개의 패널 컨트롤](batch-inserting-cs/_static/image32.png)](batch-inserting-cs/_static/image31.png)
 
 **그림 11**: 위치는 `StatusLabel` 컨트롤 위에 두 개의 패널 컨트롤 ([큰 이미지를 보려면 클릭](batch-inserting-cs/_static/image33.png))
 
@@ -208,7 +208,7 @@ CompareValidator 단가 텍스트 상자 설정의 각 추가 합니다 `Control
 > 삽입 인터페이스를 보면서 잠시 단가 텍스트 상자에 CompareValidators 테스트 합니다. 클라이언트 쪽 messagebox에서 잘못 된 통화 값을 사용 하 여 배송 단추나 가격은 0 보다 작은 값을 사용 하 여 제품 추가 클릭 하면 경고를 표시 됩니다.
 
 
-[![제품 배송 프로세스 단추를 클릭 한 후 삽입 인터페이스가 표시](batch-inserting-cs/_static/image35.png)](batch-inserting-cs/_static/image34.png)
+[![T제품 배송 프로세스 단추를 클릭 한 후 표시 됩니다 그 삽입 인터페이스](batch-inserting-cs/_static/image35.png)](batch-inserting-cs/_static/image34.png)
 
 **그림 12**: 삽입 인터페이스 프로세스 제품 배송 단추를 클릭 한 후 표시 됩니다 ([클릭 하 여 큰 이미지 보기](batch-inserting-cs/_static/image36.png))
 
@@ -237,17 +237,17 @@ CompareValidator 단가 텍스트 상자 설정의 각 추가 합니다 `Control
 그림 13, 14 및 15의 표시를 삽입 하 고 작업에서 인터페이스를 표시 합니다. 그림 13에서는 사용자가 해당 제품 이름이 없는 단위 가격 값을 입력 합니다. 그림 14 인터페이스를 보여 줍니다 표시 세 후 새 제품 추가 된 성공적으로 그림 15 (이전 페이지는 세 번째) GridView에 새로 추가 된 제품 중 두 가지를 보여 줍니다.
 
 
-[![제품 이름이 필요한 경우 입력 단가](batch-inserting-cs/_static/image38.png)](batch-inserting-cs/_static/image37.png)
+[![A 제품 이름이 필요한 경우 입력 Unit Price](batch-inserting-cs/_static/image38.png)](batch-inserting-cs/_static/image37.png)
 
 **그림 13**: 제품 이름이 필요한 경우 입력 단가 ([클릭 하 여 큰 이미지 보기](batch-inserting-cs/_static/image39.png))
 
 
-[![공급자에 대 한 세 개의 새 Veggies 추가한 유미 식품 s](batch-inserting-cs/_static/image41.png)](batch-inserting-cs/_static/image40.png)
+[![T공급 업체 유미 식품 s에 대 한 새 Veggies 추가한 같은 세](batch-inserting-cs/_static/image41.png)](batch-inserting-cs/_static/image40.png)
 
 **그림 14**: 세 개의 새 Veggies 추가한 공급자 유미 식품 s ([클릭 하 여 큰 이미지 보기](batch-inserting-cs/_static/image42.png))
 
 
-[![GridView의 마지막 페이지에서 새 제품을 찾을 수 있습니다.](batch-inserting-cs/_static/image44.png)](batch-inserting-cs/_static/image43.png)
+[![TGridView의 마지막 페이지에 있을 수 그 새 제품](batch-inserting-cs/_static/image44.png)](batch-inserting-cs/_static/image43.png)
 
 **그림 15**: 새 제품에서에서 찾을 수 있습니다 GridView의 마지막 페이지 ([클릭 하 여 큰 이미지 보기](batch-inserting-cs/_static/image45.png))
 

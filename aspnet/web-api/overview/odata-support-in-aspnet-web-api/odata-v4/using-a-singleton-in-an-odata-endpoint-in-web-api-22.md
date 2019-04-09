@@ -8,15 +8,15 @@ ms.date: 06/27/2014
 ms.assetid: 4064ab14-26ee-4d5c-ae58-1bdda525ad06
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v4/using-a-singleton-in-an-odata-endpoint-in-web-api-22
 msc.type: authoredcontent
-ms.openlocfilehash: 7562a90ae34b216dca2dd3cf541d086585735212
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 935448a1f9770e1f11460c95997aa778c4208c9f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57052860"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59403339"
 ---
-<a name="create-a-singleton-in-odata-v4-using-web-api-22"></a>Web API 2.2 사용 하 여 OData v4에서 Singleton 만들기
-====================
+# <a name="create-a-singleton-in-odata-v4-using-web-api-22"></a>Web API 2.2 사용 하 여 OData v4에서 Singleton 만들기
+
 Zoe Luo 여
 
 > 일반적으로 엔터티는 엔터티 집합 내에서 캡슐화 된 경우에 액세스할 수 없습니다. 하지만 OData v4 단일, 포함, WebAPI 2.2 둘 다 지원 두 개의 추가 옵션을 제공 합니다.

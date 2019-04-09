@@ -8,15 +8,15 @@ ms.date: 03/31/2010
 ms.assetid: 0b91d5f8-127d-4f6a-b204-f2e2b35ef703
 msc.legacyurl: /web-forms/overview/data-access/custom-formatting/using-templatefields-in-the-detailsview-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 1c18e8be25369d6e7d1703e71b80e75adb9f15fa
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 9a2f500206bbdc09d8007e10c0c7464f1ba384a3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57037860"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59395071"
 ---
-<a name="using-templatefields-in-the-detailsview-control-vb"></a>DetailsView 컨트롤에서 TemplateFields 사용(VB)
-====================
+# <a name="using-templatefields-in-the-detailsview-control-vb"></a>DetailsView 컨트롤에서 TemplateFields 사용(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/5/7/0/57084608-dfb3-4781-991c-407d086e2adc/ASPNET_Data_Tutorial_13_VB.exe) 또는 [PDF 다운로드](using-templatefields-in-the-detailsview-control-vb/_static/datatutorial13vb1.pdf)
@@ -35,7 +35,7 @@ TemplateField는 BoundField, CheckBoxField, HyperLinkField, 및 다른 데이터
 GridView를 사용 하 여 사용 가능한 동일한 TemplateFields 기능 DetailsView 컨트롤과 함께 사용할 수 있습니다. 이 자습서에서는 두 TemplateFields 포함 된 DetailsView를 사용 하 여 한 번에 한 제품을 표시 됩니다. 첫 번째 templatefield로 결합 합니다 `UnitPrice`, `UnitsInStock`, 및 `UnitsOnOrder` 한 DetailsView 행에 데이터 필드입니다. 두 번째 TemplateField의 값이 표시 됩니다는 `Discontinued` 필드에 있지만 경우 "예"를 표시 하려면 형식 지정 메서드를 사용 `Discontinued` 는 `True`, 그렇지 않은 경우 "아니요"입니다.
 
 
-[![두 TemplateFields은 표시를 사용자 지정 하는 데 사용 됩니다.](using-templatefields-in-the-detailsview-control-vb/_static/image2.png)](using-templatefields-in-the-detailsview-control-vb/_static/image1.png)
+[![Two TemplateFields는 표시를 사용자 지정 하는 데 사용 됩니다](using-templatefields-in-the-detailsview-control-vb/_static/image2.png)](using-templatefields-in-the-detailsview-control-vb/_static/image1.png)
 
 **그림 1**: 두 TemplateFields은 표시를 사용자 지정 하는 데 사용 됩니다 ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-detailsview-control-vb/_static/image3.png))
 
@@ -49,7 +49,7 @@ BoundFields만 포함 된 DetailsView 컨트롤을 만들어 시작한 다음 �
 열기는 `DetailsViewTemplateField.aspx` 페이지 및 디자이너 도구 상자에서을 DetailsView를 끕니다. DetailsView의 스마트 태그에서 호출 하는 새 ObjectDataSource 컨트롤을 추가 하려면 선택 합니다 `ProductsBLL` 클래스의 `GetProducts()` 메서드.
 
 
-[![GetProducts() 메서드를 호출 하 여 새 ObjectDataSource 컨트롤 추가](using-templatefields-in-the-detailsview-control-vb/_static/image5.png)](using-templatefields-in-the-detailsview-control-vb/_static/image4.png)
+[![Add GetProducts() 메서드를 호출 하는 새 ObjectDataSource 컨트롤](using-templatefields-in-the-detailsview-control-vb/_static/image5.png)](using-templatefields-in-the-detailsview-control-vb/_static/image4.png)
 
 **그림 2**: 해당 Invoke 새 ObjectDataSource 컨트롤을 추가 합니다 `GetProducts()` 메서드 ([큰 이미지를 보려면 클릭](using-templatefields-in-the-detailsview-control-vb/_static/image6.png))
 
@@ -64,7 +64,7 @@ BoundFields만 포함 된 DetailsView 컨트롤을 만들어 시작한 다음 �
 브라우저를 통해 페이지를 보려면 잠시 시간이 소요 됩니다. 이 시점에서 제품의 이름, 범주, 공급자, 가격, 재고 단위, 순서에 대 한 단위 및 지원 되지 않는 상태를 표시 하는 행이 있는 단일 나열 된 제품 (Chai) 표시 됩니다.
 
 
-[![제품의 세부 정보를 사용 하 여 BoundFields 같습니다.](using-templatefields-in-the-detailsview-control-vb/_static/image8.png)](using-templatefields-in-the-detailsview-control-vb/_static/image7.png)
+[![T제품의 세부 정보가 BoundFields 시리즈를 사용 하 여 표시 됩니다](using-templatefields-in-the-detailsview-control-vb/_static/image8.png)](using-templatefields-in-the-detailsview-control-vb/_static/image7.png)
 
 **그림 3**: 제품의 세부 정보가 BoundFields 시리즈를 사용 하 여 표시 됩니다 ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-detailsview-control-vb/_static/image9.png))
 
@@ -76,7 +76,7 @@ DetailsView에 대 한 행을 `UnitPrice`, `UnitsInStock`, 및 `UnitsOnOrder` �
 필드 대화 상자를 표시 하도록 DetailsView의 스마트 태그에서 필드 편집 링크를 클릭 하 여 시작 합니다. 그런 다음 새 templatefield로 추가 하 고 설정 해당 `HeaderText` 속성을 "가격 및 인벤토리" 하 고 이동 한다는 위에 배치 됩니다 있도록 새 TemplateField는 `UnitPrice` BoundField 합니다.
 
 
-[![DetailsView 컨트롤에 새 templatefield로 추가](using-templatefields-in-the-detailsview-control-vb/_static/image11.png)](using-templatefields-in-the-detailsview-control-vb/_static/image10.png)
+[![ADetailsView 컨트롤에 새 TemplateField dd](using-templatefields-in-the-detailsview-control-vb/_static/image11.png)](using-templatefields-in-the-detailsview-control-vb/_static/image10.png)
 
 **그림 4**: DetailsView 컨트롤에 새 templatefield로 추가 ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-detailsview-control-vb/_static/image12.png))
 
@@ -88,7 +88,7 @@ DetailsView에 대 한 행을 `UnitPrice`, `UnitsInStock`, 및 `UnitsOnOrder` �
 이 자습서에 대 한 가격 및 인벤토리 TemplateField 레이블 컨트롤을 추가 하 여 시작 `ItemTemplate`합니다. 다음으로 레이블 웹 컨트롤의 스마트 태그의 데이터 바인딩 편집 링크를 클릭 하 고 바인딩하는 `Text` 속성을는 `UnitPrice` 필드.
 
 
-[![레이블의 텍스트 속성 UnitPrice 데이터 필드에 바인딩](using-templatefields-in-the-detailsview-control-vb/_static/image14.png)](using-templatefields-in-the-detailsview-control-vb/_static/image13.png)
+[![B레이블의 텍스트 속성을 UnitPrice 데이터 필드를 찾기](using-templatefields-in-the-detailsview-control-vb/_static/image14.png)](using-templatefields-in-the-detailsview-control-vb/_static/image13.png)
 
 **그림 5**: 레이블 바인딩 `Text` 속성을 `UnitPrice` 데이터 필드 ([전체 크기 이미지를 보려면 클릭](using-templatefields-in-the-detailsview-control-vb/_static/image15.png))
 
@@ -98,7 +98,7 @@ DetailsView에 대 한 행을 `UnitPrice`, `UnitsInStock`, 및 `UnitsOnOrder` �
 이 또한이를 사용 하 여 레이블 웹 컨트롤 가격 및 인벤토리 TemplateField 선택한 제품에 대 한 가격만를 이제 표시 됩니다. 그림 6 브라우저를 통해 볼 때 지금 스크린샷을 진행 상황을 보여줍니다.
 
 
-[![가격 및 인벤토리 TemplateField 가격을 보여 줍니다.](using-templatefields-in-the-detailsview-control-vb/_static/image17.png)](using-templatefields-in-the-detailsview-control-vb/_static/image16.png)
+[![T가격은 그 인벤토리 TemplateField 가격 표시](using-templatefields-in-the-detailsview-control-vb/_static/image17.png)](using-templatefields-in-the-detailsview-control-vb/_static/image16.png)
 
 **그림 6**: 가격 및 인벤토리 TemplateField 가격을 보여 줍니다 ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-detailsview-control-vb/_static/image18.png))
 
@@ -110,7 +110,7 @@ DetailsView에 대 한 행을 `UnitPrice`, `UnitsInStock`, 및 `UnitsOnOrder` �
 에 대 한 합니다 `UnitPrice` 사용 하 여 적절 한 드롭다운 목록에서 값을 선택 하거나 입력 하 여 지정 된 통화 서식 지정 필드 `{0:C}` 손으로 합니다.
 
 
-[![가격 통화 서식](using-templatefields-in-the-detailsview-control-vb/_static/image20.png)](using-templatefields-in-the-detailsview-control-vb/_static/image19.png)
+[![Format 통화로 가격](using-templatefields-in-the-detailsview-control-vb/_static/image20.png)](using-templatefields-in-the-detailsview-control-vb/_static/image19.png)
 
 **그림 7**: 통화로 가격 형식 ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-detailsview-control-vb/_static/image21.png))
 
@@ -137,7 +137,7 @@ DetailsView에 대 한 행을 `UnitPrice`, `UnitsInStock`, 및 `UnitsOnOrder` �
 이러한 변경 내용으로 단일 DetailsView 행에 가격 및 인벤토리 정보를 통합 했으며 합니다.
 
 
-[![가격 및 인벤토리 정보를 단일 행에 표시 됩니다.](using-templatefields-in-the-detailsview-control-vb/_static/image23.png)](using-templatefields-in-the-detailsview-control-vb/_static/image22.png)
+[![T그 가격 및 인벤토리 정보는 단일 행에 표시 됩니다](using-templatefields-in-the-detailsview-control-vb/_static/image23.png)](using-templatefields-in-the-detailsview-control-vb/_static/image22.png)
 
 **그림 8**: 가격 및 인벤토리 정보를 단일 행에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-detailsview-control-vb/_static/image24.png))
 
@@ -149,7 +149,7 @@ DetailsView에 대 한 행을 `UnitPrice`, `UnitsInStock`, 및 `UnitsOnOrder` �
 표시 하지 않고 대신 제품이 단종 된 지 여부를 나타내는 텍스트를 표시 해야 할 수도 있으므로 CheckBoxField 합니다. 이렇게 하려면에서는 수를 CheckBoxField DetailsView에서 제거한 다음 추가 BoundField입니다 `DataField` 속성 설정한 `Discontinued`합니다. 시간을 내어이 작업을 수행 합니다. 이 변경 후 DetailsView 텍스트가 표시 "true 로" 지원 되지 않는 제품 및 "False" 여전히 활성화 되어 있는 제품에 대 한 합니다.
 
 
-[![True 및 False는 사용 하는 지원 되지 않는 상태를 표시 하려면](using-templatefields-in-the-detailsview-control-vb/_static/image26.png)](using-templatefields-in-the-detailsview-control-vb/_static/image25.png)
+[![T그 문자열 True 및 False는 지원 되지 않는 상태를 표시 하는 데 사용](using-templatefields-in-the-detailsview-control-vb/_static/image26.png)](using-templatefields-in-the-detailsview-control-vb/_static/image25.png)
 
 **그림 9**: 문자열 True 및 False 되는 지원 되지 않는 상태를 표시 하려면 ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-detailsview-control-vb/_static/image27.png))
 
@@ -175,7 +175,7 @@ DetailsView에 대 한 행을 `UnitPrice`, `UnitsInStock`, 및 `UnitsOnOrder` �
 이렇게 하면 합니다 `DisplayDiscontinuedAsYESorNO` DetailsView를 렌더링할 때 호출 될 메서드를 전달 합니다 `ProductRow` 인스턴스의 `Discontinued` 값. 하므로 `Eval` 형식의 값을 반환 하는 메서드 `Object`, 하지만 `DisplayDiscontinuedAsYESorNO` 메서드는 형식의 입력된 매개 변수를 필요로 `Boolean`, 캐스팅 했습니다를 `Eval` 메서드 반환 값을 `Boolean`. `DisplayDiscontinuedAsYESorNO` 메서드는 다음 반환 하 여 "YES" 또는 "NO" 값에 따라 수신 합니다. 반환된 된 값이이 DetailsView에 표시 되는 항목을 행 (그림 10 참조).
 
 
-[![예 또는 아니요 값은 이제 지원 되지 않는 행에 표시](using-templatefields-in-the-detailsview-control-vb/_static/image29.png)](using-templatefields-in-the-detailsview-control-vb/_static/image28.png)
+[![YES 또는 아니요 값 이제 지원 되지 않는 행에 표시 된](using-templatefields-in-the-detailsview-control-vb/_static/image29.png)](using-templatefields-in-the-detailsview-control-vb/_static/image28.png)
 
 **그림 10**: 예 또는 아니요 값 이제 지원 되지 않는 행에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-detailsview-control-vb/_static/image30.png))
 

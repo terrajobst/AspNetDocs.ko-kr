@@ -8,15 +8,15 @@ ms.date: 04/10/2013
 ms.assetid: ab7b2554-956a-4f6d-b2a0-4ae0c62e8580
 msc.legacyurl: /signalr/overview/older-versions/tutorial-server-broadcast-with-aspnet-signalr
 msc.type: authoredcontent
-ms.openlocfilehash: 258a55bf72c4b3425d001f478620fa9651952b3f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a63bca69f137a4d4765db6a4925ff027c9d8bf7d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058120"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59403586"
 ---
-<a name="tutorial-server-broadcast-with-aspnet-signalr-1x"></a>자습서: ASP.NET SignalR 1.x를 사용하여 서버 브로드캐스트
-====================
+# <a name="tutorial-server-broadcast-with-aspnet-signalr-1x"></a>자습서: ASP.NET SignalR 1.x를 사용하여 서버 브로드캐스트
+
 하 여 [Patrick Fletcher](https://github.com/pfletcher), [Tom Dykstra](https://github.com/tdykstra)
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
@@ -42,13 +42,13 @@ ms.locfileid: "57058120"
 
 이 자습서는 다음 섹션이 포함 되어 있습니다.
 
-- [필수 구성 요소](#prerequisites)
-- [프로젝트를 만들려면](#createproject)
+- [전제 조건](#prerequisites)
+- [프로젝트를 만듭니다.](#createproject)
 - [SignalR NuGet 패키지 추가](#nugetpackages)
 - [서버 코드 설정](#server)
 - [클라이언트 코드를 설정 하기](#client)
-- [응용 프로그램 테스트](#test)
-- [로깅을 사용 하도록 설정](#enablelogging)
+- [애플리케이션 테스트](#test)
+- [로깅 사용](#enablelogging)
 - [설치 하 고 전체 StockTicker 샘플을 검토 합니다.](#fullsample)
 - [다음 단계](#nextsteps)
 

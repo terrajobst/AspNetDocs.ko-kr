@@ -8,15 +8,15 @@ ms.date: 02/20/2005
 ms.assetid: af4575a3-0ae3-4638-ba4d-218fad7a1642
 msc.legacyurl: /web-forms/overview/moving-to-aspnet-20/the-asp-net-2-0-page-model
 msc.type: authoredcontent
-ms.openlocfilehash: 4452169a01276cbc60f2a2057e6b560022ccd7c0
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 09f8389a04c5600ca9ee8365a9dc5a0d607c0a4d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57057260"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59403924"
 ---
-<a name="the-aspnet-20-page-model"></a>ASP.NET 2.0 페이지 모델
-====================
+# <a name="the-aspnet-20-page-model"></a>ASP.NET 2.0 페이지 모델
+
 by [Microsoft](https://github.com/microsoft)
 
 > Asp.net에서 1.x에서 개발자는 인라인 코드 모델 및 코드 숨김 코드 모델 중에서 선택 해야 했습니다. 코드 숨김 Src 특성 또는 코드 숨김 특성을 사용 하 여 구현할 수는 @Page 지시문입니다. ASP.NET 2.0에서는 개발자에 게 아직 인라인 코드와 코드 숨김 하지만 코드 숨김 모델을 크게 향상 되었습니다.
@@ -34,7 +34,7 @@ Asp.net에서 1.x에서 ASPX 파일 (Webform) 및 프로그래밍 코드를 포�
 
 ## <a name="the-code-behind-model-in-aspnet-20"></a>ASP.NET 2.0의에서 코드 숨김 모델
 
-ASP.NET 2.0이이 모델 크게 개선합니다. ASP.NET 2.0의 코드 숨김 새를 사용 하 여 구현 됩니다 *partial 클래스* ASP.NET 2.0에서 제공 합니다. ASP.NET 2.0의 코드 숨김 클래스를 클래스 정의의 일부로 있음을 의미 하는 partial 클래스로 정의 됩니다. 클래스 정의의 남은 부분 런타임에 또는 웹 사이트 미리 컴파일 되었는지 ASPX 페이지를 사용 하 여 ASP.NET 2.0에 의해 동적으로 생성 됩니다. 코드 숨김 파일 및 ASPX 페이지 간의 링크는 여전히 @ Page 지시문을 사용 하 여 설정 됩니다. 그러나 코드 숨김 또는 Src 특성을 대신 ASP.NET 2.0 이제 CodeFile는 특성을 사용 합니다. Inherits 특성 페이지에 대 한 클래스 이름을 지정 하도 사용 됩니다.
+ASP.NET 2.0이이 모델 크게 개선합니다. ASP.NET 2.0의 코드 숨김 새를 사용 하 여 구현 됩니다 *partial 클래스* ASP.NET 2.0에서 제공 합니다. ASP.NET 2.0의 코드 숨김 클래스는 클래스 정의의 일부로 있음을 의미 하는 partial 클래스로 정의 됩니다. 클래스 정의의 남은 부분 런타임에 또는 웹 사이트 미리 컴파일 되었는지 ASPX 페이지를 사용 하 여 ASP.NET 2.0에 의해 동적으로 생성 됩니다. 코드 숨김 파일 및 ASPX 페이지 간의 링크는 여전히 @ Page 지시문을 사용 하 여 설정 됩니다. 그러나 코드 숨김 또는 Src 특성을 대신 ASP.NET 2.0 이제 CodeFile는 특성을 사용 합니다. Inherits 특성 페이지에 대 한 클래스 이름을 지정 하도 사용 됩니다.
 
 일반적인 @ Page 지시문이 같습니다.
 
@@ -265,7 +265,7 @@ ASP.NET 2.0 페이지에 적용할 스킨을 지정 합니다.
 
 ## <a name="uniquefilepathsuffix"></a>UniqueFilePathSuffix
 
-이 속성에는 브라우저 캐싱을 위해 파일 경로에 추가 되는 고유한 suffic 반환 합니다. 기본값은 \_ \_ufps = 6 자리 숫자입니다.
+이 속성에는 브라우저 캐싱을 위해 파일 경로에 추가 되는 고유 접미사를 반환 합니다. 기본값은 \_ \_ufps = 6 자리 숫자입니다.
 
 ## <a name="new-public-methods-for-the-page-class"></a>Page 클래스에 대 한 새 공용 메서드
 
@@ -508,7 +508,7 @@ WebForm 호출\_DoCallback 클라이언트에서 이러한 인수를 전달 합�
 
 ## <a name="step-4--register-the-client-side-script"></a>4 단계: 클라이언트 쪽 스크립트를 등록 합니다.
 
-GetCallbackEventReference 호출 클라이언트 쪽 스크립트 호출 되도록 지정 하는 재현 율 **ShowCompanyName** 서버측 콜백 성공 시 실행 합니다. 스크립트가는 ClientScriptManager 인스턴스를 사용 하 여 페이지에 추가 해야 합니다. (ClientScriptManager 클래스가이 모듈의 뒷부분에 나오는 표에서 됩니다.) 따라서 해당 같은 수행합니다.
+GetCallbackEventReference 호출 클라이언트 쪽 스크립트 호출 되도록 지정 하는 재현 율 **ShowCompanyName** 서버측 콜백 성공 시 실행 합니다. 스크립트가는 ClientScriptManager 인스턴스를 사용 하 여 페이지에 추가 해야 합니다. (ClientScriptManager 클래스가 살펴봅니다이 모듈의 뒷부분에 나오는.) 따라서 해당 같은 수행합니다.
 
 [!code-javascript[Main](the-asp-net-2-0-page-model/samples/sample16.js)]
 

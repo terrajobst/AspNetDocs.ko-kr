@@ -8,15 +8,15 @@ ms.date: 09/13/2006
 ms.assetid: f555c531-bf33-4699-9987-42dbfef23c1f
 msc.legacyurl: /web-forms/overview/data-access/displaying-data-with-the-datalist-and-repeater/showing-multiple-records-per-row-with-the-datalist-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: e8b5493694b24e4187ecb69ca8d2eff6a8507985
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 632db5152c84eb463ddc7bd5f5734a9fb3ae135c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58421221"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59382986"
 ---
-<a name="showing-multiple-records-per-row-with-the-datalist-control-vb"></a>DataList 컨트롤을 사용하여 행마다 여러 레코드 표시(VB)
-====================
+# <a name="showing-multiple-records-per-row-with-the-datalist-control-vb"></a>DataList 컨트롤을 사용하여 행마다 여러 레코드 표시(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_31_VB.exe) 또는 [PDF 다운로드](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/datatutorial31vb1.pdf)
@@ -31,7 +31,7 @@ DataList 예제에서는 지난 두 자습서 에서처럼 ve 단일 열 HTML에
 DataList의 레이아웃을 통해 사용자 지정할 수는 `RepeatColumns` 및 `RepeatDirection` 각각 열 개수 렌더링 되 고 있는지 여부 해당 항목이 배치 되도록 가로 또는 세로로 표시 하는 속성입니다. 예를 들어, 그림 1에는 세 개의 열이 있는 테이블에서 제품 정보를 표시 하는 DataList 보여 줍니다.
 
 
-[![DataList 행당 세 가지 제품을 보여 줍니다.](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image2.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image1.png)
+[![T그 DataList 표시 제품이 행당](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image2.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image1.png)
 
 **그림 1**: DataList를 보여 줍니다 세 제품 행당 ([클릭 하 여 큰 이미지 보기](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image3.png))
 
@@ -57,7 +57,7 @@ Visual Studio에서 자동으로 만들고 새 ObjectDataSource DataList 바인�
 시간을 내어 브라우저에서 페이지를 방문 합니다. 그림 2에서 알 수 있듯이, DataList 제품의 다중 행, 단일 열 테이블로 렌더링 합니다.
 
 
-[![기본적으로 다중 행, 단일 열 테이블로 DataList 렌더링](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image5.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image4.png)
+[![B기본 y DataList 다중 행, 단일 열 테이블로 렌더링](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image5.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image4.png)
 
 **그림 2**: 기본적으로 DataList 렌더링 된 단일 열을 다중 행 테이블 ([클릭 하 여 큰 이미지 보기](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image6.png))
 
@@ -69,7 +69,7 @@ Visual Studio에서 자동으로 만들고 새 ObjectDataSource DataList 바인�
 변경 하 여는 `RepeatDirection` 속성을 `Vertical` 에 `Horizontal`, DataList를 데이터 원본 항목 마다 하나의 열을 만드는 해당 레코드는 단일 행에 렌더링 합니다. 이 효과 보여 주기 위해 디자이너에서 DataList 클릭 한 다음 속성 창에서 변경 된 `RepeatDirection` 속성을 `Vertical` 에 `Horizontal`입니다. 즉시이 작업을 수행 하면 디자이너 레이아웃 조정 합니다 DataList s, 단일 행 및 다중 열 인터페이스 만들기 (그림 3 참조).
 
 
-[![RepeatDirection 속성 결정 하는 방법의 방향 DataList s 항목이 배치 아웃](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image8.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image7.png)
+[![TOut 배치는 그 RepeatDirection 속성 결정 하는 방법의 방향 DataList의 항목](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image8.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image7.png)
 
 **그림 3**: 합니다 `RepeatDirection` 속성은 아웃 레이아웃 방향 DataList의 항목 하는 방법을 나타냅니다 ([큰 이미지를 보려면 클릭](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image9.png))
 
@@ -77,7 +77,7 @@ Visual Studio에서 자동으로 만들고 새 ObjectDataSource DataList 바인�
 작은 양의 데이터를 단일 행을 표시 하는 경우 다중 열 테이블 화면 부동산을 최대화 하기 위한 이상적인 방법 수 있습니다. 그러나 더 큰 볼륨의 데이터를 단일 행을 여러 열을 푸시하는 해당 항목 오른쪽에 해제 화면에 맞게 해당 수 t 필요 합니다. 그림 4 제품을 단일 행 DataList 렌더링 되는 경우를 보여 줍니다. 여러 개의 제품 (80) 되므로 사용자 각 제품에 대 한 정보를 보려면 오른쪽 하단으로 떨어져 스크롤하여 해야 합니다.
 
 
-[![충분히 큰 데이터 원본에 대 한 단일 열 DataList 가로 스크롤이 필요 합니다.](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image11.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image10.png)
+[![F또는 충분히 큰 데이터 원본에 단일 열 DataList는 가로 스크롤이 필요한](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image11.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image10.png)
 
 **그림 4**: 충분히 큰 데이터 원본에 대해 단일 열 DataList는 필요한 가로 스크롤 ([클릭 하 여 큰 이미지 보기](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image12.png))
 
@@ -89,7 +89,7 @@ Visual Studio에서 자동으로 만들고 새 ObjectDataSource DataList 바인�
 예를 들어 테이블 행당 세 가지 제품을 전시 s 수 있습니다. 따라서 설정 된 `RepeatColumns` 속성을 3으로 합니다. 이렇게 변경한 후 브라우저에서 결과 보려면 잠시 시간이 소요 됩니다. 그림 5에서 알 수 있듯이, 제품 이제 3 열과 다중 행 표에 나와 있습니다.
 
 
-[![행당 제품이 표시 됩니다.](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image14.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image13.png)
+[![T다음과 같은 세 제품이 행당 표시](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image14.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image13.png)
 
 **그림 5**: 행당 제품이 표시 됩니다 ([클릭 하 여 큰 이미지 보기](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image15.png))
 
@@ -97,7 +97,7 @@ Visual Studio에서 자동으로 만들고 새 ObjectDataSource DataList 바인�
 `RepeatDirection` DataList 항목 레이아웃 되는 방법을 하는 속성에 영향을 줍니다. 그림 5는 사용 하 여 결과 `RepeatDirection` 속성이 설정 `Horizontal`합니다. 처음 세 개의 제품 Chai, 변경, 및 태양 체리 시럽 왼쪽에서 오른쪽, 위쪽에서 아래쪽 레이아웃 되 note 합니다. 다음 3 개 제품 (Chef 한 100의 케이준 Seasoning부터 시작) 아래에 있는 처음 3 개 행에 나타납니다. 그러나 변경 된 `RepeatDirection` 속성을 다시 `Vertical`, 이러한 제품은 위에서 아래로 레이아웃, 그림 6에서 볼 수 있듯이 왼쪽에서 오른쪽으로 합니다.
 
 
-[![여기에서 제품은 세로로 배치 아웃](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image17.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image16.png)
+[![Here 제품은 세로로 배치 아웃](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image17.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image16.png)
 
 **그림 6**: 여기에서 제품은 세로로 배치 하세요 ([클릭 하 여 큰 이미지 보기](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image18.png))
 

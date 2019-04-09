@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 4c306a2c-92b6-4904-b70b-365b847334fe
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/animating-an-updatepanel-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 797ee37eb440bed261403aa0e1b68f38d3cd8ef9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a7c40ebe359e21602d9f1de8205e1a7c808acc85
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57054920"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59384255"
 ---
-<a name="animating-an-updatepanel-control-vb"></a>UpdatePanel 컨트롤 애니메이션(VB)
-====================
+# <a name="animating-an-updatepanel-control-vb"></a>UpdatePanel 컨트롤 애니메이션(VB)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/UpdatePanelAnimation1.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/updatepanelanimation1VB.pdf)
@@ -50,7 +50,7 @@ ASP.NET에이 시나리오에서는 애니메이션을 적용할 `Wizard` 에 �
 이제 UpdatePanel 내 포스트백이 발생할 때마다 패널의 새 내용이 페이드 원활 하 게 합니다.
 
 
-[![다음 마법사 단계 옅은 색은](animating-an-updatepanel-control-vb/_static/image2.png)](animating-an-updatepanel-control-vb/_static/image1.png)
+[![T그 다음 마법사 단계 옅은 색은](animating-an-updatepanel-control-vb/_static/image2.png)](animating-an-updatepanel-control-vb/_static/image1.png)
 
 다음 마법사 단계 옅은 색은 ([클릭 하 여 큰 이미지 보기](animating-an-updatepanel-control-vb/_static/image3.png))
 

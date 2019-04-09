@@ -8,15 +8,15 @@ ms.date: 07/17/2006
 ms.assetid: dab291a0-a8b5-46fa-9dd8-3d35b249201f
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/examining-the-events-associated-with-inserting-updating-and-deleting-cs
 msc.type: authoredcontent
-ms.openlocfilehash: d8a16500388acd331042b7a9d62cf710edf3c61a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a8ed5c773a6b566e587f46dfe3a8504162d71c13
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029620"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59395266"
 ---
-<a name="examining-the-events-associated-with-inserting-updating-and-deleting-c"></a>삽입, 업데이트 및 삭제와 연결된 이벤트 검사(C#)
-====================
+# <a name="examining-the-events-associated-with-inserting-updating-and-deleting-c"></a>삽입, 업데이트 및 삭제와 연결된 이벤트 검사(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_17_CS.exe) 또는 [PDF 다운로드](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/datatutorial17cs1.pdf)
@@ -37,7 +37,7 @@ ms.locfileid: "57029620"
 그림 1은 GridView를 업데이트할 때이 일련을의 이벤트 및 단계를 보여 줍니다. 그림 1의 이벤트 패턴에는 GridView를 사용 하 여 업데이트에 고유 하지 않습니다. 삽입, 업데이트 또는 GridView에서 데이터 삭제, DetailsView 또는 FormView precipitates ObjectDataSource와 데이터 웹 컨트롤에 대 한 사전 및 사후 수준 이벤트의 순서입니다.
 
 
-[![일련의 사전 및 사후 이벤트 발생을 GridView에는 데이터를 업데이트 하는 경우](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image2.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image1.png)
+[![A 일련의 사전 및 사후 이벤트 화재 GridView에서 데이터를 업데이트할 때는](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image2.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image1.png)
 
 **그림 1**: 일련의 사전 및 사후 이벤트 발생 경우 업데이트 데이터를 GridView에 ([클릭 하 여 큰 이미지 보기](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image3.png))
 
@@ -55,12 +55,12 @@ ms.locfileid: "57029620"
 
 [!code-csharp[Main](examining-the-events-associated-with-inserting-updating-and-deleting-cs/samples/sample1.cs)]
 
-원래와 같은 `UpdateProduct` 메서드를 지정 된 데이터베이스에 제품 인지 확인 하 여 시작 된이 오버 로드 `ProductID`합니다. 반환 된 그렇지 않은 경우 `false`, 제품 정보를 업데이트 요청이 실패 했음을 나타냅니다. 기존 제품 레코드의 업데이트이 고, 그렇지 `ProductName` 하 고 `UnitPrice` 그에 따라 필드 및 TableAdpater의 호출 하 여 업데이트를 커밋합니다 `Update()` 전달 하는 메서드는 `ProductsRow` 인스턴스.
+원래와 같은 `UpdateProduct` 메서드를 지정 된 데이터베이스에 제품 인지 확인 하 여 시작 된이 오버 로드 `ProductID`합니다. 반환 된 그렇지 않은 경우 `false`, 제품 정보를 업데이트 요청이 실패 했음을 나타냅니다. 기존 제품 레코드의 업데이트이 고, 그렇지 `ProductName` 하 고 `UnitPrice` 그에 따라 필드 및 TableAdapter의 호출 하 여 업데이트를 커밋합니다 `Update()` 전달 하는 메서드는 `ProductsRow` 인스턴스.
 
 이 추가 사용 하 여이 `ProductsBLL` 클래스 준비가 간소화 된 GridView 인터페이스를 만듭니다. 열기는 `DataModificationEvents.aspx` 에 `EditInsertDelete` 폴더 페이지에 GridView를 추가 합니다. 새 ObjectDataSource를 만들고 사용 하도록 구성 합니다 `ProductsBLL` 클래스와 해당 `Select()` 메서드 매핑을 `GetProducts` 및 해당 `Update()` 메서드 매핑을 `UpdateProduct` 만 사용 하는 오버 로드를 `productName`, `unitPrice`, 및 `productID` 매개 변수를 입력 합니다. 그림 2는 ObjectDataSource를 매핑할 때 데이터 원본 만들기 마법사를 보여 줍니다 `Update()` 메서드를 `ProductsBLL` 클래스의 새 `UpdateProduct` 메서드 오버 로드 합니다.
 
 
-[![새 UpdateProduct 오버 로드를 map ObjectDataSource의 update () 메서드](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image5.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image4.png)
+[![M아시아 태평양 새 UpdateProduct ObjectDataSource의 update () 메서드 오버 로드](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image5.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image4.png)
 
 **그림 2**: ObjectDataSource의 매핑 `Update()` 메서드를 새 `UpdateProduct` 오버 로드 ([클릭 하 여 큰 이미지 보기](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image6.png))
 
@@ -68,7 +68,7 @@ ms.locfileid: "57029620"
 이 예에서 수 데이터를 편집할 수 있지만 하지 삽입 또는 레코드 삭제에 필요한 처음에 있으므로 잠시 명시적으로 나타내기 위해 ObjectDataSource의 `Insert()` 하 고 `Delete()` 메서드 중 하나에 매핑할 수 없습니다는 `ProductsBLL` INSERT 및 DELETE 탭으로 이동 하 고 드롭다운 목록에서 (없음)를 선택 하 여 클래스의 메서드.
 
 
-[![(없음) 삽입 및 삭제 탭에 대 한 드롭다운 목록에서 선택](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image8.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image7.png)
+[![C(없음) 삽입 및 삭제 하는 탭의 드롭다운 목록에서 설치할](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image8.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image7.png)
 
 **그림 3**: (없음) 삽입 및 삭제 하는 탭의 드롭다운 목록에서 선택 ([클릭 하 여 큰 이미지 보기](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image9.png))
 
@@ -91,7 +91,7 @@ ObjectDataSource의 `OldValuesParameterFormatString` 속성이 `original_{0}`합
 ObjectDataSource에 있지만 `UpdateParameters` 제품의 이름, 가격 및 ID에 대 한 Visual Studio에 추가 되었습니다 BoundField 또는 CheckBoxField GridView에서 각 제품의 필드에 대 한 합니다.
 
 
-[![각 제품의 필드에 대 한 BoundField 또는 CheckBoxField를 포함 하는 GridView](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image11.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image10.png)
+[![T그 GridView BoundField 또는 CheckBoxField 각 제품의 필드에 대 한 포함](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image11.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image10.png)
 
 **그림 4**: 각 제품의 필드에 대 한 BoundField 또는 CheckBoxField를 포함 하는 GridView ([클릭 하 여 큰 이미지 보기](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image12.png))
 
@@ -99,7 +99,7 @@ ObjectDataSource에 있지만 `UpdateParameters` 제품의 이름, 가격 및 ID
 최종 사용자는 제품을 편집 하 고 해당 업데이트 단추 클릭 하면, GridView 없습니다. 읽기 전용 필드를 열거 합니다. ObjectDataSource의의 해당 매개 변수의 값을 설정 합니다 `UpdateParameters` 사용자가 입력 한 값 컬렉션입니다. 해당 매개 변수가 없는 경우 GridView를 컬렉션에 추가 합니다. 따라서이 GridView BoundFields 및 모든 제품의 필드에 대 한 CheckBoxFields 있으면 ObjectDataSource 결국 호출을 `UpdateProduct` 모든 팩트 불구 하 고 이러한 매개 변수를 사용 하는 오버 로드는 ObjectDataSource의 선언적 태그 (그림 5 참조) 세 개의 입력된 매개 변수를 지정 합니다. 마찬가지로, 일부 조합 읽기 전용이 아닌 경우 제품 필드에 대 한 입력 매개 변수에 해당 하지 않는 GridView는 `UpdateProduct` 오버 로드를 업데이트 하려고 시도할 때 예외가 발생 합니다.
 
 
-[![GridView는 ObjectDataSource의 UpdateParameters 컬렉션에 매개 변수 추가](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image14.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image13.png)
+[![TObjectDataSource의 UpdateParameters 컬렉션에 매개 변수를 추가 했습니다. GridView](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image14.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image13.png)
 
 **그림 5**: GridView는 추가 매개 변수는 ObjectDataSource `UpdateParameters` 컬렉션 ([큰 이미지를 보려면 클릭](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image15.png))
 
@@ -114,7 +114,7 @@ ObjectDataSource 호출 되도록 합니다 `UpdateProduct` 제품의 이름, �
 우리의 GridView와 함께 `UpdateProduct` 오버 로드를 다른 제품 필드의 손실 없이 이름 및 제품의 가격을 편집할 수 있습니다.
 
 
-[![인터페이스 바로 제품의 이름 및 Price를 편집할 수 있습니다.](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image17.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image16.png)
+[![T그 인터페이스 허용 편집만 제품의 이름 및 가격](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image17.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image16.png)
 
 **그림 6**: 방금 제품의 이름과 가격 편집 인터페이스 허용 ([클릭 하 여 큰 이미지 보기](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image18.png))
 
@@ -128,7 +128,7 @@ ObjectDataSource 호출 되도록 합니다 `UpdateProduct` 제품의 이름, �
 그림 6 작동의 GridView 예제 동안는 `UnitPrice` 필드 형식이 전혀, 기호 및 네 개의 소수 자릿수가 없는 모든 통화 가격이 표시를 생성 합니다. 편집할 수 없는 행의 서식을 통화에 적용 하려면 설정 하기만 합니다 `UnitPrice` BoundField의 `DataFormatString` 속성을 `{0:c}` 고 `HtmlEncode` 속성을 `false`입니다.
 
 
-[![UnitPrice의 DataFormatString 및 HtmlEncode 속성을 적절 하 게 설정](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image20.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image19.png)
+[![Set UnitPrice의 DataFormatString 속성과 HtmlEncode 그에 따라](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image20.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image19.png)
 
 **그림 7**: 설정 합니다 `UnitPrice`의 `DataFormatString` 하 고 `HtmlEncode` 그에 따라 속성 ([클릭 하 여 큰 이미지 보기](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image21.png))
 
@@ -136,7 +136,7 @@ ObjectDataSource 호출 되도록 합니다 `UpdateProduct` 제품의 이름, �
 가격 통화;으로 편집할 수 없는 행이 변경으로 형식 하지만 편집된 된 행 여전히 표시 통화 기호 없이 네 개의 소수 자릿수로 값입니다.
 
 
-[![편집할 수 없는 행은 이제 서식이 지정 된 통화 값으로](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image23.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image22.png)
+[![N통화 값으로에서 편집할 행은 이제 포맷](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image23.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image22.png)
 
 **그림 8**: 편집할 수 없는 행은 이제 통화 값으로 형식이 지정 ([클릭 하 여 큰 이미지 보기](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image24.png))
 
@@ -144,7 +144,7 @@ ObjectDataSource 호출 되도록 합니다 `UpdateProduct` 제품의 이름, �
 에 지정 된 서식 지정 지침의 `DataFormatString` BoundField의을 설정 하 여 편집 인터페이스에 적용할 수 속성 `ApplyFormatInEditMode` 속성을 `true` (기본값인 `false`). 이 속성을 설정 하려면 잠시 `true`입니다.
 
 
-[![UnitPrice BoundField의 ApplyFormatInEditMode 속성도 true로 설정](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image26.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image25.png)
+[![S세상 UnitPrice BoundField ApplyFormatInEditMode 속성을 true로](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image26.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image25.png)
 
 **그림 9**: 설정 된 `UnitPrice` BoundField의 `ApplyFormatInEditMode` 속성을 `true` ([클릭 하 여 큰 이미지 보기](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image27.png))
 
@@ -152,7 +152,7 @@ ObjectDataSource 호출 되도록 합니다 `UpdateProduct` 제품의 이름, �
 값이이 변경으로는 `UnitPrice` 는 편집에 표시 된 행으로 포맷 합니다.
 
 
-[![편집한 행의 UnitPrice 값은 이제 서식이 지정 된 통화로](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image29.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image28.png)
+[![T그 편집 행의 UnitPrice 가치가 이제 서식이 지정 된 통화로](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image29.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image28.png)
 
 **그림 10**: 편집한 행 `UnitPrice` 이제는 통화 단위로 지정 하는 것이 가치가 ([큰 이미지를 보려면 클릭](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image30.png))
 
@@ -169,7 +169,7 @@ GridView의 `RowUpdating` 이벤트 형식의 개체를 두 번째 매개 변수
 그림 11은 사용자가 제공한의 통화 기호를 야기 된 문제를 보여 줍니다 `UnitPrice`, 방법을 함께 GridView의 `RowUpdating` 이러한 입력을 올바르게 구문 분석 하는 이벤트 처리기를 활용할 수 있습니다.
 
 
-[![편집한 행의 UnitPrice 값은 이제 서식이 지정 된 통화로](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image32.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image31.png)
+[![T그 편집 행의 UnitPrice 가치가 이제 서식이 지정 된 통화로](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image32.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image31.png)
 
 **그림 11**: 편집한 행 `UnitPrice` 이제는 통화 단위로 지정 하는 것이 가치가 ([큰 이미지를 보려면 클릭](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image33.png))
 
@@ -188,7 +188,7 @@ GridView의 `RowUpdating` 이벤트 형식의 개체를 두 번째 매개 변수
 마지막으로 레이블의 설정 `CssClass` 속성을 `Warning`입니다. 이 시점에서 디자이너 그림 12에 나와 있는 것 처럼 경고 메시지가 빨간색, 굵게, 기울임꼴, 초대형 글꼴 크기 GridView 위에 표시 됩니다.
 
 
-[![GridView 위에 추가한 레이블은](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image35.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image34.png)
+[![A GridView 위에 추가한 레이블은](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image35.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image34.png)
 
 **그림 12**: 레이블이 된 추가 위에 GridView ([클릭 하 여 큰 이미지 보기](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image36.png))
 
@@ -206,7 +206,7 @@ GridView의 `RowUpdating` 이벤트 형식의 개체를 두 번째 매개 변수
 사용자가 제품 가격을 지정 하지 않고 저장 하려고 하는 경우 업데이트 취소 되 고 유용한 메시지가 표시 됩니다. 데이터베이스 (및 비즈니스 논리)을 하는 동안 허용 `NULL` `UnitPrice` s,이 특정 ASP.NET 페이지 그렇지 않습니다.
 
 
-[![사용자는 UnitPrice 빈 값을 벗어날 수 없습니다.](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image38.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image37.png)
+[![A 사용자는 UnitPrice 빈 값을 벗어날 수 없습니다](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image38.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image37.png)
 
 **그림 13**: 사용자를 벗어날 수 없습니다 `UnitPrice` 빈 ([큰 이미지를 보려면 클릭](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image39.png))
 
@@ -229,12 +229,12 @@ ObjectDataSource를 구성 하려면 마법사를 시작, 스마트 태그에서
 유지를 `Insert()` 가리키는 메서드는 `AddProduct` 메서드를 삭제 탭의 드롭다운 목록 (None)으로 다시 설정 합니다.
 
 
-[![AddProduct 메서드에 삽입 탭의 드롭다운 목록 설정](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image41.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image40.png)
+[![Set AddProduct 메서드에 삽입 탭의 드롭다운 목록](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image41.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image40.png)
 
 **그림 14**: 삽입 탭의 드롭다운 목록으로 설정 합니다 `AddProduct` 메서드 ([큰 이미지를 보려면 클릭](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image42.png))
 
 
-[![DELETE 탭의 드롭다운 목록 (None)으로 설정](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image44.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image43.png)
+[![Set 삭제 탭의 드롭다운 목록 (없음)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image44.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image43.png)
 
 **그림 15**: 삭제 탭의 드롭다운 목록 (None)으로 설정 ([클릭 하 여 큰 이미지 보기](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image45.png))
 
@@ -254,7 +254,7 @@ ObjectDataSource를 구성 하려면 마법사를 시작, 스마트 태그에서
 그림 16에서는 브라우저를 통해이 시점에서 볼 때이 페이지를 보여 줍니다. 알 수 있듯이 DetailsView 이름과 (Chai) 첫 번째 제품의 가격을 나열 합니다. 원하는 어떤 것 인데, 신속 하 게 데이터베이스에 새 제품을 추가 하려면 사용자에 대 한 수단을 제공 하는 삽입 인터페이스입니다.
 
 
-[![DetailsView 현재 읽기 전용 모드에서 렌더링 됩니다.](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image47.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image46.png)
+[![TDetailsView 담당 하 고 현재 읽기 전용 모드에서 렌더링](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image47.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image46.png)
 
 **그림 16**: DetailsView 현재 읽기 전용 모드에서 렌더링 됩니다 ([클릭 하 여 큰 이미지 보기](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image48.png))
 
@@ -262,7 +262,7 @@ ObjectDataSource를 구성 하려면 마법사를 시작, 스마트 태그에서
 DetailsView 설정 해야 하는 삽입 모드에서 표시 하기 위해 합니다 `DefaultMode` 속성을 `Inserting`입니다. 이 처음 방문할 때 삽입 모드로 DetailsView를 렌더링 하 고 새 레코드를 삽입 한 후 유지 합니다. 그림 17에서 알 수 있듯이, 이러한는 DetailsView 새 레코드를 추가 하는 것에 대 한 빠른 인터페이스를 제공 합니다.
 
 
-[![새 제품을 빠르게 추가 하기 위한 인터페이스를 제공 하는 DetailsView](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image50.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image49.png)
+[![T새 제품을 빠르게 추가 하기 위한 인터페이스를 제공 그 DetailsView](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image50.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image49.png)
 
 **그림 17**: DetailsView 인터페이스를 제공 빠르게 추가 하기 위해 새 제품 ([클릭 하 여 큰 이미지 보기](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image51.png))
 
@@ -285,7 +285,7 @@ DetailsView 설정 해야 하는 삽입 모드에서 표시 하기 위해 합니
 레코드를 모두 나열 됩니다는 `Products` 테이블입니다. 볼 수 있듯이 그림 19의 모든 새 제품의 열 이외의 `ProductID`, `ProductName`, 및 `UnitPrice` 가 `NULL` 값입니다.
 
 
-[![NULL 값 할당 되는 제품 필드에에서 제공 되지 DetailsView](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image54.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image53.png)
+[![T제품 DetailsView에서 필드 제공 되지 않으면 그 값은 NULL 값 할당](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image54.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image53.png)
 
 **그림 19**: 할당 되는 제품 필드에에서 제공 되지 DetailsView `NULL` 값 ([큰 이미지를 보려면 클릭](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image55.png))
 
@@ -313,7 +313,7 @@ ObjectDataSource의에 대 한 이벤트 처리기를 만들려면 잠시 `Inser
 이 시점 (예: Acme 탄산 음료) 새 제품을 추가 합니다 `CategoryID` 및 `SupplierID` 새 제품 열 1로 설정 됩니다 (그림 20 참조).
 
 
-[![새 제품 이제 해당 CategoryID 및 공급 업체 Id 값을 1로 설정](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image57.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image56.png)
+[![N활용 하면 초보 제품 이제 공급 업체 Id와 id가 1로 설정한 값](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image57.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image56.png)
 
 **그림 20**: 새 제품 이제는 해당 `CategoryID` 하 고 `SupplierID` 값이 1로 설정 ([클릭 하 여 큰 이미지 보기](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image58.png))
 

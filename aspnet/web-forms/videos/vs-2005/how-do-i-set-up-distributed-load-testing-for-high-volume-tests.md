@@ -8,15 +8,15 @@ ms.date: 07/09/2007
 ms.assetid: d5c42efc-1457-4e75-87e8-5b41c9ee8a80
 msc.legacyurl: /web-forms/videos/vs-2005/how-do-i-set-up-distributed-load-testing-for-high-volume-tests
 msc.type: video
-ms.openlocfilehash: 018c35b629eb0c44afb019eaaf33d5fe246d24ce
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5916531603ed66c8e0a9448c168cb81f673e129c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57044920"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59397508"
 ---
-<a name="how-do-i-set-up-distributed-load-testing-for-high-volume-tests"></a>[어떻게 할까요?] 대용량 테스트에 대 한 분산된 부하 테스트 설정?
-====================
+# <a name="how-do-i-set-up-distributed-load-testing-for-high-volume-tests"></a>[어떻게 할까요?] 대용량 테스트에 대 한 분산된 부하 테스트 설정?
+
 [Chris Menegay](https://twitter.com/CMenegay)
 
 Visual Studio Team System을 사용 하면 하나의 원격 컴퓨터에서 컨트롤러와 같거나 추가 원격 컴퓨터에서 여러 에이전트를 구성 하는 분산 부하 테스트를 만들어 테스트 "장치"를 설정할 수 있습니다. 이 비디오 안내 컨트롤러 및 에이전트 및 설치 후 구성 원격 컨트롤러를 사용 하 여 실행할 테스트 사례입니다. 에서 볼 수 있듯이 Visual Studio Team System 손쉽게 매우 분산된 부하 테스트 고용량 자동화 된 테스트를 설정 합니다.

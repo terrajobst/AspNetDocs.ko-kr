@@ -8,15 +8,15 @@ ms.date: 12/12/2012
 ms.assetid: 81d46f14-8f48-4d8c-830d-cc8d594dc11b
 msc.legacyurl: /web-api/overview/security/preventing-cross-site-request-forgery-csrf-attacks
 msc.type: authoredcontent
-ms.openlocfilehash: c88975d1c205e9d0733bfb4c710b92bc8fdaaa7a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5fb0f8bcc9e587ba4fbbf2b857d3bf7adcaafb94
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57042370"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59392029"
 ---
-<a name="preventing-cross-site-request-forgery-csrf-attacks-in-aspnet-mvc-application"></a>ASP.NET MVC 응용 프로그램에서 교차 사이트 요청 위조 (CSRF) 공격 방지
-====================
+# <a name="preventing-cross-site-request-forgery-csrf-attacks-in-aspnet-mvc-application"></a>ASP.NET MVC 응용 프로그램에서 교차 사이트 요청 위조 (CSRF) 공격 방지
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 교차 사이트 요청 위조 (CSRF) 공격 악성 사이트 여기서 사용자가 현재 로그인 한 취약 한 사이트에 요청을 보냅니다 하는 위치는

@@ -8,15 +8,15 @@ ms.date: 12/10/2012
 ms.assetid: b0a214c7-2f38-4dbc-b47f-bd7bd9df97bd
 msc.legacyurl: /mvc/overview/advanced/custom-mvc-templates
 msc.type: authoredcontent
-ms.openlocfilehash: 3c14bc6feb144a52773bf7bd4c23df24966a9ebb
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0603bc24e070e223551813f66a75889a2e46fd35
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033870"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379549"
 ---
-<a name="custom-mvc-template"></a>사용자 지정 MVC 템플릿
-====================
+# <a name="custom-mvc-template"></a>사용자 지정 MVC 템플릿
+
 [Jacques Eloff](https://github.com/joeloff)
 
 Visual Studio 2010에 대 한 MVC 3 Tools 업데이트 릴리스의 MVC 프로젝트에 대 한 별도 프로젝트 마법사를 도입 되었습니다. 변경 된 두 가지 요인에 의해 결정 됩니다. 먼저 MVC 3 Razor 같은 추가 뷰 엔진에 대 한 지원에 새 템플릿 도입 될 복잡해 Visual Studio에서 새 프로젝트 대화 상자. 둘째, 확장성 지점에 대 한 고객에 게 요청한가 있으며 새 MVC 프로젝트 마법사는 이용할 우리 이러한 요청에 응답할 수 있도록 합니다.

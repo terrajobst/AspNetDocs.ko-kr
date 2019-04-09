@@ -8,15 +8,15 @@ ms.date: 01/29/2019
 ms.assetid: 9b265a5a-6a70-4a82-adce-2d7c56ae8bdd
 msc.legacyurl: /web-api/overview/security/enabling-cross-origin-requests-in-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: c9d3e4b05103d270ad95908177bb2981338a4ae1
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 9d3016d98fa6c3a55359c6dab0737407b29925f1
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425290"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59403833"
 ---
-<a name="enable-cross-origin-requests-in-aspnet-web-api-2"></a>ASP.NET Web API 2에서 크로스-원본 요청을 사용 하도록 설정
-====================
+# <a name="enable-cross-origin-requests-in-aspnet-web-api-2"></a>ASP.NET Web API 2에서 크로스-원본 요청을 사용 하도록 설정
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 > 브라우저의 보안 기능은 웹 페이지에서 다른 도메인으로 AJAX 요청을 전송하는 것을 막습니다. 이 제약 사항을 *동일 원본 정책(Same-Origin Policy)* 이라고 부르며, 악의적인 사이트가 다른 사이트의 민감한 데이터를 무차별적으로 읽는 것을 방지합니다. 그러나 하려는 경우가 있습니다 수 다른 사이트에 web API를 호출할 수 있습니다.
@@ -45,10 +45,10 @@ ms.locfileid: "58425290"
 
 반면, 다음 URL들은 위의 두 URL과는 다른 원본입니다.
 
-- `http://example.net` -도메인이 다릅니다
-- `http://example.com:9000/foo.html` -포트가 다릅니다
-- `https://example.com/foo.html` -스키마가 다릅니다
-- `http://www.example.com/foo.html` -하위 도메인이 다릅니다
+- `http://example.net` -다른 도메인
+- `http://example.com:9000/foo.html` -다른 포트
+- `https://example.com/foo.html` -다른 구성표
+- `http://www.example.com/foo.html` -다른 하위 도메인
 
 > [!NOTE]
 > Internet Explorer 원본을 비교 하는 경우 포트를 고려 하지 않습니다.

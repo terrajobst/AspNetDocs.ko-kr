@@ -8,15 +8,15 @@ ms.date: 02/09/2007
 ms.assetid: e262ca69-55e5-4ec2-b278-78ee129b4649
 msc.legacyurl: /web-forms/videos/vs-2005/introduction-to-managing-and-running-tests-with-team-system
 msc.type: video
-ms.openlocfilehash: 1b9ea5277253395ba16b3a4480b61fb522327d75
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: da305fcb2c47279df200d3b1229df927aceec764
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57048940"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59401935"
 ---
-<a name="introduction-to-managing-and-running-tests-with-team-system"></a>관리 및 Team System을 사용한 테스트 실행에 대 한 소개
-====================
+# <a name="introduction-to-managing-and-running-tests-with-team-system"></a>관리 및 Team System을 사용한 테스트 실행에 대 한 소개
+
 Eric Lee 여
 
 이 비디오에서는 모든 관리할 수 있습니다 또는 Visual Studio Team System의 테스트 관리 기능을 사용 하 여 사례를 테스트 하는 여러 방법을 표시 합니다. 또한 살펴보겠습니다 테스트 실행 하 고 구성 하는 방법.

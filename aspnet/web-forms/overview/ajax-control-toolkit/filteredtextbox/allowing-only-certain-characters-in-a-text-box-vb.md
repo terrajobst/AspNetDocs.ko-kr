@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 33af23f1-4016-4740-8fb2-37d1773452cd
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/filteredtextbox/allowing-only-certain-characters-in-a-text-box-vb
 msc.type: authoredcontent
-ms.openlocfilehash: aec5a3af98cf40e460f4164fb8950e8029002937
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 455d62d97808862f70692c46ae223f47270266f9
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57028550"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59387622"
 ---
-<a name="allowing-only-certain-characters-in-a-text-box-vb"></a>텍스트 상자에 특정 문자만 허용(VB)
-====================
+# <a name="allowing-only-certain-characters-in-a-text-box-vb"></a>텍스트 상자에 특정 문자만 허용(VB)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/4/c/2/4c2def7a-0d23-4055-91f9-1f18504167d7/FilteredTextBox0.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/filteredtextbox0VB.pdf)
@@ -56,7 +56,7 @@ ASP.NET AJAX Control Toolkit에 포함 된 `FilteredTextBox` 입력란을 확장
 JavaScript가 설정 된 경우에 문자를 입력 하 고 페이지를 실행 작동 하지 않습니다. 그러나 숫자 페이지에 표시 합니다. 하지만 보호 `FilteredTextBox` 제공 완벽 아닙니다. JavaScript를 사용 하는 경우 추가 유효성 검사 의미, 즉, ASP를 사용 해야 하므로 모든 데이터를 텍스트 상자에 입력할 수 있습니다. NET의 유효성 검사를 제어 합니다.
 
 
-[![숫자만 입력할 수](allowing-only-certain-characters-in-a-text-box-vb/_static/image2.png)](allowing-only-certain-characters-in-a-text-box-vb/_static/image1.png)
+[![O입력할 수 있는 숫자](allowing-only-certain-characters-in-a-text-box-vb/_static/image2.png)](allowing-only-certain-characters-in-a-text-box-vb/_static/image1.png)
 
 숫자만 입력 될 수 있습니다 ([클릭 하 여 큰 이미지 보기](allowing-only-certain-characters-in-a-text-box-vb/_static/image3.png))
 

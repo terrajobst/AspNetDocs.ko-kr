@@ -8,15 +8,15 @@ ms.date: 01/23/2007
 ms.assetid: 75707a81-244f-4fdc-aab3-eaefd9300e43
 msc.legacyurl: /web-forms/videos/aspnet-ajax/how-do-i-get-started-with-aspnet-ajax
 msc.type: video
-ms.openlocfilehash: 01e72295ab45e6c01794306f587a5725647fb261
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: e3e70c0d43c2f2db13180342730156728fa03cc2
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57042010"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59399972"
 ---
-<a name="how-do-i-get-started-with-aspnet-ajax"></a>[어떻게 할까요?] ASP.NET AJAX와 함께 시작?
-====================
+# <a name="how-do-i-get-started-with-aspnet-ajax"></a>[어떻게 할까요?] ASP.NET AJAX와 함께 시작?
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 ASP.NET AJAX는.NET 3.5의 일부로 포함이 비디오의 설치 부분을.NET Framework 버전 2.0을 사용 하는 경우 관련만 이므로 note 합니다.

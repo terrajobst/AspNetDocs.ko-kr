@@ -8,15 +8,15 @@ ms.date: 08/30/2013
 ms.assetid: 0ee21741-c1bf-4025-a9b0-24580cae24bc
 msc.legacyurl: /aspnet/overview/owin-and-katana/an-overview-of-project-katana
 msc.type: authoredcontent
-ms.openlocfilehash: 52007eba109de28c6d178505b82b1d5ff2883b47
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 72f70faa151007558ecbb270143ecd5b37c2134d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57040740"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59392575"
 ---
-<a name="an-overview-of-project-katana"></a>프로젝트 Katana 개요
-====================
+# <a name="an-overview-of-project-katana"></a>프로젝트 Katana 개요
+
 [Howard Dierking](https://github.com/howarddierking)
 
 > ASP.NET 프레임 워크는 10 년 넘게 오랫동안 및 수많은 웹 사이트 및 서비스의 개발 플랫폼이 사용 하도록 설정 합니다. 웹 응용 프로그램 개발 전략 진화 하는 대로 프레임 워크를 ASP.NET MVC 및 ASP.NET Web API와 같은 기술 사용 하 여 단계에서 진화 할 수 되었습니다. 클라우드 컴퓨팅의 세계로 다음 진화 단계를 사용 하는 웹 응용 프로그램 개발을 하는 대로 프로젝트 [Katana](https://channel9.msdn.com/Shows/Web+Camps+TV/The-Katana-Project-OWIN-for-ASPNET) ASP.NET 응용 프로그램을 유연 하 고 이식 가능 하며 사용할 수 있도록 구성 요소의 기본 집합을 제공 합니다. 경량 – 더 나은 성능을 제공 하 고 프로젝트, 다른 말로 [Katana](https://channel9.msdn.com/Shows/Web+Camps+TV/The-Katana-Project-OWIN-for-ASPNET) 클라우드 ASP.NET 응용 프로그램을 최적화 합니다.

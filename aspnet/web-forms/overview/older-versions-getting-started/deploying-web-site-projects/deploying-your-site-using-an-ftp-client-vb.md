@@ -8,15 +8,15 @@ ms.date: 04/01/2009
 ms.assetid: 09279194-bcf9-4b59-a09d-c68e5926a758
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/deploying-your-site-using-an-ftp-client-vb
 msc.type: authoredcontent
-ms.openlocfilehash: ea6d2deaaad1112f4a5ce4e4ea5534c6eab35a8d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 70640ac12b52d50c92d1d7f65c1116b2ec36d883
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058660"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381772"
 ---
-<a name="deploying-your-site-using-an-ftp-client-vb"></a>FTP 클라이언트를 사용하여 사이트 배포(VB)
-====================
+# <a name="deploying-your-site-using-an-ftp-client-vb"></a>FTP 클라이언트를 사용하여 사이트 배포(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/4/5/F/45F815EC-8B0E-46D3-9FB8-2DC015CCA306/ASPNET_Hosting_Tutorial_03_VB.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial03_DeployingViaFTP_vb.pdf)
@@ -69,7 +69,7 @@ ms.locfileid: "57058660"
 > 에 됩니다 프로덕션 서버에서 소스 코드 파일에 피해를 주지 무시 됩니다. ASP.NET 소스 코드 파일을 프로덕션 서버에 있는 경우에 없는 웹 사이트 방문자에 액세스할 수 있도록 기본적으로 소스 코드 파일에 HTTP 요청을 금지 합니다. (즉, 사용자가 방문 하려고 하는 경우 `http://www.yoursite.com/Default.aspx.vb` 설명 하는 오류 페이지가 이러한 종류의 파일-생깁니다 `.vb` 파일을 사용할 수 없습니다.)
 
 
-[![웹 서버는 웹 호스트 공급자에 바탕 화면에서 필요한 파일을 복사 하는 FTP 클라이언트를 사용 합니다.](deploying-your-site-using-an-ftp-client-vb/_static/image2.png)](deploying-your-site-using-an-ftp-client-vb/_static/image1.png)
+[![Use 웹 서버는 웹 호스트 공급자에 바탕 화면에서 필요한 파일을 복사 하는 FTP 클라이언트입니다.](deploying-your-site-using-an-ftp-client-vb/_static/image2.png)](deploying-your-site-using-an-ftp-client-vb/_static/image1.png)
 
 **그림 1**: 웹 서버는 웹 호스트 공급자에 바탕 화면에서 필요한 파일을 복사 하는 FTP 클라이언트를 사용 하 여 ([클릭 하 여 큰 이미지 보기](deploying-your-site-using-an-ftp-client-vb/_static/image3.png))
 
@@ -82,7 +82,7 @@ ms.locfileid: "57058660"
 > 잠시가 되도록 응용 프로그램을 볼 때 오류가 발생 하는 경우 올바른 파일 집합이 배포 했습니다. 다음으로, 문제에 대 한 단서를 표시 하는 경우 오류 메시지를 확인 합니다. 다음 웹 호스트 회사의 헬프 데스크를 설정 하거나 적절 한 포럼에 질문을 게시 합니다 [ASP.NET 포럼](https://forums.asp.net/)합니다.
 
 
-[![책 검토 사이트는 인터넷에 연결 된 모든 사용자에 게 이제 액세스할 수 있습니다.](deploying-your-site-using-an-ftp-client-vb/_static/image5.png)](deploying-your-site-using-an-ftp-client-vb/_static/image4.png)
+[![T그 책 검토 사이트에 이제 액세스할 수는 인터넷에 연결 된 모든 사용자에 게.](deploying-your-site-using-an-ftp-client-vb/_static/image5.png)](deploying-your-site-using-an-ftp-client-vb/_static/image4.png)
 
 **그림 2**: 인터넷에 연결 된 모든 사용자에 게 책 검토 사이트는 이제 액세스할 수 있습니다 ([클릭 하 여 큰 이미지 보기](deploying-your-site-using-an-ftp-client-vb/_static/image6.png))
 
@@ -124,7 +124,7 @@ ms.locfileid: "57058660"
 그림 3에서는 필요한 파일을 복사한 후 FileZilla를 보여 줍니다. ASP.NET 소스와 같은 코드 파일을 볼 수 있듯이 `About.aspx.vb`, 코드 파일에서 자동을 사용 하는 경우 배포 해야 하기 때문에 로컬 컴퓨터 (개발 환경)와 웹 호스트 공급자 (프로덕션 환경)에 컴파일입니다.
 
 
-[![FTP 클라이언트를 사용 하 여 웹 서버는 웹 호스트 공급자에 바탕 화면에서 필요한 파일을 복사 하려면](deploying-your-site-using-an-ftp-client-vb/_static/image8.png)](deploying-your-site-using-an-ftp-client-vb/_static/image7.png)
+[![U웹 서버는 웹 호스트 공급자에 바탕 화면에서 필요한 파일을 복사 하는 FTP 클라이언트 se](deploying-your-site-using-an-ftp-client-vb/_static/image8.png)](deploying-your-site-using-an-ftp-client-vb/_static/image7.png)
 
 **그림 3**: 웹 서버는 웹 호스트 공급자에 바탕 화면에서 필요한 파일을 복사 하는 FTP 클라이언트를 사용 하 여 ([클릭 하 여 큰 이미지 보기](deploying-your-site-using-an-ftp-client-vb/_static/image9.png))
 

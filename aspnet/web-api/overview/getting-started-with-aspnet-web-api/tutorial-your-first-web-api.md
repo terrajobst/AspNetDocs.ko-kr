@@ -1,28 +1,31 @@
 ---
 uid: web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api
-title: ASP.NET Web API 2 (C#)를 사용 하 여 시작
+title: ASP.NET Web API 2 시작 (C#)-ASP.NET 4.x
 author: MikeWasson
-description: HTTP를 단순히 웹 페이지를 제공 합니다. 서비스 및 데이터를 노출 하는 Api를 빌드하기 위한 강력한 플랫폼 이기도 합니다. HTTP에는 단순 하 고 유연 하 고 ubiq는 중...
+description: 코드를 사용 하 여 자습서입니다. ASP.NET Web API를 사용 하 여 제품의 목록을 반환 하는 web API를 만듭니다.
 ms.author: riande
 ms.date: 11/28/2017
+ms.custom: seoapril2019
 msc.legacyurl: /web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 7bec95af4532535f0d620bfe6862958907466874
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5e3c049ba4349301c3c2d173d4311b3d0883bf68
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57060190"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59401753"
 ---
-<a name="get-started-with-aspnet-web-api-2-c"></a>ASP.NET Web API 2 (C#)를 사용 하 여 시작
-====================
+# <a name="get-started-with-aspnet-web-api-2-c"></a>ASP.NET Web API 2 (C#)를 사용 하 여 시작
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 [완료 된 프로젝트 다운로드](https://code.msdn.microsoft.com/Sample-code-of-Getting-c56ccb28)
 
+이 자습서에서는 제품의 목록을 반환 하는 web API를 만들려면 ASP.NET Web API를 사용 합니다.
+
 HTTP를 단순히 웹 페이지를 제공 합니다. HTTP은 서비스 및 데이터를 노출 하는 Api를 빌드하기 위한 강력한 플랫폼 이기도 합니다. HTTP는 간단 하 고 유연 하며 유비쿼터스는입니다. 생각할 수 있는 거의 모든 플랫폼에서 HTTP 라이브러리도 있으므로 HTTP 서비스는 광범위 한 브라우저, 모바일 장치 및 기존 데스크톱 응용 프로그램 등의 클라이언트를 확보할 수 있습니다.
 
-ASP.NET Web API는 web Api는.NET Framework를 빌드하기 위한 프레임 워크입니다. 이 자습서에서는 제품의 목록을 반환 하는 web API를 만들려면 ASP.NET Web API를 사용 합니다.
+ASP.NET Web API는 web Api는.NET Framework를 빌드하기 위한 프레임 워크입니다. 
 
 ## <a name="software-versions-used-in-the-tutorial"></a>이 자습서에 사용 되는 소프트웨어 버전
 

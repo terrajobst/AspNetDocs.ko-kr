@@ -8,15 +8,15 @@ ms.date: 04/01/2008
 ms.assetid: 041854a5-ea8c-4de0-82f1-121ba6cb2893
 msc.legacyurl: /web-forms/overview/older-versions-security/admin/unlocking-and-approving-user-accounts-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 87f27dc1cc7271ddee8785c12d48913e3c9f2c98
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1f6ade517bda60ac0f44811853ee9b9d06070091
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57044500"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59384177"
 ---
-<a name="unlocking-and-approving-user-accounts-vb"></a>사용자 계정 잠금 해제 및 승인(VB)
-====================
+# <a name="unlocking-and-approving-user-accounts-vb"></a>사용자 계정 잠금 해제 및 승인(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/6/0/e/60e1bd94-e5f9-4d5a-a079-f23c98f4f67d/VB.14.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/0/e/60e1bd94-e5f9-4d5a-a079-f23c98f4f67d/aspnet_tutorial14_UnlockAndApprove_vb.pdf)
@@ -49,7 +49,7 @@ ms.locfileid: "57044500"
 GridView에는 HyperLinkField를 추가한 후 잠시 보기는 `ManageUsers.aspx` 브라우저를 통해 페이지입니다. 그림 1에서 볼 수 있듯이 각 GridView 행은 이제 "Manage" 링크를 포함 합니다. Bruce에 대 한 "Manage" 링크가 가리키는 `UserInformation.aspx?user=Bruce`Dave에 대 한 "Manage" 링크가 가리키는 반면, `UserInformation.aspx?user=Dave`합니다.
 
 
-[![HyperLinkField 추가](unlocking-and-approving-user-accounts-vb/_static/image2.png)](unlocking-and-approving-user-accounts-vb/_static/image1.png)
+[![T그 HyperLinkField 추가](unlocking-and-approving-user-accounts-vb/_static/image2.png)](unlocking-and-approving-user-accounts-vb/_static/image1.png)
 
 **그림 1**: HyperLinkField 각 사용자 계정에 대 한 "Manage" 링크를 추가 합니다 ([클릭 하 여 큰 이미지 보기](unlocking-and-approving-user-accounts-vb/_static/image3.png))
 
@@ -72,7 +72,7 @@ GridView에는 HyperLinkField를 추가한 후 잠시 보기는 `ManageUsers.asp
 이러한 컨트롤을 추가한 후 Visual Studio의 디자인 뷰에서 그림 2의 스크린샷과 유사 합니다.
 
 
-[![UserInformation.aspx에 대 한 사용자 인터페이스 만들기](unlocking-and-approving-user-accounts-vb/_static/image5.png)](unlocking-and-approving-user-accounts-vb/_static/image4.png)
+[![CUserInformation.aspx에 대 한 사용자 인터페이스를 reate](unlocking-and-approving-user-accounts-vb/_static/image5.png)](unlocking-and-approving-user-accounts-vb/_static/image4.png)
 
 **그림 2**: 에 대 한 사용자 인터페이스를 만듭니다 `UserInformation.aspx` ([큰 이미지를 보려면 클릭](unlocking-and-approving-user-accounts-vb/_static/image6.png))
 
@@ -98,7 +98,7 @@ GridView에는 HyperLinkField를 추가한 후 잠시 보기는 `ManageUsers.asp
 현재 위치에서 이러한 이벤트 처리기를 사용 하 여 페이지를 다시 방문 및 승인 되지 않은 사용자입니다. 그림 3과 같이 표시 되어야 사용자를 나타내는 페이지의 메시지 간단한 `IsApproved` 속성 성공적으로 수정 합니다.
 
 
-[![Chris 승인 되었으면 합니다.](unlocking-and-approving-user-accounts-vb/_static/image8.png)](unlocking-and-approving-user-accounts-vb/_static/image7.png)
+[![Chris 된 승인 되지 않음](unlocking-and-approving-user-accounts-vb/_static/image8.png)](unlocking-and-approving-user-accounts-vb/_static/image7.png)
 
 **그림 3**: Chris 승인 되었습니다 ([클릭 하 여 큰 이미지 보기](unlocking-and-approving-user-accounts-vb/_static/image9.png))
 
@@ -106,7 +106,7 @@ GridView에는 HyperLinkField를 추가한 후 잠시 보기는 `ManageUsers.asp
 다음으로, 로그 아웃 하 고 계정을 가진 사용자로 로그인 시도 방금 승인 없습니다. 사용자 승인 되지 않은, 때문에 로그인 할 수 없습니다. 기본적으로 로그인 컨트롤 어떤 이유로 든 사용자 로그인 할 수 없는 경우 동일한 메시지를 표시 합니다. 하지만 합니다 <a id="Tutorial6"> </a> [ *유효성 검사 사용자 자격 증명에 대 한 멤버 자격 사용자 스토어* ](../membership/validating-user-credentials-against-the-membership-user-store-vb.md) 자습서 더 적절 한 메시지를 표시 하려면 Login 컨트롤 향상에 대해 살펴보았습니다. 그림 4에서 알 수 있듯이, Chris 계정을 아직 승인 되지 않은 때문에 로그인 할 수 없는 그 설명 하는 메시지가 표시 됩니다.
 
 
-[![Chris 없습니다 때문에 His 로그인은 승인 되지 않음](unlocking-and-approving-user-accounts-vb/_static/image11.png)](unlocking-and-approving-user-accounts-vb/_static/image10.png)
+[![C자신의 계정은 승인 이므로 hris 로그인 할 수 없습니다](unlocking-and-approving-user-accounts-vb/_static/image11.png)](unlocking-and-approving-user-accounts-vb/_static/image10.png)
 
 **그림 4**: Chris 없습니다 때문에 His 로그인은 승인 되지 않음 ([클릭 하 여 큰 이미지 보기](unlocking-and-approving-user-accounts-vb/_static/image12.png))
 
@@ -116,7 +116,7 @@ GridView에는 HyperLinkField를 추가한 후 잠시 보기는 `ManageUsers.asp
 반환 합니다 `ManageUsers.aspx` 페이지 및 잠긴된 사용자 관리 링크를 클릭 합니다. 그림 5에서 알 수 있듯이의 값이 표시 됩니다 하는 `LastLockedOutDateLabel` 사용자 잠금 해제 단추를 사용 해야 합니다. 사용자 계정의 잠금을 해제 하려면 사용자 잠금 해제 단추를 클릭 합니다. 사용자 잠금 해제 한 후 다시 로그인 할 수 있습니다.
 
 
-[![Dave는 시스템에서 잠 궜 습니다.](unlocking-and-approving-user-accounts-vb/_static/image14.png)](unlocking-and-approving-user-accounts-vb/_static/image13.png)
+[![Dave는 시스템에서 잠 궜 습니다](unlocking-and-approving-user-accounts-vb/_static/image14.png)](unlocking-and-approving-user-accounts-vb/_static/image13.png)
 
 **그림 5**: Dave는 된 잠긴 개 시스템 ([클릭 하 여 큰 이미지 보기](unlocking-and-approving-user-accounts-vb/_static/image15.png))
 
@@ -166,7 +166,7 @@ CreateUserWizard 컨트롤에서 전자 메일을 보내도록 구성 해당 `Ma
 최종적은 새 사용자 아니라는 승인 사이트에 로그인 할 수 없습니다.을 의미 합니다. 또한 자동으로 전송 됩니다 링크를 사용 하 여 전자 메일 확인 URL (그림 6 참조).
 
 
-[![새 사용자에 게 확인 URL에 대 한 링크를 사용 하 여 전자 메일](unlocking-and-approving-user-accounts-vb/_static/image17.png)](unlocking-and-approving-user-accounts-vb/_static/image16.png)
+[![T새 사용자 수신 확인 URL에 대 한 링크를 사용 하 여 전자 메일](unlocking-and-approving-user-accounts-vb/_static/image17.png)](unlocking-and-approving-user-accounts-vb/_static/image16.png)
 
 **그림 6**: 새 사용자는 확인 URL에 대 한 링크를 사용 하 여 전자 메일을 받습니다 ([클릭 하 여 큰 이미지 보기](unlocking-and-approving-user-accounts-vb/_static/image18.png))
 
@@ -188,7 +188,7 @@ Label 웹 컨트롤을 추가 합니다 `Verification.aspx` 페이지에서 해�
 그림 7은는 `Verification.aspx` 브라우저를 통해 방문 페이지입니다.
 
 
-[![새 사용자의 계정이 이제 승인](unlocking-and-approving-user-accounts-vb/_static/image20.png)](unlocking-and-approving-user-accounts-vb/_static/image19.png)
+[![T그리고 새 사용자 계정이 이제 승인](unlocking-and-approving-user-accounts-vb/_static/image20.png)](unlocking-and-approving-user-accounts-vb/_static/image19.png)
 
 **그림 7**: 새 사용자의 계정이 이제 승인 ([클릭 하 여 큰 이미지 보기](unlocking-and-approving-user-accounts-vb/_static/image21.png))
 

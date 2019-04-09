@@ -8,15 +8,15 @@ ms.date: 10/30/2006
 ms.assetid: f8fd58e2-f932-4f08-ab3d-fbf8ff3295d2
 msc.legacyurl: /web-forms/overview/data-access/editing-and-deleting-data-through-the-datalist/handling-bll-and-dal-level-exceptions-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 43a43c95e049acab734fa7d9fdcf2b96f12e78d9
-ms.sourcegitcommit: 62db31596a7da029263cf06335aff12236fb3186
+ms.openlocfilehash: 5714b118a5894731820d8e9775c8f5c8a375856c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58440276"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59390131"
 ---
-<a name="handling-bll--and-dal-level-exceptions-c"></a>BLL 및 DAL 수준의 예외 처리(C#)
-====================
+# <a name="handling-bll--and-dal-level-exceptions-c"></a>BLL 및 DAL 수준의 예외 처리(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_38_CS.exe) 또는 [PDF 다운로드](handling-bll-and-dal-level-exceptions-cs/_static/datatutorial38cs1.pdf)
@@ -41,7 +41,7 @@ ms.locfileid: "58440276"
 업데이트 워크플로 중에 발생 하는 예외를 처리 하는 방법에 대 한 걱정 했습니다 전에 편집 가능한 DataList를 먼저 만든 수 있습니다. 열기는 `ErrorHandling.aspx` 페이지에 `EditDeleteDataList` 폴더 집합 디자이너로 DataList를 추가 해당 `ID` 속성을 `Products`, 라는 새로운 ObjectDataSource는 추가 `ProductsDataSource`합니다. ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLL` s 클래스 `GetProducts()` 선택 하기 위한 메서드를 기록 하 고는 insert, UPDATE, 드롭 다운 목록을 설정 탭 (없음)을 삭제 합니다.
 
 
-[![GetProducts() 메서드를 사용 하 여 제품 정보를 반환 합니다.](handling-bll-and-dal-level-exceptions-cs/_static/image2.png)](handling-bll-and-dal-level-exceptions-cs/_static/image1.png)
+[![R돌아가기 GetProducts() 메서드를 사용 하 여 제품 정보 ()](handling-bll-and-dal-level-exceptions-cs/_static/image2.png)](handling-bll-and-dal-level-exceptions-cs/_static/image1.png)
 
 **그림 1**: 사용 하 여 제품 정보를 반환 합니다 `GetProducts()` 메서드 ([큰 이미지를 보려면 클릭](handling-bll-and-dal-level-exceptions-cs/_static/image3.png))
 
@@ -60,7 +60,7 @@ Visual Studio에서 자동으로 ObjectDataSource 마법사를 완료 한 후 �
 브라우저를 통해 진행 상황을 보려면 잠시 (그림 2 참조).
 
 
-[![각 제품에 편집 단추가 포함 됩니다.](handling-bll-and-dal-level-exceptions-cs/_static/image5.png)](handling-bll-and-dal-level-exceptions-cs/_static/image4.png)
+[![E편집 단추를 포함 하는 대 한 ach 제품](handling-bll-and-dal-level-exceptions-cs/_static/image5.png)](handling-bll-and-dal-level-exceptions-cs/_static/image4.png)
 
 **그림 2**: 각 제품에 편집 단추를 포함 됩니다 ([클릭 하 여 큰 이미지 보기](handling-bll-and-dal-level-exceptions-cs/_static/image6.png))
 
@@ -115,12 +115,12 @@ Visual Studio에서 자동으로 ObjectDataSource 마법사를 완료 한 후 �
 사용 하 여는 `Try ... Catch` 차단 되어에서, 사용자는 그림 4와 5 표시 자세한 오류 메시지와 함께 표시 됩니다. DataList 예외가 발생 하는 경우에 남아 있는 참고 편집 모드입니다. 제어 흐름으로 즉시 리디렉션되는 예외 발생 후 이므로이 `Catch` 블록, DataList 미리 편집 상태로 반환 하는 코드를 무시 합니다.
 
 
-[![필요한 필드를 생략 하는 경우 오류 메시지가 표시 됩니다.](handling-bll-and-dal-level-exceptions-cs/_static/image9.png)](handling-bll-and-dal-level-exceptions-cs/_static/image8.png)
+[![A필요한 필드를 생략 하는 경우 n 오류 메시지가 표시 됩니다](handling-bll-and-dal-level-exceptions-cs/_static/image9.png)](handling-bll-and-dal-level-exceptions-cs/_static/image8.png)
 
 **그림 4**: 필요한 필드를 생략 하는 경우 오류 메시지가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](handling-bll-and-dal-level-exceptions-cs/_static/image10.png))
 
 
-[![오류 메시지를 표시 하면 입력 된 음수 가격](handling-bll-and-dal-level-exceptions-cs/_static/image12.png)](handling-bll-and-dal-level-exceptions-cs/_static/image11.png)
+[![An 오류 메시지는 표시 되는 경우 입력 음수 가격](handling-bll-and-dal-level-exceptions-cs/_static/image12.png)](handling-bll-and-dal-level-exceptions-cs/_static/image11.png)
 
 **그림 5**: 오류 메시지를 표시 하면 입력 된 음수 가격 ([클릭 하 여 큰 이미지 보기](handling-bll-and-dal-level-exceptions-cs/_static/image13.png))
 

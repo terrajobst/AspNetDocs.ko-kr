@@ -8,15 +8,15 @@ ms.date: 01/15/2019
 ms.assetid: 03960de2-8d95-4444-9169-4426dcc64913
 msc.legacyurl: /signalr/overview/guide-to-the-api/handling-connection-lifetime-events
 msc.type: authoredcontent
-ms.openlocfilehash: 53151d369a14ef9a6fa034043d40ae30098a5067
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 9e6b0b3b86839efa393659531d8b74770226f383
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57036360"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59401467"
 ---
-<a name="understanding-and-handling-connection-lifetime-events-in-signalr"></a>SignalR의 연결 수명 이벤트 이해 및 처리
-====================
+# <a name="understanding-and-handling-connection-lifetime-events-in-signalr"></a>SignalR의 연결 수명 이벤트 이해 및 처리
+
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
@@ -254,7 +254,7 @@ SignalR 2 버전에 클라이언트 연결 끊기에 대 한 기본 제공 서�
 
 서버에 오버 로드를 추가 하는 SignalR 2.1 `OnDisconnect` 시간 초과 보다는 의도적으로 연결이 나타내는 이벤트입니다. `StopCalled` 매개 변수는 클라이언트 연결을 명시적으로 닫힌 경우 true입니다. JavaScript에서 서버 오류를 초래한 클라이언트 연결을 끊을 경우 오류 정보를 전달할으로 클라이언트에 게 `$.connection.hub.lastError`합니다.
 
-**C# 서버 코드: `stopCalled` 매개 변수**
+**C#서버 코드: `stopCalled` 매개 변수**
 
 [!code-csharp[Main](handling-connection-lifetime-events/samples/sample7.cs?highlight=1,3)]
 

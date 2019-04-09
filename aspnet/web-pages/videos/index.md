@@ -8,15 +8,15 @@ ms.date: 05/18/2012
 ms.assetid: febf2824-4e3d-4dc6-84c5-f99777ec6144
 msc.legacyurl: /web-pages/videos
 msc.type: book
-ms.openlocfilehash: 8ad0a510ea62848b7a429c0bd4fa781b50c2ce53
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 86b90a21f59ee0ad52a3e6f7db19d4714282105c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57022610"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59401142"
 ---
-<a name="videos"></a>비디오
-====================
+# <a name="videos"></a>비디오
+
 
 > [!NOTE] 
 > WebMatrix는 더 이상 권장 통합된 개발 환경으로 ASP.NET 웹 페이지에 대 한 합니다. 사용 하 여 [Visual Studio](xref:aspnet/web-pages/overview/getting-started/program-asp-net-web-pages-in-visual-studio) 하거나 [Visual Studio Code](https://code.visualstudio.com/)합니다.
@@ -26,7 +26,7 @@ ms.locfileid: "57022610"
     - [ASP.NET 웹 페이지 5분 소개](introduction/5-minute-introduction-to-aspnet-web-pages.md)
     - [Microsoft WebMatrix 도구 설치 및 사용](introduction/install-and-use-the-microsoft-webmatrix-tool.md)
     - [WebMatrix를 사용하여 웹 사이트 만들기](introduction/create-a-website-using-webmatrix.md)
-    - [웹 페이지의 표시 스타일 변경](introduction/change-the-visual-style-of-a-web-page.md)
+    - [웹 페이지의 시각적 스타일 변경](introduction/change-the-visual-style-of-a-web-page.md)
     - [WebMatrix의 레이아웃 기능 사용](introduction/use-the-layout-features-in-webmatrix.md)
     - [데이터 중심 동적 웹 페이지 만들기](introduction/create-a-data-driven-dynamic-web-page.md)
     - [WebMatrix에서 웹 인터페이스 만들기](introduction/create-a-web-interface-in-webmatrix.md)

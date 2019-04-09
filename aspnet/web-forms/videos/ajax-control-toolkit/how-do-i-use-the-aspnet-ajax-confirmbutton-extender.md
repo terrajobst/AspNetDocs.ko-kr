@@ -8,15 +8,15 @@ ms.date: 03/05/2007
 ms.assetid: 40287d43-6e0d-47ec-881f-c4dff970d1b9
 msc.legacyurl: /web-forms/videos/ajax-control-toolkit/how-do-i-use-the-aspnet-ajax-confirmbutton-extender
 msc.type: video
-ms.openlocfilehash: 490e29d64e07fa24e135dce9389e63b67e54ec1d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8360f3eb26d9cfb46f36f5deed25acb45fbe070a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57063070"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59389117"
 ---
-<a name="how-do-i-use-the-aspnet-ajax-confirmbutton-extender"></a>[어떻게 할까요?] ASP.NET AJAX ConfirmButton Extender 사용
-====================
+# <a name="how-do-i-use-the-aspnet-ajax-confirmbutton-extender"></a>[어떻게 할까요?] ASP.NET AJAX ConfirmButton Extender 사용
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 ASP.NET AJAX Control Toolkit의 ConfirmButton extender 단추나 LinkButton, ImageButton 컨트롤의 click 이벤트에는 확인 대화 상자를 추가 하는 간단한 방법을 제공 하는 방법에 대해 알아봅니다. 이 임박한 작업을 취소 하는 옵션을 사용 하 여 사용자를 제공 합니다.

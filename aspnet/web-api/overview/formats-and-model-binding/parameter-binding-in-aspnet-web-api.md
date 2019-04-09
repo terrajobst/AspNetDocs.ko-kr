@@ -1,25 +1,26 @@
 ---
 uid: web-api/overview/formats-and-model-binding/parameter-binding-in-aspnet-web-api
-title: ASP.NET Web API에서에서 매개 변수 바인딩 | Microsoft Docs
+title: ASP.NET Web API-ASP.NET에서에서 매개 변수 바인딩 4.x
 author: MikeWasson
-description: ''
+description: Web API 매개 변수를 바인딩하는 방법 및 ASP.NET에서 바인딩 프로세스를 사용자 지정 하는 방법에 설명 4.x 합니다.
 ms.author: riande
 ms.date: 07/11/2013
+ms.custom: seoapril2019
 ms.assetid: e42c8388-04ed-4341-9fdb-41b1b4c06320
 msc.legacyurl: /web-api/overview/formats-and-model-binding/parameter-binding-in-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: a022138c594154109ff0bfba85949099e6b2d2a2
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: f121f12ce689a079412bbd5392fde4fea863ff1f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422755"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59401974"
 ---
-<a name="parameter-binding-in-aspnet-web-api"></a>ASP.NET Web API에서에서 매개 변수 바인딩
-====================
+# <a name="parameter-binding-in-aspnet-web-api"></a>ASP.NET Web API에서에서 매개 변수 바인딩
+
 [Mike Wasson](https://github.com/MikeWasson)
 
-Web API 컨트롤러에서 메서드를 호출 하는 경우 매개 변수를 호출 하는 프로세스에 대 한 값을 설정 합니다 *바인딩*합니다. 이 문서에서는 웹 API의 매개 변수를 바인딩하는 방법을 바인딩 프로세스를 사용자 지정할 수는 방법을 설명 합니다.
+이 문서에서는 웹 API의 매개 변수를 바인딩하는 방법을 바인딩 프로세스를 사용자 지정할 수는 방법을 설명 합니다. Web API 컨트롤러에서 메서드를 호출 하는 경우 매개 변수를 호출 하는 프로세스에 대 한 값을 설정 합니다 *바인딩*합니다. 
 
 기본적으로 웹 API 매개 변수를 바인딩하는 다음 규칙을 사용 합니다.
 

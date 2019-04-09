@@ -8,15 +8,15 @@ ms.date: 09/19/2014
 ms.assetid: af69e8d2-efdd-4d0b-9bbc-95353a65c0db
 msc.legacyurl: /signalr/overview/guide-to-the-api
 msc.type: chapter
-ms.openlocfilehash: b0c8879a66642f389378b5c6353fad2fd0ae9e47
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 442d8349e0b4d8f57923625533cebecac53c586a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57021330"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59394850"
 ---
-<a name="signalr-guide-to-the-api"></a>SignalR API 가이드
-====================
+# <a name="signalr-guide-to-the-api"></a>SignalR API 가이드
+
 > SignalR 허브 API를 사용 하는 방법에 대 한 설명서입니다. 권한 부여 API 보안 탭을 참조 하세요.
 
 

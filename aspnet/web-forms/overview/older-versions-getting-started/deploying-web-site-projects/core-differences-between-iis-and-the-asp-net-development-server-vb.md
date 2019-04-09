@@ -8,15 +8,15 @@ ms.date: 04/01/2009
 ms.assetid: 090e9205-52f3-4d72-ae31-44775b8b8421
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/core-differences-between-iis-and-the-asp-net-development-server-vb
 msc.type: authoredcontent
-ms.openlocfilehash: aa20def6568d44b589099af6ecf829789fb06231
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: e156b15356b02c25ad3dbb082096fc41ee35e465
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57042280"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59403703"
 ---
-<a name="core-differences-between-iis-and-the-aspnet-development-server-vb"></a>IIS와 ASP.NET 개발 서버의 결정적 차이(VB)
-====================
+# <a name="core-differences-between-iis-and-the-aspnet-development-server-vb"></a>IIS와 ASP.NET 개발 서버의 결정적 차이(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/4/5/F/45F815EC-8B0E-46D3-9FB8-2DC015CCA306/ASPNET_Hosting_Tutorial_06_VB.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial06_WebServerDiff_vb.pdf)
@@ -50,7 +50,7 @@ ASP.NET Development Server는 현재 로그온된 한 사용자의 보안 컨텍
 다음을 방문 합니다 *가르치는 직접 ASP.NET 3.5 24 시간 동안에서* ASP.NET Development Server를 사용 하 여 개발 환경에서 책 검토 페이지. 로그인을 만든다고 가정 만들기 및 웹에서 텍스트 파일을 수정 하기 위한 권한이 있는 계정 사용 하 여 컴퓨터에 응용 프로그램의 루트 디렉터리는 서적 검토, 이전과 동일 하 게 보이지만 때마다 페이지를 방문한 사용자의 날짜와 시간  IP 주소에 저장 됩니다는 `LastTYASP35Access.txt` 파일입니다. 이 파일에 브라우저를 가리키면 그림 1에 나와 비슷한 오류 메시지가 표시 됩니다.
 
 
-[![텍스트 파일에 마지막 날짜 및 시간 서적 검토 방문한 적이&lt;](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image2.png)](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image1.png)
+[![T마지막 날짜 및 시간 서적 검토를 열어 보 았을 포함 하는 텍스트 파일이 그&lt;](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image2.png)](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image1.png)
 
 **그림 1**: 마지막 날짜 및 시간 서적 검토 방문한 적이 텍스트 파일에 포함 되어 있습니다 ([클릭 하 여 큰 이미지 보기](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image3.png))
 
@@ -58,7 +58,7 @@ ASP.NET Development Server는 현재 로그온된 한 사용자의 보안 컨텍
 프로덕션 웹 응용 프로그램을 배포 하 고 다음 호스팅된를 방문 *가르치는 직접 ASP.NET 3.5 24 시간 동안에서* 책 검토 페이지입니다. 이 시점에서 하거나 책 검토 페이지 normal 또는 그림 2와 같은 오류 메시지가 표시 됩니다. 일부 웹 호스트 공급자에는 경우 페이지는 오류 없이 작동 하는 익명 ASP.NET 컴퓨터 계정에 쓰기 권한을 부여 합니다. 그러나 웹 호스트 공급자에 익명 계정에 대 한 쓰기 액세스를 금지 하는 경우는 [ `UnauthorizedAccessException` 예외](https://msdn.microsoft.com/library/system.unauthorizedaccessexception.aspx) 발생할 때를 `TYASP35.aspx` 페이지에서 현재 날짜 및 시간을 작성 하려고는 `LastTYASP35Access.txt` 파일입니다.
 
 
-[![IIS에서 사용 하는 기본 컴퓨터 계정에는 파일 시스템에 쓸 수 있는 권한이 없는 합니다.](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image5.png)](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image4.png)
+[![T파일 시스템에 대 한 쓰기 권한이 없는 기본 컴퓨터 계정에서 사용 하는 IIS 그](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image5.png)](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image4.png)
 
 **그림 2**: 기본 컴퓨터 계정이 사용 IIS에 있는 권한이 아닌 파일 시스템에 쓰기 ([클릭 하 여 큰 이미지 보기](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image6.png))
 
@@ -96,7 +96,7 @@ ASP.NET Development Server를 사용 하 여 사이트를 방문 하 고 브라�
 주소 표시줄에이 URL을 입력 하면 해당 브라우저에서 파일에 대 한 ASP.NET 개발 서버는 요청을 보내야 합니다. ASP.NET Development Server는 처리를 위해 ASP.NET 런타임에서 요청 넘깁니다. 에서는 아직 로그인 하지 않은 것 때문에 합니다 `Web.config` 에 `PrivateDocs` 폴더는 익명 액세스를 거부 하도록 구성 된, ASP.NET 런타임이 자동으로 우리를 로그인 페이지로 리디렉션합니다, `Login.aspx` (그림 3 참조). 사용자를 로그인 페이지로 리디렉션, ASP.NET에 포함 됩니다는 `ReturnUrl` 보려는 사용자가 하려는 페이지를 나타내는 쿼리 문자열 매개 변수입니다. 사용자를 성공적으로 로그인 한 후이 페이지를 반환할 수 있습니다.
 
 
-[![권한이 없는 사용자가 자동으로 로그인 페이지로 리디렉션됩니다.](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image8.png)](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image7.png)
+[![Unauthorized 사용자가 자동으로 로그인 페이지로 리디렉션됩니다.](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image8.png)](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image7.png)
 
 **그림 3**: 권한이 없는 사용자가 자동으로 로그인 페이지로 리디렉션됩니다 ([클릭 하 여 큰 이미지 보기](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image9.png))
 
@@ -104,7 +104,7 @@ ASP.NET Development Server를 사용 하 여 사이트를 방문 하 고 브라�
 이제 프로덕션에서이 동작은 확인해 보겠습니다. 응용 프로그램을 배포 하 고 직접 URL에 Pdf 중 하나를 입력 합니다 `PrivateDocs` 프로덕션 환경에서 폴더입니다. 이 파일에 대 한 IIS 요청을 보낼 브라우저 라는 메시지가 표시 됩니다. IIS 정적 파일 요청 때문에 검색 하 고 ASP.NET 런타임에서 호출 하지 않고 파일을 반환 합니다. 결과적으로, 했습니다 없는 URL 권한 부여 확인 수행 화면이 개인 PDF의 내용을 파일에 직접 URL을 아는 사람에 게 액세스할 수 있습니다.
 
 
-[![익명 사용자에 게 파일에 직접 URL을 입력 하 여 개인 PDF 파일을 다운로드할 수 있습니다.](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image11.png)](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image10.png)
+[![A익명 사용자가 다운로드할 수는 개인 PDF 파일에서 입력 직접 URL 파일](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image11.png)](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image10.png)
 
 **그림 4**: 익명 사용자가 다운로드할 수는 개인 PDF 파일에서 입력 직접 URL 파일 ([클릭 하 여 큰 이미지 보기](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image12.png))
 

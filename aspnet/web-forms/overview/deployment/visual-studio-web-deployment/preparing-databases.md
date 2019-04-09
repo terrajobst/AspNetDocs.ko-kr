@@ -8,15 +8,15 @@ ms.date: 02/15/2013
 ms.assetid: ae4def81-fa37-4883-a13e-d9896cbf6c36
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/preparing-databases
 msc.type: authoredcontent
-ms.openlocfilehash: 67f44d9f23a2fe83c48e68328b1dee739056e32f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 786be61d48f26e5765eac0c8d6fad7551897f711
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029780"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59387688"
 ---
-<a name="aspnet-web-deployment-using-visual-studio-preparing-for-database-deployment"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 데이터베이스 배포 준비
-====================
+# <a name="aspnet-web-deployment-using-visual-studio-preparing-for-database-deployment"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 데이터베이스 배포 준비
+
 [Tom Dykstra](https://github.com/tdykstra)
 
 [시작 프로젝트 다운로드](http://go.microsoft.com/fwlink/p/?LinkId=282627)
@@ -63,7 +63,7 @@ Code First 마이그레이션을 사용 하 여 배포한와 Contoso University 
 
 이 일반적인 시나리오를 시뮬레이션 하려면 Code First 마이그레이션을 구성 `Seed` 데이터베이스에 있는 프로덕션 환경에서 원하는 데이터만 삽입 하는 메서드. 이 `Seed` 메서드는 Code First 프로덕션 환경에서 데이터베이스를 만든 후 프로덕션 환경에서 실행 되므로 테스트 데이터를 삽입 하지 않아야 합니다.
 
-이전 버전의 Code First 마이그레이션을 릴리스되기 전에 것이 일반적 이었습니다 `Seed` 삽입 하는 메서드 테스트 데이터 또한 했으므로 개발 하는 동안 모델 바뀔 때마다 데이터베이스 완전히 삭제 하 고 처음부터 다시 만들어야 합니다. Code First 마이그레이션, 데이터베이스 변경 후 데이터는 유지 하는 테스트의 테스트 데이터를 포함 하므로 `Seed` 메서드는 필요 없습니다. 다운로드 한 프로젝트의 모든 데이터를 포함 하 여의 메서드를 사용 합니다 `Seed` 이니셜라이저 클래스의 메서드. 이 자습서에서는 이니셜라이저 클래스는 비활성화 됩니다 및 `enable Migrations. Then you'll update the `초기값 ' 마이그레이션 구성에 대 한 메서드 클래스는 프로덕션 환경에서 삽입 하려는 데이터를 삽입 합니다.
+이전 버전의 Code First 마이그레이션을 릴리스되기 전에 것이 일반적 이었습니다 `Seed` 삽입 하는 메서드 테스트 데이터 또한 했으므로 개발 하는 동안 모델 바뀔 때마다 데이터베이스 완전히 삭제 하 고 처음부터 다시 만들어야 합니다. Code First 마이그레이션, 데이터베이스 변경 후 데이터는 유지 하는 테스트의 테스트 데이터를 포함 하므로 `Seed` 메서드는 필요 없습니다. 다운로드 한 프로젝트의 모든 데이터를 포함 하 여의 메서드를 사용 합니다 `Seed` 이니셜라이저 클래스의 메서드. 이 자습서에는 이니셜라이저 클래스를 사용 하지 않도록 설정 하 고 마이그레이션을 사용 하도록 설정 합니다. 업데이트 수는 `Seed` 마이그레이션 구성에서 하는 메서드를 프로덕션 환경에서 삽입할 원하는 데이터만 삽입 되도록 클래스입니다.
 
 다음 다이어그램에서는 응용 프로그램 데이터베이스의 스키마를 보여 줍니다.
 

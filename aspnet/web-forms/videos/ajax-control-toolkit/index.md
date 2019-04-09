@@ -8,15 +8,15 @@ ms.date: 10/05/2011
 ms.assetid: 6f7b1c74-cc73-42f9-8ef0-8b3d058dabfa
 msc.legacyurl: /web-forms/videos/ajax-control-toolkit
 msc.type: chapter
-ms.openlocfilehash: 389a7563ca2c95563cd57326122a4a801e9e91e6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 938d7f696e12496fc4ae79c51e9446d71a898e3e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57019010"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59382890"
 ---
-<a name="ajax-control-toolkit"></a>Ajax Control Toolkit
-====================
+# <a name="ajax-control-toolkit"></a>Ajax Control Toolkit
+
 > 매우 빠르게 응답 Asp.net Ajax Control Toolkit를 사용 하 여 페이지를 만드는 방법입니다.
 
 
@@ -55,8 +55,8 @@ ms.locfileid: "57019010"
 - [AJAX Toolkit 재정렬 컨트롤](how-do-i-the-ajax-toolkit-reorder-control.md)
 - [ASP.NET 도구 키트에 AJAX 평가 컨트롤 사용](utilize-the-ajax-rating-control-in-the-aspnet-toolkit.md)
 - [컨트롤 Extender](control-extenders.md)
-- [색 편집기](color-picker.md)
-- [콤보 상자](combo-box.md)
+- [색 선택](color-picker.md)
+- [Combo Box](combo-box.md)
 - [편집기 컨트롤](editor-control.md)
 - [편집기 컨트롤 사용자 지정](editor-control-custom.md)
 - [새로운 사용자 지정 Extender 만들기](create-a-new-custom-extender.md)

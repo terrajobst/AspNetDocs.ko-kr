@@ -1,22 +1,23 @@
 ---
 uid: web-api/overview/advanced/httpclient-message-handlers
-title: ASP.NET Web API의에서 HttpClient 메시지 처리기 | Microsoft Docs
+title: ASP.NET Web API-ASP.NET의에서 HttpClient 메시지 처리기 4.x
 author: MikeWasson
-description: ''
+description: ASP.NET에서 ASP.NET Web API에 대 한 사용자 지정 메시지 처리기를 만들 4.x
 ms.author: riande
 ms.date: 10/01/2012
+ms.custom: seoapril2019
 ms.assetid: 5a4b6c80-b2e9-4710-8969-d5076f7f82b8
 msc.legacyurl: /web-api/overview/advanced/httpclient-message-handlers
 msc.type: authoredcontent
-ms.openlocfilehash: 764244d1299d8cfcb59c3f15d63b42ebff4f6ac0
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bd52396064cd7007ee17705ba86b02aaf27cb4f0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029100"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59401727"
 ---
-<a name="httpclient-message-handlers-in-aspnet-web-api"></a>ASP.NET Web API의에서 HttpClient 메시지 처리기
-====================
+# <a name="httpclient-message-handlers-in-aspnet-web-api"></a>ASP.NET Web API의에서 HttpClient 메시지 처리기
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 A *메시지 처리기* 는 HTTP 요청을 수신 하 고 HTTP 응답을 반환 하는 클래스입니다.

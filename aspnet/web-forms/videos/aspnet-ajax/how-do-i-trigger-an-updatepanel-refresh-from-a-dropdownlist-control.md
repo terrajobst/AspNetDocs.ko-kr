@@ -8,15 +8,15 @@ ms.date: 08/22/2007
 ms.assetid: e90defdb-b6b1-4f38-8f6a-7adccbb426ef
 msc.legacyurl: /web-forms/videos/aspnet-ajax/how-do-i-trigger-an-updatepanel-refresh-from-a-dropdownlist-control
 msc.type: video
-ms.openlocfilehash: 21dedc5a8d934e9284cf13b2075dbff637a130de
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d8b74b0fb2061477c1d2ff66e394d0bb1e22baf3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57035240"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59402052"
 ---
-<a name="how-do-i-trigger-an-updatepanel-refresh-from-a-dropdownlist-control"></a>[어떻게 할까요?] DropDownList 컨트롤에서 UpdatePanel 새로 고침을 트리거할?
-====================
+# <a name="how-do-i-trigger-an-updatepanel-refresh-from-a-dropdownlist-control"></a>[어떻게 할까요?] DropDownList 컨트롤에서 UpdatePanel 새로 고침을 트리거할?
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 대부분의 ASP.NET AJAX UpdatePanel의 비디오에서 해당 콘텐츠를 새로 고칠 UpdatePanel을 단추 컨트롤을 사용 했습니다. 아직 다른 ASP.NET 서버 컨트롤에서 발생 하는 이벤트를 사용할 수 있습니다. 이 비디오는 UpdatePanel 컨트롤을 새로 고치기 위한 트리거로 DropDownList 컨트롤의 SelectedIndexChanged 이벤트를 사용 합니다. 에서는 참조 방법을 UpdatePanel 컨트롤에 포함 된 컨트롤과 연결 된 스타일 시트 클래스 동적으로 변경할 수 있습니다.

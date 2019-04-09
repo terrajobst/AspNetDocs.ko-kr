@@ -8,15 +8,15 @@ ms.date: 03/14/2013
 ms.assetid: aadc5fa4-8215-4fc7-afd5-bcd2ef879728
 msc.legacyurl: /mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages
 msc.type: authoredcontent
-ms.openlocfilehash: 5db661cccc58d1101f95091b069ab5cbfe78a378
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: de0e9cc168b9f18fd2bd83329106df45d7551b1a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57063950"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59386562"
 ---
-<a name="xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages"></a>ASP.NET MVC 및 웹 페이지에서 XSRF/CSRF 방지
-====================
+# <a name="xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages"></a>ASP.NET MVC 및 웹 페이지에서 XSRF/CSRF 방지
+
 [Rick Anderson]((https://twitter.com/RickAndMSFT))
 
 > 교차 사이트 요청 위조 (XSRF 또는 CSRF 라고도 함)은 악의적인 웹 사이트는 클라이언트 브라우저와 해당 브라우저에서 신뢰할 수 있는 웹 사이트 간의 상호 작용에 영향을 줄 가능해 집니다 웹 호스팅 응용 프로그램에 대 한 공격입니다. 이러한 공격은 웹 사이트로 웹 브라우저 인증 토큰이 모든 요청에 자동으로 보내기 때문에 가능 합니다. 정식 예로 ASP와 같은 인증 쿠키가 있습니다. NET의 폼 인증 티켓입니다. 그러나 웹 사이트 (예: Windows 인증, 기본 및 등) 영구적 인증 메커니즘을 사용 하는 이러한 공격 대상이 될 수 있습니다.
@@ -160,7 +160,7 @@ ANTI-XSRF 시스템에는 "anonymous"가 정의 되어 있는 사용자로 익�
 
 개발자는 응용 프로그램에서 ANTI-XSRF 시스템을 구성할 수 있습니다\_시작 합니다. 구성은은 프로그래밍 방식입니다. 정적 속성 *AntiForgeryConfig* 종류는 다음과 같습니다. 대부분의 사용자 클레임을 사용 하 여 UniqueClaimTypeIdentifier 속성을 설정 하려고 합니다.
 
-| **Property** | **설명** |
+| **속성** | **설명** |
 | --- | --- |
 | **AdditionalDataProvider** | [IAntiForgeryAdditionalDataProvider](https://msdn.microsoft.com/library/system.web.helpers.iantiforgeryadditionaldataprovider(v=vs.111).aspx) 토큰 생성 하는 동안 추가 데이터를 제공 하 고 토큰 유효성 검사 중 추가 데이터를 사용 합니다. 기본값은 *null*합니다. 자세한 내용은 참조는 [IAntiForgeryAdditionalDataProvider](https://msdn.microsoft.com/library/system.web.helpers.iantiforgeryadditionaldataprovider(v=vs.111).aspx) 섹션입니다. |
 | **CookieName** | ANTI-XSRF 세션 토큰은 저장에 사용 되는 HTTP 쿠키의 이름을 제공 하는 문자열입니다. 이 값을 설정 하지 않으면 하는 경우 응용 프로그램의 배포 된 가상 경로 기준으로 이름은 자동으로 생성 됩니다. 기본값은 *null*합니다. |

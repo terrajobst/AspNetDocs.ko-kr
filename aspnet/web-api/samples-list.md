@@ -1,22 +1,23 @@
 ---
 uid: web-api/samples-list
-title: 웹 API 샘플 목록 | Microsoft Docs
+title: 웹 API 샘플 목록-ASP.NET 4.x
 author: rick-anderson
-description: ''
+description: ASP.NET Web API 샘플 목록 ASP.NET 4.x
 ms.author: riande
 ms.date: 09/18/2012
+ms.custom: seoapril2019
 ms.assetid: 8cbd9d7f-7027-4390-b098-cb81a63ecd6f
 msc.legacyurl: /web-api/samples-list
 msc.type: content
-ms.openlocfilehash: d25e0890a1b8d42cc638117f7bef9cf6457f3d75
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 673ed803f65ece1f3cd7181a48f6c9debf88bf9e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57047210"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59390170"
 ---
-<a name="web-api-samples-list"></a>Web API 샘플 목록
-====================
+# <a name="web-api-samples-list"></a>Web API 샘플 목록
+
 ## <a name="httpclient-samples"></a>HttpClient 샘플
 
 **Bing 변환 샘플** | [VS 2012 원본](https://github.com/aspnet/samples/blob/master/samples/aspnet/HttpClient/BingTranslateSample)

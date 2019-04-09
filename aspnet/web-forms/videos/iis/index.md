@@ -8,20 +8,20 @@ ms.date: 10/05/2011
 ms.assetid: 0078ceb6-3447-4ce4-90c2-d0e013ebc000
 msc.legacyurl: /web-forms/videos/iis
 msc.type: chapter
-ms.openlocfilehash: febbe4e6cc00241246cb4a8d212bb86d1adccf23
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 883b5c3ad39922ddd51ea1d07b8d52d1c74d2153
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57020190"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59384294"
 ---
-<a name="general-iis-tips"></a>일반적인 IIS 팁
-====================
+# <a name="general-iis-tips"></a>일반적인 IIS 팁
+
 > ASP.NET 응용 프로그램과 함께 작동 하도록 IIS를 구성 하는 방법입니다.
 
 
 - [공유 호스팅에서 개발 및 배포](developing-and-deploying-in-a-shared-hosting.md)
-- [IIS7 	위임된 관리자 작업](working-with-iis7-deligated-admin.md)
+- [IIS7 위임된 관리자 작업](working-with-iis7-deligated-admin.md)
 - [기능 관련 위임된 관리](feature-specific-delegated-management.md)
 - [프로덕션 ASP.NET 앱 문제 해결](troubleshooting-production-aspnet-apps.md)
 - [IIS7 관리자를 사용하여 사이트 만들기](creating-a-site-with-iis7-manager.md)

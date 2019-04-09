@@ -1,22 +1,23 @@
 ---
 uid: identity/overview/extensibility/change-primary-key-for-users-in-aspnet-identity
-title: ASP.NET Id에서 사용자에 대 한 기본 키 변경 | Microsoft Docs
+title: ASP.NET Id-ASP.NET에서에서 사용자에 대 한 기본 키 변경 4.x
 author: Rick-Anderson
 description: Visual Studio 2013의 기본 웹 응용 프로그램 사용자 계정에 대 한 키에 대 한 문자열 값을 사용합니다. ASP.NET Id를 사용 하면의 형식을 변경 하는 중...
 ms.author: riande
 ms.date: 09/30/2014
 ms.assetid: 44925849-5762-4504-a8cd-8f0cd06f6dc3
+ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/extensibility/change-primary-key-for-users-in-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: d2856ce1ca61a29e091bfbd16647b673e6fc659b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 212b07494381d13f6ded96a41b846dcdf7e8ff16
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033810"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59393745"
 ---
-<a name="change-primary-key-for-users-in-aspnet-identity"></a>ASP.NET Identity에서 사용자의 기본 키 변경
-====================
+# <a name="change-primary-key-for-users-in-aspnet-identity"></a>ASP.NET Identity에서 사용자의 기본 키 변경
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > Visual Studio 2013의 기본 웹 응용 프로그램 사용자 계정에 대 한 키에 대 한 문자열 값을 사용합니다. ASP.NET Id를 사용 하면 데이터 요구 사항에 맞게 키의 형식을 변경할 수 있습니다. 예를 들어, 키의 형식 문자열에서 정수로 변경할 수 있습니다.
@@ -272,7 +273,7 @@ ManageController.cs 파일을 엽니다. 다음 메서드를 변경 해야 합�
 <a id="other"></a>
 ## <a name="other-resources"></a>기타 리소스
 
-- [ASP.NET ID에 대한 사용자 지정 스토리지 공급자 개요](overview-of-custom-storage-providers-for-aspnet-identity.md)
-- [기존 웹 사이트를 SQL 멤버 자격에서 ASP.NET ID로 마이그레이션](../migrations/migrating-an-existing-website-from-sql-membership-to-aspnet-identity.md)
+- [ASP.NET Identity에 대한 사용자 지정 스토리지 공급자 개요](overview-of-custom-storage-providers-for-aspnet-identity.md)
+- [기존 웹 사이트를 SQL 멤버 자격에서 ASP.NET Identity로 마이그레이션](../migrations/migrating-an-existing-website-from-sql-membership-to-aspnet-identity.md)
 - [멤버 자격 및 ASP.NET Id로 사용자 프로필에 대 한 범용 공급자 데이터 마이그레이션](../migrations/migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity.md)
 - [샘플 응용 프로그램](https://aspnet.codeplex.com/SourceControl/latest#Samples/Identity/ChangePK/readme.txt) 변경 된 기본 키를 사용 하 여

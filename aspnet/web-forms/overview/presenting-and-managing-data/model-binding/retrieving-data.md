@@ -8,26 +8,26 @@ ms.date: 02/27/2014
 ms.assetid: 9f24fb82-c7ac-48da-b8e2-51b3da17e365
 msc.legacyurl: /web-forms/overview/presenting-and-managing-data/model-binding/retrieving-data
 msc.type: authoredcontent
-ms.openlocfilehash: c53c27f4852eab9813bd917315111e7cd3b04953
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 29baaf2917e47ac46a78a252721be725b4e9b58f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57056600"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59398477"
 ---
-<a name="retrieving-and-displaying-data-with-model-binding-and-web-forms"></a>모델 바인딩 및 web forms를 사용 하 여 데이터 검색 및 표시
-====================
+# <a name="retrieving-and-displaying-data-with-model-binding-and-web-forms"></a>모델 바인딩 및 web forms를 사용 하 여 데이터 검색 및 표시
+
 
 > 이 자습서 시리즈에서는 모델 바인딩을 사용 하 여 ASP.NET Web Forms 프로젝트의 기본 사항을 보여 줍니다. 모델 바인딩 보다 직관적인 데이터 원본 개체 (예: ObjectDataSource 또는 SqlDataSource) 처리 하는 보다 데이터 상호 작용 하 게 합니다. 이 시리즈 소개 자료를 사용 하 여 시작 하 고 나중에 자습서에서 고급 개념을 이동 합니다.
 > 
->  모델 바인딩 패턴은 모든 데이터 액세스 기술을 사용 하 여 작동합니다. 이 자습서에서는 Entity Framework를 사용 하는 하지만 가장 익숙한 데이터 액세스 기술을 사용할 수 있습니다. GridView, ListView, DetailsView 또는 FormView 컨트롤과 같은 데이터 바인딩된 서버 컨트롤에서 선택, 업데이트, 삭제 및 데이터 만들기에 대 한 사용 하는 방법의 이름을 지정할 수 있습니다. 이 자습서에서는 SelectMethod에 대 한 값을 지정 합니다. 
+> 모델 바인딩 패턴은 모든 데이터 액세스 기술을 사용 하 여 작동합니다. 이 자습서에서는 Entity Framework를 사용 하는 하지만 가장 익숙한 데이터 액세스 기술을 사용할 수 있습니다. GridView, ListView, DetailsView 또는 FormView 컨트롤과 같은 데이터 바인딩된 서버 컨트롤에서 선택, 업데이트, 삭제 및 데이터 만들기에 대 한 사용 하는 방법의 이름을 지정할 수 있습니다. 이 자습서에서는 SelectMethod에 대 한 값을 지정 합니다. 
 > 
 > 이 메서드 내에서 데이터를 검색 하기 위한 논리를 제공 합니다. 다음 자습서에서는 DeleteMethod UpdateMethod, InsertMethod 값을 설정 합니다.
 >
 > 할 수 있습니다 [다운로드](https://go.microsoft.com/fwlink/?LinkId=286116) 전체 프로젝트에서 C# 또는 Visual Basic입니다. 다운로드 가능한 코드는 Visual Studio 2012 이상에 작동합니다. 이 자습서에 나와 있는 Visual Studio 2017 템플릿은 약간 다른 Visual Studio 2012 템플릿을 사용 합니다.
 > 
 > 이 자습서에서 Visual Studio에서 응용 프로그램을 실행 합니다. 호스팅 공급자에 응용 프로그램을 배포 하 고 인터넷을 통해 사용할 수 있도록 수도 있습니다. Microsoft에서 제공 하는 무료 웹 호스팅에 최대 10 개의 웹 사이트를  
->  [무료 Azure 평가판 계정](https://azure.microsoft.com/free/?WT.mc_id=A443DD604)합니다. Visual Studio 웹 프로젝트를 Azure App Service Web Apps를 배포 하는 방법에 대 한 내용은 참조는 [Visual Studio를 사용 하 여 ASP.NET 웹 배포](../../deployment/visual-studio-web-deployment/introduction.md) 시리즈입니다. 이 자습서에는 Azure SQL Database로 SQL Server 데이터베이스를 배포 하려면 Entity Framework Code First 마이그레이션을 사용 하는 방법을 보여 줍니다.
+> [무료 Azure 평가판 계정](https://azure.microsoft.com/free/?WT.mc_id=A443DD604)합니다. Visual Studio 웹 프로젝트를 Azure App Service Web Apps를 배포 하는 방법에 대 한 내용은 참조는 [Visual Studio를 사용 하 여 ASP.NET 웹 배포](../../deployment/visual-studio-web-deployment/introduction.md) 시리즈입니다. 이 자습서에는 Azure SQL Database로 SQL Server 데이터베이스를 배포 하려면 Entity Framework Code First 마이그레이션을 사용 하는 방법을 보여 줍니다.
 > 
 > ## <a name="software-versions-used-in-the-tutorial"></a>이 자습서에 사용 되는 소프트웨어 버전
 > 

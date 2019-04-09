@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 0c8e74f1-b3ba-4ca9-a1c5-f5c4831a359a
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/modalpopup/using-modalpopup-with-a-repeater-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 4915883ce50512a0a612060ba9543705abcc5f00
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f1875ae95d79ec2a6762a547aabfbd03e0930b2c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57052020"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59386504"
 ---
-<a name="using-modalpopup-with-a-repeater-control-vb"></a>반복기 컨트롤에 ModalPopup 사용(VB)
-====================
+# <a name="using-modalpopup-with-a-repeater-control-vb"></a>반복기 컨트롤에 ModalPopup 사용(VB)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/2/4/0/24052038-f942-4336-905b-b60ae56f0dd5/ModalPopup2.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/modalpopup2VB.pdf)
@@ -49,7 +49,7 @@ AJAX Control Toolkit의 ModalPopup 컨트롤 클라이언트 쪽 의미를 사�
 그런 다음 데이터 원본에 있는 모든 항목은 모달 팝업을 트리거하는 옆에 있는 단추를 사용 하 여 표시 됩니다.
 
 
-[![모든 데이터 원본 항목에 대 한 모달 팝업을 트리거할 수 있습니다.](using-modalpopup-with-a-repeater-control-vb/_static/image2.png)](using-modalpopup-with-a-repeater-control-vb/_static/image1.png)
+[![T모든 데이터 원본 항목에 대 한 그 모달 팝업을 트리거할 수 있습니다](using-modalpopup-with-a-repeater-control-vb/_static/image2.png)](using-modalpopup-with-a-repeater-control-vb/_static/image1.png)
 
 모든 데이터 원본 항목에 대 한 모달 팝업을 트리거할 수 있습니다 ([클릭 하 여 큰 이미지 보기](using-modalpopup-with-a-repeater-control-vb/_static/image3.png))
 

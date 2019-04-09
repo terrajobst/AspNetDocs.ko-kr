@@ -8,15 +8,15 @@ ms.date: 03/10/2009
 ms.assetid: b61968ac-6d9b-4b75-ab2a-934b609acba4
 msc.legacyurl: /web-forms/videos/iis/iis7-playlists
 msc.type: video
-ms.openlocfilehash: 92f673fc637e2c5e7d4fd90a4e12c1b9c468f9ae
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 41b7c5daa3638eaab25379cdb9bd13fa807823ca
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57024650"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59398425"
 ---
-<a name="iis7-playlists"></a>IIS7 재생 목록
-====================
+# <a name="iis7-playlists"></a>IIS7 재생 목록
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 웹 사이트에서 미디어 파일을 호스트 하는 경우 재생 목록의 미디어에 대 한 시퀀스를 정의 하 고 필요에 따라 사용자 (예: 광고 또는 고 지 사항) 콘텐츠의 부분을 건너뛸 수 없도록 방지할 수 있습니다.

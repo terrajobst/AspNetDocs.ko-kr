@@ -8,28 +8,27 @@ ms.date: 10/18/2014
 ms.assetid: e03585c2-80bf-4083-99ba-9fcbc883ccd8
 msc.legacyurl: /web-forms/overview/older-versions-getting-started
 msc.type: chapter
-ms.openlocfilehash: 3ba0db2036def3f1cb1a08b3602f6c52eb1488d1
-ms.sourcegitcommit: 4b0e4dcecb00dd4f519aab5fcf7cc1673ad75060
+ms.openlocfilehash: 94c995ee1e636f1250efb3a90887d8d73badeca7
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57963865"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59393641"
 ---
-<a name="older-versions---web-forms-getting-started"></a>이전 버전의 경우 Web Forms 시작
-====================
-> ASP.NET Web Forms 4 및 이전 버전에 대 한 자습서입니다.
+# <a name="older-versions---web-forms-getting-started"></a>이전 버전의 경우 Web Forms 시작
 
+> ASP.NET Web Forms 4 및 이전 버전의 설명서입니다.
 
 - [ASP.NET 4 - Tailspin Spyworks](tailspin-spyworks/index.md)
 
     - [1부: 파일-> 새 프로젝트](tailspin-spyworks/tailspin-spyworks-part-1.md)
     - [2부: 데이터 액세스 계층](tailspin-spyworks/tailspin-spyworks-part-2.md)
-    - [3 부: 레이아웃 및 범주 메뉴](tailspin-spyworks/tailspin-spyworks-part-3.md)
-    - [4 부: 제품 목록](tailspin-spyworks/tailspin-spyworks-part-4.md)
-    - [5 부: 비즈니스 논리](tailspin-spyworks/tailspin-spyworks-part-5.md)
-    - [6 부: ASP.NET 멤버 자격](tailspin-spyworks/tailspin-spyworks-part-6.md)
-    - [7 부: 추가 기능](tailspin-spyworks/tailspin-spyworks-part-7.md)
-    - [8 부: 최종 페이지, 예외 처리 및 결론](tailspin-spyworks/tailspin-spyworks-part-8.md)
+    - [3부: 레이아웃 및 범주 메뉴](tailspin-spyworks/tailspin-spyworks-part-3.md)
+    - [4부: 제품 나열](tailspin-spyworks/tailspin-spyworks-part-4.md)
+    - [5부: 비즈니스 논리](tailspin-spyworks/tailspin-spyworks-part-5.md)
+    - [6부: ASP.NET 멤버 자격](tailspin-spyworks/tailspin-spyworks-part-6.md)
+    - [7부: 기능 추가](tailspin-spyworks/tailspin-spyworks-part-7.md)
+    - [8부: 최종 페이지, 예외 처리 및 결론](tailspin-spyworks/tailspin-spyworks-part-8.md)
 - [ASP.NET 4 - Entity Framework 4 및 Web Forms 시작](getting-started-with-ef/index.md)
 
     - [Entity Framework 4.0 Database First 시작](getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1.md)
@@ -42,9 +41,9 @@ ms.locfileid: "57963865"
     - [Entity Framework 4.0 Database First 시작 - 8부](getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-8.md)
 - [ASP.NET 4 - Entity Framework 4 및 Web Forms 계속](continuing-with-ef/index.md)
 
-    - [Entity Framework 4.0 및 ObjectDataSource 컨트롤, 1 부: 시작](continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started.md)
-    - [Entity Framework 4.0 및 ObjectDataSource 컨트롤, 2 부: 비즈니스 논리 레이어 및 단위 테스트 추가](continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests.md)
-    - [Entity Framework 4.0 및 ObjectDataSource 컨트롤, 3 부: 정렬 및 필터링](continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering.md)
+    - [Entity Framework 4.0 및 ObjectDataSource 컨트롤, 1부: 시작](continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started.md)
+    - [Entity Framework 4.0 및 ObjectDataSource 컨트롤, 2부: 비즈니스 논리 레이어 및 단위 테스트 추가](continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests.md)
+    - [Entity Framework 4.0 및 ObjectDataSource 컨트롤, 3부: 정렬 및 필터링](continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering.md)
     - [ASP.NET 4에서 Entity Framework 4.0으로 동시성 처리](continuing-with-ef/handling-concurrency-with-the-entity-framework-in-an-asp-net-web-application.md)
     - [ASP.NET 4에서 Entity Framework 4.0으로 성능 극대화](continuing-with-ef/maximizing-performance-with-the-entity-framework-in-an-asp-net-web-application.md)
     - [Entity Framework 4.0의 새로운 기능](continuing-with-ef/what-s-new-in-the-entity-framework-4.md)

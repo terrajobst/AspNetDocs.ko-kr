@@ -8,15 +8,15 @@ ms.date: 08/15/2006
 ms.assetid: 4823a186-caaf-4116-a318-c7ff4d955ddc
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting/sorting-custom-paged-data-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 3f40c2632e98dd8c64c985e44478a9739df473ca
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: ca1bf281130bf2c726b6147f90733c8a83754563
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423137"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59399590"
 ---
-<a name="sorting-custom-paged-data-vb"></a>사용자 지정 페이징 데이터 정렬(VB)
-====================
+# <a name="sorting-custom-paged-data-vb"></a>사용자 지정 페이징 데이터 정렬(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_26_VB.exe) 또는 [PDF 다운로드](sorting-custom-paged-data-vb/_static/datatutorial26vb1.pdf)
@@ -71,7 +71,7 @@ ms.locfileid: "58423137"
 **그림 1**: 저장된 프로시저 s 세 개의 입력 매개 변수에 다른 값을 사용해 보십시오.
 
 
-[![저장 프로시저의 결과 출력 창에 표시 됩니다.](sorting-custom-paged-data-vb/_static/image3.png)](sorting-custom-paged-data-vb/_static/image2.png)
+[![T저장 프로시저의 그 결과 출력 창에 표시 됩니다](sorting-custom-paged-data-vb/_static/image3.png)](sorting-custom-paged-data-vb/_static/image2.png)
 
 **그림 2**: 저장 프로시저의 결과 출력 창에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](sorting-custom-paged-data-vb/_static/image4.png))
 
@@ -145,7 +145,7 @@ GridView에서 정렬 기능을 사용 GridView가 스마트 태그를 GridView 
 그림 7은 기준으로 정렬 된 결과의 첫 페이지는 `UnitPrice` 오름차순으로 정렬 합니다.
 
 
-[![UnitPrice 하 여 결과 정렬](sorting-custom-paged-data-vb/_static/image10.png)](sorting-custom-paged-data-vb/_static/image9.png)
+[![T그 결과 UnitPrice 정렬](sorting-custom-paged-data-vb/_static/image10.png)](sorting-custom-paged-data-vb/_static/image9.png)
 
 **그림 7**: 결과 UnitPrice로 정렬 됩니다 ([클릭 하 여 큰 이미지 보기](sorting-custom-paged-data-vb/_static/image11.png))
 
@@ -166,7 +166,7 @@ GridView에서 정렬 기능을 사용 GridView가 스마트 태그를 GridView 
 **그림 9**: 공급 업체 이름 BoundField의 SortExpression CompanyName 변경
 
 
-[![공급 업체에서 결과 정렬할 수 있습니다.](sorting-custom-paged-data-vb/_static/image15.png)](sorting-custom-paged-data-vb/_static/image14.png)
+[![T공급 업체에서 그 결과 정렬할 수 있습니다](sorting-custom-paged-data-vb/_static/image15.png)](sorting-custom-paged-data-vb/_static/image14.png)
 
 **그림 10**: 결과 이제 정렬할 수 있습니다 공급자 ([클릭 하 여 큰 이미지 보기](sorting-custom-paged-data-vb/_static/image16.png))
 

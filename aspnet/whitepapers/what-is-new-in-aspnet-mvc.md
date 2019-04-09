@@ -8,21 +8,21 @@ ms.date: 04/20/2010
 ms.assetid: 69a8d6f8-4b10-4602-8822-2d6c05fc432b
 msc.legacyurl: /whitepapers/what-is-new-in-aspnet-mvc
 msc.type: content
-ms.openlocfilehash: 82a3fd4fe74202ed9a23298390322458cfc029f8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7f846e807309f3123db52b3053b9aa8d6aca81e6
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57031000"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59394837"
 ---
-<a name="whats-new-in-aspnet-mvc-2"></a>ASP.NET MVC 2의 새로운 기능
-====================
+# <a name="whats-new-in-aspnet-mvc-2"></a>ASP.NET MVC 2의 새로운 기능
+
 > 이 문서에서는 새로운 기능과 향상 된 ASP.NET MVC 2에서 도입 된 설명입니다. 이 문서에 대 한도 [다운로드](https://download.microsoft.com/download/F/1/6/F16F9AF9-8EF4-4845-BC97-639791D5699C/WhatIsNewInMVC_2.pdf)
 
 
 [소개](#_TOC1)   
 [ASP.NET MVC 1.0 프로젝트를 ASP.NET MVC 2로 업그레이드](#_TOC2)   
-[새로운 기능](#_TOC3)   
+[새 기능](#_TOC3)   
 [템플릿 기반 도우미](#_TOC3_1)   
 [영역](#_TOC3_2)   
 [비동기 컨트롤러에 대 한 지원](#_TOC3_3)   
@@ -38,8 +38,8 @@ ms.locfileid: "57031000"
 [템플릿 기반 도우미에 대 한 새 HiddenInputAttribute 클래스](#_TOC3_13)   
 [Html.ValidationSummary 도우미 메서드는 모델 수준 오류를 표시할 수 있습니다.](#_TOC3_14)   
 [T4 템플릿을 Visual Studio 생성 코드에서 특정.NET Framework의 대상 버전을](#_TOC3_15)[API 개선 사항](#_TOC4)  
-[주요 변경 내용](#_TOC5)  
-[고 지 사항](#_TOC6)  
+[주요 변경 사항](#_TOC5)  
+[고지 사항](#_TOC6)  
 
 ## <a id="_TOC1"></a>  Introduction
 

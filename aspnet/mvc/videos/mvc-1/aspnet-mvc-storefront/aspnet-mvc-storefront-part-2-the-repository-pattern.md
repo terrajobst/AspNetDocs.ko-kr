@@ -8,15 +8,15 @@ ms.date: 05/27/2008
 ms.assetid: 94dd6eec-3685-4323-ac75-75a70a4f766a
 msc.legacyurl: /mvc/videos/mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-2-the-repository-pattern
 msc.type: video
-ms.openlocfilehash: 210f26a86a387ae4f639a8e45d04116fa3c3e750
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ba9e15c63f007a15eaff1dc3f655bf787c71b34f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049180"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59387854"
 ---
-<a name="aspnet-mvc-storefront-part-2-the-repository-pattern"></a>ASP.NET MVC Storefront 2부: 리포지토리 패턴
-====================
+# <a name="aspnet-mvc-storefront-part-2-the-repository-pattern"></a>ASP.NET MVC Storefront 2부: 리포지토리 패턴
+
 [Rob Conery](https://github.com/robconery)
 
 Rob Conery Repository 구현을 안내를 단위 테스트의 첫 번째 주 집합 작성 합니다. 그는 초기 서비스 계층 메서드 및 인터페이스를 구성할 수도 있습니다.

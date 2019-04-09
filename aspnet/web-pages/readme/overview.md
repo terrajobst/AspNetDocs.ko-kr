@@ -8,15 +8,15 @@ ms.date: 01/06/2011
 ms.assetid: 36c5beeb-45a7-48a0-9c30-f82cdf5c5f5f
 msc.legacyurl: /web-pages/readme
 msc.type: content
-ms.openlocfilehash: aa852e7bbd93622154d59e0d0a13ffa680812df2
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7374b1afafa9ca63309f3c0369c5efd808f7f28a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57050720"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59401987"
 ---
-<a name="webmatrix-readme"></a>WebMatrix 추가 정보
-====================
+# <a name="webmatrix-readme"></a>WebMatrix 추가 정보
+
 2011 년 1 월 13
 
 ## <a name="contents"></a>목차
@@ -31,7 +31,7 @@ ms.locfileid: "57050720"
 - [변경 내용 및 문제](#ChangesAndIssues)
 
     - [WebMatrix 1.0 설치](#Known_Issues_Installation)
-    - [ASP.NET 웹 페이지 2](#Known_Issues_ASPNET)
+    - [ASP.NET Web Pages](#Known_Issues_ASPNET)
     - [WebMatrix](#Known_Issues_WebMatrix)
     - [IIS Express](#Known_Issues_IISExpress)
     - [SQL Server Compact](#Known_Issues_SQLServerCompact)
@@ -119,7 +119,7 @@ ms.locfileid: "57050720"
 
 문서의이 섹션에서는 새로운 기능, 변경 및 Razor 구문이 있는 ASP.NET 웹 페이지 1.0 릴리스를 사용 하 여 알려진된 문제에 설명합니다.
 
-- [새로운 기능](#NewFeatures)
+- [새 기능](#NewFeatures)
 - [변경 내용](#Changes)
 - [문제](#Issues)
 
@@ -255,9 +255,9 @@ ms.locfileid: "57050720"
 > 1. 데이터베이스 엔진 어셈블리를 복사 합니다 *Bin* 대상 컴퓨터에서 응용 프로그램의 폴더 (및 하위 폴더).  
 > 
 >    - Copy *C:\Program Files\Microsoft SQL Server Edition\v4.0\Desktop\System.Data.SqlServerCe.dll*   
->        **to** *\Bin*
->    - Copy <em>C:\Program Files\Microsoft SQL Server Compact Edition\v4.0\Private\x86\\</em><strong><em>to</em></strong>\Bin\x86*
->    - 복사본 <em>C:\Program Files\Microsoft SQL Server Compact Edition\v4.0\Private\amd64\\</em>* <strong>하</strong><em>\Bin\amd64</em>
+>      **to** *\Bin*
+>    - Copy *C:\Program Files\Microsoft SQL Server Compact Edition\v4.0\Private\x86\\* **to** *\Bin\x86*
+>    - Copy *C:\Program Files\Microsoft SQL Server Compact Edition\v4.0\Private\amd64\\** **to** *\Bin\amd64*
 > 
 > 2. 웹 사이트의 루트 폴더를 만들거나 엽니다는 *web.config* 파일입니다. (WebMatrix 1.0에서이 파일 형식은 클릭할 경우 사용할 수 있습니다 **모든** 에 **파일 형식을 선택** 대화 상자.)
 > 3. 다음 요소 자식으로 추가 합니다 `<configuration>` 요소 (에 포함 되지 않은 `<system.web>` 요소).

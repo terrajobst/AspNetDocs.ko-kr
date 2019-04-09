@@ -8,15 +8,15 @@ ms.date: 07/20/2015
 ms.assetid: 406518e9-3817-49ce-8b90-e82bc461e2c0
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/distributed-caching
 msc.type: authoredcontent
-ms.openlocfilehash: 26866ef9d13a198aab627ccf0f5e1ff3d2304427
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 61837d0087a297b6a677eb3503ce3e6c13d5e0ac
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57039810"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59397476"
 ---
-<a name="distributed-caching-building-real-world-cloud-apps-with-azure"></a>분산 캐싱 (실제 클라우드 앱 빌드 Azure 사용 하 여)
-====================
+# <a name="distributed-caching-building-real-world-cloud-apps-with-azure"></a>분산 캐싱 (실제 클라우드 앱 빌드 Azure 사용 하 여)
+
 하 여 [Mike Wasson](https://github.com/MikeWasson)하십시오 [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
 
 [다운로드 해결 프로젝트](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자책 다운로드](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)

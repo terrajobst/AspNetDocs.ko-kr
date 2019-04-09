@@ -8,15 +8,15 @@ ms.date: 07/09/2015
 ms.assetid: 7e986ab5-6615-4638-add7-4614ce7b51db
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/monitoring-and-telemetry
 msc.type: authoredcontent
-ms.openlocfilehash: f4dae827627103e5cfb9981b6c3b9342cdc34c13
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 48a66eea839f7f48899040ad20bbfee95b9a1902
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57043220"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59403911"
 ---
-<a name="monitoring-and-telemetry-building-real-world-cloud-apps-with-azure"></a>모니터링 및 원격 분석 (Azure 사용 하 여 빌드 실제 클라우드 앱)
-====================
+# <a name="monitoring-and-telemetry-building-real-world-cloud-apps-with-azure"></a>모니터링 및 원격 분석 (Azure 사용 하 여 빌드 실제 클라우드 앱)
+
 하 여 [Mike Wasson](https://github.com/MikeWasson)하십시오 [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
 
 [다운로드 해결 프로젝트](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자책 다운로드](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
@@ -72,7 +72,7 @@ Azure에 앱을 배포 하 고 사용 하 여 시작 합니다. New Relic 모니
 
 로 다시 이동 합니다 **New Relic** 페이지에 **추가 기능** 탭 포털을 클릭 **관리**. 포털을 사용 하 여 single sign on 인증에 대 한 자격 증명을 다시 입력 하지 않아도 되므로 New Relic 관리 포털로 전송 합니다. 개요 페이지는 다양 한 성능 통계를 표시합니다. (개요 페이지 전체 크기로 보려면 이미지를 클릭 합니다.)
 
-[![새 Relic 모니터링 탭](monitoring-and-telemetry/_static/image9.png)](monitoring-and-telemetry/_static/image8.png)
+[![N활용 하면 초보 Relic 모니터링 탭](monitoring-and-telemetry/_static/image9.png)](monitoring-and-telemetry/_static/image8.png)
 
 다음은 몇 가지 통계를 볼 수 있습니다.
 

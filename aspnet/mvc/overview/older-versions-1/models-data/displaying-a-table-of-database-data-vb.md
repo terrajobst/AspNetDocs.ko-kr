@@ -8,15 +8,15 @@ ms.date: 10/07/2008
 ms.assetid: 5bb4587f-5bcd-44f5-b368-3c1709162b35
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/displaying-a-table-of-database-data-vb
 msc.type: authoredcontent
-ms.openlocfilehash: d96f574c9284ab259b8733b3b8109ecd0b689aa8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c33812ab9d758c3155a2f75f59bfb63c55487dc7
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57064460"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59396410"
 ---
-<a name="displaying-a-table-of-database-data-vb"></a>데이터베이스 데이터의 테이블 표시(VB)
-====================
+# <a name="displaying-a-table-of-database-data-vb"></a>데이터베이스 데이터의 테이블 표시(VB)
+
 by [Microsoft](https://github.com/microsoft)
 
 [PDF 다운로드](http://download.microsoft.com/download/1/1/f/11f721aa-d749-4ed7-bb89-a681b68894e6/ASPNET_MVC_Tutorial_11_VB.pdf)
@@ -61,7 +61,7 @@ ASP.NET MVC 응용 프로그램의 영화 테이블을 나타내기 위해 모�
 3. 에 **데이터베이스 개체 선택** 단계, 테이블 노드를 확장 한 다음 동영상 테이블을 선택 합니다. 네임 스페이스를 입력 *모델* 을 클릭 합니다 **마침** 단추입니다.
 
 
-[![LINQ to SQL 클래스 만들기](displaying-a-table-of-database-data-vb/_static/image1.jpg)](displaying-a-table-of-database-data-vb/_static/image1.png)
+[![CLINQ to SQL 클래스 reating](displaying-a-table-of-database-data-vb/_static/image1.jpg)](displaying-a-table-of-database-data-vb/_static/image1.png)
 
 **그림 01**: LINQ to SQL 클래스 만들기 ([클릭 하 여 큰 이미지 보기](displaying-a-table-of-database-data-vb/_static/image2.png))
 
@@ -69,7 +69,7 @@ ASP.NET MVC 응용 프로그램의 영화 테이블을 나타내기 위해 모�
 엔터티 데이터 모델 마법사를 완료 한 후 엔터티 데이터 모델 디자이너가 열립니다. 디자이너에는 영화 엔터티 표시 됩니다 (그림 2 참조).
 
 
-[![엔터티 데이터 모델 디자이너](displaying-a-table-of-database-data-vb/_static/image2.jpg)](displaying-a-table-of-database-data-vb/_static/image3.png)
+[![T또한 엔터티 데이터 모델 디자이너](displaying-a-table-of-database-data-vb/_static/image2.jpg)](displaying-a-table-of-database-data-vb/_static/image3.png)
 
 **그림 02**: 엔터티 데이터 모델 디자이너 ([클릭 하 여 큰 이미지 보기](displaying-a-table-of-database-data-vb/_static/image4.png))
 
@@ -83,7 +83,7 @@ ASP.NET MVC 응용 프로그램의 영화 테이블을 나타내기 위해 모�
 데이터베이스 레코드를 표현 하는 수단을 만들었으므로 이제 해당 동영상의 컬렉션을 반환 하는 컨트롤러를 만들 수 있습니다. Visual Studio 솔루션 탐색기 창에서 Controllers 폴더를 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을 선택 **추가, 컨트롤러** (그림 3 참조).
 
 
-[![메뉴 컨트롤러 추가](displaying-a-table-of-database-data-vb/_static/image3.jpg)](displaying-a-table-of-database-data-vb/_static/image5.png)
+[![T그 추가 컨트롤러 메뉴](displaying-a-table-of-database-data-vb/_static/image3.jpg)](displaying-a-table-of-database-data-vb/_static/image5.png)
 
 **그림 03**: 컨트롤러 추가 메뉴 ([클릭 하 여 큰 이미지 보기](displaying-a-table-of-database-data-vb/_static/image6.png))
 
@@ -91,7 +91,7 @@ ASP.NET MVC 응용 프로그램의 영화 테이블을 나타내기 위해 모�
 경우는 **컨트롤러 추가** MovieController 컨트롤러 이름 입력 대화 상자가 나타납니다 (그림 4 참조). 클릭 합니다 **추가** 단추를 새 컨트롤러를 추가 합니다.
 
 
-[![컨트롤러 추가 대화 상자](displaying-a-table-of-database-data-vb/_static/image4.jpg)](displaying-a-table-of-database-data-vb/_static/image7.png)
+[![T컨트롤러 추가 대화 상자를 그](displaying-a-table-of-database-data-vb/_static/image4.jpg)](displaying-a-table-of-database-data-vb/_static/image7.png)
 
 **그림 04**: 컨트롤러 추가 대화 상자 ([클릭 하 여 큰 이미지 보기](displaying-a-table-of-database-data-vb/_static/image8.png))
 
@@ -113,7 +113,7 @@ HTML 표에 데이터베이스 레코드 집합을 표시 하는 가장 쉬운 �
 Index () 작업을 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을 선택 **뷰 추가** (그림 5 참조).
 
 
-[![뷰 추가](displaying-a-table-of-database-data-vb/_static/image5.jpg)](displaying-a-table-of-database-data-vb/_static/image9.png)
+[![A이어지지 뷰](displaying-a-table-of-database-data-vb/_static/image5.jpg)](displaying-a-table-of-database-data-vb/_static/image9.png)
 
 **그림 05**: 뷰 추가 ([클릭 하 여 큰 이미지 보기](displaying-a-table-of-database-data-vb/_static/image10.png))
 
@@ -121,7 +121,7 @@ Index () 작업을 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을
 에 **뷰 추가** 대화 상자에서 레이블이 지정 된 확인란 **강력한 형식의 뷰를 만들**합니다. 영화 클래스를 선택 합니다 **데이터 클래스 보기**합니다. 선택 *목록을* 으로 **콘텐츠를 볼** (그림 6 참조). 이러한 옵션을 선택 하는 동영상 목록을 표시 하는 강력한 형식의 뷰를 생성 합니다.
 
 
-[![뷰 추가 대화 상자](displaying-a-table-of-database-data-vb/_static/image6.jpg)](displaying-a-table-of-database-data-vb/_static/image11.png)
+[![T그 뷰 추가 대화](displaying-a-table-of-database-data-vb/_static/image6.jpg)](displaying-a-table-of-database-data-vb/_static/image11.png)
 
 **그림 06**: 뷰 추가 대화 상자 ([클릭 하 여 큰 이미지 보기](displaying-a-table-of-database-data-vb/_static/image12.png))
 
@@ -135,7 +135,7 @@ Index () 작업을 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을
 메뉴 옵션을 선택 하 여 응용 프로그램을 실행할 수 있습니다 **디버그, 디버깅 시작** (또는 F5 키를 눌러). Internet Explorer를 시작 응용 프로그램을 실행 합니다. 그런 다음 /Movie URL로 이동 그림 7에서 페이지를 볼 수 있습니다.
 
 
-[![동영상 테이블](displaying-a-table-of-database-data-vb/_static/image7.jpg)](displaying-a-table-of-database-data-vb/_static/image13.png)
+[![A 영화 테이블](displaying-a-table-of-database-data-vb/_static/image7.jpg)](displaying-a-table-of-database-data-vb/_static/image13.png)
 
 **그림 07**: 영화 테이블 ([클릭 하 여 큰 이미지 보기](displaying-a-table-of-database-data-vb/_static/image14.png))
 
