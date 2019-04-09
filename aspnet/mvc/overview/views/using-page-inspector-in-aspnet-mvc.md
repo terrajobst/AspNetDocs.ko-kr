@@ -8,15 +8,15 @@ ms.date: 08/15/2012
 ms.assetid: c7e4e1ab-4932-4614-9f53-aaf7c706d498
 msc.legacyurl: /mvc/overview/views/using-page-inspector-in-aspnet-mvc
 msc.type: authoredcontent
-ms.openlocfilehash: abb1ef355bd7614daaab8c205d9d53065856cd23
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: ef0ae42e1c6114849a311164eac242db6dab2b1d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58424367"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59385802"
 ---
-<a name="using-page-inspector-in-aspnet-mvc"></a>ASP.NET MVC에서 페이지 검사기 사용
-====================
+# <a name="using-page-inspector-in-aspnet-mvc"></a>ASP.NET MVC에서 페이지 검사기 사용
+
 Tim Ammann 여
 
 > Visual Studio 2012에서 페이지 검사기는 통합 된 브라우저를 사용 하 여 웹 개발 도구입니다. 통합 된 브라우저에서 모든 요소를 선택 하 고 요소의 소스 및 CSS 페이지 검사기를 즉시 강조 표시 합니다. MVC 보기 찾아보기, 신속 하 게 렌더링 된 태그의 원본을 살펴봅니다를 Visual Studio 환경 내에서 바로 브라우저 도구를 사용 합니다.
@@ -27,7 +27,7 @@ Tim Ammann 여
 > 
 > 이 자습서에는 다음 섹션이 있습니다.
 > 
-> - [필수 조건](#_1_prerequisites)
+> - [전제 조건](#_1_prerequisites)
 > - [웹 응용 프로그램 만들기](#_2_creating_a)
 > - [뷰를 탐색 페이지 검사기 사용](#_3_using_page)
 > - [검사 모드를 사용 하도록 설정](#_4_inspection_mode)

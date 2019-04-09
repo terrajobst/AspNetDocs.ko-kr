@@ -8,15 +8,15 @@ ms.date: 03/28/2008
 ms.assetid: 7f9380c6-19f7-4c82-a019-916ec6dffc9c
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/aspnet-ajax/understanding-asp-net-ajax-debugging-capabilities
 msc.type: authoredcontent
-ms.openlocfilehash: 13fd8f05cd994ff1c902bd067fb4ed425010d64e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1203825a1fb6b2034d9180fcf416aba7d0012fb7
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57064700"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59383221"
 ---
-<a name="understanding-aspnet-ajax-debugging-capabilities"></a>ASP.NET AJAX 디버깅 기능 이해
-====================
+# <a name="understanding-aspnet-ajax-debugging-capabilities"></a>ASP.NET AJAX 디버깅 기능 이해
+
 [Scott Cate](https://github.com/scottcate)
 
 [PDF 다운로드](http://download.microsoft.com/download/C/1/9/C19A3451-1D14-477C-B703-54EF22E197EE/AJAX_tutorial06_Debugging_MS_Ajax_Applications_cs.pdf)
@@ -48,7 +48,7 @@ Internet Explorer에서 페이지를 디버깅 하려고 하기 전에 몇 가�
 그림 1에서는 어떤 Internet Explorer 대화 상자 고급 디버깅에 대 한 제대로 구성 된 후에 표시 됩니다.
 
 
-[![디버깅을 위한 Internet Explorer를 구성 합니다.](understanding-asp-net-ajax-debugging-capabilities/_static/image2.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image1.png)
+[![Configuring Internet Explorer 디버깅에 대 한 합니다.](understanding-asp-net-ajax-debugging-capabilities/_static/image2.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image1.png)
 
 **그림 1**: 디버깅을 위한 Internet Explorer를 구성 합니다.  ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-debugging-capabilities/_static/image3.png))
 
@@ -91,7 +91,7 @@ Visual Studio 2008 디버거 외부 JavaScript 파일에 다른 페이지에 포
 디버그 세션을 시작 하 고 기본 F11 키를 사용 하 여 코드를 살펴보는 것이 먼저 발생할 수 있습니다 면에 표시 된 오류 대화 상자 페이지에서 사용 되는 모든 스크립트 파일 열기 및 디버깅에 사용할 수 있는 않는 그림 2를 참조 하세요.
 
 
-[![디버깅에 사용할 수 있는 소스 코드가 없는 경우 표시 된 오류 대화 상자입니다.](understanding-asp-net-ajax-debugging-capabilities/_static/image5.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image4.png)
+[![E수준을 올리는 대화 상자가 표시 소스 코드가 없는 경우 디버깅에 사용할 수 있습니다.](understanding-asp-net-ajax-debugging-capabilities/_static/image5.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image4.png)
 
 **그림 2**: 디버깅에 사용할 수 있는 소스 코드가 없는 경우 표시 된 오류 대화 상자입니다.  ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-debugging-capabilities/_static/image6.png))
 
@@ -104,7 +104,7 @@ Visual Studio 2008 디버거 외부 JavaScript 파일에 다른 페이지에 포
 스크립트 탐색기 페이지에서 사용 되는 모든 스크립트를 보려면 코드 편집기에서 열을 사용할 수 있습니다. 스크립트 탐색기를 연 후 코드 편집기 창에서 열려는 현재 디버깅 중인.aspx 페이지에서 두 번 클릭 합니다. 모든 스크립트 탐색기에 표시 된 다른 스크립트에 대해 동일한 작업을 수행 합니다. 모든 스크립트 있습니다 코드 창에서 열기 되 면 코드를 단계별로 실행 하려면 F11 키를 누릅니다 (및 다른 디버그 바로 가기 키를 사용 하 여). 그림 3에는 스크립트 탐색기의 예가 나와 있습니다. 두 개의 사용자 지정 스크립트 및 ASP.NET AJAX ScriptManager에서 페이지에 동적으로 삽입 하는 두 개의 스크립트 뿐만 아니라 현재 디버깅 중인 파일 (Demo.aspx) 나열 합니다.
 
 
-[![스크립트 탐색기 페이지에서 사용 되는 스크립트에 쉽게 액세스할 수 있습니다.](understanding-asp-net-ajax-debugging-capabilities/_static/image8.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image7.png)
+[![T스크립트 탐색기 제공 페이지에 사용 되는 스크립트에 쉽게 액세스할 수 있습니다.](understanding-asp-net-ajax-debugging-capabilities/_static/image8.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image7.png)
 
 **그림 3**합니다. 스크립트 탐색기 페이지에서 사용 되는 스크립트에 쉽게 액세스할 수 있습니다.  ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-debugging-capabilities/_static/image9.png))
 
@@ -163,7 +163,7 @@ DebugService 클래스에는 JSON 개체 데이터를를 Web Development Helper�
 추적 데이터 및 JSON 개체를 표시할 수를 허용 하는 것 외에도 Web Development helper 오류 페이지에 디버깅에 도움이 될 수 있습니다. 다음 코드 줄을 계속 하려면 스크립트를 디버그 메시지가 표시 되는 오류가 발생 하는 경우 (그림 6 참조). 스크립트 내에 있는 문제를 쉽게 식별할 수 있도록 줄 번호 뿐만 아니라 전체 호출 스택 스크립트 오류 대화 상자 창 표시 됩니다.
 
 
-[![개체 검사기 창을 사용 하 여 JSON 개체를 볼 수 있습니다.](understanding-asp-net-ajax-debugging-capabilities/_static/image14.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image13.png)
+[![UJSON 개체를 볼 수 있는 개체 검사기 창을 로그온 합니다.](understanding-asp-net-ajax-debugging-capabilities/_static/image14.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image13.png)
 
 **그림 5**: 개체 검사기 창을 사용 하 여 JSON 개체를 볼 수 있습니다.  ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-debugging-capabilities/_static/image15.png))
 
@@ -171,7 +171,7 @@ DebugService 클래스에는 JSON 개체 데이터를를 Web Development Helper�
 디버그 옵션을 선택 하면 변수 값 보기, 기타 다양 한 JSON 개체를 작성 하려면 Web Development Helper 직접 실행 창에서 직접 스크립트 문을 실행할 수 있습니다. 오류를 트리거한 동일한 작업을 다시 수행 하는 경우 Visual Studio 2008은 컴퓨터에서 사용할 디버그 세션을 시작 하 여 한 줄씩 이전 섹션에서 설명한 대로 코드를 단계별로 실행할 수 있습니다를 묻는 메시지가 나타납니다.
 
 
-[![Web Development Helper 스크립트 오류 대화 상자](understanding-asp-net-ajax-debugging-capabilities/_static/image17.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image16.png)
+[![Web Development Helper 스크립트 오류 대화 상자가](understanding-asp-net-ajax-debugging-capabilities/_static/image17.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image16.png)
 
 **그림 6**: Web Development Helper 스크립트 오류 대화 상자 ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-debugging-capabilities/_static/image18.png))
 
@@ -185,7 +185,7 @@ ASP.NET AJAX 요청 및 응답 메시지를 보려면 Web Development Helper 메
 각 요청/응답 메시지에 전송 되는 원시 텍스트를 보고 하는 것은 확실히 유용 하지만 Web Development Helper에서 옵션 쉽습니다 그래픽 형식으로 메시지 데이터를 볼 수 있습니다. HTTP 로깅을 사용 하도록 설정한 후 메시지가 기록 되었음을 HTTP 로그 뷰어에 메시지를 두 번 클릭 하 여 메시지 데이터를 볼 수 있습니다. 이렇게 하면 실제 메시지 뿐만 아니라 메시지를 연관 된 모든 헤더를 볼 수 콘텐츠. 그림 7에는 요청 메시지 및 HTTP 로그 뷰어 창에 표시 되는 응답 메시지의 예가 나와 있습니다.
 
 
-[![HTTP 로그 뷰어를 사용 하 여 요청 및 응답 메시지 데이터를 볼 수 있습니다.](understanding-asp-net-ajax-debugging-capabilities/_static/image20.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image19.png)
+[![U요청 및 응답 메시지 데이터를 보려는 HTTP 로그 뷰어를 로그온 합니다.](understanding-asp-net-ajax-debugging-capabilities/_static/image20.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image19.png)
 
 **그림 7**: HTTP 로그 뷰어를 사용 하 여 요청 및 응답 메시지 데이터를 볼 수 있습니다.  ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-debugging-capabilities/_static/image21.png))
 
@@ -193,7 +193,7 @@ ASP.NET AJAX 요청 및 응답 메시지를 보려면 Web Development Helper 메
 HTTP 로그 뷰어는 자동으로 JSON 개체를 구문 분석 하 고 빠르고 쉽게 개체의 속성 데이터를 볼 수 있도록 트리 뷰를 사용 하 여 표시 합니다. ASP.NET AJAX 페이지에서 UpdatePanel 사용 중인 경우 그림 8 에서처럼 개별 파트 메시지의 각 부분 아웃 뷰어를 중단 합니다. 이 훨씬 쉽게 원시 메시지 데이터가 보기에 비해 메시지에 포함 된 내용 파악 해야 하는 훌륭한 기능입니다.
 
 
-[![HTTP 로그 뷰어를 사용 하 여 볼 UpdatePanel 응답 메시지입니다.](understanding-asp-net-ajax-debugging-capabilities/_static/image23.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image22.png)
+[![An UpdatePanel 응답 메시지는 HTTP 로그 뷰어를 사용 하 여 볼입니다.](understanding-asp-net-ajax-debugging-capabilities/_static/image23.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image22.png)
 
 **그림 8**: HTTP 로그 뷰어를 사용 하 여 볼 UpdatePanel 응답 메시지입니다.  ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-debugging-capabilities/_static/image24.png))
 
@@ -211,7 +211,7 @@ Firebug가 실행 되 면 여부 스크립트를 페이지에 포함 되어 있�
 Firebug에서 중단점을 설정한 후에 단추를 클릭 하거나 onLoad 이벤트를 트리거하는 브라우저를 새로 고쳐 같은 디버그 해야 하는 스크립트를 실행 하는 데 필요한 작업을 수행할 수 있습니다. 실행이 중단점을 포함 하는 줄에 자동으로 중지 됩니다. 그림 9 Firebug 트리거한 되어 중단점의 예제를 보여 줍니다.
 
 
-[![Firebug에서 중단점을 처리 합니다.](understanding-asp-net-ajax-debugging-capabilities/_static/image26.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image25.png)
+[![Handling 중단점 Firebug입니다.](understanding-asp-net-ajax-debugging-capabilities/_static/image26.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image25.png)
 
 **그림 9**: Firebug에서 중단점을 처리 합니다.  ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-debugging-capabilities/_static/image27.png))
 
@@ -223,7 +223,7 @@ Firebug는 다른 스크립트 문을 테스트 변수를 평가, 추적 출력 
 그림 10에는 DOM 검사기를 사용 하 여 페이지에서 txtCountry 라는 텍스트 상자에 찾으려는 예가 나와 있습니다. 또한 Firebug 검사기 마우스 이동, 단추 클릭, 기타 다양 한 추적과 같이 발생 하는 이벤트를 비롯 하 여 페이지에 사용 되는 CSS 스타일을 보는 데 사용할 수 있습니다.
 
 
-[![Firebug의 DOM 검사기를 사용 합니다.](understanding-asp-net-ajax-debugging-capabilities/_static/image29.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image28.png)
+[![UFirebug의 DOM 검사기 로그온 합니다.](understanding-asp-net-ajax-debugging-capabilities/_static/image29.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image28.png)
 
 **그림 10**: Firebug의 DOM 검사기를 사용 합니다.  ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-debugging-capabilities/_static/image30.png))
 
@@ -240,7 +240,7 @@ ASP.NET AJAX library 웹 페이지에 AJAX 기능을 추가 하는 프로세스�
 
 Sys.Debug 클래스는 추적, 코드 어설션 또는 표 1에 나와 있는 것 처럼 오류 처리를 사용할 수 있는 다양 한 기능을 제공 합니다.
 
-**표 1입니다. Sys.Debug 클래스 함수입니다.**
+**표 1. Sys.Debug 클래스 함수입니다.**
 
 | **함수 이름** | **설명** |
 | --- | --- |
@@ -278,7 +278,7 @@ JSON 개체 내에 포함 된 데이터를 보려는 경우 Sys.Debug 클래스�
 코드 7 Sys.Debug.assert 함수를 사용 하 여 조건을 테스트 하려면 예를 보여 줍니다. 코드 주소 개체를 사용자 개체를 업데이트 하기 전에 null 인지 여부를 테스트 합니다.
 
 
-[![Sys.Debug.traceDump 함수 출력입니다.](understanding-asp-net-ajax-debugging-capabilities/_static/image32.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image31.png)
+[![O경로 Sys.Debug.traceDump 함수입니다.(understanding-asp-net-ajax-debugging-capabilities/_static/image32.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image31.png)
 
 **그림 11**: Sys.Debug.traceDump 함수 출력입니다.  ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-debugging-capabilities/_static/image33.png))
 
@@ -296,7 +296,7 @@ JSON 개체 내에 포함 된 데이터를 보려는 경우 Sys.Debug 클래스�
 [!code-css[Main](understanding-asp-net-ajax-debugging-capabilities/samples/sample10.css)]
 
 
-[![Sys.Debug.assert 실패 메시지입니다.](understanding-asp-net-ajax-debugging-capabilities/_static/image35.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image34.png)
+[![A Sys.Debug.assert 실패 메시지입니다.](understanding-asp-net-ajax-debugging-capabilities/_static/image35.png)](understanding-asp-net-ajax-debugging-capabilities/_static/image34.png)
 
 **그림 12**: Sys.Debug.assert 실패 메시지입니다.  ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-debugging-capabilities/_static/image36.png))
 

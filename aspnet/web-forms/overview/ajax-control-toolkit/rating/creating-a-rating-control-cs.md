@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 969fb28f-2bff-4fc4-b24a-27f5e2534a37
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/rating/creating-a-rating-control-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 5776101d9e40f999806aefa5a9529dbef21af161
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: fa118b4d733d7848b838f80e9918d62ae60033af
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57048390"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59378977"
 ---
-<a name="creating-a-rating-control-c"></a>등급 컨트롤 만들기(C#)
-====================
+# <a name="creating-a-rating-control-c"></a>등급 컨트롤 만들기(C#)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/rating0.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/rating0CS.pdf)
@@ -66,7 +66,7 @@ by [Christian Wenz](https://github.com/wenz)
 페이지를 저장 하 고 브라우저에 로드 합니다. (처음에 비어 있음) 등급 항목 위로 마우스를 가져가면 JavaScript 효과 발생 합니다. 등급 변경 됩니다. 별 집합이 클릭 하면 현재 등급 유지 됩니다. 마지막으로 폼을 전송 하면 서버 쪽 코드를 선택한 등급을 출력 합니다.
 
 
-[![최소한의 코드를 사용 하 여 등급 시스템 만들기](creating-a-rating-control-cs/_static/image2.png)](creating-a-rating-control-cs/_static/image1.png)
+[![C최소한의 코드를 사용 하 여 등급 시스템 reating](creating-a-rating-control-cs/_static/image2.png)](creating-a-rating-control-cs/_static/image1.png)
 
 최소한의 코드를 사용 하 여 등급 시스템 만들기 ([클릭 하 여 큰 이미지 보기](creating-a-rating-control-cs/_static/image3.png))
 

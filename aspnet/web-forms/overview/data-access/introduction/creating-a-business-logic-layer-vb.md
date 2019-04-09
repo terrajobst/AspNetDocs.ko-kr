@@ -8,15 +8,15 @@ ms.date: 03/31/2010
 ms.assetid: 142e5181-29ce-4bb9-907b-2a0becf7928b
 msc.legacyurl: /web-forms/overview/data-access/introduction/creating-a-business-logic-layer-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 345f4981ebdd5384068bd42bce0581f94866ad1d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 63efa46410e821947c6b0ee4ecd0c790fbf793e3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57024350"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380095"
 ---
-<a name="creating-a-business-logic-layer-vb"></a>비즈니스 논리 레이어 만들기(VB)
-====================
+# <a name="creating-a-business-logic-layer-vb"></a>비즈니스 논리 레이어 만들기(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/5/d/7/5d7571fc-d0b7-4798-ad4a-c976c02363ce/ASPNET_Data_Tutorial_2_VB.exe) 또는 [PDF 다운로드](creating-a-business-logic-layer-vb/_static/datatutorial02vb1.pdf)
@@ -129,7 +129,7 @@ ProductsBLL.vb
 ObjectDataSource를 사용 하 여 클래스 BLL를 선언적 (입력 데이터 집합 수)으로 액세스할 수도 있습니다. 살펴보겠습니다. 자세히 ObjectDataSource를 다음 자습서에서입니다.
 
 
-[![제품 목록 GridView에 표시 됩니다.](creating-a-business-logic-layer-vb/_static/image4.png)](creating-a-business-logic-layer-vb/_static/image3.png)
+[![TGridView에 표시 됩니다 그 제품 목록](creating-a-business-logic-layer-vb/_static/image4.png)](creating-a-business-logic-layer-vb/_static/image3.png)
 
 **그림 3**: 제품 목록 GridView에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](creating-a-business-logic-layer-vb/_static/image5.png))
 
@@ -148,7 +148,7 @@ ObjectDataSource를 사용 하 여 클래스 BLL를 선언적 (입력 데이터 
 데이터베이스에서 이러한 규칙을 적용 하는 것 외에도 이러한도 적용할 데이터 집합 수준에 있습니다. 사실, 필드 길이 및 값이 필수 또는 선택적인 이미 각 데이터 테이블의 DataColumns 집합에 대 한 캡처됩니다. 자동으로 제공 하는 기존 필드 수준 유효성 검사를 확인 하려면 디자이너로 이동 하 여 데이터 집합, 하나는 Datatable에서 필드를 선택 하 고 속성 창에 이동 합니다. 그림 4에서 알 수 있듯이, 합니다 `QuantityPerUnit` DataColumn의 합니다 `ProductsDataTable` 최대 길이가 20 자가 고 허용 않는 `NULL` 값. 설정 하려고 하는 경우는 `ProductsDataRow`의 `QuantityPerUnit` 20 자 보다 긴 문자열 값으로 속성을 `ArgumentException` throw 됩니다.
 
 
-[![DataColumn 기본 필드 수준 유효성 검사를 제공합니다.](creating-a-business-logic-layer-vb/_static/image7.png)](creating-a-business-logic-layer-vb/_static/image6.png)
+[![T그 DataColumn 제공 기본 필드 수준 유효성 검사](creating-a-business-logic-layer-vb/_static/image7.png)](creating-a-business-logic-layer-vb/_static/image6.png)
 
 **그림 4**: DataColumn 제공 기본 필드 수준 유효성 검사 ([클릭 하 여 큰 이미지 보기](creating-a-business-logic-layer-vb/_static/image8.png))
 
@@ -156,7 +156,7 @@ ObjectDataSource를 사용 하 여 클래스 BLL를 선언적 (입력 데이터 
 안타깝게도 없습니다 지정 범위 검사와 같은 `UnitPrice` 속성 창을 통해 0 보다 크거나 값 이어야 합니다. 이 형식의 필드 수준 유효성 검사를 제공 하기 위해 DataTable의에 대 한 이벤트 처리기를 생성 해야 [ColumnChanging](https://msdn.microsoft.com/library/system.data.datatable.columnchanging%28VS.80%29.aspx) 이벤트입니다. 에 설명 된 대로 합니다 [이전 자습서](creating-a-data-access-layer-vb.md), partial 클래스를 사용 하 여 입력 데이터 집합에서 만든 데이터 집합, Datatable 및 DataRow 개체를 확장할 수 있습니다. 만들 수 있습니다이 기술을 사용 하는 `ColumnChanging` 에 대 한 이벤트 처리기는 `ProductsDataTable` 클래스입니다. 클래스를 만들어 시작 합니다 `App_Code` 라는 폴더 `ProductsDataTable.ColumnChanging.vb`합니다.
 
 
-[![App_Code 폴더에 새 클래스를 추가 합니다.](creating-a-business-logic-layer-vb/_static/image10.png)](creating-a-business-logic-layer-vb/_static/image9.png)
+[![Add App_Code 폴더에 새 클래스](creating-a-business-logic-layer-vb/_static/image10.png)](creating-a-business-logic-layer-vb/_static/image9.png)
 
 **그림 5**: 새 클래스를 추가 합니다 `App_Code` 폴더 ([큰 이미지를 보려면 클릭](creating-a-business-logic-layer-vb/_static/image11.png))
 

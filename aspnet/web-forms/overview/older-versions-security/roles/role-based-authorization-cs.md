@@ -8,15 +8,15 @@ ms.date: 03/24/2008
 ms.assetid: 4d9b63fa-c3d4-4e85-82b1-26ae3ba3ca1c
 msc.legacyurl: /web-forms/overview/older-versions-security/roles/role-based-authorization-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 3f947e35164724b99507858a19bdd9cd1154768a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 9c6dbfee1a1a05af7bdd82ad96b0ca52774274b1
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57047380"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59383137"
 ---
-<a name="role-based-authorization-c"></a>역할 기반 권한 부여(C#)
-====================
+# <a name="role-based-authorization-c"></a>역할 기반 권한 부여(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/6/0/3/6032582f-360d-4739-b935-38721fdb86ea/CS.11.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/0/3/6032582f-360d-4739-b935-38721fdb86ea/aspnet_tutorial11_RoleAuth_cs.pdf)
@@ -47,7 +47,7 @@ URL 권한 부여 하는 것 외에도 살펴봤습니다 표시 되는 데이�
 익명 사용자도 사이트를 방문 하는 경우는 `FormsAuthenticationModule` 또는 `RoleManagerModule` 보안 주체 개체를 만듭니다.
 
 
-[![폼 인증 및 역할 프레임 워크를 사용 하는 경우 인증된 된 사용자에 대 한 ASP.NET 파이프라인 이벤트](role-based-authorization-cs/_static/image2.png)](role-based-authorization-cs/_static/image1.png)
+[![T그는 인증 된 사용자 때 사용 하 여 폼 인증 및 역할 프레임 워크에 대 한 ASP.NET 파이프라인 이벤트](role-based-authorization-cs/_static/image2.png)](role-based-authorization-cs/_static/image1.png)
 
 **그림 1**: 인증 된 사용자 때 사용 하 여 폼 인증 및 역할 프레임 워크에 대 한 ASP.NET 파이프라인 이벤트 ([클릭 하 여 큰 이미지 보기](role-based-authorization-cs/_static/image3.png))
 
@@ -59,7 +59,7 @@ URL 권한 부여 하는 것 외에도 살펴봤습니다 표시 되는 데이�
 역할 프레임 워크는 사용자의 역할이 쿠키에 캐시 하도록 구성 된 경우는 `RoleManagerModule` 하는 동안 ASP.NET 파이프라인의 쿠키를 만듭니다 [ `EndRequest` 이벤트](https://msdn.microsoft.com/library/system.web.httpapplication.endrequest.aspx)합니다. 후속 요청에서이 쿠키를 사용 합니다 `PostAuthenticateRequest`, 하는 경우는 `RolePrincipal` 개체가 만들어집니다. 쿠키의 데이터를 구문 분석 되 고 저장 하 여 사용자의 역할을 채우는 데 쿠키 올바르고 만료 되지 않은 경우는 `RolePrincipal` 에 대 한 호출을 만드는 것을 `Roles` 사용자의 역할을 확인 하려면 클래스입니다. 그림 2에서는이 워크플로 보여 줍니다.
 
 
-[![성능 향상을 위해 쿠키에 사용자의 역할 정보를 저장할 수 있습니다.](role-based-authorization-cs/_static/image5.png)](role-based-authorization-cs/_static/image4.png)
+[![T성능 향상을 쿠키에 그 사용자의 역할 정보를 저장할 수 있습니다](role-based-authorization-cs/_static/image5.png)](role-based-authorization-cs/_static/image4.png)
 
 **그림 2**: 사용자의 역할 정보에에서 저장할 수는 쿠키를 성능 향상 ([클릭 하 여 큰 이미지 보기](role-based-authorization-cs/_static/image6.png))
 
@@ -70,7 +70,7 @@ URL 권한 부여 하는 것 외에도 살펴봤습니다 표시 되는 데이�
 > 표 1에 나와 있는 구성 설정이 결과 역할 캐시 쿠키의 속성을 지정 합니다. 쿠키, 그 작동 방법 및 다양 한 속성에 대 한 자세한 내용은 읽을 [이 쿠키 자습서](http://www.quirksmode.org/js/cookies.html)합니다.
 
 
-| <strong>Property</strong> |                                                                                                                                                                                                                                                                                                                                                         <strong>설명</strong>                                                                                                                                                                                                                                                                                                                                                          |
+| <strong>속성</strong> |                                                                                                                                                                                                                                                                                                                                                         <strong>설명</strong>                                                                                                                                                                                                                                                                                                                                                          |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   `cacheRolesInCookie`    |                                                                                                                                                                                                                                                                                                                              쿠키 캐싱 사용 되는지 여부를 나타내는 부울 값입니다. 기본값은 `false`입니다.                                                                                                                                                                                                                                                                                                                              |
 |       `cookieName`        |                                                                                                                                                                                                                                                                                                                                     역할 캐시 쿠키의 이름입니다. 기본값은 ". ASPXROLES "로 설정 합니다.                                                                                                                                                                                                                                                                                                                                     |
@@ -115,7 +115,7 @@ URL 권한 부여 하는 것 외에도 살펴봤습니다 표시 되는 데이�
 이를 위해 추가 하 여 시작 된 `Web.config` 파일을 `Roles` 폴더입니다.
 
 
-[![역할 디렉터리에 Web.config 파일 추가](role-based-authorization-cs/_static/image8.png)](role-based-authorization-cs/_static/image7.png)
+[![Add 역할 디렉터리에 Web.config 파일](role-based-authorization-cs/_static/image8.png)](role-based-authorization-cs/_static/image7.png)
 
 **그림 3**: 추가 된 `Web.config` 파일을 합니다 `Roles` 디렉터리 ([전체 크기 이미지를 보려면 클릭](role-based-authorization-cs/_static/image9.png))
 
@@ -129,7 +129,7 @@ URL 권한 부여 하는 것 외에도 살펴봤습니다 표시 되는 데이�
 변경 내용을 저장 한 후 `Web.config`, 관리자 역할에 없는 사용자로 로그인 하 고 보호 되는 페이지 중 하나를 방문 하려고 합니다. 합니다 `UrlAuthorizationModule` 는 요청 된 리소스를 참조 하세요. 권한이 검색 결과적으로 `FormsAuthenticationModule` 로그인 페이지로 리디렉션합니다. 로그인 페이지는 다음 리디렉션 수를 `UnauthorizedAccess.aspx` 페이지 (그림 4 참조). 로그인 페이지에서이 최종 리디렉션 `UnauthorizedAccess.aspx` 의 2 단계에서에서 로그인 페이지에 추가한 코드 때문에 발생 합니다 <a id="_msoanchor_7"> </a> [ *사용자 기반 권한 부여* ](../membership/user-based-authorization-cs.md) 자습서입니다. 특히, 로그인 페이지에 인증 된 모든 사용자를 자동으로 리디렉션합니다 `UnauthorizedAccess.aspx` 문자열을 포함 하는 경우는 `ReturnUrl` 매개 변수를이 매개 변수로 없습니다 그 페이지를 시도한 후 사용자가 로그인 페이지에 도착를 나타냅니다 볼 수 있는 권한이 있습니다.
 
 
-[![관리자 역할의 사용자만 보호 되는 페이지를 볼 수 있습니다.](role-based-authorization-cs/_static/image11.png)](role-based-authorization-cs/_static/image10.png)
+[![O관리자 역할에 사용자가 있는 보호 된 페이지를 볼 수](role-based-authorization-cs/_static/image11.png)](role-based-authorization-cs/_static/image10.png)
 
 **그림 4**: 관리자 역할에 사용자가 보호 된 페이지를 볼 수 있습니다 ([클릭 하 여 큰 이미지 보기](role-based-authorization-cs/_static/image12.png))
 
@@ -137,7 +137,7 @@ URL 권한 부여 하는 것 외에도 살펴봤습니다 표시 되는 데이�
 로그 오프 한 다음 관리자 역할에 있는 사용자로 로그인 합니다. 이제 보호 되는 세 개의 페이지를 볼 수 있게 해야 합니다.
 
 
-[![Tito는 UsersAndRoles.aspx 페이지 있으므로 담당 하 고 관리자 역할에 방문할 수](role-based-authorization-cs/_static/image14.png)](role-based-authorization-cs/_static/image13.png)
+[![T방문할 수 ito는 UsersAndRoles.aspx 페이지 때문에 담당 하 고 관리자 역할에](role-based-authorization-cs/_static/image14.png)](role-based-authorization-cs/_static/image13.png)
 
 **그림 5**: Tito 방문할 수는 `UsersAndRoles.aspx` 관리자 역할에는 페이지 때문에 그 ([큰 이미지를 보려면 클릭](role-based-authorization-cs/_static/image15.png))
 
@@ -167,7 +167,7 @@ GridView의 시스템에 사용자 계정을 모두 나열 하는 페이지를 �
 설정 된 `HeaderText` "Email" 및 "Comment" 두 TemplateFields의 속성입니다.
 
 
-[![GridView의 필드를 필드 대화 상자를 통해 구성할 수 있습니다.](role-based-authorization-cs/_static/image17.png)](role-based-authorization-cs/_static/image16.png)
+[![TGridView의 필드 수 수 구성 통해 the 필드 대화 상자](role-based-authorization-cs/_static/image17.png)](role-based-authorization-cs/_static/image16.png)
 
 **그림 6**: GridView의 필드 수 수 구성 통해 the 필드 대화 상자 ([클릭 하 여 큰 이미지 보기](role-based-authorization-cs/_static/image18.png))
 
@@ -193,7 +193,7 @@ GridView의 시스템에 사용자 계정을 모두 나열 하는 페이지를 �
 이 코드를 사용 하 여 브라우저를 통해 페이지를 방문 합니다. 그림 7에서 알 수 있듯이, 시스템에서 각 사용자 계정에 대 한 정보를 나열 하는 GridView 표시 되어야 합니다.
 
 
-[![시스템에서 각 사용자에 대 한 정보를 나열 하는 UserGrid GridView](role-based-authorization-cs/_static/image20.png)](role-based-authorization-cs/_static/image19.png)
+[![T그 UserGrid GridView 나열 정보에 대 한 각 사용자 시스템에서](role-based-authorization-cs/_static/image20.png)](role-based-authorization-cs/_static/image19.png)
 
 **그림 7**: 합니다 `UserGrid` GridView 나열 정보에 대 한 각 사용자 시스템의 ([큰 이미지를 보려면 클릭](role-based-authorization-cs/_static/image21.png))
 
@@ -239,7 +239,7 @@ LoginView 컨트롤을 사용 하 여 사용자의 역할에 특정 지침을 �
 RoleGroups를 관리 하려면 RoleGroup 컬렉션 편집기를 표시 하려면 컨트롤의 스마트 태그에서 "RoleGroups 편집" 링크를 클릭 합니다. 두 개의 새 RoleGroups를 추가 합니다. 첫 번째 RoleGroup의 설정 `Roles` 속성을 "Administrators" 하 고 두 번째의 "감독자"입니다.
 
 
-[![LoginView의 역할별 템플릿 RoleGroup 컬렉션 편집기를 통해 관리](role-based-authorization-cs/_static/image23.png)](role-based-authorization-cs/_static/image22.png)
+[![Manage LoginView의 역할별 템플릿을 통해 the RoleGroup 컬렉션 편집기](role-based-authorization-cs/_static/image23.png)](role-based-authorization-cs/_static/image22.png)
 
 **그림 8**: LoginView의 역할별 템플릿 the RoleGroup 컬렉션 편집기를 통해 관리 ([클릭 하 여 큰 이미지 보기](role-based-authorization-cs/_static/image24.png))
 
@@ -255,12 +255,12 @@ RoleGroups를 관리 하려면 RoleGroup 컬렉션 편집기를 표시 하려면
 다음으로, 감독자 역할의 구성원 인 사용자로 로그인 합니다. 역할별 감독자 표시이 이번 메시지 (그림 9 참조). 역할별 관리자를 표시 하는 역할 (그림 10 참조) 메시지 관리자에서 사용자로 로그인 하는 경우.
 
 
-[![Bruce는 감독자 역할 관련 메시지가 표시 됩니다.](role-based-authorization-cs/_static/image26.png)](role-based-authorization-cs/_static/image25.png)
+[![Bruce는 감독자 역할 관련 메시지가 표시 됩니다](role-based-authorization-cs/_static/image26.png)](role-based-authorization-cs/_static/image25.png)
 
 **그림 9**: Bruce 감독자 역할 관련 메시지가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](role-based-authorization-cs/_static/image27.png))
 
 
-[![Tito는 관리자 역할 관련 메시지가 표시 됩니다.](role-based-authorization-cs/_static/image29.png)](role-based-authorization-cs/_static/image28.png)
+[![T면적은 관리자 역할 관련 메시지가 표시 됩니다](role-based-authorization-cs/_static/image29.png)](role-based-authorization-cs/_static/image28.png)
 
 **그림 10**: Tito 관리자 역할 관련 메시지가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](role-based-authorization-cs/_static/image30.png))
 
@@ -270,7 +270,7 @@ RoleGroups를 관리 하려면 RoleGroup 컬렉션 편집기를 표시 하려면
 그림 11에서는 렌더링 템플릿을 결정할 LoginView 컨트롤에서 사용 하는 워크플로 보여 줍니다. 가 둘 이상의 RoleGroup 지정 하는 경우 LoginView 템플릿을 렌더링 되는지 확인 합니다 *첫 번째* RoleGroup 일치 하는 합니다. 즉, 첫 번째 RoleGroup으로 감독자 RoleGroup와 두 번째 관리자를 배치 했기 것을 다음 Tito이이 페이지를 방문 하는 경우 그는 감독자 메시지가 표시 됩니다.
 
 
-[![렌더링할 템플릿을 결정 하는 데 LoginView 컨트롤의 워크플로](role-based-authorization-cs/_static/image32.png)](role-based-authorization-cs/_static/image31.png)
+[![T확인 항목 템플릿을 사용 하 여 렌더링 그 LoginView 컨트롤의 워크플로](role-based-authorization-cs/_static/image32.png)](role-based-authorization-cs/_static/image31.png)
 
 **그림 11**: 확인 항목 템플릿을 사용 하 여 렌더링 LoginView 컨트롤의 워크플로 ([클릭 하 여 큰 이미지 보기](role-based-authorization-cs/_static/image33.png))
 
@@ -282,7 +282,7 @@ LoginView 컨트롤 페이지를 방문 하는 사용자의 역할에 따라 다
 프로그래밍 방식으로 컨트롤을 CommandField에서를 참조 하는 가장 쉬운 방법은 먼저을 템플릿으로 변환 방법은입니다. 이를 위해 GridView의 스마트 태그에서 "열 편집" 링크를 클릭 합니다 CommandField 현재 필드 목록에서 선택한 "이이 필드를 TemplateField로 변환 하 는" 링크를 클릭 합니다. CommandField를 사용 하 여 templatefield로 바뀝니다이 `ItemTemplate` 고 `EditItemTemplate`입니다. 합니다 `ItemTemplate` 편집 및 삭제 Linkbutton 하는 동안 포함을 `EditItemTemplate` Linkbutton 취소 확인 하 고 업데이트를 포함 합니다.
 
 
-[![CommandField templatefield로 변환](role-based-authorization-cs/_static/image35.png)](role-based-authorization-cs/_static/image34.png)
+[![C변환 TemplateField로는 CommandField](role-based-authorization-cs/_static/image35.png)](role-based-authorization-cs/_static/image34.png)
 
 **그림 12**: TemplateField로는 CommandField 변환 ([클릭 하 여 큰 이미지 보기](role-based-authorization-cs/_static/image36.png))
 
@@ -313,7 +313,7 @@ GridView의 레코드를 열거 데이터를 GridView에 바인딩되어 때마�
 > CommandField 숨길 수 있습니다 완전히 경우-감독자 및 비관리자는 페이지를 방문 합니다. 필자는 판독기에 대 한 연습으로 둡니다.
 
 
-[![비-감독자 및 관리자가 아닌 숨겨져 편집 및 삭제 단추](role-based-authorization-cs/_static/image38.png)](role-based-authorization-cs/_static/image37.png)
+[![T비-감독자 및 관리자가 아닌 그 편집 및 삭제 단추 숨겨짐](role-based-authorization-cs/_static/image38.png)](role-based-authorization-cs/_static/image37.png)
 
 **그림 13**: 편집 및 삭제 단추를 비 감독자 및 관리자가 아닌 숨겨져 ([클릭 하 여 큰 이미지 보기](role-based-authorization-cs/_static/image39.png))
 
@@ -321,7 +321,7 @@ GridView의 레코드를 열거 데이터를 GridView에 바인딩되어 때마�
 감독자 역할 (아니라 관리자 역할)에 속하는 사용자를 방문 하는 경우 그 편집 단추를 확인 합니다.
 
 
-[![삭제 단추가 숨겨집니다 편집 단추 감독자에 대 한 사용 가능한 상태인](role-based-authorization-cs/_static/image41.png)](role-based-authorization-cs/_static/image40.png)
+[![W편집 단추 싶다 감독자에 대 한 사용 가능 이면 삭제 단추가 숨겨집니다](role-based-authorization-cs/_static/image41.png)](role-based-authorization-cs/_static/image40.png)
 
 **그림 14**: 삭제 단추를 숨기기 [편집] 단추는 감독자에 대 한 사용 가능 하지만 ([클릭 하 여 큰 이미지 보기](role-based-authorization-cs/_static/image42.png))
 
@@ -329,7 +329,7 @@ GridView의 레코드를 열거 데이터를 GridView에 바인딩되어 때마�
 및 관리자를 방문 하는 경우에 편집 및 삭제 단추에 액세스 합니다.
 
 
-[![편집 및 삭제 단추를 사용할 수만 관리자는](role-based-authorization-cs/_static/image44.png)](role-based-authorization-cs/_static/image43.png)
+[![T그 편집 및 삭제 단추는 사용할 수만 관리자](role-based-authorization-cs/_static/image44.png)](role-based-authorization-cs/_static/image43.png)
 
 **그림 15**: 편집 및 삭제 단추를 사용할 수만 관리자는 ([클릭 하 여 큰 이미지 보기](role-based-authorization-cs/_static/image45.png))
 
@@ -356,7 +356,7 @@ GridView의 레코드를 열거 데이터를 GridView에 바인딩되어 때마�
 라면 어떻게 해서든 관리자가 아닌 실행 하려고 합니다 `RowDeleting` 이벤트 처리기는 비-감독자 또는 관리자가 아닌 실행 하려는 경우 또는 `RowUpdating` 이벤트 처리기에서.NET 런타임 시킵니다를 `SecurityException`.
 
 
-[![보안 컨텍스트는 메서드를 실행할 수 있는 권한이 없습니다, 경우 SecurityException이 Throw 됩니다.](role-based-authorization-cs/_static/image47.png)](role-based-authorization-cs/_static/image46.png)
+[![I보안 컨텍스트는 메서드를 실행할 수 없는 권한이 없습니다 f SecurityException이 Throw](role-based-authorization-cs/_static/image47.png)](role-based-authorization-cs/_static/image46.png)
 
 **그림 16**: 보안 컨텍스트 메서드를 실행할 권한이 없는 경우는 `SecurityException` 이 Throw 됩니다 ([큰 이미지를 보려면 클릭](role-based-authorization-cs/_static/image48.png))
 

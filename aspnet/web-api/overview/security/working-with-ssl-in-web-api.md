@@ -8,15 +8,15 @@ ms.date: 02/22/2019
 ms.assetid: 97f6164f-59cf-45c0-b820-e4aa29b45396
 msc.legacyurl: /web-api/overview/security/working-with-ssl-in-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 69c0d217f605096d968435c062ee9931f8dff75f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 31589b3713b1f1a9b98d12906bfef81f8bf5e3f9
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57048800"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59386158"
 ---
-<a name="working-with-ssl-in-web-api"></a>Web API에서에서 SSL 사용
-====================
+# <a name="working-with-ssl-in-web-api"></a>Web API에서에서 SSL 사용
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 일반 HTTP를 통해 몇 가지 일반적인 인증 체계 보호 되지 않습니다. 특히 기본 인증 및 폼 인증은 암호화 되지 않은 자격 증명을 보냅니다. 안전한 이러한 인증 체계 *해야* SSL을 사용 합니다. 또한 클라이언트 인증 SSL 클라이언트 인증서를 사용할 수 있습니다.

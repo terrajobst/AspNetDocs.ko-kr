@@ -8,15 +8,15 @@ ms.date: 07/18/2007
 ms.assetid: 675531a7-cb54-4dd6-89ac-2636e4c285a5
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/updating-the-tableadapter-to-use-joins-cs
 msc.type: authoredcontent
-ms.openlocfilehash: d5b69b502cf650a477b2841c25ad3f1ab5f8da93
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 297496e590caf9c8ded83cb16b5fef1dfc542dc7
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57050630"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381395"
 ---
-<a name="updating-the-tableadapter-to-use-joins-c"></a>JOIN을 사용하도록 TableAdapter 업데이트(C#)
-====================
+# <a name="updating-the-tableadapter-to-use-joins-c"></a>JOIN을 사용하도록 TableAdapter 업데이트(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_69_CS.zip) 또는 [PDF 다운로드](updating-the-tableadapter-to-use-joins-cs/_static/datatutorial69cs1.pdf)
@@ -64,7 +64,7 @@ ms.locfileid: "57050630"
 [!code-sql[Main](updating-the-tableadapter-to-use-joins-cs/samples/sample3.sql)]
 
 
-[![조인을 포함 하는 기본 쿼리를 입력 합니다.](updating-the-tableadapter-to-use-joins-cs/_static/image2.png)](updating-the-tableadapter-to-use-joins-cs/_static/image1.png)
+[![E종료는 주 해당 포함 조인 쿼리](updating-the-tableadapter-to-use-joins-cs/_static/image2.png)](updating-the-tableadapter-to-use-joins-cs/_static/image1.png)
 
 **그림 1**: 포함 된 기본 쿼리를 입력 `JOIN` s ([큰 이미지를 보려면 클릭](updating-the-tableadapter-to-use-joins-cs/_static/image3.png))
 
@@ -88,7 +88,7 @@ TableAdapter 기본적으로 자동으로 만들어집니다 `INSERT`, `UPDATE`,
 TableAdapter에 대 한 값이 부족 DataTable에는 적절 한 열에 있으면 해당 `InsertCommand`, `UpdateCommand`, 및 `DeleteCommand` 속성입니다. 이 확인 하려면 디자이너의 TableAdapter에 클릭 한 다음 속성 창으로 이동 합니다. 이 표시 됩니다는 합니다 `InsertCommand`, `UpdateCommand`, 및 `DeleteCommand` 속성 (없음)으로 설정 됩니다.
 
 
-[![InsertCommand, UpdateCommand, 및 DeleteCommand 속성 (없음)으로 설정 됩니다.](updating-the-tableadapter-to-use-joins-cs/_static/image7.png)](updating-the-tableadapter-to-use-joins-cs/_static/image6.png)
+[![T그 InsertCommand, UpdateCommand, 및 DeleteCommand 속성 (없음)으로 설정 됩니다](updating-the-tableadapter-to-use-joins-cs/_static/image7.png)](updating-the-tableadapter-to-use-joins-cs/_static/image6.png)
 
 **그림 4**: 합니다 `InsertCommand`, `UpdateCommand`, 및 `DeleteCommand` 속성 (없음)으로 설정 됩니다 ([클릭 하 여 큰 이미지 보기](updating-the-tableadapter-to-use-joins-cs/_static/image8.png))
 
@@ -108,7 +108,7 @@ TableAdapter에 대 한 값이 부족 DataTable에는 적절 한 열에 있으�
 열어서 시작 합니다 `NorthwindWithSprocs` 데이터 집합에는 `~/App_Code/DAL` 폴더. 디자이너에서 마우스 상황에 맞는 메뉴에서 추가 옵션을 선택 합니다. TableAdapter 메뉴 항목을 선택 합니다. TableAdapter 구성 마법사를 시작 됩니다. 그림 5 보여주고 처럼 새 저장된 프로시저를 만들고 다음을 클릭 하 여 마법사를 가집니다. 새로 만들기에 리프레셔가 저장 프로시저 TableAdapter가의 마법사에서에 대 한 참조를 [새 저장 프로시저 만들기 형식화 된 데이터 집합의 Tableadapter에 대 한](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-cs.md) 자습서입니다.
 
 
-[![새 저장된 프로시저 만들기 옵션을 선택 합니다.](updating-the-tableadapter-to-use-joins-cs/_static/image10.png)](updating-the-tableadapter-to-use-joins-cs/_static/image9.png)
+[![S새 저장된 프로시저 만들기 옵션을 선택](updating-the-tableadapter-to-use-joins-cs/_static/image10.png)](updating-the-tableadapter-to-use-joins-cs/_static/image9.png)
 
 **그림 5**: 새 저장 프로시저 옵션 선택 만들기 ([클릭 하 여 큰 이미지 보기](updating-the-tableadapter-to-use-joins-cs/_static/image11.png))
 
@@ -123,7 +123,7 @@ TableAdapter에 대 한 값이 부족 DataTable에는 적절 한 열에 있으�
 다음 단계를 사용 하면 TableAdapter 저장 된 프로시저 이름 수 있습니다. 이름을 사용 하 여 `Employees_Select`, `Employees_Insert`를 `Employees_Update`, 및 `Employees_Delete`그림 6 에서처럼 합니다.
 
 
-[![TableAdapter 저장 된 프로시저 이름](updating-the-tableadapter-to-use-joins-cs/_static/image13.png)](updating-the-tableadapter-to-use-joins-cs/_static/image12.png)
+[![N저장 프로시저를 TableAdapter s \ 이름](updating-the-tableadapter-to-use-joins-cs/_static/image13.png)](updating-the-tableadapter-to-use-joins-cs/_static/image12.png)
 
 **그림 6**: TableAdapter가 저장 프로시저 이름 ([클릭 하 여 큰 이미지 보기](updating-the-tableadapter-to-use-joins-cs/_static/image14.png))
 
@@ -131,7 +131,7 @@ TableAdapter에 대 한 값이 부족 DataTable에는 적절 한 열에 있으�
 마지막 단계 TableAdapter의 메서드 이름을 지정 하 라는 메시지가 나타납니다. 사용 하 여 `Fill` 고 `GetEmployees` 메서드 이름으로 합니다. 또한 업데이트 데이터베이스 (GenerateDBDirectMethods) 확인란이 선택 되어 직접 보내는 메서드 만들기를 유지 해야 합니다.
 
 
-[![TableAdapter가의 메서드 채우기 이름과 GetEmployees](updating-the-tableadapter-to-use-joins-cs/_static/image16.png)](updating-the-tableadapter-to-use-joins-cs/_static/image15.png)
+[![N이름 () 메서드를 채울 tableadapter 및 GetEmployees](updating-the-tableadapter-to-use-joins-cs/_static/image16.png)](updating-the-tableadapter-to-use-joins-cs/_static/image15.png)
 
 **그림 7**: Tableadapter 메서드 이름을 `Fill` 하 고 `GetEmployees` ([클릭 하 여 큰 이미지 보기](updating-the-tableadapter-to-use-joins-cs/_static/image17.png))
 
@@ -139,7 +139,7 @@ TableAdapter에 대 한 값이 부족 DataTable에는 적절 한 열에 있으�
 마법사를 완료 한 후 시간을 내어 데이터베이스에서 저장된 프로시저를 검사 합니다. 4 개의 새로 표시 됩니다: `Employees_Select`, `Employees_Insert`를 `Employees_Update`, 및 `Employees_Delete`합니다. 다음으로 검사 합니다 `EmployeesDataTable` 및 `EmployeesTableAdapter` 방금 만든 합니다. DataTable 주 쿼리에서 반환 된 각 필드에 대 한 열을 포함 합니다. TableAdapter 클릭 하 고 속성 창으로 이동 합니다. 이 표시 됩니다는 `InsertCommand`, `UpdateCommand`, 및 `DeleteCommand` 속성 모두가 해당 저장된 프로시저를 호출 하도록 올바르게 구성 합니다.
 
 
-[![TableAdapter 포함 삽입, 업데이트 및 삭제 기능](updating-the-tableadapter-to-use-joins-cs/_static/image19.png)](updating-the-tableadapter-to-use-joins-cs/_static/image18.png)
+[![T그 TableAdapter 포함 삽입, 업데이트 및 삭제 기능](updating-the-tableadapter-to-use-joins-cs/_static/image19.png)](updating-the-tableadapter-to-use-joins-cs/_static/image18.png)
 
 **그림 8**: TableAdapter 포함 삽입, 업데이트 및 삭제 기능 ([클릭 하 여 큰 이미지 보기](updating-the-tableadapter-to-use-joins-cs/_static/image20.png))
 
@@ -156,7 +156,7 @@ TableAdapter에 대 한 값이 부족 DataTable에는 적절 한 열에 있으�
 업데이트 한 후 합니다 `SELECT` 문을 파일 메뉴로 이동 하 고 저장을 선택 하 여 변경 내용 저장할 `Employees_Select`합니다. 또는 도구 모음에서 저장 아이콘을 클릭 하거나 Ctrl + S를 누르면 수 있습니다. 변경 내용을 저장 한 후 마우스 오른쪽 단추로 클릭는 `Employees_Select` 서버 탐색기에서 저장 프로시저 및 Execute를 선택 합니다. 이 저장된 프로시저를 실행 및 해당 결과 출력 창에 표시 됩니다 (그림 9 참조).
 
 
-[![저장 프로시저 결과 출력 창에 표시 됩니다.](updating-the-tableadapter-to-use-joins-cs/_static/image22.png)](updating-the-tableadapter-to-use-joins-cs/_static/image21.png)
+[![T그 저장 프로시저 결과 출력 창에 표시 됩니다](updating-the-tableadapter-to-use-joins-cs/_static/image22.png)](updating-the-tableadapter-to-use-joins-cs/_static/image21.png)
 
 **그림 9**: 저장 프로시저 결과 출력 창에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](updating-the-tableadapter-to-use-joins-cs/_static/image23.png))
 
@@ -173,7 +173,7 @@ TableAdapter에 대 한 값이 부족 DataTable에는 적절 한 열에 있으�
 마우스 오른쪽 단추로 클릭 하 여 시작 된 `EmployeesTableAdapter` 구성 상황에 맞는 메뉴에서 선택 합니다. 그러면 선택, 삽입, 업데이트 및 삭제와 반환 값 및 매개 변수 (있는 경우)에 사용 되는 저장된 프로시저를 나열 하는 TableAdapter 구성 마법사. 그림 10에서는이 마법사를 보여 줍니다. 여기서 볼 수 있는 하는 합니다 `Employees_Select` 저장 프로시저 반환 합니다 `ManagerFirstName` 및 `ManagerLastName` 필드입니다.
 
 
-[![저장 프로시저는 마법사와 Employees_Select에 대 한 업데이트 된 열 목록](updating-the-tableadapter-to-use-joins-cs/_static/image25.png)](updating-the-tableadapter-to-use-joins-cs/_static/image24.png)
+[![T그 마법사 Employees_Select 저장 프로시저에 대 한 업데이트 된 열 목록을 보여 줍니다](updating-the-tableadapter-to-use-joins-cs/_static/image25.png)](updating-the-tableadapter-to-use-joins-cs/_static/image24.png)
 
 **그림 10**: 마법사의 열 업데이트 목록을 표시 합니다 `Employees_Select` 저장 프로시저 ([큰 이미지를 보려면 클릭](updating-the-tableadapter-to-use-joins-cs/_static/image26.png))
 
@@ -181,7 +181,7 @@ TableAdapter에 대 한 값이 부족 DataTable에는 적절 한 열에 있으�
 마침을 클릭 하 여 마법사를 완료 합니다. 데이터 집합 디자이너로 돌아가면 합니다 `EmployeesDataTable` 두 개의 추가 열이 포함 됩니다: `ManagerFirstName` 및 `ManagerLastName`합니다.
 
 
-[![EmployeesDataTable 새 열 두 개를 포함합니다.](updating-the-tableadapter-to-use-joins-cs/_static/image28.png)](updating-the-tableadapter-to-use-joins-cs/_static/image27.png)
+[![T그 EmployeesDataTable 포함 새 열 두 개](updating-the-tableadapter-to-use-joins-cs/_static/image28.png)](updating-the-tableadapter-to-use-joins-cs/_static/image27.png)
 
 **그림 11**: 합니다 `EmployeesDataTable` 새 열 두 개 포함 되어 있습니다 ([큰 이미지를 보려면 클릭](updating-the-tableadapter-to-use-joins-cs/_static/image29.png))
 
@@ -204,12 +204,12 @@ TableAdapter에 대 한 값이 부족 DataTable에는 적절 한 열에 있으�
 ObjectDataSource를 사용 하 여 구성를 `EmployeesBLLWithSprocs` 클래스를 선택 하 고 삭제 탭에서 있는지를 확인 합니다 `GetEmployees` 및 `DeleteEmployee` 방법이 드롭 다운 목록에서 선택 됩니다. ObjectDataSource가의 구성을 완료 하려면 마침을 클릭 합니다.
 
 
-[![EmployeesBLLWithSprocs 클래스를 사용 하는 ObjectDataSource 구성](updating-the-tableadapter-to-use-joins-cs/_static/image31.png)](updating-the-tableadapter-to-use-joins-cs/_static/image30.png)
+[![Configure EmployeesBLLWithSprocs 클래스를 사용 하는 ObjectDataSource](updating-the-tableadapter-to-use-joins-cs/_static/image31.png)](updating-the-tableadapter-to-use-joins-cs/_static/image30.png)
 
 **그림 12**: ObjectDataSource를 사용 하 여 구성 합니다 `EmployeesBLLWithSprocs` 클래스 ([큰 이미지를 보려면 클릭](updating-the-tableadapter-to-use-joins-cs/_static/image32.png))
 
 
-[![ObjectDataSource를 사용 하는 한 GetEmployees 및 종료 되 메서드](updating-the-tableadapter-to-use-joins-cs/_static/image34.png)](updating-the-tableadapter-to-use-joins-cs/_static/image33.png)
+[![HObjectDataSource ave 메서드 종료 되 고 GetEmployees 사용](updating-the-tableadapter-to-use-joins-cs/_static/image34.png)](updating-the-tableadapter-to-use-joins-cs/_static/image33.png)
 
 **그림 13**: ObjectDataSource 사용 합니다 `GetEmployees` 하 고 `DeleteEmployee` 메서드 ([클릭 하 여 큰 이미지 보기](updating-the-tableadapter-to-use-joins-cs/_static/image35.png))
 
@@ -224,7 +224,7 @@ Visual Studio의 각 GridView에는 BoundField에 추가 됩니다는 `Employees
 브라우저를 통해이 방문 하 여 페이지를 테스트 합니다. 그림 14에서 볼 수 있듯이 각 직원 및 (있는 경우)가 자신의 관리자의 이름 페이지 나열 됩니다.
 
 
-[![Employees_Select 조인이 저장 프로시저 이름을 반환 합니다 Manager s](updating-the-tableadapter-to-use-joins-cs/_static/image37.png)](updating-the-tableadapter-to-use-joins-cs/_static/image36.png)
+[![T그 조인 Employees_Select 저장 프로시저에서 반환 이름이 관리자](updating-the-tableadapter-to-use-joins-cs/_static/image37.png)](updating-the-tableadapter-to-use-joins-cs/_static/image36.png)
 
 **그림 14**: 합니다 `JOIN` 에 `Employees_Select` 저장 프로시저의의 이름이 관리자를 반환 합니다. ([전체 크기 이미지를 보려면 클릭](updating-the-tableadapter-to-use-joins-cs/_static/image38.png))
 
@@ -232,7 +232,7 @@ Visual Studio의 각 GridView에는 BoundField에 추가 됩니다는 `Employees
 실행에서 단계가 삭제 워크플로 시작 삭제 단추를 클릭 하 여 `Employees_Delete` 저장 프로시저. 그러나 시도가 `DELETE` 저장된 프로시저의 문이 foreign key 제약 조건 위반으로 인해 실패 (그림 15 참조). 특히, 각 직원에 하나 이상의 레코드를 `Orders` 테이블 삭제가 실패 합니다.
 
 
-[![외래 키 제약 조건 위반을 해당 주문을 결과 있는 직원을 삭제 합니다.](updating-the-tableadapter-to-use-joins-cs/_static/image40.png)](updating-the-tableadapter-to-use-joins-cs/_static/image39.png)
+[![D외래 키 제약 조건 위반을에서 해당 주문 결과 포함 하는 직원 eleting](updating-the-tableadapter-to-use-joins-cs/_static/image40.png)](updating-the-tableadapter-to-use-joins-cs/_static/image39.png)
 
 **그림 15**: 외래 키 제약 조건 위반을 해당 주문을 결과 있는 직원을 삭제 ([클릭 하 여 큰 이미지 보기](updating-the-tableadapter-to-use-joins-cs/_static/image41.png))
 

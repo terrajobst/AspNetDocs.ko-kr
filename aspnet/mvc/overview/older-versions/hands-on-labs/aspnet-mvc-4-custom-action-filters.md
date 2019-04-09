@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 969ab824-1b98-4552-81fe-b60ef5fc6887
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-custom-action-filters
 msc.type: authoredcontent
-ms.openlocfilehash: 4c8628cc289610e287c0a3bc3c8a4c7a833c9fde
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 32587c7b0fd3075cd46678922b40bda2019f3a26
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423418"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381135"
 ---
 # <a name="aspnet-mvc-4-custom-action-filters"></a>ASP.NET MVC 4 사용자 지정 작업 필터
 
@@ -59,7 +59,7 @@ ASP.NET MVC는 작업 메서드가 호출 되기 전후 필터링 논리를 실�
 
 이 문서의 부록 참조할 수 있습니다 사용 하는 방법을 알아보려면 원하는 고 Visual Studio 코드 조각을 사용 하 여 잘 모르는 경우 &quot; [부록 c: 코드 조각을 사용 하 여](#AppendixC)&quot;합니다.
 
-* * *
+---
 
 <a id="Exercises"></a>
 
@@ -354,7 +354,7 @@ ASP.NET MVC는 작업 메서드가 호출 되기 전후 필터링 논리를 실�
 > 또한 다음 Windows Azure 웹 사이트에이 응용 프로그램을 배포할 수 [부록 b: 웹 배포를 사용 하 여 ASP.NET MVC 4 응용 프로그램 게시](#AppendixB)합니다.
 
 
-* * *
+---
 
 <a id="Summary"></a>
 

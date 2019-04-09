@@ -8,15 +8,15 @@ ms.date: 05/28/2015
 ms.assetid: 81ed82bf-b940-44f1-b94a-555d0cb7cc98
 msc.legacyurl: /web-pages/overview/getting-started/introducing-aspnet-web-pages-2/form-basics
 msc.type: authoredcontent
-ms.openlocfilehash: 28385ac2244ab0bfb38ee5fcbc64e6e11804612b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f88f7a31551abda029bee0ec16aa35ce2ef5d2f0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57028220"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59385958"
 ---
-<a name="introducing-aspnet-web-pages---html-form-basics"></a>HTML 양식 기본 ASP.NET 웹 페이지 소개
-====================
+# <a name="introducing-aspnet-web-pages---html-form-basics"></a>HTML 양식 기본 ASP.NET 웹 페이지 소개
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 자습서에서는 입력된 폼을 만드는 방법 및 ASP.NET Web Pages (Razor)를 사용 하는 경우 사용자의 입력을 처리 하는 방법의 기본 사항을 보여 줍니다. 및 데이터베이스에서 가져온 했으므로 폼 기술을 사용자 데이터베이스에서 특정 영화를 찾을 수 있도록 사용할지 합니다. 통해 시리즈를 완료 했다고 가정 하 [소개에 표시할 데이터를 사용 하 여 ASP.NET 웹 페이지](/aspnet/web-pages/overview/getting-started/introducing-aspnet-web-pages-2/displaying-data)합니다.
@@ -215,7 +215,7 @@ SQL 문은 궁금한 경우 대/소문자 구분 하지 않습니다 &mdash; `SE
 
 > [!NOTE] 
 > 
-> **중요!** 자리 표시자를 사용 하 여 (같은 `@0`) 값을 SQL 명령에 전달 하는 *매우 중요 한* 보안에 대 한 합니다. 변수 데이터에 대 한 자리 표시자를 사용 하 여 여기에서 살펴본 방식에는 유일한 방법은 SQL 명령을 생성 해야 합니다.
+> **기억해 야 합니다.** 자리 표시자를 사용 하 여 (같은 `@0`) 값을 SQL 명령에 전달 하는 *매우 중요 한* 보안에 대 한 합니다. 변수 데이터에 대 한 자리 표시자를 사용 하 여 여기에서 살펴본 방식에는 유일한 방법은 SQL 명령을 생성 해야 합니다.
 > 
 > 리터럴 텍스트 (연결) 및 사용자에서 가져온 값을 결합 하 여 SQL 문을 생성 하지 않습니다. 사이트를 열고 SQL 문으로 사용자 입력을 연결 하는 *SQL 주입 공격* 악의적인 사용자 데이터베이스를 해킹 하는 페이지에 대 한 값을 제출 하는 경우. (자세한 내용은 문서의 [SQL 주입](https://msdn.microsoft.com/library/ms161953.aspx) MSDN 웹 사이트.)
 
@@ -356,7 +356,7 @@ WebMatrix를 실행 합니다 *Movies.cshtml* 페이지입니다. 장르에 대 
 
 ## <a name="additional-resources"></a>추가 리소스
 
-- [Razor 구문을 사용 하 여 ASP.NET 웹 프로그래밍 소개](https://go.microsoft.com/fwlink/?LinkID=202890)
+- [Razor 구문을 사용하는 ASP.NET 웹 프로그래밍 소개](https://go.microsoft.com/fwlink/?LinkID=202890)
 - [SQL WHERE 절](http://www.w3schools.com/sql/sql_where.asp) W3Schools 사이트
 - [메서드 정의](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) W3C 사이트에 대 한 문서
 

@@ -8,15 +8,15 @@ ms.date: 05/30/2007
 ms.assetid: bd87413c-8160-4520-a8a2-43b555c4183a
 msc.legacyurl: /web-forms/overview/data-access/caching-data/caching-data-with-the-objectdatasource-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 770b1ae92db8384a0c0b7f038b1ea994ae4c1b4c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3e8fa3fe62ee2f58cd5cfbd32d17a3613cf80c12
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57064420"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59382501"
 ---
-<a name="caching-data-with-the-objectdatasource-c"></a>ObjectDataSource를 사용하여 데이터 캐싱(C#)
-====================
+# <a name="caching-data-with-the-objectdatasource-c"></a>ObjectDataSource를 사용하여 데이터 캐싱(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_58_CS.exe) 또는 [PDF 다운로드](caching-data-with-the-objectdatasource-cs/_static/datatutorial58cs1.pdf)
@@ -66,7 +66,7 @@ ObjectDataSource s 캐싱 기능 탐색을 시작 하기 전에 s를 먼저 시�
 다른 폴더와 같이 `Default.aspx` 에 `Caching` 폴더 섹션의 자습서를 나열 됩니다. 이전에 설명한 대로 `SectionLevelTutorialListing.ascx` 사용자 컨트롤은이 기능을 제공 합니다. 따라서이 사용자 정의 컨트롤을 추가 `Default.aspx`의 디자인 뷰에서 페이지의 솔루션 탐색기에서 끌어 합니다.
 
 
-[![그림 2: Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](caching-data-with-the-objectdatasource-cs/_static/image3.png)](caching-data-with-the-objectdatasource-cs/_static/image2.png)
+[![Figure 2: Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](caching-data-with-the-objectdatasource-cs/_static/image3.png)](caching-data-with-the-objectdatasource-cs/_static/image2.png)
 
 **그림 2**: 그림 2: 추가 된 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤 `Default.aspx` ([클릭 하 여 큰 이미지 보기](caching-data-with-the-objectdatasource-cs/_static/image4.png))
 
@@ -91,7 +91,7 @@ ObjectDataSource s 캐싱 기능 탐색을 시작 하기 전에 s를 먼저 시�
 열어서 시작 합니다 `ObjectDataSource.aspx` 페이지에 `Caching` 폴더입니다. 디자이너 도구 상자에서 GridView를 끌거나, 설정 해당 `ID` 속성을 `Products`, 선택한, 스마트 태그, 라는 새 ObjectDataSource 컨트롤을 바인딩할 `ProductsDataSource`합니다. ObjectDataSource를 사용 하려면 구성 된 `ProductsBLL` 클래스입니다.
 
 
-[![ProductsBLL 클래스를 사용 하는 ObjectDataSource 구성](caching-data-with-the-objectdatasource-cs/_static/image7.png)](caching-data-with-the-objectdatasource-cs/_static/image6.png)
+[![Configure ProductsBLL 클래스를 사용 하는 ObjectDataSource](caching-data-with-the-objectdatasource-cs/_static/image7.png)](caching-data-with-the-objectdatasource-cs/_static/image6.png)
 
 **그림 4**: ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLL` 클래스 ([큰 이미지를 보려면 클릭](caching-data-with-the-objectdatasource-cs/_static/image8.png))
 
@@ -99,7 +99,7 @@ ObjectDataSource s 캐싱 기능 탐색을 시작 하기 전에 s를 먼저 시�
 이 페이지에 대 한 s를 ObjectDataSource에 캐시 된 데이터는 GridView가의 인터페이스를 통해 수정 되 면 어떻게 될까요 살펴볼 수 있도록 편집할 수는 GridView를 만들 수 있습니다. 드롭다운 목록에 기본값을 설정 하 고 선택 탭 유지 `GetProducts()`, [업데이트] 탭에서 선택한 항목을 변경 하지만 `UpdateProduct` 받아들이는 오버 로드가 `productName`, `unitPrice`, 및 `productID` 입력된 매개 변수로.
 
 
-[![적절 한 UpdateProduct 오버 로드로 업데이트 탭의 드롭 다운 목록 설정](caching-data-with-the-objectdatasource-cs/_static/image10.png)](caching-data-with-the-objectdatasource-cs/_static/image9.png)
+[![S적절 한 UpdateProduct 오버 로드로 업데이트의 탭 드롭 다운 목록 et](caching-data-with-the-objectdatasource-cs/_static/image10.png)](caching-data-with-the-objectdatasource-cs/_static/image9.png)
 
 **그림 5**: 드롭다운 목록에서 업데이트 탭 s는 적절으로 `UpdateProduct` 오버 로드 ([큰 이미지를 보려면 클릭](caching-data-with-the-objectdatasource-cs/_static/image11.png))
 
@@ -114,7 +114,7 @@ GridView가 스마트 태그 편집 사용 확인란을 선택 하 여 GridView�
 > GridView s 편집 인터페이스 사용자 지정 하는 방법에 대 한 검토 필요 하십니까? 그렇다면 다시 참조를 [데이터 수정 인터페이스 사용자 지정](../editing-inserting-and-deleting-data/customizing-the-data-modification-interface-cs.md) 자습서입니다.
 
 
-[![지원할 GridView 편집, 정렬 및 페이징](caching-data-with-the-objectdatasource-cs/_static/image13.png)](caching-data-with-the-objectdatasource-cs/_static/image12.png)
+[![Enable GridView 편집, 정렬 및 페이징 지원](caching-data-with-the-objectdatasource-cs/_static/image13.png)](caching-data-with-the-objectdatasource-cs/_static/image12.png)
 
 **그림 6**: GridView 편집, 정렬 및 페이징 지원을 사용 하도록 설정 ([클릭 하 여 큰 이미지 보기](caching-data-with-the-objectdatasource-cs/_static/image14.png))
 
@@ -127,7 +127,7 @@ GridView가 스마트 태그 편집 사용 확인란을 선택 하 여 GridView�
 그림 7에서 알 수 있듯이, 편집 가능한 GridView 이름, 범주 및 각 데이터베이스에서 제품의 가격을 나열 합니다. 잠시 s 페이지 기능 정렬, 페이징 결과 테스트 하 고 레코드를 편집 합니다.
 
 
-[![각 제품의의 이름이, Category 및 Price 정렬 가능, Pageable 편집 가능한 GridView에 나열 됩니다.](caching-data-with-the-objectdatasource-cs/_static/image16.png)](caching-data-with-the-objectdatasource-cs/_static/image15.png)
+[![E정렬 가능, Pageable 편집 가능한 GridView에 대 한 ach 제품 이름이, Category 및 Price 포함 된](caching-data-with-the-objectdatasource-cs/_static/image16.png)](caching-data-with-the-objectdatasource-cs/_static/image15.png)
 
 **그림 7**: 각 제품의의 이름이, Category 및 Price 정렬 가능, Pageable 편집 가능한 GridView에 나열 됩니다 ([클릭 하 여 큰 이미지 보기](caching-data-with-the-objectdatasource-cs/_static/image17.png))
 
@@ -141,7 +141,7 @@ GridView가 스마트 태그 편집 사용 확인란을 선택 하 여 GridView�
 완벽 하 게 파악할 있는 데이터를 데이터베이스에서 검색 하는 빈도, 데이터를 다시 검색 될 때 메시지가 표시 되는 s 수 있습니다. 명명 된 GridView 위에 레이블을 웹 컨트롤을 추가 `ODSEvents`합니다. 지웁니다 해당 `Text` 속성 집합과 해당 `EnableViewState` 속성을 `false`입니다. 레이블 아래에 있는 단추 웹 컨트롤을 추가 하 고 설정 해당 `Text` 속성을 다시 게시 합니다.
 
 
-[![GridView 위에 있는 페이지에 레이블 및 단추 추가](caching-data-with-the-objectdatasource-cs/_static/image19.png)](caching-data-with-the-objectdatasource-cs/_static/image18.png)
+[![Add는 레이블 및 GridView는 위의 페이지에 단추](caching-data-with-the-objectdatasource-cs/_static/image19.png)](caching-data-with-the-objectdatasource-cs/_static/image18.png)
 
 **그림 8**: GridView의 위에서 페이지에 레이블 및 단추를 추가 ([클릭 하 여 큰 이미지 보기](caching-data-with-the-objectdatasource-cs/_static/image20.png))
 
@@ -156,12 +156,12 @@ ObjectDataSource 데이터에 대 한 아키텍처에 요청 될 때마다 레�
 브라우저에서이 페이지를 방문 합니다. 페이지가 처음 방문할 때 발생 하는 이벤트에 텍스트 선택이 표시 됩니다. 다시 게시 단추를 클릭 하 고 텍스트가 사라집니다 있는지 확인 (가정 GridView s `EnableViewState` 속성이 `true`, 기본값). 포스트백에서 GridView를 해당 뷰 상태를 재구성 및 해당 데이터에 대 한 ObjectDataSource 만들어지고 t 전환 하 고 따라서 때문입니다. 하지만 정렬, 페이징 또는 데이터를 편집 해당 데이터 원본에 바인딩할 GridView 시키고 따라서 선택 하면 이벤트가 텍스트 다시 나타납니다.
 
 
-[![해당 데이터 원본에 GridView는 차츰 회복 되면서 때마다 선택 하면 이벤트 발생 표시 됩니다.](caching-data-with-the-objectdatasource-cs/_static/image22.png)](caching-data-with-the-objectdatasource-cs/_static/image21.png)
+[![Whenever GridView 다시 발생 하는 선택 하면 이벤트는 해당 데이터 원본에 바인딩되는 표시](caching-data-with-the-objectdatasource-cs/_static/image22.png)](caching-data-with-the-objectdatasource-cs/_static/image21.png)
 
 **그림 9**: 해당 데이터 원본에 GridView는 차츰 회복 되면서 때마다 선택 하면 이벤트 발생 표시 됩니다 ([클릭 하 여 큰 이미지 보기](caching-data-with-the-objectdatasource-cs/_static/image23.png))
 
 
-[![클릭 하면 포스트백 단추를 클릭 하면 GridView 보기 상태에서 다시 구성](caching-data-with-the-objectdatasource-cs/_static/image25.png)](caching-data-with-the-objectdatasource-cs/_static/image24.png)
+[![C비위를 맞추는 데 포스트백 단추를 클릭 하면 GridView 보기 상태에서 다시 구성](caching-data-with-the-objectdatasource-cs/_static/image25.png)](caching-data-with-the-objectdatasource-cs/_static/image24.png)
 
 **그림 10**: 다시 게시 단추를 클릭 하면 GridView 보기 상태에서 다시 구성 ([클릭 하 여 큰 이미지 보기](caching-data-with-the-objectdatasource-cs/_static/image26.png))
 
@@ -180,7 +180,7 @@ ObjectDataSource 데이터에 대 한 아키텍처에 요청 될 때마다 레�
 구성 s는 `ProductsDataSource` ObjectDataSource 절대 확장에서 30 초 동안 해당 데이터를 캐시 합니다. 집합 ObjectDataSource s `EnableCaching` 속성을 `true` 고 `CacheDuration` 30 속성입니다. 유지 된 `CacheExpirationPolicy` 속성이 해당 기본값으로 설정 `Absolute`합니다.
 
 
-[![30 초 동안 해당 데이터를 캐시 하는 ObjectDataSource 구성](caching-data-with-the-objectdatasource-cs/_static/image28.png)](caching-data-with-the-objectdatasource-cs/_static/image27.png)
+[![C30 초 동안 해당 데이터를 캐시 하는 ObjectDataSource onfigure](caching-data-with-the-objectdatasource-cs/_static/image28.png)](caching-data-with-the-objectdatasource-cs/_static/image27.png)
 
 **그림 11**: 30 초 동안 해당 데이터를 캐시 하는 ObjectDataSource 구성 ([클릭 하 여 큰 이미지 보기](caching-data-with-the-objectdatasource-cs/_static/image29.png))
 

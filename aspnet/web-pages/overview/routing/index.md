@@ -8,15 +8,15 @@ ms.date: 09/08/2014
 ms.assetid: 5322c2e8-7cd9-4d61-9611-39d6e5f2d936
 msc.legacyurl: /web-pages/overview/routing
 msc.type: chapter
-ms.openlocfilehash: 04f85ebf711a8ba255e0e86baf01cb55f9ad14e1
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 27d195b13fa7a215859d3782f78e51e29a73a7ee
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57021250"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59386283"
 ---
-<a name="routing"></a>라우팅
-====================
+# <a name="routing"></a>라우팅
+
 > 웹 페이지 응용 프로그램에서 사용 하는 Url을 사용자 지정 하는 방법입니다.
 
 

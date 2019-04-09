@@ -8,15 +8,15 @@ ms.date: 03/14/2008
 ms.assetid: c1a35f18-bab9-41f7-8497-15530c37a09d
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/aspnet-ajax/understanding-asp-net-ajax-localization
 msc.type: authoredcontent
-ms.openlocfilehash: 86cbf150708f1db711b40ccbc25345afeb3e542a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 11e70493478d6810d63ba6b3ac813e32f03052eb
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57031440"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381330"
 ---
-<a name="understanding-aspnet-ajax-localization"></a>ASP.NET AJAX 지역화 이해
-====================
+# <a name="understanding-aspnet-ajax-localization"></a>ASP.NET AJAX 지역화 이해
+
 [Scott Cate](https://github.com/scottcate)
 
 [PDF 다운로드](http://download.microsoft.com/download/C/1/9/C19A3451-1D14-477C-B703-54EF22E197EE/AJAX_tutorial04_Localization_cs.pdf)
@@ -32,13 +32,13 @@ Microsoft의 ASP.NET 기술을 개체 지향 및 이벤트 구동 프로그래�
 
 이 백서는 기반 Microsoft Visual Studio 2008 베타 2 릴리스 합니다. 이 백서는 또한 하지 Visual Web Developer Express를 Visual Studio 2008을 사용 하는 Visual Studio의 사용자 인터페이스에 따라 연습을 제공 하는 가정 합니다. 몇 가지 코드 샘플에는 Visual Web Developer Express에서 사용할 수 있는 프로젝트 템플릿을 사용 합니다.
 
-## <a name="the-need-for-localization"></a>*지역화 필요*
+## *<a name="the-need-for-localization"></a>지역화 필요*
 
 특히에 대 한 엔터프라이즈 응용 프로그램 개발자와 구성 요소 개발자는 culture 및 언어 간의 차이점을 인식 될 수 있는 도구를 만들 수는 점점 더 많이 필요한 되었습니다. 개발자 생산성을 높이고 요소의 조정에 대 한 전역적으로 작동 하는 데 필요한 작업을 줄여 클라이언트의 로캘과에 맞게 조정 하는 기능을 사용 하 여 구성 요소를 디자인 합니다.
 
 지역화는 응용 프로그램 또는 응용 프로그램 구성 요소는 특정 언어와 문화권에 대 한 지원을 통합 및 설계 프로세스입니다. Microsoft ASP.NET 플랫폼은 표준.NET 지역화 모델을 통합 하 여 표준 ASP.NET 응용 프로그램에 대 한 지역화에 대 한 광범위 하 게 지원 제공 Microsoft AJAX 프레임 워크는 지역화를 수행할 수 있는 다양 한 시나리오를 지원 하도록 통합된 모델을 활용 합니다. Microsoft AJAX 프레임 워크를 사용 하 여 스크립트 하거나 지역화할 수 위성 어셈블리로 배포 또는 정적 파일 시스템 구조를 활용 하 여 합니다.
 
-## <a name="embedding-scripts-with-satellite-assemblies"></a>*위성 어셈블리를 사용 하 여 스크립트를 포함합니다.*
+## *<a name="embedding-scripts-with-satellite-assemblies"></a>위성 어셈블리를 사용 하 여 스크립트를 포함합니다.*
 
 표준.NET Framework 지역화 전략을 사용 하 여 일관 된, 리소스 위성 어셈블리에 포함할 수 있습니다. 위성 어셈블리에 여러 가지 장점이 이진 파일에서 기존 리소스 포함을 통해 모든 지정 된 지역화 업데이트할 수 더 큰 이미지를 업데이트 하지 않고, 위성 어셈블리를 설치 하면 추가 지역화를 배포할 수 있습니다 주 프로젝트 어셈블리가 다시 로드 하지 않고도 프로젝트 폴더 및 위성 어셈블리를 배포할 수 있습니다. ASP.NET 프로젝트의 경우에 특히이 증분 업데이트를 사용 하는 시스템 리소스의 양을 상당히 줄일 수 있기 때문에 유용 하며 최소한으로 프로덕션 웹 사이트 사용 중단 됩니다.
 
@@ -118,7 +118,7 @@ JavaScript 정규식 구문에 단일 슬래시 내의 텍스트를 사용 하 �
 
 이 연습에 대 한 여러 변형이 참고 합니다. 예를 들어 스크립트 등록 못했습니다 ScriptManager 컨트롤을 사용 하 여 프로그래밍 방식으로 페이지를 로드 하는 동안.
 
-## <a name="including-a-static-script-file-structure"></a>*정적 스크립트 파일 구조를 포함 하 여*
+## *<a name="including-a-static-script-file-structure"></a>정적 스크립트 파일 구조를 포함 하 여*
 
 정적 스크립트 파일을 사용 하 여 배포, 고유한.NET 지역화 체계를 사용 하는 이점의 일부 손실 됩니다. 스크립트 리소스 파일을 비롯 하 여 생성 된 자동 형식을 손실 주로 표시입니다. 예를 들어, 위의 연습에서 리소스 ScriptManager 컨트롤에서 메시지 호출을 자동으로 생성 유형별로 노출 되었습니다.
 
@@ -128,7 +128,7 @@ JavaScript 정규식 구문에 단일 슬래시 내의 텍스트를 사용 하 �
 
 정적 스크립트 파일이 있어야 하거나 추가 하 여 참조 하는 선언적으로 포함 하도록 리소스 없기 때문 `<asp:ScriptElement>` 자식 요소를 `<Scripts>` 태그 또는 ScriptManager 컨트롤을 프로그래밍 방식으로 추가 하 여 `ScriptReference` 개체 에 `Scripts` 의 속성을 `ScriptManager` 런타임 시 페이지에서 컨트롤.
 
-## <a name="the-scriptmanager-and-its-role-in-localization"></a>*ScriptManager과 지역화에서의 역할*
+## *<a name="the-scriptmanager-and-its-role-in-localization"></a>ScriptManager과 지역화에서의 역할*
 
 ScriptManager는 지역화 된 응용 프로그램에 대 한 몇 가지 자동 동작을 활성화합니다.
 
@@ -146,7 +146,7 @@ ScriptManager는 지역화 된 응용 프로그램에 대 한 몇 가지 자동 
 
 기본적으로.NET Framework 리소스 문자열 및 이미지를 조회 하는 일관 된 방식을 제공 하는 위성 어셈블리 및 XML 리소스 (.resx) 파일을 활용 하 여 다양 한 지역화 프레임 워크를 지원 합니다. Microsoft AJAX 프레임 워크 및 Microsoft AJAX 스크립트 라이브러리를 포함 하 여 ASP.NET AJAX Extensions, 지원을 제공이 프로그래밍 모델에 대 한 클라이언트 쪽 코드를 쉽게 리소스 문자열 조회를 사용 하도록 설정 합니다. 위성 어셈블리 파일 이름을 따라 명명 체계를 지정된 하기만 ScriptResource.axd 통해 스크립트 리소스 (실제.js 파일)의 자동 포함을 지원 합니다. 이 지원을 통해 ASP.NET AJAX Extensions 스크립트 지역화 및 응용 프로그램의 세계화를 간소화합니다.
 
-## <a name="bio"></a>*Bio*
+## *<a name="bio"></a>사용자 정보*
 
 Scott Cate 1997 년부터 Microsoft 웹 기술을 사용 하 여 왔습니다 이며 myKB.com의 대표이사로 서 ([www.myKB.com](http://www.myKB.com)) ASP.NET 작성 전문적 기반 응용 프로그램 기술 자료 소프트웨어 솔루션에 집중 합니다. Scott 전자 메일을 통해 연락할 수 있습니다 [ scott.cate@myKB.com ](mailto:scott.cate@myKB.com) 저자의 블로그 또는 [ScottCate.com](http://ScottCate.com)
 

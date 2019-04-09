@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: b7dba543-73c3-4534-a9a0-ba70fa2c6a8a
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-fundamentals
 msc.type: authoredcontent
-ms.openlocfilehash: d3bc39a37cace003c3fda6691f0dd7f893128b07
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 38aea3b3480dde6ec6182a45c4f61f44eea8e05e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425251"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380225"
 ---
 # <a name="aspnet-mvc-4-fundamentals"></a>ASP.NET MVC 4 기본 사항
 
@@ -947,7 +947,7 @@ A **StoreBrowseViewModel** 선택한 장르가 일치 하는 앨범에 표시할
 > 또한 다음 Windows Azure 웹 사이트에이 응용 프로그램을 배포할 수 [부록 b: 웹 배포를 사용 하 여 ASP.NET MVC 4 응용 프로그램 게시](#AppendixB)합니다.
 
 
-* * *
+---
 
 <a id="Summary"></a>
 

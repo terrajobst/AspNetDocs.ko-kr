@@ -8,15 +8,15 @@ ms.date: 06/26/2007
 ms.assetid: b45fede3-c53a-4ea1-824b-20200808dbae
 msc.legacyurl: /web-forms/overview/data-access/working-with-batched-data/wrapping-database-modifications-within-a-transaction-cs
 msc.type: authoredcontent
-ms.openlocfilehash: ab1ffa147545ab0d4fa0a3cce6f7dca91dfe3ffb
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bbc54a39ba6ca3771acd7c4da37795a23e8ee2df
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57026530"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59383384"
 ---
-<a name="wrapping-database-modifications-within-a-transaction-c"></a>트랜잭션 내에서 래핑된 데이터베이스 수정(C#)
-====================
+# <a name="wrapping-database-modifications-within-a-transaction-c"></a>트랜잭션 내에서 래핑된 데이터베이스 수정(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_63_CS.zip) 또는 [PDF 다운로드](wrapping-database-modifications-within-a-transaction-cs/_static/datatutorial63cs1.pdf)
@@ -83,7 +83,7 @@ ms.locfileid: "57026530"
 다른 폴더와 마찬가지로 `Default.aspx` 사용할지는 `SectionLevelTutorialListing.ascx` 사용자 컨트롤을 해당 섹션 내에서 자습서 목록입니다. 따라서이 사용자 정의 컨트롤을 추가 `Default.aspx`의 디자인 뷰에서 페이지의 솔루션 탐색기에서 끌어 합니다.
 
 
-[![Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](wrapping-database-modifications-within-a-transaction-cs/_static/image2.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image1.png)
+[![Add Default.aspx SectionLevelTutorialListing.ascx 사용자 정의 컨트롤](wrapping-database-modifications-within-a-transaction-cs/_static/image2.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image1.png)
 
 **그림 2**: 추가 된 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤 `Default.aspx` ([클릭 하 여 큰 이미지 보기](wrapping-database-modifications-within-a-transaction-cs/_static/image2.png))
 
@@ -168,12 +168,12 @@ ms.locfileid: "57026530"
 열어서 시작 합니다 `Transactions.aspx` 페이지에서 `BatchData` 폴더 및 디자이너 도구 상자에서 끌어서 GridView입니다. 설정 해당 `ID` 하 `Products` 및 스마트 태그를 바인딩할 라는 새로운 ObjectDataSource는 `ProductsDataSource`합니다. ObjectDataSource에서 해당 데이터를 가져오도록 구성 합니다 `ProductsBLL` s 클래스 `GetProducts` 메서드. 이 읽기 전용 GridView, 따라서 드롭 다운 목록에서 UPDATE, INSERT, 설정 및 탭 (없음)을 삭제 되며 마침을 클릭 합니다.
 
 
-[![그림 5: S ProductsBLL 클래스 GetProducts 메서드를 사용 하는 ObjectDataSource 구성](wrapping-database-modifications-within-a-transaction-cs/_static/image5.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image3.png)
+[![Figure 5: S ProductsBLL 클래스 GetProducts 메서드를 사용 하는 ObjectDataSource 구성](wrapping-database-modifications-within-a-transaction-cs/_static/image5.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image3.png)
 
 **그림 5**: 그림 5: ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLL` s 클래스 `GetProducts` 메서드 ([클릭 하 여 큰 이미지 보기](wrapping-database-modifications-within-a-transaction-cs/_static/image4.png))
 
 
-[![UPDATE, INSERT 드롭 다운 목록을 설정 하 고 탭 삭제 (없음)](wrapping-database-modifications-within-a-transaction-cs/_static/image6.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image5.png)
+[![SUPDATE, INSERT 및 DELETE 탭 (없음)에 있는 드롭다운 목록은 et](wrapping-database-modifications-within-a-transaction-cs/_static/image6.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image5.png)
 
 **그림 6**: 설정 드롭다운 목록에서 업데이트, 삽입 및 삭제 하는 탭 (없음) ([클릭 하 여 큰 이미지 보기](wrapping-database-modifications-within-a-transaction-cs/_static/image6.png))
 
@@ -191,7 +191,7 @@ ms.locfileid: "57026530"
 이 시점에서 Visual Studio의 디자인 뷰에서 스크린샷과 그림 7 에서처럼 유사 합니다.
 
 
-[![페이지에 GridView 및 3 개의 단추 웹 컨트롤](wrapping-database-modifications-within-a-transaction-cs/_static/image7.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image7.png)
+[![T그 페이지에는 3 개의 단추 웹 컨트롤을 GridView 포함](wrapping-database-modifications-within-a-transaction-cs/_static/image7.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image7.png)
 
 **그림 7**: GridView 및 3 개의 단추 웹 컨트롤을 페이지에 포함 되어 있습니다 ([클릭 하 여 큰 이미지 보기](wrapping-database-modifications-within-a-transaction-cs/_static/image8.png))
 
@@ -210,12 +210,12 @@ S 세 단추의 각 이벤트 처리기 만들기 `Click` 이벤트 및 다음 �
 이 동작을 보여 주기 위해 브라우저를 통해이 페이지를 방문 합니다. 처음에 그림 8 에서처럼 데이터의 첫 페이지에 표시 됩니다. 다음으로 수정 범주 (사용 하 여 트랜잭션) 단추를 클릭 합니다. 포스트백을 발생 되 고 모든 제품을 업데이트 하려는 시도가 `CategoryID` 값 이지만 foreign key 제약 조건 위반 하 게 발생 됩니다 (그림 9 참조).
 
 
-[![제품을 페이징할 수 있는 GridView에 표시 됩니다.](wrapping-database-modifications-within-a-transaction-cs/_static/image8.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image9.png)
+[![T그 제품을 페이징할 수 있는 GridView에 표시 됩니다](wrapping-database-modifications-within-a-transaction-cs/_static/image8.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image9.png)
 
 **그림 8**: 제품을 페이징할 수 있는 GridView에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](wrapping-database-modifications-within-a-transaction-cs/_static/image10.png))
 
 
-[![Foreign Key 제약 조건 위반 하 게 범주 결과 다시 할당](wrapping-database-modifications-within-a-transaction-cs/_static/image9.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image11.png)
+[![R외래 키 제약 조건 위반을 범주 결과 eassigning](wrapping-database-modifications-within-a-transaction-cs/_static/image9.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image11.png)
 
 **그림 9**: 외래 키 제약 조건 위반을 범주 결과 다시 할당 ([클릭 하 여 큰 이미지 보기](wrapping-database-modifications-within-a-transaction-cs/_static/image12.png))
 
@@ -225,7 +225,7 @@ S 세 단추의 각 이벤트 처리기 만들기 `Click` 이벤트 및 다음 �
 이제 수정 범주 (트랜잭션 없이) 단추를 클릭 해 보십시오. 동일한 foreign key 제약 조건 위반 오류가 발생 하면이 (그림 9 참조) 이러한 제품을 이번 하지만 해당 `CategoryID` 올바른 값이 변경 되었는지 값 없습니다 롤백됩니다. 사용자가 브라우저의 뒤로 단추 한 다음 새로 고침 눈금 단추를 누릅니다. 그림 10과 같이 `CategoryID` 처음 8 개 제품의 다시 할당 된 합니다. 예를 들어, 그림 8에서 변경 했습니다는 `CategoryID` 1의 그림 10 it s에서에 게 재할당 되었습니다 2 있지만.
 
 
-[![일부 제품 CategoryID 값 없습니다. 업데이트 하는 동안 다른 되었습니다](wrapping-database-modifications-within-a-transaction-cs/_static/image10.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image13.png)
+[![Some 제품 CategoryID 값 없습니다. 업데이트 하는 동안 다른 된](wrapping-database-modifications-within-a-transaction-cs/_static/image10.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image13.png)
 
 **그림 10**: 일부 제품은 `CategoryID` 값 없습니다. 업데이트 하는 동안 다른 되었습니다 ([큰 이미지를 보려면 클릭](wrapping-database-modifications-within-a-transaction-cs/_static/image14.png))
 

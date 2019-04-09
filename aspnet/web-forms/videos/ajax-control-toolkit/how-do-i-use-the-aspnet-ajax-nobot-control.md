@@ -8,15 +8,15 @@ ms.date: 05/29/2007
 ms.assetid: 15282963-2ec5-4013-b6bc-f1fcf272818e
 msc.legacyurl: /web-forms/videos/ajax-control-toolkit/how-do-i-use-the-aspnet-ajax-nobot-control
 msc.type: video
-ms.openlocfilehash: 275bbbeb9859662c94bb795f9a91b15a28fe2184
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f03d94669d4d9b0089c8106b01812fe9722b6944
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034740"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379211"
 ---
-<a name="how-do-i-use-the-aspnet-ajax-nobot-control"></a>[어떻게 할까요?] ASP.NET AJAX NoBot 컨트롤 사용
-====================
+# <a name="how-do-i-use-the-aspnet-ajax-nobot-control"></a>[어떻게 할까요?] ASP.NET AJAX NoBot 컨트롤 사용
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 ASP.NET AJAX Control Toolkit에서 NoBot 컨트롤 웹 응용 프로그램에 특정 종류의 무단된 액세스를 방지할 수 있습니다. 이 비디오에서는 NoBot 컨트롤 다양 한 폼 전송의 빈도 수를 확인을 포함 하 여 자동화 된 액세스에 대 한 기본 제공 보호를 제공 하는 방법을 참조 합니다. 컨트롤이 페이지를 브라우저에서 보고 하는 경우에 성공 JavaScript 테스트와 같이 사용자 지정 문제를 정의 하는 개발자를 허용 하는 방법을 표시 합니다.

@@ -8,15 +8,15 @@ ms.date: 03/27/2007
 ms.assetid: b381b1da-feb3-4776-bc1b-75db53eb90ab
 msc.legacyurl: /web-forms/overview/data-access/working-with-binary-files/uploading-files-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 8849f8f279dde883a71fb3ba1678a589f2e321eb
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 02fbd3ca162309aefbefdba9a453af6e55b3900b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57038850"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59382747"
 ---
-<a name="uploading-files-c"></a>파일 업로드(C#)
-====================
+# <a name="uploading-files-c"></a>파일 업로드(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_54_CS.exe) 또는 [PDF 다운로드](uploading-files-cs/_static/datatutorial54cs1.pdf)
@@ -53,7 +53,7 @@ ms.locfileid: "57038850"
 다른 폴더와 같이 `Default.aspx` 에 `BinaryData` 폴더 섹션의 자습서를 나열 됩니다. 이전에 설명한 대로 `SectionLevelTutorialListing.ascx` 사용자 컨트롤은이 기능을 제공 합니다. 따라서이 사용자 정의 컨트롤을 추가 `Default.aspx`의 디자인 뷰에서 페이지의 솔루션 탐색기에서 끌어 합니다.
 
 
-[![Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](uploading-files-cs/_static/image2.gif)](uploading-files-cs/_static/image1.png)
+[![Add Default.aspx SectionLevelTutorialListing.ascx 사용자 정의 컨트롤](uploading-files-cs/_static/image2.gif)](uploading-files-cs/_static/image1.png)
 
 **그림 2**: 추가 된 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤 `Default.aspx` ([클릭 하 여 큰 이미지 보기](uploading-files-cs/_static/image2.png))
 
@@ -76,7 +76,7 @@ ms.locfileid: "57038850"
 두 위치 중 하나에서 응용 프로그램의 데이터 모델을 사용 하 여 연결 된 이진 데이터를 저장할 수 있습니다: 데이터베이스에 저장 된 파일에 대 한 참조를 사용 하 여 웹 서버의 파일 시스템에서 또는 데이터베이스 자체 내에서 직접 (그림 4 참조). 각 방법 마다 고유한 장점과 단점 및 부분에 자세한 내용은 합니다.
 
 
-[![파일 시스템 또는 데이터베이스에서 직접 이진 데이터를 저장할 수 있습니다.](uploading-files-cs/_static/image4.gif)](uploading-files-cs/_static/image3.png)
+[![B파일 시스템 또는 데이터베이스에서 직접 데이터를 저장할 수 있습니다 포인트](uploading-files-cs/_static/image4.gif)](uploading-files-cs/_static/image3.png)
 
 **그림 4**: 파일 시스템 또는 데이터베이스에서 직접 이진 데이터를 저장할 수 있습니다 ([클릭 하 여 큰 이미지 보기](uploading-files-cs/_static/image4.png))
 
@@ -110,7 +110,7 @@ ms.locfileid: "57038850"
 새 `varchar(200)` 열을 `Categories` 라는 테이블을 `BrochurePath` 하며 `NULL` s 및 저장 아이콘을 클릭 (또는 Ctrl + S를 누릅니다).
 
 
-[![Categories 테이블 BrochurePath 열을 추가 합니다.](uploading-files-cs/_static/image5.gif)](uploading-files-cs/_static/image5.png)
+[![Add Categories 테이블 BrochurePath 열](uploading-files-cs/_static/image5.gif)](uploading-files-cs/_static/image5.png)
 
 **그림 5**: 추가 된 `BrochurePath` 열을 합니다 `Categories` 테이블 ([전체 크기 이미지를 보려면 클릭](uploading-files-cs/_static/image6.png))
 
@@ -132,7 +132,7 @@ ms.locfileid: "57038850"
 이러한 두 열을 추가 하 여 시작 된 `CategoriesDataTable`합니다. 마우스 오른쪽 단추로 클릭는 `CategoriesDataTable`의 헤더를 상황에 맞는 메뉴에서 추가 선택 하 고 다음 열 옵션을 선택 합니다. 이렇게 하면 새 만들어집니다 `DataColumn` 이라는 DataTable에서 `Column1`합니다. 이 열의 이름을 바꿀 `Picture`합니다. 속성 창에서 설정 합니다 `DataColumn` s `DataType` 속성을 `System.Byte[]` (드롭다운 목록에는 옵션이 아닙니다.) 입력 해야 합니다.
 
 
-[![데이터 형식을 갖는 System.Byte DataColumn 라는 그림 만들기](uploading-files-cs/_static/image6.gif)](uploading-files-cs/_static/image7.png)
+[![C데이터 형식을 갖는 System.Byte []]는 DataColumn 라는 그림 작성(uploading-files-cs/_static/image6.gif)](uploading-files-cs/_static/image7.png)
 
 **그림 6**: 만들기는 `DataColumn` 명명 된 `Picture` 인 `DataType` 됩니다 `System.Byte[]` ([클릭 하 여 큰 이미지 보기](uploading-files-cs/_static/image8.png))
 
@@ -146,7 +146,7 @@ ms.locfileid: "57038850"
 주 TableAdapter 쿼리를 업데이트 하려면 마우스 오른쪽 단추로 클릭는 `CategoriesTableAdapter`의 헤더 및 상황에 맞는 메뉴에서 구성 옵션을 선택 합니다. 그러면 어떤에서는 테이블 어댑터 구성 마법사 ve 다양 한 이전 자습서에에서 표시 합니다. 쿼리 되돌리기를 업데이트 합니다 `BrochurePath` 하 고 마침을 클릭 합니다.
 
 
-[![또한 BrochurePath를 반환 하려면 SELECT 문에 열 목록을 업데이트합니다](uploading-files-cs/_static/image7.gif)](uploading-files-cs/_static/image9.png)
+[![U또한 반환 BrochurePath를 SELECT 문에 열 목록을 업데이트 ()](uploading-files-cs/_static/image7.gif)](uploading-files-cs/_static/image9.png)
 
 **그림 7**: 열 목록을 업데이트 합니다 `SELECT` 문 또한 반환할 `BrochurePath` ([클릭 하 여 큰 이미지 보기](uploading-files-cs/_static/image10.png))
 
@@ -159,12 +159,12 @@ TableAdapter에 대 한 임시 SQL 문을 사용 하는 경우 기본 쿼리에 
 다음으로, 특정 범주의 s를 반환 하는 새 TableAdapter 메서드를 만듭니다 `Picture` 열 값입니다. 마우스 오른쪽 단추로 클릭는 `CategoriesTableAdapter`의 헤더 TableAdapter 쿼리 구성 마법사를 시작 하는 추가 쿼리 옵션을 선택 합니다. 이 마법사의 첫 번째 단계는 임시 SQL 문을 사용 하 여 데이터를 쿼리, 필요한 경우 새 저장 프로시저 또는 기존 우리를 요청 합니다. SQL 문 사용을 선택 하 고 클릭 합니다. 우리는 반환할 행, 하므로 행 옵션 두 번째 단계에서 반환 하는 SELECT를 선택 합니다.
 
 
-[![사용 하 여 SQL 문을 옵션 선택](uploading-files-cs/_static/image8.gif)](uploading-files-cs/_static/image11.png)
+[![S사용 하 여 SQL 문을 옵션 선택](uploading-files-cs/_static/image8.gif)](uploading-files-cs/_static/image11.png)
 
 **그림 8**: 사용 하 여 SQL 문을 옵션을 선택 ([클릭 하 여 큰 이미지 보기](uploading-files-cs/_static/image12.png))
 
 
-[![선택 행을 반환 하는 SELECT 쿼리는 Categories 테이블에서 레코드를 반환 하 고, 이후](uploading-files-cs/_static/image9.gif)](uploading-files-cs/_static/image13.png)
+[![Since 쿼리 범주 테이블의 행을 반환 하는 선택 선택 된 레코드를 반환 합니다](uploading-files-cs/_static/image9.gif)](uploading-files-cs/_static/image13.png)
 
 **그림 9**: 쿼리는 행을 반환 하는 선택 선택 범주 테이블에서 레코드를 반환 하므로 ([클릭 하 여 큰 이미지 보기](uploading-files-cs/_static/image14.png))
 
@@ -177,7 +177,7 @@ TableAdapter에 대 한 임시 SQL 문을 사용 하는 경우 기본 쿼리에 
 마지막 단계는 새 메서드의 이름을 선택 합니다. 사용 하 여 `FillCategoryWithBinaryDataByCategoryID` 및 `GetCategoryWithBinaryDataByCategoryID` 채우기 돌아가 DataTable DataTable 패턴, 각각. 마법사를 완료 하려면 마침을 클릭 합니다.
 
 
-[![TableAdapter가의 메서드에 대 한 이름을 선택 합니다.](uploading-files-cs/_static/image10.gif)](uploading-files-cs/_static/image15.png)
+[![C설치할의 메서드 이름](uploading-files-cs/_static/image10.gif)](uploading-files-cs/_static/image15.png)
 
 **그림 10**: Tableadapter 메서드 이름 선택 ([클릭 하 여 큰 이미지 보기](uploading-files-cs/_static/image16.png))
 
@@ -212,7 +212,7 @@ ASP.NET 2.0 새로운 [FileUpload 웹 컨트롤](https://msdn.microsoft.com/libr
 파일 업로드를 보여 주기 위해 엽니다는 `FileUpload.aspx` 페이지에 `BinaryData` 폴더 디자이너 도구 상자에서 FileUpload 컨트롤을 끌어서 s control 설정 `ID` 속성을 `UploadTest`. 다음으로 설정 단추 웹 컨트롤을 추가 해당 `ID` 하 고 `Text` 속성을 `UploadButton` 각각 선택한 파일을 업로드 합니다. 마지막으로 지웁니다 단추 아래의 Label 웹 컨트롤을 배치할 해당 `Text` 속성 집합과 해당 `ID` 속성을 `UploadDetails`입니다.
 
 
-[![ASP.NET 페이지에 FileUpload 컨트롤을 추가 합니다.](uploading-files-cs/_static/image12.gif)](uploading-files-cs/_static/image17.png)
+[![Add는 FileUpload 컨트롤을 ASP.NET 페이지](uploading-files-cs/_static/image12.gif)](uploading-files-cs/_static/image17.png)
 
 **그림 12**: FileUpload 컨트롤을 ASP.NET 페이지 추가 ([클릭 하 여 큰 이미지 보기](uploading-files-cs/_static/image18.png))
 
@@ -220,7 +220,7 @@ ASP.NET 2.0 새로운 [FileUpload 웹 컨트롤](https://msdn.microsoft.com/libr
 그림 13에서는 브라우저를 통해 볼 때이 페이지를 보여 줍니다. 사용자가 자신의 컴퓨터에서 파일을 선택할 수 있도록 파일 선택 대화 상자, 표시 찾아보기 단추를 클릭 하는 참고 합니다. 파일 선택 되 면 웹 서버로 선택한 파일이 이진 콘텐츠를 전송 하는 포스트백을 발생 시키는 선택한 파일 업로드 단추를 클릭 합니다.
 
 
-[![사용자가 자신의 컴퓨터에서 서버로 업로드할 파일을 선택할 수 있습니다.](uploading-files-cs/_static/image13.gif)](uploading-files-cs/_static/image19.png)
+[![T서버에 해당 컴퓨터에서 업로드할 파일을 선택할 수 그 사용자](uploading-files-cs/_static/image13.gif)](uploading-files-cs/_static/image19.png)
 
 **그림 13**: 사용자가 컴퓨터를 서버에서 업로드할 파일을 선택할 수 ([클릭 하 여 큰 이미지 보기](uploading-files-cs/_static/image20.png))
 
@@ -241,7 +241,7 @@ S FileUpload `SaveAs(filePath)` 업로드 된 파일을에 저장 된 *filePath*
 완료 한 후의 `Click` 이벤트 처리기를 잠시 브라우저에서 페이지를 테스트 합니다. 찾아보기 단추를 클릭 하 고 하드 드라이브에서 파일을 선택 합니다. 선택한 파일 업로드 단추를 클릭 합니다. 그런 다음 저장 하기 전에 파일에 대 한 정보를 표시 하는 웹 서버에 포스트백 선택한 파일의 내용을 전송할는 `~/Brochures` 폴더입니다. 파일을 업로드 한 후 Visual Studio로 반환 하 고 솔루션 탐색기에서 새로 고침 단추를 클릭 합니다. ~/Brochures 폴더에서 방금 업로드 한 파일에 표시 됩니다.
 
 
-[![웹 서버에 업로드 된 파일 EvolutionValley.jpg](uploading-files-cs/_static/image14.gif)](uploading-files-cs/_static/image21.png)
+[![T그 파일 EvolutionValley.jpg에 업로드 된 웹 서버](uploading-files-cs/_static/image14.gif)](uploading-files-cs/_static/image21.png)
 
 **그림 14**: 파일 `EvolutionValley.jpg` 웹 서버에 업로드 된 ([큰 이미지를 보려면 클릭](uploading-files-cs/_static/image22.png))
 

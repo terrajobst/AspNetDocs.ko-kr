@@ -8,15 +8,15 @@ ms.date: 07/04/2012
 ms.assetid: 91ee29ee-0689-40ee-914a-e7dd733b6622
 msc.legacyurl: /web-api/overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-6
 msc.type: authoredcontent
-ms.openlocfilehash: 21cfbd0bf691ea033e9a5a873ab49c83507750d5
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: ced8c1cdab4839068dab7608a1a9746d5302af07
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425966"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379107"
 ---
-<a name="part-6-creating-product-and-order-controllers"></a>6부: 제품 및 주문 컨트롤러 만들기
-====================
+# <a name="part-6-creating-product-and-order-controllers"></a>6부: 제품 및 주문 컨트롤러 만들기
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 [완료 된 프로젝트 다운로드](http://code.msdn.microsoft.com/ASP-NET-Web-API-with-afa30545)

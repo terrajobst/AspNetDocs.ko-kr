@@ -8,15 +8,15 @@ ms.date: 12/18/2009
 ms.assetid: 2ab9d1eb-25b7-4bb6-b334-b83e45e9fcbb
 msc.legacyurl: /web-forms/videos/aspnet-ajax/how-do-i-use-aspnet-ajax-client-templates
 msc.type: video
-ms.openlocfilehash: 4087364bfd65e4d60bd0490126457edbde52845e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8d9079d75f20bc85a5b4babfb45dfdfcff696a50
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57024740"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380498"
 ---
-<a name="how-do-i-use-aspnet-ajax-client-templates"></a>어떻게 할까요 ASP.NET AJAX 클라이언트 템플릿 사용
-====================
+# <a name="how-do-i-use-aspnet-ajax-client-templates"></a>어떻게 할까요 ASP.NET AJAX 클라이언트 템플릿 사용
+
 [Rob Windsor](https://twitter.com/robwindsor)
 
 AJAX 상호 작용을 빌드, 비동기적으로 서비스 호출 및 결과 데이터를 사용 하 여 페이지를 업데이트 하는 데 참여할는 두 가지 주요 단계가 있습니다. ASP.NET AJAX가 항상 첫 번째 부분은 쉽게 했지만, 두 번째에 대 한 많은 지원을 제공 되지 않았습니다. 이 문제를 해결 하기 위해 Microsoft는 클라이언트 쪽 템플릿과 데이터 바인딩에 추가 하 고이 비디오에서는 Rob windsor가 AJAX 응용 프로그램에서 이러한 새 기능을 사용 하는 방법.

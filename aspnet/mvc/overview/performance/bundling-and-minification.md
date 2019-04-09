@@ -8,15 +8,15 @@ ms.date: 08/23/2012
 ms.assetid: 5894dc13-5d45-4dad-8096-136499120f1d
 msc.legacyurl: /mvc/overview/performance/bundling-and-minification
 msc.type: authoredcontent
-ms.openlocfilehash: 9b627a66007aec09a404147698e2bef06c7e7794
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 9e4a2a9fc56393ac816f25a1039b233aa8961608
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57053190"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59383839"
 ---
-<a name="bundling-and-minification"></a>묶음 및 축소
-====================
+# <a name="bundling-and-minification"></a>묶음 및 축소
+
 [Rick Anderson]((https://twitter.com/RickAndMSFT))
 
 > 묶음 및 축소는 두 가지 기술을 요청 로드 시간을 개선 하기 위해 ASP.NET 4.5에서 사용할 수 있습니다. 묶음 및 축소 서버 요청의 수를 줄이고 요청 된 자산 (예: CSS 및 JavaScript)의 크기를 줄이면 하 여 로드 시간 개선
@@ -52,7 +52,7 @@ ms.locfileid: "57053190"
 
 주석 및 불필요 한 공백을 제거 하는 것 외에도 다음 매개 변수 및 변수 이름을 바뀌었습니다 (단축) 다음과 같이 합니다.
 
-| **원문 언어** | **이름이** |
+| **원래 색** | **변경된 이름** |
 | --- | --- |
 | imageTagAndImageID | n |
 | imageContext | t |
@@ -62,10 +62,10 @@ ms.locfileid: "57053190"
 
 다음 표에서 모든 자산을 개별적으로 나열 하 고 샘플 프로그램의 묶음 및 축소 (B/M)를 사용 하 여 간의 몇 가지 중요 한 차이점을 보여 줍니다.
 
-|  | **B/M을 사용 하 여** | **B/M 없이** | **Change** |
+|  | **B/M을 사용 하 여** | **B/M 없이** | **변화** |
 | --- | --- | --- | --- |
 | **파일 요청** | 10 | 34 | 256% |
-| **KB Sent** | 3.26 | 11.92 | 266% |
+| **전송 (kb)** | 3.26 | 11.92 | 266% |
 | **수신 (kb)** | 388.51 | 530 | 36% |
 | **로드 시간** | 510 MS | 780 MS | 53% |
 
@@ -165,7 +165,7 @@ F12 개발자 도구를 사용 하 여 디버깅 하는 방법은 MSDN 문서를
 
 다음 표에서 같이 와일드 카드를 사용 하 여 번들에 추가 된 파일을 보여 줍니다.
 
-| **Call** | **추가 된 파일 또는 예외 발생** |
+| **호출** | **추가 된 파일 또는 예외 발생** |
 | --- | --- |
 | Include("~/Scripts/Common/\*.js") | *AddAltToImg.js*, *ToggleDiv.js*, *ToggleImg.js* |
 | Include("~/Scripts/Common/T\*.js") | 잘못 된 패턴 예외입니다. 와일드 카드 문자 접두사 또는 접미사에만 허용 됩니다. |

@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 634ea84b-f904-4afe-b71b-49cccef4d9cc
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-models-and-data-access
 msc.type: authoredcontent
-ms.openlocfilehash: 10c2f6379f6d3139dd3bcf1027ff456e074298c3
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 53ca3bc4e550f488f3ae4c41f02a636e747107cb
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425095"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59384892"
 ---
 # <a name="aspnet-mvc-4-models-and-data-access"></a>ASP.NET MVC 4 모델 및 데이터 액세스
 
@@ -74,7 +74,7 @@ Code First 접근 방식 사용 하면 프레임 워크와 함께 일반적으�
 
 이 문서의 부록 참조할 수 있습니다 사용 하는 방법을 알아보려면 원하는 고 Visual Studio 코드 조각을 사용 하 여 잘 모르는 경우 &quot; [부록 c: 코드 조각을 사용 하 여](#AppendixC)&quot;합니다.
 
-* * *
+---
 
 <a id="Exercises"></a>
 
@@ -481,7 +481,7 @@ Code First 접근 방식 사용 하면 프레임 워크와 함께 일반적으�
 
     ![장르별 검색](aspnet-mvc-4-models-and-data-access/_static/image24.png "장르별 검색")
 
-    *Browsing /Store/Browse?genre=Pop*
+    *검색/저장소/찾아보기? 장르 Pop =*
 
 <a id="Ex3Task3"></a>
 
@@ -514,7 +514,7 @@ Code First 접근 방식 사용 하면 프레임 워크와 함께 일반적으�
 > [!NOTE]
 > 또한 다음 Windows Azure 웹 사이트에이 응용 프로그램을 배포할 수 [부록 b: 웹 배포를 사용 하 여 ASP.NET MVC 4 응용 프로그램 게시](#AppendixB)합니다.
 
-* * *
+---
 
 <a id="Summary"></a>
 

@@ -8,15 +8,15 @@ ms.date: 11/11/2011
 ms.assetid: afd41278-b4c5-43ee-9845-2b665932dcff
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/accordion
 msc.type: chapter
-ms.openlocfilehash: 86e1e368165d40b8d0fc1e2c24dde862c1691822
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: fc382829334b9b55a86cd4556f43575c36874a92
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57020550"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59378373"
 ---
-<a name="accordion"></a>Accordion
-====================
+# <a name="accordion"></a>Accordion
+
 > 이 자습서에는 여러 개의 창이 포함 되며 둘 중 한 번에 표시할 수 있도록 Accordion 컨트롤을 사용 하는 방법을 보여 줍니다.
 
 

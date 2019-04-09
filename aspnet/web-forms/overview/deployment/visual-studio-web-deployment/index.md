@@ -8,15 +8,15 @@ ms.date: 02/15/2013
 ms.assetid: e733027a-525f-47ae-b1c0-2e5ecf6677aa
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment
 msc.type: chapter
-ms.openlocfilehash: a91de204f821cd8301485330518170e458f5da4d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3d8a6a102788cb6b5612e9bc537e1c13e7798c54
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57024250"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59378938"
 ---
-<a name="aspnet-web-deployment-using-visual-studio"></a>Visual Studio를 사용하여 ASP.NET 웹 배포
-====================
+# <a name="aspnet-web-deployment-using-visual-studio"></a>Visual Studio를 사용하여 ASP.NET 웹 배포
+
 > 이 자습서 시리즈에서는 SQL Server (없습니다 SQL Server Compact) 사용할 수 있는 인터넷을 통해 타사 호스팅 공급자 또는 Windows Azure 웹 사이트에 배포 하 여 ASP.NET 웹 응용 프로그램을 확인 하는 방법을 보여 줍니다. Visual Studio 2012 및 ASP.NET 및 Web Tools 2012.2 업데이트 또는 Visual Studio 2010에 필요합니다. SQL Server Compact에 대 한 사용 되는 정보를 참조 하세요 [SQL Server Compact Visual Studio를 사용 하 여를 사용 하 여 ASP.NET 웹 배포](../../older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-introduction-1-of-12.md)합니다.
 
 

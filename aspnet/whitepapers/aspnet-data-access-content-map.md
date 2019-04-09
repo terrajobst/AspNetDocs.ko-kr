@@ -8,15 +8,15 @@ ms.date: 07/25/2013
 ms.assetid: f8157be1-4ab9-469e-ad3a-0ccc80b56c00
 msc.legacyurl: /whitepapers/aspnet-data-access-content-map
 msc.type: content
-ms.openlocfilehash: 6993c17c8de890cbaa40c619bcd20f494bfd2f90
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d120c184f6cf7dd0db075bbfac17214d7467664a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046690"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59383722"
 ---
-<a name="aspnet-data-access---recommended-resources"></a>ASP.NET 데이터 액세스 - 권장 리소스
-====================
+# <a name="aspnet-data-access---recommended-resources"></a>ASP.NET 데이터 액세스 - 권장 리소스
+
 > 이 항목에서는 Entity Framework 및 SQL Server를 사용 하 여 기본적으로 ASP.NET 웹 응용 프로그램에서 데이터에 액세스 하는 방법에 대 한 설명서 리소스에 대 한 링크를 제공 합니다.
 > 
 > 훌륭한 블로그 게시물을 알고 있는 경우 [stackoverflow](http://stackoverflow.com) 스레드나 다른 것이 유용한 링크 [메일을 보내세요](mailto:aspnetue@microsoft.com?subject=Data Access Content Map) 링크를 사용 하 여 합니다.

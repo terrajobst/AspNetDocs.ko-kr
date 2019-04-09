@@ -8,15 +8,15 @@ ms.date: 02/21/2014
 ms.assetid: 5fa1daf9-1161-4cfa-bd4c-658f48b2c229
 msc.legacyurl: /web-forms/what-is-web-forms
 msc.type: content
-ms.openlocfilehash: e135cfa2945b9e7e5269eb436ff0c1dff20aacdf
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: cb7a4ff9dbf746c0729129445042e53e506df5d2
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57039070"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59385737"
 ---
-<a name="what-is-web-forms"></a>Web Forms 란
-====================
+# <a name="what-is-web-forms"></a>Web Forms 란
+
 ASP.NET Web Forms은 ASP.NET 웹 응용 프로그램 프레임 워크의 일부 이며 포함 된 [Visual Studio](https://www.asp.net/downloads)합니다. ASP.NET 웹 응용 프로그램을 만드는 데 사용할 수 있는 네 가지 프로그래밍 모델 중 하나인, 나머지는 ASP.NET MVC, ASP.NET Web Pages 및 ASP.NET 단일 페이지 응용 프로그램입니다.
 
 Web Forms는 사용자가 브라우저를 사용 하 여 요청 하는 페이지입니다. HTML 조합 하 여 이러한 페이지를 작성할 수 있습니다 클라이언트 스크립트, 서버 컨트롤 및 서버 코드입니다. 사용자가 페이지 요청을 컴파일 및 프레임 워크에 의해 서버에서 실행 및 프레임 워크는 브라우저에서 렌더링할 수 있는 HTML 태그를 생성 하는 다음입니다. ASP.NET Web Forms 페이지를 브라우저 또는 클라이언트 장치에서 사용자에 게 정보를 제공 합니다.

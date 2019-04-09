@@ -8,15 +8,15 @@ ms.date: 02/20/2005
 ms.assetid: 9c0cce4d-efd9-4c14-b0e8-a1a140abb3f4
 msc.legacyurl: /web-forms/overview/moving-to-aspnet-20/master-pages
 msc.type: authoredcontent
-ms.openlocfilehash: 644beb37bf893a590be03dd0929c5870af6fbe87
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 348e28778e0e7d96230534df1d61386ed39f8f11
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425771"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381148"
 ---
-<a name="master-pages"></a>마스터 페이지
-====================
+# <a name="master-pages"></a>마스터 페이지
+
 by [Microsoft](https://github.com/microsoft)
 
 > 성공적인 웹 사이트에 대 한 주요 구성 요소 중 하나는 일관 된 모양과 느낌입니다. Asp.net에서 1.x에서 개발자는 웹 응용 프로그램에서 일반적인 페이지 요소를 복제할 사용자 정의 컨트롤을 사용 합니다. 확실히 작동 가능한 솔루션을 사용 되 고 있지만, 사용자 컨트롤을 사용 하는 몇 가지 단점이 있습니다. 예를 들어, 사용자 정의 컨트롤의 위치 변경 사이트 전체에서 여러 페이지에 대 한 변경에 필요합니다. 사용자 정의 컨트롤은 또한 페이지에 삽입 한 후 디자인 보기에서 렌더링 되지 않습니다.
@@ -71,7 +71,7 @@ ASP.NET 2.0에서 마스터 페이지에서 보기 좋게 사항은 모두 이�
 **그림 2**: 새 마스터 페이지 만들기
 
 
-마스터 페이지의 파일 확장명은 되었다는 <em>.master</em>합니다. 일반 페이지에서 마스터 페이지와 다른 방법 중 하나입니다. 대신 프로시저의 다른 주요 차이점은는 @Page 마스터 페이지 지시문을 포함을 @Master 지시문입니다. 방금 만든 및 코드 검토 페이지 마스터에 대 한 소스 보기로 전환 합니다.
+마스터 페이지의 파일 확장명은 되었다는 *.master*합니다. 일반 페이지에서 마스터 페이지와 다른 방법 중 하나입니다. 대신 프로시저의 다른 주요 차이점은는 @Page 마스터 페이지 지시문을 포함을 @Master 지시문입니다. 방금 만든 및 코드 검토 페이지 마스터에 대 한 소스 보기로 전환 합니다.
 
 새 마스터 페이지를 기본적으로 각각의 ContentPlaceHolder 컨트롤로 하나를 사용 해야 합니다. 대부분의 경우에서 것이 더 좋은 일반적인 페이지 요소를 먼저 만들고 contentplaceholder를 삽입 한 다음 사용자 지정 내용이 필요한 곳입니다. 이러한 경우 개발자가 기본 ContentPlaceHolder 컨트롤을 삭제 하 여 페이지 개발은 새로 삽입 합니다. ContentPlaceHolder 컨트롤은 크기 조정 핸들을 표시지 않습니다 팩트 불구 하 고 크기를 조정할 수 없습니다. 한 가지 예외로; 포함 된 내용에 따라 자동으로 ContentPlaceHolder 컨트롤 크기 블록 요소 안에 각각의 ContentPlaceHolder 컨트롤로 같은 표 셀에 배치 하면 요소의 크기에 따라 크기 조정 됩니다.
 
@@ -154,7 +154,7 @@ MasterPageFile 특성을 사용 하면 쉽게 특정 ASP.NET 페이지에 마스
 
 ## <a name="using-the-ltpagesgt-element"></a>사용 하 여 &lt;페이지&gt; 요소
 
-MasterPageFile 특성을 설정 하 여 페이지의 마스터 페이지를 구성할 수 있습니다 합니다 &lt;페이지&gt; web.config 파일의 요소입니다. 이 메서드를 사용 하면 응용 프로그램 구조에서 하위 web.config 파일에이 설정을 재정의할 수는 염두에서에 둡니다. 설정 MasterPageFile 특성을 @Page 지시문은이 설정을 재정의할 수도 있습니다. 사용 하는 &lt;페이지&gt; 요소를 사용 하면 간단 하 게 만들를 <em>마스터</em> 특정 폴더 또는 파일에서 필요한 경우 재정의할 수 있는 마스터 페이지입니다.
+MasterPageFile 특성을 설정 하 여 페이지의 마스터 페이지를 구성할 수 있습니다 합니다 &lt;페이지&gt; web.config 파일의 요소입니다. 이 메서드를 사용 하면 응용 프로그램 구조에서 하위 web.config 파일에이 설정을 재정의할 수는 염두에서에 둡니다. 설정 MasterPageFile 특성을 @Page 지시문은이 설정을 재정의할 수도 있습니다. 사용 하는 &lt;페이지&gt; 요소를 사용 하면 간단 하 게 만들를 *마스터* 특정 폴더 또는 파일에서 필요한 경우 재정의할 수 있는 마스터 페이지입니다.
 
 ## <a name="properties-in-master-pages"></a>마스터 페이지의 속성
 

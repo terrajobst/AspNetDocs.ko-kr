@@ -8,15 +8,15 @@ ms.date: 01/16/2006
 ms.assetid: 77526e53-524b-4cae-9025-3e493f2895d0
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-learn-the-tips-and-tricks-of-experts
 msc.type: video
-ms.openlocfilehash: f465bc243e01a8a35c3f31237a339803063f9877
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a4988acd4bfd2835d8e1cef61916b59ec6481a7e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57050170"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59382851"
 ---
-<a name="how-do-i-learn-the-tips-and-tricks-of-experts"></a>[어떻게 할까요?] 팁과 트릭 전문가 배우기
-====================
+# <a name="how-do-i-learn-the-tips-and-tricks-of-experts"></a>[어떻게 할까요?] 팁과 트릭 전문가 배우기
+
 by [Microsoft](https://github.com/microsoft)
 
 팁과 요령 URL 재매핑을 등을 사용 하 여 복잡 한 Url 단순화 하는 다른 페이지에 콘텐츠 게시 web.config 파일에 저장 된 중요 한 정보를 암호화 하는 등 훨씬 더 보기

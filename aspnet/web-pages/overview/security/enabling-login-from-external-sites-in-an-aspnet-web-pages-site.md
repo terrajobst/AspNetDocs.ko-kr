@@ -8,15 +8,15 @@ ms.date: 02/21/2014
 ms.assetid: ef852096-a5bf-47b3-9945-125cde065093
 msc.legacyurl: /web-pages/overview/security/enabling-login-from-external-sites-in-an-aspnet-web-pages-site
 msc.type: authoredcontent
-ms.openlocfilehash: 188a9203ba7b04f5a88d0f802f1a05bf35d58d8c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a93835e685716b3be59023b9f84a006e38f48e89
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57045660"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380455"
 ---
-<a name="logging-in-using-external-sites-in-an-aspnet-web-pages-razor-site"></a>외부 사이트를 사용 하 여 ASP.NET 웹 페이지 (Razor) 사이트에 로그인
-====================
+# <a name="logging-in-using-external-sites-in-an-aspnet-web-pages-razor-site"></a>외부 사이트를 사용 하 여 ASP.NET 웹 페이지 (Razor) 사이트에 로그인
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 문서에서는 Facebook, Google, Twitter, Yahoo 및 다른 사이트를 사용 하 여 ASP.NET Web Pages (Razor) 사이트에 로그인 하는 방법에 설명-즉, OAuth 및 OpenID 사이트에서 지 원하는 방법입니다.

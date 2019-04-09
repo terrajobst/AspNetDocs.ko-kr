@@ -8,15 +8,15 @@ ms.date: 05/22/2008
 ms.assetid: e8b41eed-5423-43d1-a54b-62f04bff371e
 msc.legacyurl: /web-forms/videos/aspnet-35/how-do-i/how-do-i-serialize-a-graph-with-the-entity-framework
 msc.type: video
-ms.openlocfilehash: 6aef8c9d466bbf7e8e5a3863780272ab9779dfe4
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7dd5e8908c0601306e45d2fb32db265a35a411c7
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57064980"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59378093"
 ---
-<a name="how-do-i-serialize-a-graph-with-the-entity-framework"></a>[어떻게 할까요?] Entity Framework 사용 하 여 그래프를 serialize 합니다.
-====================
+# <a name="how-do-i-serialize-a-graph-with-the-entity-framework"></a>[어떻게 할까요?] Entity Framework 사용 하 여 그래프를 serialize 합니다.
+
 [Brian Dawson](https://twitter.com/briandawson)
 
 이 소개 비디오 Brian Dawson 안내해 ADO.NET Entity Framework를 사용 하 여 ASP.NET 응용 프로그램을 개발 하는 경우 그래프를 serialize 하는 방법입니다.

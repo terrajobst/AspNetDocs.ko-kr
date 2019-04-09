@@ -8,15 +8,15 @@ ms.date: 07/21/2010
 ms.assetid: 4fab47d5-a6ec-4fdc-91f0-651a093a24b9
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-4
 msc.type: authoredcontent
-ms.openlocfilehash: ca7eccd684473d9a1ec4a8adfd8690b291fe702f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 63afd25e2ccf22d3c7ae5c5048c80a8cf060d4cf
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57043270"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59382825"
 ---
-<a name="part-4-listing-products"></a>4부: 제품 나열
-====================
+# <a name="part-4-listing-products"></a>4부: 제품 나열
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 > Tailspin Spyworks.NET 플랫폼에 대 한 강력 하 고 확장 가능한 응용 프로그램을 생성 하는 방법을 매우 단순 하는 방법을 보여 줍니다. 해제 쇼핑, 체크 아웃 및 관리를 포함 하는 온라인 상점을 만들려고 ASP.NET 4에서 강력한 새 기능을 사용 하는 방법을 보여 줍니다.
@@ -50,7 +50,7 @@ ms.locfileid: "57043270"
 
 이렇게 하려면 자동 생성 EntityDataSource WHERE 절에 대해 알아봅니다 및 WhereParameter를 지정 합니다.
 
-이 "제품 범주 메뉴에서 메뉴 항목을 만들었을 때 동적으로 구축한 링크는 CatagoryID 각 링크에 대 한 QueryString을 추가 하 여 설명한 내용을 기억하실 겁니다. 위치 매개 변수는 쿼리 문자열 매개 변수에서 파생 엔터티 데이터 소스를 알려줍니다.
+이 "제품 범주 메뉴에서 메뉴 항목을 만들었을 때 동적으로 구축한 링크 CategoryID 각 링크에 대 한 QueryString을 추가 하 여 설명한 내용을 기억하실 겁니다. 위치 매개 변수는 쿼리 문자열 매개 변수에서 파생 엔터티 데이터 소스를 알려줍니다.
 
 [!code-aspx[Main](tailspin-spyworks-part-4/samples/sample1.aspx)]
 
@@ -79,7 +79,7 @@ ListView 컨트롤 인스턴스에 대 한 태그는 다음과 같습니다.
 
 ![](tailspin-spyworks-part-4/_static/image6.jpg)
 
-이제 ProductDetials.apsx 페이지 및 AddToCart 기능을 구현 해야 합니다.
+이제 ProductDetails.aspx 페이지 및 AddToCart 기능을 구현 해야 합니다.
 
 사용 하 여 파일-&gt;새 페이지 이름을 ProductDetails.aspx 이전에 수행한 것 처럼 사이트 마스터 페이지를 사용 하 여 만들 수 있습니다.
 
@@ -93,7 +93,7 @@ ListView 컨트롤 인스턴스에 대 한 태그는 다음과 같습니다.
 
 이름을 ShoppingCart.aspx 선택 하지 않습니다 것을 참고 합니다.
 
-데이터베이스 "ShoppingCart" 라는 테이블을 포함 합니다. 엔터티 데이터 모델을 생성할 때 데이터베이스의 각 테이블에 대 한 클래스를 만들었습니다. 따라서 엔터티 데이터 모델 "ShoppingCart" 라는 엔터티 클래스가 생성 됩니다. 하지만 대신 않고 단순히 충돌을 방지 하는 이름 선택 하려면 쇼핑 카트 구현에 해당 이름을 사용할 수 없습니다 하거나, 요구 사항에 대 한 확장 모델을 편집할 수 없습니다.
+데이터베이스 "ShoppingCart" 라는 테이블을 포함 합니다. 엔터티 데이터 모델을 생성할 때 데이터베이스의 각 테이블에 대 한 클래스를 만들었습니다. 따라서 엔터티 데이터 모델 "ShoppingCart" 라는 엔터티 클래스가 생성 됩니다. 하지만 대신 않고 충돌을 방지 하는 이름을 선택할 수 없습니다 쇼핑 카트 구현에 대 한 이름을 사용 하거나, 요구 사항에 대 한 확장 되도록 모델을 편집할 수 없습니다.
 
 쇼핑 카트 표시를 사용 하 여 쇼핑 카트 논리를 포함 하는 우리가 만들 간단한 쇼핑 카트 주목할 만한 이기도 합니다. 우리는 완전히 별개의 비즈니스 계층에서 당사의 쇼핑 카트를 구현 하는 선택할 수도 있습니다.
 

@@ -8,15 +8,15 @@ ms.date: 07/30/2013
 ms.assetid: f81f3d80-3674-4d8e-a9b1-87feed1a93c9
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/creating-a-more-complex-data-model-for-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: cfb01742c3921c24c71fd3fa4a14a9f71fac1ac1
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 15bdaa588792c3cf4a8e6eee651e0675f959f942
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57063680"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59382238"
 ---
-<a name="creating-a-more-complex-data-model-for-an-aspnet-mvc-application-4-of-10"></a>(4 / 10) ASP.NET MVC 응용 프로그램을 위한 더 복잡 한 데이터 모델 만들기
-====================
+# <a name="creating-a-more-complex-data-model-for-an-aspnet-mvc-application-4-of-10"></a>(4 / 10) ASP.NET MVC 응용 프로그램을 위한 더 복잡 한 데이터 모델 만들기
+
 [Tom Dykstra](https://github.com/tdykstra)
 
 [완료 된 프로젝트 다운로드](http://code.msdn.microsoft.com/Getting-Started-with-dd0e2ed8)
@@ -48,7 +48,7 @@ ms.locfileid: "57063680"
 
 합니다 [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) 특성은 데이터베이스 내장 형식 보다 구체적인 데이터 형식을 지정 하는 데 사용 됩니다. 이 경우에는 날짜 및 시간이 아닌 날짜만 추적하고자 합니다. 합니다 [DataType 열거형](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) 와 같은 많은 데이터 형식을 제공 *날짜 "," 시간 "," PhoneNumber "," 통화 "," EmailAddress* 등입니다. `DataType` 특성을 통해 응용 프로그램에서 자동으로 유형별 기능을 제공하도록 설정할 수도 있습니다. 예를 들어, 한 `mailto:` 에 대 한 링크를 만들 수 있습니다 [DataType.EmailAddress](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx), 및 날짜 선택 기가 제공 될 수 있습니다 [DataType.Date](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) 지 원하는 브라우저에서 [HTML5](http://html5.org/). [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) 특성에는 HTML 5 내보냅니다 [데이터](http://ejohn.org/blog/html-5-data-attributes/) (발음 *데이터 대시로*) HTML 5 브라우저가 인식할 수 있는 특성입니다. 합니다 [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) 특성 유효성 검사를 제공 하지 않습니다.
 
-`DataType.Date`는 표시되는 날짜의 서식을 지정하지 않습니다. 기본적으로 데이터 필드는 서버의 기본 형식에 따라 표시 됩니다 [CultureInfo](https://msdn.microsoft.com/library/vstudio/system.globalization.cultureinfo(v=vs.110).aspx)합니다.
+`DataType.Date` 표시 되는 날짜의 형식을 지정 하지 않습니다. 기본적으로 데이터 필드는 서버의 기본 형식에 따라 표시 됩니다 [CultureInfo](https://msdn.microsoft.com/library/vstudio/system.globalization.cultureinfo(v=vs.110).aspx)합니다.
 
 `DisplayFormat` 특성은 날짜 형식을 명시적으로 지정하는 데 사용됩니다.
 
@@ -152,7 +152,7 @@ Instructor 클래스를 다음과 같이 작성할 수도 수 있도록 한 줄�
 
 ### <a name="the-fullname-calculated-property"></a>FullName 계산 속성
 
-`FullName`은 다른 두 개의 속성을 연결하여 생성되는 값을 반환하는 계산된 속성입니다. 만 있는 따라서를 `get` 접근자와 아니요 `FullName` 데이터베이스에 열이 생성 됩니다.
+`FullName` 다른 두 개의 속성을 연결 하 여 만든 값을 반환 하는 계산 된 속성이입니다. 만 있는 따라서를 `get` 접근자와 아니요 `FullName` 데이터베이스에 열이 생성 됩니다.
 
 [!code-csharp[Main](creating-a-more-complex-data-model-for-an-asp-net-mvc-application/samples/sample11.cs)]
 
@@ -358,7 +358,7 @@ PMC에서 다음을 입력 합니다 `add-migration` 명령:
 
 이 시점에서 데이터베이스를 업데이트 하려고 하면 다음 오류가 표시 됩니다.
 
-*ALTER TABLE 문이 FOREIGN KEY 제약 조건 충돌 "FK\_dbo입니다. 과정\_dbo입니다. 부서\_DepartmentID "입니다. 데이터베이스 "ContosoUniversity", "dbo 테이블에서에서 충돌이 발생 했습니다. 부서 ", 열 'DepartmentID'입니다.*
+*ALTER TABLE 문이 FOREIGN KEY 제약 조건 충돌 "FK\_dbo입니다. 과정\_dbo입니다. 부서\_DepartmentID "입니다. 데이터베이스 “ContosoUniversity”, 테이블 “dbo.Department”, 열 ‘DepartmentID’에서 충돌이 발생합니다.*
 
 편집 된 &lt; *타임 스탬프&gt;\_Chap4.cs* 파일을 선택한 다음 코드를 변경 (SQL 문을 추가 하 고 수정는 `AddColumn` 문):
 
@@ -377,7 +377,7 @@ PMC에서 다음을 입력 합니다 `add-migration` 명령:
 > 
 > [!code-xml[Main](creating-a-more-complex-data-model-for-an-asp-net-mvc-application/samples/sample35.xml?highlight=1-2)]
 > 
->  새 데이터베이스에 데이터가 없습니다. 마이그레이션할 및 `update-database` 명령은 오류 없이 완료 될 가능성이 훨씬 더 높습니다. 데이터베이스를 삭제 하는 방법에 지침은 [Visual Studio 2012에서 데이터베이스를 삭제 하는 방법](http://romiller.com/2013/05/17/how-to-drop-a-database-from-visual-studio-2012/)합니다.
+> 새 데이터베이스에 데이터가 없습니다. 마이그레이션할 및 `update-database` 명령은 오류 없이 완료 될 가능성이 훨씬 더 높습니다. 데이터베이스를 삭제 하는 방법에 지침은 [Visual Studio 2012에서 데이터베이스를 삭제 하는 방법](http://romiller.com/2013/05/17/how-to-drop-a-database-from-visual-studio-2012/)합니다.
 
 
 데이터베이스를 엽니다 **서버 탐색기** 을 이전 하 고 확장 합니다 **테이블** 모든 테이블이 만들어졌는지 확인 하려면 노드. (아직 있는 경우 **서버 탐색기** 이전 시점에서 열기를 클릭 합니다 **새로 고침** 단추입니다.)

@@ -8,15 +8,15 @@ ms.date: 11/06/2008
 ms.assetid: c02ffd50-aa19-4cdc-b1bf-760989979a61
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-implement-error-handling-when-sending-email-with-aspnet
 msc.type: video
-ms.openlocfilehash: 6708a0a22e621d08301fb4228ec6c6e5f599d57a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: faa0daa2ffe71e58cd18bb8bed4e476ffcb1852e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57060760"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379055"
 ---
-<a name="how-do-i-implement-error-handling-when-sending-email-with-aspnet"></a>[어떻게 할까요?] ASP.NET 사용 하 여 전자 메일을 보낼 때 오류 처리를 구현 합니다.
-====================
+# <a name="how-do-i-implement-error-handling-when-sending-email-with-aspnet"></a>[어떻게 할까요?] ASP.NET 사용 하 여 전자 메일을 보낼 때 오류 처리를 구현 합니다.
+
 [Chris Pels](https://twitter.com/chrispels)
 
 Chris Pels ASP.NET 사용 하 여 전자 메일을 전송 하는 경우 오류 처리를 구현 하는 방법을 보여 줍니다. 그는 전자 메일을 보내는 ASP.NET 웹 페이지를 생성, 구성 하는 방법을 보여 줍니다 &lt;mailSettings&gt; web.config 파일에서 System.Net.Mail 클래스 및 만들고 전자 메일 메시지를 전송 하는 방법을 설명 합니다. 그 다음 SmtpStatusCode 열거형을 사용 하 여 전자 메일을 보낼 때 가능한 결과의 목록을 제공 하는 검토 및 전자 메일을 보낼 때 발생할 수 있는 오류에 대 한 정보를 제공 하는 System.Net.Mail 예외 클래스를 사용 하 여 오류 처리를 추가 합니다 SmtpClient 합니다. 마지막으로, 예외가 발생 하 고 Visual Studio 디버거에서 정보를 처리 하는 오류를 검토 하는 테스트 전자 메일을 보냅니다.

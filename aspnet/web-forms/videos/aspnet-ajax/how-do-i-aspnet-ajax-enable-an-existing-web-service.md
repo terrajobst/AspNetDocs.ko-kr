@@ -8,15 +8,15 @@ ms.date: 01/26/2007
 ms.assetid: 15a8d767-a99e-4459-8466-7746b5f29362
 msc.legacyurl: /web-forms/videos/aspnet-ajax/how-do-i-aspnet-ajax-enable-an-existing-web-service
 msc.type: video
-ms.openlocfilehash: b17013fd2393756e62e36b74a3bbbb202d754d32
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3d4a6008ca8668b18599ccbff625df33f9ce7504
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57063530"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379133"
 ---
-<a name="how-do-i-aspnet-ajax-enable-an-existing-web-service"></a>[어떻게 할까요?] 기존 웹 서비스를 사용 하는 ASP.NET AJAX 시겠습니까?
-====================
+# <a name="how-do-i-aspnet-ajax-enable-an-existing-web-service"></a>[어떻게 할까요?] 기존 웹 서비스를 사용 하는 ASP.NET AJAX 시겠습니까?
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 이 비디오 간단 하 게 기존 ASP.NET 웹 서비스에 Microsoft ASP.NET AJAX 기능을 추가 하는 방법을 보여 줍니다. 이렇게 하면 웹 서비스를 클라이언트 브라우저는 웹 서비스를 호출 하는 데 사용할 수 있는 JavaScript 프록시를 생성할 수 있습니다.

@@ -8,15 +8,15 @@ ms.date: 01/13/2011
 ms.assetid: b558e481-775a-4aa0-bd3b-ad61e530c2d2
 msc.legacyurl: /web-pages/content-guide
 msc.type: content
-ms.openlocfilehash: e5c2edcceeda977919c1212719786630e7bb8a4f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5e410ac0c6d3430c00e171775d842ee30eeab021
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57028940"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59383170"
 ---
-<a name="webmatrix-content-guide"></a>WebMatrix 콘텐츠 가이드
-====================
+# <a name="webmatrix-content-guide"></a>WebMatrix 콘텐츠 가이드
+
 
 > [!NOTE] 
 > WebMatrix는 더 이상 권장 통합된 개발 환경으로 ASP.NET 웹 페이지에 대 한 합니다. 사용 하 여 [Visual Studio](xref:aspnet/web-pages/overview/getting-started/program-asp-net-web-pages-in-visual-studio) 하거나 [Visual Studio Code](https://code.visualstudio.com/)합니다.
@@ -50,7 +50,7 @@ WebMatrix는 Microsoft Windows에 대 한 웹 사이트를 구축 하는 쉬운 
 
 ## <a name="additional-resources"></a>추가 리소스
 
-**Read**
+**읽기**
 
 - [WebMatrix 용 Microsoft 웹 캠프 교육 키트](http://trainingkit.webcamps.ms/WebMatrix.htm)
 - [버그 또는 제안 사항 제출](https://go.microsoft.com/fwlink/?LinkId=195940)

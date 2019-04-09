@@ -8,15 +8,15 @@ ms.date: 11/04/2011
 ms.assetid: ac5fcd71-317a-41ba-91ac-95121fc68126
 msc.legacyurl: /web-forms/overview/older-versions-security/introduction
 msc.type: chapter
-ms.openlocfilehash: 9c75c62ab5276a193bf0c9d998ce3b877f9c06ff
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: cf64b3c939245d196be3c73309b9ed621581043e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57022770"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59385672"
 ---
-<a name="aspnet-35---introduction-to-security"></a>ASP.NET 3.5 - 보안 소개
-====================
+# <a name="aspnet-35---introduction-to-security"></a>ASP.NET 3.5 - 보안 소개
+
 > 이 시리즈의 자습서에서는 ASP.NET 응용 프로그램의 개별 페이지에 액세스 하는 로그인 폼 (폼 인증)를 사용 하 고 권한을 부여할 사용자를 인증 하는 기술을 살펴봅니다.
 
 

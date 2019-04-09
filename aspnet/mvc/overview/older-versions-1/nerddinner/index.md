@@ -8,15 +8,15 @@ ms.date: 09/28/2011
 ms.assetid: 6edfe14c-415a-4281-b6fa-69e9b38a82c8
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner
 msc.type: chapter
-ms.openlocfilehash: 39a7f1b44ffe33b27097a53a8e5c1f47ea1cdd73
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 263ffc1ab815c1f7d6c1ee008f4fbe61316b7231
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57022880"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380745"
 ---
-<a name="nerddinner"></a>NerdDinner
-====================
+# <a name="nerddinner"></a>NerdDinner
+
 > ASP.NET MVC 1을 사용 하 여 NerdDinner.com 웹 사이트를 빌드하는 방법. ASP.NET MVC 버전을 참조 하세요 [GitHub에서 NerdDinner](https://github.com/AspNetMVPSamples/NerdDinner)합니다.
 
 
@@ -32,5 +32,5 @@ ms.locfileid: "57022880"
 - [인증 및 권한 부여를 사용하여 애플리케이션 보호](secure-applications-using-authentication-and-authorization.md)
 - [AJAX를 사용하여 동적 업데이트 제공](use-ajax-to-deliver-dynamic-updates.md)
 - [AJAX를 사용하여 매핑 시나리오 구현](use-ajax-to-implement-mapping-scenarios.md)
-- [자동화 단위 테스트 사용](enable-automated-unit-testing.md)
+- [자동화된 유닛 테스트 사용](enable-automated-unit-testing.md)
 - [NerdDinner 요약](nerddinner-wrap-up.md)

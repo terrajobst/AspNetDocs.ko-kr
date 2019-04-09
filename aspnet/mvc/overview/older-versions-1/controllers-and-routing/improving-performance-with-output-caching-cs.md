@@ -8,15 +8,15 @@ ms.date: 01/27/2009
 ms.assetid: 521c9117-81cd-4d8d-9d96-0256dc7bf50f
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/improving-performance-with-output-caching-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 516c370941b8f7e5f3528953491057973679586d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5dd5b96d0365c55cbbfa2dfe0856beda41f915e1
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049350"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59384768"
 ---
-<a name="improving-performance-with-output-caching-c"></a>출력 캐싱을 통한 성능 향상(C#)
-====================
+# <a name="improving-performance-with-output-caching-c"></a>출력 캐싱을 통한 성능 향상(C#)
+
 by [Microsoft](https://github.com/microsoft)
 
 > 이 자습서에서는 출력 캐싱을 활용 하 여 ASP.NET MVC 웹 응용 프로그램의 성능을 크게 개선할 수 있습니다 하는 방법에 대해 알아봅니다. 동일한 콘텐츠를 각 시간 작업을 호출 하는 새 사용자를 만들 필요가 없습니다 있도록 컨트롤러 작업에서 반환 된 결과 캐시 하는 방법을 알아봅니다.
@@ -44,7 +44,7 @@ ASP.NET MVC의 베타 버전에서는 출력 캐싱에 적합 하지 않습니�
 
 목록 1에서 Home 컨트롤러 목록 2에서 인덱스 뷰를 반환합니다. 이 보기에 대 한 특별 합니다. 인덱스 보기는 현재 시간을 표시 하기만 하면 됩니다 (그림 1 참조).
 
-**Listing 2 – Views\Home\Index.aspx**
+**2 – Views\Home\Index.aspx 나열**
 
 [!code-aspx[Main](improving-performance-with-output-caching-cs/samples/sample2.aspx)]
 

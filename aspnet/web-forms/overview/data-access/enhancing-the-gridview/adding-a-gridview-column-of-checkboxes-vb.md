@@ -8,15 +8,15 @@ ms.date: 03/06/2007
 ms.assetid: 39253d05-75c0-41c7-b9d4-a6c58ecf69ce
 msc.legacyurl: /web-forms/overview/data-access/enhancing-the-gridview/adding-a-gridview-column-of-checkboxes-vb
 msc.type: authoredcontent
-ms.openlocfilehash: bcd9bbfed6613e1ec02cbf0a6ddaf4086bc6d1c0
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 8defaeb2454a1aa4a3fdd115a7a3e449bf668659
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422482"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59383481"
 ---
-<a name="adding-a-gridview-column-of-checkboxes-vb"></a>확인란의 GridView 열 추가(VB)
-====================
+# <a name="adding-a-gridview-column-of-checkboxes-vb"></a>확인란의 GridView 열 추가(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_52_VB.exe) 또는 [PDF 다운로드](adding-a-gridview-column-of-checkboxes-vb/_static/datatutorial52vb1.pdf)
@@ -31,7 +31,7 @@ ms.locfileid: "58422482"
 이 자습서에서는 확인란의 열을 추가 하는 방법 및 어떤 확인란에 포스트백 될 때 체크 인 했던 확인 하는 방법을 살펴보겠습니다. 특히 밀접 하 게 웹 기반 전자 메일 클라이언트 사용자 인터페이스를 모방 하는 예제를 빌드 해 보겠습니다. 이 예제에서 제품을 나열 하는 페이징된 GridView 포함 됩니다는 `Products` 각 확인란을 사용 하 여 데이터베이스 테이블 행 (그림 1 참조). 선택 된 제품 삭제 단추를 클릭 하면 선택한 제품을 삭제 합니다.
 
 
-[![각 제품 행 포함 확인란](adding-a-gridview-column-of-checkboxes-vb/_static/image1.gif)](adding-a-gridview-column-of-checkboxes-vb/_static/image1.png)
+[![E확인란을 포함 하는 제품 행 대 한 ach](adding-a-gridview-column-of-checkboxes-vb/_static/image1.gif)](adding-a-gridview-column-of-checkboxes-vb/_static/image1.png)
 
 **그림 1**: 각 제품 행 포함 확인란 ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-checkboxes-vb/_static/image2.png))
 
@@ -41,17 +41,17 @@ ms.locfileid: "58422482"
 확인란의 열을 추가 하는 방법에 대 한 걱정 했습니다 전에 페이징을 지원 되는 GridView의 제품 목록에서 첫 번째 포커스를 s 수 있습니다. 열어서 시작 합니다 `CheckBoxField.aspx` 페이지에서 `EnhancedGridView` 폴더 및 설정 디자이너 도구 상자에서 GridView 끌어서 해당 `ID` 에 `Products`. 그런 다음 GridView 라는 새로운 ObjectDataSource는 바인딩할 선택 `ProductsDataSource`합니다. ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLL` 클래스를 호출 합니다 `GetProducts()` 데이터를 반환 하는 방법. 되므로이 GridView 읽기 전용, UPDATE, INSERT에서에서 드롭 다운 목록을 설정 하 고 탭 (없음)를 삭제 합니다.
 
 
-[![ProductsDataSource 라는 새로운 ObjectDataSource는 만들기](adding-a-gridview-column-of-checkboxes-vb/_static/image2.gif)](adding-a-gridview-column-of-checkboxes-vb/_static/image3.png)
+[![C새 ObjectDataSource 라는 ProductsDataSource reate](adding-a-gridview-column-of-checkboxes-vb/_static/image2.gif)](adding-a-gridview-column-of-checkboxes-vb/_static/image3.png)
 
 **그림 2**: 명명 된 새 ObjectDataSource 만들려면 `ProductsDataSource` ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-checkboxes-vb/_static/image4.png))
 
 
-[![GetProducts() 메서드를 사용 하 여 데이터를 검색할 ObjectDataSource 구성](adding-a-gridview-column-of-checkboxes-vb/_static/image3.gif)](adding-a-gridview-column-of-checkboxes-vb/_static/image5.png)
+[![Configure GetProducts() 메서드를 사용 하 여 데이터를 검색 하는 ObjectDataSource](adding-a-gridview-column-of-checkboxes-vb/_static/image3.gif)](adding-a-gridview-column-of-checkboxes-vb/_static/image5.png)
 
 **그림 3**: ObjectDataSource를 검색 하 여 데이터를 구성 합니다 `GetProducts()` 메서드 ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-checkboxes-vb/_static/image6.png))
 
 
-[![UPDATE, INSERT 드롭 다운 목록을 설정 하 고 탭 삭제 (없음)](adding-a-gridview-column-of-checkboxes-vb/_static/image4.gif)](adding-a-gridview-column-of-checkboxes-vb/_static/image7.png)
+[![SUPDATE, INSERT 및 DELETE 탭 (없음)에 있는 드롭다운 목록은 et](adding-a-gridview-column-of-checkboxes-vb/_static/image4.gif)](adding-a-gridview-column-of-checkboxes-vb/_static/image7.png)
 
 **그림 4**: 설정 드롭다운 목록에서 업데이트, 삽입 및 삭제 하는 탭 (없음) ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-checkboxes-vb/_static/image8.png))
 
@@ -68,7 +68,7 @@ S를 선택한 제품을 삭제 하기 위한 사용자 인터페이스를 추�
 브라우저에서 페이지를 보려면 잠시 (그림 5 참조). 이 시점에서 이름, 범주 및 처음 10 개 제품의 가격이 표시 됩니다.
 
 
-[![이름, 범주 및 첫 번째 10 개 제품의 가격이 나와](adding-a-gridview-column-of-checkboxes-vb/_static/image5.gif)](adding-a-gridview-column-of-checkboxes-vb/_static/image9.png)
+[![T그 이름, 범주 및 첫 번째 10 개 제품의 가격이 나와](adding-a-gridview-column-of-checkboxes-vb/_static/image5.gif)](adding-a-gridview-column-of-checkboxes-vb/_static/image9.png)
 
 **그림 5**: 이름, 범주 및 첫 번째 10 개 제품의 가격 나열 됩니다 ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-checkboxes-vb/_static/image10.png))
 
@@ -80,7 +80,7 @@ ASP.NET 2.0을 CheckBoxField를 포함 하므로 GridView에 확인란의 열을
 대신 해야 templatefield로 추가 하 고 확인란을 웹 컨트롤을 추가 해당 `ItemTemplate`합니다. 계속 해 서를 templatefield로 추가 된 `Products` GridView 첫 번째 (맨 왼쪽) 필드를 확인 합니다. GridView가 스마트 태그에서 템플릿 편집 링크를 클릭 한 다음 도구 상자에서 확인란 웹 컨트롤을 끌어는 `ItemTemplate`합니다. 이 확인란을 s 설정할 `ID` 속성을 `ProductSelector`입니다.
 
 
-[![TemplateField의 ItemTemplate에 ProductSelector 이라는 CheckBox 웹 컨트롤을 추가 합니다.](adding-a-gridview-column-of-checkboxes-vb/_static/image6.gif)](adding-a-gridview-column-of-checkboxes-vb/_static/image11.png)
+[![Add는 확인란을 웹 컨트롤 이라는 ProductSelector TemplateField의 ItemTemplate에](adding-a-gridview-column-of-checkboxes-vb/_static/image6.gif)](adding-a-gridview-column-of-checkboxes-vb/_static/image11.png)
 
 **그림 6**: 명명 된 확인란 웹 컨트롤 추가 `ProductSelector` TemplateField s `ItemTemplate` ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-checkboxes-vb/_static/image12.png))
 
@@ -88,7 +88,7 @@ ASP.NET 2.0을 CheckBoxField를 포함 하므로 GridView에 확인란의 열을
 추가한 TemplateField 및 CheckBox 웹 컨트롤을 사용 하 여 이제 각 행에는 확인란이 포함 됩니다. 그림 7 TemplateField 및 CheckBox를 추가한 후 브라우저를 통해 볼 때이 페이지를 보여 줍니다.
 
 
-[![각 제품 행에는 이제 Checkbox](adding-a-gridview-column-of-checkboxes-vb/_static/image7.gif)](adding-a-gridview-column-of-checkboxes-vb/_static/image13.png)
+[![E대 한 ach 제품 행에는 이제 Checkbox](adding-a-gridview-column-of-checkboxes-vb/_static/image7.gif)](adding-a-gridview-column-of-checkboxes-vb/_static/image13.png)
 
 **그림 7**: 이제 각 제품 행에 확인란이 포함 됩니다 ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-checkboxes-vb/_static/image14.png))
 
@@ -109,7 +109,7 @@ GridView s [ `Rows` 속성](https://msdn.microsoft.com/library/system.web.ui.web
 이 이벤트 처리기를 추가 하 여 이제 선택 된 제품 삭제 단추를 클릭 하 여 표시 된 `ProductID` 선택한 제품의 합니다.
 
 
-[![선택한 제품 Productid 나와 선택한 제품 삭제 단추를 클릭할 때](adding-a-gridview-column-of-checkboxes-vb/_static/image8.gif)](adding-a-gridview-column-of-checkboxes-vb/_static/image15.png)
+[![W경우 선택한 제품 삭제 단추를 클릭 선택한 제품 Productid 나와](adding-a-gridview-column-of-checkboxes-vb/_static/image8.gif)](adding-a-gridview-column-of-checkboxes-vb/_static/image15.png)
 
 **그림 8**: 선택한 제품 삭제 단추를 선택한 제품을 클릭할 때 `ProductID` 가 나열 됩니다 ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-checkboxes-vb/_static/image16.png))
 
@@ -136,7 +136,7 @@ GridView 위에 배치 하는 페이지에 두 개의 단추 웹 컨트롤을 �
 이 코드를 사용 하 여 모든 확인 단추를 클릭 하 고 포스트백을 발생 시키는 고 모든 확인란의 GridView 확인 합니다. 마찬가지로, 모두 선택 취소를 클릭 하면 모든 확인란을 선택 취소 합니다. 그림 9에서는 모든 확인 단추를 확인 된 후에 화면을 보여 줍니다.
 
 
-[![단추 모든 확인을 클릭 하 여 모든 확인란을 선택](adding-a-gridview-column-of-checkboxes-vb/_static/image9.gif)](adding-a-gridview-column-of-checkboxes-vb/_static/image17.png)
+[![C확인 모든 단추 선택 모든 확인란 비위를 맞추는 데](adding-a-gridview-column-of-checkboxes-vb/_static/image9.gif)](adding-a-gridview-column-of-checkboxes-vb/_static/image17.png)
 
 **그림 9**: 확인란을 클릭 하 여 확인 모든 단추 선택 모든 ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-checkboxes-vb/_static/image18.png))
 

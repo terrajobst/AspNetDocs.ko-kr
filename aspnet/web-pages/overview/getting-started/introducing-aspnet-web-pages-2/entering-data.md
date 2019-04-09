@@ -8,15 +8,15 @@ ms.date: 05/28/2015
 ms.assetid: d37c93fc-25fd-4e94-8671-0d437beef206
 msc.legacyurl: /web-pages/overview/getting-started/introducing-aspnet-web-pages-2/entering-data
 msc.type: authoredcontent
-ms.openlocfilehash: e40d2962ccac56eaaf4812819aa42168e69295bc
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d76f607f1d5e779d43ee15d8f2d697e7b0f147ae
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029800"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380121"
 ---
-<a name="introducing-aspnet-web-pages---entering-database-data-by-using-forms"></a>ASP.NET 웹 페이지 소개-Forms를 사용 하 여 데이터베이스 데이터를 입력 합니다.
-====================
+# <a name="introducing-aspnet-web-pages---entering-database-data-by-using-forms"></a>ASP.NET 웹 페이지 소개-Forms를 사용 하 여 데이터베이스 데이터를 입력 합니다.
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 자습서에서는 입력 폼을 만들고 다음 얻을 수 있는 폼에서 데이터베이스 테이블에 ASP.NET Web Pages (Razor)를 사용 하는 경우 데이터를 입력 하는 방법을 보여 줍니다. 통해 시리즈를 완료 했다고 가정 하 [기본 사항의 HTML 폼 ASP.NET 웹 페이지에서](https://go.microsoft.com/fwlink/?LinkId=251581)합니다.
@@ -98,7 +98,7 @@ ms.locfileid: "57029800"
 
 열에 삽입 하는 명령에 이미 나열 된- `(Title, Genre, Year)`합니다. 흥미로운 부분은에 텍스트 상자에서 값을 얻는 방법의 `VALUES` 명령의 일부입니다. 실제 값 대신 참조 하세요 `@0`, `@1`, 및 `@2`는 물론 자리 표시자입니다. 명령을 실행 하는 경우 (에 `db.Execute` 줄), 텍스트 상자에서 가져온 값을 전달 합니다.
 
-**중요!** 다음과 같이 온라인 SQL 문에서 사용자가 입력 한 데이터를 그 어느 때 포함 해야 하는 유일한 방법은 자리 표시자를 사용 하는 (`VALUES(@0, @1, @2)`). SQL 문으로 사용자 입력을 연결 하면 열면 직접 SQL 주입 공격을 하려면에 설명 된 대로 [양식 기본 ASP.NET 웹 페이지에서](https://go.microsoft.com/fwlink/?LinkId=251581) (이전 자습서).
+**기억해 야 합니다.** 다음과 같이 온라인 SQL 문에서 사용자가 입력 한 데이터를 그 어느 때 포함 해야 하는 유일한 방법은 자리 표시자를 사용 하는 (`VALUES(@0, @1, @2)`). SQL 문으로 사용자 입력을 연결 하면 열면 직접 SQL 주입 공격을 하려면에 설명 된 대로 [양식 기본 ASP.NET 웹 페이지에서](https://go.microsoft.com/fwlink/?LinkId=251581) (이전 자습서).
 
 여전히 내 합니다 `if` 차단, 뒤에 다음 줄을 추가 합니다 `db.Execute` 줄:
 
@@ -253,7 +253,7 @@ ASP.NET 해석 하기 전에 살펴본 것 처럼는 `~` 연산자 웹 사이트
 
 ## <a name="additional-resources"></a>추가 리소스
 
-- [Razor 구문을 사용 하 여 ASP.NET 웹 프로그래밍 소개](https://go.microsoft.com/fwlink/?LinkID=202890)
+- [Razor 구문을 사용하는 ASP.NET 웹 프로그래밍 소개](https://go.microsoft.com/fwlink/?LinkID=202890)
 - [SQL 삽입에 문을](http://www.w3schools.com/sql/sql_insert.asp) W3Schools 사이트
 - [Asp.net에서 사용자 입력 유효성 검사 페이지 사이트](https://go.microsoft.com/fwlink/?LinkId=253002)합니다. 작업에 대 한 자세한 정보는 `Validation` 도우미입니다.
 

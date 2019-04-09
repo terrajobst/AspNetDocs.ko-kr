@@ -8,15 +8,15 @@ ms.date: 02/16/2009
 ms.assetid: 892edb27-1cc2-4eaf-8314-dbc2efc6228a
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/creating-a-custom-route-constraint-vb
 msc.type: authoredcontent
-ms.openlocfilehash: d088380152adcb025857176b4396cab48fa64b66
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: febba98be86f0151724af6d6c00fb14760ce1b91
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57045350"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59378951"
 ---
-<a name="creating-a-custom-route-constraint-vb"></a>사용자 지정 경로 제약 조건 만들기(VB)
-====================
+# <a name="creating-a-custom-route-constraint-vb"></a>사용자 지정 경로 제약 조건 만들기(VB)
+
 [Stephen walther가](https://github.com/StephenWalther)
 
 > Stephen walther가 사용자 지정 경로 제약 조건을 만드는 방법을 보여 줍니다. 경로 원격 컴퓨터에서 브라우저 요청이 수행 될 때 일치 하는 것을 방지 하는 간단한 사용자 지정 제약 조건을 구현 합니다.
@@ -42,7 +42,7 @@ Localhost 제약 조건 목록 1에 포함 됩니다.
 
 Global.asax 파일에 정의 된 경로 내에서 사용자 지정 제약 조건을 사용할 수 있습니다. 목록 2에서 Global.asax 파일 누구나 로컬 서버에서 요청을 할 하지 않는 한 관리 페이지를 요청 하지 않도록 하려면 Localhost 제약 조건을 사용 합니다. 예를 들어 원격 서버에서 수행 하는 경우 /Admin/DeleteAll 요청 실패 합니다.
 
-**2-Global.asax 나열**
+**Listing 2 - Global.asax**
 
 [!code-vb[Main](creating-a-custom-route-constraint-vb/samples/sample3.vb)]
 

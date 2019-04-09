@@ -8,15 +8,15 @@ ms.date: 04/23/2009
 ms.assetid: 07b8905d-78ac-4252-97fb-8675b3fb0bbf
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/strategies-for-database-development-and-deployment-vb
 msc.type: authoredcontent
-ms.openlocfilehash: b44ef5e92df8cc3b8660a8ce9e4ccc9b74c135d2
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: afd287836337d0f9411daac805c3e9bcbb2dbadb
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422729"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59385074"
 ---
-<a name="strategies-for-database-development-and-deployment-vb"></a>데이터베이스 개발 및 배포 전략(VB)
-====================
+# <a name="strategies-for-database-development-and-deployment-vb"></a>데이터베이스 개발 및 배포 전략(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [PDF 다운로드](http://download.microsoft.com/download/C/3/9/C391A649-B357-4A7B-BAA4-48C96871FEA6/aspnet_tutorial10_DBDevel_vb.pdf)
@@ -99,7 +99,7 @@ Prose에 데이터베이스 변경 내용을 문서화 하는 것은 쉽지만 �
 시작 SQL Compare 저장 된 SQL Compare 프로젝트를 보여 주는 비교 프로젝트 대화 상자가 열립니다. 새 프로젝트를 만듭니다. 비교할 데이터베이스에 대 한 자세한 메시지를 표시 하는 프로젝트 구성 마법사가 시작 됩니다 (그림 1 참조). 개발 및 프로덕션 환경 데이터베이스에 대 한 정보를 입력 합니다.
 
 
-[![개발 및 프로덕션 데이터베이스를 비교 합니다.](strategies-for-database-development-and-deployment-vb/_static/image2.jpg)](strategies-for-database-development-and-deployment-vb/_static/image1.jpg)
+[![Compare 개발 및 프로덕션 데이터베이스](strategies-for-database-development-and-deployment-vb/_static/image2.jpg)](strategies-for-database-development-and-deployment-vb/_static/image1.jpg)
 
 **그림 1**: 개발 및 프로덕션 데이터베이스를 비교 ([클릭 하 여 큰 이미지 보기](strategies-for-database-development-and-deployment-vb/_static/image3.jpg))
 
@@ -116,7 +116,7 @@ Prose에 데이터베이스 변경 내용을 문서화 하는 것은 쉽지만 �
 > 데이터베이스 비교 도구를 사용 하 여 보여 주기 위해이 자습서에서 만든 데이터 모델 변경은 수행 되었습니다. 이후 자습서에서 이러한 변경 내용을 데이터베이스에서 찾을 있습니다.
 
 
-[![개발 및 프로덕션 데이터베이스 사이의 차이점을 나열 하는 SQL 비교](strategies-for-database-development-and-deployment-vb/_static/image5.jpg)](strategies-for-database-development-and-deployment-vb/_static/image4.jpg)
+[![S개발 및 프로덕션 데이터베이스 사이의 차이점을 나열 하는 QL 비교](strategies-for-database-development-and-deployment-vb/_static/image5.jpg)](strategies-for-database-development-and-deployment-vb/_static/image4.jpg)
 
 **그림 2**: SQL 비교는 개발 사이의 차이 및 프로덕션 데이터베이스를 나열 합니다 ([클릭 하 여 큰 이미지 보기](strategies-for-database-development-and-deployment-vb/_static/image6.jpg))
 
@@ -128,7 +128,7 @@ Prose에 데이터베이스 변경 내용을 문서화 하는 것은 쉽지만 �
 차이점을 검토 하 고 동기화 할 개체를 선택 하면, 후 다음 단계 개발 데이터베이스와 일치 하도록 프로덕션 데이터베이스의 스키마를 업데이트 하는 데 필요한 SQL 명령을 생성 하는 것입니다. 동기화 마법사를 통해 수행 됩니다. 동기화 마법사 어떤 동기화 개체와 작업 요약에서 확인 (그림 3 참조)를 계획 합니다. 데이터베이스를 즉시 동기화 하거나 든 실행할 수 있는 SQL 명령 사용 하 여 스크립트를 생성할 수 있습니다.
 
 
-[![동기화 마법사를 사용 하 여 데이터베이스 스키마를 동기화 합니다.](strategies-for-database-development-and-deployment-vb/_static/image8.jpg)](strategies-for-database-development-and-deployment-vb/_static/image7.jpg)
+[![Use 데이터베이스 스키마를 동기화 하려면 동기화 마법사](strategies-for-database-development-and-deployment-vb/_static/image8.jpg)](strategies-for-database-development-and-deployment-vb/_static/image7.jpg)
 
 **그림 3**: 데이터베이스 스키마를 동기화 하려면 동기화 마법사를 사용 하 여 ([클릭 하 여 큰 이미지 보기](strategies-for-database-development-and-deployment-vb/_static/image9.jpg))
 

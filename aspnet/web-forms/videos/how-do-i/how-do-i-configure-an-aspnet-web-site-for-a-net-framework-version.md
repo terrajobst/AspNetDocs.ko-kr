@@ -8,15 +8,15 @@ ms.date: 05/20/2008
 ms.assetid: 7b814965-aae2-4436-941c-710804557b67
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-configure-an-aspnet-web-site-for-a-net-framework-version
 msc.type: video
-ms.openlocfilehash: 709f4e3993abed79d9f934668db6fee515089402
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 37f7f75dbe1d88190032538b0b1b3dec74cab4c0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062850"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59386257"
 ---
-<a name="how-do-i-configure-an-aspnet-web-site-for-a-net-framework-version"></a>[어떻게 할까요?] .NET Framework 버전에 대 한 ASP.NET 웹 사이트를 구성 합니다.
-====================
+# <a name="how-do-i-configure-an-aspnet-web-site-for-a-net-framework-version"></a>[어떻게 할까요?] .NET Framework 버전에 대 한 ASP.NET 웹 사이트를 구성 합니다.
+
 [Chris Pels](https://twitter.com/chrispels)
 
 이 비디오 Chris Pels 알아보겠습니다 ASP.NET/.NET 프레임 워크의 특정 버전을 사용 하 여 ASP.NET 웹 사이트를 구성 하는 방법. 먼저 웹 사이트 인터넷 정보 서버 (IIS)에서 스크립트 맵을 확인 하 여 연결 된.NET Framework의 버전을 확인 하는 방법을 참조 하세요. 스크립트 맵은 IIS에서 루트 및 다음 개별 웹 사이트를 사용 하 여 연결 하는 방법을 참조 하세요. ASP.NET IIS 등록 도구에 대 한 다음에 대해 알아봅니다 (aspnet\_regiis.exe).NET Framework의 특정 버전을 사용 하는 IIS 또는 ASP.NET 웹 사이트를 구성 하는 데 사용 합니다. 이 내용은 IIS 기본값 보다는 다른 버전의.NET Framework를 사용 하도록 단일 웹 사이트를 구성 하는 방법을 사용 합니다. 마지막으로, 여기서 하나에서 실행 되 고.NET Framework 2.0 및 1.1에서 다른 동일한 IIS에서 두 개의 다른 웹 사이트를 참조 하세요.

@@ -8,15 +8,15 @@ ms.date: 03/24/2008
 ms.assetid: 83af9f5f-9a00-4f83-8afc-e98bdd49014e
 msc.legacyurl: /web-forms/overview/older-versions-security/roles/creating-and-managing-roles-vb
 msc.type: authoredcontent
-ms.openlocfilehash: e51fa6de3d2fe7b5c9cd84900d154070eb1960b9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ef00ae5ddac44f17aed040db7df04a5c0f896caf
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049170"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59386335"
 ---
-<a name="creating-and-managing-roles-vb"></a>역할 만들기 및 관리(VB)
-====================
+# <a name="creating-and-managing-roles-vb"></a>역할 만들기 및 관리(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/6/0/3/6032582f-360d-4739-b935-38721fdb86ea/VB.09.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/0/3/6032582f-360d-4739-b935-38721fdb86ea/aspnet_tutorial09_CreatingRoles_vb.pdf)
@@ -48,7 +48,7 @@ ASP.NET 역할 정의 및 사용자 계정에 연결 하는 역할 프레임 워
 이 시점에서 프로젝트의 솔루션 탐색기 스크린 샷을 그림 1에 표시 된 것을 유사 합니다.
 
 
-[![역할 폴더에 추가 된 4 개의 새 페이지](creating-and-managing-roles-vb/_static/image2.png)](creating-and-managing-roles-vb/_static/image1.png)
+[![F역할 폴더에 추가 된 새 우리가](creating-and-managing-roles-vb/_static/image2.png)](creating-and-managing-roles-vb/_static/image1.png)
 
 **그림 1**: 4 개의 새 페이지에 추가한 합니다 `Roles` 폴더 ([큰 이미지를 보려면 클릭](creating-and-managing-roles-vb/_static/image3.png))
 
@@ -68,7 +68,7 @@ ASP.NET 역할 정의 및 사용자 계정에 연결 하는 역할 프레임 워
 사이트 맵을 업데이트를 사용 하 여 브라우저를 통해 사이트를 방문 합니다. 그림 2에서 볼 수 있듯이 이제 왼쪽 탐색 역할 자습서에 대 한 항목이 포함 됩니다.
 
 
-[![역할 폴더에 추가 된 4 개의 새 페이지](creating-and-managing-roles-vb/_static/image5.png)](creating-and-managing-roles-vb/_static/image4.png)
+[![F역할 폴더에 추가 된 새 우리가](creating-and-managing-roles-vb/_static/image5.png)](creating-and-managing-roles-vb/_static/image4.png)
 
 **그림 2**: 4 개의 새 페이지에 추가한 합니다 `Roles` 폴더 ([큰 이미지를 보려면 클릭](creating-and-managing-roles-vb/_static/image6.png))
 
@@ -149,7 +149,7 @@ ASP.NET 역할 정의 및 사용자 계정에 연결 하는 역할 프레임 워
 관리자 라고 하는 역할을 만들어 보겠습니다. 방문을 `ManageRoles.aspx` 브라우저를 통해 페이지에서 텍스트 상자에 입력 관리자에서 (그림 3 참조) 역할 만들기 단추를 클릭 하 고 있습니다.
 
 
-[![관리자 역할 만들기](creating-and-managing-roles-vb/_static/image8.png)](creating-and-managing-roles-vb/_static/image7.png)
+[![C관리자 역할을 reate](creating-and-managing-roles-vb/_static/image8.png)](creating-and-managing-roles-vb/_static/image7.png)
 
 **그림 3**: 관리자 역할을 만들고 ([클릭 하 여 큰 이미지 보기](creating-and-managing-roles-vb/_static/image9.png))
 
@@ -157,7 +157,7 @@ ASP.NET 역할 정의 및 사용자 계정에 연결 하는 역할 프레임 워
 어떻게 되나요? 포스트백이 발생 하지만 방법이 다음 있었던 역할 실제로 시각적 표시가 없습니다 시스템에 추가 합니다. 시각적 피드백을 포함 하려면 5 단계에서에서이 페이지는 업데이트 됩니다. 그러나 지금은 확인할 수 있습니다 역할으로 이동 하 여 만들어졌는지 합니다 `SecurityTutorials.mdf` 데이터베이스에서 데이터를 표시 하는 `aspnet_Roles` 테이블입니다. 그림 4에서 알 수 있듯이는 `aspnet_Roles` 방금 추가 된 관리자 역할에 대 한 레코드를 포함 하는 테이블입니다.
 
 
-[![테이블 aspnet_Roles 관리자에 대 한 행을 갖습니다.](creating-and-managing-roles-vb/_static/image11.png)](creating-and-managing-roles-vb/_static/image10.png)
+[![T관리자에 대 한 행이 있는 그 aspnet_Roles 테이블](creating-and-managing-roles-vb/_static/image11.png)](creating-and-managing-roles-vb/_static/image10.png)
 
 **그림 4**: 합니다 `aspnet_Roles` 테이블에는 관리자에 대 한 행이 있습니다 ([큰 이미지를 보려면 클릭](creating-and-managing-roles-vb/_static/image12.png))
 
@@ -175,7 +175,7 @@ ASP.NET 역할 정의 및 사용자 계정에 연결 하는 역할 프레임 워
 이 코드를 사용 하 여 브라우저를 통해 페이지를 방문 합니다. 그림 5에서 알 수 있듯이, 항목 레이블이 지정 된 단일 열이 있는 표가 표시 됩니다. 표 4 단계에서에서 추가한 관리자 역할에 대 한 행이 포함 됩니다.
 
 
-[![단일 열에는 역할을 표시 하는 GridView](creating-and-managing-roles-vb/_static/image14.png)](creating-and-managing-roles-vb/_static/image13.png)
+[![T단일 열에서 역할을 표시 하는 GridView 그](creating-and-managing-roles-vb/_static/image14.png)](creating-and-managing-roles-vb/_static/image13.png)
 
 **그림 5**: 단일 열에는 역할을 표시 하는 GridView ([클릭 하 여 큰 이미지 보기](creating-and-managing-roles-vb/_static/image15.png))
 
@@ -203,7 +203,7 @@ GridView의을 설정 하 여 시작 `AutoGenerateColumns` 속성을 false로 �
 사용자는 새 역할을 추가 하는 경우 이제는 `RoleList` 역할이 성공적으로 만들어졌는지 시각적 피드백을 제공 GridView 포스트백에서 방금 추가 된 역할을 보여 줍니다. 예를 들어 참조는 `ManageRoles.aspx` 브라우저를 통해 페이지 및 감독자 라는 역할을 추가 합니다. 역할 만들기 단추를 클릭 하면 포스트백 계속 될 것 이라고 및 그리드 관리자 뿐만 아니라 감독자 새 역할을 포함 하도록 업데이트 됩니다.
 
 
-[![감독자 역할에 추가 되었습니다.](creating-and-managing-roles-vb/_static/image17.png)](creating-and-managing-roles-vb/_static/image16.png)
+[![T그 감독자 역할에 추가한](creating-and-managing-roles-vb/_static/image17.png)](creating-and-managing-roles-vb/_static/image16.png)
 
 **그림 6**: 감독자 역할에 추가 되었습니다 ([클릭 하 여 큰 이미지 보기](creating-and-managing-roles-vb/_static/image18.png))
 
@@ -220,7 +220,7 @@ GridView의을 설정 하 여 시작 `AutoGenerateColumns` 속성을 false로 �
 GridView에 보강 해 보겠습니다 `ManageRoles.aspx` 포함 하려면 삭제 단추를 클릭 하면 선택한 역할을 삭제 합니다. 필드 대화 상자로 이동 하 고 CommandField 옵션 아래에 있는 삭제 단추를 추가 하 여 GridView에 삭제 단추를 추가 하 여 시작 합니다. 맨 왼쪽된 열 단추 설정 및 삭제를 확인 합니다. 해당 `DeleteText` 속성 삭제 역할을 합니다.
 
 
-[![RoleList GridView에 삭제 단추를 추가 합니다.](creating-and-managing-roles-vb/_static/image20.png)](creating-and-managing-roles-vb/_static/image19.png)
+[![Add RoleList GridView에 삭제 단추](creating-and-managing-roles-vb/_static/image20.png)](creating-and-managing-roles-vb/_static/image19.png)
 
 **그림 7**: 삭제 단추를 추가 합니다 `RoleList` GridView ([큰 이미지를 보려면 클릭](creating-and-managing-roles-vb/_static/image21.png))
 

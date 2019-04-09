@@ -1,25 +1,26 @@
 ---
 uid: web-api/overview/formats-and-model-binding/content-negotiation
-title: 콘텐츠 협상 ASP.NET Web API에서에서 | Microsoft Docs
+title: 콘텐츠 협상에 ASP.NET Web API-ASP.NET 4.x
 author: MikeWasson
-description: ASP.NET Web API HTTP 콘텐츠 협상을 구현 하는 방법을 설명 합니다.
+description: ASP.NET Web API ASP.NET에 대 한 HTTP 콘텐츠 협상을 구현 하는 방법을 설명 합니다. 4.x 합니다.
 ms.author: riande
 ms.date: 05/20/2012
+ms.custom: seoapril2019
 ms.assetid: 0dd51b30-bf5a-419f-a1b7-2817ccca3c7d
 msc.legacyurl: /web-api/overview/formats-and-model-binding/content-negotiation
 msc.type: authoredcontent
-ms.openlocfilehash: 9cfbed49c1022fbf26160e89aed3ab474f5e0fdc
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: cb6668ff6de276d3778ce11f27ce597d8bf1f9c7
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425693"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380162"
 ---
-<a name="content-negotiation-in-aspnet-web-api"></a>ASP.NET Web API에서에서 콘텐츠 협상
-====================
+# <a name="content-negotiation-in-aspnet-web-api"></a>ASP.NET Web API에서에서 콘텐츠 협상
+
 [Mike Wasson](https://github.com/MikeWasson)
 
-이 문서에서는 ASP.NET Web API에서 콘텐츠 협상을 구현 하는 방법을 설명 합니다.
+이 문서에서는 ASP.NET Web API ASP.NET에 대 한 콘텐츠 협상을 구현 하는 방법에 대해 설명 합니다. 4.x 합니다.
 
 "여러 표현이 있는 경우 지정된 된 응답에 대 한 최상의 표현을 선택 하는 프로세스입니다."와 콘텐츠 협상을 정의 하는 HTTP 사양 (RFC 2616) Http에서 콘텐츠 협상을 위한 기본 메커니즘은 이러한 요청 헤더:
 

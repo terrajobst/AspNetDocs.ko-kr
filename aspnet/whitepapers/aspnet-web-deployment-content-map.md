@@ -8,15 +8,15 @@ ms.date: 03/14/2014
 ms.assetid: 58b583cd-c4ab-47a3-8527-8c92c298c91f
 msc.legacyurl: /whitepapers/aspnet-web-deployment-content-map
 msc.type: content
-ms.openlocfilehash: 6df0c9d2f38ad1d39abd62787c600ef80da8e8e0
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3f36f0c504678e1e8b40aef99db81ab99101568b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57040540"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59383937"
 ---
-<a name="aspnet-web-deployment---recommended-resources"></a>ASP.NET 웹 배포 - 권장 리소스
-====================
+# <a name="aspnet-web-deployment---recommended-resources"></a>ASP.NET 웹 배포 - 권장 리소스
+
 > 이 항목에서는 설명서의 링크를 배포 하는 방법에 대 한 리소스 (게시) ASP.NET 웹 응용 프로그램을 Visual Studio 2010, Visual Web Developer 2010 이상 버전을 사용 하 여 IIS 합니다.
 > 
 > 훌륭한 블로그 게시물을 알고 있는 경우 [stackoverflow](http://stackoverflow.com) 스레드나 다른 것이 유용한 링크 [메일을 보내세요](mailto:aspnetue@microsoft.com?subject=Deployment%20Content%20Map) 링크를 사용 하 여 합니다.

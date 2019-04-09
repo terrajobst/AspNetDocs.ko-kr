@@ -8,15 +8,15 @@ ms.date: 05/12/2009
 ms.assetid: 16dc5c11-65be-4eae-a818-9fad7f8259c6
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/getting-started/get-started-with-the-ajax-control-toolkit-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 6ecf716b78a789ca72e8b35e0be3e1fd0b957052
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3bbbe0c8240a2a77edee8d39a76bf865c95f345e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57052460"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381096"
 ---
-<a name="get-started-with-the-ajax-control-toolkit-c"></a>AJAX 컨트롤 도구 키트 시작(C#)
-====================
+# <a name="get-started-with-the-ajax-control-toolkit-c"></a>AJAX 컨트롤 도구 키트 시작(C#)
+
 by [Microsoft](https://github.com/microsoft)
 
 > AJAX Control Toolkit를 사용 하 여 시작 하려면 알아야 할 모든에 대해 알아봅니다.
@@ -29,7 +29,7 @@ AJAX Control Toolkit에는 ASP.NET 응용 프로그램에서 사용할 수 있�
 합니다 [AJAX Control Toolkit](http://devexpress.com/act) ASP.NET 커뮤니티 및 ASP.NET 팀 멤버에 의해 개발 된 오픈 소스 프로젝트입니다. 
 
 
-[![AJAX Control Toolkit 다운로드](get-started-with-the-ajax-control-toolkit-cs/_static/image1.jpg)](get-started-with-the-ajax-control-toolkit-cs/_static/image1.png)
+[![DAJAX Control Toolkit ownloading](get-started-with-the-ajax-control-toolkit-cs/_static/image1.jpg)](get-started-with-the-ajax-control-toolkit-cs/_static/image1.png)
 
 **그림 01**: AJAX Control Toolkit를 다운로드 ([클릭 하 여 큰 이미지 보기](get-started-with-the-ajax-control-toolkit-cs/_static/image2.png))
 
@@ -37,7 +37,7 @@ AJAX Control Toolkit에는 ASP.NET 응용 프로그램에서 사용할 수 있�
 파일을 다운로드 한 후에 파일의 차단을 해제 해야 합니다. 파일, 속성을 선택 합니다. 마우스 오른쪽 단추로 클릭 합니다 **차단 해제** 단추 (그림 2 참조).
 
 
-[![AJAX 컨트롤 도구 키트 ZIP 파일을 차단 해제](get-started-with-the-ajax-control-toolkit-cs/_static/image2.jpg)](get-started-with-the-ajax-control-toolkit-cs/_static/image3.png)
+[![Unblocking AJAX 컨트롤 도구 키트 ZIP 파일](get-started-with-the-ajax-control-toolkit-cs/_static/image2.jpg)](get-started-with-the-ajax-control-toolkit-cs/_static/image3.png)
 
 **그림 02**: AJAX 컨트롤 도구 키트 ZIP 파일을 차단 해제 ([클릭 하 여 큰 이미지 보기](get-started-with-the-ajax-control-toolkit-cs/_static/image4.png))
 
@@ -49,7 +49,7 @@ AJAX Control Toolkit에는 ASP.NET 응용 프로그램에서 사용할 수 있�
 AJAX Control Toolkit을 사용 하는 가장 쉬운 방법은 Visual Studio/Visual Web Developer 도구 상자에 도구 키트를 추가 하는 것 (그림 3 참조). 이런 방식으로 수 단순히 끌면 도구 키트 컨트롤 페이지를 사용 하려는 경우.
 
 
-[![AJAX Control Toolkit 도구 상자에 표시 됩니다.](get-started-with-the-ajax-control-toolkit-cs/_static/image3.jpg)](get-started-with-the-ajax-control-toolkit-cs/_static/image5.png)
+[![A도구 상자에 잭 스 Control Toolkit 나타납니다](get-started-with-the-ajax-control-toolkit-cs/_static/image3.jpg)](get-started-with-the-ajax-control-toolkit-cs/_static/image5.png)
 
 **그림 03**: 도구 상자에 표시 되는 AJAX Control Toolkit ([클릭 하 여 큰 이미지 보기](get-started-with-the-ajax-control-toolkit-cs/_static/image6.png))
 
@@ -61,7 +61,7 @@ AJAX Control Toolkit을 사용 하는 가장 쉬운 방법은 Visual Studio/Visu
 3. AJAX Control Toolkit 이라는 새 탭을 입력 합니다.
 
 
-[![새 탭 추가](get-started-with-the-ajax-control-toolkit-cs/_static/image4.jpg)](get-started-with-the-ajax-control-toolkit-cs/_static/image7.png)
+[![A새 탭 이어지지](get-started-with-the-ajax-control-toolkit-cs/_static/image4.jpg)](get-started-with-the-ajax-control-toolkit-cs/_static/image7.png)
 
 **그림 04**: 새 탭 추가 ([클릭 하 여 큰 이미지 보기](get-started-with-the-ajax-control-toolkit-cs/_static/image8.png))
 
@@ -72,7 +72,7 @@ AJAX Control Toolkit을 사용 하는 가장 쉬운 방법은 Visual Studio/Visu
 - 위치로 이동 하는 AJAX Control Toolkit 압축을 해제 하 고 AjaxControlToolkit.dll 어셈블리를 선택 합니다.
 
 
-[![도구 상자에 추가할 항목 선택](get-started-with-the-ajax-control-toolkit-cs/_static/image5.jpg)](get-started-with-the-ajax-control-toolkit-cs/_static/image9.png)
+[![C도구 상자에 추가할 설치할 항목](get-started-with-the-ajax-control-toolkit-cs/_static/image5.jpg)](get-started-with-the-ajax-control-toolkit-cs/_static/image9.png)
 
 **그림 05**: 도구 상자에 추가할 항목 선택 ([클릭 하 여 큰 이미지 보기](get-started-with-the-ajax-control-toolkit-cs/_static/image10.png))
 
