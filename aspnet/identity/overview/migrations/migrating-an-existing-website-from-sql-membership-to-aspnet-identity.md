@@ -1,19 +1,20 @@
 ---
 uid: identity/overview/migrations/migrating-an-existing-website-from-sql-membership-to-aspnet-identity
-title: SQL 멤버 자격에서 ASP.NET Id로 기존 웹 사이트를 마이그레이션 | Microsoft Docs
+title: SQL 멤버 자격에서 기존 웹 사이트를 ASP.NET Id-ASP.NET로 4.x
 author: Rick-Anderson
 description: 이 자습서에서는 사용자와 역할 데이터를 새 ASP.NET Id s로 SQL 멤버 자격을 사용 하 여 만든 기존 웹 응용 프로그램을 마이그레이션하는 단계를를 보여 줍니다...
 ms.author: riande
 ms.date: 12/19/2014
+ms.custom: seoapril2019
 ms.assetid: 220d3d75-16b2-4240-beae-a5b534f06419
 msc.legacyurl: /identity/overview/migrations/migrating-an-existing-website-from-sql-membership-to-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: b80f2f5cc4702c3e406d8989905c56508711e788
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: f205dfd8692bc946ca2124655bf8bcefbdbd1779
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58426083"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59394533"
 ---
 # <a name="migrating-an-existing-website-from-sql-membership-to-aspnet-identity"></a>기존 웹 사이트를 SQL 멤버 자격에서 ASP.NET Identity로 마이그레이션
 
@@ -82,7 +83,7 @@ ASP.NET Id 시스템에 필요한 스키마에 기존 데이터베이스를 마�
 
 기존 사용자의 데이터를 사용 하 여 즉시 작동 하려면 ASP.NET Id 클래스에 대 한 ASP.NET Id에서 필요한 데이터베이스 스키마로 해야 합니다. 새 테이블을 추가 하 고 해당 테이블에 기존 정보를 복사 하 여이 작업을 수행 수입니다. 기본적으로 ASP.NET Id는 Id 모델 클래스 정보를 저장/검색 데이터베이스에 다시 매핑할 EntityFramework를 사용 합니다. 이러한 모델 클래스는 사용자 및 역할 개체를 정의 하는 core Identity 인터페이스를 구현 합니다. 테이블 및 데이터베이스의 열에는 이러한 모델 클래스는 기반으로 합니다. EntityFramework 모델 클래스는 Identity v2.1.0 및 해당 속성에는 아래에서 정의 됨
 
-| **IdentityUser** | **Type** | **IdentityRole** | **IdentityUserRole** | **IdentityUserLogin** | **IdentityUserClaim** |
+| **IdentityUser** | **형식** | **IdentityRole** | **IdentityUserRole** | **IdentityUserLogin** | **IdentityUserClaim** |
 | --- | --- | --- | --- | --- | --- |
 | ID | string | ID | RoleId | ProviderKey | ID |
 | 사용자 이름 | string | 이름 | UserId | UserId | ClaimType |
@@ -98,7 +99,7 @@ ASP.NET Id 시스템에 필요한 스키마에 기존 데이터베이스를 마�
 
 속성에 해당 하는 열을 사용 하 여 각이 모델에 대 한 테이블을 하도록 해야 합니다. 에 클래스 및 테이블 간의 매핑을 정의 합니다 `OnModelCreating` 메서드는 `IdentityDBContext`합니다. 이 구성의 fluent API 메서드 라고 하며 자세한 정보를 찾을 수 있습니다 [여기](https://msdn.microsoft.com/data/jj591617.aspx)합니다. 클래스에 대 한 구성은 아래에 설명 된 대로
 
-| **클래스** | **Table** | **기본 키** | **외래 키** |
+| **클래스** | **표** | **기본 키** | **외래 키** |
 | --- | --- | --- | --- |
 | IdentityUser | AspnetUsers | ID |  |
 | IdentityRole | AspnetRoles | ID |  |

@@ -8,15 +8,15 @@ ms.date: 07/18/2007
 ms.assetid: a5a4a9ba-d18d-489a-a6b0-a3c26d6b0274
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb
 msc.type: authoredcontent
-ms.openlocfilehash: bc640564cfb67f0c1512bc7f4fae9ea7e6bc981f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1d8387f782ace50f16d44ba8df4df8014d563674
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57059820"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59396462"
 ---
-<a name="creating-new-stored-procedures-for-the-typed-datasets-tableadapters-vb"></a>형식화된 데이터 세트의 TableAdapter에 대한 새로운 저장 프로시저 만들기(VB)
-====================
+# <a name="creating-new-stored-procedures-for-the-typed-datasets-tableadapters-vb"></a>형식화된 데이터 세트의 TableAdapter에 대한 새로운 저장 프로시저 만들기(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_67_VB.zip) 또는 [PDF 다운로드](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/datatutorial67vb1.pdf)
@@ -28,7 +28,7 @@ ms.locfileid: "57059820"
 
 액세스 계층 DAL (데이터)이이 자습서에 대 한 형식화 된 데이터 집합을 사용합니다. 에 설명 된 대로 합니다 [데이터 액세스 레이어 만들기](../introduction/creating-a-data-access-layer-vb.md) 자습서에서는 강력한 DataTables 및 Tableadapter의 형식화 된 데이터 집합으로 구성 합니다. Datatable의 데이터 액세스 작업을 수행 하려면 기본 데이터베이스를 사용 하 여 Tableadapter 인터페이스 하는 동안 시스템의 논리적 엔터티를 나타냅니다. 여기에 데이터를 사용 하 여 Datatable을 채우는, 스칼라 데이터를 반환 하는 쿼리를 실행 하 고 삽입, 업데이트 및 데이터베이스에서 레코드를 삭제 합니다.
 
-TableAdapters에서 실행 되는 SQL 명령 수 하거나 임시 SQL 문이 같은 `SELECT columnList FROM TableName`, 또는 저장 프로시저입니다. 아키텍처에서 Tableadapter에는 임시 SQL 문을 사용합니다. 그러나 많은 개발자와 데이터베이스 관리자, 보안, 유지 관리 및 업데이트를 위해 임시 SQL 문을 통해 저장된 프로시저 선호합니다. 다른 유연성에 대 한 임시 SQL 문이 ardently 선호합니다. 필자의 작업에서 임시 SQL 문이 저장된 프로시저를 우선적 했지만 이전 자습서를 간소화 하기 위해 임시 SQL 문 사용 하기로 선택 했습니다.
+TableAdapters에서 실행 되는 SQL 명령 수 하거나 임시 SQL 문이 같은 `SELECT columnList FROM TableName`, 또는 저장 프로시저입니다. 아키텍처에서 Tableadapter에는 임시 SQL 문을 사용합니다. 그러나 많은 개발자와 데이터베이스 관리자, 보안, 유지 관리 및 업데이트 가능성 이유로 임시 SQL 문을 통해 저장된 프로시저 선호합니다. 다른 유연성에 대 한 임시 SQL 문이 ardently 선호합니다. 필자의 작업에서 임시 SQL 문이 저장된 프로시저를 우선적 했지만 이전 자습서를 간소화 하기 위해 임시 SQL 문 사용 하기로 선택 했습니다.
 
 경우 TableAdapter를 정의 새 메서드 추가 TableAdapter의 마법사에서는 새 저장된 프로시저를 만들거나 임시 SQL 문을 사용 하는 것 처럼 기존 저장된 프로시저를 사용 하는 작업을 쉽게 처럼 합니다. 이 자습서에서는 TableAdapter가 마법사에서 저장된 프로시저를 자동으로 생성 하는 방법을 살펴보겠습니다. 다음 자습서에서는 기존 또는 수동으로 만든 저장된 프로시저를 사용 하도록 TableAdapter가의 메서드를 구성 하는 방법을 살펴보겠습니다.
 
@@ -86,7 +86,7 @@ TableAdapters에서 실행 되는 SQL 명령 수 하거나 임시 SQL 문이 같
 다른 폴더와 같이 `Default.aspx` 에 `AdvancedDAL` 폴더 섹션의 자습서를 나열 됩니다. 이전에 설명한 대로 `SectionLevelTutorialListing.ascx` 사용자 컨트롤은이 기능을 제공 합니다. 따라서이 사용자 정의 컨트롤을 추가 `Default.aspx`의 디자인 뷰에서 페이지의 솔루션 탐색기에서 끌어 합니다.
 
 
-[![Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image3.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image2.png)
+[![Add Default.aspx SectionLevelTutorialListing.ascx 사용자 정의 컨트롤](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image3.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image2.png)
 
 **그림 2**: 추가 된 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤 `Default.aspx` ([클릭 하 여 큰 이미지 보기](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image4.png))
 
@@ -111,7 +111,7 @@ TableAdapters에서 실행 되는 SQL 명령 수 하거나 임시 SQL 문이 같
 새 데이터 집합을 마우스 오른쪽 단추로 클릭 하 여 프로젝트에 추가 `DAL` 폴더를 새 항목 추가 선택 하 고 그림 4 에서처럼 데이터 집합 템플릿을 선택 합니다.
 
 
-[![새 형식화 된 데이터 집합을 NorthwindWithSprocs.xsd 프로젝트 추가](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image7.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image6.png)
+[![A새 입력 데이터 집합 프로젝트 라는 NorthwindWithSprocs.xsd dd](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image7.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image6.png)
 
 **그림 4**: 프로젝트 라는 새 입력 데이터 집합을 추가 `NorthwindWithSprocs.xsd` ([큰 이미지를 보려면 클릭](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image8.png))
 
@@ -121,9 +121,9 @@ TableAdapters에서 실행 되는 SQL 명령 수 하거나 임시 SQL 문이 같
 다음이 화면에서 TableAdapter를 데이터베이스에 액세스 해야 하는 방법을 선택할 수 있습니다. 이전 자습서에서는 SQL 문 사용을 첫 번째 옵션을 선택 했습니다. 이 자습서에서는 두 번째 옵션을 선택한 새 저장된 프로시저를 만들 다음을 클릭 합니다.
 
 
-[![새 저장된 프로시저를 만들 TableAdpater 지시 합니다.](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image10.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image9.png)
+[![I새 저장 프로시저 만들기 TableAdapter nstruct](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image10.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image9.png)
 
-**그림 5**: 새 저장 프로시저 만들기 TableAdpater 지시 ([클릭 하 여 큰 이미지 보기](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image11.png))
+**그림 5**: 새 저장 프로시저 만들기 TableAdapter 지시 ([클릭 하 여 큰 이미지 보기](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image11.png))
 
 
 임시 SQL 문을 사용 하 여, 다음 단계에서 만들라는 요청도 받습니다 제공 하는 것 처럼는 `SELECT` TableAdapter s 주 쿼리에 대 한 문입니다. 하지만 사용 하는 대신 합니다 `SELECT` 문에서 임시 쿼리를 직접 수행 하려면 여기에 입력 된 TableAdapter s 만들어집니다이 포함 하는 저장된 프로시저 `SELECT` 쿼리 합니다.
@@ -134,7 +134,7 @@ TableAdapters에서 실행 되는 SQL 명령 수 하거나 임시 SQL 문이 같
 [!code-sql[Main](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/samples/sample4.sql)]
 
 
-[![SELECT 쿼리를 입력 합니다.](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image13.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image12.png)
+[![E선택 쿼리 종료](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image13.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image12.png)
 
 **그림 6**: 입력 된 `SELECT` 쿼리 ([큰 이미지를 보려면 클릭](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image14.png))
 
@@ -160,7 +160,7 @@ TableAdapter 마법사에서 자동으로 생성 하는 저장된 프로시저�
 입력 한 후의 `SELECT` 쿼리하고 다음 클릭 생성 Insert, Update 및 Delete 문 옵션이 선택 되어 있는지를 확인 합니다. 그림 8 에서처럼이 다음 화면에서 선택, 삽입, 업데이트 및 데이터 삭제에 대 한 마법사가 만듭니다. 저장된 프로시저의 이름을 묻는 메시지가 나타납니다. 이러한 저장 프로시저 이름을 변경 `Products_Select`, `Products_Insert`를 `Products_Update`, 및 `Products_Delete`합니다.
 
 
-[![저장된 프로시저 이름 바꾸기](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image17.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image16.png)
+[![R저장 프로시저 ename](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image17.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image16.png)
 
 **그림 8**: 저장 프로시저 이름 바꾸기 ([클릭 하 여 큰 이미지 보기](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image18.png))
 
@@ -176,7 +176,7 @@ TableAdapter 마법사 4 개의 저장된 프로시저를 만드는 데 사용�
 저장된 프로시저 이름 지정 후 이름 TableAdapter가 해당 메서드 옆을 클릭 합니다. 임시 SQL 문이 사용할 때와 마찬가지로 기존 DataTable을 채울 새 항목을 반환 하는 메서드를 만들 수 있습니다. TableAdapter 삽입, 업데이트 및 삭제 된 레코드에 대 한 DB 직접 패턴을 포함할지 여부를 지정할 수도 있습니다. 이 옵션을 선택 하는 모든 세 개의 확인란 있지만 반환 하는 DataTable 메서드 이름 바꾸기 `GetProducts` (에서처럼 그림 10).
 
 
-[![메서드 이름을 채우기 및 GetProducts](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image21.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image20.png)
+[![NFill 메서드 이름 () 및 GetProducts](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image21.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image20.png)
 
 **그림 10**: 메서드 이름을 `Fill` 하 고 `GetProducts` ([클릭 하 여 큰 이미지 보기](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image22.png))
 
@@ -184,7 +184,7 @@ TableAdapter 마법사 4 개의 저장된 프로시저를 만드는 데 사용�
 마법사가 수행할 단계의 요약을 확인 하는 다음을 클릭 합니다. "마침" 단추를 클릭 하 여 마법사를 완료 합니다. 마법사 완료 되 면 돌아갑니다 데이터 집합 s 이제 포함 해야 하는 디자이너에는 `ProductsDataTable`합니다.
 
 
-[![데이터 집합의 디자이너 새로 추가 된 ProductsDataTable를 보여 줍니다.](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image24.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image23.png)
+[![T새로 추가 ProductsDataTable 표시 그 데이터 집합의 디자이너](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image24.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image23.png)
 
 **그림 11**: 새로 추가 된 데이터 집합의 디자이너를 보여 줍니다 `ProductsDataTable` ([큰 이미지를 보려면 클릭](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image25.png))
 
@@ -206,7 +206,7 @@ TableAdapter 마법사 4 개의 저장된 프로시저를 만드는 데 사용�
 을 확인 하거나 저장된 프로시저를 수정 하려면 서버 탐색기에서 해당 이름을 두 번 클릭, 또는 저장된 프로시저를 마우스 오른쪽 단추로 클릭 및 열기를 선택 합니다. 그림 13은는 `Products_Delete` 열릴 때 저장 프로시저입니다.
 
 
-[![저장된 프로시저를 열고 Visual Studio 내에서 수정 됨](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image28.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image27.png)
+[![Stored 프로시저를 열 수 있습니다 및 수정에서 내 Visual Studio](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image28.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image27.png)
 
 **그림 13**: 저장 프로시저를 열 수 있습니다 및 수정에서 내 Visual Studio ([클릭 하 여 큰 이미지 보기](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image29.png))
 
@@ -250,7 +250,7 @@ TableAdapter 마법사 4 개의 저장된 프로시저를 만드는 데 사용�
 또는 디자이너에서 TableAdapter를 마우스 오른쪽 단추로 클릭 하 고 구성을 선택 하 여 모든 메서드를 사용 하는 매개 변수를 새로 고칠 수 있습니다. TableAdapter 구성 마법사를 선택, 삽입, 업데이트에 사용 되는 저장된 프로시저를 나열 합니다. 그러면 및 저장된 프로시저 매개 변수와 함께 삭제 받을 수 있어야 합니다. 볼 수 업데이트 드롭 다운 목록에서 클릭 합니다 `Products_Update` 저장된 프로시저는 이제 더 이상 포함 하는 입력된 매개 변수를 예상 `@Original_ProductID` (그림 15 참조). TableAdapter를 사용한 매개 변수 컬렉션을 자동으로 업데이트 하려면 마침을 클릭 하면 됩니다.
 
 
-[![또는 TableAdapter가의 구성 마법사를 사용 하 여 해당 메서드 매개 변수 컬렉션을 새로 고칠 수 있습니다.](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image32.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image31.png)
+[![Ytableadapter 구성 마법사가 해당 메서드 매개 변수 컬렉션 새로 고침 하는 데 사용할 수 있습니다 또는](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image32.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image31.png)
 
 **그림 15**: Tableadapter 구성 마법사가 해당 메서드 매개 변수 컬렉션 새로 고침 하는 데 사용할 수 있습니다 ([클릭 하 여 큰 이미지 보기](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image33.png))
 
@@ -270,7 +270,7 @@ TableAdapter를 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 �
 TableAdapter는 데이터베이스에 액세스 해야 하는 방법에 대 한 라는 메시지가 표시 된 TableAdapter 쿼리 구성 마법사가 시작 됩니다. 만든 새 저장된 프로시저에 새 저장된 프로시저 옵션을 선택 하 고 클릭 합니다.
 
 
-[![새 저장된 프로시저 옵션의 만들기를 선택 합니다.](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image36.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image35.png)
+[![C설치할 새 저장된 프로시저 옵션 만들기](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image36.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image35.png)
 
 **그림 17**: 새 저장된 프로시저 옵션을 선택 ([클릭 하 여 큰 이미지 보기](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image37.png))
 
@@ -278,7 +278,7 @@ TableAdapter는 데이터베이스에 액세스 해야 하는 방법에 대 한 
 다음 화면에서는 쿼리를 실행 여부는 일련의 행 또는 단일 스칼라 값을 반환을 수행 하려면 유형을 식별 하는 `UPDATE`, `INSERT`, 또는 `DELETE` 문입니다. 이후를 `GetProductByProductID(productID)` 메서드는 행을 반환, row 옵션을 선택한 다음 적중을 반환 하는 SELECT를 그대로 둡니다.
 
 
-[![Row 옵션을 반환 하는 선택](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image39.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image38.png)
+[![C설치할 옵션 행을 반환 하는 SELECT](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image39.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image38.png)
 
 **그림 18**: Row 옵션을 반환 하는 선택 ([클릭 하 여 큰 이미지 보기](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image40.png))
 
@@ -289,7 +289,7 @@ TableAdapter는 데이터베이스에 액세스 해야 하는 방법에 대 한 
 [!code-sql[Main](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/samples/sample9.sql)]
 
 
-[![선택 쿼리를 사용 하 여 저장된 프로시저 이름 바꾸기](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image42.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image41.png)
+[![R선택 쿼리를 사용 하 여 저장 프로시저 이름 바꾸기](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image42.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image41.png)
 
 **그림 19**: 사용 하 여 저장 프로시저 이름 바꾸기는 `SELECT` 쿼리 ([큰 이미지를 보려면 클릭](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image43.png))
 
@@ -297,7 +297,7 @@ TableAdapter는 데이터베이스에 액세스 해야 하는 방법에 대 한 
 후속 화면에서는 생성 되는 저장된 프로시저 이름을 지정할 수 있습니다. 이름을 입력 `Products_SelectByProductID` 다음을 클릭 합니다.
 
 
-[![새 저장된 프로시저 Products_SelectByProductID 이름](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image45.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image44.png)
+[![N새 저장 프로시저 Products_SelectByProductID \ 이름](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image45.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image44.png)
 
 **그림 20**: 새 저장 프로시저의 이름을 `Products_SelectByProductID` ([큰 이미지를 보려면 클릭](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image46.png))
 
@@ -305,7 +305,7 @@ TableAdapter는 데이터베이스에 액세스 해야 하는 방법에 대 한 
 마법사의 마지막 단계를 사용 하면 메서드 이름을 생성 뿐만 아니라 채우기 사용할지 DataTable 패턴을 변경 하려면 DataTable 패턴 중 하나 또는 둘 다 반환 수 있습니다. 이 메서드에 대 한 선택 옵션을 모두 유지 되지만 메서드를 이름을 바꿀 `FillByProductID` 고 `GetProductByProductID`입니다. 마법사가 수행 하 고 마법사를 완료 하려면 마침을 클릭 단계의 요약을 보려면 다음을 클릭 합니다.
 
 
-[![FillByProductID를 GetProductByProductID TableAdapter의 메서드 이름 바꾸기](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image48.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image47.png)
+[![RFillByProductID를 GetProductByProductID TableAdapter의 메서드 ename](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image48.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image47.png)
 
 **그림 21**: TableAdapter가의 메서드를 이름 바꾸기 `FillByProductID` 하 고 `GetProductByProductID` ([클릭 하 여 큰 이미지 보기](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image49.png))
 
@@ -335,7 +335,7 @@ TableAdapter는 데이터베이스에 액세스 해야 하는 방법에 대 한 
 열기는 `NewSprocs.aspx` 페이지에 `AdvancedDAL` 폴더 및 이름을 지정 하는 디자이너 도구 상자에서 끌어서 GridView `Products`합니다. GridView에서 스마트 태그 s 라는 새로운 ObjectDataSource는 바인딩할 선택 `ProductsDataSource`합니다. ObjectDataSource를 사용 하 여 구성 된 `ProductsBLLWithSprocs` 그림 22 에서처럼 클래스입니다.
 
 
-[![ProductsBLLWithSprocs 클래스를 사용 하는 ObjectDataSource 구성](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image51.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image50.png)
+[![Configure ProductsBLLWithSprocs 클래스를 사용 하는 ObjectDataSource](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image51.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image50.png)
 
 **그림 22**: ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLLWithSprocs` 클래스 ([큰 이미지를 보려면 클릭](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image52.png))
 
@@ -345,7 +345,7 @@ TableAdapter는 데이터베이스에 액세스 해야 하는 방법에 대 한 
 ObjectDataSource 마법사를 완료 하면 Visual Studio 제품 데이터 필드에 대 한 GridView에 BoundFields 및 CheckBoxField를 추가 합니다. 편집 사용 및 스마트 태그에 있는 삭제 사용 옵션을 확인 하 여 GridView가 기본 제공 편집 및 삭제 기능을 켭니다.
 
 
-[![페이지 편집 및 지원이 설정 삭제를 사용 하 여 GridView를 포함 합니다.](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image54.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image53.png)
+[![T편집 및 삭제 지원을 사용 하도록 설정 된 GridView를 포함 하는 그 페이지](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image54.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image53.png)
 
 **그림 23**: 이 페이지에 GridView 편집 및 삭제 지원을 사용 하도록 설정 ([클릭 하 여 큰 이미지 보기](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image55.png))
 
@@ -362,7 +362,7 @@ ObjectDataSource 마법사를 완료 하면 Visual Studio 제품 데이터 필�
 인지 여부 GridView 향상에 관계 없이 브라우저에서 페이지의 핵심 기능을 사용해 테스트 합니다. 그림 24 에서처럼 페이지 행별 편집 및 삭제 기능을 제공 하는 GridView에서 제품을 나열 합니다.
 
 
-[![제품 확인, 편집 및 GridView에서 삭제 수](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image57.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image56.png)
+[![T보기, 편집, 및 GridView에서 삭제 된 그 제품 수](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image57.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image56.png)
 
 **그림 24**: 제품을 볼 수 있습니다, 편집, 및 GridView에서 삭제 된 ([클릭 하 여 큰 이미지 보기](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image58.png))
 

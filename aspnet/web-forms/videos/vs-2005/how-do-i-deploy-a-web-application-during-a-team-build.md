@@ -8,15 +8,15 @@ ms.date: 08/01/2007
 ms.assetid: 3c81ee94-4561-4267-864d-2656b33d95c9
 msc.legacyurl: /web-forms/videos/vs-2005/how-do-i-deploy-a-web-application-during-a-team-build
 msc.type: video
-ms.openlocfilehash: 6d608b7173ccd4e5f3e8cd9575387056b9f2f6bf
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d5cf8850a1994d209cfaa829d1de2f8bc79776e7
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57027530"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59398945"
 ---
-<a name="how-do-i-deploy-a-web-application-during-a-team-build"></a>[어떻게 할까요?] 팀 빌드 중 웹 응용 프로그램 배포
-====================
+# <a name="how-do-i-deploy-a-web-application-during-a-team-build"></a>[어떻게 할까요?] 팀 빌드 중 웹 응용 프로그램 배포
+
 [Paul 해커가](https://github.com/pjhacker)
 
 이 비디오에는 새 팀 빌드를 만드는 방법 및 빌드 프로세스의 일부로 웹 응용 프로그램을 배포 하는 방법을 보여 줍니다. 배포 단계를 포함 하는 X 복사 명령을 빌드 스크립트를 추가 하기만 인지 표시 됩니다.

@@ -8,15 +8,15 @@ ms.date: 07/21/2010
 ms.assetid: 5aeadf8f-39f3-4f07-a78f-1c310c64fb23
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-8
 msc.type: authoredcontent
-ms.openlocfilehash: 3b49ee53e82933de9b50960779c28ca6ab7441e5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: db8db4e3bff8047b48a7528b5146873ab6d84714
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57059840"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59398685"
 ---
-<a name="part-8-final-pages-exception-handling-and-conclusion"></a>8부: 최종 페이지, 예외 처리 및 결론
-====================
+# <a name="part-8-final-pages-exception-handling-and-conclusion"></a>8부: 최종 페이지, 예외 처리 및 결론
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 > Tailspin Spyworks.NET 플랫폼에 대 한 강력 하 고 확장 가능한 응용 프로그램을 생성 하는 방법을 매우 단순 하는 방법을 보여 줍니다. 해제 쇼핑, 체크 아웃 및 관리를 포함 하는 온라인 상점을 만들려고 ASP.NET 4에서 강력한 새 기능을 사용 하는 방법을 보여 줍니다.
@@ -28,7 +28,7 @@ ms.locfileid: "57059840"
 
 ContactUs.aspx 라는 새 페이지 만들기
 
-디자이너를 사용 하는 ToolkitScriptManager 등의 AjaxdControlToolkit 편집기 컨트롤을 특수 기록 형식을 만듭니다. .
+디자이너를 사용 하는 ToolkitScriptManager 등의 AjaxControlToolkit 편집기 컨트롤을 특수 기록 형식을 만듭니다. .
 
 ![](tailspin-spyworks-part-8/_static/image1.jpg)
 

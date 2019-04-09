@@ -8,15 +8,15 @@ ms.date: 10/05/2011
 ms.assetid: 8aa371f8-913c-4ed2-98b0-f76abf15669d
 msc.legacyurl: /web-forms/videos/tailspin-spyworks
 msc.type: chapter
-ms.openlocfilehash: 0fbbc6e0ca1d13effe5d7f157e3f0dc5502578c6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d30dc8906a72a35d87db40701070fe8c8f71c174
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57023810"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59394122"
 ---
-<a name="tailspin-spyworks"></a>Tailspin Spyworks
-====================
+# <a name="tailspin-spyworks"></a>Tailspin Spyworks
+
 > 쇼핑, 체크 아웃 및 관리를 포함 하는 온라인 상점을 구축 하려면 ASP.NET 4의 새 기능을 사용 하는 방법.
 
 
@@ -27,10 +27,10 @@ ms.locfileid: "57023810"
 - [Tailspin Spyworks - 범주 메뉴](tailspin-spyworks-category-menu.md)
 - [Tailspin Spyworks - 제품 목록 표시](tailspin-spyworks-display-the-product-list.md)
 - [Tailspin Spyworks - 제품 정보별 표시](tailspin-spyworks-display-per-product-details.md)
-- [Tailspin Spyworks - 장바구니에 항목 추가](tailspin-spyworks-adding-items-to-the-shopping-cart.md)
-- [Tailspin Spyworks - 장바구니 표시](tailspin-spyworks-display-shopping-cart.md)
-- [Tailspin Spyworks - 장바구니 업데이트](tailspin-spyworks-update-the-shopping-cart.md)
-- [Tailspin Spyworks - 장바구니 마이그레이션](tailspin-spyworks-migrate-the-shopping-cart.md)
+- [Tailspin Spyworks - 쇼핑 카트에 항목 추가](tailspin-spyworks-adding-items-to-the-shopping-cart.md)
+- [Tailspin Spyworks - 쇼핑 카트 표시](tailspin-spyworks-display-shopping-cart.md)
+- [Tailspin Spyworks - 쇼핑 카트 업데이트](tailspin-spyworks-update-the-shopping-cart.md)
+- [Tailspin Spyworks - 쇼핑 카트 마이그레이션](tailspin-spyworks-migrate-the-shopping-cart.md)
 - [Tailspin Spyworks - 최종 체크 아웃](tailspin-spyworks-final-check-out.md)
 - [Tailspin Spyworks - 사용자 제품 후기 추가](tailspin-spyworks-adding-user-product-reviews.md)
 - [Tailspin Spyworks - 사용자 후기 표시](tailspin-spyworks-displaying-user-reviews.md)

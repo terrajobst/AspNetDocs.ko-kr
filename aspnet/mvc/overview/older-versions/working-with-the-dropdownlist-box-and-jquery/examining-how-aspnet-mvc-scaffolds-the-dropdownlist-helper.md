@@ -8,15 +8,15 @@ ms.date: 01/12/2012
 ms.assetid: 8921d7f2-21f0-427a-8b27-2df7251174b0
 msc.legacyurl: /mvc/overview/older-versions/working-with-the-dropdownlist-box-and-jquery/examining-how-aspnet-mvc-scaffolds-the-dropdownlist-helper
 msc.type: authoredcontent
-ms.openlocfilehash: ef83ef22e17ab7bda035d0f11ab936fe56d58800
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 20de66ab773a9172fd8ae8ea713c361c289b944c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423028"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59398543"
 ---
-<a name="examining--how--aspnet-mvc-scaffolds-the-dropdownlist-helper"></a>ASP.NET MVC가 DropDownList 도우미를 스캐폴드하는 방법 검사
-====================
+# <a name="examining--how--aspnet-mvc-scaffolds-the-dropdownlist-helper"></a>ASP.NET MVC가 DropDownList 도우미를 스캐폴드하는 방법 검사
+
 [Rick Anderson]((https://twitter.com/RickAndMSFT))
 
 **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 합니다 *컨트롤러* 폴더를 선택 하 고 **컨트롤러 추가**합니다. 컨트롤러 이름을 **StoreManagerController**합니다. 에 대 한 옵션을 설정 합니다 **컨트롤러 추가** 아래 그림과에서 같이 대화 상자.

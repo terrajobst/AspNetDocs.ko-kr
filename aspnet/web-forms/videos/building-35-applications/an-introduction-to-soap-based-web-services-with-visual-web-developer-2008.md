@@ -8,15 +8,15 @@ ms.date: 05/08/2009
 ms.assetid: b5a97476-e13a-4b94-a2d1-39b1cebc89c8
 msc.legacyurl: /web-forms/videos/building-35-applications/an-introduction-to-soap-based-web-services-with-visual-web-developer-2008
 msc.type: video
-ms.openlocfilehash: 2b57b9cb5c62dc113065b3dab1fdfe16b31f5557
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: e499292c6dedcec0718d0823e7c324a7da9e00b8
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57063510"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59396384"
 ---
-<a name="an-introduction-to-soap-based-web-services-with-visual-web-developer-2008"></a>기반 Visual Web Developer 2008 사용 하 여 웹 서비스를 SOAP 소개
-====================
+# <a name="an-introduction-to-soap-based-web-services-with-visual-web-developer-2008"></a>기반 Visual Web Developer 2008 사용 하 여 웹 서비스를 SOAP 소개
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 이 비디오 보여줍니다 방법 및 간단할 수 있는지 SOAP 기반 분산된 응용 프로그램 개발을 시작 하려면 / XML 웹 서비스입니다.

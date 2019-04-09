@@ -8,15 +8,15 @@ ms.date: 03/28/2008
 ms.assetid: 54d9df99-1161-4899-b4e8-2679c85915e7
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/aspnet-ajax/understanding-partial-page-updates-with-asp-net-ajax
 msc.type: authoredcontent
-ms.openlocfilehash: 4883046aa16d5e67b7f0c92e15c897ef1a933b67
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d2d7982a4e0175824ffede965dc8206219485df2
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57048990"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59396475"
 ---
-<a name="understanding-partial-page-updates-with-aspnet-ajax"></a>ASP.NET AJAX를 사용한 부분 페이지 업데이트 이해
-====================
+# <a name="understanding-partial-page-updates-with-aspnet-ajax"></a>ASP.NET AJAX를 사용한 부분 페이지 업데이트 이해
+
 [Scott Cate](https://github.com/scottcate)
 
 [PDF 다운로드](http://download.microsoft.com/download/C/1/9/C19A3451-1D14-477C-B703-54EF22E197EE/AJAX_tutorial01_Partial_Page_Updates_cs.pdf)
@@ -111,7 +111,7 @@ Visual Studio 2008에는 ASP.NET AJAX 지원 웹 사이트에 대 한 미리 정
 
 속성 태그 지원:
 
-| **속성 이름** | **Type** | **설명** |
+| **속성 이름** | **형식** | **설명** |
 | --- | --- | --- |
 | AllowCustomErrors-Redirect | Bool | 오류를 처리 하는 web.config 파일의 사용자 지정 오류 섹션을 사용할지 여부를 지정 합니다. |
 | AsyncPostBackError-Message | 문자열 | 오류가 발생 하는 경우 클라이언트에 보낸 오류 메시지를 가져오거나 설정 합니다. |
@@ -124,7 +124,7 @@ Visual Studio 2008에는 ASP.NET AJAX 지원 웹 사이트에 대 한 미리 정
 
 코드 전용 속성:
 
-| **속성 이름** | **Type** | **설명** |
+| **속성 이름** | **형식** | **설명** |
 | --- | --- | --- |
 | AuthenticationService | AuthenticationService-Manager | 클라이언트에 전송 될 ASP.NET 인증 서비스 프록시에 대 한 세부 정보를 가져옵니다. |
 | IsDebuggingEnabled | Bool | 가져옵니다 여부 스크립트 및 코드 디버깅을 사용할 수 있습니다. |
@@ -136,13 +136,13 @@ Visual Studio 2008에는 ASP.NET AJAX 지원 웹 사이트에 대 한 미리 정
 
 공용 코드 메서드:
 
-| **메서드 이름** | **Type** | **설명** |
+| **메서드 이름** | **형식** | **설명** |
 | --- | --- | --- |
 | SetFocus(string) | Void | 요청이 완료 된 경우에 특정 컨트롤에 클라이언트의 포커스를 설정 합니다. |
 
 태그 하위 항목:
 
-| **Tag** | **설명** |
+| **태그** | **설명** |
 | --- | --- |
 | &lt;AuthenticationService&gt; | ASP.NET 인증 서비스에 프록시에 대 한 세부 정보를 제공합니다. |
 | &lt;ProfileService&gt; | 서비스 프로 파일링 하는 asp.net 프록시에 대 한 정보를 제공 합니다. |
@@ -185,7 +185,7 @@ ScriptManager 컨트롤 지역화 스크립트 문자열 및 사용자 인터페
 
 속성 태그 지원:
 
-| **속성 이름** | **Type** | **설명** |
+| **속성 이름** | **형식** | **설명** |
 | --- | --- | --- |
 | ChildrenAsTriggers | bool | 자식 컨트롤이 다시 게시할 때 새로 고침을 자동으로 호출 여부를 지정 합니다. |
 | RenderMode | 열거형 (블록, 인라인) | 서 콘텐츠를 시각적으로 표시 됩니다 지정 합니다. |
@@ -193,22 +193,22 @@ ScriptManager 컨트롤 지역화 스크립트 문자열 및 사용자 인터페
 
 코드 전용 속성:
 
-| **속성 이름** | **Type** | **설명** |
+| **속성 이름** | **형식** | **설명** |
 | --- | --- | --- |
 | IsInPartialRendering | bool | UpdatePanel은 현재 요청에 대 한 부분 렌더링을 지원 하는지 여부를 가져옵니다. |
 | ContentTemplate | ITemplate | 업데이트 요청에 대 한 태그 템플릿을 가져옵니다. |
-| ContentTemplateContainer | Control | 업데이트 요청에 대 한 프로그래밍 방식으로 템플릿을 가져옵니다. |
+| ContentTemplateContainer | 컨트롤 | 업데이트 요청에 대 한 프로그래밍 방식으로 템플릿을 가져옵니다. |
 | 트리거 | UpdatePanel-TriggerCollection | 현재 UpdatePanel과 사용 하 여 연결 된 트리거 목록을 가져옵니다. |
 
 공용 코드 메서드:
 
-| **메서드 이름** | **Type** | **설명** |
+| **메서드 이름** | **형식** | **설명** |
 | --- | --- | --- |
 | Update() | Void | 지정 된 UpdatePanel을 프로그래밍 방식으로 업데이트합니다. 서버 요청을 트리거되지 그렇지 UpdatePanel의 부분 렌더링을 트리거할 수 있습니다. |
 
 태그 하위 항목:
 
-| **Tag** | **설명** |
+| **태그** | **설명** |
 | --- | --- |
 | &lt;ContentTemplate&gt; | 부분 렌더링 결과 렌더링 하는 데 사용할 태그를 지정 합니다. 자식의 &lt;asp: UpdatePanel&gt;합니다. |
 | &lt;트리거&gt; | 컬렉션을 지정 *n* 이 UpdatePanel 업데이트와 연결 된 컨트롤입니다. 자식의 &lt;asp: UpdatePanel&gt;합니다. |
@@ -280,7 +280,7 @@ DOM의 재생성 다양을 한 추가 문제를 트리거합니다.
 
 속성 태그 지원:
 
-| **속성 이름** | **Type** | **설명** |
+| **속성 이름** | **형식** | **설명** |
 | --- | --- | --- |
 | AssociatedUpdate-PanelID | 문자열 | 이 UpdateProgress에 보고 해야 하는 UpdatePanel의 ID를 지정 합니다. |
 | DisplayAfter | Int | 비동기 요청이 시작 된 후이 컨트롤이 표시 되기 전에 제한 시간을 밀리초 단위로 지정 합니다. |
@@ -288,7 +288,7 @@ DOM의 재생성 다양을 한 추가 문제를 트리거합니다.
 
 태그 하위 항목:
 
-| **Tag** | **설명** |
+| **태그** | **설명** |
 | --- | --- |
 | &lt;ProgressTemplate&gt; | 이 컨트롤을 사용 하 여 표시 되는 콘텐츠에 대 한 설정 제어 템플릿을 포함 합니다. |
 

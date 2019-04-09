@@ -8,15 +8,15 @@ ms.date: 02/20/2014
 ms.assetid: 332fb3da-e2a5-460d-bb90-dd911e1e2c95
 msc.legacyurl: /web-pages/overview/ui-layouts-and-themes/10-working-with-video
 msc.type: authoredcontent
-ms.openlocfilehash: 8f4b7186ae5c7b7b384ebcb23f7c9ad65caeb0bd
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 204611513860e268001596b9c7ac9e9c023caa12
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034150"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59399855"
 ---
-<a name="displaying-video-in-an-aspnet-web-pages-razor-site"></a>ASP.NET 웹 페이지 (Razor) 사이트에 비디오를 표시
-====================
+# <a name="displaying-video-in-an-aspnet-web-pages-razor-site"></a>ASP.NET 웹 페이지 (Razor) 사이트에 비디오를 표시
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 문서에서는 ASP.NET Web Pages (Razor) 웹 사이트에서 (미디어) 비디오 플레이어를 사용 하 여 사용자가 사이트에 저장 된 비디오를 볼 수 있도록 하는 방법에 설명 합니다. Razor 구문이 있는 ASP.NET 웹 페이지를 사용 하면 플래시 재생 (*.swf*)을 Media Player (*.wmv*), 및 Silverlight (*.xap*) 비디오.

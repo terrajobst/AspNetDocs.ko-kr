@@ -8,15 +8,15 @@ ms.date: 10/16/2008
 ms.assetid: 50ed58f9-f329-45a8-b8be-675040172072
 msc.legacyurl: /mvc/videos/mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-19a-windows-workflow-followup
 msc.type: video
-ms.openlocfilehash: de22839d9434079c3872692383893c921111c2ed
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ca8af502d6e38d45de5b9a13694c8fa4c507487d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049770"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59398392"
 ---
-<a name="aspnet-mvc-storefront-part-19a-windows-workflow-followup"></a>ASP.NET MVC Storefront 19a부: Windows Workflow 후속 작업
-====================
+# <a name="aspnet-mvc-storefront-part-19a-windows-workflow-followup"></a>ASP.NET MVC Storefront 19a부: Windows Workflow 후속 작업
+
 [Rob Conery](https://github.com/robconery)
 
 이 에피소드에서 I Windows 워크플로 사용 하는 방법에 대 한 자세한 정보를 사용 하 여 후속 에피소드 19 받은 피드백의 일부에 대해 터치 I.

@@ -8,15 +8,15 @@ ms.date: 02/18/2013
 ms.assetid: 73232292-a5fe-4720-82a1-8f6553effd1f
 msc.legacyurl: /web-forms/overview/getting-started/hands-on-labs/using-page-inspector-in-visual-studio-2012
 msc.type: authoredcontent
-ms.openlocfilehash: ce654eb5abd54613987f2375cc973febc9dc2ad5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d85fab0aeec86013761fc07ada1789b7719b24d9
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57041960"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59396566"
 ---
-<a name="using-page-inspector-in-visual-studio-2012"></a>Visual Studio 2012에서 페이지 검사기 사용
-====================
+# <a name="using-page-inspector-in-visual-studio-2012"></a>Visual Studio 2012에서 페이지 검사기 사용
+
 [웹 캠프 팀](https://twitter.com/webcamps)
 
 > 이 실습 랩에서 찾기 및 페이지 검사기 Visual Studio에서 웹 페이지 문제를 해결 하는 새 도구를 알게 됩니다.
@@ -59,7 +59,7 @@ ms.locfileid: "57041960"
 - [Microsoft Visual Studio Express 2012 for Web](https://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web) 하거나 그 보다 뛰어난 (읽을 [부록 A](#AppendixA) 설치 하는 방법에 대 한 지침은).
 - Internet Explorer 9 이상
 
-* * *
+---
 
 <a id="Exercises"></a>
 
@@ -106,7 +106,7 @@ ms.locfileid: "57041960"
     *페이지 검사기에서 미리 보기 위해 파일을 선택 하면*
 3. 페이지 검사기 창에 표시 됩니다는 */Home/Index* URL 소스 선택한 보기에 매핑됩니다.
 
-    ![ThefirstcontactwithPageInspector](using-page-inspector-in-visual-studio-2012/_static/image2.png)
+    ![PageInspector 사용 하 여 첫 번째 연락처](using-page-inspector-in-visual-studio-2012/_static/image2.png)
 
     *페이지 검사기를 사용 하 여 첫 번째 연락처*
 
@@ -130,7 +130,7 @@ ms.locfileid: "57041960"
     *설정/해제 검사 모드 단추*
 6. 페이지 검사기 브라우저에서 페이지 요소 위에 마우스 포인터를 이동 합니다. 렌더링된 된 페이지 부분 위로 마우스 포인터를 이동 하는 동안 요소 형식이 표시 되 고 Visual Studio 편집기에서 해당 소스 태그나 코드가 강조 표시 됩니다.
 
-    ![Inspectionmodeinaction](using-page-inspector-in-visual-studio-2012/_static/image5.png)
+    ![실행 중인 검사 모드](using-page-inspector-in-visual-studio-2012/_static/image5.png)
 
     *실행 중인 검사 모드*
 
@@ -139,7 +139,7 @@ ms.locfileid: "57041960"
 
     에 주의 기울여야 하는 경우는 **Index.cshtml** 파일인 선택한 요소를 생성 하는 소스 코드의 부분을 강조 표시 되어 있는지을 알 수 있습니다. 이 기능을 사용 하면 코드에 액세스 하는 직접 및 빠른 방법을 제공 하는 긴 소스 파일을 편집 합니다.
 
-    ![Inspectingelements](using-page-inspector-in-visual-studio-2012/_static/image6.png)
+    ![요소를 검사합니다.](using-page-inspector-in-visual-studio-2012/_static/image6.png)
 
     *요소를 검사합니다.*
 7. 클릭 합니다 **검사 모드 설정/해제** 단추 (![HTML 탭을 선택 하 고 페이지 검사기 브라우저에서 렌더링 된 HTML 코드를 표시 합니다.](using-page-inspector-in-visual-studio-2012/_static/image7.png "페이지 검사기 브라우저에서 렌더링 된 HTML 코드를 표시할 HTML 탭을 선택 합니다.") ) 커서를 사용 하지 않도록 설정 합니다.
@@ -156,7 +156,7 @@ ms.locfileid: "57041960"
     > [!NOTE]
     > 페이지 검사기를 열 수도 헤더 사이트 레이아웃의 일부 이므로 \_Layout.cshtml 파일 및 영향을 받는 코드의 세그먼트를 강조 표시 합니다.
 
-    ![Discoveringstyles](using-page-inspector-in-visual-studio-2012/_static/image9.png)
+    ![스타일 검색](using-page-inspector-in-visual-studio-2012/_static/image9.png)
 
     *스타일 및 선택한 요소의 소스 파일 검색*
 11. 사용 설정/해제 검사 포인터를 사용 하 여 주요 파란색 막대 아래 마우스 포인터를 이동 하 고 절반 원을 클릭 합니다.
@@ -180,7 +180,7 @@ ms.locfileid: "57041960"
     *페이지 검사기에서 CSS 값을 변경*
 15. 클릭 합니다 **스타일 추적** 페이지 검사기의 오른쪽 창에 있는 탭입니다. 이것이 특성 이름별으로 정렬 하 고 선택 항목을 적용할 모든 스타일을 참조 하는 대체 방법입니다.
 
-    ![CSSstylestracing](using-page-inspector-in-visual-studio-2012/_static/image13.png)
+    ![CSS 스타일 추적](using-page-inspector-in-visual-studio-2012/_static/image13.png)
 
     *선택한 요소의 CSS 스타일 추적*
 16. 페이지 검사기의 또 다른 기능은 레이아웃 창입니다. 탐색 모음을 선택한 다음 클릭 검사 모드를 사용 하 여 **레이아웃** 오른쪽 창에서 탭 합니다. 선택한 요소의 정확한 크기와 오프셋, 여백, 안쪽 여백 및 테두리 크기를 볼 수 있습니다. 이 보기에서 값을 수정할 수도 있습니다 알 수 있습니다.
@@ -218,7 +218,7 @@ ASP.NET MVC 4에서 없는 실제 WYSIWYG 그대로 스타일 문제를 대부�
 2. 선택한 검사 모드를 설정/해제, 가까이에 없지만, 해당 코드를 열려면 등록 링크를 클릭 합니다.
 
     링크의 소스 코드에는  **\_LoginPartial.cshtml** 하지 Index.cshtml 파일 또는 \_Layout.cshtml 첫 번째 위치에서 찾을 수 있습니다 위치입니다. 올바른 소스 파일에 직접 배치 된 했으면 합니다.
-3. 에 **스타일** 탭을 찾아 클릭 합니다 **<section> #login</section>** 항목 이러한 링크의 HTML 컨테이너입니다.
+3. 에 **스타일** 탭을 찾아 클릭 합니다  **\<섹션 > #login** 항목 이러한 링크의 HTML 컨테이너입니다.
 
     있음을 합니다 **#login** 스타일에 자동으로 위치한 **Site.css** 클릭 한 후입니다. 또한 코드는 이제 강조 표시 됩니다.
 
@@ -261,12 +261,12 @@ ASP.NET MVC 4에서 없는 실제 WYSIWYG 그대로 스타일 문제를 대부�
 
     *새 제목을 할당*
 
-    ![PhotoGallerypage](using-page-inspector-in-visual-studio-2012/_static/image23.png)
+    ![사진 갤러리 페이지](using-page-inspector-in-visual-studio-2012/_static/image23.png)
 
     *사진 갤러리 페이지 업데이트*
 11. 마지막으로 선택 합니다 **PhotoGallery** 프로젝트 및 키를 눌러 **F5** 앱을 실행 합니다. 모든 변경 내용이 예상 대로 작동을 확인 합니다.
 
-* * *
+---
 
 <a id="Exercise2"></a>
 
@@ -347,7 +347,7 @@ ASP.NET MVC 4에서 없는 실제 WYSIWYG 그대로 스타일 문제를 대부�
     > [!NOTE]
     > 헤더 사이트 레이아웃의 일부분 이므로 페이지 검사기는 Site.Master 파일 열고 영향을 받는 코드의 세그먼트를 강조 표시 합니다.
 
-    ![DiscoveringstylesWebForms](using-page-inspector-in-visual-studio-2012/_static/image32.png "스타일 및 선택한 요소의 소스 파일 검색")
+    ![검색 스타일 WebForms](using-page-inspector-in-visual-studio-2012/_static/image32.png "스타일 및 선택한 요소의 소스 파일 검색")
 
     *스타일 및 선택한 요소의 소스 파일 검색*
 11. 사용 설정/해제 검사 포인터를 사용 하 여 메뉴 모음 아래 마우스 포인터를 이동 하 고 빈 절반 원을 클릭 합니다.
@@ -421,7 +421,7 @@ ASP.NET MVC 4에서 없는 실제 WYSIWYG 그대로 스타일 문제를 대부�
     페이지 검사기는 현재 페이지를 구성 하는 모든 다른 파일을 인식 하 고 이러한 파일 중 하나를 변경 하는 경우 검색할 수 있습니다. 사용자에 게 경고 때마다 브라우저에서 현재 페이지 원본 파일과 함께 동기화 되지 않았습니다.
 5. 페이지 검사기 브라우저에서 변경 내용을 저장 하 고 페이지를 다시 로드 주소 표시줄 아래에 있는 막대를 클릭 합니다.
 
-    ![Reloadingthepage](using-page-inspector-in-visual-studio-2012/_static/image40.png)
+    ![페이지를 다시 로드](using-page-inspector-in-visual-studio-2012/_static/image40.png)
 
     *페이지를 다시 로드*
 
@@ -457,7 +457,7 @@ ASP.NET MVC 4에서 없는 실제 WYSIWYG 그대로 스타일 문제를 대부�
     *사진 갤러리 페이지 업데이트*
 11. 마지막으로 누릅니다 **F5** 체크 아웃 변경 내용이 예상 대로 작동 하는 모든 앱을 실행 하려면.
 
-* * *
+---
 
 <a id="Summary"></a>
 

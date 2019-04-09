@@ -8,15 +8,15 @@ ms.date: 03/09/2009
 ms.assetid: f52814a3-b458-415c-ab9f-b0f904c48705
 msc.legacyurl: /web-forms/videos/iis/creating-a-site-with-iis7-manager
 msc.type: video
-ms.openlocfilehash: 818a2d4a896730c54720df898fa6152349cbbfd5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: cead55311660a630ca5fe906e1afe8767c75aa7f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57048640"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59394534"
 ---
-<a name="creating-a-site-with-iis7-manager"></a>IIS7 관리자를 사용하여 사이트 만들기
-====================
+# <a name="creating-a-site-with-iis7-manager"></a>IIS7 관리자를 사용하여 사이트 만들기
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 이 비디오에서는 IIS7 사용 하 여 새 웹 사이트에 대 한 프로 비전 프로세스를 보여 줍니다.

@@ -8,15 +8,15 @@ ms.date: 10/15/2014
 ms.assetid: 92c84846-f0ea-4b5e-94b6-5004874eb060
 msc.legacyurl: /web-api/overview/security/individual-accounts-in-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 01d117260ef458453bee79285a37a8977221998c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 29c3670ad7ab93acb0be878e5bd961d0ea446eee
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57024330"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59396234"
 ---
-<a name="secure-a-web-api-with-individual-accounts-and-local-login-in-aspnet-web-api-22"></a>개별 계정 및 ASP.NET Web API 2.2에서에서 로컬 로그인을 사용 하 여 Web API 보안 유지
-====================
+# <a name="secure-a-web-api-with-individual-accounts-and-local-login-in-aspnet-web-api-22"></a>개별 계정 및 ASP.NET Web API 2.2에서에서 로컬 로그인을 사용 하 여 Web API 보안 유지
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 [샘플 앱 다운로드](https://github.com/MikeWasson/LocalAccountsApp)
@@ -253,7 +253,7 @@ OAuth 미들웨어는 사용자 계정에 대 한 아무것도 알지 못합니�
 
 ## <a name="additional-resources"></a>추가 리소스
 
-- [ASP.NET Id](../../../identity/index.md)
+- [ASP.NET ID](../../../identity/index.md)
 - [VS2013 RC에 대 한 SPA 템플릿의 보안 기능을 이해](https://blogs.msdn.com/b/webdev/archive/2013/09/20/understanding-security-features-in-spa-template.aspx)합니다. Sun Hongye에서 MSDN 블로그 게시물.
 - [웹 API 개별 계정 템플릿-파트 2 분석: 로컬 계정](http://leastprivilege.com/2013/11/26/dissecting-the-web-api-individual-accounts-templatepart-2-local-accounts/)합니다. Dominick Baier 블로그 게시물입니다.
 - [인증 및 OWIN 사용 하 여 웹 API를 호스팅할](http://brockallen.com/2013/10/27/host-authentication-and-web-api-with-owin-and-active-vs-passive-authentication-middleware/)합니다. 적절 한 설명은 `SuppressDefaultHostAuthentication` 및 `HostAuthenticationFilter` Brock Allen 여 합니다.

@@ -8,15 +8,15 @@ ms.date: 07/01/2007
 ms.assetid: 99b23369-dac6-458b-b002-56be35f43236
 msc.legacyurl: /web-forms/videos/ajax-control-toolkit/how-do-i-use-the-aspnet-ajax-resizablecontrol-extender
 msc.type: video
-ms.openlocfilehash: d597b8bbb60827e3cbcea16c49e5deb9d20ee357
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 4ce14e555b8ef2e2746832322a488733a7c5c377
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57035700"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59398841"
 ---
-<a name="how-do-i-use-the-aspnet-ajax-resizablecontrol-extender"></a>[어떻게 할까요?] ASP.NET AJAX ResizableControl Extender 사용
-====================
+# <a name="how-do-i-use-the-aspnet-ajax-resizablecontrol-extender"></a>[어떻게 할까요?] ASP.NET AJAX ResizableControl Extender 사용
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 ResizableControl extender는 ASP.NET AJAX Control Toolkit에서 개발자를가 사용자 동적으로 크기가 조정 될 수 있는 웹 페이지의 영역을 지정할 수 있습니다. 이 비디오에는 크기 조정 가능한 영역의 모양과 느낌을 구성 하는 방법 및 크기 조정 시 클라이언트 쪽 스크립트를 실행 하는 방법을 보여 줍니다.

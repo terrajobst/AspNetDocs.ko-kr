@@ -1,19 +1,20 @@
 ---
 uid: identity/overview/features-api/account-confirmation-and-password-recovery-with-aspnet-identity
-title: 계정 확인 및 암호 복구 ASP.NET id (C#) | Microsoft Docs
+title: 계정 확인 및 암호 복구-ASP.NET Id (C#)-ASP.NET 4.x
 author: HaoK
 description: 먼저 완료 해야 하는이 자습서를 수행 하기 전에 로그인, 전자 메일 확인 및 암호 재설정을 사용 하 여 보안 ASP.NET MVC 5 웹 앱을 만듭니다. 이 자습서는 중...
 ms.author: riande
 ms.date: 01/23/2019
 ms.assetid: 8d54180d-f826-4df7-b503-7debf5ed9fb3
+ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/features-api/account-confirmation-and-password-recovery-with-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: 04e4bbc8b6405dc60b8335191d88920028eef599
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 2e4cd21d66e69590fb1642d7974e4b7f82cba0cb
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58424848"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59396423"
 ---
 # <a name="account-confirmation-and-password-recovery-with-aspnet-identity-c"></a>ASP.NET Id를 사용 하 여 확인 및 암호 복구 계정 (C#)
 
@@ -229,8 +230,8 @@ SendGrid 자격 증명을 입력를 앱을 실행 등록 전자 메일 별칭을
 
 ## <a name="additional-resources"></a>추가 자료
 
-- [ASP.NET ID에 대한 사용자 지정 스토리지 공급자 개요](../extensibility/overview-of-custom-storage-providers-for-aspnet-identity.md)
+- [ASP.NET Identity에 대한 사용자 지정 스토리지 공급자 개요](../extensibility/overview-of-custom-storage-providers-for-aspnet-identity.md)
 - [Facebook, Twitter, LinkedIn 및 Google OAuth2 sign-on을 사용 하 여 MVC 5 앱](../../../mvc/overview/security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on.md) 또한 사용자가 테이블에 프로필 정보를 추가 하는 방법을 보여 줍니다.
 - [ASP.NET MVC 및 Id 2.0: 기본 사항을 이해](http://typecastexception.com/post/2014/04/20/ASPNET-MVC-and-Identity-20-Understanding-the-Basics.aspx) John Atten 여 합니다.
-- [ASP.NET ID 소개](../getting-started/introduction-to-aspnet-identity.md)
+- [ASP.NET Identity 소개](../getting-started/introduction-to-aspnet-identity.md)
 - [ASP.NET Id 2.0.0의 RTM 발표](https://blogs.msdn.com/b/webdev/archive/2014/03/20/test-announcing-rtm-of-asp-net-identity-2-0-0.aspx) Pranav rastogi 합니다.

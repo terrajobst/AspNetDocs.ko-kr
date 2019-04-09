@@ -8,15 +8,15 @@ ms.date: 03/03/2014
 ms.assetid: 5344b74e-b888-479a-92bc-601a33bd61a2
 msc.legacyurl: /web-forms/overview/getting-started/code-editing-in-web-forms-pages
 msc.type: authoredcontent
-ms.openlocfilehash: 670f81ca1ef9923575cb2fee1747f06f426963d8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 328dc6fb61ac562131b11b36b40f574ca5a53866
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029710"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59397372"
 ---
-<a name="code-editing-aspnet-web-forms-in-visual-studio-2013"></a>Visual Studio 2013의 코드 편집 ASP.NET Web Forms
-====================
+# <a name="code-editing-aspnet-web-forms-in-visual-studio-2013"></a>Visual Studio 2013의 코드 편집 ASP.NET Web Forms
+
 [Erik Reitan](https://github.com/Erikre)
 
 많은 ASP.NET Web Form 페이지에서는 Visual Basic, C# 또는 다른 언어의 코드를 작성합니다. Visual Studio에서 코드 편집기는 오류를 방지할 수 있도록 하는 동안 코드를 신속 하 게 작성 하면 도움이 됩니다. 또한 편집기는 수행 해야 하는 작업의 양을 줄이는 데 재사용 가능한 코드를 만들 수 방법을 제공 합니다.

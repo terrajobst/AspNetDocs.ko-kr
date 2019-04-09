@@ -1,19 +1,20 @@
 ---
 uid: identity/overview/getting-started/adding-aspnet-identity-to-an-empty-or-existing-web-forms-project
-title: ASP.NET Id는 비어 있는 또는 기존 웹 폼 프로젝트 추가 | Microsoft Docs
+title: ASP.NET Id는 비어 있거나 기존 web Forms 프로젝트-ASP.NET 추가 4.x
 author: raquelsa
-description: 이 자습서에서는 ASP.NET 응용 프로그램에 ASP.NET Id (ASP.NET에 대 한 새 멤버 자격 시스템)를 추가 하는 방법을 보여 줍니다. 만들 때 새 Web Forms 또는 MVC...
+description: 이 자습서에서는 ASP.NET 응용 프로그램에 ASP.NET Id (asp.net 멤버 자격 시스템)를 추가 하는 방법을 보여 줍니다. 만들 때 새 Web Forms 또는 MVC...
 ms.author: riande
 ms.date: 01/22/2019
 ms.assetid: 1cbc0ed2-5bd6-4b62-8d34-4c193dcd8b25
+ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/getting-started/adding-aspnet-identity-to-an-empty-or-existing-web-forms-project
 msc.type: authoredcontent
-ms.openlocfilehash: cd28cc68db96b52eb205b8764aa2af014ffad9c3
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8f66cdb46e4cd02509092ea3bdcb7af9c292eb8f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57038280"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59394317"
 ---
 # <a name="adding-aspnet-identity-to-an-empty-or-existing-web-forms-project"></a>비어 있는 또는 기존 Web Forms 프로젝트에 ASP.NET Identity 추가
 
@@ -145,7 +146,7 @@ ms.locfileid: "57038280"
     > [!NOTE] 
     > 
     > - 합니다 `Page_Load` 이제 현재 사용자의 상태를 확인 하 고 기반으로 하는 작업을 수행 해당 `Context.User.Identity.IsAuthenticated` 상태입니다.
-    >     **로그인 한 사용자 이름 표시** : Microsoft ASP.NET Identity Framework의 확장 메서드를 추가 했습니다 [System.Security.Principal.IIdentity](https://msdn.microsoft.com/library/system.security.principal.iidentity.aspx) 가져올 수 있도록 합니다 `UserName` 및 `UserId` 사용자 로그인에 대 한 합니다. 에 정의 된 이러한 확장 메서드는 `Microsoft.AspNet.Identity.Core` 어셈블리입니다. 이러한 확장 메서드는 대체 [HttpContext.User.Identity.Name](https://msdn.microsoft.com/library/system.web.httpcontext.user.aspx) 합니다.
+    >   **로그인 한 사용자 이름 표시** : Microsoft ASP.NET Identity Framework의 확장 메서드를 추가 했습니다 [System.Security.Principal.IIdentity](https://msdn.microsoft.com/library/system.security.principal.iidentity.aspx) 가져올 수 있도록 합니다 `UserName` 및 `UserId` 사용자 로그인에 대 한 합니다. 에 정의 된 이러한 확장 메서드는 `Microsoft.AspNet.Identity.Core` 어셈블리입니다. 이러한 확장 메서드는 대체 [HttpContext.User.Identity.Name](https://msdn.microsoft.com/library/system.web.httpcontext.user.aspx) 합니다.
     > - SignIn 메서드: `This` 메서드를 이전 대체 `CreateUser_Click` 이 샘플에 성공적으로 사용자를 만든 후 사용자 로그인 때 이제는 메서드.   
     >   Microsoft OWIN 프레임 워크에서 확장 메서드를 추가 했습니다 `System.Web.HttpContext` 에 대 한 참조를 가져올 수 있도록는 `IOwinContext`합니다. 이러한 확장 메서드에 정의 된 `Microsoft.Owin.Host.SystemWeb` 어셈블리입니다. 합니다 `OwinContext` 노출 클래스는 `IAuthenticationManager` 현재 요청에서 사용 가능한 인증 미들웨어 기능을 나타내는 속성입니다. 사용자를 사용 하 여 로그인 합니다 `AuthenticationManager` OWIN 및 호출 `SignIn` 전달는 `ClaimsIdentity` 위에 표시 된 대로. 생성할 앱 프레임 워크에 필요한 ASP.NET Id 및 OWIN 쿠키 인증 클레임 기반 시스템 이기 때문에 `ClaimsIdentity` 사용자에 대 한 합니다. `ClaimsIdentity` 사용자가 속한 역할 등 사용자에 대 한 모든 클레임에 대 한 정보입니다. 또한이 코드는 사용자를 로그인 하 고도 쿠키를 생성 합니다.이 단계에서 사용자에 대 한 더 많은 클레임을 추가할 수 있습니다. 이 호출은 비슷합니다 [FormAuthentication.SetAuthCookie](https://msdn.microsoft.com/library/system.web.security.formsauthentication.setauthcookie.aspx) 에서 사용 합니다 [FormsAuthentication](https://msdn.microsoft.com/library/system.web.security.formsauthenticationmodule.aspx) 모듈입니다.
     > - `SignOut` 방법: 에 대 한 참조를 가져옵니다 합니다 `AuthenticationManager` OWIN 및 호출에서 `SignOut`합니다. 이 비슷합니다 [FormsAuthentication.SignOut](https://msdn.microsoft.com/library/system.web.security.formsauthentication.signout.aspx) 에서 사용 하는 메서드는 [FormsAuthentication](https://msdn.microsoft.com/library/system.web.security.formsauthenticationmodule.aspx) 모듈입니다.

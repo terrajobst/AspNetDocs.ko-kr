@@ -8,15 +8,15 @@ ms.date: 03/02/2009
 ms.assetid: 344bb38e-4965-4c47-bda1-f6d29ae5b83a
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/validating-with-a-service-layer-vb
 msc.type: authoredcontent
-ms.openlocfilehash: ecce8e4f0a901ce8c185d2b085f4d706bd57fa1f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: fc819494ef58824d485144396e3a995d906c8b42
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029140"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59398711"
 ---
-<a name="validating-with-a-service-layer-vb"></a>서비스 레이어를 사용한 유효성 검사(VB)
-====================
+# <a name="validating-with-a-service-layer-vb"></a>서비스 레이어를 사용한 유효성 검사(VB)
+
 [Stephen walther가](https://github.com/StephenWalther)
 
 > 사용자 유효성 검사 논리는 별도 서비스 계층 및 컨트롤러 작업에서 이동 하는 방법에 알아봅니다. 이 자습서에서는 Stephen walther가 컨트롤러 계층에서 서비스 계층을 격리 하 여 중요 한 부분의 분리를 선명 하 게 유지할 수 있습니다에 대해 설명 합니다.
@@ -30,7 +30,7 @@ ASP.NET MVC 응용 프로그램을 빌드하면 컨트롤러 작업 내에서 �
 
 예를 들어 목록 1은 ProductRepository 라는 간단한 리포지토리가 포함 되어 있습니다. 제품 리포지토리에 모든 응용 프로그램에 대 한 데이터 액세스 코드를 포함합니다. 목록에는 제품 리포지토리를 구현 하는 IProductRepository 인터페이스도를 포함 됩니다.
 
-**Listing 1 - Models\ProductRepository.vb**
+**1-Models\ProductRepository.vb 나열**
 
 [!code-vb[Main](validating-with-a-service-layer-vb/samples/sample1.vb)]
 
