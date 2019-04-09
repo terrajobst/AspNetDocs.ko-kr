@@ -8,22 +8,22 @@ ms.date: 02/09/2007
 ms.assetid: e262ca69-55e5-4ec2-b278-78ee129b4649
 msc.legacyurl: /web-forms/videos/vs-2005/introduction-to-managing-and-running-tests-with-team-system
 msc.type: video
-ms.openlocfilehash: 1b9ea5277253395ba16b3a4480b61fb522327d75
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: da305fcb2c47279df200d3b1229df927aceec764
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57048940"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59401935"
 ---
-<a name="introduction-to-managing-and-running-tests-with-team-system"></a><span data-ttu-id="40aa3-104">관리 및 Team System을 사용한 테스트 실행에 대 한 소개</span><span class="sxs-lookup"><span data-stu-id="40aa3-104">Introduction to Managing and Running Tests with Team System</span></span>
-====================
-<span data-ttu-id="40aa3-105">Eric Lee 여</span><span class="sxs-lookup"><span data-stu-id="40aa3-105">by Eric Lee</span></span>
+# <a name="introduction-to-managing-and-running-tests-with-team-system"></a><span data-ttu-id="1707a-104">관리 및 Team System을 사용한 테스트 실행에 대 한 소개</span><span class="sxs-lookup"><span data-stu-id="1707a-104">Introduction to Managing and Running Tests with Team System</span></span>
 
-<span data-ttu-id="40aa3-106">이 비디오에서는 모든 관리할 수 있습니다 또는 Visual Studio Team System의 테스트 관리 기능을 사용 하 여 사례를 테스트 하는 여러 방법을 표시 합니다.</span><span class="sxs-lookup"><span data-stu-id="40aa3-106">In this video we see how you can manage all or your various test cases using the test management capabilities of Visual Studio Team System.</span></span> <span data-ttu-id="40aa3-107">또한 살펴보겠습니다 테스트 실행 하 고 구성 하는 방법.</span><span class="sxs-lookup"><span data-stu-id="40aa3-107">We will also see how tests are run and configured.</span></span>
+<span data-ttu-id="1707a-105">Eric Lee 여</span><span class="sxs-lookup"><span data-stu-id="1707a-105">by Eric Lee</span></span>
 
-[<span data-ttu-id="40aa3-108">&#9654;동영상 (8 분)</span><span class="sxs-lookup"><span data-stu-id="40aa3-108">&#9654; Watch video (8 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/introduction-to-managing-and-running-tests-with-team-system)
+<span data-ttu-id="1707a-106">이 비디오에서는 모든 관리할 수 있습니다 또는 Visual Studio Team System의 테스트 관리 기능을 사용 하 여 사례를 테스트 하는 여러 방법을 표시 합니다.</span><span class="sxs-lookup"><span data-stu-id="1707a-106">In this video we see how you can manage all or your various test cases using the test management capabilities of Visual Studio Team System.</span></span> <span data-ttu-id="1707a-107">또한 살펴보겠습니다 테스트 실행 하 고 구성 하는 방법.</span><span class="sxs-lookup"><span data-stu-id="1707a-107">We will also see how tests are run and configured.</span></span>
+
+[<span data-ttu-id="1707a-108">&#9654;동영상 (8 분)</span><span class="sxs-lookup"><span data-stu-id="1707a-108">&#9654; Watch video (8 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/introduction-to-managing-and-running-tests-with-team-system)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="40aa3-109">[이전](introduction-to-manual-testing-with-team-system.md)
-> [다음](measuring-the-business-value-of-ajax.md)</span><span class="sxs-lookup"><span data-stu-id="40aa3-109">[Previous](introduction-to-manual-testing-with-team-system.md)
+> <span data-ttu-id="1707a-109">[이전](introduction-to-manual-testing-with-team-system.md)
+> [다음](measuring-the-business-value-of-ajax.md)</span><span class="sxs-lookup"><span data-stu-id="1707a-109">[Previous](introduction-to-manual-testing-with-team-system.md)
 [Next](measuring-the-business-value-of-ajax.md)</span></span>

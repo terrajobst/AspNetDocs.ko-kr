@@ -8,14 +8,14 @@ ms.date: 02/10/2010
 ms.assetid: 6bea4655-b0a2-442a-b9c1-d323467befd8
 msc.legacyurl: ''
 msc.type: content
-ms.openlocfilehash: 6cfdba4615d3c12d850de3630d5e4bf0494aebee
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7a73b6657e6f074cac5e63c907924a8cae68e60e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57022780"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59397190"
 ---
-<a name="aspnet-4-and-visual-studio-2010-web-development-overview"></a><span data-ttu-id="36d90-103">ASP.NET 4 및 Visual Studio 2010 웹 개발 개요</span><span class="sxs-lookup"><span data-stu-id="36d90-103">ASP.NET 4 and Visual Studio 2010 Web Development Overview</span></span>
-====================
-- [<span data-ttu-id="36d90-104">ASP.NET 4 및 Visual Studio 2010 웹 개발 개요</span><span class="sxs-lookup"><span data-stu-id="36d90-104">ASP.NET 4 and Visual Studio 2010 Web Development Overview</span></span>](overview.md)
-- [<span data-ttu-id="36d90-105">ASP.NET 4 주요 변경 내용</span><span class="sxs-lookup"><span data-stu-id="36d90-105">ASP.NET 4 Breaking Changes</span></span>](breaking-changes.md)
+# <a name="aspnet-4-and-visual-studio-2010-web-development-overview"></a><span data-ttu-id="ee1e0-103">ASP.NET 4 및 Visual Studio 2010 웹 개발 개요</span><span class="sxs-lookup"><span data-stu-id="ee1e0-103">ASP.NET 4 and Visual Studio 2010 Web Development Overview</span></span>
+
+- [<span data-ttu-id="ee1e0-104">ASP.NET 4 및 Visual Studio 2010 웹 개발 개요</span><span class="sxs-lookup"><span data-stu-id="ee1e0-104">ASP.NET 4 and Visual Studio 2010 Web Development Overview</span></span>](overview.md)
+- [<span data-ttu-id="ee1e0-105">ASP.NET 4 주요 변경 내용</span><span class="sxs-lookup"><span data-stu-id="ee1e0-105">ASP.NET 4 Breaking Changes</span></span>](breaking-changes.md)
