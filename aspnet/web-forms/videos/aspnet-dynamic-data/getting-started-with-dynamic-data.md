@@ -8,22 +8,22 @@ ms.date: 10/23/2008
 ms.assetid: 2011925a-789d-4160-af31-4667097727f1
 msc.legacyurl: /web-forms/videos/aspnet-dynamic-data/getting-started-with-dynamic-data
 msc.type: video
-ms.openlocfilehash: 25f8a03d37fb900af59b1bdd29c33e06f1706e9b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 9f40088b40705976983096446e88225d5b434a2a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57027810"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411321"
 ---
-<a name="getting-started-with-dynamic-data"></a><span data-ttu-id="bc39e-103">Dynamic Data 시작</span><span class="sxs-lookup"><span data-stu-id="bc39e-103">Getting Started with Dynamic Data</span></span>
-====================
-<span data-ttu-id="bc39e-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="bc39e-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+# <a name="getting-started-with-dynamic-data"></a><span data-ttu-id="b5c8c-103">Dynamic Data 시작</span><span class="sxs-lookup"><span data-stu-id="b5c8c-103">Getting Started with Dynamic Data</span></span>
 
-<span data-ttu-id="bc39e-105">이 비디오에서는 빌드할 전체 ASP.NET 응용 프로그램을 ASP.NET Dynamic Data를 사용 하 여 동적 데이터의 코드 생성, 스 캐 폴딩 및 템플릿을 사용 하 여 Northwind 데이터를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="bc39e-105">In this video we'll build an entire ASP.NET application with ASP.NET Dynamic Data using the Northwind Data by using Dynamic Data's code generating, scaffolding and templates.</span></span> <span data-ttu-id="bc39e-106">완성된 된 응용 프로그램 AJAX 동작 및 전체 CRUD 기능을 사용 하 여 데이터베이스 계층을 사용 하 여 완료 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="bc39e-106">The finished application is complete with AJAX Behaviors and a database layer with full CRUD functionality.</span></span>
+<span data-ttu-id="b5c8c-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="b5c8c-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-[<span data-ttu-id="bc39e-107">&#9654;비디오 (23 분)</span><span class="sxs-lookup"><span data-stu-id="bc39e-107">&#9654; Watch video (23 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/getting-started-with-dynamic-data)
+<span data-ttu-id="b5c8c-105">이 비디오에서는 빌드할 전체 ASP.NET 응용 프로그램을 ASP.NET Dynamic Data를 사용 하 여 동적 데이터의 코드 생성, 스 캐 폴딩 및 템플릿을 사용 하 여 Northwind 데이터를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="b5c8c-105">In this video we'll build an entire ASP.NET application with ASP.NET Dynamic Data using the Northwind Data by using Dynamic Data's code generating, scaffolding and templates.</span></span> <span data-ttu-id="b5c8c-106">완성된 된 응용 프로그램 AJAX 동작 및 전체 CRUD 기능을 사용 하 여 데이터베이스 계층을 사용 하 여 완료 되었습니다.</span><span class="sxs-lookup"><span data-stu-id="b5c8c-106">The finished application is complete with AJAX Behaviors and a database layer with full CRUD functionality.</span></span>
+
+[<span data-ttu-id="b5c8c-107">&#9654;비디오 (23 분)</span><span class="sxs-lookup"><span data-stu-id="b5c8c-107">&#9654; Watch video (23 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/getting-started-with-dynamic-data)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="bc39e-108">[이전](how-do-i-use-a-dynamiccontrol-in-listview-and-detailsview-controls.md)
-> [다음](begin-editing-the-templates-in-aspnet-dynamic-data-applications.md)</span><span class="sxs-lookup"><span data-stu-id="bc39e-108">[Previous](how-do-i-use-a-dynamiccontrol-in-listview-and-detailsview-controls.md)
+> <span data-ttu-id="b5c8c-108">[이전](how-do-i-use-a-dynamiccontrol-in-listview-and-detailsview-controls.md)
+> [다음](begin-editing-the-templates-in-aspnet-dynamic-data-applications.md)</span><span class="sxs-lookup"><span data-stu-id="b5c8c-108">[Previous](how-do-i-use-a-dynamiccontrol-in-listview-and-detailsview-controls.md)
 [Next](begin-editing-the-templates-in-aspnet-dynamic-data-applications.md)</span></span>
