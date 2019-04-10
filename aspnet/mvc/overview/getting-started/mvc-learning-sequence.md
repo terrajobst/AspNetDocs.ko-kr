@@ -8,15 +8,15 @@ ms.date: 05/22/2015
 ms.assetid: 8513a57a-2d45-4d6b-881c-15a01c5cbb1c
 msc.legacyurl: /mvc/overview/getting-started/mvc-learning-sequence
 msc.type: authoredcontent
-ms.openlocfilehash: 720e3999fe2c1872a50c82bad0711bbcadd176cd
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: e78ad67187b2da96ca3766e6914e396508aa180e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029270"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59417548"
 ---
-<a name="mvc-recommended-tutorials-and-articles"></a>MVC 권장 자습서 및 문서
-====================
+# <a name="mvc-recommended-tutorials-and-articles"></a>MVC 권장 자습서 및 문서
+
 [Rick Anderson]((https://twitter.com/RickAndMSFT))
 
 <a id="pwd"></a>
@@ -52,4 +52,4 @@ ms.locfileid: "57029270"
 <a id="perf"></a>
 ## <a name="performance-and-debugging"></a>성능 및 디버깅
 
-- [Glimpse를 사용하여 ASP.NET MVC 앱 프로파일링 및 디버깅](../performance/profile-and-debug-your-aspnet-mvc-app-with-glimpse.md)
+- [Glimpse를 사용하여 ASP.NET MVC 앱 프로파일링 및 디버그](../performance/profile-and-debug-your-aspnet-mvc-app-with-glimpse.md)

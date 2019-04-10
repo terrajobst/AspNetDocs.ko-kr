@@ -8,15 +8,15 @@ ms.date: 08/15/2006
 ms.assetid: 811a6ef2-ec66-4c8e-a089-6f795056e288
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting/paging-and-sorting-report-data-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 15e23b09df13f11c69a2fd6c721981e632a25434
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: dc5b2a2888eebb4b812caf3fc11bf109d54bb73d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422118"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59420694"
 ---
-<a name="paging-and-sorting-report-data-c"></a>페이징 및 정렬 보고서 데이터(C#)
-====================
+# <a name="paging-and-sorting-report-data-c"></a>페이징 및 정렬 보고서 데이터(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_24_CS.exe) 또는 [PDF 다운로드](paging-and-sorting-report-data-cs/_static/datatutorial24cs1.pdf)
@@ -67,7 +67,7 @@ ms.locfileid: "58422118"
 
 ## <a name="step-2-displaying-product-information-in-a-gridview"></a>2단계: GridView의 제품 정보를 표시합니다.
 
-에서는 실제로 페이징 및 정렬 기능을 구현 하기 전에 먼저를 표준 비-srotable, 제품 정보를 나열 하는 페이징할 수 없는 GridView를 만든 수 있습니다. 이 작업은 우리가 ve 살지 않는 여러 번이 자습서 시리즈 전체에서 이러한 단계에 알고 있어야 합니다. 열어서 시작 합니다 `SimplePagingSorting.aspx` 페이지 및 설정 디자이너 도구 상자에서 GridView 컨트롤을 끌어 해당 `ID` 속성을 `Products`입니다. 다음에 s ProductsBLL 클래스를 사용 하는 새 ObjectDataSource 만듭니다 `GetProducts()` 모든 제품 정보를 반환 하는 방법입니다.
+에서는 실제로 페이징 및 정렬 기능을 구현 하기 전에 먼저 제품 정보를 나열 하는 표준 정렬할 수 없는, 페이징할 수 없는 GridView를 만든 수 있습니다. 이 작업은 우리가 ve 살지 않는 여러 번이 자습서 시리즈 전체에서 이러한 단계에 알고 있어야 합니다. 열어서 시작 합니다 `SimplePagingSorting.aspx` 페이지 및 설정 디자이너 도구 상자에서 GridView 컨트롤을 끌어 해당 `ID` 속성을 `Products`입니다. 다음에 s ProductsBLL 클래스를 사용 하는 새 ObjectDataSource 만듭니다 `GetProducts()` 모든 제품 정보를 반환 하는 방법입니다.
 
 
 ![모든 GetProducts() 메서드를 사용 하 여 제품에 대 한 정보를 검색 합니다.](paging-and-sorting-report-data-cs/_static/image4.png)
@@ -91,7 +91,7 @@ ms.locfileid: "58422118"
 그림 6 브라우저를 통해 볼 때 지금 진행 상황을 보여줍니다. 페이지의 각 s 제품 이름, 범주, 공급자, 가격을 보여 주는 한 화면에서 제품의 모든를 나열 하 고 상태를 중단 note 합니다.
 
 
-[![나열 된 각 제품](paging-and-sorting-report-data-cs/_static/image7.png)](paging-and-sorting-report-data-cs/_static/image6.png)
+[![E제품에 대 한 ach 나와](paging-and-sorting-report-data-cs/_static/image7.png)](paging-and-sorting-report-data-cs/_static/image6.png)
 
 **그림 6**: 나열 된 각 제품 ([클릭 하 여 큰 이미지 보기](paging-and-sorting-report-data-cs/_static/image8.png))
 
@@ -101,7 +101,7 @@ ms.locfileid: "58422118"
 나열 *모든* 한 화면에서 제품 데이터를 읽는 데 사용자에 대 한 정보 오버 로드에 발생할 수 있습니다. 결과 보다 잘 관리할 수 있도록 하려면 수 데이터의 작은 페이지에 데이터를 분할 하 고 사용자가 한 번에 데이터 한 페이지를 단계별로 실행 하도록 허용 합니다. 위해이 단순히 확인란 페이징 사용 GridView가 스마트 태그에서 (GridView가 설정 [ `AllowPaging` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.allowpaging.aspx) 하려면 `true`).
 
 
-[![확인란을 사용 하도록 설정 페이징 페이징 지원을 추가 하려면](paging-and-sorting-report-data-cs/_static/image10.png)](paging-and-sorting-report-data-cs/_static/image9.png)
+[![C도대체 사용 페이징 하는 확인란을 페이징 지원 추가](paging-and-sorting-report-data-cs/_static/image10.png)](paging-and-sorting-report-data-cs/_static/image9.png)
 
 **그림 7**: 페이징 확인란을 사용 하도록 설정 페이징 지원 추가 ([클릭 하 여 큰 이미지 보기](paging-and-sorting-report-data-cs/_static/image11.png))
 
@@ -137,7 +137,7 @@ S를 GridView의 페이징 인터페이스의 기본 모양을 개선 하기 위
 그림 8 GridView s 페이징 사용 확인란을 선택 된 후 브라우저를 통해 방문할 때 웹 페이지를 보여 줍니다. 및 `PagerStyle` 하 고 `PagerSettings` 구성을 통해 이루어졌습니다는 `GridView.skin` 파일. 참고 하는 방법만 10 개의 레코드가 표시 됩니다 및 페이징 인터페이스는 데이터의 첫 번째 페이지를 보고 있는 것을 나타냅니다.
 
 
-[![한 번에 레코드의 하위 집합만 표시 됩니다 페이징 사용](paging-and-sorting-report-data-cs/_static/image13.png)](paging-and-sorting-report-data-cs/_static/image12.png)
+[![Wi 번째 레코드의 하위 집합만 사용, 페이징 한 번에 표시 됩니다](paging-and-sorting-report-data-cs/_static/image13.png)](paging-and-sorting-report-data-cs/_static/image12.png)
 
 **그림 8**: 페이징 사용 레코드의 하위 집합만 표시 되는 한 번에 ([클릭 하 여 큰 이미지 보기](paging-and-sorting-report-data-cs/_static/image14.png))
 
@@ -145,7 +145,7 @@ S를 GridView의 페이징 인터페이스의 기본 모양을 개선 하기 위
 사용자가 페이징 인터페이스의 페이지 번호 중 하나에서 포스트백 근거가 시간과 페이지를 보여 주는 페이지의 레코드를 요청 하는 다시 로드 합니다. 그림 9는 데이터의 마지막 페이지를 보려면 선택 후 결과 보여 줍니다. 마지막 페이지에만 하나의 레코드는 알 수 있습니다. 전체적으로 8 페이지의 유일한 레코드를 사용 하 여 페이지와 페이지 당 10 개의 레코드에서 결과 81 레코드가 때문입니다.
 
 
-[![포스트백을 발생 시키는 페이지 번호를 클릭 하 고 적절 한 레코드 하위 집합을 보여 줍니다.](paging-and-sorting-report-data-cs/_static/image16.png)](paging-and-sorting-report-data-cs/_static/image15.png)
+[![C페이지 번호에서 비위를 맞추는 데 포스트백을 발생 시키는 및 적절 한 하위 집합의 레코드를 보여 줍니다.](paging-and-sorting-report-data-cs/_static/image16.png)](paging-and-sorting-report-data-cs/_static/image15.png)
 
 **그림 9**: 포스트백을 발생 시키는 페이지 번호를 클릭 하 고 적절 한 레코드 하위 집합을 보여 줍니다 ([클릭 하 여 큰 이미지 보기](paging-and-sorting-report-data-cs/_static/image17.png))
 
@@ -182,7 +182,7 @@ S를 GridView의 페이징 인터페이스의 기본 모양을 개선 하기 위
 사용자는이 추가 사용 하 여 어떤 페이지를 방문 하는 것 이며 데이터의 총 페이지 수를 나타내는 메시지를 이제 표시 됩니다.
 
 
-[![현재 페이지 번호와 총 페이지 수 표시 됩니다.](paging-and-sorting-report-data-cs/_static/image19.png)](paging-and-sorting-report-data-cs/_static/image18.png)
+[![T또한 현재 페이지 번호와 총 페이지 수 표시 됩니다](paging-and-sorting-report-data-cs/_static/image19.png)](paging-and-sorting-report-data-cs/_static/image18.png)
 
 **그림 10**: 현재 페이지 번호와 총 페이지 수 표시 됩니다 ([클릭 하 여 큰 이미지 보기](paging-and-sorting-report-data-cs/_static/image20.png))
 
@@ -206,7 +206,7 @@ S를 GridView의 페이징 인터페이스의 기본 모양을 개선 하기 위
 그림 11에서 알 수 있듯이, 단순히 GridView s 변경 `PageIndex` 속성 하면 데이터가 GridView에 바인딩됩니다. GridView `DataBound` 이벤트 처리기를 적절 한 DropDownList `ListItem` 을 선택 합니다.
 
 
-[![사용자가 자동으로 여섯 번째 페이지 선택을 선택 하면 페이지 6 드롭 다운 목록 항목 이동](paging-and-sorting-report-data-cs/_static/image22.png)](paging-and-sorting-report-data-cs/_static/image21.png)
+[![T사용자 담당 하는 여섯 번째 페이지 선택을 선택 하면 페이지 6 드롭 다운 목록 항목을 자동으로 이동](paging-and-sorting-report-data-cs/_static/image22.png)](paging-and-sorting-report-data-cs/_static/image21.png)
 
 **그림 11**: 사용자가 자동으로 여섯 번째 페이지 선택을 선택 하면 페이지 6 드롭 다운 목록 항목 이동 ([클릭 하 여 큰 이미지 보기](paging-and-sorting-report-data-cs/_static/image23.png))
 
@@ -231,7 +231,7 @@ GridView가 스마트 태그에서 정렬 사용 옵션을 선택 하기만 하�
 이 CSS 추가 후 브라우저를 통해 페이지를 방문할 때 화면 비슷합니다 그림 12. 특히, 그림 12 가격 필드의 헤더 링크를 클릭 된 후 결과 보여줍니다.
 
 
-[![UnitPrice 오름차순으로 정렬 하 여 결과 정렬 된 것](paging-and-sorting-report-data-cs/_static/image25.png)](paging-and-sorting-report-data-cs/_static/image24.png)
+[![T그 결과 오름차순 순서로 UnitPrice 하 여 정렬 된 것](paging-and-sorting-report-data-cs/_static/image25.png)](paging-and-sorting-report-data-cs/_static/image24.png)
 
 **그림 12**: 결과 정렬 된 것에서 오름차순 순서로 UnitPrice ([클릭 하 여 큰 이미지 보기](paging-and-sorting-report-data-cs/_static/image26.png))
 
@@ -264,7 +264,7 @@ GridView가 스마트 태그에서 정렬 사용 옵션을 선택 하기만 하�
 한 번 합니다 `SortExpression` 속성에 대 한 제거 되었습니다는 `UnitPrice` BoundField 헤더 price가 데이터 정렬에서 사용자를 방지 하므로 링크가 아니라 텍스트로 렌더링 됩니다.
 
 
-[![SortExpression 속성을 제거 하 여 정렬을 수행할 수 없습니다 더 이상 제품 가격](paging-and-sorting-report-data-cs/_static/image29.png)](paging-and-sorting-report-data-cs/_static/image28.png)
+[![B사용자가 더 이상 SortExpression 속성을 제거 하는 y 정렬 가격으로 제품](paging-and-sorting-report-data-cs/_static/image29.png)](paging-and-sorting-report-data-cs/_static/image28.png)
 
 **그림 14**: SortExpression 속성을 제거 하 여 사용자가 제품 By Price 정렬 더 이상 수 ([클릭 하 여 큰 이미지 보기](paging-and-sorting-report-data-cs/_static/image30.png))
 
@@ -283,7 +283,7 @@ GridView s를 사용 하 여 GridView의 콘텐츠를 프로그래밍 방식으�
 이 단추를 클릭 하면 사용자 첫 페이지에 가격에서 가장 비용이 저렴 (그림 15 참조) 별로 정렬 된 제품을 사용 하 여 반환 합니다.
 
 
-[![제품에서 가장 비용이 많이 드는 정렬 단추를 클릭 하면 가장 적은를](paging-and-sorting-report-data-cs/_static/image32.png)](paging-and-sorting-report-data-cs/_static/image31.png)
+[![C비위를 맞추는 데 단추 주문 제품에서의 가장 많은 비용이 적게를](paging-and-sorting-report-data-cs/_static/image32.png)](paging-and-sorting-report-data-cs/_static/image31.png)
 
 **그림 15**: 제품에서의 가장 많은 비용이 가장 적은에 정렬 단추를 클릭 하면 ([클릭 하 여 큰 이미지 보기](paging-and-sorting-report-data-cs/_static/image33.png))
 

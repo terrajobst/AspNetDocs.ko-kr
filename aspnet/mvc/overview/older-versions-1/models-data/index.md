@@ -8,15 +8,15 @@ ms.date: 09/28/2011
 ms.assetid: 9086d8a8-7952-4a7e-82a7-724d48178555
 msc.legacyurl: /mvc/overview/older-versions-1/models-data
 msc.type: chapter
-ms.openlocfilehash: aee92dffc059d984bc9e5d5a93fc03ed4a2f8136
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bdd63889eacea1ef03686a65fc1144d16cd41353
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57019350"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59420629"
 ---
-<a name="models-data"></a>모델(데이터)
-====================
+# <a name="models-data"></a>모델(데이터)
+
 > 이 자습서 시리즈에서는 Microsoft Entity Framework를 사용 하 여 ASP.NET MVC를 사용 하는 방법을 알아봅니다. 이 자습서의이 코스를 통해 선택, 삽입, 업데이트 및 Entity Framework를 사용 하 여 데이터베이스 데이터를 삭제 하는 방법을 보여 주는 웹 응용 프로그램을 빌드할 수 있습니다.
 
 

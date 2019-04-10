@@ -8,15 +8,15 @@ ms.date: 06/25/2013
 ms.assetid: 646edfc7-dc62-4fa0-84c2-926996c92aeb
 msc.legacyurl: /visual-studio/overview/2013
 msc.type: chapter
-ms.openlocfilehash: 74793becba663d163a31cb1b02654b7b6cb021af
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c7c0de7ade31e43e3b43495cb6755608872d506d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57022330"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59412751"
 ---
-<a name="aspnet-and-visual-studio-2013"></a>ASP.NET 및 Visual Studio 2013
-====================
+# <a name="aspnet-and-visual-studio-2013"></a>ASP.NET 및 Visual Studio 2013
+
 > Visual Studio 2013을 사용 하 여 ASP.NET 웹 앱 개발
 
 
@@ -32,5 +32,5 @@ ms.locfileid: "57022330"
 - [브라우저 링크](using-browser-link.md)
 - [Visual Studio 2013용 ASP.NET 및 Web Tools 릴리스 정보](release-notes.md)
 - [ASP.NET 및 Web Tools 2013.2 for Visual Studio 2013 릴리스 정보](aspnet-and-web-tools-20132-preview-for-visual-studio-2013-release-notes.md)
-- [실습: Visual Studio 2013 Web Tools](visual-studio-2013-web-tools.md)
+- [실습: Visual Studio 2013 웹 도구](visual-studio-2013-web-tools.md)
 - [실습: 하나의 ASP.NET: ASP.NET Web Forms, MVC 및 Web API 통합](one-aspnet-integrating-aspnet-web-forms-mvc-and-web-api.md)

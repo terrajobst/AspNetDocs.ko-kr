@@ -8,15 +8,15 @@ ms.date: 01/27/2009
 ms.assetid: e4ba9786-734c-4eb3-91bb-089793325d0d
 msc.legacyurl: /mvc/overview/older-versions-1/movie-database/create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb
 msc.type: authoredcontent
-ms.openlocfilehash: f0a060bffc2e45f54d03571b6609a30876202e32
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 51e5c6f5c1b4007e0e7f927a4d758f3784cdf22b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57044810"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59412725"
 ---
-<a name="create-a-movie-database-application-in-15-minutes-with-aspnet-mvc-vb"></a>ASP.NET MVC를 사용하여 15분 만에 영화 데이터베이스 애플리케이션 만들기(VB)
-====================
+# <a name="create-a-movie-database-application-in-15-minutes-with-aspnet-mvc-vb"></a>ASP.NET MVC를 사용하여 15분 만에 영화 데이터베이스 애플리케이션 만들기(VB)
+
 [Stephen walther가](https://github.com/StephenWalther)
 
 [코드 다운로드](http://download.microsoft.com/download/7/2/8/728F8794-E59A-4D18-9A56-7AD2DB05BD9D/MovieApp_VB.zip)
@@ -78,7 +78,7 @@ Visual Studio 2008 또는 Visual Web Developer 2008을 설치한 후 ASP.NET MVC
 Visual Studio 2008에서 새 ASP.NET MVC 웹 응용 프로그램 프로젝트를 만들어 보겠습니다. 메뉴 옵션을 선택 **파일, 새 프로젝트** 그림 1의 새 프로젝트 대화 상자를 볼 수 있습니다. 프로그래밍 언어와 Visual Basic을 선택 하 고 ASP.NET MVC 웹 응용 프로그램 프로젝트 템플릿을 선택 합니다. 프로젝트 이름을 MovieApp 제공 하 고 확인 단추를 클릭 합니다.
 
 
-[![새 프로젝트 대화 상자](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image1.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image1.png)
+[![T새 프로젝트 대화 상자의 그](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image1.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image1.png)
 
 **그림 01**: 새 프로젝트 대화 상자 ([클릭 하 여 큰 이미지 보기](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image2.png))
 
@@ -93,7 +93,7 @@ Visual Studio 2008에서 새 ASP.NET MVC 웹 응용 프로그램 프로젝트를
 > Visual Web Developer는 테스트 프로젝트를 지원 하지 않습니다.
 
 
-[![새 프로젝트 대화 상자](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image2.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image3.png)
+[![T새 프로젝트 대화 상자의 그](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image2.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image3.png)
 
 **그림 02**: 단위 테스트 프로젝트 만들기 대화 상자 ([클릭 하 여 큰 이미지 보기](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image4.png))
 
@@ -120,7 +120,7 @@ Visual Studio를 사용 하 여 새 MVC 응용 프로그램을 만든 경우 샘
 > 서버 탐색기 창에는 Visual Web Developer의 경우 데이터베이스 탐색기 창을 이라고 합니다.
 
 
-[![새 프로젝트 대화 상자](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image3.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image5.png)
+[![T새 프로젝트 대화 상자의 그](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image3.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image5.png)
 
 **그림 03**: Microsoft SQL Server 데이터베이스 만들기 ([클릭 하 여 큰 이미지 보기](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image6.png))
 
@@ -141,7 +141,7 @@ Visual Studio를 사용 하 여 새 MVC 응용 프로그램을 만든 경우 샘
 첫 번째 열, Id 열에 두 특수 속성이 있습니다. 첫째, Id 열을 기본 키 열으로 표시 해야 합니다. Id 열을 선택한 후 클릭 합니다 **기본 키 설정** 단추 (예: 키 보이는 아이콘을 임). 둘째, Id 열을 Id 열으로 표시 해야 합니다. 열 속성 창에서 Id 사양 섹션까지 아래로 스크롤하여 확장 합니다. 변경 된 **Id** 속성을 값 **예**합니다. 작업을 완료 하는 경우 테이블은 그림 4와 같습니다.
 
 
-[![새 프로젝트 대화 상자](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image4.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image7.png)
+[![T새 프로젝트 대화 상자의 그](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image4.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image7.png)
 
 **그림 04**: 영화 데이터베이스 테이블 ([클릭 하 여 큰 이미지 보기](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image8.png))
 
@@ -151,7 +151,7 @@ Visual Studio를 사용 하 여 새 MVC 응용 프로그램을 만든 경우 샘
 테이블 만들기를 마친 후 테이블에 일부 영화 레코드를 추가 합니다. 서버 탐색기 창에서 동영상 테이블을 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을 선택 **테이블 데이터 표시**합니다. (그림 5 참조) 즐겨 찾는 영화 목록을 입력 합니다.
 
 
-[![새 프로젝트 대화 상자](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image5.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image9.png)
+[![T새 프로젝트 대화 상자의 그](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image5.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image9.png)
 
 **그림 05**: 입력 동영상 레코드 ([클릭 하 여 큰 이미지 보기](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image10.png))
 
@@ -178,7 +178,7 @@ Visual Studio를 사용 하 여 새 MVC 응용 프로그램을 만든 경우 샘
 3. 에 **데이터베이스 개체 선택** 단계, 테이블 노드를 확장 한 다음 동영상 테이블을 선택 합니다. 네임 스페이스를 입력 *MovieApp.Models* 을 클릭 합니다 **마침** 단추입니다.
 
 
-[![새 프로젝트 대화 상자](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image6.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image11.png)
+[![T새 프로젝트 대화 상자의 그](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image6.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image11.png)
 
 **그림 06**: 엔터티 데이터 모델 마법사를 사용 하 여 데이터베이스 모델 생성 ([클릭 하 여 큰 이미지 보기](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image12.png))
 
@@ -186,7 +186,7 @@ Visual Studio를 사용 하 여 새 MVC 응용 프로그램을 만든 경우 샘
 엔터티 데이터 모델 마법사를 완료 한 후 엔터티 데이터 모델 디자이너가 열립니다. 디자이너에 영화 데이터베이스 테이블에 표시 됩니다 (그림 7 참조).
 
 
-[![새 프로젝트 대화 상자](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image7.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image13.png)
+[![T새 프로젝트 대화 상자의 그](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image7.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image13.png)
 
 **그림 07**: 엔터티 데이터 모델 디자이너 ([클릭 하 여 큰 이미지 보기](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image14.png))
 
@@ -208,7 +208,7 @@ Visual Studio를 사용 하 여 새 MVC 응용 프로그램을 만든 경우 샘
 다음이 단계를 완료 한 후 목록 1에서 컨트롤러 생성 됩니다. 인덱스 세부 정보를 만들기, 명명 된 메서드에 포함 되어 있는지 확인할 수 있습니다 하 고 편집 합니다. 다음 섹션에서는 이러한 메서드가 작동 하기를 가져오려고 하는 데 필요한 코드를 추가 합니다.
 
 
-[![새 프로젝트 대화 상자](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image8.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image15.png)
+[![T새 프로젝트 대화 상자의 그](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image8.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image15.png)
 
 **그림 08**: 새 ASP.NET MVC 컨트롤러 추가 ([클릭 하 여 큰 이미지 보기](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image16.png))
 
@@ -248,12 +248,12 @@ Index () 메서드 Index 라는 뷰를 반환 합니다. 영화 데이터베이�
 다음이 단계를 완료 하면 Index.aspx 라는 새 뷰 Views\Home 폴더에 추가 됩니다. 인덱스 뷰의 내용은 목록 3에 포함 됩니다.
 
 
-[![새 프로젝트 대화 상자](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image9.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image17.png)
+[![T새 프로젝트 대화 상자의 그](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image9.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image17.png)
 
 **그림 09**: 뷰 컨트롤러 작업에서 추가 ([클릭 하 여 큰 이미지 보기](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image18.png))
 
 
-[![새 프로젝트 대화 상자](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image10.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image19.png)
+[![T새 프로젝트 대화 상자의 그](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image10.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image19.png)
 
 **그림 10**: 뷰 추가 대화 상자를 사용 하 여 새 보기 만들기 ([클릭 하 여 큰 이미지 보기](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image20.png))
 
@@ -263,7 +263,7 @@ Index () 메서드 Index 라는 뷰를 반환 합니다. 영화 데이터베이�
 인덱스 보기에는 모든 HTML 표 내의 영화 데이터베이스 테이블에서 영화 레코드를 표시합니다. 뷰에 For ViewData.Model 속성으로 표현 하는 각 영화를 반복 하는 각 루프입니다. 그런 다음 F5 키를 눌러 응용 프로그램을 실행 하면 그림 11에서 웹 페이지를 볼 수 있습니다.
 
 
-[![새 프로젝트 대화 상자](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image11.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image21.png)
+[![T새 프로젝트 대화 상자의 그](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image11.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image21.png)
 
 **그림 11**: 인덱스 보기 ([클릭 하 여 큰 이미지 보기](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image22.png))
 
@@ -296,7 +296,7 @@ Visual Studio를 사용 하면 쉽게 새 동영상 데이터베이스를 만들
 5. 클릭 합니다 **추가** 새 뷰를 만들려면 단추입니다.
 
 
-[![새 프로젝트 대화 상자](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image12.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image23.png)
+[![T새 프로젝트 대화 상자의 그](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image12.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image23.png)
 
 **그림 12**: 만들기 뷰 추가 ([클릭 하 여 큰 이미지 보기](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image24.png))
 
@@ -317,7 +317,7 @@ Visual Studio에서 자동으로 목록 5에서 뷰를 생성 합니다. 이 뷰
 표시 양식 유효성 검사를 자동으로 가져옵니다. 동영상, 릴리스 날짜를 입력 하는 것을 잊은 또는 잘못 된 릴리스 날짜를 입력할 경우 그런 다음 양식을 다시 표시 됩니다 하 고 릴리스 날짜 필드를 강조 표시 됩니다.
 
 
-[![새 프로젝트 대화 상자](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image13.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image25.png)
+[![T새 프로젝트 대화 상자의 그](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image13.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image25.png)
 
 **그림 13**: 새 영화 데이터베이스 레코드를 만드는 ([클릭 하 여 큰 이미지 보기](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image26.png))
 
@@ -337,7 +337,7 @@ Visual Studio에서 자동으로 목록 5에서 뷰를 생성 합니다. 이 뷰
 Views\Home 폴더 Edit.aspx 라는 새 뷰를 추가이 단계를 완료 합니다. 이 뷰는 영화 레코드 편집에 대 한 HTML 폼을 포함 합니다.
 
 
-[![새 프로젝트 대화 상자](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image14.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image27.png)
+[![T새 프로젝트 대화 상자의 그](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image14.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image27.png)
 
 **그림 14**: 편집 뷰 추가 ([클릭 하 여 큰 이미지 보기](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image28.png))
 

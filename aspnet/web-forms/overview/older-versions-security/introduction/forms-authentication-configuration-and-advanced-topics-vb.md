@@ -8,15 +8,15 @@ ms.date: 01/14/2008
 ms.assetid: 829d2f56-5c48-445b-b826-3418a450c788
 msc.legacyurl: /web-forms/overview/older-versions-security/introduction/forms-authentication-configuration-and-advanced-topics-vb
 msc.type: authoredcontent
-ms.openlocfilehash: eb533cf763c2f3132ea0a5420b4d4cbea16c61cd
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c992c782ce52066452b42bc09052ec1985e13200
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061430"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59417093"
 ---
-<a name="forms-authentication-configuration-and-advanced-topics-vb"></a>폼 인증 구성 및 고급 항목(VB)
-====================
+# <a name="forms-authentication-configuration-and-advanced-topics-vb"></a>폼 인증 구성 및 고급 항목(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/2/F/7/2F705A34-F9DE-4112-BBDE-60098089645E/ASPNET_Security_Tutorial_03_VB.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/2/F/7/2F705A34-F9DE-4112-BBDE-60098089645E/aspnet_tutorial03_AuthAdvanced_vb.pdf)
@@ -84,7 +84,7 @@ ASP.NET 2.0 이상에서 기본.NET Framework의 FormsAuthenticationConfiguratio
 그림 1에서는 slidingExpiration가 false로 설정 하 고 제한 시간 30으로 설정 된 경우 워크플로 보여 줍니다. 로그인에서 생성 된 인증 티켓 만료 날짜를 포함 하 고 이후 요청에서이 값이 업데이트 되지 않습니다. Formsauthenticationmodule은 티켓이 만료 되었습니다 찾으면를 무시 하 고 익명으로 요청을 처리 합니다.
 
 
-[![폼 인증 티켓이 만료 때 slidingExpiration의 그래픽 표현을 isfalse합니다](forms-authentication-configuration-and-advanced-topics-vb/_static/image2.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image1.png)
+[![A 폼 인증 티켓이 만료 때 slidingExpiration의 그래픽 표현을: false](forms-authentication-configuration-and-advanced-topics-vb/_static/image2.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image1.png)
 
 **그림 01**: 그래픽으로 표현한 폼 인증 티켓이 만료 때 slidingExpiration이 false ([클릭 하 여 큰 이미지 보기](forms-authentication-configuration-and-advanced-topics-vb/_static/image3.png))
 
@@ -92,7 +92,7 @@ ASP.NET 2.0 이상에서 기본.NET Framework의 FormsAuthenticationConfiguratio
 그림 2 slidingExpiration로 설정 된 경우 워크플로 보여 줍니다 true이 고 시간 제한을 30으로 설정 됩니다. (만료 되지 않은 ticket)를 포함 한 인증된 요청을 받으면 해당 만료 시간 (분) 이후에 시간 초과 수로 업데이트 됩니다.
 
 
-[![폼 인증 티켓을 그래픽으로 표현한 slidingExpiration 참인 경우](forms-authentication-configuration-and-advanced-topics-vb/_static/image5.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image4.png)
+[![A 폼 인증 티켓의 그래픽 표현을 slidingExpiration 참인 경우](forms-authentication-configuration-and-advanced-topics-vb/_static/image5.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image4.png)
 
 **그림 02**: 폼 인증 티켓을 그래픽으로 표현한 slidingExpiration 참인 경우 ([클릭 하 여 큰 이미지 보기](forms-authentication-configuration-and-advanced-topics-vb/_static/image6.png))
 
@@ -181,7 +181,7 @@ Default.aspx에 변경 내용을 저장 하 고 방문 하 여 브라우저를 �
 만드는 (또는 수정) 하는 경우 티켓을 forms 인증 시스템 MAC을 만들고 티켓의 데이터에 연결 합니다. 후속 요청이 도착 하면 폼 인증 시스템에서 티켓 데이터의 신뢰성이 유효한 지 유효성을 검사 하려면 MAC 및 티켓 데이터를 비교 합니다. 그림 3이이 워크플로 그래픽으로 보여 줍니다.
 
 
-[![MAC을 통해 티켓의 신뢰성이 유효한 지 확인](forms-authentication-configuration-and-advanced-topics-vb/_static/image8.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image7.png)
+[![TMAC을 통해 그 티켓의 신뢰성이 유효한 지 확인](forms-authentication-configuration-and-advanced-topics-vb/_static/image8.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image7.png)
 
 **그림 03**: MAC을 통해 티켓의 신뢰성 보장 됩니다 ([클릭 하 여 큰 이미지 보기](forms-authentication-configuration-and-advanced-topics-vb/_static/image9.png))
 
@@ -238,7 +238,7 @@ Default.aspx에 변경 내용을 저장 하 고 방문 하 여 브라우저를 �
 티켓에 저장 된 데이터에 액세스 해야 할 때마다 우리가 해결할 수 있으므로 현재 요청의 FormsAuthenticationTicket 위치와 UserData 속성을 역직렬화 합니다. 생년월일 및 고용주 이름 예의 날짜의 경우 구분 기호 (|)에 따라 두 문자열을 부분 UserData 문자열을 분할 됩니다.
 
 
-[![인증 티켓의 추가 사용자 정보를 저장할 수 있습니다.](forms-authentication-configuration-and-advanced-topics-vb/_static/image11.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image10.png)
+[![A추가 사용자 정보는 인증 티켓에 저장할 수 있습니다](forms-authentication-configuration-and-advanced-topics-vb/_static/image11.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image10.png)
 
 **그림 04**: 추가 사용자 정보에에서 저장할 수 있습니다 인증 티켓 ([클릭 하 여 큰 이미지 보기](forms-authentication-configuration-and-advanced-topics-vb/_static/image12.png))
 
@@ -302,7 +302,7 @@ Request.IsAuthenticated가 True 인 경우 다시 시작 하려면 먼저 Welcom
 그림 5에는 실행 중인이 디스플레이의 스크린샷을 보여 줍니다. Scott로 로그인 Scott의 회사 및 제목을 포함 하는 환영 백 메시지를 표시 합니다.
 
 
-[![현재 로그온 한 사용자의 회사 및 제목 표시 됩니다.](forms-authentication-configuration-and-advanced-topics-vb/_static/image14.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image13.png)
+[![T그리고 현재 로그온 한 사용자의 회사 및 제목 표시 되는](forms-authentication-configuration-and-advanced-topics-vb/_static/image14.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image13.png)
 
 **그림 05**: 현재 로그온 한 사용자의 회사 및 제목 표시 됩니다 ([클릭 하 여 큰 이미지 보기](forms-authentication-configuration-and-advanced-topics-vb/_static/image15.png))
 
@@ -338,7 +338,7 @@ IIdentity를 구현 하 고 속성을 CompanyName 및 제목을 포함 하는 �
 다음으로 두 개의 새 클래스 파일에 앱을 추가할\_코드 폴더, 명명 된 CustomIdentity.vb 하나 및 하나 라는 CustomPrincipal.vb 합니다.
 
 
-[![CustomIdentity 및 CustomPrincipal 클래스를 프로젝트에 추가](forms-authentication-configuration-and-advanced-topics-vb/_static/image17.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image16.png)
+[![Add는 CustomIdentity 및 프로젝트에 CustomPrincipal 클래스](forms-authentication-configuration-and-advanced-topics-vb/_static/image17.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image16.png)
 
 **그림 06**: CustomIdentity 및 CustomPrincipal 클래스를 프로젝트에 추가 ([클릭 하 여 큰 이미지 보기](forms-authentication-configuration-and-advanced-topics-vb/_static/image18.png))
 
@@ -362,7 +362,7 @@ ASP.NET 파이프라인에는 들어오는 요청을 사용 하 고 여러 단�
 ASP.NET 파이프라인에서 AuthenticateRequest 이벤트가 후 발생 합니다 [PostAuthenticateRequest 이벤트](https://msdn.microsoft.com/library/system.web.httpapplication.postauthenticaterequest.aspx)는 formsauthenticationmodule은의 인스턴스를 사용 하 여 만든 GenericPrincipal 개체를 바꿀 수 것은 CustomPrincipal 개체입니다. 그림 7에서는이 워크플로 보여 줍니다.
 
 
-[![GenericPrincipal PostAuthenticationRequest 이벤트에서 CustomPrincipal으로 바뀝니다.](forms-authentication-configuration-and-advanced-topics-vb/_static/image20.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image19.png)
+[![T그 GenericPrincipal PostAuthenticationRequest 이벤트에서 CustomPrincipal 바뀝니다](forms-authentication-configuration-and-advanced-topics-vb/_static/image20.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image19.png)
 
 **그림 07**: GenericPrincipal PostAuthenticationRequest 이벤트에서 CustomPrincipal 바뀝니다 ([클릭 하 여 큰 이미지 보기](forms-authentication-configuration-and-advanced-topics-vb/_static/image21.png))
 
@@ -370,7 +370,7 @@ ASP.NET 파이프라인에서 AuthenticateRequest 이벤트가 후 발생 합니
 를 ASP.NET 파이프라인 이벤트에 대 한 응답에서 코드를 실행 하기 위해에서는 Global.asax의 적절 한 이벤트 처리기를 만듭니다 하거나 고유한 HTTP 모듈을 만듭니다. 이 자습서에 대 한 Global.asax의 이벤트 처리기를 만들어 보겠습니다. Global.asax 웹 사이트를 추가 하 여 시작 합니다. 솔루션 탐색기에서 프로젝트 이름을 마우스 오른쪽 Global.asax 이라는 전역 응용 프로그램 클래스 형식의 항목을 추가 합니다.
 
 
-[![Global.asax 파일을 웹 사이트 추가](forms-authentication-configuration-and-advanced-topics-vb/_static/image23.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image22.png)
+[![Add Global.asax 파일을 웹 사이트](forms-authentication-configuration-and-advanced-topics-vb/_static/image23.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image22.png)
 
 **그림 08**: Global.asax 파일을 웹 사이트 추가 ([클릭 하 여 큰 이미지 보기](forms-authentication-configuration-and-advanced-topics-vb/_static/image24.png))
 

@@ -1,22 +1,23 @@
 ---
 uid: identity/overview/getting-started/introduction-to-aspnet-identity
-title: ASP.NET Id 소개 | Microsoft Docs
+title: Introduction to ASP.NET Id-ASP.NET 4.x
 author: jongalloway
 description: ASP.NET 멤버 자격 시스템 도입 된 ASP.NET 2.0 백을 사용 하 여 이후 2005 년에 같은 방법으로 웹 응용 프로그램 정도가에 많은 변경 내용이 다음...
 ms.author: riande
 ms.date: 01/22/2019
 ms.assetid: 38717fc1-5989-43cf-952d-4007cc1dd923
+ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/getting-started/introduction-to-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: 4a545e52d2d9ea04a10c37c116fd326c60de9f8f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 34a0d62d7afcaffa8fbac0bc774d9266efb6b165
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061380"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59413050"
 ---
-<a name="introduction-to-aspnet-identity"></a>ASP.NET Identity 소개
-====================
+# <a name="introduction-to-aspnet-identity"></a>ASP.NET Identity 소개
+
 
 > ASP.NET 멤버 자격 시스템에 도입 되었습니다 ASP.NET 2.0 백 이후 2005 년에 웹 응용 프로그램 인증 및 권한 부여를 일반적으로 처리 하는 방법에 많은 변경 내용이 다음. ASP.NET Id가 보안 정책 살펴보기 멤버 자격 시스템 웹, 휴대폰 또는 태블릿 용 최신 응용 프로그램을 작성 하는 경우 여야 합니다.
 

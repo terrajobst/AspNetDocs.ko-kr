@@ -8,20 +8,20 @@ ms.date: 05/16/2012
 ms.assetid: eacf0e3a-c2e9-4f77-a676-249146f393e8
 msc.legacyurl: /web-forms/overview/deployment/advanced-enterprise-web-deployment
 msc.type: chapter
-ms.openlocfilehash: b042faf38fe0269508895f1b7826908cf086222d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0d3a356aafcce499f50d3a5d3b98f44ca5643ede
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57018810"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59417977"
 ---
-<a name="aspnet-4---enterprise-deployment-series-4-advanced-topics"></a>ASP.NET 4 - 엔터프라이즈 배포 시리즈 4 고급 토픽
-====================
+# <a name="aspnet-4---enterprise-deployment-series-4-advanced-topics"></a>ASP.NET 4 - 엔터프라이즈 배포 시리즈 4 고급 토픽
+
 > 이 자습서에서는 필수 또는 다양 한 엔터프라이즈 배포 시나리오에서에서 적합할 수 있는 다양 한 작업을 수행 하는 방법을 보여줍니다.
 
 
 - [고급 엔터프라이즈 웹 배포](advanced-enterprise-web-deployment.md)
-- ["가상 시나리오" 배포 수행](performing-a-what-if-deployment.md)
+- [“가상 시나리오” 배포 수행](performing-a-what-if-deployment.md)
 - [다중 환경을 위한 데이터베이스 배포 사용자 지정](customizing-database-deployments-for-multiple-environments.md)
 - [테스트 환경에 데이터베이스 역할 멤버 자격 배포](deploying-database-role-memberships-to-test-environments.md)
 - [엔터프라이즈 환경에 멤버 자격 데이터베이스 배포](deploying-membership-databases-to-enterprise-environments.md)

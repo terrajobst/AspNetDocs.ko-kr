@@ -9,12 +9,12 @@ ms.assetid: a8b3b778-f009-4369-85c7-e90f9878d8b4
 msc.legacyurl: /signalr/overview/getting-started/tutorial-getting-started-with-signalr
 msc.type: authoredcontent
 ms.topic: tutorial
-ms.openlocfilehash: 90f2c03fbda522e3a46200bc0132cc74100ce70f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b1e8b6b1b300665f6cd2466766e9adcff52733da
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57042680"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59422917"
 ---
 # <a name="tutorial-real-time-chat-with-signalr-2"></a>자습서: SignalR 2를 사용하는 실시간 채팅
 
@@ -81,6 +81,7 @@ ms.locfileid: "57042680"
 1. 프로젝트에서 스크립트 파일의 버전에 해당 하는 코드 블록에 대 한 스크립트 참조는 확인 합니다.
 
     원래 코드 블록에서 스크립트 참조:
+
     ```html
     <!--Script references. -->
     <!--Reference the jQuery library. -->

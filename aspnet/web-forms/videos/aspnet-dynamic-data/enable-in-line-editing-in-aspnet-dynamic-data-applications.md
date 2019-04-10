@@ -8,15 +8,15 @@ ms.date: 10/23/2008
 ms.assetid: a22201df-c031-4505-b3bf-9a0a9667d62b
 msc.legacyurl: /web-forms/videos/aspnet-dynamic-data/enable-in-line-editing-in-aspnet-dynamic-data-applications
 msc.type: video
-ms.openlocfilehash: 28a90a3c5726743a2a8412d508b5d8a4cf1886e5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6bf91d546341eefc401149d47d6fa70b2c8522d4
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57040190"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421526"
 ---
-<a name="enable-in-line-editing-in-aspnet-dynamic-data-applications"></a>ASP.NET Dynamic Data 애플리케이션에서 인라인 편집 사용
-====================
+# <a name="enable-in-line-editing-in-aspnet-dynamic-data-applications"></a>ASP.NET Dynamic Data 애플리케이션에서 인라인 편집 사용
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 이 비디오에서는 URL 라우팅에 ASP.NET Dynamic Data 응용 프로그램에서 인라인 편집을 활성화를 사용 하 여 보여 줍니다.

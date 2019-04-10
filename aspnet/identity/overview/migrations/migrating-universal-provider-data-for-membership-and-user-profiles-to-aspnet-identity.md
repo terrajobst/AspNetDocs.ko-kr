@@ -1,22 +1,23 @@
 ---
 uid: identity/overview/migrations/migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity
-title: 멤버 자격 및 ASP.NET Id (C#)로 사용자 프로필에 대 한 범용 공급자 데이터 마이그레이션 | Microsoft Docs
+title: 멤버 자격 및 ASP.NET Id로 사용자 프로필에 대 한 범용 공급자 데이터를 마이그레이션 (C#)-ASP.NET 4.x
 author: rustd
 description: 이 자습서에서는 사용자 역할 데이터 및 기존 앱의 범용 공급자를 사용 하 여 만든 사용자 프로필 데이터를 마이그레이션하는 데 필요한 단계를 설명 하는 중...
 ms.author: riande
 ms.date: 12/13/2013
+ms.custom: seoapril2019
 ms.assetid: 2e260430-d13c-4658-bd05-e256fc0d63b8
 msc.legacyurl: /identity/overview/migrations/migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: a91bb6ac51819d7dbb8eb3c63bd36a9d830eecce
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1043dce4cdd62f94ae9d2344a9301c1b03426f3d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058460"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59422267"
 ---
-<a name="migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity-c"></a>멤버 자격 및 사용자 프로필의 범용 공급자 데이터를 ASP.NET Identity로 마이그레이션(C#)
-====================
+# <a name="migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity-c"></a>멤버 자격 및 사용자 프로필의 범용 공급자 데이터를 ASP.NET Identity로 마이그레이션(C#)
+
 by [Pranav Rastogi](https://github.com/rustd), [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Robert McMurray](https://github.com/rmcmurray), [Suhas Joshi](https://github.com/suhasj)
 
 > 이 자습서에서는 사용자 역할 데이터 및 ASP.NET Id 모델을 기존 응용 프로그램의 범용 공급자를 사용 하 여 만든 사용자 프로필 데이터를 마이그레이션하는 데 필요한 단계를 설명 합니다. 방법은 여기에 언급 된 사용자 프로필 데이터를 마이그레이션하 SQL 멤버 자격도를 사용 하 여 응용 프로그램에서 사용할 수 있습니다.

@@ -8,15 +8,15 @@ ms.date: 11/15/2007
 ms.assetid: f20c5f1c-e49c-4909-b18f-8b5a442eafe3
 msc.legacyurl: /web-forms/videos/aspnet-35/visual-studio-editor/quick-tour-of-the-visual-studio-2008-integrated-development-environment
 msc.type: video
-ms.openlocfilehash: 8c94be873fdc7424e66b932f0389ad8738fb3f1f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3eaf2a59188c041fbe801f30f81e691aba2060a6
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058700"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59413518"
 ---
-<a name="quick-tour-of-the-visual-studio-2008-integrated-development-environment"></a>Visual Studio 2008 통합 개발 환경 둘러보기
-====================
+# <a name="quick-tour-of-the-visual-studio-2008-integrated-development-environment"></a>Visual Studio 2008 통합 개발 환경 둘러보기
+
 [Chris Pels](https://twitter.com/chrispels)
 
 Visual Studio 2008에서 ide의 새로운 기능과 변경 사항 둘러보기입니다. 업데이트 된 웹 페이지 편집기, WPF 폼 디자이너, CSS 편집기, 등을 참조 하세요.

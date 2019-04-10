@@ -1,25 +1,26 @@
 ---
 uid: web-api/overview/error-handling/web-api-global-error-handling
-title: ASP.NET Web API 2에서에서 전역 오류 처리 | Microsoft Docs
+title: 전역 오류 처리에 ASP.NET Web API 2-ASP.NET 4.x
 author: davidmatson
-description: ''
+description: ASP.NET에 대 한 ASP.NET Web API 2에서 처리 하는 전역 오류 개요 4.x 합니다.
 ms.author: riande
 ms.date: 02/03/2014
+ms.custom: seoapril2019
 ms.assetid: bffd7863-f63b-4b23-a13c-372b5492e9fb
 msc.legacyurl: /web-api/overview/error-handling/web-api-global-error-handling
 msc.type: authoredcontent
-ms.openlocfilehash: 3e371760d2b34eb2be492e6ebbb33a5f9f7eff10
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7d9f4fb9909671d7c4c8ee2aa9285b0186c4b125
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058980"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59414376"
 ---
-<a name="global-error-handling-in-aspnet-web-api-2"></a>ASP.NET Web API 2에서에서 전역 오류 처리
-====================
+# <a name="global-error-handling-in-aspnet-web-api-2"></a>ASP.NET Web API 2에서에서 전역 오류 처리
+
 하 여 [David Matson](https://github.com/davidmatson), [Rick Anderson]((https://twitter.com/RickAndMSFT))
 
-지금 로그인 하거나 전역 오류 처리를 Web API에서 쉽지가 않습니다. 통해 일부 처리 되지 않은 예외를 처리할 수 있습니다 [예외 필터](exception-handling.md), 되지만 많은 예외 필터에서 처리할 수 없는 경우. 예를 들어:
+이 항목에서는 ASP.NET에 대 한 ASP.NET Web API 2에서 처리 하는 전역 오류 간략하게 4.x 합니다. 지금 로그인 하거나 전역 오류 처리를 Web API에서 쉽지가 않습니다. 통해 일부 처리 되지 않은 예외를 처리할 수 있습니다 [예외 필터](exception-handling.md), 되지만 많은 예외 필터에서 처리할 수 없는 경우. 예를 들어:
 
 1. 컨트롤러 생성자에서 throw 된 예외입니다.
 2. 메시지 처리기에서 throw 된 예외입니다.

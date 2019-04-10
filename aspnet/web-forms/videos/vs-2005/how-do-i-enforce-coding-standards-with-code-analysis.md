@@ -8,15 +8,15 @@ ms.date: 07/09/2007
 ms.assetid: ab2eedbc-79b5-4b63-a1df-935940c1545b
 msc.legacyurl: /web-forms/videos/vs-2005/how-do-i-enforce-coding-standards-with-code-analysis
 msc.type: video
-ms.openlocfilehash: 609f91090520cc36f312a68d63ba6d7356bb008d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1a9cf8ac7e8618dd3733080ba6a065e14f1cb68c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57025630"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59417145"
 ---
-<a name="how-do-i-enforce-coding-standards-with-code-analysis"></a>[어떻게 할까요?] 코드 분석에 코딩 표준 적용?
-====================
+# <a name="how-do-i-enforce-coding-standards-with-code-analysis"></a>[어떻게 할까요?] 코드 분석에 코딩 표준 적용?
+
 [Chris Menegay](https://twitter.com/CMenegay)
 
 Visual Studio Team System을 사용 하 여 클래스 라이브러리 프로젝트, 웹 사이트 프로젝트 및 소스 코드 제어에 적용 되는 코드 분석 규칙 정교 하 게 조정을 해야 합니다. 이 비디오에서는 오류 및 프로젝트 중 적용 되는 경고를 지정 하는 방법에 설명 빌드 및 코드 체크 인 및 특정 클래스 멤버에 적용에서 특정 규칙을 제거 하는 방법을 표시 합니다. 적용할 수 있습니다이 구성으로 적용할 수 없는 규칙을 확인 하는 동안 코드의 품질을 향상 시키는 코딩 표준 프로그램 방식으로 받은 적입니다.

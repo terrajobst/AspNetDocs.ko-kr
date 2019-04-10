@@ -8,15 +8,15 @@ ms.date: 05/12/2009
 ms.assetid: 32ec9321-7c8c-4b0f-8234-99acb56df6b5
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/htmleditor/how-do-i-use-the-html-editor-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 11d9251644f1daf4257e1bfa3c9405fc0c46a5d3
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5fa19ef52c4538f0db427eaa9a79b074c85001ac
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034140"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59415871"
 ---
-<a name="how-do-i-use-the-html-editor-control-vb"></a>HTML 편집기 컨트롤을 사용 하는 방법 (VB)
-====================
+# <a name="how-do-i-use-the-html-editor-control-vb"></a>HTML 편집기 컨트롤을 사용 하는 방법 (VB)
+
 by [Microsoft](https://github.com/microsoft)
 
 > HTMLEditor에 쉽게 작성 하 고 도구 모음 단추를 통해 HTML 콘텐츠를 편집할 수 있도록 ASP.NET AJAX 컨트롤입니다.
@@ -25,7 +25,7 @@ by [Microsoft](https://github.com/microsoft)
 이 자습서의 목표는 AJAX Control Toolkit에 포함 된 HTML 편집기 컨트롤의 개요를 사용 하 여 제공 하는 것입니다. HTML 편집기에서 글꼴 크기를 변경, 글꼴, 배경 색을 변경, 전경색을 수정 하는 것에 대 한 옵션을 추가 하는 링크를 추가 이미지, 텍스트 맞춤을 변경 하 고 수행 잘라내기, 복사 및 붙여넣기 작업 (그림 1 참조).
 
 
-[![HTML 편집기](how-do-i-use-the-html-editor-control-vb/_static/image1.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image1.png)
+[![T또한 HTML 편집기](how-do-i-use-the-html-editor-control-vb/_static/image1.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image1.png)
 
 **그림 01**: HTML 편집기 ([클릭 하 여 큰 이미지 보기](how-do-i-use-the-html-editor-control-vb/_static/image2.png))
 
@@ -33,7 +33,7 @@ by [Microsoft](https://github.com/microsoft)
 HTML 편집기를 사용 하면 디자인 모드를 사용 하 여 콘텐츠를 입력할 수 있습니다 또는 HTML을 직접 입력할 수 있습니다. 또한 HTML 콘텐츠를 미리 보려면 옵션으로 제공 됩니다 (그림 2 참조).
 
 
-[![디자인, HTML 및 미리 보기 단추](how-do-i-use-the-html-editor-control-vb/_static/image2.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image3.png)
+[![D설계, HTML 및 단추 미리 보기](how-do-i-use-the-html-editor-control-vb/_static/image2.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image3.png)
 
 **그림 02**: 디자인, HTML 및 미리 보기 단추 ([클릭 하 여 큰 이미지 보기](how-do-i-use-the-html-editor-control-vb/_static/image4.png))
 
@@ -49,7 +49,7 @@ HTML 편집기를 사용 하 여 ASP.NET 페이지에서 먼저 페이지에 Scr
 HTML 편집기 컨트롤은 AJAX Control Toolkit 컨트롤의 나머지 부분을 사용 하 여 도구 상자에 있습니다. 편집기 컨트롤 지정 됩니다 (그림 3 참조).
 
 
-[![HTML 편집기 컨트롤](how-do-i-use-the-html-editor-control-vb/_static/image3.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image5.png)
+[![T또한 HTML 편집기 컨트롤](how-do-i-use-the-html-editor-control-vb/_static/image3.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image5.png)
 
 **그림 03**: HTML 편집기 컨트롤 ([클릭 하 여 큰 이미지 보기](how-do-i-use-the-html-editor-control-vb/_static/image6.png))
 
@@ -63,7 +63,7 @@ HTML 편집기를 페이지로 끌어 후 속성 시트에서 해당 속성을 �
 목록 1에서 페이지에는 HTML 편집기 컨트롤 및 단추 컨트롤을 리터럴 컨트롤을 포함 합니다. 리터럴 컨트롤의 HTML 편집기의 내용을 표시 단추를 클릭 하면 (그림 4 참조).
 
 
-[![HTML 편집기 사용 하 여 양식을 제출](how-do-i-use-the-html-editor-control-vb/_static/image4.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image7.png)
+[![SHTML 편집기와 폼 ubmitting](how-do-i-use-the-html-editor-control-vb/_static/image4.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image7.png)
 
 **그림 04**: HTML 편집기 사용 하 여 양식을 제출 ([클릭 하 여 큰 이미지 보기](how-do-i-use-the-html-editor-control-vb/_static/image8.png))
 
@@ -75,7 +75,7 @@ HTML 편집기 콘텐츠 속성은 HTML 편집기에 입력 된 HTML 콘텐츠�
 정확 하 게 단추를 사용자 지정할 수 있습니다 편집기에 표시 합니다. 예를 들어 다음 HTML 편집기를 HTML 모드로 전환 하지 못하게 하려면 HTML 탭을 제거 하는 것이 좋습니다. 글꼴 크기 드롭다운 목록을 포럼에서 과도 하 게 큰 텍스트를 작성 하지 못하게 하려면 제거 하려는 또는 후에 메시지 (그림 5 참조).
 
 
-[![사용자 지정된 된 HTML 편집기](how-do-i-use-the-html-editor-control-vb/_static/image5.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image9.png)
+[![A 사용자 지정된 HTML 편집기](how-do-i-use-the-html-editor-control-vb/_static/image5.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image9.png)
 
 **그림 05**: HTML 편집기 사용자 지정 ([클릭 하 여 큰 이미지 보기](how-do-i-use-the-html-editor-control-vb/_static/image10.png))
 
@@ -90,7 +90,7 @@ HTML 편집기 콘텐츠 속성은 HTML 편집기에 입력 된 HTML 콘텐츠�
 
 사용자 지정 편집기를 만든 후 추가할 수 있습니다이 ASP.NET 페이지에 동일한 방식으로 일반 HTML 편집기 (참조 코드 3)을 추가.
 
-**Listing 3 - ShowCustomEditor.aspx**
+**3-ShowCustomEditor.aspx 나열**
 
 [!code-aspx[Main](how-do-i-use-the-html-editor-control-vb/samples/sample3.aspx)]
 

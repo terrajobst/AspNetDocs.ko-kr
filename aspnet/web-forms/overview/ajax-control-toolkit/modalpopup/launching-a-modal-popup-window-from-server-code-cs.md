@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 2f67d8ef-73ca-447d-a0cc-6e3168431e6a
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/modalpopup/launching-a-modal-popup-window-from-server-code-cs
 msc.type: authoredcontent
-ms.openlocfilehash: b59997d5c3e841d36d475431b02d3df2d1a4b666
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1fd12181e26012c59bde3e6fe153c196d8bf0d31
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57040730"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59413193"
 ---
-<a name="launching-a-modal-popup-window-from-server-code-c"></a>서버 코드에서 모달 팝업 창 시작(C#)
-====================
+# <a name="launching-a-modal-popup-window-from-server-code-c"></a>서버 코드에서 모달 팝업 창 시작(C#)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/2/4/0/24052038-f942-4336-905b-b60ae56f0dd5/ModalPopup1.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/modalpopup1CS.pdf)
@@ -65,7 +65,7 @@ ASP.NET AJAX를을 기준으로 모든 웹 페이지와 마찬가지로 스크�
 `$find()` 함수 페이지에서 명명된 된 요소를 찾고 및 서버 쪽 ID를 매개 변수로 필요 합니다. 따라서 `$find("mpe")` ModalPopup 컨트롤의 클라이언트 표시를 반환 합니다. 해당 `show()` 메서드를 표시 하는 팝업을 사용 합니다.
 
 
-[![모달 팝업이 표시 되는 경우 단추 중 하나를 클릭](launching-a-modal-popup-window-from-server-code-cs/_static/image2.png)](launching-a-modal-popup-window-from-server-code-cs/_static/image1.png)
+[![T모달 팝업 그 때 나타나는 단추 중 하나를 클릭](launching-a-modal-popup-window-from-server-code-cs/_static/image2.png)](launching-a-modal-popup-window-from-server-code-cs/_static/image1.png)
 
 모달 팝업이 표시 되는 경우 단추 중 하나를 클릭 하 고 ([클릭 하 여 큰 이미지 보기](launching-a-modal-popup-window-from-server-code-cs/_static/image3.png))
 

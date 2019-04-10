@@ -8,15 +8,15 @@ ms.date: 10/30/2010
 ms.assetid: f1a1be2c-6fd9-4a09-916e-aa1b98d5cf17
 msc.legacyurl: /web-forms/overview/data-access/filtering-scenarios-with-the-datalist-and-repeater/master-detail-filtering-acess-two-pages-datalist-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 7d7be3364b4b19c89fac47875983fbb7193a36ea
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f71e4814d59ef1817d5a64f778ba6d572fc19145
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57059610"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59422735"
 ---
-<a name="masterdetail-filtering-across-two-pages-vb"></a>두 페이지에 걸쳐 마스터/세부 정보 필터링(VB)
-====================
+# <a name="masterdetail-filtering-across-two-pages-vb"></a>두 페이지에 걸쳐 마스터/세부 정보 필터링(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_34_VB.exe) 또는 [PDF 다운로드](master-detail-filtering-acess-two-pages-datalist-vb/_static/datatutorial34vb1.pdf)
@@ -37,7 +37,7 @@ DataList 및 반복기 컨트롤을 사용 하 여 이러한 두 페이지 마�
 마스터/세부 정보 보고서를 만드는 첫 번째 단계는 "마스터" 레코드를 표시 하 여 시작 하는 것입니다. 따라서 우선 "마스터" 페이지에서 범주를 표시 하는 것입니다. 엽니다는 `CategoryListMaster.aspx` 페이지에 `DataListRepeaterFiltering` 폴더 Repeater 컨트롤을 추가 하 고, 스마트 태그에서 새 ObjectDataSource를 추가 하도록 선택할. 해당 데이터에 액세스할 수 있도록 새 ObjectDataSource를 구성 합니다 `CategoriesBLL` 클래스의 `GetCategories` 메서드 (그림 1 참조).
 
 
-[![CategoriesBLL 클래스의 GetCategories 메서드를 사용 하는 ObjectDataSource 구성](master-detail-filtering-acess-two-pages-datalist-vb/_static/image2.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image1.png)
+[![Configure CategoriesBLL 클래스의 GetCategories 메서드를 사용 하는 ObjectDataSource](master-detail-filtering-acess-two-pages-datalist-vb/_static/image2.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image1.png)
 
 **그림 1**: ObjectDataSource를 사용 하 여 구성 합니다 `CategoriesBLL` 클래스의 `GetCategories` 메서드 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-acess-two-pages-datalist-vb/_static/image3.png))
 
@@ -49,7 +49,7 @@ DataList 및 반복기 컨트롤을 사용 하 여 이러한 두 페이지 마�
 전체이 태그를 사용 하 여 시간을 내어 브라우저를 통해 진행 상황을 확인 합니다. 그림 2에서 볼 수 있듯이 각 범주 이름과 설명을 보여 주는 글머리 기호 목록으로 반복기를 렌더링 합니다.
 
 
-[![각 범주에 글머리 기호 목록 항목으로 표시 됩니다.](master-detail-filtering-acess-two-pages-datalist-vb/_static/image5.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image4.png)
+[![E범주 글머리 기호 목록 항목으로 표시 됩니다 대 한 ach](master-detail-filtering-acess-two-pages-datalist-vb/_static/image5.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image4.png)
 
 **그림 2**: 각 범주에 글머리 기호 목록 항목으로 표시 됩니다 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-acess-two-pages-datalist-vb/_static/image6.png))
 
@@ -73,7 +73,7 @@ DataList 및 반복기 컨트롤을 사용 하 여 이러한 두 페이지 마�
 수행 하는 경우 자유롭게 페이지 앵커 요소 또는 하이퍼링크 컨트롤 접근 방식을 사용 합니다. 각 범주 이름에 대 한 링크로 렌더링 되어야 하는 브라우저를 통해 페이지를 볼 때 접근 방식에 관계 없이 `ProductsForCategoryDetails.aspx`해당 전달 `CategoryID` 값 (그림 3 참조).
 
 
-[![범주 이름이 이제 ProductsForCategoryDetails.aspx에 연결](master-detail-filtering-acess-two-pages-datalist-vb/_static/image8.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image7.png)
+[![T그 범주 이름은 이제 연결할 ProductsForCategoryDetails.aspx](master-detail-filtering-acess-two-pages-datalist-vb/_static/image8.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image7.png)
 
 **그림 3**: 범주 이름은 이제 대 한 링크 `ProductsForCategoryDetails.aspx` ([큰 이미지를 보려면 클릭](master-detail-filtering-acess-two-pages-datalist-vb/_static/image9.png))
 
@@ -83,7 +83,7 @@ DataList 및 반복기 컨트롤을 사용 하 여 이러한 두 페이지 마�
 사용 하 여 합니다 `CategoryListMaster.aspx` 완료 페이지에서 준비가 "정보" 페이지를 구현 하는 데 알아보겠습니다 `ProductsForCategoryDetails.aspx`합니다. 이 페이지를 열려면 DataList 디자이너 도구 상자에서 끌어서 설정 해당 `ID` 속성을 `ProductsInCategory`입니다. 다음으로, DataList의 스마트 태그에서 새 ObjectDataSource 이름을 지정 하는 페이지에 추가 하도록 선택할 `ProductsInCategoryDataSource`합니다. 호출 되도록 구성 합니다 `ProductsBLL` 클래스의 `GetProductsByCategoryID(categoryID)` 방법으로, 드롭다운 목록에서 INSERT, UPDATE 및 DELETE 탭 (없음)을 나열 하는 집합입니다.
 
 
-[![ProductsBLL 클래스의 GetProductsByCategoryID(categoryID) 메서드를 사용 하는 ObjectDataSource 구성](master-detail-filtering-acess-two-pages-datalist-vb/_static/image11.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image10.png)
+[![Configure ProductsBLL 클래스의 GetProductsByCategoryID(categoryID) 메서드를 사용 하는 ObjectDataSource](master-detail-filtering-acess-two-pages-datalist-vb/_static/image11.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image10.png)
 
 **그림 4**: ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLL` 클래스의 `GetProductsByCategoryID(categoryID)` 메서드 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-acess-two-pages-datalist-vb/_static/image12.png))
 
@@ -91,7 +91,7 @@ DataList 및 반복기 컨트롤을 사용 하 여 이러한 두 페이지 마�
 이후 합니다 `GetProductsByCategoryID(categoryID)` 메서드에서 입력된 매개 변수 (*`categoryID`*), 매개 변수의 소스를 지정할 수 있도록 데이터 원본 선택 마법사에서 제공 합니다. QueryStringField를 사용 하 여 쿼리 문자열 매개 변수 원본으로 `CategoryID`합니다.
 
 
-[![Querystring 필드 CategoryID 매개 변수의 원본으로 사용](master-detail-filtering-acess-two-pages-datalist-vb/_static/image14.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image13.png)
+[![U매개 변수의 원본으로 쿼리 문자열 필드 CategoryID se](master-detail-filtering-acess-two-pages-datalist-vb/_static/image14.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image13.png)
 
 **그림 5**: 쿼리 문자열 필드를 사용 하 여 `CategoryID` 매개 변수의 원본으로 ([큰 이미지를 보려면 클릭](master-detail-filtering-acess-two-pages-datalist-vb/_static/image15.png))
 
@@ -103,7 +103,7 @@ DataList 및 반복기 컨트롤을 사용 하 여 이러한 두 페이지 마�
 시작 작업에서이 페이지를 보려는 `CategoryListMaster.aspx` 페이지를 다음으로, 범주 글머리 기호 목록에서 링크를 클릭 합니다. 이렇게 하면 `ProductsForCategoryDetails.aspx`함께 전달 된 `CategoryID` querystring을 통해. `ProductsInCategoryDataSource` ObjectDataSource `ProductsForCategoryDetails.aspx` 지정한 범주에 대 한 해당 제품을 가져옵니다 되며 행 마다 두 개의 제품을 렌더링 하는 DataList를 표시 합니다. 그림 6의 스크린샷이 나와 `ProductsForCategoryDetails.aspx` 음료를 볼 때.
 
 
-[![음료 표시 되는 행 당 2 개](master-detail-filtering-acess-two-pages-datalist-vb/_static/image17.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image16.png)
+[![T그 음료 표시 되는 행 마다 2](master-detail-filtering-acess-two-pages-datalist-vb/_static/image17.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image16.png)
 
 **그림 6**: 음료 표시 되는 행 당 2 개 ([전체 크기 이미지를 보려면 클릭](master-detail-filtering-acess-two-pages-datalist-vb/_static/image18.png))
 
@@ -115,7 +115,7 @@ DataList 및 반복기 컨트롤을 사용 하 여 이러한 두 페이지 마�
 이렇게 하려면 추가 Repeater 컨트롤 위에 FormView `ProductsForCategoryDetails.aspx`합니다. 그런 다음 새 ObjectDataSource 라는 FormView의 스마트 태그에서 페이지 추가 `CategoryDataSource` 를 사용 하도록 구성 합니다 `CategoriesBLL` 클래스의 `GetCategoryByCategoryID(categoryID)` 메서드.
 
 
-[![CategoriesBLL 클래스의 GetCategoryByCategoryID(categoryID) 메서드를 통해 범주에 대 한 액세스 정보](master-detail-filtering-acess-two-pages-datalist-vb/_static/image20.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image19.png)
+[![A액세스 CategoriesBLL 클래스의 GetCategoryByCategoryID(categoryID) 메서드를 통해 범주에 대 한 정보](master-detail-filtering-acess-two-pages-datalist-vb/_static/image20.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image19.png)
 
 **그림 7**: 통해 범주에 대 한 정보에 액세스 합니다 `CategoriesBLL` 클래스의 `GetCategoryByCategoryID(categoryID)` 메서드 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-acess-two-pages-datalist-vb/_static/image21.png))
 
@@ -132,7 +132,7 @@ DataList 및 반복기 컨트롤을 사용 하 여 이러한 두 페이지 마�
 > FormView, 외에도 추가 했습니다 하는 데 필요한 사용자 범주의 목록으로 돌아가기 FormView 위에 하이퍼링크 컨트롤 (`CategoryListMaster.aspx`). 이 링크를 다른 곳에서 배치 하거나 완전히 생략 해도 됩니다.
 
 
-[![범주 정보는 이제 페이지의 맨 위에 표시](master-detail-filtering-acess-two-pages-datalist-vb/_static/image23.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image22.png)
+[![Category 정보 페이지의 맨 위에 있는 표시입니다.](master-detail-filtering-acess-two-pages-datalist-vb/_static/image23.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image22.png)
 
 **그림 8**: 범주 정보는 이제 페이지의 맨 위에 표시 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-acess-two-pages-datalist-vb/_static/image24.png))
 
@@ -158,7 +158,7 @@ DataList 및 반복기 컨트롤을 사용 하 여 이러한 두 페이지 마�
 데이터베이스를 그에 따라 업데이트 한 후에 반환 된 `CategoryListMaster.aspx` 페이지 및 생성 링크를 클릭 합니다. 더 이상 생성 범주에 속하는 모든 제품을 없으므로 그림 9에 표시 된 대로 "제품이 없습니다 선택한 범주..." 메시지를 표시 됩니다.
 
 
-[![선택한 범주에 없는 제품 속하는 경우 메시지가 표시 됩니다.](master-detail-filtering-acess-two-pages-datalist-vb/_static/image26.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image25.png)
+[![A 선택한 범주에 없는 제품 속하는 경우 메시지가 표시 됩니다](master-detail-filtering-acess-two-pages-datalist-vb/_static/image26.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image25.png)
 
 **그림 9**: 선택한 범주에 없는 제품 속하는 경우 메시지가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-acess-two-pages-datalist-vb/_static/image27.png))
 

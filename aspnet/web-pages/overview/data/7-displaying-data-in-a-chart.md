@@ -8,15 +8,15 @@ ms.date: 05/22/2012
 ms.assetid: f889fd46-4dac-4ecb-83d8-60e64c22036e
 msc.legacyurl: /web-pages/overview/data/7-displaying-data-in-a-chart
 msc.type: authoredcontent
-ms.openlocfilehash: 00529355476e88c47ab790121ae77202aa5e7b76
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f97f214abeaeb88634dd10aaebacc0d58e91ab84
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061100"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59422462"
 ---
-<a name="displaying-data-in-a-chart-with-aspnet-web-pages-razor"></a>ASP.NET 웹 페이지 (Razor)를 사용 하 여 차트에 데이터 표시
-====================
+# <a name="displaying-data-in-a-chart-with-aspnet-web-pages-razor"></a>ASP.NET 웹 페이지 (Razor)를 사용 하 여 차트에 데이터 표시
+
 by [Microsoft](https://github.com/microsoft)
 
 > 이 문서를 사용 하 여 ASP.NET 웹 페이지 (Razor) 웹 사이트에서 데이터를 표시할 차트를 사용 하는 방법을 설명 합니다 `Chart` 도우미입니다.
@@ -40,7 +40,7 @@ by [Microsoft](https://github.com/microsoft)
 
 그래픽 양식에서 데이터를 표시 하려는 경우 사용할 수 있습니다 `Chart` 도우미입니다. `Chart` 도우미 차트 종류의 다양 한 데이터를 표시 하는 이미지를 렌더링할 수 있습니다. 서식 및 레이블 지정에 대 한 다양 한 옵션을 지원 합니다. 합니다 `Chart` 도우미 30 개 이상의 유형의 차트, Microsoft Excel 또는 다른 도구에서 사용 하 던 못할 수 있는 차트의 모든 형식을 포함 하 여 렌더링할 수 있습니다 &#8212; 영역형 차트, 가로 막대형 차트, 세로 막대형 차트, 꺾은선형 차트 및 원형 차트는 자세히와 주식형 차트 등의 특수 차트.
 
-| **영역형 차트** ![설명 합니다. 영역형 차트 종류의 그림](7-displaying-data-in-a-chart/_static/image1.jpg) | **가로 막대형 차트** ![설명 합니다. 가로 막대형 차트 종류의 그림](7-displaying-data-in-a-chart/_static/image2.jpg) |
+| **영역형 차트** ![설명 합니다. 영역 차트 종류의 그림](7-displaying-data-in-a-chart/_static/image1.jpg) | **가로 막대형 차트** ![설명 합니다. 가로 막대형 차트 종류의 그림](7-displaying-data-in-a-chart/_static/image2.jpg) |
 | --- | --- |
 | **세로 막대형 차트** ![설명 합니다. 세로 막대형 차트 종류의 그림](7-displaying-data-in-a-chart/_static/image3.jpg) | **꺾은선형 차트** ![설명 합니다. 꺽은선형 차트 종류의 그림](7-displaying-data-in-a-chart/_static/image4.jpg) |
 | **원형 차트** ![설명 합니다. 원형 차트 종류의 그림](7-displaying-data-in-a-chart/_static/image5.jpg) | **주식형 차트** ![설명 합니다. 주식형 차트 종류의 그림](7-displaying-data-in-a-chart/_static/image6.jpg) |

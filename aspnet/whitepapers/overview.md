@@ -8,15 +8,15 @@ ms.date: 11/15/2011
 ms.assetid: d5e79470-01f2-4d65-8077-11c3e10a6784
 msc.legacyurl: /whitepapers
 msc.type: content
-ms.openlocfilehash: 5017efc4d141afba206aaca5a8b5e6bab996ebbf
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 4745e68053fae38019b6121295382a170fd2d858
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062960"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59412933"
 ---
-<a name="whitepapers"></a>백서
-====================
+# <a name="whitepapers"></a>백서
+
 > 이 페이지에서 설치 하 고 ASP.NET을 구성 하는 데 빠르고 유연한 보안 ASP.NET 응용 프로그램을 작성 하는 데 도움이 하는 백서를 찾을 수 있습니다.
 > 
 > - [ASP.NET 4](#aspnet4)
@@ -267,7 +267,7 @@ Windows Server 2003에서 IIS 6.0 및 ASP.NET 1.1 모두를 포함 하는 동안
 
 ASP.NET 웹 응용 프로그램은 일반적으로 기본 ASPNET 계정을 사용 하 여 실행 합니다. 경우에 따라 다음 사용자 지정 계정을 대신 사용 하는 것이 좋습니다. 이 방법 문서에서는 ASP.NET 웹 응용 프로그램을 실행 하는 최소 권한의 로컬 계정을 만드는 방법을 보여 줍니다. ...
 
-### <a name="configuration"></a>구성하기
+### <a name="configuration"></a>구성
 
 [ASP.NET 2.0의에서 시스템 키 구성](https://msdn.microsoft.com/library/ms998288.aspx)
 

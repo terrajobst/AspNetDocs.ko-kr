@@ -8,15 +8,15 @@ ms.date: 11/13/2006
 ms.assetid: 97c13898-0741-45f9-b3fa-7540ab1679e6
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting-with-the-datalist-and-repeater/sorting-data-in-a-datalist-or-repeater-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 58d4c14e2b888f933457fe421235499943354182
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 844b05f2b046d2c865805150b6ddc5b9c2ebb658
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422925"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59414155"
 ---
-<a name="sorting-data-in-a-datalist-or-repeater-control-vb"></a>DataList 또는 반복기 컨트롤에서 데이터 정렬(VB)
-====================
+# <a name="sorting-data-in-a-datalist-or-repeater-control-vb"></a>DataList 또는 반복기 컨트롤에서 데이터 정렬(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_45_VB.exe) 또는 [PDF 다운로드](sorting-data-in-a-datalist-or-repeater-control-vb/_static/datatutorial45vb1.pdf)
@@ -51,12 +51,12 @@ DataList 또는 Repeater 컨트롤을 사용 하 여이 기능을 복제 해야 
 정렬 관련 기능을 구현 하는 방법에 대 한 걱정 했습니다 전에 s를 반복기 컨트롤에서 제품을 나열 하 여 시작할 수 있습니다. 열어서 시작 합니다 `Sorting.aspx` 페이지에 `PagingSortingDataListRepeater` 폴더입니다. Repeater 컨트롤을 웹 페이지, 설정 추가 해당 `ID` 속성을 `SortableProducts`입니다. 반복기가 스마트 태그를 명명 된 새 ObjectDataSource를 만들 `ProductsDataSource` 에서 데이터를 검색 하도록 구성 하는 `ProductsBLL` s 클래스 `GetProducts()` 메서드. INSERT, UPDATE 및 DELETE 탭의 드롭다운 목록에서 옵션 (없음)을 선택 합니다.
 
 
-[![ObjectDataSource를 만들고 GetProductsAsPagedDataSource() 메서드를 사용 하도록 구성](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image2.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image1.png)
+[![CObjectDataSource를 작성 하 고 GetProductsAsPagedDataSource() 메서드를 사용 하도록 구성](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image2.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image1.png)
 
 **그림 1**: ObjectDataSource를 만들고 사용 하도록 구성 합니다 `GetProductsAsPagedDataSource()` 메서드 ([큰 이미지를 보려면 클릭](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image3.png))
 
 
-[![UPDATE, INSERT에에서 드롭다운 목록이 설정 하 고 탭 (없음)을 삭제 합니다.](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image5.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image4.png)
+[![S(없음)을 업데이트, 삽입 및 삭제 탭의 드롭다운 목록 et](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image5.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image4.png)
 
 **그림 2**: UPDATE, INSERT에에서 드롭다운 목록이 설정 하 고 탭 (없음)을 삭제 ([클릭 하 여 큰 이미지 보기](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image6.png))
 
@@ -71,7 +71,7 @@ DataList 또는 Repeater 컨트롤을 사용 하 여이 기능을 복제 해야 
 그림 3에서는 브라우저를 통해 볼 때이 페이지를 보여 줍니다.
 
 
-[![각 제품의의 이름이, 공급자 및 범주에 표시 됩니다.](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image8.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image7.png)
+[![E제품 이름, 공급자 및 범주 s 대 한 ach 표시 됩니다](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image8.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image7.png)
 
 **그림 3**: 각 제품의의 이름이, 공급자 및 범주에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image9.png))
 
@@ -90,7 +90,7 @@ Repeater에 표시 되는 데이터를 정렬 하려면 사용 되는 데이터�
 계속 해 서 일부 다른 하드 코드 된 값에 대 한 *sortExpression* 및 브라우저에서 결과 테스트 합니다. 그림 4 에서처럼,으로 ProductName DESC를 사용 하는 경우는 *sortExpression*, 제품 이름 역방향 사전순에서으로 정렬 됩니다.
 
 
-[![제품 이름 역방향 사전순에서으로 정렬 됩니다.](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image11.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image10.png)
+[![T역방향 사전순에서 이름별으로 정렬 됩니다 그 제품](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image11.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image10.png)
 
 **그림 4**: 제품 이름 역방향 사전순에서으로 정렬 됩니다 ([클릭 하 여 큰 이미지 보기](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image12.png))
 
@@ -124,12 +124,12 @@ Repeater에 표시 되는 데이터를 정렬 하려면 사용 되는 데이터�
 먼저 페이지를 방문 하는 경우이 시점에서 제품을 처음에 따라 정렬 됩니다는 `ProductName` 데이터 필드, s 합니다 `SortBy` `ListItem` 기본적으로 선택 (그림 6 참조). 다른 범주와 같은 옵션 정렬 및 새로 고침을 클릭 하면 선택 포스트백을 발생 되며 그림 7 있듯이 범주 이름으로 데이터를 다시 정렬 합니다.
 
 
-[![제품은 처음 이름별으로 정렬](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image15.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image14.png)
+[![T그 제품은 처음 이름별으로 정렬](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image15.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image14.png)
 
 **그림 6**: 제품 이름별으로 정렬 된 처음에 ([클릭 하 여 큰 이미지 보기](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image16.png))
 
 
-[![제품은 이제 범주별으로 정렬](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image18.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image17.png)
+[![T그 제품은 이제 범주별으로 정리 됨](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image18.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image17.png)
 
 **그림 7**: 제품은 이제 범주별으로 정렬 ([클릭 하 여 큰 이미지 보기](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image19.png))
 
@@ -151,7 +151,7 @@ Repeater에 표시 되는 데이터를 정렬 하려면 사용 되는 데이터�
 에 [이전 자습서](paging-report-data-in-a-datalist-or-repeater-control-vb.md) DataList와 함께 기본 페이징을 구현 하는 방법을 살펴보았습니다. S가 페이징된 데이터 정렬 하는 기능을 포함 하도록이 이전 예제를 확장할 수 있습니다. 열어서 시작 합니다 `SortingWithDefaultPaging.aspx` 및 `Paging.aspx` 페이지에 `PagingSortingDataListRepeater` 폴더입니다. `Paging.aspx` 페이지, 페이지 s 선언적 태그를 보려면 원본 단추를 클릭 합니다. 선택한 텍스트 복사 합니다 (그림 8 참조)의 선언 태그에 붙여 넣습니다 `SortingWithDefaultPaging.aspx` 간에 `<asp:Content>` 태그.
 
 
-[![에 있는 선언적 태그를 복제 합니다 &lt;asp: Content&gt; SortingWithDefaultPaging.aspx Paging.aspx에서 태그](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image21.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image20.png)
+[![R복제 선언적 태그에는 &lt;asp: Content&gt; SortingWithDefaultPaging.aspx Paging.aspx에서 태그](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image21.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image20.png)
 
 **그림 8**: 에 있는 선언적 태그를 복제 합니다 `<asp:Content>` 에서 태그 `Paging.aspx` 하 `SortingWithDefaultPaging.aspx` ([전체 크기 이미지를 보려면 클릭](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image22.png))
 
@@ -185,7 +185,7 @@ ObjectDataSource s 업데이트 `SelectMethod` 속성을 새 호출 `GetProducts
 이 시점에서 `SortingWithDefaultPaging.aspx` 페이지는 해당 결과 사전순 정렬 제품 이름별 (그림 9 참조). 이므로 기본적으로 ProductName 값은 변수로 전달 된 `GetProductsSortedAsPagedDataSource` s 메서드에 *sortExpression* 매개 변수입니다.
 
 
-[![기본적으로 결과 제품 이름별으로 정렬](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image24.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image23.png)
+[![By 기본적으로 결과 제품 이름별으로 정렬 됩니다](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image24.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image23.png)
 
 **그림 9**: 기본적으로 결과 기준으로 정렬 됩니다 `ProductName` ([큰 이미지를 보려면 클릭](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image25.png))
 
@@ -214,12 +214,12 @@ ObjectDataSource s 업데이트 `SelectMethod` 속성을 새 호출 `GetProducts
 데이터 제품 이름별 사전순으로 정렬는 페이지를 처음 방문 하는 경우 (그림 9 다시 참조). 범주 단추 종류를 클릭 하 고 데이터의 두 번째 페이지로 이동 하려면 다음 단추를 클릭 합니다. 범주 이름을 기준으로 정렬 하는 데이터의 첫 번째 페이지로 우리 반환 합니다 (그림 10 참조). 마찬가지로 정렬 Supplier 단추 클릭 데이터의 첫 번째 페이지에서 시작 하는 공급 업체에서 데이터를 정렬 합니다. 데이터를 통해 페이징 되는 대로 정렬 선택을 기억 됩니다. 그림 11 범주별으로 정렬 하 고 다음 데이터의 열 세 번째 페이지로 이동한 후 페이지를 보여 줍니다.
 
 
-[![제품은 범주별으로 정렬](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image27.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image26.png)
+[![T그 제품을 범주별으로 정렬](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image27.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image26.png)
 
 **그림 10**: 제품 범주별으로 정렬 됩니다 ([클릭 하 여 큰 이미지 보기](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image28.png))
 
 
-[![정렬 식은 기억 하면 페이징를 통해 데이터](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image30.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image29.png)
+[![T정렬 식을 담당 하 고 기억 하면 페이징를 통해 데이터](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image30.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image29.png)
 
 **그림 11**: 정렬 식은 기억 하면 페이징를 통해 데이터 ([클릭 하 여 큰 이미지 보기](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image31.png))
 
@@ -237,7 +237,7 @@ DataList 예제 단계에서 비효율적인 기본 페이징 기술을 사용 �
 열기는 `SortingWithCustomPaging.aspx` 페이지에 `PagingSortingDataListRepeater` 폴더 설정 페이지로 Repeater를 추가 하 고 해당 `ID` 속성을 `Products`입니다. 반복기가 스마트 태그를 만들고 라는 새로운 ObjectDataSource는 `ProductsDataSource`합니다. 해당 데이터를 선택 하도록 구성 합니다 `ProductsBLL` s 클래스 `GetProductsPaged` 메서드.
 
 
-[![S ProductsBLL 클래스 GetProductsPaged 메서드를 사용 하는 ObjectDataSource 구성](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image33.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image32.png)
+[![Configure ProductsBLL 클래스의 GetProductsPaged 메서드를 사용 하는 ObjectDataSource](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image33.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image32.png)
 
 **그림 12**: ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLL` s 클래스 `GetProductsPaged` 메서드 ([클릭 하 여 큰 이미지 보기](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image34.png))
 
@@ -245,7 +245,7 @@ DataList 예제 단계에서 비효율적인 기본 페이징 기술을 사용 �
 UPDATE, INSERT에서에서 드롭 다운 목록을 설정 탭 (없음)을 삭제 하 고 단추를 클릭 합니다. 데이터 소스 구성 마법사에서 이제 소스를 요구 합니다 `GetProductsPaged` s 메서드에 *startRowIndex* 및 *maximumRows* 매개 변수를 입력 합니다. 실제로 이러한 입력된 매개 변수가 무시 됩니다. 대신 합니다 *startRowIndex* 및 *maximumRows* 값을 통해 전달 됩니다는 `Arguments` ObjectDataSource에서 속성 `Selecting` 지정 방법을 마찬가지로 이벤트 처리기를 *sortExpression* 이 자습서가 첫 번째 데모입니다. 따라서 매개 변수 소스를 None에서 설정 마법사에서 드롭 다운 목록을 유지 합니다.
 
 
-[![매개 변수 원본 집합을 None으로 유지](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image36.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image35.png)
+[![Lnone 매개 변수 원본 설정 유지](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image36.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image35.png)
 
 **그림 13**: None 매개 변수 원본 설정 유지 ([클릭 하 여 큰 이미지 보기](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image37.png))
 
@@ -267,7 +267,7 @@ UPDATE, INSERT에서에서 드롭 다운 목록을 설정 탭 (없음)을 삭제
 이 변경으로 브라우저를 통해 볼 때 페이지 처음 5 개 제품을 보여 줍니다.
 
 
-[![첫 번째 5 개 레코드가 표시 됩니다.](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image39.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image38.png)
+[![T그 첫 번째 5 개 레코드가 표시 됩니다](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image39.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image38.png)
 
 **그림 14**: 첫 번째 5 개 레코드가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image40.png))
 
@@ -313,17 +313,17 @@ UPDATE, INSERT에서에서 드롭 다운 목록을 설정 탭 (없음)을 삭제
 이 추가한 후 `Click` 이벤트 처리기 및 코드를 사용 하도록 설정 하거나 현재 시작 행 인덱스를 기준으로 페이징 인터페이스 요소를 사용 하지 않도록 브라우저에서 페이지를 테스트 합니다. 그림 15에서는 먼저 첫 번째 페이지를 방문할 때 및 이전 단추는 비활성화 됩니다. 마지막을 클릭 하면 마지막 페이지를 표시 하는 동안 데이터의 두 번째 페이지를 보여 줍니다 다음을 클릭 (그림 16과 17 참조). 데이터의 마지막 페이지를 볼 때 다음와 마지막 단추가 비활성화 됩니다.
 
 
-[![첫 번째 제품 페이지를 볼 때 이전 및 마지막 단추를 비활성화 됩니다.](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image42.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image41.png)
+[![T첫 번째 제품 페이지를 볼 때 그 이전 및 마지막 단추는 비활성화 됩니다](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image42.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image41.png)
 
 **그림 15**: 첫 번째 제품 페이지를 볼 때 이전 및 마지막 단추를 비활성화 됩니다 ([클릭 하 여 큰 이미지 보기](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image43.png))
 
 
-[![제품의 두 번째 페이지는 표시](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image45.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image44.png)
+[![T표시 되는 그 제품의 두 번째 페이지](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image45.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image44.png)
 
 **그림 16**: 두 번째 제품 페이지에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image46.png))
 
 
-[![마지막 표시를 클릭 하 고 있습니다. 데이터의 마지막 페이지](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image48.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image47.png)
+[![C마지막 페이지의 데이터를 마지막 표시를 클릭 하](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image48.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image47.png)
 
 **그림 17**: 마지막을 클릭 하면 마지막 페이지의 데이터 표시 ([클릭 하 여 큰 이미지 보기](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image49.png))
 
@@ -366,7 +366,7 @@ ObjectDataSource를 호출 하기 전에 `GetProductsPagedAndSorted` 로 설정 
 S 모두 완료 되었습니다! 다양 한 사용자 지정 페이징 및 정렬을 구현 하는 단계 동안 단계 기본 페이징에 필요한 것과 매우 유사한 되었습니다. 그림 18 범주별으로 정렬 하는 경우 데이터의 마지막 페이지를 볼 때 제품을 보여 줍니다.
 
 
-[![데이터의 마지막 페이지, Sorted 범주별으로 표시 됩니다.](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image51.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image50.png)
+[![T또한 데이터의 마지막 페이지, Sorted 범주별으로 표시 됩니다](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image51.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image50.png)
 
 **그림 18**: 데이터의 마지막 페이지, Sorted 범주별으로 표시 됩니다 ([클릭 하 여 큰 이미지 보기](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image52.png))
 

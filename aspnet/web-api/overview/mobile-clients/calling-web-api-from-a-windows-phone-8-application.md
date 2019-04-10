@@ -1,22 +1,23 @@
 ---
 uid: web-api/overview/mobile-clients/calling-web-api-from-a-windows-phone-8-application
-title: 8 응용 프로그램 (C#)는 Windows Phone에서 Web API를 호출 합니다. | Microsoft Docs
+title: 8 응용 프로그램을 Windows Phone에서 웹 API 호출 (C#)-ASP.NET 4.x
 author: rmcmurray
-description: Windows Phone 8 응용 프로그램에는 책 카탈로그를 제공 하는 ASP.NET Web API 응용 프로그램의 구성 된 전체 종단 간 시나리오를 만듭니다.
+description: '코드를 사용 하 여 자습서: ASP.NET에서 ASP.NET Web API 응용 프로그램을 만들 4.x에 Windows Phone 8 응용 프로그램에는 책 카탈로그를 제공 합니다.'
 ms.author: riande
 ms.date: 10/09/2013
+ms.custom: seoapril2019
 ms.assetid: b9775f41-352a-4f82-baa6-23e95b342e20
 msc.legacyurl: /web-api/overview/mobile-clients/calling-web-api-from-a-windows-phone-8-application
 msc.type: authoredcontent
-ms.openlocfilehash: ca2b5f41f6c3bd38faacd1e15c4dee6f6210aff7
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a5c7804c2336e91dc171b5da52819436472e81cf
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57044620"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59412452"
 ---
-<a name="calling-web-api-from-a-windows-phone-8-application-c"></a>Windows Phone 8 애플리케이션에서 Web API 호출(C#)
-====================
+# <a name="calling-web-api-from-a-windows-phone-8-application-c"></a>Windows Phone 8 애플리케이션에서 Web API 호출(C#)
+
 [Robert McMurray](https://github.com/rmcmurray)
 
 이 자습서에서는 Windows Phone 8 응용 프로그램에는 책 카탈로그를 제공 하는 ASP.NET Web API 응용 프로그램의 구성 된 전체 종단 간 시나리오를 만드는 방법을 배웁니다.

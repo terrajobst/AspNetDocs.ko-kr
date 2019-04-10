@@ -8,15 +8,15 @@ ms.date: 04/18/2018
 ms.assetid: eac31beb-0f46-4afa-9def-e80904dea4f0
 msc.legacyurl: /signalr/overview/getting-started/supported-platforms
 msc.type: authoredcontent
-ms.openlocfilehash: 60fa74b54797efbe14ba525160b2f750a4f5a451
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 89730e591bb94022d16fe1a78a4350b38e0bf7a4
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57063420"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59420889"
 ---
-<a name="supported-platforms"></a>지원되는 플랫폼
-====================
+# <a name="supported-platforms"></a>지원되는 플랫폼
+
 [Patrick Fletcher](https://github.com/pfletcher)
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
@@ -89,7 +89,7 @@ SignalR을 다양 한 웹 브라우저에서에서 사용할 수 있지만 일�
 | --- | --- | --- | --- | --- | --- |
 | WebSocket | 10+ | current - 1 | current - 1 | current - 1 | N/A |
 | 서버에서 전송 이벤트 | N/A | current - 1 | current - 1 | current - 1 | N/A |
-| ForeverFrame | 8+ | N/A | 해당 없음 | N/A | 4.1 |
+| ForeverFrame | 8+ | N/A | 해당 사항 없음 | N/A | 4.1 |
 | 긴 폴링 | 8+ | current - 1 | current - 1 | current - 1 | 4.1 |
 
 \*: 6 + 전체 기능에 필요 합니다.

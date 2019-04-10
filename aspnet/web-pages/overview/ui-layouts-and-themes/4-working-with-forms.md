@@ -8,15 +8,15 @@ ms.date: 02/10/2014
 ms.assetid: f3f4b8c8-e8f6-4474-ad94-69228a6c01ee
 msc.legacyurl: /web-pages/overview/ui-layouts-and-themes/4-working-with-forms
 msc.type: authoredcontent
-ms.openlocfilehash: de700055168f9d17167c82afe836b546160c6e91
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 680739cbcf54bc9ca7a3bd8167d043ff537eaad5
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57042760"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59417535"
 ---
-<a name="working-with-html-forms-in-aspnet-web-pages-razor-sites"></a>ASP.NET 웹 페이지 (Razor) 사이트에서 HTML 양식 사용
-====================
+# <a name="working-with-html-forms-in-aspnet-web-pages-razor-sites"></a>ASP.NET 웹 페이지 (Razor) 사이트에서 HTML 양식 사용
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 문서에서는 설명 텍스트 상자 및 단추) (사용 하 여 HTML 폼을 처리 하는 방법을 ASP.NET Web Pages (Razor) 웹 사이트에서 작업 하는 경우.

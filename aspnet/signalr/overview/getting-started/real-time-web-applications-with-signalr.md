@@ -8,21 +8,21 @@ ms.date: 07/16/2014
 ms.assetid: ba07958c-42e1-4da0-81db-ba6925ed6db0
 msc.legacyurl: /signalr/overview/getting-started/real-time-web-applications-with-signalr
 msc.type: authoredcontent
-ms.openlocfilehash: 3db54a134e8f842cab1d3471c69f5a8e2039d83d
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 9904582450d4386ef8b8656078f6d40dbd1e10be
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423613"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59412010"
 ---
-<a name="hands-on-lab-real-time-web-applications-with-signalr"></a>실습: SignalR을 사용하는 실시간 웹 애플리케이션
-====================
+# <a name="hands-on-lab-real-time-web-applications-with-signalr"></a>실습: SignalR을 사용하는 실시간 웹 애플리케이션
+
 
 [웹 캠프 팀](https://twitter.com/webcamps)
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
-[웹 캠프 학습 키트 다운로드](https://aka.ms/webcamps-training-kit)
+[웹 캠프 학습 키트, 2015 년 10 월 릴리스를 다운로드 합니다.](https://github.com/Microsoft-Web/WebCampTrainingKit/releases/tag/v2015.10.13b)
 
 > 실시간 웹 응용 프로그램 기능을 실시간으로 발생 하는 대로 연결 된 클라이언트에 콘텐츠 서버 쪽을 푸시할 수 있습니다. ASP.NET 개발자에 게 **ASP.NET SignalR** 응용 프로그램에 실시간 웹 기능을 추가 하려면 라이브러리입니다. 이 여러 전송, 클라이언트 및 서버의 가장 사용 가능한 전송 가장 사용 가능한 전송 선택 하면 자동으로 활용 합니다. 활용 **WebSocket**, 브라우저와 서버 간의 양방향 통신을 사용 하도록 설정 하는 HTML5 API.
 > 
@@ -34,8 +34,7 @@ ms.locfileid: "58423613"
 > 
 > ![SignalR 아키텍처](real-time-web-applications-with-signalr/_static/image1.png)
 > 
-> 웹 캠프 교육 키트에서에서 사용할 수 있는 모든 샘플 코드 및 코드 조각 포함 됩니다 [ https://aka.ms/webcamps-training-kit ](https://aka.ms/webcamps-training-kit)합니다.
-
+> 모든 샘플 코드 및 코드 조각 포함 됩니다. 웹 캠프 Training Kit를 2015 년 10 월 릴리스에서에서 사용할 수 있습니다 [ https://github.com/Microsoft-Web/WebCampTrainingKit/releases/tag/v2015.10.13b ](https://github.com/Microsoft-Web/WebCampTrainingKit/releases/tag/v2015.10.13b)합니다.  해당 페이지에서 설치 관리자 링크를 더 이상 작동 하지 않으면를 note 하십시오. 대신 링크 중 하나는 자산 섹션
 
 <a id="Overview"></a>
 ## <a name="overview"></a>개요
@@ -77,7 +76,7 @@ ms.locfileid: "58423613"
 > 각 실습에 시작 솔루션을 함께 표시 됩니다는 **시작** 다른 독립적으로 각 연습에 따라 할 수 있는 연습 하는 폴더입니다. 주의 하십시오 연습 하는 동안 추가 되는 코드 조각은 솔루션부터 이러한 누락 되어 연습을 완료 될 때까지 작동 하지 않을 수 있습니다. 연습에 대 한 소스 코드 안에 있습니다.는 **최종** 해당 연습에서 단계를 완료 합니다. 결과로 생성 되는 코드를 사용 하 여 Visual Studio 솔루션에 포함 된 폴더입니다. 이 실습을 통해 작업 하는 동안 추가 도움이 필요한 경우 지침으로 이러한 솔루션을 사용할 수 있습니다.
 
 
-* * *
+---
 
 <a id="Exercises"></a>
 ## <a name="exercises"></a>연습
@@ -355,7 +354,7 @@ SignalR 백플레인으로 작동 원리,이 대 한 자세한 내용은 [문서
 
     ![Service Broker를 사용 하도록 설정](real-time-web-applications-with-signalr/_static/image26.png "Service Broker를 사용 하도록 설정")
 
-    *Service Broker를 사용 하도록 설정*
+    *Service Broker 사용*
 
     > [!NOTE]
     > 교착 상태가 발생 했는지를이 쿼리가 나타납니다 경우 DB에 연결 하는 응용 프로그램이 없습니다.
@@ -394,7 +393,7 @@ SignalR 백플레인으로 작동 원리,이 대 한 자세한 내용은 [문서
 
     *백플레인에서 메시지 테이블*
 
-* * *
+---
 
 <a id="Summary"></a>
 ## <a name="summary"></a>요약

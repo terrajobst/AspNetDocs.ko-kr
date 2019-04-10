@@ -8,15 +8,15 @@ ms.date: 11/05/2009
 ms.assetid: b93334e7-2167-4efb-a92d-e0ef5d98ac06
 msc.legacyurl: /web-forms/videos/net-4/chart/aspnet-4-quick-hit-chart-control
 msc.type: video
-ms.openlocfilehash: 43e6e7665543e8127444b1511c2a975878555cb1
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7bccf52ccf0aacffa90d3c6db541cec5e20582e3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57037270"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59414233"
 ---
-<a name="aspnet-4-quick-hit---chart-control"></a>ASP.NET 4 "Hit 빠른"-차트 컨트롤
-====================
+# <a name="aspnet-4-quick-hit---chart-control"></a>ASP.NET 4 "Hit 빠른"-차트 컨트롤
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 이 비디오를 간단 하 고 직관적으로 만드는 ASP.NET 차트 컨트롤을 사용 하는 방법 및 시각적으로 멋진 차트 배웁니다. 

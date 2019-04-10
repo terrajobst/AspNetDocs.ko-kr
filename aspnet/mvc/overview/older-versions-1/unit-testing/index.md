@@ -8,15 +8,15 @@ ms.date: 09/28/2011
 ms.assetid: b21d9a30-6b5c-41ab-a8e4-2fa18acd8e9b
 msc.legacyurl: /mvc/overview/older-versions-1/unit-testing
 msc.type: chapter
-ms.openlocfilehash: d51c89c6b61c7092fcfcdbd11bd0cd7940afa70d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a0f530059ec98c238f4711020c9481eca604dba0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57023870"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59417613"
 ---
-<a name="unit-testing"></a>단위 테스트
-====================
+# <a name="unit-testing"></a>단위 테스트
+
 > 이 자습서 집합 컨트롤러 작업에 ASP.NET MVC에 대 한 한 단위 테스트를 만드는 방법을 보여 줍니다.
 
 

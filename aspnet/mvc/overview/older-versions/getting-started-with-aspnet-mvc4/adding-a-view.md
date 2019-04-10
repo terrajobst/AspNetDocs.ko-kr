@@ -8,15 +8,15 @@ ms.date: 08/28/2012
 ms.assetid: dde851d7-882e-4d99-9b96-cf96daed81cc
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc4/adding-a-view
 msc.type: authoredcontent
-ms.openlocfilehash: 7b55a55db6207b8ff18b2dd207e919cee45f6973
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1ab1ea8b277b48b3b72edb9dd45aa4cc2937ffa8
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57030380"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59418055"
 ---
-<a name="adding-a-view"></a>보기 추가
-====================
+# <a name="adding-a-view"></a>보기 추가
+
 [Rick Anderson]((https://twitter.com/RickAndMSFT))
 
 > > [!NOTE]
@@ -75,7 +75,7 @@ Visual Studio 2012, 솔루션 탐색기를 사용 하는 경우 마우스 오른
 
 ![_LayoutCshtml](adding-a-view/_static/image7.png)
 
-레이아웃 템플릿을 한 곳에서 사이트의 HTML 컨테이너 레이아웃을 지정 하 고 다음 사이트에서 여러 페이지에 걸쳐 적용할 수 있습니다. `@RenderBody()` 줄을 찾습니다. `RenderBody`는 사용자가 만드는 모든 보기 전용 페이지가 표시되는 자리 표시자이며 레이아웃 페이지에서 &quot;래핑됩니다&quot;. 예를 들어, 정보 링크를 선택 하는 경우는 *Views\Home\About.cshtml* 보기 내에서 렌더링 되는 `RenderBody` 메서드.
+레이아웃 템플릿을 한 곳에서 사이트의 HTML 컨테이너 레이아웃을 지정 하 고 다음 사이트에서 여러 페이지에 걸쳐 적용할 수 있습니다. `@RenderBody()` 줄을 찾습니다. `RenderBody` 모든 보기 전용 페이지가 있습니다 자리 표시자 만들어져 표시, &quot;래핑된&quot; 레이아웃 페이지에 있습니다. 예를 들어, 정보 링크를 선택 하는 경우는 *Views\Home\About.cshtml* 보기 내에서 렌더링 되는 `RenderBody` 메서드.
 
 사이트 제목 머리글에서 레이아웃 템플릿에 변경 &quot;여기에 로고&quot; 하 &quot;MVC 동영상&quot;합니다.
 

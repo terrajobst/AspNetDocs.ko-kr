@@ -8,15 +8,15 @@ ms.date: 12/18/2012
 ms.assetid: 71ee4c78-c500-4d1c-b761-b4e161a291b5
 msc.legacyurl: /web-api/overview/security/integrated-windows-authentication
 msc.type: authoredcontent
-ms.openlocfilehash: 13dead421abf7ded73cbb2e5f87e54b1a869b5d4
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ce845eb6c914321736d77e989f10344eb7596eba
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57063710"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59416833"
 ---
-<a name="integrated-windows-authentication"></a>통합 Windows 인증
-====================
+# <a name="integrated-windows-authentication"></a>통합 Windows 인증
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 통합된 Windows 인증에 Kerberos 또는 NTLM을 사용 하는 Windows 자격 증명을 사용 하 여 로그인 할 수 있습니다. 클라이언트 자격 증명 권한 부여 헤더를 보냅니다. Windows 인증은 인트라넷 환경에 가장 적합 합니다. 자세한 내용은 [Windows 인증](https://www.iis.net/configreference/system.webserver/security/authentication/windowsauthentication)을 참조하세요.

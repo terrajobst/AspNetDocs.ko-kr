@@ -8,15 +8,15 @@ ms.date: 02/14/2014
 ms.assetid: 961e525b-7700-469e-8a68-d7010b6fb68c
 msc.legacyurl: /web-pages/overview/performance-and-traffic/15-caching-to-improve-the-performance-of-your-website
 msc.type: authoredcontent
-ms.openlocfilehash: ede341e02869a9c81cbe2fa7ef97345dc87519a1
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 10b853966ba80b673e1a6786987893f919369e7a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57032690"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59412907"
 ---
-<a name="caching-data-in-an-aspnet-web-pages-razor-site-for-better-performance"></a>성능 향상을 위해 ASP.NET 웹 페이지 (Razor) 사이트에서 데이터 캐싱
-====================
+# <a name="caching-data-in-an-aspnet-web-pages-razor-site-for-better-performance"></a>성능 향상을 위해 ASP.NET 웹 페이지 (Razor) 사이트에서 데이터 캐싱
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 문서에서는 ASP.NET Web Pages (Razor) 웹 사이트에서 성능 향상에 대 한 정보를 캐시 하는 도우미를 사용 하는 방법을 설명 합니다. 저장 하 여 웹 사이트 속도 높일 수 있습니다 &#8212; 즉, 캐시 &#8212; 는 일반적으로 상당한 시간이 걸립니다 받거나 처리 하 고 자주 변경 되지 않는 데이터의 결과입니다.

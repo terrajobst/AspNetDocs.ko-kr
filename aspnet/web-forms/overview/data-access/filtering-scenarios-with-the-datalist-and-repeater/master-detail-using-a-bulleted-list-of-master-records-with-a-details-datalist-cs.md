@@ -8,15 +8,15 @@ ms.date: 10/17/2006
 ms.assetid: c727bb73-7b59-41a1-8dc3-623c6d69e7c2
 msc.legacyurl: /web-forms/overview/data-access/filtering-scenarios-with-the-datalist-and-repeater/master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 57854d1df3686e81ee2e368495b7c051d7f1b37b
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: d5c881592140bdf73f25fa620d58213cc283153d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422508"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59412036"
 ---
-<a name="masterdetail-using-a-bulleted-list-of-master-records-with-a-details-datalist-c"></a>세부 정보 DataList와 함께 마스터 레코드의 글머리 기호 목록을 사용하는 마스터/세부 정보(C#)
-====================
+# <a name="masterdetail-using-a-bulleted-list-of-master-records-with-a-details-datalist-c"></a>세부 정보 DataList와 함께 마스터 레코드의 글머리 기호 목록을 사용하는 마스터/세부 정보(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_35_CS.exe) 또는 [PDF 다운로드](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/datatutorial35cs1.pdf)
@@ -31,7 +31,7 @@ ms.locfileid: "58422508"
 이 자습서에서는 압축할 두 페이지 자습서는 단일 페이지에 LinkButton으로 렌더링 되는 각 범주 이름의 범주 이름의 글머리 기호 목록 화면 왼쪽에 표시 합니다. Linkbutton 범주 이름 중 하나를 클릭 포스트백을 유도 하 고 화면 오른쪽에 열이 두 DataList를 선택한 범주의 제품을 바인딩합니다. 왼쪽 반복기 각 s 범주 이름을 표시 하는 것 외에도 지정된 된 범주에 있는 총 제품 있습니다 수를 보여 (그림 1 참조).
 
 
-[![이름이 범주와 제품의 총 수는 왼쪽에 표시 됩니다.](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image2.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image1.png)
+[![T그 범주의 이름 및 제품의 총 수는 왼쪽에 표시 됩니다](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image2.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image1.png)
 
 **그림 1**: 이름이 범주와 제품의 총 수는 왼쪽에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image3.png))
 
@@ -62,7 +62,7 @@ DataList의 왼쪽에 반복기를 float로 사용 해야는 `float` CSS 스타�
 CSS 클래스를 추가 하 고 태그를 구성한 후의 `CategoriesAndProducts.aspx` 페이지, 디자이너로 이동 합니다. DataList의 왼쪽에 부동 (오른쪽 이제 둘 다 표시 회색 상자 이후로 ve 해당 데이터 원본 또는 템플릿을 구성 하는 대로) 하지만 반복기에 표시 됩니다.
 
 
-[![DataList의 왼쪽으로 움직이는 반복기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image5.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image4.png)
+[![TDataList의 왼쪽으로 움직이는 그 Repeater](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image5.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image4.png)
 
 **그림 2**: DataList의 왼쪽으로 움직이는 반복기 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image6.png))
 
@@ -81,7 +81,7 @@ CSS 클래스를 추가 하 고 태그를 구성한 후의 `CategoriesAndProduct
 반복기가 각 범주에 대 한 제품의 수를 결정 `ItemDataBound` 이벤트 처리기의 기존 데이터 액세스 계층을 수정할 필요가 없습니다. 내에서 직접 모든 수정을 만들 수는 `CategoriesAndProducts.aspx` 페이지입니다. 라는 새 ObjectDataSource를 추가 하 여 시작 `CategoriesDataSource` Repeater가 스마트 태그를 통해. 다음으로 구성 합니다 `CategoriesDataSource` ObjectDataSource는 해당 데이터를 검색 하도록 합니다 `CategoriesBLL` s 클래스 `GetCategories()` 메서드.
 
 
-[![S GetCategories() 메서드 CategoriesBLL 클래스를 사용 하는 ObjectDataSource 구성](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image8.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image7.png)
+[![Configure CategoriesBLL 클래스의 GetCategories() 메서드를 사용 하는 ObjectDataSource](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image8.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image7.png)
 
 **그림 3**: ObjectDataSource를 사용 하 여 구성 합니다 `CategoriesBLL` s 클래스 `GetCategories()` 메서드 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image9.png))
 
@@ -122,7 +122,7 @@ S 범주 이름을 표시 하려고 하는 반면 *고* 해당 범주에 속하�
 이 이벤트 처리기를 추가한 후 시간을 내어 브라우저를 통해 페이지를 테스트 합니다. 각 범주의 범주 이름 및 범주와 관련 된 제품의 수를 표시, 글머리 기호 목록에 표시 됩니다 하는 방법 (그림 4 참조).
 
 
-[![각 이름이 범주와 제품 번호 표시 됩니다.](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image11.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image10.png)
+[![E범주 이름이 대 한 ach 및 수의 제품 표시 됩니다](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image11.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image10.png)
 
 **그림 4**: 각 이름이 범주와 제품 번호 표시 됩니다 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image12.png))
 
@@ -132,7 +132,7 @@ S 범주 이름을 표시 하려고 하는 반면 *고* 해당 범주에 속하�
 하므로 각 범주에 대 한 제품 개수를 확인 하는 대신 s 바인딩할 반복기를 조정 하 여이 프로세스를 간소화할 수 있습니다 것 합니다 `CategoriesDataTable` 및 `CategoriesTableAdapter` 기본적으로이 정보를 포함 하도록 데이터 액세스 계층에서. 이렇게 하려면 새 열을 추가 해야 합니다 `CategoriesDataTable` 관련된 제품의 수를 보유 하 합니다. DataTable에 새 열을 추가할 입력 데이터 집합을 엽니다 (`App_Code\DAL\Northwind.xsd`), 데이터를 수정 하려면 테이블을 마우스 오른쪽 단추로 클릭 하 고 추가 선택 / 열입니다. 새 열을 추가 하 여 `CategoriesDataTable` (그림 5 참조).
 
 
-[![CategoriesDataSource에 새 열 추가](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image14.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image13.png)
+[![Add는 CategoriesDataSource 새 열을](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image14.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image13.png)
 
 **그림 5**: 새 열을 추가 합니다 `CategoriesDataSource` ([큰 이미지를 보려면 클릭](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image15.png))
 
@@ -150,12 +150,12 @@ S 범주 이름을 표시 하려고 하는 반면 *고* 해당 범주에 속하�
 이 새로 추가 하려면 `GetCategoriesAndNumberOfProducts()` 메서드를 마우스 오른쪽 단추로 클릭은 `CategoriesTableAdapter` 새 쿼리를 선택 합니다. 이렇게 하면 TableAdapter 쿼리 구성 마법사, 우리는 여러 번 이전 자습서에서에서 사용한 ve 가동 됩니다. 이 메서드에 대 한 쿼리는 행을 반환 하는 임시 SQL 문을 지정 하 여 마법사를 시작 합니다.
 
 
-[![임시 SQL 문을 사용 하는 메서드 만들기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image18.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image17.png)
+[![Create 메서드를 통해 임시 SQL 문](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image18.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image17.png)
 
 **그림 7**: 임시 SQL 문을 사용 하 여 메서드를 만듭니다 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image19.png))
 
 
-[![SQL 문이 행을 반환합니다.](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image21.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image20.png)
+[![T그 행을 반환 합니다 SQL 문](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image21.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image20.png)
 
 **그림 8**: SQL 문이 반환 행 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image22.png))
 
@@ -166,7 +166,7 @@ S 범주 이름을 표시 하려고 하는 반면 *고* 해당 범주에 속하�
 [!code-sql[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/samples/sample7.sql)]
 
 
-[![사용 하 여 쿼리를 지정 합니다.](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image24.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image23.png)
+[![S쿼리를 사용 하 여 지정](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image24.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image23.png)
 
 **그림 9**: 쿼리를 사용 하 여 지정 합니다 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image25.png))
 
@@ -176,7 +176,7 @@ S 범주 이름을 표시 하려고 하는 반면 *고* 해당 범주에 속하�
 이 쿼리를 입력 한 후 마지막 단계는 새 메서드의 이름을 선택 하는 것입니다. 사용 하 여 `FillWithNumberOfProducts` 및 `GetCategoriesAndNumberOfProducts` 채우기 돌아가 DataTable DataTable 패턴, 각각.
 
 
-[![새 TableAdapter의 메서드 FillWithNumberOfProducts 이름과 GetCategoriesAndNumberOfProducts](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image27.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image26.png)
+[![N새 tableadapter 메서드 FillWithNumberOfProducts ame 및 GetCategoriesAndNumberOfProducts](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image27.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image26.png)
 
 **그림 10**: 새 tableadapter 메서드 이름을 `FillWithNumberOfProducts` 하 고 `GetCategoriesAndNumberOfProducts` ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image28.png))
 
@@ -191,7 +191,7 @@ DAL 및 완료 하는 BLL을 사용 하 여 다시에서는 준비 된이 데이
 원래 상태의 Repeater를 사용 하 여 추가 라는 새로운 ObjectDataSource는 `CategoriesDataSource` Repeater가 스마트 태그를 통해. ObjectDataSource 사용 하도록 구성 합니다 `CategoriesBLL` 클래스를 사용 하는 대신 합니다 `GetCategories()` 메서드를 사용 했습니다 `GetCategoriesAndNumberOfProducts()` 대신 (그림 11 참조).
 
 
-[![GetCategoriesAndNumberOfProducts 메서드를 사용 하는 ObjectDataSource 구성](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image30.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image29.png)
+[![Configure GetCategoriesAndNumberOfProducts 메서드를 사용 하는 ObjectDataSource](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image30.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image29.png)
 
 **그림 11**: ObjectDataSource를 사용 하 여 구성 합니다 `GetCategoriesAndNumberOfProducts` 메서드 ([큰 이미지를 보려면 클릭](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image31.png))
 
@@ -218,7 +218,7 @@ DAL 포함 하도록 업데이트 하 여 렌더링 된 출력을 `NumberOfProdu
 DataList s 스마트 태그에서 이라는 새 ObjectDataSource를 추가 하도록 선택할 `CategoryProductsDataSource` 를 사용 하도록 구성 합니다 `ProductsBLL` s 클래스 `GetProductsByCategoryID(categoryID)` 메서드. 이 자습서에서는 DataList 읽기 전용 인터페이스를 제공 하므로 자유롭게는 insert, UPDATE, 드롭 다운 목록을 설정 하 고 탭 (없음)를 삭제 합니다.
 
 
-[![ProductsBLL 클래스의 GetProductsByCategoryID(categoryID) 메서드를 사용 하는 ObjectDataSource 구성](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image33.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image32.png)
+[![CObjectDataSource 사용 하 여 ProductsBLL 클래스의 GetProductsByCategoryID(categoryID) 메서드 onfigure](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image33.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image32.png)
 
 **그림 12**: ObjectDataSource를 사용 하 여 구성할 `ProductsBLL` s 클래스 `GetProductsByCategoryID(categoryID)` 메서드 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image34.png))
 
@@ -228,7 +228,7 @@ DataList s 스마트 태그에서 이라는 새 ObjectDataSource를 추가 하�
 이제 매개 변수 원본 드롭 다운 목록 None으로 설정 합니다. 우리가 최종적으로 프로그래밍 방식으로 범주 반복기에서 LinkButton을 클릭할 때이 매개 변수 값을 할당 합니다.
 
 
-[![매개 변수 원본에 대 한 categoryID 매개 변수를 지정 하지 않습니다](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image36.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image35.png)
+[![Do 매개 변수 원본에 대 한 categoryID 매개 변수를 지정 하지](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image36.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image35.png)
 
 **그림 13**: 지정 하지 매개 변수 원본에 대해 수행 된 *`categoryID`* 매개 변수 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image37.png))
 
@@ -263,12 +263,12 @@ DataList s 스마트 태그에서 이라는 새 ObjectDataSource를 추가 하�
 이러한 추가 기능을 사용 하 여 자습서 완료 되었습니다! 브라우저에서 테스트에 대해 잠시 설명. 그림 14에서는 먼저 페이지를 방문할 때 화면을 보여 줍니다. 범주를 선택 해야 아직에 있으므로 제품이 표시 됩니다. 생성, 같은 범주를 클릭 하면 해당 제품 2 열 뷰에서 제품 범주에 표시 됩니다 (그림 15 참조).
 
 
-[![제품이 표시 되는 경우 첫 번째 페이지를 방문 하는](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image39.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image38.png)
+[![No 제품 표시 되는 경우 첫 번째 페이지를 방문 하는](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image39.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image38.png)
 
 **그림 14**: 제품이 표시 되는 경우 첫 번째 페이지를 방문 하는 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image40.png))
 
 
-[![생성 범주 목록이 일치 하는 제품 오른쪽을 클릭합니다.](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image42.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image41.png)
+[![C비위를 맞추는 데 하 여 생성 범주 목록 오른쪽에 일치 하는 제품](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image42.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image41.png)
 
 **그림 15**: 오른쪽에 일치 하는 제품을 나열 생성 범주를 클릭 하면 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image43.png))
 

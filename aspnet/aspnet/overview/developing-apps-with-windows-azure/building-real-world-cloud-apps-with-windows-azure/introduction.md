@@ -8,15 +8,15 @@ ms.date: 06/12/2014
 ms.assetid: accfa16a-ab15-4c26-9ad4-babdc2a77d2e
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/introduction
 msc.type: authoredcontent
-ms.openlocfilehash: c496e93d7517bc187514d5fa2dfa90d29c5f47f9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bf9cf1f5be22a5b97ec964277c11ae21066676f0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033120"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59412413"
 ---
-<a name="building-real-world-cloud-apps-with-azure"></a>Azure 사용 하 여 실제 클라우드 앱 빌드
-====================
+# <a name="building-real-world-cloud-apps-with-azure"></a>Azure 사용 하 여 실제 클라우드 앱 빌드
+
 하 여 [Mike Wasson](https://github.com/MikeWasson)하십시오 [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
 
 [다운로드 해결 프로젝트](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자책 다운로드](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
@@ -100,7 +100,7 @@ Scott Guthrie의 감시 하는 사람 *실제 세계 클라우드 앱 빌드 Azu
     - 고가용성을 사용 하도록 설정 하 고 느슨하게 웹 및 작업자 계층을 결합 하 여 확장성을 개선 합니다.
     - 데모: Fix It 응용 프로그램에서 azure storage 큐입니다.
 - [더 많은 클라우드 앱 패턴 및 지침도](more-patterns-and-guidance.md)합니다.
-- [부록: 수정 샘플 응용 프로그램](the-fix-it-sample-application.md)
+- [부록: Fix It 애플리케이션 예제](the-fix-it-sample-application.md)
 
     - 알려진 문제
     - 모범 사례

@@ -8,15 +8,15 @@ ms.date: 05/16/2012
 ms.assetid: 6f72bde8-f2f1-4e4a-94e5-494c3c153c14
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects
 msc.type: chapter
-ms.openlocfilehash: 4400195da0ca1167de8556f9339cd2a5f7414131
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 79e09dddb39bd00019584da2ab199c03a42c67f8
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57022470"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59412543"
 ---
-<a name="deploying-web-site-projects-in-visual-studio-2008-and-earlier"></a>Visual Studio 2008 이하에서 웹 사이트 프로젝트 배포
-====================
+# <a name="deploying-web-site-projects-in-visual-studio-2008-and-earlier"></a>Visual Studio 2008 이하에서 웹 사이트 프로젝트 배포
+
 > ASP.NET 웹 응용 프로그램은 일반적으로 디자인, 생성 및 테스트 로컬 개발 환경 및 릴리스에 대 한 준비가 되 면 프로덕션 환경에 배포 해야 합니다. 이 자습서 시리즈 배포 프로세스를 자세히 설명합니다.
 
 

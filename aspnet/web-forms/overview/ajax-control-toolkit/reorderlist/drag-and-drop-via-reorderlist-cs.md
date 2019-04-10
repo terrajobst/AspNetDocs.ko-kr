@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 6350ee8e-11d6-4aff-b51c-942878014835
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/reorderlist/drag-and-drop-via-reorderlist-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 15ae6ae60381f3f656f667a97dac72dbb283c80e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 988aa9252cfd93067888734006e6003347f1fb5e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57035030"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59414753"
 ---
-<a name="drag-and-drop-via-reorderlist-c"></a>ReorderList를 통해 끌어서 놓기(C#)
-====================
+# <a name="drag-and-drop-via-reorderlist-c"></a>ReorderList를 통해 끌어서 놓기(C#)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/ReorderList5.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/reorderlist5CS.pdf)
@@ -44,7 +44,7 @@ by [Christian Wenz](https://github.com/wenz)
 - `position` (int, NULL)
 
 
-[![AJAX 테이블의 레이아웃](drag-and-drop-via-reorderlist-cs/_static/image2.png)](drag-and-drop-via-reorderlist-cs/_static/image1.png)
+[![TAJAX 테이블의 레이아웃을 그](drag-and-drop-via-reorderlist-cs/_static/image2.png)](drag-and-drop-via-reorderlist-cs/_static/image1.png)
 
 AJAX 테이블의 레이아웃 ([클릭 하 여 큰 이미지 보기](drag-and-drop-via-reorderlist-cs/_static/image3.png))
 
@@ -52,7 +52,7 @@ AJAX 테이블의 레이아웃 ([클릭 하 여 큰 이미지 보기](drag-and-d
 다음으로 두 가지 값을 사용 하 여 테이블을 채웁니다. `position` 열 요소는 정렬 순서를 포함 합니다.
 
 
-[![AJAX 테이블의 초기 데이터](drag-and-drop-via-reorderlist-cs/_static/image5.png)](drag-and-drop-via-reorderlist-cs/_static/image4.png)
+[![T그리고 AJAX 테이블의 초기 데이터](drag-and-drop-via-reorderlist-cs/_static/image5.png)](drag-and-drop-via-reorderlist-cs/_static/image4.png)
 
 AJAX 테이블의 초기 데이터 ([클릭 하 여 큰 이미지 보기](drag-and-drop-via-reorderlist-cs/_static/image6.png))
 
@@ -83,7 +83,7 @@ AJAX 테이블의 초기 데이터 ([클릭 하 여 큰 이미지 보기](drag-a
 브라우저에서이 예제를 실행 하 고 잠시 목록 항목을 다시 정렬 합니다. 그런 다음 페이지를 다시 로드 하거나 데이터베이스를 확인 합니다. 변경된 위치를 유지 관리 되었는지 및 값을 기준으로 반영 됩니다는 `position` 데이터베이스에 열 태그를 사용 하 여 방금 모든 코드 없이 합니다.
 
 
-[![데이터가 새 목록 항목 순서에 따라 데이터베이스 변경](drag-and-drop-via-reorderlist-cs/_static/image8.png)](drag-and-drop-via-reorderlist-cs/_static/image7.png)
+[![T그의 데이터가 새 목록 항목 순서에 따라 데이터베이스 변경](drag-and-drop-via-reorderlist-cs/_static/image8.png)](drag-and-drop-via-reorderlist-cs/_static/image7.png)
 
 새 목록에 따라 데이터베이스 변경에서의 데이터 항목 순서 ([클릭 하 여 큰 이미지 보기](drag-and-drop-via-reorderlist-cs/_static/image9.png))
 

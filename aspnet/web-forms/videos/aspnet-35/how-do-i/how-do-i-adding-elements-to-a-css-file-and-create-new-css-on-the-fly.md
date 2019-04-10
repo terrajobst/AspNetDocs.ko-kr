@@ -8,15 +8,15 @@ ms.date: 02/14/2008
 ms.assetid: 426a5d0f-fde7-447c-ad69-4efe45f8efea
 msc.legacyurl: /web-forms/videos/aspnet-35/how-do-i/how-do-i-adding-elements-to-a-css-file-and-create-new-css-on-the-fly
 msc.type: video
-ms.openlocfilehash: 0048108e6237e64daf12e4fec673edaddee73c73
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b1ea56d8588023dd37bc42521c7cd339e6f631c8
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033150"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59416196"
 ---
-<a name="how-do-i-adding-elements-to-a-css-file-and-create-new-css-on-the-fly"></a>[어떻게 할까요?] CSS에 요소를 추가 파일을 즉석에서 새 CSS 만들기
-====================
+# <a name="how-do-i-adding-elements-to-a-css-file-and-create-new-css-on-the-fly"></a>[어떻게 할까요?] CSS에 요소를 추가 파일을 즉석에서 새 CSS 만들기
+
 Asli Bilgin 여
 
 이 비디오에서는 기존 스타일 시트에 작성 되지 않으며 Visual Studio 2008의 새로운 CSS 관리 도구를 사용 하는 요소 id를 사용 하 여 향상 됩니다.

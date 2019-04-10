@@ -8,15 +8,15 @@ ms.date: 09/08/2014
 ms.assetid: 732a2316-e49f-4f72-becd-0cd72f14457e
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/membership-and-administration
 msc.type: authoredcontent
-ms.openlocfilehash: 23d08d5a05a8321fbc794e2c9b54cc39c9b5baf6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7263a7d7ee791be8a1369934aac4d091736a658b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57031060"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59417483"
 ---
-<a name="membership-and-administration"></a>멤버 자격 및 관리
-====================
+# <a name="membership-and-administration"></a>멤버 자격 및 관리
+
 [Erik Reitan](https://github.com/Erikre)
 
 [Wingtip Toys 샘플 프로젝트 (C#)를 다운로드](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 또는 [전자책 (PDF) 다운로드](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
@@ -66,12 +66,12 @@ ASP.NET Id를 사용 하 여 사용자 지정 역할을 추가할 수 있으며 
    강조 표시 된 메서드의 시작 부분에 문자 "A" 밑줄이 표시 됩니다.
 7. 문자 "A" 위에 놓고 클릭에 대 한 메서드 스텁을 생성할 수 있도록 UI를 `AddUserAndRole` 메서드. 
 
-    ![멤버 자격 및 Advministration-메서드 스텁 생성](membership-and-administration/_static/image1.png)
+    ![멤버 자격 및 관리-메서드 스텁 생성](membership-and-administration/_static/image1.png)
 8. 옵션을 클릭 합니다.  
     `Generate method stub for "AddUserAndRole" in "WingtipToys.Logic.RoleActions"`
 9. 엽니다는 *RoleActions.cs* 에서 파일을 *논리* 폴더.  
    `AddUserAndRole` 메서드가 클래스 파일에 추가 되었습니다.
-10. 수정 된 *RoleActions.cs* 파일을 제거 하 여는 `NotImplementedeException` 다음과 같이 표시 되도록 노란색으로 강조 표시 된 코드를 추가 하 고:  
+10. 수정 된 *RoleActions.cs* 파일을 제거 하 여는 `NotImplementedException` 다음과 같이 표시 되도록 노란색으로 강조 표시 된 코드를 추가 하 고:  
 
     [!code-csharp[Main](membership-and-administration/samples/sample3.cs?highlight=5-7,15-51)]
 
@@ -274,7 +274,7 @@ Wingtip Toys 샘플 응용 프로그램에는 익명 사용자와 로그인 한 
 ## <a name="additional-resources"></a>추가 리소스
 
 [Web.config-authorization 요소](https://msdn.microsoft.com/library/8d82143t(v=vs.100).aspx)  
-[ASP.NET Id](../../../../identity/overview/getting-started/introduction-to-aspnet-identity.md)  
+[ASP.NET ID](../../../../identity/overview/getting-started/introduction-to-aspnet-identity.md)  
 [멤버 자격, OAuth 및 SQL Database를 사용 하 여 보안 ASP.NET Web Forms 앱을 Azure 웹 사이트에 배포](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-deploy-aspnet-webforms-app-membership-oauth-sql-database/)  
 [Microsoft Azure 무료 평가판](https://azure.microsoft.com/pricing/free-trial/)
 

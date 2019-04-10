@@ -8,15 +8,15 @@ ms.date: 05/16/2012
 ms.assetid: 83e0a572-428f-4bea-9638-1a031c6901c0
 msc.legacyurl: /web-forms/overview/deployment/web-deployment-in-the-enterprise
 msc.type: chapter
-ms.openlocfilehash: 92bc3d18c417e73e198d0f7663489fd931bf75b5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 109a0dc1e1ebe0b644e9414561c798a7bb3d0531
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57020610"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59414831"
 ---
-<a name="aspnet-4---enterprise-deployment-series-1"></a>ASP.NET 4 - 엔터프라이즈 배포 시리즈 1
-====================
+# <a name="aspnet-4---enterprise-deployment-series-1"></a>ASP.NET 4 - 엔터프라이즈 배포 시리즈 1
+
 > 이 자습서에는 많은 개발, 테스트, 스테이징 및 프로덕션 환경에 엔터프라이즈급 웹 응용 프로그램 배포를 관리할 때 발생 하는 과제를 충족 하는 방법을 설명 합니다. 자습서에는 다양 한 일반 작업 및 절차를 안내 하는 개념 및 작업 기반 콘텐츠 혼합 함께 참조 솔루션을 포함 합니다.
 
 

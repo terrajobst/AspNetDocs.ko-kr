@@ -1,25 +1,26 @@
 ---
 uid: web-api/overview/odata-support-in-aspnet-web-api/odata-routing-conventions
-title: ASP.NET Web API 2에서에서 라우팅 규칙 Odata | Microsoft Docs
+title: ASP.NET Web API 2에서에서 라우팅 규칙 Odata-ASP.NET 4.x
 author: MikeWasson
-description: 이 문서에서는 Web API OData 끝점을 사용 하는 라우팅 규칙을 설명 합니다.
+description: 해당 Web API 2 OData 끝점에 대 한 ASP.NET 4.x의 라우팅 규칙에 설명합니다.
 ms.author: riande
 ms.date: 07/31/2013
+ms.custom: seoapril2019
 ms.assetid: adbc175a-14eb-4ab2-a441-d056ffa8266f
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-routing-conventions
 msc.type: authoredcontent
-ms.openlocfilehash: 0199ccde100c8c3ab70db912b8ab984e0617f9dd
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8916f8b7a024636be1be055457081487f46a7936
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57027120"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421630"
 ---
-<a name="routing-conventions-in-aspnet-web-api-2-odata"></a>ASP.NET Web API 2에서에서 라우팅 규칙 Odata
-====================
+# <a name="routing-conventions-in-aspnet-web-api-2-odata"></a>ASP.NET Web API 2에서에서 라우팅 규칙 Odata
+
 [Mike Wasson](https://github.com/MikeWasson)
 
-> 이 문서에서는 Web API OData 끝점을 사용 하는 라우팅 규칙을 설명 합니다.
+> 이 문서는 해당 Web API 2 OData 끝점에 대 한 ASP.NET 4.x의 라우팅 규칙을 설명합니다.
 
 
 Web API OData 요청을 받으면 요청을 작업 이름과 컨트롤러 이름의을 매핑합니다. 매핑을은 HTTP 메서드와 URI 기반으로 합니다. 예를 들어 `GET /odata/Products(1)` 매핑됩니다 `ProductsController.GetProduct`합니다.
@@ -118,7 +119,7 @@ Web API에서 OData 라우팅 규칙을 설명 하기 전에는 OData Uri를 이
 
 자세한 내용은 [OData 작업](odata-v3/odata-actions.md)합니다.
 
-**메서드 시그니처**
+**메서드 서명**
 
 메서드 서명에 대 한 몇 가지 규칙은 다음과 같습니다.
 

@@ -8,15 +8,15 @@ ms.date: 03/06/2014
 ms.assetid: 7ef5f73c-ca60-43c1-bdb2-702800347e7e
 msc.legacyurl: /visual-studio/overview/2013/aspnet-and-web-tools-20132-preview-for-visual-studio-2013-release-notes
 msc.type: authoredcontent
-ms.openlocfilehash: bbb38ddde49cdeea4255e0e05bd559ddd9e5f692
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 22d4d4afd6963f23d6cfef1745a859c20b69d599
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425992"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59422995"
 ---
-<a name="aspnet-and-web-tools-20132--for-visual-studio-2013-release-notes"></a>Visual Studio 2013용 ASP.NET 및 Web Tools 2013.2 릴리스 정보
-====================
+# <a name="aspnet-and-web-tools-20132--for-visual-studio-2013-release-notes"></a>Visual Studio 2013용 ASP.NET 및 Web Tools 2013.2 릴리스 정보
+
 by [Microsoft](https://github.com/microsoft)
 
 ## <a name="installation-notes"></a>설치 참고 사항
@@ -49,7 +49,7 @@ ASP.NET 및 Web Tools for Visual Studio 2013.2 Visual Studio 2013이 필요 합�
 - [ASP.NET Web API 2.1.2](#webapi)
 - [ASP.NET Web Pages 3.1.2](#webpages)
 - [Entity Framework 6.1](#ef)
-- [ASP.NET Identity 2.0.0](#identity)
+- [ASP.NET Id 2.0.0](#identity)
 - [Microsoft OWIN 구성 요소](#owin)
 - [ASP.NET SignalR 2.0.2](#signalr)
 
@@ -185,7 +185,7 @@ NuGet 2.8.1 RTM은 2014 년 4 월 출시 됩니다. 다음 릴리스 정보에�
     `<config> <add key="dependencyversion" value="Highest" /> </config>`
 - **-WhatIf를 사용 하 여 NuGet 작업 미리 보기**: 일부 NuGet 패키지 전체 종속성 그래프를 포함할 수 있으며 따라서이 수를 설치 하는 동안 유용할 제거 또는 업데이트 작업을 먼저 발생 하는 결과 확인 하려면. 표준 PowerShell을 추가 하는 NuGet 2.8-명령을 적용 되는 패키지의 완전 한 클로저 시각화를 활성화 하는 패키지 설치, 제거 패키지 및 패키지 업데이트 명령을 어떻게 전환 합니다.
 - **패키지를 다운 그레이드**: 새로운 기능을 조사 하기 위해 패키지의 시험판 버전을 설치 하 고 마지막 안정적인 버전으로 롤백하려면 다음 결정을 일반적이 지 않은 것입니다. NuGet 2.8 이전에이 시험판 패키지 및 해당 종속성을 제거 하 고 다음 이전 버전을 설치 하는 여러 단계의 프로세스가 이었습니다. 그러나 NuGet 2.8을 사용 하 여 업데이트 패키지를 이제 롤백됩니다 전체 패키지 클로저 (예: 패키지의 종속성 트리) 이전 버전으로 합니다.
-- **개발 종속성**: 개발 프로세스를 최적화 하는 데 사용 되는 도구를 포함 하는 NuGet 패키지로-다양 한 기능을 제공할 수 있습니다. 이후이 경우 새 패키지의 종속성 게시 구성이 요소를 새 패키지를 개발 하는 데 도움이 될 수 있지만 이러한 고려 되어야 합니다. NuGet 2.8을 developmentDependency.nuspec 파일에 자신을 식별 하는 패키지를 수 있습니다. 설치 하는 경우에이 메타 데이터는 패키지가 설치 된 프로젝트의 packages.config 파일에 추가 됩니다. Packages.config 파일은 나중에 분석할 NuGet 종속성에 대 한 nuget.exe 팩 중 때 개발 종속성으로 표시 하는 이러한 종속성 제외 됩니다.
+- **개발 종속성**: 개발 프로세스를 최적화 하는 데 사용 되는 도구를 포함 하는 NuGet 패키지로-다양 한 기능을 제공할 수 있습니다. 이후이 경우 새 패키지의 종속성 게시 구성이 요소를 새 패키지를 개발 하는 데 도움이 될 수 있지만 이러한 고려 되어야 합니다. NuGet 2.8을 developmentDependency.nuspec 파일에 자신을 식별 하는 패키지를 수 있습니다. 설치 하는 경우에이 메타 데이터는 패키지가 설치 된 프로젝트의 packages.config 파일에 추가 됩니다. Packages.config 파일은 나중에 분석할 NuGet 종속성에 대 한 nuget.exe 팩 중 하는 경우 해당 종속성 개발 종속성으로 표시는 제외 합니다.
 - **다양 한 플랫폼에 대 한 개별 packages.config 파일**: 여러 대상 플랫폼에 대 한 응용 프로그램을 개발 하는 경우 각 해당 빌드 환경에 대해 다른 프로젝트 파일을 저장 하는 일반적인 것입니다. 패키지에 다양 한 플랫폼에 대 한 지원 수준이 다양 한 대로도 여러 프로젝트 파일에서 다른 NuGet 패키지 사용에 일반적입니다. 다양 한 플랫폼 관련 프로젝트 파일에 대 한 다른 packages.config 파일을 만들어이 시나리오에 대 한 향상 된 지원을 제공 하는 NuGet 2.8 합니다.
 - **로컬 캐시에 대체 (fallback)**: NuGet 패키지는 일반적으로 사용 된 원격 갤러리에서와 같은 경우에 [NuGet 갤러리](http://www.nuget.org) 는 네트워크 연결을 사용 하 여, 다양 한 시나리오는 클라이언트가 연결 되지 않았습니다. 네트워크 연결 없이 NuGet 클라이언트에서 해당 패키지는 로컬 NuGet 캐시에서 클라이언트 컴퓨터에 이미 있던 경우에-패키지를 설치할 수 없습니다. 2.8 NuGet 패키지 관리자 콘솔에 대체 (fallback) 자동 캐시를 추가합니다.
 
@@ -216,7 +216,7 @@ NuGet 2.8.1 RTM은 2014 년 4 월 출시 됩니다. 다음 릴리스 정보에�
 - [전역 오류 처리](../../../web-api/overview/releases/whats-new-in-aspnet-web-api-21.md#global-error)
 - [특성 라우팅 향상 된 기능](../../../web-api/overview/releases/whats-new-in-aspnet-web-api-21.md#attribute-routing)
 - [도움말 페이지 개선](../../../web-api/overview/releases/whats-new-in-aspnet-web-api-21.md#help-page)
-- [IgnoreRoute support](../../../web-api/overview/releases/whats-new-in-aspnet-web-api-21.md#ignoreroute)
+- [IgnoreRoute 지원](../../../web-api/overview/releases/whats-new-in-aspnet-web-api-21.md#ignoreroute)
 - [BSON 미디어 유형 포맷터입니다.](../../../web-api/overview/releases/whats-new-in-aspnet-web-api-21.md#bson)
 - [비동기 필터에 대 한 지원 향상](../../../web-api/overview/releases/whats-new-in-aspnet-web-api-21.md#async-filters)
 - [클라이언트 라이브러리를 서식 지정에 대 한 구문 분석 쿼리](../../../web-api/overview/releases/whats-new-in-aspnet-web-api-21.md#query-parsing)

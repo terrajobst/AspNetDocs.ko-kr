@@ -8,15 +8,15 @@ ms.date: 10/05/2011
 ms.assetid: 2e6e9c24-bb97-446a-b05e-1bd88824d352
 msc.legacyurl: /web-forms/videos/aspnet-35
 msc.type: chapter
-ms.openlocfilehash: 331298981c89e83e7ef9ac260c4da6e38acb97ab
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b858dfc24a14e182319122320d8bb6af3b8fcb3c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57021900"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59422696"
 ---
-<a name="aspnet-35"></a>ASP.NET 3.5
-====================
+# <a name="aspnet-35"></a>ASP.NET 3.5
+
 > 새로운 기능에 중점을 두어 ASP.NET 3.5 응용 프로그램을 빌드하는 방법입니다.
 
 
@@ -32,7 +32,7 @@ ms.locfileid: "57021900"
     - [Entity Framework 시작](how-do-i/how-do-i-get-started-with-the-entity-framework.md)
     - [새 엔터티 데이터 원본 사용](how-do-i/how-do-i-use-the-new-entity-data-source.md)
     - [Entity Framework를 사용하여 그래프 직렬화](how-do-i/how-do-i-serialize-a-graph-with-the-entity-framework.md)
-    - [MSBuild를 사용하여 ASP.NET 컴파일러를 자동화 하고 유틸리티 병합](how-do-i/how-do-i-use-msbuild-to-automate-the-aspnet-compiler-and-merge-utilities.md)
+    - [MSBuild를 사용하여 ASP.NET 컴파일러를 자동화하고 유틸리티 병합](how-do-i/how-do-i-use-msbuild-to-automate-the-aspnet-compiler-and-merge-utilities.md)
 - [ASP.NET Ajax](aspnet-ajax/index.md)
 
     - [Visual Studio 2008에서 ASP.NET AJAX 지원](aspnet-ajax/aspnet-ajax-support-in-visual-studio-2008.md)
@@ -49,12 +49,12 @@ ms.locfileid: "57021900"
 - [Visual Studio 디자이너](visual-studio-designer/index.md)
 
     - [Visual Studio 2008 및 중첩된 마스터 페이지](visual-studio-designer/visual-studio-2008-and-nested-masterpages.md)
-- [Visual Studio Editor](visual-studio-editor/index.md)
+- [Visual Studio 편집기](visual-studio-editor/index.md)
 
     - [Visual Studio 2008의 새로운 디자이너 지원](visual-studio-editor/new-designer-support-in-visual-studio-2008.md)
     - [Visual Studio 2008의 JavaScript Intellisense 지원](visual-studio-editor/javascript-intellisense-support-in-visual-studio-2008.md)
     - [Visual Studio 2008에서 JavaScript 디버깅](visual-studio-editor/javascript-debugging-in-visual-studio-2008.md)
-    - [Visual Studio 2008의 다중 타기팅 지원](visual-studio-editor/multi-targeting-support-in-visual-studio-2008.md)
+    - [Visual Studio 2008의 멀티 타기팅 지원](visual-studio-editor/multi-targeting-support-in-visual-studio-2008.md)
     - [Jscript 및 ASP.NET AJAX용 IntelliSense](visual-studio-editor/intellisense-for-jscript-and-aspnet-ajax.md)
     - [Visual Studio 2008 통합 개발 환경 둘러보기](visual-studio-editor/quick-tour-of-the-visual-studio-2008-integrated-development-environment.md)
     - [CSS 파일 만들기 및 수정](visual-studio-editor/creating-and-modifying-a-css-file.md)
