@@ -8,15 +8,15 @@ ms.date: 04/17/2013
 ms.assetid: c334adc3-d6dc-44f3-9f06-f7634475aad3
 msc.legacyurl: /signalr/overview/older-versions/signalr-1x-hubs-api-guide-net-client
 msc.type: authoredcontent
-ms.openlocfilehash: dbf62b2f9851e3612885aa5375cd2c3432570643
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1551b4533e05a6cd7dcc29e4c6bc17e854889ee8
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57025530"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59402247"
 ---
-<a name="aspnet-signalr-hubs-api-guide---net-client-signalr-1x"></a>ASP.NET SignalR 허브 API 가이드-.NET 클라이언트 (SignalR 1.x)
-====================
+# <a name="aspnet-signalr-hubs-api-guide---net-client-signalr-1x"></a>ASP.NET SignalR 허브 API 가이드-.NET 클라이언트 (SignalR 1.x)
+
 하 여 [Patrick Fletcher](https://github.com/pfletcher), [Tom Dykstra](https://github.com/tdykstra)
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
@@ -97,8 +97,7 @@ ms.locfileid: "57025530"
 
 [!code-css[Main](signalr-1x-hubs-api-guide-net-client/samples/sample3.css?highlight=1)]
 
-
-  `HubConnection` 클래스는 스레드로부터 안전합니다.
+`HubConnection` 클래스는 스레드로부터 안전합니다.
 
 <a id="slcrossdomain"></a>
 

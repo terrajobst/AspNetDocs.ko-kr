@@ -8,15 +8,15 @@ ms.date: 02/20/2005
 ms.assetid: 2bb109d2-e299-46ea-9054-fa0263b59165
 msc.legacyurl: /web-forms/overview/moving-to-aspnet-20/caching
 msc.type: authoredcontent
-ms.openlocfilehash: 5c97464ee50291338a80120a86b1b86b07bc672d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5e16415df5bd4203995bec943ffa682f7da82357
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57032930"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59400206"
 ---
-<a name="caching"></a>캐싱
-====================
+# <a name="caching"></a>캐싱
+
 by [Microsoft](https://github.com/microsoft)
 
 > 캐싱의 이해가 우수한 ASP.NET 응용 프로그램에 대 한 중요 합니다. ASP.NET 1.x 캐싱;에 대 한 세 가지 다른 옵션 제공 출력 캐싱, 부분 캐싱 및 캐시 API.
@@ -56,7 +56,7 @@ ASP.NET 1.x 개발자는 사용자 지정 캐시 종속성에 대 한 cried 합�
 
 참고 캐시 키 배열에 추가 하는 값과 같은 캐시 키로 사용 되는 항목의 키 여야 합니다.
 
-## <a name="polling-based-sql-cache-dependenciesemalso-called-table-based-dependenciesem"></a>SQL 캐시 종속성 폴링 기반<em>(테이블 기반 종속성이 라고도 함)</em>
+## <a name="polling-based-sql-cache-dependenciesalso-called-table-based-dependencies"></a>SQL 캐시 Dependencies(Also called Table-Based Dependencies) 폴링 기반
 
 SQL Server 7 및 2000 SQL 캐시 종속성에 대 한 폴링 기반 모델을 사용 합니다. 폴링 기반 모델은 테이블의에서 데이터를 변경할 때 트리거되는 데이터베이스 테이블에서 트리거를 사용 합니다. 업데이트를 트리거하는 한 **changeId** ASP.NET 주기적으로 확인 하는 알림 테이블의 필드입니다. 경우는 **changeId** 필드가 업데이트 되었습니다, ASP.NET 인식 데이터를 변경 하 고 캐시 된 데이터를 무효화 합니다.
 
@@ -213,7 +213,7 @@ ASP.NET 2.0에서 캐싱 구성에 여러 변경 내용이 있습니다. 합니�
 
 | **요소** | **설명** |
 | --- | --- |
-| **cache** | 선택적 요소입니다. 전역 응용 프로그램 캐시 설정을 정의합니다. |
+| **캐시** | 선택적 요소입니다. 전역 응용 프로그램 캐시 설정을 정의합니다. |
 | **outputCache** | 선택적 요소입니다. 응용 프로그램 수준 출력 캐시 설정을 지정합니다. |
 | **outputCacheSettings** | 선택적 요소입니다. 응용 프로그램의 페이지에 적용할 수 있는 출력 캐시 설정을 지정 합니다. |
 | **sqlCacheDependency** | 선택적 요소입니다. ASP.NET 응용 프로그램에 대 한 SQL 캐시 종속성을 구성합니다. |
@@ -252,7 +252,7 @@ ASP.NET 2.0에서 캐싱 구성에 여러 변경 내용이 있습니다. 합니�
 
 | **특성** | **설명** |
 | --- | --- |
-| **enabled** | 필요한 **부울** 특성입니다. 변경 내용에 대 한 폴링 하는지 여부를 나타냅니다. |
+| **사용** | 필요한 **부울** 특성입니다. 변경 내용에 대 한 폴링 하는지 여부를 나타냅니다. |
 | **pollTime** | 선택적 **Int32** 특성입니다. SqlCacheDependency 있는 변경 내용에 대 한 데이터베이스 테이블을 폴링하는 빈도 설정 합니다. 이 값은 연속적인 폴링 간격 (밀리초)의 수에 해당합니다. 500 개 미만의 시간 (밀리초)을 설정할 수 없습니다. 기본값은 1 분입니다. |
 
 ### <a name="more-information"></a>추가 정보

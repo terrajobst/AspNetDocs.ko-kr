@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: addcf4aa-340a-460b-9c64-506424a1f725
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/modifying-animations-from-the-server-side-vb
 msc.type: authoredcontent
-ms.openlocfilehash: ef32c8f4846b18f11d816a64a3e4292b67b232e9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: fb7e992246b9c630d99a1493f344c4089540d67e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061320"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59398087"
 ---
-<a name="modifying-animations-from-the-server-side-vb"></a>서버 쪽 (VB)에서 애니메이션 수정
-====================
+# <a name="modifying-animations-from-the-server-side-vb"></a>서버 쪽 (VB)에서 애니메이션 수정
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation9.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation9VB.pdf)
@@ -55,7 +55,7 @@ ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이�
 [!code-vb[Main](modifying-animations-from-the-server-side-vb/samples/sample6.vb)]
 
 
-[![서버 쪽 C# /VB 코드를 사용 하 여 애니메이션이 만들어집니다.](modifying-animations-from-the-server-side-vb/_static/image2.png)](modifying-animations-from-the-server-side-vb/_static/image1.png)
+[![T서버 쪽을 사용 하 여 그 애니메이션이 만들어집니다. C#/VB 코드](modifying-animations-from-the-server-side-vb/_static/image2.png)](modifying-animations-from-the-server-side-vb/_static/image1.png)
 
 애니메이션은 서버 쪽 C# /VB 코드를 사용 하 여 생성 됩니다 ([클릭 하 여 큰 이미지 보기](modifying-animations-from-the-server-side-vb/_static/image3.png))
 

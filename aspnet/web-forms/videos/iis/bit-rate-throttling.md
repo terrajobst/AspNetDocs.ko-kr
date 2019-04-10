@@ -8,15 +8,15 @@ ms.date: 03/09/2009
 ms.assetid: 8dc90862-97d6-48d1-8bfc-79c70d622474
 msc.legacyurl: /web-forms/videos/iis/bit-rate-throttling
 msc.type: video
-ms.openlocfilehash: e5230a600fb8a6330ba173fdf88298008e187753
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 4845c9f7311bf6e973c7be9230b32ac3fc1677ba
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57060750"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59405276"
 ---
-<a name="bit-rate-throttling"></a>비트 전송률 제한
-====================
+# <a name="bit-rate-throttling"></a>비트 전송률 제한
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 이 비디오에서는 설치 및 새로운 멋진 IIS7 기능 – 비트 전송률 제한을 구성 하는 방법에 알아봅니다. BRT를 사용 하 여 미디어 파일 또는 큰 다운로드 사이트 UI 성능 하다 없이 제공할 수 있습니다.

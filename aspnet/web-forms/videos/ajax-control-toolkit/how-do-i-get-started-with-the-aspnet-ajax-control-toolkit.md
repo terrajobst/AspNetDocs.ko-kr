@@ -8,15 +8,15 @@ ms.date: 01/23/2007
 ms.assetid: 0ab311fc-154b-4e38-86ce-c6351ff5cabb
 msc.legacyurl: /web-forms/videos/ajax-control-toolkit/how-do-i-get-started-with-the-aspnet-ajax-control-toolkit
 msc.type: video
-ms.openlocfilehash: 01f49ba72b6a6d748157ab153e56a8467895c95b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a9c9de7347dd24046d081a5e9ebbcf91a10fe634
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57039210"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59408266"
 ---
-<a name="how-do-i-get-started-with-the-aspnet-ajax-control-toolkit"></a>[어떻게 할까요?] ASP.NET AJAX Control Toolkit를 사용 하 여 시작 합니다.
-====================
+# <a name="how-do-i-get-started-with-the-aspnet-ajax-control-toolkit"></a>[어떻게 할까요?] ASP.NET AJAX Control Toolkit를 사용 하 여 시작 합니다.
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 ASP.NET AJAX Control Toolkit를 사용 하 여 ASP.NET AJAX 응용 프로그램을 확장 하는 방법에 알아봅니다. 이 비디오 다운로드 도구 키트를 설치 하 고 해당 컨트롤의 몇 가지 간단한 ASP.NET AJAX 지원 웹 페이지에 추가 포함 하 여 기본적인 사항부터 시작 됩니다.

@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 5138b8fe-98ff-4e73-a00b-e263fc3ff11d
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/dynamically-controlling-updatepanel-animations-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 4de43cca95a37270c752d57f39940339b5bb2e3c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0767b66a035069629c15e658c1e75ea78a7bd07b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57048180"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59407655"
 ---
-<a name="dynamically-controlling-updatepanel-animations-c"></a>UpdatePanel 애니메이션을 동적으로 제어(C#)
-====================
+# <a name="dynamically-controlling-updatepanel-animations-c"></a>UpdatePanel 애니메이션을 동적으로 제어(C#)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/UpdatePanelAnimation2.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/updatepanelanimation2CS.pdf)
@@ -58,7 +58,7 @@ ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이�
 브라우저에서 파일을 실행 합니다. 단추를 클릭할 때마다 현재 항상 1 초 동안 페이드 인 패널에 표시 됩니다.
 
 
-[![현재는 페이드 인](dynamically-controlling-updatepanel-animations-cs/_static/image2.png)](dynamically-controlling-updatepanel-animations-cs/_static/image1.png)
+[![T또한 현재는 옅은 색](dynamically-controlling-updatepanel-animations-cs/_static/image2.png)](dynamically-controlling-updatepanel-animations-cs/_static/image1.png)
 
 현재 시간 페이딩 됩니다 ([클릭 하 여 큰 이미지 보기](dynamically-controlling-updatepanel-animations-cs/_static/image3.png))
 

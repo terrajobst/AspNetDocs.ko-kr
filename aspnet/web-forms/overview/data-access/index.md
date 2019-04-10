@@ -8,15 +8,15 @@ ms.date: 10/05/2011
 ms.assetid: cf54a6fb-a362-4481-b967-c158b98092f7
 msc.legacyurl: /web-forms/overview/data-access
 msc.type: chapter
-ms.openlocfilehash: 0060650de35a8693a9c1432876df1d4902bb1ade
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d2f9d48618a102df7ea24a6d2a80b5c3026c7752
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57023080"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59405406"
 ---
-<a name="older-versions---data-access"></a>이전 버전 - 데이터 액세스
-====================
+# <a name="older-versions---data-access"></a>이전 버전 - 데이터 액세스
+
 > 다양 한 ASP.NET Web Forms 데이터 컨트롤을 사용 하 여 데이터 관련 작업을 수행 하는 방법.
 
 
@@ -158,7 +158,7 @@ ms.locfileid: "57023080"
     - [데이터 웹 컨트롤에 이진 데이터 표시(VB)](working-with-binary-files/displaying-binary-data-in-the-data-web-controls-vb.md)
     - [새 레코드를 추가할 때 파일 업로드 옵션 포함(VB)](working-with-binary-files/including-a-file-upload-option-when-adding-a-new-record-vb.md)
     - [기존 이진 데이터 업데이트 및 삭제(VB)](working-with-binary-files/updating-and-deleting-existing-binary-data-vb.md)
-- [데이터 캐시](caching-data/index.md)
+- [데이터 캐싱](caching-data/index.md)
 
     - [ObjectDataSource를 사용하여 데이터 캐싱(C#)](caching-data/caching-data-with-the-objectdatasource-cs.md)
     - [아키텍처에서 데이터 캐싱(C#)](caching-data/caching-data-in-the-architecture-cs.md)
@@ -184,21 +184,21 @@ ms.locfileid: "57023080"
     - [일괄 삽입(VB)](working-with-batched-data/batch-inserting-vb.md)
 - [고급 데이터 액세스 시나리오](advanced-data-access-scenarios/index.md)
 
-    - [형식화된 데이터 세트의 Tableadapter에 대한 새로운 저장 프로시저 만들기(C#)](advanced-data-access-scenarios/creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-cs.md)
-    - [형식화된 데이터 세트의 Tableadapter에 대한 기존 저장 프로시저 사용(C#)](advanced-data-access-scenarios/using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-cs.md)
+    - [형식화된 데이터 세트의 TableAdapter에 대한 새로운 저장 프로시저 만들기(C#)](advanced-data-access-scenarios/creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-cs.md)
+    - [형식화된 데이터 세트의 TableAdapter에 대한 기존 저장 프로시저 사용(C#)](advanced-data-access-scenarios/using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-cs.md)
     - [JOIN을 사용하도록 TableAdapter 업데이트(C#)](advanced-data-access-scenarios/updating-the-tableadapter-to-use-joins-cs.md)
     - [추가 DataTable 열 추가(C#)](advanced-data-access-scenarios/adding-additional-datatable-columns-cs.md)
     - [계산 열 작업(C#)](advanced-data-access-scenarios/working-with-computed-columns-cs.md)
     - [데이터 액세스 레이어의 연결 및 명령 수준 설정 구성(C#)](advanced-data-access-scenarios/configuring-the-data-access-layer-s-connection-and-command-level-settings-cs.md)
     - [연결 문자열 및 기타 구성 정보 보호(C#)](advanced-data-access-scenarios/protecting-connection-strings-and-other-configuration-information-cs.md)
-    - [저장 프로시저 디버깅(C#)](advanced-data-access-scenarios/debugging-stored-procedures-cs.md)
+    - [저장 프로시저 디버그(C#)](advanced-data-access-scenarios/debugging-stored-procedures-cs.md)
     - [관리 코드를 사용하여 저장 프로시저 및 사용자 정의 함수 만들기(C#)](advanced-data-access-scenarios/creating-stored-procedures-and-user-defined-functions-with-managed-code-cs.md)
-    - [형식화된 데이터 세트의 Tableadapter에 대한 새로운 저장 프로시저 만들기(VB)](advanced-data-access-scenarios/creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb.md)
-    - [형식화된 데이터 세트의 Tableadapter에 대한 기존 저장 프로시저 사용(VB)](advanced-data-access-scenarios/using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb.md)
+    - [형식화된 데이터 세트의 TableAdapter에 대한 새로운 저장 프로시저 만들기(VB)](advanced-data-access-scenarios/creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb.md)
+    - [형식화된 데이터 세트의 TableAdapter에 대한 기존 저장 프로시저 사용(VB)](advanced-data-access-scenarios/using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb.md)
     - [JOIN을 사용하도록 TableAdapter 업데이트(VB)](advanced-data-access-scenarios/updating-the-tableadapter-to-use-joins-vb.md)
     - [추가 DataTable 열 추가(VB)](advanced-data-access-scenarios/adding-additional-datatable-columns-vb.md)
     - [계산 열 작업(VB)](advanced-data-access-scenarios/working-with-computed-columns-vb.md)
     - [데이터 액세스 레이어의 연결 및 명령 수준 설정 구성(VB)](advanced-data-access-scenarios/configuring-the-data-access-layer-s-connection-and-command-level-settings-vb.md)
     - [연결 문자열 및 기타 구성 정보 보호(VB)](advanced-data-access-scenarios/protecting-connection-strings-and-other-configuration-information-vb.md)
-    - [저장 프로시저 디버깅(VB)](advanced-data-access-scenarios/debugging-stored-procedures-vb.md)
+    - [저장 프로시저 디버그(VB)](advanced-data-access-scenarios/debugging-stored-procedures-vb.md)
     - [관리 코드를 사용하여 저장 프로시저 및 사용자 정의 함수 만들기(VB)](advanced-data-access-scenarios/creating-stored-procedures-and-user-defined-functions-with-managed-code-vb.md)

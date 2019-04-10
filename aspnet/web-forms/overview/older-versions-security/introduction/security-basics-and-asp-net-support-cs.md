@@ -8,15 +8,15 @@ ms.date: 01/13/2008
 ms.assetid: 07e15538-2f29-40c6-b2e7-e6115075ac83
 msc.legacyurl: /web-forms/overview/older-versions-security/introduction/security-basics-and-asp-net-support-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 817a823ab5b09ea8bf2620a142779e79f53d957d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8f6fb4348e6ff703d329331b908e41763f24bb1f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57026510"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59402949"
 ---
-<a name="security-basics-and-aspnet-support-c"></a>보안 기본 사항 및 ASP.NET 지원(C#)
-====================
+# <a name="security-basics-and-aspnet-support-c"></a>보안 기본 사항 및 ASP.NET 지원(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [PDF 다운로드](http://download.microsoft.com/download/2/F/7/2F705A34-F9DE-4112-BBDE-60098089645E/aspnet_tutorial01_Basics_cs.pdf)
@@ -140,7 +140,7 @@ Microsoft는.NET Framework의 두 가지 멤버 자격 공급자 클래스를 �
 이 자습서 시리즈를 SqlMembershipProvider에만 중점을 둡니다.
 
 
-[![공급자 모델 사용 하면 다른 구현을 원활 하 게 연결에 프레임 워크를 &lt; /s o n&gt;](security-basics-and-asp-net-support-cs/_static/image4.png)](security-basics-and-asp-net-support-cs/_static/image3.png)
+[![T공급자 모델 사용 하면 다른 구현을 원활 하 게 연결에 프레임 워크를 그&lt;강력한 /&gt;](security-basics-and-asp-net-support-cs/_static/image4.png)](security-basics-and-asp-net-support-cs/_static/image3.png)
 
 **그림 03**: 공급자 모델 사용 하면 다른 구현을 원활 하 게 연결에 프레임 워크를 ([클릭 하 여 큰 이미지 보기](security-basics-and-asp-net-support-cs/_static/image5.png))
 

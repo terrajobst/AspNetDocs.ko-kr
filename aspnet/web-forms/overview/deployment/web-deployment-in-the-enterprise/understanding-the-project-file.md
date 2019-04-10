@@ -8,15 +8,15 @@ ms.date: 05/04/2012
 ms.assetid: 07978d9d-341c-4524-bcba-62976f390f77
 msc.legacyurl: /web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file
 msc.type: authoredcontent
-ms.openlocfilehash: 114dd21002ef41627f3a101c0197a85fd5208887
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d774a8e13e108d1be4c39e1e909d3d9683968a0d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57053970"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59404925"
 ---
-<a name="understanding-the-project-file"></a>프로젝트 파일 이해
-====================
+# <a name="understanding-the-project-file"></a>프로젝트 파일 이해
+
 [Jason lee 공저](https://github.com/jrjlee)
 
 [PDF 다운로드](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
@@ -90,7 +90,7 @@ MSBuild 프로젝트 파일의 주요 요소 간의 관계를 보여 줍니다.
 [!code-xml[Main](understanding-the-project-file/samples/sample2.xml)]
 
 
-속성 값을 검색 하 형식을 사용 하면 <strong>$(</strong><em>PropertyName</em><strong>)</strong><em>.</em> 예를 들어의 값을 검색 하는 <strong>ServerName</strong> 속성 입력:
+속성 값을 검색 하 형식을 사용 하면 **$(***PropertyName***) * * * 합니다.* 예를 들어의 값을 검색 하는 **ServerName** 속성 입력:
 
 
 [!code-powershell[Main](understanding-the-project-file/samples/sample3.ps1)]
@@ -192,8 +192,8 @@ MSBuild 스키마에는 [태스크](https://msdn.microsoft.com/library/77f2hx1s.
 
 일반적으로 유용한 작업 및 목표를 만든 경우에 속성 및 프로젝트 파일의 다른 곳에서 정의 된 항목을 참조 해야 합니다.
 
-- 속성 값을 사용 하려면 입력 <strong>$(</strong><em>PropertyName</em><strong>)</strong>여기서 <em>PropertyName</em> 이름인는 <strong>속성</strong> 요소 또는 매개 변수의 이름입니다.
-- 항목을 사용 하려면 입력 <strong>@(</strong><em>ItemName</em><strong>)</strong>여기서 <em>ItemName</em> 이름인 합니다 <strong>항목</strong> 요소.
+- 속성 값을 사용 하려면 입력 합니다. **$(***PropertyName***)** 여기서 *PropertyName* 의 이름인를 **속성** 요소나의 이름을 매개 변수입니다.
+- 항목을 사용 하려면 입력 **@(***ItemName***)** 여기서 *ItemName* 이름인 합니다 **항목** 요소.
 
 > [!NOTE]
 > 동일한 이름의 여러 항목을 만드는 경우 목록 작성 하 고 기억 합니다. 반면, 동일한 이름의 여러 속성을 만드는 경우 마지막 속성 값을 입력 해야 이전 속성 덮어씁니다 동일한 이름을 가진&#x2014;속성을 단일 값을 포함할 수 있습니다.

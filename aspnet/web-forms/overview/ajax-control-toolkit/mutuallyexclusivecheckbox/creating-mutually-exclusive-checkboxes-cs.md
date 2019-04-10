@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 8e11b813-ba0d-4c29-b0f8-f65db6dbef1e
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/mutuallyexclusivecheckbox/creating-mutually-exclusive-checkboxes-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 3d80771081a7aefefa115e68827c52092c6559bb
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 01d6d2988278d3d371d93b23bbdf089d83900405
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57052600"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59397853"
 ---
-<a name="creating-mutually-exclusive-checkboxes-c"></a>상호 배타적인 확인란 만들기(C#)
-====================
+# <a name="creating-mutually-exclusive-checkboxes-c"></a>상호 배타적인 확인란 만들기(C#)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/MutuallyExclusiveCheckBox0.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/mutuallyexclusivecheckbox0CS.pdf)
@@ -47,7 +47,7 @@ ASP.NET AJAX Control Toolkit MutuallyExclusiveCheckBox extender를 포함합니�
 저장 하 고 페이지를 실행 합니다. 하지만 확인을 모두 확인란의 선택을 취소 순식간에 확인란을 모두 확인할 수 있습니다.
 
 
-[![한 번에 하나씩만 확인할 수 있습니다.](creating-mutually-exclusive-checkboxes-cs/_static/image2.png)](creating-mutually-exclusive-checkboxes-cs/_static/image1.png)
+[![O한 번에 있는 확인란 하나를 확인할 수 있습니다](creating-mutually-exclusive-checkboxes-cs/_static/image2.png)](creating-mutually-exclusive-checkboxes-cs/_static/image1.png)
 
 한 번에 하나씩만 확인할 수 있습니다 ([클릭 하 여 큰 이미지 보기](creating-mutually-exclusive-checkboxes-cs/_static/image3.png))
 

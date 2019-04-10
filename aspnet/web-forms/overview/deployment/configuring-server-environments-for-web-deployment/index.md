@@ -8,15 +8,15 @@ ms.date: 05/16/2012
 ms.assetid: 489b414b-2322-4385-8638-04e08c0b6c90
 msc.legacyurl: /web-forms/overview/deployment/configuring-server-environments-for-web-deployment
 msc.type: chapter
-ms.openlocfilehash: 559718b0ddb4ffc892ea166c7c3a4dfaf36e3691
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 63ffb6fa3c32c91508a12ed4545de08767c6200c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57023650"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59397970"
 ---
-<a name="aspnet-4---enterprise-deployment-series-2-configuring-servers"></a>ASP.NET 4 - 엔터프라이즈 배포 시리즈 2 서버 구성
-====================
+# <a name="aspnet-4---enterprise-deployment-series-2-configuring-servers"></a>ASP.NET 4 - 엔터프라이즈 배포 시리즈 2 서버 구성
+
 > 이 자습서에서는 한 번의 클릭 또는 자동화 된 지원, 웹 사이트 배포 및 다양 한 다른 시나리오에서 게시 서버 환경을 설정 하는 방법을 보여줍니다.
 
 

@@ -8,21 +8,21 @@ ms.date: 11/14/2011
 ms.assetid: e87dbaaf-fcbe-4e42-87ee-e60e25856e8c
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/getting-started
 msc.type: chapter
-ms.openlocfilehash: 20e41a1fb79a5b8c81952fb84f131f3a97da2aa3
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 997c2a305db4165e2c3330d9cea50cceb1f4f017
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57023250"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59407629"
 ---
-<a name="getting-started"></a>시작
-====================
+# <a name="getting-started"></a>시작
+
 > 이 페이지에는 Ajax Control Toolkit을 다운로드 하는 방법 및 Visual Studio 또는 Visual Web Developer 도구 상자에 해당 컨트롤을 추가 하는 방법을 설명 합니다.
 
 
 - [AJAX 컨트롤 도구 키트 시작(C#)](get-started-with-the-ajax-control-toolkit-cs.md)
-- [Using AJAX 컨트롤 도구 키트 컨트롤 및 컨트롤 Extenders 사용(C#)](using-ajax-control-toolkit-controls-and-control-extenders-cs.md)
+- [Using AJAX 컨트롤 도구 키트 컨트롤 및 컨트롤 Extender 사용(C#)](using-ajax-control-toolkit-controls-and-control-extenders-cs.md)
 - [사용자 지정 AJAX 컨트롤 도구 키트 컨트롤 Extender 만들기(C#)](creating-a-custom-ajax-control-toolkit-control-extender-cs.md)
 - [AJAX 컨트롤 도구 키트 시작(VB)](get-started-with-the-ajax-control-toolkit-vb.md)
-- [Using AJAX 컨트롤 도구 키트 컨트롤 및 컨트롤 Extenders 사용(VB)](using-ajax-control-toolkit-controls-and-control-extenders-vb.md)
+- [Using AJAX 컨트롤 도구 키트 컨트롤 및 컨트롤 Extender 사용(VB)](using-ajax-control-toolkit-controls-and-control-extenders-vb.md)
 - [사용자 지정 AJAX 컨트롤 도구 키트 컨트롤 Extender 만들기(VB)](creating-a-custom-ajax-control-toolkit-control-extender-vb.md)

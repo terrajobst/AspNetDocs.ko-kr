@@ -8,15 +8,15 @@ ms.date: 02/29/2012
 ms.assetid: ba1fabb4-31a3-4ebf-8327-41a6bbba6eaf
 msc.legacyurl: /whitepapers/whats-new-in-aspnet-45-and-visual-studio-2012
 msc.type: content
-ms.openlocfilehash: 6bbfb4aa7f29e4c189da4dfdca6f2113c7550b68
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5f50721b6f263b9cb025f5fa57c923dadeddcd28
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57045050"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59410593"
 ---
-<a name="whats-new-in-aspnet-45-and-visual-studio-2012"></a>ASP.NET 4.5 및 Visual Studio 2012의 새로운 기능
-====================
+# <a name="whats-new-in-aspnet-45-and-visual-studio-2012"></a>ASP.NET 4.5 및 Visual Studio 2012의 새로운 기능
+
 > 이 문서에서는 새로운 기능과 향상 된 ASP.NET 4.5에서 도입 되는 설명 합니다. 또한 향상이 되 고 Visual Studio 2012에서 웹 개발에 대해 설명 합니다. 이 문서를 2012 년 2 월 29 일에 처음 게시 됩니다.
 
 
@@ -80,7 +80,7 @@ ms.locfileid: "57045050"
         - [DOM IntelliSense](#_Toc318097412)
         - [VSDOC 서명이 오버 로드](#_Toc318097413)
         - [암시적 참조](#_Toc318097414)
-    - [CSS Editor](#_Toc318097415)
+    - [CSS 편집기](#_Toc318097415)
 
         - [문 자동 줄임 완성](#_Toc318097416)
         - [계층적 들여쓰기입니다.](#_Toc318097417)
@@ -88,7 +88,7 @@ ms.locfileid: "57045050"
         - [공급 업체 특정 스키마 (-설정-,-webkit)](#_Toc318097419)
         - [주석 처리 및 주석 처리 제거 지원](#_Toc318097420)
         - [색 선택](#_Toc318097421)
-        - [조각](#_Toc318097422)
+        - [코드 조각](#_Toc318097422)
         - [사용자 지정 영역](#_Toc318097423)
     - [페이지 검사기](#_Toc318097424)
     - [게시](#_Toc318097425)
@@ -96,7 +96,7 @@ ms.locfileid: "57045050"
         - [게시 프로필](#_Toc318097426)
         - [ASP.NET 미리 컴파일 및 병합](#_Toc318097427)
 - [IIS Express](#_Toc318097428)
-- [고 지 사항](#_Toc318097429)
+- [고지 사항](#_Toc318097429)
 
 <a id="_Toc318097372"></a>
 ## <a name="aspnet-core-runtime-and-framework"></a>ASP.NET Core 런타임 및 프레임 워크

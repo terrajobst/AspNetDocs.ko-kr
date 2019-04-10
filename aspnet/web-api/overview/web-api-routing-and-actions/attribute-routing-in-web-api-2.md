@@ -8,15 +8,15 @@ ms.date: 01/20/2014
 ms.assetid: 979d6c9f-0129-4e5b-ae56-4507b281b86d
 msc.legacyurl: /web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2
 msc.type: authoredcontent
-ms.openlocfilehash: 22eb2fd748d52ec95e813ada8b1bf3b4826ad573
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 65e2268418501f89a77a0ba20f7960a618c2e9b7
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034280"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59405458"
 ---
-<a name="attribute-routing-in-aspnet-web-api-2"></a>ASP.NET Web API 2에서에서 특성 라우팅
-====================
+# <a name="attribute-routing-in-aspnet-web-api-2"></a>ASP.NET Web API 2에서에서 특성 라우팅
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 *라우팅* 는 Web API 작업에 대 한 URI를 일치 하는 방법입니다. Web API 2에는 새 형식을 지 원하는 라우팅의 호출 *특성 라우팅은*합니다. 이름에서 알 수 있듯이 특성 라우팅을 사용 하 여 특성 경로 정의. 특성 라우팅을 제어할 수 자세한 Uri 통해 web API에에서 있습니다. 예를 들어, 리소스의 계층 구조를 설명 하는 Uri를 쉽게 만들 수 있습니다.
@@ -228,8 +228,8 @@ URI 템플릿을 여러 매개 변수를 포함할 수 있습니다.
 
 이전 예제와 거의 동일 하지만 기본값 적용 될 때 동작의 약간의 차이점이 있을 합니다.
 
-- 첫 번째 예에서 ("{lcid?}") 매개 변수는 정확한 값이 있으므로 1033의 기본값은 메서드 매개 변수를 직접 할당 됩니다.
-- 두 번째 예제에서 ("{lcid 1033 =}"), 기본값인 "1033" 모델 바인딩 프로세스를 진행 합니다. 기본 모델 바인더를 숫자 값 1033 "1033"로 변환 됩니다. 그러나 다른 작업을 수행할 수 있는 사용자 지정 모델 바인더에 연결할 수 있습니다.
+- 첫 번째 예에서 ("{lcid:int?}") 매개 변수는 정확한 값이 있으므로 1033의 기본값은 메서드 매개 변수를 직접 할당 됩니다.
+- 두 번째 예제에서 ("{lcid:int 1033 =}"), 기본값인 "1033" 모델 바인딩 프로세스를 진행 합니다. 기본 모델 바인더를 숫자 값 1033 "1033"로 변환 됩니다. 그러나 다른 작업을 수행할 수 있는 사용자 지정 모델 바인더에 연결할 수 있습니다.
 
 (대부분의 경우에서 파이프라인에서 사용자 지정 모델 바인더 경우가 아니라면 두 형식의 해당 됩니다.)
 

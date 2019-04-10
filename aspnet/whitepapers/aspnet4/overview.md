@@ -8,15 +8,15 @@ ms.date: 02/10/2010
 ms.assetid: d7729af4-1eda-4ff2-8b61-dbbe4fc11d10
 msc.legacyurl: /whitepapers/aspnet4
 msc.type: content
-ms.openlocfilehash: 93ee29ae125e9442ee755998768a8105dfb485c0
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 0991ce5c866aa9e31ef23812e953d9ee10dda3d1
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58424302"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409722"
 ---
-<a name="aspnet-4-and-visual-studio-2010-web-development-overview"></a>ASP.NET 4 및 Visual Studio 2010 웹 개발 개요
-====================
+# <a name="aspnet-4-and-visual-studio-2010-web-development-overview"></a>ASP.NET 4 및 Visual Studio 2010 웹 개발 개요
+
 > 이 문서는.net Framework 4 및 Visual Studio 2010에 포함 된 ASP.NET에 대 한 다양 한 새 기능에 대 한 개요를 제공 합니다.
 > 
 > [이 백서를 다운로드 합니다.](https://download.microsoft.com/download/7/1/A/71A105A9-89D6-4201-9CC5-AD6A3B7E2F22/ASP_NET_4_and_Visual_Studio_2010_Web_Development_Overview.pdf)
@@ -202,7 +202,7 @@ ASP.NET 4에서는 URL 문자 검사에 사용 되는 문자를 구성할 수도
 
 [!code-xml[Main](overview/samples/sample11.xml)]
 
-기본적으로 <em>requestPathInvalidChars</em> 특성은 잘못 된 것으로 8 개의 문자를 정의 합니다. (에 할당 되는 문자열에 <em>requestPathInvalidChars</em> 기본적으로<em>를</em>는 보다 작은 (&lt;), 보다 큼 (&gt;), 및 앰퍼샌드 (&amp;) 문자는 인코딩 되는 `Web.config` 파일은 XML 파일입니다.) 필요에 따라 잘못 된 문자 집합을 사용자 지정할 수 있습니다.
+기본적으로 *requestPathInvalidChars* 특성은 잘못 된 것으로 8 개의 문자를 정의 합니다. (에 할당 되는 문자열에 *requestPathInvalidChars* 기본적으로 보다 작은 (&lt;), 보다 큼 (&gt;), 및 앰퍼샌드 (&amp;) 때문에 문자는 인코딩됩니다는 `Web.config` 파일 XML 파일입니다.) 필요에 따라 잘못 된 문자 집합을 사용자 지정할 수 있습니다.
 
 > [!NOTE]
 > ASP.NET 4는 항상 문자 (0x00-0x1f, ASCII 범위에 포함 된 URL 경로 거부 IETF의 RFC 2396에 정의 된 대로 잘못 된 URL 문자는 참고 ([http://www.ietf.org/rfc/rfc2396.txt](http://www.ietf.org/rfc/rfc2396.txt)). IIS 6을 실행 하는 버전의 Windows Server에서 또는 이상, http.sys 프로토콜 장치 드라이버를 자동으로 거부 Url 이러한 문자를 사용 하 여 합니다.
@@ -413,13 +413,13 @@ ASP.NET 4에서는 두 개의 속성을 추가 합니다 *페이지* 클래스 *
 
 사용 안 함 `: [DynamicValue]`
 
-사용 하도록 설정 합니다.`[DynamicValue]`
+사용:`[DynamicValue]`
 
 다시 게시 한 후 단, 다음과 같은 출력이 표시 됩니다.
 
 사용 안 함 `: [DeclaredValue]`
 
-사용 하도록 설정 합니다.`[DynamicValue]`
+사용:`[DynamicValue]`
 
 Label1 컨트롤 (입니다 *ViewStateMode* 값으로 설정 됩니다 *비활성*) 코드에서 설정 된 값이 유지 되지에 합니다. 하지만 Label2는 제어 (입니다 *ViewStateMode* 값으로 설정 됩니다 *Enabled*) 해당 상태를 유지 했습니다.
 
@@ -628,7 +628,7 @@ ASP.NET 올바른 경로 자동으로 작동 (즉, 올바른 URL을 생성) 입�
 
 [!code-aspx[Main](overview/samples/sample46.aspx)]
 
-경로 매개 변수 지정 하려면 값에 사용할이 경우에 @companyname 에서 매개 변수를 <em>선택</em> 문입니다.
+경로 매개 변수 지정 하려면 값에 사용할이 경우에 @companyname 에서 매개 변수를 *선택* 문입니다.
 
 <a id="0.2__Toc224729037"></a><a id="0.2__Toc253429261"></a><a id="0.2__Toc243304635"></a>
 
@@ -982,7 +982,7 @@ ASP.NET 2.0 및 이후 버전에는 시스템 관련 숨겨진된 필드 렌더�
 기본적으로 템플릿을 지 원하는 다음 ASP.NET 웹 서버 컨트롤은 인라인 스타일을 적용 하는 데 사용 되는 외부 테이블에 자동으로 줄:
 
 - *FormView*
-- *Login*
+- *로그인*
 - *PasswordRecovery*
 - *ChangePassword*
 - *마법사*

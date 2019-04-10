@@ -8,15 +8,15 @@ ms.date: 06/21/2007
 ms.assetid: 557b0118-fde8-48c9-bf6d-829f9043706b
 msc.legacyurl: /web-forms/videos/aspnet-ajax/how-do-i-use-the-aspnet-ajax-history-control
 msc.type: video
-ms.openlocfilehash: 627d7d06020cc669edccb2a94bd366e96343f850
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 45933ab64c2bf8caa5615e6e9c10aa7fbd5d02bc
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57056830"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59410580"
 ---
-<a name="how-do-i-use-the-aspnet-ajax-history-control"></a>[어떻게 할까요?] ASP.NET AJAX 기록 컨트롤 사용
-====================
+# <a name="how-do-i-use-the-aspnet-ajax-history-control"></a>[어떻게 할까요?] ASP.NET AJAX 기록 컨트롤 사용
+
 [Scott Golightly](https://github.com/scottgolightly)
 
 일반적인 AJAX 응용 프로그램에서 직면 하는 한 가지 문제점은 부분 페이지 업데이트를 웹 브라우저의 기록에 추가 되지 않습니다. 즉, 브라우저의 뒤로 단추 한 AJAX 단계로 다시 이동 하지 않습니다 있지만 사용자에 게 될 가능성이 있는 하나의 전체 문서를 다시 이동 합니다. ASP.NET AJAX 기록 컨트롤 개발자를 기록 점을 브라우저의 뒤로 및 앞으로 단추 AJAX 단계 간에 이동 하려면 사용자가 클릭할 수 있도록 삽입할 수 있습니다.

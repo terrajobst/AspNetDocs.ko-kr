@@ -9,17 +9,13 @@ ms.topic: tutorial
 ms.assetid: 7ba88418-5d0a-437d-b6dc-7c3816d4ec07
 msc.legacyurl: /mvc/overview/getting-started/getting-started-with-ef-using-mvc/updating-related-data-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: 50fdcc1959b8f3a02ec5bbe0eb7417ffb8a260a3
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: d90a327da40ffd6d7956c5fbe019cf9de30c706d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425910"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59407512"
 ---
-<a name="updating-related-data-with-the-entity-framework-in-an-aspnet-mvc-application"></a>ASP.NET MVC 응용 프로그램에서 Entity Framework를 사용 하 여 관련된 데이터 업데이트
-====================
-
-
 # <a name="tutorial-update-related-data-with-ef-in-an-aspnet-mvc-app"></a>자습서: ASP.NET MVC 앱에서 EF를 사용 하 여 관련된 데이터 업데이트
 
 이전 자습서에서 관련된 데이터를 표시 합니다. 이 자습서에서는 관련된 데이터를 업데이트 합니다. 대부분의 관계에 대 한 외래 키 필드 또는 탐색 속성을 업데이트 하 여 수행할 수 있습니다. 다 대 다 관계에 대 한 Entity Framework 노출 하지 조인 테이블을 직접 추가 하 고 해당 탐색 속성에서 엔터티를 제거할 수 있도록 합니다.

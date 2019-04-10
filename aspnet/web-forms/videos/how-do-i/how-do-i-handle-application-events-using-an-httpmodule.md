@@ -8,15 +8,15 @@ ms.date: 09/13/2007
 ms.assetid: a4adedeb-92f9-4d08-a068-fdcdedbae069
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-handle-application-events-using-an-httpmodule
 msc.type: video
-ms.openlocfilehash: 5bc69fe9e9d9c73579701f73692538f67e27528d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 502268f7cedd599d0a2ccda25e2341c9dbc9c5d6
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57051510"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59407460"
 ---
-<a name="how-do-i-handle-application-events-using-an-httpmodule"></a>[어떻게 할까요?] HttpModule을 사용 하 여 응용 프로그램 이벤트를 처리 하는?
-====================
+# <a name="how-do-i-handle-application-events-using-an-httpmodule"></a>[어떻게 할까요?] HttpModule을 사용 하 여 응용 프로그램 이벤트를 처리 하는?
+
 [Chris Pels](https://twitter.com/chrispels)
 
 페이지 요청을 처리 하는 동안 응용 프로그램 이벤트를 처리 하는 HttpModule을 만드는 방법에 알아봅니다. 샘플 모듈 페이지 수명 주기에서 다양 한 지점에서 로그 파일에 정보를 작성 합니다. HttpModule 샘플 웹 사이트에서 사용 하기 위해 구성 하는 방법을 표시 합니다.

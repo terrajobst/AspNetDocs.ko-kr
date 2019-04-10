@@ -8,15 +8,15 @@ ms.date: 08/14/2010
 ms.assetid: 004703cd-e0e9-4ba7-9974-1b0475c71222
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part5
 msc.type: authoredcontent
-ms.openlocfilehash: 76dc324134dc93c9552741fea9f1136abdc9184a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: e0b540c030bf600def9b9efad4c73f055a343851
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57036660"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59402832"
 ---
-<a name="accessing-your-models-data-from-a-controller"></a>컨트롤러에서 모델의 데이터에 액세스
-====================
+# <a name="accessing-your-models-data-from-a-controller"></a>컨트롤러에서 모델의 데이터에 액세스
+
 [Scott Hanselman](https://github.com/shanselman)
 
 > ASP.NET MVC의 기본 사항을 소개 하는 초보자를 위한 자습서입니다. 읽기 및 쓰기 데이터베이스는 간단한 웹 응용 프로그램을 만들어야 합니다. 방문 합니다 [ASP.NET MVC 학습 센터](../../../index.md) 자습서 및 샘플 다른 ASP.NET MVC를 찾아볼 수 있습니다.
@@ -26,7 +26,7 @@ ms.locfileid: "57036660"
 
 컨트롤러 폴더를 마우스 오른쪽 단추로 클릭 하 고 새 MoviesController를 확인 합니다.
 
-[![컨트롤러 추가](getting-started-with-mvc-part5/_static/image2.png)](getting-started-with-mvc-part5/_static/image1.png)
+[![Add 컨트롤러](getting-started-with-mvc-part5/_static/image2.png)](getting-started-with-mvc-part5/_static/image1.png)
 
 이 프로젝트 내에서 우리의 \Controllers 폴더 아래에 있는 새 "MoviesController.cs" 파일이 만들어집니다. 영화 목록에 새로 채워진된 데이터베이스에서 검색할 MovieController 업데이트 해 보겠습니다.
 

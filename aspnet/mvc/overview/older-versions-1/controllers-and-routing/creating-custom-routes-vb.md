@@ -8,15 +8,15 @@ ms.date: 02/16/2009
 ms.assetid: 6ac5758b-6199-42af-adcb-21954b864951
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/creating-custom-routes-vb
 msc.type: authoredcontent
-ms.openlocfilehash: cd7ad46161b3f44d915bc4b2fa201606b00d194a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a7b8b85ba1cf5c18e605eb8114a305272baf41a6
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57035280"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59404873"
 ---
-<a name="creating-custom-routes-vb"></a>사용자 지정 경로 만들기(VB)
-====================
+# <a name="creating-custom-routes-vb"></a>사용자 지정 경로 만들기(VB)
+
 by [Microsoft](https://github.com/microsoft)
 
 > ASP.NET MVC 응용 프로그램에 사용자 지정 경로 추가 하는 방법에 알아봅니다. 이 자습서에서는 Global.asax 파일의 기본 경로 테이블을 수정 하는 방법을 알아봅니다.
@@ -61,7 +61,7 @@ ASP.NET MVC 응용 프로그램 기본 경로 테이블을 문제 없이 작동 
 **그림 1-매개 변수 변환 오류**
 
 
-[![새 프로젝트 대화 상자](creating-custom-routes-vb/_static/image1.jpg)](creating-custom-routes-vb/_static/image1.png)
+[![T새 프로젝트 대화 상자의 그](creating-custom-routes-vb/_static/image1.jpg)](creating-custom-routes-vb/_static/image1.png)
 
 **그림 01**: 매개 변수 변환에서 오류 ([클릭 하 여 큰 이미지 보기](creating-custom-routes-vb/_static/image2.png))
 

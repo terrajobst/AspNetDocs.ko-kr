@@ -8,15 +8,15 @@ ms.date: 03/02/2009
 ms.assetid: ec26f264-d0ea-4031-9943-825505a3ac4b
 msc.legacyurl: /mvc/overview/older-versions-1/views/using-the-tagbuilder-class-to-build-html-helpers-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 783c5f73709de37f79c472e10c79e284cf25f8fd
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 4fe34858aadb705ffb59e06ba805493d89aa4028
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049400"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59403209"
 ---
-<a name="using-the-tagbuilder-class-to-build-html-helpers-vb"></a>HTML 도우미 (VB)를 빌드하는 TagBuilder 클래스를 사용 하 여
-====================
+# <a name="using-the-tagbuilder-class-to-build-html-helpers-vb"></a>HTML 도우미 (VB)를 빌드하는 TagBuilder 클래스를 사용 하 여
+
 [Stephen walther가](https://github.com/StephenWalther)
 
 > Stephen walther가 ASP.NET MVC 프레임 워크는 TagBuilder 클래스 라는의 유용한 유틸리티 클래스를 소개 합니다. HTML 태그를 쉽게 빌드하는 TagBuilder 클래스를 사용할 수 있습니다.
@@ -65,7 +65,7 @@ TagBuilder.MergeAttribute() 메서드를 사용 하는 TagBuilder에 src 특성 
 [!code-aspx[Main](using-the-tagbuilder-class-to-build-html-helpers-vb/samples/sample2.aspx)]
 
 
-[![새 프로젝트 대화 상자](using-the-tagbuilder-class-to-build-html-helpers-vb/_static/image1.jpg)](using-the-tagbuilder-class-to-build-html-helpers-vb/_static/image1.png)
+[![T새 프로젝트 대화 상자의 그](using-the-tagbuilder-class-to-build-html-helpers-vb/_static/image1.jpg)](using-the-tagbuilder-class-to-build-html-helpers-vb/_static/image1.png)
 
 **그림 01**: 이미지 도우미를 사용 하 여 ([클릭 하 여 큰 이미지 보기](using-the-tagbuilder-class-to-build-html-helpers-vb/_static/image2.png))
 

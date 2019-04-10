@@ -8,15 +8,15 @@ ms.date: 11/13/2006
 ms.assetid: 1f42e332-78dc-438b-9e35-0c97aa0ad929
 msc.legacyurl: /web-forms/overview/data-access/custom-button-actions-with-the-datalist-and-repeater/custom-buttons-in-the-datalist-and-repeater-cs
 msc.type: authoredcontent
-ms.openlocfilehash: a10acd00dd8243f92c1b255acb8328e2b76e87cc
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5819dc3d62161fc4f31cf30c6c739654a64d86b3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57060900"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59400414"
 ---
-<a name="custom-buttons-in-the-datalist-and-repeater-c"></a>DataList 및 반복기의 사용자 지정 단추(C#)
-====================
+# <a name="custom-buttons-in-the-datalist-and-repeater-c"></a>DataList 및 반복기의 사용자 지정 단추(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_46_CS.exe) 또는 [PDF 다운로드](custom-buttons-in-the-datalist-and-repeater-cs/_static/datatutorial46cs1.pdf)
@@ -31,7 +31,7 @@ ms.locfileid: "57060900"
 또한를 편집 하 고 삭제 단추 DataList 및 반복기 컨트롤을 포함할 수도 Linkbutton을 단추나 ImageButtons,를 클릭 하면 일부 사용자 지정 서버 쪽 논리를 수행 합니다. 이 자습서에서는 시스템의 범주를 나열 하는 반복기를 사용 하는 인터페이스를 빌드 해 보겠습니다. 각 범주에 대 한 반복기 BulletedList 컨트롤을 사용 하 여 연결 된 제품 범주를 표시 하도록 단추가 포함 됩니다 (그림 1 참조).
 
 
-[![글머리 기호 목록에서 범주의 제품 표시 제품 링크 표시를 클릭합니다.](custom-buttons-in-the-datalist-and-repeater-cs/_static/image2.png)](custom-buttons-in-the-datalist-and-repeater-cs/_static/image1.png)
+[![C글머리 기호 목록의 s 제품 범주 제품 표시 링크 표시를 클릭 하](custom-buttons-in-the-datalist-and-repeater-cs/_static/image2.png)](custom-buttons-in-the-datalist-and-repeater-cs/_static/image1.png)
 
 **그림 1**: 글머리 기호 목록의 s 제품 범주 제품 표시 링크 표시를 클릭 ([클릭 하 여 큰 이미지 보기](custom-buttons-in-the-datalist-and-repeater-cs/_static/image3.png))
 
@@ -52,7 +52,7 @@ ms.locfileid: "57060900"
 다른 폴더와 같이 `Default.aspx` 에 `CustomButtonsDataListRepeater` 폴더 섹션의 자습서를 나열 됩니다. 이전에 설명한 대로 `SectionLevelTutorialListing.ascx` 사용자 컨트롤은이 기능을 제공 합니다. 이 사용자 정의 컨트롤을 추가 `Default.aspx`의 디자인 뷰에서 페이지의 솔루션 탐색기에서 끌어 합니다.
 
 
-[![Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](custom-buttons-in-the-datalist-and-repeater-cs/_static/image6.png)](custom-buttons-in-the-datalist-and-repeater-cs/_static/image5.png)
+[![Add Default.aspx SectionLevelTutorialListing.ascx 사용자 정의 컨트롤](custom-buttons-in-the-datalist-and-repeater-cs/_static/image6.png)](custom-buttons-in-the-datalist-and-repeater-cs/_static/image5.png)
 
 **그림 3**: 추가 된 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤 `Default.aspx` ([클릭 하 여 큰 이미지 보기](custom-buttons-in-the-datalist-and-repeater-cs/_static/image7.png))
 
@@ -75,7 +75,7 @@ ms.locfileid: "57060900"
 이 자습서에 대 한 제품 LinkButton 표시와 함께 모든 범주를 나열 하는 반복기를 생성 해야 하는, 클릭 하면 관련된 범주가의 제품 글머리 기호 목록에 표시 됩니다. S를 시스템의 범주를 나열 하는 간단한 Repeater를 처음 만들 수 있습니다. 열어서 시작 합니다 `CustomButtons.aspx` 페이지에 `CustomButtonsDataListRepeater` 폴더입니다. Repeater 집합과 디자이너 도구 상자에서 끌어 해당 `ID` 속성을 `Categories`입니다. 다음으로 반복기가 스마트 태그에서 새 데이터 소스 컨트롤을 만듭니다. 특히 이라는 새 ObjectDataSource 컨트롤을 만들어 `CategoriesDataSource` 에서 해당 데이터를 선택 하 여 `CategoriesBLL` s 클래스 `GetCategories()` 메서드.
 
 
-[![CategoriesBLL 클래스의 GetCategories() 메서드를 사용 하는 ObjectDataSource 구성](custom-buttons-in-the-datalist-and-repeater-cs/_static/image10.png)](custom-buttons-in-the-datalist-and-repeater-cs/_static/image9.png)
+[![Configure CategoriesBLL 클래스의 GetCategories() 메서드를 사용 하는 ObjectDataSource](custom-buttons-in-the-datalist-and-repeater-cs/_static/image10.png)](custom-buttons-in-the-datalist-and-repeater-cs/_static/image9.png)
 
 **그림 5**: ObjectDataSource를 사용 하 여 구성 합니다 `CategoriesBLL` s 클래스 `GetCategories()` 메서드 ([클릭 하 여 큰 이미지 보기](custom-buttons-in-the-datalist-and-repeater-cs/_static/image11.png))
 
@@ -90,7 +90,7 @@ Visual Studio는 기본 생성 DataList 컨트롤을 달리 `ItemTemplate` 데�
 그림 6에서는 브라우저를 통해 볼 때 페이지를 보여 줍니다. 각 범주 이름 및 설명을 나열 됩니다. 제품 표시 단추를 클릭 하면 포스트백을 발생 시키는 하지만 모든 작업을 아직 수행 하지 않습니다.
 
 
-[![각 범주 이름이 설명과 함께 표시 됩니다, 제품 LinkButton 표시](custom-buttons-in-the-datalist-and-repeater-cs/_static/image13.png)](custom-buttons-in-the-datalist-and-repeater-cs/_static/image12.png)
+[![E범주 이름이 대 한 ach 설명과 함께 표시 됩니다, 제품 LinkButton 표시](custom-buttons-in-the-datalist-and-repeater-cs/_static/image13.png)](custom-buttons-in-the-datalist-and-repeater-cs/_static/image12.png)
 
 **그림 6**: 제품 표시 LinkButton 함께 각 이름이 범주와 설명이 표시 됩니다 ([클릭 하 여 큰 이미지 보기](custom-buttons-in-the-datalist-and-repeater-cs/_static/image14.png))
 
@@ -146,7 +146,7 @@ S Repeater 내 선택한 범주의 제품을 표시할 수 있습니다 `ItemTem
 > 한 번에 하나의 범주의 제품 나와 되도록이 보고서의 동작을 수정 하려면, s BulletedList 컨트롤을 설정 하면 됩니다 `EnableViewState` 속성을 `False`입니다.
 
 
-[![선택한 범주의 제품을 전시 하기를 BulletedList는](custom-buttons-in-the-datalist-and-repeater-cs/_static/image16.png)](custom-buttons-in-the-datalist-and-repeater-cs/_static/image15.png)
+[![A BulletedList 선택한 범주의 제품을 전시 하기는](custom-buttons-in-the-datalist-and-repeater-cs/_static/image16.png)](custom-buttons-in-the-datalist-and-repeater-cs/_static/image15.png)
 
 **그림 7**: 선택한 범주의 제품을 전시 하기를 BulletedList 사용 됩니다 ([클릭 하 여 큰 이미지 보기](custom-buttons-in-the-datalist-and-repeater-cs/_static/image17.png))
 

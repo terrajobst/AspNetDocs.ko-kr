@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: f949aafa-fe57-43b0-b722-f0dd33a900be
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/cascadingdropdown/filling-a-list-using-cascadingdropdown-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 15368ea543702eeda1b6a63f53acdc6c336b49e7
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: a9a3bf12b721c8f5eec21f3090142e40e74b0b9c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58420792"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59395647"
 ---
-<a name="filling-a-list-using-cascadingdropdown-c"></a>CascadingDropDown을 사용하여 목록 채우기(C#)
-====================
+# <a name="filling-a-list-using-cascadingdropdown-c"></a>CascadingDropDown을 사용하여 목록 채우기(C#)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/9/0/7/907760b1-2c60-4f81-aeb6-ca416a573b0d/cascadingdropdown0.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/cascadingdropdown0CS.pdf)
@@ -61,7 +61,7 @@ DropDownList 컨트롤은 그런 다음이 필요 합니다.
 브라우저에서 페이지 로드 3 개 공급 업체를 사용 하 여 채울 목록을 트리거할 수 있습니다.
 
 
-[![자동으로 채워집니다.](filling-a-list-using-cascadingdropdown-cs/_static/image2.png)](filling-a-list-using-cascadingdropdown-cs/_static/image1.png)
+[![T그 목록에 대 한 연결이 자동으로 채워집니다](filling-a-list-using-cascadingdropdown-cs/_static/image2.png)](filling-a-list-using-cascadingdropdown-cs/_static/image1.png)
 
 자동으로 채워집니다 ([클릭 하 여 큰 이미지 보기](filling-a-list-using-cascadingdropdown-cs/_static/image3.png))
 

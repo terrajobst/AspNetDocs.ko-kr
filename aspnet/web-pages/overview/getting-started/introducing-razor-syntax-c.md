@@ -8,15 +8,15 @@ ms.date: 02/07/2014
 ms.assetid: aa67d304-583b-4bf8-a231-195656cfb587
 msc.legacyurl: /web-pages/overview/getting-started/introducing-razor-syntax-c
 msc.type: authoredcontent
-ms.openlocfilehash: b5eb98dfdf3fc013920f45080d4a20e1fa507725
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8237dc6b925ccefc5b411aebc8e7c399dcdc6746
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57032670"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59407356"
 ---
-<a name="introduction-to-aspnet-web-programming-using-the-razor-syntax-c"></a>Razor 구문 (C#)를 사용 하 여 ASP.NET 웹 프로그래밍 소개
-====================
+# <a name="introduction-to-aspnet-web-programming-using-the-razor-syntax-c"></a>Razor 구문 (C#)를 사용 하 여 ASP.NET 웹 프로그래밍 소개
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 문서에서는 프로그래밍 개요 ASP.NET 웹 페이지 Razor 구문을 사용 합니다. ASP.NET은 웹 서버에서 동적 웹 페이지를 실행 하기 위한 Microsoft의 기술입니다. 이 문서는 C# 프로그래밍 언어를 사용 하 여 포커스입니다.
@@ -223,7 +223,7 @@ Razor 구문에도 쉽게 배울 초보자 생산성가 있는 경우 본인이 
 
 이전 기본 예제는 ASP.NET 웹 페이지의 페이지를 만드는 방법 및 서버 코드는 HTML 태그를 추가 하는 방법을 살펴보았습니다. 다음 Razor 구문을 사용 하 여 ASP.NET 서버 코드를 작성 하는 기본 사항을 알아봅니다 &#8212; , 프로그래밍 언어 규칙입니다.
 
-(특히 경우 C, c + +, C#, Visual Basic 또는 JavaScript를 사용한) 프로그래밍에 익숙한 경우 어떤 매기면 많은 익숙할 것입니다. 기능을 살펴보고 서버 코드가 태그에 추가 하는 방법을 익히는 필요할 것 *.cshtml* 파일입니다.
+프로그래밍 경험이 있는 경우 (C를 사용한 경우에 특히 C++, C#, Visual Basic 또는 JavaScript)를 읽는 여기의 대부분에 게 익숙할 것입니다. 기능을 살펴보고 서버 코드가 태그에 추가 하는 방법을 익히는 필요할 것 *.cshtml* 파일입니다.
 
 <a id="BM_CombiningTextMarkupAndCode"></a>
 ### <a name="combining-text-markup-and-code-in-code-blocks"></a>텍스트, 태그 및 코드 블록의 코드를 결합합니다.
@@ -351,7 +351,9 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
     <strong>예제</strong>
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsInt(), IsInt()`
@@ -363,7 +365,9 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample28.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsBool(), IsBool()`
@@ -375,7 +379,9 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample29.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsFloat(), IsFloat()`
@@ -387,7 +393,9 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample30.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsDecimal(), IsDecimal()`
@@ -399,7 +407,9 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample31.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsDateTime(), IsDateTime()`
@@ -411,7 +421,9 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample32.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `ToString()`
@@ -431,7 +443,7 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
 
 :::row:::
     :::column:::
-    <strong>Operator</strong>
+    <strong>연산자</strong>
     :::column-end:::
     :::column:::
     <strong>설명</strong>
@@ -440,7 +452,9 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
     <strong>예제</strong>
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `+` `-` `*` `/`
@@ -452,7 +466,9 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
         [!code-css[Main](introducing-razor-syntax-c/samples/sample34.css)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `=`
@@ -464,7 +480,9 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample35.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `==`
@@ -476,7 +494,9 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample36.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `!=`
@@ -488,7 +508,9 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample37.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `< > <= >=`
@@ -500,7 +522,9 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample38.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `+`
@@ -512,7 +536,9 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample39.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `+=` `-=`
@@ -524,7 +550,9 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample40.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `.`
@@ -536,7 +564,9 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample41.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `()`
@@ -548,7 +578,9 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
         [!code-javascript[Main](introducing-razor-syntax-c/samples/sample42.js)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `[]`
@@ -560,7 +592,9 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample43.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `!`
@@ -572,10 +606,12 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample44.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
-        `&&` <code>&#124;&#124;</code>
+        `&&` `||`
     :::column-end:::
     :::column:::
     논리적 AND 또는 및 연결 하는 데 사용 되는 조건 그룹화 합니다.

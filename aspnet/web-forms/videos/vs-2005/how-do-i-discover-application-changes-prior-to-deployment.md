@@ -8,15 +8,15 @@ ms.date: 07/25/2007
 ms.assetid: 6945a637-cab3-4a13-a678-f6d2d83c2587
 msc.legacyurl: /web-forms/videos/vs-2005/how-do-i-discover-application-changes-prior-to-deployment
 msc.type: video
-ms.openlocfilehash: c6870e33ba7707ca06633876c1f453576811ce7f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 2cedf4dd161751802bf197ee6b96731259bc5c2f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57027110"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59402936"
 ---
-<a name="how-do-i-discover-application-changes-prior-to-deployment"></a>[어떻게 할까요?] 응용 프로그램을 배포 하기 전에 변경 검색?
-====================
+# <a name="how-do-i-discover-application-changes-prior-to-deployment"></a>[어떻게 할까요?] 응용 프로그램을 배포 하기 전에 변경 검색?
+
 [Paul 해커가](https://github.com/pjhacker)
 
 Visual Studio Team System에서 소스 제어 탐색기를 사용 하 여 웹 응용 프로그램에 적용 된 변경 내용을 검색 하는 데 필요한 변경 내용만 라이브 웹 사이트에 배포를 확인 하는 방법에 알아봅니다. 또한 살펴봅니다 배포를 간소화 하기 위해 함께 변경 내용을 병합할 수 있는 무료 유틸리티입니다.

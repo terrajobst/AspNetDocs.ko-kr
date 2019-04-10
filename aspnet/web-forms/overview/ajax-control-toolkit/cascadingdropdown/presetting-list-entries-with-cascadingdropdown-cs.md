@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 04c79748-0f21-4a3b-aba5-e1ce3161c32e
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/cascadingdropdown/presetting-list-entries-with-cascadingdropdown-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 2599b5015f288b2e8d02577a0865252a862574a4
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 188f98d013707178e50858f8ea26d8cf2af06bea
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57050000"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59406017"
 ---
-<a name="presetting-list-entries-with-cascadingdropdown-c"></a>CascadingDropDown으로 목록 항목 미리 설정(C#)
-====================
+# <a name="presetting-list-entries-with-cascadingdropdown-c"></a>CascadingDropDown으로 목록 항목 미리 설정(C#)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/9/0/7/907760b1-2c60-4f81-aeb6-ca416a573b0d/cascadingdropdown2.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/cascadingDropDown2CS.pdf)
@@ -53,7 +53,7 @@ CascadingDropDown extender 비동기적으로 호출 된 다음 메서드 시그
 브라우저에서 페이지 로드 입력 3 개 공급 업체를 사용 하 여 드롭다운 목록 미리 선택 되 고 두 번째 됩니다.
 
 
-[![목록 채우기 및 자동으로 미리 선택](presetting-list-entries-with-cascadingdropdown-cs/_static/image2.png)](presetting-list-entries-with-cascadingdropdown-cs/_static/image1.png)
+[![T그 목록 채우기 및 자동으로 미리 선택](presetting-list-entries-with-cascadingdropdown-cs/_static/image2.png)](presetting-list-entries-with-cascadingdropdown-cs/_static/image1.png)
 
 목록 채우기 및 자동으로 미리 선택 ([클릭 하 여 큰 이미지 보기](presetting-list-entries-with-cascadingdropdown-cs/_static/image3.png))
 

@@ -8,15 +8,15 @@ ms.date: 06/21/2007
 ms.assetid: 60b10049-ca02-4830-b3ce-83e9584511d0
 msc.legacyurl: /web-forms/videos/vs-2005/how-do-i-practice-test-driven-development
 msc.type: video
-ms.openlocfilehash: 3006b4d61844753dc36c5005dfbf1f66f928dbb5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: debb6c1bf20684149ca259b25bc3df92d12dcd34
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57038500"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59395422"
 ---
-<a name="how-do-i-practice-test-driven-development"></a>[어떻게 할까요?] 연습 테스트 기반 개발?
-====================
+# <a name="how-do-i-practice-test-driven-development"></a>[어떻게 할까요?] 연습 테스트 기반 개발?
+
 [Chris Menegay](https://twitter.com/CMenegay)
 
 Visual Studio Team System Test-Driven 개발 하 고 Team System의 기능 테스트 및 테스트 하는 코드에서 코드로 이동할 수 있습니다 하는 방법을 살펴보고이 비디오 연습 하는 데 필요한 도구를 제공 합니다. 에서는 테스트를 작성 하 고 다음 사용 하 여 Visual Studio Team System 테스트를 먼저 작성 하는 TDD 패권 준수 되는 대상 코드 및 코드를 생성 하려면 두 번째 수 있습니다 하는 방법을 참조 합니다.

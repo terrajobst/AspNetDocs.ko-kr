@@ -8,15 +8,15 @@ ms.date: 08/07/2008
 ms.assetid: 4ea744fa-ee7f-45a5-a0de-e3b17af67d8c
 msc.legacyurl: /web-forms/videos/data-access/adonet-data-services/how-to-work-with-datasets-and-filters-from-an-asp-application
 msc.type: video
-ms.openlocfilehash: 7a5af3cb74c680f8996254b1f8bdfde7e923170f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0884e561d4ff49f62503e662243f13ad52717c24
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57054340"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59390573"
 ---
-<a name="how-to-work-with-datasets-and-filters-from-an-asp-application"></a>ASP 응용 프로그램에서 데이터 집합 및 필터를 사용 하 여 작업 하는 방법
-====================
+# <a name="how-to-work-with-datasets-and-filters-from-an-asp-application"></a>ASP 응용 프로그램에서 데이터 집합 및 필터를 사용 하 여 작업 하는 방법
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 이 비디오에서는 3 / 3 부 Joe Stagner 전체 응용 프로그램 데이터 집합의 필터링 된 데이터 집합을 반환 하는 방법에 설명 합니다. 이 비디오에 대 한 자세한 내용은 참조는 [데이터 액세스 레이어 만들기](../../../overview/data-access/introduction/creating-a-data-access-layer-vb.md) 데이터 액세스 자습서입니다.

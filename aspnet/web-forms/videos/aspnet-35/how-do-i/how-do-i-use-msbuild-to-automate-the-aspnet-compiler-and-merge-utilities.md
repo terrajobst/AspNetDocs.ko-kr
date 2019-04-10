@@ -8,15 +8,15 @@ ms.date: 08/07/2008
 ms.assetid: 14f2b333-59f5-4ae4-88db-2a78f809cef3
 msc.legacyurl: /web-forms/videos/aspnet-35/how-do-i/how-do-i-use-msbuild-to-automate-the-aspnet-compiler-and-merge-utilities
 msc.type: video
-ms.openlocfilehash: bed850b06b69e101d34f6987c9e6c66ab928543c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 4d0ee2f8f1a7538dbfb488a0599fdc0cd3ec999e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57044170"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59388012"
 ---
-<a name="how-do-i-use-msbuild-to-automate-the-aspnet-compiler-and-merge-utilities"></a>[어떻게 할까요?] MSBuild를 사용 하 여 ASP.NET 컴파일러를 자동화 하 고 유틸리티 병합
-====================
+# <a name="how-do-i-use-msbuild-to-automate-the-aspnet-compiler-and-merge-utilities"></a>[어떻게 할까요?] MSBuild를 사용 하 여 ASP.NET 컴파일러를 자동화 하 고 유틸리티 병합
+
 [Chris Pels](https://twitter.com/chrispels)
 
 이 비디오에서는 Chris Pels 표시 aspnet의 실행을 오케스트레이션 하는 MSBuild 프로젝트를 만드는 방법\_컴파일러 및 aspnet\_ASP.NET 웹 사이트에 대 한 유틸리티를 병합 합니다. 먼저, ASP.NET 웹 사이트에 대 한 컴파일 프로세스의 기본 사항 및 두 가지 명령줄 유틸리티의 역할에 알아봅니다. 다음으로, MSBuild 프로젝트 파일을 만들고 PropertyGroup 및 Target 같은 기본 요소 방법을 참조 하세요. Aspnet를 실행 하는 방법 자세히 알아봅니다\_컴파일러 및 aspnet\_MSBuild 프로젝트에서 유틸리티를 병합 합니다. 마지막으로, 핵심 개념 중 몇 가지 잠재적인 확장 설명 되어 있습니다.

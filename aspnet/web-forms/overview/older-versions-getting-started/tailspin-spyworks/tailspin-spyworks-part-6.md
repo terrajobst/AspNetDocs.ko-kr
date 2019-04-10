@@ -8,15 +8,15 @@ ms.date: 07/21/2010
 ms.assetid: f70a310c-9557-4743-82cb-655265676d39
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-6
 msc.type: authoredcontent
-ms.openlocfilehash: c847db058bc03115210f12eeb0c3c76fecc8a31e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 34c8776636478e8c40064bb29ae0311ee4fdc8d8
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57056440"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409787"
 ---
-<a name="part-6-aspnet-membership"></a>6부: ASP.NET 멤버 자격
-====================
+# <a name="part-6-aspnet-membership"></a>6부: ASP.NET 멤버 자격
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 > Tailspin Spyworks.NET 플랫폼에 대 한 강력 하 고 확장 가능한 응용 프로그램을 생성 하는 방법을 매우 단순 하는 방법을 보여 줍니다. 해제 쇼핑, 체크 아웃 및 관리를 포함 하는 온라인 상점을 만들려고 ASP.NET 4에서 강력한 새 기능을 사용 하는 방법을 보여 줍니다.

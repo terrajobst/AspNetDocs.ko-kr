@@ -8,15 +8,15 @@ ms.date: 02/20/2009
 ms.assetid: 013c3c26-7dc3-41d1-8064-f233c86008b5
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager/iteration-6-use-test-driven-development-cs
 msc.type: authoredcontent
-ms.openlocfilehash: d456952bea9a1933247382f4786809b0b2f32034
-ms.sourcegitcommit: 62db31596a7da029263cf06335aff12236fb3186
+ms.openlocfilehash: 94885984ebad90523369dcf5771d0f77a753008f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58440328"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59405666"
 ---
-<a name="iteration-6--use-test-driven-development-c"></a>반복 #6-테스트 기반 개발 (C#) 사용
-====================
+# <a name="iteration-6--use-test-driven-development-c"></a>반복 #6-테스트 기반 개발 (C#) 사용
+
 by [Microsoft](https://github.com/microsoft)
 
 [코드 다운로드](iteration-6-use-test-driven-development-cs/_static/contactmanager_6_cs1.zip)
@@ -113,7 +113,7 @@ by [Microsoft](https://github.com/microsoft)
 ContactManager.Tests 프로젝트에서 컨트롤러 폴더를 마우스 오른쪽 단추로 클릭 하 여 새 단위 테스트를 만들 선택 **추가, 새 테스트**를 선택 하는 **단위 테스트** 템플릿 (그림 1 참조). 이름을 새 단위 테스트 GroupControllerTest.cs을 클릭 합니다 **확인** 단추입니다.
 
 
-[![GroupControllerTest 단위 테스트를 추가합니다.](iteration-6-use-test-driven-development-cs/_static/image1.jpg)](iteration-6-use-test-driven-development-cs/_static/image1.png)
+[![A이어지지 GroupControllerTest 단위 테스트](iteration-6-use-test-driven-development-cs/_static/image1.jpg)](iteration-6-use-test-driven-development-cs/_static/image1.png)
 
 **그림 01**: GroupControllerTest 단위 테스트 추가 ([클릭 하 여 큰 이미지 보기](iteration-6-use-test-driven-development-cs/_static/image2.png))
 
@@ -141,7 +141,7 @@ T도 빌드가 하시면이 시점에서 응용 프로그램 t 수 있도록 첫
 첫 번째 단위 테스트를 성공적으로 완료 GroupController 및 그룹 클래스를 프로젝트에 추가 했습니다 (그림 2 참조). 수행한 테스트를 통과 하는 데 필요한 최소 작업 합니다. 축 하 하기 위해 차례입니다.
 
 
-[![성공 했습니다.](iteration-6-use-test-driven-development-cs/_static/image2.jpg)](iteration-6-use-test-driven-development-cs/_static/image3.png)
+[![Success!](iteration-6-use-test-driven-development-cs/_static/image2.jpg)](iteration-6-use-test-driven-development-cs/_static/image3.png)
 
 **그림 02**: 성공 했습니다. ([클릭 하 여 큰 이미지 보기](iteration-6-use-test-driven-development-cs/_static/image4.png))
 
@@ -267,12 +267,12 @@ T도 빌드가 하시면이 시점에서 응용 프로그램 t 수 있도록 첫
 9. Contacts 테이블에 변경 내용을 저장 하려면 저장 단추를 클릭 합니다.
 
 
-[![데이터베이스 테이블 관계 만들기](iteration-6-use-test-driven-development-cs/_static/image3.jpg)](iteration-6-use-test-driven-development-cs/_static/image5.png)
+[![C데이터베이스 테이블 관계를 reating](iteration-6-use-test-driven-development-cs/_static/image3.jpg)](iteration-6-use-test-driven-development-cs/_static/image5.png)
 
 **그림 03**: 데이터베이스 테이블 관계 만들기 ([클릭 하 여 큰 이미지 보기](iteration-6-use-test-driven-development-cs/_static/image6.png))
 
 
-[![테이블 관계를 지정합니다.](iteration-6-use-test-driven-development-cs/_static/image4.jpg)](iteration-6-use-test-driven-development-cs/_static/image7.png)
+[![S테이블 관계 pecifying](iteration-6-use-test-driven-development-cs/_static/image4.jpg)](iteration-6-use-test-driven-development-cs/_static/image7.png)
 
 **그림 04**: 테이블 관계를 지정 합니다. ([클릭 하 여 큰 이미지 보기](iteration-6-use-test-driven-development-cs/_static/image8.png))
 
@@ -288,7 +288,7 @@ T도 빌드가 하시면이 시점에서 응용 프로그램 t 수 있도록 첫
 5. 연락처 엔터티 맨 아래에 표시 되는 그룹 탐색 속성을 마우스 오른쪽 단추로 클릭 합니다. 이름을 변경 합니다 *그룹* 탐색 속성을 *그룹* (단 수 화) 합니다.
 
 
-[![데이터베이스에서 Entity Framework 모델을 업데이트합니다.](iteration-6-use-test-driven-development-cs/_static/image5.jpg)](iteration-6-use-test-driven-development-cs/_static/image9.png)
+[![U데이터베이스에서 Entity Framework 모델을 pdating](iteration-6-use-test-driven-development-cs/_static/image5.jpg)](iteration-6-use-test-driven-development-cs/_static/image9.png)
 
 **그림 05**: 데이터베이스에서 Entity Framework 모델을 업데이트 ([클릭 하 여 큰 이미지 보기](iteration-6-use-test-driven-development-cs/_static/image10.png))
 
@@ -296,7 +296,7 @@ T도 빌드가 하시면이 시점에서 응용 프로그램 t 수 있도록 첫
 다음이 단계를 완료 한 후 데이터 모델에는 연락처와 그룹 모두 테이블을 나타냅니다. Entity Designer는 엔터티를 모두 표시 됩니다 (그림 6 참조).
 
 
-[![그룹 및 연락처를 표시 하는 엔터티 디자이너](iteration-6-use-test-driven-development-cs/_static/image6.jpg)](iteration-6-use-test-driven-development-cs/_static/image11.png)
+[![E증가할수록 디자이너 표시 그룹 및 연락처](iteration-6-use-test-driven-development-cs/_static/image6.jpg)](iteration-6-use-test-driven-development-cs/_static/image11.png)
 
 **그림 06**: 그룹 및 연락처를 표시 하는 entity Designer ([클릭 하 여 큰 이미지 보기](iteration-6-use-test-driven-development-cs/_static/image12.png))
 
@@ -329,7 +329,7 @@ ASP.NET MVC 응용 프로그램 기본 ASP.NET 뷰 엔진을 사용 하는 경�
 - Views\Group\Delete.aspx-연락처 그룹을 삭제 하는 것에 대 한 확인 양식 표시
 
 
-[![그룹 인덱스 보기](iteration-6-use-test-driven-development-cs/_static/image7.jpg)](iteration-6-use-test-driven-development-cs/_static/image13.png)
+[![T그 그룹 인덱스 뷰](iteration-6-use-test-driven-development-cs/_static/image7.jpg)](iteration-6-use-test-driven-development-cs/_static/image13.png)
 
 **그림 07**: 그룹 인덱스 보기 ([클릭 하 여 큰 이미지 보기](iteration-6-use-test-driven-development-cs/_static/image14.png))
 
@@ -343,7 +343,7 @@ ASP.NET MVC 응용 프로그램 기본 ASP.NET 뷰 엔진을 사용 하는 경�
 이 자습서와 함께 제공 되는 Visual Studio 응용 프로그램에서 확인 하 여 수정 된 보기를 볼 수 있습니다. 예를 들어, 그림 8에서는 연락처 인덱스 뷰를 보여 줍니다.
 
 
-[![연락처 인덱스 보기](iteration-6-use-test-driven-development-cs/_static/image8.jpg)](iteration-6-use-test-driven-development-cs/_static/image15.png)
+[![T그에 게 문의 인덱스 보기](iteration-6-use-test-driven-development-cs/_static/image8.jpg)](iteration-6-use-test-driven-development-cs/_static/image15.png)
 
 **그림 08**: 연락처 인덱스 보기 ([클릭 하 여 큰 이미지 보기](iteration-6-use-test-driven-development-cs/_static/image16.png))
 

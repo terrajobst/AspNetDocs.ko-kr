@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 84c7baca-1c54-4c44-8f52-4282122d6acb
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-dependency-injection
 msc.type: authoredcontent
-ms.openlocfilehash: 52aba3fa5948d32180fbf135444433771b17756d
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 86781a1f46ce0c01a5d70b1f0cf8a81f3f96a032
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425644"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59405926"
 ---
 # <a name="aspnet-mvc-4-dependency-injection"></a>ASP.NET MVC 4 종속성 주입
 
@@ -91,7 +91,7 @@ ms.locfileid: "58425644"
 
 이 문서의 부록 참조할 수 있습니다 사용 하는 방법을 알아보려면 원하는 고 Visual Studio 코드 조각을 사용 하 여 잘 모르는 경우 &quot; [부록 b: 코드 조각을 사용 하 여](#AppendixB)&quot;합니다.
 
-* * *
+---
 
 <a id="Exercises"></a>
 
@@ -192,7 +192,7 @@ ms.locfileid: "58425644"
 
     ![Unity.Mvc3 NuGet 패키지를 설치](aspnet-mvc-4-dependency-injection/_static/image4.png "Unity.Mvc3 NuGet 패키지를 설치 합니다.")
 
-    *Unity.Mvc3 NuGet 패키지를 설치합니다.*
+    *Installing Unity.Mvc3 NuGet Package*
 3. 한 번 합니다 **Unity.Mvc3** 패키지를 설치, 파일 및 Unity 구성을 단순화 하기 위해 자동으로 추가 하는 폴더를 탐색 합니다.
 
     ![Unity.Mvc3 패키지 설치](aspnet-mvc-4-dependency-injection/_static/image5.png "Unity.Mvc3 패키지 설치")
@@ -484,7 +484,7 @@ ms.locfileid: "58425644"
     *응용 프로그램 추적-요청 세부 정보*
 4. 브라우저를 닫습니다.
 
-* * *
+---
 
 <a id="Summary"></a>
 

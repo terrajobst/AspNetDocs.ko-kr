@@ -8,15 +8,15 @@ ms.date: 12/20/2007
 ms.assetid: fd3db529-601a-4a6e-b91a-d9cbe1ff7bd4
 msc.legacyurl: /web-forms/videos/aspnet-35/aspnet-ajax/introduction-to-aspnet-ajax-history
 msc.type: video
-ms.openlocfilehash: f3248d21223eacfede0ffe54e5fea5fdff073af4
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 25e3d707d31d238d8a237d9bfefcfea5ea736c44
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57042240"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59410567"
 ---
-<a name="introduction-to-aspnet-ajax-history"></a>ASP.NET Ajax 기록 소개
-====================
+# <a name="introduction-to-aspnet-ajax-history"></a>ASP.NET Ajax 기록 소개
+
 [Bertrand Le Roy](https://github.com/bleroy)
 
 ASP.NET 확장 미리 보기에서 ajax에서 브라우저 뒤로 단추에 대 한 제어를 사용 하는 방법을 알아봅니다. **ASP.NET AJAX 확장에서 사용할 수는 [ASP.NET 3.5 Extensions 미리 보기](https://www.asp.net/downloads/35-sp1#find) (2007 년 12 월).**

@@ -8,15 +8,15 @@ ms.date: 09/13/2006
 ms.assetid: 0591cacc-b34b-4cf6-885e-2c9953bb0946
 msc.legacyurl: /web-forms/overview/data-access/displaying-data-with-the-datalist-and-repeater/displaying-data-with-the-datalist-and-repeater-controls-cs
 msc.type: authoredcontent
-ms.openlocfilehash: a58a9501a546a437b44e078c628d7db010700b5c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bf9930a3704d4ae6f0cb012a1512e23b29435f76
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062100"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59400193"
 ---
-<a name="displaying-data-with-the-datalist-and-repeater-controls-c"></a>DataList 및 반복기 컨트롤을 사용하여 데이터 표시(C#)
-====================
+# <a name="displaying-data-with-the-datalist-and-repeater-controls-c"></a>DataList 및 반복기 컨트롤을 사용하여 데이터 표시(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_29_CS.exe) 또는 [PDF 다운로드](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/datatutorial29cs1.pdf)
@@ -51,7 +51,7 @@ ASP.NET 2.0을 여러 레코드를 표시 하는 경우는 더 높은 수준의 
 열기는 `Default.aspx` 끌어서 페이지를 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤을 `UserControls` 디자인 화면으로 폴더입니다. 만든이 사용자 정의 컨트롤을 [마스터 페이지 및 사이트 탐색](../introduction/master-pages-and-site-navigation-cs.md) 자습서에서는 사이트 맵을 열거 하 고 글머리 기호 목록에 현재 섹션의 자습서를 표시 합니다.
 
 
-[![Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image3.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image2.png)
+[![Add Default.aspx SectionLevelTutorialListing.ascx 사용자 정의 컨트롤](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image3.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image2.png)
 
 **그림 2**: 추가 된 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤 `Default.aspx` ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image4.png))
 
@@ -72,7 +72,7 @@ ASP.NET 2.0을 여러 레코드를 표시 하는 경우는 더 높은 수준의 
 FormView와 마찬가지로, DataList 컨트롤 렌더링 된 출력의 템플릿 대신 BoundFields, CheckBoxFields, 등에 따라 다릅니다. FormView, 달리 DataList는 독립 하나 보다는 레코드 집합을 표시 하도록 설계 되었습니다. 이 자습서를 살펴보고 바인딩 제품 정보 DataList를 시작 하는 s 수 있습니다. 열어서 시작 합니다 `Basics.aspx` 페이지에 `DataListRepeaterBasics` 폴더입니다. 그런 다음 디자이너 도구 상자에서 DataList를 끕니다. DataList의 템플릿을 지정 하기 전에, 그림 4에서 볼 수 있듯이 디자이너는 회색 상자로 표시 합니다.
 
 
-[![디자이너 도구 상자에서 DataList를 끌어 옵니다.](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image7.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image6.png)
+[![D놓기 DataList에서의 도구 상자에는 디자이너](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image7.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image6.png)
 
 **그림 4**: DataList에서의 도구 상자에는 디자이너를 끌어 옵니다 ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image8.png))
 
@@ -80,17 +80,17 @@ FormView와 마찬가지로, DataList 컨트롤 렌더링 된 출력의 템플�
 DataList s에서에서 스마트 태그를 새 ObjectDataSource를 추가 하 고 사용 하도록 구성 합니다 `ProductsBLL` s 클래스 `GetProducts` 메서드. (없음) 드롭 다운 목록 삽입 마법사에서에서 설정에서는이 자습서에서는 읽기 전용 DataList 만들기 다시 있으므로 업데이트 하 고 탭을 삭제 합니다.
 
 
-[![새 ObjectDataSource를 만들도록 선택합니다](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image10.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image9.png)
+[![O새 ObjectDataSource를 만들려면 (태평양 표준시)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image10.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image9.png)
 
 **그림 5**: 새 ObjectDataSource를 만들려면 선택 ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image11.png))
 
 
-[![ProductsBLL 클래스를 사용 하는 ObjectDataSource 구성](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image13.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image12.png)
+[![Configure ProductsBLL 클래스를 사용 하는 ObjectDataSource](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image13.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image12.png)
 
 **그림 6**: ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLL` 클래스 ([큰 이미지를 보려면 클릭](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image14.png))
 
 
-[![모든 GetProducts 메서드를 사용 하 여 제품에 대 한 정보를 검색 합니다.](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image16.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image15.png)
+[![Retrieve 정보에 대 한 모든 GetProducts 메서드를 사용 하 여 제품](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image16.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image15.png)
 
 **그림 7**: 정보에 대 한 모든 사용 하 여 제품을 검색 합니다 `GetProducts` 메서드 ([큰 이미지를 보려면 클릭](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image17.png))
 
@@ -120,7 +120,7 @@ Visual Studio에서 자동으로 ObjectDataSource를 구성 하 고 해당 스�
 따라서 디자이너를 통해 템플릿을 편집 옵션을 제공 하는 DataList를 사용 하 여 작업 하는 경우 필자 선호 콘텐츠 템플릿 편집 인터페이스를 통해 액세스할 수 있도록 레이블을 웹 컨트롤을 사용 합니다. 앞으로 살펴보겠지만 곧, 반복기 템플릿의 내용을 소스 뷰에서 편집할 수 있도록 해야 합니다. 따라서 필자는 형식을 지정 해야 하지 않는 한 컨트롤 레이블 웹은 대개 생략 하겠습니다 Repeater가의 템플릿을 작성 하는 경우 데이터의 모양을 프로그래밍 논리를 기반으로 하는 텍스트가 바인딩됩니다.
 
 
-[![각 출력 s 제품은 DataList의 ItemTemplate 사용 하 여 렌더링](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image19.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image18.png)
+[![E제품의 출력 대 한 ach DataList의 ItemTemplate 사용 하 여 렌더링입니다.](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image19.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image18.png)
 
 **그림 8**: 가 각 제품이 출력 렌더링을 사용 하 여 s DataList `ItemTemplate` ([큰 이미지를 보려면 클릭](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image20.png))
 
@@ -134,7 +134,7 @@ DataList GridView와 같은 다양 한 스타일 관련 속성을 같은 제공 
 스킨 파일에 추가 하려면 마우스 오른쪽 단추로 클릭는 `App_Themes/DataWebControls` 폴더에 새 항목 추가 선택 하 고 목록에서 스킨 파일 옵션을 선택 합니다. 파일 이름을 `DataList.skin`로 지정합니다.
 
 
-[![DataList.skin 라는 새 스킨 파일 만들기](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image22.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image21.png)
+[![C새 스킨 파일 이라는 DataList.skin reate](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image22.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image21.png)
 
 **그림 9**: 명명 된 새 스킨 파일을 만듭니다 `DataList.skin` ([큰 이미지를 보려면 클릭](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image23.png))
 
@@ -149,7 +149,7 @@ DataList GridView와 같은 다양 한 스타일 관련 속성을 같은 제공 
 이 스킨 파일의 추가, DataList 모양은 (새로 고치려면 디자이너 보기 보기 메뉴에서 새 스킨 파일의 효과 확인 하려면 새로 고침을 선택 해야 할) 디자이너에 업데이트 됩니다. 그림 10과 같이 교대로 반복 되는 각 제품에는 밝은 분홍색 배경색입니다.
 
 
-[![DataList.skin 라는 새 스킨 파일 만들기](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image25.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image24.png)
+[![C새 스킨 파일 이라는 DataList.skin reate](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image25.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image24.png)
 
 **그림 10**: 명명 된 새 스킨 파일을 만듭니다 `DataList.skin` ([큰 이미지를 보려면 클릭](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image26.png))
 
@@ -174,7 +174,7 @@ DataList GridView와 같은 다양 한 스타일 관련 속성을 같은 제공 
 예를 들어 let s 타이틀이 DataList의 결과 위쪽에 표시 되는 제품 정보는 `<h3>` 제목입니다. 이렇게 하려면 추가 `HeaderTemplate` 적절 한 태그를 사용 하 여 합니다. 디자이너에서이 수 하면 DataList s 스마트 태그에 템플릿 편집 링크를 클릭 하 고 드롭다운 목록에서 머리글 템플릿을 선택 스타일 드롭다운 목록에서에서 3 제목 옵션을 선택한 후 텍스트를 입력 (그림 11 참조)를 나열 합니다.
 
 
-[![텍스트 제품 정보를 사용 하 여 머리글을 템플릿의 추가](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image28.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image27.png)
+[![Add는 머리글 템플릿의 텍스트 제품 정보를 사용 하 여](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image28.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image27.png)
 
 **그림 11**: 추가 된 `HeaderTemplate` 텍스트 제품 정보를 사용 하 여 ([큰 이미지를 보려면 클릭](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image29.png))
 
@@ -196,7 +196,7 @@ DataList GridView와 같은 다양 한 스타일 관련 속성을 같은 제공 
 이 또한이를 적용 한 후 브라우저를 통해 페이지를 볼 때 그림 12와 비슷하게 표시 됩니다. 머리글 행과 각 제품 목록 사이 있는 줄 note 합니다.
 
 
-[![DataList은 머리글 행 및 각 제품 목록 간에 수평선 포함 되어 있습니다.](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image31.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image30.png)
+[![T그 DataList 머리글 행 및 한 가로 규칙 간 각 제품 목록 포함](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image31.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image30.png)
 
 **그림 12**: DataList 머리글 행 및를 가로 규칙 간 각 제품 목록에 포함 되어 있습니다 ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image32.png))
 
@@ -227,7 +227,7 @@ Asp.net에서 1.x에서 Repeater 컨트롤이 일반적으로 일부 데이터 �
 이렇게 하려면 위의 제품 정보 DataList 디자이너 도구 상자에서 반복기 컨트롤을 드래그 하 여 시작 합니다. DataList, 마찬가지로 Repeater 처음에 표시 회색 상자로 해당 템플릿을 정의한 될 때까지 합니다.
 
 
-[![Repeater를 디자이너에 추가](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image34.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image33.png)
+[![A디자이너에 Repeater dd](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image34.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image33.png)
 
 **그림 13**: Repeater를 디자이너에 추가할 ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image35.png))
 
@@ -235,17 +235,17 @@ Asp.net에서 1.x에서 Repeater 컨트롤이 일반적으로 일부 데이터 �
 있는 반복기가 하나의 옵션만 s 스마트 태그: 데이터 원본을 선택 합니다. 새 ObjectDataSource를 만들고 사용 하도록 구성 하도록 선택 합니다 `CategoriesBLL` s 클래스 `GetCategories` 메서드.
 
 
-[![새 ObjectDataSource 만들기](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image37.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image36.png)
+[![C새 ObjectDataSource reate](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image37.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image36.png)
 
 **그림 14**: 새 ObjectDataSource 만듭니다 ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image38.png))
 
 
-[![CategoriesBLL 클래스를 사용 하는 ObjectDataSource 구성](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image40.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image39.png)
+[![Configure CategoriesBLL 클래스를 사용 하는 ObjectDataSource](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image40.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image39.png)
 
 **그림 15**: ObjectDataSource를 사용 하 여 구성 합니다 `CategoriesBLL` 클래스 ([큰 이미지를 보려면 클릭](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image41.png))
 
 
-[![모든 GetCategories 메서드를 사용 하 여 범주에 대 한 정보를 검색 합니다.](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image43.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image42.png)
+[![R정보에 대 한 모든 GetCategories 메서드를 사용 하 여 범주의 etrieve](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image43.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image42.png)
 
 **그림 16**: 정보에 대 한 모든 사용 하 여 범주를 검색 합니다 `GetCategories` 메서드 ([큰 이미지를 보려면 클릭](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image44.png))
 
@@ -265,7 +265,7 @@ DataList를 달리 Visual Studio 자동으로 만들어지지는지 않습니다
 Repeater 해당 템플릿, 뿐, 아무 작업도 수행 하 여 지정 된 대로 정확 하 게 태그를 내보냅니다. 그림 17 브라우저를 통해 볼 때 반복기가의 출력을 보여줍니다.
 
 
-[![단일 행 HTML &lt;테이블&gt; 별도 열에서 각 범주 나열](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image46.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image45.png)
+[![A 단일 행 HTML &lt;테이블&gt; 별도 열에서 각 범주를 나열](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image46.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image45.png)
 
 **그림 17**: 단일 행 HTML `<table>` 별도 열에서 각 범주를 나열 ([큰 이미지를 보려면 클릭](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image47.png))
 
@@ -292,7 +292,7 @@ S를 텍스트 제품 범주를 사용 하 여 출력에 머리글 행을 추가
 이러한 변경이 이루어진 후 그림 18 Repeater를 보여 줍니다.
 
 
-[![범주 열 배경색으로 대체 하 고 머리글 행이 포함 됩니다.](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image49.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image48.png)
+[![T그 범주 열 대체 배경색에 머리글 행을 포함 합니다.](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image49.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image48.png)
 
 **그림 18**: 범주 열 대체 배경색에 머리글 행을 포함 합니다. ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image50.png))
 

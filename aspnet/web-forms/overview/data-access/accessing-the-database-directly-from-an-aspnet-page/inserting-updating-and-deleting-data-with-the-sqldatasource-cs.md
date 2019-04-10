@@ -8,15 +8,15 @@ ms.date: 02/20/2007
 ms.assetid: a526f0ec-779e-4a2b-a476-6604090d25ce
 msc.legacyurl: /web-forms/overview/data-access/accessing-the-database-directly-from-an-aspnet-page/inserting-updating-and-deleting-data-with-the-sqldatasource-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 06c5fea8a058f15e72d455cf0e15b462d8f91e38
-ms.sourcegitcommit: 62db31596a7da029263cf06335aff12236fb3186
+ms.openlocfilehash: 8a1f0f929e2e2ee01a4567cb502e5fd908d8c90b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58440393"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59402793"
 ---
-<a name="inserting-updating-and-deleting-data-with-the-sqldatasource-c"></a>SqlDataSource를 사용하여 데이터 삽입, 업데이트 및 삭제(C#)
-====================
+# <a name="inserting-updating-and-deleting-data-with-the-sqldatasource-c"></a>SqlDataSource를 사용하여 데이터 삽입, 업데이트 및 삭제(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_49_CS.exe) 또는 [PDF 다운로드](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/datatutorial49cs1.pdf)
@@ -50,7 +50,7 @@ ms.locfileid: "58440393"
 열어서 시작 합니다 `InsertUpdateDelete.aspx` 하 고 `Querying.aspx` 에서 페이지를 `SqlDataSource` 폴더. 디자이너에서 합니다 `Querying.aspx` 페이지에서 첫 번째 예제에서 SqlDataSource 및 GridView를 선택 (합니다 `ProductsDataSource` 및 `GridView1` 컨트롤). 두 컨트롤을 선택한 후 편집 메뉴 및 복사를 선택 (또는 Ctrl + C를 누르면 방금). 디자이너를 이동한 다음 `InsertUpdateDelete.aspx` 컨트롤에 붙여넣습니다. 두 개의 이동한 후 `InsertUpdateDelete.aspx`, 브라우저에서 페이지를 테스트 합니다. 값을 표시 합니다 `ProductID`, `ProductName`, 및 `UnitPrice` 열에 있는 레코드의 모든를 `Products` 데이터베이스 테이블.
 
 
-[![모든 제품이 나열 된 ProductID에 따라 정렬](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image1.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image1.png)
+[![AProductID 정렬할 제품 ll 나와](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image1.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image1.png)
 
 **그림 1**: 모든 제품이 나열 된 정렬할 `ProductID` ([큰 이미지를 보려면 클릭](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image2.png))
 
@@ -87,7 +87,7 @@ SqlDataSource에서 레코드를 모두 반환 하는 것이 시점에서 `Produ
 다음으로, 추가할 매개 변수 새로 고침 단추를 클릭 합니다 `@ProductID` 아래 매개 변수 목록에 매개 변수입니다.
 
 
-[![속성 창에서 DeleteQuery 속성을 선택 합니다.](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image3.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image3.png)
+[![S속성 창에서 DeleteQuery 속성 선택](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image3.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image3.png)
 
 **그림 3**: 속성 창에서 DeleteQuery 속성 선택 ([클릭 하 여 큰 이미지 보기](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image4.png))
 
@@ -111,7 +111,7 @@ SqlDataSource에서 레코드를 모두 반환 하는 것이 시점에서 `Produ
 사용 하 여는 `DeleteCommand` 속성이 추가 GridView가 스마트 태그는 이제 삭제 사용 옵션을 포함 합니다. 계속 해 서이 확인란을 선택 합니다. 에 설명 된 대로 [는 개요의 삽입, 업데이트 및 삭제](../editing-inserting-and-deleting-data/an-overview-of-inserting-updating-and-deleting-data-cs.md)를 사용 하 여 CommandField 추가할 GridView이로 인해 해당 `ShowDeleteButton` 속성이로 설정 `true`합니다. 그림 4에서는, 브라우저를 통해 해당 페이지를 방문 하는 경우 처럼 삭제 단추가 포함 됩니다. 일부 제품을 삭제 하 여이 페이지 출력을 테스트 합니다.
 
 
-[![각 GridView 행에는 이제 삭제 단추](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image4.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image5.png)
+[![E이제 대 한 ach GridView 행에 있는 삭제 단추](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image4.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image5.png)
 
 **그림 4**: 각 GridView 행에는 이제 삭제 단추가 포함 됩니다 ([클릭 하 여 큰 이미지 보기](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image6.png))
 
@@ -137,7 +137,7 @@ SqlDataSource에서 레코드를 모두 반환 하는 것이 시점에서 `Produ
 가이 자동 생성 옵션을 탐색할 수 있습니다. 디자이너는 DetailsView 추가할 `InsertUpdateDelete.aspx` 설정 및 해당 `ID` 속성을 `ManageProducts`입니다. 그런 다음 DetailsView가 스마트 태그에서 라는 SqlDataSource를 만들고 새 데이터 원본을 만들려면 선택 `ManageProductsDataSource`합니다.
 
 
-[![ManageProductsDataSource 라는 새 SqlDataSource 만들기](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image6.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image7.png)
+[![C새 SqlDataSource 라는 ManageProductsDataSource reate](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image6.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image7.png)
 
 **그림 6**: 명명 된 새 SqlDataSource 만들려면 `ManageProductsDataSource` ([큰 이미지를 보려면 클릭](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image8.png))
 
@@ -145,7 +145,7 @@ SqlDataSource에서 레코드를 모두 반환 하는 것이 시점에서 `Produ
 데이터 소스 구성 마법사에서 사용 하도록 선택 된 `NORTHWINDConnectionString` 연결 문자열 하 고 다음을 클릭 합니다. Select 문 화면 구성에서 선택한 테이블 또는 뷰 라디오 단추에서 지정 열을 그대로 두고 및 선택은 `Products` 드롭 다운 목록에서 테이블입니다. 선택 된 `ProductID`, `ProductName`를 `UnitPrice`, 및 `Discontinued` 확인란 목록에서 열.
 
 
-[![ProductID, ProductName, UnitPrice, 및 지원 되지 않는 열을 반환할 Products 테이블 사용](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image7.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image9.png)
+[![UProducts 테이블을 노래, ProductID, ProductName, UnitPrice, 및 지원 되지 않는 열을 반환 합니다.](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image7.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image9.png)
 
 **그림 7**: 사용 하 여는 `Products` 테이블을 반환 합니다 `ProductID`를 `ProductName`, `UnitPrice`, 및 `Discontinued` 열 ([전체 크기 이미지를 보려면 클릭](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image10.png))
 
@@ -173,7 +173,7 @@ DetailsView의 데이터 수정 기능을 켜려면 삽입 사용, 편집 사용
 브라우저에서 페이지를 방문 하 고 편집, 삭제 및 DetailsView에 포함 된 새 단추입니다. DetailsView 각 BoundField 표시 하는 편집 모드로 설정 편집 단추를 클릭 하면 해당 `ReadOnly` 속성이 `false` (기본값) 텍스트 상자 및 확인란으로 CheckBoxField.
 
 
-[![DetailsView s 기본 편집 인터페이스](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image9.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image11.png)
+[![T그 DetailsView s 편집 인터페이스 기본](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image9.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image11.png)
 
 **그림 9**: DetailsView s 기본 편집 인터페이스 ([클릭 하 여 큰 이미지 보기](inserting-updating-and-deleting-data-with-the-sqldatasource-cs/_static/image12.png))
 

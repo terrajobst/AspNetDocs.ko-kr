@@ -8,15 +8,15 @@ ms.date: 07/09/2007
 ms.assetid: 7572654d-6fa2-4ea3-a43b-56a8578af0f6
 msc.legacyurl: /web-forms/videos/aspnet-ajax/how-do-i-update-multiple-regions-of-a-page-with-aspnet-ajax
 msc.type: video
-ms.openlocfilehash: 87bb74ed2f6301cafc6abe3bfa75fbf3884dd651
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a936829217aa62a5caff5c9b0b51cca8a994c10e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57044460"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59400310"
 ---
-<a name="how-do-i-update-multiple-regions-of-a-page-with-aspnet-ajax"></a>[어떻게 할까요?] ASP.NET AJAX와 함께 여러 페이지 영역을 업데이트 하 시겠습니까?
-====================
+# <a name="how-do-i-update-multiple-regions-of-a-page-with-aspnet-ajax"></a>[어떻게 할까요?] ASP.NET AJAX와 함께 여러 페이지 영역을 업데이트 하 시겠습니까?
+
 [Scott Golightly](https://github.com/scottgolightly)
 
 이 비디오에서는 ASP.NET AJAX UpdatePanel 컨트롤은 여러 지역에 대 한 응답으로 클라이언트 쪽 이벤트를 단일 웹 페이지를 업데이트 하는 데 사용할 수 있는 두 가지 속성을 알아봅니다. UpdateMode 속성이 always로는 사례 패널은 항상 다시 post 중에 업데이트 또는 사례 패널만 특정 이벤트에 대 한 응답에서 업데이트는 Conditional로 설정할 수 있습니다. 트리거 컬렉션 속성을 사용 하는 패널을 업데이트 하면 해당 이벤트를 지정할 수 있습니다. 함께 사용할 이러한 속성에 대 한 응답 동일한 이벤트 트리거를 업데이트 하려면 여러 UpdatePanel 컨트롤을 허용 합니다.

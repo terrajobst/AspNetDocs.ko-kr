@@ -8,15 +8,15 @@ ms.date: 02/18/2014
 ms.assetid: 5e968ead-906a-45ea-ac2a-c70e57e1a9b1
 msc.legacyurl: /web-pages/overview/ui-layouts-and-themes/installing-helpers
 msc.type: authoredcontent
-ms.openlocfilehash: 5ad717cd7c64e830ce66d5e1361d0eb6ef3cbbec
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3ffb2f88fd8d2ad32fb8ea7d476ca10fdd9ac430
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57053940"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59398334"
 ---
-<a name="installing-a-helper-in-an-aspnet-web-pages-razor-site"></a>ASP.NET 웹 페이지 (Razor) 사이트에서 도우미 설치
-====================
+# <a name="installing-a-helper-in-an-aspnet-web-pages-razor-site"></a>ASP.NET 웹 페이지 (Razor) 사이트에서 도우미 설치
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 문서에서는 ASP.NET Web Pages (Razor) 웹 사이트에서 도우미를 설치 하는 방법을 설명 합니다. A *도우미* 코드와 길거나 복잡 한 않을 수 있는 작업을 수행 하는 태그를 포함 하는 재사용 가능한 구성 요소입니다.

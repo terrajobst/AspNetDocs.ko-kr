@@ -8,15 +8,15 @@ ms.date: 09/08/2014
 ms.assetid: 423498f7-1a4b-44a1-b342-5f39d0bcf94f
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/aspnet-error-handling
 msc.type: authoredcontent
-ms.openlocfilehash: af5e5a9c8d211b07b57aa50238b02cabe249aef8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: e4b8f059974dec33d6305e7b84919550713bf4e4
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57041630"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409891"
 ---
-<a name="aspnet-error-handling"></a>ASP.NET 오류 처리
-====================
+# <a name="aspnet-error-handling"></a>ASP.NET 오류 처리
+
 [Erik Reitan](https://github.com/Erikre)
 
 [Wingtip Toys 샘플 프로젝트 (C#)를 다운로드](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 또는 [전자책 (PDF) 다운로드](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
@@ -345,7 +345,7 @@ Microsoft Azure에 웹 응용 프로그램을 배포 하는 방법에 대 한 �
 - Mike 되
 - [Mitchel 판매자, USA](http://www.mitchelsellers.com/) (twitter: [ @MitchelSellers ](http://twitter.com/MitchelSellers))
 - [Paul Cociuba, Microsoft](http://linqto.me/Links/pcociuba)
-- [Paulo Morgado, Portugal](http://paulomorgado.net/)
+- [파울로 Morgado, 포르투갈](http://paulomorgado.net/)
 - [Pranav Rastogi, Microsoft](https://blogs.msdn.com/b/pranav_rastogi)
 - [Tim Ammann, Microsoft](https://blogs.iis.net/timamm/default.aspx)
 - [Microsoft, Tom Dykstra](https://blogs.msdn.com/aspnetue)

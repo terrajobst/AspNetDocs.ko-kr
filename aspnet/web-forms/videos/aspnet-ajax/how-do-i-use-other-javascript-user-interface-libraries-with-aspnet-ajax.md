@@ -8,15 +8,15 @@ ms.date: 07/16/2007
 ms.assetid: 35cf5142-e2d0-40de-884b-00039cc7ecb7
 msc.legacyurl: /web-forms/videos/aspnet-ajax/how-do-i-use-other-javascript-user-interface-libraries-with-aspnet-ajax
 msc.type: video
-ms.openlocfilehash: 89fa8c82d47c047c8d14f2e647102546bc67a997
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 21c0a717c299cb72ca7379c9cb128ce5bb80edec
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57038510"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409884"
 ---
-<a name="how-do-i-use-other-javascript-user-interface-libraries-with-aspnet-ajax"></a>[어떻게 할까요?] ASP.NET AJAX와 함께 다른 JavaScript 사용자 인터페이스 라이브러리 사용
-====================
+# <a name="how-do-i-use-other-javascript-user-interface-libraries-with-aspnet-ajax"></a>[어떻게 할까요?] ASP.NET AJAX와 함께 다른 JavaScript 사용자 인터페이스 라이브러리 사용
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 Microsoft의 일부인 합니다 [openajax](http://www.openajax.org/) 고 Microsoft AJAX Library는 타사 JavaScript 사용자 인터페이스 라이브러리를 사용 하 여 원활 하 게 작동 하도록 설계 되었습니다. 이 비디오에서는 ASP.NET AJAX, 프로토타입 및 script.aculo.us 간의 상호 운용성을 보여 줍니다.

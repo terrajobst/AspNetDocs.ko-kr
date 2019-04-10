@@ -8,15 +8,15 @@ ms.date: 10/05/2011
 ms.assetid: 5e542987-2f95-4254-a87f-5c27dc0a66aa
 msc.legacyurl: /web-forms/overview/older-versions-security/roles
 msc.type: chapter
-ms.openlocfilehash: 78f7707d937e7515b3447b60f28db54789b571f9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5d03432a19366c255a52622ad64805b3a633c4dc
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57022900"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59397514"
 ---
-<a name="aspnet-35---roles"></a>ASP.NET 3.5 - 역할
-====================
+# <a name="aspnet-35---roles"></a>ASP.NET 3.5 - 역할
+
 > 이 자습서 시리즈를 만들고 역할을 삭제 하는 방법, 사용자 역할을 할당 하는 방법 및 역할에서 권한을 부여 하는 방법을 설명 합니다.
 
 

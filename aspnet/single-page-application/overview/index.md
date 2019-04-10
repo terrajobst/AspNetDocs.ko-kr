@@ -8,19 +8,19 @@ ms.date: 11/14/2012
 ms.assetid: a17452c8-35fc-4ac2-811e-16d29f647cf7
 msc.legacyurl: /single-page-application/overview
 msc.type: book
-ms.openlocfilehash: 0f121ded971e404e6b7ec90c55741bab3bf2af8c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ba656ecc14204d833e9dc18b941a2c19ec5e06ef
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57019650"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59397730"
 ---
-<a name="single-page-application-overview"></a>단일 페이지 응용 프로그램 개요
-====================
+# <a name="single-page-application-overview"></a>단일 페이지 응용 프로그램 개요
+
 - [소개](introduction/index.md)
 
-    - [단일 페이지 응용 프로그램: KnockoutJS 템플릿](introduction/knockoutjs-template.md)
-    - [Knockout 이외의 라이브러리를 알고 있습니까?](introduction/other-libraries.md)
+    - [단일 페이지 애플리케이션: KnockoutJS 템플릿](introduction/knockoutjs-template.md)
+    - [Knockout 이외의 라이브러리를 알고 있으신가요?](introduction/other-libraries.md)
 - [템플릿](templates/index.md)
 
     - [백본 템플릿](templates/backbonejs-template.md)

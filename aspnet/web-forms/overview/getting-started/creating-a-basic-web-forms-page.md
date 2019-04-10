@@ -8,16 +8,17 @@ ms.date: 03/03/2014
 ms.assetid: a2f1c635-0817-4a9a-8c13-d5b5d29727c0
 msc.legacyurl: /web-forms/overview/getting-started/creating-a-basic-web-forms-page
 msc.type: authoredcontent
-ms.openlocfilehash: eb1a4632caf00097012bd1757da44016a076630f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bf3336c2467553ba3714bbd4fbb41a35a0490768
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57026230"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59410606"
 ---
 # <a name="using-visual-studio-2013-to-create-a-basic-aspnet-45-web-forms-page"></a>Visual Studio 2013을 사용 하 여 기본 ASP.NET 4.5 Web Forms 페이지를 만들려면
+# 
 
-=== 여 [Erik Reitan](https://github.com/Erikre)
+[Erik Reitan](https://github.com/Erikre)
 
 [!INCLUDE[](~/includes/rp.md)]
 

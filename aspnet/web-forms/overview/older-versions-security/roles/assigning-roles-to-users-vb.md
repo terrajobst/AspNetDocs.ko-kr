@@ -8,15 +8,15 @@ ms.date: 03/24/2008
 ms.assetid: fd208ee9-69cc-4467-9783-b4e039bdd1d3
 msc.legacyurl: /web-forms/overview/older-versions-security/roles/assigning-roles-to-users-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 334440f514e94927e428aef8fdba53f0b99e4460
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6bedfd2b6ff0b50b3b863d26dccaacf687ed5907
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57056750"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59403274"
 ---
-<a name="assigning-roles-to-users-vb"></a>사용자에 역할 할당(VB)
-====================
+# <a name="assigning-roles-to-users-vb"></a>사용자에 역할 할당(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/6/0/3/6032582f-360d-4739-b935-38721fdb86ea/VB.10.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/0/3/6032582f-360d-4739-b935-38721fdb86ea/aspnet_tutorial10_AssigningRoles_vb.pdf)
@@ -57,7 +57,7 @@ ms.locfileid: "57056750"
 이 CSS 정의 큰, 빨강 글꼴을 사용 하 여 레이블을 표시 하려면 브라우저에 지시 합니다. 그림 1에서는 Visual Studio 디자이너를 통해이 효과 보여 줍니다.
 
 
-[![대규모의 빨간색 글꼴로 레이블의 CssClass 속성 결과](assigning-roles-to-users-vb/_static/image2.png)](assigning-roles-to-users-vb/_static/image1.png)
+[![T대규모, 빨강 글꼴에서에서 그 레이블의 CssClass 속성 결과](assigning-roles-to-users-vb/_static/image2.png)](assigning-roles-to-users-vb/_static/image1.png)
 
 **그림 1**: 레이블의 `CssClass` Large, 빨강 글꼴의에서 속성 결과 ([큰 이미지를 보려면 클릭](assigning-roles-to-users-vb/_static/image3.png))
 
@@ -93,7 +93,7 @@ ms.locfileid: "57056750"
 이 코드를 사용 하 여 잠시는 브라우저를 통해 페이지를 방문 화면은 그림 2와 비슷하게 표시 됩니다. 모든 사용자 계정을 채워집니다 드롭 다운 목록에서을 그 아래에, 각 역할 확인란으로 표시 됩니다. 설정 했기 때문은 `AutoPostBack` 포스트백을 발생 시키는 속성 DropDownList 및 확인란의 True로 확인 또는 역할을 선택 취소 하면 선택한 사용자를 변경 합니다. 그러나 아직 있으므로 이러한 작업을 처리 하는 코드를 쓸 조치가 수행 됩니다. 에서는에서는 다음 두 섹션에서 이러한 작업을 수행할 수 있습니다.
 
 
-[![사용자 및 역할 페이지에 표시 됩니다.](assigning-roles-to-users-vb/_static/image5.png)](assigning-roles-to-users-vb/_static/image4.png)
+[![T그 페이지에는 사용자 및 역할을 표시](assigning-roles-to-users-vb/_static/image5.png)](assigning-roles-to-users-vb/_static/image4.png)
 
 **그림 2**: 사용자 및 역할 페이지에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-vb/_static/image6.png))
 
@@ -135,7 +135,7 @@ ms.locfileid: "57056750"
 시간을 내어 브라우저를 통해이 페이지를 테스트 합니다. Tito 사용자를 선택 하 고 Tito 관리자 및 감독자 역할에 추가 합니다.
 
 
-[![관리자 및 감독자 역할에 추가한 Tito](assigning-roles-to-users-vb/_static/image8.png)](assigning-roles-to-users-vb/_static/image7.png)
+[![T관리자 및 감독자 역할에 추가한 ito](assigning-roles-to-users-vb/_static/image8.png)](assigning-roles-to-users-vb/_static/image7.png)
 
 **그림 3**: Tito 관리자 및 감독자 역할에 추가 되었습니다 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-vb/_static/image9.png))
 
@@ -143,7 +143,7 @@ ms.locfileid: "57056750"
 그런 다음 드롭다운 목록에서 Bruce 사용자를 선택 합니다. 다시 게시 되며 반복기의 확인란을 통해 업데이트 되는 `CheckRolesForSelectedUser`합니다. Bruce 속해 있지 않으므로 아직 모든 역할을 하므로 두 확인란 검사 되지 않습니다. 다음으로 Bruce 감독자 역할에 추가 합니다.
 
 
-[![Bruce는 감독자 역할에 추가 되었습니다.](assigning-roles-to-users-vb/_static/image11.png)](assigning-roles-to-users-vb/_static/image10.png)
+[![B감독자 역할에 추가한 ruce](assigning-roles-to-users-vb/_static/image11.png)](assigning-roles-to-users-vb/_static/image10.png)
 
 **그림 4**: Bruce 감독자 역할에 추가 되었습니다 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-vb/_static/image12.png))
 
@@ -167,7 +167,7 @@ ms.locfileid: "57056750"
 마지막 두 줄을 `BindRolesToList` 역할 집합이 바인딩할 메서드를 추가한는 `RoleList` DropDownList 컨트롤입니다. 그림 5-시스템의 역할을 사용 하 여 채워진 드롭다운 목록 브라우저를 통해 볼 때 최종 결과를 보여 줍니다.
 
 
-[![역할은 RoleList DropDownList에 표시 됩니다.](assigning-roles-to-users-vb/_static/image14.png)](assigning-roles-to-users-vb/_static/image13.png)
+[![T그 역할 RoleList DropDownList에 표시 됩니다](assigning-roles-to-users-vb/_static/image14.png)](assigning-roles-to-users-vb/_static/image13.png)
 
 **그림 5**: 역할에 표시 되는 `RoleList` DropDownList ([큰 이미지를 보려면 클릭](assigning-roles-to-users-vb/_static/image15.png))
 
@@ -187,7 +187,7 @@ ms.locfileid: "57056750"
 현재 위치에서이 코드는 `RolesUserList` GridView에는 선택한 역할에 속하는 해당 사용자가 표시 됩니다. 그림 6에서 알 수 있듯이, 감독자 역할 두 멤버로 구성 됩니다. Bruce 및 Tito 합니다.
 
 
-[![선택한 역할에 속하는 해당 사용자를 나열 하는 GridView](assigning-roles-to-users-vb/_static/image17.png)](assigning-roles-to-users-vb/_static/image16.png)
+[![T선택한 역할에 속하는 해당 사용자를 나열 하는 GridView 그](assigning-roles-to-users-vb/_static/image17.png)](assigning-roles-to-users-vb/_static/image16.png)
 
 **그림 6**: GridView 나열 된 사용자는 역할의 구성원 선택 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-vb/_static/image18.png))
 
@@ -199,7 +199,7 @@ ms.locfileid: "57056750"
 GridView에 삭제 단추 필드를 추가 하 여 시작 합니다. 이 필드에 필드 가장 왼쪽으로 표시 되 고 변경 해야 해당 `DeleteText` "삭제" (기본값)에서 "제거" 속성입니다.
 
 
-[![추가 된](assigning-roles-to-users-vb/_static/image20.png)](assigning-roles-to-users-vb/_static/image19.png)
+[![Add는](assigning-roles-to-users-vb/_static/image20.png)](assigning-roles-to-users-vb/_static/image19.png)
 
 **그림 7**: GridView에 "제거" 단추를 추가 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-vb/_static/image21.png))
 
@@ -217,7 +217,7 @@ GridView에 삭제 단추 필드를 추가 하 여 시작 합니다. 이 필드�
 그림 8 사용자 Tito 감독자 그룹에서 제거 된 후 페이지를 보여 줍니다.
 
 
-[![안타깝게도 Tito 더 이상 감독자](assigning-roles-to-users-vb/_static/image23.png)](assigning-roles-to-users-vb/_static/image22.png)
+[![A라스베이거스에서, Tito 감독자는 더 이상](assigning-roles-to-users-vb/_static/image23.png)](assigning-roles-to-users-vb/_static/image22.png)
 
 **그림 8**: 안타깝게도 Tito 더 이상 감독자 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-vb/_static/image24.png))
 
@@ -245,7 +245,7 @@ GridView에 삭제 단추 필드를 추가 하 여 시작 합니다. 이 필드�
 브라우저를 통해 페이지를 방문 하 고 있는 감독자 역할을 선택 합니다 `RoleList` DropDownList 합니다. 잘못 된 사용자 이름을 입력 하세요 – 사용자 시스템에 없는 경우를 설명 하는 메시지를 표시 합니다.
 
 
-[![존재 하지 않는 사용자 역할에 추가할 수 없습니다.](assigning-roles-to-users-vb/_static/image26.png)](assigning-roles-to-users-vb/_static/image25.png)
+[![You는 존재 하지 않는 사용자 역할에 추가할 수 없습니다](assigning-roles-to-users-vb/_static/image26.png)](assigning-roles-to-users-vb/_static/image25.png)
 
 **그림 9**: 존재 하지 않는 사용자 역할에 추가할 수 없습니다 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-vb/_static/image27.png))
 
@@ -253,7 +253,7 @@ GridView에 삭제 단추 필드를 추가 하 여 시작 합니다. 이 필드�
 이제 유효한 사용자를 추가 해 보세요. 계속 해 서 다시 Tito 감독자 역할에 추가 합니다.
 
 
-[![Tito 감독자는 다시 한 번!](assigning-roles-to-users-vb/_static/image29.png)](assigning-roles-to-users-vb/_static/image28.png)
+[![Tito는 다시 한 번 감독자!](assigning-roles-to-users-vb/_static/image29.png)](assigning-roles-to-users-vb/_static/image28.png)
 
 **그림 10**: Tito 감독자는 다시 한 번!  ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-vb/_static/image30.png))
 
@@ -290,7 +290,7 @@ GridView에 삭제 단추 필드를 추가 하 여 시작 합니다. 이 필드�
 다음으로, 선택는 "추가/제거 `WizardSteps`..." CreateUserWizard의 스마트 태그에서 옵션 및 새 `WizardStep`설정, 해당 `ID` 에 `SpecifyRolesStep`입니다. 이동 된 `SpecifyRolesStep WizardStep` "Sign Up for 새 계정" 단계를 수행 하면 되지만 "완료" 단계 전에 제공 되도록 합니다. 설정 된 `WizardStep`의 `Title` 속성 "지정 역할"을 해당 `StepType` 속성을 `Step`, 및 해당 `AllowReturn` 속성을 false로 합니다.
 
 
-[![추가 된](assigning-roles-to-users-vb/_static/image32.png)](assigning-roles-to-users-vb/_static/image31.png)
+[![Add는](assigning-roles-to-users-vb/_static/image32.png)](assigning-roles-to-users-vb/_static/image31.png)
 
 **그림 11**: "지정 된 역할"을 추가 `WizardStep` CreateUserWizard를 ([큰 이미지를 보려면 클릭](assigning-roles-to-users-vb/_static/image33.png))
 
@@ -318,7 +318,7 @@ GridView에 삭제 단추 필드를 추가 하 여 시작 합니다. 이 필드�
 브라우저를 통해이 페이지를 방문 합니다. CreateUserWizard는 첫 번째 단계는 표준 "Sign Up for 새 계정" 단계를 새 사용자의 사용자 이름, 암호, 메일 및 기타 주요 정보를 묻는 경우 Wanda 라는 새 사용자를 만드는 데 필요한 정보를 입력 합니다.
 
 
-[![Wanda 라는 새 사용자 만들기](assigning-roles-to-users-vb/_static/image35.png)](assigning-roles-to-users-vb/_static/image34.png)
+[![C새 사용자 라는 Wanda reate](assigning-roles-to-users-vb/_static/image35.png)](assigning-roles-to-users-vb/_static/image34.png)
 
 **그림 12**: 새 사용자 라는 Wanda 만듭니다 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-vb/_static/image36.png))
 
@@ -326,7 +326,7 @@ GridView에 삭제 단추 필드를 추가 하 여 시작 합니다. 이 필드�
 "Create User" 단추를 클릭 합니다. CreateUserWizard 내부적으로 호출 된 `Membership.CreateUser` 메서드를 새 사용자 계정 및 다음 진행 됨에 따라 다음 단계를 만드는 "역할을 지정 합니다." 여기에 시스템 역할은 나열 됩니다. 감독자 확인란을 선택 하 고 클릭 합니다.
 
 
-[![Wanda 감독자 역할의 멤버로 설정](assigning-roles-to-users-vb/_static/image38.png)](assigning-roles-to-users-vb/_static/image37.png)
+[![M이렇게 하려면 Wanda 감독자 역할의 멤버인](assigning-roles-to-users-vb/_static/image38.png)](assigning-roles-to-users-vb/_static/image37.png)
 
 **그림 13**: Wanda 감독자 역할의 멤버로 설정 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-vb/_static/image39.png))
 
@@ -334,7 +334,7 @@ GridView에 삭제 단추 필드를 추가 하 여 시작 합니다. 이 필드�
 다시 게시 및 업데이트 하면 다음을 클릭 하 여 `ActiveStep` "완료" 단계를 합니다. 에 `ActiveStepChanged` 이벤트 처리기를 최근에 만든 사용자 계정 감독자 역할에 할당 됩니다. 이 확인 하려면 돌아갑니다 합니다 `UsersAndRoles.aspx` 감독자에서 선택한 페이지를 `RoleList` DropDownList 합니다. 그림 14에서 알 수 있듯이, 감독자는 이제 이루어져 3 명의 사용자: Bruce Tito, 하며 Wanda 합니다.
 
 
-[![Bruce, Tito, Wanda와 모든 감독자](assigning-roles-to-users-vb/_static/image41.png)](assigning-roles-to-users-vb/_static/image40.png)
+[![B모든 감독자 ruce, Tito, 및 Wanda](assigning-roles-to-users-vb/_static/image41.png)](assigning-roles-to-users-vb/_static/image40.png)
 
 **그림 14**: Bruce, Tito, Wanda와 모든 감독자 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-vb/_static/image42.png))
 

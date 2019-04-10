@@ -8,15 +8,15 @@ ms.date: 12/01/2014
 ms.assetid: 61941e64-0c0d-4996-9270-cb8ccfd0cabc
 msc.legacyurl: /visual-studio/overview/2013/creating-web-projects-in-visual-studio
 msc.type: authoredcontent
-ms.openlocfilehash: 3d96d796d22c3511fedc45c024274300143b119b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a62c821159cd097507019d5efb29e01958ec9fba
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034780"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59398106"
 ---
-<a name="creating-aspnet-web-projects-in-visual-studio-2013"></a>Visual Studio 2013에서 ASP.NET 웹 프로젝트 만들기
-====================
+# <a name="creating-aspnet-web-projects-in-visual-studio-2013"></a>Visual Studio 2013에서 ASP.NET 웹 프로젝트 만들기
+
 [Tom Dykstra](https://github.com/tdykstra)
 
 > 이 항목에서는 Visual Studio 2013 업데이트 3에서에서 ASP.NET 웹 프로젝트를 만드는 옵션을 설명 합니다.
@@ -81,7 +81,7 @@ Visual Studio는 웹 응용 프로그램 호스팅에 대 한 Azure 서비스를
 - 웹 앱 또는 인터넷을 통해 응용 프로그램을 사용할 수 있도록 하는 가상 컴퓨터를 만들고 설정 합니다.
 - 클라우드에서 실행 될 때 응용 프로그램에서 생성 된 로그를 봅니다.
 - 디버그 모드에서 원격으로 실행할 응용 프로그램이 클라우드에서 실행 되는 동안.
-- Viiew 및 SQL 데이터베이스와 같은 다른 Azure 서비스를 관리 합니다.
+- 확인 하 고 SQL 데이터베이스와 같은 다른 Azure 서비스를 관리 합니다.
 
 할 수 있습니다 [Azure 계정 만들기](https://www.windowsazure.com/pricing/free-trial/) 웹 앱과 같은 기본 서비스를 무료로 포함 하 고 MSDN 구독자 인 경우 다음을 할 수 있습니다 [혜택을 활성화](https://azure.microsoft.com/pricing/member-offers/visual-studio-subscriptions/) 추가 azure 월간 크레딧을 제공 하는 서비스입니다. 
 

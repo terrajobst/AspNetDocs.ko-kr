@@ -8,15 +8,15 @@ ms.date: 07/16/2014
 ms.assetid: ecfd0eb4-c4ad-44e6-9db9-a2a66611ff6a
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/maintainable-azure-websites-managing-change-and-scale
 msc.type: authoredcontent
-ms.openlocfilehash: 315e89c81782edf0875c65afd27153102d733050
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: ec0058472f8bc1d8d58e7c78deeb8b6097532510
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58424250"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409735"
 ---
-<a name="hands-on-lab-maintainable-azure-websites-managing-change-and-scale"></a>실습: 유지 관리 가능한 Azure 웹 사이트: 변경 및 확장 관리
-====================
+# <a name="hands-on-lab-maintainable-azure-websites-managing-change-and-scale"></a>실습: 유지 관리 가능한 Azure 웹 사이트: 변경 및 확장 관리
+
 [웹 캠프 팀](https://twitter.com/webcamps)
 
 [웹 캠프 학습 키트 다운로드](https://aka.ms/webcamps-training-kit)
@@ -89,7 +89,7 @@ ms.locfileid: "58424250"
 > 각 실습에 시작 솔루션을 함께 표시 됩니다는 **시작** 다른 독립적으로 각 연습에 따라 할 수 있는 연습 하는 폴더입니다. 주의 하십시오 연습 하는 동안 추가 되는 코드 조각은 솔루션부터 이러한 누락 되어 연습을 완료 될 때까지 작동 하지 않을 수 있습니다. 연습에 대 한 소스 코드 안에 있습니다.는 **최종** 해당 연습에서 단계를 완료 합니다. 결과로 생성 되는 코드를 사용 하 여 Visual Studio 솔루션에 포함 된 폴더입니다. 이 실습을 통해 작업 하는 동안 추가 도움이 필요한 경우 지침으로 이러한 솔루션을 사용할 수 있습니다.
 
 
-* * *
+---
 
 <a id="Exercises"></a>
 ## <a name="exercises"></a>연습
@@ -131,7 +131,7 @@ ms.locfileid: "58424250"
 
     ![마이그레이션을 사용 하도록 설정](maintainable-azure-websites-managing-change-and-scale/_static/image1.png "마이그레이션을 사용 하도록 설정")
 
-    *마이그레이션을 사용 하도록 설정*
+    *마이그레이션을 사용하도록 설정*
 
     > [!NOTE]
     > 이 명령은 추가 **마이그레이션을** Geek 퀴즈 프로젝트 파일이 포함 된 폴더의 이름은 **Configuration.cs**합니다. 합니다 **구성** 클래스를 사용 하면 마이그레이션에 대해 동작 하는 방식을 구성할 수 있습니다.
@@ -198,7 +198,7 @@ ms.locfileid: "58424250"
 
     ![Add-Migration](maintainable-azure-websites-managing-change-and-scale/_static/image8.png "Add-Migration")
 
-    *Add-Migration*
+    *추가 마이그레이션*
 
     > [!NOTE]
     > 두 가지 방법으로 구성 된 마이그레이션 파일 **위로** 하 고 **아래로**합니다.
@@ -909,7 +909,7 @@ ms.locfileid: "58424250"
     > - 최대값과 최소값을 줄일 합니다 **대상 CPU** 웹 앱의 자동 크기 조정 구성의 범위
     > - 사용 하 여 클라우드에서 부하 테스트 실행 **Azure 테스트 계획**합니다. 자세한 내용은 [여기](/azure/devops/test/load-test/index?view=vsts)
 
-* * *
+---
 
 <a id="Summary"></a>
 ## <a name="summary"></a>요약

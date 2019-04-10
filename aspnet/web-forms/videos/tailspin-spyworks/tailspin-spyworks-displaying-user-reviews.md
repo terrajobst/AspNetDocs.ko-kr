@@ -8,15 +8,15 @@ ms.date: 07/21/2010
 ms.assetid: 55d5652a-bcf3-451e-89e4-8b907d88708f
 msc.legacyurl: /web-forms/videos/tailspin-spyworks/tailspin-spyworks-displaying-user-reviews
 msc.type: video
-ms.openlocfilehash: d6d55140dd852e596e0dfc245332e8f4c03d1d43
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c8c7864a6825db99db9c942102fc6afb41b0e655
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061120"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59405203"
 ---
-<a name="tailspin-spyworks---displaying-user-reviews"></a>Tailspin Spyworks - 사용자 후기 표시
-====================
+# <a name="tailspin-spyworks---displaying-user-reviews"></a>Tailspin Spyworks - 사용자 후기 표시
+
 [Joe Stagner](https://github.com/JoeStagner)
 
 Joe Stagner Tailspin Spyworks 샘플 Web Forms 응용 프로그램에서 고객의 검토를 표시합니다.

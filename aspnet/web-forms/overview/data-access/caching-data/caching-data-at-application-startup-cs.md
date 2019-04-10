@@ -8,15 +8,15 @@ ms.date: 05/30/2007
 ms.assetid: 22ca8efa-7cd1-45a7-b9ce-ce6eb3b3ff95
 msc.legacyurl: /web-forms/overview/data-access/caching-data/caching-data-at-application-startup-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 692b2a13664a9a5153a85a230dd513b022518316
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 7e858fe4c1f8e93f6e6fa30b33f5682945d03c32
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423990"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59403079"
 ---
-<a name="caching-data-at-application-startup-c"></a>애플리케이션 시작 시 데이터 캐싱(C#)
-====================
+# <a name="caching-data-at-application-startup-c"></a>애플리케이션 시작 시 데이터 캐싱(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [PDF 다운로드](caching-data-at-application-startup-cs/_static/datatutorial60cs1.pdf)
@@ -119,7 +119,7 @@ Ve 누계 구현에서는 데이터베이스 테이블에서 Northwind는 기존
 > 이미 있는 경우는 `Global.asax` 프로젝트 항목 형식의 새 항목 추가 대화 상자에서 나열 되지 것입니다 하 고 전역 응용 프로그램 클래스에에서는 파일입니다.
 
 
-[![웹 응용 프로그램의 루트 디렉터리로 Global.asax 파일 추가](caching-data-at-application-startup-cs/_static/image4.png)](caching-data-at-application-startup-cs/_static/image3.png)
+[![Add 웹 응용 프로그램의 루트 디렉터리로 Global.asax 파일](caching-data-at-application-startup-cs/_static/image4.png)](caching-data-at-application-startup-cs/_static/image3.png)
 
 **그림 3**: 추가 된 `Global.asax` 파일을 웹 응용 프로그램의 루트 디렉터리 ([큰 이미지를 보려면 클릭](caching-data-at-application-startup-cs/_static/image5.png))
 
@@ -142,7 +142,7 @@ Ve 누계 구현에서는 데이터베이스 테이블에서 Northwind는 기존
 이것이 전부입니다! 응용 프로그램 시작 시 합니다 `LoadStaticCache()` 메서드는 BLL은에서 공급 업체 정보를 얻 및 정적 멤버 변수에 저장 (또는 원하는 캐시 저장에 사용 하 여 종료를 `StaticCache` 클래스). 이 동작을 확인 하려면에서 중단점을 설정 합니다 `Application_Start` 메서드 및 응용 프로그램을 실행 합니다. 응용 프로그램 시작 시이 중단점 note 합니다. 하지만 후속 요청 하지 않게 된 `Application_Start` 메서드를 실행 합니다.
 
 
-[![Application_Start 이벤트 처리기가 실행 되 고 확인 하도록 중단점을 사용 하 여](caching-data-at-application-startup-cs/_static/image7.png)](caching-data-at-application-startup-cs/_static/image6.png)
+[![UApplication_Start 이벤트 처리기가 실행 되 고 확인 하도록 중단점 se](caching-data-at-application-startup-cs/_static/image7.png)](caching-data-at-application-startup-cs/_static/image6.png)
 
 **그림 4**: 확인에 중단점을 사용 하는 합니다 `Application_Start` 이벤트 처리기가 실행 중인 ([큰 이미지를 보려면 클릭](caching-data-at-application-startup-cs/_static/image8.png))
 
@@ -158,12 +158,12 @@ Ve 누계 구현에서는 데이터베이스 테이블에서 Northwind는 기존
 열어서 시작 합니다 `AtApplicationStartup.aspx` 페이지에 `Caching` 폴더입니다. 설정 디자이너 도구 상자에서 GridView를 끌어 해당 `ID` 속성을 `Suppliers`입니다. 그런 다음 GridView의 스마트 태그에서 이라는 새 ObjectDataSource를 만들려면 선택 `SuppliersCachedDataSource`합니다. ObjectDataSource를 사용 하 여 구성 합니다 `StaticCache` 클래스의 `GetSuppliers()` 메서드.
 
 
-[![StaticCache 클래스를 사용 하는 ObjectDataSource 구성](caching-data-at-application-startup-cs/_static/image10.png)](caching-data-at-application-startup-cs/_static/image9.png)
+[![Configure StaticCache 클래스를 사용 하는 ObjectDataSource](caching-data-at-application-startup-cs/_static/image10.png)](caching-data-at-application-startup-cs/_static/image9.png)
 
 **그림 5**: ObjectDataSource를 사용 하 여 구성 합니다 `StaticCache` 클래스 ([큰 이미지를 보려면 클릭](caching-data-at-application-startup-cs/_static/image11.png))
 
 
-[![GetSuppliers() 메서드를 사용 하 여 캐시 된 공급자 데이터를 검색 합니다.](caching-data-at-application-startup-cs/_static/image13.png)](caching-data-at-application-startup-cs/_static/image12.png)
+[![U캐시 된 공급자 데이터를 검색 하는 GetSuppliers() 메서드 se](caching-data-at-application-startup-cs/_static/image13.png)](caching-data-at-application-startup-cs/_static/image12.png)
 
 **그림 6**: 사용 된 `GetSuppliers()` 캐시 된 공급자 데이터를 검색 하는 방법 ([큰 이미지를 보려면 클릭](caching-data-at-application-startup-cs/_static/image14.png))
 
@@ -176,7 +176,7 @@ Ve 누계 구현에서는 데이터베이스 테이블에서 Northwind는 기존
 그림 7에서는 브라우저를 통해 볼 때 페이지를 보여 줍니다. 출력은 동일한 데이터 BLL의에서 끌어온 했습니다 했습니다 `SuppliersBLL` 클래스를 하지만 사용 하 여를 `StaticCache` 클래스에는 응용 프로그램 시작 시 캐시 된 공급자 데이터를 반환 합니다. 중단점을 설정할 수는 `StaticCache` 클래스의 `GetSuppliers()` 이 동작을 확인 하는 방법입니다.
 
 
-[![캐시 된 공급자 데이터를 GridView에 표시 됩니다.](caching-data-at-application-startup-cs/_static/image16.png)](caching-data-at-application-startup-cs/_static/image15.png)
+[![TGridView에 표시 됩니다 그 캐시 된 공급자 데이터](caching-data-at-application-startup-cs/_static/image16.png)](caching-data-at-application-startup-cs/_static/image15.png)
 
 **그림 7**: 캐시 된 공급자 데이터를 GridView에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](caching-data-at-application-startup-cs/_static/image17.png))
 

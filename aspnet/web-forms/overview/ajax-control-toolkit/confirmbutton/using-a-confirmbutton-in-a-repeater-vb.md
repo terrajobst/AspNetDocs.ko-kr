@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 18c31709-3f9d-4d93-8b01-f1356bf610b4
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/confirmbutton/using-a-confirmbutton-in-a-repeater-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 38ac40776c2fdd14af046b5e13df0701c71a4ad0
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 4850493e7a16aa9364396d1bbd3fe3e0db0f47db
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57044320"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59388103"
 ---
-<a name="using-a-confirmbutton-in-a-repeater-vb"></a>Repeater에 ConfirmButton 사용(VB)
-====================
+# <a name="using-a-confirmbutton-in-a-repeater-vb"></a>Repeater에 ConfirmButton 사용(VB)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/8/6/d/86dea6c6-bb92-4fa6-aa14-f8c0f82100f5/ConfirmButton1.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/confirmbutton1VB.pdf)
@@ -47,7 +47,7 @@ Repeater 내에서이 데이터 원본을 사용할 수 있습니다. 일반적�
 [!code-aspx[Main](using-a-confirmbutton-in-a-repeater-vb/samples/sample3.aspx)]
 
 
-[![데이터 원본의 각 항목 옆에 있는 확인 단추를 표시 됩니다.](using-a-confirmbutton-in-a-repeater-vb/_static/image2.png)](using-a-confirmbutton-in-a-repeater-vb/_static/image1.png)
+[![T그 단추 표시 데이터 원본의 각 항목 옆에 있는 것을 확인](using-a-confirmbutton-in-a-repeater-vb/_static/image2.png)](using-a-confirmbutton-in-a-repeater-vb/_static/image1.png)
 
 데이터 원본의 각 항목 옆에 있는 확인 단추를 표시 됩니다 ([클릭 하 여 큰 이미지 보기](using-a-confirmbutton-in-a-repeater-vb/_static/image3.png))
 

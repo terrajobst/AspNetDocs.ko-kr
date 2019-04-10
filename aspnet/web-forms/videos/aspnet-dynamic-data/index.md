@@ -8,15 +8,15 @@ ms.date: 10/05/2011
 ms.assetid: cd51e6c4-6ff9-419d-8ac8-a39b79d63c78
 msc.legacyurl: /web-forms/videos/aspnet-dynamic-data
 msc.type: chapter
-ms.openlocfilehash: 2b9bf121e9eced28a91616a8d7515e1fb563f304
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 11fca6096a1ada5df95971f2c77c8e72660ad864
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57021880"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59400154"
 ---
-<a name="aspnet-dynamic-data"></a>ASP.NET Dynamic Data
-====================
+# <a name="aspnet-dynamic-data"></a>ASP.NET Dynamic Data
+
 > ASP.NET Dynamic Data를 사용 하 여 자동으로 데이터 액세스를 수행 하는 방법을 알 수 있는 스 캐 폴드 된 응용 프로그램을 만드는 방법입니다.
 
 

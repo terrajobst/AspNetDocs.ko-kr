@@ -8,15 +8,15 @@ ms.date: 06/26/2007
 ms.assetid: 4fb72f75-32ab-4bf7-a764-be20367be726
 msc.legacyurl: /web-forms/overview/data-access/working-with-batched-data/batch-deleting-vb
 msc.type: authoredcontent
-ms.openlocfilehash: ec3560f31f2def1801f9d09b3b583de6cdabc834
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b6a2450dd824396e1540b52395022f48e41aab70
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57054490"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59403053"
 ---
-<a name="batch-deleting-vb"></a>일괄 삭제(VB)
-====================
+# <a name="batch-deleting-vb"></a>일괄 삭제(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_65_VB.zip) 또는 [PDF 다운로드](batch-deleting-vb/_static/datatutorial65vb1.pdf)
@@ -31,7 +31,7 @@ ms.locfileid: "57054490"
 친숙 한 인터페이스를 삭제 하는 가장 일반적인 일괄 처리 중 하나를 사용 하 여 이미 온라인 전자 메일 클라이언트를 사용 하는 사람:는 해당 모든 선택 항목 삭제를 사용 하 여 표의 각 행에 있는 확인란 단추 (그림 1 참조). 이 자습서는 대신 짧은 때문에 우리 ve 아직 모든 웹 기반 인터페이스와 단일 원자성 작업으로 일련의 레코드를 삭제 하는 메서드를 만드는 이전 자습서에서 어려운 작업을 수행 합니다. 에 [확인란의 GridView 열 추가](../enhancing-the-gridview/adding-a-gridview-column-of-checkboxes-vb.md) GridView 및 확인란의 열을 사용 하 여 만든 자습서는 [트랜잭션 내에서 데이터베이스 수정 내용을 래핑](wrapping-database-modifications-within-a-transaction-vb.md) 자습서에서 메서드를 만들었습니다 트랜잭션 삭제를 사용 하는 BLL을 `List<T>` 의 `ProductID` 값입니다. 이 자습서에서는 기반으로 하 고 예제를 삭제 하는 작업 일괄 처리를 만들려면 이전 경험을 병합 합니다.
 
 
-[![각 행 포함 확인란](batch-deleting-vb/_static/image1.gif)](batch-deleting-vb/_static/image1.png)
+[![E확인란을 포함 하는 행 대 한 ach](batch-deleting-vb/_static/image1.gif)](batch-deleting-vb/_static/image1.png)
 
 **그림 1**: 각 행에 확인란이 포함 됩니다 ([클릭 하 여 큰 이미지 보기](batch-deleting-vb/_static/image2.png))
 
@@ -41,7 +41,7 @@ ms.locfileid: "57054490"
 인터페이스를 삭제 하는 일괄 처리를 이미 만들었기 때문 합니다 [확인란의 GridView 열 추가](../enhancing-the-gridview/adding-a-gridview-column-of-checkboxes-vb.md) 자습서에서는 단순히 복사할 수를 `BatchDelete.aspx` 처음부터 새로 만드는 대신 합니다. 열어서 시작 합니다 `BatchDelete.aspx` 페이지를 `BatchData` 폴더 및 `CheckBoxField.aspx` 페이지에서 `EnhancedGridView` 폴더. `CheckBoxField.aspx` 페이지에서 소스 뷰로 이동 하 고 태그 간의 복사는 `<asp:Content>` 그림 2에 나와 있는 것 처럼 태그.
 
 
-[![CheckBoxField.aspx의 선언적 태그를 클립보드에 복사](batch-deleting-vb/_static/image2.gif)](batch-deleting-vb/_static/image3.png)
+[![C프는 선언적 태그의 CheckBoxField.aspx 클립보드로](batch-deleting-vb/_static/image2.gif)](batch-deleting-vb/_static/image3.png)
 
 **그림 2**: 선언 태그 복사 `CheckBoxField.aspx` 클립보드로 ([큰 이미지를 보려면 클릭](batch-deleting-vb/_static/image4.png))
 
@@ -54,7 +54,7 @@ ms.locfileid: "57054490"
 선언적 태그 및 소스 코드를 복사한 후 잠시 테스트 `BatchDelete.aspx` 브라우저를 통해 확인 하 여 합니다. S 제품 이름, 범주 및 checkbox 함께 가격을 표시 하는 각 행을 사용 하 여 GridView에서 처음 10 개 제품을 나열 하는 GridView 표시 되어야 합니다. 다음 세 가지 단추가 있어야 합니다. 모두 선택 하 고, 모두 선택 취소 선택한 제품을 삭제 합니다. 모든 확인 단추를 클릭 하면 모든 확인란을 지웁니다 모두 선택 취소 하는 동안 모든 확인란을 선택 합니다. 나열 하는 메시지를 표시 선택 된 제품 삭제를 클릭 하 여 `ProductID` 선택한 제품에 대 한 값 하지만 제품을 실제로 삭제 하지 않습니다.
 
 
-[![CheckBoxField.aspx에서 인터페이스 BatchDeleting.aspx로 이동 되었습니다.](batch-deleting-vb/_static/image3.gif)](batch-deleting-vb/_static/image5.png)
+[![T그 CheckBoxField.aspx 인터페이스 BatchDeleting.aspx로 옮겨졌습니다](batch-deleting-vb/_static/image3.gif)](batch-deleting-vb/_static/image5.png)
 
 **그림 3**: 인터페이스 `CheckBoxField.aspx` 로 이동 되었습니다 `BatchDeleting.aspx` ([클릭 하 여 큰 이미지 보기](batch-deleting-vb/_static/image6.png))
 
@@ -82,12 +82,12 @@ ms.locfileid: "57054490"
 그림 4에서는 삭제에 대 한 수의 행을 선택한 후 GridView를 보여 줍니다. 그림 5는 선택 된 제품 삭제 버튼을 클릭 한 후에 즉시 화면을 보여줍니다. 그림 5에서는 `ProductID` GridView 아래에 있는 레이블에서 삭제 된 레코드의 값 표시 되 고 해당 행은 GridView에서 더 이상.
 
 
-[![선택 된 제품 삭제 됩니다.](batch-deleting-vb/_static/image4.gif)](batch-deleting-vb/_static/image7.png)
+[![T또한 선택한 제품을 삭제할 수](batch-deleting-vb/_static/image4.gif)](batch-deleting-vb/_static/image7.png)
 
 **그림 4**: 선택한 제품 삭제 됩니다 ([클릭 하 여 큰 이미지 보기](batch-deleting-vb/_static/image8.png))
 
 
-[![삭제할 제품 ProductID 값은 GridView 아래에 나열 된](batch-deleting-vb/_static/image5.gif)](batch-deleting-vb/_static/image9.png)
+[![T그 삭제할 제품 ProductID 값은 GridView 아래에 나열 된](batch-deleting-vb/_static/image5.gif)](batch-deleting-vb/_static/image9.png)
 
 **그림 5**: 삭제할 제품 `ProductID` 값은 GridView 아래에 나열 된 ([큰 이미지를 보려면 클릭](batch-deleting-vb/_static/image10.png))
 

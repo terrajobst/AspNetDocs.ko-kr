@@ -8,15 +8,15 @@ ms.date: 09/27/2013
 ms.assetid: 6dae249f-5ac6-4f6e-bc49-13bcd5a54a70
 msc.legacyurl: /aspnet/overview/owin-and-katana/getting-started-with-owin-and-katana
 msc.type: authoredcontent
-ms.openlocfilehash: 9920861da0e67d9304a944cacfb8ff8685267cd6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5b5ecfcc7561e3e7bc13e1c8819a548e73ae1ab3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57052010"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59408097"
 ---
-<a name="getting-started-with-owin-and-katana"></a>OWIN 및 Katana 시작
-====================
+# <a name="getting-started-with-owin-and-katana"></a>OWIN 및 Katana 시작
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 [.NET (OWIN)에 대 한 open Web Interface](http://owin.org/) .NET 웹 서버 및 웹 응용 프로그램 간의 추상화를 정의 합니다. 응용 프로그램에서 웹 서버를 분리 하 여 OWIN 쉽게.NET 웹 개발에 대 한 미들웨어를 만듭니다. 또한 OWIN 쉽게 다른 호스트에 포트 웹 응용 프로그램&#8212;예를 들어, Windows 서비스 또는 다른 프로세스에서 자체 호스트 합니다.

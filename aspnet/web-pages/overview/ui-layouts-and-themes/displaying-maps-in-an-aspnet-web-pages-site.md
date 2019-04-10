@@ -8,15 +8,15 @@ ms.date: 02/20/2014
 ms.assetid: b5c268dd-ca6a-4562-b94c-a220fcf01f58
 msc.legacyurl: /web-pages/overview/ui-layouts-and-themes/displaying-maps-in-an-aspnet-web-pages-site
 msc.type: authoredcontent
-ms.openlocfilehash: cde27c54b11ee91b193dffd61e3a354c6cf2449a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6e5c01c3602bd313ebca467b65563b7abfd7ffe2
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57024370"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59400102"
 ---
-<a name="displaying-maps-in-an-aspnet-web-pages-razor-site"></a>ASP.NET 웹 페이지 (Razor) 사이트에 맵 표시
-====================
+# <a name="displaying-maps-in-an-aspnet-web-pages-razor-site"></a>ASP.NET 웹 페이지 (Razor) 사이트에 맵 표시
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 문서에는 Bing, Google, 지도 보기, Yahoo를 제공 하는 서비스 매핑을 기반으로 하는 ASP.NET Web Pages (Razor) 웹 사이트의 페이지에서 대화형 지도 표시 하는 방법을 설명 합니다.

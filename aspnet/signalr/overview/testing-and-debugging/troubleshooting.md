@@ -8,15 +8,15 @@ ms.date: 06/10/2014
 ms.assetid: 4b559e6c-4fb0-4a04-9812-45cf08ae5779
 msc.legacyurl: /signalr/overview/testing-and-debugging/troubleshooting
 msc.type: authoredcontent
-ms.openlocfilehash: c9ccfa00d768f767cee7705372c157199572d2ed
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 3e3ba353184f94621ffc0fb1c50647caf1a89514
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422586"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59402767"
 ---
-<a name="signalr-troubleshooting"></a>SignalR 문제 해결
-====================
+# <a name="signalr-troubleshooting"></a>SignalR 문제 해결
+
 [Patrick Fletcher](https://github.com/pfletcher)
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
@@ -332,7 +332,7 @@ WebSocket 프로토콜을 사용 하지만 네트워크 프록시 요청 헤더�
 
 ### <a name="caller-state-cannot-be-accessed-from-clientscaller-in-visual-basic-or-in-a-strongly-typed-hub-conversion-from-type-taskof-object-to-type-string-is-not-valid-error"></a>호출자가 상태 Clients.Caller Visual Basic 또는 강력한 형식의 허브;에서 액세스할 수 없습니다. "'String' 형식으로 형식 'Task (Of Object)'로의 변환이 잘못 되었습니다." 오류
 
-Visual Basic에서 또는 강력한 형식의 허브의 호출자 상태에 액세스 하려면 사용 합니다 `Clients.CallerState` 속성 (SignalR 2.1에 도입 됨) 대신 `Clients.Caller`합니다.
+Visual basic에서 또는 강력한 형식의 허브의 호출자 상태에 액세스 하려면 사용 합니다 `Clients.CallerState` 속성 (SignalR 2.1에 도입 됨) 대신 `Clients.Caller`합니다.
 
 <a id="vs"></a>
 

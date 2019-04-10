@@ -119,6 +119,7 @@ DocFX 요구 사항:
   ```console
   docfx --serve
   ```
+
 * 브라우저에서 `http://localhost:8080/group1-dest/`로 이동합니다.
 
 ### <a name="mono-instructions"></a>Mono 지침
@@ -128,6 +129,7 @@ DocFX 요구 사항:
   ```console
   brew install mono
   ```
+
 * [최신 버전의 DocFX](https://github.com/dotnet/docfx/releases)를 다운로드합니다.
 * *$HOME/bin/docfx*에 보관 파일을 추출합니다.
 * bash 셸에서 **docfx**의 별칭 쌍을 만듭니다. 첫 번째 별칭은 문서를 작성하는 데 사용됩니다. 두 번째 별칭은 문서를 작성하고 서비스를 제공하는 데 사용됩니다.
@@ -136,11 +138,13 @@ DocFX 요구 사항:
   alias docfx='mono $HOME/bin/docfx/docfx.exe'
   alias docfx-serve='mono $HOME/bin/docfx/docfx.exe --serve'
   ```
+
 * 명령 셸에서 이동 합니다 *aspnet* 포함 된 폴더를 *docfx.json* 파일을 작성 하 고 해당 별칭을 통해 문서를 제공 하려면 다음 명령을 실행:
 
   ```console
   docfx-serve
   ```
+
 * 브라우저에서 `http://localhost:8080/group1-dest/`로 이동합니다.
 
 ## <a name="voice-and-tone"></a>어투 및 어조

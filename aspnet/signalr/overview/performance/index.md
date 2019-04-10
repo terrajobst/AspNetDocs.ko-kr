@@ -8,15 +8,15 @@ ms.date: 09/19/2014
 ms.assetid: fda81611-b67b-4c62-915e-8adc1924a401
 msc.legacyurl: /signalr/overview/performance
 msc.type: chapter
-ms.openlocfilehash: 1f5e0ec92a7babb41c45cb16166cc1060e824cfa
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6292ec084bbacdd41b5df63d9ac1017c43407b37
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57021850"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59402507"
 ---
-<a name="signalr-performance"></a>SignalR 성능
-====================
+# <a name="signalr-performance"></a>SignalR 성능
+
 > SignalR 응용 프로그램의 성능을 최대화 하는 방법.
 
 
@@ -25,5 +25,5 @@ ms.locfileid: "57021850"
 - [Azure Service Bus로 SignalR 규모 확장](scaleout-with-windows-azure-service-bus.md)
 - [Redis로 SignalR 규모 확장](scaleout-with-redis.md)
 - [SQL Server로 SignalR 규모 확장](scaleout-with-sql-server.md)
-- [크랭크를 사용하여 SignalR 연결 밀도 테스트](signalr-connection-density-testing-with-crank.md)
+- [Crank를 사용하여 SignalR 연결 밀도 테스트](signalr-connection-density-testing-with-crank.md)
 - [Azure 웹 역할에서 SignalR 성능 카운터 사용](using-signalr-performance-counters-in-an-azure-web-role.md)

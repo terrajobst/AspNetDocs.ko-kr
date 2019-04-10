@@ -8,15 +8,15 @@ ms.date: 10/05/2011
 ms.assetid: bac10aee-6731-4a0f-84d7-9eef5e560ae5
 msc.legacyurl: /web-forms/videos/net-4
 msc.type: chapter
-ms.openlocfilehash: e8565bc2914570eef982bbcc63a8497c2d38386a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ea11b464329a755d5625797327f5a0a3ccb0f426
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57019810"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59400589"
 ---
-<a name="net-4"></a>.NET 4
-====================
+# <a name="net-4"></a>.NET 4
+
 > 새 ASP.NET 기능에는.NET Framework 4에서 사용할 수 있습니다.
 
 
@@ -24,7 +24,7 @@ ms.locfileid: "57019810"
 
     - [Microsoft 클라이언트 쪽 컨트롤에 대한 명령적 JavaScript 구문](ajax/aspnet-4-quick-hit-imperative-javascript-syntax-for-microsoft-client-side-controls.md)
     - [ScriptLoader](ajax/aspnet-4-quick-hit-the-scriptloader.md)
-    - [Microsoft Ajax에 대한 JQuery 구문](ajax/aspnet-4-quick-hit-jquery-syntax-for-microsoft-ajax.md)
+    - [Microsoft Ajax에 대한 jQuery 구문](ajax/aspnet-4-quick-hit-jquery-syntax-for-microsoft-ajax.md)
     - [AJAX 데이터 템플릿](ajax/aspnet-4-quick-hit-ajax-data-templates.md)
 - [차트](chart/index.md)
 
@@ -36,7 +36,7 @@ ms.locfileid: "57019810"
     - [Web.Config 파일 정리](core/aspnet-4-quick-hit-clean-webconfig-files.md)
     - [예측 가능한 클라이언트 ID](core/aspnet-4-quick-hit-predictable-client-ids.md)
     - [HtmlEncoder 유틸리티 메서드](core/aspnet-4-quick-hit-the-htmlencoder-utility-method.md)
-- [Data](data/index.md)
+- [데이터](data/index.md)
 
     - [영구 GridView 행 선택](data/aspnet-4-quick-hit-persistent-gridview-row-selection.md)
 - [표시 컨트롤](markup-control/index.md)

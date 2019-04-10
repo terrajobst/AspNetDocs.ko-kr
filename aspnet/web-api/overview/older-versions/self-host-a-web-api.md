@@ -1,25 +1,26 @@
 ---
 uid: web-api/overview/older-versions/self-host-a-web-api
-title: 자체 호스팅 ASP.NET Web API 1 (C#) | Microsoft Docs
+title: ASP.NET Web API 1 자체 호스팅 (C#)-ASP.NET 4.x
 author: MikeWasson
-description: ASP.NET Web API에 IIS를 사용할 필요가 없습니다. 사용자 고유의 호스트 프로세스에서 web API를 자체 호스트할 수 있습니다. 이 자습서에서는 합 하는 콘솔 내에서 web API를 호스트 하는 방법을 보여 줍니다...
+description: 코드를 사용 하 여 자습서에는 콘솔 응용 프로그램 내에서 web API를 호스트 하는 방법을 보여 줍니다.
 ms.author: riande
 ms.date: 01/26/2012
+ms.custom: seoapril2019
 ms.assetid: be5ab1e2-4140-4275-ac59-ca82a1bac0c1
 msc.legacyurl: /web-api/overview/older-versions/self-host-a-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 63d192a6fa2aafef3770d5b0b97ec32e001b69db
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7c73bf4734f8ed8a1bf93595c0847f611ad9cc15
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57040760"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409605"
 ---
-<a name="self-host-aspnet-web-api-1-c"></a>자체 호스팅 ASP.NET Web API 1 (C#)
-====================
+# <a name="self-host-aspnet-web-api-1-c"></a>자체 호스팅 ASP.NET Web API 1 (C#)
+
 [Mike Wasson](https://github.com/MikeWasson)
 
-> ASP.NET Web API에 IIS를 사용할 필요가 없습니다. 사용자 고유의 호스트 프로세스에서 web API를 자체 호스트할 수 있습니다. 이 자습서에서는 콘솔 응용 프로그램 내에서 web API를 호스트 하는 방법을 보여 줍니다.
+> 이 자습서에서는 콘솔 응용 프로그램 내에서 web API를 호스트 하는 방법을 보여 줍니다. ASP.NET Web API에 IIS를 사용할 필요가 없습니다. 사용자 고유의 호스트 프로세스에서 web API를 자체 호스트할 수 있습니다. 
 > 
 > **새 응용 프로그램 자체 호스트 하는 Web API OWIN을 사용 해야 합니다.** 참조 [OWIN을 사용 하 여 ASP.NET Web API 2 자체 호스팅에](../hosting-aspnet-web-api/use-owin-to-self-host-web-api.md)입니다.
 > 

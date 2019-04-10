@@ -8,15 +8,15 @@ ms.date: 02/20/2005
 ms.assetid: f2339485-5d78-4c5e-8c0a-dc9b8a315345
 msc.legacyurl: /web-forms/overview/moving-to-aspnet-20/membership
 msc.type: authoredcontent
-ms.openlocfilehash: d4fab68555eeb27420e60a28aca2f2c0fb9a73e3
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: f3f8c649932682fd96e0640ddf4595c19c755909
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58421520"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59408188"
 ---
-<a name="membership"></a>멤버 자격입니다.
-====================
+# <a name="membership"></a>멤버 자격입니다.
+
 by [Microsoft](https://github.com/microsoft)
 
 > ASP.NET 멤버 자격에서 ASP.NET 폼 인증 모델의 성공을 기반 1.x 합니다. ASP.NET 폼 인증에는 ASP.NET 응용 프로그램에 로그인 폼을 통합 하 여 데이터베이스 또는 다른 데이터 저장소에 대해 사용자의 유효성을 검사 하는 편리한 방법을 제공 합니다.
@@ -74,7 +74,7 @@ ASP.NET SQL Server 설치 마법사는 마법사에서 지정한 인스턴스에
 
 그러면 아래에 표시 된 ASP.NET 웹 사이트 관리 도구를 시작 합니다. ASP.NET 웹 사이트 관리에는 손쉽게 응용 프로그램 설정을 관리할 수 있는 4 개의 탭 인터페이스입니다. 다음 탭을 사용할 수 있습니다.
 
-- **Home**
+- **홈**
 - **보안** 사용자, 역할 및 액세스를 구성 합니다.
 - **응용 프로그램** 응용 프로그램 설정을 구성 합니다.
 - **공급자** 구성 하 고 응용 프로그램 멤버 자격 공급자를 테스트 합니다.
