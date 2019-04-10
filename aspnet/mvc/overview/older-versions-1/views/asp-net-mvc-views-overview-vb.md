@@ -8,15 +8,15 @@ ms.date: 02/16/2008
 ms.assetid: c28ba88d-3a93-47f5-a306-049bd766714d
 msc.legacyurl: /mvc/overview/older-versions-1/views/asp-net-mvc-views-overview-vb
 msc.type: authoredcontent
-ms.openlocfilehash: a7f4afd70a17281123a7448a00896c186b9a00f8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 84af745d338e38ece438fa58d51d0929c7b92967
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57030370"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59408461"
 ---
-<a name="aspnet-mvc-views-overview-vb"></a>ASP.NET MVC 보기 개요(VB)
-====================
+# <a name="aspnet-mvc-views-overview-vb"></a>ASP.NET MVC 보기 개요(VB)
+
 [Stephen walther가](https://github.com/StephenWalther)
 
 > ASP.NET MVC 뷰를 무엇이 고 HTML 페이지에서와 어떻게 합니까? 이 자습서에서는 Stephen walther가 보기 소개 하 고 데이터 보기 및 보기 내에서 HTML 도우미 활용을 걸릴 수 있습니다 하는 방법을 보여 줍니다.
@@ -104,7 +104,7 @@ Response.write ()를 자주 호출 되므로 Microsoft 제공 바로 가기를 �
 [!code-aspx[Main](asp-net-mvc-views-overview-vb/samples/sample4.aspx)]
 
 
-[![새 프로젝트 대화 상자](asp-net-mvc-views-overview-vb/_static/image1.jpg)](asp-net-mvc-views-overview-vb/_static/image1.png)
+[![T새 프로젝트 대화 상자의 그](asp-net-mvc-views-overview-vb/_static/image1.jpg)](asp-net-mvc-views-overview-vb/_static/image1.png)
 
 **그림 01**: 표준 로그인 폼 ([클릭 하 여 큰 이미지 보기](asp-net-mvc-views-overview-vb/_static/image2.png))
 

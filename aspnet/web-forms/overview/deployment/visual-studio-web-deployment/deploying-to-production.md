@@ -8,15 +8,15 @@ ms.date: 02/15/2013
 ms.assetid: 416438a1-3b2f-4d27-bf53-6b76223c33bf
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-production
 msc.type: authoredcontent
-ms.openlocfilehash: f71d8311cbb1131d9c30c0bd9071a1c6c90f9976
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 19cda45ce1b425462ec491bcc86b7a0b76dec162
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57045850"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409800"
 ---
-<a name="aspnet-web-deployment-using-visual-studio-deploying-to-production"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 프로덕션 환경에 배포
-====================
+# <a name="aspnet-web-deployment-using-visual-studio-deploying-to-production"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 프로덕션 환경에 배포
+
 [Tom Dykstra](https://github.com/tdykstra)
 
 [시작 프로젝트 다운로드](http://go.microsoft.com/fwlink/p/?LinkId=282627)
@@ -276,7 +276,7 @@ A *.pubxml* 파일 특정 게시 프로필에 관련 된 설정을 포함 합니
 
     ![프로덕션에 게시 되도록 파일의 미리 보기](deploying-to-production/_static/image14.png)
 
-    복사 될 파일의 목록을 검토 합니다. 모든 합니다 *.cs* 파일을 포함 하 여 *. aspx.cs*를 *. aspx.designer.cs*, *Master.cs*, 및  *Master.designer.cs* 파일 생략 됩니다. 로 컴파일 되었으면이 모든 코드를 *ContosoUniversity.dll* 및 *ContosUniversity.pdb* 에서 볼 수 있는 파일을 *bin* 폴더. 때문에 합니다 *.dll* 하는 데 필요한 응용 프로그램에 이전에 지정한 응용 프로그램을 실행 하는 데 필요한 파일만 배포 해야 하는 실행, 아니요 *.cs* 대상에 복사 된 파일 환경입니다. 합니다 *obj* 폴더 및 *ContosoUniversity.csproj* 하 고 *. csproj.user* 파일 같은 이유로 생략 됩니다.
+    복사 될 파일의 목록을 검토 합니다. 모든 합니다 *.cs* 파일을 포함 하 여 *. aspx.cs*를 *. aspx.designer.cs*, *Master.cs*, 및  *Master.designer.cs* 파일 생략 됩니다. 로 컴파일 되었으면이 모든 코드를 *ContosoUniversity.dll* 및 *ContosoUniversity.pdb* 에서 볼 수 있는 파일을 *bin* 폴더. 때문에 합니다 *.dll* 하는 데 필요한 응용 프로그램에 이전에 지정한 응용 프로그램을 실행 하는 데 필요한 파일만 배포 해야 하는 실행, 아니요 *.cs* 대상에 복사 된 파일 환경입니다. 합니다 *obj* 폴더 및 *ContosoUniversity.csproj* 하 고 *. csproj.user* 파일 같은 이유로 생략 됩니다.
 
     클릭 **게시** 프로덕션 환경에 배포 합니다.
 2. 스테이징에 사용 되는 동일한 절차를 수행 하는 프로덕션 환경에서 테스트 합니다.

@@ -8,15 +8,15 @@ ms.date: 03/31/2010
 ms.assetid: 552d2d50-fe73-4153-9a7f-2b379bec4625
 msc.legacyurl: /web-forms/overview/data-access/masterdetail/master-detail-filtering-across-two-pages-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 69e5f010507784229360f71cf6f570b342f5ff46
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 451f9f2698780650c32e453b78b11f6babed88de
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57036880"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59405289"
 ---
-<a name="masterdetail-filtering-across-two-pages-c"></a>두 페이지에 걸쳐 마스터/세부 정보 필터링(C#)
-====================
+# <a name="masterdetail-filtering-across-two-pages-c"></a>두 페이지에 걸쳐 마스터/세부 정보 필터링(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/4/6/3/463cf87c-4724-4cbc-b7b5-3f866f43ba50/ASPNET_Data_Tutorial_9_CS.exe) 또는 [PDF 다운로드](master-detail-filtering-across-two-pages-cs/_static/datatutorial09cs1.pdf)
@@ -56,12 +56,12 @@ ms.locfileid: "57036880"
 사용 하 여 합니다 `SupplierListMaster.aspx` 하 고 `ProductsForSupplierDetails.aspx` 공급 업체의 GridView를 만들려면 만든 페이지, 다음 단계는 `SupplierListMaster.aspx`합니다. 페이지에 GridView를 추가 하 고 새 ObjectDataSource에 바인딩하십시오. 이 ObjectDataSource를 사용 해야 합니다 `SuppliersBLL` 클래스의 `GetSuppliers()` 모든 공급자를 반환 하는 방법입니다.
 
 
-[![SuppliersBLL 클래스를 선택 합니다.](master-detail-filtering-across-two-pages-cs/_static/image3.png)](master-detail-filtering-across-two-pages-cs/_static/image2.png)
+[![SSuppliersBLL 클래스 선택](master-detail-filtering-across-two-pages-cs/_static/image3.png)](master-detail-filtering-across-two-pages-cs/_static/image2.png)
 
 **그림 2**: 선택 된 `SuppliersBLL` 클래스 ([큰 이미지를 보려면 클릭](master-detail-filtering-across-two-pages-cs/_static/image4.png))
 
 
-[![GetSuppliers() 메서드를 사용 하는 ObjectDataSource 구성](master-detail-filtering-across-two-pages-cs/_static/image6.png)](master-detail-filtering-across-two-pages-cs/_static/image5.png)
+[![Configure GetSuppliers() 메서드를 사용 하는 ObjectDataSource](master-detail-filtering-across-two-pages-cs/_static/image6.png)](master-detail-filtering-across-two-pages-cs/_static/image5.png)
 
 **그림 3**: ObjectDataSource를 사용 하 여 구성 합니다 `GetSuppliers()` 메서드 ([큰 이미지를 보려면 클릭](master-detail-filtering-across-two-pages-cs/_static/image7.png))
 
@@ -71,7 +71,7 @@ ms.locfileid: "57036880"
 이를 위해 추가 된 [HyperLinkField](https://msdn.microsoft.com/library/system.web.ui.webcontrols.hyperlinkfield.aspx) GridView에 각 GridView 행에 하이퍼링크 추가 합니다. GridView의 스마트 태그에서 열 편집 링크를 클릭 하 여 시작 합니다. 다음으로 HyperLinkField을 왼쪽 위에 있는 목록에서 선택한는 HyperLinkField GridView의 필드 목록에 포함할 추가 클릭 합니다.
 
 
-[![GridView에는 HyperLinkField 추가](master-detail-filtering-across-two-pages-cs/_static/image9.png)](master-detail-filtering-across-two-pages-cs/_static/image8.png)
+[![AGridView에 HyperLinkField dd](master-detail-filtering-across-two-pages-cs/_static/image9.png)](master-detail-filtering-across-two-pages-cs/_static/image8.png)
 
 **그림 4**: GridView에는 HyperLinkField 추가 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-across-two-pages-cs/_static/image10.png))
 
@@ -79,7 +79,7 @@ ms.locfileid: "57036880"
 동일한 텍스트를 사용 하 여 HyperLinkField를 구성할 수 있습니다 또는 URL 각 GridView 행에 있는 링크를 값 이나 각 특정 행에 바인딩된 데이터 값에 이러한 값을 기본 수 있습니다. 모든 행에 값을 정적 지정 하려면 HyperLinkField의을 사용 합니다 `Text` 또는 `NavigateUrl` 속성입니다. 모든 행에 대해 동일한 링크 텍스트, 것 이므로 설정 HyperLinkField의 `Text` 보기 제품에는 속성입니다.
 
 
-[![제품 보기로 HyperLinkField의 Text 속성 설정](master-detail-filtering-across-two-pages-cs/_static/image12.png)](master-detail-filtering-across-two-pages-cs/_static/image11.png)
+[![S예: 제품 보기 HyperLinkField의 Text 속성](master-detail-filtering-across-two-pages-cs/_static/image12.png)](master-detail-filtering-across-two-pages-cs/_static/image11.png)
 
 **그림 5**: HyperLinkField의 설정 `Text` 제품 보기 속성 ([큰 이미지를 보려면 클릭](master-detail-filtering-across-two-pages-cs/_static/image13.png))
 
@@ -91,7 +91,7 @@ ms.locfileid: "57036880"
 이 자습서를 적용 하면를 설정 해야 합니다 `DataNavigateUrlFields` 속성을 `SupplierID`데이터 값 필드를 행 기준에 따라 사용자 지정 해야 하는 것 이므로, 및 `DataNavigateUrlFormatString` 속성을 `ProductsForSupplierDetails.aspx?SupplierID={0}`합니다.
 
 
-[![SupplierID에 따라 적절 한 링크 URL을 포함 하도록 HyperLinkField 구성](master-detail-filtering-across-two-pages-cs/_static/image15.png)](master-detail-filtering-across-two-pages-cs/_static/image14.png)
+[![C포함할 적절 한 링크 URL을 기반으로 the SupplierID HyperLinkField onfigure](master-detail-filtering-across-two-pages-cs/_static/image15.png)](master-detail-filtering-across-two-pages-cs/_static/image14.png)
 
 **그림 6**: 적절 한 링크 URL을 기반으로 포함 하도록 HyperLinkField를 구성 합니다 `SupplierID` ([큰 이미지를 보려면 클릭](master-detail-filtering-across-two-pages-cs/_static/image16.png))
 
@@ -104,7 +104,7 @@ HyperLinkField를 추가한 후 자유롭게 사용자 지정 하 고 GridView�
 보려는 잠시는 `SupplierListMaster.aspx` 브라우저를 통해 페이지입니다. 그림 7에서 알 수 있듯이, 페이지를 현재 모두 나열 제품 보기 링크를 포함 한 공급 업체의 합니다. 제품 보기 클릭 하면 링크가 이동 됩니다 `ProductsForSupplierDetails.aspx`공급자를 따라 전달 `SupplierID` 쿼리 문자열에서.
 
 
-[![각 공급 업체 행 보기 제품 링크를 포함합니다.](master-detail-filtering-across-two-pages-cs/_static/image18.png)](master-detail-filtering-across-two-pages-cs/_static/image17.png)
+[![E보기 제품 링크를 포함 하는 공급 업체 행 대 한 ach](master-detail-filtering-across-two-pages-cs/_static/image18.png)](master-detail-filtering-across-two-pages-cs/_static/image17.png)
 
 **그림 7**: 보기 제품 링크를 포함 하는 각 공급 업체 행 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-across-two-pages-cs/_static/image19.png))
 
@@ -114,17 +114,17 @@ HyperLinkField를 추가한 후 자유롭게 사용자 지정 하 고 GridView�
 이 시점에서 `SupplierListMaster.aspx` 페이지에서 사용자가 보내는 `ProductsForSupplierDetails.aspx`, 선택한 공급자의 전달 `SupplierID` 쿼리 문자열에서. 자습서의 마지막 단계에서 GridView에서 제품을 표시 하는 `ProductsForSupplierDetails.aspx` 해당 `SupplierID` equals는 `SupplierID` 쿼리 문자열에 전달 합니다. 이 시작 하기 위한 GridView를 추가 하 여 수행 하는 `ProductsForSupplierDetails.aspx` 라는 새 ObjectDataSource 컨트롤을 사용 하 여 페이지 `ProductsBySupplierDataSource` 를 호출 하는 합니다 `GetProductsBySupplierID(supplierID)` 메서드에서 `ProductsBLL` 클래스.
 
 
-[![ProductsBySupplierDataSource 라는 새 ObjectDataSource를 추가 합니다.](master-detail-filtering-across-two-pages-cs/_static/image21.png)](master-detail-filtering-across-two-pages-cs/_static/image20.png)
+[![A새 ObjectDataSource 라는 ProductsBySupplierDataSource dd](master-detail-filtering-across-two-pages-cs/_static/image21.png)](master-detail-filtering-across-two-pages-cs/_static/image20.png)
 
 **그림 8**: 추가 명명 된 새 ObjectDataSource `ProductsBySupplierDataSource` ([큰 이미지를 보려면 클릭](master-detail-filtering-across-two-pages-cs/_static/image22.png))
 
 
-[![ProductsBLL 클래스를 선택 합니다.](master-detail-filtering-across-two-pages-cs/_static/image24.png)](master-detail-filtering-across-two-pages-cs/_static/image23.png)
+[![SProductsBLL 클래스 선택](master-detail-filtering-across-two-pages-cs/_static/image24.png)](master-detail-filtering-across-two-pages-cs/_static/image23.png)
 
 **그림 9**: 선택 된 `ProductsBLL` 클래스 ([큰 이미지를 보려면 클릭](master-detail-filtering-across-two-pages-cs/_static/image25.png))
 
 
-[![GetProductsBySupplierID(supplierID) 메서드를 호출 하는 ObjectDataSource가](master-detail-filtering-across-two-pages-cs/_static/image27.png)](master-detail-filtering-across-two-pages-cs/_static/image26.png)
+[![HObjectDataSource Invoke GetProductsBySupplierID(supplierID) 메서드 ave](master-detail-filtering-across-two-pages-cs/_static/image27.png)](master-detail-filtering-across-two-pages-cs/_static/image26.png)
 
 **그림 10**: ObjectDataSource 호출 있어야 합니다 `GetProductsBySupplierID(supplierID)` 메서드 ([큰 이미지를 보려면 클릭](master-detail-filtering-across-two-pages-cs/_static/image28.png))
 
@@ -132,7 +132,7 @@ HyperLinkField를 추가한 후 자유롭게 사용자 지정 하 고 GridView�
 데이터 소스 구성 마법사의 마지막 단계에서는의 원본을 제공 합니다 `GetProductsBySupplierID(supplierID)` 메서드의 *`supplierID`* 매개 변수입니다. Querystring 값을 사용 하려면 쿼리 문자열 매개 변수 원본을 설정 하 고 QueryStringField 텍스트 상자에 사용할 쿼리 문자열 값의 이름을 입력 (`SupplierID`).
 
 
-[![SupplierID를 SupplierID Querystring 값에서 매개 변수 값을 채웁니다](master-detail-filtering-across-two-pages-cs/_static/image30.png)](master-detail-filtering-across-two-pages-cs/_static/image29.png)
+[![PsupplierID SupplierID Querystring 값에서 매개 변수 값 채우기](master-detail-filtering-across-two-pages-cs/_static/image30.png)](master-detail-filtering-across-two-pages-cs/_static/image29.png)
 
 **그림 11**: 채울 합니다 *`supplierID`* 에서 매개 변수 값을 `SupplierID` Querystring 값 ([전체 크기 이미지를 보려면 클릭](master-detail-filtering-across-two-pages-cs/_static/image31.png))
 
@@ -140,7 +140,7 @@ HyperLinkField를 추가한 후 자유롭게 사용자 지정 하 고 GridView�
 이것이 전부입니다! 그림 12는 `ProductsForSupplierDetails.aspx` 페이지에서 도쿄 Traders 링크를 클릭 하면 방문 하면 `SupplierListMaster.aspx`합니다.
 
 
-[![나와 도쿄 Traders에서 제품 제공](master-detail-filtering-across-two-pages-cs/_static/image33.png)](master-detail-filtering-across-two-pages-cs/_static/image32.png)
+[![T도쿄 Traders에서 제공 하는 제품 그 나와](master-detail-filtering-across-two-pages-cs/_static/image33.png)](master-detail-filtering-across-two-pages-cs/_static/image32.png)
 
 **그림 12**: 나와 도쿄 Traders에서 제공 하는 제품 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-across-two-pages-cs/_static/image34.png))
 
@@ -152,12 +152,12 @@ HyperLinkField를 추가한 후 자유롭게 사용자 지정 하 고 GridView�
 GridView 제품 위에 FormView를 추가 하 여 시작 합니다. 라는 새 ObjectDataSource 컨트롤을 만들 `SuppliersDataSource` 를 호출 하는 `SuppliersBLL` 클래스의 `GetSupplierBySupplierID(supplierID)` 메서드.
 
 
-[![SuppliersBLL 클래스를 선택 합니다.](master-detail-filtering-across-two-pages-cs/_static/image36.png)](master-detail-filtering-across-two-pages-cs/_static/image35.png)
+[![SSuppliersBLL 클래스 선택](master-detail-filtering-across-two-pages-cs/_static/image36.png)](master-detail-filtering-across-two-pages-cs/_static/image35.png)
 
 **그림 13**: 선택 된 `SuppliersBLL` 클래스 ([큰 이미지를 보려면 클릭](master-detail-filtering-across-two-pages-cs/_static/image37.png))
 
 
-[![GetSupplierBySupplierID(supplierID) 메서드를 호출 하는 ObjectDataSource가](master-detail-filtering-across-two-pages-cs/_static/image39.png)](master-detail-filtering-across-two-pages-cs/_static/image38.png)
+[![HObjectDataSource Invoke GetSupplierBySupplierID(supplierID) 메서드 ave](master-detail-filtering-across-two-pages-cs/_static/image39.png)](master-detail-filtering-across-two-pages-cs/_static/image38.png)
 
 **그림 14**: ObjectDataSource 호출 있어야 합니다 `GetSupplierBySupplierID(supplierID)` 메서드 ([큰 이미지를 보려면 클릭](master-detail-filtering-across-two-pages-cs/_static/image40.png))
 
@@ -165,7 +165,7 @@ GridView 제품 위에 FormView를 추가 하 여 시작 합니다. 라는 새 O
 와 마찬가지로 합니다 `ProductsBySupplierDataSource`가 합니다 *`supplierID`* 매개 변수 값이 할당를 `SupplierID` querystring 값.
 
 
-[![SupplierID를 SupplierID Querystring 값에서 매개 변수 값을 채웁니다](master-detail-filtering-across-two-pages-cs/_static/image42.png)](master-detail-filtering-across-two-pages-cs/_static/image41.png)
+[![PsupplierID SupplierID Querystring 값에서 매개 변수 값 채우기](master-detail-filtering-across-two-pages-cs/_static/image42.png)](master-detail-filtering-across-two-pages-cs/_static/image41.png)
 
 **그림 15**: 채울 합니다 *`supplierID`* 에서 매개 변수 값을 `SupplierID` Querystring 값 ([전체 크기 이미지를 보려면 클릭](master-detail-filtering-across-two-pages-cs/_static/image43.png))
 
@@ -180,7 +180,7 @@ GridView 제품 위에 FormView를 추가 하 여 시작 합니다. 라는 새 O
 그림 16의 스크린 샷을 보여 줍니다는 `ProductsForSupplierDetails.aspx` 페이지 위에서 자세히 설명 하는 공급 업체 정보에 포함 되었습니다.
 
 
-[![제품 목록에는 공급자에 대 한 요약이 포함 됩니다.](master-detail-filtering-across-two-pages-cs/_static/image45.png)](master-detail-filtering-across-two-pages-cs/_static/image44.png)
+[![T제품 목록을 그 공급자는에 대 한 요약 포함](master-detail-filtering-across-two-pages-cs/_static/image45.png)](master-detail-filtering-across-two-pages-cs/_static/image44.png)
 
 **그림 16**: 공급자는에 대 한 요약을 포함 하는 제품 목록이 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-across-two-pages-cs/_static/image46.png))
 
@@ -190,7 +190,7 @@ GridView 제품 위에 FormView를 추가 하 여 시작 합니다. 라는 새 O
 사용자를 개선 하기 위해이 보고서에 있는 환경을 가지는 있도록 있어 추가 `ProductsForSupplierDetails.aspx` 페이지입니다. 사용자에서 이동할 수는 유일한 방법은 현재는 `ProductsForSupplierDetails.aspx` 공급 업체의 목록으로 돌아가기는 페이지는 브라우저의 뒤로 단추를 클릭 합니다. 하이퍼링크 컨트롤을 추가 해 보겠습니다 합니다 `ProductsForSupplierDetails.aspx` 에 다시 연결 하는 페이지 `SupplierListMaster.aspx`, 마스터 목록으로 돌아가려면 사용자에 대 한 다른 방법을 제공 합니다.
 
 
-[![SupplierListMaster.aspx에 사용자를 다시 수행 하는 하이퍼링크 컨트롤 추가](master-detail-filtering-across-two-pages-cs/_static/image48.png)](master-detail-filtering-across-two-pages-cs/_static/image47.png)
+[![A하이퍼링크 컨트롤을 하는 데 다시 사용자 SupplierListMaster.aspx dd](master-detail-filtering-across-two-pages-cs/_static/image48.png)](master-detail-filtering-across-two-pages-cs/_static/image47.png)
 
 **그림 17**: 다시 사용자 하이퍼링크 컨트롤을 추가 `SupplierListMaster.aspx` ([큰 이미지를 보려면 클릭](master-detail-filtering-across-two-pages-cs/_static/image49.png))
 
@@ -200,7 +200,7 @@ GridView 제품 위에 FormView를 추가 하 여 시작 합니다. 라는 새 O
 기본적으로 Northwinds 데이터베이스에 있는 모든 공급자는 하나 이상의 제품을 제공합니다. 그러나이 자습서를 위해 수동으로 수정 했습니다는 `Products` 테이블 Escargots Nouveaux 공급자 제품을 사용 하 여 연결 되어 있지 않습니다. 그림 18이 변경 후 Escargots Nouveaux에 대 한 세부 정보 페이지를 보여 줍니다.
 
 
-[![사용자가 공급자가 모든 제품을 제공 하지 않는 내용 알림이 표시 됩니다.](master-detail-filtering-across-two-pages-cs/_static/image51.png)](master-detail-filtering-across-two-pages-cs/_static/image50.png)
+[![Users는 공급자 제품을 제공 하지 않습니다는 바탕는](master-detail-filtering-across-two-pages-cs/_static/image51.png)](master-detail-filtering-across-two-pages-cs/_static/image50.png)
 
 **그림 18**: 사용자가 공급자가 모든 제품을 제공 하지 않는 내용 알림이 표시 됩니다 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-across-two-pages-cs/_static/image52.png))
 

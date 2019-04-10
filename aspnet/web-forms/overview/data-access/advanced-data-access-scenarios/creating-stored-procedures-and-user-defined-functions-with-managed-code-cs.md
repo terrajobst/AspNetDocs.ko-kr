@@ -8,15 +8,15 @@ ms.date: 08/03/2007
 ms.assetid: 213eea41-1ab4-4371-8b24-1a1a66c515de
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/creating-stored-procedures-and-user-defined-functions-with-managed-code-cs
 msc.type: authoredcontent
-ms.openlocfilehash: fb4a867d5868e8000fcd10130401a9e169b6f49f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a6d6dc7b45d2891d3124794bf7b10f3a7d065130
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57057900"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59392445"
 ---
-<a name="creating-stored-procedures-and-user-defined-functions-with-managed-code-c"></a>관리 코드를 사용하여 저장 프로시저 및 사용자 정의 함수 만들기(C#)
-====================
+# <a name="creating-stored-procedures-and-user-defined-functions-with-managed-code-c"></a>관리 코드를 사용하여 저장 프로시저 및 사용자 정의 함수 만들기(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_75_CS.zip) 또는 [PDF 다운로드](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/datatutorial75cs1.pdf)
@@ -59,7 +59,7 @@ SQL Server Management Studio를 시작 합니다. 그림 1에서 알 수 있듯�
 Northwind 데이터베이스에 연결 해야 합니다 `DataFiles` 폴더 (또는 아무 곳에 나 있습니다 옮기지) SQL Server 2005 Express Edition 데이터베이스 인스턴스에 있습니다. 데이터베이스 폴더 단추로 클릭 하 고 상황에 맞는 메뉴에서 연결 옵션을 선택 합니다. 데이터베이스 연결 대화 상자가 표시 됩니다. 추가 단추 클릭, 적절 한 드릴다운할지 `NORTHWND.MDF` 파일과 확인을 클릭 합니다. 이 시점에서 화면은 그림 2와 비슷하게 표시 됩니다.
 
 
-[![해당 데이터베이스 인스턴스에 연결](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image3.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image2.png)
+[![C해당 데이터베이스 인스턴스에 끊기](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image3.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image2.png)
 
 **그림 2**: 해당 데이터베이스 인스턴스에 연결 ([클릭 하 여 큰 이미지 보기](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image4.png))
 
@@ -87,7 +87,7 @@ SQL Server 2005에서 관리 되는 저장된 프로시저 또는 Udf를 만드�
 Visual Studio를 열어 시작 합니다. 파일 메뉴에서 새 프로젝트 대화 상자를 표시 하는 새 프로젝트를 선택 상자 (그림 4 참조). 데이터베이스 프로젝트 유형으로 드릴 하 고 그런 다음 오른쪽에 나열 된 템플릿에서 새 SQL Server 프로젝트를 만들려면 선택 합니다. 이 프로젝트의 이름을 하기로 `ManagedDatabaseConstructs` 이라는 솔루션 내에 배치 하 고 `Tutorial75`입니다.
 
 
-[![새 SQL Server 프로젝트 만들기](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image7.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image6.png)
+[![C새 SQL Server 프로젝트 reate](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image7.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image6.png)
 
 **그림 4**: 새 SQL Server 프로젝트를 만듭니다 ([클릭 하 여 큰 이미지 보기](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image8.png))
 
@@ -136,7 +136,7 @@ Northwind 데이터베이스에 관리 되는 저장된 프로시저를 추가 �
 S를 모든 단종 된 제품을 반환 하는 저장된 프로시저를 추가 하 여 시작할 수 있습니다. 새 저장된 프로시저 파일의 이름을 `GetDiscontinuedProducts.cs`입니다.
 
 
-[![GetDiscontinuedProducts.cs 라는 새 저장된 프로시저를 추가 합니다.](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image13.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image12.png)
+[![Add는 새 저장 프로시저 라는 GetDiscontinuedProducts.cs](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image13.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image12.png)
 
 **그림 8**: 라는 추가 하는 새 저장 프로시저 `GetDiscontinuedProducts.cs` ([큰 이미지를 보려면 클릭](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image14.png))
 
@@ -173,7 +173,7 @@ S를 모든 단종 된 제품을 반환 하는 저장된 프로시저를 추가 
 위의 쿼리를 실행 하려면 도구 모음에서 실행 아이콘을 클릭 합니다.
 
 
-[![Northwind 데이터베이스의 호환성 수준을 업데이트합니다](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image16.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image15.png)
+[![UNorthwind 데이터베이스 호환성 수준이 s 업데이트 ()](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image16.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image15.png)
 
 **그림 9**: Northwind 데이터베이스 호환성 수준이 s 업데이트 ([클릭 하 여 큰 이미지 보기](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image17.png))
 
@@ -201,7 +201,7 @@ SQL Server Management Studio로 돌아가서, 개체 탐색기에서 Northwind �
 검사 Northwind의 데이터베이스 구성 정보를 입력 하 고 명령을 실행 `exec sp_configure` 쿼리 창에서. 이 설정을 사용 하도록 설정 하는 clr 현재 0으로 설정 되어 있는지 보여 줍니다.
 
 
-[![Clr 사용 되도록 설정 되어 현재 설정 0](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image21.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image20.png)
+[![T그리고 clr을 사용 하도록 설정 되어 현재 설정 0](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image21.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image20.png)
 
 **그림 12**: Clr 사용 되도록 설정 되어 현재 설정 0 ([전체 크기 이미지를 보려면 클릭](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image22.png))
 
@@ -216,7 +216,7 @@ SQL Server Management Studio로 돌아가서, 개체 탐색기에서 Northwind �
 Clr 사용 구성 완료를 사용 하 여 관리 되는 실행 준비가 기꺼이 `GetDiscontinuedProducts` 저장 프로시저입니다. 쿼리 창에서 입력 하 고 명령을 실행 합니다 `exec` `GetDiscontinuedProducts`합니다. 해당 관리 되는 코드를 사용 하면 저장된 프로시저를 호출 합니다 `GetDiscontinuedProducts` 메서드를 실행 합니다. 이 코드가 실행을 `SELECT` 쿼리 지원 및 SQL Server Management Studio에서이 인스턴스는 호출 응용 프로그램에이 데이터를 반환 하는 모든 제품을 반환 합니다. Management Studio는 이러한 결과 수신 및 결과 창에 표시 합니다.
 
 
-[![모든 저장된 프로시저 반환 GetDiscontinuedProducts 단종 된 제품만](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image24.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image23.png)
+[![T그 GetDiscontinuedProducts 저장 프로시저 반환 모든 지원 되지 않는 제품](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image24.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image23.png)
 
 **그림 13**: 합니다 `GetDiscontinuedProducts` 저장 프로시저 반환 모든 지원 되지 않는 제품 ([큰 이미지를 보려면 클릭](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image25.png))
 
@@ -239,7 +239,7 @@ Clr 사용 구성 완료를 사용 하 여 관리 되는 실행 준비가 기꺼
 이 코드를 추가한 후 SQL Server 프로젝트를 다시 배포 합니다. 다음으로, SQL Server Management Studio로 돌아가서 고 Stored Procedures 폴더를 새로 고칩니다. 새 항목을 표시 해야 `GetProductsWithPriceLessThan`합니다. 쿼리 창에서 입력 하 고 명령을 실행 `exec GetProductsWithPriceLessThan 25`는 그림 14와 같이 $25 미만의 모든 제품 목록 됩니다.
 
 
-[![제품에서 25 달러 표시 됩니다.](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image27.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image26.png)
+[![Products 25 달러에서 표시 되는](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image27.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image26.png)
 
 **그림 14**: 제품에서 25 달러 표시 됩니다 ([클릭 하 여 큰 이미지 보기](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image28.png))
 
@@ -257,7 +257,7 @@ Clr 사용 구성 완료를 사용 하 여 관리 되는 실행 준비가 기꺼
 새 메서드 추가 이전 자습서에서 많이 사용 했습니다는 TableAdapter 쿼리 구성 마법사를 시작 합니다. 첫 번째 단계에서는 TableAdapter는 데이터베이스에 액세스 해야 하는 방법을 지정 하려면: 기존 또는 새 저장된 프로시저 또는 임시 SQL 문을 통해. 이미 생성 하 고 등록 하므로 `GetDiscontinuedProducts` 프로시저 옵션을 저장 하 고 다음을 누릅니다 사용 하 여 기존 데이터베이스를 사용 하 여 관리 되는 저장된 프로시저를 선택 합니다.
 
 
-[![기존 저장된 프로시저 옵션 사용 선택](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image30.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image29.png)
+[![C설치할 사용 하 여 기존 저장 프로시저 옵션](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image30.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image29.png)
 
 **그림 15**: 저장 된 프로시저 옵션을 사용 하 여 기존 선택 ([클릭 하 여 큰 이미지 보기](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image31.png))
 
@@ -265,7 +265,7 @@ Clr 사용 구성 완료를 사용 하 여 관리 되는 실행 준비가 기꺼
 다음 화면 메서드가 호출할 저장된 프로시저에 대 한 요청입니다. 선택 된 `GetDiscontinuedProducts` 드롭 다운 목록에서 저장된 프로시저를 관리 하 고 다음을 누릅니다.
 
 
-[![GetDiscontinuedProducts 관리 저장된 프로시저 선택](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image33.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image32.png)
+[![SGetDiscontinuedProducts 관리 되는 저장 프로시저 선택](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image33.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image32.png)
 
 **그림 16**: 선택 된 `GetDiscontinuedProducts` 관리 되는 저장 프로시저 ([큰 이미지를 보려면 클릭](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image34.png))
 
@@ -273,7 +273,7 @@ Clr 사용 구성 완료를 사용 하 여 관리 되는 실행 준비가 기꺼
 우리는 다음 저장된 프로시저가 행, 단일 값 또는 nothing을 반환 하는지 여부를 지정 하 라는 메시지가 표시 됩니다. 이후 `GetDiscontinuedProducts` 집합을 반환 합니다 지원 되지 않는 제품 행의 첫 번째 옵션 (테이블 형식 데이터)를 선택 하 고 다음을 클릭 합니다.
 
 
-[![테이블 형식 데이터 옵션을 선택 합니다.](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image36.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image35.png)
+[![S테이블 형식 데이터 옵션을 선택](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image36.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image35.png)
 
 **그림 17**: 테이블 형식 데이터 옵션을 선택 ([클릭 하 여 큰 이미지 보기](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image37.png))
 
@@ -281,7 +281,7 @@ Clr 사용 구성 완료를 사용 하 여 관리 되는 실행 준비가 기꺼
 마법사의 마지막 화면을 사용 하면 사용 되는 데이터 액세스 패턴 및 결과 메서드의 이름을 지정할 수 있습니다. 메서드를 확인 하는 확인란 및 이름을 모두를 둡니다 `FillByDiscontinued` 고 `GetDiscontinuedProducts`입니다. 마법사를 완료 하려면 마침을 클릭 합니다.
 
 
-[![메서드 FillByDiscontinued 이름과 GetDiscontinuedProducts](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image39.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image38.png)
+[![Name 메서드 FillByDiscontinued 및 GetDiscontinuedProducts](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image39.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image38.png)
 
 **그림 18**: 메서드 이름을 `FillByDiscontinued` 하 고 `GetDiscontinuedProducts` ([클릭 하 여 큰 이미지 보기](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image40.png))
 
@@ -291,7 +291,7 @@ Clr 사용 구성 완료를 사용 하 여 관리 되는 실행 준비가 기꺼
 그림 19 메서드를 추가한 후 데이터 집합 디자이너의 스크린샷이 나와 합니다 `ProductsTableAdapter` 에 대 한 합니다 `GetDiscontinuedProducts` 및 `GetProductsWithPriceLessThan` 저장된 프로시저를 관리 합니다.
 
 
-[![ProductsTableAdapter이이 단계에서 추가한 새 메서드를 포함 합니다.](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image42.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image41.png)
+[![T그 ProductsTableAdapter 포함 된 새 메서드가 추가이 단계에서는](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image42.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image41.png)
 
 **그림 19**: 합니다 `ProductsTableAdapter` 이 단계에서는 새 메서드 추가 포함 ([큰 이미지를 보려면 클릭](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image43.png))
 
@@ -312,12 +312,12 @@ Clr 사용 구성 완료를 사용 하 여 관리 되는 실행 준비가 기꺼
 엽니다는 `ManagedFunctionsAndSprocs.aspx` 페이지에서 `AdvancedDAL` 폴더 및 도구 상자에서 GridView를 디자이너로 끌어 옵니다. 집합 GridView s `ID` 속성을 `DiscontinuedProducts` 및 스마트 태그를 바인딩할 라는 새로운 ObjectDataSource는 `DiscontinuedProductsDataSource`합니다. ObjectDataSource에서 해당 데이터를 가져오도록 구성 합니다 `ProductsBLLWithSprocs` s 클래스 `GetDiscontinuedProducts` 메서드.
 
 
-[![ProductsBLLWithSprocs 클래스를 사용 하는 ObjectDataSource 구성](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image45.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image44.png)
+[![Configure ProductsBLLWithSprocs 클래스를 사용 하는 ObjectDataSource](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image45.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image44.png)
 
 **그림 20**: ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLLWithSprocs` 클래스 ([큰 이미지를 보려면 클릭](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image46.png))
 
 
-[![GetDiscontinuedProducts 메서드 선택 탭의 드롭다운 목록에서 선택](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image48.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image47.png)
+[![C설치할 선택 탭의 드롭다운 목록에서 GetDiscontinuedProducts 메서드](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image48.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image47.png)
 
 **그림 21**: 선택 된 `GetDiscontinuedProducts` 선택 탭의 드롭다운 목록에서 메서드 ([큰 이미지를 보려면 클릭](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image49.png))
 
@@ -334,7 +334,7 @@ Clr 사용 구성 완료를 사용 하 여 관리 되는 실행 준비가 기꺼
 관리 되는 저장된 프로시저에서 반환 된 결과에 패키지 되는 `ProductsDataTable` dal 다음 GridView에 바인딩됩니다 및 표시 되는 프레젠테이션 계층으로 반환 하는 BLL을 하기 위해 반환한 합니다. 예상 대로 표 단종 된 제품을 나열 합니다.
 
 
-[![지원 되지 않는 제품 나와 있습니다.](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image51.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image50.png)
+[![T그 지원 되지 않는 제품 나와](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image51.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image50.png)
 
 **그림 22**: 지원 되지 않는 제품 나열 됩니다 ([클릭 하 여 큰 이미지 보기](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image52.png))
 
@@ -358,7 +358,7 @@ Clr 사용 구성 완료를 사용 하 여 관리 되는 실행 준비가 기꺼
 추가한는 `udf_ComputeInventoryValue` Northwind 데이터베이스에 대 한 UDF 그림 23 위의 출력을 보여 줍니다. `SELECT` Management Studio를 통해 볼 때를 쿼리 합니다. 개체 탐색기에서 해당 스칼라 반환 함수 폴더 아래에 UDF 나열 되어 있는지 참고도 합니다.
 
 
-[![각 제품 재고 값이 나열 됩니다.](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image54.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image53.png)
+[![E제품 재고 값 s 대 한 ach 나열 됩니다](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image54.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image53.png)
 
 **그림 23**: 각 제품 재고 값이 나열 됩니다 ([클릭 하 여 큰 이미지 보기](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image55.png))
 
@@ -376,7 +376,7 @@ Udf는 테이블 형식 데이터를 반환할 수도 있습니다. 예를 들�
 추가한는 `udf_GetProductsByCategoryID` Northwind 데이터베이스에 대 한 UDF 그림 24 위의 출력을 보여 줍니다. `SELECT` Management Studio를 통해 볼 때를 쿼리 합니다. 개체 탐색기가의 테이블 반환 함수 폴더에 표 형식 데이터를 반환 하는 Udf는 찾을 수 있습니다.
 
 
-[![각 음료에 대 한 ProductID, ProductName, 및 CategoryID 나와](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image57.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image56.png)
+[![T각 음료에 대 한 ProductID, ProductName, 그 CategoryID 나와](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image57.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image56.png)
 
 **그림 24**: 합니다 `ProductID`, `ProductName`, 및 `CategoryID` 각 Beverage 나열 됩니다 ([클릭 하 여 큰 이미지 보기](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image58.png))
 
@@ -392,7 +392,7 @@ Udf는 테이블 형식 데이터를 반환할 수도 있습니다. 예를 들�
 관리 되는 UDF를 추가 하는 `ManagedDatabaseConstructs` 프로젝트, 솔루션 탐색기에서 프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 새 항목을 추가 하려면 선택 합니다. 새 항목 추가 대화 상자에서 사용자 정의 템플릿을 선택 하 고 새 UDF 파일의 이름을 `udf_ComputeInventoryValue_Managed.cs`입니다.
 
 
-[![새 관리 되는 UDF ManagedDatabaseConstructs 프로젝트에 추가](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image60.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image59.png)
+[![Add ManagedDatabaseConstructs 프로젝트에 새 관리 되는 UDF](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image60.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image59.png)
 
 **그림 25**: 새 관리 되는 UDF를 추가 합니다 `ManagedDatabaseConstructs` 프로젝트 ([큰 이미지를 보려면 클릭](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image61.png))
 
@@ -444,7 +444,7 @@ UDF의 메서드에 입력된 매개 변수는 해당 SQL 형식 참고: `SqlMon
 디버깅 하 려 한다고 가정 합니다 `GetProductsWithPriceLessThan` 저장된 프로시저를 관리 합니다. 코드 내에서 중단점을 설정 하 여 먼저는 `GetProductsWithPriceLessThan` 메서드.
 
 
-[![GetProductsWithPriceLessThan 메서드에서 중단점을 설정 합니다.](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image64.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image63.png)
+[![Set GetProductsWithPriceLessThan 메서드에서 중단점](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image64.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image63.png)
 
 **그림 27**: 중단점을 설정 합니다 `GetProductsWithPriceLessThan` 메서드 ([큰 이미지를 보려면 클릭](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image65.png))
 
@@ -459,7 +459,7 @@ SQL Server 프로젝트에서 관리 되는 데이터베이스 개체 디버깅 
 적 위의 스크립트를 입력 한 후 `Test.sql`, 디버그 메뉴로 이동 하 고 디버깅 시작을 선택 하거나 F5를 눌러 디버깅을 시작 또는 도구 모음에서 녹색 재생 아이콘입니다. 솔루션 내의 프로젝트를 빌드, Northwind 데이터베이스를 관리 되는 데이터베이스 개체를 배포 및 실행 하는이 `Test.sql` 스크립트입니다. 이 시점에서 중단점에 도달 하 고 단계별로 실행할 수 있습니다는 `GetProductsWithPriceLessThan` 메서드의 입력된 매개 변수의 값을 확인 및 등입니다.
 
 
-[![GetProductsWithPriceLessThan 메서드의 중단점에 도달](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image67.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image66.png)
+[![T그 GetProductsWithPriceLessThan 메서드의 중단점에 도달 했습니다](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image67.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image66.png)
 
 **그림 28**: 중단점을 `GetProductsWithPriceLessThan` 적중 된 메서드 ([큰 이미지를 보려면 클릭](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image68.png))
 
@@ -495,7 +495,7 @@ SQL Server 프로젝트를 사용 하면 쉽게 생성, 컴파일 및 관리 되
 [!code-console[Main](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/samples/sample19.cmd)]
 
 
-[![GetProductsWithPriceGreaterThan.cs 어셈블리로 컴파일](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image70.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image69.png)
+[![C어셈블리에 GetProductsWithPriceGreaterThan.cs ompile](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image70.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image69.png)
 
 **그림 29**: 컴파일할 `GetProductsWithPriceGreaterThan.cs` 에 어셈블리 ([큰 이미지를 보려면 클릭](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image71.png))
 
@@ -511,7 +511,7 @@ SQL Server 프로젝트를 사용 하면 쉽게 생성, 컴파일 및 관리 되
 Management Studio에서 Northwind 데이터베이스의 프로그래밍 기능 폴더를 확장 합니다. 해당 하위 폴더 중 하나에 어셈블리입니다. 데이터베이스에 새 어셈블리를 수동으로 추가 하려면 어셈블리 폴더를 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 새 어셈블리를 선택 합니다. 새 어셈블리 대화 상자 (그림 30 참조)이 표시 됩니다. 찾아보기 단추를 클릭 합니다 `ManuallyCreatedDBObjects.dll` 어셈블리 방금 컴파일한 하 고 데이터베이스에 어셈블리를 추가 하려면 확인을 클릭 합니다. 표시 되지 않아야 합니다 `ManuallyCreatedDBObjects.dll` 개체 탐색기에서 어셈블리입니다.
 
 
-[![데이터베이스에 ManuallyCreatedDBObjects.dll 어셈블리 추가](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image73.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image72.png)
+[![Add 데이터베이스로 ManuallyCreatedDBObjects.dll 어셈블리](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image73.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image72.png)
 
 **그림 30**: 추가 된 `ManuallyCreatedDBObjects.dll` 데이터베이스에 어셈블리 ([큰 이미지를 보려면 클릭](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image74.png))
 
@@ -536,7 +536,7 @@ Northwind 데이터베이스에 어셈블리를 추가 했지만, 아직 사용 
 그림 32에서 알 수 있듯이, 위의 명령을 사용 하 여 해당 제품에 대 한 정보를 표시 하는 한 `UnitPrice` $24.95 보다 큽니다.
 
 
-[![개체 탐색기에는 ManuallyCreatedDBObjects.dll 나열 됩니다.](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image77.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image76.png)
+[![T개체 탐색기에 나열 됩니다 그 ManuallyCreatedDBObjects.dll](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image77.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image76.png)
 
 **그림 32**: 합니다 `ManuallyCreatedDBObjects.dll` 개체 탐색기에 나열 됩니다 ([큰 이미지를 보려면 클릭](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image78.png))
 

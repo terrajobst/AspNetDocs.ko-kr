@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: ecb004b5-82c0-44fb-bcaf-233fffac6195
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/dropshadow/adjusting-the-z-index-of-a-dropshadow-vb
 msc.type: authoredcontent
-ms.openlocfilehash: a900a074e1507965e7d60e8de4202de57dc6180e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b01913b3ad3291d90bdf9455c3d35bb7b36b3f28
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57043250"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59415247"
 ---
-<a name="adjusting-the-z-index-of-a-dropshadow-vb"></a>DropShadow의 Z-인덱스 조정(VB)
-====================
+# <a name="adjusting-the-z-index-of-a-dropshadow-vb"></a>DropShadow의 Z-인덱스 조정(VB)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/5/1/6/51652a81-500b-4f6b-88d3-617103e7941e/DropShadow1.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/dropshadow1VB.pdf)
@@ -56,12 +56,12 @@ AJAX Control Toolkit에서 DropShadow 컨트롤 그림자를 사용 하 여 패�
 그런 다음, `DropShadowExtender` 컨트롤 메뉴 컨트롤을 사용 하 여 더 이상 충돌 하지 않습니다.
 
 
-[![이전: 메뉴 항목이 표시 되지 않습니다.](adjusting-the-z-index-of-a-dropshadow-vb/_static/image2.png)](adjusting-the-z-index-of-a-dropshadow-vb/_static/image1.png)
+[![B전: 메뉴 항목이 표시 되지 않으면](adjusting-the-z-index-of-a-dropshadow-vb/_static/image2.png)](adjusting-the-z-index-of-a-dropshadow-vb/_static/image1.png)
 
 이전: 메뉴 항목이 표시 되지 않습니다 ([클릭 하 여 큰 이미지 보기](adjusting-the-z-index-of-a-dropshadow-vb/_static/image3.png))
 
 
-[![이후: 메뉴 항목 표시](adjusting-the-z-index-of-a-dropshadow-vb/_static/image5.png)](adjusting-the-z-index-of-a-dropshadow-vb/_static/image4.png)
+[![A뒤: 메뉴 항목 표시](adjusting-the-z-index-of-a-dropshadow-vb/_static/image5.png)](adjusting-the-z-index-of-a-dropshadow-vb/_static/image4.png)
 
 이후: 메뉴 항목이 표시 됩니다 ([클릭 하 여 큰 이미지 보기](adjusting-the-z-index-of-a-dropshadow-vb/_static/image6.png))
 
