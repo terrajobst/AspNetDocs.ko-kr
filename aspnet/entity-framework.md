@@ -9,26 +9,26 @@ ms.date: 03/12/2010
 ms.technology: aspnet
 msc.legacyurl: /entity-framework
 msc.type: content
-ms.openlocfilehash: 4f18afb9df3d486845d33735d045ee26f59b3f97
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bcbd98f88b1e7e292961326061404ce91d157b32
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57045330"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59414558"
 ---
-<a name="entity-framework"></a><span data-ttu-id="f6eee-102">Entity Framework</span><span class="sxs-lookup"><span data-stu-id="f6eee-102">Entity Framework</span></span>
-====================
-<span data-ttu-id="f6eee-103">EF (entity Framework)는.NET 개발자가 도메인별 개체를 사용 하 여 관계형 데이터로 작업할 수 있도록 개체 관계형 매퍼입니다.</span><span class="sxs-lookup"><span data-stu-id="f6eee-103">Entity Framework (EF) is an object-relational mapper that enables .NET developers to work with relational data using domain-specific objects.</span></span> <span data-ttu-id="f6eee-104">개발자들이 보통 작성해야 하는 데이터 액세스 코드가 대부분 필요하지 않게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="f6eee-104">It eliminates the need for most of the data-access code that developers usually need to write.</span></span>
+# <a name="entity-framework"></a><span data-ttu-id="0a52b-102">Entity Framework</span><span class="sxs-lookup"><span data-stu-id="0a52b-102">Entity Framework</span></span>
+
+<span data-ttu-id="0a52b-103">EF (entity Framework)는.NET 개발자가 도메인별 개체를 사용 하 여 관계형 데이터로 작업할 수 있도록 개체 관계형 매퍼입니다.</span><span class="sxs-lookup"><span data-stu-id="0a52b-103">Entity Framework (EF) is an object-relational mapper that enables .NET developers to work with relational data using domain-specific objects.</span></span> <span data-ttu-id="0a52b-104">개발자들이 보통 작성해야 하는 데이터 액세스 코드가 대부분 필요하지 않게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="0a52b-104">It eliminates the need for most of the data-access code that developers usually need to write.</span></span>
 
 
-- <span data-ttu-id="f6eee-105">[가져오기:](https://msdn.com/data/ee712906) 이 프로젝트에 추가 하 고이 강력한 O/RM. 활용 하 고 시작</span><span class="sxs-lookup"><span data-stu-id="f6eee-105">[Get it:](https://msdn.com/data/ee712906) Add this to your project and start taking advantage of this powerful O/RM.</span></span>
-- <span data-ttu-id="f6eee-106">[시작할 수 있습니다.](https://msdn.com/data/ee712907) 비디오 및 자습서의 데이터를 최대한 활용할 수 있도록 가이드를 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="f6eee-106">[Get Started:](https://msdn.com/data/ee712907) Visit the guide for videos and tutorials that will help you make the most of your data.</span></span>
-- <span data-ttu-id="f6eee-107">[도움말 가져오기:](https://msdn.com/data/hh913619) 전문가 로부터 도움 Stack Overflow에서 데이터 커뮤니티에 기여 하는 방법을 알아봅니다.</span><span class="sxs-lookup"><span data-stu-id="f6eee-107">[Get Help:](https://msdn.com/data/hh913619) Find out how to get help from the experts and contribute to the data community on Stack Overflow.</span></span>
-- <span data-ttu-id="f6eee-108">[참여:](https://github.com/aspnet/EntityFramework6) 어떻게 만들 수 있습니다 Entity Framework, 오픈 개발 모델을 더욱 GitHub 사이트를 방문 하 여 확인 합니다.</span><span class="sxs-lookup"><span data-stu-id="f6eee-108">[Contribute:](https://github.com/aspnet/EntityFramework6) Find out how you can help make Entity Framework, an open development model, even better by visiting GitHub site.</span></span>
+- <span data-ttu-id="0a52b-105">[가져오기:](https://msdn.com/data/ee712906) 이 프로젝트에 추가 하 고이 강력한 O/RM. 활용 하 고 시작</span><span class="sxs-lookup"><span data-stu-id="0a52b-105">[Get it:](https://msdn.com/data/ee712906) Add this to your project and start taking advantage of this powerful O/RM.</span></span>
+- <span data-ttu-id="0a52b-106">[시작할 수 있습니다.](https://msdn.com/data/ee712907) 비디오 및 자습서의 데이터를 최대한 활용할 수 있도록 가이드를 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="0a52b-106">[Get Started:](https://msdn.com/data/ee712907) Visit the guide for videos and tutorials that will help you make the most of your data.</span></span>
+- <span data-ttu-id="0a52b-107">[도움말 가져오기:](https://msdn.com/data/hh913619) 전문가 로부터 도움 Stack Overflow에서 데이터 커뮤니티에 기여 하는 방법을 알아봅니다.</span><span class="sxs-lookup"><span data-stu-id="0a52b-107">[Get Help:](https://msdn.com/data/hh913619) Find out how to get help from the experts and contribute to the data community on Stack Overflow.</span></span>
+- <span data-ttu-id="0a52b-108">[참여:](https://github.com/aspnet/EntityFramework6) 어떻게 만들 수 있습니다 Entity Framework, 오픈 개발 모델을 더욱 GitHub 사이트를 방문 하 여 확인 합니다.</span><span class="sxs-lookup"><span data-stu-id="0a52b-108">[Contribute:](https://github.com/aspnet/EntityFramework6) Find out how you can help make Entity Framework, an open development model, even better by visiting GitHub site.</span></span>
 
 
-<span data-ttu-id="f6eee-109">ASP.NET을 사용 하 여 Entity Framework를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="f6eee-109">Use Entity Framework with ASP.NET</span></span>
+<span data-ttu-id="0a52b-109">ASP.NET을 사용 하 여 Entity Framework를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="0a52b-109">Use Entity Framework with ASP.NET</span></span>
 
-- [<span data-ttu-id="f6eee-110">Web Forms 자습서</span><span class="sxs-lookup"><span data-stu-id="f6eee-110">Web Forms Tutorials</span></span>](web-forms/overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1.md)
-- [<span data-ttu-id="f6eee-111">MVC 자습서</span><span class="sxs-lookup"><span data-stu-id="f6eee-111">MVC Tutorials</span></span>](mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application.md)
-- [<span data-ttu-id="f6eee-112">예제 애플리케이션</span><span class="sxs-lookup"><span data-stu-id="f6eee-112">Sample Application</span></span>](https://webpifeed.blob.core.windows.net/webpifeed/Partners/ASP.NET%20MVC%20Application%20Using%20Entity%20Framework%20Code%20First.zip)
+- [<span data-ttu-id="0a52b-110">Web Forms 자습서</span><span class="sxs-lookup"><span data-stu-id="0a52b-110">Web Forms Tutorials</span></span>](web-forms/overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1.md)
+- [<span data-ttu-id="0a52b-111">MVC 자습서</span><span class="sxs-lookup"><span data-stu-id="0a52b-111">MVC Tutorials</span></span>](mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application.md)
+- [<span data-ttu-id="0a52b-112">샘플 응용 프로그램</span><span class="sxs-lookup"><span data-stu-id="0a52b-112">Sample Application</span></span>](https://webpifeed.blob.core.windows.net/webpifeed/Partners/ASP.NET%20MVC%20Application%20Using%20Entity%20Framework%20Code%20First.zip)
