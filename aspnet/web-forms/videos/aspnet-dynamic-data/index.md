@@ -8,32 +8,32 @@ ms.date: 10/05/2011
 ms.assetid: cd51e6c4-6ff9-419d-8ac8-a39b79d63c78
 msc.legacyurl: /web-forms/videos/aspnet-dynamic-data
 msc.type: chapter
-ms.openlocfilehash: 2b9bf121e9eced28a91616a8d7515e1fb563f304
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 11fca6096a1ada5df95971f2c77c8e72660ad864
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57021880"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59400154"
 ---
-<a name="aspnet-dynamic-data"></a><span data-ttu-id="be1f7-103">ASP.NET Dynamic Data</span><span class="sxs-lookup"><span data-stu-id="be1f7-103">ASP.NET Dynamic Data</span></span>
-====================
-> <span data-ttu-id="be1f7-104">ASP.NET Dynamic Data를 사용 하 여 자동으로 데이터 액세스를 수행 하는 방법을 알 수 있는 스 캐 폴드 된 응용 프로그램을 만드는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="be1f7-104">How to use ASP.NET Dynamic Data to create scaffolded applications that automatically know how to perform data access.</span></span>
+# <a name="aspnet-dynamic-data"></a><span data-ttu-id="2f002-103">ASP.NET Dynamic Data</span><span class="sxs-lookup"><span data-stu-id="2f002-103">ASP.NET Dynamic Data</span></span>
+
+> <span data-ttu-id="2f002-104">ASP.NET Dynamic Data를 사용 하 여 자동으로 데이터 액세스를 수행 하는 방법을 알 수 있는 스 캐 폴드 된 응용 프로그램을 만드는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="2f002-104">How to use ASP.NET Dynamic Data to create scaffolded applications that automatically know how to perform data access.</span></span>
 
 
-- [<span data-ttu-id="be1f7-105">첫 번째 스캐폴드 및 Dynamic Data</span><span class="sxs-lookup"><span data-stu-id="be1f7-105">Your First Scaffold and What is Dynamic Data</span></span>](your-first-scaffold-and-what-is-dynamic-data.md)
-- [<span data-ttu-id="be1f7-106">인라인 GridView 편집 사용</span><span class="sxs-lookup"><span data-stu-id="be1f7-106">Enable Inline GridView Editing</span></span>](how-do-i-enable-inline-gridview-editing.md)
-- [<span data-ttu-id="be1f7-107">필드 렌더링 방식 변경</span><span class="sxs-lookup"><span data-stu-id="be1f7-107">Change how my Fields render</span></span>](how-do-i-change-how-my-fields-render.md)
-- [<span data-ttu-id="be1f7-108">비즈니스 논리 예외 처리</span><span class="sxs-lookup"><span data-stu-id="be1f7-108">Handle Business Logic Exceptions</span></span>](how-do-i-handle-business-logic-exceptions.md)
-- [<span data-ttu-id="be1f7-109">사용자 지정 페이지 만들기</span><span class="sxs-lookup"><span data-stu-id="be1f7-109">Make Custom Pages</span></span>](how-do-i-make-custom-pages.md)
-- [<span data-ttu-id="be1f7-110">알 수 없는 데이터 형식 표시</span><span class="sxs-lookup"><span data-stu-id="be1f7-110">Display Unknown datatypes</span></span>](how-do-i-display-unknown-datatypes.md)
-- [<span data-ttu-id="be1f7-111">ListView 및 DetailsView 컨트롤에서 DynamicControl 사용</span><span class="sxs-lookup"><span data-stu-id="be1f7-111">Use a DynamicControl in ListView and DetailsView Controls</span></span>](how-do-i-use-a-dynamiccontrol-in-listview-and-detailsview-controls.md)
-- [<span data-ttu-id="be1f7-112">Dynamic Data 시작</span><span class="sxs-lookup"><span data-stu-id="be1f7-112">Getting Started with Dynamic Data</span></span>](getting-started-with-dynamic-data.md)
-- [<span data-ttu-id="be1f7-113">ASP.NET Dynamic Data 애플리케이션에서 템플릿 편집 시작</span><span class="sxs-lookup"><span data-stu-id="be1f7-113">Begin Editing the Templates in ASP.NET Dynamic Data Applications</span></span>](begin-editing-the-templates-in-aspnet-dynamic-data-applications.md)
-- [<span data-ttu-id="be1f7-114">URL 라우팅을 사용하여 Dynamic Data 애플리케이션 수정 시작</span><span class="sxs-lookup"><span data-stu-id="be1f7-114">Begin Modifying Dynamic Data Applications with URL Routing</span></span>](begin-modifying-dynamic-data-applications-with-url-routing.md)
-- [<span data-ttu-id="be1f7-115">ASP.NET Dynamic Data 애플리케이션에서 인라인 편집 사용</span><span class="sxs-lookup"><span data-stu-id="be1f7-115">Enable In-Line Editing in ASP.NET Dynamic Data Applications</span></span>](enable-in-line-editing-in-aspnet-dynamic-data-applications.md)
-- [<span data-ttu-id="be1f7-116">Dynamic Data 애플리케이션에서 테이블 관련 라우팅 사용</span><span class="sxs-lookup"><span data-stu-id="be1f7-116">Enable Table Specific Routing in Dynamic Data Applications</span></span>](how-to-enable-table-specific-routing-in-dynamic-data-applications.md)
-- [<span data-ttu-id="be1f7-117">ASP.NET Dynamic Data 애플리케이션에서 특성 유효성 검사 사용</span><span class="sxs-lookup"><span data-stu-id="be1f7-117">Use Attribute Validation in ASP.NET Dynamic Data Applications</span></span>](how-to-use-attribute-validation-in-aspnet-dynamic-data-applications.md)
-- [<span data-ttu-id="be1f7-118">VB 또는 C#에서 명령적 논리를 사용하여 사용자 지정 필드 유효성 구현</span><span class="sxs-lookup"><span data-stu-id="be1f7-118">Implement Custom Field Validation with Imperative Logic in VB or C#</span></span>](how-to-implement-custom-field-validation-with-imperative-logic-in-vb-or-c.md)
-- [<span data-ttu-id="be1f7-119">DynamicData 데이터 그리드에서 열 제거</span><span class="sxs-lookup"><span data-stu-id="be1f7-119">Remove Columns From Your DynamicData Data Grids</span></span>](how-to-remove-columns-from-your-dynamicdata-data-grids.md)
-- [<span data-ttu-id="be1f7-120">ASP.NET Dynamic Data 애플리케이션에서 테이블 관련 사용자 지정 양식 만들기</span><span class="sxs-lookup"><span data-stu-id="be1f7-120">Create Table Specific Custom Forms in an ASP.NET Dynamic Data Application</span></span>](how-to-create-table-specific-custom-forms-in-an-aspnet-dynamic-data-application.md)
-- [<span data-ttu-id="be1f7-121">ASP.NET Dynamic Data 사용자 지정 양식 서식 지정</span><span class="sxs-lookup"><span data-stu-id="be1f7-121">ASP.NET Dynamic Data Custom Form Formatting</span></span>](aspnet-dynamic-data-custom-form-formatting.md)
+- [<span data-ttu-id="2f002-105">첫 번째 스캐폴드 및 Dynamic Data</span><span class="sxs-lookup"><span data-stu-id="2f002-105">Your First Scaffold and What is Dynamic Data</span></span>](your-first-scaffold-and-what-is-dynamic-data.md)
+- [<span data-ttu-id="2f002-106">인라인 GridView 편집 사용</span><span class="sxs-lookup"><span data-stu-id="2f002-106">Enable Inline GridView Editing</span></span>](how-do-i-enable-inline-gridview-editing.md)
+- [<span data-ttu-id="2f002-107">필드 렌더링 방식 변경</span><span class="sxs-lookup"><span data-stu-id="2f002-107">Change how my Fields render</span></span>](how-do-i-change-how-my-fields-render.md)
+- [<span data-ttu-id="2f002-108">비즈니스 논리 예외 처리</span><span class="sxs-lookup"><span data-stu-id="2f002-108">Handle Business Logic Exceptions</span></span>](how-do-i-handle-business-logic-exceptions.md)
+- [<span data-ttu-id="2f002-109">사용자 지정 페이지 만들기</span><span class="sxs-lookup"><span data-stu-id="2f002-109">Make Custom Pages</span></span>](how-do-i-make-custom-pages.md)
+- [<span data-ttu-id="2f002-110">알 수 없는 데이터 형식 표시</span><span class="sxs-lookup"><span data-stu-id="2f002-110">Display Unknown datatypes</span></span>](how-do-i-display-unknown-datatypes.md)
+- [<span data-ttu-id="2f002-111">ListView 및 DetailsView 컨트롤에서 DynamicControl 사용</span><span class="sxs-lookup"><span data-stu-id="2f002-111">Use a DynamicControl in ListView and DetailsView Controls</span></span>](how-do-i-use-a-dynamiccontrol-in-listview-and-detailsview-controls.md)
+- [<span data-ttu-id="2f002-112">Dynamic Data 시작</span><span class="sxs-lookup"><span data-stu-id="2f002-112">Getting Started with Dynamic Data</span></span>](getting-started-with-dynamic-data.md)
+- [<span data-ttu-id="2f002-113">ASP.NET Dynamic Data 애플리케이션에서 템플릿 편집 시작</span><span class="sxs-lookup"><span data-stu-id="2f002-113">Begin Editing the Templates in ASP.NET Dynamic Data Applications</span></span>](begin-editing-the-templates-in-aspnet-dynamic-data-applications.md)
+- [<span data-ttu-id="2f002-114">URL 라우팅을 사용하여 Dynamic Data 애플리케이션 수정 시작</span><span class="sxs-lookup"><span data-stu-id="2f002-114">Begin Modifying Dynamic Data Applications with URL Routing</span></span>](begin-modifying-dynamic-data-applications-with-url-routing.md)
+- [<span data-ttu-id="2f002-115">ASP.NET Dynamic Data 애플리케이션에서 인라인 편집 사용</span><span class="sxs-lookup"><span data-stu-id="2f002-115">Enable In-Line Editing in ASP.NET Dynamic Data Applications</span></span>](enable-in-line-editing-in-aspnet-dynamic-data-applications.md)
+- [<span data-ttu-id="2f002-116">Dynamic Data 애플리케이션에서 테이블 관련 라우팅 사용</span><span class="sxs-lookup"><span data-stu-id="2f002-116">Enable Table Specific Routing in Dynamic Data Applications</span></span>](how-to-enable-table-specific-routing-in-dynamic-data-applications.md)
+- [<span data-ttu-id="2f002-117">ASP.NET Dynamic Data 애플리케이션에서 특성 유효성 검사 사용</span><span class="sxs-lookup"><span data-stu-id="2f002-117">Use Attribute Validation in ASP.NET Dynamic Data Applications</span></span>](how-to-use-attribute-validation-in-aspnet-dynamic-data-applications.md)
+- [<span data-ttu-id="2f002-118">VB 또는 C#에서 명령적 논리를 사용하여 사용자 지정 필드 유효성 구현</span><span class="sxs-lookup"><span data-stu-id="2f002-118">Implement Custom Field Validation with Imperative Logic in VB or C#</span></span>](how-to-implement-custom-field-validation-with-imperative-logic-in-vb-or-c.md)
+- [<span data-ttu-id="2f002-119">DynamicData 데이터 그리드에서 열 제거</span><span class="sxs-lookup"><span data-stu-id="2f002-119">Remove Columns From Your DynamicData Data Grids</span></span>](how-to-remove-columns-from-your-dynamicdata-data-grids.md)
+- [<span data-ttu-id="2f002-120">ASP.NET Dynamic Data 애플리케이션에서 테이블 관련 사용자 지정 양식 만들기</span><span class="sxs-lookup"><span data-stu-id="2f002-120">Create Table Specific Custom Forms in an ASP.NET Dynamic Data Application</span></span>](how-to-create-table-specific-custom-forms-in-an-aspnet-dynamic-data-application.md)
+- [<span data-ttu-id="2f002-121">ASP.NET Dynamic Data 사용자 지정 양식 서식 지정</span><span class="sxs-lookup"><span data-stu-id="2f002-121">ASP.NET Dynamic Data Custom Form Formatting</span></span>](aspnet-dynamic-data-custom-form-formatting.md)
