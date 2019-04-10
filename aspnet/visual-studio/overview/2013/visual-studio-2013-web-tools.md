@@ -8,15 +8,15 @@ ms.date: 07/16/2014
 ms.assetid: 09e82351-816b-402d-acd1-0f9ac6901d16
 msc.legacyurl: /visual-studio/overview/2013/visual-studio-2013-web-tools
 msc.type: authoredcontent
-ms.openlocfilehash: 54d86de49bf61305b17fc80964723c518abd467b
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 874542305bd3f47066cfae595919285ed079aa53
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423249"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421071"
 ---
-<a name="hands-on-lab-visual-studio-2013-web-tools"></a>실습: Visual Studio 2013 웹 도구
-====================
+# <a name="hands-on-lab-visual-studio-2013-web-tools"></a>실습: Visual Studio 2013 웹 도구
+
 [웹 캠프 팀](https://twitter.com/webcamps)
 
 [웹 캠프 학습 키트 다운로드](https://aka.ms/webcamps-training-kit)
@@ -74,7 +74,7 @@ ms.locfileid: "58423249"
 > 각 실습에 시작 솔루션을 함께 표시 됩니다는 **시작** 다른 독립적으로 각 연습에 따라 할 수 있는 연습 하는 폴더입니다. 주의 하십시오 연습 하는 동안 추가 되는 코드 조각은 솔루션부터 이러한 누락 되어 연습을 완료 될 때까지 작동 하지 않을 수 있습니다. 연습에 대 한 소스 코드 안에 있습니다.는 **최종** 해당 연습에서 단계를 완료 합니다. 결과로 생성 되는 코드를 사용 하 여 Visual Studio 솔루션에 포함 된 폴더입니다. 이 실습을 통해 작업 하는 동안 추가 도움이 필요한 경우 지침으로 이러한 솔루션을 사용할 수 있습니다.
 
 
-* * *
+---
 
 <a id="Exercises"></a>
 ## <a name="exercises"></a>연습
@@ -511,7 +511,7 @@ Web Essentials 2013을 사용 하 여 스타일 시트 및 HTML 페이지에 클
 
     *보기에 포함 하는 오디오 플레이어*
 
-* * *
+---
 
 <a id="Summary"></a>
 ## <a name="summary"></a>요약

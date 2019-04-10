@@ -8,15 +8,15 @@ ms.date: 02/20/2005
 ms.assetid: 43f6ac47-76fc-4cf7-8e9f-c18ce673dfd8
 msc.legacyurl: /web-forms/overview/moving-to-aspnet-20/server-controls
 msc.type: authoredcontent
-ms.openlocfilehash: ecf99fa894c1f662542aa8a613195b828bf2c67b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bfbc151af40bf7ccceb5ac298ba812730d4e4ed9
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061440"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59420759"
 ---
-<a name="server-controls"></a>서버 컨트롤
-====================
+# <a name="server-controls"></a>서버 컨트롤
+
 by [Microsoft](https://github.com/microsoft)
 
 > ASP.NET 2.0에는 여러 가지 방법으로 서버 컨트롤 강화합니다. 이 단원에서는 ASP.NET 2.0 방법 아키텍처 변경 사항 중 일부를 다룹니다 및 서버 컨트롤을 사용 하 여 Visual Studio 2005를 처리 합니다.
@@ -99,7 +99,7 @@ ASP.NET 2.0의 기본 문서 종류 정의 다음과 같습니다.
 
 [!code-html[Main](server-controls/samples/sample7.html)]
 
-원하는 경우 구성 파일에서 xhtmlConformance 노드를 통해 기본 XHML 규정 준수를 변경할 수 있습니다. 예를 들어 web.config 파일에서 다음 노드는 XHTML 1.0 Strict로 XHTML 규격을 변경 합니다.
+원하는 경우에 구성 파일에서 xhtmlConformance 노드를 통해 기본 XHTML 규격을 변경할 수 있습니다. 예를 들어 web.config 파일에서 다음 노드는 XHTML 1.0 Strict로 XHTML 규격을 변경 합니다.
 
 [!code-xml[Main](server-controls/samples/sample8.xml)]
 

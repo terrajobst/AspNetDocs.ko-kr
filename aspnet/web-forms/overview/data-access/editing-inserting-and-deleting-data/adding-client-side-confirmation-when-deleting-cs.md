@@ -8,15 +8,15 @@ ms.date: 07/17/2006
 ms.assetid: f6e2a12a-2b5e-48fd-8db3-1e94a500c19a
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/adding-client-side-confirmation-when-deleting-cs
 msc.type: authoredcontent
-ms.openlocfilehash: a3e35e7b27d646569692a2eb715dcf40b7967473
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: d7a6f29dc660cff2bfa9db8f9790d73e51a2cc1c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423197"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59420135"
 ---
-<a name="adding-client-side-confirmation-when-deleting-c"></a>삭제할 때 클라이언트 쪽 확인 추가(C#)
-====================
+# <a name="adding-client-side-confirmation-when-deleting-c"></a>삭제할 때 클라이언트 쪽 확인 추가(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_22_CS.exe) 또는 [PDF 다운로드](adding-client-side-confirmation-when-deleting-cs/_static/datatutorial22cs1.pdf)
@@ -65,7 +65,7 @@ FormView s 삭제만 지 원하는 ObjectDataSource 컨트롤에 바인딩된 �
 이러한 변화를 통해 삭제 단추를 클릭 하 여 제품을 삭제 하는 기능을 사용 하 여 한 번에 한 제품 간을 전환 하려면 사용자를 허용 하는 웹 페이지를 완벽 하 게 작동 했습니다. 그림 2 브라우저를 통해 볼 때 지금 스크린샷을 진행 상황을 보여줍니다.
 
 
-[![FormView 단일 제품에 대 한 정보를 보여 줍니다.](adding-client-side-confirmation-when-deleting-cs/_static/image3.png)](adding-client-side-confirmation-when-deleting-cs/_static/image2.png)
+[![T그 FormView 표시 정보에 대 한는 단일 제품](adding-client-side-confirmation-when-deleting-cs/_static/image3.png)](adding-client-side-confirmation-when-deleting-cs/_static/image2.png)
 
 **그림 2**: FormView 표시 정보에 대 한는 단일 제품 ([클릭 하 여 큰 이미지 보기](adding-client-side-confirmation-when-deleting-cs/_static/image4.png))
 
@@ -85,7 +85,7 @@ S 모두 완료 되었습니다! 그림 3 작업에서이 확인의 스크린 �
 > 에 전달 된 문자열을 `confirm(string)` JavaScript 함수는 아포스트로피 (인용 부호 아님)를 사용 하 여 구분 됩니다. JavaScript에서 문자열 문자 중 하나를 사용 하 여 구분할 수 있습니다. 여기에서 사용 아포스트로피 문자열 구분 기호에 전달 되도록 `confirm(string)` 에 사용 되는 구분 기호를 사용 하 여 모호성을 발생 하지는 `OnClientClick` 속성 값입니다.
 
 
-[![확인은 이제 표시 된 경우 삭제 단추를 클릭](adding-client-side-confirmation-when-deleting-cs/_static/image6.png)](adding-client-side-confirmation-when-deleting-cs/_static/image5.png)
+[![A 확인은 이제 표시 된 경우 단추를 클릭 하면 삭제](adding-client-side-confirmation-when-deleting-cs/_static/image6.png)](adding-client-side-confirmation-when-deleting-cs/_static/image5.png)
 
 **그림 3**: 확인은 이제 표시 된 경우 삭제 단추를 클릭 ([클릭 하 여 큰 이미지 보기](adding-client-side-confirmation-when-deleting-cs/_static/image7.png))
 
@@ -127,7 +127,7 @@ CommandField에서 삭제 단추를 참조 한 후 다음 현재 GridView 행에
 > 이 기술은 프로그래밍 방식으로 액세스 한 DetailsView에서 CommandField 있는 삭제 단추의 데도 사용할 수 있습니다. 그러나 DetailsView, d 만들어야에 대 한 이벤트 처리기를 `DataBound` DetailsView 없으므로 이벤트는 `RowDataBound` 이벤트입니다.
 
 
-[![사용자 지정된 확인 대화 상자를 표시 GridView의 삭제 단추를 클릭 합니다.](adding-client-side-confirmation-when-deleting-cs/_static/image9.png)](adding-client-side-confirmation-when-deleting-cs/_static/image8.png)
+[![C사용자 지정 확인 대화 상자를 GridView s 삭제 단추 표시를 클릭 하](adding-client-side-confirmation-when-deleting-cs/_static/image9.png)](adding-client-side-confirmation-when-deleting-cs/_static/image8.png)
 
 **그림 4**: 사용자 지정 확인 대화 상자를 표시 GridView의 삭제 단추를 클릭 하면 ([클릭 하 여 큰 이미지 보기](adding-client-side-confirmation-when-deleting-cs/_static/image10.png))
 

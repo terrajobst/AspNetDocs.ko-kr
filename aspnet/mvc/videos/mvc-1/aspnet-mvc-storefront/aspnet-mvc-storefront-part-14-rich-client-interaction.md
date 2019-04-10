@@ -8,15 +8,15 @@ ms.date: 07/10/2008
 ms.assetid: 28e3602f-34f8-4123-bf6d-235857202b5e
 msc.legacyurl: /mvc/videos/mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-14-rich-client-interaction
 msc.type: video
-ms.openlocfilehash: 29997160133a20e99cbfa924839c52f91f18ddb5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bae7aa149ad507e5a5ca3b01ff140440e3309548
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034010"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59419615"
 ---
-<a name="aspnet-mvc-storefront-part-14-rich-client-interaction"></a>ASP.NET MVC Storefront 14부: 리치 클라이언트 상호 작용
-====================
+# <a name="aspnet-mvc-storefront-part-14-rich-client-interaction"></a>ASP.NET MVC Storefront 14부: 리치 클라이언트 상호 작용
+
 [Rob Conery](https://github.com/robconery)
 
 리치 클라이언트 상호 작용은 특히 AJAX에 집중. Rob Conery에서 자신의 개발 프로세스의 각 단계를 문서화 했는지 [블로그](http://blog.wekeroad.com/mvc-storefront/mvcstore-part-14/)합니다.

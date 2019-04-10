@@ -8,15 +8,15 @@ ms.date: 04/11/2014
 ms.assetid: 07aa855a-92ee-4d43-ba66-5bfd7de20ee6
 msc.legacyurl: /aspnet/overview/owin-and-katana/host-owin-in-an-azure-worker-role
 msc.type: authoredcontent
-ms.openlocfilehash: dbf0964695dd2592d063b05c0778923edffe8e2e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 129b6a8f411d482de75e7e5edc5cc919b4d2de52
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058040"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59419524"
 ---
-<a name="host-owin-in-an-azure-worker-role"></a>Azure 작업자 역할에 OWIN 호스트
-====================
+# <a name="host-owin-in-an-azure-worker-role"></a>Azure 작업자 역할에 OWIN 호스트
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 > 이 자습서에는 Microsoft Azure 작업자 역할에 OWIN 자체 호스트 하는 방법을 보여 줍니다.
@@ -116,7 +116,7 @@ WorkerRole.cs의 전체 코드는 다음과 같습니다.
 
 [![](host-owin-in-an-azure-worker-role/_static/image10.png)](host-owin-in-an-azure-worker-role/_static/image9.png)
 
-배포 서비스 배포 [id], 서비스 세부 정보 아래에서 IP 주소를 찾습니다. 웹 브라우저를 열고 http:// 이동할<em>주소</em>, 여기서 <em>주소</em> 계산 에뮬레이터에서 할당 한 IP 주소는 예를 들어 `http://127.0.0.1:80`합니다. OWIN 시작 페이지가 표시 됩니다.
+배포 서비스 배포 [id], 서비스 세부 정보 아래에서 IP 주소를 찾습니다. 웹 브라우저를 열고 http로 이동 합니다.\/\/*주소*여기서 *주소* 계산 에뮬레이터에서 할당 한 IP 주소는 예를 들어 `http://127.0.0.1:80`. OWIN 시작 페이지가 표시 됩니다.
 
 ![](host-owin-in-an-azure-worker-role/_static/image11.png)
 
@@ -149,4 +149,4 @@ Azure 활동 로그 창에 배포 진행률이 표시 됩니다. 앱을 배포�
 ## <a name="additional-resources"></a>추가 리소스
 
 - [프로젝트 Katana 개요](an-overview-of-project-katana.md)
-- [Katana Project on GitHub](https://github.com/aspnet/AspNetKatana/)
+- [GitHub에서 Katana 프로젝트](https://github.com/aspnet/AspNetKatana/)

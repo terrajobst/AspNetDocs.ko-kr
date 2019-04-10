@@ -8,15 +8,15 @@ ms.date: 04/21/2011
 ms.assetid: bd356ca3-5bdb-4067-9dac-c9e9923a86e8
 msc.legacyurl: /mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-1
 msc.type: authoredcontent
-ms.openlocfilehash: 0f252fd5c0e5962353720e47ba888d2b6b325a1c
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 63d85ec5f1f2fbadd92fd0210e67332df30aab5a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58421910"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59419602"
 ---
-<a name="part-1-overview-and-file-new-project"></a>1부: 개요 및 파일->새 프로젝트
-====================
+# <a name="part-1-overview-and-file-new-project"></a>1부: 개요 및 파일->새 프로젝트
+
 [Jon Galloway](https://github.com/jongalloway)
 
 > MVC Music Store 자습서 응용 프로그램을 소개 하 고 웹 개발을 위한 ASP.NET MVC 및 Visual Studio를 사용 하는 방법을 단계별로 설명 됩니다.  
@@ -114,11 +114,11 @@ ASP.NET MVC는 폴더 이름에 대 한 일부 기본 명명 규칙을 사용 �
 
 | **폴더** | **용도** |
 | --- | --- |
-| **/Controllers** | 컨트롤러 응답을 브라우저에서 입력을 수행 하 고 사용자에 게 응답 반환을 결정 합니다. |
-| **/Views** | 뷰는 UI 템플릿 저장 |
-| **/Models** | 모델 보유 하 고 데이터를 조작 합니다. |
-| **/Content** | 이 폴더는 이미지, CSS 및 다른 정적 콘텐츠를 보유합니다. |
-| **/Scripts** | 이 폴더는 JavaScript 파일 저장 |
+| **/ 컨트롤러** | 컨트롤러 응답을 브라우저에서 입력을 수행 하 고 사용자에 게 응답 반환을 결정 합니다. |
+| **/ 뷰** | 뷰는 UI 템플릿 저장 |
+| **/ 모델** | 모델 보유 하 고 데이터를 조작 합니다. |
+| **/ 콘텐츠** | 이 폴더는 이미지, CSS 및 다른 정적 콘텐츠를 보유합니다. |
+| **/ 스크립트** | 이 폴더는 JavaScript 파일 저장 |
 
 이러한 폴더는 기본적으로 ASP.NET MVC 프레임 워크 "구성 보다 규칙" 방식을 사용 하 고 기본 가정을 폴더 명명 규칙을 기반으로 하기 때문에 빈 ASP.NET MVC 응용 프로그램에 포함 됩니다. 예를 들어 컨트롤러 뷰를 찾습니다 Views 폴더에 기본적으로이 코드에 명시적으로 지정 하지 않아도 됩니다. 를 작성 하는 데 필요한 코드의 양이 줄어듭니다 기본 규칙 사용 수도 쉽게 다른 개발자가 프로젝트를 이해 합니다. 이러한 규칙을 응용 프로그램 구축 하는 대로 자세한 설명할 것입니다.
 

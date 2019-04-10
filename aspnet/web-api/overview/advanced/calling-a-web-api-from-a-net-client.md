@@ -1,21 +1,22 @@
 ---
 uid: web-api/overview/advanced/calling-a-web-api-from-a-net-client
-title: .NET 클라이언트 (C#)에서 Web API 호출 | Microsoft Docs
+title: .NET 클라이언트에서 Web API 호출 (C#)-ASP.NET 4.x
 author: MikeWasson
-description: ''
+description: 이 자습서에서는.NET 4.x 응용 프로그램에서 web API를 호출 하는 방법을 보여 줍니다.
 ms.author: riande
 ms.date: 11/24/2017
+ms.custom: seoapril2019
 msc.legacyurl: /web-api/overview/advanced/calling-a-web-api-from-a-net-client
 msc.type: authoredcontent
-ms.openlocfilehash: 0c360f580285967c8fab8d33ccbb9557a7316ee1
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 113600ca1e77ae9667465464da505478fc948c9b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423141"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421110"
 ---
-<a name="call-a-web-api-from-a-net-client-c"></a>.NET 클라이언트 (C#)에서 Web API 호출
-====================
+# <a name="call-a-web-api-from-a-net-client-c"></a>.NET 클라이언트 (C#)에서 Web API 호출
+
 하 여 [Mike Wasson](https://github.com/MikeWasson) 고 [Rick Anderson](https://twitter.com/RickAndMSFT)
 
 [완료 된 프로젝트 다운로드](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client/sample)합니다. [지침을 다운로드하세요](/aspnet/core/tutorials/#how-to-download-a-sample). 

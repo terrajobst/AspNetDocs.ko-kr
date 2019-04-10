@@ -8,15 +8,15 @@ ms.date: 01/16/2019
 ms.assetid: 8bf2c4fb-4ee5-4841-bfc2-03462c1f7a7a
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis
 msc.type: authoredcontent
-ms.openlocfilehash: d49dfad368ca4b81bb865103a99ec223a1cc66df
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 39502e03196d2ba51e826d248ff0ff1e84258131
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57059580"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59420200"
 ---
-<a name="aspnet-web-deployment-using-visual-studio-deploying-to-test"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 테스트 환경에 배포
-====================
+# <a name="aspnet-web-deployment-using-visual-studio-deploying-to-test"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 테스트 환경에 배포
+
 [Tom Dykstra](https://github.com/tdykstra)
 
 > 이 자습서 시리즈에서는 배포 하는 방법을 보여 줍니다 (게시) ASP.NET 웹 응용 프로그램을 Azure App Service Web Apps 또는 Visual Studio 2017을 사용 하 여 타사 호스팅 공급자입니다. 시리즈에 대 한 자세한 내용은 [시리즈의 첫 번째 자습서](introduction.md)합니다.
@@ -172,11 +172,11 @@ Visual Studio에서 Contoso University 솔루션을 엽니다. (없습니다 프
 
 1. Visual Studio에서 엽니다는 *Grant.sql* 앞에서 만든 파일입니다.
 
-2. 선택 **연결**합니다. 
+2. **연결**을 선택합니다. 
 
     ![연결 단추](deploying-to-iis/_static/image11.png)
 
-3. 에 **서버에 연결** 대화 상자에 입력 합니다 *. \SQLExpress* 으로 **서버 이름**합니다. 선택 **연결**합니다.
+3. 에 **서버에 연결** 대화 상자에 입력 합니다 *. \SQLExpress* 으로 **서버 이름**합니다. **연결**을 선택합니다.
 
 4. 데이터베이스 드롭다운 목록에서 선택 **ContosoUniversity**합니다. 선택 **실행**합니다. 
 

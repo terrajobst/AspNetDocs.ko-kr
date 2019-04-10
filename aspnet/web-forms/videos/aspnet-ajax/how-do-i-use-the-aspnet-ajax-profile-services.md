@@ -8,15 +8,15 @@ ms.date: 07/16/2007
 ms.assetid: 8fc77048-4d1f-42bf-a947-ecc9a02b25c9
 msc.legacyurl: /web-forms/videos/aspnet-ajax/how-do-i-use-the-aspnet-ajax-profile-services
 msc.type: video
-ms.openlocfilehash: b3cb1bdbd6be4fcdc956b8dc475888b9ab0a440e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 54b82c52f0bd58a0184824a861b5f31754652ace
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57050890"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59420317"
 ---
-<a name="how-do-i-use-the-aspnet-ajax-profile-services"></a>[어떻게 할까요?] ASP.NET AJAX 프로필 서비스 사용
-====================
+# <a name="how-do-i-use-the-aspnet-ajax-profile-services"></a>[어떻게 할까요?] ASP.NET AJAX 프로필 서비스 사용
+
 [Chris Pels](https://twitter.com/chrispels)
 
 ASP.NET 2.0에서는 [속성을 프로 파일링](https://msdn.microsoft.com/library/at64shx3.aspx) 있는 ASP.NET 웹 응용 프로그램의 각 사용자에 대 한 세부 정보를 저장할 수 있습니다. ASP.NET AJAX 프로필 서비스는 서버 쪽 웹 응용 프로그램에서 사용자의 프로필 속성을 검색 하 여 클라이언트 쪽 웹 인터페이스를 허용 합니다. 이 비디오는 방법을 통해 샘플 여행 AJAX 지원 사이트를 자신이 다음 사이트를 방문 하면 세부 정보를 검색할 수 있도록 사용자의 이동 요청 정보를 저장할 수 하는 방법을 보여 줍니다.

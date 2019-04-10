@@ -8,15 +8,15 @@ ms.date: 08/14/2010
 ms.assetid: ff03dcc0-da97-458d-838f-0823e7482642
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part2
 msc.type: authoredcontent
-ms.openlocfilehash: b593c6225c05c7405c9d8b78abfd29a087d47b04
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 84f9c822f041808184b2c586ce933ba3b24615dc
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58421261"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59419836"
 ---
-<a name="adding-a-controller"></a>컨트롤러 추가
-====================
+# <a name="adding-a-controller"></a>컨트롤러 추가
+
 [Scott Hanselman](https://github.com/shanselman)
 
 > > [!NOTE]
@@ -40,7 +40,7 @@ MVC는 모델, 뷰, 컨트롤러를 나타냅니다. MVC에는 각 파트에는 
 
 새 컨트롤러 "HelloWorldController" 이름과 추가 클릭 합니다.
 
-[![컨트롤러 추가 대화 상자](getting-started-with-mvc-part2/_static/image4.png)](getting-started-with-mvc-part2/_static/image3.png)
+[![A컨트롤러 대화 dd](getting-started-with-mvc-part2/_static/image4.png)](getting-started-with-mvc-part2/_static/image3.png)
 
 HelloWorldController.cs 호출에 대해 만든 새 파일 및 해당 파일에 현재 열려 있는 오른쪽의 솔루션 탐색기에서 표시 합니다 **IDE**합니다.
 
@@ -58,13 +58,13 @@ ASP.NET MVC는 들어오는 URL에 따라 다른 컨트롤러 클래스 (및 그
 
 URL의 첫 번째 부분 실행할 컨트롤러 클래스를 결정 합니다. 따라서 /HelloWorld HelloWorldController 클래스에 매핑됩니다. URL의 두 번째 부분 클래스에 대 한 작업 메서드를 결정 합니다. /HelloWorld/Index 없었다는 실행 HelloWorldController 클래스의 index () 메서드. 만 위의 /HelloWorld 및 인덱스 암시 된 메서드를 방문 해야 함을 알 수 있습니다. 이 "Index" 라는 메서드를 명시적으로 지정 하지 않으면 컨트롤러에서 호출 되는 기본 방법 때문입니다.
 
-[![내 기본 작업](getting-started-with-mvc-part2/_static/image8.png)](getting-started-with-mvc-part2/_static/image7.png)
+[![T다음은 내 기본 작업](getting-started-with-mvc-part2/_static/image8.png)](getting-started-with-mvc-part2/_static/image7.png)
 
 이제 방문해 보도록 `http://localhost:xx/HelloWorld/Welcome.` 이제 시작 메서드는 실행 하 고 해당 HTML 문자열을 반환 합니다.
 
 마찬가지로 / [Controller] / [ActionName] / [매개 변수] 컨트롤러 HelloWorld 이며 시작 메서드에 경우에 있도록 합니다. 매개 변수를 아직 완료 하지 것입니다.
 
-[![이 시작 작업 방법](getting-started-with-mvc-part2/_static/image10.png)](getting-started-with-mvc-part2/_static/image9.png)
+[![T다음은 시작 작업 메서드입니다](getting-started-with-mvc-part2/_static/image10.png)](getting-started-with-mvc-part2/_static/image9.png)
 
 수정 해 보겠습니다 샘플 약간의 일부 정보를 URL에서 다음과 같은 예를 들어 컨트롤러에에 전달할 수 있도록: / HelloWorld/시작? name = Scott&amp;numtimes = 4. 두 매개 변수 및 아래와 같은 업데이트를 포함 하도록 시작 방법을 변경 합니다. 매개 변수 numTimes의 기본값은 1에서 전달 하지 않으면 나타내려면 C# 선택적 매개 변수 기능을 사용 했습니다에서는 note 합니다.
 

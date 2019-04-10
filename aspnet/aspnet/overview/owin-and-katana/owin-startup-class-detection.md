@@ -8,15 +8,15 @@ ms.date: 01/28/2019
 ms.assetid: 08257f55-36f4-4e39-9c88-2a5602838c79
 msc.legacyurl: /aspnet/overview/owin-and-katana/owin-startup-class-detection
 msc.type: authoredcontent
-ms.openlocfilehash: 0b34cca8b48383dbb028106651758dff889ed614
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: e4d9424d691f92aacf078faed09689daa40a44fd
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57039780"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59418341"
 ---
-<a name="owin-startup-class-detection"></a>OWIN 시작 클래스 검색
-====================
+# <a name="owin-startup-class-detection"></a>OWIN 시작 클래스 검색
+
 
 > 이 자습서에는 OWIN 시작 클래스는 로드를 구성 하는 방법을 보여 줍니다. OWIN에 대 한 자세한 내용은 참조 하세요. [는 프로젝트 Katana 개요](an-overview-of-project-katana.md)합니다. Rick anderson이 자습서가 작성 ( [ @RickAndMSFT ](https://twitter.com/#!/RickAndMSFT) ), Praburaj Thiagarajan 및 Howard Dierking ( [ @howard \_dierking](https://twitter.com/howard_dierking) ).
 >
@@ -79,7 +79,8 @@ ms.locfileid: "57039780"
      > [!NOTE]
      > 위의 코드에서 우리는 주석으로 처리를 `OwinStartup` 특성과 것 이라는 클래스를 실행 하는 규칙에 의존 하는 `Startup` 합니다.-키를 눌러 ***F5*** 응용 프로그램을 실행 합니다. 몇 번 새로 고침을 누릅니다.
 
-    ![](owin-startup-class-detection/_static/image4.png) 참고: 이 자습서에서는 이미지에 표시 된 숫자 표시 하는 것을 일치 하지 않습니다. 밀리초 문자열 페이지를 새로 고칠 때 새 응답이 표시 됩니다.
+    ![](owin-startup-class-detection/_static/image4.png)
+  참고: 이 자습서에서는 이미지에 표시 된 숫자 표시 하는 것을 일치 하지 않습니다. 밀리초 문자열 페이지를 새로 고칠 때 새 응답이 표시 됩니다.
   추적 정보를 볼 수는 **출력** 창입니다.
 
     ![](owin-startup-class-detection/_static/image5.png)

@@ -1,22 +1,23 @@
 ---
 uid: web-api/overview/formats-and-model-binding/media-formatters
-title: ASP.NET Web API 2의에서 미디어 포맷터 | Microsoft Docs
+title: ASP.NET Web API 2-ASP.NET의에서 미디어 포맷터 4.x
 author: MikeWasson
-description: ''
+description: ASP.NET에 대 한 ASP.NET Web API에서 추가 미디어 형식을 지 원하는 방법을 보여 줍니다 4.x 합니다.
 ms.author: riande
 ms.date: 01/20/2014
+ms.custom: seoapril2019
 ms.assetid: 4c56f64a-086a-44ce-99c2-4c69604cd7fd
 msc.legacyurl: /web-api/overview/formats-and-model-binding/media-formatters
 msc.type: authoredcontent
-ms.openlocfilehash: bd54a1d8ae3a2913c9d8a11c5b31ba1c829450d2
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: da0c566dad302054d7d0a6435e4c6df178c64772
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425316"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59418770"
 ---
-<a name="media-formatters-in-aspnet-web-api-2"></a>ASP.NET Web API 2의에서 미디어 포맷터
-====================
+# <a name="media-formatters-in-aspnet-web-api-2"></a>ASP.NET Web API 2의에서 미디어 포맷터
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 이 자습서에는 ASP.NET Web API에서 추가 미디어 형식을 지 원하는 방법을 보여 줍니다.

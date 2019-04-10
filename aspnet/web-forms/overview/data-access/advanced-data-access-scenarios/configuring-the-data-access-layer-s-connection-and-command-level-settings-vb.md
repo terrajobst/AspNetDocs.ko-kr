@@ -8,15 +8,15 @@ ms.date: 08/03/2007
 ms.assetid: d57dfa2b-d627-45cb-b5b1-abbf3159d770
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/configuring-the-data-access-layer-s-connection-and-command-level-settings-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 37c537931008045c5c6438fe2097652438c7e8b1
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: a6097a32f0a67436b786fcdd808964ac6b832439
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58424913"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59419576"
 ---
-<a name="configuring-the-data-access-layers-connection--and-command-level-settings-vb"></a>데이터 액세스 레이어의 연결 및 명령 수준 설정 구성(VB)
-====================
+# <a name="configuring-the-data-access-layers-connection--and-command-level-settings-vb"></a>데이터 액세스 레이어의 연결 및 명령 수준 설정 구성(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_72_VB.zip) 또는 [PDF 다운로드](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/datatutorial72vb1.pdf)
@@ -51,7 +51,7 @@ Microsoft.NET Framework는 다양 한 데이터와 함께 작동 하도록 특�
 각 TableAdapter 클래스에는 `Connection` 데이터베이스 연결 정보를 지정 하는 속성입니다. 이 속성의 데이터 형식 및 `ConnectionString` 값 TableAdapter 구성 마법사에서 선택한 항목에 의해 결정 됩니다. 회수는 먼저 TableAdapter 형식화 된 데이터 집합을 추가할 때이 마법사에서는 데이터베이스에 대 한 원본 (그림 1 참조). 이 첫 번째 단계에서 드롭 다운 목록 데이터 연결 서버 탐색기에서에서 다른 데이터베이스를 비롯 하 여 구성 파일에 지정 된 해당 데이터베이스를 포함 합니다. 사용 하려는 데이터베이스 드롭다운 목록에 없는 경우 새 연결 단추를 클릭 하 고 필요한 연결 정보를 제공 하 여 새 데이터베이스 연결을 지정할 수 있습니다.
 
 
-[![TableAdapter 구성 마법사의 첫 번째 단계](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image2.png)](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image1.png)
+[![T그 첫 번째 단계의 TableAdapter 구성 마법사](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image2.png)](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image1.png)
 
 **그림 1**: TableAdapter 구성 마법사의 첫 번째 단계 ([클릭 하 여 큰 이미지 보기](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image3.png))
 
@@ -109,7 +109,7 @@ TableAdapter 클래스의 인스턴스가 만들어질 때, 멤버 변수 `_conn
 열기는 `Northwind` 데이터 집합을 클릭 합니다 `ProductsTableAdapter` 디자이너에서 속성 창으로 이동 합니다. 이 표시 됩니다는 `ConnectionModifier` 기본값인으로 `Assembly`합니다. 있도록를 `Connection` 변경 형식화 된 데이터 집합의 어셈블리 외부에서 사용할 수 있는 속성을 `ConnectionModifier` 속성을 `Public`입니다.
 
 
-[![연결 속성 s 액세스 가능성 수준 ConnectionModifier 속성을 통해 구성할 수 있습니다.](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image7.png)](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image6.png)
+[![T연결 속성 s 액세스 가능성 수준 그 ConnectionModifier 속성을 통해 구성할 수 있습니다](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image7.png)](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image6.png)
 
 **그림 4**: `Connection` 를 통해 액세스 가능성 수준을 구성할 수 있습니다 s 속성을 `ConnectionModifier` 속성 ([전체 크기 이미지를 보려면 클릭](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image8.png))
 

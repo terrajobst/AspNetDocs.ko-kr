@@ -8,15 +8,15 @@ ms.date: 08/19/2008
 ms.assetid: eb35710d-1d99-44ac-b61f-e50af8cb328a
 msc.legacyurl: /mvc/overview/older-versions-1/unit-testing/creating-unit-tests-for-asp-net-mvc-applications-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 2bce5456d9c5465156daf511d0f75a68b35cf7d9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 47d42b8017837f15e0d56dfb3565257164c97bbe
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033350"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421032"
 ---
-<a name="creating-unit-tests-for-aspnet-mvc-applications-vb"></a>ASP.NET MVC 애플리케이션에 대한 단위 테스트 만들기(VB)
-====================
+# <a name="creating-unit-tests-for-aspnet-mvc-applications-vb"></a>ASP.NET MVC 애플리케이션에 대한 단위 테스트 만들기(VB)
+
 [Stephen walther가](https://github.com/StephenWalther)
 
 [PDF 다운로드](http://download.microsoft.com/download/8/4/8/84843d8d-1575-426c-bcb5-9d0c42e51416/ASPNET_MVC_Tutorial_07_VB.pdf)
@@ -59,12 +59,12 @@ ms.locfileid: "57033350"
 키보드 조합을 입력 하거나 목록 2에서 단위 테스트를 실행할 수 있습니다 **Ctrl + R, A** 클릭 하 여 합니다 **솔루션의 모든 테스트 실행** 단추 (그림 1 참조). 테스트를 통과 하면 그림 2에서 테스트 결과 창을 표시 됩니다.
 
 
-[![솔루션의 모든 테스트 실행](creating-unit-tests-for-asp-net-mvc-applications-vb/_static/image2.png)](creating-unit-tests-for-asp-net-mvc-applications-vb/_static/image1.png)
+[![R취소 시 모든 테스트 솔루션에서](creating-unit-tests-for-asp-net-mvc-applications-vb/_static/image2.png)](creating-unit-tests-for-asp-net-mvc-applications-vb/_static/image1.png)
 
 **그림 01**: 솔루션의 모든 테스트 실행 ([클릭 하 여 큰 이미지 보기](creating-unit-tests-for-asp-net-mvc-applications-vb/_static/image3.png))
 
 
-[![성공 했습니다.](creating-unit-tests-for-asp-net-mvc-applications-vb/_static/image5.png)](creating-unit-tests-for-asp-net-mvc-applications-vb/_static/image4.png)
+[![Success!](creating-unit-tests-for-asp-net-mvc-applications-vb/_static/image5.png)](creating-unit-tests-for-asp-net-mvc-applications-vb/_static/image4.png)
 
 **그림 02**: 성공 ([클릭 하 여 큰 이미지 보기](creating-unit-tests-for-asp-net-mvc-applications-vb/_static/image6.png))
 

@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: a86c0276-6481-46ee-8b4f-8c2009399ee9
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/disabling-actions-during-animation-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 811e1d75f79885f3f4c561d9211fec625fcf1807
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3f8073b468a431d5c4b0d222bf385c8c6d32b2a8
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57032780"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59419095"
 ---
-<a name="disabling-actions-during-animation-vb"></a>애니메이션 중에 작업 사용 안 함(VB)
-====================
+# <a name="disabling-actions-during-animation-vb"></a>애니메이션 중에 작업 사용 안 함(VB)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation7.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation7VB.pdf)
@@ -55,7 +55,7 @@ HTML 컨트롤을 포스트백 만들기 단추 하지 않을 것 이므로 웹 
 그러나 특정된 시나리오에서이 쓸모 없게 단추 이후 페이드 아웃 및 애니메이션의 끝에 표시 되지 않습니다.
 
 
-[![이 애니메이션은 실행 되는 즉시 단추가 비활성화 됩니다.](disabling-actions-during-animation-vb/_static/image2.png)](disabling-actions-during-animation-vb/_static/image1.png)
+[![T이 애니메이션은 실행 되는 즉시 그 단추가 비활성화 됩니다](disabling-actions-during-animation-vb/_static/image2.png)](disabling-actions-during-animation-vb/_static/image1.png)
 
 이 애니메이션은 실행 되는 즉시 단추가 비활성화 됩니다 ([클릭 하 여 큰 이미지 보기](disabling-actions-during-animation-vb/_static/image3.png))
 

@@ -8,15 +8,15 @@ ms.date: 01/27/2009
 ms.assetid: 239fd3ca-5630-4b8d-bc4b-2f906b1d3504
 msc.legacyurl: /mvc/overview/older-versions-1/security/authenticating-users-with-forms-authentication-cs
 msc.type: authoredcontent
-ms.openlocfilehash: d69ae977b3e6a323d1dff1443f09ac40e8f9a449
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b52abab12503918603419c9ccfabefcffdfd7e06
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57054800"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59418276"
 ---
-<a name="authenticating-users-with-forms-authentication-c"></a>폼 인증으로 사용자 인증(C#)
-====================
+# <a name="authenticating-users-with-forms-authentication-c"></a>폼 인증으로 사용자 인증(C#)
+
 by [Microsoft](https://github.com/microsoft)
 
 > [Authorize] 특성을 사용 하는 방법을 알아봅니다 암호로 MVC 응용 프로그램의 특정 페이지를 보호 합니다. 사용자 및 역할 만들기 및 관리 하는 웹 사이트 관리 도구를 사용 하는 방법을 알아봅니다. 또한 사용자 계정 및 역할 정보를 저장 하는 위치를 구성 하는 방법에 알아봅니다.

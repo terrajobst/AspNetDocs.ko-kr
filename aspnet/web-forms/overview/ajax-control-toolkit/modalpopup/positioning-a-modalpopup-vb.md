@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 8a07210c-eb0e-485e-9ee8-82a101520e65
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/modalpopup/positioning-a-modalpopup-vb
 msc.type: authoredcontent
-ms.openlocfilehash: a507cb173b6dba96ca532a249fa9d495ded7d4e8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: e37d2f4450c697f963d954c2fbb58e3ed20a1566
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57028240"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421149"
 ---
-<a name="positioning-a-modalpopup-vb"></a>ModalPopup 위치 지정(VB)
-====================
+# <a name="positioning-a-modalpopup-vb"></a>ModalPopup 위치 지정(VB)
+
 by [Christian Wenz](https://github.com/wenz)
 
 [코드를 다운로드](http://download.microsoft.com/download/2/4/0/24052038-f942-4336-905b-b60ae56f0dd5/ModalPopup4.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/modalpopup4VB.pdf)
@@ -55,7 +55,7 @@ ASP.NET AJAX와 Control Toolkit의 기능을 활성화 하기 위해는 `ScriptM
 [!code-aspx[Main](positioning-a-modalpopup-vb/samples/sample6.aspx)]
 
 
-[![지정 된 위치에서 모달 팝업 표시](positioning-a-modalpopup-vb/_static/image2.png)](positioning-a-modalpopup-vb/_static/image1.png)
+[![T그 모달 팝업이 표시 되는 지정 된 위치에서](positioning-a-modalpopup-vb/_static/image2.png)](positioning-a-modalpopup-vb/_static/image1.png)
 
 모달 팝업에 지정 된 위치에 있는 표시 되는 경우 ([클릭 하 여 큰 이미지 보기](positioning-a-modalpopup-vb/_static/image3.png))
 

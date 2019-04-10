@@ -8,15 +8,15 @@ ms.date: 06/10/2008
 ms.assetid: 48b58a18-5ea4-468c-b326-f35331b3e1e9
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/urls-in-master-pages-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 6f22159c4e70beeb590039ea0d4b8126c5424bd5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a218dffb3d23ca95e9864fb7b272bc6a004386c4
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57078578"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421201"
 ---
-<a name="urls-in-master-pages-c"></a>마스터 페이지의 URL(C#)
-====================
+# <a name="urls-in-master-pages-c"></a>마스터 페이지의 URL(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [코드를 다운로드](http://download.microsoft.com/download/e/e/f/eef369f5-743a-4a52-908f-b6532c4ce0a4/ASPNET_MasterPages_Tutorial_04_CS.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/8/f/6/8f6349e4-6554-405a-bcd7-9b094ba5089a/ASPNET_MasterPages_Tutorial_04_CS.pdf)
@@ -75,7 +75,7 @@ ms.locfileid: "57078578"
 때문에 `<img>` 요소의 `src` 특성은 상대 URL을 브라우저 표시 하려고를 `Images` 웹 페이지의 폴더 위치를 기준으로 폴더입니다. 즉, 브라우저 이미지 파일을 찾고 `Admin/Images/PoweredByASPNET.gif`합니다.
 
 
-[![PoweredByASPNET.gif 이미지 파일을 찾을 수 없습니다.](urls-in-master-pages-cs/_static/image3.png)](urls-in-master-pages-cs/_static/image2.png)
+[![The PoweredByASPNET.gif Image File Cannot Be Found](urls-in-master-pages-cs/_static/image3.png)](urls-in-master-pages-cs/_static/image2.png)
 
 **그림 02**: 합니다 `PoweredByASPNET.gif` 이미지 파일을 찾을 수 없습니다 ([큰 이미지를 보려면 클릭](urls-in-master-pages-cs/_static/image4.png))
 
@@ -92,7 +92,7 @@ ms.locfileid: "57078578"
 잠시 업데이트 하는 `<img>` 요소의 `src` 위에 표시 된 형식 중 하나를 사용 하 여 절대 url 특성 및 다음 방문 하 여는 `~/Admin/Default.aspx` 브라우저를 통해 페이지입니다. 브라우저를 제대로 찾아 표시할이 이번을 `PoweredByASPNET.gif` 이미지 파일 (그림 3 참조).
 
 
-[![PoweredByASPNET.gif 이미지는 이제 표시](urls-in-master-pages-cs/_static/image6.png)](urls-in-master-pages-cs/_static/image5.png)
+[![T그 PoweredByASPNET.gif 이미지는 이제 표시](urls-in-master-pages-cs/_static/image6.png)](urls-in-master-pages-cs/_static/image5.png)
 
 **그림 03**: 합니다 `PoweredByASPNET.gif` 이미지는 이제 표시 됩니다 ([큰 이미지를 보려면 클릭](urls-in-master-pages-cs/_static/image7.png))
 

@@ -8,15 +8,15 @@ ms.date: 07/30/2013
 ms.assetid: 0d6fb83b-71f7-425d-8dec-981197d7ec42
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/reading-related-data-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: 4767b015db0bad09942802827ce54162687fcabc
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f86212c1cb559c164342997fb0e4208339b5e3cc
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033790"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421123"
 ---
-<a name="reading-related-data-with-the-entity-framework-in-an-aspnet-mvc-application-5-of-10"></a>관련 (5 / 10) ASP.NET MVC 응용 프로그램에서 Entity Framework 사용 하 여 데이터 읽기
-====================
+# <a name="reading-related-data-with-the-entity-framework-in-an-aspnet-mvc-application-5-of-10"></a>관련 (5 / 10) ASP.NET MVC 응용 프로그램에서 Entity Framework 사용 하 여 데이터 읽기
+
 [Tom Dykstra](https://github.com/tdykstra)
 
 [완료 된 프로젝트 다운로드](http://code.msdn.microsoft.com/Getting-Started-with-dd0e2ed8)
@@ -152,11 +152,13 @@ Entity Framework 관련된 데이터를 엔터티의 탐색 속성으로 로드�
 > 
 > 경로 데이터는 모델 바인더는 라우팅 테이블에 지정 된 URL 세그먼트에 있는 데이터입니다. 기본 경로 지정 하는 예를 들어 `controller`하십시오 `action`, 및 `id` 세그먼트:
 > 
+> ```csharp
 > routes.MapRoute(  
->  이름: "Default",  
+>  name: "Default",  
 >  url: "{controller}/{action}/{id}",  
->  기본값: new {컨트롤러 = "홈" 작업 = "Index", id = UrlParameter.Optional}  
+>  defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }  
 > );
+> ```
 > 
 > 다음 URL에서 기본 경로 매핑합니다 `Instructor` 으로 `controller`를 `Index` 으로 `action` 1을 `id`; 이들은 경로 데이터 값입니다.
 > 

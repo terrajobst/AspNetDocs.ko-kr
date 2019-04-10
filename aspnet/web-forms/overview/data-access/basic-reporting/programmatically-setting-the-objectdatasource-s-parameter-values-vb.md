@@ -8,15 +8,15 @@ ms.date: 03/31/2010
 ms.assetid: 0ecb03b6-52a0-4731-8c7a-436391d36838
 msc.legacyurl: /web-forms/overview/data-access/basic-reporting/programmatically-setting-the-objectdatasource-s-parameter-values-vb
 msc.type: authoredcontent
-ms.openlocfilehash: f823d1db7f98dcbbef12d20df4a28e39fae0ac26
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0f5c5d4530092cced02834161ae91d840f42de1b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062350"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59420733"
 ---
-<a name="programmatically-setting-the-objectdatasources-parameter-values-vb"></a>ObjectDataSource의 매개 변수 값을 프로그래밍 방식으로 설정(VB)
-====================
+# <a name="programmatically-setting-the-objectdatasources-parameter-values-vb"></a>ObjectDataSource의 매개 변수 값을 프로그래밍 방식으로 설정(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/5/d/7/5d7571fc-d0b7-4798-ad4a-c976c02363ce/ASPNET_Data_Tutorial_6_VB.exe) 또는 [PDF 다운로드](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/datatutorial06vb1.pdf)
@@ -33,7 +33,7 @@ ms.locfileid: "57062350"
 때마다 ObjectDataSource의 `Select` 메서드가 호출 되는 ObjectDataSource 먼저 발생 합니다. 해당 [선택 하면 이벤트](https://msdn.microsoft.com/library/system.web.ui.webcontrols.objectdatasource.selecting%28VS.80%29.aspx). ObjectDataSource의 기본 개체의 메서드에 다음 호출 됩니다. ObjectDataSource의 완료 되 면 [선택한 이벤트](https://msdn.microsoft.com/library/system.web.ui.webcontrols.objectdatasource.selected%28VS.80%29.aspx) 발생 합니다 (그림 1에서는이 이벤트 순서는을 설명 하는 데 사용). ObjectDataSource의 기본 개체의 메서드에 전달 된 매개 변수 값을 설정 하거나에 대 한 이벤트 처리기에서 사용자 지정할 수는 `Selecting` 이벤트입니다.
 
 
-[![ObjectDataSource의 선택 및 선택 하면 이벤트 발생 하기 전과 후 해당 기본 개체의 메서드는 호출](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image2.png)](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image1.png)
+[![TObjectDataSource의 선택 및 선택 하면 이벤트 발생 하기 전과 후 해당 기본 개체의 메서드는 호출](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image2.png)](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image1.png)
 
 **그림 1**: ObjectDataSource의 `Selected` 하 고 `Selecting` 이벤트 실행 전과 후 해당 기본 개체의 메서드가 호출 됩니다 ([클릭 하 여 큰 이미지 보기](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image3.png))
 
@@ -47,7 +47,7 @@ ms.locfileid: "57062350"
 이러한 직원을 검색 하는 수단을 추가 해야 하는 첫 번째 예제에 대 한 해당 `HireDate` 지정된 된 월에 발생 합니다. 메서드를 먼저 만들어야 하는 아키텍처에 따라이 기능을 제공 하도록 `EmployeesTableAdapter` 적절 한 SQL 문이 매핑되는 합니다. 이 작업을 수행 하려면 Northwind 형식화 된 데이터 집합을 열어 시작 합니다. 마우스 오른쪽 단추로 클릭는 `EmployeesTableAdapter` 레이블을 지정 하 고 쿼리 추가 선택 합니다.
 
 
-[![새 쿼리를 EmployeesTableAdapter 추가](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image5.png)](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image4.png)
+[![A새 쿼리를 EmployeesTableAdapter dd](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image5.png)](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image4.png)
 
 **그림 2**: 새 쿼리를 추가 합니다 `EmployeesTableAdapter` ([큰 이미지를 보려면 클릭](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image6.png))
 
@@ -55,7 +55,7 @@ ms.locfileid: "57062350"
 행을 반환 하는 SQL 문을 추가 하려면 선택 합니다. 지정 도달 하면를 `SELECT` 문의 기본 화면 `SELECT` 문을 `EmployeesTableAdapter` 이미 로드 됩니다. 에 추가 합니다 `WHERE` 절: `WHERE DATEPART(m, HireDate) = @Month`합니다. [DATEPART](https://msdn.microsoft.com/library/ms174420.aspx) 는 특정 날짜 부분을 반환 하는 T-SQL 함수는 `datetime` 형식에 사용 하 고이 경우 `DATEPART` 월을 반환 하는 `HireDate` 열입니다.
 
 
-[![반환 된 행 위치의 HireDate 열만 보다 작거나 같음는 @HiredBeforeDate 매개 변수](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image8.png)](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image7.png)
+[![R만 해당 행의 HireDate 열 위치 돌아가기 () 보다 작거나 같음는 @HiredBeforeDate 매개 변수](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image8.png)](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image7.png)
 
 **그림 3**: 만 해당 행 위치를 반환 합니다 `HireDate` 열이 보다 작거나 같음 합니다 `@HiredBeforeDate` 매개 변수 ([전체 크기 이미지를 보려면 클릭](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image9.png))
 
@@ -63,7 +63,7 @@ ms.locfileid: "57062350"
 마지막으로 변경 합니다 `FillBy` 하 고 `GetDataBy` 메서드 이름을 `FillByHiredDateMonth` 및 `GetEmployeesByHiredDateMonth`, 각각.
 
 
-[![FillBy GetDataBy 보다 더 적절 한 메서드 이름 선택](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image11.png)](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image10.png)
+[![C더 적절 한 메서드 이름을 보다 FillBy 설치할 및 GetDataBy](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image11.png)](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image10.png)
 
 **그림 4**: 더 적절 한 메서드 이름을 보다 선택할 `FillBy` 하 고 `GetDataBy` ([클릭 하 여 큰 이미지 보기](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image12.png))
 
@@ -71,7 +71,7 @@ ms.locfileid: "57062350"
 데이터 집합의 디자인 화면으로 돌아와 마법사를 완료 하려면 마침을 클릭 합니다. `EmployeesTableAdapter` 이제 지정된 된 월에 고용 된 직원에 액세스 하기 위한 메서드 집합을 새 포함 됩니다.
 
 
-[![새 메서드가 데이터 집합의 디자인 화면에 표시](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image14.png)](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image13.png)
+[![T또한 데이터 집합의 디자인 화면에서 새 메서드가 표시](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image14.png)](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image13.png)
 
 **그림 5**: 데이터 집합의 디자인 화면에서 새 메서드가 표시 ([클릭 하 여 큰 이미지 보기](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image15.png))
 
@@ -90,12 +90,12 @@ ms.locfileid: "57062350"
 이 예제에 대 한 마지막 단계 직원 채용 된 연주기 일이 월이 표시 됩니다. 하기 위한 GridView를 추가 하 여 시작 합니다 `ProgrammaticParams.aspx` 페이지를 `BasicReporting` 폴더 새 ObjectDataSource 데이터 원본으로 추가 합니다. ObjectDataSource를 사용 하 여 구성 합니다 `EmployeesBLL` 클래스를 `SelectMethod` 로 `GetEmployeesByHiredDateMonth(month)`합니다.
 
 
-[![EmployeesBLL 클래스 사용](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image17.png)](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image16.png)
+[![Use EmployeesBLL 클래스](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image17.png)](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image16.png)
 
 **그림 6**: 사용 된 `EmployeesBLL` 클래스 ([큰 이미지를 보려면 클릭](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image18.png))
 
 
-[![The GetEmployeesByHiredDateMonth(month)에서 선택 메서드](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image20.png)](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image19.png)
+[![SGetEmployeesByHiredDateMonth(month) 메서드 선택](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image20.png)](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image19.png)
 
 **그림 7**: Select From 합니다 `GetEmployeesByHiredDateMonth(month)` 메서드 ([큰 이미지를 보려면 클릭](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image21.png))
 
@@ -103,7 +103,7 @@ ms.locfileid: "57062350"
 최종 화면에서는 제공 하는 `month` 매개 변수 값의 원본입니다. 하므로이 값을 프로그래밍 방식으로 설정 됩니다 None 기본 매개 변수 원본 설정 된 채로 두고 옵션 하 고 마침을 클릭 합니다.
 
 
-[![매개 변수 원본 집합을 None으로 유지](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image23.png)](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image22.png)
+[![L매개 변수 원본 집합을 None으로 유지](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image23.png)](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image22.png)
 
 **그림 8**: None 매개 변수 원본 집합을 그대로 둡니다 ([클릭 하 여 큰 이미지 보기](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image24.png))
 
@@ -129,7 +129,7 @@ ms.locfileid: "57062350"
 브라우저를 통해이 페이지를 방문할 때 보면 하나만 해당 직원 (3 월) 이번 달에 고용 된 회사 1994 되었으며는 Laura Callahan 합니다.
 
 
-[![해당 기념일 이번 달 나와 직원](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image27.png)](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image26.png)
+[![T직원이 있는 기념일이 월 나와 호스](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image27.png)](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image26.png)
 
 **그림 10**: 이러한 직원 있는 기념일이 월 표시 됩니다 ([클릭 하 여 큰 이미지 보기](programmatically-setting-the-objectdatasource-s-parameter-values-vb/_static/image28.png))
 

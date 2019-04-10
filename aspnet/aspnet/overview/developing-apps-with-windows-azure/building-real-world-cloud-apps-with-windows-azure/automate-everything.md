@@ -8,15 +8,15 @@ ms.date: 06/12/2014
 ms.assetid: ba6e6baa-9b9f-471f-b39d-b007a3addadc
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/automate-everything
 msc.type: authoredcontent
-ms.openlocfilehash: 18e988279b56e479b0bb27de2f01ab22a2e70301
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: d27c8c1910a79cea8ccdf4231d3bc2b80a20dc68
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422612"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59418367"
 ---
-<a name="automate-everything-building-real-world-cloud-apps-with-azure"></a>(Azure 사용 하 여 실제 클라우드 앱 빌드) 모든 것을 자동화합니다
-====================
+# <a name="automate-everything-building-real-world-cloud-apps-with-azure"></a>(Azure 사용 하 여 실제 클라우드 앱 빌드) 모든 것을 자동화합니다
+
 하 여 [Mike Wasson](https://github.com/MikeWasson)하십시오 [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
 
 [다운로드 해결 프로젝트](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자책 다운로드](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
@@ -125,7 +125,7 @@ Azure 서비스를 관리 하는 PowerShell 스크립트를 실행 하려면 Azu
 
 ### <a name="create-the-storage-account"></a>저장소 계정 만들기
 
-기본 스크립트를 실행 합니다는 <em>새로 만들기-AzureStorage.ps1</em> 스크립트를 지정 "<em>&lt;websitename&gt;</em>저장소" 저장소 계정 이름에 대 한 동일한 데이터 센터의 위치 및 웹 앱입니다.
+기본 스크립트를 실행 합니다는 *새로 만들기-AzureStorage.ps1* 스크립트를 지정 "*&lt;websitename&gt;* 저장소" 저장소 계정 이름에 대 한 동일한 데이터 센터의 위치 및 웹 앱입니다.
 
 [!code-powershell[Main](automate-everything/samples/sample4.ps1?highlight=3)]
 

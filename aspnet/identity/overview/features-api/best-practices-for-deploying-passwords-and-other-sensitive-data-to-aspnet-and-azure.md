@@ -1,22 +1,23 @@
 ---
 uid: identity/overview/features-api/best-practices-for-deploying-passwords-and-other-sensitive-data-to-aspnet-and-azure
-title: ASP.NET 및 Azure App Service에 암호 및 기타 중요 한 데이터 배포에 대 한 유용한 | Microsoft Docs
+title: 암호 및 기타 중요 한 데이터 배포를 ASP.NET 및 Azure App Service-ASP.NET 4.x
 author: Rick-Anderson
 description: 이 자습서는 어떻게 코드가 안전 하 게 저장 및 액세스할 수 보안 정보를 보여줍니다. 가장 중요 한 점은 암호나 다른 발신자 저장 하지 말아야 하는 중...
 ms.author: riande
 ms.date: 05/21/2015
 ms.assetid: 97902c66-cb61-4d11-be52-73f962f2db0a
+ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/features-api/best-practices-for-deploying-passwords-and-other-sensitive-data-to-aspnet-and-azure
 msc.type: authoredcontent
-ms.openlocfilehash: 8b5d6bf9fad72218341e4e0b90144da01abea3aa
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 2620d9e2eaf3c7719d9a289e42bb91270708ae79
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046890"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59419446"
 ---
-<a name="best-practices-for-deploying-passwords-and-other-sensitive-data-to-aspnet-and-azure-app-service"></a>ASP.NET 및 Azure App Service에 암호와 기타 중요한 데이터를 배포하는 방법에 대한 모범 사례
-====================
+# <a name="best-practices-for-deploying-passwords-and-other-sensitive-data-to-aspnet-and-azure-app-service"></a>ASP.NET 및 Azure App Service에 암호와 기타 중요한 데이터를 배포하는 방법에 대한 모범 사례
+
 [Rick Anderson]((https://twitter.com/RickAndMSFT))
 
 > 이 자습서는 어떻게 코드가 안전 하 게 저장 및 액세스할 수 보안 정보를 보여줍니다. 무엇보다 중요한 점은 절대로 소스 코드에 암호나 기타 중요한 데이터를 저장하면 안 될 뿐만 아니라, 프로덕션 환경의 보안 정보를 개발 및 테스트 모드에서 사용해서는 안 된다는 것입니다

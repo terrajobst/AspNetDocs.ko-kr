@@ -8,15 +8,15 @@ ms.date: 05/30/2007
 ms.assetid: d29a7c41-0628-4a23-9dfc-bfea9c6c1054
 msc.legacyurl: /web-forms/overview/data-access/caching-data/caching-data-in-the-architecture-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 3971140aa7a6c829287e74df804694c19e34adcf
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7637e23678af80ae037292fd3f89ef74167c8242
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57028050"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59419251"
 ---
-<a name="caching-data-in-the-architecture-c"></a>아키텍처에서 데이터 캐싱(C#)
-====================
+# <a name="caching-data-in-the-architecture-c"></a>아키텍처에서 데이터 캐싱(C#)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_59_CS.exe) 또는 [PDF 다운로드](caching-data-in-the-architecture-cs/_static/datatutorial59cs1.pdf)
@@ -159,7 +159,7 @@ Let s 업데이트는 `AddCacheItem(key, value)` 메서드는 캐시에이 메�
 캐싱 계층의 클래스 및 메서드를 사용할 수 있습니다 데이터로 작업 하는 기술을 사용 하 여에서는이 자습서 전체에서 ve. 캐시 된 데이터를 사용 하 여 작업을 설명 하기 위해 변경 내용을 저장 합니다 `ProductsCL` 클래스를 열고는 `FromTheArchitecture.aspx` 페이지에서 `Caching` 폴더 GridView를 추가 하 고 합니다. GridView가 스마트 태그에서 새 ObjectDataSource를 만듭니다. 마법사가 첫 번째 단계에 표시 됩니다는 `ProductsCL` 드롭 다운 목록에서 옵션 중 하나로 클래스입니다.
 
 
-[![비즈니스 개체 드롭다운 목록에 포함 되어 ProductsCL 클래스](caching-data-in-the-architecture-cs/_static/image5.png)](caching-data-in-the-architecture-cs/_static/image4.png)
+[![T비즈니스 개체 드롭다운 목록에 포함 되어 그 ProductsCL 클래스](caching-data-in-the-architecture-cs/_static/image5.png)](caching-data-in-the-architecture-cs/_static/image4.png)
 
 **그림 4**: 합니다 `ProductsCL` 클래스는 비즈니스 개체 드롭다운 목록에 포함 됩니다 ([큰 이미지를 보려면 클릭](caching-data-in-the-architecture-cs/_static/image6.png))
 
@@ -167,7 +167,7 @@ Let s 업데이트는 `AddCacheItem(key, value)` 메서드는 캐시에이 메�
 선택한 후 `ProductsCL`, 다음을 클릭 합니다. 선택 탭의 드롭다운 목록에 두 개의 항목이- `GetProducts()` 하 고 `GetProductsByCategoryID(categoryID)` [업데이트] 탭에 있는 유일한 및 `UpdateProduct` 오버 로드 합니다. 선택 된 `GetProducts()` 선택 탭에서 메서드 및 `UpdateProducts` 클릭 하 고 업데이트 탭에서 메서드를 완료 합니다.
 
 
-[![드롭다운 목록에 s ProductsCL 클래스 메서드가 나와](caching-data-in-the-architecture-cs/_static/image8.png)](caching-data-in-the-architecture-cs/_static/image7.png)
+[![T그 ProductsCL 클래스의 메서드 드롭다운 목록에 나열 되어](caching-data-in-the-architecture-cs/_static/image8.png)](caching-data-in-the-architecture-cs/_static/image7.png)
 
 **그림 5**: 합니다 `ProductsCL` s 클래스 메서드는 드롭다운 목록에 나열 됩니다 ([큰 이미지를 보려면 클릭](caching-data-in-the-architecture-cs/_static/image9.png))
 

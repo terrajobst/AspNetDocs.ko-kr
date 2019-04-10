@@ -8,15 +8,15 @@ ms.date: 02/18/2013
 ms.assetid: 6d40d276-1642-4a77-b6c9-02ac914f6805
 msc.legacyurl: /web-forms/overview/getting-started/hands-on-labs/whats-new-in-aspnet-and-web-development-in-visual-studio-2012
 msc.type: authoredcontent
-ms.openlocfilehash: 6d5af6563bdf3872110497f4b142dd7353c8d64c
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 3833e3f3c6c49ff2b317ad04aff33c9119cb1f41
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58426122"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59420213"
 ---
-<a name="whats-new-in-aspnet-and-web-development-in-visual-studio-2012"></a>Visual Studio 2012의 새로운 ASP.NET 및 웹 개발 기능
-====================
+# <a name="whats-new-in-aspnet-and-web-development-in-visual-studio-2012"></a>Visual Studio 2012의 새로운 ASP.NET 및 웹 개발 기능
+
 [웹 캠프 팀](https://twitter.com/webcamps)
 
 > 새 버전의 Visual Studio에서는 다양 한 웹 기술을 사용할 경우 환경 및 성능이 향상에 집중 하는 향상 된 기능을 소개 합니다. CSS, JavaScript 및 HTML에 대 한 visual Studio 편집기 가장 많이 코드 지원을 IntelliSense에서 자동 들여쓰기 등의 대부분을 포함 하도록 완전히 새롭게 수정 되었습니다 했습니다. 성능에 대 한 묶음 및 축소는 이제 처럼 통합 기본 제공 기능 페이지를 손쉽게 줄일을 로드 합니다.
@@ -720,7 +720,7 @@ Visual Studio JavaScript 편집기를 액세스할 수 있고 구성 코드 모�
 
     *VS Express for Web 타일*
 
-* * *
+---
 
 <a id="AppendixB"></a>
 

@@ -8,15 +8,15 @@ ms.date: 10/29/2018
 ms.assetid: 0675bdc7-282f-4f47-b7f3-7e02133940ca
 msc.legacyurl: /web-api/overview/web-api-routing-and-actions/routing-in-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: a7bc998fc23c0453fc9cd6ac1e7b9af7bd516225
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 85862c094cc54365267b1f21e68d235a15519cda
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061350"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59419238"
 ---
-<a name="routing-in-aspnet-web-api"></a>ASP.NET Web API에서 라우팅
-====================
+# <a name="routing-in-aspnet-web-api"></a>ASP.NET Web API에서 라우팅
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 이 문서에서는 ASP.NET Web API 컨트롤러에 HTTP 요청을 라우팅합니다 하는 방법을 설명 합니다.
@@ -69,7 +69,7 @@ Web API 프레임 워크는 HTTP 요청을 받으면 라우팅 테이블에 경�
 
 | HTTP 동사 | URI 경로 | 작업 | 매개 변수 |
 | --- | --- | --- | --- |
-| 가져오기 | api/제품 | GetAllProducts | *(none)* |
+| 가져오기 | api/제품 | GetAllProducts | *(없음)* |
 | 가져오기 | api/제품/4 | GetProductById | 4 |
 | Delete | api/제품/4 | DeleteProduct | 4 |
 | 올리기 | api/제품 | *(일치)* |  |

@@ -8,15 +8,15 @@ ms.date: 06/26/2014
 ms.assetid: 72657550-ec09-4779-9bfc-2fb15ecd51c7
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v4/entity-relations-in-odata-v4
 msc.type: authoredcontent
-ms.openlocfilehash: d07ddab83462ee1bc84ba8ab15fe906937f506e6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: fbafb2b2346689271905db5790cdddeeb809b070
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57054620"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59418809"
 ---
-<a name="entity-relations-in-odata-v4-using-aspnet-web-api-22"></a>ASP.NET Web API 2.2 사용 하 여 OData v4의 엔터티 관계
-====================
+# <a name="entity-relations-in-odata-v4-using-aspnet-web-api-22"></a>ASP.NET Web API 2.2 사용 하 여 OData v4의 엔터티 관계
+
 [Mike Wasson](https://github.com/MikeWasson)
 
 > 대부분의 데이터 집합 엔터티 간의 관계를 정의합니다. 고객은 주문; 온라인 설명서가 작성자; 제품 공급 업체에 있습니다. OData를 클라이언트 엔터티 관계 탐색할 수 있습니다. 제품에 지정 된 공급자를 찾을 수 있습니다. 만들기 또는 관계를 제거할 수도 있습니다. 예를 들어, 제품 공급 업체를 설정할 수 있습니다.

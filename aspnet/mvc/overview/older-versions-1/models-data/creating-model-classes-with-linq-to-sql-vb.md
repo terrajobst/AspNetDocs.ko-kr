@@ -8,15 +8,15 @@ ms.date: 10/07/2008
 ms.assetid: a4a25a75-d71f-4509-98b4-df72e748985a
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/creating-model-classes-with-linq-to-sql-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 168fbb914b54f88a78db63c16b03c55cc59c4a11
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 212287ea384cf54f9eda477e6f706637d10dd54a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57053340"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59419901"
 ---
-<a name="creating-model-classes-with-linq-to-sql-vb"></a>LINQ to SQL을 사용하여 모델 클래스 만들기(VB)
-====================
+# <a name="creating-model-classes-with-linq-to-sql-vb"></a>LINQ to SQL을 사용하여 모델 클래스 만들기(VB)
+
 by [Microsoft](https://github.com/microsoft)
 
 [PDF 다운로드](http://download.microsoft.com/download/1/1/f/11f721aa-d749-4ed7-bb89-a681b68894e6/ASPNET_MVC_Tutorial_10_VB.pdf)
@@ -43,7 +43,7 @@ MVC 모델을 모든 MVC 뷰 또는 MVC 컨트롤러에서 포함 되지 않은 
 이 자습서-모델 클래스-을 빌드하는 방법을 보여 주기 위해 구축 간단한 영화 데이터베이스 응용 프로그램입니다. 첫 번째 단계는 새 데이터베이스를 만드는 것입니다. 앱을 마우스 오른쪽 단추로 클릭\_메뉴 옵션을 선택 하는 솔루션 탐색기 창에서 데이터 폴더 **추가, 새 항목**합니다. SQL Server Database 템플릿을 선택, MoviesDB.mdf, 이름을 지정 하 고 클릭 합니다 **추가** 단추 (그림 1 참조).
 
 
-[![새 SQL Server 데이터베이스 추가](creating-model-classes-with-linq-to-sql-vb/_static/image2.png)](creating-model-classes-with-linq-to-sql-vb/_static/image1.png)
+[![A이어지지 새 SQL Server 데이터베이스](creating-model-classes-with-linq-to-sql-vb/_static/image2.png)](creating-model-classes-with-linq-to-sql-vb/_static/image1.png)
 
 **그림 01**: 새 SQL Server 데이터베이스 추가 ([클릭 하 여 큰 이미지 보기](creating-model-classes-with-linq-to-sql-vb/_static/image3.png))
 
@@ -55,7 +55,7 @@ MVC 모델을 모든 MVC 뷰 또는 MVC 컨트롤러에서 포함 되지 않은 
 |---|----------------------------------------------------------------------------------------------------|
 |   |                                                                                                    |
 
-[![서버 탐색기 창을 사용 하 여](creating-model-classes-with-linq-to-sql-vb/_static/image5.png)](creating-model-classes-with-linq-to-sql-vb/_static/image4.png)
+[![U서버 탐색기 창에서 로그온](creating-model-classes-with-linq-to-sql-vb/_static/image5.png)](creating-model-classes-with-linq-to-sql-vb/_static/image4.png)
 
 **그림 02**: 서버 탐색기 창을 사용 하 여 ([클릭 하 여 큰 이미지 보기](creating-model-classes-with-linq-to-sql-vb/_static/image6.png))
 
@@ -63,7 +63,7 @@ MVC 모델을 모든 MVC 뷰 또는 MVC 컨트롤러에서 포함 되지 않은 
 이 영화를 나타내는 데이터베이스에 테이블을 추가 해야 합니다. 테이블 폴더를 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을 선택 **새 테이블 추가**합니다. 이 메뉴 옵션을 선택 하면 테이블 디자이너를 엽니다 (그림 3 참조).
 
 
-[![서버 탐색기 창을 사용 하 여](creating-model-classes-with-linq-to-sql-vb/_static/image8.png)](creating-model-classes-with-linq-to-sql-vb/_static/image7.png)
+[![U서버 탐색기 창에서 로그온](creating-model-classes-with-linq-to-sql-vb/_static/image8.png)](creating-model-classes-with-linq-to-sql-vb/_static/image7.png)
 
 **그림 03**: 테이블 디자이너 ([클릭 하 여 큰 이미지 보기](creating-model-classes-with-linq-to-sql-vb/_static/image9.png))
 
@@ -87,7 +87,7 @@ Id 열에 두 가지 특별 한 작업을 수행 해야 합니다. 첫째, 테�
 MVC 모델은 LINQ to SQL 클래스 tblMovie 데이터베이스 테이블을 나타내는 포함 됩니다. 이러한 LINQ to SQL 클래스를 만드는 가장 쉬운 방법은 Models 폴더를 마우스 오른쪽 단추로 클릭을 선택 하는 것 **추가, 새 항목**, LINQ to SQL 클래스 템플릿 선택, 클래스 이름을 Movie.dbml, 제공 및 클릭을 **추가**단추 (그림 4 참조).
 
 
-[![LINQ to SQL 클래스 만들기](creating-model-classes-with-linq-to-sql-vb/_static/image11.png)](creating-model-classes-with-linq-to-sql-vb/_static/image10.png)
+[![CLINQ to SQL 클래스 reating](creating-model-classes-with-linq-to-sql-vb/_static/image11.png)](creating-model-classes-with-linq-to-sql-vb/_static/image10.png)
 
 **그림 04**: LINQ to SQL 클래스 만들기 ([클릭 하 여 큰 이미지 보기](creating-model-classes-with-linq-to-sql-vb/_static/image12.png))
 
@@ -95,7 +95,7 @@ MVC 모델은 LINQ to SQL 클래스 tblMovie 데이터베이스 테이블을 나
 영화 LINQ to SQL 클래스를 만든 후에 즉시 Object Relational Designer에 표시 됩니다. Object Relational Designer LINQ to SQL 나타내는 클래스는 특정 데이터베이스 테이블을 만들려면 서버 탐색기 창에서 데이터베이스 테이블을 끌 수 있습니다. Object Relational Designer tblMovie 데이터베이스 테이블을 추가 해야 (그림 4 참조).
 
 
-[![Object Relational Designer를 사용 하 여](creating-model-classes-with-linq-to-sql-vb/_static/image14.png)](creating-model-classes-with-linq-to-sql-vb/_static/image13.png)
+[![U노래 개체 관계형 디자이너](creating-model-classes-with-linq-to-sql-vb/_static/image14.png)](creating-model-classes-with-linq-to-sql-vb/_static/image13.png)
 
 **그림 05**: Object Relational Designer를 사용 하 여 ([클릭 하 여 큰 이미지 보기](creating-model-classes-with-linq-to-sql-vb/_static/image15.png))
 
@@ -135,7 +135,7 @@ HomeController 클래스 및 인덱스 보기 수정 후 응용 프로그램을 
 TblMovies 데이터베이스 테이블에 레코드를 추가 하려면 서버 탐색기 창 (Visual Web Developer에서 데이터베이스 탐색기 창)에서 tblMovies 데이터베이스 테이블을 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을 선택 **테이블 데이터 표시**합니다. (그림 5 참조)에 표시 되는 표를 사용 하 여 영화 레코드를 삽입할 수 있습니다.
 
 
-[![영화를 삽입합니다.](creating-model-classes-with-linq-to-sql-vb/_static/image17.png)](creating-model-classes-with-linq-to-sql-vb/_static/image16.png)
+[![Inserting 영화](creating-model-classes-with-linq-to-sql-vb/_static/image17.png)](creating-model-classes-with-linq-to-sql-vb/_static/image16.png)
 
 **그림 06**: 영화 삽입 ([클릭 하 여 큰 이미지 보기](creating-model-classes-with-linq-to-sql-vb/_static/image18.png))
 
@@ -143,7 +143,7 @@ TblMovies 데이터베이스 테이블에 레코드를 추가 하려면 서버 �
 TblMovies 테이블에 일부 데이터베이스 레코드를 추가한 후 응용 프로그램을 실행 하면 그림 7의 페이지가 표시 됩니다. 모든 영화 데이터베이스 레코드의 글머리 기호 목록에 표시 됩니다.
 
 
-[![인덱스 뷰를 사용 하 여 영화를 표시합니다.](creating-model-classes-with-linq-to-sql-vb/_static/image20.png)](creating-model-classes-with-linq-to-sql-vb/_static/image19.png)
+[![D인덱스를 사용 하 여 isplaying 동영상 보기](creating-model-classes-with-linq-to-sql-vb/_static/image20.png)](creating-model-classes-with-linq-to-sql-vb/_static/image19.png)
 
 **그림 07**: 인덱스 뷰를 사용 하 여 영화 표시 ([클릭 하 여 큰 이미지 보기](creating-model-classes-with-linq-to-sql-vb/_static/image21.png))
 
