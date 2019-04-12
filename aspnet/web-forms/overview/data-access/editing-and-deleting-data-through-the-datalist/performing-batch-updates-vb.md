@@ -8,15 +8,15 @@ ms.date: 10/30/2006
 ms.assetid: 8dac22a7-91de-4e3b-888f-a4c438b03851
 msc.legacyurl: /web-forms/overview/data-access/editing-and-deleting-data-through-the-datalist/performing-batch-updates-vb
 msc.type: authoredcontent
-ms.openlocfilehash: c903dd64ba7dd19a8af63224ee54629086279bf6
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 7292736a9c12d5013fb4aeef15085bb8d7d74884
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425888"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59405731"
 ---
-<a name="performing-batch-updates-vb"></a>일괄 처리 업데이트 수행(VB)
-====================
+# <a name="performing-batch-updates-vb"></a>일괄 처리 업데이트 수행(VB)
+
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_37_VB.exe) 또는 [PDF 다운로드](performing-batch-updates-vb/_static/datatutorial37vb1.pdf)
@@ -29,7 +29,7 @@ ms.locfileid: "58425888"
 에 [이전 자습서](an-overview-of-editing-and-deleting-data-in-the-datalist-vb.md) 는 항목 수준 DataList를 만드는 방법을 살펴보았습니다. 표준 편집 가능한 GridView DataList에서 각 항목에 포함 된 같은 편집 단추를 클릭 하면 항목 편집할 수 없게 합니다. 이 항목 수준만 가끔 업데이트 되는 데이터에 적합 합니다 편집 하는 동안 많은 레코드를 편집 하려면 사용자 특정 사용 사례 시나리오에 필요 합니다. 사용자 수십 개의 레코드를 편집 해야 하 고, 편집을 클릭 하 고, 해당 변경 하 고, 각각에 대 한 업데이트를 클릭 해야 하는 경우 자신의 생산성 클릭 양을 방해가 될 수 있습니다. 이러한 상황에서는 더 나은 옵션을 제공 하는 것을 완벽 하 게 편집할 DataList 곳 *모든* 해당 항목에 편집 모드와 페이지에서 모두 업데이트 단추를 클릭 하 여 해당 값을 편집할 수 있습니다 (그림 1 참조).
 
 
-[![완벽 하 게 편집 가능한 DataList의 각 항목을 수정할 수 있습니다.](performing-batch-updates-vb/_static/image2.png)](performing-batch-updates-vb/_static/image1.png)
+[![E대 한 ach 완벽 하 게 편집 가능한 DataList에서 항목을 수정할 수](performing-batch-updates-vb/_static/image2.png)](performing-batch-updates-vb/_static/image1.png)
 
 **그림 1**: 완벽 하 게 편집 가능한 DataList의 각 항목을 수정할 수 있습니다 ([클릭 하 여 큰 이미지 보기](performing-batch-updates-vb/_static/image3.png))
 
@@ -50,7 +50,7 @@ DataList s `EditItemIndex` 속성은 무엇을 나타냅니다 `DataListItem` (�
 열어서 시작 합니다 `BatchUpdate.aspx` 페이지에서 DataList 컨트롤을 추가 하 고 설정 해당 `ID` 속성을 `Suppliers`입니다. DataList s 스마트 태그에서 이라는 새 ObjectDataSource 컨트롤을 추가 하도록 선택할 `SuppliersDataSource`합니다.
 
 
-[![SuppliersDataSource 라는 새로운 ObjectDataSource는 만들기](performing-batch-updates-vb/_static/image5.png)](performing-batch-updates-vb/_static/image4.png)
+[![C새 ObjectDataSource 라는 SuppliersDataSource reate](performing-batch-updates-vb/_static/image5.png)](performing-batch-updates-vb/_static/image4.png)
 
 **그림 2**: 명명 된 새 ObjectDataSource 만들려면 `SuppliersDataSource` ([큰 이미지를 보려면 클릭](performing-batch-updates-vb/_static/image6.png))
 
@@ -58,12 +58,12 @@ DataList s `EditItemIndex` 속성은 무엇을 나타냅니다 `DataListItem` (�
 ObjectDataSource를 사용 하 여 데이터를 검색할 구성 합니다 `SuppliersBLL` s 클래스 `GetSuppliers()` 메서드 (그림 3 참조). 이전 자습서에서가 아니라 ObjectDataSource 통해 공급 업체 정보를 업데이트와 마찬가지로 비즈니스 논리 계층와 직접 협업할 수 했습니다. 따라서 업데이트 탭에서 드롭 다운 목록 (없음)을 설정 (그림 4 참조).
 
 
-[![GetSuppliers() 메서드를 사용 하 여 공급 업체 정보를 검색 합니다.](performing-batch-updates-vb/_static/image8.png)](performing-batch-updates-vb/_static/image7.png)
+[![Retrieve GetSuppliers() 메서드를 사용 하 여 공급 업체 정보](performing-batch-updates-vb/_static/image8.png)](performing-batch-updates-vb/_static/image7.png)
 
 **그림 3**: 사용 하 여 공급 업체 정보를 검색 합니다 `GetSuppliers()` 메서드 ([큰 이미지를 보려면 클릭](performing-batch-updates-vb/_static/image9.png))
 
 
-[![(없음) 드롭다운 목록에서 업데이트 탭 설정](performing-batch-updates-vb/_static/image11.png)](performing-batch-updates-vb/_static/image10.png)
+[![S드롭다운 목록 (없음) [업데이트] 탭에서 et](performing-batch-updates-vb/_static/image11.png)](performing-batch-updates-vb/_static/image10.png)
 
 **그림 4**: (없음) 드롭다운 목록에서 업데이트 탭 설정 ([클릭 하 여 큰 이미지 보기](performing-batch-updates-vb/_static/image12.png))
 
@@ -87,7 +87,7 @@ ObjectDataSource를 사용 하 여 데이터를 검색할 구성 합니다 `Supp
 다음과 같이 변경한 후 브라우저를 통해이 페이지를 방문 합니다. 그림 5에서 볼 수 있듯이 각 DataList 항목 공급자 이름을 텍스트로 표시 하 고 주소, 도시 및 국가 표시 하려면 텍스트 상자를 사용 합니다.
 
 
-[![DataList에서 각 공급자는 편집 가능](performing-batch-updates-vb/_static/image14.png)](performing-batch-updates-vb/_static/image13.png)
+[![E공급자 DataList에 대 한 ach은 편집 가능](performing-batch-updates-vb/_static/image14.png)](performing-batch-updates-vb/_static/image13.png)
 
 **그림 5**: 각 공급 업체 DataList의 편집 가능은 ([클릭 하 여 큰 이미지 보기](performing-batch-updates-vb/_static/image15.png))
 
@@ -104,7 +104,7 @@ DataList 및 집합 위에 단추 웹 컨트롤을 추가 하 여 시작 해당 
 그림 6에서는 모두 업데이트 단추를 추가한 후 페이지를 보여 줍니다.
 
 
-[![두 업데이트 모두 단추가 페이지에 추가 되었습니다.](performing-batch-updates-vb/_static/image17.png)](performing-batch-updates-vb/_static/image16.png)
+[![Two 업데이트에 대 한 모든 단추가 페이지에 추가 되었습니다](performing-batch-updates-vb/_static/image17.png)](performing-batch-updates-vb/_static/image16.png)
 
 **그림 6**: 두 업데이트 모두 단추가 페이지에 추가 되었습니다 ([클릭 하 여 큰 이미지 보기](performing-batch-updates-vb/_static/image18.png))
 

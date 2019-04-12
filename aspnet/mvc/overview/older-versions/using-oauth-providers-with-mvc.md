@@ -8,15 +8,15 @@ ms.date: 06/19/2013
 ms.assetid: 7a87f16f-0e19-4f15-a88a-094ae866c4a2
 msc.legacyurl: /mvc/overview/older-versions/using-oauth-providers-with-mvc
 msc.type: authoredcontent
-ms.openlocfilehash: d0203b62c911056fc56ed103c1c42f67816cbbf0
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c2fe74c3d7b1aa0d230f1893f6ba7dcaa7a88419
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57065730"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59396985"
 ---
-<a name="using-oauth-providers-with-mvc-4"></a>MVC 4와 함께 OAuth 공급자 사용
-====================
+# <a name="using-oauth-providers-with-mvc-4"></a>MVC 4와 함께 OAuth 공급자 사용
+
 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > 이 자습서에서는 사용자가 외부 공급자, Facebook, Twitter, Microsoft, Google 등의 자격 증명으로 로그인 하 고 다음에 해당 공급자의 기능 중 일부를 통합할 수 있는 ASP.NET MVC 4 웹 응용 프로그램을 빌드하는 방법에 웹 응용 프로그램입니다. 간단히 하기 위해이 자습서에서 Facebook 자격 증명을 사용 하 여 작업에 중점을 둡니다.
@@ -83,7 +83,7 @@ AuthConfig 파일은 외부 인증 공급자에 대 한 클라이언트를 등�
 - [Microsoft](http://manage.dev.live.com/)
 - [Twitter](https://dev.twitter.com/)
 
-Facebook을 사용 하 여 사이트를 등록할 때 제공할 수 있습니다 &quot;localhost&quot; 사이트 도메인 및 `&quot; http://localhost/&quot;` 아래 이미지에 표시 된 것과 같이 URL에 대 한 합니다. Localhost를 사용 하 여 대부분의 공급자를 사용 하 여 작동 하지만 현재 Microsoft 공급자와 함께 작동 하지 않습니다. Microsoft 공급자에 대 한 유효한 웹 사이트 URL을 포함 해야 합니다.
+Facebook을 사용 하 여 사이트를 등록할 때 제공할 수 있습니다 &quot;localhost&quot; 사이트 도메인 및 `&quot;http://localhost/&quot;` 아래 이미지에 표시 된 것과 같이 URL에 대 한 합니다. Localhost를 사용 하 여 대부분의 공급자를 사용 하 여 작동 하지만 현재 Microsoft 공급자와 함께 작동 하지 않습니다. Microsoft 공급자에 대 한 유효한 웹 사이트 URL을 포함 해야 합니다.
 
 ![사이트를 등록 합니다.](using-oauth-providers-with-mvc/_static/image4.png)
 
