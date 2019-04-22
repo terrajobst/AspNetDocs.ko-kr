@@ -12,7 +12,7 @@ ms.openlocfilehash: 476e5529e4fd53c6166c53766409268939a83c72
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59380667"
 ---
 # <a name="iteration-5--create-unit-tests-vb"></a>반복 #5-단위 테스트 만들기 (VB)
@@ -116,12 +116,12 @@ Moq를 사용 하려면 먼저 다음 단계를 완료 해야 합니다.
 4. 메뉴 옵션을 선택 하 여 테스트 프로젝트에 Moq 어셈블리에 대 한 참조를 추가 **프로젝트에서 참조 추가** 열려는 합니다 **참조 추가** 대화 합니다. 찾아보기 탭에서 Moq 압축을 푼 폴더로 이동 하 고 Moq.dll 어셈블리를 선택 합니다. 클릭 합니다 **확인** 단추 (그림 2 참조).
 
 
-[![UMoq nblocking](iteration-5-create-unit-tests-vb/_static/image1.jpg)](iteration-5-create-unit-tests-vb/_static/image1.png)
+[![차단 해제 Moq](iteration-5-create-unit-tests-vb/_static/image1.jpg)](iteration-5-create-unit-tests-vb/_static/image1.png)
 
 **그림 01**: 차단 해제 Moq ([클릭 하 여 큰 이미지 보기](iteration-5-create-unit-tests-vb/_static/image2.png))
 
 
-[![RMoq를 추가한 후 eferences](iteration-5-create-unit-tests-vb/_static/image2.jpg)](iteration-5-create-unit-tests-vb/_static/image3.png)
+[![Moq를 추가한 후 참조](iteration-5-create-unit-tests-vb/_static/image2.jpg)](iteration-5-create-unit-tests-vb/_static/image3.png)
 
 **그림 02**: Moq를 추가한 후 참조 ([클릭 하 여 큰 이미지 보기](iteration-5-create-unit-tests-vb/_static/image4.png))
 
@@ -184,7 +184,7 @@ CreateContact(), 명명 된 첫 번째 단위 테스트를 연락처 클래스�
 메뉴 옵션을 선택 하 여 목록 1에서 단위 테스트를 실행할 수 있습니다 **테스트를 실행 하 고 솔루션 (CTRL + R, A)의 모든 테스트**합니다. 테스트 결과 창에서 테스트의 결과가 표시 됩니다 (그림 4 참조).
 
 
-[![T동부 표준시 결과](iteration-5-create-unit-tests-vb/_static/image4.jpg)](iteration-5-create-unit-tests-vb/_static/image7.png)
+[![테스트 결과](iteration-5-create-unit-tests-vb/_static/image4.jpg)](iteration-5-create-unit-tests-vb/_static/image7.png)
 
 **그림 04**: 테스트 결과 ([클릭 하 여 큰 이미지 보기](iteration-5-create-unit-tests-vb/_static/image8.png))
 

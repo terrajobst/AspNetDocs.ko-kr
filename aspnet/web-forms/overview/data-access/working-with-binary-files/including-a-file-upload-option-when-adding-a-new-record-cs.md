@@ -12,7 +12,7 @@ ms.openlocfilehash: 9ec09bfcadaa56401a08a389028766ee04f1daad
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59379884"
 ---
 # <a name="including-a-file-upload-option-when-adding-a-new-record-c"></a>새 레코드를 추가할 때 파일 업로드 옵션 포함(C#)
@@ -47,7 +47,7 @@ ms.locfileid: "59379884"
 입력 데이터 집합을 열고, 디자이너에서 마우스 오른쪽 단추로 클릭는 `CategoriesTableAdapter`의 헤더 상황에 맞는 메뉴에서 추가 쿼리를 선택 합니다. TableAdapter 쿼리가 데이터베이스에 액세스 해야 하는 방법을 궁금해 하 여 시작 하는 TableAdapter 쿼리 구성 마법사가 시작 됩니다. SQL 문 사용을 선택 하 고 클릭 합니다. 다음 단계를 생성할 쿼리 형식에 대 한 라는 메시지가 나타납니다. 새 레코드를 추가 하는 쿼리를 만드는 다시 이후로 `Categories` 테이블 삽입을 선택 하 고 다음을 클릭 합니다.
 
 
-[![S삽입 옵션을 선택](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image1.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image1.png)
+[![삽입 옵션을 선택 합니다.](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image1.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image1.png)
 
 **그림 1**: 삽입 옵션을 선택 ([클릭 하 여 큰 이미지 보기](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image2.png))
 
@@ -60,7 +60,7 @@ ms.locfileid: "59379884"
 마법사의 마지막 화면 새 TableAdapter 메서드 이름을 묻는 메시지가 나타납니다. 입력 `InsertWithPicture` 하 고 마침을 클릭 합니다.
 
 
-[![N새 TableAdapter 메서드 InsertWithPicture \ 이름](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image2.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image3.png)
+[![새 TableAdapter 메서드 InsertWithPicture 이름](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image2.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image3.png)
 
 **그림 2**: 새 TableAdapter 메서드 이름을 `InsertWithPicture` ([큰 이미지를 보려면 클릭](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image4.png))
 
@@ -83,7 +83,7 @@ ms.locfileid: "59379884"
 열어서 시작 합니다 `DisplayOrDownload.aspx` 에서 페이지를 `BinaryData` 폴더입니다. 소스 뷰로 이동 하 고 GridView 및 ObjectDataSource가 선언적 구문을 내에서 붙여넣기를 복사 합니다 `<asp:Content>` 요소에 `UploadInDetailsView.aspx`입니다. 또한 잊지 복사할 합니다 `GenerateBrochureLink` 의 코드 숨김 클래스에서 메서드 `DisplayOrDownload.aspx` 에 `UploadInDetailsView.aspx`입니다.
 
 
-[![C프 UploadInDetailsView.aspx DisplayOrDownload.aspx에서 선언적 구문을 붙여](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image3.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image5.png)
+[![복사 및 붙여넣기 UploadInDetailsView.aspx DisplayOrDownload.aspx에서 선언적 구문은](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image3.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image5.png)
 
 **그림 3**: 복사 및 붙여넣기는 선언적 구문을 `DisplayOrDownload.aspx` 하 `UploadInDetailsView.aspx` ([클릭 하 여 큰 이미지 보기](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image6.png))
 
@@ -91,7 +91,7 @@ ms.locfileid: "59379884"
 선언적 구문을 복사한 후 및 `GenerateBrochureLink` 를 통해 메서드를 `UploadInDetailsView.aspx` 페이지에서 보기는 모든 항목이 올바르게 복사 되었는지 조치 하도록 브라우저를 통해 페이지입니다. 8 가지 범주를 나열 범주의 그림 뿐만 아니라 브로슈어 다운로드 링크를 포함 하는 GridView 표시 되어야 합니다.
 
 
-[![Y이제 ou 해당 이진 데이터와 함께 각 범주 표시](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image4.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image7.png)
+[![이제 해당 이진 데이터와 함께 각 범주 표시](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image4.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image7.png)
 
 **그림 4**: 각 범주 해당 이진 데이터와 함께 표시 됩니다 ([클릭 하 여 큰 이미지 보기](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image8.png))
 
@@ -103,7 +103,7 @@ ms.locfileid: "59379884"
 ObjectDataSource가 스마트 태그에서 데이터 소스 구성 링크를 클릭 하 여 시작 합니다. 첫 번째 화면을 사용 하려면 데이터 소스를 구성 하는 개체를 보여 줍니다. `CategoriesBLL`합니다. 이 설정을 상태로 둡니다-이며을 클릭 하 여 데이터 메서드 정의 화면으로 이동 합니다. 삽입 탭으로 이동 하 고 선택 된 `InsertWithPicture` 드롭 다운 목록에서 메서드. 마법사를 완료 하려면 마침을 클릭 합니다.
 
 
-[![Configure InsertWithPicture 메서드를 사용 하는 ObjectDataSource](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image5.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image9.png)
+[![InsertWithPicture 메서드를 사용 하는 ObjectDataSource 구성](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image5.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image9.png)
 
 **그림 5**: ObjectDataSource를 사용 하 여 구성 합니다 `InsertWithPicture` 메서드 ([큰 이미지를 보려면 클릭](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image10.png))
 
@@ -124,7 +124,7 @@ ObjectDataSource 마법사를 완료 한 후 값이 포함 이제는 해당 `Ins
 시작 된 DetailsView 설정 GridView 위에 디자이너 도구 상자에서 끌어 해당 `ID` 속성을 `NewCategory` 정리 및 합니다 `Height` 및 `Width` 속성 값입니다. DetailsView가 스마트 태그에서 기존에 바인딩 `CategoriesDataSource` 하 고 다음 확인란 삽입을 사용 하도록 설정 합니다.
 
 
-[![Bind CategoriesDataSource 및 사용 삽입 DetailsView](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image6.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image11.png)
+[![DetailsView를 CategoriesDataSource 바인딩하고 삽입 사용](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image6.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image11.png)
 
 **그림 6**: DetailsView를 바인딩하는 `CategoriesDataSource` 삽입을 사용 하도록 설정 하 고 ([큰 이미지를 보려면 클릭](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image12.png))
 
@@ -153,7 +153,7 @@ DetailsView에 5 개의 BoundFields `CategoryID`, `CategoryName`, `Description`,
 DetailsView가 스마트 태그에서 템플릿 편집 옵션을 선택한 다음 선택 합니다 `BrochurePath` TemplateField의 `InsertItemTemplate` 드롭 다운 목록에서. 텍스트를 제거 하 고 서식 파일을 도구 상자에서 FileUpload 컨트롤을 끌어 옵니다. FileUpload 컨트롤 s 설정할 `ID` 에 `BrochureUpload`입니다. 마찬가지로, FileUpload 컨트롤을 추가 합니다 `Picture` TemplateField의 `InsertItemTemplate`입니다. 이 FileUpload 컨트롤 s 설정할 `ID` 에 `PictureUpload`입니다.
 
 
-[![Add는 먼저 FileUpload 컨트롤을](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image8.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image13.png)
+[![에 먼저 FileUpload 컨트롤 추가](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image8.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image13.png)
 
 **그림 8**: FileUpload 컨트롤을 추가 합니다 `InsertItemTemplate` ([큰 이미지를 보려면 클릭](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image14.png))
 
@@ -226,7 +226,7 @@ ObjectDataSource가 하기 전에 `Insert()` 메서드가 호출 되 면 먼저 
 Let s 삽입 인터페이스를 테스트 하려면 잠시 및 `ItemInserting` 몇 단계 지난 생성 된 이벤트 처리기입니다. 방문을 `UploadInDetailsView.aspx` 브라우저 및 그림에서 생략 범주를 추가 하려는 시도 통해 페이지 또는 비 JPG 사진이 나 PDF가 아닌 브로슈어를 지정 합니다. 이러한 경우에 오류 메시지가 표시 되 고 삽입 워크플로가 취소 합니다.
 
 
-[![A 경고 메시지가 표시 된 경우 잘못 된 파일 형식 업로드](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image9.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image15.png)
+[![경고 메시지를 표시 하는 경우 잘못 된 파일 형식 업로드](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image9.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image15.png)
 
 **그림 9**: 경고 메시지를 표시 하는 경우 잘못 된 파일 형식 업로드 됩니다 ([클릭 하 여 큰 이미지 보기](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image16.png))
 
@@ -234,7 +234,7 @@ Let s 삽입 인터페이스를 테스트 하려면 잠시 및 `ItemInserting` �
 확인 한 후 그림을 업로드할 수 없습니다 PDF가 아닌 또는 비 JPG 파일을 사용할 수를 유효한 JPG 그림을 사용 하 여 새 범주를 추가할 필요 브로슈어 필드를 비워 두면 됩니다. 삽입 단추를 클릭 한 후 페이지 포스트백 됩니다 및 새 레코드를 추가할 수는 `Categories` 데이터베이스에 직접 저장 s 이미지를 업로드 한 이진 콘텐츠를 사용 하 여 테이블입니다. GridView 업데이트 되 고 새로 추가 된 범주에 대 한 행을 표시 하지만 새 범주의 사진을 그림 10과 같이 올바르게 렌더링 되지 않습니다.
 
 
-[![T새 범주의 그림 그는 표시 되지 않는](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image10.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image17.png)
+[![새 범주의의 그림 표시 되지 않습니다](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image10.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image17.png)
 
 **그림 10**: 새 범주의 그림 표시 되지 않습니다 ([클릭 하 여 큰 이미지 보기](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image18.png))
 
@@ -249,7 +249,7 @@ Let s 삽입 인터페이스를 테스트 하려면 잠시 및 `ItemInserting` �
 이 변경으로 JPG 이미지는 GridView에서 올바르게 렌더링 이제 합니다.
 
 
-[![T새 범주에 대 한 그 JPG 이미지는 잘못 렌더링](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image11.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image19.png)
+[![새 범주에 대 한 JPG 이미지 잘못 렌더링 됩니다.](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image11.gif)](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image19.png)
 
 **그림 11**: 새 범주에 대 한 JPG 이미지를 올바르게 렌더링 ([클릭 하 여 큰 이미지 보기](including-a-file-upload-option-when-adding-a-new-record-cs/_static/image20.png))
 

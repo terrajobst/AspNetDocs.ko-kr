@@ -12,7 +12,7 @@ ms.openlocfilehash: 5411f6d15b6ae4d4ee7557c4fff0158d97574330
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59385204"
 ---
 # <a name="how-do-i-use-control-state-to-persist-information-for-a-custom-web-server-control"></a>[어떻게 할까요?] 사용자 지정 웹 서버 컨트롤에 대 한 정보를 유지 하기 위해 사용 하 여 컨트롤 상태

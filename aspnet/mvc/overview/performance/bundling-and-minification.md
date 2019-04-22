@@ -12,7 +12,7 @@ ms.openlocfilehash: 9e4a2a9fc56393ac816f25a1039b233aa8961608
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383839"
 ---
 # <a name="bundling-and-minification"></a>묶음 및 축소
@@ -52,7 +52,7 @@ ms.locfileid: "59383839"
 
 주석 및 불필요 한 공백을 제거 하는 것 외에도 다음 매개 변수 및 변수 이름을 바뀌었습니다 (단축) 다음과 같이 합니다.
 
-| **원래 색** | **변경된 이름** |
+| **원문 언어** | **이름이** |
 | --- | --- |
 | imageTagAndImageID | n |
 | imageContext | t |
@@ -62,10 +62,10 @@ ms.locfileid: "59383839"
 
 다음 표에서 모든 자산을 개별적으로 나열 하 고 샘플 프로그램의 묶음 및 축소 (B/M)를 사용 하 여 간의 몇 가지 중요 한 차이점을 보여 줍니다.
 
-|  | **B/M을 사용 하 여** | **B/M 없이** | **변화** |
+|  | **B/M을 사용 하 여** | **B/M 없이** | **변경 내용** |
 | --- | --- | --- | --- |
 | **파일 요청** | 10 | 34 | 256% |
-| **전송 (kb)** | 3.26 | 11.92 | 266% |
+| **KB Sent** | 3.26 | 11.92 | 266% |
 | **수신 (kb)** | 388.51 | 530 | 36% |
 | **로드 시간** | 510 MS | 780 MS | 53% |
 
@@ -165,7 +165,7 @@ F12 개발자 도구를 사용 하 여 디버깅 하는 방법은 MSDN 문서를
 
 다음 표에서 같이 와일드 카드를 사용 하 여 번들에 추가 된 파일을 보여 줍니다.
 
-| **호출** | **추가 된 파일 또는 예외 발생** |
+| **Call** | **추가 된 파일 또는 예외 발생** |
 | --- | --- |
 | Include("~/Scripts/Common/\*.js") | *AddAltToImg.js*, *ToggleDiv.js*, *ToggleImg.js* |
 | Include("~/Scripts/Common/T\*.js") | 잘못 된 패턴 예외입니다. 와일드 카드 문자 접두사 또는 접미사에만 허용 됩니다. |

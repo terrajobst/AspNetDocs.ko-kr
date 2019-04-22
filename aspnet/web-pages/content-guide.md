@@ -12,7 +12,7 @@ ms.openlocfilehash: 5e410ac0c6d3430c00e171775d842ee30eeab021
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383170"
 ---
 # <a name="webmatrix-content-guide"></a>WebMatrix 콘텐츠 가이드
@@ -50,7 +50,7 @@ WebMatrix는 Microsoft Windows에 대 한 웹 사이트를 구축 하는 쉬운 
 
 ## <a name="additional-resources"></a>추가 리소스
 
-**읽기**
+**Read**
 
 - [WebMatrix 용 Microsoft 웹 캠프 교육 키트](http://trainingkit.webcamps.ms/WebMatrix.htm)
 - [버그 또는 제안 사항 제출](https://go.microsoft.com/fwlink/?LinkId=195940)

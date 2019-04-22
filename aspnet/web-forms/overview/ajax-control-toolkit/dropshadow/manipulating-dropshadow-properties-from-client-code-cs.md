@@ -12,7 +12,7 @@ ms.openlocfilehash: 3bf4b8fe85780135c821fbb7fcceefd326dce656
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59381344"
 ---
 # <a name="manipulating-dropshadow-properties-from-client-code-c"></a>클라이언트 코드에서 DropShadow 속성 조작(C#)
@@ -55,7 +55,7 @@ JavaScript 함수 `changeOpacity()` 먼저 찾아야 다음는 `DropShadowExtend
 [!code-html[Main](manipulating-dropshadow-properties-from-client-code-cs/samples/sample6.html)]
 
 
-[![T클라이언트 쪽에서 변경 되는 그 불투명도](manipulating-dropshadow-properties-from-client-code-cs/_static/image2.png)](manipulating-dropshadow-properties-from-client-code-cs/_static/image1.png)
+[![클라이언트 쪽에서 변경 되는 불투명도](manipulating-dropshadow-properties-from-client-code-cs/_static/image2.png)](manipulating-dropshadow-properties-from-client-code-cs/_static/image1.png)
 
 클라이언트 쪽에서 변경 되는 불투명도 ([클릭 하 여 큰 이미지 보기](manipulating-dropshadow-properties-from-client-code-cs/_static/image3.png))
 

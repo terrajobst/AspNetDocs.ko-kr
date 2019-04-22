@@ -12,7 +12,7 @@ ms.openlocfilehash: 8292fd43ffa2bc66b4daa8f0fc09569226d90bff
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59379562"
 ---
 # <a name="using-asynchronous-methods-in-aspnet-mvc-4"></a>ASP.NET MVC 4에서 비동기 메서드 사용
@@ -166,7 +166,7 @@ ASP.NET MVC 4 [컨트롤러](https://msdn.microsoft.com/library/system.web.mvc.c
 
     - IIS 관리자를 열고 응용 프로그램 풀 창으로 이동 합니다.
     - 선택한 대상 응용 프로그램 풀을 마우스 오른쪽 단추로 클릭 **고급 설정**합니다.  
-        ![고급](using-asynchronous-methods-in-aspnet-mvc-4/_static/image4.png)
+        ![advanced](using-asynchronous-methods-in-aspnet-mvc-4/_static/image4.png)
     - 에 **고급 설정** 대화 상자에서 변경 *Queue Length* 5,000 1,000 개에서.  
         ![큐 길이](using-asynchronous-methods-in-aspnet-mvc-4/_static/image5.png)  
   

@@ -12,7 +12,7 @@ ms.openlocfilehash: 1fdf6d7ab19354b0079add99c3e6930c60f772cf
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59381980"
 ---
 # <a name="music-store"></a>Music Store
@@ -20,6 +20,6 @@ ms.locfileid: "59381980"
 > ASP.NET MVC Music Store 샘플 응용 프로그램 빌드
 
 
-- [MVC Music Store 1부: 소개, 도구 및 프로젝트 구조](mvc-music-store-part-1-intro-tools-and-project-structure.md)
-- [MVC Music Store 2부: 컨트롤러](mvc-music-store-part-2-controllers.md)
-- [MVC Music Store 3부: 보기 및 ViewModels](mvc-music-store-part-3-views-and-viewmodels.md)
+- [MVC Music Store 1 부: 소개, 도구 및 프로젝트 구조](mvc-music-store-part-1-intro-tools-and-project-structure.md)
+- [MVC Music Store 2 부: 컨트롤러](mvc-music-store-part-2-controllers.md)
+- [MVC Music Store 3 부: 보기 및 ViewModels](mvc-music-store-part-3-views-and-viewmodels.md)

@@ -12,7 +12,7 @@ ms.openlocfilehash: 1a9cf8ac7e8618dd3733080ba6a065e14f1cb68c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59417145"
 ---
 # <a name="how-do-i-enforce-coding-standards-with-code-analysis"></a>[어떻게 할까요?] 코드 분석에 코딩 표준 적용?

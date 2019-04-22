@@ -12,7 +12,7 @@ ms.openlocfilehash: 4d436b0e5d605027cfcf5243f615f9ac167c5888
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59388051"
 ---
 # <a name="using-the-entity-framework-40-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests"></a>Entity Framework 4.0 및 ObjectDataSource 컨트롤, 2 부를 사용합니다. 비즈니스 논리 레이어 및 단위 테스트 추가

@@ -12,7 +12,7 @@ ms.openlocfilehash: abff97e5cc2663465fdf61f41ff69d17104fe8b6
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59379471"
 ---
 # <a name="use-controllers-and-views-to-implement-a-listingdetails-ui"></a>컨트롤러 및 보기를 사용하여 목록/세부 정보 UI 구현
@@ -93,11 +93,11 @@ ASP.NET MVC에는 다양 한 Url을 컨트롤러 클래스 매핑되는 방식�
 
 | **URL** | **컨트롤러 클래스** | **동작 메서드** | **전달 된 매개 변수** |
 | --- | --- | --- | --- |
-| */ Dinners/세부 정보/2* | DinnersController | Details(id) | id=2 |
+| */Dinners/Details/2* | DinnersController | Details(id) | id=2 |
 | */Dinners/Edit/5* | DinnersController | Edit(id) | id=5 |
-| */ Dinners/만들기* | DinnersController | Create() | N/A |
-| */ Dinners* | DinnersController | Index() | N/A |
-| */ 홈* | HomeController | Index() | N/A |
+| */Dinners/Create* | DinnersController | Create() | N/A |
+| */Dinners* | DinnersController | Index() | N/A |
+| */Home* | HomeController | Index() | N/A |
 | */* | HomeController | Index() | N/A |
 
 마지막 세 개의 행에는 기본값을 표시 (컨트롤러 = 홈 작업 인덱스, Id = = "") 사용 합니다. "Index" 메서드가 하나를 지정 하지 않으면 기본 동작 이름으로 등록 되어 있으므로 "/ Dinners" 및 "/ 홈" Url 원인 index () 작업 메서드는 컨트롤러 클래스에서 호출 됩니다. "홈" 컨트롤러가 기본 컨트롤러로 하나 지정 되지 않은 경우에 등록 하기 때문에 "/" URL 사용 하면 만들려는 HomeController index () 동작 메서드를 호출 하는 데 됩니다.

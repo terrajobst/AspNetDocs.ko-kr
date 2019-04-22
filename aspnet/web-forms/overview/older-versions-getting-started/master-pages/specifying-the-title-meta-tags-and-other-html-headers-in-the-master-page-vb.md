@@ -12,7 +12,7 @@ ms.openlocfilehash: 6e86626c2949543c0a36a210d52ee8297156a017
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59382175"
 ---
 # <a name="specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb"></a>마스터 페이지에서 제목, 메타 태그 및 기타 HTML 헤더 지정(VB)
@@ -169,7 +169,7 @@ ASP.NET 페이지를 요청할 때마다 일련의 단계를 HTML로 렌더링 �
 그림 5는 `MultipleContentPlaceHolders.aspx` 브라우저를 통해 볼 때 페이지입니다. 제목 (확장)을 덜 정확 하 게 페이지의 파일 이름에는 "MultipleContentPlaceHolders"입니다.
 
 
-[![I제목을 f는 명시적으로 지정 되지 않은, 페이지의 파일 이름이 자동으로 사용](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image6.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image5.png)
+[![제목을 명시적으로 지정 되지 않은 경우 페이지의 파일 이름이 자동으로 사용](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image6.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image5.png)
 
 **그림 05**: 제목을 명시적으로 지정 되지 않은 경우 페이지의 파일 이름이 자동으로 사용 됩니다 ([클릭 하 여 큰 이미지 보기](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image7.png))
 
@@ -191,7 +191,7 @@ ASP.NET은 페이지 개발자가 웹 컨트롤 (예:는 SiteMapPath 사이트 �
 웹 사이트의 루트 폴더에 사이트 맵 파일을 만들어 시작 `Web.sitemap`합니다. 이렇게 하려면 솔루션 탐색기에서 웹 사이트 이름을 마우스 오른쪽 단추로 클릭을 새 항목 추가 선택 하 고 사이트 맵 템플릿을 선택 합니다. 파일 이름은 확인 `Web.sitemap` 추가를 클릭 합니다.
 
 
-[![A웹 사이트의 루트 폴더에 파일 이름이 Web.sitemap dd](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image9.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image8.png)
+[![웹 사이트의 루트 폴더에는 Web.sitemap 이라는 파일 추가](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image9.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image8.png)
 
 **그림 06**: 라는 파일을 추가 `Web.sitemap` 웹 사이트의 루트 폴더 ([큰 이미지를 보려면 클릭](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image10.png))
 
@@ -224,7 +224,7 @@ ASP.NET은 페이지 개발자가 웹 컨트롤 (예:는 SiteMapPath 사이트 �
 데이터 소스 구성 마법사에서 선택 된 ListView 라는 새로운 SiteMapDataSource 컨트롤에 바인딩할 `LessonsDataSource`합니다. SiteMapDataSource 컨트롤 사이트 맵 시스템에서 계층 구조를 반환합니다.
 
 
-[![Bind LessonsList ListView 컨트롤에 SiteMapDataSource 컨트롤](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image13.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image12.png)
+[![LessonsList ListView 컨트롤에 SiteMapDataSource 컨트롤 바인딩](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image13.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image12.png)
 
 **그림 08**: SiteMapDataSource 컨트롤 LessonsList ListView 컨트롤에 바인딩 ([클릭 하 여 큰 이미지 보기](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image14.png))
 
@@ -239,7 +239,7 @@ SiteMapDataSource 컨트롤을 만든 후 SiteMapDataSource 컨트롤에 의해 
 ListView의 템플릿을 구성한 후 웹 사이트를 방문 합니다. 그림 9에서 알 수 있듯이, 단원 섹션 홈 단일 글머리 기호 항목을 포함 합니다. 정보 및 여러 Contentplaceholder 단원을 사용 하 여 여기서? SiteMapDataSource는 데이터의 계층적 집합을 반환 하도록 만들어졌지만 ListView 컨트롤 계층의 단일 수준을 표시할 수 있습니다. 따라서 SiteMapDataSource에서 반환 된 사이트 맵 노드의 첫 번째 수준만 표시 됩니다.
 
 
-[![T그 단원 섹션에서는 단일 목록 항목](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image16.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image15.png)
+[![단일 목록 항목을 포함 하는 단원 섹션](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image16.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image15.png)
 
 **그림 09**: 단일 목록 항목을 포함 하는 단원 섹션 ([클릭 하 여 큰 이미지 보기](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image17.png))
 
@@ -254,7 +254,7 @@ ListView의 템플릿을 구성한 후 웹 사이트를 방문 합니다. 그림
 시작 노드를 생략 하려면 SiteMapDataSource를 구성 하 고 명시적으로 홈 글머리 기호 항목을 추가 하 여 이제 단원 섹션에는 의도 한 출력이 표시 됩니다.
 
 
-[![T그 단원 섹션에서는 홈 및 각 자식 노드에 대 한 글머리 기호 항목](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image19.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image18.png)
+[![홈 및 각 자식 노드에 대 한 글머리 기호 항목을 포함 하는 단원 섹션](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image19.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image18.png)
 
 **그림 10**: 홈 및 각 자식 노드에 대 한 글머리 기호 항목을 포함 하는 단원 섹션 ([클릭 하 여 큰 이미지 보기](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image20.png))
 

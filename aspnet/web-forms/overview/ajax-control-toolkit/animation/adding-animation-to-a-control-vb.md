@@ -12,7 +12,7 @@ ms.openlocfilehash: c55bbeb383b15f4dc9cb95d25905cade1e8c5c29
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59418900"
 ---
 # <a name="adding-animation-to-a-control-vb"></a>컨트롤에 애니메이션 추가(VB)
@@ -72,7 +72,7 @@ ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이�
 이 스크립트를 실행 하면 패널이 표시 되 고 1.5 명의 초에 페이드 아웃 합니다.
 
 
-[![T그 패널 페이드아웃은](adding-animation-to-a-control-vb/_static/image2.png)](adding-animation-to-a-control-vb/_static/image1.png)
+[![패널은 페이드아웃](adding-animation-to-a-control-vb/_static/image2.png)](adding-animation-to-a-control-vb/_static/image1.png)
 
 패널은 페이드아웃 ([클릭 하 여 큰 이미지 보기](adding-animation-to-a-control-vb/_static/image3.png))
 

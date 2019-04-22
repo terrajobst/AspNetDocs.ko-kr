@@ -12,7 +12,7 @@ ms.openlocfilehash: cc9407ba15474f58437817c9536d6040e0ea2e84
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59381450"
 ---
 # <a name="adjusting-the-z-index-of-a-dropshadow-c"></a>DropShadow의 Z-인덱스 조정(C#)
@@ -56,12 +56,12 @@ AJAX Control Toolkit에서 DropShadow 컨트롤 그림자를 사용 하 여 패�
 그런 다음, `DropShadowExtender` 컨트롤 메뉴 컨트롤을 사용 하 여 더 이상 충돌 하지 않습니다.
 
 
-[![B전: 메뉴 항목이 표시 되지 않으면](adjusting-the-z-index-of-a-dropshadow-cs/_static/image2.png)](adjusting-the-z-index-of-a-dropshadow-cs/_static/image1.png)
+[![이전: 메뉴 항목이 표시 되지 않습니다.](adjusting-the-z-index-of-a-dropshadow-cs/_static/image2.png)](adjusting-the-z-index-of-a-dropshadow-cs/_static/image1.png)
 
 이전: 메뉴 항목이 표시 되지 않습니다 ([클릭 하 여 큰 이미지 보기](adjusting-the-z-index-of-a-dropshadow-cs/_static/image3.png))
 
 
-[![A뒤: 메뉴 항목 표시](adjusting-the-z-index-of-a-dropshadow-cs/_static/image5.png)](adjusting-the-z-index-of-a-dropshadow-cs/_static/image4.png)
+[![이후: 메뉴 항목 표시](adjusting-the-z-index-of-a-dropshadow-cs/_static/image5.png)](adjusting-the-z-index-of-a-dropshadow-cs/_static/image4.png)
 
 이후: 메뉴 항목이 표시 됩니다 ([클릭 하 여 큰 이미지 보기](adjusting-the-z-index-of-a-dropshadow-cs/_static/image6.png))
 

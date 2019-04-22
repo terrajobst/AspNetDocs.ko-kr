@@ -12,7 +12,7 @@ ms.openlocfilehash: 723a38de4569b0bb58817c70aabb84fef8e19591
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59395097"
 ---
 # <a name="using-browser-link-in-visual-studio-2013"></a>Visual Studio 2013의 브라우저 링크 사용
@@ -64,7 +64,7 @@ Visual Studio에서 변경 된 &lt;h1&gt; 홈 페이지의 제목:
 
 ![](using-browser-link/_static/image8.png)
 
-**노트**
+**참고**
 
 - 브라우저 링크를 사용 하도록 설정 하려면 `debug=true` 에 [ &lt;컴파일&gt; ](https://msdn.microsoft.com/library/s10awwz0(v=vs.85).aspx) 프로젝트의 Web.config 파일의 요소입니다.
 - 응용 프로그램은 로컬 호스트에서 실행 되어야 합니다.

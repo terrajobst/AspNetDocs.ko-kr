@@ -12,7 +12,7 @@ ms.openlocfilehash: f648e0cb53dd410105adc22401f19a5a15f9e8c1
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59380810"
 ---
 # <a name="adding-a-create-method-and-create-view"></a>메서드 만들기 및 보기 만들기 추가
@@ -38,7 +38,7 @@ Create View 템플릿을 사용 하 여 사용자에 게 폼을 표시 하는 �
 
 해당 보기 데이터 클래스로 보기 템플릿에서 "영화"을 전달 하려고 하 고 "스 캐 폴드" "만들기" 템플릿으로 하려고 한다는 것을 나타내려면 선택 합니다.
 
-[![Add 보기](getting-started-with-mvc-part6/_static/image2.png)](getting-started-with-mvc-part6/_static/image1.png)
+[![뷰 추가](getting-started-with-mvc-part6/_static/image2.png)](getting-started-with-mvc-part6/_static/image1.png)
 
 추가 단추를 클릭 하면 \Movies\Create.aspx 템플릿 보기를 생성 됩니다. "콘텐츠 보기" 드롭다운에서 "만들기"를 선택 했기 때문에 뷰 추가 대화 상자 자동으로 "스 캐 폴드 된" 일부 기본 콘텐츠 한 합니다. 스 캐 폴딩을 만들 HTML &lt;폼&gt;, 유효성 검사 오류에 대 한 위치에서 메시지 및 스 캐 폴딩 영화를 알고, 이후 만들어질 레이블과 필드 클래스의 각 속성에 대 한 합니다.
 
@@ -48,7 +48,7 @@ Create View 템플릿을 사용 하 여 사용자에 게 폼을 표시 하는 �
 
 보겠습니다 이제 새 동영상을 만들고 데이터베이스에 추가 합니다. 응용 프로그램을 다시 실행 하 여이 작업을 수행 하 고 방문 드리겠습니다는 "/ 영화" 새 영화를 추가 하려면 "만들기" 링크 URL을 클릭 합니다.
 
-[![Create - Windows Internet Explorer](getting-started-with-mvc-part6/_static/image4.png)](getting-started-with-mvc-part6/_static/image3.png)
+[![만들기-Windows Internet Explorer](getting-started-with-mvc-part6/_static/image4.png)](getting-started-with-mvc-part6/_static/image3.png)
 
 만들기 단추를 클릭 하면 되십시오 다시 (HTTP POST를 통해) 우리가 방금 만들었던 /Movies/Create 메서드에이 양식의 데이터를입니다. 시스템 자동으로 URL에서 "numTimes" 및 "name" 매개 변수는 데 걸린 시간과 메서드 앞에 있는 매개 변수에 매핑된 해당, 마찬가지로 시스템은 및 자동으로 수행 양식 필드 게시물에서 개체에 매핑합니다. 이 경우 "ReleaseDate" 및 "Title"와 같은 html 필드의 값은 동영상의 새 인스턴스를 올바른 속성에 자동으로 추가 됩니다.
 

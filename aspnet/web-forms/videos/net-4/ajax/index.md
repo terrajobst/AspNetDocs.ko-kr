@@ -12,7 +12,7 @@ ms.openlocfilehash: 3f090f46b5e7c7f9b046f2cdbef7162cc6f364cb
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59386816"
 ---
 # <a name="ajax"></a>Ajax
@@ -22,5 +22,5 @@ ms.locfileid: "59386816"
 
 - [Microsoft 클라이언트 쪽 컨트롤에 대한 명령적 JavaScript 구문](aspnet-4-quick-hit-imperative-javascript-syntax-for-microsoft-client-side-controls.md)
 - [ScriptLoader](aspnet-4-quick-hit-the-scriptloader.md)
-- [Microsoft Ajax에 대한 jQuery 구문](aspnet-4-quick-hit-jquery-syntax-for-microsoft-ajax.md)
+- [Microsoft Ajax에 대한 JQuery 구문](aspnet-4-quick-hit-jquery-syntax-for-microsoft-ajax.md)
 - [AJAX 데이터 템플릿](aspnet-4-quick-hit-ajax-data-templates.md)

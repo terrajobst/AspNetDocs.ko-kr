@@ -12,7 +12,7 @@ ms.openlocfilehash: 680739cbcf54bc9ca7a3bd8167d043ff537eaad5
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59417535"
 ---
 # <a name="working-with-html-forms-in-aspnet-web-pages-razor-sites"></a>ASP.NET 웹 페이지 (Razor) 사이트에서 HTML 양식 사용

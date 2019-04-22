@@ -12,7 +12,7 @@ ms.openlocfilehash: 56b14586b37bb8fc6cf544dc342ac8aa3b8a2c47
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59380515"
 ---
 # <a name="how-do-i-use-the-aspnet-cache-object-to-cache-application-information"></a>[방법]: ASP.NET 캐시 개체를 사용하여 애플리케이션 정보 캐시

@@ -12,7 +12,7 @@ ms.openlocfilehash: 158a49553490e9faf01264b7934e48a8edece2c4
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59382123"
 ---
 # <a name="why-aspnet-mvc-3-minute-overview-video-for-decision-makers"></a>이유는 ASP.NET MVC? 의사 결정자를 위한 비디오 3 분 개요

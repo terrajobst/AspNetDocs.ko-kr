@@ -12,7 +12,7 @@ ms.openlocfilehash: c3437e7f5200ece9766ec89d22a5c051cb17f13f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59379237"
 ---
 # <a name="begin-modifying-dynamic-data-applications-with-url-routing"></a>URL 라우팅을 사용하여 Dynamic Data 애플리케이션 수정 시작

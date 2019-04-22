@@ -12,7 +12,7 @@ ms.openlocfilehash: 8ac51219a3734d3d2c8657bcfac159e28faa7d7c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59417288"
 ---
 # <a name="how-do-i-use-cascading-style-sheets-for-web-page-layout"></a>[어떻게 할까요?] 스타일 시트를 사용 하 여 웹 페이지 레이아웃에 대 한?

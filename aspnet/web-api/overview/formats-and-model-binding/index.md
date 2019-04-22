@@ -13,7 +13,7 @@ ms.openlocfilehash: 9d5b58871147b84cb4d8bde73d3139655e4cd3e6
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59388740"
 ---
 # <a name="serialization-and-model-binding-in-aspnet-web-api"></a>Serialization 및 ASP.NET Web API에서에서 모델 바인딩
@@ -22,7 +22,7 @@ ms.locfileid: "59388740"
 
 
 - [Web API 2의 미디어 포맷터](media-formatters.md)
-- [Web API에서 JSON 및 XML Serialization](json-and-xml-serialization.md)
+- [Web API에서 JSON 및 XML 직렬화](json-and-xml-serialization.md)
 - [Web API 2.1에서 BSON 지원](bson-support-in-web-api-21.md)
 - [Web API에서 콘텐츠 협상](content-negotiation.md)
 - [Web API에서 모델 유효성 검사](model-validation-in-aspnet-web-api.md)

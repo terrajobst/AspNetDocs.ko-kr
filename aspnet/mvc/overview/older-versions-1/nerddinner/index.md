@@ -12,7 +12,7 @@ ms.openlocfilehash: 263ffc1ab815c1f7d6c1ee008f4fbe61316b7231
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59380745"
 ---
 # <a name="nerddinner"></a>NerdDinner
@@ -32,5 +32,5 @@ ms.locfileid: "59380745"
 - [인증 및 권한 부여를 사용하여 애플리케이션 보호](secure-applications-using-authentication-and-authorization.md)
 - [AJAX를 사용하여 동적 업데이트 제공](use-ajax-to-deliver-dynamic-updates.md)
 - [AJAX를 사용하여 매핑 시나리오 구현](use-ajax-to-implement-mapping-scenarios.md)
-- [자동화된 유닛 테스트 사용](enable-automated-unit-testing.md)
+- [자동화 단위 테스트 사용](enable-automated-unit-testing.md)
 - [NerdDinner 요약](nerddinner-wrap-up.md)

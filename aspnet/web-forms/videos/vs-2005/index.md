@@ -12,7 +12,7 @@ ms.openlocfilehash: 25d9cc02ef9b0e8f068c9e84469d9661b06f0b28
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59381109"
 ---
 # <a name="visual-studio-2005"></a>Visual Studio 2005
@@ -20,7 +20,7 @@ ms.locfileid: "59381109"
 > 테스트, 배포 및 기타 작업을 수행 하려면 Visual Studio 2005, Team System 및 추가 기능을 사용 하는 방법입니다.
 
 
-- [Team System을 사용한 유닛 테스트 소개](introduction-to-unit-testing-with-team-system.md)
+- [Team System을 사용한 단위 테스트 소개](introduction-to-unit-testing-with-team-system.md)
 - [Team System을 사용한 웹 애플리케이션 테스트 소개](introduction-to-testing-web-applications-with-team-system.md)
 - [Team System을 사용한 웹 애플리케이션 부하 테스트 소개](introduction-to-load-testing-web-applications-with-team-system.md)
 - [Team System을 사용한 수동 테스트 소개](introduction-to-manual-testing-with-team-system.md)
@@ -29,7 +29,7 @@ ms.locfileid: "59381109"
 - [자동화된 테스트의 코드 검사](code-coverage-of-automated-tests.md)
 - [사용자 지정 추출 규칙 및 코딩된 웹 테스트](custom-extraction-rules-and-coded-web-tests.md)
 - [캐싱의 효과](the-effects-of-caching.md)
-- [Load Test Agent](using-the-load-test-agent.md)
+- [에이전트 부하 테스트](using-the-load-test-agent.md)
 - [ViewState의 효과](the-effects-of-viewstate.md)
 - [결함 추적을 테스트와 통합](how-do-i-integrate-defect-tracking-with-testing.md)
 - [나만의 버그 작업 항목 만들기](how-do-i-create-my-own-bug-work-item.md)

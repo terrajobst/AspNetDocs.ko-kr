@@ -12,7 +12,7 @@ ms.openlocfilehash: a47d428830fa6c43bcb9ce797d65b73891b44618
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59381889"
 ---
 # <a name="using-asynchronous-methods-in-aspnet-45"></a>ASP.NET 4.5에서 비동기 메서드 사용
@@ -192,7 +192,7 @@ ASP.NET 비동기 페이지를 포함 해야 합니다 [페이지](https://msdn.
 
     - IIS 관리자를 열고 응용 프로그램 풀 창으로 이동 합니다.
     - 선택한 대상 응용 프로그램 풀을 마우스 오른쪽 단추로 클릭 **고급 설정**합니다.  
-        ![고급](using-asynchronous-methods-in-aspnet-45/_static/image4.png)
+        ![advanced](using-asynchronous-methods-in-aspnet-45/_static/image4.png)
     - 에 **고급 설정** 대화 상자에서 변경 *Queue Length* 5,000 1,000 개에서.  
         ![큐 길이](using-asynchronous-methods-in-aspnet-45/_static/image5.png)  
   

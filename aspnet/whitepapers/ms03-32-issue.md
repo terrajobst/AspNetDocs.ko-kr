@@ -12,7 +12,7 @@ ms.openlocfilehash: faad1530a499fd3f46a6a6c6e7c194ba6c55fa6c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59386296"
 ---
 # <a name="fix-for-server-application-unavailable-error-after-applying-security-update-for-ie"></a>IE 보안 업데이트 적용 후 ‘서버 애플리케이션을 사용할 수 없음’ 오류에 대한 수정

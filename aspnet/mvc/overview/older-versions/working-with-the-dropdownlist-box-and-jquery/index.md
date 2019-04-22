@@ -12,7 +12,7 @@ ms.openlocfilehash: b7ef5109a0b87736881b9835b9b7e52689d9aa6d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59421097"
 ---
 # <a name="mvc-3---working-with-the-dropdownlist-box-and-jquery"></a>MVC 3 - DropDownList Box 및 jQuery 사용
@@ -22,4 +22,4 @@ ms.locfileid: "59421097"
 
 - [ASP.NET MVC와 함께 DropDownList 도우미 사용](using-the-dropdownlist-helper-with-aspnet-mvc.md)
 - [ASP.NET MVC DropDownList 도우미를 스 캐 폴딩 하는 방법 검사](examining-how-aspnet-mvc-scaffolds-the-dropdownlist-helper.md)
-- [jQuery UI를 사용하여 DropDownList에 새 범주 추가](adding-a-new-category-to-the-dropdownlist-using-jquery-ui.md)
+- [JQuery UI를 사용하여 DropDownList에 새 범주 추가](adding-a-new-category-to-the-dropdownlist-using-jquery-ui.md)

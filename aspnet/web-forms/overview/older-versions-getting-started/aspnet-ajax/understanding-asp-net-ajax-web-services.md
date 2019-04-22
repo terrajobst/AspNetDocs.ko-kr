@@ -12,7 +12,7 @@ ms.openlocfilehash: e576e11d63f940f1683ed26d217ff255a31b007c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59388415"
 ---
 # <a name="understanding-aspnet-ajax-web-services"></a>ASP.NET AJAX 웹 서비스 이해
@@ -48,8 +48,7 @@ Visual Studio 2008을 사용 하 여 새 웹 사이트 프로젝트를 만들면
 
 [!code-json[Main](understanding-asp-net-ajax-web-services/samples/sample2.json)]
 
-> *> [!NOTE]
-> 웹 서비스 URL의 일부로 정의 작업 이름 또한 JSON을 통해 요청 메시지 항상 전송 되지 않습니다. 웹 서비스를 통해 전달 될 매개 변수는 true로 설정 된 UseHttpGet 매개 변수를 사용 하 여 ScriptMethod 특성을 활용할 수는 쿼리 문자열 매개 변수입니다.*
+> *> [!NOTE] 웹 서비스 URL의 일부로 정의 작업 이름 또한 JSON을 통해 요청 메시지 항상 전송 되지 않습니다. 웹 서비스를 통해 전달 될 매개 변수는 true로 설정 된 UseHttpGet 매개 변수를 사용 하 여 ScriptMethod 특성을 활용할 수는 쿼리 문자열 매개 변수입니다.*
 
 
 **코드 3. JSON으로 Serialize 하는 웹 서비스 응답 메시지**
@@ -158,8 +157,7 @@ ScriptManager 컨트롤을 통해 CustomersService.asmx에 대 한 참조를 추
 
 [!code-html[Main](understanding-asp-net-ajax-web-services/samples/sample14.html)]
 
-> *> [!NOTE]
-> 생성 되는 실제 JavaScript 프록시 코드를 참조 하려는 경우 Internet Explorer의 주소 상자에 원하는.NET 웹 서비스의 URL을 입력 하 고 /js의 끝에 추가할 수 있습니다.*
+> *> [!NOTE] 생성 되는 실제 JavaScript 프록시 코드를 참조 하려는 경우 Internet Explorer의 주소 상자에 원하는.NET 웹 서비스의 URL을 입력 하 고 /js의 끝에 추가할 수 있습니다.*
 
 
 JavaScript 프록시의 디버그 버전으로 페이지에 포함 될 web.config에서 디버깅을 설정한 경우 다음에 표시 된:
@@ -183,7 +181,7 @@ JavaScript 프록시를 사용 하 여 GetCustomersByCountry() 라는 웹 메서
 이 호출은 InterfaceTraining 네임 스페이스를 참조, CustomersService 클래스 및 GetCustomersByCountry 웹 메서드를 정의 합니다. Textbox에서 얻은 국가 값 뿐만 아니라 비동기 웹 서비스 호출이 반환 될 때 호출 되어야 하는 OnWSRequestComplete 라는 콜백 함수를 전달 합니다. OnWSRequestComplete 처리 서비스에서 반환 하는 Customer 개체의 배열 및 페이지에 표시 되는 테이블로 변환 합니다. 호출에서 생성 된 출력은 그림 1에 표시 됩니다.
 
 
-[![B계약에서 가져온 데이터가 웹 서비스에 대 한 비동기 AJAX 호출을 수행 합니다.](understanding-asp-net-ajax-web-services/_static/image2.png)](understanding-asp-net-ajax-web-services/_static/image1.png)
+[![웹 서비스에 대 한 비동기 AJAX 호출 하 여 가져온 데이터를 바인딩입니다.](understanding-asp-net-ajax-web-services/_static/image2.png)](understanding-asp-net-ajax-web-services/_static/image1.png)
 
 **그림 1**: 웹 서비스에 대 한 비동기 AJAX 호출 하 여 가져온 데이터를 바인딩입니다.  ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-web-services/_static/image3.png))
 
@@ -201,7 +199,7 @@ JavaScript 프록시가 있는 웹 메서드를 호출 해야 하지만 프록�
 웹 서비스가 호출 될 때 발생 하는 모든 오류는 매개 변수로 오류를 나타내는 개체를 허용 하는 호출할 OnWSRequestFailed() 콜백 함수를 트리거합니다. 오류 개체 뿐만 아니라 호출 시간 초과 여부 오류의 원인을 확인 하려면 몇 가지 다른 함수를 노출 합니다. 그림 2는 함수에 의해 생성 된 출력의 예를 보여 줍니다. 및 다른 오류 함수를 사용 하는 예제를 보여 줍니다 코드 14.
 
 
-[![O경로 ASP.NET AJAX 오류 함수를 호출 하 여 생성 합니다.(understanding-asp-net-ajax-web-services/_static/image5.png)](understanding-asp-net-ajax-web-services/_static/image4.png)
+[![ASP.NET AJAX 오류 함수를 호출 하 여 생성 된 출력입니다.](understanding-asp-net-ajax-web-services/_static/image5.png)](understanding-asp-net-ajax-web-services/_static/image4.png)
 
 **그림 2**: ASP.NET AJAX 오류 함수를 호출 하 여 생성 된 출력입니다.  ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-web-services/_static/image6.png))
 
@@ -227,7 +225,7 @@ JavaScript 프록시가 있는 웹 메서드를 호출 해야 하지만 프록�
 이 질문에 답하기 위해 ASP.NET AJAX 페이지 고객 데이터를 표시 하는 고객의 주소를 업데이트 하려면 최종 사용자가 수를 가정 합니다. 웹 서비스 클라이언트에 주소 유형 (CustomerDetails 클래스 내에 정의 된 복합 형식)을 보낼 수 있는지를 지정 하는 경우 더 나은 코드 다시 사용 하기 위해 별도 함수로 업데이트 프로세스를 나눌 수 있습니다.
 
 
-[![O경로 만들기 RSS 데이터를 반환 하는 웹 서비스를 호출 합니다.(understanding-asp-net-ajax-web-services/_static/image8.png)](understanding-asp-net-ajax-web-services/_static/image7.png)
+[![RSS 데이터를 반환 하는 웹 서비스 호출에서 만들기를 출력 합니다.](understanding-asp-net-ajax-web-services/_static/image8.png)](understanding-asp-net-ajax-web-services/_static/image7.png)
 
 **그림 3**: RSS 데이터를 반환 하는 웹 서비스 호출에서 만들기를 출력 합니다.  ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-web-services/_static/image9.png))
 
@@ -275,7 +273,7 @@ ASP.NET AJAX 페이지 내 AutoCompleteExtender를 사용 하 여 웹 사이트�
 [!code-aspx[Main](understanding-asp-net-ajax-web-services/samples/sample25.aspx)]
 
 
-[![U로그온 AutoCompleteExtender 컨트롤입니다.](understanding-asp-net-ajax-web-services/_static/image11.png)](understanding-asp-net-ajax-web-services/_static/image10.png)
+[![AutoCompleteExtender 컨트롤을 사용 합니다.](understanding-asp-net-ajax-web-services/_static/image11.png)](understanding-asp-net-ajax-web-services/_static/image10.png)
 
 **그림 4**: AutoCompleteExtender 컨트롤을 사용 합니다.  ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-web-services/_static/image12.png))
 

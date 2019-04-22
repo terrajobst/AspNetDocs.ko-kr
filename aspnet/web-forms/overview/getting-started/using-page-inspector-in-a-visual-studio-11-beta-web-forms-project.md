@@ -12,7 +12,7 @@ ms.openlocfilehash: c39e1cf42fde382a9e74d7f865f0dac1aa62ddc8
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384242"
 ---
 # <a name="using-page-inspector-for-visual-studio-2012-in-aspnet-web-forms"></a>ASP.NET Web Forms에서 Visual Studio 2012용 페이지 검사기 사용
@@ -25,7 +25,7 @@ Tim Ammann 여
 > 
 > 이 자습서에는 다음 섹션이 있습니다.
 > 
-> [전제 조건](#_1_prerequisites)
+> [필수 조건](#_1_prerequisites)
 > 
 > [웹 응용 프로그램 만들기](#_2_creating_a)
 > 

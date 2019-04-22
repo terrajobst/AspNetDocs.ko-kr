@@ -12,7 +12,7 @@ ms.openlocfilehash: 883b5c3ad39922ddd51ea1d07b8d52d1c74d2153
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384294"
 ---
 # <a name="general-iis-tips"></a>일반적인 IIS 팁
@@ -21,7 +21,7 @@ ms.locfileid: "59384294"
 
 
 - [공유 호스팅에서 개발 및 배포](developing-and-deploying-in-a-shared-hosting.md)
-- [IIS7 위임된 관리자 작업](working-with-iis7-deligated-admin.md)
+- [IIS7 	위임된 관리자 작업](working-with-iis7-deligated-admin.md)
 - [기능 관련 위임된 관리](feature-specific-delegated-management.md)
 - [프로덕션 ASP.NET 앱 문제 해결](troubleshooting-production-aspnet-apps.md)
 - [IIS7 관리자를 사용하여 사이트 만들기](creating-a-site-with-iis7-manager.md)

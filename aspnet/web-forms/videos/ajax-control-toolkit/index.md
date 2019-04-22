@@ -12,7 +12,7 @@ ms.openlocfilehash: 938d7f696e12496fc4ae79c51e9446d71a898e3e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59382890"
 ---
 # <a name="ajax-control-toolkit"></a>Ajax Control Toolkit
@@ -55,8 +55,8 @@ ms.locfileid: "59382890"
 - [AJAX Toolkit 재정렬 컨트롤](how-do-i-the-ajax-toolkit-reorder-control.md)
 - [ASP.NET 도구 키트에 AJAX 평가 컨트롤 사용](utilize-the-ajax-rating-control-in-the-aspnet-toolkit.md)
 - [컨트롤 Extender](control-extenders.md)
-- [색 선택](color-picker.md)
-- [Combo Box](combo-box.md)
+- [색 편집기](color-picker.md)
+- [콤보 상자](combo-box.md)
 - [편집기 컨트롤](editor-control.md)
 - [편집기 컨트롤 사용자 지정](editor-control-custom.md)
 - [새로운 사용자 지정 Extender 만들기](create-a-new-custom-extender.md)

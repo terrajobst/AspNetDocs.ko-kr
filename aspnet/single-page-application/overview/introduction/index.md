@@ -12,7 +12,7 @@ ms.openlocfilehash: 81a708b5badecbb5bd134078d079a0fe3a63bb5f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59380680"
 ---
 # <a name="introduction-to-aspnet-single-page-application"></a>ASP.NET 단일 페이지 응용 프로그램 소개
@@ -20,5 +20,5 @@ ms.locfileid: "59380680"
 > 새 SPA 템플릿 및 Knockoutjs 사용에 대 한 내용입니다.
 
 
-- [단일 페이지 애플리케이션: KnockoutJS 템플릿](knockoutjs-template.md)
-- [Knockout 이외의 라이브러리를 알고 있으신가요?](other-libraries.md)
+- [단일 페이지 응용 프로그램: KnockoutJS 템플릿](knockoutjs-template.md)
+- [Knockout 이외의 라이브러리를 알고 있습니까?](other-libraries.md)

@@ -12,7 +12,7 @@ ms.openlocfilehash: 69a6843783dad3d8fcd8a5b93c9d8a31f9bb8ec0
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383241"
 ---
 # <a name="paging-report-data-in-a-datalist-or-repeater-control-vb"></a>DataList 또는 반복기 컨트롤에서 보고서 데이터 페이징(VB)
@@ -53,7 +53,7 @@ ms.locfileid: "59383241"
 을 엽니다는 `Default.aspx` 끌어서 페이지를 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤을 `UserControls` 디자인 화면으로 폴더입니다. 만든이 사용자 정의 컨트롤을 [마스터 페이지 및 사이트 탐색](../introduction/master-pages-and-site-navigation-vb.md) 자습서에서는 사이트 맵을 열거 하 고 글머리 기호 목록에 현재 섹션에서 이러한 자습서를 표시 합니다.
 
 
-[![Add Default.aspx SectionLevelTutorialListing.ascx 사용자 정의 컨트롤](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image3.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image2.png)
+[![Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image3.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image2.png)
 
 **그림 2**: 추가 된 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤 `Default.aspx` ([클릭 하 여 큰 이미지 보기](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image4.png))
 
@@ -110,7 +110,7 @@ DataList 또는 Repeater 컨트롤의 기본 페이징을 구현 하려면를 �
 사용 하 여 합니다 `GetProductsAsPagedDataSource` 에 추가 하는 메서드를 `ProductsBLL` 클래스를 만들 수 있습니다 이제 DataList 또는 Repeater 기본 페이징을 제공 하는 합니다. 열어서 시작 합니다 `Paging.aspx` 페이지를 `PagingSortingDataListRepeater` 폴더 및 s DataList 설정 디자이너 도구 상자에서 끌어서 DataList `ID` 속성을 `ProductsDefaultPaging`. DataList s 스마트 태그를 만들 라는 한 새 ObjectDataSource `ProductsDefaultPagingDataSource` 사용 하 여 데이터를 검색할 수 있도록 구성 하 고는 `GetProductsAsPagedDataSource` 메서드.
 
 
-[![CObjectDataSource를 작성 하 고 GetProductsAsPagedDataSource () 메서드를 사용 하도록 구성](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image8.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image7.png)
+[![ObjectDataSource를 만들고 GetProductsAsPagedDataSource () 메서드를 사용 하도록 구성](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image8.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image7.png)
 
 **그림 5**: ObjectDataSource를 만들고 사용 하도록 구성 합니다 `GetProductsAsPagedDataSource` `()` 메서드 ([클릭 하 여 큰 이미지 보기](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image9.png))
 
@@ -118,7 +118,7 @@ DataList 또는 Repeater 컨트롤의 기본 페이징을 구현 하려면를 �
 UPDATE, INSERT에서에서 드롭 다운 목록을 설정 하 고 탭 (없음)를 삭제 합니다.
 
 
-[![S(없음)을 업데이트, 삽입 및 삭제 탭의 드롭다운 목록 et](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image11.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image10.png)
+[![UPDATE, INSERT에에서 드롭다운 목록이 설정 하 고 탭 (없음)을 삭제 합니다.](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image11.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image10.png)
 
 **그림 6**: UPDATE, INSERT에에서 드롭다운 목록이 설정 하 고 탭 (없음)을 삭제 ([클릭 하 여 큰 이미지 보기](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image12.png))
 
@@ -130,7 +130,7 @@ UPDATE, INSERT에서에서 드롭 다운 목록을 설정 하 고 탭 (없음)�
 특히 쿼리 문자열 필드 pageIndex 및에 대 한 pageSize를 사용 합니다 `pageIndex` 및 `pageSize` 매개 변수를 각각 (그림 7 참조). 시간을 내어 이러한 매개 변수에 대 한 기본값을 설정으로 쿼리 문자열 값은 사용자가이 페이지를 처음 방문할 때 표시 되지 않습니다. 에 대 한 `pageIndex`을 기본값 0으로 설정 (데이터의 첫 페이지에 표시 됩니다) 및 `pageSize` 4가 기본값입니다.
 
 
-[![Use pageIndex 및 pageSize 매개 변수를 원본으로 쿼리 문자열](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image14.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image13.png)
+[![PageIndex 및 pageSize 매개 변수에 대 한 원본으로 쿼리 문자열 사용](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image14.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image13.png)
 
 **그림 7**: 쿼리 문자열에 대 한 원본으로 사용 합니다 `pageIndex` 및 `pageSize` 매개 변수 ([클릭 하 여 큰 이미지 보기](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image15.png))
 
@@ -149,7 +149,7 @@ ObjectDataSource를 구성한 후 자동으로 만들어지고는 `ItemTemplate`
 처음에 브라우저를 통해이 페이지를 방문 하는 경우는 `pageIndex` 나 `pageSize` querystring 매개 변수가 제공 됩니다. 따라서 0에서 4의 기본값을 사용 됩니다. 그림 8에서 알 수 있듯이,이 인해 처음 네 개 제품을 표시 하는 DataList 합니다.
 
 
-[![T그 첫 번째 4 개 제품 나와](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image17.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image16.png)
+[![첫 번째는 네 가지 제품 나와 있습니다.](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image17.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image16.png)
 
 **그림 8**: 첫 번째는 네 가지 제품 나열 됩니다 ([클릭 하 여 큰 이미지 보기](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image18.png))
 
@@ -157,7 +157,7 @@ ObjectDataSource를 구성한 후 자동으로 만들어지고는 `ItemTemplate`
 없이 데이터의 두 번째 페이지로 이동 하는 사용자가 현재 더 간단 하 게 여기 페이징 인터페이스를 의미 합니다. 4 단계에서 페이징 인터페이스를 만들겠습니다. 지금은 그러나 페이징을 수행할 수 있습니다 직접 querystring 페이징 조건을 지정 하 여 합니다. 예를 들어, 두 번째 페이지를 보려면에서 s 브라우저 주소 표시줄에서 URL을 변경 `Paging.aspx` 에 `Paging.aspx?pageIndex=2` Enter를 누릅니다. 이렇게 하면 표시 되는 데이터의 두 번째 페이지 (그림 9 참조).
 
 
-[![T그 두 번째 페이지의 데이터가 표시 됩니다](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image20.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image19.png)
+[![두 번째 페이지의 데이터가 표시 됩니다.](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image20.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image19.png)
 
 **그림 9**: 두 번째 페이지의 데이터가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image21.png))
 
@@ -238,12 +238,12 @@ Let s 페이징 인터페이스를 완료 하 여 사용자에 게 알리는 새
 그림 10은 `Paging.aspx` 처음 방문할 때. 쿼리 문자열 이므로 빈, DataList 기본값으로 처음 네 개 제품;를 표시 합니다. 첫 번째 및 이전 단추를 사용할 수 없습니다. (그림 11 참조)에서 다음 네 개의 레코드가;을 다음을 클릭 하면 표시 됩니다. 첫 번째 및 이전 단추를 지금 활성화 됩니다.
 
 
-[![T그 첫 번째 페이지의 데이터가 표시 됩니다](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image23.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image22.png)
+[![데이터의 첫 번째 페이지 표시](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image23.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image22.png)
 
 **그림 10**: 첫 번째 페이지의 데이터가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image24.png))
 
 
-[![T그 두 번째 페이지의 데이터가 표시 됩니다](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image26.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image25.png)
+[![두 번째 페이지의 데이터가 표시 됩니다.](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image26.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image25.png)
 
 **그림 11**: 두 번째 페이지의 데이터가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image27.png))
 

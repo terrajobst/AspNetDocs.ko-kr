@@ -12,7 +12,7 @@ ms.openlocfilehash: cdd26f05aef75d1511482ae357f62258fbffce25
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59422319"
 ---
 # <a name="aspnet-4---tailspin-spyworks"></a>ASP.NET 4 - Tailspin Spyworks
@@ -22,9 +22,9 @@ ms.locfileid: "59422319"
 
 - [1부: 파일-> 새 프로젝트](tailspin-spyworks-part-1.md)
 - [2부: 데이터 액세스 계층](tailspin-spyworks-part-2.md)
-- [3부: 레이아웃 및 범주 메뉴](tailspin-spyworks-part-3.md)
-- [4부: 제품 나열](tailspin-spyworks-part-4.md)
-- [5부: 비즈니스 논리](tailspin-spyworks-part-5.md)
-- [6부: ASP.NET 멤버 자격](tailspin-spyworks-part-6.md)
-- [7부: 기능 추가](tailspin-spyworks-part-7.md)
-- [8부: 최종 페이지, 예외 처리 및 결론](tailspin-spyworks-part-8.md)
+- [3 부: 레이아웃 및 범주 메뉴](tailspin-spyworks-part-3.md)
+- [4 부: 제품 목록](tailspin-spyworks-part-4.md)
+- [5 부: 비즈니스 논리](tailspin-spyworks-part-5.md)
+- [6 부: ASP.NET 멤버 자격](tailspin-spyworks-part-6.md)
+- [7 부: 추가 기능](tailspin-spyworks-part-7.md)
+- [8 부: 최종 페이지, 예외 처리 및 결론](tailspin-spyworks-part-8.md)

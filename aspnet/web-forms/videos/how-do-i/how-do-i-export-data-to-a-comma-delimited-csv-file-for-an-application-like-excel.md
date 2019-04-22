@@ -12,7 +12,7 @@ ms.openlocfilehash: f27873eee345fe5347023b154de2b3833c9b6138
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383033"
 ---
 # <a name="how-do-i-export-data-to-a-comma-delimited-csv-file-for-an-application-like-excel"></a>[어떻게 할까요?] Excel 같은 응용 프로그램에 대 한 데이터를 쉼표로 구분 된 (CSV) 파일로 내보내기

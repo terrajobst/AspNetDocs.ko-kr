@@ -12,7 +12,7 @@ ms.openlocfilehash: 8d9079d75f20bc85a5b4babfb45dfdfcff696a50
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59380498"
 ---
 # <a name="how-do-i-use-aspnet-ajax-client-templates"></a>어떻게 할까요 ASP.NET AJAX 클라이언트 템플릿 사용

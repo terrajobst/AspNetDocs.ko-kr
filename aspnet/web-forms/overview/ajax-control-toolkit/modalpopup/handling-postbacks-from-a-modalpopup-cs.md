@@ -12,7 +12,7 @@ ms.openlocfilehash: 54dd3bae21e661e0b17cab6a71f0df33b6712bcd
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59388558"
 ---
 # <a name="handling-postbacks-from-a-modalpopup-c"></a>ModalPopup에서 포스트백 처리(C#)
@@ -55,7 +55,7 @@ ASP.NET AJAX와 Control Toolkit의 기능을 활성화 하기 위해 합니다 `
 [!code-csharp[Main](handling-postbacks-from-a-modalpopup-cs/samples/sample6.cs)]
 
 
-[![T그 모달 팝업 포스트백을 발생 시키는](handling-postbacks-from-a-modalpopup-cs/_static/image2.png)](handling-postbacks-from-a-modalpopup-cs/_static/image1.png)
+[![모달 팝업은 포스트백을 발생 시키는](handling-postbacks-from-a-modalpopup-cs/_static/image2.png)](handling-postbacks-from-a-modalpopup-cs/_static/image1.png)
 
 모달 팝업은 포스트백을 발생 시키는 ([클릭 하 여 큰 이미지 보기](handling-postbacks-from-a-modalpopup-cs/_static/image3.png))
 

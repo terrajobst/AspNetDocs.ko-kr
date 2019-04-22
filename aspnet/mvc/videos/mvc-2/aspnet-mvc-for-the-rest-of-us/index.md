@@ -12,7 +12,7 @@ ms.openlocfilehash: 229d9b389d109160ba17406a9db69464c65a8632
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59418835"
 ---
 # <a name="aspnet-mvc-for-the-rest-of-us"></a>나머지 개발자를 위한 ASP.NET MVC
@@ -20,7 +20,7 @@ ms.locfileid: "59418835"
 > 나머지 개발자를 위한 ASP.NET MVC
 
 
-- [나머지 개발자를 위한 ASP.NET MVC: 1부](aspnet-mvc-for-the-rest-of-us-part-1.md)
-- [나머지 개발자를 위한 ASP.NET MVC: 2부](aspnet-mvc-for-the-rest-of-us-part-2.md)
-- [나머지 개발자를 위한 ASP.NET MVC: 3부](aspnet-mvc-for-the-rest-of-us-part-3.md)
-- [나머지 개발자를 위한 ASP.NET MVC: 4부](aspnet-mvc-for-the-rest-of-us-part-4.md)
+- [나머지에 대 한 ASP.NET MVC: 1 부](aspnet-mvc-for-the-rest-of-us-part-1.md)
+- [나머지에 대 한 ASP.NET MVC: 2 부](aspnet-mvc-for-the-rest-of-us-part-2.md)
+- [나머지에 대 한 ASP.NET MVC: 3 부](aspnet-mvc-for-the-rest-of-us-part-3.md)
+- [나머지에 대 한 ASP.NET MVC: 4 부](aspnet-mvc-for-the-rest-of-us-part-4.md)

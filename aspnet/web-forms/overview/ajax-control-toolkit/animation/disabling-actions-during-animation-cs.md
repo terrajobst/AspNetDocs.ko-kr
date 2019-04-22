@@ -12,7 +12,7 @@ ms.openlocfilehash: 1cce2b05f125902ab05d493bebe753b2060b4d95
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384281"
 ---
 # <a name="disabling-actions-during-animation-c"></a>애니메이션 중에 작업 사용 안 함(C#)
@@ -55,7 +55,7 @@ HTML 컨트롤을 포스트백 만들기 단추 하지 않을 것 이므로 웹 
 그러나 특정된 시나리오에서이 쓸모 없게 단추 이후 페이드 아웃 및 애니메이션의 끝에 표시 되지 않습니다.
 
 
-[![T이 애니메이션은 실행 되는 즉시 그 단추가 비활성화 됩니다](disabling-actions-during-animation-cs/_static/image2.png)](disabling-actions-during-animation-cs/_static/image1.png)
+[![이 애니메이션은 실행 되는 즉시 단추가 비활성화 됩니다.](disabling-actions-during-animation-cs/_static/image2.png)](disabling-actions-during-animation-cs/_static/image1.png)
 
 이 애니메이션은 실행 되는 즉시 단추가 비활성화 됩니다 ([클릭 하 여 큰 이미지 보기](disabling-actions-during-animation-cs/_static/image3.png))
 

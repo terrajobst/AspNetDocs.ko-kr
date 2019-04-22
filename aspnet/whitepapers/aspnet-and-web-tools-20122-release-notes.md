@@ -12,7 +12,7 @@ ms.openlocfilehash: 45e2d1b10665a8ca1965f0761bfa6bfd13444c8e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59419511"
 ---
 # <a name="aspnet-and-web-tools-20122-release-notes"></a>ASP.NET 및 Web Tools 2012.2 릴리스 정보
@@ -21,8 +21,8 @@ ms.locfileid: "59419511"
 
 
 - [설치 참고 사항](#_Installation)
-- [설명서](#_Documentation)
-- [Support(지원)](#_Support)
+- [문서](#_Documentation)
+- [지원](#_Support)
 - [소프트웨어 요구 사항](#_Software_Requirements)
 - [ASP.NET 및 Web Tools 2012.2의 새로운 기능](#_New_Features_in)
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 3df4258b2de309aed5a3a598caeb1e7332c321f6
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383964"
 ---
 # <a name="iteration-7--add-ajax-functionality-vb"></a>반복 #7 – Ajax 기능 추가 (VB)
@@ -94,7 +94,7 @@ JavaScript를 지 원하는 브라우저를 사용 하 여 연락처 관리자 �
 S를 인덱스 보기 수정 연락처를 표시 하는 보기의 영역을 업데이트만 연락처 그룹을 클릭 하 여 시작할 수 있습니다. 그림 1에 빨간색 상자 업데이트 하고자 하는 영역을 포함 합니다.
 
 
-[![Updating 연락처만](iteration-7-add-ajax-functionality-vb/_static/image1.jpg)](iteration-7-add-ajax-functionality-vb/_static/image1.png)
+[![만 연락처를 업데이트 하는 중](iteration-7-add-ajax-functionality-vb/_static/image1.jpg)](iteration-7-add-ajax-functionality-vb/_static/image1.png)
 
 **그림 01**: 만 연락처를 업데이트 하는 중 ([클릭 하 여 큰 이미지 보기](iteration-7-add-ajax-functionality-vb/_static/image2.png))
 
@@ -173,7 +173,7 @@ ASP.NET AJAX 브라우저 기록 등에 세 가지를 수행 해야 합니다.
 
 업데이트 된 인덱스 뷰 목록 5에 포함 됩니다.
 
-**5-Views\Contact\Index.aspx 나열**
+**Listing 5 - Views\Contact\Index.aspx**
 
 [!code-aspx[Main](iteration-7-add-ajax-functionality-vb/samples/sample8.aspx)]
 
@@ -194,7 +194,7 @@ BeginContactList() 메서드 연락처 그룹을 클릭할 때 호출 됩니다.
 현재 연락처를 삭제 하기 위해 해야 할 삭제 링크를 클릭 하 고 삭제 확인 페이지에 표시 된 삭제 단추를 클릭 (그림 2 참조). 이 페이지 요청 데이터베이스 레코드가 삭제와 같은 간단한 작업을 수행 하려면 많은 것 같습니다.
 
 
-[![T그 삭제 확인 페이지](iteration-7-add-ajax-functionality-vb/_static/image2.jpg)](iteration-7-add-ajax-functionality-vb/_static/image3.png)
+[![삭제 확인 페이지](iteration-7-add-ajax-functionality-vb/_static/image2.jpg)](iteration-7-add-ajax-functionality-vb/_static/image3.png)
 
 **그림 02**: 삭제 확인 페이지 ([클릭 하 여 큰 이미지 보기](iteration-7-add-ajax-functionality-vb/_static/image4.png))
 

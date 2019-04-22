@@ -12,7 +12,7 @@ ms.openlocfilehash: 8caa88d928517e1c71210cbe55e3961d4baf461a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59381278"
 ---
 # <a name="iteration-4--make-the-application-loosely-coupled-c"></a>반복 #4 – 응용 프로그램을 느슨하게 결합 (C#) 확인
@@ -173,7 +173,7 @@ Decorator 패턴을 사용 하는 인터페이스를 구현 하기 위해 새 �
 
 [!code-csharp[Main](iteration-4-make-the-application-loosely-coupled-cs/samples/sample7.cs)]
 
-**Listing 8 - Models\Validation\IValidationDictionary.cs**
+**8-Models\Validation\IValidationDictionary.cs 나열**
 
 [!code-csharp[Main](iteration-4-make-the-application-loosely-coupled-cs/samples/sample8.cs)]
 

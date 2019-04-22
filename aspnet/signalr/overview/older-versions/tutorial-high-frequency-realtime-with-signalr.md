@@ -12,7 +12,7 @@ ms.openlocfilehash: 179f6dd3a60f8c49770ee34af93d54defad0adc4
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59379417"
 ---
 # <a name="high-frequency-realtime-with-signalr-1x"></a>SignalR 1.x를 사용하는 고주파수 실시간
@@ -44,8 +44,8 @@ ms.locfileid: "59379417"
 
 이 자습서는 다음 섹션이 포함 되어 있습니다.
 
-- [전제 조건](#prerequisites)
-- [프로젝트를 만듭니다.](#createtheproject)
+- [필수 구성 요소](#prerequisites)
+- [프로젝트를 만들려면](#createtheproject)
 - [ASP.NET SignalR 및 JQuery.UI NuGet 패키지 추가](#nugetpackages)
 - [기본 응용 프로그램 만들기](#baseapp)
 - [클라이언트 루프 추가](#clientloop)

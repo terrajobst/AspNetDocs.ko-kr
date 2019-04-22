@@ -12,7 +12,7 @@ ms.openlocfilehash: e2f2246e2126bd6e648f861bcb296fab62a748bb
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59380108"
 ---
 # <a name="aspnet-mvc-routing-overview-c"></a>ASP.NET MVC 라우팅 개요(C#)
@@ -95,7 +95,7 @@ MVC 프레임 워크 컨트롤러 작업을 호출 하는 방식으로 인해 UR
 [!code-csharp[Main](asp-net-mvc-routing-overview-cs/samples/sample5.cs)]
 
 
-[![I매개 변수 값을 필요로 하는 컨트롤러 작업 nvoking](asp-net-mvc-routing-overview-cs/_static/image1.jpg)](asp-net-mvc-routing-overview-cs/_static/image1.png)
+[![매개 변수 값을 필요로 하는 컨트롤러 작업을 호출 합니다.](asp-net-mvc-routing-overview-cs/_static/image1.jpg)](asp-net-mvc-routing-overview-cs/_static/image1.png)
 
 **그림 01**: 매개 변수 값을 필요로 하는 컨트롤러 동작 호출 ([클릭 하 여 큰 이미지 보기](asp-net-mvc-routing-overview-cs/_static/image2.png))
 

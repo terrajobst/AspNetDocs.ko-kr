@@ -12,7 +12,7 @@ ms.openlocfilehash: 25e34512abc779bfef2d2bb99a8b62de073e8ed6
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59381488"
 ---
 # <a name="using-existing-stored-procedures-for-the-typed-datasets-tableadapters-vb"></a>형식화된 데이터 세트의 TableAdapter에 대한 기존 저장 프로시저 사용(VB)
@@ -39,7 +39,7 @@ ms.locfileid: "59381488"
 Visual Studio에서는 쉽게 데이터베이스에 새 저장된 프로시저를 추가 합니다. Let s의 모든 열을 반환 하는 Northwind 데이터베이스에 새 저장된 프로시저를 추가 합니다 `Products` 테이블에 있는 특정 `CategoryID` 값입니다. 서버 탐색기 창에서 해당 폴더-데이터베이스 다이어그램, 테이블, 뷰 등-표시 되도록 Northwind 데이터베이스를 확장 합니다. 이전 자습서에서 보았듯이 Stored Procedures 폴더에 데이터베이스 s 기존 저장된 프로시저를 포함 합니다. 새 저장된 프로시저를 추가 하려면 저장 프로시저 폴더를 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 새 저장 프로시저 추가 옵션을 선택 합니다.
 
 
-[![R저장 프로시저 폴더를 마우스 오른쪽 단추로 클릭 하 고 새 저장 프로시저 추가](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image2.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image1.png)
+[![저장된 프로시저 폴더를 마우스 오른쪽 단추로 클릭 하 고 새 저장된 프로시저를 추가 합니다.](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image2.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image1.png)
 
 **그림 1**: 저장 프로시저 폴더를 마우스 오른쪽 단추로 클릭 하 고 새 저장 프로시저를 추가 ([클릭 하 여 큰 이미지 보기](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image3.png))
 
@@ -58,7 +58,7 @@ Visual Studio에서는 쉽게 데이터베이스에 새 저장된 프로시저�
 그림 2 표시 한 후 Visual Studio는 `Products_SelectByCategoryID` 저장된 프로시저가 저장 되었습니다.
 
 
-[![T저장 프로시저 Products_SelectByCategoryID 그 데이터베이스에 추가 되었습니다](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image5.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image4.png)
+[![저장된 프로시저 Products_SelectByCategoryID 데이터베이스에 추가 되었습니다.](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image5.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image4.png)
 
 **그림 2**: 저장 프로시저 `Products_SelectByCategoryID` 데이터베이스에 추가 되었습니다 ([큰 이미지를 보려면 클릭](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image6.png))
 
@@ -70,7 +70,7 @@ Visual Studio에서는 쉽게 데이터베이스에 새 저장된 프로시저�
 열어서 시작 합니다 `NorthwindWithSprocs` 데이터 집합입니다. 마우스 오른쪽 단추로 클릭는 `ProductsTableAdapter` TableAdapter 쿼리 구성 마법사를 시작 하려면 쿼리 추가 선택 합니다. 에 [이전 자습서](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb.md) 우리 회사에 새 저장된 프로시저를 만드는 TableAdapter가 하기로 했습니다. 그러나이 자습서에서는 하려는 새 TableAdapter 메서드는 기존 연결 `Products_SelectByCategoryID` 저장 프로시저입니다. 따라서 마법사가 첫 번째 단계에서 사용 하 여 기존 저장된 프로시저 옵션을 선택 하 고 클릭 합니다.
 
 
-[![C설치할 사용 하 여 기존 저장 프로시저 옵션](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image8.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image7.png)
+[![기존 저장된 프로시저 옵션 사용 선택](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image8.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image7.png)
 
 **그림 3**: 저장 된 프로시저 옵션을 사용 하 여 기존 선택 ([클릭 하 여 큰 이미지 보기](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image9.png))
 
@@ -78,7 +78,7 @@ Visual Studio에서는 쉽게 데이터베이스에 새 저장된 프로시저�
 다음 화면 드롭 다운 목록을 채울 s 데이터베이스를 사용 하 여 저장된 프로시저를 제공 합니다. 저장된 프로시저를 선택 하는 입력된 매개 변수를 왼쪽 및 오른쪽 (있는 경우)를 반환 하는 데이터 필드를 나열 합니다. 선택 된 `Products_SelectByCategoryID` 저장 프로시저 목록에서 다음을 클릭 합니다.
 
 
-[![PProducts_SelectByCategoryID 저장 프로시저를 클릭](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image11.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image10.png)
+[![선택 된 Products_SelectByCategoryID 저장 프로시저](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image11.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image10.png)
 
 **그림 4**: 선택 된 `Products_SelectByCategoryID` 저장 프로시저 ([큰 이미지를 보려면 클릭](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image12.png))
 
@@ -88,7 +88,7 @@ Visual Studio에서는 쉽게 데이터베이스에 새 저장된 프로시저�
 이후를 `Products_SelectByCategoryID` 저장된 프로시저는 특정 범주에 속하는 첫 번째 응답-표 형식 데이터를 선택 하 고 다음을 클릭 하는 모든 제품을 반환 합니다.
 
 
-[![I저장 프로시저 테이블 형식 데이터를 반환 하는 ndicate](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image14.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image13.png)
+[![저장된 프로시저가 반환 테이블 형식 데이터를 나타냅니다.](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image14.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image13.png)
 
 **그림 5**: 저장 프로시저가 반환 하는 테이블 형식 데이터를 나타냅니다 ([클릭 하 여 큰 이미지 보기](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image15.png))
 
@@ -96,7 +96,7 @@ Visual Studio에서는 쉽게 데이터베이스에 새 저장된 프로시저�
 에 이러한 메서드의 이름을 뒤 메서드 패턴 사용을 나타냅니다. 두고 모두 채우기는 DataTable 반환 DataTable 옵션을 선택 하지만 메서드를 이름 바꾸기 `FillByCategoryID` 고 `GetProductsByCategoryID`입니다. 마법사가 수행할 작업의 요약을 검토 하려면 다음을 클릭 합니다. 모든 항목이 올바르면 마침을 클릭 합니다.
 
 
-[![Name 메서드 FillByCategoryID 및 GetProductsByCategoryID](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image17.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image16.png)
+[![메서드 FillByCategoryID 이름과 GetProductsByCategoryID](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image17.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image16.png)
 
 **그림 6**: 메서드 이름을 `FillByCategoryID` 하 고 `GetProductsByCategoryID` ([클릭 하 여 큰 이미지 보기](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image18.png))
 
@@ -125,12 +125,12 @@ Visual Studio에서는 쉽게 데이터베이스에 새 저장된 프로시저�
 엽니다는 `ExistingSprocs.aspx` 페이지에서 `AdvancedDAL` 폴더 및 디자이너 도구 상자에서 끌어서 DropDownList 합니다. 집합 DropDownList s `ID` 속성을 `Categories` 및 해당 `AutoPostBack` 속성을 `True`입니다. 다음으로, 스마트 태그를 바인딩할 DropDownList 라는 새로운 ObjectDataSource는 `CategoriesDataSource`합니다. 해당 데이터를 검색할 수 있도록 ObjectDataSource를 구성 합니다 `CategoriesBLL` s 클래스 `GetCategories` 메서드. UPDATE, INSERT에서에서 드롭 다운 목록을 설정 하 고 탭 (없음)를 삭제 합니다.
 
 
-[![Retrieve s GetCategories 메서드 CategoriesBLL 클래스에서 데이터](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image20.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image19.png)
+[![S CategoriesBLL 클래스 GetCategories 메서드에서 데이터를 검색 합니다.](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image20.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image19.png)
 
 **그림 7**: 데이터를 검색 합니다 `CategoriesBLL` s 클래스 `GetCategories` 메서드 ([클릭 하 여 큰 이미지 보기](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image21.png))
 
 
-[![SUPDATE, INSERT 및 DELETE 탭 (없음)에 있는 드롭다운 목록은 et](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image23.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image22.png)
+[![UPDATE, INSERT 드롭 다운 목록을 설정 하 고 탭 삭제 (없음)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image23.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image22.png)
 
 **그림 8**: 설정 드롭다운 목록에서 업데이트, 삽입 및 삭제 하는 탭 (없음) ([클릭 하 여 큰 이미지 보기](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image24.png))
 
@@ -145,12 +145,12 @@ ObjectDataSource 마법사를 완료 한 후 표시할 DropDownList를 구성 �
 그런 다음 GridView를 디자이너로 끌어, DropDownList 아래에 배치 합니다. 집합 GridView s `ID` 하 `ProductsByCategory` 및 스마트 태그를 바인딩할 라는 새로운 ObjectDataSource는 `ProductsByCategoryDataSource`합니다. 구성 합니다 `ProductsByCategoryDataSource` ObjectDataSource 사용 하는 `ProductsBLLWithSprocs` 하는 클래스를 사용 하 여 해당 데이터를 검색 합니다 `GetProductsByCategoryID(categoryID)` 메서드. 데이터를 표시 하려면이 GridView 사용만 되므로 UPDATE, INSERT에서에서 드롭 다운 목록을 설정 및 탭 (없음)을 삭제 하 고 클릭 합니다.
 
 
-[![Configure ProductsBLLWithSprocs 클래스를 사용 하는 ObjectDataSource](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image26.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image25.png)
+[![ProductsBLLWithSprocs 클래스를 사용 하는 ObjectDataSource 구성](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image26.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image25.png)
 
 **그림 9**: ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLLWithSprocs` 클래스 ([큰 이미지를 보려면 클릭](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image27.png))
 
 
-[![Retrieve GetProductsByCategoryID(categoryID) 메서드에서 데이터](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image29.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image28.png)
+[![GetProductsByCategoryID(categoryID) 메서드에서 데이터를 검색 합니다.](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image29.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image28.png)
 
 **그림 10**: 데이터를 검색 합니다 `GetProductsByCategoryID(categoryID)` 메서드 ([큰 이미지를 보려면 클릭](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image30.png))
 
@@ -158,7 +158,7 @@ ObjectDataSource 마법사를 완료 한 후 표시할 DropDownList를 구성 �
 [선택] 탭에서 선택한 메서드에서 마법사의 마지막 단계에서는 매개 변수의 원본에 대 한 요청 하므로 매개 변수를 예상 합니다. 매개 변수 원본 드롭다운 목록 컨트롤에 설정 하 고 선택 된 `Categories` ControlID 드롭 다운 목록에서 제어 합니다. 마법사를 완료 하려면 마침을 클릭 합니다.
 
 
-[![Use categoryID 매개 변수 원본으로 범주 DropDownList](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image32.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image31.png)
+[![범주 DropDownList를 사용 하 여 categoryID 매개 변수 원본으로](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image32.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image31.png)
 
 **그림 11**: 사용 된 `Categories` DropDownList의 원본으로는 `categoryID` 매개 변수 ([전체 크기 이미지를 보려면 클릭](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image33.png))
 
@@ -168,7 +168,7 @@ ObjectDataSource 마법사를 완료 하면 Visual Studio가 BoundFields 및는 
 브라우저를 통해 페이지를 방문 합니다. 경우 표에 나열 된 해당 제품과 음료 범주를 선택 하는 페이지를 방문 합니다. 그림 12로, 다른 범주에 드롭다운 목록을 변경, 포스트백을 발생 시키는 나타나며 새로 선택한 범주의 제품 표를 다시 로드 합니다.
 
 
-[![T그리고 제품 생성 범주에 표시 됩니다](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image35.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image34.png)
+[![제품 생성 범주에 표시 됩니다.](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image35.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image34.png)
 
 **그림 12**: 제품 생성 범주에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image36.png))
 
@@ -206,12 +206,12 @@ ObjectDataSource 마법사를 완료 하면 Visual Studio가 BoundFields 및는 
 S를 구체적인 예제를 살펴볼 수 있습니다. 외래 키 제약 조건 사이 존재 합니다 `Categories` 및 `Products` 테이블, 즉 각 `CategoryID` 필드에 `Products` 테이블에 매핑해야 합니다.는 `CategoryID` 값는 `Categories` 테이블. 같은 제품에 연결 된 범주를 삭제 하는 동안이 제약 조건을 위반 하는 모든 작업은 foreign key 제약 조건 위반 하 게 발생 합니다. 이 확인 하려면 이진 데이터 섹션을 사용 하 여 작업에서 업데이트 및 삭제 기존 이진 데이터 예제를 다시 방문 (`~/BinaryData/UpdatingAndDeleting.aspx`). 이 페이지 (그림 13 참조) 편집 및 삭제 단추와 함께 시스템의 각 범주에 나열 하지만 삭제는 foreign key 제약 조건 위반으로 인해 실패 음료-등의 제품-연결 된 범주를 삭제 하려고 하면 (그림 14 참조).
 
 
-[![E범주 편집 및 삭제 단추를 사용 하 여 GridView에 표시 됩니다 대 한 ach](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image38.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image37.png)
+[![각 범주는 편집 및 삭제 단추를 사용 하 여 GridView에 표시 됩니다.](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image38.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image37.png)
 
 **그림 13**: 각 범주는 편집 및 삭제 단추를 사용 하 여 GridView에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image39.png))
 
 
-[![You는 기존 제품에는 범주를 삭제할 수 없습니다](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image41.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image40.png)
+[![기존 제품에는 범주를 삭제할 수 없습니다.](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image41.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image40.png)
 
 **그림 14**: 기존 제품에는 범주를 삭제할 수 없습니다 ([클릭 하 여 큰 이미지 보기](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image42.png))
 

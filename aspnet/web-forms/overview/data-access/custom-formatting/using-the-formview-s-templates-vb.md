@@ -12,7 +12,7 @@ ms.openlocfilehash: 268403a7b832596421120a24c64580f63eb987c3
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383911"
 ---
 # <a name="using-the-formviews-templates-vb"></a>FormView의 템플릿 (VB)를 사용 하 여
@@ -40,7 +40,7 @@ ms.locfileid: "59383911"
 살펴보겠습니다이 자습서를 사용 하 여 FormView 컨트롤이 제품의 표시를 더 융통성을 제공 합니다. 필드 이름, 범주, 공급자 및 등과 FormView의에 대 한 것이 아니라 `ItemTemplate` 헤더 요소를 조합 하 여 이러한 값을 표시 및 `<table>` (그림 1 참조).
 
 
-[![TFormView의 DetailsView에 Grid-Like 레이아웃 표시를 해석 하는 그](using-the-formview-s-templates-vb/_static/image2.png)](using-the-formview-s-templates-vb/_static/image1.png)
+[![FormView는 DetailsView 나온 표 형태의 레이아웃의 분류](using-the-formview-s-templates-vb/_static/image2.png)](using-the-formview-s-templates-vb/_static/image1.png)
 
 **그림 1**: FormView DetailsView Grid-Like 레이아웃 표시에서 중단 ([클릭 하 여 큰 이미지 보기](using-the-formview-s-templates-vb/_static/image3.png))
 
@@ -50,7 +50,7 @@ ms.locfileid: "59383911"
 열기는 `FormView.aspx` 페이지 및 디자이너 도구 상자에서 FormView 끕니다. FormView를 처음으로 추가 우리를 지시 하는 회색 상자로 표시 하는 `ItemTemplate` 필요 합니다.
 
 
-[![TItemTemplate 제공 될 때까지 그 FormView 디자이너에서 렌더링할 수 없습니다.](using-the-formview-s-templates-vb/_static/image5.png)](using-the-formview-s-templates-vb/_static/image4.png)
+[![FormView는 ItemTemplate 제공 될 때까지 디자이너에서 렌더링할 수 없습니다.](using-the-formview-s-templates-vb/_static/image5.png)](using-the-formview-s-templates-vb/_static/image4.png)
 
 **그림 2**: 디자이너까지에서 렌더링할 FormView 없습니다는 `ItemTemplate` 제공 됩니다 ([큰 이미지를 보려면 클릭](using-the-formview-s-templates-vb/_static/image6.png))
 
@@ -88,12 +88,12 @@ FormView의 스마트 태그를 페이징 사용 확인란을 확인 하려면 �
 사용 하 여는 `ItemTemplate` 완료 제품 정보를 훨씬 더 유연한 방식으로 표시 됩니다. FormView (그림 4)이이 자습서에서 생성 된 출력을 사용 하 여 마지막 자습서 (그림 3)의 DetailsView 출력을 비교 합니다.
 
 
-[![T그 엄격한 DetailsView 출력](using-the-formview-s-templates-vb/_static/image8.png)](using-the-formview-s-templates-vb/_static/image7.png)
+[![고정 된 DetailsView 출력](using-the-formview-s-templates-vb/_static/image8.png)](using-the-formview-s-templates-vb/_static/image7.png)
 
 **그림 3**: 고정 된 DetailsView 출력 ([클릭 하 여 큰 이미지 보기](using-the-formview-s-templates-vb/_static/image9.png))
 
 
-[![T그 유체 FormView 출력](using-the-formview-s-templates-vb/_static/image11.png)](using-the-formview-s-templates-vb/_static/image10.png)
+[![유연한 FormView 출력](using-the-formview-s-templates-vb/_static/image11.png)](using-the-formview-s-templates-vb/_static/image10.png)
 
 **그림 4**: 유체 FormView 출력 ([클릭 하 여 큰 이미지 보기](using-the-formview-s-templates-vb/_static/image12.png))
 

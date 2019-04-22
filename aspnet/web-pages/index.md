@@ -12,7 +12,7 @@ ms.openlocfilehash: 832f89dfdecb71f2664431a4880978f7355246f4
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59420226"
 ---
 # <a name="aspnet-web-pages"></a>ASP.NET Web Pages
@@ -34,9 +34,9 @@ ms.locfileid: "59420226"
         - [ASP.NET 웹 페이지 소개](overview/getting-started/introducing-aspnet-web-pages-2/index.md)
 
             - [시작](overview/getting-started/introducing-aspnet-web-pages-2/getting-started.md)
-            - [프로그래밍 기본 사항](overview/getting-started/introducing-aspnet-web-pages-2/intro-to-web-pages-programming.md)
+            - [프로그래밍 기본](overview/getting-started/introducing-aspnet-web-pages-2/intro-to-web-pages-programming.md)
             - [데이터 표시](overview/getting-started/introducing-aspnet-web-pages-2/displaying-data.md)
-            - [HTML 양식 기본 사항](overview/getting-started/introducing-aspnet-web-pages-2/form-basics.md)
+            - [HTML 양식 기본](overview/getting-started/introducing-aspnet-web-pages-2/form-basics.md)
             - [양식을 사용하여 데이터베이스 데이터 입력](overview/getting-started/introducing-aspnet-web-pages-2/entering-data.md)
             - [데이터베이스 데이터 업데이트](overview/getting-started/introducing-aspnet-web-pages-2/updating-data.md)
             - [데이터베이스 데이터 삭제](overview/getting-started/introducing-aspnet-web-pages-2/deleting-data.md)
@@ -57,7 +57,7 @@ ms.locfileid: "59420226"
         - [도우미 설치](overview/ui-layouts-and-themes/installing-helpers.md)
         - [ASP.NET 웹 페이지와 Twitter 도우미](overview/ui-layouts-and-themes/twitter-helper.md)
         - [ASP.NET 웹 페이지 사이트에 맵 표시](overview/ui-layouts-and-themes/displaying-maps-in-an-aspnet-web-pages-site.md)
-    - [휴대폰](overview/mobile/index.md)
+    - [모바일](overview/mobile/index.md)
 
         - [모바일 디바이스를 위한 ASP.NET 웹 페이지 사이트 렌더링](overview/mobile/rendering-aspnet-web-pages-sites-for-mobile-devices.md)
     - [데이터 작업](overview/data/index.md)
@@ -84,8 +84,8 @@ ms.locfileid: "59420226"
         - [ASP.NET API 빠른 참조](overview/api-reference/asp-net-web-pages-api-reference.md)
     - [릴리스](overview/releases/index.md)
 
-        - [ASP.NET 웹 페이지 3.2의 새로운 기능](overview/releases/whats-new-in-aspnet-web-pages-32.md)
-        - [ASP.NET 웹 페이지 3.1의 새로운 기능](overview/releases/whats-new-aspnet-web-pages-31.md)
+        - [ASP.NET Web Pages 3.2의 새로운 기능](overview/releases/whats-new-in-aspnet-web-pages-32.md)
+        - [ASP.NET Web Pages 3.1의 새로운 기능](overview/releases/whats-new-aspnet-web-pages-31.md)
         - [ASP.NET 웹 페이지 2의 주요 기능](overview/releases/top-features-in-web-pages-2.md)
         - [ASP.NET 웹 페이지 2 개발자 미리 보기 추가 정보](overview/releases/aspnet-web-pages-2-developer-preview-readme.md)
         - [여러 버전의 ASP.NET 웹 페이지를 나란히 실행](overview/releases/running-v1-and-v2-sites-side-by-side.md)
@@ -96,7 +96,7 @@ ms.locfileid: "59420226"
         - [ASP.NET 웹 페이지 5분 소개](videos/introduction/5-minute-introduction-to-aspnet-web-pages.md)
         - [Microsoft WebMatrix 도구 설치 및 사용](videos/introduction/install-and-use-the-microsoft-webmatrix-tool.md)
         - [WebMatrix를 사용하여 웹 사이트 만들기](videos/introduction/create-a-website-using-webmatrix.md)
-        - [웹 페이지의 시각적 스타일 변경](videos/introduction/change-the-visual-style-of-a-web-page.md)
+        - [웹 페이지의 표시 스타일 변경](videos/introduction/change-the-visual-style-of-a-web-page.md)
         - [WebMatrix의 레이아웃 기능 사용](videos/introduction/use-the-layout-features-in-webmatrix.md)
         - [데이터 중심 동적 웹 페이지 만들기](videos/introduction/create-a-data-driven-dynamic-web-page.md)
         - [WebMatrix에서 웹 인터페이스 만들기](videos/introduction/create-a-web-interface-in-webmatrix.md)

@@ -12,7 +12,7 @@ ms.openlocfilehash: 28e001059cb1853d21175da2a2b1af2c75364485
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59380368"
 ---
 # <a name="databinding-to-an-accordion-c"></a>Accordion에 데이터 바인딩(C#)
@@ -59,7 +59,7 @@ Accordion 컨트롤 내에서 헤더를 포함 하는 컨트롤의 다양 한 �
 [!code-css[Main](databinding-to-an-accordion-cs/samples/sample6.css)]
 
 
-[![T그는 accordion에 데이터를 데이터 원본에서 직접 가져온](databinding-to-an-accordion-cs/_static/image2.png)](databinding-to-an-accordion-cs/_static/image1.png)
+[![데이터 원본에서 직접 제공 되는 accordion에 데이터는](databinding-to-an-accordion-cs/_static/image2.png)](databinding-to-an-accordion-cs/_static/image1.png)
 
 데이터 원본에서 직접 제공 되는 accordion에 데이터 ([클릭 하 여 큰 이미지 보기](databinding-to-an-accordion-cs/_static/image3.png))
 
