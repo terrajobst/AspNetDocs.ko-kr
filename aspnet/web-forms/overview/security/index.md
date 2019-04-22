@@ -12,7 +12,7 @@ ms.openlocfilehash: 6b911b1f32dcfba810312a19e1764ec51c3c2255
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59389065"
 ---
 # <a name="security-authentication-and-authorization-in-aspnet-web-forms"></a>보안, 인증 및 ASP.NET Web Forms에서 권한 부여

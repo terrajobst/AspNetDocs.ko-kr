@@ -13,7 +13,7 @@ ms.openlocfilehash: 2cec6138ffcd6019eae23c82abda2b96d7b0b625
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383462"
 ---
 # <a name="advanced-topics-for-aspnet-web-api"></a>ASP.NET Web API에 대 한 고급 항목
@@ -26,6 +26,6 @@ ms.locfileid: "59383462"
 - [.NET 클라이언트에서 Web API 호출(C#)](calling-a-web-api-from-a-net-client.md)
 - [Web API의 HTTP 메시지 처리기](http-message-handlers.md)
 - [Web API의 HttpClient 메시지 처리기](httpclient-message-handlers.md)
-- [Web API에서 HTML 양식 데이터 보내기: Form-urlencoded 데이터](sending-html-form-data-part-1.md)
-- [Web API에서 HTML 양식 데이터 보내기: 파일 업로드 및 다중 파트 MIME](sending-html-form-data-part-2.md)
+- [Web API에서에서 HTML 양식 데이터 보내기: 양식 urlencoded 데이터](sending-html-form-data-part-1.md)
+- [Web API에서에서 HTML 양식 데이터 보내기: 파일 업로드 및 다중 파트 MIME](sending-html-form-data-part-2.md)
 - [ASP.NET Web API의 HTTP 쿠키](http-cookies.md)

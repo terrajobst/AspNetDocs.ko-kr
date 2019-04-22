@@ -12,7 +12,7 @@ ms.openlocfilehash: 2d954cbc001a62f021f942f1ff44522a2769f516
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59389585"
 ---
 # <a name="preventing-javascript-injection-attacks-c"></a>JavaScript 삽입 공격 방지(C#)
@@ -33,7 +33,7 @@ ms.locfileid: "59389585"
 고객 피드백 웹 사이트를 만들었다고 가정해 보겠습니다 (그림 1 참조). 고객 웹 사이트를 방문 하 고 제품을 사용 하 여 해당 환경을 피드백 입력 수 있습니다. 고객 피드백을 제출 하는 경우 사용자 의견 피드백 페이지의 다시 표시 됩니다.
 
 
-[![Customer 피드백 웹 사이트](preventing-javascript-injection-attacks-cs/_static/image2.png)](preventing-javascript-injection-attacks-cs/_static/image1.png)
+[![고객 피드백 웹 사이트](preventing-javascript-injection-attacks-cs/_static/image2.png)](preventing-javascript-injection-attacks-cs/_static/image1.png)
 
 **그림 01**: 고객 피드백 웹 사이트 ([클릭 하 여 큰 이미지 보기](preventing-javascript-injection-attacks-cs/_static/image3.png))
 
@@ -93,7 +93,7 @@ HTML로 JavaScript 주입 공격을 방지 하는 쉬운 방법을 한 가지 �
 것 평균 HTML로 인코딩 문자열로? HTML 인코딩할 때 문자열, 위험 등의 문자 `<` 하 고 `>` 와 같은 HTML 엔터티 참조로 대체 됩니다 `&lt;` 및 `&gt;`합니다. 있으므로 문자열 `<script>alert("Boo!")</script>` html 인코딩 변환 `&lt;script&gt;alert(&quot;Boo!&quot;)&lt;/script&gt;`합니다. 인코딩된 문자열은 더 이상 브라우저에서 해석 하는 경우 JavaScript 스크립트로 실행 합니다. 대신, 그림 3에 무해 한 페이지가 나타납니다.
 
 
-[![DJavaScript 공격 efeated](preventing-javascript-injection-attacks-cs/_static/image8.png)](preventing-javascript-injection-attacks-cs/_static/image7.png)
+[![패배 JavaScript 공격](preventing-javascript-injection-attacks-cs/_static/image8.png)](preventing-javascript-injection-attacks-cs/_static/image7.png)
 
 **그림 03**: JavaScript 공격을 막을 ([클릭 하 여 큰 이미지 보기](preventing-javascript-injection-attacks-cs/_static/image9.png))
 

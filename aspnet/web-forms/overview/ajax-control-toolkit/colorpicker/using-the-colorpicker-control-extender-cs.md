@@ -12,7 +12,7 @@ ms.openlocfilehash: d534984449fd7265872f040e648ccaea3e740ba6
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59391873"
 ---
 # <a name="using-the-colorpicker-control-extender-c"></a>ColorPicker Control Extender (C#)를 사용 하 여
@@ -29,7 +29,7 @@ by [Microsoft](https://github.com/microsoft)
 예를 들어, 방문자가 사용자 지정된 비즈니스 카드를 만들 수 있는 웹 사이트를 만들려고 한다고 가정해 보겠습니다. 방문자는 비즈니스 카드에 대 한 텍스트를 입력 하 고 색을 선택할 수 있습니다. 목록 1의 ASP.NET 페이지 txtCardText 및 txtCardColor 라는 두 개의 텍스트 상자 컨트롤을 포함 합니다. 폼을 제출 하면 선택한 값이 표시 됩니다 (그림 1 참조).
 
 
-[![S명함을 만들기 위한 단순 양식](using-the-colorpicker-control-extender-cs/_static/image1.jpg)](using-the-colorpicker-control-extender-cs/_static/image1.png)
+[![명함을 만들기 위한 간단한 폼](using-the-colorpicker-control-extender-cs/_static/image1.jpg)](using-the-colorpicker-control-extender-cs/_static/image1.png)
 
 **그림 01**: 명함을 만들기 위한 간단한 폼 ([클릭 하 여 큰 이미지 보기](using-the-colorpicker-control-extender-cs/_static/image2.png))
 
@@ -43,7 +43,7 @@ by [Microsoft](https://github.com/microsoft)
 더 나은 사용자 환경을 만들려면 ColorPicker control extender를 사용할 수 있습니다. ColorPicker는 TextBox 컨트롤에 포커스를 이동 하는 경우 색 대화 상자를 표시 합니다 (그림 2 참조).
 
 
-[![T그 ColorPicker Control Extender](using-the-colorpicker-control-extender-cs/_static/image2.jpg)](using-the-colorpicker-control-extender-cs/_static/image3.png)
+[![ColorPicker Control Extender](using-the-colorpicker-control-extender-cs/_static/image2.jpg)](using-the-colorpicker-control-extender-cs/_static/image3.png)
 
 **그림 02**: ColorPicker Control Extender ([클릭 하 여 큰 이미지 보기](using-the-colorpicker-control-extender-cs/_static/image4.png))
 
@@ -60,12 +60,12 @@ ColorPicker를 사용 하려면 먼저 페이지에 ScriptManager를 추가 해�
 디자인 뷰에서 가장 쉬운 방법은 ColorPicker control extender를 페이지에 추가할 경우 스마트 작업 옵션을 사용 하도록 설정 나타납니다 txtCardColor 텍스트 상자 위에 마우스를 놓으면 extender를 추가할 수 있습니다 (그림 3 참조). 이 옵션을 선택 하면 Extender 마법사 나타납니다 (그림 4 참조).
 
 
-[![Aextender 이어지지](using-the-colorpicker-control-extender-cs/_static/image3.jpg)](using-the-colorpicker-control-extender-cs/_static/image5.png)
+[![Extender를 추가합니다.](using-the-colorpicker-control-extender-cs/_static/image3.jpg)](using-the-colorpicker-control-extender-cs/_static/image5.png)
 
 **그림 03**: Extender 추가 ([클릭 하 여 큰 이미지 보기](using-the-colorpicker-control-extender-cs/_static/image6.png))
 
 
-[![SExtender 마법사를 사용 하 여 컨트롤 extender는 선택](using-the-colorpicker-control-extender-cs/_static/image4.jpg)](using-the-colorpicker-control-extender-cs/_static/image7.png)
+[![Extender 마법사를 사용 하 여 컨트롤 extender를 선택합니다.](using-the-colorpicker-control-extender-cs/_static/image4.jpg)](using-the-colorpicker-control-extender-cs/_static/image7.png)
 
 **그림 04**: Extender 마법사를 사용 하 여 컨트롤 extender를 선택 하면 ([클릭 하 여 큰 이미지 보기](using-the-colorpicker-control-extender-cs/_static/image8.png))
 
@@ -102,7 +102,7 @@ ColorPicker PopupButtonID 속성 ColorPicker extender를 사용 하 여 색 선�
 ColorPicker 사용 하 여 선택한 색을 표시 하는 컨트롤을 연결할 SampleControlID 속성이 사용 됩니다. ColorPicker는 현재 선택한 색으로이 컨트롤의 배경색을 변경합니다.
 
 
-[![D색 선택 대화 상자 단추를 사용 하 여 isplaying](using-the-colorpicker-control-extender-cs/_static/image5.jpg)](using-the-colorpicker-control-extender-cs/_static/image9.png)
+[![단추를 사용 하 여 색 선택 대화 상자를 표시합니다.](using-the-colorpicker-control-extender-cs/_static/image5.jpg)](using-the-colorpicker-control-extender-cs/_static/image9.png)
 
 **그림 05**: 단추를 사용 하 여 색 선택 대화 상자 표시 ([클릭 하 여 큰 이미지 보기](using-the-colorpicker-control-extender-cs/_static/image10.png))
 

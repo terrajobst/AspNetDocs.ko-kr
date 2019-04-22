@@ -12,7 +12,7 @@ ms.openlocfilehash: dc3ff989b6861fe62cce0199a62adef6107206d5
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384190"
 ---
 # <a name="displaying-a-custom-error-page-vb"></a>사용자 지정 오류 페이지 표시(VB)

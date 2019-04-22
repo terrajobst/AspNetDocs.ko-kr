@@ -12,7 +12,7 @@ ms.openlocfilehash: 256536150a585a4bb0304f23c3524b18d0f552f0
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59392380"
 ---
 # <a name="iteration-4--make-the-application-loosely-coupled-vb"></a>반복 #4 – 응용 프로그램을 느슨하게 결합 (VB) 확인
@@ -173,7 +173,7 @@ Decorator 패턴을 사용 하는 인터페이스를 구현 하기 위해 새 �
 
 [!code-vb[Main](iteration-4-make-the-application-loosely-coupled-vb/samples/sample7.vb)]
 
-**8-Models\Validation\IValidationDictionary.vb 나열**
+**Listing 8 - Models\Validation\IValidationDictionary.vb**
 
 [!code-vb[Main](iteration-4-make-the-application-loosely-coupled-vb/samples/sample8.vb)]
 

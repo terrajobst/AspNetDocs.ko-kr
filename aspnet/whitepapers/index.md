@@ -12,7 +12,7 @@ ms.openlocfilehash: 6d1251da10705867ad25b53afd69bb70c647fc18
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59388662"
 ---
 # <a name="whitepapers"></a>백서
@@ -28,8 +28,8 @@ ms.locfileid: "59388662"
 - [ASP.NET MVC 3](mvc3-release-notes.md)
 - [ASP.NET MVC 4](mvc4-beta-release-notes.md)
 - [IIS 6.0에서 ASP.NET 1.1 실행](aspnet-and-iis6.md)
-- [방법: ASP.NET Web Forms/MVC 애플리케이션에 모바일 페이지 추가](add-mobile-pages-to-your-aspnet-web-forms-mvc-application.md)
-- [IE 보안 업데이트 적용 후 ‘서버 애플리케이션을 사용할 수 없음’ 오류에 대한 수정](ms03-32-issue.md)
+- [방법: ASP.NET Web forms에 모바일 페이지 추가 / MVC 응용 프로그램](add-mobile-pages-to-your-aspnet-web-forms-mvc-application.md)
+- [IE 보안 업데이트 적용 후 '서버 애플리케이션을 사용할 수 없음' 오류에 대한 픽스](ms03-32-issue.md)
 - [.NET Framework 1.0 및 1.1의 ASP.NET Side-by-Side 실행](side-by-side-with-10.md)
 - [ASP.NET MVC 4](mvc4-release-notes.md)
 - [요청 유효성 검사 - 스크립트 공격 방지](request-validation.md)

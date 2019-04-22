@@ -12,7 +12,7 @@ ms.openlocfilehash: 433756839532393b36935df8f237e93706b4f18c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383163"
 ---
 # <a name="using-auto-postback-with-cascadingdropdown-vb"></a>CascadingDropDown에 자동 포스트백 사용(VB)
@@ -57,7 +57,7 @@ CascadingDropDown extender 비동기적으로 호출 된 다음 메서드 시그
 이러한 방식으로 포스트백 때만 실행 됩니다 요소가 실제로 목록에서, 사용자가 항목을 선택 합니다.
 
 
-[![S포스트백을 발생 시키는 목록 요소를 선택 합니다.](using-auto-postback-with-cascadingdropdown-vb/_static/image2.png)](using-auto-postback-with-cascadingdropdown-vb/_static/image1.png)
+[![포스트백을 발생 시키는 목록 요소를 선택 합니다.](using-auto-postback-with-cascadingdropdown-vb/_static/image2.png)](using-auto-postback-with-cascadingdropdown-vb/_static/image1.png)
 
 포스트백을 발생 시키는 목록 요소를 선택 ([클릭 하 여 큰 이미지 보기](using-auto-postback-with-cascadingdropdown-vb/_static/image3.png))
 

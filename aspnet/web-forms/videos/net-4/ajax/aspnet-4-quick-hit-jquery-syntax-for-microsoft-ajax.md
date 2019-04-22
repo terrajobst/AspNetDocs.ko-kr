@@ -12,7 +12,7 @@ ms.openlocfilehash: 408877e8f4891e420ecfc54d31c4c32753a21d06
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59385477"
 ---
 # <a name="aspnet-4-quick-hit---jquery-syntax-for-microsoft-ajax"></a>ASP.NET 4 "빠른 Hit"-jQuery Ajax에 대 한 구문

@@ -12,7 +12,7 @@ ms.openlocfilehash: 992cea256302231ee7031a21c798117b73eaa01c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384326"
 ---
 # <a name="url-routing"></a>URL 라우팅
@@ -79,7 +79,7 @@ Wingtip Toys 샘플 응용 프로그램 시작 되 면 호출 하 여 `Applicati
 
 > [!NOTE] 
 > 
-> **Optional**
+> **선택 사항**
 > 
 > 쉽게 이동 하 여 코드를 관리할 찾을 수 있습니다는 `RegisterCustomRoutes` 메서드는 별도 클래스입니다. 에 *논리* 폴더를 별도 만들기 `RouteActions` 클래스입니다. 위의 이동 `RegisterCustomRoutes` 메서드를 *Global.asax.cs* 파일을 새 `RoutesActions` 클래스입니다. 사용 합니다 `RoleActions` 클래스 및 `createAdmin` 메서드를 호출 하는 방법의 예로 `RegisterCustomRoutes` 메서드에서 *Global.asax.cs* 파일입니다.
 

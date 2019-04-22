@@ -12,7 +12,7 @@ ms.openlocfilehash: 42c0ce5e158e2fe9387ac218ac0762b6362094f9
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59389578"
 ---
 # <a name="creating-a-route-constraint-c"></a>경로 제약 조건 만들기(C#)
@@ -51,7 +51,7 @@ ms.locfileid: "59389578"
 Details() 작업에서 정수 매개 변수 예상 하기 때문에 정수 이외의 값을 포함 하는 요청을 수행 하면 오류가 발생 합니다. 예를 들어 URL /Product/apple 브라우저에 입력 하는 경우 다음 얻게 됩니다 오류 페이지 그림 1.
 
 
-[![T새 프로젝트 대화 상자의 그](creating-a-route-constraint-cs/_static/image1.jpg)](creating-a-route-constraint-cs/_static/image1.png)
+[![새 프로젝트 대화 상자](creating-a-route-constraint-cs/_static/image1.jpg)](creating-a-route-constraint-cs/_static/image1.png)
 
 **그림 01**: 분해 하는 페이지가 표시 ([클릭 하 여 큰 이미지 보기](creating-a-route-constraint-cs/_static/image2.png))
 

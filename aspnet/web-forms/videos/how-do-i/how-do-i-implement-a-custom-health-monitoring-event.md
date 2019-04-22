@@ -12,7 +12,7 @@ ms.openlocfilehash: 48e0449d09ff0dfee4820820fefc89113ff98e84
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383098"
 ---
 # <a name="how-do-i-implement-a-custom-health-monitoring-event"></a>[어떻게 할까요?] 사용자 지정 상태 모니터링 이벤트 구현

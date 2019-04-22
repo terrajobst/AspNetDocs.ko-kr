@@ -12,7 +12,7 @@ ms.openlocfilehash: f1a1c73947bda381bf559e3cbe1e308d0079c2dc
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59392692"
 ---
 # <a name="how-do-i-create-and-use-a-custom-configuration-section-in-an-aspnet-configuration-file"></a>[어떻게 할까요?] 만들고 ASP.NET 구성 파일에서 사용자 지정 구성 섹션을 사용 합니다.

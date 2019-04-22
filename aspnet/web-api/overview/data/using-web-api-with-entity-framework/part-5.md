@@ -12,7 +12,7 @@ ms.openlocfilehash: 1af29955e8040c34840d4c77fc2006f59d2324dd
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59395279"
 ---
 # <a name="create-data-transfer-objects-dtos"></a>DTO(데이터 전송 개체) 만들기

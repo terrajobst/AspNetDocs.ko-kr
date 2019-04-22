@@ -12,7 +12,7 @@ ms.openlocfilehash: 1e941830f741c4d21b9320561a4b10b0fa729c1d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59390053"
 ---
 # <a name="aspnet-web-api-part-5-custom-validation"></a>ASP.NET Web API, 5부: 사용자 지정 유효성 검사

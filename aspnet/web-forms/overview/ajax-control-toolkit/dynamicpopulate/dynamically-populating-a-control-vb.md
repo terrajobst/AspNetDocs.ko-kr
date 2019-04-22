@@ -12,7 +12,7 @@ ms.openlocfilehash: c9fdbe5f0e24aa3f09f11a67c6d13a32897e8b85
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59388376"
 ---
 # <a name="dynamically-populating-a-control-vb"></a>동적으로 컨트롤 채우기(VB)
@@ -66,7 +66,7 @@ by [Christian Wenz](https://github.com/wenz)
 브라우저에서 ASP.NET 페이지를 실행 하 고 단추 클릭 월-일-연도 형식의 현재 날짜를 받게 됩니다.
 
 
-[![A 서버에서 날짜를 검색 하는 단추를 클릭](dynamically-populating-a-control-vb/_static/image2.png)](dynamically-populating-a-control-vb/_static/image1.png)
+[![서버에서 날짜를 검색 하는 단추 클릭](dynamically-populating-a-control-vb/_static/image2.png)](dynamically-populating-a-control-vb/_static/image1.png)
 
 서버에서 날짜를 검색 하는 단추 클릭 ([클릭 하 여 큰 이미지 보기](dynamically-populating-a-control-vb/_static/image3.png))
 

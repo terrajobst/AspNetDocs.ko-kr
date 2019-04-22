@@ -12,7 +12,7 @@ ms.openlocfilehash: a1b099aedc6fa0824df3281cca55543bcfd4d159
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59386784"
 ---
 # <a name="how-to-enable-table-specific-routing-in-dynamic-data-applications"></a>Dynamic Data 응용 프로그램에서 테이블 관련 라우팅 사용 하도록 설정 하는 방법

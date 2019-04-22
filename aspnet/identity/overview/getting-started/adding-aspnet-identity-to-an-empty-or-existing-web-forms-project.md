@@ -13,7 +13,7 @@ ms.openlocfilehash: 8f66cdb46e4cd02509092ea3bdcb7af9c292eb8f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59394317"
 ---
 # <a name="adding-aspnet-identity-to-an-empty-or-existing-web-forms-project"></a>비어 있는 또는 기존 Web Forms 프로젝트에 ASP.NET Identity 추가

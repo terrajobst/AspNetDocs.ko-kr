@@ -12,7 +12,7 @@ ms.openlocfilehash: 2b5d2a355a27bfe9a3aa8b2fa4a2de79c7f74314
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59387128"
 ---
 # <a name="adding-validation"></a>유효성 검사 추가
@@ -131,7 +131,7 @@ ASP.NET MVC 및 Entity Framework Code First에서 제공 되는 유효성 검사
 
 합니다 [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) 특성 데이터의 형식을 지정 하도록 뷰 엔진에 대 한 힌트만 제공 (같은 특성 제공 하 고 `<a>` URL에 대 한 및 `<a href="mailto:EmailAddress.com">` 전자 메일에 대 한 합니다. 사용할 수는 [RegularExpression](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.regularexpressionattribute.aspx) 유효성을 검사할 데이터 형식의 특성입니다. 합니다 [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) 특성은 데이터베이스 내장 형식 보다 구체적인 데이터 형식을 지정 하는 데 사용 됩니다, 이들은 ***하지*** 유효성 검사 특성입니다. 이 경우에는 날짜 및 시간이 아닌 날짜만 추적하고자 합니다. 합니다 [DataType 열거형](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) 와 같은 많은 데이터 형식을 제공 *날짜 "," 시간 "," PhoneNumber "," 통화 "," EmailAddress* 등입니다. `DataType` 특성을 통해 응용 프로그램에서 자동으로 유형별 기능을 제공하도록 설정할 수도 있습니다. 예를 들어, 한 `mailto:` 에 대 한 링크를 만들 수 있습니다 [DataType.EmailAddress](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx), 및 날짜 선택 기가 제공 될 수 있습니다 [DataType.Date](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) 지 원하는 브라우저에서 [HTML5](http://html5.org/). [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) 특성에는 HTML 5 내보냅니다 [데이터](http://ejohn.org/blog/html-5-data-attributes/) (발음 *데이터 대시로*) HTML 5 브라우저가 인식할 수 있는 특성입니다. 합니다 [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) 특성 유효성 검사를 제공 하지 않습니다.
 
-`DataType.Date` 표시 되는 날짜의 형식을 지정 하지 않습니다. 기본적으로 데이터 필드는 서버의 기본 형식에 따라 표시 됩니다 [CultureInfo](https://msdn.microsoft.com/library/vstudio/system.globalization.cultureinfo(v=vs.110).aspx)합니다.
+`DataType.Date`는 표시되는 날짜의 서식을 지정하지 않습니다. 기본적으로 데이터 필드는 서버의 기본 형식에 따라 표시 됩니다 [CultureInfo](https://msdn.microsoft.com/library/vstudio/system.globalization.cultureinfo(v=vs.110).aspx)합니다.
 
 `DisplayFormat` 특성은 날짜 형식을 명시적으로 지정하는 데 사용됩니다.
 

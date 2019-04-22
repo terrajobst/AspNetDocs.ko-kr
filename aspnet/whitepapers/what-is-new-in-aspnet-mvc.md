@@ -12,7 +12,7 @@ ms.openlocfilehash: 7f846e807309f3123db52b3053b9aa8d6aca81e6
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59394837"
 ---
 # <a name="whats-new-in-aspnet-mvc-2"></a>ASP.NET MVC 2의 새로운 기능
@@ -22,7 +22,7 @@ ms.locfileid: "59394837"
 
 [소개](#_TOC1)   
 [ASP.NET MVC 1.0 프로젝트를 ASP.NET MVC 2로 업그레이드](#_TOC2)   
-[새 기능](#_TOC3)   
+[새로운 기능](#_TOC3)   
 [템플릿 기반 도우미](#_TOC3_1)   
 [영역](#_TOC3_2)   
 [비동기 컨트롤러에 대 한 지원](#_TOC3_3)   
@@ -38,8 +38,8 @@ ms.locfileid: "59394837"
 [템플릿 기반 도우미에 대 한 새 HiddenInputAttribute 클래스](#_TOC3_13)   
 [Html.ValidationSummary 도우미 메서드는 모델 수준 오류를 표시할 수 있습니다.](#_TOC3_14)   
 [T4 템플릿을 Visual Studio 생성 코드에서 특정.NET Framework의 대상 버전을](#_TOC3_15)[API 개선 사항](#_TOC4)  
-[주요 변경 사항](#_TOC5)  
-[고지 사항](#_TOC6)  
+[주요 변경 내용](#_TOC5)  
+[고 지 사항](#_TOC6)  
 
 ## <a id="_TOC1"></a>  Introduction
 

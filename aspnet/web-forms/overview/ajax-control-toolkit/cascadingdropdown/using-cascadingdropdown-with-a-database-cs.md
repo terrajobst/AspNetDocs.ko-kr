@@ -12,7 +12,7 @@ ms.openlocfilehash: ef40d71828237a3d086c7c1bb05de56e0770f588
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59391275"
 ---
 # <a name="using-cascadingdropdown-with-a-database-c"></a>데이터베이스에 CascadingDropDown 사용(C#)
@@ -86,12 +86,12 @@ CascadingDropDown을 호출한 웹 메서드의 시그니처는 다음과 같습
 ASP.NET 페이지를 로드 하 고 잠시 후 공급 업체 목록 25 개 항목으로 채워집니다. 하나의 항목을 선택 하 고 두 번째 드롭다운 목록을 데이터로 채워지는 방법을 확인 합니다.
 
 
-[![T그 첫 번째 목록에 대 한 연결이 자동으로 채워집니다](using-cascadingdropdown-with-a-database-cs/_static/image2.png)](using-cascadingdropdown-with-a-database-cs/_static/image1.png)
+[![첫 번째 목록은 자동으로 채워집니다.](using-cascadingdropdown-with-a-database-cs/_static/image2.png)](using-cascadingdropdown-with-a-database-cs/_static/image1.png)
 
 첫 번째 목록은 자동으로 채워집니다 ([클릭 하 여 큰 이미지 보기](using-cascadingdropdown-with-a-database-cs/_static/image3.png))
 
 
-[![T첫 번째 목록에서 선택 항목에 따라 그 두 번째 목록이 채워질 때](using-cascadingdropdown-with-a-database-cs/_static/image5.png)](using-cascadingdropdown-with-a-database-cs/_static/image4.png)
+[![두 번째 목록의 첫 번째 목록에서 선택 항목에 따라 채워집니다.](using-cascadingdropdown-with-a-database-cs/_static/image5.png)](using-cascadingdropdown-with-a-database-cs/_static/image4.png)
 
 첫 번째 목록에서 선택 항목에 따라 두 번째 목록 채워집니다 ([클릭 하 여 큰 이미지 보기](using-cascadingdropdown-with-a-database-cs/_static/image6.png))
 

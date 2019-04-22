@@ -12,7 +12,7 @@ ms.openlocfilehash: 772ddf69baf8daf5d3f0b13ed92efb80c561c38b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59388835"
 ---
 # <a name="aspnet-mvc-storefront-part-22-restructuring-rerouting-and-paypal"></a>ASP.NET MVC Storefront 22부: 구조 변경, 경로 재정의 및 PayPal

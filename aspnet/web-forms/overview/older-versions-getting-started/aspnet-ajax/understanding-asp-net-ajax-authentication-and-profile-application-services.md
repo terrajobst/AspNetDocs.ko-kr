@@ -12,7 +12,7 @@ ms.openlocfilehash: 18056c917b32680678c536229e8e26d5cc7db161
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59395136"
 ---
 # <a name="understanding-aspnet-ajax-authentication-and-profile-application-services"></a>ASP.NET AJAX 인증 및 프로필 애플리케이션 서비스 이해
@@ -32,7 +32,7 @@ Microsoft는 많은 환경 업그레이드;.NET Framework 3.5의 일부로 제�
 
 이 백서는 Visual studio 2008 베타 2 릴리스 및.NET Framework 3.5를 기반으로 합니다. 이 백서는 또한 Visual Studio 2008 베타 2를 하지 Visual Web Developer Express를 사용 하는 Visual Studio의 사용자 인터페이스에 따라 연습을 제공 하는 가정 합니다. 몇 가지 코드 샘플에는 Visual Web Developer Express에서 사용할 수 없는 프로젝트 템플릿을 사용할 수 있습니다.
 
-## *<a name="profiles-and-authentication"></a>프로필 및 인증*
+## <a name="profiles-and-authentication"></a>*프로필 및 인증*
 
 Microsoft ASP.NET 프로필 및 인증 서비스는 ASP.NET 폼 인증 시스템에서 제공 하는 ASP.NET의 표준 구성 요소는 합니다. ASP.NET AJAX Extensions 스크립트 클라이언트 AJAX 라이브러리의 Sys.Services 네임 스페이스에서 상당히 간단한 모델을 통해 스크립트 프록시를 통해 이러한 서비스에 대 한 액세스를 제공합니다.
 
@@ -42,7 +42,7 @@ Microsoft ASP.NET 프로필 및 인증 서비스는 ASP.NET 폼 인증 시스템
 
 ASP.NET 인증 및 프로 파일링 서비스 자체를 응용 프로그램 통합이 백서에서는 범위를 벗어납니다. 항목에 대 한 자세한 내용은 MSDN 라이브러리 참조 문서에서 사용 하 여 멤버 자격에서 사용자 관리를 참조 [ https://msdn.microsoft.com/library/tw292whz.aspx ](https://msdn.microsoft.com/library/tw292whz.aspx)합니다. ASP.NET에는 ASP.NET 멤버 자격에 대 한 기본 인증 서비스 공급자는 SQL Server를 사용 하 여 멤버 자격을 자동으로 설정 하는 유틸리티도 포함 됩니다. 자세한 내용은 ASP.NET SQL Server 등록 도구 문서를 참조 하세요. (Aspnet\_regsql.exe)에서 [ https://msdn.microsoft.com/library/ms229862(vs.80).aspx ](https://msdn.microsoft.com/library/ms229862(vs.80).aspx)합니다.
 
-## *<a name="using-the-aspnet-ajax-authentication-service"></a>ASP.NET AJAX 인증 서비스를 사용 하 여*
+## <a name="using-the-aspnet-ajax-authentication-service"></a>*ASP.NET AJAX 인증 서비스를 사용 하 여*
 
 Web.config 파일에는 ASP.NET AJAX 인증 서비스를 사용 해야 합니다.
 
@@ -304,7 +304,7 @@ Save () 메서드를 사용자의 ASP.NET 프로필에 지정 된 속성 목록 
 
 [!code-javascript[Main](understanding-asp-net-ajax-authentication-and-profile-application-services/samples/sample12.js)]
 
-## *<a name="using-a-custom-authentication-service-provider"></a>사용자 지정 인증 서비스 공급자를 사용 하 여*
+## <a name="using-a-custom-authentication-service-provider"></a>*사용자 지정 인증 서비스 공급자를 사용 하 여*
 
 ASP.NET AJAX Extensions를 사용 하면 사용자 지정 웹 서비스를 통해 기능을 노출 하 여 사용자 지정 스크립트 인증 서비스 공급자를 만들 수 있습니다. 웹 서비스를 사용 하려면 두 가지 메서드를 노출 해야 합니다 `Login` 고 `Logout`; 기본 ASP.NET AJAX 인증 웹 서비스와 동일한 메서드 서명을 사용 하 여 이러한 메서드를 지정 해야 합니다.
 
@@ -338,7 +338,7 @@ ASP.NET 서비스-프로 파일링, 멤버 자격 및 인증 서비스 특히-�
 
 또한 해당 하는 메서드 서명을 사용 하 여 간단한 웹 서비스 구현을 만들어 개발자는 이러한 내장 ASP.NET 서비스에 대 한 사용자 지정 스크립트 공급자를 만들 수 있습니다. 이러한 기술에 대 한 지원을 다양 한 범위의 특정 요구 사항에 맞게 유연성을 사용 하 여 개발자가 제공 하는 동안 다양 한 클라이언트 응용 프로그램 개발을 간소화 합니다.
 
-## *<a name="bio"></a>사용자 정보*
+## <a name="bio"></a>*Bio*
 
 Scott Cate 1997 년부터 Microsoft 웹 기술을 사용 하 여 왔습니다 이며 myKB.com의 대표이사로 서 ([www.myKB.com](http://www.myKB.com)) ASP.NET 작성 전문적 기반 응용 프로그램 기술 자료 소프트웨어 솔루션에 집중 합니다. Scott 전자 메일을 통해 연락할 수 있습니다 [ scott.cate@myKB.com ](mailto:scott.cate@myKB.com) 저자의 블로그 또는 [ScottCate.com](http://ScottCate.com)
 

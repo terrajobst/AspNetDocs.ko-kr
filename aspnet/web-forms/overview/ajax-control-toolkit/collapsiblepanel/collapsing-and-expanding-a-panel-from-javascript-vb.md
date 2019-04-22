@@ -12,7 +12,7 @@ ms.openlocfilehash: b41423cb1e587df121828b1e57045cabfede7cb5
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59390833"
 ---
 # <a name="collapsing-and-expanding-a-panel-from-javascript-vb"></a>JavaScript에서 패널 축소 및 확장(VB)
@@ -65,7 +65,7 @@ ASP.NET AJAX Control Toolkit의 CollapsiblePanel 컨트롤 패널을 확장 하 
 [!code-javascript[Main](collapsing-and-expanding-a-panel-from-javascript-vb/samples/sample8.js)]
 
 
-[![T그리고 세 번째 단추 패널의 상태를 변경 합니다:에서 축소 하 여 확장 하 고 백](collapsing-and-expanding-a-panel-from-javascript-vb/_static/image2.png)](collapsing-and-expanding-a-panel-from-javascript-vb/_static/image1.png)
+[![패널의 상태를 변경 하는 세 번째 단추:에서 확장 및 다시 축소](collapsing-and-expanding-a-panel-from-javascript-vb/_static/image2.png)](collapsing-and-expanding-a-panel-from-javascript-vb/_static/image1.png)
 
 패널의 상태를 변경 하는 세 번째 단추:에서 축소 하 여 확장 하 고 백 ([클릭 하 여 큰 이미지 보기](collapsing-and-expanding-a-panel-from-javascript-vb/_static/image3.png))
 

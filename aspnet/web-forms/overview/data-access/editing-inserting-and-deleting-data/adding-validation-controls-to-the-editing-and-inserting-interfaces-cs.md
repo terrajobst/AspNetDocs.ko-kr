@@ -12,7 +12,7 @@ ms.openlocfilehash: 157a71c7b8a7b5e8e34c08957d0520dfb8da8db9
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59391262"
 ---
 # <a name="adding-validation-controls-to-the-editing-and-inserting-interfaces-c"></a>편집 및 삽입 인터페이스에 유효성 검사 컨트롤 추가(C#)
@@ -39,7 +39,7 @@ ms.locfileid: "59391262"
 에 [삽입, 업데이트 및 삭제와 관련 된 이벤트 검사](examining-the-events-associated-with-inserting-updating-and-deleting-cs.md) 자습서 이름과 편집 가능한 GridView의 제품 가격을 나열 하는 페이지를 만들었습니다. 페이지는 DetailsView를 포함 하는 또한입니다 `DefaultMode` 속성이로 설정 된 `Insert`, 삽입 모드에 있으므로 항상 렌더링 합니다. 이 DetailsView에서 사용자 수는 신제품에 대 한 이름 및 가격을 입력, 삽입을 클릭 한 시스템에 추가 하면 (그림 1 참조).
 
 
-[![T그 이전 예제에서는 허용 사용자가 새 제품 추가 및 편집 기존](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image2.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image1.png)
+[![새 제품을 추가 하 여 기존 관계를 편집 하면 앞의 예제](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image2.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image1.png)
 
 **그림 1**: 새 제품 추가 및 편집 기존 이전 예제에서는 허용 사용자 ([클릭 하 여 큰 이미지 보기](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image3.png))
 
@@ -57,7 +57,7 @@ ms.locfileid: "59391262"
 3. 내에서 텍스트를 복사 합니다 `<asp:Content>` 및 `</asp:Content>` 그림 2에 표시 된 것된으로 태그 (44-3 줄).
 
 
-[![C프 내 텍스트를 &lt;asp: Content&gt; 컨트롤](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image5.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image4.png)
+[![텍스트 내에 복사 합니다 &lt;asp: Content&gt; 컨트롤](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image5.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image4.png)
 
 **그림 2**: 텍스트 내에 복사 합니다 `<asp:Content>` 컨트롤 ([큰 이미지를 보려면 클릭](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image6.png))
 
@@ -75,7 +75,7 @@ ms.locfileid: "59391262"
 편집 및 삽입 인터페이스에 유효성 검사 컨트롤을 추가할 GridView 및 DetailsView 컨트롤에서 사용 하는 BoundFields TemplateFields 변환할 필요 합니다. 이 위해 GridView 및 DetailsView의 스마트 태그에 열 편집 및 필드 편집 링크를 각각 클릭 합니다. 여기서는 BoundFields의 각를 선택 하 고 "이이 필드를 TemplateField로 변환 하 는" 링크를 클릭 합니다.
 
 
-[![C변환의 GridView와 DetailsView의 BoundFields에 TemplateFields 각](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image8.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image7.png)
+[![TemplateFields DetailsView의 및 GridView의 BoundFields의 각 변환](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image8.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image7.png)
 
 **그림 3**: 각각의 GridView와 DetailsView의 BoundFields에 TemplateFields 변환 ([클릭 하 여 큰 이미지 보기](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image9.png))
 
@@ -117,7 +117,7 @@ GridView DetailsView의 기능을 삽입, 변환 GridView의 기본 제공을 �
 필요한 유효성 검사 컨트롤을 추가 하 여 시작 해 보겠습니다는 `EditItemTemplate` GridView의 TemplateFields의 합니다. 이렇게 하려면 템플릿 편집 인터페이스를 표시 하려면 GridView의 스마트 태그에서 템플릿 편집 링크를 클릭 합니다. 여기에서 드롭 다운 목록에서 편집할 템플릿을 선택할 수 있습니다. 편집 인터페이스 보강 하고자 하므로 유효성 검사 컨트롤을 추가 해야 합니다 `ProductName` 하 고 `UnitPrice`의 `EditItemTemplate` s입니다.
 
 
-[![WProductName 및 UnitPrice의 EditItemTemplates 확장 해야 하는 e](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image11.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image10.png)
+[![ProductName 및 UnitPrice의 EditItemTemplates 확장 해야](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image11.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image10.png)
 
 **그림 4**: 확장 해야 합니다 `ProductName` 하 고 `UnitPrice`의 `EditItemTemplate` s ([클릭 하 여 큰 이미지 보기](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image12.png))
 
@@ -125,7 +125,7 @@ GridView DetailsView의 기능을 삽입, 변환 GridView의 기본 제공을 �
 에 `ProductName` `EditItemTemplate`, 텍스트 상자 후 배치를 RequiredFieldValidator 끌어와 도구 상자에서 템플릿 편집 인터페이스에 추가 합니다.
 
 
-[![AProductName EditItemTemplate를 RequiredFieldValidator dd](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image14.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image13.png)
+[![RequiredFieldValidator ProductName EditItemTemplate 추가](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image14.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image13.png)
 
 **그림 5**: RequiredFieldValidator를 추가 합니다 `ProductName` `EditItemTemplate` ([클릭 하 여 큰 이미지 보기](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image15.png))
 
@@ -133,7 +133,7 @@ GridView DetailsView의 기능을 삽입, 변환 GridView의 기본 제공을 �
 모든 유효성 검사 컨트롤 단일 ASP.NET 웹 컨트롤의 입력 유효성을 검사 하 여 작동 합니다. 방금 추가한 RequiredFieldValidator에서 텍스트 상자에 대 한 유효성을 검사 해야를 지정 해야 하므로 합니다 `EditItemTemplate`; 유효성 검사 컨트롤의 설정 하 여 이렇게 [ControlToValidate 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.basevalidator.controltovalidate(VS.80).aspx) 에 `ID` 적절 한 웹 컨트롤입니다. 텍스트 상자 현재 흐릿한 대신에 `ID` 의 `TextBox1`, 하지만 적절 하 게를 변경해 보겠습니다. 템플릿에서 텍스트 상자를 클릭 한 다음 속성 창에서 변경 된 `ID` 에서 `TextBox1` 에 `EditProductName`입니다.
 
 
-[![C변경 TextBox의 EditProductName ID](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image17.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image16.png)
+[![텍스트 상자의 ID EditProductName로 변경](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image17.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image16.png)
 
 **그림 6**: 텍스트 상자의 변경할 `ID` 하 `EditProductName` ([클릭 하 여 큰 이미지 보기](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image18.png))
 
@@ -143,7 +143,7 @@ RequiredFieldValidator의 다음으로 설정 `ControlToValidate` 속성을 `Edi
 RequiredFieldValidator의 이러한 세 가지 속성을 설정한 다음 화면은 해야 그림 7과 유사 합니다.
 
 
-[![Set RequiredFieldValidator의 ControlToValidate, ErrorMessage을 및 텍스트 속성](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image20.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image19.png)
+[![RequiredFieldValidator의 ControlToValidate, ErrorMessage을 및 텍스트 속성 설정](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image20.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image19.png)
 
 **그림 7**: RequiredFieldValidator의 설정 `ControlToValidate`, `ErrorMessage`, 및 `Text` 속성 ([클릭 하 여 큰 이미지 보기](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image21.png))
 
@@ -162,7 +162,7 @@ CompareValidator를 추가 하기 전에 합니다 `UnitPrice` `EditItemTemplate
 > 회수에 *삽입, 업데이트 및 삭제와 관련 된 이벤트* BoundField의 설정 자습서 `DataFormatString` 속성을 `{0:c}` 통화로 서식을 지정 하기 위해. 설정 또한 합니다 `ApplyFormatInEditMode` 속성을 true로, GridView를 일으키는 편집 인터페이스 형식을 지정 하는 `UnitPrice` 통화로 합니다. Visual Studio 기록한이 설정 및 텍스트의 서식이 지정 된 BoundField를 TemplateField로으로 변환할 때 `Text` 속성이 데이터 바인딩 구문을 사용 하는 통화로 `<%# Bind("UnitPrice", "{0:c}") %>`합니다.
 
 
-[![A잘못 된 입력을 사용 하 여 텍스트 상자 옆에 별표가 나타납니다 n](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image23.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image22.png)
+[![잘못 된 입력을 사용 하 여 텍스트 상자 옆에 있는 별표 표시 됩니다.](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image23.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image22.png)
 
 **그림 8**: 별표 표시 옆에 잘못 된 입력을 사용 하 여 텍스트 상자 ([클릭 하 여 큰 이미지 보기](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image24.png))
 
@@ -176,12 +176,12 @@ CompareValidator를 추가 하기 전에 합니다 `UnitPrice` `EditItemTemplate
 이 연습에 대 한 옵션 # 1을 사용 하 여 이동 합니다. 현재는 `UnitPrice` 의 텍스트 상자에 대 한 데이터 바인딩 식으로 인해 통화로 형식이 합니다 `EditItemTemplate`: `<%# Bind("UnitPrice", "{0:c}") %>`합니다. 바인딩 문을 변경 `Bind("UnitPrice", "{0:n2}")`, 전체 자릿수 두 자리 숫자로 결과 형식을 지정 합니다. 선언적 구문을 통해 직접 또는에서 데이터 바인딩 편집 링크를 클릭 하 여이 수행할 수 있습니다 합니다 `EditUnitPrice` 텍스트 상자는 `UnitPrice` TemplateField의 `EditItemTemplate` (그림 9 및 10 참조).
 
 
-[![C텍스트 상자의 데이터 바인딩 편집 링크 옆](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image26.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image25.png)
+[![텍스트 상자의 데이터 바인딩 편집 링크를 클릭](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image26.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image25.png)
 
 **그림 9**: 텍스트 상자의 데이터 바인딩 편집 링크를 클릭 합니다 ([클릭 하 여 큰 이미지 보기](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image27.png))
 
 
-[![S바인딩 문에는 형식 지정자를 지정](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image29.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image28.png)
+[![바인딩 문에서 형식 지정자를 지정 합니다.](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image29.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image28.png)
 
 **그림 10**: 에 형식 지정자를 지정 합니다 `Bind` 문 ([큰 이미지를 보려면 클릭](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image30.png))
 
@@ -199,7 +199,7 @@ ASP.NET 5 유효성 검사 컨트롤 외에도 포함 합니다 [ValidationSumma
 이렇게 하려면 디자이너 도구 상자에서 ValidationSummary 컨트롤을 끕니다. 요약을 messagebox로만 표시 하도록 구성 하려고 하므로 유효성 검사 컨트롤의 위치 실제로 중요 하지 않습니다. 컨트롤을 추가한 후 설정 해당 [ShowSummary 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.validationsummary.showsummary(VS.80).aspx) 하 `false` 고 [ShowMessageBox 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.validationsummary.showmessagebox(VS.80).aspx) 에 `true`입니다. 이 또한을 사용 하 여 유효성 검사 오류는 클라이언트 쪽 messagebox에 요약 되어 있습니다.
 
 
-[![T그리고 유효성 검사 오류는 클라이언트 쪽 Messagebox에 요약 되어](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image32.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image31.png)
+[![유효성 검사 오류는 클라이언트 쪽 Messagebox에 요약 되어 있습니다.](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image32.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image31.png)
 
 **그림 11**: 유효성 검사 오류를 클라이언트 쪽 Messagebox에 요약 되어 있습니다 ([클릭 하 여 큰 이미지 보기](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image33.png))
 
@@ -215,7 +215,7 @@ RequiredFieldValidator를 추가 합니다 `ProductName` `InsertItemTemplate`합
 이러한 유효성 검사 컨트롤을 추가한 후 새 제품을 가격은 음수인 경우 또는 해당 이름이 제공 되지 않은 경우 시스템에 추가 하거나 형식이 잘못 될 수 없습니다.
 
 
-[![VDetailsView의 삽입 인터페이스에 논리가 추가 되었습니다 유효성](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image35.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image34.png)
+[![DetailsView의 삽입 인터페이스에 유효성 검사 논리가 추가 되었습니다.](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image35.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image34.png)
 
 **그림 12**: DetailsView의 삽입 인터페이스에 유효성 검사 논리가 추가 되었습니다 ([클릭 하 여 큰 이미지 보기](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image36.png))
 
@@ -225,7 +225,7 @@ RequiredFieldValidator를 추가 합니다 `ProductName` `InsertItemTemplate`합
 페이지 유효성 검사 컨트롤의 논리적으로 서로 다른 두 집합의 구성: GridView에 해당 하는 인터페이스의 편집 및 인터페이스 삽입의 DetailsView에 해당 하는 것입니다. 기본적으로 포스트백이 발생할 때 *모든* 유효성 검사 컨트롤의 페이지 확인 됩니다. 그러나 레코드를 편집할 때 원하지 DetailsView의 삽입 인터페이스의 유효성 검사 컨트롤의 유효성을 검사 합니다. 그림 13 사용자가 완벽 하 게 올바른 값을 사용 하 여 제품을 편집 하는 경우 현재이 딜레마를 보여 줍니다, 그리고 클릭 하면 업데이트 삽입 인터페이스에 이름과 가격 값이 비어 있으므로 유효성 검사 오류가 발생 합니다.
 
 
-[![U제품 pdating 컨트롤이 삽입 인터페이스의 유효성 검사의 공격에](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image38.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image37.png)
+[![공격에 삽입 하는 인터페이스의 유효성 검사 컨트롤 제품을 업데이트 하면](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image38.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image37.png)
 
 **그림 13**: 공격에 삽입 인터페이스의 유효성 검사 컨트롤 제품을 업데이트 하면 ([클릭 하 여 큰 이미지 보기](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image39.png))
 
@@ -235,7 +235,7 @@ ASP.NET 2.0의 유효성 검사 컨트롤을 통해 유효성 검사 그룹 분�
 유효성 검사 외에도 컨트롤, 단추 및 ASP.NET 2.0의 컨트롤 단추와 관련 된 포함을 `ValidationGroup` 속성입니다. 유효성 검사 그룹의 유효성 검사기의 유효성 검사 포스트백이 같은 단추를 통해 유도 될 경우에 `ValidationGroup` 속성을 설정 합니다. 트리거 DetailsView의 삽입 단추에 대 한 예를 들어 순서로 합니다 `InsertValidationControls` CommandField의 설정 해야 하는 유효성 검사 그룹 `ValidationGroup` 속성을 `InsertValidationControls` (그림 14 참조). 또한 GridView의 설정의 CommandField `ValidationGroup` 속성을 `EditValidationControls`입니다.
 
 
-[![S세상 DetailsView InsertValidationControls CommandField의 ValidationGroup 속성](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image41.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image40.png)
+[![DetailsView 집합의 InsertValidationControls CommandField의 ValidationGroup 속성](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image41.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image40.png)
 
 **그림 14**: DetailsView의 설정의 CommandField `ValidationGroup` 속성을 `InsertValidationControls` ([클릭 하 여 큰 이미지 보기](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image42.png))
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: b70cdbd412c50074d4accf27a51baa5a35e6fbc9
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383800"
 ---
 # <a name="how-do-i-determine-whether-an-asynchronous-postback-has-occurred"></a>[어떻게 할까요?] 여부는 비동기 포스트백이 발생 했는지 확인?

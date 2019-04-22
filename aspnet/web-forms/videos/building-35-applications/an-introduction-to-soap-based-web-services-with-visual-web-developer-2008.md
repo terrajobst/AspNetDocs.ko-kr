@@ -12,7 +12,7 @@ ms.openlocfilehash: e499292c6dedcec0718d0823e7c324a7da9e00b8
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59396384"
 ---
 # <a name="an-introduction-to-soap-based-web-services-with-visual-web-developer-2008"></a>기반 Visual Web Developer 2008 사용 하 여 웹 서비스를 SOAP 소개

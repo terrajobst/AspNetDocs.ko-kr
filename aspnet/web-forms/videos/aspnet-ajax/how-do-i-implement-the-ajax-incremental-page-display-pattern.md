@@ -12,7 +12,7 @@ ms.openlocfilehash: f4678ca375c55c7bd3b02fb9707059418adb1bb7
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59395188"
 ---
 # <a name="how-do-i-implement-the-ajax-incremental-page-display-pattern"></a>[어떻게 할까요?] AJAX 증분식 페이지 표시 패턴을 구현

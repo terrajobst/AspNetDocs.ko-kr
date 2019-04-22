@@ -12,7 +12,7 @@ ms.openlocfilehash: 651ac82196b29d0f90c5dff41c9ce42b4bdcf627
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59395500"
 ---
 # <a name="older-versions---aspnet-20"></a>이전 버전 - ASP.NET 2.0
@@ -27,6 +27,6 @@ ms.locfileid: "59395500"
 - [데이터 소스 제어](data-source-controls.md)
 - [데이터 바인딩 컨트롤](data-bound-controls.md)
 - [캐싱](caching.md)
-- [멤버 자격입니다.](membership.md)
+- [멤버 자격](membership.md)
 - [구성 및 계측](configuration-and-instrumentation.md)
 - [프로필, 테마 및 웹 파트](profiles-themes-and-web-parts.md)

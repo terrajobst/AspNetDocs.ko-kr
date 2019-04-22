@@ -12,7 +12,7 @@ ms.openlocfilehash: 92a488b4f3e9b4c6ccfc0316fc69c96b8889b04a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59394343"
 ---
 # <a name="how-do-i-create-and-use-classes-in-javascript"></a>어떻게 할까요 페이지를 만들고 JavaScript에서 클래스를 사용?

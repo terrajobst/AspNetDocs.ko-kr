@@ -13,7 +13,7 @@ ms.openlocfilehash: 1e5fecca826a74fd8ff60ecd415f39c4f51917a2
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59391366"
 ---
 # <a name="documentation-on-older-versions-of-web-api"></a>이전 버전의 웹 API에 대 한 설명서
@@ -31,5 +31,5 @@ ms.locfileid: "59391366"
     - [Knockout.js를 사용하여 동적 UI 만들기](using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-5.md)
     - [제품 및 주문 컨트롤러 만들기](using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-6.md)
     - [기본 페이지 만들기](using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-7.md)
-- [Web API 1 자체 호스트(C#)](self-host-a-web-api.md)
+- [Web API 1 자체 호스팅(C#)](self-host-a-web-api.md)
 - [ASP.NET Web API를 사용하여 RESTful API 빌드](build-restful-apis-with-aspnet-web-api.md)

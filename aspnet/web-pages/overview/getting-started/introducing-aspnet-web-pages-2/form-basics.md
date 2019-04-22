@@ -12,7 +12,7 @@ ms.openlocfilehash: f88f7a31551abda029bee0ec16aa35ce2ef5d2f0
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59385958"
 ---
 # <a name="introducing-aspnet-web-pages---html-form-basics"></a>HTML 양식 기본 ASP.NET 웹 페이지 소개
@@ -215,7 +215,7 @@ SQL 문은 궁금한 경우 대/소문자 구분 하지 않습니다 &mdash; `SE
 
 > [!NOTE] 
 > 
-> **기억해 야 합니다.** 자리 표시자를 사용 하 여 (같은 `@0`) 값을 SQL 명령에 전달 하는 *매우 중요 한* 보안에 대 한 합니다. 변수 데이터에 대 한 자리 표시자를 사용 하 여 여기에서 살펴본 방식에는 유일한 방법은 SQL 명령을 생성 해야 합니다.
+> **중요!** 자리 표시자를 사용 하 여 (같은 `@0`) 값을 SQL 명령에 전달 하는 *매우 중요 한* 보안에 대 한 합니다. 변수 데이터에 대 한 자리 표시자를 사용 하 여 여기에서 살펴본 방식에는 유일한 방법은 SQL 명령을 생성 해야 합니다.
 > 
 > 리터럴 텍스트 (연결) 및 사용자에서 가져온 값을 결합 하 여 SQL 문을 생성 하지 않습니다. 사이트를 열고 SQL 문으로 사용자 입력을 연결 하는 *SQL 주입 공격* 악의적인 사용자 데이터베이스를 해킹 하는 페이지에 대 한 값을 제출 하는 경우. (자세한 내용은 문서의 [SQL 주입](https://msdn.microsoft.com/library/ms161953.aspx) MSDN 웹 사이트.)
 
@@ -356,7 +356,7 @@ WebMatrix를 실행 합니다 *Movies.cshtml* 페이지입니다. 장르에 대 
 
 ## <a name="additional-resources"></a>추가 리소스
 
-- [Razor 구문을 사용하는 ASP.NET 웹 프로그래밍 소개](https://go.microsoft.com/fwlink/?LinkID=202890)
+- [Razor 구문을 사용 하 여 ASP.NET 웹 프로그래밍 소개](https://go.microsoft.com/fwlink/?LinkID=202890)
 - [SQL WHERE 절](http://www.w3schools.com/sql/sql_where.asp) W3Schools 사이트
 - [메서드 정의](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) W3C 사이트에 대 한 문서
 

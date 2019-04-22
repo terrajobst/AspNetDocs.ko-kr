@@ -12,7 +12,7 @@ ms.openlocfilehash: 5f8eeeaa9bd77c0259f680198e57ade8d49cd06b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59382623"
 ---
 # <a name="creating-an-action-vb"></a>작업 만들기(VB)
@@ -57,7 +57,7 @@ by [Microsoft](https://github.com/microsoft)
 /Work/CompanySecrets 브라우저의 주소 표시줄에 입력 하 여 CompanySecrets() 컨트롤러 작업을 호출 하려고 하면 그림 1에서 오류 메시지를 받게 됩니다.
 
 
-[![Invoking NonAction 메서드](creating-an-action-vb/_static/image1.jpg)](creating-an-action-vb/_static/image1.png)
+[![NonAction 메서드 호출](creating-an-action-vb/_static/image1.jpg)](creating-an-action-vb/_static/image1.png)
 
 **그림 01**: NonAction 메서드 호출 ([클릭 하 여 큰 이미지 보기](creating-an-action-vb/_static/image2.png))
 

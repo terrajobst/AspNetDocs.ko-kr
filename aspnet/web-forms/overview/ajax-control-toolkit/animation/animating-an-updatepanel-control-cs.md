@@ -12,7 +12,7 @@ ms.openlocfilehash: 36d1166e1bd2b4c97b3cf3dd0bc3a7e8010a9443
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59393694"
 ---
 # <a name="animating-an-updatepanel-control-c"></a>UpdatePanel 컨트롤 애니메이션(C#)
@@ -50,7 +50,7 @@ ASP.NET에이 시나리오에서는 애니메이션을 적용할 `Wizard` 에 �
 이제 UpdatePanel 내 포스트백이 발생할 때마다 패널의 새 내용이 페이드 원활 하 게 합니다.
 
 
-[![T그 다음 마법사 단계 옅은 색은](animating-an-updatepanel-control-cs/_static/image2.png)](animating-an-updatepanel-control-cs/_static/image1.png)
+[![다음 마법사 단계 옅은 색은](animating-an-updatepanel-control-cs/_static/image2.png)](animating-an-updatepanel-control-cs/_static/image1.png)
 
 다음 마법사 단계 옅은 색은 ([클릭 하 여 큰 이미지 보기](animating-an-updatepanel-control-cs/_static/image3.png))
 

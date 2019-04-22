@@ -12,7 +12,7 @@ ms.openlocfilehash: 9817a7b2fcb3cd5b4f8524d182baeaaf33c39fda
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383397"
 ---
 # <a name="displaying-data-with-the-objectdatasource-vb"></a>ObjectDataSource를 사용하여 데이터 표시(VB)
@@ -39,7 +39,7 @@ ASP.NET 2.0에는 5 개의 기본 제공 데이터 소스 컨트롤과 [SqlDataS
 ObjectDataSource는 몇 가지 다른 개체를 사용 하 여 작업에 대 한 프록시로 사용 합니다. ObjectDataSource를 구성 하려면 지정이 기본 개체 및 해당 메서드는 ObjectDataSource에 매핑되는 방식을 `Select`, `Insert`를 `Update`, 및 `Delete` 메서드. 이 기본 개체에 지정 하 고 해당 메서드는 ObjectDataSource에 매핑된 데이터 웹 컨트롤 ObjectDataSource 다음 바인딩할 수 있습니다. ASP.NET 웹 컨트롤을 GridView, 등 DetailsView, RadioButtonList, DropDownList, 특히 많은 데이터를 사용 하 여 제공 됩니다. 페이지 수명 주기 동안 데이터 웹 컨트롤에 해당 ObjectDataSource를 호출 하 여 수행 하는 데이터에 바인딩된 액세스 해야 `Select` 메서드를 데이터 웹 컨트롤에서 삽입, 업데이트를 지 원하는 경우 삭제 될 수 있습니다 호출에 해당 ObjectDataSource의 `Insert`하십시오 `Update`, 또는 `Delete` 메서드. 다음 다이어그램에서 볼 수 있듯이 적절 한 기본 개체의 메서드에 ObjectDataSource에서 이러한 호출은 다음 라우팅됩니다.
 
 
-[![T그 ObjectDataSource는 프록시로 사용](displaying-data-with-the-objectdatasource-vb/_static/image3.png)](displaying-data-with-the-objectdatasource-vb/_static/image2.png)
+[![ObjectDataSource는 프록시로 사용](displaying-data-with-the-objectdatasource-vb/_static/image3.png)](displaying-data-with-the-objectdatasource-vb/_static/image2.png)
 
 **그림 2**: 프록시로 ObjectDataSource 역할 ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-objectdatasource-vb/_static/image4.png))
 
@@ -57,7 +57,7 @@ ObjectDataSource는 몇 가지 다른 개체를 사용 하 여 작업에 대 한
 ObjectDataSource의 기본 개체 및 해당 개체의 메서드는 ObjectDataSource에 매핑되는 방식을 지정, ObjectDataSource의 스마트 태그의 데이터 소스 구성 링크를 클릭 합니다.
 
 
-[![C스마트 태그에서 구성 데이터 원본 링크 옆](displaying-data-with-the-objectdatasource-vb/_static/image6.png)](displaying-data-with-the-objectdatasource-vb/_static/image5.png)
+[![클릭 된 스마트 태그에서 데이터 원본 연결 구성](displaying-data-with-the-objectdatasource-vb/_static/image6.png)](displaying-data-with-the-objectdatasource-vb/_static/image5.png)
 
 **그림 3**: 스마트 태그에서 구성 데이터 원본 링크를 클릭 ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-objectdatasource-vb/_static/image7.png))
 
@@ -67,7 +67,7 @@ ObjectDataSource의 기본 개체 및 해당 개체의 메서드는 ObjectDataSo
 이 첫 번째 화면에서 선택 된 `ProductsBLL` 드롭 다운 목록에서 클래스 및 다음을 클릭 합니다.
 
 
-[![SObjectDataSource 컨트롤을 사용 하 여 사용 하 여 개체를 지정](displaying-data-with-the-objectdatasource-vb/_static/image9.png)](displaying-data-with-the-objectdatasource-vb/_static/image8.png)
+[![ObjectDataSource 컨트롤을 사용 하 여 사용 하 여 개체를 지정 합니다.](displaying-data-with-the-objectdatasource-vb/_static/image9.png)](displaying-data-with-the-objectdatasource-vb/_static/image8.png)
 
 **그림 4**: ObjectDataSource 컨트롤을 사용 하 여 사용 하 여 개체를 지정 ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-objectdatasource-vb/_static/image10.png))
 
@@ -75,7 +75,7 @@ ObjectDataSource의 기본 개체 및 해당 개체의 메서드는 ObjectDataSo
 마법사의 다음 화면 ObjectDataSource를 호출 해야 하는 방법을 선택 하 라는 메시지를 표시 합니다. 드롭다운 목록에는 이전 화면에서 선택한 개체의 데이터를 반환 하는 이러한 방법을 나열 합니다. 여기 우리 `GetProductByProductID`, `GetProducts`를 `GetProductsByCategoryID`, 및 `GetProductsBySupplierID`합니다. 선택 합니다 `GetProducts` 클릭 하 고 드롭다운 목록에서 메서드를 완료 (추가한 경우는 `DataObjectMethodAttribute` 에 `ProductBLL`의 메서드는 이전 자습서에서는이 옵션에에서 나와 있는 것 처럼 기본적으로 선택 됩니다).
 
 
-[![C설치할 선택 탭에서 데이터를 반환 하는 방법은](displaying-data-with-the-objectdatasource-vb/_static/image12.png)](displaying-data-with-the-objectdatasource-vb/_static/image11.png)
+[![선택 탭에서 데이터를 반환 하는 것에 대 한 메서드를 선택 합니다.](displaying-data-with-the-objectdatasource-vb/_static/image12.png)](displaying-data-with-the-objectdatasource-vb/_static/image11.png)
 
 **그림 5**: [선택] 탭에서 데이터 반환에 대 한 메서드를 선택 ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-objectdatasource-vb/_static/image13.png))
 
@@ -98,7 +98,7 @@ ObjectDataSource를 페이지에 추가 하 고 구성 된 된 준비가 ObjectD
 GridView 컨트롤을 도구 상자에서 추가 `SimpleDisplay.aspx`의 디자인 화면입니다. GridView의 스마트 태그에서 1 단계에서에서 추가한 ObjectDataSource 컨트롤을 선택 합니다. 이 자동으로 만듭니다는 BoundField ObjectDataSource의에서 데이터에 의해 반환 된 각 속성에 대 한 GridView `Select` 메서드 (즉, 제품 DataTable에서 정의 된 속성).
 
 
-[![A 페이지에 GridView 추가한 ObjectDataSource 바인딩할](displaying-data-with-the-objectdatasource-vb/_static/image15.png)](displaying-data-with-the-objectdatasource-vb/_static/image14.png)
+[![GridView를 페이지에 추가한 ObjectDataSource에 바인딩된 및](displaying-data-with-the-objectdatasource-vb/_static/image15.png)](displaying-data-with-the-objectdatasource-vb/_static/image14.png)
 
 **그림 6**: GridView에 추가한 페이지 및 ObjectDataSource에 바인딩된 ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-objectdatasource-vb/_static/image16.png))
 
@@ -106,7 +106,7 @@ GridView 컨트롤을 도구 상자에서 추가 `SimpleDisplay.aspx`의 디자�
 그런 다음 사용자 지정, 다시 정렬 하거나 제거할 수 있습니다 GridView의 BoundFields 스마트 태그에서 열 편집 옵션을 클릭 하 여 합니다.
 
 
-[![Manage GridView의 BoundFields 통해 the 편집 열 대화 상자](displaying-data-with-the-objectdatasource-vb/_static/image18.png)](displaying-data-with-the-objectdatasource-vb/_static/image17.png)
+[![GridView의 BoundFields 편집 열 대화 상자를 통해 관리](displaying-data-with-the-objectdatasource-vb/_static/image18.png)](displaying-data-with-the-objectdatasource-vb/_static/image17.png)
 
 **그림 7**: GridView의 BoundFields 통해 the 편집 열 대화 상자를 관리 ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-objectdatasource-vb/_static/image19.png))
 
@@ -117,7 +117,7 @@ GridView 컨트롤을 도구 상자에서 추가 `SimpleDisplay.aspx`의 디자�
 [!code-aspx[Main](displaying-data-with-the-objectdatasource-vb/samples/sample2.aspx)]
 
 
-[![TGridView의 BoundFields 사용자 지정 된](displaying-data-with-the-objectdatasource-vb/_static/image21.png)](displaying-data-with-the-objectdatasource-vb/_static/image20.png)
+[![사용자 지정 된 GridView의 BoundFields](displaying-data-with-the-objectdatasource-vb/_static/image21.png)](displaying-data-with-the-objectdatasource-vb/_static/image20.png)
 
 **그림 8**: GridView의 BoundFields 사용자 지정 된 ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-objectdatasource-vb/_static/image22.png))
 
@@ -133,7 +133,7 @@ GridView 컨트롤을 도구 상자에서 추가 `SimpleDisplay.aspx`의 디자�
 이라는 프로젝트에 새 스킨 파일을 추가 하 여 시작 `GridView.skin` 솔루션 탐색기에서 프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 새 항목 추가 선택 하 여 합니다.
 
 
-[![A스킨 파일 이라는 GridView.skin dd](displaying-data-with-the-objectdatasource-vb/_static/image24.png)](displaying-data-with-the-objectdatasource-vb/_static/image23.png)
+[![GridView.skin 명명 된 스킨 파일 추가](displaying-data-with-the-objectdatasource-vb/_static/image24.png)](displaying-data-with-the-objectdatasource-vb/_static/image23.png)
 
 **그림 9**: 명명 된 스킨 파일 추가 `GridView.skin` ([큰 이미지를 보려면 클릭](displaying-data-with-the-objectdatasource-vb/_static/image25.png))
 
@@ -141,7 +141,7 @@ GridView 컨트롤을 도구 상자에서 추가 `SimpleDisplay.aspx`의 디자�
 스킨 파일에는 테마를에 배치할 필요는 `App_Themes` 폴더입니다. 이러한 폴더를 아직 없기 때문 Visual Studio는이 첫 번째 스킨을 추가 하는 경우에 만드는 내용이 제공 됩니다. 만들려면 예 클릭 합니다 `App_Theme` 폴더 새 배치 `GridView.skin` 파일입니다.
 
 
-[![L예: Visual Studio App_Theme 폴더 만들기](displaying-data-with-the-objectdatasource-vb/_static/image27.png)](displaying-data-with-the-objectdatasource-vb/_static/image26.png)
+[![Visual studio에서 App_Theme 폴더 만들기](displaying-data-with-the-objectdatasource-vb/_static/image27.png)](displaying-data-with-the-objectdatasource-vb/_static/image26.png)
 
 **그림 10**: Visual Studio에서 만들 수 있도록 합니다 `App_Theme` 폴더 ([큰 이미지를 보려면 클릭](displaying-data-with-the-objectdatasource-vb/_static/image28.png))
 
@@ -172,7 +172,7 @@ DataWebControls GridView 테마의 이름을 (GridView 폴더를 마우스 오�
 이것이 전부입니다! 합니다 `styleSheetTheme` 테마에서 지정한 속성이 해야 하는 설정을 나타냅니다 *하지* 제어 수준에 지정 된 속성을 재정의 합니다. 테마 설정을 제어 설정 이지만 해야를 지정 하려면 사용 합니다 `theme` 대신 특성 `styleSheetTheme`; 아쉽게도 테마 설정을 Visual Studio 디자인 보기에서 나타나지 않습니다. 참조 [ASP.NET 테마 및 스킨 개요](https://msdn.microsoft.com/library/ykzx33wh.aspx) 하 고 [서버측 스타일을 사용 하 여 테마](https://quickstarts.asp.net/quickstartv20/aspnet/doc/themes/stylesheettheme.aspx) 테마와 스킨;에 대 한 자세한 내용은 참조 [방법: ASP.NET 테마를 적용할](https://msdn.microsoft.com/library/0yy5hxdk%28VS.80%29.aspx) 페이지 테마를 사용 하도록 구성에 대 한 자세한 내용은 합니다.
 
 
-[![T그 GridView에는 제품의 이름, 범주, 공급자, 가격 및 지원 되지 않는 정보 표시](displaying-data-with-the-objectdatasource-vb/_static/image31.png)](displaying-data-with-the-objectdatasource-vb/_static/image30.png)
+[![제품의 이름, 범주, 공급자, 가격 및 지원 되지 않는 정보를 표시 하는 GridView](displaying-data-with-the-objectdatasource-vb/_static/image31.png)](displaying-data-with-the-objectdatasource-vb/_static/image30.png)
 
 **그림 12**: GridView 제품의 이름, 범주, 공급자, 가격 및 지원 되지 않는 정보를 표시 합니다 ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-objectdatasource-vb/_static/image32.png))
 
@@ -184,7 +184,7 @@ GridView가 바인딩되는 데이터 소스 컨트롤에 의해 반환 된 각 
 DetailsView 컨트롤을 추가 하 여 시작 *위에* 에서 GridView `SimpleDisplay.aspx`합니다. 그런 다음 GridView와 같은 ObjectDataSource 컨트롤에 바인딩하십시오. GridView를 사용 하 여는 BoundField 추가할 ObjectDataSource의으로 반환 되는 개체의 각 속성에 대 한 DetailsView와 같은 `Select` 메서드. 유일한 차이점은 세로가 아닌 가로로 DetailsView의 BoundFields 배치 됩니다.
 
 
-[![Add 페이지로 DetailsView ObjectDataSource 바인딩할](displaying-data-with-the-objectdatasource-vb/_static/image34.png)](displaying-data-with-the-objectdatasource-vb/_static/image33.png)
+[![페이지에는 DetailsView를 추가 하 고 ObjectDataSource에 바인딩](displaying-data-with-the-objectdatasource-vb/_static/image34.png)](displaying-data-with-the-objectdatasource-vb/_static/image33.png)
 
 **그림 13**: 페이지에는 DetailsView를 추가 하 고 ObjectDataSource에 바인딩합니다 ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-objectdatasource-vb/_static/image35.png))
 
@@ -192,7 +192,7 @@ DetailsView 컨트롤을 추가 하 여 시작 *위에* 에서 GridView `SimpleD
 GridView와 같은 DetailsView의 BoundFields ObjectDataSource에서 반환한 데이터의 추가 사용자 지정 된 표시를 작성할 수 있습니다. 그림 14에서는 해당 BoundFields 후 DetailsView를 보여 줍니다. 및 `CssClass` 속성이 모양을 GridView 예제와 비슷한 되도록 구성 되어 있어야 합니다.
 
 
-[![T그 DetailsView 단일 레코드를 보여 줍니다](displaying-data-with-the-objectdatasource-vb/_static/image37.png)](displaying-data-with-the-objectdatasource-vb/_static/image36.png)
+[![DetailsView 단일 레코드를 보여 줍니다.](displaying-data-with-the-objectdatasource-vb/_static/image37.png)](displaying-data-with-the-objectdatasource-vb/_static/image36.png)
 
 **그림 14**: DetailsView 단일 레코드를 보여 줍니다 ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-objectdatasource-vb/_static/image38.png))
 
@@ -200,12 +200,12 @@ GridView와 같은 DetailsView의 BoundFields ObjectDataSource에서 반환한 �
 참고 DetailsView에만 해당 데이터 원본에서 반환 된 첫 번째 레코드를 표시 합니다. 모든 레코드를 한 번에 하나씩 단계별로 실행 하는 데 사용할 수 하 게 DetailsView에 대 한 페이징을 사용 해야 합니다. 이렇게 하려면 Visual Studio로 돌아가서 및 DetailsView의 스마트 태그의 페이징 사용 확인란을 확인 합니다.
 
 
-[![Enable DetailsView 컨트롤에서 페이징](displaying-data-with-the-objectdatasource-vb/_static/image40.png)](displaying-data-with-the-objectdatasource-vb/_static/image39.png)
+[![DetailsView 컨트롤에서 페이징 사용](displaying-data-with-the-objectdatasource-vb/_static/image40.png)](displaying-data-with-the-objectdatasource-vb/_static/image39.png)
 
 **그림 15**: DetailsView 컨트롤에서 페이징을 사용 ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-objectdatasource-vb/_static/image41.png))
 
 
-[![W페이징을 사용 하도록 설정 된 DetailsView i 번째를 사용 하면 제품 중 하나를 보려는](displaying-data-with-the-objectdatasource-vb/_static/image43.png)](displaying-data-with-the-objectdatasource-vb/_static/image42.png)
+[![페이징을 사용, DetailsView를 사용 하면 제품을 보려면](displaying-data-with-the-objectdatasource-vb/_static/image43.png)](displaying-data-with-the-objectdatasource-vb/_static/image42.png)
 
 **그림 16**: DetailsView 페이징 사용 제품 중 하나를 보려는 사용자를 수 있습니다 ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-objectdatasource-vb/_static/image44.png))
 
@@ -221,7 +221,7 @@ DetailsView는 ObjectDataSource에서 반환 된 각 레코드를 표시 하는 
 FormView 컨트롤을 추가 합니다 `SimpleDisplay.aspx` 페이지의 디자인 화면입니다. 처음에 FormView 표시 된 회색 블록으로 우리 최소한 컨트롤을 제공 해야 함을 `ItemTemplate`입니다.
 
 
-[![TItemTemplate을 포함 해야 그 FormView](displaying-data-with-the-objectdatasource-vb/_static/image46.png)](displaying-data-with-the-objectdatasource-vb/_static/image45.png)
+[![FormView 해야 ItemTemplate 포함](displaying-data-with-the-objectdatasource-vb/_static/image46.png)](displaying-data-with-the-objectdatasource-vb/_static/image45.png)
 
 **그림 17**: FormView 포함 해야 합니다는 `ItemTemplate` ([큰 이미지를 보려면 클릭](displaying-data-with-the-objectdatasource-vb/_static/image47.png))
 
@@ -232,7 +232,7 @@ FormView 기본값 만드는 FormView의 스마트 태그를 통해 데이터 �
 [!code-aspx[Main](displaying-data-with-the-objectdatasource-vb/samples/sample6.aspx)]
 
 
-[![T사용자 지정 형식으로 표시 됩니다 그 첫 번째 제품 (Chai)](displaying-data-with-the-objectdatasource-vb/_static/image49.png)](displaying-data-with-the-objectdatasource-vb/_static/image48.png)
+[![첫 번째 제품 (Chai) 사용자 지정 형식으로 표시 됩니다.](displaying-data-with-the-objectdatasource-vb/_static/image49.png)](displaying-data-with-the-objectdatasource-vb/_static/image48.png)
 
 **그림 18**: 첫 번째 제품 (Chai) 사용자 지정 형식으로 표시 됩니다 ([클릭 하 여 큰 이미지 보기](displaying-data-with-the-objectdatasource-vb/_static/image50.png))
 

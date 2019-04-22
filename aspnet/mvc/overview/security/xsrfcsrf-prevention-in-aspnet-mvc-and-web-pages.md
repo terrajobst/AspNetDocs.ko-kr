@@ -12,7 +12,7 @@ ms.openlocfilehash: de0e9cc168b9f18fd2bd83329106df45d7551b1a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59386562"
 ---
 # <a name="xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages"></a>ASP.NET MVC 및 웹 페이지에서 XSRF/CSRF 방지
@@ -160,7 +160,7 @@ ANTI-XSRF 시스템에는 "anonymous"가 정의 되어 있는 사용자로 익�
 
 개발자는 응용 프로그램에서 ANTI-XSRF 시스템을 구성할 수 있습니다\_시작 합니다. 구성은은 프로그래밍 방식입니다. 정적 속성 *AntiForgeryConfig* 종류는 다음과 같습니다. 대부분의 사용자 클레임을 사용 하 여 UniqueClaimTypeIdentifier 속성을 설정 하려고 합니다.
 
-| **속성** | **설명** |
+| **Property** | **설명** |
 | --- | --- |
 | **AdditionalDataProvider** | [IAntiForgeryAdditionalDataProvider](https://msdn.microsoft.com/library/system.web.helpers.iantiforgeryadditionaldataprovider(v=vs.111).aspx) 토큰 생성 하는 동안 추가 데이터를 제공 하 고 토큰 유효성 검사 중 추가 데이터를 사용 합니다. 기본값은 *null*합니다. 자세한 내용은 참조는 [IAntiForgeryAdditionalDataProvider](https://msdn.microsoft.com/library/system.web.helpers.iantiforgeryadditionaldataprovider(v=vs.111).aspx) 섹션입니다. |
 | **CookieName** | ANTI-XSRF 세션 토큰은 저장에 사용 되는 HTTP 쿠키의 이름을 제공 하는 문자열입니다. 이 값을 설정 하지 않으면 하는 경우 응용 프로그램의 배포 된 가상 경로 기준으로 이름은 자동으로 생성 됩니다. 기본값은 *null*합니다. |

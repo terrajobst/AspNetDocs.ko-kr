@@ -12,7 +12,7 @@ ms.openlocfilehash: 3e6917a056ef5be5f11d48b4e5bc012855225923
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59396748"
 ---
 # <a name="an-overview-of-inserting-updating-and-deleting-data-vb"></a>삽입, 업데이트 및 삭제 (VB) 개요
@@ -33,7 +33,7 @@ DAL에서 TableAdapters를 만들었을 때는 회수 [첫 번째 자습서](../
 외에 해당 `Select()` 메서드를 ObjectDataSource 역시 `Insert()`를 `Update()`, 및 `Delete()` 메서드. 같은 `Select()` 메서드를 세 가지 방법은 메서드 기본 개체에 매핑할 수 있습니다. 데이터를 삽입, 업데이트 또는 삭제를 구성 하는 경우 기본 데이터를 수정 하기 위한 사용자 인터페이스를 제공 하는 GridView, DetailsView 및 FormView 컨트롤입니다. 이 사용자 인터페이스를 호출 합니다 `Insert()`, `Update()`, 및 `Delete()` 는 ObjectDataSource의 다음 내부 개체를 호출 하는 방법의 연결 된 메서드 (그림 1 참조).
 
 
-[![TObjectDataSource의 insert (), update (), and delete () 메서드를 BLL 프록시로 사용할](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image2.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image1.png)
+[![BLL에 프록시로 ObjectDataSource의 insert (), update (), 및 delete () 메서드 사용](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image2.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image1.png)
 
 **그림 1**: ObjectDataSource의 `Insert()`, `Update()`, 및 `Delete()` BLL에 프록시로 제공 메서드 ([클릭 하 여 큰 이미지 보기](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image3.png))
 
@@ -63,7 +63,7 @@ DAL에서 TableAdapters를 만들었을 때는 회수 [첫 번째 자습서](../
 다른 폴더와 같이 `Default.aspx` 에 `EditInsertDelete` 폴더 섹션의 자습서를 나열 됩니다. 이전에 설명한 대로 `SectionLevelTutorialListing.ascx` 사용자 컨트롤은이 기능을 제공 합니다. 따라서이 사용자 정의 컨트롤을 추가 `Default.aspx` 페이지의 디자인 뷰로 솔루션 탐색기에서 끌어 합니다.
 
 
-[![Add Default.aspx SectionLevelTutorialListing.ascx 사용자 정의 컨트롤](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image6.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image5.png)
+[![Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image6.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image5.png)
 
 **그림 3**: 추가 된 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤 `Default.aspx` ([클릭 하 여 큰 이미지 보기](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image7.png))
 
@@ -88,7 +88,7 @@ GridView, DetailsView 및 데이터 수정 기능 및 레이아웃에서 다른 
 열기는 `Basics.aspx` 페이지 ObjectDataSource 디자이너 도구 상자에서 끌어서 스마트 태그에서 데이터 소스 구성 링크를 클릭 합니다. 이후는 `ProductsBLL` 는 ObjectDataSource이이 클래스를 사용 하도록 구성 하는 편집, 삽입 및 삭제 메서드를 제공 하는 유일한 BLL 클래스입니다.
 
 
-[![Configure ProductsBLL 클래스를 사용 하는 ObjectDataSource](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image10.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image9.png)
+[![ProductsBLL 클래스를 사용 하는 ObjectDataSource 구성](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image10.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image9.png)
 
 **그림 5**: ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLL` 클래스 ([큰 이미지를 보려면 클릭](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image11.png))
 
@@ -96,7 +96,7 @@ GridView, DetailsView 및 데이터 수정 기능 및 레이아웃에서 다른 
 다음 화면에서 어떤 방법을 지정할 수 있습니다 합니다 `ProductsBLL` 클래스는 ObjectDataSource의 매핑됩니다 `Select()`, `Insert()`, `Update()`, 및 `Delete()` 적절 한 탭을 선택 하 고 드롭다운 목록에서 메서드를 선택 하 여 합니다. 그림 6, 익숙하게 느껴 지 실 이제는 ObjectDataSource의 매핑합니다 `Select()` 메서드를 합니다 `ProductsBLL` 클래스의 `GetProducts()` 메서드. 합니다 `Insert()`, `Update()`, 및 `Delete()` 메서드 맨 위에 있는 목록에서 해당 탭을 선택 하 여 구성할 수 있습니다.
 
 
-[![Have는 ObjectDataSource 반환 모든 제품](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image13.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image12.png)
+[![가 ObjectDataSource 반환의 모든 제품](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image13.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image12.png)
 
 **그림 6**: 가 ObjectDataSource 반환 모든 제품 ([클릭 하 여 큰 이미지 보기](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image14.png))
 
@@ -104,17 +104,17 @@ GridView, DetailsView 및 데이터 수정 기능 및 레이아웃에서 다른 
 그림 7, 8 및 9 ObjectDataSource의 업데이트, 삽입 및 삭제 표시 탭입니다. 이러한 탭을 구성 있도록를 `Insert()`, `Update()`, 및 `Delete()` 메서드를 호출 합니다 `ProductsBLL` 클래스의 `UpdateProduct`, `AddProduct`, 및 `DeleteProduct` 메서드를 각각.
 
 
-[![M아시아 태평양 UpdateProduct 메서드와 같이 ProductBLL 클래스의 ObjectDataSource의 update () 메서드](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image16.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image15.png)
+[![ObjectDataSource의 update () 메서드 UpdateProduct 메서드와 같이 ProductBLL 클래스에 매핑](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image16.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image15.png)
 
 **그림 7**: ObjectDataSource의 매핑 `Update()` 메서드를 `ProductBLL` 클래스의 `UpdateProduct` 메서드 ([클릭 하 여 큰 이미지 보기](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image17.png))
 
 
-[![M아시아 태평양 ProductBLL 클래스의 AddProduct 메서드에 ObjectDataSource의 insert () 메서드](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image19.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image18.png)
+[![ObjectDataSource의 insert () 메서드를 ProductBLL 클래스의 AddProduct 메서드에 매핑하십시오.](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image19.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image18.png)
 
 **그림 8**: ObjectDataSource의 매핑 `Insert()` 메서드를 `ProductBLL` 클래스의 추가 `Product` 메서드 ([클릭 하 여 큰 이미지 보기](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image20.png))
 
 
-[![M아시아 태평양 ProductBLL 클래스의 DeleteProduct 메서드에 ObjectDataSource의 delete () 메서드](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image22.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image21.png)
+[![ObjectDataSource의 delete () 메서드를 ProductBLL 클래스의 DeleteProduct 메서드에 매핑하십시오.](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image22.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image21.png)
 
 **그림 9**: ObjectDataSource의 매핑 `Delete()` 메서드를 `ProductBLL` 클래스의 `DeleteProduct` 메서드 ([클릭 하 여 큰 이미지 보기](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image23.png))
 
@@ -202,7 +202,7 @@ CommandField 번호가 `ShowXButton` 어떤 일련의 단추를 CommandField에 
 이 시점에서 믿을 지 모르겠지만, 마치고 GridView를 삭제 지원 추가. 그림 11에서 알 수 있듯이, Delete 단추 열의 브라우저를 통해이 페이지를 방문 있는 경우.
 
 
-[![T열의 삭제 단추를 추가 하는 그 CommandField](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image26.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image25.png)
+[![CommandField Delete 단추 열 추가](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image26.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image25.png)
 
 **그림 11**: 열의 삭제 단추를 추가 하는 CommandField ([클릭 하 여 큰 이미지 보기](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image27.png))
 
@@ -216,7 +216,7 @@ CommandField 번호가 `ShowXButton` 어떤 일련의 단추를 CommandField에 
 제품을 삭제 하려고 시도할 때, 해당 메시지는 예외가 발생 하는 경우 "*ObjectDataSource 'ObjectDataSource1' 매개 변수가 있는 ' DeleteProduct' 제네릭이 아닌 메서드를 찾을 수 없습니다: 원래 productID\_ ProductID*, "제거할 가능성이 잊은 `OldValuesParameterFormatString` ObjectDataSource의 속성입니다. 사용 하 여는 `OldValuesParameterFormatString` 둘 다에 전달 하려고 시도 하는 ObjectDataSource 속성을 지정 `productID` 하 고 `original_ProductID` 입력 매개 변수는 `DeleteProduct` 메서드. `DeleteProduct`그러나만 단일 입력된 매개 변수를 받아들이고, 따라서 예외입니다. 제거 된 `OldValuesParameterFormatString` 속성 (설정 `{0}`) 원래 입력된 매개 변수를 전달 하려고 하지 ObjectDataSource에 지시 합니다.
 
 
-[![EOut OldValuesParameterFormatString 속성 지워진 nsure](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image29.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image28.png)
+[![OldValuesParameterFormatString 속성 선택 취소 되었는지 확인](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image29.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image28.png)
 
 **그림 12**: 있는지 확인 합니다 `OldValuesParameterFormatString` 속성에 된 선택이 취소 아웃 ([큰 이미지를 보려면 클릭](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image30.png))
 
@@ -224,7 +224,7 @@ CommandField 번호가 `ShowXButton` 어떤 일련의 단추를 CommandField에 
 제거한 경우에는 `OldValuesParameterFormatString` 속성을 계속 하면 예외 메시지를 사용 하 여 제품을 삭제 하려고 할 때: "*The DELETE 문을 참조 제약 조건과 충돌 ' FK\_순서\_세부 정보\_제품의*." Northwind 데이터베이스 간 외래 키 제약 조건을 포함 합니다 `Order Details` 하 고 `Products` 테이블, 즉 제품에서 하나 이상의 레코드가 있는 경우 시스템에서 삭제할 수 없습니다는 `Order Details` 테이블입니다. Northwind 데이터베이스의 모든 제품 하나 이상의 레코드에 있으므로 `Order Details`, 제품의 관련 된 주문 세부 정보 레코드를 먼저 삭제 될 때까지 제품을 모두 삭제할 수 없습니다.
 
 
-[![A 외래 키 제약 조건에는 제품 삭제 금지](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image32.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image31.png)
+[![제품 삭제를 금지 하는 외래 키 제약 조건](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image32.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image31.png)
 
 **그림 13**: 제품 삭제를 금지 하는 외래 키 제약 조건 ([클릭 하 여 큰 이미지 보기](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image33.png))
 
@@ -238,7 +238,7 @@ CommandField 번호가 `ShowXButton` 어떤 일련의 단추를 CommandField에 
 방금에서 레코드를 모두 삭제 합니다 `Order Details` foreign key 제약 조건을 회피 하는 테이블입니다. Visual Studio에서 서버 탐색기로 이동, 마우스 오른쪽 단추로 클릭는 `NORTHWND.MDF` 노드를 새 쿼리를 선택 합니다. 그런 다음 쿼리 창에서 다음 SQL 문을 실행 합니다. `DELETE FROM [Order Details]`
 
 
-[![DOrder Details 테이블에서 모든 레코드 elete](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image35.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image34.png)
+[![Order Details 테이블에서 모든 레코드를 삭제 합니다.](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image35.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image34.png)
 
 **그림 14**: 모든 레코드를 삭제 합니다 `Order Details` 테이블 ([큰 이미지를 보려면 클릭](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image36.png))
 
@@ -283,7 +283,7 @@ GridView의 스마트 태그 편집 사용 확인란을 선택 하면 편집 기
 이것이 전부 매우 기본적인 편집 지원을 추가 합니다. 그림 16 에서처럼 편집 인터페이스는 다소 조잡 각 BoundField입니다 `ReadOnly` 속성이 `False` (기본값) 텍스트 상자로 렌더링 됩니다. 여기에 필드와 같은 `CategoryID` 및 `SupplierID`는 다른 테이블에 키입니다.
 
 
-[![C편집 모드에 있는 행 Chai s 편집 단추 표시를 클릭 하](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image39.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image38.png)
+[![Chai의 편집 단추를 클릭 하면 편집 모드에서 행을 표시](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image39.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image38.png)
 
 **그림 16**: 행 편집 모드로 표시 됩니다 Chai의 편집 단추를 클릭 하면 ([클릭 하 여 큰 이미지 보기](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image40.png))
 
@@ -317,7 +317,7 @@ GridView의 데이터 수정 기능을 보여 주기 위해를 DetailsView를 �
 DetailsView를 CommandField에 대 한 기본적으로 열 컬렉션의 끝에 표시 되는 참고 합니다. DetailsView의 필드가 렌더링 되는 행으로 Insert 사용 하 여 행으로 표시 되는 CommandField 하므로 편집 및 DetailsView의 맨 위에 있는 단추를 삭제 합니다.
 
 
-[![Configure DetailsView 지원 편집, 삽입 및 삭제](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image43.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image42.png)
+[![DetailsView 편집, 삽입 및 삭제를 지원 하도록 구성](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image43.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image42.png)
 
 **그림 18**: 편집, 삽입 및 삭제 지원으로 DetailsView 구성 ([클릭 하 여 큰 이미지 보기](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image44.png))
 
@@ -329,7 +329,7 @@ GridView와 마찬가지로 이벤트의 순서를 시작 삭제 단추를 클�
 Visual Studio를 설정 하는 스마트 태그를 통해 DetailsView에 데이터 원본을 바인딩할 경우 합니다 `InsertVisible` 속성을 `False` 자동 증가 필드에 대해서만 합니다. 읽기 전용 필드와 같은 `CategoryName` 및 `SupplierName`, 하지 않는 한 "삽입 모드" 사용자 인터페이스에 표시할 해당 `InsertVisible` 속성 명시적으로 설정 됩니다 `False`합니다. 이 두 필드를 설정 하려면 잠시 `InsertVisible` 속성을 `False`, DetailsView의 선언적 구문 또는 편집 필드를 통해 스마트 태그에 연결 합니다. 그림 19 설정을 표시는 `InsertVisible` 속성을 `False` 필드 편집을 클릭 하 여 연결 합니다.
 
 
-[![Northwind Traders 이제 제공 Acme Tea](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image46.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image45.png)
+[![Northwind Traders Acme Tea 제공](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image46.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image45.png)
 
 **그림 19**: Northwind Traders 이제 제공 Acme Tea ([클릭 하 여 큰 이미지 보기](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image47.png))
 
@@ -337,7 +337,7 @@ Visual Studio를 설정 하는 스마트 태그를 통해 DetailsView에 데이�
 설정한 후 합니다 `InsertVisible` 속성, 보기는 `Basics.aspx` 브라우저에서 페이지 및 새 단추를 클릭 합니다. 그림 20 새 beverage를 추가할 때 DetailsView를 보여 줍니다 Acme Tea 당사의 제품 라인에 있습니다.
 
 
-[![Northwind Traders 이제 제공 Acme Tea](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image49.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image48.png)
+[![Northwind Traders Acme Tea 제공](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image49.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image48.png)
 
 **그림 20**: Northwind Traders 이제 제공 Acme Tea ([클릭 하 여 큰 이미지 보기](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image50.png))
 
@@ -345,7 +345,7 @@ Visual Studio를 설정 하는 스마트 태그를 통해 DetailsView에 데이�
 포스트백 근거가 Acme 차에 대 한 세부 정보를 입력 하 고 삽입 단추를 클릭 하면, 및 새 레코드가 추가 되는 `Products` 데이터베이스 테이블입니다. 데이터베이스 테이블에 있는 순서 대로 제품을 나열 하는이 DetailsView, 있으므로에서는 페이지로 마지막 제품 새 제품을 확인 하기 위해 합니다.
 
 
-[![DAcme 차에 대 한 설명](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image52.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image51.png)
+[![Acme 차에 대 한 세부 정보](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image52.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image51.png)
 
 **그림 21**: Acme 차에 대 한 세부 정보 ([클릭 하 여 큰 이미지 보기](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image53.png))
 
@@ -372,7 +372,7 @@ FormView를 추가 하 여 시작을 설명 하기 위해 이러한 기술을 `B
 그림 22 표시 FormView의 `ItemTemplate` 브라우저를 통해 볼 때. 맨 아래에서 새로 만들기, 편집 및 삭제 단추를 사용 하 여 각 제품 필드 나열 됩니다.
 
 
-[![T새로 만들기, 편집 및 삭제 단추와 함께 각 제품 필드를 나열 하는 데이터 정렬과 FormView ItemTemplate 그](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image55.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image54.png)
+[![함께 새로운 각 제품 필드를 나열 하는 데이터 정렬과 FormView ItemTemplate, 편집 및 삭제 단추](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image55.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image54.png)
 
 **그림 22**: 데이터 정렬과 FormView `ItemTemplate` 나열 각 제품 필드과 함께 새로 만들기, 편집 및 삭제 단추 ([큰 이미지를 보려면 클릭](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image56.png))
 
@@ -397,7 +397,7 @@ GridView와 DetailsView를 삭제 단추 단추, LinkButton, 또는 ImageButton 
 그림 23 Chai에 대 한 편집 버튼을 클릭 한 후 브라우저에서 FormView를 보여 줍니다. 합니다 `SupplierName` 및 `CategoryName` 에 표시 된 필드를 `ItemTemplate` 는 더 이상에서 제거 했습니다는 `EditItemTemplate`합니다. [업데이트] 단추를 클릭할 때 FormView GridView 및 DetailsView 컨트롤과 동일한 일련의 단계를 진행 합니다.
 
 
-[![B입력란 또는 확인란 각 편집 가능한 제품 필드를 표시 하는 y 기본은 EditItemTemplate](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image58.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image57.png)
+[![기본적으로는 EditItemTemplate 입력란 또는 확인란 각 편집 가능한 제품 필드를 표시](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image58.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image57.png)
 
 **그림 23**: 기본적으로는 `EditItemTemplate` 표시 각 편집 가능한 제품 필드 입력란 또는 확인란 ([큰 이미지를 보려면 클릭](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image59.png))
 
@@ -414,12 +414,12 @@ FormView의 자동으로 생성 된 미묘한 문제가 `InsertItemTemplate`합�
 그림 24 Acme 커피 새 제품을 추가 하는 경우 브라우저에서 FormView를 보여 줍니다. `SupplierName` 하 고 `CategoryName` 에 표시 된 필드는 `ItemTemplate` 는 더 이상만 제거 했습니다. DetailsView 컨트롤 같은 일련의 단계를 통해 FormView 진행 되는 삽입 단추를 클릭 하는 경우 새 레코드를 추가 합니다 `Products` 테이블입니다. 그림 25 삽입 한 후 FormView에서 Acme 커피 제품 세부 정보를 보여 줍니다.
 
 
-[![T먼저 그 결정 FormView의 삽입 인터페이스](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image61.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image60.png)
+[![먼저 지정 FormView의 삽입 인터페이스](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image61.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image60.png)
 
 **그림 24**: 합니다 `InsertItemTemplate` FormView의 삽입 인터페이스를 나타냅니다 ([큰 이미지를 보려면 클릭](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image62.png))
 
 
-[![TFormView Acme 커피 새 제품에 대 한 그 정보 표시 됩니다](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image64.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image63.png)
+[![FormView에서 Acme 커피 새 제품에 대 한 세부 정보가 표시 됩니다.](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image64.png)](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image63.png)
 
 **그림 25**: FormView에서 Acme 커피 새 제품에 대 한 세부 정보가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](an-overview-of-inserting-updating-and-deleting-data-vb/_static/image65.png))
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 8edc18968625036964c0120b83f8ebb149dbf87a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59393433"
 ---
 # <a name="masterdetail-filtering-with-a-dropdownlist-c"></a>DropDownList 한 개로 마스터/세부 정보 필터링(C#)
@@ -35,7 +35,7 @@ ms.locfileid: "59393433"
 마스터/세부 정보 보고서는 선택한 목록 항목의 제품이 표시를 사용 하 여 DropDownList, 범주 표시 페이지는 GridView에서 더 아래쪽 합니다. 첫 번째 작업을 미리 한는 DropDownList에 표시 되는 범주를 것입니다. 열기는 `FilterByDropDownList.aspx` 페이지에 `Filtering` 폴더, DropDownList에 페이지의 디자이너 도구 상자에서 끌어서 설정 해당 `ID` 속성을 `Categories`입니다. 다음으로, DropDownList의 스마트 태그의 데이터 소스 선택 링크를 클릭 합니다. 데이터 소스 구성 마법사가 표시 됩니다.
 
 
-[![SDropDownList의 데이터 원본 지정](master-detail-filtering-with-a-dropdownlist-cs/_static/image2.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image1.png)
+[![DropDownList의 데이터 소스를 지정 합니다.](master-detail-filtering-with-a-dropdownlist-cs/_static/image2.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image1.png)
 
 **그림 1**: DropDownList의 데이터 원본을 지정 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-cs/_static/image3.png))
 
@@ -43,17 +43,17 @@ ms.locfileid: "59393433"
 라는 새 ObjectDataSource를 추가 하도록 선택할 `CategoriesDataSource` 를 호출 하는 `CategoriesBLL` 클래스의 `GetCategories()` 메서드.
 
 
-[![A새 ObjectDataSource 라는 CategoriesDataSource dd](master-detail-filtering-with-a-dropdownlist-cs/_static/image5.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image4.png)
+[![CategoriesDataSource 라는 새 ObjectDataSource를 추가 합니다.](master-detail-filtering-with-a-dropdownlist-cs/_static/image5.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image4.png)
 
 **그림 2**: 추가 명명 된 새 ObjectDataSource `CategoriesDataSource` ([큰 이미지를 보려면 클릭](master-detail-filtering-with-a-dropdownlist-cs/_static/image6.png))
 
 
-[![CCategoriesBLL 클래스를 사용 하는 설치할](master-detail-filtering-with-a-dropdownlist-cs/_static/image8.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image7.png)
+[![CategoriesBLL 클래스를 사용 하려면 선택 합니다.](master-detail-filtering-with-a-dropdownlist-cs/_static/image8.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image7.png)
 
 **그림 3**: 사용 하도록 선택 합니다 `CategoriesBLL` 클래스 ([큰 이미지를 보려면 클릭](master-detail-filtering-with-a-dropdownlist-cs/_static/image9.png))
 
 
-[![Configure GetCategories() 메서드를 사용 하는 ObjectDataSource](master-detail-filtering-with-a-dropdownlist-cs/_static/image11.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image10.png)
+[![GetCategories() 메서드를 사용 하는 ObjectDataSource 구성](master-detail-filtering-with-a-dropdownlist-cs/_static/image11.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image10.png)
 
 **그림 4**: ObjectDataSource를 사용 하 여 구성 합니다 `GetCategories()` 메서드 ([큰 이미지를 보려면 클릭](master-detail-filtering-with-a-dropdownlist-cs/_static/image12.png))
 
@@ -61,7 +61,7 @@ ms.locfileid: "59393433"
 DropDownList에 어떤 데이터 원본 필드를 표시 해야 하 고는 지정 해야 하는 ObjectDataSource를 구성한 후 목록 항목에 대 한 값으로 연결 해야 하나입니다. 있어야 합니다 `CategoryName` 필드를 표시 및 `CategoryID` 각 목록 항목에 대 한 값으로.
 
 
-[![H값으로 사용 하 여 CategoryID와 CategoryName 필드를 표시 하는 평균 DropDownList](master-detail-filtering-with-a-dropdownlist-cs/_static/image14.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image13.png)
+[![가 DropDownList 표시를 사용 하 여 CategoryID와 CategoryName 필드 값](master-detail-filtering-with-a-dropdownlist-cs/_static/image14.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image13.png)
 
 **그림 5**: DropDownList을 표시 합니다 `CategoryName` 필드 및 사용 `CategoryID` 값으로 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-cs/_static/image15.png))
 
@@ -69,7 +69,7 @@ DropDownList에 어떤 데이터 원본 필드를 표시 해야 하 고는 지�
 이 시점에서 레코드를 사용 하 여 채워지는 DropDownList 컨트롤이 있습니다를 `Categories` 테이블 (모두 약 6 초 후에 수행). 그림 6 브라우저를 통해 볼 때 지금 진행 상황을 보여줍니다.
 
 
-[![A 현재 범주를 나열 하는 드롭다운 목록](master-detail-filtering-with-a-dropdownlist-cs/_static/image17.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image16.png)
+[![현재 범주를 나열 하는 드롭다운](master-detail-filtering-with-a-dropdownlist-cs/_static/image17.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image16.png)
 
 **그림 6**: 드롭다운 목록이 현재 범주 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-cs/_static/image18.png))
 
@@ -79,7 +79,7 @@ DropDownList에 어떤 데이터 원본 필드를 표시 해야 하 고는 지�
 마스터/세부 정보 보고서의 마지막 단계는 선택한 범주와 관련 된 제품을 나열 하는 것입니다. 이렇게 하려면 페이지에 GridView를 추가 하 고 라는 새로운 ObjectDataSource는 만들 `productsDataSource`합니다. 가 합니다 `productsDataSource` 컨트롤이 해당 데이터를 가져올 합니다 `ProductsBLL` 클래스의 `GetProductsByCategoryID(categoryID)` 메서드.
 
 
-[![SGetProductsByCategoryID(categoryID) 메서드 선택](master-detail-filtering-with-a-dropdownlist-cs/_static/image20.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image19.png)
+[![GetProductsByCategoryID(categoryID) 메서드를 선택 합니다.](master-detail-filtering-with-a-dropdownlist-cs/_static/image20.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image19.png)
 
 **그림 7**: 선택 된 `GetProductsByCategoryID(categoryID)` 메서드 ([큰 이미지를 보려면 클릭](master-detail-filtering-with-a-dropdownlist-cs/_static/image21.png))
 
@@ -87,7 +87,7 @@ DropDownList에 어떤 데이터 원본 필드를 표시 해야 하 고는 지�
 이 메서드를 선택한 후 ObjectDataSource 마법사 묻는 메서드의 값 *`categoryID`* 매개 변수입니다. 선택한 값을 사용 하도록 `categories` DropDownList 항목으로 매개 변수 원본 컨트롤과를 ControlID `Categories`합니다.
 
 
-[![Set categoryID 범주 DropDownList의 값으로 매개 변수](master-detail-filtering-with-a-dropdownlist-cs/_static/image23.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image22.png)
+[![CategoryID 매개 변수 범주 DropDownList의 값으로 설정](master-detail-filtering-with-a-dropdownlist-cs/_static/image23.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image22.png)
 
 **그림 8**: 설정 합니다 *`categoryID`* 의 값으로 매개 변수를 `Categories` DropDownList ([전체 크기 이미지를 보려면 클릭](master-detail-filtering-with-a-dropdownlist-cs/_static/image24.png))
 
@@ -100,12 +100,12 @@ DropDownList에 어떤 데이터 원본 필드를 표시 해야 하 고는 지�
 그림 9와 10 중인 마스터/세부 정보 보고서를 보여 줍니다.
 
 
-[![W첫 번째 방문 페이지, 음료 제품에 표시 되는 경우](master-detail-filtering-with-a-dropdownlist-cs/_static/image26.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image25.png)
+[![먼저 페이지를 방문 하 고, 음료 제품 표시 됩니다.](master-detail-filtering-with-a-dropdownlist-cs/_static/image26.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image25.png)
 
 **그림 9**: 먼저 페이지를 방문 하 고, 음료 제품 표시 됩니다 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-cs/_static/image27.png))
 
 
-[![S선택 된 새 제품 (생성)는 자동으로 포스트백을 GridView를 업데이트 하는 중](master-detail-filtering-with-a-dropdownlist-cs/_static/image29.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image28.png)
+[![새 제품 (생성)을 선택 하면 자동으로 포스트백을 GridView를 업데이트 하는 중](master-detail-filtering-with-a-dropdownlist-cs/_static/image29.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image28.png)
 
 **그림 10**: 새 제품 (생성)을 선택 하면 자동으로 포스트백을 GridView를 업데이트 하는 중 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-cs/_static/image30.png))
 
@@ -117,7 +117,7 @@ DropDownList에 어떤 데이터 원본 필드를 표시 해야 하 고는 지�
 DropDownList에 새 목록 항목을 추가 하려면 속성 창으로 이동 하 고에서 줄임표를 클릭 합니다 `Items` 속성입니다. 사용 하 여 새 목록 항목을 추가 합니다 `Text` "-범주 선택-" 및 `Value` `-1`합니다.
 
 
-[![Add--범주--목록 항목 선택](master-detail-filtering-with-a-dropdownlist-cs/_static/image32.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image31.png)
+[![추가--범주--목록 항목 선택](master-detail-filtering-with-a-dropdownlist-cs/_static/image32.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image31.png)
 
 **그림 11**: 추가--범주--목록 항목 선택 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-cs/_static/image33.png))
 
@@ -137,7 +137,7 @@ DropDownList 컨트롤을 설정 해야 뿐만 `AppendDataBoundItems` 범주는 
 이러한 변경 이후 먼저 페이지를 방문할 때 "-범주 선택-" 옵션을 선택 하 고 제품이 표시 됩니다.
 
 
-[![On 초기 페이지 로드 아니요 제품 표시](master-detail-filtering-with-a-dropdownlist-cs/_static/image36.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image35.png)
+[![초기 페이지 로드에 제품이 표시 됩니다.](master-detail-filtering-with-a-dropdownlist-cs/_static/image36.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image35.png)
 
 **그림 13**: 초기 페이지 로드 아니요 제품에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-cs/_static/image37.png))
 
@@ -151,7 +151,7 @@ DropDownList 컨트롤을 설정 해야 뿐만 `AppendDataBoundItems` 범주는 
 그림 14의 스크린 샷을 보여 줍니다 `FilterByDropDownList.aspx` "-범주 선택-" 옵션을 선택한 경우. 여기에서 기본적으로 표시 되는 모든 제품 및 특정 범주를 선택 하면 사용자 표시를 좁힐 수 있습니다.
 
 
-[![A제품의 ll 이제 나열 기본적으로](master-detail-filtering-with-a-dropdownlist-cs/_static/image39.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image38.png)
+[![이제 나열 기본적으로 모든 제품](master-detail-filtering-with-a-dropdownlist-cs/_static/image39.png)](master-detail-filtering-with-a-dropdownlist-cs/_static/image38.png)
 
 **그림 14**: 이제 나열 기본적으로 모든 제품 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-cs/_static/image40.png))
 

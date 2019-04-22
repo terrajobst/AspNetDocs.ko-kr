@@ -12,7 +12,7 @@ ms.openlocfilehash: 27823e6b65dda80391d494af6f8d8da539bc3334
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59393212"
 ---
 # <a name="dynamically-adding-an-accordion-pane-vb"></a>동적으로 Accordion 창 (VB)를 추가
@@ -55,7 +55,7 @@ Accordion 컨트롤에서 참조 하는 두 개의 CSS 클래스 예제를 완�
 [!code-css[Main](dynamically-adding-an-accordion-pane-vb/samples/sample6.css)]
 
 
-[![T서버 쪽 코드에서 동적으로 추가 된 그는 accordion에 데이터](dynamically-adding-an-accordion-pane-vb/_static/image2.png)](dynamically-adding-an-accordion-pane-vb/_static/image1.png)
+[![accordion에 데이터를 서버 쪽 코드에서 동적으로 추가](dynamically-adding-an-accordion-pane-vb/_static/image2.png)](dynamically-adding-an-accordion-pane-vb/_static/image1.png)
 
 서버 쪽 코드에서 동적으로 추가한는 accordion에 데이터 ([클릭 하 여 큰 이미지 보기](dynamically-adding-an-accordion-pane-vb/_static/image3.png))
 

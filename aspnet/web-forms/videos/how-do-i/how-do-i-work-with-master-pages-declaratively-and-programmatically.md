@@ -12,7 +12,7 @@ ms.openlocfilehash: 821ad2015d6cc040e219aec59d96792e715e2d7b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59392224"
 ---
 # <a name="how-do-i-work-with-master-pages-declaratively-and-programmatically"></a>[어떻게 할까요?] 선언적으로 프로그래밍 방식으로 마스터 페이지 작업

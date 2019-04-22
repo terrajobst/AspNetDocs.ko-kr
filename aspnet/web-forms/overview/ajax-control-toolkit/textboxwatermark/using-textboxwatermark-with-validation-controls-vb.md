@@ -12,7 +12,7 @@ ms.openlocfilehash: d83fb53ddb40a31013bc724909fa149ce2e4c713
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59387381"
 ---
 # <a name="using-textboxwatermark-with-validation-controls-vb"></a>유효성 검사 컨트롤에 TextBoxWatermark 사용(VB)
@@ -49,7 +49,7 @@ by [Christian Wenz](https://github.com/wenz)
 [!code-aspx[Main](using-textboxwatermark-with-validation-controls-vb/samples/sample4.aspx)]
 
 
-[![T그 유효성 검사기에서 필드에 텍스트가 있는지](using-textboxwatermark-with-validation-controls-vb/_static/image2.png)](using-textboxwatermark-with-validation-controls-vb/_static/image1.png)
+[![유효성 검사기에서 필드에 텍스트가 있는지](using-textboxwatermark-with-validation-controls-vb/_static/image2.png)](using-textboxwatermark-with-validation-controls-vb/_static/image1.png)
 
 유효성 검사기에서 필드에는 텍스트가 없습니다 있습니다 ([클릭 하 여 큰 이미지 보기](using-textboxwatermark-with-validation-controls-vb/_static/image3.png))
 

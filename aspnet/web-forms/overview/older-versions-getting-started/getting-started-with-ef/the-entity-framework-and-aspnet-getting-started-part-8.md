@@ -12,7 +12,7 @@ ms.openlocfilehash: 0fd943eba4c6d80bba5ca6c4d69cbd3a8927513d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59391515"
 ---
 # <a name="getting-started-with-entity-framework-40-database-first-and-aspnet-4-web-forms---part-8"></a>먼저 Entity Framework 4.0 Database를 사용 하 여 시작 및 ASP.NET 4 Web Forms-8 부
@@ -126,7 +126,7 @@ ms.locfileid: "59391515"
 - [MSDN 데이터 개발자 센터에서 entity Framework 사용](https://msdn.microsoft.com/data/ef.aspx)
 - [MSDN 라이브러리의 EntityDataSource 웹 서버 컨트롤 개요](https://msdn.microsoft.com/library/cc488502.aspx)
 - [EntityDataSource 컨트롤 MSDN 라이브러리의 API 참조](https://msdn.microsoft.com/library/system.web.ui.webcontrols.entitydatasource.aspx)
-- [MSDN의 entity Framework 포럼](https://social.msdn.microsoft.com/forums/adodotnetentityframework/)
+- [Entity Framework Forums on MSDN](https://social.msdn.microsoft.com/forums/adodotnetentityframework/)
 - [Julie Lerman의 블로그](http://thedatafarm.com/blog/)
 
 > [!div class="step-by-step"]

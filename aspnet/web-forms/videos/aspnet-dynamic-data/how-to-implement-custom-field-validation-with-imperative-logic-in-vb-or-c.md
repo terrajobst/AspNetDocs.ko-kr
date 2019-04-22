@@ -12,7 +12,7 @@ ms.openlocfilehash: 32bf9ca36cb4e731d1daeccbc579109f1dcda1b1
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384736"
 ---
 # <a name="how-to-implement-custom-field-validation-with-imperative-logic-in-vb-or-c"></a>VB 또는 C에서 명령적 논리를 사용 하 여 사용자 지정 필드 유효성 검사를 구현 하는 방법\#

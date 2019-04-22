@@ -12,7 +12,7 @@ ms.openlocfilehash: 0fc828e39cfcce22d4cc226954cf7d1731b04e42
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59379783"
 ---
 # <a name="introduction-to-working-with-a-database-in-aspnet-web-pages-razor-sites"></a>Asp.net에서 데이터베이스를 사용 하 여 작업 소개 페이지 (Razor) 사이트
@@ -51,7 +51,7 @@ ms.locfileid: "59379783"
 
 다음과 같은 그림이 데이터 행과 열이 있는 테이블로 일반적인 방법은입니다. 데이터베이스 용어에서 각 행은 라고도 레코드입니다. (필드 라고도 함) 각 열 데이터의 각 형식에 대 한 값을 포함 합니다: 이름, 이름, 성 및 등입니다.
 
-| **ID** | **FirstName** | **LastName** | **주소** | **전자 메일** | **전화 번호** |
+| **ID** | **FirstName** | **LastName** | **Address** | **이메일** | **Phone** |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Jim | Abrus | 210 100th St SE Orcas WA 98031 | jim@contoso.com | 555 0100 |
 | 2 | Terry | Adams | 1234 Main St. Seattle WA 99011 | terry@cohowinery.com | 555 0101 |
@@ -151,7 +151,7 @@ ms.locfileid: "59379783"
 
 > [!TIP] 
 > 
-> **SQL(구조적 쿼리 언어)**
+> **구조적된 쿼리 언어 (SQL)**
 > 
 > SQL은 데이터베이스에서 데이터를 관리 하는 것에 대 한 대부분의 관계형 데이터베이스에 사용 되는 언어입니다. 데이터를 검색 하 고 업데이트 하 고 만들기, 수정 및 데이터베이스 테이블을 관리 하도록 하는 명령을 포함 합니다. SQL 프로그래밍 언어 (예: WebMatrix에서 사용 하는 것)에 대해 다릅니다. 이므로 sql 개념 원하는 데이터베이스에 알립니다 하는 것은 데이터베이스의 데이터를 가져오는 작업을 수행 하는 방법을 파악 합니다. 다음은 일부 SQL 명령의 예로 및 용도:
 > 

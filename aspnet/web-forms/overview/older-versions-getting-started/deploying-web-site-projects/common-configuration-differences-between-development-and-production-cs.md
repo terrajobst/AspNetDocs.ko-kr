@@ -12,7 +12,7 @@ ms.openlocfilehash: b9d4ed08ea1e8429c1895d0631e1acac9c7eaba9
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59391457"
 ---
 # <a name="common-configuration-differences-between-development-and-production-c"></a>개발 환경과 프로덕션 환경의 일반적인 구성 차이(C#)

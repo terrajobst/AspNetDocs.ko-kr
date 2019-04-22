@@ -12,7 +12,7 @@ ms.openlocfilehash: f6aa0e4535f88a04419695114d07ea2cf6ac7036
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59381161"
 ---
 # <a name="querying-data-with-the-sqldatasource-control-c"></a>SqlDataSource 컨트롤을 사용하여 데이터 쿼리(C#)
@@ -79,7 +79,7 @@ SqlDataSource 컨트롤을 사용 하 여 데이터베이스 데이터와 직접
 다른 폴더와 같이 `Default.aspx` 에 `SqlDataSource` 폴더 섹션의 자습서를 나열 됩니다. 이전에 설명한 대로 `SectionLevelTutorialListing.ascx` 사용자 컨트롤은이 기능을 제공 합니다. 따라서이 사용자 정의 컨트롤을 추가 `Default.aspx`의 디자인 뷰에서 페이지의 솔루션 탐색기에서 끌어 합니다.
 
 
-[![Add Default.aspx SectionLevelTutorialListing.ascx 사용자 정의 컨트롤](querying-data-with-the-sqldatasource-control-cs/_static/image5.gif)](querying-data-with-the-sqldatasource-control-cs/_static/image4.gif)
+[![Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](querying-data-with-the-sqldatasource-control-cs/_static/image5.gif)](querying-data-with-the-sqldatasource-control-cs/_static/image4.gif)
 
 **그림 4**: 추가 된 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤 `Default.aspx` ([클릭 하 여 큰 이미지 보기](querying-data-with-the-sqldatasource-control-cs/_static/image6.gif))
 
@@ -155,7 +155,7 @@ ObjectDataSource를 사용 하 여 SqlDataSource의 마법사 단순히 값을 �
 SqlDataSource를 구성한 후 데이터 GridView 또는 DetailsView와 같은 웹 컨트롤을 바인딩할 수 있습니다. 이 자습서에서는 s GridView에 데이터를 표시 하도록 합니다. 도구 상자에서 GridView를 페이지로 끌어서에 바인딩하는 `ProductsDataSource` SqlDataSource GridView가 스마트 태그의 드롭다운 목록에서 데이터 소스를 선택 하 여 합니다.
 
 
-[![Add는 GridView 및 SqlDataSource 컨트롤에 바인딩](querying-data-with-the-sqldatasource-control-cs/_static/image13.gif)](querying-data-with-the-sqldatasource-control-cs/_static/image12.gif)
+[![GridView를 추가 하 고 SqlDataSource 컨트롤에 바인딩](querying-data-with-the-sqldatasource-control-cs/_static/image13.gif)](querying-data-with-the-sqldatasource-control-cs/_static/image12.gif)
 
 **그림 10**: GridView를 추가 하 고 SqlDataSource 컨트롤에 바인딩합니다 ([클릭 하 여 큰 이미지 보기](querying-data-with-the-sqldatasource-control-cs/_static/image14.gif))
 
@@ -170,7 +170,7 @@ GridView가의 3을 구성 하려면 잠시 BoundFields입니다. 변경 된 `Pr
 브라우저를 통해이 페이지를 방문 합니다. GridView가 각 제품이 나열 그림 11에서 알 수 있듯이 `ProductID`, `ProductName`, 및 `UnitPrice` 값입니다.
 
 
-[![T그 GridView에는 각 제품의 ProductID, ProductName, 및 UnitPrice 값 표시](querying-data-with-the-sqldatasource-control-cs/_static/image16.gif)](querying-data-with-the-sqldatasource-control-cs/_static/image15.gif)
+[![각 제품의 ProductID, ProductName, 및 UnitPrice 값을 표시 하는 GridView](querying-data-with-the-sqldatasource-control-cs/_static/image16.gif)](querying-data-with-the-sqldatasource-control-cs/_static/image15.gif)
 
 **그림 11**: GridView 표시 각 제품 s `ProductID`, `ProductName`, 및 `UnitPrice` 값 ([클릭 하 여 큰 이미지 보기](querying-data-with-the-sqldatasource-control-cs/_static/image17.gif))
 
@@ -228,7 +228,7 @@ SqlDataSource 컨트롤을 구성할 때 또는 기존 테이블 또는 뷰 열 
 [!code-aspx[Main](querying-data-with-the-sqldatasource-control-cs/samples/sample5.aspx)]
 
 
-[![T그 GridView에는 각 제품의 ID, 이름 및 연결 된 범주 이름 표시](querying-data-with-the-sqldatasource-control-cs/_static/image22.gif)](querying-data-with-the-sqldatasource-control-cs/_static/image21.gif)
+[![GridView 각 s 제품 ID, 이름 및 연결 된 범주 이름을 보여 줍니다.](querying-data-with-the-sqldatasource-control-cs/_static/image22.gif)](querying-data-with-the-sqldatasource-control-cs/_static/image21.gif)
 
 **그림 15**: GridView를 보여 줍니다 각 제품 ID, 이름 및 연결 된 범주 이름 ([클릭 하 여 큰 이미지 보기](querying-data-with-the-sqldatasource-control-cs/_static/image23.gif))
 

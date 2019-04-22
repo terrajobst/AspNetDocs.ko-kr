@@ -12,7 +12,7 @@ ms.openlocfilehash: 56e3ebfbe0b5af4234791136725de79e38171cc1
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59395461"
 ---
 # <a name="how-do-i-choose-between-methods-of-ajax-page-updates"></a>[어떻게 할까요?] AJAX의 방법 중에서 선택 페이지 업데이트?

@@ -13,7 +13,7 @@ ms.openlocfilehash: 212b07494381d13f6ded96a41b846dcdf7e8ff16
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59393745"
 ---
 # <a name="change-primary-key-for-users-in-aspnet-identity"></a>ASP.NET Identity에서 사용자의 기본 키 변경
@@ -273,7 +273,7 @@ ManageController.cs 파일을 엽니다. 다음 메서드를 변경 해야 합�
 <a id="other"></a>
 ## <a name="other-resources"></a>기타 리소스
 
-- [ASP.NET Identity에 대한 사용자 지정 스토리지 공급자 개요](overview-of-custom-storage-providers-for-aspnet-identity.md)
-- [기존 웹 사이트를 SQL 멤버 자격에서 ASP.NET Identity로 마이그레이션](../migrations/migrating-an-existing-website-from-sql-membership-to-aspnet-identity.md)
+- [ASP.NET ID에 대한 사용자 지정 스토리지 공급자 개요](overview-of-custom-storage-providers-for-aspnet-identity.md)
+- [기존 웹 사이트를 SQL 멤버 자격에서 ASP.NET ID로 마이그레이션](../migrations/migrating-an-existing-website-from-sql-membership-to-aspnet-identity.md)
 - [멤버 자격 및 ASP.NET Id로 사용자 프로필에 대 한 범용 공급자 데이터 마이그레이션](../migrations/migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity.md)
 - [샘플 응용 프로그램](https://aspnet.codeplex.com/SourceControl/latest#Samples/Identity/ChangePK/readme.txt) 변경 된 기본 키를 사용 하 여

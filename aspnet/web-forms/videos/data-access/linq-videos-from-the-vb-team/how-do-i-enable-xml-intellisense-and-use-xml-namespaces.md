@@ -12,7 +12,7 @@ ms.openlocfilehash: d58385ae1e88346fe6e408030eefcfb23cab7977
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59390586"
 ---
 # <a name="how-do-i-enable-xml-intellisense-and-use-xml-namespaces"></a>[어떻게 할까요?] XML IntelliSense 활성화 및 XML 네임 스페이스 사용?

@@ -12,7 +12,7 @@ ms.openlocfilehash: a98274a154691e3e0b6c5ff57b57bca1ef57ba6b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59381451"
 ---
 # <a name="how-do-i-implement-a-cross-page-postback-in-aspnet"></a>[어떻게 할까요?] ASP.NET에서 교차 페이지 포스트백 구현

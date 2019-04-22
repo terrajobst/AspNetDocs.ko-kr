@@ -12,7 +12,7 @@ ms.openlocfilehash: 7f0c5ff599235157bd11f5f86a26b8882e0f29dc
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59381811"
 ---
 # <a name="web-matrix-and-aspnet-web-pages-razor-beta-3-release-readme"></a>WebMatrix 및 ASP.NET 웹 페이지(Razor) 베타 3 릴리스 추가 정보
@@ -28,7 +28,7 @@ ms.locfileid: "59381811"
 - [새 기능, 변경 및 Beta 3 릴리스에의 알려진 문제](#Known_Issues)
 
     - [WebMatrix 설치 문제](#Known_Issues_Installation)
-    - [ASP.NET Web Pages](#Known_Issues_ASPNET)
+    - [ASP.NET 웹 페이지 2](#Known_Issues_ASPNET)
     - [SQL Server Compact](#Known_Issues_SQL_Server_Compact)
     - [응용 프로그램 설치](#Known_Issues_Installing_Applications)
     - [응용 프로그램 게시](#Known_Issues_Publishing_Applications)
@@ -116,7 +116,7 @@ ms.locfileid: "59381811"
 
 문서의이 섹션에서는 새로운 기능, 변경 및 Razor 구문이 있는 ASP.NET 웹 페이지의 베타 3 릴리스를 사용 하 여 알려진된 문제에 설명합니다.
 
-- [새 기능](#NewFeatures)
+- [새로운 기능](#NewFeatures)
 - [변경 내용](#Changes)
 - [문제](#Issues)
 

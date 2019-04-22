@@ -13,7 +13,7 @@ ms.openlocfilehash: b78b13009d3106b857a22b1316dd062de8c68ac9
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383897"
 ---
 # <a name="aspnet-web-api-deployment-and-hosting"></a>ASP.NET Web API: 배포 및 호스팅
@@ -21,5 +21,5 @@ ms.locfileid: "59383897"
 > Web API를 호스트 하는 방법입니다.
 
 
-- [OWIN을 사용하여 Web API 2 자체 호스트](use-owin-to-self-host-web-api.md)
+- [OWIN을 사용하여 Web API 2 자체 호스팅](use-owin-to-self-host-web-api.md)
 - [Azure 작업자 역할에 Web API 2 호스트](host-aspnet-web-api-in-an-azure-worker-role.md)

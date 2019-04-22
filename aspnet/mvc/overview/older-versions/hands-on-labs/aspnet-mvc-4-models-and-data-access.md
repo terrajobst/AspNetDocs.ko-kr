@@ -12,7 +12,7 @@ ms.openlocfilehash: 53ca3bc4e550f488f3ae4c41f02a636e747107cb
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384892"
 ---
 # <a name="aspnet-mvc-4-models-and-data-access"></a>ASP.NET MVC 4 모델 및 데이터 액세스
@@ -481,7 +481,7 @@ Code First 접근 방식 사용 하면 프레임 워크와 함께 일반적으�
 
     ![장르별 검색](aspnet-mvc-4-models-and-data-access/_static/image24.png "장르별 검색")
 
-    *검색/저장소/찾아보기? 장르 Pop =*
+    *Browsing /Store/Browse?genre=Pop*
 
 <a id="Ex3Task3"></a>
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 23861c4ae9af7d410411b582a8245b178f791c83
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59389676"
 ---
 # <a name="deploying-your-site-using-visual-studio-vb"></a>Visual Studio를 사용하여 사이트 배포(VB)
@@ -46,7 +46,7 @@ Visual Studio의 웹 사이트 복사 도구는 독립 실행형 FTP 클라이�
 (그림 1에는이 아이콘은 원으로 표시)의 솔루션 탐색기에서 웹 사이트 복사 아이콘을 클릭 하 여 웹 사이트 복사 도구 프로젝트를 시작 합니다. 또는 웹 사이트 메뉴에서 웹 사이트 복사 옵션을 선택할 수 있습니다. 그림 1에 표시 된 웹 사이트 복사 사용자 인터페이스를 시작 하는 방법 중 하나 그림 1의 왼쪽된 창에만 원격 서버에 연결할 아직 때문에 채워집니다.
 
 
-[![T그 복사 웹 사이트 도구 사용자 인터페이스는 두 개의 창으로 나눈 값](deploying-your-site-using-visual-studio-vb/_static/image2.png)](deploying-your-site-using-visual-studio-vb/_static/image1.png)
+[![웹 사이트 복사 도구의 사용자 인터페이스는 두 개의 창으로 구분](deploying-your-site-using-visual-studio-vb/_static/image2.png)](deploying-your-site-using-visual-studio-vb/_static/image1.png)
 
 **그림 1**: 웹 사이트 복사 도구의 사용자 인터페이스는 두 개의 창으로 나뉩니다 ([클릭 하 여 큰 이미지 보기](deploying-your-site-using-visual-studio-vb/_static/image3.png))
 
@@ -63,7 +63,7 @@ Visual Studio의 웹 사이트 복사 도구는 독립 실행형 FTP 클라이�
 대부분의 웹 호스트 공급자를 FTP 지원 없지만 적은 FrontPage 서버 확장이 지원 됩니다. 이런 이유로 FTP 사이트 옵션을 선택 하 고 그림 2에 표시 된 대로 연결 정보를 입력 했습니다.
 
 
-[![S대상 웹 사이트를 지정](deploying-your-site-using-visual-studio-vb/_static/image5.png)](deploying-your-site-using-visual-studio-vb/_static/image4.png)
+[![대상 웹 사이트를 지정 합니다.](deploying-your-site-using-visual-studio-vb/_static/image5.png)](deploying-your-site-using-visual-studio-vb/_static/image4.png)
 
 **그림 2**: 대상 웹 사이트를 지정 ([클릭 하 여 큰 이미지 보기](deploying-your-site-using-visual-studio-vb/_static/image6.png))
 
@@ -73,7 +73,7 @@ Visual Studio의 웹 사이트 복사 도구는 독립 실행형 FTP 클라이�
 새를 추가 해 보겠습니다 BookReviewsWSP 프로젝트에 페이지를 실행 중인 웹 사이트 복사 도구 볼 수 있도록 배포입니다. 명명 된 루트 디렉터리에서 Visual Studio에서 새 ASP.NET 페이지를 만들 `Privacy.aspx`합니다. 마스터 페이지를 사용 하 여 페이지가 `Site.master` 사이트의 개인 정보 취급 방침이이 페이지에 추가 합니다. 그림 3에서는이 페이지는 만들어진 후 Visual Studio를 보여 줍니다.
 
 
-[![A명명 된 새 페이지 dd &lt;코드&gt;Privacy.aspx&lt;/c o d&gt; 웹 사이트의 루트 폴더로](deploying-your-site-using-visual-studio-vb/_static/image8.png)](deploying-your-site-using-visual-studio-vb/_static/image7.png)
+[![명명 된 새 페이지 추가 &lt;코드&gt;Privacy.aspx&lt;/c o d&gt; 웹 사이트의 루트 폴더에](deploying-your-site-using-visual-studio-vb/_static/image8.png)](deploying-your-site-using-visual-studio-vb/_static/image7.png)
 
 **그림 3**: 명명 된 새 페이지 추가 `Privacy.aspx` 웹 사이트의 루트 폴더 ([큰 이미지를 보려면 클릭](deploying-your-site-using-visual-studio-vb/_static/image9.png))
 
@@ -81,7 +81,7 @@ Visual Studio의 웹 사이트 복사 도구는 독립 실행형 FTP 클라이�
 다음으로, 웹 사이트 복사 사용자 인터페이스를 반환 합니다. 왼쪽된 창에 이제 새 파일-그림 4에서 알 수 있듯이 `Policy.aspx` 고 `Policy.aspx.vb`입니다. 게다가 이러한 파일은와 상태의 새 원격 사이트에는 없지만 로컬 사이트에 있는지를 나타내는 화살표 아이콘으로 표시 됩니다.
 
 
-[![T새로 만들기를 포함 하는 웹 사이트 복사 도구 그 &lt;코드&gt;Privacy.aspx&lt;/c o d&gt; 페이지의 왼쪽 창에서](deploying-your-site-using-visual-studio-vb/_static/image11.png)](deploying-your-site-using-visual-studio-vb/_static/image10.png)
+[![새로 만들기를 포함 하는 웹 사이트 복사 도구 &lt;코드&gt;Privacy.aspx&lt;/c o d&gt; 페이지의 왼쪽 창에서](deploying-your-site-using-visual-studio-vb/_static/image11.png)](deploying-your-site-using-visual-studio-vb/_static/image10.png)
 
 **그림 4**: 새로 만들기를 포함 하는 웹 사이트 복사 도구 `Privacy.aspx` 페이지의 왼쪽 창에서 ([큰 이미지를 보려면 클릭](deploying-your-site-using-visual-studio-vb/_static/image12.png))
 
@@ -91,7 +91,7 @@ Visual Studio의 웹 사이트 복사 도구는 독립 실행형 FTP 클라이�
 새 파일을 나열할 함께 웹 사이트 복사 도구는 로컬 및 원격 사이트 간의 다른 모든 파일을 강조 표시 합니다. 이 실행 중인 확인 하려면 돌아갑니다는 `Privacy.aspx` 페이지 및 개인 정보 취급 방침에 몇 가지 단어를 추가 합니다. 페이지를 저장 하 고 웹 사이트 복사 도구를 반환 합니다. 그림 5에서 알 수 있듯이는 `Privacy.aspx` 페이지 왼쪽된 창에서 변경 된 원격 사이트와 동기화 중임을 나타내는 상태가 됩니다.
 
 
-[![T나타내는 그 웹 사이트 복사 도구를 &lt;코드&gt;Privacy.aspx&lt;/c o d&gt; 페이지 바뀌었습니다](deploying-your-site-using-visual-studio-vb/_static/image14.png)](deploying-your-site-using-visual-studio-vb/_static/image13.png)
+[![나타내는 웹 사이트 복사 도구를 &lt;코드&gt;Privacy.aspx&lt;/c o d&gt; 페이지 바뀌었습니다.](deploying-your-site-using-visual-studio-vb/_static/image14.png)](deploying-your-site-using-visual-studio-vb/_static/image13.png)
 
 **그림 5**: 나타내는 웹 사이트 복사 도구를 `Privacy.aspx` 페이지가 변경 되었습니다 ([큰 이미지를 보려면 클릭](deploying-your-site-using-visual-studio-vb/_static/image15.png))
 
@@ -118,7 +118,7 @@ Visual Studio 내에서 웹 응용 프로그램을 배포 하는 또 다른 방�
 콘텐츠를 업로드 하는 옵션이 이기도 합니다 `App_Data` 폴더입니다.
 
 
-[![S대상 웹 사이트를 지정](deploying-your-site-using-visual-studio-vb/_static/image17.png)](deploying-your-site-using-visual-studio-vb/_static/image16.png)
+[![대상 웹 사이트를 지정 합니다.](deploying-your-site-using-visual-studio-vb/_static/image17.png)](deploying-your-site-using-visual-studio-vb/_static/image16.png)
 
 **그림 6**: 대상 웹 사이트를 지정 ([클릭 하 여 큰 이미지 보기](deploying-your-site-using-visual-studio-vb/_static/image18.png))
 
@@ -128,7 +128,7 @@ Visual Studio 내에서 웹 응용 프로그램을 배포 하는 또 다른 방�
 그림 7에서는 게시 작업이 완료 된 후 FTP 사이트에 있는 파일을 보여 줍니다. 태그 페이지만 및는 필요한 서버 및 클라이언트 쪽 지원 파일 업로드 되었습니다.
 
 
-[![O프로덕션 환경에 필요한 파일이 게시 된 있는](deploying-your-site-using-visual-studio-vb/_static/image20.png)](deploying-your-site-using-visual-studio-vb/_static/image19.png)
+[![필요한 파일만 프로덕션 환경에 게시 된](deploying-your-site-using-visual-studio-vb/_static/image20.png)](deploying-your-site-using-visual-studio-vb/_static/image19.png)
 
 **그림 7**: 만 필요한 파일 게시 된 프로덕션 환경으로 ([클릭 하 여 큰 이미지 보기](deploying-your-site-using-visual-studio-vb/_static/image21.png))
 

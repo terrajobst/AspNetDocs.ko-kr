@@ -12,7 +12,7 @@ ms.openlocfilehash: e90eebaba3645802f318dbf449c3ec734265a092
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59381954"
 ---
 # <a name="building-the-chapter-downloads-for-the-ef-5-mvc-4-tutorials"></a>4 개의 자습서 5 EF MVC에 대 한 다운로드 장 빌드
@@ -47,7 +47,7 @@ ms.locfileid: "59381954"
     > [!NOTE]
     > 다음 오류가 발생 하면:  
     >   
-    >  *' Update-database ' 용어는 cmdlet, 함수, 스크립트 파일 또는 실행 프로그램의 이름으로 인식 되지 않습니다. 경로가 올바른지 확인한 다음 다시 시도하세요.*  
+    >  *' Update-database ' 용어는 cmdlet, 함수, 스크립트 파일 또는 실행 프로그램의 이름으로 인식 되지 않습니다. 이름의 철자를 확인 하거나 경로 포함 하는 경우 경로가 올바른지 확인 하 고 다시 시도 합니다.*  
     > 종료 하 고 Visual Studio를 다시 시작 합니다.
 
     각 마이그레이션은 실행 한 다음 시드 메서드 실행 합니다. 이제 앱을 실행할 수 있습니다.

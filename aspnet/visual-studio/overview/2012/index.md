@@ -12,7 +12,7 @@ ms.openlocfilehash: 9b057f68e90a985c4e6950a94e49d84f8a6d5a07
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59393368"
 ---
 # <a name="aspnet-and-visual-studio-2012"></a>ASP.NET 및 Visual Studio 2012
@@ -32,5 +32,5 @@ ms.locfileid: "59393368"
 - [CSS 편집기 색 선택](visual-studio-vnext-videos-css-editor-color-picker.md)
 - [페이지 검사기 - 소개](visual-studio-vnext-videos-page-inspector-introduction.md)
 - [페이지 검사기 - 웹 애플리케이션 분해](visual-studio-vnext-videos-page-inspector-decomposing-your-web-application.md)
-- [Microsoft Azure 인증](windows-azure-authentication.md)
+- [Windows Azure 인증](windows-azure-authentication.md)
 - [ASP.NET 및 Web Tools 2012.2 릴리스 정보](aspnet-and-web-tools-20122-release-notes-rtw.md)

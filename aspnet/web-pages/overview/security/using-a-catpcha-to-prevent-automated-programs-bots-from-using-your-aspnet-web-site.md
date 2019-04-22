@@ -12,7 +12,7 @@ ms.openlocfilehash: e7baafda8c5b6de4ab0de46948f969a6f0cc21ad
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59390911"
 ---
 # <a name="using-a-captcha-to-prevent-bots-from-using-your-aspnet-web-razor-site"></a>CAPTCHA를 사용 하 여 Asp.net Razor를 사용 하 여 봇을 방지 하기 위해) 사이트
@@ -73,4 +73,4 @@ ASP.NET 페이지에서 사용할 수 있습니다 합니다 `ReCaptcha` ReCaptc
 
 
 - [ASP.NET 웹 페이지 사이트에 대 한 사이트 전체 동작을 사용자 지정](https://go.microsoft.com/fwlink/?LinkId=202906)
-- [ReCaptcha 사이트](https://www.google.com/recaptcha)
+- [ReCaptcha site](https://www.google.com/recaptcha)

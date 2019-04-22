@@ -12,7 +12,7 @@ ms.openlocfilehash: cbad35c9ef83b41e9d3f9a48ff37672d22338e7e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59395227"
 ---
 # <a name="creating-and-running-a-deployment-command-file"></a>배포 명령 파일 만들기 및 실행

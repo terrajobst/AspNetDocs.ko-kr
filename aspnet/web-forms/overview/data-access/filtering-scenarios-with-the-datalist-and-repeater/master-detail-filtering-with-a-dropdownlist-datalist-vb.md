@@ -12,7 +12,7 @@ ms.openlocfilehash: 1218cf3463c78e4b3bd3c7ca1c65d21590358f8a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59395552"
 ---
 # <a name="masterdetail-filtering-with-a-dropdownlist-vb"></a>DropDownList 한 개로 마스터/세부 정보 필터링(VB)
@@ -49,7 +49,7 @@ ms.locfileid: "59395552"
 을 엽니다는 `Default.aspx` 끌어서 페이지를 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤을 `UserControls` 디자인 화면으로 폴더입니다. 만든이 사용자 정의 컨트롤을 [마스터 페이지 및 사이트 탐색](../introduction/master-pages-and-site-navigation-vb.md) 자습서에서는 사이트 맵을 열거 하 고 글머리 기호 목록에 현재 섹션의 자습서를 표시 합니다.
 
 
-[![Add Default.aspx SectionLevelTutorialListing.ascx 사용자 정의 컨트롤](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image3.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image2.png)
+[![Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image3.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image2.png)
 
 **그림 2**: 추가 된 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤 `Default.aspx` ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image4.png))
 
@@ -69,7 +69,7 @@ ms.locfileid: "59395552"
 마스터/세부 정보 보고서는 선택한 목록 항목의 제품이 표시를 사용 하 여 DropDownList, 범주 표시 페이지 DataList에서 더 아래쪽 합니다. 첫 번째 작업을 미리 한는 DropDownList에 표시 되는 범주를 것입니다. 열어서 시작 합니다 `FilterByDropDownList.aspx` 페이지에 `DataListRepeaterFiltering` 폴더 및 페이지의 디자이너 도구 상자에서 끌어서 DropDownList. 다음으로 DropDownList를 설정 `ID` 속성을 `Categories`입니다. DropDownList의 스마트 태그의 데이터 소스 선택 링크를 클릭 하 고 라는 새로운 ObjectDataSource는 만들 `CategoriesDataSource`합니다.
 
 
-[![A새 ObjectDataSource 라는 CategoriesDataSource dd](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image7.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image6.png)
+[![CategoriesDataSource 라는 새 ObjectDataSource를 추가 합니다.](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image7.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image6.png)
 
 **그림 4**: 추가 명명 된 새 ObjectDataSource `CategoriesDataSource` ([큰 이미지를 보려면 클릭](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image8.png))
 
@@ -77,7 +77,7 @@ ms.locfileid: "59395552"
 호출 되도록 새 ObjectDataSource를 구성 합니다 `CategoriesBLL` 클래스의 `GetCategories()` 메서드. DropDownList에 어떤 데이터 원본 필드를 표시 해야 하 고는 지정 해야 하는 ObjectDataSource를 구성한 후 각 목록 항목에 대 한 값으로 연결 해야 하나입니다. 있어야 합니다 `CategoryName` 필드를 표시 및 `CategoryID` 각 목록 항목에 대 한 값으로.
 
 
-[![H값으로 사용 하 여 CategoryID와 CategoryName 필드를 표시 하는 평균 DropDownList](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image10.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image9.png)
+[![가 DropDownList 표시를 사용 하 여 CategoryID와 CategoryName 필드 값](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image10.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image9.png)
 
 **그림 5**: DropDownList을 표시 합니다 `CategoryName` 필드 및 사용 `CategoryID` 값으로 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image11.png))
 
@@ -85,7 +85,7 @@ ms.locfileid: "59395552"
 이 시점에서 레코드를 사용 하 여 채워지는 DropDownList 컨트롤이 있습니다를 `Categories` 테이블 (모두 약 6 초 후에 수행). 그림 6 브라우저를 통해 볼 때 지금 진행 상황을 보여줍니다.
 
 
-[![A 현재 범주를 나열 하는 드롭다운 목록](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image13.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image12.png)
+[![현재 범주를 나열 하는 드롭다운](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image13.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image12.png)
 
 **그림 6**: 드롭다운 목록이 현재 범주 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image14.png))
 
@@ -95,7 +95,7 @@ ms.locfileid: "59395552"
 마스터/세부 정보 보고서의 마지막 단계는 선택한 범주와 관련 된 제품을 나열 하는 것입니다. 이렇게 하려면 페이지로 DataList를 추가 하 고 라는 새로운 ObjectDataSource는 만들 `ProductsByCategoryDataSource`합니다. 가 합니다 `ProductsByCategoryDataSource` 컨트롤에서 해당 데이터를 검색 합니다 `ProductsBLL` 클래스의 `GetProductsByCategoryID(categoryID)` 메서드. 이 마스터/세부 정보 보고서 읽기 전용 이므로 INSERT, UPDATE 및 DELETE 탭 옵션 (없음)을 선택 합니다.
 
 
-[![SGetProductsByCategoryID(categoryID) 메서드 선택](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image16.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image15.png)
+[![GetProductsByCategoryID(categoryID) 메서드를 선택 합니다.](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image16.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image15.png)
 
 **그림 7**: 선택 된 `GetProductsByCategoryID(categoryID)` 메서드 ([큰 이미지를 보려면 클릭](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image17.png))
 
@@ -103,7 +103,7 @@ ms.locfileid: "59395552"
 다음을 클릭 한 후 ObjectDataSource 마법사 요청에 대 한 값의 출처를 `GetProductsByCategoryID(categoryID)` 메서드의 *`categoryID`* 매개 변수입니다. 선택한 값을 사용 하도록 `categories` DropDownList 항목으로 매개 변수 원본 컨트롤과를 ControlID `Categories`합니다.
 
 
-[![Set categoryID 범주 DropDownList의 값으로 매개 변수](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image19.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image18.png)
+[![CategoryID 매개 변수 범주 DropDownList의 값으로 설정](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image19.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image18.png)
 
 **그림 8**: 설정 합니다 *`categoryID`* 의 값으로 매개 변수를 `Categories` DropDownList ([전체 크기 이미지를 보려면 클릭](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image20.png))
 
@@ -119,12 +119,12 @@ Visual Studio에서 자동으로 데이터 소스 구성 마법사를 완료 하
 그림 9와 10 중인 마스터/세부 정보 보고서를 보여 줍니다.
 
 
-[![W첫 번째 방문 페이지, 음료 제품에 표시 되는 경우](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image22.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image21.png)
+[![먼저 페이지를 방문 하 고, 음료 제품 표시 됩니다.](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image22.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image21.png)
 
 **그림 9**: 먼저 페이지를 방문 하 고, 음료 제품 표시 됩니다 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image23.png))
 
 
-[![S선택 된 새 제품 (생성)는 자동으로 DataList 업데이트, 다시 게시](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image25.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image24.png)
+[![새 제품 (생성)을 선택 하면 자동으로 포스트백, DataList를 업데이트 하는 중](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image25.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image24.png)
 
 **그림 10**: 새 제품 (생성)을 선택 하면 자동으로 포스트백, DataList를 업데이트 하는 중 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image26.png))
 
@@ -156,7 +156,7 @@ DropDownList에 새 목록 항목을 추가 하려면 속성 창으로 이동 �
 값 선택 이유 `0` "-범주 선택-" 목록에 대 한 항목은에 있기 때문에 없는 범주 값을 사용 하 여 시스템 `0`, "-범주-" 선택 목록 항목이 선택 될 때 제품 레코드가 반환 될 따라서 합니다. 이 확인 하려면 잠시 브라우저를 통해 페이지를 방문 합니다. 와 같이 그림 13, 처음에 페이지를 보고 "-범주-" 선택 목록 항목을 선택 하면 제품이 표시 됩니다.
 
 
-[![W경우는](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image30.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image29.png)
+[![경우는](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image30.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image29.png)
 
 **그림 13**: 아니요 제품이 표시 되는 "-범주-" 선택 목록 항목을 선택 하면 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image31.png))
 

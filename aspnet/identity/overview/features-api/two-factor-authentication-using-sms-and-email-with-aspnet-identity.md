@@ -13,7 +13,7 @@ ms.openlocfilehash: c41fc06ad98665f7d48efde030c1341b06e49dd0
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59395293"
 ---
 # <a name="two-factorauthentication-using-sms-and-email-with-aspnet-identity"></a>ASP.NET Id와 SMS 및 전자 메일을 사용 하 여 2 단계 인증
@@ -282,6 +282,6 @@ QR 코드 생성기 같은 자세한 2FA 공급자를 추가 하거나 자신이
 - [Facebook, Twitter, LinkedIn 및 Google OAuth2 sign-on을 사용 하 여 MVC 5 앱](../../../mvc/overview/security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on.md) 또한 사용자가 테이블에 프로필 정보를 추가 하는 방법을 보여 줍니다.
 - [ASP.NET MVC 및 Id 2.0: 기본 사항을 이해](http://typecastexception.com/post/2014/04/20/ASPNET-MVC-and-Identity-20-Understanding-the-Basics.aspx) John Atten 여 합니다.
 - [계정 확인 및 ASP.NET Id와 암호 복구](account-confirmation-and-password-recovery-with-aspnet-identity.md)
-- [ASP.NET Identity 소개](../getting-started/introduction-to-aspnet-identity.md)
+- [ASP.NET ID 소개](../getting-started/introduction-to-aspnet-identity.md)
 - [ASP.NET Id 2.0.0의 RTM 발표](https://blogs.msdn.com/b/webdev/archive/2014/03/20/test-announcing-rtm-of-asp-net-identity-2-0-0.aspx) Pranav rastogi 합니다.
 - [ASP.NET Id 2.0: 계정 유효성 검사 및 2 단계 인증 설정](http://typecastexception.com/post/2014/04/20/ASPNET-Identity-20-Setting-Up-Account-Validation-and-Two-Factor-Authorization.aspx) John Atten 여 합니다.

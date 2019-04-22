@@ -12,7 +12,7 @@ ms.openlocfilehash: eea0761ac85693553808e581a8712c822d19c226
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59390482"
 ---
 # <a name="deploying-membership-databases-to-enterprise-environments"></a>엔터프라이즈 환경에 멤버 자격 데이터베이스 배포

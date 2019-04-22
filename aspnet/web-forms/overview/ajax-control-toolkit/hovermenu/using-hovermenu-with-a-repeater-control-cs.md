@@ -12,7 +12,7 @@ ms.openlocfilehash: 7f64e90eb2f8f87e2f382cb7897793e7071d305d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384502"
 ---
 # <a name="using-hovermenu-with-a-repeater-control-c"></a>반복기 컨트롤에 HoverMenu 사용(C#)
@@ -53,7 +53,7 @@ ASP.NET AJAX와 Control Toolkit의 기능을 활성화 하기 위해 합니다 `
 이제 오른쪽 팝업을 표시 하는 데이터 소스의 모든 항목 (`PopupPosition` 특성) 50 밀리초의 지연 후 (`PopDelay` 특성).
 
 
-[![T그 호버 메뉴 반복기의 각 항목 옆에 나타나는](using-hovermenu-with-a-repeater-control-cs/_static/image2.png)](using-hovermenu-with-a-repeater-control-cs/_static/image1.png)
+[![호버 메뉴 반복기의 각 항목 옆에 표시 됩니다.](using-hovermenu-with-a-repeater-control-cs/_static/image2.png)](using-hovermenu-with-a-repeater-control-cs/_static/image1.png)
 
 반복기의 각 항목 옆에 표시 되는 메뉴 ([클릭 하 여 큰 이미지 보기](using-hovermenu-with-a-repeater-control-cs/_static/image3.png))
 

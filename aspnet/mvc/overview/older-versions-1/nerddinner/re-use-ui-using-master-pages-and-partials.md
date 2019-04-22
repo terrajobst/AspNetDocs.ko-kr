@@ -12,7 +12,7 @@ ms.openlocfilehash: e50fb6edb175bd1651212ae6b3daf7b1bf605068
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59390144"
 ---
 # <a name="re-use-ui-using-master-pages-and-partials"></a>마스터 페이지 및 부분을 사용하여 UI 재사용

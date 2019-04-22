@@ -12,7 +12,7 @@ ms.openlocfilehash: 10ee617ff5653bcc478364b7bea75bac4f4770f6
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59388857"
 ---
 # <a name="microsoft-ajax-content-delivery-network"></a>Microsoft Ajax Content Delivery Network
@@ -91,7 +91,7 @@ ms.locfileid: "59388857"
     - [Microsoft Ajax CDN의 jQuery Mobile 1.0](jquery-mobile/cdnjquerymobile10.md)
     - [Microsoft Ajax CDN의 jQuery Mobile 1.0 RC2](jquery-mobile/cdnjquerymobile10rc2.md)
     - [Microsoft Ajax CDN의 jQuery Mobile 1.0 RC1](jquery-mobile/cdnjquerymobile10rc1.md)
-    - [Microsoft Ajax CDN의 jQuery Mobile 1.0 베타 3](jquery-mobile/cdnjquerymobile10b3.md)
+    - [Microsoft Ajax CDN의 jQuery Mobile 1.0 Beta 3](jquery-mobile/cdnjquerymobile10b3.md)
     - [Microsoft Ajax CDN의 jQuery Mobile 1.4.5](jquery-mobile/cdnjquerymobile145.md)
 - [jQuery 템플릿](jquery-templates/index.md)
 

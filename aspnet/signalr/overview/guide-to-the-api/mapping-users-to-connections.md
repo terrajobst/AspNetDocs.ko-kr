@@ -12,7 +12,7 @@ ms.openlocfilehash: d55d40848e1e9d40570850c3552b225235c5e814
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59389793"
 ---
 # <a name="mapping-signalr-users-to-connections"></a>SignalR 사용자를 연결에 매핑

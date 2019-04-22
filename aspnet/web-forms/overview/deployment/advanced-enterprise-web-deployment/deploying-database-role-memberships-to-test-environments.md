@@ -12,7 +12,7 @@ ms.openlocfilehash: fd0914ed62a280fea290b9f1b150fc25c8ed6d40
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59385334"
 ---
 # <a name="deploying-database-role-memberships-to-test-environments"></a>테스트 환경에 데이터베이스 역할 멤버 자격 배포

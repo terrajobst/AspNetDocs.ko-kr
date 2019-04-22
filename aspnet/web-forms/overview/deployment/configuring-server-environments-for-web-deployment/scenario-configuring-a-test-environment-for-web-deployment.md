@@ -12,7 +12,7 @@ ms.openlocfilehash: 7ea8c74a6621200e3a0d52a7c37fed6b5eeff4e5
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59391626"
 ---
 # <a name="scenario-configuring-a-test-environment-for-web-deployment"></a>시나리오: 웹 배포용 테스트 환경 구성

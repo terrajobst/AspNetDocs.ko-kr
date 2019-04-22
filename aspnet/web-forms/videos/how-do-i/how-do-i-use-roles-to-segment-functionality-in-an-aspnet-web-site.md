@@ -12,7 +12,7 @@ ms.openlocfilehash: 9ecb64a52fd93498df1972846e4d7dfc21503cab
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59395773"
 ---
 # <a name="how-do-i-use-roles-to-segment-functionality-in-an-aspnet-web-site"></a>[어떻게 할까요?] 역할을 사용 하 여 ASP.NET 웹 사이트에서 기능 분할

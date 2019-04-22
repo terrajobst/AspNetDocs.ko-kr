@@ -12,7 +12,7 @@ ms.openlocfilehash: f1875ae95d79ec2a6762a547aabfbd03e0930b2c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59386504"
 ---
 # <a name="using-modalpopup-with-a-repeater-control-vb"></a>반복기 컨트롤에 ModalPopup 사용(VB)
@@ -49,7 +49,7 @@ AJAX Control Toolkit의 ModalPopup 컨트롤 클라이언트 쪽 의미를 사�
 그런 다음 데이터 원본에 있는 모든 항목은 모달 팝업을 트리거하는 옆에 있는 단추를 사용 하 여 표시 됩니다.
 
 
-[![T모든 데이터 원본 항목에 대 한 그 모달 팝업을 트리거할 수 있습니다](using-modalpopup-with-a-repeater-control-vb/_static/image2.png)](using-modalpopup-with-a-repeater-control-vb/_static/image1.png)
+[![모든 데이터 원본 항목에 대 한 모달 팝업을 트리거할 수 있습니다.](using-modalpopup-with-a-repeater-control-vb/_static/image2.png)](using-modalpopup-with-a-repeater-control-vb/_static/image1.png)
 
 모든 데이터 원본 항목에 대 한 모달 팝업을 트리거할 수 있습니다 ([클릭 하 여 큰 이미지 보기](using-modalpopup-with-a-repeater-control-vb/_static/image3.png))
 

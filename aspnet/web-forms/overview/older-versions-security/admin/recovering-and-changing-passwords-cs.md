@@ -12,7 +12,7 @@ ms.openlocfilehash: e3e097663568b21ee3f84c7006a0bd89718ac6c2
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59380283"
 ---
 # <a name="recovering-and-changing-passwords-c"></a>암호 복구 및 변경(C#)
@@ -63,7 +63,7 @@ PasswordRecovery 컨트롤이 세 가지 뷰가 이루어져 있습니다.
 그림 1에서는 어떻게 PasswordRecovery의 인터페이스 및 동작의 영향을 받습니다 멤버 자격 구성을 보여 줍니다.
 
 
-[![TRequiresQuestionAndAnswer, EnablePasswordRetrieval, 그 EnablePasswordReset PasswordRecovery 컨트롤의 모양 및 동작에 영향을 줄](recovering-and-changing-passwords-cs/_static/image2.png)](recovering-and-changing-passwords-cs/_static/image1.png)
+[![RequiresQuestionAndAnswer, EnablePasswordRetrieval, 및 EnablePasswordReset PasswordRecovery 컨트롤의 모양 및 동작에 영향을](recovering-and-changing-passwords-cs/_static/image2.png)](recovering-and-changing-passwords-cs/_static/image1.png)
 
 **그림 1**: 합니다 `RequiresQuestionAndAnswer`, `EnablePasswordRetrieval`, 및 `EnablePasswordReset` PasswordRecovery 컨트롤의 모양 및 동작에 영향을 줄 ([클릭 하 여 큰 이미지 보기](recovering-and-changing-passwords-cs/_static/image3.png))
 
@@ -93,7 +93,7 @@ SMTP 서버에서 네트워크를 사용 하는 것 외에도 보낼 전자 메�
 SMTP 설정을 구성한 경우, 참조는 `RecoverPassword.aspx` 브라우저를 통해 페이지입니다. 먼저 사용자 저장소에 존재 하지 않는 사용자 이름을 입력 하십시오. 그림 2에서 알 수 있듯이, PasswordRecovery 컨트롤 사용자 정보를 액세스할 수 있는지를 나타내는 메시지를 표시 합니다. 컨트롤을 통해 메시지의 텍스트를 사용자 지정할 수 있습니다 [ `UserNameFailureText` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.passwordrecovery.usernamefailuretext.aspx)합니다.
 
 
-[![A잘못 된 사용자 이름을 입력 하는 경우 n 오류 메시지가 표시 됩니다](recovering-and-changing-passwords-cs/_static/image5.png)](recovering-and-changing-passwords-cs/_static/image4.png)
+[![잘못 된 사용자 이름을 입력 한 경우 오류 메시지가 표시 됩니다.](recovering-and-changing-passwords-cs/_static/image5.png)](recovering-and-changing-passwords-cs/_static/image4.png)
 
 **그림 2**: 잘못 된 사용자 이름을 입력 한 경우 오류 메시지가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](recovering-and-changing-passwords-cs/_static/image6.png))
 
@@ -101,7 +101,7 @@ SMTP 설정을 구성한 경우, 참조는 `RecoverPassword.aspx` 브라우저�
 이제 사용자 이름을 입력 합니다. 액세스할 수 있으며 해당 보안 대답 하는 전자 메일 주소를 사용 하 여 시스템에서 계정의 사용자 이름을 알고 사용 합니다. 사용자 이름을 입력 하 고 제출을 클릭 하면, PasswordRecovery 컨트롤의 질문 뷰를 표시 합니다. 으로 사용자 이름 뷰를 사용 하 여 입력 하는 경우 잘못 된 응답 PasswordRecovery 컨트롤 표시 됩니다 (그림 3 참조)는 오류 메시지. 사용 된 [ `QuestionFailureText` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.passwordrecovery.questionfailuretext.aspx) 이 오류 메시지를 사용자 지정할 수 있습니다.
 
 
-[![A사용자가 잘못 된 보안 대답을 입력 하는 경우 n 오류 메시지가 표시 됩니다](recovering-and-changing-passwords-cs/_static/image8.png)](recovering-and-changing-passwords-cs/_static/image7.png)
+[![사용자가 잘못 된 보안 대답을 입력 하는 경우 오류 메시지가 표시 됩니다.](recovering-and-changing-passwords-cs/_static/image8.png)](recovering-and-changing-passwords-cs/_static/image7.png)
 
 **그림 3**: 사용자가 잘못 된 보안 대답을 입력 하는 경우 오류 메시지가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](recovering-and-changing-passwords-cs/_static/image9.png))
 
@@ -109,7 +109,7 @@ SMTP 설정을 구성한 경우, 참조는 `RecoverPassword.aspx` 브라우저�
 마지막으로 올바른 보안 대답을 입력 하 고 제출을 클릭 합니다. 내부적으로 PasswordRecovery 컨트롤 임의의 암호를 생성, 사용자 계정에 할당, 새 암호의 사용자에 게 알리는 전자 메일을 보냅니다 (그림 4 참조) 한 후 성공 뷰에 표시 합니다.
 
 
-[![T사용자가 보낼 His 새 암호를 사용 하 여 전자 메일](recovering-and-changing-passwords-cs/_static/image11.png)](recovering-and-changing-passwords-cs/_static/image10.png)
+[![His 새 암호를 사용 하 여 전자 메일을 사용자에 게 보내기](recovering-and-changing-passwords-cs/_static/image11.png)](recovering-and-changing-passwords-cs/_static/image10.png)
 
 **그림 4**: 사용자는 His 새 암호를 사용 하 여 전자 메일이 전송 됩니다 ([클릭 하 여 큰 이미지 보기](recovering-and-changing-passwords-cs/_static/image12.png))
 
@@ -145,7 +145,7 @@ PasswordRecovery 컨트롤에서 보낸 기본 전자 메일은 대신 두기 (�
 이러한 변경한 후 다시 방문은 `RecoverPassword.aspx` 페이지 및 사용자 이름 및 보안 대답을 입력 합니다. 받게 그림 5의 것 처럼 보이는 전자 메일을 해야 합니다. `webmaster@example.com` 및 참조 하 고 제목 및 본문 업데이트 되었습니다.
 
 
-[![T그 제목, 본문 및 참조 목록 업데이트 되었습니다](recovering-and-changing-passwords-cs/_static/image14.png)](recovering-and-changing-passwords-cs/_static/image13.png)
+[![제목, 본문 및 참조 목록 업데이트 되었습니다.](recovering-and-changing-passwords-cs/_static/image14.png)](recovering-and-changing-passwords-cs/_static/image13.png)
 
 **그림 5**: 제목, 본문 및 참조 목록 업데이트 되었습니다 ([클릭 하 여 큰 이미지 보기](recovering-and-changing-passwords-cs/_static/image15.png))
 
@@ -197,7 +197,7 @@ HTML 형식의 전자 메일을 보내도록 설정할 [ `IsBodyHtml` ](https://
 엽니다는 `ChangePassword.aspx` 페이지 및 페이지 이름을 ChangePassword 컨트롤을 추가 `ChangePwd`합니다. 이 시점에서 디자인 보기 표시 암호 변경 (그림 6 참조)를 확인 합니다. 같은 PasswordRecovery 컨트롤과 컨트롤의 스마트 태그를 통해 뷰 간을 전환할 수 있습니다. 또한 이러한 보기의이 모양을 분류 된 스타일 속성을 통해 또는 서식 파일을 변환 하 여 사용자 지정할 수 있습니다.
 
 
-[![Add는 ChangePassword 컨트롤을 페이지](recovering-and-changing-passwords-cs/_static/image17.png)](recovering-and-changing-passwords-cs/_static/image16.png)
+[![ChangePassword 컨트롤을 페이지 추가](recovering-and-changing-passwords-cs/_static/image17.png)](recovering-and-changing-passwords-cs/_static/image16.png)
 
 **그림 6**: ChangePassword 컨트롤을 페이지 추가 ([클릭 하 여 큰 이미지 보기](recovering-and-changing-passwords-cs/_static/image18.png))
 
@@ -215,7 +215,7 @@ ChangePassword 컨트롤에 다른 사용자의 암호를 업데이트 하는 �
 방문을 `ChangePassword.aspx` 브라우저를 통해 페이지 및 암호를 변경 합니다. 암호 길이, 멤버 자격 구성에 지정 하는 영숫자가 아닌 문자 요구 사항을 충족 하지 않는 새 암호를 입력 하는 경우 오류 메시지가 표시 됩니다 (그림 7 참조).
 
 
-[![Add는 ChangePassword 컨트롤을 페이지](recovering-and-changing-passwords-cs/_static/image20.png)](recovering-and-changing-passwords-cs/_static/image19.png)
+[![ChangePassword 컨트롤을 페이지 추가](recovering-and-changing-passwords-cs/_static/image20.png)](recovering-and-changing-passwords-cs/_static/image19.png)
 
 **그림 7**: ChangePassword 컨트롤을 페이지 추가 ([클릭 하 여 큰 이미지 보기](recovering-and-changing-passwords-cs/_static/image21.png))
 
@@ -235,7 +235,7 @@ ChangePassword 컨트롤의 다음으로 설정 `MailDefinition` 속성의 `Body
 다음과 같이 변경한 후 페이지를 다시 방문 하 고 암호를 다시 변경 합니다. 이 이때 ChangePassword 컨트롤 사용자 지정, HTML 형식의 전자 메일을 파일에 대 한 사용자의 전자 메일 주소로 보냅니다 (그림 8 참조).
 
 
-[![An 전자 메일 메시지에 사용자는 해당 암호가 변경 된 알립니다](recovering-and-changing-passwords-cs/_static/image23.png)](recovering-and-changing-passwords-cs/_static/image22.png)
+[![사용자는 해당 암호가 변경 된 알립니다 전자 메일 메시지](recovering-and-changing-passwords-cs/_static/image23.png)](recovering-and-changing-passwords-cs/_static/image22.png)
 
 **그림 8**: 사용자는 해당 암호를 변경한 전자 메일 메시지가 나타납니다 ([클릭 하 여 큰 이미지 보기](recovering-and-changing-passwords-cs/_static/image24.png))
 
@@ -273,7 +273,7 @@ ChangePassword 컨트롤의 다음으로 설정 `MailDefinition` 속성의 `Body
 새 암호를 입력 합니다. 두 번째 텍스트 상자에 확인 하 고 사용자 [업데이트] 단추를 클릭 한 후 다시 게시 근거가 및 `aspnet_Membership_SetPassword` 사용자의 암호 업데이트 저장된 프로시저를 호출 합니다. 코드에 더 익숙해집니다 및 암호를 변경한 사용자에 게 전자 메일 보내기를 포함 하는 기능을 확장 해 보십시오.이 기능에 관심이 있는 독자를 이러한 것이 좋습니다.
 
 
-[![An 관리자가 사용자의 암호를 변경할](recovering-and-changing-passwords-cs/_static/image26.png)](recovering-and-changing-passwords-cs/_static/image25.png)
+[![관리자는 사용자의 암호를 변경할 수 있습니다.](recovering-and-changing-passwords-cs/_static/image26.png)](recovering-and-changing-passwords-cs/_static/image25.png)
 
 **그림 9**: 관리자 사용자의 암호를 변경할 수 있습니다 ([클릭 하 여 큰 이미지 보기](recovering-and-changing-passwords-cs/_static/image27.png))
 
@@ -297,7 +297,7 @@ ASP.NET은 사용자가 자신의 암호를 관리 하는 데 두 가지 컨트�
 - [ChangePassword 컨트롤 빠른 시작](https://quickstarts.asp.net/QuickStartv20/aspnet/doc/ctrlref/login/changepassword.aspx)
 - [PasswordRecovery 제어 빠른 시작](https://quickstarts.asp.net/QuickStartv20/aspnet/doc/ctrlref/login/passwordrecovery.aspx)
 - [ASP.NET에서 전자 메일 보내기](http://aspnet.4guysfromrolla.com/articles/072606-1.aspx)
-- [`System.Net.Mail` FAQs](http://www.systemnetmail.com/)
+- [`System.Net.Mail` Faq](http://www.systemnetmail.com/)
 
 ### <a name="about-the-author"></a>저자 소개
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 1b9c7bacb37cc4487fb3af392a6048021679718d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59396735"
 ---
 # <a name="web-development-best-practices-building-real-world-cloud-apps-with-azure"></a>웹 개발 모범 사례 (Azure 사용 하 여 빌드 실제 클라우드 앱)

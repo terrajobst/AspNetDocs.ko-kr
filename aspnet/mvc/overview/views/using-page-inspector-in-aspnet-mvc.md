@@ -12,7 +12,7 @@ ms.openlocfilehash: ef0ae42e1c6114849a311164eac242db6dab2b1d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59385802"
 ---
 # <a name="using-page-inspector-in-aspnet-mvc"></a>ASP.NET MVC에서 페이지 검사기 사용
@@ -27,7 +27,7 @@ Tim Ammann 여
 > 
 > 이 자습서에는 다음 섹션이 있습니다.
 > 
-> - [전제 조건](#_1_prerequisites)
+> - [필수 조건](#_1_prerequisites)
 > - [웹 응용 프로그램 만들기](#_2_creating_a)
 > - [뷰를 탐색 페이지 검사기 사용](#_3_using_page)
 > - [검사 모드를 사용 하도록 설정](#_4_inspection_mode)

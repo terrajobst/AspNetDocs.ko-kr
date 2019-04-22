@@ -12,7 +12,7 @@ ms.openlocfilehash: 0359af8d5558bdaa6a73be9774fec2284ab87c73
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384775"
 ---
 # <a name="examining-the-details-and-delete-methods"></a>세부 정보 및 삭제 메서드 검사

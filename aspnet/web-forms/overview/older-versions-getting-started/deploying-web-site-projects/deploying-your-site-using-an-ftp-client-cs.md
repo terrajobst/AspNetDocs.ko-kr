@@ -12,7 +12,7 @@ ms.openlocfilehash: 1ef796dc61cc65b6ca5205a5f8baf4dcc4ba05ae
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59389169"
 ---
 # <a name="deploying-your-site-using-an-ftp-client-c"></a>FTP 클라이언트를 사용하여 사이트 배포(C#)
@@ -69,7 +69,7 @@ ms.locfileid: "59389169"
 > 에 됩니다 프로덕션 서버에서 소스 코드 파일에 피해를 주지 무시 됩니다. ASP.NET 소스 코드 파일을 프로덕션 서버에 있는 경우에 없는 웹 사이트 방문자에 액세스할 수 있도록 기본적으로 소스 코드 파일에 HTTP 요청을 금지 합니다. (즉, 사용자가 방문 하려고 하는 경우 `http://www.yoursite.com/Default.aspx.cs` 설명 하는 오류 페이지가 이러한 종류의 파일-생깁니다 `.cs` 파일을 사용할 수 없습니다.)
 
 
-[![U웹 서버는 웹 호스트 공급자에 바탕 화면에서 필요한 파일을 복사 하는 FTP 클라이언트 se](deploying-your-site-using-an-ftp-client-cs/_static/image2.png)](deploying-your-site-using-an-ftp-client-cs/_static/image1.png)
+[![FTP 클라이언트를 사용 하 여 웹 서버는 웹 호스트 공급자에 바탕 화면에서 필요한 파일을 복사 하려면](deploying-your-site-using-an-ftp-client-cs/_static/image2.png)](deploying-your-site-using-an-ftp-client-cs/_static/image1.png)
 
 **그림 1**: 웹 서버는 웹 호스트 공급자에 바탕 화면에서 필요한 파일을 복사 하는 FTP 클라이언트를 사용 하 여 ([클릭 하 여 큰 이미지 보기](deploying-your-site-using-an-ftp-client-cs/_static/image3.png))
 
@@ -82,7 +82,7 @@ ms.locfileid: "59389169"
 > 잠시가 되도록 응용 프로그램을 볼 때 오류가 발생 하는 경우 올바른 파일 집합이 배포 했습니다. 다음으로, 문제에 대 한 단서를 표시 하는 경우 오류 메시지를 확인 합니다. 다음 웹 호스트 회사의 헬프 데스크를 설정 하거나 적절 한 포럼에 질문을 게시 합니다 [ASP.NET 포럼](https://forums.asp.net/)합니다.
 
 
-[![T그 책 검토 사이트는 인터넷에 연결 된 모든 사용자에 게 이제 액세스할 수](deploying-your-site-using-an-ftp-client-cs/_static/image5.png)](deploying-your-site-using-an-ftp-client-cs/_static/image4.png)
+[![인터넷에 연결 된 모든 사용자에 게 책 검토 사이트를 이제 액세스할 수](deploying-your-site-using-an-ftp-client-cs/_static/image5.png)](deploying-your-site-using-an-ftp-client-cs/_static/image4.png)
 
 **그림 2**: 인터넷에 연결 된 모든 사용자에 게 책 검토 사이트는 이제 액세스할 수 있습니다 ([클릭 하 여 큰 이미지 보기](deploying-your-site-using-an-ftp-client-cs/_static/image6.png))
 
@@ -124,7 +124,7 @@ ms.locfileid: "59389169"
 그림 3에서는 필요한 파일을 복사한 후 FileZilla를 보여 줍니다. ASP.NET 소스와 같은 코드 파일을 볼 수 있듯이 `About.aspx.cs`, 코드 파일에서 자동을 사용 하는 경우 배포 해야 하기 때문에 로컬 컴퓨터 (개발 환경)와 웹 호스트 공급자 (프로덕션 환경)에 컴파일입니다.
 
 
-[![U웹 서버는 웹 호스트 공급자에 바탕 화면에서 필요한 파일을 복사 하는 FTP 클라이언트 se](deploying-your-site-using-an-ftp-client-cs/_static/image8.png)](deploying-your-site-using-an-ftp-client-cs/_static/image7.png)
+[![FTP 클라이언트를 사용 하 여 웹 서버는 웹 호스트 공급자에 바탕 화면에서 필요한 파일을 복사 하려면](deploying-your-site-using-an-ftp-client-cs/_static/image8.png)](deploying-your-site-using-an-ftp-client-cs/_static/image7.png)
 
 **그림 3**: 웹 서버는 웹 호스트 공급자에 바탕 화면에서 필요한 파일을 복사 하는 FTP 클라이언트를 사용 하 여 ([클릭 하 여 큰 이미지 보기](deploying-your-site-using-an-ftp-client-cs/_static/image9.png))
 

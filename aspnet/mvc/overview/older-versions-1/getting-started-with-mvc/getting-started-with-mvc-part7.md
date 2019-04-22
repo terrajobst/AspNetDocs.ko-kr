@@ -12,7 +12,7 @@ ms.openlocfilehash: 3db6947f36eb51b41d929f8c7d8835a95db8ea75
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59392354"
 ---
 # <a name="adding-validation-to-the-model"></a>모델에 유효성 검사 추가
@@ -61,11 +61,11 @@ JavaScript 사용 하 여 일부 클라이언트 쪽 유효성 검사를 사용 
 
 IDE 내에서 표시 된 코드는 다음과 같습니다.
 
-[![Movies-Microsoft Visual Web Developer 2010 Express (10)](getting-started-with-mvc-part7/_static/image4.png)](getting-started-with-mvc-part7/_static/image3.png)
+[![Movies - Microsoft Visual Web Developer 2010 Express (10)](getting-started-with-mvc-part7/_static/image4.png)](getting-started-with-mvc-part7/_static/image3.png)
 
 응용 프로그램을 실행 하 고 /Movies/Create를 다시 방문 하 고 모든 데이터를 입력 하지 않고 만들기를 클릭 합니다. 오류 메시지를 즉시 표시 데이터를 보내는 연관 플래시 페이지 없이 거슬러 올라갑니다 서버. 이 ASP.NET MVC는 이제 유효성 검사 모두에 있는 입력 (JavaScript를 사용 하 여) 때문에 서버에 있습니다.
 
-[![Create - Windows Internet Explorer](getting-started-with-mvc-part7/_static/image6.png)](getting-started-with-mvc-part7/_static/image5.png)
+[![만들기-Windows Internet Explorer](getting-started-with-mvc-part7/_static/image6.png)](getting-started-with-mvc-part7/_static/image5.png)
 
 올바른 상태입니다! 데이터베이스에 추가 열이 하나를 지금 추가 하겠습니다.
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 34a182278cfa57369643ab151492532bc92bd623
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59393498"
 ---
 # <a name="creating-a-customized-sorting-user-interface-c"></a>사용자 지정된 정렬 사용자 인터페이스 만들기(C#)
@@ -31,7 +31,7 @@ ms.locfileid: "59393498"
 정렬 된 그룹 간의 경계를 강조 표시를 위해 많은 웹 사이트는 이러한 그룹 간에 구분 기호를 추가 하는 사용자 인터페이스를 사용 합니다. 그림 1에 나와 있는 것 처럼 구분 기호 선택 하면 보다 신속 하 게 특정 그룹을 찾 및 해당 경계를 식별할 뿐만 아니라 데이터에 존재 하는 고유한 그룹을 확인 합니다.
 
 
-[![E범주 그룹 대 한 ach 명확 하 게 식별 됩니다](creating-a-customized-sorting-user-interface-cs/_static/image2.png)](creating-a-customized-sorting-user-interface-cs/_static/image1.png)
+[![각 범주 그룹은 명확 하 게 식별](creating-a-customized-sorting-user-interface-cs/_static/image2.png)](creating-a-customized-sorting-user-interface-cs/_static/image1.png)
 
 **그림 1**: 각 범주 그룹은 명확 하 게 식별 됩니다 ([클릭 하 여 큰 이미지 보기](creating-a-customized-sorting-user-interface-cs/_static/image3.png))
 
@@ -50,7 +50,7 @@ GridView 향상 된 정렬 인터페이스를 제공 하는 표준, 정렬 가�
 브라우저에서 진행 상황을 지금 보려면 잠시 시간이 소요 됩니다. 그림 2에서는 사전순으로 범주 데이터를 정렬할 때 정렬 가능한 GridView를 보여 줍니다.
 
 
-[![T범주별으로 정렬 되 그 정렬 가능한 GridView의 데이터](creating-a-customized-sorting-user-interface-cs/_static/image5.png)](creating-a-customized-sorting-user-interface-cs/_static/image4.png)
+[![정렬 가능한 GridView의 데이터 범주별 정렬](creating-a-customized-sorting-user-interface-cs/_static/image5.png)](creating-a-customized-sorting-user-interface-cs/_static/image4.png)
 
 **그림 2**: 데이터가 범주별으로 정렬 되는 정렬 가능한 GridView가 ([클릭 하 여 큰 이미지 보기](creating-a-customized-sorting-user-interface-cs/_static/image6.png))
 
@@ -100,7 +100,7 @@ GridView에 바인딩하기 전에 데이터를 메시지, 아닌 구분 기호 
 각 정렬 그룹 간에 행 구분 기호를 추가 하려면 생성 된 후이 컨트롤 계층 구조를 직접 조작할 수 했습니다. GridView가의 컨트롤 계층 구조 페이지를 렌더링 하는 시간을 기준으로 마지막으로 생성 되어 있는지 확신할 수 있습니다. 따라서이 방법은 재정의 된 `Page` s 클래스 `Render` 메서드, 이때 GridView가 최종 컨트롤 계층 구조는 필요한 구분 기호 행을 포함 하도록 업데이트 됩니다. 그림 4에서는이 프로세스를 보여 줍니다.
 
 
-[![AGridView가의 컨트롤 계층 구조를 조작 하는 또 다른 방법은 n](creating-a-customized-sorting-user-interface-cs/_static/image9.png)](creating-a-customized-sorting-user-interface-cs/_static/image8.png)
+[![또 다른 방법은 GridView가의 컨트롤 계층 구조를 조작합니다.](creating-a-customized-sorting-user-interface-cs/_static/image9.png)](creating-a-customized-sorting-user-interface-cs/_static/image8.png)
 
 **그림 4**: 또 다른 방법은 조작 GridView가의 컨트롤 계층 구조 ([클릭 하 여 큰 이미지 보기](creating-a-customized-sorting-user-interface-cs/_static/image10.png))
 
@@ -156,12 +156,12 @@ GridView에 아직 되도록 정렬 GridView의 `SortExpression` 속성이 설�
 현재 코드를 사용 하 여 정렬 인터페이스 정렬 그룹 헤더 추가 모든 BoundField에서 정렬 하는 경우 (공급 업체에서 정렬할 때 스크린 샷을 보여 주는 그림 5 참조). 그러나 다른 필드 형식 (예: CheckBoxField 또는 TemplateField)에서 정렬할 때 정렬 그룹 헤더 (그림 6 참조)를 찾을 수를 반환할 대상이 없습니다 됩니다.
 
 
-[![T그 정렬 인터페이스 포함 정렬 그룹 머리글 BoundFields 정렬할 경우](creating-a-customized-sorting-user-interface-cs/_static/image12.png)](creating-a-customized-sorting-user-interface-cs/_static/image11.png)
+[![정렬 인터페이스 BoundFields에서 정렬할 때 정렬 그룹 머리글 포함](creating-a-customized-sorting-user-interface-cs/_static/image12.png)](creating-a-customized-sorting-user-interface-cs/_static/image11.png)
 
 **그림 5**: 정렬 인터페이스 포함 정렬 그룹 헤더 때 기준으로 정렬 BoundFields ([클릭 하 여 큰 이미지 보기](creating-a-customized-sorting-user-interface-cs/_static/image13.png))
 
 
-[![T그 정렬 그룹 헤더는 누락 된 경우 정렬 된 CheckBoxField](creating-a-customized-sorting-user-interface-cs/_static/image15.png)](creating-a-customized-sorting-user-interface-cs/_static/image14.png)
+[![누락 된 경우 정렬 된 CheckBoxField 정렬 그룹 헤더는](creating-a-customized-sorting-user-interface-cs/_static/image15.png)](creating-a-customized-sorting-user-interface-cs/_static/image14.png)
 
 **그림 6**: 정렬 그룹 머리글은 누락 된 경우 정렬 된 CheckBoxField ([클릭 하 여 큰 이미지 보기](creating-a-customized-sorting-user-interface-cs/_static/image16.png))
 
@@ -178,7 +178,7 @@ BoundFields 이외의 형식 필드를 처리 하려면 코드를 보강 해야 
 위의 코드를 추가 정렬 그룹 머리글이 있는 이제 지원 되지 않는 CheckBoxField에서 정렬 하는 경우 (그림 7 참조).
 
 
-[![T그 정렬 그룹 헤더는 이제 있는 경우 정렬 된 CheckBoxField](creating-a-customized-sorting-user-interface-cs/_static/image18.png)](creating-a-customized-sorting-user-interface-cs/_static/image17.png)
+[![정렬 그룹 헤더는 이제 있는 경우 정렬 된 CheckBoxField](creating-a-customized-sorting-user-interface-cs/_static/image18.png)](creating-a-customized-sorting-user-interface-cs/_static/image17.png)
 
 **그림 7**: 정렬 그룹 헤더는 이제 있는 경우 정렬 된 CheckBoxField ([클릭 하 여 큰 이미지 보기](creating-a-customized-sorting-user-interface-cs/_static/image19.png))
 

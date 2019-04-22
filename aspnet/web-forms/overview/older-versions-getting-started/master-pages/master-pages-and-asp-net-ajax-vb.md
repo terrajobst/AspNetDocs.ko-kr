@@ -12,7 +12,7 @@ ms.openlocfilehash: 5a968bbbe5bdb6f8daad2c11c18c2b704c3bed8b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59385503"
 ---
 # <a name="master-pages-and-aspnet-ajax-vb"></a>마스터 페이지 및 ASP.NET AJAX(VB)
@@ -71,7 +71,7 @@ ASP.NET AJAX 프레임 워크를 사용 하는 모든 웹 페이지에 ScriptMan
 변경 페이지에 ScriptManager에 추가한 후 해당 `ID` 에서 `ScriptManager1` 에 `MyManager`입니다.
 
 
-[![A마스터 페이지에 ScriptManager dd](master-pages-and-asp-net-ajax-vb/_static/image2.png)](master-pages-and-asp-net-ajax-vb/_static/image1.png)
+[![마스터 페이지에 ScriptManager를 추가](master-pages-and-asp-net-ajax-vb/_static/image2.png)](master-pages-and-asp-net-ajax-vb/_static/image1.png)
 
 **그림 01**: 마스터 페이지에 ScriptManager를 추가 ([클릭 하 여 큰 이미지 보기](master-pages-and-asp-net-ajax-vb/_static/image3.png))
 
@@ -83,7 +83,7 @@ ASP.NET AJAX 프레임 워크를 사용 하는 모든 웹 페이지에 ScriptMan
 명명 된 루트 디렉터리에 새 페이지를 만들어 시작 `ShowRandomProduct.aspx`합니다. 이 새 페이지를 바인딩할 것을 잊지 마세요는 `Site.master` 마스터 페이지입니다.
 
 
-[![Add 웹 사이트에 새 ASP.NET 페이지](master-pages-and-asp-net-ajax-vb/_static/image5.png)](master-pages-and-asp-net-ajax-vb/_static/image4.png)
+[![웹 사이트에 새 ASP.NET 페이지를 추가 합니다.](master-pages-and-asp-net-ajax-vb/_static/image5.png)](master-pages-and-asp-net-ajax-vb/_static/image4.png)
 
 **그림 02**: 웹 사이트에 새 ASP.NET 페이지를 추가 ([클릭 하 여 큰 이미지 보기](master-pages-and-asp-net-ajax-vb/_static/image6.png))
 
@@ -104,7 +104,7 @@ ASP.NET AJAX 프레임 워크를 사용 하는 모든 웹 페이지에 ScriptMan
 우리의 첫 번째 작업 UpdatePanel 내에서 임의로 선택한 제품에 대 한 정보를 표시 하는 것입니다. DetailsView 컨트롤을 UpdatePanel 드래그 하 여 시작 합니다. DetailsView 컨트롤의 `ID` 속성을 `ProductInfo` 지울 및 해당 `Height` 고 `Width` 속성입니다. DetailsView의 스마트 태그를 확장 하 고 데이터 소스 선택 드롭다운 목록에서 선택 DetailsView 라는 새 SqlDataSource 컨트롤을 바인딩할 `RandomProductDataSource`합니다.
 
 
-[![B새 SqlDataSource 컨트롤에 DetailsView 찾기](master-pages-and-asp-net-ajax-vb/_static/image8.png)](master-pages-and-asp-net-ajax-vb/_static/image7.png)
+[![DetailsView 새 SqlDataSource 컨트롤에 바인딩](master-pages-and-asp-net-ajax-vb/_static/image8.png)](master-pages-and-asp-net-ajax-vb/_static/image7.png)
 
 **그림 03**: DetailsView 새 SqlDataSource 컨트롤을 바인딩할 ([클릭 하 여 큰 이미지 보기](master-pages-and-asp-net-ajax-vb/_static/image9.png))
 
@@ -117,7 +117,7 @@ SqlDataSource 컨트롤을 통해 Northwind 데이터베이스에 연결 하려�
 합니다 `TOP 1` 키워드는 `SELECT` 쿼리에서 반환 된 첫 번째 레코드를 반환 합니다. `NEWID()` 함수는 새 전역 고유 식별자 값 (GUID)를 생성 하 고 사용할 수 있습니다는 `ORDER BY` 절을 임의의 순서로 테이블의 레코드를 반환 합니다.
 
 
-[![C단일 임의로 선택한 레코드를 반환할 SqlDataSource onfigure](master-pages-and-asp-net-ajax-vb/_static/image11.png)](master-pages-and-asp-net-ajax-vb/_static/image10.png)
+[![단일, 임의로 선택 된 레코드를 반환할 수 SqlDataSource를 구성 합니다.](master-pages-and-asp-net-ajax-vb/_static/image11.png)](master-pages-and-asp-net-ajax-vb/_static/image10.png)
 
 **그림 04**: 단일 임의로 선택한 레코드를 반환할 SqlDataSource 구성 ([클릭 하 여 큰 이미지 보기](master-pages-and-asp-net-ajax-vb/_static/image12.png))
 
@@ -130,7 +130,7 @@ SqlDataSource 컨트롤을 통해 Northwind 데이터베이스에 연결 하려�
 그림 5는 `ShowRandomProduct.aspx` 브라우저를 통해 볼 때 페이지입니다. 페이지를 다시 로드 하려면 브라우저의 새로 고침 단추를 클릭 합니다. 표시 되어야 합니다 `ProductName` 및 `UnitPrice` 새 임의로 선택 된 레코드에 대 한 값입니다.
 
 
-[![A 임의 제품의 이름과 가격 표시 됩니다](master-pages-and-asp-net-ajax-vb/_static/image14.png)](master-pages-and-asp-net-ajax-vb/_static/image13.png)
+[![임의 제품의 이름과 가격 표시 됩니다.](master-pages-and-asp-net-ajax-vb/_static/image14.png)](master-pages-and-asp-net-ajax-vb/_static/image13.png)
 
 **그림 05**: 임의 제품의 이름과 가격 표시 됩니다 ([클릭 하 여 큰 이미지 보기](master-pages-and-asp-net-ajax-vb/_static/image15.png))
 
@@ -159,12 +159,12 @@ ASP.NET AJAX 프레임 워크는; 지정한 시간에 포스트백을 수행 하
 전체이 변경으로 페이지에 현재 표시 된 제품 로드 된 시간이 포함 됩니다. 그림 6에서는 먼저 방문 되 면 페이지를 보여 줍니다. 그림 7는 Timer 컨트롤에 "선택" 후 새 제품에 대 한 정보를 표시 하 UpdatePanel 새로 고쳤다는 것 15 초 후 페이지를 보여줍니다.
 
 
-[![A 임의로 선택한 제품 페이지 로드 시 표시 되는](master-pages-and-asp-net-ajax-vb/_static/image17.png)](master-pages-and-asp-net-ajax-vb/_static/image16.png)
+[![페이지 로드 시 임의로 선택한 제품 표시 됩니다.](master-pages-and-asp-net-ajax-vb/_static/image17.png)](master-pages-and-asp-net-ajax-vb/_static/image16.png)
 
 **그림 06**: 페이지 로드 시 임의로 선택한 제품 표시 됩니다 ([클릭 하 여 큰 이미지 보기](master-pages-and-asp-net-ajax-vb/_static/image18.png))
 
 
-[![E새 임의로 선택한 제품 표시는 매우 15 초](master-pages-and-asp-net-ajax-vb/_static/image20.png)](master-pages-and-asp-net-ajax-vb/_static/image19.png)
+[![새 임의로 선택한 제품 표시는 15 초 마다](master-pages-and-asp-net-ajax-vb/_static/image20.png)](master-pages-and-asp-net-ajax-vb/_static/image19.png)
 
 **그림 07**: 매 15 초 마다 새로운 임의로 선택한 제품 표시 됩니다 ([클릭 하 여 큰 이미지 보기](master-pages-and-asp-net-ajax-vb/_static/image21.png))
 
@@ -190,12 +190,12 @@ ScriptManagerProxy 컨트롤의 작동을 확인 하려면에서 UpdatePanel 보
 라는 웹 사이트에 새 폴더를 만들어 시작 `Scripts`합니다. 다음으로 명명 된 Scripts 폴더로 새 파일을 추가 `TimerScript.js` JScript 파일 형식입니다.
 
 
-[![Add 스크립트 폴더에 새 JavaScript 파일](master-pages-and-asp-net-ajax-vb/_static/image23.png)](master-pages-and-asp-net-ajax-vb/_static/image22.png)
+[![스크립트 폴더에 새 JavaScript 파일을 추가 합니다.](master-pages-and-asp-net-ajax-vb/_static/image23.png)](master-pages-and-asp-net-ajax-vb/_static/image22.png)
 
 **그림 08**: 새 JavaScript 파일을 추가 합니다 `Scripts` 폴더 ([큰 이미지를 보려면 클릭](master-pages-and-asp-net-ajax-vb/_static/image24.png))
 
 
-[![A 웹 사이트에 추가한 새 JavaScript 파일](master-pages-and-asp-net-ajax-vb/_static/image26.png)](master-pages-and-asp-net-ajax-vb/_static/image25.png)
+[![웹 사이트에 추가한 새 JavaScript 파일](master-pages-and-asp-net-ajax-vb/_static/image26.png)](master-pages-and-asp-net-ajax-vb/_static/image25.png)
 
 **그림 09**: 새 JavaScript 파일을 웹 사이트에 추가 되었습니다 ([클릭 하 여 큰 이미지 보기](master-pages-and-asp-net-ajax-vb/_static/image27.png))
 
@@ -208,7 +208,7 @@ ScriptManagerProxy 컨트롤의 작동을 확인 하려면에서 UpdatePanel 보
 이제이 사용자 지정 JavaScript 파일에 등록 해야 `ShowRandomProduct.aspx`합니다. 돌아갑니다 `ShowRandomProduct.aspx` ScriptManagerProxy 컨트롤을 페이지에 추가 하 고 설정 해당 `ID` 에 `MyManagerProxy`입니다. 사용자 지정 JavaScript를 등록 하려면 파일 디자이너에서 ScriptManagerProxy 컨트롤을 선택한 다음 속성 창으로 이동 합니다. 속성 중 하나를 스크립트 제목은입니다. 이 속성을 선택 하면 그림 10 ScriptReference 컬렉션 편집기가 표시 됩니다. 새 스크립트 참조를 포함 하 여 경로 속성에서 스크립트 파일 경로 입력 한 다음 추가 단추 클릭: `~/Scripts/TimerScript.js`합니다.
 
 
-[![Add ScriptManagerProxy 컨트롤에 대 한 스크립트 참조](master-pages-and-asp-net-ajax-vb/_static/image29.png)](master-pages-and-asp-net-ajax-vb/_static/image28.png)
+[![ScriptManagerProxy 컨트롤에 대 한 스크립트 참조를 추가 합니다.](master-pages-and-asp-net-ajax-vb/_static/image29.png)](master-pages-and-asp-net-ajax-vb/_static/image28.png)
 
 **그림 10**: ScriptManagerProxy 컨트롤에 대 한 스크립트 참조를 추가 합니다. ([클릭 하 여 큰 이미지 보기](master-pages-and-asp-net-ajax-vb/_static/image30.png))
 
@@ -230,12 +230,12 @@ ScriptManagerProxy 컨트롤의 작동을 확인 하려면에서 UpdatePanel 보
 그림 11에서는 브라우저를 통해 처음 방문한 경우이 페이지를 보여 줍니다. 타이머를 현재 실행 되 고 15 초 마다 표시 된 제품 정보를 업데이트 합니다. 그림 12 일시 중지 단추 클릭 후 화면을 보여 줍니다. 일시 중지 단추를 클릭 합니다. 타이머를 중지 하 고 단추의 텍스트를 "Resume"를 업데이트 합니다. 제품 정보는 새로 고침 (되며 계속 15 초 마다 새로 고침) 사용자가 다시 시작 되 면 합니다.
 
 
-[![C타이머 컨트롤을 중지 하려면 일시 중지 단추 옆](master-pages-and-asp-net-ajax-vb/_static/image32.png)](master-pages-and-asp-net-ajax-vb/_static/image31.png)
+[![타이머 컨트롤을 중지 하려면 일시 중지 단추를 클릭 합니다.](master-pages-and-asp-net-ajax-vb/_static/image32.png)](master-pages-and-asp-net-ajax-vb/_static/image31.png)
 
 **그림 11**: 타이머 컨트롤을 중지 하려면 일시 중지 단추를 클릭 ([클릭 하 여 큰 이미지 보기](master-pages-and-asp-net-ajax-vb/_static/image33.png))
 
 
-[![C타이머를 다시 시작 하려면 [계속] 단추 옆](master-pages-and-asp-net-ajax-vb/_static/image35.png)](master-pages-and-asp-net-ajax-vb/_static/image34.png)
+[![타이머를 다시 시작 하려면 [계속] 단추를 클릭 합니다.](master-pages-and-asp-net-ajax-vb/_static/image35.png)](master-pages-and-asp-net-ajax-vb/_static/image34.png)
 
 **그림 12**: 타이머를 다시 시작 하려면 다시 시작 단추를 클릭 ([클릭 하 여 큰 이미지 보기](master-pages-and-asp-net-ajax-vb/_static/image36.png))
 

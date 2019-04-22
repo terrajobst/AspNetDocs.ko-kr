@@ -12,7 +12,7 @@ ms.openlocfilehash: 786d7923d745bfb26ce0759bbe60bc472a63ea5c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59390430"
 ---
 # <a name="limiting-data-modification-functionality-based-on-the-user-c"></a>사용자에 따라 데이터 수정 기능 제한(C#)
@@ -31,12 +31,12 @@ ms.locfileid: "59390430"
 이 자습서를 방문한 사용자를 기반으로 하는 데이터 수정 기능을 동적으로 조정 하는 방법을 살펴보겠습니다. 특히는 편집 가능한 DetailsView 공급자가 제공 제품이 나열 되는 GridView와 함께 공급 업체 정보를 표시 하는 페이지를 만들겠습니다. 회사에서 페이지를 방문 하는 사용자 인 경우 가능 합니다: 모든 공급자가의 정보를 보려면 해당 주소; 편집 한 공급자가 제공 하는 모든 제품에 대 한 정보를 편집 합니다. 수만 있습니다, 있지만 사용자 인 경우 특정 회사에서 보고 하 고 자신의 주소 정보를 편집 하 고, 중단으로 표시 되지 않은 제품에만 편집할 수 있습니다.
 
 
-[![A 회사에서 사용자는 모든 공급자가의 정보를 편집할 수](limiting-data-modification-functionality-based-on-the-user-cs/_static/image2.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image1.png)
+[![회사에서 사용자는 모든 공급 업체의 정보를 편집할 수 있습니다.](limiting-data-modification-functionality-based-on-the-user-cs/_static/image2.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image1.png)
 
 **그림 1**: 이러한 회사 수 편집 Any 공급자의 정보에서에서 사용자 ([클릭 하 여 큰 이미지 보기](limiting-data-modification-functionality-based-on-the-user-cs/_static/image3.png))
 
 
-[![A 사용자를 특정 공급 업체 수만 보기 및 편집의 정보에서](limiting-data-modification-functionality-based-on-the-user-cs/_static/image5.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image4.png)
+[![사용자를 특정 공급 업체 수만 보기 및 편집 정보](limiting-data-modification-functionality-based-on-the-user-cs/_static/image5.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image4.png)
 
 **그림 2**: 특정 공급자 수만 보기에서 해당 정보 편집 사용자 ([클릭 하 여 큰 이미지 보기](limiting-data-modification-functionality-based-on-the-user-cs/_static/image6.png))
 
@@ -56,7 +56,7 @@ Let s 시작!
 이 자습서에서는 첫 번째 단계, 하는 것이 DropDownList를 만들고 시스템에서 공급자를 사용 하 여 채웁니다. 열기는 `UserLevelAccess.aspx` 페이지를 `EditInsertDelete` 폴더를 DropDownList를 추가입니다 `ID` 속성이로 설정 되어 `Suppliers`, 라는 새로운 ObjectDataSource는 하이 DropDownList를 바인딩하고 `AllSuppliersDataSource`합니다.
 
 
-[![C새 ObjectDataSource 라는 AllSuppliersDataSource reate](limiting-data-modification-functionality-based-on-the-user-cs/_static/image8.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image7.png)
+[![AllSuppliersDataSource 라는 새로운 ObjectDataSource는 만들기](limiting-data-modification-functionality-based-on-the-user-cs/_static/image8.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image7.png)
 
 **그림 3**: 명명 된 새 ObjectDataSource 만들려면 `AllSuppliersDataSource` ([큰 이미지를 보려면 클릭](limiting-data-modification-functionality-based-on-the-user-cs/_static/image9.png))
 
@@ -66,7 +66,7 @@ Let s 시작!
 ObjectDataSource 마법사를 완료 한 후 구성 단계를 완료 합니다 `Suppliers` DropDownList 표시 되도록 합니다 `CompanyName` 사용 하 여 데이터 필드를 `SupplierID` 각각에 대 한 값으로 데이터 필드 `ListItem`합니다.
 
 
-[![CCompanyName 및 SupplierID 데이터 필드를 사용 하는 공급 업체 DropDownList onfigure](limiting-data-modification-functionality-based-on-the-user-cs/_static/image11.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image10.png)
+[![CompanyName 및 SupplierID 데이터 필드를 사용 하는 공급 업체 DropDownList를 구성 합니다.](limiting-data-modification-functionality-based-on-the-user-cs/_static/image11.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image10.png)
 
 **그림 4**: 구성 합니다 `Suppliers` DropDownList를 사용 합니다 `CompanyName` 및 `SupplierID` 데이터 필드 ([전체 크기 이미지를 보려면 클릭](limiting-data-modification-functionality-based-on-the-user-cs/_static/image12.png))
 
@@ -85,7 +85,7 @@ ObjectDataSource 마법사를 완료 한 후 구성 단계를 완료 합니다 `
 그림 5는 브라우저를 통해 볼 때 스크린샷을 현재 진행률을 보여줍니다.
 
 
-[![T그 공급 업체 DropDownList 포함 표시 모든 ListItem, Plus의 경우 첫 번째 각 공급자](limiting-data-modification-functionality-based-on-the-user-cs/_static/image14.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image13.png)
+[![모든 ListItem와 각 공급자에 대 한 쇼를 포함 하는 공급 업체 DropDownList](limiting-data-modification-functionality-based-on-the-user-cs/_static/image14.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image13.png)
 
 **그림 5**: 합니다 `Suppliers` DropDownList 포함 모두 표시 `ListItem`, Plus의 경우 첫 번째 각 공급 업체 ([클릭 하 여 큰 이미지 보기](limiting-data-modification-functionality-based-on-the-user-cs/_static/image15.png))
 
@@ -112,7 +112,7 @@ S를 DetailsView를 사용 하 여 공급 업체 정보를 표시할 수 있습�
 DetailsView 통해 페이징할 수 이때 및 선택한 공급자가의 주소 정보를 업데이트할 수에서 선택한 옵션에 관계 없이 `Suppliers` DropDownList (그림 6 참조).
 
 
-[![Any 공급 업체 정보를 볼 수 있습니다 하 고 해당 주소를 업데이트](limiting-data-modification-functionality-based-on-the-user-cs/_static/image17.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image16.png)
+[![공급 업체 정보를 볼 수 있으며 해당 주소를 업데이트](limiting-data-modification-functionality-based-on-the-user-cs/_static/image17.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image16.png)
 
 **그림 6**: 모든 공급 업체 정보를 볼 수 있습니다, 그리고 및 해당 주소를 업데이트 ([클릭 하 여 큰 이미지 보기](limiting-data-modification-functionality-based-on-the-user-cs/_static/image18.png))
 
@@ -124,7 +124,7 @@ DetailsView 통해 페이징할 수 이때 및 선택한 공급자가의 주소 
 추가할 새 ObjectDataSource 페이지 이름을 `SingleSupplierDataSource`입니다. 스마트 태그를 데이터 소스 구성 링크를 클릭 하 고 사용 하 게 합니다 `SuppliersBLL` s 클래스 `GetSupplierBySupplierID(supplierID)` 메서드. 와 마찬가지로 `AllSuppliersDataSource` ObjectDataSource를가 합니다 `SingleSupplierDataSource` ObjectDataSource s `Update()` 메서드에 매핑할를 `SuppliersBLL` s 클래스 `UpdateSupplierAddress` 메서드.
 
 
-[![Configure GetSupplierBySupplierID(supplierID) 메서드를 사용 하 여 SingleSupplierDataSource ObjectDataSource](limiting-data-modification-functionality-based-on-the-user-cs/_static/image20.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image19.png)
+[![GetSupplierBySupplierID(supplierID) 메서드를 사용 하 여 SingleSupplierDataSource ObjectDataSource 구성](limiting-data-modification-functionality-based-on-the-user-cs/_static/image20.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image19.png)
 
 **그림 7**: 구성 합니다 `SingleSupplierDataSource` ObjectDataSource 사용 합니다 `GetSupplierBySupplierID(supplierID)` 메서드 ([전체 크기 이미지를 보려면 클릭](limiting-data-modification-functionality-based-on-the-user-cs/_static/image21.png))
 
@@ -132,7 +132,7 @@ DetailsView 통해 페이징할 수 이때 및 선택한 공급자가의 주소 
 매개 변수 원본에 대 한을 지정 하 라는 메시지가 다시 우리는 다음으로 `GetSupplierBySupplierID(supplierID)` s 메서드에 `supplierID` 입력된 매개 변수입니다. 사용 하 여 드롭다운 목록에서 선택한 공급자에 대 한 정보를 표시 하려고 하므로 합니다 `Suppliers` DropDownList의 `SelectedValue` 속성 매개 변수 원본으로 합니다.
 
 
-[![U매개 변수 원본 supplierID로 Suppliers DropDownList se](limiting-data-modification-functionality-based-on-the-user-cs/_static/image23.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image22.png)
+[![공급 업체 DropDownList supplierID 매개 변수 원본으로 사용](limiting-data-modification-functionality-based-on-the-user-cs/_static/image23.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image22.png)
 
 **그림 8**: 사용 합니다 `Suppliers` 으로 DropDownList 합니다 `supplierID` 매개 변수 원본 ([전체 크기 이미지를 보려면 클릭](limiting-data-modification-functionality-based-on-the-user-cs/_static/image24.png))
 
@@ -147,12 +147,12 @@ DetailsView 통해 페이징할 수 이때 및 선택한 공급자가의 주소 
 이 이벤트 처리기를 사용 하 여 DetailsView 컨트롤 이제 표시 선택한 공급자에 게 "모든 공급 업체 표시/편집" 옵션을 선택한 경우 모든 공급 업체의 확인할 수 있습니다 페이징 인터페이스를 통해 하지 않으면 됩니다. 그림 9 "표시/편집 모든 공급 업체" 옵션이 선택 되어; 페이지를 보여 줍니다. 사용자가 방문 하 여 모든 업데이트 페이징 인터페이스 있는지 note 합니다. 그림 10 선택한 Ma 트레이 공급자를 사용 하 여 페이지를 보여 줍니다. Ma 트레이의 정보만 볼 수 있고 편집할 수 있는 경우에 합니다.
 
 
-[![A공급 업체 정보 ll 확인 및 편집할 수](limiting-data-modification-functionality-based-on-the-user-cs/_static/image26.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image25.png)
+[![모든 공급 업체 정보 보기 및 편집](limiting-data-modification-functionality-based-on-the-user-cs/_static/image26.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image25.png)
 
 **그림 9**: 모든 편집 하 고 공급 업체 정보를 볼 수 있습니다 ([클릭 하 여 큰 이미지 보기](limiting-data-modification-functionality-based-on-the-user-cs/_static/image27.png))
 
 
-[![O보기 및 편집 내용은 선택한 공급자가의 있는 수](limiting-data-modification-functionality-based-on-the-user-cs/_static/image29.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image28.png)
+[![선택한 공급자가의 정보만 확인 및 편집할 수](limiting-data-modification-functionality-based-on-the-user-cs/_static/image29.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image28.png)
 
 **그림 10**: 선택한 공급자가의 정보 보기 및 편집 될 수 있습니다 ([클릭 하 여 큰 이미지 보기](limiting-data-modification-functionality-based-on-the-user-cs/_static/image30.png))
 
@@ -171,7 +171,7 @@ DetailsView 통해 페이징할 수 이때 및 선택한 공급자가의 주소 
 이 오버 로드로 만든 GridView 컨트롤 및 해당 관련 된 ObjectDataSource에 추가할 준비가 했습니다. GridView를 새 페이지로 추가 해당 `ID` 속성을 `ProductsBySupplier`, 명명 된 새 ObjectDataSource를 사용 하도록 구성 하 고 `ProductsBySupplierDataSource`입니다. 선택한 공급자가 해당 제품을 나열 하려면이 GridView, 것 이므로 사용 합니다 `ProductsBLL` s 클래스 `GetProductsBySupplierID(supplierID)` 메서드. 매핑할 수도 합니다 `Update()` 메서드를 새 `UpdateProduct` 방금 만든 오버 로드 합니다.
 
 
-[![CObjectDataSource의 UpdateProduct 오버 로드 방금 만든 데 onfigure](limiting-data-modification-functionality-based-on-the-user-cs/_static/image32.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image31.png)
+[![방금 만든 UpdateProduct 오버 로드를 사용 하는 ObjectDataSource 구성](limiting-data-modification-functionality-based-on-the-user-cs/_static/image32.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image31.png)
 
 **그림 11**: ObjectDataSource를 사용 하 여 구성 합니다 `UpdateProduct` 방금 만든 오버 로드 ([큰 이미지를 보려면 클릭](limiting-data-modification-functionality-based-on-the-user-cs/_static/image33.png))
 
@@ -179,7 +179,7 @@ DetailsView 통해 페이징할 수 이때 및 선택한 공급자가의 주소 
 에 대 한 매개 변수 소스를 선택 하 라는 메시지가 다시 우리는 `GetProductsBySupplierID(supplierID)` s 메서드에 `supplierID` 입력된 매개 변수입니다. DetailsView를 사용 하 여에서 선택한 공급자에 대 한 제품을 표시 하려고 하므로 합니다 `SuppliersDetails` DetailsView 컨트롤의 `SelectedValue` 속성 매개 변수 원본으로 합니다.
 
 
-[![Use SuppliersDetails DetailsView s 매개 변수 원본으로 SelectedValue 속성](limiting-data-modification-functionality-based-on-the-user-cs/_static/image35.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image34.png)
+[![매개 변수 원본으로 SuppliersDetails DetailsView의 SelectedValue 속성 사용](limiting-data-modification-functionality-based-on-the-user-cs/_static/image35.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image34.png)
 
 **그림 12**: 사용 된 `SuppliersDetails` DetailsView s `SelectedValue` 매개 변수 원본 속성 ([전체 크기 이미지를 보려면 클릭](limiting-data-modification-functionality-based-on-the-user-cs/_static/image36.png))
 
@@ -194,7 +194,7 @@ GridView 필드를 제외 하 고 모두 제거 GridView 돌아가기 `ProductNa
 이 구성이 완료 페이지 이제 나열 GridView에서 선택한 공급자가 제공 하는 제품 (그림 13 참조). 현재 *모든*의 제품 이름 또는 포장 단위를 업데이트할 수 있습니다. 그러나 이러한 기능은 특정 공급 업체와 연결 된 사용자에 대 한 지원 되지 않는 제품에 대 한 금지 됩니다 있도록이 페이지 논리를 업데이트 해야 합니다. 5 단계에서에서이 마지막 부분이 해결할 합니다.
 
 
-[![T그는 선택한 공급자가 제공 하는 제품에는 다음 표시 되는](limiting-data-modification-functionality-based-on-the-user-cs/_static/image38.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image37.png)
+[![선택한 공급자가 제공 하는 제품 표시](limiting-data-modification-functionality-based-on-the-user-cs/_static/image38.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image37.png)
 
 **그림 13**: 선택한 공급자가 제공 하는 제품 표시 됩니다 ([클릭 하 여 큰 이미지 보기](limiting-data-modification-functionality-based-on-the-user-cs/_static/image39.png))
 
@@ -217,12 +217,12 @@ GridView s에 대 한 이벤트 처리기를 만들고 `RowDataBound` 이벤트�
 이 이벤트와 처리기를 편집할 수 없으면이 페이지를 방문 사용자로 특정 공급 업체에서 지원 제품 편집 단추와 숨겨져 이러한 제품에 대 한 있습니다. 예를 들어, Chef 한 100의 수프 New Orleans 케이준 Delights 공급자에 대 한 지원 되지 않는 제품입니다. 이 제품에 대 한 편집 단추에서에서 숨겨집니다이 특정 공급 업체에 대 한 페이지를 방문 하면 (그림 14 참조). 그러나 "표시/편집 모든 공급 업체"를 사용 하 여 방문 하는 경우 편집 단추는 사용할 수 있습니다 (그림 15 참조).
 
 
-[![F또는 공급 업체 특정 사용자 Chef 한 100의 수프의 편집 단추가 숨겨집니다.](limiting-data-modification-functionality-based-on-the-user-cs/_static/image41.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image40.png)
+[![공급자 특정 사용자에 대 한 Chef 한 100의 수프에 대 한 편집 단추 숨겨져](limiting-data-modification-functionality-based-on-the-user-cs/_static/image41.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image40.png)
 
 **그림 14**: 공급자 특정 사용자에 대 한 Chef 한 100 s 수프 편집 단추가 숨겨집니다 ([클릭 하 여 큰 이미지 보기](limiting-data-modification-functionality-based-on-the-user-cs/_static/image42.png))
 
 
-[![F또는 모든 공급 업체 사용자 표시/편집, Chef 한 100의 수프에 대 한 편집 단추에 표시 됩니다](limiting-data-modification-functionality-based-on-the-user-cs/_static/image44.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image43.png)
+[![표시/편집 모든 공급 업체 사용자에 대해 Chef 한 100 s 수프 편집 단추가 표시 됩니다.](limiting-data-modification-functionality-based-on-the-user-cs/_static/image44.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image43.png)
 
 **그림 15**: 표시/편집 모든 공급 업체 사용자에 대해 Chef 한 100 s 수프 편집 단추가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](limiting-data-modification-functionality-based-on-the-user-cs/_static/image45.png))
 

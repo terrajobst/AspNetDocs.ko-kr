@@ -12,7 +12,7 @@ ms.openlocfilehash: 35fcf02c20e3d20f9cb75f6a25aeb1ddac016b4e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59393771"
 ---
 # <a name="urls-in-master-pages-vb"></a>마스터 페이지의 URL(VB)
@@ -75,7 +75,7 @@ ms.locfileid: "59393771"
 때문에 `<img>` 요소의 `src` 특성은 상대 URL을 브라우저 표시 하려고를 `Images` 웹 페이지의 폴더 위치를 기준으로 폴더입니다. 즉, 브라우저 이미지 파일을 찾고 `Admin/Images/PoweredByASPNET.gif`합니다.
 
 
-[![The PoweredByASPNET.gif Image File Cannot Be Found](urls-in-master-pages-vb/_static/image3.png)](urls-in-master-pages-vb/_static/image2.png)
+[![PoweredByASPNET.gif 이미지 파일을 찾을 수 없습니다.](urls-in-master-pages-vb/_static/image3.png)](urls-in-master-pages-vb/_static/image2.png)
 
 **그림 02**: 합니다 `PoweredByASPNET.gif` 이미지 파일을 찾을 수 없습니다 ([큰 이미지를 보려면 클릭](urls-in-master-pages-vb/_static/image4.png))
 
@@ -92,7 +92,7 @@ ms.locfileid: "59393771"
 잠시 업데이트 하는 `<img>` 요소의 `src` 위에 표시 된 형식 중 하나를 사용 하 여 절대 url 특성 및 다음 방문 하 여는 `~/Admin/Default.aspx` 브라우저를 통해 페이지입니다. 브라우저를 제대로 찾아 표시할이 이번을 `PoweredByASPNET.gif` 이미지 파일 (그림 3 참조).
 
 
-[![T그 PoweredByASPNET.gif 이미지는 이제 표시](urls-in-master-pages-vb/_static/image6.png)](urls-in-master-pages-vb/_static/image5.png)
+[![PoweredByASPNET.gif 이미지는 이제 표시](urls-in-master-pages-vb/_static/image6.png)](urls-in-master-pages-vb/_static/image5.png)
 
 **그림 03**: 합니다 `PoweredByASPNET.gif` 이미지는 이제 표시 됩니다 ([큰 이미지를 보려면 클릭](urls-in-master-pages-vb/_static/image7.png))
 

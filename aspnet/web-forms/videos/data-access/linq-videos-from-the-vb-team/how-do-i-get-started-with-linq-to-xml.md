@@ -12,7 +12,7 @@ ms.openlocfilehash: bbe5c24f88562d2e4eb0b70e8d83dbd92a90460f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384801"
 ---
 # <a name="how-do-i-get-started-with-linq-to-xml"></a>[어떻게 할까요?] LINQ to XML 사용 하 여 시작 합니다.
