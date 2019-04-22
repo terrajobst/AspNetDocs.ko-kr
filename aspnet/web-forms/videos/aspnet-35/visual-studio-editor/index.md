@@ -12,18 +12,18 @@ ms.openlocfilehash: fda6eaf86f3822bce0ca0dd834cd187897bce69d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59392848"
 ---
-# <a name="visual-studio-editor"></a><span data-ttu-id="aae69-103">Visual Studio 편집기</span><span class="sxs-lookup"><span data-stu-id="aae69-103">Visual Studio Editor</span></span>
+# <a name="visual-studio-editor"></a><span data-ttu-id="bc8e8-103">Visual Studio 편집기</span><span class="sxs-lookup"><span data-stu-id="bc8e8-103">Visual Studio Editor</span></span>
 
-> <span data-ttu-id="aae69-104">이 비디오 시리즈에서는 JavaScript 및 CSS에 대 한 향상 된 지원을 비롯 하 여 Visual Studio 2008 편집기의 새로운 기능을 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="aae69-104">This video series shows you new features of the Visual Studio 2008 editor, including enhanced support for JavaScript and CSS.</span></span>
+> <span data-ttu-id="bc8e8-104">이 비디오 시리즈에서는 JavaScript 및 CSS에 대 한 향상 된 지원을 비롯 하 여 Visual Studio 2008 편집기의 새로운 기능을 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="bc8e8-104">This video series shows you new features of the Visual Studio 2008 editor, including enhanced support for JavaScript and CSS.</span></span>
 
 
-- [<span data-ttu-id="aae69-105">Visual Studio 2008의 새로운 디자이너 지원</span><span class="sxs-lookup"><span data-stu-id="aae69-105">New Designer Support in Visual Studio 2008</span></span>](new-designer-support-in-visual-studio-2008.md)
-- [<span data-ttu-id="aae69-106">Visual Studio 2008의 JavaScript Intellisense 지원</span><span class="sxs-lookup"><span data-stu-id="aae69-106">JavaScript Intellisense Support in Visual Studio 2008</span></span>](javascript-intellisense-support-in-visual-studio-2008.md)
-- [<span data-ttu-id="aae69-107">Visual Studio 2008에서 JavaScript 디버깅</span><span class="sxs-lookup"><span data-stu-id="aae69-107">JavaScript Debugging in Visual Studio 2008</span></span>](javascript-debugging-in-visual-studio-2008.md)
-- [<span data-ttu-id="aae69-108">Visual Studio 2008의 멀티 타기팅 지원</span><span class="sxs-lookup"><span data-stu-id="aae69-108">Multi Targeting Support in Visual Studio 2008</span></span>](multi-targeting-support-in-visual-studio-2008.md)
-- [<span data-ttu-id="aae69-109">Jscript 및 ASP.NET AJAX용 IntelliSense</span><span class="sxs-lookup"><span data-stu-id="aae69-109">IntelliSense for Jscript and ASP.NET AJAX</span></span>](intellisense-for-jscript-and-aspnet-ajax.md)
-- [<span data-ttu-id="aae69-110">Visual Studio 2008 통합 개발 환경 둘러보기</span><span class="sxs-lookup"><span data-stu-id="aae69-110">Quick Tour of the Visual Studio 2008 Integrated Development Environment</span></span>](quick-tour-of-the-visual-studio-2008-integrated-development-environment.md)
-- [<span data-ttu-id="aae69-111">CSS 파일 만들기 및 수정</span><span class="sxs-lookup"><span data-stu-id="aae69-111">Creating and Modifying a CSS File</span></span>](creating-and-modifying-a-css-file.md)
+- [<span data-ttu-id="bc8e8-105">Visual Studio 2008의 새로운 디자이너 지원</span><span class="sxs-lookup"><span data-stu-id="bc8e8-105">New Designer Support in Visual Studio 2008</span></span>](new-designer-support-in-visual-studio-2008.md)
+- [<span data-ttu-id="bc8e8-106">Visual Studio 2008의 JavaScript Intellisense 지원</span><span class="sxs-lookup"><span data-stu-id="bc8e8-106">JavaScript Intellisense Support in Visual Studio 2008</span></span>](javascript-intellisense-support-in-visual-studio-2008.md)
+- [<span data-ttu-id="bc8e8-107">Visual Studio 2008에서 JavaScript 디버깅</span><span class="sxs-lookup"><span data-stu-id="bc8e8-107">JavaScript Debugging in Visual Studio 2008</span></span>](javascript-debugging-in-visual-studio-2008.md)
+- [<span data-ttu-id="bc8e8-108">Visual Studio 2008의 다중 타기팅 지원</span><span class="sxs-lookup"><span data-stu-id="bc8e8-108">Multi Targeting Support in Visual Studio 2008</span></span>](multi-targeting-support-in-visual-studio-2008.md)
+- [<span data-ttu-id="bc8e8-109">Jscript 및 ASP.NET AJAX용 IntelliSense</span><span class="sxs-lookup"><span data-stu-id="bc8e8-109">IntelliSense for Jscript and ASP.NET AJAX</span></span>](intellisense-for-jscript-and-aspnet-ajax.md)
+- [<span data-ttu-id="bc8e8-110">Visual Studio 2008 통합 개발 환경 둘러보기</span><span class="sxs-lookup"><span data-stu-id="bc8e8-110">Quick Tour of the Visual Studio 2008 Integrated Development Environment</span></span>](quick-tour-of-the-visual-studio-2008-integrated-development-environment.md)
+- [<span data-ttu-id="bc8e8-111">CSS 파일 만들기 및 수정</span><span class="sxs-lookup"><span data-stu-id="bc8e8-111">Creating and Modifying a CSS File</span></span>](creating-and-modifying-a-css-file.md)

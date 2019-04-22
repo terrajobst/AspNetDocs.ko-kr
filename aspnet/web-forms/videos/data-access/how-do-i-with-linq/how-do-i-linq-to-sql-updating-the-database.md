@@ -12,18 +12,18 @@ ms.openlocfilehash: 0ce5a0c74f81e23601d9b5fe3ec82b591c867158
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59392809"
 ---
-# <a name="how-do-i-linq-to-sql-updating-the-database"></a><span data-ttu-id="0f1e5-103">[어떻게 할까요?] LINQ to SQL: 데이터베이스 업데이트</span><span class="sxs-lookup"><span data-stu-id="0f1e5-103">[How Do I:] LINQ to SQL: Updating the Database</span></span>
+# <a name="how-do-i-linq-to-sql-updating-the-database"></a><span data-ttu-id="c7c88-103">[어떻게 할까요?] LINQ to SQL: 데이터베이스 업데이트</span><span class="sxs-lookup"><span data-stu-id="c7c88-103">[How Do I:] LINQ to SQL: Updating the Database</span></span>
 
-<span data-ttu-id="0f1e5-104">[Scott Stanfield](https://github.com/scottstanfield)</span><span class="sxs-lookup"><span data-stu-id="0f1e5-104">by [Scott Stanfield](https://github.com/scottstanfield)</span></span>
+<span data-ttu-id="c7c88-104">[Scott Stanfield](https://github.com/scottstanfield)</span><span class="sxs-lookup"><span data-stu-id="c7c88-104">by [Scott Stanfield](https://github.com/scottstanfield)</span></span>
 
-<span data-ttu-id="0f1e5-105">이 비디오에서 만들고, 업데이트, 관계 및 사용자 지정 열과 행 유효성 검사에서 업데이트를 통해 LINQ, 간단한 트랜잭션 레코드를 삭제 하는 방법을 설명 했습니다.</span><span class="sxs-lookup"><span data-stu-id="0f1e5-105">In this video I demonstrated how to create, update and delete records through LINQ, simple transactions, updates across relationships, and custom column and row validation.</span></span>
+<span data-ttu-id="c7c88-105">이 비디오에서 만들고, 업데이트, 관계 및 사용자 지정 열과 행 유효성 검사에서 업데이트를 통해 LINQ, 간단한 트랜잭션 레코드를 삭제 하는 방법을 설명 했습니다.</span><span class="sxs-lookup"><span data-stu-id="c7c88-105">In this video I demonstrated how to create, update and delete records through LINQ, simple transactions, updates across relationships, and custom column and row validation.</span></span>
 
-[<span data-ttu-id="0f1e5-106">&#9654;비디오 (17 분)</span><span class="sxs-lookup"><span data-stu-id="0f1e5-106">&#9654; Watch video (17 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-linq-to-sql-updating-the-database)
+[<span data-ttu-id="c7c88-106">&#9654;비디오 (17 분)</span><span class="sxs-lookup"><span data-stu-id="c7c88-106">&#9654; Watch video (17 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-linq-to-sql-updating-the-database)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="0f1e5-107">[이전](how-do-i-linq-to-sql-querying-the-database.md)
-> [다음](how-do-i-linq-to-sql-linqdatasource.md)</span><span class="sxs-lookup"><span data-stu-id="0f1e5-107">[Previous](how-do-i-linq-to-sql-querying-the-database.md)
+> <span data-ttu-id="c7c88-107">[이전](how-do-i-linq-to-sql-querying-the-database.md)
+> [다음](how-do-i-linq-to-sql-linqdatasource.md)</span><span class="sxs-lookup"><span data-stu-id="c7c88-107">[Previous](how-do-i-linq-to-sql-querying-the-database.md)
 [Next](how-do-i-linq-to-sql-linqdatasource.md)</span></span>

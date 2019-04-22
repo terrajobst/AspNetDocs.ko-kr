@@ -12,18 +12,18 @@ ms.openlocfilehash: 8e17b21c40df5f8f687059e0daa9028a3a823148
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59396501"
 ---
-# <a name="how-do-i-use-the-aspnet-ajax-updatepanelanimation-extender"></a><span data-ttu-id="ed2a4-105">[어떻게 할까요?] ASP.NET AJAX UpdatePanelAnimation Extender 사용</span><span class="sxs-lookup"><span data-stu-id="ed2a4-105">[How Do I:] Use the ASP.NET AJAX UpdatePanelAnimation Extender?</span></span>
+# <a name="how-do-i-use-the-aspnet-ajax-updatepanelanimation-extender"></a><span data-ttu-id="fedf2-105">[어떻게 할까요?] ASP.NET AJAX UpdatePanelAnimation Extender 사용</span><span class="sxs-lookup"><span data-stu-id="fedf2-105">[How Do I:] Use the ASP.NET AJAX UpdatePanelAnimation Extender?</span></span>
 
-<span data-ttu-id="ed2a4-106">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="ed2a4-106">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="fedf2-106">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="fedf2-106">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="ed2a4-107">부분 페이지 업데이트로 업데이트, 발생 하는 경우 사용자에 게 알릴 수에서는 애니메이션을 추가 하 여 완료 했습니다.</span><span class="sxs-lookup"><span data-stu-id="ed2a4-107">By adding animation to a partial-page update we can inform the user when an update is occuring, and when it has finished.</span></span> <span data-ttu-id="ed2a4-108">UpdatePanelAnimation extender는 ASP.NET AJAX UpdatePanel 컨트롤에 풍부한 애니메이션 프레임 워크의 핵심 ASP.NET AJAX Extensions를 사용 하 여 애니메이션 효과 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="ed2a4-108">The UpdatePanelAnimation extender adds animation effects to the ASP.NET AJAX UpdatePanel control, making use of the rich animation framework of the core ASP.NET AJAX Extensions.</span></span> <span data-ttu-id="ed2a4-109">이 비디오는 UpdatePanelAnimation에 대 한 효과의 시퀀스를 정의 하는 방법 및 애니메이션을 미세 조정할 수 ScriptAction 정의 사용 하 여는 방법을 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="ed2a4-109">This video shows how you can define the sequence of effects for the UpdatePanelAnimation, and how you can fine-tune the animation by using ScriptAction definitions.</span></span>
+<span data-ttu-id="fedf2-107">부분 페이지 업데이트로 업데이트, 발생 하는 경우 사용자에 게 알릴 수에서는 애니메이션을 추가 하 여 완료 했습니다.</span><span class="sxs-lookup"><span data-stu-id="fedf2-107">By adding animation to a partial-page update we can inform the user when an update is occuring, and when it has finished.</span></span> <span data-ttu-id="fedf2-108">UpdatePanelAnimation extender는 ASP.NET AJAX UpdatePanel 컨트롤에 풍부한 애니메이션 프레임 워크의 핵심 ASP.NET AJAX Extensions를 사용 하 여 애니메이션 효과 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="fedf2-108">The UpdatePanelAnimation extender adds animation effects to the ASP.NET AJAX UpdatePanel control, making use of the rich animation framework of the core ASP.NET AJAX Extensions.</span></span> <span data-ttu-id="fedf2-109">이 비디오는 UpdatePanelAnimation에 대 한 효과의 시퀀스를 정의 하는 방법 및 애니메이션을 미세 조정할 수 ScriptAction 정의 사용 하 여는 방법을 보여줍니다.</span><span class="sxs-lookup"><span data-stu-id="fedf2-109">This video shows how you can define the sequence of effects for the UpdatePanelAnimation, and how you can fine-tune the animation by using ScriptAction definitions.</span></span>
 
-[<span data-ttu-id="ed2a4-110">&#9654;비디오 (20 분)</span><span class="sxs-lookup"><span data-stu-id="ed2a4-110">&#9654; Watch video (20 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-the-aspnet-ajax-updatepanelanimation-extender)
+[<span data-ttu-id="fedf2-110">&#9654;비디오 (20 분)</span><span class="sxs-lookup"><span data-stu-id="fedf2-110">&#9654; Watch video (20 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-the-aspnet-ajax-updatepanelanimation-extender)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="ed2a4-111">[이전](how-do-i-use-the-aspnet-ajax-slideshow-extender.md)
-> [다음](how-do-i-the-ajax-toolkit-reorder-control.md)</span><span class="sxs-lookup"><span data-stu-id="ed2a4-111">[Previous](how-do-i-use-the-aspnet-ajax-slideshow-extender.md)
+> <span data-ttu-id="fedf2-111">[이전](how-do-i-use-the-aspnet-ajax-slideshow-extender.md)
+> [다음](how-do-i-the-ajax-toolkit-reorder-control.md)</span><span class="sxs-lookup"><span data-stu-id="fedf2-111">[Previous](how-do-i-use-the-aspnet-ajax-slideshow-extender.md)
 [Next](how-do-i-the-ajax-toolkit-reorder-control.md)</span></span>

@@ -12,12 +12,12 @@ ms.openlocfilehash: c820cb0679d90ed4625f4e389e44989dbde6c6f4
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59382539"
 ---
-# <a name="aspnet-web-forms-advanced-topics"></a><span data-ttu-id="82ca0-103">ASP.NET Web Forms 고급 항목</span><span class="sxs-lookup"><span data-stu-id="82ca0-103">ASP.NET Web Forms Advanced Topics</span></span>
+# <a name="aspnet-web-forms-advanced-topics"></a><span data-ttu-id="42bd0-103">ASP.NET Web Forms 고급 항목</span><span class="sxs-lookup"><span data-stu-id="42bd0-103">ASP.NET Web Forms Advanced Topics</span></span>
 
-> <span data-ttu-id="82ca0-104">ASP.NET Web Forms 응용 프로그램을 국제화, 액세스 가능성, 확장성 등 프로그래밍에 대 한 고급 항목입니다.</span><span class="sxs-lookup"><span data-stu-id="82ca0-104">Advanced topics for programming ASP.NET Web Forms applications, including Internationalization, accessibility, and extensibility.</span></span>
+> <span data-ttu-id="42bd0-104">ASP.NET Web Forms 응용 프로그램을 국제화, 액세스 가능성, 확장성 등 프로그래밍에 대 한 고급 항목입니다.</span><span class="sxs-lookup"><span data-stu-id="42bd0-104">Advanced topics for programming ASP.NET Web Forms applications, including Internationalization, accessibility, and extensibility.</span></span>
 
 
-- [<span data-ttu-id="82ca0-105">ASP.NET Web Forms 연결 복원력 및 명령 인터셉션</span><span class="sxs-lookup"><span data-stu-id="82ca0-105">ASP.NET Web Forms Connection Resiliency and Command Interception</span></span>](aspnet-web-forms-connection-resiliency-and-command-interception.md)
+- [<span data-ttu-id="42bd0-105">ASP.NET Web Forms 연결 복원력 및 명령 인터셉션</span><span class="sxs-lookup"><span data-stu-id="42bd0-105">ASP.NET Web Forms Connection Resiliency and Command Interception</span></span>](aspnet-web-forms-connection-resiliency-and-command-interception.md)

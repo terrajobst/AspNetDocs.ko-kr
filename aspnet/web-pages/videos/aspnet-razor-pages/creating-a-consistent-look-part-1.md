@@ -12,18 +12,18 @@ ms.openlocfilehash: 462572b6216519aeb3bac56458a466e6d44c87c5
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59389156"
 ---
-# <a name="creating-a-consistent-look-part-1"></a><span data-ttu-id="66050-103">일관적인 모양 만들기(1부)</span><span class="sxs-lookup"><span data-stu-id="66050-103">Creating a Consistent Look (Part 1)</span></span>
+# <a name="creating-a-consistent-look-part-1"></a><span data-ttu-id="e9334-103">일관적인 모양 만들기(1부)</span><span class="sxs-lookup"><span data-stu-id="e9334-103">Creating a Consistent Look (Part 1)</span></span>
 
-<span data-ttu-id="66050-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="66050-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="e9334-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="e9334-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="66050-105">비디오 하겠지만 만들기에 대 한 일관성 확인 자습서 (1 부)</span><span class="sxs-lookup"><span data-stu-id="66050-105">Video accompaniment to the Creating a Consistent Look tutorial (part 1)</span></span>
+<span data-ttu-id="e9334-105">비디오 하겠지만 만들기에 대 한 일관성 확인 자습서 (1 부)</span><span class="sxs-lookup"><span data-stu-id="e9334-105">Video accompaniment to the Creating a Consistent Look tutorial (part 1)</span></span>
 
-[<span data-ttu-id="66050-106">&#9654;비디오 (23 분)</span><span class="sxs-lookup"><span data-stu-id="66050-106">&#9654; Watch video (23 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/creating-a-consistent-look-part-1)
+[<span data-ttu-id="e9334-106">&#9654;비디오 (23 분)</span><span class="sxs-lookup"><span data-stu-id="e9334-106">&#9654; Watch video (23 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/creating-a-consistent-look-part-1)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="66050-107">[이전](introduction-to-aspnet-web-programming-using-the-razor-syntax.md)
-> [다음](creating-a-consistent-look-part-2.md)</span><span class="sxs-lookup"><span data-stu-id="66050-107">[Previous](introduction-to-aspnet-web-programming-using-the-razor-syntax.md)
+> <span data-ttu-id="e9334-107">[이전](introduction-to-aspnet-web-programming-using-the-razor-syntax.md)
+> [다음](creating-a-consistent-look-part-2.md)</span><span class="sxs-lookup"><span data-stu-id="e9334-107">[Previous](introduction-to-aspnet-web-programming-using-the-razor-syntax.md)
 [Next](creating-a-consistent-look-part-2.md)</span></span>

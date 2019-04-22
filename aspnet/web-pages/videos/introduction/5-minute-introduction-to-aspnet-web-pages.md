@@ -12,11 +12,11 @@ ms.openlocfilehash: 4bc86e3c6726bdf67030a72c2d23a2516169fcb3
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59385633"
 ---
-# <a name="5-minute-introduction-to-aspnet-web-pages"></a><span data-ttu-id="cd41d-102">ASP.NET 웹 페이지 5 분 소개</span><span class="sxs-lookup"><span data-stu-id="cd41d-102">5 Minute Introduction to ASP.NET Web Pages</span></span>
+# <a name="5-minute-introduction-to-aspnet-web-pages"></a><span data-ttu-id="86bbf-102">ASP.NET 웹 페이지 5 분 소개</span><span class="sxs-lookup"><span data-stu-id="86bbf-102">5 Minute Introduction to ASP.NET Web Pages</span></span>
 
-<span data-ttu-id="cd41d-103">by [Microsoft](https://github.com/microsoft)</span><span class="sxs-lookup"><span data-stu-id="cd41d-103">by [Microsoft](https://github.com/microsoft)</span></span>
+<span data-ttu-id="86bbf-103">by [Microsoft](https://github.com/microsoft)</span><span class="sxs-lookup"><span data-stu-id="86bbf-103">by [Microsoft](https://github.com/microsoft)</span></span>
 
-[<span data-ttu-id="cd41d-104">&#9654;비디오 (4 분)</span><span class="sxs-lookup"><span data-stu-id="cd41d-104">&#9654; Watch video (4 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/5-minute-introduction-to-aspnet-web-pages)
+[<span data-ttu-id="86bbf-104">&#9654;비디오 (4 분)</span><span class="sxs-lookup"><span data-stu-id="86bbf-104">&#9654; Watch video (4 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/5-minute-introduction-to-aspnet-web-pages)

@@ -12,18 +12,18 @@ ms.openlocfilehash: cead55311660a630ca5fe906e1afe8767c75aa7f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59394534"
 ---
-# <a name="creating-a-site-with-iis7-manager"></a><span data-ttu-id="c8611-103">IIS7 관리자를 사용하여 사이트 만들기</span><span class="sxs-lookup"><span data-stu-id="c8611-103">Creating a Site with IIS7 Manager</span></span>
+# <a name="creating-a-site-with-iis7-manager"></a><span data-ttu-id="0b061-103">IIS7 관리자를 사용하여 사이트 만들기</span><span class="sxs-lookup"><span data-stu-id="0b061-103">Creating a Site with IIS7 Manager</span></span>
 
-<span data-ttu-id="c8611-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="c8611-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="0b061-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="0b061-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="c8611-105">이 비디오에서는 IIS7 사용 하 여 새 웹 사이트에 대 한 프로 비전 프로세스를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="c8611-105">This video demonstrates the provisioning process for new web sites with IIS7.</span></span>
+<span data-ttu-id="0b061-105">이 비디오에서는 IIS7 사용 하 여 새 웹 사이트에 대 한 프로 비전 프로세스를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="0b061-105">This video demonstrates the provisioning process for new web sites with IIS7.</span></span>
 
-[<span data-ttu-id="c8611-106">&#9654;동영상 (8 분)</span><span class="sxs-lookup"><span data-stu-id="c8611-106">&#9654; Watch video (8 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/creating-a-site-with-iis7-manager)
+[<span data-ttu-id="0b061-106">&#9654;동영상 (8 분)</span><span class="sxs-lookup"><span data-stu-id="0b061-106">&#9654; Watch video (8 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/creating-a-site-with-iis7-manager)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="c8611-107">[이전](troubleshooting-production-aspnet-apps.md)
-> [다음](installing-ftp7.md)</span><span class="sxs-lookup"><span data-stu-id="c8611-107">[Previous](troubleshooting-production-aspnet-apps.md)
+> <span data-ttu-id="0b061-107">[이전](troubleshooting-production-aspnet-apps.md)
+> [다음](installing-ftp7.md)</span><span class="sxs-lookup"><span data-stu-id="0b061-107">[Previous](troubleshooting-production-aspnet-apps.md)
 [Next](installing-ftp7.md)</span></span>

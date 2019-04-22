@@ -12,16 +12,16 @@ ms.openlocfilehash: 6d278b226ac8388222f32e9dfb8311b05b26a5cd
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59390560"
 ---
-# <a name="mvc-music-store-part-3-views-and-viewmodels"></a><span data-ttu-id="cfb09-103">MVC Music Store 3부: 보기 및 ViewModels</span><span class="sxs-lookup"><span data-stu-id="cfb09-103">MVC Music Store Part 3: Views and ViewModels</span></span>
+# <a name="mvc-music-store-part-3-views-and-viewmodels"></a><span data-ttu-id="76194-103">MVC Music Store 3부: 보기 및 ViewModels</span><span class="sxs-lookup"><span data-stu-id="76194-103">MVC Music Store Part 3: Views and ViewModels</span></span>
 
-<span data-ttu-id="cfb09-104">[Jon Galloway](https://github.com/jongalloway)</span><span class="sxs-lookup"><span data-stu-id="cfb09-104">by [Jon Galloway](https://github.com/jongalloway)</span></span>
+<span data-ttu-id="76194-104">[Jon Galloway](https://github.com/jongalloway)</span><span class="sxs-lookup"><span data-stu-id="76194-104">by [Jon Galloway](https://github.com/jongalloway)</span></span>
 
-<span data-ttu-id="cfb09-105">Jon 보기, Viewmodel 및 마스터 페이지에 대 한 소개를 사용 하 여 MVC Music Store 자습서를 계속합니다.</span><span class="sxs-lookup"><span data-stu-id="cfb09-105">Jon continues the MVC Music Store tutorial with an introduction to Views, ViewModels, and MasterPages.</span></span>
+<span data-ttu-id="76194-105">Jon 보기, Viewmodel 및 마스터 페이지에 대 한 소개를 사용 하 여 MVC Music Store 자습서를 계속합니다.</span><span class="sxs-lookup"><span data-stu-id="76194-105">Jon continues the MVC Music Store tutorial with an introduction to Views, ViewModels, and MasterPages.</span></span>
 
-[<span data-ttu-id="cfb09-106">&#9654;비디오 (13 분)</span><span class="sxs-lookup"><span data-stu-id="cfb09-106">&#9654; Watch video (13 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/mvc-music-store-part-3-views-and-viewmodels)
+[<span data-ttu-id="76194-106">&#9654;비디오 (13 분)</span><span class="sxs-lookup"><span data-stu-id="76194-106">&#9654; Watch video (13 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/mvc-music-store-part-3-views-and-viewmodels)
 
 > [!div class="step-by-step"]
-> [<span data-ttu-id="cfb09-107">이전</span><span class="sxs-lookup"><span data-stu-id="cfb09-107">Previous</span></span>](mvc-music-store-part-2-controllers.md)
+> [<span data-ttu-id="76194-107">이전</span><span class="sxs-lookup"><span data-stu-id="76194-107">Previous</span></span>](mvc-music-store-part-2-controllers.md)
