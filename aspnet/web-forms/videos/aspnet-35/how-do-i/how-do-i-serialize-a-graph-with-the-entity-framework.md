@@ -12,18 +12,18 @@ ms.openlocfilehash: 7dd5e8908c0601306e45d2fb32db265a35a411c7
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59378093"
 ---
-# <a name="how-do-i-serialize-a-graph-with-the-entity-framework"></a><span data-ttu-id="d0cff-103">[어떻게 할까요?] Entity Framework 사용 하 여 그래프를 serialize 합니다.</span><span class="sxs-lookup"><span data-stu-id="d0cff-103">[How Do I:] Serialize a Graph with the Entity Framework</span></span>
+# <a name="how-do-i-serialize-a-graph-with-the-entity-framework"></a><span data-ttu-id="4c1e0-103">[어떻게 할까요?] Entity Framework 사용 하 여 그래프를 serialize 합니다.</span><span class="sxs-lookup"><span data-stu-id="4c1e0-103">[How Do I:] Serialize a Graph with the Entity Framework</span></span>
 
-<span data-ttu-id="d0cff-104">[Brian Dawson](https://twitter.com/briandawson)</span><span class="sxs-lookup"><span data-stu-id="d0cff-104">by [Brian Dawson](https://twitter.com/briandawson)</span></span>
+<span data-ttu-id="4c1e0-104">[Brian Dawson](https://twitter.com/briandawson)</span><span class="sxs-lookup"><span data-stu-id="4c1e0-104">by [Brian Dawson](https://twitter.com/briandawson)</span></span>
 
-<span data-ttu-id="d0cff-105">이 소개 비디오 Brian Dawson 안내해 ADO.NET Entity Framework를 사용 하 여 ASP.NET 응용 프로그램을 개발 하는 경우 그래프를 serialize 하는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="d0cff-105">In this introductory video Brian Dawson will show you how to serialize a Graph when developing an ASP.NET application with the ADO.NET Entity Framework.</span></span>
+<span data-ttu-id="4c1e0-105">이 소개 비디오 Brian Dawson 안내해 ADO.NET Entity Framework를 사용 하 여 ASP.NET 응용 프로그램을 개발 하는 경우 그래프를 serialize 하는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="4c1e0-105">In this introductory video Brian Dawson will show you how to serialize a Graph when developing an ASP.NET application with the ADO.NET Entity Framework.</span></span>
 
-[<span data-ttu-id="d0cff-106">&#9654;비디오 (4 분)</span><span class="sxs-lookup"><span data-stu-id="d0cff-106">&#9654; Watch video (4 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-serialize-a-graph-with-the-entity-framework)
+[<span data-ttu-id="4c1e0-106">&#9654;비디오 (4 분)</span><span class="sxs-lookup"><span data-stu-id="4c1e0-106">&#9654; Watch video (4 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-serialize-a-graph-with-the-entity-framework)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="d0cff-107">[이전](how-do-i-use-the-new-entity-data-source.md)
-> [다음](how-do-i-use-msbuild-to-automate-the-aspnet-compiler-and-merge-utilities.md)</span><span class="sxs-lookup"><span data-stu-id="d0cff-107">[Previous](how-do-i-use-the-new-entity-data-source.md)
+> <span data-ttu-id="4c1e0-107">[이전](how-do-i-use-the-new-entity-data-source.md)
+> [다음](how-do-i-use-msbuild-to-automate-the-aspnet-compiler-and-merge-utilities.md)</span><span class="sxs-lookup"><span data-stu-id="4c1e0-107">[Previous](how-do-i-use-the-new-entity-data-source.md)
 [Next](how-do-i-use-msbuild-to-automate-the-aspnet-compiler-and-merge-utilities.md)</span></span>

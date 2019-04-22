@@ -12,12 +12,12 @@ ms.openlocfilehash: d1c99b0362d2ff8f00f28af20e4324698b66681c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59381083"
 ---
-# <a name="visual-studio-designer"></a><span data-ttu-id="9c0ea-103">Visual Studio 디자이너</span><span class="sxs-lookup"><span data-stu-id="9c0ea-103">Visual Studio Designer</span></span>
+# <a name="visual-studio-designer"></a><span data-ttu-id="3ceee-103">Visual Studio 디자이너</span><span class="sxs-lookup"><span data-stu-id="3ceee-103">Visual Studio Designer</span></span>
 
-> <span data-ttu-id="9c0ea-104">이 비디오에서는 마스터 페이지를 사용 하 여 작업에 대 한 Visual Studio 2008의 향상 된 기능을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="9c0ea-104">This video illustrates enhanced features in Visual Studio 2008 for working with master pages.</span></span>
+> <span data-ttu-id="3ceee-104">이 비디오에서는 마스터 페이지를 사용 하 여 작업에 대 한 Visual Studio 2008의 향상 된 기능을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="3ceee-104">This video illustrates enhanced features in Visual Studio 2008 for working with master pages.</span></span>
 
 
-- [<span data-ttu-id="9c0ea-105">Visual Studio 2008 및 중첩된 마스터 페이지</span><span class="sxs-lookup"><span data-stu-id="9c0ea-105">Visual Studio 2008 and Nested Masterpages</span></span>](visual-studio-2008-and-nested-masterpages.md)
+- [<span data-ttu-id="3ceee-105">Visual Studio 2008 및 중첩된 마스터 페이지</span><span class="sxs-lookup"><span data-stu-id="3ceee-105">Visual Studio 2008 and Nested Masterpages</span></span>](visual-studio-2008-and-nested-masterpages.md)

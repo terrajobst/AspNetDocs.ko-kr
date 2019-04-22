@@ -12,12 +12,12 @@ ms.openlocfilehash: 27d195b13fa7a215859d3782f78e51e29a73a7ee
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59386283"
 ---
-# <a name="routing"></a><span data-ttu-id="318fb-103">라우팅</span><span class="sxs-lookup"><span data-stu-id="318fb-103">Routing</span></span>
+# <a name="routing"></a><span data-ttu-id="3c590-103">라우팅</span><span class="sxs-lookup"><span data-stu-id="3c590-103">Routing</span></span>
 
-> <span data-ttu-id="318fb-104">웹 페이지 응용 프로그램에서 사용 하는 Url을 사용자 지정 하는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="318fb-104">How to customize the URLs used by a Web Pages application.</span></span>
+> <span data-ttu-id="3c590-104">웹 페이지 응용 프로그램에서 사용 하는 Url을 사용자 지정 하는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="3c590-104">How to customize the URLs used by a Web Pages application.</span></span>
 
 
-- [<span data-ttu-id="318fb-105">ASP.NET 웹 페이지 사이트에서 읽을 수 있는 URL 만들기</span><span class="sxs-lookup"><span data-stu-id="318fb-105">Creating Readable URLs in ASP.NET Web Pages Sites</span></span>](creating-readable-urls-in-aspnet-web-pages-sites.md)
+- [<span data-ttu-id="3c590-105">ASP.NET 웹 페이지 사이트에서 읽을 수 있는 URL 만들기</span><span class="sxs-lookup"><span data-stu-id="3c590-105">Creating Readable URLs in ASP.NET Web Pages Sites</span></span>](creating-readable-urls-in-aspnet-web-pages-sites.md)

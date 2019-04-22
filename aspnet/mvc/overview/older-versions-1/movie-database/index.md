@@ -12,13 +12,13 @@ ms.openlocfilehash: a3f501a7e46e39609e4669c034cc70e8f88993a5
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59379094"
 ---
-# <a name="movie-database"></a><span data-ttu-id="6f65c-103">영화 데이터베이스</span><span class="sxs-lookup"><span data-stu-id="6f65c-103">Movie Database</span></span>
+# <a name="movie-database"></a><span data-ttu-id="d15f2-103">영화 데이터베이스</span><span class="sxs-lookup"><span data-stu-id="d15f2-103">Movie Database</span></span>
 
-> <span data-ttu-id="6f65c-104">15 분만에 영화 데이터베이스 응용 프로그램을 빌드하는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="6f65c-104">How to build a Movie database application in 15 minutes.</span></span>
+> <span data-ttu-id="d15f2-104">15 분만에 영화 데이터베이스 응용 프로그램을 빌드하는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="d15f2-104">How to build a Movie database application in 15 minutes.</span></span>
 
 
-- [<span data-ttu-id="6f65c-105">ASP.NET MVC를 사용하여 15분 만에 영화 데이터베이스 애플리케이션 만들기(C#)</span><span class="sxs-lookup"><span data-stu-id="6f65c-105">Create a Movie Database Application in 15 Minutes with ASP.NET MVC (C#)</span></span>](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs.md)
-- [<span data-ttu-id="6f65c-106">ASP.NET MVC를 사용하여 15분 만에 영화 데이터베이스 애플리케이션 만들기(VB)</span><span class="sxs-lookup"><span data-stu-id="6f65c-106">Create a Movie Database Application in 15 Minutes with ASP.NET MVC (VB)</span></span>](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb.md)
+- [<span data-ttu-id="d15f2-105">ASP.NET MVC를 사용하여 15분만에 영화 데이터베이스 애플리케이션 만들기(C#)</span><span class="sxs-lookup"><span data-stu-id="d15f2-105">Create a Movie Database Application in 15 Minutes with ASP.NET MVC (C#)</span></span>](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs.md)
+- [<span data-ttu-id="d15f2-106">ASP.NET MVC를 사용하여 15분만에 영화 데이터베이스 애플리케이션 만들기(VB)</span><span class="sxs-lookup"><span data-stu-id="d15f2-106">Create a Movie Database Application in 15 Minutes with ASP.NET MVC (VB)</span></span>](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb.md)

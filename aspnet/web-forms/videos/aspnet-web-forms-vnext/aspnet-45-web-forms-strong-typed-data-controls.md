@@ -12,16 +12,16 @@ ms.openlocfilehash: 369ed343921f2b26fb5da2c69c42913ad8cb3b41
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59379445"
 ---
-# <a name="aspnet-45-web-forms-strong-typed-data-controls"></a><span data-ttu-id="4472f-103">ASP.NET 4.5 Web Forms 강력한 형식의 데이터 컨트롤</span><span class="sxs-lookup"><span data-stu-id="4472f-103">ASP.NET 4.5 Web Forms Strong Typed Data Controls</span></span>
+# <a name="aspnet-45-web-forms-strong-typed-data-controls"></a><span data-ttu-id="63929-103">ASP.NET 4.5 Web Forms 강력한 형식의 데이터 컨트롤</span><span class="sxs-lookup"><span data-stu-id="63929-103">ASP.NET 4.5 Web Forms Strong Typed Data Controls</span></span>
 
-<span data-ttu-id="4472f-104">[Scott Hanselman](https://github.com/shanselman)</span><span class="sxs-lookup"><span data-stu-id="4472f-104">by [Scott Hanselman](https://github.com/shanselman)</span></span>
+<span data-ttu-id="63929-104">[Scott Hanselman](https://github.com/shanselman)</span><span class="sxs-lookup"><span data-stu-id="63929-104">by [Scott Hanselman](https://github.com/shanselman)</span></span>
 
-[<span data-ttu-id="4472f-105">&#9654;비디오 (4 분)</span><span class="sxs-lookup"><span data-stu-id="4472f-105">&#9654; Watch video (4 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-45-web-forms-strong-typed-data-controls)
+[<span data-ttu-id="63929-105">&#9654;비디오 (4 분)</span><span class="sxs-lookup"><span data-stu-id="63929-105">&#9654; Watch video (4 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-45-web-forms-strong-typed-data-controls)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="4472f-106">[이전](aspnet-45-web-forms-model-binding.md)
-> [다음](aspnet-vnext-videos-bundling-and-minification.md)</span><span class="sxs-lookup"><span data-stu-id="4472f-106">[Previous](aspnet-45-web-forms-model-binding.md)
+> <span data-ttu-id="63929-106">[이전](aspnet-45-web-forms-model-binding.md)
+> [다음](aspnet-vnext-videos-bundling-and-minification.md)</span><span class="sxs-lookup"><span data-stu-id="63929-106">[Previous](aspnet-45-web-forms-model-binding.md)
 [Next](aspnet-vnext-videos-bundling-and-minification.md)</span></span>

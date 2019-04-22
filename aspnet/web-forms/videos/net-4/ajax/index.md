@@ -12,15 +12,15 @@ ms.openlocfilehash: 3f090f46b5e7c7f9b046f2cdbef7162cc6f364cb
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59386816"
 ---
-# <a name="ajax"></a><span data-ttu-id="b12d7-103">Ajax</span><span class="sxs-lookup"><span data-stu-id="b12d7-103">Ajax</span></span>
+# <a name="ajax"></a><span data-ttu-id="b2cf6-103">Ajax</span><span class="sxs-lookup"><span data-stu-id="b2cf6-103">Ajax</span></span>
 
-> <span data-ttu-id="b12d7-104">이 비디오 시리즈 ASP.NET 4에서 JavaScript 및 jQuery 지원에 대 한 새 기능을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="b12d7-104">This video series shows the new features in ASP.NET 4 for JavaScript and jQuery support.</span></span>
+> <span data-ttu-id="b2cf6-104">이 비디오 시리즈 ASP.NET 4에서 JavaScript 및 jQuery 지원에 대 한 새 기능을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="b2cf6-104">This video series shows the new features in ASP.NET 4 for JavaScript and jQuery support.</span></span>
 
 
-- [<span data-ttu-id="b12d7-105">Microsoft 클라이언트 쪽 컨트롤에 대한 명령적 JavaScript 구문</span><span class="sxs-lookup"><span data-stu-id="b12d7-105">Imperative JavaScript Syntax for Microsoft Client Side Controls</span></span>](aspnet-4-quick-hit-imperative-javascript-syntax-for-microsoft-client-side-controls.md)
-- [<span data-ttu-id="b12d7-106">ScriptLoader</span><span class="sxs-lookup"><span data-stu-id="b12d7-106">ScriptLoader</span></span>](aspnet-4-quick-hit-the-scriptloader.md)
-- [<span data-ttu-id="b12d7-107">Microsoft Ajax에 대한 jQuery 구문</span><span class="sxs-lookup"><span data-stu-id="b12d7-107">JQuery Syntax for Microsoft Ajax</span></span>](aspnet-4-quick-hit-jquery-syntax-for-microsoft-ajax.md)
-- [<span data-ttu-id="b12d7-108">AJAX 데이터 템플릿</span><span class="sxs-lookup"><span data-stu-id="b12d7-108">AJAX Data Templates</span></span>](aspnet-4-quick-hit-ajax-data-templates.md)
+- [<span data-ttu-id="b2cf6-105">Microsoft 클라이언트 쪽 컨트롤에 대한 명령적 JavaScript 구문</span><span class="sxs-lookup"><span data-stu-id="b2cf6-105">Imperative JavaScript Syntax for Microsoft Client Side Controls</span></span>](aspnet-4-quick-hit-imperative-javascript-syntax-for-microsoft-client-side-controls.md)
+- [<span data-ttu-id="b2cf6-106">ScriptLoader</span><span class="sxs-lookup"><span data-stu-id="b2cf6-106">ScriptLoader</span></span>](aspnet-4-quick-hit-the-scriptloader.md)
+- [<span data-ttu-id="b2cf6-107">Microsoft Ajax에 대한 JQuery 구문</span><span class="sxs-lookup"><span data-stu-id="b2cf6-107">JQuery Syntax for Microsoft Ajax</span></span>](aspnet-4-quick-hit-jquery-syntax-for-microsoft-ajax.md)
+- [<span data-ttu-id="b2cf6-108">AJAX 데이터 템플릿</span><span class="sxs-lookup"><span data-stu-id="b2cf6-108">AJAX Data Templates</span></span>](aspnet-4-quick-hit-ajax-data-templates.md)

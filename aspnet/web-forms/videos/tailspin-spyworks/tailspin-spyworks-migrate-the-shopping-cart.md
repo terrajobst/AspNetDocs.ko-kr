@@ -12,18 +12,18 @@ ms.openlocfilehash: bb7a6e1208d97cf27e05a6ab5753d02485addc8e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59378964"
 ---
-# <a name="tailspin-spyworks---migrate-the-shopping-cart"></a><span data-ttu-id="c47fd-103">Tailspin Spyworks - 쇼핑 카트 마이그레이션</span><span class="sxs-lookup"><span data-stu-id="c47fd-103">Tailspin Spyworks - Migrate the Shopping Cart</span></span>
+# <a name="tailspin-spyworks---migrate-the-shopping-cart"></a><span data-ttu-id="5191e-103">Tailspin Spyworks - 쇼핑 카트 마이그레이션</span><span class="sxs-lookup"><span data-stu-id="5191e-103">Tailspin Spyworks - Migrate the Shopping Cart</span></span>
 
-<span data-ttu-id="c47fd-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="c47fd-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="5191e-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="5191e-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="c47fd-105">Joe Stagner Tailspin Spyworks 샘플 Web Forms 응용 프로그램에 대 한 최종 체크 아웃 하기 전에 인증 페이지로 익명 사용자의 쇼핑 카트를 변환 하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="c47fd-105">Joe Stagner shows how to convert the shopping cart of an anonymous user to an authenticated one before final check out for the Tailspin Spyworks sample Web Forms application.</span></span>
+<span data-ttu-id="5191e-105">Joe Stagner Tailspin Spyworks 샘플 Web Forms 응용 프로그램에 대 한 최종 체크 아웃 하기 전에 인증 페이지로 익명 사용자의 쇼핑 카트를 변환 하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="5191e-105">Joe Stagner shows how to convert the shopping cart of an anonymous user to an authenticated one before final check out for the Tailspin Spyworks sample Web Forms application.</span></span>
 
-[<span data-ttu-id="c47fd-106">&#9654;비디오 (23 분)</span><span class="sxs-lookup"><span data-stu-id="c47fd-106">&#9654; Watch video (23 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/tailspin-spyworks-migrate-the-shopping-cart)
+[<span data-ttu-id="5191e-106">&#9654;비디오 (23 분)</span><span class="sxs-lookup"><span data-stu-id="5191e-106">&#9654; Watch video (23 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/tailspin-spyworks-migrate-the-shopping-cart)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="c47fd-107">[이전](tailspin-spyworks-update-the-shopping-cart.md)
-> [다음](tailspin-spyworks-final-check-out.md)</span><span class="sxs-lookup"><span data-stu-id="c47fd-107">[Previous](tailspin-spyworks-update-the-shopping-cart.md)
+> <span data-ttu-id="5191e-107">[이전](tailspin-spyworks-update-the-shopping-cart.md)
+> [다음](tailspin-spyworks-final-check-out.md)</span><span class="sxs-lookup"><span data-stu-id="5191e-107">[Previous](tailspin-spyworks-update-the-shopping-cart.md)
 [Next](tailspin-spyworks-final-check-out.md)</span></span>

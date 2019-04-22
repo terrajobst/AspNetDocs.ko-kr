@@ -12,18 +12,18 @@ ms.openlocfilehash: 8059aef7d977e0a12957f05fab38fc2e831a345f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59387860"
 ---
-# <a name="javascript-debugging-in-visual-studio-2008"></a><span data-ttu-id="8d150-103">Visual Studio 2008에서 JavaScript 디버깅</span><span class="sxs-lookup"><span data-stu-id="8d150-103">JavaScript Debugging in Visual Studio 2008</span></span>
+# <a name="javascript-debugging-in-visual-studio-2008"></a><span data-ttu-id="e525b-103">Visual Studio 2008에서 JavaScript 디버깅</span><span class="sxs-lookup"><span data-stu-id="e525b-103">JavaScript Debugging in Visual Studio 2008</span></span>
 
-<span data-ttu-id="8d150-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="8d150-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="e525b-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="e525b-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="8d150-105">기존 웹 응용 프로그램을 사용 하겠습니다 웹 응용 프로그램에서 JavaScript를 디버깅 하려면 Visual Studio 2008을 사용 하는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="8d150-105">Using an existing web application, I will show you how to use Visual Studio 2008 to debug JavaScript in a web application.</span></span>
+<span data-ttu-id="e525b-105">기존 웹 응용 프로그램을 사용 하겠습니다 웹 응용 프로그램에서 JavaScript를 디버깅 하려면 Visual Studio 2008을 사용 하는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="e525b-105">Using an existing web application, I will show you how to use Visual Studio 2008 to debug JavaScript in a web application.</span></span>
 
-[<span data-ttu-id="8d150-106">&#9654;비디오 (9 분)</span><span class="sxs-lookup"><span data-stu-id="8d150-106">&#9654; Watch video (9 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/javascript-debugging-in-visual-studio-2008)
+[<span data-ttu-id="e525b-106">&#9654;비디오 (9 분)</span><span class="sxs-lookup"><span data-stu-id="e525b-106">&#9654; Watch video (9 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/javascript-debugging-in-visual-studio-2008)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="8d150-107">[이전](javascript-intellisense-support-in-visual-studio-2008.md)
-> [다음](multi-targeting-support-in-visual-studio-2008.md)</span><span class="sxs-lookup"><span data-stu-id="8d150-107">[Previous](javascript-intellisense-support-in-visual-studio-2008.md)
+> <span data-ttu-id="e525b-107">[이전](javascript-intellisense-support-in-visual-studio-2008.md)
+> [다음](multi-targeting-support-in-visual-studio-2008.md)</span><span class="sxs-lookup"><span data-stu-id="e525b-107">[Previous](javascript-intellisense-support-in-visual-studio-2008.md)
 [Next](multi-targeting-support-in-visual-studio-2008.md)</span></span>

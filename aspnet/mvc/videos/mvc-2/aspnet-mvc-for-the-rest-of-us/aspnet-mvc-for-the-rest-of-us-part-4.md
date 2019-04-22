@@ -12,16 +12,16 @@ ms.openlocfilehash: 919a28e221ed87aef6cc05d95ab95264026180e6
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59421448"
 ---
-# <a name="aspnet-mvc-for-the-rest-of-us-part-4"></a><span data-ttu-id="8925e-103">나머지 개발자를 위한 ASP.NET MVC: 4부</span><span class="sxs-lookup"><span data-stu-id="8925e-103">ASP.NET MVC For the Rest of Us: Part 4</span></span>
+# <a name="aspnet-mvc-for-the-rest-of-us-part-4"></a><span data-ttu-id="d192b-103">나머지 개발자를 위한 ASP.NET MVC: 4부</span><span class="sxs-lookup"><span data-stu-id="d192b-103">ASP.NET MVC For the Rest of Us: Part 4</span></span>
 
-<span data-ttu-id="8925e-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="8925e-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="d192b-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="d192b-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="8925e-105">이 비디오에서는 Microsoft의 Joe Stagner는 ASP.NET MVC 응용 프로그램에 컨트롤러를 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="8925e-105">In this video Microsoft's Joe Stagner adds a controller to an ASP.NET MVC application.</span></span>
+<span data-ttu-id="d192b-105">이 비디오에서는 Microsoft의 Joe Stagner는 ASP.NET MVC 응용 프로그램에 컨트롤러를 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="d192b-105">In this video Microsoft's Joe Stagner adds a controller to an ASP.NET MVC application.</span></span>
 
-[<span data-ttu-id="8925e-106">&#9654;비디오 (5 분)</span><span class="sxs-lookup"><span data-stu-id="8925e-106">&#9654; Watch video (5 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-mvc-for-the-rest-of-us-part-4)
+[<span data-ttu-id="d192b-106">&#9654;비디오 (5 분)</span><span class="sxs-lookup"><span data-stu-id="d192b-106">&#9654; Watch video (5 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-mvc-for-the-rest-of-us-part-4)
 
 > [!div class="step-by-step"]
-> [<span data-ttu-id="8925e-107">이전</span><span class="sxs-lookup"><span data-stu-id="8925e-107">Previous</span></span>](aspnet-mvc-for-the-rest-of-us-part-3.md)
+> [<span data-ttu-id="d192b-107">이전</span><span class="sxs-lookup"><span data-stu-id="d192b-107">Previous</span></span>](aspnet-mvc-for-the-rest-of-us-part-3.md)

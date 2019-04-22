@@ -12,19 +12,19 @@ ms.openlocfilehash: cdd26f05aef75d1511482ae357f62258fbffce25
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59422319"
 ---
-# <a name="aspnet-4---tailspin-spyworks"></a><span data-ttu-id="4a720-103">ASP.NET 4 - Tailspin Spyworks</span><span class="sxs-lookup"><span data-stu-id="4a720-103">ASP.NET 4 - Tailspin Spyworks</span></span>
+# <a name="aspnet-4---tailspin-spyworks"></a><span data-ttu-id="c7b41-103">ASP.NET 4 - Tailspin Spyworks</span><span class="sxs-lookup"><span data-stu-id="c7b41-103">ASP.NET 4 - Tailspin Spyworks</span></span>
 
-> <span data-ttu-id="4a720-104">쇼핑, 체크 아웃 및 관리를 포함 하는 온라인 상점을 구축 하려면 ASP.NET 4의 새 기능을 사용 하는 방법.</span><span class="sxs-lookup"><span data-stu-id="4a720-104">How to use new features in ASP.NET 4 to build an online store, including shopping, checkout, and administration.</span></span>
+> <span data-ttu-id="c7b41-104">쇼핑, 체크 아웃 및 관리를 포함 하는 온라인 상점을 구축 하려면 ASP.NET 4의 새 기능을 사용 하는 방법.</span><span class="sxs-lookup"><span data-stu-id="c7b41-104">How to use new features in ASP.NET 4 to build an online store, including shopping, checkout, and administration.</span></span>
 
 
-- [<span data-ttu-id="4a720-105">1부: 파일-> 새 프로젝트</span><span class="sxs-lookup"><span data-stu-id="4a720-105">Part 1: File-> New Project</span></span>](tailspin-spyworks-part-1.md)
-- [<span data-ttu-id="4a720-106">2부: 데이터 액세스 계층</span><span class="sxs-lookup"><span data-stu-id="4a720-106">Part 2: Data Access Layer</span></span>](tailspin-spyworks-part-2.md)
-- [<span data-ttu-id="4a720-107">3부: 레이아웃 및 범주 메뉴</span><span class="sxs-lookup"><span data-stu-id="4a720-107">Part 3: Layout and Category Menu</span></span>](tailspin-spyworks-part-3.md)
-- [<span data-ttu-id="4a720-108">4부: 제품 나열</span><span class="sxs-lookup"><span data-stu-id="4a720-108">Part 4: Listing Products</span></span>](tailspin-spyworks-part-4.md)
-- [<span data-ttu-id="4a720-109">5부: 비즈니스 논리</span><span class="sxs-lookup"><span data-stu-id="4a720-109">Part 5: Business Logic</span></span>](tailspin-spyworks-part-5.md)
-- [<span data-ttu-id="4a720-110">6부: ASP.NET 멤버 자격</span><span class="sxs-lookup"><span data-stu-id="4a720-110">Part 6: ASP.NET Membership</span></span>](tailspin-spyworks-part-6.md)
-- [<span data-ttu-id="4a720-111">7부: 기능 추가</span><span class="sxs-lookup"><span data-stu-id="4a720-111">Part 7: Adding Features</span></span>](tailspin-spyworks-part-7.md)
-- [<span data-ttu-id="4a720-112">8부: 최종 페이지, 예외 처리 및 결론</span><span class="sxs-lookup"><span data-stu-id="4a720-112">Part 8: Final Pages, Exception Handling, and Conclusion</span></span>](tailspin-spyworks-part-8.md)
+- [<span data-ttu-id="c7b41-105">1부: 파일-> 새 프로젝트</span><span class="sxs-lookup"><span data-stu-id="c7b41-105">Part 1: File-> New Project</span></span>](tailspin-spyworks-part-1.md)
+- [<span data-ttu-id="c7b41-106">2부: 데이터 액세스 계층</span><span class="sxs-lookup"><span data-stu-id="c7b41-106">Part 2: Data Access Layer</span></span>](tailspin-spyworks-part-2.md)
+- [<span data-ttu-id="c7b41-107">3 부: 레이아웃 및 범주 메뉴</span><span class="sxs-lookup"><span data-stu-id="c7b41-107">Part 3: Layout and Category Menu</span></span>](tailspin-spyworks-part-3.md)
+- [<span data-ttu-id="c7b41-108">4 부: 제품 목록</span><span class="sxs-lookup"><span data-stu-id="c7b41-108">Part 4: Listing Products</span></span>](tailspin-spyworks-part-4.md)
+- [<span data-ttu-id="c7b41-109">5 부: 비즈니스 논리</span><span class="sxs-lookup"><span data-stu-id="c7b41-109">Part 5: Business Logic</span></span>](tailspin-spyworks-part-5.md)
+- [<span data-ttu-id="c7b41-110">6 부: ASP.NET 멤버 자격</span><span class="sxs-lookup"><span data-stu-id="c7b41-110">Part 6: ASP.NET Membership</span></span>](tailspin-spyworks-part-6.md)
+- [<span data-ttu-id="c7b41-111">7 부: 추가 기능</span><span class="sxs-lookup"><span data-stu-id="c7b41-111">Part 7: Adding Features</span></span>](tailspin-spyworks-part-7.md)
+- [<span data-ttu-id="c7b41-112">8 부: 최종 페이지, 예외 처리 및 결론</span><span class="sxs-lookup"><span data-stu-id="c7b41-112">Part 8: Final Pages, Exception Handling, and Conclusion</span></span>](tailspin-spyworks-part-8.md)
