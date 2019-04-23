@@ -12,7 +12,7 @@ ms.openlocfilehash: 266d2e3fda54a9e584622ccd595e41229c96e6b0
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59420746"
 ---
 # <a name="adding-validation-to-the-model"></a>모델에 유효성 검사 추가
@@ -49,7 +49,7 @@ ASP.NET MVC 및 Entity Framework Code First에서 제공 되는 유효성 검사
 
 응용 프로그램을 실행 하 고 다음 런타임 오류가 다시 표시 됩니다.
 
-***'MovieDBContext' 컨텍스트를 지 원하는 모델 데이터베이스를 만든 이후에 변경 되었습니다. Code First 마이그레이션을 사용 하 여 데이터베이스를 업데이트 하는 것이 좋습니다 ([https://go.microsoft.com/fwlink/?LinkId=238269](https://go.microsoft.com/fwlink/?LinkId=238269)).)).***
+***'MovieDBContext' 컨텍스트를 지 원하는 모델 데이터베이스를 만든 이후에 변경 되었습니다. Code First 마이그레이션을 사용 하 여 데이터베이스를 업데이트 하는 것이 좋습니다 ([https://go.microsoft.com/fwlink/?LinkId=238269](https://go.microsoft.com/fwlink/?LinkId=238269)).***
 
 마이그레이션 스키마를 업데이트 하려면 사용 합니다. 솔루션을 연 다음 합니다 **패키지 관리자 콘솔** 창 하 고 다음 명령을 입력 합니다.
 

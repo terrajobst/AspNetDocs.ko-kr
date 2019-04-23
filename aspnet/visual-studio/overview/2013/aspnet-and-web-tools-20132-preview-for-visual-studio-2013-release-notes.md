@@ -12,7 +12,7 @@ ms.openlocfilehash: 22d4d4afd6963f23d6cfef1745a859c20b69d599
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59422995"
 ---
 # <a name="aspnet-and-web-tools-20132--for-visual-studio-2013-release-notes"></a>Visual Studio 2013용 ASP.NET 및 Web Tools 2013.2 릴리스 정보
@@ -49,7 +49,7 @@ ASP.NET 및 Web Tools for Visual Studio 2013.2 Visual Studio 2013이 필요 합�
 - [ASP.NET Web API 2.1.2](#webapi)
 - [ASP.NET Web Pages 3.1.2](#webpages)
 - [Entity Framework 6.1](#ef)
-- [ASP.NET Id 2.0.0](#identity)
+- [ASP.NET Identity 2.0.0](#identity)
 - [Microsoft OWIN 구성 요소](#owin)
 - [ASP.NET SignalR 2.0.2](#signalr)
 
@@ -216,7 +216,7 @@ NuGet 2.8.1 RTM은 2014 년 4 월 출시 됩니다. 다음 릴리스 정보에�
 - [전역 오류 처리](../../../web-api/overview/releases/whats-new-in-aspnet-web-api-21.md#global-error)
 - [특성 라우팅 향상 된 기능](../../../web-api/overview/releases/whats-new-in-aspnet-web-api-21.md#attribute-routing)
 - [도움말 페이지 개선](../../../web-api/overview/releases/whats-new-in-aspnet-web-api-21.md#help-page)
-- [IgnoreRoute 지원](../../../web-api/overview/releases/whats-new-in-aspnet-web-api-21.md#ignoreroute)
+- [IgnoreRoute support](../../../web-api/overview/releases/whats-new-in-aspnet-web-api-21.md#ignoreroute)
 - [BSON 미디어 유형 포맷터입니다.](../../../web-api/overview/releases/whats-new-in-aspnet-web-api-21.md#bson)
 - [비동기 필터에 대 한 지원 향상](../../../web-api/overview/releases/whats-new-in-aspnet-web-api-21.md#async-filters)
 - [클라이언트 라이브러리를 서식 지정에 대 한 구문 분석 쿼리](../../../web-api/overview/releases/whats-new-in-aspnet-web-api-21.md#query-parsing)

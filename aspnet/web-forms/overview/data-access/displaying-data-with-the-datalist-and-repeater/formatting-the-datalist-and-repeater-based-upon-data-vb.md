@@ -12,7 +12,7 @@ ms.openlocfilehash: 8955e37aa084f339665bbd4dc0475f7be74f3b26
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59421604"
 ---
 # <a name="formatting-the-datalist-and-repeater-based-upon-data-vb"></a>데이터를 기반으로 DataList 및 반복기 서식 지정(VB)
@@ -74,7 +74,7 @@ DataList 컨트롤에 대 한 변경 내용 서식 지정에 사용 하 여 전�
 DataList 및 ObjectDataSource 기능을 복제 한 후 `Basics.aspx` 에 `Formatting.aspx`, s DataList를 변경 하려면 잠시 `ID` 속성을 `DataList1` 하는 보다 자세한 `ItemDataBoundFormattingExample`합니다. 다음으로, 브라우저에서 DataList를 봅니다. 그림 1에서 알 수 있듯이, 서식 지정 각 제품 간의 점만 배경색 교대로 나타납니다.
 
 
-[![T그리고 제품 DataList 컨트롤에 나열 된](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image2.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image1.png)
+[![제품은 DataList 컨트롤에 나열 됩니다.](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image2.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image1.png)
 
 **그림 1**: 제품 DataList 컨트롤에 나열 됩니다 ([클릭 하 여 큰 이미지 보기](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image3.png))
 
@@ -117,7 +117,7 @@ S 제품 가격 20.00 달러 임을 알고 있으므로에 이름과 가격을 �
 사용 하 여 합니다 `ItemDataBound` 다시 확인을 완료 하는 이벤트 처리기는 `Formatting.aspx` 브라우저에서 페이지입니다. 그림 2에서 알 수 있듯이, 해당 이름 및 강조 표시 된 가격은 $20.00 아래 가격을 사용 하 여 해당 제품에 있습니다.
 
 
-[![T$20.00 강조 표시 됩니다 보다 작은 제품을 크게](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image5.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image4.png)
+[![이러한 제품 보다 $20.00 강조 표시 됩니다.](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image5.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image4.png)
 
 **그림 2**: 이러한 제품 보다 $20.00 강조 표시 됩니다 ([클릭 하 여 큰 이미지 보기](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image6.png))
 
@@ -129,7 +129,7 @@ S 제품 가격 20.00 달러 임을 알고 있으므로에 이름과 가격을 �
 그러나 `RepeaterItem` don t Repeater 컨트롤을 구성 하는 이러한 수준의 스타일 속성을 제공 합니다. 따라서 반복기에는 사용자 지정 서식을 적용 그림 2에서 수행한 것 처럼 반복기의 템플릿 내에서 웹 컨트롤에 스타일 속성의 응용 프로그램이 필요 합니다.
 
 
-[![T$20.00 아래에서 제품에 대 한 강조 표시 되어 그 전체 제품 항목](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image8.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image7.png)
+[![전체 제품 항목이 $20.00 아래에서 제품에 대 한 강조 표시](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image8.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image7.png)
 
 **그림 3**: $20.00 아래에서 제품에 대 한 전체 제품 항목 강조 표시 됩니다 ([클릭 하 여 큰 이미지 보기](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image9.png))
 
@@ -141,7 +141,7 @@ S 제품 가격 20.00 달러 임을 알고 있으므로에 이름과 가격을 �
 서식 지정 함수를 보여 주기 위해 s 수 있는 경우 제품의 이름 옆에 있는 [지원 되지 않는] 텍스트를 포함 하는 제품 정보를 해당 s 중단 합니다. 또한 let s가 가격 강조 표시 된 노란색 경우 해당 $20.00 보다 작거나 (에서 수행한 것 처럼는 `ItemDataBound` 이벤트 처리기 예제) 가격은 $20.00 또는 더 높은, s에 실제 가격을 표시 하지 이지만 가격 견적에 대 한 텍스트 하세요를 호출 하는 대신 하는 경우. 그림 4에 적용 되는 이러한 서식 지정 규칙을 사용 하 여 나열 하는 제품의 스크린 샷을 보여 줍니다.
 
 
-[![F또는 Expensive Products, 가격은 가격 견적에 대 한 호출 하십시오 텍스트로 바뀝니다](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image11.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image10.png)
+[![비용이 많이 드는 제품에 대 한 가격을 가격 견적에 대 한 호출 하십시오 텍스트로 바뀝니다.](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image11.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image10.png)
 
 **그림 4**: 비용이 많이 드는 제품에 대 한 가격을 가격 견적에 대 한 호출 하십시오 텍스트로 바뀝니다 ([클릭 하 여 큰 이미지 보기](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image12.png))
 
@@ -182,7 +182,7 @@ DataList s에서에서 `ItemTemplate` 는 `ProductNameLabel` Label 웹 컨트롤
 곳의 서식 지정 함수에 대 한 호출을 사용 하 여 시간을 내어 브라우저에서 진행 상황을 보고 합니다. [지원 되지 않는] 텍스트를 포함 하 여 지원 되지 않는 제품을 사용 하 여 그림 5와 유사한 화면이 표시 됩니다 및 해당 제품 가격을 가진 $20.00 개 비용으로 대체 텍스트 하세요 가격 견적에 대 한 호출 합니다.
 
 
-[![F또는 Expensive Products, 가격은 가격 견적에 대 한 호출 하십시오 텍스트로 바뀝니다](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image14.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image13.png)
+[![비용이 많이 드는 제품에 대 한 가격을 가격 견적에 대 한 호출 하십시오 텍스트로 바뀝니다.](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image14.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image13.png)
 
 **그림 5**: 비용이 많이 드는 제품에 대 한 가격을 가격 견적에 대 한 호출 하십시오 텍스트로 바뀝니다 ([클릭 하 여 큰 이미지 보기](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image15.png))
 

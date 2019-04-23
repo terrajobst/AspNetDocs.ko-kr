@@ -12,7 +12,7 @@ ms.openlocfilehash: eab1ad6cd4636ab3d35988ec8dc762c8a8f51ef4
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59421136"
 ---
 # <a name="protecting-connection-strings-and-other-configuration-information-c"></a>연결 문자열 및 기타 구성 정보 보호(C#)
@@ -31,7 +31,7 @@ ASP.NET 응용 프로그램에 대 한 구성 정보는 일반적으로 라는 X
 이후 `Web.config` 연결 문자열과 같은 중요 한 데이터를 포함할 수 것이 중요 하는 내용의 `Web.config` 안전 하 고 무단 뷰어에서 숨겨진 유지 합니다. 기본적으로 사용 하 여 파일에 HTTP 요청는 `.config` 확장 반환 하는 ASP.NET 엔진에 의해 처리 되는 *이런이 종류의 페이지를 제공 하지는* 그림 1에 표시 되는 메시지입니다. 즉, 방문자가 볼 수 없습니다 하 `Web.config` 파일 s 콘텐츠를 입력 하 여 간단히 http://www.YourServer.com/Web.config 해당 s 브라우저 주소 표시줄에 있습니다.
 
 
-[![VWeb.config를 통해는 브라우저는이 페이지의 입력을 반환 하지 isiting 메시지 처리](protecting-connection-strings-and-other-configuration-information-cs/_static/image2.png)](protecting-connection-strings-and-other-configuration-information-cs/_static/image1.png)
+[![메시지를 제공 하지는 Web.config를 통해는 브라우저 반환 페이지의 입력이 방문](protecting-connection-strings-and-other-configuration-information-cs/_static/image2.png)](protecting-connection-strings-and-other-configuration-information-cs/_static/image1.png)
 
 **그림 1**: 방문 `Web.config` 를 통해는 브라우저 반환이 페이지의 입력 메시지를 제공 하지는 ([큰 이미지를 보려면 클릭](protecting-connection-strings-and-other-configuration-information-cs/_static/image3.png))
 
@@ -83,7 +83,7 @@ S를 통해 프로그래밍 방식으로 보호 구성 정보를 보여 주기 �
 이 시점에서 화면은 그림 2와 비슷하게 표시 됩니다.
 
 
-[![Add는 텍스트 상자 및 페이지에 두 개의 단추 웹 컨트롤](protecting-connection-strings-and-other-configuration-information-cs/_static/image5.png)](protecting-connection-strings-and-other-configuration-information-cs/_static/image4.png)
+[![페이지에 텍스트 상자와 두 개의 단추 웹 컨트롤 추가](protecting-connection-strings-and-other-configuration-information-cs/_static/image5.png)](protecting-connection-strings-and-other-configuration-information-cs/_static/image4.png)
 
 **그림 2**: 페이지에 텍스트 상자 및 두 개의 단추 웹 컨트롤 추가 ([클릭 하 여 큰 이미지 보기](protecting-connection-strings-and-other-configuration-information-cs/_static/image6.png))
 
@@ -111,7 +111,7 @@ S를 통해 프로그래밍 방식으로 보호 구성 정보를 보여 주기 �
 위의 코드를 입력 하 고 나면 방문 하 여 테스트를 `EncryptingConfigSections.aspx` 브라우저를 통해 페이지입니다. 내용을 나열 하는 페이지를 처음에 표시 됩니다 `Web.config` 사용 하 여는 `<connectionStrings>` 일반 텍스트에 표시 된 섹션 (그림 3 참조).
 
 
-[![Add는 텍스트 상자 및 페이지에 두 개의 단추 웹 컨트롤](protecting-connection-strings-and-other-configuration-information-cs/_static/image8.png)](protecting-connection-strings-and-other-configuration-information-cs/_static/image7.png)
+[![페이지에 텍스트 상자와 두 개의 단추 웹 컨트롤 추가](protecting-connection-strings-and-other-configuration-information-cs/_static/image8.png)](protecting-connection-strings-and-other-configuration-information-cs/_static/image7.png)
 
 **그림 3**: 페이지에 텍스트 상자 및 두 개의 단추 웹 컨트롤 추가 ([클릭 하 여 큰 이미지 보기](protecting-connection-strings-and-other-configuration-information-cs/_static/image9.png))
 
@@ -126,7 +126,7 @@ S를 통해 프로그래밍 방식으로 보호 구성 정보를 보여 주기 �
 페이지에 대 한 요청 유효성 검사를 해제 한 후 연결 문자열 암호화 단추를 다시 클릭 하십시오. 포스트백에서 구성 파일에 액세스할 수는 고 `<connectionStrings>` 섹션 DPAPI 공급자를 사용 하 여 암호화 합니다. 새 표시할 입력란 그런 `Web.config` 콘텐츠입니다. 그림 4에서 알 수 있듯이는 `<connectionStrings>` 정보는 이제 암호화 합니다.
 
 
-[![C암호화 연결 문자열 단추 암호화를 클릭 하 여 &lt;connectionString&gt; 섹션](protecting-connection-strings-and-other-configuration-information-cs/_static/image11.png)](protecting-connection-strings-and-other-configuration-information-cs/_static/image10.png)
+[![암호화 연결 문자열 단추 암호화를 클릭 하 여 &lt;connectionString&gt; 섹션](protecting-connection-strings-and-other-configuration-information-cs/_static/image11.png)](protecting-connection-strings-and-other-configuration-information-cs/_static/image10.png)
 
 **그림 4**: 암호화 연결 문자열 단추 암호화를 클릭 하 여 `<connectionString>` 섹션 ([큰 이미지를 보려면 클릭](protecting-connection-strings-and-other-configuration-information-cs/_static/image12.png))
 
@@ -143,7 +143,7 @@ S를 통해 프로그래밍 방식으로 보호 구성 정보를 보여 주기 �
 연결 문자열 정보를 액세스 하는 경우 `Web.config` -역시에서 SqlDataSource 컨트롤을 작성 하는 코드 또는 형식화 된 데이터 집합에서 TableAdapters에서 자동으로 생성 된 코드를 자동으로 해독 됩니다. 즉, 우리가 필요가 없습니다 추가 코드 또는 암호화 된 암호를 해독 하는 논리를 추가 하려면 `<connectionString>` 섹션입니다. 이 보여 주기 위해 이전 자습서 중 하나에 방문의 기본 보고 섹션에서 간단한 표시 자습서 등이 시간 (`~/BasicReporting/SimpleDisplay.aspx`). 그림 5에서 알 수 있듯이, 정확히 의도 한 대로, 암호화 된 연결 문자열 정보는 ASP.NET 페이지에서 자동으로 해독 되 고 나타내는 자습서 작동 합니다.
 
 
-[![T그 데이터 액세스 계층 연결 문자열 정보를 자동으로 해독](protecting-connection-strings-and-other-configuration-information-cs/_static/image14.png)](protecting-connection-strings-and-other-configuration-information-cs/_static/image13.png)
+[![연결 문자열 정보를 자동으로 해독 하는 데이터 액세스 계층](protecting-connection-strings-and-other-configuration-information-cs/_static/image14.png)](protecting-connection-strings-and-other-configuration-information-cs/_static/image13.png)
 
 **그림 5**: 연결 문자열 정보를 자동으로 해독 하는 데이터 액세스 계층 ([클릭 하 여 큰 이미지 보기](protecting-connection-strings-and-other-configuration-information-cs/_static/image15.png))
 

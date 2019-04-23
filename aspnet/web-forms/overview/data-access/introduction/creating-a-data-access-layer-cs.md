@@ -12,7 +12,7 @@ ms.openlocfilehash: 4d8afd13fc693c828850bec53664a4db7d91dede
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59420603"
 ---
 # <a name="creating-a-data-access-layer-c"></a>데이터 액세스 레이어 만들기(C#)
@@ -37,7 +37,7 @@ ms.locfileid: "59420603"
 우리의 액세스 DAL (데이터 계층) 만들 수 있습니다, 전에 먼저 웹 사이트를 만들고 데이터베이스를 설치 해야 합니다. 새 파일 시스템 기반 ASP.NET 웹 사이트를 만들어 시작 합니다. 이렇게 하려면 파일 메뉴로 이동 하 고 새 웹 사이트 대화 상자를 표시 하는 새 웹 사이트를 선택 합니다. ASP.NET 웹 사이트 템플릿을 선택, 파일 시스템 위치 드롭 다운 목록 설정, 웹 사이트를 배치할 폴더를 선택 및 C# 언어를 설정 합니다.
 
 
-[![CNew File System-Based 웹 사이트를 reate](creating-a-data-access-layer-cs/_static/image2.png)](creating-a-data-access-layer-cs/_static/image1.png)
+[![새 파일 시스템 기반 웹 사이트 만들기](creating-a-data-access-layer-cs/_static/image2.png)](creating-a-data-access-layer-cs/_static/image1.png)
 
 **그림 1**: New File System-Based 웹 사이트 만들기 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image3.png))
 
@@ -92,7 +92,7 @@ SQL Server 2000 또는 2005 데이터베이스 서버에 연결할 수 없는 �
 이 자습서의이 아키텍처에 대 한 강력한 형식의 데이터 집합 사용 하겠습니다. 그림 3에서는 형식화 된 데이터 집합을 사용 하는 응용 프로그램의 다른 계층 간에 워크플로 보여 줍니다.
 
 
-[![A데이터 액세스 코드는 DAL에서 구현을 진행 ll](creating-a-data-access-layer-cs/_static/image6.png)](creating-a-data-access-layer-cs/_static/image5.png)
+[![모든 데이터 액세스 코드는 DAL에서 구현을 진행합니다](creating-a-data-access-layer-cs/_static/image6.png)](creating-a-data-access-layer-cs/_static/image5.png)
 
 **그림 3**: 모든 데이터 액세스 코드는 DAL에서 구현을 진행 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image7.png))
 
@@ -102,7 +102,7 @@ SQL Server 2000 또는 2005 데이터베이스 서버에 연결할 수 없는 �
 이 DAL을 만들기 시작 하려면 입력 데이터 집합 프로젝트에 추가 하 여 시작 합니다. 이렇게 하려면 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 새 항목 추가 선택 합니다. 템플릿 목록에서 데이터 집합 옵션을 선택 하 고 이름을 **Northwind.xsd**합니다.
 
 
-[![C새 데이터 집합을 프로젝트에 추가할 설치할](creating-a-data-access-layer-cs/_static/image9.png)](creating-a-data-access-layer-cs/_static/image8.png)
+[![프로젝트에 새 데이터 집합을 추가 하려면 선택 합니다.](creating-a-data-access-layer-cs/_static/image9.png)](creating-a-data-access-layer-cs/_static/image8.png)
 
 **그림 4**: 프로젝트에 새 데이터 집합을 추가 하도록 선택 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image10.png))
 
@@ -116,7 +116,7 @@ SQL Server 2000 또는 2005 데이터베이스 서버에 연결할 수 없는 �
 TableAdapter 구성 마법사를 사용 하는 데이터베이스를 선택 하 여 시작 합니다. 드롭다운 목록에서 서버 탐색기에서 해당 데이터베이스를 보여 줍니다. 서버 탐색기에 Northwind 데이터베이스를 추가 하지 않은 경우에 이렇게 하려면이 이번에 새 연결 단추를 클릭 수 있습니다.
 
 
-[![C설치할 드롭 다운 목록에서 Northwind 데이터베이스](creating-a-data-access-layer-cs/_static/image12.png)](creating-a-data-access-layer-cs/_static/image11.png)
+[![드롭다운 목록에서 Northwind 데이터베이스를 선택 합니다.](creating-a-data-access-layer-cs/_static/image12.png)](creating-a-data-access-layer-cs/_static/image11.png)
 
 **그림 5**: 드롭다운 목록에서 Northwind 데이터베이스를 선택 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image13.png))
 
@@ -124,7 +124,7 @@ TableAdapter 구성 마법사를 사용 하는 데이터베이스를 선택 하 
 데이터베이스를 선택 하 고 다음을 클릭 한 후 메시지가 표시 됩니다에서 연결 문자열을 저장 하려는 경우는 **Web.config** 파일입니다. 연결 문자열을 저장 하 여 하드 코딩 된 TableAdapter 클래스의 연결 문자열 정보를 향후에 변경 되 면 작업을 간소화 하는 것을 방지할 수 있습니다. 에 위치한 구성 파일에서 연결 문자열을 저장 하기로 선택한 경우 합니다 **&lt;connectionStrings&gt;** 수 있는 섹션 [필요에 따라 암호화 된](http://aspnet.4guysfromrolla.com/articles/021506-1.aspx) 개선 보안 또는 관리자에 더 적합 하는 IIS GUI 관리 도구 내에서 새 ASP.NET 2.0 속성 페이지를 통해 나중에 수정 합니다.
 
 
-[![Save Web.config에 연결 문자열](creating-a-data-access-layer-cs/_static/image15.png)](creating-a-data-access-layer-cs/_static/image14.png)
+[![Web.config에 연결 문자열을 저장 합니다.](creating-a-data-access-layer-cs/_static/image15.png)](creating-a-data-access-layer-cs/_static/image14.png)
 
 **그림 6**: 연결 문자열을 저장할 **Web.config** ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image16.png))
 
@@ -134,7 +134,7 @@ TableAdapter 구성 마법사를 사용 하는 데이터베이스를 선택 하 
 SQL 쿼리를 정의 합니다. 시작 하려면 TableAdapter 쿼리를 실행 하려고 하는 방법을 먼저 지정 해야 했습니다. 임시 SQL 문을 사용 하 여, 또는 기존 저장된 프로시저를 사용 하 여 새 저장된 프로시저를 만드는 수 것입니다. 이 자습서에 대 한 임시 SQL 문이 사용 하겠습니다. 가리킵니다 [Brian Noyes](http://briannoyes.net/)의 기사를 [Visual Studio 2005 데이터 집합 디자이너를 사용 하 여 데이터 액세스 계층을 구축](http://www.theserverside.net/articles/showarticle.tss?id=DataSetDesigner) 저장된 프로시저를 사용 하는 예입니다.
 
 
-[![Q쿼리는 임시 SQL 문을 사용 하 여 데이터](creating-a-data-access-layer-cs/_static/image18.png)](creating-a-data-access-layer-cs/_static/image17.png)
+[![임시 SQL 문을 사용 하 여 데이터 쿼리](creating-a-data-access-layer-cs/_static/image18.png)](creating-a-data-access-layer-cs/_static/image17.png)
 
 **그림 7**: 임시 SQL 문을 사용 하 여 데이터 쿼리 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image19.png))
 
@@ -142,7 +142,7 @@ SQL 쿼리를 정의 합니다. 시작 하려면 TableAdapter 쿼리를 실행 �
 이 시점에서 입력할 수 있습니다 SQL 쿼리에서 직접. TableAdapter의 첫 번째 메서드를 만들 때 일반적으로 쿼리를 해당 DataTable에 표현할 수는 해당 열을 반환 하려고 합니다. 모든 열과의 모든 행을 반환 하는 쿼리를 만들어이 작업을 수행할 수 있습니다 것은 **제품** 테이블:
 
 
-[![ESQL 쿼리를의 텍스트 상자를 종료](creating-a-data-access-layer-cs/_static/image21.png)](creating-a-data-access-layer-cs/_static/image20.png)
+[![텍스트 상자에 SQL 쿼리를 입력 합니다.](creating-a-data-access-layer-cs/_static/image21.png)](creating-a-data-access-layer-cs/_static/image20.png)
 
 **그림 8**: SQL 쿼리를 the 텍스트 입력 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image22.png))
 
@@ -150,7 +150,7 @@ SQL 쿼리를 정의 합니다. 시작 하려면 TableAdapter 쿼리를 실행 �
 또는 쿼리 작성기를 사용 하 고 그래픽 그림 9와 같이 쿼리를 작성 합니다.
 
 
-[![C쿼리 그래픽으로 쿼리 편집기를 통해 reate](creating-a-data-access-layer-cs/_static/image24.png)](creating-a-data-access-layer-cs/_static/image23.png)
+[![쿼리 편집기를 통해 쿼리를 그래픽으로 만들기](creating-a-data-access-layer-cs/_static/image24.png)](creating-a-data-access-layer-cs/_static/image23.png)
 
 **그림 9**: 쿼리 그래픽으로 쿼리 편집기를 통해 만듭니다 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image25.png))
 
@@ -158,7 +158,7 @@ SQL 쿼리를 정의 합니다. 시작 하려면 TableAdapter 쿼리를 실행 �
 쿼리를 만든 후 다음 화면으로 이동 하기 전에 고급 옵션 단추를 클릭 합니다. 웹 사이트 프로젝트의 경우 "생성 Insert, Update 및 Delete 문을"의 경우에 고급는 기본적으로 선택 하는 옵션 클래스 라이브러리 또는 Windows 프로젝트에서이 마법사를 실행 하는 경우에 "낙관적 동시성 사용" 옵션을 선택 됩니다. 지금은 "낙관적 동시성 사용" 옵션을 선택 취소 되어 있음을 둡니다. 이후 자습서에서 낙관적 동시성을 검사 합니다.
 
 
-[![S생성 Insert, Update 및 Delete 문 옵션을 선택](creating-a-data-access-layer-cs/_static/image27.png)](creating-a-data-access-layer-cs/_static/image26.png)
+[![생성 Insert, Update 및 Delete 문 옵션을 선택 합니다.](creating-a-data-access-layer-cs/_static/image27.png)](creating-a-data-access-layer-cs/_static/image26.png)
 
 **그림 10**: 생성 Insert, Update 및 Delete 문 옵션을 선택 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image28.png))
 
@@ -173,7 +173,7 @@ SQL 쿼리를 정의 합니다. 시작 하려면 TableAdapter 쿼리를 실행 �
 이 옵션을 선택 하는 경우 최종 확인란 "GenerateDBDirectMethods," 만듭니다 **insert ()** 를 **update ()**, 및 **delete ()** TableAdapter에 대 한 메서드. 이 옵션을 선택 취소 하지 않으면 모든 업데이트 해야 TableAdapter의 유일한 작업은 수행할 **update ()** 형식의 DataSet, DataTable, 단일 DataRow 또는 Datarow 배열을 사용 하는 메서드. (설정한 경우이 확인란을 그림 9의 고급 속성에서 확인 되지 않은 "생성 Insert, Update 및 Delete 문을" 옵션 설정은 영향을 주지 것입니다.) 이 확인란을 선택 두겠습니다. 합니다.
 
 
-[![CGetProducts getdata에서 메서드 이름을 변경](creating-a-data-access-layer-cs/_static/image30.png)](creating-a-data-access-layer-cs/_static/image29.png)
+[![GetProducts getdata에서 메서드 이름 변경](creating-a-data-access-layer-cs/_static/image30.png)](creating-a-data-access-layer-cs/_static/image29.png)
 
 **그림 11**: 메서드 이름을 **GetData** 하 **GetProducts** ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image31.png))
 
@@ -181,7 +181,7 @@ SQL 쿼리를 정의 합니다. 시작 하려면 TableAdapter 쿼리를 실행 �
 마침을 클릭 하 여 마법사를 완료 합니다. 마법사를 닫은 후 방금 만든 DataTable을 보여 주는 데이터 집합 디자이너도 돌아옵니다. 열 목록을 볼 수 있습니다는 **제품** DataTable (**ProductID**를 **ProductName**등)의 메서드는  **ProductsTableAdapter** (**Fill()** 하 고 **GetProducts()**).
 
 
-[![T제품 DataTable 그 ProductsTableAdapter 형식화 된 데이터 집합에 추가한](creating-a-data-access-layer-cs/_static/image33.png)](creating-a-data-access-layer-cs/_static/image32.png)
+[![제품 DataTable 및 ProductsTableAdapter 형식화 된 데이터 집합에 추가 되었습니다.](creating-a-data-access-layer-cs/_static/image33.png)](creating-a-data-access-layer-cs/_static/image32.png)
 
 **그림 12**: 합니다 **제품** DataTable 및 **ProductsTableAdapter** 형식화 된 데이터 집합에 추가 되었습니다 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image34.png))
 
@@ -203,7 +203,7 @@ AllProducts.aspx.cs
 [!code-csharp[Main](creating-a-data-access-layer-cs/samples/sample3.cs)]
 
 
-[![TGridView에 표시 됩니다 그 제품 목록](creating-a-data-access-layer-cs/_static/image36.png)](creating-a-data-access-layer-cs/_static/image35.png)
+[![제품 목록 GridView에 표시 됩니다.](creating-a-data-access-layer-cs/_static/image36.png)](creating-a-data-access-layer-cs/_static/image35.png)
 
 **그림 13**: 제품 목록 GridView에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image37.png))
 
@@ -225,7 +225,7 @@ AllProducts.aspx.cs
 우리는 먼저 임시 SQL 문 또는 신규 또는 기존 저장된 프로시저를 사용 하 여 데이터베이스에 액세스 하려고 하는 방법에 대 한 라는 메시지가 표시 됩니다. 임시 SQL 문을 다시 사용 하도록 선택 합니다. 다음으로 사용 하고자 SQL 쿼리의 유형을 묻는 것 클릭 합니다. 작성 하고자 하는 지정된 된 범주에 속하는 모든 제품을 반환 하고자 하므로 **선택** 문이 행을 반환 합니다.
 
 
-[![C선택 문에 반환 행을 만들려면 설치할](creating-a-data-access-layer-cs/_static/image40.png)](creating-a-data-access-layer-cs/_static/image39.png)
+[![행을 반환 하는 SELECT 문을 만들려면 선택 합니다.](creating-a-data-access-layer-cs/_static/image40.png)](creating-a-data-access-layer-cs/_static/image39.png)
 
 **그림 15**: 만들기를 선택는 **선택** 문에 행을 반환 합니다 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image41.png))
 
@@ -233,7 +233,7 @@ AllProducts.aspx.cs
 다음 단계는 데이터에 액세스 하는 데 SQL 쿼리를 정의 하는 것입니다. 특정 범주에 속하는 제품만 반환 하고자 하므로 사용 하 여 동일한 <strong>선택</strong> 문을 <strong>GetProducts()</strong>에 다음 코드를 추가 하지만 <strong>여기서</strong> 절: <strong>여기서 CategoryID = @CategoryID</strong> 합니다. 합니다 <strong>@CategoryID</strong> 우리가 만들고 있는 메서드에 필요한 형식 (즉, null 허용 정수)에 해당 입력된 매개 변수는 매개 변수 TableAdapter 마법사를 나타냅니다.
 
 
-[![E종료 하는 쿼리를 지정 된 범주에만 반환 제품](creating-a-data-access-layer-cs/_static/image43.png)](creating-a-data-access-layer-cs/_static/image42.png)
+[![만 지정된 된 범주에서 제품을 반환 하는 쿼리를 입력 합니다.](creating-a-data-access-layer-cs/_static/image43.png)](creating-a-data-access-layer-cs/_static/image42.png)
 
 **그림 16**: 지정 된 범주에만 반환 제품에는 쿼리를 입력 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image44.png))
 
@@ -241,7 +241,7 @@ AllProducts.aspx.cs
 마지막 단계에서 선택할 수 있습니다 데이터 액세스를 사용할 수 있을 뿐만 아니라 생성 되는 메서드 이름을 사용자 지정 하는 패턴입니다. 채우기 패턴에 대 한 이름을 변경해 보겠습니다 <strong>FillByCategoryID</strong> DataTable 반환에 대 한 패턴을 반환 하 고 (합니다 <strong>가져오기*X</strong>*  메서드)를 사용 하 여  <strong>GetProductsByCategoryID</strong>합니다.
 
 
-[![C설치할 TableAdapter 메서드 이름](creating-a-data-access-layer-cs/_static/image46.png)](creating-a-data-access-layer-cs/_static/image45.png)
+[![TableAdapter 메서드에 대 한 이름을 선택 합니다.](creating-a-data-access-layer-cs/_static/image46.png)](creating-a-data-access-layer-cs/_static/image45.png)
 
 **그림 17**: TableAdapter 메서드에 대 한 이름을 선택 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image47.png))
 
@@ -259,7 +259,7 @@ AllProducts.aspx.cs
 데이터 집합 디자이너에서 직접 이러한 매개 변수가 있는 쿼리를 테스트할 수 있습니다. TableAdapter의 메서드 단추로 클릭 하 고 데이터 미리 보기를 선택 합니다. 다음으로, 미리 보기를 클릭 하 고 사용할 매개 변수 값을 입력 합니다.
 
 
-[![T음료 범주에 속하는 제품 호스 나와](creating-a-data-access-layer-cs/_static/image50.png)](creating-a-data-access-layer-cs/_static/image49.png)
+[![음료 범주에 해당 제품이 속하는 나와 있습니다.](creating-a-data-access-layer-cs/_static/image50.png)](creating-a-data-access-layer-cs/_static/image49.png)
 
 **그림 19**: 이러한 제품이 속하는 음료 범주에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image51.png))
 
@@ -275,7 +275,7 @@ Beverages.aspx.cs
 [!code-csharp[Main](creating-a-data-access-layer-cs/samples/sample5.cs)]
 
 
-[![T호스 음료 범주에 제품이 표시 됩니다](creating-a-data-access-layer-cs/_static/image53.png)](creating-a-data-access-layer-cs/_static/image52.png)
+[![이러한 제품 음료 범주에 표시 됩니다.](creating-a-data-access-layer-cs/_static/image53.png)](creating-a-data-access-layer-cs/_static/image52.png)
 
 **그림 20**: 이러한 제품 음료 범주에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image54.png))
 
@@ -285,7 +285,7 @@ Beverages.aspx.cs
 두 가지 패턴이 있습니다 삽입, 업데이트 및 데이터를 삭제 하는 중에 일반적으로 사용 합니다. 첫 번째 패턴이 며, 필자가 직접 데이터베이스 패턴을 만들어야 메서드를 호출 하는 경우 문제는 **삽입**, **업데이트**, 또는 **삭제** 명령을 단일 데이터베이스 레코드에 대해 작동 하는 데이터베이스입니다. 이러한 메서드는 일반적으로 삽입, 업데이트 또는 삭제 값에 일련의 해당 하는 스칼라 값 (정수, 문자열, 부울, 날짜 및 등)에 전달 됩니다. 예를 들어이 패턴을 사용 하 여는 **제품** delete 메서드는 정수 매개 변수에서 걸리는 테이블 나타내는 합니다 **ProductID** insert 메서드 걸리는 동안에 삭제할 레코드의를 에 대 한 문자열을 **ProductName**에 대 한 10 진수를 **UnitPrice**에 대 한 정수를 **UnitsOnStock**등.
 
 
-[![E즉시 데이터베이스에 대 한 ach 삽입, 업데이트 및 삭제 요청 보내집니다](creating-a-data-access-layer-cs/_static/image56.png)](creating-a-data-access-layer-cs/_static/image55.png)
+[![각 삽입, 업데이트 및 삭제 요청은 즉시 데이터베이스에 전송 됩니다.](creating-a-data-access-layer-cs/_static/image56.png)](creating-a-data-access-layer-cs/_static/image55.png)
 
 **그림 21**: 각 삽입, 업데이트 및 삭제 요청은 즉시 데이터베이스에 전송 됩니다 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image57.png))
 
@@ -293,7 +293,7 @@ Beverages.aspx.cs
 일괄 처리 업데이트 패턴 부르겠습니다 다른 패턴은 전체 데이터 집합, DataTable 또는 Datarow의 한 메서드 호출에서 컬렉션을 업데이트 하는 것입니다. 이 패턴을 사용 하 여 개발자 삭제, 삽입, DataTable에서 Datarow를 수정 및 업데이트 메서드로 해당 Datarow 또는 DataTable을 전달 합니다. 이 메서드를 다음 전달 된 Datarow를 열거, 확인 여부는 한 수정, 추가 되거나 삭제 된 (DataRow의를 통해 [RowState 속성](https://msdn.microsoft.com/library/system.data.datarow.rowstate.aspx) 값), 각 레코드에 대 한 적절 한 데이터베이스 요청을 발급 합니다.
 
 
-[![A데이터베이스는 경우의 Update 메서드를 사용 하 여 변경 내용이 동기화 됩니다 ll가 호출](creating-a-data-access-layer-cs/_static/image59.png)](creating-a-data-access-layer-cs/_static/image58.png)
+[![업데이트 메서드가 호출 되 면 모든 변경 내용은 데이터베이스와 동기화 됩니다.](creating-a-data-access-layer-cs/_static/image59.png)](creating-a-data-access-layer-cs/_static/image58.png)
 
 **그림 22**: 업데이트 메서드가 호출 되 면 모든 변경 내용을 데이터베이스와 동기화 됩니다 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image60.png))
 
@@ -303,7 +303,7 @@ TableAdapter는 기본적으로 일괄 처리 업데이트 패턴을 사용 하�
 데이터 수정 패턴을 모두 사용 하 여 TableAdapter의 **InsertCommand**하십시오 **UpdateCommand**, 및 **DeleteCommand** 발급 하는 속성 해당 **삽입** , **업데이트**, 및 **삭제** 명령을 데이터베이스에 있습니다. 검사 및 수정할 수는 **InsertCommand**를 **UpdateCommand**, 및 **DeleteCommand** 데이터 집합 디자이너의 TableAdapter에 클릭 한 다음 이동 하 여 속성 속성 창. (및 TableAdapter를 선택 했는지 확인 합니다 **ProductsTableAdapter** 이 개체는 속성 창에서 드롭 다운 목록에서 선택 합니다.)
 
 
-[![TTableAdapter가 UpdateCommand, InsertCommand 고 DeleteCommand 속성](creating-a-data-access-layer-cs/_static/image62.png)](creating-a-data-access-layer-cs/_static/image61.png)
+[![TableAdapter에 UpdateCommand, InsertCommand 고 DeleteCommand 속성](creating-a-data-access-layer-cs/_static/image62.png)](creating-a-data-access-layer-cs/_static/image61.png)
 
 **그림 23**: TableAdapter가 **InsertCommand**를 **UpdateCommand**, 및 **DeleteCommand** 속성 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image63.png))
 
@@ -311,7 +311,7 @@ TableAdapter는 기본적으로 일괄 처리 업데이트 패턴을 사용 하�
 를 검사 하거나 이러한 데이터베이스 명령 속성을 수정 하려면 클릭 합니다 **CommandText** 하위 쿼리 작성기 표시 됩니다.
 
 
-[![Configure INSERT, UPDATE 및 DELETE 문이 쿼리 작성기에서](creating-a-data-access-layer-cs/_static/image65.png)](creating-a-data-access-layer-cs/_static/image64.png)
+[![쿼리 작성기에서 INSERT, UPDATE 및 DELETE 문이 구성](creating-a-data-access-layer-cs/_static/image65.png)](creating-a-data-access-layer-cs/_static/image64.png)
 
 **그림 24**: 구성 합니다 **삽입**, **업데이트**, 및 **삭제** 쿼리 작성기에서 문을 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image66.png))
 
@@ -331,7 +331,7 @@ TableAdapter는 기본적으로 일괄 처리 업데이트 패턴을 사용 하�
 이러한 사용자 지정 메서드를 만들려면 데이터 집합 디자이너를 반환 합니다. TableAdapter 단추로 클릭 하 고 TableAdapter 마법사를 반환 하는 추가 쿼리를 선택 합니다. 두 번째 화면에서 만들 쿼리의 형식을 나타낼 수 있습니다. 새 제품을 추가한 후 새로 추가 된 레코드의 값을 반환 하는 메서드를 만들어 보겠습니다 **ProductID**합니다. 따라서 만들도록 선택할를 **삽입** 쿼리 합니다.
 
 
-[![CProducts 테이블에 새 행을 추가 하는 메서드를 reate](creating-a-data-access-layer-cs/_static/image68.png)](creating-a-data-access-layer-cs/_static/image67.png)
+[![Products 테이블에 새 행을 추가 하는 메서드 만들기](creating-a-data-access-layer-cs/_static/image68.png)](creating-a-data-access-layer-cs/_static/image67.png)
 
 **그림 25**: 새 행을 추가 하는 메서드 만들기는 **제품** 표 ([전체 크기 이미지를 보려면 클릭](creating-a-data-access-layer-cs/_static/image69.png))
 
@@ -339,7 +339,7 @@ TableAdapter는 기본적으로 일괄 처리 업데이트 패턴을 사용 하�
 다음 화면에는 **InsertCommand**의 **CommandText** 나타납니다. 이 쿼리를 추가 하 여 보강 **범위 선택\_IDENTITY()** 쿼리의 끝에 삽입 된 마지막 id 값을 반환 합니다는 **IDENTITY** 같은 범위에서 열. (참조를 [기술 설명서](https://msdn.microsoft.com/library/ms190315.aspx) 에 대 한 자세한 내용은 **범위\_IDENTITY()** 이유와 싶을 [범위를 사용 하 여\_IDENTITY() 대신 @ @IDENTITY](http://weblogs.sqlteam.com/travisl/archive/2003/10/29/405.aspx).) 종료는 있는지 확인 합니다 **삽입** 추가 하기 전에 세미콜론을 사용 하 여 문을 **선택** 문.
 
 
-[![Ascope_identity () 값을 반환 하도록 쿼리를 ugment](creating-a-data-access-layer-cs/_static/image71.png)](creating-a-data-access-layer-cs/_static/image70.png)
+[![Scope_identity () 값을 반환 하도록 쿼리를 확장 합니다.](creating-a-data-access-layer-cs/_static/image71.png)](creating-a-data-access-layer-cs/_static/image70.png)
 
 **그림 26**: 반환 하도록 쿼리를 확장 합니다 **범위\_IDENTITY()** 값 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image72.png))
 
@@ -347,7 +347,7 @@ TableAdapter는 기본적으로 일괄 처리 업데이트 패턴을 사용 하�
 마지막으로, 새 메서드 이름을 **InsertProduct**합니다.
 
 
-[![Set InsertProduct에 새 메서드 이름](creating-a-data-access-layer-cs/_static/image74.png)](creating-a-data-access-layer-cs/_static/image73.png)
+[![새 메서드 이름을 InsertProduct로 설정](creating-a-data-access-layer-cs/_static/image74.png)](creating-a-data-access-layer-cs/_static/image73.png)
 
 **그림 27**: 새 메서드 이름을 **InsertProduct** ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image75.png))
 
@@ -357,7 +357,7 @@ TableAdapter는 기본적으로 일괄 처리 업데이트 패턴을 사용 하�
 기본적으로 삽입 메서드 문제 쿼리가 아닌 메서드, 영향을 받는 행 수를 반환할 것을 의미 합니다. 그러나 하고자 합니다 **InsertProduct** 영향을 받는 행 수가 아니라 쿼리에서 반환 된 값을 반환 하는 방법. 이를 위해 조정 합니다 **InsertProduct** 메서드의 **ExecuteMode** 속성을 **스칼라**합니다.
 
 
-[![C스칼라 ExecuteMode 속성 변경](creating-a-data-access-layer-cs/_static/image77.png)](creating-a-data-access-layer-cs/_static/image76.png)
+[![스칼라 ExecuteMode 속성을 변경 합니다.](creating-a-data-access-layer-cs/_static/image77.png)](creating-a-data-access-layer-cs/_static/image76.png)
 
 **그림 28**: 변경 된 **ExecuteMode** 속성을 **스칼라** ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image78.png))
 
@@ -375,7 +375,7 @@ TableAdapter는 기본적으로 일괄 처리 업데이트 패턴을 사용 하�
 [!code-sql[Main](creating-a-data-access-layer-cs/samples/sample9.sql)]
 
 
-[![USELECT 문 GetProducts() 메서드에 대 한 업데이트 ()](creating-a-data-access-layer-cs/_static/image80.png)](creating-a-data-access-layer-cs/_static/image79.png)
+[![SELECT 문의 GetProducts() 메서드에 대 한 업데이트](creating-a-data-access-layer-cs/_static/image80.png)](creating-a-data-access-layer-cs/_static/image79.png)
 
 **그림 29**: 업데이트를 **선택** 에 대 한 문을 합니다 **GetProducts()** 메서드 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image81.png))
 
@@ -444,7 +444,7 @@ TableAdapter는 기본적으로 일괄 처리 업데이트 패턴을 사용 하�
       [!code-sql[Main](creating-a-data-access-layer-cs/samples/sample21.sql)]
 
 
-[![T데이터 집합 디자이너 후의 네 가지 Tableadapter 추가한 그](creating-a-data-access-layer-cs/_static/image84.png)](creating-a-data-access-layer-cs/_static/image83.png)
+[![4 개의 TableAdapters를 추가한 후 데이터 집합 디자이너](creating-a-data-access-layer-cs/_static/image84.png)](creating-a-data-access-layer-cs/_static/image83.png)
 
 **그림 31**: 데이터 집합 디자이너 후의 네 가지 Tableadapter 추가 되었습니다 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image85.png))
 
@@ -454,7 +454,7 @@ TableAdapter는 기본적으로 일괄 처리 업데이트 패턴을 사용 하�
 Tableadapter 및 입력 데이터 집합에 추가 하는 Datatable XML 스키마 정의 파일로 표현 됩니다 (**Northwind.xsd**). 마우스 오른쪽 단추로 클릭 하 여이 스키마 정보를 볼 수 있습니다 합니다 **Northwind.xsd** 솔루션 탐색기에서 파일 및 코드 보기를 선택 합니다.
 
 
-[![T그 Northwinds 형식화 된 데이터 집합에 대 한 XML 스키마 정의 (XSD) 파일](creating-a-data-access-layer-cs/_static/image87.png)](creating-a-data-access-layer-cs/_static/image86.png)
+[![형식화 된 데이터 집합을 Northwinds에 대 한 XML 스키마 정의 (XSD) 파일](creating-a-data-access-layer-cs/_static/image87.png)](creating-a-data-access-layer-cs/_static/image86.png)
 
 **그림 32**: Northwinds 형식화 된 데이터 집합에 대 한 XML 스키마 정의 (XSD) 파일 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image88.png))
 
@@ -501,7 +501,7 @@ SuppliersAndProducts.aspx.cs
 [!code-csharp[Main](creating-a-data-access-layer-cs/samples/sample25.cs)]
 
 
-[![T그 공급 업체의 회사 이름 왼쪽 열의 오른쪽에 있는 해당 제품에 포함 된](creating-a-data-access-layer-cs/_static/image92.png)](creating-a-data-access-layer-cs/_static/image91.png)
+[![왼쪽 열의 오른쪽에 있는 해당 제품 공급 업체의 회사 이름이 나열 됩니다.](creating-a-data-access-layer-cs/_static/image92.png)](creating-a-data-access-layer-cs/_static/image91.png)
 
 **그림 35**: 왼쪽 열의 오른쪽에 있는 해당 제품 공급 업체의 회사 이름이 나열 됩니다 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image93.png))
 

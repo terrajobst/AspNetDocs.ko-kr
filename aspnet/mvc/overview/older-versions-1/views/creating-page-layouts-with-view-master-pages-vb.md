@@ -12,7 +12,7 @@ ms.openlocfilehash: 175e78d7ccc669c29c63dcb53af7aad1608c7d15
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59422358"
 ---
 # <a name="creating-page-layouts-with-view-master-pages-vb"></a>보기 마스터 페이지를 사용하여 페이지 레이아웃 만들기(VB)
@@ -37,7 +37,7 @@ by [Microsoft](https://github.com/microsoft)
 2 열 레이아웃을 정의 하는 보기 마스터 페이지를 만들어 시작 해 보겠습니다. 추가한 새 보기 마스터 페이지를 MVC 프로젝트 Views\Shared 폴더를 마우스 오른쪽 단추로 클릭 하 여 메뉴 옵션을 선택 하면 **추가, 새 항목**, MVC 보기 마스터 페이지 템플릿을 선택 하 고 (그림 1 참조).
 
 
-[![A보기 마스터 페이지 이어지지](creating-page-layouts-with-view-master-pages-vb/_static/image2.png)](creating-page-layouts-with-view-master-pages-vb/_static/image1.png)
+[![보기 마스터 페이지 추가](creating-page-layouts-with-view-master-pages-vb/_static/image2.png)](creating-page-layouts-with-view-master-pages-vb/_static/image1.png)
 
 **그림 01**: 보기 마스터 페이지 추가 ([클릭 하 여 큰 이미지 보기](creating-page-layouts-with-view-master-pages-vb/_static/image3.png))
 
@@ -55,7 +55,7 @@ by [Microsoft](https://github.com/microsoft)
 목록 1에서 마스터 페이지에는 두 개의 뷰의 본문 `<div>` 두 열에 해당 하는 태그입니다. Cascading Style Sheet 열 클래스가 둘 다에 적용 된 `<div>` 태그입니다. 이 클래스는 마스터 페이지의 맨 위에 선언 스타일 시트에 정의 됩니다. 디자인 뷰로 전환 하 여 보기 마스터 페이지를 렌더링할 방식을 미리 볼 수 있습니다. 소스 코드 편집기의 왼쪽 아래에 있는 디자인 탭을 클릭 (그림 2 참조).
 
 
-[![P디자이너에서 마스터 페이지를 검토](creating-page-layouts-with-view-master-pages-vb/_static/image5.png)](creating-page-layouts-with-view-master-pages-vb/_static/image4.png)
+[![마스터 페이지 디자이너의 미리 보기](creating-page-layouts-with-view-master-pages-vb/_static/image5.png)](creating-page-layouts-with-view-master-pages-vb/_static/image4.png)
 
 **그림 02**: 마스터 페이지 디자이너의 미리 보기 ([클릭 하 여 큰 이미지 보기](creating-page-layouts-with-view-master-pages-vb/_static/image6.png))
 
@@ -65,7 +65,7 @@ by [Microsoft](https://github.com/microsoft)
 보기 마스터 페이지를 만든 후에 하나 이상의 뷰 콘텐츠 페이지 보기 마스터 페이지를 기반으로 만들 수 있습니다. 예를 들어 Views\Home 폴더를 마우스 오른쪽 단추로 클릭 하 여 홈 컨트롤러에 대 한 인덱스 뷰 콘텐츠 페이지를 만들 수 있습니다 선택 **추가, 새 항목**선택 하는 **MVC 뷰 콘텐츠 페이지** 입력 템플릿 Index.aspx, 이름 및 추가 단추 (그림 3 참조).
 
 
-[![A이어지지 뷰 콘텐츠 페이지](creating-page-layouts-with-view-master-pages-vb/_static/image8.png)](creating-page-layouts-with-view-master-pages-vb/_static/image7.png)
+[![뷰 콘텐츠 페이지 추가](creating-page-layouts-with-view-master-pages-vb/_static/image8.png)](creating-page-layouts-with-view-master-pages-vb/_static/image7.png)
 
 **그림 03**: 뷰 콘텐츠 페이지 추가 ([클릭 하 여 큰 이미지 보기](creating-page-layouts-with-view-master-pages-vb/_static/image9.png))
 
@@ -73,7 +73,7 @@ by [Microsoft](https://github.com/microsoft)
 추가 단추를 클릭 하면 새 대화 상자가 나타나는 뷰 콘텐츠 페이지와 연결할 보기 마스터 페이지를 선택할 수 있습니다 (그림 4 참조). 이전 섹션에서 만든 Site.master 뷰 마스터 페이지를 이동할 수 있습니다.
 
 
-[![S마스터 페이지 선택](creating-page-layouts-with-view-master-pages-vb/_static/image11.png)](creating-page-layouts-with-view-master-pages-vb/_static/image10.png)
+[![마스터 페이지를 선택합니다.](creating-page-layouts-with-view-master-pages-vb/_static/image11.png)](creating-page-layouts-with-view-master-pages-vb/_static/image10.png)
 
 **그림 04**: 마스터 페이지 선택 ([클릭 하 여 큰 이미지 보기](creating-page-layouts-with-view-master-pages-vb/_static/image12.png))
 
@@ -101,7 +101,7 @@ Site.master 마스터 페이지에 따라 새 뷰 콘텐츠 페이지를 만든 
 보기 3의 보기를 요청 하면 그림 5에서 페이지를 렌더링 합니다. 뷰를 두 개의 열을 사용 하 여 페이지를 렌더링 하는 알 수 있습니다. 확인, 또한 뷰 콘텐츠 페이지에서 콘텐츠 보기 마스터 페이지의 콘텐츠와 병합 되는 합니다.
 
 
-[![T그 인덱스 뷰 콘텐츠 페이지](creating-page-layouts-with-view-master-pages-vb/_static/image14.png)](creating-page-layouts-with-view-master-pages-vb/_static/image13.png)
+[![인덱스 뷰 콘텐츠 페이지](creating-page-layouts-with-view-master-pages-vb/_static/image14.png)](creating-page-layouts-with-view-master-pages-vb/_static/image13.png)
 
 **그림 05**: 인덱스 뷰 콘텐츠 페이지 ([클릭 하 여 큰 이미지 보기](creating-page-layouts-with-view-master-pages-vb/_static/image15.png))
 
@@ -117,7 +117,7 @@ Site.master 마스터 페이지에 따라 새 뷰 콘텐츠 페이지를 만든 
 인덱스 보기 브라우저에 렌더링 되 면 원하는 제목 브라우저 제목 표시줄에 나타납니다.
 
 
-[![B브라우저 제목 표시줄](creating-page-layouts-with-view-master-pages-vb/_static/image17.png)](creating-page-layouts-with-view-master-pages-vb/_static/image16.png)
+[![브라우저 제목 표시줄](creating-page-layouts-with-view-master-pages-vb/_static/image17.png)](creating-page-layouts-with-view-master-pages-vb/_static/image16.png)
 
 
 마스터 뷰 페이지를 작동 하려면 title 특성에 대 한 순서로 충족 해야 하는 중요 한 요구 사항 중 하나 있습니다. 보기 마스터 페이지를 포함 해야 합니다는 `<head runat="server">` 태그는 보통 대신 `<head>` 헤더에 대 한 태그입니다. 경우는 `<head>` 태그에는 runat = "server" 특성이 제목이 표시 되지 않습니다. 마스터 페이지에 필요한 기본 보기 `<head runat="server">` 태그입니다.

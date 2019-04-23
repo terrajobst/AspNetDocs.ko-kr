@@ -12,7 +12,7 @@ ms.openlocfilehash: 5f883c4ab42e71fc76df221c2b282e124a3d97bd
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59423021"
 ---
 # <a name="how-do-i-implement-view--models-to-manage-data-for-aspnet-mvc-views"></a>어떻게 할까요 ASP.NET MVC 보기에 대 한 데이터를 관리 하는 보기 모델 구현?

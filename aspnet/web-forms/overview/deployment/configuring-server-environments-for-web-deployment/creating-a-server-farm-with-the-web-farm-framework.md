@@ -12,7 +12,7 @@ ms.openlocfilehash: 19c061e83257e118aee74c9373a627b8c56defe3
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59421240"
 ---
 # <a name="creating-a-server-farm-with-the-web-farm-framework"></a>웹 팜 프레임워크를 사용하여 서버 팜 만들기

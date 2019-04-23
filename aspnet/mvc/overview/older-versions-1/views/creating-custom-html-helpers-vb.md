@@ -12,7 +12,7 @@ ms.openlocfilehash: 1f36bffeda49c1777e964dc5330cbb473b01c1a9
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59421565"
 ---
 # <a name="creating-custom-html-helpers-vb"></a>사용자 지정 HTML 도우미 만들기(VB)
@@ -49,7 +49,7 @@ ASP.NET MVC 프레임 워크에 (이 전체 목록은 아님)는 표준 HTML 도
 예를 들어 목록 1에서 폼을 고려 합니다. 이 폼은 두 표준 HTML 도우미 (그림 1 참조)를 사용 하 여 렌더링 됩니다. 이 폼에서 사용 하 여 `Html.BeginForm()` 및 `Html.TextBox()` 도우미 메서드.
 
 
-[![PHTML 도우미를 사용 하 여 렌더링 age](creating-custom-html-helpers-vb/_static/image2.png)](creating-custom-html-helpers-vb/_static/image1.png)
+[![HTML 도우미를 사용 하 여 페이지 렌더링](creating-custom-html-helpers-vb/_static/image2.png)](creating-custom-html-helpers-vb/_static/image1.png)
 
 **그림 01**: HTML 도우미를 사용 하 여 페이지 렌더링 ([클릭 하 여 큰 이미지 보기](creating-custom-html-helpers-vb/_static/image3.png))
 
@@ -104,7 +104,7 @@ ASP.NET MVC 프레임 워크는 작은 도우미 집합이 포함 되어 있습�
 확장 메서드는 모든 클래스의 다른 메서드 같은 Visual Studio Intellisense 확장 메서드를 만들고 응용 프로그램을 성공적으로 빌드 후 나타나는 (그림 2 참조). 유일한 차이점은 해당 확장명 메서드 (아래쪽 화살표 아이콘) 옆에 있는 특수 기호를 사용 하 여 표시 합니다.
 
 
-[![UHtml.Label() 확장 메서드를 로그온](creating-custom-html-helpers-vb/_static/image5.png)](creating-custom-html-helpers-vb/_static/image4.png)
+[![Html.Label() 확장 메서드를 사용 하 여](creating-custom-html-helpers-vb/_static/image5.png)](creating-custom-html-helpers-vb/_static/image4.png)
 
 **그림 02**: Html.Label() 확장 메서드를 사용 하 여 ([클릭 하 여 큰 이미지 보기](creating-custom-html-helpers-vb/_static/image6.png))
 

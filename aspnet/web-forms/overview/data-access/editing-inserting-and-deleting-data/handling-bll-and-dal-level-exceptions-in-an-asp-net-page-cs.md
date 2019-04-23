@@ -12,7 +12,7 @@ ms.openlocfilehash: 14b9070a462741aab7230963e3e1298368b8e6aa
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59420993"
 ---
 # <a name="handling-bll--and-dal-level-exceptions-in-an-aspnet-page-c"></a>ASP.NET 페이지에서 BLL 및 DAL 수준의 예외 처리(C#)
@@ -50,7 +50,7 @@ ms.locfileid: "59420993"
 이 메서드 완료를에서는 이러한 네 가지 특정 제품 필드를 편집할 수 있도록 하는 ASP.NET 페이지를 만들 준비가 된 것입니다. 열기를 `ErrorHandling.aspx` 페이지는 `EditInsertDelete` 폴더 디자이너를 통해 페이지에 GridView를 추가 합니다. GridView 새 ObjectDataSource를 바인딩할 매핑 합니다 `Select()` 메서드를 합니다 `ProductsBLL` 클래스의 `GetProducts()` 메서드 및 `Update()` 메서드를는 `UpdateProduct` 방금 만든 오버 로드.
 
 
-[![Use UpdateProduct 메서드 오버 로드는 허용 네 개의 입력 매개 변수](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image2.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image1.png)
+[![네 개의 입력된 매개 변수를 받아들이는 UpdateProduct 메서드와 같이 오버 로드를 사용 하 여](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image2.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image1.png)
 
 **그림 1**: 사용 된 `UpdateProduct` 메서드 오버 로드는 허용 네 개의 입력 매개 변수 ([큰 이미지를 보려면 클릭](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image3.png))
 
@@ -62,7 +62,7 @@ ms.locfileid: "59420993"
 이전 자습서에서 살펴보았습니다 서식 지정 방법을 `UnitPrice` 모두 읽기 전용 모드와 편집 모드에서 통화로 BoundField 합니다. 동일한 여기를 보겠습니다. 이 BoundField의 설정 필수 회수 `DataFormatString` 속성을 `{0:c}`, 해당 `HtmlEncode` 속성을 `false`, 및 해당 `ApplyFormatInEditMode` 에 `true`그림 2에 나와 있는 것 처럼 합니다.
 
 
-[![Configure 통화로 표시할 UnitPrice BoundField](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image5.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image4.png)
+[![통화로 표시할 UnitPrice BoundField 구성](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image5.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image4.png)
 
 **그림 2**: 구성 된 `UnitPrice` 통화로 표시할 BoundField ([큰 이미지를 보려면 클릭](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image6.png))
 
@@ -75,7 +75,7 @@ ms.locfileid: "59420993"
 우리의 GridView를 포함 한 `QuantityPerUnit` BoundField 있지만이 BoundField 표시 용도로 이어야 하며 사용자가 편집할 수 없습니다. 이 정렬 하려면 BoundFields'를 설정 하기만 `ReadOnly` 속성을 `true`입니다.
 
 
-[![M이렇게 하려면 QuantityPerUnit BoundField 읽기 전용](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image8.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image7.png)
+[![읽기 전용으로 QuantityPerUnit BoundField 설정](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image8.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image7.png)
 
 **그림 3**: 확인 합니다 `QuantityPerUnit` BoundField 읽기 전용 ([큰 이미지를 보려면 클릭](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image9.png))
 
@@ -83,7 +83,7 @@ ms.locfileid: "59420993"
 GridView의 스마트 태그에서 편집 사용 확인란을 마지막으로 확인 합니다. 다음이 단계를 완료 한 후의 `ErrorHandling.aspx` 페이지의 디자이너는 그림 4와 비슷하게 표시 됩니다.
 
 
-[![R하지만 모든 the 필요한 BoundFields를 제거 하 고 확인란을 사용 하도록 설정 편집](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image11.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image10.png)
+[![남기고 모두 제거 필요한 BoundFields 및 확인 확인란 편집 사용](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image11.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image10.png)
 
 **그림 4**: 하지만 모든 the 필요한 BoundFields를 제거 하 고 확인란을 사용 하도록 설정 편집 ([클릭 하 여 큰 이미지 보기](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image12.png))
 
@@ -91,7 +91,7 @@ GridView의 스마트 태그에서 편집 사용 확인란을 마지막으로 �
 그러나이 시점에서 모든 제품의 목록이 있다고 `ProductName`, `QuantityPerUnit`, `UnitPrice`, 및 `UnitsInStock` ; 필드만 합니다 `ProductName`, `UnitPrice`, 및 `UnitsInStock` 필드를 편집할 수 있습니다.
 
 
-[![Users 수 이제 쉽게 편집 제품의 이름, 가격 및 필드 재고에서 단위](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image14.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image13.png)
+[![사용자가 이제 쉽게 편집할 수 제품의 이름, 가격 및 주식 필드 단위](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image14.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image13.png)
 
 **그림 5**: 사용자 수 이제 쉽게 편집 제품의 이름, 가격 및 필드 재고에서 단위 ([클릭 하 여 큰 이미지 보기](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image15.png))
 
@@ -105,7 +105,7 @@ GridView의 스마트 태그에서 편집 사용 확인란을 마지막으로 �
 그림 6을 지정 하지 않고 제품을 업데이트 하려고 시도할 때 발생 하는 화면을 보여 줍니다.는 `ProductName` 값입니다. 자세한 오류 보고서를 통해 들어오는 경우에 표시 된 기본 `localhost`입니다.
 
 
-[![Omitting 제품의 이름을 예외 세부 정보를 표시](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image17.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image16.png)
+[![예외 세부 정보를 표시는 제품의 이름을 생략합니다.](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image17.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image16.png)
 
 **그림 6**: 제품의 이름을 표시 예외 정보는 생략 ([클릭 하 여 큰 이미지 보기](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image18.png))
 
@@ -117,7 +117,7 @@ GridView의 스마트 태그에서 편집 사용 확인란을 마지막으로 �
 시작 설정, ASP.NET 페이지에 레이블을 추가 하 여 해당 `ID` 속성을 `ExceptionDetails` 정리 및 해당 `Text` 속성입니다. 설정 하려면이 메시지에 사용자의 눈을 그리려면, 해당 `CssClass` 속성을 `Warning`에 추가한 CSS 클래스인는 `Styles.css` 이전 자습서에서 파일입니다. 이 CSS 클래스, 빨간색, 기울임꼴, 굵게, 초대형 글꼴로 표시할 레이블의 텍스트는 회수 합니다.
 
 
-[![Add는 레이블 웹 컨트롤을 페이지](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image20.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image19.png)
+[![레이블 웹 컨트롤을 페이지에 추가](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image20.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image19.png)
 
 **그림 7**: 레이블 웹 컨트롤을 페이지에 추가 ([클릭 하 여 큰 이미지 보기](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image21.png))
 
@@ -172,12 +172,12 @@ GridView의 스마트 태그에서 편집 사용 확인란을 마지막으로 �
 그림 9 제품 이름을 생략 하는 경우이 페이지의 스크린 샷을 보여 줍니다. 그림 10 잘못 된 입력 하면 결과 보여 줍니다 `UnitPrice` 값 (-50).
 
 
-[![TProductName BoundField 그 값이 있어야](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image24.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image23.png)
+[![ProductName BoundField 값이 있어야 합니다.](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image24.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image23.png)
 
 **그림 9**: 합니다 `ProductName` BoundField 값이 있어야 합니다. ([큰 이미지를 보려면 클릭](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image25.png))
 
 
-[![Negative UnitPrice 값은 사용할 수 없습니다](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image27.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image26.png)
+[![UnitPrice 음수를 사용할 수 없습니다.](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image27.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image26.png)
 
 **그림 10**: 음수 `UnitPrice` 값은 허용 되지 않습니다 ([큰 이미지를 보려면 클릭](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image28.png))
 
@@ -200,7 +200,7 @@ GridView의 스마트 태그에서 편집 사용 확인란을 마지막으로 �
 기존 가격은 두 배 이상 많은 수 있는 모든 가격 업데이트 하면이 변경으로 `ApplicationException` throw 됩니다. 이 BLL 발생 DAL에서 발생 하는 예외와 마찬가지로 `ApplicationException` 탐지 및 GridView의 처리 `RowUpdated` 이벤트 처리기입니다. 실제로 `RowUpdated` 이벤트 처리기의 코드를 작성 하는 대로 올바르게 감지이 예외 하 고 표시 합니다 `ApplicationException`의 `Message` 속성 값입니다. 그림 11에서는 사용자는 현재 가격은 $19.95의 2 배 이상의 $50.00에 Chai의 가격을 업데이트 하려고 할 때를 지정 하 여 화면을 보여 줍니다.
 
 
-[![T비즈니스 규칙 허용 안 함 가격 그 보다는 제품의 가격의 두 배는 더 증가](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image30.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image29.png)
+[![비즈니스 규칙 두 개 제품의 가격을 두 번 가격 증가 허용 안 함](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image30.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image29.png)
 
 **그림 11**: 비즈니스 규칙의 두 개 제품의 가격을 두 번 가격 증가 허용 안 함 ([클릭 하 여 큰 이미지 보기](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs/_static/image31.png))
 

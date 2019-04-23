@@ -12,7 +12,7 @@ ms.openlocfilehash: 257bd06848adb949330856cc71eeb3d685e9d036
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59421669"
 ---
 # <a name="use-code-first-migrations-to-seed-the-database"></a>Code First 마이그레이션을 사용 하 여 데이터베이스를 시드합니다.

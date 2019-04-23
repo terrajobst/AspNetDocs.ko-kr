@@ -13,7 +13,7 @@ ms.openlocfilehash: 8916f8b7a024636be1be055457081487f46a7936
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59421630"
 ---
 # <a name="routing-conventions-in-aspnet-web-api-2-odata"></a>ASP.NET Web API 2에서에서 라우팅 규칙 Odata
@@ -119,7 +119,7 @@ Web API에서 OData 라우팅 규칙을 설명 하기 전에는 OData Uri를 이
 
 자세한 내용은 [OData 작업](odata-v3/odata-actions.md)합니다.
 
-**메서드 서명**
+**메서드 시그니처**
 
 메서드 서명에 대 한 몇 가지 규칙은 다음과 같습니다.
 

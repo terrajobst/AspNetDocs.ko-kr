@@ -5,14 +5,13 @@ author: rick-anderson
 description: 외부 소스의 web.config 값 이외의 원본에서 구성 데이터를 가져오는 방법에 알아봅니다.
 ms.author: riande
 ms.date: 10/29/2018
-ms.technology: aspnet
 msc.type: content
-ms.openlocfilehash: 443b33b5c3b964f731999834db580a6abbf6617b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
-ms.translationtype: HT
+ms.openlocfilehash: 2bec828aa01d2c17f5374c3b1804b7444ec03dda
+ms.sourcegitcommit: 2d53ed9e4c8b19d3526cbc689bfa8394c9449cec
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59420421"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59905698"
 ---
 # <a name="configuration-builders-for-aspnet"></a>ASP.NET에 대 한 구성 작성기
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 70290141f08da51a76d578efcdf63d7d1375936a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59422709"
 ---
 # <a name="how-do-i-save-and-load-view-state-information-for-a-custom-web-server-control"></a>[어떻게 할까요?] 저장 및 사용자 지정 웹 서버 컨트롤에 대 한 부하 뷰 상태 정보

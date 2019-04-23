@@ -12,7 +12,7 @@ ms.openlocfilehash: a6b433f187495b8dcd874bcab8ddc607e6de61c9
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59422527"
 ---
 # <a name="dynamically-populating-a-control-using-javascript-code-c"></a>JavaScript 코드를 사용하여 동적으로 컨트롤 채우기(C#)
@@ -55,7 +55,7 @@ by [Christian Wenz](https://github.com/wenz)
 라디오 단추, JavaScript 식의 컨텍스트 내에서 유의 `this.value` 정확히 동일한 정보를 사용할 수 있는 현재 단추의 값을 나타냅니다는 `getDate()` 메서드 작업을 수행할 수 있습니다.
 
 
-[![A 지정 된 형식으로 서버에서 날짜를 검색 하는 단추를 클릭](dynamically-populating-a-control-using-javascript-code-cs/_static/image2.png)](dynamically-populating-a-control-using-javascript-code-cs/_static/image1.png)
+[![지정 된 형식으로 서버에서 날짜를 검색 하는 단추 클릭](dynamically-populating-a-control-using-javascript-code-cs/_static/image2.png)](dynamically-populating-a-control-using-javascript-code-cs/_static/image1.png)
 
 지정 된 형식으로 서버에서 날짜를 검색 하는 단추 클릭 ([클릭 하 여 큰 이미지 보기](dynamically-populating-a-control-using-javascript-code-cs/_static/image3.png))
 

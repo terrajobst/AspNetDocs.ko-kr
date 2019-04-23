@@ -12,7 +12,7 @@ ms.openlocfilehash: 6893d1f2445452b1d802b89027b09d8294bdc5b7
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59422839"
 ---
 # <a name="validation-with-the-data-annotation-validators-vb"></a>데이터 주석 유효성 검사기를 사용한 유효성 검사(VB)

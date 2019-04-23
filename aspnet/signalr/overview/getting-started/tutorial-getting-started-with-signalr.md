@@ -9,12 +9,12 @@ ms.assetid: a8b3b778-f009-4369-85c7-e90f9878d8b4
 msc.legacyurl: /signalr/overview/getting-started/tutorial-getting-started-with-signalr
 msc.type: authoredcontent
 ms.topic: tutorial
-ms.openlocfilehash: b1e8b6b1b300665f6cd2466766e9adcff52733da
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ecc235454d4b95ce660a4373387f44720826b076
+ms.sourcegitcommit: 2d53ed9e4c8b19d3526cbc689bfa8394c9449cec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59422917"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59905646"
 ---
 # <a name="tutorial-real-time-chat-with-signalr-2"></a>자습서: SignalR 2를 사용하는 실시간 채팅
 
@@ -60,6 +60,10 @@ ms.locfileid: "59422917"
 1. **새 항목 추가-SignalRChat** 선택 **설치 됨** > **시각적 C#**   >  **Web** 차례로 선택 **OWIN Startup 클래스**합니다.
 
 1. 클래스의 이름을 *시작* 하 고 프로젝트에 추가 합니다.
+
+1. 기본 코드를 바꿉니다 *시작* 이 코드를 사용 하 여 클래스:
+
+    [!code-csharp[Main](tutorial-getting-started-with-signalr/samples/sample2.cs)]
 
 1. **솔루션 탐색기**, 프로젝트를 마우스 오른쪽 단추로 **추가** > **HTML 페이지**합니다.
 
