@@ -12,12 +12,12 @@ ms.openlocfilehash: 63df5e45c817c90957a5818bd9f43c4d3162c679
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59397879"
 ---
-# <a name="signalr-advanced-topics"></a><span data-ttu-id="e7973-103">SignalR 고급 항목</span><span class="sxs-lookup"><span data-stu-id="e7973-103">SignalR Advanced Topics</span></span>
+# <a name="signalr-advanced-topics"></a><span data-ttu-id="49369-103">SignalR 고급 항목</span><span class="sxs-lookup"><span data-stu-id="49369-103">SignalR Advanced Topics</span></span>
 
-> <span data-ttu-id="e7973-104">SignalR 설명서-고급 항목입니다.</span><span class="sxs-lookup"><span data-stu-id="e7973-104">SignalR documentation - advanced topics.</span></span>
+> <span data-ttu-id="49369-104">SignalR 설명서-고급 항목입니다.</span><span class="sxs-lookup"><span data-stu-id="49369-104">SignalR documentation - advanced topics.</span></span>
 
 
-- [<span data-ttu-id="e7973-105">SignalR에서 종속성 주입</span><span class="sxs-lookup"><span data-stu-id="e7973-105">Dependency Injection in SignalR</span></span>](dependency-injection.md)
+- [<span data-ttu-id="49369-105">SignalR에서 종속성 주입</span><span class="sxs-lookup"><span data-stu-id="49369-105">Dependency Injection in SignalR</span></span>](dependency-injection.md)

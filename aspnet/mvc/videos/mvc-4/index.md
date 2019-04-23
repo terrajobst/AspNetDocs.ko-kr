@@ -12,13 +12,13 @@ ms.openlocfilehash: cddf4c754ab2c8e8ad2671819cf61d0a7f336bf0
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59407486"
 ---
-# <a name="aspnet-mvc-4"></a><span data-ttu-id="2e94d-103">ASP.NET MVC 4</span><span class="sxs-lookup"><span data-stu-id="2e94d-103">ASP.NET MVC 4</span></span>
+# <a name="aspnet-mvc-4"></a><span data-ttu-id="ad79b-103">ASP.NET MVC 4</span><span class="sxs-lookup"><span data-stu-id="ad79b-103">ASP.NET MVC 4</span></span>
 
-> <span data-ttu-id="2e94d-104">ASP.NET MVC 4</span><span class="sxs-lookup"><span data-stu-id="2e94d-104">ASP.NET MVC 4</span></span>
+> <span data-ttu-id="ad79b-104">ASP.NET MVC 4</span><span class="sxs-lookup"><span data-stu-id="ad79b-104">ASP.NET MVC 4</span></span>
 
 
-- [<span data-ttu-id="2e94d-105">ASP.NET MVC에서 페이지 검사기 사용</span><span class="sxs-lookup"><span data-stu-id="2e94d-105">Using Page Inspector in ASP.NET MVC</span></span>](using-page-inspector-in-aspnet-mvc.md)
-- [<span data-ttu-id="2e94d-106">ASP.NET MVC 4</span><span class="sxs-lookup"><span data-stu-id="2e94d-106">ASP.NET MVC 4</span></span>](aspnet-mvc-4.md)
+- [<span data-ttu-id="ad79b-105">ASP.NET MVC에서 페이지 검사기 사용</span><span class="sxs-lookup"><span data-stu-id="ad79b-105">Using Page Inspector in ASP.NET MVC</span></span>](using-page-inspector-in-aspnet-mvc.md)
+- [<span data-ttu-id="ad79b-106">ASP.NET MVC 4</span><span class="sxs-lookup"><span data-stu-id="ad79b-106">ASP.NET MVC 4</span></span>](aspnet-mvc-4.md)

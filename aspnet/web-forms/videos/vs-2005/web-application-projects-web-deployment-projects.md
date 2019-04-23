@@ -12,16 +12,16 @@ ms.openlocfilehash: 026a8405e0d2078e7dc1dada4ed0185daefd86d7
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59406941"
 ---
-# <a name="web-application-projects--web-deployment-projects"></a><span data-ttu-id="f5be9-103">웹 애플리케이션 프로젝트 및 웹 배포 프로젝트</span><span class="sxs-lookup"><span data-stu-id="f5be9-103">Web Application Projects & Web Deployment Projects</span></span>
+# <a name="web-application-projects--web-deployment-projects"></a><span data-ttu-id="c29ac-103">웹 애플리케이션 프로젝트 및 웹 배포 프로젝트</span><span class="sxs-lookup"><span data-stu-id="c29ac-103">Web Application Projects & Web Deployment Projects</span></span>
 
-<span data-ttu-id="f5be9-104">[Bradley Bartz](https://github.com/BradleyBartz)</span><span class="sxs-lookup"><span data-stu-id="f5be9-104">by [Bradley Bartz](https://github.com/BradleyBartz)</span></span>
+<span data-ttu-id="c29ac-104">[Bradley Bartz](https://github.com/BradleyBartz)</span><span class="sxs-lookup"><span data-stu-id="c29ac-104">by [Bradley Bartz](https://github.com/BradleyBartz)</span></span>
 
-<span data-ttu-id="f5be9-105">Bradley Bartz 웹 응용 프로그램 프로젝트 및 Visual Studio 2005 웹 배포 프로젝트를 만드는 방법 ASP.NET 프로젝트를 개발 하 고 배포할 Visual Studio.NET 2003 모델과 유사 하 게 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="f5be9-105">Bradley Bartz shows how the Web Application Projects and Web Deployment Projects for Visual Studio 2005 make developing and deploying ASP.NET projects similar to the Visual Studio .NET 2003 model.</span></span>
+<span data-ttu-id="c29ac-105">Bradley Bartz 웹 응용 프로그램 프로젝트 및 Visual Studio 2005 웹 배포 프로젝트를 만드는 방법 ASP.NET 프로젝트를 개발 하 고 배포할 Visual Studio.NET 2003 모델과 유사 하 게 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="c29ac-105">Bradley Bartz shows how the Web Application Projects and Web Deployment Projects for Visual Studio 2005 make developing and deploying ASP.NET projects similar to the Visual Studio .NET 2003 model.</span></span>
 
-[<span data-ttu-id="f5be9-106">&#9654;비디오 (66 분)</span><span class="sxs-lookup"><span data-stu-id="f5be9-106">&#9654; Watch video (66 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/web-application-projects-web-deployment-projects)
+[<span data-ttu-id="c29ac-106">&#9654;비디오 (66 분)</span><span class="sxs-lookup"><span data-stu-id="c29ac-106">&#9654; Watch video (66 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/web-application-projects-web-deployment-projects)
 
 > [!div class="step-by-step"]
-> [<span data-ttu-id="f5be9-107">이전</span><span class="sxs-lookup"><span data-stu-id="f5be9-107">Previous</span></span>](web-deployment-projects.md)
+> [<span data-ttu-id="c29ac-107">이전</span><span class="sxs-lookup"><span data-stu-id="c29ac-107">Previous</span></span>](web-deployment-projects.md)

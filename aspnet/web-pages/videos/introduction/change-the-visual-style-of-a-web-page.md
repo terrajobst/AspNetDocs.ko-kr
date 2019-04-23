@@ -12,13 +12,13 @@ ms.openlocfilehash: 5ff91ddabb637d663a4a14f26521d405bc78de71
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59398724"
 ---
-# <a name="change-the-visual-style-of-a-web-page"></a><span data-ttu-id="8e883-103">웹 페이지의 시각적 스타일 변경</span><span class="sxs-lookup"><span data-stu-id="8e883-103">Change the Visual Style of a Web Page</span></span>
+# <a name="change-the-visual-style-of-a-web-page"></a><span data-ttu-id="436b2-103">웹 페이지의 시각적 스타일 변경</span><span class="sxs-lookup"><span data-stu-id="436b2-103">Change the Visual Style of a Web Page</span></span>
 
-<span data-ttu-id="8e883-104">[Advaiya](https://twitter.com/Advaiyasolns)</span><span class="sxs-lookup"><span data-stu-id="8e883-104">by [Advaiya](https://twitter.com/Advaiyasolns)</span></span>
+<span data-ttu-id="436b2-104">[Advaiya](https://twitter.com/Advaiyasolns)</span><span class="sxs-lookup"><span data-stu-id="436b2-104">by [Advaiya](https://twitter.com/Advaiyasolns)</span></span>
 
-<span data-ttu-id="8e883-105">3 부에서는 CSS 스타일 시트를 사용 하 여 더 멋진 페이지를 내릴 수 있도록 합니다.</span><span class="sxs-lookup"><span data-stu-id="8e883-105">Part 3 gets you started with CSS and style sheets so you can make your page more beautiful.</span></span>
+<span data-ttu-id="436b2-105">3 부에서는 CSS 스타일 시트를 사용 하 여 더 멋진 페이지를 내릴 수 있도록 합니다.</span><span class="sxs-lookup"><span data-stu-id="436b2-105">Part 3 gets you started with CSS and style sheets so you can make your page more beautiful.</span></span>
 
-[<span data-ttu-id="8e883-106">&#9654;비디오 (4 분)</span><span class="sxs-lookup"><span data-stu-id="8e883-106">&#9654; Watch video (4 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/change-the-visual-style-of-a-web-page)
+[<span data-ttu-id="436b2-106">&#9654;비디오 (4 분)</span><span class="sxs-lookup"><span data-stu-id="436b2-106">&#9654; Watch video (4 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/change-the-visual-style-of-a-web-page)

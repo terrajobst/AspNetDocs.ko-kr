@@ -12,16 +12,16 @@ ms.openlocfilehash: 019383897daeb7d8885ea4b9c3609e7f8ef9f827
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59396670"
 ---
-# <a name="what-is-a-database"></a><span data-ttu-id="2a241-105">데이터베이스는 무엇입니까?</span><span class="sxs-lookup"><span data-stu-id="2a241-105">What is a Database?</span></span>
+# <a name="what-is-a-database"></a><span data-ttu-id="31220-105">데이터베이스는 무엇입니까?</span><span class="sxs-lookup"><span data-stu-id="31220-105">What is a Database?</span></span>
 
-<span data-ttu-id="2a241-106">by [Microsoft](https://github.com/microsoft)</span><span class="sxs-lookup"><span data-stu-id="2a241-106">by [Microsoft](https://github.com/microsoft)</span></span>
+<span data-ttu-id="31220-106">by [Microsoft](https://github.com/microsoft)</span><span class="sxs-lookup"><span data-stu-id="31220-106">by [Microsoft](https://github.com/microsoft)</span></span>
 
-<span data-ttu-id="2a241-107">이 소개에서는 질문 하 고 SQL Server 초보자는 용어를 만들고와 같은 데이터베이스를 관리 해야 합니다. SQL Server database 란?</span><span class="sxs-lookup"><span data-stu-id="2a241-107">This introduction covers the questions and terminology SQL Server beginners need to create and manage databases, such as: What is a SQL Server database?</span></span> <span data-ttu-id="2a241-108">SQL Server 데이터베이스를 Excel 스프레드시트와 어떻게 다른가요?</span><span class="sxs-lookup"><span data-stu-id="2a241-108">How is a SQL Server database different from an Excel spreadsheet?</span></span> <span data-ttu-id="2a241-109">SQL Server 데이터베이스 내 웹 사이트 또는 소프트웨어 응용 프로그램에서 어떤 기능을 수행 합니까?</span><span class="sxs-lookup"><span data-stu-id="2a241-109">What do SQL Server databases do in my website or software applications?</span></span> <span data-ttu-id="2a241-110">Visual Studio Express를 SQL Server Express의 관계는 무엇입니까?</span><span class="sxs-lookup"><span data-stu-id="2a241-110">What's SQL Server Express' relation to Visual Studio Express?</span></span> <span data-ttu-id="2a241-111">"ADO.NET" 의미와 같은 용어는 무엇입니까?</span><span class="sxs-lookup"><span data-stu-id="2a241-111">What do terms like "ADO.NET" mean?</span></span>
+<span data-ttu-id="31220-107">이 소개에서는 질문 하 고 SQL Server 초보자는 용어를 만들고와 같은 데이터베이스를 관리 해야 합니다. SQL Server database 란?</span><span class="sxs-lookup"><span data-stu-id="31220-107">This introduction covers the questions and terminology SQL Server beginners need to create and manage databases, such as: What is a SQL Server database?</span></span> <span data-ttu-id="31220-108">SQL Server 데이터베이스를 Excel 스프레드시트와 어떻게 다른가요?</span><span class="sxs-lookup"><span data-stu-id="31220-108">How is a SQL Server database different from an Excel spreadsheet?</span></span> <span data-ttu-id="31220-109">SQL Server 데이터베이스 내 웹 사이트 또는 소프트웨어 응용 프로그램에서 어떤 기능을 수행 합니까?</span><span class="sxs-lookup"><span data-stu-id="31220-109">What do SQL Server databases do in my website or software applications?</span></span> <span data-ttu-id="31220-110">Visual Studio Express를 SQL Server Express의 관계는 무엇입니까?</span><span class="sxs-lookup"><span data-stu-id="31220-110">What's SQL Server Express' relation to Visual Studio Express?</span></span> <span data-ttu-id="31220-111">"ADO.NET" 의미와 같은 용어는 무엇입니까?</span><span class="sxs-lookup"><span data-stu-id="31220-111">What do terms like "ADO.NET" mean?</span></span>
 
-[<span data-ttu-id="2a241-112">&#9654;비디오 (28 분)</span><span class="sxs-lookup"><span data-stu-id="2a241-112">&#9654; Watch video (28 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/what-is-a-database)
+[<span data-ttu-id="31220-112">&#9654;비디오 (28 분)</span><span class="sxs-lookup"><span data-stu-id="31220-112">&#9654; Watch video (28 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/what-is-a-database)
 
 > [!div class="step-by-step"]
-> [<span data-ttu-id="2a241-113">다음</span><span class="sxs-lookup"><span data-stu-id="2a241-113">Next</span></span>](understanding-database-tables-and-records.md)
+> [<span data-ttu-id="31220-113">다음</span><span class="sxs-lookup"><span data-stu-id="31220-113">Next</span></span>](understanding-database-tables-and-records.md)

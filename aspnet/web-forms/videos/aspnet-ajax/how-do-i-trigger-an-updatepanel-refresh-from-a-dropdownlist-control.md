@@ -12,18 +12,18 @@ ms.openlocfilehash: d8b74b0fb2061477c1d2ff66e394d0bb1e22baf3
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59402052"
 ---
-# <a name="how-do-i-trigger-an-updatepanel-refresh-from-a-dropdownlist-control"></a><span data-ttu-id="c6374-105">[어떻게 할까요?] DropDownList 컨트롤에서 UpdatePanel 새로 고침을 트리거할?</span><span class="sxs-lookup"><span data-stu-id="c6374-105">[How Do I:] Trigger an UpdatePanel Refresh from a DropDownList Control?</span></span>
+# <a name="how-do-i-trigger-an-updatepanel-refresh-from-a-dropdownlist-control"></a><span data-ttu-id="cfccb-105">[어떻게 할까요?] DropDownList 컨트롤에서 UpdatePanel 새로 고침을 트리거할?</span><span class="sxs-lookup"><span data-stu-id="cfccb-105">[How Do I:] Trigger an UpdatePanel Refresh from a DropDownList Control?</span></span>
 
-<span data-ttu-id="c6374-106">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="c6374-106">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="cfccb-106">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="cfccb-106">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="c6374-107">대부분의 ASP.NET AJAX UpdatePanel의 비디오에서 해당 콘텐츠를 새로 고칠 UpdatePanel을 단추 컨트롤을 사용 했습니다.</span><span class="sxs-lookup"><span data-stu-id="c6374-107">In most of our videos on the ASP.NET AJAX UpdatePanel, we have used a Button control to cause an UpdatePanel to refresh its content.</span></span> <span data-ttu-id="c6374-108">아직 다른 ASP.NET 서버 컨트롤에서 발생 하는 이벤트를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c6374-108">Yet we may use any event raised by any other ASP.NET server control.</span></span> <span data-ttu-id="c6374-109">이 비디오는 UpdatePanel 컨트롤을 새로 고치기 위한 트리거로 DropDownList 컨트롤의 SelectedIndexChanged 이벤트를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="c6374-109">This video uses the SelectedIndexChanged event of the DropDownList control as a trigger for refreshing an UpdatePanel control.</span></span> <span data-ttu-id="c6374-110">에서는 참조 방법을 UpdatePanel 컨트롤에 포함 된 컨트롤과 연결 된 스타일 시트 클래스 동적으로 변경할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c6374-110">We see also how we can dynamically change the stylesheet class associated with the controls contained in the UpdatePanel control.</span></span>
+<span data-ttu-id="cfccb-107">대부분의 ASP.NET AJAX UpdatePanel의 비디오에서 해당 콘텐츠를 새로 고칠 UpdatePanel을 단추 컨트롤을 사용 했습니다.</span><span class="sxs-lookup"><span data-stu-id="cfccb-107">In most of our videos on the ASP.NET AJAX UpdatePanel, we have used a Button control to cause an UpdatePanel to refresh its content.</span></span> <span data-ttu-id="cfccb-108">아직 다른 ASP.NET 서버 컨트롤에서 발생 하는 이벤트를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="cfccb-108">Yet we may use any event raised by any other ASP.NET server control.</span></span> <span data-ttu-id="cfccb-109">이 비디오는 UpdatePanel 컨트롤을 새로 고치기 위한 트리거로 DropDownList 컨트롤의 SelectedIndexChanged 이벤트를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="cfccb-109">This video uses the SelectedIndexChanged event of the DropDownList control as a trigger for refreshing an UpdatePanel control.</span></span> <span data-ttu-id="cfccb-110">에서는 참조 방법을 UpdatePanel 컨트롤에 포함 된 컨트롤과 연결 된 스타일 시트 클래스 동적으로 변경할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="cfccb-110">We see also how we can dynamically change the stylesheet class associated with the controls contained in the UpdatePanel control.</span></span>
 
-[<span data-ttu-id="c6374-111">&#9654;비디오 (9 분)</span><span class="sxs-lookup"><span data-stu-id="c6374-111">&#9654; Watch video (9 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-trigger-an-updatepanel-refresh-from-a-dropdownlist-control)
+[<span data-ttu-id="cfccb-111">&#9654;비디오 (9 분)</span><span class="sxs-lookup"><span data-stu-id="cfccb-111">&#9654; Watch video (9 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-trigger-an-updatepanel-refresh-from-a-dropdownlist-control)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="c6374-112">[이전](how-do-i-implement-the-persistent-communications-pattern-using-web-services.md)
-> [다음](how-do-i-create-an-aspnet-ajax-extender-from-scratch.md)</span><span class="sxs-lookup"><span data-stu-id="c6374-112">[Previous](how-do-i-implement-the-persistent-communications-pattern-using-web-services.md)
+> <span data-ttu-id="cfccb-112">[이전](how-do-i-implement-the-persistent-communications-pattern-using-web-services.md)
+> [다음](how-do-i-create-an-aspnet-ajax-extender-from-scratch.md)</span><span class="sxs-lookup"><span data-stu-id="cfccb-112">[Previous](how-do-i-implement-the-persistent-communications-pattern-using-web-services.md)
 [Next](how-do-i-create-an-aspnet-ajax-extender-from-scratch.md)</span></span>

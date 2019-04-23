@@ -12,16 +12,16 @@ ms.openlocfilehash: c8c7864a6825db99db9c942102fc6afb41b0e655
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59405203"
 ---
-# <a name="tailspin-spyworks---displaying-user-reviews"></a><span data-ttu-id="d6f56-103">Tailspin Spyworks - 사용자 후기 표시</span><span class="sxs-lookup"><span data-stu-id="d6f56-103">Tailspin Spyworks - Displaying User Reviews</span></span>
+# <a name="tailspin-spyworks---displaying-user-reviews"></a><span data-ttu-id="88474-103">Tailspin Spyworks - 사용자 후기 표시</span><span class="sxs-lookup"><span data-stu-id="88474-103">Tailspin Spyworks - Displaying User Reviews</span></span>
 
-<span data-ttu-id="d6f56-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="d6f56-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="88474-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="88474-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="d6f56-105">Joe Stagner Tailspin Spyworks 샘플 Web Forms 응용 프로그램에서 고객의 검토를 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="d6f56-105">Joe Stagner displays reviews from customers in the Tailspin Spyworks sample Web Forms application.</span></span>
+<span data-ttu-id="88474-105">Joe Stagner Tailspin Spyworks 샘플 Web Forms 응용 프로그램에서 고객의 검토를 표시합니다.</span><span class="sxs-lookup"><span data-stu-id="88474-105">Joe Stagner displays reviews from customers in the Tailspin Spyworks sample Web Forms application.</span></span>
 
-[<span data-ttu-id="d6f56-106">&#9654;비디오 (13 분)</span><span class="sxs-lookup"><span data-stu-id="d6f56-106">&#9654; Watch video (13 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/tailspin-spyworks-displaying-user-reviews)
+[<span data-ttu-id="88474-106">&#9654;비디오 (13 분)</span><span class="sxs-lookup"><span data-stu-id="88474-106">&#9654; Watch video (13 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/tailspin-spyworks-displaying-user-reviews)
 
 > [!div class="step-by-step"]
-> [<span data-ttu-id="d6f56-107">이전</span><span class="sxs-lookup"><span data-stu-id="d6f56-107">Previous</span></span>](tailspin-spyworks-adding-user-product-reviews.md)
+> [<span data-ttu-id="88474-107">이전</span><span class="sxs-lookup"><span data-stu-id="88474-107">Previous</span></span>](tailspin-spyworks-adding-user-product-reviews.md)

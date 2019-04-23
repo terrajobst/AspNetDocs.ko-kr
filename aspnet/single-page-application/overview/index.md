@@ -12,19 +12,19 @@ ms.openlocfilehash: ba656ecc14204d833e9dc18b941a2c19ec5e06ef
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59397730"
 ---
-# <a name="single-page-application-overview"></a><span data-ttu-id="510ef-104">단일 페이지 응용 프로그램 개요</span><span class="sxs-lookup"><span data-stu-id="510ef-104">Single Page Application Overview</span></span>
+# <a name="single-page-application-overview"></a><span data-ttu-id="af97d-104">단일 페이지 응용 프로그램 개요</span><span class="sxs-lookup"><span data-stu-id="af97d-104">Single Page Application Overview</span></span>
 
-- [<span data-ttu-id="510ef-105">소개</span><span class="sxs-lookup"><span data-stu-id="510ef-105">Introduction</span></span>](introduction/index.md)
+- [<span data-ttu-id="af97d-105">소개</span><span class="sxs-lookup"><span data-stu-id="af97d-105">Introduction</span></span>](introduction/index.md)
 
-    - [<span data-ttu-id="510ef-106">단일 페이지 애플리케이션: KnockoutJS 템플릿</span><span class="sxs-lookup"><span data-stu-id="510ef-106">Single Page Application: KnockoutJS template</span></span>](introduction/knockoutjs-template.md)
-    - [<span data-ttu-id="510ef-107">Knockout 이외의 라이브러리를 알고 있으신가요?</span><span class="sxs-lookup"><span data-stu-id="510ef-107">Know a library other than Knockout?</span></span>](introduction/other-libraries.md)
-- [<span data-ttu-id="510ef-108">템플릿</span><span class="sxs-lookup"><span data-stu-id="510ef-108">Templates</span></span>](templates/index.md)
+    - [<span data-ttu-id="af97d-106">단일 페이지 응용 프로그램: KnockoutJS 템플릿</span><span class="sxs-lookup"><span data-stu-id="af97d-106">Single Page Application: KnockoutJS template</span></span>](introduction/knockoutjs-template.md)
+    - [<span data-ttu-id="af97d-107">Knockout 이외의 라이브러리를 알고 있습니까?</span><span class="sxs-lookup"><span data-stu-id="af97d-107">Know a library other than Knockout?</span></span>](introduction/other-libraries.md)
+- [<span data-ttu-id="af97d-108">템플릿</span><span class="sxs-lookup"><span data-stu-id="af97d-108">Templates</span></span>](templates/index.md)
 
-    - [<span data-ttu-id="510ef-109">백본 템플릿</span><span class="sxs-lookup"><span data-stu-id="510ef-109">Backbone Template</span></span>](templates/backbonejs-template.md)
-    - [<span data-ttu-id="510ef-110">Breeze/Angular 템플릿</span><span class="sxs-lookup"><span data-stu-id="510ef-110">Breeze/Angular template</span></span>](templates/breezeangular-template.md)
-    - [<span data-ttu-id="510ef-111">Breeze/Knockout 템플릿</span><span class="sxs-lookup"><span data-stu-id="510ef-111">Breeze/Knockout template</span></span>](templates/breezeknockout-template.md)
-    - [<span data-ttu-id="510ef-112">EmberJS 템플릿</span><span class="sxs-lookup"><span data-stu-id="510ef-112">EmberJS template</span></span>](templates/emberjs-template.md)
-    - [<span data-ttu-id="510ef-113">Hot Towel 템플릿</span><span class="sxs-lookup"><span data-stu-id="510ef-113">Hot Towel template</span></span>](templates/hottowel-template.md)
+    - [<span data-ttu-id="af97d-109">백본 템플릿</span><span class="sxs-lookup"><span data-stu-id="af97d-109">Backbone Template</span></span>](templates/backbonejs-template.md)
+    - [<span data-ttu-id="af97d-110">Breeze/Angular 템플릿</span><span class="sxs-lookup"><span data-stu-id="af97d-110">Breeze/Angular template</span></span>](templates/breezeangular-template.md)
+    - [<span data-ttu-id="af97d-111">Breeze/Knockout 템플릿</span><span class="sxs-lookup"><span data-stu-id="af97d-111">Breeze/Knockout template</span></span>](templates/breezeknockout-template.md)
+    - [<span data-ttu-id="af97d-112">EmberJS 템플릿</span><span class="sxs-lookup"><span data-stu-id="af97d-112">EmberJS template</span></span>](templates/emberjs-template.md)
+    - [<span data-ttu-id="af97d-113">Hot Towel 템플릿</span><span class="sxs-lookup"><span data-stu-id="af97d-113">Hot Towel template</span></span>](templates/hottowel-template.md)

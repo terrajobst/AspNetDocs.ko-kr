@@ -12,14 +12,14 @@ ms.openlocfilehash: fd025699a72aea6bd39672f2f240e76528eaa8ab
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59406927"
 ---
-# <a name="using-script-combining-to-improve-ajax-performance"></a><span data-ttu-id="b2576-103">스크립트 결합을 사용하여 AJAX 성능 향상</span><span class="sxs-lookup"><span data-stu-id="b2576-103">Using Script Combining to improve AJAX performance</span></span>
+# <a name="using-script-combining-to-improve-ajax-performance"></a><span data-ttu-id="92a7d-103">스크립트 결합을 사용하여 AJAX 성능 향상</span><span class="sxs-lookup"><span data-stu-id="92a7d-103">Using Script Combining to improve AJAX performance</span></span>
 
-<span data-ttu-id="b2576-104">Betrand Le Roy Ajax toolkit의 샘플 코드를 사용 하 여 간단한 페이지를 활용 하 여 스크립트를 결합 이라는 새로운 기능을 사용 하 여 Ajax 응용 프로그램의 성능을 향상 하는 방법을 간략하게 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="b2576-104">Betrand Le Roy outlines how to improve the performance of an Ajax application using a new feature called Script Combining, utilizing a simple page with sample code from the Ajax toolkit.</span></span>
+<span data-ttu-id="92a7d-104">Betrand Le Roy Ajax toolkit의 샘플 코드를 사용 하 여 간단한 페이지를 활용 하 여 스크립트를 결합 이라는 새로운 기능을 사용 하 여 Ajax 응용 프로그램의 성능을 향상 하는 방법을 간략하게 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="92a7d-104">Betrand Le Roy outlines how to improve the performance of an Ajax application using a new feature called Script Combining, utilizing a simple page with sample code from the Ajax toolkit.</span></span>
 
-[<span data-ttu-id="b2576-105">&#9654;비디오 (4 분)</span><span class="sxs-lookup"><span data-stu-id="b2576-105">&#9654; Watch video (4 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/using-script-combining-to-improve-ajax-performance)
+[<span data-ttu-id="92a7d-105">&#9654;비디오 (4 분)</span><span class="sxs-lookup"><span data-stu-id="92a7d-105">&#9654; Watch video (4 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/using-script-combining-to-improve-ajax-performance)
 
 > [!div class="step-by-step"]
-> [<span data-ttu-id="b2576-106">이전</span><span class="sxs-lookup"><span data-stu-id="b2576-106">Previous</span></span>](introduction-to-aspnet-ajax-history.md)
+> [<span data-ttu-id="92a7d-106">이전</span><span class="sxs-lookup"><span data-stu-id="92a7d-106">Previous</span></span>](introduction-to-aspnet-ajax-history.md)

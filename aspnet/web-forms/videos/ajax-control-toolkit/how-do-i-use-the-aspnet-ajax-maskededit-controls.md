@@ -12,18 +12,18 @@ ms.openlocfilehash: 4b97b05e16275867db5157e3eaf2ea8db28b4c30
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59397138"
 ---
-# <a name="how-do-i-use-the-aspnet-ajax-maskededit-controls"></a><span data-ttu-id="a958f-104">[어떻게 할까요?] ASP.NET AJAX MaskedEdit 컨트롤 사용</span><span class="sxs-lookup"><span data-stu-id="a958f-104">[How Do I:] Use the ASP.NET AJAX MaskedEdit Controls?</span></span>
+# <a name="how-do-i-use-the-aspnet-ajax-maskededit-controls"></a><span data-ttu-id="7f8fa-104">[어떻게 할까요?] ASP.NET AJAX MaskedEdit 컨트롤 사용</span><span class="sxs-lookup"><span data-stu-id="7f8fa-104">[How Do I:] Use the ASP.NET AJAX MaskedEdit Controls?</span></span>
 
-<span data-ttu-id="a958f-105">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="a958f-105">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="7f8fa-105">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="7f8fa-105">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="a958f-106">ASP.NET AJAX Control Toolkit MaskedEdit 컨트롤 및 프롬프트, 스타일, 사용자가 텍스트 상자에 입력 데이터 유효성 검사를 함께 작동 하는 MaskedEditValidator 컨트롤을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="a958f-106">The ASP.NET AJAX Control Toolkit provides the MaskedEdit control and the MaskedEditValidator control which work together to prompt, style, and validate the data that the user enters in a text box.</span></span> <span data-ttu-id="a958f-107">이렇게 하면 올바른 형식 및 형식으로 입력 된 데이터 인지에 즉각적인 시각적 피드백을 사용 하 여 사용자를 제공 하는 웹 페이지입니다.</span><span class="sxs-lookup"><span data-stu-id="a958f-107">This allows the Web page to provide the user with immediate visual feedback on whether the data entered is of a valid type and format.</span></span>
+<span data-ttu-id="7f8fa-106">ASP.NET AJAX Control Toolkit MaskedEdit 컨트롤 및 프롬프트, 스타일, 사용자가 텍스트 상자에 입력 데이터 유효성 검사를 함께 작동 하는 MaskedEditValidator 컨트롤을 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="7f8fa-106">The ASP.NET AJAX Control Toolkit provides the MaskedEdit control and the MaskedEditValidator control which work together to prompt, style, and validate the data that the user enters in a text box.</span></span> <span data-ttu-id="7f8fa-107">이렇게 하면 올바른 형식 및 형식으로 입력 된 데이터 인지에 즉각적인 시각적 피드백을 사용 하 여 사용자를 제공 하는 웹 페이지입니다.</span><span class="sxs-lookup"><span data-stu-id="7f8fa-107">This allows the Web page to provide the user with immediate visual feedback on whether the data entered is of a valid type and format.</span></span>
 
-[<span data-ttu-id="a958f-108">&#9654;비디오 (17 분)</span><span class="sxs-lookup"><span data-stu-id="a958f-108">&#9654; Watch video (17 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-the-aspnet-ajax-maskededit-controls)
+[<span data-ttu-id="7f8fa-108">&#9654;비디오 (17 분)</span><span class="sxs-lookup"><span data-stu-id="7f8fa-108">&#9654; Watch video (17 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-the-aspnet-ajax-maskededit-controls)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="a958f-109">[이전](how-do-i-use-the-aspnet-ajax-dropdown-control.md)
-> [다음](how-do-i-use-the-aspnet-ajax-mutuallyexclusive-checkbox-extender.md)</span><span class="sxs-lookup"><span data-stu-id="a958f-109">[Previous](how-do-i-use-the-aspnet-ajax-dropdown-control.md)
+> <span data-ttu-id="7f8fa-109">[이전](how-do-i-use-the-aspnet-ajax-dropdown-control.md)
+> [다음](how-do-i-use-the-aspnet-ajax-mutuallyexclusive-checkbox-extender.md)</span><span class="sxs-lookup"><span data-stu-id="7f8fa-109">[Previous](how-do-i-use-the-aspnet-ajax-dropdown-control.md)
 [Next](how-do-i-use-the-aspnet-ajax-mutuallyexclusive-checkbox-extender.md)</span></span>

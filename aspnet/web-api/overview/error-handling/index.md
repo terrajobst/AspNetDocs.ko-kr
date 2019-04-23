@@ -13,13 +13,13 @@ ms.openlocfilehash: 62df1c144cdb14c83eb1407713dc051d39a1def7
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59401038"
 ---
-# <a name="error-handling-in-aspnet-web-api"></a><span data-ttu-id="15c86-103">ASP.NET Web API에서에서 오류 처리</span><span class="sxs-lookup"><span data-stu-id="15c86-103">Error Handling in ASP.NET Web API</span></span>
+# <a name="error-handling-in-aspnet-web-api"></a><span data-ttu-id="a340a-103">ASP.NET Web API에서에서 오류 처리</span><span class="sxs-lookup"><span data-stu-id="a340a-103">Error Handling in ASP.NET Web API</span></span>
 
-> <span data-ttu-id="15c86-104">ASP.NET Web API에서 예외를 처리 하는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="15c86-104">How to handle exceptions in ASP.NET Web API.</span></span>
+> <span data-ttu-id="a340a-104">ASP.NET Web API에서 예외를 처리 하는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="a340a-104">How to handle exceptions in ASP.NET Web API.</span></span>
 
 
-- [<span data-ttu-id="15c86-105">Web API에서 예외 처리</span><span class="sxs-lookup"><span data-stu-id="15c86-105">Exception Handling in Web API</span></span>](exception-handling.md)
-- [<span data-ttu-id="15c86-106">Web API 2에서 전역 오류 처리</span><span class="sxs-lookup"><span data-stu-id="15c86-106">Global Error Handling in Web API 2</span></span>](web-api-global-error-handling.md)
+- [<span data-ttu-id="a340a-105">Web API에서 예외 처리</span><span class="sxs-lookup"><span data-stu-id="a340a-105">Exception Handling in Web API</span></span>](exception-handling.md)
+- [<span data-ttu-id="a340a-106">Web API 2에서 전역 오류 처리</span><span class="sxs-lookup"><span data-stu-id="a340a-106">Global Error Handling in Web API 2</span></span>](web-api-global-error-handling.md)

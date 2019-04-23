@@ -12,22 +12,22 @@ ms.openlocfilehash: fcab9f2ff0be9c43d2aae1825ef2666ad011c9e4
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59399465"
 ---
-# <a name="getting-started-with-ef-5-using-mvc-4"></a><span data-ttu-id="1fd7e-103">MVC 4를 사용하여 EF 5 시작</span><span class="sxs-lookup"><span data-stu-id="1fd7e-103">Getting Started with EF 5 using MVC 4</span></span>
+# <a name="getting-started-with-ef-5-using-mvc-4"></a><span data-ttu-id="9a92e-103">MVC 4를 사용하여 EF 5 시작</span><span class="sxs-lookup"><span data-stu-id="9a92e-103">Getting Started with EF 5 using MVC 4</span></span>
 
-> <span data-ttu-id="1fd7e-104">Entity Framework 5를 사용 하 여 ASP.NET MVC 4 응용 프로그램에서 데이터 표시 및 편집 하는 기본 사항</span><span class="sxs-lookup"><span data-stu-id="1fd7e-104">The basics of using Entity Framework 5 to display and edit data in an ASP.NET MVC 4 application.</span></span>
+> <span data-ttu-id="9a92e-104">Entity Framework 5를 사용 하 여 ASP.NET MVC 4 응용 프로그램에서 데이터 표시 및 편집 하는 기본 사항</span><span class="sxs-lookup"><span data-stu-id="9a92e-104">The basics of using Entity Framework 5 to display and edit data in an ASP.NET MVC 4 application.</span></span>
 
 
-- [<span data-ttu-id="1fd7e-105">Entity Framework 데이터 모델 만들기</span><span class="sxs-lookup"><span data-stu-id="1fd7e-105">Creating an Entity Framework Data Model</span></span>](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application.md)
-- [<span data-ttu-id="1fd7e-106">기본 CRUD 기능 구현</span><span class="sxs-lookup"><span data-stu-id="1fd7e-106">Implementing Basic CRUD Functionality</span></span>](implementing-basic-crud-functionality-with-the-entity-framework-in-asp-net-mvc-application.md)
-- [<span data-ttu-id="1fd7e-107">정렬, 필터링 및 페이징</span><span class="sxs-lookup"><span data-stu-id="1fd7e-107">Sorting, Filtering, and Paging</span></span>](sorting-filtering-and-paging-with-the-entity-framework-in-an-asp-net-mvc-application.md)
-- [<span data-ttu-id="1fd7e-108">좀 더 복잡한 데이터 모델 만들기</span><span class="sxs-lookup"><span data-stu-id="1fd7e-108">Creating a More Complex Data Model</span></span>](creating-a-more-complex-data-model-for-an-asp-net-mvc-application.md)
-- [<span data-ttu-id="1fd7e-109">관련 데이터 읽기</span><span class="sxs-lookup"><span data-stu-id="1fd7e-109">Reading Related Data</span></span>](reading-related-data-with-the-entity-framework-in-an-asp-net-mvc-application.md)
-- [<span data-ttu-id="1fd7e-110">관련 데이터 업데이트</span><span class="sxs-lookup"><span data-stu-id="1fd7e-110">Updating Related Data</span></span>](updating-related-data-with-the-entity-framework-in-an-asp-net-mvc-application.md)
-- [<span data-ttu-id="1fd7e-111">동시성 처리</span><span class="sxs-lookup"><span data-stu-id="1fd7e-111">Handling Concurrency</span></span>](handling-concurrency-with-the-entity-framework-in-an-asp-net-mvc-application.md)
-- [<span data-ttu-id="1fd7e-112">상속 구현</span><span class="sxs-lookup"><span data-stu-id="1fd7e-112">Implementing Inheritance</span></span>](implementing-inheritance-with-the-entity-framework-in-an-asp-net-mvc-application.md)
-- [<span data-ttu-id="1fd7e-113">작업 패턴의 리포지토리 및 단위 구현</span><span class="sxs-lookup"><span data-stu-id="1fd7e-113">Implementing the Repository and Unit of Work Patterns</span></span>](implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application.md)
-- [<span data-ttu-id="1fd7e-114">고급 Entity Framework 시나리오</span><span class="sxs-lookup"><span data-stu-id="1fd7e-114">Advanced Entity Framework Scenarios</span></span>](advanced-entity-framework-scenarios-for-an-mvc-web-application.md)
-- [<span data-ttu-id="1fd7e-115">챕터 다운로드 빌드</span><span class="sxs-lookup"><span data-stu-id="1fd7e-115">Building the Chapter Downloads</span></span>](building-the-ef5-mvc4-chapter-downloads.md)
+- [<span data-ttu-id="9a92e-105">Entity Framework 데이터 모델 만들기</span><span class="sxs-lookup"><span data-stu-id="9a92e-105">Creating an Entity Framework Data Model</span></span>](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application.md)
+- [<span data-ttu-id="9a92e-106">기본 CRUD 기능 구현</span><span class="sxs-lookup"><span data-stu-id="9a92e-106">Implementing Basic CRUD Functionality</span></span>](implementing-basic-crud-functionality-with-the-entity-framework-in-asp-net-mvc-application.md)
+- [<span data-ttu-id="9a92e-107">정렬, 필터링 및 페이징</span><span class="sxs-lookup"><span data-stu-id="9a92e-107">Sorting, Filtering, and Paging</span></span>](sorting-filtering-and-paging-with-the-entity-framework-in-an-asp-net-mvc-application.md)
+- [<span data-ttu-id="9a92e-108">좀 더 복잡한 데이터 모델 만들기</span><span class="sxs-lookup"><span data-stu-id="9a92e-108">Creating a More Complex Data Model</span></span>](creating-a-more-complex-data-model-for-an-asp-net-mvc-application.md)
+- [<span data-ttu-id="9a92e-109">관련 데이터 읽기</span><span class="sxs-lookup"><span data-stu-id="9a92e-109">Reading Related Data</span></span>](reading-related-data-with-the-entity-framework-in-an-asp-net-mvc-application.md)
+- [<span data-ttu-id="9a92e-110">관련 데이터 업데이트</span><span class="sxs-lookup"><span data-stu-id="9a92e-110">Updating Related Data</span></span>](updating-related-data-with-the-entity-framework-in-an-asp-net-mvc-application.md)
+- [<span data-ttu-id="9a92e-111">동시성 처리</span><span class="sxs-lookup"><span data-stu-id="9a92e-111">Handling Concurrency</span></span>](handling-concurrency-with-the-entity-framework-in-an-asp-net-mvc-application.md)
+- [<span data-ttu-id="9a92e-112">상속 구현</span><span class="sxs-lookup"><span data-stu-id="9a92e-112">Implementing Inheritance</span></span>](implementing-inheritance-with-the-entity-framework-in-an-asp-net-mvc-application.md)
+- [<span data-ttu-id="9a92e-113">작업 패턴의 리포지토리 및 단위 구현</span><span class="sxs-lookup"><span data-stu-id="9a92e-113">Implementing the Repository and Unit of Work Patterns</span></span>](implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application.md)
+- [<span data-ttu-id="9a92e-114">고급 Entity Framework 시나리오</span><span class="sxs-lookup"><span data-stu-id="9a92e-114">Advanced Entity Framework Scenarios</span></span>](advanced-entity-framework-scenarios-for-an-mvc-web-application.md)
+- [<span data-ttu-id="9a92e-115">챕터 다운로드 빌드</span><span class="sxs-lookup"><span data-stu-id="9a92e-115">Building the Chapter Downloads</span></span>](building-the-ef5-mvc4-chapter-downloads.md)

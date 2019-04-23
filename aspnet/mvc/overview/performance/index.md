@@ -12,14 +12,14 @@ ms.openlocfilehash: ee1b17ac4802ecbd92e571a62c491bc9a49a3560
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59401597"
 ---
-# <a name="aspnet-mvc-performance"></a><span data-ttu-id="f15eb-103">ASP.NET MVC 성능</span><span class="sxs-lookup"><span data-stu-id="f15eb-103">ASP.NET MVC Performance</span></span>
+# <a name="aspnet-mvc-performance"></a><span data-ttu-id="10863-103">ASP.NET MVC 성능</span><span class="sxs-lookup"><span data-stu-id="10863-103">ASP.NET MVC Performance</span></span>
 
-> <span data-ttu-id="f15eb-104">ASP.NET MVC 응용 프로그램의 성능을 최적화 하기 위한 리소스입니다.</span><span class="sxs-lookup"><span data-stu-id="f15eb-104">Resources for optimizing performance of ASP.NET MVC applications.</span></span>
+> <span data-ttu-id="10863-104">ASP.NET MVC 응용 프로그램의 성능을 최적화 하기 위한 리소스입니다.</span><span class="sxs-lookup"><span data-stu-id="10863-104">Resources for optimizing performance of ASP.NET MVC applications.</span></span>
 
 
-- [<span data-ttu-id="f15eb-105">ASP.NET MVC 4에서 비동기 메서드 사용</span><span class="sxs-lookup"><span data-stu-id="f15eb-105">Using Asynchronous Methods in ASP.NET MVC 4</span></span>](using-asynchronous-methods-in-aspnet-mvc-4.md)
-- [<span data-ttu-id="f15eb-106">Glimpse를 사용하여 ASP.NET MVC 앱 프로파일링 및 디버그</span><span class="sxs-lookup"><span data-stu-id="f15eb-106">Profile and debug your ASP.NET MVC app with Glimpse</span></span>](profile-and-debug-your-aspnet-mvc-app-with-glimpse.md)
-- [<span data-ttu-id="f15eb-107">묶음 및 축소</span><span class="sxs-lookup"><span data-stu-id="f15eb-107">Bundling and Minification</span></span>](bundling-and-minification.md)
+- [<span data-ttu-id="10863-105">ASP.NET MVC 4에서 비동기 메서드 사용</span><span class="sxs-lookup"><span data-stu-id="10863-105">Using Asynchronous Methods in ASP.NET MVC 4</span></span>](using-asynchronous-methods-in-aspnet-mvc-4.md)
+- [<span data-ttu-id="10863-106">Glimpse를 사용하여 ASP.NET MVC 앱 프로파일링 및 디버깅</span><span class="sxs-lookup"><span data-stu-id="10863-106">Profile and debug your ASP.NET MVC app with Glimpse</span></span>](profile-and-debug-your-aspnet-mvc-app-with-glimpse.md)
+- [<span data-ttu-id="10863-107">묶음 및 축소</span><span class="sxs-lookup"><span data-stu-id="10863-107">Bundling and Minification</span></span>](bundling-and-minification.md)

@@ -12,13 +12,13 @@ ms.openlocfilehash: 19ea64d706cf301722efa29e5eca952d004d1710
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59406797"
 ---
-# <a name="passwordstrength"></a><span data-ttu-id="4456e-103">PasswordStrength</span><span class="sxs-lookup"><span data-stu-id="4456e-103">PasswordStrength</span></span>
+# <a name="passwordstrength"></a><span data-ttu-id="6411c-103">PasswordStrength</span><span class="sxs-lookup"><span data-stu-id="6411c-103">PasswordStrength</span></span>
 
-> <span data-ttu-id="4456e-104">강력한 방법을 확인 하려면 PasswordStrength 컨트롤에 암호 성은 사용자로이 자습서에서는 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="4456e-104">This tutorial shows how to PasswordStrength control to check how strong a password is as a user creates it.</span></span>
+> <span data-ttu-id="6411c-104">강력한 방법을 확인 하려면 PasswordStrength 컨트롤에 암호 성은 사용자로이 자습서에서는 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="6411c-104">This tutorial shows how to PasswordStrength control to check how strong a password is as a user creates it.</span></span>
 
 
-- [<span data-ttu-id="4456e-105">암호 강도 테스트(C#)</span><span class="sxs-lookup"><span data-stu-id="4456e-105">Testing the Strength of a Password (C#)</span></span>](testing-the-strength-of-a-password-cs.md)
-- [<span data-ttu-id="4456e-106">암호 강도 테스트(VB)</span><span class="sxs-lookup"><span data-stu-id="4456e-106">Testing the Strength of a Password (VB)</span></span>](testing-the-strength-of-a-password-vb.md)
+- [<span data-ttu-id="6411c-105">암호 강도 테스트(C#)</span><span class="sxs-lookup"><span data-stu-id="6411c-105">Testing the Strength of a Password (C#)</span></span>](testing-the-strength-of-a-password-cs.md)
+- [<span data-ttu-id="6411c-106">암호 강도 테스트(VB)</span><span class="sxs-lookup"><span data-stu-id="6411c-106">Testing the Strength of a Password (VB)</span></span>](testing-the-strength-of-a-password-vb.md)
