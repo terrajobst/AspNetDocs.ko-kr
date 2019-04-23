@@ -12,7 +12,7 @@ ms.openlocfilehash: 82fae91e40ec2f1508fe5c82992eeef4abc4e19a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59419225"
 ---
 # <a name="using-ajax-control-toolkit-controls-and-control-extenders-c"></a>Using AJAX 컨트롤 도구 키트 컨트롤 및 컨트롤 Extender 사용(C#)
@@ -44,17 +44,17 @@ AJAX Control Toolkit에서 컨트롤을 사용 하는 경우 특별 한 요구 �
 5. 그림 3에는 페이지가 표시 됩니다.
 
 
-[![SHTML 편집기 컨트롤 선택](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image1.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image1.png)
+[![HTML 편집기 컨트롤 선택](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image1.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image1.png)
 
 **그림 01**: HTML 편집기 컨트롤 선택 ([클릭 하 여 큰 이미지 보기](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image2.png))
 
 
-[![VScriptManager 및 편집 컨트롤과 Studio 디자이너를 겨냥](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image2.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image3.png)
+[![ScriptManager 및 편집 컨트롤을 사용 하 여 visual Studio 디자이너](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image2.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image3.png)
 
 **그림 02**: ScriptManager 및 편집 컨트롤을 사용 하 여 visual Studio Designer ([클릭 하 여 큰 이미지 보기](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image4.png))
 
 
-[![T그 DisplayEditor.aspx 페이지](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image3.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image5.png)
+[![DisplayEditor.aspx 페이지](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image3.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image5.png)
 
 **그림 03**: DisplayEditor.aspx 페이지 ([클릭 하 여 큰 이미지 보기](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image6.png))
 
@@ -76,17 +76,17 @@ AJAX Control Toolkit 컨트롤 extenders를 사용에 포함 되어 있습니다
 7. 메뉴 옵션을 선택 하 여 페이지를 실행할 **디버그, 디버깅 시작** 또는 F5 키를 누릅니다.
 
 
-[![T그 Extender 추가 작업 옵션](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image4.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image7.png)
+[![Extender 추가 작업 옵션](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image4.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image7.png)
 
 **그림 04**: Extender 추가 작업 옵션 ([클릭 하 여 큰 이미지 보기](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image8.png))
 
 
-[![S컨트롤 같이 ConfirmButton extender를 선택](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image5.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image9.png)
+[![컨트롤 같이 ConfirmButton extender를 선택합니다.](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image5.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image9.png)
 
 **그림 05**: 컨트롤 같이 ConfirmButton extender를 선택 하면 ([클릭 하 여 큰 이미지 보기](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image10.png))
 
 
-[![Setting ConfirmButton 속성](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image6.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image11.png)
+[![ConfirmButton 속성 설정](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image6.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image11.png)
 
 **그림 06**: ConfirmButton 속성을 설정 ([클릭 하 여 큰 이미지 보기](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image12.png))
 
@@ -94,7 +94,7 @@ AJAX Control Toolkit 컨트롤 extenders를 사용에 포함 되어 있습니다
 페이지가 열릴 때 단추가 표시 됩니다. 단추를 클릭 하면 그림 7에서 확인 대화 상자를 가져옵니다.
 
 
-[![D확인 대화 상자 isplaying](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image7.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image13.png)
+[![확인 대화 상자를 표시합니다.](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image7.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image13.png)
 
 **그림 07**: 확인 대화 상자를 표시 합니다. ([클릭 하 여 큰 이미지 보기](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image14.png))
 

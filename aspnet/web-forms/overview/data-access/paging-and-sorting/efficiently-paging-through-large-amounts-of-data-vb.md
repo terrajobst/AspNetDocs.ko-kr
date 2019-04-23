@@ -12,7 +12,7 @@ ms.openlocfilehash: 20ea33efbd1db657a03b20a665a041ecf3a6d248
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59399556"
 ---
 # <a name="efficiently-paging-through-large-amounts-of-data-vb"></a>대량의 데이터를 효율적으로 페이징(VB)
@@ -191,7 +191,7 @@ DAL s `TotalNumberOfProducts` 메서드가 null을 허용 하는 정수를 반�
 이후에 이러한 선택 매개 변수 값을 입력, 출력 창에 결과가 표시 됩니다. 그림 8 둘 다에 대해 10에서 전달 하는 경우 결과 표시 합니다 `@startRowIndex` 및 `@maximumRows` 매개 변수.
 
 
-[![T반환 된 데이터의 두 번째 페이지에 나타납니다는 레코드 그](efficiently-paging-through-large-amounts-of-data-vb/_static/image9.png)](efficiently-paging-through-large-amounts-of-data-vb/_static/image8.png)
+[![반환 되는 레코드는에 표시 되는지 두 번째 데이터 페이지](efficiently-paging-through-large-amounts-of-data-vb/_static/image9.png)](efficiently-paging-through-large-amounts-of-data-vb/_static/image8.png)
 
 **그림 8**: 반환 되는 레코드는에 표시 되는지 두 번째 페이지 데이터 ([클릭 하 여 큰 이미지 보기](efficiently-paging-through-large-amounts-of-data-vb/_static/image10.png))
 
@@ -293,7 +293,7 @@ ObjectDataSource 현재 사용 중 이므로 0 값으로 둘 다에 대해 GridV
 다음과 같이 변경한 후 브라우저를 통해이 페이지를 방문 합니다. 10 개의 제품이 나열, 표시 사전순으로 정렬 합니다. 시간을 내어 한 번에 데이터 한 페이지를 단계별로 실행 합니다. 지정된 된 페이지에 대 한 표시 해야 하는 레코드만 검색으로 visual 차이가 없습니다 최종 사용자가의 관점에서 기본 페이징 및 사용자 지정 페이징을 상태인 동안 많은 양의 데이터를 통해 페이지 보다 효율적으로 사용자 지정 페이징 합니다.
 
 
-[![T그 데이터를 사용 하 여 사용자 지정 페이징 페이징는 제품 이름이 의해 정렬](efficiently-paging-through-large-amounts-of-data-vb/_static/image20.png)](efficiently-paging-through-large-amounts-of-data-vb/_static/image19.png)
+[![데이터, Ordered의 이름, 제품에는 사용 하 여 사용자 지정 페이징 페이징](efficiently-paging-through-large-amounts-of-data-vb/_static/image20.png)](efficiently-paging-through-large-amounts-of-data-vb/_static/image19.png)
 
 **그림 17**: 데이터, Ordered의 이름, 제품에는 사용 하 여 사용자 지정 페이징 페이징 ([클릭 하 여 큰 이미지 보기](efficiently-paging-through-large-amounts-of-data-vb/_static/image21.png))
 
@@ -309,7 +309,7 @@ ObjectDataSource 현재 사용 중 이므로 0 값으로 둘 다에 대해 GridV
 현재 사용자 지정 페이징 구현을 통해 데이터 페이징 되는 순서를 만들 때 정적으로 지정할 필요는 `GetProductsPaged` 저장 프로시저입니다. 그러나 있습니다 기록한 GridView가 스마트 태그에는 페이징 사용 옵션 외에 정렬 사용 확인란을 선택 합니다. 아쉽게도 현재 사용자 지정 페이징 구현 GridView에 정렬 지원을 추가 데이터의 현재 표시 된 페이지의 레코드를 정렬만 됩니다. 예를 들어, 또한 페이징을 지원 하 여 데이터의 첫 번째 페이지를 볼 때 제품 이름을 내림차순으로 정렬 하는 다음 GridView를 구성 하는 경우 1 페이지에서 제품의 순서를 반대로 것입니다. 그림 18에서 볼 수 있듯이 이러한 카 호랑이로 표시 첫 번째 제품 71 다른 제품 다음에 오는 카 호랑이 사전순으로; 무시 하는 역방향 알파벳 순으로 정렬 하는 경우 정렬에서 첫 번째 페이지의 레코드만 간주 됩니다.
 
 
-[![O현재 페이지에 표시 된 데이터가 있는 정렬](efficiently-paging-through-large-amounts-of-data-vb/_static/image23.png)](efficiently-paging-through-large-amounts-of-data-vb/_static/image22.png)
+[![정렬 되는 데이터에만 표시 현재 페이지](efficiently-paging-through-large-amounts-of-data-vb/_static/image23.png)](efficiently-paging-through-large-amounts-of-data-vb/_static/image22.png)
 
 **그림 18**: 정렬 되는 데이터에만 표시 현재 페이지 ([클릭 하 여 큰 이미지 보기](efficiently-paging-through-large-amounts-of-data-vb/_static/image24.png))
 
@@ -352,12 +352,12 @@ ObjectDataSource 현재 사용 중 이므로 0 값으로 둘 다에 대해 GridV
 필자의 아티클을 [SQL Server 2005를 사용 하 여 ASP.NET 2.0의 사용자 지정 페이징](http://aspnet.4guysfromrolla.com/articles/031506-1.aspx), 데이터베이스 테이블에 페이징 하는 경우 이러한 두 페이징 기술 간 성능 차이 보이게 필자는 몇 가지 성능 테스트가 포함 50,000 개의 레코드입니다. 이러한 테스트에서 SQL Server 수준에서 쿼리를 실행 하는 시간이 모두 살펴봤습니다 (사용 하 여 [SQL Profiler](https://msdn.microsoft.com/library/ms173757.aspx)) 및 사용 하 여 ASP.NET 페이지 [ASP.NET 추적 기능](https://msdn.microsoft.com/library/y13fw6we.aspx)합니다. 이러한 테스트 단일 활성 사용자를 사용 하 여 개발 상자 내에서 실행 된 및 따라서 과학 없는 일반적인 웹 사이트 부하 패턴을 모방 하지 마십시오 염두에서에 둡니다. 그럼에도 불구 하 고 결과 충분히 많은 양의 데이터를 사용 하 여 작업 하는 경우 기본 인스턴스 및 사용자 지정 페이징을 실행 시간이 상대 차이점을 설명 합니다.
 
 
-|  | **평균 기간 (초)** | **읽기** |
+|  | **Avg. 기간 (초)** | **읽기** |
 | --- | --- | --- |
 | **기본 SQL Profiler 페이징** | 1.411 | 383 |
 | **사용자 지정 페이징 SQL Profiler** | 0.002 | 29 |
-| **기본 페이징 ASP.NET 추적** | 2.379 | *N/A* |
-| **사용자 지정 페이징 ASP.NET 추적** | 0.029 | *N/A* |
+| **기본 페이징 ASP.NET 추적** | 2.379 | *해당 없음* |
+| **사용자 지정 페이징 ASP.NET 추적** | 0.029 | *해당 없음* |
 
 
 알 수 있듯이 평균 읽기 덜 354 필요한 데이터의 특정 페이지를 검색 하 고 시간에 비해 훨씬 빨리 완료 됩니다. ASP.NET 페이지에서 사용자 지정 페이지 있었습니다 1/100에 가까우면에 렌더링할<sup>번째</sup> 기본 페이징을 사용 하는 경우 걸린 시간입니다. 참조 [필자의 기사](http://aspnet.4guysfromrolla.com/articles/031506-1.aspx) 코드 및 데이터베이스와 함께 이러한 결과 대 한 자세한 내용은 자신의 환경에서 이러한 테스트를 재현 하는 다운로드할 수 있습니다.

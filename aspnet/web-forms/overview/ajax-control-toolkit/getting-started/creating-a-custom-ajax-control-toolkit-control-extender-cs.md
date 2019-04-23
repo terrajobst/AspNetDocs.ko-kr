@@ -12,7 +12,7 @@ ms.openlocfilehash: 4428ef0a6cec4c348bc48d069b990798508c21d4
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59391665"
 ---
 # <a name="creating-a-custom-ajax-control-toolkit-control-extender-c"></a>사용자 지정 AJAX 컨트롤 도구 키트 컨트롤 Extender 만들기(C#)
@@ -79,7 +79,7 @@ S를 웹 사이트를 시작할 수 있습니다. 웹 사이트를 만들려면 
 다음이 단계를 완료 한 후 솔루션 탐색기 창 그림 1과 같아야 합니다.
 
 
-[![S웹 사이트 및 클래스 라이브러리 프로젝트를 사용 하 여 솔루션](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image8.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image7.png)
+[![웹 사이트 및 클래스 라이브러리 프로젝트를 사용 하 여 솔루션](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image8.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image7.png)
 
 **그림 01**: 웹 사이트 및 클래스 라이브러리 프로젝트를 사용 하 여 솔루션 ([클릭 하 여 큰 이미지 보기](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image9.png))
 
@@ -100,7 +100,7 @@ S를 웹 사이트를 시작할 수 있습니다. 웹 사이트를 만들려면 
 다음이 단계를 완료 한 후 클래스 라이브러리 프로젝트 참조 폴더는 그림 2와 같습니다.
 
 
-[![R필요한 참조를 사용 하 여 eferences 폴더](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image11.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image10.png)
+[![필요한 참조를 사용 하 여 참조 폴더](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image11.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image10.png)
 
 **그림 02**: 필요한 참조를 사용 하 여 참조 폴더 ([클릭 하 여 큰 이미지 보기](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image12.png))
 
@@ -155,7 +155,7 @@ Initialize () 메서드는 동작에 대 한 대상 요소를 사용 하 여 key
 JavaScript 파일 목록 3에 포함 리소스로 컴파일해야 해야 합니다. 솔루션 탐색기 창에서 파일을 선택 하 고, 속성 시트를 열고, 값을 할당 *포함 리소스* 에 **빌드 작업** 속성 (그림 3 참조). 이 옵션은 Visual Studio 및 Visual Web Developer에서 사용할 수 있습니다.
 
 
-[![AJavaScript 파일에 포함 리소스로 이어지지](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image14.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image13.png)
+[![JavaScript 파일을 포함 리소스로 추가](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image14.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image13.png)
 
 **그림 03**: JavaScript 파일을 포함 리소스로 추가 ([클릭 하 여 큰 이미지 보기](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image15.png))
 
@@ -184,7 +184,7 @@ Designer 특성을 사용 하 여 DisabledButton extender 4에서 디자이너�
 다음이 단계를 완료 하면 DisabledButton 컨트롤 extender 도구 상자에 나타납니다 (그림 4 참조).
 
 
-[![D도구 상자에서 isabledButton](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image17.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image16.png)
+[![도구 상자에서 DisabledButton](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image17.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image16.png)
 
 **그림 04**: 도구 상자에서 DisabledButton ([클릭 하 여 큰 이미지 보기](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image18.png))
 
@@ -206,7 +206,7 @@ Designer 특성을 사용 하 여 DisabledButton extender 4에서 디자이너�
 2. DisabledButton extender를 선택 하 고 클릭 합니다 **확인** 단추입니다.
 
 
-[![T그 Extender 마법사 대화 상자](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image20.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image19.png)
+[![Extender 마법사 대화 상자](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image20.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image19.png)
 
 **그림 05**: Extender 마법사 대화 상자 ([클릭 하 여 큰 이미지 보기](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image21.png))
 
@@ -218,7 +218,7 @@ Designer 특성을 사용 하 여 DisabledButton extender 4에서 디자이너�
 3. 값을 할당 *저장할* DisabledText 속성 및 값에 *btnSave* TargetButtonID 속성입니다.
 
 
-[![Sextender 속성을 etting](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image23.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image22.png)
+[![Extender 속성 설정](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image23.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image22.png)
 
 **그림 06**: Extender 속성을 설정 ([클릭 하 여 큰 이미지 보기](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image24.png))
 
@@ -226,7 +226,7 @@ Designer 특성을 사용 하 여 DisabledButton extender 4에서 디자이너�
 페이지 (F5를 눌러)를 실행 하면 단추 컨트롤은 처음에 사용할 수 없습니다. 입력란에 텍스트 입력을 시작 하는 즉시 컨트롤은 단추 (그림 7 참조)를 사용 합니다.
 
 
-[![T동작에서 그 DisabledButton extender](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image26.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image25.png)
+[![실행 중인 DisabledButton extender](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image26.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image25.png)
 
 **그림 07**: 실행 중인 DisabledButton extender ([클릭 하 여 큰 이미지 보기](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image27.png))
 

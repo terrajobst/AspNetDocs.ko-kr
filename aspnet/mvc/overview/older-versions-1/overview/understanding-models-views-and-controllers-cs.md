@@ -12,7 +12,7 @@ ms.openlocfilehash: 8c57345c510ad0afccaabf377fda35afbfc05e17
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383410"
 ---
 # <a name="understanding-models-views-and-controllers-c"></a>모델, 보기 및 컨트롤러 이해(C#)
@@ -33,7 +33,7 @@ ASP.NET MVC 웹 응용 프로그램을 만들기 위한 기본 Visual Studio 템
 Visual Studio 2008을 실행 하 여 MVC 템플릿을 사용 하 여 새 ASP.NET MVC 응용 프로그램을 만들면 및 파일 메뉴 옵션을 선택 하면, 새 프로젝트 (그림 1 참조). 새 프로젝트 대화 상자에서 프로젝트 형식 (Visual Basic 또는 C#)에서 원하는 프로그래밍 언어를 선택 하 고 선택 **ASP.NET MVC 웹 응용 프로그램** 템플릿에서 합니다. 확인 단추를 클릭 합니다.
 
 
-[![N프로젝트 대화 상자를 활용 하면 초보](understanding-models-views-and-controllers-cs/_static/image1.jpg)](understanding-models-views-and-controllers-cs/_static/image1.png)
+[![새 프로젝트 대화 상자](understanding-models-views-and-controllers-cs/_static/image1.jpg)](understanding-models-views-and-controllers-cs/_static/image1.png)
 
 **그림 01**: 새 프로젝트 대화 상자 ([클릭 하 여 큰 이미지 보기](understanding-models-views-and-controllers-cs/_static/image2.png))
 
@@ -41,7 +41,7 @@ Visual Studio 2008을 실행 하 여 MVC 템플릿을 사용 하 여 새 ASP.NET
 새 ASP.NET MVC 응용 프로그램을 만들 때 합니다 **단위 테스트 프로젝트 만들기** 대화 상자가 나타납니다 (그림 2 참조). 이 대화 상자를 사용 하면 ASP.NET MVC 응용 프로그램을 테스트 하는 것에 대 한 솔루션에 별도 프로젝트를 만들 수 있습니다. 옵션을 선택 **아니요, 단위 테스트 프로젝트를 만들지 않습니다** 을 클릭 합니다 **확인** 단추입니다.
 
 
-[![C단위 테스트 대화 상자를 reate](understanding-models-views-and-controllers-cs/_static/image2.jpg)](understanding-models-views-and-controllers-cs/_static/image3.png)
+[![단위 테스트 대화 상자 만들기](understanding-models-views-and-controllers-cs/_static/image2.jpg)](understanding-models-views-and-controllers-cs/_static/image3.png)
 
 **그림 02**: 단위 테스트 대화 상자를 만듭니다 ([클릭 하 여 큰 이미지 보기](understanding-models-views-and-controllers-cs/_static/image4.png))
 
@@ -51,7 +51,7 @@ Visual Studio 2008을 실행 하 여 MVC 템플릿을 사용 하 여 새 ASP.NET
 컨트롤러 폴더를 확장 하면 AccountController.cs 이라는 파일과 HomeController.cs 파일 표시 됩니다. Views 폴더를 확장 하는 경우 명명 된 계정에 홈 및 공유 하는 세 개의 하위 폴더 표시 됩니다. 홈 폴더를 확장 하면 About.aspx 및 Index.aspx (그림 3 참조) 라는 추가 파일 두 개가 표시 됩니다. 이러한 파일은 기본 ASP.NET MVC 템플릿 사용 하 여 포함 된 샘플 응용 프로그램을 구성 합니다.
 
 
-[![T그 솔루션 탐색기 창](understanding-models-views-and-controllers-cs/_static/image3.jpg)](understanding-models-views-and-controllers-cs/_static/image5.png)
+[![솔루션 탐색기 창](understanding-models-views-and-controllers-cs/_static/image3.jpg)](understanding-models-views-and-controllers-cs/_static/image5.png)
 
 **그림 03**: 솔루션 탐색기 창 ([클릭 하 여 큰 이미지 보기](understanding-models-views-and-controllers-cs/_static/image6.png))
 
@@ -61,7 +61,7 @@ Visual Studio 2008을 실행 하 여 MVC 템플릿을 사용 하 여 새 ASP.NET
 ASP.NET 응용 프로그램을 처음으로 실행 하는 경우 디버그 모드를 사용 하는 것이 좋습니다. 그림 4의 대화 상자가 나타납니다. 확인 단추를 클릭 하 고 응용 프로그램이 실행 됩니다.
 
 
-[![D대화를 사용 하도록 설정 하지 ebugging](understanding-models-views-and-controllers-cs/_static/image4.jpg)](understanding-models-views-and-controllers-cs/_static/image7.png)
+[![디버깅 해제 대화 상자](understanding-models-views-and-controllers-cs/_static/image4.jpg)](understanding-models-views-and-controllers-cs/_static/image7.png)
 
 **그림 04**: 디버깅 대화 사용할 수 없습니다 ([클릭 하 여 큰 이미지 보기](understanding-models-views-and-controllers-cs/_static/image8.png))
 
@@ -69,7 +69,7 @@ ASP.NET 응용 프로그램을 처음으로 실행 하는 경우 디버그 모�
 ASP.NET MVC 응용 프로그램을 실행 하면 Visual Studio 웹 브라우저에서 응용 프로그램을 실행 합니다. 샘플 응용 프로그램은 두 개의 페이지로 구성 되어 있습니다: 인덱스 페이지와 정보 페이지입니다. 응용 프로그램이 처음 시작 하는 경우 인덱스 페이지가 나타납니다 (그림 5 참조). 정보 페이지 맨 위에 있는 메뉴 링크를 클릭 하 여 이동할 응용 프로그램의 오른쪽입니다.
 
 
-[![T그 인덱스 페이지](understanding-models-views-and-controllers-cs/_static/image10.png)](understanding-models-views-and-controllers-cs/_static/image9.png)
+[![인덱스 페이지](understanding-models-views-and-controllers-cs/_static/image10.png)](understanding-models-views-and-controllers-cs/_static/image9.png)
 
 **그림 05**: 인덱스 페이지 ([클릭 하 여 큰 이미지 보기](understanding-models-views-and-controllers-cs/_static/image11.png))
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 84af745d338e38ece438fa58d51d0929c7b92967
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408461"
 ---
 # <a name="aspnet-mvc-views-overview-vb"></a>ASP.NET MVC 보기 개요(VB)
@@ -104,7 +104,7 @@ Response.write ()를 자주 호출 되므로 Microsoft 제공 바로 가기를 �
 [!code-aspx[Main](asp-net-mvc-views-overview-vb/samples/sample4.aspx)]
 
 
-[![T새 프로젝트 대화 상자의 그](asp-net-mvc-views-overview-vb/_static/image1.jpg)](asp-net-mvc-views-overview-vb/_static/image1.png)
+[![새 프로젝트 대화 상자](asp-net-mvc-views-overview-vb/_static/image1.jpg)](asp-net-mvc-views-overview-vb/_static/image1.png)
 
 **그림 01**: 표준 로그인 폼 ([클릭 하 여 큰 이미지 보기](asp-net-mvc-views-overview-vb/_static/image2.png))
 

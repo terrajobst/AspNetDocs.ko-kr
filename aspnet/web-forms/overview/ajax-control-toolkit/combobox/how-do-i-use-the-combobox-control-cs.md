@@ -12,7 +12,7 @@ ms.openlocfilehash: 2d23e65f817c11e45adab56ea054a7c46a35d4f3
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59386439"
 ---
 # <a name="how-do-i-use-the-combobox-control-c"></a>ComboBox 컨트롤을 사용 하는 방법 (C#)
@@ -37,7 +37,7 @@ ComboBox 컨트롤을 사용 하는 간단한 예제 시작 s 수 있습니다. 
 그런 다음 ComboBox 컨트롤을 페이지로 끌어옵니다. 다른 AJAX Control Toolkit 컨트롤 및 컨트롤 extenders 사용 (그림 1 참조)를 사용 하 여 도구 상자에서 콤보 상자 컨트롤을 찾을 수 있습니다.
 
 
-[![S명함을 만들기 위한 단순 양식](how-do-i-use-the-combobox-control-cs/_static/image1.jpg)](how-do-i-use-the-combobox-control-cs/_static/image1.png)
+[![명함을 만들기 위한 간단한 폼](how-do-i-use-the-combobox-control-cs/_static/image1.jpg)](how-do-i-use-the-combobox-control-cs/_static/image1.png)
 
 **그림 01**: 도구 상자에서 콤보 상자 컨트롤을 선택 ([클릭 하 여 큰 이미지 보기](how-do-i-use-the-combobox-control-cs/_static/image2.png))
 
@@ -45,7 +45,7 @@ ComboBox 컨트롤을 사용 하는 간단한 예제 시작 s 수 있습니다. 
 에서는 ll ComboBox 컨트롤을 사용 하 여 선택 항목의 정적 목록을 표시 합니다. 특정 수준의 spiciness 해당 음식에 대 한 세 가지 선택 목록에서 선택할 수 있습니다.: 가 중간 및 핫 (그림 2 참조).
 
 
-[![S항목의 정적 목록에서 선택](how-do-i-use-the-combobox-control-cs/_static/image2.jpg)](how-do-i-use-the-combobox-control-cs/_static/image3.png)
+[![항목의 정적 목록에서 선택](how-do-i-use-the-combobox-control-cs/_static/image2.jpg)](how-do-i-use-the-combobox-control-cs/_static/image3.png)
 
 **그림 02**: 항목의 정적 목록에서 선택 ([클릭 하 여 큰 이미지 보기](how-do-i-use-the-combobox-control-cs/_static/image4.png))
 
@@ -53,7 +53,7 @@ ComboBox 컨트롤을 사용 하는 간단한 예제 시작 s 수 있습니다. 
 두 가지 방법으로 이러한 선택 콤보 상자 컨트롤에 추가할 수 있습니다. 디자인 뷰에서 컨트롤을 마우스로 가리키면 옵션 편집 작업 옵션을 선택 및 항목 편집기를 열려면 먼저 (그림 3 참조).
 
 
-[![Editing 콤보 상자 항목](how-do-i-use-the-combobox-control-cs/_static/image3.jpg)](how-do-i-use-the-combobox-control-cs/_static/image5.png)
+[![ComboBox 항목 편집](how-do-i-use-the-combobox-control-cs/_static/image3.jpg)](how-do-i-use-the-combobox-control-cs/_static/image5.png)
 
 **그림 03**: ComboBox 항목 편집 ([클릭 하 여 큰 이미지 보기](how-do-i-use-the-combobox-control-cs/_static/image6.png))
 
@@ -71,7 +71,7 @@ ComboBox 컨트롤을 사용 하는 간단한 예제 시작 s 수 있습니다. 
 기존 선택 여부에 관계 없이 항목 또는 사용자 입력 항목을 사용자 지정 폼을 제출 하면 선택한 레이블 컨트롤에 표시 됩니다. btnSubmit 폼을 제출할 때\_클릭 처리기를 실행 하 고 레이블을 업데이트 합니다 (그림 4 참조).
 
 
-[![D선택한 항목 isplaying](how-do-i-use-the-combobox-control-cs/_static/image4.jpg)](how-do-i-use-the-combobox-control-cs/_static/image7.png)
+[![선택한 항목 표시](how-do-i-use-the-combobox-control-cs/_static/image4.jpg)](how-do-i-use-the-combobox-control-cs/_static/image7.png)
 
 **그림 04**: 선택한 항목 표시 ([클릭 하 여 큰 이미지 보기](how-do-i-use-the-combobox-control-cs/_static/image8.png))
 
@@ -104,12 +104,12 @@ ComboBox에 동영상 목록을 표시할 한다고 가정해 보겠습니다. �
 12. 마법사를 닫으려면 확인 단추를 클릭 합니다.
 
 
-[![C데이터 원본 hoosing](how-do-i-use-the-combobox-control-cs/_static/image5.jpg)](how-do-i-use-the-combobox-control-cs/_static/image9.png)
+[![데이터 원본 선택](how-do-i-use-the-combobox-control-cs/_static/image5.jpg)](how-do-i-use-the-combobox-control-cs/_static/image9.png)
 
 **그림 05**: 데이터 원본 선택 ([클릭 하 여 큰 이미지 보기](how-do-i-use-the-combobox-control-cs/_static/image10.png))
 
 
-[![Choosing 데이터 텍스트 및 값 필드](how-do-i-use-the-combobox-control-cs/_static/image6.jpg)](how-do-i-use-the-combobox-control-cs/_static/image11.png)
+[![데이터 값 및 텍스트 필드를 선택합니다.](how-do-i-use-the-combobox-control-cs/_static/image6.jpg)](how-do-i-use-the-combobox-control-cs/_static/image11.png)
 
 **그림 06**: 데이터 값 및 텍스트 필드를 선택 ([클릭 하 여 큰 이미지 보기](how-do-i-use-the-combobox-control-cs/_static/image12.png))
 
@@ -123,7 +123,7 @@ ComboBox에 동영상 목록을 표시할 한다고 가정해 보겠습니다. �
 ComboBox 컨트롤에 SqlDataSource 컨트롤을 가리키는 DataSourceID 속성이 있음을 알 수 있습니다. 브라우저에서 페이지를 열 때 데이터베이스에서 영화 목록에 표시 됩니다 (그림 7 참조). 선택 목록에서 동영상을 수 있습니다 또는 동영상 콤보 상자에 입력 하 여 새 동영상을 입력 합니다.
 
 
-[![D동영상 목록 isplaying](how-do-i-use-the-combobox-control-cs/_static/image7.jpg)](how-do-i-use-the-combobox-control-cs/_static/image13.png)
+[![동영상 목록을 표시합니다.](how-do-i-use-the-combobox-control-cs/_static/image7.jpg)](how-do-i-use-the-combobox-control-cs/_static/image13.png)
 
 **그림 07**: 영화 목록 표시 ([클릭 하 여 큰 이미지 보기](how-do-i-use-the-combobox-control-cs/_static/image14.png))
 
@@ -150,17 +150,17 @@ DropDownList 값 콤보 상자 컨트롤을 표준 DropDownList 컨트롤 처럼
 - SuggestAppend-콤보 상자 목록 표시 및 입력 한 (그림 10 참조) 목록에서 일치 하는 항목을 추가 합니다.
 
 
-[![TComboBox 수 제안](how-do-i-use-the-combobox-control-cs/_static/image8.jpg)](how-do-i-use-the-combobox-control-cs/_static/image15.png)
+[![콤보 상자는 제안](how-do-i-use-the-combobox-control-cs/_static/image8.jpg)](how-do-i-use-the-combobox-control-cs/_static/image15.png)
 
 **그림 08**: 콤보 상자는 제안 ([클릭 하 여 큰 이미지 보기](how-do-i-use-the-combobox-control-cs/_static/image16.png))
 
 
-[![C일치 하는 텍스트를 추가 하는 omboBox](how-do-i-use-the-combobox-control-cs/_static/image9.jpg)](how-do-i-use-the-combobox-control-cs/_static/image17.png)
+[![일치 하는 텍스트를 추가 하는 콤보 상자](how-do-i-use-the-combobox-control-cs/_static/image9.jpg)](how-do-i-use-the-combobox-control-cs/_static/image17.png)
 
 **그림 09**: 일치 하는 텍스트를 추가 하는 콤보 상자 ([클릭 하 여 큰 이미지 보기](how-do-i-use-the-combobox-control-cs/_static/image18.png))
 
 
-[![T그 콤보 상자에서 제안 하 고 추가](how-do-i-use-the-combobox-control-cs/_static/image10.jpg)](how-do-i-use-the-combobox-control-cs/_static/image19.png)
+[![콤보 상자에서 제안 하 고 추가](how-do-i-use-the-combobox-control-cs/_static/image10.jpg)](how-do-i-use-the-combobox-control-cs/_static/image19.png)
 
 **그림 10**: 콤보 상자에서 제안 하 고 추가 ([클릭 하 여 큰 이미지 보기](how-do-i-use-the-combobox-control-cs/_static/image20.png))
 

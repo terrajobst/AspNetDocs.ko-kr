@@ -12,7 +12,7 @@ ms.openlocfilehash: d7dd82ed4140b5ac6993483fb16af6a1b249be51
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383905"
 ---
 # <a name="building-an-interface-to-select-one-user-account-from-many-vb"></a>여러 사용자 계정 중 하나를 선택하는 인터페이스 빌드(VB)
@@ -56,7 +56,7 @@ ASP.NET 페이지에 `Administration` 폴더는 사용자를 대상으로 전적
 이 시점에서 프로젝트의 솔루션 탐색기 스크린 샷을 그림 1에 표시 된 것을 유사 합니다.
 
 
-[![F이 새 페이지와 Web.config 파일을 웹 사이트에 추가한](building-an-interface-to-select-one-user-account-from-many-vb/_static/image2.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image1.png)
+[![웹 사이트에 추가 된 4 개의 새 페이지와 Web.config 파일](building-an-interface-to-select-one-user-account-from-many-vb/_static/image2.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image1.png)
 
 **그림 1**: 4 개의 새 페이지와 `Web.config` 웹 사이트에 추가 된 파일 ([큰 이미지를 보려면 클릭](building-an-interface-to-select-one-user-account-from-many-vb/_static/image3.png))
 
@@ -68,7 +68,7 @@ ASP.NET 페이지에 `Administration` 폴더는 사용자를 대상으로 전적
 사이트 맵을 업데이트를 사용 하 여 브라우저를 통해 사이트를 방문 합니다. 그림 2에서 볼 수 있듯이 이제 왼쪽 탐색 관리 자습서에 대 한 항목이 포함 됩니다.
 
 
-[![T그 사이트 맵 노드 라는 사용자 관리 포함](building-an-interface-to-select-one-user-account-from-many-vb/_static/image5.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image4.png)
+[![사용자 관리 이라는 노드를 포함 하는 사이트 맵](building-an-interface-to-select-one-user-account-from-many-vb/_static/image5.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image4.png)
 
 **그림 2**: 사이트 맵 노드 라는 사용자 관리를 포함 ([클릭 하 여 큰 이미지 보기](building-an-interface-to-select-one-user-account-from-many-vb/_static/image6.png))
 
@@ -82,7 +82,7 @@ ASP.NET 페이지에 `Administration` 폴더는 사용자를 대상으로 전적
 GridView에 원하는 사용자 계정 정보를 표시 하기 위해 GridView의 설정 `AutoGenerateColumns` 속성을 false로 BoundFields에 대 한 추가 합니다 `UserName`를 `Email`, 및 `Comment` 속성과 CheckBoxFields에 대 한는 `IsApproved`, `IsLockedOut`, 및 `IsOnline` 속성입니다. 이 구성은 통해 컨트롤의 선언적 태그 또는 필드 대화 상자를 통해 적용할 수 있습니다. 그림 3 후 자동 생성 필드 확인란을 선택 했습니다 CheckBoxFields 고 BoundFields 추가 및 구성 된 대화 상자를 스크린샷 필드를 나타냅니다.
 
 
-[![A세 가지 BoundFields dd 및 GridView에 세 개의 CheckBoxFields](building-an-interface-to-select-one-user-account-from-many-vb/_static/image8.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image7.png)
+[![GridView에 세 개의 BoundFields 및 세 가지 CheckBoxFields 추가](building-an-interface-to-select-one-user-account-from-many-vb/_static/image8.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image7.png)
 
 **그림 3**: GridView에 세 개의 BoundFields 및 세 가지 CheckBoxFields 추가 ([클릭 하 여 큰 이미지 보기](building-an-interface-to-select-one-user-account-from-many-vb/_static/image9.png))
 
@@ -98,7 +98,7 @@ GridView에 원하는 사용자 계정 정보를 표시 하기 위해 GridView�
 시간을 내어 브라우저를 통해 페이지를 테스트 합니다. 그림 4에서 알 수 있듯이는 `UserAccounts` GridView 시스템의 사용자 이름, 전자 메일 주소 및 모든 사용자에 대 한 다른 관련 계정 정보를 나열 합니다.
 
 
-[![TGridView에 그 사용자 계정이 나열 되어](building-an-interface-to-select-one-user-account-from-many-vb/_static/image11.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image10.png)
+[![GridView에 사용자 계정이 나열 됩니다.](building-an-interface-to-select-one-user-account-from-many-vb/_static/image11.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image10.png)
 
 **그림 4**: GridView에 사용자 계정이 나열 됩니다 ([클릭 하 여 큰 이미지 보기](building-an-interface-to-select-one-user-account-from-many-vb/_static/image12.png))
 
@@ -122,7 +122,7 @@ GridView에 원하는 사용자 계정 정보를 표시 하기 위해 GridView�
 그림 5는 `ManageUsers.aspx` 브라우저를 통해 볼 때 페이지입니다.
 
 
-[![T그 Repeater 나열 27 필터링 Linkbutton](building-an-interface-to-select-one-user-account-from-many-vb/_static/image14.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image13.png)
+[![Repeater 27 필터링 Linkbutton 나열](building-an-interface-to-select-one-user-account-from-many-vb/_static/image14.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image13.png)
 
 **그림 5**: Repeater 나열 27 필터링 Linkbutton ([클릭 하 여 큰 이미지 보기](building-an-interface-to-select-one-user-account-from-many-vb/_static/image15.png))
 
@@ -152,7 +152,7 @@ GridView에 원하는 사용자 계정 정보를 표시 하기 위해 GridView�
 이 코드를 사용 하 여 필터링 기능을 테스트 합니다. 페이지를 방문 하는 먼저 모든 사용자 계정이 표시 됩니다 (그림 5를 다시 참조). LinkButton을 클릭 하면 포스트백을 발생 시키는 및 A로 시작 하는 사용자 계정 으로만 표시 된 결과 필터링 합니다.
 
 
-[![U해당 사용자가 있는 사용자 이름이 특정 문자로 시작 표시할 필터링 Linkbutton se](building-an-interface-to-select-one-user-account-from-many-vb/_static/image17.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image16.png)
+[![필터링 Linkbutton을 사용 하 여 사용자가 특정 문자로 시작 하는 해당 사용자를 표시 합니다.](building-an-interface-to-select-one-user-account-from-many-vb/_static/image17.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image16.png)
 
 **그림 6**: 필터링 Linkbutton을 사용 하 여 해당 사용자가 있는 사용자 이름이 특정 문자로 시작 표시 ([클릭 하 여 큰 이미지 보기](building-an-interface-to-select-one-user-account-from-many-vb/_static/image18.png))
 
@@ -197,7 +197,7 @@ GridView 컨트롤에서는 두 가지 유형의 페이징 제공합니다.
 그림 7에서는 Visual Web Developer 디자인 뷰를 통해 볼 때 4 개의 Linkbutton을 보여 줍니다.
 
 
-[![Add 첫 번째, 이전, Next 및 GridView 아래에 있는 마지막 Linkbutton](building-an-interface-to-select-one-user-account-from-many-vb/_static/image20.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image19.png)
+[![다음으로, 첫 번째, 이전, 추가 및 GridView 아래 Linkbutton 마지막](building-an-interface-to-select-one-user-account-from-many-vb/_static/image20.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image19.png)
 
 **그림 7**: 이전, Next 및 GridView 아래에 있는 마지막 Linkbutton 먼저 추가 ([클릭 하 여 큰 이미지 보기](building-an-interface-to-select-one-user-account-from-many-vb/_static/image21.png))
 
@@ -227,12 +227,12 @@ GridView 컨트롤에서는 두 가지 유형의 페이징 제공합니다.
 그림 8과 9 작업에 사용자 지정 페이징 인터페이스를 표시합니다. 그림 8에 표시 된 `ManageUsers.aspx` 모든 사용자 계정에 대 한 데이터의 첫 페이지를 볼 때 페이지입니다. Note 13 계정의 10 표시 됩니다. 다음 또는 마지막 링크를 클릭 하면 포스트백에서 업데이트를 `PageIndex` 을 1로 사용자의 두 번째 페이지를 그리드로 계정을 바인딩합니다 (그림 9 참조).
 
 
-[![T그 첫 번째 10 사용자 계정이 표시 됩니다](building-an-interface-to-select-one-user-account-from-many-vb/_static/image23.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image22.png)
+[![첫 번째 10 사용자 계정이 표시 됩니다.](building-an-interface-to-select-one-user-account-from-many-vb/_static/image23.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image22.png)
 
 **그림 8**: 첫 번째 10 사용자 계정이 표시 됩니다 ([클릭 하 여 큰 이미지 보기](building-an-interface-to-select-one-user-account-from-many-vb/_static/image24.png))
 
 
-[![C다음 링크 표시를 사용 하는 사용자의 두 번째 페이지를 클릭 하](building-an-interface-to-select-one-user-account-from-many-vb/_static/image26.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image25.png)
+[![다음 링크를 클릭 하면 사용자 계정의 두 번째 페이지가 표시 됩니다.](building-an-interface-to-select-one-user-account-from-many-vb/_static/image26.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image25.png)
 
 **그림 9**: 다음 링크를 클릭 하는 두 번째 페이지의 사용자 계정이 표시 됩니다 ([클릭 하 여 큰 이미지 보기](building-an-interface-to-select-one-user-account-from-many-vb/_static/image27.png))
 

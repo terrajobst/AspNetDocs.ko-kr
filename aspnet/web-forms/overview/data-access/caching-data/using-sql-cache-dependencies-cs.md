@@ -12,7 +12,7 @@ ms.openlocfilehash: e70a21e2752c7c8fc8be332a98e1cf7e40b01412
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59417691"
 ---
 # <a name="using-sql-cache-dependencies-c"></a>SQL 캐시 종속성 사용(C#)
@@ -87,7 +87,7 @@ Visual Studio를 닫아 시작 합니다. 다음으로, SQL Server Management St
 서버에 연결한 후 Management Studio 서버 표시 되며 데이터베이스, 보안 등에 대 한 하위 폴더가 생성 됩니다. 데이터베이스 폴더 단추로 클릭 하 고 연결 옵션을 선택 합니다. 그러면 데이터베이스 연결 대화 상자 (그림 2 참조). 추가 단추를 클릭 하 고 선택 합니다 `NORTHWND.MDF` 데이터베이스에 웹 응용 프로그램의 폴더 `App_Data` 폴더입니다.
 
 
-[![Attach NORTHWND 합니다. App_Data 폴더의 MDF 데이터베이스](using-sql-cache-dependencies-cs/_static/image2.gif)](using-sql-cache-dependencies-cs/_static/image1.png)
+[![NORTHWND를 연결 합니다. App_Data 폴더의 MDF 데이터베이스](using-sql-cache-dependencies-cs/_static/image2.gif)](using-sql-cache-dependencies-cs/_static/image1.png)
 
 **그림 2**: 연결 된 `NORTHWND.MDF` 에서 데이터베이스를 `App_Data` 폴더 ([클릭 하 여 큰 이미지 보기](using-sql-cache-dependencies-cs/_static/image2.png))
 
@@ -143,7 +143,7 @@ Visual Studio를 다시 면 서버 탐색기를 통해 데이터베이스에 드
 SQL 캐시 종속성을 선언적으로 사용을 보여 주기 위해 엽니다는 `SqlCacheDependencies.aspx` 페이지에 `Caching` 폴더 및 디자이너 도구 상자에서 끌어서 GridView입니다. GridView가 설정 `ID` 하 `ProductsDeclarative` 하 고 스마트 태그, 라는 새로운 ObjectDataSource는 바인딩할 선택 `ProductsDataSourceDeclarative`합니다.
 
 
-[![C새 ObjectDataSource 라는 ProductsDataSourceDeclarative reate](using-sql-cache-dependencies-cs/_static/image5.gif)](using-sql-cache-dependencies-cs/_static/image3.png)
+[![ProductsDataSourceDeclarative 라는 새로운 ObjectDataSource는 만들기](using-sql-cache-dependencies-cs/_static/image5.gif)](using-sql-cache-dependencies-cs/_static/image3.png)
 
 **그림 5**: 명명 된 새 ObjectDataSource 만들려면 `ProductsDataSourceDeclarative` ([큰 이미지를 보려면 클릭](using-sql-cache-dependencies-cs/_static/image4.png))
 
@@ -151,12 +151,12 @@ SQL 캐시 종속성을 선언적으로 사용을 보여 주기 위해 엽니다
 ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLL` 클래스 및 드롭다운 목록을 선택 탭에서 설정 `GetProducts()`합니다. 업데이트 탭을 선택 합니다 `UpdateProduct` 세 개의 입력된 매개 변수를 사용 하 여 오버 로드 `productName`를 `unitPrice`, 및 `productID`합니다. INSERT 및 DELETE 탭에서 드롭 다운 목록을 (없음)을 설정 합니다.
 
 
-[![U세 개의 입력 매개 변수를 사용 하 여 오버 로드 UpdateProduct se](using-sql-cache-dependencies-cs/_static/image6.gif)](using-sql-cache-dependencies-cs/_static/image5.png)
+[![세 개의 입력된 매개 변수를 사용 하 여 UpdateProduct 오버 로드를 사용 합니다.](using-sql-cache-dependencies-cs/_static/image6.gif)](using-sql-cache-dependencies-cs/_static/image5.png)
 
 **그림 6**: 세 개의 입력 매개 변수를 사용 하 여 UpdateProduct 오버 로드를 사용 하 여 ([클릭 하 여 큰 이미지 보기](using-sql-cache-dependencies-cs/_static/image6.png))
 
 
-[![Set 드롭 다운 목록 (None) 삽입 및 삭제에 대 한 탭](using-sql-cache-dependencies-cs/_static/image7.gif)](using-sql-cache-dependencies-cs/_static/image7.png)
+[![드롭다운 목록 (없음) 삽입 및 삭제 탭에 대 한 설정](using-sql-cache-dependencies-cs/_static/image7.gif)](using-sql-cache-dependencies-cs/_static/image7.png)
 
 **그림 7**: (없음) 드롭다운 목록을 삽입 및 삭제 하는 탭에 대 한 설정 ([클릭 하 여 큰 이미지 보기](using-sql-cache-dependencies-cs/_static/image8.png))
 
@@ -178,7 +178,7 @@ GridView 및 집합 위에 Label 웹 컨트롤을 추가 하는 마지막으로,
 이제 브라우저를 통해이 페이지를 방문 합니다. 이후로 아직 캐싱을 구현 하 든, 페이지, 정렬 또는 그리드 페이지를 편집할 때마다 ve 표시할 텍스트, 선택 하면 이벤트 발생 그림 8 있듯이.
 
 
-[![T그 ObjectDataSource가 선택 하면 이벤트에는 각 GridView 편집 페이징 되는 시간 또는 Sorted 발생](using-sql-cache-dependencies-cs/_static/image8.gif)](using-sql-cache-dependencies-cs/_static/image9.png)
+[![각 편집 GridView 페이징 되는 시간 또는 Sorted ObjectDataSource가 선택 하면 이벤트 발생](using-sql-cache-dependencies-cs/_static/image8.gif)](using-sql-cache-dependencies-cs/_static/image9.png)
 
 **그림 8**: ObjectDataSource s `Selecting` 이벤트 발생 합니다. 각 시간 페이징 되는 GridView, 편집, Sorted ([큰 이미지를 보려면 클릭](using-sql-cache-dependencies-cs/_static/image10.png))
 
@@ -197,7 +197,7 @@ GridView 및 집합 위에 Label 웹 컨트롤을 추가 하는 마지막으로,
 GridView `SqlCacheDependencies.aspx` -두 테이블의 데이터를 표시 `Products` 하 고 `Categories` (s 제품 `CategoryName` 필드를 통해 검색 되는 `JOIN` 에서 `Categories`). 따라서 두 개의 SQL 캐시 종속성을 지정 해야 합니다. NorthwindDB:Products; NorthwindDB:Categories 합니다.
 
 
-[![C지원 캐싱을 사용 하 여 SQL 캐시 종속성에 제품 범주에는 ObjectDataSource onfigure](using-sql-cache-dependencies-cs/_static/image9.gif)](using-sql-cache-dependencies-cs/_static/image11.png)
+[![SQL 캐시 종속성을 사용 하 여 제품 범주에 캐싱 지원 하기 위해 ObjectDataSource 구성](using-sql-cache-dependencies-cs/_static/image9.gif)](using-sql-cache-dependencies-cs/_static/image11.png)
 
 **그림 9**: 지원 캐싱을 사용 하 여 SQL 캐시 종속성 ObjectDataSource 구성 `Products` 하 고 `Categories` ([클릭 하 여 큰 이미지 보기](using-sql-cache-dependencies-cs/_static/image12.png))
 
@@ -207,7 +207,7 @@ GridView `SqlCacheDependencies.aspx` -두 테이블의 데이터를 표시 `Prod
 표를 통해 페이징 및 선택 하면 이벤트의 부재 주목할 발생 후 텍스트를 새 브라우저 창을 열고 편집, 삽입 및 삭제 섹션의에서 기본 사항 자습서로 이동 (`~/EditInsertDelete/Basics.aspx`). 이름 또는 제품의 가격을 업데이트 합니다. 그런 다음에서 첫 번째 브라우저 창에 다른 페이지를 보려면 데이터, 표에서 정렬 또는 행의 편집 단추를 클릭 합니다. 이 이번에 발생 하는 이벤트 선택 해야 다시 기본 데이터베이스 데이터 수정 (그림 10 참조). 텍스트 표시 되지 않는 경우 몇 분 정도 기다린 후 다시 시도 하세요. 폴링 서비스는 변경 내용을 확인 하 고 있는 기억 합니다 `Products` 테이블 마다 `pollTime` 기본 데이터가 업데이트 될 때 캐시 된 데이터를 제거 하는 때 사이의 지연이 발생 하므로 밀리초.
 
 
-[![Modifying 제품 테이블 제거 캐시 제품 데이터](using-sql-cache-dependencies-cs/_static/image10.gif)](using-sql-cache-dependencies-cs/_static/image13.png)
+[![캐시 제품 데이터를 제거 제품 테이블 수정](using-sql-cache-dependencies-cs/_static/image10.gif)](using-sql-cache-dependencies-cs/_static/image13.png)
 
 **그림 10**: 캐시 제품 데이터를 제거 제품 테이블 수정 ([클릭 하 여 큰 이미지 보기](using-sql-cache-dependencies-cs/_static/image14.png))
 
@@ -241,17 +241,17 @@ GridView `SqlCacheDependencies.aspx` -두 테이블의 데이터를 표시 `Prod
 이 기능을 테스트 하려면 아래에 있는 기존 페이지에 GridView 추가 `ProductsDeclarative` GridView입니다. 이 새로운 GridView가 설정 `ID` 하 `ProductsProgrammatic` 및 해당 스마트 태그를 통해 바인딩할 라는 새로운 ObjectDataSource는 `ProductsDataSourceProgrammatic`합니다. ObjectDataSource를 사용 하 여 구성 합니다 `ProductsCL` 클래스를 업데이트 탭을 확인 하 고 드롭다운 목록에서 선택 `GetProducts` 및 `UpdateProduct`, 각각.
 
 
-[![Configure ProductsCL 클래스를 사용 하는 ObjectDataSource](using-sql-cache-dependencies-cs/_static/image11.gif)](using-sql-cache-dependencies-cs/_static/image15.png)
+[![ProductsCL 클래스를 사용 하는 ObjectDataSource 구성](using-sql-cache-dependencies-cs/_static/image11.gif)](using-sql-cache-dependencies-cs/_static/image15.png)
 
 **그림 11**: ObjectDataSource를 사용 하 여 구성 합니다 `ProductsCL` 클래스 ([큰 이미지를 보려면 클릭](using-sql-cache-dependencies-cs/_static/image16.png))
 
 
-[![SGetProducts 메서드 선택 탭의 드롭 다운 목록에서에서 선택](using-sql-cache-dependencies-cs/_static/image12.gif)](using-sql-cache-dependencies-cs/_static/image17.png)
+[![GetProducts 메서드 선택 탭의 드롭 다운 목록에서 선택](using-sql-cache-dependencies-cs/_static/image12.gif)](using-sql-cache-dependencies-cs/_static/image17.png)
 
 **그림 12**: 선택 된 `GetProducts` 선택 탭의 드롭 다운 목록에서에서 메서드 ([큰 이미지를 보려면 클릭](using-sql-cache-dependencies-cs/_static/image18.png))
 
 
-[![C설치할 업데이트 탭의 드롭 다운 목록에서에서 UpdateProduct 메서드와 같이](using-sql-cache-dependencies-cs/_static/image13.gif)](using-sql-cache-dependencies-cs/_static/image19.png)
+[![UpdateProduct 메서드와 같이 업데이트 탭의 드롭 다운 목록에서 선택](using-sql-cache-dependencies-cs/_static/image13.gif)](using-sql-cache-dependencies-cs/_static/image19.png)
 
 **그림 13**: UpdateProduct 메서드와 같이 업데이트 탭의 드롭 다운 목록에서에서 선택 ([클릭 하 여 큰 이미지 보기](using-sql-cache-dependencies-cs/_static/image20.png))
 
@@ -306,7 +306,7 @@ SQL을 테스트 하려면 캐싱 계층의 캐시 종속성에 중단점을 설
 - [쿼리 알림 생성](https://msdn.microsoft.com/library/ms188669.aspx)
 - [사용 하 여 ASP.NET에서 캐싱는 `SqlCacheDependency` 클래스](https://msdn.microsoft.com/library/ms178604(VS.80).aspx)
 - [ASP.NET SQL Server 등록 도구 (`aspnet_regsql.exe`)](https://msdn.microsoft.com/library/ms229862(vs.80).aspx)
-- [WordprocessingML의 개요 `SqlCacheDependency`](http://www.aspnetresources.com/blog/sql_cache_depedency_overview.aspx)
+- [개요 `SqlCacheDependency`](http://www.aspnetresources.com/blog/sql_cache_depedency_overview.aspx)
 
 ## <a name="about-the-author"></a>저자 소개
 
