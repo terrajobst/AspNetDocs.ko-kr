@@ -12,13 +12,13 @@ ms.openlocfilehash: 4bd192e76d07d1ab7b7fd000f2bf90d96cc91b1c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59420590"
 ---
-# <a name="how-do-i--multiple-file-uploads-in-aspnet1"></a><span data-ttu-id="720c3-103">[어떻게 할까요?]  ASP.NET 1에서에서 여러 파일 업로드</span><span class="sxs-lookup"><span data-stu-id="720c3-103">[How Do I:]  Multiple File Uploads in ASP.NET 1</span></span>
+# <a name="how-do-i--multiple-file-uploads-in-aspnet1"></a><span data-ttu-id="154e8-103">[어떻게 할까요?]  ASP.NET 1에서에서 여러 파일 업로드</span><span class="sxs-lookup"><span data-stu-id="154e8-103">[How Do I:]  Multiple File Uploads in ASP.NET 1</span></span>
 
-<span data-ttu-id="720c3-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="720c3-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="154e8-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="154e8-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="720c3-105">이 비디오에서는 ASP.NET 응용 프로그램에 여러 파일을 업로드에 대해서는 자세히는 필자입니다.</span><span class="sxs-lookup"><span data-stu-id="720c3-105">In this video I will elaborate on uploading multiple files to an ASP.NET application.</span></span>
+<span data-ttu-id="154e8-105">이 비디오에서는 ASP.NET 응용 프로그램에 여러 파일을 업로드에 대해서는 자세히는 필자입니다.</span><span class="sxs-lookup"><span data-stu-id="154e8-105">In this video I will elaborate on uploading multiple files to an ASP.NET application.</span></span>
 
-[<span data-ttu-id="720c3-106">&#9654;비디오 (15 분)</span><span class="sxs-lookup"><span data-stu-id="720c3-106">&#9654; Watch video (15 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-multiple-file-uploads-in-aspnet-1)
+[<span data-ttu-id="154e8-106">&#9654;비디오 (15 분)</span><span class="sxs-lookup"><span data-stu-id="154e8-106">&#9654; Watch video (15 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-multiple-file-uploads-in-aspnet-1)
