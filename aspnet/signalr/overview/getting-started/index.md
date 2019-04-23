@@ -12,18 +12,18 @@ ms.openlocfilehash: 3e720dd895c609d5b35848dbc4d4a6989028ff7d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59418757"
 ---
-# <a name="signalr-getting-started"></a><span data-ttu-id="878d3-104">SignalR 시작</span><span class="sxs-lookup"><span data-stu-id="878d3-104">SignalR Getting Started</span></span>
+# <a name="signalr-getting-started"></a><span data-ttu-id="be0b2-104">SignalR 시작</span><span class="sxs-lookup"><span data-stu-id="be0b2-104">SignalR Getting Started</span></span>
 
-> <span data-ttu-id="878d3-105">SignalR 이란, 플랫폼, 실행을 시작 하는 방법</span><span class="sxs-lookup"><span data-stu-id="878d3-105">What SignalR is, platforms it runs on, and how to get started.</span></span>
+> <span data-ttu-id="be0b2-105">SignalR 이란, 플랫폼, 실행을 시작 하는 방법</span><span class="sxs-lookup"><span data-stu-id="be0b2-105">What SignalR is, platforms it runs on, and how to get started.</span></span>
 
 
-- [<span data-ttu-id="878d3-106">SignalR 소개</span><span class="sxs-lookup"><span data-stu-id="878d3-106">Introduction to SignalR</span></span>](introduction-to-signalr.md)
-- [<span data-ttu-id="878d3-107">지원되는 플랫폼</span><span class="sxs-lookup"><span data-stu-id="878d3-107">Supported Platforms</span></span>](supported-platforms.md)
-- [<span data-ttu-id="878d3-108">자습서: SignalR 2 시작</span><span class="sxs-lookup"><span data-stu-id="878d3-108">Tutorial: Getting Started with SignalR 2</span></span>](tutorial-getting-started-with-signalr.md)
-- [<span data-ttu-id="878d3-109">자습서: SignalR 2 및 MVC 5 시작</span><span class="sxs-lookup"><span data-stu-id="878d3-109">Tutorial: Getting Started with SignalR 2 and MVC 5</span></span>](tutorial-getting-started-with-signalr-and-mvc.md)
-- [<span data-ttu-id="878d3-110">자습서: 고주파수 SignalR 2 사용 하 여</span><span class="sxs-lookup"><span data-stu-id="878d3-110">Tutorial: High-Frequency Realtime with SignalR 2</span></span>](tutorial-high-frequency-realtime-with-signalr.md)
-- [<span data-ttu-id="878d3-111">자습서: SignalR 2를 사용하여 서버 브로드캐스트</span><span class="sxs-lookup"><span data-stu-id="878d3-111">Tutorial: Server Broadcast with SignalR 2</span></span>](tutorial-server-broadcast-with-signalr.md)
-- [<span data-ttu-id="878d3-112">실습: SignalR을 사용하는 실시간 웹 애플리케이션</span><span class="sxs-lookup"><span data-stu-id="878d3-112">Hands On Lab: Real-Time Web Applications with SignalR</span></span>](real-time-web-applications-with-signalr.md)
+- [<span data-ttu-id="be0b2-106">SignalR 소개</span><span class="sxs-lookup"><span data-stu-id="be0b2-106">Introduction to SignalR</span></span>](introduction-to-signalr.md)
+- [<span data-ttu-id="be0b2-107">지원되는 플랫폼</span><span class="sxs-lookup"><span data-stu-id="be0b2-107">Supported Platforms</span></span>](supported-platforms.md)
+- [<span data-ttu-id="be0b2-108">자습서: SignalR 2 시작</span><span class="sxs-lookup"><span data-stu-id="be0b2-108">Tutorial: Getting Started with SignalR 2</span></span>](tutorial-getting-started-with-signalr.md)
+- [<span data-ttu-id="be0b2-109">자습서: SignalR 2 및 MVC 5 시작</span><span class="sxs-lookup"><span data-stu-id="be0b2-109">Tutorial: Getting Started with SignalR 2 and MVC 5</span></span>](tutorial-getting-started-with-signalr-and-mvc.md)
+- [<span data-ttu-id="be0b2-110">자습서: 고주파수 SignalR 2 사용 하 여</span><span class="sxs-lookup"><span data-stu-id="be0b2-110">Tutorial: High-Frequency Realtime with SignalR 2</span></span>](tutorial-high-frequency-realtime-with-signalr.md)
+- [<span data-ttu-id="be0b2-111">자습서: SignalR 2 사용 하 여 서버 브로드캐스트</span><span class="sxs-lookup"><span data-stu-id="be0b2-111">Tutorial: Server Broadcast with SignalR 2</span></span>](tutorial-server-broadcast-with-signalr.md)
+- [<span data-ttu-id="be0b2-112">실습: SignalR 사용 하 여 실시간 웹 응용 프로그램</span><span class="sxs-lookup"><span data-stu-id="be0b2-112">Hands On Lab: Real-Time Web Applications with SignalR</span></span>](real-time-web-applications-with-signalr.md)

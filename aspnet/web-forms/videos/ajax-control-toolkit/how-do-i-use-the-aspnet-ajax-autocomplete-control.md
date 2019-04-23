@@ -12,18 +12,18 @@ ms.openlocfilehash: 41ee7309a1cacbb4d1a83378e141b4004dcd8ad7
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59414649"
 ---
-# <a name="how-do-i-use-the-aspnet-ajax-autocomplete-control"></a><span data-ttu-id="cf920-103">[어떻게 할까요?] ASP.NET AJAX AutoComplete 컨트롤 사용</span><span class="sxs-lookup"><span data-stu-id="cf920-103">[How Do I:] Use the ASP.NET AJAX AutoComplete Control</span></span>
+# <a name="how-do-i-use-the-aspnet-ajax-autocomplete-control"></a><span data-ttu-id="0db3f-103">[어떻게 할까요?] ASP.NET AJAX AutoComplete 컨트롤 사용</span><span class="sxs-lookup"><span data-stu-id="0db3f-103">[How Do I:] Use the ASP.NET AJAX AutoComplete Control</span></span>
 
-<span data-ttu-id="cf920-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="cf920-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="0db3f-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="0db3f-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="cf920-105">서버에서 웹 서비스에 대 한 비동기 호출 하 여 추천 단어 목록을 가져온 있는 웹 페이지의 텍스트 상자에 자신이 형식으로 사용자에 게 실시간 제안 사항을 제공 하는 ASP.NET AJAX Control Toolkit에서 AutoComplete extender 컨트롤입니다.</span><span class="sxs-lookup"><span data-stu-id="cf920-105">The AutoComplete extender control from the ASP.NET AJAX Control Toolkit provides real-time suggestions to the user as he or she types in a text box on the Web page, where the list of suggestions is obtained by an asynchronous call to a Web service on the server.</span></span>
+<span data-ttu-id="0db3f-105">서버에서 웹 서비스에 대 한 비동기 호출 하 여 추천 단어 목록을 가져온 있는 웹 페이지의 텍스트 상자에 자신이 형식으로 사용자에 게 실시간 제안 사항을 제공 하는 ASP.NET AJAX Control Toolkit에서 AutoComplete extender 컨트롤입니다.</span><span class="sxs-lookup"><span data-stu-id="0db3f-105">The AutoComplete extender control from the ASP.NET AJAX Control Toolkit provides real-time suggestions to the user as he or she types in a text box on the Web page, where the list of suggestions is obtained by an asynchronous call to a Web service on the server.</span></span>
 
-[<span data-ttu-id="cf920-106">&#9654;비디오 (7 분)</span><span class="sxs-lookup"><span data-stu-id="cf920-106">&#9654; Watch video (7 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-the-aspnet-ajax-autocomplete-control)
+[<span data-ttu-id="0db3f-106">&#9654;비디오 (7 분)</span><span class="sxs-lookup"><span data-stu-id="0db3f-106">&#9654; Watch video (7 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-the-aspnet-ajax-autocomplete-control)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="cf920-107">[이전](how-do-i-use-the-aspnet-ajax-slider-control.md)
-> [다음](how-do-i-configure-the-aspnet-ajax-calendar-control.md)</span><span class="sxs-lookup"><span data-stu-id="cf920-107">[Previous](how-do-i-use-the-aspnet-ajax-slider-control.md)
+> <span data-ttu-id="0db3f-107">[이전](how-do-i-use-the-aspnet-ajax-slider-control.md)
+> [다음](how-do-i-configure-the-aspnet-ajax-calendar-control.md)</span><span class="sxs-lookup"><span data-stu-id="0db3f-107">[Previous](how-do-i-use-the-aspnet-ajax-slider-control.md)
 [Next](how-do-i-configure-the-aspnet-ajax-calendar-control.md)</span></span>

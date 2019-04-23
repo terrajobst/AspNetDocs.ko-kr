@@ -12,18 +12,18 @@ ms.openlocfilehash: aa3939f5514dd3c7c99c9b3f8362291d8e3ed06a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59416937"
 ---
-# <a name="visual-studio-2010-quick-hit---new-web-project-template"></a><span data-ttu-id="c459c-103">Visual Studio 2010 "빠른 Hit"-새 웹 프로젝트 템플릿</span><span class="sxs-lookup"><span data-stu-id="c459c-103">Visual Studio 2010 "Quick Hit" - New Web Project Template</span></span>
+# <a name="visual-studio-2010-quick-hit---new-web-project-template"></a><span data-ttu-id="61d6a-103">Visual Studio 2010 "빠른 Hit"-새 웹 프로젝트 템플릿</span><span class="sxs-lookup"><span data-stu-id="61d6a-103">Visual Studio 2010 "Quick Hit" - New Web Project Template</span></span>
 
-<span data-ttu-id="c459c-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="c459c-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="61d6a-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="61d6a-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="c459c-105">이 비디오에서는 Visual Studio의 새 웹 프로젝트 시작 템플릿에 대 한 배웁니다.</span><span class="sxs-lookup"><span data-stu-id="c459c-105">In this video you will learn about Visual Studio's new web project starter template.</span></span>
+<span data-ttu-id="61d6a-105">이 비디오에서는 Visual Studio의 새 웹 프로젝트 시작 템플릿에 대 한 배웁니다.</span><span class="sxs-lookup"><span data-stu-id="61d6a-105">In this video you will learn about Visual Studio's new web project starter template.</span></span>
 
-[<span data-ttu-id="c459c-106">&#9654;비디오 (2 분)</span><span class="sxs-lookup"><span data-stu-id="c459c-106">&#9654; Watch video (2 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/visual-studio-2010-quick-hit-new-web-project-template)
+[<span data-ttu-id="61d6a-106">&#9654;비디오 (2 분)</span><span class="sxs-lookup"><span data-stu-id="61d6a-106">&#9654; Watch video (2 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/visual-studio-2010-quick-hit-new-web-project-template)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="c459c-107">[이전](visual-studio-2010-quick-hit-multi-monitor-support.md)
-> [다음](visual-studio-2010-quick-hit-new-multi-targeting.md)</span><span class="sxs-lookup"><span data-stu-id="c459c-107">[Previous](visual-studio-2010-quick-hit-multi-monitor-support.md)
+> <span data-ttu-id="61d6a-107">[이전](visual-studio-2010-quick-hit-multi-monitor-support.md)
+> [다음](visual-studio-2010-quick-hit-new-multi-targeting.md)</span><span class="sxs-lookup"><span data-stu-id="61d6a-107">[Previous](visual-studio-2010-quick-hit-multi-monitor-support.md)
 [Next](visual-studio-2010-quick-hit-new-multi-targeting.md)</span></span>

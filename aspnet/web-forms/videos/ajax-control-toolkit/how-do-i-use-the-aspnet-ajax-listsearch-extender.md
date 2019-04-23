@@ -12,18 +12,18 @@ ms.openlocfilehash: d4682d3fd960387a633ad39731f9cbc920a2df21
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59411594"
 ---
-# <a name="how-do-i-use-the-aspnet-ajax-listsearch-extender"></a><span data-ttu-id="1b7f2-105">[어떻게 할까요?] ASP.NET AJAX ListSearch Extender 사용</span><span class="sxs-lookup"><span data-stu-id="1b7f2-105">[How Do I:] Use the ASP.NET AJAX ListSearch Extender?</span></span>
+# <a name="how-do-i-use-the-aspnet-ajax-listsearch-extender"></a><span data-ttu-id="25d4d-105">[어떻게 할까요?] ASP.NET AJAX ListSearch Extender 사용</span><span class="sxs-lookup"><span data-stu-id="25d4d-105">[How Do I:] Use the ASP.NET AJAX ListSearch Extender?</span></span>
 
-<span data-ttu-id="1b7f2-106">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="1b7f2-106">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="25d4d-106">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="25d4d-106">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="1b7f2-107">이 비디오는 ASP.NET AJAX Control Toolkit에서 ListSearch extender 컨트롤의 사용을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="1b7f2-107">This video demonstrates the use of the ListSearch extender control from the ASP.NET AJAX Control Toolkit.</span></span> <span data-ttu-id="1b7f2-108">ListSearch extender는 사용자의 첫 번째 몇 글자를 입력 하 여 목록에서 항목을 선택할 수 있도록 DropDownList 및 ListBox 컨트롤을 향상 시킵니다.</span><span class="sxs-lookup"><span data-stu-id="1b7f2-108">The ListSearch extender enhances DropDownList and ListBox controls so that a user can select an item in the list by simply typing its first few characters.</span></span> <span data-ttu-id="1b7f2-109">이 기능은 긴 목록에서 항목을 선택 하는 직관적인 방법을 제공 하 여 사용자 환경을 개선 합니다.</span><span class="sxs-lookup"><span data-stu-id="1b7f2-109">This enhancement improves the user experience by providing an intuitive way of selecting an item from a long list.</span></span>
+<span data-ttu-id="25d4d-107">이 비디오는 ASP.NET AJAX Control Toolkit에서 ListSearch extender 컨트롤의 사용을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="25d4d-107">This video demonstrates the use of the ListSearch extender control from the ASP.NET AJAX Control Toolkit.</span></span> <span data-ttu-id="25d4d-108">ListSearch extender는 사용자의 첫 번째 몇 글자를 입력 하 여 목록에서 항목을 선택할 수 있도록 DropDownList 및 ListBox 컨트롤을 향상 시킵니다.</span><span class="sxs-lookup"><span data-stu-id="25d4d-108">The ListSearch extender enhances DropDownList and ListBox controls so that a user can select an item in the list by simply typing its first few characters.</span></span> <span data-ttu-id="25d4d-109">이 기능은 긴 목록에서 항목을 선택 하는 직관적인 방법을 제공 하 여 사용자 환경을 개선 합니다.</span><span class="sxs-lookup"><span data-stu-id="25d4d-109">This enhancement improves the user experience by providing an intuitive way of selecting an item from a long list.</span></span>
 
-[<span data-ttu-id="1b7f2-110">&#9654;비디오 (11 분)</span><span class="sxs-lookup"><span data-stu-id="1b7f2-110">&#9654; Watch video (11 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-the-aspnet-ajax-listsearch-extender)
+[<span data-ttu-id="25d4d-110">&#9654;비디오 (11 분)</span><span class="sxs-lookup"><span data-stu-id="25d4d-110">&#9654; Watch video (11 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-the-aspnet-ajax-listsearch-extender)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="1b7f2-111">[이전](how-do-i-use-the-aspnet-ajax-nobot-control.md)
-> [다음](how-do-i-use-the-pagingbulletedlist-extender-control.md)</span><span class="sxs-lookup"><span data-stu-id="1b7f2-111">[Previous](how-do-i-use-the-aspnet-ajax-nobot-control.md)
+> <span data-ttu-id="25d4d-111">[이전](how-do-i-use-the-aspnet-ajax-nobot-control.md)
+> [다음](how-do-i-use-the-pagingbulletedlist-extender-control.md)</span><span class="sxs-lookup"><span data-stu-id="25d4d-111">[Previous](how-do-i-use-the-aspnet-ajax-nobot-control.md)
 [Next](how-do-i-use-the-pagingbulletedlist-extender-control.md)</span></span>

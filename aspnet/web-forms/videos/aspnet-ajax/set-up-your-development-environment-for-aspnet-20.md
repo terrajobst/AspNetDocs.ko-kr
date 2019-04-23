@@ -12,18 +12,18 @@ ms.openlocfilehash: 5baa7e432c77643196deb321e8bfd99a1adec833
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408409"
 ---
-# <a name="set-up-your-development-environment-for-aspnet-20"></a><span data-ttu-id="e0e89-103">ASP.NET 2.0용 개발 환경 설정</span><span class="sxs-lookup"><span data-stu-id="e0e89-103">Set Up Your Development Environment for ASP.NET 2.0</span></span>
+# <a name="set-up-your-development-environment-for-aspnet-20"></a><span data-ttu-id="faad1-103">ASP.NET 2.0용 개발 환경 설정</span><span class="sxs-lookup"><span data-stu-id="faad1-103">Set Up Your Development Environment for ASP.NET 2.0</span></span>
 
-<span data-ttu-id="e0e89-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="e0e89-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="faad1-104">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="faad1-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="e0e89-105">이 비디오에서는 ASP.NET 2.0을 대상으로 하는 경우 ASP.NET AJAX 응용 프로그램을 개발 하기 위한 개발 환경을 설정 하는 방법을 배웁니다.</span><span class="sxs-lookup"><span data-stu-id="e0e89-105">In this video you'll learn how to set up your Development Environment for developing ASP.NET AJAX Applications if you are targeting ASP.NET 2.0.</span></span>
+<span data-ttu-id="faad1-105">이 비디오에서는 ASP.NET 2.0을 대상으로 하는 경우 ASP.NET AJAX 응용 프로그램을 개발 하기 위한 개발 환경을 설정 하는 방법을 배웁니다.</span><span class="sxs-lookup"><span data-stu-id="faad1-105">In this video you'll learn how to set up your Development Environment for developing ASP.NET AJAX Applications if you are targeting ASP.NET 2.0.</span></span>
 
-[<span data-ttu-id="e0e89-106">&#9654;비디오 (15 분)</span><span class="sxs-lookup"><span data-stu-id="e0e89-106">&#9654; Watch video (15 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/set-up-your-development-environment-for-aspnet-20)
+[<span data-ttu-id="faad1-106">&#9654;비디오 (15 분)</span><span class="sxs-lookup"><span data-stu-id="faad1-106">&#9654; Watch video (15 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/set-up-your-development-environment-for-aspnet-20)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="e0e89-107">[이전](set-up-your-development-environment-for-aspnet-35.md)
-> [다음](how-do-i-customize-error-handling-for-the-aspnet-ajax-updatepanel.md)</span><span class="sxs-lookup"><span data-stu-id="e0e89-107">[Previous](set-up-your-development-environment-for-aspnet-35.md)
+> <span data-ttu-id="faad1-107">[이전](set-up-your-development-environment-for-aspnet-35.md)
+> [다음](how-do-i-customize-error-handling-for-the-aspnet-ajax-updatepanel.md)</span><span class="sxs-lookup"><span data-stu-id="faad1-107">[Previous](set-up-your-development-environment-for-aspnet-35.md)
 [Next](how-do-i-customize-error-handling-for-the-aspnet-ajax-updatepanel.md)</span></span>

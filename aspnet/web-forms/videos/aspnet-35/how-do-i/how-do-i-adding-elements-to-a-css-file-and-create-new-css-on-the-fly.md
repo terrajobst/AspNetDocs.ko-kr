@@ -12,18 +12,18 @@ ms.openlocfilehash: b1ea56d8588023dd37bc42521c7cd339e6f631c8
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59416196"
 ---
-# <a name="how-do-i-adding-elements-to-a-css-file-and-create-new-css-on-the-fly"></a><span data-ttu-id="44abc-103">[어떻게 할까요?] CSS에 요소를 추가 파일을 즉석에서 새 CSS 만들기</span><span class="sxs-lookup"><span data-stu-id="44abc-103">[How Do I:] Adding Elements to a CSS File and Create New CSS on the Fly</span></span>
+# <a name="how-do-i-adding-elements-to-a-css-file-and-create-new-css-on-the-fly"></a><span data-ttu-id="8a7cf-103">[어떻게 할까요?] CSS에 요소를 추가 파일을 즉석에서 새 CSS 만들기</span><span class="sxs-lookup"><span data-stu-id="8a7cf-103">[How Do I:] Adding Elements to a CSS File and Create New CSS on the Fly</span></span>
 
-<span data-ttu-id="44abc-104">Asli Bilgin 여</span><span class="sxs-lookup"><span data-stu-id="44abc-104">by Asli Bilgin</span></span>
+<span data-ttu-id="8a7cf-104">Asli Bilgin 여</span><span class="sxs-lookup"><span data-stu-id="8a7cf-104">by Asli Bilgin</span></span>
 
-<span data-ttu-id="44abc-105">이 비디오에서는 기존 스타일 시트에 작성 되지 않으며 Visual Studio 2008의 새로운 CSS 관리 도구를 사용 하는 요소 id를 사용 하 여 향상 됩니다.</span><span class="sxs-lookup"><span data-stu-id="44abc-105">In this video we will build on an existing style sheet and enhance it with element ids using the new CSS management tools in Visual Studio 2008.</span></span>
+<span data-ttu-id="8a7cf-105">이 비디오에서는 기존 스타일 시트에 작성 되지 않으며 Visual Studio 2008의 새로운 CSS 관리 도구를 사용 하는 요소 id를 사용 하 여 향상 됩니다.</span><span class="sxs-lookup"><span data-stu-id="8a7cf-105">In this video we will build on an existing style sheet and enhance it with element ids using the new CSS management tools in Visual Studio 2008.</span></span>
 
-[<span data-ttu-id="44abc-106">&#9654;비디오 (16 분)</span><span class="sxs-lookup"><span data-stu-id="44abc-106">&#9654; Watch video (16 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-adding-elements-to-a-css-file-and-create-new-css-on-the-fly)
+[<span data-ttu-id="8a7cf-106">&#9654;비디오 (16 분)</span><span class="sxs-lookup"><span data-stu-id="8a7cf-106">&#9654; Watch video (16 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-adding-elements-to-a-css-file-and-create-new-css-on-the-fly)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="44abc-107">[이전](how-do-i-working-with-visual-studio-2008-net-framework.md)
-> [다음](how-do-i-advance-cascading-style-sheet-features-and-management.md)</span><span class="sxs-lookup"><span data-stu-id="44abc-107">[Previous](how-do-i-working-with-visual-studio-2008-net-framework.md)
+> <span data-ttu-id="8a7cf-107">[이전](how-do-i-working-with-visual-studio-2008-net-framework.md)
+> [다음](how-do-i-advance-cascading-style-sheet-features-and-management.md)</span><span class="sxs-lookup"><span data-stu-id="8a7cf-107">[Previous](how-do-i-working-with-visual-studio-2008-net-framework.md)
 [Next](how-do-i-advance-cascading-style-sheet-features-and-management.md)</span></span>

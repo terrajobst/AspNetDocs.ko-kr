@@ -12,18 +12,18 @@ ms.openlocfilehash: 00390fe4b618f09a0b3f8bfbff513827a504626c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59411776"
 ---
-# <a name="aspnet-mvc-storefront-part-18-creating-an-experience"></a><span data-ttu-id="066cc-103">ASP.NET MVC Storefront 18부: 환경 만들기</span><span class="sxs-lookup"><span data-stu-id="066cc-103">ASP.NET MVC Storefront Part 18: Creating An Experience</span></span>
+# <a name="aspnet-mvc-storefront-part-18-creating-an-experience"></a><span data-ttu-id="326a4-103">ASP.NET MVC Storefront 18부: 환경 만들기</span><span class="sxs-lookup"><span data-stu-id="326a4-103">ASP.NET MVC Storefront Part 18: Creating An Experience</span></span>
 
-<span data-ttu-id="066cc-104">[Rob Conery](https://github.com/robconery)</span><span class="sxs-lookup"><span data-stu-id="066cc-104">by [Rob Conery](https://github.com/robconery)</span></span>
+<span data-ttu-id="326a4-104">[Rob Conery](https://github.com/robconery)</span><span class="sxs-lookup"><span data-stu-id="326a4-104">by [Rob Conery](https://github.com/robconery)</span></span>
 
-<span data-ttu-id="066cc-105">이 에피소드는 일관 된 "환경" 구매자를 형성 하는 기술 부분은 전혀 풀에서 작동 합니다.</span><span class="sxs-lookup"><span data-stu-id="066cc-105">In this episode I work on pulling all of the technical pieces together to form a coherent "experience" for the shopper.</span></span>
+<span data-ttu-id="326a4-105">이 에피소드는 일관 된 "환경" 구매자를 형성 하는 기술 부분은 전혀 풀에서 작동 합니다.</span><span class="sxs-lookup"><span data-stu-id="326a4-105">In this episode I work on pulling all of the technical pieces together to form a coherent "experience" for the shopper.</span></span>
 
-[<span data-ttu-id="066cc-106">&#9654;비디오 (21 분)</span><span class="sxs-lookup"><span data-stu-id="066cc-106">&#9654; Watch video (21 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-mvc-storefront-part-18-creating-an-experience)
+[<span data-ttu-id="326a4-106">&#9654;비디오 (21 분)</span><span class="sxs-lookup"><span data-stu-id="326a4-106">&#9654; Watch video (21 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-mvc-storefront-part-18-creating-an-experience)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="066cc-107">[이전](aspnet-mvc-storefront-part-17-checkout-with-jeff-atwood.md)
-> [다음](aspnet-mvc-storefront-part-19-processing-orders-with-windows-workflow.md)</span><span class="sxs-lookup"><span data-stu-id="066cc-107">[Previous](aspnet-mvc-storefront-part-17-checkout-with-jeff-atwood.md)
+> <span data-ttu-id="326a4-107">[이전](aspnet-mvc-storefront-part-17-checkout-with-jeff-atwood.md)
+> [다음](aspnet-mvc-storefront-part-19-processing-orders-with-windows-workflow.md)</span><span class="sxs-lookup"><span data-stu-id="326a4-107">[Previous](aspnet-mvc-storefront-part-17-checkout-with-jeff-atwood.md)
 [Next](aspnet-mvc-storefront-part-19-processing-orders-with-windows-workflow.md)</span></span>

@@ -12,16 +12,16 @@ ms.openlocfilehash: 042077cb2c0a284556a35e960177f9fd9ad508a6
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413453"
 ---
-# <a name="how-do-i-get-started-with-linq"></a><span data-ttu-id="6b280-104">[어떻게 할까요?] LINQ를 사용 하 여 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="6b280-104">[How Do I:] Get Started with LINQ?</span></span>
+# <a name="how-do-i-get-started-with-linq"></a><span data-ttu-id="31c33-104">[어떻게 할까요?] LINQ를 사용 하 여 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="31c33-104">[How Do I:] Get Started with LINQ?</span></span>
 
-<span data-ttu-id="6b280-105">by [Beth Massi](https://github.com/bethmassi)</span><span class="sxs-lookup"><span data-stu-id="6b280-105">by [Beth Massi](https://github.com/bethmassi)</span></span>
+<span data-ttu-id="31c33-105">by [Beth Massi](https://github.com/bethmassi)</span><span class="sxs-lookup"><span data-stu-id="31c33-105">by [Beth Massi](https://github.com/bethmassi)</span></span>
 
-<span data-ttu-id="6b280-106">Visual Basic 프로그래머를 파일 시스템에 탐색 파일에서 개체에 대해 간단한 LINQ 쿼리를 작성 하는 방법을 배웁니다.</span><span class="sxs-lookup"><span data-stu-id="6b280-106">Visual Basic programmers will learn how to write simple LINQ queries over objects by navigating files on the file system.</span></span>
+<span data-ttu-id="31c33-106">Visual Basic 프로그래머를 파일 시스템에 탐색 파일에서 개체에 대해 간단한 LINQ 쿼리를 작성 하는 방법을 배웁니다.</span><span class="sxs-lookup"><span data-stu-id="31c33-106">Visual Basic programmers will learn how to write simple LINQ queries over objects by navigating files on the file system.</span></span>
 
-[<span data-ttu-id="6b280-107">&#9654;비디오 (9 분)</span><span class="sxs-lookup"><span data-stu-id="6b280-107">&#9654; Watch video (9 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-get-started-with-linq)
+[<span data-ttu-id="31c33-107">&#9654;비디오 (9 분)</span><span class="sxs-lookup"><span data-stu-id="31c33-107">&#9654; Watch video (9 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-get-started-with-linq)
 
 > [!div class="step-by-step"]
-> [<span data-ttu-id="6b280-108">다음</span><span class="sxs-lookup"><span data-stu-id="6b280-108">Next</span></span>](how-do-i-perform-group-and-aggregate-queries.md)
+> [<span data-ttu-id="31c33-108">다음</span><span class="sxs-lookup"><span data-stu-id="31c33-108">Next</span></span>](how-do-i-perform-group-and-aggregate-queries.md)

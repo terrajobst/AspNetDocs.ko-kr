@@ -12,18 +12,18 @@ ms.openlocfilehash: 58b4f131e6e39a1eac42d2897ff774146b90961f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408734"
 ---
-# <a name="lesson-8-working-with-the-gridview-and-formview"></a><span data-ttu-id="6ff00-103">[강좌 8:] GridView 및 FormView 사용</span><span class="sxs-lookup"><span data-stu-id="6ff00-103">[Lesson 8:] Working with the GridView and FormView</span></span>
+# <a name="lesson-8-working-with-the-gridview-and-formview"></a><span data-ttu-id="25516-103">[강좌 8:] GridView 및 FormView 사용</span><span class="sxs-lookup"><span data-stu-id="25516-103">[Lesson 8:] Working with the GridView and FormView</span></span>
 
-<span data-ttu-id="6ff00-104">by [Microsoft](https://github.com/microsoft)</span><span class="sxs-lookup"><span data-stu-id="6ff00-104">by [Microsoft](https://github.com/microsoft)</span></span>
+<span data-ttu-id="25516-104">by [Microsoft](https://github.com/microsoft)</span><span class="sxs-lookup"><span data-stu-id="25516-104">by [Microsoft](https://github.com/microsoft)</span></span>
 
-<span data-ttu-id="6ff00-105">이 단원에서는 GridView에 대해 배우게 됩니다 및 FormView 컨트롤 하 고 편집 하 고 데이터베이스 콘텐츠를 쉽게 표시할 수 있도록 이러한 컨트롤의 기능 중 일부를 사용 하는 방법을 합니다.</span><span class="sxs-lookup"><span data-stu-id="6ff00-105">In this lesson, you will learn about the GridView and FormView controls and how you can use some of the features of these controls to make editing and displaying of database content easier.</span></span>
+<span data-ttu-id="25516-105">이 단원에서는 GridView에 대해 배우게 됩니다 및 FormView 컨트롤 하 고 편집 하 고 데이터베이스 콘텐츠를 쉽게 표시할 수 있도록 이러한 컨트롤의 기능 중 일부를 사용 하는 방법을 합니다.</span><span class="sxs-lookup"><span data-stu-id="25516-105">In this lesson, you will learn about the GridView and FormView controls and how you can use some of the features of these controls to make editing and displaying of database content easier.</span></span>
 
-[<span data-ttu-id="6ff00-106">&#9654;비디오 (30 분)</span><span class="sxs-lookup"><span data-stu-id="6ff00-106">&#9654; Watch video (30 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/lesson-8-working-with-the-gridview-and-formview)
+[<span data-ttu-id="25516-106">&#9654;비디오 (30 분)</span><span class="sxs-lookup"><span data-stu-id="25516-106">&#9654; Watch video (30 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/lesson-8-working-with-the-gridview-and-formview)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="6ff00-107">[이전](lesson-7-databinding-to-user-interface-controls.md)
-> [다음](watch-aspnet-development-in-action.md)</span><span class="sxs-lookup"><span data-stu-id="6ff00-107">[Previous](lesson-7-databinding-to-user-interface-controls.md)
+> <span data-ttu-id="25516-107">[이전](lesson-7-databinding-to-user-interface-controls.md)
+> [다음](watch-aspnet-development-in-action.md)</span><span class="sxs-lookup"><span data-stu-id="25516-107">[Previous](lesson-7-databinding-to-user-interface-controls.md)
 [Next](watch-aspnet-development-in-action.md)</span></span>

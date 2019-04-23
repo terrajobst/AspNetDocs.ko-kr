@@ -12,109 +12,109 @@ ms.openlocfilehash: 028631f8855e4d94bebb0e965de75c4025e22859
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59409267"
 ---
-# <a name="part-7-creating-the-main-page"></a><span data-ttu-id="0cdf0-102">7부: 기본 페이지 만들기</span><span class="sxs-lookup"><span data-stu-id="0cdf0-102">Part 7: Creating the Main Page</span></span>
+# <a name="part-7-creating-the-main-page"></a><span data-ttu-id="864af-102">7부: 기본 페이지 만들기</span><span class="sxs-lookup"><span data-stu-id="864af-102">Part 7: Creating the Main Page</span></span>
 
-<span data-ttu-id="0cdf0-103">[Mike Wasson](https://github.com/MikeWasson)</span><span class="sxs-lookup"><span data-stu-id="0cdf0-103">by [Mike Wasson](https://github.com/MikeWasson)</span></span>
+<span data-ttu-id="864af-103">[Mike Wasson](https://github.com/MikeWasson)</span><span class="sxs-lookup"><span data-stu-id="864af-103">by [Mike Wasson](https://github.com/MikeWasson)</span></span>
 
-[<span data-ttu-id="0cdf0-104">완료 된 프로젝트 다운로드</span><span class="sxs-lookup"><span data-stu-id="0cdf0-104">Download Completed Project</span></span>](http://code.msdn.microsoft.com/ASP-NET-Web-API-with-afa30545)
+[<span data-ttu-id="864af-104">완료 된 프로젝트 다운로드</span><span class="sxs-lookup"><span data-stu-id="864af-104">Download Completed Project</span></span>](http://code.msdn.microsoft.com/ASP-NET-Web-API-with-afa30545)
 
-## <a name="creating-the-main-page"></a><span data-ttu-id="0cdf0-105">기본 페이지 만들기</span><span class="sxs-lookup"><span data-stu-id="0cdf0-105">Creating the Main Page</span></span>
+## <a name="creating-the-main-page"></a><span data-ttu-id="864af-105">기본 페이지 만들기</span><span class="sxs-lookup"><span data-stu-id="864af-105">Creating the Main Page</span></span>
 
-<span data-ttu-id="0cdf0-106">이 섹션에서는 주요 응용 프로그램 페이지를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-106">In this section, you will create the main application page.</span></span> <span data-ttu-id="0cdf0-107">이 페이지에서는 여러 단계에서 접근 됩니다 있도록 관리 페이지에서 보다 복잡 한 됩니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-107">This page will be more complex than the Admin page, so we'll approach it in several steps.</span></span> <span data-ttu-id="0cdf0-108">이 과정에서 몇 가지 고급 Knockout.js 기술을 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-108">Along the way, you'll see some more advanced Knockout.js techniques.</span></span> <span data-ttu-id="0cdf0-109">페이지의 기본 레이아웃은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-109">Here is the basic layout of the page:</span></span>
+<span data-ttu-id="864af-106">이 섹션에서는 주요 응용 프로그램 페이지를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="864af-106">In this section, you will create the main application page.</span></span> <span data-ttu-id="864af-107">이 페이지에서는 여러 단계에서 접근 됩니다 있도록 관리 페이지에서 보다 복잡 한 됩니다.</span><span class="sxs-lookup"><span data-stu-id="864af-107">This page will be more complex than the Admin page, so we'll approach it in several steps.</span></span> <span data-ttu-id="864af-108">이 과정에서 몇 가지 고급 Knockout.js 기술을 볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="864af-108">Along the way, you'll see some more advanced Knockout.js techniques.</span></span> <span data-ttu-id="864af-109">페이지의 기본 레이아웃은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="864af-109">Here is the basic layout of the page:</span></span>
 
 ![](using-web-api-with-entity-framework-part-7/_static/image1.png)
 
-- <span data-ttu-id="0cdf0-110">"제품" 제품의 배열을 보유합니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-110">"Products" holds an array of products.</span></span>
-- <span data-ttu-id="0cdf0-111">"Cart" 수량을 사용 하 여 제품의 배열을 보유합니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-111">"Cart" holds an array of products with quantities.</span></span> <span data-ttu-id="0cdf0-112">"Add to Cart"를 클릭 하 여 카트를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-112">Clicking "Add to Cart" updates the cart.</span></span>
-- <span data-ttu-id="0cdf0-113">"Orders" 주문 Id의 배열을 보유합니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-113">"Orders" holds an array of order IDs.</span></span>
-- <span data-ttu-id="0cdf0-114">"세부 정보" 항목 (제품 수량을 사용 하 여)의 배열 되는 주문 세부 정보를 보유 합니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-114">"Details" holds an order detail, which is an array of items (products with quantities)</span></span>
+- <span data-ttu-id="864af-110">"제품" 제품의 배열을 보유합니다.</span><span class="sxs-lookup"><span data-stu-id="864af-110">"Products" holds an array of products.</span></span>
+- <span data-ttu-id="864af-111">"Cart" 수량을 사용 하 여 제품의 배열을 보유합니다.</span><span class="sxs-lookup"><span data-stu-id="864af-111">"Cart" holds an array of products with quantities.</span></span> <span data-ttu-id="864af-112">"Add to Cart"를 클릭 하 여 카트를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="864af-112">Clicking "Add to Cart" updates the cart.</span></span>
+- <span data-ttu-id="864af-113">"Orders" 주문 Id의 배열을 보유합니다.</span><span class="sxs-lookup"><span data-stu-id="864af-113">"Orders" holds an array of order IDs.</span></span>
+- <span data-ttu-id="864af-114">"세부 정보" 항목 (제품 수량을 사용 하 여)의 배열 되는 주문 세부 정보를 보유 합니다.</span><span class="sxs-lookup"><span data-stu-id="864af-114">"Details" holds an order detail, which is an array of items (products with quantities)</span></span>
 
-<span data-ttu-id="0cdf0-115">데이터 바인딩이 없거나 스크립트를 사용 하 여 html, 일부 기본 레이아웃을 정의 하 여 시작 하겠습니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-115">We'll start by defining some basic layout in HTML, with no data binding or script.</span></span> <span data-ttu-id="0cdf0-116">Views/Home/Index.cshtml 파일을 열고 모든 콘텐츠를 다음으로 바꿉니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-116">Open the file Views/Home/Index.cshtml and replace all of the contents with the following:</span></span>
+<span data-ttu-id="864af-115">데이터 바인딩이 없거나 스크립트를 사용 하 여 html, 일부 기본 레이아웃을 정의 하 여 시작 하겠습니다.</span><span class="sxs-lookup"><span data-stu-id="864af-115">We'll start by defining some basic layout in HTML, with no data binding or script.</span></span> <span data-ttu-id="864af-116">Views/Home/Index.cshtml 파일을 열고 모든 콘텐츠를 다음으로 바꿉니다.</span><span class="sxs-lookup"><span data-stu-id="864af-116">Open the file Views/Home/Index.cshtml and replace all of the contents with the following:</span></span>
 
 [!code-html[Main](using-web-api-with-entity-framework-part-7/samples/sample1.html)]
 
-<span data-ttu-id="0cdf0-117">다음으로, 스크립트 섹션을 추가 하 고 빈 보기-모델을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-117">Next, add a Scripts section and create an empty view-model:</span></span>
+<span data-ttu-id="864af-117">다음으로, 스크립트 섹션을 추가 하 고 빈 보기-모델을 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="864af-117">Next, add a Scripts section and create an empty view-model:</span></span>
 
 [!code-cshtml[Main](using-web-api-with-entity-framework-part-7/samples/sample2.cshtml)]
 
-<span data-ttu-id="0cdf0-118">보기 모델 스케치 이전 디자인에 따라 제품, 카트, 주문 및 세부 정보에 대 한 관찰 가능 개체를 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-118">Based on the design sketched earlier, our view model needs observables for products, cart, orders, and details.</span></span> <span data-ttu-id="0cdf0-119">다음 변수를 추가 합니다 `AppViewModel` 개체:</span><span class="sxs-lookup"><span data-stu-id="0cdf0-119">Add the following variables to the `AppViewModel` object:</span></span>
+<span data-ttu-id="864af-118">보기 모델 스케치 이전 디자인에 따라 제품, 카트, 주문 및 세부 정보에 대 한 관찰 가능 개체를 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="864af-118">Based on the design sketched earlier, our view model needs observables for products, cart, orders, and details.</span></span> <span data-ttu-id="864af-119">다음 변수를 추가 합니다 `AppViewModel` 개체:</span><span class="sxs-lookup"><span data-stu-id="864af-119">Add the following variables to the `AppViewModel` object:</span></span>
 
 [!code-javascript[Main](using-web-api-with-entity-framework-part-7/samples/sample3.js)]
 
-<span data-ttu-id="0cdf0-120">사용자가 장바구니에에 제품 목록에서 항목을 추가 하 고 장바구니에서 항목을 제거할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-120">Users can add items from the products list into the cart, and remove items from the cart.</span></span> <span data-ttu-id="0cdf0-121">이러한 함수를 캡슐화 하는 제품을 나타내는 다른 보기 모델 클래스를 만들어 보겠습니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-121">To encapsulate these functions, we'll create another view-model class that represents a product.</span></span> <span data-ttu-id="0cdf0-122">다음 코드를 `AppViewModel`에 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-122">Add the following code to `AppViewModel`:</span></span>
+<span data-ttu-id="864af-120">사용자가 장바구니에에 제품 목록에서 항목을 추가 하 고 장바구니에서 항목을 제거할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="864af-120">Users can add items from the products list into the cart, and remove items from the cart.</span></span> <span data-ttu-id="864af-121">이러한 함수를 캡슐화 하는 제품을 나타내는 다른 보기 모델 클래스를 만들어 보겠습니다.</span><span class="sxs-lookup"><span data-stu-id="864af-121">To encapsulate these functions, we'll create another view-model class that represents a product.</span></span> <span data-ttu-id="864af-122">다음 코드를 `AppViewModel`에 추가합니다.</span><span class="sxs-lookup"><span data-stu-id="864af-122">Add the following code to `AppViewModel`:</span></span>
 
 [!code-javascript[Main](using-web-api-with-entity-framework-part-7/samples/sample4.js?highlight=4)]
 
-<span data-ttu-id="0cdf0-123">합니다 `ProductViewModel` 클래스에 카트에서 제품을 이동 하는 데 사용 되는 두 가지 함수가 포함 되어 있습니다.: `addItemToCart` 장바구니에 제품의 단위를 하나 추가 및 `removeAllFromCart` 제품의 수량을 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-123">The `ProductViewModel` class contains two functions that are used to move the product to and from the cart: `addItemToCart` adds one unit of the product to the cart, and `removeAllFromCart` removes all quantities of the product.</span></span>
+<span data-ttu-id="864af-123">합니다 `ProductViewModel` 클래스에 카트에서 제품을 이동 하는 데 사용 되는 두 가지 함수가 포함 되어 있습니다.: `addItemToCart` 장바구니에 제품의 단위를 하나 추가 및 `removeAllFromCart` 제품의 수량을 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="864af-123">The `ProductViewModel` class contains two functions that are used to move the product to and from the cart: `addItemToCart` adds one unit of the product to the cart, and `removeAllFromCart` removes all quantities of the product.</span></span>
 
-<span data-ttu-id="0cdf0-124">사용자는 기존 주문을 선택 하 고 주문 세부 정보를 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-124">Users can select an existing order and get the order details.</span></span> <span data-ttu-id="0cdf0-125">이 기능은 다른 보기 모델에 캡슐화 했습니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-125">We'll encapsulate this functionality into another view-model:</span></span>
+<span data-ttu-id="864af-124">사용자는 기존 주문을 선택 하 고 주문 세부 정보를 가져올 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="864af-124">Users can select an existing order and get the order details.</span></span> <span data-ttu-id="864af-125">이 기능은 다른 보기 모델에 캡슐화 했습니다.</span><span class="sxs-lookup"><span data-stu-id="864af-125">We'll encapsulate this functionality into another view-model:</span></span>
 
 [!code-javascript[Main](using-web-api-with-entity-framework-part-7/samples/sample5.js?highlight=4)]
 
-<span data-ttu-id="0cdf0-126">`OrderDetailsViewModel` 순서를 사용 하 여 초기화 됩니다 및 AJAX 요청을 서버로 전송 하 여 주문 세부 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-126">The `OrderDetailsViewModel` is initialized with an order, and it fetches the order details by sending an AJAX request to the server.</span></span>
+<span data-ttu-id="864af-126">`OrderDetailsViewModel` 순서를 사용 하 여 초기화 됩니다 및 AJAX 요청을 서버로 전송 하 여 주문 세부 정보를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="864af-126">The `OrderDetailsViewModel` is initialized with an order, and it fetches the order details by sending an AJAX request to the server.</span></span>
 
-<span data-ttu-id="0cdf0-127">또한 합니다 `total` 속성에는 `OrderDetailsViewModel`합니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-127">Also, notice the `total` property on the `OrderDetailsViewModel`.</span></span> <span data-ttu-id="0cdf0-128">이 속성은 특수 한 유형의 호출 하는 관찰 가능 개체를 [관찰 가능 개체를 계산](http://knockoutjs.com/documentation/computedObservables.html)합니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-128">This property is a special kind of observable called a [computed observable](http://knockoutjs.com/documentation/computedObservables.html).</span></span> <span data-ttu-id="0cdf0-129">이름에서 알 수 있듯이 계산된 observable 사용 하면 계산 된 값을 데이터 바인딩&#8212;주문의 총 비용이 예제의 경우.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-129">As the name implies, a computed observable lets you data bind to a computed value&#8212;in this case, the total cost of the order.</span></span>
+<span data-ttu-id="864af-127">또한 합니다 `total` 속성에는 `OrderDetailsViewModel`합니다.</span><span class="sxs-lookup"><span data-stu-id="864af-127">Also, notice the `total` property on the `OrderDetailsViewModel`.</span></span> <span data-ttu-id="864af-128">이 속성은 특수 한 유형의 호출 하는 관찰 가능 개체를 [관찰 가능 개체를 계산](http://knockoutjs.com/documentation/computedObservables.html)합니다.</span><span class="sxs-lookup"><span data-stu-id="864af-128">This property is a special kind of observable called a [computed observable](http://knockoutjs.com/documentation/computedObservables.html).</span></span> <span data-ttu-id="864af-129">이름에서 알 수 있듯이 계산된 observable 사용 하면 계산 된 값을 데이터 바인딩&#8212;주문의 총 비용이 예제의 경우.</span><span class="sxs-lookup"><span data-stu-id="864af-129">As the name implies, a computed observable lets you data bind to a computed value&#8212;in this case, the total cost of the order.</span></span>
 
-<span data-ttu-id="0cdf0-130">이러한 함수를 다음으로, 추가 `AppViewModel`:</span><span class="sxs-lookup"><span data-stu-id="0cdf0-130">Next, add these functions to `AppViewModel`:</span></span>
+<span data-ttu-id="864af-130">이러한 함수를 다음으로, 추가 `AppViewModel`:</span><span class="sxs-lookup"><span data-stu-id="864af-130">Next, add these functions to `AppViewModel`:</span></span>
 
-- `resetCart` <span data-ttu-id="0cdf0-131">카트에서 모든 항목을 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-131">removes all items from the cart.</span></span>
-- `getDetails` <span data-ttu-id="0cdf0-132">주문에 대 한 세부 정보를 가져옵니다 (새 푸시하여 `OrderDetailsViewModel` 에 `details` 목록).</span><span class="sxs-lookup"><span data-stu-id="0cdf0-132">gets the details for an order (by pushing a new `OrderDetailsViewModel` onto the `details` list).</span></span>
-- `createOrder` <span data-ttu-id="0cdf0-133">새 주문을 만들고 장바구니를 비웁니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-133">creates a new order and empties the cart.</span></span>
+- <span data-ttu-id="864af-131">`resetCart` 카트에서 모든 항목을 제거합니다.</span><span class="sxs-lookup"><span data-stu-id="864af-131">`resetCart` removes all items from the cart.</span></span>
+- <span data-ttu-id="864af-132">`getDetails` 주문에 대 한 세부 정보를 가져옵니다 (새 푸시하여 `OrderDetailsViewModel` 에 `details` 목록).</span><span class="sxs-lookup"><span data-stu-id="864af-132">`getDetails` gets the details for an order (by pushing a new `OrderDetailsViewModel` onto the `details` list).</span></span>
+- <span data-ttu-id="864af-133">`createOrder` 새 주문을 만들고 장바구니를 비웁니다.</span><span class="sxs-lookup"><span data-stu-id="864af-133">`createOrder` creates a new order and empties the cart.</span></span>
 
 
 [!code-javascript[Main](using-web-api-with-entity-framework-part-7/samples/sample6.js?highlight=4)]
 
-<span data-ttu-id="0cdf0-134">마지막으로, 제품 및 주문에 대 한 AJAX 요청을 만들어 뷰 모델을 초기화 합니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-134">Finally, initialize the view model by making AJAX requests for the products and orders:</span></span>
+<span data-ttu-id="864af-134">마지막으로, 제품 및 주문에 대 한 AJAX 요청을 만들어 뷰 모델을 초기화 합니다.</span><span class="sxs-lookup"><span data-stu-id="864af-134">Finally, initialize the view model by making AJAX requests for the products and orders:</span></span>
 
 [!code-javascript[Main](using-web-api-with-entity-framework-part-7/samples/sample7.js)]
 
-<span data-ttu-id="0cdf0-135">그렇다면 코드의 많은 하지만 빌드 하였습니다 up 단계별 여러분도 이러한 디자인은의 선택을 취소 합니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-135">OK, that's a lot of code, but we built it up step-by-step, so hopefully the design is clear.</span></span> <span data-ttu-id="0cdf0-136">이제 html 일부 Knockout.js 바인딩을 추가할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-136">Now we can add some Knockout.js bindings to the HTML.</span></span>
+<span data-ttu-id="864af-135">그렇다면 코드의 많은 하지만 빌드 하였습니다 up 단계별 여러분도 이러한 디자인은의 선택을 취소 합니다.</span><span class="sxs-lookup"><span data-stu-id="864af-135">OK, that's a lot of code, but we built it up step-by-step, so hopefully the design is clear.</span></span> <span data-ttu-id="864af-136">이제 html 일부 Knockout.js 바인딩을 추가할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="864af-136">Now we can add some Knockout.js bindings to the HTML.</span></span>
 
-**<span data-ttu-id="0cdf0-137">제품</span><span class="sxs-lookup"><span data-stu-id="0cdf0-137">Products</span></span>**
+<span data-ttu-id="864af-137">**제품**</span><span class="sxs-lookup"><span data-stu-id="864af-137">**Products**</span></span>
 
-<span data-ttu-id="0cdf0-138">제품 목록에 대 한 바인딩을 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-138">Here are the bindings for the product list:</span></span>
+<span data-ttu-id="864af-138">제품 목록에 대 한 바인딩을 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="864af-138">Here are the bindings for the product list:</span></span>
 
 [!code-html[Main](using-web-api-with-entity-framework-part-7/samples/sample8.html)]
 
-<span data-ttu-id="0cdf0-139">이 제품 배열을 반복 하 고 이름과 가격을 표시 합니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-139">This iterates over the products array and displays the name and price.</span></span> <span data-ttu-id="0cdf0-140">"순서에 추가" 단추를 사용자가 로그인 하는 경우에 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-140">The "Add to Order" button is visible only when the user is logged in.</span></span>
+<span data-ttu-id="864af-139">이 제품 배열을 반복 하 고 이름과 가격을 표시 합니다.</span><span class="sxs-lookup"><span data-stu-id="864af-139">This iterates over the products array and displays the name and price.</span></span> <span data-ttu-id="864af-140">"순서에 추가" 단추를 사용자가 로그인 하는 경우에 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="864af-140">The "Add to Order" button is visible only when the user is logged in.</span></span>
 
-<span data-ttu-id="0cdf0-141">"순서에 추가" 단추 호출 `addItemToCart` 에 `ProductViewModel` 제품에 대 한 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-141">The "Add to Order" button calls `addItemToCart` on the `ProductViewModel` instance for the product.</span></span> <span data-ttu-id="0cdf0-142">이 Knockout.js의 뛰어난 기능을 보여 줍니다. 다른 보기 모델에 포함 되어 있으면 보기-모델 내부 모델 바인딩을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-142">This demonstrates a nice feature of Knockout.js: When a view-model contains other view-models, you can apply the bindings to the inner model.</span></span> <span data-ttu-id="0cdf0-143">이 예제에서는 내에서 바인딩에 합니다 `foreach` 각각에 적용 되는 `ProductViewModel` 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-143">In this example, the bindings within the `foreach` are applied to each of the `ProductViewModel` instances.</span></span> <span data-ttu-id="0cdf0-144">이 방법은 단일 보기-모델에 배치 하는 모든 기능 보다 훨씬 더 명확 합니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-144">This approach is much cleaner than putting all of the functionality into a single view-model.</span></span>
+<span data-ttu-id="864af-141">"순서에 추가" 단추 호출 `addItemToCart` 에 `ProductViewModel` 제품에 대 한 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="864af-141">The "Add to Order" button calls `addItemToCart` on the `ProductViewModel` instance for the product.</span></span> <span data-ttu-id="864af-142">이 Knockout.js의 뛰어난 기능을 보여 줍니다. 다른 보기 모델에 포함 되어 있으면 보기-모델 내부 모델 바인딩을 적용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="864af-142">This demonstrates a nice feature of Knockout.js: When a view-model contains other view-models, you can apply the bindings to the inner model.</span></span> <span data-ttu-id="864af-143">이 예제에서는 내에서 바인딩에 합니다 `foreach` 각각에 적용 되는 `ProductViewModel` 인스턴스.</span><span class="sxs-lookup"><span data-stu-id="864af-143">In this example, the bindings within the `foreach` are applied to each of the `ProductViewModel` instances.</span></span> <span data-ttu-id="864af-144">이 방법은 단일 보기-모델에 배치 하는 모든 기능 보다 훨씬 더 명확 합니다.</span><span class="sxs-lookup"><span data-stu-id="864af-144">This approach is much cleaner than putting all of the functionality into a single view-model.</span></span>
 
-**<span data-ttu-id="0cdf0-145">카트</span><span class="sxs-lookup"><span data-stu-id="0cdf0-145">Cart</span></span>**
+<span data-ttu-id="864af-145">**Cart**</span><span class="sxs-lookup"><span data-stu-id="864af-145">**Cart**</span></span>
 
-<span data-ttu-id="0cdf0-146">카트 바인딩을 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-146">Here are the bindings for the cart:</span></span>
+<span data-ttu-id="864af-146">카트 바인딩을 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="864af-146">Here are the bindings for the cart:</span></span>
 
 [!code-html[Main](using-web-api-with-entity-framework-part-7/samples/sample9.html)]
 
-<span data-ttu-id="0cdf0-147">이 카트 배열을 반복 하 고 이름, 가격 및 수량을 표시 합니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-147">This iterates over the cart array and displays the name, price, and quantity.</span></span> <span data-ttu-id="0cdf0-148">연결 "제거" 및 "주문 작성" 단추를 뷰 모델 함수에 바인딩되어 있는지 note 합니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-148">Note that the "Remove" link and the "Create Order" button are bound to view-model functions.</span></span>
+<span data-ttu-id="864af-147">이 카트 배열을 반복 하 고 이름, 가격 및 수량을 표시 합니다.</span><span class="sxs-lookup"><span data-stu-id="864af-147">This iterates over the cart array and displays the name, price, and quantity.</span></span> <span data-ttu-id="864af-148">연결 "제거" 및 "주문 작성" 단추를 뷰 모델 함수에 바인딩되어 있는지 note 합니다.</span><span class="sxs-lookup"><span data-stu-id="864af-148">Note that the "Remove" link and the "Create Order" button are bound to view-model functions.</span></span>
 
-**<span data-ttu-id="0cdf0-149">Orders</span><span class="sxs-lookup"><span data-stu-id="0cdf0-149">Orders</span></span>**
+<span data-ttu-id="864af-149">**주문**</span><span class="sxs-lookup"><span data-stu-id="864af-149">**Orders**</span></span>
 
-<span data-ttu-id="0cdf0-150">주문 목록에 대 한 바인딩을 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-150">Here are the bindings for the orders list:</span></span>
+<span data-ttu-id="864af-150">주문 목록에 대 한 바인딩을 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="864af-150">Here are the bindings for the orders list:</span></span>
 
 [!code-html[Main](using-web-api-with-entity-framework-part-7/samples/sample10.html)]
 
-<span data-ttu-id="0cdf0-151">이 주문이 될 때까지 반복 하 고 주문 ID를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-151">This iterates over the orders and shows the order ID.</span></span> <span data-ttu-id="0cdf0-152">링크의 click 이벤트 바인딩되는 `getDetails` 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-152">The click event on the link is bound to the `getDetails` function.</span></span>
+<span data-ttu-id="864af-151">이 주문이 될 때까지 반복 하 고 주문 ID를 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="864af-151">This iterates over the orders and shows the order ID.</span></span> <span data-ttu-id="864af-152">링크의 click 이벤트 바인딩되는 `getDetails` 함수입니다.</span><span class="sxs-lookup"><span data-stu-id="864af-152">The click event on the link is bound to the `getDetails` function.</span></span>
 
-**<span data-ttu-id="0cdf0-153">주문 세부 정보</span><span class="sxs-lookup"><span data-stu-id="0cdf0-153">Order Details</span></span>**
+<span data-ttu-id="864af-153">**주문 세부 정보**</span><span class="sxs-lookup"><span data-stu-id="864af-153">**Order Details**</span></span>
 
-<span data-ttu-id="0cdf0-154">주문 세부 정보에 대 한 바인딩을 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-154">Here are the bindings for the order details:</span></span>
+<span data-ttu-id="864af-154">주문 세부 정보에 대 한 바인딩을 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="864af-154">Here are the bindings for the order details:</span></span>
 
 [!code-html[Main](using-web-api-with-entity-framework-part-7/samples/sample11.html)]
 
-<span data-ttu-id="0cdf0-155">이 순서 대로 항목을 반복 하 고 제품, 가격 및 수량을 표시 합니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-155">This iterates over the items in the order and displays the product, price, and quantity.</span></span> <span data-ttu-id="0cdf0-156">주변 div 세부 정보 배열 하나 이상의 항목을 포함 하는 경우에 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-156">The surrounding div is visible only if the details array contains one or more items.</span></span>
+<span data-ttu-id="864af-155">이 순서 대로 항목을 반복 하 고 제품, 가격 및 수량을 표시 합니다.</span><span class="sxs-lookup"><span data-stu-id="864af-155">This iterates over the items in the order and displays the product, price, and quantity.</span></span> <span data-ttu-id="864af-156">주변 div 세부 정보 배열 하나 이상의 항목을 포함 하는 경우에 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="864af-156">The surrounding div is visible only if the details array contains one or more items.</span></span>
 
-## <a name="conclusion"></a><span data-ttu-id="0cdf0-157">결론</span><span class="sxs-lookup"><span data-stu-id="0cdf0-157">Conclusion</span></span>
+## <a name="conclusion"></a><span data-ttu-id="864af-157">결론</span><span class="sxs-lookup"><span data-stu-id="864af-157">Conclusion</span></span>
 
-<span data-ttu-id="0cdf0-158">이 자습서에서는 ASP.NET Web API 데이터 계층을 기반으로 공용 인터페이스를 제공 하 고 데이터베이스를 사용 하 여 통신 하기 위해 Entity Framework를 사용 하는 응용 프로그램을 만들었습니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-158">In this tutorial, you created an application that uses Entity Framework to communicate with the database, and ASP.NET Web API to provide a public-facing interface on top of the data layer.</span></span> <span data-ttu-id="0cdf0-159">ASP.NET MVC 4 렌더링할 HTML 페이지 및 Knockout.js 및 jQuery 페이지를 다시 로드 하지 않고 동적 상호 작용을 제공 하려면 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="0cdf0-159">We use ASP.NET MVC 4 to render the HTML pages, and Knockout.js plus jQuery to provide dynamic interactions without page reloads.</span></span>
+<span data-ttu-id="864af-158">이 자습서에서는 ASP.NET Web API 데이터 계층을 기반으로 공용 인터페이스를 제공 하 고 데이터베이스를 사용 하 여 통신 하기 위해 Entity Framework를 사용 하는 응용 프로그램을 만들었습니다.</span><span class="sxs-lookup"><span data-stu-id="864af-158">In this tutorial, you created an application that uses Entity Framework to communicate with the database, and ASP.NET Web API to provide a public-facing interface on top of the data layer.</span></span> <span data-ttu-id="864af-159">ASP.NET MVC 4 렌더링할 HTML 페이지 및 Knockout.js 및 jQuery 페이지를 다시 로드 하지 않고 동적 상호 작용을 제공 하려면 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="864af-159">We use ASP.NET MVC 4 to render the HTML pages, and Knockout.js plus jQuery to provide dynamic interactions without page reloads.</span></span>
 
-<span data-ttu-id="0cdf0-160">추가 리소스:</span><span class="sxs-lookup"><span data-stu-id="0cdf0-160">Additional resources:</span></span>
+<span data-ttu-id="864af-160">추가 리소스:</span><span class="sxs-lookup"><span data-stu-id="864af-160">Additional resources:</span></span>
 
-- [<span data-ttu-id="0cdf0-161">ASP.NET 데이터 액세스 콘텐츠 맵</span><span class="sxs-lookup"><span data-stu-id="0cdf0-161">ASP.NET Data Access Content Map</span></span>](https://msdn.microsoft.com/library/6759sth4.aspx)
-- [<span data-ttu-id="0cdf0-162">Entity Framework 개발자 센터</span><span class="sxs-lookup"><span data-stu-id="0cdf0-162">Entity Framework Developer Center</span></span>](https://msdn.microsoft.com/data/ef)
+- [<span data-ttu-id="864af-161">ASP.NET 데이터 액세스 콘텐츠 맵</span><span class="sxs-lookup"><span data-stu-id="864af-161">ASP.NET Data Access Content Map</span></span>](https://msdn.microsoft.com/library/6759sth4.aspx)
+- [<span data-ttu-id="864af-162">Entity Framework 개발자 센터</span><span class="sxs-lookup"><span data-stu-id="864af-162">Entity Framework Developer Center</span></span>](https://msdn.microsoft.com/data/ef)
 
 > [!div class="step-by-step"]
-> [<span data-ttu-id="0cdf0-163">이전</span><span class="sxs-lookup"><span data-stu-id="0cdf0-163">Previous</span></span>](using-web-api-with-entity-framework-part-6.md)
+> [<span data-ttu-id="864af-163">이전</span><span class="sxs-lookup"><span data-stu-id="864af-163">Previous</span></span>](using-web-api-with-entity-framework-part-6.md)

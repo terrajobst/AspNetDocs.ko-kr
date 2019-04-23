@@ -12,18 +12,18 @@ ms.openlocfilehash: 937451d8cfa5bb96ca6abebf440af86c2c2746ab
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59411464"
 ---
-# <a name="aspnet-mvc-storefront-part-4-linq-to-sql-spike"></a><span data-ttu-id="f1119-103">ASP.NET MVC Storefront 4부: LINQ To SQL Spike</span><span class="sxs-lookup"><span data-stu-id="f1119-103">ASP.NET MVC Storefront Part 4: Linq To Sql Spike</span></span>
+# <a name="aspnet-mvc-storefront-part-4-linq-to-sql-spike"></a><span data-ttu-id="ab0f8-103">ASP.NET MVC Storefront 4부: LINQ To SQL Spike</span><span class="sxs-lookup"><span data-stu-id="ab0f8-103">ASP.NET MVC Storefront Part 4: Linq To Sql Spike</span></span>
 
-<span data-ttu-id="f1119-104">[Rob Conery](https://github.com/robconery)</span><span class="sxs-lookup"><span data-stu-id="f1119-104">by [Rob Conery](https://github.com/robconery)</span></span>
+<span data-ttu-id="ab0f8-104">[Rob Conery](https://github.com/robconery)</span><span class="sxs-lookup"><span data-stu-id="ab0f8-104">by [Rob Conery](https://github.com/robconery)</span></span>
 
-<span data-ttu-id="f1119-105">Rob 만듭니다 "급증"-내 데이터 액세스 패턴에 대 한 많은 기능이 생각 또는 영감을 테스트 하려면-되도록 해당 Linq To Sql 작동 합니다.</span><span class="sxs-lookup"><span data-stu-id="f1119-105">Rob creates a "spike" - a bit of functionality to test a thought or inspiration - to make sure that Linq To Sql will work for my data access pattern.</span></span>
+<span data-ttu-id="ab0f8-105">Rob 만듭니다 "급증"-내 데이터 액세스 패턴에 대 한 많은 기능이 생각 또는 영감을 테스트 하려면-되도록 해당 Linq To Sql 작동 합니다.</span><span class="sxs-lookup"><span data-stu-id="ab0f8-105">Rob creates a "spike" - a bit of functionality to test a thought or inspiration - to make sure that Linq To Sql will work for my data access pattern.</span></span>
 
-[<span data-ttu-id="f1119-106">&#9654;비디오 (14 분)</span><span class="sxs-lookup"><span data-stu-id="f1119-106">&#9654; Watch video (14 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-mvc-storefront-part-4-linq-to-sql-spike)
+[<span data-ttu-id="ab0f8-106">&#9654;비디오 (14 분)</span><span class="sxs-lookup"><span data-stu-id="ab0f8-106">&#9654; Watch video (14 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-mvc-storefront-part-4-linq-to-sql-spike)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="f1119-107">[이전](aspnet-mvc-storefront-part-3-pipes-and-filters.md)
-> [다음](aspnet-mvc-storefront-part-5-globalization.md)</span><span class="sxs-lookup"><span data-stu-id="f1119-107">[Previous](aspnet-mvc-storefront-part-3-pipes-and-filters.md)
+> <span data-ttu-id="ab0f8-107">[이전](aspnet-mvc-storefront-part-3-pipes-and-filters.md)
+> [다음](aspnet-mvc-storefront-part-5-globalization.md)</span><span class="sxs-lookup"><span data-stu-id="ab0f8-107">[Previous](aspnet-mvc-storefront-part-3-pipes-and-filters.md)
 [Next](aspnet-mvc-storefront-part-5-globalization.md)</span></span>
