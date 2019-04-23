@@ -9,7 +9,7 @@ ms.openlocfilehash: 42469611f94b374d6692a1c2017aced77a0a414c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59403859"
 ---
 # <a name="adding-a-view"></a>보기 추가
@@ -68,7 +68,7 @@ ms.locfileid: "59403859"
 
 ![_LayoutCshtml](adding-a-view/_static/image7.png)
 
-레이아웃 템플릿을 한 곳에서 사이트의 HTML 컨테이너 레이아웃을 지정 하 고 다음 사이트에서 여러 페이지에 걸쳐 적용할 수 있습니다. `@RenderBody()` 줄을 찾습니다. `RenderBody` 모든 보기 전용 페이지가 있습니다 자리 표시자 만들어져 표시, &quot;래핑된&quot; 레이아웃 페이지에 있습니다. 예를 들어, 선택 하는 경우는 **에 대 한** 링크를 *Views\Home\About.cshtml* 보기 내에서 렌더링 됩니다는 `RenderBody` 메서드.
+레이아웃 템플릿을 한 곳에서 사이트의 HTML 컨테이너 레이아웃을 지정 하 고 다음 사이트에서 여러 페이지에 걸쳐 적용할 수 있습니다. `@RenderBody()` 줄을 찾습니다. `RenderBody`는 사용자가 만드는 모든 보기 전용 페이지가 표시되는 자리 표시자이며 레이아웃 페이지에서 &quot;래핑됩니다&quot;. 예를 들어, 선택 하는 경우는 **에 대 한** 링크를 *Views\Home\About.cshtml* 보기 내에서 렌더링 됩니다는 `RenderBody` 메서드.
 
 제목 요소의 콘텐츠를 변경합니다. 변경 합니다 [ActionLink](https://msdn.microsoft.com/library/dd504972(v=vs.108).aspx) 에서 레이아웃 템플릿에 &quot;응용 프로그램 이름&quot; 에 &quot;MVC 동영상&quot; 및 컨트롤러 `Home` 에 `Movies`합니다. 전체 레이아웃 파일은 다음과 같습니다.
 

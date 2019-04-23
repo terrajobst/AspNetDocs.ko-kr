@@ -12,7 +12,7 @@ ms.openlocfilehash: aa3bd215f358fc0c277f2e8ec4ee47eb9c62f5bd
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59406030"
 ---
 # <a name="how-do-i-run-unit-tests-against-a-deployed-database"></a>[어떻게 할까요?] 배포 데이터베이스에 대해 단위 테스트를 실행할?

@@ -12,7 +12,7 @@ ms.openlocfilehash: 58de55e6d19c01a367aaa571800da008b0c8c54c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59403255"
 ---
 # <a name="aspnet-mvc-storefront-part-21-order-manager-and-personalization"></a>ASP.NET MVC Storefront 21부: 주문 관리자 및 개인 설정

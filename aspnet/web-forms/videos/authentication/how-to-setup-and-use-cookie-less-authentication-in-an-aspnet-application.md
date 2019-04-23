@@ -12,7 +12,7 @@ ms.openlocfilehash: ff6e21dad7598146a681615913dcbd37f72001ee
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59404392"
 ---
 # <a name="how-to-setup-and-use-cookie-less-authentication-in-an-aspnet-application"></a>ASP.NET 응용 프로그램에서 쿠키 없는 인증 설정 및 사용 하는 방법

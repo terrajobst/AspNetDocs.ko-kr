@@ -12,7 +12,7 @@ ms.openlocfilehash: 8148974eacd1db05947ba54fe40776df69f92290
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59404119"
 ---
 # <a name="backbone-template"></a>백본 템플릿
@@ -68,11 +68,11 @@ Ctrl-F5 키를 눌러 빌드하고 디버깅 하지 않고 응용 프로그램�
 
 [!code-csharp[Main](backbonejs-template/samples/sample1.cs)]
 
-**라우터**
+**Router**
 
 Backbone.js, 라우터는 클라이언트 쪽 페이지 라우팅 및 작업 및 이벤트에 연결 하는 메서드를 제공 합니다. 템플릿을 router.ts 단일 라우터를 정의합니다. 라우터 activable 뷰를 만들고이 보기를 전환할 때 상태를 유지 합니다. (Activable 뷰 다음 섹션에 설명 되어 있습니다.) 처음에 프로젝트에는 두 개의 더미 뷰가 홈 및에 대 한 합니다. 또한 경로 알 수 없는 경우 표시 되는 NotFound 뷰일이 있습니다.
 
-**보기**
+**Views**
 
 뷰는 ~/Scripts/application/보기에서 정의 됩니다. 보기, activable 뷰 및 모달 대화 보기는 방법은 두 가지가 있습니다. Activable 뷰 router에 의해 호출 됩니다. Activable 보기를 표시 되 면 다른 모든 activable 보기 비활성 상태가 됩니다. Activable 뷰를 만들려면 뷰를 확장 합니다 `Activable` 개체:
 
@@ -110,7 +110,7 @@ Backbone.js, 라우터는 클라이언트 쪽 페이지 라우팅 및 작업 및
 
 이제 서버 쪽에 살펴보겠습니다.
 
-**컨트롤러**
+**Controllers**
 
 단일 페이지 응용 프로그램에서는 서버 사용자 인터페이스에서 작은 역할만 재생합니다. 일반적으로 서버 초기 페이지를 렌더링 한 다음 보내고 JSON 데이터를 수신 합니다.
 

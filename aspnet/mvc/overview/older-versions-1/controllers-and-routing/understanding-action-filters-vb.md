@@ -12,7 +12,7 @@ ms.openlocfilehash: bbedc11b9b1225b1047350c1c84a116ecef0c380
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59407408"
 ---
 # <a name="understanding-action-filters-vb"></a>작업 필터 이해(VB)
@@ -49,7 +49,7 @@ by [Microsoft](https://github.com/microsoft)
 반복적으로 호출 하는 경우는 `Index()` 브라우저의 주소 표시줄에 입력 된 URL 데이터/인덱스 새로 고침에 도달 하는 작업 단추를 여러 번 10 초 동안 동일한 시간을 표시 됩니다. 출력을 `Index()` 작업 (그림 1 참조)는 10 초 동안 캐시 됩니다.
 
 
-[![C시간](understanding-action-filters-vb/_static/image2.png)](understanding-action-filters-vb/_static/image1.png)
+[![캐시 된 시간](understanding-action-filters-vb/_static/image2.png)](understanding-action-filters-vb/_static/image1.png)
 
 **그림 01**: 캐시 시간 ([클릭 하 여 큰 이미지 보기](understanding-action-filters-vb/_static/image3.png))
 
@@ -107,7 +107,7 @@ ASP.NET MVC 프레임 워크는 네 가지 유형의 필터를 지원합니다.
 목록 2에서 합니다 `OnActionExecuting()`, `OnActionExecuted()`, `OnResultExecuting()`, 및 `OnResultExecuted()` 모든 메서드를 호출 합니다 `Log()` 메서드. 메서드 및 현재 경로 데이터의 이름을 전달 됩니다는 `Log()` 메서드. `Log()` 메서드는 Visual Studio 출력 창에 메시지를 씁니다 (그림 2 참조).
 
 
-[![WVisual Studio 출력 창에 riting](understanding-action-filters-vb/_static/image5.png)](understanding-action-filters-vb/_static/image4.png)
+[![Visual Studio 출력 창에 쓰기](understanding-action-filters-vb/_static/image5.png)](understanding-action-filters-vb/_static/image4.png)
 
 **그림 02**: Visual Studio 출력 창에 작성 ([클릭 하 여 큰 이미지 보기](understanding-action-filters-vb/_static/image6.png))
 

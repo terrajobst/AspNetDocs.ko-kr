@@ -12,7 +12,7 @@ ms.openlocfilehash: 8f6fb4348e6ff703d329331b908e41763f24bb1f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59402949"
 ---
 # <a name="security-basics-and-aspnet-support-c"></a>보안 기본 사항 및 ASP.NET 지원(C#)
@@ -140,7 +140,7 @@ Microsoft는.NET Framework의 두 가지 멤버 자격 공급자 클래스를 �
 이 자습서 시리즈를 SqlMembershipProvider에만 중점을 둡니다.
 
 
-[![T공급자 모델 사용 하면 다른 구현을 원활 하 게 연결에 프레임 워크를 그&lt;강력한 /&gt;](security-basics-and-asp-net-support-cs/_static/image4.png)](security-basics-and-asp-net-support-cs/_static/image3.png)
+[![공급자 모델 사용 하면 다른 구현을 원활 하 게 연결에 프레임 워크를 &lt; /s o n&gt;](security-basics-and-asp-net-support-cs/_static/image4.png)](security-basics-and-asp-net-support-cs/_static/image3.png)
 
 **그림 03**: 공급자 모델 사용 하면 다른 구현을 원활 하 게 연결에 프레임 워크를 ([클릭 하 여 큰 이미지 보기](security-basics-and-asp-net-support-cs/_static/image5.png))
 

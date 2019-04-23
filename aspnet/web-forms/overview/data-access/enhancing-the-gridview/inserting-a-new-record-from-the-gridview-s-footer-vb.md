@@ -12,7 +12,7 @@ ms.openlocfilehash: 251cd769672f1610ac7c51772882b0c166184372
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59397437"
 ---
 # <a name="inserting-a-new-record-from-the-gridviews-footer-vb"></a>GridView의 바닥글에서 새 레코드 삽입(VB)
@@ -31,7 +31,7 @@ ms.locfileid: "59397437"
 GridView에 삽입 기능을 추가,는에서는 새로운 레코드에 추가 됩니다 결정 삽입 인터페이스를 만들고 새 레코드를 삽입 하는 코드를 작성 하는 일을 담당 합니다. 이 자습서를 GridView가의 바닥글 삽입 인터페이스에 추가 살펴보도록 하겠습니다 (그림 1 참조)을 행 합니다. 각 열에 대 한 바닥글 셀 (s 제품 이름에 대 한 텍스트 상자, 공급 업체, 등에 대 한 DropDownList) 적절 한 데이터 컬렉션 사용자 인터페이스 요소를 포함합니다. 또한 열이 필요 했습니다 추가 단추를 클릭할 때에 대 한 포스트백을 발생 되며에 새 레코드를 삽입 합니다 `Products` 바닥글 행에 제공 된 값을 사용 하 여 테이블입니다.
 
 
-[![T새 제품 추가 대 한 인터페이스를 제공 그 바닥글 행](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image1.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image1.png)
+[![새 제품을 추가 하기 위한 인터페이스를 제공 하는 바닥글 행](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image1.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image1.png)
 
 **그림 1**: 새 제품 추가 대 한 인터페이스를 제공 하는 바닥글 행 ([클릭 하 여 큰 이미지 보기](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image2.png))
 
@@ -41,7 +41,7 @@ GridView에 삽입 기능을 추가,는에서는 새로운 레코드에 추가 �
 우리가 하는 데 문제가 직접 GridView가의 바닥글에 삽입 인터페이스를 만드는 방법, 전에 데이터베이스에서 제품을 나열 하는 페이지에 GridView를 추가 하는 방법에 첫 번째 포커스를 s 수 있습니다. 열어서 시작 합니다 `InsertThroughFooter.aspx` 페이지에서 `EnhancedGridView` 폴더 및 GridView s 설정 디자이너 도구 상자에서 끌어서 GridView `ID` 속성을 `Products`합니다. 그런 다음 GridView가 스마트 태그를 사용 하 여 명명 된 새 ObjectDataSource를 바인딩할 `ProductsDataSource`합니다.
 
 
-[![C새 ObjectDataSource 라는 ProductsDataSource reate](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image2.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image3.png)
+[![ProductsDataSource 라는 새로운 ObjectDataSource는 만들기](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image2.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image3.png)
 
 **그림 2**: 명명 된 새 ObjectDataSource 만들려면 `ProductsDataSource` ([큰 이미지를 보려면 클릭](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image4.png))
 
@@ -49,12 +49,12 @@ GridView에 삽입 기능을 추가,는에서는 새로운 레코드에 추가 �
 ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLL` s 클래스 `GetProducts()` 제품 정보를 검색할 메서드입니다. 이 자습서에서는 편집 및 삭제 걱정 하지 않고 s 집중 엄격 하 게 삽입 기능을 추가 하도록 합니다. 따라서 삽입 탭에서 드롭 다운 목록 설정 되어 있는지를 확인 `AddProduct()` 있고 UPDATE 및 DELETE 탭의 드롭다운 목록 (없음)으로 설정 됩니다.
 
 
-[![Map ObjectDataSource가 insert () 메서드에 AddProduct 메서드](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image3.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image5.png)
+[![지도 ObjectDataSource가 insert () 메서드에 AddProduct 메서드](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image3.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image5.png)
 
 **그림 3**: 지도 `AddProduct` ObjectDataSource의 방법 `Insert()` 메서드 ([클릭 하 여 큰 이미지 보기](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image6.png))
 
 
-[![S예: (None)으로 업데이트 및 삭제 탭 드롭다운 목록](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image4.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image7.png)
+[![(없음)으로 업데이트 및 삭제 탭 드롭다운 목록 설정](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image4.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image7.png)
 
 **그림 4**: 업데이트 및 삭제 탭 드롭 다운 목록 (None)으로 설정 ([클릭 하 여 큰 이미지 보기](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image8.png))
 
@@ -69,7 +69,7 @@ ObjectDataSource가의 데이터 소스 구성 마법사를 완료 한 후 Visua
 [!code-aspx[Main](inserting-a-new-record-from-the-gridview-s-footer-vb/samples/sample1.aspx)]
 
 
-[![A페이징 GridView에 제품 데이터 필드가 표시 되는 ll](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image5.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image9.png)
+[![페이징 GridView에서 제품 데이터 필드를 모두 표시](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image5.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image9.png)
 
 **그림 5**: 페이징 GridView의 모든 제품 데이터 필드가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image10.png))
 
@@ -79,7 +79,7 @@ ObjectDataSource가의 데이터 소스 구성 마법사를 완료 한 후 Visua
 헤더와 데이터 행을 함께 GridView 바닥글 행이 포함 됩니다. 머리글 및 바닥글 행 GridView s의 값에 따라 표시 됩니다 [ `ShowHeader` ](https://msdn.microsoft.com/en-gb/library/system.web.ui.webcontrols.gridview.showheader.aspx) 하 고 [ `ShowFooter` ](https://msdn.microsoft.com/en-gb/library/system.web.ui.webcontrols.gridview.showfooter.aspx) 속성입니다. 바닥글 행을 표시 하려면 설정 하기만 합니다 `ShowFooter` 속성을 `True`입니다. 그림 6에서 알 수 있듯이, 설정 된 `ShowFooter` 속성을 `True` 바닥글 행을 표에 추가 합니다.
 
 
-[![TShowFooter을 True로 설정 하는 바닥글 행 o 표시](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image6.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image11.png)
+[![바닥글 행을 표시 하려면 ShowFooter을 True로 설정](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image6.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image11.png)
 
 **그림 6**: 바닥글 행을 표시 하려면 설정 `ShowFooter` 하 `True` ([클릭 하 여 큰 이미지 보기](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image12.png))
 
@@ -96,7 +96,7 @@ ObjectDataSource가의 데이터 소스 구성 마법사를 완료 한 후 Visua
 설정한 후 합니다 `ShowFooter` 속성을 `True`, 잠시 브라우저에서 출력을 확인 합니다. 현재 바닥글 행 만들어지고 t 텍스트 또는 웹 컨트롤을 포함 합니다. 3 단계에서에서 적절 한 삽입 인터페이스를 포함 하도록 각 GridView 필드에 대 한 바닥글을 수정 합니다.
 
 
-[![T빈 바닥글 행 담당 하 고 표시 위에 페이징 인터페이스 컨트롤](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image7.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image13.png)
+[![빈 바닥글 행이 표시 위에 페이징 인터페이스 컨트롤](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image7.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image13.png)
 
 **그림 7**: 빈 바닥글 행이 표시 위에 페이징 인터페이스 컨트롤 ([클릭 하 여 큰 이미지 보기](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image14.png))
 
@@ -130,7 +130,7 @@ GridView 이후 다시 만들어지고 t 지원 편집, 작업에서는 자유�
 편집 인터페이스를 만들려면 GridView가 스마트 태그에서 템플릿 편집 링크를 선택 합니다. 드롭다운 목록에서 적절 한 s 필드를 선택한 `FooterTemplate` 디자이너 도구 상자에서 적절 한 컨트롤을 끕니다.
 
 
-[![A각 필드 s 먼저 적절 한 삽입 인터페이스 dd](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image9.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image15.png)
+[![각 필드의 먼저에 적절 한 삽입 인터페이스 추가](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image9.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image15.png)
 
 **그림 9**: 각 필드에 적절 한 삽입 인터페이스를 추가 `FooterTemplate` ([큰 이미지를 보려면 클릭](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image16.png))
 
@@ -166,7 +166,7 @@ GridView 이후 다시 만들어지고 t 지원 편집, 작업에서는 자유�
 브라우저를 통해 보면 GridView가의 바닥글 행을 이제 완료 된 (그림 10 참조) 인터페이스를 삽입 합니다. 이 시점에서 삽입 인터페이스 만들어지고 t를 나타내고 해당 그녀는 s 새 제품에 대 한 데이터를 입력 한 데이터베이스에 새 레코드를 삽입 하려는 사용자에 대 한 의미를 포함 합니다. 에서는 또한 ve에서 새 레코드에 바닥글에 입력 된 데이터를 변환 하는 어떻게 해결 하는 `Products` 데이터베이스입니다. 4 단계에서 코드를 실행 하는 방법 및 삽입 인터페이스에 추가 단추를 포함 하는 방법을 살펴보겠습니다 포스트백 될 때 해당 s 클릭 합니다. 5 단계에 바닥글에서 데이터를 사용 하 여 새 레코드를 삽입 하는 방법을 보여 줍니다.
 
 
-[![T새 레코드를 추가 하는 것에 대 한 인터페이스를 제공 그 GridView의 바닥글](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image10.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image17.png)
+[![새 레코드를 추가 하는 것에 대 한 인터페이스를 제공 하는 GridView 바닥글](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image10.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image17.png)
 
 **그림 10**: 새 레코드를 추가 하는 것에 대 한 인터페이스를 제공 하는 GridView 바닥글 ([클릭 하 여 큰 이미지 보기](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image18.png))
 
@@ -178,7 +178,7 @@ GridView 이후 다시 만들어지고 t 지원 편집, 작업에서는 자유�
 디자이너에서 GridView가 스마트 태그에서 템플릿 편집 링크를 클릭 하 고 다음을 선택 합니다 `ProductID` 필드의 `FooterTemplate` 드롭 다운 목록에서. 단추 웹 컨트롤 (또는 LinkButton 또는 추가 ImageButton을 원하는 경우) 해당 ID를 설정 합니다. 템플릿에 `AddProduct`, 해당 `CommandName` 삽입을 고 `Text` 그림 11 에서처럼 추가할 속성입니다.
 
 
-[![P먼저 ProductID TemplateField에서에서 추가 단추를 lace](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image11.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image19.png)
+[![ProductID TemplateField의 먼저 추가 단추 배치](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image11.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image19.png)
 
 **그림 11**: 추가 단추를 배치 합니다 `ProductID` TemplateField s `FooterTemplate` ([클릭 하 여 큰 이미지 보기](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image20.png))
 
@@ -186,7 +186,7 @@ GridView 이후 다시 만들어지고 t 지원 편집, 작업에서는 자유�
 적 추가 단추에 포함 되 면 브라우저에서 페이지를 테스트 합니다. 삽입 인터페이스에 잘못 된 데이터를 사용 하 여 추가 단추를 클릭 하면 포스트백은 circuited 즉 및 ValidationSummary 컨트롤 (그림 12 참조) 잘못 된 데이터를 나타냅니다. 입력 한 적절 한 데이터를 사용 하 여 추가 단추를 클릭 하면 포스트백 합니다. 그러나 레코드가 없습니다 데이터베이스에 추가 됩니다. 약간의 실제로 삽입을 수행 하는 코드를 작성 해야 합니다.
 
 
-[![T단추 추가 s 포스트백 담당 하 고 짧은 Circuited 삽입 인터페이스에 잘못 된 데이터가 있으면](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image12.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image21.png)
+[![단추 추가 s 포스트백이 짧은 Circuited 삽입 인터페이스에 잘못 된 데이터가 있는 경우](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image12.gif)](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image21.png)
 
 **그림 12**: 단추 추가 s 포스트백 짧은 Circuited 삽입 인터페이스에 잘못 된 데이터가 있으면가 ([클릭 하 여 큰 이미지 보기](inserting-a-new-record-from-the-gridview-s-footer-vb/_static/image22.png))
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: a5ed87b1b4fb09d61ca10c40e13efbcad1904a5a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59406225"
 ---
 # <a name="building-20-applications"></a>2.0 애플리케이션 빌드
@@ -24,7 +24,7 @@ ms.locfileid: "59406225"
 - [[강좌 2:] Web Forms 사용자 인터페이스 만들기](lesson-2-creating-a-web-forms-user-interface.md)
 - [[단원 3:] 이벤트 및 포스트백에 자세히 이해](lesson-3-understanding-more-about-events-and-postback.md)
 - [[강좌 4:] 웹 애플리케이션 상태 이해](lesson-4-understanding-web-application-state.md)
-- [[강좌 5:] 웹 사이트 디버그 및 추적](lesson-5-debugging-and-tracing-your-website.md)
+- [[강좌 5:] 웹 사이트 디버깅 및 추적](lesson-5-debugging-and-tracing-your-website.md)
 - [[강좌 6:] 스타일시트 및 마스터 페이지 작업](lesson-6-working-with-stylesheets-and-master-pages.md)
 - [[강좌 7:] 사용자 인터페이스 컨트롤에 데이터 바인딩](lesson-7-databinding-to-user-interface-controls.md)
 - [[강좌 8:] GridView 및 FormView 사용](lesson-8-working-with-the-gridview-and-formview.md)

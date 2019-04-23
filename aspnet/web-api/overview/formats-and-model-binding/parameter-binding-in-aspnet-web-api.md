@@ -13,7 +13,7 @@ ms.openlocfilehash: f121f12ce689a079412bbd5392fde4fea863ff1f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59401974"
 ---
 # <a name="parameter-binding-in-aspnet-web-api"></a>ASP.NET Web API에서에서 매개 변수 바인딩

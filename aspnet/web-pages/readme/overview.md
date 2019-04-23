@@ -12,7 +12,7 @@ ms.openlocfilehash: 7374b1afafa9ca63309f3c0369c5efd808f7f28a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59401987"
 ---
 # <a name="webmatrix-readme"></a>WebMatrix 추가 정보
@@ -31,7 +31,7 @@ ms.locfileid: "59401987"
 - [변경 내용 및 문제](#ChangesAndIssues)
 
     - [WebMatrix 1.0 설치](#Known_Issues_Installation)
-    - [ASP.NET Web Pages](#Known_Issues_ASPNET)
+    - [ASP.NET 웹 페이지 2](#Known_Issues_ASPNET)
     - [WebMatrix](#Known_Issues_WebMatrix)
     - [IIS Express](#Known_Issues_IISExpress)
     - [SQL Server Compact](#Known_Issues_SQLServerCompact)
@@ -119,7 +119,7 @@ ms.locfileid: "59401987"
 
 문서의이 섹션에서는 새로운 기능, 변경 및 Razor 구문이 있는 ASP.NET 웹 페이지 1.0 릴리스를 사용 하 여 알려진된 문제에 설명합니다.
 
-- [새 기능](#NewFeatures)
+- [새로운 기능](#NewFeatures)
 - [변경 내용](#Changes)
 - [문제](#Issues)
 

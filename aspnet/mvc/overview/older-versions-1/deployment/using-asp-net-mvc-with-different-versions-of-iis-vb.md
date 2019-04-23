@@ -12,7 +12,7 @@ ms.openlocfilehash: 0446a125845134d2fad869094a540c960f6b0a25
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59406472"
 ---
 # <a name="using-aspnet-mvc-with-different-versions-of-iis-vb"></a>다양한 버전의 IIS에 ASP.NET MVC 사용(VB)
@@ -54,7 +54,7 @@ IIS 7.0 두 가지 다른 요청 처리 모드를 사용 하 여 요청을 처�
 기본적으로 IIS는 두 개의 응용 프로그램 풀을 지원 하도록 구성 됩니다. **DefaultAppPool** 하 고 **클래식.NET AppPool**합니다. DefaultAppPool을 선택 하면 응용 프로그램 통합된 요청 처리 모드에서 실행 됩니다. 클래식.NET AppPool을 선택 하면 응용 프로그램은 클래식 요청 처리 모드에서 실행 됩니다.
 
 
-[![T새 프로젝트 대화 상자의 그](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image1.jpg)](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image1.png)
+[![새 프로젝트 대화 상자](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image1.jpg)](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image1.png)
 
 **그림 1**: 검색 요청 처리 모드 ([클릭 하 여 큰 이미지 보기](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image2.png))
 
@@ -97,7 +97,7 @@ IIS 7.0 이전 버전의 IIS 사용 하 여 ASP.NET MVC를 사용 해야 할 경
 그러나 이전 버전의 IIS는 ASP.NET 프레임 워크를 이러한 요청을 전달 하지 않습니다. 따라서 이러한 요청 않습니다 컨트롤러로 라우팅됩니다. 예를 들어 URL /Home/인덱스에 대 한 브라우저 요청을 만드는 경우 다음 얻게 오류 페이지 그림 2.
 
 
-[![T새 프로젝트 대화 상자의 그](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image2.jpg)](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image3.png)
+[![새 프로젝트 대화 상자](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image2.jpg)](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image3.png)
 
 **그림 2**: 404 찾을 수 없음 오류를 수신 ([클릭 하 여 큰 이미지 보기](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image4.png))
 
@@ -173,7 +173,7 @@ IIS 7.0에 대 한 와일드 카드 스크립트 매핑을 사용 하는 방법�
 7. 클릭 합니다 **확인** 단추
 
 
-[![T새 프로젝트 대화 상자의 그](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image3.jpg)](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image5.png)
+[![새 프로젝트 대화 상자](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image3.jpg)](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image5.png)
 
 **그림 3**: IIS 7.0을 사용 하 여 와일드 카드 스크립트 매핑 만들기 ([클릭 하 여 큰 이미지 보기](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image6.png))
 
@@ -190,7 +190,7 @@ IIS 6.0을 사용 하 여 와일드 카드 스크립트 맵을 만들려면 다�
 8. 클릭 합니다 **확인** 단추
 
 
-[![T새 프로젝트 대화 상자의 그](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image4.jpg)](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image7.png)
+[![새 프로젝트 대화 상자](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image4.jpg)](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image7.png)
 
 **그림 4**: IIS 6.0을 사용 하 여 와일드 카드 스크립트 매핑 만들기 ([클릭 하 여 큰 이미지 보기](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image8.png))
 
@@ -198,7 +198,7 @@ IIS 6.0을 사용 하 여 와일드 카드 스크립트 맵을 만들려면 다�
 와일드 카드 스크립트 매핑을 사용 하도록 설정한 후에 루트 경로 포함 하도록 Global.asax 파일에 경로 테이블을 수정 해야 합니다. 그렇지 않은 경우 응용 프로그램의 루트 페이지에 대 한 요청을 하는 경우 그림 5에 오류 페이지를 얻을 수 있습니다. 목록 4의 수정된 된 Global.asax 파일을 사용할 수 있습니다.
 
 
-[![T새 프로젝트 대화 상자의 그](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image5.jpg)](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image9.png)
+[![새 프로젝트 대화 상자](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image5.jpg)](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image9.png)
 
 **그림 5**: 루트 경로 오류 없습니다 ([클릭 하 여 큰 이미지 보기](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image10.png))
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 79c27f39793a4a3a94ea412838fb3844579e874d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59404146"
 ---
 # <a name="how-do-i--cache-an-aspnet-page-based-upon-information-in-the-http-header"></a>[어떻게 할까요?]  HTTP 헤더의 정보를 기반으로 ASP.NET 페이지 캐시

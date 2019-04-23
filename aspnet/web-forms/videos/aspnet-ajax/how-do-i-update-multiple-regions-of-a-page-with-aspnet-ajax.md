@@ -12,7 +12,7 @@ ms.openlocfilehash: a936829217aa62a5caff5c9b0b51cca8a994c10e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59400310"
 ---
 # <a name="how-do-i-update-multiple-regions-of-a-page-with-aspnet-ajax"></a>[어떻게 할까요?] ASP.NET AJAX와 함께 여러 페이지 영역을 업데이트 하 시겠습니까?

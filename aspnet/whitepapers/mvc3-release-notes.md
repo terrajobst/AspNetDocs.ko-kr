@@ -12,7 +12,7 @@ ms.openlocfilehash: 36bc314c6709c34863d86158419257be99f4084f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59407109"
 ---
 # <a name="aspnet-mvc-3"></a>ASP.NET MVC 3
@@ -20,8 +20,8 @@ ms.locfileid: "59407109"
 - [개요](#overview)
 - [설치 참고 사항](#installation-notes)
 - [소프트웨어 요구 사항](#software-requirements)
-- [설명서](#documentation)
-- [Support(지원)](#support)
+- [문서](#documentation)
+- [지원](#support)
 - [ASP.NET MVC 2 프로젝트를 업그레이드 하는 ASP.NET mvc 3 도구 업데이트](#upgrading)
 - [ASP.NET MVC 3 도구 업데이트 (2011 년 4 월 12 일)](#tu-changes)
 
@@ -39,7 +39,7 @@ ms.locfileid: "59407109"
     - [수정 됨: 반대로 되 고 그 안에 공백 결과 포함 하는 Razor 식의 일부를 붙여 넣는 방법](#RTM-3)
     - [수정 됨: 구문 색 지정 및 IntelliSense 사용 하지 않도록 설정 편집기에서 열려 있는 Razor 파일의 이름 바꾸기](#RTM-4)
     - [알려진 문제](#RTM-KI)
-    - [주요 변경 사항](#RTM-BC)
+    - [주요 변경 내용](#RTM-BC)
 - [ASP.NET MVC 3 릴리스 후보 2 (2010 년 12 월 10 일)](#_Toc2)
 
     - [프로젝트 템플릿 1.4.4 jQuery, jQuery 유효성 검사 1.7 및 jQuery UI 1.8.6 1.8.6y UI 포함 하도록 변경](#_Toc2_1)
@@ -55,7 +55,7 @@ ms.locfileid: "59407109"
     - [엔진별 파일 이름을 지원 하도록 뷰 엔진에 추가 "FileExtensions" 속성](#_Toc2_10)
     - ["For" 특성에 대 한 올바른 값을 내보낼 고정된 "LabelFor" 도우미](#_Toc2_11)
     - [명시적 값 우선 순위 모델 바인딩 중에 고정된 "RenderAction" 메서드](#_Toc2_12)
-    - [주요 변경 사항](#_Toc2_BC)
+    - [주요 변경 내용](#_Toc2_BC)
     - [알려진 문제](#_Toc2_KI)
 - [ASP.NET MVC 3 Release Candidate (2010 년 11 월 9 일)](#TOC_ASP_NET_3_RC)
 
@@ -68,7 +68,7 @@ ms.locfileid: "59407109"
     - [자식 작업 출력 캐싱](#_Toc276711791)
     - ["뷰 추가" 대화 상자 개선 사항](#_Toc276711792)
     - [Granular Request Validation](#_Toc276711793)
-    - [주요 변경 사항](#_Toc276711794)
+    - [주요 변경 내용](#_Toc276711794)
     - [알려진 문제](#_Toc276711795)
 - [ASP 합니다. MVC 3 베타 정보 (2010 년 10 월 6 일)](#TOC_ASP_NET_3_Beta)
 
@@ -86,9 +86,9 @@ ms.locfileid: "59407109"
     - [ValidateInputAttribute 보다 세부적으로 제어](#0.1__Toc274034226)
     - [도우미 변환할 밑줄 하이픈 익명 개체를 사용 하 여 지정 된 HTML 특성 이름](#0.1__Toc274034227)
     - [버그 수정](#0.1__Toc274034228)
-    - [주요 변경 사항](#0.1__Toc274034229)
+    - [주요 변경 내용](#0.1__Toc274034229)
     - [알려진 문제](#0.1__Toc274034230)
-- [고지 사항](#0.1__Toc274034231)
+- [고 지 사항](#0.1__Toc274034231)
 
 <a id="overview"></a>
 ## <a name="overview"></a>개요
@@ -507,7 +507,7 @@ NuGet에 대 한 자세한 내용은 합니다 [Nuget 설명서](https://docs.mi
 
 기본 템플릿은 다음과 같습니다.
 
-비어 있습니다. ASP.NET MVC 스타일, 기본값 및 기본 JavaScript 파일을 포함 하는 스크립트 디렉터리를 포함 하는 Site.css 파일 ASP.NET MVC 프로젝트에 대 한 기본 디렉터리 구조를 포함 하 여 ASP.NET MVC 프로젝트에 대 한 파일의 최소 집합을 포함 합니다.
+비어 있음. ASP.NET MVC 스타일, 기본값 및 기본 JavaScript 파일을 포함 하는 스크립트 디렉터리를 포함 하는 Site.css 파일 ASP.NET MVC 프로젝트에 대 한 기본 디렉터리 구조를 포함 하 여 ASP.NET MVC 프로젝트에 대 한 파일의 최소 집합을 포함 합니다.
 
 인터넷 응용 프로그램입니다. ASP.NET MVC를 사용 하 여 멤버 자격 공급자를 사용 하는 방법을 보여 주는 샘플 기능이 들어 있습니다.
 
@@ -648,7 +648,7 @@ NuGet에 대 한 자세한 내용은 합니다 [NuGet 설명서](https://docs.mi
 
 기본 템플릿은 다음과 같습니다.
 
-비어 있습니다. ASP.NET MVC 스타일, 기본값 및 기본 JavaScript 파일을 포함 하는 스크립트 디렉터리를 포함 하는 작은 Site.css 파일 ASP.NET MVC 프로젝트에 대 한 기본 디렉터리 구조를 포함 하 여 ASP.NET MVC 프로젝트에 대 한 파일의 최소 집합을 포함 합니다.
+비어 있음. ASP.NET MVC 스타일, 기본값 및 기본 JavaScript 파일을 포함 하는 스크립트 디렉터리를 포함 하는 작은 Site.css 파일 ASP.NET MVC 프로젝트에 대 한 기본 디렉터리 구조를 포함 하 여 ASP.NET MVC 프로젝트에 대 한 파일의 최소 집합을 포함 합니다.
 
 인터넷 응용 프로그램입니다. ASP.NET MVC 내에서 멤버 자격 공급자를 사용 하는 방법을 보여 주는 샘플 기능이 들어 있습니다.
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: be1fcf2c7a0eec5473b2e3a10f51d7e22656b671
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59402208"
 ---
 # <a name="implementing-basic-crud-functionality-with-the-entity-framework-in-aspnet-mvc-application-2-of-10"></a>ASP.NET MVC 응용 프로그램 (2 / 10)에서 Entity Framework 사용 하 여 기본 CRUD 기능 구현

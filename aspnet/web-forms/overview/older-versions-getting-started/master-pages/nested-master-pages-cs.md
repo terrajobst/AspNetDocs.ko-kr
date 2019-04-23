@@ -12,7 +12,7 @@ ms.openlocfilehash: c25945fab554114478c6b2e080335a664251639b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59405354"
 ---
 # <a name="nested-master-pages-c"></a>중첩 마스터 페이지(C#)
@@ -84,7 +84,7 @@ ms.locfileid: "59405354"
 이 태그는 남색 배경 기반 흰색 큰 글꼴로 페이지의 맨 위에 있는 "중첩 마스터 페이지 (단순)" 라는 링크를 표시 합니다. 아래에 `MainContent` ContentPlaceHolder 합니다. 그림 1은 `Simple.master` Visual Studio 디자이너에 로드 된 경우 마스터 페이지입니다.
 
 
-[![T그 중첩 마스터 페이지 정의 콘텐츠 관련 관리 섹션에서 페이지](nested-master-pages-cs/_static/image2.png)](nested-master-pages-cs/_static/image1.png)
+[![중첩 된 마스터 페이지의 관리 섹션의 페이지에 콘텐츠 관련 정의](nested-master-pages-cs/_static/image2.png)](nested-master-pages-cs/_static/image1.png)
 
 **그림 01**: 중첩 마스터 페이지 정의 콘텐츠 관련 관리 섹션의 페이지 ([클릭 하 여 큰 이미지 보기](nested-master-pages-cs/_static/image3.png))
 
@@ -101,12 +101,12 @@ ms.locfileid: "59405354"
 > 웹 응용 프로그램 프로젝트 모델을 사용 하 여 웹 사이트 프로젝트 모델 대신 ASP.NET 웹 사이트를 만든 경우에 그림 2에 표시 된 새 항목 추가 대화 상자에서 확인란을 "마스터 페이지 선택"이 표시 되지 않습니다. 웹 응용 프로그램 프로젝트 모델을 사용 하는 경우 중첩된 된 마스터 페이지를 만들려면 (마스터 페이지 템플릿) 대신 중첩 마스터 페이지 템플릿을 선택 해야 합니다. 중첩 된 마스터 페이지 템플릿을 선택한 후 추가 클릭 하 그림 3 에서처럼 대화 상자가 나타납니다. 마스터 페이지 선택 동일 합니다.
 
 
-[![C도대체 합니다 &quot;마스터 페이지 선택&quot; 중첩 마스터 페이지를 추가 하려면 확인란을 선택](nested-master-pages-cs/_static/image5.png)](nested-master-pages-cs/_static/image4.png)
+[![확인 합니다 &quot;마스터 페이지 선택&quot; 중첩 마스터 페이지를 추가 하려면이 확인란을](nested-master-pages-cs/_static/image5.png)](nested-master-pages-cs/_static/image4.png)
 
 **그림 02**: 중첩 마스터 페이지를 추가 하려면 "마스터 페이지 선택"을 확인란 ([클릭 하 여 큰 이미지 보기](nested-master-pages-cs/_static/image6.png))
 
 
-[![Bind Simple.master 마스터 페이지를 중첩 된 마스터 페이지](nested-master-pages-cs/_static/image8.png)](nested-master-pages-cs/_static/image7.png)
+[![중첩 된 마스터 페이지 Simple.master 마스터 페이지에 바인딩](nested-master-pages-cs/_static/image8.png)](nested-master-pages-cs/_static/image7.png)
 
 **그림 03**: 중첩 마스터 페이지를 바인딩하는 `Simple.master` 마스터 페이지 ([큰 이미지를 보려면 클릭](nested-master-pages-cs/_static/image9.png))
 
@@ -126,7 +126,7 @@ ms.locfileid: "59405354"
 이 추가 마치면 중첩된 마스터 페이지를 저장 하 고 새 콘텐츠 페이지를 추가 합니다 `NestedMasterPages` 라는 폴더 `Default.aspx`에 바인딩할는 `SimpleNested.master` 마스터 페이지입니다. 이 페이지를 추가 하면 (그림 4 참조) 콘텐츠 컨트롤이 포함 되어 있는지 확인할 수 있습니다. 콘텐츠 페이지에만 액세스할 수 해당 *부모* 페이지의 ContentPlaceHolders를 마스터 합니다. `SimpleNested.master` ContentPlaceHolder 컨트롤이; 들어 있지 않습니다. 따라서이 마스터 페이지에 바인딩된 모든 콘텐츠 페이지는 모든 콘텐츠 컨트롤을 포함할 수 없습니다.
 
 
-[![T또한 새 콘텐츠 페이지 포함 아니요 콘텐츠 컨트롤](nested-master-pages-cs/_static/image11.png)](nested-master-pages-cs/_static/image10.png)
+[![새 콘텐츠 페이지에 콘텐츠 컨트롤이 없는](nested-master-pages-cs/_static/image11.png)](nested-master-pages-cs/_static/image10.png)
 
 **그림 04**: 새 콘텐츠 페이지 포함 아니요 콘텐츠 컨트롤 ([클릭 하 여 큰 이미지 보기](nested-master-pages-cs/_static/image12.png))
 
@@ -149,7 +149,7 @@ ms.locfileid: "59405354"
 그림 5에서 관련 된 세 가지 엔터티를 보여 줍니다 `Simple.master`, `SimpleNested.master`, 및 `Default.aspx` -와 서로 관계입니다. 다이어그램에서 알 수 있듯이, 중첩된 마스터 페이지는 해당 부모의 ContentPlaceHolder를 콘텐츠 컨트롤을 구현 합니다. 콘텐츠 페이지에 액세스할 수 있도록 이러한 지역의 경우 중첩 된 마스터 페이지를 사용 하 여 자체 ContentPlaceHolders 콘텐츠 컨트롤에 추가 해야 합니다.
 
 
-[![T그 최상위 및 중첩 된 마스터 페이지 콘텐츠 페이지의 레이아웃을 받아쓰게](nested-master-pages-cs/_static/image14.png)](nested-master-pages-cs/_static/image13.png)
+[![최상위 및 중첩 된 마스터 페이지 콘텐츠 페이지의 레이아웃 지정](nested-master-pages-cs/_static/image14.png)](nested-master-pages-cs/_static/image13.png)
 
 **그림 05**: 최상위 및 중첩 된 마스터 페이지 콘텐츠 페이지의 레이아웃 지정 ([클릭 하 여 큰 이미지 보기](nested-master-pages-cs/_static/image15.png))
 
@@ -157,7 +157,7 @@ ms.locfileid: "59405354"
 이 동작은 콘텐츠 페이지 또는 마스터 페이지는 해당 부모 마스터 페이지에 인식 에서만 하는 방법을 보여 줍니다. 이 동작은 Visual Studio 디자이너에도 표시 됩니다. 그림 6에 대 한 디자이너를 보여 줍니다. `Default.aspx`합니다. 디자이너를 명확 하 게를 표시 하지만 일부 되지 않습니다 및 콘텐츠 페이지에서 편집할 수 있는 지역은 어디 인가요 명령이 중첩된 마스터 페이지에서 편집할 수 없는 지역 이란 무엇 이며 최상위 마스터 페이지의 영역을 명확히 구분 하지 않습니다.
 
 
-[![T그 콘텐츠 페이지 이제 포함 콘텐츠 컨트롤에 중첩 된 마스터 페이지의 ContentPlaceHolders](nested-master-pages-cs/_static/image17.png)](nested-master-pages-cs/_static/image16.png)
+[![콘텐츠 페이지 이제 ContentPlaceHolders 중첩 된 마스터 페이지에 대 한 콘텐츠 컨트롤을 포함](nested-master-pages-cs/_static/image17.png)](nested-master-pages-cs/_static/image16.png)
 
 **그림 06**: 콘텐츠 페이지 이제 포함 콘텐츠 컨트롤에 중첩 된 마스터 페이지의 ContentPlaceHolders ([클릭 하 여 큰 이미지 보기](nested-master-pages-cs/_static/image18.png))
 
@@ -189,7 +189,7 @@ ms.locfileid: "59405354"
 바인딩되는 모든 페이지의 맨 위에 두 개의 링크 추가 `Simple.master`, `SimpleNested.master`, 또는 `SimpleNestedAlternate.master`; 모든 중첩 된 마스터 페이지 및 해당 콘텐츠 페이지에 이러한 변경 내용은 즉시 적용 됩니다. 그림 8 나와 `Alternate.aspx` 브라우저를 통해 볼 때. Note (그림 7에 비해) 페이지의 맨 위에 있는 링크를 추가 합니다.
 
 
-[![C최상위 마스터 페이지로 hanged 해당 중첩 마스터 페이지 및 해당 콘텐츠 페이지에 즉시 반영 됩니다](nested-master-pages-cs/_static/image23.png)](nested-master-pages-cs/_static/image22.png)
+[![해당 중첩 마스터 페이지 및 해당 콘텐츠 페이지에 즉시 반영 됩니다 최상위 마스터 페이지를 변경 합니다.](nested-master-pages-cs/_static/image23.png)](nested-master-pages-cs/_static/image22.png)
 
 **그림 08**: 해당 중첩 마스터 페이지 및 해당 콘텐츠 페이지에 즉시 반영 됩니다 최상위 마스터 페이지를 변경 ([클릭 하 여 큰 이미지 보기](nested-master-pages-cs/_static/image24.png))
 
@@ -219,7 +219,7 @@ ms.locfileid: "59405354"
 두 번째 옵션을 사용해 보겠습니다. 하나의 파일을 만들 중첩 마스터 페이지에는 `~/Admin` 라는 폴더 `AdminNested.master`합니다. 때문에 둘 다 `Site.master` 하 고 `Alternate.master` contentplaceholder의 동일한 집합이 되도록 바인딩할 바랍니다 하지만 마스터 페이지에 바인딩합니다, 중요 하지 않습니다 `Site.master` 일관성의 위해서입니다.
 
 
-[![Add 마스터 페이지가 중첩 ~/Admin 폴더에 있습니다.](nested-master-pages-cs/_static/image26.png)](nested-master-pages-cs/_static/image25.png)
+[![~/Admin 폴더에는 중첩 된 마스터 페이지를 추가 합니다.](nested-master-pages-cs/_static/image26.png)](nested-master-pages-cs/_static/image25.png)
 
 **그림 09**: 중첩된 마스터 페이지를 추가 합니다 `~/Admin` 폴더입니다. ([클릭 하 여 큰 이미지 보기](nested-master-pages-cs/_static/image27.png))
 
@@ -246,7 +246,7 @@ Visual Studio 추가 4 중첩된 마스터 페이지에 4 개의 ContentPlaceHol
 그림 10은는 `AdminNested.master` Visual Studio의 디자이너를 통해 볼 때 중첩 된 마스터 페이지입니다. 맨 위에 있는 노란색 상자의 지침을 볼 수는 `MainContent` 콘텐츠 컨트롤입니다.
 
 
-[![T그 중첩 마스터 페이지 확장 최상위 마스터 페이지를 포함 하는 지침을 관리자에 대 한 합니다.](nested-master-pages-cs/_static/image29.png)](nested-master-pages-cs/_static/image28.png)
+[![중첩 된 마스터 페이지는 관리자에 대 한 지침을 포함 하도록 최상위 마스터 페이지를 확장 합니다.](nested-master-pages-cs/_static/image29.png)](nested-master-pages-cs/_static/image28.png)
 
 **그림 10**: 중첩 된 마스터 페이지는 관리자에 대 한 지침을 포함 하도록 최상위 마스터 페이지를 확장 합니다. ([클릭 하 여 큰 이미지 보기](nested-master-pages-cs/_static/image30.png))
 
@@ -275,7 +275,7 @@ Visual Studio 추가 4 중첩된 마스터 페이지에 4 개의 ContentPlaceHol
 그림 11을 보여 줍니다 어떻게 최상위 마스터 페이지 (`Site.master` 또는 `Alternate.master`), 중첩된 마스터 페이지 (`AdminNested.master`), 하 고 관리 섹션 콘텐츠 페이지는 서로 관련이 있습니다.
 
 
-[![T그 중첩 마스터 페이지 정의 콘텐츠 관련 관리 섹션에서 페이지](nested-master-pages-cs/_static/image32.png)](nested-master-pages-cs/_static/image31.png)
+[![중첩 된 마스터 페이지의 관리 섹션의 페이지에 콘텐츠 관련 정의](nested-master-pages-cs/_static/image32.png)](nested-master-pages-cs/_static/image31.png)
 
 **그림 11**: 중첩 마스터 페이지 정의 콘텐츠 관련 관리 섹션의 페이지 ([클릭 하 여 큰 이미지 보기](nested-master-pages-cs/_static/image33.png))
 
@@ -313,7 +313,7 @@ Visual Studio 추가 4 중첩된 마스터 페이지에 4 개의 ContentPlaceHol
 이 코드를 사용 하 여를 방문 하 여 관리 섹션의 콘텐츠 페이지를 사용할 수 있어야 합니다. 그림 12는 `~/Admin/Products.aspx` 브라우저를 통해 볼 때 페이지입니다. 알 수 있듯이 중첩된 마스터 페이지에 정의 되어 있는 관리 지침 상자를, 페이지에 포함 됩니다.
 
 
-[![T그의 각 페이지 위쪽의 관리 섹션 포함 지침 콘텐츠 페이지](nested-master-pages-cs/_static/image35.png)](nested-master-pages-cs/_static/image34.png)
+[![각 페이지의 맨 위에 있는 지침을 포함 하는 관리 섹션에서 콘텐츠 페이지](nested-master-pages-cs/_static/image35.png)](nested-master-pages-cs/_static/image34.png)
 
 **그림 12**: 각 페이지 위쪽의 관리 섹션 포함 지침의 콘텐츠 페이지 ([클릭 하 여 큰 이미지 보기](nested-master-pages-cs/_static/image36.png))
 
@@ -334,7 +334,7 @@ Visual Studio 추가 4 중첩된 마스터 페이지에 4 개의 ContentPlaceHol
 진행에서이 변경으로 사용자의 마스터 페이지 선택 관리 섹션으로 습득 합니다. 그림 13 그림 12 하지만 변경 된 후 사용자에 해당 마스터 페이지 선택 영역을 같은 페이지를 보여 줍니다. `Alternate.master`합니다.
 
 
-[![T중첩 관리 페이지를 사용 하 여 사용자가 최상위 마스터 페이지 선택](nested-master-pages-cs/_static/image38.png)](nested-master-pages-cs/_static/image37.png)
+[![사용자가 선택한 최상위 마스터 페이지를 사용 하 여 중첩 된 관리 페이지](nested-master-pages-cs/_static/image38.png)](nested-master-pages-cs/_static/image37.png)
 
 **그림 13**: 중첩 관리 페이지를 사용 하 여 사용자가 최상위 마스터 페이지 선택 ([클릭 하 여 큰 이미지 보기](nested-master-pages-cs/_static/image39.png))
 

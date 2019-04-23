@@ -12,7 +12,7 @@ ms.openlocfilehash: 86781a1f46ce0c01a5d70b1f0cf8a81f3f96a032
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59405926"
 ---
 # <a name="aspnet-mvc-4-dependency-injection"></a>ASP.NET MVC 4 종속성 주입
@@ -192,7 +192,7 @@ ms.locfileid: "59405926"
 
     ![Unity.Mvc3 NuGet 패키지를 설치](aspnet-mvc-4-dependency-injection/_static/image4.png "Unity.Mvc3 NuGet 패키지를 설치 합니다.")
 
-    *Installing Unity.Mvc3 NuGet Package*
+    *Unity.Mvc3 NuGet 패키지를 설치합니다.*
 3. 한 번 합니다 **Unity.Mvc3** 패키지를 설치, 파일 및 Unity 구성을 단순화 하기 위해 자동으로 추가 하는 폴더를 탐색 합니다.
 
     ![Unity.Mvc3 패키지 설치](aspnet-mvc-4-dependency-injection/_static/image5.png "Unity.Mvc3 패키지 설치")

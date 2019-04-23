@@ -12,7 +12,7 @@ ms.openlocfilehash: 8237dc6b925ccefc5b411aebc8e7c399dcdc6746
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59407356"
 ---
 # <a name="introduction-to-aspnet-web-programming-using-the-razor-syntax-c"></a>Razor 구문 (C#)를 사용 하 여 ASP.NET 웹 프로그래밍 소개
@@ -443,7 +443,7 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
 
 :::row:::
     :::column:::
-    <strong>연산자</strong>
+    <strong>Operator</strong>
     :::column-end:::
     :::column:::
     <strong>설명</strong>

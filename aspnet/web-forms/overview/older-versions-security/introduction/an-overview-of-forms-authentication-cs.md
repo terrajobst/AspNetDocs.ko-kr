@@ -12,7 +12,7 @@ ms.openlocfilehash: 5bb3cf45e50e480d81a441280842c1eec58f4877
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59406875"
 ---
 # <a name="an-overview-of-forms-authentication-c"></a>폼 인증 (C#) 개요
@@ -85,7 +85,7 @@ ASP.NET 런타임은 ASP.NET 리소스의 경우는 ASP.NET 페이지 또는 ASP
 > Visual Studio에서는 프로젝트 관리의 두 가지 모드를 지원합니다. 웹 사이트 프로젝트와 웹 응용 프로그램 프로젝트입니다. 웹 사이트 프로젝트는 프로젝트 아키텍처에 Visual Studio.NET 2002/2003을 모방 하는 웹 응용 프로그램 프로젝트-프로젝트 파일을 포함 하 고 /bin 폴더에 배치 되는 단일 어셈블리를 프로젝트의 소스 코드를 컴파일할 때 반면 프로젝트 파일을 부족 합니다. Visual Studio 2005 처음에 지원 되는 웹 사이트 프로젝트에 있지만 서비스 팩 1을 사용 하 여 웹 응용 프로그램 프로젝트 모델을 다시 도입 되었습니다. Visual Studio 2008 프로젝트 모델을 모두 제공합니다. 그러나 Visual Web Developer 2005 및 2008 edition만 지원 웹 사이트 프로젝트입니다. 웹 사이트 프로젝트 모델로 사용 하겠습니다. Express 이외의 버전을 사용 하는 사용 하려면 합니다 [웹 응용 프로그램 프로젝트 모델](https://msdn.microsoft.com/library/aa730880%28vs.80%29.aspx) 대신 자유롭게 있을 수 있다는 일부 불일치 화면 및 수행 해야 하는 단계에 표시 되는 내용 간에 수 있지만 이렇게 합니다 이 자습서에 제공 된 지침을 표시 하는 스크린 샷
 
 
-[![CNew File System-Based 웹 사이트를 reate](an-overview-of-forms-authentication-cs/_static/image3.png)](an-overview-of-forms-authentication-cs/_static/image2.png)
+[![새 파일 시스템 기반 웹 사이트 만들기](an-overview-of-forms-authentication-cs/_static/image3.png)](an-overview-of-forms-authentication-cs/_static/image2.png)
 
 **그림 2**: New File System-Based 웹 사이트 만들기 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-cs/_static/image4.png))
 
@@ -95,7 +95,7 @@ ASP.NET 런타임은 ASP.NET 리소스의 경우는 ASP.NET 페이지 또는 ASP
 다음으로 사이트 Site.master 명명 된 루트 디렉터리에 새 마스터 페이지를 추가 합니다. [마스터 페이지](https://msdn.microsoft.com/library/wtxbf3hh.aspx) ASP.NET 페이지에 적용할 수 있는 사이트 전체 템플릿을 정의 하는 페이지 개발자를 사용 하도록 설정 합니다. 마스터 페이지의 주요 장점은 사이트의 전체적인 모양을 정의할 수 있습니다 단일 위치에 있으므로 간편 하 게 업데이트 하거나 사이트의 레이아웃을 조정입니다.
 
 
-[![Add는 마스터 페이지 라는 Site.master 웹 사이트](an-overview-of-forms-authentication-cs/_static/image6.png)](an-overview-of-forms-authentication-cs/_static/image5.png)
+[![마스터 페이지 추가 웹 사이트에 Site.master 라는](an-overview-of-forms-authentication-cs/_static/image6.png)](an-overview-of-forms-authentication-cs/_static/image5.png)
 
 **그림 3**: 웹 사이트에 마스터 페이지 라는 Site.master 추가 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-cs/_static/image7.png))
 
@@ -109,7 +109,7 @@ ASP.NET 런타임은 ASP.NET 리소스의 경우는 ASP.NET 페이지 또는 ASP
 위에 입력 한 태그를 사용 하 여 마스터 페이지의 레이아웃을 표시 디자인 뷰로 전환 합니다. 이 마스터 페이지를 사용 하는 모든 ASP.NET 페이지에 대 한 태그를 지정 하는 기능을 사용 하 여이 균일 한 레이아웃을 해야 합니다.는 `MainContent` 지역입니다.
 
 
-[![T또한 마스터 페이지 때 볼 통해 디자인 뷰](an-overview-of-forms-authentication-cs/_static/image9.png)](an-overview-of-forms-authentication-cs/_static/image8.png)
+[![마스터 페이지, 디자인 뷰를 통해 볼 때](an-overview-of-forms-authentication-cs/_static/image9.png)](an-overview-of-forms-authentication-cs/_static/image8.png)
 
 **그림 4**: 마스터 페이지 때 볼 통해 디자인 뷰 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-cs/_static/image10.png))
 
@@ -121,7 +121,7 @@ ASP.NET 런타임은 ASP.NET 리소스의 경우는 ASP.NET 페이지 또는 ASP
 다음으로, 솔루션 탐색기에서 프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 Default.aspx 라는 새 Web Form을 추가 하려면 선택 합니다. 이 경우 "마스터 페이지 선택" 확인란을 확인 하 고 목록에서 Site.master 마스터 페이지를 선택 합니다.
 
 
-[![Add는 새 Default.aspx 페이지 선택 마스터 페이지 선택](an-overview-of-forms-authentication-cs/_static/image12.png)](an-overview-of-forms-authentication-cs/_static/image11.png)
+[![마스터 페이지를 선택 하는 새 Default.aspx 페이지 추가](an-overview-of-forms-authentication-cs/_static/image12.png)](an-overview-of-forms-authentication-cs/_static/image11.png)
 
 **그림 5**: 새 Default.aspx 페이지 선택 마스터 페이지를 선택 하려면 추가 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-cs/_static/image13.png))
 
@@ -158,7 +158,7 @@ ASP.NET 웹 사이트를 만든 다음이 작업은 폼 인증을 사용 하도�
 프로젝트에 아직 없는 경우 Web.config 파일을 하나의 이제에서 마우스 오른쪽 단추로 클릭 솔루션 탐색기에서 프로젝트 이름을 새 항목 추가 선택 하 고 웹 구성 파일을 추가 하는 다음을 추가 합니다.
 
 
-[![I프로젝트가 아직 Web.config를 포함 하는 f 지금 추가](an-overview-of-forms-authentication-cs/_static/image16.png)](an-overview-of-forms-authentication-cs/_static/image15.png)
+[![프로젝트는 Web.config를 아직 포함 되지 않은, 경우 지금 추가](an-overview-of-forms-authentication-cs/_static/image16.png)](an-overview-of-forms-authentication-cs/_static/image15.png)
 
 **그림 7**: 경우 Your 프로젝트 않습니다 하지 아직 포함 Web.config, 추가 지금 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-cs/_static/image17.png))
 
@@ -190,7 +190,7 @@ ASP.NET 웹 사이트를 만든 다음이 작업은 폼 인증을 사용 하도�
 이제 첫 번째 작업을 사용 하 여 시작 하세요. Login.aspx 라는 사이트의 루트 디렉터리에 새 ASP.NET 페이지를 추가 하 고 Site.master 마스터 페이지를 사용 하 여 연결 합니다.
 
 
-[![A새 ASP.NET 페이지 라는 Login.aspx dd](an-overview-of-forms-authentication-cs/_static/image19.png)](an-overview-of-forms-authentication-cs/_static/image18.png)
+[![새 ASP.NET 페이지를 추가 Login.aspx 라는](an-overview-of-forms-authentication-cs/_static/image19.png)](an-overview-of-forms-authentication-cs/_static/image18.png)
 
 **그림 8**: 새 ASP.NET 페이지 라는 Login.aspx 추가 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-cs/_static/image20.png))
 
@@ -204,7 +204,7 @@ ASP.NET 웹 사이트를 만든 다음이 작업은 폼 인증을 사용 하도�
 [!code-aspx[Main](an-overview-of-forms-authentication-cs/samples/sample4.aspx)]
 
 
-[![T그 로그인 페이지에 두 개의 텍스트 상자, 확인란, 단추 및 레이블이](an-overview-of-forms-authentication-cs/_static/image22.png)](an-overview-of-forms-authentication-cs/_static/image21.png)
+[![로그인 페이지에 두 개의 텍스트 상자, 확인란, 단추 및 레이블이 포함](an-overview-of-forms-authentication-cs/_static/image22.png)](an-overview-of-forms-authentication-cs/_static/image21.png)
 
 **그림 9**: 로그인 페이지에 두 텍스트 상자, 확인란, 단추 및 레이블이 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-cs/_static/image23.png))
 
@@ -250,7 +250,7 @@ FormsAuthentication.RedirectFromLoginPage(UserName.Text, RememberMe.Checked);
 로그인 페이지를 테스트 하려면 브라우저에서 참조 하세요. "Nope"의 사용자 이름 및 "잘못 된" 암호와 같은 잘못 된 자격 증명을 입력 하 여 시작 합니다. 로그인 단추를 클릭 하면 포스트백을 발생 하 고 InvalidCredentialsMessage 레이블이 표시 됩니다.
 
 
-[![TInvalidCredentialsMessage 레이블 담당 하 고 표시 되는 경우 입력 잘못 된 자격 증명](an-overview-of-forms-authentication-cs/_static/image25.png)](an-overview-of-forms-authentication-cs/_static/image24.png)
+[![InvalidCredentialsMessage 레이블이 표시 되는 경우 입력 잘못 된 자격 증명 되었습니다.](an-overview-of-forms-authentication-cs/_static/image25.png)](an-overview-of-forms-authentication-cs/_static/image24.png)
 
 **그림 10**: InvalidCredentialsMessage 레이블이 표시 되는 경우 입력 잘못 된 자격 증명 되었습니다. ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-cs/_static/image26.png))
 
@@ -379,7 +379,7 @@ LoginView의 템플릿에 대 한 이러한 추가 마치면 태그는 다음과
 LoginView 마스터 페이지를 추가 했으므로 사이트에서 모든 페이지에 나타날 수 있습니다. 그러나 있을 수 있습니다 웹 페이지는이 메시지를 표시 하려고 하지 않습니다. 이러한 한 페이지의 로그인 페이지 이므로 알려 있는 것 같습니다. 로그인 페이지에 대 한 링크입니다. 때문에 마스터 페이지에 ContentPlaceHolder LoginView 컨트롤을 배치 했습니다 보면 콘텐츠 페이지에서이 기본 태그를 재정의할 수 있습니다. Login.aspx 열고 디자이너로 이동 합니다. 콘텐츠 컨트롤을 명시적으로 정의 하지 않은 것 이므로 LoginContent ContentPlaceHolder를 마스터 페이지에서에 대 한 Login.aspx에서 로그인 페이지에는 표시 마스터 페이지의 기본 태그이 ContentPlaceHolder이에 대 한 합니다. 볼 수 있습니다이 디자이너-를 통해 LoginContent ContentPlaceHolder 기본 태그 (LoginView 컨트롤)를 보여 줍니다.
 
 
-[![T그 로그인 페이지는 마스터 페이지의 LoginContent ContentPlaceHolder에 대 한 기본 콘텐츠](an-overview-of-forms-authentication-cs/_static/image33.png)](an-overview-of-forms-authentication-cs/_static/image32.png)
+[![로그인 페이지의 기본 콘텐츠가 표시 LoginContent ContentPlaceHolder 마스터 페이지에 대 한](an-overview-of-forms-authentication-cs/_static/image33.png)](an-overview-of-forms-authentication-cs/_static/image32.png)
 
 **그림 16**: 마스터 페이지의 LoginContent ContentPlaceHolder에 대 한 로그인 페이지는 기본 콘텐츠 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-cs/_static/image34.png))
 
@@ -393,7 +393,7 @@ LoginContent ContentPlaceHolder에 대 한 기본 태그가 재정의 하려면 
 그림 17에는 이렇게 변경한 후 브라우저에서 방문할 때 Login.aspx 페이지를 보여 줍니다. 점이 없는 "Hello, 군" 또는 ", 환영 *사용자 이름*" 왼쪽된 탐색 창에서 메시지 &lt;div&gt; Default.aspx를 방문할 때 없기 때문입니다.
 
 
-[![T기본 LoginContent ContentPlaceHolder의 태그를 숨깁니다 그 로그인 페이지](an-overview-of-forms-authentication-cs/_static/image36.png)](an-overview-of-forms-authentication-cs/_static/image35.png)
+[![로그인 페이지 기본 LoginContent ContentPlaceHolder 태그를 숨깁니다.](an-overview-of-forms-authentication-cs/_static/image36.png)](an-overview-of-forms-authentication-cs/_static/image35.png)
 
 **그림 17**: 로그인 페이지 기본 LoginContent ContentPlaceHolder의 태그를 숨깁니다 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-cs/_static/image37.png))
 
@@ -453,7 +453,7 @@ LoginStatus LoginView 컨트롤 외부 이므로 익명 및 인증 된 사용자
 이 자습서에서 다루는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
 - [IIS6 사이의 IIS7 보안 변경 내용](https://www.iis.net/articles/view.aspx/IIS7/Managing-IIS7/Configuring-Security/Changes-between-IIS6-and-IIS7-Security)
-- [ASP.NET 로그인 컨트롤](https://msdn.microsoft.com/library/d51ttbhx.aspx)
+- [Login ASP.NET Controls](https://msdn.microsoft.com/library/d51ttbhx.aspx)
 - [Professional ASP.NET 2.0 보안, 멤버 자격 및 역할 관리](http://www.wrox.com/WileyCDA/WroxTitle/productCd-0764596985.html) (ISBN: 978-0-7645-9698-8)
 - [`<authentication>` 요소](https://msdn.microsoft.com/library/532aee0e.aspx)
 - [`<forms>` 요소 `<authentication>`](https://msdn.microsoft.com/library/1d3t3c61.aspx)

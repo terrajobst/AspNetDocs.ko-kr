@@ -12,7 +12,7 @@ ms.openlocfilehash: d8b74b0fb2061477c1d2ff66e394d0bb1e22baf3
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59402052"
 ---
 # <a name="how-do-i-trigger-an-updatepanel-refresh-from-a-dropdownlist-control"></a>[어떻게 할까요?] DropDownList 컨트롤에서 UpdatePanel 새로 고침을 트리거할?

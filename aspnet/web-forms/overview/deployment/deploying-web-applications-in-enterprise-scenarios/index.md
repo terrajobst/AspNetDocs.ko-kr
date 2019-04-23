@@ -12,7 +12,7 @@ ms.openlocfilehash: f1f1e78a3b8d631d9a78c5aad8dc8c3b00c883fe
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59404379"
 ---
 # <a name="aspnet-4---enterprise-deployment-introduction"></a>ASP.NET 4 - 엔터프라이즈 배포 소개
@@ -22,4 +22,4 @@ ms.locfileid: "59404379"
 
 - [Visual Studio 2010을 사용하여 엔터프라이즈 시나리오에서 웹 애플리케이션 배포](deploying-web-applications-in-enterprise-scenarios.md)
 - [엔터프라이즈 웹 배포: 시나리오 개요](enterprise-web-deployment-scenario-overview.md)
-- [애플리케이션 수명 주기 관리: 개발부터 프로덕션까지](application-lifecycle-management-from-development-to-production.md)
+- [응용 프로그램 수명 주기 관리: 개발부터 프로덕션까지](application-lifecycle-management-from-development-to-production.md)

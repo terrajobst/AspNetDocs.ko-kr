@@ -12,7 +12,7 @@ ms.openlocfilehash: 0cb3dafa7d0cd08de24633cf4caa7b6cc7bc4881
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59397021"
 ---
 # <a name="custom-extraction-rules-and-coded-web-tests"></a>사용자 지정 추출 규칙 및 코딩된 웹 테스트

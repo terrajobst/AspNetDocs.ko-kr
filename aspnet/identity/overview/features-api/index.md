@@ -13,7 +13,7 @@ ms.openlocfilehash: 5634a5d766cdceffc509962d80b0aaa8880d2f8b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59397099"
 ---
 # <a name="aspnet-4x-identity-features--api"></a>ASP.NET 4.x Id 기능 및 API
@@ -22,5 +22,5 @@ ms.locfileid: "59397099"
 
 
 - [ASP.NET 및 Azure App Service에 암호와 기타 중요한 데이터를 배포하는 방법에 대한 모범 사례](best-practices-for-deploying-passwords-and-other-sensitive-data-to-aspnet-and-azure.md)
-- [ASP.NET Identity를 사용하여 계정 확인 및 암호 복구(C#)](account-confirmation-and-password-recovery-with-aspnet-identity.md)
-- [ASP.NET Identity에서 SMS 및 전자 메일을 사용한 2단계 인증](two-factor-authentication-using-sms-and-email-with-aspnet-identity.md)
+- [ASP.NET ID를 사용하여 계정 확인 및 암호 복구(C#)](account-confirmation-and-password-recovery-with-aspnet-identity.md)
+- [ASP.NET ID와 SMS 및 전자 메일을 사용한 2단계 인증](two-factor-authentication-using-sms-and-email-with-aspnet-identity.md)

@@ -12,7 +12,7 @@ ms.openlocfilehash: 6a117d0bf029245c4929e903e0c0494f6ba2b072
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59400401"
 ---
 # <a name="how-do-i-create-a-reusable-component-for-sending-email-to-a-distribution-list"></a>[어떻게 할까요?] 메일 그룹으로 전자 메일을 보내는 재사용 가능한 구성 요소 만들기

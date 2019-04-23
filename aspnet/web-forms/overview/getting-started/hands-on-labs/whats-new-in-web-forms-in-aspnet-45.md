@@ -12,7 +12,7 @@ ms.openlocfilehash: 52f6ec17fb21019e93ebf2795e95d5b27e4edbe6
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59401744"
 ---
 # <a name="whats-new-in-web-forms-in-aspnet-45"></a>ASP.NET 4.5의 새로운 Web Forms 기능
@@ -400,7 +400,7 @@ ASP.NET 4.5 Web Forms에 대 한 데이터 주석 유효성 검사를 소개합�
     > 
     > 몇 가지 사용 예:
     > 
-    > [Key]: Specifies that an attribute is the unique identifier
+    > [키]: Specifies that an attribute is the unique identifier
     > 
     > [Range(0.4, 0.5, ErrorMessage=&quot;{Write an error message}&quot;]: Double range
     > 

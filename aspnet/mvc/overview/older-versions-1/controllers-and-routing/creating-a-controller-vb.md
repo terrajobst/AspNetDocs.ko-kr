@@ -12,7 +12,7 @@ ms.openlocfilehash: 180b34e45ae97c64c82906c93aa647c4924d8539
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59398113"
 ---
 # <a name="creating-a-controller-vb"></a>컨트롤러 만들기(VB)
@@ -29,12 +29,12 @@ ms.locfileid: "59398113"
 새 컨트롤러를 만드는 가장 쉬운 방법은 Visual Studio 솔루션 탐색기 창에서 컨트롤러 폴더를 마우스 오른쪽 단추로 클릭 하 고 선택 하는 것은 **추가, 컨트롤러** 메뉴 옵션 (그림 1 참조). 이 메뉴 옵션을 선택 하면 열립니다는 **컨트롤러 추가** 대화 상자 (그림 2 참조).
 
 
-[![T새 프로젝트 대화 상자의 그](creating-a-controller-vb/_static/image1.jpg)](creating-a-controller-vb/_static/image1.png)
+[![새 프로젝트 대화 상자](creating-a-controller-vb/_static/image1.jpg)](creating-a-controller-vb/_static/image1.png)
 
 **그림 01**: 새 컨트롤러 추가 ([클릭 하 여 큰 이미지 보기](creating-a-controller-vb/_static/image2.png))
 
 
-[![T새 프로젝트 대화 상자의 그](creating-a-controller-vb/_static/image2.jpg)](creating-a-controller-vb/_static/image3.png)
+[![새 프로젝트 대화 상자](creating-a-controller-vb/_static/image2.jpg)](creating-a-controller-vb/_static/image3.png)
 
 **그림 02**: 컨트롤러 추가 대화 상자 ([클릭 하 여 큰 이미지 보기](creating-a-controller-vb/_static/image4.png))
 
@@ -56,7 +56,7 @@ ms.locfileid: "59398113"
 만들기, 업데이트 및 정보 작업 메서드를 자동으로 생성 하는 옵션이 있는 컨트롤러를 만들 때 (그림 3 참조). 이 옵션을 선택 하는 경우에 목록 2의 컨트롤러 클래스가 생성 됩니다.
 
 
-[![Creating 작업 메서드가 자동으로](creating-a-controller-vb/_static/image3.jpg)](creating-a-controller-vb/_static/image5.png)
+[![작업 메서드를 자동으로 만들기](creating-a-controller-vb/_static/image3.jpg)](creating-a-controller-vb/_static/image5.png)
 
 **그림 03**: 작업 메서드를 자동으로 만들기 ([클릭 하 여 큰 이미지 보기](creating-a-controller-vb/_static/image6.png))
 
@@ -76,7 +76,7 @@ ASP.NET MVC 컨트롤러가 클래스 뿐입니다. 원한다 면를 편리 하 
 3. 클래스는 기본 System.Web.Mvc.Controller 클래스 (참조 코드 3)에서 상속 되도록 생성 된 클래스 파일을 수정 합니다.
 
 
-[![C새 클래스 reating](creating-a-controller-vb/_static/image4.jpg)](creating-a-controller-vb/_static/image7.png)
+[![새 클래스 만들기](creating-a-controller-vb/_static/image4.jpg)](creating-a-controller-vb/_static/image7.png)
 
 **그림 04**: 새 클래스 만들기 ([클릭 하 여 큰 이미지 보기](creating-a-controller-vb/_static/image8.png))
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: e3821eee8c7bf2c2f9b45ea75ade2bd5b3b8ef19
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59406264"
 ---
 # <a name="understanding-aspnet-ajax-updatepanel-triggers"></a>ASP.NET AJAX UpdatePanel 트리거 이해
@@ -32,7 +32,7 @@ Microsoft의 ASP.NET 기술을 개체 지향 및 이벤트 구동 프로그래�
 
 이 백서는 Visual Studio 2008 및.NET framework 3.5 베타 2 릴리스를 기반으로 합니다. 이제 ASP.NET AJAX Extensions, ASP.NET 2.0을 대상으로 하는 추가 기능 어셈블리 이전에.NET Framework 기본 클래스 라이브러리에 통합 되었습니다. 이 백서도 가정 하지 Visual Web Developer Express를 Visual Studio 2008을 사용 하 여 작업 (코드 목록에 관계 없이 완전히 호환 됩니다. 하지만 Visual Studio의 사용자 인터페이스에 따라 연습을 제공 합니다. 개발 환경)입니다.
 
-## *<a name="triggers"></a>트리거*
+## <a name="triggers"></a>*트리거*
 
 기본적으로 지정 된 UpdatePanel에 대 한 트리거가 포함 된 TextBox 컨트롤 (예) 포스트백을 호출 하는 모든 자식 컨트롤을 자동으로 포함 자신의 `AutoPostBack` 속성으로 설정 **true**합니다. 그러나 트리거 포함 될 수 있습니다; 태그를 사용 하 여 선언적인 내에서 이렇게는 `<triggers>` UpdatePanel 컨트롤 선언의 섹션입니다. 트리거를 통해 액세스할 수 있지만 합니다 `Triggers` 컬렉션 속성을 것이 좋습니다 (예를 들어, 컨트롤을 사용할 수 없는 경우 디자인 타임) 런타임 시 모든 부분 렌더링 트리거를 등록 하는 사용 하 여를 `RegisterAsyncPostBackControl(Control)` 메서드는 ScriptManager 내 페이지에 대 한 개체는 `Page_Load` 이벤트입니다. 페이지는 상태 비저장 이므로 다시 등록 해야 이러한 컨트롤 만들어질 때마다 기억 하세요.
 
@@ -40,7 +40,7 @@ Microsoft의 ASP.NET 기술을 개체 지향 및 이벤트 구동 프로그래�
 
 UpdatePanel 컨트롤은 중첩 된 경우 경우는 UpdateMode로 설정 되어 있는지 확인 **조건부**이면 자식 UpdatePanel 트리거될 아닌 부모를 다음 자식 UpdatePanel 새로 고쳐집니다. 그러나 부모 UpdatePanel 새로 고칠 경우 다음 자식 UpdatePanel도 고쳐집니다.
 
-## *<a name="the-lttriggersgt-element"></a>합니다 &lt;트리거&gt; 요소*
+## <a name="the-lttriggersgt-element"></a>*합니다 &lt;트리거&gt; 요소*
 
 Visual Studio에서 태그 편집기를 사용할 때 표시 될 수도 있습니다 (IntelliSense)에서 두 개의 자식 요소는의 `UpdatePanel` 제어 합니다. 가장 자주 나타나는 요소는는 `<ContentTemplate>` 기본적으로 updatepanel에서 보유 하는 콘텐츠를 캡슐화 하는 요소 (부분 렌더링에서는 사용 콘텐츠). 다른 요소는 합니다 `<Triggers>` 페이지 (또는 사용자 정의 컨트롤을 하나를 사용 하는 경우)에 있는 컨트롤을 지정 하는 요소는 UpdatePanel 컨트롤의 부분 렌더링을 트리거하는 합니다 &lt;트리거&gt; 요소가 상주 하 합니다.
 
@@ -50,16 +50,16 @@ Visual Studio에서 태그 편집기를 사용할 때 표시 될 수도 있습�
 
 마찬가지로,는 `<asp:PostBackTrigger>` 트리거 부분 페이지 렌더링 하지만 서버에 대 한 전체 왕복을 요구 하는 요소를 사용할 수 있습니다. 컨트롤 그렇지 않은 경우 일반적으로 트리거할 부분 페이지 렌더링 될 때 전체 페이지 렌더링을 강제로 실행 하려면이 트리거 요소를 사용할 수도 있습니다 (경우에 예를 들어, 한 `Button` 컨트롤에 있는 `<ContentTemplate>` UpdatePanel 컨트롤의 요소). 마찬가지로 PostBackTrigger 요소 캡슐화의 현재 단위로 UpdatePanel 컨트롤의 자식 컨트롤을 지정할 수 있습니다.
 
-## *<a name="lttriggersgt-element-reference"></a>&lt;트리거&gt; 요소 참조*
+## <a name="lttriggersgt-element-reference"></a>*&lt;트리거&gt; 요소 참조*
 
 *태그 하위 항목:*
 
-| **태그** | **설명** |
+| **Tag** | **설명** |
 | --- | --- |
 | &lt;asp:AsyncPostBackTrigger&gt; | 컨트롤과이 트리거 참조를 포함 하는 UpdatePanel에 대 한 부분 페이지 업데이트를 발생 시키는 이벤트를 지정 합니다. |
 | &lt;asp:PostBackTrigger&gt; | 컨트롤 및 전체 페이지 업데이트 (전체 페이지 새로 고침)를 일으키는 이벤트를 지정 합니다. 부분 렌더링 컨트롤을 트리거할 수이 고, 그렇지 때 전체 새로 고침을 강제로 하려면이 태그를 사용할 수 있습니다. |
 
-## *<a name="walkthrough-cross-updatepanel-triggers"></a>연습: 교차 UpdatePanel 트리거*
+## <a name="walkthrough-cross-updatepanel-triggers"></a>*연습: 교차 UpdatePanel 트리거*
 
 1. 부분 렌더링을 사용 하도록 설정 하는 ScriptManager 개체를 사용 하 여 새 ASP.NET 페이지를 만듭니다. 두 Updatepanel이이 페이지에 추가-첫 번째에서 Label 컨트롤 (레이블 1) 및 두 개의 단추 컨트롤 (Button1 및 Button2)를 포함 합니다. Button1 둘 다를 업데이트 하려면 클릭 나타나야 합니다. 그리고 Button2 해야이 또는 줄을 업데이트 하려면 클릭 합니다. 두 번째 UpdatePanel의 Label 컨트롤 (Label2)만 포함 하지만 전경색 속성을 구분 하기 위해 기본값이 아닌 값으로 설정 합니다.
 2. 두 UpdatePanel 태그의 UpdateMode 속성을 설정 **조건부**합니다.
@@ -82,7 +82,7 @@ Visual Studio에서 태그 편집기를 사용할 때 표시 될 수도 있습�
 ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-updatepanel-triggers/_static/image3.png))
 
 
-## *<a name="under-the-hood"></a>내부 살펴보기*
+## <a name="under-the-hood"></a>*내부 살펴보기*
 
 이 예제에서는 방금 구성한를 활용 하는 UpdatePanel 간 패널 트리거 작동 하는 방법 및 ASP.NET AJAX 수행 하는 취할 수 있습니다. 이렇게 하려면, FireBug-이라고 하는 Mozilla Firefox 확장 뿐만 아니라 생성 된 페이지의 HTML 소스 노력할 AJAX 포스트백을 쉽게 검사할 수 했습니다. 또한 Lutz Roeder의.NET Reflector 도구를 사용 합니다. 두이 도구를 무료로 사용할 수 있는 온라인 되며 인터넷 검색을 사용 하 여 확인할 수 있습니다.
 
@@ -122,7 +122,7 @@ UpdatePanel에 표시 된 서버 쪽 AJAX 코드 ScriptManager1 매개 변수를
 
 및 새 코드 숨김은 다음과 같습니다.
 
-**코드 4: 코드 숨김**
+**코드 4: Codebehind**
 
 [!code-csharp[Main](understanding-asp-net-ajax-updatepanel-triggers/samples/sample4.cs)]
 

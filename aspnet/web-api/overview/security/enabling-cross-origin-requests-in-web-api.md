@@ -12,7 +12,7 @@ ms.openlocfilehash: 9d3016d98fa6c3a55359c6dab0737407b29925f1
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59403833"
 ---
 # <a name="enable-cross-origin-requests-in-aspnet-web-api-2"></a>ASP.NET Web API 2에서 크로스-원본 요청을 사용 하도록 설정
@@ -45,10 +45,10 @@ ms.locfileid: "59403833"
 
 반면, 다음 URL들은 위의 두 URL과는 다른 원본입니다.
 
-- `http://example.net` -다른 도메인
-- `http://example.com:9000/foo.html` -다른 포트
-- `https://example.com/foo.html` -다른 구성표
-- `http://www.example.com/foo.html` -다른 하위 도메인
+- `http://example.net` -도메인이 다릅니다
+- `http://example.com:9000/foo.html` -포트가 다릅니다
+- `https://example.com/foo.html` -스키마가 다릅니다
+- `http://www.example.com/foo.html` -하위 도메인이 다릅니다
 
 > [!NOTE]
 > Internet Explorer 원본을 비교 하는 경우 포트를 고려 하지 않습니다.

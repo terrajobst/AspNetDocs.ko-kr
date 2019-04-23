@@ -12,7 +12,7 @@ ms.openlocfilehash: f2d60b977475e048a3a74aabff4adc768ee22baf
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59402650"
 ---
 # <a name="unit-testing-aspnet-web-api-2"></a>단위 테스트 ASP.NET Web API 2
@@ -36,7 +36,7 @@ ms.locfileid: "59402650"
 
 이 항목에는 다음과 같은 단원이 포함되어 있습니다.
 
-- [전제 조건](#prereqs)
+- [필수 조건](#prereqs)
 - [코드 다운로드](#download)
 - [단위 테스트 프로젝트를 사용 하 여 응용 프로그램 만들기](#appwithunittest)
     - [응용 프로그램을 만들 때 단위 테스트 프로젝트 추가](#whencreate)

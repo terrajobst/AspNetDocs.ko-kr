@@ -12,7 +12,7 @@ ms.openlocfilehash: 1dadbdb6fa1dc58b855402f1d6f18e8af861f756
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59399361"
 ---
 # <a name="enabling-signalr-tracing"></a>SignalR 추적 사용
@@ -64,7 +64,7 @@ ms.locfileid: "59399361"
 
 서버 이벤트 범주 메시지는 다음과를 같습니다.
 
-| 소스 | 메시지 |
+| Source | 메시지 |
 | --- | --- |
 | SignalR.SqlMessageBus | SQL 메시지 버스 확장 공급자를 설치, 데이터베이스 작업, 오류 및 시간 제한 이벤트 |
 | SignalR.ServiceBusMessageBus | Service bus 확장 공급자 항목 만들기 "및" 구독 "," error "및" 메시징 이벤트 |

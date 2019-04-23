@@ -12,7 +12,7 @@ ms.openlocfilehash: bd5433b724dcafe8e816254523cb4b38c3be1104
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59403170"
 ---
 # <a name="custom-formatting-based-upon-data-c"></a>데이터에 따라 사용자 지정 형식 지정(C#)
@@ -49,7 +49,7 @@ GridView, DetailsView 또는 FormView에 바인딩된 데이터를 기반으로 
 ObjectDataSource DetailsView에 바인딩된 했습니다 되 면 잠시 필드 목록을 수정 합니다. 제거 하기로 했습니다 합니다 `ProductID`, `SupplierID`, `CategoryID`, `UnitsInStock`, `UnitsOnOrder`, `ReorderLevel`, 및 `Discontinued` BoundFields 이름을 변경 하 고 나머지 BoundFields 서식이 다시 지정 합니다. 도 삭제 합니다 `Width` 및 `Height` 설정 합니다. DetailsView 레코드가 하나만 표시 되므로 최종 사용자가 모든 제품을 볼 수 있도록 하기 위해 페이징 사용 하도록 설정 해야 합니다. 이렇게 하려면 DetailsView의 스마트 태그의 페이징 사용 확인란을 선택 합니다.
 
 
-[![C도대체 사용 페이징 확인란 DetailsView의 스마트 태그에서](custom-formatting-based-upon-data-cs/_static/image2.png)](custom-formatting-based-upon-data-cs/_static/image1.png)
+[![확인란을 사용 하도록 설정 페이징 DetailsView의 스마트 태그](custom-formatting-based-upon-data-cs/_static/image2.png)](custom-formatting-based-upon-data-cs/_static/image1.png)
 
 **그림 1**: 확인란을 사용 하도록 설정 페이징 DetailsView의 스마트 태그 ([클릭 하 여 큰 이미지 보기](custom-formatting-based-upon-data-cs/_static/image3.png))
 
@@ -62,7 +62,7 @@ ObjectDataSource DetailsView에 바인딩된 했습니다 되 면 잠시 필드 
 시간을 내어이 페이지를 브라우저에서 테스트 합니다.
 
 
-[![T그 DetailsView 컨트롤 표시 한 번에 하나의 제품](custom-formatting-based-upon-data-cs/_static/image5.png)](custom-formatting-based-upon-data-cs/_static/image4.png)
+[![DetailsView 컨트롤을 한 번에 한 제품 표시](custom-formatting-based-upon-data-cs/_static/image5.png)](custom-formatting-based-upon-data-cs/_static/image4.png)
 
 **그림 2**: 한 번에 DetailsView 컨트롤 표시 한 제품 ([클릭 하 여 큰 이미지 보기](custom-formatting-based-upon-data-cs/_static/image6.png))
 
@@ -120,12 +120,12 @@ DetailsView로 바인딩된 데이터를 통해 액세스할 수 있습니다는
 가격은 일반 글꼴로 표시 됩니다 Chai 75.00 달러 비용에서 볼 때 (그림 4 참조). 그러나 $97.00 가격이 있는 Mishi 산호세 Niku 보기 가격에에서 표시 됩니다 굵게, 기울임꼴 글꼴 (그림 5 참조).
 
 
-[![P$75.00는 보통 글꼴로 표시 된 수보다 덜 rices](custom-formatting-based-upon-data-cs/_static/image9.png)](custom-formatting-based-upon-data-cs/_static/image8.png)
+[![$75.00 보다 적은 가격 보통 글꼴로 표시 됩니다.](custom-formatting-based-upon-data-cs/_static/image9.png)](custom-formatting-based-upon-data-cs/_static/image8.png)
 
 **그림 4**: $75.00 보다 적은 가격 보통 글꼴로 표시 됩니다 ([클릭 하 여 큰 이미지 보기](custom-formatting-based-upon-data-cs/_static/image10.png))
 
 
-[![Expensive 제품의 가격은 기울임꼴 글꼴을 굵게 표시 됩니다](custom-formatting-based-upon-data-cs/_static/image12.png)](custom-formatting-based-upon-data-cs/_static/image11.png)
+[![비용이 많이 드는 제품의 가격은 기울임꼴 글꼴을 굵게 표시 됩니다.](custom-formatting-based-upon-data-cs/_static/image12.png)](custom-formatting-based-upon-data-cs/_static/image11.png)
 
 **그림 5**: 비용이 많이 드는 제품의 가격은 기울임꼴 글꼴을 굵게 표시 됩니다 ([클릭 하 여 큰 이미지 보기](custom-formatting-based-upon-data-cs/_static/image13.png))
 
@@ -192,12 +192,12 @@ FormView를 추가 합니다 `CustomColors.aspx` 집합과 DetailsView 아래 �
 제품을 볼 때 그림 7 FormView에 나와 있는 `UnitsInStock` 그림 8에 있는 제품에 해당 값이 10 보다 작은 값이 10 보다 큰 합니다.
 
 
-[![F또는 제품으로는 충분히 큰 Units In Stock, 사용자 지정 서식 없이 적용 됩니다](custom-formatting-based-upon-data-cs/_static/image16.png)](custom-formatting-based-upon-data-cs/_static/image15.png)
+[![제품으로는 충분히 큰 Units In Stock, 사용자 지정 서식 없이 적용 됩니다.](custom-formatting-based-upon-data-cs/_static/image16.png)](custom-formatting-based-upon-data-cs/_static/image15.png)
 
 **그림 7**: 제품으로는 충분히 큰 Units In Stock, 사용자 지정 서식 없이 적용 됩니다 ([클릭 하 여 큰 이미지 보기](custom-formatting-based-upon-data-cs/_static/image17.png))
 
 
-[![T이러한 제품 사용 하 여의 값이 10 개 이하의 빨간색으로 표시는 그 단위 재고 수](custom-formatting-based-upon-data-cs/_static/image19.png)](custom-formatting-based-upon-data-cs/_static/image18.png)
+[![재고 수 단위 값에 대 한 해당 제품으로 10 개 이하의의 빨간색으로 표시 됩니다.](custom-formatting-based-upon-data-cs/_static/image19.png)](custom-formatting-based-upon-data-cs/_static/image18.png)
 
 **그림 8**: 재고 수 단위 값에 대 한 해당 제품으로 10 개 이하의의 빨간색으로 표시 됩니다 ([클릭 하 여 큰 이미지 보기](custom-formatting-based-upon-data-cs/_static/image20.png))
 
@@ -243,7 +243,7 @@ GridView의 개별 레코드 형식의 사용자 지정 하려면 다음을 생�
 그림 9에서는 브라우저를 통해 볼 때이 여태 까지의 진행 상황을 보여 줍니다.
 
 
-[![T그 GridView에는 이름, 범주 및 각 제품에 대 한 가격 나열](custom-formatting-based-upon-data-cs/_static/image22.png)](custom-formatting-based-upon-data-cs/_static/image21.png)
+[![이름, 범주 및 각 제품에 대 한 가격을 나열 하는 GridView](custom-formatting-based-upon-data-cs/_static/image22.png)](custom-formatting-based-upon-data-cs/_static/image21.png)
 
 **그림 9**: 이름, 범주 및 각 제품에 대 한 가격을 나열 하는 GridView ([클릭 하 여 큰 이미지 보기](custom-formatting-based-upon-data-cs/_static/image23.png))
 
@@ -299,7 +299,7 @@ FormView 및 DetailsView와 같은 일련의 단계를 사용 하 여이 이벤�
 [!code-csharp[Main](custom-formatting-based-upon-data-cs/samples/sample18.cs)]
 
 
-[![T가장 저렴 한 제품 그는 노란색으로 강조 표시](custom-formatting-based-upon-data-cs/_static/image26.png)](custom-formatting-based-upon-data-cs/_static/image25.png)
+[![가장 저렴 한 제품 노란색 강조 표시 됩니다.](custom-formatting-based-upon-data-cs/_static/image26.png)](custom-formatting-based-upon-data-cs/_static/image25.png)
 
 **그림 11**: 가장 저렴 한 제품 노란색 강조 표시 됩니다 ([클릭 하 여 큰 이미지 보기](custom-formatting-based-upon-data-cs/_static/image27.png))
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: c6c41ba5b5414da689e63ef521f1cf22e0b55701
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59404288"
 ---
 # <a name="displaying-binary-data-in-the-data-web-controls-c"></a>데이터 웹 컨트롤에 이진 데이터 표시(C#)
@@ -41,7 +41,7 @@ ms.locfileid: "59404288"
 이 자습서가의 다운로드 7 PDF 브로슈어 파일에서 찾을 수 있습니다는 `~/Brochures` 폴더, Seafood 제외 하 고 범주를 각각에 대 한 합니다. 필자는 의도적으로 Seafood 브로슈어 모든 레코드는 관련 이진 데이터가 시나리오를 처리 하는 방법을 설명 하기 위해 추가 생략 합니다. 업데이트 하는 `Categories` 이러한 값을 사용 하 여 테이블을 마우스 오른쪽 단추로 클릭는 `Categories` 서버 탐색기에서 노드 테이블 데이터 표시를 선택 합니다. 그런 다음 브로슈어 파일 그림 1 에서처럼 브로슈어에 있는 각 범주에 대 한 가상 경로 입력 합니다. Seafood 범주에 대 한 없습니다 브로슈어 이므로 그대로 해당 `BrochurePath` s 열 값으로 `NULL`입니다.
 
 
-[![M범주 표의 BrochurePath 열에 대 한 값을 입력 세분화](displaying-binary-data-in-the-data-web-controls-cs/_static/image1.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image1.png)
+[![범주 테이블의 BrochurePath 열에 대 한 값을 수동으로 입력](displaying-binary-data-in-the-data-web-controls-cs/_static/image1.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image1.png)
 
 **그림 1**: 수동으로 값을 입력 합니다 `Categories` 테이블 s `BrochurePath` 열 ([클릭 하 여 큰 이미지 보기](displaying-binary-data-in-the-data-web-controls-cs/_static/image2.png))
 
@@ -53,17 +53,17 @@ ms.locfileid: "59404288"
 디자이너 도구 상자에서 GridView 드래그 하 여 시작 합니다 `DisplayOrDownloadData.aspx` 페이지에 `BinaryData` 폴더. 집합 GridView s `ID` 에 `Categories` GridView가 스마트 태그를 통해 새 데이터 원본에 연결 하려면 선택 합니다. 특히, 명명 된 ObjectDataSource에 바인딩할 `CategoriesDataSource` 사용 하 여 데이터를 검색 하는 `CategoriesBLL` s 개체 `GetCategories()` 메서드.
 
 
-[![C새 ObjectDataSource 라는 CategoriesDataSource reate](displaying-binary-data-in-the-data-web-controls-cs/_static/image2.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image3.png)
+[![CategoriesDataSource 라는 새로운 ObjectDataSource는 만들기](displaying-binary-data-in-the-data-web-controls-cs/_static/image2.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image3.png)
 
 **그림 2**: 명명 된 새 ObjectDataSource 만들려면 `CategoriesDataSource` ([큰 이미지를 보려면 클릭](displaying-binary-data-in-the-data-web-controls-cs/_static/image4.png))
 
 
-[![Configure CategoriesBLL 클래스를 사용 하는 ObjectDataSource](displaying-binary-data-in-the-data-web-controls-cs/_static/image3.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image5.png)
+[![CategoriesBLL 클래스를 사용 하는 ObjectDataSource 구성](displaying-binary-data-in-the-data-web-controls-cs/_static/image3.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image5.png)
 
 **그림 3**: ObjectDataSource를 사용 하 여 구성 합니다 `CategoriesBLL` 클래스 ([큰 이미지를 보려면 클릭](displaying-binary-data-in-the-data-web-controls-cs/_static/image6.png))
 
 
-[![R범주 하 여 목록 GetCategories() 메서드 etrieve](displaying-binary-data-in-the-data-web-controls-cs/_static/image4.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image7.png)
+[![GetCategories() 메서드를 사용 하는 범주의 목록을 검색 합니다.](displaying-binary-data-in-the-data-web-controls-cs/_static/image4.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image7.png)
 
 **그림 4**: 범주 하 여 목록 검색 합니다 `GetCategories()` 메서드 ([큰 이미지를 보려면 클릭](displaying-binary-data-in-the-data-web-controls-cs/_static/image8.png))
 
@@ -76,7 +76,7 @@ ms.locfileid: "59404288"
 브라우저를 통해이 페이지 (그림 5 참조). 8 개 범주의 나열 됩니다. 7 범주별으로 `BrochurePath` 값을 `BrochurePath` 해당 BoundField에 표시 되는 값입니다. Seafood 있는 `NULL` 값에 대 한 해당 `BrochurePath`, 빈 셀을 표시 합니다.
 
 
-[![E범주 이름, 설명 및 BrochurePath 값 s 대 한 ach 나열 됩니다](displaying-binary-data-in-the-data-web-controls-cs/_static/image5.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image9.png)
+[![각 범주가의 이름, 설명 및 BrochurePath 값 목록](displaying-binary-data-in-the-data-web-controls-cs/_static/image5.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image9.png)
 
 **그림 5**: 각 범주의 이름, 설명 및 `BrochurePath` 값은 나열 됩니다 ([큰 이미지를 보려면 클릭](displaying-binary-data-in-the-data-web-controls-cs/_static/image10.png))
 
@@ -92,12 +92,12 @@ ms.locfileid: "59404288"
 이렇게 그림 7 있듯이 GridView를 링크 열을 추가 됩니다. 보기 브로슈어 링크를 클릭 하 PDF 브라우저에서 직접 표시 하거나 사용자를 PDF reader가 설치 되었는지 여부에 따라 파일을 다운로드 및 s 브라우저 설정을 확인 합니다.
 
 
-[![A 범주의 브로슈어 보기 브로슈어 링크를 클릭 하 여 볼 수 있습니다](displaying-binary-data-in-the-data-web-controls-cs/_static/image7.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image11.png)
+[![범주의 브로슈어 보기 브로슈어 링크를 클릭 하 여 볼 수 있습니다.](displaying-binary-data-in-the-data-web-controls-cs/_static/image7.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image11.png)
 
 **그림 7**: 범주 보기 브로슈어 링크를 클릭 하 여 s 브로슈어를 볼 수 있습니다 ([클릭 하 여 큰 이미지 보기](displaying-binary-data-in-the-data-web-controls-cs/_static/image12.png))
 
 
-[![T그 범주의 브로슈어 PDF가 표시](displaying-binary-data-in-the-data-web-controls-cs/_static/image8.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image13.png)
+[![S 브로슈어 PDF의 범주 표시](displaying-binary-data-in-the-data-web-controls-cs/_static/image8.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image13.png)
 
 **그림 8**: 범주 브로슈어 PDF가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](displaying-binary-data-in-the-data-web-controls-cs/_static/image14.png))
 
@@ -131,7 +131,7 @@ ms.locfileid: "59404288"
 그림 10 이러한 변경 내용을 적용 한 후 페이지를 보여 줍니다. Seafood 범주의 `BrochurePath` 필드에는 이제 브로슈어에 사용할 수 없는 텍스트가 표시 됩니다.
 
 
-[![T해당 범주 없이 브로슈어에 대해 표시할 텍스트 없음 제공 브로슈어 그](displaying-binary-data-in-the-data-web-controls-cs/_static/image10.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image15.png)
+[![이러한 범주 없이 브로슈어에 대 한 텍스트 없음 브로슈어 사용 가능한 표시 됩니다.](displaying-binary-data-in-the-data-web-controls-cs/_static/image10.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image15.png)
 
 **그림 10**: 이러한 범주 없이 브로슈어에 대 한 텍스트 없음 브로슈어 사용 가능한 표시 됩니다 ([클릭 하 여 큰 이미지 보기](displaying-binary-data-in-the-data-web-controls-cs/_static/image16.png))
 
@@ -168,7 +168,7 @@ S 페이지 코드 숨김 클래스에 다음 코드를 추가 합니다 `Page_L
 만든이 페이지를 사용 하 여 특정 범주의 그림 방문 하 여 볼 수 있습니다 `DisplayCategoryPicture.aspx?CategoryID=categoryID`합니다. 그림 11은 음료 범주의 그림에서 볼 수 있는 `DisplayCategoryPicture.aspx?CategoryID=1`합니다.
 
 
-[![T그 음료 범주의 그림 표시 됩니다](displaying-binary-data-in-the-data-web-controls-cs/_static/image11.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image17.png)
+[![그림이 표시 됩니다 음료 범주 s](displaying-binary-data-in-the-data-web-controls-cs/_static/image11.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image17.png)
 
 **그림 11**: 음료 범주의 그림이 표시 됩니다 ([클릭 하 여 큰 이미지 보기](displaying-binary-data-in-the-data-web-controls-cs/_static/image18.png))
 
@@ -208,7 +208,7 @@ Soothe 같습니다 GridView가 선언적 구문에는 이미지 필드를 추�
 브라우저를 통해이 페이지를 보려면 잠시 시간이 소요 됩니다. 이제 각 레코드 범주에 대 한 그림을 포함 하는 방법을 note 합니다.
 
 
-[![T각 행에 대 한 표시는 그 범주의 그림](displaying-binary-data-in-the-data-web-controls-cs/_static/image13.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image19.png)
+[![각 행에 대 한 s 그림의 범주 표시](displaying-binary-data-in-the-data-web-controls-cs/_static/image13.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image19.png)
 
 **그림 13**: 각 행에 대 한 범주의 그림 표시 됩니다 ([클릭 하 여 큰 이미지 보기](displaying-binary-data-in-the-data-web-controls-cs/_static/image20.png))
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 18b84615d60deac2f06122d3d2b9689dc8efb09a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59402858"
 ---
 # <a name="how-do-i--implement-health-monitoring-for-an-aspnet-application"></a>[어떻게 할까요?]  ASP.NET 응용 프로그램에 대 한 상태 모니터링 구현?

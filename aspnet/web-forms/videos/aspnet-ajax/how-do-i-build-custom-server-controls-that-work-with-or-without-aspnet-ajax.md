@@ -12,7 +12,7 @@ ms.openlocfilehash: 81fcc7b533f682d5f515847150345b08aff3d984
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59398243"
 ---
 # <a name="how-do-i-build-custom-server-controls-that-work-with-or-without-aspnet-ajax"></a>[어떻게 할까요?] ASP.NET AJAX 없이 작동 하는 사용자 지정 서버 컨트롤을 빌드하 시겠습니까?

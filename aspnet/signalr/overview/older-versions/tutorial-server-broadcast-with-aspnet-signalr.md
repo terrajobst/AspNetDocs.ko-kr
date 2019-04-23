@@ -12,7 +12,7 @@ ms.openlocfilehash: a63bca69f137a4d4765db6a4925ff027c9d8bf7d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59403586"
 ---
 # <a name="tutorial-server-broadcast-with-aspnet-signalr-1x"></a>자습서: ASP.NET SignalR 1.x를 사용하여 서버 브로드캐스트
@@ -42,13 +42,13 @@ ms.locfileid: "59403586"
 
 이 자습서는 다음 섹션이 포함 되어 있습니다.
 
-- [전제 조건](#prerequisites)
-- [프로젝트를 만듭니다.](#createproject)
+- [필수 구성 요소](#prerequisites)
+- [프로젝트를 만들려면](#createproject)
 - [SignalR NuGet 패키지 추가](#nugetpackages)
 - [서버 코드 설정](#server)
 - [클라이언트 코드를 설정 하기](#client)
-- [애플리케이션 테스트](#test)
-- [로깅 사용](#enablelogging)
+- [응용 프로그램 테스트](#test)
+- [로깅을 사용 하도록 설정](#enablelogging)
 - [설치 하 고 전체 StockTicker 샘플을 검토 합니다.](#fullsample)
 - [다음 단계](#nextsteps)
 

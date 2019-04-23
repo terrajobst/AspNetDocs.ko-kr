@@ -12,7 +12,7 @@ ms.openlocfilehash: 4732a3c301c56602533b757434e239c48fe7a392
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59403326"
 ---
 # <a name="how-do-i-use-the-ability-to-create-groups-with-the-listview-control-for-different-data"></a>[어떻게 할까요?] 기능을 사용 하 여 다른 데이터에 대 한 ListView 컨트롤을 사용 하 여 그룹 만들기

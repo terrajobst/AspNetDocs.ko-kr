@@ -12,7 +12,7 @@ ms.openlocfilehash: c121a8c8dacdade3b0240a84b6202bcfca35a481
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59402117"
 ---
 # <a name="custom-button-actions-with-the-datalist-and-repeater"></a>DataList 및 반복기를 사용하는 사용자 지정 단추 동작

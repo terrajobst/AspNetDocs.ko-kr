@@ -12,7 +12,7 @@ ms.openlocfilehash: 08ea68c8e1ed9dddfe6bddbfb880c3b8dada6136
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59407447"
 ---
 # <a name="creating-model-classes-with-linq-to-sql"></a>LINQ to SQL을 사용하여 모델 클래스 만들기

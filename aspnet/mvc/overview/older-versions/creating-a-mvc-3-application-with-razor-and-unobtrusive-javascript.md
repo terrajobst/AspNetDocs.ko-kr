@@ -12,7 +12,7 @@ ms.openlocfilehash: 91c96cc413e63ad2fc160ffbb473c4f3e1ada3e4
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59401064"
 ---
 # <a name="creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript"></a>Razor 및 Unobtrusive JavaScript를 사용하여 MVC 3 애플리케이션 만들기
@@ -36,7 +36,7 @@ by [Microsoft](https://github.com/microsoft)
 
 자습서를 시작 하려면 Visual Studio 2010 열고 사용 하 여 새 프로젝트를 *ASP.NET MVC 3 웹 응용 프로그램* 템플릿. 응용 프로그램의 이름을 &quot;Mvc3Razor&quot;합니다.
 
-[![NMVC 3 프로젝트를 활용 하면 초보](creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript/_static/image3.png)](creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript/_static/image2.png)
+[![새 MVC 3 프로젝트](creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript/_static/image3.png)](creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript/_static/image2.png)
 
 에 **새 ASP.NET MVC 3 프로젝트** 대화 상자에서 **인터넷 응용 프로그램**Razor 보기 엔진을 선택한 다음 클릭 **확인**합니다.
 

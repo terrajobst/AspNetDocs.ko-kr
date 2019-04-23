@@ -12,7 +12,7 @@ ms.openlocfilehash: 86b90a21f59ee0ad52a3e6f7db19d4714282105c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59401142"
 ---
 # <a name="videos"></a>비디오
@@ -26,7 +26,7 @@ ms.locfileid: "59401142"
     - [ASP.NET 웹 페이지 5분 소개](introduction/5-minute-introduction-to-aspnet-web-pages.md)
     - [Microsoft WebMatrix 도구 설치 및 사용](introduction/install-and-use-the-microsoft-webmatrix-tool.md)
     - [WebMatrix를 사용하여 웹 사이트 만들기](introduction/create-a-website-using-webmatrix.md)
-    - [웹 페이지의 시각적 스타일 변경](introduction/change-the-visual-style-of-a-web-page.md)
+    - [웹 페이지의 표시 스타일 변경](introduction/change-the-visual-style-of-a-web-page.md)
     - [WebMatrix의 레이아웃 기능 사용](introduction/use-the-layout-features-in-webmatrix.md)
     - [데이터 중심 동적 웹 페이지 만들기](introduction/create-a-data-driven-dynamic-web-page.md)
     - [WebMatrix에서 웹 인터페이스 만들기](introduction/create-a-web-interface-in-webmatrix.md)

@@ -12,7 +12,7 @@ ms.openlocfilehash: 8d531a6ac9afc3ece4a60774124855ab0c16cd77
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59396904"
 ---
 # <a name="adding-a-gridview-column-of-radio-buttons-vb"></a>라디오 단추의 GridView 열 추가(VB)
@@ -52,7 +52,7 @@ GridView 컨트롤은 많은 기본 제공 기능을 제공합니다. 텍스트,
 다른 폴더와 같이 `Default.aspx` 에 `EnhancedGridView` 폴더 섹션의 자습서를 나열 됩니다. 이전에 설명한 대로 `SectionLevelTutorialListing.ascx` 사용자 컨트롤은이 기능을 제공 합니다. 따라서이 사용자 정의 컨트롤을 추가 `Default.aspx`의 디자인 뷰에서 페이지의 솔루션 탐색기에서 끌어 합니다.
 
 
-[![Add Default.aspx SectionLevelTutorialListing.ascx 사용자 정의 컨트롤](adding-a-gridview-column-of-radio-buttons-vb/_static/image2.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image1.png)
+[![Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](adding-a-gridview-column-of-radio-buttons-vb/_static/image2.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image1.png)
 
 **그림 2**: 추가 된 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤 `Default.aspx` ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-radio-buttons-vb/_static/image2.png))
 
@@ -77,12 +77,12 @@ GridView 컨트롤은 많은 기본 제공 기능을 제공합니다. 텍스트,
 열어서 시작 합니다 `RadioButtonField.aspx` 페이지는 `EnhancedGridView` GridView 디자이너 도구 상자에서 끌어 폴더. 집합 GridView s `ID` 에 `Suppliers` 하 고 해당 스마트 태그에서 새 데이터 원본을 만들려면 선택 합니다. 특히 라는 ObjectDataSource를 만듭니다 `SuppliersDataSource` 에서 해당 데이터를 가져오고 있는 `SuppliersBLL` 개체입니다.
 
 
-[![C새 ObjectDataSource 라는 SuppliersDataSource reate](adding-a-gridview-column-of-radio-buttons-vb/_static/image4.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image3.png)
+[![SuppliersDataSource 라는 새로운 ObjectDataSource는 만들기](adding-a-gridview-column-of-radio-buttons-vb/_static/image4.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image3.png)
 
 **그림 4**: 명명 된 새 ObjectDataSource 만들려면 `SuppliersDataSource` ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-vb/_static/image4.png))
 
 
-[![Configure SuppliersBLL 클래스를 사용 하는 ObjectDataSource](adding-a-gridview-column-of-radio-buttons-vb/_static/image5.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image5.png)
+[![SuppliersBLL 클래스를 사용 하는 ObjectDataSource 구성](adding-a-gridview-column-of-radio-buttons-vb/_static/image5.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image5.png)
 
 **그림 5**: ObjectDataSource를 사용 하 여 구성 합니다 `SuppliersBLL` 클래스 ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-vb/_static/image6.png))
 
@@ -90,7 +90,7 @@ GridView 컨트롤은 많은 기본 제공 기능을 제공합니다. 텍스트,
 미국에 있는 해당 공급자를 나열 하고자 하므로 선택 된 `GetSuppliersByCountry(country)` 선택 탭의 드롭다운 목록에서 메서드.
 
 
-[![Configure SuppliersBLL 클래스를 사용 하는 ObjectDataSource](adding-a-gridview-column-of-radio-buttons-vb/_static/image6.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image7.png)
+[![SuppliersBLL 클래스를 사용 하는 ObjectDataSource 구성](adding-a-gridview-column-of-radio-buttons-vb/_static/image6.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image7.png)
 
 **그림 6**: ObjectDataSource를 사용 하 여 구성 합니다 `SuppliersBLL` 클래스 ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-vb/_static/image8.png))
 
@@ -98,7 +98,7 @@ GridView 컨트롤은 많은 기본 제공 기능을 제공합니다. 텍스트,
 업데이트 탭에서 선택 옵션 (없음) 및 다음을 클릭 합니다.
 
 
-[![Configure SuppliersBLL 클래스를 사용 하는 ObjectDataSource](adding-a-gridview-column-of-radio-buttons-vb/_static/image7.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image9.png)
+[![SuppliersBLL 클래스를 사용 하는 ObjectDataSource 구성](adding-a-gridview-column-of-radio-buttons-vb/_static/image7.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image9.png)
 
 **그림 7**: ObjectDataSource를 사용 하 여 구성 합니다 `SuppliersBLL` 클래스 ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-vb/_static/image10.png))
 
@@ -106,7 +106,7 @@ GridView 컨트롤은 많은 기본 제공 기능을 제공합니다. 텍스트,
 이후를 `GetSuppliersByCountry(country)` 매개 변수를 허용 하는 메서드, 데이터 소스 구성 마법사의 매개 변수 원본에 대 한 요청입니다. 지정 하는 하드 코드 된 값 (이 예제의: 미국), 원본 드롭 다운 목록 None으로 설정 하 고 텍스트 상자에 기본값을 입력 매개 변수를 둡니다. 마법사를 완료 하려면 마침을 클릭 합니다.
 
 
-[![U매개 변수 국가 대 한 기본 값으로 미국 se](adding-a-gridview-column-of-radio-buttons-vb/_static/image8.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image11.png)
+[![기본 값으로 USA를 사용 하 여 국가의 매개 변수](adding-a-gridview-column-of-radio-buttons-vb/_static/image8.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image11.png)
 
 **그림 8**: 미국에 대 한 기본 값으로 사용 합니다 `country` 매개 변수 ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-vb/_static/image12.png))
 
@@ -121,7 +121,7 @@ GridView 컨트롤은 많은 기본 제공 기능을 제공합니다. 텍스트,
 그림 9를 `Suppliers` GridView 및 두 개의 단추 웹 브라우저를 통해 볼 때를 제어 합니다.
 
 
-[![TUSA가 해당 이름, 도시 및 국가가 정보에서 공급 업체 호스](adding-a-gridview-column-of-radio-buttons-vb/_static/image9.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image13.png)
+[![미국에서 이러한 공급자가 해당 이름, 도시 및 국가 정보 나열](adding-a-gridview-column-of-radio-buttons-vb/_static/image9.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image13.png)
 
 **그림 9**: USA가 해당 이름, 도시 및 국가가 정보에서 해당 공급 업체 ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-radio-buttons-vb/_static/image14.png))
 
@@ -135,7 +135,7 @@ RadioButton 웹 컨트롤에 추가 하 여 원하는 사용자 인터페이스�
 S 수 있으므로이 방법은 구현를 TemplateField RadioButton 웹 컨트롤을 사용 하 여 필요한 기능을 제공 하지 않습니다, 경우에 s 결과 라디오 단추 그룹화 되지 않은 이유를 검사 하는 것이 좋습니다. 가장 왼쪽의 필드를 만드는 공급자 GridView를 templatefield로 추가 하 여 시작 합니다. 다음으로 GridView가 스마트 태그에서 템플릿 편집 링크를 클릭 및 TemplateField s에 도구 상자에서 RadioButton 웹 컨트롤을 끌어 `ItemTemplate` (그림 10 참조). 집합 RadioButton s `ID` 속성을 `RowSelector` 하며 `GroupName` 속성을 `SuppliersGroup`입니다.
 
 
-[![ARadioButton 웹 컨트롤 ItemTemplate에 dd](adding-a-gridview-column-of-radio-buttons-vb/_static/image10.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image15.png)
+[![ItemTemplate에 RadioButton 웹 컨트롤 추가](adding-a-gridview-column-of-radio-buttons-vb/_static/image10.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image15.png)
 
 **그림 10**: RadioButton 웹 컨트롤을 추가 합니다 `ItemTemplate` ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-vb/_static/image16.png))
 
@@ -150,7 +150,7 @@ RadioButton s [ `GroupName` 속성](https://msdn.microsoft.com/library/system.we
 RadioButton 웹 컨트롤에 추가 된 `ItemTemplate`, 브라우저를 통해이 페이지를 방문 하 고 표의 행에서 라디오 단추를 클릭 합니다. 라디오 단추 그룹화 되지 않은 하는 방법을 예 고 그림 11의 모든 행을 선택 하 여 보여 줍니다.
 
 
-[![T그 라디오 단추의 GridView가 그룹화 되지 않은](adding-a-gridview-column-of-radio-buttons-vb/_static/image11.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image17.png)
+[![GridView가의 라디오 단추 그룹화 되지 됩니다.](adding-a-gridview-column-of-radio-buttons-vb/_static/image11.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image17.png)
 
 **그림 11**: GridView가의 라디오 단추를 그룹화 되지 않습니다 ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-radio-buttons-vb/_static/image18.png))
 
@@ -186,7 +186,7 @@ RadioButton 웹 컨트롤에 추가 된 `ItemTemplate`, 브라우저를 통해�
 RadioButton TemplateField s에서 제거 하 여 시작 `ItemTemplate`, 리터럴 컨트롤을으로 바꿉니다. S 리터럴 컨트롤을 설정 `ID` 에 `RadioButtonMarkup`입니다.
 
 
-[![Add ItemTemplate에 리터럴 컨트롤](adding-a-gridview-column-of-radio-buttons-vb/_static/image12.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image19.png)
+[![ItemTemplate에 리터럴 컨트롤 추가](adding-a-gridview-column-of-radio-buttons-vb/_static/image12.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image19.png)
 
 **그림 12**: 리터럴 컨트롤을 추가 합니다 `ItemTemplate` ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-vb/_static/image20.png))
 
@@ -240,7 +240,7 @@ GridView 행을 선택 하 고 포스트백이 발생할 때 관심이 `Supplier
 에 맞게를 `SuppliersSelectedIndex` 의 값 `-1`를 GridView 위에 있는 페이지에 레이블 웹 컨트롤을 추가 합니다. 설정 해당 `ID` 속성을 `ChooseSupplierMsg`, 해당 `CssClass` 속성을 `Warning`, 해당 `EnableViewState` 하 고 `Visible` 속성을 `False`, 및 해당 `Text` 하세요 속성 그리드에서 공급자를 선택 합니다. CSS 클래스 `Warning` 빨간색, 기울임꼴, 굵게, 큰 글꼴로 텍스트를 표시 하 고에 정의 된 `Styles.css`합니다. 설정 하 여는 `EnableViewState` 하 고 `Visible` 속성을 `False`, where만 포스트백에 대 한 제외 하 고 레이블을 렌더링 되지 않습니다 s control `Visible` 속성을 프로그래밍 방식으로로 설정 됩니다 `True`.
 
 
-[![Add는 레이블 웹 컨트롤 위에 GridView](adding-a-gridview-column-of-radio-buttons-vb/_static/image13.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image21.png)
+[![GridView 위에 레이블 웹 컨트롤 추가](adding-a-gridview-column-of-radio-buttons-vb/_static/image13.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image21.png)
 
 **그림 13**: 레이블 웹 컨트롤 위에 GridView 추가 ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-radio-buttons-vb/_static/image22.png))
 
@@ -253,12 +253,12 @@ GridView 행을 선택 하 고 포스트백이 발생할 때 관심이 `Supplier
 클릭을 브라우저의 페이지를 방문 합니다 `SendToProducts` GridView에서 공급자를 선택 하기 전에 단추입니다. 그림 14에서 볼 수 있듯이이 표시는 `ChooseSupplierMsg` 레이블. 그런 다음 공급자를 선택 하 고 클릭는 `SendToProducts` 단추입니다. 선택한 공급자가 제공 하는 제품을 나열 하는 페이지에 있습니다 whisk는이 합니다. 그림 15는 `ProductsForSupplierDetails.aspx` Bigfoot Breweries 공급자 선택 될 때 페이지입니다.
 
 
-[![T그 ChooseSupplierMsg 레이블 아니요 공급자 선택 되어 있으면 표시 됩니다](adding-a-gridview-column-of-radio-buttons-vb/_static/image14.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image23.png)
+[![ChooseSupplierMsg 레이블 아니요 공급자 선택 되어 있으면 표시 됩니다.](adding-a-gridview-column-of-radio-buttons-vb/_static/image14.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image23.png)
 
 **그림 14**: 합니다 `ChooseSupplierMsg` 레이블 아니요 공급자 선택 되어 있으면 표시 됩니다 ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-vb/_static/image24.png))
 
 
-[![T그 ProductsForSupplierDetails.aspx에 제품이 표시 되는 선택한 공급자 s](adding-a-gridview-column-of-radio-buttons-vb/_static/image15.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image25.png)
+[![선택한 공급자가의 제품 ProductsForSupplierDetails.aspx에 표시 됩니다.](adding-a-gridview-column-of-radio-buttons-vb/_static/image15.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image25.png)
 
 **그림 15**: 선택한 공급자가의 제품에 표시 됩니다 `ProductsForSupplierDetails.aspx` ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-vb/_static/image26.png))
 
@@ -270,7 +270,7 @@ GridView 행을 선택 하 고 포스트백이 발생할 때 관심이 `Supplier
 공급자 선택 되 면 표시할 제품의이 GridView만 것 이므로 아래 패널 웹 컨트롤을 추가 합니다 `Suppliers` GridView, 설정 해당 `ID` 에 `ProductsBySupplierPanel` 고 `Visible` 속성을 `False`. 패널 내에서 선택한 공급자에 대 한 제품 텍스트를 추가 합니다. 뒤에 명명 된 GridView `ProductsBySupplier`합니다. GridView가 스마트 태그에서 이라는 새 ObjectDataSource를 바인딩할 선택 `ProductsBySupplierDataSource`합니다.
 
 
-[![B새 ObjectDataSource에 ProductsBySupplier GridView 찾기](adding-a-gridview-column-of-radio-buttons-vb/_static/image16.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image27.png)
+[![새 ObjectDataSource ProductsBySupplier GridView 바인딩합니다](adding-a-gridview-column-of-radio-buttons-vb/_static/image16.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image27.png)
 
 **그림 16**: 바인딩하는 `ProductsBySupplier` 새 ObjectDataSource에 GridView ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-vb/_static/image28.png))
 
@@ -278,12 +278,12 @@ GridView 행을 선택 하 고 포스트백이 발생할 때 관심이 `Supplier
 ObjectDataSource를 사용 하 여 다음으로 구성 된 `ProductsBLL` 클래스입니다. ObjectDataSource를 호출 해야 하는 선택한 공급자가 제공 하는 이러한 제품을 검색 하려고 하므로 지정 된 `GetProductsBySupplierID(supplierID)` 해당 데이터를 검색 하는 방법입니다. UPDATE, INSERT에서에서 드롭 다운 목록에서 선택 (없음) 및 탭을 삭제 합니다.
 
 
-[![Configure GetProductsBySupplierID(supplierID) 메서드를 사용 하는 ObjectDataSource](adding-a-gridview-column-of-radio-buttons-vb/_static/image17.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image29.png)
+[![GetProductsBySupplierID(supplierID) 메서드를 사용 하는 ObjectDataSource 구성](adding-a-gridview-column-of-radio-buttons-vb/_static/image17.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image29.png)
 
 **그림 17**: ObjectDataSource를 사용 하 여 구성 합니다 `GetProductsBySupplierID(supplierID)` 메서드 ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-vb/_static/image30.png))
 
 
-[![SUPDATE, INSERT 및 DELETE 탭 (none) 드롭 다운 목록 et](adding-a-gridview-column-of-radio-buttons-vb/_static/image18.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image31.png)
+[![UPDATE, INSERT (없음) 드롭다운 목록을 설정 하 고 탭 삭제](adding-a-gridview-column-of-radio-buttons-vb/_static/image18.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image31.png)
 
 **그림 18**: (없음)을 드롭다운 목록에서 업데이트, 삽입 및 삭제 탭 설정 ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-radio-buttons-vb/_static/image32.png))
 
@@ -295,7 +295,7 @@ SELECT를 구성한 후 업데이트, 삽입 및 삭제 탭, 다음을 클릭 �
 또는 수를 ControlParameter를 사용 하 고 참조를 `Suppliers` GridView s [ `SelectedValue` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.selectedvalue.aspx) (그림 19 참조). GridView s `SelectedValue` 속성에서 반환 된 `DataKey` 값에 해당 하는 [ `SelectedIndex` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.selectedindex.aspx). GridView가 프로그래밍 방식으로 설정 해야 작동 하려면이 옵션에 대 한 순서로 `SelectedIndex` 속성을 선택한 경우 행을 `ListProducts` 단추를 클릭 합니다. 설정 하 여 추가 점으로 `SelectedIndex`를 선택한 레코드를 수행 합니다 `SelectedRowStyle` 에 정의 된를 `DataWebControls` 테마 (노란색 배경).
 
 
-[![USelectedValue GridView s 매개 변수 원본으로 지정 하려면 ControlParameter se](adding-a-gridview-column-of-radio-buttons-vb/_static/image19.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image33.png)
+[![ControlParameter를 사용 하 여 GridView의 SelectedValue 매개 변수 원본으로 지정](adding-a-gridview-column-of-radio-buttons-vb/_static/image19.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image33.png)
 
 **그림 19**: ControlParameter GridView의 SelectedValue 매개 변수 원본으로 지정 하는 데 ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-radio-buttons-vb/_static/image34.png))
 
@@ -315,7 +315,7 @@ GridView에서 공급자를 선택 하지 않은 경우는 `ChooseSupplierMsg` �
 그림 20 Bigfoot Breweries 공급자를 선택한 후 페이지 단추에 표시할 제품이 클릭 한 후 결과 보여 줍니다.
 
 
-[![T같은 페이지에 나열 됩니다 제품 Bigfoot Breweries 제공한 그](adding-a-gridview-column-of-radio-buttons-vb/_static/image20.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image35.png)
+[![같은 페이지에 나열 됩니다 Bigfoot Breweries에서 제품 제공](adding-a-gridview-column-of-radio-buttons-vb/_static/image20.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image35.png)
 
 **그림 20**: 같은 페이지에 나열 됩니다 Bigfoot Breweries에서 제공 하는 제품 ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-radio-buttons-vb/_static/image36.png))
 

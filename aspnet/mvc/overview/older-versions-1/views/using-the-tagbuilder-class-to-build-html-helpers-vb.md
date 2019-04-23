@@ -12,7 +12,7 @@ ms.openlocfilehash: 4fe34858aadb705ffb59e06ba805493d89aa4028
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59403209"
 ---
 # <a name="using-the-tagbuilder-class-to-build-html-helpers-vb"></a>HTML 도우미 (VB)를 빌드하는 TagBuilder 클래스를 사용 하 여
@@ -65,7 +65,7 @@ TagBuilder.MergeAttribute() 메서드를 사용 하는 TagBuilder에 src 특성 
 [!code-aspx[Main](using-the-tagbuilder-class-to-build-html-helpers-vb/samples/sample2.aspx)]
 
 
-[![T새 프로젝트 대화 상자의 그](using-the-tagbuilder-class-to-build-html-helpers-vb/_static/image1.jpg)](using-the-tagbuilder-class-to-build-html-helpers-vb/_static/image1.png)
+[![새 프로젝트 대화 상자](using-the-tagbuilder-class-to-build-html-helpers-vb/_static/image1.jpg)](using-the-tagbuilder-class-to-build-html-helpers-vb/_static/image1.png)
 
 **그림 01**: 이미지 도우미를 사용 하 여 ([클릭 하 여 큰 이미지 보기](using-the-tagbuilder-class-to-build-html-helpers-vb/_static/image2.png))
 

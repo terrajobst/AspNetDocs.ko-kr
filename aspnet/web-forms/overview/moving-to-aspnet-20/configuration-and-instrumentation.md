@@ -12,7 +12,7 @@ ms.openlocfilehash: b06f105b16087f97788e0ab360af41f538d2c1ac
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59400804"
 ---
 # <a name="configuration-and-instrumentation"></a>구성 및 계측
@@ -145,11 +145,11 @@ ASP.NET 2.0 시작 및 중지와 처리 되지 않은 예외가 로깅 응용 �
 
 합니다 &lt;healthMonitoring&gt; 전역 Web.config 파일의 섹션에 다음 항목이 포함 되어 있습니다.
 
-| **공급자** | 이벤트 뷰어, WMI, and SQL Server에 대 한 설정 공급자를 포함 합니다. |
+| **providers** | 이벤트 뷰어, WMI, and SQL Server에 대 한 설정 공급자를 포함 합니다. |
 | --- | --- |
 | **eventMappings** | 다양 한 WebBase 클래스에 대 한 매핑을 포함합니다. 사용자 고유의 이벤트 클래스를 생성 하는 경우이 목록은 확장할 수 있습니다. 사용자 고유의 이벤트 클래스를 생성 하면 보다 세부적인 정보를 보낼 공급자를 통해. 예를 들어 전자 메일에 사용자 지정 이벤트를 전송 하는 동안 SQL Server에 전송할 수 있도록 처리 되지 않은 예외를 구성할 수 있습니다. |
-| **규칙** | 연결 공급자에 대 한 eventMappings 됩니다. |
-| **버퍼링** | 공급자에 게 이벤트를 플러시하는 빈도 확인 하려면 SQL Server 및 전자 메일 공급자를 사용 합니다. |
+| **rules** | 연결 공급자에 대 한 eventMappings 됩니다. |
+| **buffering** | 공급자에 게 이벤트를 플러시하는 빈도 확인 하려면 SQL Server 및 전자 메일 공급자를 사용 합니다. |
 
 전역 Web.config 파일에서 코드 예제는 다음과 같습니다.
 
@@ -241,7 +241,7 @@ ASP.NET의 구성을 지원 하기 위해 몇 가지 명령줄 도구가 있습�
 
 다음 명령줄 도구를 사용할 수 있습니다.
 
-| **도구** | **사용** |
+| **도구** | **사용 하 여** |
 | --- | --- |
 | **aspnet\_regiis.exe** | IIS 사용 하 여 ASP.NET의 등록을 허용합니다. 두 가지 버전이 도구는 Framework 폴더의 32 비트 시스템 및 (Framework64 폴더입니다.)에서 64 비트 시스템에 대 한 ASP.NET 2.0과 함께 제공 되는 32 비트 OS에서 64 비트 버전 설치 되지 않습니다. |
 | **aspnet\_regsql.exe** | ASP.NET에서 SQL Server 공급자 사용에 대 한 Microsoft SQL Server 데이터베이스를 만들 추가 또는 기존 데이터베이스에서 옵션을 제거 하려면 ASP.NET SQL Server 등록 도구 사용 됩니다. Aspnet\_regsql.exe 파일은 폴더에 있는 [drive:]\WINDOWS\Microsoft.NET\Framework\versionNumber 웹 서버에 있습니다. |
@@ -298,7 +298,7 @@ Aspnet를 실행 하는 경우 다음 옵션을 사용할 수 있는\_regbrowser
 
 일반적인 두 가지 방법으로 ASP.NET 컴파일 도구를 사용할 수 있습니다: 전체 컴파일 및 배포를 대상 출력 디렉터리를 지정 되는 위치에 대 한 컴파일.
 
-### [<a name="compiling-an-application-in-place"></a>현재 위치에서 응용 프로그램 컴파일](https://msdn.microsoft.com/library/ms229863.aspx)
+### <a name="compiling-an-application-in-placehttpsmsdnmicrosoftcomlibraryms229863aspx"></a>[현재 위치에서 응용 프로그램 컴파일](https://msdn.microsoft.com/library/ms229863.aspx)
 
 ASP.NET 컴파일 도구 위치에서 응용 프로그램을 컴파일할 수, 따라서 일반적인 컴파일을 일으키는 응용 프로그램에 대 한 여러 요청의 동작을 모방 하는, 합니다. 미리 컴파일된 사이트의 사용자는 첫 번째 요청에서 페이지 컴파일로 인 한 지연을 발생 하지 않습니다.
 
@@ -314,7 +314,7 @@ ASP.NET 컴파일 도구 위치에서 응용 프로그램을 컴파일할 수, �
 > 중첩 된 응용 프로그램을 포함 하는 응용 프로그램의 컴파일 중첩된 된 응용 프로그램을 컴파일되지 않습니다. 중첩된 된 응용 프로그램을 개별적으로 컴파일된 수 있어야 합니다.
 
 
-### [<a name="compiling-an-application-for-deployment"></a>배포에 대 한 응용 프로그램 컴파일](https://msdn.microsoft.com/library/ms229863.aspx)
+### <a name="compiling-an-application-for-deploymenthttpsmsdnmicrosoftcomlibraryms229863aspx"></a>[배포에 대 한 응용 프로그램 컴파일](https://msdn.microsoft.com/library/ms229863.aspx)
 
 TargetDir 매개 변수를 지정 하 여 배포 (대상 위치로 컴파일)에 대 한 응용 프로그램을 컴파일합니다. TargetDir 웹 응용 프로그램에 대 한 최종 위치 수 또는 컴파일된 응용 프로그램을 다시 배포할 수도 있습니다. 사용 하는 **-u** 옵션을 변경할 수 있습니다 컴파일된 응용 프로그램에서 특정 파일에 다시 컴파일하지 않고 하는 방식으로 응용 프로그램을 컴파일하고 있습니다. Aspnet\_compiler.exe 정적 및 동적 파일 유형과 구분 작업을 수행 하 고 응용 프로그램을 만들 때 다른 방식으로 처리 합니다.
 
@@ -351,11 +351,11 @@ TargetDir 매개 변수를 지정 하 여 배포 (대상 위치로 컴파일)에
 | 앱의.skin 파일\_테마 하위 디렉터리 | 테마 어셈블리로 컴파일되고 Bin 디렉터리에 배치 됩니다. 스텁 파일.skin 파일에 대해 생성 되 고 해당 출력 디렉터리에 배치 합니다. 정적 파일 (예:.css) 출력 디렉터리에 복사 됩니다. |
 | .browser Web.config 정적 파일 형식 Bin 디렉터리에 이미 있는 어셈블리 | 이러한 파일은 출력 디렉터리에 있는 그대로 복사 됩니다. |
 
-### [<a name="fixed-assembly-names"></a>고정된 어셈블리 이름](https://msdn.microsoft.com/library/ms229863.aspx##)
+### <a name="fixed-assembly-nameshttpsmsdnmicrosoftcomlibraryms229863aspx"></a>[고정된 어셈블리 이름](https://msdn.microsoft.com/library/ms229863.aspx##)
 
 MSI Windows Installer를 사용 하 여 웹 응용 프로그램을 배포 하는 등의 일부 시나리오에는 어셈블리 또는 업데이트에 대 한 구성 설정을 확인 하는 일관 된 디렉터리 구조 뿐만 아니라 일관 된 파일 이름 및 콘텐츠를 사용을 해야 합니다. 이러한 경우에 사용할 수 있습니다 합니다 **-fixednames** ASP.NET 컴파일 도구 어셈블리로 컴파일해야를 지정 하는 옵션 where를 사용 하는 대신 각 소스 파일에 대 한 여러 페이지 어셈블리로 컴파일됩니다. 이 확장성을 사용 하 여 우려되는 경우 주의 해 서이 옵션을 사용 해야 하므로 많은 수의 어셈블리에 발생할 수 있습니다.
 
-### [<a name="strong-name-compilation"></a>강력한 이름 컴파일](https://msdn.microsoft.com/library/ms229863.aspx##)
+### <a name="strong-name-compilationhttpsmsdnmicrosoftcomlibraryms229863aspx"></a>[강력한 이름 컴파일](https://msdn.microsoft.com/library/ms229863.aspx##)
 
 **aptca**, **-delaysign**를 **-keycontainer** 하 고 **-keyfile** Aspnet를 사용할 수 있도록 옵션이 제공 됩니다\_ 사용 하지 않고 compiler.exe 만드는 강력한 이름의 어셈블리를 [강력한 이름 도구 (Sn.exe)](https://msdn.microsoft.com/library/k5b5tt23.aspx) 개별적으로 합니다. 이들이 옵션 각각 해당를 **AllowPartiallyTrustedCallersAttribute**, **AssemblyDelaySignAttribute**하십시오 **AssemblyKeyNameAttribute**, 및  **AssemblyKeyFileAttribute**합니다.
 

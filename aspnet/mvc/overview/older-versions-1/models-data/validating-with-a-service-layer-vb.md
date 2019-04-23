@@ -12,7 +12,7 @@ ms.openlocfilehash: fc819494ef58824d485144396e3a995d906c8b42
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59398711"
 ---
 # <a name="validating-with-a-service-layer-vb"></a>서비스 레이어를 사용한 유효성 검사(VB)
@@ -30,7 +30,7 @@ ASP.NET MVC 응용 프로그램을 빌드하면 컨트롤러 작업 내에서 �
 
 예를 들어 목록 1은 ProductRepository 라는 간단한 리포지토리가 포함 되어 있습니다. 제품 리포지토리에 모든 응용 프로그램에 대 한 데이터 액세스 코드를 포함합니다. 목록에는 제품 리포지토리를 구현 하는 IProductRepository 인터페이스도를 포함 됩니다.
 
-**1-Models\ProductRepository.vb 나열**
+**Listing 1 - Models\ProductRepository.vb**
 
 [!code-vb[Main](validating-with-a-service-layer-vb/samples/sample1.vb)]
 

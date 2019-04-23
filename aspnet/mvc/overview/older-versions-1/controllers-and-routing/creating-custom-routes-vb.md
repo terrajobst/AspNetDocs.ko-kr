@@ -12,7 +12,7 @@ ms.openlocfilehash: a7b8b85ba1cf5c18e605eb8114a305272baf41a6
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59404873"
 ---
 # <a name="creating-custom-routes-vb"></a>사용자 지정 경로 만들기(VB)
@@ -61,7 +61,7 @@ ASP.NET MVC 응용 프로그램 기본 경로 테이블을 문제 없이 작동 
 **그림 1-매개 변수 변환 오류**
 
 
-[![T새 프로젝트 대화 상자의 그](creating-custom-routes-vb/_static/image1.jpg)](creating-custom-routes-vb/_static/image1.png)
+[![새 프로젝트 대화 상자](creating-custom-routes-vb/_static/image1.jpg)](creating-custom-routes-vb/_static/image1.png)
 
 **그림 01**: 매개 변수 변환에서 오류 ([클릭 하 여 큰 이미지 보기](creating-custom-routes-vb/_static/image2.png))
 

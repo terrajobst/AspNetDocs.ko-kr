@@ -12,7 +12,7 @@ ms.openlocfilehash: f8bb91de9642814a79d0fddd642928c25c58ebfd
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59402845"
 ---
 # <a name="executing-several-animations-at-the-same-time-vb"></a>여러 애니메이션 (VB) 동시에 실행
@@ -55,7 +55,7 @@ ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이�
 실제로 및: 패널 다음 크기 조정 (너비 보다 더 커지고 및 높이 양분) 표시 되 고 동시에 페이드 아웃이 스크립트를 실행 합니다.
 
 
-[![T그 패널은 페이드아웃과 해당 콘텐츠를 브라우저의 렌더링 엔진 덕분 등 크기 조정](executing-several-animations-at-the-same-time-vb/_static/image2.png)](executing-several-animations-at-the-same-time-vb/_static/image1.png)
+[![패널 페이드아웃 되며 (해당 콘텐츠를 브라우저의 렌더링 엔진 덕분 포함) 크기 조정](executing-several-animations-at-the-same-time-vb/_static/image2.png)](executing-several-animations-at-the-same-time-vb/_static/image1.png)
 
 패널 페이드아웃 되며 (해당 콘텐츠를 브라우저의 렌더링 엔진 덕분 포함) 크기 조정 ([클릭 하 여 큰 이미지 보기](executing-several-animations-at-the-same-time-vb/_static/image3.png))
 

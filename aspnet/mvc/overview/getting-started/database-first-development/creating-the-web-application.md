@@ -13,7 +13,7 @@ ms.openlocfilehash: 30fd42be5677df6fa6ee0630914098c30d21385b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59404522"
 ---
 # <a name="tutorial-create-the-web-application-and-data-models-for-ef-database-first-with-aspnet-mvc"></a>자습서: ASP.NET MVC를 사용 하 여 먼저 EF 데이터베이스에 대 한 웹 응용 프로그램 및 데이터 모델 만들기

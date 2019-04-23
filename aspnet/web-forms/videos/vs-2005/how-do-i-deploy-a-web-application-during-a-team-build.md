@@ -12,7 +12,7 @@ ms.openlocfilehash: d5cf8850a1994d209cfaa829d1de2f8bc79776e7
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59398945"
 ---
 # <a name="how-do-i-deploy-a-web-application-during-a-team-build"></a>[어떻게 할까요?] 팀 빌드 중 웹 응용 프로그램 배포

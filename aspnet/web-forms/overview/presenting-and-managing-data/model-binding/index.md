@@ -12,7 +12,7 @@ ms.openlocfilehash: e7915b2cf8378c8c4d797ecfd89454ce3f3a570b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59399842"
 ---
 # <a name="model-binding-and-web-forms-in-visual-studio-2013"></a>Visual Studio 2013의 모델 바인딩 및 Web Forms
@@ -23,6 +23,6 @@ ms.locfileid: "59399842"
 - [데이터 검색 및 표시](retrieving-data.md)
 - [데이터 업데이트, 삭제 및 만들기](updating-deleting-and-creating-data.md)
 - [데이터 정렬, 페이징 및 필터링](sorting-paging-and-filtering-data.md)
-- [jQuery UI Datepicker 통합](integrating-jquery-ui.md)
+- [JQuery UI Datepicker 통합](integrating-jquery-ui.md)
 - [쿼리 문자열 값을 사용하여 데이터 필터링](using-query-string-values-to-retrieve-data.md)
 - [비즈니스 논리 레이어 추가](adding-business-logic-layer.md)

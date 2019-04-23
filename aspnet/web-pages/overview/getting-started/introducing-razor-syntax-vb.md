@@ -12,7 +12,7 @@ ms.openlocfilehash: e6b63afb9492e810e19999c7c7ffe074ad510bda
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59406771"
 ---
 # <a name="introduction-to-aspnet-web-programming-using-the-razor-syntax-visual-basic"></a>Razor 구문 (Visual Basic)를 사용 하 여 ASP.NET 웹 프로그래밍 소개
@@ -745,4 +745,4 @@ ASP.NET에서 가장 기본적인 개체는 페이지입니다. 조건에 맞는
 ### <a name="reference-documentation"></a>참조 설명서
 
 - [ASP.NET](https://msdn.microsoft.com/library/ee532866.aspx)
-- [Visual Basic Language](https://msdn.microsoft.com/library/2x7h1hfk.aspx)
+- [Visual Basic 언어](https://msdn.microsoft.com/library/2x7h1hfk.aspx)

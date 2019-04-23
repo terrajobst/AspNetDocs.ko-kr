@@ -12,7 +12,7 @@ ms.openlocfilehash: 997c2a305db4165e2c3330d9cea50cceb1f4f017
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59407629"
 ---
 # <a name="getting-started"></a>시작
@@ -21,8 +21,8 @@ ms.locfileid: "59407629"
 
 
 - [AJAX 컨트롤 도구 키트 시작(C#)](get-started-with-the-ajax-control-toolkit-cs.md)
-- [Using AJAX 컨트롤 도구 키트 컨트롤 및 컨트롤 Extender 사용(C#)](using-ajax-control-toolkit-controls-and-control-extenders-cs.md)
+- [Using AJAX 컨트롤 도구 키트 컨트롤 및 컨트롤 Extenders 사용(C#)](using-ajax-control-toolkit-controls-and-control-extenders-cs.md)
 - [사용자 지정 AJAX 컨트롤 도구 키트 컨트롤 Extender 만들기(C#)](creating-a-custom-ajax-control-toolkit-control-extender-cs.md)
 - [AJAX 컨트롤 도구 키트 시작(VB)](get-started-with-the-ajax-control-toolkit-vb.md)
-- [Using AJAX 컨트롤 도구 키트 컨트롤 및 컨트롤 Extender 사용(VB)](using-ajax-control-toolkit-controls-and-control-extenders-vb.md)
+- [Using AJAX 컨트롤 도구 키트 컨트롤 및 컨트롤 Extenders 사용(VB)](using-ajax-control-toolkit-controls-and-control-extenders-vb.md)
 - [사용자 지정 AJAX 컨트롤 도구 키트 컨트롤 Extender 만들기(VB)](creating-a-custom-ajax-control-toolkit-control-extender-vb.md)

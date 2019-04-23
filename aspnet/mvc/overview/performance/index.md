@@ -12,7 +12,7 @@ ms.openlocfilehash: ee1b17ac4802ecbd92e571a62c491bc9a49a3560
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59401597"
 ---
 # <a name="aspnet-mvc-performance"></a>ASP.NET MVC 성능
@@ -21,5 +21,5 @@ ms.locfileid: "59401597"
 
 
 - [ASP.NET MVC 4에서 비동기 메서드 사용](using-asynchronous-methods-in-aspnet-mvc-4.md)
-- [Glimpse를 사용하여 ASP.NET MVC 앱 프로파일링 및 디버그](profile-and-debug-your-aspnet-mvc-app-with-glimpse.md)
+- [Glimpse를 사용하여 ASP.NET MVC 앱 프로파일링 및 디버깅](profile-and-debug-your-aspnet-mvc-app-with-glimpse.md)
 - [묶음 및 축소](bundling-and-minification.md)

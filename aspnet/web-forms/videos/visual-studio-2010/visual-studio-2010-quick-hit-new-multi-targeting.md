@@ -12,7 +12,7 @@ ms.openlocfilehash: 77e9ce027bd161722d59a6a9ea62cf47cb5e9f74
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59397229"
 ---
 # <a name="visual-studio-2010-quick-hit---new-multi-targeting"></a>새로운 멀티 타기 팅 visual Studio 2010 "빠른 Hit"-

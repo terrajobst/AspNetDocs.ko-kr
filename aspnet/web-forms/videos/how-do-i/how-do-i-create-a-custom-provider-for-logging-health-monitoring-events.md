@@ -12,7 +12,7 @@ ms.openlocfilehash: 53eab74be18a8d62235fa2334e032d47a8dfaf9f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59396709"
 ---
 # <a name="how-do-i-create-a-custom-provider-for-logging-health-monitoring-events"></a>[어떻게 할까요?] 로깅 상태 모니터링 이벤트에 대 한 사용자 지정 공급자 만들기

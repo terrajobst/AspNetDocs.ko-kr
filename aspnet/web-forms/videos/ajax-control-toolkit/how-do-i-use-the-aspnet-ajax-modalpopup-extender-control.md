@@ -12,7 +12,7 @@ ms.openlocfilehash: 2c5c54e9ba4ff2190080611f8aab8f0a607f9a71
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59396579"
 ---
 # <a name="how-do-i-use-the-aspnet-ajax-modalpopup-extender-control"></a>[어떻게 할까요?] ASP.NET AJAX ModalPopup Extender 컨트롤 사용

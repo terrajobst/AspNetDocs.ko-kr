@@ -12,7 +12,7 @@ ms.openlocfilehash: c1bd52b47b42005ed22f107b9f8aaa65c0ed111a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59402026"
 ---
 # <a name="working-with-data-in-aspnet-web-forms"></a>ASP.NET Web Forms에서 데이터 작업
@@ -25,6 +25,6 @@ ms.locfileid: "59402026"
     - [데이터 검색 및 표시](model-binding/retrieving-data.md)
     - [데이터 업데이트, 삭제 및 만들기](model-binding/updating-deleting-and-creating-data.md)
     - [데이터 정렬, 페이징 및 필터링](model-binding/sorting-paging-and-filtering-data.md)
-    - [jQuery UI Datepicker 통합](model-binding/integrating-jquery-ui.md)
+    - [JQuery UI Datepicker 통합](model-binding/integrating-jquery-ui.md)
     - [쿼리 문자열 값을 사용하여 데이터 필터링](model-binding/using-query-string-values-to-retrieve-data.md)
     - [비즈니스 논리 레이어 추가](model-binding/adding-business-logic-layer.md)

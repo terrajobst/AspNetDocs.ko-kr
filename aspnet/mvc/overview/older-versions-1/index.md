@@ -12,7 +12,7 @@ ms.openlocfilehash: 5827542a951a4b65d1c9b02b0ad15ed988bf1456
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59399634"
 ---
 # <a name="older-versions---mvc-1-and-2"></a>이전 버전 - MVC 1 및 2
@@ -94,30 +94,30 @@ ms.locfileid: "59399634"
 
     - [폼 인증으로 사용자 인증(C#)](security/authenticating-users-with-forms-authentication-cs.md)
     - [Windows 인증으로 사용자 인증(C#)](security/authenticating-users-with-windows-authentication-cs.md)
-    - [JavaScript 삽입 공격 방지(C#)](security/preventing-javascript-injection-attacks-cs.md)
+    - [JavaScript 주입 공격 방지(C#)](security/preventing-javascript-injection-attacks-cs.md)
     - [폼 인증으로 사용자 인증(VB)](security/authenticating-users-with-forms-authentication-vb.md)
     - [Windows 인증으로 사용자 인증(VB)](security/authenticating-users-with-windows-authentication-vb.md)
-    - [JavaScript 삽입 공격 방지(VB)](security/preventing-javascript-injection-attacks-vb.md)
+    - [JavaScript 주입 공격 방지(VB)](security/preventing-javascript-injection-attacks-vb.md)
 - [단위 테스트](unit-testing/index.md)
 
     - [ASP.NET MVC 애플리케이션에 대한 단위 테스트 만들기(C#)](unit-testing/creating-unit-tests-for-asp-net-mvc-applications-cs.md)
     - [ASP.NET MVC 애플리케이션에 대한 단위 테스트 만들기(VB)](unit-testing/creating-unit-tests-for-asp-net-mvc-applications-vb.md)
 - [연락처 관리](contact-manager/index.md)
 
-    - [반복 #1 – 응용 프로그램 (C#) 만들기](contact-manager/iteration-1-create-the-application-cs.md)
-    - [반복 #2 – 응용 프로그램 모양 꾸미기 (C#) 확인](contact-manager/iteration-2-make-the-application-look-nice-cs.md)
-    - [반복 #3-양식 유효성 검사 추가 (C#)](contact-manager/iteration-3-add-form-validation-cs.md)
-    - [반복 #4 – 응용 프로그램을 느슨하게 결합 (C#) 확인](contact-manager/iteration-4-make-the-application-loosely-coupled-cs.md)
-    - [반복 #5-단위 테스트 만들기 (C#)](contact-manager/iteration-5-create-unit-tests-cs.md)
-    - [반복 #6-테스트 기반 개발 (C#) 사용](contact-manager/iteration-6-use-test-driven-development-cs.md)
-    - [반복 #7 – Ajax 기능 추가 (C#)](contact-manager/iteration-7-add-ajax-functionality-cs.md)
-    - [반복 #1 – (VB) 응용 프로그램 만들기](contact-manager/iteration-1-create-the-application-vb.md)
-    - [반복 #2 – 응용 프로그램 모양 꾸미기 (VB) 확인](contact-manager/iteration-2-make-the-application-look-nice-vb.md)
-    - [반복 #3-양식 유효성 검사 추가 (VB)](contact-manager/iteration-3-add-form-validation-vb.md)
-    - [반복 #4 – 응용 프로그램을 느슨하게 결합 (VB) 확인](contact-manager/iteration-4-make-the-application-loosely-coupled-vb.md)
-    - [반복 #5-단위 테스트 만들기 (VB)](contact-manager/iteration-5-create-unit-tests-vb.md)
-    - [반복 #6-사용 하 여 테스트 기반 개발 (VB)](contact-manager/iteration-6-use-test-driven-development-vb.md)
-    - [반복 #7 – Ajax 기능 추가 (VB)](contact-manager/iteration-7-add-ajax-functionality-vb.md)
+    - [반복 #1 – 애플리케이션 만들기(C#)](contact-manager/iteration-1-create-the-application-cs.md)
+    - [반복 #2 – 애플리케이션 모양 꾸미기(C#)](contact-manager/iteration-2-make-the-application-look-nice-cs.md)
+    - [반복 #3 - 양식 유효성 검사 추가(C#)](contact-manager/iteration-3-add-form-validation-cs.md)
+    - [반복 #4 – 애플리케이션을 느슨하게 결합(C#)](contact-manager/iteration-4-make-the-application-loosely-coupled-cs.md)
+    - [반복 #5 - 단위 테스트 만들기(C#)](contact-manager/iteration-5-create-unit-tests-cs.md)
+    - [반복 #6 - 테스트 중심 개발 사용(C#)](contact-manager/iteration-6-use-test-driven-development-cs.md)
+    - [반복 #7 – Ajax 기능 추가(C#)](contact-manager/iteration-7-add-ajax-functionality-cs.md)
+    - [반복 #1 – 애플리케이션 만들기(VB)](contact-manager/iteration-1-create-the-application-vb.md)
+    - [반복 #2 – 애플리케이션 모양 꾸미기(VB)](contact-manager/iteration-2-make-the-application-look-nice-vb.md)
+    - [반복 #3 - 양식 유효성 검사 추가(VB)](contact-manager/iteration-3-add-form-validation-vb.md)
+    - [반복 #4 – 애플리케이션을 느슨하게 결합(VB)](contact-manager/iteration-4-make-the-application-loosely-coupled-vb.md)
+    - [반복 #5 - 단위 테스트 만들기(VB)](contact-manager/iteration-5-create-unit-tests-vb.md)
+    - [반복 #6 - 테스트 중심 개발 사용(VB)](contact-manager/iteration-6-use-test-driven-development-vb.md)
+    - [반복 #7 – Ajax 기능 추가(VB)](contact-manager/iteration-7-add-ajax-functionality-vb.md)
 - [NerdDinner](nerddinner/index.md)
 
     - [NerdDinner 자습서 소개](nerddinner/introducing-the-nerddinner-tutorial.md)
@@ -132,9 +132,9 @@ ms.locfileid: "59399634"
     - [인증 및 권한 부여를 사용하여 애플리케이션 보호](nerddinner/secure-applications-using-authentication-and-authorization.md)
     - [AJAX를 사용하여 동적 업데이트 제공](nerddinner/use-ajax-to-deliver-dynamic-updates.md)
     - [AJAX를 사용하여 매핑 시나리오 구현](nerddinner/use-ajax-to-implement-mapping-scenarios.md)
-    - [자동화된 유닛 테스트 사용](nerddinner/enable-automated-unit-testing.md)
+    - [자동화 단위 테스트 사용](nerddinner/enable-automated-unit-testing.md)
     - [NerdDinner 요약](nerddinner/nerddinner-wrap-up.md)
 - [영화 데이터베이스](movie-database/index.md)
 
-    - [ASP.NET MVC를 사용하여 15분 만에 영화 데이터베이스 애플리케이션 만들기(C#)](movie-database/create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs.md)
-    - [ASP.NET MVC를 사용하여 15분 만에 영화 데이터베이스 애플리케이션 만들기(VB)](movie-database/create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb.md)
+    - [ASP.NET MVC를 사용하여 15분만에 영화 데이터베이스 애플리케이션 만들기(C#)](movie-database/create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs.md)
+    - [ASP.NET MVC를 사용하여 15분만에 영화 데이터베이스 애플리케이션 만들기(VB)](movie-database/create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb.md)

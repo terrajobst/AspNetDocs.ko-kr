@@ -12,7 +12,7 @@ ms.openlocfilehash: b3c38ef329f4b6b2afe5ba0cbb13b615b1580590
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59397593"
 ---
 # <a name="how-do-i--implement-tracing-in-an-aspnet-web-site"></a>[어떻게 할까요?]  ASP.NET 웹 사이트에서 추적을 구현?

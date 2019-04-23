@@ -12,7 +12,7 @@ ms.openlocfilehash: 5916531603ed66c8e0a9448c168cb81f673e129c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59397508"
 ---
 # <a name="how-do-i-set-up-distributed-load-testing-for-high-volume-tests"></a>[어떻게 할까요?] 대용량 테스트에 대 한 분산된 부하 테스트 설정?

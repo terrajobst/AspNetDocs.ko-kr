@@ -12,7 +12,7 @@ ms.openlocfilehash: 14ca6675bf8024e7dbc5f22497a4bc8ab236dd69
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59401454"
 ---
 # <a name="how-do-i-customize-my-site-with-profiles-and-themes"></a>[어떻게 할까요?] 프로필과 테마를 사용 하 여 사이트를 사용자 지정?

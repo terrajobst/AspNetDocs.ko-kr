@@ -12,7 +12,7 @@ ms.openlocfilehash: 960cd6f82909919d07e976a90691c4a7d7fb3686
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59406433"
 ---
 # <a name="how-do-i-use-the-aspnet-ajax-slideshow-extender"></a>[어떻게 할까요?] ASP.NET AJAX 슬라이드 쇼 Extender 사용

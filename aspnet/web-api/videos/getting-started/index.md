@@ -12,7 +12,7 @@ ms.openlocfilehash: 5cec547993722e587fc0f54486f7f2ca388db64d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59404106"
 ---
 # <a name="aspnet-web-api-overview-and-getting-started-videos"></a>ASP.NET 웹 API 개요 및 시작 시작 비디오
@@ -21,9 +21,9 @@ ms.locfileid: "59404106"
 
 
 - [ASP.NET Web API](aspnet-web-api.md)
-- [ASP.NET Web API, 1부: 첫 번째 Web API](your-first-web-api.md)
-- [ASP.NET Web API, 2부: 데이터 가져오기](getting-data.md)
-- [ASP.NET Web API, 3부: 삭제 및 업데이트](delete-and-update.md)
-- [ASP.NET Web API, 4부: 페이징 및 쿼리](paging-and-querying.md)
-- [ASP.NET Web API, 5부: 사용자 지정 유효성 검사](custom-validation.md)
-- [ASP.NET Web API, 6부: 권한 부여](authorization.md)
+- [ASP.NET Web API, 1 부: 첫 번째 Web API](your-first-web-api.md)
+- [ASP.NET Web API, 2 부: 데이터 가져오기](getting-data.md)
+- [ASP.NET Web API, 3 부: 삭제 및 업데이트](delete-and-update.md)
+- [ASP.NET Web API, 4 부: 페이징 및 쿼리](paging-and-querying.md)
+- [ASP.NET Web API, 5 부: 사용자 지정 유효성 검사](custom-validation.md)
+- [ASP.NET Web API, 6 부: 권한 부여](authorization.md)

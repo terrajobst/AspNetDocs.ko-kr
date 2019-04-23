@@ -12,7 +12,7 @@ ms.openlocfilehash: 2ebd9162f81f5270c92c6b8d55e2d2dad4660701
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59403430"
 ---
 # <a name="how-do-i-use-the-reponsefilter-property-to-replace-html-in-an-aspnet-page"></a>[어떻게 할까요?] Reponse.Filter 속성을 사용 하 여 ASP.NET 페이지의 HTML 바꾸기

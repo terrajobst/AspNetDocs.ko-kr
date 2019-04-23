@@ -12,7 +12,7 @@ ms.openlocfilehash: d3a965ccf7ca001d3178819f88836b59f2893bb0
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59406420"
 ---
 # <a name="appendix-the-fix-it-sample-application-building-real-world-cloud-apps-with-azure"></a>부록: 수정이 샘플 응용 프로그램 (Azure 사용 하 여 실제 클라우드 앱 빌드)
@@ -25,8 +25,8 @@ ms.locfileid: "59406420"
 
 이 부록에는 실제 세계 클라우드 앱 빌드 Azure 전자책 Fix It 샘플 응용 프로그램을 다운로드할 수 있습니다 하는 방법에 대 한 추가 정보를 제공 하는 다음 섹션을 포함 합니다.
 
-- [알려진 문제](#knownissues)
-- [최선의 방법](#bestpractices)
+- [알려진된 문제](#knownissues)
+- [모범 사례](#bestpractices)
 - [로컬 컴퓨터에서 Visual Studio에서 앱을 실행 하는 방법](#run-in-vs)
 - [Windows PowerShell 스크립트를 사용 하 여 Azure App Service Web Apps에 기본 앱을 배포 하는 방법](#deploybase)
 - [Windows PowerShell 스크립트 문제 해결](#troubleshooting)

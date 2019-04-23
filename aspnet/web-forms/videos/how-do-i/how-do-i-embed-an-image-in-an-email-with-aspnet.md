@@ -12,7 +12,7 @@ ms.openlocfilehash: fce565c7746acaa10ef1cf68e3ed98e052cca43e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59407278"
 ---
 # <a name="how-do-i-embed-an-image-in-an-email-with-aspnet"></a>[어떻게 할까요?] ASP.NET 사용 하 여 전자 메일에 이미지 포함

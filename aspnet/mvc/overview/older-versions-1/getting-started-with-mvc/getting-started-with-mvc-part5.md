@@ -12,7 +12,7 @@ ms.openlocfilehash: e0b540c030bf600def9b9efad4c73f055a343851
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59402832"
 ---
 # <a name="accessing-your-models-data-from-a-controller"></a>컨트롤러에서 모델의 데이터에 액세스
@@ -26,7 +26,7 @@ ms.locfileid: "59402832"
 
 컨트롤러 폴더를 마우스 오른쪽 단추로 클릭 하 고 새 MoviesController를 확인 합니다.
 
-[![Add 컨트롤러](getting-started-with-mvc-part5/_static/image2.png)](getting-started-with-mvc-part5/_static/image1.png)
+[![컨트롤러 추가](getting-started-with-mvc-part5/_static/image2.png)](getting-started-with-mvc-part5/_static/image1.png)
 
 이 프로젝트 내에서 우리의 \Controllers 폴더 아래에 있는 새 "MoviesController.cs" 파일이 만들어집니다. 영화 목록에 새로 채워진된 데이터베이스에서 검색할 MovieController 업데이트 해 보겠습니다.
 

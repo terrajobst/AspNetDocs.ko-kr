@@ -12,7 +12,7 @@ ms.openlocfilehash: c64e1ea1562c3a0cfe4fb33f1c3033bb9c31bd2c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59402741"
 ---
 # <a name="validating-with-the-idataerrorinfo-interface-vb"></a>IDataErrorInfo 인터페이스를 사용한 유효성 검사(VB)
@@ -42,7 +42,7 @@ ms.locfileid: "59402741"
 이 자습서에서는을 사용 하 여 Microsoft Entity Framework 내 데이터베이스 모델 클래스를 생성 합니다. Entity Framework에서 생성 되는 영화 클래스는 그림 1에 표시 됩니다.
 
 
-[![The Movie entity](validating-with-the-idataerrorinfo-interface-vb/_static/image1.jpg)](validating-with-the-idataerrorinfo-interface-vb/_static/image1.png)
+[![영화 엔터티](validating-with-the-idataerrorinfo-interface-vb/_static/image1.jpg)](validating-with-the-idataerrorinfo-interface-vb/_static/image1.png)
 
 **그림 01**: 영화 엔터티 ([클릭 하 여 큰 이미지 보기](validating-with-the-idataerrorinfo-interface-vb/_static/image2.png))
 
@@ -73,7 +73,7 @@ IsValid 속성 유효성 검사 오류가 있을 때 false를 반환 합니다. 
 영화 클래스는 Entity Framework에 의해 생성 됩니다. 솔루션 탐색기 창에서 MoviesDBModel.edmx 파일을 확장 하 고 MoviesDBModel.Designer.vb 파일을 코드 편집기에서 엽니다 영화 클래스에 대 한 코드를 볼 수 있습니다 (그림 2 참조).
 
 
-[![T영화 엔터티에 대 한 코드](validating-with-the-idataerrorinfo-interface-vb/_static/image2.jpg)](validating-with-the-idataerrorinfo-interface-vb/_static/image3.png)
+[![영화 엔터티에 대 한 코드](validating-with-the-idataerrorinfo-interface-vb/_static/image2.jpg)](validating-with-the-idataerrorinfo-interface-vb/_static/image3.png)
 
 **그림 02**: 영화 엔터티에 대 한 코드 ([클릭 하 여 큰 이미지 보기](validating-with-the-idataerrorinfo-interface-vb/_static/image4.png))
 
@@ -147,7 +147,7 @@ DefaultModelBinder 클래스는 IDataErrorInfo 인터페이스를 구현 하는�
 홈 컨트롤러 수정 된 영화 클래스를 사용 하는 어떤 방식으로든에서 수정할 필요가 없습니다. 그림 3에 표시 되는 페이지 제목 또는 Director 양식 필드에 없는 값을 입력 하는 경우를 보여 줍니다.
 
 
-[![Creating 작업 메서드가 자동으로](validating-with-the-idataerrorinfo-interface-vb/_static/image3.jpg)](validating-with-the-idataerrorinfo-interface-vb/_static/image5.png)
+[![작업 메서드를 자동으로 만들기](validating-with-the-idataerrorinfo-interface-vb/_static/image3.jpg)](validating-with-the-idataerrorinfo-interface-vb/_static/image5.png)
 
 **그림 03**: 값이 누락 된 폼 ([클릭 하 여 큰 이미지 보기](validating-with-the-idataerrorinfo-interface-vb/_static/image6.png))
 

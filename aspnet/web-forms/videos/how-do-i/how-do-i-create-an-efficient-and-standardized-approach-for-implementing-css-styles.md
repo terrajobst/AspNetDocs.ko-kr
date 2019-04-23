@@ -12,7 +12,7 @@ ms.openlocfilehash: 34d5d109785f5c8fb1daec65293f9b77e947c338
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59403872"
 ---
 # <a name="how-do-i-create-an-efficient-and-standardized-approach-for-implementing-css-styles"></a>어떻게 할까요 CSS 스타일을 구현 하기 위한 효율적이 고 표준화 된 접근 방식을 만들기

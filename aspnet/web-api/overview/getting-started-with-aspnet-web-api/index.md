@@ -13,7 +13,7 @@ ms.openlocfilehash: f5b7c080cdd6331e41751e8a4741f724153ec360
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59403014"
 ---
 # <a name="getting-started-with-aspnet-web-api"></a>ASP.NET Web API 시작
@@ -25,4 +25,4 @@ ms.locfileid: "59403014"
 - [Web API 2의 작업 결과](action-results.md)
 - [ASP.NET Web Forms에 Web API 사용](using-web-api-with-aspnet-web-forms.md)
 - [Web API 도움말 페이지 만들기](creating-api-help-pages.md)
-- [실습: ASP.NET Web API 및 Angular.js를 사용하여 SPA(단일 페이지 애플리케이션) 빌드](build-a-single-page-application-spa-with-aspnet-web-api-and-angularjs.md)
+- [실습: ASP.NET Web API 및 Angular.js를 사용 하 여 단일 페이지 응용 프로그램 (SPA) 빌드](build-a-single-page-application-spa-with-aspnet-web-api-and-angularjs.md)

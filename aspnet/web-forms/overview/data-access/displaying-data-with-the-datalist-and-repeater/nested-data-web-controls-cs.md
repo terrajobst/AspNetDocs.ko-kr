@@ -12,7 +12,7 @@ ms.openlocfilehash: 5dcb0b302a814f25ab8f0e89fb8859fbc0ca665d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59399504"
 ---
 # <a name="nested-data-web-controls-c"></a>중첩된 데이터 웹 컨트롤(C#)
@@ -35,7 +35,7 @@ ms.locfileid: "59399504"
 이 자습서에서는 Repeater를 사용 하는 방법을 다른 Repeater 내에 중첩 합니다. 외부 Repeater 범주의 이름 및 설명을 표시 합니다. 데이터베이스에서 각 범주에 대 한 항목이 포함 됩니다. 각 범주 항목 s 내부 반복기에는 해당 범주에 속하는 각 제품에 대 한 정보가 표시 됩니다 (그림 1 참조) 글머리 기호 목록에서입니다. 이 예제에서는 선언적 및 프로그래밍 방식으로 내부 Repeater를 채우는 방법을 설명 합니다.
 
 
-[![E해당 제품을 함께 범주에 대 한 ach 나와](nested-data-web-controls-cs/_static/image2.png)](nested-data-web-controls-cs/_static/image1.png)
+[![각 범주에 해당 제품을 함께 나와 있습니다.](nested-data-web-controls-cs/_static/image2.png)](nested-data-web-controls-cs/_static/image1.png)
 
 **그림 1**: 각 범주에 해당 제품을 함께 나열 됩니다 ([클릭 하 여 큰 이미지 보기](nested-data-web-controls-cs/_static/image3.png))
 
@@ -47,7 +47,7 @@ ms.locfileid: "59399504"
 열어서 시작 합니다 `NestedControls.aspx` 페이지에서 `DataListRepeaterBasics` 폴더 설정 페이지에 Repeater 컨트롤을 추가 하 고 해당 `ID` 속성을 `CategoryList`합니다. 반복기가 스마트 태그에서 이라는 새 ObjectDataSource를 만들려면 선택 `CategoriesDataSource`합니다.
 
 
-[![N새 ObjectDataSource CategoriesDataSource \ 이름](nested-data-web-controls-cs/_static/image5.png)](nested-data-web-controls-cs/_static/image4.png)
+[![새 ObjectDataSource CategoriesDataSource 이름](nested-data-web-controls-cs/_static/image5.png)](nested-data-web-controls-cs/_static/image4.png)
 
 **그림 2**: 이름을 새 ObjectDataSource `CategoriesDataSource` ([큰 이미지를 보려면 클릭](nested-data-web-controls-cs/_static/image6.png))
 
@@ -55,7 +55,7 @@ ms.locfileid: "59399504"
 해당 데이터를 가져오는 있도록 ObjectDataSource를 구성 합니다 `CategoriesBLL` s 클래스 `GetCategories` 메서드.
 
 
-[![Configure CategoriesBLL 클래스의 GetCategories 메서드를 사용 하는 ObjectDataSource](nested-data-web-controls-cs/_static/image8.png)](nested-data-web-controls-cs/_static/image7.png)
+[![S CategoriesBLL 클래스 GetCategories 메서드를 사용 하는 ObjectDataSource 구성](nested-data-web-controls-cs/_static/image8.png)](nested-data-web-controls-cs/_static/image7.png)
 
 **그림 3**: ObjectDataSource를 사용 하 여 구성 합니다 `CategoriesBLL` s 클래스 `GetCategories` 메서드 ([클릭 하 여 큰 이미지 보기](nested-data-web-controls-cs/_static/image9.png))
 
@@ -68,7 +68,7 @@ ms.locfileid: "59399504"
 그림 4에서는 브라우저를 통해 볼 때 진행 상황을 보여 줍니다.
 
 
-[![E범주 이름이 대 한 ach 및 설명을 나열 수평선 구분 됩니다](nested-data-web-controls-cs/_static/image11.png)](nested-data-web-controls-cs/_static/image10.png)
+[![각 이름이 범주와 설명이 나열 되어 단락 구분선 구분](nested-data-web-controls-cs/_static/image11.png)](nested-data-web-controls-cs/_static/image10.png)
 
 **그림 4**: 각 이름이 범주와 설명이 나열 되어 단락 구분선으로 구분 된 ([클릭 하 여 큰 이미지 보기](nested-data-web-controls-cs/_static/image12.png))
 
@@ -116,7 +116,7 @@ ObjectDataSource 접근 방식을 사용 하는 경우 설정 해야 합니다 `
 이 이벤트 처리기를 사용 하 여는 `ProductsByCategoryList` 각 반복기 `RepeaterItem` 에서 해당 제품에 바인딩되는 `RepeaterItem`의 범주입니다. 그림 5에서는 결과 출력의 스크린 샷을 보여 줍니다.
 
 
-[![T외부 Repeater 목록을 범주별; 해당 범주에 대 한 제품을 나열 하는 내부](nested-data-web-controls-cs/_static/image14.png)](nested-data-web-controls-cs/_static/image13.png)
+[![외부 Repeater; 각 범주를 나열합니다. 해당 범주에 대 한 제품을 나열 하는 내부](nested-data-web-controls-cs/_static/image14.png)](nested-data-web-controls-cs/_static/image13.png)
 
 **그림 5**: 외부 Repeater; 각 범주를 나열합니다. 내부 하나는 해당 범주에 대 한 제품 ([클릭 하 여 큰 이미지 보기](nested-data-web-controls-cs/_static/image15.png))
 
