@@ -12,7 +12,7 @@ ms.openlocfilehash: b59cd34036c733579e678eab78097d3393f3e671
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59421084"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-troubleshooting"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 문제 해결
@@ -28,7 +28,7 @@ ms.locfileid: "59421084"
 
 표시 된 시나리오는 Azure와 타사 호스팅 공급자에 적용 됩니다. Azure App Service에서 웹 앱 문제를 해결 하는 방법에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
-- [Visual Studio를 사용 하 여 Azure App Service에서 웹 앱 문제 해결](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-troubleshoot-visual-studio/)
+- [Visual Studio를 사용하여 Azure App Service의 웹앱 문제 해결](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-troubleshoot-visual-studio/)
 - [Azure App Service에서 Web Apps 모니터링](https://azure.microsoft.com/documentation/articles/web-sites-monitor//)
 - [.NET 용 Windows Azure SDK 2.0의 출시를 발표](http://https://weblogs.asp.net/scottgu/announcing-the-release-of-windows-azure-sdk-2-0-for-net) (ScottGu의 블로그는 Visual Studio에서 진단 로그를 가져오는 방법을 표시 하는 데 사용)
 
@@ -306,7 +306,7 @@ Web deployment 작업에 실패 했습니다. (원격 에이전트 URL로 요청
 
 ### <a name="possible-cause-and-solution"></a>가능한 원인 및 해결
 
-기본적으로 Visual Studio 설정 사이트의 루트 폴더에 읽기 권한 및 앱에 대 한 쓰기 권한이\_데이터 폴더. 추가 하 여이 동작을 해제 하는 사이트 폴더에 대 한 기본 권한을 올바른지, 그리고 설정할 필요가 없습니다를 알면 ** &lt;IncludeSetACLProviderOn 대상&gt;False&lt;/ IncludeSetACLProviderOnDestination&gt; ** (모든 프로필 적용할).wpp.targets 파일 또는 게시 프로필 파일 (단일 프로필을 적용할). 이러한 파일을 편집 하는 방법에 대 한 정보를 참조 하세요. [방법: 프로필 (.pubxml) 파일에서 배포 설정을 편집](https://msdn.microsoft.com/library/ff398069.aspx)합니다.
+기본적으로 Visual Studio 설정 사이트의 루트 폴더에 읽기 권한 및 앱에 대 한 쓰기 권한이\_데이터 폴더. 추가 하 여이 동작을 해제 하는 사이트 폴더에 대 한 기본 권한을 올바른지, 그리고 설정할 필요가 없습니다를 알면 **&lt;IncludeSetACLProviderOn 대상&gt;False&lt;/ IncludeSetACLProviderOnDestination&gt;** (모든 프로필 적용할).wpp.targets 파일 또는 게시 프로필 파일 (단일 프로필을 적용할). 이러한 파일을 편집 하는 방법에 대 한 정보를 참조 하세요. [방법: 프로필 (.pubxml) 파일에서 배포 설정을 편집](https://msdn.microsoft.com/library/ff398069.aspx)합니다.
 
 ## <a name="access-denied-errors-when-the-application-tries-to-write-to-an-application-folder"></a>응용 프로그램을 응용 프로그램 폴더에 기록 하려고 할 때 액세스 거부 오류
 
@@ -316,7 +316,7 @@ Web deployment 작업에 실패 했습니다. (원격 에이전트 URL로 요청
 
 ### <a name="possible-cause-and-solution"></a>가능한 원인 및 해결
 
-기본적으로 Visual Studio 설정 사이트의 루트 폴더에 읽기 권한 및 앱에 대 한 쓰기 권한이\_데이터 폴더. 응용 프로그램 하위 폴더에 대 한 쓰기 액세스에 필요한 경우이 시리즈의 자습서에서는 프로덕션 환경에 배포 폴더 사용 권한 설정에 표시 된 것 처럼 해당 폴더에 대 한 권한을 설정할 수 있습니다. 응용 프로그램 사이트의 루트 폴더에 대 한 쓰기 액세스에 필요한 경우 추가 하 여 루트 폴더에 읽기 전용 액세스를 설정 하지 못하도록 ** &lt;IncludeSetACLProviderOn 대상&gt;False&lt;/ IncludeSetACLProviderOnDestination&gt; ** (모든 프로필 적용할).wpp.targets 파일 또는 게시 프로필 파일 (단일 프로필을 적용할). 이러한 파일을 편집 하는 방법에 대 한 정보를 참조 하세요. [방법: 프로필 (.pubxml) 파일에서 배포 설정을 편집](https://msdn.microsoft.com/library/ff398069.aspx)합니다.
+기본적으로 Visual Studio 설정 사이트의 루트 폴더에 읽기 권한 및 앱에 대 한 쓰기 권한이\_데이터 폴더. 응용 프로그램 하위 폴더에 대 한 쓰기 액세스에 필요한 경우이 시리즈의 자습서에서는 프로덕션 환경에 배포 폴더 사용 권한 설정에 표시 된 것 처럼 해당 폴더에 대 한 권한을 설정할 수 있습니다. 응용 프로그램 사이트의 루트 폴더에 대 한 쓰기 액세스에 필요한 경우 추가 하 여 루트 폴더에 읽기 전용 액세스를 설정 하지 못하도록 **&lt;IncludeSetACLProviderOn 대상&gt;False&lt;/ IncludeSetACLProviderOnDestination&gt;** (모든 프로필 적용할).wpp.targets 파일 또는 게시 프로필 파일 (단일 프로필을 적용할). 이러한 파일을 편집 하는 방법에 대 한 정보를 참조 하세요. [방법: 프로필 (.pubxml) 파일에서 배포 설정을 편집](https://msdn.microsoft.com/library/ff398069.aspx)합니다.
 
 <a id="aspnet45error"></a>
 
