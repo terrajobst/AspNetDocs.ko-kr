@@ -12,7 +12,7 @@ ms.openlocfilehash: 1fd12181e26012c59bde3e6fe153c196d8bf0d31
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413193"
 ---
 # <a name="launching-a-modal-popup-window-from-server-code-c"></a>서버 코드에서 모달 팝업 창 시작(C#)
@@ -65,7 +65,7 @@ ASP.NET AJAX를을 기준으로 모든 웹 페이지와 마찬가지로 스크�
 `$find()` 함수 페이지에서 명명된 된 요소를 찾고 및 서버 쪽 ID를 매개 변수로 필요 합니다. 따라서 `$find("mpe")` ModalPopup 컨트롤의 클라이언트 표시를 반환 합니다. 해당 `show()` 메서드를 표시 하는 팝업을 사용 합니다.
 
 
-[![T모달 팝업 그 때 나타나는 단추 중 하나를 클릭](launching-a-modal-popup-window-from-server-code-cs/_static/image2.png)](launching-a-modal-popup-window-from-server-code-cs/_static/image1.png)
+[![모달 팝업이 표시 되는 경우 단추 중 하나를 클릭](launching-a-modal-popup-window-from-server-code-cs/_static/image2.png)](launching-a-modal-popup-window-from-server-code-cs/_static/image1.png)
 
 모달 팝업이 표시 되는 경우 단추 중 하나를 클릭 하 고 ([클릭 하 여 큰 이미지 보기](launching-a-modal-popup-window-from-server-code-cs/_static/image3.png))
 

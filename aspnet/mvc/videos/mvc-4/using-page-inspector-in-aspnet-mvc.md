@@ -12,7 +12,7 @@ ms.openlocfilehash: 89e274e447a67bda0b1f499ea70041365c2157cf
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59418120"
 ---
 # <a name="using-page-inspector-in-aspnet-mvc"></a>ASP.NET MVC에서 페이지 검사기 사용

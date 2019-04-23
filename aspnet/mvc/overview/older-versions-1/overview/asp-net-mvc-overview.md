@@ -12,7 +12,7 @@ ms.openlocfilehash: 149312e2ddf0a5023a4a12f5b05852f7da6b18f8
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59418172"
 ---
 # <a name="aspnet-mvc-overview"></a>ASP.NET MVC 개요
@@ -29,7 +29,7 @@ MVC에는 많은 개발자가 익숙한 표준 디자인 패턴입니다. 일부
 MVC 프레임 워크는 다음 구성 요소를 포함 합니다.
 
 
-[![I매개 변수 값을 필요로 하는 컨트롤러 작업 nvoking](asp-net-mvc-overview/_static/image1.jpg)](asp-net-mvc-overview/_static/image1.png)
+[![매개 변수 값을 필요로 하는 컨트롤러 작업을 호출 합니다.](asp-net-mvc-overview/_static/image1.jpg)](asp-net-mvc-overview/_static/image1.png)
 
 **그림 01**: 매개 변수 값을 필요로 하는 컨트롤러 동작 호출 ([클릭 하 여 큰 이미지 보기](asp-net-mvc-overview/_static/image2.png))
 

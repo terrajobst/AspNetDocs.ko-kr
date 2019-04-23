@@ -12,7 +12,7 @@ ms.openlocfilehash: 8c7b2274ff396f222382488ed877599e86ae5b99
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59412686"
 ---
 # <a name="creating-a-route-constraint-vb"></a>경로 제약 조건 만들기(VB)
@@ -51,14 +51,14 @@ ms.locfileid: "59412686"
 Details() 작업에서 정수 매개 변수 예상 하기 때문에 정수 이외의 값을 포함 하는 요청을 수행 하면 오류가 발생 합니다. 예를 들어 URL /Product/apple 브라우저에 입력 하는 경우 다음 얻게 됩니다 오류 페이지 그림 1.
 
 
-[![T새 프로젝트 대화 상자의 그](creating-a-route-constraint-vb/_static/image1.jpg)](creating-a-route-constraint-vb/_static/image1.png)
+[![새 프로젝트 대화 상자](creating-a-route-constraint-vb/_static/image1.jpg)](creating-a-route-constraint-vb/_static/image1.png)
 
 **그림 01**: 분해 하는 페이지가 표시 ([클릭 하 여 큰 이미지 보기](creating-a-route-constraint-vb/_static/image2.png))
 
 
 실제로 원하는 작업을 수행 하는 Url에는 적절 한 정수 productId와만 일치 합니다. 경로 일치 하는 Url을 제한 하는 제약 조건 경로 정의할 때 사용할 수 있습니다. 보기 3의 수정 된 제품 경로 정수 일치 하는 정규식 제약 조건을 포함 합니다.
 
-**3-Global.asax.vb 나열**
+**Listing 3 - Global.asax.vb**
 
 [!code-vb[Main](creating-a-route-constraint-vb/samples/sample3.vb)]
 

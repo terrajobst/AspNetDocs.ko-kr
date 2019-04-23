@@ -12,7 +12,7 @@ ms.openlocfilehash: 129b6a8f411d482de75e7e5edc5cc919b4d2de52
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59419524"
 ---
 # <a name="host-owin-in-an-azure-worker-role"></a>Azure 작업자 역할에 OWIN 호스트
@@ -149,4 +149,4 @@ Azure 활동 로그 창에 배포 진행률이 표시 됩니다. 앱을 배포�
 ## <a name="additional-resources"></a>추가 리소스
 
 - [프로젝트 Katana 개요](an-overview-of-project-katana.md)
-- [GitHub에서 Katana 프로젝트](https://github.com/aspnet/AspNetKatana/)
+- [Katana Project on GitHub](https://github.com/aspnet/AspNetKatana/)

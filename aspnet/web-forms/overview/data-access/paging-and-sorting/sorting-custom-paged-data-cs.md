@@ -12,7 +12,7 @@ ms.openlocfilehash: a65fe60dc44eb40591733ba9371e409f690fea52
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59409241"
 ---
 # <a name="sorting-custom-paged-data-c"></a>사용자 지정 페이징 데이터 정렬(C#)
@@ -71,7 +71,7 @@ ms.locfileid: "59409241"
 **그림 1**: 저장된 프로시저 s 세 개의 입력 매개 변수에 다른 값을 사용해 보십시오.
 
 
-[![T저장 프로시저의 그 결과 출력 창에 표시 됩니다](sorting-custom-paged-data-cs/_static/image3.png)](sorting-custom-paged-data-cs/_static/image2.png)
+[![저장 프로시저의 결과 출력 창에 표시 됩니다.](sorting-custom-paged-data-cs/_static/image3.png)](sorting-custom-paged-data-cs/_static/image2.png)
 
 **그림 2**: 저장 프로시저의 결과 출력 창에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](sorting-custom-paged-data-cs/_static/image4.png))
 
@@ -145,7 +145,7 @@ GridView에서 정렬 기능을 사용 GridView가 스마트 태그를 GridView 
 그림 7은 기준으로 정렬 된 결과의 첫 페이지는 `UnitPrice` 오름차순으로 정렬 합니다.
 
 
-[![T그 결과 UnitPrice 정렬](sorting-custom-paged-data-cs/_static/image10.png)](sorting-custom-paged-data-cs/_static/image9.png)
+[![UnitPrice 하 여 결과 정렬](sorting-custom-paged-data-cs/_static/image10.png)](sorting-custom-paged-data-cs/_static/image9.png)
 
 **그림 7**: 결과 UnitPrice로 정렬 됩니다 ([클릭 하 여 큰 이미지 보기](sorting-custom-paged-data-cs/_static/image11.png))
 
@@ -166,7 +166,7 @@ GridView에서 정렬 기능을 사용 GridView가 스마트 태그를 GridView 
 **그림 9**: 공급 업체 이름 BoundField의 SortExpression CompanyName 변경
 
 
-[![T공급 업체에서 그 결과 정렬할 수 있습니다](sorting-custom-paged-data-cs/_static/image15.png)](sorting-custom-paged-data-cs/_static/image14.png)
+[![공급 업체에서 결과 정렬할 수 있습니다.](sorting-custom-paged-data-cs/_static/image15.png)](sorting-custom-paged-data-cs/_static/image14.png)
 
 **그림 10**: 결과 이제 정렬할 수 있습니다 공급자 ([클릭 하 여 큰 이미지 보기](sorting-custom-paged-data-cs/_static/image16.png))
 

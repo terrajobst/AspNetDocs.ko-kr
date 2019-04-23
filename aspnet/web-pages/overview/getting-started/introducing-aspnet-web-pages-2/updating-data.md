@@ -12,7 +12,7 @@ ms.openlocfilehash: 4542ad3ac3e321629bb4de3cd4df12c22ff6cb20
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59414623"
 ---
 # <a name="introducing-aspnet-web-pages---updating-database-data"></a>ASP.NET 웹 페이지 소개-데이터베이스 데이터를 업데이트 하는 중

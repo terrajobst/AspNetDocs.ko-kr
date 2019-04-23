@@ -12,7 +12,7 @@ ms.openlocfilehash: 21c0a717c299cb72ca7379c9cb128ce5bb80edec
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59409884"
 ---
 # <a name="how-do-i-use-other-javascript-user-interface-libraries-with-aspnet-ajax"></a>[어떻게 할까요?] ASP.NET AJAX와 함께 다른 JavaScript 사용자 인터페이스 라이브러리 사용

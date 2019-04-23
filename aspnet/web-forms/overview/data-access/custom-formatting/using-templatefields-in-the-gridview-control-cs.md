@@ -12,7 +12,7 @@ ms.openlocfilehash: 2e74327b6bcc84df1f341523c305dae9e5205dfd
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408747"
 ---
 # <a name="using-templatefields-in-the-gridview-control-c"></a>GridView 컨트롤에서 TemplateFields 사용(C#)
@@ -37,7 +37,7 @@ GridView이이 정도의 융통성을 수용 하기 위해 사용 하 여 렌더
 이 자습서에 대 한 직원 목록의 모양을 사용자 지정할 TemplateFields 사용 됩니다. 에서는 모든 직원을 나열 됩니다 있지만 직원의 표시 됩니다 특히 하나의 열, 고용 날짜는 달력 컨트롤 및 기간 (일)는 한 채택 되었습니다 회사의 여부를 나타내는 상태 열에서 첫 번째 및 마지막 이름입니다.
 
 
-[![TTemplateFields는 표시를 사용자 지정 하는 데 사용 되는 다음과 같은 세](using-templatefields-in-the-gridview-control-cs/_static/image2.png)](using-templatefields-in-the-gridview-control-cs/_static/image1.png)
+[![세 TemplateFields는 표시를 사용자 지정 하는 데 사용 됩니다.](using-templatefields-in-the-gridview-control-cs/_static/image2.png)](using-templatefields-in-the-gridview-control-cs/_static/image1.png)
 
 **그림 1**: 세 TemplateFields는 표시를 사용자 지정 하는 데 사용 됩니다 ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-gridview-control-cs/_static/image3.png))
 
@@ -49,7 +49,7 @@ Reporting TemplateFields 모양을 사용자 지정 하는 데 필요한 시나�
 열기는 `GridViewTemplateField.aspx` 페이지 및 디자이너 도구 상자에서 GridView를 끕니다. GridView의 스마트 태그에서 호출 하는 새 ObjectDataSource 컨트롤을 추가 하려면 선택 합니다 `EmployeesBLL` 클래스의 `GetEmployees()` 메서드.
 
 
-[![Add GetEmployees() 메서드를 호출 하는 새 ObjectDataSource 컨트롤](using-templatefields-in-the-gridview-control-cs/_static/image5.png)](using-templatefields-in-the-gridview-control-cs/_static/image4.png)
+[![GetEmployees() 메서드를 호출 하 여 새 ObjectDataSource 컨트롤 추가](using-templatefields-in-the-gridview-control-cs/_static/image5.png)](using-templatefields-in-the-gridview-control-cs/_static/image4.png)
 
 **그림 2**: 해당 Invoke 새 ObjectDataSource 컨트롤을 추가 합니다 `GetEmployees()` 메서드 ([큰 이미지를 보려면 클릭](using-templatefields-in-the-gridview-control-cs/_static/image6.png))
 
@@ -67,7 +67,7 @@ GridView이 방식으로 바인딩을 자동으로 추가 됩니다을 BoundFiel
 시간을 내어 브라우저에서 진행 상황을 보고 합니다. 이 시점에서 각 직원 및 네 개의 열을 레코드가 포함 된 테이블을 볼 수 있습니다: 직원의 성, 이름, 직함에 대 한 하나 및 입사 날짜에 하나 하나입니다.
 
 
-[![T그 LastName, FirstName, 제목 및 HireDate 필드는 각 직원에 대 한 표시는](using-templatefields-in-the-gridview-control-cs/_static/image8.png)](using-templatefields-in-the-gridview-control-cs/_static/image7.png)
+[![LastName, FirstName, 제목 및 HireDate 필드는 각 직원에 대 한 표시 됩니다.](using-templatefields-in-the-gridview-control-cs/_static/image8.png)](using-templatefields-in-the-gridview-control-cs/_static/image7.png)
 
 **그림 3**: 합니다 `LastName`, `FirstName`를 `Title`, 및 `HireDate` 각 직원에 대 한 필드가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-gridview-control-cs/_static/image9.png))
 
@@ -81,7 +81,7 @@ GridView이 방식으로 바인딩을 자동으로 추가 됩니다을 BoundFiel
 기존 BoundField templatefield로 변환할 필드 대화 상자를 불러오는 GridView의 스마트 태그에서 열 편집 링크를 클릭 합니다. 왼쪽된 아래 모서리에 있는 목록에서 변환 하 고 오른쪽 아래 모서리에서 "이이 필드를 TemplateField로 변환" 링크를 클릭 하 여 BoundField를 선택 합니다.
 
 
-[![C변환 BoundField에를 templatefield로 필드 대화 상자에서](using-templatefields-in-the-gridview-control-cs/_static/image11.png)](using-templatefields-in-the-gridview-control-cs/_static/image10.png)
+[![BoundField 필드 대화 상자에서를 TemplateField로 변환](using-templatefields-in-the-gridview-control-cs/_static/image11.png)](using-templatefields-in-the-gridview-control-cs/_static/image10.png)
 
 **그림 4**: 필드 대화 상자에서 BoundField에를 templatefield로 변환 ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-gridview-control-cs/_static/image12.png))
 
@@ -101,7 +101,7 @@ GridView이 방식으로 바인딩을 자동으로 추가 됩니다을 BoundFiel
 디자이너를 통해 추가, GridView의 스마트 태그에서 템플릿 편집 링크를 클릭 합니다. GridView의 템플릿 편집 인터페이스를 표시 됩니다. 이 인터페이스의 스마트 태그는 GridView의 템플릿 목록입니다. 있으므로 하나의 TemplateField이 시점에 드롭다운 목록에 나열 된 템플릿은 해당 템플릿에 대 한 합니다 `FirstName` 함께 TemplateField 합니다 `EmptyDataTemplate` 및 `PagerTemplate`합니다. 합니다 `EmptyDataTemplate` 서식 파일을 지정 하는 경우는 GridView;에 바인딩된 데이터의 이상 결과가 없는 경우 GridView의 출력을 렌더링 하는 `PagerTemplate`지정한 경우 페이징을 지원 되는 GridView에 대 한 페이징 인터페이스를 렌더링 하는 데 사용 됩니다.
 
 
-[![TGridView의 템플릿 수 수 편집을 통해 the 디자이너](using-templatefields-in-the-gridview-control-cs/_static/image14.png)](using-templatefields-in-the-gridview-control-cs/_static/image13.png)
+[![GridView의 템플릿 디자이너를 통해 편집할 수 있습니다.](using-templatefields-in-the-gridview-control-cs/_static/image14.png)](using-templatefields-in-the-gridview-control-cs/_static/image13.png)
 
 **그림 5**: GridView의 템플릿 수 수 편집을 통해 the 디자이너 ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-gridview-control-cs/_static/image15.png))
 
@@ -109,7 +109,7 @@ GridView이 방식으로 바인딩을 자동으로 추가 됩니다을 BoundFiel
 도 표시할 합니다 `LastName` 에 `FirstName` TemplateField 도구에서 레이블 컨트롤을 끌어를 `FirstName` TemplateField의 `ItemTemplate` gridview에서의 템플릿 편집 인터페이스.
 
 
-[![AFirstName TemplateField의 ItemTemplate 레이블 웹 컨트롤을 dd](using-templatefields-in-the-gridview-control-cs/_static/image17.png)](using-templatefields-in-the-gridview-control-cs/_static/image16.png)
+[![FirstName TemplateField의 ItemTemplate에 레이블 웹 컨트롤 추가](using-templatefields-in-the-gridview-control-cs/_static/image17.png)](using-templatefields-in-the-gridview-control-cs/_static/image16.png)
 
 **그림 6**: 레이블 웹 컨트롤을 추가 합니다 `FirstName` TemplateField의 ItemTemplate ([큰 이미지를 보려면 클릭](using-templatefields-in-the-gridview-control-cs/_static/image18.png))
 
@@ -117,7 +117,7 @@ GridView이 방식으로 바인딩을 자동으로 추가 됩니다을 BoundFiel
 이 시점에서 templatefield로 추가 레이블 웹 컨트롤에 해당 `Text` 속성이 "Label"로 설정 합니다. 이 속성의 값에 바인딩되어 있으므로이 변경 해야 합니다 `LastName` 데이터 필드를 대신 합니다. 레이블 컨트롤의 스마트 태그를이 클릭이 수행 및 데이터 바인딩 편집 옵션을 선택 합니다.
 
 
-[![C레이블의 스마트 태그에서 편집할 데이터 바인딩 옵션을 설치할](using-templatefields-in-the-gridview-control-cs/_static/image20.png)](using-templatefields-in-the-gridview-control-cs/_static/image19.png)
+[![레이블의 스마트 태그에서 편집 데이터 바인딩 옵션을 선택 합니다.](using-templatefields-in-the-gridview-control-cs/_static/image20.png)](using-templatefields-in-the-gridview-control-cs/_static/image19.png)
 
 **그림 7**: 레이블의 스마트 태그에서 데이터 바인딩 편집 옵션을 선택 ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-gridview-control-cs/_static/image21.png))
 
@@ -125,7 +125,7 @@ GridView이 방식으로 바인딩을 자동으로 추가 됩니다을 BoundFiel
 DataBindings 대화 상자가 표시 됩니다. 여기에서 왼쪽 목록에서 데이터 바인딩에 참여 하 고 오른쪽의 드롭다운 목록에서 데이터를 바인딩할 필드를 선택 합니다. 속성을 선택할 수 있습니다. 선택 합니다 `Text` 왼쪽에서 속성 및 `LastName` 오른쪽에서 필드를 클릭 합니다.
 
 
-[![BLastName 데이터 필드에 텍스트 속성 찾기](using-templatefields-in-the-gridview-control-cs/_static/image23.png)](using-templatefields-in-the-gridview-control-cs/_static/image22.png)
+[![LastName 데이터 필드에 Text 속성 바인딩](using-templatefields-in-the-gridview-control-cs/_static/image23.png)](using-templatefields-in-the-gridview-control-cs/_static/image22.png)
 
 **그림 8**: 바인딩하는 `Text` 속성을 합니다 `LastName` 데이터 필드 ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-gridview-control-cs/_static/image24.png))
 
@@ -137,7 +137,7 @@ DataBindings 대화 상자가 표시 됩니다. 여기에서 왼쪽 목록에서
 브라우저를 통해이 페이지를 보려면 잠시 시간이 소요 됩니다. GridView 여전히 네 개의 열을 포함 알 수 있듯이 그러나 합니다 `FirstName` 열이 나열 됩니다 *둘 다* 는 `FirstName` 및 `LastName` 데이터 필드 값입니다.
 
 
-[![B다른은 FirstName 및 LastName 값을 단일 열에 표시 된](using-templatefields-in-the-gridview-control-cs/_static/image26.png)](using-templatefields-in-the-gridview-control-cs/_static/image25.png)
+[![FirstName 및 LastName 값을 모두 단일 열에 표시 됩니다.](using-templatefields-in-the-gridview-control-cs/_static/image26.png)](using-templatefields-in-the-gridview-control-cs/_static/image25.png)
 
 **그림 9**: 모두를 `FirstName` 하 고 `LastName` 값은 단일 열에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-gridview-control-cs/_static/image27.png))
 
@@ -148,7 +148,7 @@ DataBindings 대화 상자가 표시 됩니다. 여기에서 왼쪽 목록에서
 [!code-aspx[Main](using-templatefields-in-the-gridview-control-cs/samples/sample4.aspx)]
 
 
-[![E한 열에 대 한 ach 직원의 첫 번째 및 마지막 이름 표시 됩니다](using-templatefields-in-the-gridview-control-cs/_static/image29.png)](using-templatefields-in-the-gridview-control-cs/_static/image28.png)
+[![각 직원의 첫 번째 및 마지막 이름을 하나의 열에 표시 됩니다.](using-templatefields-in-the-gridview-control-cs/_static/image29.png)](using-templatefields-in-the-gridview-control-cs/_static/image28.png)
 
 **그림 10**: 각 직원의 첫 번째 및 마지막 이름을 하나의 열에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-gridview-control-cs/_static/image30.png))
 
@@ -160,7 +160,7 @@ GridView에 텍스트로 데이터 필드 값을 표시 하는 것은 BoundField
 이를 위해 변환 하 여 시작 된 `HiredDate` BoundField를 TemplateField로 합니다. GridView의 스마트 태그에 이동한 단순히 필드 대화 상자를 불러오는 열 편집 링크를 클릭 합니다. 선택 된 `HiredDate` BoundField 및 클릭 "변환"이이 필드를 TemplateField로 합니다.
 
 
-[![C변환 된 HiredDate BoundField에는 TemplateField](using-templatefields-in-the-gridview-control-cs/_static/image32.png)](using-templatefields-in-the-gridview-control-cs/_static/image31.png)
+[![HiredDate BoundField templatefield로 변환](using-templatefields-in-the-gridview-control-cs/_static/image32.png)](using-templatefields-in-the-gridview-control-cs/_static/image31.png)
 
 **그림 11**: 변환 된 `HiredDate` 를 TemplateField로 BoundField ([큰 이미지를 보려면 클릭](using-templatefields-in-the-gridview-control-cs/_static/image33.png))
 
@@ -170,7 +170,7 @@ GridView에 텍스트로 데이터 필드 값을 표시 하는 것은 BoundField
 달력 컨트롤을 사용 하 여 텍스트를 바꾸려면 레이블을 제거 하 고 달력 컨트롤을 추가 하 여 템플릿을 편집 합니다. 디자이너에서 GridView의 스마트 태그에서 템플릿 편집을 선택 하 고 선택 합니다 `HireDate` TemplateField의 `ItemTemplate` 드롭 다운 목록에서. 그런 다음 레이블 컨트롤을 삭제 하 고 템플릿 편집 인터페이스에 도구 상자에서 달력 컨트롤을 끌어.
 
 
-[![Add HireDate TemplateField의 ItemTemplate 하는 달력 컨트롤](using-templatefields-in-the-gridview-control-cs/_static/image35.png)](using-templatefields-in-the-gridview-control-cs/_static/image34.png)
+[![달력 컨트롤을 추가 합니다 TemplateField의 ItemTemplate HireDate](using-templatefields-in-the-gridview-control-cs/_static/image35.png)](using-templatefields-in-the-gridview-control-cs/_static/image34.png)
 
 **그림 12**: 달력 컨트롤을 추가 합니다 `HireDate` TemplateField의 `ItemTemplate` ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-gridview-control-cs/_static/image36.png))
 
@@ -180,7 +180,7 @@ GridView의 각 행은 달력 컨트롤을을 포함 하는 시점에서 해당 
 달력 컨트롤의 스마트 태그에서 데이터 바인딩 편집을 선택 합니다. 다음으로, 둘 다를 바인딩할 `SelectedDate` 하 고 `VisibleDate` 속성을는 `HiredDate` 데이터 필드입니다.
 
 
-[![BSelectedDate 찾기 및 HiredDate 데이터 필드에 VisibleDate 속성](using-templatefields-in-the-gridview-control-cs/_static/image38.png)](using-templatefields-in-the-gridview-control-cs/_static/image37.png)
+[![SelectedDate 속성과 VisibleDate HiredDate 데이터 필드에 바인딩](using-templatefields-in-the-gridview-control-cs/_static/image38.png)](using-templatefields-in-the-gridview-control-cs/_static/image37.png)
 
 **그림 13**: 바인딩 합니다 `SelectedDate` 및 `VisibleDate` 속성을 합니다 `HiredDate` 데이터 필드 ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-gridview-control-cs/_static/image39.png))
 
@@ -192,7 +192,7 @@ GridView의 각 행은 달력 컨트롤을을 포함 하는 시점에서 해당 
 브라우저에서 페이지 보기, 달력 이제 직원의 고용 된 날짜의 월을 표시 하 고 해당 특정 날짜를 선택 합니다.
 
 
-[![T직원의 HiredDate Calendar 컨트롤에 표시 됩니다](using-templatefields-in-the-gridview-control-cs/_static/image41.png)](using-templatefields-in-the-gridview-control-cs/_static/image40.png)
+[![직원의 HiredDate Calendar 컨트롤에 표시 됩니다.](using-templatefields-in-the-gridview-control-cs/_static/image41.png)](using-templatefields-in-the-gridview-control-cs/_static/image40.png)
 
 **그림 14**: 사원의 `HiredDate` Calendar 컨트롤에 표시 됩니다 ([큰 이미지를 보려면 클릭](using-templatefields-in-the-gridview-control-cs/_static/image42.png))
 
@@ -226,7 +226,7 @@ GridView의 각 행은 달력 컨트롤을을 포함 하는 시점에서 해당 
 이 메서드를 활용 하는 데이터 바인딩 구문을 사용 하 여 gridview에서를 TemplateField에서 호출 해야 합니다. GridView의 스마트 태그에서 열 편집 링크를 클릭 하 고 새 templatefield로 추가 하 여 새 templatefield로 GridView에 추가 하 여 시작 합니다.
 
 
-[![AGridView에 새 TemplateField dd](using-templatefields-in-the-gridview-control-cs/_static/image44.png)](using-templatefields-in-the-gridview-control-cs/_static/image43.png)
+[![GridView에 새 templatefield로 추가](using-templatefields-in-the-gridview-control-cs/_static/image44.png)](using-templatefields-in-the-gridview-control-cs/_static/image43.png)
 
 **그림 15**: GridView에 새 templatefield로 추가 ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-gridview-control-cs/_static/image45.png))
 
@@ -252,7 +252,7 @@ GridView의 각 행은 달력 컨트롤을을 포함 하는 시점에서 해당 
 그림 16에서는 브라우저를 통해 볼 때 완성된 된 자습서를 보여 줍니다.
 
 
-[![T그 수의 일 직원의 근무 하는 작업에 표시 됩니다](using-templatefields-in-the-gridview-control-cs/_static/image47.png)](using-templatefields-in-the-gridview-control-cs/_static/image46.png)
+[![표시 되는 직원의 근무 작업의 일 수](using-templatefields-in-the-gridview-control-cs/_static/image47.png)](using-templatefields-in-the-gridview-control-cs/_static/image46.png)
 
 **그림 16**: 표시 되는 직원의 근무 작업의 일 수 ([클릭 하 여 큰 이미지 보기](using-templatefields-in-the-gridview-control-cs/_static/image48.png))
 

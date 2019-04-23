@@ -12,7 +12,7 @@ ms.openlocfilehash: dcc2e703829cfa0b77575870feff451fd0738f56
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59416495"
 ---
 # <a name="intro-to-aspnet-mvc"></a>ASP.NET MVC 소개
@@ -32,11 +32,11 @@ ms.locfileid: "59416495"
 
 다음은 빌드할 응용 프로그램의 두 가지 스크린샷입니다. 다양 한 열을 사용 하 여 동영상의 간단한 테이블을 해야 합니다.
 
-[![Movie List - Windows Internet Explorer (12)](getting-started-with-mvc-part1/_static/image2.png)](getting-started-with-mvc-part1/_static/image1.png)
+[![영화 목록-Windows Internet Explorer (12)](getting-started-with-mvc-part1/_static/image2.png)](getting-started-with-mvc-part1/_static/image1.png)
 
 및 영화 목록에 추가할 수 있도록 만드는 폼을 해야 합니다.
 
-[![CWindows Internet Explorer (2)-동영상을 reate](getting-started-with-mvc-part1/_static/image4.png)](getting-started-with-mvc-part1/_static/image3.png)
+[![동영상-Windows Internet Explorer (2) 만들기](getting-started-with-mvc-part1/_static/image4.png)](getting-started-with-mvc-part1/_static/image3.png)
 
 ## <a name="skills-youll-learn"></a>학습할 기술
 
@@ -61,7 +61,7 @@ Visual Web Developer에는 IDE 또는 통합 개발자 환경입니다. Microsof
 
 Visual Basic 또는 Visual C#을 사용 하 여 응용 프로그램을 만들 수 있습니다. 이제 선택 Visual C# 왼쪽에서 선택 "ASP.NET MVC 2 웹 응용 프로그램입니다." 프로젝트 "Movies" 이름을 지정 하 고 확인을 클릭 합니다.
 
-[![N새로운 기능 Project](getting-started-with-mvc-part1/_static/image8.png)](getting-started-with-mvc-part1/_static/image7.png)
+[![새 프로젝트](getting-started-with-mvc-part1/_static/image8.png)](getting-started-with-mvc-part1/_static/image7.png)
 
 오른쪽에 응용 프로그램에서 모든 파일 및 폴더를 보여 주는 솔루션 탐색기. 중간에 큰 기간은 코드를 편집 하 고 대부분의 시간입니다. 있다면 응용 프로그램을 사용 지금은 아무 작업도 수행 하지 않고 방금 만든 ASP.NET MVC 프로젝트에 대 한 기본 템플릿을 사용 하는 visual Studio! 이 간단한 "Hello World! 프로젝트 되며 응용 프로그램을 시작 하는 것이 좋습니다.
 
@@ -77,7 +77,7 @@ Visual Basic 또는 Visual C#을 사용 하 여 응용 프로그램을 만들 �
 
 이렇게 하면 Visual Web Developer는 개발 웹 서버를 시작 하 고 (구성 또는이 기능을 사용 하는 데 필요한 수동 단계 없는 함) 웹 응용 프로그램을 실행 합니다. 그런 다음 브라우저를 시작 하 고 응용 프로그램의 홈 페이지로 이동 하도록 구성 합니다. 아래는 브라우저의 주소 표시줄 코드는 "localhost" example.com 같이 하지 확인 합니다. Localhost는 방금 빌드한 응용 프로그램을 실행 하는 경우에 자신의 로컬 컴퓨터-항상 가리키는 때문입니다.
 
-[![Home 페이지](getting-started-with-mvc-part1/_static/image13.png)](getting-started-with-mvc-part1/_static/image12.png)
+[![홈 페이지](getting-started-with-mvc-part1/_static/image13.png)](getting-started-with-mvc-part1/_static/image12.png)
 
 기본적으로이 기본 템플릿은 있습니다 두 페이지를 방문 하 고 기본 로그인 페이지를 제공 합니다. 보겠습니다이 응용 프로그램의 작동 방식을 변경할 조금 더 자세히 알아보고 ASP.NET MVC 진행에서 합니다. 브라우저를 닫고 몇 가지 코드를 변경할 수 있습니다.
 

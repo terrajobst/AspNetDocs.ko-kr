@@ -12,7 +12,7 @@ ms.openlocfilehash: 3e5b9d1a3bac0cf1ab042f473f8fd508069000a5
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408578"
 ---
 # <a name="getting-started-with-aspnet-web-pages"></a>ASP.NET 웹 페이지를 사용 하 여 시작
@@ -29,9 +29,9 @@ ms.locfileid: "59408578"
 - [ASP.NET 웹 페이지 소개](introducing-aspnet-web-pages-2/index.md)
 
     - [시작](introducing-aspnet-web-pages-2/getting-started.md)
-    - [프로그래밍 기본 사항](introducing-aspnet-web-pages-2/intro-to-web-pages-programming.md)
+    - [프로그래밍 기본](introducing-aspnet-web-pages-2/intro-to-web-pages-programming.md)
     - [데이터 표시](introducing-aspnet-web-pages-2/displaying-data.md)
-    - [HTML 양식 기본 사항](introducing-aspnet-web-pages-2/form-basics.md)
+    - [HTML 양식 기본](introducing-aspnet-web-pages-2/form-basics.md)
     - [양식을 사용하여 데이터베이스 데이터 입력](introducing-aspnet-web-pages-2/entering-data.md)
     - [데이터베이스 데이터 업데이트](introducing-aspnet-web-pages-2/updating-data.md)
     - [데이터베이스 데이터 삭제](introducing-aspnet-web-pages-2/deleting-data.md)

@@ -12,7 +12,7 @@ ms.openlocfilehash: 19cda45ce1b425462ec491bcc86b7a0b76dec162
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59409800"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-deploying-to-production"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 프로덕션 환경에 배포

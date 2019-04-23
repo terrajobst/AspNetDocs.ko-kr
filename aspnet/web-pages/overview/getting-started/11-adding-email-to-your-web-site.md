@@ -12,7 +12,7 @@ ms.openlocfilehash: 0263f736b96f8e8572536f3783d86c261d7c0512
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59411230"
 ---
 # <a name="sending-email-from-an-aspnet-web-pages-razor-site"></a>ASP.NET 웹 페이지 (Razor) 사이트에서 전자 메일 보내기
@@ -136,5 +136,5 @@ ms.locfileid: "59411230"
 
 
 - [ASP.NET 웹 페이지(Razor) 문제 해결 가이드](https://go.microsoft.com/fwlink/?LinkId=253001)
-- [SMTP(Simple Mail Transfer Protocol)](https://msdn.microsoft.com/library/aa480435.aspx)
+- [Simple Mail Transfer Protocol](https://msdn.microsoft.com/library/aa480435.aspx)
 - [ASP.NET 웹 페이지에 대 한 사이트 전체 동작을 사용자 지정](https://go.microsoft.com/fwlink/?LinkId=202906)

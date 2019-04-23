@@ -12,7 +12,7 @@ ms.openlocfilehash: abedf2dbf6fbc632b1857bf447f70aeb8f826d81
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59410827"
 ---
 # <a name="tutorial-getting-started-with-signalr-1x-and-mvc-4"></a>자습서: SignalR 1.x 및 MVC 4 시작

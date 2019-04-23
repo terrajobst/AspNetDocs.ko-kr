@@ -12,7 +12,7 @@ ms.openlocfilehash: c17e3afaf4406489a14d0537a33fef384d6c5a19
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408968"
 ---
 # <a name="determining-what-files-need-to-be-deployed-c"></a>배포할 파일 확인(C#)
@@ -93,7 +93,7 @@ Microsoft Visual Studio 2005 서비스 팩 1 릴리스되면 웹 응용 프로�
 그림 1에서는 브라우저를 통해 볼 때도 서 리뷰 웹 사이트의 스크린 샷을 보여 줍니다. 페이지를 참조 하는 여기 ~ /`Tech/TYASP35.aspx`, 책을 검토 하는 *가르치는 직접 ASP.NET 3.5 24 시간 동안에서*합니다. 페이지 맨 왼쪽된 열에서 메뉴에 걸쳐 있는 이동 경로에 정의 된 사이트 맵 구조에 기반한 `Web.sitemap`합니다. 오른쪽 위 모서리에서 이미지는 이미지에 있는 책 표지를 `Images` 폴더입니다. 웹 사이트의 모양과 느낌은 가장 중요 한 페이지 레이아웃 마스터 페이지에서 정의 되는 동안 Styles 폴더의 CSS 파일에 의해 명시 하는 스타일 시트 규칙 연계를 통해 정의 된 `Site.master`합니다.
 
 
-[![T웹 사이트 서평 제공 다양 한 제목에서 검토](determining-what-files-need-to-be-deployed-cs/_static/image2.png)](determining-what-files-need-to-be-deployed-cs/_static/image1.png)
+[![서평 웹 사이트의 다양 한 제목 제공](determining-what-files-need-to-be-deployed-cs/_static/image2.png)](determining-what-files-need-to-be-deployed-cs/_static/image1.png)
 
 **그림 1:** 서평 웹 사이트는 다양 한 제목에서의 검토를 제공 ([클릭 하 여 큰 이미지 보기](determining-what-files-need-to-be-deployed-cs/_static/image3.png))
 
@@ -116,7 +116,7 @@ Microsoft Visual Studio 2005 서비스 팩 1 릴리스되면 웹 응용 프로�
 그림 2에서는 책 검토 웹 응용 프로그램 프로젝트를 구성 하는 파일을 보여 줍니다.
 
 
-[![T웹 응용 프로그램 프로젝트를 구성 하는 파일을 나열 그 솔루션 탐색기](determining-what-files-need-to-be-deployed-cs/_static/image5.png)](determining-what-files-need-to-be-deployed-cs/_static/image4.png)
+[![솔루션 탐색기에서 웹 응용 프로그램 프로젝트를 구성 하는 파일 나열](determining-what-files-need-to-be-deployed-cs/_static/image5.png)](determining-what-files-need-to-be-deployed-cs/_static/image4.png)
 
 **그림 2**: 솔루션 탐색기에서 웹 응용 프로그램 프로젝트를 구성 하는 파일 나열
 
@@ -143,7 +143,7 @@ Visual Studio에서 빌드 메뉴 옵션은 웹 응용 프로그램 프로젝트
 그림 3에서는 책 검토 웹 사이트 프로젝트를 구성 하는 파일을 보여 줍니다.
 
 
- [![T웹 사이트 프로젝트를 구성 하는 파일을 나열 그 솔루션 탐색기](determining-what-files-need-to-be-deployed-cs/_static/image7.png)](determining-what-files-need-to-be-deployed-cs/_static/image6.png) 
+ [![웹 사이트 프로젝트를 구성 하는 파일을 나열 하는 솔루션 탐색기](determining-what-files-need-to-be-deployed-cs/_static/image7.png)](determining-what-files-need-to-be-deployed-cs/_static/image6.png) 
 
 **그림 3**: 웹 사이트 프로젝트를 구성 하는 파일을 나열 하는 솔루션 탐색기
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: e4766f6d20c17cf99c11fc634cf15743ef839716
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413713"
 ---
 # <a name="how-do-i-implement-the-incremental-page-display-pattern-using-http-get-and-post"></a>[어떻게 할까요?] HTTP GET 및 POST를 사용 하 여 증분식 페이지 표시 패턴을 구현 하는 무엇입니까?

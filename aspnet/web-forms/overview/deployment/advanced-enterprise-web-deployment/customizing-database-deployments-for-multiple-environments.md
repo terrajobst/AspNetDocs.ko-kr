@@ -12,7 +12,7 @@ ms.openlocfilehash: 865e901618b48bc4bfdc6d7a3ca4e8868d4cb46b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59412985"
 ---
 # <a name="customizing-database-deployments-for-multiple-environments"></a>다중 환경을 위한 데이터베이스 배포 사용자 지정
@@ -68,7 +68,7 @@ ms.locfileid: "59412985"
 
 |  | 개발자/테스트 | 스테이징/통합 | 프로덕션 |
 | --- | --- | --- | --- |
-| **배포 비교 데이터 정렬** | 소스 | 대상 | 대상 |
+| **배포 비교 데이터 정렬** | Source | 대상 | 대상 |
 | **데이터베이스 속성 배포** | True | 최초 구매 시에만 입력 | 최초 구매 시에만 입력 |
 | **항상 데이터베이스 다시 만들기** | True | False | False |
 | **데이터가 손실 되 면 증분 배포 차단** | False | 아마도 | True |

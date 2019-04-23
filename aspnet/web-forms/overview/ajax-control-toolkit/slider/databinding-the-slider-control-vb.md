@@ -12,7 +12,7 @@ ms.openlocfilehash: a60e09b7cdda7f924a4287aab8cda32fef5a53ac
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59419771"
 ---
 # <a name="databinding-the-slider-control-vb"></a>슬라이더 컨트롤 데이터 바인딩(VB)
@@ -45,7 +45,7 @@ ASP.NET AJAX와 Control Toolkit의 기능을 활성화 하기 위해 합니다 `
 양방향에서 데이터 바인딩이 작동 브라우저에서 보듯이: 슬라이더의 위치를 업데이트 하 고 텍스트 상자에 새 값을 입력 합니다. 읽기 전용 두 번째 텍스트 상자를 설정 하면 여기에 값을 수동으로 업데이트 하려면 사용자에 대 한 어렵습니다 있도록 텍스트 필드에 약한 보호를 추가할 수 있습니다.
 
 
-[![Slider 및 텍스트 상자는 동기화](databinding-the-slider-control-vb/_static/image2.png)](databinding-the-slider-control-vb/_static/image1.png)
+[![슬라이더 및 텍스트 상자에 동기화 됩니다.](databinding-the-slider-control-vb/_static/image2.png)](databinding-the-slider-control-vb/_static/image1.png)
 
 슬라이더 및 텍스트 상자에 동기화 됩니다 ([클릭 하 여 큰 이미지 보기](databinding-the-slider-control-vb/_static/image3.png))
 

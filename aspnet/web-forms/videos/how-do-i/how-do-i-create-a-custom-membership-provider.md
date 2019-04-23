@@ -12,7 +12,7 @@ ms.openlocfilehash: 92adf4ece68c64d5f2aba32b23faf04fc5dfe031
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413739"
 ---
 # <a name="how-do-i-create-a-custom-membership-provider"></a>[어떻게 할까요?] 사용자 지정 멤버 자격 공급자 만들기

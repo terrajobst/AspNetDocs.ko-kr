@@ -12,7 +12,7 @@ ms.openlocfilehash: 0d56a600b1b97d9d044fa90b678c942f0dc6fc00
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413830"
 ---
 # <a name="specifying-the-master-page-programmatically-c"></a>마스터 페이지를 프로그래밍 방식으로 지정(C#)
@@ -42,7 +42,7 @@ ASP.NET 엔진 페이지의 fuse 해야 요청 콘텐츠 페이지는 ASP.NET �
 그림 1에서는이 fusion를 보여 줍니다. 그림 1에 1 단계에는 초기 콘텐츠와 마스터 페이지 컨트롤 계층 구조를 보여 줍니다. PreInit 스테이지 콘텐츠 비상 끝날 때 페이지의 컨트롤에 마스터 페이지 (2 단계)의 해당 ContentPlaceHolders에 추가 됩니다. 이 fusion 후 마스터 페이지는 퓨즈 컨트롤 계층의 루트로 사용 됩니다. 제어를 결합 하는이 계층 구조 완성된 컨트롤 계층 구조 (3 단계)를 생성 하기 위해 페이지에 추가 됩니다. 결과는 페이지의 컨트롤 계층 구조 퓨즈 컨트롤 계층 구조에 포함 됩니다.
 
 
-[![T그 마스터 페이지 콘텐츠 페이지의 컨트롤 계층 구조와 함께 결합 PreInit 단계 중](specifying-the-master-page-programmatically-cs/_static/image2.png)](specifying-the-master-page-programmatically-cs/_static/image1.png)
+[![마스터 페이지 콘텐츠 페이지의 컨트롤 계층 구조와 함께 결합 PreInit 단계](specifying-the-master-page-programmatically-cs/_static/image2.png)](specifying-the-master-page-programmatically-cs/_static/image1.png)
 
 **그림 01**: 마스터 페이지 콘텐츠 페이지의 컨트롤 계층 구조와 함께 결합 PreInit 단계 ([클릭 하 여 큰 이미지 보기](specifying-the-master-page-programmatically-cs/_static/image3.png))
 
@@ -83,7 +83,7 @@ PreInit 스테이지의 시작 부분에 `Page` 발생 시키는 개체 해당 [
 유지 해야 하는 간단히 말해 합니다 `MasterPageFile` 특성을 `@Page` 지시문을 Visual Studio에서 다양 한 디자인 타임 경험해 보세요.
 
 
-[![VStudio를 사용 하 여 겨냥 합니다 @Page 디자인 뷰를 렌더링 하는 지시문의 MasterPageFile 특성](specifying-the-master-page-programmatically-cs/_static/image5.png)](specifying-the-master-page-programmatically-cs/_static/image4.png)
+[![Visual Studio 사용을 @Page 디자인 뷰를 렌더링 하는 지시문의 MasterPageFile 특성](specifying-the-master-page-programmatically-cs/_static/image5.png)](specifying-the-master-page-programmatically-cs/_static/image4.png)
 
 **그림 02**: Visual Studio에서 사용 하 여 `@Page` 지시문의 `MasterPageFile` 디자인 뷰를 렌더링할 특성 ([전체 크기 이미지를 보려면 클릭](specifying-the-master-page-programmatically-cs/_static/image6.png))
 
@@ -97,7 +97,7 @@ PreInit 스테이지의 시작 부분에 `Page` 발생 시키는 개체 해당 [
 명명 된 루트 폴더에서 마스터 페이지를 새로 만들 `Alternate.master`합니다. 명명 된 웹 사이트에 새 스타일 시트를 추가할 수도 `AlternateStyles.css`합니다.
 
 
-[![Add 다른 마스터 페이지 및 CSS 파일을 웹 사이트](specifying-the-master-page-programmatically-cs/_static/image8.png)](specifying-the-master-page-programmatically-cs/_static/image7.png)
+[![다른 추가 웹 사이트에 마스터 페이지 및 CSS 파일](specifying-the-master-page-programmatically-cs/_static/image8.png)](specifying-the-master-page-programmatically-cs/_static/image7.png)
 
 **그림 03**: 웹 사이트에 다른 마스터 페이지 및 CSS 파일 추가 ([클릭 하 여 큰 이미지 보기](specifying-the-master-page-programmatically-cs/_static/image9.png))
 
@@ -108,7 +108,7 @@ PreInit 스테이지의 시작 부분에 `Page` 발생 시키는 개체 해당 [
 > 정의 하는 기능을 포함 하는 ASP.NET *테마*합니다. 테마는 이미지, CSS 파일 및 스타일 관련 웹 컨트롤 속성 설정을 런타임 시 페이지에 적용할 수 있는 컬렉션. 테마는 사이트의 레이아웃 및 CSS 규칙을 표시 되는 이미지에만 다른 경우 이동 하는 방법입니다. 레이아웃 등 다양 한 웹 컨트롤을 사용 하거나 전혀 다른 레이아웃을 더 크게 달라 집니다 별도 마스터 페이지를 사용 해야 합니다. 테마에 대 한 자세한 내용은이 자습서의 끝에 추가 정보 섹션을 참조 하세요.
 
 
-[![O콘텐츠 페이지는 새로운 모양과 느낌을 이제 사용할 수](specifying-the-master-page-programmatically-cs/_static/image11.png)](specifying-the-master-page-programmatically-cs/_static/image10.png)
+[![콘텐츠 페이지는 새로운 모양과 느낌을 이제 사용할 수 있습니다.](specifying-the-master-page-programmatically-cs/_static/image11.png)](specifying-the-master-page-programmatically-cs/_static/image10.png)
 
 **그림 04**: 콘텐츠 페이지는 새로운 모양과 느낌을 이제 사용할 수 있습니다 ([클릭 하 여 큰 이미지 보기](specifying-the-master-page-programmatically-cs/_static/image12.png))
 
@@ -206,7 +206,7 @@ PreInit 스테이지의 시작 부분에 `Page` 발생 시키는 개체 해당 [
 > 때문에 `Site.master` 고 `Alternate.master` 동일한 설정한 ContentPlaceHolder 컨트롤의 새 콘텐츠 페이지를 만들 때 선택한 마스터 페이지는 중요 하지 않습니다. 일관성을 위해 것이 좋습니다를 사용 하 여 `Site.master`입니다.
 
 
-[![Add 웹 사이트에 새 콘텐츠 페이지](specifying-the-master-page-programmatically-cs/_static/image14.png)](specifying-the-master-page-programmatically-cs/_static/image13.png)
+[![웹 사이트에 새 콘텐츠 페이지를 추가 합니다.](specifying-the-master-page-programmatically-cs/_static/image14.png)](specifying-the-master-page-programmatically-cs/_static/image13.png)
 
 **그림 05**: 웹 사이트에 새 콘텐츠 페이지 추가 ([클릭 하 여 큰 이미지 보기](specifying-the-master-page-programmatically-cs/_static/image15.png))
 
@@ -251,12 +251,12 @@ PreInit 스테이지의 시작 부분에 `Page` 발생 시키는 개체 해당 [
 이 코드를 사용 하 여 방문을 `ChooseMasterPage.aspx` 페이지입니다. 처음에 `Site.master` 마스터 페이지 선택된 (그림 6 참조), 이지만 사용자 드롭다운 목록에서 다른 마스터 페이지를 선택할 수 있습니다.
 
 
-[![CSite.master 마스터 페이지를 사용 하 여 ontent 페이지는 표시](specifying-the-master-page-programmatically-cs/_static/image17.png)](specifying-the-master-page-programmatically-cs/_static/image16.png)
+[![콘텐츠 페이지 Site.master 마스터 페이지를 사용 하 여 표시 됩니다.](specifying-the-master-page-programmatically-cs/_static/image17.png)](specifying-the-master-page-programmatically-cs/_static/image16.png)
 
 **그림 06**: 페이지는 표시를 사용 하 여 콘텐츠를 `Site.master` 마스터 페이지 ([큰 이미지를 보려면 클릭](specifying-the-master-page-programmatically-cs/_static/image18.png))
 
 
-[![Content 페이지 Alternate.master 마스터 페이지를 사용 하 여 표시 됩니다](specifying-the-master-page-programmatically-cs/_static/image20.png)](specifying-the-master-page-programmatically-cs/_static/image19.png)
+[![콘텐츠 페이지 Alternate.master 마스터 페이지를 사용 하 여 표시 됩니다.](specifying-the-master-page-programmatically-cs/_static/image20.png)](specifying-the-master-page-programmatically-cs/_static/image19.png)
 
 **그림 07**: 페이지는 표시를 사용 하 여 콘텐츠를 `Alternate.master` 마스터 페이지 ([큰 이미지를 보려면 클릭](specifying-the-master-page-programmatically-cs/_static/image21.png))
 

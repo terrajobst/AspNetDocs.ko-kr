@@ -12,7 +12,7 @@ ms.openlocfilehash: 6d25eb99f87c4c3d2c96e021e79a13c90da4a035
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59414493"
 ---
 # <a name="programming-aspnet-web-pages-razor-using-visual-studio"></a>Visual Studio를 사용 하 여 ASP.NET 웹 페이지 (Razor) 프로그래밍

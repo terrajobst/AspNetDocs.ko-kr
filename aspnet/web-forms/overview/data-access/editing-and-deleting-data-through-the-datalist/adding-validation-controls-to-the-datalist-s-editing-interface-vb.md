@@ -12,7 +12,7 @@ ms.openlocfilehash: e91ba6a0c4d2f9cad6d88119e7f33931b7ba5772
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59412803"
 ---
 # <a name="adding-validation-controls-to-the-datalists-editing-interface-vb"></a>DataList의 편집 인터페이스에 유효성 검사 컨트롤 추가(VB)
@@ -45,7 +45,7 @@ ms.locfileid: "59412803"
 3. 내에서 텍스트를 복사 합니다 `<asp:Content>` 및 `</asp:Content>` 그림 1에 표시 된 것된으로 태그 (줄 3 ~ 32).
 
 
-[![C프 내 텍스트를 &lt;asp: Content&gt; 컨트롤](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image2.png)](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image1.png)
+[![텍스트 내에 복사 합니다 &lt;asp: Content&gt; 컨트롤](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image2.png)](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image1.png)
 
 **그림 2**: 텍스트 내에 복사 합니다 `<asp:Content>` 컨트롤 ([큰 이미지를 보려면 클릭](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image3.png))
 
@@ -59,7 +59,7 @@ ms.locfileid: "59412803"
 콘텐츠 및 코드를 통해 이동한 후 `ErrorHandling.aspx` 에 `UIValidation.aspx`, 잠시 브라우저에서 페이지를 테스트 합니다. 이러한 두 페이지 (그림 2 참조)에서 각각에 동일한 기능을 경험 및 동일한 출력이 표시 됩니다.
 
 
-[![TErrorHandling.aspx의 기능을 모방 그 UIValidation.aspx 페이지](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image5.png)](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image4.png)
+[![UIValidation.aspx 페이지 ErrorHandling.aspx의 기능을 모방](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image5.png)](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image4.png)
 
 **그림 2**: 합니다 `UIValidation.aspx` 페이지에서 기능을 모방 `ErrorHandling.aspx` ([클릭 하 여 큰 이미지 보기](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image6.png))
 
@@ -85,7 +85,7 @@ ms.locfileid: "59412803"
 DataList s에 필요한 유효성 검사 컨트롤을 추가 하 여 시작 s `EditItemTemplate`입니다. DataList s 스마트 태그에서 템플릿 편집 링크를 클릭 하 여 디자이너를 통해 또는 선언적 구문을 통해이 작업을 수행할 수 있습니다. 디자인 보기에서 템플릿 편집 옵션을 사용 하는 프로세스를 단계별로를 s 수 있습니다. DataList s를 편집 하려면 선택한 후 `EditItemTemplate`, 후 배치를 RequiredFieldValidator 끌어와 도구 상자에서 템플릿 편집 인터페이스에 추가 된 `ProductName` 텍스트 상자에 붙여넣습니다.
 
 
-[![Add EditItemTemplate 후 the ProductName 텍스트 상자에 RequiredFieldValidator](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image8.png)](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image7.png)
+[![EditItemTemplate는 RequiredFieldValidator ProductName 텍스트 뒤에 추가](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image8.png)](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image7.png)
 
 **그림 3**: RequiredFieldValidator를 추가 합니다 `EditItemTemplate After` 는 `ProductName` 텍스트 상자에 붙여넣습니다 ([전체 크기 이미지를 보려면 클릭](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image9.png))
 
@@ -95,7 +95,7 @@ DataList s에 필요한 유효성 검사 컨트롤을 추가 하 여 시작 s `E
 RequiredFieldValidator의 이러한 세 가지 속성으로 설정한 후 화면 그림 4 유사 합니다.
 
 
-[![SRequiredFieldValidator의 ControlToValidate et, ErrorMessage을 및 텍스트 속성](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image11.png)](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image10.png)
+[![RequiredFieldValidator의 ControlToValidate, ErrorMessage을 및 텍스트 속성 설정](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image11.png)](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image10.png)
 
 **그림 4**: 집합 RequiredFieldValidator s `ControlToValidate`, `ErrorMessage`, 및 `Text` 속성 ([클릭 하 여 큰 이미지 보기](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image12.png))
 
@@ -112,7 +112,7 @@ CompareValidator에 추가 합니다 `EditItemTemplate` 설정 및 해당 `Contr
 다음과 같이 변경한 후 브라우저에서 페이지를 엽니다. 이름을 생략 하거나 제품을 편집 하는 경우 유효 하지 않은 가격 값을 입력 하려는 경우 텍스트 상자 옆에 있는 별표 표시 됩니다. 그림 5에서 알 수 있듯이, $19.95 같은 통화 기호를 포함 하는 가격 잘못 된 간주 됩니다. CompareValidator s `Currency` `Type` 자릿수 구분 기호 (예: 쉼표 또는 마침표 문화권 설정에 따라) 및 선행 더하기 또는 빼기 기호를 허용 하지만 않습니다 *하지* 통화 기호를 허용 합니다. 이 동작은 현재 편집 인터페이스를 렌더링 하는 대로 사용자 perplex 수는 `UnitPrice` 통화 형식을 사용 하 여 합니다.
 
 
-[![A잘못 된 입력을 사용 하 여 텍스트 상자 옆에 별표가 나타납니다 n](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image14.png)](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image13.png)
+[![잘못 된 입력을 사용 하 여 텍스트 상자 옆에 있는 별표 표시 됩니다.](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image14.png)](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image13.png)
 
 **그림 5**: 별표 표시 옆에 잘못 된 입력을 사용 하 여 텍스트 상자 ([클릭 하 여 큰 이미지 보기](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image15.png))
 
@@ -169,7 +169,7 @@ ASP.NET 5 유효성 검사 컨트롤 외에도 포함 합니다 [ValidationSumma
 이렇게 하려면 디자이너 도구 상자에서 ValidationSummary 컨트롤을 끕니다. ValidationSummary 컨트롤 만들어지고 t 위치의 중요 messagebox로 요약만 표시 하도록 구성 하려는 다시 이후로. 컨트롤을 추가한 후 설정 해당 [ `ShowSummary` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.validationsummary.showsummary(VS.80).aspx) 하 `False` 고 [ `ShowMessageBox` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.validationsummary.showmessagebox(VS.80).aspx) 에 `True`입니다. 이 또한을 사용 하 여 유효성 검사 오류는 클라이언트 쪽 messagebox에 요약 되어 (그림 6 참조).
 
 
-[![T그리고 유효성 검사 오류는 클라이언트 쪽 Messagebox에 요약 되어](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image17.png)](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image16.png)
+[![유효성 검사 오류는 클라이언트 쪽 Messagebox에 요약 되어 있습니다.](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image17.png)](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image16.png)
 
 **그림 6**: 유효성 검사 오류를 클라이언트 쪽 Messagebox에 요약 되어 있습니다 ([클릭 하 여 큰 이미지 보기](adding-validation-controls-to-the-datalist-s-editing-interface-vb/_static/image18.png))
 

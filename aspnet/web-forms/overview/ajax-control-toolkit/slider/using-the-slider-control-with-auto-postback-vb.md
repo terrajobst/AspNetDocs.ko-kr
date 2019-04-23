@@ -12,7 +12,7 @@ ms.openlocfilehash: 702cdd898e261f6a5793fa04069b69398745d576
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59415585"
 ---
 # <a name="using-the-slider-control-with-auto-postback-vb"></a>슬라이더 컨트롤을 사용 하 여 포스트백 (VB)
@@ -51,12 +51,12 @@ AJAX Control Toolkit의 슬라이더 컨트롤에 마우스를 사용 하 여 �
 [!code-aspx[Main](using-the-slider-control-with-auto-postback-vb/samples/sample5.aspx)]
 
 
-[![M슬라이더 oving 포스트백 트리거](using-the-slider-control-with-auto-postback-vb/_static/image2.png)](using-the-slider-control-with-auto-postback-vb/_static/image1.png)
+[![포스트백을 트리거하는 슬라이더를 이동 합니다.](using-the-slider-control-with-auto-postback-vb/_static/image2.png)](using-the-slider-control-with-auto-postback-vb/_static/image1.png)
 
 포스트백을 트리거하는 슬라이더를 이동 ([클릭 하 여 큰 이미지 보기](using-the-slider-control-with-auto-postback-vb/_static/image3.png))
 
 
-[![A이 변경의 날짜 레이블에 쓰여질 fterwards](using-the-slider-control-with-auto-postback-vb/_static/image5.png)](using-the-slider-control-with-auto-postback-vb/_static/image4.png)
+[![레이블을이 변경의 날짜 이후에 작성 된](using-the-slider-control-with-auto-postback-vb/_static/image5.png)](using-the-slider-control-with-auto-postback-vb/_static/image4.png)
 
 그런 다음이 변경의 날짜 레이블을 작성 됩니다 ([클릭 하 여 큰 이미지 보기](using-the-slider-control-with-auto-postback-vb/_static/image6.png))
 

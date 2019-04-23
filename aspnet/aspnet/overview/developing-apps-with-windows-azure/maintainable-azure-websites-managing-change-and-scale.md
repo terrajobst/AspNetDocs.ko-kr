@@ -12,7 +12,7 @@ ms.openlocfilehash: ec0058472f8bc1d8d58e7c78deeb8b6097532510
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59409735"
 ---
 # <a name="hands-on-lab-maintainable-azure-websites-managing-change-and-scale"></a>실습: 유지 관리 가능한 Azure 웹 사이트: 변경 및 확장 관리
@@ -131,7 +131,7 @@ ms.locfileid: "59409735"
 
     ![마이그레이션을 사용 하도록 설정](maintainable-azure-websites-managing-change-and-scale/_static/image1.png "마이그레이션을 사용 하도록 설정")
 
-    *마이그레이션을 사용하도록 설정*
+    *마이그레이션을 사용 하도록 설정*
 
     > [!NOTE]
     > 이 명령은 추가 **마이그레이션을** Geek 퀴즈 프로젝트 파일이 포함 된 폴더의 이름은 **Configuration.cs**합니다. 합니다 **구성** 클래스를 사용 하면 마이그레이션에 대해 동작 하는 방식을 구성할 수 있습니다.
@@ -198,7 +198,7 @@ ms.locfileid: "59409735"
 
     ![Add-Migration](maintainable-azure-websites-managing-change-and-scale/_static/image8.png "Add-Migration")
 
-    *추가 마이그레이션*
+    *Add-Migration*
 
     > [!NOTE]
     > 두 가지 방법으로 구성 된 마이그레이션 파일 **위로** 하 고 **아래로**합니다.

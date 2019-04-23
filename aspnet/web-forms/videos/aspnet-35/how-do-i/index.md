@@ -12,7 +12,7 @@ ms.openlocfilehash: 8a7251971410ef2539e3957039de33af6e74371c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59415455"
 ---
 # <a name="how-do-i"></a>작업 절차
@@ -30,4 +30,4 @@ ms.locfileid: "59415455"
 - [Entity Framework 시작](how-do-i-get-started-with-the-entity-framework.md)
 - [새 엔터티 데이터 원본 사용](how-do-i-use-the-new-entity-data-source.md)
 - [Entity Framework를 사용하여 그래프 직렬화](how-do-i-serialize-a-graph-with-the-entity-framework.md)
-- [MSBuild를 사용하여 ASP.NET 컴파일러를 자동화하고 유틸리티 병합](how-do-i-use-msbuild-to-automate-the-aspnet-compiler-and-merge-utilities.md)
+- [MSBuild를 사용하여 ASP.NET 컴파일러를 자동화 하고 유틸리티 병합](how-do-i-use-msbuild-to-automate-the-aspnet-compiler-and-merge-utilities.md)

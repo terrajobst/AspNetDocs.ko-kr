@@ -12,7 +12,7 @@ ms.openlocfilehash: b9da2522cfaed324a23f43265d4e234ebb4950bd
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59411126"
 ---
 # <a name="whats-new-in-aspnet-mvc-4"></a>ASP.NET MVC 4의 새로운 기능
@@ -173,7 +173,7 @@ ASP.NET MVC 4는 체계적인 디자인 패턴 및 ASP.NET 및.NET framework의 
 
    *ASP.NET MVC 4 인터넷 응용 프로그램 프로젝트 템플릿*
 
-    - **HTML 5 Markup**
+    - **HTML 5 태그**
 
        새 테마 태그를 확인 하려면 템플릿 뷰를 찾습니다.
 
@@ -547,7 +547,7 @@ jQuery Mobile의 기본 테마에는 문자를 지정 된 5 견본 포함 (a, b,
 
     ![페이지에 대 한](whats-new-in-aspnet-mvc-4/_static/image33.png "페이지에 대 한")
 
-    *정보 페이지*
+    *페이지에 대 한*
 8. 마지막으로, 데스크톱 웹 브라우저에서 사이트를 엽니다. 이전 업데이트에 영향을 미치지 않습니다 바탕 화면 보기를 확인 합니다.
 
     ![바탕 화면 보기 PhotoGallery](whats-new-in-aspnet-mvc-4/_static/image34.png "PhotoGallery 바탕 화면 보기")

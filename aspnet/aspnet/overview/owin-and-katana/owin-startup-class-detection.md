@@ -12,7 +12,7 @@ ms.openlocfilehash: e4d9424d691f92aacf078faed09689daa40a44fd
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59418341"
 ---
 # <a name="owin-startup-class-detection"></a>OWIN 시작 클래스 검색
@@ -79,8 +79,7 @@ ms.locfileid: "59418341"
      > [!NOTE]
      > 위의 코드에서 우리는 주석으로 처리를 `OwinStartup` 특성과 것 이라는 클래스를 실행 하는 규칙에 의존 하는 `Startup` 합니다.-키를 눌러 ***F5*** 응용 프로그램을 실행 합니다. 몇 번 새로 고침을 누릅니다.
 
-    ![](owin-startup-class-detection/_static/image4.png)
-  참고: 이 자습서에서는 이미지에 표시 된 숫자 표시 하는 것을 일치 하지 않습니다. 밀리초 문자열 페이지를 새로 고칠 때 새 응답이 표시 됩니다.
+    ![](owin-startup-class-detection/_static/image4.png) 참고: 이 자습서에서는 이미지에 표시 된 숫자 표시 하는 것을 일치 하지 않습니다. 밀리초 문자열 페이지를 새로 고칠 때 새 응답이 표시 됩니다.
   추적 정보를 볼 수는 **출력** 창입니다.
 
     ![](owin-startup-class-detection/_static/image5.png)

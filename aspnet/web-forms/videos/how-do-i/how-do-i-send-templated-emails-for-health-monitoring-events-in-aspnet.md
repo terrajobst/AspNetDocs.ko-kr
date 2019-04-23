@@ -12,7 +12,7 @@ ms.openlocfilehash: e7b929c6e186e59b43180e8f26cf0f8b4608328f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59417990"
 ---
 # <a name="how-do-i-send-templated-emails-for-health-monitoring-events-in-aspnet"></a>[어떻게 할까요?] ASP.NET에서 상태 모니터링에 대 한 템플릿 기반 전자 메일 보내기

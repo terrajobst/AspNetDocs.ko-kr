@@ -12,7 +12,7 @@ ms.openlocfilehash: a2b6d3a5ceb66c14a78b02182f49d76c72becbd4
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413648"
 ---
 # <a name="interacting-with-the-content-page-from-the-master-page-c"></a>마스터 페이지에서 콘텐츠 페이지와 상호 작용(C#)
@@ -51,7 +51,7 @@ ASP.NET 웹 컨트롤을, 단추 컨트롤과 같은 것이 좋습니다. 단추
 이 첫 번째 업무 우선 순위는 Northwind 데이터베이스에서 제품을 나열 하는 콘텐츠 페이지를 만드는 것입니다. (이전 자습서에서는 Northwind 데이터베이스 프로젝트에 추가 했습니다 [ *콘텐츠 페이지에서 마스터 페이지와 상호 작용*](interacting-with-the-master-page-from-the-content-page-cs.md).) 새 ASP.NET 페이지를 추가 하 여 시작 합니다 `~/Admin` 라는 폴더 `Products.aspx`에 바인딩하지 하 여는 `Site.master` 마스터 페이지입니다. 그림 1에서는이 페이지는 웹 사이트에 추가한 후 솔루션 탐색기를 보여 줍니다.
 
 
-[![Add Admin 폴더를 새 ASP.NET 페이지](interacting-with-the-content-page-from-the-master-page-cs/_static/image2.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image1.png)
+[![Admin 폴더를 새 ASP.NET 페이지를 추가 합니다.](interacting-with-the-content-page-from-the-master-page-cs/_static/image2.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image1.png)
 
 **그림 01**: 새 ASP.NET 페이지를 추가 합니다 `Admin` 폴더 ([큰 이미지를 보려면 클릭](interacting-with-the-content-page-from-the-master-page-cs/_static/image3.png))
 
@@ -68,7 +68,7 @@ ASP.NET 웹 컨트롤을, 단추 컨트롤과 같은 것이 좋습니다. 단추
 돌아가서 `Products.aspx`합니다. 콘텐츠 컨트롤에 대 한 `MainContent`GridView 컨트롤을 추가 하 고 이름을 `ProductsGrid`입니다. GridView 라는 새 SqlDataSource 컨트롤을 바인딩할 `ProductsDataSource`합니다.
 
 
-[![B새 SqlDataSource 컨트롤을 GridView 찾기](interacting-with-the-content-page-from-the-master-page-cs/_static/image5.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image4.png)
+[![GridView 새 SqlDataSource 컨트롤에 바인딩](interacting-with-the-content-page-from-the-master-page-cs/_static/image5.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image4.png)
 
 **그림 02**: GridView 새 SqlDataSource 컨트롤을 바인딩할 ([클릭 하 여 큰 이미지 보기](interacting-with-the-content-page-from-the-master-page-cs/_static/image6.png))
 
@@ -76,7 +76,7 @@ ASP.NET 웹 컨트롤을, 단추 컨트롤과 같은 것이 좋습니다. 단추
 Northwind 데이터베이스 사용 마법사를 구성 합니다. 이전 자습서를 수행한 경우 명명 된 연결 문자열을 했어야 `NorthwindConnectionString` 에서 `Web.config`합니다. 그림 3에 나와 있는 것 처럼 드롭 다운 목록에서이 연결 문자열을 선택 합니다.
 
 
-[![CNorthwind 데이터베이스를 사용 하도록 SqlDataSource onfigure](interacting-with-the-content-page-from-the-master-page-cs/_static/image8.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image7.png)
+[![SqlDataSource Northwind 데이터베이스를 사용 하도록 구성](interacting-with-the-content-page-from-the-master-page-cs/_static/image8.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image7.png)
 
 **그림 03**: SqlDataSource Northwind 데이터베이스를 사용 하도록 구성 ([클릭 하 여 큰 이미지 보기](interacting-with-the-content-page-from-the-master-page-cs/_static/image9.png))
 
@@ -84,7 +84,7 @@ Northwind 데이터베이스 사용 마법사를 구성 합니다. 이전 자습
 다음으로, 데이터 소스 컨트롤을 지정 `SELECT` 드롭 다운 목록에서 Products 테이블을 선택 하 고 반환 하 여 문을 합니다 `ProductName` 및 `UnitPrice` 열 (그림 4 참조). 다음을 클릭 하 고 데이터 소스 구성 마법사를 완료 한 다음 끝냅니다.
 
 
-[![RProductName 돌아가기 () 및 Products 테이블의 UnitPrice 필드](interacting-with-the-content-page-from-the-master-page-cs/_static/image11.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image10.png)
+[![Products 테이블에서 ProductName 및 UnitPrice 필드를 반환 합니다.](interacting-with-the-content-page-from-the-master-page-cs/_static/image11.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image10.png)
 
 **그림 04**: 반환 된 `ProductName` 및 `UnitPrice` 에서 필드를 `Products` 테이블 ([클릭 하 여 큰 이미지 보기](interacting-with-the-content-page-from-the-master-page-cs/_static/image12.png))
 
@@ -95,7 +95,7 @@ Northwind 데이터베이스 사용 마법사를 구성 합니다. 이전 자습
 [!code-aspx[Main](interacting-with-the-content-page-from-the-master-page-cs/samples/sample2.aspx)]
 
 
-[![EGridView에 대 한 ach 제품 및 해당 가격 나와](interacting-with-the-content-page-from-the-master-page-cs/_static/image14.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image13.png)
+[![각 제품 및 해당 가격 GridView에 나열 됩니다.](interacting-with-the-content-page-from-the-master-page-cs/_static/image14.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image13.png)
 
 **그림 05**: 각 제품 및 해당 가격 GridView에 나열 됩니다 ([클릭 하 여 큰 이미지 보기](interacting-with-the-content-page-from-the-master-page-cs/_static/image15.png))
 
@@ -111,7 +111,7 @@ Northwind 데이터베이스 사용 마법사를 구성 합니다. 이전 자습
 다음으로 마스터 페이지 이름을 SqlDataSource 컨트롤을 추가 `DoublePricesDataSource`합니다. 이 SqlDataSource를 사용 하 여 실행 하는 `UPDATE` 모든 가격의 두 배로 문입니다. 구체적으로 설정 해야 해당 `ConnectionString` 하 고 `UpdateCommand` 적절 한 연결 문자열 속성 및 `UPDATE` 문입니다. 이 SqlDataSource 컨트롤을 호출 해야 `Update` 메서드는 경우는 `DoublePrice` 단추를 클릭 합니다. 설정 하는 `ConnectionString` 및 `UpdateCommand` 속성인 SqlDataSource 컨트롤을 선택 하 고 속성 창으로 이동 합니다. `ConnectionString` 속성 목록에 이미 저장 된 연결 문자열 `Web.config` ; 드롭다운 목록을 선택 합니다 `NorthwindConnectionString` 그림 6에 표시 된 대로 옵션.
 
 
-[![CSqlDataSource 위해 사용할 onfigure](interacting-with-the-content-page-from-the-master-page-cs/_static/image17.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image16.png)
+[![SqlDataSource를 위해 사용 하도록 구성](interacting-with-the-content-page-from-the-master-page-cs/_static/image17.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image16.png)
 
 **그림 06**: SqlDataSource를 사용 하 여 구성 합니다 `NorthwindConnectionString` ([큰 이미지를 보려면 클릭](interacting-with-the-content-page-from-the-master-page-cs/_static/image18.png))
 
@@ -124,7 +124,7 @@ Northwind 데이터베이스 사용 마법사를 구성 합니다. 이전 자습
 이 문을 실행 하는 경우 두 배로 증가 합니다 `UnitPrice` 의 각 레코드에 대 한 값을 `Products` 테이블.
 
 
-[![Set SqlDataSource의 UpdateCommand 속성](interacting-with-the-content-page-from-the-master-page-cs/_static/image20.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image19.png)
+[![SqlDataSource의 UpdateCommand 속성 설정](interacting-with-the-content-page-from-the-master-page-cs/_static/image20.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image19.png)
 
 **그림 07**: SqlDataSource의 설정 `UpdateCommand` 속성 ([큰 이미지를 보려면 클릭](interacting-with-the-content-page-from-the-master-page-cs/_static/image21.png))
 
@@ -225,12 +225,12 @@ Northwind 데이터베이스 사용 마법사를 구성 합니다. 이전 자습
 그림 8과 9이이 동작을 보여 줍니다. 그림 8에서는 먼저 방문 되 면 페이지를 보여 줍니다. 둘 다에 값을 가격에 `RecentProducts` (마스터 페이지의 왼쪽된 열)의 GridView 및 `ProductsGrid` (콘텐츠 페이지)에 GridView입니다. 그림 9에서는 동일한 직후 화면을 `DoublePrice` 버튼을 클릭 합니다. 알 수 있듯이 새 가격은 두 Gridview에 즉시 반영 됩니다.
 
 
-[![T또한 초기 가격 값](interacting-with-the-content-page-from-the-master-page-cs/_static/image23.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image22.png)
+[![초기 가격 값](interacting-with-the-content-page-from-the-master-page-cs/_static/image23.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image22.png)
 
 **그림 08**: 초기 가격 값 ([클릭 하 여 큰 이미지 보기](interacting-with-the-content-page-from-the-master-page-cs/_static/image24.png))
 
 
-[![T그 Just-Doubled 가격을 Gridview에 표시 됩니다](interacting-with-the-content-page-from-the-master-page-cs/_static/image26.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image25.png)
+[![Just-Doubled 가격을 Gridview에 표시 됩니다.](interacting-with-the-content-page-from-the-master-page-cs/_static/image26.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image25.png)
 
 **그림 09**: Just-Doubled 가격을 Gridview에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](interacting-with-the-content-page-from-the-master-page-cs/_static/image27.png))
 

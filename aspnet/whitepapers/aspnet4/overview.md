@@ -12,7 +12,7 @@ ms.openlocfilehash: 0991ce5c866aa9e31ef23812e953d9ee10dda3d1
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59409722"
 ---
 # <a name="aspnet-4-and-visual-studio-2010-web-development-overview"></a>ASP.NET 4 및 Visual Studio 2010 웹 개발 개요
@@ -413,13 +413,13 @@ ASP.NET 4에서는 두 개의 속성을 추가 합니다 *페이지* 클래스 *
 
 사용 안 함 `: [DynamicValue]`
 
-사용:`[DynamicValue]`
+사용 하도록 설정 합니다.`[DynamicValue]`
 
 다시 게시 한 후 단, 다음과 같은 출력이 표시 됩니다.
 
 사용 안 함 `: [DeclaredValue]`
 
-사용:`[DynamicValue]`
+사용 하도록 설정 합니다.`[DynamicValue]`
 
 Label1 컨트롤 (입니다 *ViewStateMode* 값으로 설정 됩니다 *비활성*) 코드에서 설정 된 값이 유지 되지에 합니다. 하지만 Label2는 제어 (입니다 *ViewStateMode* 값으로 설정 됩니다 *Enabled*) 해당 상태를 유지 했습니다.
 
@@ -982,7 +982,7 @@ ASP.NET 2.0 및 이후 버전에는 시스템 관련 숨겨진된 필드 렌더�
 기본적으로 템플릿을 지 원하는 다음 ASP.NET 웹 서버 컨트롤은 인라인 스타일을 적용 하는 데 사용 되는 외부 테이블에 자동으로 줄:
 
 - *FormView*
-- *로그인*
+- *Login*
 - *PasswordRecovery*
 - *ChangePassword*
 - *마법사*

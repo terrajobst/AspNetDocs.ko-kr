@@ -12,7 +12,7 @@ ms.openlocfilehash: 1483030faf631099b8c044d1fbbdd000128f4fce
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59414194"
 ---
 # <a name="how-do-i-create-excel-spreadsheets-using-linq-to-xml"></a>[어떻게 할까요?] LINQ to XML 사용 하 여 Excel 스프레드시트 만들기

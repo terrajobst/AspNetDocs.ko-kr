@@ -12,7 +12,7 @@ ms.openlocfilehash: 488988bbf540cc809579a5ad5f80cb772ed6b1bf
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408370"
 ---
 # <a name="multiple-contentplaceholders-and-default-content-vb"></a>여러 ContentPlaceHolders 및 기본 콘텐츠(VB)
@@ -37,7 +37,7 @@ ms.locfileid: "59408370"
 그림 1에 나와 `Default.aspx` 브라우저를 통해 볼 때. 빨간색 원이 표시 된 지역은 해당 하는 페이지별 태그 `MainContent`합니다.
 
 
-[![T그 원 지역 표시 페이지-기준 영역 현재 사용자 지정이 가능한](multiple-contentplaceholders-and-default-content-vb/_static/image2.png)](multiple-contentplaceholders-and-default-content-vb/_static/image1.png)
+[![원 안의 지역 영역을 보여 줍니다 현재 사용자 지정 가능한 페이지-기준](multiple-contentplaceholders-and-default-content-vb/_static/image2.png)](multiple-contentplaceholders-and-default-content-vb/_static/image1.png)
 
 **그림 01**: 원 지역 페이지-기준 영역 현재 사용자 지정이 가능한 보여 줍니다 ([클릭 하 여 큰 이미지 보기](multiple-contentplaceholders-and-default-content-vb/_static/image3.png))
 
@@ -45,7 +45,7 @@ ms.locfileid: "59408370"
 그림 1에 표시 된 지역 외에 해야 단원 및 뉴스를 아래 왼쪽된 열에 페이지별 항목 추가 imagine 섹션입니다. 이렇게 하려면 마스터 페이지에 다른 각각의 ContentPlaceHolder 컨트롤로 추가 합니다. 자습서에 따라 엽니다는 `Site.master` 마스터 Visual Web Developer에서 페이지 및 뉴스 섹션 뒤 디자이너 도구 상자에서는 각각의 ContentPlaceHolder 컨트롤로 놓습니다. 설정의 ContentPlaceHolder `ID` 에 `LeftColumnContent`입니다.
 
 
-[![A마스터 페이지의 왼쪽 열에는 각각의 ContentPlaceHolder 컨트롤로 dd](multiple-contentplaceholders-and-default-content-vb/_static/image5.png)](multiple-contentplaceholders-and-default-content-vb/_static/image4.png)
+[![마스터 페이지의 왼쪽된 열에는 각각의 ContentPlaceHolder 컨트롤로 추가](multiple-contentplaceholders-and-default-content-vb/_static/image5.png)](multiple-contentplaceholders-and-default-content-vb/_static/image4.png)
 
 **그림 02**: 마스터 페이지의 왼쪽 열에는 각각의 ContentPlaceHolder 컨트롤로 추가 ([클릭 하 여 큰 이미지 보기](multiple-contentplaceholders-and-default-content-vb/_static/image6.png))
 
@@ -67,7 +67,7 @@ Visual Web Developer는 콘텐츠를 자동으로 만듭니다 새 콘텐츠 페
 이 태그를 추가한 후 브라우저를 통해 페이지를 방문 합니다. 그림 3 태그에 배치 합니다 `Content3` 콘텐츠 컨트롤의 왼쪽된 열 (빨간색 원으로 표시) 뉴스 섹션 아래에 표시 됩니다. 태그에 배치 `Content2` (파란색에서 원으로 표시) 페이지의 오른쪽 부분에 표시 됩니다.
 
 
-[![T그 왼쪽 열 이제 포함 페이지별 콘텐츠 아래에 뉴스 섹션](multiple-contentplaceholders-and-default-content-vb/_static/image8.png)](multiple-contentplaceholders-and-default-content-vb/_static/image7.png)
+[![왼쪽된 열에는 이제 뉴스 섹션 아래에 있는 특정 페이지 콘텐츠](multiple-contentplaceholders-and-default-content-vb/_static/image8.png)](multiple-contentplaceholders-and-default-content-vb/_static/image7.png)
 
 **그림 03**: 왼쪽 열 이제 포함 페이지별 콘텐츠 아래에 뉴스 섹션 ([클릭 하 여 큰 이미지 보기](multiple-contentplaceholders-and-default-content-vb/_static/image9.png))
 
@@ -81,7 +81,7 @@ Visual Web Developer는 콘텐츠를 자동으로 만듭니다 새 콘텐츠 페
 에 대 한 콘텐츠 컨트롤을 추가 하는 `LeftColumnContent` ContentPlaceHolder를 `About.aspx`, ContentPlaceHolder의 스마트 태그 확장 및 사용자 지정 콘텐츠 만들기 링크를 클릭 합니다.
 
 
-[![Tabout.aspx로 표시 하는 것에 대 한 그 디자인 보기 LeftColumnContent ContentPlaceHolder](multiple-contentplaceholders-and-default-content-vb/_static/image11.png)](multiple-contentplaceholders-and-default-content-vb/_static/image10.png)
+[![About.aspx의 디자인 뷰 LeftColumnContent ContentPlaceHolder를 보여 줍니다.](multiple-contentplaceholders-and-default-content-vb/_static/image11.png)](multiple-contentplaceholders-and-default-content-vb/_static/image10.png)
 
 **그림 04**: 디자인 뷰 `About.aspx` 표시 합니다 `LeftColumnContent` ContentPlaceHolder ([클릭 하 여 큰 이미지 보기](multiple-contentplaceholders-and-default-content-vb/_static/image12.png))
 
@@ -97,7 +97,7 @@ ASP.NET 마스터 페이지에 정의 된 각 ContentPlaceHolder에 대 한 모�
 현재 `Default.aspx` 에 대 한 두 콘텐츠 컨트롤을 포함 합니다 `head` 및 `MainContent` ContentPlaceHolders;에 대 한 콘텐츠 제어 되지 않은 `LeftColumnContent`합니다. 결과적으로, `Default.aspx` 렌더링 되는 `LeftColumnContent` ContentPlaceHolder의 기본 콘텐츠는 데 사용 됩니다. 에서는 아직이 ContentPlaceHolder에 대 한 기본 콘텐츠 정의 최종적 이므로이 영역에 대 한 태그가 없음을 내보내집니다는 합니다. 이 동작을 확인 하려면 방문 `Default.aspx` 브라우저를 통해. 그림 5에서 알 수 있듯이, 뉴스 섹션 아래의 왼쪽된 열에 태그가 없음을 내보내집니다.
 
 
-[![No LeftColumnContent ContentPlaceHolder에 대 한 콘텐츠를 렌더링할](multiple-contentplaceholders-and-default-content-vb/_static/image14.png)](multiple-contentplaceholders-and-default-content-vb/_static/image13.png)
+[![LeftColumnContent ContentPlaceHolder에 대 한 콘텐츠는](multiple-contentplaceholders-and-default-content-vb/_static/image14.png)](multiple-contentplaceholders-and-default-content-vb/_static/image13.png)
 
 **그림 05**: 콘텐츠 없음에 대해 렌더링 되는 `LeftColumnContent` ContentPlaceHolder ([큰 이미지를 보려면 클릭](multiple-contentplaceholders-and-default-content-vb/_static/image15.png))
 
@@ -123,7 +123,7 @@ ContentPlaceHolder의 기본 콘텐츠로 사용자 이름 및 암호 텍스트 
 이 태그를 추가한 후 마스터 페이지의 디자인 뷰에서 그림 6과 유사 합니다.
 
 
-[![T또한 마스터 페이지는 로그인 컨트롤이 포함 되어](multiple-contentplaceholders-and-default-content-vb/_static/image17.png)](multiple-contentplaceholders-and-default-content-vb/_static/image16.png)
+[![로그인 컨트롤을 포함 하는 마스터 페이지](multiple-contentplaceholders-and-default-content-vb/_static/image17.png)](multiple-contentplaceholders-and-default-content-vb/_static/image16.png)
 
 **그림 06**: 로그인 컨트롤을 포함 하는 마스터 페이지 ([클릭 하 여 큰 이미지 보기](multiple-contentplaceholders-and-default-content-vb/_static/image18.png))
 
@@ -145,7 +145,7 @@ ContentPlaceHolder의 기본 콘텐츠로 사용자 이름 및 암호 텍스트 
 그림 7에서는 브라우저를 통해 볼 때이 페이지를 보여 줍니다. 이 페이지에 대 한 콘텐츠 컨트롤을 지정 하기 때문에 `QuickLoginUI` ContentPlaceHolder, 마스터 페이지에 지정 된 기본 내용을 재정의 합니다. Net은 Login 컨트롤 마스터 페이지의 디자인 뷰 (그림 6 참조)에 렌더링 되지 않습니다이 페이지에 표시 되도록 합니다.
 
 
-[![T로그인 페이지 그 Represses QuickLoginUI ContentPlaceHolder의 기본 콘텐츠](multiple-contentplaceholders-and-default-content-vb/_static/image20.png)](multiple-contentplaceholders-and-default-content-vb/_static/image19.png)
+[![로그인 페이지 Represses QuickLoginUI ContentPlaceHolder의 기본 콘텐츠](multiple-contentplaceholders-and-default-content-vb/_static/image20.png)](multiple-contentplaceholders-and-default-content-vb/_static/image19.png)
 
 **그림 07**: 로그인 페이지 Represses 합니다 `QuickLoginUI` ContentPlaceHolder의 기본 콘텐츠 ([큰 이미지를 보려면 클릭](multiple-contentplaceholders-and-default-content-vb/_static/image21.png))
 
@@ -161,7 +161,7 @@ ContentPlaceHolder의 기본 콘텐츠로 사용자 이름 및 암호 텍스트 
 그림 8 나와 `Default.aspx` 브라우저를 통해 볼 때. 이전에 설명한 대로 `Default.aspx` 에 대 한 선언적 태그-에 지정 된 두 콘텐츠 컨트롤에만 `head` 개와 `MainContent`합니다. 결과적으로 기본에 대 한 콘텐츠를 `LeftColumnContent` 고 `QuickLoginUI` ContentPlaceHolders 표시 됩니다.
 
 
-[![T표시 되 고 LeftColumnContent QuickLoginUI ContentPlaceHolders에 대 한 콘텐츠 기본 그](multiple-contentplaceholders-and-default-content-vb/_static/image23.png)](multiple-contentplaceholders-and-default-content-vb/_static/image22.png)
+[![표시 되는 기본 콘텐츠 LeftColumnContent 및 QuickLoginUI ContentPlaceHolders는](multiple-contentplaceholders-and-default-content-vb/_static/image23.png)](multiple-contentplaceholders-and-default-content-vb/_static/image22.png)
 
 **그림 08**: 기본에 대 한 콘텐츠를 `LeftColumnContent` 하 고 `QuickLoginUI` ContentPlaceHolders 표시 됩니다 ([전체 크기 이미지를 보려면 클릭](multiple-contentplaceholders-and-default-content-vb/_static/image24.png))
 

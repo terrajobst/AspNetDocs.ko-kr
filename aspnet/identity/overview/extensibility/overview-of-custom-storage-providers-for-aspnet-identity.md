@@ -13,7 +13,7 @@ ms.openlocfilehash: 71201e9d91080855350349b966fe7916ce21a909
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59411269"
 ---
 # <a name="overview-of-custom-storage-providers-for-aspnet-identity"></a>ASP.NET Identity에 대한 사용자 지정 스토리지 공급자 개요

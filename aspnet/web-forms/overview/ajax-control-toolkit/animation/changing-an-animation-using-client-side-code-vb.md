@@ -12,7 +12,7 @@ ms.openlocfilehash: 4254b7e1f2086a9cc5fbc1e8c2a4f7e2e3d2925e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59416573"
 ---
 # <a name="changing-an-animation-using-client-side-code-vb"></a>클라이언트 쪽 코드를 사용하여 애니메이션 변경(VB)
@@ -71,7 +71,7 @@ JSON 문자열은 다음과 같습니다 (구분 따옴표 없이 원활 하 게
 [!code-html[Main](changing-an-animation-using-client-side-code-vb/samples/sample7.html)]
 
 
-[![T그 애니메이션 즉시 마우스 클릭 하지 않고 (및 실행 거의 태그를 사용 하 여)](changing-an-animation-using-client-side-code-vb/_static/image2.png)](changing-an-animation-using-client-side-code-vb/_static/image1.png)
+[![마우스 클릭 하지 않고 (및 거의 태그를 사용 하 여)이 애니메이션은 즉시 실행](changing-an-animation-using-client-side-code-vb/_static/image2.png)](changing-an-animation-using-client-side-code-vb/_static/image1.png)
 
 마우스 클릭 하지 않고과 거의 태그를 사용 하 여 애니메이션은 즉시 실행 ([클릭 하 여 큰 이미지 보기](changing-an-animation-using-client-side-code-vb/_static/image3.png))
 

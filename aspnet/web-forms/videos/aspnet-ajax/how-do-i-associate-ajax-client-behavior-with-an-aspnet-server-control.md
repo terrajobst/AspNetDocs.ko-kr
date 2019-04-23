@@ -12,7 +12,7 @@ ms.openlocfilehash: 9fdb0665aa8a6cb038203d31f8f71a8725834cee
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59417418"
 ---
 # <a name="how-do-i-associate-ajax-client-behavior-with-an-aspnet-server-control"></a>[어떻게 할까요?] ASP.NET 서버 컨트롤을 사용 하 여 AJAX 클라이언트 동작을 연결할?

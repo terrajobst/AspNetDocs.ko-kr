@@ -12,7 +12,7 @@ ms.openlocfilehash: e70ff8af352c4d9ae76147741f3ce6dce2a32deb
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59415442"
 ---
 # <a name="security"></a>보안
@@ -22,7 +22,7 @@ ms.locfileid: "59415442"
 
 - [폼 인증으로 사용자 인증(C#)](authenticating-users-with-forms-authentication-cs.md)
 - [Windows 인증으로 사용자 인증(C#)](authenticating-users-with-windows-authentication-cs.md)
-- [JavaScript 삽입 공격 방지(C#)](preventing-javascript-injection-attacks-cs.md)
+- [JavaScript 주입 공격 방지(C#)](preventing-javascript-injection-attacks-cs.md)
 - [폼 인증으로 사용자 인증(VB)](authenticating-users-with-forms-authentication-vb.md)
 - [Windows 인증으로 사용자 인증(VB)](authenticating-users-with-windows-authentication-vb.md)
-- [JavaScript 삽입 공격 방지(VB)](preventing-javascript-injection-attacks-vb.md)
+- [JavaScript 주입 공격 방지(VB)](preventing-javascript-injection-attacks-vb.md)

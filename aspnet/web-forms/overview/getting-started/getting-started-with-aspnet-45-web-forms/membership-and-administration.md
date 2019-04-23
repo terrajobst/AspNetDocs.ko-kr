@@ -12,7 +12,7 @@ ms.openlocfilehash: 7263a7d7ee791be8a1369934aac4d091736a658b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59417483"
 ---
 # <a name="membership-and-administration"></a>멤버 자격 및 관리
@@ -274,7 +274,7 @@ Wingtip Toys 샘플 응용 프로그램에는 익명 사용자와 로그인 한 
 ## <a name="additional-resources"></a>추가 리소스
 
 [Web.config-authorization 요소](https://msdn.microsoft.com/library/8d82143t(v=vs.100).aspx)  
-[ASP.NET ID](../../../../identity/overview/getting-started/introduction-to-aspnet-identity.md)  
+[ASP.NET Id](../../../../identity/overview/getting-started/introduction-to-aspnet-identity.md)  
 [멤버 자격, OAuth 및 SQL Database를 사용 하 여 보안 ASP.NET Web Forms 앱을 Azure 웹 사이트에 배포](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-deploy-aspnet-webforms-app-membership-oauth-sql-database/)  
 [Microsoft Azure 무료 평가판](https://azure.microsoft.com/pricing/free-trial/)
 

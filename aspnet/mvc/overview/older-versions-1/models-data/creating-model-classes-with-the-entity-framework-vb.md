@@ -12,7 +12,7 @@ ms.openlocfilehash: b3c6726c2d08e2e6ac37501f2ab455e427df82bb
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59414057"
 ---
 # <a name="creating-model-classes-with-the-entity-framework-vb"></a>Entity Framework를 사용하여 모델 클래스 만들기(VB)
@@ -132,7 +132,7 @@ Entity Framework를 사용 하려면 엔터티 데이터 모델을 만들려고 
 
 영화 레코드를 표시 하려면 보기 목록 2에 사용 됩니다.
 
-**2 – Views\Home\Index.aspx 나열**
+**Listing 2 – Views\Home\Index.aspx**
 
 [!code-aspx[Main](creating-model-classes-with-the-entity-framework-vb/samples/sample3.aspx)]
 

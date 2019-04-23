@@ -12,7 +12,7 @@ ms.openlocfilehash: 0dae280dfa3028df5fda95c4366132c99a0dc3b7
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59409202"
 ---
 # <a name="adding-dynamic-content-to-a-cached-page-vb"></a>캐시된 페이지에 동적 콘텐츠 추가(VB)
@@ -44,7 +44,7 @@ by [Microsoft](https://github.com/microsoft)
 
 캐시 후 대체를 이용 하려면 HttpResponse.WriteSubstitution() 메서드를 호출 합니다. 동적 콘텐츠를 사용 하 여 캐시 된 페이지의 영역을 바꾸려면 WriteSubstitution() 메서드 코드를 설정 합니다. 목록 2 뷰에서 임의의 뉴스 항목을 표시 하려면 WriteSubstitution() 메서드가 사용 됩니다.
 
-**2 – Views\Home\Index.aspx 나열**
+**Listing 2 – Views\Home\Index.aspx**
 
 [!code-aspx[Main](adding-dynamic-content-to-a-cached-page-vb/samples/sample2.aspx)]
 
@@ -66,7 +66,7 @@ RenderNews 메서드 WriteSubstitution() 메서드에 전달 됩니다. RenderNe
 
 캐시 후 대체를 활용 하는 간단한 방법인 캡슐화 하는 데 사용자 지정 도우미 메서드 내에서 WriteSubstitution() 메서드를 호출 합니다. 이 방법은 4의 도우미 메서드에 의해 나와 있습니다.
 
-**4-Helpers\AdHelper.vb 나열**
+**Listing 4 – Helpers\AdHelper.vb**
 
 [!code-vb[Main](adding-dynamic-content-to-a-cached-page-vb/samples/sample4.vb)]
 

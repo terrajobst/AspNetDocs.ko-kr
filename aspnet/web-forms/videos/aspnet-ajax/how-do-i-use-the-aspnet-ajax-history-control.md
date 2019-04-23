@@ -12,7 +12,7 @@ ms.openlocfilehash: 45933ab64c2bf8caa5615e6e9c10aa7fbd5d02bc
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59410580"
 ---
 # <a name="how-do-i-use-the-aspnet-ajax-history-control"></a>[어떻게 할까요?] ASP.NET AJAX 기록 컨트롤 사용

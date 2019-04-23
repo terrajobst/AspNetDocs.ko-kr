@@ -13,7 +13,7 @@ ms.openlocfilehash: 39629ba404e536b29318db00bce8c4443a782497
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59411945"
 ---
 # <a name="configuring-aspnet-web-api-2"></a>ASP.NET Web API 2 구성
@@ -22,7 +22,7 @@ ms.locfileid: "59411945"
 
 이 항목에서는 ASP.NET Web API를 구성 하는 방법을 설명 합니다.
 
-- [Configuration 설정](#settings)
+- [구성 설정](#settings)
 - [Web API를 사용 하 여 ASP.NET 호스팅 구성](#webhost)
 - [OWIN 자체 호스팅을 사용 하 여 Web API 구성](#selfhost)
 - [글로벌 웹 API 서비스](#services)
@@ -39,7 +39,7 @@ ms.locfileid: "59411945"
 | **필터** | 작업 필터입니다. |
 | **포맷터** | [미디어 유형 포맷터](../formats-and-model-binding/media-formatters.md)합니다. |
 | **IncludeErrorDetailPolicy** | 서버 HTTP 응답 메시지에 예외 메시지, 스택 추적 등의 오류 정보를 포함할지 여부를 지정 합니다. 참조 [IncludeErrorDetailPolicy](https://msdn.microsoft.com/library/system.web.http.includeerrordetailpolicy(v=vs.108))합니다. |
-| **이니셜라이저** | 구성의 최종 초기화를 수행 하는 함수를 **HttpConfiguration**합니다. |
+| **Initializer** | 구성의 최종 초기화를 수행 하는 함수를 **HttpConfiguration**합니다. |
 | **MessageHandlers** | [HTTP 메시지 처리기](http-message-handlers.md)합니다. |
 | **ParameterBindingRules** | 컨트롤러 작업에서 매개 변수를 바인딩하는 규칙의 컬렉션입니다. |
 | **속성** | 제네릭 속성 모음입니다. |

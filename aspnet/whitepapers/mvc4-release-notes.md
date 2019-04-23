@@ -12,7 +12,7 @@ ms.openlocfilehash: 0f9b4e2ba0514df4c017a192f3c2136a7eec60c7
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413258"
 ---
 # <a name="aspnet-mvc-4"></a>ASP.NET MVC 4
@@ -21,8 +21,8 @@ ms.locfileid: "59413258"
 
 
 - [설치 참고 사항](#_Toc303253802)
-- [설명서](#_Toc303253803)
-- [Support(지원)](#_Toc303253804)
+- [문서](#_Toc303253803)
+- [지원](#_Toc303253804)
 - [소프트웨어 요구 사항](#_Toc303253805)
 - [ASP.NET MVC 4의에서 새로운 기능](#_Toc303253807)
 

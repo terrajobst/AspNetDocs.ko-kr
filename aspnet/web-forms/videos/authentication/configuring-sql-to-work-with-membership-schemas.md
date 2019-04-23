@@ -12,7 +12,7 @@ ms.openlocfilehash: 1144f6de63ebff3c92efc148ec619ec1d5cc0aa1
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59409930"
 ---
 # <a name="configuring-sql-to-work-with-membership-schemas"></a>멤버 자격 스키마와 함께 작동하도록 SQL 구성

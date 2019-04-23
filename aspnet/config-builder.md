@@ -9,9 +9,9 @@ ms.technology: aspnet
 msc.type: content
 ms.openlocfilehash: 443b33b5c3b964f731999834db580a6abbf6617b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59420421"
 ---
 # <a name="configuration-builders-for-aspnet"></a>ASP.NET에 대 한 구성 작성기
@@ -252,7 +252,7 @@ ms.locfileid: "59420421"
 
 특성 세부 정보:
 
-* `directoryPath` 필수. 값에 대 한 확인에 대 한 경로 지정 합니다. 암호에 저장 되는 Windows 용 docker를 *C:\ProgramData\Docker\secrets* 기본적으로 디렉터리입니다.
+* `directoryPath` - 필수입니다. 값에 대 한 확인에 대 한 경로 지정 합니다. 암호에 저장 되는 Windows 용 docker를 *C:\ProgramData\Docker\secrets* 기본적으로 디렉터리입니다.
 * `ignorePrefix` -이 접두사로 시작 하는 파일 제외 됩니다. 기본값은 "무시 합니다."입니다.
 * `keyDelimiter` -기본값은 `null`합니다. 를 지정 하는 경우 구성 작성기를 트래버스 디렉터리의 여러 수준을 구분이 기호와 함께 키 이름을 작성 합니다. 이 값이 `null`, 디렉터리의 최상위 수준에서 구성 작성기를 검색 합니다.
 * `optional` -기본값은 `false`합니다. 소스 디렉터리가 없는 경우 구성 작성기에서 오류가 발생 해야 하는지 여부를 지정 합니다.
@@ -276,9 +276,9 @@ ms.locfileid: "59420421"
 
 특성 세부 정보:
 
-* `jsonFile` 필수. JSON 파일을 읽어올 수를 지정 합니다. `~` 앱 루트를 참조 하는 시작 시 문자를 사용할 수 있습니다.
+* `jsonFile` - 필수입니다. JSON 파일을 읽어올 수를 지정 합니다. `~` 앱 루트를 참조 하는 시작 시 문자를 사용할 수 있습니다.
 * `optional` -부울, 기본값은 `true`합니다. 방지 JSON 파일을 찾을 수 없는 경우 예외를 throw 합니다.
-* `jsonMode` - `[Flat|Sectional]`. `Flat` 기본값은입니다. 때 `jsonMode` 는 `Flat`, JSON 파일을 단일 플랫 키/값 원본입니다. 합니다 `EnvironmentConfigBuilder` 및 `AzureKeyVaultConfigBuilder` 단일 플랫 키/값 소스 이기도 합니다. 경우는 `SimpleJsonConfigBuilder` 에 구성 된 `Sectional` 모드:
+* `jsonMode` - `[Flat|Sectional]`. 기본값은 `Flat`입니다. 때 `jsonMode` 는 `Flat`, JSON 파일을 단일 플랫 키/값 원본입니다. 합니다 `EnvironmentConfigBuilder` 및 `AzureKeyVaultConfigBuilder` 단일 플랫 키/값 소스 이기도 합니다. 경우는 `SimpleJsonConfigBuilder` 에 구성 된 `Sectional` 모드:
 
   * JSON 파일을 여러 사전에 최상위 수준에 개념적으로 구분 됩니다.
   * 각 사전에 연결 된 최상위 속성 이름과 일치 하는 구성 섹션에만 적용 됩니다. 예를 들어:

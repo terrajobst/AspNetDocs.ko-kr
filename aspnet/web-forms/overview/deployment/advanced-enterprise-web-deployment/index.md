@@ -12,7 +12,7 @@ ms.openlocfilehash: 0d3a356aafcce499f50d3a5d3b98f44ca5643ede
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59417977"
 ---
 # <a name="aspnet-4---enterprise-deployment-series-4-advanced-topics"></a>ASP.NET 4 - 엔터프라이즈 배포 시리즈 4 고급 토픽
@@ -21,7 +21,7 @@ ms.locfileid: "59417977"
 
 
 - [고급 엔터프라이즈 웹 배포](advanced-enterprise-web-deployment.md)
-- [“가상 시나리오” 배포 수행](performing-a-what-if-deployment.md)
+- ["가상 시나리오" 배포 수행](performing-a-what-if-deployment.md)
 - [다중 환경을 위한 데이터베이스 배포 사용자 지정](customizing-database-deployments-for-multiple-environments.md)
 - [테스트 환경에 데이터베이스 역할 멤버 자격 배포](deploying-database-role-memberships-to-test-environments.md)
 - [엔터프라이즈 환경에 멤버 자격 데이터베이스 배포](deploying-membership-databases-to-enterprise-environments.md)

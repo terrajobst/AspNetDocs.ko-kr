@@ -12,7 +12,7 @@ ms.openlocfilehash: 0edab77cd973af129e54c7867265f86b47c349a6
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59410138"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-introduction"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 소개

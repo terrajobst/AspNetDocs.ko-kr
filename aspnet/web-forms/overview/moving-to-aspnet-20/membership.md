@@ -12,7 +12,7 @@ ms.openlocfilehash: f3f8c649932682fd96e0640ddf4595c19c755909
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408188"
 ---
 # <a name="membership"></a>멤버 자격입니다.
@@ -74,7 +74,7 @@ ASP.NET SQL Server 설치 마법사는 마법사에서 지정한 인스턴스에
 
 그러면 아래에 표시 된 ASP.NET 웹 사이트 관리 도구를 시작 합니다. ASP.NET 웹 사이트 관리에는 손쉽게 응용 프로그램 설정을 관리할 수 있는 4 개의 탭 인터페이스입니다. 다음 탭을 사용할 수 있습니다.
 
-- **홈**
+- **Home**
 - **보안** 사용자, 역할 및 액세스를 구성 합니다.
 - **응용 프로그램** 응용 프로그램 설정을 구성 합니다.
 - **공급자** 구성 하 고 응용 프로그램 멤버 자격 공급자를 테스트 합니다.

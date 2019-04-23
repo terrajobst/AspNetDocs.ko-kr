@@ -12,7 +12,7 @@ ms.openlocfilehash: 9904582450d4386ef8b8656078f6d40dbd1e10be
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59412010"
 ---
 # <a name="hands-on-lab-real-time-web-applications-with-signalr"></a>실습: SignalR을 사용하는 실시간 웹 애플리케이션
@@ -354,7 +354,7 @@ SignalR 백플레인으로 작동 원리,이 대 한 자세한 내용은 [문서
 
     ![Service Broker를 사용 하도록 설정](real-time-web-applications-with-signalr/_static/image26.png "Service Broker를 사용 하도록 설정")
 
-    *Service Broker 사용*
+    *Service Broker를 사용 하도록 설정*
 
     > [!NOTE]
     > 교착 상태가 발생 했는지를이 쿼리가 나타납니다 경우 DB에 연결 하는 응용 프로그램이 없습니다.

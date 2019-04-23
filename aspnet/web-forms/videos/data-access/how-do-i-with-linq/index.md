@@ -12,7 +12,7 @@ ms.openlocfilehash: 2ab3cbb14cf3e7398db995458090bf532fc643d1
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59412101"
 ---
 # <a name="how-do-i-with-linq"></a>LINQ 사용 방법
@@ -23,9 +23,9 @@ ms.locfileid: "59412101"
 - [LINQ to SQL: 개요](how-do-i-linq-to-sql-overview.md)
 - [LINQ to SQL: 데이터 모델](how-do-i-linq-to-sql-data-model.md)
 - [LINQ to SQL: 데이터베이스 쿼리](how-do-i-linq-to-sql-querying-the-database.md)
-- [LINQ to SQL: 데이터베이스 업데이트](how-do-i-linq-to-sql-updating-the-database.md)
+- [LINQ to SQL: 데이터베이스를 업데이트 하는 중](how-do-i-linq-to-sql-updating-the-database.md)
 - [LINQ to SQL: LinqDataSource](how-do-i-linq-to-sql-linqdatasource.md)
-- [LINQ to SQL: 사용자 지정 LinqDataSource](how-do-i-linq-to-sql-custom-linqdatasource.md)
-- [LINQ to SQL: 저장 프로시저 사용](how-do-i-linq-to-sql-using-stored-procedures.md)
-- [LINQ to SQL: 저장 프로시저로 업데이트](how-do-i-linq-to-sql-updating-with-stored-procedures.md)
-- [LINQ to SQL: 임의 SQL 실행](how-do-i-linq-to-sql-executing-arbitrary-sql.md)
+- [LINQ to SQL: Custom LinqDataSource](how-do-i-linq-to-sql-custom-linqdatasource.md)
+- [LINQ to SQL: 저장된 프로시저를 사용 하 여](how-do-i-linq-to-sql-using-stored-procedures.md)
+- [LINQ to SQL: 저장된 프로시저를 사용 하 여 업데이트](how-do-i-linq-to-sql-updating-with-stored-procedures.md)
+- [LINQ to SQL: 임의의 SQL 실행](how-do-i-linq-to-sql-executing-arbitrary-sql.md)

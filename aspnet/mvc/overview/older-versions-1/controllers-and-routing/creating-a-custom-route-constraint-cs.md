@@ -12,7 +12,7 @@ ms.openlocfilehash: 5d8a40b03a1997904a2736a339dbf6b4003ae7bd
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59410645"
 ---
 # <a name="creating-a-custom-route-constraint-c"></a>사용자 지정 경로 제약 조건 만들기(C#)
@@ -42,7 +42,7 @@ Localhost 제약 조건 목록 1에 포함 됩니다.
 
 Global.asax 파일에 정의 된 경로 내에서 사용자 지정 제약 조건을 사용할 수 있습니다. 목록 2에서 Global.asax 파일 누구나 로컬 서버에서 요청을 할 하지 않는 한 관리 페이지를 요청 하지 않도록 하려면 Localhost 제약 조건을 사용 합니다. 예를 들어 원격 서버에서 수행 하는 경우 /Admin/DeleteAll 요청 실패 합니다.
 
-**Listing 2 - Global.asax**
+**2-Global.asax 나열**
 
 [!code-csharp[Main](creating-a-custom-route-constraint-cs/samples/sample3.cs)]
 

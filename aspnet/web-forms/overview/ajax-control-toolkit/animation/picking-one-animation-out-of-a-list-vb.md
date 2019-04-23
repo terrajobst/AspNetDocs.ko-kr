@@ -12,7 +12,7 @@ ms.openlocfilehash: 7d8807962e5cf668358e03821d5fd3bf755a0e7d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59418887"
 ---
 # <a name="picking-one-animation-out-of-a-list-vb"></a>목록에서 애니메이션 하나 선택(VB)
@@ -53,7 +53,7 @@ ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이�
 [!code-aspx[Main](picking-one-animation-out-of-a-list-vb/samples/sample5.aspx)]
 
 
-[![O가능한 세 가지 애니메이션 중 하나: 패널을 가져옵니다 더 광범위 한](picking-one-animation-out-of-a-list-vb/_static/image2.png)](picking-one-animation-out-of-a-list-vb/_static/image1.png)
+[![가능한 세 가지 애니메이션 중 하나입니다. 더 광범위 한 패널을 가져옵니다.](picking-one-animation-out-of-a-list-vb/_static/image2.png)](picking-one-animation-out-of-a-list-vb/_static/image1.png)
 
 가능한 세 가지 애니메이션 중 하나입니다. 더 광범위 한 패널을 가져옵니다 ([클릭 하 여 큰 이미지 보기](picking-one-animation-out-of-a-list-vb/_static/image3.png))
 

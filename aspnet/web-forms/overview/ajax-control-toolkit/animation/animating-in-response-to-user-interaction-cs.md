@@ -12,7 +12,7 @@ ms.openlocfilehash: c0e2888207e4fa0363fc3b357ae00108ffe817f5
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59415221"
 ---
 # <a name="animating-in-response-to-user-interaction-c"></a>사용자 상호 작용에 대한 응답으로 애니메이션(C#)
@@ -59,7 +59,7 @@ ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이�
 [!code-aspx[Main](animating-in-response-to-user-interaction-cs/samples/sample5.aspx)]
 
 
-[![A 마우스 클릭 애니메이션 시작](animating-in-response-to-user-interaction-cs/_static/image2.png)](animating-in-response-to-user-interaction-cs/_static/image1.png)
+[![애니메이션을 시작 하는 마우스 클릭](animating-in-response-to-user-interaction-cs/_static/image2.png)](animating-in-response-to-user-interaction-cs/_static/image1.png)
 
 마우스 클릭 애니메이션을 시작 ([클릭 하 여 큰 이미지 보기](animating-in-response-to-user-interaction-cs/_static/image3.png))
 

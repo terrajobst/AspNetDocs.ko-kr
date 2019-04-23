@@ -12,7 +12,7 @@ ms.openlocfilehash: 1ab979f220c06d22f51931c7c00fc4d273731f85
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413947"
 ---
 # <a name="using-a-confirmbutton-in-a-repeater-c"></a>Repeater에 ConfirmButton 사용(C#)
@@ -47,7 +47,7 @@ Repeater 내에서이 데이터 원본을 사용할 수 있습니다. 일반적�
 [!code-aspx[Main](using-a-confirmbutton-in-a-repeater-cs/samples/sample3.aspx)]
 
 
-[![T그 단추 표시 데이터 원본의 각 항목 옆에 있는 것을 확인](using-a-confirmbutton-in-a-repeater-cs/_static/image2.png)](using-a-confirmbutton-in-a-repeater-cs/_static/image1.png)
+[![데이터 원본의 각 항목 옆에 있는 확인 단추를 표시 됩니다.](using-a-confirmbutton-in-a-repeater-cs/_static/image2.png)](using-a-confirmbutton-in-a-repeater-cs/_static/image1.png)
 
 데이터 원본의 각 항목 옆에 있는 확인 단추를 표시 됩니다 ([클릭 하 여 큰 이미지 보기](using-a-confirmbutton-in-a-repeater-cs/_static/image3.png))
 

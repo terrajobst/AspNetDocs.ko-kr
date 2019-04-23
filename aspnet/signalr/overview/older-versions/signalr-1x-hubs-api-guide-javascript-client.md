@@ -12,7 +12,7 @@ ms.openlocfilehash: a28b6043ac183ceb66e3ef2ad322436901aa50bc
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59412842"
 ---
 # <a name="signalr-1x-hubs-api-guide---javascript-client"></a>SignalR 1.x 허브 API 가이드 - JavaScript 클라이언트

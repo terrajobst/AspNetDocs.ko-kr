@@ -12,7 +12,7 @@ ms.openlocfilehash: b0da3032e22123f415bf9865e264832739c29f61
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59409020"
 ---
 # <a name="signalr-performance"></a>SignalR 성능
@@ -206,7 +206,7 @@ SignalR 성능 카운터를 제거 하려면 다음 매개 변수를 사용 하 
 - **오류: 허브 호출 합계**
 - **오류: 초당 허브 호출**
 - **오류: 전송 합계**
-- **오류: 전송 수/초**
+- **오류: Transport/Sec**
 
 <a id="scaleout_metrics"></a>
 

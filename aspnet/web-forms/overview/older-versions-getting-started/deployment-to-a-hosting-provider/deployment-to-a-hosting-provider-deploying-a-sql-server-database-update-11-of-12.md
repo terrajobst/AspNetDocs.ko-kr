@@ -12,7 +12,7 @@ ms.openlocfilehash: 8f2c0e2ea50bccfd300e522dcf8b2ed5ab67cf83
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408136"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-deploying-a-sql-server-database-update---11-of-12"></a>SQL Server Compact Visual Studio 또는 Visual Web Developer를 사용 하 여를 사용 하 여 ASP.NET 웹 응용 프로그램을 배포 합니다. SQL Server 데이터베이스 업데이트-11 12를 배포합니다.
@@ -162,7 +162,7 @@ Code First 마이그레이션을 테스트 환경에서 동일한 방식으로 �
 - [Kristina Olson, Microsoft](https://blogs.iis.net/krolson/default.aspx)
 - [Mike Pope, Microsoft](http://www.mikepope.com/blog/DisplayBlog.aspx)
 - Mohit Srivastava, Microsoft
-- [Raffaele Rialdi 이탈리아](http://www.iamraf.net/)
+- [Raffaele Rialdi, Italy](http://www.iamraf.net/)
 - [Rick Anderson, Microsoft](https://blogs.msdn.com/b/rickandy/)
 - [Sayed Hashimi, Microsoft](http://sedodream.com/default.aspx)(twitter: [ @sayedihashimi ](http://twitter.com/sayedihashimi))
 - [Scott Hanselman](http://www.hanselman.com/blog/) (twitter: [ @shanselman ](http://twitter.com/shanselman))

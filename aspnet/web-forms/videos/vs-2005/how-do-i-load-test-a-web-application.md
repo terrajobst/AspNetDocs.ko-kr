@@ -12,7 +12,7 @@ ms.openlocfilehash: 6b086fd9c8c92d5dafa8aba9f1a8928c6bcb0c07
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413778"
 ---
 # <a name="how-do-i-load-test-a-web-application"></a>[어떻게 할까요?] 웹 응용 프로그램 테스트를 로드 하는?

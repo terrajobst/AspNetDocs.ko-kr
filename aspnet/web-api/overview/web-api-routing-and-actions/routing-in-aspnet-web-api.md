@@ -12,7 +12,7 @@ ms.openlocfilehash: 85862c094cc54365267b1f21e68d235a15519cda
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59419238"
 ---
 # <a name="routing-in-aspnet-web-api"></a>ASP.NET Web API에서 라우팅
@@ -69,7 +69,7 @@ Web API 프레임 워크는 HTTP 요청을 받으면 라우팅 테이블에 경�
 
 | HTTP 동사 | URI 경로 | 작업 | 매개 변수 |
 | --- | --- | --- | --- |
-| 가져오기 | api/제품 | GetAllProducts | *(없음)* |
+| 가져오기 | api/제품 | GetAllProducts | *(none)* |
 | 가져오기 | api/제품/4 | GetProductById | 4 |
 | Delete | api/제품/4 | DeleteProduct | 4 |
 | 올리기 | api/제품 | *(일치)* |  |

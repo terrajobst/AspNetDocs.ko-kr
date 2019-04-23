@@ -12,7 +12,7 @@ ms.openlocfilehash: 21891a022885f7a4fae6d7fe3276587abf59986d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59414298"
 ---
 # <a name="aspnet-mvc-controller-overview-c"></a>ASP.NET MVC 컨트롤러 개요(C#)
@@ -91,7 +91,7 @@ ASP.NET MVC 프레임 워크는 여러 유형의 작업 결과 포함 하 여 �
 
 따라서 브라우저에 뷰를 반환 하려는 경우에 View() 메서드를 호출 합니다. 다른 하나의 컨트롤러 작업에서 사용자를 리디렉션하 하려는 경우 RedirectToAction() 메서드를 호출 합니다. 예를 들어 목록 3에서 Details() 작업으로 표시 또는 Id 매개 변수 값에 있는지 여부에 따라 index () 작업에 사용자를 리디렉션합니다.
 
-**Listing 3 - CustomerController.cs**
+**3-CustomerController.cs 나열**
 
 [!code-csharp[Main](aspnet-mvc-controllers-overview-cs/samples/sample3.cs)]
 
@@ -105,7 +105,7 @@ StatusController.Index() 작업이 호출 되 면 뷰를 반환 되지 않습니
 
 컨트롤러 작업 결과 작업 결과 없습니다-예를 들어, 날짜 또는-정수를 반환 하는 경우 다음 결과에 래핑됩니다 ContentResult를 자동으로. 예를 들어, index () 작업 목록 5에서 WorkController 호출 되 면 날짜도 반환 됩니다 ContentResult를 자동으로.
 
-**Listing 5 - WorkController.cs**
+**5-WorkController.cs 나열**
 
 [!code-csharp[Main](aspnet-mvc-controllers-overview-cs/samples/sample5.cs)]
 

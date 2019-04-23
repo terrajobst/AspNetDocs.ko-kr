@@ -12,7 +12,7 @@ ms.openlocfilehash: 5f50721b6f263b9cb025f5fa57c923dadeddcd28
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59410593"
 ---
 # <a name="whats-new-in-aspnet-45-and-visual-studio-2012"></a>ASP.NET 4.5 및 Visual Studio 2012의 새로운 기능
@@ -80,7 +80,7 @@ ms.locfileid: "59410593"
         - [DOM IntelliSense](#_Toc318097412)
         - [VSDOC 서명이 오버 로드](#_Toc318097413)
         - [암시적 참조](#_Toc318097414)
-    - [CSS 편집기](#_Toc318097415)
+    - [CSS Editor](#_Toc318097415)
 
         - [문 자동 줄임 완성](#_Toc318097416)
         - [계층적 들여쓰기입니다.](#_Toc318097417)
@@ -88,7 +88,7 @@ ms.locfileid: "59410593"
         - [공급 업체 특정 스키마 (-설정-,-webkit)](#_Toc318097419)
         - [주석 처리 및 주석 처리 제거 지원](#_Toc318097420)
         - [색 선택](#_Toc318097421)
-        - [코드 조각](#_Toc318097422)
+        - [조각](#_Toc318097422)
         - [사용자 지정 영역](#_Toc318097423)
     - [페이지 검사기](#_Toc318097424)
     - [게시](#_Toc318097425)
@@ -96,7 +96,7 @@ ms.locfileid: "59410593"
         - [게시 프로필](#_Toc318097426)
         - [ASP.NET 미리 컴파일 및 병합](#_Toc318097427)
 - [IIS Express](#_Toc318097428)
-- [고지 사항](#_Toc318097429)
+- [고 지 사항](#_Toc318097429)
 
 <a id="_Toc318097372"></a>
 ## <a name="aspnet-core-runtime-and-framework"></a>ASP.NET Core 런타임 및 프레임 워크

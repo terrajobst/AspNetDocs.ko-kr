@@ -13,7 +13,7 @@ ms.openlocfilehash: 7c73bf4734f8ed8a1bf93595c0847f611ad9cc15
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59409605"
 ---
 # <a name="self-host-aspnet-web-api-1-c"></a>자체 호스팅 ASP.NET Web API 1 (C#)

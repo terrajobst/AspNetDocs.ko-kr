@@ -12,7 +12,7 @@ ms.openlocfilehash: 2b70b49e6af449222cb67e64ed9026091646e6a4
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408877"
 ---
 # <a name="adding-social-networking-to-your-website"></a>웹 사이트에 소셜 네트워킹 추가

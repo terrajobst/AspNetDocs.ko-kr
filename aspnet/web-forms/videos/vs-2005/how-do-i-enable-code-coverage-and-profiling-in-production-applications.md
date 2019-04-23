@@ -12,7 +12,7 @@ ms.openlocfilehash: eb886aac6c0a5d9e65719a0dc359acbad3b85659
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408786"
 ---
 # <a name="how-do-i-enable-code-coverage-and-profiling-in-production-applications"></a>[어떻게 할까요?] 코드 검사 및 프로덕션 응용 프로그램에서 프로 파일링을 사용 하 시겠습니까?

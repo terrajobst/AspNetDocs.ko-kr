@@ -12,7 +12,7 @@ ms.openlocfilehash: 91523180501f1d1eb67586bf97649ad6226ec565
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413232"
 ---
 # <a name="creating-a-rating-control-vb"></a>등급 컨트롤 만들기(VB)
@@ -66,7 +66,7 @@ by [Christian Wenz](https://github.com/wenz)
 페이지를 저장 하 고 브라우저에 로드 합니다. (처음에 비어 있음) 등급 항목 위로 마우스를 가져가면 JavaScript 효과 발생 합니다. 등급 변경 됩니다. 별 집합이 클릭 하면 현재 등급 유지 됩니다. 마지막으로 폼을 전송 하면 서버 쪽 코드를 선택한 등급을 출력 합니다.
 
 
-[![C최소한의 코드를 사용 하 여 등급 시스템 reating](creating-a-rating-control-vb/_static/image2.png)](creating-a-rating-control-vb/_static/image1.png)
+[![최소한의 코드를 사용 하 여 등급 시스템 만들기](creating-a-rating-control-vb/_static/image2.png)](creating-a-rating-control-vb/_static/image1.png)
 
 최소한의 코드를 사용 하 여 등급 시스템 만들기 ([클릭 하 여 큰 이미지 보기](creating-a-rating-control-vb/_static/image3.png))
 

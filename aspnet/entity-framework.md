@@ -11,9 +11,9 @@ msc.legacyurl: /entity-framework
 msc.type: content
 ms.openlocfilehash: bcbd98f88b1e7e292961326061404ce91d157b32
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59414558"
 ---
 # <a name="entity-framework"></a>Entity Framework
@@ -31,4 +31,4 @@ ASP.NET을 사용 하 여 Entity Framework를 사용 합니다.
 
 - [Web Forms 자습서](web-forms/overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1.md)
 - [MVC 자습서](mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application.md)
-- [샘플 응용 프로그램](https://webpifeed.blob.core.windows.net/webpifeed/Partners/ASP.NET%20MVC%20Application%20Using%20Entity%20Framework%20Code%20First.zip)
+- [예제 애플리케이션](https://webpifeed.blob.core.windows.net/webpifeed/Partners/ASP.NET%20MVC%20Application%20Using%20Entity%20Framework%20Code%20First.zip)

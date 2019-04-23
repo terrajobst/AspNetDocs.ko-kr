@@ -12,7 +12,7 @@ ms.openlocfilehash: 242665b3ba2e2ad2157abbe2c44ae207f15e72ce
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59410866"
 ---
 # <a name="provide-crud-create-read-update-delete-data-form-entry-support"></a>CRUD(만들기, 읽기, 업데이트, 삭제) 데이터 양식 항목 지원 제공
@@ -36,7 +36,7 @@ by [Microsoft](https://github.com/microsoft)
 
 두 Url에 대 한 지원을 구현 하는 DinnersController에 작업 메서드 이전에 추가한: */Dinners* 하 고 */Dinners 세부 정보 / [id]* 합니다.
 
-| **URL** | **동사** | **용도** |
+| **URL** | **VERB** | **용도** |
 | --- | --- | --- |
 | */Dinners/* | 가져오기 | 예정 된 dinners는 HTML 목록을 표시 합니다. |
 | */Dinners/Details/[id]* | 가져오기 | 특정 저녁에 대 한 정보를 표시 합니다. |
@@ -45,11 +45,11 @@ by [Microsoft](https://github.com/microsoft)
 
 이러한 새 Url 사용 하 여 HTTP GET 및 HTTP POST 동사 상호 작용 지원할 예정입니다. 다음이 Url에 HTTP GET 요청 데이터 (폼 데이터로 Dinner "편집"의 경우, "만들기"의 경우 빈 폼 및 삭제 확인 화면이 "삭제"의 경우)의 초기 HTML 보기를 표시 됩니다. 다음이 Url에 HTTP POST 요청 우리의 DinnerRepository (그리고 데이터베이스에는 여기에서) Dinner 데이터를 저장/업데이트/삭제 됩니다.
 
-| **URL** | **동사** | **용도** |
+| **URL** | **VERB** | **용도** |
 | --- | --- | --- |
 | */Dinners/Edit/[id]* | 가져오기 | 저녁 식사 데이터로 채워진 편집 가능한 HTML 폼을 표시 합니다. |
 | 올리기 | 데이터베이스에 특정 저녁 폼 변경 내용을 저장 합니다. |
-| */ Dinners/만들기* | 가져오기 | 사용자가 새 Dinners 정의할 수 있는 빈 HTML 폼을 표시 합니다. |
+| */Dinners/Create* | 가져오기 | 사용자가 새 Dinners 정의할 수 있는 빈 HTML 폼을 표시 합니다. |
 | 올리기 | 새 Dinner 만들고 데이터베이스에 저장 합니다. |
 | */Dinners/Delete/[id]* | 가져오기 | 삭제 확인 화면을 표시 합니다. |
 | 올리기 | 데이터베이스에서 지정한 저녁 식사를 삭제합니다. |

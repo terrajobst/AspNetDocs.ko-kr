@@ -12,7 +12,7 @@ ms.openlocfilehash: f06dd645811e7c6bc4c5dea8cdceae629756e7bf
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59420473"
 ---
 # <a name="aspnet-4-quick-hit---predictable-client-ids"></a>ASP.NET 4 "빠른 Hit"-예측 가능한 클라이언트 Id

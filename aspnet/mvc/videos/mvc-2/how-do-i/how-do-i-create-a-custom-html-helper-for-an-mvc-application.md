@@ -12,7 +12,7 @@ ms.openlocfilehash: 60953243d3038667e4f729b1394e68f0c9d7c178
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59415052"
 ---
 # <a name="how-do-i-create-a-custom-html-helper-for-an-mvc-application"></a>어떻게 할까요 MVC 응용 프로그램에 대 한 사용자 지정 HTML 도우미 만들기

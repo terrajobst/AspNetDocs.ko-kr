@@ -12,7 +12,7 @@ ms.openlocfilehash: e4b8f059974dec33d6305e7b84919550713bf4e4
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59409891"
 ---
 # <a name="aspnet-error-handling"></a>ASP.NET 오류 처리
@@ -345,7 +345,7 @@ Microsoft Azure에 웹 응용 프로그램을 배포 하는 방법에 대 한 �
 - Mike 되
 - [Mitchel 판매자, USA](http://www.mitchelsellers.com/) (twitter: [ @MitchelSellers ](http://twitter.com/MitchelSellers))
 - [Paul Cociuba, Microsoft](http://linqto.me/Links/pcociuba)
-- [파울로 Morgado, 포르투갈](http://paulomorgado.net/)
+- [Paulo Morgado, Portugal](http://paulomorgado.net/)
 - [Pranav Rastogi, Microsoft](https://blogs.msdn.com/b/pranav_rastogi)
 - [Tim Ammann, Microsoft](https://blogs.iis.net/timamm/default.aspx)
 - [Microsoft, Tom Dykstra](https://blogs.msdn.com/aspnetue)

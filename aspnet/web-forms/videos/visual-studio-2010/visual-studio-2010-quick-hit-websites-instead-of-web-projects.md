@@ -12,7 +12,7 @@ ms.openlocfilehash: e4f30d129238a251724c262551db9d579aafa36b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408903"
 ---
 # <a name="visual-studio-2010-quick-hit---websites-instead-of-web-projects"></a>Visual Studio 2010 "빠른 Hit"-웹 프로젝트 대신 웹 사이트

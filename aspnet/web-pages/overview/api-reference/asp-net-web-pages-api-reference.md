@@ -12,7 +12,7 @@ ms.openlocfilehash: 547b1932c4f8d3684c668561e3fe568a0f272925
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59416508"
 ---
 # <a name="aspnet-web-pages-razor-api-quick-reference"></a>ASP.NET 웹 페이지 (Razor) API 빠른 참조
@@ -37,7 +37,7 @@ ms.locfileid: "59416508"
 이 페이지에는 다음에 대 한 참조 정보가 들어 있습니다.
 
 - [클래스](#Classes)
-- [데이터](#Data)
+- [Data](#Data)
 - [도우미](#Helpers)
 - [유효성 검사](#Validation)
 

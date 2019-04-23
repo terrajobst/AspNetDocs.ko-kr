@@ -12,7 +12,7 @@ ms.openlocfilehash: b476e9010e47043f12ce00c222382786c66f5c4e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59414311"
 ---
 # <a name="getting-started-with-aspnet-mvc-3-c"></a>ASP.NET MVC 3 시작(C#)
@@ -20,7 +20,7 @@ ms.locfileid: "59414311"
 > Microsoft Visual Web Developer 2010 Express를 사용 하 여 C#을 사용 하 여 ASP.NET MVC 웹 응용 프로그램 빌드의 기초입니다.
 
 
-- [ASP.NET MVC 3 소개(C#)](intro-to-aspnet-mvc-3.md)
+- [ASP.NET 3 소개(C#)](intro-to-aspnet-mvc-3.md)
 - [컨트롤러 추가(C#)](adding-a-controller.md)
 - [보기 추가(C#)](adding-a-view.md)
 - [모델 추가(C#)](adding-a-model.md)

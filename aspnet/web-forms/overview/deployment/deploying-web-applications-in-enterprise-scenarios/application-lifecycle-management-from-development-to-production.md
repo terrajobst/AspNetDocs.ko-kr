@@ -12,7 +12,7 @@ ms.openlocfilehash: 3b7f154936222c85bd7897ea10cbb5ae9d1aa670
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408942"
 ---
 # <a name="application-lifecycle-management-from-development-to-production"></a>애플리케이션 수명 주기 관리: 개발부터 프로덕션까지

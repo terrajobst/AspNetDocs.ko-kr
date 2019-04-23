@@ -12,7 +12,7 @@ ms.openlocfilehash: 3e720dd895c609d5b35848dbc4d4a6989028ff7d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59418757"
 ---
 # <a name="signalr-getting-started"></a>SignalR 시작
@@ -25,5 +25,5 @@ ms.locfileid: "59418757"
 - [자습서: SignalR 2 시작](tutorial-getting-started-with-signalr.md)
 - [자습서: SignalR 2 및 MVC 5 시작](tutorial-getting-started-with-signalr-and-mvc.md)
 - [자습서: 고주파수 SignalR 2 사용 하 여](tutorial-high-frequency-realtime-with-signalr.md)
-- [자습서: SignalR 2를 사용하여 서버 브로드캐스트](tutorial-server-broadcast-with-signalr.md)
-- [실습: SignalR을 사용하는 실시간 웹 애플리케이션](real-time-web-applications-with-signalr.md)
+- [자습서: SignalR 2 사용 하 여 서버 브로드캐스트](tutorial-server-broadcast-with-signalr.md)
+- [실습: SignalR 사용 하 여 실시간 웹 응용 프로그램](real-time-web-applications-with-signalr.md)

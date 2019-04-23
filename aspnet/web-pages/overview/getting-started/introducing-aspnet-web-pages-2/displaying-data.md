@@ -12,7 +12,7 @@ ms.openlocfilehash: 5415913626eb063a4cb1013ba03857c130487f42
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59412179"
 ---
 # <a name="introducing-aspnet-web-pages---displaying-data"></a>ASP.NET 웹 페이지 소개-데이터를 표시 합니다.
@@ -214,7 +214,7 @@ WebMatrix에서 왼쪽된 창에서 클릭 합니다 **파일** 작업 영역입
 
 > [!TIP] 
 > 
-> **SQL(구조적 쿼리 언어)**
+> **구조적된 쿼리 언어 (SQL)**
 > 
 > SQL은 데이터베이스에서 데이터를 관리 하는 것에 대 한 대부분의 관계형 데이터베이스에 사용 되는 언어입니다. 데이터를 검색 하 고 업데이트 하 고 만들기, 수정 및 데이터베이스 테이블에서 데이터를 관리할 수 있는 명령을 포함 합니다. SQL 프로그래밍 언어 (예: C#)와 다릅니다. SQL을 사용 하 여 원하는 항목을 데이터베이스에 알립니다 이며 데이터베이스의 데이터를 가져오는 작업을 수행 하는 방법을 파악 하는 작업입니다. 다음은 일부 SQL 명령의 예로 및 용도:
 > 
@@ -333,7 +333,7 @@ WebMatrix 트리 보기에서 페이지를 마우스 오른쪽 단추로 클릭 
 
 ## <a name="additional-resources"></a>추가 리소스
 
-- [Razor 구문을 사용하는 ASP.NET 웹 프로그래밍 소개](https://go.microsoft.com/fwlink/?LinkID=202890)
+- [Razor 구문을 사용 하 여 ASP.NET 웹 프로그래밍 소개](https://go.microsoft.com/fwlink/?LinkID=202890)
 
 > [!div class="step-by-step"]
 > [이전](intro-to-web-pages-programming.md)

@@ -12,7 +12,7 @@ ms.openlocfilehash: ae53e23dda3ac63e26590edab692188bb44e9f65
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413206"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-introduction---1-of-12"></a>SQL Server Compact Visual Studio를 사용 하 여를 사용 하 여 ASP.NET 웹 응용 프로그램을 배포 합니다. 소개-12 1
@@ -84,7 +84,7 @@ Contoso University Visual Studio 웹 응용 프로그램 프로젝트입니다. 
 
 - [Visual Studio 2010 SP1](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack)
 - [Visual Web Developer Express 2010 SP1](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VWD2010SP1Pack)
-- [Visual Studio 2012 RC 또는 Visual Studio Express 2012 RC for Web](https://go.microsoft.com/fwlink/?LinkId=240162)
+- [Visual Studio 2012 RC or Visual Studio Express 2012 RC for Web](https://go.microsoft.com/fwlink/?LinkId=240162)
 
 Visual Studio 2010 SP1 또는 Visual Web Developer Express 2010 SP1에 있는 경우 다음 제품을 설치 합니다.
 

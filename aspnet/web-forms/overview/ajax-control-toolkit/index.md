@@ -12,7 +12,7 @@ ms.openlocfilehash: 795283c33d63272b29b91fd7037c3463bc71abad
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59410749"
 ---
 # <a name="older-versions---ajax-control-toolkit"></a>이전 버전 - Ajax 컨트롤 도구 키트
@@ -26,10 +26,10 @@ ms.locfileid: "59410749"
 - [시작](getting-started/index.md)
 
     - [AJAX 컨트롤 도구 키트 시작(C#)](getting-started/get-started-with-the-ajax-control-toolkit-cs.md)
-    - [Using AJAX 컨트롤 도구 키트 컨트롤 및 컨트롤 Extender 사용(C#)](getting-started/using-ajax-control-toolkit-controls-and-control-extenders-cs.md)
+    - [Using AJAX 컨트롤 도구 키트 컨트롤 및 컨트롤 Extenders 사용(C#)](getting-started/using-ajax-control-toolkit-controls-and-control-extenders-cs.md)
     - [사용자 지정 AJAX 컨트롤 도구 키트 컨트롤 Extender 만들기(C#)](getting-started/creating-a-custom-ajax-control-toolkit-control-extender-cs.md)
     - [AJAX 컨트롤 도구 키트 시작(VB)](getting-started/get-started-with-the-ajax-control-toolkit-vb.md)
-    - [Using AJAX 컨트롤 도구 키트 컨트롤 및 컨트롤 Extender 사용(VB)](getting-started/using-ajax-control-toolkit-controls-and-control-extenders-vb.md)
+    - [Using AJAX 컨트롤 도구 키트 컨트롤 및 컨트롤 Extenders 사용(VB)](getting-started/using-ajax-control-toolkit-controls-and-control-extenders-vb.md)
     - [사용자 지정 AJAX 컨트롤 도구 키트 컨트롤 Extender 만들기(VB)](getting-started/creating-a-custom-ajax-control-toolkit-control-extender-vb.md)
 - [Accordion](accordion/index.md)
 
@@ -81,8 +81,8 @@ ms.locfileid: "59410749"
     - [JavaScript에서 패널 축소 및 확장(VB)](collapsiblepanel/collapsing-and-expanding-a-panel-from-javascript-vb.md)
 - [ColorPicker](colorpicker/index.md)
 
-    - [ColorPicker 컨트롤 Extender(C#)](colorpicker/using-the-colorpicker-control-extender-cs.md)
-    - [ColorPicker 컨트롤 Extender(VB)](colorpicker/using-the-colorpicker-control-extender-vb.md)
+    - [ColorPicker Control Extender(C#)](colorpicker/using-the-colorpicker-control-extender-cs.md)
+    - [ColorPicker Control Extender(VB)](colorpicker/using-the-colorpicker-control-extender-vb.md)
 - [ComboBox](combobox/index.md)
 
     - [ComboBox 컨트롤(C#)](combobox/how-do-i-use-the-combobox-control-cs.md)

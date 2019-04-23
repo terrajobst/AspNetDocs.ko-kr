@@ -12,7 +12,7 @@ ms.openlocfilehash: 7b7324c9e0518697c0978b96b0123cb44133722b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59418939"
 ---
 # <a name="creating-custom-routes-c"></a>사용자 지정 경로 만들기(C#)
@@ -61,7 +61,7 @@ by [Microsoft](https://github.com/microsoft)
 **그림 1-매개 변수 변환 오류**
 
 
-[![T새 프로젝트 대화 상자의 그](creating-custom-routes-cs/_static/image1.jpg)](creating-custom-routes-cs/_static/image1.png)
+[![새 프로젝트 대화 상자](creating-custom-routes-cs/_static/image1.jpg)](creating-custom-routes-cs/_static/image1.png)
 
 **그림 01**: 매개 변수 변환에서 오류 ([클릭 하 여 큰 이미지 보기](creating-custom-routes-cs/_static/image2.png))
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 68080859e205283f56d8f543bfa06b76bb22a39d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408864"
 ---
 # <a name="iteration-5--create-unit-tests-c"></a>반복 #5-단위 테스트 만들기 (C#)
@@ -117,12 +117,12 @@ Moq를 사용 하려면 먼저 다음 단계를 완료 해야 합니다.
 5. 다음이 단계를 완료 한 후 참조 폴더는 그림 2와 같습니다.
 
 
-[![UMoq nblocking](iteration-5-create-unit-tests-cs/_static/image1.jpg)](iteration-5-create-unit-tests-cs/_static/image1.png)
+[![차단 해제 Moq](iteration-5-create-unit-tests-cs/_static/image1.jpg)](iteration-5-create-unit-tests-cs/_static/image1.png)
 
 **그림 01**: 차단 해제 Moq ([클릭 하 여 큰 이미지 보기](iteration-5-create-unit-tests-cs/_static/image2.png))
 
 
-[![RMoq를 추가한 후 eferences](iteration-5-create-unit-tests-cs/_static/image2.jpg)](iteration-5-create-unit-tests-cs/_static/image3.png)
+[![Moq를 추가한 후 참조](iteration-5-create-unit-tests-cs/_static/image2.jpg)](iteration-5-create-unit-tests-cs/_static/image3.png)
 
 **그림 02**: Moq를 추가한 후 참조 ([클릭 하 여 큰 이미지 보기](iteration-5-create-unit-tests-cs/_static/image4.png))
 
@@ -185,7 +185,7 @@ CreateContact(), 명명 된 첫 번째 단위 테스트를 연락처 클래스�
 메뉴 옵션을 선택 하 여 목록 1에서 단위 테스트를 실행할 수 있습니다 **테스트를 실행 하 고 솔루션 (CTRL + R, A)의 모든 테스트**합니다. 테스트 결과 창에서 테스트의 결과가 표시 됩니다 (그림 4 참조).
 
 
-[![T동부 표준시 결과](iteration-5-create-unit-tests-cs/_static/image4.jpg)](iteration-5-create-unit-tests-cs/_static/image7.png)
+[![테스트 결과](iteration-5-create-unit-tests-cs/_static/image4.jpg)](iteration-5-create-unit-tests-cs/_static/image7.png)
 
 **그림 04**: 테스트 결과 ([클릭 하 여 큰 이미지 보기](iteration-5-create-unit-tests-cs/_static/image8.png))
 

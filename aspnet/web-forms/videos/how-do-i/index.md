@@ -12,7 +12,7 @@ ms.openlocfilehash: 7d300a1f29c7712408d17c6629da6cefb67b3cdb
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59410320"
 ---
 # <a name="how-do-i"></a>작업 절차
@@ -27,7 +27,7 @@ ms.locfileid: "59410320"
 - [웹 파트 및 개인 설정 활용](how-do-i-utilize-web-parts-and-personalization.md)
 - [프로필과 테마를 사용하여 사이트 사용자 지정](how-do-i-customize-my-site-with-profiles-and-themes.md)
 - [멤버 자격 및 역할을 사용한 사이트 보안](how-do-i-secure-my-site-using-membership-and-roles.md)
-- [“문의처” 페이지 만들기](how-do-i-create-a-contact-us-page.md)
+- ["문의처" 페이지 만들기](how-do-i-create-a-contact-us-page.md)
 - [전체 기능 고객 로그인 포털 만들기](how-do-i-create-a-full-featured-customer-login-portal.md)
 - [마스터 페이지 및 사이트 탐색 사용](how-do-i-use-master-pages-and-site-navigation.md)
 - [데이터 기반 웹 사이트 만들기](how-do-i-create-data-driven-web-sites.md)
@@ -51,8 +51,8 @@ ms.locfileid: "59410320"
 - [사용자 지정 웹 서버 컨트롤에 대한 보기 상태 정보 저장 및 로드](how-do-i-save-and-load-view-state-information-for-a-custom-web-server-control.md)
 - [ASP.NET에서 애플리케이션 수준 이벤트 만들기 및 사용](how-do-i-create-and-use-application-level-events-in-aspnet.md)
 - [ASP.NET Core에서 간단한 파일 업로드](how-do-i-simple-file-uploads-in-aspnet.md)
-- [ASP.NET 2에서 여러 파일 업로드](how-do-i-multiple-file-uploads-in-aspnet-2.md)
-- [ASP.NET 1에서 여러 파일 업로드](how-do-i-multiple-file-uploads-in-aspnet-1.md)
+- [ASP.NET Core에서 여러 파일 업로드 2](how-do-i-multiple-file-uploads-in-aspnet-2.md)
+- [ASP.NET Core에서 여러 파일 업로드 1](how-do-i-multiple-file-uploads-in-aspnet-1.md)
 - [AJAX 스타일 인터페이스를 사용하여 파일 업로드](how-do-i-file-uploads-with-an-ajax-style-interface.md)
 - [선언적으로 그리고 프로그래밍 방식으로 마스터 페이지 작업](how-do-i-work-with-master-pages-declaratively-and-programmatically.md)
 - [마스터 및 콘텐츠 페이지의 이벤트 처리](how-do-i-handle-events-in-master-and-content-pages.md)
