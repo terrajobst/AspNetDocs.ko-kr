@@ -8,12 +8,12 @@ ms.date: 04/21/2011
 ms.assetid: b3193d33-2d0b-4d98-9712-58bd897c62ec
 msc.legacyurl: /mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-6
 msc.type: authoredcontent
-ms.openlocfilehash: b1e7bd0b16190b00e0e78a01ef71475e1c8d048a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: bc031dd5be61cc6707c522f85f6af77a420c8b31
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59394824"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129664"
 ---
 # <a name="part-6-using-data-annotations-for-model-validation"></a>6부: 모델 유효성 검사에 데이터 주석 사용
 
@@ -24,7 +24,6 @@ ms.locfileid: "59394824"
 > MVC Music Store는 온라인 음악 앨범을 판매 하 고 기본 사이트 관리, 사용자 로그인 및 장바구니 기능을 구현 하는 간단한 샘플 저장소 구현입니다.  
 >   
 > 이 자습서 시리즈 모든 ASP.NET MVC Music Store 샘플 응용 프로그램 빌드를 수행 하는 단계를 자세히 설명 합니다. 6 부 모델 유효성 검사에 대 한 데이터 주석을 사용 하 여 설명 합니다.
-
 
 만들기 및 편집 폼을 사용 하 여 중요 한 문제가 있다고: 유효성 검사를 수행 중인 합니다. 가격 필드에 필수 필드를 빈 또는 형식 문자를 유지 하는 등 수행할 수 있습니다이 고 데이터베이스에서 살펴보겠습니다 첫 번째 오류가 발생 합니다.
 
@@ -76,7 +75,6 @@ ms.locfileid: "59394824"
 유효성 검사 메시지를 즉시 제거 됩니다 있도록 유효성 검사 요구 사항을 충족 제목 필드에서 문자 하나를 입력 합니다.
 
 ![](mvc-music-store-part-6/_static/image3.png)
-
 
 > [!div class="step-by-step"]
 > [이전](mvc-music-store-part-5.md)

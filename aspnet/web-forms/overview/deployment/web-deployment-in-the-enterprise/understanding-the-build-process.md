@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 5b982451-547b-4a2f-a5dc-79bc64d84d40
 msc.legacyurl: /web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-build-process
 msc.type: authoredcontent
-ms.openlocfilehash: 6f526b9842e02031b54b0a7519486ef8aa69021b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 802d93f7ca987d018967275bae68b8c56d883a25
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59397398"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130925"
 ---
 # <a name="understanding-the-build-process"></a>빌드 프로세스 이해
 
@@ -25,7 +25,6 @@ ms.locfileid: "59397398"
 > 
 > > [!NOTE]
 > > 이전 항목인 [프로젝트 파일 이해](understanding-the-project-file.md), MSBuild 프로젝트 파일의 주요 구성 요소를 설명 및 여러 대상 환경에 배포를 지원 하기 위해 분할 프로젝트 파일의 개념이 도입 되었습니다. 아직 수행 하지 않은 이러한 개념을 잘 알고, 경우 검토해 [프로젝트 파일 이해](understanding-the-project-file.md) 작업 수행 하기 전에이 항목입니다.
-
 
 이 항목의 Fabrikam, Inc. 라는 가상 회사의 엔터프라이즈 배포 요구 사항 기반 자습서 시리즈의 일부를 형성 합니다. 샘플 솔루션을 사용 하 여이 자습서 시리즈&#x2014;는 [Contact Manager 솔루션](the-contact-manager-solution.md)&#x2014;현실적인 수준의 복잡성을 Windows Communication ASP.NET MVC 3 응용 프로그램을 포함 하 여 웹 응용 프로그램을 나타내는 Foundation (WCF) 서비스 및 데이터베이스 프로젝트입니다.
 
@@ -64,54 +63,40 @@ ms.locfileid: "59397398"
 > [!NOTE]
 > 사용자 고유의 서버 환경에 대 한 환경 관련 프로젝트 파일 사용자 지정 하는 방법에 대 한 지침을 참조 하세요 [대상 환경에 대 한 배포 속성 구성](../configuring-server-environments-for-web-deployment/configuring-deployment-properties-for-a-target-environment.md)합니다.
 
-
 ## <a name="invoking-the-build-and-deployment-process"></a>빌드 및 배포 프로세스를 호출합니다.
 
 Contact Manager 솔루션 개발자 테스트 환경에 배포 하려면 개발자는 다음과 같이 실행 됩니다. 합니다 *게시 Dev.cmd* 명령 파일입니다. MSBuild.exe를 호출 하는이 지정 *Publish.proj* 실행 하려면 프로젝트 파일 및 *Env Dev.proj* 매개 변수 값으로.
 
-
 [!code-console[Main](understanding-the-build-process/samples/sample1.cmd)]
-
 
 > [!NOTE]
 > 합니다 **/fl** 전환 (짧은 **/fileLogger**) 라는 파일에 빌드 출력을 기록 *msbuild.log* 현재 디렉터리에 있습니다. 자세한 내용은 참조는 [MSBuild 명령줄 참조](https://msdn.microsoft.com/library/ms164311.aspx)합니다.
 
-
 이 시점에서 MSBuild 실행을 시작 로드 된 *Publish.proj* 파일 및 그 안에 있는 지침을 처리 하기 시작 합니다. 첫 번째 명령은 프로젝트는 MSBuild 지시 파일을 **TargetEnvPropsFile** 매개 변수를 지정 합니다.
 
-
 [!code-xml[Main](understanding-the-build-process/samples/sample2.xml)]
-
 
 **TargetEnvPropsFile** 매개 변수를 지정 합니다 *Env Dev.proj* 파일 이기 때문에 MSBuild의 콘텐츠를 병합 합니다 *Env Dev.proj* 파일를  *Publish.proj* 파일입니다.
 
 MSBuild에서 병합 된 프로젝트 파일에서 발생 하는 다음 요소는 속성 그룹입니다. 속성 파일에 나타나는 순서 대로 처리 됩니다. MSBuild는 지정 된 조건을 충족 제공 각 속성에 대 한 키-값 쌍을 만듭니다. 나중에 파일에 정의 된 속성 파일에 앞에서 정의한 동일한 이름의 속성을 덮어씁니다. 예를 들어 합니다 **OutputRoot** 속성입니다.
 
-
 [!code-xml[Main](understanding-the-build-process/samples/sample3.xml)]
-
 
 MSBuild에서 첫 번째를 처리 하는 경우 **OutputRoot** 요소인 마찬가지로 명명 된 매개 변수를 제공 하지 않았습니다의 값을 설정 합니다 **OutputRoot** 속성을 **... \Publish\Out**합니다. 두 번째 있을 경우 **OutputRoot** 요소를 조건이 **true**의 값을 덮어씁니다를 **OutputRoot** 속성의 값으로는 **OutDir** 매개 변수입니다.
 
 MSBuild에서 발생 하는 다음 요소는 라는 항목이 포함 된 단일 항목 그룹을 **ProjectsToBuild**합니다.
 
-
 [!code-xml[Main](understanding-the-build-process/samples/sample4.xml)]
-
 
 명명 된 항목 목록을 작성 하 여이 명령을 처리 하는 MSBuild **ProjectsToBuild**합니다. 항목 목록에 단일 값을 포함 하는 예제의 경우&#x2014;의 경로 및 솔루션 파일의 파일 이름입니다.
 
 이 시점에서 나머지 요소는 대상이 됩니다. 대상 속성 및 항목에서 다르게 처리 됩니다&#x2014;기본적으로, 대상으로 처리 되지 않는 되거나 되지 않는 하거나 명시적으로 사용자가 지정한 프로젝트 파일 내에서 다른 구문에 의해 호출 됩니다. 이전에 설명한 대로 열기 **프로젝트** 태그를 포함 한 **DefaultTargets** 특성입니다.
 
-
 [!code-xml[Main](understanding-the-build-process/samples/sample5.xml)]
-
 
 이렇게 하면 MSBuild를 호출 하는 **FullPublish** 대상이 대상 MSBuild.exe가 호출 될 때 지정 합니다. 합니다 **FullPublish** 대상 작업을 포함 하지 않으면 대신 종속성 목록을 간단히 지정 합니다.
 
-
 [!code-xml[Main](understanding-the-build-process/samples/sample6.xml)]
-
 
 이 종속성 MSBuild를 실행 하려면 지시 합니다 **FullPublish** 이 순서 대로 대상이 목록을 호출 할 대상:
 
@@ -125,16 +110,13 @@ MSBuild에서 발생 하는 다음 요소는 라는 항목이 포함 된 단일 
 
 합니다 **정리** 대상 기본적으로 삭제 합니다. 출력 디렉터리 및 모든 해당 콘텐츠는 최신 빌드에 대 한 준비로 합니다.
 
-
 [!code-xml[Main](understanding-the-build-process/samples/sample7.xml)]
-
 
 대상이 포함 된 **ItemGroup** 요소입니다. 속성 또는 내의 항목을 정의 하는 경우는 **대상** 요소를 만들 *동적* 속성 및 항목입니다. 즉, 속성 또는 항목 대상을 실행 될 때까지 처리 되지 않습니다. 출력 디렉터리 없거나 빌드할 수 있도록 빌드 프로세스가 시작 될 때까지 파일을 포함 하지 수는 **\_FilesToDelete** 정적 항목으로 나열; 실행이 진행 될 때까지 기다려야 합니다. 따라서 대상 내의 항목을 동적으로 목록을 작성 합니다.
 
 > [!NOTE]
 > 이 경우 때문에 합니다 **정리** 대상이 실행할 첫 번째는 실제 동적 항목 그룹을 사용할 필요가 없습니다. 그러나 것이 좋습니다 동적 속성 및 항목을 사용 하 여 이러한 유형의 시나리오를 시점에서 다른 순서로 대상을 실행 하려는 수도 있습니다.  
 > 사용 하지 않을 항목을 선언 하지 않는 것을 목표로 정해야 하 합니다. 특정 대상에만 사용할 수 있는 항목에 있는 경우에 빌드 프로세스에서 모든 불필요 한 오버 헤드를 제거 하려면 대상 내에 배치 하는 것이 좋습니다.
-
 
 항목을 제외 하 고, 동적 합니다 **정리** 대상은 매우 간단 하 고 기본 제공 활용 **메시지**, **삭제**, 및 **RemoveDir**작업:
 
@@ -147,9 +129,7 @@ MSBuild에서 발생 하는 다음 요소는 라는 항목이 포함 된 단일 
 
 합니다 **BuildProjects** 대상에는 기본적으로 샘플 솔루션의 모든 프로젝트를 빌드합니다.
 
-
 [!code-xml[Main](understanding-the-build-process/samples/sample8.xml)]
-
 
 이 대상 이전 항목에서 자세히 설명한 [프로젝트 파일 이해](understanding-the-project-file.md), 작업 및 대상 속성 및 항목 참조 하는 방법을 보여 줍니다. 이 시점에서 관심이 주로 합니다 **MSBuild** 작업 합니다. 여러 프로젝트를 빌드하기 위해이 작업을 사용할 수 있습니다. 작업에 MSBuild.exe;의 새 인스턴스를 만들지 않습니다. 현재 실행 중인 인스턴스를 사용 하 여 각 프로젝트를 빌드합니다. 이 예제에 대 한 관심의 핵심 포인트는 배포 속성:
 
@@ -159,14 +139,11 @@ MSBuild에서 발생 하는 다음 요소는 라는 항목이 포함 된 단일 
 > [!NOTE]
 > 합니다 **패키지** 대상 웹 게시 파이프라인 (WPP), MSBuild 및 웹 배포 간의 통합을 제공 하는 호출 합니다. 기본 제공 대상 WPP이 제공 하는 검토를 확인 하려는 경우는 *Microsoft.Web.Publishing.targets* %PROGRAMFILES (x86) %\MSBuild\Microsoft\VisualStudio\v10.0\Web 폴더의 파일입니다.
 
-
 ### <a name="the-gatherpackagesforpublishing-target"></a>GatherPackagesForPublishing 대상
 
 연구 하는 경우는 **GatherPackagesForPublishing** 대상 보면 모든 작업을 실제로 포함 되지 않습니다. 대신 동적 세 가지 항목을 정의 하는 단일 항목 그룹을 포함 합니다.
 
-
 [!code-xml[Main](understanding-the-build-process/samples/sample9.xml)]
-
 
 이러한 항목은 때 생성 된 배포 패키지를 참조 합니다 **BuildProjects** 대상이 실행 합니다. 있습니다 수 없습니다 이러한 항목을 정의 정적으로 프로젝트 파일에서 항목을 참조 하는 파일까지 존재 하지 때문에 합니다 **BuildProjects** 대상이 실행 됩니다. 대신 항목을 정의 해야 동적으로 될 때까지 호출 되지 않는 대상 내의 후 합니다 **BuildProjects** 대상이 실행 됩니다.
 
@@ -177,7 +154,6 @@ MSBuild에서 발생 하는 다음 요소는 라는 항목이 포함 된 단일 
 > [!NOTE]
 > 데이터베이스 프로젝트를 빌드하고 동일한 스키마를 사용 하 여 MSBuild 프로젝트 파일로.deploymanifest 파일로 생성 됩니다. 데이터베이스 스키마 (.dbschema)의 위치 및 모든 배포 전 및 배포 후 스크립트의 세부 정보를 포함 하 여 데이터베이스를 배포 하는 데 필요한 모든 정보를 포함 합니다. 자세한 내용은 [의 개요 데이터베이스 빌드 및 배포](https://msdn.microsoft.com/library/aa833165.aspx)합니다.
 
-
 배포 패키지 및 데이터베이스 배포 매니페스트 생성 및 사용 하는 방법을 자세히 알아봅니다 [빌드 및 패키징 웹 응용 프로그램 프로젝트](building-and-packaging-web-application-projects.md) 하 고 [데이터베이스 프로젝트 배포](deploying-database-projects.md)합니다.
 
 ### <a name="the-publishdbpackages-target"></a>PublishDbPackages 대상
@@ -186,9 +162,7 @@ MSBuild에서 발생 하는 다음 요소는 라는 항목이 포함 된 단일 
 
 첫째, 여는 태그에 포함 되어 있는지 확인할 수 있습니다는 **출력** 특성입니다.
 
-
 [!code-xml[Main](understanding-the-build-process/samples/sample10.xml)]
-
 
 이 예가 *대상 일괄 처리*합니다. MSBuild 프로젝트 파일에서 일괄 처리는 컬렉션을 반복 하기 위한 기술입니다. 값은 **출력** 특성 **"% (DbPublishPackages.Identity)"**, 참조 하는 **Identity** 의 메타 데이터 속성은 **DbPublishPackages** 항목 목록입니다. 이 표기법 **Outputs=%***(ItemList.ItemMetadataName)*,으로 변환 됩니다.
 
@@ -198,26 +172,20 @@ MSBuild에서 발생 하는 다음 요소는 라는 항목이 포함 된 단일 
 > [!NOTE]
 > **Identity** 중 하나인 합니다 [기본 제공 메타 데이터 값](https://msdn.microsoft.com/library/ms164313.aspx) 만들기의 모든 항목에 할당 된 합니다. 값을 가리킵니다 합니다 **포함** 특성을 **항목** 요소&#x2014;즉, 경로 및 항목의 파일 이름입니다.
 
-
 이 경우 동일한 경로 및 파일 이름을 사용 하 여 둘 이상의 항목 없어야, 때문에 기본적으로 협력 하 고 하나의 일괄 처리 크기입니다. 대상은 데이터베이스 패키지 마다 한 번씩 실행 됩니다.
 
 비슷한 표기법을 볼 수는 **\_Cmd** 속성을 적절 한 스위치도 VSDBCMD 명령을 작성 합니다.
 
-
 [!code-xml[Main](understanding-the-build-process/samples/sample11.xml)]
-
 
 이 예에서 **%(DbPublishPackages.DatabaseConnectionString)** 를 **%(DbPublishPackages.TargetDatabase)**, 및 **%(DbPublishPackages.FullPath)** 모든 참조 메타 데이터 값을 **DbPublishPackages** 항목 컬렉션입니다.  **\_Cmd** 속성을 사용 합니다 **Exec** 명령을 호출 하는 작업을 합니다.
 
-
 [!code-xml[Main](understanding-the-build-process/samples/sample12.xml)]
-
 
 이 표기법의 결과로 합니다 **Exec** 작업 일괄 처리의 고유한 조합에 따라 만들어집니다 합니다 **DatabaseConnectionString**를 **TargetDatabase**, 및 **FullPath** 메타 데이터 값 및 작업 일괄 처리 마다 한 번 실행 됩니다. 이 예가 *작업 일괄 처리*합니다. 그러나 이므로 단일 항목 일괄 처리로 항목 컬렉션이 이미 분할 대상 수준 일괄 처리를 **Exec** 작업은 대상의 각 반복에 대해 한 번만 실행 됩니다. 즉,이 작업은 솔루션의 각 데이터베이스 패키지에 한 번씩 VSDBCMD 유틸리티를 호출합니다.
 
 > [!NOTE]
 > MSBuild 대상 및 작업 일괄 처리에 대 한 자세한 내용은 참조 [일괄 처리](https://msdn.microsoft.com/library/ms171473.aspx)하십시오 [대상 일괄 처리의 항목 메타 데이터](https://msdn.microsoft.com/library/ms228229.aspx), 및 [작업 일괄 처리의 항목 메타 데이터](https://msdn.microsoft.com/library/ms171474.aspx)합니다.
-
 
 ### <a name="the-publishwebpackages-target"></a>PublishWebPackages 대상
 
@@ -228,15 +196,11 @@ MSBuild에서 발생 하는 다음 요소는 라는 항목이 포함 된 단일 
 
 마찬가지로 합니다 **PublishDbPackages** 대상에는 **PublishWebPackages** 대상을 사용 하 여 대상 일괄 처리 되도록 대상이 각 웹 패키지에 대해 한 번 실행 됩니다.
 
-
 [!code-xml[Main](understanding-the-build-process/samples/sample13.xml)]
-
 
 대상 내에서 **Exec** 작업은 실행 하는 데 사용 되는 *deploy.cmd* 각 웹 패키지에 대 한 파일입니다.
 
-
 [!code-xml[Main](understanding-the-build-process/samples/sample14.xml)]
-
 
 웹 패키지의 배포를 구성 하는 방법에 대 한 자세한 내용은 참조 하세요. [빌드 및 패키징 웹 응용 프로그램 프로젝트](building-and-packaging-web-application-projects.md)합니다.
 

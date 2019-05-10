@@ -8,12 +8,12 @@ ms.date: 06/05/2013
 ms.assetid: e608e263-264d-448b-b0eb-6eeb77713b22
 msc.legacyurl: /signalr/overview/older-versions/handling-connection-lifetime-events
 msc.type: authoredcontent
-ms.openlocfilehash: a8121a2d7c4ed14e296dc72c72ca7c25939a2b50
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2fb671e730a1d41c07b350bf1d64ac1d0b1be55c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59414012"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128790"
 ---
 # <a name="understanding-and-handling-connection-lifetime-events-in-signalr-1x"></a>이해 및 SignalR에 대 한 연결 수명 이벤트를 처리 1.x
 
@@ -28,7 +28,6 @@ ms.locfileid: "59414012"
 > - [허브 클래스에서 연결 수명 이벤트를 처리 하는 방법](index.md)
 > - [JavaScript 클라이언트에서 연결 수명 이벤트를 처리 하는 방법](index.md)
 > - [.NET 클라이언트에서 연결 수명 이벤트를 처리 하는 방법](index.md)
-
 
 ## <a name="overview"></a>개요
 
@@ -132,7 +131,6 @@ ms.locfileid: "59414012"
 > 
 > [!IMPORTANT]
 > 여기에 설명 된 이벤트의 순서는 보장 되지 않습니다. SignalR에서는이 스키마에 따라 예측 가능한 방식으로 연결 수명 이벤트를 발생 시키는 모든 있지만 가지 다양 한 네트워크 이벤트 및 전송 Api와 같은 기본 통신 프레임 워크 처리 하는 다양 합니다. 예를 들어를 `Reconnected` 클라이언트는 다음 작업을 다시 연결 되 면 이벤트가 발생할 수 있습니다 또는 `OnConnected` 서버에서 처리기는 연결을 설정 하려는 시도가 성공적으로 수행 되지 경우에 실행할 수 있습니다. 이 항목에서는 일반적인 상황에서 정상적으로 생성 되는 영향만 설명 합니다.
-
 
 <a id="clientdisconnect"></a>
 

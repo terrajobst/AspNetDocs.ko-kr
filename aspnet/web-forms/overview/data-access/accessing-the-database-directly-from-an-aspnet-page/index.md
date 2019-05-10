@@ -8,17 +8,16 @@ ms.date: 10/05/2011
 ms.assetid: 134a202f-4eef-41fc-8e91-70efba338389
 msc.legacyurl: /web-forms/overview/data-access/accessing-the-database-directly-from-an-aspnet-page
 msc.type: chapter
-ms.openlocfilehash: 9558d4131205b3d696f8ce70476ff575fbccf20e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 11266f9b347aeb994ac2d6c866f475feeeb244e3
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59407694"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132470"
 ---
 # <a name="accessing-the-database-directly-from-an-aspnet-page"></a>ASP.NET 페이지에서 데이터베이스에 직접 액세스
 
 > 이러한 자습서에는 프레젠테이션 및 데이터 액세스 레이어는 엄격 하 게 분리 필요 하지 않을 때 데이터베이스를 직접 쿼리할 SqlDataSource 컨트롤을 사용 하는 방법을 보여 줍니다.
-
 
 - [SqlDataSource 컨트롤을 사용하여 데이터 쿼리(C#)](querying-data-with-the-sqldatasource-control-cs.md)
 - [SqlDataSource와 함께 매개 변수가 있는 쿼리 사용(C#)](using-parameterized-queries-with-the-sqldatasource-cs.md)

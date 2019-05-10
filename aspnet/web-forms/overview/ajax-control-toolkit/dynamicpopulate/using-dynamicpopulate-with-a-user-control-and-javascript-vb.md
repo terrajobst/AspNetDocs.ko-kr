@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 778b9009-76f2-4665-940e-afc0e35bc917
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/dynamicpopulate/using-dynamicpopulate-with-a-user-control-and-javascript-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 6aee7a07402e407b4c7b0bcd7a5e926955bf96b1
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1afdd80e9128f73e1f18823c70e87812eaf63da5
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59410736"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132845"
 ---
 # <a name="using-dynamicpopulate-with-a-user-control-and-javascript-vb"></a>사용자 정의 컨트롤 및 JavaScript에 DynamicPopulate 사용(VB)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/d/8/f/d8f2f6f9-1b7c-46ad-9252-e1fc81bdea3e/dynamicpopulate2.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/dynamicpopulate2VB.pdf)
 
 > ASP.NET AJAX Control Toolkit에 DynamicPopulate 제어는 웹 서비스 (또는 페이지 메서드)를 호출 하 고 페이지 새로 고침 없이 페이지에서 대상 컨트롤에 결과 값을 채웁니다. 사용자 지정 클라이언트 쪽 JavaScript 코드를 사용 하 여 채우기를 트리거할 수 이기도 합니다. 그러나 특별 한 주의 extender는 사용자 정의 컨트롤에 상주 하는 경우 수행 해야 합니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -65,7 +64,6 @@ ASP.NET AJAX를 포함 한 `ScriptManager` 새 페이지 컨트롤:
 [!code-aspx[Main](using-dynamicpopulate-with-a-user-control-and-javascript-vb/samples/sample8.aspx)]
 
 됐습니다! 페이지에는 예상 대로 동작 합니다. 사용자가 라디오 단추 중 하나에서 컨트롤 도구 키트에서 웹 서비스를 호출 하 고 원하는 형식으로 현재 날짜를 표시 합니다.
-
 
 [![사용자 정의 컨트롤에 있는 라디오 단추](using-dynamicpopulate-with-a-user-control-and-javascript-vb/_static/image2.png)](using-dynamicpopulate-with-a-user-control-and-javascript-vb/_static/image1.png)
 

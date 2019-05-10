@@ -8,12 +8,12 @@ ms.date: 03/27/2007
 ms.assetid: 35798f21-1606-434b-83f8-30166906ef49
 msc.legacyurl: /web-forms/overview/data-access/working-with-binary-files/updating-and-deleting-existing-binary-data-cs
 msc.type: authoredcontent
-ms.openlocfilehash: fea82090954fb7ace59b9978e9ce7ec857db60b2
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 882da1a321584cf97f826bb08c272ece348679cb
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59394915"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132822"
 ---
 # <a name="updating-and-deleting-existing-binary-data-c"></a>기존 이진 데이터 업데이트 및 삭제(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59394915"
 [샘플 앱을 다운로드](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_57_CS.exe) 또는 [PDF 다운로드](updating-and-deleting-existing-binary-data-cs/_static/datatutorial57cs1.pdf)
 
 > 이전 자습서에서 어떻게 GridView 컨트롤을 간단히 편집 및 텍스트 데이터를 삭제 하는 것이 살펴보았습니다. 이 자습서에서 알 수 방법을 GridView 컨트롤 하기가 편집 하 고 해당 이진 데이터를 데이터베이스에 저장 되는지 아니면 파일 시스템에 저장 된 이진 데이터를 삭제할 수 있습니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -36,24 +35,19 @@ DAL에 자동으로 생성 된 `Insert`, `Update`, 및 `Delete` 메서드에만 
 
 입력 데이터 집합을 열고, 디자이너에서 마우스 오른쪽 단추로 클릭는 `CategoriesTableAdapter`의 헤더 TableAdapter 쿼리 구성 마법사를 시작 하려면 상황에 맞는 메뉴에서 추가 쿼리를 선택 합니다. 이 마법사가 TableAdapter 쿼리가 데이터베이스에 액세스 해야 하는 방법을 궁금해 하 여 시작 됩니다. SQL 문 사용을 선택 하 고 클릭 합니다. 다음 단계를 생성할 쿼리 형식에 대 한 라는 메시지가 나타납니다. 새 레코드를 추가 하는 쿼리를 만드는 다시 이후로 `Categories` 테이블 업데이트를 선택 하 고 다음을 클릭 합니다.
 
-
 [![업데이트 옵션을 선택 합니다.](updating-and-deleting-existing-binary-data-cs/_static/image1.gif)](updating-and-deleting-existing-binary-data-cs/_static/image1.png)
 
 **그림 1**: 업데이트 옵션을 선택 ([클릭 하 여 큰 이미지 보기](updating-and-deleting-existing-binary-data-cs/_static/image2.png))
 
-
 이제 지정 해야 합니다 `UPDATE` SQL 문입니다. 마법사가 자동으로 제안를 `UPDATE` TableAdapter s 주 쿼리에 해당 하는 문 (업데이트 하는 것을 `CategoryName`, `Description`, 및 `BrochurePath` 값). 문을 변경 하는 `Picture` 열이 함께 포함 됩니다는 `@Picture` 매개 변수를 다음과 같이:
-
 
 [!code-sql[Main](updating-and-deleting-existing-binary-data-cs/samples/sample1.sql)]
 
 마법사의 마지막 화면 새 TableAdapter 메서드 이름을 묻는 메시지가 나타납니다. 입력 `UpdateWithPicture` 하 고 마침을 클릭 합니다.
 
-
 [![새 TableAdapter 메서드 UpdateWithPicture 이름](updating-and-deleting-existing-binary-data-cs/_static/image2.gif)](updating-and-deleting-existing-binary-data-cs/_static/image3.png)
 
 **그림 2**: 새 TableAdapter 메서드 이름을 `UpdateWithPicture` ([큰 이미지를 보려면 클릭](updating-and-deleting-existing-binary-data-cs/_static/image4.png))
-
 
 ## <a name="step-2-adding-the-business-logic-layer-methods"></a>2단계: 비즈니스 논리 계층 메서드를 추가합니다.
 
@@ -61,13 +55,11 @@ DAL을 업데이트 하는 것 외에도 업데이트 및 범주를 삭제 하�
 
 범주 삭제에 대해 사용할 수 있습니다 합니다 `CategoriesTableAdapter` 자동으로 생성 된 s `Delete` 메서드. 다음 메서드를 추가 합니다 `CategoriesBLL` 클래스:
 
-
 [!code-csharp[Main](updating-and-deleting-existing-binary-data-cs/samples/sample2.cs)]
 
 이 자습서에서는 s let-그림 이진 데이터를 필요로 하 고 호출 하는 범주를 업데이트 하기 위한 두 메서드를 만듭니다는 `UpdateWithPicture` 에 방금 추가한 메서드를 `CategoriesTableAdapter` 허용 하 고 다른 요소만 `CategoryName`, `Description`, 및 `BrochurePath`값을 사용 하 여 `CategoriesTableAdapter` 가 자동으로 생성 된 클래스 `Update` 문입니다. 두 메서드를 사용 하 여 기초가 되는 경우에 따라서는 범주의 그림 새 그림을 업로드할 경우 사용자가 해당 다른 필드와 함께 업데이트 하는 사용자 할 수 있습니다. 업로드 된 그림 s 이진 데이터에서 사용할 수 있습니다는 `UPDATE` 문입니다. 다른 경우에는 사용자만 유용할 수 업데이트, 예를 들어, 이름 및 설명 합니다. 경우에 `UPDATE` 에 대 한 이진 데이터를 필요로 하는 문을 `Picture` 열 물론 그런 다음 d 해야 해당 정보를 제공 합니다. 이 데이터베이스를 편집 중인 레코드에 대 한 그림 데이터 다시 가져오기에 추가로 이동을 해야 합니다. 따라서 원하는 두 `UPDATE` 메서드. 비즈니스 논리 계층에 범주를 업데이트 하는 경우 그림 데이터 제공 여부에 따라 결정 됩니다.
 
 이 작업을 위해 두 개의 메서드를 추가 합니다 `CategoriesBLL` 명명 된 클래스 `UpdateCategory`합니다. 세 번째 허용 해야 `string` s를 `byte` 배열 및 `int` 입력으로 매개 변수, 3 초 `string` s 및 `int`합니다. `string` s 범주 이름, 설명 및 브로슈어 파일 경로 대 한 입력된 매개 변수는 합니다 `byte` 배열이 범주의 그림의 이진 내용에 대 한 및 `int` 하 게 식별 하는 `CategoryID` 업데이트할 레코드의 합니다. 첫 번째 오버 로드에는 전달 된 두 번째 경우를 호출 하는 공지 `byte` 배열이 `null`:
-
 
 [!code-csharp[Main](updating-and-deleting-existing-binary-data-cs/samples/sample3.cs)]
 
@@ -77,11 +69,9 @@ DAL을 업데이트 하는 것 외에도 업데이트 및 범주를 삭제 하�
 
 열어서 시작 합니다 `UploadInDetailsView.aspx` 페이지입니다. 모든 선언적 구문 내에서 복사를 `<asp:Content>` 그림 3 에서처럼 요소입니다. 다음으로 열기 `UpdatingAndDeleting.aspx` 내에서이 태그를 붙여 해당 `<asp:Content>` 요소입니다. 마찬가지로,에서 코드를 복사 합니다 `UploadInDetailsView.aspx` s 코드 숨김 클래스 페이지 `UpdatingAndDeleting.aspx`합니다.
 
-
 [![UploadInDetailsView.aspx에서 선언적 태그를 복사 합니다.](updating-and-deleting-existing-binary-data-cs/_static/image3.gif)](updating-and-deleting-existing-binary-data-cs/_static/image5.png)
 
 **그림 3**: 선언적 태그를 복사 `UploadInDetailsView.aspx` ([큰 이미지를 보려면 클릭](updating-and-deleting-existing-binary-data-cs/_static/image6.png))
-
 
 선언적 태그 및 코드를 복사한 후 방문 `UpdatingAndDeleting.aspx`합니다. 동일한 출력 및 동일한 사용자 환경을 표시와 마찬가지로 `UploadInDetailsView.aspx` 이전 자습서에서 페이지입니다.
 
@@ -93,43 +83,34 @@ DAL을 업데이트 하는 것 외에도 업데이트 및 범주를 삭제 하�
 
 이제 업데이트의 탭 드롭 다운 목록 (None)으로 설정 되지만 삭제의 탭 드롭 다운 목록을로 설정 된 상태로 두고 `DeleteCategory`합니다. 업데이트 지원을 추가 하려면 단계 6에서이 마법사를 반환 합니다.
 
-
 [![DeleteCategory 메서드를 사용 하는 ObjectDataSource 구성](updating-and-deleting-existing-binary-data-cs/_static/image4.gif)](updating-and-deleting-existing-binary-data-cs/_static/image7.png)
 
 **그림 4**: ObjectDataSource를 사용 하 여 구성 합니다 `DeleteCategory` 메서드 ([큰 이미지를 보려면 클릭](updating-and-deleting-existing-binary-data-cs/_static/image8.png))
 
-
 > [!NOTE]
 > 마법사를 완료 하면 Visual Studio 필드 새로 고침 및 키 하려는 경우에 필드 제어 웹 데이터를 다시 생성 됩니다는 요청할 수 있습니다. 예를 선택 하면 사용자가 변경한 필드 사용자 지정 덮어씁니다. 아니요를 선택 합니다.
-
 
 ObjectDataSource에 대 한 값에는 이제 해당 `DeleteMethod` 속성 뿐만 `DeleteParameter`합니다. 메서드를 지정 하는 마법사를 사용 하는 경우 Visual Studio 설정 ObjectDataSource s 회수 `OldValuesParameterFormatString` 속성을 `original_{0}`, 업데이트를 사용 하 여 문제가 발생 하며 메서드 호출을 삭제 합니다. 따라서이 속성을 완전히 지울 또는 기본값으로 재설정 `{0}`합니다. 이 ObjectDataSource 속성에 대해 메모리를 새로 고치는 경우 참조를 [An 개요의 삽입, 업데이트 및 삭제 데이터](../editing-inserting-and-deleting-data/an-overview-of-inserting-updating-and-deleting-data-cs.md) 자습서입니다.
 
 마법사를 완료 하 고 해결 한 후의 `OldValuesParameterFormatString`, ObjectDataSource가 선언적 태그는 다음과 유사 합니다.
 
-
 [!code-aspx[Main](updating-and-deleting-existing-binary-data-cs/samples/sample4.aspx)]
 
 ObjectDataSource를 구성한 후 삭제 하 여 기능을 추가할 GridView GridView가 스마트 태그에서 삭제 사용 확인란을 선택 합니다. GridView에는 CommandField 추가이입니다 `ShowDeleteButton` 속성이 `true`합니다.
-
 
 [![GridView의 삭제에 대 한 지원을 사용 하도록 설정](updating-and-deleting-existing-binary-data-cs/_static/image5.gif)](updating-and-deleting-existing-binary-data-cs/_static/image9.png)
 
 **그림 5**: GridView의 삭제에 대 한 지원을 사용 하도록 설정 ([클릭 하 여 큰 이미지 보기](updating-and-deleting-existing-binary-data-cs/_static/image10.png))
 
-
 시간을 내어 삭제 기능을 테스트 합니다. 간의 외래 키가를 `Products` 테이블 s `CategoryID` 및 `Categories` s 테이블 `CategoryID`이므로 처음 8 개 범주 중 하나를 삭제 하려고 하면 외래 키 제약 조건 위반 예외를 얻을 수 있습니다. Out이 기능을 테스트 하려면 브로슈어 및 그림을 제공 하는 새 범주를 추가 합니다. 그림 6 에서처럼 내 테스트 범주 라는 테스트 브로슈어 파일을 포함 `Test.pdf` 그림을 테스트 합니다. 그림 7 테스트 범주를 추가한 다음 GridView를 보여 줍니다.
-
 
 [![브로슈어 및 이미지를 사용 하 여 테스트 범주를 추가 합니다.](updating-and-deleting-existing-binary-data-cs/_static/image6.gif)](updating-and-deleting-existing-binary-data-cs/_static/image11.png)
 
 **그림 6**: 브로슈어 및 이미지를 사용 하 여 테스트 범주를 추가 ([클릭 하 여 큰 이미지 보기](updating-and-deleting-existing-binary-data-cs/_static/image12.png))
 
-
 [![테스트 범주를 삽입 한 후 GridView에 표시 됩니다.](updating-and-deleting-existing-binary-data-cs/_static/image7.gif)](updating-and-deleting-existing-binary-data-cs/_static/image13.png)
 
 **그림 7**: 테스트 범주를 삽입 한 후 GridView에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](updating-and-deleting-existing-binary-data-cs/_static/image14.png))
-
 
 Visual Studio에서 솔루션 탐색기를 새로 고칩니다. 이제 새 파일에 표시 된 `~/Brochures` 폴더를 `Test.pdf` (그림 8 참조).
 
@@ -137,11 +118,9 @@ Visual Studio에서 솔루션 탐색기를 새로 고칩니다. 이제 새 파�
 
 삭제 워크플로 테스트 범주 레코드를 성공적으로 제거 하는 동안는 `Categories` 테이블 웹의 서버 파일 시스템에서 해당 브로슈어 파일을 제거 하지는 않았습니다. 솔루션 탐색기를 새로 고치고 확인할 수 있습니다 `Test.pdf` 에서 계속 대기 중임을 `~/Brochures` 폴더입니다.
 
-
 ![Test.pdf 파일을 웹 서버 파일 시스템에서 삭제 되지 않았습니다.](updating-and-deleting-existing-binary-data-cs/_static/image8.gif)
 
 **그림 8**: `Test.pdf` 웹의 서버 파일 시스템에서 파일이 삭제 되지 않았습니다
-
 
 ## <a name="step-5-removing-the-deleted-category-s-brochure-file"></a>5단계: 삭제 된 범주 브로슈어 파일 제거
 
@@ -149,14 +128,12 @@ Visual Studio에서 솔루션 탐색기를 새로 고칩니다. 이제 새 파�
 
 GridView s [ `RowDeleting` 이벤트](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.rowdeleting.aspx) 발생 하는 동안 ObjectDataSource가의 삭제 명령을 호출 되기 전에 해당 [ `RowDeleted` 이벤트](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.rowdeleted.aspx) 후 발생 합니다. 다음 코드를 사용 하 여 이러한 두 이벤트에 대 한 이벤트 처리기를 만듭니다.
 
-
 [!code-csharp[Main](updating-and-deleting-existing-binary-data-cs/samples/sample5.cs)]
 
 에 `RowDeleting` 이벤트 처리기는 `CategoryID` 행의 GridView s에서 놓은 삭제할 `DataKeys` 컬렉션을 통해이 이벤트 처리기에 액세스할 수 있는 `e.Keys` 컬렉션. 다음으로 `CategoriesBLL` s 클래스 `GetCategoryByCategoryID(categoryID)` 삭제할 레코드에 대 한 정보를 반환 하기 위해 호출 됩니다. 하는 경우 반환 된 `CategoriesDataRow` 개체에 비-`NULL``BrochurePath` 페이지 변수에 저장 된 다음 값 `deletedCategorysPdfPath` 파일에서 삭제 될 수 있도록 합니다 `RowDeleted` 이벤트 처리기입니다.
 
 > [!NOTE]
 > 검색 하는 대신 합니다 `BrochurePath` 에 대 한 세부 정보를 `Categories` 에서 삭제할 레코드를 `RowDeleting` 이벤트 처리기 수 또는 추가 했습니다를 `BrochurePath` GridView s에 `DataKeyNames` 속성 레코드의 값을 액세스 및 통해 여 `e.Keys` 컬렉션입니다. 이렇게 약간 GridView가의 보기 상태 크기를 늘리거나 있지만 필요한 코드의 양을 줄일를 여정 데이터베이스에 저장 합니다.
-
 
 S 기본 삭제 명령을 호출 되었고 ObjectDataSource GridView s 후 `RowDeleted` 이벤트 처리기에 발생 합니다. 데이터를 삭제 하는 중에 예외가 없습니다 및에 대 한 값이 있는 경우 `deletedCategorysPdfPath`, PDF 파일 시스템에서 삭제 됩니다. 참고 해당 그림 연관 된 범주 s 이진 데이터를 정리 하려면이 추가 코드가 필요 하지 않습니다. S 그림 데이터에 직접 데이터베이스에에서 저장 되므로 지금 삭제는 `Categories` 행에는 해당 범주의 그림 데이터도 삭제 합니다.
 
@@ -170,34 +147,27 @@ S 기본 삭제 명령을 호출 되었고 ObjectDataSource GridView s 후 `RowD
 
 ObjectDataSource가의 마법사에서 데이터 소스 구성 링크를 클릭 하 고 두 번째 단계를 진행 합니다. 때문에 `DataObjectMethodAttribute` 에 사용 되는 `CategoriesBLL`, 업데이트 드롭 다운 목록을 자동으로 채워져야 합니다 `UpdateCategory` 4 개의 입력 매개 변수를 받아들이는 오버 로드 (모든 열에 대 한 하지만 `Picture`). 5 개의 매개 변수를 사용 하 여 오버 로드를 사용할 수 있도록이 변경 합니다.
 
-
 [![그림에 대 한 매개 변수를 포함 하는 UpdateCategory 메서드를 사용 하는 ObjectDataSource 구성](updating-and-deleting-existing-binary-data-cs/_static/image9.gif)](updating-and-deleting-existing-binary-data-cs/_static/image15.png)
 
 **그림 9**: ObjectDataSource를 사용 하 여 구성 합니다 `UpdateCategory` 에 대 한 매개 변수를 포함 하는 메서드 `Picture` ([클릭 하 여 큰 이미지 보기](updating-and-deleting-existing-binary-data-cs/_static/image16.png))
-
 
 ObjectDataSource에 대 한 값에는 이제 해당 `UpdateMethod` 해당 뿐만 아니라 속성 `UpdateParameter` s입니다. Visual Studio 설정 ObjectDataSource가의 4 단계에서에서 설명 했 듯이 `OldValuesParameterFormatString` 속성을 `original_{0}` 데이터 소스 구성 마법사를 사용 하는 경우. 이 업데이트를 사용 하 여 문제를 일으킬를 메서드 호출을 삭제 합니다. 따라서이 속성을 완전히 지울 또는 기본값으로 재설정 `{0}`합니다.
 
 마법사 완료 후 수정 된 `OldValuesParameterFormatString`, ObjectDataSource가 선언적 태그는 다음과 같아야 합니다.:
 
-
 [!code-aspx[Main](updating-and-deleting-existing-binary-data-cs/samples/sample6.aspx)]
 
 GridView가 기본 제공 편집 기능을 켜려면 GridView가 스마트 태그에서 편집 사용 옵션을 선택 합니다. CommandField s를 설정 합니다 `ShowEditButton` 속성을 `true`, 결과 편집 단추 (및 편집 되는 행에 대 한 업데이트 및 Cancel 단추) 추가 합니다.
-
 
 [![GridView 지원 편집 구성](updating-and-deleting-existing-binary-data-cs/_static/image10.gif)](updating-and-deleting-existing-binary-data-cs/_static/image17.png)
 
 **그림 10**: GridView 지원 편집 구성 ([클릭 하 여 큰 이미지 보기](updating-and-deleting-existing-binary-data-cs/_static/image18.png))
 
-
 브라우저를 통해 페이지를 방문 하 고 행의 편집 단추 중 하나를 클릭 합니다. 합니다 `CategoryName` 고 `Description` BoundFields 입력란으로 렌더링 됩니다. `BrochurePath` TemplateField에는 `EditItemTemplate`계속 표시 되므로 해당 `ItemTemplate` 브로슈어에 대 한 링크입니다. 합니다 `Picture` 갖는 텍스트 상자로 이미지 필드 렌더링 `Text` 속성의 이미지 필드의 값이 할당 됩니다 `DataImageUrlField` 값을 예제의 `CategoryID`합니다.
-
 
 [![GridView는 BrochurePath에 대 한 편집 인터페이스를 없습니다.](updating-and-deleting-existing-binary-data-cs/_static/image11.gif)](updating-and-deleting-existing-binary-data-cs/_static/image19.png)
 
 **그림 11**: GridView에 대 한 편집 인터페이스 `BrochurePath` ([큰 이미지를 보려면 클릭](updating-and-deleting-existing-binary-data-cs/_static/image20.png))
-
 
 ## <a name="customizing-thebrochurepaths-editing-interface"></a>사용자 지정을`BrochurePath`s 편집 인터페이스
 
@@ -217,22 +187,17 @@ GridView가 스마트 태그에서 템플릿 편집 링크를 클릭 하 고 선
 
 첫 번째 설정 `ListItem` s `Selected` 속성을 `true`입니다.
 
-
 ![세 가지 ListItems RadioButtonList에 추가](updating-and-deleting-existing-binary-data-cs/_static/image12.gif)
 
 **그림 12**: 3 개 추가 `ListItem` RadioButtonList s
 
-
 RadioButtonList, 아래 라는 FileUpload 컨트롤을 추가 `BrochureUpload`합니다. 설정 해당 `Visible` 속성을 `false`입니다.
-
 
 [![에 EditItemTemplate RadioButtonList 및 FileUpload 컨트롤 추가](updating-and-deleting-existing-binary-data-cs/_static/image13.gif)](updating-and-deleting-existing-binary-data-cs/_static/image21.png)
 
 **그림 13**: RadioButtonList 및 FileUpload 컨트롤을 추가 합니다 `EditItemTemplate` ([큰 이미지를 보려면 클릭](updating-and-deleting-existing-binary-data-cs/_static/image22.png))
 
-
 이 RadioButtonList 사용자에 대 한 세 가지 옵션을 제공합니다. FileUpload 컨트롤 업로드 새 브로슈어, 마지막 옵션을 선택한 경우에 표시 되도록 합니다. 이를 위해 RadioButtonList s에 대 한 이벤트 처리기를 만들고 `SelectedIndexChanged` 이벤트 다음 코드를 추가 합니다.
-
 
 [!code-csharp[Main](updating-and-deleting-existing-binary-data-cs/samples/sample7.cs)]
 
@@ -240,16 +205,13 @@ RadioButtonList 및 FileUpload 컨트롤 템플릿에서 되므로 약간의 프
 
 이 코드를 사용 하 여 시간을 내어 편집 인터페이스를 테스트 합니다. 행에 대 한 편집 단추를 클릭 합니다. 처음에 사용 하 여 현재 브로슈어 옵션을 선택 해야 합니다. 포스트백을 발생 시키는 선택한 인덱스를 변경 합니다. 세 번째 옵션을 선택 하는 경우 FileUpload 컨트롤을 표시, 숨겨져 그렇지 않은 경우. 그림 14 편집 단추를 클릭할 먼저; 때 편집 인터페이스를 보여 줍니다. 그림 15 업로드 새 브로슈어 옵션을 선택한 후 인터페이스를 보여 줍니다.
 
-
 [![사용 하 여 현재 브로슈어 처음에 선택](updating-and-deleting-existing-binary-data-cs/_static/image14.gif)](updating-and-deleting-existing-binary-data-cs/_static/image23.png)
 
 **그림 14**: 사용 하 여 현재 브로슈어 처음에 옵션을 선택 ([클릭 하 여 큰 이미지 보기](updating-and-deleting-existing-binary-data-cs/_static/image24.png))
 
-
 [![FileUpload 컨트롤 업로드 새 브로슈어 옵션 표시를 선택합니다.](updating-and-deleting-existing-binary-data-cs/_static/image15.gif)](updating-and-deleting-existing-binary-data-cs/_static/image25.png)
 
 **그림 15**: FileUpload 컨트롤 업로드 새 브로슈어 옵션 표시를 선택 ([클릭 하 여 큰 이미지 보기](updating-and-deleting-existing-binary-data-cs/_static/image26.png))
-
 
 ## <a name="saving-the-brochure-file-and-updating-thebrochurepathcolumn"></a>브로셔 저장 파일과 업데이트 된`BrochurePath`열
 
@@ -266,11 +228,9 @@ GridView의 업데이트 단추를 클릭 하면 해당 `RowUpdating` 이벤트�
 
 이러한 두 가지 방법에 대 한 코드는 다음과 같습니다. 간의 유사성 `ProcessBrochureUpload` 및 DetailsView의 `ItemInserting` 이전 자습서에서 이벤트 처리기입니다. 이 자습서에서는 이러한 새 메서드를 사용 하려면 DetailsView의 이벤트 처리기를 업데이트 합니다. 이 자습서를 참조 하는 수정 사항을 DetailsView의 이벤트 처리기에 연관 된 코드를 다운로드 합니다.
 
-
 [!code-csharp[Main](updating-and-deleting-existing-binary-data-cs/samples/sample8.cs)]
 
 GridView s `RowUpdating` 하 고 `RowUpdated` 이벤트 처리기를 사용 합니다 `ProcessBrochureUpload` 및 `DeleteRememberedBrochurePath` 메서드를 다음 코드와 같이:
-
 
 [!code-csharp[Main](updating-and-deleting-existing-binary-data-cs/samples/sample9.cs)]
 
@@ -288,32 +248,25 @@ GridView s `RowUpdating` 하 고 `RowUpdated` 이벤트 처리기를 사용 합�
 
 이미지 필드 s 편집 인터페이스를 사용자 지정 하려면를 TemplateField로 변환 해야 합니다. GridView가 스마트 태그에서 열 편집 링크를 클릭 하 고 이미지 필드를 선택한 TemplateField 링크로 Convert이이 필드를 클릭 합니다.
 
-
 ![이미지 필드를 TemplateField로 변환](updating-and-deleting-existing-binary-data-cs/_static/image16.gif)
 
 **그림 16**: 이미지 필드를 TemplateField로 변환
 
-
 이 방식으로 templatefield로 변환 하는 이미지 필드를 TemplateField 템플릿 두 개가 생성 됩니다. 선언적 구문을 볼 수 있듯이, 합니다 `ItemTemplate` 포함 하는 이미지 웹 컨트롤 `ImageUrl` 이미지 필드에 기반 하는 데이터 바인딩 구문을 사용 하 여 속성에 할당 됩니다 `DataImageUrlField` 및 `DataImageUrlFormatString` 속성. `EditItemTemplate` TextBox를 포함입니다 `Text` 속성에 지정 된 값에 바인딩되는 `DataImageUrlField` 속성.
-
 
 [!code-aspx[Main](updating-and-deleting-existing-binary-data-cs/samples/sample10.aspx)]
 
 업데이트 해야 합니다 `EditItemTemplate` FileUpload 컨트롤을 사용 합니다. S 스마트 태그 템플릿 편집 클릭 GridView에서 연결 하 고 다음을 선택 합니다 `Picture` TemplateField의 `EditItemTemplate` 드롭 다운 목록에서. 템플릿에서이 제거 하는 텍스트 상자를 표시 됩니다. 다음으로 설정 템플릿에 도구 상자에서 FileUpload 컨트롤을 끌어 해당 `ID` 에 `PictureUpload`입니다. 또한 범주의 그림을 변경 하려면 새 사진을 지정 텍스트를 추가 합니다. 동일한 범주의 그림 유지, 필드를 비워 둡니다도 템플릿에 합니다.
 
-
 [![EditItemTemplate FileUpload 컨트롤을 추가](updating-and-deleting-existing-binary-data-cs/_static/image17.gif)](updating-and-deleting-existing-binary-data-cs/_static/image27.png)
 
 **그림 17**: FileUpload 컨트롤을 추가 합니다 `EditItemTemplate` ([큰 이미지를 보려면 클릭](updating-and-deleting-existing-binary-data-cs/_static/image28.png))
 
-
 편집 인터페이스를 사용자 지정한 후 진행 상황을 브라우저에서 봅니다. 읽기 전용 모드에서 행을 볼 때 범주의 이미지는 이전에 있었지만 편집 단추를 클릭 하면 그림 열 FileUpload 컨트롤 텍스트 렌더링 되었다고 표시 됩니다.
-
 
 [![FileUpload 컨트롤을 포함 하는 편집 인터페이스](updating-and-deleting-existing-binary-data-cs/_static/image18.gif)](updating-and-deleting-existing-binary-data-cs/_static/image29.png)
 
 **그림 18**: FileUpload 컨트롤을 포함 하는 편집 인터페이스 ([클릭 하 여 큰 이미지 보기](updating-and-deleting-existing-binary-data-cs/_static/image30.png))
-
 
 ObjectDataSource를 호출 하도록 구성 되어 있는지를 회수 합니다 `CategoriesBLL` s 클래스 `UpdateCategory` 그림에 대 한 이진 데이터를 입력으로 허용 되는 방법을 `byte` 배열. 하지만이 배열에 있는 경우는 `null` 대체, 값 `UpdateCategory` 오버 로드 호출 되는 문제를 `UPDATE` 수정 하지 않는 SQL 문을 `Picture` 있으므로 s 범주를 현재 종료 열 그림은 그대로 유지 됩니다. GridView에서 따라서 `RowUpdating` 프로그래밍 방식으로 참조 해야 하는 이벤트 처리기는 `PictureUpload` FileUpload 제어 하 고 파일 업로드 된 경우를 결정 합니다. 업로드 되지 않았습니다 경우 저희 *되지* 값을 지정 하려면를 `picture` 매개 변수입니다. 반면, 파일에서 업로드 된 경우는 `PictureUpload` FileUpload 컨트롤 JPG 파일 인지 확인 하려고 합니다. 인 경우 해당 이진 내용을 통해 ObjectDataSource을 받을 `picture` 매개 변수입니다.
 
@@ -321,13 +274,11 @@ ObjectDataSource를 호출 하도록 구성 되어 있는지를 회수 합니다
 
 다음 코드를 추가 합니다 GridView의 시작과 `RowUpdating` 이벤트 처리기입니다. 이 s 인할 것 이므로 브로슈어 파일을 저장 하는 코드 앞에 야이 코드는 중요 한 그림이 잘못 되었습니다. 파일을 업로드 하는 경우 브로슈어 웹의 서버 파일 시스템에 저장 하려면.
 
-
 [!code-csharp[Main](updating-and-deleting-existing-binary-data-cs/samples/sample11.cs)]
 
 `ValidPictureUpload(FileUpload)` 메서드 유일한 입력된 매개 변수로 FileUpload 컨트롤에서는 업로드 된 파일의 확장명 JPG 업로드 된 파일 인지 확인을 확인 하 고 그림 파일을 업로드 하는 경우만 호출 됩니다. 경우 없는 파일을 업로드 하 고 그림 매개 변수를 설정 하지는 하므로 기본값을 사용 하 여 `null`입니다. 사진 업로드 된 경우 및 `ValidPictureUpload` 반환 `true`의 `picture` 매개 변수가 메서드에서 반환 되 면 업로드 된 이미지의 이진 데이터를 할당 된 `false`, 업데이트 워크플로 취소 되 고 이벤트 처리기가 종료 되었습니다.
 
 합니다 `ValidPictureUpload(FileUpload)` DetailsView s에서 리팩터링 메서드 코드에서 `ItemInserting` 이벤트 처리기를 따릅니다.
-
 
 [!code-csharp[Main](updating-and-deleting-existing-binary-data-cs/samples/sample12.cs)]
 
@@ -342,12 +293,10 @@ ObjectDataSource를 호출 하도록 구성 되어 있는지를 회수 합니다
 
 범주를 편집 하 고 JPG 이미지를 업로드 한 후 이미지에서에서 렌더링 되지 것입니다 브라우저 때문에 `DisplayCategoryPicture.aspx` 페이지는 처음 8 개 범주의 그림에서 첫 번째 78 바이트를 제거 합니다. OLE 머리글 제거를 수행 하는 코드를 제거 하 여이 문제를 해결 합니다. 이 작업을 수행한 후를 `DisplayCategoryPicture.aspx``Page_Load` 이벤트 처리기를 다음 코드로 있어야 합니다.
 
-
 [!code-vb[Main](updating-and-deleting-existing-binary-data-cs/samples/sample13.vb)]
 
 > [!NOTE]
 > `UpdatingAndDeleting.aspx` 삽입 및 인터페이스를 편집 페이지 s 좀 더 많은 작업을 사용할 수 있습니다. 합니다 `CategoryName` 및 `Description` GridView 및 DetailsView BoundFields TemplateFields로 변환 되어야 합니다. 이후 `CategoryName` 허용 하지 않습니다 `NULL` 값을 RequiredFieldValidator 추가 해야 합니다. 및 `Description` 텍스트 상자를 여러 줄 텍스트 상자에 변환할 수 있습니다. I 이러한 마무리를 연습으로 둡니다.
-
 
 ## <a name="summary"></a>요약
 

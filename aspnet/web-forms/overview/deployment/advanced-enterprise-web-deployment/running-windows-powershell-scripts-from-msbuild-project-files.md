@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 55f1ae45-fcb5-43a9-8415-fa5b935fc9c9
 msc.legacyurl: /web-forms/overview/deployment/advanced-enterprise-web-deployment/running-windows-powershell-scripts-from-msbuild-project-files
 msc.type: authoredcontent
-ms.openlocfilehash: 198f8c907cf866bd0fd1ae67cf7169a63dda4bc9
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 7b09c07b8b7c2a61ca534f7a66a929593f3d04ca
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384705"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131564"
 ---
 # <a name="running-windows-powershell-scripts-from-msbuild-project-files"></a>MSBuild 프로젝트 파일에서 Windows PowerShell 스크립트 실행
 
@@ -35,7 +35,6 @@ ms.locfileid: "59384705"
 > 
 > 이 항목에서는 Microsoft Build Engine (MSBuild) 프로젝트 파일에서 사용자 지정 대상을에서 로컬 및 원격으로 Windows PowerShell 스크립트를 실행 하는 방법을 보여줍니다.
 
-
 이 항목의 Fabrikam, Inc. 라는 가상 회사의 엔터프라이즈 배포 요구 사항 기반 자습서 시리즈의 일부를 형성 합니다. 샘플 솔루션을 사용 하 여이 자습서 시리즈&#x2014;는 [Contact Manager 솔루션](../web-deployment-in-the-enterprise/the-contact-manager-solution.md)&#x2014;현실적인 수준의 복잡성을 Windows Communication ASP.NET MVC 3 응용 프로그램을 포함 하 여 웹 응용 프로그램을 나타내는 Foundation (WCF) 서비스 및 데이터베이스 프로젝트입니다.
 
 이 자습서의 핵심 배포 방법에 설명 된 분할 프로젝트 파일 방법을 기반으로 [프로젝트 파일 이해](../web-deployment-in-the-enterprise/understanding-the-project-file.md), 두 개의 프로젝트 파일에서 빌드 프로세스에 의해 제어 되는&#x2014;포함 된 모든 대상 환경 및 환경 관련 빌드 및 배포 설정을 포함 하는 하나에 적용 되는 지침을 빌드하십시오. 빌드 시 환경 관련 프로젝트 파일은 빌드 지침의 전체 집합을 이루는 환경을 알 수 없는 프로젝트 파일에 병합 됩니다.
@@ -55,15 +54,11 @@ Windows PowerShell 스크립트를 자동화 하거나 단일 단계 배포 프�
 
 라는 샘플 Windows PowerShell 스크립트를 사용 하 여이 항목의 태스크 **LogDeploy.ps1** MSBuild에서 스크립트를 실행 하는 방법을 보여 줍니다. 합니다 **LogDeploy.ps1** 스크립트 줄 항목을 로그 파일에 기록 하는 간단한 함수를 포함 합니다.
 
-
 [!code-powershell[Main](running-windows-powershell-scripts-from-msbuild-project-files/samples/sample1.ps1)]
-
 
 합니다 **LogDeploy.ps1** 스크립트는 두 개의 매개 변수를 수락 합니다. 첫 번째 매개 변수는 항목을 추가 하려는 로그 파일에 전체 경로 나타내는 나타내고 두 번째 매개 변수를 로그 파일에 기록 하려면 배포 대상입니다. 스크립트를 실행 하면 줄이 형식으로 로그 파일에 추가 합니다.
 
-
 [!code-html[Main](running-windows-powershell-scripts-from-msbuild-project-files/samples/sample2.html)]
-
 
 확인 합니다 **LogDeploy.ps1** MSBuild를 사용할 수 있는 스크립트를에:
 
@@ -82,21 +77,15 @@ Windows PowerShell 스크립트를 자동화 하거나 단일 단계 배포 프�
 
 구문 측면에서 MSBuild 프로젝트 파일에서 Windows PowerShell 스크립트를 실행와 같습니다 일반 명령 프롬프트에서 Windows PowerShell 스크립트를 실행 합니다. 실행 powershell.exe를 호출 하 여 사용 해야 합니다 **– 명령** 스위치를 실행 하려면 Windows PowerShell 명령을 제공 합니다. (Windows PowerShell v2에서는 사용할 수도 있습니다는 **– 파일** 전환). 명령에는이 형식으로 수행 해야 합니다.
 
-
 [!code-console[Main](running-windows-powershell-scripts-from-msbuild-project-files/samples/sample3.cmd)]
-
 
 예를 들어:
 
-
 [!code-console[Main](running-windows-powershell-scripts-from-msbuild-project-files/samples/sample4.cmd)]
-
 
 스크립트 경로 공백이 포함 하는 경우 파일 경로 앞에 앰퍼샌드 작은따옴표로 묶어야 해야 합니다. 명령을를 이미 사용 했습니다 때문에 큰따옴표를 사용할 수 없습니다.
 
-
 [!code-console[Main](running-windows-powershell-scripts-from-msbuild-project-files/samples/sample5.cmd)]
-
 
 MSBuild에서이 명령을 호출할 때 몇 가지 추가 고려 사항이 있습니다. 먼저 포함 해야 합니다 **– NonInteractive** 스크립트 자동 모드로 실행 되도록 하는 플래그입니다. 다음을 포함 해야 합니다 **– ExecutionPolicy** 적절 한 인수 값을 사용 하 여 플래그입니다. Windows PowerShell 스크립트에 적용 됩니다 하 여 스크립트 실행을 방해할 수 있는 기본 실행 정책을 재정의할 수 있습니다 실행 정책을 지정 합니다. 이러한 인수 값에서 선택할 수 있습니다.
 
@@ -114,15 +103,11 @@ MSBuild에서이 명령을 호출할 때 몇 가지 추가 고려 사항이 있�
 
 - 이러한 변경 하면이 명령 유사 합니다.
 
-
 [!code-console[Main](running-windows-powershell-scripts-from-msbuild-project-files/samples/sample6.cmd)]
-
 
 사용자 지정 MSBuild 프로젝트 파일 내에서 새 대상 만들기를 사용 합니다 **Exec** 이 명령을 실행 하는 작업:
 
-
 [!code-xml[Main](running-windows-powershell-scripts-from-msbuild-project-files/samples/sample7.xml)]
-
 
 이 예제는 note:
 
@@ -139,34 +124,24 @@ Windows PowerShell은 스크립트를 통해 원격 컴퓨터에서 실행할 �
 > [!NOTE]
 > 사용 하기 전에 합니다 **Invoke-command** 원격 컴퓨터에서 스크립트를 실행할 Windows PowerShell cmdlet, 원격 메시지를 수신 하도록 WinRM 수신기를 구성 해야 합니다. 이 명령을 실행 하 여 수행할 수 있습니다 **winrm quickconfig** 원격 컴퓨터. 자세한 내용은 [설치 및 구성에 대 한 Windows 원격 관리](https://msdn.microsoft.com/library/windows/desktop/aa384372(v=vs.85).aspx)합니다.
 
-
 Windows PowerShell 창에서이 구문을 사용 하려고 합니다 **LogDeploy.ps1** 원격 컴퓨터에서 스크립트:
 
-
 [!code-powershell[Main](running-windows-powershell-scripts-from-msbuild-project-files/samples/sample8.ps1)]
-
 
 > [!NOTE]
 > 가지 다른 다양 한 방법으로 사용 하 여 **Invoke-command** 스크립트를 실행 하려면 파일에 있지만이 방법은 가장 간단한 매개 변수 값을 제공 하 고 공백 사용 하 여 경로 관리 해야 합니다.
 
-
 이 명령 프롬프트에서를 실행 하면 Windows PowerShell 실행 파일을 호출 하 여 사용 해야 합니다 **– 명령** 사용자 지침을 제공 하는 매개 변수:
-
 
 [!code-console[Main](running-windows-powershell-scripts-from-msbuild-project-files/samples/sample9.cmd)]
 
-
 이전에 일부 추가 스위치를 제공 하 고 MSBuild에서 명령을 실행할 때 예약된 된 XML 문자를 이스케이프 해야 합니다.
-
 
 [!code-console[Main](running-windows-powershell-scripts-from-msbuild-project-files/samples/sample10.cmd)]
 
-
 마지막으로, 이전과 마찬가지로 사용할 수는 **Exec** 프로그램 명령을 실행 하려면 사용자 지정 MSBuild 대상 내의 태스크:
 
-
 [!code-xml[Main](running-windows-powershell-scripts-from-msbuild-project-files/samples/sample11.xml)]
-
 
 이 대상은 빌드 프로세스의 일환으로를 실행 하면 Windows PowerShell에서 지정 된 컴퓨터에 스크립트를 실행 합니다는 **– computername** 인수입니다.
 

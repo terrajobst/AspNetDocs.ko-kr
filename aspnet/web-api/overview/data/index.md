@@ -9,17 +9,16 @@ ms.custom: seoapril2019
 ms.assetid: 995cbe38-7dbd-4c36-a5d0-a761944c7636
 msc.legacyurl: /web-api/overview/data
 msc.type: chapter
-ms.openlocfilehash: 9c5ef1e85f0b5ca7ead67dfe28a3a43f3e5c464a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 210d6c1b207bbba0e9b809c9bba3a3d567015013
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59400037"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65126216"
 ---
 # <a name="working-with-data-in-aspnet-web-api"></a>ASP.NET Web API에서에서 데이터 작업
 
 > 방법 프로그램 CRUD (만들기, 읽기, 업데이트, 삭제) 웹 API의 작업입니다.
-
 
 - [Entity framework 6에 Web API 2 사용](using-web-api-with-entity-framework/index.md)
 

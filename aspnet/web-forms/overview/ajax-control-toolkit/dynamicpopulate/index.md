@@ -8,17 +8,16 @@ ms.date: 11/14/2011
 ms.assetid: 68c6e54f-87ed-4768-b140-d0e3e76af841
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/dynamicpopulate
 msc.type: chapter
-ms.openlocfilehash: ddf92645ed964c3634326712e565af9d6fedcd1c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 66c279647a97f0200f11b4774047a985a7162594
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59388116"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132690"
 ---
 # <a name="dynamicpopulate"></a>DynamicPopulate
 
 > 이 자습서에는 웹 서비스를 호출 하 고 페이지의 컨트롤에 결과 값을 표시 하는 DynamicPopulate 컨트롤을 사용 하는 방법을 보여 줍니다.
-
 
 - [동적으로 컨트롤 채우기(C#)](dynamically-populating-a-control-cs.md)
 - [JavaScript 코드를 사용하여 동적으로 컨트롤 채우기(C#)](dynamically-populating-a-control-using-javascript-code-cs.md)

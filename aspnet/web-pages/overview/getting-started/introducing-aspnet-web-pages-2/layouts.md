@@ -8,12 +8,12 @@ ms.date: 05/28/2015
 ms.assetid: c85ec591-f8d7-4882-b763-de6ab9f3df7a
 msc.legacyurl: /web-pages/overview/getting-started/introducing-aspnet-web-pages-2/layouts
 msc.type: authoredcontent
-ms.openlocfilehash: 58f3ec28914a604aa911cc3cb73733f0d58fd49f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 678eb7089e95e3d221d6b2d82034a62aefa75757
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59390418"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131831"
 ---
 # <a name="introducing-aspnet-web-pages---creating-a-consistent-layout"></a>ASP.NET 웹 페이지 소개-일관적인 레이아웃 만들기
 
@@ -26,7 +26,6 @@ ms.locfileid: "59390418"
 > - 레이아웃 페이지가 됩니다.
 > - 동적 콘텐츠가 포함 된 레이아웃 페이지를 결합 하는 방법입니다.
 > - 레이아웃 페이지에 값을 전달 하는 방법입니다.
-
 
 ## <a name="about-layouts"></a>레이아웃 정보
 
@@ -167,7 +166,6 @@ ASP.NET은에 Movies.cshtml 페이지의 콘텐츠를 병합 합니다  *\_Layou
 > 사용 하 여 원하는 수의 값을 전달할 수 있습니다는 `Page` 개체입니다. 레이아웃 페이지에 동영상 정보를 전달 하려는 경우와 같이 사용 하 여 값을 전달할 수 있습니다 `Page.MovieTitle` 하 고 `Page.Genre` 고 `Page.MovieYear`입니다. (또는 정보를 저장할 고안 하는 다른 모든 이름입니다.) 유일한 요구 사항은-는 아마도 명백한-콘텐츠 페이지와 레이아웃 페이지에 동일한 이름을 사용 해야 합니다.
 > 
 > 사용 하 여 전달 되는 정보는 `Page` 개체만 표시할 텍스트를 레이아웃 페이지에서 제한 되지 않습니다. 레이아웃 페이지에서 값을 전달할 수 있으며 레이아웃 페이지의 코드 페이지의 섹션 표시 여부를 결정 하는 값을 사용할 수 다음 무엇 *.css* 를 사용 하려면 파일 등에입니다. 에 전달할 값을 `Page` 개체는 다른 값 처럼 코드에서 사용 합니다. 값 콘텐츠 페이지에서 시작 하 고 레이아웃 페이지에 전달 되는 죠.
-
 
 엽니다는 *AddMovie.cshtml* 페이지 및 제목을 제공 하는 코드의 위쪽에 선을 추가 합니다 *AddMovie.cshtml* 페이지:
 

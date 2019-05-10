@@ -8,17 +8,16 @@ ms.date: 05/18/2012
 ms.assetid: 99253c4e-a125-4c21-85e7-a6dd74d93892
 msc.legacyurl: /web-pages/overview/getting-started
 msc.type: chapter
-ms.openlocfilehash: 3e5b9d1a3bac0cf1ab042f473f8fd508069000a5
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 50a249d0e64cff2a8c4f16f38f530b6d52f755de
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59408578"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133181"
 ---
 # <a name="getting-started-with-aspnet-web-pages"></a>ASP.NET 웹 페이지를 사용 하 여 시작
 
 > Web Pages 및 WebMatrix는 모든 설치, 시작 및 사이트를 배포 하는 방법 및 됩니다.
-
 
 - [Visual Studio에서 ASP.NET 웹 페이지 프로그래밍](program-asp-net-web-pages-in-visual-studio.md)
 - [ASP.NET 웹 프로그래밍 Razor 구문 소개](introducing-razor-syntax-c.md)

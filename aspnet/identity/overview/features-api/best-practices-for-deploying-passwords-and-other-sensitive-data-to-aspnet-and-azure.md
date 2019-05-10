@@ -9,12 +9,12 @@ ms.assetid: 97902c66-cb61-4d11-be52-73f962f2db0a
 ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/features-api/best-practices-for-deploying-passwords-and-other-sensitive-data-to-aspnet-and-azure
 msc.type: authoredcontent
-ms.openlocfilehash: 2620d9e2eaf3c7719d9a289e42bb91270708ae79
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 0e02df967df8acf346b9fcd1c75dbe304cc5407b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59419446"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65121554"
 ---
 # <a name="best-practices-for-deploying-passwords-and-other-sensitive-data-to-aspnet-and-azure-app-service"></a>ASP.NET 및 Azure App Service에 암호와 기타 중요한 데이터를 배포하는 방법에 대한 모범 사례
 
@@ -25,7 +25,6 @@ ms.locfileid: "59419446"
 > 샘플 코드 중 이며 간단한 WebJob 콘솔 앱을 데이터베이스 연결 문자열 암호, Twilio, SendGrid 및 Google을 보안 키에 액세스 해야 하는 ASP.NET MVC 앱
 > 
 > 온-프레미스 설정 및 PHP도 언급 됩니다.
-
 
 - [개발 환경에서 암호를 사용 하 여 작업](#pwd)
 - [개발 환경에서 연결 문자열 사용](#con)
@@ -54,7 +53,6 @@ ms.locfileid: "59419446"
 > [!WARNING]
 > 보안-추가 하지 마십시오 하 *비밀.config* 프로젝트 파일 또는 소스 제어에 체크 인 합니다. 기본적으로 Visual Studio는 다음과 같이 설정 됩니다.는 `Build Action` 를 `Content`, 즉, 파일을 배포 합니다. 자세한 내용은 참조 하세요. [왜 없는 프로젝트 폴더 내에 있는 파일의 모든 배포?](https://msdn.microsoft.com/library/ee942158(v=vs.110).aspx#can_i_exclude_specific_files_or_folders_from_deployment) 에 대 한 모든 확장을 사용할 수 있지만 합니다 *비밀.config* 파일인 것이 가장 좋습니다 유지 *.config*처럼 IIS에서 구성 파일을 제공 하지 않습니다. 또한 합니다 *AppSettingsSecrets.config* 파일이 두 디렉터리 수준에서는 *web.config* 파일 이기 때문에 솔루션 디렉터리를 완전히 벗어납니다. 솔루션 디렉터리에서 파일을 이동 하 여 &quot;git 추가 \* &quot; 리포지토리에 추가 하지 않습니다.
 
-
 <a id="con"></a>
 ## <a name="working-with-connection-strings-in-the-development-environment"></a>개발 환경에서 연결 문자열 사용
 
@@ -67,14 +65,11 @@ Visual Studio를 사용 하는 새 ASP.NET 프로젝트를 만듭니다 [LocalDB
 > [!NOTE]
 > 사용 하는 경우는 `configSource` 외부 파일에 연결 문자열을 이동 하려면 위에 표시 된 대로 특성 및 Visual studio 새 웹 사이트 만들기, 데이터베이스를 사용 하는 데이터베이스를 구성 하는 옵션이 제공 되지 않습니다 및 검색할 수 없습니다 경우 있습니다 pu Visual Studio에서 Azure로 blish 합니다. 사용 중인 경우는 `configSource` 특성인 PowerShell를 사용 하 여 만들고 웹 사이트 및 데이터베이스를 배포 하거나 만들 수 있습니다 웹 사이트 및 데이터베이스는 포털에서 게시 하기 전에 합니다. 합니다 [새로 만들기-AzureWebsitewithDB.ps1](https://gallery.technet.microsoft.com/scriptcenter/Ultimate-Create-Web-SQL-DB-9e0fdfd3) 스크립트에서 새 웹 사이트와 데이터베이스를 만듭니다.
 
-
 > [!WARNING]
 > 보안-달리 합니다 *AppSettingsSecrets.config* 파일을 외부 연결 문자열 파일 같은 루트 디렉터리에 있어야 *web.config* 않도록 예방 조치를 수행 해야 하므로 파일 원본 리포지토리로 확인 하지 마십시오.
 
-
 > [!NOTE]
 > **비밀 파일에서 보안 경고:** 가장 좋은 방법은 테스트 및 개발에서 프로덕션 비밀을 사용 하지 않도록 합니다. 테스트 또는 개발에서 프로덕션 암호를 사용 하 여 이러한 비밀 누수가 발생 합니다.
-
 
 <a id="wj"></a>
 ## <a name="webjobs-console-apps"></a>WebJobs 콘솔 앱
@@ -105,7 +100,6 @@ Azure에 웹 앱을 배포할 때 합니다 *AppSettingsSecrets.config* (즉, �
 > [!WARNING]
 > 보안-중요 한 데이터를 배포 하려면 PowerShell 스크립트를 사용 하는 목적은 따라서 비교를 수행 하는 PowerShell 스크립트에 암호나 다른 비밀을 포함 하지 마세요. 합니다 [Get-credential](https://technet.microsoft.com/library/hh849815.aspx) cmdlet은 암호를 가져옵니다 하는 보안 메커니즘을 제공 합니다. UI 프롬프트를 사용 하 여 암호를 누수 방지할 수 있습니다.
 
-
 ### <a name="deploying-db-connection-strings"></a>배포 DB 연결 문자열
 
 DB 연결 문자열은 앱 설정에 마찬가지로 처리 됩니다. Visual Studio에서 웹 앱을 배포 하는 경우 사용자에 대 한 연결 문자열 구성 됩니다. 포털에서이 확인할 수 있습니다. PowerShell을 사용 하 여 연결 문자열을 설정 하는 방법이 권장된 됩니다. PowerShell 스크립트의 예는 웹 사이트 및 데이터베이스를 만들고 연결 문자열을 설정 합니다. 웹 사이트에서 다운로드 [새로 만들기-AzureWebsitewithDB.ps1](https://gallery.technet.microsoft.com/scriptcenter/Ultimate-Create-Web-SQL-DB-9e0fdfd3) 에서 [Azure 스크립트 라이브러리](https://gallery.technet.microsoft.com/scriptcenter/site/search?f%5B0%5D.Type=RootCategory&amp;f%5B0%5D.Value=WindowsAzure).
@@ -125,6 +119,5 @@ DB 연결 문자열은 앱 설정에 마찬가지로 처리 됩니다. Visual St
 PowerShell의 예는 웹 앱 및 데이터베이스를 만드는 스크립트를 설정 연결 문자열 + 앱 설정, 다운로드 [새로 만들기-AzureWebsitewithDB.ps1](https://gallery.technet.microsoft.com/scriptcenter/Ultimate-Create-Web-SQL-DB-9e0fdfd3) 에서 합니다 [Azure 스크립트 라이브러리](https://gallery.technet.microsoft.com/scriptcenter/site/search?f%5B0%5D.Type=RootCategory&amp;f%5B0%5D.Value=WindowsAzure)합니다. 
 
 Stefan Schackow 참조 [Windows Azure 웹 사이트: 응용 프로그램 문자열 및 연결 문자열 작동 방식](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/)
-
 
 Barry Dorrans 주신 ( [ @blowdart ](https://twitter.com/blowdart) ) 및 Carlos Farre 검토 합니다.

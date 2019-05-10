@@ -8,12 +8,12 @@ ms.date: 02/20/2009
 ms.assetid: c6e5c036-2265-4fa7-a9eb-47f197bdc262
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager/iteration-5-create-unit-tests-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 476e5529e4fd53c6166c53766409268939a83c72
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 4ce1c6224a7e9203ff62f136f4f3a43e4561a904
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59380667"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123824"
 ---
 # <a name="iteration-5--create-unit-tests-vb"></a>반복 #5-단위 테스트 만들기 (VB)
 
@@ -22,7 +22,6 @@ by [Microsoft](https://github.com/microsoft)
 [코드 다운로드](iteration-5-create-unit-tests-vb/_static/contactmanager_5_vb1.zip)
 
 > 다섯 번째 반복에서에서는 쉽게 응용 프로그램 유지 관리 하 고 단위 테스트를 추가 하 여 수정 합니다. 데이터 모델 클래스를 모의 하 고는 컨트롤러 및 유효성 검사 논리에 대 한 단위 테스트를 작성 합니다.
-
 
 ## <a name="building-a-contact-management-aspnet-mvc-application-vb"></a>연락처 관리 ASP.NET MVC 응용 프로그램을 작성 (VB)
 
@@ -43,7 +42,6 @@ by [Microsoft](https://github.com/microsoft)
 - 반복 #6-테스트 중심 개발을 사용 합니다. 이 여섯 번째 반복에서는 추가 새로운 기능을 응용 프로그램 먼저 단위 테스트를 작성 하 고 단위 테스트에 대 한 코드를 작성 합니다. 이 반복에서는 메일 그룹을 추가합니다.
 
 - 반복 #7 – Ajax 기능을 추가 합니다. 일곱 번째 반복에서 개선할 응용 프로그램의 성능과 응답성 Ajax에 대 한 지원을 추가 하 여 합니다.
-
 
 ## <a name="this-iteration"></a>이 반복
 
@@ -69,7 +67,6 @@ by [Microsoft](https://github.com/microsoft)
 > 
 > 단위 테스트 프레임 워크 NUnit, xUnit.net, MbUnit 등 여러 가지가 있습니다. 이 자습서에서는 단위 테스트 프레임 워크 Visual Studio를 함께 사용 합니다. 그러나 이러한 대체 프레임 워크 중 하나 사용 간단 하 게 수 없습니다.
 
-
 ## <a name="what-gets-tested"></a>어떤 테스트를 가져옵니다.
 
 완벽 한 환경에서 모든 코드 단위 테스트에서 검사 수 됩니다. 완벽 한 세상에 완벽 한 안전망 해야 합니다. 응용 프로그램에서 코드 줄을 수정 하 고 알고 있는 즉시 단위 테스트를 실행 하 여 변경 내용을 기존 기능을 중단 하는지 여부를 수 있게 됩니다.
@@ -88,11 +85,9 @@ by [Microsoft](https://github.com/microsoft)
 > 
 > 데이터 액세스 논리에 대 한 테스트를 작성 하거나 뷰 논리는 좋지 않습니다 단위 테스트를 작성 하는 경우, 기능 구성 또는 통합 테스트 하는 경우에 이러한 테스트 매우 유용할 수 있습니다.
 
-
 > [!NOTE] 
 > 
 > ASP.NET MVC Web Forms 뷰 엔진입니다. Web Forms 뷰 엔진을 웹 서버에 종속 된 동안 다른 뷰 엔진 되지 않을 수 있습니다.
-
 
 ## <a name="using-a-mock-object-framework"></a>모의 개체 프레임 워크를 사용 하 여
 
@@ -115,16 +110,13 @@ Moq를 사용 하려면 먼저 다음 단계를 완료 해야 합니다.
 3. 다운로드를 압축을 풉니다.
 4. 메뉴 옵션을 선택 하 여 테스트 프로젝트에 Moq 어셈블리에 대 한 참조를 추가 **프로젝트에서 참조 추가** 열려는 합니다 **참조 추가** 대화 합니다. 찾아보기 탭에서 Moq 압축을 푼 폴더로 이동 하 고 Moq.dll 어셈블리를 선택 합니다. 클릭 합니다 **확인** 단추 (그림 2 참조).
 
-
 [![차단 해제 Moq](iteration-5-create-unit-tests-vb/_static/image1.jpg)](iteration-5-create-unit-tests-vb/_static/image1.png)
 
 **그림 01**: 차단 해제 Moq ([클릭 하 여 큰 이미지 보기](iteration-5-create-unit-tests-vb/_static/image2.png))
 
-
 [![Moq를 추가한 후 참조](iteration-5-create-unit-tests-vb/_static/image2.jpg)](iteration-5-create-unit-tests-vb/_static/image3.png)
 
 **그림 02**: Moq를 추가한 후 참조 ([클릭 하 여 큰 이미지 보기](iteration-5-create-unit-tests-vb/_static/image4.png))
-
 
 ## <a name="creating-unit-tests-for-the-service-layer"></a>서비스 계층에 대 한 단위 테스트 만들기
 
@@ -136,11 +128,9 @@ ContactManager.Tests 프로젝트의 Models 라는 새 폴더를 만듭니다. �
 > 
 > 일반적으로 ASP.NET MVC 프로젝트의 폴더 구조와 일치 하도록 테스트 프로젝트의 폴더 구조를 해야 합니다. 예를 들어 컨트롤러 폴더는 Models 폴더에서 모델 테스트에 테스트 컨트롤러를 배치 및 등입니다.
 
-
 [![Models\ContactManagerServiceTest.cs](iteration-5-create-unit-tests-vb/_static/image3.jpg)](iteration-5-create-unit-tests-vb/_static/image5.png)
 
 **그림 03**: Models\ContactManagerServiceTest.cs ([클릭 하 여 큰 이미지 보기](iteration-5-create-unit-tests-vb/_static/image6.png))
-
 
 처음에 ContactManagerService 클래스에 의해 노출 CreateContact() 메서드를 테스트 하려고 합니다. 다음 5 개의 테스트를 만듭니다.
 
@@ -158,9 +148,7 @@ ContactManager.Tests 프로젝트의 Models 라는 새 폴더를 만듭니다. �
 
 [!code-vb[Main](iteration-5-create-unit-tests-vb/samples/sample1.vb)]
 
-
 목록 1에서 Contact 클래스를 사용 하기 때문에 테스트 프로젝트에 Microsoft Entity Framework에 대 한 참조를 추가 해야 합니다. System.Data.Entity 어셈블리에 대 한 참조를 추가 합니다.
-
 
 목록 1 [TestInitialize] 특성으로 데코 레이트 된 initialize () 메서드가 포함 되어 있습니다. 이 메서드는 각 단위 테스트를 실행 하기 전에 자동으로 호출 됩니다 (5 번 호출할 각 단위 테스트의 바로 앞). Initialize () 메서드 코드의 다음 줄을 사용 하 여 모의 리포지토리를 만듭니다.
 
@@ -172,7 +160,6 @@ ContactManager.Tests 프로젝트의 Models 라는 새 폴더를 만듭니다. �
 > 
 > 간의 구분이 Moq 프레임 워크를 사용할 때 \_mockRepository 및 \_mockRepository.Object 합니다. 전자는 모의 리포지토리를 동작 하는 방법을 지정 하는 메서드를 포함 하는 Mock (의 IContactManagerRepository) 클래스를 나타냅니다. 후자는 IContactManagerRepository 인터페이스를 구현 하는 실제 모의 리포지토리를 참조 합니다.
 
-
 모의 리포지토리 ContactManagerService 클래스의 인스턴스를 만들 때 initialize () 메서드에서 사용 됩니다. 모든 개별 단위 테스트를 ContactManagerService 클래스의이 인스턴스를 사용합니다.
 
 목록 1 각 단위 테스트에 해당 하는 5 개의 메서드를 포함 합니다. 이러한 각 메서드 [TestMethod] 특성으로 데코레이팅됩니다. 단위 테스트를 실행 하면이 특성을 가진 모든 메서드 호출 됩니다. 즉, [TestMethod] 특성으로 데코 레이트 된 모든 메서드는 단위 테스트.
@@ -183,11 +170,9 @@ CreateContact(), 명명 된 첫 번째 단위 테스트를 연락처 클래스�
 
 메뉴 옵션을 선택 하 여 목록 1에서 단위 테스트를 실행할 수 있습니다 **테스트를 실행 하 고 솔루션 (CTRL + R, A)의 모든 테스트**합니다. 테스트 결과 창에서 테스트의 결과가 표시 됩니다 (그림 4 참조).
 
-
 [![테스트 결과](iteration-5-create-unit-tests-vb/_static/image4.jpg)](iteration-5-create-unit-tests-vb/_static/image7.png)
 
 **그림 04**: 테스트 결과 ([클릭 하 여 큰 이미지 보기](iteration-5-create-unit-tests-vb/_static/image8.png))
-
 
 ## <a name="creating-unit-tests-for-controllers"></a>컨트롤러에 대 한 단위 테스트 만들기
 
@@ -211,7 +196,6 @@ CreateValidContact() 단위 테스트에서에서는 모의 서비스 계층의 
 
 Create () 메서드를 의도 한 대로 동작 하는 경우 서비스 계층 값 false를 반환 하는 경우 Create view를 반환 해야 하 합니다. 이런 방식으로 컨트롤러 뷰 만들기에서에서 유효성 검사 오류 메시지를 표시할 수 있고 사용자는 잘못 된 연락처 속성을 수정할 수 있는 기회입니다.
 
-
 컨트롤러에 대 한 단위 테스트를 빌드 하려는 경우 다음 해야 컨트롤러 작업에서 명시적 보기 이름을 반환 합니다. 예를 들어, 다음과 같은 뷰를 반환 하지 않습니다.
 
 Return View()
@@ -221,7 +205,6 @@ Return View()
 View("Create")를 반환 합니다.
 
 없는 경우 명시적 보기를 반환 하는 경우 ViewResult.ViewName 속성이 빈 문자열을 반환 합니다.
-
 
 **Listing 2 - Controllers\ContactControllerTest.vb**
 

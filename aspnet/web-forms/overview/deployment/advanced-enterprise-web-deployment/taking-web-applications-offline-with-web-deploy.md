@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 3e9f6e7d-8967-4586-94d5-d3a122f12529
 msc.legacyurl: /web-forms/overview/deployment/advanced-enterprise-web-deployment/taking-web-applications-offline-with-web-deploy
 msc.type: authoredcontent
-ms.openlocfilehash: 017eceb8567859fdbe28bb87af844eee20dfa525
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ba54454bcb6f5e4ceb269b128a6b72a4b75f64be
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59415481"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131405"
 ---
 # <a name="taking-web-applications-offline-with-web-deploy"></a>웹 배포를 통해 웹 애플리케이션을 오프라인으로 전환
 
@@ -22,7 +22,6 @@ ms.locfileid: "59415481"
 [PDF 다운로드](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > 이 항목에서는 웹 응용 프로그램을 오프 라인으로 인터넷 정보 서비스 (IIS) 웹 배포 도구 (웹 배포)를 사용 하 여 자동화 된 배포 중에 사용 하는 방법을 설명 합니다. 웹 응용 프로그램으로 이동 하는 사용자 리디렉션됩니다를 *앱\_offline.htm* 배포가 완료 될 때까지 파일입니다.
-
 
 이 항목의 Fabrikam, Inc. 라는 가상 회사의 엔터프라이즈 배포 요구 사항 기반 자습서 시리즈의 일부를 형성 합니다. 샘플 솔루션을 사용 하 여이 자습서 시리즈&#x2014;는 [Contact Manager 솔루션](../web-deployment-in-the-enterprise/the-contact-manager-solution.md)&#x2014;현실적인 수준의 복잡성을 Windows Communication ASP.NET MVC 3 응용 프로그램을 포함 하 여 웹 응용 프로그램을 나타내는 Foundation (WCF) 서비스 및 데이터베이스 프로젝트입니다.
 
@@ -70,18 +69,13 @@ ms.locfileid: "59415481"
 > [!NOTE]
 > 다음 절차에 설명 된 대로 배포 프로세스를 제어 하는 사용자 지정 MSBuild 프로젝트 파일을 사용 하는 것으로 가정 [프로젝트 파일 이해](../web-deployment-in-the-enterprise/understanding-the-project-file.md)합니다. Visual Studio에서 직접에 배포 하는 경우에 다른 방법을 사용 해야 합니다. Sayed Ibrahim Hashimi 설명에서 이러한 한 가지 방법은 [수행할 사용자 웹 앱 오프 라인 중 게시 방법](http://sedodream.com/2012/01/08/HowToTakeYourWebAppOfflineDuringPublishing.aspx)합니다.
 
-
 배포 하는 *앱\_오프 라인* 파일 대상 IIS 웹 사이트에 MSDeploy.exe를 사용 하 여 호출 해야 합니다 [웹 배포 **contentPath** 공급자](https://technet.microsoft.com/library/dd569034(WS.10).aspx)합니다. 합니다 **contentPath** 공급자 지원 실제 디렉터리 경로 IIS 웹 사이트 또는 응용 프로그램 경로 Visual Studio 프로젝트 폴더와 IIS 웹 응용 프로그램 간에 파일을 동기화 하는 데 이상적인 있도록 합니다. 파일을 배포 하려면 MSDeploy 명령을 다음과 비슷합니다.
-
 
 [!code-console[Main](taking-web-applications-offline-with-web-deploy/samples/sample1.cmd)]
 
-
 배포 프로세스의 끝에 있는 대상 사이트에서 파일을 제거 하려면 MSDeploy 명령을 다음과 비슷합니다.
 
-
 [!code-console[Main](taking-web-applications-offline-with-web-deploy/samples/sample2.cmd)]
-
 
 이러한 명령은 빌드 및 배포 프로세스의 일부로 자동화 하기 위해 사용자 지정 MSBuild 프로젝트 파일에 통합 해야 합니다. 다음 절차에는이 작업을 수행 하는 방법을 설명 합니다.
 
@@ -129,9 +123,7 @@ ms.locfileid: "59415481"
 
 합니다 *. wpp.targets* 파일 다음과 유사 합니다.
 
-
 [!code-xml[Main](taking-web-applications-offline-with-web-deploy/samples/sample8.xml)]
-
 
 다음은이 예에서의 핵심 포인트입니다.
 
@@ -160,7 +152,6 @@ ms.locfileid: "59415481"
 
 > [!NOTE]
 > 배포에 실패할 경우 합니다 *앱\_offline.htm* 파일 위치에 남아 있고 응용 프로그램은 오프 라인 상태로 유지 됩니다. 이것이 일반적으로 원하는 동작입니다. 응용 프로그램을 다시 온라인으로 삭제할 수 있습니다 합니다 *앱\_offline.htm* 웹 서버에서 파일입니다. 또는 오류를 수정 하 고 성공적인 배포를 실행 하는 경우는 *앱\_offline.htm* 파일이 제거 됩니다.
-
 
 ## <a name="conclusion"></a>결론
 

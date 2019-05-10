@@ -8,12 +8,12 @@ ms.date: 08/15/2012
 ms.assetid: 2ece0bf4-aae5-4ff4-8f62-28e0819d4f86
 msc.legacyurl: /web-forms/overview/getting-started/using-page-inspector-in-a-visual-studio-11-beta-web-forms-project
 msc.type: authoredcontent
-ms.openlocfilehash: c39e1cf42fde382a9e74d7f865f0dac1aa62ddc8
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c165bbea505b4cb8eae1312cdd587f4ed36541a0
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384242"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65127943"
 ---
 # <a name="using-page-inspector-for-visual-studio-2012-in-aspnet-web-forms"></a>ASP.NET Web Forms에서 Visual Studio 2012용 페이지 검사기 사용
 
@@ -43,7 +43,6 @@ Tim Ammann 여
 > 
 > [CSS 색 선택을 사용 하 여](#css_color_picker)
 
-
 <a id="_prerequisites"></a><a id="_1_prerequisites"></a>
 
 ## <a name="prerequisites"></a>전제 조건
@@ -52,7 +51,6 @@ Tim Ammann 여
 
 > [!NOTE]
 > 페이지 검사기의 최신 버전을 사용 [웹 플랫폼 설치 관리자](https://go.microsoft.com/fwlink/?LinkId=255386) .NET 2.0에 대 한 Azure SDK를 설치 합니다.
-
 
 페이지 검사기는 Microsoft Web 개발자 도구를 사용 하 여 제공 됩니다. 최신 버전 1.3입니다. 어떤 버전을 확인 하려면, Visual Studio를 실행 있고 선택 **Microsoft Visual Studio 정보** 에서 합니다 **도움말** 메뉴.
 
@@ -190,7 +188,6 @@ Div.content 래퍼 섹션 내에서 한 번 클릭 하 고 다음으로 마우�
 
 > [!NOTE]
 > 이 기능은 페이지 검사기의 버전 1.3을 필요합니다.
-
 
 CSS 자동 동기화 기능을 사용 하면 CSS 파일을 직접 편집 하 고 페이지 검사기 브라우저에서 즉시 변경 내용을 확인할 수 있습니다.
 

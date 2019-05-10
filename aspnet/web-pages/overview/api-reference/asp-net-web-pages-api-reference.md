@@ -8,12 +8,12 @@ ms.date: 02/10/2014
 ms.assetid: 4001cb9b-3bfd-4ace-8a89-1561d8421e2c
 msc.legacyurl: /web-pages/overview/api-reference/asp-net-web-pages-api-reference
 msc.type: authoredcontent
-ms.openlocfilehash: 547b1932c4f8d3684c668561e3fe568a0f272925
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e010307fc0576e8b003fbfe665cae77618d9c9a5
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59416508"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132988"
 ---
 # <a name="aspnet-web-pages-razor-api-quick-reference"></a>ASP.NET 웹 페이지 (Razor) API 빠른 참조
 
@@ -32,7 +32,6 @@ ms.locfileid: "59416508"
 >   
 > 
 > 이 자습서는 또한 v2를 표시 하는 기능) (제외 ASP.NET 웹 페이지 2 및 ASP.NET 웹 페이지 1.0과 함께 작동 합니다.
-
 
 이 페이지에는 다음에 대 한 참조 정보가 들어 있습니다.
 

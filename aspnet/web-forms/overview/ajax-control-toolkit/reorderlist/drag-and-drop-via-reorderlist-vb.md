@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 848e6bcf-4c3f-4d14-974d-e45b9444ab79
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/reorderlist/drag-and-drop-via-reorderlist-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 1b955c43a0fc95bda87843fc4a5c9e56aef3dfc6
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 72c697bc2a2005d3ff116cf2f73d80e23bb526dd
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59400999"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65124916"
 ---
 # <a name="drag-and-drop-via-reorderlist-vb"></a>ReorderList를 통해 끌어서 놓기(VB)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/ReorderList5.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/reorderlist5VB.pdf)
 
 > ReorderList 컨트롤이 AJAX Control Toolkit에서 끌어서 놓기를 통해 사용자에 의해 다시 정렬할 수 있는 목록을 제공 합니다. 현재 순서 목록에는 서버에서 유지 됩니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -43,19 +42,15 @@ by [Christian Wenz](https://github.com/wenz)
 - `description` (varchar(50), NULL)
 - `position` (int, NULL)
 
-
 [![AJAX 테이블의 레이아웃](drag-and-drop-via-reorderlist-vb/_static/image2.png)](drag-and-drop-via-reorderlist-vb/_static/image1.png)
 
 AJAX 테이블의 레이아웃 ([클릭 하 여 큰 이미지 보기](drag-and-drop-via-reorderlist-vb/_static/image3.png))
 
-
 다음으로 두 가지 값을 사용 하 여 테이블을 채웁니다. `position` 열 요소는 정렬 순서를 포함 합니다.
-
 
 [![AJAX 테이블의 초기 데이터](drag-and-drop-via-reorderlist-vb/_static/image5.png)](drag-and-drop-via-reorderlist-vb/_static/image4.png)
 
 AJAX 테이블의 초기 데이터 ([클릭 하 여 큰 이미지 보기](drag-and-drop-via-reorderlist-vb/_static/image6.png))
-
 
 생성 하는 데 필요한 다음 단계는 `SqlDataSource` 새 데이터베이스 및 해당 테이블을 사용 하 여 통신을 제어 합니다. 데이터 원본 지원 해야 합니다 `SELECT` 및 `UPDATE` SQL 명령입니다. 목록 요소의 순서를 나중에 변경 하는 경우는 `ReorderList` 컨트롤 데이터 소스에 두 값을 자동으로 전송 `Update` 명령: 새 위치와 요소의 ID입니다. 따라서 데이터 원본 요구는 `<UpdateParameters>` 이 두 값에 대 한 섹션:
 
@@ -81,7 +76,6 @@ AJAX 테이블의 초기 데이터 ([클릭 하 여 큰 이미지 보기](drag-a
 [!code-aspx[Main](drag-and-drop-via-reorderlist-vb/samples/sample4.aspx)]
 
 브라우저에서이 예제를 실행 하 고 잠시 목록 항목을 다시 정렬 합니다. 그런 다음 페이지를 다시 로드 하거나 데이터베이스를 확인 합니다. 변경된 위치를 유지 관리 되었는지 및 값을 기준으로 반영 됩니다는 `position` 데이터베이스에 열 태그를 사용 하 여 방금 모든 코드 없이 합니다.
-
 
 [![데이터가 새 목록 항목 순서에 따라 데이터베이스 변경](drag-and-drop-via-reorderlist-vb/_static/image8.png)](drag-and-drop-via-reorderlist-vb/_static/image7.png)
 

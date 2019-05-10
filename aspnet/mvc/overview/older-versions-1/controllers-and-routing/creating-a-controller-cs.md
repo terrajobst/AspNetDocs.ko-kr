@@ -8,12 +8,12 @@ ms.date: 03/02/2009
 ms.assetid: 719d50d4-2305-454c-98b4-bae64937c48f
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/creating-a-controller-cs
 msc.type: authoredcontent
-ms.openlocfilehash: c92d7cdeb7b2d31d5eca810628e9f563840f7494
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 6e3d0bae7f07410637c2b06c500d94a02c821f5c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59400615"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123623"
 ---
 # <a name="creating-a-controller-c"></a>컨트롤러 만들기(C#)
 
@@ -21,29 +21,23 @@ ms.locfileid: "59400615"
 
 > 이 자습서에서는 Stephen walther가 ASP.NET MVC 응용 프로그램에 컨트롤러를 추가할 수는 방법을 보여 줍니다.
 
-
 이 자습서의 목표는 새 ASP.NET MVC 컨트롤러 만들 수는 방법을 설명 합니다. 클래스 파일을 직접 만들어 및 Visual Studio 추가 컨트롤러 메뉴 옵션을 사용 하 여 컨트롤러를 만드는 방법에 알아봅니다.
 
 ### <a name="using-the-add-controller-menu-option"></a>사용 하 여 컨트롤러 메뉴 옵션 추가
 
 새 컨트롤러를 만드는 가장 쉬운 방법은 Visual Studio 솔루션 탐색기 창에서 컨트롤러 폴더를 마우스 오른쪽 단추로 클릭 하 고 선택 하는 것은 **추가, 컨트롤러** 메뉴 옵션 (그림 1 참조). 이 메뉴 옵션을 선택 하면 열립니다는 **컨트롤러 추가** 대화 상자 (그림 2 참조).
 
-
 [![새 프로젝트 대화 상자](creating-a-controller-cs/_static/image1.jpg)](creating-a-controller-cs/_static/image1.png)
 
 **그림 01**: 새 컨트롤러 추가 ([클릭 하 여 큰 이미지 보기](creating-a-controller-cs/_static/image2.png))
-
 
 [![새 프로젝트 대화 상자](creating-a-controller-cs/_static/image2.jpg)](creating-a-controller-cs/_static/image3.png)
 
 **그림 02**: 컨트롤러 추가 대화 상자 ([클릭 하 여 큰 이미지 보기](creating-a-controller-cs/_static/image4.png))
 
-
 첫 번째 부분에서 컨트롤러 이름 강조 표시 하는 **컨트롤러 추가** 대화 합니다. 모든 컨트롤러 이름을 접미사로 끝나야 *컨트롤러*합니다. 예를 들어 라는 컨트롤러를 만들 수 있습니다 *ProductController* 있지만 라는 컨트롤러가 아닌 *제품*합니다.
 
-
 누락 된 컨트롤러를 만드는 경우 합니다 *컨트롤러* 접미사 컨트롤러를 호출할 수 없습니다. 실행 하지 마십시오.--이 실수 후 위해 시간 필자의 인생을 불필요 하 게 했습니다.
-
 
 **Listing 1 - Controllers\ProductController.cs**
 
@@ -55,11 +49,9 @@ ms.locfileid: "59400615"
 
 만들기, 업데이트 및 정보 작업 메서드를 자동으로 생성 하는 옵션이 있는 컨트롤러를 만들 때 (그림 3 참조). 이 옵션을 선택 하는 경우에 목록 2의 컨트롤러 클래스가 생성 됩니다.
 
-
 [![작업 메서드를 자동으로 만들기](creating-a-controller-cs/_static/image3.jpg)](creating-a-controller-cs/_static/image5.png)
 
 **그림 03**: 작업 메서드를 자동으로 만들기 ([클릭 하 여 큰 이미지 보기](creating-a-controller-cs/_static/image6.png))
-
 
 **Listing 2 - Controllers\CustomerController.cs**
 
@@ -75,11 +67,9 @@ ASP.NET MVC 컨트롤러가 클래스 뿐입니다. 원한다 면를 편리 하 
 2. PersonController.cs 새 클래스 이름을 지정 하 고 클릭 합니다 **추가** 단추입니다.
 3. 클래스는 기본 System.Web.Mvc.Controller 클래스 (참조 코드 3)에서 상속 되도록 생성 된 클래스 파일을 수정 합니다.
 
-
 [![새 클래스 만들기](creating-a-controller-cs/_static/image4.jpg)](creating-a-controller-cs/_static/image7.png)
 
 **그림 04**: 새 클래스 만들기 ([클릭 하 여 큰 이미지 보기](creating-a-controller-cs/_static/image8.png))
-
 
 **Listing 3 - Controllers\PersonController.cs**
 

@@ -8,12 +8,12 @@ ms.date: 11/28/2017
 ms.custom: seoapril2019
 msc.legacyurl: /web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 5e3c049ba4349301c3c2d173d4311b3d0883bf68
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3e35c2bc0e46dfdb4544b772775eddd533f27be3
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59401753"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125232"
 ---
 # <a name="get-started-with-aspnet-web-api-2-c"></a>ASP.NET Web API 2 (C#)를 사용 하 여 시작
 
@@ -52,7 +52,6 @@ Visual Studio를 시작 하 고 선택 **새 프로젝트** 에서 합니다 **�
 
 > [!NOTE]
 > 사용 하 여 Web API 프로젝트를 만들 수도 있습니다는 &quot;Web API&quot; 템플릿. Web API 템플릿에서 ASP.NET MVC를 사용 하 여 API 도움말 페이지를 제공 합니다. MVC 사용 하지 않고 웹 API를 표시 하려고 하기 때문에 빈 템플릿에이 자습서에 사용 합니다. 일반적으로 ASP.NET MVC로 웹 API를 사용 하 여 알 필요가 없습니다.
-
 
 ## <a name="adding-a-model"></a>모델 추가
 
@@ -93,7 +92,6 @@ Web API에는 *컨트롤러* 는 HTTP 요청을 처리 하는 개체입니다. I
 
 > [!NOTE]
 > 컨트롤러 라는 폴더에는 컨트롤러 넣이 필요가 없습니다. 폴더 이름은 원본 파일을 구성 하는 편리한 방법입니다.
-
 
 이 파일이 열려 있지 않으면 이미를 열려는 파일을 두 번 클릭 합니다. 이 파일의 코드를 다음으로 바꿉니다.
 

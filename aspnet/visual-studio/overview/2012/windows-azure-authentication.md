@@ -8,12 +8,12 @@ ms.date: 02/20/2013
 ms.assetid: a3cef801-a54b-4ebd-93c3-55764e2e14b1
 msc.legacyurl: /visual-studio/overview/2012/windows-azure-authentication
 msc.type: authoredcontent
-ms.openlocfilehash: cd3eed8c14103d29a66acd475fafe5ff3122a960
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 46dd491b275b43be4e76c029b53f9454146663ae
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58421585"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65126188"
 ---
 # <a name="windows-azure-authentication"></a>Microsoft Azure 인증
 
@@ -26,7 +26,6 @@ ms.locfileid: "58421585"
 > Windows Azure Active Directory 테 넌 트와 온-프레미스 Active Directory 간의 동기화를 설정 하는 방법에 대 한 자세한 내용은 참조 하십시오 [구현 및 관리를 사용 하 여 AD FS 2.0 single sign on](https://technet.microsoft.com/library/jj205462.aspx)합니다.
 >
 > Windows Azure Active Directory는 현재로 제공 된 [무료 미리 보기 서비스](https://azure.microsoft.com/free/?WT.mc_id=A443DD604)합니다.
-
 
 ## <a name="requirements"></a>요구 사항:
 

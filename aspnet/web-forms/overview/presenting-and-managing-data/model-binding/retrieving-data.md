@@ -8,15 +8,14 @@ ms.date: 02/27/2014
 ms.assetid: 9f24fb82-c7ac-48da-b8e2-51b3da17e365
 msc.legacyurl: /web-forms/overview/presenting-and-managing-data/model-binding/retrieving-data
 msc.type: authoredcontent
-ms.openlocfilehash: 29baaf2917e47ac46a78a252721be725b4e9b58f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 08cb65f9ef8f5c36070454e011f41554d81f333f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59398477"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131536"
 ---
 # <a name="retrieving-and-displaying-data-with-model-binding-and-web-forms"></a>모델 바인딩 및 web forms를 사용 하 여 데이터 검색 및 표시
-
 
 > 이 자습서 시리즈에서는 모델 바인딩을 사용 하 여 ASP.NET Web Forms 프로젝트의 기본 사항을 보여 줍니다. 모델 바인딩 보다 직관적인 데이터 원본 개체 (예: ObjectDataSource 또는 SqlDataSource) 처리 하는 보다 데이터 상호 작용 하 게 합니다. 이 시리즈 소개 자료를 사용 하 여 시작 하 고 나중에 자습서에서 고급 개념을 이동 합니다.
 > 
@@ -34,7 +33,6 @@ ms.locfileid: "59398477"
 > - Microsoft Visual Studio 2017 또는 Microsoft Visual Studio Community 2017
 >   
 > 이 자습서는 Visual Studio 2012와 Visual Studio 2013 에서도 작동 하지만 사용자 인터페이스 및 프로젝트 템플릿에서 약간의 차이가 있습니다.
-
 
 ## <a name="what-youll-build"></a>만들 내용
 
@@ -96,7 +94,6 @@ ms.locfileid: "59398477"
    4. 웹 폼 마스터 페이지 선택 **Site.Master**합니다.
    
    5. **확인**을 선택합니다.
-   
 
 ## <a name="add-the-data-model"></a>데이터 모델 추가
 

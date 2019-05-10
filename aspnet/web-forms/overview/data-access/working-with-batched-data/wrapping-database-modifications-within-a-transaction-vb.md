@@ -8,12 +8,12 @@ ms.date: 06/26/2007
 ms.assetid: 7d821db5-6cbb-4b38-af14-198f9155fc82
 msc.legacyurl: /web-forms/overview/data-access/working-with-batched-data/wrapping-database-modifications-within-a-transaction-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 2fc7ba3d62d41685c234756709707ff14f81b316
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c759df39f30b69264187babdb6d3422aff17e99c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59380316"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132821"
 ---
 # <a name="wrapping-database-modifications-within-a-transaction-vb"></a>트랜잭션 내에서 래핑된 데이터베이스 수정(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59380316"
 [코드를 다운로드](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_63_VB.zip) 또는 [PDF 다운로드](wrapping-database-modifications-within-a-transaction-vb/_static/datatutorial63vb1.pdf)
 
 > 이 자습서는 4 개 업데이트, 삭제 및 데이터의 일괄 처리 삽입에 보이는 첫 번째입니다. 이 자습서에서는 데이터베이스 트랜잭션을 모든 단계가 성공 하거나 모든 단계가 실패 하면 원자 단위 연산으로 수행 하도록 일괄 처리 수정이 허용 하는 방법을 알아봅니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -38,7 +37,6 @@ ms.locfileid: "59380316"
 
 > [!NOTE]
 > 일괄 처리 트랜잭션에서 데이터를 수정할 때는 항상 원자성 필요 하지 않습니다. 일부 시나리오에서는 성공 하는 일부 데이터 수정이 있을 수 있으며 경우와 같이 실패 동일한 일괄 처리의 다른 웹 기반 전자 메일 클라이언트에서 전자 메일의 집합을 삭제 합니다. 있는 s를 삭제 하 여 데이터베이스 오류 중간 처리 하는 경우 해당 s 아마도 오류 없이 처리 되는 해당 레코드 삭제 된 상태로 유지 되도록 허용 합니다. 이러한 경우 DAL 데이터베이스 트랜잭션을 지원 하도록 수정할 필요가 없습니다. 그러나 다른 시나리오가 있습니다 일괄 처리 작업, 원자성이 중요 합니다. 두 작업을 수행 해야 자신의 자금 하나의 은행 계정에서 다른 위치로 이동 하는 고객을 하는 경우: 금액을 첫 번째 계정에서 공제 하 고 두 번째에 추가 해야 합니다. 은행 첫 번째 단계 성공 하지 개의치 수 있지만 두 번째 단계 실패 고객 작업 났을 것입니다. 이 자습서를 진행 하를 사용 하 여 일괄 처리 삽입, 업데이트 및에서는 다음 세 가지 자습서에서 작성 하는 인터페이스를 삭제 하지 않으려는 경우에 데이터베이스 트랜잭션을 지원 하기 위해 DAL의 향상 된 기능을 구현 하는 것이 바랍니다.
-
 
 ## <a name="an-overview-of-transactions"></a>트랜잭션 개요
 
@@ -56,9 +54,7 @@ ms.locfileid: "59380316"
 > [!NOTE]
 > 합니다 [ `TransactionScope` 클래스](https://msdn.microsoft.com/library/system.transactions.transactionscope.aspx) 에 `System.Transactions` 네임 스페이스 트랜잭션의 범위 내에서 일련의 문을 프로그래밍 방식으로 래핑할 개발자 지원 하며 여러 관련 된 복잡 한 트랜잭션에 대 한 지원 두 개의 서로 다른 데이터베이스 또는 유형이 다른 Microsoft SQL Server 데이터베이스, Oracle 데이터베이스 및 웹 서비스와 같은 데이터 저장소와 같은 원본입니다. I ve 대신이 자습서에 대 한 ADO.NET 트랜잭션을 사용 하기로 합니다 `TransactionScope` 클래스 ADO.NET 데이터베이스 트랜잭션 및 대부분의 경우에서 보다 구체적인 이므로 훨씬 덜 리소스 집약적. 또한 특정 시나리오에서의 `TransactionScope` 클래스는 MSDTC Microsoft Distributed Transaction Coordinator ()를 사용 합니다. 구성, 구현 및 성능 문제 주변 MSDTC를 사용 하면 보다 특수 한 고급 항목 및이 자습서의 범위를 벗어납니다.
 
-
 트랜잭션 호출을 통해 시작 되 고 ado.net에서 SqlClient 공급자를 사용할 때는 합니다 [ `SqlConnection` 클래스](https://msdn.microsoft.com/library/system.data.sqlclient.sqlconnection.aspx) s [ `BeginTransaction` 메서드](https://msdn.microsoft.com/library/system.data.sqlclient.sqlconnection.begintransaction.aspx)를 반환 하는 [ `SqlTransaction` 개체](https://msdn.microsoft.com/library/system.data.sqlclient.sqltransaction.aspx)합니다. 구성 된 트랜잭션 내에서 배치 되는 데이터 수정 문을 `try...catch` 블록입니다. 문에 오류가 발생 하는 경우는 `try` 블록에 대 한 전송을 실행 합니다 `catch` 블록은 트랜잭션을 통해 다시 롤백할 수 있습니다는 `SqlTransaction` s 개체 [ `Rollback` 메서드](https://msdn.microsoft.com/library/system.data.sqlclient.sqltransaction.rollback.aspx). 모든 문을 성공적으로 호출을 완료 하는 경우는 `SqlTransaction` s 개체 [ `Commit` 메서드](https://msdn.microsoft.com/library/system.data.sqlclient.sqltransaction.commit.aspx) 끝에 `try` 블록 트랜잭션을 커밋합니다. 다음 코드 조각에서는이 패턴을 보여 줍니다. 참조 [트랜잭션 사용 하 여 데이터베이스 일관성을 유지](http://aspnet.4guysfromrolla.com/articles/072705-1.aspx) 추가 구문 및 ADO.NET을 사용 하 여 트랜잭션을 사용 하는 예제입니다.
-
 
 [!code-vb[Main](wrapping-database-modifications-within-a-transaction-vb/samples/sample1.vb)]
 
@@ -74,32 +70,25 @@ ms.locfileid: "59380316"
 - `BatchDelete.aspx`
 - `BatchInsert.aspx`
 
-
 ![SqlDataSource 관련 자습서에 대 한 ASP.NET 페이지 추가](wrapping-database-modifications-within-a-transaction-vb/_static/image1.gif)
 
 **그림 1**: SqlDataSource 관련 자습서에 대 한 ASP.NET 페이지 추가
 
-
 다른 폴더와 마찬가지로 `Default.aspx` 사용할지는 `SectionLevelTutorialListing.ascx` 사용자 컨트롤을 해당 섹션 내에서 자습서 목록입니다. 따라서이 사용자 정의 컨트롤을 추가 `Default.aspx`의 디자인 뷰에서 페이지의 솔루션 탐색기에서 끌어 합니다.
-
 
 [![Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](wrapping-database-modifications-within-a-transaction-vb/_static/image2.gif)](wrapping-database-modifications-within-a-transaction-vb/_static/image1.png)
 
 **그림 2**: 추가 된 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤 `Default.aspx` ([클릭 하 여 큰 이미지 보기](wrapping-database-modifications-within-a-transaction-vb/_static/image2.png))
 
-
 마지막으로, 이러한 네 가지 페이지 항목을 추가 합니다 `Web.sitemap` 파일입니다. 특히 다음 태그는 사용자 지정 뒤에 추가 사이트 맵 `<siteMapNode>`:
-
 
 [!code-xml[Main](wrapping-database-modifications-within-a-transaction-vb/samples/sample2.xml)]
 
 업데이트 한 후 `Web.sitemap`, 잠시 브라우저를 통해 자습서 웹 사이트를 확인 합니다. 왼쪽 메뉴에는 이제 일괄 처리 된 데이터 자습서를 사용 하 여 작업에 대 한 항목이 포함 됩니다.
 
-
 ![이제 사이트 맵 일괄 처리 된 데이터 자습서를 사용 하 여 작업 항목을 포함](wrapping-database-modifications-within-a-transaction-vb/_static/image3.gif)
 
 **그림 3**: 이제 사이트 맵 일괄 처리 된 데이터 자습서를 사용 하 여 작업 항목을 포함
-
 
 ## <a name="step-2-updating-the-data-access-layer-to-support-database-transactions"></a>2단계: 데이터베이스 트랜잭션을 지원 하도록 데이터 액세스 계층 업데이트
 
@@ -111,14 +100,11 @@ ms.locfileid: "59380316"
 
 입력 데이터 집합 `Northwind.xsd` 에 `App_Code` s 폴더 `DAL` 하위 폴더입니다. 하위 폴더를 만듭니다는 `DAL` 라는 폴더 `TransactionSupport` 라는 새 클래스 파일을 추가 하 고 `ProductsTableAdapter.TransactionSupport.vb` (그림 4 참조). 이 파일의 구현 일부를 보유할는 `ProductsTableAdapter` 트랜잭션을 사용 하는 데이터 수정 작업을 수행 하기 위한 메서드를 포함 하는 합니다.
 
-
 ![TransactionSupport 폴더 및 ProductsTableAdapter.TransactionSupport.vb 라는 클래스 파일을 추가 합니다.](wrapping-database-modifications-within-a-transaction-vb/_static/image4.gif)
 
 **그림 4**: 라는 폴더를 추가 `TransactionSupport` 및 라는 클래스 파일을 `ProductsTableAdapter.TransactionSupport.vb`
 
-
 다음 코드를 입력 합니다 `ProductsTableAdapter.TransactionSupport.vb` 파일:
-
 
 [!code-vb[Main](wrapping-database-modifications-within-a-transaction-vb/samples/sample3.vb)]
 
@@ -130,13 +116,11 @@ ms.locfileid: "59380316"
 
 메서드를 추가 하려면 준비 다시에서는 전체이 메서드를 사용 하 여 `ProductsDataTable` 또는 일련의 트랜잭션 산하 명령 수행 하는 BLL 합니다. 다음 메서드는 일괄 처리 업데이트 패턴을 사용 하 여 업데이트를 `ProductsDataTable` 는 트랜잭션을 사용 하 여 인스턴스. 호출 하 여 트랜잭션을 시작 합니다 `BeginTransaction` 메서드를 사용 하 여를 `Try...Catch` 블록 데이터 수정 문을 실행 합니다. 경우에 대 한 호출을 `Adapter` s 개체 `Update` 예외가 메서드 결과 실행 하려면 전송는 `catch` 여기서 트랜잭션이 롤백되어 블록 및 예외 다시 throw 합니다. 이전에 설명한 대로 합니다 `Update` 제공 된 행을 열거 하 여 일괄 처리 업데이트 패턴을 구현 하는 메서드 `ProductsDataTable` 하 고 필요한 수행 `InsertCommand`, `UpdateCommand`, 및 `DeleteCommand` s. 중 하나가 오류가이 명령 결과 트랜잭션이 롤백됩니다, 트랜잭션의 수명 동안 이전 수정 취소 합니다. 해야는 `Update` 문을 오류 없이 완료, 전체에서 트랜잭션이 커밋됩니다.
 
-
 [!code-vb[Main](wrapping-database-modifications-within-a-transaction-vb/samples/sample4.vb)]
 
 추가 합니다 `UpdateWithTransaction` 메서드를 합니다 `ProductsTableAdapter` 클래스의 partial 클래스를 통해 `ProductsTableAdapter.TransactionSupport.vb`합니다. 비즈니스 논리 레이어 s에이 메서드를 추가할 수 있습니다 또는 `ProductsBLL` 몇 가지만 구문 변경을 사용 하 여 클래스입니다. 즉, 키워드 `Me` 에 `Me.BeginTransaction()`, `Me.CommitTransaction()`, 및 `Me.RollbackTransaction()` 사용 하 여 교체 해야 `Adapter` (이전에 설명한 대로 `Adapter` 의 속성 이름인 `ProductsBLL` 형식의 `ProductsTableAdapter`).
 
 `UpdateWithTransaction` 메서드 일괄 처리 업데이트 패턴을 사용 하지만 메서드는 다음과 같이 트랜잭션 범위 내에서 일련의 DB 직접 호출을 사용할 수도 있습니다. `DeleteProductsWithTransaction` 메서드를 입력으로 받아들입니다를 `List(Of T)` 형식의 `Integer`는 `ProductID` 삭제 하도록 합니다. 메서드 호출을 통해 트랜잭션을 시작 `BeginTransaction` 차례로 합니다 `Try` 차단, DB 직접 패턴을 호출 합니다. 제공 된 목록을 반복 `Delete` 각각에 대 한 메서드 `ProductID` 값. 호출 하는 경우 `Delete` 실패 하면 제어가 `Catch` 트랜잭션이 롤백 여기서 블록 및 예외 다시 throw 합니다. 에 대 한 모든 호출은 경우 `Delete` 트랜잭션이 커밋될 때 다음 성공 합니다. 이 메서드를 추가 하 여 `ProductsBLL` 클래스입니다.
-
 
 [!code-vb[Main](wrapping-database-modifications-within-a-transaction-vb/samples/sample5.vb)]
 
@@ -154,12 +138,10 @@ ms.locfileid: "59380316"
 
 열기는 `ProductsBLL` 라는 메서드를 추가 하 고 클래스 파일 `UpdateWithTransaction` 까지 해당 하는 DAL 메서드는 단순히 호출 합니다. 두 개의 새 매서드 있어야 `ProductsBLL`: `UpdateWithTransaction`에서 방금 추가한는 및 `DeleteProductsWithTransaction`, 3 단계에서에서 추가 됨.
 
-
 [!code-vb[Main](wrapping-database-modifications-within-a-transaction-vb/samples/sample6.vb)]
 
 > [!NOTE]
 > 이러한 메서드를 포함 하지 마십시오는 `DataObjectMethodAttribute` 특성의 다른 메서드에 대부분 할당할는 `ProductsBLL` ASP.NET 페이지 코드 숨김 클래스에서 직접 이러한 메서드를 호출 수 됩니다 것 때문에 클래스. 이전에 설명한 대로 `DataObjectMethodAttribute` 데 사용 하는 방법을 구성 데이터 원본 마법사 (SELECT, UPDATE, INSERT 또는 DELETE) 어떤 탭 ObjectDataSource에서 표시 됩니다. GridView에 편집 또는 삭제 일괄 처리에 대 한 기본 제공 지원, 없으므로 선언적 코드 없는 접근 방식을 사용 하는 대신 프로그래밍 방식으로 이러한 메서드를 호출 하는 것이 해야 합니다.
-
 
 ## <a name="step-5-atomically-updating-database-data-from-the-presentation-layer"></a>5단계: 프레젠테이션 계층에서 데이터베이스 데이터를 원자 단위로 업데이트 하는 중
 
@@ -167,37 +149,29 @@ ms.locfileid: "59380316"
 
 열어서 시작 합니다 `Transactions.aspx` 페이지에서 `BatchData` 폴더 및 디자이너 도구 상자에서 끌어서 GridView입니다. 설정 해당 `ID` 하 `Products` 및 스마트 태그를 바인딩할 라는 새로운 ObjectDataSource는 `ProductsDataSource`합니다. ObjectDataSource에서 해당 데이터를 가져오도록 구성 합니다 `ProductsBLL` s 클래스 `GetProducts` 메서드. 이 읽기 전용 GridView, 따라서 드롭 다운 목록에서 UPDATE, INSERT, 설정 및 탭 (없음)을 삭제 되며 마침을 클릭 합니다.
 
-
 [![S ProductsBLL 클래스 GetProducts 메서드를 사용 하는 ObjectDataSource 구성](wrapping-database-modifications-within-a-transaction-vb/_static/image5.gif)](wrapping-database-modifications-within-a-transaction-vb/_static/image3.png)
 
 **그림 5**: ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLL` s 클래스 `GetProducts` 메서드 ([클릭 하 여 큰 이미지 보기](wrapping-database-modifications-within-a-transaction-vb/_static/image4.png))
-
 
 [![UPDATE, INSERT 드롭 다운 목록을 설정 하 고 탭 삭제 (없음)](wrapping-database-modifications-within-a-transaction-vb/_static/image6.gif)](wrapping-database-modifications-within-a-transaction-vb/_static/image5.png)
 
 **그림 6**: 설정 드롭다운 목록에서 업데이트, 삽입 및 삭제 하는 탭 (없음) ([클릭 하 여 큰 이미지 보기](wrapping-database-modifications-within-a-transaction-vb/_static/image6.png))
 
-
 데이터 소스 구성 마법사를 완료 한 후 Visual Studio BoundFields 및 제품 데이터 필드에 대 한 CheckBoxField 만들어집니다. 제외 하 고 이러한 필드를 모두 제거 `ProductID`, `ProductName`, `CategoryID`, 및 `CategoryName` 바꾸고 합니다 `ProductName` 및 `CategoryName` BoundFields `HeaderText` 속성 범주 및 제품을 각각. 스마트 태그에서 페이징 사용 옵션을 선택 합니다. 이러한 수정을 마치면 GridView 및 ObjectDataSource가 선언적 태그는 다음과 같이 표시 됩니다.
-
 
 [!code-aspx[Main](wrapping-database-modifications-within-a-transaction-vb/samples/sample7.aspx)]
 
 그런 다음 GridView 위의 세 가지 단추 웹 컨트롤을 추가 합니다. 새로 고침 표, 수정 범주 (사용 하 여 트랜잭션), 두 번째 s 및 세 번째 하나의 s 수정 범주 (트랜잭션 없이)를 첫 번째 단추의 텍스트 속성을 설정 합니다.
 
-
 [!code-aspx[Main](wrapping-database-modifications-within-a-transaction-vb/samples/sample8.aspx)]
 
 이 시점에서 Visual Studio의 디자인 뷰에서 스크린샷과 그림 7 에서처럼 유사 합니다.
-
 
 [![페이지에 GridView 및 3 개의 단추 웹 컨트롤](wrapping-database-modifications-within-a-transaction-vb/_static/image7.gif)](wrapping-database-modifications-within-a-transaction-vb/_static/image7.png)
 
 **그림 7**: GridView 및 3 개의 단추 웹 컨트롤을 페이지에 포함 되어 있습니다 ([클릭 하 여 큰 이미지 보기](wrapping-database-modifications-within-a-transaction-vb/_static/image8.png))
 
-
 S 세 단추의 각 이벤트 처리기 만들기 `Click` 이벤트 및 다음 코드를 사용 합니다.
-
 
 [!code-vb[Main](wrapping-database-modifications-within-a-transaction-vb/samples/sample9.vb)]
 
@@ -209,26 +183,21 @@ S 세 단추의 각 이벤트 처리기 만들기 `Click` 이벤트 및 다음 �
 
 이 동작을 보여 주기 위해 브라우저를 통해이 페이지를 방문 합니다. 처음에 그림 8 에서처럼 데이터의 첫 페이지에 표시 됩니다. 다음으로 수정 범주 (사용 하 여 트랜잭션) 단추를 클릭 합니다. 포스트백을 발생 되 고 모든 제품을 업데이트 하려는 시도가 `CategoryID` 값 이지만 foreign key 제약 조건 위반 하 게 발생 됩니다 (그림 9 참조).
 
-
 [![제품을 페이징할 수 있는 GridView에 표시 됩니다.](wrapping-database-modifications-within-a-transaction-vb/_static/image8.gif)](wrapping-database-modifications-within-a-transaction-vb/_static/image9.png)
 
 **그림 8**: 제품을 페이징할 수 있는 GridView에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](wrapping-database-modifications-within-a-transaction-vb/_static/image10.png))
-
 
 [![Foreign Key 제약 조건 위반 하 게 범주 결과 다시 할당](wrapping-database-modifications-within-a-transaction-vb/_static/image9.gif)](wrapping-database-modifications-within-a-transaction-vb/_static/image11.png)
 
 **그림 9**: 외래 키 제약 조건 위반을 범주 결과 다시 할당 ([클릭 하 여 큰 이미지 보기](wrapping-database-modifications-within-a-transaction-vb/_static/image12.png))
 
-
 이제 사용자가 브라우저의 뒤로 단추를 누르면 및 그리드 새로 고침 단추를 클릭 합니다. 데이터 새로 고침 시 그림 8에 표시 된 대로 정확 하 게 동일한 출력이 표시 됩니다. 즉,도 있지만 일부 제품 `CategoryID` s 된 법률에 변경 된 값 및 데이터베이스에서 업데이트를 롤백 되었으므로 외래 키 제약 조건 위반이 발생 한 경우.
 
 이제 수정 범주 (트랜잭션 없이) 단추를 클릭 해 보십시오. 동일한 foreign key 제약 조건 위반 오류가 발생 하면이 (그림 9 참조) 이러한 제품을 이번 하지만 해당 `CategoryID` 올바른 값이 변경 되었는지 값 없습니다 롤백됩니다. 사용자가 브라우저의 뒤로 단추 한 다음 새로 고침 눈금 단추를 누릅니다. 그림 10과 같이 `CategoryID` 처음 8 개 제품의 다시 할당 된 합니다. 예를 들어, 그림 8에서 변경 했습니다는 `CategoryID` 1의 그림 10 it s에서에 게 재할당 되었습니다 2 있지만.
 
-
 [![일부 제품 CategoryID 값 없습니다. 업데이트 하는 동안 다른 되었습니다](wrapping-database-modifications-within-a-transaction-vb/_static/image10.gif)](wrapping-database-modifications-within-a-transaction-vb/_static/image13.png)
 
 **그림 10**: 일부 제품은 `CategoryID` 값 없습니다. 업데이트 하는 동안 다른 되었습니다 ([큰 이미지를 보려면 클릭](wrapping-database-modifications-within-a-transaction-vb/_static/image14.png))
-
 
 ## <a name="summary"></a>요약
 

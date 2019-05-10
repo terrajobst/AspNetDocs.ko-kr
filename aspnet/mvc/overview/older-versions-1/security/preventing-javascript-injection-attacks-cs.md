@@ -8,12 +8,12 @@ ms.date: 08/19/2008
 ms.assetid: d0136da6-81a4-4815-b002-baa84744c09e
 msc.legacyurl: /mvc/overview/older-versions-1/security/preventing-javascript-injection-attacks-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 2d954cbc001a62f021f942f1ff44522a2769f516
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e7294be63ac06dbf548df9d99c07503d4bfff55f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389585"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125501"
 ---
 # <a name="preventing-javascript-injection-attacks-c"></a>JavaScript 삽입 공격 방지(C#)
 
@@ -23,7 +23,6 @@ ms.locfileid: "59389585"
 
 > JavaScript 주입 공격 및 사이트 간 스크립팅 공격 발생에서을 방지 합니다. 이 자습서에서는 Stephen walther가 이러한 유형의 HTML 콘텐츠 인코딩에 의해 공격을 쉽게 무력화 수 하는 방법을 설명 합니다.
 
-
 이 자습서의 목표는 ASP.NET MVC 응용 프로그램에서 JavaScript 주입 공격을 방지 하는 방법 설명 합니다. 이 자습서에는 JavaScript 주입 공격 으로부터 웹 사이트를 보호 하는 데 두 가지 방법을 설명 합니다. 데이터 표시를 인코딩하여 JavaScript 주입 공격을 방지 하는 방법을 알아봅니다. 동의 하는 데이터를 인코딩하여 JavaScript 주입 공격을 방지 하는 방법을 배웁니다.
 
 ## <a name="what-is-a-javascript-injection-attack"></a>JavaScript 주입 공격을 란?
@@ -32,11 +31,9 @@ ms.locfileid: "59389585"
 
 고객 피드백 웹 사이트를 만들었다고 가정해 보겠습니다 (그림 1 참조). 고객 웹 사이트를 방문 하 고 제품을 사용 하 여 해당 환경을 피드백 입력 수 있습니다. 고객 피드백을 제출 하는 경우 사용자 의견 피드백 페이지의 다시 표시 됩니다.
 
-
 [![고객 피드백 웹 사이트](preventing-javascript-injection-attacks-cs/_static/image2.png)](preventing-javascript-injection-attacks-cs/_static/image1.png)
 
 **그림 01**: 고객 피드백 웹 사이트 ([클릭 하 여 큰 이미지 보기](preventing-javascript-injection-attacks-cs/_static/image3.png))
-
 
 고객 피드백 웹 사이트를 사용 하는 `controller` 목록 1에서. 이 `controller` 라는 두 가지 동작 포함 `Index()` 및 `Create()`합니다.
 
@@ -64,11 +61,9 @@ ms.locfileid: "59389585"
 
 이 텍스트는 경고 메시지 상자를 표시 하는 JavaScript 스크립트를 나타냅니다. 이 스크립트를 피드백 제출 누군가가 후 양식의 메시지 <em>Boo!</em> 모든 사용자가 고객 피드백 웹 사이트에 방문 앞으로 (그림 2 참조) 될 때마다 표시 됩니다.
 
-
 [![JavaScript 주입](preventing-javascript-injection-attacks-cs/_static/image5.png)](preventing-javascript-injection-attacks-cs/_static/image4.png)
 
 **그림 02**: JavaScript 주입 ([클릭 하 여 큰 이미지 보기](preventing-javascript-injection-attacks-cs/_static/image6.png))
-
 
 이제 JavaScript 주입 공격에 대 한 초기 응답 무관심 수 있습니다. JavaScript 주입 공격의 형식일 뿐는 생각 *파손* 공격입니다. 아무도 작업을 수행 하려면 실제로 악의적인 JavaScript 주입 공격을 커밋하여 않다고 판단할 수도 있습니다.
 
@@ -92,11 +87,9 @@ HTML로 JavaScript 주입 공격을 방지 하는 쉬운 방법을 한 가지 �
 
 것 평균 HTML로 인코딩 문자열로? HTML 인코딩할 때 문자열, 위험 등의 문자 `<` 하 고 `>` 와 같은 HTML 엔터티 참조로 대체 됩니다 `&lt;` 및 `&gt;`합니다. 있으므로 문자열 `<script>alert("Boo!")</script>` html 인코딩 변환 `&lt;script&gt;alert(&quot;Boo!&quot;)&lt;/script&gt;`합니다. 인코딩된 문자열은 더 이상 브라우저에서 해석 하는 경우 JavaScript 스크립트로 실행 합니다. 대신, 그림 3에 무해 한 페이지가 나타납니다.
 
-
 [![패배 JavaScript 공격](preventing-javascript-injection-attacks-cs/_static/image8.png)](preventing-javascript-injection-attacks-cs/_static/image7.png)
 
 **그림 03**: JavaScript 공격을 막을 ([클릭 하 여 큰 이미지 보기](preventing-javascript-injection-attacks-cs/_static/image9.png))
-
 
 되었는지 확인 합니다 `Index` 의 값만 목록 3에서 볼 `feedback.Message` 인코딩됩니다. 변수의 `feedback.EntryDate` 는 인코딩되지 않습니다. 사용자가 입력 한 데이터를 인코드 해야 합니다. EntryDate 값 컨트롤러에서 생성 된 때문에 없는 필요한 HTML로 인코딩할이 값입니다.
 

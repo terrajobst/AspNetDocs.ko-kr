@@ -8,12 +8,12 @@ ms.date: 02/15/2013
 ms.assetid: 5a2a927b-14cb-40bc-867a-f0680f9febd7
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/web-config-transformations
 msc.type: authoredcontent
-ms.openlocfilehash: 15a5984048ba2aca9fedcb7bc4bb77eb440f21ee
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 595723d9c6ea9cc40bb0ae896524ee828c4ebce2
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379458"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128437"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-webconfig-file-transformations"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: Web.config 파일 변환
 
@@ -22,7 +22,6 @@ ms.locfileid: "59379458"
 [시작 프로젝트 다운로드](http://go.microsoft.com/fwlink/p/?LinkId=282627)
 
 > 이 자습서 시리즈를 배포 하는 방법을 보여 줍니다. ASP.NET (게시) Visual Studio 2012 또는 Visual Studio 2010을 사용 하 여 웹 응용 프로그램을 Azure App Service Web Apps 또는 타사 호스팅 공급자입니다. 시리즈에 대 한 자세한 내용은 [시리즈의 첫 번째 자습서](introduction.md)합니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -106,7 +105,6 @@ Web.config 파일을 마우스 오른쪽 단추로 클릭 하 고 선택 하 여
 > 
 > **보안 정보** 프로덕션 응용 프로그램에서 public에 오류 세부 정보를 표시 하거나 공용 위치에 해당 정보를 저장 하지 않습니다. 공격자는 오류 정보를 사용 하 여 취약점으로 인 한 사이트를 검색할 수 있습니다. 사용자 고유의 응용 프로그램에서 ELMAH를 사용 하는 경우 보안 위험을 최소화 하기 위해 ELMAH를 구성 합니다. 이 자습서에서 ELMAH 예제 간주 되지 않아야 권장된 구성. 예제 응용 프로그램에서 파일을 만들 수 있어야 하는 폴더를 처리 하는 방법을 보여 주기 위해 선택 된 경우 자세한 내용은 [ELMAH 끝점을 보호](https://code.google.com/p/elmah/wiki/SecuringErrorLogPages)합니다.
 
-
 ## <a name="a-setting-that-youll-handle-in-publish-profile-transformation-files"></a>처리할 수 있는 설정을 게시 프로필 변환 파일
 
 일반적인 시나리오는 *Web.config* 파일에 배포 하는 각 환경에서 다 수 있어야 하는 설정입니다. 예를 들어, WCF 서비스를 호출 하는 응용 프로그램 테스트 및 프로덕션 환경에서 다른 끝점을 해야 합니다. Contoso University 응용 프로그램에 이러한 종류의 설정도 포함 됩니다. 이 설정은 사이트의 페이지에는 사용자의 환경, 개발, 테스트 또는 프로덕션 같은 알려 주는 표시기를 표시 합니다. 설정 값은 응용 프로그램 "(Dev)"를 추가 되 고 있는지 여부를 결정 하거나 "(테스트)"의 기본 제목을 합니다 *Site.Master* 마스터 페이지:
@@ -131,7 +129,6 @@ Contoso University 웹 페이지에 설정 된 값을 읽을 `appSettings` 에 *
 
 > [!NOTE]
 > 이 설정은 때문에 합니다 `<appSettings>` 요소인 해야 Azure App Service 참조에서 Web Apps에 배포 하는 경우 변환 지정 하기 위한 또 다른 방법은 [Azure에서 지정 하는 Web.config 설정을](#watransforms) 의 앞부분에 나오는 이 항목입니다.
-
 
 ## <a name="setting-connection-strings"></a>연결 문자열 설정
 

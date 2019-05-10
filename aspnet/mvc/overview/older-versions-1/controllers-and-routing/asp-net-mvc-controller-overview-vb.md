@@ -8,19 +8,18 @@ ms.date: 02/16/2008
 ms.assetid: 94c3e5d9-a904-445e-a34e-d92fd1ca108a
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/asp-net-mvc-controller-overview-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 33544825403db67fc3b8f0e9eae5d7671b8d2e67
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f19e7dd7fc025de2e0c387db898d36623e790e6a
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402195"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123680"
 ---
 # <a name="aspnet-mvc-controller-overview-vb"></a>ASP.NET MVC 컨트롤러 개요(VB)
 
 [Stephen walther가](https://github.com/StephenWalther)
 
 > 이 자습서에서는 Stephen walther가 ASP.NET MVC 컨트롤러를 소개합니다. 새 컨트롤러를 만들고 다양 한 유형의 작업 결과 반환 하는 방법을 알아봅니다.
-
 
 이 자습서에서는 ASP.NET MVC 컨트롤러, 컨트롤러 작업 및 작업 결과의 항목을 살펴봅니다. 이 자습서를 완료 한 후에 컨트롤러 방문자는 ASP.NET MVC 웹 사이트와 상호 작용 하는 방식을 제어를 사용 하는 방법을 이해할 수 있습니다.
 
@@ -103,7 +102,6 @@ ContentResult 작업 결과은 특별 합니다. 일반 텍스트로 된 작업 
 > 
 > 
 > System.Web.Mvc.Controller
-
 
 [!code-vb[Main](asp-net-mvc-controller-overview-vb/samples/sample4.vb)]
 

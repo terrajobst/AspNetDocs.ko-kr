@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 239c7aa8-d09a-4d02-9c0e-6bd52be5f0d5
 msc.legacyurl: /web-forms/overview/deployment/configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-remote-agent
 msc.type: authoredcontent
-ms.openlocfilehash: d915cb5d7d40bb2cc355a5e45befe124a7b60dc4
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b3293a9b6a35a162d4e27f061dfd3bfd28e0eda5
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59398490"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125996"
 ---
 # <a name="configuring-a-web-server-for-web-deploy-publishing-remote-agent"></a>웹 배포 게시용 웹 서버 구성(원격 에이전트)
 
@@ -30,7 +30,6 @@ ms.locfileid: "59398490"
 > - 사용 하 여 *오프 라인 배포*합니다. 이 방법은 웹 서버에 최소 구성이 필요 하지만 서버 관리자가 수동으로 서버로 웹 패키지를 복사 하 고 IIS 관리자를 통해 가져옵니다.
 > 
 > 주요 기능, 이점 및 이러한 접근 방식의 단점에 대 한 자세한 내용은 참조 하세요. [웹 배포에 오른쪽 접근 방식을 선택](choosing-the-right-approach-to-web-deployment.md)합니다.
-
 
 ## <a name="is-the-web-deploy-remote-agent-the-right-approach-for-you"></a>웹 하기 적합 한 방식을 원격 에이전트를 배포 기능
 
@@ -64,7 +63,6 @@ ms.locfileid: "59398490"
 > [!NOTE]
 > 참조 컴퓨터를 도메인에 가입 하는 방법은 [도메인 및 로그온에 컴퓨터 가입](https://technet.microsoft.com/library/cc725618(v=WS.10).aspx)합니다. 고정 IP 주소를 구성 하는 방법에 대 한 자세한 내용은 참조 하세요. [정적 IP 주소를 구성](https://technet.microsoft.com/library/cc754203(v=ws.10).aspx)합니다. 원격 에이전트 서비스가 IIS 6 지 및 도메인에 가입 하면 필요가 없습니다. 그러나이 자습서의에서 단계에서는 개발 되 고 IIS 7.5에서 테스트를 다른 버전에 대 한 프로시저 다를 수 있습니다.
 
-
 ## <a name="install-products-and-components"></a>제품 및 구성 요소를 설치 합니다.
 
 이 섹션에서는 웹 서버에서 필요한 제품 및 구성 요소를 설치 하는 과정 안내 합니다. 시작 하기 전에 서버에 최신 인지 확인 하려면 Windows Update를 실행 하는 것이 좋습니다.
@@ -78,7 +76,6 @@ ms.locfileid: "59398490"
 
 > [!NOTE]
 > 이 연습에서는 설치 필수 구성 요소를 구성 하는 웹 플랫폼 설치 관리자 사용을 설명 합니다. 웹 플랫폼 설치 관리자를 사용 하 여 필요가 있지만 자동으로 종속성을 검색 하 고 제품을 최신 버전 항상 얻을 수를 확인 하 여 설치 프로세스를 간소화 합니다. 자세한 내용은 [Microsoft 웹 플랫폼 설치 관리자 3.0](https://go.microsoft.com/?linkid=9805118)합니다.
-
 
 **필요한 제품 및 구성 요소를 설치 하려면**
 
@@ -184,7 +181,6 @@ ms.locfileid: "59398490"
 
 > [!NOTE]
 > IIS 7.5에서 응용 프로그램 풀 id에 대 한 자세한 내용은 참조 하세요. [응용 프로그램 풀 Id](https://go.microsoft.com/?linkid=9805123)합니다.
-
 
 **IIS 웹 사이트에 대 한 폴더 사용 권한을 구성 하려면**
 

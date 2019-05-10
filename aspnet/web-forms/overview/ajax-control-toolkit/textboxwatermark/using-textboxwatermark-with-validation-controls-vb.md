@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: e6c2cb98-f745-4bc8-973a-813879c8a891
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/textboxwatermark/using-textboxwatermark-with-validation-controls-vb
 msc.type: authoredcontent
-ms.openlocfilehash: d83fb53ddb40a31013bc724909fa149ce2e4c713
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 63363a8e25a351c23f89186ef3d9c44355ba3c44
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59387381"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132487"
 ---
 # <a name="using-textboxwatermark-with-validation-controls-vb"></a>유효성 검사 컨트롤에 TextBoxWatermark 사용(VB)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/TextBoxWatermark2.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/textboxwatermark2VB.pdf)
 
 > AJAX Control Toolkit에서 TextBoxWatermark 컨트롤은 텍스트 상자 내에서 표시 되도록 입력란을 확장 합니다. 사용자가 상자에는 클릭, 비워집니다. 사용자는 텍스트를 입력 하지 않고 상자를 퇴사, 하는 경우에 미리 채워진된 텍스트 다시 나타납니다. 이 동일한 페이지의 ASP.NET 유효성 검사 컨트롤 충돌할 수 있지만 이러한 문제를 해결할 수 있습니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -47,7 +46,6 @@ by [Christian Wenz](https://github.com/wenz)
 마지막으로, 없습니다 유효성 검사기 오류 메시지를 발급 하는 경우 필드의 텍스트를 출력 하도록 일부 서버 쪽 코드를 추가 합니다.
 
 [!code-aspx[Main](using-textboxwatermark-with-validation-controls-vb/samples/sample4.aspx)]
-
 
 [![유효성 검사기에서 필드에 텍스트가 있는지](using-textboxwatermark-with-validation-controls-vb/_static/image2.png)](using-textboxwatermark-with-validation-controls-vb/_static/image1.png)
 

@@ -8,12 +8,12 @@ ms.date: 01/10/2011
 ms.assetid: ffa3d5c9-91e5-4da3-b409-560b0c7fbbf0
 msc.legacyurl: /web-pages/readme/beta3
 msc.type: content
-ms.openlocfilehash: 7f0c5ff599235157bd11f5f86a26b8882e0f29dc
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: dc1d9237c04a7fcdbf4db6ccc8c36d255f6de003
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381811"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65124107"
 ---
 # <a name="web-matrix-and-aspnet-web-pages-razor-beta-3-release-readme"></a>WebMatrix 및 ASP.NET 웹 페이지(Razor) 베타 3 릴리스 추가 정보
 
@@ -41,7 +41,6 @@ ms.locfileid: "59381811"
 
 > Microsoft WebMatrix 베타는 몇 분 안에 설치 하는 무료 웹 개발 스택입니다. 데이터베이스 및 프로그래밍 프레임 워크를 단일 통합된 환경 만들기를 사용 하 여 웹 서버를 통합 합니다. WebMatrix 베타를 사용 하 여 코드, 테스트 및 고유한 ASP.NET 또는 PHP 웹 사이트를 게시 하는 방법을 간소화할 수 있습니다 또는 DotNetNuke, Umbraco, WordPress 또는 Joomla와 같은 인기 있는 오픈 소스 앱을 사용 하 여 새 웹 사이트를 시작 하려면 WebMatrix 베타를 사용할 수 있습니다. WebMatrix 베타 같은 강력한 웹 서버, 데이터베이스 엔진 및 원활 하 게 개발에서 프로덕션으로 전환 하면 인터넷에서 웹 사이트를 실행 되는 프레임 워크 환경을 사용 합니다.
 
-
 <a id="Installation_Notes"></a>
 
 ## <a name="installation"></a>설치
@@ -50,13 +49,11 @@ ms.locfileid: "59381811"
 > 
 > 설치 중에 문제가 있는 경우 가리킵니다 [Microsoft 웹 플랫폼 설치 관리자를 사용 하 여 문제 해결](https://go.microsoft.com/fwlink/?LinkId=196212)합니다.
 
-
 <a id="Installation_Notes0"></a>
 
 ## <a name="instructions-for-publishing-applications"></a>응용 프로그램을 게시 하기 위한 지침
 
 > 참조 [응용 프로그램을 게시 하기 위한 단계별 지침](https://go.microsoft.com/fwlink/?LinkID=196149)
-
 
 <a id="Known_Issues"></a>
 
@@ -80,12 +77,10 @@ ms.locfileid: "59381811"
 > - Windows XP SP3
 > - Windows Server 2003 SP2
 
-
 #### <a name="issue-cannot-install-webmatrix-beta-3-if-microsoft-visual-studio-2008-is-installed-without-microsoft-visual-studio-2008-sp1"></a>문제: Microsoft Visual Studio 2008은 Microsoft Visual Studio 2008 SP1 없이 설치 된 경우 WebMatrix 베타 3을 설치할 수 없습니다.
 
 > **해결 방법**  
 > 설치할 [Microsoft Visual Studio 2008 SP1](https://www.microsoft.com/downloads/details.aspx?FamilyId=FBEE1648-7106-44A7-9649-6D9F6D58056E&amp;displaylang=en) Microsoft 다운로드 센터에서.
-
 
 #### <a name="issue-some-assemblies-for-sql-server-compact-40-are-not-installed-in-the-gac"></a>문제: SQL Server Compact 4.0에 대 한 일부 어셈블리를 GAC에 설치 되지
 
@@ -101,14 +96,12 @@ ms.locfileid: "59381811"
 >   
 > SQL Server Compact 4.0를 다시 설치 합니다.
 
-
 #### <a name="issue-cannot-uninstall-sql-server-compact-using-the-command-line"></a>문제: SQL Server Compact는 명령줄을 사용 하 여 제거할 수 없습니다.
 
 > SQL Server Compact 명령줄 옵션을 사용 하 여 제거는이 릴리스에서 작동 하지 않습니다.
 > 
 > **해결 방법**  
 > 사용 하 여 *프로그램 및 기능* Microsoft SQL Server Compact 4.0을 제거 하려면 Windows 제어판에서.
-
 
 <a id="Known_Issues_ASPNET"></a>
 
@@ -134,7 +127,6 @@ ms.locfileid: "59381811"
 > 
 > [!code-cshtml[Main](beta3/samples/sample1.cshtml)]
 
-
 <a id="Changes"></a>
 
 #### <a name="changes-in-beta-3-for-aspnet-web-pages-with-razor-syntax"></a>Razor 구문이 있는 ASP.NET 웹 페이지의 Beta 3의에서 변경 내용
@@ -142,7 +134,6 @@ ms.locfileid: "59381811"
 #### <a name="change-hrefattribute-method-removed"></a>변경 내용: "HrefAttribute" 메서드가 제거
 
 > 합니다 `HrefAttribute` 메서드는 `WebPage` 클래스가 제거 되었습니다. 이 도우미는 Url에 안전 하지 않은 문자를 인코딩하는 데 사용 되었습니다. ASP.NET Razor 자동으로 인코딩되고, 문자열 때문에 필요 하지 않습니다. (새 `Html.Raw` 인코딩되지 않은 문자열을 렌더링 하는 방법입니다.)
-
 
 #### <a name="change-syntax-for-declarative-helper-helpers-changed"></a>변경 내용: 구문에 대 한 선언적 "@helper" 변경 하는 도우미
 
@@ -158,16 +149,13 @@ ms.locfileid: "59381811"
 > 
 > 에 `@{ }` 도우미에서 초기 코드 주위 문자는 더 이상 사용 합니다. 즉, 기본적으로 도우미의 내용을 코드 블록으로 처리 됩니다. 시작 하 여는 태그를 렌더링 하는 도우미 `<a>` 태그입니다. 일반 텍스트 또는 닫는 태그를 포함 하지 않는 태그 도우미를 렌더링 해야 하는 경우 (예를 들어 `<meta>` 태그), 콘텐츠를 렌더링할에 있어야 합니다. `<text></text>` 태그입니다.
 
-
 #### <a name="change-webpagecontexthttpcontext-removed"></a>변경 내용: "WebPageContext.HttpContext" removed
 
 > `WebPageContext.HttpContext` 속성이 제거 되었습니다. 대신 `HttpContext.Current`를 사용하세요. (의 `WebPageContext.HttpContext` 속성 래핑되어이.)
 
-
 #### <a name="change-facebook-helper-moved-to-new-package"></a>변경 내용: 새 패키지를 이동 하는 "Facebook" 도우미
 
 > `Facebook` 도우미로 이동 되었습니다 합니다 *Facebook.Helper* 포함 하는 라이브러리는 `Facebook` 도우미와 추가 기능입니다. 에 설치 해야이 라이브러리는 별도 패키지로 "패키지 관리자 사용 하 여 설치 도우미"에 설명 된 대로 자습서 [Getting Started with ASP.NET 페이지](https://go.microsoft.com/fwlink/?LinkId=202889)합니다.
-
 
 #### <a name="change-membership-role-and-security-types-moves-to-new-assembly"></a>변경 내용: 새 어셈블리에 멤버 자격, 역할 및 보안 형식 이동
 
@@ -178,13 +166,11 @@ ms.locfileid: "59381811"
 > - `SimpleRoleProvider`
 > - `WebSecurity`
 
-
 #### <a name="change-tagbuilder-class-moved-to-systemwebwebpagesdll-assembly"></a>변경 내용: System.Web.WebPages.dll 어셈블리로 이동 하는 ""는 TagBuilder 클래스
 
 > `TagBuilde` r 클래스 System.Web.WebPages.dll 어셈블리로 이동 되었습니다. 이전에이 ASP.NET MVC의 일부 였던 어셈블리에 있었습니다. 따라서 사용 하기 위해 ASP.NET MVC를 설치할 필요가 없습니다를 `TagBuilder` 클래스입니다.
 > 
 > 그러나 클래스는 여전히는 `System.Web.Mvc` 네임 스페이스입니다. 사용 하기 위해 합니다 `TagBuilder` 클래스 (예를 들어, 사용자 지정 ASP.NET Razor 도우미)를 네임 스페이스를 참조 해야 합니다 (예를 들어, 추가 하 여 `@using System.Web.Mvc` 코드에).
-
 
 #### <a name="change-request-validation-syntax-changed-validation-class-removed"></a>변경 내용: 요청 유효성 검사 구문 변경 되었습니다. "유효성 검사" 클래스 제거
 
@@ -197,7 +183,6 @@ ms.locfileid: "59381811"
 > 자동 요청 유효성 검사를 해제 하려면 호출을 `Request.Unvalidated` 메서드, 필드 또는 다른 게시물 개체에 대 한 요청 유효성 검사를 무시 하려는 이름을 전달 합니다. 이 메서드를 사용 하 여 모든 항목에 대 한 유효성 검사를 무시 하는 `Form`, `QueryString`를 `Cookies`, 및 `ServerVariables` 컬렉션입니다. 다음 예제에 사용 하는 방법을 보여 줍니다는 `Unvalidated` 메서드:
 > 
 > [!code-csharp[Main](beta3/samples/sample4.cs)]
-
 
 <a id="Issues"></a>
 
@@ -212,13 +197,11 @@ ms.locfileid: "59381811"
 > **해결 방법**  
 > 이름에 성공 했는지 확인 합니다 `InitializeDatabaseConnection` 사용자 프로필 멤버 자격 데이터베이스에서 테이블 또는 했는지 메서드 일치를 `autoCreateTables` 매개 변수를 false로.
 
-
 #### <a name="issue-failed-to-generate-a-user-instance-of-sql-server-error"></a>문제: "SQL Server의 사용자 인스턴스를 생성 하지 못했습니다" 오류
 
 > WebMatrix 웹 응용 프로그램을 SQL Server Express를 사용 하 여 Windows 7 또는 Windows Server 2008 R2에서 IIS 7.5를 실행 중인 경우 SQL Server가 런타임 시 사용자의 로컬 응용 프로그램 경로 검색할 수 없습니다 나타내는 오류가 표시 될 수 있습니다.
 > 
 > **해결 방법** 응용 프로그램 (일반적으로 NETWORK SERVICE)에서 실행 되는 Windows 계정에 하위 폴더 및 응용 프로그램의 루트 폴더에 대 한 읽기/쓰기 권한을 같은 *앱\_데이터*. 자세한 내용은 기술 자료 문서에서 사용할 수 [SQL Server Express 사용자 인스턴스 및 ASP.net 웹 응용 프로그램 프로젝트를 사용 하 여 문제](https://support.microsoft.com/kb/2002980)합니다.
-
 
 #### <a name="issue-in-visual-studio-namespaces-for-custom-assemblies-dlls-are-not-imported-automatically"></a>문제: Visual Studio에서 사용자 지정 어셈블리 (Dll)에 대 한 네임 스페이스는 자동 가져올 수 없습니다.
 
@@ -227,13 +210,11 @@ ms.locfileid: "59381811"
 > **해결 방법**  
 > 포함 된 `using` 문 (`imports` Visual Basic의) 디자인 타임에 인식 되지 않는 엔터티를 참조 하는 합니다.
 
-
 #### <a name="issue-visual-studio-intellisense-and-project-templates-available-only-in-aspnet-mvc-version-3"></a>문제: Visual Studio IntelliSense 및 프로젝트 템플릿에서 ASP.NET MVC 3 버전 에서만 사용할 수 있습니다
 
 > ASP.NET 웹 페이지를 설치 설치 하지 않습니다도 도구 Visual Studio에 대 한 예: ASP.NET Web Pages 응용 프로그램에 대 한 IntelliSense 및 프로젝트 템플릿.
 > 
 > **해결 방법** 웹 플랫폼 설치 관리자를 통해 ASP.NET MVC 3 RC 설치 Visual Studio에서 ASP.NET 웹 페이지 응용 프로그램에 대 한 IntelliSense 및 프로젝트 템플릿을 사용 하려면 또는 [독립 실행형 설치 관리자](https://go.microsoft.com/fwlink/?LinkID=191797)합니다.
-
 
 #### <a name="issue-lthelpergt-class-cannot-be-found-error"></a>문제: "&lt;도우미&gt; 클래스를 찾을 수 없습니다" 오류
 
@@ -241,7 +222,6 @@ ms.locfileid: "59381811"
 > 
 > **해결 방법**  
 > 모든 도우미 사이트에서 실행에 대 한 호출을 주석 합니다  *\_관리자* 페이지 및 사용 하려는 도우미를 포함 하는 패키지를 설치 합니다. 패키지를 설치한 후 도우미 참조 하는 줄을 주석 처리 제거 합니다.
-
 
 #### <a name="issue-deploying-beta-3-aspnet-razor-assemblies-to-the-bin-folder-might-not-work-on-hosting-sites"></a>문제: Bin 폴더에 베타 3 ASP.NET Razor 어셈블리를 배포 사이트를 호스트에서 작동 하지 않을 수 있습니다.
 
@@ -253,7 +233,6 @@ ms.locfileid: "59381811"
 > 
 > **해결 방법** 오류가 표시 되는 공급자의 버전 간의 충돌로 인해 있는지 확인 하려면 호스팅 공급자에 게 문의 어셈블리 및 사용자. 그렇다면, 호스팅 공급자는 서버의 GAC에 어셈블리를 업데이트 하는 요청입니다.
 
-
 #### <a name="issue-reading-feeds-or-other-external-data-via-a-proxy-server"></a>문제: 읽기 피드 또는 프록시 서버를 통해 다른 외부 데이터
 
 > 에 대 한 프록시 정보를 구성 해야 사이트를 실행 하는 서버를 프록시 서버로 보호 하는 경우는 *Web.config* 외부 사이트에서 제공 되는 정보를 읽을 수 있도록 파일입니다. 예를 들어, 사용 하는 경우는 `ReCaptcha` 도우미 도우미 reCAPTCHA 서비스와 통신 하지만 프록시 서버에서 차단 될 수 있습니다. 마찬가지로, 패키지 관리자를 사용한 피드 등 ASP.NET 웹 페이지에서 사용 되는 피드 프록시 구성이 필요할 수 있습니다.
@@ -264,7 +243,6 @@ ms.locfileid: "59381811"
 > 
 > 프록시 서버를 구성 하는 방법에 대 한 자세한 내용은 참조 하세요. [ &lt;프록시&gt; 요소 (네트워크 설정)](https://msdn.microsoft.com/library/sa91de1e.aspx) MSDN 웹 사이트입니다.
 
-
 #### <a name="issue-microsoftwebinfrastructuredll-cannot-be-loaded-error"></a>문제: "Microsoft.Web.Infrastructure.dll를 로드할 수 없습니다." 오류
 
 > 이전에 Razor 구문이 있는 ASP.NET 웹 페이지의 베타 1 버전을 설치 하 고 다음 베타 3 버전을 설치 하는 경우 모든 적절 한 어셈블리 제외 하 고 GAC에 설치 됩니다 *Microsoft.Web.Infrastructure.dll*합니다. 따라서 ASP.NET Razor 페이지를 실행 하면 오류가 발생 함을 *Microsoft.Web.Infrastructure.dll* 로드할 수 없습니다.
@@ -273,7 +251,6 @@ ms.locfileid: "59381811"
 > 
 > **해결 방법**  
 > 제어판에서 ASP.NET 웹 페이지를 제거 합니다. 베타 3 릴리스를 다시 설치 합니다.
-
 
 #### <a name="issue-uninstalling-the-net-framework-version-4-disables-aspnet-web-pages-with-razor-syntax"></a>문제: Razor 구문이 있는 ASP.NET 웹 페이지를 비활성화 하는.NET Framework 버전 4 제거 합니다.
 
@@ -287,14 +264,12 @@ ms.locfileid: "59381811"
 > 
 > [!code-xml[Main](beta3/samples/sample6.xml)]
 
-
 #### <a name="issue-applications-previously-deployed-with-aspnet-assemblies-in-the-bin-folder-experience-errors"></a>문제: Bin 폴더에 ASP.NET 어셈블리를 사용 하 여 이전에 배포 된 응용 프로그램 오류 발생
 
 > ASP.NET 웹 페이지 어셈블리의 복사본을 배포 하는 동안 (예를 들어 *Microsoft.WebPages.dll*)에 *Bin* 서버의 웹 사이트의 폴더입니다. (이 때문일 수 있습니다 자동으로 배포 하는 동안 개발자는 어셈블리를 명시적으로 복사 되므로 또는.) 그러나 베타 3 릴리스를 설치할 때 오류 발생, 특정 형식을 찾을 수 있는 오류와 같은 합니다. ASP.NET Web Pages 형식의 숫자로 Beta 3 릴리스에 대 한 다른 네임 스페이스로 이동 된이 발생 합니다.
 > 
 > **해결 방법**   
 > 선택을 취소는 *Bin* 배포 된 응용 프로그램의 새 어셈블리 폴더에 복사 (또는 응용 프로그램을 재배포) 한 다음 응용 프로그램 다시 시작 합니다.
-
 
 #### <a name="issue-extensionless-urls-do-not-find-cshtmlvbhtml-files-on-iis-7-or-iis-75"></a>문제: 확장명 없는 Url에 IIS 7 또는 IIS 7.5.cshtml/.vbhtml 파일을 찾지 못한
 
@@ -312,7 +287,6 @@ ms.locfileid: "59381811"
 > 
 > [!code-xml[Main](beta3/samples/sample7.xml)]
 
-
 #### <a name="issue-using-web-application-project-or-aspnet-mvc-and-aspnet-web-pages-in-the-same-application"></a>문제: ASP.NET MVC 및 ASP.NET 웹 페이지 또는 웹 응용 프로그램 프로젝트를 사용 하 여 동일한 응용 프로그램
 
 > ASP.NET 웹 페이지에서 웹 응용 프로그램 프로젝트 또는 ASP.NET MVC 응용 프로그램을 사용할 때 오류가 표시 될 수 있습니다 하 *WebPageHttpApplication* 찾을 수 없습니다.
@@ -327,7 +301,6 @@ ms.locfileid: "59381811"
 > [!code-csharp[Main](beta3/samples/sample9.cs)]
 > 
 > 도입 된 변경 적용 반대로이 Razor 구문이 있는 ASP.NET 웹 페이지의 베타 1 릴리스에 대 한 합니다.
-
 
 #### <a name="issue-deploying-an-application-to-a-computer-that-does-not-have-sql-server-compact-installed"></a>문제: SQL Server Compact 설치 되지 않은 컴퓨터에 응용 프로그램 배포
 
@@ -345,7 +318,6 @@ ms.locfileid: "59381811"
 > 
 > 
 > [!code-xml[Main](beta3/samples/sample10.xml)]
-
 
 #### <a name="issue-database-and-webgrid-helpers-do-not-work-in-medium-trust-in-visual-basic"></a>문제: 데이터베이스 및 WebGrid 도우미 Visual Basic에서 보통 신뢰에서 작동 하지 않습니다.
 
@@ -380,7 +352,6 @@ ms.locfileid: "59381811"
 > 
 > [!code-vb[Main](beta3/samples/sample16.vb)]
 
-
 #### <a name="issue-microsoft-visual-c-2008-runtime-libraries-are-required"></a>문제: Microsoft Visual C++ 2008 런타임 라이브러리는 필요
 
 > Microsoft Visual 네이티브 Dll의 SQL Server Compact 4.0 필요 C++ 2008 런타임 라이브러리 ((x86, IA64 및 x64), 서비스 팩 1입니다.
@@ -392,7 +363,6 @@ ms.locfileid: "59381811"
 > 
 > [!NOTE]
 > .NET Framework 2.0, 3.0, 설치 또는 4 *되지* 시각적 개체 설치 C++ 2008 런타임 라이브러리 SP1.
-
 
 #### <a name="issue-if-sql-server-compact-is-installed-prior-to-installing-net-framework-on-the-computer-its-provider-invariant-name-is-not-registered-in-the-net-framework-machineconfig-file"></a>문제: .NET Framework machine.config 파일에 해당 공급자 고정 이름 등록 되지 않은 컴퓨터에.NET Framework를 설치 하기 전에 SQL Server Compact를 설치 하는 경우
 
@@ -408,7 +378,6 @@ ms.locfileid: "59381811"
 > 
 > 제거한 [SQL Server Compact 4.0 CTP1](https://www.microsoft.com/downloads/details.aspx?FamilyID=0d2357ea-324f-46fd-88fc-7364c80e4fdb&amp;displaylang=en)합니다.
 
-
 <a id="Known_Issues_Installing_Applications"></a>
 
 ### <a name="installing-applications"></a>응용 프로그램 설치
@@ -417,7 +386,6 @@ ms.locfileid: "59381811"
 
 > **해결 방법**  
 > 없음 응용 프로그램을 설치 하는 데 소요 되지만 제대로 설치 됩니다.
-
 
 <a id="Known_Issues_Publishing_Applications"></a>
 
@@ -430,14 +398,12 @@ ms.locfileid: "59381811"
 > **해결 방법**  
 > 있는지 확인 하는 사이트에서 대상 URL을 게시 하기 전에 합니다 **게시 설정** 대화 상자 시작 `http://` 또는 `https://`합니다.
 
-
 #### <a name="issue-publishing-a-mysql-database-fails-with-the-error-failed-to-publish-the-database-this-can-happen-if-the-remote-database-cannot-run-the-script"></a>문제: MySQL 데이터베이스를 게시할 오류로 인해 실패 "데이터베이스를 게시 하지 못했습니다. 이 경우 발생할 수 있습니다 원격 데이터베이스에서 스크립트를 실행할 수 없습니다. "
 
 > 이 오류는 다양 한 이유로 발생할 수 있습니다. 이 오류를 확인할 수 있습니다 하는 이유 중 하나 이며 경우 데이터베이스 스크립트 문자가 작은따옴표 (') u t F-8로 대상 MySQL 데이터베이스의 기본 문자 집합이 아닙니다.
 > 
 > **해결 방법**  
 > U t F-8로 원격 MySQL 데이터베이스에 대 한 기본 문자를 설정 합니다.
-
 
 <a id="Known_Issues_Other_Issues"></a>
 
@@ -448,7 +414,6 @@ ms.locfileid: "59381811"
 > 텍스트를 입력 하는 경우 사이트에 대 한 보고서를 실행할 때 합니다 *URL 필터링* 상자 하 고 클릭 *검색*, 아무 일도 발생 합니다. 이 제어 하는 동안 작동 하지 않습니다. 왜냐하면 합니다 *Group By* 보고서의 상태가로 설정 된 *문제 유형*, 기본값입니다.
 > 
 > **해결 방법** 에 *Group By* 탭 리본 메뉴를 클릭 *URL* 해당 소스 URL에서 항목을 그룹화 하 합니다. 단추 항목을 필터링 하 고 텍스트 상자는이 상태에서 작동 합니다.
-
 
 #### <a name="issue-wcf-applications-fail-to-run-with-iis-express"></a>문제: IIS Express로 실행 하려면 WCF 응용 프로그램 실패
 
@@ -469,7 +434,6 @@ ms.locfileid: "59381811"
 > 
 >     [!code-console[Main](beta3/samples/sample19.cmd)]
 
-
 #### <a name="issue-webmatrix-beta-3-is-unable-to-perform-certain-tasks-that-require-elevation"></a>문제: WebMatrix 베타 3은 권한 상승 해야 하는 특정 작업을 수행할 수 없습니다.
 
 > WebMatrix 베타 3가 다음과 같은 상황에서 추가 구성 요소를 설치 하는 등의 권한 상승 해야 하는 특정 작업을 수행할 수 없습니다.
@@ -483,14 +447,12 @@ ms.locfileid: "59381811"
 > - Windows Vista 또는 Windows 7에서 UAC를 사용 하도록 설정 합니다.
 > - Windows XP에서 Administrators 보안 그룹에 사용자를 추가 합니다.
 
-
 #### <a name="issue-site-from-web-gallery-is-disabled"></a>문제: "웹 갤러리에서 사이트"를 사용 하지 않도록 설정
 
 > 합니다 **웹 갤러리에서 사이트** 웹 플랫폼 설치 관리자 3.0이 설치 되지 않은 경우 옵션은 사용할 수 없습니다.
 > 
 > **해결 방법**  
 > 설치 합니다 [Microsoft 웹 플랫폼 설치 관리자 3.0](https://go.microsoft.com/fwlink/?LinkID=194638)합니다.
-
 
 #### <a name="issue-on-windows-server-2003-iis-express-does-not-start-for-a-non-administrative-user"></a>문제: Windows Server 2003에서 IIS Express 시작 되지 않으면 관리자가 아닌 사용자에 대 한
 
@@ -501,14 +463,12 @@ ms.locfileid: "59381811"
 >   
 > [관리자가 아닌 사용자가 시작 되는 응용 프로그램은 응용 프로그램이 Windows Vista, Windows Server 2003 또는 Windows XP에서 실행 되는 컴퓨터의 HTTP 트래픽을 수신할 수 없습니다.](https://support.microsoft.com/kb/939786)
 
-
 #### <a name="issue-google-chrome-is-not-available-as-a-run-option"></a>문제: Google Chrome 실행 옵션으로 지원 되지 않습니다.
 
 > Google Chrome 브라우저에서 목록에 표시 되지 않습니다 **실행할** 에 **홈** 탭 합니다.
 > 
 > **해결 방법**  
 > Google Chrome의 일부 버전에서는 등록 하지 자체 올바르게 Windows의 기본 프로그램 기능을 사용 합니다. 대 안으로, Google Chrome을 시작 합니다 *사용자 지정 및 Google Chrome 컨트롤* 메뉴에서 클릭 *옵션*를 클릭 하 고 *확인 Google Chrome 기본 브라우저*.
-
 
 #### <a name="issue-the-foreign-key-dialog-box-doesnt-allow-entering-a-primary-key"></a>문제: "외래 키" 대화 상자에 기본 키 입력을 허용 하지 않습니다.
 
@@ -517,14 +477,12 @@ ms.locfileid: "59381811"
 > **해결 방법**  
 > 이 의도적입니다. 기본 키 테이블에서 기본 키의 이름을 입력할 필요가 없습니다.
 
-
 #### <a name="issue-the-relationships-button-is-disabled"></a>문제: "관계" 단추를 사용 하지 않도록 설정
 
 > **관계** 단추를 **테이블** 탭에 **데이터베이스** SQL Server Compact 데이터베이스에 대 한 작업 영역을 사용할 수 없습니다.
 > 
 > **해결 방법**  
 > 없음 SQL Server Compact 테이블 간의 관계를 지원 하지 않습니다.
-
 
 #### <a name="issue-parameterized-sql-queries-throw-exceptions"></a>문제: 예외를 throw 하는 매개 변수가 있는 SQL 쿼리
 
@@ -536,7 +494,6 @@ ms.locfileid: "59381811"
 > [!code-sql[Main](beta3/samples/sample20.sql)]
 > 
 > [!code-vb[Main](beta3/samples/sample21.vb)]
-
 
 <a id="More_Info"></a>
 

@@ -8,12 +8,12 @@ ms.date: 02/21/2014
 ms.assetid: 5fa1daf9-1161-4cfa-bd4c-658f48b2c229
 msc.legacyurl: /web-forms/what-is-web-forms
 msc.type: content
-ms.openlocfilehash: cb7a4ff9dbf746c0729129445042e53e506df5d2
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 19be419c499759713971a6c77674c924867d1bbc
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59385737"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133226"
 ---
 # <a name="what-is-web-forms"></a>Web Forms 란
 
@@ -26,7 +26,6 @@ Visual Studio를 사용 하 여 ASP.NET Web Forms를 만들 수 있습니다. Vi
 > [!NOTE] 
 > 
 > ASP.NET 및 Visual Studio 설명서 여러 버전에 걸쳐 있습니다. 이전 버전의 기능을 강조 표시 하는 항목은 현재 작업 및 최신 버전을 사용 하 여 시나리오에 유용할 수 있습니다.
-
 
 **ASP.NET Web Forms 다음과 같습니다.** 
 

@@ -8,17 +8,16 @@ ms.date: 04/09/2012
 ms.assetid: dc6aa59a-9cb0-4a81-b5f3-ec545a0e958d
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms
 msc.type: chapter
-ms.openlocfilehash: 4bbda0aa56dd23a1e05e7681f88eefc4d9aa35a3
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 75ac7d454462a7f7f1e071ce5ee9d892eb329c6f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59403547"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131389"
 ---
 # <a name="getting-started-with-aspnet-45-web-forms-and-visual-studio-2013"></a>ASP.NET 4.5 Web Forms 및 Visual Studio 2013 시작
 
 > 이 자습서 시리즈는 ASP.NET 4.5와 Microsoft Visual Studio Express 2013 for Web 사용 하 여 ASP.NET Web Forms 응용 프로그램을 빌드하는 기본 사항을 설명 합니다. C# 소스 코드를 사용 하 여 Visual Studio 2013 프로젝트는이 자습서 시리즈를 함께 사용할 수 있습니다.
-
 
 - [Web Forms 및 Visual Studio 시작](introduction-and-overview.md)
 - [프로젝트 만들기](create-the-project.md)

@@ -8,12 +8,12 @@ ms.date: 02/26/2014
 ms.assetid: 6f448917-ad23-4dcc-9789-897fad74051b
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v3/calling-an-odata-service-from-a-net-client
 msc.type: authoredcontent
-ms.openlocfilehash: d35c0057f5c29e399e45d0a58467de7f106d9994
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 6b5ab979518615356baaeeb824e0a621eb59a38f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389975"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130779"
 ---
 # <a name="calling-an-odata-service-from-a-net-client-c"></a>.NET 클라이언트에서 OData 서비스 호출(C#)
 
@@ -29,7 +29,6 @@ ms.locfileid: "59389975"
 > - [Visual Studio 2013](https://my.visualstudio.com/Downloads?q=visual%20studio%202013) (Visual Studio 2012를 사용 하 여 작동)
 > - [WCF Data Services 클라이언트 라이브러리](https://msdn.microsoft.com/library/cc668772.aspx)
 > - Web API 2입니다. (예제에서는 OData 서비스 Web API 2를 사용 하 여 빌드됩니다. 하지만 클라이언트 응용 프로그램이 웹 API에 종속 되지 않습니다.)
-
 
 이 자습서에서는 OData 서비스를 호출 하는 클라이언트 응용 프로그램을 작성 하는 방법을 살펴보겠습니다. OData 서비스는 다음 엔터티를 노출합니다.
 
@@ -57,7 +56,6 @@ Visual Studio에서 OData 서비스 프로젝트를 열어 시작 합니다. IIS
 
 > [!NOTE]
 > 나머지 단계를 콘솔 프로젝트를 참조 하세요.
-
 
 솔루션 탐색기에서 마우스 오른쪽 단추로 클릭 **참조가** 선택한 **서비스 참조 추가**합니다.
 
@@ -201,7 +199,6 @@ $Select 및 $에 대 한 자세한 정보에 대 한 확장 참조 하세요 [$e
 
 > [!NOTE]
 > 병합 및 패치는 이유? 원래 HTTP 1.1 사양 ([RCF 2616](http://tools.ietf.org/html/rfc2616)) "부분 업데이트" 의미 체계를 사용 하 여 모든 HTTP 메서드를 정의 하지 않았습니다. 부분 업데이트를 지원 하려면 OData 사양을 MERGE 메서드를 정의 합니다. 2010에서는 [RFC 5789](http://tools.ietf.org/html/rfc5789) 부분 업데이트에 대 한 PATCH 메서드를 정의 합니다. 이 기록의 일부를 읽을 수 있습니다 [블로그 게시물](https://blogs.msdn.com/b/astoriateam/archive/2008/05/20/merge-vs-replace-semantics-for-update-operations.aspx) WCF Data Services 블로그에서입니다. 현재 패치 보다 선호 됩니다 병합 합니다. Web API 스 캐 폴딩을 통해 만든 OData 컨트롤러에는 두 방법 모두 지원 합니다.
-
 
 전체 엔터티 (PUT 의미 체계가 아님)를 대체 하려는 경우 지정 된 **ReplaceOnUpdate** 옵션입니다. 이렇게 하면 WCF는 HTTP PUT 요청을 보내야 합니다.
 

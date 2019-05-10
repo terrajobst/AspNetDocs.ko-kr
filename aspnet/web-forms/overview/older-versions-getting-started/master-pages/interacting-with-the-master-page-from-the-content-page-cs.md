@@ -8,12 +8,12 @@ ms.date: 07/11/2008
 ms.assetid: 32d54638-71b2-491d-81f4-f7417a13a62f
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/interacting-with-the-master-page-from-the-content-page-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 986c4b109fc0e809867853da728bcd12654a80ec
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 52f3563a59647c3bc48c5c4d7e40ce8941d18268
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59394681"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132298"
 ---
 # <a name="interacting-with-the-master-page-from-the-content-page-c"></a>콘텐츠 페이지에서 마스터 페이지와 상호 작용(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59394681"
 [코드를 다운로드](http://download.microsoft.com/download/1/8/4/184e24fa-fcc8-47fa-ac99-4b6a52d41e97/ASPNET_MasterPages_Tutorial_06_CS.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/e/b/4/eb4abb10-c416-4ba4-9899-32577715b1bd/ASPNET_MasterPages_Tutorial_06_CS.pdf)
 
 > 메서드를 호출, 콘텐츠 페이지의 코드에서 마스터 페이지의 등 속성을 설정 하는 방법을 검사 합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -45,7 +44,6 @@ ms.locfileid: "59394681"
 > [!NOTE]
 > 다시 포스트백이 발생할 때마다 해당 기본 데이터 원본에 바인딩하여 있도록 GridView의 뷰 상태를 해제 하는 경우에 여전히 표시 되지 않습니다 방금 추가 된 레코드 데이터 페이지 수명 주기를 datab에 새 레코드가 추가 되는 경우 보다 앞부분 GridView에 바인딩되기 때문에 ase 합니다.
 
-
 방금 추가 된 레코드를 마스터 페이지에 표시 되도록이 해결 하의 포스트백 된 데이터 소스에 바인딩할 GridView 지시 해야 온 GridView *후* 새 레코드를 데이터베이스에 추가 되었습니다. 이렇게 하려면 마스터 페이지에서 새 레코드 및 해당 이벤트 처리기는 새로 고쳐져 야 하는 GridView 콘텐츠 페이지에 추가 하기 위한 인터페이스 이므로 콘텐츠 및 마스터 페이지 간의 상호 작용 합니다.
 
 콘텐츠 페이지에 이벤트 처리기에서 마스터 페이지의 표시를 새로 고치는 콘텐츠와 마스터 페이지 상호 작용에 대 한 가장 일반적인 요구 사항 중 하나 이므로이 항목에서는 좀 더 자세히 살펴보겠습니다. 라는 Microsoft SQL Server 2005 Express Edition 데이터베이스를 포함 하는이 자습서에 대 한 다운로드가 `NORTHWIND.MDF` 웹 사이트에서 `App_Data` 폴더입니다. Northwind 데이터베이스는 제품, 직원 및 회사인 Northwind Traders에 대 한 판매 정보를 저장합니다.
@@ -55,24 +53,19 @@ ms.locfileid: "59394681"
 > [!NOTE]
 > 이 자습서는 ASP.NET에서 데이터를 사용 하 여 작업의 세부 정보 자세히 하지 않습니다. 데이터 및 데이터를 삽입 하는 것에 대 한 콘텐츠 페이지를 표시 하려면 마스터 페이지를 설정 하기 위한 단계가 완료, 아직 breezy 합니다. 에 대 한 자세한 표시 및 데이터를 삽입 하 고 SqlDataSource 및 GridView 컨트롤을 사용 하 여,이 자습서의 끝에 추가 정보 섹션의 리소스를 참조 하세요.
 
-
 ## <a name="step-1-displaying-the-five-most-recently-added-products-in-the-master-page"></a>1단계: 마스터 페이지에서 제품을 가장 최근에 추가한 다섯 가지 표시
 
 엽니다는 `Site.master` 마스터 페이지 및 레이블 및 GridView 컨트롤을 추가 합니다 `leftContent` `<div>`합니다. 레이블의 지웁니다 `Text` 속성을 설정 해당 `EnableViewState` 속성을 false로, 및 해당 `ID` 속성을 `GridMessage`; GridView의 설정 `ID` 속성을 `RecentProducts`입니다. 다음으로, 디자이너에서 GridView의 스마트 태그를 확장 하 고 새 데이터 원본에 연결 하려면 선택 합니다. 데이터 소스 구성 마법사가 시작 됩니다. Northwind 데이터베이스에 있으므로 합니다 `App_Data` 폴더는 Microsoft SQL Server 데이터베이스 선택 (그림 1 참조)를 선택 하 여 SqlDataSource를 만들지 않으면 SqlDataSource 이름을 `RecentProductsDataSource`입니다.
-
 
 [![GridView RecentProductsDataSource 라는 SqlDataSource 컨트롤에 바인딩](interacting-with-the-master-page-from-the-content-page-cs/_static/image2.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image1.png)
 
 **그림 01**: GridView 라는 SqlDataSource 컨트롤에 바인딩할 `RecentProductsDataSource` ([큰 이미지를 보려면 클릭](interacting-with-the-master-page-from-the-content-page-cs/_static/image3.png))
 
-
 다음 단계를 요청에 연결할 데이터베이스 항목을 지정 합니다. 선택 된 `NORTHWIND.MDF` 데이터베이스 파일 드롭 다운 목록에서 다음을 클릭 합니다. 마법사에서 연결 문자열을 저장할 제공가 처음으로이 데이터베이스를 사용한 것 이기 때문에 `Web.config`입니다. 이름을 사용 하 여 연결 문자열을 저장 하 게 `NorthwindConnectionString`합니다.
-
 
 [![Northwind 데이터베이스에 연결](interacting-with-the-master-page-from-the-content-page-cs/_static/image5.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image4.png)
 
 **그림 02**: Northwind 데이터베이스에 연결 ([클릭 하 여 큰 이미지 보기](interacting-with-the-master-page-from-the-content-page-cs/_static/image6.png))
-
 
 데이터 소스 구성 마법사는 데이터를 검색 하는 쿼리는 지정할 수 있습니다 하는 두 가지 방법을 제공 합니다.
 
@@ -81,19 +74,15 @@ ms.locfileid: "59394681"
 
 방금 5 가장 최근에 추가 된 제품을 반환 하고자 하기 때문에 사용자 지정 SQL 문을 지정 해야 합니다. 다음 SELECT 쿼리를 사용 합니다.
 
-
 [!code-sql[Main](interacting-with-the-master-page-from-the-content-page-cs/samples/sample1.sql)]
 
 `TOP 5` 키워드는 쿼리에서 처음 다섯 개의 레코드만 반환 합니다. 합니다 `Products` 테이블의 기본 키 `ProductID`는 `IDENTITY` 우리 테이블에 추가 하는 각 새 제품 들이 있는 이전 항목 보다 큰 값을 보장 하는 열입니다. 따라서 기준으로 결과 정렬 `ProductID` 내림차순부터 가장 최근에 만든 제품을 반환 합니다.
-
 
 [![5 개의 가장 최근에 추가 된 제품을 반환 합니다.](interacting-with-the-master-page-from-the-content-page-cs/_static/image8.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image7.png)
 
 **그림 03**: 5 개의 가장 최근에 추가 제품을 반환 ([클릭 하 여 큰 이미지 보기](interacting-with-the-master-page-from-the-content-page-cs/_static/image9.png))
 
-
 Visual Studio에서 마법사를 완료 한 후 표시할 GridView에 대 한 두 BoundFields 생성 합니다 `ProductName` 및 `UnitPrice` 데이터베이스에서 필드를 반환 합니다. 이 시점에서 마스터 페이지의 선언적 태그는 다음과 유사한 태그를 포함 해야 합니다.
-
 
 [!code-aspx[Main](interacting-with-the-master-page-from-the-content-page-cs/samples/sample2.aspx)]
 
@@ -101,30 +90,24 @@ Visual Studio에서 마법사를 완료 한 후 표시할 GridView에 대 한 �
 
 이 사용 하 여 생성 하는 GridView, 구성, SqlDataSource 컨트롤 브라우저를 통해 웹 사이트를 방문 합니다. 그림 4에서 알 수 있듯이, 최근 5를 나열 하는 왼쪽된 아래 모퉁이에 표 추가 제품 표시 메시지가 표시 됩니다.
 
-
 [![가장 최근에 추가 된 5 개 제품을 표시 하는 GridView](interacting-with-the-master-page-from-the-content-page-cs/_static/image11.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image10.png)
 
 **그림 04**: 5 개의 가장 최근에 추가 제품을 표시 하는 GridView ([클릭 하 여 큰 이미지 보기](interacting-with-the-master-page-from-the-content-page-cs/_static/image12.png))
 
-
 > [!NOTE]
 > 자유롭게 GridView의 모양을 정리할 수 있습니다. 몇 가지 제안 사항이 포함 서식을 표시 `UnitPrice` 통화 및 표 모양 향상을 위해 배경색 및 글꼴을 사용 하는 값입니다.
-
 
 ## <a name="step-2-creating-a-content-page-to-add-new-products"></a>2단계: 새 제품을 추가 하는 콘텐츠 페이지 만들기
 
 다음 작업은 사용자 수에 새 제품을 추가 하는 데는 콘텐츠 페이지를 만드는 것은 `Products` 테이블입니다. 새 콘텐츠 페이지를 추가 합니다 `Admin` 라는 폴더 `AddProduct.aspx`에 바인딩하지 하 여는 `Site.master` 마스터 페이지입니다. 그림 5는이 페이지는 웹 사이트에 추가한 후 솔루션 탐색기를 보여줍니다.
 
-
 [![Admin 폴더를 새 ASP.NET 페이지를 추가 합니다.](interacting-with-the-master-page-from-the-content-page-cs/_static/image14.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image13.png)
 
 **그림 05**: 새 ASP.NET 페이지를 추가 합니다 `Admin` 폴더 ([큰 이미지를 보려면 클릭](interacting-with-the-master-page-from-the-content-page-cs/_static/image15.png))
 
-
 회수에 [ *마스터 페이지에서 제목, 메타 태그 및 기타 HTML 헤더 지정* ](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-cs.md) 자습서 라는 기본 페이지를 사용자 지정 클래스를 만들었습니다 `BasePage` 있었다면 페이지 제목 생성 명시적으로 설정 합니다. 로 이동 합니다 `AddProduct.aspx` 페이지의 코드 숨김 클래스에서 파생 되 게 하 고 `BasePage` (대신에서 `System.Web.UI.Page`).
 
 마지막으로 업데이트 된 `Web.sitemap` 이 단원에 대 한 항목을 포함 하는 파일입니다. 아래에 다음 태그를 추가 합니다 `<siteMapNode>` 컨트롤 ID 이름 지정 문제 단원:
-
 
 [!code-xml[Main](interacting-with-the-master-page-from-the-content-page-cs/samples/sample3.xml)]
 
@@ -132,11 +115,9 @@ Visual Studio에서 마법사를 완료 한 후 표시할 GridView에 대 한 �
 
 돌아가서 `AddProduct.aspx`합니다. 콘텐츠 컨트롤에는 `MainContent` ContentPlaceHolder를 DetailsView 컨트롤을 추가 하 고 이름을 `NewProduct`입니다. DetailsView 라는 새 SqlDataSource 컨트롤을 바인딩할 `NewProductDataSource`합니다. 같은 Northwind 데이터베이스를 사용할 수 있도록 1 단계에서에서 SqlDataSource를 사용 하 여 마법사를 구성 하 고 사용자 지정 SQL 문 지정 하려면 선택 합니다. DetailsView를 사용 하 여 데이터베이스에 항목을 추가할 수는, 때문에 둘 다 지정 해야는 `SELECT` 문 및 `INSERT` 문입니다. 다음 사용 하 여 `SELECT` 쿼리:
 
-
 [!code-sql[Main](interacting-with-the-master-page-from-the-content-page-cs/samples/sample4.sql)]
 
 그런 다음 삽입 탭에서 다음을 추가 `INSERT` 문:
-
 
 [!code-sql[Main](interacting-with-the-master-page-from-the-content-page-cs/samples/sample5.sql)]
 
@@ -144,17 +125,14 @@ Visual Studio에서 마법사를 완료 한 후 표시할 GridView에 대 한 �
 
 이것이 전부입니다! 이 페이지를 테스트해 보겠습니다. 방문 `AddProduct.aspx` 브라우저를 통해 이름과 가격 (그림 6 참조)를 입력 합니다.
 
-
 [![데이터베이스에 새 제품 추가](interacting-with-the-master-page-from-the-content-page-cs/_static/image17.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image16.png)
 
 **그림 06**: 데이터베이스에 새 제품 추가 ([클릭 하 여 큰 이미지 보기](interacting-with-the-master-page-from-the-content-page-cs/_static/image18.png))
-
 
 이름 및 새 제품에 대 한 가격을 입력 한 후 삽입 단추를 클릭 합니다. 이렇게 하면 폼에 다시 게시 합니다. 포스트백에서 SqlDataSource 컨트롤의 `INSERT` 문이 실행 될; 두 매개 변수는 DetailsView의 두 텍스트 상자 컨트롤에서 사용자가 입력 한 값으로 채워집니다. 그러나 삽입이 발생 했음을 시각적 피드백이 있습니다. 새 레코드 추가 되어 있는지 확인 메시지 표시를 좋을 것입니다. 필자는 판독기에 대 한 연습으로 둡니다. 또한 DetailsView에서 새 레코드를 추가한 후 마스터 페이지에 GridView 계속 표시 하기 전에;와 동일한 5 개 레코드가 방금 추가 된 레코드는 포함 되지 않습니다. 이후 단계에서이 문제를 해결 하는 방법을 살펴보겠습니다.
 
 > [!NOTE]
 > 특정 형태의 삽입에 성공 하는 시각적 피드백을 추가 하는 것 외에도 바랍니다도 유효성 검사를 포함 된 DetailsView 삽입 인터페이스를 업데이트할 수 있습니다. 현재 검사 하지 않습니다. 사용자가에 대 한 잘못 된 값을 입력 합니다 `UnitPrice` 필드 "너무 비용이" 시스템에서 해당 문자열을 10 진수로 변환 하려고 할 때 다시 게시 될 때 예외가 throw 됩니다. 삽입 하는 사용자 지정 하는 방법은 인터페이스를 참조 합니다 [ *데이터 수정 인터페이스 사용자 지정* 자습서](../../data-access/editing-inserting-and-deleting-data/customizing-the-data-modification-interface-cs.md) 에서 내 [데이터자습서시리즈를사용하여작업](../../data-access/index.md).
-
 
 ## <a name="step-3-creating-public-properties-and-methods-in-the-master-page"></a>3단계: 마스터 페이지에서 공용 속성 및 메서드 만들기
 
@@ -162,11 +140,9 @@ Visual Studio에서 마법사를 완료 한 후 표시할 GridView에 대 한 �
 
 마스터 페이지 내에서 보호 된 멤버 변수로 레이블 컨트롤 구현 되기 때문에 콘텐츠 페이지에서 직접 액세스할 수 없습니다. 웹 컨트롤을 표시 하거나 해당 속성 중 하나는 수 프록시 역할을 하는 마스터 페이지에서 공용 속성을 생성 해야 마스터 페이지 콘텐츠 페이지에서 (또는 해당 문제를 마스터 페이지의 웹 컨트롤에 대 한) 내에서 레이블을 사용 하려면  액세스할 수 있습니다. 레이블의 노출 하기 위해 마스터 페이지의 코드 숨김 클래스에 다음 구문을 추가 `Text` 속성:
 
-
 [!code-csharp[Main](interacting-with-the-master-page-from-the-content-page-cs/samples/sample6.cs)]
 
 새 레코드를 추가할 때를 `Products` 콘텐츠 페이지에서 테이블을 `RecentProducts` 마스터 페이지에 GridView를 원본으로 사용 하는 데이터 원본 다시 바인딩 해야 합니다. GridView 호출을 다시 바인딩하도록 하려면 해당 `DataBind` 메서드. 마스터 페이지에 GridView 콘텐츠 페이지를 프로그래밍 방식으로 액세스할 수 없는 때문에 만들 필요가 공용 메서드를 마스터 페이지에서는 호출 될 때 것, 데이터를 GridView에 다시 바인딩합니다. 마스터 페이지의 코드 숨김 클래스에 다음 메서드를 추가 합니다.
-
 
 [!code-csharp[Main](interacting-with-the-master-page-from-the-content-page-cs/samples/sample7.cs)]
 
@@ -174,7 +150,6 @@ Visual Studio에서 마법사를 완료 한 후 표시할 GridView에 대 한 �
 
 > [!NOTE]
 > 마스터 페이지의 속성 및 메서드를 표시 해야 `public`합니다. 경우를 명시적으로 나타내지 않습니다 이러한 속성 및 메서드 `public`, 콘텐츠 페이지에서 액세스할 수 없습니다.
-
 
 ## <a name="step-4-calling-the-master-pages-public-members-from-a-content-page"></a>4단계: 콘텐츠 페이지 로부터 마스터 페이지의 공용 멤버를 호출합니다.
 
@@ -193,20 +168,16 @@ Visual Studio에서 마법사를 완료 한 후 표시할 GridView에 대 한 �
 
 합니다 `Master` 형식의 개체를 반환 [ `MasterPage` ](https://msdn.microsoft.com/library/system.web.ui.masterpage.aspx) (에 `System.Web.UI` 네임 스페이스) 모든 마스터 페이지에서 파생 되는 기본 형식입니다. 따라서를 사용 하 여 공용 속성에서는 캐스팅 해야 하는 웹 사이트의 마스터 페이지에 정의 된 메서드를 `MasterPage` 에서 반환 된 개체는 `Master` 속성을 적절 한 형식입니다. 마스터 페이지 파일 이름을 때문 `Site.master`, 코드 숨김 클래스 이름이 `Site`합니다. 따라서 다음 코드 캐스트는 `Page.Master` 사이트 클래스의 인스턴스에 대 한 속성입니다.
 
-
 [!code-csharp[Main](interacting-with-the-master-page-from-the-content-page-cs/samples/sample8.cs)]
 
 캐스팅 해 느슨하게 형식화 `Page.Master` 속성을는 `Site` 형식 속성과 메서드를 특정 사이트를 참조할 수 있습니다. 그림 7은 공용 속성으로 `GridMessageText` IntelliSense 드롭다운 목록에 표시 됩니다.
-
 
 [![IntelliSense는이 마스터 페이지의 공용 속성 및 메서드를 보여 줍니다.](interacting-with-the-master-page-from-the-content-page-cs/_static/image20.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image19.png)
 
 **그림 07**: IntelliSense는 마스터 페이지의 공용 속성 및 메서드를 보여 줍니다 ([클릭 하 여 큰 이미지 보기](interacting-with-the-master-page-from-the-content-page-cs/_static/image21.png))
 
-
 > [!NOTE]
 > 마스터 페이지 파일 명명 `MasterPage.master` 마스터 페이지의 코드 숨김 클래스 이름은 `MasterPage`합니다. 모호한 코드 형식에서 캐스팅 하는 경우 발생할 수 있습니다 `System.Web.UI.MasterPage` 하 여 `MasterPage` 클래스입니다. 즉, 웹 사이트 프로젝트 모델을 사용 하는 경우 약간 까다로울 수 있는 형식으로 캐스팅 하는 완전 하 게 정규화 해야 합니다. 내 제안 중 하나는 마스터 페이지를 만들 때 이름을 이외의 있는지를 확인 하는 것 `MasterPage.master` 또는 심지어 마스터 페이지에 대 한 강력한 참조를 만듭니다.
-
 
 ### <a name="creating-a-strongly-typed-reference-with-themastertypedirective"></a>사용 하 여 강력한 형식의 참조를 만드는`@MasterType`지시문
 
@@ -216,7 +187,6 @@ ASP.NET 페이지를 열어 볼 때마다 발생 하는 자동 코드 생성을 
 
 사용 된 [ `@MasterType` 지시문](https://msdn.microsoft.com/library/ms228274.aspx) 콘텐츠 페이지의 마스터 페이지에 대 한 형식의 ASP.NET 엔진에 알림을 보내야 합니다. `@MasterType` 지시문 마스터 페이지의 형식 이름 또는 파일 경로 사용할 수 있습니다. 지정 하는 `AddProduct.aspx` 사용 하 여 페이지 `Site.master` 해당 마스터 페이지의 맨 위에 다음 지시문을 추가 `AddProduct.aspx`:
 
-
 [!code-aspx[Main](interacting-with-the-master-page-from-the-content-page-cs/samples/sample9.aspx)]
 
 이 지시문은 명명 된 속성을 통해 마스터 페이지에 대 한 강력한 참조를 추가 하려면 ASP.NET 엔진 `Master`합니다. 사용 하 여는 `@MasterType` 호출 되어에서 지시문에 `Site.master` 마스터 페이지의 공용 속성 및 메서드를 통해 직접를 `Master` 모든 캐스트 하지 않고 속성.
@@ -224,11 +194,9 @@ ASP.NET 페이지를 열어 볼 때마다 발생 하는 자동 코드 생성을 
 > [!NOTE]
 > 생략 하면는 `@MasterType` 지시문, 구문을 `Page.Master` 및 `Master` 동일한 작업을 반환: 페이지의 마스터 페이지에는 느슨한 형 개체입니다. 포함 하는 경우는 `@MasterType` 지시문을 다음 `Master` 지정된 마스터 페이지에 대 한 강력한 참조를 반환 합니다. `Page.Master`을 단, 여전히 느슨한 형 대 한 참조를 반환 합니다. 이 경우 이유를 보다 정확 하 게 확인 하는 방법과 `Master` 속성을 생성 때 합니다 `@MasterType` 지시문이 포함 된 내용은 [K. Scott Allen](http://odetocode.com/blogs/scott/default.aspx)의 블로그 항목 [ `@MasterType` ASP.NET 2.0](http://odetocode.com/Blogs/scott/archive/2005/07/16/1944.aspx).
 
-
 ### <a name="updating-the-master-page-after-adding-a-new-product"></a>새 제품을 추가한 후 마스터 페이지를 업데이트 하는 중
 
 마스터 페이지의 public 속성 및 콘텐츠 페이지 로부터 메서드를 호출 하는 방법을 알았으므로 준비가 업데이트는 `AddProduct.aspx` 페이지 새 제품을 추가한 후 마스터 페이지를 새로 고치도록 합니다. DetailsView 컨트롤에 대 한 이벤트 처리기의 4 단계 시작 부분에서 만든 `ItemInserting` 데이터베이스에 새 제품 추가 된 후에 즉시 실행 하는 이벤트입니다. 해당 이벤트 처리기에 다음 코드를 추가 합니다.
-
 
 [!code-csharp[Main](interacting-with-the-master-page-from-the-content-page-cs/samples/sample10.cs)]
 
@@ -236,11 +204,9 @@ ASP.NET 페이지를 열어 볼 때마다 발생 하는 자동 코드 생성을 
 
 그림 8을 `AddProduct.aspx` 데이터베이스에 새 제품-Scott 탄산 음료-직후 페이지가 추가 되었습니다. 마스터 페이지의 레이블 나오는 방금 추가 된 제품 이름 있는지 및 제품 및 해당 가격에 포함 된 GridView를 새로 고칠는 참고 합니다.
 
-
 [![마스터 페이지의 레이블 및 GridView 표시 방금 추가 제품](interacting-with-the-master-page-from-the-content-page-cs/_static/image23.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image22.png)
 
 **그림 08**: 마스터 페이지의 레이블 및 GridView 표시 Just-Added 제품 ([클릭 하 여 큰 이미지 보기](interacting-with-the-master-page-from-the-content-page-cs/_static/image24.png))
-
 
 ## <a name="summary"></a>요약
 

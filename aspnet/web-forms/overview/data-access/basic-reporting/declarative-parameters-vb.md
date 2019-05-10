@@ -8,12 +8,12 @@ ms.date: 03/31/2010
 ms.assetid: dc1234a3-114f-4c9a-8d25-50ca03cc8e8e
 msc.legacyurl: /web-forms/overview/data-access/basic-reporting/declarative-parameters-vb
 msc.type: authoredcontent
-ms.openlocfilehash: be792b0511e91b65cf3dd56458630b4e8ec3b5af
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2830b6070320e27a8ea367db229bfa9fe411b34c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384235"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132430"
 ---
 # <a name="declarative-parameters-vb"></a>선언적 매개 변수(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59384235"
 [샘플 앱을 다운로드](http://download.microsoft.com/download/5/d/7/5d7571fc-d0b7-4798-ad4a-c976c02363ce/ASPNET_Data_Tutorial_5_VB.exe) 또는 [PDF 다운로드](declarative-parameters-vb/_static/datatutorial05vb1.pdf)
 
 > 이 자습서에서는 DetailsView 컨트롤에서 표시할 데이터를 선택 하려면 하드 코드 된 값으로 설정 하는 매개 변수를 사용 하는 방법을 설명할 것입니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -36,35 +35,27 @@ ms.locfileid: "59384235"
 
 첫 번째 예를 들어 DetailsView 컨트롤을 추가 하 여 시작 합니다 `DeclarativeParams.aspx` 페이지에 `BasicReporting` 폴더입니다. DetailsView의 스마트 태그에서 선택 &lt;새 데이터 원본을&gt; 드롭다운 목록에서 나열 하 고 ObjectDataSource를 추가 하려면 선택 합니다.
 
-
 [![ObjectDataSource를 페이지에 추가 합니다.](declarative-parameters-vb/_static/image2.png)](declarative-parameters-vb/_static/image1.png)
 
 **그림 1**: ObjectDataSource를 페이지에 추가 ([클릭 하 여 큰 이미지 보기](declarative-parameters-vb/_static/image3.png))
 
-
 ObjectDataSource 컨트롤의 데이터 소스 선택 마법사가 자동으로 시작 됩니다. 선택 된 `ProductsBLL` 마법사의 첫 번째 화면에서 클래스입니다.
-
 
 [![ProductsBLL 클래스를 선택 합니다.](declarative-parameters-vb/_static/image5.png)](declarative-parameters-vb/_static/image4.png)
 
 **그림 2**: 선택 된 `ProductsBLL` 클래스 ([큰 이미지를 보려면 클릭](declarative-parameters-vb/_static/image6.png))
 
-
 사용 하려는 특정 제품에 대 한 정보를 표시 하려고 하므로 `GetProductByProductID(productID)` 메서드.
-
 
 [![GetProductByProductID(productID) 메서드를 선택 합니다.](declarative-parameters-vb/_static/image8.png)](declarative-parameters-vb/_static/image7.png)
 
 **그림 3**: 선택 된 `GetProductByProductID(productID)` 메서드 ([큰 이미지를 보려면 클릭](declarative-parameters-vb/_static/image9.png))
 
-
 선택한 메서드 매개 변수를 포함 하므로 매개 변수에 사용할 값을 정의 하는 질문 하는 마법사에 대 한 자세한 화면씩 방법이 있습니다. 왼쪽의 목록에 선택한 메서드에 대 한 매개 변수를 모두 나타납니다. 에 대 한 `GetProductByProductID(productID)` 하나만 `productID`합니다. 오른쪽에 선택한 매개 변수의 값을 지정할 수 있습니다. 매개 변수 원본 드롭다운 목록에 매개 변수 값에 대 한 가능한 다양 한 원본을 열거합니다. 5에 대 한 하드 코드 된 값을 지정 하려고 하므로 `productID` 매개 변수를 None으로 매개 변수 원본을 그대로 두려면 enter 5 DefaultValue 텍스트 상자에 붙여넣습니다.
-
 
 [![Hard-Coded 매개 변수 값의 5에 사용할 매개 변수 productID](declarative-parameters-vb/_static/image11.png)](declarative-parameters-vb/_static/image10.png)
 
 **그림 4**: Hard-Coded 매개 변수 값의 5에 사용할 합니다 `productID` 매개 변수 ([큰 이미지를 보려면 클릭](declarative-parameters-vb/_static/image12.png))
-
 
 ObjectDataSource 컨트롤의 선언적 태그 데이터 소스 구성 마법사를 완료 한 후에 포함 되어는 `Parameter` 개체를 `SelectParameters` 컬렉션에 정의 된 메서드에 필요한 입력된 매개 변수의 각는 `SelectMethod` 속성입니다. 이 예제에서는 메서드에서 방금 단일 입력된 매개 변수를 예상 하므로 `parameterID`, 여기에 하나의 항목이 있습니다. 합니다 `SelectParameters` 컬렉션에서 파생 되는 모든 클래스를 포함할 수는 `Parameter` 클래스를 `System.Web.UI.WebControls` 네임 스페이스입니다. 하드 코드 된 매개 변수 값은 기본에 대 한 `Parameter` 클래스를 사용 하지만 다른 매개 변수에 대 한 원본 옵션 파생 `Parameter` 클래스는; 만들 수도 있습니다 고유한 [사용자 지정 매개 변수 형식](http://www.leftslipper.com/ShowFaq.aspx?FaqId=11), 필요한 경우.
 
@@ -73,40 +64,31 @@ ObjectDataSource 컨트롤의 선언적 태그 데이터 소스 구성 마법사
 > [!NOTE]
 > 자신의 컴퓨터에 선언적 태그 따라 했다면 보면이 시점에 대 한 값을 포함할 수 있습니다는 `InsertMethod`, `UpdateMethod`, 및 `DeleteMethod` 속성인 뿐만 `DeleteParameters`합니다. ObjectDataSource의 데이터 소스 선택 마법사에서 메서드를 자동으로 지정 된 `ProductBLL` 아웃 된 명시적으로 지울 수 하지 않는 한 이러한에서는에 포함 될 있도록 위의 태그 삽입, 업데이트 및 삭제에 사용할 합니다.
 
-
 데이터 웹 컨트롤은 ObjectDataSource의이 페이지를 방문 하는 경우 호출 `Select` 메서드를 호출 합니다 `ProductsBLL` 클래스의 `GetProductByProductID(productID)` 5에 대 한 하드 코드 된 값을 사용 하는 메서드를 `productID` 입력된 매개 변수. 강력한 형식의 메서드는 반환 `ProductDataTable` Chef 한 100% 파인애플 조합에 대 한 정보를 사용 하 여 단일 행이 들어 있는 개체 (사용 하 여 제품 `ProductID` 5).
-
 
 [![정보에 대 한 Chef 한 100 수프 표시 됩니다.](declarative-parameters-vb/_static/image14.png)](declarative-parameters-vb/_static/image13.png)
 
 **그림 5**: 정보에 대 한 Chef 한 100 수프 표시 됩니다 ([클릭 하 여 큰 이미지 보기](declarative-parameters-vb/_static/image15.png))
 
-
 ## <a name="setting-the-parameter-value-to-the-property-value-of-a-web-control"></a>웹 컨트롤의 속성 값을 매개 변수 값 설정
 
 페이지의 웹 컨트롤의 값을 기준으로 ObjectDataSource의 매개 변수 값을 설정할 수도 있습니다. 이 예의 사용자가 지정한 국가에 있는 공급 업체를 모두 나열 하는 GridView 보겠습니다. 사용자 국가 이름을 입력할 수 있는 페이지에 텍스트를 추가 하 여이 시작을 수행 합니다. 이 텍스트 상자 컨트롤을 설정 `ID` 속성을 `CountryName`입니다. 또한 단추 웹 컨트롤을 추가 합니다.
-
 
 [![페이지 ID CountryName에 입력란을 추가 합니다.](declarative-parameters-vb/_static/image17.png)](declarative-parameters-vb/_static/image16.png)
 
 **그림 6**: 페이지에 텍스트 상자를 추가 `ID` `CountryName` ([클릭 하 여 큰 이미지 보기](declarative-parameters-vb/_static/image18.png))
 
-
 다음으로, 페이지 및 스마트 태그에서 GridView를 추가할 새 ObjectDataSource를 추가 하려면 선택 합니다. 공급 업체 정보 선택 표시 하려고 하므로 `SuppliersBLL` 마법사의 첫 번째 화면에서 클래스입니다. 두 번째 화면에서 선택 된 `GetSuppliersByCountry(country)` 메서드.
-
 
 [![GetSuppliersByCountry(country) 메서드를 선택 합니다.](declarative-parameters-vb/_static/image20.png)](declarative-parameters-vb/_static/image19.png)
 
 **그림 7**: 선택 된 `GetSuppliersByCountry(country)` 메서드 ([큰 이미지를 보려면 클릭](declarative-parameters-vb/_static/image21.png))
 
-
 이후를 `GetSuppliersByCountry(country)` 메서드는 입력된 매개 변수, 마법사는 매개 변수 값을 선택 하기 위한 최종 화면에 다시 한 번 포함 되어 있습니다. 이 이번에는 컨트롤에 매개 변수 소스를 설정 합니다. 이 페이지에서 컨트롤의 이름 사용 하 여 ControlID 드롭다운 목록을 채우는합니다 선택 된 `CountryName` 목록에서 제어 합니다. 해당 페이지를 처음으로 방문 합니다 `CountryName` 결과가 반환 되 고 아무 것도 표시 되므로 텍스트 상자를 비어 있게 됩니다. 기본적으로 일부 결과 표시 하려는 경우 DefaultValue 입력란을 적절 하 게 설정 합니다.
-
 
 [![CountryName 컨트롤 값 매개 변수 값을 설정 합니다.](declarative-parameters-vb/_static/image23.png)](declarative-parameters-vb/_static/image22.png)
 
 **그림 8**: 매개 변수 값을 설정 합니다 `CountryName` 제어 값 ([큰 이미지를 보려면 클릭](declarative-parameters-vb/_static/image24.png))
-
 
 ObjectDataSource의 선언 태그를 첫 번째 예제에서 약간 다릅니다.를 사용 하는 [ControlParameter](https://msdn.microsoft.com/library/system.web.ui.webcontrols.controlparameter.aspx) 표준 대신 `Parameter` 개체입니다. A `ControlParameter` 지정 하는 추가 속성에는 `ID` 웹 컨트롤 및 속성 값을 매개 변수로 사용 (`PropertyName`). 데이터 소스 구성 마법사가 정도로 장치가 지능적이 지 결정 하는 텍스트 상자에 대 한 됩니다 것를 사용 하 여 `Text` 매개 변수 값에 대 한 속성. 그러나 웹 컨트롤의 다른 속성 값을 사용 하려는 경우 변경할 수 있습니다는 `PropertyName` 여기 또는 마법사에서 "고급 속성 표시" 링크를 클릭 하 여 값입니다.
 
@@ -116,11 +98,9 @@ ObjectDataSource의 선언 태그를 첫 번째 예제에서 약간 다릅니다
 
 그러나 방문자 한 국가에서 입력 하 고, 다시 게시 ObjectDataSource의 시킬 공급자 표시 단추를 클릭 `Select` 메서드는 다시 쿼리되어, TextBox 컨트롤의 전달 `Text` 값을 `country` 매개 변수입니다.
 
-
 [![캐나다에서 해당 공급 업체 나와 있습니다.](declarative-parameters-vb/_static/image26.png)](declarative-parameters-vb/_static/image25.png)
 
 **그림 9**: 캐나다에서 해당 공급자가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](declarative-parameters-vb/_static/image27.png))
-
 
 ## <a name="showing-all-suppliers-by-default"></a>기본적으로 모든 공급자를 표시합니다.
 
@@ -138,11 +118,9 @@ ObjectDataSource의 선언 태그를 첫 번째 예제에서 약간 다릅니다
 
 이 변경 합니다 `DeclarativeParams.aspx` 처음 방문한 경우 공급 업체의 모든 페이지에 표시 (또는 때마다를 `CountryName` TextBox 비어 있습니다.).
 
-
 [![모든 공급 업체는 이제 기본적으로 표시](declarative-parameters-vb/_static/image29.png)](declarative-parameters-vb/_static/image28.png)
 
 **그림 10**: 모든 공급 업체는 이제 기본적으로 표시 됩니다 ([클릭 하 여 큰 이미지 보기](declarative-parameters-vb/_static/image30.png))
-
 
 ## <a name="summary"></a>요약
 

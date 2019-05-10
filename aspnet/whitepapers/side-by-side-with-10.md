@@ -8,19 +8,18 @@ ms.date: 02/10/2010
 ms.assetid: bdea2003-e964-4db5-9092-d56cc7560616
 msc.legacyurl: /whitepapers/side-by-side-with-10
 msc.type: content
-ms.openlocfilehash: c4a371958d8de72628c037b3568551aaa91e0153
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: d03919e8465c28cf00bf057193452396523cb1af
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59380706"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125619"
 ---
 # <a name="aspnet-side-by-side-execution-of-net-framework-10-and-11"></a>.NET Framework 1.0 및 1.1의 ASP.NET Side-by-Side 실행
 
 > 이 백서에는 ASP.NET 웹 응용 프로그램 프레임 워크의 버전 중 하나에서 실행할 수 있도록 컴퓨터에.NET 1.0와.NET 1.1을 설치 하는 방법을 설명 합니다.
 > 
 > ASP.NET 1.0 및 ASP.NET 1.1에 적용 됩니다.
-
 
 ASP.NET에서 실행 되 고 함께 동일한 컴퓨터에 설치 되어 있지만 다른 버전의.NET Framework를 사용 하는 경우 응용 프로그램 이라고 합니다. 다음 항목에서는-병렬 실행에 대 한 ASP.NET 응용 프로그램을 구성 하는 방법에 설명 하 고 하는 자세한 단계를 제공 합니다.
 

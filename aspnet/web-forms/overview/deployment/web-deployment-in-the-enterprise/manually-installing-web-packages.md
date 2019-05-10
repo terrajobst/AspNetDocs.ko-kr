@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: f11d22a7-5d32-4ad0-8a9b-276460a61c06
 msc.legacyurl: /web-forms/overview/deployment/web-deployment-in-the-enterprise/manually-installing-web-packages
 msc.type: authoredcontent
-ms.openlocfilehash: 9d0e57eb85242a0d6fa8ca9eef7f6c741862069d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f778549d3e26989a2e71ef21171adec521842729
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59408799"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132118"
 ---
 # <a name="manually-installing-web-packages"></a>수동으로 웹 패키지 설치
 
@@ -29,7 +29,6 @@ ms.locfileid: "59408799"
 > 
 > 이러한 시나리오에서 유일한 옵션 포트는 대상 서버로 웹 패키지 및 수동으로 IIS에 가져올 수 있습니다. 이 방법을 사용 하므로 자동화 된 배포, 이지만 여전히 웹 응용 프로그램을 게시 하기 위한 매우 효과적인 기법은&#x2014;단순히 웹 서버를 단일 zip 파일을 복사 하는 마법사를 사용 하 여 가져오기 프로세스를 안내 합니다.
 
-
 이 항목의 Fabrikam, Inc. 라는 가상 회사의 엔터프라이즈 배포 요구 사항 기반 자습서 시리즈의 일부를 형성 합니다. 샘플 솔루션을 사용 하 여이 자습서 시리즈&#x2014;는 [Contact Manager 솔루션](the-contact-manager-solution.md)&#x2014;현실적인 수준의 복잡성을 Windows Communication ASP.NET MVC 3 응용 프로그램을 포함 하 여 웹 응용 프로그램을 나타내는 Foundation (WCF) 서비스 및 데이터베이스 프로젝트입니다.
 
 ## <a name="task-overview"></a>작업 개요
@@ -44,7 +43,6 @@ IIS에 웹 배포 패키지를 가져오려면 이러한 상위 수준의 작업
 
 > [!NOTE]
 > 이 항목은 함께에 가장 적합 [웹 배포 게시 (오프 라인 배포)에 대 한 웹 서버를 구성](../configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-offline-deployment.md), 필수 구성 요소를 설치 하 고 패키지를 가져오기 위해 IIS 웹 사이트를 준비 하는 방법을 설명 합니다.
-
 
 ## <a name="create-a-web-deployment-package"></a>웹 배포 패키지 만들기
 
@@ -68,9 +66,7 @@ MSBuild를 직접 사용자 지정 MSBuild 프로젝트 파일을 통해 또는 
 
 호출 하 여 명령줄에서 웹 배포 패키지를 만들 수는 **패키지** MSBuild를 사용 하 여 웹 응용 프로그램 프로젝트의 대상입니다. 이 명령은 다음과 비슷합니다.
 
-
 [!code-console[Main](manually-installing-web-packages/samples/sample1.cmd)]
-
 
 방법 중 사용 하 여, 최종 결과 동일 합니다. WPP 웹 응용 프로그램 프로젝트의 출력 폴더에 다양 한 지원 리소스를 함께 zip 파일로 웹 배포 패키지를 만듭니다.
 

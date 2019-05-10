@@ -8,12 +8,12 @@ ms.date: 09/13/2006
 ms.assetid: cf5acaf5-d4f6-4957-badc-b89956b285f3
 msc.legacyurl: /web-forms/overview/data-access/displaying-data-with-the-datalist-and-repeater/showing-multiple-records-per-row-with-the-datalist-control-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 22203d44935e3b0ed0fed5aa2ba42c2897c38241
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 6cfd0950130bcaeb230a1c057507c882ada574f1
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59391951"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65124265"
 ---
 # <a name="showing-multiple-records-per-row-with-the-datalist-control-c"></a>DataList 컨트롤을 사용하여 행마다 여러 레코드 표시(C#)
 
@@ -23,18 +23,15 @@ ms.locfileid: "59391951"
 
 > 이 간략 한 자습서에서는 해당 RepeatColumns 및 RepeatDirection 속성을 통해 DataList의 레이아웃을 사용자 지정 하는 방법을 살펴봅니다.
 
-
 ## <a name="introduction"></a>소개
 
 DataList 예제에서는 지난 두 자습서 에서처럼 ve 단일 열 HTML에 행으로 해당 데이터 소스에서 각 레코드를 렌더링 한 `<table>`합니다. DataList 기본적 이지만, 데이터 원본 항목을 여러 열과 다중 행이 테이블은 분산 되도록 DataList 표시를 사용자 지정 매우 쉽습니다. 또한 해당 데이터의 모든 가능한 원본 단일 행 및 다중 열 DataList에 표시 된 항목입니다.
 
 DataList의 레이아웃을 통해 사용자 지정할 수는 `RepeatColumns` 및 `RepeatDirection` 각각 열 개수 렌더링 되 고 있는지 여부 해당 항목이 배치 되도록 가로 또는 세로로 표시 하는 속성입니다. 예를 들어, 그림 1에는 세 개의 열이 있는 테이블에서 제품 정보를 표시 하는 DataList 보여 줍니다.
 
-
 [![DataList 행당 세 가지 제품을 보여 줍니다.](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image2.png)](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image1.png)
 
 **그림 1**: DataList를 보여 줍니다 세 제품 행당 ([클릭 하 여 큰 이미지 보기](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image3.png))
-
 
 행당 여러 데이터 원본 항목을 표시 하면 DataList 가로 화면 공간을 보다 효과적으로 활용할 수 있습니다. 이 짧은 자습서에서는 이러한 두 DataList 속성을 살펴봅니다.
 
@@ -42,13 +39,11 @@ DataList의 레이아웃을 통해 사용자 지정할 수는 `RepeatColumns` �
 
 살펴보기 전에 합니다 `RepeatColumns` 및 `RepeatDirection` 속성을 통해 s 먼저 만듭니다 DataList 표준 다중 행, 단일 열 테이블 레이아웃을 사용 하 여 제품 정보를 나열 하는 페이지입니다. 예를 들어 제품의 이름, 범주 및 다음 태그를 사용 하 여 가격을 표시 하는 s 수 있습니다.
 
-
 [!code-html[Main](showing-multiple-records-per-row-with-the-datalist-control-cs/samples/sample1.html)]
 
 에서는 ve 하므로 다음이 단계를 신속 하 게 이동 하겠습니다 이전 예에서 DataList에 데이터를 바인딩하는 방법을 표시 합니다. 열어서 시작 합니다 `RepeatColumnAndDirection.aspx` 페이지에 `DataListRepeaterBasics` 폴더 및 디자이너 도구 상자에서 끌어서 DataList 합니다. DataList s 스마트 태그에서 새 ObjectDataSource 만들고에서 해당 데이터를 가져오도록 구성 하도록 선택할 합니다 `ProductsBLL` s 클래스 `GetProducts` 메서드를 선택 (없음) s 삽입, 업데이트, 마법사에서 옵션 및 탭을 삭제 합니다.
 
 Visual Studio에서 자동으로 만들고 새 ObjectDataSource DataList 바인딩 후 만듭니다는 `ItemTemplate` 각 제품 데이터 필드에 대 한 이름 및 값을 표시 하는 합니다. 조정 된 `ItemTemplate` 선언적 태그를 통해 직접 또는 템플릿 편집 옵션 DataList s 스마트 태그의 대체 위에 표시 된 태그를 사용 하는 *제품 이름*, *범주 이름* , 및 *가격* 적절 한 데이터 바인딩 구문을 사용 하 여 값을 할당 하는 레이블 컨트롤을 사용 하 여 텍스트 해당 `Text` 속성입니다. 업데이트 한 후를 `ItemTemplate`, s 페이지 선언적 태그는 다음과 유사 합니다.
-
 
 [!code-aspx[Main](showing-multiple-records-per-row-with-the-datalist-control-cs/samples/sample2.aspx)]
 
@@ -56,11 +51,9 @@ Visual Studio에서 자동으로 만들고 새 ObjectDataSource DataList 바인�
 
 시간을 내어 브라우저에서 페이지를 방문 합니다. 그림 2에서 알 수 있듯이, DataList 제품의 다중 행, 단일 열 테이블로 렌더링 합니다.
 
-
 [![기본적으로 다중 행, 단일 열 테이블로 DataList 렌더링](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image5.png)](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image4.png)
 
 **그림 2**: 기본적으로 DataList 렌더링 된 단일 열을 다중 행 테이블 ([클릭 하 여 큰 이미지 보기](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image6.png))
-
 
 ## <a name="step-2-changing-the-datalist-s-layout-direction"></a>2단계: DataList의 레이아웃 방향 변경
 
@@ -68,19 +61,15 @@ Visual Studio에서 자동으로 만들고 새 ObjectDataSource DataList 바인�
 
 변경 하 여는 `RepeatDirection` 속성을 `Vertical` 에 `Horizontal`, DataList를 데이터 원본 항목 마다 하나의 열을 만드는 해당 레코드는 단일 행에 렌더링 합니다. 이 효과 보여 주기 위해 디자이너에서 DataList 클릭 한 다음 속성 창에서 변경 된 `RepeatDirection` 속성을 `Vertical` 에 `Horizontal`입니다. 즉시이 작업을 수행 하면 디자이너 레이아웃 조정 합니다 DataList s, 단일 행 및 다중 열 인터페이스 만들기 (그림 3 참조).
 
-
 [![RepeatDirection 속성 결정 하는 방법의 방향 DataList s 항목이 배치 아웃](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image8.png)](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image7.png)
 
 **그림 3**: 합니다 `RepeatDirection` 속성은 아웃 레이아웃 방향 DataList의 항목 하는 방법을 나타냅니다 ([큰 이미지를 보려면 클릭](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image9.png))
 
-
 작은 양의 데이터를 단일 행을 표시 하는 경우 다중 열 테이블 화면 부동산을 최대화 하기 위한 이상적인 방법 수 있습니다. 그러나 더 큰 볼륨의 데이터를 단일 행을 여러 열을 푸시하는 해당 항목 오른쪽에 해제 화면에 맞게 해당 수 t 필요 합니다. 그림 4 제품을 단일 행 DataList 렌더링 되는 경우를 보여 줍니다. 여러 개의 제품 (80) 되므로 사용자 각 제품에 대 한 정보를 보려면 오른쪽 하단으로 떨어져 스크롤하여 해야 합니다.
-
 
 [![충분히 큰 데이터 원본에 대 한 단일 열 DataList 가로 스크롤이 필요 합니다.](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image11.png)](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image10.png)
 
 **그림 4**: 충분히 큰 데이터 원본에 대해 단일 열 DataList는 필요한 가로 스크롤 ([클릭 하 여 큰 이미지 보기](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image12.png))
-
 
 ## <a name="step-3-displaying-data-in-a-multi-column-multi-row-table"></a>3단계: 여러 열과 다중 행 표에 데이터를 표시합니다.
 
@@ -88,19 +77,15 @@ Visual Studio에서 자동으로 만들고 새 ObjectDataSource DataList 바인�
 
 예를 들어 테이블 행당 세 가지 제품을 전시 s 수 있습니다. 따라서 설정 된 `RepeatColumns` 속성을 3으로 합니다. 이렇게 변경한 후 브라우저에서 결과 보려면 잠시 시간이 소요 됩니다. 그림 5에서 알 수 있듯이, 제품 이제 3 열과 다중 행 표에 나와 있습니다.
 
-
 [![행당 제품이 표시 됩니다.](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image14.png)](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image13.png)
 
 **그림 5**: 행당 제품이 표시 됩니다 ([클릭 하 여 큰 이미지 보기](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image15.png))
 
-
 `RepeatDirection` DataList 항목 레이아웃 되는 방법을 하는 속성에 영향을 줍니다. 그림 5는 사용 하 여 결과 `RepeatDirection` 속성이 설정 `Horizontal`합니다. 처음 세 개의 제품 Chai, 변경, 및 태양 체리 시럽 왼쪽에서 오른쪽, 위쪽에서 아래쪽 레이아웃 되 note 합니다. 다음 3 개 제품 (Chef 한 100의 케이준 Seasoning부터 시작) 아래에 있는 처음 3 개 행에 나타납니다. 그러나 변경 된 `RepeatDirection` 속성을 다시 `Vertical`, 이러한 제품은 위에서 아래로 레이아웃, 그림 6에서 볼 수 있듯이 왼쪽에서 오른쪽으로 합니다.
-
 
 [![여기에서 제품은 세로로 배치 아웃](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image17.png)](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image16.png)
 
 **그림 6**: 여기에서 제품은 세로로 배치 하세요 ([클릭 하 여 큰 이미지 보기](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image18.png))
-
 
 결과 테이블에 표시 된 행 수가 DataList에 바인딩된 총 레코드 수에 따라 달라 집니다. 이 정확 하 게 최대 데이터 원본 항목의 총 수로 나눈 s는 `RepeatColumns` 속성 값입니다. 이후를 `Products` 테이블 현재 84 제품에는 3으로 나눌 수에 행이 28 개. 하는 경우 데이터 소스의 항목 수 및 `RepeatColumns` 속성 값을 나눌 수 없는 다음 마지막 행 또는 열에는 빈 셀을 갖습니다. 경우는 `RepeatDirection` 로 설정 된 `Vertical`, 마지막 열 경우; 빈 셀이 있어야 합니다 `RepeatDirection` 는 `Horizontal`, 마지막 행에 있는 빈 셀이 있어야 합니다.
 

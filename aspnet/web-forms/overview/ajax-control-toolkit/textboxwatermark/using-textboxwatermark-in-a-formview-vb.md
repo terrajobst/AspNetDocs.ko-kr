@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 41497361-7fba-4825-b36c-f58d79522a88
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/textboxwatermark/using-textboxwatermark-in-a-formview-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 056e89b20ccab0e56b1fab422c817d842beff446
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 7dd213e632f6114b0ef468e97943e789e71a474a
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59400843"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65124525"
 ---
 # <a name="using-textboxwatermark-in-a-formview-vb"></a>FormView에서 TextBoxWatermark 사용(VB)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/TextBoxWatermark1.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/textboxwatermark1VB.pdf)
 
 > AJAX Control Toolkit에서 TextBoxWatermark 컨트롤은 텍스트 상자 내에서 표시 되도록 입력란을 확장 합니다. 사용자가 상자에는 클릭, 비워집니다. 사용자는 텍스트를 입력 하지 않고 상자를 퇴사, 하는 경우에 미리 채워진된 텍스트 다시 나타납니다. FormView 컨트롤 내에서 가능한 이기도합니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -47,7 +46,6 @@ ASP.NET AJAX와 Control Toolkit의 기능을 활성화 하기 위해 합니다 `
 [!code-aspx[Main](using-textboxwatermark-in-a-formview-vb/samples/sample3.aspx)]
 
 이제 변경 될 때 사용자의 삽입 모드에는 `FormView` 컨트롤, 텍스트 필드 덕분에 미리 채워지는 새 공급 업체에 대 한는 `TextBoxWatermarkExtender` 제어 합니다. 텍스트 상자 내부를 클릭 한 filler 텍스트가 사라집니다 수 있습니다.
-
 
 [![필드에 워터 마크 extender에서 제공 됩니다.](using-textboxwatermark-in-a-formview-vb/_static/image2.png)](using-textboxwatermark-in-a-formview-vb/_static/image1.png)
 

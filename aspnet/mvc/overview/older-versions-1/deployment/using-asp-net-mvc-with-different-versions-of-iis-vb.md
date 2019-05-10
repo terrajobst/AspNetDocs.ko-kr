@@ -8,19 +8,18 @@ ms.date: 08/19/2008
 ms.assetid: 1c1283b2-6956-4937-b568-d30de432ce23
 msc.legacyurl: /mvc/overview/older-versions-1/deployment/using-asp-net-mvc-with-different-versions-of-iis-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 0446a125845134d2fad869094a540c960f6b0a25
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b754175c853c20eec6be3521376b62d62f33106d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59406472"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123221"
 ---
 # <a name="using-aspnet-mvc-with-different-versions-of-iis-vb"></a>다양한 버전의 IIS에 ASP.NET MVC 사용(VB)
 
 by [Microsoft](https://github.com/microsoft)
 
 > 이 자습서에서는 ASP.NET MVC 및 URL 라우팅 인터넷 정보 서비스의 서로 다른 버전을 사용 하는 방법을 알아봅니다. ASP.NET MVC를 사용 하 여 IIS 7.0 (기본 모드), IIS 6.0 및 이전 버전의 IIS에 대 한 다른 전략에 알아봅니다.
-
 
 ASP.NET MVC 프레임 워크 컨트롤러 작업에 브라우저 요청을 라우팅하도록 ASP.NET 라우팅에 따라 달라 집니다. ASP.NET 라우팅에서 활용 하기 위해 웹 서버에서 추가 구성 단계를 수행 해야 합니다. 모든 버전의 인터넷 정보 서비스 (IIS) 및 처리 모드 응용 프로그램에 대 한 요청에 따라 달라 집니다.
 
@@ -53,18 +52,15 @@ IIS 7.0 두 가지 다른 요청 처리 모드를 사용 하 여 요청을 처�
 
 기본적으로 IIS는 두 개의 응용 프로그램 풀을 지원 하도록 구성 됩니다. **DefaultAppPool** 하 고 **클래식.NET AppPool**합니다. DefaultAppPool을 선택 하면 응용 프로그램 통합된 요청 처리 모드에서 실행 됩니다. 클래식.NET AppPool을 선택 하면 응용 프로그램은 클래식 요청 처리 모드에서 실행 됩니다.
 
-
 [![새 프로젝트 대화 상자](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image1.jpg)](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image1.png)
 
 **그림 1**: 검색 요청 처리 모드 ([클릭 하 여 큰 이미지 보기](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image2.png))
-
 
 응용 프로그램 편집 대화 상자에서 요청 처리 모드를 수정할 수 있는지 확인 합니다. 선택 단추를 클릭 하 고 응용 프로그램을 사용 하 여 연결 된 응용 프로그램 풀을 변경 합니다. 통합된 모드를 클래식에서 ASP.NET 응용 프로그램을 변경 하는 경우 호환성 문제는 점을 명심 하십시오. 자세한 내용은 다음 항목을 참조하세요.
 
 - Windows Vista 및 Windows Server 2008-IIS 7.0으로 ASP.NET 1.1로 업그레이드 [https://www.iis.net/learn/application-frameworks/building-and-running-aspnet-applications/upgrading-aspnet-11-to-iis-on-windows-vista-and-windows-server-2008](https://www.iis.net/learn/application-frameworks/building-and-running-aspnet-applications/upgrading-aspnet-11-to-iis-on-windows-vista-and-windows-server-2008)
 
 - IIS 7.0-를 사용 하 여 ASP.NET 통합 [https://www.iis.net/learn/application-frameworks/building-and-running-aspnet-applications/aspnet-integration-with-iis](https://www.iis.net/learn/application-frameworks/building-and-running-aspnet-applications/aspnet-integration-with-iis)
-
 
 ASP.NET 응용 프로그램을 DefaultAppPool를 사용 하는 경우 ASP.NET 라우팅 (및 따라서 ASP.NET MVC) 작업 가져오기에 추가 단계를 수행할 필요가 없습니다. 그러나 ASP.NET 응용 프로그램을 클래식.NET AppPool을 사용 하 여 다음 계속 진행 하세요, 하도록 경우 많은 작업을 수행 합니다.
 
@@ -96,11 +92,9 @@ IIS 7.0 이전 버전의 IIS 사용 하 여 ASP.NET MVC를 사용 해야 할 경
 
 그러나 이전 버전의 IIS는 ASP.NET 프레임 워크를 이러한 요청을 전달 하지 않습니다. 따라서 이러한 요청 않습니다 컨트롤러로 라우팅됩니다. 예를 들어 URL /Home/인덱스에 대 한 브라우저 요청을 만드는 경우 다음 얻게 오류 페이지 그림 2.
 
-
 [![새 프로젝트 대화 상자](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image2.jpg)](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image3.png)
 
 **그림 2**: 404 찾을 수 없음 오류를 수신 ([클릭 하 여 큰 이미지 보기](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image4.png))
-
 
 이전 버전의 IIS는 ASP.NET 프레임 워크를 특정 요청을 매핑합니다. 올바른 파일 확장명을 사용 하 여 URL에 대 한 요청 이어야 합니다. 예를 들어, /SomePage.aspx에 대 한 요청은 ASP.NET 프레임 워크에 매핑됩니다 가져옵니다. 그러나 /SomePage.htm 요청 되지 않습니다.
 
@@ -116,9 +110,7 @@ IIS 7.0 이전 버전의 IIS 사용 하 여 ASP.NET MVC를 사용 해야 할 경
 
 [!code-vb[Main](using-asp-net-mvc-with-different-versions-of-iis-vb/samples/sample2.vb)]
 
-
 중요: 해야 Global.asax 파일을 변경 후에 다시 ASP.NET MVC 응용 프로그램을 작성 합니다.
-
 
 목록 2에서 Global.asax 파일 두 가지 중요 한 변경 내용이 있습니다. Global.asax에 정의 된 두 개의 경로가 됩니다. 첫 번째 경로의 기본 경로 대 한 URL 패턴 이제 다음과 같습니다.
 
@@ -138,9 +130,7 @@ ASP.NET 라우팅 모듈을 가로채는 파일의 종류를 변경 하는.mvc �
 
 경로 테이블에 다음과 같이이 수정에 확인 한 후 모든 응용 프로그램에서 링크는 이러한 새 URL 패턴을 사용 하 여 호환 되도록 해야 합니다. 즉,.mvc 확장명을 포함 한 모든 링크 해야 합니다. Html.ActionLink() 도우미 메서드를 사용 하 여 링크를 생성 하는 경우 변경할 필요가 없습니다.
 
-
 Registermvc.wcf 스크립트를 사용 하는 대신 직접 ASP.NET 프레임 워크에 매핑되는 IIS에 새 확장을 추가할 수 있습니다. 새 확장을 직접 추가 하는 경우 확인란을 레이블이 지정 되었는지 확인 **파일이 있는지 확인** 확인 하지 않습니다.
-
 
 ## <a name="hosted-server"></a>호스트 서버
 
@@ -172,11 +162,9 @@ IIS 7.0에 대 한 와일드 카드 스크립트 매핑을 사용 하는 방법�
 6. MVC 이름 입력
 7. 클릭 합니다 **확인** 단추
 
-
 [![새 프로젝트 대화 상자](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image3.jpg)](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image5.png)
 
 **그림 3**: IIS 7.0을 사용 하 여 와일드 카드 스크립트 매핑 만들기 ([클릭 하 여 큰 이미지 보기](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image6.png))
-
 
 IIS 6.0을 사용 하 여 와일드 카드 스크립트 맵을 만들려면 다음이 단계를 수행 합니다.
 
@@ -189,19 +177,15 @@ IIS 6.0을 사용 하 여 와일드 카드 스크립트 맵을 만들려면 다�
 7. 확인란의 선택을 취소 **파일이 있는지 확인**
 8. 클릭 합니다 **확인** 단추
 
-
 [![새 프로젝트 대화 상자](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image4.jpg)](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image7.png)
 
 **그림 4**: IIS 6.0을 사용 하 여 와일드 카드 스크립트 매핑 만들기 ([클릭 하 여 큰 이미지 보기](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image8.png))
 
-
 와일드 카드 스크립트 매핑을 사용 하도록 설정한 후에 루트 경로 포함 하도록 Global.asax 파일에 경로 테이블을 수정 해야 합니다. 그렇지 않은 경우 응용 프로그램의 루트 페이지에 대 한 요청을 하는 경우 그림 5에 오류 페이지를 얻을 수 있습니다. 목록 4의 수정된 된 Global.asax 파일을 사용할 수 있습니다.
-
 
 [![새 프로젝트 대화 상자](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image5.jpg)](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image9.png)
 
 **그림 5**: 루트 경로 오류 없습니다 ([클릭 하 여 큰 이미지 보기](using-asp-net-mvc-with-different-versions-of-iis-vb/_static/image10.png))
-
 
 **4-Global.asax (루트 경로 사용 하 여 수정)를 나열 합니다.**
 

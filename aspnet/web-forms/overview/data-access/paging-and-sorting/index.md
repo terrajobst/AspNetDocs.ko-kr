@@ -8,17 +8,16 @@ ms.date: 10/05/2011
 ms.assetid: d45a8c0c-e8ec-46d3-bc1c-ce446df005c8
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting
 msc.type: chapter
-ms.openlocfilehash: c422a142a06cf9255412384fa384304897f0ac0a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e534cd2a4e836df3943475c3d15a302ec78581c5
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59400600"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131422"
 ---
 # <a name="paging-and-sorting"></a>페이징 및 정렬
 
 > 이 자습서에서 추가 일부 초기 정렬 및 페이징 기능 데이터를 보고 합니다.
-
 
 - [페이징 및 정렬 보고서 데이터(C#)](paging-and-sorting-report-data-cs.md)
 - [대량의 데이터를 효율적으로 페이징(C#)](efficiently-paging-through-large-amounts-of-data-cs.md)

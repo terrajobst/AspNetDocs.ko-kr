@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: 6980ee2e-d6b0-4a08-8fb6-ab96362dd0e3
 msc.legacyurl: /web-api/overview/hosting-aspnet-web-api/host-aspnet-web-api-in-an-azure-worker-role
 msc.type: authoredcontent
-ms.openlocfilehash: bfb23aafb814010e8651965dad91ca20a37fd786
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ec9904e0bff090be0f504036ae73977cfca0cb31
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59404626"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130830"
 ---
 # <a name="host-aspnet-web-api-2-in-an-azure-worker-role"></a>ASP.NET Web API 2 Azure 작업자 역할에서 호스트
 
@@ -32,7 +32,6 @@ ms.locfileid: "59404626"
 > - [Visual Studio 2013](https://my.visualstudio.com/Downloads?q=visual%20studio%202013)
 > - Web API 2
 > - [Azure SDK for.NET 2.3](https://azure.microsoft.com/downloads/)
-
 
 ## <a name="create-a-microsoft-azure-project"></a>Microsoft Azure 프로젝트 만들기
 
@@ -123,7 +122,6 @@ WorkerRole.cs의 전체 코드는 다음과 같습니다.
 
 > [!NOTE]
 > 다음과 같은 예외를 표시 하는 경우를 참조 하세요 [이 블로그 게시물](https://blogs.msdn.com/b/praburaj/archive/2013/11/20/fileloadexception-on-microsoft-owin-when-running-on-worker-role.aspx) 해결 방법에 대 한 합니다. "파일이 나 어셈블리를 로드할 수 없습니다 ' Microsoft.Owin, 버전 2.0.2.0, Culture = neutral, PublicKeyToken = 31bf3856ad364e35 =' 또는 해당 종속성 중 하나입니다. 찾은 어셈블리의 매니페스트 정의가 어셈블리 참조를 일치 하지 않습니다. (예외가 발생한 HRESULT: 0x80131040)"
-
 
 계산 에뮬레이터는 로컬 IP 주소를 끝점에 할당합니다. Compute 에뮬레이터 UI를 확인 하 여 IP 주소를 찾을 수 있습니다. 작업 표시줄 알림 영역에서에서 에뮬레이터 아이콘을 마우스 오른쪽 단추로 누르고 **Compute 에뮬레이터 UI 표시**합니다.
 

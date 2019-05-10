@@ -8,12 +8,12 @@ ms.date: 03/24/2008
 ms.assetid: 83af9f5f-9a00-4f83-8afc-e98bdd49014e
 msc.legacyurl: /web-forms/overview/older-versions-security/roles/creating-and-managing-roles-vb
 msc.type: authoredcontent
-ms.openlocfilehash: ef00ae5ddac44f17aed040db7df04a5c0f896caf
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c6c18e78701ba6a62bf07cc1bc18e4f9e8d2cb3f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59386335"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130991"
 ---
 # <a name="creating-and-managing-roles-vb"></a>역할 만들기 및 관리(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59386335"
 [코드를 다운로드](http://download.microsoft.com/download/6/0/3/6032582f-360d-4739-b935-38721fdb86ea/VB.09.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/0/3/6032582f-360d-4739-b935-38721fdb86ea/aspnet_tutorial09_CreatingRoles_vb.pdf)
 
 > 이 자습서에서는 역할 프레임 워크를 구성 하는 데 필요한 단계를 검토 합니다. 그런 다음, 웹 페이지를 만들고 역할을 삭제 하려면 빌드합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -47,11 +46,9 @@ ASP.NET 역할 정의 및 사용자 계정에 연결 하는 역할 프레임 워
 
 이 시점에서 프로젝트의 솔루션 탐색기 스크린 샷을 그림 1에 표시 된 것을 유사 합니다.
 
-
 [![역할 폴더에 추가 된 4 개의 새 페이지](creating-and-managing-roles-vb/_static/image2.png)](creating-and-managing-roles-vb/_static/image1.png)
 
 **그림 1**: 4 개의 새 페이지에 추가한 합니다 `Roles` 폴더 ([큰 이미지를 보려면 클릭](creating-and-managing-roles-vb/_static/image3.png))
-
 
 각 페이지에서이 시점에서 있어야 마스터 페이지의 ContentPlaceHolders 마다 하나씩 두 콘텐츠 컨트롤: `MainContent` 고 `LoginContent`입니다.
 
@@ -67,11 +64,9 @@ ASP.NET 역할 정의 및 사용자 계정에 연결 하는 역할 프레임 워
 
 사이트 맵을 업데이트를 사용 하 여 브라우저를 통해 사이트를 방문 합니다. 그림 2에서 볼 수 있듯이 이제 왼쪽 탐색 역할 자습서에 대 한 항목이 포함 됩니다.
 
-
 [![역할 폴더에 추가 된 4 개의 새 페이지](creating-and-managing-roles-vb/_static/image5.png)](creating-and-managing-roles-vb/_static/image4.png)
 
 **그림 2**: 4 개의 새 페이지에 추가한 합니다 `Roles` 폴더 ([큰 이미지를 보려면 클릭](creating-and-managing-roles-vb/_static/image6.png))
-
 
 ## <a name="step-2-specifying-and-configuring-the-roles-framework-provider"></a>2단계: 지정 하 고 역할 Framework 공급자를 구성 합니다.
 
@@ -107,7 +102,6 @@ ASP.NET 역할 정의 및 사용자 계정에 연결 하는 역할 프레임 워
 > [!NOTE]
 > 위의 구성 태그를 사용 하 여 설명 합니다 `<roleManager>` 요소의 `enabled` 및 `defaultProvider` 특성. 역할 프레임 워크에서 사용자가 사용자 단위로 역할 정보를 연결 하는 방식에 영향을 주는 다른 특성의 여러 가지가 있습니다. 이러한 설정을 검토 합니다는 <a id="_msoanchor_8"> </a> [ *역할 기반 권한 부여* ](role-based-authorization-vb.md) 자습서입니다.
 
-
 ## <a name="step-3-examining-the-roles-api"></a>3단계: 역할 API 검사
 
 역할 프레임 워크의 기능을 통해 노출 되는 [ `Roles` 클래스](https://msdn.microsoft.com/library/system.web.security.roles.aspx), 역할 기반 작업을 수행 하는 것에 대 한 13 공유 메서드를 포함 하는 합니다. 만들기 및 삭제 4 단계에서에서 역할에 살펴봅니다 시점과 6을 사용 합니다 [ `CreateRole` ](https://msdn.microsoft.com/library/system.web.security.roles.createrole.aspx) 및 [ `DeleteRole` ](https://msdn.microsoft.com/library/system.web.security.roles.deleterole.aspx) 메서드를 추가 하거나 시스템에서 역할을 제거 합니다.
@@ -121,7 +115,6 @@ ASP.NET 역할 정의 및 사용자 계정에 연결 하는 역할 프레임 워
 > [!NOTE]
 > 염두에 언제 든 지 이러한 메서드 중 하나를 호출 하 여 `Roles` 구성된 된 공급자에 대 한 호출을 위임 하는 클래스입니다. 호출에 보내지는 즉 여기서에서는 `SqlRoleProvider`합니다. `SqlRoleProvider` 다음 호출된 방법에 따라 적절 한 데이터베이스 작업을 수행 합니다. 예를 들어, 코드 `Roles.CreateRole("Administrators")` 결과 `SqlRoleProvider` 실행 합니다 `aspnet_Roles_CreateRole` 저장 프로시저에 새 레코드를 삽입 하는 `aspnet_Roles` 관리자 라는 테이블.
 
-
 이 자습서의 나머지 부분을 사용 하 여 살펴봅니다 합니다 `Roles` 클래스의 `CreateRole`를 `GetAllRoles`, 및 `DeleteRole` 시스템에서 역할을 관리 하는 방법입니다.
 
 ## <a name="step-4-creating-new-roles"></a>4단계: 새 역할 만들기
@@ -130,7 +123,6 @@ ASP.NET 역할 정의 및 사용자 계정에 연결 하는 역할 프레임 워
 
 > [!NOTE]
 > CreateRoleWizard 웹 컨트롤이 상태인 방법이 합니다 [ASP.NET 웹 사이트 관리 도구](https://msdn.microsoft.com/library/ms228053.aspx), 로컬 ASP.NET 응용 프로그램 보기 및 웹 응용 프로그램의 구성 관리를 사용 하 여 지원 하기 위해 설계는 합니다. 그러나 두 가지 이유로 ASP.NET 웹 사이트 관리 도구를의 열렬 한 팬 아닙니다. 먼저 약간 버그가 있는 것을 사용자 환경 개선의 여지가 많았습니다. 둘째, ASP.NET 웹 사이트 관리 도구는 라이브 사이트에 있는 역할을 원격으로 관리 하는 경우 사용자 고유의 역할 관리 웹 페이지를 구축 해야 하므로 로컬에서 작동 하도록 설계 되었습니다. 이러한 두 가지 이유로이 자습서와 다음 중점적으로 ASP.NET 웹 사이트 관리 도구에 의존 하는 것이 아니라 관리 도구는 웹 페이지에 필요한 역할을 작성 합니다.
-
 
 엽니다는 `ManageRoles.aspx` 페이지에서 `Roles` 폴더 페이지로 TextBox와 Button 웹 컨트롤을 추가 하 고 합니다. TextBox 컨트롤의 설정 `ID` 속성을 `RoleName` 및 단추의 `ID` 하 고 `Text` 속성을 `CreateRoleButton` 및 Create Role, 각각. 이 시점에서 페이지의 선언적 태그는 다음과 비슷하게 표시 됩니다.
 
@@ -145,22 +137,17 @@ ASP.NET 역할 정의 및 사용자 계정에 연결 하는 역할 프레임 워
 > [!NOTE]
 > 어떻게 되는지 궁금할 수 있습니다 사용자에 값을 입력 하지 않으면는 `RoleName` 텍스트 상자에 붙여넣습니다. 값으로 전달 되 면 합니다 `CreateRole` 메서드는 `Nothing` 또는 빈 문자열인 경우 예외가 발생 합니다. 마찬가지로, 역할 이름에는 쉼표가 포함 되어 있으면 예외가 발생 합니다. 결과적으로 페이지는 사용자가 역할을 입력 하 고 모든 쉼표를 포함 하지 않는 확인 유효성 검사 컨트롤을 포함 해야 합니다. I 판독기에 대 한 연습을 그대로 둡니다.
 
-
 관리자 라고 하는 역할을 만들어 보겠습니다. 방문을 `ManageRoles.aspx` 브라우저를 통해 페이지에서 텍스트 상자에 입력 관리자에서 (그림 3 참조) 역할 만들기 단추를 클릭 하 고 있습니다.
-
 
 [![관리자 역할 만들기](creating-and-managing-roles-vb/_static/image8.png)](creating-and-managing-roles-vb/_static/image7.png)
 
 **그림 3**: 관리자 역할을 만들고 ([클릭 하 여 큰 이미지 보기](creating-and-managing-roles-vb/_static/image9.png))
 
-
 어떻게 되나요? 포스트백이 발생 하지만 방법이 다음 있었던 역할 실제로 시각적 표시가 없습니다 시스템에 추가 합니다. 시각적 피드백을 포함 하려면 5 단계에서에서이 페이지는 업데이트 됩니다. 그러나 지금은 확인할 수 있습니다 역할으로 이동 하 여 만들어졌는지 합니다 `SecurityTutorials.mdf` 데이터베이스에서 데이터를 표시 하는 `aspnet_Roles` 테이블입니다. 그림 4에서 알 수 있듯이는 `aspnet_Roles` 방금 추가 된 관리자 역할에 대 한 레코드를 포함 하는 테이블입니다.
-
 
 [![테이블 aspnet_Roles 관리자에 대 한 행을 갖습니다.](creating-and-managing-roles-vb/_static/image11.png)](creating-and-managing-roles-vb/_static/image10.png)
 
 **그림 4**: 합니다 `aspnet_Roles` 테이블에는 관리자에 대 한 행이 있습니다 ([큰 이미지를 보려면 클릭](creating-and-managing-roles-vb/_static/image12.png))
-
 
 ## <a name="step-5-displaying-the-roles-in-the-system"></a>5단계: 시스템에서 역할을 표시합니다.
 
@@ -174,11 +161,9 @@ ASP.NET 역할 정의 및 사용자 계정에 연결 하는 역할 프레임 워
 
 이 코드를 사용 하 여 브라우저를 통해 페이지를 방문 합니다. 그림 5에서 알 수 있듯이, 항목 레이블이 지정 된 단일 열이 있는 표가 표시 됩니다. 표 4 단계에서에서 추가한 관리자 역할에 대 한 행이 포함 됩니다.
 
-
 [![단일 열에는 역할을 표시 하는 GridView](creating-and-managing-roles-vb/_static/image14.png)](creating-and-managing-roles-vb/_static/image13.png)
 
 **그림 5**: 단일 열에는 역할을 표시 하는 GridView ([클릭 하 여 큰 이미지 보기](creating-and-managing-roles-vb/_static/image15.png))
-
 
 GridView 때문에 항목을 레이블이 지정 된 유일한 열이 표시 됩니다는 GridView `AutoGenerateColumns` 속성의 각 속성에 대 한 열을 자동으로 만들려면 GridView는 True (기본값)로 설정 되어 해당 `DataSource`합니다. 배열에는 GridView의 단일 열 따라서 배열의 요소를 나타내는 단일 속성이 있습니다.
 
@@ -195,18 +180,15 @@ GridView의을 설정 하 여 시작 `AutoGenerateColumns` 속성을 false로 �
 > [!NOTE]
 > 데이터 바인딩 구문을 사용 하 여 배열의 내용을 표시 `<%# Container.DataItem %>`합니다. 세부적 설명은 이유이 구문을 사용 하 여 GridView에 바인딩됩니다 배열의 내용을 표시 하는 경우이 자습서의 범위를 벗어납니다. 이 문제에 대 한 자세한 내용은 참조 [스칼라 배열 데이터 웹 컨트롤에 바인딩](http://aspnet.4guysfromrolla.com/articles/082504-1.aspx)합니다.
 
-
 현재는 `RoleList` GridView 역할 목록에 바인딩된만 해당 페이지를 처음으로 방문 하는 경우. 새 역할 추가 될 때마다 그리드를 새로 고침 해야 합니다. 이를 위해 업데이트를 `CreateRoleButton` 단추의 `Click` 호출 하도록 이벤트 처리기는 `DisplayRolesInGrid` 새 역할이 생성 될 경우 메서드.
 
 [!code-vb[Main](creating-and-managing-roles-vb/samples/sample11.vb)]
 
 사용자는 새 역할을 추가 하는 경우 이제는 `RoleList` 역할이 성공적으로 만들어졌는지 시각적 피드백을 제공 GridView 포스트백에서 방금 추가 된 역할을 보여 줍니다. 예를 들어 참조는 `ManageRoles.aspx` 브라우저를 통해 페이지 및 감독자 라는 역할을 추가 합니다. 역할 만들기 단추를 클릭 하면 포스트백 계속 될 것 이라고 및 그리드 관리자 뿐만 아니라 감독자 새 역할을 포함 하도록 업데이트 됩니다.
 
-
 [![감독자 역할에 추가 되었습니다.](creating-and-managing-roles-vb/_static/image17.png)](creating-and-managing-roles-vb/_static/image16.png)
 
 **그림 6**: 감독자 역할에 추가 되었습니다 ([클릭 하 여 큰 이미지 보기](creating-and-managing-roles-vb/_static/image18.png))
-
 
 ## <a name="step-6-deleting-roles"></a>6단계: 역할 삭제
 
@@ -219,11 +201,9 @@ GridView의을 설정 하 여 시작 `AutoGenerateColumns` 속성을 false로 �
 
 GridView에 보강 해 보겠습니다 `ManageRoles.aspx` 포함 하려면 삭제 단추를 클릭 하면 선택한 역할을 삭제 합니다. 필드 대화 상자로 이동 하 고 CommandField 옵션 아래에 있는 삭제 단추를 추가 하 여 GridView에 삭제 단추를 추가 하 여 시작 합니다. 맨 왼쪽된 열 단추 설정 및 삭제를 확인 합니다. 해당 `DeleteText` 속성 삭제 역할을 합니다.
 
-
 [![RoleList GridView에 삭제 단추를 추가 합니다.](creating-and-managing-roles-vb/_static/image20.png)](creating-and-managing-roles-vb/_static/image19.png)
 
 **그림 7**: 삭제 단추를 추가 합니다 `RoleList` GridView ([큰 이미지를 보려면 클릭](creating-and-managing-roles-vb/_static/image21.png))
-
 
 삭제 단추를 추가한 후 GridView의 선언적 태그는 다음과 비슷하게 표시 됩니다.
 
@@ -237,7 +217,6 @@ GridView에 보강 해 보겠습니다 `ManageRoles.aspx` 포함 하려면 삭�
 
 > [!NOTE]
 > 역할 삭제 단추는 모든 종류의 사용자 로부터 역할을 삭제 하기 전에 확인 필요 하지 않습니다. 작업을 확인 하는 가장 쉬운 방법 중 하나는 클라이언트 쪽 확인 대화 상자를 통해입니다. 이 기술에 대 한 자세한 내용은 참조 하세요. [삭제 하는 경우 클라이언트 쪽 확인 추가](https://asp.net/learn/data-access/tutorial-42-vb.aspx)합니다.
-
 
 ## <a name="summary"></a>요약
 

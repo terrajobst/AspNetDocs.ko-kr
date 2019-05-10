@@ -8,12 +8,12 @@ ms.date: 02/28/2014
 ms.assetid: 9c1e3a75-b644-4480-8326-11300b1ec4b3
 msc.legacyurl: /mvc/overview/getting-started/lifecycle-of-an-aspnet-mvc-5-application
 msc.type: authoredcontent
-ms.openlocfilehash: 952d13fec206bdb8d398cead70d10335731f583d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f4a9b3fb61552b070db11fba617b5627fcd71cd5
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402221"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65124090"
 ---
 # <a name="lifecycle-of-an-aspnet-mvc-5-application"></a>ASP.NET MVC 5 애플리케이션의 수명 주기
 
@@ -31,7 +31,6 @@ HTTP 요청을 받고 HTTP 요청을 다시 클라이언트로 보내는 ASP.NET
 - 요청 처리 파이프라인의 [컨트롤러](https://msdn.microsoft.com/library/system.web.mvc.controller.aspx) 개체에서 재정의 가능한 모든 메서드의 배치 및 목적. 어떤 메서드를 재정의해야 할 수도 있고 재정의할 필요가 없을 수도 있지만, 애플리케이션 수명 주기에서 메서드가 하는 역할을 이해하면 적절한 수명 주기 단계에서 코드를 작성하여 원하는 효과를 얻을 수 있습니다.
 - 각 필터 유형(예: 인증, 권한 부여, 작업, 결과)이 호출되는 방식을 보여주는 확대 다이어그램.
 - 세부 정보 보기의 각 관심 지점에 제공되는 유용한 문서 또는 블로그.
-
 
 ## <a name="next-steps"></a>다음 단계
 

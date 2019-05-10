@@ -8,12 +8,12 @@ ms.date: 02/20/2009
 ms.assetid: f1173feb-11ee-4017-8f3f-86599ea6ae13
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager/iteration-2-make-the-application-look-nice-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 6d3286a0ec2b03f6efdc56fd9816029482a879a6
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 246cb4b4668339cc4b7e4e03ea005102c6a2a5c3
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59415429"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65126815"
 ---
 # <a name="iteration-2--make-the-application-look-nice-c"></a>반복 #2 – 응용 프로그램 모양 꾸미기 (C#) 확인
 
@@ -23,9 +23,7 @@ by [Microsoft](https://github.com/microsoft)
 
 > 이 반복에서 기본 ASP.NET MVC 보기 마스터 페이지를 수정 및 스타일 시트를 연계 하 여 응용 프로그램의 모양을 개선 합니다.
 
-
 ## <a name="building-a-contact-management-aspnet-mvc-application-c"></a>연락처 관리 ASP.NET MVC 응용 프로그램을 작성 (C#)
-  
 
 이 시리즈의 자습서에서 전체 연락처 관리 응용을 프로그램 시작부터 완료를 빌드합니다. 연락처 관리자 응용 프로그램에 사용자의 목록을 포함 된 상점 연락처 정보-이름, 전화 번호 및 전자 메일 주소-할 수 있습니다.
 
@@ -49,11 +47,9 @@ by [Microsoft](https://github.com/microsoft)
 
 이 반복의 목표는 연락처 관리자 응용 프로그램의 모양을 향상 시킬 것입니다. 현재, Contact Manager는 기본 ASP.NET MVC 뷰 마스터 페이지 및 연계 스타일 시트 (그림 1 참조)를 사용 합니다. 이러한 안 불량, 보이지만 t 원하는 모든 다른 ASP.NET MVC 웹 사이트와 마찬가지로 검색할 Contact Manager 하지 않습니다. 사용자 지정 파일을 사용 하 여 이러한 파일을 대체 하려고 합니다.
 
-
 [![새 프로젝트 대화 상자](iteration-2-make-the-application-look-nice-cs/_static/image1.jpg)](iteration-2-make-the-application-look-nice-cs/_static/image1.png)
 
 **그림 01**: ASP.NET MVC 응용 프로그램의 기본 모양을 ([클릭 하 여 큰 이미지 보기](iteration-2-make-the-application-look-nice-cs/_static/image2.png))
-
 
 이 반복 응용 프로그램의 시각적 디자인을 향상 시키기 위한 두 가지 방법에 설명 합니다. 먼저 하겠습니다 무료 ASP.NET MVC 디자인 템플릿을 다운로드 하기 위해 ASP.NET MVC 디자인 갤러리를 활용 하는 방법. ASP.NET MVC 디자인 갤러리를 사용 하면 모든 작업을 수행 하지 않고 전문 웹 응용 프로그램을 만들 수 있습니다.
 
@@ -67,11 +63,9 @@ ASP.NET MVC 디자인 갤러리는 Microsoft에서 제공 하는 무료 리소�
 
 ASP.NET MVC 디자인 갤러리는 ASP.NET MVC 프로젝트에서 사용 하기 위해 생성 된 무료 웹 사이트 디자인의 컬렉션을 호스팅합니다. 디자인은 커뮤니티의 회원이 업로드 됩니다. 갤러리에는 방문자가 즐겨 찾는 설계에 대해 투표할 수 (그림 2 참조).
 
-
 [![새 프로젝트 대화 상자](iteration-2-make-the-application-look-nice-cs/_static/image2.jpg)](iteration-2-make-the-application-look-nice-cs/_static/image3.png)
 
 **그림 02**: ASP.NET MVC 디자인 갤러리 ([클릭 하 여 큰 이미지 보기](iteration-2-make-the-application-look-nice-cs/_static/image4.png))
-
 
 이 자습서를 작성 하는 대로 갤러리에서 가장 인기 있는 디자인은 David Hauser 여 년 10 월 이라는 디자인 합니다. 다음 단계를 완료 하 여 ASP.NET MVC 프로젝트에 대 한이 디자인을 사용할 수 있습니다.
 
@@ -82,29 +76,23 @@ ASP.NET MVC 디자인 갤러리는 ASP.NET MVC 프로젝트에서 사용 하기 
 5. Visual Studio 솔루션 탐색기 창에서 ContactManager 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을 선택 **붙여넣기** (그림 4 참조).
 6. Visual Studio 메뉴 옵션을 선택 **편집, 찾기 및 바꾸기, 빠른 바꾸기** 바꾸고 *[MyProjectName]* 사용 하 여 *ContactManager* (그림 5 참조).
 
-
 [![새 프로젝트 대화 상자](iteration-2-make-the-application-look-nice-cs/_static/image3.jpg)](iteration-2-make-the-application-look-nice-cs/_static/image5.png)
 
 **그림 03**: 웹에서 다운로드 한 파일을 차단 해제 ([클릭 하 여 큰 이미지 보기](iteration-2-make-the-application-look-nice-cs/_static/image6.png))
-
 
 [![새 프로젝트 대화 상자](iteration-2-make-the-application-look-nice-cs/_static/image4.jpg)](iteration-2-make-the-application-look-nice-cs/_static/image7.png)
 
 **그림 04**: 솔루션 탐색기에서 파일을 덮어쓸 ([클릭 하 여 큰 이미지 보기](iteration-2-make-the-application-look-nice-cs/_static/image8.png))
 
-
 [![새 프로젝트 대화 상자](iteration-2-make-the-application-look-nice-cs/_static/image5.jpg)](iteration-2-make-the-application-look-nice-cs/_static/image9.png)
 
 **그림 05**: ContactManager [ProjectName]으로 바꿉니다 ([클릭 하 여 큰 이미지 보기](iteration-2-make-the-application-look-nice-cs/_static/image10.png))
 
-
 다음이 단계를 완료 한 후 웹 응용 프로그램의 새로운 디자인을 사용 합니다. 그림 6에서 페이지 년 10 월 디자인을 사용 하 여 연락처 관리자 응용 프로그램의 모양을 보여 줍니다.
-
 
 [![새 프로젝트 대화 상자](iteration-2-make-the-application-look-nice-cs/_static/image6.jpg)](iteration-2-make-the-application-look-nice-cs/_static/image11.png)
 
 **그림 06**: ContactManager 년 10 월 템플릿 사용 하 여 ([클릭 하 여 큰 이미지 보기](iteration-2-make-the-application-look-nice-cs/_static/image12.png))
-
 
 ## <a name="creating-a-custom-aspnet-mvc-design"></a>사용자 지정 ASP.NET MVC 디자인 만들기
 
@@ -114,11 +102,9 @@ ASP.NET MVC 디자인 갤러리에는 다양 한 디자인 스타일 좋은 선�
 
 반복 # 1의 연락처 관리자를 압축 하 고 프로젝트 디자인 회사에 전송 합니다. Visual Studio (아깝다는 에서도!)을 소유 하지 않은 하지만 하지 않은 문제가 발생 합니다. Microsoft Visual Web Developer를 무료로 다운로드할 수 있었습니다 합니다 [ https://www.asp.net ](https://www.asp.net) 웹 사이트 및 Visual Web Developer에서 연락처 관리자 응용 프로그램을 엽니다. 몇 일, 이러한 그림 7의 설계를 생성 했습니다.
 
-
 [![새 프로젝트 대화 상자](iteration-2-make-the-application-look-nice-cs/_static/image7.jpg)](iteration-2-make-the-application-look-nice-cs/_static/image13.png)
 
 **그림 07**: ASP.NET MVC Contact Manager 디자인 ([클릭 하 여 큰 이미지 보기](iteration-2-make-the-application-look-nice-cs/_static/image14.png))
-
 
 두 개의 주 파일의 새 디자인은: 새 연계 스타일 시트 파일 및 새 보기 마스터 페이지 파일입니다. 보기 마스터 페이지 레이아웃 및 ASP.NET MVC 응용 프로그램의 보기에 대 한 공유 콘텐츠를 포함합니다. 예를 들어, 보기 마스터 페이지 그림 7에 헤더, 탐색 탭 및 표시 되는 바닥글을 포함 합니다. Views\Shared 폴더에서 기존 Site.Master 뷰 마스터 페이지 디자인 회사에서 새 Site.Master 파일을 사용 하 여 덮어쓴 있나요
 
@@ -138,11 +124,9 @@ Html.ActionLink() 메서드는 전체 HTML 하이퍼링크를 렌더링합니다
 
 표시, 또한 새 디자인 탭을 선택 또는 선택 하지 않은 포함 합니다. 예를 들어, 그림 8에에서는 **새 연락처 만들기** 탭을 선택 하며 **내 연락처** 탭을 선택 하지 않으면.
 
-
 [![새 프로젝트 대화 상자](iteration-2-make-the-application-look-nice-cs/_static/image8.jpg)](iteration-2-make-the-application-look-nice-cs/_static/image15.png)
 
 **그림 08**: 선택한 탭을 선택 취소 ([클릭 하 여 큰 이미지 보기](iteration-2-make-the-application-look-nice-cs/_static/image16.png))
-
 
 탭을 선택 또는 선택 하지 않은 렌더링을 지원 하려면 사용자 지정 HTML 도우미는 MenuItemHelper 라는 만들었습니다. 이 도우미 메서드를 렌더링 중 하나를 &lt;li&gt; 태그 또는 &lt;li 클래스 "선택" =&gt; 현재 컨트롤러 및 작업 도우미에 전달 된 컨트롤러 및 작업 이름에 해당 하는 여부에 따라 태그입니다. MenuItemHelper에 대 한 코드는 목록 1에 포함 됩니다.
 

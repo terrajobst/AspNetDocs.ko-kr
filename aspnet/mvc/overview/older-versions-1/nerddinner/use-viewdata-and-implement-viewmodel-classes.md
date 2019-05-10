@@ -8,12 +8,12 @@ ms.date: 07/27/2010
 ms.assetid: 5755ec4c-60f1-4057-9ec0-3a5de3a20e23
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/use-viewdata-and-implement-viewmodel-classes
 msc.type: authoredcontent
-ms.openlocfilehash: a27f895d80e92686c9f1d7339b51185694661f78
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ca9775417c2e25952511a73096fb76d5d4edaea2
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389546"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125456"
 ---
 # <a name="use-viewdata-and-implement-viewmodel-classes"></a>ViewData 사용 및 ViewModel 클래스 구현
 
@@ -26,7 +26,6 @@ by [Microsoft](https://github.com/microsoft)
 > 6 단계에서는 어떻게 지원할 시나리오를 편집 하는 다양 한 형식에 대 한 뷰 컨트롤러에서 데이터를 전달 하는 두 가지 방법에 설명 합니다. ViewData 및 ViewModel입니다.
 > 
 > ASP.NET MVC 3을 사용 하는 경우 수행 하는 것이 좋습니다 합니다 [가져오기 시작 MVC 3과](../../older-versions/getting-started-with-aspnet-mvc3/cs/intro-to-aspnet-mvc-3.md) 하거나 [MVC Music Store](../../older-versions/mvc-music-store/mvc-music-store-part-1.md) 자습서입니다.
-
 
 ## <a name="nerddinner-step-6-viewdata-and-viewmodel"></a>NerdDinner 6 단계: ViewData 및 ViewModel
 

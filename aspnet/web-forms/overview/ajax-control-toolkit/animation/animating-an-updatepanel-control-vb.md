@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 4c306a2c-92b6-4904-b70b-365b847334fe
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/animating-an-updatepanel-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: a7c40ebe359e21602d9f1de8205e1a7c808acc85
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b44dfd284ac1ed94e92bd52f4ca426a36bf86825
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384255"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130755"
 ---
 # <a name="animating-an-updatepanel-control-vb"></a>UpdatePanel 컨트롤 애니메이션(VB)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/UpdatePanelAnimation1.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/updatepanelanimation1VB.pdf)
 
 > ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이지만 컨트롤에 애니메이션을 추가 하는 전체 프레임 워크 아닙니다. UpdatePanel의 내용에 대 한 특별 한 extender를 있는 애니메이션 프레임 워크에 크게 의존 합니다. UpdatePanelAnimation. 이 자습서는 UpdatePanel에 대 한 이러한 애니메이션을 설정 하는 방법을 보여 줍니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -48,7 +47,6 @@ ASP.NET에이 시나리오에서는 애니메이션을 적용할 `Wizard` 에 �
 [!code-aspx[Main](animating-an-updatepanel-control-vb/samples/sample3.aspx)]
 
 이제 UpdatePanel 내 포스트백이 발생할 때마다 패널의 새 내용이 페이드 원활 하 게 합니다.
-
 
 [![다음 마법사 단계 옅은 색은](animating-an-updatepanel-control-vb/_static/image2.png)](animating-an-updatepanel-control-vb/_static/image1.png)
 

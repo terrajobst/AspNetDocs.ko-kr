@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: ba92788f-9f03-44b1-b6b2-af8413e6a35d
 msc.legacyurl: /web-forms/overview/deployment/configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-offline-deployment
 msc.type: authoredcontent
-ms.openlocfilehash: 66a784430de734c8b1387c950382472ce59d5ccc
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 873eb9e350d5fadb017b20c4b6d2889e0df00091
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59422137"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65126019"
 ---
 # <a name="configuring-a-web-server-for-web-deploy-publishing-offline-deployment"></a>웹 배포 게시용 웹 서버 구성(오프라인 배포)
 
@@ -30,7 +30,6 @@ ms.locfileid: "59422137"
 > - 사용 하 여 *오프 라인 배포*합니다. 이 방법은 웹 서버에 최소 구성이 필요 하지만 서버 관리자가 수동으로 서버로 웹 패키지를 복사 하 고 IIS 관리자를 통해 가져옵니다.
 > 
 > 주요 기능, 이점 및 이러한 접근 방식의 단점에 대 한 자세한 내용은 참조 하세요. [웹 배포에 오른쪽 접근 방식을 선택](choosing-the-right-approach-to-web-deployment.md)합니다.
-
 
 예, 네트워크 인프라 또는 보안 제한 사항에 원격 배포가 진행 되지 않습니다. 이 웹 서버가 격리 되 인터넷 프로덕션 환경의 경우 일 가능성이 가장 큰&#x2014;하거나 물리적으로 또는 하 여 방화벽 및 서브넷&#x2014;서버 인프라의 나머지 부분에서.
 
@@ -59,7 +58,6 @@ ms.locfileid: "59422137"
 > [!NOTE]
 > 참조 컴퓨터를 도메인에 가입 하는 방법은 [도메인 및 로그온에 컴퓨터 가입](https://technet.microsoft.com/library/cc725618(v=WS.10).aspx)합니다. 고정 IP 주소를 구성 하는 방법에 대 한 자세한 내용은 참조 하세요. [정적 IP 주소를 구성](https://technet.microsoft.com/library/cc754203(v=ws.10).aspx)합니다.
 
-
 ## <a name="install-products-and-components"></a>제품 및 구성 요소를 설치 합니다.
 
 이 섹션에서는 웹 서버에서 필요한 제품 및 구성 요소를 설치 하는 과정 안내 합니다. 시작 하기 전에 서버에 최신 인지 확인 하려면 Windows Update를 실행 하는 것이 좋습니다.
@@ -73,7 +71,6 @@ ms.locfileid: "59422137"
 
 > [!NOTE]
 > 이 연습에서는 웹 플랫폼 설치 관리자를 설치 하 여 다양 한 구성 요소 사용을 설명 합니다. 웹 플랫폼 설치 관리자를 사용 하 여 필요가 있지만 자동으로 종속성을 검색 하 고 제품을 최신 버전 항상 얻을 수를 확인 하 여 설치 프로세스를 간소화 합니다. 자세한 내용은 [Microsoft 웹 플랫폼 설치 관리자 3.0](https://go.microsoft.com/?linkid=9805118)합니다.
-
 
 **필요한 제품 및 구성 요소를 설치 하려면**
 
@@ -180,7 +177,6 @@ ms.locfileid: "59422137"
 > [!NOTE]
 > IIS 7.5에서 응용 프로그램 풀 id에 대 한 자세한 내용은 참조 하세요. [응용 프로그램 풀 Id](https://go.microsoft.com/?linkid=9805123)합니다.
 
-
 **IIS 웹 사이트에 대 한 폴더 사용 권한을 구성 하려면**
 
 1. Windows 탐색기에서 로컬 폴더의 위치로 이동 합니다.
@@ -199,7 +195,6 @@ ms.locfileid: "59422137"
 
 > [!NOTE]
 > 가져오기 및 웹 패키지를 수동으로 배포 하려면 원격 에이전트 서비스를 중지 하지 않아도 됩니다. 그러나 것을 중지 하 고 사용 하지 않으려는 경우 서비스를 사용 하지 않도록 설정 하는 것이 좋습니다.
-
 
 중지 하 고 다양 한 명령줄 유틸리티 또는 Windows PowerShell cmdlet을 사용 하 여 여러 가지 방법으로 서비스를 비활성화 합니다. 이 절차는 간단 하 게 UI 기반 접근 방식을 설명합니다.
 

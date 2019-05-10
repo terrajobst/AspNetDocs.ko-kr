@@ -8,19 +8,18 @@ ms.date: 02/20/2005
 ms.assetid: f2339485-5d78-4c5e-8c0a-dc9b8a315345
 msc.legacyurl: /web-forms/overview/moving-to-aspnet-20/membership
 msc.type: authoredcontent
-ms.openlocfilehash: f3f8c649932682fd96e0640ddf4595c19c755909
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: da6fc205bd852a818d65425586cec38fdb08d310
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59408188"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131048"
 ---
 # <a name="membership"></a>멤버 자격입니다.
 
 by [Microsoft](https://github.com/microsoft)
 
 > ASP.NET 멤버 자격에서 ASP.NET 폼 인증 모델의 성공을 기반 1.x 합니다. ASP.NET 폼 인증에는 ASP.NET 응용 프로그램에 로그인 폼을 통합 하 여 데이터베이스 또는 다른 데이터 저장소에 대해 사용자의 유효성을 검사 하는 편리한 방법을 제공 합니다.
-
 
 ASP.NET 멤버 자격에서 ASP.NET 폼 인증 모델의 성공을 기반 1.x 합니다. ASP.NET 폼 인증에는 ASP.NET 응용 프로그램에 로그인 폼을 통합 하 여 데이터베이스 또는 다른 데이터 저장소에 대해 사용자의 유효성을 검사 하는 편리한 방법을 제공 합니다. FormsAuthentication 클래스의 멤버 수 있도록 인증에 대 한 쿠키를 처리, 유효한 로그인에 대 한 확인, 등으로 사용자를 로그 합니다. 그러나 ASP.NET 1.x 응용 프로그램에서 폼 인증을 구현 하면 많은 양의 코드가 필요할 수 있습니다.
 
@@ -48,11 +47,9 @@ SQL Server 7.0을 사용 하는 경우 aspnet을 나중에 멤버 자격이 저�
 
 해당 명령으로 실행 되 면 아래와 같이 ASP.NET SQL Server 설치 마법사를 사용 하 여 표시 수입니다.
 
-
 ![](membership/_static/image1.jpg)
 
 **그림 1**
-
 
 ASP.NET SQL Server 설치 마법사는 마법사에서 지정한 인스턴스에서 웹 사이트를 만듭니다. 그러나 ASP.NET은 machine.config 파일에 데이터베이스에 연결할 연결 문자열을 사용 합니다. 기본적으로이 연결 문자열은 SQL Server 2005 인스턴스를 가리키게 됩니다 있도록 SQL Server 2000 또는 SQL Server 7.0 인스턴스를 사용 하는 경우 machine.config 파일의 연결 문자열을 수정 해야 합니다. 다음 연결 문자열 찾을 수 있습니다.
 
@@ -66,11 +63,9 @@ ASP.NET SQL Server 설치 마법사는 마법사에서 지정한 인스턴스에
 
 솔루션 탐색기 도구 모음 아래와 같이 ASP.NET 구성 단추를 클릭 하 여 웹 인터페이스를 시작할 수 있습니다. 또한 로그인 컨트롤을 삽입할 때 표시 되는 팝업을 통해 웹 인터페이스를 시작할 수 있습니다.
 
-
 ![](membership/_static/image2.jpg)
 
 **그림 2**
-
 
 그러면 아래에 표시 된 ASP.NET 웹 사이트 관리 도구를 시작 합니다. ASP.NET 웹 사이트 관리에는 손쉽게 응용 프로그램 설정을 관리할 수 있는 4 개의 탭 인터페이스입니다. 다음 탭을 사용할 수 있습니다.
 
@@ -83,21 +78,17 @@ ASP.NET SQL Server 설치 마법사는 마법사에서 지정한 인스턴스에
 
 Windows 인터페이스를 시작 하려면 인터넷 정보 서비스 스냅인을 열고 응용 프로그램을 마우스 오른쪽 단추로 클릭 합니다. 속성을 선택 합니다. ASP.NET 탭을 클릭 하 고 구성 편집 단추를 클릭 합니다. (응용 프로그램을 사용할 구성 편집 단추에 대 한 ASP.NET 2.0에서 실행 되어야 합니다. 물론 ASP.NET 대화 상자에서 ASP.NET 버전을 구성할 수 있습니다) ASP.NET 구성 설정 대화 상자는 아래와 같이 표시 됩니다.
 
-
 ![](membership/_static/image3.jpg)
 
 **그림 3**
-
 
 일반 탭의 연결 문자열 및 응용 프로그램 설정을 나열 됩니다. 기울임꼴로 표시 설정을 상위 구성 파일 (machine.config 또는 높은 수준에서 web.config)에 정의 된 및 기울임꼴에 없는 설정은 응용 프로그램 구성 파일에서 합니다. 설정이 추가 된 경우 제거 되거나 응용 프로그램 수준에서 편집 ASP.NET은 추가, 제거 또는 상속 된 구성 파일에서 설정을 제거 하는 대신 응용 프로그램 수준 web.config에서 설정을 수정 합니다.
 
 인증 탭은 다음과 같습니다. 이 멤버 자격 설정을 구성 합니다. 인증 설정, 멤버 자격 공급자를 구성 하 고 역할 공급자를 여기서 구성할 수 있습니다.
 
-
 ![](membership/_static/image4.jpg)
 
 **그림 4**
-
 
 ## <a name="implementing-membership-in-your-application"></a>멤버 자격 응용 프로그램에서 구현
 
@@ -133,11 +124,9 @@ LoginName 컨트롤 사이트에 현재 로그인 한 사용자의 사용자를 
 
 CreateUserWizard 컨트롤은 멤버 자격 시스템에 등록 하는 편리한 방법을 제공 합니다. 아래에 표시 된 인터페이스를 통해 (WizardSteps 컬렉션으로 구현 됨) 하는 단계를 추가할 수 있습니다.
 
-
 ![](membership/_static/image5.jpg)
 
 **그림 5**
-
 
 CreateUserWizard는 마법사 클래스에서 파생 되 고 다음 템플릿을 제공 하는 템플릿 기반 컨트롤은 같습니다.
 
@@ -167,29 +156,23 @@ ChangePassword 컨트롤에는 사용자를 자신의 암호를 변경할 수 �
 
 경우는 **cacheRolesInCookie** 특성이로 설정 된 물론 ASP.NET 캐시 클라이언트의 쿠키에 사용자 역할 멤버 자격. 이 역할 공급자를 호출 하지 않고 역할 조회 수 있습니다. 개발자는 되도록 하려면이 특성을 사용 하는 경우는 **cookieProtection** 특성 All로 설정 됩니다. (기본 설정입니다.) 이렇게 하면 쿠키 데이터를 암호화 된 쿠키 내용을 변경 하지 않도록 하는 데 도움이 됩니다. 웹 사이트 관리 도구를 사용 하 여 역할을 추가할 수 있습니다. 쉽게 역할 정의 해당 역할에 기반 하 여 사이트의 부분에 대 한 액세스를 구성 하 고 역할에 사용자를 할당할 수 있습니다.
 
-
 ![](membership/_static/image6.jpg)
 
 **그림 6**
-
 
 위와 같이 역할의 이름을 입력 하는 것 다음 역할 추가 클릭 하 여 새 역할을 추가할 수 있습니다. 기존 역할을 관리 하거나 기존 역할 목록에서 적절 한 링크를 클릭 하 여 삭제할 수 있습니다.
 
 역할을 관리 하는 경우에 추가 하거나 아래와 같이 사용자를 제거할 수 있습니다.
 
-
 ![](membership/_static/image7.jpg)
 
 **그림 7**
 
-
 확인란 역할에 사용자를 특정 역할에 사용자를 쉽게 추가할 수 있습니다. ASP.NET에 적절 한 항목을 사용 하 여 멤버 자격 데이터베이스를 자동으로 업데이트 됩니다. 응용 프로그램에 대 한 액세스 규칙을 구성 하려고도 합니다. ASP.NET 1.x 개발자가이 통해 작업을 수행 합니다 &lt;권한 부여&gt; web.config 파일에서 해당 옵션에는 요소는 ASP.NET 2.0에서 계속 사용할 수 있습니다. 그러나 것 액세스를 관리 하는 것이 더 쉬워졌습니다 규칙은 웹 사이트 관리 도구 표시 된 것 처럼 다음을 사용 하 여 합니다.
-
 
 ![](membership/_static/image8.jpg)
 
 **그림 8**
-
 
 이 경우 관리 폴더 강조 표시 됩니다 (해당 고급 도구 밝은 회색으로 강조 표시 되므로 보려는) 및 관리자 역할에 액세스할 수 합니다. 다른 모든 사용자는 거부 됩니다. 규칙을 선택한 다음 위로 및 아래로 이동 단추를 사용 하 여 규칙을 정렬 하려면 헤드 아이콘을 클릭할 수 있습니다. ASP.NET과 마찬가지로 &lt;권한 부여&gt; 요소 규칙은 나타나는 순서 대로 처리 됩니다. 즉, 위의 샷에 규칙의 순서 반전 된 경우 되므로 ASP.NET 발생 하 게 하는 첫 번째 규칙 폴더에 모든 사용자를 거부 하는 규칙 관리 폴더에 액세스할을 수는 없습니다.
 
@@ -209,19 +192,15 @@ ASP.NET 2.0는 액세스 규칙을 지정 하는 폴더에 web.config 파일을 
 
 멤버 자격 및 역할 관리 이해 했으므로 통해 LoginView 컨트롤은 ASP.NET 2.0에서이 기능을 사용 하는 방법을 간략하게 설명 있습니다. 앞에서 설명한 대로 LoginView 컨트롤은 기본적으로 두 개의 템플릿이 포함 된 템플릿 기반 컨트롤 AnonymousTemplate 및 LoggedInTemplate 합니다. 내 LoginView 대화 상자는 아래와 같이 링크는 작업 RoleGroups 편집할 수 있습니다.
 
-
 ![](membership/_static/image9.jpg)
 
 **그림 9**
 
-
 각 RoleGroup 개체 RoleGroup 적용 되는 역할을 정의 하는 문자열의 배열을 포함 합니다. 새 RoleGroup LoginView 컨트롤에 추가 하려면 RoleGroups 편집 링크를 클릭 합니다. 위의 이미지에서 추가한 것 관리자에 대 한 새 RoleGroup 볼 수 있습니다. 해당 RoleGroup를 선택 하 여 (RoleGroup[0]) 뷰 드롭다운 목록에서 있습니까 템플릿을 구성할 수만 관리자 역할의 멤버에 게 표시 되는 합니다. 아래 이미지에서는 Sales 역할 및 배포 역할의 멤버에 적용 되는 새 RoleGroup 추가 했습니다. 두 번째 RoleGroup LoginView 작업 대화 상자에서 뷰 드롭다운 목록에 추가 하 고 해당 템플릿을 추가할 모든 판매 또는 배포의 모든 사용자가 볼 수 있습니다 역할입니다.
-
 
 ![](membership/_static/image10.jpg)
 
 **그림 10**
-
 
 ## <a name="overriding-the-existing-membership-provider"></a>기존 멤버 자격 공급자를 재정의합니다.
 

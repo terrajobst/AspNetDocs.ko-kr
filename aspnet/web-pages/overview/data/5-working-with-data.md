@@ -8,12 +8,12 @@ ms.date: 02/18/2014
 ms.assetid: 673d502f-2c16-4a6f-bb63-dbfd9a77ef47
 msc.legacyurl: /web-pages/overview/data/5-working-with-data
 msc.type: authoredcontent
-ms.openlocfilehash: 0fc828e39cfcce22d4cc226954cf7d1731b04e42
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 4ed2a2a1ee3cff7a50e67b6571b85f74d01efab7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379783"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133229"
 ---
 # <a name="introduction-to-working-with-a-database-in-aspnet-web-pages-razor-sites"></a>Asp.net에서 데이터베이스를 사용 하 여 작업 소개 페이지 (Razor) 사이트
 
@@ -44,7 +44,6 @@ ms.locfileid: "59379783"
 > 
 > 이 자습서 에서도 WebMatrix 3를 사용 하 여 작동합니다. ASP.NET 웹 페이지 3 및 Visual Studio 2013 (또는 Visual Studio Express 2013 for Web)를 사용할 수 있습니다. 그러나 사용자 인터페이스는 이와 다릅니다.
 
-
 ## <a name="introduction-to-databases"></a>데이터베이스에 대 한 소개
 
 일반적인 주소록을 가정해 보겠습니다. 주소록의 각 항목에 대 한 (즉, 각 사용자에 대 한) 이름, 성, 주소, 전자 메일 주소 및 전화 번호와 같은 일부 정보가 있습니다.
@@ -67,7 +66,6 @@ ms.locfileid: "59379783"
 > 다 수의 스프레드시트 및 텍스트 파일 등의 방법으로 데이터를 저장할 수 있습니다. 그러나 대부분의 비즈니스 용도로 데이터는 관계형 데이터베이스에 저장 됩니다.
 > 
 > 이 문서에서는 데이터베이스에 무척 깊게 이동 하지 않습니다. 그러나 수 찾게에 대 한 이해 하는 데 유용 합니다. 관계형 데이터베이스에서 정보를 별도 테이블에 논리적으로 구분 됩니다. 예를 들어, 학교에 대 한 데이터베이스 수업 및 학생에 대 한 별도 테이블을 포함할 수 있습니다. 데이터베이스 (예: SQL Server) 소프트웨어에서 지 원하는 강력한 명령을 수 있도록 동적으로 테이블 간의 관계를 설정 합니다. 예를 들어, 일정을 만들려면 학생 및 수업 간의 논리적 관계를 설정 하는 관계형 데이터베이스를 사용할 수 있습니다. 별도 테이블에 데이터를 저장할 테이블 구조의 복잡성이 줄어들고 테이블에 중복 데이터를 보관할 필요가 줄어듭니다.
-
 
 ## <a name="creating-a-database"></a>데이터베이스 만들기
 
@@ -173,7 +171,6 @@ ms.locfileid: "59379783"
 > 
 > SQL 명령 여러 가지가 있지만 다음과 같은 패턴을 따릅니다. SQL 명령을 사용 하 여 데이터베이스 및 테이블을 만들고, 테이블의 레코드 개수, 가격 계산 보다 많은 작업을 수행할 수 있습니다.
 
-
 ## <a name="inserting-data-in-a-database"></a>데이터베이스에 데이터 삽입
 
 이 섹션에는 사용자가 새 제품을 추가할 수 있는 페이지를 만드는 방법을 보여 줍니다 합니다 *제품* 데이터베이스 테이블입니다. 새 제품 레코드를 삽입 한 후 페이지에 표시 됩니다 사용 하 여 업데이트 된 테이블의 *ListProducts.cshtml* 이전 섹션에서 만든 페이지입니다.
@@ -238,7 +235,6 @@ ms.locfileid: "59379783"
 > [!NOTE] 
 > 
 > **중요 한** 프로덕션 웹 사이트에서 일반적으로 제한할 있습니다 데이터를 변경 하려면 허용할 사람입니다. 멤버 자격을 설정 하는 방법에 대 한 사이트에서 작업을 수행 하는 사용자 권한을 부여 하는 방법에 대 한 정보를 참조 하세요 [추가 보안 및 ASP.NET 웹 페이지 사이트 멤버 자격](https://go.microsoft.com/fwlink/?LinkId=202904)합니다.
-
 
 1. 웹 사이트에서 이라는 새 CSHTML 파일을 만듭니다 *EditProducts.cshtml*합니다.
 2. 파일의 기존 태그를 다음으로 바꿉니다.
@@ -321,7 +317,6 @@ ms.locfileid: "59379783"
 > 
 > **중요 한** 프로덕션 웹 사이트에서 일반적으로 제한할 있습니다 데이터를 변경 하려면 허용할 사람입니다. 멤버 자격을 설정 하는 방법에 대 한 사이트에서 작업을 수행 하는 사용자 권한을 부여 하는 방법에 대 한 정보를 참조 하세요 [추가 보안 및 ASP.NET 웹 페이지 사이트 멤버 자격](https://go.microsoft.com/fwlink/?LinkId=202904)합니다.
 
-
 1. 웹 사이트에서 이라는 새 CSHTML 파일을 만듭니다 *ListProductsForDelete.cshtml*합니다.
 2. 기존 태그를 다음으로 바꿉니다.
 
@@ -384,7 +379,6 @@ ms.locfileid: "59379783"
 > 언급 했 듯이 `Database.Open` 메서드를 사용 하면 데이터베이스 이름 또는 연결 문자열을 전달 하 고 사용 하는 그림 됩니다. 배포 하는 경우이 기능은 매우 유용 (게시) 웹 사이트입니다. 사용할 수는 *.sdf* 파일을 *앱\_데이터* 을 개발 하 고 사이트를 테스트 하는 경우 폴더입니다. 사이트를 프로덕션 서버로 이동할 때 연결 문자열을 사용할 수 있습니다 합니다 *Web.config* 와 동일한 이름을 가진 파일에 *.sdf* 있지만 호스팅 공급자의 가리키는 &#8212;코드를 변경할 필요 없이 합니다.
 > 
 > 마지막으로, 연결 문자열을 직접 사용 하려는 경우 호출할 수 있습니다 합니다 `Database.OpenConnectionString` 메서드와 패스의 이름만 대신 해당 실제 연결 문자열을 *Web.config* 파일입니다. 어떤 이유로 없는 연결 문자열에 액세스 하는 경우에 유용할 수 있습니다 (에서 같은 값 또는 합니다 *.sdf* 파일 이름) 페이지 실행 될 때까지 합니다. 그러나 대부분의 시나리오에서 사용할 수 있습니다 `Database.Open` 이 문서에 설명 된 대로 합니다.
-
 
 ## <a name="additional-resources"></a>추가 리소스
 

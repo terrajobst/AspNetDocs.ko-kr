@@ -8,12 +8,12 @@ ms.date: 02/20/2014
 ms.assetid: 68de4326-7611-4b9b-b5f6-79b7adc3069f
 msc.legacyurl: /web-pages/overview/testing-and-debugging/introduction-to-debugging
 msc.type: authoredcontent
-ms.openlocfilehash: d4be58f618ed990b1932b4388f84cd743c21f009
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ae7d871e56326610c043dc20fe6e0919e1b4ac89
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389611"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65127821"
 ---
 # <a name="introduction-to-debugging-aspnet-web-pages-razor-sites"></a>ASP.NET 웹 디버깅 소개 페이지 (Razor) 사이트
 
@@ -41,7 +41,6 @@ ms.locfileid: "59389611"
 >
 >
 > 이 자습서는 ASP.NET 웹 페이지 2 에서도 작동합니다. WebMatrix 3를 사용할 수 있지만 통합된 된 디버거 지원 되지 않습니다.
-
 
 오류 및 코드의 문제를 해결 하는 중요 한 부분은 애초에 대처 하는 것입니다. 오류를 일으킬 수 있는 코드의 섹션을 배치 하 여 이렇게 `try/catch` 블록입니다. 오류 처리에 대 한 내용은 섹션을 참조 [로 ASP.NET 웹 프로그래밍 Razor 구문 소개](https://go.microsoft.com/fwlink/?LinkId=202890)합니다.
 

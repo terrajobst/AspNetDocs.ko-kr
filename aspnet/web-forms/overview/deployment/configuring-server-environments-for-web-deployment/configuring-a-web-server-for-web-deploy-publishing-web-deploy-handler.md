@@ -8,12 +8,12 @@ ms.date: 01/29/2017
 ms.assetid: 90ebf911-1c46-4470-b876-1335bd0f590f
 msc.legacyurl: /web-forms/overview/deployment/configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-web-deploy-handler
 msc.type: authoredcontent
-ms.openlocfilehash: cf18a8860d34daa23f61e3dde13c2c79c6c0d4a5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 51a8fdf44199b5a4735e0e00657639b191f51255
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57048120"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125990"
 ---
 # <a name="configuring-a-web-server-for-web-deploy-publishing-web-deploy-handler"></a>웹 배포 게시용 웹 서버 구성(웹 배포 처리기)
 
@@ -28,7 +28,6 @@ ms.locfileid: "57048120"
 > - 사용 하 여 *오프 라인 배포*합니다. 이 방법은 웹 서버에 최소 구성이 필요 하지만 서버 관리자가 수동으로 서버로 웹 패키지를 복사 하 고 IIS 관리자를 통해 가져옵니다.
 > 
 > 주요 기능, 이점 및 이러한 접근 방식의 단점에 대 한 자세한 내용은 참조 하세요. [웹 배포에 오른쪽 접근 방식을 선택](choosing-the-right-approach-to-web-deployment.md)합니다.
-
 
 예, 관리자가 아닌 사용자가 특정 IIS 웹 사이트에 콘텐츠를 배포 하도록 허용 하려는 경우. 이 방법은 이러한 종류의 시나리오에서 바람직한 경우가 많습니다.
 
@@ -64,7 +63,6 @@ ContactManager 샘플 솔루션, 특히 호스트도 해야 합니다.
 > [!NOTE]
 > 참조 컴퓨터를 도메인에 가입 하는 방법은 [도메인 및 로그온에 컴퓨터 가입](https://technet.microsoft.com/library/cc725618(v=WS.10).aspx)합니다. 고정 IP 주소를 구성 하는 방법에 대 한 자세한 내용은 참조 하세요. [정적 IP 주소를 구성](https://technet.microsoft.com/library/cc754203(v=ws.10).aspx)합니다.
 
-
 ## <a name="install-products-and-components"></a>제품 및 구성 요소를 설치 합니다.
 
 이 섹션에서는 웹 서버에서 필요한 제품 및 구성 요소를 설치 하는 과정 안내 합니다. 시작 하기 전에 서버에 최신 인지 확인 하려면 Windows Update를 실행 하는 것이 좋습니다.
@@ -80,7 +78,6 @@ ContactManager 샘플 솔루션, 특히 호스트도 해야 합니다.
 
 > [!NOTE]
 > 이 연습에서는 웹 플랫폼 설치 관리자를 설치 하 여 다양 한 구성 요소 사용을 설명 합니다. 웹 플랫폼 설치 관리자를 사용 하 여 필요가 있지만 자동으로 종속성을 검색 하 고 제품을 최신 버전 항상 얻을 수를 확인 하 여 설치 프로세스를 간소화 합니다. 자세한 내용은 [Microsoft Web Platform Installer](https://go.microsoft.com/?linkid=9805118)합니다.
-
 
 **필요한 제품 및 구성 요소를 설치 하려면**
 
@@ -239,7 +236,6 @@ ContactManager 샘플 솔루션, 특히 호스트도 해야 합니다.
 > [!NOTE]
 > IIS 7.5에서 응용 프로그램 풀 id에 대 한 자세한 내용은 참조 하세요. [응용 프로그램 풀 Id](https://go.microsoft.com/?linkid=9805123)합니다.
 
-
 **IIS 웹 사이트에 대 한 폴더 사용 권한을 구성 하려면**
 
 1. Windows 탐색기에서 로컬 폴더의 위치로 이동 합니다.
@@ -281,7 +277,6 @@ ContactManager 샘플 솔루션, 특히 호스트도 해야 합니다.
 | --- | --- | --- | --- |
 | 인바운드 | 임의의 값 | 8172 | TCP |
 | 아웃바운드 | 8172 | 임의의 값 | TCP |
-  
 
 Windows 방화벽에서 규칙 구성에 대 한 자세한 내용은 참조 하세요. [방화벽 규칙 구성](https://technet.microsoft.com/library/dd448559(WS.10).aspx)합니다. 타사 방화벽 제품 설명서를 참조 하십시오.
 

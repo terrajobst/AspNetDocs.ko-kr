@@ -8,17 +8,16 @@ ms.date: 10/05/2011
 ms.assetid: cf0b487c-f387-46dd-b3bc-6b3c4af17c9c
 msc.legacyurl: /web-forms/videos/sql-2005
 msc.type: chapter
-ms.openlocfilehash: c07bfaeb29e20b042861ab59e6cd8f7d12744205
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: de0e83d09d0610a72915173479c9ef0541093890
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59416183"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132949"
 ---
 # <a name="sql-2005"></a>SQL 2005
 
 > ASP.NET 응용 프로그램에 데이터베이스 기능을 추가 하려면 SQL Server Express를 사용 하는 방법입니다.
-
 
 - [데이터베이스란?](what-is-a-database.md)
 - [데이터베이스 테이블 및 레코드의 이해](understanding-database-tables-and-records.md)

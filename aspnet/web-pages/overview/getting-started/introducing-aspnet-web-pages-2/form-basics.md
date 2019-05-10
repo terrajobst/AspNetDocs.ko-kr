@@ -8,12 +8,12 @@ ms.date: 05/28/2015
 ms.assetid: 81ed82bf-b940-44f1-b94a-555d0cb7cc98
 msc.legacyurl: /web-pages/overview/getting-started/introducing-aspnet-web-pages-2/form-basics
 msc.type: authoredcontent
-ms.openlocfilehash: f88f7a31551abda029bee0ec16aa35ce2ef5d2f0
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f57661077ec3bb13f3d4ec41b130bda4d2fb9070
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59385958"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132955"
 ---
 # <a name="introducing-aspnet-web-pages---html-form-basics"></a>HTML 양식 기본 ASP.NET 웹 페이지 소개
 
@@ -33,7 +33,6 @@ ms.locfileid: "59385958"
 > 
 > - `Request` 개체
 > - SQL `Where` 절.
-
 
 ## <a name="what-youll-build"></a>만들 내용
 
@@ -82,7 +81,6 @@ ms.locfileid: "59385958"
 > 
 > (HTTP 동사에 대 한 자세한 내용은 참조는 [메서드 정의](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) W3C 사이트 문서.)
 
-
 대부분의 사용자 입력된 요소의 HTML은 `<input>` 요소입니다. 와 같은 모양이 `<input type="type" name="name">,` 여기서 *형식* 원하는 사용자 입력된 컨트롤의 종류를 나타냅니다. 이러한 요소는 일반적으로:
 
 - 텍스트 상자: `<input type="text">`
@@ -104,7 +102,6 @@ ms.locfileid: "59385958"
 > 아시다시피, HTML 전환 중에서 이며 최신 버전 (HTML5) 정보를 입력 하는 사용자에 대 한 보다 직관적인 방법에 대 한 지원이 포함 되어 있습니다. 예를 들어, html5로 (페이지 개발자) 할 수 있습니다 페이지 하려는 날짜를 입력 하는 사용자입니다. 사용자는 날짜를 수동으로 입력 하도록 요구 하는 것이 아니라 일정 브라우저는 자동으로 표시한 다음 수 있습니다. 그러나 HTML5는 새로운 클래스 이며 아직 모든 브라우저에서 지원 되지 않습니다.
 > 
 > ASP.NET 웹 페이지에 입력 하는 사용자의 브라우저는 HTML5 지원 합니다. 새 특성에 대 한 개념은 `<input>` html5로 요소를 참조 하세요 [HTML &lt;입력&gt; 특성을 입력](http://www.w3schools.com/html/html_form_input_types.asp) W3Schools 사이트입니다.
-
 
 ## <a name="creating-the-form"></a>폼 만들기
 
@@ -176,7 +173,6 @@ WebMatrix에서에 **파일** 작업 영역을 열고 합니다 *Movies.cshtml* 
 > 
 > 특정 수의 하위 집합을 사용 하는 것이 좋습니다 `Request` 원하는 같은 있다고 `Request.Form` 또는 `Request.QueryString`합니다. 이 자습서에서 만드는 간단한 페이지, 아마도 하지 않는 실제로 것 간 차이입니다. 그러나 더 복잡 한 페이지를 만들 때 버전을 사용 하는 명시적 `Request.Form` 또는 `Request.QueryString` 페이지 폼 (또는 여러 개의 폼)을 포함 하는 경우 발생할 수 있는 문제를 방지 하는 데 도움이 쿠키, 쿼리 문자열 값 및 등입니다.
 
-
 ## <a name="creating-a-query-by-using-a-search-term"></a>검색 용어를 사용 하 여 쿼리 만들기
 
 사용자가 입력 한 검색어를 가져오는 방법을 배웠으므로를 사용 하는 쿼리를 만들 수 있습니다. 데이터베이스에서 모든 동영상 항목을 가져오려면 사용 하는 경우이 문은 같은 SQL 쿼리를 기억해 야 합니다.
@@ -218,7 +214,6 @@ SQL 문은 궁금한 경우 대/소문자 구분 하지 않습니다 &mdash; `SE
 > **중요!** 자리 표시자를 사용 하 여 (같은 `@0`) 값을 SQL 명령에 전달 하는 *매우 중요 한* 보안에 대 한 합니다. 변수 데이터에 대 한 자리 표시자를 사용 하 여 여기에서 살펴본 방식에는 유일한 방법은 SQL 명령을 생성 해야 합니다.
 > 
 > 리터럴 텍스트 (연결) 및 사용자에서 가져온 값을 결합 하 여 SQL 문을 생성 하지 않습니다. 사이트를 열고 SQL 문으로 사용자 입력을 연결 하는 *SQL 주입 공격* 악의적인 사용자 데이터베이스를 해킹 하는 페이지에 대 한 값을 제출 하는 경우. (자세한 내용은 문서의 [SQL 주입](https://msdn.microsoft.com/library/ms161953.aspx) MSDN 웹 사이트.)
-
 
 ## <a name="updating-the-movies-page-with-search-code"></a>코드 검색을 사용 하 여 영화 페이지 업데이트
 
@@ -280,7 +275,6 @@ WebMatrix를 실행 합니다 *Movies.cshtml* 페이지입니다. 장르에 대 
 
 > [!NOTE]
 > 기억할 수 없는 "" 암호에 사용 되는 입력란의 값입니다. 사람이 코드를 사용 하 여 암호 필드를 채울 수 있도록 보안 허점을 것입니다.
-
 
 페이지를 다시 실행을 장르를 입력 한 다음 클릭 **검색 장르**합니다. 이 시간 뿐만 아니라 있습니다 볼 검색 결과 수 있지만 입력란 기억 마지막 입력:
 

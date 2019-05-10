@@ -8,12 +8,12 @@ ms.date: 03/02/2009
 ms.assetid: df6cf4b7-0bb3-4c4e-b17a-bd78a759a6bc
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/performing-simple-validation-vb
 msc.type: authoredcontent
-ms.openlocfilehash: c7a1b9e82defaae71f0a911e5e4321f6e15ad8bf
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 46925f22b7dfc23f2bb89b8d2fff0cbd8ae49062
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59422618"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65122485"
 ---
 # <a name="performing-simple-validation-vb"></a>간단한 유효성 검사 수행(VB)
 
@@ -21,16 +21,13 @@ ms.locfileid: "59422618"
 
 > ASP.NET MVC 응용 프로그램에서 유효성 검사를 수행 하는 방법에 알아봅니다. 이 자습서에서는 Stephen walther가 모델 상태 수 및 HTML 유효성 검사 도우미를 소개합니다.
 
-
 이 자습서의 목표는 ASP.NET MVC 응용 프로그램 내에서 유효성 검사를 수행할 수는 방법을 설명 합니다. 예를 들어 사용자가 필수 필드에 대 한 값을 포함 하지 않는 양식을 제출 하지 못하도록 하는 방법에 알아봅니다. 모델 상태 및 유효성 검사 HTML 도우미를 사용 하는 방법을 알아봅니다.
 
 ## <a name="understanding-model-state"></a>모델 상태 이해
 
 사용 하 여 모델 상태 또는 보다 정확 하 게 된 모델 상태 사전-유효성 검사 오류를 나타냅니다. 예를 들어 create () 작업 목록 1에서 데이터베이스를 Product 클래스를 추가 하기 전에 Product 클래스의 속성을 확인 합니다.
 
-
 컨트롤러에 유효성 검사 또는 데이터베이스 논리를 추가 하는 권장 하지. 컨트롤러 응용 프로그램 흐름 제어와 관련 된 논리만 포함 해야 합니다. 간단 하 게 바로 가기를 취하고 있습니다.
-
 
 **Listing 1 - Controllers\ProductController.vb**
 
@@ -52,19 +49,15 @@ Html.ValidationMessage() 및 Html.ValidationSummary() 도우미 ASP.NET MVC 스 
 4. **콘텐츠 보기** 드롭다운 목록에서 만들기를 선택 합니다.
 5. **추가** 단추를 클릭합니다.
 
-
 뷰를 추가 하기 전에 응용 프로그램을 빌드하는 것이 있는지 확인 합니다. 클래스 목록에 나타나지이 고, 그렇지 합니다 **데이터 클래스 보기** 드롭다운 목록입니다.
-
 
 [![새 프로젝트 대화 상자](performing-simple-validation-vb/_static/image1.jpg)](performing-simple-validation-vb/_static/image1.png)
 
 **그림 01**: 뷰 추가 ([클릭 하 여 큰 이미지 보기](performing-simple-validation-vb/_static/image2.png))
 
-
 [![새 프로젝트 대화 상자](performing-simple-validation-vb/_static/image2.jpg)](performing-simple-validation-vb/_static/image3.png)
 
 **그림 02**: 강력한 형식의 뷰 만들기 ([클릭 하 여 큰 이미지 보기](performing-simple-validation-vb/_static/image4.png))
-
 
 다음이 단계를 완료 한 후에 목록 2에서 만들기 뷰를 가져옵니다.
 
@@ -78,11 +71,9 @@ Html.ValidationMessage() 도우미는 HTML 폼 필드의 각 항목 옆에 있�
 
 그림 3에 있는 페이지에는 누락 된 필드와 값이 잘못 된 양식이 제출 되 면 유효성 검사 도우미에서 렌더링 하는 오류 메시지를 보여 줍니다.
 
-
 [![새 프로젝트 대화 상자](performing-simple-validation-vb/_static/image3.jpg)](performing-simple-validation-vb/_static/image5.png)
 
 **그림 03**: 문제 제출 Create view ([클릭 하 여 큰 이미지 보기](performing-simple-validation-vb/_static/image6.png))
-
 
 HTML의 모양을 입력 필드는 유효성 검사 오류가 있을 때에 수정 하는 것을 확인 합니다. Html.TextBox() 도우미 렌더링을 *클래스 "입력 유효성 검사 오류" =* 유효성 검사 오류가 있을 경우 특성 속성에 연결 된 Html.TextBox() 도우미에서 렌더링 합니다.
 
@@ -98,16 +89,13 @@ HTML의 모양을 입력 필드는 유효성 검사 오류가 있을 때에 수�
 > 
 > HtmlHelper 클래스와 관련 된 CSS 유효성 검사의 이름을 검색에 대 한 읽기 전용 정적 속성을 포함 클래스입니다. 이러한 정적 속성에는 ValidationInputCssClassName, ValidationFieldCssClassName, 및 ValidationSummaryCssClassName 이름이 지정 됩니다.
 
-
 ## <a name="prebinding-validation-and-postbinding-validation"></a>Prebinding 유효성 검사 및 Postbinding 유효성 검사
 
 제품을 만들기 위한 HTML 양식을 전송 하면 가격 필드와 UnitsInStock 필드에 대 한 값이 없는 잘못 된 값을 입력 하 고 하는 경우 그림 4에 표시 되는 유효성 검사 메시지를 얻을 수 있습니다. 수행할 유효성 검사 오류 메시지에 이러한 출처에서?
 
-
 [![새 프로젝트 대화 상자](performing-simple-validation-vb/_static/image4.jpg)](performing-simple-validation-vb/_static/image7.png)
 
 **그림 04**: 유효성 검사 오류 prebinding ([클릭 하 여 큰 이미지 보기](performing-simple-validation-vb/_static/image8.png))
-
 
 실제로 두 가지 유형의 HTML 양식 필드는 클래스에 바인딩되고 양식 필드 클래스에 바인딩된 후에 생성 된 전에 생성 된 유효성 검사 오류 메시지-있습니다. 즉, prebinding 유효성 검사 오류 및 유효성 검사 오류 postbinding 합니다.
 

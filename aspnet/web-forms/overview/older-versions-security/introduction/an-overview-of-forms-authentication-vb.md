@@ -8,12 +8,12 @@ ms.date: 01/14/2008
 ms.assetid: 83267f7d-64d9-41ee-82cf-da91b1bf534d
 msc.legacyurl: /web-forms/overview/older-versions-security/introduction/an-overview-of-forms-authentication-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 84b1c4c562603eddc5b82500700957bc78f236f4
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 4fb644ed61399ba1e7a98080e591867c675f3d61
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59386453"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65127773"
 ---
 # <a name="an-overview-of-forms-authentication-vb"></a>폼 인증 (VB) 개요
 
@@ -24,7 +24,6 @@ ms.locfileid: "59386453"
 > 이 자습서에서는 기능을 단순한 토론에서 구현 됩니다. 특히, 폼 인증을 구현 살펴봅니다. 이 자습서에서 생성 하는 것이 먼저 웹 응용 프로그램 멤버 자격 및 역할에 간단한 폼 인증에서 이동 후속 자습서를 기반으로 구축 계속 됩니다.
 > 
 > 이 항목에 대 한 자세한 내용은이 비디오를 참조 하세요. [Basic을 사용 하 여 asp.net에서 폼 인증](../../../videos/authentication/using-basic-forms-authentication-in-aspnet.md)합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -47,11 +46,9 @@ Formsauthenticationmodule은 실행 하는 UrlAuthorizationModule (및 FileAutho
 
 로그인 페이지의 역할은 확인 하는 경우 사용자의 자격 증명이 유효한 경우 폼 인증 티켓을 만들고 페이지로 사용자를 리디렉션하는 하 려 했던 방문입니다. 인증 티켓 formsauthenticationmodule은 사용자를 식별 하는 웹 사이트에 있는 페이지에 대 한 후속 요청에 포함 됩니다.
 
-
 [![Forms 인증 워크플로](an-overview-of-forms-authentication-vb/_static/image2.png)](an-overview-of-forms-authentication-vb/_static/image1.png)
 
 **그림 01**: Forms 인증 워크플로 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-vb/_static/image3.png))
-
 
 ### <a name="remembering-the-authentication-ticket-across-page-visits"></a>방문 페이지에서 인증 티켓을 기억
 
@@ -60,12 +57,10 @@ Formsauthenticationmodule은 실행 하는 UrlAuthorizationModule (및 FileAutho
 > [!NOTE]
 > 각 자습서에 사용 되는 데모 웹 응용 프로그램 다운로드로 제공 됩니다. 이 다운로드 가능한 응용 프로그램은.NET Framework 버전 3.5 대상으로 하는 Visual Web Developer 2008을 사용 하 여 생성 되었습니다. .NET 3.5에 대 한 응용 프로그램을 대상으로 하므로 해당 Web.config 파일 추가, 3.5 관련 구성 요소를 포함 합니다. 결론부터 말하자면, 다운로드할 수 있는 웹 응용 프로그램이 다음 컴퓨터에.NET 3.5를 설치 하려면 아직 Web.config에서 첫 번째 3.5 관련 태그를 제거 하지 않고 작동 하지 않습니다.
 
-
 쿠키의 측면 중 하나는 해당 만료 날짜와 브라우저는 쿠키를 삭제 하는 시간입니다. 폼 인증 쿠키가 만료 되 면 사용자 인증 및 익명를 따라서 될 더 이상 수 없습니다. 공용 터미널에서 사용자가 방문 하는 경우 브라우저를 닫을 때 만료는 인증 티켓 하고자 하는 것이 경우가 있습니다. 그러나 집에서 방문 하는 경우 동일한 사용자 수도 없는 있도록 브라우저 다시 시작 후 저장 하려면 인증 티켓을 사이트를 방문할 때마다 다시 로그인 합니다. 이 의사 결정의 로그인 페이지에서 암호 저장 확인란의 형태로 사용자가 자주 이루어집니다. 3 단계에서에서 로그인 페이지에서 암호 저장 확인란을 구현 하는 방법을 살펴보겠습니다. 다음 자습서를 인증 티켓 시간 제한 설정을 자세히 다룹니다.
 
 > [!NOTE]
 > 웹 사이트에 로그온 하는 데 사용자 에이전트 쿠키를 지원 하지 않을 수 있습니다 것 같습니다. 이러한 경우 ASP.NET 쿠키 없는 폼 인증 티켓을 사용할 수 있습니다. 이 모드에서는 인증 티켓을 URL로 인코딩됩니다. 쿠키 없는 인증 티켓을 사용할 때와 만들어지고 다음 자습서에서 관리 되는 방법을 살펴보겠습니다.
-
 
 ### <a name="the-scope-of-forms-authentication"></a>폼 인증의 범위
 
@@ -84,21 +79,17 @@ Formsauthenticationmodule은 관리 되는 ASP.NET 런타임의 일부 코드입
 > [!NOTE]
 > Visual Studio에서는 프로젝트 관리의 두 가지 모드를 지원합니다. 웹 사이트 프로젝트와 웹 응용 프로그램 프로젝트입니다. 웹 사이트 프로젝트는 프로젝트 아키텍처에 Visual Studio.NET 2002/2003을 모방 하는 웹 응용 프로그램 프로젝트-프로젝트 파일을 포함 하 고 /bin 폴더에 배치 되는 단일 어셈블리를 프로젝트의 소스 코드를 컴파일할 때 반면 프로젝트 파일을 부족 합니다. Visual Studio 2005 처음에 지원 되는 웹 사이트 프로젝트에 있지만 서비스 팩 1을 사용 하 여 웹 응용 프로그램 프로젝트 모델을 다시 도입 되었습니다. Visual Studio 2008 프로젝트 모델을 모두 제공합니다. 그러나 Visual Web Developer 2005 및 2008 edition만 지원 웹 사이트 프로젝트입니다. 웹 사이트 프로젝트 모델로 사용 하겠습니다. Express 이외의 버전을 사용 하는 사용 하려면 합니다 [웹 응용 프로그램 프로젝트 모델](https://msdn.microsoft.com/library/aa730880(vs.80).aspx) 대신 자유롭게 있을 수 있다는 일부 불일치 화면 및 수행 해야 하는 단계에 표시 되는 내용 간에 수 있지만 이렇게 합니다 이 자습서에 제공 된 지침을 표시 하는 스크린 샷
 
-
 [![새 파일 시스템 기반 웹 사이트 만들기](an-overview-of-forms-authentication-vb/_static/image5.png)](an-overview-of-forms-authentication-vb/_static/image4.png)
 
 **그림 02**: New File System-Based 웹 사이트 만들기 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-vb/_static/image6.png))
-
 
 ### <a name="adding-a-master-page"></a>마스터 페이지 추가
 
 다음으로 사이트 Site.master 명명 된 루트 디렉터리에 새 마스터 페이지를 추가 합니다. [마스터 페이지](https://msdn.microsoft.com/library/wtxbf3hh.aspx) ASP.NET 페이지에 적용할 수 있는 사이트 전체 템플릿을 정의 하는 페이지 개발자를 사용 하도록 설정 합니다. 마스터 페이지의 주요 장점은 사이트의 전체적인 모양을 정의할 수 있습니다 단일 위치에 있으므로 간편 하 게 업데이트 하거나 사이트의 레이아웃을 조정입니다.
 
-
 [![마스터 페이지 추가 웹 사이트에 Site.master 라는](an-overview-of-forms-authentication-vb/_static/image8.png)](an-overview-of-forms-authentication-vb/_static/image7.png)
 
 **그림 03**: 웹 사이트에 마스터 페이지 라는 Site.master 추가 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-vb/_static/image9.png))
-
 
 마스터 페이지에서 사이트 전체 페이지 레이아웃 여기를 정의 합니다. 디자인 뷰를 사용할 수 있으며 필요한 모든 레이아웃 또는 웹 컨트롤을 추가 하거나 수동으로 소스 뷰에서 태그를 수동으로 추가할 수 있습니다. 마스터 페이지의 레이아웃에 사용 되는 레이아웃을 모방을 구조적 합니까 내 *[ASP.NET 2.0에서 데이터로 작업할](../../data-access/index.md)* 자습서 시리즈 (그림 4 참조). 마스터 페이지를 사용 하 여 [cascading style sheet](http://www.w3schools.com/css/default.asp) 위치 (이 자습서의 관련된 다운로드에 포함 됨)는 Style.css 파일에 정의 된 CSS 설정 사용 하 여 스타일에 대 한 합니다. 아래에 표시 된 태그에서 알 수 없습니다, 하는 동안 CSS 규칙을 정의 하는 탐색 &lt;div&gt;의 콘텐츠는 왼쪽에 표시 되 고 고정 너비가 200 픽셀이 있도록 절대적으로 배치 됩니다.
 
@@ -108,11 +99,9 @@ Formsauthenticationmodule은 관리 되는 ASP.NET 런타임의 일부 코드입
 
 위에 입력 한 태그를 사용 하 여 마스터 페이지의 레이아웃을 표시 디자인 뷰로 전환 합니다. 이 마스터 페이지를 사용 하는 모든 ASP.NET 페이지 MainContent 영역에 대 한 태그를 지정 하는 기능을 사용 하 여이 균일 한 레이아웃을 갖게 됩니다.
 
-
 [![마스터 페이지, 디자인 뷰를 통해 볼 때](an-overview-of-forms-authentication-vb/_static/image11.png)](an-overview-of-forms-authentication-vb/_static/image10.png)
 
 **그림 04**:의 마스터 페이지 때 볼 통해 디자인 뷰 ([큰 이미지를 보려면 클릭](an-overview-of-forms-authentication-vb/_static/image12.png))
-
 
 ### <a name="creating-content-pages"></a>콘텐츠 페이지 만들기
 
@@ -120,20 +109,16 @@ Formsauthenticationmodule은 관리 되는 ASP.NET 런타임의 일부 코드입
 
 다음으로, 솔루션 탐색기에서 프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 Default.aspx 라는 새 Web Form을 추가 하려면 선택 합니다. 이 이번에 마스터 페이지 선택 확인란을 선택 하 고 목록에서 Site.master 마스터 페이지를 선택 합니다.
 
-
 [![마스터 페이지를 선택 하는 새 Default.aspx 페이지 추가](an-overview-of-forms-authentication-vb/_static/image14.png)](an-overview-of-forms-authentication-vb/_static/image13.png)
 
 **그림 05**: 새 Default.aspx 페이지 선택 마스터 페이지를 선택 하려면 추가 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-vb/_static/image15.png))
-
 
 [![Site.master 마스터 페이지를 사용 합니다.](an-overview-of-forms-authentication-vb/_static/image17.png)](an-overview-of-forms-authentication-vb/_static/image16.png)
 
 **그림 06**: Site.master 마스터 페이지를 사용 하 여 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-vb/_static/image18.png))
 
-
 > [!NOTE]
 > 웹 응용 프로그램 프로젝트 모델을 사용 하는 경우 새 항목 추가 대화 상자에는 마스터 페이지 선택 확인란을 포함 되지 않습니다. 대신, 웹 콘텐츠 폼 형식의 항목을 추가 해야 합니다. Visual Studio에서 동일한 Select 마스터를 표시 하는 데 웹 콘텐츠 폼 옵션을 선택 하 고 추가 클릭 한 후 그림 6 에서처럼 대화 상자가 있습니다.
-
 
 새 Default.aspx 페이지의 선언적 태그만 포함을 @Page 마스터에 대 한 경로 지정 하는 지시문 MainContent ContentPlaceHolder 마스터 페이지의 파일 및 콘텐츠 컨트롤을 페이지입니다.
 
@@ -143,7 +128,6 @@ Formsauthenticationmodule은 관리 되는 ASP.NET 런타임의 일부 코드입
 
 > [!NOTE]
 > 마스터 페이지 메뉴 또는 다른 탐색 인터페이스에 대 한 섹션을 포함 합니다. 이후 자습서에서 이러한 인터페이스를 만들겠습니다.
-
 
 ## <a name="step-2-enabling-forms-authentication"></a>2단계: 폼 인증을 사용 하도록 설정
 
@@ -158,11 +142,9 @@ ASP.NET 웹 사이트를 만든 다음이 작업은 폼 인증을 사용 하도�
 
 프로젝트에 아직 없는 경우 Web.config 파일을 하나의 이제에서 마우스 오른쪽 단추로 클릭 솔루션 탐색기에서 프로젝트 이름을 새 항목 추가 선택 하 고 웹 구성 파일을 추가 하는 다음을 추가 합니다.
 
-
 [![프로젝트는 Web.config를 아직 포함 되지 않은, 경우 지금 추가](an-overview-of-forms-authentication-vb/_static/image20.png)](an-overview-of-forms-authentication-vb/_static/image19.png)
 
 **그림 07**: 경우 Your 프로젝트 않습니다 하지 아직 포함 Web.config, 추가 지금 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-vb/_static/image21.png))
-
 
 다음으로 &lt;인증&gt; 요소 및 폼 인증을 사용 하도록 업데이트 합니다. 이렇게이 변경한 후 Web.config 파일의 태그는 다음과 비슷하게 표시 됩니다.
 
@@ -170,7 +152,6 @@ ASP.NET 웹 사이트를 만든 다음이 작업은 폼 인증을 사용 하도�
 
 > [!NOTE]
 > Web.config XML 파일 이므로 대/소문자는 중요 합니다. 6. 대문자를 사용 하 여 양식 모드 특성을 설정 되었는지 확인 대/소문자, 폼 등을 사용 하는 경우 받게 구성 오류가 브라우저를 통해 사이트를 방문할 때.
-
 
 &lt;인증&gt; 요소를 선택적으로 포함할 수는 &lt;forms&gt; forms 인증 관련 설정이 포함 된 자식 요소입니다. 지금은 기본 폼 인증 설정 뿐 사용해 보겠습니다. 살펴봅니다 합니다 &lt;forms&gt; 다음 자습서에서 자세히 자식 요소입니다.
 
@@ -190,11 +171,9 @@ ASP.NET 웹 사이트를 만든 다음이 작업은 폼 인증을 사용 하도�
 
 이제 첫 번째 작업을 사용 하 여 시작 하세요. Login.aspx 라는 사이트의 루트 디렉터리에 새 ASP.NET 페이지를 추가 하 고 Site.master 마스터 페이지를 사용 하 여 연결 합니다.
 
-
 [![새 ASP.NET 페이지를 추가 Login.aspx 라는](an-overview-of-forms-authentication-vb/_static/image23.png)](an-overview-of-forms-authentication-vb/_static/image22.png)
 
 **그림 08**: 새 ASP.NET 페이지 라는 Login.aspx 추가 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-vb/_static/image24.png))
-
 
 일반 로그인 페이지 인터페이스를 두 개의 텍스트 상자-사용자의 이름에 대해 하나씩,-자신의 암호 및 폼을 전송 하는 단추에 대 한 이루어져 있습니다. 웹 사이트에 암호 저장 확인란을 선택 하는 경우 결과 인증 티켓을 브라우저를 다시 시작 간에 유지 되는 경우가 많습니다 포함 됩니다.
 
@@ -204,11 +183,9 @@ Login.aspx로 두 개의 텍스트 상자를 추가 하 고 해당 ID 속성 이
 
 [!code-aspx[Main](an-overview-of-forms-authentication-vb/samples/sample4.aspx)]
 
-
 [![로그인 페이지에 두 개의 텍스트 상자, 확인란, 단추 및 레이블이 포함](an-overview-of-forms-authentication-vb/_static/image26.png)](an-overview-of-forms-authentication-vb/_static/image25.png)
 
 **그림 09**: 로그인 페이지에 두 텍스트 상자, 확인란, 단추 및 레이블이 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-vb/_static/image27.png))
-
 
 마지막으로, LoginButton의 클릭 이벤트 처리기를 만들 이벤트입니다. 디자이너에서이 이벤트 처리기를 만드는 단추 컨트롤 두 번 클릭 하기만 하면 됩니다.
 
@@ -250,11 +227,9 @@ FormsAuthentication.RedirectFromLoginPage(UserName.Text, RememberMe.Checked)
 
 로그인 페이지를 테스트 하려면 브라우저에서 참조 하세요. Nope의 사용자 이름 및 잘못 된 암호와 같은 잘못 된 자격 증명을 입력 하 여 시작 합니다. 로그인 단추를 클릭 하면 포스트백을 발생 하 고 InvalidCredentialsMessage 레이블이 표시 됩니다.
 
-
 [![InvalidCredentialsMessage 레이블이 표시 되는 경우 입력 잘못 된 자격 증명 되었습니다.](an-overview-of-forms-authentication-vb/_static/image29.png)](an-overview-of-forms-authentication-vb/_static/image28.png)
 
 **그림 10**: InvalidCredentialsMessage 레이블이 표시 되는 경우 입력 잘못 된 자격 증명 되었습니다. ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-vb/_static/image30.png))
-
 
 다음으로, 유효한 자격 증명을 입력 하 고 [로그인] 단추를 클릭 합니다. 포스트백 폼 인증 티켓을 발생 하는 경우이 이번 만들어지고 Default.aspx로 다시 자동으로 리디렉션됩니다. 이 시점에 로그인 한 웹 사이트에 현재 로그인을 나타내기 위해 시각 신호 없음 있기는 합니다. 또는 페이지를 방문 하는 사용자를 식별 하는 방법 뿐만 아니라 하지 프로그래밍 방식으로 사용자 여부를 결정 하는 방법을 살펴보겠습니다 4 단계에서에서 기록 됩니다.
 
@@ -268,7 +243,6 @@ FormsAuthentication.RedirectFromLoginPage(UserName.Text, RememberMe.Checked)
 
 > [!NOTE]
 > 많은 금융 및 의료 웹 사이트에서 SSL을 사용 하도록 구성 된 *모든* 페이지에 액세스할 수 있는 사용자를 인증 합니다. 이러한 웹 사이트를 구축 하는 경우 폼 인증 티켓은 보안 연결을 통해 전송 되도록 forms 인증 시스템을 구성할 수 있습니다. 다음 자습서에서는 다양 한 폼 인증 구성 옵션에 살펴보겠습니다  *[폼 인증 구성 및 고급 항목](../membership/creating-the-membership-schema-in-sql-server-vb.md)* 합니다.
-
 
 ## <a name="step-4-detecting-authenticated-visitors-and-determining-their-identity"></a>4단계: 인증 된 방문자를 감지 하 고 해당 Id를 확인 합니다.
 
@@ -286,16 +260,13 @@ FormsAuthentication.RedirectFromLoginPage(UserName.Text, RememberMe.Checked)
 
 이 코드를 사용 하 여 브라우저를 통해 Default.aspx를 방문 합니다. 로그인 페이지에 대 한 링크 표시는 가정 하 고 있으 니 아직 로그인 (그림 11 참조). 이 링크를 클릭 하 고 사이트에 로그인 합니다. 3 단계에서에서 살펴본 것 처럼 자격 증명을 입력 한 후 사용자에 게 반환할 Default.aspx를 하지만이 시간은 페이지를 다시 시작을 보여 줍니다. (그림 12 참조)의 메시지입니다.
 
-
 [![방문 익명으로 링크의 로그를 표시할 때](an-overview-of-forms-authentication-vb/_static/image32.png)](an-overview-of-forms-authentication-vb/_static/image31.png)
 
 **그림 11**: 익명으로 방문 하는 로그에 링크가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-vb/_static/image33.png))
 
-
 [![인증 된 사용자 다시 시작을 표시 됩니다. 메시지](an-overview-of-forms-authentication-vb/_static/image35.png)](an-overview-of-forms-authentication-vb/_static/image34.png)
 
 **그림 12**: 인증 된 사용자 다시 시작을 표시 됩니다. 메시지 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-vb/_static/image36.png))
-
 
 통해 현재 로그온된 한 사용자의 신원을 확인할 수 있습니다 합니다 [HttpContext 개체](https://msdn.microsoft.com/library/system.web.httpcontext.aspx)의 [사용자 속성](https://msdn.microsoft.com/library/system.web.httpcontext.user.aspx)합니다. HttpContext 개체는 현재 요청에 대 한 정보를 나타내는 이며 특히 응답, 요청 및 세션 등과 같은 공통 ASP.NET 개체에 대 한 홈입니다. 사용자 속성의 현재 HTTP 요청 및 구현 보안 컨텍스트를 나타내는 합니다 [IPrincipal 인터페이스](https://msdn.microsoft.com/library/system.security.principal.iprincipal.aspx)합니다.
 
@@ -324,11 +295,9 @@ WelcomeBackMessage.Text = "Welcome back, " &amp; User.Identity.Name &amp; "!"
 
 그림 13 (Scott 사용자로 로그인) 하는 경우이 수정 작업의 결과 보여 줍니다.
 
-
 [![환영 메시지는 사용자의 이름에 현재 로그온 한 포함](an-overview-of-forms-authentication-vb/_static/image38.png)](an-overview-of-forms-authentication-vb/_static/image37.png)
 
 **그림 13**: 시작 메시지를 포함 하는 현재 로그온 한 사용자의 이름 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-vb/_static/image39.png))
-
 
 ### <a name="using-the-loginview-and-loginname-controls"></a>LoginView 및 LoginName 컨트롤을 사용 하 여
 
@@ -344,7 +313,6 @@ WelcomeBackMessage.Text = "Welcome back, " &amp; User.Identity.Name &amp; "!"
 > [!NOTE]
 > AnonymousTemplate 및 LoggedInTemplate 외에 LoginView 컨트롤에는 역할 관련 템플릿을 포함할 수 있습니다. 지정된 된 역할에 속하는 사용자에만 태그를 표시 하는 역할 관련 템플릿. 이후 자습서에서 LoginView 컨트롤의 역할 기반 기능을 검토해 보겠습니다.
 
-
 탐색 내에서 마스터 페이지에 LoginContent 라는 ContentPlaceHolder를 추가 하 여 시작 &lt;div&gt; 요소입니다. 도구 상자에서 원본 뷰를 배치 된 TODO 바로 위에 결과 태그는 각각의 ContentPlaceHolder 컨트롤로 드래그 하기만 해도: 메뉴 텍스트는 여기 있습니다.
 
 [!code-aspx[Main](an-overview-of-forms-authentication-vb/samples/sample8.aspx)]
@@ -353,11 +321,9 @@ WelcomeBackMessage.Text = "Welcome back, " &amp; User.Identity.Name &amp; "!"
 
 LoginView 및 다른 로그인 관련 컨트롤을 도구 상자 로그인 탭에 있습니다.
 
-
 [![도구 상자에서 LoginView 컨트롤](an-overview-of-forms-authentication-vb/_static/image41.png)](an-overview-of-forms-authentication-vb/_static/image40.png)
 
 **그림 14**: 도구 상자에서 LoginView 컨트롤 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-vb/_static/image42.png))
-
 
 다음으로 두 개의 추가 &lt;b r /&gt; LoginView 컨트롤 직후 하지만 ContentPlaceHolder 안에서 요소입니다. 이 시점에서 탐색 &lt;div&gt; 요소의 태그는 다음과 같습니다.
 
@@ -373,33 +339,26 @@ LoginView의 템플릿에 대 한 이러한 추가 마치면 태그는 다음과
 
 이 또한 Site.master 마스터 페이지를 사용 하 여 웹 사이트의 각 페이지에는 사용자가 인증 되는지 여부에 따라 다른 메시지가 표시 됩니다. 그림 15에서는 브라우저를 통해 사용자 Jisun 방문한 경우 Default.aspx 페이지를 보여 줍니다. 다시 시작, Jisun 메시지가 두 번 반복 됩니다. (방금 추가한 LoginView 컨트롤)를 통해 왼쪽의 마스터 페이지의 탐색 섹션에서 한 번 및 Default.aspx의에서 한 번 콘텐츠 패널 컨트롤 및 프로그래밍 논리) (통해 영역.
 
-
 [![LoginView 컨트롤 시작 표시 백 Jisun 합니다.](an-overview-of-forms-authentication-vb/_static/image44.png)](an-overview-of-forms-authentication-vb/_static/image43.png)
 
 **그림 15**: LoginView 컨트롤 시작 표시 백 Jisun 합니다. ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-vb/_static/image45.png))
 
-
 LoginView 마스터 페이지를 추가 했으므로 사이트에서 모든 페이지에 나타날 수 있습니다. 그러나 있을 수 있습니다 웹 페이지는이 메시지를 표시 하려고 하지 않습니다. 이러한 한 페이지의 로그인 페이지 이므로 알려 있는 것 같습니다. 로그인 페이지에 대 한 링크입니다. 때문에 마스터 페이지에 ContentPlaceHolder LoginView 컨트롤을 배치 했습니다 보면 콘텐츠 페이지에서이 기본 태그를 재정의할 수 있습니다. Login.aspx 열고 디자이너로 이동 합니다. 콘텐츠 컨트롤을 명시적으로 정의 하지 않은 것 이므로 LoginContent ContentPlaceHolder를 마스터 페이지에서에 대 한 Login.aspx에서 로그인 페이지에는 표시 마스터 페이지의 기본 태그이 ContentPlaceHolder이에 대 한 합니다. 볼 수 있습니다이 디자이너를 통해 LoginContent ContentPlaceHolder 기본 태그 (LoginView 컨트롤)를 보여 줍니다.
-
 
 [![로그인 페이지의 기본 콘텐츠가 표시 LoginContent ContentPlaceHolder 마스터 페이지에 대 한](an-overview-of-forms-authentication-vb/_static/image47.png)](an-overview-of-forms-authentication-vb/_static/image46.png)
 
 **그림 16**: 마스터 페이지의 LoginContent ContentPlaceHolder에 대 한 로그인 페이지는 기본 콘텐츠 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-vb/_static/image48.png))
-
 
 LoginContent ContentPlaceHolder에 대 한 기본 태그가 재정의 하려면 디자이너의 영역을 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 사용자 지정 콘텐츠 만들기 옵션을 선택 합니다. (Visual Studio 2008의 ContentPlaceHolder를 사용 하 여 포함 된 경우 스마트 태그를 선택 하면 동일한 옵션을 제공 합니다.) 이 추가 페이지의 태그 하 여 새 콘텐츠 컨트롤을이 페이지에 대 한 사용자 지정 콘텐츠를 정의할 수 있습니다. 여기에서 사용자 지정 메시지에서는 하세요 로그와 같은 추가 하지만 보겠습니다만 비워 둘 수 있습니다.
 
 > [!NOTE]
 > Visual Studio 2005에서 빈을 만들고 사용자 지정 콘텐츠 만들기 컨트롤은 ASP.NET 페이지의 콘텐츠입니다. 그러나 Visual Studio 2008에서는 사용자 지정 콘텐츠 만들기 복사 마스터 페이지의 기본 콘텐츠 새로 만든된 콘텐츠 컨트롤입니다. Visual Studio 2008을 사용 하는 경우 이렇게 하면 새 콘텐츠 컨트롤 만들기 확인 한 후 마스터 페이지에서 복사 된 내용을 취소 합니다.
 
-
 그림 17에는 이렇게 변경한 후 브라우저에서 방문할 때 Login.aspx 페이지를 보여 줍니다. Hello, 전혀 모르는 사람 또는 다시 시작 있다는 점에 주의 *사용자 이름* 왼쪽된 탐색 창에서 메시지 &lt;div&gt; Default.aspx를 방문할 때 그대로입니다.
-
 
 [![로그인 페이지 기본 LoginContent ContentPlaceHolder 태그를 숨깁니다.](an-overview-of-forms-authentication-vb/_static/image50.png)](an-overview-of-forms-authentication-vb/_static/image49.png)
 
 **그림 17**: 로그인 페이지 기본 LoginContent ContentPlaceHolder의 태그를 숨깁니다 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-vb/_static/image51.png))
-
 
 ## <a name="step-5-logging-out"></a>5단계: 로그 아웃
 
@@ -426,20 +385,16 @@ LoginStatus LoginView 컨트롤 외부 이므로 익명 및 인증 된 사용자
 
 그림 18 Jisun 방문 하면 Default.aspx를 보여 줍니다. 왼쪽된 열에 메시지가 표시 됩니다, 그리고 로그 아웃 하는 링크와 함께 Jisun 다시 시작 합니다. 로그 아웃 LinkButton 클릭 하면 포스트백을 발생 시키는, 시스템에서 Jisun 서명 하 고 Logout.aspx 만듭니다 리디렉션합니다. 그림 19와 같이 Jisun Logout.aspx 도달 시간을 기준으로 자신이 이미 로그 아웃 되었습니다 이므로 익명입니다. 따라서 왼쪽된 열 텍스트 시작을 이상 해지고 및 로그인 페이지에 링크를 보여 줍니다.
 
-
 [![Default.aspx는 Jisun 로그 아웃 LinkButton 함께 다시 시작을 보여 줍니다.](an-overview-of-forms-authentication-vb/_static/image53.png)](an-overview-of-forms-authentication-vb/_static/image52.png)
 
 **그림 18**: Default.aspx 표시 진화, 로그 아웃 LinkButton을 사용 하 여 Jisun 따라 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-vb/_static/image54.png))
-
 
 [![Logout.aspx 표시 시작 로그인 LinkButton 함께 stranger](an-overview-of-forms-authentication-vb/_static/image56.png)](an-overview-of-forms-authentication-vb/_static/image55.png)
 
 **그림 19**: Logout.aspx 표시 시작 로그인 LinkButton 함께 당신 ([클릭 하 여 큰 이미지 보기](an-overview-of-forms-authentication-vb/_static/image57.png))
 
-
 > [!NOTE]
 > 것이 좋습니다 (예: Login.aspx 4 단계에서에서 수행한) 마스터 페이지의 LoginContent ContentPlaceHolder를 숨기려면 Logout.aspx 페이지 사용자 지정 합니다. 로그인 LinkButton LoginStatus 컨트롤에서 렌더링 때문에 (Hello, 아래에 있는 한 stranger) 현재 URL ReturnUrl 쿼리 문자열 매개 변수 전달 로그인 페이지로 사용자를 보냅니다. 간단히 말해가 로그 아웃 한 사용자가 로그인 한 다음이 LoginStatus 로그인 LinkButton을 클릭 하 고 하는 경우 리디렉션됩니다 쉽게 사용자 혼동을 줄 수 있는 Logout.aspx 돌아갑니다.
-
 
 ## <a name="summary"></a>요약
 

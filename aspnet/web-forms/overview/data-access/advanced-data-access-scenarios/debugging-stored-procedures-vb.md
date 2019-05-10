@@ -8,12 +8,12 @@ ms.date: 08/03/2007
 ms.assetid: 9ed8ccb5-5f31-4eb4-976d-cabf4b45ca09
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/debugging-stored-procedures-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 6dda18eb27d45f8dfdb4803cf3aca3ffe96bf11e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e02f259d0c9833a91bd1592f46e0a4e30d59cea1
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59406563"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131845"
 ---
 # <a name="debugging-stored-procedures-vb"></a>저장 프로시저 디버그(VB)
 
@@ -23,7 +23,6 @@ ms.locfileid: "59406563"
 
 > Visual Studio Professional 및 Team System edition 응용 프로그램 코드를 디버깅 하는 것 만큼 쉽습니다 저장된 프로시저를 디버깅 중단점을 설정 하 고 SQL Server 내에서 저장된 프로시저에 단계에서 할 수 있습니다. 이 자습서는 직접 데이터베이스 디버깅 및 응용 프로그램 저장된 프로시저의 디버깅 방법을 보여 줍니다.
 
-
 ## <a name="introduction"></a>소개
 
 Visual Studio에는 다양 한 디버깅 환경을 제공 합니다. 몇 가지 키 입력 이나 마우스 클릭을 사용 하 여 해당 프로그램의 실행을 중지 하 고 해당 상태 및 제어 흐름을 검사 하려면 중단점을 사용 하 합니다. 응용 프로그램 코드를 디버깅 하는 함께 Visual Studio는 SQL Server 내에서 저장된 프로시저를 디버깅 하는 것에 대 한 지원을 제공 합니다. ASP.NET 코드 숨김 클래스 또는 비즈니스 논리 계층 클래스의 코드 내에서 중단점을 설정 하는 것 처럼 하므로 너무 이러한 내에 배치할 수 저장된 프로시저입니다.
@@ -32,7 +31,6 @@ Visual Studio에는 다양 한 디버깅 환경을 제공 합니다. 몇 가지 
 
 > [!NOTE]
 > 그러나 저장된 프로시저 수만 한 단계씩 하 고 Visual Studio의 Professional 버전과 Team 시스템을 통해 디버깅 합니다. 표준 버전의 Visual Studio 또는 Visual Web Developer를 사용 하는 경우에 따라 읽기에서는 저장된 프로시저를 디버깅 하는 데 필요한 단계를 안내 하지만 컴퓨터에 이러한 단계를 복제할 수 없습니다 시작 수 있습니다.
-
 
 ## <a name="sql-server-debugging-concepts"></a>SQL Server 디버깅 개념
 
@@ -58,25 +56,20 @@ Visual Studio를 사용 하면 쉽게 데이터베이스 개체를 직접 디버
 
 이후 합니다 `Products_SelectByCategoryID` 저장된 프로시저에 필요한를 `@CategoryID` 입력된 매개 변수를 만들라는 요청도 받습니다이 값을 제공 합니다. 음료에 대 한 정보를 반환 하는 1을 입력 합니다.
 
-
 ![에 값 1을 사용 합니다 @CategoryID 매개 변수](debugging-stored-procedures-vb/_static/image1.png)
 
 **그림 1**: 에 값 1을 사용 합니다 `@CategoryID` 매개 변수
 
-
 에 대 한 값을 입력 한 후의 `@CategoryID` 매개 변수를 저장된 프로시저 실행 됩니다. 하지만 완료 될 때까지 실행 하는 대신 디버거가 첫 번째 문에서 실행을 중단 합니다. 저장된 프로시저의 현재 위치를 나타내는 여백에 있는 노란색 화살표는 note 합니다. 확인 및 조사식 창을 통해 또는 저장된 프로시저의 매개 변수 이름을 마우스로 매개 변수 값을 편집할 수 있습니다.
-
 
 [![저장 프로시저의 첫 번째 문에서 디버거 중지](debugging-stored-procedures-vb/_static/image3.png)](debugging-stored-procedures-vb/_static/image2.png)
 
 **그림 2**: 디버거가 저장 프로시저의 첫 번째 문에서 중지 ([클릭 하 여 큰 이미지 보기](debugging-stored-procedures-vb/_static/image4.png))
 
-
 를 한 번에 문 하나씩 저장된 프로시저를 단계별로 실행 하려면 도구 모음에서 프로시저 단위 실행 단추를 클릭 하거나 F10 키를 누릅니다. 합니다 `Products_SelectByCategoryID` 하나를 포함 하는 저장된 프로시저 `SELECT` 문을 단일 문으로 건너뛰기 및 저장된 프로시저의 실행이 완료 됩니다 F10에 도달 합니다. 저장된 프로시저가 완료 되 면 해당 출력이 출력 창에 표시 됩니다 하 고 디버거를 종료 합니다.
 
 > [!NOTE]
 > 문 수준에서 발생 T-SQL 디버깅 단계씩 실행할 수 없습니다는 `SELECT` 문입니다.
-
 
 ## <a name="step-2-configuring-the-website-for-application-debugging"></a>2단계: 응용 프로그램 디버깅에 대 한 웹 사이트를 구성합니다.
 
@@ -84,22 +77,18 @@ Visual Studio를 사용 하면 쉽게 데이터베이스 개체를 직접 디버
 
 응용 프로그램에서 호출한 저장된 프로시저를 디버깅을 시작할 수 있습니다, 전에 SQL Server 디버거를 사용 하 여 통합을 ASP.NET 웹 응용 프로그램에 지시 해야 합니다. 솔루션 탐색기에서 웹 사이트 이름을 마우스 오른쪽 단추로 클릭 하 여 시작 (`ASPNET_Data_Tutorial_74_VB`). 상황에 맞는 메뉴에서 속성 페이지 옵션을 선택 하 고, 왼쪽에서 시작 옵션 항목 선택, 디버거 섹션에서 SQL Server 확인란 (그림 3 참조).
 
-
 [![응용 프로그램의 속성 페이지에서 SQL Server 확인란](debugging-stored-procedures-vb/_static/image6.png)](debugging-stored-procedures-vb/_static/image5.png)
 
 **그림 3**: 속성 페이지 응용 프로그램에서에서 SQL Server 확인란 ([클릭 하 여 큰 이미지 보기](debugging-stored-procedures-vb/_static/image7.png))
-
 
 또한 연결 풀링을 사용 하지 않도록 설정 하는 응용 프로그램에서 사용 하는 데이터베이스 연결 문자열을 업데이트 해야 합니다. 데이터베이스에 대 한 연결을 닫으면 해당 `SqlConnection` 개체의 사용 가능한 연결 풀에 배치 됩니다. 데이터베이스에 연결을 설정할 때 사용 가능한 연결이이 풀에서 검색할 수 있습니다 보다는 개체 만들기 및 새 연결을 설정 하지 않아도 됩니다. 이 풀링을 연결 개체는 성능을 향상 하 고 기본적으로 활성화 됩니다. 그러나 디버그할 때 디버깅 인프라 풀에서 만든 연결으로 작업 하는 경우 올바르게 다시 설정 하지 있으므로 연결 풀링을 해제 하려고 합니다.
 
 비활성된 연결 풀링, 업데이트 합니다 `NORTHWNDConnectionString` 에 `Web.config` 설정을 포함 하도록 `Pooling=false` 합니다.
 
-
 [!code-xml[Main](debugging-stored-procedures-vb/samples/sample1.xml)]
 
 > [!NOTE]
 > 마친 후 ASP.NET 응용 프로그램을 통해 SQL Server 디버깅 해야 연결 풀링을 제거 하 여 다시 시작 합니다 `Pooling` 연결 문자열에서 설정 (또는로 설정 하 여 `Pooling=true` ).
-
 
 이 시점에서 ASP.NET 응용 프로그램에 웹 응용 프로그램을 통해 호출 되 면 SQL Server 데이터베이스 개체를 디버깅 하려면 Visual Studio를 허용 하도록 구성한 합니다. 이제 남아 있는 모든 저장된 프로시저에 중단점을 추가 하 고 디버깅을 시작 하는 것!
 
@@ -107,51 +96,40 @@ Visual Studio를 사용 하면 쉽게 데이터베이스 개체를 직접 디버
 
 열기는 `Products_SelectByCategoryID` 의 시작 부분에 중단점을 설정 하 고 저장 프로시저는 `SELECT` 적절 한 위치에서 여백을 클릭 하 여 문이나의 시작 부분에 커서를 배치 하 여는 `SELECT` 문과 f9입니다. 그림 4에서 알 수 있듯이, 중단점 여백에 빨간색 원으로 표시 합니다.
 
-
 [![Products_SelectByCategoryID에 중단점을 설정 저장 프로시저](debugging-stored-procedures-vb/_static/image9.png)](debugging-stored-procedures-vb/_static/image8.png)
 
 **그림 4**: 중단점을 설정 합니다 `Products_SelectByCategoryID` 저장 프로시저 ([큰 이미지를 보려면 클릭](debugging-stored-procedures-vb/_static/image10.png))
 
-
 클라이언트 응용 프로그램을 통해 디버그 해야 하는 SQL 데이터베이스 개체에 대 한 순서 대로 반드시 해당 데이터베이스 응용 프로그램 디버깅을 지원 하도록 구성 합니다. 먼저 중단점을 설정 하는 경우이 설정에 자동으로 전환 해야 하지만 다시 확인 하는 것이 좋습니다. 마우스 오른쪽 단추로 클릭는 `NORTHWND.MDF` 서버 탐색기에서 노드. 상황에 맞는 메뉴 선택된 이라는 메뉴 항목이 응용 프로그램 디버깅을 포함 해야 합니다.
-
 
 ![응용 프로그램 디버깅 옵션이 설정 되어 있는지 확인](debugging-stored-procedures-vb/_static/image11.png)
 
 **그림 5**: 응용 프로그램 디버깅 옵션이 설정 되어 있는지 확인
 
-
 중단점 집합을 사용 하도록 설정 하는 응용 프로그램 디버깅 옵션을 사용 하 여 ASP.NET 응용 프로그램에서 호출할 경우 저장된 프로시저를 디버깅 하려면 준비가 됩니다. 디버그 메뉴에 이동 하 여 디버거를 시작 하 고 도구 모음에서 재생 아이콘 f5 키를 눌러 또는 녹색을 클릭 하 여 디버깅 시작을 선택 합니다. 디버거가 시작 되 고 웹 사이트 시작 됩니다.
 
 합니다 `Products_SelectByCategoryID` 저장된 프로시저에서 만든 합니다 [사용 하 여 기존 저장 프로시저는 입력 데이터 집합의 Tableadapter에 대 한](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb.md) 자습서입니다. 해당 하는 웹 페이지 (`~/AdvancedDAL/ExistingSprocs.aspx`)이 저장된 프로시저에서 반환 된 결과 표시 하는 GridView를 포함 합니다. 브라우저를 통해이 페이지를 방문 합니다. 페이지의 중단점에 도달 하면는 `Products_SelectByCategoryID` 저장된 프로시저 소진 하 고 Visual Studio에 제어를 반환 합니다. 마찬가지로 1 단계에서에서 s 문 저장된 프로시저 및 뷰를 통해 단계를 매개 변수 값을 수정 합니다.
-
 
 [![ExistingSprocs.aspx 페이지에는 처음에 음료 표시](debugging-stored-procedures-vb/_static/image13.png)](debugging-stored-procedures-vb/_static/image12.png)
 
 **그림 6**: 합니다 `ExistingSprocs.aspx` 페이지에는 처음에 Beverages 표시 됩니다 ([큰 이미지를 보려면 클릭](debugging-stored-procedures-vb/_static/image14.png))
 
-
 [![저장 프로시저의 중단점에 도달 했습니다.](debugging-stored-procedures-vb/_static/image16.png)](debugging-stored-procedures-vb/_static/image15.png)
 
 **그림 7**: 중단점에 도달 하는 저장 프로시저 s ([클릭 하 여 큰 이미지 보기](debugging-stored-procedures-vb/_static/image17.png))
 
-
 그림 7 표시 값의에서 조사식 창으로는 `@CategoryID` 매개 변수는 1입니다. 때문에 이것이 합니다 `ExistingSprocs.aspx` 페이지 있는 음료 범주에서 제품을 처음에 표시를 `CategoryID` 값이 1입니다. 드롭다운 목록에서 다른 범주를 선택 합니다. 이렇게 포스트백 하 고 다시 실행 된 `Products_SelectByCategoryID` 저장 프로시저입니다. 마찬가지로 이번 중단점에 도달 합니다 `@CategoryID` s 선택한 드롭다운 목록에서 항목을 반영 하는 매개 변수의 값 `CategoryID`합니다.
-
 
 [![드롭다운 목록에서 다른 범주를 선택 합니다.](debugging-stored-procedures-vb/_static/image19.png)](debugging-stored-procedures-vb/_static/image18.png)
 
 **그림 8**: 드롭다운 목록에서 다른 범주를 선택 ([클릭 하 여 큰 이미지 보기](debugging-stored-procedures-vb/_static/image20.png))
 
-
 [![@CategoryID 웹 페이지에서 선택한 범주를 반영 하는 매개 변수](debugging-stored-procedures-vb/_static/image22.png)](debugging-stored-procedures-vb/_static/image21.png)
 
 **그림 9**: 합니다 `@CategoryID` 매개 변수 반영 웹 페이지에서 범주를 선택 합니다 ([큰 이미지를 보려면 클릭](debugging-stored-procedures-vb/_static/image23.png))
 
-
 > [!NOTE]
 > 경우에 중단점을 `Products_SelectByCategoryID` 저장된 프로시저를 방문할 때 적중 되지 않는 `ExistingSprocs.aspx` 페이지, ASP.NET 응용 프로그램의 속성 페이지의 디버거 섹션을 SQL Server 확인란을 체크 인 된 연결 풀링이 되었는지 있는지 확인 사용 안 함과 데이터베이스 s 응용 프로그램 디버깅 옵션 활성화 되어 있습니다. 계속 다시 표시 되 면 문제가 Visual Studio를 다시 시작 하 고 다시 시도 하세요.
-
 
 ## <a name="debugging-t-sql-database-objects-on-remote-instances"></a>원격 인스턴스에서 T-SQL 데이터베이스 개체 디버깅
 
@@ -166,14 +144,12 @@ SQL Server 데이터베이스 인스턴스를 Visual Studio와 동일한 컴퓨�
 
 예제는 작업을 명확 하 게 하는 데 도움이 됩니다. Windows 계정인은 imagine `SQLDebug` Windows 도메인 내에서. 이 계정은 원격 SQL Server 인스턴스에 올바른 로그인 및 멤버로 추가할 해야는 `sysadmin` 역할입니다. 그런 다음 Visual Studio에서 원격 SQL Server 인스턴스를 디버깅 하려면 해야으로 Visual Studio를 실행 합니다 `SQLDebug` 사용자입니다. 로 다시 로그인 하 여 워크스테이션에서 로그인 하 여이 작업을 수행할 수 없습니다 `SQLDebug`에 고유한 자격 증명을 사용 하 여 워크스테이션에 로그인 한 다음 사용 하는 것을 간단 하지만 Visual Studio를 실행 하 고 `runas.exe` 으로 Visual Studio를 시작 하는 `SQLDebug` 사용자입니다. `runas.exe` 특정 응용 프로그램을 다른 사용자 계정 가장 하 여 상태에서 실행할 수 있습니다. Visual Studio를 시작 하려면 `SQLDebug`, 명령줄에서 다음 문을 입력할 수 있습니다.
 
-
 [!code-console[Main](debugging-stored-procedures-vb/samples/sample2.cmd)]
 
 에 대 한 자세한 내용은이 프로세스를 참조 하세요 [William R. Vaughn](http://betav.com/BLOG/billva/) s *Hitchhiker s Visual Studio 및 SQL Server, 일곱 번째 개정판 가이드* 뿐만 [방법: 디버깅을 위해 SQL Server 사용 권한 설정](https://msdn.microsoft.com/library/w1bhybwz(VS.80).aspx)합니다.
 
 > [!NOTE]
 > 개발 컴퓨터에서 Windows XP 서비스 팩 2를 실행 중인 경우 인터넷 연결 방화벽이 원격 디버깅을 허용 하도록 구성 해야 합니다. [방법: SQL Server 2005 디버깅 사용](https://msdn.microsoft.com/library/s0fk6z6e(VS.80).aspx) 문서의 정보는이 두 단계: 추가 해야 합니다 (a) Visual Studio 호스트 컴퓨터에서 `Devenv.exe` TCP 135를 열어야 예외 목록에는 TCP 135 포트 열기 및 (b) 원격 컴퓨터의 (SQL) 포트 및 추가 `sqlservr.exe` 예외 목록에 있습니다. 도메인 정책에 따라 IPSec을 통해 수행 해야 하는 네트워크 통신에 필요한 경우에 UDP 4500 및 UDP 500 포트를 열어야 합니다.
-
 
 ## <a name="summary"></a>요약
 

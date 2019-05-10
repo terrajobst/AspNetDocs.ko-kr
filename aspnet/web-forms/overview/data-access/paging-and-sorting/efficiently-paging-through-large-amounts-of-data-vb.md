@@ -8,12 +8,12 @@ ms.date: 08/15/2006
 ms.assetid: 3e20e64a-8808-4b49-88d6-014e2629d56f
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting/efficiently-paging-through-large-amounts-of-data-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 20ea33efbd1db657a03b20a665a041ecf3a6d248
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: dd1fd089bc4faa18fb2e8112b2820788c1f25ceb
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59399556"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130960"
 ---
 # <a name="efficiently-paging-through-large-amounts-of-data-vb"></a>대량의 데이터를 효율적으로 페이징(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59399556"
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_25_VB.exe) 또는 [PDF 다운로드](efficiently-paging-through-large-amounts-of-data-vb/_static/datatutorial25vb1.pdf)
 
 > 데이터 프레젠테이션 컨트롤의 기본 페이징 옵션이 아닙니다 적합 한 많은 양의 데이터를 작업할 때 해당 기본 데이터 소스 컨트롤 데이터의 하위 집합만 표시 되는 경우에 모든 레코드를 검색 합니다. 이러한 상황에서는 설정 해야 합니다에 사용자 지정 페이징 합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -37,7 +36,6 @@ ms.locfileid: "59399556"
 
 > [!NOTE]
 > 사용자 지정 페이징을 수행 하는 정확한 성능 향상을 통해 페이징 되 고 레코드와 데이터베이스 서버에 적용 되는 부하의 총에 따라 달라 집니다. 이 자습서의 끝에 사용자 지정 페이징을 수집한 성능 이점을 보여 주는 몇 가지 대략적인 메트릭을 살펴보겠습니다.
-
 
 ## <a name="step-1-understanding-the-custom-paging-process"></a>1단계: 사용자 지정 페이징 프로세스 이해
 
@@ -62,47 +60,37 @@ ms.locfileid: "59399556"
 
 정확 하 게 표시 되는 페이지에 대 한 레코드 하위 집합을 검색 하는 방법을 살펴보기 전에 수 s를 통해 페이징 되 고 레코드의 총 수를 반환 하는 방법을 소개 합니다. 페이징 사용자 인터페이스를 제대로 구성 하기 위해이 정보가 필요 합니다. 사용 하 여 특정 SQL 쿼리에서 반환 된 레코드의 총 수를 가져올 수 있습니다 합니다 [ `COUNT` 집계 함수](https://msdn.microsoft.com/library/ms175997.aspx)합니다. 예를 들어, 레코드의 총 수를 확인 하는 `Products` 테이블 다음 쿼리에 사용할 수 있습니다.
 
-
 [!code-sql[Main](efficiently-paging-through-large-amounts-of-data-vb/samples/sample1.sql)]
 
 이 정보를 반환 하는 DAL에 메서드를 추가 하는 s 수 있습니다. 특히 라는 DAL 메서드를 만들겠습니다 `TotalNumberOfProducts()` 를 실행 하는 `SELECT` 위에 표시 된 문.
 
 열어서 시작 합니다 `Northwind.xsd` 형식화 된 데이터 집합 파일에는 `App_Code/DAL` 폴더. 그런 다음 마우스 오른쪽 단추로 클릭는 `ProductsTableAdapter` 디자이너에서 쿼리 추가 선택 합니다. 대로 ve 이전 자습서에서는 표시 이렇게는 DAL에 새 메서드를 추가할 수는 특정 SQL 문이나 저장된 프로시저를 호출 하면 실행 됩니다. TableAdapter 메서드는 이전 자습서에서와 마찬가지로이 하나에 대 한 하기로 임시 SQL 문을 사용 하 여 합니다.
 
-
 ![임시 SQL 문을 사용 하 여](efficiently-paging-through-large-amounts-of-data-vb/_static/image1.png)
 
 **그림 1**: 임시 SQL 문을 사용 하 여
 
-
 다음 화면에서 만들 쿼리의 형식을 지정할 수 있습니다. 이 쿼리는 반환 된 단일 스칼라 값을 레코드의 총 수 있으므로 합니다 `Products` 테이블 선택는 `SELECT` 단일 값 옵션을 반환 하는 합니다.
-
 
 ![단일 값을 반환 하는 SELECT 문을 사용 하 여 쿼리를 구성 합니다.](efficiently-paging-through-large-amounts-of-data-vb/_static/image2.png)
 
 **그림 2**: 단일 값을 반환 하는 SELECT 문을 사용 하 여 쿼리를 구성 합니다.
 
-
 사용 하 여 쿼리의 형식을 나타내는, 후 다음 쿼리가 지정 해야 합니다.
-
 
 ![제품 쿼리에서 선택 그룹 사용](efficiently-paging-through-large-amounts-of-data-vb/_static/image3.png)
 
 **그림 3**: SELECT COUNT를 사용 하 여 (\*) FROM 제품 쿼리
 
-
 마지막으로, 메서드에 대 한 이름을 지정 합니다. 앞서 언급 한, s를 사용 하 여 `TotalNumberOfProducts`입니다.
-
 
 ![DAL 메서드 TotalNumberOfProducts 이름](efficiently-paging-through-large-amounts-of-data-vb/_static/image4.png)
 
 **그림 4**: DAL 메서드 TotalNumberOfProducts 이름
 
-
 완료를 클릭 하면 마법사가 추가 된 `TotalNumberOfProducts` DAL 방법입니다. SQL 쿼리에서 결과 경우 DAL에서 스칼라 반환 메서드 반환 nullable 형식 `NULL`합니다. 그러나 우리의 `COUNT` 쿼리,는 항상 반환 이외`NULL` DAL 메서드가 null을 허용 하는 정수를 반환 하는 하지만; 값입니다.
 
 DAL 메서드 외에도 BLL에 메서드도 필요 했습니다. 엽니다는 `ProductsBLL` 추가한 클래스 파일을 `TotalNumberOfProducts` DAL s에을 호출 하는 메서드 `TotalNumberOfProducts` 메서드:
-
 
 [!code-vb[Main](efficiently-paging-through-large-amounts-of-data-vb/samples/sample2.vb)]
 
@@ -127,41 +115,33 @@ DAL s `TotalNumberOfProducts` 메서드가 null을 허용 하는 정수를 반�
 
 `ROW_NUMBER()` 키워드는 다음 구문을 사용 하 여 특정 순서를 통해 반환 된 각 레코드를 사용 하 여 순위를 연결 합니다.
 
-
 [!code-sql[Main](efficiently-paging-through-large-amounts-of-data-vb/samples/sample3.sql)]
 
 `ROW_NUMBER()` 표시 된 순서와 관련 하 여 각 레코드에 대 한 순위를 지정 하는 숫자 값을 반환 합니다. 예를 들어, 가장에서 순서가 지정 된 각 제품에 대 한 순위를 가장 적은 비용이에서는 사용할 수 다음 쿼리.
-
 
 [!code-sql[Main](efficiently-paging-through-large-amounts-of-data-vb/samples/sample4.sql)]
 
 그림 5의 결과 Visual Studio에서 쿼리 창을 통해 실행 하는 경우이 쿼리를 보여 줍니다. 각 행에 대 한 가격 순위를 함께 가격으로 제품으로 정렬 됨을 참고 합니다.
 
-
 ![가격 등급에 포함 된 각 반환 된 레코드](efficiently-paging-through-large-amounts-of-data-vb/_static/image5.png)
 
 **그림 5**: 가격 등급에 포함 된 각 반환 된 레코드
 
-
 > [!NOTE]
 > `ROW_NUMBER()` SQL Server 2005에서 사용할 수 있는 많은 새 순위 함수 중 하나일 뿐입니다. 에 대 한 자세한 설명은 `ROW_NUMBER()`, 다른 순위 함수를 함께 읽을 [Microsoft SQL Server 2005를 사용 하 여 순위 결과 반환](http://www.4guysfromrolla.com/webtech/010406-1.shtml)합니다.
-
 
 지정 된 결과 순위 지정 하는 경우 `ORDER BY` 열에는 `OVER` 절 (`UnitPrice`, 위의 예에서), SQL Server에서 결과 정렬 해야 합니다. 이 빠른 작업에서 결과 정렬 열 위에 클러스터형 인덱스가 있는 경우를 다루는 경우 인덱스를 이지만 그렇지 않은 경우 더 높은 비용이 들 수 있습니다. 성능 향상을 위해 충분히 큰 쿼리에 대 한, 사용 되는 결과으로 정렬 열에 대 한 비클러스터형 인덱스를 추가 하는 것이 좋습니다. 참조 [SQL Server 2005의 성능과 순위 함수](http://www.sql-server-performance.com/ak_ranking_functions.asp) 더 자세히 살펴보고 성능 고려 사항에 대 한 합니다.
 
 반환 된 순위 정보 `ROW_NUMBER()` 에서 직접 사용할 수는 `WHERE` 절. 하지만 파생된 테이블을 반환 사용할 수는 `ROW_NUMBER()` 한 다음에 나타날 수 있는 결과 `WHERE` 절. 예를 들어 다음 쿼리를 사용 하 여 파생된 테이블 UnitPrice 및 ProductName 열에 반환 된 `ROW_NUMBER()` 결과 사용 하 여 다음을 `WHERE` 만 가격 차수가 해당 제품을 반환 하는 절은 11 ~ 20 개 사이로:
 
-
 [!code-sql[Main](efficiently-paging-through-large-amounts-of-data-vb/samples/sample5.sql)]
 
 이 개념을 좀 더 확장을 원하는 시작 행 인덱스 및 최대 행 값이 지정 된 데이터의 특정 페이지를 검색 하려면이 방법을 이용 하면:
-
 
 [!code-html[Main](efficiently-paging-through-large-amounts-of-data-vb/samples/sample6.html)]
 
 > [!NOTE]
 > 이 자습서에서는 나중에 살펴볼 합니다 *`StartRowIndex`* 제공한 ObjectDataSource 인덱싱된 0부터 시작 하는 반면는 `ROW_NUMBER()` SQL Server 2005에서 반환 된 값은 1부터 인덱싱됩니다. 따라서 합니다 `WHERE` 절 해당 레코드를 반환 합니다. 여기서 `PriceRank` 보다 엄격 하 게 크면 *`StartRowIndex`* 보다 작거나 같음 *`StartRowIndex`*  +  *`MaximumRows`*.
-
 
 이제는 우리 하는 방법을 설명 하는 ve `ROW_NUMBER()` 수 시작 행 인덱스 및 최대 행 값이 지정 된 데이터의 특정 페이지를 검색 하는 데, 이제 해야 BLL 및 DAL 메서드로이 논리를 구현 합니다.
 
@@ -169,67 +149,51 @@ DAL s `TotalNumberOfProducts` 메서드가 null을 허용 하는 정수를 반�
 
 이전 섹션에서 임시 SQL 문 처럼 DAL 메서드를 생성 합니다. 아쉽게도 같은 TableAdapter 마법사 만들어지고 t에서 사용 하는 Visual Studio에서 T-SQL 파서를 `OVER` 구문에서 사용 하는 `ROW_NUMBER()` 함수입니다. 따라서이 DAL 메서드는 저장된 프로시저를 만들어야 합니다. 보기 메뉴 (또는 적중된 Ctrl + Alt + S)에서 서버 탐색기를 선택 하 고 확장 된 `NORTHWND.MDF` 노드. 새 저장된 프로시저를 추가 하려면 저장 프로시저 노드를 마우스 오른쪽 단추로 클릭 하 고 새 저장 프로시저 추가 선택 (그림 6 참조).
 
-
 ![새 저장된 프로시저는 제품을 통해 페이징에 대 한 추가](efficiently-paging-through-large-amounts-of-data-vb/_static/image6.png)
 
 **그림 6**: 새 저장된 프로시저는 제품을 통해 페이징에 대 한 추가
 
-
 이 저장된 프로시저 두 정수 입력된 매개 변수를 수락 해야 `@startRowIndex` 및 `@maximumRows` 사용 하 여를 `ROW_NUMBER()` 함수 기준으로 정렬 합니다 `ProductName` 필드에 지정 된 것 보다 큰 행만을 반환 `@startRowIndex` 및 미만 또는 같음 `@startRowIndex`  +  `@maximumRow` s입니다. 새 저장된 프로시저에 다음 스크립트를 입력 하 고 데이터베이스에 저장된 프로시저를 추가 하려면 저장 아이콘을 클릭 합니다.
-
 
 [!code-sql[Main](efficiently-paging-through-large-amounts-of-data-vb/samples/sample7.sql)]
 
 저장된 프로시저를 만든 후이 테스트 하려면 잠시 시간이 소요 됩니다. 마우스 오른쪽 단추로 클릭는 `GetProductsPaged` 저장된 프로시저는 서버 탐색기에서 이름을 지정 하 고 실행 옵션을 선택 합니다. Visual Studio 다음 묻는 입력된 매개 변수의 `@startRowIndex` 고 `@maximumRow` s (그림 7 참조). 다른 값을 사용 하 고 결과 검사 합니다.
 
-
 ![에 대 한 값을 입력 합니다 @startRowIndex 고 @maximumRows 매개 변수](efficiently-paging-through-large-amounts-of-data-vb/_static/image7.png)
 
 <strong>그림 7</strong>: 에 대 한 값을 입력 합니다 @startRowIndex 고 @maximumRows 매개 변수
 
-
 이후에 이러한 선택 매개 변수 값을 입력, 출력 창에 결과가 표시 됩니다. 그림 8 둘 다에 대해 10에서 전달 하는 경우 결과 표시 합니다 `@startRowIndex` 및 `@maximumRows` 매개 변수.
-
 
 [![반환 되는 레코드는에 표시 되는지 두 번째 데이터 페이지](efficiently-paging-through-large-amounts-of-data-vb/_static/image9.png)](efficiently-paging-through-large-amounts-of-data-vb/_static/image8.png)
 
 **그림 8**: 반환 되는 레코드는에 표시 되는지 두 번째 페이지 데이터 ([클릭 하 여 큰 이미지 보기](efficiently-paging-through-large-amounts-of-data-vb/_static/image10.png))
 
-
 이 사용 하 여 만든 저장 프로시저를 만들려면 준비 된 것을 `ProductsTableAdapter` 메서드. 엽니다는 `Northwind.xsd` 형식화 된 데이터 집합을 오른쪽 단추로 클릭은 `ProductsTableAdapter`, 추가 쿼리 옵션을 선택 합니다. 임시 SQL 문을 사용 하 여 쿼리를 만드는 대신 기존 저장된 프로시저를 사용 하 여 만듭니다.
-
 
 ![기존 저장된 프로시저를 사용 하는 DAL 메서드 만들기](efficiently-paging-through-large-amounts-of-data-vb/_static/image11.png)
 
 **그림 9**: 기존 저장된 프로시저를 사용 하는 DAL 메서드 만들기
 
-
 다음으로, 하 라는 프롬프트가 호출할 저장된 프로시저를 선택 합니다. 선택 된 `GetProductsPaged` 드롭 다운 목록에서 프로시저를 저장 합니다.
-
 
 ![GetProductsPaged 선택 드롭다운 목록에서 프로시저를 저장 합니다.](efficiently-paging-through-large-amounts-of-data-vb/_static/image12.png)
 
 **그림 10**: GetProductsPaged 선택 드롭다운 목록에서 프로시저를 저장 합니다.
 
-
 다음 화면에서 다음 묻는 어떤 종류의 데이터는 저장된 프로시저에서 반환 됩니다: 테이블 형식 데이터, 단일 값 또는 값이 없습니다. 이후를 `GetProductsPaged` 저장된 프로시저가 여러 레코드를 반환을 나타내는 표 형식 데이터를 반환 합니다.
-
 
 ![저장된 프로시저가 반환 테이블 형식 데이터를 나타냅니다.](efficiently-paging-through-large-amounts-of-data-vb/_static/image13.png)
 
 **그림 11**: 저장된 프로시저가 반환 테이블 형식 데이터를 나타냅니다.
 
-
 마지막으로 생성 하려는 메서드의 이름을 나타냅니다. 이전 자습서에서와 마찬가지로 계속 해 서 DataTable 채우기 모두를 사용 하 여 메서드를 만듭니다 및 DataTable을 반환 합니다. 첫 번째 메서드 이름을 `FillPaged` 하 고 두 번째 `GetProductsPaged`입니다.
-
 
 ![메서드 FillPaged 이름과 GetProductsPaged](efficiently-paging-through-large-amounts-of-data-vb/_static/image14.png)
 
 **그림 12**: 메서드 FillPaged 이름과 GetProductsPaged
 
-
 또한 제품의 특정 페이지를 반환 하는 DAL 메서드 생성 해야 BLL에 이러한 기능을 제공 합니다. DAL 메서드처럼 BLL의 GetProductsPaged 메서드 시작 행 인덱스 및 최대 행 수를 지정 하는 것에 대 한 두 개의 정수 입력을 수락 해야 하 고 지정된 된 범위 내에 있는 레코드만 반환 해야 합니다. 단순히에 대 한 호출은 아래로 DAL의 GetProductsPaged 메서드를 다음과 같이 ProductsBLL 클래스에는 이러한 BLL 메서드를 만듭니다.
-
 
 [!code-vb[Main](efficiently-paging-through-large-amounts-of-data-vb/samples/sample8.vb)]
 
@@ -239,34 +203,27 @@ DAL s `TotalNumberOfProducts` 메서드가 null을 허용 하는 정수를 반�
 
 전체 레코드의 특정 하위 집합에 액세스 하기 위한 BLL 및 DAL 메서드를 사용 하 여 사용자 지정 페이징을 사용 하 여 해당 기본 레코드를 통해 해당 페이지 제어 준비 된 GridView를 만드는 것입니다. 열어서 시작 합니다 `EfficientPaging.aspx` 페이지에 `PagingAndSorting` 폴더 페이지에 GridView를 추가 하 고 새 ObjectDataSource 컨트롤을 사용 하도록 구성 합니다. 이전 자습서에서는 종종 있었습니다 ObjectDataSource를 사용 하도록 구성 합니다 `ProductsBLL` s 클래스 `GetProducts` 메서드. 이 이때 단, 사용 하려는 합니다 `GetProductsPaged` 메서드 대신 이후 합니다 `GetProducts` 메서드가 반환 되는 *모든* 데이터베이스에서 제품의 반면 `GetProductsPaged` 레코드의 특정 하위 집합만 반환 합니다.
 
-
 ![S ProductsBLL 클래스 GetProductsPaged 메서드를 사용 하는 ObjectDataSource 구성](efficiently-paging-through-large-amounts-of-data-vb/_static/image15.png)
 
 **그림 13**: S ProductsBLL 클래스 GetProductsPaged 메서드를 사용 하는 ObjectDataSource 구성
-
 
 읽기 전용 GridView를 만들어 다시 우리 이후로 잠시 메서드 드롭 다운 목록에서 INSERT, UPDATE, 설정 하 고 탭 (없음)를 삭제 합니다.
 
 다음으로 ObjectDataSource 마법사 묻는의 소스를 `GetProductsPaged` s 메서드에 `startRowIndex` 및 `maximumRows` 매개 변수 값을 입력 합니다. 이러한 입력된 매개 변수에 실제로 설정할 GridView에서 자동으로, 따라서 단순히 소스 집합 None으로 두고 마침을 클릭 합니다.
 
-
 ![입력된 매개 변수 원본 None으로 유지](efficiently-paging-through-large-amounts-of-data-vb/_static/image16.png)
 
 **그림 14**: 입력된 매개 변수 원본 None으로 유지
 
-
 ObjectDataSource 마법사를 완료 한 후 GridView가 BoundField 또는 CheckBoxField 제품 데이터 필드에 대해 포함 됩니다. 자유롭게 하다 면 GridView의 모양을 조정할 수 있습니다. I ve만 표시 하도록 선택한 합니다 `ProductName`, `CategoryName`, `SupplierName`, `QuantityPerUnit`, 및 `UnitPrice` BoundFields 합니다. 또한 스마트 태그의 페이징 사용 확인란을 선택 하 여 페이징을 지원 하기 위해 GridView를 구성 합니다. 이러한 변경 이후 GridView 및 ObjectDataSource 선언적 태그는 다음과 같아야 합니다.
-
 
 [!code-aspx[Main](efficiently-paging-through-large-amounts-of-data-vb/samples/sample9.aspx)]
 
 그러나 브라우저를 통해 페이지를 방문할 경우 GridView 위치가 없습니다 찾을 수 있습니다.
 
-
 ![GridView가 표시 되지 않음](efficiently-paging-through-large-amounts-of-data-vb/_static/image17.png)
 
 **그림 15**: GridView가 표시 되지 않음
-
 
 ObjectDataSource 현재 사용 중 이므로 0 값으로 둘 다에 대해 GridView 없습니다 합니다 `GetProductsPaged` `startRowIndex` 및 `maximumRows` 매개 변수를 입력 합니다. 따라서 없는 레코드를 반환 하는 결과 SQL 쿼리 및 따라서 GridView 표시 되지 않습니다.
 
@@ -279,28 +236,22 @@ ObjectDataSource 현재 사용 중 이므로 0 값으로 둘 다에 대해 GridV
 
 다음과 같이 변경한 후 ObjectDataSource가 선언적 구문을 다음과 같이 표시 됩니다.
 
-
 [!code-aspx[Main](efficiently-paging-through-large-amounts-of-data-vb/samples/sample10.aspx)]
 
 합니다 `EnablePaging` 하 고 `SelectCountMethod` 속성이 설정 되어 있는지 및 `<asp:Parameter>` 요소가 제거 되었습니다. 그림 16에서는 이러한 변경이 이루어진 후 속성 창의 스크린 샷이 보여 줍니다.
-
 
 ![사용자 지정 페이징을 사용 하려면 ObjectDataSource 컨트롤 구성](efficiently-paging-through-large-amounts-of-data-vb/_static/image18.png)
 
 **그림 16**: 사용자 지정 페이징을 사용 하려면 ObjectDataSource 컨트롤 구성
 
-
 다음과 같이 변경한 후 브라우저를 통해이 페이지를 방문 합니다. 10 개의 제품이 나열, 표시 사전순으로 정렬 합니다. 시간을 내어 한 번에 데이터 한 페이지를 단계별로 실행 합니다. 지정된 된 페이지에 대 한 표시 해야 하는 레코드만 검색으로 visual 차이가 없습니다 최종 사용자가의 관점에서 기본 페이징 및 사용자 지정 페이징을 상태인 동안 많은 양의 데이터를 통해 페이지 보다 효율적으로 사용자 지정 페이징 합니다.
-
 
 [![데이터, Ordered의 이름, 제품에는 사용 하 여 사용자 지정 페이징 페이징](efficiently-paging-through-large-amounts-of-data-vb/_static/image20.png)](efficiently-paging-through-large-amounts-of-data-vb/_static/image19.png)
 
 **그림 17**: 데이터, Ordered의 이름, 제품에는 사용 하 여 사용자 지정 페이징 페이징 ([클릭 하 여 큰 이미지 보기](efficiently-paging-through-large-amounts-of-data-vb/_static/image21.png))
 
-
 > [!NOTE]
 > 사용자 지정 페이징을 사용 하 여 페이지 수는 ObjectDataSource가 반환한 값 `SelectCountMethod` GridView가의 뷰 상태에 저장 됩니다. 다른 GridView 변수를 `PageIndex`, `EditIndex`를 `SelectedIndex`를 `DataKeys` 등에 컬렉션에 저장 됩니다 *상태를 제어*를 GridView s의 값에 관계 없이 유지 되는 `EnableViewState` 속성입니다. 하므로 `PageCount` 값은 유지 게시할 마지막 페이지로 이동 하는 링크가 포함 된 페이징 인터페이스를 사용 하는 경우에 상태 보기를 사용 하 여 반드시 GridView가의 뷰 상태를 사용할 수 있습니다. (페이징 인터페이스에 대 한 직접 링크를 마지막 포함 되지 않은 경우 페이지의 뷰 상태를 비활성화할 수 있습니다.)
-
 
 포스트백을 발생 시키는 마지막 페이지 링크를 클릭 하 고 업데이트 GridView 지시 해당 `PageIndex` 속성입니다. 마지막 페이지 링크를 클릭 하면 GridView 할당 해당 `PageIndex` 속성을 하나 값 보다 작은 해당 `PageCount` 속성입니다. 비활성화 상태 보기를 사용 하 여는 `PageCount` 게시할 손실 되는 값 및 `PageIndex` 대신 최대 정수 값이 할당 됩니다. GridView를 곱하여 시작 행 인덱스를 확인 하려고 하는 다음에 `PageSize` 및 `PageCount` 속성입니다. 이 인해는 `OverflowException` 제품 허용 되는 최대 정수 크기를 초과 하므로 합니다.
 
@@ -308,11 +259,9 @@ ObjectDataSource 현재 사용 중 이므로 0 값으로 둘 다에 대해 GridV
 
 현재 사용자 지정 페이징 구현을 통해 데이터 페이징 되는 순서를 만들 때 정적으로 지정할 필요는 `GetProductsPaged` 저장 프로시저입니다. 그러나 있습니다 기록한 GridView가 스마트 태그에는 페이징 사용 옵션 외에 정렬 사용 확인란을 선택 합니다. 아쉽게도 현재 사용자 지정 페이징 구현 GridView에 정렬 지원을 추가 데이터의 현재 표시 된 페이지의 레코드를 정렬만 됩니다. 예를 들어, 또한 페이징을 지원 하 여 데이터의 첫 번째 페이지를 볼 때 제품 이름을 내림차순으로 정렬 하는 다음 GridView를 구성 하는 경우 1 페이지에서 제품의 순서를 반대로 것입니다. 그림 18에서 볼 수 있듯이 이러한 카 호랑이로 표시 첫 번째 제품 71 다른 제품 다음에 오는 카 호랑이 사전순으로; 무시 하는 역방향 알파벳 순으로 정렬 하는 경우 정렬에서 첫 번째 페이지의 레코드만 간주 됩니다.
 
-
 [![정렬 되는 데이터에만 표시 현재 페이지](efficiently-paging-through-large-amounts-of-data-vb/_static/image23.png)](efficiently-paging-through-large-amounts-of-data-vb/_static/image22.png)
 
 **그림 18**: 정렬 되는 데이터에만 표시 현재 페이지 ([클릭 하 여 큰 이미지 보기](efficiently-paging-through-large-amounts-of-data-vb/_static/image24.png))
-
 
 데이터가 BLL s에서 검색 된 후 발생 정렬 하기 때문에 데이터의 현재 페이지에만 적용 정렬 `GetProductsPaged` 메서드와이 메서드가 특정 페이지에 대해 해당 레코드를 반환 합니다. 올바르게 정렬를 구현 하려면 정렬 식을 전달 해야 합니다 `GetProductsPaged` 메서드 데이터의 특정 페이지를 반환 하기 전에 데이터를 적절 하 게 순위 수 있도록 합니다. 다음 자습서에서이 작업을 수행 하는 방법을 살펴보겠습니다.
 
@@ -333,11 +282,9 @@ ObjectDataSource 현재 사용 중 이므로 0 값으로 둘 다에 대해 GridV
 
 이 방법은 업데이트 하기 때문에 `PageIndex` 1 단계 후 하지만 2 단계 전에 합니다. 따라서 2 단계에서에서 적절 한 레코드 집합이 반환 됩니다. 이렇게 하려면 다음과 같은 코드를 사용 합니다.
 
-
 [!code-vb[Main](efficiently-paging-through-large-amounts-of-data-vb/samples/sample11.vb)]
 
 다른 해결 방법은 ObjectDataSource s에 대 한 이벤트 처리기를 만들려면 `RowDeleted` 이벤트 및 설정 하는 `AffectedRows` 속성 값이 1 합니다. GridView 업데이트 1 단계에서에서 (하지만 다시 2 단계에서에서 데이터를 검색 하기 전에) 레코드를 삭제 한 후 해당 `PageIndex` 속성 작업에 의해 영향을 받은 하나 이상의 행 하는 경우. 그러나는 `AffectedRows` ObjectDataSource가 속성을 설정 하지 않은 하 고 따라서이 단계를 생략 하면 됩니다. 이 단계를 실행 하는 한 가지 방법은 수동으로 설정 하는 것은 `AffectedRows` 삭제 작업이 성공적으로 완료 되 면 속성입니다. 다음과 같은 코드를 사용 하 여 수행할 수 있습니다.
-
 
 [!code-vb[Main](efficiently-paging-through-large-amounts-of-data-vb/samples/sample12.vb)]
 
@@ -351,14 +298,12 @@ ObjectDataSource 현재 사용 중 이므로 0 값으로 둘 다에 대해 GridV
 
 필자의 아티클을 [SQL Server 2005를 사용 하 여 ASP.NET 2.0의 사용자 지정 페이징](http://aspnet.4guysfromrolla.com/articles/031506-1.aspx), 데이터베이스 테이블에 페이징 하는 경우 이러한 두 페이징 기술 간 성능 차이 보이게 필자는 몇 가지 성능 테스트가 포함 50,000 개의 레코드입니다. 이러한 테스트에서 SQL Server 수준에서 쿼리를 실행 하는 시간이 모두 살펴봤습니다 (사용 하 여 [SQL Profiler](https://msdn.microsoft.com/library/ms173757.aspx)) 및 사용 하 여 ASP.NET 페이지 [ASP.NET 추적 기능](https://msdn.microsoft.com/library/y13fw6we.aspx)합니다. 이러한 테스트 단일 활성 사용자를 사용 하 여 개발 상자 내에서 실행 된 및 따라서 과학 없는 일반적인 웹 사이트 부하 패턴을 모방 하지 마십시오 염두에서에 둡니다. 그럼에도 불구 하 고 결과 충분히 많은 양의 데이터를 사용 하 여 작업 하는 경우 기본 인스턴스 및 사용자 지정 페이징을 실행 시간이 상대 차이점을 설명 합니다.
 
-
 |  | **Avg. 기간 (초)** | **읽기** |
 | --- | --- | --- |
 | **기본 SQL Profiler 페이징** | 1.411 | 383 |
 | **사용자 지정 페이징 SQL Profiler** | 0.002 | 29 |
 | **기본 페이징 ASP.NET 추적** | 2.379 | *해당 없음* |
 | **사용자 지정 페이징 ASP.NET 추적** | 0.029 | *해당 없음* |
-
 
 알 수 있듯이 평균 읽기 덜 354 필요한 데이터의 특정 페이지를 검색 하 고 시간에 비해 훨씬 빨리 완료 됩니다. ASP.NET 페이지에서 사용자 지정 페이지 있었습니다 1/100에 가까우면에 렌더링할<sup>번째</sup> 기본 페이징을 사용 하는 경우 걸린 시간입니다. 참조 [필자의 기사](http://aspnet.4guysfromrolla.com/articles/031506-1.aspx) 코드 및 데이터베이스와 함께 이러한 결과 대 한 자세한 내용은 자신의 환경에서 이러한 테스트를 재현 하는 다운로드할 수 있습니다.
 

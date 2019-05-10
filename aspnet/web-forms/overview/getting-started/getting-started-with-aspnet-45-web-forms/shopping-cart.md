@@ -8,12 +8,12 @@ ms.date: 09/08/2014
 ms.assetid: 6898c601-6c31-432f-8388-e6843f8a17cb
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/shopping-cart
 msc.type: authoredcontent
-ms.openlocfilehash: e079318b37563b1b7afe0f842f5b463541de0a81
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1c54449e778eac96133cccdc90d86cbbaf05a70f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59405432"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132105"
 ---
 # <a name="shopping-cart"></a>쇼핑 카트
 
@@ -22,7 +22,6 @@ ms.locfileid: "59405432"
 [Wingtip Toys 샘플 프로젝트 (C#)를 다운로드](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 또는 [전자책 (PDF) 다운로드](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
 
 > 이 자습서 시리즈는 ASP.NET 4.5와 Microsoft Visual Studio Express 2013 for Web 사용 하 여 ASP.NET Web Forms 응용 프로그램을 빌드하는 기본 사항을 설명 합니다. Visual Studio 2013 [C# 소스 코드를 사용 하 여 프로젝트](https://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 이 자습서 시리즈를 함께 사용할 수 있습니다.
-
 
 이 자습서에서는 Wingtip Toys 샘플 ASP.NET Web Forms 응용 프로그램에 쇼핑 카트에 추가 하는 데 필요한 비즈니스 논리를 설명 합니다. 이 자습서는 이전 자습서 "데이터 항목 및 세부 정보를 표시" 빌드하고 Wingtip 장난감 자습서 시리즈의 일부입니다. 이 자습서를 완료 하면 샘플 앱의 사용자 추가, 제거 및 시장 바구니의 제품을 수정 하는 일을 할 됩니다.
 
@@ -49,7 +48,6 @@ ms.locfileid: "59405432"
 > [!NOTE] 
 > 
 > ASP.NET 세션 상태가 사용자 사이트를 퇴사 만료 되는 사용자 관련 정보를 저장 하는 편리한 장소입니다. 세션 상태를 잘못 사용 하면 대규모 사이트에 성능에 미치는 영향을 미칠 수 있습니다, 있지만 light 세션 상태 작동 데모 용도로 사용 합니다. Wingtip Toys 샘플 프로젝트에 세션 상태가 저장된-프로세스에서 사이트를 호스팅하는 웹 서버에 있는 외부 공급자로 없이 세션 상태를 사용 하는 방법을 보여 줍니다. 응용 프로그램의 여러 인스턴스를 제공 하는 대규모 사이트 또는 다른 서버에서 응용 프로그램의 여러 인스턴스를 실행 하는 사이트에 대 한 사용을 고려 **Windows Azure Cache Service**합니다. 이 캐시 서비스는 외부 웹 사이트에 있으며 in-process 세션 상태를 사용 하 여 문제를 해결 하는 분산된 캐싱 서비스를 제공 합니다. 자세한 내용은 참조 하십시오 [사용 하 여 ASP.NET 세션 상태 Windows Azure 웹 사이트와 방법](https://docs.microsoft.com/azure/redis-cache/cache-aspnet-session-state-provider)합니다.
-
 
 ### <a name="add-cartitem-as-a-model-class"></a>CartItem 모델 클래스 추가
 
@@ -128,7 +126,6 @@ ms.locfileid: "59405432"
 > [!NOTE] 
 > 
 > 관련 코드를 수정 합니다 (*AddToCart.aspx.cs*)이 페이지는 페이지 UI (*AddToCart.aspx*).
-
 
 #### <a name="to-create-the-add-to-cart-functionality"></a>카트에 추가를 만들려면 기능:
 
@@ -215,7 +212,6 @@ ms.locfileid: "59405432"
 > [!NOTE] 
 > 
 > 위의 코드에서는 nullable 형식 "`int?`"입니다. Nullable 형식은 기본 형식 및 null 값으로 모든 값을 나타낼 수 있습니다. 자세한 내용은 참조 하십시오 [Nullable 형식 사용](https://msdn.microsoft.com/library/2cf62fcy(v=vs.110).aspx)합니다.
-
 
 ### <a name="modify-the-shopping-cart-display"></a>쇼핑 카트 표시 수정
 

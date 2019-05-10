@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 2e861511-450e-4752-a61e-4a01933f9b6e
 msc.legacyurl: /web-forms/overview/deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-production-environment-for-web-deployment
 msc.type: authoredcontent
-ms.openlocfilehash: 586508039b9a3d78492aa02a77a1f29c64668b5e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2d76e715cdbf6ec484fa0ff98b3b3d1d8dfd3961
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59409696"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125847"
 ---
 # <a name="scenario-configuring-a-production-environment-for-web-deployment"></a>시나리오: 웹 배포용 프로덕션 환경 구성
 
@@ -22,7 +22,6 @@ ms.locfileid: "59409696"
 [PDF 다운로드](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > 이 항목에서는 프로덕션 환경에 대 한 일반적인 웹 배포 시나리오 및 유사한 환경을 설정 하기 위해 완료 해야 하는 작업을 설명 합니다.
-
 
 프로덕션 환경은 웹 응용 프로그램 또는 웹 사이트에 대 한 최종 대상입니다. 이 지점에서 응용 프로그램 테스트를 통해 되었습니다, 그리고 스테이징 환경에 배포한 이며 "go live." 준비 완료 프로덕션 환경의 특성은 특성 및 용도 웹 콘텐츠를 조직, 대상 그룹 및 많은 기타 요인의 크기에 따라 광범위 하 게 달라질 수 있습니다. 엔터프라이즈 규모 시나리오에서는 프로덕션 환경 이러한 특성을 가질 수 있습니다.
 
@@ -33,7 +32,6 @@ ms.locfileid: "59409696"
 
 > [!NOTE]
 > 이 자습서의 범위를 벗어납니다 여러 서버에 데이터베이스 배포를 확장 합니다. 이 영역에 대 한 자세한 내용은 참조 하세요 [SQL Server Books Online](https://technet.microsoft.com/library/ms130214.aspx)합니다.
-
 
 예를 들어, 우리의 [자습서 시나리오](../deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md), Team Build server Contact Manager 솔루션을 빌드 및 한 번에 스테이징 환경에 배포할 수 있도록 하는 빌드 정의 포함 합니다. 응용 프로그램 보안 요구 사항과 네트워크 인프라에 의해 적용 된 제약 조건으로 인해 프로덕션에 배포할 준비가 되 면 프로덕션 환경 관리자가 수동으로 웹 패키지를 프로덕션 웹 서버로 복사 하며 가져오기 인터넷 정보 서비스 (IIS) 관리자를 통해 해당 합니다.
 

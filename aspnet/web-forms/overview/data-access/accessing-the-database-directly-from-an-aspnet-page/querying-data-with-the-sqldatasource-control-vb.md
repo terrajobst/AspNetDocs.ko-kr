@@ -8,12 +8,12 @@ ms.date: 02/20/2007
 ms.assetid: b12f752d-3502-40a4-b695-fc7b7d08cfd3
 msc.legacyurl: /web-forms/overview/data-access/accessing-the-database-directly-from-an-aspnet-page/querying-data-with-the-sqldatasource-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: d1e01c7693cc5d59b32019dfef1663863e7978c4
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 9e2689e665c39fda15df27ba03f4dcd44e834bff
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379848"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65124553"
 ---
 # <a name="querying-data-with-the-sqldatasource-control-vb"></a>SqlDataSource 컨트롤을 사용하여 데이터 쿼리(VB)
 
@@ -23,7 +23,6 @@ ms.locfileid: "59379848"
 
 > 이전 자습서에서 완벽 하 게 데이터 액세스 계층에서 프레젠테이션 계층을 분리 하 ObjectDataSource 컨트롤을 사용 했습니다. 프레젠테이션 및 데이터 액세스 엄격 하 게 분리 하지 않아도 되는 간단한 응용 프로그램에 대 한 SqlDataSource 컨트롤을 사용할 수 있는 방법을 배울이 자습서를 시작 합니다.
 
-
 ## <a name="introduction"></a>소개
 
 모든 자습서에서는 지금 검사 ve 프레젠테이션, 비즈니스 논리 및 데이터 액세스 계층으로 이루어진 계층화 된 아키텍처를 사용 합니다. (DAL (데이터 액세스 계층) 첫 번째 자습서에서 만들 되었습니다 ([데이터 액세스 레이어 만들기](../introduction/creating-a-data-access-layer-vb.md)) 및 두 번째에서 비즈니스 논리 계층 ([비즈니스 논리 레이어 만들기](../introduction/creating-a-business-logic-layer-vb.md)). 로 시작 합니다 [the ObjectDataSource 사용 하 여 데이터 표시](../basic-reporting/displaying-data-with-the-objectdatasource-vb.md) 자습서, ASP.NET 2.0 s 새 ObjectDataSource 컨트롤을 사용 하 여 선언적으로 프레젠테이션 계층에서 아키텍처와 인터페이스 하는 방법에 살펴보았습니다.
@@ -32,11 +31,9 @@ ms.locfileid: "59379848"
 
 ASP.NET 2.0은 5 개의 기본 제공 데이터 소스 컨트롤을 제공 [SqlDataSource](https://msdn.microsoft.com/library/dz12d98w%28vs.80%29.aspx)를 [AccessDataSource](https://msdn.microsoft.com/library/8e5545e1.aspx)하십시오 [ObjectDataSource](https://msdn.microsoft.com/library/9a4kyhcx.aspx), [XmlDataSource](https://msdn.microsoft.com/library/e8d8587a%28en-US,VS.80%29.aspx), 및 [SiteMapDataSource](https://msdn.microsoft.com/library/5ex9t96x%28en-US,VS.80%29.aspx)합니다. Microsoft SQL Server, Microsoft Access, Oracle, MySQL 및 기타를 포함 하 여 관계형 데이터베이스에서 직접 데이터를 액세스 및 수정 SqlDataSource는 사용할 수 있습니다. 이 자습서에는 다음 세 SqlDataSource 컨트롤을 사용 하 여 작업, 삽입, 업데이트 및 데이터 삭제 SqlDataSource를 사용 하는 방법 뿐만 아니라 쿼리 하는 방법 및 필터 데이터베이스 데이터를 탐색 하는 방법을 살펴보겠습니다.
 
-
 ![ASP.NET 2.0에는 5 개의 기본 제공 데이터 소스 컨트롤이 포함 되어 있습니다.](querying-data-with-the-sqldatasource-control-vb/_static/image1.gif)
 
 **그림 1**: ASP.NET 2.0에는 5 개의 기본 제공 데이터 소스 컨트롤이 포함 되어 있습니다.
-
 
 ## <a name="comparing-the-objectdatasource-and-sqldatasource"></a>ObjectDataSource, SqlDataSource 비교
 
@@ -44,15 +41,12 @@ ASP.NET 2.0은 5 개의 기본 제공 데이터 소스 컨트롤을 제공 [SqlD
 
 SqlDataSource 동일한 기능을 제공 하지만 개체 라이브러리 보다는 관계형 데이터베이스에 대해 작동 합니다. SqlDataSource를 사용 하 여 데이터베이스 연결 문자열 및 임시 SQL 쿼리를 지정 해야 했습니다 또는 저장 프로시저를 삽입, 업데이트, 삭제 및 데이터 검색을 실행 합니다. SqlDataSource s `Select()`, `Insert()`를 `Update()`, 및 `Delete()` 메서드를 호출 하는 경우 지정된 된 데이터베이스에 연결 하 고 적절 한 SQL 쿼리를 실행 합니다. 다음 다이어그램에서 볼 수 있듯이, 이러한 메서드는 데이터베이스에 연결, 쿼리를 실행 및 결과 반환 합니다. grunt 작업을 수행 합니다.
 
-
 ![SqlDataSource는 데이터베이스로 프록시로 사용](querying-data-with-the-sqldatasource-control-vb/_static/image2.gif)
 
 **그림 2**: SqlDataSource는 데이터베이스로 프록시로 사용
 
-
 > [!NOTE]
 > 이 자습서에서는 데이터베이스에서 데이터를 검색할 집중적으로 다루겠습니다. 에 [삽입, 업데이트 및 SqlDataSource 컨트롤을 사용 하 여 데이터 삭제](inserting-updating-and-deleting-data-with-the-sqldatasource-vb.md) 자습서, SqlDataSource 삽입, 업데이트 및 삭제를 지원 하도록 구성 하는 방법을 살펴보겠습니다.
-
 
 ## <a name="the-sqldatasource-and-accessdatasource-controls"></a>SqlDataSource 및 AccessDataSource 컨트롤
 
@@ -70,79 +64,62 @@ SqlDataSource 컨트롤을 사용 하 여 데이터베이스 데이터와 직접
 - `InsertUpdateDelete.aspx`
 - `OptimisticConcurrency.aspx`
 
-
 ![SqlDataSource 관련 자습서에 대 한 ASP.NET 페이지 추가](querying-data-with-the-sqldatasource-control-vb/_static/image3.gif)
 
 **그림 3**: SqlDataSource 관련 자습서에 대 한 ASP.NET 페이지 추가
 
-
 다른 폴더와 같이 `Default.aspx` 에 `SqlDataSource` 폴더 섹션의 자습서를 나열 됩니다. 이전에 설명한 대로 `SectionLevelTutorialListing.ascx` 사용자 컨트롤은이 기능을 제공 합니다. 따라서이 사용자 정의 컨트롤을 추가 `Default.aspx`의 디자인 뷰에서 페이지의 솔루션 탐색기에서 끌어 합니다.
-
 
 [![Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](querying-data-with-the-sqldatasource-control-vb/_static/image5.gif)](querying-data-with-the-sqldatasource-control-vb/_static/image4.gif)
 
 **그림 4**: 추가 된 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤 `Default.aspx` ([클릭 하 여 큰 이미지 보기](querying-data-with-the-sqldatasource-control-vb/_static/image6.gif))
 
-
 마지막으로, 이러한 네 가지 페이지 항목을 추가 합니다 `Web.sitemap` 파일입니다. 특히, DataList 및 반복기에 추가 사용자 지정 단추 후 다음 태그를 추가 `<siteMapNode>`:
-
 
 [!code-sql[Main](querying-data-with-the-sqldatasource-control-vb/samples/sample1.sql)]
 
 업데이트 한 후 `Web.sitemap`, 잠시 브라우저를 통해 자습서 웹 사이트를 확인 합니다. 왼쪽 메뉴에는 이제 편집, 삽입 및 삭제 자습서에 대 한 항목이 포함 됩니다.
 
-
 ![사이트 맵 항목이 포함 되어 있습니다 SqlDataSource 자습서](querying-data-with-the-sqldatasource-control-vb/_static/image7.gif)
 
 **그림 5**: 사이트 맵 항목이 포함 되어 있습니다 SqlDataSource 자습서
-
 
 ## <a name="step-2-adding-and-configuring-the-sqldatasource-control"></a>2단계: SqlDataSource 컨트롤 추가 및 구성
 
 열어서 시작 합니다 `Querying.aspx` 페이지에 `SqlDataSource` 폴더 및 디자인 뷰로 전환 합니다. SqlDataSource 컨트롤 집합과 디자이너 도구 상자에서 끌어 해당 `ID` 에 `ProductsDataSource`입니다. ObjectDataSource가 마찬가지로 SqlDataSource 렌더링 된 출력을 생성 하지 않습니다 하 고 따라서 디자인 화면에서 회색 상자로 표시 됩니다. SqlDataSource를 구성 하려면 SqlDataSource s 스마트 태그에서 데이터 소스 구성 링크를 클릭 합니다.
 
-
 ![클릭 된 SqlDataSource s 스마트 태그에서 데이터 원본 연결 구성](querying-data-with-the-sqldatasource-control-vb/_static/image8.gif)
 
 **그림 6**: 클릭 된 SqlDataSource s 스마트 태그에서 데이터 원본 연결 구성
-
 
 그러면 SqlDataSource 컨트롤의 데이터 소스 구성 마법사. S 마법사의 단계에 s ObjectDataSource 컨트롤에서 다를 있지만 최종 목표 동일 검색, 삽입, 업데이트 및 데이터 소스를 통해 데이터를 삭제 하는 방법에 세부 정보를 제공 합니다. SqlDataSource에 대 한이 수반 사용할 기본 데이터베이스를 지정 하 고 임시 SQL 문 또는 저장된 프로시저를 제공 합니다.
 
 첫 번째 마법사 단계를 데이터베이스에 대 한 요청입니다. 드롭다운 목록에 포함 된 웹 응용 프로그램 s에 해당 데이터베이스 `App_Data` 폴더 및 서버 탐색기에서 데이터 연결 노드에 추가 되었습니다. 이후로 ve 이미 추가 대 한 연결 문자열을 `NORTHWIND.MDF` 데이터베이스에 `App_Data` s 프로젝트 폴더 `Web.config` 해당 연결 문자열에 대 한 참조를 포함 하는 파일을 드롭 다운 목록 `NORTHWINDConnectionString`합니다. 드롭다운 목록에서이 항목을 선택 하 고 클릭 합니다.
 
-
 ![위해 드롭다운 목록에서 선택](querying-data-with-the-sqldatasource-control-vb/_static/image9.gif)
 
 **그림 7**: 선택 된 `NORTHWINDConnectionString` 드롭 다운 목록에서
-
 
 데이터베이스를 선택한 후 마법사가 데이터를 반환 하도록 쿼리를 요청 합니다. 테이블 또는 뷰를 반환할 수는 사용자 지정 SQL 문 입력 또는 저장된 프로시저를 지정할 열 하거나 지정할 수 있습니다. 사용자 지정 SQL 문 또는 저장된 프로시저 및 테이블에서 열을 지정이이 선택한 지정을 통해 전환할 수도 있고 라디오 단추를 볼 수 있습니다.
 
 > [!NOTE]
 > 첫 번째 예를 들어 s를 테이블 또는 뷰 옵션에서 지정 열을 사용할 수 있습니다. 이 자습서의 뒷부분에서 설명 하 고 마법사로 돌아갑니다 하 고 사용자 지정 SQL 문 또는 저장된 프로시저 옵션을 지정을 탐색 합니다.
 
-
 그림 8 화면은 구성 Select 문을 지정 라디오 단추를 테이블 또는 뷰 열을 선택 합니다. 드롭다운 목록에 선택한 테이블 또는 뷰의 열 아래 확인란을 선택 목록에 표시를 사용 하 여 Northwind 데이터베이스의 테이블 및 뷰 집합이 포함 합니다. 예를 들어 let s는 다음과 같이 반환 됩니다.는 `ProductID`, `ProductName`, 및 `UnitPrice` 의 열을 `Products` 테이블. 그림 8에 나와 것 처럼 결과 SQL 문은 표시 이러한 선택 항목 마법사 만들기 후 `SELECT [ProductID], [ProductName], [UnitPrice] FROM [Products]`합니다.
-
 
 ![Products 테이블에서 데이터를 반환 합니다.](querying-data-with-the-sqldatasource-control-vb/_static/image10.gif)
 
 **그림 8**: 데이터를 반환 합니다 `Products` 테이블
 
-
 마법사를 구성한 후 합니다 `ProductID`, `ProductName`, 및 `UnitPrice` 열에서를 `Products` 테이블에서 다음 단추를 클릭 합니다. 이 최종 화면 이전 단계에서 구성 된 쿼리의 결과 검사할 수 있는 기회를 제공 합니다. 쿼리 테스트 단추를 클릭 하면 구성 된 실행 `SELECT` 문과 표에 결과 표시 합니다.
-
 
 ![선택 쿼리를 검토 하려면 테스트 쿼리 단추를 클릭](querying-data-with-the-sqldatasource-control-vb/_static/image11.gif)
 
 **그림 9**: 검토에 대 한 테스트 쿼리 단추를 클릭 하 여 `SELECT` 쿼리
 
-
 마법사를 완료 하려면 마침을 클릭 합니다.
 
 ObjectDataSource를 사용 하 여 SqlDataSource의 마법사 단순히 값을 할당 s control 속성, 즉 같은 합니다 [ `ConnectionString` ](https://msdn.microsoft.com/library/system.web.ui.webcontrols.sqldatasource.connectionstring.aspx) 하 고 [ `SelectCommand` ](https://msdn.microsoft.com/library/system.web.ui.webcontrols.sqldatasource.selectcommand.aspx) 속성입니다. 마법사를 완료 한 후 SqlDataSource 컨트롤 s 선언적 태그는 다음과 비슷하게 표시 됩니다.
-
 
 [!code-aspx[Main](querying-data-with-the-sqldatasource-control-vb/samples/sample2.aspx)]
 
@@ -154,26 +131,21 @@ ObjectDataSource를 사용 하 여 SqlDataSource의 마법사 단순히 값을 �
 
 SqlDataSource를 구성한 후 데이터 GridView 또는 DetailsView와 같은 웹 컨트롤을 바인딩할 수 있습니다. 이 자습서에서는 s GridView에 데이터를 표시 하도록 합니다. 도구 상자에서 GridView를 페이지로 끌어서에 바인딩하는 `ProductsDataSource` SqlDataSource GridView가 스마트 태그의 드롭다운 목록에서 데이터 소스를 선택 하 여 합니다.
 
-
 [![GridView를 추가 하 고 SqlDataSource 컨트롤에 바인딩](querying-data-with-the-sqldatasource-control-vb/_static/image13.gif)](querying-data-with-the-sqldatasource-control-vb/_static/image12.gif)
 
 **그림 10**: GridView를 추가 하 고 SqlDataSource 컨트롤에 바인딩합니다 ([클릭 하 여 큰 이미지 보기](querying-data-with-the-sqldatasource-control-vb/_static/image14.gif))
-
 
 적 GridView가 스마트 태그의 드롭다운 목록에서 SqlDataSource 컨트롤을 선택 하면 Visual Studio는 자동으로 추가 BoundField 또는 CheckBoxField GridView에 각 데이터 소스 컨트롤에 의해 반환 되는 열에 대 한 합니다. SqlDataSource 세 가지 데이터베이스 열을 반환 하므로 `ProductID`, `ProductName`, 및 `UnitPrice` GridView에 세 개의 필드가 있습니다.
 
 GridView가의 3을 구성 하려면 잠시 BoundFields입니다. 변경 된 `ProductName` 필드 s `HeaderText` 속성을 제품 이름 및 `UnitPrice` 가격 필드 s입니다. 형식을 지정할 수는 `UnitPrice` 통화 필드입니다. 이러한 수정을 마치면 GridView가 선언적 태그 다음과 비슷하게 표시 됩니다.
 
-
 [!code-aspx[Main](querying-data-with-the-sqldatasource-control-vb/samples/sample3.aspx)]
 
 브라우저를 통해이 페이지를 방문 합니다. GridView가 각 제품이 나열 그림 11에서 알 수 있듯이 `ProductID`, `ProductName`, 및 `UnitPrice` 값입니다.
 
-
 [![각 제품의 ProductID, ProductName, 및 UnitPrice 값을 표시 하는 GridView](querying-data-with-the-sqldatasource-control-vb/_static/image16.gif)](querying-data-with-the-sqldatasource-control-vb/_static/image15.gif)
 
 **그림 11**: GridView 표시 각 제품 s `ProductID`, `ProductName`, 및 `UnitPrice` 값 ([클릭 하 여 큰 이미지 보기](querying-data-with-the-sqldatasource-control-vb/_static/image17.gif))
-
 
 해당 페이지를 방문 하는 경우 GridView가 해당 데이터 소스 제어를 호출 하는 `Select()` 메서드. ObjectDataSource 컨트롤을 사용할 때는이 호출을 `ProductsBLL` s 클래스 `GetProducts()` 메서드. 그러나 SqlDataSource와 함께 합니다 `Select()` 메서드는 지정 된 데이터베이스 및 문제에 대 한 연결을 설정 하는 `SelectCommand` (`SELECT [ProductID], [ProductName], [UnitPrice] FROM [Products]`,이 예제의). SqlDataSource는 GridView 열거를 반환 하는 각 데이터베이스 레코드에 대 한 gridview 행 만들기의 결과 반환 합니다.
 
@@ -195,43 +167,33 @@ SqlDataSource 컨트롤을 구성할 때 또는 기존 테이블 또는 뷰 열 
 
 다른 GridView 컨트롤을 추가 합니다 `Querying.aspx` 페이지 및 스마트 태그의 드롭다운 목록에서 새 데이터 원본을 만들려면 선택 합니다. 다음으로 표시는 데이터를 가져와서 데이터베이스에서이 새 SqlDataSource 컨트롤을 만듭니다. 컨트롤의 이름을 `ProductsWithCategoryInfoDataSource`입니다.
 
-
 ![ProductsWithCategoryInfoDataSource 라는 새 SqlDataSource 컨트롤 만들기](querying-data-with-the-sqldatasource-control-vb/_static/image18.gif)
 
 **그림 12**: 라는 새 SqlDataSource 컨트롤 만들기 `ProductsWithCategoryInfoDataSource`
 
-
 다음 화면에서는 데이터베이스를 지정 합니다. 그림 7 년대에서 했던 것 처럼 선택 된 `NORTHWINDConnectionString` 드롭다운 목록에서 나열 하 고 다음을 클릭 합니다. Select 문 화면 구성 지정을 사용자 지정 SQL 문 또는 저장된 프로시저 라디오 단추를 선택 하 고 클릭 합니다. SELECT, UPDATE, INSERT 및 DELETE를 레이블이 지정 된 탭을 제공 하는 사용자 지정 문 또는 저장 프로시저 정의 화면으로 표시 됩니다. 각 탭에서 텍스트 상자에 사용자 지정 SQL 문을 입력 하 하거나 드롭다운 목록에서 저장된 프로시저를 선택할 수 있습니다. 이 자습서에서는 사용자 지정 SQL 문; 입력 살펴보겠습니다. 다음 자습서는 저장된 프로시저를 사용 하는 예제를 포함 합니다.
-
 
 ![사용자 지정 SQL 문을 입력 하거나 저장된 프로시저를 선택 합니다.](querying-data-with-the-sqldatasource-control-vb/_static/image19.gif)
 
 **그림 13**: 사용자 지정 SQL 문을 입력 하거나 저장된 프로시저를 선택 합니다.
 
-
 사용자 지정 SQL 문 텍스트 상자에 직접 입력할 수 있습니다 또는 쿼리 작성기 단추를 클릭 하 여 그래픽 방식으로 생성할 수 있습니다. 쿼리 작성기 또는 텍스트 상자에서 반환할 다음 쿼리를 사용 합니다 `ProductID` 및 `ProductName` 에서 필드를 `Products` 를 사용 하 여 테이블을 `JOIN` s 제품을 검색 하 `CategoryName` 에서 `Categories` 테이블:
 
-
 [!code-sql[Main](querying-data-with-the-sqldatasource-control-vb/samples/sample4.sql)]
-
 
 ![생성할 수 있습니다 그래픽 방식으로 쿼리를 통해 쿼리 작성기](querying-data-with-the-sqldatasource-control-vb/_static/image20.gif)
 
 **그림 14**: 생성할 수 있습니다 그래픽 방식으로 쿼리를 통해 쿼리 작성기
 
-
 쿼리를 지정한 후 쿼리 테스트 화면으로 이동 하려면 다음을 클릭 합니다. SqlDataSource 마법사를 완료 하려면 마침을 클릭 합니다.
 
 마법사를 완료 한 후 GridView 세 BoundFields 표시에 추가 해야 합니다 `ProductID`, `ProductName`, 및 `CategoryName` 열 쿼리에서 반환 되 고 다음 선언적 태그에서 결과:
 
-
 [!code-aspx[Main](querying-data-with-the-sqldatasource-control-vb/samples/sample5.aspx)]
-
 
 [![GridView 각 s 제품 ID, 이름 및 연결 된 범주 이름을 보여 줍니다.](querying-data-with-the-sqldatasource-control-vb/_static/image22.gif)](querying-data-with-the-sqldatasource-control-vb/_static/image21.gif)
 
 **그림 15**: GridView를 보여 줍니다 각 제품 ID, 이름 및 연결 된 범주 이름 ([클릭 하 여 큰 이미지 보기](querying-data-with-the-sqldatasource-control-vb/_static/image23.gif))
-
 
 ## <a name="summary"></a>요약
 

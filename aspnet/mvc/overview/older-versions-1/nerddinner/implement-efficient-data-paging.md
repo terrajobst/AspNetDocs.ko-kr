@@ -8,12 +8,12 @@ ms.date: 07/27/2010
 ms.assetid: adea836d-dbc2-4005-94ea-53aef09e9e34
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/implement-efficient-data-paging
 msc.type: authoredcontent
-ms.openlocfilehash: ff12bc43ad68fdc4bbcd478624f47ea0d2774c2d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2d9a0dba381b71755ac626f76d52bc5bcb434447
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59399309"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125650"
 ---
 # <a name="implement-efficient-data-paging"></a>효율적인 데이터 페이징 구현
 
@@ -26,7 +26,6 @@ by [Microsoft](https://github.com/microsoft)
 > 8 단계 dinners 한 번에 수천 개의 표시 하는 대신 수만 번-10 향후 dinners 표시 하 고 다시 페이지를 앞뒤로 전체 목록 SEO 친숙 한 방식으로 최종 사용자를 허용 /Dinners URL에 대 한 페이징 지원을 추가 하는 방법을 보여 줍니다.
 > 
 > ASP.NET MVC 3을 사용 하는 경우 수행 하는 것이 좋습니다 합니다 [가져오기 시작 MVC 3과](../../older-versions/getting-started-with-aspnet-mvc3/cs/intro-to-aspnet-mvc-3.md) 하거나 [MVC Music Store](../../older-versions/mvc-music-store/mvc-music-store-part-1.md) 자습서입니다.
-
 
 ## <a name="nerddinner-step-8-paging-support"></a>NerdDinner 8 단계: 페이징 지원
 

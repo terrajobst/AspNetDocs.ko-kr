@@ -8,12 +8,12 @@ ms.date: 06/27/2014
 ms.assetid: 0e6fb03c-b16d-4bb0-ab0b-552bd2b6ece1
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v4/odata-actions-and-functions
 msc.type: authoredcontent
-ms.openlocfilehash: 6b0388c0e60f4a81ddb52a13fe2d05c2c7d27313
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f5af94e93e5b7f2351d40febbf1a468d635c9db1
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59380862"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133147"
 ---
 # <a name="actions-and-functions-in-odata-v4-using-aspnet-web-api-22"></a>작업 및 ASP.NET Web API 2.2 사용 하 여 OData v4의 함수
 
@@ -49,7 +49,6 @@ ms.locfileid: "59380862"
 
 > [!NOTE]
 > 이 자습서를 기반으로 한이 자습서 [OData v4 끝점 사용 하 여 ASP.NET Web API 2 만들기](create-an-odata-v4-endpoint.md)
-
 
 첫째, 추가 `ProductRating` 등급을 나타내는 모델입니다.
 

@@ -8,12 +8,12 @@ ms.date: 03/06/2007
 ms.assetid: 32377145-ec25-4715-8370-a1c590a331d5
 msc.legacyurl: /web-forms/overview/data-access/enhancing-the-gridview/adding-a-gridview-column-of-radio-buttons-cs
 msc.type: authoredcontent
-ms.openlocfilehash: d191dd0022c9ec87e2c7df6be8be2a8c6b951ad3
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: bed86ec86533363d7bdbdbf37129c3de85ab7686
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59413024"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131444"
 ---
 # <a name="adding-a-gridview-column-of-radio-buttons-c"></a>라디오 단추의 GridView 열 추가(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59413024"
 [샘플 앱을 다운로드](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_51_CS.exe) 또는 [PDF 다운로드](adding-a-gridview-column-of-radio-buttons-cs/_static/datatutorial51cs1.pdf)
 
 > 이 자습서 GridView 컨트롤을 GridView의 단일 행을 선택 하는 보다 직관적인 방법으로 사용자를 제공 하는 열의 라디오 단추를 추가 하는 방법에 살펴봅니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -43,32 +42,25 @@ GridView 컨트롤은 많은 기본 제공 기능을 제공합니다. 텍스트,
 - `CheckBoxField.aspx`
 - `InsertThroughFooter.aspx`
 
-
 ![SqlDataSource 관련 자습서에 대 한 ASP.NET 페이지 추가](adding-a-gridview-column-of-radio-buttons-cs/_static/image1.gif)
 
 **그림 1**: SqlDataSource 관련 자습서에 대 한 ASP.NET 페이지 추가
 
-
 다른 폴더와 같이 `Default.aspx` 에 `EnhancedGridView` 폴더 섹션의 자습서를 나열 됩니다. 이전에 설명한 대로 `SectionLevelTutorialListing.ascx` 사용자 컨트롤은이 기능을 제공 합니다. 따라서이 사용자 정의 컨트롤을 추가 `Default.aspx`의 디자인 뷰에서 페이지의 솔루션 탐색기에서 끌어 합니다.
-
 
 [![Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](adding-a-gridview-column-of-radio-buttons-cs/_static/image2.gif)](adding-a-gridview-column-of-radio-buttons-cs/_static/image1.png)
 
 **그림 2**: 추가 된 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤 `Default.aspx` ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-radio-buttons-cs/_static/image2.png))
 
-
 마지막으로, 이러한 네 가지 페이지 항목을 추가 합니다 `Web.sitemap` 파일입니다. 특히 사용 후에 다음 태그를 추가 SqlDataSource 컨트롤 `<siteMapNode>`:
-
 
 [!code-xml[Main](adding-a-gridview-column-of-radio-buttons-cs/samples/sample1.xml)]
 
 업데이트 한 후 `Web.sitemap`, 잠시 브라우저를 통해 자습서 웹 사이트를 확인 합니다. 왼쪽 메뉴에는 이제 편집, 삽입 및 삭제 자습서에 대 한 항목이 포함 됩니다.
 
-
 ![이제 사이트 맵 기능을 향상 하는 GridView 자습서에 대 한 항목을 포함](adding-a-gridview-column-of-radio-buttons-cs/_static/image3.gif)
 
 **그림 3**: 이제 사이트 맵 기능을 향상 하는 GridView 자습서에 대 한 항목을 포함
-
 
 ## <a name="step-2-displaying-the-suppliers-in-a-gridview"></a>2단계: GridView에 공급자를 표시합니다.
 
@@ -76,43 +68,33 @@ GridView 컨트롤은 많은 기본 제공 기능을 제공합니다. 텍스트,
 
 열어서 시작 합니다 `RadioButtonField.aspx` 페이지는 `EnhancedGridView` GridView 디자이너 도구 상자에서 끌어 폴더. 집합 GridView s `ID` 에 `Suppliers` 하 고 해당 스마트 태그에서 새 데이터 원본을 만들려면 선택 합니다. 특히 라는 ObjectDataSource를 만듭니다 `SuppliersDataSource` 에서 해당 데이터를 가져오고 있는 `SuppliersBLL` 개체입니다.
 
-
 [![SuppliersDataSource 라는 새로운 ObjectDataSource는 만들기](adding-a-gridview-column-of-radio-buttons-cs/_static/image4.gif)](adding-a-gridview-column-of-radio-buttons-cs/_static/image3.png)
 
 **그림 4**: 명명 된 새 ObjectDataSource 만들려면 `SuppliersDataSource` ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-cs/_static/image4.png))
-
 
 [![SuppliersBLL 클래스를 사용 하는 ObjectDataSource 구성](adding-a-gridview-column-of-radio-buttons-cs/_static/image5.gif)](adding-a-gridview-column-of-radio-buttons-cs/_static/image5.png)
 
 **그림 5**: ObjectDataSource를 사용 하 여 구성 합니다 `SuppliersBLL` 클래스 ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-cs/_static/image6.png))
 
-
 미국에 있는 해당 공급자를 나열 하고자 하므로 선택 된 `GetSuppliersByCountry(country)` 선택 탭의 드롭다운 목록에서 메서드.
-
 
 [![SuppliersBLL 클래스를 사용 하는 ObjectDataSource 구성](adding-a-gridview-column-of-radio-buttons-cs/_static/image6.gif)](adding-a-gridview-column-of-radio-buttons-cs/_static/image7.png)
 
 **그림 6**: ObjectDataSource를 사용 하 여 구성 합니다 `SuppliersBLL` 클래스 ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-cs/_static/image8.png))
 
-
 업데이트 탭에서 선택 옵션 (없음) 및 다음을 클릭 합니다.
-
 
 [![SuppliersBLL 클래스를 사용 하는 ObjectDataSource 구성](adding-a-gridview-column-of-radio-buttons-cs/_static/image7.gif)](adding-a-gridview-column-of-radio-buttons-cs/_static/image9.png)
 
 **그림 7**: ObjectDataSource를 사용 하 여 구성 합니다 `SuppliersBLL` 클래스 ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-cs/_static/image10.png))
 
-
 이후를 `GetSuppliersByCountry(country)` 매개 변수를 허용 하는 메서드, 데이터 소스 구성 마법사의 매개 변수 원본에 대 한 요청입니다. 지정 하는 하드 코드 된 값 (이 예제의: 미국), 원본 드롭 다운 목록 None으로 설정 하 고 텍스트 상자에 기본값을 입력 매개 변수를 둡니다. 마법사를 완료 하려면 마침을 클릭 합니다.
-
 
 [![기본 값으로 USA를 사용 하 여 국가의 매개 변수](adding-a-gridview-column-of-radio-buttons-cs/_static/image8.gif)](adding-a-gridview-column-of-radio-buttons-cs/_static/image11.png)
 
 **그림 8**: 미국에 대 한 기본 값으로 사용 합니다 `country` 매개 변수 ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-cs/_static/image12.png))
 
-
 마법사를 완료 한 후 GridView 각 공급 업체 데이터 필드에 대 한 BoundField 포함 됩니다. 제거를 제외한 모든 `CompanyName`, `City`, 및 `Country` BoundFields, 이름 바꾸기 및를 `CompanyName` BoundFields `HeaderText` 공급 업체에 대 한 속성입니다. 이렇게 한 다음, GridView 및 ObjectDataSource 선언 구문 다음과 유사 합니다.
-
 
 [!code-aspx[Main](adding-a-gridview-column-of-radio-buttons-cs/samples/sample2.aspx)]
 
@@ -120,11 +102,9 @@ GridView 컨트롤은 많은 기본 제공 기능을 제공합니다. 텍스트,
 
 그림 9를 `Suppliers` GridView 및 두 개의 단추 웹 브라우저를 통해 볼 때를 제어 합니다.
 
-
 [![미국에서 이러한 공급자가 해당 이름, 도시 및 국가 정보 나열](adding-a-gridview-column-of-radio-buttons-cs/_static/image9.gif)](adding-a-gridview-column-of-radio-buttons-cs/_static/image13.png)
 
 **그림 9**: USA가 해당 이름, 도시 및 국가가 정보에서 해당 공급 업체 ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-radio-buttons-cs/_static/image14.png))
-
 
 ## <a name="step-3-adding-a-column-of-radio-buttons"></a>3단계: 라디오 단추의 열 추가
 
@@ -134,14 +114,11 @@ RadioButton 웹 컨트롤에 추가 하 여 원하는 사용자 인터페이스�
 
 S 수 있으므로이 방법은 구현를 TemplateField RadioButton 웹 컨트롤을 사용 하 여 필요한 기능을 제공 하지 않습니다, 경우에 s 결과 라디오 단추 그룹화 되지 않은 이유를 검사 하는 것이 좋습니다. 가장 왼쪽의 필드를 만드는 공급자 GridView를 templatefield로 추가 하 여 시작 합니다. 다음으로 GridView가 스마트 태그에서 템플릿 편집 링크를 클릭 및 TemplateField s에 도구 상자에서 RadioButton 웹 컨트롤을 끌어 `ItemTemplate` (그림 10 참조). 집합 RadioButton s `ID` 속성을 `RowSelector` 하며 `GroupName` 속성을 `SuppliersGroup`입니다.
 
-
 [![ItemTemplate에 RadioButton 웹 컨트롤 추가](adding-a-gridview-column-of-radio-buttons-cs/_static/image10.gif)](adding-a-gridview-column-of-radio-buttons-cs/_static/image15.png)
 
 **그림 10**: RadioButton 웹 컨트롤을 추가 합니다 `ItemTemplate` ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-cs/_static/image16.png))
 
-
 디자이너를 통해 이러한 추가 마치면 GridView의 태그 다음과 비슷하게 표시 됩니다.
-
 
 [!code-aspx[Main](adding-a-gridview-column-of-radio-buttons-cs/samples/sample3.aspx)]
 
@@ -149,14 +126,11 @@ RadioButton s [ `GroupName` 속성](https://msdn.microsoft.com/library/system.we
 
 RadioButton 웹 컨트롤에 추가 된 `ItemTemplate`, 브라우저를 통해이 페이지를 방문 하 고 표의 행에서 라디오 단추를 클릭 합니다. 라디오 단추 그룹화 되지 않은 하는 방법을 예 고 그림 11의 모든 행을 선택 하 여 보여 줍니다.
 
-
 [![GridView가의 라디오 단추 그룹화 되지 됩니다.](adding-a-gridview-column-of-radio-buttons-cs/_static/image11.gif)](adding-a-gridview-column-of-radio-buttons-cs/_static/image17.png)
 
 **그림 11**: GridView가의 라디오 단추를 그룹화 되지 않습니다 ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-radio-buttons-cs/_static/image18.png))
 
-
 라디오 단추 그룹화 되지 않은 이유 때문입니다 해당 렌더링 `name` 특성은 동일한 불구 하 고 다른 `GroupName` 속성을 설정 합니다. 이러한 차이점을 확인 하려면 브라우저에서 소스 보기/작업을 수행 하 고 라디오 단추 태그 검사:
-
 
 [!code-html[Main](adding-a-gridview-column-of-radio-buttons-cs/samples/sample4.html)]
 
@@ -169,13 +143,11 @@ RadioButton 웹 컨트롤에 추가 된 `ItemTemplate`, 브라우저를 통해�
 > [!NOTE]
 > RadioButton 웹 컨트롤을 라디오 단추 컨트롤이 HTML 템플릿을 추가할 때 고유는 같은 `name` 특성도 라디오 단추 그룹화 되지 않은 표의 합니다. HTML 컨트롤을 사용 하 여 잘 모르는 경우 자유롭게이 메모를 무시 하려면 HTML 컨트롤은 거의에서 사용 되는, 특히 ASP.NET 2.0. 자세히 알아보는 데 관심이 있다면 볼 [K. Scott Allen](http://odetocode.com/blogs/scott/default.aspx) s 블로그 [웹 컨트롤과 HTML 컨트롤](http://www.odetocode.com/Articles/348.aspx)합니다.
 
-
 ## <a name="using-a-literal-control-to-inject-radio-button-markup"></a>리터럴 컨트롤을 사용 하 여 라디오 단추 태그를 삽입 하려면
 
 모든 GridView 내에서 라디오 단추를 올바르게 그룹화 하기 위해 수동으로에 라디오 단추 태그를 삽입 해야 합니다 `ItemTemplate`합니다. 각 라디오 단추 동일 해야 `name` 특성을 하지만 고유한 있어야 `id` (하는 경우 클라이언트 쪽 스크립트를 통해 라디오 단추에 액세스 하고자) 특성입니다. 사용자가 라디오 단추를 선택 하 고 페이지를 다시 게시 한 후 브라우저에서 다시 전송 s 선택된 된 라디오 단추의 값 `value` 특성입니다. 따라서 각 라디오 단추는 고유 해야 `value` 특성입니다. 마지막으로 다시 게시 해야 추가 해야 합니다 `checked` 선택한, 그렇지 않으면 사용자가 선택 하 고 다시 게시 한 후 한 라디오 단추에 대 한 특성을 라디오 단추 돌아갑니다 기본 상태로 (모두 선택 되지 않음).
 
 서식 파일에 하위 수준 태그를 삽입 하기 위해 수행할 수 있는 방법은 두 가지가 있습니다. 하나는 다양 한 태그 및 코드 숨김 클래스에 정의 된 메서드를 서식 지정에 대 한 호출을 수행 하는 것입니다. 이 기술은 설명 된 합니다 [GridView 컨트롤에서 TemplateFields 사용 하 여](../custom-formatting/using-templatefields-in-the-gridview-control-cs.md) 자습서입니다. 여기서 것 같이 보일 수 있습니다.
-
 
 [!code-aspx[Main](adding-a-gridview-column-of-radio-buttons-cs/samples/sample5.aspx)]
 
@@ -185,16 +157,13 @@ RadioButton 웹 컨트롤에 추가 된 `ItemTemplate`, 브라우저를 통해�
 
 RadioButton TemplateField s에서 제거 하 여 시작 `ItemTemplate`, 리터럴 컨트롤을으로 바꿉니다. S 리터럴 컨트롤을 설정 `ID` 에 `RadioButtonMarkup`입니다.
 
-
 [![ItemTemplate에 리터럴 컨트롤 추가](adding-a-gridview-column-of-radio-buttons-cs/_static/image12.gif)](adding-a-gridview-column-of-radio-buttons-cs/_static/image19.png)
 
 **그림 12**: 리터럴 컨트롤을 추가 합니다 `ItemTemplate` ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-cs/_static/image20.png))
 
-
 다음으로 GridView s에 대 한 이벤트 처리기를 만들고 `RowCreated` 이벤트입니다. `RowCreated` 이벤트가 추가 된 모든 행에 대해 여부 데이터는 중인 차츰 GridView에 한 번 발생 합니다. 즉, 다시 게시의 경우에 데이터 뷰 상태를 다시 로드 되 면 합니다 `RowCreated` 이벤트가 계속 발생 하 고이 대신 사용 하는 이유는 `RowDataBound` (발생 하는 경우 데이터는 명시적으로에 바인딩할 데이터 웹 컨트롤).
 
 이 이벤트 처리기에서 하고자 하는 경우 계속 다시 데이터 행을 처리 했습니다. 각 데이터 행에 대해 프로그래밍 방식으로 참조 하려고 합니다 `RadioButtonMarkup` 리터럴 컨트롤 집합과 해당 `Text` 를 내보내는 태그 속성. 태그에 정해진 라디오를 만들고 다음 코드에서 볼 수 있듯이 해당 단추 `name` 특성이로 설정 된 `SuppliersGroup`해당 `id` 특성이로 설정 된 `RowSelectorX`여기서 *X* GridView 행의 인덱스 `value` 특성은 GridView 행의 인덱스로 설정 합니다.
-
 
 [!code-csharp[Main](adding-a-gridview-column-of-radio-buttons-cs/samples/sample6.cs)]
 
@@ -206,11 +175,9 @@ GridView 행을 선택 하 고 포스트백이 발생할 때 관심이 `Supplier
 
 이후로에서는 해야 결정할 선택된 된 라디오 단추를 인덱스에 하지는 `RowCreated` 이지만 이벤트 처리기는 `Click` Button 웹 컨트롤에 대 한 이벤트 처리기를 통해 s 추가 `SuppliersSelectedIndex` 를반환하는코드숨김클래스에속성`-1`없음 라디오 단추가 선택 된 라디오 단추 중 하나를 선택 하는 경우 선택한 인덱스입니다.
 
-
 [!code-csharp[Main](adding-a-gridview-column-of-radio-buttons-cs/samples/sample7.cs)]
 
 추가할 알게이 속성을 추가 합니다 `checked="checked"` 태그를 `RowCreated` 이벤트 처리기 때 `SuppliersSelectedIndex` equals `e.Row.RowIndex`. 이 논리를 포함 하도록 이벤트 처리기를 업데이트 합니다.
-
 
 [!code-csharp[Main](adding-a-gridview-column-of-radio-buttons-cs/samples/sample8.cs)]
 
@@ -220,7 +187,6 @@ GridView 행을 선택 하 고 포스트백이 발생할 때 관심이 `Supplier
 
 > [!NOTE]
 > TemplateField (이 긴 단계 3 포커스 내)를 사용 하는 대신 사용자 지정을 만들 수 것 `DataControlField` 적절 한 사용자 인터페이스와 기능을 렌더링 하는 클래스입니다. 합니다 [ `DataControlField` 클래스](https://msdn.microsoft.com/library/system.web.ui.webcontrols.datacontrolfield.aspx) 파생 되는 BoundField, CheckBoxField, TemplateField, 및 다른 기본 제공 GridView 및 DetailsView 필드는 기본 클래스입니다. 사용자 지정 만들기 `DataControlField` 클래스 의미는 라디오 단추에 있는 열의 선언적 구문을 사용 하 여 추가할 수 없으며 다른 웹 페이지에 다른 웹 응용 프로그램을 훨씬 쉽게 기능을 복제 합니다.
-
 
 그러나 Ve 이전에 만든 사용자 지정 asp.net에서 컨트롤을 컴파일되지, 경우 있을 수행 되므로 상당한 양의 투자할 필요 미묘한 측면 들 및에 지 사례의 신중 하 게 처리 해야 하는 호스트를 함께 전달 합니다. 에서는 따라서에 구현 하는 사용자 지정 라디오 단추의 열은 됩니다 `DataControlField` 지금은 클래스 및 TemplateField 옵션을 사용 하 여 계속 합니다. 아마도 만들기, 사용 및 사용자 지정 배포를 탐색할 수 있는 기회를 마련 `DataControlField` 이후 자습서에서 클래스.
 
@@ -232,36 +198,29 @@ GridView 행을 선택 하 고 포스트백이 발생할 때 관심이 `Supplier
 
 이 기능을 제공 하려면 만들기에 대 한 이벤트 처리기를 `SendToProducts` s 단추 `Click` 이벤트입니다. 3 단계에서에서 추가한는 `SuppliersSelectedIndex` 해당 라디오 단추 행의 인덱스를 반환 하는 속성을 선택 합니다. 해당 `SupplierID` GridView s에서 검색할 수 있습니다 `DataKeys` 컬렉션과 사용자 다음 보낼 수 있습니다 `~/Filtering/ProductsForSupplierDetails.aspx?SupplierID=SupplierID` 사용 하 여 `Response.Redirect("url")`입니다.
 
-
 [!code-csharp[Main](adding-a-gridview-column-of-radio-buttons-cs/samples/sample9.cs)]
 
 이 코드가 작동 쌓아가는 GridView에서 라디오 단추 중 하나를 선택 합니다. GridView에서 라디오 단추 선택 되지 않은 하 고 사용자가 처음에 `SendToProducts` 단추를 `SuppliersSelectedIndex` 됩니다 `-1`를 이후 throw 예외가 발생 하는 `-1` 합니다 의인덱스범위를벗어났습니다`DataKeys`컬렉션입니다. 하지만 이것이 문제가 되지 않습니다 업데이트 하기로 결정 하는 경우는 `RowCreated` 첫 번째 라디오 단추를 처음에 선택한 GridView에, 3 단계에서에서 설명한 대로 이벤트 처리기입니다.
 
 에 맞게를 `SuppliersSelectedIndex` 의 값 `-1`를 GridView 위에 있는 페이지에 레이블 웹 컨트롤을 추가 합니다. 설정 해당 `ID` 속성을 `ChooseSupplierMsg`, 해당 `CssClass` 속성을 `Warning`, 해당 `EnableViewState` 하 고 `Visible` 속성을 `false`, 및 해당 `Text` 하세요 속성 그리드에서 공급자를 선택 합니다. CSS 클래스 `Warning` 빨간색, 기울임꼴, 굵게, 큰 글꼴로 텍스트를 표시 하 고에 정의 된 `Styles.css`합니다. 설정 하 여는 `EnableViewState` 하 고 `Visible` 속성을 `false`, where만 포스트백에 대 한 제외 하 고 레이블을 렌더링 되지 않습니다 s control `Visible` 속성을 프로그래밍 방식으로로 설정 됩니다 `true`.
 
-
 [![GridView 위에 레이블 웹 컨트롤 추가](adding-a-gridview-column-of-radio-buttons-cs/_static/image13.gif)](adding-a-gridview-column-of-radio-buttons-cs/_static/image21.png)
 
 **그림 13**: 레이블 웹 컨트롤 위에 GridView 추가 ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-radio-buttons-cs/_static/image22.png))
 
-
 다음으로 보강를 `Click` 표시할 이벤트 처리기는 `ChooseSupplierMsg` 레이블을 지정 하는 경우 `SuppliersSelectedIndex` 보다 작은 경우 0 이며 사용자를 리디렉션할 `~/Filtering/ProductsForSupplierDetails.aspx?SupplierID=SupplierID` 이 고, 그렇지 합니다.
-
 
 [!code-csharp[Main](adding-a-gridview-column-of-radio-buttons-cs/samples/sample10.cs)]
 
 클릭을 브라우저의 페이지를 방문 합니다 `SendToProducts` GridView에서 공급자를 선택 하기 전에 단추입니다. 그림 14에서 볼 수 있듯이이 표시는 `ChooseSupplierMsg` 레이블. 그런 다음 공급자를 선택 하 고 클릭는 `SendToProducts` 단추입니다. 선택한 공급자가 제공 하는 제품을 나열 하는 페이지에 있습니다 whisk는이 합니다. 그림 15는 `ProductsForSupplierDetails.aspx` Bigfoot Breweries 공급자 선택 될 때 페이지입니다.
 
-
 [![ChooseSupplierMsg 레이블 아니요 공급자 선택 되어 있으면 표시 됩니다.](adding-a-gridview-column-of-radio-buttons-cs/_static/image14.gif)](adding-a-gridview-column-of-radio-buttons-cs/_static/image23.png)
 
 **그림 14**: 합니다 `ChooseSupplierMsg` 레이블 아니요 공급자 선택 되어 있으면 표시 됩니다 ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-cs/_static/image24.png))
 
-
 [![선택한 공급자가의 제품 ProductsForSupplierDetails.aspx에 표시 됩니다.](adding-a-gridview-column-of-radio-buttons-cs/_static/image15.gif)](adding-a-gridview-column-of-radio-buttons-cs/_static/image25.png)
 
 **그림 15**: 선택한 공급자가의 제품에 표시 됩니다 `ProductsForSupplierDetails.aspx` ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-cs/_static/image26.png))
-
 
 ## <a name="step-5-displaying-the-selected-supplier-s-products-on-the-same-page"></a>5단계: 같은 페이지에서 선택한 공급자가의 제품 표시
 
@@ -269,24 +228,19 @@ GridView 행을 선택 하 고 포스트백이 발생할 때 관심이 `Supplier
 
 공급자 선택 되 면 표시할 제품의이 GridView만 것 이므로 아래 패널 웹 컨트롤을 추가 합니다 `Suppliers` GridView, 설정 해당 `ID` 에 `ProductsBySupplierPanel` 고 `Visible` 속성을 `false`. 패널 내에서 선택한 공급자에 대 한 제품 텍스트를 추가 합니다. 뒤에 명명 된 GridView `ProductsBySupplier`합니다. GridView가 스마트 태그에서 이라는 새 ObjectDataSource를 바인딩할 선택 `ProductsBySupplierDataSource`합니다.
 
-
 [![새 ObjectDataSource ProductsBySupplier GridView 바인딩합니다](adding-a-gridview-column-of-radio-buttons-cs/_static/image16.gif)](adding-a-gridview-column-of-radio-buttons-cs/_static/image27.png)
 
 **그림 16**: 바인딩하는 `ProductsBySupplier` 새 ObjectDataSource에 GridView ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-cs/_static/image28.png))
 
-
 ObjectDataSource를 사용 하 여 다음으로 구성 된 `ProductsBLL` 클래스입니다. ObjectDataSource를 호출 해야 하는 선택한 공급자가 제공 하는 이러한 제품을 검색 하려고 하므로 지정 된 `GetProductsBySupplierID(supplierID)` 해당 데이터를 검색 하는 방법입니다. UPDATE, INSERT에서에서 드롭 다운 목록에서 선택 (없음) 및 탭을 삭제 합니다.
-
 
 [![GetProductsBySupplierID(supplierID) 메서드를 사용 하는 ObjectDataSource 구성](adding-a-gridview-column-of-radio-buttons-cs/_static/image17.gif)](adding-a-gridview-column-of-radio-buttons-cs/_static/image29.png)
 
 **그림 17**: ObjectDataSource를 사용 하 여 구성 합니다 `GetProductsBySupplierID(supplierID)` 메서드 ([큰 이미지를 보려면 클릭](adding-a-gridview-column-of-radio-buttons-cs/_static/image30.png))
 
-
 [![UPDATE, INSERT (없음) 드롭다운 목록을 설정 하 고 탭 삭제](adding-a-gridview-column-of-radio-buttons-cs/_static/image18.gif)](adding-a-gridview-column-of-radio-buttons-cs/_static/image31.png)
 
 **그림 18**: (없음)을 드롭다운 목록에서 업데이트, 삽입 및 삭제 탭 설정 ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-radio-buttons-cs/_static/image32.png))
-
 
 SELECT를 구성한 후 업데이트, 삽입 및 삭제 탭, 다음을 클릭 합니다. 이후를 `GetProductsBySupplierID(supplierID)` 메서드는 입력된 매개 변수, 데이터 원본 만들기 마법사가 매개 변수 값에 대 한 원본을 지정 하 라는 메시지가 나타납니다.
 
@@ -294,19 +248,15 @@ SELECT를 구성한 후 업데이트, 삽입 및 삭제 탭, 다음을 클릭 �
 
 또는 수를 ControlParameter를 사용 하 고 참조를 `Suppliers` GridView s [ `SelectedValue` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.selectedvalue.aspx) (그림 19 참조). GridView s `SelectedValue` 속성에서 반환 된 `DataKey` 값에 해당 하는 [ `SelectedIndex` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.selectedindex.aspx). GridView가 프로그래밍 방식으로 설정 해야 작동 하려면이 옵션에 대 한 순서로 `SelectedIndex` 속성을 선택한 경우 행을 `ListProducts` 단추를 클릭 합니다. 설정 하 여 추가 점으로 `SelectedIndex`를 선택한 레코드를 수행 합니다 `SelectedRowStyle` 에 정의 된를 `DataWebControls` 테마 (노란색 배경).
 
-
 [![ControlParameter를 사용 하 여 GridView의 SelectedValue 매개 변수 원본으로 지정](adding-a-gridview-column-of-radio-buttons-cs/_static/image19.gif)](adding-a-gridview-column-of-radio-buttons-cs/_static/image33.png)
 
 **그림 19**: ControlParameter GridView의 SelectedValue 매개 변수 원본으로 지정 하는 데 ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-radio-buttons-cs/_static/image34.png))
 
-
 마법사를 완료 하면 Visual Studio 제품의 데이터 필드에 대 한 필드를 자동으로 추가 됩니다. 제거를 제외한 모든 `ProductName`, `CategoryName`, 및 `UnitPrice` BoundFields, 변경 및는 `HeaderText` Product, Category 및 Price 속성입니다. 구성 된 `UnitPrice` BoundField 해당 값을 통화로 형식이 되도록 합니다. 다음과 같이 변경한 후 GridView 패널과 ObjectDataSource가 선언적 태그는 다음과 같이 표시 됩니다.
-
 
 [!code-aspx[Main](adding-a-gridview-column-of-radio-buttons-cs/samples/sample11.aspx)]
 
 이 연습을 완료 하려면 GridView가 설정 해야 `SelectedIndex` 속성을를 `SelectedSuppliersIndex` 및 `ProductsBySupplierPanel` 패널 s `Visible` 속성을 `true` 경우는 `ListProducts` 단추를 클릭 합니다. 이를 위해 이벤트 처리기를 만듭니다는 `ListProducts` 단추 웹 컨트롤의 `Click` 이벤트 다음 코드를 추가 합니다.
-
 
 [!code-csharp[Main](adding-a-gridview-column-of-radio-buttons-cs/samples/sample12.cs)]
 
@@ -314,11 +264,9 @@ GridView에서 공급자를 선택 하지 않은 경우는 `ChooseSupplierMsg` �
 
 그림 20 Bigfoot Breweries 공급자를 선택한 후 페이지 단추에 표시할 제품이 클릭 한 후 결과 보여 줍니다.
 
-
 [![같은 페이지에 나열 됩니다 Bigfoot Breweries에서 제품 제공](adding-a-gridview-column-of-radio-buttons-cs/_static/image20.gif)](adding-a-gridview-column-of-radio-buttons-cs/_static/image35.png)
 
 **그림 20**: 같은 페이지에 나열 됩니다 Bigfoot Breweries에서 제공 하는 제품 ([클릭 하 여 큰 이미지 보기](adding-a-gridview-column-of-radio-buttons-cs/_static/image36.png))
-
 
 ## <a name="summary"></a>요약
 

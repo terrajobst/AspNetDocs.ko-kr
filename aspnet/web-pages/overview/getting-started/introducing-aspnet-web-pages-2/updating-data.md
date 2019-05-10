@@ -8,12 +8,12 @@ ms.date: 01/02/2018
 ms.assetid: ac86ec9c-6b69-485b-b9e0-8b9127b13e6b
 msc.legacyurl: /web-pages/overview/getting-started/introducing-aspnet-web-pages-2/updating-data
 msc.type: authoredcontent
-ms.openlocfilehash: 4542ad3ac3e321629bb4de3cd4df12c22ff6cb20
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8f8bcfb7d9d2416a2699776cadbdaae8e12415ba
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59414623"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131796"
 ---
 # <a name="introducing-aspnet-web-pages---updating-database-data"></a>ASP.NET 웹 페이지 소개-데이터베이스 데이터를 업데이트 하는 중
 
@@ -37,7 +37,6 @@ ms.locfileid: "59414623"
 > - SQL `Update` 명령입니다.
 > - `Database.Execute` 메서드
 > - 숨겨진 필드 (`<input type="hidden">`).
-
 
 ## <a name="what-youll-build"></a>만들 내용
 
@@ -129,7 +128,6 @@ ms.locfileid: "59414623"
 > 
 > 물론 명명 된 매개 변수를 사용 하려면 해야 매개 변수의 이름을 알고 있어야 합니다. WebMatrix IntelliSense 수 *표시* 이름, 하지만 현재을 채울 수 없습니다 하 있습니다.
 
-
 ## <a name="creating-the-edit-page"></a>편집 페이지 만들기
 
 이제 만들어야 합니다 *EditMovie* 페이지입니다. 사용자가 클릭 하면 합니다 **편집** 링크는 최종적으로이 페이지에 있습니다.
@@ -206,7 +204,6 @@ ms.locfileid: "59414623"
 > 
 > **중요** 는 `Where` 데이터베이스에서 데이터베이스를 인식 하는 방법 이기 때문에 ID 사용 하 여 절은 아주 중요 합니다을 업데이트 하려는 레코드입니다. 중단 하는 경우는 `Where` 데이터베이스 업데이트 절 *모든* 데이터베이스의 레코드입니다. 대부분의 경우에서 재해가 될 것입니다.
 
-
 코드에서 자리 표시자를 사용 하 여 값을 업데이트 하는 SQL 문에 전달 됩니다. 전에 말한 새로운 반복: 보안상의 이유로 *만* 자리 표시자를 사용 하 여 SQL 문에 값을 전달 합니다.
 
 코드를 사용한 후 `db.Execute` 실행 하는 `Update` 문을 변경 내용을 볼 수 있는 목록 페이지를 다시 리디렉션합니다.
@@ -222,7 +219,6 @@ ms.locfileid: "59414623"
 > 물론는 `Query` 메서드는 하나의 데이터베이스 행을 반환할 수 있습니다. 그러나 ASP.NET의 결과 항상 처리는 `Query` 컬렉션인 메서드. 메서드가 행을 하나만 반환 하는 경우에 컬렉션에서 단일 행을 추출 해야 합니다. 상황에 따라서 여기서 있습니다 *알고* 얻게 하나의 행만, 사용 하는 편리한 다소 `QuerySingle`합니다.
 > 
 > 특정 유형의 데이터베이스 작업을 수행 하는 다른 몇 가지 방법 이며 데이터베이스 메서드 목록을 찾을 수 있습니다 합니다 [ASP.NET Web Pages API 빠른 참조](../../api-reference/asp-net-web-pages-api-reference.md#Data)합니다.
-
 
 ## <a name="making-validation-for-the-id-more-robust"></a>강력한 ID 더에 대 한 유효성 검사를 수행
 

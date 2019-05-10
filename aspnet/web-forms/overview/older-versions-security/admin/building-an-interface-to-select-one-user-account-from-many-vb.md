@@ -8,12 +8,12 @@ ms.date: 04/01/2008
 ms.assetid: da53380c-a16b-41c7-a20d-24343c735c52
 msc.legacyurl: /web-forms/overview/older-versions-security/admin/building-an-interface-to-select-one-user-account-from-many-vb
 msc.type: authoredcontent
-ms.openlocfilehash: d7dd82ed4140b5ac6993483fb16af6a1b249be51
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e25e94b172bb4b1652b87842d45cbbb78a464c0a
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59383905"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131318"
 ---
 # <a name="building-an-interface-to-select-one-user-account-from-many-vb"></a>여러 사용자 계정 중 하나를 선택하는 인터페이스 빌드(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59383905"
 [코드를 다운로드](http://download.microsoft.com/download/6/0/e/60e1bd94-e5f9-4d5a-a079-f23c98f4f67d/VB.12.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/0/e/60e1bd94-e5f9-4d5a-a079-f23c98f4f67d/aspnet_tutorial12_SelectUser_vb.pdf)
 
 > 이 자습서에서는 페이징, 필터링 가능 표를 사용 하 여 사용자 인터페이스를 빌드합니다. 특히 사용자 인터페이스는 Linkbutton의 일련의 이름과 일치 하는 사용자를 표시 하는 GridView 컨트롤의 시작 문자를 기준으로 결과 필터링 하는 것에 대 한 구성 됩니다. GridView의 사용자 계정을 모두 나열 하 여 시작 하겠습니다. 그런 다음 3 단계에서에서 Linkbutton을 필터를 추가 합니다. 4 단계에서 필터링된 된 결과 페이징 살펴봅니다. -4 단계에서 생성 된 인터페이스를 특정 사용자 계정에 대 한 관리 작업을 수행 하는 이후 자습서에서 사용 됩니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -55,11 +54,9 @@ ASP.NET 페이지에 `Administration` 폴더는 사용자를 대상으로 전적
 
 이 시점에서 프로젝트의 솔루션 탐색기 스크린 샷을 그림 1에 표시 된 것을 유사 합니다.
 
-
 [![웹 사이트에 추가 된 4 개의 새 페이지와 Web.config 파일](building-an-interface-to-select-one-user-account-from-many-vb/_static/image2.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image1.png)
 
 **그림 1**: 4 개의 새 페이지와 `Web.config` 웹 사이트에 추가 된 파일 ([큰 이미지를 보려면 클릭](building-an-interface-to-select-one-user-account-from-many-vb/_static/image3.png))
-
 
 마지막으로, 사이트 맵 업데이트 (`Web.sitemap`)에 항목을 포함 하는 `ManageUsers.aspx` 페이지입니다. 추가 후 다음 XML을 `<siteMapNode>` 역할 자습서에 대 한 추가 했습니다.
 
@@ -67,11 +64,9 @@ ASP.NET 페이지에 `Administration` 폴더는 사용자를 대상으로 전적
 
 사이트 맵을 업데이트를 사용 하 여 브라우저를 통해 사이트를 방문 합니다. 그림 2에서 볼 수 있듯이 이제 왼쪽 탐색 관리 자습서에 대 한 항목이 포함 됩니다.
 
-
 [![사용자 관리 이라는 노드를 포함 하는 사이트 맵](building-an-interface-to-select-one-user-account-from-many-vb/_static/image5.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image4.png)
 
 **그림 2**: 사이트 맵 노드 라는 사용자 관리를 포함 ([클릭 하 여 큰 이미지 보기](building-an-interface-to-select-one-user-account-from-many-vb/_static/image6.png))
-
 
 ## <a name="step-2-listing-all-user-accounts-in-a-gridview"></a>2단계: GridView의 모든 사용자 계정 나열
 
@@ -81,11 +76,9 @@ ASP.NET 페이지에 `Administration` 폴더는 사용자를 대상으로 전적
 
 GridView에 원하는 사용자 계정 정보를 표시 하기 위해 GridView의 설정 `AutoGenerateColumns` 속성을 false로 BoundFields에 대 한 추가 합니다 `UserName`를 `Email`, 및 `Comment` 속성과 CheckBoxFields에 대 한는 `IsApproved`, `IsLockedOut`, 및 `IsOnline` 속성입니다. 이 구성은 통해 컨트롤의 선언적 태그 또는 필드 대화 상자를 통해 적용할 수 있습니다. 그림 3 후 자동 생성 필드 확인란을 선택 했습니다 CheckBoxFields 고 BoundFields 추가 및 구성 된 대화 상자를 스크린샷 필드를 나타냅니다.
 
-
 [![GridView에 세 개의 BoundFields 및 세 가지 CheckBoxFields 추가](building-an-interface-to-select-one-user-account-from-many-vb/_static/image8.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image7.png)
 
 **그림 3**: GridView에 세 개의 BoundFields 및 세 가지 CheckBoxFields 추가 ([클릭 하 여 큰 이미지 보기](building-an-interface-to-select-one-user-account-from-many-vb/_static/image9.png))
-
 
 에 GridView를 구성한 후 선언적 태그는 다음과 유사한 지 확인 합니다.
 
@@ -97,11 +90,9 @@ GridView에 원하는 사용자 계정 정보를 표시 하기 위해 GridView�
 
 시간을 내어 브라우저를 통해 페이지를 테스트 합니다. 그림 4에서 알 수 있듯이는 `UserAccounts` GridView 시스템의 사용자 이름, 전자 메일 주소 및 모든 사용자에 대 한 다른 관련 계정 정보를 나열 합니다.
 
-
 [![GridView에 사용자 계정이 나열 됩니다.](building-an-interface-to-select-one-user-account-from-many-vb/_static/image11.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image10.png)
 
 **그림 4**: GridView에 사용자 계정이 나열 됩니다 ([클릭 하 여 큰 이미지 보기](building-an-interface-to-select-one-user-account-from-many-vb/_static/image12.png))
-
 
 ## <a name="step-3-filtering-the-results-by-the-first-letter-of-the-username"></a>3단계: 사용자 이름의 첫 번째 문자를 기준으로 결과 필터링합니다.
 
@@ -121,15 +112,12 @@ GridView에 원하는 사용자 계정 정보를 표시 하기 위해 GridView�
 
 그림 5는 `ManageUsers.aspx` 브라우저를 통해 볼 때 페이지입니다.
 
-
 [![Repeater 27 필터링 Linkbutton 나열](building-an-interface-to-select-one-user-account-from-many-vb/_static/image14.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image13.png)
 
 **그림 5**: Repeater 나열 27 필터링 Linkbutton ([클릭 하 여 큰 이미지 보기](building-an-interface-to-select-one-user-account-from-many-vb/_static/image15.png))
 
-
 > [!NOTE]
 > 사용자는 모든 문자, 숫자 및 문장 부호를 포함 하 여 시작할 수 있습니다. 이러한 계정은 보려면 관리자가 모든 LinkButton 옵션을 사용 해야 합니다. 또는 숫자로 시작 하는 모든 사용자 계정을 반환 하는 LinkButton을 추가할 수 있습니다. 필자는 판독기에 대 한 연습으로 둡니다.
-
 
 포스트백을 발생 시키는 필터링 Linkbutton을 클릭 하 고 반복기의 발생 `ItemCommand` 이벤트를 아직 했습니다 때문에 표에 변하지 않습니다 하지만 결과 필터링 하는 코드를 작성 합니다. `Membership` 클래스에 포함 된 [ `FindUsersByName` 메서드](https://technet.microsoft.com/library/system.web.security.membership.findusersbyname.aspx) 사용자 지정 된 검색 패턴과 일치 하는 해당 사용자 계정을 반환 하는. 이 메서드 해당 사용자 이름 문자로 시작 하 여 지정 된 해당 사용자 계정을 검색 하려면 사용할 수 있습니다는 `CommandName` 클릭 된 필터링 된 LinkButton의 합니다.
 
@@ -151,11 +139,9 @@ GridView에 원하는 사용자 계정 정보를 표시 하기 위해 GridView�
 
 이 코드를 사용 하 여 필터링 기능을 테스트 합니다. 페이지를 방문 하는 먼저 모든 사용자 계정이 표시 됩니다 (그림 5를 다시 참조). LinkButton을 클릭 하면 포스트백을 발생 시키는 및 A로 시작 하는 사용자 계정 으로만 표시 된 결과 필터링 합니다.
 
-
 [![필터링 Linkbutton을 사용 하 여 사용자가 특정 문자로 시작 하는 해당 사용자를 표시 합니다.](building-an-interface-to-select-one-user-account-from-many-vb/_static/image17.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image16.png)
 
 **그림 6**: 필터링 Linkbutton을 사용 하 여 해당 사용자가 있는 사용자 이름이 특정 문자로 시작 표시 ([클릭 하 여 큰 이미지 보기](building-an-interface-to-select-one-user-account-from-many-vb/_static/image18.png))
-
 
 ## <a name="step-4-updating-the-gridview-to-use-paging"></a>4단계: 페이징을 사용 하 여 GridView를 업데이트 하는 중
 
@@ -171,7 +157,6 @@ GridView 컨트롤에서는 두 가지 유형의 페이징 제공합니다.
 > [!NOTE]
 > 사용자 지정 페이징을 구현에 관련 된 문제 뿐만 아니라 기본 및 사용자 지정 페이징을 간의 차이점에 자세한 내용은 참조 [효율적으로 페이징을 통해 많은 양의 데이터](https://asp.net/learn/data-access/tutorial-25-vb.aspx)입니다. 기본 및 사용자 지정 페이징의 성능 차이의 몇 가지 분석을 참조 하세요 [SQL Server 2005를 사용 하 여 ASP.NET에서 사용자 지정 페이징을](http://aspnet.4guysfromrolla.com/articles/031506-1.aspx)합니다.
 
-
 사용자 지정 페이징을 구현 하려면 먼저 몇 가지 메커니즘을 GridView에 표시 되는 레코드의 정확한 하위 집합을 검색할 해야 합니다. 다행 스럽게도 하는 `Membership` 클래스의 `FindUsersByName` 메서드는 페이지 인덱스 및 페이지 크기를 지정할 수 있도록 하는 오버 로드가 있습니다 하 고 레코드 범위에 속하는 사용자 계정만 반환 합니다.
 
 특히이 오버 로드에는 다음 서명을: [ `FindUsersByName(usernameToMatch, pageIndex, pageSize, totalRecords)` ](https://msdn.microsoft.com/library/fa5st8b2.aspx)합니다.
@@ -180,7 +165,6 @@ GridView 컨트롤에서는 두 가지 유형의 페이징 제공합니다.
 
 > [!NOTE]
 > 반환한 데이터 `FindUsersByName` username;는 정렬할 정렬 조건을 사용자 지정할 수 없습니다.
-
 
 사용자 지정 페이징을 사용 하지만 경우에 바인딩할 ObjectDataSource 컨트롤을 GridView는 구성할 수 있습니다. 사용자 지정 페이징을 구현 하기가 ObjectDataSource 컨트롤, 필요한 두 가지 방법: 시작 하는 행 인덱스 및 레코드를 표시 하려면 최대 전달 되는 정확한; 해당 범위 내에 속하는 레코드 하위 집합을 반환 합니다 와 레코드의 총 수를 반환 하는 메서드를 통해 페이징 되 고 있습니다. 합니다 `FindUsersByName` 오버 로드 페이지 인덱스 및 페이지 크기를 받고을 통해 레코드의 총 수를 반환을 `ByRef` 매개 변수입니다. 따라서 인터페이스 불일치를 있습니다.
 
@@ -196,11 +180,9 @@ GridView 컨트롤에서는 두 가지 유형의 페이징 제공합니다.
 
 그림 7에서는 Visual Web Developer 디자인 뷰를 통해 볼 때 4 개의 Linkbutton을 보여 줍니다.
 
-
 [![다음으로, 첫 번째, 이전, 추가 및 GridView 아래 Linkbutton 마지막](building-an-interface-to-select-one-user-account-from-many-vb/_static/image20.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image19.png)
 
 **그림 7**: 이전, Next 및 GridView 아래에 있는 마지막 Linkbutton 먼저 추가 ([클릭 하 여 큰 이미지 보기](building-an-interface-to-select-one-user-account-from-many-vb/_static/image21.png))
-
 
 ### <a name="keeping-track-of-the-current-page-index"></a>현재 페이지 인덱스의 추적
 
@@ -226,16 +208,13 @@ GridView 컨트롤에서는 두 가지 유형의 페이징 제공합니다.
 
 그림 8과 9 작업에 사용자 지정 페이징 인터페이스를 표시합니다. 그림 8에 표시 된 `ManageUsers.aspx` 모든 사용자 계정에 대 한 데이터의 첫 페이지를 볼 때 페이지입니다. Note 13 계정의 10 표시 됩니다. 다음 또는 마지막 링크를 클릭 하면 포스트백에서 업데이트를 `PageIndex` 을 1로 사용자의 두 번째 페이지를 그리드로 계정을 바인딩합니다 (그림 9 참조).
 
-
 [![첫 번째 10 사용자 계정이 표시 됩니다.](building-an-interface-to-select-one-user-account-from-many-vb/_static/image23.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image22.png)
 
 **그림 8**: 첫 번째 10 사용자 계정이 표시 됩니다 ([클릭 하 여 큰 이미지 보기](building-an-interface-to-select-one-user-account-from-many-vb/_static/image24.png))
 
-
 [![다음 링크를 클릭 하면 사용자 계정의 두 번째 페이지가 표시 됩니다.](building-an-interface-to-select-one-user-account-from-many-vb/_static/image26.png)](building-an-interface-to-select-one-user-account-from-many-vb/_static/image25.png)
 
 **그림 9**: 다음 링크를 클릭 하는 두 번째 페이지의 사용자 계정이 표시 됩니다 ([클릭 하 여 큰 이미지 보기](building-an-interface-to-select-one-user-account-from-many-vb/_static/image27.png))
-
 
 ## <a name="summary"></a>요약
 

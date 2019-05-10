@@ -8,12 +8,12 @@ ms.date: 02/17/2014
 ms.assetid: a8aac1ac-89de-4415-afe0-97a41c6423d2
 msc.legacyurl: /web-pages/overview/routing/creating-readable-urls-in-aspnet-web-pages-sites
 msc.type: authoredcontent
-ms.openlocfilehash: bfce6120b76d68a3f212639eafa6aa091d7e345d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 832db8e144cab730f16c78f67c12feb9b7c92c7c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59381785"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131763"
 ---
 # <a name="creating-readable-urls-in-aspnet-web-pages-razor-sites"></a>ASP.NET 웹 페이지 (Razor) 사이트에서 읽을 수 있는 Url 만들기
 
@@ -33,7 +33,6 @@ ms.locfileid: "59381785"
 >   
 > 
 > 이 자습서는 ASP.NET 웹 페이지 2 에서도 작동합니다.
-
 
 ## <a name="about-routing"></a>라우팅 정보
 
@@ -77,7 +76,6 @@ ASP.NET 요청을 처리할 때 URL이 라우팅하는 방법을 결정을 읽�
 > [!NOTE]
 > 그렇다고 해 특정 페이지에 대 한 요청 (즉, 포함 하는 요청은 *.cshtml* 파일 이름 확장명) 예상한 것 처럼 작동 합니다. 와 같은 요청 `http://www.contoso.com/a/b.cshtml` 페이지에 실행될지 *b.cshtml* 아무 문제 없이 합니다.
 
-
 페이지 내에서 페이지를 통해 경로 정보를 얻을 수 있습니다 `UrlData` 속성 사전입니다. 라는 파일에 있다고 가정해 보십시오 *ViewCustomers.cshtml* 사이트가이 요청을 가져옵니다.
 
 `http://mysite.com/myWebSite/ViewCustomers/1000`
@@ -88,7 +86,6 @@ ASP.NET 요청을 처리할 때 URL이 라우팅하는 방법을 결정을 읽�
 
 > [!NOTE]
 > 라우팅 전체 파일 이름을 포함 하지 않습니다, 때문에 있을 수 있습니다 모호성은 동일 페이지가 있는 경우 다른 파일 이름 확장명 (예를 들어 *MyPage.cshtml* 하 고 *MyPage.html*) . 라우팅을 사용 하 여 문제를 방지 하기 위해 없는지 페이지 이름이 해당 확장만 다른 사이트에 있는지 확인 하는 것이 좋습니다.
-
 
 <a id="Additional_Resources"></a>
 ## <a name="additional-resources"></a>추가 리소스

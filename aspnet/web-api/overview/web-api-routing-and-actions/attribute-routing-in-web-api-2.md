@@ -8,12 +8,12 @@ ms.date: 01/20/2014
 ms.assetid: 979d6c9f-0129-4e5b-ae56-4507b281b86d
 msc.legacyurl: /web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2
 msc.type: authoredcontent
-ms.openlocfilehash: 65e2268418501f89a77a0ba20f7960a618c2e9b7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 7da1805d8a7066e82743dc9bd7e024cc9813ee89
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59405458"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125460"
 ---
 # <a name="attribute-routing-in-aspnet-web-api-2"></a>ASP.NET Web API 2에서에서 특성 라우팅
 
@@ -97,7 +97,6 @@ Web API 2, 이전에 Web API 프로젝트 템플릿이 다음과 같은 코드 �
 
 > [!NOTE]
 > 자세한 내용은 [ASP.NET 호스트를 사용한 Web API 구성](../advanced/configuring-aspnet-web-api.md#webhost)합니다.
-
 
 <a id="add-routes"></a>
 ## <a name="adding-route-attributes"></a>경로 특성 추가

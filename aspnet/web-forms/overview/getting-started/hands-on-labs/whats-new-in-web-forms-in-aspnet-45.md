@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 0a1f88bd-97da-4ed1-86f1-605199dc75a4
 msc.legacyurl: /web-forms/overview/getting-started/hands-on-labs/whats-new-in-web-forms-in-aspnet-45
 msc.type: authoredcontent
-ms.openlocfilehash: 52f6ec17fb21019e93ebf2795e95d5b27e4edbe6
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 301af8ed877b58624e419c04f605c41f27dbdd0c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59401744"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132081"
 ---
 # <a name="whats-new-in-web-forms-in-aspnet-45"></a>ASP.NET 4.5의 새로운 Web Forms 기능
 
@@ -40,7 +40,6 @@ ms.locfileid: "59401744"
 > 공식 ASP.NET 포털에서 ASP.NET WebForms 4.5의 새로운 기능 중 더 많은 예제를 찾을 수 있습니다. [ASP.NET 4.5 및 Visual Studio 2012의 새로운 기능](../../../../whitepapers/whats-new-in-aspnet-45-and-visual-studio-2012.md#_Toc318097385)
 > 
 > 웹 캠프 교육 키트에서에서 사용할 수 있는 모든 샘플 코드 및 코드 조각 포함 됩니다 [ https://go.microsoft.com/fwlink/?LinkID=248297&clcid=0x409 ](https://go.microsoft.com/fwlink/?LinkID=248297&clcid=0x409)합니다.
-
 
 <a id="Objectives"></a>
 ### <a name="objectives"></a>목표
@@ -82,7 +81,6 @@ ms.locfileid: "59401744"
 
 > [!NOTE]
 > 각 실습 동반 되는 **최종** 연습을 완료 한 후 가져와야 결과 솔루션이 포함 된 폴더입니다. 이 연습을 진행 하는 추가 도움이 필요한 경우이 솔루션 가이드로 사용할 수 있습니다.
-
 
 이 랩을 완료 하는 시간을 예상 합니다. **60 분**합니다.
 
@@ -610,7 +608,6 @@ Asp.net에서 요청 유효성 검사 기능에는 특정 수준의 교차 사�
 
 > [!NOTE]
 > 또한 Azure는 다음이 응용이 프로그램을 배포할 수 [부록 b: 웹 배포를 사용 하 여 ASP.NET MVC 4 응용 프로그램 게시](#AppendixB)합니다.
-
 
 ---
 

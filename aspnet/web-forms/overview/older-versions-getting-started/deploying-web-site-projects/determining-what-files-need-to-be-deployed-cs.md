@@ -8,12 +8,12 @@ ms.date: 04/01/2009
 ms.assetid: f8d78a88-cc91-40d8-bce3-3d7954f6033b
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/determining-what-files-need-to-be-deployed-cs
 msc.type: authoredcontent
-ms.openlocfilehash: c17e3afaf4406489a14d0537a33fef384d6c5a19
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c4848f230ee0af5ee9d381e7df9cb1456870eb25
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59408968"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132370"
 ---
 # <a name="determining-what-files-need-to-be-deployed-c"></a>배포할 파일 확인(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59408968"
 [코드를 다운로드](http://download.microsoft.com/download/4/5/F/45F815EC-8B0E-46D3-9FB8-2DC015CCA306/ASPNET_Hosting_Tutorial_02_CS.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial02_FilesToDeploy_cs.pdf)
 
 > 개발 환경에서 프로덕션 환경에 배포 해야 하는 파일에 일부 의존 여부 ASP.NET 응용 프로그램 웹 사이트 모델 또는 웹 응용 프로그램 모델을 사용 하 여 작성 되었습니다. 이러한 두 프로젝트 모델과 프로젝트 모델 배포에 미치는 영향에 대해 알아보기
-
 
 ## <a name="introduction"></a>소개
 
@@ -92,20 +91,16 @@ Microsoft Visual Studio 2005 서비스 팩 1 릴리스되면 웹 응용 프로�
 
 그림 1에서는 브라우저를 통해 볼 때도 서 리뷰 웹 사이트의 스크린 샷을 보여 줍니다. 페이지를 참조 하는 여기 ~ /`Tech/TYASP35.aspx`, 책을 검토 하는 *가르치는 직접 ASP.NET 3.5 24 시간 동안에서*합니다. 페이지 맨 왼쪽된 열에서 메뉴에 걸쳐 있는 이동 경로에 정의 된 사이트 맵 구조에 기반한 `Web.sitemap`합니다. 오른쪽 위 모서리에서 이미지는 이미지에 있는 책 표지를 `Images` 폴더입니다. 웹 사이트의 모양과 느낌은 가장 중요 한 페이지 레이아웃 마스터 페이지에서 정의 되는 동안 Styles 폴더의 CSS 파일에 의해 명시 하는 스타일 시트 규칙 연계를 통해 정의 된 `Site.master`합니다.
 
-
 [![서평 웹 사이트의 다양 한 제목 제공](determining-what-files-need-to-be-deployed-cs/_static/image2.png)](determining-what-files-need-to-be-deployed-cs/_static/image1.png)
 
 **그림 1:** 서평 웹 사이트는 다양 한 제목에서의 검토를 제공 ([클릭 하 여 큰 이미지 보기](determining-what-files-need-to-be-deployed-cs/_static/image3.png))
-
 
 이 응용 프로그램을 데이터베이스를 사용 하지 않습니다. 각 검토는 별도 웹 페이지 응용 프로그램에서으로 구현 됩니다. 이 자습서와 다음 몇 가지 자습서 데이터베이스 없는 웹 응용 프로그램 배포 안내 합니다. 그러나 이후 자습서에서이 응용 프로그램을 검토, 판독기 설명 및 기타 정보를 데이터베이스 내의 저장 향상 됩니다 하 고 데이터 기반 웹 응용 프로그램을 올바르게 배포 하기 위해 수행 해야 하는 단계를 살펴봅니다.
 
 > [!NOTE]
 > 이 자습서는 웹 호스트 공급자를 사용 하 여 ASP.NET 응용 프로그램 호스팅에 집중 하 고 ASP 같은 보조 항목을 탐색 하지는 않습니다. NET의 사이트 맵 시스템 또는 자료를 사용 하 여 `Page` 클래스입니다. 이러한 기술에 대 한 자세한 내용은 및 자습서 전체에서 포함 된 기타 항목에 대 한 자세한 배경은 각 자습서의 끝에 추가 정보 섹션을 참조 합니다.
 
-
 이 자습서의이 다운로드는 웹 응용 프로그램의 사본을 두 개에 각각 다른 Visual Studio 프로젝트 형식으로 구현: BookReviewsWAP, 웹 응용 프로그램 프로젝트 및 BookReviewsWSP, 웹 사이트 프로젝트입니다. 두 프로젝트는 Visual Web Developer 2008 SP1을 사용 하 여 만든 및 ASP.NET 3.5 SP1을 사용 합니다. 사용 하려면 이러한 프로젝트의 압축을 풀어 내용을 바탕으로 시작 합니다. 웹 응용 프로그램 프로젝트 (BookReviewsWAP)을 열고, BookReviewsWAP 폴더로 이동한 후 솔루션 파일을 두 번 `BookReviewsWAP.sln`합니다. (BookReviewsWSP) 웹 사이트 프로젝트를 열려면 Visual Studio를 시작 하 고 그런 다음 파일 메뉴에서 웹 사이트 열기 옵션을 선택, 이동 하는 `BookReviewsWSP` 바탕 화면에서 폴더 확인을 클릭 합니다.
-
 
 파일 확인이 자습서의 나머지 두 섹션에서는 응용 프로그램을 배포 하는 경우 프로덕션 환경에 복사 해야 합니다. 다음 두 자습서- *[Your 사이트를 사용 하 여 FTP 배포](deploying-your-site-using-an-ftp-client-cs.md)* 하 고 *[배포 사이트를 사용 하 여 Visual Studio](deploying-your-site-using-visual-studio-cs.md)* -다양 한 방법 표시 웹 호스트 공급자에 이러한 파일을 복사 합니다.
 
@@ -115,11 +110,9 @@ Microsoft Visual Studio 2005 서비스 팩 1 릴리스되면 웹 응용 프로�
 
 그림 2에서는 책 검토 웹 응용 프로그램 프로젝트를 구성 하는 파일을 보여 줍니다.
 
-
 [![솔루션 탐색기에서 웹 응용 프로그램 프로젝트를 구성 하는 파일 나열](determining-what-files-need-to-be-deployed-cs/_static/image5.png)](determining-what-files-need-to-be-deployed-cs/_static/image4.png)
 
 **그림 2**: 솔루션 탐색기에서 웹 응용 프로그램 프로젝트를 구성 하는 파일 나열
-
 
 웹 응용 프로그램 프로젝트 모델 시작을 사용 하 여 명시적으로 가장 최근 원본 코드를 어셈블리로 컴파일할 응용 프로그램을 작성 하 여 개발 하는 ASP.NET 응용 프로그램을 배포 합니다. 다음으로, 프로덕션 환경에는 다음 파일을 복사 합니다.
 
@@ -131,7 +124,6 @@ Microsoft Visual Studio 2005 서비스 팩 1 릴리스되면 웹 응용 프로�
 > [!NOTE]
 > 그림 2에서 볼 수 있듯이 합니다 `BasePage` 라는 폴더에 배치 하는 프로젝트에 클래스 파일로 클래스는 구현 `HelperClasses`합니다. 프로젝트를 컴파일할 때의 코드를 `BasePage.cs` 파일은 단일 어셈블리로 ASP.NET 페이지의 코드 숨김 클래스와 함께 컴파일됩니다 `BookReviewsWAP.dll.` ASP.NET에는 특수 폴더 `App_Code` 웹에 대 한 클래스 파일을 저장 하도록 디자인 된 사이트 프로젝트입니다. 코드는 `App_Code` 폴더는 자동으로 컴파일되고 따라서 해서는 안 웹 응용 프로그램 프로젝트를 사용 하 여 합니다. 일반 폴더에 응용 프로그램의 클래스 파일을 배치 해야 대신 `HelperClasses`, 또는 `Classes`, 또는 이와 유사한 합니다. 또는 별도 클래스 라이브러리 프로젝트에서 클래스 파일을 배치할 수 있습니다.
 
-
 ASP.NET 관련 태그 파일 및 어셈블리를 복사 하는 것 외에도 합니다 `Bin` 폴더를 해야-이미지 및 CSS 파일-클라이언트 쪽 지원 파일 뿐만 아니라 다른 서버 쪽 지원 파일을 복사할 `Web.config` 및 `Web.sitemap`합니다. 이러한 클라이언트 및 서버 쪽 지원 파일을 명시적 또는 자동 컴파일을 사용 하는지 여부에 관계 없이 프로덕션 환경에 복사 해야 합니다.
 
 ## <a name="determining-the-files-to-deploy-for-the-web-site-project-files"></a>파일을 웹 사이트 프로젝트 파일에 대 한 배포를 확인 합니다.
@@ -142,11 +134,9 @@ Visual Studio에서 빌드 메뉴 옵션은 웹 응용 프로그램 프로젝트
 
 그림 3에서는 책 검토 웹 사이트 프로젝트를 구성 하는 파일을 보여 줍니다.
 
-
  [![웹 사이트 프로젝트를 구성 하는 파일을 나열 하는 솔루션 탐색기](determining-what-files-need-to-be-deployed-cs/_static/image7.png)](determining-what-files-need-to-be-deployed-cs/_static/image6.png) 
 
 **그림 3**: 웹 사이트 프로젝트를 구성 하는 파일을 나열 하는 솔루션 탐색기
-
 
 웹 사이트 프로젝트를 배포 된 코드 파일과 함께 ASP.NET 페이지, 마스터 페이지 및 사용자 정의 컨트롤에 대 한 태그 페이지를 포함 하는 프로덕션 환경-복사할 ASP.NET 관련 파일을 모두 포함 됩니다. BasePage.cs 등의 모든 클래스 파일을 복사 해야 합니다. `BasePage.cs` 파일에는 `App_Code` 폴더인 특수 ASP.NET 웹 사이트 프로젝트에서 클래스 파일에 대해 사용 되는 폴더입니다. 특수 폴더에 있는 클래스 파일을 프로덕션에도 만들 수 해야 합니다 `App_Code` 개발 환경에서 폴더에 복사 해야는 `App_Code` 프로덕션 폴더입니다.
 
@@ -154,7 +144,6 @@ ASP.NET 태그와 소스 코드 파일에 복사 하는 것 외에도 해야-이
 
 > [!NOTE]
 > 웹 사이트 프로젝트에는 명시적 컴파일을 사용할 수도 있습니다. 이후 자습서에서는 명시적으로 웹 사이트 프로젝트를 컴파일하는 방법을 검사 합니다.
-
 
 ## <a name="summary"></a>요약
 

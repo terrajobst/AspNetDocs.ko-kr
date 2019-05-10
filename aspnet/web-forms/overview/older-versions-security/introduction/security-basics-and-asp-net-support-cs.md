@@ -8,12 +8,12 @@ ms.date: 01/13/2008
 ms.assetid: 07e15538-2f29-40c6-b2e7-e6115075ac83
 msc.legacyurl: /web-forms/overview/older-versions-security/introduction/security-basics-and-asp-net-support-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 8f6fb4348e6ff703d329331b908e41763f24bb1f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 75ed2e2d0d9e15d186cf39ddd376beae99a06b30
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402949"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132274"
 ---
 # <a name="security-basics-and-aspnet-support-c"></a>보안 기본 사항 및 ASP.NET 지원(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59402949"
 [PDF 다운로드](http://download.microsoft.com/download/2/F/7/2F705A34-F9DE-4112-BBDE-60098089645E/aspnet_tutorial01_Basics_cs.pdf)
 
 > 웹 양식을 통해 방문자를 인증 하 고, 특정 페이지 및 기능에 대 한 액세스 권한을 부여, ASP.NET 응용 프로그램에서 사용자 계정 관리에 대 한 기술에 학습 하는 자습서의 시리즈의 첫 번째 자습서입니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -45,7 +44,6 @@ ms.locfileid: "59402949"
 
 > [!NOTE]
 > 보안 물리적, 기술적에 걸쳐 있는 응용 프로그램의 중요 한 측면 이며 정책 결정 및 높은 수준의 계획과 영역 지식 필요 합니다. 이 자습서 시리즈는 보안 웹 응용 프로그램을 개발 하기 위한 지침으로 없습니다. 대신에 중점을 둡니다 특히 폼 인증, 권한 부여, 사용자 계정 및 역할입니다. 다른 사용자가 왼쪽이 시리즈의 이러한 문제를 둘러싼 일부 보안 개념을 설명 하며, 하는 동안 탐색 되지 않은 합니다.
-
 
 ## <a name="authentication-authorization-user-accounts-and-roles"></a>인증, 권한 부여, 사용자 계정 및 역할
 
@@ -75,11 +73,9 @@ Windows 인증 워크플로 다음 인증 방법 중 하나를 사용 합니다.
 
 세 가지 기술 모두 거의 동일한 방식으로 작동 합니다:가 권한이 없는 경우 익명 요청이 도착 하면, 웹 서버는 권한 부여를 나타내는 HTTP 응답을 계속 하려면 반드시 다시 보냅니다. 그런 다음 브라우저 (그림 1 참조)는 사용자 이름과 암호를 묻는 있는 모달 대화 상자를 표시 합니다. 이 정보는 HTTP 헤더를 통해 웹 서버에 다시 전송 됩니다.
 
-
 ![모달 대화 상자를 사용자 자신의 자격 증명 확인](security-basics-and-asp-net-support-cs/_static/image1.png)
 
 **그림 1**: 모달 대화 상자를 사용자 자신의 자격 증명 확인
-
 
 제공 된 자격 증명을 웹 서버의 Windows 사용자 저장소에 대해 유효성이 검사 됩니다. 이 웹 응용 프로그램에서 각 인증 된 사용자 조직에서 Windows 계정을 있어야 한다는 것을 의미 합니다. 인트라넷 시나리오에서 일반적입니다. 사실, 인트라넷 설정에 Windows 통합 인증을 사용 하면 브라우저 웹 서버 하므로 그림 1에 표시 된 대화 상자를 표시 하지 않는 네트워크에 로그온 하는 데 사용 하는 자격 증명을 사용 하 여 자동으로 제공 합니다. Windows 인증은 인트라넷 응용 프로그램에 적합 하는 동안 적합 하지 않다고 일반적으로 인터넷 응용 프로그램에 대 한 사이트에서 등록 하는 각 사용자에 대 한 Windows 계정 만들기를 원하지 않는 때문입니다.
 
@@ -93,11 +89,9 @@ Windows 인증 워크플로 다음 인증 방법 중 하나를 사용 합니다.
 
 사용자가 성공적으로 로그인 되 면 후속 HTTP 요청이 폼 인증 티켓이 포함 됩니다. Forms 인증 시스템은 단순히 사용자를 식별-사용자 요청 된 리소스에 액세스할 수 있는지 여부를 결정 하는 권한 부여 시스템입니다.
 
-
 ![Forms 인증 워크플로](security-basics-and-asp-net-support-cs/_static/image2.png)
 
 **그림 2**: Forms 인증 워크플로
-
 
 다음 두 자습서에서는 훨씬 더 큰 세부 정보에서 폼 인증 살펴보기[는 폼 인증 개요](an-overview-of-forms-authentication-cs.md) 하 고 [폼 인증 구성 및 고급 항목](forms-authentication-configuration-and-advanced-topics-cs.md)합니다. 에 대 한 자세한 ASP 합니다. NET의 인증 옵션을 참조 하세요 [ASP.NET 인증](https://msdn.microsoft.com/library/eeyk640h.aspx)합니다.
 
@@ -113,7 +107,6 @@ ASP.NET에 특정 사용자 특정 파일이 나 디렉터리에 액세스 권�
 프로그래밍 방식으로 또는 선언적으로 이와 같은 페이지 수준 조정 작업을 수행할 수 있습니다. 에 대 한 여러 콘텐츠를 표시 익명 인증 된 사용자가 끌어서 보다는 [LoginView 컨트롤](https://msdn.microsoft.com/library/system.web.ui.webcontrols.loginview.aspx) 페이지로 해당 AnonymousTemplate 템플릿과 LoggedInTemplate에 적절 한 콘텐츠를 입력 합니다. 또는 프로그래밍 방식으로 및 확인할 수 있습니다 요청과 인증 되는지 여부, 사용자를 역할 (있는 경우)에 속해 있습니다. 페이지의 표 또는 패널에서 열을 다음 표시 하거나 숨기려면이 정보를 사용할 수 있습니다.
 
 이 시리즈는 권한 부여에 중점을 둔 세 개의 자습서를 포함 합니다. ***사용자 기반 권한 부여***; 특정 사용자 계정의 또는 디렉터리에 여러 페이지에 대 한 액세스를 제한 하는 방법 검사 ***역할 기반 권한 부여*** 조사 수준; 마지막으로 역할의 권한 부여 규칙을 제공 합니다 ***는 현재 로그온 한 사용자에 따라 콘텐츠 표시*** 자습서에서는 특정 수정 페이지의 콘텐츠 및 기능 페이지를 방문 하 여 사용자를 기반으로 합니다. 에 대 한 자세한 ASP 합니다. NET의 권한 부여 옵션을 참조 하세요 [ASP.NET 권한 부여](https://msdn.microsoft.com/library/wce3kxhd.aspx)합니다.
-
 
 ## <a name="user-accounts-and-roles"></a>사용자 계정 및 역할
 
@@ -139,11 +132,9 @@ Microsoft는.NET Framework의 두 가지 멤버 자격 공급자 클래스를 �
 
 이 자습서 시리즈를 SqlMembershipProvider에만 중점을 둡니다.
 
-
 [![공급자 모델 사용 하면 다른 구현을 원활 하 게 연결에 프레임 워크를 &lt; /s o n&gt;](security-basics-and-asp-net-support-cs/_static/image4.png)](security-basics-and-asp-net-support-cs/_static/image3.png)
 
 **그림 03**: 공급자 모델 사용 하면 다른 구현을 원활 하 게 연결에 프레임 워크를 ([클릭 하 여 큰 이미지 보기](security-basics-and-asp-net-support-cs/_static/image5.png))
-
 
 공급자 모델의 장점은 대체 구현을 Microsoft, 타사 공급 업체 또는 개별 개발자가 개발 및 멤버 자격 프레임 워크에 원활 하 게 연결할 수 있습니다. 예를 들어, Microsoft는 출시 했습니다 [Microsoft Access 데이터베이스에 대 한 멤버 자격 공급자](https://download.microsoft.com/download/5/5/b/55bc291f-4316-4fd7-9269-dbf9edbaada8/sampleaccessproviders.vsi)합니다. 멤버 자격 공급자에 대 한 자세한 내용은 참조는 [Provider Toolkit](https://msdn.microsoft.com/asp.net/aa336558.aspx), 멤버 자격 공급자, 샘플 사용자 지정 공급자는 공급자 모델에 대 한 설명서의 100 개 이상의 페이지의 연습을 포함 하는 및 기본 멤버 자격 공급자 (즉, ActiveDirectoryMembershipProvider 및 SqlMembershipProvider)에 대 한 소스 코드를 완료 합니다.
 

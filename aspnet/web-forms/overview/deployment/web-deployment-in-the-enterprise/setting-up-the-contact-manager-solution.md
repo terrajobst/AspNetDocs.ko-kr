@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 200b973c-776b-4a9b-9e82-39fda6120a52
 msc.legacyurl: /web-forms/overview/deployment/web-deployment-in-the-enterprise/setting-up-the-contact-manager-solution
 msc.type: authoredcontent
-ms.openlocfilehash: d0a7c29a590fcde504e5f5227806df62454f6add
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: d9774ee01cb0515d7e733b24baa661f2648bd7c4
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59410489"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131037"
 ---
 # <a name="setting-up-the-contact-manager-solution"></a>Contact Manager 솔루션 설정
 
@@ -22,7 +22,6 @@ ms.locfileid: "59410489"
 [PDF 다운로드](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > 이 항목에서는 다운로드 개발자 워크스테이션에서 로컬로 실행 하려면 Contact Manager 솔루션을 구성 하는 방법을 설명 합니다.
-
 
 ## <a name="system-requirements"></a>시스템 요구 사항
 
@@ -70,7 +69,6 @@ MSDN 코드 갤러리에서 Contact Manager 샘플 응용 프로그램을 다운
 > [!NOTE]
 > Aspnet 대 한 자세한 내용은\_regsql 유틸리티 참조 [ASP.NET SQL Server 등록 도구 (Aspnet\_regsql.exe)](https://msdn.microsoft.com/library/ms229862(v=vs.100).aspx)합니다.
 
-
 Contact Manager 솔루션의 연결 문자열을 SQL Server Express의 로컬 인스턴스를 가리키는지 확인 하려면 다음 단계가입니다.
 
 **연결 문자열을 업데이트 하려면**
@@ -97,7 +95,6 @@ Contact Manager 솔루션의 연결 문자열을 SQL Server Express의 로컬 �
 
 > [!NOTE]
 > ASP.NET은 첫 번째 응용 프로그램 서비스 데이터베이스를 만들지 않고 다음이 단계를 수행 하면 처음으로 사용자를 만들려고 시도 하면 데이터베이스를 만듭니다. 그러나 수동으로 데이터베이스를 만드는 제어할 수 많은 지원 하려는 응용 프로그램 서비스 기능 집합입니다.
-
 
 **Contact Manager 솔루션을 실행 하려면**
 

@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 4d8c8d19-055b-4b70-9ee1-f748f0db3a01
 msc.legacyurl: /web-forms/overview/deployment/web-deployment-in-the-enterprise/the-contact-manager-solution
 msc.type: authoredcontent
-ms.openlocfilehash: 7998b5bb2983410479123514661a4ddb67afc8c6
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 12ed7827f7392e559e04121386f7cd045de8462b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59398373"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130924"
 ---
 # <a name="the-contact-manager-solution"></a>Contact Manager 솔루션
 
@@ -24,7 +24,6 @@ ms.locfileid: "59398373"
 > 이 [시리즈의 자습서](web-deployment-in-the-enterprise.md) 샘플 솔루션을 사용 하 여&#x2014;Contact Manager 솔루션&#x2014;현실적인 수준의 복잡성을 사용 하 여 엔터프라이즈급 응용 프로그램을 나타내는입니다. 이 항목에서는 Contact Manager 솔루션을 소개 하 고, 솔루션의 주요 구성 요소에 설명,이 종류의 엔터프라이즈 환경에서 다양 한 대상 플랫폼에 응용 프로그램 배포 문제를 식별 합니다.
 > 
 > 이 자습서에서 항목을 통해 작업 하는 동안에 엔터프라이즈 배포 시나리오에서 특정 과제를 충족 하는 방법을 보여 주는 참조 구현으로 Contact Manager 솔루션을 사용할 수 있습니다. 다음 항목인 [the Contact Manager 솔루션 설정](setting-up-the-contact-manager-solution.md)를 다운로드 하 고 개발자 워크스테이션에서 솔루션을 실행 하는 방법을 설명 합니다.
-
 
 ## <a name="solution-overview"></a>솔루션 개요
 
@@ -45,7 +44,6 @@ Contact Manager 솔루션 4 개의 개별 프로젝트가 이루어져 있습니
 
 > [!NOTE]
 > ASP.NET 멤버 자격 공급자를 사용 하는 ASP.NET MVC 3 웹 응용 프로그램을 웹 응용 프로그램 내의 모든 페이지는 익명 액세스를 허용 합니다. 이 명확 하 게 실제 구성이 아닙니다. 그러나 솔루션을 쉽게 배포 및 사용자 계정 및 역할을 구성 하지 않고 솔루션을 테스트할 수 있도록이 방식으로 설정 됩니다.
-
 
 ## <a name="deployment-challenges"></a>배포 과제
 

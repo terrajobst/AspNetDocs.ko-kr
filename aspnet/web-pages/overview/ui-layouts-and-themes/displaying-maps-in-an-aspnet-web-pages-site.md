@@ -8,12 +8,12 @@ ms.date: 02/20/2014
 ms.assetid: b5c268dd-ca6a-4562-b94c-a220fcf01f58
 msc.legacyurl: /web-pages/overview/ui-layouts-and-themes/displaying-maps-in-an-aspnet-web-pages-site
 msc.type: authoredcontent
-ms.openlocfilehash: 6e5c01c3602bd313ebca467b65563b7abfd7ffe2
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 36f3b753cf312504892872ff54bef49854588990
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59400102"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65124175"
 ---
 # <a name="displaying-maps-in-an-aspnet-web-pages-razor-site"></a>ASP.NET 웹 페이지 (Razor) 사이트에 맵 표시
 
@@ -40,7 +40,6 @@ ms.locfileid: "59400102"
 >   
 > 
 > 이 자습서 에서도 WebMatrix 3를 사용 하 여 작동합니다.
-
 
 웹 페이지에서 표시할 수 있습니다 맵 페이지에서 사용 하 여 `Maps` 도우미입니다. 주소 또는 경도 및 위도 좌표 집합을 기반으로 하는 지도 생성할 수 있습니다. `Maps` 클래스 Bing, Google, 지도 보기, Yahoo 등 널리 사용 되 지도 엔진을 호출할 수 있습니다.
 
@@ -109,6 +108,5 @@ ms.locfileid: "59400102"
 
 <a id="Additional_Resources"></a>
 ## <a name="additional-resources"></a>추가 리소스
-
 
 [Microsoft.Maps API 참조](https://msdn.microsoft.com/library/gg427611.aspx)

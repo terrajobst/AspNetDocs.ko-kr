@@ -8,12 +8,12 @@ ms.date: 07/27/2010
 ms.assetid: 18700815-8e6c-4489-91af-7ea9dab6529e
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/use-ajax-to-deliver-dynamic-updates
 msc.type: authoredcontent
-ms.openlocfilehash: 56ebc40aa500b62811bac0a5041fa9aa4f91f4ae
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3edc02fec546609505b5e085440fa684abe7acd0
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59391054"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128228"
 ---
 # <a name="use-ajax-to-deliver-dynamic-updates"></a>AJAX를 사용하여 동적 업데이트 제공
 
@@ -26,7 +26,6 @@ by [Microsoft](https://github.com/microsoft)
 > 10 단계 구현 dinner 세부 정보 페이지에 통합 하는 Ajax 기반 접근 방식을 사용 하는 dinner 참석 사람들이 관심 RSVP에 로그인 한 사용자에 대 한 지원 합니다.
 > 
 > ASP.NET MVC 3을 사용 하는 경우 수행 하는 것이 좋습니다 합니다 [가져오기 시작 MVC 3과](../../older-versions/getting-started-with-aspnet-mvc3/cs/intro-to-aspnet-mvc-3.md) 하거나 [MVC Music Store](../../older-versions/mvc-music-store/mvc-music-store-part-1.md) 자습서입니다.
-
 
 ## <a name="nerddinner-step-10-ajax-enabling-rsvps-accepts"></a>NerdDinner Step 10: AJAX 않으십니까 사용 허용
 

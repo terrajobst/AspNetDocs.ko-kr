@@ -8,12 +8,12 @@ ms.date: 06/09/2009
 ms.assetid: a5f0439f-18b2-4c89-96ab-75b02c616f46
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/logging-error-details-with-elmah-vb
 msc.type: authoredcontent
-ms.openlocfilehash: a9eca21cba09da8a01d2ed1a8391b9ff367d7231
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3b3b96232f46e7f9e7cbd47b109bf4b7056ed34a
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59395448"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132373"
 ---
 # <a name="logging-error-details-with-elmah-vb"></a>ELMAH를 사용하여 오류 세부 정보 로깅(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59395448"
 [코드를 다운로드](http://download.microsoft.com/download/1/0/C/10CC829F-A808-4302-97D3-59989B8F9C01/ASPNET_Hosting_Tutorial_14_VB.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/5/C/5/5C57DB8C-5DEA-4B3A-92CA-4405544D313B/aspnet_tutorial14_ELMAH_vb.pdf)
 
 > 오류 로깅 모듈 및 처리기의 ELMAH ()는 프로덕션 환경에서 런타임 오류를 기록 하는 다른 방법은 제공 합니다. ELMAH는 오류 필터링 및 RSS 피드, 웹 페이지에서 오류 로그를 보려면 또는 쉼표로 구분 된 파일로 다운로드 하는 기능 등의 기능을 포함 하는 무료 오픈 소스 오류 로깅 라이브러리입니다. 이 자습서를 다운로드 하 고 ELMAH 구성 안내 합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -36,7 +35,6 @@ ms.locfileid: "59395448"
 
 > [!NOTE]
 > 장점 및 단점 자신의 집합이 둘 상태 시스템과 ELMAH를 모니터링 합니다. 바랍니다 요구를 사항을 두 시스템을 시도 하 고 가장 적합 한 어떤 하나를 결정할 수 있습니다.
-
 
 ## <a name="adding-elmah-to-an-aspnet-web-application"></a>ELMAH는 ASP.NET 웹 응용 프로그램에 추가
 
@@ -56,12 +54,10 @@ ELMAH 1.0 BETA 3 (빌드 10617) 문서 작성 당시에 최신 버전은이 자�
 > [!NOTE]
 > 합니다 `Elmah.dll` 다운로드의 파일은 `Bin` 폴더에 있는 서로 다른.NET Framework 버전을 디버그 및 릴리스 빌드에 대 한 하위 폴더입니다. 적절 한 프레임 워크 버전에 대 한 릴리스 빌드를 사용 합니다. ASP.NET 3.5 웹 응용 프로그램을 작성 하는 경우 복사 하는 예를 들어 합니다 `Elmah.dll` 에서 파일을 `Bin\net-3.5\Release` 폴더입니다.
 
-
 다음으로, Visual Studio를 열고 솔루션 탐색기에서 상황에 맞는 메뉴에서 선택 하면 추가 참조 웹 사이트 이름을 마우스 오른쪽 단추로 클릭 하 여 프로젝트에 어셈블리를 추가 합니다. 이 참조 추가 대화 상자를 엽니다. 찾아보기 탭으로 이동 하 고 선택 된 `Elmah.dll` 파일입니다. 이 작업을 추가 합니다 `Elmah.dll` 웹 응용 프로그램의 파일 `Bin` 폴더입니다.
 
 > [!NOTE]
 > 웹 응용 프로그램 프로젝트 (WAP) 형식을 표시 하지 않습니다는 `Bin` 솔루션 탐색기에서 폴더입니다. 대신 참조 폴더 아래에 있는 이러한 항목을 나열합니다.
-
 
 `Elmah.dll` 어셈블리 ELMAH 시스템에서 사용 하는 클래스를 포함 합니다. 이러한 클래스는 세 가지 범주 중 하나에 속합니다.
 
@@ -100,7 +96,6 @@ ELMAH는 웹 사이트의 해당 구성 옵션을 찾고 `Web.config` 라는 사
 > [!NOTE]
 > ELMAH ASP.NET 1.x 응용 프로그램에 대 한 구성 하는 경우 제거 합니다는 `requirePermission="false"` 에서 특성을 `<section>` 위의 요소입니다.
 
-
 위의 구문 등록 사용자 지정 `<elmah>` 섹션과 하위: `<security>`, `<errorLog>`합니다 `<errorMail>`, 및 `<errorFilter>`합니다.
 
 다음을 추가 합니다 `<elmah>` 섹션을 `Web.config`입니다. 이 섹션에서는 동일한 수준으로 표시 됩니다는 `<system.web>` 요소입니다. 내를 `<elmah>` 섹션에 추가 합니다 `<security>` 및 `<errorLog>` 섹션에서는 다음과 같이:
@@ -113,7 +108,6 @@ ELMAH는 웹 사이트의 해당 구성 옵션을 찾고 `Web.config` 라는 사
 
 > [!NOTE]
 > ELMAH는 오류를 기록 하는 XML 파일, Microsoft Access 데이터베이스, Oracle 데이터베이스 및 다른 데이터 저장소를 사용할 수 있는 추가 오류 로그 공급자를 사용 하 여 제공 됩니다. 샘플을 참조 하세요 `Web.config` 이러한 대체 오류 로그 공급자를 사용 하는 방법에 대 한 내용은 ELMAH 다운로드에 포함 된 파일입니다.
-
 
 ### <a name="step-4-creating-the-error-log-source-infrastructure"></a>4단계: 오류 로그 원본 인프라 만들기
 
@@ -137,7 +131,6 @@ ELMAH 처리 되지 않은 예외가 발생할 때 사용자에 게 콘텐츠 �
 
 > [!NOTE]
 > 사용할 수도 있습니다는 `elmah.axd` 테스트 오류를 생성 하는 ELMAH를 지시 하는 페이지입니다. 방문 `elmah.axd/test` (에서 같이 `http://localhost/BookReviews/elmah.axd/test`) ELMAH 형식의 예외를 throw 하면 `Elmah.TestException`, 있는 오류 메시지: " 이 테스트 예외는 무시 해도 됩니다. "
-
 
 **그림 3** 방문할 때 오류 로그를 보여 줍니다. `elmah.axd` 개발 환경에서.
 
@@ -184,7 +177,6 @@ ELMAH 구성에서 이전에 설명한 대로 `<security>` 설정 섹션을 `all
 > [!NOTE]
 > 시스템-Scott, Jisun,-Alice의에서 세 가지 사용자 및 관리자 역할에 추가 된 합니다 [ *서비스를 구성 하는 웹 사이트를 사용 하 여 응용 프로그램* 자습서](configuring-a-website-that-uses-application-services-vb.md)합니다. 사용자 Scott Jisun와 관리자 역할의 멤버입니다. 인증 및 권한 부여에 대 한 자세한 내용은 참조 내 [웹 사이트 보안 자습서](../../older-versions-security/introduction/security-basics-and-asp-net-support-cs.md)합니다.
 
-
 원격 사용자; 이제 프로덕션 환경에서 오류 로그를 볼 수 다시 가리킵니다 **그림 3**를 **4**, 및 **5** 오류 로그 웹 페이지의 스크린 샷은 합니다. 그러나 익명 또는 관리자가 아닌 사용자는 오류 로그 페이지 보기를 시도할 경우 자동으로 리디렉션됩니다 로그인 페이지에 (`Login.aspx`),으로 **그림 7** 보여 줍니다.
 
 [![](logging-error-details-with-elmah-vb/_static/image18.png)](logging-error-details-with-elmah-vb/_static/image17.png)
@@ -229,7 +221,6 @@ ELMAH의 `ErrorLogModule` HTTP 모듈이 지정한 로그 원본에 자동으로
 
 > [!NOTE]
 > 오류를 등록 해야 필터링을 사용 하려면 잊지는 `ErrorFilterModule` HTTP 모듈입니다.
-
 
 합니다 `<equal>` 요소 내는 `<test>` 섹션 어설션 이라고 합니다. True로 평가 되 면 어설션이 ELMAH의 로그에서 오류 필터링 됩니다. 모두 포함 하 여 사용 가능한 다른 어설션: `<greater>`, `<greater-or-equal>`를 `<not-equal>`를 `<lesser>`, `<lesser-or-equal>`등입니다. 사용 하 여 어설션을 결합할 수도 있습니다는 `<and>` 고 `<or>` 부울 연산자입니다. 게다가 어설션으로 간단한 JavaScript 식을 포함 하거나 C# 또는 Visual Basic에서 사용자 고유의 어설션을 작성 수 있습니다.
 

@@ -8,19 +8,18 @@ ms.date: 08/14/2010
 ms.assetid: e8f1515c-c277-47ff-a23e-224118f13f02
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part3
 msc.type: authoredcontent
-ms.openlocfilehash: 3eff3aceea302c51e6970bb13fbee3a8bf98a71d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 462b1210c45da67058899193afcea973f3daf122
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59411984"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123046"
 ---
 # <a name="adding-a-view"></a>보기 추가
 
 [Scott Hanselman](https://github.com/shanselman)
 
 > ASP.NET MVC의 기본 사항을 소개 하는 초보자를 위한 자습서입니다. 읽기 및 쓰기 데이터베이스는 간단한 웹 응용 프로그램을 만들어야 합니다. 방문 합니다 [ASP.NET MVC 학습 센터](../../../index.md) 자습서 및 샘플 다른 ASP.NET MVC를 찾아볼 수 있습니다.
-
 
 이 섹션에서는 하겠습니다 뷰 템플릿 파일을 완전히 다시 클라이언트에 HTML 응답을 생성을 캡슐화 하는 데 HelloWorldController 클래스를 가질 수 방법을 살펴보겠습니다.
 
@@ -99,7 +98,6 @@ HelloWorldController.cs 파일 및 새 "WelcomeViewModel" 클래스를 추가 �
 이제 시작 보기 템플릿이 필요 합니다! 시작 메서드를 마우스 오른쪽 단추로 클릭 하 고 뷰 추가 선택 합니다. 이 이번에 됩니다 "강력한 형식의 뷰 만들기"를 확인 하 고 드롭다운 목록에서에서 WelcomeViewModel 클래스를 선택 합니다. 이 새 보기는 WelcomeViewModels 및 다른 종류의 개체에 대해서만 인식 됩니다.
 
 > *참고: 드롭다운 목록에에서 표시에 대 한 프로그램 WelcomeViewModel 추가 후 한 번 컴파일한 해야 합니다.*
-
 
 뷰 추가 대화 상자 모양을 다음과 같습니다. 추가 단추를 클릭 합니다. ![보기 원으로 표시 추가](getting-started-with-mvc-part3/_static/image10.png)
 

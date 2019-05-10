@@ -8,12 +8,12 @@ ms.date: 09/08/2014
 ms.assetid: 0bbf7a6e-d7eb-4091-91e4-fff892777f32
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/create_the_data_access_layer
 msc.type: authoredcontent
-ms.openlocfilehash: bc91eba17938de15f03ecc1e745aac57c7eac7a1
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 61a9dae22efed9cb7e8957a8c131396cbdeea3c9
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59419498"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131348"
 ---
 # <a name="create-the-data-access-layer"></a>데이터 액세스 레이어 만들기
 
@@ -22,7 +22,6 @@ ms.locfileid: "59419498"
 [Wingtip Toys 샘플 프로젝트 (C#)를 다운로드](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 또는 [전자책 (PDF) 다운로드](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
 
 > 이 자습서 시리즈는 ASP.NET 4.5와 Microsoft Visual Studio Express 2013 for Web 사용 하 여 ASP.NET Web Forms 응용 프로그램을 빌드하는 기본 사항을 설명 합니다. Visual Studio 2013 [C# 소스 코드를 사용 하 여 프로젝트](https://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 이 자습서 시리즈를 함께 사용할 수 있습니다.
-
 
 이 자습서에는 만들기, 액세스 및 ASP.NET Web Forms 및 Entity Framework Code First를 사용 하 여 데이터베이스에서 데이터를 검토 하는 방법을 설명 합니다. 이 자습서는 이전 자습서 "프로젝트 만들기"를 기반 하 고 Wingtip 장난감 자습서 시리즈의 일부입니다. 이 자습서를 완료 하는 만든 데이터 액세스 클래스에 있는 그룹에는 *모델* 프로젝트의 폴더입니다.
 
@@ -119,7 +118,6 @@ Web Forms 응용 프로그램에 대 한 데이터 모델을 정의 하는 엔�
 > 
 > 응용 프로그램을 실행 될 때마다 다시 생성 하려면 데이터베이스를 하려는 경우, 사용할 수 있습니다 합니다 `DropCreateDatabaseAlways` 클래스 대신는 `DropCreateDatabaseIfModelChanges` 클래스입니다. 그러나이 자습서 시리즈에서는 사용 된 `DropCreateDatabaseIfModelChanges` 클래스입니다.
 
-
 이 시점에서이 자습서에서는 해야는 *모델* 네 개의 새로운 클래스 및 기본 클래스를 사용 하 여 폴더:
 
 ![데이터 액세스 계층-Models 폴더 만들기](create_the_data_access_layer/_static/image3.png)
@@ -136,7 +134,6 @@ Web Forms 응용 프로그램에 대 한 데이터 모델을 정의 하는 엔�
 > 
 > 솔루션 탐색기에서 선택할 수 있습니다 합니다 *Global.asax* 파일 또는 *Global.asax.cs* 파일을 편집 합니다 *Global.asax.cs* 파일.
 
-
 1. 노란색으로 강조 표시 된 다음 코드를 추가 합니다 `Application_Start` 의 메서드를 *Global.asax.cs* 파일입니다.   
 
     [!code-csharp[Main](create_the_data_access_layer/samples/sample5.cs?highlight=9-10,22-23)]
@@ -144,7 +141,6 @@ Web Forms 응용 프로그램에 대 한 데이터 모델을 정의 하는 엔�
 > [!NOTE] 
 > 
 > 브라우저는 HTML5는 브라우저에서이 자습서 시리즈를 보고 하는 경우 노란색으로 강조 표시 하는 코드를 보려면 지원 해야 합니다.
-
 
 위의 코드에서 응용 프로그램을 시작 하는 경우와 같이 응용 프로그램 액세스 하는 데이터 중 처음으로 실행 되는 이니셜라이저를 지정 합니다. 두 개의 추가 네임 스페이스 액세스 해야 하는 `Database` 개체 및 `ProductDatabaseInitializer` 개체입니다.
 

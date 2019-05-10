@@ -8,12 +8,12 @@ ms.date: 01/27/2009
 ms.assetid: 2dcb44a4-5cbf-4d62-b363-718104082d86
 msc.legacyurl: /mvc/overview/older-versions-1/overview/asp-net-mvc-overview
 msc.type: authoredcontent
-ms.openlocfilehash: 149312e2ddf0a5023a4a12f5b05852f7da6b18f8
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 73965c71f37de13e3813df089a253fde528ea7ee
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59418172"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128221"
 ---
 # <a name="aspnet-mvc-overview"></a>ASP.NET MVC 개요
 
@@ -21,18 +21,15 @@ by [Microsoft](https://github.com/microsoft)
 
 > ASP.NET MVC 응용 프로그램 및 ASP.NET Web Forms 응용 프로그램 간의 차이점에 알아봅니다. ASP.NET MVC 응용 프로그램을 구축 하는 시점을 결정 하는 방법에 알아봅니다.
 
-
 모델-뷰-컨트롤러 (MVC) 아키텍처 패턴에서는 세 가지 주요 구성 요소를 응용 프로그램: 모델, 뷰 및 컨트롤러입니다. ASP.NET MVC 프레임 워크 MVC 기반 웹 응용 프로그램을 만들기 위한 ASP.NET Web Forms 패턴에 대안을 제공 합니다. ASP.NET MVC 프레임 워크는 간단 하 고 가볍고 테스트가 용이한 프레젠테이션 프레임 워크는 (Web Forms 기반 응용 프로그램과 마찬가지로)은 마스터 페이지 및 멤버 자격 기반 인증 같은 기존 ASP.NET 기능과 통합 합니다. MVC 프레임 워크에 정의 되어는 **System.Web.Mvc** 네임 스페이스의 기본 기능, 지원 되는 일부 이며를 **System.Web** 네임 스페이스입니다.   
   
 MVC에는 많은 개발자가 익숙한 표준 디자인 패턴입니다. 일부 유형의 웹 응용 프로그램 MVC 프레임 워크에서 도움이 됩니다. Web Forms 및 포스트백을 기반으로 하는 기존 ASP.NET 응용 프로그램 패턴을 사용 하 여 다른 사용자가 계속 됩니다. 다른 유형의 웹 응용 프로그램 두 가지 방법; 결합 두 방법은 다른 제외합니다.   
   
 MVC 프레임 워크는 다음 구성 요소를 포함 합니다.
 
-
 [![매개 변수 값을 필요로 하는 컨트롤러 작업을 호출 합니다.](asp-net-mvc-overview/_static/image1.jpg)](asp-net-mvc-overview/_static/image1.png)
 
 **그림 01**: 매개 변수 값을 필요로 하는 컨트롤러 동작 호출 ([클릭 하 여 큰 이미지 보기](asp-net-mvc-overview/_static/image2.png))
-
 
 - **모델**합니다. 모델 개체는 응용 프로그램의 데이터 도메인에 대 한 논리를 구현 하는 응용 프로그램의 구성 요소입니다. 종종 모델 개체를 검색 및 데이터베이스에서 모델 상태를 저장 합니다. 예를 들어, 제품 개체를 수 있습니다 데이터베이스에서 정보를 검색에서 작동 하며 다음 SQL Server의 Products 테이블에 업데이트 된 정보를 다시 작성 합니다.
 

@@ -8,12 +8,12 @@ ms.date: 09/08/2014
 ms.assetid: 2ce36f78-8ecb-4ab1-b748-6d0ab633ea3f
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/create-the-project
 msc.type: authoredcontent
-ms.openlocfilehash: 9e2cd1beca03b81140b9d58c5e43dbf7c6b8808b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1819704a4cfd3e6b82de1d8db916e729459d244f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59393056"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130906"
 ---
 # <a name="create-the-project"></a>프로젝트 만들기
 
@@ -22,7 +22,6 @@ ms.locfileid: "59393056"
 [Wingtip Toys 샘플 프로젝트 (C#)를 다운로드](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 또는 [전자책 (PDF) 다운로드](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
 
 > 이 자습서 시리즈는 ASP.NET 4.5와 Microsoft Visual Studio Express 2013 for Web 사용 하 여 ASP.NET Web Forms 응용 프로그램을 빌드하는 기본 사항을 설명 합니다. Visual Studio 2013 [C# 소스 코드를 사용 하 여 프로젝트](https://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 이 자습서 시리즈를 함께 사용할 수 있습니다.
-
 
 이 자습서에서는, 검토를 만들고 ASP.NET의 기능에 익숙해질 수 있는 Visual Studio에서 기본 프로젝트를 실행 합니다. 또한 Visual Studio 환경을 검토 합니다.
 
@@ -83,7 +82,6 @@ ms.locfileid: "59393056"
 > 
 > - [ASP.NET Web API](../../../../web-api/index.md) -광범위 한 브라우저 및 모바일 장치를 비롯 하 여 클라이언트를 연결 하는 HTTP 서비스를 빌드하기 위한 프레임 워크입니다.
 > - [ASP.NET SignalR](../../../../signalr/index.md) -개발 실시간 웹 기능을 더 쉽게 하는 라이브러리입니다.
-
 
 ### <a name="reviewing-the-project"></a>프로젝트 검토
 

@@ -8,17 +8,16 @@ ms.date: 09/28/2011
 ms.assetid: 6b0f1fd7-6768-4549-ae9c-be9131103c4d
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager
 msc.type: chapter
-ms.openlocfilehash: 4faccca531b330cc52c338bae98fab484de753f9
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3ec9811be5afc00a126936529480082bf2d620e9
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379003"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65124135"
 ---
 # <a name="contact-manager"></a>연락처 관리
 
 > 전체 연락처 관리 응용 프로그램 빌드 시작부터 완료 하는 방법.
-
 
 - [반복 #1 – 애플리케이션 만들기(C#)](iteration-1-create-the-application-cs.md)
 - [반복 #2 – 애플리케이션 모양 꾸미기(C#)](iteration-2-make-the-application-look-nice-cs.md)

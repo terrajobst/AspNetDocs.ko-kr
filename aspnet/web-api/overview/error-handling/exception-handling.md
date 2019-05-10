@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: cbebeb37-2594-41f2-b71a-f4f26520d512
 msc.legacyurl: /web-api/overview/error-handling/exception-handling
 msc.type: authoredcontent
-ms.openlocfilehash: 08b3663c1f9a08b8b3600113c32aeffb36c0d990
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: dbdbab6aefec840e2fec9e9cd33f3d124093750e
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59399322"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125311"
 ---
 # <a name="exception-handling-in-aspnet-web-api"></a>ASP.NET Web API에서에서 예외 처리
 
@@ -49,7 +49,6 @@ Web API를 작성 하 여 예외를 처리 하는 방법을 사용자 지정할 
 
 > [!NOTE]
 > ASP.NET Web API에서 예외 필터는 ASP.NET MVC의 경우와 비슷합니다. 그러나 선언 된 함수 및 별도 네임 스페이스에 개별적으로 합니다. 특히 합니다 **HandleErrorAttribute** MVC에서 사용 되는 클래스는 Web API 컨트롤러에서 throw 된 예외를 처리 하지 않습니다.
-
 
 필터를 변환 하는 다음과 같습니다 **NotImplementedException** 예외를 HTTP 상태 코드 501 구현 되지 않음:
 

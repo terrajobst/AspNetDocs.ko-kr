@@ -8,12 +8,12 @@ ms.date: 04/01/2008
 ms.assetid: f9adcb5d-6d70-4885-a3bf-ed95efb4da1a
 msc.legacyurl: /web-forms/overview/older-versions-security/admin/recovering-and-changing-passwords-vb
 msc.type: authoredcontent
-ms.openlocfilehash: ba70db591c373fd9514fdb7079af83a511067162
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 180d2d7a7544b976f923bf8a4055281e36a3e526
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59380836"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130895"
 ---
 # <a name="recovering-and-changing-passwords-vb"></a>암호 복구 및 변경(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59380836"
 [코드를 다운로드](http://download.microsoft.com/download/6/0/e/60e1bd94-e5f9-4d5a-a079-f23c98f4f67d/VB.13.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/0/e/60e1bd94-e5f9-4d5a-a079-f23c98f4f67d/aspnet_tutorial13_ChangingPasswords_vb.pdf)
 
 > ASP.NET 지원 암호 복구 및 변경 하기 위한 두 개의 웹 컨트롤을 포함 합니다. PasswordRecovery 컨트롤 방문자를 분실된 한 암호를 복구할 수 있습니다. ChangePassword 컨트롤을 사용 하면 자신의 암호를 업데이트할 수 있습니다. 이 자습서 시리즈의 PasswordRecovery 전체 살펴본 다른 로그인 관련 웹 컨트롤과 같은 및 ChangePassword를 재설정 하거나 사용자의 암호를 수정할 백그라운드에서 멤버 자격 프레임 워크를 사용 하 여 작업을 제어 합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -38,7 +37,6 @@ ASP.NET 지원 암호 복구 및 변경 하기 위한 두 개의 웹 컨트롤�
 
 > [!NOTE]
 > 없기 때문에 일반 텍스트로 네트워크를 통해 전자 메일 메시지는 전송 보안 위험 보내는 전자 메일을 통해 사용자의 암호와 관련 된.
-
 
 PasswordRecovery 컨트롤이 세 가지 뷰가 이루어져 있습니다.
 
@@ -59,18 +57,14 @@ PasswordRecovery 컨트롤이 세 가지 뷰가 이루어져 있습니다.
 > [!NOTE]
 > 이전에 설명한 대로 `SqlMembershipProvider` 세 가지 형식 중 하나에 사용자의 암호를 저장 합니다. Clear, Hashed (기본값) 또는 암호화 합니다. 멤버 자격 구성 설정을;에 사용 되는 저장소 메커니즘에 따라 달라 집니다. 데모 응용 프로그램 Hashed 암호 형식을 사용 합니다. Hashed 암호 형식을 사용 하는 경우는 `EnablePasswordRetrieval` 시스템 데이터베이스에 저장 된 해시 된 버전에서 사용자의 실제 암호를 확인할 수 없으므로 옵션이 False로 설정 되어야 합니다.
 
-
 그림 1에서는 어떻게 PasswordRecovery의 인터페이스 및 동작의 영향을 받습니다 멤버 자격 구성을 보여 줍니다.
-
 
 [![RequiresQuestionAndAnswer, EnablePasswordRetrieval, 및 EnablePasswordReset PasswordRecovery 컨트롤의 모양 및 동작에 영향을](recovering-and-changing-passwords-vb/_static/image2.png)](recovering-and-changing-passwords-vb/_static/image1.png)
 
 **그림 1**: 합니다 `RequiresQuestionAndAnswer`, `EnablePasswordRetrieval`, 및 `EnablePasswordReset` PasswordRecovery 컨트롤의 모양 및 동작에 영향을 줄 ([클릭 하 여 큰 이미지 보기](recovering-and-changing-passwords-vb/_static/image3.png))
 
-
 > [!NOTE]
 > 에 <a id="_msoanchor_2"> </a> [ *SQL Server에서 멤버 자격 스키마 만들기* ](../membership/creating-the-membership-schema-in-sql-server-vb.md) 자습서 설정 하 여 멤버 자격 공급자를 구성 했습니다 `RequiresQuestionAndAnswer` True로 `EnablePasswordRetrieval` 를 False 이면 및 `EnablePasswordReset` True로 합니다.
-
 
 ### <a name="using-the-passwordrecovery-control"></a>PasswordRecovery 컨트롤 사용
 
@@ -85,34 +79,27 @@ PasswordRecovery 컨트롤을 사용 하 여 ASP.NET 페이지에서 살펴보�
 > [!NOTE]
 > `<system.net>` 루트의 자식 요소인 `<configuration>` 요소와의 형제 `<system.web>`합니다. 따라서에 두지 마십시오 합니다 `<system.net>` 내의 요소는 `<system.web>` 요소 대신 같은 수준에 넣습니다.
 
-
 [!code-xml[Main](recovering-and-changing-passwords-vb/samples/sample1.xml)]
 
 SMTP 서버에서 네트워크를 사용 하는 것 외에도 보낼 전자 메일 메시지를 보관 해야 여기서 픽업 디렉터리를 지정할 수 있습니다.
 
 SMTP 설정을 구성한 경우, 참조는 `RecoverPassword.aspx` 브라우저를 통해 페이지입니다. 먼저 사용자 저장소에 존재 하지 않는 사용자 이름을 입력 하십시오. 그림 2에서 알 수 있듯이, PasswordRecovery 컨트롤 사용자 정보를 액세스할 수 있는지를 나타내는 메시지를 표시 합니다. 컨트롤을 통해 메시지의 텍스트를 사용자 지정할 수 있습니다 [ `UserNameFailureText` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.passwordrecovery.usernamefailuretext.aspx)합니다.
 
-
 [![잘못 된 사용자 이름을 입력 한 경우 오류 메시지가 표시 됩니다.](recovering-and-changing-passwords-vb/_static/image5.png)](recovering-and-changing-passwords-vb/_static/image4.png)
 
 **그림 2**: 잘못 된 사용자 이름을 입력 한 경우 오류 메시지가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](recovering-and-changing-passwords-vb/_static/image6.png))
 
-
 이제 사용자 이름을 입력 합니다. 액세스할 수 있으며 해당 보안 대답 하는 전자 메일 주소를 사용 하 여 시스템에서 계정의 사용자 이름을 알고 사용 합니다. 사용자 이름을 입력 하 고 제출을 클릭 하면, PasswordRecovery 컨트롤의 질문 뷰를 표시 합니다. 으로 사용자 이름 뷰를 사용 하 여 입력 하는 경우 잘못 된 응답 PasswordRecovery 컨트롤 표시 됩니다 (그림 3 참조)는 오류 메시지. 사용 된 [ `QuestionFailureText` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.passwordrecovery.questionfailuretext.aspx) 이 오류 메시지를 사용자 지정할 수 있습니다.
-
 
 [![사용자가 잘못 된 보안 대답을 입력 하는 경우 오류 메시지가 표시 됩니다.](recovering-and-changing-passwords-vb/_static/image8.png)](recovering-and-changing-passwords-vb/_static/image7.png)
 
 **그림 3**: 사용자가 잘못 된 보안 대답을 입력 하는 경우 오류 메시지가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](recovering-and-changing-passwords-vb/_static/image9.png))
 
-
 마지막으로 올바른 보안 대답을 입력 하 고 제출을 클릭 합니다. 내부적으로 PasswordRecovery 컨트롤 임의의 암호를 생성, 사용자 계정에 할당, 새 암호의 사용자에 게 알리는 전자 메일을 보냅니다 (그림 4 참조) 한 후 성공 뷰에 표시 합니다.
-
 
 [![His 새 암호를 사용 하 여 전자 메일을 사용자에 게 보내기](recovering-and-changing-passwords-vb/_static/image11.png)](recovering-and-changing-passwords-vb/_static/image10.png)
 
 **그림 4**: 사용자는 His 새 암호를 사용 하 여 전자 메일이 전송 됩니다 ([클릭 하 여 큰 이미지 보기](recovering-and-changing-passwords-vb/_static/image12.png))
-
 
 ### <a name="customizing-the-email"></a>전자 메일을 사용자 지정
 
@@ -144,11 +131,9 @@ PasswordRecovery 컨트롤에서 보낸 기본 전자 메일은 대신 두기 (�
 
 이러한 변경한 후 다시 방문은 `RecoverPassword.aspx` 페이지 및 사용자 이름 및 보안 대답을 입력 합니다. 받게 그림 5의 것 처럼 보이는 전자 메일을 해야 합니다. `webmaster@example.com` 및 참조 하 고 제목 및 본문 업데이트 되었습니다.
 
-
 [![제목, 본문 및 참조 목록 업데이트 되었습니다.](recovering-and-changing-passwords-vb/_static/image14.png)](recovering-and-changing-passwords-vb/_static/image13.png)
 
 **그림 5**: 제목, 본문 및 참조 목록 업데이트 되었습니다 ([클릭 하 여 큰 이미지 보기](recovering-and-changing-passwords-vb/_static/image15.png))
-
 
 HTML 형식의 전자 메일을 보내도록 설정할 [ `IsBodyHtml` ](https://msdn.microsoft.com/library/system.web.ui.webcontrols.maildefinition.isbodyhtml.aspx) to True (기본값은 False) 및 업데이트 전자 메일 템플릿 HTML을 포함 합니다.
 
@@ -156,7 +141,6 @@ HTML 형식의 전자 메일을 보내도록 설정할 [ `IsBodyHtml` ](https://
 
 > [!NOTE]
 > 현재는 링크가 없습니다에 도달 하는 것에 대 한 왼쪽 탐색 창에서 `RecoverPassword.aspx` 페이지입니다. 사용자만 이라면 그녀에서 사이트에 성공적으로 로그온 할 수 없는 경우이 페이지를 방문 합니다. 따라서 업데이트를 `Login.aspx` 페이지에 대 한 링크를 포함 하는 `RecoverPassword.aspx` 페이지입니다.
-
 
 ### <a name="programmatically-resetting-a-users-password"></a>프로그래밍 방식으로 사용자의 암호를 다시 설정
 
@@ -183,7 +167,6 @@ HTML 형식의 전자 메일을 보내도록 설정할 [ `IsBodyHtml` ](https://
 > [!NOTE]
 > 합니다 `SqlMembershipProvider` 클래스에는 항상 임의 암호를 생성 최소 14 자, 따라서 `MinRequiredPasswordLength` 보다 작거나 14 않으면 해당 값은 무시 됩니다.
 
-
 ## <a name="step-2-changing-passwords"></a>2단계: 암호 변경
 
 임의로 생성 된 암호는 기억 하기 어렵습니다. 그림 4에 표시 된 암호는 것이 좋습니다: `WWGUZv(f2yM:Bd`합니다. 메모리는 커밋 보세요! 물론 사용자는 이러한 종류의 임의로 생성 된 암호를 보낸 후 그녀 하려고 기억 하기 암호를 변경 합니다.
@@ -193,14 +176,11 @@ HTML 형식의 전자 메일을 보내도록 설정할 [ `IsBodyHtml` ](https://
 > [!NOTE]
 > ChangePassword 컨트롤을 호출 하 여 사용자의 암호를 수정 합니다 `MembershipUser` 개체의 [ `ChangePassword` 메서드](https://msdn.microsoft.com/library/system.web.security.membershipuser.changepassword.aspx)합니다. ChangePassword 메서드에 두 개의 `String` 입력 매개 변수- *oldPassword* 하 고 *newPassword*-사용자의 계정을 사용 하 여 업데이트 및를 *newPassword*, 제공 된 것으로 가정 *oldPassword* 정확 합니다.
 
-
 엽니다는 `ChangePassword.aspx` 페이지 및 페이지 이름을 ChangePassword 컨트롤을 추가 `ChangePwd`합니다. 이 시점에서 디자인 보기 표시 암호 변경 (그림 6 참조)를 확인 합니다. 같은 PasswordRecovery 컨트롤과 컨트롤의 스마트 태그를 통해 뷰 간을 전환할 수 있습니다. 또한 이러한 보기의이 모양을 분류 된 스타일 속성을 통해 또는 서식 파일을 변환 하 여 사용자 지정할 수 있습니다.
-
 
 [![ChangePassword 컨트롤을 페이지 추가](recovering-and-changing-passwords-vb/_static/image17.png)](recovering-and-changing-passwords-vb/_static/image16.png)
 
 **그림 6**: ChangePassword 컨트롤을 페이지 추가 ([클릭 하 여 큰 이미지 보기](recovering-and-changing-passwords-vb/_static/image18.png))
-
 
 ChangePassword 컨트롤에서 현재 로그인된 한 사용자의 암호를 업데이트할 수 있습니다 *또는* 다른, 지정 된 사용자의 암호입니다. 기본 암호 변경 뷰 세 TextBox 컨트롤을 렌더링 그림 6에서 알 수 있듯이: 이전 암호와 새 암호에 대 한 두 가지에 대 한 합니다. 이 기본 인터페이스는 현재 로그온된 한 사용자의 암호를 업데이트 하려면 사용 됩니다.
 
@@ -211,14 +191,11 @@ ChangePassword 컨트롤에 다른 사용자의 암호를 업데이트 하는 �
 > [!NOTE]
 > 하는 것이 보일는 `DisplayUserName` 속성은 관리자가 다른 사용자의 암호를 변경할 수 있도록 하는 데 유용 합니다. 그러나 경우에 `DisplayUserName` 이전 암호가 알려지고 입력 True로 설정 합니다. 관리자가 3 단계에서에서 사용자의 암호를 변경할 수 있도록 하는 방법도 설명 합니다.
 
-
 방문을 `ChangePassword.aspx` 브라우저를 통해 페이지 및 암호를 변경 합니다. 암호 길이, 멤버 자격 구성에 지정 하는 영숫자가 아닌 문자 요구 사항을 충족 하지 않는 새 암호를 입력 하는 경우 오류 메시지가 표시 됩니다 (그림 7 참조).
-
 
 [![ChangePassword 컨트롤을 페이지 추가](recovering-and-changing-passwords-vb/_static/image20.png)](recovering-and-changing-passwords-vb/_static/image19.png)
 
 **그림 7**: ChangePassword 컨트롤을 페이지 추가 ([클릭 하 여 큰 이미지 보기](recovering-and-changing-passwords-vb/_static/image21.png))
-
 
 사용자의 올바른 이전 암호 및 올바른 새 암호 로그인된을 입력 하면 암호를 변경 하 고 성공 뷰에 표시 합니다.
 
@@ -234,11 +211,9 @@ ChangePassword 컨트롤의 다음으로 설정 `MailDefinition` 속성의 `Body
 
 다음과 같이 변경한 후 페이지를 다시 방문 하 고 암호를 다시 변경 합니다. 이 이때 ChangePassword 컨트롤 사용자 지정, HTML 형식의 전자 메일을 파일에 대 한 사용자의 전자 메일 주소로 보냅니다 (그림 8 참조).
 
-
 [![사용자는 해당 암호가 변경 된 알립니다 전자 메일 메시지](recovering-and-changing-passwords-vb/_static/image23.png)](recovering-and-changing-passwords-vb/_static/image22.png)
 
 **그림 8**: 사용자는 해당 암호를 변경한 전자 메일 메시지가 나타납니다 ([클릭 하 여 큰 이미지 보기](recovering-and-changing-passwords-vb/_static/image24.png))
-
 
 ## <a name="step-3-allowing-administrators-to-change-users-passwords"></a>3단계: 관리자는 사용자의 암호 변경 수
 
@@ -267,20 +242,16 @@ ChangePassword 컨트롤의 다음으로 설정 `MailDefinition` 속성의 `Body
 > [!NOTE]
 > 에 데이터베이스와 직접 작업 하는 멤버 자격 프레임 워크에서 제공 하는 간략화가 파괴 됩니다. 이 의사 결정을 연결 하는 `SqlMembershipProvider`,이 코드를 이식 가능 덜 합니다. 또한이 코드 멤버 자격 스키마 변경 되 면 버전의 ASP.NET 나중에 예상 대로 작동 하지 않을 수 있습니다. 이 접근 방식은 해결 방법 이며, 대부분의 해결 방법 등 하지 모범 사례의 예입니다.
 
-
 코드 보기 좋지 않은 일부 비트 이며 매우 긴 합니다. 따라서 심도 있는 검사를 사용 하 여이 자습서를 어지럽히는 안 함 더 자세히 알고 싶은 경우이 자습서를 방문 하 여 코드를 다운로드 합니다 `~/Administration/ManageUsers.aspx` 페이지입니다. 이 페이지에서 만든 합니다 <a id="_msoanchor_5"> </a> [이전 자습서](building-an-interface-to-select-one-user-account-from-many-vb.md), 각 사용자를 나열 합니다. GridView에 대 한 링크를 포함 하도록 업데이트 된 `UserInformation.aspx` 페이지에서 선택한 사용자의 사용자 이름 문자열을 통해 전달 합니다. `UserInformation.aspx` 자신의 암호를 변경 하는 것에 대 한 선택한 사용자 및 텍스트 상자에 대 한 정보를 표시 하는 페이지 (그림 9 참조).
 
 새 암호를 입력 합니다. 두 번째 텍스트 상자에 확인 하 고 사용자 [업데이트] 단추를 클릭 한 후 다시 게시 근거가 및 `aspnet_Membership_SetPassword` 사용자의 암호 업데이트 저장된 프로시저를 호출 합니다. 코드에 더 익숙해집니다 및 암호를 변경한 사용자에 게 전자 메일 보내기를 포함 하는 기능을 확장 해 보십시오.이 기능에 관심이 있는 독자를 이러한 것이 좋습니다.
-
 
 [![관리자는 사용자의 암호를 변경할 수 있습니다.](recovering-and-changing-passwords-vb/_static/image26.png)](recovering-and-changing-passwords-vb/_static/image25.png)
 
 **그림 9**: 관리자 사용자의 암호를 변경할 수 있습니다 ([클릭 하 여 큰 이미지 보기](recovering-and-changing-passwords-vb/_static/image27.png))
 
-
 > [!NOTE]
 > `UserInformation.aspx` 멤버 자격 프레임 워크의 선택을 취소 하거나 Hashed 형태로 암호를 저장 하도록 구성 된 경우만 작동 현재 페이지입니다. 이 기능을 추가 하도록 초대 받았다면 있지만 없기에 새 암호를 암호화 하는 코드입니다. 필요한 코드를 추가 하는 방법은 같은 디컴파일러를 사용 하는 것 [Reflector](http://www.aisto.com/roeder/dotnet/) .NET framework; 메서드에 대 한 소스 코드를 검사할 검사를 시작 합니다 `SqlMembershipProvider` 클래스의 `ChangePassword` 메서드. 이 암호의 해시를 만들기 위한 코드 작성을 사용 하는 방법입니다.
-
 
 ## <a name="summary"></a>요약
 

@@ -8,12 +8,12 @@ ms.date: 07/21/2010
 ms.assetid: f70a310c-9557-4743-82cb-655265676d39
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-6
 msc.type: authoredcontent
-ms.openlocfilehash: 34c8776636478e8c40064bb29ae0311ee4fdc8d8
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b0caa89dc9ffb5bb7451fa2d9d346c7db2bf1466
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59409787"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130868"
 ---
 # <a name="part-6-aspnet-membership"></a>6부: ASP.NET 멤버 자격
 
@@ -22,7 +22,6 @@ ms.locfileid: "59409787"
 > Tailspin Spyworks.NET 플랫폼에 대 한 강력 하 고 확장 가능한 응용 프로그램을 생성 하는 방법을 매우 단순 하는 방법을 보여 줍니다. 해제 쇼핑, 체크 아웃 및 관리를 포함 하는 온라인 상점을 만들려고 ASP.NET 4에서 강력한 새 기능을 사용 하는 방법을 보여 줍니다.
 > 
 > 이 자습서 시리즈 모든 Tailspin Spyworks 샘플 응용 프로그램 빌드를 수행 하는 단계를 자세히 설명 합니다. 6 부 ASP.NET 멤버 자격을 추가합니다.
-
 
 ## <a id="_Toc260221672"></a>  ASP.NET 멤버 자격 사용
 
@@ -99,7 +98,6 @@ SubmitOrder 작업이 수행 됩니다.
 - 시장 바구니에 모든 품목을 가져와 새 주문 레코드를 만들고 연관된 된 OrderDetails 레코드를 사용 합니다.
 - 배송 날짜를 계산 합니다.
 - 쇼핑 카트를 지웁니다.
-
 
 [!code-csharp[Main](tailspin-spyworks-part-6/samples/sample10.cs)]
 

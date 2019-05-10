@@ -9,17 +9,16 @@ ms.custom: seoapril2019
 ms.assetid: 7404a0f1-52f7-410c-abd0-c96bab52d217
 msc.legacyurl: /web-api/overview/advanced
 msc.type: chapter
-ms.openlocfilehash: 2cec6138ffcd6019eae23c82abda2b96d7b0b625
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 546c7b0d868fcd7a3f3457d623b69eaefa646175
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59383462"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65126175"
 ---
 # <a name="advanced-topics-for-aspnet-web-api"></a>ASP.NET Web API에 대 한 고급 항목
 
 > ASP.NET Web API 개발에 대 한 항목, 더 고급 후 있습니다 기본 사항을 알아보았습니다.
-
 
 - [Web API 2 구성](configuring-aspnet-web-api.md)
 - [Web API 2에서 종속성 주입](dependency-injection.md)

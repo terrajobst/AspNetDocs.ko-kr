@@ -8,12 +8,12 @@ ms.date: 01/18/2008
 ms.assetid: 61aa4e08-aa81-4aeb-8ebe-19ba7a65e04c
 msc.legacyurl: /web-forms/overview/older-versions-security/membership/validating-user-credentials-against-the-membership-user-store-cs
 msc.type: authoredcontent
-ms.openlocfilehash: d962036213d779f73e5d837af1de42a01f08a329
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 469fc9c52bd3d1e5dd69b80399b250ba46f72405
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389221"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131824"
 ---
 # <a name="validating-user-credentials-against-the-membership-user-store-c"></a>멤버 자격 사용자 저장소에 대해 사용자 자격 증명의 유효성 검사(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59389221"
 [코드를 다운로드](http://download.microsoft.com/download/3/f/5/3f5a8605-c526-4b34-b3fd-a34167117633/ASPNET_Security_Tutorial_06_CS.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/3/f/5/3f5a8605-c526-4b34-b3fd-a34167117633/aspnet_tutorial06_LoggingIn_cs.pdf)
 
 > 이 자습서에서는 프로그래밍 방식으로 및 로그인 컨트롤을 사용 하 여 멤버 자격 사용자 저장소에 대 한 사용자의 자격 증명의 유효성을 검사 하는 방법을 살펴보겠습니다. Login 컨트롤의 모양 및 동작을 사용자 지정 하는 방법에도 살펴보겠습니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -42,11 +41,9 @@ ms.locfileid: "59389221"
 
 로그인 페이지를 업데이트 해 보겠습니다 (~ /`Login.aspx`)는 멤버 자격 프레임 워크 사용자 저장소에 대해 제공된 된 자격 증명의 유효성을 검사 합니다. 이 로그인 페이지를 만들었습니다 년대 합니다 <a id="Tutorial02"> </a> [ *는 폼 인증 개요* ](../introduction/an-overview-of-forms-authentication-cs.md) 자습서에서는 사용자 이름 및 암호에 대 한 두 개의 텍스트 상자를 사용 하 여 인터페이스를 만들기는 암호 저장 확인란을 선택 하 고 로그인 단추 (그림 1 참조). 코드에 하드 코드 된 목록 (Scott/암호, Jisun/암호 및 Sam/암호) 사용자 이름 및 암호 쌍에 대해 입력 한 자격 증명을 확인합니다. 에 <a id="Tutorial03"> </a> [ *폼 인증 구성 및 고급 항목* ](../introduction/forms-authentication-configuration-and-advanced-topics-cs.md) 자습서의 형태로 추가 정보를 저장 하는 로그인 페이지의 코드를 업데이트 했습니다 인증 티켓의 `UserData` 속성입니다.
 
-
 [![로그인 페이지의 인터페이스에 두 개의 텍스트 상자, CheckBoxList, 및 단추가 포함 됩니다.](validating-user-credentials-against-the-membership-user-store-cs/_static/image2.png)](validating-user-credentials-against-the-membership-user-store-cs/_static/image1.png)
 
 **그림 1**: 로그인 페이지의 인터페이스에 포함 되어 두 개의 텍스트 상자, CheckBoxList, 및 단추 ([클릭 하 여 큰 이미지 보기](validating-user-credentials-against-the-membership-user-store-cs/_static/image3.png))
-
 
 로그인 페이지의 사용자 인터페이스 수는 변경 되지 않지만 로그인 단추를 바꾸려면 먼저 `Click` framework 멤버 자격 사용자 저장소에 대 한 사용자의 유효성을 검사 하는 코드를 사용 하 여 이벤트 처리기입니다. 해당 코드는 다음과 같이 표시 되도록 이벤트 처리기를 업데이트 합니다.
 
@@ -60,7 +57,6 @@ ms.locfileid: "59389221"
 
 > [!NOTE]
 > 암호를 포함 하 여 자격 증명을 웹 서버에 인터넷을 통해 전송 됩니다 때 사용자가 자격 증명을 입력 하 고 로그인 페이지 양식 제출 합니다 *일반 텍스트*합니다. 즉, 사용자 이름 및 암호를 네트워크 트래픽을 검사 하는 모든 해커가 볼 수 있습니다. 이 방지 하려면 반드시 사용 하 여 네트워크 트래픽을 암호화할 [보안 소켓 레이어 (SSL)](http://en.wikipedia.org/wiki/Secure_Sockets_Layer)합니다. 이렇게 하면 자격 증명 (뿐만 아니라 전체 페이지의 HTML 태그) 웹 서버에서 수신 될 때까지 브라우저를 떠날 순간부터 암호화 됩니다.
-
 
 ### <a name="how-the-membership-framework-handles-invalid-login-attempts"></a>멤버 자격 프레임 워크에서 잘못 된 로그인 시도 처리 하는 방법
 
@@ -78,30 +74,24 @@ ms.locfileid: "59389221"
 > [!NOTE]
 > 단점 중 하나는 `ValidateUser` 메서드는 제공 된 자격 증명이 잘못 된 경우 제공 하지 않으며 이유에 대 한 아무런 설명 됩니다. 자격 증명에에서 있기 때문에 일치 하는 사용자 이름/암호 쌍을 없습니다 사용자 저장소 또는 사용자 아직 승인 되지 않은, 때문에 또는 사용자를 잠겨 있기 때문에 유효 하지 수 있습니다. 4 단계에서에서 해당 로그인에 실패할 경우 사용자에 게 자세한 메시지를 표시 하는 방법을 살펴보겠습니다.
 
-
 ## <a name="step-2-collecting-credentials-through-the-login-web-control"></a>2단계: 로그인 웹 컨트롤을 통해 자격 증명을 수집
 
 합니다 [로그인 웹 컨트롤](https://msdn.microsoft.com/library/system.web.ui.webcontrols.login.aspx) 기본 사용자 인터페이스를 다시 만든 것과 매우 비슷합니다 렌더링 합니다 <a id="SKM5"> </a> [ *는 폼 인증 개요* ](../introduction/an-overview-of-forms-authentication-cs.md) 자습서. 로그인 컨트롤을 사용 하 여 방문자가 자격 증명을 수집 하는 인터페이스를 만드는 경우의 작업을 덕분입니다. 또한 로그인 컨트롤 자동으로 로그인 (제출 된 자격 증명이 잘못 가정), 사용자 함으로써 우리 저장 코드를 작성 하지 않고도 합니다.
 
 업데이트 해 보겠습니다 `Login.aspx`를 수동으로 만든된 인터페이스를 대체 하 고 로그인 컨트롤을 사용 하 여 코딩 합니다. 기존 태그를 제거 하 여 시작 하 고 코드 `Login.aspx`합니다. 완전 한, 삭제 하거나 주석으로 처리는 단순히 있습니다. 선언적 태그를 주석으로 사용 하 여 둘러싸서 합니다 `<%--` 및 `--%>` 구분 기호입니다. 이러한 구분 기호를 수동으로 입력할 수 있습니다 또는 그림 2에서 알 수 있듯이, 주석 처리를 누른 다음 도구 모음에서 선택한 줄 아이콘 주석 텍스트를 선택할 수 있습니다. 마찬가지로, 아이콘을 선택한 줄 주석 코드 숨김 클래스에서 선택한 코드를 주석 처리를 사용할 수 있습니다.
 
-
 [![선언적 태그 기존 및 Login.aspx의 소스 코드 주석](validating-user-credentials-against-the-membership-user-store-cs/_static/image5.png)](validating-user-credentials-against-the-membership-user-store-cs/_static/image4.png)
 
 **그림 2**: 주석 아웃은 기존 선언적 태그 및 소스 코드 `Login.aspx` ([큰 이미지를 보려면 클릭](validating-user-credentials-against-the-membership-user-store-cs/_static/image6.png))
 
-
 > [!NOTE]
 > 선택한 줄 아이콘 주석 Visual Studio 2005에서 선언적 태그를 볼 때 사용할 수 없는 경우 Visual Studio 2008을 사용 하지 않는 경우 수동으로 추가 해야 합니다는 `<%--` 고 `--%>` 구분 기호입니다.
 
-
 다음으로, 로그인 컨트롤을 페이지에 도구 상자에서 끌어서 설정 해당 `ID` 속성을 `myLogin`입니다. 이 시점에서 화면 그림 3 유사 합니다. Login 컨트롤의 기본 인터페이스 이름과 암호는 암호 저장에 대 한 TextBox 컨트롤에 포함 하는 참고는 다음 확인란을 선택 하 고 로그에서 단추 시간입니다. 이 밖에도 `RequiredFieldValidator` 두 텍스트 상자에 대 한 제어 합니다.
-
 
 [![로그인 컨트롤을 페이지 추가](validating-user-credentials-against-the-membership-user-store-cs/_static/image8.png)](validating-user-credentials-against-the-membership-user-store-cs/_static/image7.png)
 
 **그림 3**: 로그인 컨트롤을 페이지 추가 ([클릭 하 여 큰 이미지 보기](validating-user-credentials-against-the-membership-user-store-cs/_static/image9.png))
-
 
 및 완료 되었습니다! Login 컨트롤의 로그인 단추를 클릭 하면 포스트백이 발생 하 고 로그인 컨트롤을 호출 하는 `Membership.ValidateUser` 메서드를 입력 한 사용자 이름 및 암호를 전달 합니다. 잘못 된 자격 증명을 로그인 컨트롤 같은 메시지가 표시 됩니다. 그러나 자격 증명이 유효 하는 경우 로그인 컨트롤 폼 인증 티켓을 만들어 및 적절 한 페이지로 사용자를 리디렉션합니다.
 
@@ -114,11 +104,9 @@ Login 컨트롤 네 가지 요소를 사용 하 여 로그인이 성공 하면 �
 
 그림 4는 방법을 보여 주며 로그인 컨트롤에서 해당 페이지를 적절 한 의사 결정에 도착 하는 데 이러한 4 개의 매개 변수를 사용 합니다.
 
-
 [![로그인 컨트롤을 페이지 추가](validating-user-credentials-against-the-membership-user-store-cs/_static/image11.png)](validating-user-credentials-against-the-membership-user-store-cs/_static/image10.png)
 
 **그림 4**: 로그인 컨트롤을 페이지 추가 ([클릭 하 여 큰 이미지 보기](validating-user-credentials-against-the-membership-user-store-cs/_static/image12.png))
-
 
 브라우저를 통해 사이트를 방문 하 고 멤버 자격 프레임 워크에서 기존 사용자로 로그인 하 여 로그인 컨트롤을 테스트 하려면 잠시 시간이 소요 됩니다.
 
@@ -139,16 +127,13 @@ Login 컨트롤은 해당 사용자 인터페이스 컨트롤의 레이아웃을
 > [!NOTE]
 > 다음 섹션에서는 로그인 컨트롤의 레이아웃을 구성 살펴보겠습니다 템플릿을 사용 하 여 레이아웃 컨트롤의 사용자 인터페이스 요소의 정확한 레이아웃을 정의 합니다.
 
-
 Login 컨트롤의 속성 설정을 설정 하 여 마무리 합니다 [ `CreateUserText` ](https://msdn.microsoft.com/library/system.web.ui.webcontrols.login.createusertext.aspx) 및 [ `CreateUserUrl` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.login.createuserurl.aspx) 아직 등록 되지 않음에? 계정 만들기 및 `~/Membership/CreatingUserAccounts.aspx`, 각각. 만든 Login 컨트롤의 인터페이스는 페이지를 가리키는 하이퍼링크를 추가 합니다 <a id="SKM6"> </a> [이전 자습서](creating-user-accounts-cs.md)합니다. Login 컨트롤의 [ `HelpPageText` ](https://msdn.microsoft.com/library/system.web.ui.webcontrols.login.helppagetext.aspx) 하 고 [ `HelpPageUrl` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.login.helppageurl.aspx) 및 [ `PasswordRecoveryText` ](https://msdn.microsoft.com/library/system.web.ui.webcontrols.login.passwordrecoverytext.aspx) 하 고 [ `PasswordRecoveryUrl` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.login.passwordrecoveryurl.aspx) 도움말 페이지 및 암호 복구 페이지에 대 한 링크를 렌더링 하 동일한 방식으로 작동 합니다.
 
 속성을 변경한 후 로그인 컨트롤의 선언적 태그 및 모양을 유사 그림 5에 표시 된 것입니다.
 
-
 [![Login 컨트롤의 속성 값의 모양을 지정합니다](validating-user-credentials-against-the-membership-user-store-cs/_static/image14.png)](validating-user-credentials-against-the-membership-user-store-cs/_static/image13.png)
 
 **그림 5**: Login 컨트롤의 속성 값 결정 해당 모양 ([클릭 하 여 큰 이미지 보기](validating-user-credentials-against-the-membership-user-store-cs/_static/image15.png))
-
 
 ### <a name="configuring-the-login-controls-layout"></a>Login 컨트롤의 레이아웃을 구성합니다.
 
@@ -163,23 +148,18 @@ Login 컨트롤의 속성 설정을 설정 하 여 마무리 합니다 [ `Create
 
 자신의 사용자 이름, 암호 및 전자 메일 주소에 대 한 메시지를 표시 하 고 제공 된 전자 메일 주소가 파일에서 전자 메일 주소와 일치 하는 경우에 사용자를 인증 있도록 Login 컨트롤을 업데이트 해 보겠습니다. 먼저 로그인 컨트롤의 인터페이스를 템플릿으로 변환 해야 합니다. Login 컨트롤의 스마트 태그에서 템플릿 옵션으로 선택 합니다.
 
-
 [![Login 컨트롤 템플릿으로 변환](validating-user-credentials-against-the-membership-user-store-cs/_static/image17.png)](validating-user-credentials-against-the-membership-user-store-cs/_static/image16.png)
 
 **그림 6**: Login 컨트롤 템플릿으로 변환 ([클릭 하 여 큰 이미지 보기](validating-user-credentials-against-the-membership-user-store-cs/_static/image18.png))
 
-
 > [!NOTE]
 > Login 컨트롤 미리 template 버전으로 되돌리려면 컨트롤의 스마트 태그에서 다시 설정 링크를 클릭 합니다.
 
-
 추가 로그인 컨트롤을 템플릿으로 변환는 `LayoutTemplate` HTML 요소 및 사용자 인터페이스를 정의 하는 웹 컨트롤을 사용 하 여 컨트롤의 선언적 태그를 합니다. 그림 7에서 알 수 있듯이, 컨트롤을 템플릿으로 변환 제거 다양 한 속성이 속성 창에서와 같은 `TitleText`, `CreateUserUrl`등, 있으므로 템플릿을 사용 하는 경우 이러한 속성 값은 무시 됩니다.
-
 
 [![적은 수의 속성은 사용할 수 있는 경우는 로그인 컨트롤 템플릿으로 변환 하는](validating-user-credentials-against-the-membership-user-store-cs/_static/image20.png)](validating-user-credentials-against-the-membership-user-store-cs/_static/image19.png)
 
 **그림 7**: 적은 수의 속성은 사용할 수 있는 경우는 로그인 컨트롤 템플릿으로 변환 됩니다 ([클릭 하 여 큰 이미지 보기](validating-user-credentials-against-the-membership-user-store-cs/_static/image21.png))
-
 
 HTML 태그를 `LayoutTemplate` 필요에 따라 수정할 수 있습니다. 마찬가지로, 언제 든 지 새 웹 컨트롤 템플릿에 추가 합니다. 그러나 반드시 해당 로그인 컨트롤의 핵심 웹 컨트롤 서식 파일에 남아 있으며 할당 된 유지 `ID` 값입니다. 특히 제거 하거나 마십시오 이름 바꾸기는 `UserName` 또는 `Password` 텍스트 상자를 `RememberMe` 확인란을를 `LoginButton` 단추를 `FailureText` 레이블을 또는 `RequiredFieldValidator` 컨트롤.
 
@@ -189,11 +169,9 @@ HTML 태그를 `LayoutTemplate` 필요에 따라 수정할 수 있습니다. 마
 
 추가한 후의 `Email` 텍스트 상자에 브라우저를 통해 페이지를 방문 합니다. 그림 8에서 알 수 있듯이, 로그인 컨트롤의 사용자 인터페이스는 이제 세 번째 텍스트 상자를 포함 합니다.
 
-
 [![Login 컨트롤 이제 사용자의 전자 메일 주소에 대 한 텍스트를 포함](validating-user-credentials-against-the-membership-user-store-cs/_static/image23.png)](validating-user-credentials-against-the-membership-user-store-cs/_static/image22.png)
 
 **그림 8**: Login 컨트롤 이제 사용자의 전자 메일 주소에 대 한 텍스트를 포함 ([클릭 하 여 큰 이미지 보기](validating-user-credentials-against-the-membership-user-store-cs/_static/image24.png))
-
 
 Login 컨트롤이 시점에서 여전히 사용 하 여 `Membership.ValidateUser` 제공된 된 자격 증명의 유효성을 검사 하는 방법입니다. 마찬가지로, 값을 입력 합니다 `Email` 텍스트 상자에 사용자 로그인 할 수 있는지 여부에 관여 하지 않습니다. 3 단계에서에서 자격 증명은만 유효 사용자 이름 및 암호 유효 하 고 제공 된 전자 메일 주소 파일에서 전자 메일 주소와 일치 하는 경우 수 있도록 로그인 컨트롤의 인증 논리를 재정의 하는 방법을 살펴보겠습니다.
 
@@ -207,15 +185,12 @@ Login 컨트롤이 시점에서 여전히 사용 하 여 `Membership.ValidateUse
 
 그림 9에서는 인증 워크플로 순서도 제공합니다.
 
-
 [![Login 컨트롤의 인증 워크플로](validating-user-credentials-against-the-membership-user-store-cs/_static/image26.png)](validating-user-credentials-against-the-membership-user-store-cs/_static/image25.png)
 
 **그림 9**: Login 컨트롤의 인증 워크플로 ([클릭 하 여 큰 이미지 보기](validating-user-credentials-against-the-membership-user-store-cs/_static/image27.png))
 
-
 > [!NOTE]
 > 사용 시기에 있는지를 `FailureAction`의 `RedirectToLogin` 옵션 페이지, 다음 시나리오를 고려 합니다. 지금 우리 `Site.master` 마스터 페이지에는 현재, Hello, 군에 표시할 텍스트를 익명 사용자가 방문 하는 경우 왼쪽된 열에 있지만 로그인 컨트롤을 사용 하 여 해당 텍스트를 대체 하 려 한다고 가정 합니다. 이렇게 하면 익명 사용자 로그인 페이지를 직접 방문할 필요 없이 사이트의 모든 페이지에서 로그인 합니다. 그러나 사용자는 마스터 페이지에서 렌더링 하는 로그인 컨트롤을 통해 로그인 할 수 없는 경우, 해야 로그인 페이지로 리디렉션합니다 (`Login.aspx`) 추가 지침, 링크 및 만들기에 대 한 링크와 같은 다른 도움말-가능성이 해당 페이지에 포함 되어 있으므로 새 계정 또는 마스터 페이지에 추가 되지 않은 암호가 손실된 검색 합니다.
-
 
 ### <a name="creating-theauthenticateevent-handler"></a>만들기는`Authenticate`이벤트 처리기
 
@@ -246,15 +221,12 @@ Login 컨트롤이 시점에서 여전히 사용 하 여 `Membership.ValidateUse
 
 이 코드를 사용 하 여 올바른 사용자 이름, 암호 및 전자 메일 주소를 입력 합니다. 유효한 사용자로 로그인 하려고 합니다. 이 작업을 다시 시도 하지만이 이번에는 의도적으로 잘못 된 전자 메일 주소 사용 (그림 10 참조). 마지막으로, 존재 하지 않는 사용자를 사용 하 여 세 번째로 보세요. 첫 번째 경우에서는 성공적으로 로그온 사이트로 하지만 마지막 두 경우에서 로그인 컨트롤의 잘못 된 자격 증명 메시지 표시 되어야 합니다.
 
-
 [![잘못 된 전자 메일 주소를 제공 하는 경우 Tito 로그인 할 수 없습니다.](validating-user-credentials-against-the-membership-user-store-cs/_static/image29.png)](validating-user-credentials-against-the-membership-user-store-cs/_static/image28.png)
 
 **그림 10**: Tito 없습니다 로그의 경우 잘못 된 전자 메일 주소를 제공 ([클릭 하 여 큰 이미지 보기](validating-user-credentials-against-the-membership-user-store-cs/_static/image30.png))
 
-
 > [!NOTE]
 > 1 단계에서에서 하는 방법의 멤버 자격 프레임 워크 처리 잘못 된 로그인 시도 섹션에서 설명한 대로 때는 `Membership.ValidateUser` 잘못 된 로그인 시도 추적에 특정 초과 하는 경우에 사용자를 잠그는 메서드 호출 되 고 잘못 된 자격 증명 전달 지정된 된 시간 창 내에서 잘못 된 시도 횟수의 임계값입니다. 사용자 지정 인증 논리 호출 이후에 `ValidateUser` 메서드를 올바른 사용자 이름에 잘못 된 암호를 잘못 된 로그인 시도 카운터를 하나씩 늘립니다 있지만이 카운터는 사용자 이름 및 암호는 유효한 경우에서 증가 하지 않지만 전자 메일 주소가 올바르지 않습니다. 그럴 경우이 동작은 적합 가능성이 해커는 사용자 이름과 암호를 알지만 무작위 기술을 사용 하 여 사용자의 전자 메일 주소를 확인할 필요가 없기 때문입니다.
-
 
 ## <a name="step-4-improving-the-login-controls-invalid-credentials-message"></a>4단계: Login 컨트롤의 잘못 된 자격 증명 메시지 개선
 
@@ -279,11 +251,9 @@ Login 컨트롤이 시점에서 여전히 사용 하 여 `Membership.ValidateUse
 
 이 코드를 테스트 하려면 기존 사용자로 로그인 하는 잘못 된 암호를 사용 하 여 의도적으로 시도 합니다. 10 분 시간 프레임 내에서 행이 5 번 수행 하 고 계정이 잠기게 됩니다. 그림 11에서는, 후속 로그인 시도 항상 (정확한 암호 대신)으로 실패 하지 않지만 이제 더 설명적인 표시 너무 많은 잘못 된 로그인 시도 인해 계정의 잠 궜 습니다. 계정 잠금 해제 된 메시지를 포함 하도록 관리자에 게 문의 하십시오.
 
-
 [![Tito 너무 많은 잘못 된 로그인 시도 수행 하 고이 잠겨](validating-user-credentials-against-the-membership-user-store-cs/_static/image32.png)](validating-user-credentials-against-the-membership-user-store-cs/_static/image31.png)
 
 **그림 11**: 가 된 잠겨 Tito 수행 너무 많은 잘못 된 로그인 시도 하 고 ([클릭 하 여 큰 이미지 보기](validating-user-credentials-against-the-membership-user-store-cs/_static/image33.png))
-
 
 ## <a name="summary"></a>요약
 

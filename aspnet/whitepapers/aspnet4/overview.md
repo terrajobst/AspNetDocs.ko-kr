@@ -8,19 +8,18 @@ ms.date: 02/10/2010
 ms.assetid: d7729af4-1eda-4ff2-8b61-dbbe4fc11d10
 msc.legacyurl: /whitepapers/aspnet4
 msc.type: content
-ms.openlocfilehash: 0991ce5c866aa9e31ef23812e953d9ee10dda3d1
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: fbbb9e2ef6ce540f0ab422d2b80e4a5409076c83
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59409722"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132936"
 ---
 # <a name="aspnet-4-and-visual-studio-2010-web-development-overview"></a>ASP.NET 4 및 Visual Studio 2010 웹 개발 개요
 
 > 이 문서는.net Framework 4 및 Visual Studio 2010에 포함 된 ASP.NET에 대 한 다양 한 새 기능에 대 한 개요를 제공 합니다.
 > 
 > [이 백서를 다운로드 합니다.](https://download.microsoft.com/download/7/1/A/71A105A9-89D6-4201-9CC5-AD6A3B7E2F22/ASP_NET_4_and_Visual_Studio_2010_Web_Development_Overview.pdf)
-
 
 **목차**
 
@@ -145,7 +144,6 @@ ASP.NET 4에 출력 캐시 공급자 확장을 추가 하 여 지금 웹 사이�
 > 
 > 자세한 내용은 [응용 프로그램 웜 업을](https://www.iis.net/extensions/applicationwarmup%20on%20the%20IIS.net) IIS.net 웹 사이트입니다. 준비 기능을 사용 하는 방법을 보여 주는 연습을 참조 하세요 [Getting Started with IIS 7.5 응용 프로그램 준비 모듈](https://www.iis.net/learn/manage) IIS.net 웹 사이트입니다.
 
-
 자동 시작 기능을 사용 하려면 IIS 관리자에서 다음 구성을 사용 하 여 자동으로 시작 되도록 IIS 7.5에서 응용 프로그램 풀을 설정 합니다 `applicationHost.config` 파일:
 
 [!code-xml[Main](overview/samples/sample5.xml)]
@@ -206,7 +204,6 @@ ASP.NET 4에서는 URL 문자 검사에 사용 되는 문자를 구성할 수도
 
 > [!NOTE]
 > ASP.NET 4는 항상 문자 (0x00-0x1f, ASCII 범위에 포함 된 URL 경로 거부 IETF의 RFC 2396에 정의 된 대로 잘못 된 URL 문자는 참고 ([http://www.ietf.org/rfc/rfc2396.txt](http://www.ietf.org/rfc/rfc2396.txt)). IIS 6을 실행 하는 버전의 Windows Server에서 또는 이상, http.sys 프로토콜 장치 드라이버를 자동으로 거부 Url 이러한 문자를 사용 하 여 합니다.
-
 
 <a id="0.2__Toc253429245"></a><a id="0.2__Toc243304619"></a>
 
@@ -270,7 +267,6 @@ ASP.NET 4는 CLR에 의해 도입 된 새 리소스 모니터링 기능을 활�
 
 > [!NOTE]
 > 참고는 `aspnet.config` 파일은.NET Framework를 설치한 디렉터리입니다. 있지는 `Web.config` 파일입니다.
-
 
 경우는 *appDomainResourceMonitoring* 기능이 설정 된, "ASP.NET 응용 프로그램" 성능 범주에서 사용할 수 있는 두 개의 새 성능 카운터: *관리 되는 프로세서 시간 백분율* 및  *관리 되는 메모리 사용*합니다. 이러한 성능 카운터 모두 예상된 CPU 시간 및 개별 ASP.NET 응용 프로그램의 관리 되는 메모리 사용률을 추적 하려면 새 CLR 응용 프로그램 도메인 리소스 관리 기능을 사용 합니다. 따라서 ASP.NET 4를 사용 하 여 관리자가 이제 단일 작업자 프로세스에서 실행 하는 개별 응용 프로그램의 리소스 소비에 더욱 세부적인 보기를 있습니다.
 
@@ -678,7 +674,6 @@ ASP.NET 올바른 경로 자동으로 작동 (즉, 올바른 URL을 생성) 입�
 > [!NOTE]
 > 렌더링 된 컨트롤 Id는 고유 해야 하는 것을 note 합니다. 그렇지 않은 경우 클라이언트와 같은 개별 HTML 요소에 대 한 고유 Id를 필요로 하는 모든 기능을 중단할 수 있습니다 *document.getElementById* 함수입니다.
 
-
 #### <a name="creating-predictable-client-ids-in-data-bound-controls"></a>데이터 바인딩된 컨트롤에서 예측 가능한 클라이언트 Id 만들기
 
 합니다 *ClientID* 레거시 알고리즘에서 데이터 바인딩된 목록 컨트롤의 컨트롤 수에 대해 생성 되는 값 하며를 실제로 예측할 수 없습니다. 합니다 *ClientIDMode* 기능을 통해 이러한 Id를 통해 생성 된 제어를 강화할 해야 있습니다.
@@ -1004,12 +999,10 @@ ASP.NET 2.0 및 이후 버전에는 시스템 관련 숨겨진된 필드 렌더�
 
 > 콘텐츠
 
-
 이 향상 된이 기능 수 쉽게 스타일 CSS 사용 하 여 컨트롤의 콘텐츠 컨트롤에 의해 예기치 않은 태그가 렌더링 되기 때문에 있습니다.
 
 > [!NOTE]
 > 이 변경 때문에 더 이상 Visual Studio 2010 디자이너에서 자동 format 함수에 대 한 지원을 사용 하지 않도록 설정 하는 참고를 *테이블* 자동 서식 옵션에 의해 생성 되는 스타일 특성을 호스트할 수 있는 요소입니다.
-
 
 <a id="0.2__Toc253429270"></a><a id="0.2__Toc243304644"></a>
 
@@ -1057,7 +1050,6 @@ ASP.NET 4에는 *CheckBoxList* 및 *RadioButtonList* 컨트롤에 대 한 다음
 
 > [!NOTE]
 > 설정 하는 경우 *RepeatLayout* 하 *OrderedList* 또는 *UnorderedList*서 *RepeatDirection* 속성이 더 이상 사용할 수 있으며 됩니다 태그 또는 코드 내에서 속성을 설정한 경우 런타임 시 예외를 throw 합니다. CSS를 대신 사용 하 여 이러한 컨트롤의 시각적 레이아웃 정의 되어 있으므로 속성 값이 없는 것입니다.
-
 
 <a id="0.2__Toc253429272"></a><a id="0.2__Toc243304646"></a>
 
@@ -1146,7 +1138,6 @@ ASP.NET MVC 2009 년 3 월에에서는 추가 기능 프레임 워크로 ASP.NET
 
 > [!NOTE]
 > 자세한 내용은 참고를 참조 하십시오 합니다 [동적 데이터 설명서](https://msdn.microsoft.com/library/cc488545.aspx) MSDN 라이브러리에서.
-
 
 ASP.NET 4에 대 한 동적 데이터 신속 하 게 데이터 기반 웹 사이트를 구축 하기 위한 개발자에 게 더 많은 기능을 제공 하도록 향상 되었습니다.
 

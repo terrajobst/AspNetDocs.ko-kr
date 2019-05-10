@@ -9,17 +9,16 @@ ms.custom: seoapril2019
 ms.assetid: 9151c605-e911-4f24-95b5-ca310b105abf
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api
 msc.type: chapter
-ms.openlocfilehash: 08870e703c88afccd57232cc259e928a08e7a7a6
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 6d84b458a02b63b24334b137afdb5b710d91c5ee
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59417886"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133165"
 ---
 # <a name="odata-in-aspnet-web-api"></a>ASP.NET Web API에서 OData
 
 > ASP.NET에 대 한 ASP.NET Web API에서 OData 끝점을 만드는 방법 4.x 합니다. OData는 웹에 대 한 데이터 액세스 프로토콜입니다. 쿼리 및 데이터 집합을 조작 하는 일관 된 방식을 제공 합니다. Web API 버전 3 및 OData 프로토콜 버전 4를 지원합니다.
-
 
 - [OData v4](odata-v4/index.md)
 

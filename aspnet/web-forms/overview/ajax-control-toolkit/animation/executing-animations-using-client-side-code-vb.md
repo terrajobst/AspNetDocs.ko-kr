@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: f7073f50-d765-456d-9957-926ce60f35f6
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/executing-animations-using-client-side-code-vb
 msc.type: authoredcontent
-ms.openlocfilehash: ff143aa102973279c53fe4ba052c4766f099c77d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 123ce48a203a69b9a2d50b8bb09c290a84afdac7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59382214"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65127505"
 ---
 # <a name="executing-animations-using-client-side-code-vb"></a>클라이언트 쪽 코드를 사용하여 애니메이션 실행(VB)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation10.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation10VB.pdf)
 
 > ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이지만 컨트롤에 애니메이션을 추가 하는 전체 프레임 워크 아닙니다. 사용자 지정 클라이언트 쪽 JavaScript 코드를 사용 하 여 애니메이션 실행 트리거될 수도 있습니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -61,7 +60,6 @@ ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이�
 페이지가 완전히 로드 되 면 패널에서 클릭을 에뮬레이트하는 전체 클라이언트 쪽 JavaScript 코드를 확인 하는 다음과 같습니다는 `pageLoad()` 함수 이름 이라고 하는 ASP.NET AJAX에서 한 번의 페이지를 사용 하 되 고 모든 포함 된 라이브러리는 JavaScript 로드 합니다.
 
 [!code-html[Main](executing-animations-using-client-side-code-vb/samples/sample8.html)]
-
 
 [![이 애니메이션은 마우스 클릭 하지 않고 즉시 실행](executing-animations-using-client-side-code-vb/_static/image2.png)](executing-animations-using-client-side-code-vb/_static/image1.png)
 

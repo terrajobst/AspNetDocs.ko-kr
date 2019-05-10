@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 86c14aab-c2dd-4f73-b40c-c6d52fa44950
 msc.legacyurl: /web-forms/overview/deployment/configuring-team-foundation-server-for-web-deployment/adding-content-to-source-control
 msc.type: authoredcontent
-ms.openlocfilehash: a609b761543e4994aa4a7f86636bd16e9cd74683
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 16073dd2fb0ea1cc4ddbc94c843181933dc174c1
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396722"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131554"
 ---
 # <a name="adding-content-to-source-control"></a>소스 제어에 콘텐츠 추가
 
@@ -22,7 +22,6 @@ ms.locfileid: "59396722"
 [PDF 다운로드](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > 이 항목에서는 Team Foundation Server (TFS) 2010에서 소스 제어에 콘텐츠를 추가 하는 방법에 설명 합니다. TFS에서 팀 프로젝트에 솔루션 및 프로젝트를 추가 하는 방법을 설명 하 고 소스 제어에 프레임 워크 또는 어셈블리와 같은 외부 종속성을 추가 하는 방법을 설명 합니다.
-
 
 이 항목의 Fabrikam, Inc. 라는 가상 회사의 엔터프라이즈 배포 요구 사항 기반 자습서 시리즈의 일부를 형성 합니다. 샘플 솔루션을 사용 하 여이 자습서 시리즈&#x2014;는 [Contact Manager 솔루션](../web-deployment-in-the-enterprise/the-contact-manager-solution.md)&#x2014;현실적인 수준의 복잡성을 Windows Communication ASP.NET MVC 3 응용 프로그램을 포함 하 여 웹 응용 프로그램을 나타내는 Foundation (WCF) 서비스 및 데이터베이스 프로젝트입니다.
 
@@ -116,7 +115,6 @@ ms.locfileid: "59396722"
 
 > [!NOTE]
 > 패키지 폴더를 포함 하는 것이 Visual Studio 2010 용 NuGet 확장을 사용 하 여 솔루션은 Entity Framework 또는 유사한 리소스를 추가 하면 어떻게 되는지 알아보려면 일반적입니다.
-
 
 **소스 제어에 프로젝트 이외의 콘텐츠를 추가 하려면**
 

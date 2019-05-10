@@ -8,12 +8,12 @@ ms.date: 10/07/2008
 ms.assetid: 5bb4587f-5bcd-44f5-b368-3c1709162b35
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/displaying-a-table-of-database-data-vb
 msc.type: authoredcontent
-ms.openlocfilehash: c33812ab9d758c3155a2f75f59bfb63c55487dc7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 9bb26e4364d1e32a428b34bd03918303206d21c9
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396410"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65122423"
 ---
 # <a name="displaying-a-table-of-database-data-vb"></a>데이터베이스 데이터의 테이블 표시(VB)
 
@@ -23,7 +23,6 @@ by [Microsoft](https://github.com/microsoft)
 
 > 이 자습서에서는 데이터베이스 레코드 집합을 표시 하는 두 가지 방법에 살펴보겠습니다. HTML 표에 데이터베이스 레코드 집합 서식 지정 하는 두 가지 방법을 보여 줍니다. 먼저 뷰 내에서 직접 데이터베이스 레코드 서식을 지정할 수 있습니다 하는 방법을 보여 줍니다. 다음으로, 데이터베이스 레코드의 형식을 지정할 때 부분 활용을 걸릴 수 있습니다 하는 방법에 대해 살펴보겠습니다.
 
-
 이 자습서의 목표는 ASP.NET MVC 응용 프로그램에서 데이터베이스 데이터의 HTML 테이블을 표시 하는 방법을 설명 합니다. 먼저 Visual Studio에 포함 된 스 캐 폴딩 도구를 사용 하 여 레코드 집합을 자동으로 표시 하는 보기를 생성 하는 방법에 알아봅니다. 다음으로, 데이터베이스 레코드의 형식을 지정할 때 템플릿으로 부분을 사용 하는 방법에 알아봅니다.
 
 ## <a name="create-the-model-classes"></a>모델 클래스 만들기
@@ -32,7 +31,6 @@ by [Microsoft](https://github.com/microsoft)
 
 <a id="0.4_table01"></a>
 
-
 | **열 이름** | **데이터 형식** | **Null 허용** |
 | --- | --- | --- |
 | ID | Int | False |
@@ -40,13 +38,11 @@ by [Microsoft](https://github.com/microsoft)
 | 책임자 | NVarchar(50) | False |
 | DateReleased | DateTime | False |
 
-
 ASP.NET MVC 응용 프로그램의 영화 테이블을 나타내기 위해 모델 클래스를 만드는 해야 합니다. 이 자습서에서는 모델 클래스를 만들려면 Microsoft Entity Framework를 사용 했습니다.
 
 > [!NOTE] 
 > 
 > 이 자습서에서는 Microsoft Entity Framework 사용합니다. 그러나 LINQ to SQL, NHibernate, 또는 ADO.NET을 포함 하 여 ASP.NET MVC 응용 프로그램에서 데이터베이스와 상호 작용 하는 다양 한 기술을 사용할 수 있는 알아야 할 것입니다.
-
 
 엔터티 데이터 모델 마법사를 시작 하려면 다음이 단계를 수행 합니다.
 
@@ -60,19 +56,15 @@ ASP.NET MVC 응용 프로그램의 영화 테이블을 나타내기 위해 모�
 2. 에 **데이터 연결 선택** 단계를 사용 하 여 합니다 *MoviesDB.mdf* 데이터 연결 및 이름 *MoviesDBEntities* 연결 설정 합니다. 클릭 합니다 **다음** 단추입니다.
 3. 에 **데이터베이스 개체 선택** 단계, 테이블 노드를 확장 한 다음 동영상 테이블을 선택 합니다. 네임 스페이스를 입력 *모델* 을 클릭 합니다 **마침** 단추입니다.
 
-
 [![LINQ to SQL 클래스 만들기](displaying-a-table-of-database-data-vb/_static/image1.jpg)](displaying-a-table-of-database-data-vb/_static/image1.png)
 
 **그림 01**: LINQ to SQL 클래스 만들기 ([클릭 하 여 큰 이미지 보기](displaying-a-table-of-database-data-vb/_static/image2.png))
 
-
 엔터티 데이터 모델 마법사를 완료 한 후 엔터티 데이터 모델 디자이너가 열립니다. 디자이너에는 영화 엔터티 표시 됩니다 (그림 2 참조).
-
 
 [![엔터티 데이터 모델 디자이너](displaying-a-table-of-database-data-vb/_static/image2.jpg)](displaying-a-table-of-database-data-vb/_static/image3.png)
 
 **그림 02**: 엔터티 데이터 모델 디자이너 ([클릭 하 여 큰 이미지 보기](displaying-a-table-of-database-data-vb/_static/image4.png))
-
 
 계속 하기 전에 하나의 변경 해야 합니다. 엔터티 데이터 마법사 라는 모델 클래스를 생성 *영화* 영화 데이터베이스 테이블을 나타내는입니다. 클래스의 이름을 수정 하려면 먼저 특정 영화를 나타내는 영화 클래스를 사용 해야, 하므로 *영화* of *영화* (단일 아니라 복수).
 
@@ -82,19 +74,15 @@ ASP.NET MVC 응용 프로그램의 영화 테이블을 나타내기 위해 모�
 
 데이터베이스 레코드를 표현 하는 수단을 만들었으므로 이제 해당 동영상의 컬렉션을 반환 하는 컨트롤러를 만들 수 있습니다. Visual Studio 솔루션 탐색기 창에서 Controllers 폴더를 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을 선택 **추가, 컨트롤러** (그림 3 참조).
 
-
 [![메뉴 컨트롤러 추가](displaying-a-table-of-database-data-vb/_static/image3.jpg)](displaying-a-table-of-database-data-vb/_static/image5.png)
 
 **그림 03**: 컨트롤러 추가 메뉴 ([클릭 하 여 큰 이미지 보기](displaying-a-table-of-database-data-vb/_static/image6.png))
 
-
 경우는 **컨트롤러 추가** MovieController 컨트롤러 이름 입력 대화 상자가 나타납니다 (그림 4 참조). 클릭 합니다 **추가** 단추를 새 컨트롤러를 추가 합니다.
-
 
 [![컨트롤러 추가 대화 상자](displaying-a-table-of-database-data-vb/_static/image4.jpg)](displaying-a-table-of-database-data-vb/_static/image7.png)
 
 **그림 04**: 컨트롤러 추가 대화 상자 ([클릭 하 여 큰 이미지 보기](displaying-a-table-of-database-data-vb/_static/image8.png))
-
 
 데이터베이스 레코드 집합이 반환 되도록 영화 컨트롤러에 의해 노출 index () 작업을 수정 해야 합니다. 목록 1에서 컨트롤러 같이 컨트롤러를 수정 합니다.
 
@@ -112,19 +100,15 @@ HTML 표에 데이터베이스 레코드 집합을 표시 하는 가장 쉬운 �
 
 Index () 작업을 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을 선택 **뷰 추가** (그림 5 참조).
 
-
 [![뷰 추가](displaying-a-table-of-database-data-vb/_static/image5.jpg)](displaying-a-table-of-database-data-vb/_static/image9.png)
 
 **그림 05**: 뷰 추가 ([클릭 하 여 큰 이미지 보기](displaying-a-table-of-database-data-vb/_static/image10.png))
 
-
 에 **뷰 추가** 대화 상자에서 레이블이 지정 된 확인란 **강력한 형식의 뷰를 만들**합니다. 영화 클래스를 선택 합니다 **데이터 클래스 보기**합니다. 선택 *목록을* 으로 **콘텐츠를 볼** (그림 6 참조). 이러한 옵션을 선택 하는 동영상 목록을 표시 하는 강력한 형식의 뷰를 생성 합니다.
-
 
 [![뷰 추가 대화 상자](displaying-a-table-of-database-data-vb/_static/image6.jpg)](displaying-a-table-of-database-data-vb/_static/image11.png)
 
 **그림 06**: 뷰 추가 대화 상자 ([클릭 하 여 큰 이미지 보기](displaying-a-table-of-database-data-vb/_static/image12.png))
-
 
 클릭 한 후 합니다 **추가** 단추, 목록 2에서 보기를 자동으로 생성 됩니다. 이 뷰는 동영상 컬렉션을 반복 하 고 각 동영상의 속성을 표시 하는 데 필요한 코드를 포함 합니다.
 
@@ -134,11 +118,9 @@ Index () 작업을 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을
 
 메뉴 옵션을 선택 하 여 응용 프로그램을 실행할 수 있습니다 **디버그, 디버깅 시작** (또는 F5 키를 눌러). Internet Explorer를 시작 응용 프로그램을 실행 합니다. 그런 다음 /Movie URL로 이동 그림 7에서 페이지를 볼 수 있습니다.
 
-
 [![동영상 테이블](displaying-a-table-of-database-data-vb/_static/image7.jpg)](displaying-a-table-of-database-data-vb/_static/image13.png)
 
 **그림 07**: 영화 테이블 ([클릭 하 여 큰 이미지 보기](displaying-a-table-of-database-data-vb/_static/image14.png))
-
 
 그림 7에서 데이터베이스 레코드의 눈금의 모양에 대 한 아무 것도 마음에 들지 않는 경우 다음 수정할 수 있습니다 단순히 인덱스 보기. 예를 들어, 변경할 수 있습니다 합니다 *DateReleased* 헤더 *릴리스 날짜* 인덱스 뷰를 수정 하 여 합니다.
 
@@ -174,9 +156,7 @@ Index () 작업을 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을
 
 수정한 인덱스 뷰는 데이터베이스 레코드의 동일한 HTML 테이블을 렌더링합니다. 그러나 뷰를 크게 간소화 되었습니다.
 
-
 RenderPartial() 메서드는 문자열을 반환 하지 않으므로 대부분의 다른 도우미 메서드는 다릅니다. 사용 하 여 RenderPartial() 메서드를 호출 해야 하므로 &lt;%Html.RenderPartial()&gt; of &lt;% = Html.RenderPartial() %&gt;합니다.
-
 
 ## <a name="summary"></a>요약
 

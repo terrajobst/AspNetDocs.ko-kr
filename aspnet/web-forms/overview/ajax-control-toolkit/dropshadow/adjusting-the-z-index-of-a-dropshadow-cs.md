@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 14133833-e518-4347-87b9-6b6f71f14a77
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/dropshadow/adjusting-the-z-index-of-a-dropshadow-cs
 msc.type: authoredcontent
-ms.openlocfilehash: cc9407ba15474f58437817c9536d6040e0ea2e84
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 21ad1ec314be68f7285c044d5e90c21c201a90ef
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381450"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132146"
 ---
 # <a name="adjusting-the-z-index-of-a-dropshadow-c"></a>DropShadow의 Z-인덱스 조정(C#)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/5/1/6/51652a81-500b-4f6b-88d3-617103e7941e/DropShadow1.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/dropshadow1CS.pdf)
 
 > AJAX Control Toolkit에서 DropShadow 컨트롤 그림자를 사용 하 여 패널을 확장합니다. 그러나이 섀도 ASP.NET Menu 컨트롤 예를 들어 다른 컨트롤과 경우에 따라 충돌 합니다. 때 메뉴 항목 팝업 뒤에 그림자 표시 됩니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -55,11 +54,9 @@ AJAX Control Toolkit에서 DropShadow 컨트롤 그림자를 사용 하 여 패�
 
 그런 다음, `DropShadowExtender` 컨트롤 메뉴 컨트롤을 사용 하 여 더 이상 충돌 하지 않습니다.
 
-
 [![이전: 메뉴 항목이 표시 되지 않습니다.](adjusting-the-z-index-of-a-dropshadow-cs/_static/image2.png)](adjusting-the-z-index-of-a-dropshadow-cs/_static/image1.png)
 
 이전: 메뉴 항목이 표시 되지 않습니다 ([클릭 하 여 큰 이미지 보기](adjusting-the-z-index-of-a-dropshadow-cs/_static/image3.png))
-
 
 [![이후: 메뉴 항목 표시](adjusting-the-z-index-of-a-dropshadow-cs/_static/image5.png)](adjusting-the-z-index-of-a-dropshadow-cs/_static/image4.png)
 

@@ -8,12 +8,12 @@ ms.date: 05/28/2015
 ms.assetid: d37c93fc-25fd-4e94-8671-0d437beef206
 msc.legacyurl: /web-pages/overview/getting-started/introducing-aspnet-web-pages-2/entering-data
 msc.type: authoredcontent
-ms.openlocfilehash: d76f607f1d5e779d43ee15d8f2d697e7b0f147ae
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b9354a7b97a7df9020a681f709e16a92650cfcf0
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59380121"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132964"
 ---
 # <a name="introducing-aspnet-web-pages---entering-database-data-by-using-forms"></a>ASP.NET 웹 페이지 소개-Forms를 사용 하 여 데이터베이스 데이터를 입력 합니다.
 
@@ -36,7 +36,6 @@ ms.locfileid: "59380121"
 > - SQL `Insert Into` 문
 > - `Validation` 도우미입니다.
 > - `Response.Redirect` 메서드
-
 
 ## <a name="what-youll-build"></a>만들 내용
 
@@ -155,7 +154,6 @@ WebMatrix에는 파일의 트리 뷰에서 마우스 오른쪽 단추로 클릭 
 > 값이 null 및 빈 문자열만 때 정확 하 게 이해 해야 하는 고 합니다. 코드에 *AddMovie* 페이지에서 얻게 입력란의 값을 사용 하 여 `Request.Form["title"]` 등. 경우 페이지 처음 (되기 전에 실행 단추를 클릭 하면), 값 `Request.Form["title"]` null입니다. 폼을 제출 하지만 `Request.Form["title"]` 의 값을 가져옵니다는 `title` 입력란입니다. 당연 하 게 되지 않지만 빈 입력란 isnotnull; 방금에 빈 문자열을 포함 합니다. 단추에 대 한 응답에서 코드를 실행할 때, 클릭 `Request.Form["title"]` 에 빈 문자열을 포함 합니다.
 > 
 > 이러한 차이점으로이 인해 중요 한 이유는 무엇입니까? 만들 때 합니다 *영화* 테이블을 명시적으로 말씀 하 신 null 수 필드 없음. 하지만 여기 새 영화에 대 한 입력 폼 있고 필드를 비워 두면 하 고 있습니다. 장르 또는 연도 대 한 값이 있는 하지 않은 새 동영상을 저장 하려고 할 때 불만을 데이터베이스 합리적으로 예상할 수 있습니다. 점 이지만 &mdash; 빈 문자열 이기 때문에 해당 텍스트 상자를 비워 두면 하는 경우에 값을 null 되지 않습니다. 빈 이러한 열을 사용 하 여 데이터베이스에 새 영화를 저장할 수는 결과적으로, &mdash; 있지만 null이 아님! &mdash; 값 따라서 사용자가 사용자 입력의 유효성을 검사 하 여 수행할 수 있는 빈 문자열인 경우를 제출 하지 있는지 확인 해야 합니다.
-
 
 ### <a name="the-validation-helper"></a>유효성 검사 도우미
 

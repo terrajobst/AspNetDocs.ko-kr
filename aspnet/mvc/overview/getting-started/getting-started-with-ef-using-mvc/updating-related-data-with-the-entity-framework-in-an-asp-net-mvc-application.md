@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.assetid: 7ba88418-5d0a-437d-b6dc-7c3816d4ec07
 msc.legacyurl: /mvc/overview/getting-started/getting-started-with-ef-using-mvc/updating-related-data-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: d90a327da40ffd6d7956c5fbe019cf9de30c706d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 4d5f6447fdccefdcdf9497a9e94f23243302a0e1
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59407512"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65120903"
 ---
 # <a name="tutorial-update-related-data-with-ef-in-an-aspnet-mvc-app"></a>자습서: ASP.NET MVC 앱에서 EF를 사용 하 여 관련된 데이터 업데이트
 
@@ -126,7 +126,6 @@ ms.locfileid: "59407512"
 
 에 대 한 참조가 `RetryLimitExceededException` 필요를 `using` 추가-위로 마우스를 가져가서 문과 `RetryLimitExceededException`합니다. 다음 메시지가 나타납니다. ![ 예외 메시지를 다시 시도](updating-related-data-with-the-entity-framework-in-an-asp-net-mvc-application/_static/image13.png)
 
-
 선택 **잠재적 수정 사항 표시**, 다음 **System.Data.Entity.Infrastructure를 사용 하 여**
 
 ![다시 시도 예외 해결](updating-related-data-with-the-entity-framework-in-an-asp-net-mvc-application/_static/image14.png)
@@ -234,7 +233,6 @@ ms.locfileid: "59407512"
 ## <a name="add-office-location-and-courses-to-the-create-page"></a>만들기 페이지에 사무실 위치 및 강좌 추가
 
 *InstructorController.cs*, 삭제 합니다 `HttpGet` 하 고 `HttpPost` `Create` 메서드 그 자리에 다음 코드를 추가:
-
 
 [!code-csharp[Main](updating-related-data-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample25.cs)]
 

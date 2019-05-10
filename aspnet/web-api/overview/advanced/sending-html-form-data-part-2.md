@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: a7f3c1b5-69d9-4261-b082-19ffafa5f16a
 msc.legacyurl: /web-api/overview/advanced/sending-html-form-data-part-2
 msc.type: authoredcontent
-ms.openlocfilehash: 70e150a32f208cf75086f959d484d86e8501c6bd
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f5aaebb96f631dfb6b0da1fbca96cd93a6a7fe2d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59419927"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65126237"
 ---
 # <a name="sending-html-form-data-in-aspnet-web-api-file-upload-and-multipart-mime"></a>ASP.NET Web API에서에서 HTML 양식 데이터 보내기: 파일 업로드 및 다중 파트 MIME
 
@@ -26,7 +26,6 @@ ms.locfileid: "59419927"
 
 > [!NOTE]
 > [완료 된 프로젝트 다운로드](https://code.msdn.microsoft.com/ASPNET-Web-API-File-Upload-a8c0fb0d)합니다.
-
 
 파일을 업로드 하는 것에 대 한 HTML 폼의 예는 다음과 같습니다.
 
@@ -44,7 +43,6 @@ ms.locfileid: "59419927"
 
 > [!NOTE]
 > 임의 구성 요소를 포함 하는 부분 경계 (&quot;41184676334&quot;) 경계 문자열 메시지 파트 내에서 실수로 표시 되지 않습니다 있도록 합니다.
-
 
 각 메시지 파트 파트 콘텐츠에 뒤에 하나 이상의 헤더를 포함 합니다.
 

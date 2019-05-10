@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: 87daa99f-3810-407e-b969-dd28a192959d
 msc.legacyurl: /web-api/overview/older-versions/build-restful-apis-with-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 3ba7f2d186e6f0837a32f69f964cec19fe625953
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 35b115d6b4f84084e78e429bbb4842670e57bba4
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59391483"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132259"
 ---
 # <a name="build-restful-apis-with-aspnet-web-api"></a>ASP.NET Web API 사용 하 여 RESTful Api 빌드
 
@@ -33,7 +33,6 @@ ms.locfileid: "59391483"
 > 
 > 
 > 웹 캠프 교육 키트에서에서 사용할 수 있는 모든 샘플 코드 및 코드 조각 포함 됩니다 [ https://go.microsoft.com/fwlink/?LinkID=248297&clcid=0x409 ](https://go.microsoft.com/fwlink/?LinkID=248297&clcid=0x409)합니다.
-
 
 <a id="Objectives"></a>
 ### <a name="objectives"></a>목표
@@ -70,7 +69,6 @@ ms.locfileid: "59391483"
 
 > [!NOTE]
 > 각 실습 동반 되는 **최종** 연습을 완료 한 후 가져와야 결과 솔루션이 포함 된 폴더입니다. 이 연습을 진행 하는 추가 도움이 필요한 경우이 솔루션 가이드로 사용할 수 있습니다.
-
 
 이 랩을 완료 하는 시간을 예상 합니다. **60 분**합니다.
 
@@ -420,7 +418,6 @@ ms.locfileid: "59391483"
 
 > [!NOTE]
 > 또한 Azure는 다음이 응용이 프로그램을 배포할 수 [부록 c: 웹 배포를 사용 하 여 ASP.NET MVC 4 응용 프로그램 게시](#AppendixC)합니다.
-
 
 ---
 

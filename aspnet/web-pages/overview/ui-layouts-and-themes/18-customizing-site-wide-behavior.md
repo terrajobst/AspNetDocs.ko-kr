@@ -8,12 +8,12 @@ ms.date: 02/17/2014
 ms.assetid: e158bed7-226f-4275-b02e-7553bd58c669
 msc.legacyurl: /web-pages/overview/ui-layouts-and-themes/18-customizing-site-wide-behavior
 msc.type: authoredcontent
-ms.openlocfilehash: 2763cae0f8124cfcaccfd737622cb17b6dd947e1
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f05e05f725d9209bce283ce18659ae5efe4de2ee
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59413297"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131864"
 ---
 # <a name="customizing-site-wide-behavior-for-aspnet-web-pages-razor-sites"></a>ASP.NET 웹 페이지 (Razor) 사이트에 대 한 사이트 전체 동작을 사용자 지정
 
@@ -39,7 +39,6 @@ ms.locfileid: "59413297"
 >   
 > 
 > 이 자습서는 ASP.NET 웹 페이지 3으로도 작동 하 고 Visual Studio 2013, Visual Studio Express 2013 for Web 온다는 점만 다릅니다 ASP.NET Web Helpers Library를 사용할 수 없습니다.
-
 
 <a id="Adding_Website_Startup_Code"></a>
 ## <a name="adding-website-startup-code-for-aspnet-web-pages"></a>ASP.NET 웹 페이지에 대 한 웹 사이트 시작 코드를 추가합니다.

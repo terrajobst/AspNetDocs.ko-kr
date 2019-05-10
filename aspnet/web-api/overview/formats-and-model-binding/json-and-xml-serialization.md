@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: 1cd7525d-de5e-4ab6-94f0-51480d3255d1
 msc.legacyurl: /web-api/overview/formats-and-model-binding/json-and-xml-serialization
 msc.type: authoredcontent
-ms.openlocfilehash: a9e7ed63a55c146976e0221214e722f3a2292fee
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 00fa07f00eabf7e6c883c5e9ceaf9a38a8f49605
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59408279"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65126164"
 ---
 # <a name="json-and-xml-serialization-in-aspnet-web-api"></a>JSON 및 XML 직렬화에 ASP.NET Web API
 
@@ -221,7 +221,6 @@ JSON에서 개체 참조를 유지 하려면 다음 코드를 추가 합니다 *
 
 > [!NOTE]
 > 개체 참조는 json에서 표준 아닙니다. 이 기능을 사용 하기 전에 클라이언트에 결과 구문 분석할 수 있는지 여부를 하는 것이 좋습니다. 그래프에서 주기를 제거 하려면 단순히 좋을 것입니다. 예를 들어,이 예제에서 직원 부서에 다시 링크를 실제로 필요 하지 않습니다.
-
 
 XML에서 개체 참조를 유지 하는 두 가지 옵션이 있습니다. 간단한 옵션은 추가 `[DataContract(IsReference=true)]` 모델 클래스에 있습니다. 합니다 *IsReference* 개체 참조 매개 변수를 사용 합니다. 유의 해야 **DataContract** 추가할 해야 하므로 옵트인, 직렬화를 사용 하면 **DataMember** 속성 특성:
 

@@ -8,12 +8,12 @@ ms.date: 11/17/2011
 ms.assetid: ddf6252f-9413-4c0c-a360-2cef8d231717
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-deploying-a-code-only-update-8-of-12
 msc.type: authoredcontent
-ms.openlocfilehash: f06fd5d28613ba8f881df2d1422fead2fff8c35f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: df6fd11485836345707ac74ec9e97c769e60ac82
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59399894"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132344"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-deploying-a-code-only-update---8-of-12"></a>SQL Server Compact Visual Studio 또는 Visual Web Developer를 사용 하 여를 사용 하 여 ASP.NET 웹 응용 프로그램을 배포 합니다. 코드 전용 업데이트-12 8 배포
 
@@ -24,7 +24,6 @@ ms.locfileid: "59399894"
 > 이 시리즈의 자습서에서는 배포 하는 방법을 보여 줍니다 (게시) ASP.NET 웹용 Visual Studio 2012 RC 또는 Visual Studio Express 2012 RC를 사용 하 여 SQL Server Compact 데이터베이스를 포함 하는 웹 응용 프로그램 프로젝트입니다. Visual Studio 2010 웹 게시 업데이트를 설치 하는 경우에 사용할 수 있습니다. 계열에 대 한 소개를 참조 하세요 [시리즈의 첫 번째 자습서](deployment-to-a-hosting-provider-introduction-1-of-12.md)합니다.
 > 
 > Visual Studio 2012 RC 출시 이후 도입 된 배포 기능을 보여 줍니다, 이외의 SQL Server Compact, SQL Server 버전을 배포 하는 방법을 보여 줍니다 및 Azure App Service Web Apps를 배포 하는 방법을 보여 줍니다 하는 자습서를 참조 하세요 [ASP.NET 웹 배포 Visual Studio를 사용 하 여](../../deployment/visual-studio-web-deployment/introduction.md)입니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -86,7 +85,6 @@ Visual Studio 업데이트 된 응용 프로그램을 배포 하 고 브라우�
 > 
 > [!IMPORTANT]
 > 필요가 있는지 **대상에서 추가 파일 제거** 게시 프로필에서 선택 합니다. 해당 옵션을 선택 하면 배포 프로세스를 앱에 있는 데이터베이스를 삭제 합니다\_배포 된 사이트에 데이터를 앱이 삭제 됩니다\_자체 데이터 폴더.
-
 
 ## <a name="preventing-user-access-to-the-production-site-during-update"></a>업데이트 하는 동안 프로덕션 사이트에 대 한 사용자 액세스를 방지
 

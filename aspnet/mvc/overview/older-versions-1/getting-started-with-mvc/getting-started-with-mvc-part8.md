@@ -8,19 +8,18 @@ ms.date: 08/14/2010
 ms.assetid: 7ae696b9-348f-4993-8ebb-a838acbe0c28
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part8
 msc.type: authoredcontent
-ms.openlocfilehash: 029234cf9a28a80c487504e4e0980c214e45f53a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1cf092c3db3959d6f47006f1be2ba82833c5dc06
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381967"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65122855"
 ---
 # <a name="adding-a-column-to-the-model"></a>모델에 열 추가
 
 [Scott Hanselman](https://github.com/shanselman)
 
 > ASP.NET MVC의 기본 사항을 소개 하는 초보자를 위한 자습서입니다. 읽기 및 쓰기 데이터베이스는 간단한 웹 응용 프로그램을 만들어야 합니다. 방문 합니다 [ASP.NET MVC 학습 센터](../../../index.md) 자습서 및 샘플 다른 ASP.NET MVC를 찾아볼 수 있습니다.
-
 
 이 섹션에서는 수는 데이터베이스의 스키마 변경 및 응용 프로그램 내에서 변경 내용을 처리 하는 방법을 안내 하려고 합니다.
 
