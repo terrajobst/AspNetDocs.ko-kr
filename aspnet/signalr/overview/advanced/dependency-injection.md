@@ -8,12 +8,12 @@ ms.date: 06/10/2014
 ms.assetid: a14121ae-02cf-4024-8af0-9dd0dc810690
 msc.legacyurl: /signalr/overview/advanced/dependency-injection
 msc.type: authoredcontent
-ms.openlocfilehash: 1b5d36529b52dfcbebf34cbfa230b3b3b4e83b81
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 52978b10b6c131ac8eff4535216cc60b43fdf3de
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59405380"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65120113"
 ---
 # <a name="dependency-injection-in-signalr"></a>SignalR에서 종속성 주입
 
@@ -37,7 +37,6 @@ ms.locfileid: "59405380"
 > ## <a name="questions-and-comments"></a>질문이 나 의견이 있으면
 >
 > 이 자습서를 연결 하는 방법 및 새로운 개선할 수 있습니다 페이지의 맨 아래에 의견에서에 의견을 남겨 주세요. 에 자습서로 직접 관련 되지 않은 질문이 있을 경우 게시할 수 하는 [ASP.NET SignalR 포럼](https://forums.asp.net/1254.aspx/1?ASP+NET+SignalR) 또는 [StackOverflow.com](http://stackoverflow.com/)합니다.
-
 
 종속성 주입은 쉽게 (모의 개체를 사용 하 여) 테스트에 대 한 중 하나는 개체의 종속성, 대체 또는 런타임 동작을 변경 하려면 개체 간에 하드 코드 된 종속성을 제거 하는 방법입니다. 이 자습서에는 signalr에서 종속성 주입을 수행 하는 방법을 보여 줍니다. 또한 SignalR을 사용 하 여 IoC 컨테이너를 사용 하는 방법을 보여 줍니다. IoC 컨테이너는 종속성 주입을 위한 범용 프레임 워크입니다.
 
@@ -93,7 +92,6 @@ ms.locfileid: "59405380"
 
 > [!NOTE]
 > "IoC"는 "제어 반전"에 대 한 일반적인 패턴을 설정 하는 프레임 워크 응용 프로그램 코드를 호출 하는 경우이 합니다. IoC 컨테이너 생성 개체를 "반전" 컨트롤의 일반적인 흐름입니다.
-
 
 ## <a name="using-ioc-containers-in-signalr"></a>SignalR의 IoC 컨테이너 사용
 

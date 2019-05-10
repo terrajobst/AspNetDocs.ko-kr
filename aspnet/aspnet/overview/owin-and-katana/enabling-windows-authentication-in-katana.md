@@ -8,19 +8,18 @@ ms.date: 07/30/2013
 ms.assetid: 82324ef0-3b75-4f63-a217-76ef4036ec93
 msc.legacyurl: /aspnet/overview/owin-and-katana/enabling-windows-authentication-in-katana
 msc.type: authoredcontent
-ms.openlocfilehash: 6d90538ace07402b655b8cd1d9c6e4d5c6dff424
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3d81e7e1bf13ab63417378fba0c5ab80213f404b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59411204"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118332"
 ---
 # <a name="enabling-windows-authentication-in-katana"></a>Katana에서 Windows 인증 사용
 
 [Mike Wasson](https://github.com/MikeWasson)
 
 > 이 문서에서는 Katana에서 Windows 인증을 사용 하는 방법을 보여 줍니다. 두 시나리오에 설명 합니다. Katana 호스트에 IIS를 사용 하 고 HttpListener를 사용 하 여 자체 사용자 지정 프로세스에서 Katana를 호스트 하는 키를 누릅니다. Barry Dorrans, David Matson Chris Ross를이 문서를 검토에 참여해 주셔서 감사 합니다.
-
 
 Katana는 Microsoft에서 구현한 [OWIN](http://owin.org/), Open Web Interface for.NET. OWIN 및 Katana 소개를 읽어보세요 [여기](an-overview-of-project-katana.md)합니다. OWIN 아키텍처에는 여러 계층에 있습니다.
 

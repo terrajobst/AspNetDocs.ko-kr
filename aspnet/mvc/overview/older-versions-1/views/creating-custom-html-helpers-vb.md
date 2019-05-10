@@ -8,12 +8,12 @@ ms.date: 10/07/2008
 ms.assetid: f96f4800-19ef-44c0-b457-55e777eb5de8
 msc.legacyurl: /mvc/overview/older-versions-1/views/creating-custom-html-helpers-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 1f36bffeda49c1777e964dc5330cbb473b01c1a9
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 667867647fea75ddfa5881b73ea3c5b28c8135a5
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59421565"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65117388"
 ---
 # <a name="creating-custom-html-helpers-vb"></a>사용자 지정 HTML 도우미 만들기(VB)
 
@@ -22,7 +22,6 @@ by [Microsoft](https://github.com/microsoft)
 [PDF 다운로드](http://download.microsoft.com/download/1/1/f/11f721aa-d749-4ed7-bb89-a681b68894e6/ASPNET_MVC_Tutorial_9_VB.pdf)
 
 > MVC 뷰 내에서 사용할 수 있는 사용자 지정 HTML 도우미를 만드는 방법을 보여 주기 위해이 자습서의 목표가입니다. HTML 도우미를 활용 하 여 표준 HTML 페이지 만들기를 수행 해야 하는 HTML 태그의 지루한 작업 입력의 크기를 줄일 수 있습니다.
-
 
 MVC 뷰 내에서 사용할 수 있는 사용자 지정 HTML 도우미를 만드는 방법을 보여 주기 위해이 자습서의 목표가입니다. HTML 도우미를 활용 하 여 표준 HTML 페이지 만들기를 수행 해야 하는 HTML 태그의 지루한 작업 입력의 크기를 줄일 수 있습니다.
 
@@ -48,11 +47,9 @@ ASP.NET MVC 프레임 워크에 (이 전체 목록은 아님)는 표준 HTML 도
 
 예를 들어 목록 1에서 폼을 고려 합니다. 이 폼은 두 표준 HTML 도우미 (그림 1 참조)를 사용 하 여 렌더링 됩니다. 이 폼에서 사용 하 여 `Html.BeginForm()` 및 `Html.TextBox()` 도우미 메서드.
 
-
 [![HTML 도우미를 사용 하 여 페이지 렌더링](creating-custom-html-helpers-vb/_static/image2.png)](creating-custom-html-helpers-vb/_static/image1.png)
 
 **그림 01**: HTML 도우미를 사용 하 여 페이지 렌더링 ([클릭 하 여 큰 이미지 보기](creating-custom-html-helpers-vb/_static/image3.png))
-
 
 **목록 1 – `Views\Home\Index.aspx`**
 
@@ -103,11 +100,9 @@ ASP.NET MVC 프레임 워크는 작은 도우미 집합이 포함 되어 있습�
 
 확장 메서드는 모든 클래스의 다른 메서드 같은 Visual Studio Intellisense 확장 메서드를 만들고 응용 프로그램을 성공적으로 빌드 후 나타나는 (그림 2 참조). 유일한 차이점은 해당 확장명 메서드 (아래쪽 화살표 아이콘) 옆에 있는 특수 기호를 사용 하 여 표시 합니다.
 
-
 [![Html.Label() 확장 메서드를 사용 하 여](creating-custom-html-helpers-vb/_static/image5.png)](creating-custom-html-helpers-vb/_static/image4.png)
 
 **그림 02**: Html.Label() 확장 메서드를 사용 하 여 ([클릭 하 여 큰 이미지 보기](creating-custom-html-helpers-vb/_static/image6.png))
-
 
 목록 4에서 수정 된 인덱스 뷰 Html.Label() 확장 메서드를 사용 하 여 모든 렌더링 하는 &lt;레이블&gt; 태그입니다.
 

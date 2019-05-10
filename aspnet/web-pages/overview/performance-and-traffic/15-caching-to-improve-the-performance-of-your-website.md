@@ -8,12 +8,12 @@ ms.date: 02/14/2014
 ms.assetid: 961e525b-7700-469e-8a68-d7010b6fb68c
 msc.legacyurl: /web-pages/overview/performance-and-traffic/15-caching-to-improve-the-performance-of-your-website
 msc.type: authoredcontent
-ms.openlocfilehash: 10b853966ba80b673e1a6786987893f919369e7a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 01796d3ca699a6af5d9162b22a926551435c2040
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59412907"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134584"
 ---
 # <a name="caching-data-in-an-aspnet-web-pages-razor-site-for-better-performance"></a>성능 향상을 위해 ASP.NET 웹 페이지 (Razor) 사이트에서 데이터 캐싱
 
@@ -38,7 +38,6 @@ ms.locfileid: "59412907"
 > 
 > 이 자습서는 ASP.NET 웹 페이지 2 에서도 작동합니다.
 
-
 사이트에서 페이지를 요청이 있을 때마다 웹 서버 요청을 처리 하기 위해 일부 작업을 수행 해야 합니다. 페이지의 일부 서버 (비교적) 시간이 오래 걸릴, 데이터베이스에서 데이터를 검색 하는 작업을 수행 해야 할 수도 있습니다. 이러한 작업은 사이트 많은 트래픽이 발생 하는 경우 절대 용어로 장기 사용 하지, 경우에 복잡 하거나 느린 작업을 수행 하려면 웹 서버는 개별 요청에 대 한 전체 계열을 많은 작업을 추가할 수 있습니다. 이 사이트의 성능을 궁극적으로 영향을 수 있습니다.
 
 다음과 같은 상황에서 웹 사이트의 성능을 향상 시키는 한 가지 방법은 데이터를 캐시 하는 경우 사이트 가져옵니다 반복된은 같은 정보를 요청 하 고 정보를 각 사용자에 대 한 수정할 필요가 없습니다 시간이 없는 다시 인출 하거나, 다시 계산 하는 대신 중요 한 데이터를 한 번 인출할를 다음 결과 저장 합니다. 다음에는 요청이 들어오면 내용은 수만 가져올 캐시에서.
@@ -47,7 +46,6 @@ ms.locfileid: "59412907"
 
 > [!NOTE]
 > 캐시의 항목이 제거 될 수 있습니다 이유로 이외의 만료 되었습니다. 예를 들어, 웹 서버를 일시적으로 발생할 낮은 메모리가 이며 메모리를 회수할 수는 한 가지 방법은 캐시에서 항목을 throw 하 여 합니다. 알 수 있듯이, 캐시에 정보를 배치한 경우에, 이것은 필요할 때 되도록 확인 해야 합니다.
-
 
 웹 사이트에 현재 온도 및 일기 예보를 표시 하는 페이지가 한다고 가정 합니다. 이러한 종류의 정보를 가져오려면 외부 서비스에 요청을 보낼 수 있습니다. 있으므로이 정보 (예를 들어 두 시간 기간) 내 대부분 변경 되지 않습니다 및 외부 호출 시간 및 대역폭이 필요 하므로 캐싱에 적합 한지 합니다.
 
@@ -77,7 +75,6 @@ ASP.NET에 포함 되어는 `WebCache` 쉽게 사이트에 캐싱을 추가 하 
 
 <a id="Additional_Resources"></a>
 ## <a name="additional-resources"></a>추가 리소스
-
 
 - [차트에 데이터 표시](https://go.microsoft.com/fwlink/?LinkId=202895)
 - [WebCache API 참조](https://msdn.microsoft.com/library/system.web.helpers.webcache(v=vs.99).aspx) (MSDN)

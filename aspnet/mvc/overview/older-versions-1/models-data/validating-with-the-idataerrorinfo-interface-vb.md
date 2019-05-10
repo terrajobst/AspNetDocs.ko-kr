@@ -8,19 +8,18 @@ ms.date: 03/02/2009
 ms.assetid: 3a8a9d9f-82dd-4959-b7c6-960e9ce95df1
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/validating-with-the-idataerrorinfo-interface-vb
 msc.type: authoredcontent
-ms.openlocfilehash: c64e1ea1562c3a0cfe4fb33f1c3033bb9c31bd2c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8ff3adc5db8114dcca2c66d937e1706f0bac0d30
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402741"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65117543"
 ---
 # <a name="validating-with-the-idataerrorinfo-interface-vb"></a>IDataErrorInfo 인터페이스를 사용한 유효성 검사(VB)
 
 [Stephen walther가](https://github.com/StephenWalther)
 
 > Stephen walther가 모델 클래스에서 IDataErrorInfo 인터페이스를 구현 하 여 사용자 지정 유효성 검사 오류 메시지를 표시 하는 방법을 보여 줍니다.
-
 
 이 자습서의 목표는 ASP.NET MVC 응용 프로그램에서 유효성 검사를 수행 하는 한 가지 방법은 설명 합니다. 사용자가 필요한 양식 필드에 대 한 값을 제공 하지 않고 HTML 폼을 제출 하지 못하도록 하는 방법에 알아봅니다. 이 자습서에서는 IErrorDataInfo 인터페이스를 사용 하 여 유효성 검사를 수행 하는 방법을 알아봅니다.
 
@@ -30,7 +29,6 @@ ms.locfileid: "59402741"
 
 <a id="0.6_table01"></a>
 
-
 | **열 이름** | **데이터 형식** | **Null 허용** |
 | --- | --- | --- |
 | ID | Int | False |
@@ -38,19 +36,15 @@ ms.locfileid: "59402741"
 | 책임자 | Nvarchar(100) | False |
 | DateReleased | DateTime | False |
 
-
 이 자습서에서는을 사용 하 여 Microsoft Entity Framework 내 데이터베이스 모델 클래스를 생성 합니다. Entity Framework에서 생성 되는 영화 클래스는 그림 1에 표시 됩니다.
-
 
 [![영화 엔터티](validating-with-the-idataerrorinfo-interface-vb/_static/image1.jpg)](validating-with-the-idataerrorinfo-interface-vb/_static/image1.png)
 
 **그림 01**: 영화 엔터티 ([클릭 하 여 큰 이미지 보기](validating-with-the-idataerrorinfo-interface-vb/_static/image2.png))
 
-
 > [!NOTE] 
 > 
 > Entity Framework를 사용 하 여 데이터베이스 모델 클래스를 생성 하는 방법에 대 한 자세한 내용은 참조 내 자습서 Entity Framework를 사용 하 여 모델 클래스 만들기.
-
 
 ## <a name="the-controller-class"></a>컨트롤러 클래스
 
@@ -72,11 +66,9 @@ IsValid 속성 유효성 검사 오류가 있을 때 false를 반환 합니다. 
 
 영화 클래스는 Entity Framework에 의해 생성 됩니다. 솔루션 탐색기 창에서 MoviesDBModel.edmx 파일을 확장 하 고 MoviesDBModel.Designer.vb 파일을 코드 편집기에서 엽니다 영화 클래스에 대 한 코드를 볼 수 있습니다 (그림 2 참조).
 
-
 [![영화 엔터티에 대 한 코드](validating-with-the-idataerrorinfo-interface-vb/_static/image2.jpg)](validating-with-the-idataerrorinfo-interface-vb/_static/image3.png)
 
 **그림 02**: 영화 엔터티에 대 한 코드 ([클릭 하 여 큰 이미지 보기](validating-with-the-idataerrorinfo-interface-vb/_static/image4.png))
-
 
 영화 클래스가 partial 클래스가입니다. 즉,을 영화 클래스의 기능을 확장 하는 동일한 이름 가진 다른 partial 클래스를 추가할 수 있습니다. 새 partial 클래스에 유효성 검사 논리를 추가 합니다.
 
@@ -110,7 +102,6 @@ Entity Framework 영화 클래스의 경우 다음 메서드를 만듭니다.
 > [!NOTE] 
 > 
 > 부분 메서드는 구현에 필요 없는 클래스에 정의 된 메서드입니다. 부분 메서드를 구현 하지 않으면 그런 다음 컴파일러는 메서드 시그니처를 제거 하 고 없으므로 메서드에 대 한 모든 호출 되는 부분 메서드와 관련 된 런타임 비용이 없습니다. Visual Studio 코드 편집기에서 키워드를 입력 하 여 부분 메서드를 추가할 수 있습니다 *부분* 뒤에 공간을 구현 하는 부분 목록을 봅니다.
-
 
 **Listing 3 - Models\Movie.vb**
 
@@ -146,11 +137,9 @@ DefaultModelBinder 클래스는 IDataErrorInfo 인터페이스를 구현 하는�
 
 홈 컨트롤러 수정 된 영화 클래스를 사용 하는 어떤 방식으로든에서 수정할 필요가 없습니다. 그림 3에 표시 되는 페이지 제목 또는 Director 양식 필드에 없는 값을 입력 하는 경우를 보여 줍니다.
 
-
 [![작업 메서드를 자동으로 만들기](validating-with-the-idataerrorinfo-interface-vb/_static/image3.jpg)](validating-with-the-idataerrorinfo-interface-vb/_static/image5.png)
 
 **그림 03**: 값이 누락 된 폼 ([클릭 하 여 큰 이미지 보기](validating-with-the-idataerrorinfo-interface-vb/_static/image6.png))
-
 
 DateReleased 값은 자동으로 유효성 검사는 알 수 있습니다. 있으므로 DateReleased 속성이 NULL 값을 허용 하지 않습니다는 DefaultModelBinder 생성이 속성에 대 한 유효성 검사 오류를 자동으로 값에 없는 경우. 사용자 지정 모델 바인더를 생성 해야 하는 다음 DateReleased 속성에 대 한 오류 메시지를 수정 하려면.
 

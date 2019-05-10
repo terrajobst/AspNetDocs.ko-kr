@@ -8,12 +8,12 @@ ms.date: 03/03/2014
 ms.assetid: 5344b74e-b888-479a-92bc-601a33bd61a2
 msc.legacyurl: /web-forms/overview/getting-started/code-editing-in-web-forms-pages
 msc.type: authoredcontent
-ms.openlocfilehash: 328dc6fb61ac562131b11b36b40f574ca5a53866
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3473ad476fbbebc58e12586334b4600f57cf17ed
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59397372"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134247"
 ---
 # <a name="code-editing-aspnet-web-forms-in-visual-studio-2013"></a>Visual Studio 2013의 코드 편집 ASP.NET Web Forms
 
@@ -31,7 +31,6 @@ ms.locfileid: "59397372"
 - 코드 조각을 삽입 합니다.
 
 ## <a name="prerequisites"></a>전제 조건
-
 
 이 연습을 완료하려면 다음 사항이 필요합니다.
 
@@ -65,14 +64,11 @@ ms.locfileid: "59397372"
 
     Visual Studio Web Forms 템플릿을 기반으로 하는 미리 작성 된 기능을 포함 하는 새 프로젝트를 만듭니다.
 
-
 ## <a name="creating-a-new-aspnet-web-forms-page"></a>새 ASP.NET Web Forms 페이지 만들기
-
 
 사용 하 여 새 Web Forms 응용 프로그램을 만들 때 합니다 **ASP.NET 웹 응용 프로그램** 프로젝트 템플릿을 Visual Studio는 ASP.NET 페이지 (Web Forms 페이지) 라는 추가 *Default.aspx*다른 여러 파일 뿐만 아니라 및 폴더입니다. 사용할 수는 *Default.aspx* 웹 응용 프로그램에 대 한 홈 페이지와 페이지입니다. 그러나이 연습에서는 만들고 새 페이지를 사용 하 여 작동 합니다.
 
 ### <a name="to-add-a-page-to-the-web-application"></a>웹 응용 프로그램 페이지를 추가 하려면
-
 
 1. **솔루션 탐색기**, 웹 응용 프로그램 이름을 마우스 오른쪽 단추로 클릭 (응용 프로그램 이름은이 자습서에서는 **BasicWebSite**)를 클릭 하 고 **추가**  - &gt; **새 항목**합니다.   
 **새 항목 추가** 대화 상자가 표시됩니다.
@@ -82,14 +78,11 @@ ms.locfileid: "59397372"
  Visual Studio 새 페이지를 만들고 엽니다.
 4. 다음으로이 새 페이지의 기본 시작 페이지로 설정 합니다. **솔루션 탐색기**, 라는 새 페이지를 마우스 오른쪽 단추로 클릭 *FirstWebPage.aspx* 선택한 **시작 페이지로 설정**합니다. 다음으로 진행 상황을 테스트 하려면이 응용 프로그램을 실행할 때 자동으로 브라우저에서이 새 페이지가 표시 됩니다.
 
-
 ## <a name="correcting-inline-coding-errors"></a>인라인 코딩 오류 수정
-
 
 Visual Studio에서 코드 편집기를 사용 하면 코드를 작성 하 고 오류를 변경한 경우 코드 편집기를 사용 하면 오류를 수정 하려면 오류를 방지 하도록 도와줍니다. 이 연습 부분에서는 편집기에서 오류 수정 기능을 설명 하는 코드 줄을 작성 합니다.
 
 ### <a name="to-correct-simple-coding-errors-in-visual-studio"></a>Visual Studio에서 간단한 코딩 오류를 해결 하려면
-
 
 1. **디자인** 보기에서 대 한 처리기를 만들고 빈 페이지를 두 번 클릭 합니다 **부하** 페이지에 대 한 이벤트입니다.   
    이벤트 처리기는 장소로 사용 하는 일부 코드를 작성 합니다.
@@ -109,7 +102,6 @@ Visual Studio에서 코드 편집기를 사용 하면 코드를 작성 하 고 �
     > [!NOTE] 
     > 
     > Visual Studio에서 설정을 선택 하 여 서식을 현재 코드를 보면 **도구가**  - &gt; **옵션**  - &gt; **글꼴 및 색**합니다.
-
 
 ## <a name="refactoring-and-renaming"></a>리팩터링 및 이름 바꾸기
 
@@ -156,7 +148,6 @@ Visual Studio에서 코드 편집기를 사용 하면 코드를 작성 하 고 �
 
 ### <a name="to-use-refactoring-to-rename-a-variable"></a>변수 이름을 바꾸려면 리팩터링을 사용 하려면
 
-
 1. 에 **클릭** 이벤트 처리기를 다음 줄을 찾습니다.
 
     [!code-csharp[Main](code-editing-in-web-forms-pages/samples/sample6.cs)]
@@ -173,7 +164,6 @@ Visual Studio에서 코드 편집기를 사용 하면 코드를 작성 하 고 �
     [!code-csharp[Main](code-editing-in-web-forms-pages/samples/sample7.cs)]
 
     변수의 `alist` 이 줄에서 이름이 바뀌지 변수와 동일한 값을 나타내지 않는 경우 있으므로 `alist` 이름을 바꾼 합니다. 변수의 `alist` 에 `DisplayArray` 해당 메서드의 로컬 변수가 선언 합니다. 이 리팩터링을 사용 하 여 변수 이름을 바꾸려면; 편집기에서 찾기 및 바꾸기 작업을 수행 하는 단순히 다른 임을 보여 줍니다. 가 사용 된 변수의 구문에 대 한 지식이 리팩터링 이름 바꾸기 변수입니다.
-
 
 ## <a name="inserting-snippets"></a>조각 삽입
 

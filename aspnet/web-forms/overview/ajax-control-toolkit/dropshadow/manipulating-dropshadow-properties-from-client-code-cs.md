@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: c83ca3e6-c0bf-4158-a166-40c1ab0f33da
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/dropshadow/manipulating-dropshadow-properties-from-client-code-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 3bf4b8fe85780135c821fbb7fcceefd326dce656
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2c71b859fb50eaf6c66a4103fb878104ce10eba3
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381344"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134316"
 ---
 # <a name="manipulating-dropshadow-properties-from-client-code-c"></a>클라이언트 코드에서 DropShadow 속성 조작(C#)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/5/1/6/51652a81-500b-4f6b-88d3-617103e7941e/DropShadow2.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/dropshadow2CS.pdf)
 
 > AJAX Control Toolkit에서 DropShadow 컨트롤 그림자를 사용 하 여 패널을 확장합니다. 이 extender의 속성 클라이언트 JavaScript 코드를 사용 하 여 변경할 수 있습니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -53,7 +52,6 @@ AJAX Control Toolkit에서 DropShadow 컨트롤 그림자를 사용 하 여 패�
 JavaScript 함수 `changeOpacity()` 먼저 찾아야 다음는 `DropShadowExtender` 페이지의 컨트롤입니다. ASP.NET AJAX 정의 `$find()` 정확 하 게 해당 작업에 대 한 메서드. 그런 다음, `get_Opacity()` 현재 불투명도 검색 하는 메서드를 `set_Opacity()` 메서드 설정 합니다. 다음 JavaScript 코드의 현재 불투명도 값을 배치 합니다 `<label>` 요소:
 
 [!code-html[Main](manipulating-dropshadow-properties-from-client-code-cs/samples/sample6.html)]
-
 
 [![클라이언트 쪽에서 변경 되는 불투명도](manipulating-dropshadow-properties-from-client-code-cs/_static/image2.png)](manipulating-dropshadow-properties-from-client-code-cs/_static/image1.png)
 

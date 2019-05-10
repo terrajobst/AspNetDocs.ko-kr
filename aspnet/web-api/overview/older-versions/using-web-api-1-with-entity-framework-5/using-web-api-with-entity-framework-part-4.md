@@ -8,12 +8,12 @@ ms.date: 07/04/2012
 ms.assetid: 792f4513-a508-4d14-a0dd-1a2fe282c7bb
 msc.legacyurl: /web-api/overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-4
 msc.type: authoredcontent
-ms.openlocfilehash: 54b3afac9b19962b02336a35909b208c4e3f7504
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 9e045b17434d46fa1b6e7942db95ecad67c34a46
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59400557"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134753"
 ---
 # <a name="part-4-adding-an-admin-view"></a>4부: 관리 보기 추가
 
@@ -52,7 +52,6 @@ ms.locfileid: "59400557"
 > [!NOTE]
 > 샘플 프로젝트와 몇 가지 디자인과 같은 다른 변경 "사용자 로고는 여기" 문자열을 대체에 대 한 합니다. 이러한 응용 프로그램의 기능에 영향을 주지 않습니다. 프로젝트를 다운로드 하 고 파일을 비교할 수 있습니다.
 
-
 응용 프로그램을 실행 하 고 홈페이지의 위쪽에 표시 되는 "Admin" 링크를 클릭 합니다. 관리 페이지는 다음과 같이 표시 됩니다.
 
 ![](using-web-api-with-entity-framework-part-4/_static/image3.png)
@@ -79,7 +78,6 @@ AdminController.cs 파일을 열고 추가 된 **권한 부여** 전체 특성 `
 
 > [!NOTE]
 > MVC 및 Web API 모두 정의 **권한 부여** 특성을 다른 네임 스페이스에 있습니다. MVC를 사용 **System.Web.Mvc.AuthorizeAttribute**반면 웹 API를 사용 하 여 **System.Web.Http.AuthorizeAttribute**합니다.
-
 
 이제 관리자만 관리 페이지를 볼 수 있습니다. 또한 관리 컨트롤러에 HTTP 요청을 보낼 경우 요청 된 인증 쿠키를 포함 해야 합니다. 그렇지 않은 경우 서버는 HTTP 401 (권한 없음) 응답을 보냅니다. GET 요청을 전송 하 여 Fiddler이을 볼 수 있습니다 `http://localhost:*port*/api/admin`합니다.
 

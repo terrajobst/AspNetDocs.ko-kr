@@ -8,12 +8,12 @@ ms.date: 04/23/2009
 ms.assetid: 07b8905d-78ac-4252-97fb-8675b3fb0bbf
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/strategies-for-database-development-and-deployment-vb
 msc.type: authoredcontent
-ms.openlocfilehash: afd287836337d0f9411daac805c3e9bcbb2dbadb
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 27a5ceda5f9b5227e26036c5405612dcbc15b48e
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59385074"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130247"
 ---
 # <a name="strategies-for-database-development-and-deployment-vb"></a>데이터베이스 개발 및 배포 전략(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59385074"
 [PDF 다운로드](http://download.microsoft.com/download/C/3/9/C391A649-B357-4A7B-BAA4-48C96871FEA6/aspnet_tutorial10_DBDevel_vb.pdf)
 
 > 처음으로 데이터 기반 응용 프로그램을 배포 하는 경우 프로덕션 환경으로 개발 환경에서 데이터베이스를 맹목적으로 복사할 수 있습니다. 하지만 수행 하는 과제를 안겨 후속 배포에 복사 됩니다 데이터를 덮어씁니다 프로덕션 데이터베이스에 입력 합니다. 대신, 데이터베이스 배포 개발 데이터베이스로 프로덕션 데이터베이스에 마지막 배포 이후의 변경 내용을 적용 됩니다. 이 자습서는 이러한 문제를 검사 하 고 chronicling 및 마지막 배포 이후 데이터베이스에 대 한 변경 내용을 적용에 도움이 되는 다양 한 전략을 제공 합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -54,13 +53,11 @@ ms.locfileid: "59385074"
 
 <a id="0.8_table01"></a>
 
-
 | **변경 날짜** | **변경 세부 정보** |
 | --- | --- |
 | 2009-02-03: | 추가 된 열 `DepartmentID` (`int`, NOT NULL)에 `Employees` 테이블입니다. 외래 키 제약 조건 추가 `Departments.DepartmentID` 에 `Employees.DepartmentID`입니다. |
 | 2009-02-05: | 열 제거 `TotalWeight` 에서 `Orders` 테이블입니다. 연결 된 데이터에서 캡처된 이미 `OrderDetails` 레코드입니다. |
 | 2009-02-12: | 생성 된 `ProductCategories` 테이블입니다. 세 개의 열: `ProductCategoryID` (`int`를 `IDENTITY`, `NOT NULL`), `CategoryName` (`nvarchar(50)`를 `NOT NULL`), 및 `Active` (`bit`, `NOT NULL`). 에 기본 키 제약 조건 추가 `ProductCategoryID`, 및 기본값 1은 `Active`합니다. |
-
 
 이 방식의 단점 중 여러 가지가 있습니다. 먼저 자동화 단순히가 있습니다. 언제 든 지 이러한 변경 내용은 응용 프로그램 배포-개발자 수동으로 구현 해야 하는 경우 각 변경, 한 번에 하나씩 같은 데이터베이스-적용할 필요 합니다. 또한 특정 버전의 변경 로그를 사용 하 여 기준선에서 데이터베이스를 다시 생성 해야 할 경우 이렇게 하면 따라서 점점 더 많은 시간이 걸립니다 로그의 크기 증가. 이 메서드를 또 다른 단점은 명확 하 고 각 변경 로그 항목의 세부 수준은 변경 기록을 사람에 게 그대로입니다. 여러 개발자가 팀에서는 몇 가지 다른 항목 보다 더 자세한, 보다 읽기 쉬운 또는 보다 정밀 하 게 항목을 만들 수 있습니다. 또한 입력 오류 및 다른 사람이 관련 데이터 입력 오류로 있을 수 있습니다.
 
@@ -70,7 +67,6 @@ Prose에 변경 로그 인정, 없습니다 매우 정교한을 범위에서 큰
 
 > [!NOTE]
 > 변경 로그에 정보를 상태인 동안 기술적으로 배포 시간까지에 변경 내용의 기록을 유지 것을 권장 합니다. 하지만 단일 유지 관리 하는 대신 적이 변경 로그 파일 증가 하는 것이 좋습니다 각 데이터베이스 버전에 대 한 다른 변경 로그 파일입니다. 일반적으로 원하는 버전으로 데이터베이스를 배포할 때마다. 변경 로그의 로그를 유지 하 여, 시작 기준선에서 다시 만들 수 있습니다 데이터베이스 버전 변경 로그 버전 1에서에서 시작 스크립트를 실행 하 여 및 재현해 야 버전에 도달할 때까지 계속할 수 없습니다.
-
 
 ## <a name="recording-the-sql-change-statements"></a>SQL 변경 문을 기록
 
@@ -95,18 +91,14 @@ Prose에 데이터베이스 변경 내용을 문서화 하는 것은 쉽지만 �
 > [!NOTE]
 > 이 문서를이 작성할 당시 현재 버전의 SQL Compare 버전 7.1 395 달러 비용 Standard Edition을 사용 하 여 했습니다. 14 일 무료 평가판을 다운로드 하 여 따라 할 수 있습니다.
 
-
 시작 SQL Compare 저장 된 SQL Compare 프로젝트를 보여 주는 비교 프로젝트 대화 상자가 열립니다. 새 프로젝트를 만듭니다. 비교할 데이터베이스에 대 한 자세한 메시지를 표시 하는 프로젝트 구성 마법사가 시작 됩니다 (그림 1 참조). 개발 및 프로덕션 환경 데이터베이스에 대 한 정보를 입력 합니다.
-
 
 [![개발 및 프로덕션 데이터베이스를 비교 합니다.](strategies-for-database-development-and-deployment-vb/_static/image2.jpg)](strategies-for-database-development-and-deployment-vb/_static/image1.jpg)
 
 **그림 1**: 개발 및 프로덕션 데이터베이스를 비교 ([클릭 하 여 큰 이미지 보기](strategies-for-database-development-and-deployment-vb/_static/image3.jpg))
 
-
 > [!NOTE]
 > 개발 환경 데이터베이스의 SQL Express Edition 데이터베이스 파일 인지를 `App_Data` 그림 1에 표시 된 대화 상자에서 선택 하기 위해 SQL Server Express 데이터베이스 서버에서 데이터베이스를 등록 해야 합니다. 웹 사이트의 폴더입니다. 이 작업을 수행 하는 가장 쉬운 방법은 SQL Server Management Studio (SSMS)을 열고, SQL Server Express 데이터베이스 서버에 연결할 데이터베이스를 연결 됩니다. SSMS를 컴퓨터에 설치 되지 않은 경우 다운로드 하 고 무료 설치 수 [ *SQL Server 2008 Management Studio Basic 버전*](https://www.microsoft.com/downloads/details.aspx?FamilyId=7522A683-4CB2-454E-B908-E805E9BD4E28&amp;displaylang=en)합니다.
-
 
 비교할 데이터베이스를 선택 하는 것 외에도 다양 한 옵션 탭에서 비교 설정 지정할 수도 있습니다. 설정 하려는 경우 한 가지 옵션은 "무시 제약 조건 및 인덱스 이름입니다." 이전 자습서에서 추가한 응용 프로그램 서비스 개발 및 프로덕션 데이터베이스에 데이터베이스 개체를 회수 합니다. 사용 하는 경우는 `aspnet_regsql.exe` primary key 및 unique 제약 조건 이름을 개발 및 프로덕션 데이터베이스 간에 다 찾습니다 프로덕션 데이터베이스에서 이러한 개체를 만드는 도구입니다. 따라서 SQL Compare와 다른 응용 프로그램 서비스 테이블의 모든 플래그는입니다. "무시 제약 조건 및 인덱스 이름을" 하거나 두어도 검사 되지 않은 및 제약 조건 이름을 동기화 또는 SQL Compare 이러한 차이 무시 하도록 지시 합니다.
 
@@ -115,11 +107,9 @@ Prose에 데이터베이스 변경 내용을 문서화 하는 것은 쉽지만 �
 > [!NOTE]
 > 데이터베이스 비교 도구를 사용 하 여 보여 주기 위해이 자습서에서 만든 데이터 모델 변경은 수행 되었습니다. 이후 자습서에서 이러한 변경 내용을 데이터베이스에서 찾을 있습니다.
 
-
 [![개발 및 프로덕션 데이터베이스 사이의 차이점을 나열 하는 SQL 비교](strategies-for-database-development-and-deployment-vb/_static/image5.jpg)](strategies-for-database-development-and-deployment-vb/_static/image4.jpg)
 
 **그림 2**: SQL 비교는 개발 사이의 차이 및 프로덕션 데이터베이스를 나열 합니다 ([클릭 하 여 큰 이미지 보기](strategies-for-database-development-and-deployment-vb/_static/image6.jpg))
-
 
 데이터베이스 개체를 그룹으로 세분화 SQL Compare, 신속 하 게 개체를 표시 두 데이터베이스 모두에 존재 하지만 다른 경우 하나의 데이터베이스 아니라에 있는 개체 및 개체와 동일 알 수 있듯이 두 가지 개체 두 데이터베이스 모두에 존재 하지만 서로: 합니다 `Authors` 테이블 열을 추가 있던 및 `Books` 테이블을 하나 제거 했습니다. Namely 새로 만든된 개발 데이터베이스에만 존재 하는 개체가 두 개 `Ratings` 테이블입니다. 및 두 데이터베이스 모두에 동일 117 개체가 있습니다.
 
@@ -127,17 +117,14 @@ Prose에 데이터베이스 변경 내용을 문서화 하는 것은 쉽지만 �
 
 차이점을 검토 하 고 동기화 할 개체를 선택 하면, 후 다음 단계 개발 데이터베이스와 일치 하도록 프로덕션 데이터베이스의 스키마를 업데이트 하는 데 필요한 SQL 명령을 생성 하는 것입니다. 동기화 마법사를 통해 수행 됩니다. 동기화 마법사 어떤 동기화 개체와 작업 요약에서 확인 (그림 3 참조)를 계획 합니다. 데이터베이스를 즉시 동기화 하거나 든 실행할 수 있는 SQL 명령 사용 하 여 스크립트를 생성할 수 있습니다.
 
-
 [![동기화 마법사를 사용 하 여 데이터베이스 스키마를 동기화 합니다.](strategies-for-database-development-and-deployment-vb/_static/image8.jpg)](strategies-for-database-development-and-deployment-vb/_static/image7.jpg)
 
 **그림 3**: 데이터베이스 스키마를 동기화 하려면 동기화 마법사를 사용 하 여 ([클릭 하 여 큰 이미지 보기](strategies-for-database-development-and-deployment-vb/_static/image9.jpg))
-
 
 데이터베이스 비교 도구 같은 Red Gate Software SQL Compare가 확인을 가리키고 클릭으로 쉽게 프로덕션 데이터베이스 개발 데이터베이스 스키마 변경 내용을 적용 합니다.
 
 > [!NOTE]
 > 비교 하 고 두 데이터베이스를 동기화 SQL Compare *스키마*합니다. 아쉽게도 비교 하 고 하지 않습니다 두 데이터베이스 테이블 내에서 데이터를 동기화 합니다. Red Gate Software 라는 제품을 제공 하나요 [ *SQL 데이터 비교* ](http://www.red-gate.com/products/SQL_Data_Compare/) 비교 하 고 두 데이터베이스 간의 데이터 동기화는 이지만 SQL Compare에서 별도 제품 이며 다른 395 달러 비용.
-
 
 ## <a name="taking-the-application-offline-during-deployment"></a>동안 응용 프로그램을 오프 라인 배포를 수행합니다.
 

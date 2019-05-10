@@ -8,12 +8,12 @@ ms.date: 06/09/2009
 ms.assetid: 491ed5ae-9be1-4191-87be-65e4e1c57690
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/users-and-roles-on-the-production-website-vb
 msc.type: authoredcontent
-ms.openlocfilehash: e97b66aed789cf6f2b2b503ae86e773ac03d74e0
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: df863fc6740847101c9900750a3f257c19ced9fd
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59392939"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134198"
 ---
 # <a name="users-and-roles-on-the-production-website-vb"></a>프로덕션 웹 사이트 (VB)의 사용자 및 역할
 
@@ -22,7 +22,6 @@ ms.locfileid: "59392939"
 [PDF 다운로드](http://download.microsoft.com/download/5/C/5/5C57DB8C-5DEA-4B3A-92CA-4405544D313B/aspnet_tutorial16_CustomAWAT_vb.pdf)
 
 > ASP.NET 웹 사이트 관리 도구 (WSAT) 및 만들기, 편집 및 삭제 사용자 및 역할 멤버 자격 및 역할 설정을 구성 하기 위한 웹 기반 사용자 인터페이스를 제공 합니다. 아쉽게도 WSAT 에서만 작동 localhost에서 방문할 때 브라우저를 통해 프로덕션 웹 사이트의 관리 도구에 연결할 수 없는 의미 합니다. 좋은 소식은 프로덕션의 사용자 및 역할을 관리할 수 있도록 하는 해결 방법이 있는지 보여 줍니다. 이 자습서는 등과 같은 해결이 방법을 살펴봅니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -80,7 +79,6 @@ WSAT는 세 가지 섹션으로 구분 됩니다.
 
 > [!NOTE]
 > 연결 문자열을 변경 해야 합니다 `databaseConnectionStrings.config` 완료 되 면 다시 개발 데이터베이스에 파일의 연결 문자열 작업할 프로덕션 데이터를 사용 하 여 개발을 통해 사이트를 테스트할 때이 고 그렇지 WSAT 사용 환경입니다. 또한 염두에 앞에서 설명한 기법을 사용 하면 WSAT는 사용자 및 역할을 원격으로 관리 하는 데, 하는 동안 다른 WSAT 구성 옵션 (액세스 규칙, SMTP 설정, 디버깅 및 추적 설정 및 등) 중 하나에 대 한 변경 내용을 수정 합니다 `Web.config` 파일입니다. 따라서 설정을 변경에는 프로덕션 환경이 아닌 개발 환경에 적용 됩니다.
-
 
 ## <a name="creating-custom-user-and-role-management-web-pages"></a>사용자 및 역할 관리 웹 페이지 만들기
 

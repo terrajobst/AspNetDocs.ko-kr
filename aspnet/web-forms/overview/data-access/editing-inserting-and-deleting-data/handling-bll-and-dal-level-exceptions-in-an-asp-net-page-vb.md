@@ -8,12 +8,12 @@ ms.date: 07/17/2006
 ms.assetid: 129d4338-1315-4f40-89b5-2b84b807707d
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 18b1e5251b6c98352c8dc3cb59f631e9aa19804d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: a5f798341fc56f1c164ee8cb6aa98620a7a45eb0
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59393812"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65119557"
 ---
 # <a name="handling-bll--and-dal-level-exceptions-in-an-aspnet-page-vb"></a>ASP.NET 페이지에서 BLL 및 DAL 수준의 예외 처리(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59393812"
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_18_VB.exe) 또는 [PDF 다운로드](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/datatutorial18vb1.pdf)
 
 > 이 자습서는 insert, update 또는 ASP.NET 데이터 웹 컨트롤의 삭제 작업 동안 예외가 발생 해야 친숙 하 고 정보 오류 메시지를 표시 하는 방법을 살펴보겠습니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -44,16 +43,13 @@ ms.locfileid: "59393812"
 
 이 시나리오에 맞게 다른 오버 로드 해야는 `UpdateProduct` 메서드, 4 개의 매개 변수를 취하는: 제품의 이름, 단가, 재고 및 ID 단위 다음 메서드를 추가 합니다 `ProductsBLL` 클래스:
 
-
 [!code-vb[Main](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/samples/sample1.vb)]
 
 이 메서드 완료를에서는 이러한 네 가지 특정 제품 필드를 편집할 수 있도록 하는 ASP.NET 페이지를 만들 준비가 된 것입니다. 열기를 `ErrorHandling.aspx` 페이지는 `EditInsertDelete` 폴더 디자이너를 통해 페이지에 GridView를 추가 합니다. GridView 새 ObjectDataSource를 바인딩할 매핑 합니다 `Select()` 메서드를 합니다 `ProductsBLL` 클래스의 `GetProducts()` 메서드 및 `Update()` 메서드를는 `UpdateProduct` 방금 만든 오버 로드.
 
-
 [![네 개의 입력된 매개 변수를 받아들이는 UpdateProduct 메서드와 같이 오버 로드를 사용 하 여](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image2.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image1.png)
 
 **그림 1**: 사용 된 `UpdateProduct` 메서드 오버 로드는 허용 네 개의 입력 매개 변수 ([큰 이미지를 보려면 클릭](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image3.png))
-
 
 사용 하 여 ObjectDataSource 만들어집니다는 `UpdateParameters` 각 제품 필드에 대 한 4 개의 매개 변수 및 필드를 사용 하 여 GridView를 사용 하 여 컬렉션입니다. ObjectDataSource의 선언 태그 할당 합니다 `OldValuesParameterFormatString` 속성 값을 `original_{0}`, BLL 클래스의 명명 된 입력된 매개 변수를 예상 하지 되므로 예외가 발생 하는 `original_productID` 전달할 합니다. 이 설정을 완전히 선언적 구문에서 제거할 것을 잊지 마세요 (기본 값으로 설정 하거나 `{0}`).
 
@@ -61,40 +57,31 @@ ms.locfileid: "59393812"
 
 이전 자습서에서 살펴보았습니다 서식 지정 방법을 `UnitPrice` 모두 읽기 전용 모드와 편집 모드에서 통화로 BoundField 합니다. 동일한 여기를 보겠습니다. 이 BoundField의 설정 필수 회수 `DataFormatString` 속성을 `{0:c}`, 해당 `HtmlEncode` 속성을 `false`, 및 해당 `ApplyFormatInEditMode` 에 `true`그림 2에 나와 있는 것 처럼 합니다.
 
-
 [![통화로 표시할 UnitPrice BoundField 구성](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image5.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image4.png)
 
 **그림 2**: 구성 된 `UnitPrice` 통화로 표시할 BoundField ([큰 이미지를 보려면 클릭](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image6.png))
 
-
 서식 지정 된 `UnitPrice` GridView의에 대 한 이벤트 처리기를 만들고 편집 인터페이스에는 통화의 요구에 따라 `RowUpdating` 통화 형식 문자열을 구문 분석 하는 이벤트를 `decimal` 값입니다. 이전에 설명한 대로 합니다 `RowUpdating` 마지막 자습서에서 이벤트 처리기도 있는지 확인 하는 사용자가 제공한는 `UnitPrice` 값입니다. 그러나이 자습서에 대 한 허용 해 보겠습니다 가격을 생략 하는 사용자입니다.
-
 
 [!code-vb[Main](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/samples/sample2.vb)]
 
 우리의 GridView를 포함 한 `QuantityPerUnit` BoundField 있지만이 BoundField 표시 용도로 이어야 하며 사용자가 편집할 수 없습니다. 이 정렬 하려면 BoundFields'를 설정 하기만 `ReadOnly` 속성을 `true`입니다.
 
-
 [![읽기 전용으로 QuantityPerUnit BoundField 설정](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image8.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image7.png)
 
 **그림 3**: 확인 합니다 `QuantityPerUnit` BoundField 읽기 전용 ([큰 이미지를 보려면 클릭](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image9.png))
 
-
 GridView의 스마트 태그에서 편집 사용 확인란을 마지막으로 확인 합니다. 다음이 단계를 완료 한 후의 `ErrorHandling.aspx` 페이지의 디자이너는 그림 4와 비슷하게 표시 됩니다.
-
 
 [![남기고 모두 제거 필요한 BoundFields 및 확인 확인란 편집 사용](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image11.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image10.png)
 
 **그림 4**: 하지만 모든 the 필요한 BoundFields를 제거 하 고 확인란을 사용 하도록 설정 편집 ([클릭 하 여 큰 이미지 보기](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image12.png))
 
-
 그러나이 시점에서 모든 제품의 목록이 있다고 `ProductName`, `QuantityPerUnit`, `UnitPrice`, 및 `UnitsInStock` ; 필드만 합니다 `ProductName`, `UnitPrice`, 및 `UnitsInStock` 필드를 편집할 수 있습니다.
-
 
 [![사용자가 이제 쉽게 편집할 수 제품의 이름, 가격 및 주식 필드 단위](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image14.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image13.png)
 
 **그림 5**: 사용자 수 이제 쉽게 편집 제품의 이름, 가격 및 필드 재고에서 단위 ([클릭 하 여 큰 이미지 보기](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image15.png))
-
 
 ## <a name="step-2-gracefully-handling-dal-level-exceptions"></a>2단계: DAL 수준의 예외를 정상적으로 처리
 
@@ -104,11 +91,9 @@ GridView의 스마트 태그에서 편집 사용 확인란을 마지막으로 �
 
 그림 6을 지정 하지 않고 제품을 업데이트 하려고 시도할 때 발생 하는 화면을 보여 줍니다.는 `ProductName` 값입니다. 자세한 오류 보고서를 통해 들어오는 경우에 표시 된 기본 `localhost`입니다.
 
-
 [![예외 세부 정보를 표시는 제품의 이름을 생략합니다.](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image17.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image16.png)
 
 **그림 6**: 제품의 이름을 표시 예외 정보는 생략 ([클릭 하 여 큰 이미지 보기](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image18.png))
-
 
 이러한 예외 세부 정보는 응용 프로그램을 테스트할 때 유용한, 예외가 발생 하는 경우 이러한 화면을 사용 하 여 최종 사용자를 표시는 그다지 적합 합니다. 가능성이 높은 최종 사용자가 무엇 인지 인식 하지는 `NoNullAllowedException` 는 또는 발생 했습니다. 제품을 업데이트 하는 동안 문제가 발생 했습니다를 설명 하는 보다 친숙 한 메시지를 사용 하 여 사용자를 표시 하는 것이 좋습니다.
 
@@ -116,14 +101,11 @@ GridView의 스마트 태그에서 편집 사용 확인란을 마지막으로 �
 
 시작 설정, ASP.NET 페이지에 레이블을 추가 하 여 해당 `ID` 속성을 `ExceptionDetails` 정리 및 해당 `Text` 속성입니다. 설정 하려면이 메시지에 사용자의 눈을 그리려면, 해당 `CssClass` 속성을 `Warning`에 추가한 CSS 클래스인는 `Styles.css` 이전 자습서에서 파일입니다. 이 CSS 클래스, 빨간색, 기울임꼴, 굵게, 초대형 글꼴로 표시할 레이블의 텍스트는 회수 합니다.
 
-
 [![레이블 웹 컨트롤을 페이지에 추가](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image20.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image19.png)
 
 **그림 7**: 레이블 웹 컨트롤을 페이지에 추가 ([클릭 하 여 큰 이미지 보기](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image21.png))
 
-
 예외가 발생 한이 Label 웹 컨트롤이 표시 될 수만 즉시 후 것 이므로, 설정 해당 `Visible` 속성을 false는 `Page_Load` 이벤트 처리기:
-
 
 [!code-vb[Main](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/samples/sample3.vb)]
 
@@ -132,21 +114,16 @@ GridView의 스마트 태그에서 편집 사용 확인란을 마지막으로 �
 > [!NOTE]
 > 또는 설정에 대 한 필요성을 제거할 수는 것은 `ExceptionDetails` 컨트롤의 `Visible` 속성에서 `Page_Load` 할당 하 여 해당 `Visible` 속성 `false` 선언적 구문 및 ( 해당설정보기상태를사용하지않도록설정`EnableViewState` 속성을 `false`). 이후 자습서에서이 대체 방법을 사용 하겠습니다.
 
-
 추가 레이블 컨트롤을 사용 하 여 다음 단계를 GridView에 대 한 이벤트 처리기를 만들 때 `RowUpdated` 이벤트입니다. 디자이너에서 GridView 선택한 속성 창으로 이동 GridView의 이벤트를 나열 하 고 번개 모양 아이콘을 클릭 합니다. GridView의에 대 한 항목이 있습니다 해야 이미 `RowUpdating` 이벤트 처럼이 자습서의 앞부분에서이 이벤트에 대 한 이벤트 처리기를 만들었습니다. 에 대 한 이벤트 처리기를 만들고는 `RowUpdated` 이벤트도 합니다.
-
 
 ![GridView의 RowUpdated 이벤트에 대 한 이벤트 처리기 만들기](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image22.png)
 
 **그림 8**: GridView의에 대 한 이벤트 처리기를 만들고 `RowUpdated` 이벤트
 
-
 > [!NOTE]
 > 또한 코드 숨김 클래스 파일의 맨 위에 있는 드롭다운 목록을 통해 이벤트 처리기를 만들 수 있습니다. GridView의 왼쪽에 있는 드롭다운 목록에서 선택 및 `RowUpdated` 오른쪽에서 이벤트입니다.
 
-
 이 이벤트 처리기를 만드는 ASP.NET 페이지의 코드 숨김 클래스에 다음 코드를 추가 합니다.
-
 
 [!code-vb[Main](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/samples/sample4.vb)]
 
@@ -164,29 +141,24 @@ GridView의 스마트 태그에서 편집 사용 확인란을 마지막으로 �
 
 다음이 코드는 이러한 목표를 수행합니다.
 
-
 [!code-vb[Main](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/samples/sample5.vb)]
 
 이 이벤트 처리기 하는지를 확인 하 여 시작 `e.Exception` 는 `null`합니다. 그렇지 않을 경우 합니다 `ExceptionDetails` 레이블의 `Visible` 속성이 `true` 고 `Text` 속성을 "제품을 업데이트 하는 데 문제가 있었습니다." 실제 throw 된 예외의 세부 정보에는 `e.Exception` 개체의 `InnerException` 속성입니다. 이 내부 예외를 검사 하 고, 추가, 유용한 메시지를에 추가 인 경우 특정 유형의 합니다 `ExceptionDetails` 레이블의 `Text` 속성입니다. 마지막으로, 합니다 `ExceptionHandled` 하 고 `KeepInEditMode` 속성이 둘 다로 설정 됩니다 `true`합니다.
 
 그림 9 제품 이름을 생략 하는 경우이 페이지의 스크린 샷을 보여 줍니다. 그림 10 잘못 된 입력 하면 결과 보여 줍니다 `UnitPrice` 값 (-50).
 
-
 [![ProductName BoundField 값이 있어야 합니다.](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image24.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image23.png)
 
 **그림 9**: 합니다 `ProductName` BoundField 값이 있어야 합니다. ([큰 이미지를 보려면 클릭](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image25.png))
-
 
 [![UnitPrice 음수를 사용할 수 없습니다.](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image27.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image26.png)
 
 **그림 10**: 음수 `UnitPrice` 값은 허용 되지 않습니다 ([큰 이미지를 보려면 클릭](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image28.png))
 
-
 설정 하 여 합니다 `e.ExceptionHandled` 속성을 `true`, `RowUpdated` 이벤트 처리기는 예외 처리 했음을 나타냅니다. 따라서 예외 ASP.NET 런타임에 전파 되지 않습니다.
 
 > [!NOTE]
 > 그림 9 및 10에는 잘못 된 사용자 입력으로 인해 발생 하는 예외를 처리 하는 적절 한 방법을 보여 줍니다. 이상적으로, 그러나 이러한 잘못 된 입력 두지 도달률 비즈니스 논리 계층 처음에 ASP.NET 페이지를 호출 하기 전에 사용자의 입력 유효한 지 확인 해야 합니다 `ProductsBLL` 클래스의 `UpdateProduct` 메서드. 비즈니스 논리 계층 전송 된 데이터가 되도록 편집 및 삽입 인터페이스에 유효성 검사 컨트롤을 추가 하는 방법을 살펴보겠습니다 다음 자습서에서 비즈니스 규칙을 따릅니다. 유효성 검사 컨트롤 뿐만 아니라 호출을 방지 합니다 `UpdateProduct` 사용자가 제공한 데이터 유효 하지만 데이터 입력 문제를 식별 하는 데는 많은 정보를 제공 하는 사용자 환경을 제공 될 때까지 메서드.
-
 
 ## <a name="step-3-gracefully-handling-bll-level-exceptions"></a>3단계: BLL 수준의 예외를 정상적으로 처리
 
@@ -194,20 +166,16 @@ GridView의 스마트 태그에서 편집 사용 확인란을 마지막으로 �
 
 에 대 한 합니다 `UpdateProduct` 오버 로드는이 자습서에서 만든, 금지 하는 비즈니스 규칙을 추가 해 보겠습니다 합니다 `UnitPrice` 원래 두 배 이상 많은 새 값으로 설정 된 필드 `UnitPrice` 값입니다. 이를 위해 조정 합니다 `UpdateProduct` 이 검사를 수행 하 고 throw 되도록 오버 로드는 `ApplicationException` 규칙을 위반 하는 경우. 업데이트 된 메서드는 다음과 같습니다.
 
-
 [!code-vb[Main](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/samples/sample6.vb)]
 
 기존 가격은 두 배 이상 많은 수 있는 모든 가격 업데이트 하면이 변경으로 `ApplicationException` throw 됩니다. 이 BLL 발생 DAL에서 발생 하는 예외와 마찬가지로 `ApplicationException` 탐지 및 GridView의 처리 `RowUpdated` 이벤트 처리기입니다. 실제로 `RowUpdated` 이벤트 처리기의 코드를 작성 하는 대로 올바르게 감지이 예외 하 고 표시 합니다 `ApplicationException`의 `Message` 속성 값입니다. 그림 11에서는 사용자는 현재 가격은 $19.95의 2 배 이상의 $50.00에 Chai의 가격을 업데이트 하려고 할 때를 지정 하 여 화면을 보여 줍니다.
-
 
 [![비즈니스 규칙 두 개 제품의 가격을 두 번 가격 증가 허용 안 함](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image30.png)](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image29.png)
 
 **그림 11**: 비즈니스 규칙의 두 개 제품의 가격을 두 번 가격 증가 허용 안 함 ([클릭 하 여 큰 이미지 보기](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/_static/image31.png))
 
-
 > [!NOTE]
 > 개는 비즈니스 논리 규칙은 리팩터링 하는 것이 가장 좋습니다를 `UpdateProduct` 메서드 오버 로드는 일반적인 방법으로 합니다. 이 판독기에 대 한 연습으로 남아 있습니다.
-
 
 ## <a name="summary"></a>요약
 

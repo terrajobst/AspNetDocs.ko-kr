@@ -8,12 +8,12 @@ ms.date: 01/28/2019
 ms.assetid: 3bb8eb15-b518-44f5-a67d-a27e051aedc6
 msc.legacyurl: /web-api/overview/security/external-authentication-services
 msc.type: authoredcontent
-ms.openlocfilehash: de9b64e6c582059ec66ab352f60773f50af7b1ff
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b2571552a3f8040ff42bfa0a9fa48981f71a1e4b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57064920"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133579"
 ---
 # <a name="external-authentication-services-with-aspnet-web-api-c"></a>ASP.NET Web API 사용 하 여 외부 인증 서비스 (C#)
 
@@ -72,7 +72,6 @@ Visual Studio 2017 및 ASP.NET 4.7.2 쉽게 외부 인증 서비스와의 통합
 
 > [!NOTE]
 > 필요한 경우 외부 인증 서비스에 대 한 설정에 FQDN을 추가 해야 합니다. 이 요구 사항은 클라이언트에서 사용 되는 FQDN과 일치 하는 응용 프로그램 설정에 FQDN을 필요로 하는 일부 외부 인증 서비스에 대 한 보안 제약 조건을 기반으로 합니다. (이 단계는 각 외부 인증 서비스에 대해 크게 달라 집니다; 각 외부 인증 서비스가 필요한 경우 참조 하 고 이러한 설정을 구성 하는 방법에 대 한 설명서를 참조 해야 합니다) 테스트이 환경에 대 한 FQDN을 사용 하려면 IIS Express를 구성 하는 경우는 [정규화 된 도메인 이름을 사용 하도록 IIS Express 구성](#FQDN) 이 연습의 뒷부분에서 섹션입니다.
-
 
 <a id="SAMPLE"></a>
 ## <a name="create-a-sample-web-application"></a>샘플 웹 응용 프로그램 만들기
@@ -139,7 +138,6 @@ Facebook을 사용 하 여 인증을 사용 하면 Facebook 개발자 계정을 
 ## <a name="enabling-google-authentication"></a>Google 인증을 사용 하도록 설정
 
 Google을 사용 하 여 인증에 필요한 Google 개발자 계정으로 만들 수 있습니다 및 프로젝트에 응용 프로그램 ID 및 Google에서 비밀 키를 작동 하는 데 필요 합니다. Google 개발자 계정을 만들고 응용 프로그램 ID 및 비밀 키를 가져오는 방법에 대 한 자세한 내용은 [ https://developers.google.com ](https://developers.google.com)합니다.
-
 
 웹 응용 프로그램에 대해 Google 인증을 사용 하려면 다음 단계를 사용 합니다.
 

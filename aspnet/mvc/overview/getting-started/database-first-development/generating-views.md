@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.assetid: 669367cf-8e30-4eb6-821d-10a7d9bb906c
 msc.legacyurl: /mvc/overview/getting-started/database-first-development/generating-views
 msc.type: authoredcontent
-ms.openlocfilehash: 7a56c0f9197a99427bcde6103ebc69d245e8ce63
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: e71e13e22d8a72e1699cfc70d4d93af603edba5b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57025760"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65121220"
 ---
 # <a name="tutorial-generate-views-for-ef-database-first-with-aspnet-mvc-app"></a>자습서: ASP.NET MVC 앱을 사용 하 여 EF Database First에 대 한 뷰를 생성
 
@@ -51,7 +51,6 @@ MVC, Entity Framework 및 ASP.NET 스 캐 폴딩을 사용 하 여, 기존 데�
 오류가 발생 하는 경우 이전 섹션에서 프로젝트를 빌드하지 않은 때문에 수 있습니다. 그렇다면 프로젝트를 빌드하지 및 다음 스 캐 폴드 된 항목을 다시 추가 합니다.
 
 새 컨트롤러와 보기를 프로젝트의 참조는 코드 생성 프로세스를 완료 한 후 **컨트롤러** 하 고 **뷰** > **학생** 폴더 .
-
 
 동일한 단계를 다시 수행 하지만 대 한 스 캐 폴드를 추가 합니다 **등록** 클래스입니다. 가 완료 되 면를 **EnrollmentsController.cs** 파일 및 하위 폴더 **뷰** 이라는 **등록** 만들기, 삭제, 세부 정보, 편집 및 인덱스 보기를 사용 합니다.
 

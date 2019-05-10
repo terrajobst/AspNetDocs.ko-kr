@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 6755d8d9-14be-4a1d-86e5-1a6110f3dea8
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/cascadingdropdown/using-auto-postback-with-cascadingdropdown-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 50bba1b798ddfaf69dd23098e31d446a7e7b9a1f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 44133164d1c852fefc84a89614d306e39378ed97
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59394616"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133598"
 ---
 # <a name="using-auto-postback-with-cascadingdropdown-c"></a>CascadingDropDown으로 자동 포스트백 사용(C#)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/9/0/7/907760b1-2c60-4f81-aeb6-ca416a573b0d/cascadingdropdown3.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/cascadingdropdown3CS.pdf)
 
 > AJAX Control Toolkit에서 CascadingDropDown 컨트롤 하나 DropDownList 로드 변경에 관련 된 값이 다른 DropDownList에 있도록 DropDownList 컨트롤을 확장 합니다. 그러나 ASP CascadingDropDown 컨트롤을 사용 하는 경우. 자체 (불필요 한) 포스트백을 생성 목록에 데이터를 비동기적으로 로드 되므로 NET의 DropDownList 컨트롤 AutoPostBack 기능이 작동 하지 않습니다. 일부 JavaScript 코드를 사용 하 여이 효과 방지할 수 있습니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -55,7 +54,6 @@ CascadingDropDown extender 비동기적으로 호출 된 다음 메서드 시그
 [!code-html[Main](using-auto-postback-with-cascadingdropdown-cs/samples/sample6.html)]
 
 이러한 방식으로 포스트백 때만 실행 됩니다 요소가 실제로 목록에서, 사용자가 항목을 선택 합니다.
-
 
 [![포스트백을 발생 시키는 목록 요소를 선택 합니다.](using-auto-postback-with-cascadingdropdown-cs/_static/image2.png)](using-auto-postback-with-cascadingdropdown-cs/_static/image1.png)
 

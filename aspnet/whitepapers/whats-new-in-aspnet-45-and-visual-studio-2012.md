@@ -8,17 +8,16 @@ ms.date: 02/29/2012
 ms.assetid: ba1fabb4-31a3-4ebf-8327-41a6bbba6eaf
 msc.legacyurl: /whitepapers/whats-new-in-aspnet-45-and-visual-studio-2012
 msc.type: content
-ms.openlocfilehash: 5f50721b6f263b9cb025f5fa57c923dadeddcd28
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 32fbf7c25b00f3f0796c4c3fdd38ca2a86c89199
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59410593"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133683"
 ---
 # <a name="whats-new-in-aspnet-45-and-visual-studio-2012"></a>ASP.NET 4.5 및 Visual Studio 2012의 새로운 기능
 
 > 이 문서에서는 새로운 기능과 향상 된 ASP.NET 4.5에서 도입 되는 설명 합니다. 또한 향상이 되 고 Visual Studio 2012에서 웹 개발에 대해 설명 합니다. 이 문서를 2012 년 2 월 29 일에 처음 게시 됩니다.
-
 
 - [ASP.NET Core 런타임 및 프레임 워크](#_Toc318097372)
 
@@ -190,10 +189,8 @@ ASP.NET 4.5에서 기본적으로 모든 요청 데이터는 요청 유효성 �
 
 [!code-csharp[Main](whats-new-in-aspnet-45-and-visual-studio-2012/samples/sample6.cs)]
 
-
 > [!WARNING]
 > 보안- *유효성이 검사 되지 않은 요청 데이터를 사용 하 여 신중 하 게!* ASP.NET 4.5 유효성이 검사 되지 않은 요청 속성과 매우 구체적인 유효성이 검사 되지 않은 요청 데이터를 액세스 하기 위한 쉽게 수행할 수 있도록 컬렉션에 추가 합니다. 그러나 여전히 사용자 지정 유효성 검사에서는 원시 요청 데이터를 사용자에 게 위험한 텍스트 렌더링 되지 않습니다에서 수행 해야 합니다.
-
 
 <a id="_Toc318097382"></a>
 ### <a name="antixss-library"></a>AntiXSS 라이브러리
@@ -383,11 +380,9 @@ ASP.NET 4.5 Web Forms는 데이터로 작업 하기 위한 몇 가지 향상 된
 
 이 문제를 해결 하기 위해 ASP.NET 4.5 컨트롤에 바인딩되는 데이터의 데이터 형식을 선언 하는 기능을 추가 합니다. 이렇게 하면 새 *ItemType* 속성입니다. 이 속성을 설정 하면 데이터 바인딩 식의 범위에 두 개의 새 형식화 된 변수 사용할 수 있습니다. *항목* 하 고 *binditem을*입니다. 변수는 강력한 형식 이므로 Visual Studio 개발 환경의 모든 혜택을 얻을 수 있습니다.
 
-
 양방향 데이터 바인딩 식을 사용 합니다 *binditem을* 변수:
 
 [!code-aspx[Main](whats-new-in-aspnet-45-and-visual-studio-2012/samples/sample21.aspx)]
-
 
 대부분의 ASP.NET Web Forms 프레임 워크에서 지 원하는 컨트롤에 데이터 바인딩을 지원 하도록 업데이트 되었습니다 합니다 *ItemType* 속성입니다.
 

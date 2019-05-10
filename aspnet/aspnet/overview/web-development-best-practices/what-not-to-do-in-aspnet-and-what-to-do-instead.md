@@ -8,17 +8,16 @@ ms.date: 01/28/2019
 ms.assetid: c39b9965-545c-4b04-8f55-21be7f28a9e5
 msc.legacyurl: /aspnet/overview/web-development-best-practices/what-not-to-do-in-aspnet-and-what-to-do-instead
 msc.type: authoredcontent
-ms.openlocfilehash: a09169327d8eed45a83b232354af74a14aa89817
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 980d3544df70643043391e6573803ce21b3a824f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425043"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118176"
 ---
 # <a name="what-not-to-do-in-aspnet-and-what-to-do-instead"></a>ASP.NET에서 하지 말아야 하는 일과 해야 하는 일
 
 > 이 항목에서는 ASP.NET 웹 프로젝트 내에서 사용자를 확인 하는 몇 가지 일반적인 실수를 설명 합니다. 이러한 일반적인 실수를 방지 하려면 수행 해야 하는 것에 대 한 권장 사항을 제공 합니다. 기반이 되는 [프레젠테이션](http://vimeo.com/68390507) 하 여 **Damian Edwards** 노르웨이 개발자 회의에서.
-
 
 ## <a name="disclaimer"></a>고지 사항
 
@@ -201,7 +200,7 @@ UrlPathEncode 메서드는 매우 구체적인 브라우저 호환성 문제를 
 
 사용할 수는 [PreSendRequestHeaders](https://msdn.microsoft.com/library/system.web.httpapplication.presendrequestheaders.aspx) 하 고 [PreSendRequestContent](https://msdn.microsoft.com/library/system.web.httpapplication.presendrequestcontent.aspx) 네이티브 IIS 모듈을 사용 하 여 이벤트입니다.
 > [!WARNING]
-> 사용 하지 마세요 `PreSendRequestHeaders` 하 고 `PreSendRequestContent` 구현 하는 관리 되는 모듈을 사용 하 여 `IHttpModule`입니다. 이러한 속성을 설정 하면 비동기 요청을 사용 하 여 문제가 발생할 수 있습니다. 응용 프로그램 요청 라우팅 (ARR) 및 websocket의 조합을 w3wp 충돌을 일으킬 수 있는 액세스 위반 예외가 발생할 수 있습니다. 예를 들어 iiscore! W3_CONTEXT_BASE::GetIsLastNotification + 68 iiscore.dll에서 액세스 위반 예외 (0xC0000005) 발생 했습니다.
+> 사용 하지 마세요 `PreSendRequestHeaders` 하 고 `PreSendRequestContent` 구현 하는 관리 되는 모듈을 사용 하 여 `IHttpModule`입니다. 이러한 속성을 설정 하면 비동기 요청을 사용 하 여 문제가 발생할 수 있습니다. 애플리케이션 요청 라우팅 (ARR) 및 websocket의 조합을 w3wp 충돌을 일으킬 수 있는 액세스 위반 예외가 발생할 수 있습니다. 예를 들어 iiscore! W3_CONTEXT_BASE::GetIsLastNotification + 68 iiscore.dll에서 액세스 위반 예외 (0xC0000005) 발생 했습니다.
 
 <a id="asyncevents"></a>
 

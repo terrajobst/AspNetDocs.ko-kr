@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 298789b4-2964-49f5-a0a8-d4dbeb9ff2c2
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/collapsiblepanel/collapsing-and-expanding-a-panel-from-javascript-vb
 msc.type: authoredcontent
-ms.openlocfilehash: b41423cb1e587df121828b1e57045cabfede7cb5
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f9e279e8700024f28cf589581f09a4bbd95118de
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59390833"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133538"
 ---
 # <a name="collapsing-and-expanding-a-panel-from-javascript-vb"></a>JavaScript에서 패널 축소 및 확장(VB)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/8/a/a/8aab3c3e-de6f-463f-805c-5fda567eef6e/CollapsiblePanel1.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/collapsiblepanel1VB.pdf)
 
 > ASP.NET AJAX Control Toolkit의 CollapsiblePanel 컨트롤 패널을 확장 하 고 해당 콘텐츠를 축소 하 고 다시 확장 하는 기능을 사용 하 여 제공 됩니다. 사용자 지정 JavaScript 코드에서 이러한 두 작업을 트리거할 수도 있습니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -63,7 +62,6 @@ ASP.NET AJAX Control Toolkit의 CollapsiblePanel 컨트롤 패널을 확장 하 
 패널의 상태를 전환 하는 세 번째 단추:에서 축소 하 여 확장 하 고 그 반대의 경우도 마찬가지입니다. `CollapsiblePanelExtender` 노출 된 `toggle()` 정확히 일치 하는 메서드: 패널의 상태를 반대로 바꿉니다. 그러나도 또 다른 방법이 있습니다 (내부적으로 사용 되는 `toggle()` 메서드): 합니다 `get_Collapsed()` 메서드는 `CollapsiblePanelExtender()` 패널 축소 되는지 여부를 알려줍니다. 이 함수의 반환 값에 따라 패널 인 확장 중 하나 (`_doOpen()` 메서드) 또는 축소 (`_doClose()`) 메서드.
 
 [!code-javascript[Main](collapsing-and-expanding-a-panel-from-javascript-vb/samples/sample8.js)]
-
 
 [![패널의 상태를 변경 하는 세 번째 단추:에서 확장 및 다시 축소](collapsing-and-expanding-a-panel-from-javascript-vb/_static/image2.png)](collapsing-and-expanding-a-panel-from-javascript-vb/_static/image1.png)
 

@@ -8,12 +8,12 @@ ms.date: 03/27/2007
 ms.assetid: 5cbeb9f8-5f92-4ba8-87ae-0b4d460ae6d4
 msc.legacyurl: /web-forms/overview/data-access/working-with-binary-files/displaying-binary-data-in-the-data-web-controls-cs
 msc.type: authoredcontent
-ms.openlocfilehash: c6c41ba5b5414da689e63ef521f1cf22e0b55701
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 4c5c2befd31299b0d9dedf0a3cdb9c8a65d692ec
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59404288"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65127150"
 ---
 # <a name="displaying-binary-data-in-the-data-web-controls-c"></a>데이터 웹 컨트롤에 이진 데이터 표시(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59404288"
 [샘플 앱을 다운로드](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_55_CS.exe) 또는 [PDF 다운로드](displaying-binary-data-in-the-data-web-controls-cs/_static/datatutorial55cs1.pdf)
 
 > 이 자습서에서는 이진 데이터를 이미지 파일의 표시 및 PDF 파일에 대 한 '다운로드' 링크의 프로 비전을 포함 하 여 웹 페이지를 표시 하는 옵션에 살펴봅니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -40,11 +39,9 @@ ms.locfileid: "59404288"
 
 이 자습서가의 다운로드 7 PDF 브로슈어 파일에서 찾을 수 있습니다는 `~/Brochures` 폴더, Seafood 제외 하 고 범주를 각각에 대 한 합니다. 필자는 의도적으로 Seafood 브로슈어 모든 레코드는 관련 이진 데이터가 시나리오를 처리 하는 방법을 설명 하기 위해 추가 생략 합니다. 업데이트 하는 `Categories` 이러한 값을 사용 하 여 테이블을 마우스 오른쪽 단추로 클릭는 `Categories` 서버 탐색기에서 노드 테이블 데이터 표시를 선택 합니다. 그런 다음 브로슈어 파일 그림 1 에서처럼 브로슈어에 있는 각 범주에 대 한 가상 경로 입력 합니다. Seafood 범주에 대 한 없습니다 브로슈어 이므로 그대로 해당 `BrochurePath` s 열 값으로 `NULL`입니다.
 
-
 [![범주 테이블의 BrochurePath 열에 대 한 값을 수동으로 입력](displaying-binary-data-in-the-data-web-controls-cs/_static/image1.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image1.png)
 
 **그림 1**: 수동으로 값을 입력 합니다 `Categories` 테이블 s `BrochurePath` 열 ([클릭 하 여 큰 이미지 보기](displaying-binary-data-in-the-data-web-controls-cs/_static/image2.png))
-
 
 ## <a name="step-2-providing-a-download-link-for-the-brochures-in-a-gridview"></a>2단계: GridView의 브로슈어에 대 한 다운로드 링크를 제공합니다.
 
@@ -52,55 +49,43 @@ ms.locfileid: "59404288"
 
 디자이너 도구 상자에서 GridView 드래그 하 여 시작 합니다 `DisplayOrDownloadData.aspx` 페이지에 `BinaryData` 폴더. 집합 GridView s `ID` 에 `Categories` GridView가 스마트 태그를 통해 새 데이터 원본에 연결 하려면 선택 합니다. 특히, 명명 된 ObjectDataSource에 바인딩할 `CategoriesDataSource` 사용 하 여 데이터를 검색 하는 `CategoriesBLL` s 개체 `GetCategories()` 메서드.
 
-
 [![CategoriesDataSource 라는 새로운 ObjectDataSource는 만들기](displaying-binary-data-in-the-data-web-controls-cs/_static/image2.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image3.png)
 
 **그림 2**: 명명 된 새 ObjectDataSource 만들려면 `CategoriesDataSource` ([큰 이미지를 보려면 클릭](displaying-binary-data-in-the-data-web-controls-cs/_static/image4.png))
-
 
 [![CategoriesBLL 클래스를 사용 하는 ObjectDataSource 구성](displaying-binary-data-in-the-data-web-controls-cs/_static/image3.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image5.png)
 
 **그림 3**: ObjectDataSource를 사용 하 여 구성 합니다 `CategoriesBLL` 클래스 ([큰 이미지를 보려면 클릭](displaying-binary-data-in-the-data-web-controls-cs/_static/image6.png))
 
-
 [![GetCategories() 메서드를 사용 하는 범주의 목록을 검색 합니다.](displaying-binary-data-in-the-data-web-controls-cs/_static/image4.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image7.png)
 
 **그림 4**: 범주 하 여 목록 검색 합니다 `GetCategories()` 메서드 ([큰 이미지를 보려면 클릭](displaying-binary-data-in-the-data-web-controls-cs/_static/image8.png))
 
-
 데이터 소스 구성 마법사를 완료 한 후 Visual Studio는 자동으로 추가 하려면 BoundField 합니다 `Categories` GridView에 대 한는 `CategoryID`, `CategoryName`, `Description`, `NumberOfProducts`, 및 `BrochurePath` `DataColumn` s입니다. 계속 해 서 제거 합니다 `NumberOfProducts` BoundField 이후에 `GetCategories()` 메서드의 쿼리는이 정보를 검색 하지 않습니다. 제거는 `CategoryID` BoundField 및 이름 바꾸기는 `CategoryName` 및 `BrochurePath` BoundFields `HeaderText` 속성 범주 및 브로슈어, 각각. 다음과 같이 변경한 후 GridView 및 ObjectDataSource가 선언적 태그는 다음과 같이 표시 됩니다.
-
 
 [!code-aspx[Main](displaying-binary-data-in-the-data-web-controls-cs/samples/sample1.aspx)]
 
 브라우저를 통해이 페이지 (그림 5 참조). 8 개 범주의 나열 됩니다. 7 범주별으로 `BrochurePath` 값을 `BrochurePath` 해당 BoundField에 표시 되는 값입니다. Seafood 있는 `NULL` 값에 대 한 해당 `BrochurePath`, 빈 셀을 표시 합니다.
 
-
 [![각 범주가의 이름, 설명 및 BrochurePath 값 목록](displaying-binary-data-in-the-data-web-controls-cs/_static/image5.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image9.png)
 
 **그림 5**: 각 범주의 이름, 설명 및 `BrochurePath` 값은 나열 됩니다 ([큰 이미지를 보려면 클릭](displaying-binary-data-in-the-data-web-controls-cs/_static/image10.png))
 
-
 텍스트를 표시 하지 않고는 `BrochurePath` 브로슈어에 대 한 링크를 만들려면 원하는 열입니다. 이렇게 하려면 제거를 `BrochurePath` BoundField HyperLinkField을으로 바꿉니다. 새 HyperLinkField s 설정 `HeaderText` 속성을 브로슈어, 해당 `Text` 보기 브로슈어 속성 및 해당 `DataNavigateUrlFields` 속성을 `BrochurePath`.
-
 
 ![HyperLinkField BrochurePath에 대 한 추가](displaying-binary-data-in-the-data-web-controls-cs/_static/image6.gif)
 
 **그림 6**: 에 대 한 HyperLinkField 추가 `BrochurePath`
 
-
 이렇게 그림 7 있듯이 GridView를 링크 열을 추가 됩니다. 보기 브로슈어 링크를 클릭 하 PDF 브라우저에서 직접 표시 하거나 사용자를 PDF reader가 설치 되었는지 여부에 따라 파일을 다운로드 및 s 브라우저 설정을 확인 합니다.
-
 
 [![범주의 브로슈어 보기 브로슈어 링크를 클릭 하 여 볼 수 있습니다.](displaying-binary-data-in-the-data-web-controls-cs/_static/image7.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image11.png)
 
 **그림 7**: 범주 보기 브로슈어 링크를 클릭 하 여 s 브로슈어를 볼 수 있습니다 ([클릭 하 여 큰 이미지 보기](displaying-binary-data-in-the-data-web-controls-cs/_static/image12.png))
 
-
 [![S 브로슈어 PDF의 범주 표시](displaying-binary-data-in-the-data-web-controls-cs/_static/image8.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image13.png)
 
 **그림 8**: 범주 브로슈어 PDF가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](displaying-binary-data-in-the-data-web-controls-cs/_static/image14.png))
-
 
 ## <a name="hiding-the-view-brochure-text-for-categories-without-a-brochure"></a>브로슈어 없이 범주에 대 한 뷰 브로슈어 텍스트 숨기기
 
@@ -110,19 +95,15 @@ ms.locfileid: "59404288"
 
 선택 하 여는 HyperLinkField를 TemplateField로 설정 합니다 `BrochurePath` HyperLinkField 및 클릭 한 다음 변환에서이 필드를 TemplateField로 열 편집 대화 상자에서 연결 합니다.
 
-
 ![HyperLinkField templatefield로 변환](displaying-binary-data-in-the-data-web-controls-cs/_static/image9.gif)
 
 **그림 9**: HyperLinkField templatefield로 변환
 
-
 이 사용 하 여 templatefield로 만들어집니다.는 `ItemTemplate` 하이퍼링크 웹을 포함 하는 컨트롤 `NavigateUrl` 속성이 바인딩되는 `BrochurePath` 값입니다. 이 태그는 메서드를 호출 하 여 바꿉니다 `GenerateBrochureLink`값의 전달 `BrochurePath`:
-
 
 [!code-aspx[Main](displaying-binary-data-in-the-data-web-controls-cs/samples/sample2.aspx)]
 
 다음으로 만듭니다는 `protected` 메서드는 ASP.NET에서 페이지 라는 s 코드 숨김 클래스 `GenerateBrochureLink` 를 반환 하는 `string` 받고는 `object` 입력된 매개 변수로 합니다.
-
 
 [!code-csharp[Main](displaying-binary-data-in-the-data-web-controls-cs/samples/sample3.cs)]
 
@@ -130,18 +111,15 @@ ms.locfileid: "59404288"
 
 그림 10 이러한 변경 내용을 적용 한 후 페이지를 보여 줍니다. Seafood 범주의 `BrochurePath` 필드에는 이제 브로슈어에 사용할 수 없는 텍스트가 표시 됩니다.
 
-
 [![이러한 범주 없이 브로슈어에 대 한 텍스트 없음 브로슈어 사용 가능한 표시 됩니다.](displaying-binary-data-in-the-data-web-controls-cs/_static/image10.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image15.png)
 
 **그림 10**: 이러한 범주 없이 브로슈어에 대 한 텍스트 없음 브로슈어 사용 가능한 표시 됩니다 ([클릭 하 여 큰 이미지 보기](displaying-binary-data-in-the-data-web-controls-cs/_static/image16.png))
-
 
 ## <a name="step-3-adding-a-web-page-to-display-a-category-s-picture"></a>3단계: 범주의 그림을 표시 하는 웹 페이지 추가
 
 사용자는 ASP.NET 페이지를 방문 하면 ASP.NET 페이지의 HTML 받습니다. 받은 HTML은 단순히 텍스트 및 이진 데이터가 포함 되지 않습니다. 이미지, 사운드 파일, Macromedia Flash 응용 프로그램, 포함 된 Windows Media Player 비디오 등을 같은 추가 이진 데이터, 웹 서버에 별도 리소스로 존재 합니다. HTML이이 파일에 대 한 참조를 포함 하지만 파일의 실제 내용이 포함 되지 않습니다.
 
 HTML에서 예를 들어, 합니다 `<img>` 요소는 그림을 사용 하 여 참조를 사용 하는 `src` 같이 이미지 파일을 가리키는 특성:
-
 
 [!code-html[Main](displaying-binary-data-in-the-data-web-controls-cs/samples/sample4.html)]
 
@@ -151,13 +129,11 @@ HTML에서 예를 들어, 합니다 `<img>` 요소는 그림을 사용 하 여 �
 
 새 ASP.NET 페이지를 추가 합니다 `BinaryData` 라는 폴더 `DisplayCategoryPicture.aspx`합니다. 이 작업을 수행 하는 경우 마스터 페이지 선택 확인란을 선택 하지 않은 상태로 유지 합니다. 이 페이지에서는 `CategoryID` querystring과 해당 범주의 s의 이진 데이터를 반환 값 `Picture` 열입니다. 이 페이지에서 아무 및 이진 데이터를 반환 하므로 HTML 섹션의 모든 태그는 필요 하지 않습니다. 따라서 왼쪽된 아래 모서리에서 원본 탭을 클릭 하 고 제외 하 고 페이지의 태그를 모두 제거 된 `<%@ Page %>` 지시문입니다. 즉, `DisplayCategoryPicture.aspx` s 선언적 태그는 한 줄 구성 되어야 합니다.
 
-
 [!code-aspx[Main](displaying-binary-data-in-the-data-web-controls-cs/samples/sample5.aspx)]
 
 표시 되 면 합니다 `MasterPageFile` 특성을 `<%@ Page %>` 지시문을 제거 합니다.
 
 S 페이지 코드 숨김 클래스에 다음 코드를 추가 합니다 `Page_Load` 이벤트 처리기:
-
 
 [!code-csharp[Main](displaying-binary-data-in-the-data-web-controls-cs/samples/sample6.cs)]
 
@@ -167,14 +143,11 @@ S 페이지 코드 숨김 클래스에 다음 코드를 추가 합니다 `Page_L
 
 만든이 페이지를 사용 하 여 특정 범주의 그림 방문 하 여 볼 수 있습니다 `DisplayCategoryPicture.aspx?CategoryID=categoryID`합니다. 그림 11은 음료 범주의 그림에서 볼 수 있는 `DisplayCategoryPicture.aspx?CategoryID=1`합니다.
 
-
 [![그림이 표시 됩니다 음료 범주 s](displaying-binary-data-in-the-data-web-controls-cs/_static/image11.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image17.png)
 
 **그림 11**: 음료 범주의 그림이 표시 됩니다 ([클릭 하 여 큰 이미지 보기](displaying-binary-data-in-the-data-web-controls-cs/_static/image18.png))
 
-
 경우에 방문할 때 `DisplayCategoryPicture.aspx?CategoryID=categoryID`'System.Byte ' 형식으로 ' System.DBNull' 종류의 개체를 캐스팅할 수 없습니다 읽는 예외가 발생 하면,이 일으킬 수 있는 두 가지 있습니다. 먼저 합니다 `Categories` 테이블 s `Picture` 열에서 허용 `NULL` 값입니다. 그러나 `DisplayCategoryPicture.aspx` 페이지에서 아닌 것으로 가정`NULL` 현재 값입니다. `Picture` 의 속성을 `CategoriesDataTable` 있을 경우 직접 액세스할 수 없습니다를 `NULL` 값입니다. 허용 하려는 경우 `NULL` 에 대 한 값을 `Picture` 열 d 포함 하려면 다음 조건:
-
 
 [!code-csharp[Main](displaying-binary-data-in-the-data-web-controls-cs/samples/sample7.cs)]
 
@@ -185,7 +158,6 @@ S 페이지 코드 숨김 클래스에 다음 코드를 추가 합니다 `Page_L
 > [!NOTE]
 > 때마다는 `DisplayCategoryPicture.aspx` 가 방문 하면 데이터베이스를 액세스 하 고 지정 된 범주의 그림 데이터가 반환 됩니다. 그러나 범주의 그림에는 사용자가 마지막으로 본 후 변경 되지 않았으면, 불필요 한 노동력 낭비입니다. 에 대 한 HTTP를 사용 하면 다행히 *조건부 가져옵니다*합니다. 조건부 GET을 사용 하 여 HTTP 요청을 하는 클라이언트를 따라 보냅니다는 [ `If-Modified-Since` HTTP 헤더](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html) 클라이언트가 웹 서버에서이 리소스를 마지막으로 검색 시간과 날짜를 제공 하는 합니다. 웹 서버를 사용 하 여 응답할 수 있습니다이 날짜를 지정 하는 이후 콘텐츠가 변경 되지 않은 경우는 [수정 되지 않음 상태 코드 (304)](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) 요청 된 리소스의 콘텐츠를 다시 보내면 포기 하 고 있습니다. 즉,이 기술을 사용 클라이언트에서 마지막으로 액세스 하므로 수정 되지 않은 경우에 다시 리소스에 대 한 콘텐츠를 보낼 수 없도록 웹 서버를 필요가 없습니다.
 
-
 그러나이 동작을 구현 하 추가 해야를 `PictureLastModified` 열을를 `Categories` 캡처할 때 테이블을 `Picture` 열을 확인 하기 위한 코드 뿐만 아니라 마지막으로 업데이트를 `If-Modified-Since` 헤더입니다. 대 한 자세한 내용은 합니다 `If-Modified-Since` 헤더 및 조건부 GET 워크플로 참조 하세요 [RSS 해커에 대 한 HTTP 조건부 GET](http://fishbowl.pastiche.org/2002/10/21/http_conditional_get_for_rss_hackers) 및 [는 자세히 살펴보고 ASP.NET 페이지에서 HTTP 요청을 수행](http://aspnet.4guysfromrolla.com/articles/122204-1.aspx)합니다.
 
 ## <a name="step-4-displaying-the-category-pictures-in-a-gridview"></a>4단계: GridView의 범주 사진 표시
@@ -194,24 +166,19 @@ S 페이지 코드 숨김 클래스에 다음 코드를 추가 합니다 `Page_L
 
 S 보강할 수 있도록 합니다 `Categories` GridView에서 `DisplayOrDownloadData.aspx` 각 범주의 그림 표시로 이미지 필드를 추가 하 여 합니다. 단순히는 이미지 필드를 추가 하 고 설정 해당 `DataImageUrlField` 하 고 `DataImageUrlFormatString` 속성을 `CategoryID` 및 `DisplayCategoryPicture.aspx?CategoryID={0}`, 각각. 이 렌더링 하는 GridView 열을 만듭니다는 `<img>` 요소입니다 `src` 참조 특성 `DisplayCategoryPicture.aspx?CategoryID={0}`여기서 {0} GridView 행 s 바뀝니다 `CategoryID` 값입니다.
 
-
 ![GridView에는 이미지 필드를 추가 합니다.](displaying-binary-data-in-the-data-web-controls-cs/_static/image12.gif)
 
 **그림 12**: GridView에는 이미지 필드를 추가 합니다.
 
-
 Soothe 같습니다 GridView가 선언적 구문에는 이미지 필드를 추가한 후 다음:
-
 
 [!code-aspx[Main](displaying-binary-data-in-the-data-web-controls-cs/samples/sample8.aspx)]
 
 브라우저를 통해이 페이지를 보려면 잠시 시간이 소요 됩니다. 이제 각 레코드 범주에 대 한 그림을 포함 하는 방법을 note 합니다.
 
-
 [![각 행에 대 한 s 그림의 범주 표시](displaying-binary-data-in-the-data-web-controls-cs/_static/image13.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image19.png)
 
 **그림 13**: 각 행에 대 한 범주의 그림 표시 됩니다 ([클릭 하 여 큰 이미지 보기](displaying-binary-data-in-the-data-web-controls-cs/_static/image20.png))
-
 
 ## <a name="summary"></a>요약
 

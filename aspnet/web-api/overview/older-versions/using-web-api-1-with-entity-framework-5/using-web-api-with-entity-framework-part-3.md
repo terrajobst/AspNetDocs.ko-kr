@@ -8,12 +8,12 @@ ms.date: 07/04/2012
 ms.assetid: 6b9ae3c4-0274-4170-a1bb-9df9c546b2a9
 msc.legacyurl: /web-api/overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-3
 msc.type: authoredcontent
-ms.openlocfilehash: de4bb063d2a6c1bdb4aeffdadb161ef19efd2b78
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: bb9c234f541308c2165c32de29c97663e4d76f50
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59390950"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134745"
 ---
 # <a name="part-3-creating-an-admin-controller"></a>3부: 관리 컨트롤러 만들기
 
@@ -35,7 +35,6 @@ ms.locfileid: "59390950"
 
 > [!NOTE]
 > 경우는 **모델 클래스** 드롭다운 표시 하지 않습니다 모든 모델 클래스를 프로젝트를 컴파일 되었는지 확인 합니다. Entity Framework 컴파일된 어셈블리를 해야 하므로 리플렉션을 사용 합니다.
-
 
 선택 "&lt;새 데이터 컨텍스트에&gt;" 열립니다 합니다 **새 데이터 컨텍스트에** 대화 합니다. 데이터 컨텍스트 이름을 `ProductStore.Models.OrdersContext`입니다.
 

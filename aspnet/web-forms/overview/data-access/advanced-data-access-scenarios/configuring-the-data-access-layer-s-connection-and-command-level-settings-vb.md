@@ -8,12 +8,12 @@ ms.date: 08/03/2007
 ms.assetid: d57dfa2b-d627-45cb-b5b1-abbf3159d770
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/configuring-the-data-access-layer-s-connection-and-command-level-settings-vb
 msc.type: authoredcontent
-ms.openlocfilehash: a6097a32f0a67436b786fcdd808964ac6b832439
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 5c66514dffea5b25f616ffaf9c595b5270c1082e
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59419576"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133394"
 ---
 # <a name="configuring-the-data-access-layers-connection--and-command-level-settings-vb"></a>데이터 액세스 레이어의 연결 및 명령 수준 설정 구성(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59419576"
 [코드를 다운로드](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_72_VB.zip) 또는 [PDF 다운로드](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/datatutorial72vb1.pdf)
 
 > 자동으로 입력 데이터 집합에서 TableAdapters 데이터베이스에 연결 명령을 실행 하 고 결과 사용 하 여 DataTable을 채우는 주의 합니다. 하지만 TableAdapter에 데이터베이스 연결 및 명령 수준 설정에 액세스 하는 방법을 알아보겠습니다 직접 이러한 세부 정보 및이 자습서에서는 처리 하려는 경우 경우가 있습니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -50,24 +49,19 @@ Microsoft.NET Framework는 다양 한 데이터와 함께 작동 하도록 특�
 
 각 TableAdapter 클래스에는 `Connection` 데이터베이스 연결 정보를 지정 하는 속성입니다. 이 속성의 데이터 형식 및 `ConnectionString` 값 TableAdapter 구성 마법사에서 선택한 항목에 의해 결정 됩니다. 회수는 먼저 TableAdapter 형식화 된 데이터 집합을 추가할 때이 마법사에서는 데이터베이스에 대 한 원본 (그림 1 참조). 이 첫 번째 단계에서 드롭 다운 목록 데이터 연결 서버 탐색기에서에서 다른 데이터베이스를 비롯 하 여 구성 파일에 지정 된 해당 데이터베이스를 포함 합니다. 사용 하려는 데이터베이스 드롭다운 목록에 없는 경우 새 연결 단추를 클릭 하 고 필요한 연결 정보를 제공 하 여 새 데이터베이스 연결을 지정할 수 있습니다.
 
-
 [![TableAdapter 구성 마법사의 첫 번째 단계](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image2.png)](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image1.png)
 
 **그림 1**: TableAdapter 구성 마법사의 첫 번째 단계 ([클릭 하 여 큰 이미지 보기](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image3.png))
-
 
 Let s TableAdapter s에 대 한 코드를 검사할 잠시 `Connection` 속성입니다. 설명한 것 처럼 합니다 [데이터 액세스 레이어 만들기](../introduction/creating-a-data-access-layer-vb.md) 자습서, 클래스 뷰 창으로 이동 하 고 드릴 다운 적절 한 클래스에 다음 멤버 이름을 두 번 클릭 하 여 자동으로 생성 된 TableAdapter 코드를 볼 수 있습니다.
 
 보기 메뉴로 이동 하 고 클래스 뷰를 선택 하 여 (또는 Ctrl + Shift + C를 눌러) 클래스 보기 창으로 이동 합니다. 클래스 뷰 창의 위쪽 절반에서 드릴 다운 하는 `NorthwindTableAdapters` 네임 스페이스를 선택 하 고는 `ProductsTableAdapter` 클래스. 이 표시 됩니다는 `ProductsTableAdapter`의 멤버 아래에 있는 그림 2 에서처럼 클래스 보기의 절반입니다. 두 번 클릭 합니다 `Connection` 속성을 해당 코드를 참조 하세요.
 
-
 ![자동으로 생성 된 코드를 보려면 클래스 뷰에서 연결 속성을 두 번 클릭](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image4.png)
 
 **그림 2**: 자동으로 생성 된 코드를 보려면 클래스 뷰에서 연결 속성을 두 번 클릭
 
-
 TableAdapter가의 `Connection` 속성 및 기타 연결 관련 코드 다음과 같습니다.
-
 
 [!code-vb[Main](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/samples/sample1.vb)]
 
@@ -84,17 +78,13 @@ TableAdapter 클래스의 인스턴스가 만들어질 때, 멤버 변수 `_conn
 > [!NOTE]
 > A *연결 문자열* 는 데이터베이스, 인증 자격 증명 및 기타 데이터베이스 관련 설정의 위치를 사용 하려면 공급자와 같은 데이터베이스 연결 정보를 지정 하는 문자열입니다. 다양 한 데이터 저장소 및 공급자에서 사용 되는 연결 문자열 패턴의 목록에 대해서 [ConnectionStrings.com](http://www.connectionstrings.com/)합니다.
 
-
 에 설명 된 대로 합니다 [데이터 액세스 레이어 만들기](../introduction/creating-a-data-access-layer-vb.md) 자습서에서는 입력 데이터 집합이의 자동으로 생성 된 클래스는 partial 클래스를 사용 하 여 확장할 수 있습니다. 먼저 프로젝트에 새 하위 폴더를 만듭니다 `ConnectionAndCommandSettings` 아래는 `~/App_Code/DAL` 폴더입니다.
-
 
 ![ConnectionAndCommandSettings 라는 하위 폴더를 추가 합니다.](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image5.png)
 
 **그림 3**: 라는 하위 폴더를 추가 합니다. `ConnectionAndCommandSettings`
 
-
 라는 새 클래스 파일 추가 `ProductsTableAdapter.ConnectionAndCommandSettings.vb` 다음 코드를 입력 합니다.
-
 
 [!code-vb[Main](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/samples/sample2.vb)]
 
@@ -108,11 +98,9 @@ TableAdapter 클래스의 인스턴스가 만들어질 때, 멤버 변수 `_conn
 
 열기는 `Northwind` 데이터 집합을 클릭 합니다 `ProductsTableAdapter` 디자이너에서 속성 창으로 이동 합니다. 이 표시 됩니다는 `ConnectionModifier` 기본값인으로 `Assembly`합니다. 있도록를 `Connection` 변경 형식화 된 데이터 집합의 어셈블리 외부에서 사용할 수 있는 속성을 `ConnectionModifier` 속성을 `Public`입니다.
 
-
 [![연결 속성 s 액세스 가능성 수준 ConnectionModifier 속성을 통해 구성할 수 있습니다.](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image7.png)](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image6.png)
 
 **그림 4**: `Connection` 를 통해 액세스 가능성 수준을 구성할 수 있습니다 s 속성을 `ConnectionModifier` 속성 ([전체 크기 이미지를 보려면 클릭](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/_static/image8.png))
-
 
 데이터 집합을 저장 한 다음를 반환 합니다 `ProductsBLL` 클래스입니다. 이전에 기존 방법 중 하나로 이동 하 고 입력 `Adapter` 및 IntelliSense를 불러오려면 기간 키를 누릅니다. 목록에 포함 해야는 `Connection` 속성에는 이제 프로그래밍 방식으로 읽거나 있습니다 BLL에서 연결 수준의 설정은 모든 할당을 의미 합니다.
 
@@ -132,7 +120,6 @@ TableAdapter의 기본 쿼리 외에도 다양 한 메서드를 포함할 수 �
 
 Let s 잠시에서 생성 된 코드를 확인 합니다 `ProductsTableAdapter` 에 `Northwind` 이러한 두 속성 및 해당 멤버 변수를 지원 및 도우미 메서드에 대 한 데이터 집합:
 
-
 [!code-vb[Main](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/samples/sample3.vb)]
 
 에 대 한 코드를 `Adapter` 하 고 `CommandCollection` 속성에는 항목을 밀접 하 게 모방는 `Connection` 속성입니다. 속성을 사용 하는 개체를 보유할 멤버 변수가 있습니다. 속성을 `Get` 접근자는 해당 멤버 변수를 확인 하 여 시작 `Nothing`합니다. 그렇다면 멤버 변수의 인스턴스를 만들고 핵심 명령 관련 속성을 할당 하는 초기화 메서드 호출 됩니다.
@@ -147,14 +134,12 @@ TableAdapter에만 단일에 있으므로 `Connection` 속성인 연결 수준�
 
 수 있도록 합니다 `CommandTimeout` BLL은으로 조정 해야 하는 속성에는 다음 추가 `Public` 메서드를 합니다 `ProductsDataTable` 2 단계에서에서 만든 partial 클래스 파일을 사용 하 여 (`ProductsTableAdapter.ConnectionAndCommandSettings.vb`):
 
-
 [!code-vb[Main](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb/samples/sample4.vb)]
 
 이 메서드는 TableAdapter 인스턴스에서 모든 명령 문제에 대 한 명령 제한 시간을 설정 하려면 BLL 또는 프레젠테이션 계층에서 호출할 수 없습니다.
 
 > [!NOTE]
 > `Adapter` 하 고 `CommandCollection` 속성으로 표시 됩니다 `Private`, 즉 TableAdapter 내의 코드에서 액세스할 수만 있습니다. 달리는 `Connection` 속성, 이러한 액세스 한정자는 구성할 수 없습니다. 따라서 아키텍처의 다른 계층에 명령 수준 속성을 노출 하는 경우 제공 하려면 위에서 설명한 partial 클래스 접근 방식을 사용 해야 합니다는 `Public` 메서드 또는 속성을 읽거나 쓸는 `Private` 명령 개체입니다.
-
 
 ## <a name="summary"></a>요약
 

@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: f4cc2d40-6a78-429b-b06f-07d000d4caad
 msc.legacyurl: /web-forms/overview/deployment/advanced-enterprise-web-deployment/excluding-files-and-folders-from-deployment
 msc.type: authoredcontent
-ms.openlocfilehash: 4da291af4042e6e09c6917703b160ca717eecd15
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: a262ce43d7199fb1015d54d0b7c213857c360946
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59407993"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133888"
 ---
 # <a name="excluding-files-and-folders-from-deployment"></a>배포에서 파일 및 폴더 제외
 
@@ -22,7 +22,6 @@ ms.locfileid: "59407993"
 [PDF 다운로드](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > 이 설명 하는 방법에서 제외할 수 있습니다 파일 및 폴더 웹 배포 패키지를 빌드하고 웹 응용 프로그램 프로젝트를 패키지 합니다.
-
 
 이 항목의 Fabrikam, Inc. 라는 가상 회사의 엔터프라이즈 배포 요구 사항 기반 자습서 시리즈의 일부를 형성 합니다. 샘플 솔루션을 사용 하 여이 자습서 시리즈&#x2014;는 [Contact Manager 솔루션](../web-deployment-in-the-enterprise/the-contact-manager-solution.md)&#x2014;현실적인 수준의 복잡성을 Windows Communication ASP.NET MVC 3 응용 프로그램을 포함 하 여 웹 응용 프로그램을 나타내는 Foundation (WCF) 서비스 및 데이터베이스 프로젝트입니다.
 
@@ -48,7 +47,6 @@ Visual Studio에서 웹 응용 프로그램 프로젝트 속성을 구성한 경
 > [!NOTE]
 > 포함할 파일을 결정 하는 논리는이 파일에 포함 되어 있습니다.   
 > *%PROGRAMFILES%\MSBuild\Microsoft\VisualStudio\v10.0\Web\ Microsoft.Web.Publishing.OnlyFilesToRunTheApp.targets*
-
 
 ## <a name="excluding-specific-files-and-folders"></a>특정 파일 및 폴더 제외
 
@@ -77,9 +75,7 @@ Visual Studio에서 웹 응용 프로그램 프로젝트 속성을 구성한 경
 
 이 기본 구조가 *. wpp.targets* 파일:
 
-
 [!code-xml[Main](excluding-files-and-folders-from-deployment/samples/sample1.xml)]
-
 
 각 항목 라는 항목 메타 데이터 요소를 포함 하는 참고 **FromTarget**합니다. 이 값은 빌드 프로세스를 영향을 주지는 선택적 값 단순히 특정 파일 또는 폴더 생략 된 이유를 나타내는 데 사용 되 빌드 로그를 검토 하는 사용자가 하는 경우.
 

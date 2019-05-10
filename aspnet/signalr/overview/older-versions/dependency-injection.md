@@ -8,12 +8,12 @@ ms.date: 05/15/2013
 ms.assetid: eaa206c4-edb3-487e-8fcb-54a3261fed36
 msc.legacyurl: /signalr/overview/older-versions/dependency-injection
 msc.type: authoredcontent
-ms.openlocfilehash: 615120684d032562ba2570e22b2dcdeaeaae340e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: de838ab6b3a299eb1e5ebeb9fa3c583478ce3e56
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59404093"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65117064"
 ---
 # <a name="dependency-injection-in-signalr-1x"></a>SignalR 1.x에서 종속성 주입
 
@@ -75,7 +75,6 @@ ms.locfileid: "59404093"
 
 > [!NOTE]
 > "IoC"는 "제어 반전"에 대 한 일반적인 패턴을 설정 하는 프레임 워크 응용 프로그램 코드를 호출 하는 경우이 합니다. IoC 컨테이너 생성 개체를 "반전" 컨트롤의 일반적인 흐름입니다.
-
 
 ## <a name="using-ioc-containers-in-signalr"></a>SignalR의 IoC 컨테이너 사용
 

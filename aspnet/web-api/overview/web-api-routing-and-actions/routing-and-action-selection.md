@@ -8,12 +8,12 @@ ms.date: 12/14/2018
 ms.assetid: bcf2d223-cb7f-411e-be05-f43e96a14015
 msc.legacyurl: /web-api/overview/web-api-routing-and-actions/routing-and-action-selection
 msc.type: authoredcontent
-ms.openlocfilehash: 238efd312a73e2452ca5f679f2b8f5ed1336c4dc
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 62114e56fb29e80c93b82dcb78ce2bc2a123a83b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59385880"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133661"
 ---
 # <a name="routing-and-action-selection-in-aspnet-web-api"></a>라우팅 및 ASP.NET Web API에서에서 작업 선택
 
@@ -23,7 +23,6 @@ ms.locfileid: "59385880"
 
 > [!NOTE]
 > 라우팅의 개괄적인 개요를 참조 하세요 [ASP.NET Web API에서 라우팅](routing-in-aspnet-web-api.md)합니다.
-
 
 이 문서에서는 라우팅 프로세스의 세부 정보를 살펴봅니다. Web API 프로젝트를 만들고 일부 요청이 가져올 없는 찾기 예상 대로 라우팅할 바랍니다이 기사의 데 도움이 됩니다.
 
@@ -135,7 +134,6 @@ URI 경로 "api/루트/8" 인 경우 사전 두 값이 포함 됩니다.
 
 > [!NOTE]
 > 기본 바인딩 규칙을 재정의 하는 것이 가능 합니다. 참조 [내부적 WebAPI 매개 변수 바인딩](https://blogs.msdn.com/b/jmstall/archive/2012/05/11/webapi-parameter-binding-under-the-hood.aspx)합니다.
-
 
 배경을 사용 하 여 작업 선택 알고리즘은 다음과 같습니다.
 

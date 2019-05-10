@@ -8,17 +8,16 @@ ms.date: 05/30/2013
 ms.assetid: 37e005e9-2f1c-4039-b6ef-15612e0fdbc9
 msc.legacyurl: /aspnet/overview/owin-and-katana
 msc.type: chapter
-ms.openlocfilehash: a8ba1ca6b54ae58c23e51981cedebc636fba679e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 24891736a9fee3cb6c14540cd0b1efe41aa7a841
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59385594"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118180"
 ---
 # <a name="owin-and-katana"></a>OWIN 및 Katana
 
 > Katana는 유연한 집합 빌드하고.NET OWIN 기반 웹 응용 프로그램에 대 한 Open Web Interface를 호스트 하기 위한 구성 요소입니다.
-
 
 - [프로젝트 Katana 개요](an-overview-of-project-katana.md)
 - [OWIN 및 Katana 시작](getting-started-with-owin-and-katana.md)

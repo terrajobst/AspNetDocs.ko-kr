@@ -8,12 +8,12 @@ ms.date: 11/13/2006
 ms.assetid: bbd6b7f7-b98a-48b4-93f3-341d6a4f53c0
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting-with-the-datalist-and-repeater/paging-report-data-in-a-datalist-or-repeater-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 69a6843783dad3d8fcd8a5b93c9d8a31f9bb8ec0
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f51c720290e59e0f79d105bc9412c19db1870278
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59383241"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133969"
 ---
 # <a name="paging-report-data-in-a-datalist-or-repeater-control-vb"></a>DataList 또는 반복기 컨트롤에서 보고서 데이터 페이징(VB)
 
@@ -23,7 +23,6 @@ ms.locfileid: "59383241"
 
 > DataList 또는 Repeater를 모두 제공 페이징 또는 정렬 지원,이 자습서에는 자동 DataList 또는 Repeater 표시 인터페이스를 훨씬 더 유연한 페이징 및 데이터에 대 한 허용 하는 페이징 지원을 추가 하는 방법을 보여 줍니다.
 
-
 ## <a name="introduction"></a>소개
 
 페이징 및 정렬 기능이 두 가지 매우 일반적인 온라인 응용 프로그램에서 데이터를 표시 하는 경우입니다. 예를 들어, 온라인 서 점에서에서 ASP.NET 설명서를 검색할 때 등의 서적 수백 있을 수 있지만 검색 결과 나열 하는 보고서 페이지당 10 번만 일치 항목을 나열 합니다. 또한 제목, 가격, 페이지 수, 저자 이름으로 결과 정렬할 수 있습니다. 설명한 대로 합니다 [페이징 및 정렬 보고서 데이터](../paging-and-sorting/paging-and-sorting-report-data-vb.md) 자습서, 모든 확인란의 눈금에 사용할 수 있는 기본 제공 페이징 지원을 제공 하는 GridView, DetailsView 및 FormView 컨트롤입니다. GridView에는 정렬 지원을 포함 됩니다.
@@ -32,7 +31,6 @@ ms.locfileid: "59383241"
 
 > [!NOTE]
 > 이 자습서는 단독으로 페이징에 중점을 둡니다. 다음 자습서에서는 정렬 기능 추가 살펴보겠습니다.
-
 
 ## <a name="step-1-adding-the-paging-and-sorting-tutorial-web-pages"></a>1단계: 자습서 웹 페이지를 정렬 및 페이징 추가
 
@@ -44,30 +42,23 @@ ms.locfileid: "59383241"
 - `SortingWithDefaultPaging.aspx`
 - `SortingWithCustomPaging.aspx`
 
-
 ![PagingSortingDataListRepeater 폴더를 만들고 자습서 ASP.NET 페이지를 추가 합니다.](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image1.png)
 
 **그림 1**: 만들기는 `PagingSortingDataListRepeater` 폴더 및 자습서 ASP.NET 페이지 추가
 
-
 을 엽니다는 `Default.aspx` 끌어서 페이지를 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤을 `UserControls` 디자인 화면으로 폴더입니다. 만든이 사용자 정의 컨트롤을 [마스터 페이지 및 사이트 탐색](../introduction/master-pages-and-site-navigation-vb.md) 자습서에서는 사이트 맵을 열거 하 고 글머리 기호 목록에 현재 섹션에서 이러한 자습서를 표시 합니다.
-
 
 [![Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image3.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image2.png)
 
 **그림 2**: 추가 된 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤 `Default.aspx` ([클릭 하 여 큰 이미지 보기](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image4.png))
 
-
 글머리 기호 목록에 표시할 페이징 및 자습서를 만들 것을 정렬 하려면 사이트 맵을 추가 해야 합니다. 열기는 `Web.sitemap` 파일과 DataList 사이트 맵 노드 태그를 사용 하 여 편집 및 삭제 한 후 다음 태그를 추가 합니다.
 
-
 [!code-xml[Main](paging-report-data-in-a-datalist-or-repeater-control-vb/samples/sample1.xml)]
-
 
 ![사이트 맵을 업데이트 하 여 새 ASP.NET 페이지를 포함 합니다.](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image5.png)
 
 **그림 3**: 사이트 맵을 업데이트 하 여 새 ASP.NET 페이지를 포함 합니다.
-
 
 ## <a name="a-review-of-paging"></a>페이징에 대 한 검토
 
@@ -79,11 +70,9 @@ ms.locfileid: "59383241"
 
 DataList 또는 Repeater 컨트롤의 기본 페이징을 구현 하려면를 사용 하면 합니다 [ `PagedDataSource` 클래스](https://msdn.microsoft.com/library/system.web.ui.webcontrols.pageddatasource.aspx) 주위에서 래퍼로 `ProductsDataTable` 내용이 페이징 하는 합니다. 합니다 `PagedDataSource` 클래스에는 `DataSource` 열거 가능한 개체에 할당할 수 있는 속성 및 [ `PageSize` ](https://msdn.microsoft.com/library/system.web.ui.webcontrols.pageddatasource.pagesize.aspx) 하 고 [ `CurrentPageIndex` ](https://msdn.microsoft.com/library/system.web.ui.webcontrols.pageddatasource.currentpageindex.aspx) 레코드 수를 나타내는 속성 페이지당 표시 및 현재 페이지 인덱스입니다. 이러한 속성을 설정 합니다 `PagedDataSource` 데이터 웹 컨트롤의 데이터 원본으로 사용할 수 있습니다. `PagedDataSource`열거 하는 경우 해당 내부 레코드의 적절 한 하위 집합만 반환 됩니다 `DataSource` 기반으로 합니다 `PageSize` 및 `CurrentPageIndex` 속성입니다. 그림 4의 기능을 보여 주며는 `PagedDataSource` 클래스입니다.
 
-
 ![PagedDataSource 페이징할 수 있는 인터페이스를 사용 하 여 열거 가능한 개체를 래핑합니다.](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image6.png)
 
 **그림 4**: `PagedDataSource` 페이징할 수 있는 인터페이스를 사용 하 여 열거 가능한 개체를 래핑합니다.
-
 
 `PagedDataSource` 개체 일 수 있습니다 생성 및 비즈니스 논리 계층에서 직접 구성 하 고 DataList 또는 Repeater ObjectDataSource 통해 바인딩할 또는 수 만들어지고 ASP.NET의 페이지 코드 숨김 클래스에 직접 구성 합니다. 후자의 방법을 사용 하는 경우 해야 ObjectDataSource를 사용 하 여 포기 하 고 대신 페이징된 데이터 DataList 또는 Repeater에 프로그래밍 방식으로 바인딩.
 
@@ -102,26 +91,21 @@ DataList 또는 Repeater 컨트롤의 기본 페이징을 구현 하려면를 �
 
 `GetProductsAsPagedDataSource` 검색 하 여 시작 *모든* 에 있는 레코드가 `GetProducts()`합니다. 그런 다음 만듭니다는 `PagedDataSource` 설정 개체를 해당 `CurrentPageIndex` 및 `PageSize` 속성 값의 전달 기능을 `pageIndex` 및 `pageSize` 매개 변수입니다. 구성 된이 반환 하 여 메서드 완료 `PagedDataSource`:
 
-
 [!code-vb[Main](paging-report-data-in-a-datalist-or-repeater-control-vb/samples/sample2.vb)]
 
 ## <a name="step-3-displaying-product-information-in-a-datalist-using-default-paging"></a>3단계: 기본 페이징을 사용 하 여 DataList에서 제품 정보를 표시 합니다.
 
 사용 하 여 합니다 `GetProductsAsPagedDataSource` 에 추가 하는 메서드를 `ProductsBLL` 클래스를 만들 수 있습니다 이제 DataList 또는 Repeater 기본 페이징을 제공 하는 합니다. 열어서 시작 합니다 `Paging.aspx` 페이지를 `PagingSortingDataListRepeater` 폴더 및 s DataList 설정 디자이너 도구 상자에서 끌어서 DataList `ID` 속성을 `ProductsDefaultPaging`. DataList s 스마트 태그를 만들 라는 한 새 ObjectDataSource `ProductsDefaultPagingDataSource` 사용 하 여 데이터를 검색할 수 있도록 구성 하 고는 `GetProductsAsPagedDataSource` 메서드.
 
-
 [![ObjectDataSource를 만들고 GetProductsAsPagedDataSource () 메서드를 사용 하도록 구성](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image8.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image7.png)
 
 **그림 5**: ObjectDataSource를 만들고 사용 하도록 구성 합니다 `GetProductsAsPagedDataSource` `()` 메서드 ([클릭 하 여 큰 이미지 보기](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image9.png))
 
-
 UPDATE, INSERT에서에서 드롭 다운 목록을 설정 하 고 탭 (없음)를 삭제 합니다.
-
 
 [![UPDATE, INSERT에에서 드롭다운 목록이 설정 하 고 탭 (없음)을 삭제 합니다.](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image11.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image10.png)
 
 **그림 6**: UPDATE, INSERT에에서 드롭다운 목록이 설정 하 고 탭 (없음)을 삭제 ([클릭 하 여 큰 이미지 보기](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image12.png))
-
 
 있으므로 `GetProductsAsPagedDataSource` 마법사 이러한 매개 변수 값의 원본에 대 한 요청, 메서드는 두 개의 입력된 매개 변수가 필요 합니다.
 
@@ -129,38 +113,30 @@ UPDATE, INSERT에서에서 드롭 다운 목록을 설정 하 고 탭 (없음)�
 
 특히 쿼리 문자열 필드 pageIndex 및에 대 한 pageSize를 사용 합니다 `pageIndex` 및 `pageSize` 매개 변수를 각각 (그림 7 참조). 시간을 내어 이러한 매개 변수에 대 한 기본값을 설정으로 쿼리 문자열 값은 사용자가이 페이지를 처음 방문할 때 표시 되지 않습니다. 에 대 한 `pageIndex`을 기본값 0으로 설정 (데이터의 첫 페이지에 표시 됩니다) 및 `pageSize` 4가 기본값입니다.
 
-
 [![PageIndex 및 pageSize 매개 변수에 대 한 원본으로 쿼리 문자열 사용](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image14.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image13.png)
 
 **그림 7**: 쿼리 문자열에 대 한 원본으로 사용 합니다 `pageIndex` 및 `pageSize` 매개 변수 ([클릭 하 여 큰 이미지 보기](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image15.png))
 
-
 ObjectDataSource를 구성한 후 자동으로 만들어지고는 `ItemTemplate` DataList에 대 한 합니다. 사용자 지정을 `ItemTemplate`의 제품 이름, 범주 및 공급자만 표시 되도록 합니다. DataList s를 설정할 수도 `RepeatColumns` 속성을 2, 해당 `Width` 100% 및 해당 `ItemStyle` s `Width` 50%로 합니다. 이러한 너비 설정을 두 개의 열에 같은 간격을 제공 합니다.
 
 다음과 같이 변경한 후 DataList 및 ObjectDataSource의 태그 다음과 비슷하게 표시 됩니다.
-
 
 [!code-aspx[Main](paging-report-data-in-a-datalist-or-repeater-control-vb/samples/sample3.aspx)]
 
 > [!NOTE]
 > 에서는 모든 업데이트를 수행 하지 않으며,이 자습서에서 삭제 기능 이므로 렌더링 된 페이지 크기를 줄이기 위해 DataList의 뷰 상태를 비활성화할 수 있습니다.
 
-
 처음에 브라우저를 통해이 페이지를 방문 하는 경우는 `pageIndex` 나 `pageSize` querystring 매개 변수가 제공 됩니다. 따라서 0에서 4의 기본값을 사용 됩니다. 그림 8에서 알 수 있듯이,이 인해 처음 네 개 제품을 표시 하는 DataList 합니다.
-
 
 [![첫 번째는 네 가지 제품 나와 있습니다.](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image17.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image16.png)
 
 **그림 8**: 첫 번째는 네 가지 제품 나열 됩니다 ([클릭 하 여 큰 이미지 보기](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image18.png))
 
-
 없이 데이터의 두 번째 페이지로 이동 하는 사용자가 현재 더 간단 하 게 여기 페이징 인터페이스를 의미 합니다. 4 단계에서 페이징 인터페이스를 만들겠습니다. 지금은 그러나 페이징을 수행할 수 있습니다 직접 querystring 페이징 조건을 지정 하 여 합니다. 예를 들어, 두 번째 페이지를 보려면에서 s 브라우저 주소 표시줄에서 URL을 변경 `Paging.aspx` 에 `Paging.aspx?pageIndex=2` Enter를 누릅니다. 이렇게 하면 표시 되는 데이터의 두 번째 페이지 (그림 9 참조).
-
 
 [![두 번째 페이지의 데이터가 표시 됩니다.](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image20.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image19.png)
 
 **그림 9**: 두 번째 페이지의 데이터가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image21.png))
-
 
 ## <a name="step-4-creating-the-paging-interface"></a>4단계: 페이징 인터페이스를 만드는 방법
 
@@ -174,7 +150,6 @@ ObjectDataSource를 구성한 후 자동으로 만들어지고는 `ItemTemplate`
 DataList 및 반복기의 경우는에서는 페이징 인터페이스를 결정 하 고 구현 하는 일을 담당 합니다. 페이지에서 필요한 웹 컨트롤을 만들고 특정 페이징 인터페이스 단추를 클릭할 때 요청된 된 페이지를 표시 해야 합니다. 또한 특정 페이징 인터페이스 컨트롤을 사용할 수 없게 해야 합니다. 예를 들어, 다음을 사용 하 여 데이터의 첫 페이지를 볼 때 이전, 처음, 마지막으로 인터페이스를 첫 번째 및 이전 단추를 사용할 수 없게 됩니다.
 
 이 자습서에서는 let가 사용 하 여 다음에 대 한 이전, 먼저 마지막 인터페이스입니다. 네 개의 단추 웹 컨트롤이 페이지에 추가 하 고 설정 해당 `ID` s `FirstPage`를 `PrevPage`, `NextPage`, 및 `LastPage`합니다. 설정 된 `Text` 속성을 &lt; &lt; 먼저 &lt; Prev, 다음 &gt;, 및 마지막 &gt; &gt; 합니다.
-
 
 [!code-aspx[Main](paging-report-data-in-a-datalist-or-repeater-control-vb/samples/sample4.aspx)]
 
@@ -191,11 +166,9 @@ DataList 및 반복기의 경우는에서는 페이징 인터페이스를 결정
 
 페이징 인터페이스 마지막 단추를 포함 하는 경우 반드시 다시 게시할 때마다에 마지막 페이지 인덱스 마지막 단추를 클릭할 때 확인할 수 있습니다 있도록 통해 페이징 되 고 레코드의 총을 기억 합니다. 이 용이 하 게 만들려면를 `TotalRowCount` 뷰 상태에 해당 값을 유지 하는 ASP.NET 페이지가 코드 숨김 클래스의 속성:
 
-
 [!code-vb[Main](paging-report-data-in-a-datalist-or-repeater-control-vb/samples/sample5.vb)]
 
 외에 `TotalRowCount`, 잠시 페이지 인덱스, 페이지 크기를 쉽게 액세스 하는 것에 대 한 페이지 수준 속성을 읽기 전용으로 만들 수 및 페이지 수:
-
 
 [!code-vb[Main](paging-report-data-in-a-datalist-or-repeater-control-vb/samples/sample6.vb)]
 
@@ -205,7 +178,6 @@ DataList 및 반복기의 경우는에서는 페이징 인터페이스를 결정
 
 이를 위해 ObjectDataSource s에 대 한 이벤트 처리기를 만들고 `Selected` 이벤트입니다. 에 `Selected` ObjectDataSource s의 반환 값에 액세스할 수는 이벤트 처리기 `Select()` 이 경우 메서드는 `PagedDataSource`합니다.
 
-
 [!code-vb[Main](paging-report-data-in-a-datalist-or-repeater-control-vb/samples/sample7.vb)]
 
 ## <a name="displaying-the-requested-page-of-data"></a>데이터의 요청된 된 페이지를 표시합니다.
@@ -213,7 +185,6 @@ DataList 및 반복기의 경우는에서는 페이징 인터페이스를 결정
 사용자가 페이징 인터페이스에서 단추 중 하나를 클릭 하면 데이터의 요청 된 페이지를 표시 해야 합니다. 쿼리 문자열을 통해 데이터 사용의 요청 된 페이지를 표시 하는 페이징 매개 변수를 지정 하므로 `Response.Redirect(url)` 사용자가의 브라우저 다시 요청을 할는 `Paging.aspx` 적절 한 페이징 매개 변수를 사용 하 여 페이지입니다. 예를 들어, 데이터의 두 번째 페이지를 표시 하려면 것은 사용자를 리디렉션할 `Paging.aspx?pageIndex=1`합니다.
 
 이 용이 하 게 만들려면를 `RedirectUser(sendUserToPageIndex)` 메서드는 사용자를 리디렉션하는 `Paging.aspx?pageIndex=sendUserToPageIndex`합니다. 그런 다음 4 명의 단추에서이 메서드를 호출 `Click` 이벤트 처리기입니다. 에 `FirstPage` `Click` 이벤트 처리기를 호출 `RedirectUser(0)`에서 첫 번째 페이지에 보낼 합니다 `PrevPage` `Click` 이벤트 처리기를 사용 하 여 `PageIndex - 1` 페이지 인덱스로; 등입니다.
-
 
 [!code-vb[Main](paging-report-data-in-a-datalist-or-repeater-control-vb/samples/sample8.vb)]
 
@@ -225,32 +196,26 @@ DataList 및 반복기의 경우는에서는 페이징 인터페이스를 결정
 
 ObjectDataSource가의 다음 추가할 `Selected` 이벤트 처리기:
 
-
 [!code-vb[Main](paging-report-data-in-a-datalist-or-repeater-control-vb/samples/sample9.vb)]
 
 이 또한이를 사용 하 여 마지막 페이지를 볼 때 다음 마지막 단추 수 없게 하는 동안 첫 번째 페이지를 볼 때 첫 번째 및 이전 단추를 비활성화 됩니다.
 
 Let s 페이징 인터페이스를 완료 하 여 사용자에 게 알리는 새로운 페이지는 다시 존재 하는 총 페이지 수 및 현재 보고 합니다. 페이지에 레이블 웹 컨트롤을 추가 하 고 설정 해당 `ID` 속성을 `CurrentPageNumber`입니다. 설정 해당 `Text` 표시 되는 현재 페이지를 포함 하는 ObjectDataSource 선택한 이벤트 처리기에서 이러한 속성 (`PageIndex + 1`) 및 페이지의 총 수 (`PageCount`).
 
-
 [!code-vb[Main](paging-report-data-in-a-datalist-or-repeater-control-vb/samples/sample10.vb)]
 
 그림 10은 `Paging.aspx` 처음 방문할 때. 쿼리 문자열 이므로 빈, DataList 기본값으로 처음 네 개 제품;를 표시 합니다. 첫 번째 및 이전 단추를 사용할 수 없습니다. (그림 11 참조)에서 다음 네 개의 레코드가;을 다음을 클릭 하면 표시 됩니다. 첫 번째 및 이전 단추를 지금 활성화 됩니다.
-
 
 [![데이터의 첫 번째 페이지 표시](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image23.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image22.png)
 
 **그림 10**: 첫 번째 페이지의 데이터가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image24.png))
 
-
 [![두 번째 페이지의 데이터가 표시 됩니다.](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image26.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image25.png)
 
 **그림 11**: 두 번째 페이지의 데이터가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image27.png))
 
-
 > [!NOTE]
 > 페이징 인터페이스 페이지당 보기 페이지를 지정할 수 있도록 하 여 더욱 향상 시킬 수 있습니다. 예를 들어, DropDownList 5, 10, 25, 50, 및 모든 같은 목록 페이지 크기 옵션을 추가할 수 있었습니다. 페이지 크기를 선택 하면 사용자 해야 다시 리디렉션됩니다 `Paging.aspx?pageIndex=0&pageSize=selectedPageSize`합니다. I 유지 판독기에 대 한 연습으로이 향상 된이 기능을 구현 합니다.
-
 
 ## <a name="using-custom-paging"></a>사용자 지정 페이징을 사용 하 여
 

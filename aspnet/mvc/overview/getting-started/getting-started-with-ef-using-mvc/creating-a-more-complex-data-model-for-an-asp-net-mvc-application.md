@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.assetid: 46f7f3c9-274f-4649-811d-92222a9b27e2
 msc.legacyurl: /mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-a-more-complex-data-model-for-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: 5deab7da776c3c43e3e2cdf42b04922678f956c7
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5c27f6fe07856db2b2961abc8fa797343d361d97
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57041860"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65120940"
 ---
 # <a name="tutorial-create-a-more-complex-data-model-for-an-aspnet-mvc-app"></a>자습서: ASP.NET MVC 앱에 대 한 더 복잡 한 데이터 모델 만들기
 
@@ -61,9 +61,7 @@ ms.locfileid: "57041860"
 
 `DisplayFormat` 특성은 날짜 형식을 명시적으로 지정하는 데 사용됩니다.
 
-
 [!code-csharp[Main](creating-a-more-complex-data-model-for-an-asp-net-mvc-application/samples/sample2.cs)]
-
 
 `ApplyFormatInEditMode` 설정은 지정 된 서식도 적용 되어야 함을 값 편집을 위해 텍스트 상자에 표시 되 면을 지정 합니다. (원하지 않을 수 있습니다 하는 일부 필드에 대 한-예를 들어 통화 값 하지 않을 텍스트 상자에 통화 기호 편집 합니다.)
 

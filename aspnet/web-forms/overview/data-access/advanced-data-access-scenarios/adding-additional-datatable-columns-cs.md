@@ -8,12 +8,12 @@ ms.date: 07/18/2007
 ms.assetid: 615f3361-f21f-4338-8bc1-fce8ae071de9
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/adding-additional-datatable-columns-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 1e1751c6969f1a278ee438c3bee6171644aacdbf
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 931a918d51c1accec1757a9370c8e611a9a038ec
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59406186"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65124448"
 ---
 # <a name="adding-additional-datatable-columns-c"></a>추가 DataTable 열 추가(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59406186"
 [코드를 다운로드](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_70_CS.zip) 또는 [PDF 다운로드](adding-additional-datatable-columns-cs/_static/datatutorial70cs1.pdf)
 
 > 입력 데이터 집합을 만들려면 TableAdapter 마법사를 사용 하는 경우 해당 DataTable 기본 데이터베이스 쿼리에서 반환 되는 열을 포함 합니다. 하지만 DataTable 경우 추가 열을 포함 해야 하는 경우가 있습니다. 이 자습서에서는 추가 DataTable 열 해야 하는 경우 저장된 프로시저는 권장 하는 이유는 무엇을 알아봅니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -48,19 +47,15 @@ TableAdapter가 기본 쿼리를 반영 하는 DataTable의 스키마의 모델�
 
 엽니다는 `NorthwindWithSprocs` 데이터 집합 마우스 오른쪽 단추로 클릭 하 고는 `ProductsDataTable`합니다. 상황에 맞는 메뉴에서 추가 선택 하 고 열을 선택 합니다.
 
-
 [![ProductsDataTable에 새 열 추가](adding-additional-datatable-columns-cs/_static/image2.png)](adding-additional-datatable-columns-cs/_static/image1.png)
 
 **그림 1**: 새 열을 추가 합니다 `ProductsDataTable` ([큰 이미지를 보려면 클릭](adding-additional-datatable-columns-cs/_static/image3.png))
 
-
 이 형식의 Column1 이라는 DataTable에 새 열이 추가 됩니다 `System.String`합니다. PriceQuartile 및 해당 형식의이 s 열 이름을 업데이트 해야 `System.Int32` 1에서 4 사이의 숫자를 포함 하는 데 사용할 때문입니다. 에 새로 추가 된 열을 선택 합니다 `ProductsDataTable` 속성 창에서 설정 및 합니다 `Name` PriceQuartile 속성 및 `DataType` 속성을 `System.Int32`입니다.
-
 
 [![새 열의 이름 및 DataType 속성 설정](adding-additional-datatable-columns-cs/_static/image5.png)](adding-additional-datatable-columns-cs/_static/image4.png)
 
 **그림 2**: 새 열 s 집합 `Name` 하 고 `DataType` 속성 ([클릭 하 여 큰 이미지 보기](adding-additional-datatable-columns-cs/_static/image6.png))
-
 
 열에서 값 열이 자동 증분 열 고유 해야 하는지 여부와 같은 설정할 수 있는 추가 속성 그림 2에서 볼 수 있듯이, 데이터베이스 여부 `NULL` 값이 허용 및 등입니다. 이러한 값을 기본값으로 설정 그대로 둡니다.
 
@@ -68,22 +63,17 @@ TableAdapter가 기본 쿼리를 반영 하는 DataTable의 스키마의 모델�
 
 이제는 `ProductsDataTable` 포함 하도록 업데이트 되었습니다를 `PriceQuartile` 열에서는 만들 준비가 된 `GetProductsWithPriceQuartile` 메서드. TableAdapter를 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 추가 쿼리를 선택 하 여 시작 합니다. 먼저 임시 SQL 문 또는 신규 또는 기존 저장된 프로시저를 사용 하려는 지 여부에 대 한 요청 하는 TableAdapter 쿼리 구성 마법사를 표시 합니다. 인할에서는 아직 가격 사분 위 수 데이터를 반환 하는 저장 프로시저 때문에이 저장된 프로시저를 만들려면 TableAdapter를 허용 하는 s 수 있습니다. 새 저장된 프로시저 만들기 옵션을 선택 하 고 클릭 합니다.
 
-
 [![우리 회사에 저장된 프로시저를 만들기 위해 TableAdapter 마법사를 지시 합니다.](adding-additional-datatable-columns-cs/_static/image8.png)](adding-additional-datatable-columns-cs/_static/image7.png)
 
 **그림 3**: TableAdapter 마법사는 저장 프로시저에 대 한 미국 만들려면 지시 ([클릭 하 여 큰 이미지 보기](adding-additional-datatable-columns-cs/_static/image9.png))
 
-
 그림 4의 후속 화면에서 마법사에서는 어떤 유형의 쿼리를 추가 합니다. 있으므로 `GetProductsWithPriceQuartile` 메서드는 모든 열 및 레코드를 반환 합니다 `Products` 테이블에서 행 옵션 및 다음 클릭을 반환 하는 선택.
-
 
 [![쿼리에서 여러 행을 반환 하는 SELECT 문의 됩니다.](adding-additional-datatable-columns-cs/_static/image11.png)](adding-additional-datatable-columns-cs/_static/image10.png)
 
 **그림 4**: 쿼리 수를 `SELECT` 문에 여러 행을 반환 하 ([큰 이미지를 보려면 클릭](adding-additional-datatable-columns-cs/_static/image12.png))
 
-
 다음에서는 묻는 `SELECT` 쿼리 합니다. 마법사에 다음 쿼리를 입력 합니다.
-
 
 [!code-sql[Main](adding-additional-datatable-columns-cs/samples/sample1.sql)]
 
@@ -94,41 +84,32 @@ TableAdapter가 기본 쿼리를 반영 하는 DataTable의 스키마의 모델�
 > [!NOTE]
 > NTILE 및 SQL Server 2005 s에 대 한 자세한 내용은 다른 순위 함수를 참조 하세요 [Microsoft SQL Server 2005를 사용 하 여 순위 결과 반환](http://www.4guysfromrolla.com/webtech/010406-1.shtml) 하며 [순위 함수 섹션](https://msdn.microsoft.com/library/ms189798.aspx) 에서 [SQL Server 2005 온라인](https://msdn.microsoft.com/library/ms189798.aspx)합니다.
 
-
 입력 한 후의 `SELECT` 마법사 요청을 만드는 저장된 프로시저에 대 한 이름을 제공할 쿼리 및 다음을 클릭 합니다. 새 저장된 프로시저의 이름을 `Products_SelectWithPriceQuartile` 다음을 클릭 합니다.
-
 
 [![저장된 프로시저 Products_SelectWithPriceQuartile 이름](adding-additional-datatable-columns-cs/_static/image14.png)](adding-additional-datatable-columns-cs/_static/image13.png)
 
 **그림 5**: 저장 프로시저의 이름을 `Products_SelectWithPriceQuartile` ([큰 이미지를 보려면 클릭](adding-additional-datatable-columns-cs/_static/image15.png))
 
-
 마지막으로, TableAdapter 메서드 이름을에서는 메시지가 표시 됩니다. 모두 채우기 DataTable 나갔다가 이름과 DataTable 확인란 선택 메서드 `FillWithPriceQuartile` 고 `GetProductsWithPriceQuartile`입니다.
-
 
 [![완료 하 고 이름 TableAdapter의 메서드](adding-additional-datatable-columns-cs/_static/image17.png)](adding-additional-datatable-columns-cs/_static/image16.png)
 
 **그림 6**: TableAdapter가의 메서드 및 마침 이름 ([클릭 하 여 큰 이미지 보기](adding-additional-datatable-columns-cs/_static/image18.png))
 
-
 사용 하 여는 `SELECT` 쿼리를 지정 하 고 저장된 프로시저 및 TableAdapter 메서드 라는는 마법사를 완료 하려면 마침을 클릭 합니다. 이 시점에서 경고 또는 격언이 마법사에서 두 개를 발생할 수 있습니다는 `OVER` SQL 구문 또는 문은 지원 되지 않습니다. 이러한 경고를 무시할 수 있습니다.
 
 TableAdapter 마법사를 완료 한 후 포함 해야 합니다 `FillWithPriceQuartile` 하 고 `GetProductsWithPriceQuartile` 메서드 및 데이터베이스 저장된 프로시저를 포함 해야 `Products_SelectWithPriceQuartile`. 시간을 내어 TableAdapter 포함이 새로운 메서드가 실제로 및 저장된 프로시저 데이터베이스에 올바르게 추가 되었는지 확인 합니다. 경우는 저장된 프로시저 시도 마우스 오른쪽 단추로 클릭 Stored Procedures 폴더에 새로 고침을 선택 하면 표시 되지 않으면 데이터베이스를 검사 합니다.
-
 
 ![새 메서드가 TableAdapter에 추가 된 것 확인](adding-additional-datatable-columns-cs/_static/image19.png)
 
 **그림 7**: 새 메서드가 TableAdapter에 추가 된 것 확인
 
-
 [![데이터베이스는 Products_SelectWithPriceQuartile 포함 되어 있는지 확인 저장 프로시저](adding-additional-datatable-columns-cs/_static/image21.png)](adding-additional-datatable-columns-cs/_static/image20.png)
 
 **그림 8**: 데이터베이스에 포함 되어 있는지 확인 합니다 `Products_SelectWithPriceQuartile` 저장 프로시저 ([큰 이미지를 보려면 클릭](adding-additional-datatable-columns-cs/_static/image22.png))
 
-
 > [!NOTE]
 > 임시 SQL 문 대신 저장된 프로시저를 사용 하는 이점 중 하나는 TableAdapter 구성 마법사를 다시 실행 저장된 프로시저 열 목록을 수정 하지 것입니다. TableAdapter를 마우스 오른쪽 단추로 클릭 하 고 마법사를 시작 하려면 상황에 맞는 메뉴에서 구성 옵션을 선택 합니다. 완료 하려면 마침을 클릭 하 여이 확인 합니다. 다음으로, 데이터베이스 및 보기로 이동 합니다 `Products_SelectWithPriceQuartile` 저장 프로시저입니다. 참고 열 목록에 수정 되지 않았습니다. 에서는 사용한 임시 SQL 문이, TableAdapter 구성 마법사를 다시 실행은 되돌리면이 s 쿼리 열 목록에서 사용 하는 쿼리는 NTILE 문을 역폴란드 주 쿼리 열 목록에 맞게는 `GetProductsWithPriceQuartile` 메서드.
-
 
 때 데이터 액세스 계층 s `GetProductsWithPriceQuartile` 메서드가 호출 되 면 TableAdapter를 실행 합니다 `Products_SelectWithPriceQuartile` 저장 프로시저 및 행을 추가 `ProductsDataTable` 반환 된 각 레코드에 대 한 합니다. 저장된 프로시저에서 반환 된 데이터 필드에 매핑되는 `ProductsDataTable`의 열입니다. 되므로 `PriceQuartile` 저장된 프로시저에서 반환 된 데이터 필드의 값에 할당 합니다 `ProductsDataTable` s `PriceQuartile` 열.
 
@@ -140,7 +121,6 @@ TableAdapter 마법사를 완료 한 후 포함 해야 합니다 `FillWithPriceQ
 
 새 사용 전에 `GetProductsWithPriceQuartile` 메서드 프레젠테이션 계층에서 먼저 추가 해야 해당 메서드는 BLL 하 합니다. 열기는 `ProductsBLLWithSprocs` 클래스 파일 및 다음 코드를 추가 합니다.
 
-
 [!code-csharp[Main](adding-additional-datatable-columns-cs/samples/sample2.cs)]
 
 등의 다른 데이터 검색 메서드보다 `ProductsBLLWithSprocs`의 `GetProductsWithPriceQuartile` 메서드는 간단히 DAL 호출 s 해당 `GetProductsWithPriceQuartile` 메서드 결과 반환 합니다.
@@ -149,16 +129,13 @@ TableAdapter 마법사를 완료 한 후 포함 해야 합니다 `FillWithPriceQ
 
 BLL 추가 하 여 준비 된 각 제품에 대 한 가격 사분 위 수를 보여주는 ASP.NET 페이지를 만들려면 우리를 완료 합니다. 열기는 `AddingColumns.aspx` 페이지에 `AdvancedDAL` 폴더 및 설정 디자이너 도구 상자에서 GridView 끌어서 해당 `ID` 속성을 `Products`합니다. GridView가 스마트 태그에서 바인딩할 라는 새로운 ObjectDataSource는 `ProductsDataSource`합니다. ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLLWithSprocs` s 클래스 `GetProductsWithPriceQuartile` 메서드. 되므로이 읽기 전용 표로, UPDATE, INSERT에서에서 드롭 다운 목록을 설정 하 고 탭 (없음)를 삭제 합니다.
 
-
 [![ProductsBLLWithSprocs 클래스를 사용 하는 ObjectDataSource 구성](adding-additional-datatable-columns-cs/_static/image24.png)](adding-additional-datatable-columns-cs/_static/image23.png)
 
 **그림 9**: ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLLWithSprocs` 클래스 ([큰 이미지를 보려면 클릭](adding-additional-datatable-columns-cs/_static/image25.png))
 
-
 [![GetProductsWithPriceQuartile 메서드에서 제품 정보 검색](adding-additional-datatable-columns-cs/_static/image27.png)](adding-additional-datatable-columns-cs/_static/image26.png)
 
 **그림 10**: 제품 정보를 검색 합니다 `GetProductsWithPriceQuartile` 메서드 ([큰 이미지를 보려면 클릭](adding-additional-datatable-columns-cs/_static/image28.png))
-
 
 데이터 소스 구성 마법사를 완료 한 후 Visual Studio는 자동으로 추가 BoundField 또는 CheckBoxField GridView의 각 메서드에서 반환 된 데이터 필드에 대 한. 이러한 데이터 필드 중 하나가 `PriceQuartile`에 추가한 열을 `ProductsDataTable` 1 단계에서에서 합니다.
 
@@ -166,25 +143,20 @@ BLL 추가 하 여 준비 된 각 제품에 대 한 가격 사분 위 수를 보
 
 이러한 수정 후 GridView 및 ObjectDataSource가 선언적 태그는 다음과 같이 표시 됩니다.
 
-
 [!code-aspx[Main](adding-additional-datatable-columns-cs/samples/sample3.aspx)]
 
 그림 11에서는 브라우저를 통해 방문 하는 경우이 페이지를 보여 줍니다. 처음에 제품을 기준으로 정렬 됩니다 적절 한 할당 된 각 제품을 사용 하 여 내림차순 가격 확인 `PriceQuartile` 값입니다. 물론이 데이터를 정렬 다른 기준으로 여전히 가격 관련 하 여 제품의 순위를 반영 하는 가격 사분 위 수 열 값을 사용 하 여 (그림 12 참조).
-
 
 [![제품 가격으로 정렬 됩니다.](adding-additional-datatable-columns-cs/_static/image30.png)](adding-additional-datatable-columns-cs/_static/image29.png)
 
 **그림 11**: 제품 가격으로 정렬 됩니다 ([클릭 하 여 큰 이미지 보기](adding-additional-datatable-columns-cs/_static/image31.png))
 
-
 [![제품 이름으로 정렬 됩니다.](adding-additional-datatable-columns-cs/_static/image33.png)](adding-additional-datatable-columns-cs/_static/image32.png)
 
 **그림 12**: 제품 이름으로 정렬 됩니다 ([클릭 하 여 큰 이미지 보기](adding-additional-datatable-columns-cs/_static/image34.png))
 
-
 > [!NOTE]
 > 몇 줄의 코드로 수 살펴보면서 GridView에 따라 제품 행 색이 지정 된이 되도록 해당 `PriceQuartile` 값입니다. 첫 번째 사분 위 수의 두 번째 사분 위 수는 밝은 노랑을 연한 녹색에서 해당 제품을 색 하 고 등 수 있습니다. 잠시이 기능을 추가 하 게 하시기 바랍니다. GridView를 서식 지정에 리프레셔가 필요한 경우 참조를 [데이터를 기반으로 사용자 지정 서식 지정](../custom-formatting/custom-formatting-based-upon-data-cs.md) 자습서입니다.
-
 
 ## <a name="an-alternative-approach---creating-another-tableadapter"></a>대안은-다른 TableAdapter 만들기
 

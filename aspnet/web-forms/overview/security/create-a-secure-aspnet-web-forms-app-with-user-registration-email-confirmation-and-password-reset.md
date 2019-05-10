@@ -8,19 +8,18 @@ ms.date: 10/02/2014
 ms.assetid: 0a8d6044-5fab-4213-82d6-5618d5601358
 msc.legacyurl: /web-forms/overview/security/create-a-secure-aspnet-web-forms-app-with-user-registration-email-confirmation-and-password-reset
 msc.type: authoredcontent
-ms.openlocfilehash: 3df728891103de9c8e461ab9507237c9b14e8251
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: af3653bc164810126bc3bf8f1b1794d75642d807
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59390690"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133798"
 ---
 # <a name="create-a-secure-aspnet-web-forms-app-with-user-registration-email-confirmation-and-password-reset-c"></a>사용자 등록, 전자 메일 확인 및 암호 재설정 기능이 있는 보안 ASP.NET Web Forms 앱 만들기(C#)
 
 [Erik Reitan](https://github.com/Erikre)
 
 > 이 자습서에서는 사용자 등록, 전자 메일 확인 및 ASP.NET Id 멤버 자격 시스템을 사용 하 여 암호를 사용 하 여 ASP.NET Web Forms 앱을 빌드하는 방법을 보여 줍니다. 이 자습서 Rick Anderson의 기반한 [MVC 자습서](../../../mvc/overview/security/create-an-aspnet-mvc-5-web-app-with-email-confirmation-and-password-reset.md)합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -43,7 +42,6 @@ ms.locfileid: "59390690"
 
 > [!NOTE]
 > 경고: 설치 해야 합니다 [Visual Studio 2013 업데이트 3](https://go.microsoft.com/fwlink/?LinkId=390465) 이상이 자습서를 완료 합니다.
-
 
 1. 새 프로젝트를 만듭니다 (**파일**  - &gt; **새 프로젝트**) 선택 합니다 **ASP.NET 웹 응용 프로그램** 템플릿과 최신.NET Framework 버전을 **새 프로젝트** 대화 상자.
 2. **새 ASP.NET 프로젝트** 대화 상자를 선택 합니다 **Web Forms** 템플릿. 기본 인증을 유지 **개별 사용자 계정**합니다. Azure에서 앱을 호스트 하려는 경우는 **클라우드에서 호스트** 확인란을 선택 합니다.   
@@ -95,7 +93,6 @@ ms.locfileid: "59390690"
 ### <a name="enable-email-confirmation"></a>전자 메일 확인을 사용 하도록 설정
 
  전자 메일 확인을 사용 하려면 다음 단계를 사용 하 여 등록 코드를 수정할 수 있습니다.  
- 
 
 1. 에 *계정* 폴더를 열고 합니다 *Register.aspx.cs* 코드 숨김 및 업데이트는 `CreateUser_Click` 다음 강조 표시 된 변경 내용을 사용 하도록 설정 하는 방법: 
 

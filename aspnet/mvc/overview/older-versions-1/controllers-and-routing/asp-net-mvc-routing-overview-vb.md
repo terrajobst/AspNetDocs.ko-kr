@@ -8,19 +8,18 @@ ms.date: 08/19/2008
 ms.assetid: 4bc8d19a-80f1-44b4-adbf-95ed22d691ca
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/asp-net-mvc-routing-overview-vb
 msc.type: authoredcontent
-ms.openlocfilehash: c135bacd7f9f87fac87a3c8cf41bad359bb3c0a2
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ed043d76b89ce31945cf3423b0c5afca9383cc21
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379185"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123643"
 ---
 # <a name="aspnet-mvc-routing-overview-vb"></a>ASP.NET MVC 라우팅 개요(VB)
 
 [Stephen walther가](https://github.com/StephenWalther)
 
 > 이 자습서에서는 Stephen walther가 ASP.NET MVC 프레임 워크에 브라우저 요청이 컨트롤러 작업에 매핑하는 방법 보여 줍니다.
-
 
 이 자습서에서는 호출 하는 모든 ASP.NET MVC 응용 프로그램의 중요 한 기능에 도입 된 *ASP.NET 라우팅에서*합니다. ASP.NET 라우팅 모듈은 들어오는 브라우저 요청을 특정 MVC 컨트롤러 작업에 매핑하는 일을 담당 합니다. 이 자습서를 마치면 표준 경로 테이블 요청 컨트롤러 작업에 매핑하는 방법을 이해할 수 있습니다.
 
@@ -94,11 +93,9 @@ MVC 프레임 워크 컨트롤러 작업을 호출 하는 방식으로 인해 UR
 
 [!code-vb[Main](asp-net-mvc-routing-overview-vb/samples/sample5.vb)]
 
-
 [![매개 변수 값을 필요로 하는 컨트롤러 작업을 호출 합니다.](asp-net-mvc-routing-overview-vb/_static/image1.jpg)](asp-net-mvc-routing-overview-vb/_static/image1.png)
 
 **그림 01**: 매개 변수 값을 필요로 하는 컨트롤러 동작 호출 ([클릭 하 여 큰 이미지 보기](asp-net-mvc-routing-overview-vb/_static/image2.png))
-
 
 또한 목록 5에서 인덱스 컨트롤러 작업을 사용 하 여 URL /Home/인덱스/3, 다른 한편으로 잘 작동합니다. 요청 /Home/Index/3 index () 메서드를 3 값이 있는 Id 매개 변수를 사용 하 여 호출 하면 됩니다.
 

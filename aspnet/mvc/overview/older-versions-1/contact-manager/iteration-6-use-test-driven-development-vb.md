@@ -8,12 +8,12 @@ ms.date: 02/20/2009
 ms.assetid: e1fd226f-3f8e-4575-a179-5c75b240333d
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager/iteration-6-use-test-driven-development-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 3fd252b94e55f02215a2733f218e68b26486691f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b166a1c6af29206d43558fa7de447c3f4da2ddfe
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59397112"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123864"
 ---
 # <a name="iteration-6--use-test-driven-development-vb"></a>반복 #6-사용 하 여 테스트 기반 개발 (VB)
 
@@ -23,9 +23,7 @@ by [Microsoft](https://github.com/microsoft)
 
 > 이 여섯 번째 반복에서는 추가 새로운 기능을 응용 프로그램 먼저 단위 테스트를 작성 하 고 단위 테스트에 대 한 코드를 작성 합니다. 이 반복에서는 메일 그룹을 추가합니다.
 
-
 ## <a name="building-a-contact-management-aspnet-mvc-application-vb"></a>연락처 관리 ASP.NET MVC 응용 프로그램을 작성 (VB)
-  
 
 이 시리즈의 자습서에서 전체 연락처 관리 응용을 프로그램 시작부터 완료를 빌드합니다. 연락처 관리자 응용 프로그램에 사용자의 목록을 포함 된 상점 연락처 정보-이름, 전화 번호 및 전자 메일 주소-할 수 있습니다.
 
@@ -73,7 +71,6 @@ by [Microsoft](https://github.com/microsoft)
 > 
 > 테스트 기반 개발에 대 한 자세한 내용은 필자를 읽어 Michael Feathers 책 **Working Effectively with Legacy Code**합니다.
 
-
 이 반복에서 연락처 관리자 응용 프로그램에 새 기능을 추가 합니다. 메일 그룹에 대 한 지원을 추가합니다. 연락처와 같은 범주로 연락처를 구성 하는 그룹 및 친구 그룹을 사용할 수 있습니다.
 
 이 새로운 기능 테스트 기반 개발 프로세스를 수행 하 여 응용 프로그램을 추가 합니다. 먼저 단위 테스트를 작성 하 고 모든이 테스트에 대 한 코드를 작성 합니다.
@@ -112,11 +109,9 @@ by [Microsoft](https://github.com/microsoft)
 
 ContactManager.Tests 프로젝트에서 컨트롤러 폴더를 마우스 오른쪽 단추로 클릭 하 여 새 단위 테스트를 만들 선택 **추가, 새 테스트**를 선택 하는 **단위 테스트** 템플릿 (그림 1 참조). 이름을 새 단위 테스트 GroupControllerTest.vb을 클릭 합니다 **확인** 단추입니다.
 
-
 [![GroupControllerTest 단위 테스트를 추가합니다.](iteration-6-use-test-driven-development-vb/_static/image1.jpg)](iteration-6-use-test-driven-development-vb/_static/image1.png)
 
 **그림 01**: GroupControllerTest 단위 테스트 추가 ([클릭 하 여 큰 이미지 보기](iteration-6-use-test-driven-development-vb/_static/image2.png))
-
 
 첫 번째 단위 테스트는 목록 1에 포함 됩니다. 이 테스트 그룹 컨트롤러의 index () 메서드 그룹 집합을 반환 하는 확인 합니다. 이 테스트는 그룹의 컬렉션은 보기에 반환 된 데이터를 확인 합니다.
 
@@ -140,11 +135,9 @@ T도 빌드가 하시면이 시점에서 응용 프로그램 t 수 있도록 첫
 
 첫 번째 단위 테스트를 성공적으로 완료 GroupController 및 그룹 클래스를 프로젝트에 추가 했습니다 (그림 2 참조). 수행한 테스트를 통과 하는 데 필요한 최소 작업 합니다. 축 하 하기 위해 차례입니다.
 
-
 [![성공 했습니다.](iteration-6-use-test-driven-development-vb/_static/image2.jpg)](iteration-6-use-test-driven-development-vb/_static/image3.png)
 
 **그림 02**: 성공 했습니다. ([클릭 하 여 큰 이미지 보기](iteration-6-use-test-driven-development-vb/_static/image4.png))
-
 
 ## <a name="creating-contact-groups"></a>메일 그룹 만들기
 
@@ -216,11 +209,9 @@ T도 빌드가 하시면이 시점에서 응용 프로그램 t 수 있도록 첫
 
 [!code-vb[Main](iteration-6-use-test-driven-development-vb/samples/sample11.vb)]
 
-
 인터페이스를 사용 하려면 IContactManagerRepository 수정 하는 데 CreateGroup() 메서드와 ListGroups() EntityContactManagerRepository 클래스에서 구현 합니다. 이렇게 하려면 laziest 쉽고 빠른 방법은 다음과 같습니다. 스텁 메서드는 다음과 같은 추가 하려면
 
 [!code-vb[Main](iteration-6-use-test-driven-development-vb/samples/sample12.vb)]
-
 
 마지막으로, 이러한 응용 프로그램의 디자인이 변경 해야 단위 테스트를 약간 수정 합니다. 이제 단위 테스트를 수행 하는 경우는 FakeContactManagerRepository를 사용 해야 합니다. 업데이트 된 GroupControllerTest 클래스 12 목록에 포함 됩니다.
 
@@ -243,12 +234,10 @@ T도 빌드가 하시면이 시점에서 응용 프로그램 t 수 있도록 첫
 
 <a id="0.12_table01"></a>
 
-
 | **열 이름** | **데이터 형식** | **Null 허용** |
 | --- | --- | --- |
 | ID | int | False |
 | 이름 | nvarchar(50) | False |
-
 
 다음으로, Contacts 테이블에서 모든 데이터를 삭제 해야 (이 고, 그렇지에서는 없게 연락처 및 그룹이 테이블 간에 관계 만들기). 아래 단계를 수행합니다.
 
@@ -267,16 +256,13 @@ T도 빌드가 하시면이 시점에서 응용 프로그램 t 수 있도록 첫
 8. 외래 키 관계 대화 상자를 닫으려면 닫기 단추를 클릭 합니다.
 9. Contacts 테이블에 변경 내용을 저장 하려면 저장 단추를 클릭 합니다.
 
-
 [![데이터베이스 테이블 관계 만들기](iteration-6-use-test-driven-development-vb/_static/image3.jpg)](iteration-6-use-test-driven-development-vb/_static/image5.png)
 
 **그림 03**: 데이터베이스 테이블 관계 만들기 ([클릭 하 여 큰 이미지 보기](iteration-6-use-test-driven-development-vb/_static/image6.png))
 
-
 [![테이블 관계를 지정합니다.](iteration-6-use-test-driven-development-vb/_static/image4.jpg)](iteration-6-use-test-driven-development-vb/_static/image7.png)
 
 **그림 04**: 테이블 관계를 지정 합니다. ([클릭 하 여 큰 이미지 보기](iteration-6-use-test-driven-development-vb/_static/image8.png))
-
 
 ### <a name="updating-our-data-model"></a>데이터 모델 업데이트
 
@@ -288,19 +274,15 @@ T도 빌드가 하시면이 시점에서 응용 프로그램 t 수 있도록 첫
 4. 그룹 엔터티를 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션을 선택 **이름 바꾸기**합니다. 이름을 변경 합니다 *그룹* 엔터티의 *그룹* (단일).
 5. 연락처 엔터티 맨 아래에 표시 되는 그룹 탐색 속성을 마우스 오른쪽 단추로 클릭 합니다. 이름을 변경 합니다 *그룹* 탐색 속성을 *그룹* (단 수 화) 합니다.
 
-
 [![데이터베이스에서 Entity Framework 모델을 업데이트합니다.](iteration-6-use-test-driven-development-vb/_static/image5.jpg)](iteration-6-use-test-driven-development-vb/_static/image9.png)
 
 **그림 05**: 데이터베이스에서 Entity Framework 모델을 업데이트 ([클릭 하 여 큰 이미지 보기](iteration-6-use-test-driven-development-vb/_static/image10.png))
 
-
 다음이 단계를 완료 한 후 데이터 모델에는 연락처와 그룹 모두 테이블을 나타냅니다. Entity Designer는 엔터티를 모두 표시 됩니다 (그림 6 참조).
-
 
 [![그룹 및 연락처를 표시 하는 엔터티 디자이너](iteration-6-use-test-driven-development-vb/_static/image6.jpg)](iteration-6-use-test-driven-development-vb/_static/image11.png)
 
 **그림 06**: 그룹 및 연락처를 표시 하는 entity Designer ([클릭 하 여 큰 이미지 보기](iteration-6-use-test-driven-development-vb/_static/image12.png))
-
 
 ### <a name="creating-our-repository-classes"></a>리포지토리 클래스 만들기
 
@@ -329,11 +311,9 @@ ASP.NET MVC 응용 프로그램 기본 ASP.NET 뷰 엔진을 사용 하는 경�
 - Views\Group\Index.aspx-연락처 그룹 목록 표시 합니다.
 - Views\Group\Delete.aspx-연락처 그룹을 삭제 하는 것에 대 한 확인 양식 표시
 
-
 [![그룹 인덱스 보기](iteration-6-use-test-driven-development-vb/_static/image7.jpg)](iteration-6-use-test-driven-development-vb/_static/image13.png)
 
 **그림 07**: 그룹 인덱스 보기 ([클릭 하 여 큰 이미지 보기](iteration-6-use-test-driven-development-vb/_static/image14.png))
-
 
 연락처 그룹 포함 되도록 다음 기존 뷰를 수정 해야 합니다.
 
@@ -343,11 +323,9 @@ ASP.NET MVC 응용 프로그램 기본 ASP.NET 뷰 엔진을 사용 하는 경�
 
 이 자습서와 함께 제공 되는 Visual Studio 응용 프로그램에서 확인 하 여 수정 된 보기를 볼 수 있습니다. 예를 들어, 그림 8에서는 연락처 인덱스 뷰를 보여 줍니다.
 
-
 [![연락처 인덱스 보기](iteration-6-use-test-driven-development-vb/_static/image8.jpg)](iteration-6-use-test-driven-development-vb/_static/image15.png)
 
 **그림 08**: 연락처 인덱스 보기 ([클릭 하 여 큰 이미지 보기](iteration-6-use-test-driven-development-vb/_static/image16.png))
-
 
 ## <a name="summary"></a>요약
 

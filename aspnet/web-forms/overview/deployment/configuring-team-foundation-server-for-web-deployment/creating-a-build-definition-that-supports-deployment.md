@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: fe47a018-f6d0-4979-80e7-5b1fa75a5865
 msc.legacyurl: /web-forms/overview/deployment/configuring-team-foundation-server-for-web-deployment/creating-a-build-definition-that-supports-deployment
 msc.type: authoredcontent
-ms.openlocfilehash: 97a60274d9306ea0ee332fcc1ab9e487355dbedb
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e11c91a824446572aaf0b3bc6954b9b8ffb4eaff
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384944"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133951"
 ---
 # <a name="creating-a-build-definition-that-supports-deployment"></a>배포를 지원하는 빌드 정의 만들기
 
@@ -22,7 +22,6 @@ ms.locfileid: "59384944"
 [PDF 다운로드](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > Team Foundation Server (TFS) 2010에서 모든 종류의 빌드를 수행 하려는 경우에 팀 프로젝트 내에서 빌드 정의 만들기 해야 합니다. 이 항목에서는 TFS에서 새 빌드 정의 만드는 방법 및 Team Build에서 빌드 프로세스의 일부로 웹 배포를 제어 하는 방법을 설명 합니다.
-
 
 이 항목의 Fabrikam, Inc. 라는 가상 회사의 엔터프라이즈 배포 요구 사항 기반 자습서 시리즈의 일부를 형성 합니다. 샘플 솔루션을 사용 하 여이 자습서 시리즈&#x2014;는 [Contact Manager 솔루션](../web-deployment-in-the-enterprise/the-contact-manager-solution.md)&#x2014;현실적인 수준의 복잡성을 Windows Communication ASP.NET MVC 3 응용 프로그램을 포함 하 여 웹 응용 프로그램을 나타내는 Foundation (WCF) 서비스 및 데이터베이스 프로젝트입니다.
 
@@ -40,7 +39,6 @@ ms.locfileid: "59384944"
 
 > [!NOTE]
 > 빌드 정의 대 한 자세한 내용은 참조 하세요. [빌드 프로세스 정의](https://msdn.microsoft.com/library/ms181715.aspx)합니다.
-
 
 이 항목에서는 개발자 새 콘텐츠 체크 인할 때를 빌드가 트리거되지 않으면 있도록 CI를 사용 하는 빌드 정의 만드는 방법을 보여줍니다. 빌드에 성공 하면 빌드 서비스는 테스트 환경에 솔루션을 배포 하기 위한 사용자 지정 프로젝트 파일을 실행 합니다.
 
@@ -60,7 +58,6 @@ ms.locfileid: "59384944"
 
 > [!NOTE]
 > 이 절차&#x2014;단일 자동화 된 프로세스 빌드, 테스트 및 솔루션을 배포 합니다&#x2014;은 테스트 환경에 배포 하는 데 가장 적합 합니다. 스테이징 및 프로덕션 환경에 대 한 가능성이 훨씬 더 이미 확인 및 테스트 환경에서 유효성을 검사 하는 이전 빌드에서 콘텐츠를 배포 하려고 합니다. 이 방법은 다음 항목에 설명 되어 [특정 빌드를 배포](deploying-a-specific-build.md)합니다.
-
 
 ### <a name="who-performs-this-procedure"></a>이 절차를 수행 하는?
 
@@ -142,7 +139,6 @@ CI를 사용 하 여 빌드 정의 구성한 경우에 두 가지 방법으로 �
 
 > [!NOTE]
 > 배포 논리를 실행 하는 빌드는 빌드 서버가 대상 환경에 필요한 모든 권한을 부여 될 때까지 실패할 수 있습니다. 자세한 내용은 [Team 빌드 배포에 대 한 사용 권한 구성](configuring-permissions-for-team-build-deployment.md)합니다.
-
 
 ## <a name="monitor-the-build-process"></a>빌드 프로세스를 모니터링 합니다.
 

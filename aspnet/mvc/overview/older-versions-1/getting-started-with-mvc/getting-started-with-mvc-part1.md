@@ -8,12 +8,12 @@ ms.date: 08/14/2010
 ms.assetid: bf4a1c19-0a94-4208-b268-a96ddcf26946
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part1
 msc.type: authoredcontent
-ms.openlocfilehash: dcc2e703829cfa0b77575870feff451fd0738f56
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f8f0014776ba1313119e8c39c63a216b0fc864e7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59416495"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123120"
 ---
 # <a name="intro-to-aspnet-mvc"></a>ASP.NET MVC 소개
 
@@ -24,7 +24,6 @@ ms.locfileid: "59416495"
 >
 >
 > ASP.NET MVC의 기본 사항을 소개 하는 초보자를 위한 자습서입니다. 읽기 및 쓰기 데이터베이스는 간단한 웹 응용 프로그램을 만들어야 합니다. 방문 합니다 [ASP.NET MVC 학습 센터](../../../index.md) 자습서 및 샘플 다른 ASP.NET MVC를 찾아볼 수 있습니다.
-
 
 사용 하 여 첫 ASP.NET MVC 웹 응용 프로그램을 만들어 보겠습니다 [Visual Web Developer 2010 Express](https://www.microsoft.com/express/Web/)합니다. 보겠습니다 만들고 영화를 나열 하는 간단한 영화 목록 응용 프로그램을 만들어 보겠습니다.
 

@@ -8,12 +8,12 @@ ms.date: 01/27/2009
 ms.assetid: 68acd884-fb57-4486-a1be-aaa93e380780
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/adding-dynamic-content-to-a-cached-page-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 0dae280dfa3028df5fda95c4366132c99a0dc3b7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f2f4372498e5a38bbfcb96d6e9f6338b0ef4df1f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59409202"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123676"
 ---
 # <a name="adding-dynamic-content-to-a-cached-page-vb"></a>캐시된 페이지에 동적 콘텐츠 추가(VB)
 
@@ -21,16 +21,13 @@ by [Microsoft](https://github.com/microsoft)
 
 > 같은 페이지의 동적이 고 캐시 된 콘텐츠를 조합 하는 방법에 알아봅니다. 캐시 후 대체를 사용 하는 배너 광고 또는 뉴스 항목을 캐시에 출력 하는 페이지 내에서 같은 동적 콘텐츠를 표시할 수 있습니다.
 
-
 출력 캐싱을 활용 하 고, ASP.NET MVC 응용 프로그램의 성능을 크게 향상 시킬 수 있습니다. 매번 페이지가 요청 될 페이지를 다시 생성 하는 대신에 페이지를 한 번 생성 하 고 여러 사용자에 대 한 메모리에 캐시 될 수 있습니다.
 
 하지만 문제가 있습니다. 페이지에 동적 콘텐츠를 표시 해야 하는 경우에 어떻게? 예를 들어 페이지에서 배너 광고를 표시할 한다고 가정해 보겠습니다. 모든 사용자가 동일한 광고를 볼 수 있도록 캐시할 배너 광고 하지 않으려고 합니다. 이런 방식으로 모든 비용을 확인 하지 않습니다!
 
 다행 스럽게도 쉽게 솔루션을 있습니다. 라는 ASP.NET 프레임 워크의 기능 활용을 걸릴 수 있습니다 *캐시 후 대체*합니다. 캐시 후 대체를 사용 하면 메모리에 캐시 된 페이지에 동적 콘텐츠를 대체할 수 있습니다.
 
-
 일반적으로 출력 하는 경우 페이지를 사용 하 여 캐시 합니다 &lt;OutputCache&gt; 특성 페이지는 서버와 클라이언트 (웹 브라우저)에 캐시 됩니다. 캐시 후 대체를 사용 하면 페이지는 서버에만 캐시 됩니다.
-
 
 #### <a name="using-post-cache-substitution"></a>캐시 후 대체를 사용 하 여
 

@@ -8,12 +8,12 @@ ms.date: 05/22/2012
 ms.assetid: f889fd46-4dac-4ecb-83d8-60e64c22036e
 msc.legacyurl: /web-pages/overview/data/7-displaying-data-in-a-chart
 msc.type: authoredcontent
-ms.openlocfilehash: f97f214abeaeb88634dd10aaebacc0d58e91ab84
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 6dad67d4e3d38d57a761c567d937d714a3184ea9
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59422462"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133705"
 ---
 # <a name="displaying-data-in-a-chart-with-aspnet-web-pages-razor"></a>ASP.NET 웹 페이지 (Razor)를 사용 하 여 차트에 데이터 표시
 
@@ -33,7 +33,6 @@ by [Microsoft](https://github.com/microsoft)
 > 
 > > [!NOTE]
 > > 이 문서의 정보는 ASP.NET 웹 페이지 1.0 및 웹 페이지 2에 적용 됩니다.
-
 
 <a id="The_Chart_Helper"></a>
 ## <a name="the-chart-helper"></a>차트 도우미
@@ -152,7 +151,6 @@ by [Microsoft](https://github.com/microsoft)
 > [!code-cshtml[Main](7-displaying-data-in-a-chart/samples/sample8.cshtml)]
 > 
 > 추가할 수 있습니다 `using` 참조 하려는 다른.NET Framework 네임 스페이스용 문입니다. 그러나 앞에서 설명한 것 처럼 않아도 이렇게 자주 사용 하는 클래스의 대부분에서 사용 하기 위해 ASP.NET에서 자동으로 가져온 네임 스페이스에 있기 때문에 *.cshtml* 하 고 *.vbhtml* 페이지입니다.
-
 
 <a id="Displaying_Charts"></a>
 ## <a name="displaying-charts-inside-a-web-page"></a>웹 페이지 내에서 차트를 표시합니다.

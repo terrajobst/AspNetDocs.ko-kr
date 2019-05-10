@@ -8,12 +8,12 @@ ms.date: 09/08/2014
 ms.assetid: 5c76891d-e515-4885-b576-76bd2c494efe
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/ui_and_navigation
 msc.type: authoredcontent
-ms.openlocfilehash: 7834b5c418de9d05ee870641cfd7c7f9956ab210
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 06816f3555a806d41caf562b910a4ec4427b13bd
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59403001"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134228"
 ---
 # <a name="ui-and-navigation"></a>UI 및 탐색
 
@@ -22,7 +22,6 @@ ms.locfileid: "59403001"
 [Wingtip Toys 샘플 프로젝트 (C#)를 다운로드](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 또는 [전자책 (PDF) 다운로드](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
 
 > 이 자습서 시리즈는 ASP.NET 4.5와 Microsoft Visual Studio Express 2013 for Web 사용 하 여 ASP.NET Web Forms 응용 프로그램을 빌드하는 기본 사항을 설명 합니다. Visual Studio 2013 [C# 소스 코드를 사용 하 여 프로젝트](https://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 이 자습서 시리즈를 함께 사용할 수 있습니다.
-
 
 이 자습서에서는 Wingtip Toys 저장소 프런트 응용 프로그램의 기능을 지원 하도록 기본 웹 응용 프로그램의 UI를 수정 합니다. 또한 간단한 추가 하 고 탐색 하는 데이터 바인딩. 이 자습서는 이전 자습서 "데이터 액세스 레이어 만들기" 빌드하고 Wingtip Toys 자습서 시리즈의 일부입니다.
 
@@ -75,7 +74,6 @@ ASP.NET Web Forms를 사용 하면 웹 응용 프로그램에 대 한 동적 콘
 > [!NOTE] 
 > 
 > 합니다 *Machine.config* 모든 가능한 구성 설정에 대 한 자세한 정보도 제공 합니다.
-
 
 ### <a name="web-server-controls"></a>웹 서버 컨트롤
 
@@ -181,7 +179,6 @@ Visual Studio 2013 프로젝트 템플릿을 사용 하 여 [부트스트랩](ht
 > 
 > ASP.NET 웹 응용 프로그램 템플릿을 사용 하는 *Bundle.config* 부트스트랩 CSS 파일의 경로 저장 하려면 프로젝트의 루트에 있는 파일입니다.
 
-
 ### <a name="modifying-the-default-navigation"></a>기본 탐색을 수정
 
 응용 프로그램에서 모든 페이지에 대 한 기본 탐색에 있는 순서가 지정 되지 않은 탐색 목록 요소를 변경 하 여 수정할 수는 *Site.Master* 페이지입니다.
@@ -196,7 +193,6 @@ Visual Studio 2013 프로젝트 템플릿을 사용 하 여 [부트스트랩](ht
 > [!NOTE] 
 > 
 > 물결표 (`~`) 문자를 사용 하는 지정 하는 `href` 경로 프로젝트의 루트에서 시작 합니다.
-
 
 ### <a name="adding-a-data-control-to-display-navigation-data"></a>탐색 데이터를 표시 하는 데이터 컨트롤 추가
 
@@ -215,7 +211,6 @@ Visual Studio 2013 프로젝트 템플릿을 사용 하 여 [부트스트랩](ht
 > **팁**
 > 
 > 개발 하는 동안 입력 하 여 코드를 추가 하면 됩니다는 개체의 유효한 멤버가 강력한 형식 데이터 컨트롤 IntelliSense에 따라 사용 가능한 멤버를 표시 합니다. 속성, 메서드 및 개체와 같은 코드를 입력할 때 IntelliSense 상황에 맞는 적절 한 코드 옵션을 제공 합니다.
-
 
 다음 단계에서 구현 된 `GetCategories` 데이터를 검색 하는 방법.
 
@@ -253,7 +248,6 @@ Visual Studio 2013 프로젝트 템플릿을 사용 하 여 [부트스트랩](ht
 > [!NOTE] 
 > 
 > 경우는 *앱\_데이터* 폴더 표시 되어 있지 않거나 빈 폴더가 있으면 선택 합니다 **새로 고침** 아이콘 차례로 합니다 **모든 파일 표시** 합니다 맨위에있는아이콘**솔루션 탐색기** 창입니다. 너비를 확장 합니다 **솔루션 탐색기** windows 모든 사용 가능한 아이콘을 표시 해야 할 수 있습니다.
-
 
 이제 포함 된 데이터를 검사할 수 있습니다 합니다 *wingtiptoys.mdf* 사용 하 여 데이터베이스 파일을 **서버 탐색기** 창입니다.
 

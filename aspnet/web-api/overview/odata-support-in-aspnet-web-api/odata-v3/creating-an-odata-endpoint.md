@@ -8,12 +8,12 @@ ms.date: 02/25/2014
 ms.assetid: 262843d6-43a2-4f1c-82d9-0b90ae6df0cf
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v3/creating-an-odata-endpoint
 msc.type: authoredcontent
-ms.openlocfilehash: fa0573738fee8f1decc13c9797f644002931e09d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e31bf3215155b4b45bcf2eb90dd6947caf99b7f8
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381499"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125275"
 ---
 # <a name="creating-an-odata-v3-endpoint-with-web-api-2"></a>Web API 2 OData v3 엔드포인트 만들기
 
@@ -35,7 +35,6 @@ ms.locfileid: "59381499"
 > - [Fiddler 웹 디버깅 프록시 (선택 사항)](http://www.fiddler2.com)
 >
 > Web API OData 지원에서 추가한 [ASP.NET 및 Web Tools 2012.2 업데이트](https://go.microsoft.com/fwlink/?LinkId=282650)합니다. 그러나이 자습서에서는 Visual Studio 2013에 추가 된 스 캐 폴딩 합니다.
-
 
 이 자습서에서는 클라이언트가 쿼리할 수 있는 간단한 OData 끝점을 만들게 됩니다. 또한 끝점에 대 한 C# 클라이언트를 만듭니다. 이 자습서를 완료 한 후 다음 일련의 자습서 엔터티 관계 작업을 포함 하 여 더 많은 기능을 추가 하는 방법을 표시 하 고 확장 하 고 $/ $선택 합니다.
 
@@ -77,7 +76,6 @@ Visual Studio를 시작 하 고 선택 **새 프로젝트** 시작 페이지에�
 
 > [!NOTE]
 > 규칙에 따라 모델 클래스는 Models 폴더에 배치 됩니다. 사용자의 프로젝트에서이 규칙을 따르는 없지만이 자습서로 사용 됩니다.
-
 
 Product.cs 파일에서 다음 클래스 정의 추가 합니다.
 

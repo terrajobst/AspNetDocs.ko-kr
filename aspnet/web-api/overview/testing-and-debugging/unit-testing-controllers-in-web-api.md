@@ -8,12 +8,12 @@ ms.date: 06/11/2014
 ms.assetid: 43a6cce7-a3ef-42aa-ad06-90d36d49f098
 msc.legacyurl: /web-api/overview/testing-and-debugging/unit-testing-controllers-in-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 9fa71bec14a2ba4d14f01661ad2bf41975f4f55e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: cdb1700537021e276669de1a9e0330a62659746c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59413804"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65121993"
 ---
 # <a name="unit-testing-controllers-in-aspnet-web-api-2"></a>ASP.NET Web API 2의 유닛 테스트 컨트롤러
 
@@ -72,7 +72,6 @@ Web API 컨트롤러에서 단위 테스트를 해야 하는 몇 가지는 다�
 [!code-csharp[Main](unit-testing-controllers-in-web-api/samples/sample4.cs)]
 
 이 버전에서는 필요가 경로 데이터를 설정 하기 때문에 mock **UrlHelper** 상수 문자열을 반환 합니다.
-
 
 ## <a name="testing-actions-that-return-ihttpactionresult"></a>IHttpActionResult 반환 하는 테스트 작업
 

@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 73232292-a5fe-4720-82a1-8f6553effd1f
 msc.legacyurl: /web-forms/overview/getting-started/hands-on-labs/using-page-inspector-in-visual-studio-2012
 msc.type: authoredcontent
-ms.openlocfilehash: d85fab0aeec86013761fc07ada1789b7719b24d9
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f42b1be2697ba7d1145b3e334fe8f4ebf019cd12
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396566"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133550"
 ---
 # <a name="using-page-inspector-in-visual-studio-2012"></a>Visual Studio 2012에서 페이지 검사기 사용
 
@@ -36,7 +36,6 @@ ms.locfileid: "59396566"
 > 이 실습을 이용 하면 향상 된 기능 및 원본 폴더에 제공 된 샘플 웹 응용 프로그램에 사소한 변경 내용을 적용 하 여 이전에 설명 된 새 기능을 통해 안내 합니다.
 > 
 > 웹 캠프 교육 키트에서에서 사용할 수 있는 모든 샘플 코드 및 코드 조각 포함 됩니다 [ https://go.microsoft.com/fwlink/?LinkID=248297&clcid=0x409 ](https://go.microsoft.com/fwlink/?LinkID=248297&clcid=0x409)합니다.
-
 
 <a id="Objectives"></a>
 
@@ -73,7 +72,6 @@ ms.locfileid: "59396566"
 
 > [!NOTE]
 > 각 실습은 다른 독립적으로 각 연습에 따라 할 수 있는 실습 시작 폴더에 있는 시작 솔루션에서 제공 됩니다. 연습에 대 한 소스 코드 내에 해당 연습에서 단계를 완료 합니다. 결과로 생성 되는 코드를 사용 하 여 Visual Studio 솔루션을 포함 하는 최종 폴더를 찾을 수 있습니다. 이 실습을 통해 작업 하는 동안 추가 도움이 필요한 경우 지침으로 이러한 솔루션을 사용할 수 있습니다.
-
 
 이 랩을 완료 하는 시간을 예상 합니다. **30 분**합니다.
 

@@ -8,12 +8,12 @@ ms.date: 01/06/2019
 ms.assetid: 9f35ca15-e216-4db6-9ebf-24380b0f31b4
 msc.legacyurl: /mvc/overview/getting-started/introduction/adding-validation
 msc.type: authoredcontent
-ms.openlocfilehash: 2b5d2a355a27bfe9a3aa8b2fa4a2de79c7f74314
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 6894d01af7cd142a5579f73ae5209ca13756ca52
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59387128"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65120746"
 ---
 # <a name="adding-validation"></a>유효성 검사 추가
 
@@ -84,7 +84,6 @@ ASP.NET MVC 및 Entity Framework Code First에서 제공 되는 유효성 검사
 > [!NOTE]
 > 쉼표를 사용 하는 영어가 아닌 로캘의 jQuery 유효성 검사를 지원 하기 위해 (",") 소수점 NuGet를 포함 해야이 자습서에서 설명한 대로 전역화 합니다.
 
-
 폼에 자동으로 사용 하는 방법을 빨간색 테두리 색을 잘못 된 데이터를 포함 하 고 각각 옆에 있는 적절 한 유효성 검사 오류 메시지를 내보낼에 있는 입력란을 강조 표시를 확인 합니다. 오류는 클라이언트 쪽(JavaScript 및 jQuery 사용) 및 서버 쪽(사용자가 JavaScript를 사용하지 않도록 설정한 경우) 모두 적용됩니다.
 
 실제 혜택은 코드 한 줄도 변경할 필요가 없었습니다 합니다 `MoviesController` 클래스 또는 합니다 *Create.cshtml* 이 유효성 검사 UI를 사용 하기 위해. 이 자습서의 앞 부분에서 만든 컨트롤러와 보기에서는 `Movie` 모델 클래스의 속성의 유효성 검사 특성을 사용하여 유효성 검사 규칙을 자동으로 선택했습니다. `Edit` 작업 메서드로 유효성 검사를 테스트하며 동일한 유효성 검사가 적용됩니다.
@@ -135,9 +134,7 @@ ASP.NET MVC 및 Entity Framework Code First에서 제공 되는 유효성 검사
 
 `DisplayFormat` 특성은 날짜 형식을 명시적으로 지정하는 데 사용됩니다.
 
-
 [!code-csharp[Main](adding-validation/samples/sample8.cs)]
-
 
 `ApplyFormatInEditMode` 설정은 지정 된 서식도 적용 되어야 함을 값 편집을 위해 텍스트 상자에 표시 되 면을 지정 합니다. (원하지 않을 수 있습니다 하는 일부 필드에 대 한-예를 들어 통화 값 하지 않을 텍스트 상자에 통화 기호 편집 합니다.)
 
@@ -155,7 +152,6 @@ ASP.NET MVC 및 Entity Framework Code First에서 제공 되는 유효성 검사
 > [!code-csharp[Main](adding-validation/samples/sample9.cs)]
 > 
 > 사용 하려면 jQuery 날짜 유효성 검사를 사용 하지 않도록 설정 해야 합니다 [범위](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.rangeattribute.aspx) 특성과 [DateTime](https://msdn.microsoft.com/library/system.datetime.aspx). 없기 일반적으로 사용 하 여 모델에서 하드 날짜를 컴파일하는 것이 좋습니다 합니다 [범위](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.rangeattribute.aspx) 특성 및 [DateTime](https://msdn.microsoft.com/library/system.datetime.aspx) 것이 좋습니다.
-
 
 다음 코드는 한 줄에 결합 특성을 보여 줍니다.
 

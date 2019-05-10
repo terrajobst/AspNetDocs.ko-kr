@@ -8,12 +8,12 @@ ms.date: 01/28/2019
 ms.assetid: 20acee16-c70c-41e9-b38f-92bfcf9a4c1c
 msc.legacyurl: /aspnet/overview/owin-and-katana/owin-oauth-20-authorization-server
 msc.type: authoredcontent
-ms.openlocfilehash: d5c8262d48c79616ca3069c37077ba99ffafb650
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 6523d09e41fe10475d1bcb7fca06b2e0e2d3182c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58426052"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118194"
 ---
 # <a name="owin-oauth-20-authorization-server"></a>OWIN OAuth 2.0 권한 부여 서버
 
@@ -34,7 +34,6 @@ ms.locfileid: "58426052"
 > ## <a name="questions-and-comments"></a>질문이 나 의견이 있으면
 >
 > 에 자습서로 직접 관련 되지 않은 질문이 있는 경우에서 게시할 수 있습니다 [Katana 프로젝트 github](https://github.com/aspnet/AspNetKatana/)합니다. 자습서 자체에 대 한 의견 및 질문에 대 한 페이지의 맨 아래에서 설명 섹션을 참조 합니다.
-
 
 합니다 [OAuth 2.0 framework](http://tools.ietf.org/html/rfc6749) HTTP 서비스에 대 한 제한 된 권한을 얻지 타사 앱을 사용 하도록 설정 합니다. 클라이언트 리소스 소유자의 자격 증명을 사용 하 여 보호 된 리소스 액세스를 대신 액세스 토큰을 가져옵니다 (문자열인는 특정 범위, 수명 및 다른 액세스 특성을 나타내는). 액세스 토큰 리소스 소유자의 승인이 있는 타사 클라이언트는 권한 부여 서버에서 발급 됩니다.
 
@@ -175,7 +174,6 @@ IETF의 OAuth 2를 참조 하십시오 [리소스 소유자 암호 자격 증명
 > [!NOTE]
 > 위의 코드는 자습서의이 섹션에서는 설명 되며 보안에서 사용할 수 없습니다 또는 프로덕션 앱. 리소스 소유자 자격 증명을 확인 하지는 않습니다. 모든 자격 증명이 유효 하 고 새 id를 만드는 것으로 가정 합니다. 새 id 생성 액세스 토큰 및 새로 고침 토큰에 사용 됩니다. 사용자 고유의 보안 계정 관리 코드를 사용 하 여 코드를 바꾸세요.
 
-
 ### <a name="client-credentials-grant"></a>클라이언트 권한 부여 자격 증명
 
 IETF의 OAuth 2를 참조 하십시오 [클라이언트 자격 증명 부여](http://tools.ietf.org/html/rfc6749#section-4.4) 이제 섹션입니다.
@@ -195,7 +193,6 @@ IETF의 OAuth 2를 참조 하십시오 [클라이언트 자격 증명 부여](ht
 
 > [!NOTE]
 > 위의 코드는 자습서의이 섹션에서는 설명 되며 보안에서 사용할 수 없습니다 또는 프로덕션 앱. 사용자 고유의 보안 클라이언트 관리 코드를 사용 하 여 코드를 바꾸세요.
-
 
 ### <a name="refresh-token"></a>새로 고침 토큰
 
@@ -274,7 +271,6 @@ Startup 클래스를 만들고 인증 및 Web API를 구성 합니다. 참조 *A
 > [!WARNING]
 > 보안-프로덕션 앱에서 SSL 해제 하지 않습니다. 이제 로그인 자격 증명 네트워크를 통해 일반 텍스트로 전송 되 고 됩니다. 위의 코드 샘플 로컬 디버깅 및 탐색 뿐입니다.
 
-
 ### <a name="implicit-grant-client"></a>암시적 권한 부여 클라이언트
 
 이 클라이언트는 JavaScript를 사용 합니다.
@@ -296,7 +292,6 @@ Startup 클래스를 만들고 인증 및 Web API를 구성 합니다. 참조 *A
 
 > [!NOTE]
 > 외부 파일에 JavaScript를 이동 하 고 Razor 태그를 사용 하 여 포함 되어 있지 않으므로 하는 것이 좋습니다. 간단히 유지 하기 위해이 샘플은 결합 되었습니다.
-
 
 ### <a name="resource-owner-password-credentials-grant-client"></a>리소스 소유자 암호 권한 부여 클라이언트 자격 증명
 

@@ -8,12 +8,12 @@ ms.date: 07/09/2015
 ms.assetid: 7e986ab5-6615-4638-add7-4614ce7b51db
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/monitoring-and-telemetry
 msc.type: authoredcontent
-ms.openlocfilehash: 48a66eea839f7f48899040ad20bbfee95b9a1902
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2fc8f6cdefe1e940f3e3eafc2b9acc9144690284
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59403911"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118728"
 ---
 # <a name="monitoring-and-telemetry-building-real-world-cloud-apps-with-azure"></a>모니터링 및 원격 분석 (Azure 사용 하 여 빌드 실제 클라우드 앱)
 
@@ -23,14 +23,12 @@ ms.locfileid: "59403911"
 
 > 합니다 **실제 세계 클라우드 앱 빌드 Azure** 전자책 Scott Guthrie를 개발한 프레젠테이션을 기반으로 합니다. 13 패턴 설명 하 고 도움이 될 수 있는 사례 성공적인 클라우드를 위한 웹 앱을 개발할 수 있습니다. 전자책에 대 한 정보를 참조 하세요 [첫 번째 장에서](introduction.md)합니다.
 
-
 많은 사람들이 자신의 응용 프로그램 종료 되는 경우 알 수 있도록 하는 고객에 게 사용 합니다. 실제로 모범 사례 없는 섹션과 어디서 나 클라우드에서입니다. 빠른 알림 보장이 및 종종 내용에 대 한 최소 또는 잘못 된 데이터를 가져올 때 알림을 받을 수행 수에 합니다. 분석과 로깅 시스템이 수 있습니다 것의 경우 및 앱을 사용 하 여 문제가 발생할 바로 확인 하 고 유용한 문제 해결 정보를 사용 하 여 합니다.
 
 ## <a name="buy-or-rent-a-telemetry-solution"></a>구입 또는 원격 분석 솔루션도 임대
 
 > [!NOTE]
 > 이 문서에서는 되기 전에 작성 된 [Application Insights](/azure/application-insights/app-insights-overview) 출시 되었습니다. Application Insights는 Azure에서 원격 분석 솔루션에 대 한 기본 방법입니다. 참조 [ASP.NET 웹 사이트에 대 한 Application Insights 설정](/azure/application-insights/app-insights-asp-net) 자세한 내용은 합니다.
-
 
 클라우드 환경에 대 한 훌륭한 것 중 하나는 쉽게 구입 하거나 임대 승리 하는 것입니다. 원격 분석은 예제입니다. 많은 노력 없이 작동 및 실행, 비용 효율적으로 매우 좋은 원격 분석 시스템을 가져올 수 있습니다. Azure와 통합 되는 뛰어난 파트너는 여러 있고 일부는 무료 계층으로 아무 작업도 수행에 대 한 기본 원격 분석을 얻을 수 있습니다. Azure에서 현재 사용할 수 중 일부에 불과합니다가 같습니다.
 

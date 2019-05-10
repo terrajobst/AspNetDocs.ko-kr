@@ -8,12 +8,12 @@ ms.date: 07/11/2008
 ms.assetid: a6e2e1a0-c925-43e9-b711-1f178fdd72d7
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/interacting-with-the-content-page-from-the-master-page-vb
 msc.type: authoredcontent
-ms.openlocfilehash: f0575474bc750cad15ac74c522e3138b326d880c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2b3cc02a170deabdd6248bacc9dab8a17b04e2b5
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59400011"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134115"
 ---
 # <a name="interacting-with-the-content-page-from-the-master-page-vb"></a>마스터 페이지에서 콘텐츠 페이지와 상호 작용(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59400011"
 [코드를 다운로드](http://download.microsoft.com/download/1/8/4/184e24fa-fcc8-47fa-ac99-4b6a52d41e97/ASPNET_MasterPages_Tutorial_07_VB.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/e/b/4/eb4abb10-c416-4ba4-9899-32577715b1bd/ASPNET_MasterPages_Tutorial_07_VB.pdf)
 
 > 메서드를 호출, 마스터 페이지의 코드에서 콘텐츠 페이지의 등 속성을 설정 하는 방법을 검사 합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -50,16 +49,13 @@ ASP.NET 웹 컨트롤을, 단추 컨트롤과 같은 것이 좋습니다. 단추
 
 이 첫 번째 업무 우선 순위는 Northwind 데이터베이스에서 제품을 나열 하는 콘텐츠 페이지를 만드는 것입니다. (이전 자습서에서는 Northwind 데이터베이스 프로젝트에 추가 했습니다 [ *콘텐츠 페이지에서 마스터 페이지와 상호 작용*](interacting-with-the-master-page-from-the-content-page-vb.md).) 새 ASP.NET 페이지를 추가 하 여 시작 합니다 `~/Admin` 라는 폴더 `Products.aspx`에 바인딩하지 하 여는 `Site.master` 마스터 페이지입니다. 그림 1에서는이 페이지는 웹 사이트에 추가한 후 솔루션 탐색기를 보여 줍니다.
 
-
 [![Admin 폴더를 새 ASP.NET 페이지를 추가 합니다.](interacting-with-the-content-page-from-the-master-page-vb/_static/image2.png)](interacting-with-the-content-page-from-the-master-page-vb/_static/image1.png)
 
 **그림 01**: 새 ASP.NET 페이지를 추가 합니다 `Admin` 폴더 ([큰 이미지를 보려면 클릭](interacting-with-the-content-page-from-the-master-page-vb/_static/image3.png))
 
-
 회수에 [ *마스터 페이지에서 제목, 메타 태그 및 기타 HTML 헤더 지정* ](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb.md) 라는 기본 페이지를 사용자 지정 클래스를 만들었습니다 자습서 `BasePage` 생성 하는 페이지의 제목이 없는 경우 명시적으로 설정 합니다. 로 이동 합니다 `Products.aspx` 페이지의 코드 숨김 클래스에서 파생 되 게 하 고 `BasePage` (대신에서 `System.Web.UI.Page`).
 
 마지막으로 업데이트 된 `Web.sitemap` 이 단원에 대 한 항목을 포함 하는 파일입니다. 아래에 다음 태그를 추가 합니다 `<siteMapNode>` 마스터 페이지 상호 작용 단원으로 콘텐츠에 대 한 합니다.
-
 
 [!code-xml[Main](interacting-with-the-content-page-from-the-master-page-vb/samples/sample1.xml)]
 
@@ -67,42 +63,32 @@ ASP.NET 웹 컨트롤을, 단추 컨트롤과 같은 것이 좋습니다. 단추
 
 돌아가서 `Products.aspx`합니다. 콘텐츠 컨트롤에 대 한 `MainContent`GridView 컨트롤을 추가 하 고 이름을 `ProductsGrid`입니다. GridView 라는 새 SqlDataSource 컨트롤을 바인딩할 `ProductsDataSource`합니다.
 
-
 [![GridView 새 SqlDataSource 컨트롤에 바인딩](interacting-with-the-content-page-from-the-master-page-vb/_static/image5.png)](interacting-with-the-content-page-from-the-master-page-vb/_static/image4.png)
 
 **그림 02**: GridView 새 SqlDataSource 컨트롤을 바인딩할 ([클릭 하 여 큰 이미지 보기](interacting-with-the-content-page-from-the-master-page-vb/_static/image6.png))
 
-
 Northwind 데이터베이스 사용 마법사를 구성 합니다. 이전 자습서를 수행한 경우 명명 된 연결 문자열을 했어야 `NorthwindConnectionString` 에서 `Web.config`합니다. 그림 3에 나와 있는 것 처럼 드롭 다운 목록에서이 연결 문자열을 선택 합니다.
-
 
 [![SqlDataSource Northwind 데이터베이스를 사용 하도록 구성](interacting-with-the-content-page-from-the-master-page-vb/_static/image8.png)](interacting-with-the-content-page-from-the-master-page-vb/_static/image7.png)
 
 **그림 03**: SqlDataSource Northwind 데이터베이스를 사용 하도록 구성 ([클릭 하 여 큰 이미지 보기](interacting-with-the-content-page-from-the-master-page-vb/_static/image9.png))
 
-
 다음으로, 데이터 소스 컨트롤을 지정 `SELECT` 드롭 다운 목록에서 Products 테이블을 선택 하 고 반환 하 여 문을 합니다 `ProductName` 및 `UnitPrice` 열 (그림 4 참조). 다음을 클릭 하 고 데이터 소스 구성 마법사를 완료 한 다음 끝냅니다.
-
 
 [![Products 테이블에서 ProductName 및 UnitPrice 필드를 반환 합니다.](interacting-with-the-content-page-from-the-master-page-vb/_static/image11.png)](interacting-with-the-content-page-from-the-master-page-vb/_static/image10.png)
 
 **그림 04**: 반환 된 `ProductName` 및 `UnitPrice` 에서 필드를 `Products` 테이블 ([클릭 하 여 큰 이미지 보기](interacting-with-the-content-page-from-the-master-page-vb/_static/image12.png))
 
-
 이것이 전부입니다! 마법사를 완료 한 후 Visual Studio는 두 BoundFields 미러 SqlDataSource 컨트롤에서 반환 된 두 개의 필드를 GridView에 추가 합니다. GridView 및 SqlDataSource 컨트롤 태그는 다음과 같습니다. 그림 5는 브라우저를 통해 볼 때 결과 보여 줍니다.
 
-
 [!code-aspx[Main](interacting-with-the-content-page-from-the-master-page-vb/samples/sample2.aspx)]
-
 
 [![각 제품 및 해당 가격 GridView에 나열 됩니다.](interacting-with-the-content-page-from-the-master-page-vb/_static/image14.png)](interacting-with-the-content-page-from-the-master-page-vb/_static/image13.png)
 
 **그림 05**: 각 제품 및 해당 가격 GridView에 나열 됩니다 ([클릭 하 여 큰 이미지 보기](interacting-with-the-content-page-from-the-master-page-vb/_static/image15.png))
 
-
 > [!NOTE]
 > 자유롭게 GridView의 모양을 정리할 수 있습니다. 몇 가지 제안 사항에 표시 된 UnitPrice 값을 통화로 서식 지정 및 배경색 및 글꼴을 사용 하 여 표 모양 향상을 위해 포함 됩니다. 표시 및 ASP.NET에서 데이터 서식 지정에 대 한 자세한 내용은 참조 내 [데이터 자습서 시리즈를 사용 하 여 작업](../../data-access/index.md)합니다.
-
 
 ## <a name="step-2-adding-a-double-prices-button-to-the-master-page"></a>2단계: 마스터 페이지에 이중 가격 단추 추가
 
@@ -110,32 +96,25 @@ Northwind 데이터베이스 사용 마법사를 구성 합니다. 이전 자습
 
 다음으로 마스터 페이지 이름을 SqlDataSource 컨트롤을 추가 `DoublePricesDataSource`합니다. 이 SqlDataSource를 사용 하 여 실행 하는 `UPDATE` 모든 가격의 두 배로 문입니다. 구체적으로 설정 해야 해당 `ConnectionString` 하 고 `UpdateCommand` 적절 한 연결 문자열 속성 및 `UPDATE` 문입니다. 이 SqlDataSource 컨트롤을 호출 해야 `Update` 메서드는 경우는 `DoublePrice` 단추를 클릭 합니다. 설정 하는 `ConnectionString` 및 `UpdateCommand` 속성인 SqlDataSource 컨트롤을 선택 하 고 속성 창으로 이동 합니다. `ConnectionString` 속성 목록에 이미 저장 된 연결 문자열 `Web.config` ; 드롭다운 목록을 선택 합니다 `NorthwindConnectionString` 그림 6에 표시 된 대로 옵션.
 
-
 [![SqlDataSource를 위해 사용 하도록 구성](interacting-with-the-content-page-from-the-master-page-vb/_static/image17.png)](interacting-with-the-content-page-from-the-master-page-vb/_static/image16.png)
 
 **그림 06**: SqlDataSource를 사용 하 여 구성 합니다 `NorthwindConnectionString` ([큰 이미지를 보려면 클릭](interacting-with-the-content-page-from-the-master-page-vb/_static/image18.png))
 
-
 설정 하는 `UpdateCommand` 속성을 속성 창에서 UpdateQuery 옵션을 찾습니다. 이 속성을 선택 하면; 줄임표 단추를 표시 합니다. 그림 7 명령 및 매개 변수 편집기 대화 상자를 표시 하려면이 단추를 클릭 합니다. 다음을 입력 `UPDATE` 문을 대화 상자의 텍스트 상자에 붙여넣습니다.
-
 
 [!code-sql[Main](interacting-with-the-content-page-from-the-master-page-vb/samples/sample3.sql)]
 
 이 문을 실행 하는 경우 두 배로 증가 합니다 `UnitPrice` 의 각 레코드에 대 한 값을 `Products` 테이블.
 
-
 [![SqlDataSource의 UpdateCommand 속성 설정](interacting-with-the-content-page-from-the-master-page-vb/_static/image20.png)](interacting-with-the-content-page-from-the-master-page-vb/_static/image19.png)
 
 **그림 07**: SqlDataSource의 설정 `UpdateCommand` 속성 ([큰 이미지를 보려면 클릭](interacting-with-the-content-page-from-the-master-page-vb/_static/image21.png))
 
-
 이러한 속성을 설정한 다음 단추 및 SqlDataSource 컨트롤의 선언적 태그 다음과 비슷하게 표시 됩니다.
-
 
 [!code-aspx[Main](interacting-with-the-content-page-from-the-master-page-vb/samples/sample4.aspx)]
 
 에 호출을 해당 `Update` 메서드 때는 `DoublePrice` 단추를 클릭 합니다. 만들기는 `Click` 에 대 한 이벤트 처리기는 `DoublePrice` 단추 다음 코드를 추가 하 고:
-
 
 [!code-vb[Main](interacting-with-the-content-page-from-the-master-page-vb/samples/sample5.vb)]
 
@@ -157,26 +136,21 @@ Northwind 데이터베이스 사용 마법사를 구성 합니다. 이전 자습
 > [!NOTE]
 > 만들기에 대 한 자세한 내용은 시키고 이벤트 처리, 참조 [이벤트 및 대리자](https://msdn.microsoft.com/library/17sde2xt.aspx) 하 고 [단순 영어에서 이벤트 대리자](http://www.codeproject.com/KB/cs/eventdelegates.aspx)합니다.
 
-
 이벤트 정의 다음 구문을 사용 합니다.
-
 
 [!code-vb[Main](interacting-with-the-content-page-from-the-master-page-vb/samples/sample6.vb)]
 
 사용자가 클릭 될 때 콘텐츠 페이지를 경고에 필요 하기 때문에 합니다 `DoublePrice` 단추 및 기타 추가 정보를 전달할 필요가 없습니다, 이벤트 대리자를 사용할 수 있습니다 `EventHandler`, 두 번째 피연산자로으로 허용 하는 이벤트 처리기를 정의 하는 매개 변수 형식의 개체 `System.EventArgs`합니다. 마스터 페이지에서 이벤트를 만들려면, 마스터 페이지의 코드 숨김 클래스에 다음 코드 줄을 추가 합니다.
 
-
 [!code-vb[Main](interacting-with-the-content-page-from-the-master-page-vb/samples/sample7.vb)]
 
 위의 코드는 공용 이벤트 라는 마스터 페이지를 추가 `PricesDoubled`합니다. 이제 가격의 두 배로 이후이 이벤트가 발생 해야 합니다. 이벤트를 발생 시키려면 다음 구문을 사용 하 여:
-
 
 [!code-vb[Main](interacting-with-the-content-page-from-the-master-page-vb/samples/sample8.vb)]
 
 여기서 *보낸 사람* 하 고 *eventArgs* 은 구독자의 이벤트 처리기에 전달 하려는 값입니다.
 
 업데이트를 `DoublePrice` `Click` 이벤트 처리기를 다음 코드로 바꿉니다.
-
 
 [!code-vb[Main](interacting-with-the-content-page-from-the-master-page-vb/samples/sample9.vb)]
 
@@ -188,11 +162,9 @@ Northwind 데이터베이스 사용 마법사를 구성 합니다. 이전 자습
 
 명명 된 이벤트 처리기를 만들어 시작 `Master_PricesDoubled`합니다. 정의한 방법으로 인해 합니다 `PricesDoubled` 마스터 페이지의 이벤트는 이벤트 처리기의 두 입력된 매개 변수 형식 이어야 합니다 `Object` 및 `EventArgs`, 각각. 이벤트 처리기 호출에서을 `ProductsGrid` GridView의 `DataBind` 표에 데이터를 다시 바인딩해야 하는 방법입니다.
 
-
 [!code-vb[Main](interacting-with-the-content-page-from-the-master-page-vb/samples/sample10.vb)]
 
 이벤트 처리기에 대 한 코드는 완료 되었지만 아직에 했습니다 마스터 페이지의 연결 `PricesDoubled` 이 이벤트 처리기에는 이벤트입니다. 다음 구문을 통해 이벤트 처리기에 이벤트를 연결 하는 구독자:
-
 
 [!code-vb[Main](interacting-with-the-content-page-from-the-master-page-vb/samples/sample11.vb)]
 
@@ -201,7 +173,6 @@ Northwind 데이터베이스 사용 마법사를 구성 합니다. 이전 자습
 이 이벤트 연결 코드 페이지를 처음 방문할 및 후속 포스트백에서 실행 해야 하 고 시점 이벤트를 발생 시킬 때 앞에 오는 페이지 수명 주기에서 발생 해야 합니다. 페이지 수명 주기 초기에 발생 하는 PreInit 단계에서 시점 이벤트 작성 코드를 추가할 경우
 
 오픈 `~/Admin/Products.aspx` 만들어를 `Page_PreInit` 이벤트 처리기:
-
 
 [!code-vb[Main](interacting-with-the-content-page-from-the-master-page-vb/samples/sample12.vb)]
 
@@ -212,11 +183,9 @@ Northwind 데이터베이스 사용 마법사를 구성 합니다. 이전 자습
 
 후자의 방법을 사용해 보겠습니다. 다음 추가 `@MasterType` 페이지의 선언적 태그의 맨 위에 지시문:
 
-
 [!code-aspx[Main](interacting-with-the-content-page-from-the-master-page-vb/samples/sample13.aspx)]
 
 다음 이벤트 배선을 코드를 추가 합니다 `Page_PreInit` 이벤트 처리기:
-
 
 [!code-vb[Main](interacting-with-the-content-page-from-the-master-page-vb/samples/sample14.vb)]
 
@@ -224,16 +193,13 @@ Northwind 데이터베이스 사용 마법사를 구성 합니다. 이전 자습
 
 그림 8과 9이이 동작을 보여 줍니다. 그림 8에서는 먼저 방문 되 면 페이지를 보여 줍니다. 둘 다에 값을 가격에 `RecentProducts` (마스터 페이지의 왼쪽된 열)의 GridView 및 `ProductsGrid` (콘텐츠 페이지)에 GridView입니다. 그림 9에서는 동일한 직후 화면을 `DoublePrice` 버튼을 클릭 합니다. 알 수 있듯이 새 가격은 두 Gridview에 즉시 반영 됩니다.
 
-
 [![초기 가격 값](interacting-with-the-content-page-from-the-master-page-vb/_static/image23.png)](interacting-with-the-content-page-from-the-master-page-vb/_static/image22.png)
 
 **그림 08**: 초기 가격 값 ([클릭 하 여 큰 이미지 보기](interacting-with-the-content-page-from-the-master-page-vb/_static/image24.png))
 
-
 [![Just-Doubled 가격을 Gridview에 표시 됩니다.](interacting-with-the-content-page-from-the-master-page-vb/_static/image26.png)](interacting-with-the-content-page-from-the-master-page-vb/_static/image25.png)
 
 **그림 09**: Just-Doubled 가격을 Gridview에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](interacting-with-the-content-page-from-the-master-page-vb/_static/image27.png))
-
 
 ## <a name="summary"></a>요약
 

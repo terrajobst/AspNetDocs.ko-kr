@@ -8,12 +8,12 @@ ms.date: 08/15/2006
 ms.assetid: f3897a74-cc6a-4032-8f68-465f155e296a
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting/creating-a-customized-sorting-user-interface-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 571e34a8c87bf54b8dd71c912f16ebcdab3c87a7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e2c2ab402c1ffeb9a9a54e0097eb4680158169ff
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59383449"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134276"
 ---
 # <a name="creating-a-customized-sorting-user-interface-vb"></a>사용자 지정된 정렬 사용자 인터페이스 만들기(VB)
 
@@ -23,18 +23,15 @@ ms.locfileid: "59383449"
 
 > 데이터 정렬의 긴 목록을 표시 하는 경우에 매우 유용할 수 있습니다 행 구분 기호를 도입 하 여 관련된 데이터를 그룹화 합니다. 이 자습서는 이러한 정렬 사용자 인터페이스를 만드는 방법을 살펴보겠습니다.
 
-
 ## <a name="introduction"></a>소개
 
 긴 목록을 표시 하 데이터를 정렬 하는 경우 정렬 된 열에서 다른 값의 일부만 있는 최종 사용자 것을 정확 하 게 차이 경계 발생 파악 하기가 어렵습니다. 예를 들어 제품이 81 데이터베이스 에서만 9 개 밖에 다른 범주 선택 (8 개의 고유 범주와 `NULL` 옵션). Seafood 범주에 속하는 제품을 검사 하는 사용자의 경우를 것이 좋습니다. 나열 된 페이지에서 *모든* 최상의 선택 게 범주를 함께 그룹화 하 여 결과 정렬 하는 사용자 수 결정 하는 단일 GridView에는 제품의 모든 Seafood 제품과 함께 합니다. 범주별으로 정렬 한 후 사용자 다음 해야 목록을 hunt Seafood 그룹화 된 제품의 시작 및 종료 위치를 찾고 합니다. 결과 사전순으로 정렬 되므로 범주 이름을 Seafood 제품 찾기 어렵습니다 좋겠지만 그 여전히 밀접 하 게 표의 항목 목록을 검색 합니다.
 
 정렬 된 그룹 간의 경계를 강조 표시를 위해 많은 웹 사이트는 이러한 그룹 간에 구분 기호를 추가 하는 사용자 인터페이스를 사용 합니다. 그림 1에 나와 있는 것 처럼 구분 기호 선택 하면 보다 신속 하 게 특정 그룹을 찾 및 해당 경계를 식별할 뿐만 아니라 데이터에 존재 하는 고유한 그룹을 확인 합니다.
 
-
 [![각 범주 그룹은 명확 하 게 식별](creating-a-customized-sorting-user-interface-vb/_static/image2.png)](creating-a-customized-sorting-user-interface-vb/_static/image1.png)
 
 **그림 1**: 각 범주 그룹은 명확 하 게 식별 됩니다 ([클릭 하 여 큰 이미지 보기](creating-a-customized-sorting-user-interface-vb/_static/image3.png))
-
 
 이 자습서는 이러한 정렬 사용자 인터페이스를 만드는 방법을 살펴보겠습니다.
 
@@ -44,16 +41,13 @@ GridView 향상 된 정렬 인터페이스를 제공 하는 표준, 정렬 가�
 
 만 포함 되도록 GridView를 다음으로 구성 합니다 `ProductName`, `CategoryName`를 `SupplierName`, 및 `UnitPrice` BoundFields 및 지원 되지 않는 CheckBoxField 합니다. 마지막으로 구성 하는 GridView가 스마트 태그에 정렬 사용 확인란을 선택 하 여 정렬을 지원 하기 위해 GridView (또는 설정 하 여 해당 `AllowSorting` 속성을 `true`). 이러한 추가 마치면는 `CustomSortingUI.aspx` 페이지 선언적 태그는 다음과 비슷하게 표시 됩니다.
 
-
 [!code-aspx[Main](creating-a-customized-sorting-user-interface-vb/samples/sample1.aspx)]
 
 브라우저에서 진행 상황을 지금 보려면 잠시 시간이 소요 됩니다. 그림 2에서는 사전순으로 범주 데이터를 정렬할 때 정렬 가능한 GridView를 보여 줍니다.
 
-
 [![정렬 가능한 GridView의 데이터 범주별 정렬](creating-a-customized-sorting-user-interface-vb/_static/image5.png)](creating-a-customized-sorting-user-interface-vb/_static/image4.png)
 
 **그림 2**: 데이터가 범주별으로 정렬 되는 정렬 가능한 GridView가 ([클릭 하 여 큰 이미지 보기](creating-a-customized-sorting-user-interface-vb/_static/image6.png))
-
 
 ## <a name="step-2-exploring-techniques-for-adding-the-separator-rows"></a>2단계: 행 구분 기호를 추가 하는 것에 대 한 기술 탐색
 
@@ -73,11 +67,9 @@ GridView에 추가 행을 추가 하려면 세 가지 선택 사항이 있습니
 
 GridView 데이터 원본에 바인딩되는 경우 생성 된 `GridViewRow` 데이터 원본에 의해 반환 된 각 레코드에 대 한 합니다. 따라서 데이터 원본에 GridView에 바인딩하기 전에 구분 기호 레코드를 추가 하 여 필요한 구분 기호 행을 삽입할 수 했습니다. 그림 3에서는이 개념을 보여 줍니다.
 
-
 ![한 가지 방법은 데이터 원본에 행 구분 기호를 추가 해야](creating-a-customized-sorting-user-interface-vb/_static/image7.png)
 
 **그림 3**: 한 가지 방법은 데이터 원본에 행 구분 기호를 추가 해야
-
 
 특별 한 구분 기호 레코드가 없습니다; 때문에 따옴표로 단어 구분 기호 레코드 사용 아니라 우리가 해야 어떤 이유로 든 플래그 일반 데이터 행이 아닌 구분 기호를 데이터 원본에서 특정 레코드를 제공 하는입니다. 이 예제에서는 바인딩 다시 것에 대 한는 `ProductsDataTable` GridView로 구성 된 인스턴스 `ProductRows`합니다. 레코드 구분 기호 행으로 설정 하 여 플래그 수에서는 해당 `CategoryID` 속성을 `-1` (때문에 이러한 값은 일반적으로 존재 없습니다).
 
@@ -99,22 +91,18 @@ GridView에 바인딩하기 전에 데이터를 메시지, 아닌 구분 기호 
 
 각 정렬 그룹 간에 행 구분 기호를 추가 하려면 생성 된 후이 컨트롤 계층 구조를 직접 조작할 수 했습니다. GridView가의 컨트롤 계층 구조 페이지를 렌더링 하는 시간을 기준으로 마지막으로 생성 되어 있는지 확신할 수 있습니다. 따라서이 방법은 재정의 된 `Page` s 클래스 `Render` 메서드, 이때 GridView가 최종 컨트롤 계층 구조는 필요한 구분 기호 행을 포함 하도록 업데이트 됩니다. 그림 4에서는이 프로세스를 보여 줍니다.
 
-
 [![또 다른 방법은 GridView가의 컨트롤 계층 구조를 조작합니다.](creating-a-customized-sorting-user-interface-vb/_static/image9.png)](creating-a-customized-sorting-user-interface-vb/_static/image8.png)
 
 **그림 4**: 또 다른 방법은 조작 GridView가의 컨트롤 계층 구조 ([클릭 하 여 큰 이미지 보기](creating-a-customized-sorting-user-interface-vb/_static/image10.png))
-
 
 이 자습서에서는이 방식이 정렬 사용자 환경을 사용자 지정을 사용 하겠습니다.
 
 > [!NOTE]
 > 코드 I에 제공 된 예제 기반 m이이 자습서에 표시 [Teemu Keiski](http://aspadvice.com/blogs/joteke/default.aspx) s 블로그 [GridView 정렬 그룹화를 사용 하 여 비트를 재생](http://aspadvice.com/blogs/joteke/archive/2006/02/11/15130.aspx)합니다.
 
-
 ## <a name="step-3-adding-the-separator-rows-to-the-gridview-s-control-hierarchy"></a>3단계: GridView가의 컨트롤 계층 구조에 구분 기호 행 추가
 
 이 추가 끝 페이지 수명 주기의 하지만 실제 GridView c 하기 전에 수행 하고자 하는 해당 컨트롤 계층 구조 생성 되었으며 해당 페이지 방문에 마지막으로 만든 후 GridView가의 컨트롤 계층 구조에 구분 기호 행을 추가 하고자 하므로 HTML로 렌더링 된 제어 계층입니다. 최신 가능한 삽입할 수 있습니다이 위해 중요 한 점은 합니다 `Page` s 클래스 `Render` 이벤트는 다음 메서드 시그니처를 사용 하 여 코드 숨김 클래스에서 재정의할 수 있습니다.
-
 
 [!code-vb[Main](creating-a-customized-sorting-user-interface-vb/samples/sample2.vb)]
 
@@ -125,16 +113,13 @@ GridView에 바인딩하기 전에 데이터를 메시지, 아닌 구분 기호 
 > [!NOTE]
 > 페이지가 처음 로드 될 때 특정 열으로 정렬할 GridView를 하려는 경우 호출 GridView의 `Sort` 페이지를 처음 방문할 (있지만 후속 포스트백에 없는) 메서드. 이를 위해이 호출을 추가 합니다 `Page_Load` 내에서 이벤트 처리기는 `if (!Page.IsPostBack)` 조건부입니다. 다시 참조를 [페이징 및 정렬 보고서 데이터](paging-and-sorting-report-data-vb.md) 대 한 자세한 내용은 자습서 정보는 `Sort` 메서드.
 
-
 가정 하 고 정렬 된 데이터에는 다음 작업은 어떤 열을 확인 하 고으로 데이터를 정렬 하 고 값을 해당 열의 s 차이 찾을 행을 검색 합니다. 다음 코드는 데이터 정렬 되었는지 하는 데이터 정렬 된 열을 찾습니다 보장 합니다.
-
 
 [!code-vb[Main](creating-a-customized-sorting-user-interface-vb/samples/sample3.vb)]
 
 GridView에 아직 되도록 정렬 GridView의 `SortExpression` 속성이 설정 되지 것입니다. 따라서 하고자이 속성에 값이 일부 경우 구분 기호 행을 추가 합니다. 이 경우 다음는 데이터 정렬 된 열의 인덱스를 확인 해야 합니다. GridView가 반복 하 여 이렇게 `Columns` 컬렉션을 갖는 열에 대 한 검색 `SortExpression` 속성이 같으면 GridView의 `SortExpression` 속성입니다. S 열 인덱스 외에도 것도 가져오기는 `HeaderText` 구분 기호 행을 표시할 때 사용 되는 속성입니다.
 
 데이터가 정렬 되는 열의 인덱스를 사용 하 여 GridView의 행을 열거 하는 최종 단계가입니다. 각 행에 대 한 정렬 된 열의 값을 이전 행 정렬 s 열의 값에서 다른 지 여부를 결정 해야 합니다. 따라서 새 삽입 해야 하는 경우 `GridViewRow` 컨트롤 계층 구조에는 인스턴스. 이 작업은 다음 코드를 사용 하 여 수행 됩니다.
-
 
 [!code-vb[Main](creating-a-customized-sorting-user-interface-vb/samples/sample4.vb)]
 
@@ -143,33 +128,27 @@ GridView에 아직 되도록 정렬 GridView의 `SortExpression` 속성이 설�
 > [!NOTE]
 > S 셀의 특정 행의 정렬 열 값을 결정 하려면 사용 `Text` 속성입니다. 이 적합 BoundFields, 및 제외는 TemplateFields, CheckBoxFields 원하는 대로 작동 하 고 등. 곧 대체 GridView 필드를 고려 하는 방법을 살펴보겠습니다.
 
-
 합니다 `currentValue` 및 `lastValue` 변수 그런 다음 비교 됩니다. 다를 경우 컨트롤 계층 구조에 새 구분 기호 행을 추가 해야 합니다. 인덱스를 확인 하 여 이렇게를 `GridViewRow` 에 `Table` s 개체 `Rows` 컬렉션, 새로 만들기 `GridViewRow` 및 `TableCell` 인스턴스 및 추가 합니다 `TableCell` 및 `GridViewRow` 를 컨트롤 계층 구조입니다.
 
 구분 기호 s 유일한 행는 참고 `TableCell` GridView의 전체 너비를 확장 되도록 형식이 사용 하 여 형식이 합니다 `SortHeaderRowStyle` CSS 클래스 있고 해당 `Text` 속성 모두 정렬 그룹을 보여 주는 같은 이름 (예: 범주) 및 그룹 s (예: 음료) 값입니다. 마지막으로, `lastValue` 의 값으로 업데이트 됩니다 `currentValue`합니다.
 
 정렬 그룹 머리글 행의 서식을 지정 하는 데 사용 되는 CSS 클래스 `SortHeaderRowStyle` 에 지정할 필요는 `Styles.css` 파일입니다. 자유롭게 사용 하 여 어떤 스타일 설정을 매력적입니다. 다음 사용 합니다.
 
-
 [!code-css[Main](creating-a-customized-sorting-user-interface-vb/samples/sample5.css)]
 
 현재 코드를 사용 하 여 정렬 인터페이스 정렬 그룹 헤더 추가 모든 BoundField에서 정렬 하는 경우 (공급 업체에서 정렬할 때 스크린 샷을 보여 주는 그림 5 참조). 그러나 다른 필드 형식 (예: CheckBoxField 또는 TemplateField)에서 정렬할 때 정렬 그룹 헤더 (그림 6 참조)를 찾을 수를 반환할 대상이 없습니다 됩니다.
-
 
 [![정렬 인터페이스 BoundFields에서 정렬할 때 정렬 그룹 머리글 포함](creating-a-customized-sorting-user-interface-vb/_static/image12.png)](creating-a-customized-sorting-user-interface-vb/_static/image11.png)
 
 **그림 5**: 정렬 인터페이스 포함 정렬 그룹 헤더 때 기준으로 정렬 BoundFields ([클릭 하 여 큰 이미지 보기](creating-a-customized-sorting-user-interface-vb/_static/image13.png))
 
-
 [![누락 된 경우 정렬 된 CheckBoxField 정렬 그룹 헤더는](creating-a-customized-sorting-user-interface-vb/_static/image15.png)](creating-a-customized-sorting-user-interface-vb/_static/image14.png)
 
 **그림 6**: 정렬 그룹 머리글은 누락 된 경우 정렬 된 CheckBoxField ([클릭 하 여 큰 이미지 보기](creating-a-customized-sorting-user-interface-vb/_static/image16.png))
 
-
 CheckBoxField에서 정렬할 때 정렬 그룹 머리글이 없는 이유는 현재 사용 하므로 방금 합니다 `TableCell` s `Text` 각 행에 대 한 정렬 된 열의 값을 확인 하는 속성입니다. CheckBoxFields에 대 한 합니다 `TableCell` s `Text` 속성은 빈 문자열은 대신 값이 상주 하는 확인란을 웹 컨트롤을 통해 사용할 수는 `TableCell` s `Controls` 컬렉션입니다.
 
 BoundFields 이외의 형식 필드를 처리 하려면 코드를 보강 해야 위치는 `currentValue` 변수가 할당 된에 있는 확인란의 존재 여부를 확인 합니다 `TableCell` s `Controls` 컬렉션. 사용 하는 대신 `currentValue = gvr.Cells(sortColumnIndex).Text`,이 코드를 다음으로 바꿉니다.
-
 
 [!code-vb[Main](creating-a-customized-sorting-user-interface-vb/samples/sample6.vb)]
 
@@ -177,15 +156,12 @@ BoundFields 이외의 형식 필드를 처리 하려면 코드를 보강 해야 
 
 위의 코드를 추가 정렬 그룹 머리글이 있는 이제 지원 되지 않는 CheckBoxField에서 정렬 하는 경우 (그림 7 참조).
 
-
 [![정렬 그룹 헤더는 이제 있는 경우 정렬 된 CheckBoxField](creating-a-customized-sorting-user-interface-vb/_static/image18.png)](creating-a-customized-sorting-user-interface-vb/_static/image17.png)
 
 **그림 7**: 정렬 그룹 헤더는 이제 있는 경우 정렬 된 CheckBoxField ([클릭 하 여 큰 이미지 보기](creating-a-customized-sorting-user-interface-vb/_static/image19.png))
 
-
 > [!NOTE]
 > 제품과 있다면 `NULL` 데이터베이스에 대 한 값을 `CategoryID`, `SupplierID`, 또는 `UnitPrice` 필드를 해당 값으로 표시 됩니다 GridView에서 빈 문자열만 를사용하여해당제품에대한구분기호행의텍스트즉기본적으로`NULL`범주와 같은 값은 읽기: (즉, 있는 s 범주 뒤에 없는 이름을: 범주와 마찬가지로: 음료)입니다. 여기에 표시 된 값을 원하는 경우를 설정할 수 있습니다는 BoundFields [ `NullDisplayText` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.boundfield.nulldisplaytext.aspx) 텍스트에 표시 하려는 하거나 할당할 때 렌더링 메서드의 조건문을 추가할 수 있습니다는 `currentValue` 구분 기호를 행의 `Text` 속성입니다.
-
 
 ## <a name="summary"></a>요약
 

@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: f8400241-4f4b-4bbd-9994-54fb64909e6e
 msc.legacyurl: /web-forms/overview/deployment/configuring-team-foundation-server-for-web-deployment/configuring-a-tfs-build-server-for-web-deployment
 msc.type: authoredcontent
-ms.openlocfilehash: 1500415c7ee017776c59acb05a2eaefc6956a41b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b3aaf7234706d149a3c784347528923f662c3511
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59404710"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133876"
 ---
 # <a name="configuring-a-tfs-build-server-for-web-deployment"></a>웹 배포용 TFS Build Server 구성
 
@@ -22,7 +22,6 @@ ms.locfileid: "59404710"
 [PDF 다운로드](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > 이 항목에서는 빌드 및 팀 빌드 및 배포 (웹 배포)는 인터넷 정보 서비스 (IIS) 웹 배포 도구를 사용 하 여 솔루션을 배포 하는 Team Foundation Server (TFS) 빌드 서버를 준비 하는 방법을 설명 합니다.
-
 
 이 항목의 Fabrikam, Inc. 라는 가상 회사의 엔터프라이즈 배포 요구 사항 기반 자습서 시리즈의 일부를 형성 합니다. 샘플 솔루션을 사용 하 여이 자습서 시리즈&#x2014;는 [Contact Manager 솔루션](../web-deployment-in-the-enterprise/the-contact-manager-solution.md)&#x2014;현실적인 수준의 복잡성을 Windows Communication ASP.NET MVC 3 응용 프로그램을 포함 하 여 웹 응용 프로그램을 나타내는 Foundation (WCF) 서비스 및 데이터베이스 프로젝트입니다.
 
@@ -103,7 +102,6 @@ ms.locfileid: "59404710"
 
 > [!NOTE]
 > 배포 프로세스 VSDBCMD.exe 또는 SQLCMD.exe와 같은 도구 사용에 포함 된 경우에 이러한 빌드 서버에 설치 되어 있는지 확인 해야 합니다. VSDBCMD.exe는 Visual Studio 도구 및 Team Foundation Build를 설치할 때 서버에 일반적으로 추가 됩니다. SQLCMD.exe는 SQL Server 도구입니다. 독립 실행형 버전에서 sqlcmd.exe를 다운로드할 수 있습니다 합니다 [Microsoft SQL Server 2008 R2 기능 팩](https://go.microsoft.com/?linkid=9805134) 페이지입니다.
-
 
 ## <a name="conclusion"></a>결론
 

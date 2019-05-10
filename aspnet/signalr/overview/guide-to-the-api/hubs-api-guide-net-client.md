@@ -8,15 +8,14 @@ ms.date: 01/15/2019
 ms.assetid: 6d02d9f7-94e5-4140-9f51-5a6040f274f6
 msc.legacyurl: /signalr/overview/guide-to-the-api/hubs-api-guide-net-client
 msc.type: authoredcontent
-ms.openlocfilehash: 473c8dd14d639fb9f4ff9e11a4c3ffa2b1a3a81e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 122e918287a21f8f511e91ced03bbb2878dda01d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396033"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65119699"
 ---
 # <a name="aspnet-signalr-hubs-api-guide---net-client-c"></a>ASP.NET SignalR 허브 API 가이드-.NET 클라이언트 (C#)
-
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
@@ -102,7 +101,6 @@ ms.locfileid: "59396033"
 
 > [!NOTE]
 > JavaScript 클라이언트에 대 한 하나 이상의 이벤트 처리기를 호출 하기 전에 등록 해야 합니다 `Start` 연결을 설정 하는 방법입니다. .NET 클라이언트에 대 한 필요한 아닙니다. JavaScript 클라이언트에 대 한 생성 된 프록시 코드를 자동으로 존재 하는 모든 허브에 대 한 프록시 서버에서 만들어지고 있는 허브를 표시 하는 방법에 처리기를 등록 클라이언트에서 사용 하려고 합니다. .NET 클라이언트에 대 한 수 있지만 만들 허브 프록시를 수동으로 SignalR를 사용 하 게 모든 허브에 대 한 프록시를 만드는 것으로 가정 하므로.
-
 
 기본값을 사용 하 여 샘플 코드는 "/ signalr" SignalR 서비스에 연결 하는 URL입니다. 다른 기본 URL을 지정 하는 방법에 대 한 정보를 참조 하세요 [ASP.NET SignalR 허브 API 가이드-서버-/signalr URL](hubs-api-guide-server.md#signalrurl)합니다.
 

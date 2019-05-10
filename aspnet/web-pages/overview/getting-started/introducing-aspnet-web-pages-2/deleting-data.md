@@ -8,12 +8,12 @@ ms.date: 01/02/2018
 ms.assetid: 75b5c1cf-84bd-434f-8a86-85c568eb5b09
 msc.legacyurl: /web-pages/overview/getting-started/introducing-aspnet-web-pages-2/deleting-data
 msc.type: authoredcontent
-ms.openlocfilehash: e9ffe0ea3e2bf817675a4a771d3471ec6eb91133
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c8620fc1abc61d514bdc039c66f7a84e67e89abe
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59406745"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133485"
 ---
 # <a name="introducing-aspnet-web-pages---deleting-database-data"></a>ASP.NET 웹 페이지 소개-데이터베이스 데이터 삭제
 
@@ -33,7 +33,6 @@ ms.locfileid: "59406745"
 > - `WebGrid` 도우미입니다.
 > - SQL `Delete` 명령입니다.
 > - 합니다 `Database.Execute` SQL을 실행 하는 방법 `Delete` 명령입니다.
-
 
 ## <a name="what-youll-build"></a>만들 내용
 
@@ -86,7 +85,6 @@ ms.locfileid: "59406745"
 > 레코드를 변경 하는 사람에 게 앱을 계속 편집에 대 한 사용자에 게 레코드를 표시 해야 합니다. 하지만 단일 레코드 삭제에 대해이 단계를 건너뛸 수 있습니다. 그러나 해당 단계를 건너뜁니다 하지 마십시오. (유용도 사용자가 레코드를 참조 하 여 이러한 레코드를 삭제 하는 것을 확인 합니다.)
 > 
 > 후속 자습서 집합에서 사용자가 레코드를 삭제 하기 전에 로그인 해야 하므로 로그인 기능을 추가 하는 방법을 배웁니다.
-
 
 라는 페이지를 만듭니다 *DeleteMovie.cshtml* 다음 태그를 사용 하 여 파일에 포함 된 내용으로 바꿉니다.
 

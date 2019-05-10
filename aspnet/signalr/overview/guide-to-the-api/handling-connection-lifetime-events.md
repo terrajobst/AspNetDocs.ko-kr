@@ -8,15 +8,14 @@ ms.date: 01/15/2019
 ms.assetid: 03960de2-8d95-4444-9169-4426dcc64913
 msc.legacyurl: /signalr/overview/guide-to-the-api/handling-connection-lifetime-events
 msc.type: authoredcontent
-ms.openlocfilehash: 9e6b0b3b86839efa393659531d8b74770226f383
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 5bdf20549fccab5d644e35fdf4ce351540c8620d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59401467"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65119891"
 ---
 # <a name="understanding-and-handling-connection-lifetime-events-in-signalr"></a>SignalR의 연결 수명 이벤트 이해 및 처리
-
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
@@ -148,7 +147,6 @@ ms.locfileid: "59401467"
 >
 > **중요**: 여기에 설명 된 이벤트의 순서는 보장 되지 않습니다. SignalR에서는이 스키마에 따라 예측 가능한 방식으로 연결 수명 이벤트를 발생 시키는 모든 있지만 가지 다양 한 네트워크 이벤트 및 전송 Api와 같은 기본 통신 프레임 워크 처리 하는 다양 합니다. 예를 들어를 `Reconnected` 클라이언트는 다음 작업을 다시 연결 되 면 이벤트가 발생할 수 있습니다 또는 `OnConnected` 서버에서 처리기는 연결을 설정 하려는 시도가 성공적으로 수행 되지 경우에 실행할 수 있습니다. 이 항목에서는 일반적인 상황에서 정상적으로 생성 되는 영향만 설명 합니다.
 
-
 <a id="clientdisconnect"></a>
 
 ### <a name="client-disconnection-scenarios"></a>클라이언트 연결 끊기 시나리오
@@ -247,7 +245,6 @@ SignalR 2 버전에 클라이언트 연결 끊기에 대 한 기본 제공 서�
 
 > [!WARNING]
 > 보안-클라이언트 연결 끊기에 대 한이 메서드가 아니고 제안 된 기본 제공 API를 처리할 클라이언트에 다시 연결할 수 없습니다 해킹된 코드를 제거할 수 있으므로 악성 코드를 실행 하는 클라이언트를 해킹된 하는 시나리오는 `stopClient` 메서드 또는 변경 수행 합니다. 상태 저장 서비스 거부 (DOS) 보호를 구현 하는 데 적합 한 곳 프런트 엔드 인프라 하지만 대신 프레임 워크 또는 서버 계층에 없는 경우
-
 
 <a id="detectingreasonfordisconnection"></a>
 ## <a name="detecting-the-reason-for-a-disconnection"></a>연결 끊김 이유를 검색합니다.

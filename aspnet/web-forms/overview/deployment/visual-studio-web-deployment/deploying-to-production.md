@@ -8,12 +8,12 @@ ms.date: 02/15/2013
 ms.assetid: 416438a1-3b2f-4d27-bf53-6b76223c33bf
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-production
 msc.type: authoredcontent
-ms.openlocfilehash: 19cda45ce1b425462ec491bcc86b7a0b76dec162
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b9c4a4d035c78b4f4c53942219ccfa3048c7a82b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59409800"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133814"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-deploying-to-production"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 프로덕션 환경에 배포
 
@@ -22,7 +22,6 @@ ms.locfileid: "59409800"
 [시작 프로젝트 다운로드](http://go.microsoft.com/fwlink/p/?LinkId=282627)
 
 > 이 자습서 시리즈를 배포 하는 방법을 보여 줍니다. ASP.NET (게시) Visual Studio 2012 또는 Visual Studio 2010을 사용 하 여 웹 응용 프로그램을 Azure App Service Web Apps 또는 타사 호스팅 공급자입니다. 시리즈에 대 한 자세한 내용은 [시리즈의 첫 번째 자습서](introduction.md)합니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -41,7 +40,6 @@ Azure 계정이 아직 없다면 몇 분만에 무료 평가판 계정을 만들
 > [!NOTE]
 > 이 자습서가 작성 하므로 많은 스테이징 환경과 프로덕션 환경을 만들기 위한 프로세스를 자동화 하는 새 기능이 Azure App Service에 추가 합니다. 참조 [Azure App Service에서 웹 앱 용 스테이징 환경 설정](https://azure.microsoft.com/documentation/articles/web-sites-staged-publishing/)합니다.
 
-
 에 설명 된 대로 합니다 [테스트 환경 자습서 배포](deploying-to-iis.md)가장 신뢰할 수 있는 테스트 환경은 프로덕션 웹 사이트와 마찬가지로는 호스팅 공급자에서 웹 사이트입니다. 여러 호스팅 공급자의 중요 한 추가 비용 대비 이점을 따져보는 해야 하지만 Azure에서 스테이징 앱으로 추가 무료 웹 앱을 만들 수 있습니다. 데이터베이스를 제공 해야 하 고 프로덕션 데이터베이스의 비용을 통해 추가 비용을 없음 또는 됩니다 또는 최소화 합니다. 사용 하는 데이터베이스 저장소의 양을 대신 각 데이터베이스에 대해 지불 azure에서 및 준비 단계에서 사용 하 여 추가 저장소의 양을 최소화 됩니다.
 
 에 설명 된 대로 [테스트 환경 자습서 배포](deploying-to-iis.md), 스테이징 및 프로덕션 하나의 데이터베이스에 두 개의 데이터베이스를 배포 하려고 합니다. 별도 유지 하려는 경우 프로세스는 같습니다 제외 하는 각 환경에 대 한 추가 데이터베이스를 만들고 게시 프로필을 만들 때 각 데이터베이스에 대 한 올바른 대상 문자열을 선택 합니다.
@@ -50,7 +48,6 @@ Azure 계정이 아직 없다면 몇 분만에 무료 평가판 계정을 만들
 
 > [!NOTE]
 > 다음 단계에는 Azure 관리 포털을 사용 하 여 Azure App Service에서 웹 앱을 만드는 방법을 보여 줍니다. Azure SDK의 최신 버전에서는 서버 탐색기를 사용 하 여 Visual Studio를 종료 하지 않고이 수행할 수 있습니다. Visual Studio 2013의 게시 대화 상자에서 직접 웹 앱을 만들 수 있습니다. 자세한 내용은 참조 하세요. [Azure App Service에서 ASP.NET 웹 앱을 만듭니다.](https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet)
-
 
 1. 에 [Azure 관리 포털](https://manage.windowsazure.com/), 클릭 **Websites**, 클릭 하 고 **새로 만들기**합니다.
 2. 클릭 **웹 사이트**를 클릭 하 고 **사용자 지정 만들기**합니다.
@@ -97,7 +94,6 @@ Azure 계정이 아직 없다면 몇 분만에 무료 평가판 계정을 만들
 
 > [!NOTE]
 > 이러한 지침은 다운로드 하 여 게시 프로필을 만드는 방법을 보여 줍니다는 *.publishsettings* 타사 호스팅 공급자에 대 한 뿐만 아니라 Azure에 대 한 작동 하는 파일입니다. 최신 Azure SDK 있습니다 Visual Studio에서 Azure에 직접 연결 하 고 Azure 계정에 있는 웹 앱의 목록에서 선택할 수 있습니다. Visual Studio 2013에서 로그인 할 수 있습니다에서 Azure로의 **웹 게시** 대화 상자 또는 **서버 탐색기** 창입니다. 자세한 내용은 [Azure App Service에서 ASP.NET 웹 앱 만들기](https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet)합니다.
-
 
 ### <a name="download-the-publishsettings-file"></a>.Publishsettings 파일 다운로드
 
@@ -165,7 +161,6 @@ Azure 계정이 아직 없다면 몇 분만에 무료 평가판 계정을 만들
 
 > [!NOTE]
 > 이 섹션에서는 환경 표시기에 대 한 Web.config 변환을 설정 하는 방법을 보여 줍니다. 표시기 이므로 `<appSettings>` Azure App Service에 배포 하는 경우 변환 지정 하기 위한 또 다른 방법은 있는 요소입니다. 자세한 내용은 [Azure에서 지정 하는 Web.config 설정을](web-config-transformations.md#watransforms)합니다.
-
 
 1. **솔루션 탐색기**, 확장 **속성**를 차례로 확장 하 고 **PublishProfiles**합니다.
 2. 마우스 오른쪽 단추로 클릭 *Staging.pubxml*를 클릭 하 고 **Config 변환 추가**합니다.

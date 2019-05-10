@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.assetid: 1568247f-60b5-4eca-96e0-e661fbb2b273
 msc.legacyurl: /signalr/overview/getting-started/tutorial-server-broadcast-with-signalr
 msc.type: authoredcontent
-ms.openlocfilehash: aa8c0be6e4a758da34fc6eed902e31049d0a9a9c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 14924109fff8db3e537e6bc08b6dc868792ee660
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379731"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65119921"
 ---
 # <a name="tutorial-server-broadcast-with-signalr-2"></a>자습서: SignalR 2를 사용 하 여 브로드캐스트 서버
 
@@ -39,7 +39,6 @@ ms.locfileid: "59379731"
 
 > [!IMPORTANT]
 > 응용 프로그램을 구축 하는 단계를 진행 하지 않으려는 경우에 새 빈 ASP.NET 웹 응용 프로그램 프로젝트에 SignalR.Sample 패키지를 설치할 수 있습니다. 이 자습서의 단계를 수행 하지 않고 NuGet 패키지를 설치 하는 경우의 지침에 따라야 합니다 *readme.txt* 파일입니다. OWIN 시작을 추가 해야 패키지를 실행 하려면 호출 하는 클래스는 `ConfigureSignalR` 설치 패키지에는 메서드. OWIN startup 클래스를 추가 하지 않은 경우 오류를 받습니다. 참조 된 [StockTicker 샘플 설치](#install-the-stockticker-sample) 이 문서의 섹션입니다.
-
 
 ## <a name="prerequisites"></a>전제 조건
 

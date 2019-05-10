@@ -8,12 +8,12 @@ ms.date: 02/20/2009
 ms.assetid: 4805e75a-7911-46e3-b11b-229a6eed245e
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager/iteration-3-add-form-validation-vb
 msc.type: authoredcontent
-ms.openlocfilehash: e031417f2ee22533e7b5a606fc40526d7d911efc
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 73b307f53875abe84b592c75b1ff614ffd9d8b82
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59413336"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123976"
 ---
 # <a name="iteration-3--add-form-validation-vb"></a>반복 #3-양식 유효성 검사 추가 (VB)
 
@@ -23,9 +23,7 @@ by [Microsoft](https://github.com/microsoft)
 
 > 세 번째 반복에서는 기본 양식 유효성 검사를 추가합니다. 사용자를 방지할 수를 필요한 형식의 필드를 완료 하지 않고 폼을 제출 합니다. 또한 전자 메일 주소 및 전화 번호 유효성을 검사 합니다.
 
-
 ## <a name="building-a-contact-management-aspnet-mvc-application-vb"></a>연락처 관리 ASP.NET MVC 응용 프로그램을 작성 (VB)
-  
 
 이 시리즈의 자습서에서 전체 연락처 관리 응용을 프로그램 시작부터 완료를 빌드합니다. 연락처 관리자 응용 프로그램에 사용자의 목록을 포함 된 상점 연락처 정보-이름, 전화 번호 및 전자 메일 주소-할 수 있습니다.
 
@@ -45,16 +43,13 @@ by [Microsoft](https://github.com/microsoft)
 
 - 반복 #7 – Ajax 기능을 추가 합니다. 일곱 번째 반복에서 개선할 응용 프로그램의 성능과 응답성 Ajax에 대 한 지원을 추가 하 여 합니다.
 
-
 ## <a name="this-iteration"></a>이 반복
 
 연락처 관리자 응용 프로그램의이 두 번째 반복에서는 기본 양식 유효성 검사를 추가합니다. 사용자를 방지할 수를 필요한 형식의 필드에 대 한 값을 입력 하지 않고 연락처를 제출 합니다. 또한 전화 번호 및 전자 메일 주소 (그림 1 참조) 유효성을 검사 합니다.
 
-
 [![새 프로젝트 대화 상자](iteration-3-add-form-validation-vb/_static/image1.jpg)](iteration-3-add-form-validation-vb/_static/image1.png)
 
 **그림 01**: 유효성 검사를 사용 하 여 폼 ([클릭 하 여 큰 이미지 보기](iteration-3-add-form-validation-vb/_static/image2.png))
-
 
 이 반복에서 컨트롤러 작업에 직접 유효성 검사 논리를 추가합니다. 일반적으로 ASP.NET MVC 응용 프로그램에 유효성 검사를 추가 하려면 권장 되는 방법은 아닙니다. 별도의 응용 프로그램 s 유효성 검사 논리를 배치 하는 것이 좋습니다 [서비스 계층](http://martinfowler.com/eaaCatalog/serviceLayer.html)합니다. 다음 반복에서 응용 프로그램을 관리할 수 있도록 연락처 관리자 응용 프로그램을 리팩터링 했습니다.
 
@@ -76,7 +71,6 @@ by [Microsoft](https://github.com/microsoft)
 > 
 > 유효성 검사 오류 메시지의 모양을 사용자 지정 하려면이 섹션에 설명 된 스타일 시트 클래스를 수정할 수 있습니다.
 
-
 ## <a name="adding-validation-logic-to-the-create-action"></a>유효성 검사 논리를 추가 된 작업 만들기
 
 현재, Create view 유효성 검사 오류 메시지를 모든 메시지를 생성 하는 논리를 작성 하지 않은 것 때문에 되지 표시 됩니다. 유효성 검사 오류 메시지를 표시 하려면 ModelState에 오류 메시지를 추가 해야 합니다.
@@ -84,7 +78,6 @@ by [Microsoft](https://github.com/microsoft)
 > [!NOTE] 
 > 
 > UpdateModel() 메서드 오류 메시지를 추가 ModelState 자동으로 폼 필드의 값 속성에 할당 오류가 발생 하는 경우. 예를 들어, 날짜/시간 값을 받아들이는 BirthDate 속성에 "apple" 문자열을 할당 하려고 하면 다음 UpdateModel() 메서드는 오류를 추가 ModelState 합니다.
-
 
 목록 2에서 수정 된 create () 메서드를 데이터베이스에 새 연락처를 삽입 하기 전에 연락처 클래스의 속성의 유효성을 검사 하는 새 섹션을 포함 합니다.
 
@@ -106,7 +99,6 @@ by [Microsoft](https://github.com/microsoft)
 > [!NOTE] 
 > 
 > 정규식 리포지토리에서 전화 번호 및 전자 메일 주소 유효성을 검사 하는 것에 대 한 정규식을 받았습니다. [*http://regexlib.com*](http://regexlib.com)
-
 
 ## <a name="adding-validation-logic-to-the-edit-action"></a>편집 작업으로 유효성 검사 논리를 추가합니다.
 
