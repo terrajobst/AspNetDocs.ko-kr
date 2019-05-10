@@ -8,12 +8,12 @@ ms.date: 05/12/2009
 ms.assetid: 763650a9-ffde-46a9-b779-7a9145dd5d88
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/getting-started/using-ajax-control-toolkit-controls-and-control-extenders-vb
 msc.type: authoredcontent
-ms.openlocfilehash: f3371165a30018c8096da8b6b9de567ed6fe6365
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 90a6003ff50ba6e85196c25cf175e057810f0f84
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59382630"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65127184"
 ---
 # <a name="using-ajax-control-toolkit-controls-and-control-extenders-vb"></a>Using AJAX 컨트롤 도구 키트 컨트롤 및 컨트롤 Extender 사용(VB)
 
@@ -21,13 +21,11 @@ by [Microsoft](https://github.com/microsoft)
 
 > ASP.NET 페이지에 AJAX Control Toolkit 컨트롤 및 extender를 추가 하는 방법에 알아봅니다.
 
-
 AJAX Control Toolkit 컨트롤 및 컨트롤 extenders 집합이 포함 되어 있습니다. 이 간략 한 자습서는 ASP.NET 페이지에 컨트롤 및 컨트롤 extenders 사용을 추가 하는 방법을 알아봅니다.
 
 > [!NOTE] 
 > 
 > AJAX Control Toolkit을 설치 하 고 Visual Studio/Visual Web Developer 도구 상자에 AJAX Control Toolkit을 추가 하는 방법은 자습서를 참조 하세요 [AJAX Control Toolkit 시작](get-started-with-the-ajax-control-toolkit-vb.md)합니다.
-
 
 ## <a name="using-ajax-control-toolkit-controls"></a>AJAX 컨트롤 도구 키트 컨트롤을 사용 하 여
 
@@ -43,21 +41,17 @@ AJAX Control Toolkit에서 컨트롤을 사용 하는 경우 특별 한 요구 �
 4. 메뉴 옵션을 선택 하 여 웹 사이트를 실행할 **디버그, 디버깅 시작** F5 키를 눌러 또는 합니다.
 5. 그림 3에는 페이지가 표시 됩니다.
 
-
 [![HTML 편집기 컨트롤 선택](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image1.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image1.png)
 
 **그림 01**: HTML 편집기 컨트롤 선택 ([클릭 하 여 큰 이미지 보기](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image2.png))
-
 
 [![ScriptManager 및 편집 컨트롤을 사용 하 여 visual Studio 디자이너](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image2.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image3.png)
 
 **그림 02**: ScriptManager 및 편집 컨트롤을 사용 하 여 visual Studio Designer ([클릭 하 여 큰 이미지 보기](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image4.png))
 
-
 [![DisplayEditor.aspx 페이지](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image3.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image5.png)
 
 **그림 03**: DisplayEditor.aspx 페이지 ([클릭 하 여 큰 이미지 보기](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image6.png))
-
 
 ## <a name="using-ajax-control-toolkit-control-extenders"></a>AJAX 컨트롤 도구 키트 컨트롤 Extender를 사용 하 여
 
@@ -75,29 +69,23 @@ AJAX Control Toolkit 컨트롤 extenders를 사용에 포함 되어 있습니다
 6. 디자이너에서 단추 컨트롤을 선택 하 고 Extender가 Button1 확장\_속성 창에서 ConfirmButtonExtender 노드 (그림 6 참조). 값을 할당 *실제로?* ConfirmText 속성입니다.
 7. 메뉴 옵션을 선택 하 여 페이지를 실행할 **디버그, 디버깅 시작** 또는 F5 키를 누릅니다.
 
-
 [![Extender 추가 작업 옵션](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image4.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image7.png)
 
 **그림 04**: Extender 추가 작업 옵션 ([클릭 하 여 큰 이미지 보기](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image8.png))
-
 
 [![컨트롤 같이 ConfirmButton extender를 선택합니다.](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image5.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image9.png)
 
 **그림 05**: 컨트롤 같이 ConfirmButton extender를 선택 하면 ([클릭 하 여 큰 이미지 보기](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image10.png))
 
-
 [![ConfirmButton 속성 설정](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image6.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image11.png)
 
 **그림 06**: ConfirmButton 속성을 설정 ([클릭 하 여 큰 이미지 보기](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image12.png))
 
-
 페이지가 열릴 때 단추가 표시 됩니다. 단추를 클릭 하면 그림 7에서 확인 대화 상자를 가져옵니다.
-
 
 [![확인 대화 상자를 표시합니다.](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image7.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image13.png)
 
 **그림 07**: 확인 대화 상자를 표시 합니다. ([클릭 하 여 큰 이미지 보기](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image14.png))
-
 
 일반적으로 끌어 오지 않은 컨트롤 extender를 페이지를 확인 합니다. 대신 사용 합니다 **Extender 추가** extender를 페이지에 이미 추가한 컨트롤에 추가 하는 옵션을 작업 합니다. 확인, 또한 컨트롤 extender 속성 설정 되는 확장 된 컨트롤의 속성 시트를 열어 합니다.
 

@@ -8,12 +8,12 @@ ms.date: 06/19/2013
 ms.assetid: 7a87f16f-0e19-4f15-a88a-094ae866c4a2
 msc.legacyurl: /mvc/overview/older-versions/using-oauth-providers-with-mvc
 msc.type: authoredcontent
-ms.openlocfilehash: c2fe74c3d7b1aa0d230f1893f6ba7dcaa7a88419
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 5dfd1305376a62f4987caea242ca0f6aac1018e9
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396985"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129642"
 ---
 # <a name="using-oauth-providers-with-mvc-4"></a>MVC 4와 함께 OAuth 공급자 사용
 
@@ -24,7 +24,6 @@ ms.locfileid: "59396985"
 > ASP.NET MVC 5 웹 응용 프로그램에서 외부 자격 증명을 사용 하려면 참조 [Facebook 및 Google OAuth2 및 OpenID Sign on을 사용 하 여 ASP.NET MVC 5 앱 만들기](../security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on.md)합니다.
 > 
 > 수백만 명의 사용자는 이러한 외부 공급자를 사용 하 여 계정을 이미 있기 때문에 중요 한 장점을 제공 웹 사이트에서 이러한 자격 증명을 사용 하도록 설정 합니다. 이러한 사용자를 만들고 새 자격 증명 집합을 기억 없는 경우 사이트에 대 한 등록 싶다는 더욱 수 있습니다. 또한 사용자가 이러한 공급자 중 하나를 통해 로그인 한 후 공급자에서 소셜 작업을 통합할 수 있습니다.
-
 
 ## <a name="what-youll-build"></a>만들 내용
 

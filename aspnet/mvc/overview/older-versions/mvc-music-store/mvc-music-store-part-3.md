@@ -8,12 +8,12 @@ ms.date: 04/21/2011
 ms.assetid: 94297aa0-1f2d-4d72-bbcb-63f64653e0c0
 msc.legacyurl: /mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-3
 msc.type: authoredcontent
-ms.openlocfilehash: ce866a169e69c0d85fe18ddeccf271f1f235d440
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3fcfc816cde22c697a78bab2c9ea7ace1bf68501
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381122"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129671"
 ---
 # <a name="part-3-views-and-viewmodels"></a>3부: 보기 및 ViewModels
 
@@ -24,7 +24,6 @@ ms.locfileid: "59381122"
 > MVC Music Store는 온라인 음악 앨범을 판매 하 고 기본 사이트 관리, 사용자 로그인 및 장바구니 기능을 구현 하는 간단한 샘플 저장소 구현입니다.  
 >   
 > 이 자습서 시리즈 모든 ASP.NET MVC Music Store 샘플 응용 프로그램 빌드를 수행 하는 단계를 자세히 설명 합니다. 3 부에서는 보기 및 ViewModels를 설명합니다.
-
 
 지금까지에서는 했습니다만 된 문자열을 반환 컨트롤러 작업에서. 컨트롤러의 작동 방식을 파악 하는 유용한 방법 이지만 하지는 원하는 실제 웹 응용 프로그램을 빌드하는 것입니다. HTML 사이트를 방문 하는 브라우저를 다시 생성 하는 더 나은 방법을 사용할 예정 – 템플릿 파일 HTML 콘텐츠를 보다 쉽게 사용자 지정에 사용 하는 우리를 반송 합니다. 이것이 뷰 수행 합니다.
 
@@ -257,7 +256,6 @@ Html.ActionLink() 링크에 필요한 만큼 많은 정보를 지정할 수 있�
 장르 목록에 대 한 HTML은 다음과 같습니다.
 
 [!code-html[Main](mvc-music-store-part-3/samples/sample22.html)]
-
 
 > [!div class="step-by-step"]
 > [이전](mvc-music-store-part-2.md)

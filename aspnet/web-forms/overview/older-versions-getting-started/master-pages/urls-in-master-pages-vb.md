@@ -8,12 +8,12 @@ ms.date: 06/10/2008
 ms.assetid: 43d1e83c-0092-4dcf-977c-e709c4dce7c3
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/urls-in-master-pages-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 35fcf02c20e3d20f9cb75f6a25aeb1ddac016b4e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 856d0c588535838c73d52ee47648fcb5928cf5b7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59393771"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128615"
 ---
 # <a name="urls-in-master-pages-vb"></a>마스터 페이지의 URL(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59393771"
 [코드를 다운로드](http://download.microsoft.com/download/e/e/f/eef369f5-743a-4a52-908f-b6532c4ce0a4/ASPNET_MasterPages_Tutorial_04_VB.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/8/f/6/8f6349e4-6554-405a-bcd7-9b094ba5089a/ASPNET_MasterPages_Tutorial_04_VB.pdf)
 
 > 마스터 페이지의 Url이 마스터 페이지 파일의 콘텐츠 페이지 이외의 다른 상대 디렉터리에 있는 것으로 인해 중단 될 수 있습니다 하는 방법을 다룹니다. 통해 Url 기준 주소 다시 지정 살펴봅니다 ~ 선언적 구문 및 ResolveUrl 및 ResolveClientUrl를 프로그래밍 방식으로 사용 합니다. (또한 살펴보고
-
 
 ## <a name="introduction"></a>소개
 
@@ -36,13 +35,11 @@ ms.locfileid: "59393771"
 
 예를 들어 웹 사이트에는 `~/Images/` 단일 이미지 파일, 폴더 `PoweredByASPNET.gif`합니다. 마스터 페이지 파일을 `Site.master` 에 `<img>` 요소에는 `footerContent` 다음 태그를 사용 하 여 지역:
 
-
 [!code-html[Main](urls-in-master-pages-vb/samples/sample1.html)]
 
 합니다 `src` 특성 값을 `<img>` 요소 이므로 상대 URL로 시작 하지 않습니다 `/` 또는 `http://`합니다. 즉, 합니다 `src` 특성 값 표시 하도록 브라우저에 지시 합니다 `Images` 라는 파일에 대 한 하위 폴더 `PoweredByASPNET.gif`합니다.
 
 콘텐츠 페이지를 방문 하는 경우 위의 태그는 브라우저에 직접 전송 됩니다. 방문을 내어 `About.aspx` 브라우저로 전송의 HTML 소스를 확인 합니다. 브라우저에 마스터 페이지의 정확히 동일한 태그를 보냈음을 찾을 수 있습니다.
-
 
 [!code-html[Main](urls-in-master-pages-vb/samples/sample2.html)]
 
@@ -51,17 +48,13 @@ ms.locfileid: "59393771"
 > [!NOTE]
 > 에 [ *마스터 페이지에서 제목, 메타 태그 및 기타 HTML 헤더 지정* ](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb.md) 자습서 라는 기본 페이지를 사용자 지정 클래스를 만들었습니다 `BasePage` 콘텐츠 페이지의 제목을 자동으로 설정 하는 (하는 경우 해당 명시적으로 할당 되지 않았습니다)입니다. 새로 생성된 된 페이지의 코드 숨김 클래스에서 파생 해야 `BasePage` 이 기능을 활용할 수 있도록 합니다.
 
-
 이 콘텐츠 페이지를 만든 후 솔루션 탐색기는 그림 1 유사 해야 합니다.
-
 
 ![새 폴더 및 ASP.NET 페이지 프로젝트에 추가 되었습니다.](urls-in-master-pages-vb/_static/image1.png)
 
 **그림 01**: 새 폴더 및 ASP.NET 페이지 프로젝트에 추가 되었습니다.
 
-
 다음으로 업데이트 합니다 `Web.sitemap` 포함할 새 파일을 `<siteMapNode>` 이 단원에 대 한 항목입니다. 다음 XML에서는 전체를 보여 줍니다 `Web.sitemap` 이제는 제 3의 추가 포함 하는 태그 `<siteMapNode>` 요소입니다.
-
 
 [!code-xml[Main](urls-in-master-pages-vb/samples/sample3.xml)]
 
@@ -69,16 +62,13 @@ ms.locfileid: "59393771"
 
 합니다 `~/Admin/Default.aspx` 콘텐츠 페이지에 대 한 동일한 HTML 전송 되는 `footerContent` 지역 처럼를 `About.aspx` 페이지:
 
-
 [!code-html[Main](urls-in-master-pages-vb/samples/sample4.html)]
 
 때문에 `<img>` 요소의 `src` 특성은 상대 URL을 브라우저 표시 하려고를 `Images` 웹 페이지의 폴더 위치를 기준으로 폴더입니다. 즉, 브라우저 이미지 파일을 찾고 `Admin/Images/PoweredByASPNET.gif`합니다.
 
-
 [![PoweredByASPNET.gif 이미지 파일을 찾을 수 없습니다.](urls-in-master-pages-vb/_static/image3.png)](urls-in-master-pages-vb/_static/image2.png)
 
 **그림 02**: 합니다 `PoweredByASPNET.gif` 이미지 파일을 찾을 수 없습니다 ([큰 이미지를 보려면 클릭](urls-in-master-pages-vb/_static/image4.png))
-
 
 ### <a name="replacing-relative-urls-with-absolute-urls"></a>절대 Url을 사용 하 여 상대 Url을으로 바꿉니다.
 
@@ -91,11 +81,9 @@ ms.locfileid: "59393771"
 
 잠시 업데이트 하는 `<img>` 요소의 `src` 위에 표시 된 형식 중 하나를 사용 하 여 절대 url 특성 및 다음 방문 하 여는 `~/Admin/Default.aspx` 브라우저를 통해 페이지입니다. 브라우저를 제대로 찾아 표시할이 이번을 `PoweredByASPNET.gif` 이미지 파일 (그림 3 참조).
 
-
 [![PoweredByASPNET.gif 이미지는 이제 표시](urls-in-master-pages-vb/_static/image6.png)](urls-in-master-pages-vb/_static/image5.png)
 
 **그림 03**: 합니다 `PoweredByASPNET.gif` 이미지는 이제 표시 됩니다 ([큰 이미지를 보려면 클릭](urls-in-master-pages-vb/_static/image7.png))
-
 
 절대 URL 하드 코딩 작동 하는 동안이 밀접 하 게 결합 HTML 웹 사이트의 서버 및 폴더 위치를 변경할 수 있습니다. 폼의 절대 URL을 사용 하 여 `http://localhost:3908/...` 불안정 이므로 localhost 앞에 포트 번호를 자동으로 Visual Studio의 기본 제공 ASP.NET 개발 웹 서버 시작 될 때마다 선택 됩니다. 마찬가지로,는 `http://localhost` 파트 때만 유효 로컬로 테스트 합니다. URL 기본 바뀌어 다른 항목에 같은 코드를 프로덕션 서버로 배포 되 면 `http://www.yourserver.com`합니다. 폼의 절대 URL `/ASPNET_MasterPages_Tutorial_04_VB/...` 도 동일한 때에서 증가 하므로 문제가 발생이 응용 프로그램 경로 개발 및 프로덕션 서버 간의 다른 경우가 많습니다.
 
@@ -110,7 +98,6 @@ ms.locfileid: "59393771"
 > [!NOTE]
 > 모든 ASP.NET 서버 컨트롤에서 파생 되므로 합니다 `Control` 클래스를 모든 서버 컨트롤에 액세스할 수는 `ResolveClientUrl` 메서드. 도 `Page` 클래스에서 파생 되는 `Control` 클래스, 즉 ASP.NET 페이지의 코드 숨김 클래스에서 직접이 메서드를 사용할 수 있습니다.
 
-
 ### <a name="usingin-the-declarative-markup"></a>사용 하 여`~`선언적 태그에
 
 URL 관련 속성을 포함 하는 여러 ASP.NET 웹 컨트롤로: 하이퍼링크 컨트롤에는 `NavigateUrl` 속성, 컨트롤에 이미지를 `ImageUrl` 속성 등에입니다. 이러한 컨트롤에 해당 URL 관련 속성 값을 전달할를 렌더링할 때 `ResolveClientUrl`합니다. 따라서 이러한 속성을 포함 하는 경우는 `~` 웹 응용 프로그램의 루트를 가리키는 URL 유효한 상대 URL로 수정 됩니다.
@@ -119,29 +106,24 @@ ASP.NET 서버 컨트롤에만 변환 하는 염두에 둡니다는 `~` 해당 U
 
 이미지 태그를 해결 하려면 `Site.master`, 기존 대체 `<img>` ASP.NET 이미지 웹 컨트롤을 사용 하 여 요소입니다. 이미지 웹 컨트롤의 설정 `ID` 하 `PoweredByImage`, 해당 `ImageUrl` 속성을 `~/Images/PoweredByASPNET.gif`, 및 해당 `AlternateText` "ASP.NET에서 전원!" 속성
 
-
 [!code-aspx[Main](urls-in-master-pages-vb/samples/sample5.aspx)]
 
 이 변경의 마스터 페이지에 확인 한 후 다시 방문는 `~/Admin/Default.aspx` 페이지를 다시 합니다. 이 이번에는 `PoweredByASPNET.gif` 이미지 파일 페이지에 나타납니다 (그림 3 참조). 이미지 웹 컨트롤을 렌더링할 때이 사용 합니다 `ResolveClientUrl` 해결 방법 해당 `ImageUrl` 속성 값입니다. `~/Admin/Default.aspx` 는 `ImageUrl` 을 적절 한 상대 URL의 HTML 소스 다음 코드 조각으로 변환 됩니다.
-
 
 [!code-html[Main](urls-in-master-pages-vb/samples/sample6.html)]
 
 > [!NOTE]
 > URL 기반 웹 컨트롤 속성에 사용 될 뿐만 아니라 합니다 `~` 호출 하는 경우에 사용할 수는 `Response.Redirect` 및 `Server.MapPath` 특히 메서드. 또한 합니다 `ResolveClientUrl` 필요한 경우 ASP.NET 또는 마스터 페이지의 선언적 태그에서 직접 메서드를 호출할 수 있습니다를 참조 하세요 [Fritz Onion](https://www.pluralsight.com/blogs/fritz/)의 블로그 항목 [사용 하 여 `ResolveClientUrl` 태그에서](https://www.pluralsight.com/blogs/fritz/archive/2006/02/06/18596.aspx)합니다.
 
-
 ## <a name="fixing-the-master-pages-remaining-relative-urls"></a>마스터 페이지의 상대 Url을 나머지 수정
 
 외에 `<img>` 요소에는 `footerContent` 방금 고정을 마스터 페이지는 주의 기울여야 하는 하나 이상의 상대 URL이 포함 합니다. 합니다 `topContent` "마스터 페이지 자습서"를 가리키는 링크를 포함 하는 지역 `Default.aspx`합니다.
-
 
 [!code-html[Main](urls-in-master-pages-vb/samples/sample7.html)]
 
 사용자가이 URL을 상대 하기 때문에 전송할는 `Default.aspx` 콘텐츠 페이지를 방문 하는 것의 폴더에는 페이지입니다. 항상이 링크를 `Default.aspx` 바꾸려면 먼저 루트 폴더에는 `<a>` 하이퍼링크 웹을 사용 하 여 요소를 사용할 수 있도록 제어는 `~` 표기법.
 
 제거는 `<a>` 요소 태그 및 해당 위치에 하이퍼링크 컨트롤을 추가 합니다. 하이퍼링크의 설정 `ID` 하 `lnkHome`, 해당 `NavigateUrl` 속성을 `~/Default.aspx`, 및 해당 `Text` 속성을 "마스터 페이지 자습서입니다."
-
 
 [!code-aspx[Main](urls-in-master-pages-vb/samples/sample8.aspx)]
 
@@ -151,13 +133,11 @@ ASP.NET 서버 컨트롤에만 변환 하는 염두에 둡니다는 `~` 해당 U
 
 에 [ *사이트 전체 레이아웃을 사용 하 여 마스터 페이지 만들기* ](creating-a-site-wide-layout-using-master-pages-vb.md) 추가한 자습서를 `<link>` 에 `Styles.css` 파일는 `<head>` 지역:
 
-
 [!code-aspx[Main](urls-in-master-pages-vb/samples/sample9.aspx)]
 
 동안 합니다 `<link>` 요소의 `href` 특성은 상대, 런타임 시 적절 한 경로 자동으로 변환 됩니다. 설명한 대로 합니다 [ *마스터 페이지에서 제목, 메타 태그 및 기타 HTML 헤더 지정* ](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb.md) 자습서는 `<head>` 지역은 실제로 서버 쪽 컨트롤을 수정할 수 있습니다는 렌더링 될 때 해당 내부 컨트롤의 내용입니다.
 
 이 확인 하려면 다시는 `~/Admin/Default.aspx` 페이지 및 브라우저에 보내지는 HTML 소스를 보고 합니다. 아래 코드 조각에서 볼 수 있듯이 합니다 `<link>` 요소의 `href` 특성을 적절 한 상대 URL을 자동으로 수정 된 `../Styles.css`합니다.
-
 
 [!code-html[Main](urls-in-master-pages-vb/samples/sample10.html)]
 

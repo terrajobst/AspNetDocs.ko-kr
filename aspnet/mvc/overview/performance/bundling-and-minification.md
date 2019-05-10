@@ -8,19 +8,18 @@ ms.date: 08/23/2012
 ms.assetid: 5894dc13-5d45-4dad-8096-136499120f1d
 msc.legacyurl: /mvc/overview/performance/bundling-and-minification
 msc.type: authoredcontent
-ms.openlocfilehash: 9e4a2a9fc56393ac816f25a1039b233aa8961608
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 79d6b38c6464a749db9cd6d35e1f277b0adf2a02
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59383839"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129430"
 ---
 # <a name="bundling-and-minification"></a>묶음 및 축소
 
 [Rick Anderson]((https://twitter.com/RickAndMSFT))
 
 > 묶음 및 축소는 두 가지 기술을 요청 로드 시간을 개선 하기 위해 ASP.NET 4.5에서 사용할 수 있습니다. 묶음 및 축소 서버 요청의 수를 줄이고 요청 된 자산 (예: CSS 및 JavaScript)의 크기를 줄이면 하 여 로드 시간 개선
-
 
 대부분의 현재 주요 브라우저의 수를 제한 [동시 연결](http://www.browserscope.org/?category=network) 당 6 개의 각 호스트 이름입니다. 즉, 처리 되는 6 개의 요청 하는 동안 호스트에서 자산에 대 한 추가 요청은 브라우저에서 대기 됩니다. 아래 이미지에서 IE F12 개발자 도구 네트워크 탭에서는 샘플 응용 프로그램 정보 보기에 필요한 자산에 대 한 타이밍을 보여 줍니다.
 
@@ -64,7 +63,7 @@ ms.locfileid: "59383839"
 
 |  | **B/M을 사용 하 여** | **B/M 없이** | **변경 내용** |
 | --- | --- | --- | --- |
-| **파일 요청** | 10 | 34 | 256% |
+| **파일 요청** | 9 | 34 | 256% |
 | **KB Sent** | 3.26 | 11.92 | 266% |
 | **수신 (kb)** | 388.51 | 530 | 36% |
 | **로드 시간** | 510 MS | 780 MS | 53% |
@@ -96,7 +95,6 @@ F12 개발자 도구를 사용 하 여 디버깅 하는 방법은 MSDN 문서를
 
 > [!NOTE]
 > 경우가 아니면 `EnableOptimizations` 은 `true` 또는 디버그 특성에는 [compilation 요소](https://msdn.microsoft.com/library/s10awwz0.aspx) 에 *Web.config* 파일을 설정 `false`, 파일을 번들로 제공 되거나 축소 되지 것입니다. 또한.min 버전의 파일 사용 되지 않습니다, 그리고 전체 디버그 버전이 선택 됩니다. `EnableOptimizations` 디버그 특성을 재정의 합니다 [compilation 요소](https://msdn.microsoft.com/library/s10awwz0.aspx) 에 *Web.config* 파일
-
 
 ## <a name="using-bundling-and-minification-with-aspnet-web-forms-and-web-pages"></a>묶음을 사용 하 여 및 ASP.NET Web Forms 및 웹 페이지를 사용 하 여 축소
 

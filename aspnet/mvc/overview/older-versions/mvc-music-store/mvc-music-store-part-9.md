@@ -8,12 +8,12 @@ ms.date: 04/21/2011
 ms.assetid: d65c5c2b-a039-463f-ad29-25cf9fb7a1ba
 msc.legacyurl: /mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-9
 msc.type: authoredcontent
-ms.openlocfilehash: c7151351b087439f17457b254cd9e373af21cae3
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 040bc0ccef889fb9a7c3d9b5ce88c75b7b754248
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59380901"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129618"
 ---
 # <a name="part-9-registration-and-checkout"></a>9부: 등록 및 체크 아웃
 
@@ -24,7 +24,6 @@ ms.locfileid: "59380901"
 > MVC Music Store는 온라인 음악 앨범을 판매 하 고 기본 사이트 관리, 사용자 로그인 및 장바구니 기능을 구현 하는 간단한 샘플 저장소 구현입니다.  
 >   
 > 이 자습서 시리즈 모든 ASP.NET MVC Music Store 샘플 응용 프로그램 빌드를 수행 하는 단계를 자세히 설명 합니다. 9 부에서는 등록 및 체크 아웃에 설명 합니다.
-
 
 이 섹션에서는 만들 것을 CheckoutController 구매자의 주소 및 결제 정보를 수집 합니다. 에서는 사용자가이 컨트롤러는 권한 부여가 필요 하므로, 체크 인하기 전에 먼저 사이트를 사용 하 여 등록 해야 합니다.
 
@@ -158,7 +157,6 @@ Html.EditorForModel(), 프로 모션 코드는 추가 텍스트 상자를 차례
 일반 오류 페이지 이므로, 콘텐츠를 매우 간단 합니다. 사용자가 해당 작업을 다시 시도 하려는 경우에 기록의 이전 페이지를 이동할 수는 메시지 및 링크 포함 됩니다.
 
 [!code-cshtml[Main](mvc-music-store-part-9/samples/sample13.cshtml)]
-
 
 > [!div class="step-by-step"]
 > [이전](mvc-music-store-part-8.md)

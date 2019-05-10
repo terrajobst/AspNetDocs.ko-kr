@@ -8,12 +8,12 @@ ms.date: 08/15/2012
 ms.assetid: c7e4e1ab-4932-4614-9f53-aaf7c706d498
 msc.legacyurl: /mvc/overview/views/using-page-inspector-in-aspnet-mvc
 msc.type: authoredcontent
-ms.openlocfilehash: ef0ae42e1c6114849a311164eac242db6dab2b1d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 5da3e142c52a770f59222c21d9f9a53cbbdbf498
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59385802"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65126349"
 ---
 # <a name="using-page-inspector-in-aspnet-mvc"></a>ASP.NET MVC에서 페이지 검사기 사용
 
@@ -38,7 +38,6 @@ Tim Ammann 여
 > - [CSS 색 선택을 사용 하 여](#css_color_picker)
 > - [동적 페이지 요소를 JavaScript에 매핑](#map_dynamic_elements)
 
-
 <a id="_prerequisites"></a><a id="_1_prerequisites"></a>
 
 ## <a name="prerequisites"></a>전제 조건
@@ -47,7 +46,6 @@ Tim Ammann 여
 
 > [!NOTE]
 > 페이지 검사기의 최신 버전을 사용 [웹 플랫폼 설치 관리자](https://go.microsoft.com/fwlink/?LinkId=255386) .NET 2.0에 대 한 Windows Azure SDK를 설치 합니다.
-
 
 페이지 검사기는 Microsoft Web 개발자 도구를 사용 하 여 제공 됩니다. 최신 버전 1.3입니다. 어떤 버전을 확인 하려면, Visual Studio를 실행 있고 선택 **Microsoft Visual Studio 정보** 에서 합니다 **도움말** 메뉴.
 
@@ -179,7 +177,6 @@ Div.content 래퍼 섹션 내에서 한 번 클릭 하 고 다음으로 마우�
 > [!NOTE]
 > 이 기능은 페이지 검사기의 버전 1.3을 필요합니다.
 
-
 CSS 자동 동기화 기능을 사용 하면 CSS 파일을 직접 편집 하 고 페이지 검사기 브라우저에서 즉시 변경 내용을 확인할 수 있습니다.
 
 클릭 **검사** 를 검사 모드에서 페이지 검사기를 배치 합니다.
@@ -238,7 +235,6 @@ Visual Studio 2012에서 CSS 편집기에 쉽게 선택 하 고 색을 삽입 �
 
 > [!NOTE]
 > SPA 템플릿에 필요 합니다 [ASP.NET 및 웹 도구 2012.2](https://go.microsoft.com/fwlink/?LinkId=282650) 업데이트 합니다.
-
 
 Visual Studio에서 선택 **파일** &gt; **새 프로젝트**합니다. 왼쪽의 확장 **Visual C#** 를 선택 **웹**를 선택한 후 **ASP.NET MVC4 웹 응용 프로그램**합니다. **확인**을 클릭합니다.
 

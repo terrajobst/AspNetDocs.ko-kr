@@ -8,19 +8,18 @@ ms.date: 05/12/2009
 ms.assetid: 96b56eca-a892-45a4-96b4-67e61178650a
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/getting-started/creating-a-custom-ajax-control-toolkit-control-extender-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 4428ef0a6cec4c348bc48d069b990798508c21d4
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 7850e745f5985688c95fc7f649ccbb06b2f66e20
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59391665"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65127172"
 ---
 # <a name="creating-a-custom-ajax-control-toolkit-control-extender-c"></a>사용자 지정 AJAX 컨트롤 도구 키트 컨트롤 Extender 만들기(C#)
 
 by [Microsoft](https://github.com/microsoft)
 
 > 사용자 지정 Extender를 사용 하 여 사용자 지정 하 고 새 클래스를 만들 필요 없이 ASP.NET 컨트롤의 기능을 확장할 수 있습니다.
-
 
 이 자습서에서는 사용자 지정 AJAX 컨트롤 도구 키트 컨트롤 extender를 만드는 방법을 알아봅니다. 텍스트 상자에 텍스트를 입력할 때 사용 안 함 상태에서 단추의 상태를 변경 하는 extender 유용 하 고 새 하지만 단순 하 고 만듭니다. 이 자습서를 읽은 후 사용자 고유의 컨트롤 extender 사용 하 여 ASP.NET AJAX Toolkit를 확장할 수 있습니다.
 
@@ -36,19 +35,15 @@ Visual Studio 또는 Visual Web Developer를 사용 하 여 사용자 지정 컨
 
 TextBox와 Button 컨트롤에 DisabledButton extender에 연결 합니다. 모든 텍스트를 입력 하기 전에 단추가 비활성화 되 고 TextBox와 Button 다음과 같이 표시 합니다.
 
-
 [![](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image2.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image1.png)
 
 ([클릭 하 여 큰 이미지 보기](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image3.png))
 
-
 텍스트 입력을 시작 하면이 단추가 활성화 됩니다 후 TextBox와 Button 다음과 같이 표시 됩니다.
-
 
 [![](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image5.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image4.png)
 
 ([클릭 하 여 큰 이미지 보기](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image6.png))
-
 
 이 컨트롤 extender를 만들려면 다음 세 가지 파일을 만드는 데 필요 합니다.
 
@@ -78,11 +73,9 @@ S를 웹 사이트를 시작할 수 있습니다. 웹 사이트를 만들려면 
 
 다음이 단계를 완료 한 후 솔루션 탐색기 창 그림 1과 같아야 합니다.
 
-
 [![웹 사이트 및 클래스 라이브러리 프로젝트를 사용 하 여 솔루션](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image8.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image7.png)
 
 **그림 01**: 웹 사이트 및 클래스 라이브러리 프로젝트를 사용 하 여 솔루션 ([클릭 하 여 큰 이미지 보기](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image9.png))
-
 
 다음으로, 모든 클래스 라이브러리 프로젝트에 필요한 어셈블리 참조를 추가 해야 합니다.
 
@@ -99,11 +92,9 @@ S를 웹 사이트를 시작할 수 있습니다. 웹 사이트를 만들려면 
 
 다음이 단계를 완료 한 후 클래스 라이브러리 프로젝트 참조 폴더는 그림 2와 같습니다.
 
-
 [![필요한 참조를 사용 하 여 참조 폴더](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image11.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image10.png)
 
 **그림 02**: 필요한 참조를 사용 하 여 참조 폴더 ([클릭 하 여 큰 이미지 보기](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image12.png))
-
 
 ## <a name="creating-the-custom-control-extender"></a>사용자 지정 컨트롤 Extender 만들기
 
@@ -122,9 +113,7 @@ S를 웹 사이트를 시작할 수 있습니다. 웹 사이트를 만들려면 
 
 웹 리소스의 특성을 사용자 지정 extender 컴파일될 때 MyControlBehavior.js JavaScript 파일을 어셈블리에 포함 됩니다. 웹 페이지에서 사용자 지정 extender를 사용 하면 어셈블리에서 MyControlBehavior.js 스크립트를 검색 하려면 ClientScriptResource 특성이 사용 됩니다.
 
-
 작동 하려면 WebResource 및 ClientScriptResource 특성에 대 한 순서 대로 포함 리소스로 JavaScript 파일을 컴파일해야 합니다. 솔루션 탐색기 창에서 파일을 선택 하 고, 속성 시트를 열고, 값을 할당 *포함 리소스* 에 **빌드 작업** 속성입니다.
-
 
 컨트롤 extender에도 TargetControlType 특성을 포함 하는 알 수 있습니다. 이 특성은 컨트롤 extender에 의해 확장 된 컨트롤의 형식을 지정 하는 데 사용 됩니다. 목록 1의 경우 컨트롤 extender는 텍스트 상자를 확장 하는 데 사용 됩니다.
 
@@ -154,11 +143,9 @@ Initialize () 메서드는 동작에 대 한 대상 요소를 사용 하 여 key
 
 JavaScript 파일 목록 3에 포함 리소스로 컴파일해야 해야 합니다. 솔루션 탐색기 창에서 파일을 선택 하 고, 속성 시트를 열고, 값을 할당 *포함 리소스* 에 **빌드 작업** 속성 (그림 3 참조). 이 옵션은 Visual Studio 및 Visual Web Developer에서 사용할 수 있습니다.
 
-
 [![JavaScript 파일을 포함 리소스로 추가](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image14.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image13.png)
 
 **그림 03**: JavaScript 파일을 포함 리소스로 추가 ([클릭 하 여 큰 이미지 보기](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image15.png))
-
 
 ## <a name="creating-the-custom-extender-designer"></a>사용자 지정 Extender 디자이너 만들기
 
@@ -183,11 +170,9 @@ Designer 특성을 사용 하 여 DisabledButton extender 4에서 디자이너�
 
 다음이 단계를 완료 하면 DisabledButton 컨트롤 extender 도구 상자에 나타납니다 (그림 4 참조).
 
-
 [![도구 상자에서 DisabledButton](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image17.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image16.png)
 
 **그림 04**: 도구 상자에서 DisabledButton ([클릭 하 여 큰 이미지 보기](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image18.png))
-
 
 그런 다음 새 ASP.NET 페이지를 만들 해야 합니다. 아래 단계를 수행합니다.
 
@@ -196,7 +181,6 @@ Designer 특성을 사용 하 여 DisabledButton extender 4에서 디자이너�
 3. TextBox 컨트롤을 페이지로 끌어옵니다.
 4. 단추 컨트롤을 페이지로 끌어옵니다.
 5. 속성 창에서 단추 ID 속성 값을 변경 <em>btnSave</em> 및 텍스트 속성을 값 *저장할\** 합니다.
-  
 
 표준 ASP.NET TextBox와 Button 컨트롤을 사용 하 여 페이지를 만들었습니다.
 
@@ -205,11 +189,9 @@ Designer 특성을 사용 하 여 DisabledButton extender 4에서 디자이너�
 1. 선택 된 **Extender 추가** 작업 옵션 Extender 마법사 대화 상자를 엽니다 (그림 5 참조). 대화 상자에 사용자 지정 DisabledButton extender는 포함 되어 있는지 확인 합니다.
 2. DisabledButton extender를 선택 하 고 클릭 합니다 **확인** 단추입니다.
 
-
 [![Extender 마법사 대화 상자](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image20.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image19.png)
 
 **그림 05**: Extender 마법사 대화 상자 ([클릭 하 여 큰 이미지 보기](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image21.png))
-
 
 마지막으로, DisabledButton extender의 속성을 설정할 수 있습니다. TextBox 컨트롤의 속성을 수정 하 여 DisabledButton extender의 속성을 수정할 수 있습니다.
 
@@ -217,19 +199,15 @@ Designer 특성을 사용 하 여 DisabledButton extender 4에서 디자이너�
 2. 속성 창에서 Extender 노드를 확장 (그림 6 참조).
 3. 값을 할당 *저장할* DisabledText 속성 및 값에 *btnSave* TargetButtonID 속성입니다.
 
-
 [![Extender 속성 설정](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image23.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image22.png)
 
 **그림 06**: Extender 속성을 설정 ([클릭 하 여 큰 이미지 보기](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image24.png))
 
-
 페이지 (F5를 눌러)를 실행 하면 단추 컨트롤은 처음에 사용할 수 없습니다. 입력란에 텍스트 입력을 시작 하는 즉시 컨트롤은 단추 (그림 7 참조)를 사용 합니다.
-
 
 [![실행 중인 DisabledButton extender](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image26.png)](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image25.png)
 
 **그림 07**: 실행 중인 DisabledButton extender ([클릭 하 여 큰 이미지 보기](creating-a-custom-ajax-control-toolkit-control-extender-cs/_static/image27.png))
-
 
 ## <a name="summary"></a>요약
 

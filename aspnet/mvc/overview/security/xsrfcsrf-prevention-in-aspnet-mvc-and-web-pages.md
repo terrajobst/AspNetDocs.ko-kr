@@ -8,12 +8,12 @@ ms.date: 03/14/2013
 ms.assetid: aadc5fa4-8215-4fc7-afd5-bcd2ef879728
 msc.legacyurl: /mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages
 msc.type: authoredcontent
-ms.openlocfilehash: de0e9cc168b9f18fd2bd83329106df45d7551b1a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: a6e10c52d83dc3c29ab2f9f6bb0c05cfbbf6aad1
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59386562"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65126359"
 ---
 # <a name="xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages"></a>ASP.NET MVC 및 웹 페이지에서 XSRF/CSRF 방지
 
@@ -24,7 +24,6 @@ ms.locfileid: "59386562"
 > XSRF 공격은 피싱 공격과 구분 됩니다. 피싱 공격 피해자의 상호 작용을 필요로 합니다. 피싱 공격, 악의적인 웹 사이트는 대상 웹 사이트를 모방 하 고 피해자는 공격자에 게 중요 한 정보를 제공 속일 합니다. XSRF 공격에서는 종종 피해자의 필요한 없습니다 상호 작용이입니다. 대신, 공격자가 자동으로 대상 웹 사이트에 모든 관련 쿠키를 전송 하는 브라우저에서 신뢰 됩니다.
 > 
 > 자세한 내용은 참조는 [Open Web Application Security Project](https://www.owasp.org/index.php/Main_Page)(OWASP) [XSRF](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF))합니다.
-
 
 ## <a name="anatomy-of-an-attack"></a>공격 분석
 

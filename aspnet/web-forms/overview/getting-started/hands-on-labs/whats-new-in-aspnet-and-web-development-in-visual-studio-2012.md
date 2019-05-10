@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 6d40d276-1642-4a77-b6c9-02ac914f6805
 msc.legacyurl: /web-forms/overview/getting-started/hands-on-labs/whats-new-in-aspnet-and-web-development-in-visual-studio-2012
 msc.type: authoredcontent
-ms.openlocfilehash: 3833e3f3c6c49ff2b317ad04aff33c9119cb1f41
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 80c77ec65ed86b06e417d3f6ba608e404c46768b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59420213"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132096"
 ---
 # <a name="whats-new-in-aspnet-and-web-development-in-visual-studio-2012"></a>Visual Studio 2012의 새로운 ASP.NET 및 웹 개발 기능
 
@@ -30,7 +30,6 @@ ms.locfileid: "59420213"
 > 이 실습을 이용 하면 향상 된 기능 및 원본 폴더에 제공 된 샘플 웹 응용 프로그램에 사소한 변경 내용을 적용 하 여 이전에 설명 된 새 기능을 통해 안내 합니다.
 > 
 > 웹 캠프 교육 키트에서에서 사용할 수 있는 모든 샘플 코드 및 코드 조각 포함 됩니다 [ https://go.microsoft.com/fwlink/?LinkID=248297&clcid=0x409 ](https://go.microsoft.com/fwlink/?LinkID=248297&clcid=0x409)합니다.
-
 
 <a id="Objectives"></a>
 
@@ -331,7 +330,6 @@ HTML 편집기에서 향상 된 또 다른는 스마트 태그 기능입니다. 
 > [!NOTE]
 > Visual Studio의 이전 버전에서는 스마트 들여쓰기 있던 HTML 편집기 아니라 XML 편집기에서.
 
-
 1. 스마트 들여쓰기를 들여쓰기 구성 HTML 편집기에 설정 되어 있는지 확인 합니다. 이 위해 선택 된 **도구 | 옵션** 메뉴 옵션을 선택 하 고는 **텍스트 편집기 | HTML | 탭** 화면의 왼쪽된 창에서 페이지입니다. 스마트 들여쓰기 옵션을 선택 합니다.
 
     ![HTML 편집기 설정을](whats-new-in-aspnet-and-web-development-in-visual-studio-2012/_static/image33.png "HTML 편집기 설정")
@@ -433,7 +431,6 @@ Visual Studio JavaScript 편집기를 액세스할 수 있고 구성 코드 모�
 > [!NOTE]
 > Visual Studio 2010 ECMAScript5 규정 준수를 제공 하는 Visual Studio 2012 ECMAStript3 규정 준수를 구현 합니다.
 
-
 1. 오픈 **ECMA5script5.js** 아래에 **Scripts\custom** 프로젝트 폴더입니다. 이제 표준 ECMAScript5에 대 한 유효성 검사를 테스트 합니다.
 
     [!code-html[Main](whats-new-in-aspnet-and-web-development-in-visual-studio-2012/samples/sample8.html)]
@@ -494,11 +491,10 @@ Visual Studio JavaScript 편집기를 액세스할 수 있고 구성 코드 모�
 > [!NOTE]
 > 파일을 저장 하기 전에 GotoDefinition.js에 구문 오류가 있는지 확인 합니다.
 
-
 <a id="Exercise4"></a>
 
 <a id="Exercise_4_Bundling_and_Minification"></a>
-### <a name="exercise-4-bundling-and-minification"></a>실습 4: 묶음 및 축소
+### <a name="exercise-4-bundling-and-minification"></a>연습 4: 묶음 및 축소
 
 몇 번 수행 하 여 웹 사이트 파일을 포함 둘 이상의 JavaScript 또는 CSS? 묶음 및 축소 파일 크기를 줄이고 더 빠르게 수행 하는 사이트를 확인 하는 데는 도움이 매우 일반적인 시나리오입니다. ASP.NET 4.5의 새로운 번들 기능 CSS 또는 JS 파일 집합을 단일 요소를 압축 하 고 (즉, 필요 하지 않습니다 공백 제거, 메모 제거, 식별자를 줄이는) 콘텐츠를 축소 하 여 해당 크기를 줄입니다.
 
@@ -675,7 +671,6 @@ Visual Studio JavaScript 편집기를 액세스할 수 있고 구성 코드 모�
 
 > [!NOTE]
 > 또한 다음 Windows Azure 웹 사이트에이 응용 프로그램을 배포할 수 [부록 b: 웹 배포를 사용 하 여 ASP.NET MVC 4 응용 프로그램 게시](#AppendixB)합니다.
-
 
 <a id="Summary"></a>
 ## <a name="summary"></a>요약
