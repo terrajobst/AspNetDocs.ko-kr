@@ -8,16 +8,15 @@ ms.date: 10/18/2014
 ms.assetid: e7b68e52-8c2b-431c-9b1e-4fb51f1950c9
 msc.legacyurl: /web-forms/overview/advanced
 msc.type: chapter
-ms.openlocfilehash: c820cb0679d90ed4625f4e389e44989dbde6c6f4
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: a91465e31263a27d7d9fd31bf6e56c630b033fb2
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59382539"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133615"
 ---
-# <a name="aspnet-web-forms-advanced-topics"></a><span data-ttu-id="42bd0-103">ASP.NET Web Forms 고급 항목</span><span class="sxs-lookup"><span data-stu-id="42bd0-103">ASP.NET Web Forms Advanced Topics</span></span>
+# <a name="aspnet-web-forms-advanced-topics"></a><span data-ttu-id="be78e-103">ASP.NET Web Forms 고급 항목</span><span class="sxs-lookup"><span data-stu-id="be78e-103">ASP.NET Web Forms Advanced Topics</span></span>
 
-> <span data-ttu-id="42bd0-104">ASP.NET Web Forms 응용 프로그램을 국제화, 액세스 가능성, 확장성 등 프로그래밍에 대 한 고급 항목입니다.</span><span class="sxs-lookup"><span data-stu-id="42bd0-104">Advanced topics for programming ASP.NET Web Forms applications, including Internationalization, accessibility, and extensibility.</span></span>
+> <span data-ttu-id="be78e-104">ASP.NET Web Forms 응용 프로그램을 국제화, 액세스 가능성, 확장성 등 프로그래밍에 대 한 고급 항목입니다.</span><span class="sxs-lookup"><span data-stu-id="be78e-104">Advanced topics for programming ASP.NET Web Forms applications, including Internationalization, accessibility, and extensibility.</span></span>
 
-
-- [<span data-ttu-id="42bd0-105">ASP.NET Web Forms 연결 복원력 및 명령 인터셉션</span><span class="sxs-lookup"><span data-stu-id="42bd0-105">ASP.NET Web Forms Connection Resiliency and Command Interception</span></span>](aspnet-web-forms-connection-resiliency-and-command-interception.md)
+- [<span data-ttu-id="be78e-105">ASP.NET Web Forms 연결 복원력 및 명령 인터셉션</span><span class="sxs-lookup"><span data-stu-id="be78e-105">ASP.NET Web Forms Connection Resiliency and Command Interception</span></span>](aspnet-web-forms-connection-resiliency-and-command-interception.md)
