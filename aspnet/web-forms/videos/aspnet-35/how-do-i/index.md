@@ -8,17 +8,16 @@ ms.date: 11/14/2011
 ms.assetid: 6a25069b-c80f-45f3-a901-4548442c37b6
 msc.legacyurl: /web-forms/videos/aspnet-35/how-do-i
 msc.type: chapter
-ms.openlocfilehash: 8a7251971410ef2539e3957039de33af6e74371c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 73e3191b168b7d7ea92d1ee7d6509d283a9d5b39
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59415455"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133793"
 ---
 # <a name="how-do-i"></a>작업 절차
 
 > 이 다중 파트 비디오 시리즈는 ASP.NET 3.5 및 Visual Studio 2008의 새로운 기능을 활용 하는 방법을 보여 줍니다.
-
 
 - [Visual Studio 2008에서 마스터 페이지 만들기](how-do-i-create-a-master-page-in-visual-studio-2008.md)
 - [Visual Studio 2008에서 중첩된 마스터 페이지 만들기](how-do-i-create-nested-master-page-in-visual-studio-2008.md)

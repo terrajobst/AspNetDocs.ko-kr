@@ -8,12 +8,12 @@ ms.date: 11/17/2011
 ms.assetid: c3c76516-4c48-4153-bd03-d70e3a3edbb0
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12
 msc.type: authoredcontent
-ms.openlocfilehash: cc8568847e050e868a3e7563b5fc1fc6fbf25d86
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b265d210ff3b1eeb8697a973cc245f6c97b3eb07
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59405484"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134177"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-deploying-sql-server-compact-databases---2-of-12"></a>SQL Server Compact Visual Studio 또는 Visual Web Developer를 사용 하 여를 사용 하 여 ASP.NET 웹 응용 프로그램을 배포 합니다. SQL Server Compact 데이터베이스-12 2 배포
 
@@ -24,7 +24,6 @@ ms.locfileid: "59405484"
 > 이 시리즈의 자습서에서는 배포 하는 방법을 보여 줍니다 (게시) ASP.NET 웹용 Visual Studio 2012 RC 또는 Visual Studio Express 2012 RC를 사용 하 여 SQL Server Compact 데이터베이스를 포함 하는 웹 응용 프로그램 프로젝트입니다. Visual Studio 2010 웹 게시 업데이트를 설치 하는 경우에 사용할 수 있습니다. 계열에 대 한 소개를 참조 하세요 [시리즈의 첫 번째 자습서](deployment-to-a-hosting-provider-introduction-1-of-12.md)합니다.
 > 
 > Visual Studio 2012 RC 출시 이후 도입 된 배포 기능을 보여 줍니다, 이외의 SQL Server Compact, SQL Server 버전을 배포 하는 방법을 보여 줍니다 및 Azure App Service Web Apps를 배포 하는 방법을 보여 줍니다 하는 자습서를 참조 하세요 [ASP.NET 웹 배포 Visual Studio를 사용 하 여](../../deployment/visual-studio-web-deployment/introduction.md)입니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -144,7 +143,6 @@ Code First 컨텍스트 클래스를 포함 하는 프로젝트에서 "enable-�
 > 
 > 이 자습서에서는 사용에 대해 표시 된이 예제는 `AddOrUpdate` 의 메서드를 `Seed` Code First 마이그레이션을 메서드의 `Configuration` 클래스입니다. 첫 번째 마이그레이션을 호출 코드는 `Seed` 모든 마이그레이션 후 메서드와이 메서드가 이미 삽입 되었거나 아직 없는 경우 삽입 된 행을 업데이트 합니다. `AddOrUpdate` 메서드 시나리오에 가장 적합 한 되지 않을 수 있습니다. 자세한 내용은 [EF 4.3 AddOrUpdate 메서드를 사용 하 여 주의](http://thedatafarm.com/blog/data-access/take-care-with-ef-4-3-addorupdate-method/) Julie Lerman의 블로그입니다.
 
-
 프로젝트를 빌드하려면 CTRL-SHIFT-B를 누릅니다.
 
 다음 단계를 만드는 것을 `DbMigration` 초기 마이그레이션에 대 한 클래스입니다. 원하는이 마이그레이션이 새 데이터베이스를 만들어 이미 존재 하는 데이터베이스를 삭제 해야 합니다. SQL Server Compact 데이터베이스에 포함 된 *.sdf* 파일을 *앱\_데이터* 폴더입니다. **솔루션 탐색기**를 확장 하 고 *앱\_데이터* 나타내는 두 SQL Server Compact 데이터베이스를 보려면 ContosoUniversity 프로젝트에서 *.sdf*파일입니다.
@@ -187,7 +185,6 @@ Contoso University 응용 프로그램 인증 및 사용자 권한 부여는 ASP
 
 > [!NOTE]
 > 멤버 자격 데이터베이스 계정 암호의 해시를 저장 합니다. 다른 컴퓨터에서 계정에 배포 하려면 원본 컴퓨터에서 수행할 때 보다 해시 루틴이 대상 서버의 다른 해시를 생성 하지 않도록 해야 합니다. 생성 동일한 해시 ASP.NET Universal Providers를 사용 하는 경우 기본 알고리즘을 변경 하지 않으면으로 합니다. 기본 알고리즘 HMACSHA256 이며에 지정 된를 **유효성 검사** 특성을 **[machineKey](https://msdn.microsoft.com/library/w8h3skw9.aspx)** Web.config 파일의 요소입니다.
-
 
 멤버 자격 데이터베이스에서 Code First 마이그레이션을 유지 되지 않습니다 되며 (하므로 School 데이터베이스에 대 한) 테스트 계정 사용 하 여 데이터베이스를 시드하는 자동 이니셜라이저가 없습니다. 따라서 사용 가능한 테스트 데이터를 유지 하려면에서는 할 테스트 데이터베이스의 복사본을 새로 만들려면.
 

@@ -8,12 +8,12 @@ ms.date: 07/18/2007
 ms.assetid: 07fa47ae-e491-4a2f-b265-d342b9ddef46
 msc.legacyurl: /web-forms/overview/data-access/filtering-scenarios-with-the-datalist-and-repeater/master-detail-filtering-with-a-dropdownlist-datalist-cs
 msc.type: authoredcontent
-ms.openlocfilehash: d6b5c234c8d0da5500ecf554c5e23cb52e94f411
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: bfd6f02fe30f4fe5d82d6f72eba6935e1a776c99
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59421851"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134487"
 ---
 # <a name="masterdetail-filtering-with-a-dropdownlist-c"></a>DropDownList 한 개로 마스터/세부 정보 필터링(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59421851"
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_33_CS.exe) 또는 [PDF 다운로드](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/datatutorial33cs1.pdf)
 
 > 이 자습서 Dropdownlist를 사용 하 여 "마스터" 레코드와 "정보"를 표시 하는 DataList 표시 하려면 단일 웹 페이지에서 마스터/세부 정보 보고서를 표시 하는 방법을 볼 수 있습니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -40,73 +39,57 @@ ms.locfileid: "59421851"
 - `ProductsForCategoryDetails.aspx`
 - `CategoriesAndProducts.aspx`
 
-
 ![DataListRepeaterFiltering 폴더를 만들고 자습서 ASP.NET 페이지를 추가 합니다.](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image1.png)
 
 **그림 1**: 만들기는 `DataListRepeaterFiltering` 폴더 및 자습서 ASP.NET 페이지 추가
 
-
 을 엽니다는 `Default.aspx` 끌어서 페이지를 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤을 `UserControls` 디자인 화면으로 폴더입니다. 만든이 사용자 정의 컨트롤을 [마스터 페이지 및 사이트 탐색](../introduction/master-pages-and-site-navigation-cs.md) 자습서에서는 사이트 맵을 열거 하 고 글머리 기호 목록에 현재 섹션의 자습서를 표시 합니다.
-
 
 [![Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image3.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image2.png)
 
 **그림 2**: 추가 된 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤 `Default.aspx` ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image4.png))
 
-
 글머리 기호 목록을 표시 하기 위해 우리가 만들 것을 마스터/세부 자습서 해야 사이트 맵을 추가 합니다. 열기는 `Web.sitemap` 파일과 "표시 데이터와 the DataList 및 Repeater" 사이트 맵 노드 태그 뒤에 다음 태그를 추가 합니다.
 
 [!code-xml[Main](master-detail-filtering-with-a-dropdownlist-datalist-cs/samples/sample1.xml)]
-
 
 ![사이트 맵을 업데이트 하 여 새 ASP.NET 페이지를 포함 합니다.](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image5.png)
 
 **그림 3**: 사이트 맵을 업데이트 하 여 새 ASP.NET 페이지를 포함 합니다.
 
-
 ## <a name="step-2-displaying-the-categories-in-a-dropdownlist"></a>2단계: DropDownList에 범주를 표시합니다.
 
 마스터/세부 정보 보고서는 선택한 목록 항목의 제품이 표시를 사용 하 여 DropDownList, 범주 표시 페이지 DataList에서 더 아래쪽 합니다. 첫 번째 작업을 미리 한는 DropDownList에 표시 되는 범주를 것입니다. 열어서 시작 합니다 `FilterByDropDownList.aspx` 페이지에 `DataListRepeaterFiltering` 폴더 및 페이지의 디자이너 도구 상자에서 끌어서 DropDownList. 다음으로 DropDownList를 설정 `ID` 속성을 `Categories`입니다. DropDownList의 스마트 태그의 데이터 소스 선택 링크를 클릭 하 고 라는 새로운 ObjectDataSource는 만들 `CategoriesDataSource`합니다.
-
 
 [![CategoriesDataSource 라는 새 ObjectDataSource를 추가 합니다.](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image7.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image6.png)
 
 **그림 4**: 추가 명명 된 새 ObjectDataSource `CategoriesDataSource` ([큰 이미지를 보려면 클릭](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image8.png))
 
-
 호출 되도록 새 ObjectDataSource를 구성 합니다 `CategoriesBLL` 클래스의 `GetCategories()` 메서드. DropDownList에 어떤 데이터 원본 필드를 표시 해야 하 고는 지정 해야 하는 ObjectDataSource를 구성한 후 각 목록 항목에 대 한 값으로 연결 해야 하나입니다. 있어야 합니다 `CategoryName` 필드를 표시 및 `CategoryID` 각 목록 항목에 대 한 값으로.
-
 
 [![가 DropDownList 표시를 사용 하 여 CategoryID와 CategoryName 필드 값](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image10.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image9.png)
 
 **그림 5**: DropDownList을 표시 합니다 `CategoryName` 필드 및 사용 `CategoryID` 값으로 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image11.png))
 
-
 이 시점에서 레코드를 사용 하 여 채워지는 DropDownList 컨트롤이 있습니다를 `Categories` 테이블 (모두 약 6 초 후에 수행). 그림 6 브라우저를 통해 볼 때 지금 진행 상황을 보여줍니다.
-
 
 [![현재 범주를 나열 하는 드롭다운](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image13.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image12.png)
 
 **그림 6**: 드롭다운 목록이 현재 범주 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image14.png))
 
-
 ## <a name="step-2-adding-the-products-datalist"></a>2단계: 제품 DataList를 추가합니다.
 
 마스터/세부 정보 보고서의 마지막 단계는 선택한 범주와 관련 된 제품을 나열 하는 것입니다. 이렇게 하려면 페이지로 DataList를 추가 하 고 라는 새로운 ObjectDataSource는 만들 `ProductsByCategoryDataSource`합니다. 가 합니다 `ProductsByCategoryDataSource` 컨트롤에서 해당 데이터를 검색 합니다 `ProductsBLL` 클래스의 `GetProductsByCategoryID(categoryID)` 메서드. 이 마스터/세부 정보 보고서 읽기 전용 이므로 INSERT, UPDATE 및 DELETE 탭 옵션 (없음)을 선택 합니다.
-
 
 [![GetProductsByCategoryID(categoryID) 메서드를 선택 합니다.](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image16.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image15.png)
 
 **그림 7**: 선택 된 `GetProductsByCategoryID(categoryID)` 메서드 ([큰 이미지를 보려면 클릭](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image17.png))
 
-
 다음을 클릭 한 후 ObjectDataSource 마법사 요청에 대 한 값의 출처를 `GetProductsByCategoryID(categoryID)` 메서드의 *`categoryID`* 매개 변수입니다. 선택한 값을 사용 하도록 `categories` DropDownList 항목으로 매개 변수 원본 컨트롤과를 ControlID `Categories`합니다.
-
 
 [![CategoryID 매개 변수 범주 DropDownList의 값으로 설정](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image19.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image18.png)
 
 **그림 8**: 설정 합니다 *`categoryID`* 의 값으로 매개 변수를 `Categories` DropDownList ([전체 크기 이미지를 보려면 클릭](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image20.png))
-
 
 Visual Studio에서 자동으로 데이터 소스 구성 마법사를 완료 하면 생성 된 `ItemTemplate` 이름과 각 데이터 필드의 값을 표시 하는 DataList에 대 한 합니다. 대신 사용 하 여 DataList를 개선해 보겠습니다를 `ItemTemplate` 제품의 이름, 범주, 공급자, 단위 및 함께 가격 당 수량만을 표시 하는 `SeparatorTemplate` 삽입 하는 `<hr>` 각 항목 사이 요소입니다. 사용 하려는 `ItemTemplate` 에서 예제로는 [DataList 및 반복기 컨트롤을 사용 하 여 데이터 표시](../displaying-data-with-the-datalist-and-repeater/displaying-data-with-the-datalist-and-repeater-controls-cs.md) 자습서에서는 있지만 자유롭게 가장 좋고 찾아야는 어떤 템플릿 태그를 사용 합니다.
 
@@ -118,16 +101,13 @@ Visual Studio에서 자동으로 데이터 소스 구성 마법사를 완료 하
 
 그림 9와 10 중인 마스터/세부 정보 보고서를 보여 줍니다.
 
-
 [![먼저 페이지를 방문 하 고, 음료 제품 표시 됩니다.](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image22.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image21.png)
 
 **그림 9**: 먼저 페이지를 방문 하 고, 음료 제품 표시 됩니다 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image23.png))
 
-
 [![새 제품 (생성)을 선택 하면 자동으로 포스트백, DataList를 업데이트 하는 중](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image25.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image24.png)
 
 **그림 10**: 새 제품 (생성)을 선택 하면 자동으로 포스트백, DataList를 업데이트 하는 중 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image26.png))
-
 
 ## <a name="adding-a----choose-a-category----list-item"></a>"-범주-" 선택 목록 항목 추가
 
@@ -135,11 +115,9 @@ Visual Studio에서 자동으로 데이터 소스 구성 마법사를 완료 하
 
 DropDownList에 새 목록 항목을 추가 하려면 속성 창으로 이동 하 고에서 줄임표를 클릭 합니다 `Items` 속성입니다. 사용 하 여 새 목록 항목을 추가 합니다 `Text` "-범주 선택-" 및 `Value` `0`합니다.
 
-
 ![추가](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image27.png)
 
 **그림 11**: "-범주-" 선택 목록 항목 추가
-
 
 또는 드롭다운 목록에 다음 태그를 추가 하 여 목록 항목을 추가할 수 있습니다.
 
@@ -147,19 +125,15 @@ DropDownList에 새 목록 항목을 추가 하려면 속성 창으로 이동 �
 
 또한 DropDownList 컨트롤을 설정 해야 `AppendDataBoundItems` 하 `true` 때문에로 설정 된 경우 `false` (기본값), 수동으로 추가 된 목록을 덮어씁니다 ObjectDataSource의 범주 DropDownList에 바인딩된 경우 항목입니다.
 
-
 ![AppendDataBoundItems 속성도 True로 설정](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image28.png)
 
 **그림 12**: 설정 된 `AppendDataBoundItems` 속성을 true로
 
-
 값 선택 이유 `0` "-범주 선택-" 목록에 대 한 항목은에 있기 때문에 없는 범주 값을 사용 하 여 시스템 `0`, "-범주-" 선택 목록 항목이 선택 될 때 제품 레코드가 반환 될 따라서 합니다. 이 확인 하려면 잠시 브라우저를 통해 페이지를 방문 합니다. 와 같이 그림 13, 처음에 페이지를 보고 "-범주-" 선택 목록 항목을 선택 하면 제품이 표시 됩니다.
-
 
 [![경우는](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image30.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image29.png)
 
 **그림 13**: 아니요 제품이 표시 되는 "-범주-" 선택 목록 항목을 선택 하면 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image31.png))
-
 
 대신 표시 하는 경우 *모든* 제품 "-범주 선택-" 옵션을 선택 하면 값이 사용 됩니다. `-1` 대신 합니다. 예리한 독자는 다시 기억 하겠지만 합니다 *마스터/세부 정보 필터링으로 DropDownList* 업데이트 하는 자습서를 `ProductsBLL` 클래스의 `GetProductsByCategoryID(categoryID)` 메서드 있도록 경우를 *`categoryID`* 값 `-1` 레코드가 반환 된 모든 제품에 전달 되었습니다.
 

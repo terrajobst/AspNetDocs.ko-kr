@@ -8,12 +8,12 @@ ms.date: 02/21/2014
 ms.assetid: ef852096-a5bf-47b3-9945-125cde065093
 msc.legacyurl: /web-pages/overview/security/enabling-login-from-external-sites-in-an-aspnet-web-pages-site
 msc.type: authoredcontent
-ms.openlocfilehash: a93835e685716b3be59023b9f84a006e38f48e89
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 860b75422c3df1d191ed861344963bfc19270e8f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59380455"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65124164"
 ---
 # <a name="logging-in-using-external-sites-in-an-aspnet-web-pages-razor-site"></a>외부 사이트를 사용 하 여 ASP.NET 웹 페이지 (Razor) 사이트에 로그인
 
@@ -170,7 +170,6 @@ ASP.NET 웹 페이지에 대 한 지원도 [OAuth](http://oauth.net/) 하 고 [O
 
 <a id="Additional_Resources"></a>
 ## <a name="additional-resources"></a>추가 리소스
-
 
 - [사이트 전체 동작 사용자 지정](https://go.microsoft.com/fwlink/?LinkId=202906)
 - [ASP.NET 웹 페이지 사이트에 보안 및 멤버 자격 추가](https://go.microsoft.com/fwlink/?LinkID=202904)

@@ -8,12 +8,12 @@ ms.date: 01/23/2019
 ms.assetid: 07ec7d37-023f-43ea-b471-60b08ce338f7
 msc.legacyurl: /web-api/overview/testing-and-debugging/troubleshooting-http-405-errors-after-publishing-web-api-applications
 msc.type: authoredcontent
-ms.openlocfilehash: ce5b617cc1032d190cc2450aa554b462ea6f6156
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 336df47dd4bda813839913676f12a51b899c0cf9
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57025330"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65121977"
 ---
 # <a name="troubleshooting-http-405-errors-after-publishing-web-api-applications"></a>Web API 응용 프로그램을 게시 한 후 HTTP 405 오류 문제 해결
 
@@ -24,7 +24,6 @@ ms.locfileid: "57025330"
 > 
 > - [인터넷 정보 서비스 (IIS)](https://www.iis.net/) (버전 7 이상)
 > - [Web API](../../index.md) 
-
 
 웹 API 응용 프로그램은 일반적으로 몇 가지 일반적인 HTTP 동사를 사용합니다. GET, POST, PUT, DELETE 및 경우에 따라 패치 합니다. 즉, 개발자가 발생할 경우 이러한 동사 또는 Visual Studio 개발 서버에서 제대로 작동 하는 Web API 컨트롤러를 반환 하는 경우에는 해당 프로덕션 서버의 다른 IIS 모듈에 의해 구현 되는 위치는 HTTP 405 프로덕션 서버에 배포 하는 동안 오류가 발생 했습니다. 다행히이 문제는 쉽게 해결 하지만 문제가 발생 하는 이유와 설명은 보장 하는 확인 합니다.
 
@@ -58,18 +57,13 @@ HTTP 메서드 중 하나는 서버에서 사용 하기 위해 구성 되 면 �
 
 다음 예제에서는 HTTP 요청 및 응답 있는 웹 서버에서 Web API 응용 프로그램에 값을 배치 하기 위해 시도 하는 HTTP 클라이언트 및 서버 상태 PUT 메서드를 사용할 수 있는 HTTP 오류를 반환 합니다. 상황을 보여 줍니다.
 
-
 HTTP 요청:
-
 
 [!code-console[Main](troubleshooting-http-405-errors-after-publishing-web-api-applications/samples/sample1.cmd)]
 
-
 HTTP 응답:
 
-
 [!code-console[Main](troubleshooting-http-405-errors-after-publishing-web-api-applications/samples/sample2.cmd)]
-
 
 이 예제에서는 HTTP 클라이언트는 유효한 JSON 요청 웹 서버에 있는 Web API 응용 프로그램에 대 한 URL을 보냈지만 서버 URL에 대 한 PUT 메서드를 허용 되지 않음을 나타내는 HTTP 405 오류 메시지를 반환 합니다. 반면, 요청 URI는 Web API 응용 프로그램에 대 한 경로 일치 하지 않은 서버 반환을 HTTP 404 ***찾지*** 오류입니다.
 

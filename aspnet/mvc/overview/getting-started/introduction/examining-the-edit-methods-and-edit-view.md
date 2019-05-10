@@ -8,12 +8,12 @@ ms.date: 01/06/2019
 ms.assetid: 52a4d5fe-aa31-4471-b3cb-a064f82cb791
 msc.legacyurl: /mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view
 msc.type: authoredcontent
-ms.openlocfilehash: 4a4627bdce8b8f2085150aa08cdc4c1271e09e09
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c42ec77b5d5107f3ef70e13b779fc1bebef70a14
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59422007"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65120711"
 ---
 # <a name="examining-the-edit-methods-and-edit-view"></a>편집 메서드 및 편집 보기 검사
 
@@ -98,7 +98,6 @@ ms.locfileid: "59422007"
 ## <a name="jquery-validation-for-non-english-locales"></a>영어가 아닌 로캘의 jQuery 유효성 검사
 
 영어 (미국) 컴퓨터를 사용 하는 경우이 섹션을 건너뛸 하 수 다음 자습서로 이동 합니다. 이 자습서의 Globalize 버전을 다운로드할 수 있습니다 [여기](https://archive.msdn.microsoft.com/Project/Download/FileDownload.aspx?ProjectName=aspnetmvcsamples&amp;DownloadId=16475)합니다. 국제화에 뛰어난 2 부 자습서를 참조 하세요 [Nadeem의 ASP.NET MVC 5 국제화](http://afana.me/post/aspnet-mvc-internationalization.aspx)합니다.
-
 
 > [!NOTE]
 > 쉼표를 사용 하는 영어가 아닌 로캘의 jQuery 유효성 검사를 지원 하도록 (&quot;,&quot;), 소수점 및 미국 영어가 아닌 날짜 형식에 대 한 포함 해야 합니다 *globalize.js* 및 특정  *cultures/globalize.cultures.js* 파일 (에서 [ https://github.com/jquery/globalize ](https://github.com/jquery/globalize) ) 및 JavaScript를 사용 하 여 `Globalize.parseFloat`입니다. NuGet에서 영어가 아닌 jQuery 유효성 검사를 가져올 수 있습니다. (설치 하지 마십시오 Globalize 영어 로캘을 사용 하는 경우.)

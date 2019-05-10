@@ -8,17 +8,16 @@ ms.date: 08/08/2011
 ms.assetid: f645d3b1-1092-43c6-a28a-074b413924b4
 msc.legacyurl: /web-forms/overview/getting-started
 msc.type: chapter
-ms.openlocfilehash: 12dd89632f9ec9ebfb16bcefbd37e7311adfff08
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: d76e65ae807b1da97d07199e7f0fce21fbf14af6
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59422826"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133441"
 ---
 # <a name="getting-started-with-aspnet-web-forms"></a>ASP.NET Web Forms 시작
 
 > Web Forms 모델 및 페이지를 만들고 컨트롤을 사용 하는 방법입니다.
-
 
 - [ASP.NET 4.5 Web Forms 및 Visual Studio 2013 시작](getting-started-with-aspnet-45-web-forms/index.md)
 

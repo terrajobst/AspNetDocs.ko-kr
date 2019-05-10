@@ -8,12 +8,12 @@ ms.date: 10/17/2013
 ms.assetid: cc764f3b-6921-486a-8f44-c6ccd1249acd
 msc.legacyurl: /mvc/overview/getting-started/introduction/adding-a-controller
 msc.type: authoredcontent
-ms.openlocfilehash: ad5f32a08270ce318c03e1b29acd74d12bbb3d3b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: da914986ff020879dfe634967b39b32250cbf43b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59394057"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65120846"
 ---
 # <a name="adding-a-controller"></a>컨트롤러 추가
 
@@ -34,13 +34,11 @@ MVC는 의미 *모델-뷰-컨트롤러*합니다. MVC는 응용 프로그램을 
 
 컨트롤러 클래스를 만들어 시작 해 보겠습니다. **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 합니다 *컨트롤러* 폴더 및 클릭 한 다음 **추가**, 다음 **컨트롤러**합니다.
 
-
 ![](adding-a-controller/_static/image1.png)
 
 에 **스 캐 폴드 추가** 대화 상자, 클릭 **MVC 5 컨트롤러-비어 있음**를 클릭 하 고 **추가**합니다.
 
 ![](adding-a-controller/_static/image2.png)  
- 
 
 새 컨트롤러 "HelloWorldController" 이름을 지정 하 고 클릭 **추가**합니다.
 
@@ -80,7 +78,6 @@ URL의 첫 번째 부분 실행할 컨트롤러 클래스를 결정 합니다. �
 
 > [!NOTE]
 > 보안 정보: 사용 하 여 위의 코드 [HttpUtility.HtmlEncode](https://msdn.microsoft.com/library/ee360286(v=vs.110).aspx) 악의적인 입력 (예: JavaScript)에서 응용 프로그램을 보호 합니다. 자세한 내용은 [방법: HTML 인코딩 문자열로 적용 하 여 웹 응용 프로그램에서 스크립트 악용 으로부터 보호](https://msdn.microsoft.com/library/a2a4yykt(v=vs.100).aspx)합니다.
-
 
  응용 프로그램을 실행 하 고 예제 URL로 이동 (`http://localhost:xxxx/HelloWorld/Welcome?name=Scott&numtimes=4`). URL에서 `name` 및 `numtimes`에 다른 값을 사용할 수 있습니다. 합니다 [ASP.NET MVC 모델 바인딩 시스템](http://odetocode.com/Blogs/scott/archive/2009/04/27/6-tips-for-asp-net-mvc-model-binding.aspx) 메서드에서 매개 변수로 주소 표시줄에는 쿼리 문자열에서 명명 된 매개 변수를 자동으로 매핑합니다.
 

@@ -9,12 +9,12 @@ ms.assetid: 053e23c4-13c9-40fa-87cb-3e9b0823b31e
 ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/features-api/two-factor-authentication-using-sms-and-email-with-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: c41fc06ad98665f7d48efde030c1341b06e49dd0
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 4ca9c141b0b48acf2c775a083398d3fb66b51cc2
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59395293"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65121418"
 ---
 # <a name="two-factorauthentication-using-sms-and-email-with-aspnet-identity"></a>ASP.NET Id와 SMS 및 전자 메일을 사용 하 여 2 단계 인증
 
@@ -23,7 +23,6 @@ ms.locfileid: "59395293"
 > 이 자습서에서는 SMS 및 전자 메일을 사용 하 여 2 단계 인증 (2FA)을 설정 하는 방법을 보여줍니다.
 > 
 > Rick anderson이 문서가 작성 된 ([@RickAndMSFT](https://twitter.com/#!/RickAndMSFT)), Pranav Rastogi ([@rustd](https://twitter.com/rustd)), Hao 둘러싼 및 Suhas Joshi 합니다. NuGet 샘플 Hao 둘러싼 기본적 작성 되었습니다.
-
 
 이 항목에서는 다음 다룹니다.
 
@@ -43,7 +42,6 @@ ms.locfileid: "59395293"
 > [!NOTE]
 > 경고: Visual Studio를 설치 해야 합니다 [2013 업데이트 2](https://go.microsoft.com/fwlink/?LinkId=390521) 이 자습서를 완료 합니다.
 
-
 1. 새 ***빈*** ASP.NET 웹 프로젝트입니다.
 2. 다음을 입력 하는 패키지 관리자 콘솔에서 다음 명령을:  
   
@@ -58,7 +56,6 @@ ms.locfileid: "59395293"
 
 > [!NOTE]
 > 경고: 이 샘플의 보안 설정을 변경 하면 프로덕션 앱 변경 내용을 명시적으로 호출 하는 보안 감사를 수행 해야 합니다.
-
 
 <a id="SMS"></a>
 
@@ -212,7 +209,6 @@ QR 코드 생성기 같은 자세한 2FA 공급자를 추가 하거나 자신이
 
 > [!NOTE]
 > 2FA 코드를 사용 하 여 생성 됩니다 [일회용 암호 알고리즘 시간 기반](http://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm) 및 6 분 후 코드 유효 합니다. 코드를 입력 하는 데 6 분 넘게를 사용 하는 경우 잘못 된 코드 오류 메시지가 표시 됩니다.
-
 
 <a id="combine"></a>
 

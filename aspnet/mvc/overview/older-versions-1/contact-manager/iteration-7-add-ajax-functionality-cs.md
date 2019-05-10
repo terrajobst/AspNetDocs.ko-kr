@@ -8,12 +8,12 @@ ms.date: 02/20/2009
 ms.assetid: f1b0809e-8909-444e-b6bb-a5cd1dea3f72
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager/iteration-7-add-ajax-functionality-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 34fce0bef5163ba0423ea00cf4b7507947c45c68
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 7c8eb3d3688674dd2c220b4bd1b5982f2610d0eb
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59398074"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123838"
 ---
 # <a name="iteration-7--add-ajax-functionality-c"></a>반복 #7 – Ajax 기능 추가 (C#)
 
@@ -22,7 +22,6 @@ by [Microsoft](https://github.com/microsoft)
 [코드 다운로드](iteration-7-add-ajax-functionality-cs/_static/contactmanager_7_cs1.zip)
 
 > 일곱 번째 반복에서 개선할 응용 프로그램의 성능과 응답성 Ajax에 대 한 지원을 추가 하 여 합니다.
-
 
 ## <a name="building-a-contact-management-aspnet-mvc-application-c"></a>연락처 관리 ASP.NET MVC 응용 프로그램을 작성 (C#)
 
@@ -92,11 +91,9 @@ JavaScript를 지 원하는 브라우저를 사용 하 여 연락처 관리자 �
 
 S를 인덱스 보기 수정 연락처를 표시 하는 보기의 영역을 업데이트만 연락처 그룹을 클릭 하 여 시작할 수 있습니다. 그림 1에 빨간색 상자 업데이트 하고자 하는 영역을 포함 합니다.
 
-
 [![만 연락처를 업데이트 하는 중](iteration-7-add-ajax-functionality-cs/_static/image1.jpg)](iteration-7-add-ajax-functionality-cs/_static/image1.png)
 
 **그림 01**: 만 연락처를 업데이트 하는 중 ([클릭 하 여 큰 이미지 보기](iteration-7-add-ajax-functionality-cs/_static/image2.png))
-
 
 첫 번째 단계는 별도 부분 (뷰 사용자 컨트롤)를 비동기적으로 업데이트 하려는 보기의 일부를 분리 하는 것입니다. 연락처의 테이블을 표시 하는 인덱스 뷰의 섹션 목록 1에서 부분으로 이동 되었습니다.
 
@@ -132,9 +129,7 @@ S를 인덱스 보기 수정 연락처를 표시 하는 보기의 영역을 업�
 
 수정 된 인덱스 뷰에 상위 및 하위 브라우저의 경우 작동합니다. 문의 그룹을 클릭 하면 브라우저에서 JavaScript를 지원 하 고 연락처 목록을 포함 하는 뷰의 지역만 업데이트 됩니다. 반면에 브라우저가 JavaScript를 지원 하지 않습니다, 경우에 전체 뷰가 업데이트 됩니다.
 
-
 업데이트 된 인덱스 보기 한 가지 문제가 있습니다. 문의 그룹을 클릭 하면 선택한 그룹을 강조 표시 되지 않습니다. Ajax 요청 중에 업데이트 되는 지역 외부에 있는 그룹의 목록이 표시 됩니다, 때문에 올바른 그룹을 강조 표시 가져오기지 않습니다. 다음 섹션에서이 문제를 해결할 예정입니다.
-
 
 ## <a name="adding-jquery-animation-effects"></a>JQuery 애니메이션 효과 추가합니다.
 
@@ -192,11 +187,9 @@ BeginContactList() 메서드 연락처 그룹을 클릭할 때 호출 됩니다.
 
 현재 연락처를 삭제 하기 위해 해야 할 삭제 링크를 클릭 하 고 삭제 확인 페이지에 표시 된 삭제 단추를 클릭 (그림 2 참조). 이 페이지 요청 데이터베이스 레코드가 삭제와 같은 간단한 작업을 수행 하려면 많은 것 같습니다.
 
-
 [![삭제 확인 페이지](iteration-7-add-ajax-functionality-cs/_static/image2.jpg)](iteration-7-add-ajax-functionality-cs/_static/image3.png)
 
 **그림 02**: 삭제 확인 페이지 ([클릭 하 여 큰 이미지 보기](iteration-7-add-ajax-functionality-cs/_static/image4.png))
-
 
 삭제 확인 페이지를 건너뛰고 인덱스 보기에서 직접 연락처를 삭제 하기 쉽습니다. 응용 프로그램 보안 취약점을 열어이 접근 방식을 때문에이 유혹을 피해 야 합니다. 일반적으로 don t 웹 응용 프로그램의 상태를 수정 하는 작업을 호출할 때 HTTP GET 작업을 수행 하려고 합니다. 삭제를 수행할 때 HTTP POST를 수행 하거나 HTTP DELETE 작업 하려는 합니다.
 
@@ -213,7 +206,6 @@ BeginContactList() 메서드 연락처 그룹을 클릭할 때 호출 됩니다.
 > [!NOTE] 
 > 
 > ASP.NET MVC framework의 표준 파트를 Ajax.ImageActionLink() 아닙니다. Ajax.ImageActionLink() Contact Manager 프로젝트에 포함 하는 사용자 지정 도우미 메서드는입니다.
-
 
 AjaxOptions 매개 변수는 다음과 같은 두 가지 속성이 있습니다. 먼저 확인 속성 팝업 JavaScript 확인 대화 상자를 표시 됩니다. 둘째, HttpMethod 속성은 HTTP DELETE 작업 수행을 위해 사용 됩니다.
 

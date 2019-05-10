@@ -8,19 +8,18 @@ ms.date: 02/10/2010
 ms.assetid: 3cb27b8a-354f-4332-bfe0-232b13bbf8aa
 msc.legacyurl: /whitepapers/denied-access-to-iis-directories
 msc.type: content
-ms.openlocfilehash: 789bf26df82d275c45e633de50c3cce1d82838b6
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: a3a53aa88abbe1bcaaea7d691406800c8f9b988b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59406628"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134558"
 ---
 # <a name="aspnet-denied-access-to-iis-directories"></a>ASP.NET에서 IIS 디렉터리에 대한 액세스 거부
 
 > 이 백서 작업을 설명 하는 오류를 반환 하는 ASP.NET 응용 프로그램에 요청 하는 경우 "에 대 한 액세스 거부 *DirectoryName* 디렉터리입니다. 디렉터리 변경 모니터링을 시작 하지 못했습니다. "
 > 
 > ASP.NET 1.0 및 ASP.NET 1.1에 적용 됩니다.
-
 
 작음을 사용 하 여 실행 이제 ASP.NET V1 RTM 권한 있는 windows 계정-로컬 컴퓨터에서 "ASPNET" 계정으로 등록 합니다.
 

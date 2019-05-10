@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.assetid: 08834147-77ec-454a-bb7a-d931d2a40dab
 msc.legacyurl: /mvc/overview/getting-started/getting-started-with-ef-using-mvc/implementing-inheritance-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: 3ebabd626e0b862e09f19552648406aab959f882
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 6a410c2e818ed87bbcac588063eb4eeaf3d2b9ee
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423314"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65120885"
 ---
 # <a name="template-implement-inheritance-with-ef-in-an-aspnet-mvc-5-app"></a>템플릿: ASP.NET MVC 5 앱에서 EF 사용 하 여 상속을 구현 합니다.
 
@@ -100,7 +100,6 @@ TPC 및 TPH 상속 패턴 일반적으로 더 나은 성능을 제공 TPT 상속
 실행 된 `Update-Database` PMC에서 명령을 합니다. 명령은 기존 데이터 마이그레이션을 처리 하는 방법을 알지에 있기 때문이 시점에서 실패 합니다. 다음과 같은 오류 메시지가 표시:
 
 > *개체를 삭제할 수 없습니다 ' dbo입니다. 강사 ' FOREIGN KEY 제약 조건에 의해 참조 되므로 합니다.*
-
 
 오픈 *마이그레이션을\&lt; 타임 스탬프&gt;\_Inheritance.cs* 바꾸고는 `Up` 메서드를 다음 코드로:
 

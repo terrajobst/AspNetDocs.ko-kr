@@ -8,12 +8,12 @@ ms.date: 10/15/2014
 ms.assetid: 92c84846-f0ea-4b5e-94b6-5004874eb060
 msc.legacyurl: /web-api/overview/security/individual-accounts-in-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 29c3670ad7ab93acb0be878e5bd961d0ea446eee
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 7492c4aa4c2a0a8aeed64c3462bda8fc51f35a6b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396234"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134308"
 ---
 # <a name="secure-a-web-api-with-individual-accounts-and-local-login-in-aspnet-web-api-22"></a>개별 계정 및 ASP.NET Web API 2.2에서에서 로컬 로그인을 사용 하 여 Web API 보안 유지
 
@@ -29,7 +29,6 @@ ms.locfileid: "59396234"
 > - [Visual Studio 2013 업데이트 3](https://www.microsoft.com/visualstudio/eng/2013-downloads)
 > - [Web API 2.2](../releases/whats-new-in-aspnet-web-api-22.md)
 > - [ASP.NET Identity 2.1](../../../identity/index.md)
-
 
 Visual Studio 2013에서 Web API 프로젝트 템플릿을 사용 하면 인증에 대 한 세 가지 옵션:
 
@@ -239,7 +238,6 @@ OAuth 미들웨어는 사용자 계정에 대 한 아무것도 알지 못합니�
 
 > [!NOTE]
 > 특히, 앱의 MVC 부분이 폼 인증 쿠키에 자격 증명을 저장 하는 사용할 수 있습니다. 쿠키 기반 인증 CSRF 공격을 방지 하기 위해 위조 방지 토큰을 사용을 해야 합니다. 웹 Api에 대 한 문제가 위조 방지 토큰을 클라이언트로 보낼 웹 API에 대 한 편리한 방법이 없기 때문입니다. (이 문제에 자세한 배경 정보를 참조 하세요 [Web API에서 CSRF 공격 방지](preventing-cross-site-request-forgery-csrf-attacks.md).) 호출 **SuppressDefaultHostAuthentication** Web API를 쿠키에 저장 된 자격 증명에서 CSRF 공격에 취약 하지 않도록 합니다.
-
 
 클라이언트가 보호 된 리소스를 요청 하면 Web API 파이프라인에서 어떻게 다음과 같습니다.
 

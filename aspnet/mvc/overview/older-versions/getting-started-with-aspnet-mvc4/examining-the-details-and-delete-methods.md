@@ -8,12 +8,12 @@ ms.date: 08/28/2012
 ms.assetid: 11425ff3-09fc-4efa-be9a-b53bce503460
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc4/examining-the-details-and-delete-methods
 msc.type: authoredcontent
-ms.openlocfilehash: 0359af8d5558bdaa6a73be9774fec2284ab87c73
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 455bdfd4cfca65cadd94e8ce189c1a185a03805d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384775"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129888"
 ---
 # <a name="examining-the-details-and-delete-methods"></a>세부 정보 및 삭제 메서드 검사
 
@@ -21,7 +21,6 @@ ms.locfileid: "59384775"
 
 > > [!NOTE]
 > > 이 자습서는 업데이트 된 버전을 사용할 수 [여기](../../getting-started/introduction/getting-started.md) 는 ASP.NET MVC 5 및 Visual Studio 2013을 사용 합니다. 보다 안전 하 고 더 간단 하 게 수행 되며 더 많은 기능을 보여 줍니다.
-
 
 자습서의이 부분에서는 자동으로 생성 된 살펴보겠습니다 `Details` 고 `Delete` 메서드.
 

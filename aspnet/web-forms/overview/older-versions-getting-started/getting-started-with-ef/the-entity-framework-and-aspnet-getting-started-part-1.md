@@ -8,12 +8,12 @@ ms.date: 12/03/2010
 ms.assetid: 5cb00916-8f46-491f-be25-4739a615d619
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1
 msc.type: authoredcontent
-ms.openlocfilehash: 51e3010f6e01434c495201af4af3bbdcde993da7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: fd88b32ad2a65e5b4c7ead15f0d6dc5dc6e97e75
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59398438"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65126945"
 ---
 # <a name="getting-started-with-entity-framework-40-database-first-and-aspnet-4-web-forms"></a>먼저 Entity Framework 4.0 Database를 사용 하 여 시작 및 ASP.NET 4 Web Forms
 
@@ -43,7 +43,6 @@ ms.locfileid: "59398438"
 > ## <a name="questions"></a>질문
 > 
 > 에 자습서로 직접 관련 되지 않은 질문이 있을 수를 게시할 수 있습니다 합니다 [ASP.NET Entity Framework 포럼](https://forums.asp.net/1227.aspx)서 [Entity Framework 및 LINQ to Entities 포럼](https://social.msdn.microsoft.com/forums/adodotnetentityframework/threads/), 또는 [ StackOverflow.com](http://stackoverflow.com/)합니다.
-
 
 ## <a name="overview"></a>개요
 

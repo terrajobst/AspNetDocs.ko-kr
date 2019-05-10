@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: b9775f41-352a-4f82-baa6-23e95b342e20
 msc.legacyurl: /web-api/overview/mobile-clients/calling-web-api-from-a-windows-phone-8-application
 msc.type: authoredcontent
-ms.openlocfilehash: a5c7804c2336e91dc171b5da52819436472e81cf
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c5da14a6856f551343b6fb14f0aedc659e792f6b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59412452"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65122068"
 ---
 # <a name="calling-web-api-from-a-windows-phone-8-application-c"></a>Windows Phone 8 애플리케이션에서 Web API 호출(C#)
 
@@ -40,7 +40,6 @@ ASP.NET Web API와 같은 rESTful 서비스는 서버 쪽 및 클라이언트 �
 > [!NOTE]
 > Web API 및 로컬 시스템에서 Windows Phone 8 프로젝트 간의 연결을 테스트 하려는 경우의 지침을 수행 해야 합니다는 *[Windows Phone 8 에뮬레이터는 로컬에서 웹 API 응용 프로그램에 연결 컴퓨터](https://go.microsoft.com/fwlink/?LinkId=324014)* 테스트 환경을 설정 하는 문서입니다.
 
-
 <a id="STEP1"></a>
 ### <a name="step-1-creating-the-web-api-bookstore-project"></a>1단계: 웹 API Bookstore 프로젝트 만들기
 
@@ -50,20 +49,16 @@ ASP.NET Web API와 같은 rESTful 서비스는 서버 쪽 및 클라이언트 �
 2. 클릭 **파일**, 한 다음 **새**를 차례로 **프로젝트**합니다.
 3. 경우는 **새 프로젝트** 대화 상자가 표시 됩니다, 확장 **설치 됨**, 한 다음 **템플릿**, 다음 **Visual C#**, 차례로 **웹**합니다.
 
-
    | [![](calling-web-api-from-a-windows-phone-8-application/_static/image2.png)](calling-web-api-from-a-windows-phone-8-application/_static/image1.png) |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                확장 이미지를 클릭 합니다.                                                                |
 
-
 4. 강조 표시 **ASP.NET 웹 응용 프로그램**를 입력 **BookStore** 클릭 한 다음 확인 하 고 프로젝트 이름에 대 한 **확인**합니다.
 5. 경우는 **새 ASP.NET 프로젝트** 대화 상자가 표시 됩니다, 선택 합니다 **Web API** 템플릿과 클릭 **확인**.
-
 
    | [![](calling-web-api-from-a-windows-phone-8-application/_static/image4.png)](calling-web-api-from-a-windows-phone-8-application/_static/image3.png) |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                확장 이미지를 클릭 합니다.                                                                |
-
 
 6. Web API 프로젝트를 열면 프로젝트에서 샘플 컨트롤러를 제거 합니다.
 
@@ -195,8 +190,6 @@ F5 키를 눌러 Visual Studio 모두에서 Windows Phone 에뮬레이터를 표
 
 오류 메시지를 누르면 오류에 대 한 추가 정보가 표시 됩니다.
 
-
 | [![](calling-web-api-from-a-windows-phone-8-application/_static/image16.png)](calling-web-api-from-a-windows-phone-8-application/_static/image15.png) |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                                                 확장 이미지를 클릭 합니다.                                                                 |
-

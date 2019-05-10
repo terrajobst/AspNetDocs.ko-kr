@@ -8,19 +8,18 @@ ms.date: 08/14/2010
 ms.assetid: 004703cd-e0e9-4ba7-9974-1b0475c71222
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part5
 msc.type: authoredcontent
-ms.openlocfilehash: e0b540c030bf600def9b9efad4c73f055a343851
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 207ed880977d794d81efdc1ea458d17a68d501d8
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402832"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65122888"
 ---
 # <a name="accessing-your-models-data-from-a-controller"></a>컨트롤러에서 모델의 데이터에 액세스
 
 [Scott Hanselman](https://github.com/shanselman)
 
 > ASP.NET MVC의 기본 사항을 소개 하는 초보자를 위한 자습서입니다. 읽기 및 쓰기 데이터베이스는 간단한 웹 응용 프로그램을 만들어야 합니다. 방문 합니다 [ASP.NET MVC 학습 센터](../../../index.md) 자습서 및 샘플 다른 ASP.NET MVC를 찾아볼 수 있습니다.
-
 
 이 섹션에서는 하겠습니다 새 MoviesController 클래스를 만들고 영화 데이터를 검색 하 고 뷰 템플릿을 사용 하 여 브라우저에 다시 표시 하는 일부 코드를 작성 합니다.
 

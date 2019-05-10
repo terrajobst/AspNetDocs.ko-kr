@@ -8,17 +8,16 @@ ms.date: 09/15/2011
 ms.assetid: 9bc6c53a-3e54-4f9d-8bef-0f3359aecf7b
 msc.legacyurl: /mvc/videos/mvc-2/how-do-i
 msc.type: chapter
-ms.openlocfilehash: 84c626764573108969fec51a2cba028e463b1962
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 7c2fd0d57cdd6775eb027c0dc9b360443bacbfed
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59380888"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65120520"
 ---
 # <a name="how-do-i"></a>작업 절차
 
 > 이 섹션에서 비디오 "The Storefront"-완료부터 전체 전자 상거래 응용 프로그램을 빌드하는 방법을 포함 하 여 ASP.NET MVC를 설명 합니다.
-
 
 - [ASP.NET MVC를 사용하여 Tasklist 애플리케이션 만들기](creating-a-tasklist-application-with-aspnet-mvc.md)
 - [ASP.NET MVC를 사용하여 15분만에 영화 데이터베이스 애플리케이션 만들기](creating-a-movie-database-application-in-15-minutes-with-aspnet-mvc.md)

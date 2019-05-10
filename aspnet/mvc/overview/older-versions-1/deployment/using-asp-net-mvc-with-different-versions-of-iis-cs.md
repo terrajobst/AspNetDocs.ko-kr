@@ -8,19 +8,18 @@ ms.date: 08/19/2008
 ms.assetid: b0cf4a34-2c1d-4717-bb54-ff029e722990
 msc.legacyurl: /mvc/overview/older-versions-1/deployment/using-asp-net-mvc-with-different-versions-of-iis-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 0ca34f670202a35c627a514d3394fa430f5d8f26
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3b0a9509c0600f3598fd1218a7b383430548d4c0
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396345"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123227"
 ---
 # <a name="using-aspnet-mvc-with-different-versions-of-iis-c"></a>다양한 버전의 IIS에 ASP.NET MVC 사용(C#)
 
 by [Microsoft](https://github.com/microsoft)
 
 > 이 자습서에서는 ASP.NET MVC 및 URL 라우팅 인터넷 정보 서비스의 서로 다른 버전을 사용 하는 방법을 알아봅니다. ASP.NET MVC를 사용 하 여 IIS 7.0 (기본 모드), IIS 6.0 및 이전 버전의 IIS에 대 한 다른 전략에 알아봅니다.
-
 
 ASP.NET MVC 프레임 워크 컨트롤러 작업에 브라우저 요청을 라우팅하도록 ASP.NET 라우팅에 따라 달라 집니다. ASP.NET 라우팅에서 활용 하기 위해 웹 서버에서 추가 구성 단계를 수행 해야 합니다. 모든 버전의 인터넷 정보 서비스 (IIS) 및 처리 모드 응용 프로그램에 대 한 요청에 따라 달라 집니다.
 

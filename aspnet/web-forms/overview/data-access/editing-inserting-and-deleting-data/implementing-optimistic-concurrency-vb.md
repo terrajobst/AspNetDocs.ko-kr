@@ -8,12 +8,12 @@ ms.date: 07/17/2006
 ms.assetid: 2646968c-2826-4418-b1d0-62610ed177e3
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/implementing-optimistic-concurrency-vb
 msc.type: authoredcontent
-ms.openlocfilehash: bab4dd5180f0064a4fa8b0c50045f97100ce7d10
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 130e1cb7034d57e5d85729497072808c711a08f9
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59422969"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134500"
 ---
 # <a name="implementing-optimistic-concurrency-vb"></a>낙관적 동시성 구현(VB)
 
@@ -23,18 +23,15 @@ ms.locfileid: "59422969"
 
 > 여러 사용자가 데이터를 편집할 수 있도록 웹 응용 프로그램에 두 사용자가 편집 하 고 동일한 데이터를 동시에 위험이 있습니다. 이 자습서에서는 이러한 위험을 처리 하는 낙관적 동시성 제어를 구현 하겠습니다.
 
-
 ## <a name="introduction"></a>소개
 
 에 데이터를 볼 수 있도록 하는 웹 응용 프로그램 또는 데이터를 수정할 수 있는 단일 사용자만 포함 하는 경우 실수로 다른의 변경 내용을 덮어쓰지 두 개의 동시 사용자 위험이 없는 합니다. 여러 사용자가 데이터를 업데이트 또는 삭제를 허용 하는 웹 응용 프로그램에 대 한 그런데 다른 동시 사용자와 충돌 한 사용자의 수정 가능성입니다. 원위치에서 동시성 정책 없이 두 명의 사용자가 동시에 단일 레코드를 편집 하는 경우 사용자가 자신의 변경 내용을 커밋합니다 마지막 재정의 첫 번째 변경 합니다.
 
 예를 들어는 두 사용자 Jisun과 Sam 된 모두 페이지를 방문 하는 업데이트 및 GridView 컨트롤을 통해 제품을 삭제 하는 방문자를 허용 하는 응용 프로그램에서 한다고 가정 합니다. 둘 다 동시에 GridView의 편집 단추를 클릭 합니다. Jisun 제품 이름을 "Chai Tea"로 변경 하 고 [업데이트] 단추를 클릭 합니다. 최종적인 결론은는 `UPDATE` 를 설정 하는 데이터베이스에 전송 되는 문 *모든* 제품의 업데이트 가능한 필드 (Jisun 단일 필드를 업데이트 하는 경우에 `ProductName`). 이 시점에서, 데이터베이스에 값 "Chai 차를" 음료, 공급 업체 특이 한 액체 등이 특정 제품 범주 그러나 Sam의 화면에서 GridView 여전히 제품 이름을 표시 편집 가능한 GridView 행에서 "Chai"으로 합니다. 몇 초 후 Jisun의 변경 사항이 커밋되기 Sam 입력 하면 조미료에 범주를 업데이트 하 고 업데이트를 클릭 합니다. 이 인해를 `UPDATE` "Chai" 제품 이름을 설정 하는 데이터베이스에 전송 하는 문을 `CategoryID` 해당 음료 범주 ID 및 등입니다. 제품 이름을 Jisun의 변경 내용은 덮어썼습니다. 그림 1이이 일련을의 이벤트를 그래픽으로 보여 줍니다.
 
-
 [![두 명의 사용자가 한 사용자의 변경 내용을 덮어쓰려면 서로의 레코드 있는 s 잠재적인 동시에 업데이트 되는 경우](implementing-optimistic-concurrency-vb/_static/image2.png)](implementing-optimistic-concurrency-vb/_static/image1.png)
 
 **그림 1**: 두 명의 사용자가 동시에 업데이트할 시기는 레코드가 있는 s 잠재적인 서로의 Overwrite로 한 사용자의 변경에 대 한 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-vb/_static/image3.png))
-
 
 마찬가지로, 두 명의 사용자가 페이지를 방문 하는 한 명의 사용자는 다른 사용자에 의해 삭제 될 때 레코드를 업데이트 하는 도중 수 있습니다. 또는 사용자 페이지를 로드 하는 경우이 고 삭제 단추를 클릭 하면 이면 다른 사용자가 변경 했습니다 해당 레코드의 콘텐츠입니다.
 
@@ -49,25 +46,20 @@ ms.locfileid: "59422969"
 > [!NOTE]
 > 이 자습서 시리즈의 예제를 비관적 동시성에 살펴봅니다 하지 않습니다. 비관적 동시성 거의 같은 잠그므로 없으면 제대로 무시를 사용할 다른 사용자에 게 데이터를 업데이트 하지 못할 수 있습니다. 예를 들어 사용자 편집에 대 한 레코드를 잠그고 잠금을 해제 하기 전에 해당 요일의 유지 한 다음, 하는 경우 다른 사용자는 원래 사용자 반환 하 고 자신의 업데이트를 완료 될 때까지 해당 레코드를 업데이트할 수 됩니다. 따라서 비관적 동시성은 사용 하는 경우에는 일반적으로 시간 제한에 도달 하면 잠금 취소 하는 합니다. 티켓 판매 있는 웹 사이트 사용자는 주문 프로세스를 완료 하는 동안 짧은 기간 동안 특정 좌석 배정 위치 잠금에 비관적 동시성 제어의 예시입니다.
 
-
 ## <a name="step-1-looking-at-how-optimistic-concurrency-is-implemented"></a>1단계: 구현 된 낙관적 동시성 방법 확인
 
 낙관적 동시성 제어 업데이트나 삭제 프로세스를 시작 하는 경우와 마찬가지로 업데이트 되거나 삭제 된 레코드에 동일한 값 함으로써 작동 합니다. 예를 들어,는 편집 가능한 GridView의 편집 단추를 클릭 하는 경우 레코드의 값은 데이터베이스에서 읽고 텍스트 상자 및 기타 웹 컨트롤에 표시 합니다. GridView에서 원래 값이 저장 됩니다. 나중에 사용자 자신의 변경 하 고 [업데이트] 단추를 클릭 한 후 원래 값 및 새 값 보내집니다 비즈니스 논리 계층으로 이동한 다음 데이터 액세스 계층. 데이터 액세스 계층에는 사용자 편집을 시작 하는 원래 값은 데이터베이스에서 값과 동일 하는 경우에 레코드를 업데이트는 SQL 문을 실행 해야 합니다. 그림 2에서는이 이벤트 시퀀스를 보여 줍니다.
-
 
 [![성공 하려면 업데이트 또는 삭제, 원래 값을 현재 데이터베이스 값 이어야 합니다.](implementing-optimistic-concurrency-vb/_static/image5.png)](implementing-optimistic-concurrency-vb/_static/image4.png)
 
 **그림 2**: Update 또는 Delete 성공에는 원래 값 해야 수 값과 같은 현재 데이터베이스에 대 한 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-vb/_static/image6.png))
 
-
 낙관적 동시성을 구현 하는 방법은 여러 가지가 있습니다 (참조 [Peter A. Bromberg](http://peterbromberg.net/)의 [낙관적 동시성 업데이트 논리](http://www.eggheadcafe.com/articles/20050719.asp) 간략히 다양 한 옵션에 대 한). ADO.NET 입력 데이터 집합에는 확인란의 눈금만 사용 하 여 구성할 수 있는 한 구현을 제공 합니다. 입력 데이터 집합의 TableAdapter 보강 TableAdapter의 낙관적 동시성을 사용 하도록 설정 `UPDATE` 하 고 `DELETE` 모든의 원래 값의 비교를 포함 하도록 문을 `WHERE` 절. 다음 `UPDATE` 문을 현재 데이터베이스 값 GridView에서 레코드를 업데이트 하는 경우 원래 검색 된 값과 같은 경우에 해당 이름 및 제품의 가격을 예를 들어 업데이트 합니다. `@ProductName` 및 `@UnitPrice` 반면 매개 변수는 사용자가 입력 한 새 값이 포함 `@original_ProductName` 및 `@original_UnitPrice` 편집 단추를 클릭할 때 GridView에 원래 로드 된 값을 포함 합니다.
-
 
 [!code-sql[Main](implementing-optimistic-concurrency-vb/samples/sample1.sql)]
 
 > [!NOTE]
 > 이 `UPDATE` 문을 읽기 쉽도록 간소화 되었습니다. 실제로 `UnitPrice` 체크 인를 `WHERE` 절 이후 더 개입 됩니다 `UnitPrice` 포함 될 수 있습니다 `NULL` 가 고 있는지 확인 `NULL = NULL` 항상 False를 반환 합니다 (대신 사용 해야 `IS NULL`).
-
 
 다른 기본을 사용 하는 것 외에도 `UPDATE` 낙관적 동시성에도 해당 DB 서명의 수정 TableAdapter를 구성 하는 문을 직접 메서드. 첫 번째 자습서에서 설명한 대로 [ *데이터 액세스 레이어 만들기*](../introduction/creating-a-data-access-layer-cs.md), 입력된 매개 변수로 값 DB 직접 메서드 스칼라의 목록을 수락 하는 되었는지 (강력한 DataRow 대신 또는 DataTable 인스턴스)입니다. 낙관적 동시성을 직접 DB를 사용 하는 경우 `Update()` 고 `Delete()` 메서드는 원래 값에 대 한 입력된 매개 변수를 포함 합니다. 일괄 처리를 사용 하 여에 대 한 BLL의 코드 패턴을 업데이트 하는 또한 (의 `Update()` 스칼라 값 보다는 Datarow Datatable을 허용 하는 메서드 오버 로드)도 변경 해야 합니다.
 
@@ -77,62 +69,47 @@ ms.locfileid: "59422969"
 
 새 입력 데이터 집합을 만들려면 마우스 오른쪽 단추로 클릭 합니다 `DAL` 내의 폴더를 `App_Code` 폴더 라는 새 데이터 집합을 추가 하 고 `NorthwindOptimisticConcurrency`입니다. 첫 번째 자습서에서 살펴본 것 처럼 수행 하므로 추가 새 TableAdapter를 형식화 된 데이터 집합을 자동으로 TableAdapter 구성 마법사를 시작 합니다. 첫 번째 화면에서 우리가 하 라는 메시지가 나타나면 데이터베이스에 연결 하 여 동일한 Northwind 데이터베이스에 연결-를 지정 합니다 `NORTHWNDConnectionString` 설정에서 `Web.config`합니다.
 
-
 [![동일한 Northwind 데이터베이스에 연결](implementing-optimistic-concurrency-vb/_static/image8.png)](implementing-optimistic-concurrency-vb/_static/image7.png)
 
 **그림 3**: 동일한 Northwind 데이터베이스에 연결 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-vb/_static/image9.png))
 
-
 다음으로 데이터를 쿼리 하는 방법에 대 한 프롬프트가:를 임시 SQL 문을 통해 새 저장 프로시저 또는 기존 저장 프로시저입니다. 우리의 원래 DAL에서 임시 SQL 쿼리를 사용 하므로이 옵션 여기도 사용 합니다.
-
 
 [![임시 SQL 문을 사용 하 여 검색할 데이터를 지정 합니다.](implementing-optimistic-concurrency-vb/_static/image11.png)](implementing-optimistic-concurrency-vb/_static/image10.png)
 
 **그림 4**: 임시 SQL 문을 사용 하는 검색 데이터를 지정 합니다. ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-vb/_static/image12.png))
 
-
 다음 화면에서 제품 정보를 검색 하는 데 SQL 쿼리를 입력 합니다. 에 사용 되는 정확히 동일한 SQL 쿼리를 사용 하겠습니다 합니다 `Products` 일부만 반환 하는 우리의 원래 DAL에서 TableAdapter를 `Product` 제품의 공급자 및 범주 이름과 함께 열:
 
-
 [!code-sql[Main](implementing-optimistic-concurrency-vb/samples/sample2.sql)]
-
 
 [![원래 DAL에서 제품 TableAdapter에서 같은 SQL 쿼리를 사용 합니다.](implementing-optimistic-concurrency-vb/_static/image14.png)](implementing-optimistic-concurrency-vb/_static/image13.png)
 
 **그림 5**: 같은 SQL 쿼리를 사용 합니다 `Products` 원래 DAL에서 TableAdapter ([큰 이미지를 보려면 클릭](implementing-optimistic-concurrency-vb/_static/image15.png))
 
-
 다음 화면으로 이동 하기 전에 고급 옵션 단추를 클릭 합니다. 이 TableAdapter 사용 낙관적 동시성 제어 하도록 단순히 "낙관적 동시성 사용" 확인란을 확인 합니다.
-
 
 [![검사 하 여 낙관적 동시성 제어를 사용 하도록 설정 합니다 &quot;낙관적 동시성을 사용 하 여&quot; 확인란](implementing-optimistic-concurrency-vb/_static/image17.png)](implementing-optimistic-concurrency-vb/_static/image16.png)
 
 **그림 6**: "낙관적 동시성 사용" 확인란을 선택 하 여 낙관적 동시성 제어를 사용 하도록 설정 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-vb/_static/image18.png))
 
-
 마지막으로, TableAdapter DataTable 채우기와; DataTable을 반환 하는 데이터 액세스 패턴을 사용 해야 함을 나타내려면 또한 DB 직접 메서드를 만들어야 함을 나타냅니다. 메서드 이름을 변경 반환 DataTable 패턴 getdata에서 우리의 원래 DAL에서 사용한 명명 규칙을 반영 하도록 GetProducts를 합니다.
-
 
 [![모든 데이터 액세스 패턴을 활용 하는 TableAdapter가](implementing-optimistic-concurrency-vb/_static/image20.png)](implementing-optimistic-concurrency-vb/_static/image19.png)
 
 **그림 7**: TableAdapter 사용할 모든 데이터 액세스 패턴이 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-vb/_static/image21.png))
 
-
 강력한 형식의 데이터 집합 디자이너를 포함 하는 마법사를 완료 한 후 `Products` DataTable 및 TableAdapter. DataTable에서 이름을 바꾸려면 잠시 `Products` 에 `ProductsOptimisticConcurrency`, DataTable의 제목 표시줄을 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 이름 바꾸기를 선택 하 여 수행할 수 있습니다.
-
 
 [![DataTable 및 TableAdapter 형식화 된 데이터 집합에 추가 되었습니다.](implementing-optimistic-concurrency-vb/_static/image23.png)](implementing-optimistic-concurrency-vb/_static/image22.png)
 
 **그림 8**: DataTable 및 TableAdapter 형식화 된 데이터 집합에 추가 되었습니다 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-vb/_static/image24.png))
 
-
 간의 차이점을 볼 수는 `UPDATE` 및 `DELETE` 간에 쿼리를 `ProductsOptimisticConcurrency` TableAdapter (사용 하는 낙관적 동시성) 및 (하지 않습니다)는 제품 TableAdapter를 TableAdapter 클릭 하 고 속성 창으로 이동 합니다. 에 `DeleteCommand` 하 고 `UpdateCommand` 속성 `CommandText` 하위 DAL의 업데이트나 삭제 관련 메서드를 호출할 때 데이터베이스에 전송 되는 실제 SQL 구문을 볼 수 있습니다. 에 대 한 합니다 `ProductsOptimisticConcurrency` TableAdapter를 `DELETE` 문이 사용:
-
 
 [!code-sql[Main](implementing-optimistic-concurrency-vb/samples/sample3.sql)]
 
 반면는 `DELETE` 우리의 원래 DAL에서 제품 TableAdapter에 대 한 문을 훨씬 더 간단 합니다.
-
 
 [!code-sql[Main](implementing-optimistic-concurrency-vb/samples/sample4.sql)]
 
@@ -142,27 +119,21 @@ ms.locfileid: "59422969"
 
 이렇게 하려면 마우스 오른쪽 단추로 클릭 TableAdapter의 제목 표시줄 (영역 오른쪽 위에 합니다 `Fill` 및 `GetProducts` 메서드 이름) 상황에 맞는 메뉴에서 추가 쿼리를 선택 합니다. TableAdapter 쿼리 구성 마법사 시작 됩니다. TableAdapter의 초기 구성으로 만들도록 선택한 대로 `GetProductByProductID(productID)` 임시 SQL 문을 사용 하는 방법 (그림 4 참조). 하므로 합니다 `GetProductByProductID(productID)` 특정 제품에 대 한 정보를 반환 하는 메서드,이 쿼리 임을 나타내려면를 `SELECT` 행을 반환 하는 형식을 쿼리 합니다.
 
-
 [![쿼리 형식으로 표시 된 &quot;행을 반환 하는 SELECT&quot;](implementing-optimistic-concurrency-vb/_static/image26.png)](implementing-optimistic-concurrency-vb/_static/image25.png)
 
 **그림 9**: 쿼리 형식으로 표시 된 "`SELECT` 행을 반환 하는" ([큰 이미지를 보려면 클릭](implementing-optimistic-concurrency-vb/_static/image27.png))
 
-
 다음 화면에서 SQL 쿼리를 미리 로드 된 TableAdapter의 기본 쿼리를 사용 하 라는 메시지가 나타나면 했습니다. 절을 포함 하도록 기존 쿼리를 보강 `WHERE ProductID = @ProductID`그림 10에 나와 있는 것 처럼 합니다.
-
 
 [![추가 WHERE 절을 미리 로드 쿼리에 특정 제품 레코드를 반환할 수](implementing-optimistic-concurrency-vb/_static/image29.png)](implementing-optimistic-concurrency-vb/_static/image28.png)
 
 **그림 10**: 추가 된 `WHERE` 특정 제품 레코드를 반환할 Pre-Loaded 쿼리 절 ([큰 이미지를 보려면 클릭](implementing-optimistic-concurrency-vb/_static/image30.png))
 
-
 생성 된 메서드 이름에 마지막으로 변경 `FillByProductID` 고 `GetProductByProductID`입니다.
-
 
 [![FillByProductID GetProductByProductID를 메서드 이름 바꾸기](implementing-optimistic-concurrency-vb/_static/image32.png)](implementing-optimistic-concurrency-vb/_static/image31.png)
 
 **그림 11**: 메서드를 이름 바꾸기 `FillByProductID` 하 고 `GetProductByProductID` ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-vb/_static/image33.png))
-
 
 이 마법사를 완료를 사용 하 여 TableAdapter 이제 포함 된 데이터를 검색 하기 위한 두 가지 방법: `GetProducts()`를 반환 하는 *모든* 제품; 및 `GetProductByProductID(productID)`, 지정된 된 제품을 반환 하는 합니다.
 
@@ -176,14 +147,11 @@ TableAdapter의에 대 한 메서드 시그니처를 동안 `Update` 일괄 처�
 
 라는 클래스를 추가 `ProductsOptimisticConcurrencyBLL` 에 `BLL` 내에 폴더를 `App_Code` 폴더입니다.
 
-
 ![ProductsOptimisticConcurrencyBLL 클래스 BLL 폴더에 추가](implementing-optimistic-concurrency-vb/_static/image34.png)
 
 **그림 12**: 추가 된 `ProductsOptimisticConcurrencyBLL` 클래스 BLL 폴더
 
-
 다음으로, 다음 코드를 추가 합니다 `ProductsOptimisticConcurrencyBLL` 클래스:
-
 
 [!code-vb[Main](implementing-optimistic-concurrency-vb/samples/sample5.vb)]
 
@@ -194,7 +162,6 @@ TableAdapter의에 대 한 메서드 시그니처를 동안 `Update` 일괄 처�
 ## <a name="deleting-a-product-using-the-db-direct-pattern-with-optimistic-concurrency"></a>DB 직접 패턴을 사용 하 여 낙관적 동시성을 사용 하 여 제품 삭제
 
 낙관적 동시성을 사용 하는 DAL에 대해 DB 직접 패턴을 사용할 경우 메서드는 새 값과 원래 값을 전달 합니다. 삭제에 대 한 값이 없는 새, 따라서 원래 값만 전달 해야 합니다. 이 BLL에 차례로 해야 수락 원래 매개 변수를 모두 입력된 매개 변수로 합니다. 저를 `DeleteProduct` 에서 메서드는 `ProductsOptimisticConcurrencyBLL` DB 직접 메서드를 사용 하는 클래스입니다. 이이 메서드 필요한 입력된 매개 변수로 모든 10 개의 product 데이터 필드에 다음 코드 에서처럼 DAL에 전달 하는 것을 의미 합니다.
-
 
 [!code-vb[Main](implementing-optimistic-concurrency-vb/samples/sample6.vb)]
 
@@ -222,7 +189,6 @@ TableAdapter의 앞에서 설명한 대로 `Update` 일괄 처리 업데이트 �
 
 다음 코드에서는 `UpdateProduct` 모든 제품 데이터를 받아들이는 오버 로드가 입력된 매개 변수로 필드입니다. 여기에 표시 되지 합니다 `ProductsOptimisticConcurrencyBLL` 이 자습서도 있습니다. 다운로드에 포함 하는 클래스는 `UpdateProduct` 입력된 매개 변수로 제품의 이름과 가격을 허용 하는 오버 로드 합니다.
 
-
 [!code-vb[Main](implementing-optimistic-concurrency-vb/samples/sample7.vb)]
 
 ## <a name="step-4-passing-the-original-and-new-values-from-the-aspnet-page-to-the-bll-methods"></a>4단계: 원래 및 새 값을 ASP.NET 페이지에서 BLL 메서드에 전달
@@ -231,18 +197,15 @@ DAL 및 완료 하는 BLL을 사용 하 여 주기를 시스템에서 기본적�
 
 열어서 시작 합니다 `OptimisticConcurrency.aspx` 페이지에 `EditInsertDelete` 폴더 및 GridView 설정 디자이너에 추가 해당 `ID` 속성을 `ProductsGrid`. GridView의 스마트 태그를 만들도록 선택할 라는 새로운 ObjectDataSource는 `ProductsOptimisticConcurrencyDataSource`합니다. 낙관적 동시성을 지 원하는 DAL을 사용 하려면이 ObjectDataSource, 것 이므로 사용 하도록 구성 된 `ProductsOptimisticConcurrencyBLL` 개체입니다.
 
-
 [![ObjectDataSource 사용 ProductsOptimisticConcurrencyBLL 개체에](implementing-optimistic-concurrency-vb/_static/image36.png)](implementing-optimistic-concurrency-vb/_static/image35.png)
 
 **그림 13**: ObjectDataSource 사용 합니다 `ProductsOptimisticConcurrencyBLL` 개체 ([큰 이미지를 보려면 클릭](implementing-optimistic-concurrency-vb/_static/image37.png))
-
 
 선택 된 `GetProducts`, `UpdateProduct`, 및 `DeleteProduct` 마법사의 드롭다운 목록에서 메서드. UpdateProduct 메서드와 같이, 모든 제품의 데이터 필드를 허용 하는 오버 로드를 사용 합니다.
 
 ## <a name="configuring-the-objectdatasource-controls-properties"></a>ObjectDataSource 컨트롤의 속성 구성
 
 마법사를 완료 한 후 ObjectDataSource의 선언 태그는 다음과 같이 표시 됩니다.
-
 
 [!code-aspx[Main](implementing-optimistic-concurrency-vb/samples/sample8.aspx)]
 
@@ -252,7 +215,6 @@ ObjectDataSource의 관련 데이터를 수정 하는 이러한 이전 자습서
 
 > [!NOTE]
 > 값을 `OldValuesParameterFormatString` 속성의 원래 값을 필요로 하는 BLL 입력된 매개 변수 이름에 매핑해야 합니다. 이러한 매개 변수 이름을 때문 `original_productName`, `original_supplierID`등, 그대로 둘 수 있습니다를 `OldValuesParameterFormatString` 속성 값으로 `original_{0}`합니다. 그러나 하는 경우, BLL 메서드의 입력된 매개 변수 했습니다과 같은 이름을 `old_productName`, `old_supplierID`등, 업데이트 해야 합니다 `OldValuesParameterFormatString` 속성을 `old_{0}`입니다.
-
 
 BLL 메서드에 원래 값을 올바르게 전달할 ObjectDataSource에 대 한 순서에서 수행 해야 하는 하나의 최종 속성 설정 방법이 있습니다. ObjectDataSource에는 [ConflictDetection 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.objectdatasource.conflictdetection.aspx) 에 할당할 수 있습니다 [두 값 중 하나](https://msdn.microsoft.com/library/system.web.ui.conflictoptions.aspx):
 
@@ -276,14 +238,12 @@ BLL 메서드에 원래 값을 올바르게 전달할 ObjectDataSource에 대 �
 
 이전 자습서에서 이러한 작업을 수행 하는 방법을 이미 살펴보았습니다 하므로에서는 방금 여기 최종 선언적 구문을 나열 했으며 사례로 구현을 유지 합니다.
 
-
 [!code-aspx[Main](implementing-optimistic-concurrency-vb/samples/sample9.aspx)]
 
 에 매우 근접해 있는 완벽 하 게 작업 예제입니다. 그러나 증가 하며 문제를 일으킬 수 있는 몇 가지 미묘한 있습니다. 또한 동시성 위반이 발생 하는 경우 사용자를 경고 하는 몇 가지 인터페이스가 필요 합니다.
 
 > [!NOTE]
 > 순서로 데이터 웹 컨트롤에 대 한 원래 값 (BLL에 전달 되어)는 ObjectDataSource 올바르게 전달할 것이 중요 하는 GridView의 `EnableViewState` 속성이 `true` (기본값). 뷰 상태를 해제 하면 원래 값을 다시 게시 될 때 손실 됩니다.
-
 
 ## <a name="passing-the-correct-original-values-to-the-objectdatasource"></a>ObjectDataSource를 올바른 원래 값을 전달합니다.
 
@@ -293,25 +253,20 @@ GridView를 구성한 방법에 문제가 몇 가지 있습니다. 경우 Object
 
 이 중요 한 이유를 확인 하려면 잠시 브라우저에서 페이지를 방문 합니다. 예상 대로 GridView 편집 및 삭제 단추가 맨 왼쪽 열에서 각 제품을 나열 합니다.
 
-
 [![제품을 GridView에 나열 됩니다.](implementing-optimistic-concurrency-vb/_static/image39.png)](implementing-optimistic-concurrency-vb/_static/image38.png)
 
 **그림 14**: 제품을 GridView에 나열 됩니다 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-vb/_static/image40.png))
 
-
 모든 제품에 대 한 삭제 단추를 클릭 하면는 `FormatException` throw 됩니다.
-
 
 [![모든 제품 결과 FormatException에서 삭제 하려고 합니다.](implementing-optimistic-concurrency-vb/_static/image42.png)](implementing-optimistic-concurrency-vb/_static/image41.png)
 
 **그림 15**: 에 Any 제품 결과 삭제를 시도 하는 `FormatException` ([큰 이미지를 보려면 클릭](implementing-optimistic-concurrency-vb/_static/image43.png))
 
-
 합니다 `FormatException` ObjectDataSource가 원래에서 읽으려고 할 때 발생 하는 `UnitPrice` 값입니다. 있으므로 합니다 `ItemTemplate` 에 `UnitPrice` 통화 형식으로 (`<%# Bind("UnitPrice", "{0:C}") %>`), $19.95 같은 통화 기호가 포함 되어 있습니다. `FormatException` ObjectDataSource가이 문자열을 변환 하려고 시도할 때 발생 한 `decimal`합니다. 이 문제를 피하기에 다양 한 옵션이 했습니다.
 
 - 통화 형식에서 제거 된 `ItemTemplate`합니다. 즉, 사용 하는 대신 `<%# Bind("UnitPrice", "{0:C}") %>`를 사용 하 여 `<%# Bind("UnitPrice") %>`입니다. 이러한 단점은 가격의 형식이 더 이상 되어 있는 것입니다.
 - 표시를 `UnitPrice` 의 통화 형식으로 `ItemTemplate`를 사용 하지만 `Eval` 이 작업을 수행 하는 키워드입니다. 이전에 설명한 대로 `Eval` 단방향 데이터 바인딩을 수행 합니다. 여전히 제공 해야는 `UnitPrice` 에서 양방향 데이터 바인딩 문을 계속 해야 하므로 원래 값에 대 한 값을 `ItemTemplate`,이 좋지만이 레이블 웹 컨트롤에서 해당 `Visible` 속성 `false`. ItemTemplate에 다음 태그를 사용할 수 했습니다.
-
 
 [!code-aspx[Main](implementing-optimistic-concurrency-vb/samples/sample10.aspx)]
 
@@ -322,14 +277,11 @@ GridView를 구성한 방법에 문제가 몇 가지 있습니다. 경우 Object
 
 이 문제를 해결 한 후 모든 제품에 대 한 삭제 버튼을 다시 클릭 하십시오. 이 시간을 얻을 수는 `InvalidOperationException` ObjectDataSource가 BLL의 호출 하려고 할 때 `UpdateProduct` 메서드.
 
-
 [![ObjectDataSource 송신 하려는 입력 매개 변수를 사용 하 여 메서드를 찾을 수 없습니다.](implementing-optimistic-concurrency-vb/_static/image45.png)](implementing-optimistic-concurrency-vb/_static/image44.png)
 
 **그림 16**: ObjectDataSource 송신 하려는 입력 매개 변수를 사용 하 여 메서드를 찾을 수 없습니다 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-vb/_static/image46.png))
 
-
 예외 메시지를 살펴보면 라는 사실은 의심할 ObjectDataSource는 BLL을 호출 하려고 `DeleteProduct` 메서드를 포함 하는 `original_CategoryName` 및 `original_SupplierName` 매개 변수를 입력 합니다. 때문에 이것이 합니다 `ItemTemplate` 에 대 한은 `CategoryID` 및 `SupplierID` TemplateFields 현재 포함 하 고 양방향 바인딩 문을 `CategoryName` 및 `SupplierName` 데이터 필드입니다. 대신 포함 해야 `Bind` 문을 사용 하 여는 `CategoryID` 고 `SupplierID` 데이터 필드입니다. 이를 위해 사용 하 여 기존 바인딩 문을 바꿉니다 `Eval` 문, 숨겨진된 레이블 컨트롤을 추가한 `Text` 바인딩할 속성을 합니다 `CategoryID` 및 `SupplierID` 같이 양방향 데이터 바인딩을 사용 하 여 데이터 필드 아래:
-
 
 [!code-aspx[Main](implementing-optimistic-concurrency-vb/samples/sample11.aspx)]
 
@@ -341,11 +293,9 @@ GridView를 구성한 방법에 문제가 몇 가지 있습니다. 경우 Object
 
 그러나 다른 브라우저 창 인스턴스에서 제품 이름 TextBox 여전히 표시 "Chai" 됩니다. 이 두 번째 브라우저 창에서 업데이트를 `UnitPrice` 에 `25.00`입니다. 낙관적 동시성을 지원 하지 않는 두 번째 브라우저 인스턴스의 업데이트를 클릭 하는 제품 이름을 다시 변경 "Chai", 첫 번째 브라우저 인스턴스가 수행한 변경 내용을 덮어쓰게 됩니다. 그러나 사용 하는 낙관적 동시성을 사용 하 여 두 번째 브라우저 인스턴스에서 업데이트 단추를 클릭 하면 결과 [DBConcurrencyException](https://msdn.microsoft.com/library/system.data.dbconcurrencyexception.aspx)합니다.
 
-
 [![DBConcurrencyException Throw 되는 동시성 위반이 검색 되 면](implementing-optimistic-concurrency-vb/_static/image48.png)](implementing-optimistic-concurrency-vb/_static/image47.png)
 
 **그림 17**: 동시성 위반을 감지 되 면을 `DBConcurrencyException` 이 Throw 됩니다 ([큰 이미지를 보려면 클릭](implementing-optimistic-concurrency-vb/_static/image49.png))
-
 
 `DBConcurrencyException` DAL의 일괄 처리 업데이트 패턴은 사용 하는 경우에 throw 됩니다. DB 직접 패턴 예외가 발생 하지 않습니다, 그리고 단순히 행이 없는 받는 나타냅니다. 이 설명 하기 두 브라우저 인스턴스 GridView 편집 전 상태로 돌아갑니다. 다음으로, 첫 번째 브라우저 인스턴스에서 편집 단추를 클릭 "Chai"로 다시 "Chai Tea"에서 제품 이름 및 업데이트를 클릭 합니다. 두 번째 브라우저 창에서 Chai에 대 한 삭제 단추를 클릭 합니다.
 
@@ -361,18 +311,15 @@ GridView를 구성한 방법에 문제가 몇 가지 있습니다. 경우 Object
 
 동시성 위반이 발생 하면 나타나는 동작 DAL의 일괄 처리 업데이트 또는 직접 패턴 DB 사용 하는 여부에 따라 달라 집니다. 이 자습서는 업데이트 및 삭제에 사용 되는 DB 직접 패턴에 사용 되는 일괄 처리 업데이트 패턴을 사용 하 여 두 패턴을 사용 합니다. 시작 하려면 삭제 하거나 데이터를 업데이트 하려고 할 때 동시성 위반이 발생 했음을 설명 하는 페이지로 두 Label 웹 컨트롤을 추가 해 보겠습니다. 레이블 컨트롤의 설정 `Visible` 하 고 `EnableViewState` 속성을 `false`;이 하면 해당 특정 페이지 방문 위치 제외 하 고 각 페이지 방문에서 숨길 수 해당 `Visible` 프로그래밍 방식으로 속성 `true`합니다.
 
-
 [!code-aspx[Main](implementing-optimistic-concurrency-vb/samples/sample12.aspx)]
 
 설정 외에도 해당 `Visible`, `EnabledViewState`, 및 `Text` 속성을 설정 했습니다 합니다 `CssClass` 속성을 `Warning`, 큰, 빨간색, 기울임꼴, 굵게 글꼴에 표시할의 레이블을 하면 합니다. 이 CSS `Warning` 클래스 정의 되어 Styles.css에 추가 년대 합니다 *삽입, 업데이트 및 삭제와 관련 된 이벤트 검사* 자습서입니다.
 
 이러한 레이블은 추가한 후 Visual Studio의 디자이너는 그림 18과 유사 합니다.
 
-
 [![페이지에 추가 된 두 개의 레이블 컨트롤](implementing-optimistic-concurrency-vb/_static/image51.png)](implementing-optimistic-concurrency-vb/_static/image50.png)
 
 **그림 18**: 두 개의 레이블 컨트롤에 추가 된 페이지 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-vb/_static/image52.png))
-
 
 이러한 레이블 웹 컨트롤을 사용 하 여 동시성 위반이 발생 했을 때에 시점에 적절 한 레이블을 결정 하는 방법을 검토 준비가 우리 `Visible` 속성 설정할 수 있습니다 `true`, 정보 메시지를 표시 합니다.
 
@@ -382,20 +329,16 @@ GridView를 구성한 방법에 문제가 몇 가지 있습니다. 경우 Object
 
 설명한 것 처럼 합니다 *처리 BLL 및 DAL 수준의 예외 ASP.NET 페이지에서* 자습서에서 이러한 예외를 감지 하 여 데이터 웹 컨트롤의 사후 수준 이벤트 처리기에 표시 하지 않을 수 있습니다. GridView의에 대 한 이벤트 처리기를 생성 해야 하므로 `RowUpdated` 경우를 확인 하는 이벤트를 `DBConcurrencyException` 예외를 throw 했습니다. 이 이벤트 처리기가 이벤트 처리기 코드 아래에 나와 있는 것 처럼 업데이트 과정에서 발생 하는 모든 예외에 대 한 참조를 전달 합니다.
 
-
 [!code-vb[Main](implementing-optimistic-concurrency-vb/samples/sample13.vb)]
 
 경우는 `DBConcurrencyException` 예외를이 이벤트 처리기 표시를 `UpdateConflictMessage` 컨트롤 레이블 지정 및 예외 처리 된 것을 나타냅니다. 이 코드를 사용 하 여 레코드를 업데이트 하는 중 동시성 위반이 발생 하는 경우 사용자의 변경 내용을 손실 됩니다는 있는 백업이 덮어써 지 다른 사용자가 수정한 내용을 동시에 있으므로. 특히 GridView 편집 전 상태로 돌아갑니다 이며 현재 데이터베이스 데이터에 연결 됩니다. 이렇게 하면 GridView 행 이전에 보이지는 다른 사용자의 변경 내용으로 업데이트 됩니다. 또한는 `UpdateConflictMessage` 레이블 컨트롤 방금 사용자에 게 설명 됩니다. 이 이벤트 순서는 그림 19에 자세히 설명 되어 있습니다.
-
 
 [![사용자가의 동시성 위반이 발생 하면 업데이트 손실 됩니다.](implementing-optimistic-concurrency-vb/_static/image54.png)](implementing-optimistic-concurrency-vb/_static/image53.png)
 
 **그림 19**: 사용자가의 동시성 위반이 발생 하면 업데이트 손실 됩니다 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-vb/_static/image55.png))
 
-
 > [!NOTE]
 > 또는 GridView 미리 편집 상태를 반환 하는 대신 수 상태로 두면 GridView 편집 상태로 설정 하 여 합니다 `KeepInEditMode` 전달-의 속성 `GridViewUpdatedEventArgs` 개체 true입니다. 이 방법을 사용 하는 경우 단, 반드시 데이터를 GridView에 바인딩됩니다 (호출 하 여 해당 `DataBind()` 메서드)는 다른 사용자의 값 편집 인터페이스에 로드 됩니다. 이 자습서를 사용 하 여 다운로드할 수 있는 코드에 다음 두 줄의 코드는 `RowUpdated` 이벤트 처리기가 주석; GridView 코드의 다음이 줄에서 동시성 위반 후 편집 모드로 유지 합니다. 주석 처리를 단순히 제거 합니다.
-
 
 ## <a name="responding-to-concurrency-violations-when-deleting"></a>삭제 하는 경우 동시성 위반에 응답
 
@@ -403,16 +346,13 @@ DB 직접 패턴을 사용 하면 예외가 없습니다 동시성 위반이 발
 
 BLL 메서드에 대 한 반환 값을 통해 ObjectDataSource의 사후 수준 이벤트 처리기에서 검사할 수를 `ReturnValue` 의 속성을 `ObjectDataSourceStatusEventArgs` 개체가 이벤트 처리기에 전달 합니다. 반환 값을 결정 하는 데 관심이 있으므로 합니다 `DeleteProduct` ObjectDataSource의에 대 한 이벤트 처리기를 만들려면 먼저 메서드를 `Deleted` 이벤트입니다. 합니다 `ReturnValue` 형식의 속성은 `object` 수 `null` 경우 예외가 발생 하 고 메서드가 중단 되어 값을 반환할 수 있습니다. 따라서에서는 먼저 확인 해야 하는 `ReturnValue` 속성이 아닙니다 `null` 및 부울 값입니다. 살펴봅니다이 검사를 통과 하는 것으로 가정 합니다 `DeleteConflictMessage` 경우 컨트롤의 레이블을 합니다 `ReturnValue` 는 `false`. 다음 코드를 사용 하 여이 수행할 수 있습니다.
 
-
 [!code-vb[Main](implementing-optimistic-concurrency-vb/samples/sample14.vb)]
 
 동시성 위반을 발생 하는 경우 사용자의 삭제 요청이 취소 됩니다. GridView는 Delete 단추를 클릭 하면 그 페이지 로드는 사용자는 레코드 간의 시간 동안 발생 한 변경 내용을 보여 주는 새로 고쳐집니다. 이러한 위반은 그러한 경우는 `DeleteConflictMessage` 레이블이 표시 됩니다 (그림 20 참조)만 발생 합니다.
 
-
 [![동시성 위반이 발생 하는 경우 사용자가의 삭제 취소 됩니다.](implementing-optimistic-concurrency-vb/_static/image57.png)](implementing-optimistic-concurrency-vb/_static/image56.png)
 
 **그림 20**: 동시성 위반이 발생 하는 경우 사용자가의 삭제 취소 됩니다 ([클릭 하 여 큰 이미지 보기](implementing-optimistic-concurrency-vb/_static/image58.png))
-
 
 ## <a name="summary"></a>요약
 

@@ -8,12 +8,12 @@ ms.date: 02/17/2014
 ms.assetid: 360bc6e1-84c5-4b8e-a84c-ea48ab807aa4
 msc.legacyurl: /web-pages/overview/performance-and-traffic/14-analyzing-traffic
 msc.type: authoredcontent
-ms.openlocfilehash: a99ed5cc8875ef9f39234e3f394b46b5782d0bc1
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 095a5572c755446e0661c052ca9de82d636429fd
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59390222"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134592"
 ---
 # <a name="tracking-visitor-information-analytics-for-an-aspnet-web-pages-razor-site"></a>ASP.NET 웹 페이지 (Razor) 사이트에 대 한 방문자 정보 (분석)를 추적합니다.
 
@@ -35,7 +35,6 @@ ms.locfileid: "59390222"
 > 
 > - ASP.NET Web Pages (Razor) 2
 > - ASP.NET Web Helpers Library (NuGet 패키지)
-
 
 Analytics는 사용자가 사이트를 사용 하는 방식을 이해할 수 있도록 웹 사이트의 트래픽을 측정 하는 기술에 대 한 일반적인 용어입니다. 많은 분석 서비스에서 Google, Yahoo, StatCounter, 및 기타 서비스를 포함 하 여 사용할 수 있습니다.
 
@@ -60,7 +59,6 @@ ASP.NET 웹 페이지에는 몇 가지 분석 도우미가 포함 되어 (`Analy
 
 > [!NOTE]
 > Analytics 계정을 만들면 추적 하려는 사이트의 URL을 등록 합니다. 수 없습니다 (트래픽만으로 하는) 실제 트래픽을 추적, 테스트 하려는 모든 로컬 컴퓨터의 경우 사이트 통계를 기록 하 고 봅니다 수 있도록 합니다. 하지만이 이렇게 페이지 분석 도우미를 추가 하는 방법을 보여 줍니다. 사이트를 게시할 때 라이브 사이트 분석 공급자에 정보를 보낼 됩니다.
-
 
 1. 에 설명 된 대로 웹 사이트에 ASP.NET Web Helpers Library를 추가 [ASP.NET 웹 페이지 사이트에서 설치 도우미](https://go.microsoft.com/fwlink/?LinkId=252372)추가 하지 않은 경우.
 2. Google 웹 로그 분석을 사용 하 여 계정을 만들고 계정 이름을 기록 합니다.

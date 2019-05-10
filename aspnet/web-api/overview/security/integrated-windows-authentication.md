@@ -8,12 +8,12 @@ ms.date: 12/18/2012
 ms.assetid: 71ee4c78-c500-4d1c-b761-b4e161a291b5
 msc.legacyurl: /web-api/overview/security/integrated-windows-authentication
 msc.type: authoredcontent
-ms.openlocfilehash: ce845eb6c914321736d77e989f10344eb7596eba
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e4f31f191f3c0fabff308ea5dadb0f1d9ce7d448
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59416833"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125208"
 ---
 # <a name="integrated-windows-authentication"></a>통합 Windows 인증
 
@@ -27,7 +27,6 @@ ms.locfileid: "59416833"
 
 > [!NOTE]
 > 응용 프로그램이 Azure에서 호스트 되 고에 온-프레미스 Active Directory 도메인에 있는 경우에 Azure Active Directory를 사용 하 여 온-프레미스 AD를 페더레이션 하는 것이 좋습니다. 이런 방식으로 사용자가 온-프레미스 자격 증명을 사용 하 여 기록할 수 있지만 Azure AD에서 인증을 수행 합니다. 자세한 내용은 [Azure 인증](../../../visual-studio/overview/2012/windows-azure-authentication.md)합니다.
-
 
 통합 Windows 인증을 사용 하는 응용 프로그램을 만들려면 MVC 4 프로젝트 마법사에서 "인트라넷 응용 프로그램" 템플릿을 선택 합니다. 이 프로젝트 템플릿은 Web.config 파일에서 다음 설정을 설정합니다.
 

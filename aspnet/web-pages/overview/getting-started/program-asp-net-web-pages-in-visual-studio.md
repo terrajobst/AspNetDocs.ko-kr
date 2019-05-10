@@ -8,12 +8,12 @@ ms.date: 02/13/2014
 ms.assetid: 0acfec5a-48f2-4766-a801-a0f426966f0a
 msc.legacyurl: /web-pages/overview/getting-started/program-asp-net-web-pages-in-visual-studio
 msc.type: authoredcontent
-ms.openlocfilehash: 6d25eb99f87c4c3d2c96e021e79a13c90da4a035
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1a76098779d05912bf7bdf2de5fdce024770752c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59414493"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134604"
 ---
 # <a name="programming-aspnet-web-pages-razor-using-visual-studio"></a>Visual Studio를 사용 하 여 ASP.NET 웹 페이지 (Razor) 프로그래밍
 
@@ -37,7 +37,6 @@ ms.locfileid: "59414493"
 >
 >
 > 이 자습서는 ASP.NET 웹 페이지 2, Visual Studio 2012, Visual Studio 2010 및 WebMatrix 2 에서도 작동합니다.
-
 
 WebMatrix 또는 다른 여러 코드 편집기를 사용 하 여 Razor 구문이 있는 ASP.NET 웹 페이지를 프로그래밍할 수 있습니다. 또한 Microsoft Visual Studio는 다양 한 유형의 응용 프로그램 (뿐 아니라 웹 사이트)를 만들기 위한 강력한 도구 집합을 제공 하는 모든 기능을 갖춘 통합된 개발 환경 (IDE)를 사용할 수 있습니다. ASP.NET Razor 페이지를 사용 하려면 사용할 수 있습니다 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)합니다.
 

@@ -8,12 +8,12 @@ ms.date: 11/17/2011
 ms.assetid: a2d7f33b-8c4a-4b48-9fb1-9139cf9b9878
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-introduction-1-of-12
 msc.type: authoredcontent
-ms.openlocfilehash: ae53e23dda3ac63e26590edab692188bb44e9f65
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 838ee5b3620c50ca5f29ff8cb2c2ac876d3041d8
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59413206"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133304"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-introduction---1-of-12"></a>SQL Server Compact Visual Studio를 사용 하 여를 사용 하 여 ASP.NET 웹 응용 프로그램을 배포 합니다. 소개-12 1
 
@@ -30,7 +30,6 @@ ms.locfileid: "59413206"
 > 이 자습서는 Visual Studio에서 ASP.NET을 사용 하는 방법을 알고 있다고 가정 합니다. 시작 하는 것이 좋습니다는 이렇게 하지 않으면를 [기본 ASP.NET Web Forms 자습서](../tailspin-spyworks/tailspin-spyworks-part-1.md) 또는 [기본 ASP.NET MVC 자습서](../../../../mvc/overview/older-versions/getting-started-with-aspnet-mvc3/cs/intro-to-aspnet-mvc-3.md)합니다.
 > 
 > 에 자습서로 직접 관련 되지 않은 질문이 있을 경우 게시할 수 하는 [ASP.NET 배포 포럼](https://forums.asp.net/26.aspx/1?Configuration+and+Deployment)합니다.
-
 
 ## <a name="overview"></a>개요
 

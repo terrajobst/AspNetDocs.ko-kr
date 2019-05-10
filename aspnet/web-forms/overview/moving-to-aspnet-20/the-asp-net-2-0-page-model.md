@@ -8,19 +8,18 @@ ms.date: 02/20/2005
 ms.assetid: af4575a3-0ae3-4638-ba4d-218fad7a1642
 msc.legacyurl: /web-forms/overview/moving-to-aspnet-20/the-asp-net-2-0-page-model
 msc.type: authoredcontent
-ms.openlocfilehash: 09f8389a04c5600ca9ee8365a9dc5a0d607c0a4d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: bcb71b2b5a484e8756406867e08e8aa699a9024d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59403924"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65127927"
 ---
 # <a name="the-aspnet-20-page-model"></a>ASP.NET 2.0 페이지 모델
 
 by [Microsoft](https://github.com/microsoft)
 
 > Asp.net에서 1.x에서 개발자는 인라인 코드 모델 및 코드 숨김 코드 모델 중에서 선택 해야 했습니다. 코드 숨김 Src 특성 또는 코드 숨김 특성을 사용 하 여 구현할 수는 @Page 지시문입니다. ASP.NET 2.0에서는 개발자에 게 아직 인라인 코드와 코드 숨김 하지만 코드 숨김 모델을 크게 향상 되었습니다.
-
 
 Asp.net에서 1.x에서 개발자는 인라인 코드 모델 및 코드 숨김 코드 모델 중에서 선택 해야 했습니다. 코드 숨김 Src 특성 또는 코드 숨김 특성을 사용 하 여 구현할 수는 @Page 지시문입니다. ASP.NET 2.0에서는 개발자에 게 아직 인라인 코드와 코드 숨김 하지만 코드 숨김 모델을 크게 향상 되었습니다.
 
@@ -47,12 +46,10 @@ ASP.NET 2.0 코드 숨김 파일에는 일반적인 클래스 정의 다음과 �
 > [!NOTE]
 > C# 및 Visual Basic은 현재 partial 클래스를 지원 합니다만 관리 되는 언어입니다. 따라서 J#을 사용 하는 개발자가 ASP.NET 2.0의 코드 숨김 모델을 사용할 수 없습니다.
 
-
 개발자는 자신이 만든 코드를 포함 하는 코드 파일을 이제는 때문에 코드 숨김 모델을 향상 하는 새 모델. 또한 제공 코드 및 콘텐츠 true 분리에 대 한 코드 숨김 파일에 인스턴스 변수 선언이 없으면 있기 때문에 있습니다.
 
 > [!NOTE]
 > ASPX 페이지에 대 한 partial 클래스 이벤트 바인딩이 수행 이기 때문에 Visual Basic 개발자는 코드 숨김에서 이벤트에 바인딩할 Handles 키워드를 사용 하 여 성능이 약간 향상을 얻을 수 있습니다. C#에 해당 하는 키워드가 없습니다.
-
 
 ## <a name="new--page-directive-attributes"></a>새 @ Page 지시문 특성
 
@@ -128,12 +125,9 @@ ViewStateEncryptionMode 열거형의 값을 설정합니다. 사용 가능한 �
 
 합니다 **SomeText** 기본 클래스에서 SomeText 속성의 초기 값을 설정 하는 @ Page 지시문의 특성 *Hello!* 합니다. 아래 비디오에서는 @ Page 지시문을 사용 하 여 기본 클래스의 공용 속성의 초기 값을 설정 하는 연습입니다.
 
-
 ![](the-asp-net-2-0-page-model/_static/image1.png)
 
-
 [전체 화면 비디오 열기](the-asp-net-2-0-page-model/_static/setprop1.wmv)
-
 
 ## <a name="new-public-properties-of-the-page-class"></a>페이지 클래스의 새 공용 속성
 
@@ -365,12 +359,9 @@ Asp.net에서 1.x에서 포스트백 된 동일한 페이지에 게시 해야 �
 
 아래 비디오에서는 연습 페이지 간 포스트백을 합니다.
 
-
 ![](the-asp-net-2-0-page-model/_static/image2.png)
 
-
 [전체 화면 비디오 열기](the-asp-net-2-0-page-model/_static/xpage1.wmv)
-
 
 ## <a name="more-details-on-cross-page-postbacks"></a>페이지 간 포스트백에 대 한 자세한 내용
 
@@ -423,16 +414,12 @@ ASP.NET에서 많은 경합 문제는 외부 호출 (예: 웹 서비스 또는 �
 
 아래 동영상은 비동기 페이지 요청을 연습입니다.
 
-
 ![](the-asp-net-2-0-page-model/_static/image3.png)
-
 
 [전체 화면 비디오 열기](the-asp-net-2-0-page-model/_static/async1.wmv)
 
-
 > [!NOTE]
 > 하 여 완료 될 때까지 비동기 페이지를 브라우저에 렌더링 하지 않습니다. 점에 의심의 여지가 있지만 일부 개발자는 비동기 요청을 비동기 콜백을 비슷한 것으로 간주 합니다. 자신이 실현 하는 것이 반드시 합니다. 비동기 요청에 장점은 첫 번째 작업자 스레드가 줄어듭니다 바인딩된 IO 되어 경합 등 새 서비스 요청을 스레드 풀만 반환 될 수 있습니다.
-
 
 ## <a name="script-callbacks-in-aspnet-20"></a>Script Callbacks in ASP.NET 2.0
 
@@ -459,14 +446,12 @@ ASP.NET 스크립트 콜백에 참여 하 여 페이지 인식에 대 한 순서
 > [!NOTE]
 > \_\_doPostBack은 클라이언트 스크립트 콜백 시나리오의 페이지로 계속 렌더링 됩니다. 그러나 콜백에 대 한 사용 되지 않습니다.
 
-
 인수를 WebForm\_DoCallback 클라이언트 쪽 함수는 일반적으로 페이지에서 호출할 수 있는 GetCallbackEventReference 서버 측 함수를 통해 제공 됩니다\_로드 합니다. GetCallbackEventReference 하는 일반적인 호출은 다음과 같습니다.
 
 [!code-csharp[Main](the-asp-net-2-0-page-model/samples/sample12.cs)]
 
 > [!NOTE]
 > 이 경우 cm는 ClientScriptManager의 인스턴스입니다. 이 모듈의 뒷부분에 나오는 ClientScriptManager 클래스를 설명 합니다.
-
 
 GetCallbackEventReference의 몇 가지 오버 로드 된 버전이 있습니다. 이 경우 인수는 다음과 같습니다.
 
@@ -522,12 +507,9 @@ GetCallbackEventReference 호출 클라이언트 쪽 스크립트 호출 되도�
 
 위의 단계를 마친 후 ASP.NET 2.0에 스크립트 콜백은 수행 준비가 된 것입니다.
 
-
 ![](the-asp-net-2-0-page-model/_static/image4.png)
 
-
 [전체 화면 비디오 열기](the-asp-net-2-0-page-model/_static/callback1.wmv)
-
 
 ASP.NET 스크립트 콜백은 함으로써 XMLHttp 호출을 지 원하는 모든 브라우저에서 지원 됩니다. 에 포함 하는 모든 최신 브라우저를 사용 하 여 지금 합니다. Internet Explorer는 내장 XMLHttp 개체를 사용 하는 다른 최신 브라우저 (예정 된 IE 7 포함)는 XMLHttp ActiveX 개체를 사용 합니다. 프로그래밍 방식으로 사용할 수 있는 브라우저에서 콜백을 지 원하는 경우를 결정 하는 **Request.Browser.SupportCallback** 속성입니다. 이 속성은 반환 **true** 요청 하는 클라이언트에 스크립트 콜백은 지 원하는 경우.
 
@@ -537,7 +519,6 @@ ASP.NET 2.0의 클라이언트 스크립트는 ClientScriptManager 클래스 사
 
 > [!NOTE]
 > 스크립트를 페이지에 성공적으로 등록 된 후 이후 모든 시도 동일한 스크립트를 등록 하려면를 두 번째로 등록 되지 않은 스크립트를 간단히 발생 합니다. 중복 된 스크립트가 추가 됩니다 하 고 예외가 발생 합니다. 불필요 한 계산을 방지 하려면 두 번 이상 등록 하지 않도록 스크립트는 이미 등록 되어 있는지 확인 하는 데 사용할 수 있는 메서드를 가지입니다.
-
 
 ClientScriptManager 메서드의 모든 현재 ASP.NET 개발자에 게 익숙할 것입니다.
 
@@ -580,7 +561,6 @@ RegisterClientScriptInclude 태그 외부 스크립트 파일에 연결 되는 �
 > [!NOTE]
 > 스크립트 블록은 페이지의 맨 아래에 렌더링 됩니다.
 
-
 스크립트를 이미 등록 된 경우 확인 하려면 IsClientScriptIncludeRegistered 메서드를 사용 합니다. 따라서 스크립트를 다시 등록 하는 시도 방지할 수 있습니다.
 
 ## <a name="registerstartupscript"></a>RegisterStartupScript
@@ -590,13 +570,11 @@ RegisterClientScriptBlock 방법으로 동일한 인수 RegisterStartupScript �
 > [!NOTE]
 > RegisterStartupScript를 사용 하 여 함수를 등록 하는 경우 클라이언트 쪽 코드에서 명시적으로 호출 될 때까지 해당 함수가 실행 되지 않습니다.
 
-
 스크립트를 이미 등록 된 경우를 확인 하 고 다시 스크립트를 등록 하려고 시도 방지 하려면 IsStartupScriptRegistered 메서드를 사용 합니다.
 
 ## <a name="other-clientscriptmanager-methods"></a>다른 ClientScriptManager 메서드
 
 다음은 ClientScriptManager 클래스의 다른 유용한 메서드 중 일부입니다.
-
 
 |  <strong>GetCallbackEventReference</strong>   |                                                 이 모듈의 앞부분에서 콜백 스크립트를 참조 하세요.                                                 |
 |-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -606,4 +584,3 @@ RegisterClientScriptBlock 방법으로 동일한 인수 RegisterStartupScript �
 | <strong>RegisterClientScriptResource</strong> |     페이지를 사용 하 여 웹 리소스를 등록합니다. 이러한 리소스가 어셈블리에 포함 하 고 새 WebResource.axd 처리기에서 처리 합니다.      |
 |     <strong>RegisterHiddenField</strong>      |                                                 페이지를 사용 하 여 숨겨진된 양식 필드를 등록합니다.                                                 |
 |  <strong>RegisterOnSubmitStatement</strong>   |                                  HTML 폼이 제출 될 때 실행 되는 클라이언트 쪽 코드를 등록 합니다.                                   |
-

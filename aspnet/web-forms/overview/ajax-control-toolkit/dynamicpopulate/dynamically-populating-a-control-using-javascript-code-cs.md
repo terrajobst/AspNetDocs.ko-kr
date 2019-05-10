@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: cc4c2def-e88c-4456-ae8b-a6ae0ff8cc2d
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/dynamicpopulate/dynamically-populating-a-control-using-javascript-code-cs
 msc.type: authoredcontent
-ms.openlocfilehash: a6b433f187495b8dcd874bcab8ddc607e6de61c9
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 58084a65a2e34534b89daabdd74d8d7b19f6b4ae
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59422527"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65127007"
 ---
 # <a name="dynamically-populating-a-control-using-javascript-code-c"></a>JavaScript 코드를 사용하여 동적으로 컨트롤 채우기(C#)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/d/8/f/d8f2f6f9-1b7c-46ad-9252-e1fc81bdea3e/dynamicpopulate1.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/dynamicpopulate1CS.pdf)
 
 > ASP.NET AJAX Control Toolkit에 DynamicPopulate 제어는 웹 서비스 (또는 페이지 메서드)를 호출 하 고 페이지 새로 고침 없이 페이지에서 대상 컨트롤에 결과 값을 채웁니다. 사용자 지정 클라이언트 쪽 JavaScript 코드를 사용 하 여 채우기를 트리거할 수 이기도 합니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -53,7 +52,6 @@ by [Christian Wenz](https://github.com/wenz)
 [!code-aspx[Main](dynamically-populating-a-control-using-javascript-code-cs/samples/sample5.aspx)]
 
 라디오 단추, JavaScript 식의 컨텍스트 내에서 유의 `this.value` 정확히 동일한 정보를 사용할 수 있는 현재 단추의 값을 나타냅니다는 `getDate()` 메서드 작업을 수행할 수 있습니다.
-
 
 [![지정 된 형식으로 서버에서 날짜를 검색 하는 단추 클릭](dynamically-populating-a-control-using-javascript-code-cs/_static/image2.png)](dynamically-populating-a-control-using-javascript-code-cs/_static/image1.png)
 

@@ -8,12 +8,12 @@ ms.date: 10/16/2008
 ms.assetid: 37a1ebae-8773-408f-8645-d21da7ff9ae1
 msc.legacyurl: /mvc/overview/older-versions-1/views/passing-data-to-view-master-pages-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 7de5a1545ee59e671058f09789ce69d5062d3655
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ebf670fc0d8cf2cfd7df01d07d4119122b61a6a1
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59380979"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130415"
 ---
 # <a name="passing-data-to-view-master-pages-vb"></a>보기 마스터 페이지에 데이터 전달(VB)
 
@@ -23,7 +23,6 @@ by [Microsoft](https://github.com/microsoft)
 
 > 이 자습서의 목표는 보기 마스터 페이지에는 컨트롤러에서 데이터를 전달 하는 방법을 설명 합니다. 보기 마스터 페이지에 데이터를 전달 하기 위한 두 가지 전략을 살펴봅니다. 첫째, 응용 프로그램 유지 관리 하기 어려울 정도로 초래 하는 쉬운 솔루션을 설명 합니다. 다음으로 필요한 약간 더 많은 초기 작업 하지만 훨씬 더 관리 하기 쉬운 응용 프로그램에서 결과 보다 나은 솔루션을 살펴봅니다.
 
-
 ## <a name="passing-data-to-view-master-pages"></a>보기 마스터 페이지에 데이터 전달
 
 이 자습서의 목표는 보기 마스터 페이지에는 컨트롤러에서 데이터를 전달 하는 방법을 설명 합니다. 보기 마스터 페이지에 데이터를 전달 하기 위한 두 가지 전략을 살펴봅니다. 첫째, 응용 프로그램 유지 관리 하기 어려울 정도로 초래 하는 쉬운 솔루션을 설명 합니다. 다음으로 필요한 약간 더 많은 초기 작업 하지만 훨씬 더 관리 하기 쉬운 응용 프로그램에서 결과 보다 나은 솔루션을 살펴봅니다.
@@ -32,11 +31,9 @@ by [Microsoft](https://github.com/microsoft)
 
 영화 데이터베이스 응용 프로그램을 빌드하는 하 고 영화 범주 목록 응용 프로그램에서 모든 페이지에 표시 하려는 imagine (그림 1 참조). 또한 영화 범주 목록 데이터베이스 테이블에 저장 되도록 한다고 가정 합니다. 이 경우 데이터베이스에서 범주를 검색 및 보기 마스터 페이지 내에 영화 범주 목록을 렌더링 하는 것이 없게 합니다.
 
-
 [![보기 마스터 페이지에 동영상 범주 표시](passing-data-to-view-master-pages-vb/_static/image2.png)](passing-data-to-view-master-pages-vb/_static/image1.png)
 
 **그림 01**: 보기 마스터 페이지에 동영상 범주를 표시 ([클릭 하 여 큰 이미지 보기](passing-data-to-view-master-pages-vb/_static/image3.png))
-
 
 문제는 다음과 같습니다. 마스터 페이지에 동영상 범주 목록이 검색 하려면? 마스터 페이지에서 모델 클래스의 메서드를 직접 호출 하기 쉽습니다. 즉, 마스터 페이지에서 데이터베이스 오른쪽에서 데이터를 검색 하기 위한 코드를 포함 하 고 싶을 것입니다. 그러나 데이터베이스에 액세스 하기 위해 MVC 컨트롤러 무시을 위반 하는 MVC 응용 프로그램을 구축 하는 주요 이점 중 하나는 중요 한 부분의 분리 정리 합니다.
 
@@ -58,11 +55,9 @@ MVC 응용 프로그램의 컨트롤러 작업에 의해 – 보기 마스터 �
 
 `Details()` 작업 범주 및 영화 라는 두 개의 키 추가. 범주 키를 다시 한 번 보기 마스터 페이지에서 표시 하는 영화 범주 목록을 나타냅니다. 영화 키 세부 정보 보기 페이지에서 표시 하는 특정 범주에는 영화 목록을 나타냅니다 (그림 2 참조).
 
-
 [![세부 정보 보기](passing-data-to-view-master-pages-vb/_static/image5.png)](passing-data-to-view-master-pages-vb/_static/image4.png)
 
 **그림 02**: 세부 정보 보기 ([클릭 하 여 큰 이미지 보기](passing-data-to-view-master-pages-vb/_static/image6.png))
-
 
 인덱스 보기 목록 2에 포함 됩니다. 단순히 데이터 보기의에서 영화 항목으로 표시 하는 영화 목록을 반복 합니다.
 

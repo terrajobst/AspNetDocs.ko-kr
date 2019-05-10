@@ -9,19 +9,18 @@ ms.assetid: 15253312-a92c-43ba-908e-b5dacd3d08b8
 ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/getting-started/aspnet-identity-using-mysql-storage-with-an-entityframework-mysql-provider
 msc.type: authoredcontent
-ms.openlocfilehash: 6a73efb7d577cc70ca5ebaa69e8fdd03f3735ae4
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e89ed139657c5ce9ddcc56879946c62038919483
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59379666"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65121443"
 ---
 # <a name="aspnet-identity-using-mysql-storage-with-an-entityframework-mysql-provider-c"></a>ASP.NET Identity: EntityFramework MySQL 공급자에 MySQL 스토리지 사용(C#)
 
 하 여 [Maurycy Markowski](https://github.com/maumar)하십시오 [Raquel Soares De Almeida](https://github.com/raquelsa), [Robert McMurray](https://github.com/rmcmurray)
 
 > 이 자습서에서는 기본 데이터 저장소 메커니즘을 교체 하는 방법을 보여 줍니다 [ **ASP.NET Id** ](introduction-to-aspnet-identity.md) (SQL 클라이언트 공급자) EntityFramework MySQL 공급자를 사용 하 여 합니다.
-
 
 다음 항목에서는이 자습서에서 설명 합니다.
 
@@ -90,7 +89,6 @@ MySQL 데이터베이스에 연결 하려면 EntityFramework MySQL 공급자를 
 > [!NOTE]
 > 어셈블리의 시험판 버전 이며 따라서 버그를 포함할 수 있습니다. 프로덕션 환경에서 시험판 버전의 공급자를 사용 하지 해야 합니다.
 
-
 [확장 하려면 다음 이미지를 클릭 합니다.]
 
 [![](aspnet-identity-using-mysql-storage-with-an-entityframework-mysql-provider/_static/image22.png)](aspnet-identity-using-mysql-storage-with-an-entityframework-mysql-provider/_static/image21.png)
@@ -101,7 +99,6 @@ MySQL 데이터베이스에 연결 하려면 EntityFramework MySQL 공급자를 
 
 > [!NOTE]
 > 다음 예제에서는 MySql.Data.dll에 대 한 특정 어셈블리 버전을 포함 합니다. 어셈블리 버전을 변경 하는 경우 올바른 버전을 사용 하 여 적절 한 구성 설정을 수정 해야 합니다.
-
 
 1. Visual Studio 2013에서 프로젝트의 Web.config 파일을 엽니다.
 2. Entity Framework에 대 한 기본 데이터베이스 공급자 및 팩터리를 정의 하는 다음 구성 설정을 찾습니다.
@@ -131,7 +128,6 @@ Entity Framework Code First 사용 하는 **MigrationHistory** 테이블 모델 
 
 > [!NOTE]
 > Azure 또는 온-프레미스에서 호스트 되는 데이터베이스를 사용 하는 경우에 SQL Server 인스턴스에 연결 하는 경우에이 단계가 필요 하지 않습니다.
-
 
 MySQL에 대 한 Entity Framework 이니셜라이저를 사용자 지정을 만들려면 다음 단계를 사용 합니다.
 

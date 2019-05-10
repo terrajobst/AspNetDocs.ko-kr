@@ -8,12 +8,12 @@ ms.date: 06/26/2007
 ms.assetid: d191a204-d7ea-458d-b81c-0b9049ecb55f
 msc.legacyurl: /web-forms/overview/data-access/working-with-batched-data/batch-updating-vb
 msc.type: authoredcontent
-ms.openlocfilehash: d1809c869253ecb454e427a5092015a69009da5c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 94e432815d5c597f7e98a0059e2b1cf9add2953b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59386946"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134649"
 ---
 # <a name="batch-updating-vb"></a>일괄 업데이트(VB)
 
@@ -23,24 +23,20 @@ ms.locfileid: "59386946"
 
 > 단일 작업에서 여러 데이터베이스 레코드를 업데이트 하는 방법에 알아봅니다. 사용자 인터페이스 계층의 각 행이 편집 가능한 GridView를 빌드합니다. 데이터 액세스 계층에서는 모든 업데이트가 성공 하거나 모든 업데이트 내용이 롤백됩니다 않도록 트랜잭션 내에서 여러 업데이트 작업 래핑합니다.
 
-
 ## <a name="introduction"></a>소개
 
 에 [이전 자습서](wrapping-database-modifications-within-a-transaction-vb.md) 데이터베이스 트랜잭션에 대 한 지원을 추가 하려면 데이터 액세스 계층을 확장 하는 방법에 살펴보았습니다. 데이터베이스 트랜잭션은 보장 일련의 데이터 수정 문 모든 수정 실패 하거나 성공할 모두 하나의 원자성 작업으로 간주 됩니다. 이 하위 수준 DAL 기능으로 사용 하 여 일괄 처리 데이터 수정 인터페이스 만들기에 대해 준비가 다시 했습니다.
 
 이 자습서의 각 행이 편집 가능한 (그림 1 참조) GridView를 빌드 해 보겠습니다. 각 행의 편집 인터페이스에 여기의 편집 열 필요가 없습니다를 렌더링 하므로 업데이트 및 취소 단추가 있습니다. 대신는 두 개의 제품 업데이트 페이지를 클릭 하면 GridView 행을 열거 하 고 데이터베이스를 업데이트 합니다.
 
-
 [![GridView의 각 행은 편집 가능](batch-updating-vb/_static/image1.gif)](batch-updating-vb/_static/image1.png)
 
 **그림 1**: GridView의 각 행은 편집 가능 ([클릭 하 여 큰 이미지 보기](batch-updating-vb/_static/image2.png))
-
 
 Let s 시작!
 
 > [!NOTE]
 > 에 [일괄 처리 업데이트 수행](../editing-and-deleting-data-through-the-datalist/performing-batch-updates-vb.md) DataList 컨트롤을 사용 하 여 자습서를 편집 하는 일괄 처리에서 만든 인터페이스입니다. 이 자습서에서 사용 하는 하나는 이전 GridView 다르며 일괄 업데이트는 트랜잭션 범위 내에서 수행 됩니다. 이 자습서를 완료 한 후 바랍니다 이전 자습서로 돌아와서 이전 자습서에서 추가한 데이터베이스 트랜잭션 관련 기능을 사용 하도록 업데이트 합니다.
-
 
 ## <a name="examining-the-steps-for-making-all-gridview-rows-editable"></a>모든 GridView 행을 편집할 수 있도록 하는 단계를 검사 합니다.
 
@@ -56,27 +52,21 @@ Let s 시작!
 
 GridView를 만드는 지 걱정 되기 전에 편집할 수 있는 다음 행, s 단순히 제품 정보를 표시 하 여 시작 합니다. 열기는 `BatchUpdate.aspx` 페이지에 `BatchData` 폴더 및 디자이너 도구 상자에서 끌어서 GridView입니다. GridView가 설정 `ID` 하 `ProductsGrid` 하 고 스마트 태그, 라는 새로운 ObjectDataSource는 바인딩할 선택 `ProductsDataSource`합니다. 해당 데이터를 검색할 ObjectDataSource를 구성 합니다 `ProductsBLL` s 클래스 `GetProducts` 메서드.
 
-
 [![ProductsBLL 클래스를 사용 하는 ObjectDataSource 구성](batch-updating-vb/_static/image2.gif)](batch-updating-vb/_static/image3.png)
 
 **그림 2**: ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLL` 클래스 ([큰 이미지를 보려면 클릭](batch-updating-vb/_static/image4.png))
-
 
 [![GetProducts 메서드를 사용 하 여 제품 데이터 검색](batch-updating-vb/_static/image3.gif)](batch-updating-vb/_static/image5.png)
 
 **그림 3**: 사용 하 여 제품 데이터를 검색 합니다 `GetProducts` 메서드 ([큰 이미지를 보려면 클릭](batch-updating-vb/_static/image6.png))
 
-
 GridView와 같은 ObjectDataSource가의 수정 기능을 행 단위로에서 작동 하도록 설계 됩니다. 레코드 집합을 업데이트 하기 위해 데이터를 일괄 처리 및 BLL에 전달 하는 ASP.NET 페이지의 코드 숨김 클래스에 약간의 코드를 작성 해야 합니다. 따라서 탭을 설정할 드롭 다운 목록을 ObjectDataSource에서 업데이트, 삽입 및 삭제를 (없음). 마법사를 완료 하려면 마침을 클릭 합니다.
-
 
 [![UPDATE, INSERT 드롭 다운 목록을 설정 하 고 탭 삭제 (없음)](batch-updating-vb/_static/image4.gif)](batch-updating-vb/_static/image7.png)
 
 **그림 4**: 설정 드롭다운 목록에서 업데이트, 삽입 및 삭제 하는 탭 (없음) ([클릭 하 여 큰 이미지 보기](batch-updating-vb/_static/image8.png))
 
-
 데이터 소스 구성 마법사를 완료 한 후 ObjectDataSource가 선언적 태그는 다음과 같이 표시 됩니다.
-
 
 [!code-aspx[Main](batch-updating-vb/samples/sample1.aspx)]
 
@@ -87,14 +77,11 @@ Visual Studio BoundFields 만들고 GridView에서 제품 데이터 필드에 �
 > [!NOTE]
 > 만들기 및 TemplateFields에서 사용자 지정 살펴보았습니다 합니다 [데이터 수정 인터페이스 사용자 지정](../editing-inserting-and-deleting-data/customizing-the-data-modification-interface-vb.md) 자습서입니다. TemplateFields CheckBoxField 고 BoundFields 변환 단계를 안내 및 인터페이스 정의 편집 해당 해당 `ItemTemplate` s, 있지만 막히면 또는 필요한 안 리프레셔가 언제 든 지이 이전 자습서를 다시 참조 하는 경우.
 
-
 GridView가 스마트 태그에서 필드 대화 상자를 열려면 열 편집 링크를 클릭 합니다. 그런 다음 각 필드를 선택 하 고 TemplateField 링크로 변환이이 필드를 클릭 합니다.
-
 
 ![기존 BoundFields 및 CheckBoxField TemplateFields 변환](batch-updating-vb/_static/image5.gif)
 
 **그림 5**: 기존 BoundFields 및 CheckBoxField TemplateFields 변환
-
 
 인터페이스 편집 이동할 준비가에서는 이제는 각 필드를 TemplateField, 합니다 `EditItemTemplate` s를 `ItemTemplate` s.
 
@@ -106,21 +93,17 @@ GridView가 스마트 태그에서 필드 대화 상자를 열려면 열 편집 
 
 RequiredFieldValidator를 다음으로, 추가 `ItemTemplate` 사용자는 각 제품의 이름에 대 한 값을 확인 합니다. 설정 합니다 `ControlToValidate` productname, 속성을 `ErrorMessage` 속성에는 제품의 이름을 제공 해야 합니다. 하며 `Text` 속성을 \*입니다. 이러한 추가 마치면는 `ItemTemplate`, 화면 그림 6 비슷하게 표시 됩니다.
 
-
 [![텍스트 상자와는 RequiredFieldValidator ProductName TemplateField 이제 포함](batch-updating-vb/_static/image6.gif)](batch-updating-vb/_static/image9.png)
 
 **그림 6**: 합니다 `ProductName` TemplateField 이제 텍스트 상자 및 RequiredFieldValidator ([큰 이미지를 보려면 클릭](batch-updating-vb/_static/image10.png))
-
 
 에 대 한는 `UnitPrice` 인터페이스를 편집에서 텍스트를 복사 하 여 시작 합니다 `EditItemTemplate` 에 `ItemTemplate`. 다음으로, 텍스트 상자 및 집합 앞에 $를 배치할 해당 `ID` UnitPrice 속성 및 해당 `Columns` 8 속성입니다.
 
 CompareValidator 추가 합니다 `UnitPrice` s `ItemTemplate` 되도록 사용자가 입력 한 값 보다 크거나 같은 $0.00 유효한 통화 값입니다. 유효성 검사기가 설정 `ControlToValidate` 속성을 UnitPrice, 해당 `ErrorMessage` 속성에 유효한 통화 값을 입력 해야 합니다. 모든 통화 기호.를 생략 하세요 해당 `Text` 속성을 \*, 해당 `Type` 속성을 `Currency`, 해당 `Operator` 속성을 `GreaterThanEqual`, 및 해당 `ValueToCompare` 속성을 0입니다.
 
-
 [![가격 입력 되도록 CompareValidator는 음수가 아닌 통화 값 추가](batch-updating-vb/_static/image7.gif)](batch-updating-vb/_static/image11.png)
 
 **그림 7**: 추가 가격 입력 되도록 CompareValidator는 음수가 아닌 통화 값 ([클릭 하 여 큰 이미지 보기](batch-updating-vb/_static/image12.png))
-
 
 에 대 한 합니다 `Discontinued` TemplateField에 이미 정의 된 확인란을 사용할 수 있습니다는 `ItemTemplate`합니다. 설정 하기만 하면 됩니다 해당 `ID` Discontinued 하 고 `Enabled` 속성을 `True`입니다.
 
@@ -131,51 +114,39 @@ CompareValidator 추가 합니다 `UnitPrice` s `ItemTemplate` 되도록 사용�
 > [!NOTE]
 > 합니다 [데이터 수정 인터페이스 사용자 지정](../editing-inserting-and-deleting-data/customizing-the-data-modification-interface-vb.md) 자습서 더 철저 하 고 전체 토론 TextBox와 달리 DropDownList를 포함 하도록 템플릿을 사용자 지정에 포함 되어 있습니다. 여기에 나오는 단계를 완료 하는 동안 상품 표시 됩니다. 에 대 한 더 상세한 만들기 및 구성 범주 DropDownList를 다시 참조를 [데이터 수정 인터페이스 사용자 지정](../editing-inserting-and-deleting-data/customizing-the-data-modification-interface-vb.md) 자습서입니다.
 
-
 DropDownList를 도구 상자에서 끌어 합니다 `CategoryName` TemplateField s `ItemTemplate`설정, 해당 `ID` 에 `Categories`입니다. 이 시점에서 우리는 일반적으로 Dropdownlist의 데이터 원본을 정의할 해당 스마트 태그를 통해 새 ObjectDataSource 만들기. 그러나 내 ObjectDataSource 추가이 `ItemTemplate`, 각 GridView 행에 대해 만든 ObjectDataSource 인스턴스 결과 합니다. 대신 만든을 GridView의 TemplateFields 외부 ObjectDataSource 사용 수 있습니다. 아래에 디자이너 도구 상자에서 ObjectDataSource를 끌어서 템플릿 편집을 종료 합니다 `ProductsDataSource` ObjectDataSource 합니다. 이름을 새 ObjectDataSource `CategoriesDataSource` 사용 하도록 구성 하는 `CategoriesBLL` s 클래스 `GetCategories` 메서드.
-
 
 [![CategoriesBLL 클래스를 사용 하는 ObjectDataSource 구성](batch-updating-vb/_static/image8.gif)](batch-updating-vb/_static/image13.png)
 
 **그림 8**: ObjectDataSource를 사용 하 여 구성 합니다 `CategoriesBLL` 클래스 ([큰 이미지를 보려면 클릭](batch-updating-vb/_static/image14.png))
 
-
 [![GetCategories 메서드를 사용 하 여 범주 데이터를 검색 합니다.](batch-updating-vb/_static/image9.gif)](batch-updating-vb/_static/image15.png)
 
 **그림 9**: 사용 하 여 범주 데이터를 검색 합니다 `GetCategories` 메서드 ([큰 이미지를 보려면 클릭](batch-updating-vb/_static/image16.png))
 
-
 이 ObjectDataSource를 사용 하 여 데이터를 검색 하는 단순히, 드롭 다운 목록에서 UPDATE 및 DELETE 탭 (없음)을 설정 합니다. 마법사를 완료 하려면 마침을 클릭 합니다.
-
 
 [![집합에 UPDATE 및 DELETE 탭 (없음)을 드롭다운 목록](batch-updating-vb/_static/image10.gif)](batch-updating-vb/_static/image17.png)
 
 **그림 10**: (없음)로 업데이트 및 삭제 하는 탭의 드롭다운 목록을 설정 ([클릭 하 여 큰 이미지 보기](batch-updating-vb/_static/image18.png))
 
-
 마법사를 완료 한 후의 `CategoriesDataSource` s 선언적 태그는 다음과 같습니다.
-
 
 [!code-aspx[Main](batch-updating-vb/samples/sample2.aspx)]
 
 사용 하 여 합니다 `CategoriesDataSource` 를 만들고 구성한 돌아갑니다 합니다 `CategoryName` TemplateField의 `ItemTemplate` DropDownList s 스마트 태그에서 데이터 원본 선택 링크를 클릭 합니다. 데이터 소스 구성 마법사에서 선택 합니다 `CategoriesDataSource` 첫 번째 드롭다운 목록에서 옵션을 선택할 `CategoryName` 표시에 사용 하 고 `CategoryID` 값으로.
 
-
 [![DropDownList를 CategoriesDataSource에 바인딩](batch-updating-vb/_static/image11.gif)](batch-updating-vb/_static/image19.png)
 
 **그림 11**: DropDownList를 바인딩하는 `CategoriesDataSource` ([큰 이미지를 보려면 클릭](batch-updating-vb/_static/image20.png))
 
-
 이 시점에서 `Categories` DropDownList 모든 범주가 나열 되지만 선택 되지 않습니다 아직 자동으로 GridView 행에 바인딩된 제품에 대 한 적절 한 범주입니다. 로 설정 해야이 작업을 수행 하는 `Categories` DropDownList s `SelectedValue` s 제품 `CategoryID` 값입니다. DropDownList s 스마트 태그에서 데이터 바인딩 편집 링크를 클릭 하 고 연결 합니다 `SelectedValue` 속성과 `CategoryID` 그림 12에 나와 있는 것 처럼 데이터 필드입니다.
-
 
 ![제품의 CategoryID DropDownList의 SelectedValue 속성에 바인딩](batch-updating-vb/_static/image12.gif)
 
 **그림 12**: 제품 s 바인딩할 `CategoryID` DropDownList의 값 `SelectedValue` 속성
 
-
 한 마지막 문제 유지: 제품 만들어지고 t를 사용 하는 경우는 `CategoryID` 값에 지정 된 다음 데이터 바인딩 문을 `SelectedValue` 예외가 발생 합니다. DropDownList 범주에 대 한 항목만 포함 하 고 해당 제품에 대 한 옵션을 제공 하지 않습니다 있기 때문에 `NULL` 데이터베이스에 대 한 값 `CategoryID`합니다. 이 문제를 해결 하려면 DropDownList s를 설정 `AppendDataBoundItems` 속성을 `True` 드롭다운 목록에서 새 항목을 추가 하 고 생략는 `Value` 선언적 구문에서 속성입니다. 즉, 있는지는 `Categories` DropDownList s 선언적 구문은 다음과 같습니다:
-
 
 [!code-aspx[Main](batch-updating-vb/samples/sample3.aspx)]
 
@@ -184,32 +155,25 @@ DropDownList를 도구 상자에서 끌어 합니다 `CategoryName` TemplateFiel
 > [!NOTE]
 > 잠재적인 성능 및 확장성 문제를 여기서 유의 해야 하는 경우 각 행에는 DropDownList를 `CategoriesDataSource` 해당 데이터 원본으로는 `CategoriesBLL` s 클래스 `GetCategories` 메서드가 호출 될 *n* 페이지 마다 한 번 방문 위치 *n* 입니다 GridView의 행 수입니다. 이러한 *n* 호출 `GetCategories` 될 *n* 데이터베이스에 쿼리 합니다. 이 미치는 데이터베이스 요청 캐시 또는 종속성 또는 매우 짧은 시간 기반 만료 캐싱을 SQL을 사용 하 여 캐싱 계층을 통해 반환 된 범주를 캐시 하 여 떨어질 수 없습니다. 캐싱 옵션에 당 요청에 대 한 자세한 내용은 참조 [ `HttpContext.Items` 당 요청 캐시 저장소](http://aspnet.4guysfromrolla.com/articles/060904-1.aspx)합니다.
 
-
 ## <a name="step-4-completing-the-editing-interface"></a>4단계: 편집 인터페이스를 완료합니다.
 
 에서는 ve 진행 상황을 보려면 일시 중지 하지 않고 GridView가 템플릿에 변경 횟수를 수행 합니다. 시간을 내어 브라우저를 통해 진행 상황을 확인 합니다. 사용 하 여 각 행은 렌더링 그림 13에서 볼 수 있듯이 해당 `ItemTemplate`, 인터페이스 편집 셀 s를 포함 하는 합니다.
-
 
 [![각 GridView 행은 편집 가능](batch-updating-vb/_static/image13.gif)](batch-updating-vb/_static/image21.png)
 
 **그림 13**: 각 GridView 행은 편집 가능 ([클릭 하 여 큰 이미지 보기](batch-updating-vb/_static/image22.png))
 
-
 관리 하는 것은 시점에서 몇 가지 사소한 서식 문제가 있습니다. 이때 먼저는 `UnitPrice` 값 네 개의 소수 자릿수가 포함 되어 있습니다. 이 문제를 해결 하려면 돌아갑니다 합니다 `UnitPrice` TemplateField의 `ItemTemplate` TextBox가 스마트 태그에서 데이터 바인딩 편집 링크를 클릭 합니다. 다음으로, 지정 된 `Text` 숫자로 속성의 서식을 지정 합니다.
-
 
 ![숫자로 Text 속성 형식](batch-updating-vb/_static/image14.gif)
 
 **그림 14**: 형식으로 `Text` 숫자로 속성
 
-
 둘째, let s center에서 확인란을 `Discontinued` 열 대신 왼쪽 맞춤 하 합니다. GridView가 스마트 태그에서 열 편집을 클릭 하 고 선택 된 `Discontinued` TemplateField 왼쪽된 아래 모퉁이의 필드 목록에서. 드릴 다운 `ItemStyle` 설정의 `HorizontalAlign` 그림 15 에서처럼 센터로 속성입니다.
-
 
 ![Center는 지원 되지 않는 확인란](batch-updating-vb/_static/image15.gif)
 
 **그림 15**: Center는 `Discontinued` 확인란
-
 
 그런 다음 페이지로 ValidationSummary 컨트롤을 추가 하 고 설정 해당 `ShowMessageBox` 속성을 `True` 및 해당 `ShowSummary` 속성을 `False`입니다. 또한 단추 웹 컨트롤을 클릭할 때를 추가, 변경 하는 사용자가 업데이트 됩니다. 특히, 두 개의 단추 웹 컨트롤을 GridView 위와 및 한 수준 아래에 두 컨트롤 모두 설정 추가 `Text` 속성 업데이트 제품을 합니다.
 
@@ -217,23 +181,19 @@ GridView가 이후 해당 TemplateFields에 정의 된 인터페이스를 편집
 
 위의 만드는 서식 변경 사항을 언급 했 듯이, 후 단추 컨트롤을 추가 하 고 불필요 한 제거 `EditItemTemplate` s, 페이지 s 선언적 구문에는 다음과 같습니다.
 
-
 [!code-aspx[Main](batch-updating-vb/samples/sample4.aspx)]
 
 그림 16에서는 단추 웹 컨트롤을 추가한 후 브라우저를 통해 볼 때이 페이지 및 서식 지정 변경 내용을 보여 줍니다.
 
-
 [![이제 페이지에는 두 업데이트 제품 단추가 포함 되어 있습니다.](batch-updating-vb/_static/image16.gif)](batch-updating-vb/_static/image23.png)
 
 **그림 16**: 페이지 이제 포함 두 업데이트 제품 단추 ([클릭 하 여 큰 이미지 보기](batch-updating-vb/_static/image24.png))
-
 
 ## <a name="step-5-updating-the-products"></a>5단계: 제품 업데이트
 
 사용자가이 페이지를 방문 하는 경우 이러한 수정 내용이 두 개의 업데이트 제품 단추 중 하나를 클릭 합니다. 어떤 이유로 든 각 행에 대 한 사용자가 입력 한 값을 저장 하려고 하는 시점을 `ProductsDataTable` 인스턴스 및 다음 전달한 됩니다 하는 BLL 메서드에 전달할 `ProductsDataTable` DAL의 인스턴스 `UpdateWithTransaction` 메서드. 합니다 `UpdateWithTransaction` 에서 만든 메서드를 [이전 자습서](wrapping-database-modifications-within-a-transaction-vb.md), 되도록 변경 내용의 일괄 처리는 원자성 작업으로 업데이트 됩니다.
 
 라는 메서드를 만듭니다 `BatchUpdate` 에서 `BatchUpdate.aspx.vb` 다음 코드를 추가 합니다.
-
 
 [!code-vb[Main](batch-updating-vb/samples/sample5.vb)]
 
@@ -246,11 +206,9 @@ GridView가 이후 해당 TemplateFields에 정의 된 인터페이스를 편집
 > [!NOTE]
 > Visual Studio GridView s에 기본 키 값의 원본 데이터를 자동으로 할당 스마트 태그를 통해 GridView에 데이터 원본을 바인딩할 경우 `DataKeyNames` 속성입니다. 바인딩하지 않았습니다 ObjectDataSource GridView가 스마트 태그를 통해 GridView에 1 단계에에서 설명 된 대로 경우 GridView가 수동으로 설정 해야 합니다 `DataKeyNames` 속성에 액세스 하기 위해 ProductID는 `ProductID` 통해 각 행에 대 한 값을 `DataKeys` 컬렉션입니다.
 
-
 사용 된 코드 `BatchUpdate` BLL에서 사용 되는 것과 비슷합니다 `UpdateProduct` 메서드, 주요 차이점에는 합니다 `UpdateProduct` 메서드 하나만 `ProductRow` 아키텍처에서 인스턴스를 검색 합니다. 속성을 할당 하는 코드를 `ProductRow` 간에 동일 합니다 `UpdateProducts` 메서드 및 코드를 `For Each` 루프 `BatchUpdate`전체 패턴에는 합니다.
 
 이 자습서를 완료 하려면 할 필요는 `BatchUpdate` 메서드를 호출 하는 경우 업데이트 제품 단추 중 하나를 클릭 합니다. 에 대 한 이벤트 처리기 만들기는 `Click` 이러한 두 이벤트 단추 컨트롤 및 이벤트 처리기에 다음 코드를 추가 합니다.
-
 
 [!code-vb[Main](batch-updating-vb/samples/sample6.vb)]
 
@@ -264,7 +222,6 @@ GridView가 이후 해당 TemplateFields에 정의 된 인터페이스를 편집
 
 이러한 유형의 경우 다음을 사용 하는 것이 좋습니다 `BatchUpdateAlternate` 메서드 대신:
 
-
 [!code-vb[Main](batch-updating-vb/samples/sample7.vb)]
 
 `BatchMethodAlternate` 비어 있는 새를 만들어 시작 `ProductsDataTable` 라는 `products`합니다. 그런 다음 GridView의 단계별로 `Rows` 컬렉션 및 BLL s를 사용 하 여 특정 제품 정보를 가져옵니다 하는 각 행에 대 한 `GetProductByProductID(productID)` 메서드. 검색 `ProductsRow` 인스턴스에 해당 속성을 동일한 방식으로 업데이트 `BatchUpdate`, 뒤에 가져온 행을 업데이트 합니다 `products` `ProductsDataTable` DataTable s를 통해 [ `ImportRow(DataRow)` 메서드](https://msdn.microsoft.com/library/system.data.datatable.importrow(VS.80).aspx).
@@ -272,7 +229,6 @@ GridView가 이후 해당 TemplateFields에 정의 된 인터페이스를 편집
 후 합니다 `For Each` 루프가 완료 되 면 `products` 하나가 포함 되어 있습니다 `ProductsRow` GridView의 각 행에 대 한 인스턴스. 이후 각를 `ProductsRow` 에 추가 된 인스턴스를 `products` (대신 업데이트) 맹목적으로 전달 되도록 하는 경우를 `UpdateWithTransaction` 메서드를 `ProductsTableAdapter` 레코드의 각 데이터베이스에 삽입 하려고 합니다. 대신, 각이 행의 수정 되었다는 사실을 (추가 됨)을 지정 해야 합니다.
 
 명명 된 BLL에 새 메서드를 추가 하 여 수행할 수 있습니다이 `UpdateProductsWithTransaction`합니다. `UpdateProductsWithTransaction`아래와 같이 설정 합니다 `RowState` 각를 `ProductsRow` 인스턴스를 `ProductsDataTable` 에 `Modified` 다음 전달를 `ProductsDataTable` DAL s에 `UpdateWithTransaction` 메서드.
-
 
 [!code-vb[Main](batch-updating-vb/samples/sample8.vb)]
 

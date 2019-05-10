@@ -8,12 +8,12 @@ ms.date: 05/21/2012
 ms.assetid: 2b381a41-2cb3-40c0-8545-1d393e22877f
 msc.legacyurl: /web-pages/overview/security/using-a-catpcha-to-prevent-automated-programs-bots-from-using-your-aspnet-web-site
 msc.type: authoredcontent
-ms.openlocfilehash: e7baafda8c5b6de4ab0de46948f969a6f0cc21ad
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2647a3155893a3dfb3214795a5f9cf1e8931fa91
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59390911"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128453"
 ---
 # <a name="using-a-captcha-to-prevent-bots-from-using-your-aspnet-web-razor-site"></a>CAPTCHA를 사용 하 여 Asp.net Razor를 사용 하 여 봇을 방지 하기 위해) 사이트
 
@@ -31,7 +31,6 @@ by [Microsoft](https://github.com/microsoft)
 > 
 > > [!NOTE]
 > > 이 문서의 정보는 ASP.NET 웹 페이지 1.0 및 웹 페이지 2에 적용 됩니다.
-
 
 ## <a name="about-captchas"></a>CAPTCHAs에 대 한
 
@@ -67,10 +66,8 @@ ASP.NET 페이지에서 사용할 수 있습니다 합니다 `ReCaptcha` ReCaptc
 > 
 > [!code-xml[Main](using-a-catpcha-to-prevent-automated-programs-bots-from-using-your-aspnet-web-site/samples/sample3.xml)]
 
-
 <a id="Additional_Resources"></a>
 ## <a name="additional-resources"></a>추가 리소스
-
 
 - [ASP.NET 웹 페이지 사이트에 대 한 사이트 전체 동작을 사용자 지정](https://go.microsoft.com/fwlink/?LinkId=202906)
 - [ReCaptcha site](https://www.google.com/recaptcha)
