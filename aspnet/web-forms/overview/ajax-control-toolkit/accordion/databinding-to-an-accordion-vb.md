@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: b19f0875-7d3e-4ecf-baa1-a0c693c765b3
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/accordion/databinding-to-an-accordion-vb
 msc.type: authoredcontent
-ms.openlocfilehash: dde3d60f82bb5f32fdd8b6b5cf8a0e1accebd1a7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: a5032fa1438594796ea774776f13f4909f24f2fe
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59408929"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108402"
 ---
 # <a name="databinding-to-an-accordion-vb"></a>Accordion에 데이터 바인딩(VB)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/5/6/d/56d50cef-2011-4c8f-9891-7edc6dc57df9/Accordion1.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/accordion1VB.pdf)
 
 > AJAX Control Toolkit의 Accordion 컨트롤 여러 창을 제공 하 고 둘 중 한 번에 표시할 수 있습니다. 패널은 일반적으로 페이지 자체 내에서 선언 하지만 데이터 소스에 바인딩하는 더 많은 유연성을 제공 합니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -57,7 +56,6 @@ Accordion 컨트롤 내에서 헤더를 포함 하는 컨트롤의 다양 한 �
 이 샘플 되려면 Accordion 컨트롤에서 참조 되는 두 개의 CSS 클래스를 정의 해야 (속성만에서 `HeaderCssClass` 고 `ContentCssClass`). 다음 태그 안에 `<head>` 페이지의 섹션:
 
 [!code-css[Main](databinding-to-an-accordion-vb/samples/sample6.css)]
-
 
 [![데이터 원본에서 직접 제공 되는 accordion에 데이터는](databinding-to-an-accordion-vb/_static/image2.png)](databinding-to-an-accordion-vb/_static/image1.png)
 

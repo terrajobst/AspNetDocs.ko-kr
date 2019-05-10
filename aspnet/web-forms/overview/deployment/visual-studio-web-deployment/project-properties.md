@@ -8,12 +8,12 @@ ms.date: 02/15/2013
 ms.assetid: ec1cec4c-a75f-47af-a2ba-b1e2f971d24b
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/project-properties
 msc.type: authoredcontent
-ms.openlocfilehash: 464146bc8af5cf978902a3e634398ed3f8d15404
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e17155317e484c8efdf87a1598fb2795b1619587
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59400050"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65109630"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-project-properties"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 프로젝트 속성
 
@@ -22,7 +22,6 @@ ms.locfileid: "59400050"
 [시작 프로젝트 다운로드](http://go.microsoft.com/fwlink/p/?LinkId=282627)
 
 > 이 자습서 시리즈를 배포 하는 방법을 보여 줍니다. ASP.NET (게시) Visual Studio 2012 또는 Visual Studio 2010을 사용 하 여 웹 응용 프로그램을 Azure App Service Web Apps 또는 타사 호스팅 공급자입니다. 시리즈에 대 한 자세한 내용은 [시리즈의 첫 번째 자습서](introduction.md)합니다.
-
 
 ## <a name="overview"></a>개요
 

@@ -8,12 +8,12 @@ ms.date: 1/04/2019
 ms.assetid: 64a491a8-0ed6-4c2f-9c1c-412962eb6006
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/display_data_items_and_details
 msc.type: authoredcontent
-ms.openlocfilehash: 54896da5565c9383f13fc352da26bbdc3cb63a76
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 130c9ffd29df612dac5bb954830a2eb9b738aaf0
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59405367"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65109616"
 ---
 # <a name="display-data-items-and-details"></a>데이터 항목 및 세부 정보
 
@@ -97,7 +97,6 @@ ms.locfileid: "59405367"
 
 유효한 범주를이 페이지에 쿼리 문자열로 전달 되 면 쿼리 결과가 일치 하는 데이터베이스에서 해당 제품에만 국한 된 `categoryId` 값입니다. 예를 들어 경우는 *ProductsList.aspx* 이것이 페이지 URL:
 
-
 [!code-console[Main](display_data_items_and_details/samples/sample4.cmd)]
 
 페이지에는 제품 데이터만 표시 됩니다. 여기서는 `categoryId` equals `1`합니다.
@@ -164,7 +163,6 @@ ms.locfileid: "59405367"
     ![데이터를 표시할 항목 및 세부 정보-제품](display_data_items_and_details/_static/image4.png)
     
 4. 브라우저를 닫습니다.
-
 
 ## <a name="additional-resources"></a>추가 자료
 

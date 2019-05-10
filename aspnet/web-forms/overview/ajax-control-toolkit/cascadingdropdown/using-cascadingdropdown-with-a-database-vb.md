@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 97a3d33c-c856-43f3-8acb-f1ccbc48221a
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/cascadingdropdown/using-cascadingdropdown-with-a-database-vb
 msc.type: authoredcontent
-ms.openlocfilehash: d0b6f8651e327cf9ad2a3051edd323efba4f64fc
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 9e3f842faea2ec04225d779c1b8d71c62d4c1f35
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59418731"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108175"
 ---
 # <a name="using-cascadingdropdown-with-a-database-vb"></a>데이터베이스에 CascadingDropDown 사용(VB)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/9/0/7/907760b1-2c60-4f81-aeb6-ca416a573b0d/cascadingdropdown1.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/cascadingdropdown1VB.pdf)
 
 > AJAX Control Toolkit에서 CascadingDropDown 컨트롤 하나 DropDownList 로드 변경에 관련 된 값이 다른 DropDownList에 있도록 DropDownList 컨트롤을 확장 합니다. 이 작업을 위해 특수 한 웹 서비스를 만들어야 합니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -85,11 +84,9 @@ CascadingDropDown을 호출한 웹 메서드의 시그니처는 다음과 같습
 
 ASP.NET 페이지를 로드 하 고 잠시 후 공급 업체 목록 25 개 항목으로 채워집니다. 하나의 항목을 선택 하 고 두 번째 드롭다운 목록을 데이터로 채워지는 방법을 확인 합니다.
 
-
 [![첫 번째 목록은 자동으로 채워집니다.](using-cascadingdropdown-with-a-database-vb/_static/image2.png)](using-cascadingdropdown-with-a-database-vb/_static/image1.png)
 
 첫 번째 목록은 자동으로 채워집니다 ([클릭 하 여 큰 이미지 보기](using-cascadingdropdown-with-a-database-vb/_static/image3.png))
-
 
 [![두 번째 목록의 첫 번째 목록에서 선택 항목에 따라 채워집니다.](using-cascadingdropdown-with-a-database-vb/_static/image5.png)](using-cascadingdropdown-with-a-database-vb/_static/image4.png)
 

@@ -8,17 +8,16 @@ ms.date: 11/14/2011
 ms.assetid: db4eca5d-b625-4e67-8e5b-a844639d4354
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/modalpopup
 msc.type: chapter
-ms.openlocfilehash: c797e6556282ef6570d50d8a3e77587ac30dbbea
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 708d5646fed3a44ce9c0e82f115e24cc8b5c5978
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59415234"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132640"
 ---
 # <a name="modalpopup"></a>ModalPopup
 
 > 이 자습서에는 모달 대화 상자에 해당 하는 만들 수 있는 ModalPopup 컨트롤을 사용 하는 방법을 보여 줍니다.
-
 
 - [서버 코드에서 모달 팝업 창 시작(C#)](launching-a-modal-popup-window-from-server-code-cs.md)
 - [반복기 컨트롤에 ModalPopup사용(C#)](using-modalpopup-with-a-repeater-control-cs.md)

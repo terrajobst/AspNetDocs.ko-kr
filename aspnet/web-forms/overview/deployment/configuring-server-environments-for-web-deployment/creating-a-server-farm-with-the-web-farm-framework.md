@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 656dd06d-806c-467c-863d-9fc45e5ba3ab
 msc.legacyurl: /web-forms/overview/deployment/configuring-server-environments-for-web-deployment/creating-a-server-farm-with-the-web-farm-framework
 msc.type: authoredcontent
-ms.openlocfilehash: 19c061e83257e118aee74c9373a627b8c56defe3
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 204996514bed336e60ab77f184a923f04e7e2bba
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59421240"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65106903"
 ---
 # <a name="creating-a-server-farm-with-the-web-farm-framework"></a>웹 팜 프레임워크를 사용하여 서버 팜 만들기
 
@@ -22,7 +22,6 @@ ms.locfileid: "59421240"
 [PDF 다운로드](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > 이 항목에서는 만들고 컬렉션의 서버에서 웹 서버 팜을 구성 하는 팜 프레임 워크 WFF (웹) 2.0을 사용 하는 방법을 설명 합니다.
-
 
 WFF를 사용 하면 여러 부하 분산 된 웹 서버에서 웹 플랫폼 제품 및 구성 요소, 웹 응용 프로그램, 웹 사이트 및 구성 설정을 동기화 할 수 있습니다. 스테이징 및 프로덕션 환경에서 같은 둘 이상의 웹 서버를 해야 하는 시나리오에서 배포 및 구성 프로세스를 크게 간소화할 수 있습니다이 합니다. 단일 서버에 웹 응용 프로그램을 배포할 수 있습니다&#x2014;는 *주 서버*&#x2014;및 WFF 서버 팜의 모든 다른 웹 서버에서 해당 웹 응용 프로그램에 자동으로 복제 됩니다.
 
@@ -63,7 +62,6 @@ WFF를 사용 하면 여러 부하 분산 된 웹 서버에서 웹 플랫폼 제
 
 > [!NOTE]
 > 참조 컴퓨터를 도메인에 가입 하는 방법은 [도메인 및 로그온에 컴퓨터 가입](https://technet.microsoft.com/library/cc725618(v=WS.10).aspx)합니다. 고정 IP 주소를 구성 하는 방법에 대 한 자세한 내용은 참조 하세요. [정적 IP 주소를 구성](https://technet.microsoft.com/library/cc754203(v=ws.10).aspx)합니다.
-
 
 ## <a name="create-the-wff-controller-server"></a>WFF 컨트롤러 서버 만들기
 
@@ -185,7 +183,6 @@ WFF는 IIS arr.와 밀접 하 게 통합 되도록 설계 되었습니다. 이 �
 
 > [!NOTE]
 > WFF;를 사용 하 여 ARR을 사용할 필요가 없습니다. WFF 타사 부하 분산 솔루션을 사용 하 여 작동 하도록 구성할 수 있습니다. 자세한 내용은 [IIS 7에 대 한 Web Farm Framework 2.0의 개요](https://go.microsoft.com/?linkid=9805126)합니다.
-
 
 ARR을 사용 하 여 부하 분산는 복잡 한 주제를 가장는이 자습서에서 다루지 않습니다. 그러나 ARR 모듈을 설치 하 고 로드 균형 조정을 시작 하려면 다음 절차를 사용할 수 있습니다.
 

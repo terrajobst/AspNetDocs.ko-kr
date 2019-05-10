@@ -8,12 +8,12 @@ ms.date: 03/24/2008
 ms.assetid: d522639a-5aca-421e-9a76-d73f95607f57
 msc.legacyurl: /web-forms/overview/older-versions-security/roles/assigning-roles-to-users-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 93a0af00d9e32e044f408a1ca8a2cea73e906d66
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 482460248fb070b273c1ff97515152cacf66dbce
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59380290"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108698"
 ---
 # <a name="assigning-roles-to-users-c"></a>사용자에 역할 할당(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59380290"
 [코드를 다운로드](http://download.microsoft.com/download/6/0/3/6032582f-360d-4739-b935-38721fdb86ea/CS.10.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/0/3/6032582f-360d-4739-b935-38721fdb86ea/aspnet_tutorial10_AssigningRoles_cs.pdf)
 
 > 이 자습서에서는 두 ASP.NET 페이지 어떤 역할에 속하는 사용자 관리를 도우려면 빌드합니다. 첫 번째 페이지는 사용자가 지정된 된 역할에 속한 참조 하는 기능이 포함 됩니다 특정 사용자가 속한 역할 및 기능을 할당 하거나 특정 역할에서 특정 사용자를 제거 합니다. 두 번째 페이지에는 살펴보면서 CreateUserWizard 컨트롤 새로 만든된 사용자가 속한 역할을 지정 하는 단계를 포함 하도록 합니다. 관리자는 새 사용자 계정을 만들 수 있는 시나리오에서 유용 합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -43,7 +42,6 @@ ms.locfileid: "59380290"
 > [!NOTE]
 > 드롭다운 목록에 목록을 사용 하 여 사용자 계정을 않습니다 웹 사이트에 대 한 이상적인 있는 수백 개의 사용자 계정이 있을 수 있습니다. 드롭다운 목록 옵션 중 비교적 짧은 목록에서 하나의 항목을 선택 하는 사용자를 허용 하도록 설계 되었습니다. 신속 하 게 되기 다루기 목록 항목 수가 증가 합니다. 잠재적으로 많은 수의 사용자 계정 갖게 되는 웹 사이트를 구축 하는 경우 대체 사용자 인터페이스를 사용 하 여 고려해 야 할 페이징할 수 있는 GridView 또는 필터링 가능 인터페이스를 나열 하는 프롬프트 문자를 선택 하는 방문자와 같은 고만 사용자가 선택한 문자로 시작 하는 해당 사용자를 보여 줍니다.
 
-
 ## <a name="step-1-building-the-by-user-user-interface"></a>1단계: "User" 하 여 사용자 인터페이스 구축
 
 열기는 `UsersAndRoles.aspx` 페이지입니다. 페이지의 맨 위에 있는 라는 레이블을 웹 컨트롤을 추가 `ActionStatus` 지울 및 해당 `Text` 속성입니다. 사용 하 여이 레이블을 대 한 의견을 수행 하는 작업 같은 메시지를 표시, "사용자 Tito에 추가 된 관리자 역할" 또는 "사용자 Jisun는 감독자 역할에서 제거 되었습니다 했습니다." 이러한 확인 하기 위해 레이블 설정 메시지 눈에 띄는 `CssClass` "중요" 속성입니다.
@@ -56,11 +54,9 @@ ms.locfileid: "59380290"
 
 이 CSS 정의 큰, 빨강 글꼴을 사용 하 여 레이블을 표시 하려면 브라우저에 지시 합니다. 그림 1에서는 Visual Studio 디자이너를 통해이 효과 보여 줍니다.
 
-
 [![대규모의 빨간색 글꼴로 레이블의 CssClass 속성 결과](assigning-roles-to-users-cs/_static/image2.png)](assigning-roles-to-users-cs/_static/image1.png)
 
 **그림 1**: 레이블의 `CssClass` Large, 빨강 글꼴의에서 속성 결과 ([큰 이미지를 보려면 클릭](assigning-roles-to-users-cs/_static/image3.png))
-
 
 다음으로 설정 페이지로 DropDownList 추가 해당 `ID` 속성을 `UserList`, 설정 및 해당 `AutoPostBack` 속성을 true로 합니다. 시스템의 모든 사용자를 나열 하려면이 DropDownList 사용 됩니다. 이 DropDownList MembershipUser 개체의 컬렉션에 바인딩됩니다. DropDownList MembershipUser 개체의 사용자 이름 속성을 표시 합니다 (및 목록 항목의 값으로 사용)를 원하므로 DropDownList의 설정 `DataTextField` 고 `DataValueField` 속성 "UserName"으로 합니다.
 
@@ -83,7 +79,6 @@ ms.locfileid: "59380290"
 > [!NOTE]
 > `Membership.GetAllUsers` 메서드에 두 개의 오버 로드가 있습니다: 하나의 입력된 매개 변수가 없으면를 수락 하 고 모든 사용자를 반환 하 고 페이지 크기와 인덱스 페이지에 대 한 정수 값에서 지정 된 사용자의 하위 집합만 반환 하는 하나입니다. 대용량 페이징할 수 있는 사용자 인터페이스 요소에 표시 되는 사용자 계정의 경우 사용자 계정 보다는 모두의 정확한 하위 집합만 반환 되므로 두 번째 오버 로드를 보다 효율적으로 페이지에서 사용자가 사용할 수 있습니다.
 
-
 합니다 `BindRolesToList` 메서드를 호출 하 여 시작 합니다 `Roles` 클래스의 [ `GetAllRoles` 메서드](https://msdn.microsoft.com/library/system.web.security.roles.getallroles.aspx), 시스템에서 역할을 포함 하는 문자열 배열을 반환 하는 합니다. 이 문자열 배열 반복기에 바인딩됩니다.
 
 마지막으로, 페이지가 처음 로드 될 때이 두 메서드를 호출 해야 합니다. 다음 코드를 `Page_Load` 이벤트 처리기에 추가합니다.
@@ -92,11 +87,9 @@ ms.locfileid: "59380290"
 
 이 코드를 사용 하 여 잠시는 브라우저를 통해 페이지를 방문 화면은 그림 2와 비슷하게 표시 됩니다. 모든 사용자 계정을 채워집니다 드롭 다운 목록에서을 그 아래에, 각 역할 확인란으로 표시 됩니다. 설정 했기 때문은 `AutoPostBack` 포스트백을 발생 시키는 속성 DropDownList 및 확인란의 True로 확인 또는 역할을 선택 취소 하면 선택한 사용자를 변경 합니다. 그러나 아직 있으므로 이러한 작업을 처리 하는 코드를 쓸 조치가 수행 됩니다. 에서는에서는 다음 두 섹션에서 이러한 작업을 수행할 수 있습니다.
 
-
 [![사용자 및 역할 페이지에 표시 됩니다.](assigning-roles-to-users-cs/_static/image5.png)](assigning-roles-to-users-cs/_static/image4.png)
 
 **그림 2**: 사용자 및 역할 페이지에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-cs/_static/image6.png))
-
 
 ### <a name="checking-the-roles-the-selected-user-belongs-to"></a>에 선택한 사용자가 속한 역할 확인
 
@@ -108,7 +101,6 @@ ms.locfileid: "59380290"
 
 > [!NOTE]
 > `selectedUserRoles.Contains<string>(...)` ASP.NET 버전 2.0 사용 하는 경우 구문 컴파일되지 것입니다. 합니다 `Contains<string>` 메서드는의 일부를 [LINQ 라이브러리](http://en.wikipedia.org/wiki/Language_Integrated_Query), ASP.NET 3.5와 새로운 합니다. 여전히 ASP.NET 버전 2.0 사용 하는 경우 사용 합니다 [ `Array.IndexOf<string>` 메서드](https://msdn.microsoft.com/library/eha9t187.aspx) 대신 합니다.
-
 
 합니다 `CheckRolesForSelectedUser` 메서드를 두 가지 경우에 호출 해야 합니다.: 페이지가 처음 로드 될 때와 때마다는 `UserList` DropDownList의 선택한 인덱스 변경 됩니다. 따라서에서이 메서드를 호출 합니다 `Page_Load` 이벤트 처리기 (을 호출한 후 `BindUsersToUserList` 고 `BindRolesToList`). DropDownList의에 대 한 이벤트 처리기를 만들 수도, `SelectedIndexChanged` 이벤트에서에서이 메서드를 호출 합니다.
 
@@ -134,19 +126,15 @@ ms.locfileid: "59380290"
 
 시간을 내어 브라우저를 통해이 페이지를 테스트 합니다. Tito 사용자를 선택 하 고 Tito 관리자 및 감독자 역할에 추가 합니다.
 
-
 [![관리자 및 감독자 역할에 추가한 Tito](assigning-roles-to-users-cs/_static/image8.png)](assigning-roles-to-users-cs/_static/image7.png)
 
 **그림 3**: Tito 관리자 및 감독자 역할에 추가 되었습니다 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-cs/_static/image9.png))
 
-
 그런 다음 드롭다운 목록에서 Bruce 사용자를 선택 합니다. 다시 게시 되며 반복기의 확인란을 통해 업데이트 되는 `CheckRolesForSelectedUser`합니다. Bruce 속해 있지 않으므로 아직 모든 역할을 하므로 두 확인란 검사 되지 않습니다. 다음으로 Bruce 감독자 역할에 추가 합니다.
-
 
 [![Bruce는 감독자 역할에 추가 되었습니다.](assigning-roles-to-users-cs/_static/image11.png)](assigning-roles-to-users-cs/_static/image10.png)
 
 **그림 4**: Bruce 감독자 역할에 추가 되었습니다 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-cs/_static/image12.png))
-
 
 추가 기능을 확인 하는 `CheckRolesForSelectedUser` 메서드를 Tito 또는 Bruce 이외의 사용자를 선택 합니다. 확인란은 자동으로 선택 하는 방법, 나타내는 모든 역할에 속해 있지 않습니다. Tito를 반환 합니다. 관리자 및 감독자 확인란 확인 해야 합니다.
 
@@ -166,11 +154,9 @@ ms.locfileid: "59380290"
 
 마지막 두 줄을 `BindRolesToList` 역할 집합이 바인딩할 메서드를 추가한는 `RoleList` DropDownList 컨트롤입니다. 그림 5-시스템의 역할을 사용 하 여 채워진 드롭다운 목록 브라우저를 통해 볼 때 최종 결과를 보여 줍니다.
 
-
 [![역할은 RoleList DropDownList에 표시 됩니다.](assigning-roles-to-users-cs/_static/image14.png)](assigning-roles-to-users-cs/_static/image13.png)
 
 **그림 5**: 역할에 표시 되는 `RoleList` DropDownList ([큰 이미지를 보려면 클릭](assigning-roles-to-users-cs/_static/image15.png))
-
 
 ### <a name="displaying-the-users-that-belong-to-the-selected-role"></a>선택한 역할에 속한 사용자를 표시 합니다.
 
@@ -186,11 +172,9 @@ ms.locfileid: "59380290"
 
 현재 위치에서이 코드는 `RolesUserList` GridView에는 선택한 역할에 속하는 해당 사용자가 표시 됩니다. 그림 6에서 알 수 있듯이, 감독자 역할 두 멤버로 구성 됩니다. Bruce 및 Tito 합니다.
 
-
 [![선택한 역할에 속하는 해당 사용자를 나열 하는 GridView](assigning-roles-to-users-cs/_static/image17.png)](assigning-roles-to-users-cs/_static/image16.png)
 
 **그림 6**: GridView 나열 된 사용자는 역할의 구성원 선택 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-cs/_static/image18.png))
-
 
 ### <a name="removing-users-from-the-selected-role"></a>선택된 된 역할에서 사용자 제거
 
@@ -198,11 +182,9 @@ ms.locfileid: "59380290"
 
 GridView에 삭제 단추 필드를 추가 하 여 시작 합니다. 이 필드에 필드 가장 왼쪽으로 표시 되 고 변경 해야 해당 `DeleteText` "삭제" (기본값)에서 "제거" 속성입니다.
 
-
 [![추가 된](assigning-roles-to-users-cs/_static/image20.png)](assigning-roles-to-users-cs/_static/image19.png)
 
 **그림 7**: GridView에 "제거" 단추를 추가 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-cs/_static/image21.png))
-
 
 포스트백 근거가 "제거" 단추를 클릭할 때 GridView의 및 `RowDeleting` 이벤트가 발생 합니다. 이 이벤트에 대 한 이벤트 처리기를 만들고 선택된 된 역할에서 사용자를 제거 하는 코드를 작성 해야 합니다. 이벤트 처리기를 만들고 다음 코드를 추가 합니다.
 
@@ -213,14 +195,11 @@ GridView에 삭제 단추 필드를 추가 하 여 시작 합니다. 이 필드�
 > [!NOTE]
 > "제거" 단추는 모든 종류의 사용자에서 역할에서 사용자를 제거 하기 전에 확인 필요 하지 않습니다. 초대한 사용자에 게 확인의 일정 수준에 추가할 수 있습니다. 작업을 확인 하는 가장 쉬운 방법 중 하나는 클라이언트 쪽 확인 대화 상자를 통해입니다. 이 기술에 대 한 자세한 내용은 참조 하세요. [삭제 하는 경우 클라이언트 쪽 확인 추가](https://asp.net/learn/data-access/tutorial-42-cs.aspx)합니다.
 
-
 그림 8 사용자 Tito 감독자 그룹에서 제거 된 후 페이지를 보여 줍니다.
-
 
 [![안타깝게도 Tito 더 이상 감독자](assigning-roles-to-users-cs/_static/image23.png)](assigning-roles-to-users-cs/_static/image22.png)
 
 **그림 8**: 안타깝게도 Tito 더 이상 감독자 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-cs/_static/image24.png))
-
 
 ### <a name="adding-new-users-to-the-selected-role"></a>선택한 역할에 새 사용자 추가
 
@@ -241,22 +220,17 @@ GridView에 삭제 단추 필드를 추가 하 여 시작 합니다. 이 필드�
 > [!NOTE]
 > 사용을 보장 하기 위해 지정된 된 사용자는 선택한 역할에 이미 속해 있지 않습니다 합니다 [ `Roles.IsUserInRole(userName, roleName)` 메서드](https://msdn.microsoft.com/library/system.web.security.roles.isuserinrole.aspx)를 나타내는 부울 값을 반환 하는 여부를 *userName* 의멤버인*roleName*합니다. 다시이 메서드를 사용할지는 <a id="_msoanchor_2"> </a> [다음 자습서](role-based-authorization-cs.md) 역할 기반 권한 부여에서 살펴보겠습니다.
 
-
 브라우저를 통해 페이지를 방문 하 고 있는 감독자 역할을 선택 합니다 `RoleList` DropDownList 합니다. 잘못 된 사용자 이름을 입력 하세요 – 사용자 시스템에 없는 경우를 설명 하는 메시지를 표시 합니다.
-
 
 [![존재 하지 않는 사용자 역할에 추가할 수 없습니다.](assigning-roles-to-users-cs/_static/image26.png)](assigning-roles-to-users-cs/_static/image25.png)
 
 **그림 9**: 존재 하지 않는 사용자 역할에 추가할 수 없습니다 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-cs/_static/image27.png))
 
-
 이제 유효한 사용자를 추가 해 보세요. 계속 해 서 다시 Tito 감독자 역할에 추가 합니다.
-
 
 [![Tito 감독자는 다시 한 번!](assigning-roles-to-users-cs/_static/image29.png)](assigning-roles-to-users-cs/_static/image28.png)
 
 **그림 10**: Tito 감독자는 다시 한 번!  ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-cs/_static/image30.png))
-
 
 ## <a name="step-3-cross-updating-the-by-user-and-by-role-interfaces"></a>3단계: 간 업데이트는 "User" 및 "역할" 인터페이스
 
@@ -289,11 +263,9 @@ GridView에 삭제 단추 필드를 추가 하 여 시작 합니다. 이 필드�
 
 다음으로, 선택는 "추가/제거 `WizardSteps`..." CreateUserWizard의 스마트 태그에서 옵션 및 새 `WizardStep`설정, 해당 `ID` 에 `SpecifyRolesStep`입니다. 이동 된 `SpecifyRolesStep WizardStep` "Sign Up for 새 계정" 단계를 수행 하면 되지만 "완료" 단계 전에 제공 되도록 합니다. 설정 된 `WizardStep`의 `Title` 속성 "지정 역할"을 해당 `StepType` 속성을 `Step`, 및 해당 `AllowReturn` 속성을 false로 합니다.
 
-
 [![추가 된](assigning-roles-to-users-cs/_static/image32.png)](assigning-roles-to-users-cs/_static/image31.png)
 
 **그림 11**: "지정 된 역할"을 추가 `WizardStep` CreateUserWizard를 ([큰 이미지를 보려면 클릭](assigning-roles-to-users-cs/_static/image33.png))
-
 
 이 변경 후 CreateUserWizard의 선언적 태그는 다음과 같이 표시 됩니다.
 
@@ -317,27 +289,21 @@ GridView에 삭제 단추 필드를 추가 하 여 시작 합니다. 이 필드�
 
 브라우저를 통해이 페이지를 방문 합니다. CreateUserWizard는 첫 번째 단계는 표준 "Sign Up for 새 계정" 단계를 새 사용자의 사용자 이름, 암호, 메일 및 기타 주요 정보를 묻는 경우 Wanda 라는 새 사용자를 만드는 데 필요한 정보를 입력 합니다.
 
-
 [![Wanda 라는 새 사용자 만들기](assigning-roles-to-users-cs/_static/image35.png)](assigning-roles-to-users-cs/_static/image34.png)
 
 **그림 12**: 새 사용자 라는 Wanda 만듭니다 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-cs/_static/image36.png))
 
-
 "Create User" 단추를 클릭 합니다. CreateUserWizard 내부적으로 호출 된 `Membership.CreateUser` 메서드를 새 사용자 계정 및 다음 진행 됨에 따라 다음 단계를 만드는 "역할을 지정 합니다." 여기에 시스템 역할은 나열 됩니다. 감독자 확인란을 선택 하 고 클릭 합니다.
-
 
 [![Wanda 감독자 역할의 멤버로 설정](assigning-roles-to-users-cs/_static/image38.png)](assigning-roles-to-users-cs/_static/image37.png)
 
 **그림 13**: Wanda 감독자 역할의 멤버로 설정 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-cs/_static/image39.png))
 
-
 다시 게시 및 업데이트 하면 다음을 클릭 하 여 `ActiveStep` "완료" 단계를 합니다. 에 `ActiveStepChanged` 이벤트 처리기를 최근에 만든 사용자 계정 감독자 역할에 할당 됩니다. 이 확인 하려면 돌아갑니다 합니다 `UsersAndRoles.aspx` 감독자에서 선택한 페이지를 `RoleList` DropDownList 합니다. 그림 14에서 알 수 있듯이, 감독자는 이제 이루어져 3 명의 사용자: Bruce Tito, 하며 Wanda 합니다.
-
 
 [![Bruce, Tito, Wanda와 모든 감독자](assigning-roles-to-users-cs/_static/image41.png)](assigning-roles-to-users-cs/_static/image40.png)
 
 **그림 14**: Bruce, Tito, Wanda와 모든 감독자 ([클릭 하 여 큰 이미지 보기](assigning-roles-to-users-cs/_static/image42.png))
-
 
 ## <a name="summary"></a>요약
 

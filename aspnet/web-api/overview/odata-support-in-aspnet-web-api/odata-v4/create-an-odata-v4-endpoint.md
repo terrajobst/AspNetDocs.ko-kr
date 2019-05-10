@@ -8,12 +8,12 @@ ms.date: 01/23/2019
 ms.assetid: 1e1927c0-ded1-4752-80fd-a146628d2f09
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v4/create-an-odata-v4-endpoint
 msc.type: authoredcontent
-ms.openlocfilehash: c6a4aa4eb563fd77d5afd9248175d5f5b7984d19
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 81d134cbd3231b9a0d5537ccbd1bbfe6419254af
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57042600"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108708"
 ---
 # <a name="create-an-odata-v4-endpoint-using-aspnet-web-api"></a>ASP.NET Web API를 사용 하 여 OData v4 엔드포인트 만들기 
 
@@ -45,8 +45,6 @@ Visual Studio에서에서 합니다 **파일** 메뉴에서 **새로 만들기**
 
 **확인**을 선택합니다.
 
-
-
 [![](create-an-odata-v4-endpoint/_static/image8.png)](create-an-odata-v4-endpoint/_static/image8.png)
 
 선택 된 **빈** 템플릿. 아래 **폴더를 추가 하 고 핵심에 대 한 참조:** 를 선택 **Web API**합니다. **확인**을 선택합니다.
@@ -70,7 +68,6 @@ A *모델* 는 응용 프로그램에서 데이터 엔터티를 나타내는 개
 > [!NOTE]
 > 규칙에 따라 모델 클래스는 Models 폴더에 배치 됩니다 있지만 사용자 고유의 프로젝트에서이 규칙에 따라 필요가 없습니다.
 
-
 클래스 이름을 `Product`로 지정합니다. Product.cs 파일에서 다음을 사용 하 여 상용구 코드를 바꿉니다.
 
 [!code-csharp[Main](create-an-odata-v4-endpoint/samples/sample2.cs)]
@@ -83,7 +80,6 @@ A *모델* 는 응용 프로그램에서 데이터 엔터티를 나타내는 개
 
 > [!NOTE]
 > Web API OData EF가 필요 하지 않습니다. 모델 데이터베이스 엔터티를 변환할 수 있는 모든 데이터 액세스 계층을 사용 합니다.
-
 
 첫째, EF에 대 한 NuGet 패키지를 설치 합니다. **도구** 메뉴에서 **NuGet 패키지 관리자** &gt; **패키지 관리자 콘솔**을 선택합니다. 패키지 관리자 콘솔 창에서 다음을 입력 합니다.
 
@@ -130,7 +126,6 @@ A *컨트롤러* 는 HTTP 요청을 처리 하는 클래스입니다. OData 서�
 
 > [!NOTE]
 > OData v3 사용에 대 한이 자습서의 버전을 **컨트롤러 추가** 스 캐 폴딩 합니다. 현재는 OData v4에 대 한 스 캐 폴딩 되지 않습니다.
-
 
 다음 ProductsController.cs의 상용구 코드를 대체 합니다.
 

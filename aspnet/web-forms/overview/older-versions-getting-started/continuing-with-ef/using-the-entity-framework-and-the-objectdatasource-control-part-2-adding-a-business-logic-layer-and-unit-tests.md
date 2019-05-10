@@ -8,19 +8,18 @@ ms.date: 01/26/2011
 ms.assetid: efb0e677-10b8-48dc-93d3-9ba3902dd807
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests
 msc.type: authoredcontent
-ms.openlocfilehash: 4d436b0e5d605027cfcf5243f615f9ac167c5888
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 24344cc33d7c26d7c408db26c0530ef2c708a7d3
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59388051"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133447"
 ---
 # <a name="using-the-entity-framework-40-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests"></a>Entity Framework 4.0 및 ObjectDataSource 컨트롤, 2 부를 사용합니다. 비즈니스 논리 레이어 및 단위 테스트 추가
 
 [Tom Dykstra](https://github.com/tdykstra)
 
 > 이 자습서 시리즈에서 만든 Contoso University 웹 응용 프로그램 빌드를 [Entity Framework 4.0을 사용 하 여 시작](https://asp.net/entity-framework/tutorials#Getting%20Started) 자습서 시리즈입니다. 이전 자습서를 완료 하지 않은 경우이 자습서에 대 한 시작 지점으로 할 수 있습니다 [응용 프로그램을 다운로드](https://code.msdn.microsoft.com/ASPNET-Web-Forms-97f8ee9a) 만들어졌을 것입니다. 할 수도 있습니다 [응용 프로그램을 다운로드](https://code.msdn.microsoft.com/ASPNET-Web-Forms-6c7197aa) 전체 자습서 시리즈에서 만들어집니다. 이 자습서에 대 한 질문이 있으면 하기를 게시할 수 있습니다 합니다 [ASP.NET Entity Framework 포럼](https://forums.asp.net/1227.aspx)합니다.
-
 
 이전 자습서에서 Entity Framework를 사용 하 여 n 계층 웹 응용 프로그램을 만든 및 `ObjectDataSource` 제어 합니다. 이 자습서에서는 별도 비즈니스 논리 계층 (BLL) 및 데이터 액세스 계층 DAL ()을 유지 하면서 비즈니스 논리를 추가 하는 방법 및 BLL에 대 한 자동화 된 단위 테스트를 만드는 방법을 보여 줍니다.
 
@@ -72,7 +71,6 @@ ms.locfileid: "59388051"
 
 > [!NOTE]
 > 기술적으로 엔터티 개체는 Entity Framework에서 상속 된 클래스에서 인스턴스화되는 때문에 여전히 없습니다 지 속성 무시를 `EntityObject` 클래스입니다. 전체 지 속성 무시에 대해 사용할 수 있습니다 *plain old CLR object*, 또는 *Poco*, 개체에서 상속 하는 대신는 `EntityObject` 클래스입니다. Poco를 사용 하 여이 자습서의 범위를 벗어납니다. 자세한 내용은 [테스트 용이성과 Entity Framework 4.0](https://msdn.microsoft.com/library/ff714955.aspx) MSDN 웹 사이트입니다.)
-
 
 이제 연결할 수는 `ObjectDataSource` 비즈니스 논리 클래스 대신 리포지토리에 컨트롤과 이전과 같이 작동 하는 것을 확인 합니다.
 

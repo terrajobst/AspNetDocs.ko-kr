@@ -8,12 +8,12 @@ ms.date: 06/06/2012
 ms.assetid: a56572ba-81c3-47af-826d-941e9c4775ec
 msc.legacyurl: /mvc/overview/performance/using-asynchronous-methods-in-aspnet-mvc-4
 msc.type: authoredcontent
-ms.openlocfilehash: 8292fd43ffa2bc66b4daa8f0fc09569226d90bff
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8d42ebf770e1b75e2867cca36e71423ba9467ee2
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379562"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112444"
 ---
 # <a name="using-asynchronous-methods-in-aspnet-mvc-4"></a>ASP.NET MVC 4에서 비동기 메서드 사용
 
@@ -22,7 +22,6 @@ ms.locfileid: "59379562"
 > 이 자습서를 사용 하 여 비동기 ASP.NET MVC 웹 응용 프로그램을 빌드하는 기본 사항 설명 [Visual Studio Express 2012 for Web](https://www.microsoft.com/visualstudio/11), Microsoft Visual Studio의 무료 버전입니다. 사용할 수도 있습니다 [Visual Studio 2012](https://www.microsoft.com/visualstudio/11)합니다.
 > 
 > 전체 샘플은 github에서이 자습서를 위해 제공 됩니다. [https://github.com/RickAndMSFT/Async-ASP.NET/](https://github.com/RickAndMSFT/Async-ASP.NET/)
-
 
 ASP.NET MVC 4 [컨트롤러](https://msdn.microsoft.com/library/system.web.mvc.controller(VS.108).aspx) 조합에서 클래스 [.NET 4.5](https://msdn.microsoft.com/library/w0x726c2(VS.110).aspx) 형식의 개체를 반환 하는 비동기 작업 메서드를 작성할 수 있게 [태스크&lt;ActionResult&gt; ](https://msdn.microsoft.com/library/dd321424(VS.110).aspx). .NET Framework 4 라고 하는 비동기 프로그래밍 개념을 도입을 [태스크](https://msdn.microsoft.com/library/system.threading.tasks.task.aspx) ASP.NET MVC 4 지원 [태스크](https://msdn.microsoft.com/library/system.threading.tasks.task.aspx)합니다. 작업으로 표시 됩니다는 **태스크** 형식과 관련 된 형식을 합니다 [System.Threading.Tasks](https://msdn.microsoft.com/library/system.threading.tasks.aspx) 네임 스페이스입니다. 이 비동기 지원을 사용 하 여을 기반으로 하는.NET Framework 4.5를 [await](https://msdn.microsoft.com/library/hh156528(VS.110).aspx) 하 고 [비동기](https://msdn.microsoft.com/library/hh156513(VS.110).aspx) 키워드를 사용 하는 [태스크](https://msdn.microsoft.com/library/system.threading.tasks.task.aspx) 이전 보다 훨씬 덜 복잡 한 개체 비동기 접근 방법입니다. 합니다 [await](https://msdn.microsoft.com/library/hh156528(VS.110).aspx) 키워드는 코드 조각의 코드의 다른 부분에서 비동기적으로 대기 해야 하는 구문 축약형 나타내는입니다. 합니다 [비동기](https://msdn.microsoft.com/library/hh156513(VS.110).aspx) 키워드에는 작업 기반 비동기 메서드로 메서드를 표시 하는 데 사용할 수 있는 힌트를 나타냅니다. 조합 **await**를 **비동기**, 및 **태스크** 개체를 사용 하면 훨씬 쉽게.NET 4.5에서 비동기 코드를 작성할 수 있습니다. 비동기 메서드에 대 한 새 모델 이라고 합니다 *작업 기반 비동기 패턴* (**누릅니다**). 이 자습서에서는 사용 하 여 비동기 프로그래밍 지식이 있다고 가정 [await](https://msdn.microsoft.com/library/hh156528(VS.110).aspx) 하 고 [비동기](https://msdn.microsoft.com/library/hh156513(VS.110).aspx) 키워드와 [태스크](https://msdn.microsoft.com/library/system.threading.tasks.task.aspx) 네임 스페이스입니다.
 

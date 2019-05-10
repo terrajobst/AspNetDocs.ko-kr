@@ -8,12 +8,12 @@ ms.date: 04/23/2009
 ms.assetid: 1e33d1c6-3f9f-4c26-81e2-2a8f8907bb05
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/configuring-a-website-that-uses-application-services-cs
 msc.type: authoredcontent
-ms.openlocfilehash: fe6097c32e4584fd4c577fb8d2afee9b3483c22f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b9488a294de8f23ecd2b22812d728a5904a8ef18
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59418419"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65106879"
 ---
 # <a name="configuring-a-website-that-uses-application-services-c"></a>애플리케이션 서비스를 사용하는 웹 사이트 구성(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59418419"
 [코드를 다운로드](http://download.microsoft.com/download/E/6/F/E6FE3A1F-EE3A-4119-989A-33D1A9F6F6DD/ASPNET_Hosting_Tutorial_09_CS.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/C/3/9/C391A649-B357-4A7B-BAA4-48C96871FEA6/aspnet_tutorial09_AppServicesConfig_cs.pdf)
 
 > ASP.NET 버전 2.0에는 일련을의.NET Framework의 일부 이며 웹 응용 프로그램에 풍부한 기능을 추가 하는 데 사용할 수 있는 구성 요소 서비스의 모음으로 사용 하는 응용 프로그램 서비스를 도입 했습니다. 이 자습서는 응용 프로그램 서비스를 사용 하 여 프로덕션 환경에서 웹 사이트를 구성 하는 방법에 살펴봅니다 및 사용자 계정 및 프로덕션 환경에서 역할을 관리 하는 일반적인 문제를 해결 합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -34,7 +33,6 @@ ASP.NET 버전 2.0에는 일련의 도입 *응용 프로그램 서비스*,.NET F
 - **사이트 맵** -메뉴 등 이동 경로 탐색 컨트롤을 통해 표시 될 수 있는 계층의 형태로 사이트 s 논리 구조를 정의 하기 위한 API입니다.
 - **개인 설정** -사용자 지정 기본 설정에 자주 사용을 유지 관리 하기 위한 API [ *WebParts*](https://msdn.microsoft.com/library/e0s9t4ck.aspx)합니다.
 - **상태 모니터링** -API 성능, 보안, 오류 및 실행 중인 웹 응용 프로그램에 대 한 다른 시스템 상태 메트릭을 모니터링 합니다.
-  
 
 응용 프로그램 서비스 Api는 특정 구현에 연결 되지 않습니다. 특정 사용 하도록 응용 프로그램 서비스를 지시 하는 대신 *공급자*, 및 해당 공급자는 특정 기술을 사용 하 여 서비스를 구현 합니다. 웹 호스팅 회사에 호스팅된 인터넷 기반 웹 응용 프로그램에 대 한 가장 자주 사용 되는 공급자는 SQL Server 데이터베이스 구현을 사용 하는 해당 공급자입니다. 예를 들어를 `SqlMembershipProvider` 는 Microsoft SQL Server 데이터베이스의 사용자 계정 정보를 저장 하는 멤버 자격 API에 대 한 공급자입니다.
 
@@ -42,7 +40,6 @@ ASP.NET 버전 2.0에는 일련의 도입 *응용 프로그램 서비스*,.NET F
 
 > [!NOTE]
 > Api를 사용 하 여 설계 된 응용 프로그램 서비스를 [ *공급자 모델*](http://aspnet.4guysfromrolla.com/articles/101905-1.aspx), 구현 세부 정보를 런타임에 제공 API가 허용 하는 디자인 패턴입니다. .NET Framework를 사용할 수 있는와 같은 응용 프로그램 서비스 공급자 수와 함께 제공 되는 `SqlMembershipProvider` 및 `SqlRoleProvider`, 멤버 자격 공급자는 및 SQL Server를 사용 하는 역할 Api 데이터베이스 구현입니다. 만들 수도 있습니다 및 플러그 인을 사용자 지정 공급자입니다. 도 서 리뷰 웹 응용 프로그램이 이미 사이트 맵 API에 대 한 사용자 지정 공급자를 포함 하는 사실 (`ReviewSiteMapProvider`), 사이트 맵 데이터에서 생성 되는 `Genres` 및 `Books` 데이터베이스의 테이블입니다.
-
 
 이 자습서는 멤버 자격 및 역할 Api를 사용 하 여도 서 리뷰 웹 응용 프로그램을 확장 하는 방법을 보는 것으로 시작 합니다. 그런 다음 배포 응용 프로그램 서비스를 사용 하 여 SQL Server 데이터베이스 구현에서는 사용자 계정 및 프로덕션 환경에서 역할을 관리 하는 일반적인 문제를 해결 하 여 완료 하는 웹 응용 프로그램을 안내 합니다.
 
@@ -53,7 +50,6 @@ ASP.NET 버전 2.0에는 일련의 도입 *응용 프로그램 서비스*,.NET F
 > [!NOTE]
 > I ve도 서 리뷰 웹 응용 프로그램에서 사용자 계정 3 개를 생성 합니다. Scott, Jisun, 및 Alice입니다. 모든 세 명의 동일한 암호: **암호!** Scott 및 Jisun 관리자 역할이 있는, alice가 아닙니다. 사이트가 아닌 관리 페이지는 익명 사용자에 게 여전히 액세스할 수 있습니다. 즉, 필요가 없습니다를 관리 하려는 경우가 아니면 사이트를 방문 하 여 로그인 관리자 역할의 사용자로 로그인 해야 합니다는 경우.
 
-
 도 서 리뷰 응용 프로그램 s 마스터 페이지 인증 및 익명 사용자에 대 한 다른 사용자 인터페이스를 포함 하도록 업데이트 되었습니다. 익명 사용자가 사이트를 방문할 경우 오른쪽 위 모서리의 로그인 링크를 확인 합니다. 인증된 된 사용자 확인 메시지를 ", 환영 *username*!" 및 로그 아웃에 대 한 링크입니다. 여기서 s는 로그인 페이지에도 (`~/Login.aspx`), 방문자를 인증 하기 위한 사용자 인터페이스 및 논리를 제공 하는 로그인 웹 컨트롤을 포함 하는 합니다. 관리자만 새 계정을 만들 수 있습니다. (페이지에서 사용자 계정을 만들고 관리에 대 한 가지는 `~/Admin` 폴더입니다.)
 
 ### <a name="configuring-the-membership-and-roles-apis"></a>멤버 자격 및 역할 Api 구성
@@ -62,7 +58,6 @@ ASP.NET 버전 2.0에는 일련의 도입 *응용 프로그램 서비스*,.NET F
 
 > [!NOTE]
 > 멤버 자격 및 역할 Api를 지원 하도록 웹 응용 프로그램을 구성 하는 자세한 검사 되도록이 자습서를 사용 하는 것이 없습니다. 에 대 한 철저 한 이러한 Api 및 사용 하 여 웹 사이트를 구성 하는 데 필요한 단계를 읽어보세요 내 [ *웹 사이트 보안 자습서*](../../older-versions-security/introduction/security-basics-and-asp-net-support-cs.md)합니다.
-
 
 SQL Server 데이터베이스를 사용 하 여 응용 프로그램 서비스를 사용 하려면 먼저 사용자 계정을 만들려는 데이터베이스에 이러한 공급자에서 사용 하는 데이터베이스 개체 및 저장 된 역할 정보를 추가 해야 합니다. 이러한 필수 데이터베이스 개체는 다양 한 테이블, 뷰 및 저장된 프로시저를 포함합니다. 지정이 고, 그렇지 않은 경우는 `SqlMembershipProvider` 및 `SqlRoleProvider` 라는 SQL Server Express Edition 데이터베이스를 사용 하는 공급자 클래스 `ASPNETDB` 응용 프로그램에서 있는 `App_Data` 폴더에 자동으로 만들어집니다 이러한 데이터베이스 존재 하지 않는 경우 런타임 시 이러한 공급자가 필요한 데이터베이스 개체입니다.
 
@@ -73,7 +68,6 @@ Services 데이터베이스에 데이터베이스 개체 이외의 응용 프로
 [!code-xml[Main](configuring-a-website-that-uses-application-services-cs/samples/sample1.xml)]
 
 합니다 `Web.config` s 파일 `<authentication>` 요소도 폼 기반 인증을 지원 하도록 구성 되어 있습니다.
-  
 
 [!code-xml[Main](configuring-a-website-that-uses-application-services-cs/samples/sample2.xml)]
 
@@ -100,43 +94,34 @@ ASP.NET은 훌륭한 [ *웹 사이트 관리 도구 (WSAT)* ](https://msdn.micro
 > [!NOTE]
 > `aspnet_regsql.exe` 도구는 지정된 된 데이터베이스에서 데이터베이스 개체를 만듭니다. 프로덕션 데이터베이스에 개발 데이터베이스에서 이러한 데이터베이스 개체의 데이터를 마이그레이션하지 않습니다 것. 프로덕션 데이터베이스 개발 데이터베이스의 사용자 계정 및 역할 정보를 복사 하는 것을 의미 하는 경우에 설명 된 기술을 사용 합니다 *데이터베이스를 배포* 자습서입니다.
 
-
 S를 사용 하 여 프로덕션 데이터베이스에 데이터베이스 개체를 추가 하는 방법을 살펴볼 수 있도록 합니다 `aspnet_regsql.exe` 도구입니다. Windows 탐색기를 열고 %WINDIR%\ 컴퓨터에서.NET Framework 버전 2.0 디렉터리로 이동 하 여 시작 Microsoft.NET\Framework\v2.0.50727 합니다. 확인 하 게 된 `aspnet_regsql.exe` 도구입니다. 명령줄에서이 도구를 사용할 수 있지만 여기에 그래픽 사용자 인터페이스 두 번 클릭 합니다 `aspnet_regsql.exe` 그래픽 구성 요소를 시작 하는 파일입니다.
 
 이 도구는 용도 설명 하는 시작 화면을 표시 하 여 시작 합니다. 그림 1에 나와 있는 "설치 옵션 선택" 화면에 고급을 클릭 합니다. 여기에서 응용 프로그램 서비스 데이터베이스 개체 또는 데이터베이스에서 제거할 추가를 선택할 수 있습니다. 프로덕션 데이터베이스에 이러한 개체를 추가 하려고 하기 때문에 "응용 프로그램 서비스에 대 한 SQL Server 구성" 옵션을 선택 하 고 클릭 합니다.
 
-
 [![응용 프로그램 서비스에 대 한 SQL Server를 구성 하려면 선택 합니다.](configuring-a-website-that-uses-application-services-cs/_static/image2.jpg)](configuring-a-website-that-uses-application-services-cs/_static/image1.jpg)
 
 **그림 1**: 응용 프로그램 서비스에 대 한 SQL server 구성 선택 ([클릭 하 여 큰 이미지 보기](configuring-a-website-that-uses-application-services-cs/_static/image3.jpg))
-
 
 "The 서버 및 데이터베이스 선택"에서 데이터베이스에 연결 하는 정보 화면을 요구 합니다. 데이터베이스 서버, 보안 자격 증명을 및 웹 호스팅 회사에 게 제공 데이터베이스 이름을 입력 하 고 클릭 합니다.
 
 > [!NOTE]
 > 데이터베이스 서버 및 자격 증명을 입력 한 후 데이터베이스 드롭다운 목록을 확장 하는 경우 오류가 발생할 수 있습니다. 합니다 `aspnet_regsql.exe` 쿼리 도구를 `sysdatabases` 시스템 테이블에이 정보는 공개적으로 사용할 수 있도록 회사 잠금 해당 데이터베이스 서버를 호스트 하는 일부 웹 서버에서 데이터베이스 목록을 검색 합니다. 이 오류가 발생할 경우 데이터베이스 이름을 드롭다운 목록에 직접 입력할 수 있습니다.
 
-
 [![데이터베이스의 연결 정보를 사용 하 여 도구를 제공 합니다.](configuring-a-website-that-uses-application-services-cs/_static/image5.jpg)](configuring-a-website-that-uses-application-services-cs/_static/image4.jpg)
 
 **그림 2**: 도구와 데이터베이스의 연결 정보를 제공 합니다. ([클릭 하 여 큰 이미지 보기](configuring-a-website-that-uses-application-services-cs/_static/image6.jpg))
 
-
 후속 스크린 응용 프로그램 서비스 데이터베이스 개체를 지정한 데이터베이스에 추가 될 예정인 수행 되는 정보, 즉 작업을 요약 합니다. 이 작업을 완료 옆에 있는 클릭 합니다. 몇 분 후 (그림 3 참조) 데이터베이스 개체를 추가한는 주목할 최종 화면이 표시 됩니다.
-
 
 [![성공 했습니다. 프로덕션 데이터베이스에 추가 된 응용 프로그램 서비스 데이터베이스 개체](configuring-a-website-that-uses-application-services-cs/_static/image8.jpg)](configuring-a-website-that-uses-application-services-cs/_static/image7.jpg)
 
 **그림 3**: 성공 응용 프로그램 서비스 데이터베이스 개체에 추가 된 프로덕션 데이터베이스 ([클릭 하 여 큰 이미지 보기](configuring-a-website-that-uses-application-services-cs/_static/image9.jpg))
 
-
 를 응용 프로그램 서비스 데이터베이스 개체를 프로덕션 데이터베이스에 성공적으로 추가 되었는지 확인 하려면 SQL Server Management Studio 열고 프로덕션 데이터베이스에 연결 합니다. 이제 데이터베이스에서 응용 프로그램 서비스 데이터베이스 테이블 그림 4에서 알 수 있듯이, 표시 `aspnet_Applications`하십시오 `aspnet_Membership`, `aspnet_Users`등.
-
 
 [![데이터베이스 개체를 프로덕션 데이터베이스에 추가 되었는지 확인 합니다.](configuring-a-website-that-uses-application-services-cs/_static/image11.jpg)](configuring-a-website-that-uses-application-services-cs/_static/image10.jpg)
 
 **그림 4**: 데이터베이스 개체를 프로덕션 데이터베이스에 추가 되었는지 확인 ([클릭 하 여 큰 이미지 보기](configuring-a-website-that-uses-application-services-cs/_static/image12.jpg))
-
 
 사용 해야만 `aspnet_regsql.exe` 처음으로 또는 응용 프로그램 서비스를 사용 하 여 시작 된 후 처음으로 웹 응용 프로그램을 배포 하는 경우 도구입니다. 이러한 데이터베이스는 다시 추가 하거나 수정할 필요가 프로덕션 데이터베이스에서 개체가 됩니다.
 
@@ -152,7 +137,6 @@ S를 사용 하 여 프로덕션 데이터베이스에 데이터베이스 개체
 
 > [!NOTE]
 > 한다면이 경우-일치 하지 않습니다를 사용 하 여 프로덕션에 복사 하는 사용자 계정과 `ApplicationId` 값이 잘못 된 업데이트 쿼리를 작성할 수 있습니다 `ApplicationId` 값을 `ApplicationId` 프로덕션에서 사용 합니다. 업데이트 되 면 개발 환경에서 생성 된 계정을 가진 사용자가 이제 프로덕션 환경에서 웹 응용 프로그램에 로그인 할 것입니다.
-
 
 좋은 소식은 두 가지 환경 동일한을 사용 하는지 확인 하기 위해 취할 수는 간단한 단계는 `ApplicationId` -명시적으로 설정 합니다 `applicationName` 특성 `Web.config` 모든 응용 프로그램 서비스 공급자에 대 한 합니다. 명시적으로 설정 합니다 `applicationName` 에서 특성을 "BookReviews"는 `<membership>` 및 `<roleManager>` 요소에서이 코드 조각으로 `Web.config` 보여 줍니다.
 
@@ -171,11 +155,9 @@ ASP.NET 웹 사이트 관리 도구 (WSAT) 쉽게 만들고 및 사용자 계정
 > [!NOTE]
 > ASP.NET 웹 로그인 관련 컨트롤을 함께 멤버 자격 및 역할 Api를 사용 하는 방법은 읽을 수 있는지에 대 한 필자의 [ *웹 사이트 보안 자습서*](../../older-versions-security/introduction/security-basics-and-asp-net-support-cs.md)합니다. CreateUserWizard 컨트롤 사용자 지정에 대 한 자세한 내용은 참조는 [ *사용자 계정 만들기* ](../../older-versions-security/membership/creating-user-accounts-cs.md) 하 고 [ *추가 사용자 정보 저장* ](../../older-versions-security/membership/storing-additional-user-information-cs.md) 자습서 또는 체크 아웃 [ *Erich Peterson* ](http://www.erichpeterson.com/) 의 기사 [ *CreateUserWizard 컨트롤 사용자 지정* ](http://aspnet.4guysfromrolla.com/articles/070506-1.aspx).
 
-
 [![관리자는 새 사용자 계정을 만들 수 있습니다.](configuring-a-website-that-uses-application-services-cs/_static/image14.jpg)](configuring-a-website-that-uses-application-services-cs/_static/image13.jpg)
 
 **그림 5**: 관리자 수 있습니다 새 사용자 계정 만들기 ([클릭 하 여 큰 이미지 보기](configuring-a-website-that-uses-application-services-cs/_static/image15.jpg))
-
 
 WSAT 체크 아웃의 전체 기능을 사용 해야 하는 경우 [ *롤링 사용자 고유의 웹 사이트 관리 도구*](http://aspnet.4guysfromrolla.com/articles/052307-1.aspx), 저자에서 Dan Clem 안내를 사용자 지정 WSAT 같은 도구를 빌드하는 프로세스입니다. Dan 자신의 응용 프로그램의 소스 코드 (C#)를 공유 하 고 호스팅된 웹 사이트에 추가 하기 위한 단계별 지침을 제공 합니다.
 

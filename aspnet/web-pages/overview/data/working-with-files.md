@@ -8,12 +8,12 @@ ms.date: 02/20/2014
 ms.assetid: eee916e4-ba4c-439a-a24e-68df7d45a569
 msc.legacyurl: /web-pages/overview/data/working-with-files
 msc.type: authoredcontent
-ms.openlocfilehash: 4a62cce3af57b507882744f948ce208becdb03ac
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3ff852232212ddda4930597731911be60c092667
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59382305"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108942"
 ---
 # <a name="working-with-files-in-an-aspnet-web-pages-razor-site"></a>ASP.NET 웹 페이지 (Razor) 사이트에서 파일 사용
 
@@ -48,7 +48,6 @@ ms.locfileid: "59382305"
 >   
 > 
 > 이 자습서 에서도 WebMatrix 3를 사용 하 여 작동합니다.
-
 
 <a id="Creating_a_Text_File"></a>
 ## <a name="creating-a-text-file-and-writing-data-to-it"></a>텍스트 파일을 만들고 데이터를 쓰려면
@@ -145,7 +144,6 @@ ms.locfileid: "59382305"
 > 
 > Microsoft Excel을 사용 하 여 쉼표로 구분 된 파일로 스프레드시트에 포함 된 데이터를 저장할 수 있습니다 (*.csv* 파일). 작업을 수행 하면 파일은 Excel 형식이 일반 텍스트로 저장 됩니다. 스프레드시트의 각 행은 텍스트 파일의 줄 바꿈으로 구분 됩니다 하 고 각 데이터 항목을 쉼표로 구분 됩니다. 파일을 읽을 Excel 쉼표로 구분 된 코드에서 데이터 파일의 이름을 변경 하 여 이전 예제에 나와 있는 코드를 사용할 수 있습니다.
 
-
 <a id="Deleting_Files"></a>
 ## <a name="deleting-files"></a>파일 삭제
 
@@ -154,7 +152,6 @@ ms.locfileid: "59382305"
 > [!NOTE] 
 > 
 > **중요 한** 프로덕션 웹 사이트에서 일반적으로 제한할 있습니다 데이터를 변경 하려면 허용할 사람입니다. 멤버 자격을 설정 하는 방법에 대 한 사이트에서 작업을 수행 하는 사용자 권한을 부여 하는 방법에 대 한 정보를 참조 하세요 [추가 보안 및 ASP.NET 웹 페이지 사이트 멤버 자격](https://go.microsoft.com/fwlink/?LinkId=202904)합니다.
-
 
 1. 웹 사이트를 라는 하위 폴더를 만듭니다 *이미지*합니다.
 2. 하나 이상의 복사본 *.jpg* 파일에 *이미지* 폴더입니다.
@@ -255,7 +252,6 @@ ms.locfileid: "59382305"
 
 <a id="Additional_Resources"></a>
 ## <a name="additional-resources"></a>추가 리소스
-
 
 [ASP.NET 웹 페이지 사이트에서 이미지 작업](https://go.microsoft.com/fwlink/?LinkId=202897)
 

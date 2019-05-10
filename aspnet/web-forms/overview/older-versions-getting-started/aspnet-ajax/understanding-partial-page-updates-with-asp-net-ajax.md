@@ -8,12 +8,12 @@ ms.date: 03/28/2008
 ms.assetid: 54d9df99-1161-4899-b4e8-2679c85915e7
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/aspnet-ajax/understanding-partial-page-updates-with-asp-net-ajax
 msc.type: authoredcontent
-ms.openlocfilehash: d2d7982a4e0175824ffede965dc8206219485df2
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: aa842aeb228abc763540d8ca8dafdfdca0b8b395
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396475"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65109009"
 ---
 # <a name="understanding-partial-page-updates-with-aspnet-ajax"></a>ASP.NET AJAX를 사용한 부분 페이지 업데이트 이해
 
@@ -22,7 +22,6 @@ ms.locfileid: "59396475"
 [PDF 다운로드](http://download.microsoft.com/download/C/1/9/C19A3451-1D14-477C-B703-54EF22E197EE/AJAX_tutorial01_Partial_Page_Updates_cs.pdf)
 
 > 아마도 ASP.NET AJAX Extensions의 두드러진 기능 하는 기능 코드 변경 내용 및 최소 태그 변경 내용을 서버에 전체 포스트백을 수행 하지 않고 부분 또는 증분 페이지 업데이트를 수행 합니다. 장점은 광범위 한 – 멀티미디어 (예: Adobe Flash 또는 Windows 미디어)의 상태가 변경, 대역폭 비용을 감소 및 클라이언트 포스트백을 통해 일반적으로 관련 된 깜박임 발생 하지 않습니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -48,7 +47,6 @@ Microsoft의 ASP.NET AJAX 확장을 입력 합니다. AJAX의 약자인 **A** �
 
 ## <a name="walkthrough-integrating-partial-rendering-into-an-existing-project"></a>연습: 부분 렌더링을 기존 프로젝트에 통합
 
-
 1. Microsoft Visual Studio 2008로 이동 하 여 새 ASP.NET 웹 사이트 프로젝트를 만듭니다 <em>파일</em>  <em>- &gt; New</em>  <em>- &gt; 웹사이트</em> 대화 상자에서 ASP.NET 웹 사이트를 선택 합니다. 원하는 이름을 지정할 수 있습니다 하 고 파일 시스템 또는 인터넷 정보 서비스 (IIS)에 설치할 수 있습니다.
 2. 기본 ASP.NET 태그를 사용 하 여 빈 기본 페이지를 사용 하 여 표시 됩니다 (서버 쪽 양식의 및 `@Page` 지시문). 라는 레이블을 넣으면 `Label1` 단추를 호출 하 고 `Button1` form 요소 안에 있는 페이지를 합니다. 원하는을 해당 텍스트 속성을 설정할 수 있습니다.
 3. 디자인 뷰에서 두 번 클릭 `Button1` 코드 숨김 이벤트 처리기를 생성 합니다. 이 이벤트 처리기 내에서 설정 `Label1.Text` 에 단추를 클릭 하면! .
@@ -64,11 +62,9 @@ Microsoft의 ASP.NET AJAX 확장을 입력 합니다. AJAX의 약자인 **A** �
 1. F5 키를 눌러 웹 사이트를 시작 합니다. Visual Studio 디버깅을 사용 하도록 설정 하려면 web.config 파일을 추가 하 라는 메시지가 나타납니다. 이렇게 합니다. 단추를 클릭 하면 레이블은 텍스트를 변경 하려면 페이지가 새로 고쳐지고 하 고 페이지를 다시 그릴 간략 한 깜박임이 알 수 있습니다.
 2. 브라우저 창을 닫으면 Visual Studio에는 태그 페이지를 반환 합니다. Visual Studio 도구 상자에서 아래로 스크롤하여 AJAX Extensions 라는 레이블이 지정 된 탭을 찾습니다. (이전 버전의 Atlas 또는 AJAX 확장을 사용 하 고 있으므로이 탭 없는, 하는 경우이 백서 뒷부분에서 AJAX 확장 도구 상자 항목을 등록 하는 것에 대 한 연습을 참조 또는 다운로드할 수 있는 Windows Installer를 사용 하 여 현재 버전을 설치 합니다. 웹 사이트에서).
 
-
 [![](understanding-partial-page-updates-with-asp-net-ajax/_static/image2.png)](understanding-partial-page-updates-with-asp-net-ajax/_static/image1.png)
 
 ([클릭 하 여 큰 이미지 보기](understanding-partial-page-updates-with-asp-net-ajax/_static/image3.png))
-
 
 1. <em>알려진된 문제:</em>Visual Studio 2008 AJAX 확장 도구 상자 항목을 가져오게 ASP.NET 2.0 AJAX Extensions를 사용 하 여 설치 하는 Visual Studio 2005에 이미 있는 컴퓨터에 Visual Studio 2008을 설치 하는 경우. 구성 요소;의 도구 설명을 검사 하 여 대/소문자 인지 여부를 확인할 수 있습니다. 이러한 버전 3.5.0.0 나타나야 합니다. 버전 2.0.0.0 야 말로 다음 이전 도구 상자 항목을 가져온를 Visual Studio에서 도구 상자 항목 선택 대화 상자를 사용 하 여 수동으로 가져올 해야 합니다. 디자이너를 통해 버전 2 컨트롤을 추가할 수 없습니다.
 
@@ -76,11 +72,9 @@ Microsoft의 ASP.NET AJAX 확장을 입력 합니다. AJAX의 약자인 **A** �
 3. 닫는 끌어 `</asp:UpdatePanel>` 래핑된 레이블과 단추 컨트롤을 사용 하 여 요소를 제대로 구성 된 있도록 단추 요소의 끝 태그입니다.
 4. 연 후 `<asp:UpdatePanel>` 태그, 여는 새 태그를 시작 합니다. IntelliSense 묻는 두 가지 옵션을 참고 합니다. 이 경우 만들기는 `<ContentTemplate>` 태그입니다. 태그는 잘 구성 된이 태그에 레이블 및 단추 주위를 래핑할 해야 합니다.
 
-
 [![](understanding-partial-page-updates-with-asp-net-ajax/_static/image5.png)](understanding-partial-page-updates-with-asp-net-ajax/_static/image4.png)
 
 ([클릭 하 여 큰 이미지 보기](understanding-partial-page-updates-with-asp-net-ajax/_static/image6.png))
-
 
 1. 어느 부분에 `<form>` 요소를 ScriptManager 컨트롤을 두 번 클릭 하 여 포함는 `ScriptManager` 도구 상자의 항목.
 2. 편집 된 `<asp:ScriptManager>` 특성이 포함 되도록 태그 `EnablePartialRendering= true`합니다.
@@ -93,11 +87,9 @@ Microsoft의 ASP.NET AJAX 확장을 입력 합니다. AJAX의 약자인 **A** �
 
 1. Visual Studio 2008의 새로운: Web.config를 사용 하 여 ASP.NET 웹 사이트 프로젝트 템플릿을 자동으로 ASP.NET AJAX 확장에 대 한 모든 필요한 참조를 포함 하 고 포함을 함께 제공 되는 추가 사용 하도록 설정 되지 않은 mmented 수 있는 구성 정보의 섹션을 주석 처리 기능입니다. Visual Studio 2005는 ASP.NET 2.0 AJAX Extensions가 설치 된 경우 유사한 템플릿이 있었습니다. 그러나 Visual Studio 2008에서의 AJAX 확장은 옵트아웃 기본적으로 (즉, 기본적으로 참조는 있지만 참조를 제거할 수 있습니다).
 
-
 [![](understanding-partial-page-updates-with-asp-net-ajax/_static/image8.png)](understanding-partial-page-updates-with-asp-net-ajax/_static/image7.png)
 
 ([클릭 하 여 큰 이미지 보기](understanding-partial-page-updates-with-asp-net-ajax/_static/image9.png))
-
 
 1. F5 키를 눌러 웹 사이트를 시작 합니다. 소스 코드 변경 내용이 없습니다. 부분 렌더링을 지 원하는 데 필요한-만 태그를 변경 하는 방법을 note 합니다.
 
@@ -233,16 +225,13 @@ UpdatePanel은 JavaScript XMLHttpRequest의 컨텍스트 내에서 ASP.NET 포�
 
 폼을, 무엇 보다도 폼 이나 컨트롤에 city 및 state 필드를 채우는 해야 하는 우편 번호 textbox는 것이 좋습니다. 이 폼은 궁극적으로 사용자의 이름, 주소 및 연락처 정보를 포함 한 멤버 자격 정보를 수집 합니다. 특정 프로젝트 요구 사항에 기반을 고려해 야 할 많은 디자인 고려 사항이 있습니다.
 
-
 [![](understanding-partial-page-updates-with-asp-net-ajax/_static/image11.png)](understanding-partial-page-updates-with-asp-net-ajax/_static/image10.png)
 
 ([클릭 하 여 큰 이미지 보기](understanding-partial-page-updates-with-asp-net-ajax/_static/image12.png))
 
-
 [![](understanding-partial-page-updates-with-asp-net-ajax/_static/image14.png)](understanding-partial-page-updates-with-asp-net-ajax/_static/image13.png)
 
 ([클릭 하 여 큰 이미지 보기](understanding-partial-page-updates-with-asp-net-ajax/_static/image15.png))
-
 
 이 응용 프로그램의 원래 반복 우편 번호, 도시 및 상태를 포함 하 여 사용자 등록 데이터의 전체를 통합 하는 컨트롤을 구축 되었습니다. 전체 컨트롤 UpdatePanel 내 래핑되고 웹 폼으로 삭제 되었습니다. 사용자가 우편 번호를 입력 하면 UpdatePanel 이벤트 (백 엔드, 또는 트리거를 지정 하 여 true로 ChildrenAsTriggers 속성 집합을 사용 하 여 해당 TextChanged 이벤트)를 검색 합니다. FireBug에서 확보 UpdatePanel에 있는 필드의 모든 AJAX 포스트백 (오른쪽 다이어그램 참조).
 
@@ -252,11 +241,9 @@ ASP.NET AJAX는 프레젠테이션을 업데이트 하는 방법을 확인 하�
 
 DOM의 재생성 다양을 한 추가 문제를 트리거합니다.
 
-
 [![](understanding-partial-page-updates-with-asp-net-ajax/_static/image17.png)](understanding-partial-page-updates-with-asp-net-ajax/_static/image16.png)
 
 ([클릭 하 여 큰 이미지 보기](understanding-partial-page-updates-with-asp-net-ajax/_static/image18.png))
-
 
 - 포커스가 있는 HTML 요소 UpdatePanel 내에 있으면 포커스가 사라집니다. 따라서 우편 텍스트 상자를 종료 하려면 Tab 키를 누르면 사용자에 대 한 다음 대상 되었을 City 텍스트 상자입니다. 그러나 UpdatePanel 새로 표시 되 면 폼은 더 이상 포커스를 하며 Tab 키를 누르면 시작 포커스 요소 (예: 링크)를 강조 표시 합니다.
 - 모든 유형의 사용자 지정 클라이언트 쪽 스크립트 사용 중인 경우 함수에 의해 액세스 DOM 요소에 대 한 참조 유지 되도록 될 수 있습니다 존재 하지 않는 부분 포스트백 후.

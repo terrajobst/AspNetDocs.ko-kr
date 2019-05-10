@@ -8,12 +8,12 @@ ms.date: 03/31/2010
 ms.assetid: 85554606-47cb-4e4f-9848-eed9da579056
 msc.legacyurl: /web-forms/overview/data-access/introduction/creating-a-business-logic-layer-cs
 msc.type: authoredcontent
-ms.openlocfilehash: fd3bf46394f562462c561bf06370d2f372e47d0a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c0278841b7b0701f09b2de5115e06da87aed49cf
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59415265"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65109031"
 ---
 # <a name="creating-a-business-logic-layer-c"></a>비즈니스 논리 레이어 만들기(C#)
 
@@ -23,18 +23,15 @@ ms.locfileid: "59415265"
 
 > 이 자습서에는 계층 BLL (비즈니스 논리) 프레젠테이션 계층과 DAL 간의 데이터 교환 위한 중간자로 사용 되는 비즈니스 규칙에 중앙 집중화 하는 방법을 살펴보겠습니다.
 
-
 ## <a name="introduction"></a>소개
 
 (DAL (데이터 액세스 계층)에서 만든 합니다 [첫 번째 자습서](creating-a-data-access-layer-cs.md) 프레젠테이션 논리에서 논리를 액세스 하는 데이터를 명확 하 게 구분 합니다. 그러나 DAL 프레젠테이션 계층에서 데이터 액세스 세부 정보를 명확 하 게 구분을 하는 동안 적용 될 수 있는 모든 비즈니스 규칙 적용 하지 않습니다. 예를 들어, 응용 프로그램에서는 허용 하지 않을 수는 `CategoryID` 또는 `SupplierID` 필드를 `Products` 수정할 때 테이블은 `Discontinued` 필드를 1로 설정 하거나 하고자 할 수 있습니다 이라는 규칙을 적용 하는 경우를 금지는 직원 하 고용 된 사람에 의해 관리 됩니다. 또 다른 일반적인 시나리오는 특정 역할에 사용자를 가장만 권한 부여 제품 삭제 하거나 변경할 수는 `UnitPrice` 값입니다.
 
 이 자습서에는 계층 BLL (비즈니스 논리) 프레젠테이션 계층과 DAL 간의 데이터 교환 위한 중간자로 사용 되는 이러한 비즈니스 규칙에 중앙 집중화 하는 방법을 살펴보겠습니다. 실제 응용 프로그램에서는 별도 클래스 라이브러리 프로젝트로; BLL은 구현 그러나이 자습서에 대 한 구현 하겠습니다 BLL 일련의 클래스는 `App_Code` 프로젝트 구조를 단순화 하기 위해 폴더입니다. 그림 1에서는 프레젠테이션 계층, BLL 및 DAL 간의 아키텍처 관계를 보여 줍니다.
 
-
 ![BLL은 데이터 액세스 계층에서 프레젠테이션 계층을 분리 하 고 비즈니스 규칙 적용](creating-a-business-logic-layer-cs/_static/image1.png)
 
 **그림 1**: BLL은 데이터 액세스 계층에서 프레젠테이션 계층을 분리 하 고 비즈니스 규칙 적용
-
 
 ## <a name="step-1-creating-the-bll-classes"></a>1단계: BLL 클래스 만들기
 
@@ -44,17 +41,14 @@ ms.locfileid: "59415265"
 
 다음으로, 네 개의 BLL 클래스 파일을 만듭니다는 `BLL` 하위 폴더입니다. 이렇게 하려면 마우스 오른쪽 단추로 클릭는 `BLL` 하위 폴더에 새 항목 추가 선택 하 고 클래스 템플릿을 선택 합니다. 4 개 클래스의 이름을 `ProductsBLL`, `CategoriesBLL`를 `SuppliersBLL`, 및 `EmployeesBLL`합니다.
 
-
 ![App_Code 폴더에 4 개의 새 클래스 추가](creating-a-business-logic-layer-cs/_static/image2.png)
 
 **그림 2**: 4 개의 새 클래스를 추가 합니다 `App_Code` 폴더
-
 
 다음으로, 첫 번째 자습서에서 Tableadapter에 대 한 정의 된 메서드를 래핑하는 클래스의 각 메서드를 추가 해 보겠습니다. 이제 이러한 메서드를 호출 하면 직접 DAL; 나중에 필요한 비즈니스 논리 추가 반환 합니다.
 
 > [!NOTE]
 > Visual Studio Standard Edition을 사용 하는 경우 또는 위의 (즉, 여러분이 *하지* Visual Web Developer를 사용 하 여), 필요에 따라 시각적으로 사용 하 여 클래스를 디자인할 수 있습니다를 [클래스 디자이너](https://msdn.microsoft.com/library/default.asp?url=/library/dv_vstechart/html/clssdsgnr.asp)합니다. 참조 된 [클래스 디자이너 블로그](https://blogs.msdn.com/classdesigner/default.aspx) Visual Studio에서이 새로운 기능에 대 한 자세한 내용은 합니다.
-
 
 에 대 한는 `ProductsBLL` 클래스는 총 7 개의 메서드를 추가 해야 합니다.
 
@@ -67,7 +61,6 @@ ms.locfileid: "59415265"
 - `DeleteProduct(productID)` 데이터베이스에서 지정된 된 제품 삭제
 
 ProductsBLL.cs
-
 
 [!code-csharp[Main](creating-a-business-logic-layer-cs/samples/sample1.cs)]
 
@@ -107,7 +100,6 @@ ProductsBLL.cs
 
 주목할 만한 한 가지 방법은 합니다 `SuppliersBLL` 클래스의 `UpdateSupplierAddress` 메서드. 이 메서드는 방금 공급자의 주소 정보를 업데이트 하는 것에 대 한 인터페이스를 제공 합니다. 이 메서드는 내부적으로 읽습니다 합니다 `SupplierDataRow` 지정 된 개체 `supplierID` (사용 하 여 `GetSupplierBySupplierID`), 주소 관련 속성을 설정 하 고 다음에 호출 합니다 `SupplierDataTable`의 `Update` 메서드. `UpdateSupplierAddress` 메서드 다음과 같습니다.
 
-
 [!code-csharp[Main](creating-a-business-logic-layer-cs/samples/sample2.cs)]
 
 전체 구현은 클래스 BLL에 대 한이 기사의 다운로드를 참조 하십시오.
@@ -116,21 +108,17 @@ ProductsBLL.cs
 
 첫 번째 자습서에 대 한 예제를 직접 입력 데이터 집합을 사용 하 여 프로그래밍 방식으로 살펴보았습니다 있지만 클래스 BLL 추가 하 여 프레젠테이션 계층을 사용할 BLL에 대해 대신 합니다. 에 `AllProducts.aspx` 첫 번째 자습서의 예제는 `ProductsTableAdapter` 다음 코드에 표시 된 대로 제품 목록의 GridView에 바인딩하는 데 사용 되었습니다:
 
-
 [!code-csharp[Main](creating-a-business-logic-layer-cs/samples/sample3.cs)]
 
 새 BLL을 사용 하도록 변경 해야 하는 모든 클래스는 코드의 첫 번째 줄 바꾸기만 합니다 `ProductsTableAdapter` 개체를 `ProductBLL` 개체:
-
 
 [!code-csharp[Main](creating-a-business-logic-layer-cs/samples/sample4.cs)]
 
 ObjectDataSource를 사용 하 여 클래스 BLL를 선언적 (입력 데이터 집합 수)으로 액세스할 수도 있습니다. 살펴보겠습니다. 자세히 ObjectDataSource를 다음 자습서에서입니다.
 
-
 [![제품 목록 GridView에 표시 됩니다.](creating-a-business-logic-layer-cs/_static/image4.png)](creating-a-business-logic-layer-cs/_static/image3.png)
 
 **그림 3**: 제품 목록 GridView에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](creating-a-business-logic-layer-cs/_static/image5.png))
-
 
 ## <a name="step-3-adding-field-level-validation-to-the-datarow-classes"></a>3단계: DataRow 클래스에 필드 수준 유효성 검사 추가
 
@@ -145,24 +133,19 @@ ObjectDataSource를 사용 하 여 클래스 BLL를 선언적 (입력 데이터 
 
 데이터베이스에서 이러한 규칙을 적용 하는 것 외에도 이러한도 적용할 데이터 집합 수준에 있습니다. 사실, 필드 길이 및 값이 필수 또는 선택적인 이미 각 데이터 테이블의 DataColumns 집합에 대 한 캡처됩니다. 자동으로 제공 하는 기존 필드 수준 유효성 검사를 확인 하려면 디자이너로 이동 하 여 데이터 집합, 하나는 Datatable에서 필드를 선택 하 고 속성 창에 이동 합니다. 그림 4에서 알 수 있듯이, 합니다 `QuantityPerUnit` DataColumn의 합니다 `ProductsDataTable` 최대 길이가 20 자가 고 허용 않는 `NULL` 값. 설정 하려고 하는 경우는 `ProductsDataRow`의 `QuantityPerUnit` 20 자 보다 긴 문자열 값으로 속성을 `ArgumentException` throw 됩니다.
 
-
 [![DataColumn 기본 필드 수준 유효성 검사를 제공합니다.](creating-a-business-logic-layer-cs/_static/image7.png)](creating-a-business-logic-layer-cs/_static/image6.png)
 
 **그림 4**: DataColumn 제공 기본 필드 수준 유효성 검사 ([클릭 하 여 큰 이미지 보기](creating-a-business-logic-layer-cs/_static/image8.png))
 
-
 안타깝게도 없습니다 지정 범위 검사와 같은 `UnitPrice` 속성 창을 통해 0 보다 크거나 값 이어야 합니다. 이 형식의 필드 수준 유효성 검사를 제공 하기 위해 DataTable의에 대 한 이벤트 처리기를 생성 해야 [ColumnChanging](https://msdn.microsoft.com/library/system.data.datatable.columnchanging%28VS.80%29.aspx) 이벤트입니다. 에 설명 된 대로 합니다 [이전 자습서](creating-a-data-access-layer-cs.md), partial 클래스를 사용 하 여 입력 데이터 집합에서 만든 데이터 집합, Datatable 및 DataRow 개체를 확장할 수 있습니다. 만들 수 있습니다이 기술을 사용 하는 `ColumnChanging` 에 대 한 이벤트 처리기는 `ProductsDataTable` 클래스입니다. 클래스를 만들어 시작 합니다 `App_Code` 라는 폴더 `ProductsDataTable.ColumnChanging.cs`합니다.
-
 
 [![App_Code 폴더에 새 클래스를 추가 합니다.](creating-a-business-logic-layer-cs/_static/image10.png)](creating-a-business-logic-layer-cs/_static/image9.png)
 
 **그림 5**: 새 클래스를 추가 합니다 `App_Code` 폴더 ([큰 이미지를 보려면 클릭](creating-a-business-logic-layer-cs/_static/image11.png))
 
-
 다음에 대 한 이벤트 처리기를 만듭니다는 `ColumnChanging` 되도록 하는 이벤트를 `UnitPrice`, `UnitsInStock`, `UnitsOnOrder`, 및 `ReorderLevel` 열 값 (그렇지 않은 경우 `NULL`)는 0 보다 크거나 같은 경우. 이러한 열이 범위를 벗어나는 경우 throw는 `ArgumentException`합니다.
 
 ProductsDataTable.ColumnChanging.cs
-
 
 [!code-csharp[Main](creating-a-business-logic-layer-cs/samples/sample5.cs)]
 
@@ -180,13 +163,11 @@ ProductsDataTable.ColumnChanging.cs
 
 이 비즈니스 규칙을 적용 하는 `UpdateProducts` 메서드를 확인 하 여 시작 했습니다 `Discontinued` 로 설정 된 `true` 따라서 호출 하는 경우 `GetProductsBySupplierID` 에서는이 제품의 공급이 업체에서 구매한 제품 수를 결정 하 합니다. 경우에이 공급 업체에서 구매한 제품 하나를 두어는 `ApplicationException`합니다.
 
-
 [!code-csharp[Main](creating-a-business-logic-layer-cs/samples/sample6.cs)]
 
 ## <a name="responding-to-validation-errors-in-the-presentation-tier"></a>프레젠테이션 계층에서 유효성 검사 오류에 응답
 
 프레젠테이션 계층에서 BLL을 호출할 때 발생할 수 있습니다 또는 ASP.NET 버블링 수 있도록 하는 모든 예외를 처리할 것인지를 결정할 수 있습니다 (발생 시키고 합니다 `HttpApplication`의 `Error` 이벤트). BLL을 사용 하 여 프로그래밍 방식으로 작업 하는 경우 예외를 처리를 사용할 수 있습니다는 [try... catch](https://msdn.microsoft.com/library/0yd65esw.aspx) 다음 예와 같이 블록:
-
 
 [!code-csharp[Main](creating-a-business-logic-layer-cs/samples/sample7.cs)]
 

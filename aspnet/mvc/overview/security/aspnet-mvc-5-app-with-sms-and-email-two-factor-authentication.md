@@ -8,12 +8,12 @@ ms.date: 08/20/2015
 ms.assetid: f50a5cdb-c06a-46ed-aa14-fc5b049dc8dc
 msc.legacyurl: /mvc/overview/security/aspnet-mvc-5-app-with-sms-and-email-two-factor-authentication
 msc.type: authoredcontent
-ms.openlocfilehash: 25d21efaf2f01ee1c162408a3caf699ac818aaa7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2a0275959cbada52b53adca984ee1023a2ee2552
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384963"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112352"
 ---
 # <a name="aspnet-mvc-5-app-with-sms-and-email-two-factor-authentication"></a>SMS 및 전자 메일 2단계 인증을 사용하는 ASP.NET MVC 5 앱
 
@@ -22,7 +22,6 @@ ms.locfileid: "59384963"
 > 이 자습서에서는 2 단계 인증을 사용 하 여 ASP.NET MVC 5 웹 앱을 빌드하는 방법을 보여 줍니다. 완료 해야 [로그인, 전자 메일 확인 및 암호 재설정을 사용 하 여 보안 ASP.NET MVC 5 웹 앱을 만들기](create-an-aspnet-mvc-5-web-app-with-email-confirmation-and-password-reset.md) 계속 하기 전에 합니다. 완성된 된 응용 프로그램을 다운로드할 수 있습니다 [여기](https://code.msdn.microsoft.com/MVC-5-with-2FA-email-8f26d952)합니다. 다운로드는 전자 메일 또는 SMS 공급자를 설정 하지 않고 SMS 및 전자 메일 확인을 테스트할 수 있도록 디버깅 도우미를 포함 합니다.
 > 
 > 이 자습서를 통해 작성 했습니다 [Rick Anderson](https://blogs.msdn.com/rickAndy) (Twitter: [ @RickAndMSFT ](https://twitter.com/RickAndMSFT) ).
-
 
 - [ASP.NET MVC 앱 만들기](#createMvc)
 - [SMS 2 단계 인증에 대 한 설정](#SMS)
@@ -36,7 +35,6 @@ ms.locfileid: "59384963"
 
 > [!NOTE]
 > 경고: 완료 해야 [로그인, 전자 메일 확인 및 암호 재설정을 사용 하 여 보안 ASP.NET MVC 5 웹 앱을 만들기](create-an-aspnet-mvc-5-web-app-with-email-confirmation-and-password-reset.md) 계속 하기 전에 합니다. 설치 해야 합니다 [Visual Studio 2013 업데이트 3](https://go.microsoft.com/fwlink/?LinkId=390465) 이상이 자습서를 완료 합니다.
-
 
 1. 새 ASP.NET 웹 프로젝트를 만들고 MVC 템플릿을 선택 합니다. 또한 web Forms web forms 앱에서 비슷한 단계를 수행할 수 있도록 ASP.NET Id를 지원 합니다.  
     ![](aspnet-mvc-5-app-with-sms-and-email-two-factor-authentication/_static/image1.png)

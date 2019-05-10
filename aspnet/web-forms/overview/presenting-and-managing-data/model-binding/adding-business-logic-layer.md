@@ -8,12 +8,12 @@ ms.date: 02/27/2014
 ms.assetid: 7ef664b3-1cc8-4cbf-bb18-9f0f3a3ada2b
 msc.legacyurl: /web-forms/overview/presenting-and-managing-data/model-binding/adding-business-logic-layer
 msc.type: authoredcontent
-ms.openlocfilehash: a229ebd71c913f3fe086892786988d0b3e42ec88
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: a824d06d3781e11706f2a48d44ea3ad89bdb7c8b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59411581"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65109169"
 ---
 # <a name="adding-business-logic-layer-to-a-project-that-uses-model-binding-and-web-forms"></a>모델 바인딩 및 web forms를 사용 하는 프로젝트에 비즈니스 논리 레이어 추가
 
@@ -26,7 +26,6 @@ ms.locfileid: "59411581"
 > 이 자습서에서 만든 프로젝트를 기반 합니다 [이전](retrieving-data.md) 시리즈의 파트입니다.
 > 
 > 할 수 있습니다 [다운로드](https://go.microsoft.com/fwlink/?LinkId=286116) C# 또는 VB. 전체 프로젝트 다운로드 가능한 코드를 Visual Studio 2012 또는 Visual Studio 2013을 사용 하 여 작동합니다. 이 자습서에 표시 된 Visual Studio 2013 서식 파일 보다 약간 다른 Visual Studio 2012 템플릿을 사용 합니다.
-
 
 ## <a name="what-youll-build"></a>만들 내용
 

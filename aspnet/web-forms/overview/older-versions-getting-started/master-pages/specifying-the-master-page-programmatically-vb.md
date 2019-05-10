@@ -8,12 +8,12 @@ ms.date: 07/28/2008
 ms.assetid: 0edcd653-f24a-41aa-aef4-75f868fe5ac2
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/specifying-the-master-page-programmatically-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 96f6ebb47af38c77cba11a92c883700730324226
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: d075d0b66da8a0f4e2f0155c08b09a02a4ca71fb
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389234"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65106942"
 ---
 # <a name="specifying-the-master-page-programmatically-vb"></a>마스터 페이지를 프로그래밍 방식으로 지정(VB)
 
@@ -23,11 +23,9 @@ ms.locfileid: "59389234"
 
 > PreInit 이벤트 처리기를 통해 프로그래밍 방식으로 콘텐츠 페이지의 마스터 페이지를 설정 하는 방법을 살펴봅니다.
 
-
 ## <a name="introduction"></a>소개
 
 첫 예제에서는 이후 [ *사이트 전체 레이아웃을 사용 하 여 마스터 페이지 만들기*](creating-a-site-wide-layout-using-master-pages-vb.md)페이지를 통해 선언적으로 해당 마스터 페이지를 참조 한 모든 콘텐츠를 `MasterPageFile` 특성을 `@Page`지시문입니다. 다음 예를 들어 `@Page` 지시문의 마스터 페이지 콘텐츠 페이지 링크 `Site.master`:
-
 
 [!code-aspx[Main](specifying-the-master-page-programmatically-vb/samples/sample1.aspx)]
 
@@ -41,11 +39,9 @@ ASP.NET 엔진 페이지의 fuse 해야 요청 콘텐츠 페이지는 ASP.NET �
 
 그림 1에서는이 fusion를 보여 줍니다. 그림 1에 1 단계에는 초기 콘텐츠와 마스터 페이지 컨트롤 계층 구조를 보여 줍니다. PreInit 스테이지 콘텐츠 비상 끝날 때 페이지의 컨트롤에 마스터 페이지 (2 단계)의 해당 ContentPlaceHolders에 추가 됩니다. 이 fusion 후 마스터 페이지는 퓨즈 컨트롤 계층의 루트로 사용 됩니다. 제어를 결합 하는이 계층 구조 완성된 컨트롤 계층 구조 (3 단계)를 생성 하기 위해 페이지에 추가 됩니다. 결과는 페이지의 컨트롤 계층 구조 퓨즈 컨트롤 계층 구조에 포함 됩니다.
 
-
 [![마스터 페이지 콘텐츠 페이지의 컨트롤 계층 구조와 함께 결합 PreInit 단계](specifying-the-master-page-programmatically-vb/_static/image2.png)](specifying-the-master-page-programmatically-vb/_static/image1.png)
 
 **그림 01**: 마스터 페이지 콘텐츠 페이지의 컨트롤 계층 구조와 함께 결합 PreInit 단계 ([클릭 하 여 큰 이미지 보기](specifying-the-master-page-programmatically-vb/_static/image3.png))
-
 
 ## <a name="step-2-setting-themasterpagefileproperty-from-code"></a>2단계: 설정 된`MasterPageFile`코드에서 속성
 
@@ -55,18 +51,15 @@ PreInit 스테이지의 시작 부분에 `Page` 발생 시키는 개체 해당 [
 
 열어서 시작 `Default.aspx.vb`, 사이트의 홈 페이지에 대 한 코드 숨김 클래스 파일입니다. 페이지에 대 한 이벤트 처리기를 추가 `PreInit` 다음 코드에서를 입력 하 여 이벤트:
 
-
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample2.vb)]
 
 여기에서 설정할 수 있습니다는 `MasterPageFile` 속성입니다. 값 할당 되도록 코드 업데이트 "~ / Site.master"에 `MasterPageFile` 속성입니다.
-
 
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample3.vb)]
 
 중단점을 설정 하 고 표시 하면 디버깅 하는 작업을 시작 하는 경우 때마다를 `Default.aspx` 때마다는이 페이지를 포스트백 또는 페이지를 방문 합니다 `Page_PreInit` 이벤트 처리기가 실행 및 `MasterPageFile` 속성에 할당 된 "~ / Site.master"입니다.
 
 재정의할 수 있습니다 합니다 `Page` 클래스의 `OnPreInit` 집합과 메서드는 `MasterPageFile` 속성이 있습니다. 예를 들어 보겠습니다 설정 되지 특정 페이지에서 마스터 페이지에서 아니라 `BasePage`합니다. 기본 페이지를 사용자 지정 클래스를 만든 것을 기억 (`BasePage`)에 [ *마스터 페이지에서 제목, 메타 태그 및 기타 HTML 헤더 지정* ](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb.md) 자습서입니다. 현재 `BasePage` 재정의 된 `Page` 클래스의 `OnLoadComplete` 메서드를 페이지의 설정 `Title` 사이트 맵 데이터를 기반으로 속성입니다. 업데이트 해 보겠습니다 `BasePage` 도 재정의 하 여 `OnPreInit` 프로그래밍 방식으로 마스터 페이지를 지정 하는 방법.
-
 
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample4.vb)]
 
@@ -82,11 +75,9 @@ PreInit 스테이지의 시작 부분에 `Page` 발생 시키는 개체 해당 [
 
 유지 해야 하는 간단히 말해 합니다 `MasterPageFile` 특성을 `@Page` 지시문을 Visual Studio에서 다양 한 디자인 타임 경험해 보세요.
 
-
 [![Visual Studio 사용을 @Page 디자인 뷰를 렌더링 하는 지시문의 MasterPageFile 특성](specifying-the-master-page-programmatically-vb/_static/image5.png)](specifying-the-master-page-programmatically-vb/_static/image4.png)
 
 **그림 02**: Visual Studio에서 사용 하 여 `@Page` 지시문의 `MasterPageFile` 디자인 뷰를 렌더링할 특성 ([전체 크기 이미지를 보려면 클릭](specifying-the-master-page-programmatically-vb/_static/image6.png))
-
 
 ## <a name="step-3-creating-an-alternative-master-page"></a>3단계: 대신 마스터 페이지를 만들기
 
@@ -96,22 +87,18 @@ PreInit 스테이지의 시작 부분에 `Page` 발생 시키는 개체 해당 [
 
 명명 된 루트 폴더에서 마스터 페이지를 새로 만들 `Alternate.master`합니다. 명명 된 웹 사이트에 새 스타일 시트를 추가할 수도 `AlternateStyles.css`합니다.
 
-
 [![다른 추가 웹 사이트에 마스터 페이지 및 CSS 파일](specifying-the-master-page-programmatically-vb/_static/image8.png)](specifying-the-master-page-programmatically-vb/_static/image7.png)
 
 **그림 03**: 웹 사이트에 다른 마스터 페이지 및 CSS 파일 추가 ([클릭 하 여 큰 이미지 보기](specifying-the-master-page-programmatically-vb/_static/image9.png))
-
 
 설계 했지만 `Alternate.master` 남색 배경 및 가운데 페이지의 위쪽에 표시 되는 제목 할 마스터 페이지입니다. 왼쪽 열의 분배 하 고 아래 콘텐츠를 이동 했습니다는 `MainContent` 이제 페이지의 전체 너비로 확장 되는 각각의 ContentPlaceHolder 컨트롤로 합니다. 또한, 순서가 지정 되지 않은 단원 목록 nixed 했으며 위의 가로 목록으로 대체 `MainContent`합니다. 필자는 또한 글꼴 및 색에 사용 되는 마스터 페이지 (을 확장 하면 해당 콘텐츠 페이지) 업데이트. 그림 4에 나와 `Default.aspx` 사용 하는 경우는 `Alternate.master` 마스터 페이지입니다.
 
 > [!NOTE]
 > 정의 하는 기능을 포함 하는 ASP.NET *테마*합니다. 테마는 이미지, CSS 파일 및 스타일 관련 웹 컨트롤 속성 설정을 런타임 시 페이지에 적용할 수 있는 컬렉션. 테마는 사이트의 레이아웃 및 CSS 규칙을 표시 되는 이미지에만 다른 경우 이동 하는 방법입니다. 레이아웃 등 다양 한 웹 컨트롤을 사용 하거나 전혀 다른 레이아웃을 더 크게 달라 집니다 별도 마스터 페이지를 사용 해야 합니다. 테마에 대 한 자세한 내용은이 자습서의 끝에 추가 정보 섹션을 참조 하세요.
 
-
 [![콘텐츠 페이지는 새로운 모양과 느낌을 이제 사용할 수 있습니다.](specifying-the-master-page-programmatically-vb/_static/image11.png)](specifying-the-master-page-programmatically-vb/_static/image10.png)
 
 **그림 04**: 콘텐츠 페이지는 새로운 모양과 느낌을 이제 사용할 수 있습니다 ([클릭 하 여 큰 이미지 보기](specifying-the-master-page-programmatically-vb/_static/image12.png))
-
 
 마스터 및 콘텐츠 페이지의 태그를 결합 하는 경우는 `MasterPage` 모든 콘텐츠를 확인 하는 클래스 콘텐츠 페이지의 컨트롤에 마스터 페이지의 ContentPlaceHolder를 참조 합니다. 존재 하지 않는 ContentPlaceHolder를 참조 하는 콘텐츠 컨트롤을이 없으면 예외가 throw 됩니다. 즉, 반드시 콘텐츠 페이지에 할당 되는 마스터 페이지에는 ContentPlaceHolder 각 콘텐츠 컨트롤의 콘텐츠 페이지입니다.
 
@@ -126,11 +113,9 @@ PreInit 스테이지의 시작 부분에 `Page` 발생 시키는 개체 해당 [
 
 가져오려고 하 `Alternate.master` 마스터 페이지 (그림 4 참조) 마이닝의 마스터 페이지의 스타일을 정의 하 여 시작을 비슷하게 보일 수는 `AlternateStyles.css` 스타일 시트입니다. 에 다음 규칙에 추가할 `AlternateStyles.css`:
 
-
 [!code-css[Main](specifying-the-master-page-programmatically-vb/samples/sample5.css)]
 
 다음으로, 다음 선언적 태그를 추가 `Alternate.master`합니다. 알 수 있듯이 `Alternate.master` 같은 네 가지 ContentPlaceHolder 컨트롤 포함 `ID` 값의 ContentPlaceHolder 컨트롤로 `Site.master`합니다. 또한 ASP.NET AJAX 프레임 워크를 사용 하는 웹 사이트에서 해당 페이지에 필요한 ScriptManager 컨트롤을 포함 합니다.
-
 
 [!code-aspx[Main](specifying-the-master-page-programmatically-vb/samples/sample6.aspx)]
 
@@ -139,7 +124,6 @@ PreInit 스테이지의 시작 부분에 `Page` 발생 시키는 개체 해당 [
 이 새 마스터 페이지 업데이트를 테스트 하는 `BasePage` 클래스의 `OnPreInit` 메서드 있도록를 `MasterPageFile` 속성 값이 할당 됩니다 `"~/Alternate.maser"` 한 후 웹 사이트를 방문 합니다. 모든 페이지는 두 가지를 제외 하 고 오류 없이 작동 해야 합니다. `~/Admin/AddProduct.aspx` 고 `~/Admin/Products.aspx`입니다. 제품의 DetailsView을 추가할 `~/Admin/AddProduct.aspx` 결과 `NullReferenceException` 마스터 페이지의 설정 하려고 시도 하는 코드 줄에서 `GridMessageText` 속성입니다. 방문할 때 `~/Admin/Products.aspx` 는 `InvalidCastException` 메시지를 사용 하 여 페이지 로드 시 throw 됩니다. "종류의 개체를 캐스팅할 수 없습니다. ' ASP.alternate\_마스터 ' 입력 ' ASP.site\_마스터 '."
 
 이러한 오류가 발생할 합니다 `Site.master` 공용 이벤트, 속성 및 메서드에 정의 되어 있지 않은 코드 숨김 클래스에 포함 되어 있습니다 `Alternate.master`합니다. 이러한 두 페이지의 태그 일부를 `@MasterType` 를 참조 하는 지시문의 `Site.master` 마스터 페이지입니다.
-
 
 [!code-aspx[Main](specifying-the-master-page-programmatically-vb/samples/sample7.aspx)]
 
@@ -157,18 +141,15 @@ PreInit 스테이지의 시작 부분에 `Page` 발생 시키는 개체 해당 [
 
 업데이트 프로그램 `BaseMasterPage` 클래스 다음 코드를 포함 합니다.
 
-
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample8.vb)]
 
 다음으로 이동 합니다 `Site.master` 코드 숨김 클래스에서 파생 되 게 및 `BaseMasterPage`합니다. 때문에 `BaseMasterPage` 표시 된 멤버 포함 `MustOverride` 여기에서 해당 멤버를 재정의 해야 `Site.master`합니다. 추가 된 `Overrides` 메서드 및 속성 정의에 키워드입니다. 도 발생 하는 코드를 업데이트 합니다 `PricesDoubled` 이벤트에는 `DoublePrice` 단추의 `Click` 기본 클래스에 대 한 호출을 사용 하 여 이벤트 처리기 `OnPricesDoubled` 메서드.
 
 이러한 수정 후의 `Site.master` 코드 숨김 클래스에 다음 코드를 포함 해야 합니다.
 
-
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample9.vb)]
 
 또한 업데이트 해야 `Alternate.master`의 코드 숨김 클래스를 파생할 `BaseMasterPage` 시키고 두 `MustOverride` 멤버입니다. 그러나 `Alternate.master` 최신 제품 또는 새 제품을 한 후 메시지를 표시 하는 레이블이 데이터베이스에 추가 되는 목록, 이러한 메서드 필요 하지 않다는 수행할 GridView를 포함 하지 않습니다.
-
 
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample10.vb)]
 
@@ -176,11 +157,9 @@ PreInit 스테이지의 시작 부분에 `Page` 발생 시키는 개체 해당 [
 
 했습니다 했으므로 `BaseMasterPage` 클래스를 확장 하 여 두 마스터 페이지에 있는 마지막 단계는 업데이트를 `~/Admin/AddProduct.aspx` 및 `~/Admin/Products.aspx` 이 공통 형식 참조 페이지. 변경 하 여 시작 된 `@MasterType` 지시문 두 페이지에서:
 
-
 [!code-aspx[Main](specifying-the-master-page-programmatically-vb/samples/sample11.aspx)]
 
 대상:
-
 
 [!code-aspx[Main](specifying-the-master-page-programmatically-vb/samples/sample12.aspx)]
 
@@ -188,11 +167,9 @@ PreInit 스테이지의 시작 부분에 `Page` 발생 시키는 개체 해당 [
 
 수행 해야 하는 한 작은 변경 사항은 `~/Admin/AddProduct.aspx`합니다. DetailsView 컨트롤의 `ItemInserted` 이벤트 처리기에서 모두 강력한 형식의 사용 `Master` 속성과 느슨한 형 `Page.Master` 속성입니다. 업데이트 하는 경우 강력한 형식의 참조를 수정 합니다 `@MasterType` 지시문 했지만 느슨한 형 참조를 업데이트 해야 합니다. 다음 코드 줄을 바꿉니다.
 
-
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample13.vb)]
 
 다음으로 캐스팅 `Page.Master` 기본 형식:
-
 
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample14.vb)]
 
@@ -205,14 +182,11 @@ PreInit 스테이지의 시작 부분에 `Page` 발생 시키는 개체 해당 [
 > [!NOTE]
 > 때문에 `Site.master` 고 `Alternate.master` 동일한 설정한 ContentPlaceHolder 컨트롤의 새 콘텐츠 페이지를 만들 때 선택한 마스터 페이지는 중요 하지 않습니다. 일관성을 위해 것이 좋습니다를 사용 하 여 `Site.master`입니다.
 
-
 [![웹 사이트에 새 콘텐츠 페이지를 추가 합니다.](specifying-the-master-page-programmatically-vb/_static/image14.png)](specifying-the-master-page-programmatically-vb/_static/image13.png)
 
 **그림 05**: 웹 사이트에 새 콘텐츠 페이지 추가 ([클릭 하 여 큰 이미지 보기](specifying-the-master-page-programmatically-vb/_static/image15.png))
 
-
 업데이트 된 `Web.sitemap` 이 단원에 대 한 항목을 포함 하는 파일입니다. 아래에 다음 태그를 추가 합니다 `<siteMapNode>` 마스터 페이지 및 ASP.NET AJAX 단원:
-
 
 [!code-xml[Main](specifying-the-master-page-programmatically-vb/samples/sample15.xml)]
 
@@ -220,11 +194,9 @@ PreInit 스테이지의 시작 부분에 `Page` 발생 시키는 개체 해당 [
 
 페이지에 단추 웹 컨트롤을 추가 하 고 설정 해당 `ID` 하 고 `Text` 속성을 `SaveLayout` "저장 레이아웃 선택", 각각. 이 시점에서 페이지의 선언적 태그는 다음과 비슷하게 표시 됩니다.
 
-
 [!code-aspx[Main](specifying-the-master-page-programmatically-vb/samples/sample16.aspx)]
 
 해당 페이지를 처음으로 방문 하는 경우 사용자의 현재 선택 된 마스터 페이지 선택 표시 해야 합니다. 만들기는 `Page_Load` 이벤트 처리기 다음 코드를 추가 합니다.
-
 
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample17.vb)]
 
@@ -232,34 +204,27 @@ PreInit 스테이지의 시작 부분에 `Page` 발생 시키는 개체 해당 [
 
 해야 사용자가 선택한에 저장 하는 코드는 `MyMasterPage` 세션 변수입니다. 이벤트 처리기를 만듭니다는 `SaveLayout` 단추의 `Click` 이벤트 다음 코드를 추가 합니다.
 
-
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample18.vb)]
 
 > [!NOTE]
 > 시간을 `Click` 포스트백 될 때 이벤트 처리기가 실행, 마스터 페이지 이미 선택 되었습니다. 따라서 다음 페이지를 방문 될 때까지 사용자가 드롭다운 목록에서 선택한 적용 되지 않습니다. 합니다 `Response.Redirect` 다시 요청 하려면 브라우저를 강제로 `ChooseMasterPage.aspx`입니다.
 
-
 사용 하 여는 `ChooseMasterPage.aspx` 하도록 페이지 전체에서 마지막 작업은 `BasePage` 할당 합니다 `MasterPageFile` 속성의 값에 따라는 `MyMasterPage` 세션 변수. 세션 변수 설정 하지 않은 경우 `BasePage` 기본적으로 `Site.master`입니다.
-
 
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample19.vb)]
 
 > [!NOTE]
 > 할당 하는 코드를 이동 합니다 `Page` 개체의 `MasterPageFile` 개 속성은 `OnPreInit` 이벤트 처리기 및 두 개의 별도 메서드로 합니다. 이 첫 번째 메서드인 `SetMasterPageFile`를 할당 합니다 `MasterPageFile` 속성 두 번째 메서드에 의해 반환 되는 값을 `GetMasterPageFileFromSession`입니다. 표시 I 합니다 `SetMasterPageFile` 메서드 `Overridable` 수업을 확장할 수 있도록 `BasePage` 필요한 경우 사용자 지정 논리를 구현 하도록 재정의할 필요에 따라 수 있습니다. 재정의 하는 예제를 살펴보겠습니다 `BasePage`의 `SetMasterPageFile` 다음 자습서에서는 속성입니다.
 
-
 이 코드를 사용 하 여 방문을 `ChooseMasterPage.aspx` 페이지입니다. 처음에 `Site.master` 마스터 페이지 선택된 (그림 6 참조), 이지만 사용자 드롭다운 목록에서 다른 마스터 페이지를 선택할 수 있습니다.
-
 
 [![콘텐츠 페이지 Site.master 마스터 페이지를 사용 하 여 표시 됩니다.](specifying-the-master-page-programmatically-vb/_static/image17.png)](specifying-the-master-page-programmatically-vb/_static/image16.png)
 
 **그림 06**: 페이지는 표시를 사용 하 여 콘텐츠를 `Site.master` 마스터 페이지 ([큰 이미지를 보려면 클릭](specifying-the-master-page-programmatically-vb/_static/image18.png))
 
-
 [![콘텐츠 페이지 Alternate.master 마스터 페이지를 사용 하 여 표시 됩니다.](specifying-the-master-page-programmatically-vb/_static/image20.png)](specifying-the-master-page-programmatically-vb/_static/image19.png)
 
 **그림 07**: 페이지는 표시를 사용 하 여 콘텐츠를 `Alternate.master` 마스터 페이지 ([큰 이미지를 보려면 클릭](specifying-the-master-page-programmatically-vb/_static/image21.png))
-
 
 ## <a name="summary"></a>요약
 

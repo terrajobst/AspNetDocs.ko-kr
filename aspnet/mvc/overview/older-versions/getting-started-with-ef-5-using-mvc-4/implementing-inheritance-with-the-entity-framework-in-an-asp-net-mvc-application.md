@@ -8,12 +8,12 @@ ms.date: 07/30/2013
 ms.assetid: a5c3feff-5335-4cdd-a97d-f7a8785c2494
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-inheritance-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: fe2bc91c1bb37282389a45f662a34f8865dee301
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: d61d02e23bbcaf9eff910613880ac49f79c15cac
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381070"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112385"
 ---
 # <a name="implementing-inheritance-with-the-entity-framework-in-an-aspnet-mvc-application-8-of-10"></a>(8 / 10) ASP.NET MVC 응용 프로그램에서 Entity Framework 사용한 상속 구현
 
@@ -26,7 +26,6 @@ ms.locfileid: "59381070"
 > > [!NOTE] 
 > > 
 > > 해결할 수 없는 문제가 발생 하는 경우 [완성 된 장 다운로드](building-the-ef5-mvc4-chapter-downloads.md) 문제를 재현 하려고 합니다. 일반적으로 코드의 완성 된 코드를 비교 하 여 문제에 솔루션을 찾을 수 있습니다. 몇 가지 일반적인 오류 및 해결 하는 방법에 대 한 참조 [오류 및 해결 방법입니다.](advanced-entity-framework-scenarios-for-an-mvc-web-application.md#errors)
-
 
 이전 자습서에서 동시성 예외를 처리 합니다. 이 자습서에서는 데이터 모델에서 상속을 구현하는 방법을 보여 줍니다.
 
@@ -142,7 +141,6 @@ TPH 상속 패턴 일반적으로 더 나은 성능을 낼 TPT 상속 패턴 보
 > [!code-xml[Main](implementing-inheritance-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample8.xml?highlight=1-2)]
 > 
 > 새 데이터베이스에 데이터가 없습니다. 마이그레이션할 및 `update-database` 명령은 오류 없이 완료 될 가능성이 훨씬 더 높습니다. 데이터베이스를 삭제 하는 방법에 지침은 [Visual Studio 2012에서 데이터베이스를 삭제 하는 방법](http://romiller.com/2013/05/17/how-to-drop-a-database-from-visual-studio-2012/)합니다. 이 자습서를 계속 하려면이 방법을 사용 하는 경우는 마이그레이션이 자동으로 실행 될 때 배포 된 사이트에서 동일한 오류를 얻게 되므로이 자습서의 끝에서 배포 단계를 건너뜁니다. 마이그레이션 오류 문제를 해결 하려는 경우 가장 좋은 리소스는 Entity Framework 포럼 또는 StackOverflow.com 중입니다.
-
 
 ## <a name="testing"></a>테스트
 

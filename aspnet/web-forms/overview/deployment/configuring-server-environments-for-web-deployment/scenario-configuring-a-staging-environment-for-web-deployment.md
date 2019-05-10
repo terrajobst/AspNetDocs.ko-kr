@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 5a8e49b7-5317-4125-b107-7e2466b47bb3
 msc.legacyurl: /web-forms/overview/deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-staging-environment-for-web-deployment
 msc.type: authoredcontent
-ms.openlocfilehash: 7e66c6cd8c7296b889dfe6cc1ebd1eb62cda10ea
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: eaa61ca850817f8dd98955b59e94be93389bf256
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384334"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65106842"
 ---
 # <a name="scenario-configuring-a-staging-environment-for-web-deployment"></a>시나리오: 웹 배포용 스테이징 환경 구성
 
@@ -22,7 +22,6 @@ ms.locfileid: "59384334"
 [PDF 다운로드](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > 이 항목에서는 스테이징 환경에 대 한 일반적인 웹 배포 시나리오 및 유사한 환경을 설정 하기 위해 완료 해야 하는 작업을 설명 합니다.
-
 
 조직은 많은 웹 응용 프로그램 또는 웹 사이트에 대 한 업데이트를 미리 보려면 스테이징 환경을 사용 합니다. 이렇게 하면 조직 내 사용자 탐색 하 고 사이트 "위치" 라이브"나 프로덕션 환경에 배포 즉 전에 새로운 기능 또는 콘텐츠를 검토 합니다. 스테이징 환경 현실적인 미리 보기를 제공 하기 위해 프로덕션 환경을 최대한 근접 하 게 복제 하도록 설계 되었습니다. 일반적으로 이러한 종류의 스테이징 환경에 이러한 특징이 있습니다.
 
@@ -33,7 +32,6 @@ ms.locfileid: "59384334"
 
 > [!NOTE]
 > 이 자습서의 범위를 벗어납니다 여러 서버에 데이터베이스 배포를 확장 합니다. 이 영역에 대 한 자세한 내용은 참조 하세요 [SQL Server Books Online](https://technet.microsoft.com/library/ms130214.aspx)합니다.
-
 
 예를 들어, 우리의 [자습서 시나리오](../deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md), Team Foundation Server (TFS) Contact Manager 솔루션을 관리 합니다. Rob Walters, TFS 관리자는 개발자가 필요에 따라 스테이징 환경에 배포를 트리거할 수 있는 빌드 정을 만들었습니다.
 

@@ -8,17 +8,16 @@ ms.date: 02/13/2013
 ms.assetid: b94c8eca-9cde-417e-a8bd-e0ff53600984
 msc.legacyurl: /web-forms/overview/presenting-and-managing-data/model-binding
 msc.type: chapter
-ms.openlocfilehash: e7915b2cf8378c8c4d797ecfd89454ce3f3a570b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 9612371b091d8e75cbf48f19e3fe42e353cf1a77
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59399842"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112421"
 ---
 # <a name="model-binding-and-web-forms-in-visual-studio-2013"></a>Visual Studio 2013의 모델 바인딩 및 Web Forms
 
 > 모델 바인딩 및 Web Forms를 사용 하 여 데이터를 사용 하는 방법입니다.
-
 
 - [데이터 검색 및 표시](retrieving-data.md)
 - [데이터 업데이트, 삭제 및 만들기](updating-deleting-and-creating-data.md)

@@ -8,19 +8,18 @@ ms.date: 01/26/2011
 ms.assetid: 4e43455e-dfa1-42db-83cb-c987703f04b5
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/continuing-with-ef/maximizing-performance-with-the-entity-framework-in-an-asp-net-web-application
 msc.type: authoredcontent
-ms.openlocfilehash: 116c557ad0d6c158f983da75668e634c9eb9747c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 5630200a1ad1d30f6d89b38e15179f15b699fa9f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379594"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108579"
 ---
 # <a name="maximizing-performance-with-the-entity-framework-40-in-an-aspnet-4-web-application"></a>ASP.NET 4 웹 응용 프로그램에서 Entity Framework 4.0으로 성능 극대화
 
 [Tom Dykstra](https://github.com/tdykstra)
 
 > 이 자습서 시리즈에서 만든 Contoso University 웹 응용 프로그램 빌드를 [Entity Framework 4.0을 사용 하 여 시작](https://asp.net/entity-framework/tutorials#Getting%20Started) 자습서 시리즈입니다. 이전 자습서를 완료 하지 않은 경우이 자습서에 대 한 시작 지점으로 할 수 있습니다 [응용 프로그램을 다운로드](https://code.msdn.microsoft.com/ASPNET-Web-Forms-97f8ee9a) 만들어졌을 것입니다. 할 수도 있습니다 [응용 프로그램을 다운로드](https://code.msdn.microsoft.com/ASPNET-Web-Forms-6c7197aa) 전체 자습서 시리즈에서 만들어집니다. 이 자습서에 대 한 질문이 있으면 하기를 게시할 수 있습니다 합니다 [ASP.NET Entity Framework 포럼](https://forums.asp.net/1227.aspx)합니다.
-
 
 이전 자습서에서는 동시성 충돌을 처리 하는 방법을 알아보았습니다. 이 자습서에서는 Entity Framework를 사용 하는 ASP.NET 웹 응용 프로그램의 성능 향상을 위한 옵션을 보여 줍니다. 성능을 극대화 하기 위한 또는 성능 문제를 진단 하기 위한 여러 가지 방법을 알아봅니다.
 
@@ -43,7 +42,6 @@ ms.locfileid: "59379594"
 > 웹 응용 프로그램 성능은 요청 및 응답 데이터의 크기, 데이터베이스 쿼리, 서버 큐에 대기할 수 하는 요청 수 및 속도, 및의 효율성도 서비스할 수의 속도 등을 비롯 한 다양 한 요인의 영향 클라이언트 스크립트 라이브러리를 사용할 수 있습니다. 성능은 응용 프로그램에서 중요 한 경우, 테스트 또는 환경 응용 프로그램 성능이 만족 스 럽 지 정확 하지 않을 표시 되 면 성능 튜닝에 대 한 표준 프로토콜을 따라야 합니다. 측정값을 성능 병목 현상이 발생 하는 위치를 확인 하 고 전체 응용 프로그램 성능에 가장 큰 영향을 주는 영역을 해결 합니다.
 > 
 > 이 항목에서는 특히 ASP.NET에서 Entity Framework의 성능을 잠재적으로 향상 시킬 하는 방법에 주로 중점을 둡니다. 다음 제안 사항을 데이터 액세스 응용 프로그램에서 성능 병목 현상 중 하나 인지 확인 한 경우에 유용 합니다. 여기에서 설명한 방법으로 간주 해서는 안 됩니다 언급 했 듯이 제외 &quot;모범 사례&quot; 일반적-그 중 대부분은 예외적인 상황 에서만에서 또는 성능 병목 현상의 매우 구체적인 종류는 주소에 해당 합니다.
-
 
 이 자습서를 시작 하려면 Visual Studio를 시작 하 고 이전 자습서에서 사용 하 여 작업 하는 Contoso University 웹 응용 프로그램을 엽니다.
 
@@ -179,7 +177,6 @@ Contoso University 응용 프로그램 성능을 눈에 띄게 향상 시킬 수
 > [!NOTE]
 > Visual Studio Ultimate 있는 경우에 다음 절차를 수행할 수 있습니다.
 
-
 원본 코드를 복원 합니다 `GetDepartmentsByName` 메서드를 실행 합니다 *Departments.aspx* 디버거에서 페이지.
 
 Visual Studio에서 선택 합니다 **디버그** 메뉴, **IntelliTrace**를 차례로 **IntelliTrace 이벤트**합니다.
@@ -219,14 +216,12 @@ Visual Studio에서 선택 합니다 **디버그** 메뉴, **IntelliTrace**를 �
 > [!NOTE]
 > 두면 지연 로드 사용, 여러 번 반복 동일한 쿼리를 사용 하 여 여기에서 나타나는 패턴의 지연 로드 될 수 있습니다. 패턴을 방지 하려면 일반적으로 기본 테이블의 모든 행에 대 한 관련된 데이터를 지연 로드입니다. 단일 조인 쿼리는 너무 복잡 하 여 효율적으로 확인 하지 않으면 즉시 로드를 사용 하는 기본 쿼리를 변경 하 여 이러한 경우에는 성능 향상을 위해 일반적으로 수는 있습니다.
 
-
 ## <a name="pre-generating-views"></a>뷰 미리 생성
 
 경우는 `ObjectContext` 개체가 먼저 만들어진 새 응용 프로그램 도메인, Entity Framework에는 데이터베이스에 액세스 하는 데 사용 하는 클래스 집합을 생성 합니다. 이러한 클래스 라고 *뷰*, 매우 큰 데이터 모델에 있는 경우 이러한 뷰를 생성이 지연 될 수 웹 사이트의 요청에 응답 하는 첫 번째 페이지에 대 한 새 응용 프로그램 도메인을 초기화 합니다. 런타임이 아닌 컴파일 시 뷰를 만들어이 첫 번째 요청 지연 시간을 줄일 수 있습니다.
 
 > [!NOTE]
 > 응용 프로그램에 매우 큰 데이터 모델을이 없으면, 큰 데이터 모델을는 것은 IIS 재활용 된 후 첫 번째 페이지 요청에 영향을 주는 성능 문제에 대 한 고려 하지 않는 경우에이 섹션을 건너뛸 수 있습니다. 보기 만들기를 인스턴스화할 때마다 발생 하지 않습니다는 `ObjectContext` 뷰는 응용 프로그램 도메인에 캐시 되므로 개체입니다. 따라서 IIS에서 응용 프로그램을 재활용 자주 하는 경우가 아니면 거의 페이지 요청 미리 생성 된 뷰에서 이익이 됩니다.
-
 
 사용 하 여 뷰를 미리 생성할 수 있습니다 합니다 *EdmGen.exe* 명령줄 도구 또는 사용 하 여를 *Template Transformation Toolkit* (T4) 템플릿. 이 자습서에서는 T4 템플릿입니다.
 

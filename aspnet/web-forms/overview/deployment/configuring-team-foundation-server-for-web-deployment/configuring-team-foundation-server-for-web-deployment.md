@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: ff55233a-e795-4007-a4fc-861fe1bb590b
 msc.legacyurl: /web-forms/overview/deployment/configuring-team-foundation-server-for-web-deployment/configuring-team-foundation-server-for-web-deployment
 msc.type: authoredcontent
-ms.openlocfilehash: 188ab63dd84be5559d5a3646eb95caa77ab01bd1
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 638d696abbc5f05957c0ed2eb7ebb65fce7813ea
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59392003"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133866"
 ---
 # <a name="configuring-team-foundation-server-for-web-deployment"></a>웹 배포용 Team Foundation Server 구성
 
@@ -30,7 +30,6 @@ ms.locfileid: "59392003"
 > - 자동화 된 배포에 대 한 권한을 구성 하는 방법입니다.
 > 
 > 이 자습서의 번역을 이탈리아어를 방문 [ http://www.lucamorelli.it ](http://www.lucamorelli.it)합니다.
-
 
 이 자습서에는 TFS 2010을 설치 및 초기 구성 프로세스의 일부로 팀 프로젝트 컬렉션을 만든가 가정 합니다. 합니다 [Visual Studio 2010에 대 한 Team Foundation 설치 가이드](https://go.microsoft.com/?linkid=9805132) 이러한 작업에 대 한 포괄적인 지침을 제공 합니다.
 

@@ -8,12 +8,12 @@ ms.date: 03/31/2010
 ms.assetid: 67b25f4c-2823-42b6-b07d-1d650b3fd711
 msc.legacyurl: /web-forms/overview/data-access/custom-formatting/using-the-formview-s-templates-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 268403a7b832596421120a24c64580f63eb987c3
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ae21259a14378ea6b41f5d45cf2cac6954175dfa
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59383911"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65109096"
 ---
 # <a name="using-the-formviews-templates-vb"></a>FormView의 템플릿 (VB)를 사용 하 여
 
@@ -22,7 +22,6 @@ ms.locfileid: "59383911"
 [샘플 앱을 다운로드](http://download.microsoft.com/download/5/7/0/57084608-dfb3-4781-991c-407d086e2adc/ASPNET_Data_Tutorial_14_VB.exe) 또는 [PDF 다운로드](using-the-formview-s-templates-vb/_static/datatutorial14vb1.pdf)
 
 > 하지 DetailsView를 달리 FormView 필드로 구성 됩니다. 대신, FormView 템플릿을 사용 하 여 렌더링 됩니다. 살펴보겠습니다이 자습서를 사용 하 여 FormView 컨트롤 데이터의 덜 엄격한 표시를 제공 합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -39,21 +38,17 @@ ms.locfileid: "59383911"
 
 살펴보겠습니다이 자습서를 사용 하 여 FormView 컨트롤이 제품의 표시를 더 융통성을 제공 합니다. 필드 이름, 범주, 공급자 및 등과 FormView의에 대 한 것이 아니라 `ItemTemplate` 헤더 요소를 조합 하 여 이러한 값을 표시 및 `<table>` (그림 1 참조).
 
-
 [![FormView는 DetailsView 나온 표 형태의 레이아웃의 분류](using-the-formview-s-templates-vb/_static/image2.png)](using-the-formview-s-templates-vb/_static/image1.png)
 
 **그림 1**: FormView DetailsView Grid-Like 레이아웃 표시에서 중단 ([클릭 하 여 큰 이미지 보기](using-the-formview-s-templates-vb/_static/image3.png))
-
 
 ## <a name="step-1-binding-the-data-to-the-formview"></a>1단계: FormView에 데이터 바인딩
 
 열기는 `FormView.aspx` 페이지 및 디자이너 도구 상자에서 FormView 끕니다. FormView를 처음으로 추가 우리를 지시 하는 회색 상자로 표시 하는 `ItemTemplate` 필요 합니다.
 
-
 [![FormView는 ItemTemplate 제공 될 때까지 디자이너에서 렌더링할 수 없습니다.](using-the-formview-s-templates-vb/_static/image5.png)](using-the-formview-s-templates-vb/_static/image4.png)
 
 **그림 2**: 디자이너까지에서 렌더링할 FormView 없습니다는 `ItemTemplate` 제공 됩니다 ([큰 이미지를 보려면 클릭](using-the-formview-s-templates-vb/_static/image6.png))
-
 
 `ItemTemplate` (선언적 구문)를 통해 직접 만들 수 있습니다 또는 FormView 디자이너를 통해 데이터 소스 컨트롤에 바인딩하여 자동으로 생성 될 수 있습니다. 자동 생성이 `ItemTemplate` HTML는 목록 이름을 각 필드 및 레이블을 컨트롤 포함 `Text` 속성 필드의 값에 바인딩합니다. 이 방법은 자동-만듭니다는 `InsertItemTemplate` 및 `EditItemTemplate`, 모두 채워집니다 입력된 컨트롤이 포함 된 각 데이터 소스 컨트롤에서 반환 하는 데이터 필드에 대 한 합니다.
 
@@ -62,7 +57,6 @@ ms.locfileid: "59383911"
 대신 작성 하는 경우는 `ItemTemplate` 추가 디자이너 도구 상자에서 끌어와 ObjectDataSource를 구성 하는 수동으로. 그러나 없는 디자이너에서 FormView의 데이터 원본을 설정 합니다. 대신, 소스 뷰로 이동 하 고 수동으로 FormView의를 설정할 `DataSourceID` 속성을는 `ID` ObjectDataSource의 값입니다. 다음으로, 수동으로 추가 된 `ItemTemplate`합니다.
 
 어떤 접근 방식에 관계 없이 되려면,이 시점에서 FormView의 선언적 태그 어떻게 표시 해야 결정:
-
 
 [!code-aspx[Main](using-the-formview-s-templates-vb/samples/sample1.aspx)]
 
@@ -76,7 +70,6 @@ FormView의 스마트 태그를 페이징 사용 확인란을 확인 하려면 �
 
 다음 태그 후 FormView 선언적 태그를 보여 줍니다.를 `ItemTemplate`의 구조 완료 되었습니다.
 
-
 [!code-aspx[Main](using-the-formview-s-templates-vb/samples/sample2.aspx)]
 
 데이터 바인딩 구문을- `<%# Eval("ProductName") %>`에 예제를 템플릿의 출력에 직접 삽입할 수 있습니다. 즉,이 필요한에 할당할 수 없습니다 레이블 컨트롤의 `Text` 속성입니다. 있다고 예를 들어를 `ProductName` 에 표시 된 값을 `<h3>` 요소를 사용 하 여 `<h3><%# Eval("ProductName") %></h3>`, 렌더링 하는 제품에 대 한 Chai로 `<h3>Chai</h3>`.
@@ -87,16 +80,13 @@ FormView의 스마트 태그를 페이징 사용 확인란을 확인 하려면 �
 
 사용 하 여는 `ItemTemplate` 완료 제품 정보를 훨씬 더 유연한 방식으로 표시 됩니다. FormView (그림 4)이이 자습서에서 생성 된 출력을 사용 하 여 마지막 자습서 (그림 3)의 DetailsView 출력을 비교 합니다.
 
-
 [![고정 된 DetailsView 출력](using-the-formview-s-templates-vb/_static/image8.png)](using-the-formview-s-templates-vb/_static/image7.png)
 
 **그림 3**: 고정 된 DetailsView 출력 ([클릭 하 여 큰 이미지 보기](using-the-formview-s-templates-vb/_static/image9.png))
 
-
 [![유연한 FormView 출력](using-the-formview-s-templates-vb/_static/image11.png)](using-the-formview-s-templates-vb/_static/image10.png)
 
 **그림 4**: 유체 FormView 출력 ([클릭 하 여 큰 이미지 보기](using-the-formview-s-templates-vb/_static/image12.png))
-
 
 ## <a name="summary"></a>요약
 

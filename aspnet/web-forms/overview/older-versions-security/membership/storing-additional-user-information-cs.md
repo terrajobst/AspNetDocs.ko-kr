@@ -8,12 +8,12 @@ ms.date: 01/18/2008
 ms.assetid: 1642132a-1ca5-4872-983f-ab59fc8865d3
 msc.legacyurl: /web-forms/overview/older-versions-security/membership/storing-additional-user-information-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 08b2e71553d9c1c8158debd05e19a3d1b146b319
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: fce3bd00716d992dd9faf70dfd46c2e845faef14
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59412361"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133045"
 ---
 # <a name="storing-additional-user-information-c"></a>추가 사용자 정보 저장(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59412361"
 [코드를 다운로드](http://download.microsoft.com/download/3/f/5/3f5a8605-c526-4b34-b3fd-a34167117633/ASPNET_Security_Tutorial_08_CS.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/3/f/5/3f5a8605-c526-4b34-b3fd-a34167117633/aspnet_tutorial08_ExtraUserInfo_cs.pdf)
 
 > 이 자습서에서는 매우 기본적인 방명록 응용 프로그램을 작성 하 여이 질문에 대답은 했습니다. 이 과정에서 데이터베이스에서 사용자 정보를 모델링 하기 위한 다양 한 옵션을 살펴보고 하 고 멤버 자격 프레임 워크에 의해 생성 된 사용자 계정을 사용 하 여이 데이터를 연결 하는 방법을 참조 하세요.
-
 
 ## <a name="introduction"></a>소개
 
@@ -44,19 +43,15 @@ ASP 합니다. NET의 멤버 자격 프레임 워크는 사용자를 관리 하�
 
 이 테이블에 데이터베이스를 추가 하려면 Visual Studio에서 데이터베이스 탐색기로 이동 하 고 드릴 다운을 `SecurityTutorials` 데이터베이스입니다. 테이블 폴더 단추로 클릭 하 고 새 테이블 추가 선택 합니다. 그러면 새 테이블의 열을 정의할 수 있는 인터페이스입니다.
 
-
 [![SecurityTutorials 데이터베이스에 새 테이블을 추가 합니다.](storing-additional-user-information-cs/_static/image2.png)](storing-additional-user-information-cs/_static/image1.png)
 
 **그림 1**: 새 테이블을 추가 합니다 `SecurityTutorials` 데이터베이스 ([큰 이미지를 보려면 클릭](storing-additional-user-information-cs/_static/image3.png))
 
-
 다음으로 정의 된 `GuestbookComments`의 열입니다. 명명 된 열을 추가 하 여 시작 `CommentId` 형식의 `uniqueidentifier`합니다. 이 열은 방명록에서 각 메모를 고유 하 게 식별을 허용 하므로 `NULL`의 테이블의 기본 키로 표시 합니다. 에 대 한 값을 제공 하는 대신 합니다 `CommentId` 각 필드 `INSERT`를 나타낼 수 있습니다 새 `uniqueidentifier` 에서이 필드에 대 한 값을 자동으로 생성할 수 해야 `INSERT` 열의 기본값을 설정 하 여 `NEWID()`. 이 첫 번째 필드를 기본값으로, primary key 및 설정으로 표시를 추가한 후 화면은 해야 스크린 샷을 그림 2에 표시 된 것과 유사 합니다.
-
 
 [![CommentId 라는 기본 열 추가](storing-additional-user-information-cs/_static/image5.png)](storing-additional-user-information-cs/_static/image4.png)
 
 **그림 2**: 명명 된 기본 열 추가 `CommentId` ([큰 이미지를 보려면 클릭](storing-additional-user-information-cs/_static/image6.png))
-
 
 다음으로, 라는 열을 추가 `Subject` 형식의 `nvarchar(50)` 및 명명 된 열 `Body` 형식의 `nvarchar(MAX)`를 허용 하지 `NULL` 두 열 모두의 합니다. 그런 다음, 라는 열을 추가 `CommentDate` 형식의 `datetime`합니다. 허용 안 함 `NULL` 집합과 s 합니다 `CommentDate` 열의 기본 값을 `getdate()`합니다.
 
@@ -65,36 +60,29 @@ ASP 합니다. NET의 멤버 자격 프레임 워크는 사용자를 관리 하�
 > [!NOTE]
 > 설명한 대로 합니다 [ *SQL Server에서 멤버 자격 스키마 만들기* ](creating-the-membership-schema-in-sql-server-cs.md) 자습서, 멤버 자격 프레임 워크는 여러 웹 응용 프로그램을 다른 사용자 계정으로 동일한 공유 하도록 설계 되었습니다 사용자 저장소입니다. 다른 응용 프로그램에 사용자를 분할 하 여 수행 합니다. 및 각 사용자 이름을 응용 프로그램 내에서 고유 하 게 보장 하는 동안 동일한 사용자 이름을 같은 사용자 저장소를 사용 하 여 다른 응용 프로그램에서 사용할 수 있습니다. 복합 `UNIQUE` 의 제약 조건 합니다 `aspnet_Users` 테이블에 `UserName` 및 `ApplicationId` 필드 이지만의 하나가 아닙니다만 `UserName` 필드. 따라서 있기 aspnet\_Users 테이블 두 개 이상의 레코드가 동일한 `UserName` 값입니다. 그러나을 `UNIQUE` 제약 조건에는 `aspnet_Users` 테이블의 `UserId` (이므로 기본 키) 필드입니다. A `UNIQUE` 제약 조건은 없으면 간의 외래 키 제약 조건을 설정할 수 없습니다 것 때문에 중요 합니다 `GuestbookComments` 및 `aspnet_Users` 테이블.
 
-
 추가한 후의 `UserId` 저장 도구 모음에서 저장 아이콘을 클릭 하 여 테이블 열입니다. 새 테이블의 이름을 `GuestbookComments`입니다.
 
 마지막 한 가지 문제를 사용 하 여 참가 했습니다 합니다 `GuestbookComments` 테이블: 만들어야를 [foreign key 제약 조건을](https://msdn.microsoft.com/library/ms175464.aspx) 간에 `GuestbookComments.UserId` 열 및 `aspnet_Users.UserId` 열. 이렇게 하려면 외래 키 관계 대화 상자를 시작 하려면 도구 모음에서 관계 아이콘을 클릭 합니다. (또는 시작할 수 있습니다이 대화 상자는 테이블 디자이너 메뉴로 이동 하 고 관계를 선택 하 여.)
 
 외래 키 관계 대화 상자의 왼쪽된 아래 모서리에 있는 추가 단추를 클릭 합니다. 이렇게 하면 여전히 관계에 참여 하는 테이블을 정의 해야 하지만 새 외래 키 제약 조건을 추가 됩니다.
 
-
 [![테이블의 외래 키 제약 조건을 관리 하는 외래 키 관계 대화 상자를 사용 합니다.](storing-additional-user-information-cs/_static/image8.png)](storing-additional-user-information-cs/_static/image7.png)
 
 **그림 3**: 테이블의 외래 키 제약 조건을 관리 하는 외래 키 관계 대화 상자를 사용 하 여 ([클릭 하 여 큰 이미지 보기](storing-additional-user-information-cs/_static/image9.png))
 
-
 다음으로 오른쪽에 있는 "테이블 및 열 사양" 행에 있는 줄임표 아이콘을 클릭 합니다. 이 테이블 및 열 대화 상자를 시작를 지정할 수 있습니다 기본 키 테이블 및 열에서 외래 키 열을 `GuestbookComments` 테이블입니다. 특히 선택 `aspnet_Users` 하 고 `UserId` 기본 키 테이블 및 열 및 `UserId` 에서 `GuestbookComments` 외래 키 열으로 테이블 (그림 4 참조). 기본 및 외래 키 테이블 및 열을 정의한 후 확인을 클릭 하 여 외래 키 관계 대화 상자로 돌아갑니다.
-
 
 [![외래 키 제약 조건 간에 aspnet_Users 및 GuesbookComments 테이블 설정](storing-additional-user-information-cs/_static/image11.png)](storing-additional-user-information-cs/_static/image10.png)
 
 **그림 4**: 외래 키 제약 조건 간에 설정 된 `aspnet_Users` 하 고 `GuesbookComments` 테이블 ([전체 크기 이미지를 보려면 클릭](storing-additional-user-information-cs/_static/image12.png))
 
-
 이 시점에서 외래 키 제약 조건이 설정 되었습니다. 이 제약 조건의 제공 되므로 [관계 무결성](http://en.wikipedia.org/wiki/Referential_integrity) 는 될 수 없으므로 존재 하지 않는 사용자 계정에 참조 방명록 항목을 보장 하 여 두 테이블 사이입니다. 기본적으로 외래 키 제약 조건을 자식 레코드 해당 하는 경우 삭제할 부모 레코드를 허용 하지 것입니다 됩니다. 즉, 사용자가 하나 이상의 방명록 설명 하는 경우 해당 사용자 계정을 삭제 하려고 하면 다음에 자신의 방명록 의견을 먼저 삭제 됩니다 않으면 삭제가 실패 합니다.
 
 부모 레코드가 삭제 될 때 자동으로 연결 된 자식 레코드를 삭제 하려면 foreign key 제약 조건은 구성할 수 있습니다. 즉, 자신의 사용자 계정을 삭제 하는 경우 사용자의 방명록 항목 자동으로 삭제 되도록이 외래 키 제약 조건을 설정할 수 있습니다. 이렇게 하려면 "INSERT 및 UPDATE 사양" 섹션을 확장 cascade를 지정 하는 "규칙 삭제" 속성을 설정 합니다.
 
-
 [![하위 삭제를 외래 키 제약 조건 구성](storing-additional-user-information-cs/_static/image14.png)](storing-additional-user-information-cs/_static/image13.png)
 
 **그림 5**: 계단식 삭제를 외래 키 제약 조건 구성 ([클릭 하 여 큰 이미지 보기](storing-additional-user-information-cs/_static/image15.png))
-
 
 외래 키 제약을 저장 하려면 외래 키 관계를 종료 하려면 닫기 단추를 클릭 합니다. 테이블 및이 저장 하려면 도구 모음에서 저장 아이콘을 클릭 한 다음 관계입니다.
 
@@ -114,11 +102,9 @@ ASP 합니다. NET의 멤버 자격 프레임 워크는 사용자를 관리 하�
 
 라는 새 테이블을 만들겠습니다 `UserProfiles` 홈 타운, 홈 페이지 및 각 사용자에 대 한 서명을 저장 합니다. 데이터베이스 탐색기 창에서 테이블 폴더 단추로 클릭 하 고 새 테이블을 만들려면 선택 합니다. 첫 번째 열 이름을 `UserId` 해당 유형을 설정 하 고 `uniqueidentifier`입니다. Disallow `NULL` 값 및 기본 키로 열을 표시 합니다. 다음으로 명명 된 열을 추가 합니다. `HomeTown` 형식의 `nvarchar(50)`; `HomepageUrl` 형식의 `nvarchar(100)`; 및 형식 서명을 `nvarchar(500)`합니다. 이러한 세 가지 열 각각에 응하기는 `NULL` 값입니다.
 
-
 [![UserProfiles 테이블 만들기](storing-additional-user-information-cs/_static/image17.png)](storing-additional-user-information-cs/_static/image16.png)
 
 **그림 6**: 만들기는 `UserProfiles` 테이블 ([큰 이미지를 보려면 클릭](storing-additional-user-information-cs/_static/image18.png))
-
 
 테이블을 저장 하 고 이름을 `UserProfiles`입니다. 마지막으로, 간의 외래 키 제약 조건을 설정 합니다 `UserProfiles` 테이블의 `UserId` 필드 및 `aspnet_Users.UserId` 필드. 간의 외래 키 제약 조건을 사용 하 여 했던 것 처럼 합니다 `GuestbookComments` 및 `aspnet_Users` 테이블 삭제가 계단식으로 배열 하이 제약 조건이 있습니다. 있으므로 `UserId` 필드에 `UserProfiles` 는 주 서버이 키, 이렇게 하면 둘 이상의 레코드 되도록는 `UserProfiles` 각 사용자 계정에 대 한 테이블입니다. 이 형식의 관계는 일대일로 라고 합니다.
 
@@ -132,37 +118,29 @@ ASP 합니다. NET의 멤버 자격 프레임 워크는 사용자를 관리 하�
 
 열기를 `AdditionalUserInfo.aspx` 페이지에 `Membership` 폴더 설정 페이지에 DetailsView 컨트롤을 추가 하 고 해당 `ID` 속성을 `UserProfile` 정리 및 해당 `Width` 및 `Height` 속성입니다. DetailsView의 스마트 태그를 확장 하 고 새 데이터 소스 컨트롤에 연결 하려면 선택 합니다. 이 데이터 소스 구성 마법사가 시작 됩니다 (그림 7 참조). 첫 번째 단계를 사용 하면 데이터 원본 유형에를 묻습니다. 에 직접 연결할 것 이므로 `SecurityTutorials` 데이터베이스, 데이터베이스 아이콘을 지정 하는 `ID` 으로 `UserProfileDataSource`입니다.
 
-
 [![UserProfileDataSource 라는 새 SqlDataSource 컨트롤을 추가 합니다.](storing-additional-user-information-cs/_static/image20.png)](storing-additional-user-information-cs/_static/image19.png)
 
 **그림 7**: 명명 된 새 SqlDataSource 컨트롤을 추가 `UserProfileDataSource` ([큰 이미지를 보려면 클릭](storing-additional-user-information-cs/_static/image21.png))
 
-
 다음 화면을 사용 하는 데이터베이스 요구 합니다. 연결 문자열을 이미 정의한 `Web.config` 에 대 한는 `SecurityTutorials` 데이터베이스입니다. 이 연결 문자열 이름 – `SecurityTutorialsConnectionString` – 드롭다운 목록에 있어야 합니다. 이 옵션을 선택 하 고 클릭 합니다.
-
 
 [![SecurityTutorialsConnectionString 드롭 다운 목록에서 선택](storing-additional-user-information-cs/_static/image23.png)](storing-additional-user-information-cs/_static/image22.png)
 
 **그림 8**: 선택할 `SecurityTutorialsConnectionString` 드롭 다운 목록에서 ([큰 이미지를 보려면 클릭](storing-additional-user-information-cs/_static/image24.png))
 
-
 다음 화면에서는 테이블 및 쿼리 하는 열을 지정 합니다. 선택 된 `UserProfiles` 드롭 다운 목록에서 테이블 및 열 모두 선택 합니다.
-
 
 [![가져올 UserProfiles 테이블에서 모든 열을 다시](storing-additional-user-information-cs/_static/image26.png)](storing-additional-user-information-cs/_static/image25.png)
 
 **그림 9**: 열의 모든 다시 표시 합니다 `UserProfiles` 테이블 ([큰 이미지를 보려면 클릭](storing-additional-user-information-cs/_static/image27.png))
 
-
 그림 9 반환의 현재 쿼리가 *모든* 의 레코드 `UserProfiles`, 현재 로그온된 한 사용자의 레코드에만 관심이 있지만. 추가할를 `WHERE` 절을 클릭 합니다 `WHERE` 단추를 추가 `WHERE` 절 대화 상자 (그림 10 참조). 여기에서 필터링 할 열, 연산자 및 필터 매개 변수의 소스를 선택할 수 있습니다. 선택 `UserId` 열과 연산자 "="입니다.
 
 아쉽게도 현재 로그온된 한 사용자의 반환할 기본 제공 매개 변수 소스를이 없다는 `UserId` 값입니다. 이 값을 프로그래밍 방식으로 선택 해야 합니다. 따라서 원본 드롭 다운 목록 "None", 추가 매개 변수를 추가 하려면 단추를 클릭 한 다음 클릭을 설정 합니다.
 
-
 [![UserId 열에서 필터 매개 변수를 추가 합니다.](storing-additional-user-information-cs/_static/image29.png)](storing-additional-user-information-cs/_static/image28.png)
 
 **그림 10**: 필터 매개 변수를 추가 합니다 `UserId` 열 ([큰 이미지를 보려면 클릭](storing-additional-user-information-cs/_static/image30.png))
-
 
 확인을 클릭 하면 그림 9에 표시 된 화면에 반환 됩니다. 하지만이 이때 화면 맨 아래에 있는 SQL 쿼리를 포함할지를 `WHERE` 절. "테스트 쿼리" 화면으로 이동 하려면 다음을 클릭 합니다. 쿼리를 실행 하면 다음 결과 확인 합니다. 마법사를 완료 하려면 마침을 클릭 합니다.
 
@@ -181,36 +159,28 @@ SqlDataSource 컨트롤의 프로그래밍 방식으로 설정 해야 `UserId` �
 > [!NOTE]
 > `Membership.GetUser()` 메서드는 현재 로그온된 한 사용자에 대 한 정보를 반환 합니다. 익명 사용자가 페이지를 방문 하 고, 값이 반환 됩니다 `null`합니다. 이러한 경우이로 인해를 `NullReferenceException` 읽으려고 할 때 코드의 다음 줄에는 `ProviderUserKey` 속성입니다. 물론, 걱정할 필요가 없습니다 `Membership.GetUser()` 반환을 `null` 값을 `AdditionalUserInfo.aspx` 인증 된 사용자만이 폴더에 ASP.NET 리소스에 액세스할 수 있도록 이전 자습서에서 URL 권한 부여를 구성 했기 때문에 페이지. 익명 액세스를 허용 하는 위치 페이지에서 현재 로그온된 한 사용자에 대 한 정보에 액세스 해야 할 경우 했는지 확인 하는 이외`null MembershipUser` 개체에서 반환 되는 `GetUser()` 해당 속성을 참조 하기 전에 메서드.
 
-
 방문 하는 경우는 `AdditionalUserInfo.aspx` 페이지 브라우저를 통해 표시 됩니다 모든 행을 추가 하려면 아직 때문에 빈 페이지는 `UserProfiles` 테이블입니다. 새 행을 자동으로 추가할 CreateUserWizard 컨트롤 사용자 지정 하는 방법을 살펴보겠습니다 6 단계에서에서의 `UserProfiles` 새 사용자 계정을 만들면 테이블입니다. 그러나 지금은 해야 수동으로 테이블에 레코드를 만듭니다.
 
 Visual Studio에서 Database Explorer로 이동 하 고 테이블 폴더를 확장 합니다. 마우스 오른쪽 단추로 클릭 합니다 `aspnet_Users` 테이블 및 테이블의 레코드를 보려면 "테이블 데이터 표시" 선택;에 대해 동일한 작업을 수행 합니다 `UserProfiles` 테이블입니다. 그림 11에서는 세로 바둑판식으로 배열 하는 경우 이러한 결과 보여 줍니다. 데이터베이스에 현재 가지 `aspnet_Users` Bruce, Fred 및 Tito에 대 한 레코드 있지만 레코드 없음는 `UserProfiles` 테이블입니다.
-
 
 [![표시 되는 aspnet_Users 내용과 UserProfiles 테이블](storing-additional-user-information-cs/_static/image32.png)](storing-additional-user-information-cs/_static/image31.png)
 
 **그림 11**: 콘텐츠를 `aspnet_Users` 하 고 `UserProfiles` 테이블이 표시 됩니다 ([전체 크기 이미지를 보려면 클릭](storing-additional-user-information-cs/_static/image33.png))
 
-
 새 레코드를 추가 합니다 `UserProfiles` 수동으로 대 한 값을 입력 하 여 테이블을 `HomeTown`, `HomepageUrl`, 및 `Signature` 필드. 유효한 얻을 수 있는 가장 쉬운 방법은 `UserId` 새 값 `UserProfiles` 레코드는 선택 하는 `UserId` 의 특정 사용자 계정에서 필드를 `aspnet_Users` 테이블 복사 및 붙여 넣습니다 합니다 `UserId` 필드에 `UserProfiles`. 그림 12는 `UserProfiles` Bruce에 대 한 새 레코드를 추가한 후 테이블입니다.
-
 
 [![Bruce UserProfiles에 추가한 레코드](storing-additional-user-information-cs/_static/image35.png)](storing-additional-user-information-cs/_static/image34.png)
 
 **그림 12**: 레코드에 추가 되었습니다 `UserProfiles` Bruce에 대 한 ([큰 이미지를 보려면 클릭](storing-additional-user-information-cs/_static/image36.png))
 
-
 반환 합니다 `AdditionalUserInfo.aspx` 페이지, Bruce로 로그인 합니다. 그림 13에서 알 수 있듯이, Bruce의 설정이 표시 됩니다.
-
 
 [![현재 방문 사용자가 His 설정 표시](storing-additional-user-information-cs/_static/image38.png)](storing-additional-user-information-cs/_static/image37.png)
 
 **그림 13**: 현재 방문 사용자가 His 설정 표시 ([클릭 하 여 큰 이미지 보기](storing-additional-user-information-cs/_static/image39.png))
 
-
 > [!NOTE]
 > 수동으로 추가 레코드를 `UserProfiles` 각 멤버 자격 사용자에 대 한 테이블입니다. 새 행을 자동으로 추가할 CreateUserWizard 컨트롤 사용자 지정 하는 방법을 살펴보겠습니다 6 단계에서에서의 `UserProfiles` 새 사용자 계정을 만들면 테이블입니다.
-
 
 ## <a name="step-3-allowing-the-user-to-edit-his-home-town-homepage-and-signature"></a>3단계: 사용자를가 자신의 홈 타운, 홈 페이지 및 서명을 편집할 수 있습니다.
 
@@ -222,11 +192,9 @@ Visual Studio에서 Database Explorer로 이동 하 고 테이블 폴더를 확�
 
 다음으로, SqlDataSource 컨트롤의 매개 변수를 생성 하는 "매개 변수 새로 고침" 단추를 클릭 `UpdateParameters` 매개 변수 각각에 대 한 컬렉션을 `UPDATE` 문입니다. None 매개 변수 집합의 모든 소스를 두고 대화 상자를 완료 하려면 확인 단추를 클릭 합니다.
 
-
 [![SqlDataSource의 UpdateCommand 및 UpdateParameters 지정](storing-additional-user-information-cs/_static/image41.png)](storing-additional-user-information-cs/_static/image40.png)
 
 **그림 14**: SqlDataSource의 지정할 `UpdateCommand` 하 고 `UpdateParameters` ([클릭 하 여 큰 이미지 보기](storing-additional-user-information-cs/_static/image42.png))
-
 
 추가 된 항목으로 인해 이제를 지원할 수 있는 편집 DetailsView SqlDataSource 컨트롤에 만들었습니다. DetailsView의 스마트 태그에서 "편집 사용" 확인란을 확인 합니다. 컨트롤에는 CommandField 추가 `Fields` 컬렉션과 해당 `ShowEditButton` 속성이 True로 설정 합니다. 이 DetailsView 읽기 전용 모드 및 업데이트에 표시 되 고 취소 단추에 표시 되는 모드를 편집 하는 경우 편집 단추를 렌더링 합니다. 사용자가 편집 클릭에 요구 하는 대신 그러나 있다는 DetailsView 렌더링 "항상 편집 가능" 상태로 DetailsView 컨트롤을 설정 하 여 [ `DefaultMode` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.detailsview.defaultmode.aspx) 하려면 `Edit`합니다.
 
@@ -238,11 +206,9 @@ CommandField 추가 및 `DefaultMode` 속성입니다.
 
 계속 해 서 브라우저를 통해이 페이지를 테스트 합니다. 해당 레코드에 있는 사용자를 방문할 때 `UserProfiles`, 사용자의 설정을 편집할 수 있는 인터페이스에 표시 됩니다.
 
-
 [![DetailsView를 편집할 수 있는 인터페이스를 렌더링합니다.](storing-additional-user-information-cs/_static/image44.png)](storing-additional-user-information-cs/_static/image43.png)
 
 **그림 15**: DetailsView를 편집할 수 있는 인터페이스를 렌더링 합니다. ([클릭 하 여 큰 이미지 보기](storing-additional-user-information-cs/_static/image45.png))
-
 
 시도 값을 변경 하 고 업데이트 단추를 클릭 합니다. 아무 작업도 처럼 표시 됩니다. 다시 게시 하 고 값이 데이터베이스에 저장 됩니다 있지만 저장 수행한 visual 알 수 없습니다.
 
@@ -256,15 +222,12 @@ CommandField 추가 및 `DefaultMode` 속성입니다.
 
 반환 합니다 `AdditionalUserInfo.aspx` 브라우저를 통해 페이지와 데이터를 업데이트 합니다. 이 이번에는 유용한 상태 메시지가 표시 됩니다.
 
-
 [![짧은 메시지를 표시 되는 경우 설정 업데이트](storing-additional-user-information-cs/_static/image47.png)](storing-additional-user-information-cs/_static/image46.png)
 
 **그림 16**: 설정이 업데이트 되 면 짧은 메시지가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](storing-additional-user-information-cs/_static/image48.png))
 
-
 > [!NOTE]
 > DetailsView 컨트롤의 편집 인터페이스 리프는 부분이 됩니다. 표준 크기의 텍스트 상자를 사용 하지만 서명 필드는 여러 줄 텍스트 상자 되어야 할 수 있습니다. RegularExpressionValidator는 홈 페이지 URL을 입력 하는 경우 시작 "http://" 또는 "https://"로 확인 하는 것 같습니다. DetailsView 컨트롤에는 또한 이후에 해당 `DefaultMode` 속성이 설정 `Edit`, 취소 단추 아무 작업도 하지 않습니다. 이 하거나 제거 하거나를 클릭 하면 사용자를 리디렉션할 다른 일부 페이지 (같은 `~/Default.aspx`). I 이러한 향상 된이 기능은 판독기에 대 한 연습을 그대로 둡니다.
-
 
 ### <a name="adding-a-link-to-theadditionaluserinfoaspxpage-in-the-master-page"></a>에 대 한 링크를 추가 합니다`AdditionalUserInfo.aspx`마스터 페이지에서 페이지
 
@@ -293,7 +256,6 @@ CommandField 추가 및 `DefaultMode` 속성입니다.
 > [!NOTE]
 > Microsoft SQL Server 데이터베이스에서 데이터를 프로그래밍 방식으로 액세스 하는 데 ADO.NET 클래스에는 `System.Data.SqlClient` 네임 스페이스입니다. 페이지의 코드 숨김 클래스에이 네임 스페이스를 가져와야 할 수 있습니다 (즉, `using System.Data.SqlClient;`).
 
-
 이벤트 처리기를 만듭니다는 `PostCommentButton`의 `Click` 이벤트 다음 코드를 추가 합니다.
 
 [!code-csharp[Main](storing-additional-user-information-cs/samples/sample9.cs)]
@@ -308,15 +270,12 @@ CommandField 추가 및 `DefaultMode` 속성입니다.
 
 그림 17의 내용을 보여 줍니다는 `GuestbookComments` 테이블 두 주석이 있습니다.
 
-
 [![GuestbookComments 표에 방명록 주석을 볼 수 있습니다.](storing-additional-user-information-cs/_static/image50.png)](storing-additional-user-information-cs/_static/image49.png)
 
 **그림 17**: 방명록 주석을 표시 합니다 `GuestbookComments` 테이블 ([큰 이미지를 보려면 클릭](storing-additional-user-information-cs/_static/image51.png))
 
-
 > [!NOTE]
 > HTML – ASP.NET 같은 위험한 태그 – 사용자가 잠재적으로 포함 하는 방명록 주석 삽입 하려고 하는 경우 throw 됩니다는 `HttpRequestValidationException`합니다. 이 예외를 throw 이유 및 사용자가 잠재적으로 위험한 값을 제출 하도록 허용 하는 방법에 대 한 자세한 내용은 참조는 [요청 유효성 검사 백서](../../../../whitepapers/request-validation.md)합니다.
-
 
 ## <a name="step-5-listing-the-existing-guestbook-comments"></a>5단계: 기존 방명록 주석을 나열합니다.
 
@@ -324,7 +283,6 @@ CommandField 추가 및 `DefaultMode` 속성입니다.
 
 > [!NOTE]
 > ListView 컨트롤은 ASP.NET 3.5 버전을 새입니다. 사용자 지정 가능 하 고 유연한 레이아웃에서 항목의 목록을 표시 하지만 계속 기본 제공 편집, 삽입, 삭제, 페이징 및 정렬 GridView와 같은 기능을 제공 하도록 설계 되었습니다. ASP.NET 2.0을 사용 하는 경우에 DataList 또는 Repeater 컨트롤을 대신 사용 해야 합니다. ListView를 사용 하 여 자세한 내용은 [Scott Guthrie](https://weblogs.asp.net/scottgu/)의 블로그 항목 [asp: ListView 컨트롤](https://weblogs.asp.net/scottgu/archive/2007/08/10/the-asp-listview-control-part-1-building-a-product-listing-page-with-clean-css-ui.aspx), 및 필자의 기사 [ListView 컨트롤을 사용 하 여 데이터 표시](http://aspnet.4guysfromrolla.com/articles/122607-1.aspx)합니다.
-
 
 ListView의 스마트 태그를 열고 데이터 소스 선택 드롭다운 목록에서 새 데이터 소스에 컨트롤을 바인딩하십시오. 2 단계에서에서 보았듯이 데이터 소스 구성 마법사 시작 됩니다. 데이터베이스 아이콘을 선택, 결과 SqlDataSource 이름을 `CommentsDataSource`, 확인을 클릭 합니다. 다음으로, 선택 된 `SecurityTutorialsConnectionString` 연결 문자열 드롭다운 목록에서 다음을 클릭 합니다.
 
@@ -334,11 +292,9 @@ ListView의 스마트 태그를 열고 데이터 소스 선택 드롭다운 목�
 
 에 반환할 열을 지정 합니다. `GuestbookComments` 테이블을 `Subject`, `Body`, 및 `CommentDate` 열은 반환을 `HomeTown`, `HomepageUrl`, 및 `Signature` 열에서를 `UserProfiles` ; 테이블을 반환 `UserName` 에서`aspnet_Users`. 또한 추가 "`ORDER BY CommentDate DESC`"의 끝에는 `SELECT` 최근 게시물 먼저 반환 되도록 쿼리 합니다. 이러한 선택 항목에 확인 한 후 쿼리 작성기 인터페이스 그림 18에서 스크린샷과 유사 합니다.
 
-
 [![생성 된 쿼리 GuestbookComments, UserProfiles, 및 aspnet_Users 테이블 조인](storing-additional-user-information-cs/_static/image53.png)](storing-additional-user-information-cs/_static/image52.png)
 
 **그림 18**: 생성 된 쿼리 `JOIN` s 합니다 `GuestbookComments`를 `UserProfiles`, 및 `aspnet_Users` 테이블 ([클릭 하 여 큰 이미지 보기](storing-additional-user-information-cs/_static/image54.png))
-
 
 쿼리 작성기 창을 닫고 정의 사용자 지정 문 또는 저장 프로시저 "" 화면으로 돌아가서 확인을 클릭 합니다. 쿼리 테스트 단추를 클릭 하 여 쿼리 결과 볼 수 있는 "테스트 쿼리" 화면에 고급을 클릭 합니다. 준비 되 면, 데이터 소스 구성 마법사를 완료 하려면 마침을 클릭 합니다.
 
@@ -354,11 +310,9 @@ ListView의 스마트 태그를 열고 데이터 소스 선택 드롭다운 목�
 
 브라우저를 통해 페이지를 보려면 잠시 시간이 소요 됩니다. 여기에 표시 된 5 단계에서에서 방명록에 추가 하는 주석을 표시 되어야 합니다.
 
-
 [![Guestbook.aspx 이제 방명록의 주석 표시](storing-additional-user-information-cs/_static/image56.png)](storing-additional-user-information-cs/_static/image55.png)
 
 **그림 19**: `Guestbook.aspx` 이제 방명록의 주석 표시 됩니다 ([클릭 하 여 큰 이미지 보기](storing-additional-user-information-cs/_static/image57.png))
-
 
 guestbook으로 새 메모를 추가 해 보세요. 클릭 하면는 `PostCommentButton` 단추 페이지 다시 게시 및 주석 데이터베이스에 추가 되지만 ListView 컨트롤 새 메모를 표시 하도록 업데이트 되지 않습니다. 이 통해 해결할 수 있습니다.
 
@@ -369,7 +323,6 @@ guestbook으로 새 메모를 추가 해 보세요. 클릭 하면는 `PostCommen
 
 > [!NOTE]
 > 현재는 `AdditionalUserInfo.aspx` 페이지 수 있도록 하려면 해당 홈 타운, 홈 페이지 및 서명을 설정 보기 및 편집 합니다. 업데이트 좋을 것 `AdditionalUserInfo.aspx` 표시할 로그온 된 사용자의 방명록 설명 합니다. 즉, 검사 하 고 자신의 정보를 수정 하는 것 외에도 사용자 방문할 수는 `AdditionalUserInfo.aspx` 페이지를 이전에 이루어집니다 그녀는 방명록 주석을 참조 하세요. I 관심이 있는 독자를 연습으로 둡니다.
-
 
 ## <a name="step-6-customizing-the-createuserwizard-control-to-include-an-interface-for-the-home-town-homepage-and-signature"></a>6단계: 홈 타운, 홈 페이지 및 서명을 위한 인터페이스를 포함 하도록 CreateUserWizard 컨트롤 사용자 지정
 
@@ -401,11 +354,9 @@ CreateUserWizard 컨트롤 해당 워크플로 중에 다양을 한 이벤트를
 
 방문을 `EnhancedCreateUserWizard.aspx` 브라우저를 통해 페이지 및 새 사용자 계정을 만듭니다. 이렇게 한 다음, Visual Studio로 돌아가서 및의 내용을 검사 합니다 `aspnet_Users` 및 `UserProfiles` 테이블 (예: 다시에 수행한 그림 12). 새 사용자 계정에 표시 되어야 `aspnet_Users` 및 해당 `UserProfiles` 행 (사용 하 여 `NULL` 에 대 한 값 `HomeTown`에 `HomepageUrl`, 및 `Signature`).
 
-
 [![추가 된 새 사용자 계정 및 UserProfiles 레코드](storing-additional-user-information-cs/_static/image59.png)](storing-additional-user-information-cs/_static/image58.png)
 
 **그림 20**: 새 사용자 계정 및 `UserProfiles` 레코드가 추가 되었습니다 ([큰 이미지를 보려면 클릭](storing-additional-user-information-cs/_static/image60.png))
-
 
 사용자 계정 생성 되 고 행이 추가 방문자에 자신의 새 계정 정보를 제공 하 고 "Create User" 단추를 클릭 한 후의 `UserProfiles` 테이블입니다. CreateUserWizard을 표시 합니다. 해당 `CompleteWizardStep`, 계속 단추 성공 메시지를 표시 합니다. 포스트백을 계속 단추를 클릭 하면 아무 작업도 수행 하지만 중단 사용자는 `EnhancedCreateUserWizard.aspx` 페이지입니다.
 
@@ -437,19 +388,15 @@ CreateUserWizard 컨트롤의 추가 양식 필드를 포함 하는 인터페이
 
 그림 21 워크플로 보여 줍니다. 때 추가한 `WizardStep` 앞에 `CreateUserWizardStep`. 추가 사용자 정보에 의해 수집 된 이후 합니다 `CreatedUser` 는 업데이트 작업을 수행 해야 하는 모든 이벤트가 발생 합니다 `CreatedUser` 이러한 입력을 가져와 사용에 대 한 이벤트 처리기는 `INSERT` 문의 매개 변수 값 (대신 `DBNull.Value`).
 
-
 [![CreateUserWizard 워크플로 추가 WizardStep는 CreateUserWizardStep 앞에 오는 경우](storing-additional-user-information-cs/_static/image62.png)](storing-additional-user-information-cs/_static/image61.png)
 
 **그림 21**: CreateUserWizard 워크플로 때는 추가적인 `WizardStep` Precedes 합니다 `CreateUserWizardStep` ([클릭 하 여 큰 이미지 보기](storing-additional-user-information-cs/_static/image63.png))
 
-
 그러나 하는 경우 사용자 지정 `WizardStep` 놓입니다 *후* 는 `CreateUserWizardStep`, 만들기 사용자 계정 프로세스를 사용자에 게 홈 타운, 홈 페이지 또는 서명 입력할 수 전에 발생 합니다. 이러한 경우에이 추가 정보를 삽입할 데이터베이스 사용자 계정을 만든 후에, 그림 22와 같이 해야 합니다.
-
 
 [![CreateUserWizard 워크플로 추가 WizardStep는 CreateUserWizardStep 뒤에 오는 경우](storing-additional-user-information-cs/_static/image65.png)](storing-additional-user-information-cs/_static/image64.png)
 
 **그림 22**: CreateUserWizard 워크플로 때는 추가적인 `WizardStep` 후 제공 되는 `CreateUserWizardStep` ([전체 크기 이미지를 보려면 클릭](storing-additional-user-information-cs/_static/image66.png))
-
 
 그림 22와 같이 워크플로 대기에 레코드를 삽입 하 여 `UserProfiles` 2 단계 완료 될 때까지 테이블입니다. 그러나 방문자는 1 단계 후 브라우저를 닫으면,는 제품이 출시 되었으므로 여기서 사용자 계정이 생성 되었지만 없는 레코드에 추가 된 상태 `UserProfiles`합니다. 한 가지 해결 방법은 사용 하 여 레코드를 포함 하는 것 `NULL` 기본값을 삽입 하거나 `UserProfiles` 에 `CreatedUser` (발생 하는 1 단계 후) 이벤트 처리기 및 2 단계를 완료 한 후 기록이 업데이트 합니다. 이렇게 하면 한 `UserProfiles` 사용자 등록 프로세스가 중간에 종료 하는 경우에 사용자 계정에 대 한 레코드가 추가 됩니다.
 
@@ -457,11 +404,9 @@ CreateUserWizard 컨트롤의 추가 양식 필드를 포함 하는 인터페이
 
 CreateUserWizard 컨트롤의 스마트 태그를 선택 합니다 "추가/제거 `WizardStep` s"를 불러는 `WizardStep` 컬렉션 편집기 대화 상자. 새 `WizardStep`설정, 해당 `ID` 를 `UserSettings`, 해당 `Title` "설정" 하 고 `StepType` 를 `Step`. 다음에 오는 다음 위치를 `CreateUserWizardStep` ("등록 새 계정에 대 한") 하기 전에 `CompleteWizardStep` ("완료"), 그림 23 에서처럼 합니다.
 
-
 [![CreateUserWizard 컨트롤에 새 WizardStep 추가](storing-additional-user-information-cs/_static/image68.png)](storing-additional-user-information-cs/_static/image67.png)
 
 **그림 23**: 새 추가 `WizardStep` CreateUserWizard 컨트롤 ([큰 이미지를 보려면 클릭](storing-additional-user-information-cs/_static/image69.png))
-
 
 확인을 눌러 닫습니다는 `WizardStep` 컬렉션 편집기 대화 상자. 새 `WizardStep` CreateUserWizard 컨트롤의 업데이트 된 선언적 태그 된 수치로 증명 됩니다.
 
@@ -471,7 +416,6 @@ CreateUserWizard 컨트롤의 스마트 태그를 선택 합니다 "추가/제�
 
 > [!NOTE]
 > CreateUserWizard 컨트롤의 스마트 태그의 드롭다운 목록을 통해 단계를 선택 하면 업데이트 [ `ActiveStepIndex` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.createuserwizard.activestepindex.aspx), 시작 단계 인덱스를 지정 하는 합니다. 따라서 디자이너에서 "설정" 단계를 편집 하려면이 드롭다운 목록에서를 사용 하는 경우 반드시 사용자가 처음 방문 하는 경우이 단계에 표시 되도록 "Sign Up for 새 계정"으로 설정 하 여 `EnhancedCreateUserWizard.aspx` 페이지입니다.
-
 
 라는 3 개의 TextBox 컨트롤을 포함 하는 "설정" 단계 내의 사용자 인터페이스를 만들 `HomeTown`, `HomepageUrl`, 및 `Signature`합니다. 이 인터페이스를 생성 한 후 CreateUserWizard의 선언적 태그는 다음과 비슷하게 표시 됩니다.
 
@@ -493,7 +437,6 @@ CreateUserWizard의에 대 한 이벤트 처리기를 추가 `ActiveStepChanged`
 
 > [!NOTE]
 > 웹 사이트에 갖고 두 페이지는 방문자를 새 계정을 만들 수 있습니다: `CreatingUserAccounts.aspx` 및 `EnhancedCreateUserWizard.aspx`합니다. 웹 사이트의 사이트 맵 및 로그인 페이지를 가리킵니다 합니다 `CreatingUserAccounts.aspx` 페이지에서 하지만 `CreatingUserAccounts.aspx` 페이지 홈 타운, 홈 페이지 및 시그니처 정보에 대 한 사용자를 묻지 않습니다 하 고 해당 행을 추가 하지 않습니다 `UserProfiles`합니다. 따라서 하거나 업데이트 합니다 `CreatingUserAccounts.aspx` 이 기능을 제공 되도록 페이지 또는 참조 사이트 맵 및 로그인 페이지를 업데이트 `EnhancedCreateUserWizard.aspx` 대신 `CreatingUserAccounts.aspx`합니다. 후자 옵션을 선택 하는 경우 업데이트 해야 합니다 `Membership` 폴더의 `Web.config` 익명 사용자에 대 한 액세스를 허용 하도록 파일을 `EnhancedCreateUserWizard.aspx` 페이지입니다.
-
 
 ## <a name="summary"></a>요약
 

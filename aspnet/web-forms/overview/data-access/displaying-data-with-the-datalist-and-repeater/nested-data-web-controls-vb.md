@@ -8,12 +8,12 @@ ms.date: 09/13/2006
 ms.assetid: 8b7fcf7b-722b-498d-a4e4-7c93701e0c95
 msc.legacyurl: /web-forms/overview/data-access/displaying-data-with-the-datalist-and-repeater/nested-data-web-controls-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 0d0aa2c52df284bae48907d0c0c1e5d4587c1b9e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b4eb90aec60767e80e90f4cb315440da27e208db
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59421422"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108319"
 ---
 # <a name="nested-data-web-controls-vb"></a>중첩된 데이터 웹 컨트롤(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59421422"
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_32_VB.exe) 또는 [PDF 다운로드](nested-data-web-controls-vb/_static/datatutorial32vb1.pdf)
 
 > 이 자습서에서는 Repeater를 사용 하는 방법을 다른 Repeater 내에 중첩 합니다. 예제에서는 선언적 및 프로그래밍 방식으로 내부 Repeater를 채우는 방법을 설명 합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -34,11 +33,9 @@ ms.locfileid: "59421422"
 
 이 자습서에서는 Repeater를 사용 하는 방법을 다른 Repeater 내에 중첩 합니다. 외부 Repeater 범주의 이름 및 설명을 표시 합니다. 데이터베이스에서 각 범주에 대 한 항목이 포함 됩니다. 각 범주 항목 s 내부 반복기에는 해당 범주에 속하는 각 제품에 대 한 정보가 표시 됩니다 (그림 1 참조) 글머리 기호 목록에서입니다. 이 예제에서는 선언적 및 프로그래밍 방식으로 내부 Repeater를 채우는 방법을 설명 합니다.
 
-
 [![각 범주에 해당 제품을 함께 나와 있습니다.](nested-data-web-controls-vb/_static/image2.png)](nested-data-web-controls-vb/_static/image1.png)
 
 **그림 1**: 각 범주에 해당 제품을 함께 나열 됩니다 ([클릭 하 여 큰 이미지 보기](nested-data-web-controls-vb/_static/image3.png))
-
 
 ## <a name="step-1-creating-the-category-listing"></a>1단계: 범주 목록 만들기
 
@@ -46,39 +43,31 @@ ms.locfileid: "59421422"
 
 열어서 시작 합니다 `NestedControls.aspx` 페이지에서 `DataListRepeaterBasics` 폴더 설정 페이지에 Repeater 컨트롤을 추가 하 고 해당 `ID` 속성을 `CategoryList`합니다. 반복기가 스마트 태그에서 이라는 새 ObjectDataSource를 만들려면 선택 `CategoriesDataSource`합니다.
 
-
 [![새 ObjectDataSource CategoriesDataSource 이름](nested-data-web-controls-vb/_static/image5.png)](nested-data-web-controls-vb/_static/image4.png)
 
 **그림 2**: 이름을 새 ObjectDataSource `CategoriesDataSource` ([큰 이미지를 보려면 클릭](nested-data-web-controls-vb/_static/image6.png))
 
-
 해당 데이터를 가져오는 있도록 ObjectDataSource를 구성 합니다 `CategoriesBLL` s 클래스 `GetCategories` 메서드.
-
 
 [![S CategoriesBLL 클래스 GetCategories 메서드를 사용 하는 ObjectDataSource 구성](nested-data-web-controls-vb/_static/image8.png)](nested-data-web-controls-vb/_static/image7.png)
 
 **그림 3**: ObjectDataSource를 사용 하 여 구성 합니다 `CategoriesBLL` s 클래스 `GetCategories` 메서드 ([클릭 하 여 큰 이미지 보기](nested-data-web-controls-vb/_static/image9.png))
 
-
 반복기가의 템플릿을 지정 하려면 콘텐츠 해야 소스 뷰로 이동 하 고 선언적 구문을 직접 입력 합니다. 추가 `ItemTemplate` 에서 s 범주 이름을 표시 하는 `<h4>` 단락 요소에 범주 s 설명과 요소 (`<p>`). Let s 수평선을 사용 하 여 각 범주를 구분 하는 또한 (`<hr>`). 이러한 변경을 수행한 후 페이지 반복기 및 ObjectDataSource 다음과 유사한 선언적 구문을 포함 되어야 합니다.
-
 
 [!code-aspx[Main](nested-data-web-controls-vb/samples/sample1.aspx)]
 
 그림 4에서는 브라우저를 통해 볼 때 진행 상황을 보여 줍니다.
 
-
 [![각 이름이 범주와 설명이 나열 되어 단락 구분선 구분](nested-data-web-controls-vb/_static/image11.png)](nested-data-web-controls-vb/_static/image10.png)
 
 **그림 4**: 각 이름이 범주와 설명이 나열 되어 단락 구분선으로 구분 된 ([클릭 하 여 큰 이미지 보기](nested-data-web-controls-vb/_static/image12.png))
-
 
 ## <a name="step-2-adding-the-nested-product-repeater"></a>2단계: 중첩 된 제품 Repeater를 추가합니다.
 
 전체 목록 범주를 사용 하 여이 다음 작업은 Repeater를 추가 합니다 `CategoryList` s `ItemTemplate` 적절 한 범주에 속하는 해당 제품에 대 한 정보를 표시 하는 합니다. 다양 한 방법으로 곧 살펴보겠습니다 두, 내부이 반복기에 대 한 데이터를 검색할 수 있습니다. 지금은 let s 만들면 Repeater 제품 내 합니다 `CategoryList` 반복기가의 `ItemTemplate`합니다. 특히 각 글머리 기호 목록의 각 제품 목록 항목 가격와 s 제품 이름을 포함 하 여 반복기 표시 제품이 s 수 있습니다.
 
 내부 Repeater가 선언적 구문 및 서식 파일에 수동으로 입력 해야이 Repeater를 만들려고 합니다 `CategoryList` s `ItemTemplate`입니다. 내에서 다음 태그를 추가 합니다 `CategoryList` Repeater의 `ItemTemplate`:
-
 
 [!code-aspx[Main](nested-data-web-controls-vb/samples/sample2.aspx)]
 
@@ -94,11 +83,9 @@ ms.locfileid: "59421422"
 
 아쉽게도 Repeater 만들어지고 t 해당 템플릿에서이 ObjectDataSource 컨트롤에 대 한 선언적 구문을 수동으로 추가 해야 하므로 디자인 뷰를 통해 편집할 수 있습니다. 에서는 다음 구문 합니다 `CategoryList` Repeater s `ItemTemplate` 새 ObjectDataSource를 추가한 후 (`ProductsByCategoryDataSource`):
 
-
 [!code-aspx[Main](nested-data-web-controls-vb/samples/sample3.aspx)]
 
 ObjectDataSource 접근 방식을 사용 하는 경우 설정 해야 합니다 `ProductsByCategoryList` Repeater s `DataSourceID` 속성을 합니다 `ID` ObjectDataSource의 (`ProductsByCategoryDataSource`). ObjectDataSource에 되었다는 또한는 `<asp:Parameter>` 지정 하는 요소는 *`categoryID`* 에 전달 되는 값을 `GetProductsByCategoryID(categoryID)` 메서드. 그러나이 값이 어떻게 지정에서는? 이상적으로 d 수 설정 하는 것을 `DefaultValue` 의 속성을 `<asp:Parameter>` 데이터 바인딩 구문을 사용 하 여 요소 같이:
-
 
 [!code-aspx[Main](nested-data-web-controls-vb/samples/sample4.aspx)]
 
@@ -108,30 +95,25 @@ ObjectDataSource 접근 방식을 사용 하는 경우 설정 해야 합니다 `
 
 에 대 한 이벤트 처리기를 만들고 합니다 `CategoryList` Repeater의 `ItemDataBound` 다음 코드를 사용 하 여 이벤트:
 
-
 [!code-vb[Main](nested-data-web-controls-vb/samples/sample5.vb)]
 
 이 이벤트 처리기는 머리글, 바닥글 또는 구분 기호 항목 대신 항목에서는 데이터 처리 다시 함으로써 시작 합니다. 다음으로, 참조 하는 실제 `CategoriesRow` 만 현재 바인딩된 인스턴스 `RepeaterItem`합니다. ObjectDataSource를 참조 하는 마지막으로 `ItemTemplate` 할당 및 해당 `CategoryID` 매개 변수 값을 `CategoryID` 현재 `RepeaterItem`.
 
 이 이벤트 처리기를 사용 하 여는 `ProductsByCategoryList` 각 반복기 `RepeaterItem` 에서 해당 제품에 바인딩되는 `RepeaterItem`의 범주입니다. 그림 5에서는 결과 출력의 스크린 샷을 보여 줍니다.
 
-
 [![외부 Repeater; 각 범주를 나열합니다. 해당 범주에 대 한 제품을 나열 하는 내부](nested-data-web-controls-vb/_static/image14.png)](nested-data-web-controls-vb/_static/image13.png)
 
 **그림 5**: 외부 Repeater; 각 범주를 나열합니다. 내부 하나는 해당 범주에 대 한 제품 ([클릭 하 여 큰 이미지 보기](nested-data-web-controls-vb/_static/image15.png))
 
-
 ## <a name="accessing-the-products-by-category-data-programmatically"></a>제품 범주 데이터를 프로그래밍 방식으로 액세스
 
 ObjectDataSource를 사용 하 여 현재 범주에 대 한 제품을 검색, 대신 ASP.NET의 페이지 코드 숨김 클래스에 메서드를 만들 수 (또는 `App_Code` 폴더 또는 별도 클래스 라이브러리 프로젝트를) 적절 한 집합을 반환 하는 에 전달 될 때 제품을 `CategoryID`입니다. ASP.NET 페이지가 코드 숨김 클래스에서는 이러한 메서드 했다는 및 명명 된 imagine `GetProductsInCategory(categoryID)`합니다. 현재 위치에서이 메서드를 사용 하 여 선언적 구문을 사용 하 여 내부 Repeater에 현재 범주에 대 한 제품을 바인딩할 수 것:
-
 
 [!code-aspx[Main](nested-data-web-controls-vb/samples/sample6.aspx)]
 
 Repeater s `DataSource` 속성에서 해당 데이터가 제공 됨을 나타내기 위해 데이터 바인딩 구문을 사용 하는 `GetProductsInCategory(categoryID)` 메서드. 하므로 `Eval("CategoryID")` 형식의 값을 반환 `Object`, 개체를 캐스팅 하는 것을 `Integer` 에 전달 하기 전에 `GetProductsInCategory(categoryID)` 메서드. `CategoryID` 여기 데이터 바인딩을 통해 구문은 액세스는 `CategoryID` 에 *외부* 반복기 (`CategoryList`), 것의 레코드에 바인딩할 입니다를 `Categories` 테이블. 있음을 알고 있으므로 `CategoryID` 데이터베이스가 있으면 안 `NULL` 맹목적으로 캐스팅할 수 것 때문 인 값을를 `Eval` 있는지를 확인 하지 않고 메서드 다시 처리 하는 것을 `DBNull`.
 
 이 방법을 사용 하 여 생성 해야 합니다 `GetProductsInCategory(categoryID)` 메서드는 제공 된 지정 된 제품의 적절 한 집합을 검색 하도록 *`categoryID`* 합니다. 단순히 반환 하 여 이렇게 할 합니다 `ProductsDataTable` 반환한 합니다 `ProductsBLL` s 클래스 `GetProductsByCategoryID(categoryID)` 메서드. 만든 수 있도록 합니다 `GetProductsInCategory(categoryID)` 에 대 한 코드 숨김 클래스의 메서드는 `NestedControls.aspx` 페이지. 다음 코드를 사용 하 여 수행 합니다.
-
 
 [!code-vb[Main](nested-data-web-controls-vb/samples/sample7.vb)]
 
@@ -141,7 +123,6 @@ Repeater s `DataSource` 속성에서 해당 데이터가 제공 됨을 나타내
 
 > [!NOTE]
 > 만들려는 busywork 등장이 그리 대단해는 `GetProductsInCategory(categoryID)` ASP.NET의 페이지 코드 숨김 클래스의 메서드. 간단히이 메서드의 인스턴스를 만들고, 합니다 `ProductsBLL` 클래스 및 결과 반환 합니다. 해당 `GetProductsByCategoryID(categoryID)` 메서드. 이유만이 메서드를 호출 내부 Repeater, 데이터 바인딩 구문을 통해 같은: `DataSource='<%# ProductsBLL.GetProductsByCategoryID(CType(Eval("CategoryID"), Integer)) %>'`? 이 구문은 현재 구현에서는 작동 하지 않습니다 하지만 `ProductsBLL` 클래스 (있으므로 `GetProductsByCategoryID(categoryID)` 메서드는 인스턴스 메서드), 수정할 수 있습니다 `ProductsBLL` 정적 포함 하도록 `GetProductsByCategoryID(categoryID)` 메서드 포함 정적클래스가또는`Instance()` 의 새 인스턴스를 반환 하는 방법의 `ProductsBLL` 클래스입니다.
-
 
 이러한 수정에 필요 하지 않게는 동안는 `GetProductsInCategory(categoryID)` ASP.NET의 페이지 코드 숨김 클래스에서 메서드를 코드 숨김 클래스의 메서드를 제공 보다 유연 하 게 앞으로 살펴보겠지만 곧를 검색 한 데이터로 작업 합니다.
 
@@ -153,7 +134,6 @@ Repeater s `DataSource` 속성에서 해당 데이터가 제공 됨을 나타내
 
 이 기능을 제공 하기만 하면 약간의 수정 된 `GetProductsInCategory(categoryID)` ASP.NET의 페이지 코드 숨김 클래스는 메서드. 맹목적으로 결과 반환 하는 대신 합니다 `ProductsBLL` s 클래스 `GetProductsByCategoryID(categoryID)` 메서드를 원하므로 대신 처음으로 액세스 *모든* (이미 액세스 하지 않는) 하는 경우 제품의 필터링된 된 보기에만 다음 다시 돌아와 전달 기능을 기반으로 제품 `CategoryID`합니다.
 
-
 [!code-vb[Main](nested-data-web-controls-vb/samples/sample8.vb)]
 
 페이지 수준 변수의 추가 `allProducts`합니다. 이 모든 제품에 대 한 정보를 보유 하 고 처음 채워집니다는 `GetProductsInCategory(categoryID)` 메서드가 실행 됩니다. 확인 한 후 합니다 `allProducts` 메서드를 갖는 행만 있도록 DataTable의 결과 필터링, 개체 생성 되어 채워집니다 `CategoryID` 지정 된 일치 `CategoryID` 액세스할 수 있습니다. 이 방법은 데이터베이스에서 액세스 하는 횟수를 줄입니다 *N* + 2까지 1입니다.
@@ -162,7 +142,6 @@ Repeater s `DataSource` 속성에서 해당 데이터가 제공 됨을 나타내
 
 > [!NOTE]
 > 직관적으로 데이터베이스 액세스의 수를 줄이면 성능이 향상 되는 이유 있습니다 하나입니다. 그러나이 아닐 경우. 제품 수가 많은 경우 해당 `CategoryID` 는 `NULL`, 예제에 대 한 호출에는 `GetProducts` 메서드 표시 되지 않는 제품의 숫자를 반환 합니다. 또한 모든 제품이 반환 낭비 될 수 있습니다 하는 경우 페이징 구현한 경우에 해당 될 수 있는 범주의 하위 집합을 표시만 다시 있습니다.
-
 
 언제 든 지는 두 가지 기술 중 성능 분석, 응용 프로그램 s 일반적인 사례 시나리오에 맞게 조정 하는 제어 된 테스트를 실행 해만 surefire 측정값이입니다.
 

@@ -1,6 +1,6 @@
 ---
 uid: web-forms/videos/how-do-i/how-do-i-add-client-script-event-handlers-controls-on-an-aspnet-page
-title: '[How Do I]: Add Client Script Event Handlers Controls on an ASP.NET Page? | Microsoft Docs'
+title: 어떻게 할까요 클라이언트 스크립트 이벤트 처리기는 ASP.NET 페이지에 컨트롤 추가 | Microsoft 문서
 author: rick-anderson
 description: 이 비디오 Chris Pels 클라이언트 스크립트 이벤트는 ASP.NET 페이지의 컨트롤을 추가 하는 방법을 보여 줍니다. 첫째, 여러 ASP.NET 컨트롤은 페이지 및 e...
 ms.author: riande
@@ -8,14 +8,14 @@ ms.date: 04/23/2009
 ms.assetid: 90255eda-36a2-42c6-b6b3-b5a76fee8c44
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-add-client-script-event-handlers-controls-on-an-aspnet-page
 msc.type: video
-ms.openlocfilehash: dc6bee1714d79ab0092a49d787dbde9119c04b66
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 26554eeb75521a26a5a42caac1eceec36c05c24b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59391359"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65106820"
 ---
-# <a name="how-do-i-add-client-script-event-handlers-controls-on-an-aspnet-page"></a>[방법]: 클라이언트 스크립트 이벤트 처리기는 ASP.NET 페이지에 컨트롤 추가
+# <a name="how-do-i-add-client-script-event-handlers-controls-on-an-aspnet-page"></a>어떻게 할까요 클라이언트 스크립트 이벤트 처리기는 ASP.NET 페이지에 컨트롤 추가
 
 [Chris Pels](https://twitter.com/chrispels)
 

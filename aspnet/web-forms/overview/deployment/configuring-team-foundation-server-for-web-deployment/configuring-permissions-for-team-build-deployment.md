@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 2488a91e-b0a8-465a-b874-3233f724b56b
 msc.legacyurl: /web-forms/overview/deployment/configuring-team-foundation-server-for-web-deployment/configuring-permissions-for-team-build-deployment
 msc.type: authoredcontent
-ms.openlocfilehash: 62e5c5622743447e1119141469c894dc905e6b43
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 5699f72af6b8d7f18d1a2c631dfdedd63c66e1e6
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381057"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133850"
 ---
 # <a name="configuring-permissions-for-team-build-deployment"></a>Team Build 배포를 위한 권한 구성
 
@@ -22,7 +22,6 @@ ms.locfileid: "59381057"
 [PDF 다운로드](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > 이 항목에서는 자동화 된 빌드 프로세스의 일부로 콘텐츠 웹 서버와 데이터베이스 서버를 배포 하 여 빌드 서버를 사용 하도록 설정 하는 권한을 구성 하는 방법을 설명 합니다.
-
 
 이 항목의 Fabrikam, Inc. 라는 가상 회사의 엔터프라이즈 배포 요구 사항 기반 자습서 시리즈의 일부를 형성 합니다. 샘플 솔루션을 사용 하 여이 자습서 시리즈&#x2014;는 [Contact Manager 솔루션](../web-deployment-in-the-enterprise/the-contact-manager-solution.md)&#x2014;현실적인 수준의 복잡성을 Windows Communication ASP.NET MVC 3 응용 프로그램을 포함 하 여 웹 응용 프로그램을 나타내는 Foundation (WCF) 서비스 및 데이터베이스 프로젝트입니다.
 
@@ -36,7 +35,6 @@ Windows 인증 및 Team Build를 사용 하 여 자동화할 하도록 계획 �
 
 > [!NOTE]
 > 네트워크 서비스 계정 컴퓨터 계정을 사용 하 여 다른 컴퓨터를 인증. 컴퓨터 계정 형태가 * [도메인 이름]\[컴퓨터 이름] ***$**&#x2014;예를 들어 **FABRIKAM\TFSBUILD$**. 이와 같이 빌드 서비스는 네트워크 서비스 id를 사용 하 여를 실행 하는 경우 빌드 서버에 대 한 컴퓨터 계정 id에 필요한 권한을 부여 해야 있습니다.
-
 
 ## <a name="configuring-web-server-permissions"></a>웹 서버 사용 권한 구성
 

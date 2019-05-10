@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 44a22ac7-1fc7-4174-b946-c6129fb6a19b
 msc.legacyurl: /web-forms/overview/deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-test-environment-for-web-deployment
 msc.type: authoredcontent
-ms.openlocfilehash: 7ea8c74a6621200e3a0d52a7c37fed6b5eeff4e5
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: d580e550f2461837f0e8a4e477273348b49cb53e
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59391626"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132388"
 ---
 # <a name="scenario-configuring-a-test-environment-for-web-deployment"></a>시나리오: 웹 배포용 테스트 환경 구성
 
@@ -22,7 +22,6 @@ ms.locfileid: "59391626"
 [PDF 다운로드](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > 이 항목에서는 개발자를 위한 일반적인 웹 배포 시나리오를 설명 하 고 또는 테스트 환경, 유사한 환경을 설정 하기 위해 완료 해야 하는 작업을 설명 합니다.
-
 
 개발자가 웹 응용 프로그램에서 작동 하는 경우 종종 주어질 액세스 현실적인 설정에서 응용 프로그램에 대 한 변경 내용을 테스트 하는 데 사용할 수 있는 서버 환경입니다. 일반적으로 이러한 종류의 개발 또는 테스트 환경에 이러한 특징이 있습니다.
 
@@ -47,7 +46,6 @@ ms.locfileid: "59391626"
 
 > [!NOTE]
 > 사용할 수도 있습니다 [주문형 웹 배포](https://technet.microsoft.com/library/ee517345(WS.10).aspx) ("임시 에이전트"). 요구 사항 및 제약 조건을 기준으로 원격 에이전트 접근 방식에는 것과 비슷합니다.
-
 
 이 경우 개발자를 대상 서버에서 관리자 권한이 있어야 하 고 테스트 환경을 아니므로 엄격한 보안 제한에 따라 원격 에이전트를 사용 하 여 배포를 지원 하기 위해 테스트 웹 서버를 구성 하는 것이 좋습니다. 이 작업은 덜 복잡 하며 웹 배포 처리기의 접근 방법 보다 덜 초기 구성이 필요 합니다. 원격 액세스 및 배포를 지원 하기 위해 데이터베이스 서버를 구성 해야 합니다.
 

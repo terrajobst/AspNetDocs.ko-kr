@@ -8,19 +8,18 @@ ms.date: 01/26/2011
 ms.assetid: 393df4a8-b1db-44c4-9db7-2b533ca887d0
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/continuing-with-ef/what-s-new-in-the-entity-framework-4
 msc.type: authoredcontent
-ms.openlocfilehash: 0bc24a59e09728a5ecb6e18378c4cde0c8e046f2
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 29d2bd61e8361b130e7b9415dad4fe1d5b847945
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59387453"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65109316"
 ---
 # <a name="whats-new-in-the-entity-framework-40"></a>Entity Framework 4.0의 새로운 기능
 
 [Tom Dykstra](https://github.com/tdykstra)
 
 > 이 자습서 시리즈에서 만든 Contoso University 웹 응용 프로그램 빌드를 [Entity Framework를 사용 하 여 시작](../getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1.md) 자습서 시리즈입니다. 이전 자습서를 완료 하지 않은 경우이 자습서에 대 한 시작 지점으로 할 수 있습니다 [응용 프로그램을 다운로드](https://code.msdn.microsoft.com/ASPNET-Web-Forms-97f8ee9a) 만들어졌을 것입니다. 할 수도 있습니다 [응용 프로그램을 다운로드](https://code.msdn.microsoft.com/ASPNET-Web-Forms-6c7197aa) 전체 자습서 시리즈에서 만들어집니다. 이 자습서에 대 한 질문이 있으면 하기를 게시할 수 있습니다 합니다 [ASP.NET Entity Framework 포럼](https://forums.asp.net/1227.aspx)합니다.
-
 
 이전 자습서에서 Entity Framework를 사용 하는 웹 응용 프로그램의 성능을 극대화 하기 위한 몇 가지 방법을 살펴보았습니다. 이 자습서는 Entity Framework 버전 4의에서 가장 중요 한 새로운 기능 중 일부를 검토 하 고 모든 새 기능에 대 한 자세한 소개를 제공 하는 리소스에 연결 합니다. 이 자습서에서 강조 표시 된 기능은 다음과 같습니다.
 

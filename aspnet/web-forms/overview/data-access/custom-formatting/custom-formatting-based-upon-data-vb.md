@@ -8,12 +8,12 @@ ms.date: 03/31/2010
 ms.assetid: df5a1525-386f-4632-972c-57b199870bc3
 msc.legacyurl: /web-forms/overview/data-access/custom-formatting/custom-formatting-based-upon-data-vb
 msc.type: authoredcontent
-ms.openlocfilehash: a408134b4e26e8ad1f7c22c9d2005a7c551b00c6
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 064bbc94b466ecb43bd0f7985433a0acb986d757
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59392861"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108892"
 ---
 # <a name="custom-formatting-based-upon-data-vb"></a>데이터에 따라 사용자 지정 형식 지정(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59392861"
 [샘플 앱을 다운로드](http://download.microsoft.com/download/5/7/0/57084608-dfb3-4781-991c-407d086e2adc/ASPNET_Data_Tutorial_11_VB.exe) 또는 [PDF 다운로드](custom-formatting-based-upon-data-vb/_static/datatutorial11vb1.pdf)
 
 > GridView, DetailsView 또는 FormView에 바인딩된 데이터를 기반으로 형식을 조정 하는 여러 가지 방법으로 수행할 수 있습니다. 이 자습서에서는 데이터 바인딩된 데이터 바인딩 및 RowDataBound 이벤트 처리기를 사용 하 여 서식 지정을 수행 하는 방법을 살펴보겠습니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -48,41 +47,32 @@ GridView, DetailsView 또는 FormView에 바인딩된 데이터를 기반으로 
 
 ObjectDataSource DetailsView에 바인딩된 했습니다 되 면 잠시 필드 목록을 수정 합니다. 제거 하기로 했습니다 합니다 `ProductID`, `SupplierID`, `CategoryID`, `UnitsInStock`, `UnitsOnOrder`, `ReorderLevel`, 및 `Discontinued` BoundFields 이름을 변경 하 고 나머지 BoundFields 서식이 다시 지정 합니다. 도 삭제 합니다 `Width` 및 `Height` 설정 합니다. DetailsView 레코드가 하나만 표시 되므로 최종 사용자가 모든 제품을 볼 수 있도록 하기 위해 페이징 사용 하도록 설정 해야 합니다. 이렇게 하려면 DetailsView의 스마트 태그의 페이징 사용 확인란을 선택 합니다.
 
-
 [![그림 1: 확인란을 사용 하도록 설정 페이징 DetailsView의 스마트 태그](custom-formatting-based-upon-data-vb/_static/image2.png)](custom-formatting-based-upon-data-vb/_static/image1.png)
 
 **그림 1**: 그림 1: 확인란을 사용 하도록 설정 페이징 DetailsView의 스마트 태그 ([클릭 하 여 큰 이미지 보기](custom-formatting-based-upon-data-vb/_static/image3.png))
 
-
 이러한 변경 내용은 다음 DetailsView 태그 수 있습니다.
-
 
 [!code-aspx[Main](custom-formatting-based-upon-data-vb/samples/sample1.aspx)]
 
 시간을 내어이 페이지를 브라우저에서 테스트 합니다.
 
-
 [![DetailsView 컨트롤을 한 번에 한 제품 표시](custom-formatting-based-upon-data-vb/_static/image5.png)](custom-formatting-based-upon-data-vb/_static/image4.png)
 
 **그림 2**: 한 번에 DetailsView 컨트롤 표시 한 제품 ([클릭 하 여 큰 이미지 보기](custom-formatting-based-upon-data-vb/_static/image6.png))
-
 
 ## <a name="step-2-programmatically-determining-the-value-of-the-data-in-the-databound-event-handler"></a>2단계: 데이터 바인딩된 이벤트 처리기에서 데이터의 값을 프로그래밍 방식으로 결정
 
 이러한 제품에 대해 굵게, 기울임꼴 글꼴의 가격을 표시 하기 위해 해당 `UnitPrice` 75.00 달러를 초과 하는 값을 프로그래밍 방식으로 결정을 해야는 `UnitPrice` 값입니다. DetailsView에 대 한이 수행할 수 있습니다는 `DataBound` 이벤트 처리기입니다. 이벤트를 만들면 처리기 디자이너에서 DetailsView 클릭 속성 창으로 이동 합니다. F4 키를 눌러를 불러오려면 없으면 표시할지 보기 메뉴로 이동 하 고 속성 창 메뉴 옵션을 선택 합니다. 속성 창에서 DetailsView의 이벤트를 나열 하려면 번개 모양 아이콘을 클릭 합니다. 다음으로 두 번 클릭 합니다 `DataBound` 이벤트 또는 이벤트 처리기를 만들려는 이름을 입력 합니다.
 
-
 ![DataBound 이벤트에 대 한 이벤트 처리기 만들기](custom-formatting-based-upon-data-vb/_static/image7.png)
 
 **그림 3**: 에 대 한 이벤트 처리기 만들기는 `DataBound` 이벤트
 
-
 > [!NOTE]
 > 또한 ASP.NET 페이지의 코드 부분에서 이벤트 처리기를 만들 수 있습니다. 페이지의 맨 위에 있는 두 개의 드롭다운 목록을 찾을 수 있습니다. 왼쪽된 드롭다운 목록에서 개체를 선택 하 고 오른쪽 드롭다운 목록에서 Visual Studio에 대 한 처리기를 만들려는 이벤트에서 자동으로 적절 한 이벤트 처리기를 만듭니다.
 
-
 이렇게 자동으로 이벤트 처리기를 만들고 여기서 추가한 코드 부분을 이동 합니다. 이 시점에서 표시 됩니다.
-
 
 [!code-vb[Main](custom-formatting-based-upon-data-vb/samples/sample2.vb)]
 
@@ -90,12 +80,10 @@ DetailsView로 바인딩된 데이터를 통해 액세스할 수 있습니다는
 
 다음 코드를 확인 하는 방법을 보여 줍니다 여부는 `UnitPrice` DetailsView 컨트롤에 바인딩된 값 $75.00 보다 큽니다.:
 
-
 [!code-vb[Main](custom-formatting-based-upon-data-vb/samples/sample3.vb)]
 
 > [!NOTE]
 > 이후 `UnitPrice` 있을 수 있습니다를 `NULL` 값 데이터베이스에 먼저 확인을 사용 하 여 총비율 되지 있는지 확인을 `NULL` 값에 액세스 하기 전에 `ProductsRow`의 `UnitPrice` 속성. 이 검사는 중요 한 때문에 액세스 하려고 하는 경우는 `UnitPrice` 에 있을 때 속성을 `NULL` 값을 `ProductsRow` 개체를 throw 합니다를 [StrongTypingException 예외](https://msdn.microsoft.com/library/system.data.strongtypingexception.aspx).
-
 
 ## <a name="step-3-formatting-the-unitprice-value-in-the-detailsview"></a>3단계: DetailsView UnitPrice 값 서식 지정
 
@@ -103,36 +91,29 @@ DetailsView로 바인딩된 데이터를 통해 액세스할 수 있습니다는
 
 행을 프로그래밍 방식으로 액세스 0부터 시작 하는 행의 인덱스를 알고 있어야 합니다. 합니다 `UnitPrice` 행은 4의 인덱스를 지정 하 고 프로그래밍 방식으로 액세스할 수 있도록 DetailsView의 다섯 번째 행을 사용 하 여 `ExpensiveProductsPriceInBoldItalic.Rows(4)`입니다. 이 시점에서 다음 코드를 사용 하 여 굵게, 기울임꼴 글꼴에 표시 되는 전체 행의 콘텐츠가 있을 수 없습니다.
 
-
 [!code-vb[Main](custom-formatting-based-upon-data-vb/samples/sample4.vb)]
 
 그러나 그러면 *둘 다* 레이블 (Price) 및 굵게 및 기울임꼴 값입니다. 값만 굵게 및 기울임꼴 다음을 사용 하 여 수행할 수 있는 행의 두 번째 셀에 서식을 적용 하기 위해서 필요를 확인 하려면:
-
 
 [!code-vb[Main](custom-formatting-based-upon-data-vb/samples/sample5.vb)]
 
 지금 있으므로 자습서를 명확히 구분 된 렌더링 된 태그 및 스타일 관련 정보를 유지 하기 위해 스타일 시트를 사용 있어야, 있으므로 위와 같이 보겠습니다 대신 특정 스타일 속성을 설정 하는 대신 CSS 클래스를 사용 합니다. 엽니다는 `Styles.css` 스타일 시트 라는 새 CSS 클래스를 추가 하 고 `ExpensivePriceEmphasis` 다음 정의 사용 하 여:
 
-
 [!code-css[Main](custom-formatting-based-upon-data-vb/samples/sample6.css)]
 
 그런 다음 합니다 `DataBound` 셀의을 설정 하는 이벤트 처리기 `CssClass` 속성을 `ExpensivePriceEmphasis`입니다. 다음 코드에서는 `DataBound` 전체에서 이벤트 처리기:
-
 
 [!code-vb[Main](custom-formatting-based-upon-data-vb/samples/sample7.vb)]
 
 가격은 일반 글꼴로 표시 됩니다 Chai 75.00 달러 비용에서 볼 때 (그림 4 참조). 그러나 $97.00 가격이 있는 Mishi 산호세 Niku 보기 가격에에서 표시 됩니다 굵게, 기울임꼴 글꼴 (그림 5 참조).
 
-
 [![$75.00 보다 적은 가격 보통 글꼴로 표시 됩니다.](custom-formatting-based-upon-data-vb/_static/image9.png)](custom-formatting-based-upon-data-vb/_static/image8.png)
 
 **그림 4**: $75.00 보다 적은 가격 보통 글꼴로 표시 됩니다 ([클릭 하 여 큰 이미지 보기](custom-formatting-based-upon-data-vb/_static/image10.png))
 
-
 [![비용이 많이 드는 제품의 가격은 기울임꼴 글꼴을 굵게 표시 됩니다.](custom-formatting-based-upon-data-vb/_static/image12.png)](custom-formatting-based-upon-data-vb/_static/image11.png)
 
 **그림 5**: 비용이 많이 드는 제품의 가격은 기울임꼴 글꼴을 굵게 표시 됩니다 ([클릭 하 여 큰 이미지 보기](custom-formatting-based-upon-data-vb/_static/image13.png))
-
 
 ## <a name="using-the-formview-controlsdataboundevent-handler"></a>FormView 컨트롤을 사용 하 여`DataBound`이벤트 처리기
 
@@ -148,7 +129,6 @@ FormView를 추가 합니다 `CustomColors.aspx` 집합과 DetailsView 아래 �
 
 이러한 편집 후 FormView의 태그는 다음과 비슷하게 표시 됩니다.
 
-
 [!code-aspx[Main](custom-formatting-based-upon-data-vb/samples/sample8.aspx)]
 
 `ItemTemplate` 포함 되어 있습니다.
@@ -161,14 +141,11 @@ FormView를 추가 합니다 `CustomColors.aspx` 집합과 DetailsView 아래 �
 
 전체 FormView의 태그를 사용 하 여 프로그래밍 방식으로 확인 하는 경우 다음 단계는는 `UnitsInStock` 10 보다 작거나 같은 값이 있습니다. DetailsView를 사용 하 여 처럼 FormView와 정확히 동일한 방식으로 수행 됩니다. FormView의에 대 한 이벤트 처리기를 만들어 시작 `DataBound` 이벤트입니다.
 
-
 ![데이터 바인딩된 이벤트 처리기 만들기](custom-formatting-based-upon-data-vb/_static/image14.png)
 
 **그림 6**: 만들기는 `DataBound` 이벤트 처리기
 
-
 처리기 FormView의 캐스팅 하는 이벤트 `DataItem` 속성을를 `ProductsRow` 인스턴스를 확인 하는지 여부를 `UnitsInPrice` 값은 빨간색 글꼴로 표시할 필요는 합니다.
-
 
 [!code-vb[Main](custom-formatting-based-upon-data-vb/samples/sample9.vb)]
 
@@ -176,35 +153,28 @@ FormView를 추가 합니다 `CustomColors.aspx` 집합과 DetailsView 아래 �
 
 표시 서식을 지정 하는 최종 단계입니다 `UnitsInStock` 빨간색 글꼴로 값 10 이하의 값이 있습니다. 프로그래밍 방식으로 액세스 해야 하는 것이 `UnitsInStockLabel` 에서 제어할는 `ItemTemplate` 빨간색에서 텍스트 표시 되도록 스타일 속성을 설정 합니다. 템플릿에서 웹 컨트롤에 액세스 하려면 사용 된 `FindControl("controlID")` 다음과 같이 메서드:
 
-
 [!code-vb[Main](custom-formatting-based-upon-data-vb/samples/sample10.vb)]
 
 컨트롤 레이블 액세스 하려는 예제 `ID` 값은 `UnitsInStockLabel`이므로 사용 하면 됩니다.
 
-
 [!code-vb[Main](custom-formatting-based-upon-data-vb/samples/sample11.vb)]
 
 웹 컨트롤에 대 한 프로그래밍 방식으로 참조 한 후 필요에 따라 해당 스타일 관련 속성을 수정할 수 있습니다. CSS 클래스 이전 예에서 만들었습니다 처럼 `Styles.css` 라는 `LowUnitsInStockEmphasis`합니다. 이 스타일 레이블을 웹 컨트롤에 적용할 설정 해당 `CssClass` 속성 적절 하 게 합니다.
-
 
 [!code-vb[Main](custom-formatting-based-upon-data-vb/samples/sample12.vb)]
 
 > [!NOTE]
 > 프로그래밍 방식으로 사용 하 여 웹 컨트롤에 액세스 하는 템플릿 서식 지정에 대 한 구문을 `FindControl("controlID")` 스타일 관련 속성을 다음 설정도 사용할 수 있습니다 사용 하는 경우 [TemplateFields](https://msdn.microsoft.com/library/system.web.ui.webcontrols.templatefield(VS.80).aspx) DetailsView 또는 GridView 컨트롤입니다. 다음 자습서에서 TemplateFields를 살펴보겠습니다.
 
-
 제품을 볼 때 그림 7 FormView에 나와 있는 `UnitsInStock` 그림 8에 있는 제품에 해당 값이 10 보다 작은 값이 10 보다 큰 합니다.
-
 
 [![제품으로는 충분히 큰 Units In Stock, 사용자 지정 서식 없이 적용 됩니다.](custom-formatting-based-upon-data-vb/_static/image16.png)](custom-formatting-based-upon-data-vb/_static/image15.png)
 
 **그림 7**: 제품으로는 충분히 큰 Units In Stock, 사용자 지정 서식 없이 적용 됩니다 ([클릭 하 여 큰 이미지 보기](custom-formatting-based-upon-data-vb/_static/image17.png))
 
-
 [![재고 수 단위 값에 대 한 해당 제품으로 10 개 이하의의 빨간색으로 표시 됩니다.](custom-formatting-based-upon-data-vb/_static/image19.png)](custom-formatting-based-upon-data-vb/_static/image18.png)
 
 **그림 8**: 재고 수 단위 값에 대 한 해당 제품으로 10 개 이하의의 빨간색으로 표시 됩니다 ([클릭 하 여 큰 이미지 보기](custom-formatting-based-upon-data-vb/_static/image20.png))
-
 
 ## <a name="formatting-with-the-gridviewsrowdataboundevent"></a>Gridview의 서식 지정`RowDataBound`이벤트
 
@@ -241,16 +211,13 @@ GridView의 개별 레코드 형식의 사용자 지정 하려면 다음을 생�
 
 이전 예제에서 GridView FormView 아래에 추가 하 고 설정 해당 `ID` 속성을 `HighlightCheapProducts`입니다. 페이지의 모든 제품을 반환 하는 ObjectDataSource에 이미 있으므로 GridView를 바인딩하십시오. GridView의 BoundFields 방금: 제품 이름, 범주 및 가격을 포함 하도록 마지막으로 편집 합니다. 이러한 편집 후 GridView의 태그 같이 표시 됩니다.
 
-
 [!code-aspx[Main](custom-formatting-based-upon-data-vb/samples/sample13.aspx)]
 
 그림 9에서는 브라우저를 통해 볼 때이 여태 까지의 진행 상황을 보여 줍니다.
 
-
 [![이름, 범주 및 각 제품에 대 한 가격을 나열 하는 GridView](custom-formatting-based-upon-data-vb/_static/image22.png)](custom-formatting-based-upon-data-vb/_static/image21.png)
 
 **그림 9**: 이름, 범주 및 각 제품에 대 한 가격을 나열 하는 GridView ([클릭 하 여 큰 이미지 보기](custom-formatting-based-upon-data-vb/_static/image23.png))
-
 
 ## <a name="step-8-programmatically-determining-the-value-of-the-data-in-the-rowdatabound-event-handler"></a>8단계: 프로그래밍 방식으로 RowDataBound 이벤트 처리기에서 데이터의 값을 결정 하기
 
@@ -258,19 +225,15 @@ GridView의 개별 레코드 형식의 사용자 지정 하려면 다음을 생�
 
 FormView 및 DetailsView와 같은 일련의 단계를 사용 하 여이 이벤트 처리기를 만들 수 있습니다.
 
-
 ![GridView의 RowDataBound 이벤트에 대 한 이벤트 처리기 만들기](custom-formatting-based-upon-data-vb/_static/image24.png)
 
 **그림 10**: GridView의에 대 한 이벤트 처리기를 만들고 `RowDataBound` 이벤트
 
-
 이 방식으로 이벤트 처리기를 만드는 다음 코드를 ASP.NET 페이지의 코드 부분을 자동으로 추가 하면:
-
 
 [!code-vb[Main](custom-formatting-based-upon-data-vb/samples/sample14.vb)]
 
 경우는 `RowDataBound` 이벤트가 발생 이벤트 처리기 매개 변수로 전달 되는 두 번째 형식의 개체 `GridViewRowEventArgs`에 라는 속성이 있는 `Row`합니다. 이 속성에 대 한 참조를 반환 합니다.는 `GridViewRow` 바인딩된 데이터 뿐 이었습니다. 액세스 하는 `ProductsRow` 에 바인딩된 인스턴스를 `GridViewRow` 사용 하 여는 `DataItem` 같이 속성:
-
 
 [!code-vb[Main](custom-formatting-based-upon-data-vb/samples/sample15.vb)]
 
@@ -285,7 +248,6 @@ FormView 및 DetailsView와 같은 일련의 단계를 사용 하 여이 이벤�
 
 하므로 합니다 `EmptyDataRow`, `Header`, `Footer`, 및 `Pager` 행 연관 되지 않습니다는 `DataSource` 레코드를 항상 갖습니다 값 `Nothing` 에 대 한 해당 `DataItem` 속성. 현재 사용 하기 전에 이러한 이유로 `GridViewRow`의 `DataItem` 속성인 것 먼저 확인 해야 사용 하 여 총비율을 `DataRow`입니다. 이 확인 하 여 수행할 수 있습니다 합니다 `GridViewRow`의 `RowType` 같이 속성:
 
-
 [!code-vb[Main](custom-formatting-based-upon-data-vb/samples/sample16.vb)]
 
 ## <a name="step-9-highlighting-the-row-yellow-when-the-unitprice-value-is-less-than-1000"></a>9단계: $10.00 미만 행 노란색 When the UnitPrice 값을 강조 표시
@@ -294,19 +256,15 @@ FormView 및 DetailsView와 같은 일련의 단계를 사용 하 여이 이벤�
 
 대신 `GridViewID.Rows(index)`, 현재 참조할 수 있습니다 `GridViewRow` 의 인스턴스를 `RowDataBound` 이벤트 처리기를 사용 하 여 `e.Row`입니다. 즉, 하려면 현재 강조 표시 `GridViewRow` 에서 인스턴스를 `RowDataBound` 이벤트 처리기를 사용 하면 됩니다.
 
-
 [!code-vb[Main](custom-formatting-based-upon-data-vb/samples/sample17.vb)]
 
 설정 하지 않고 합니다 `GridViewRow`의 `BackColor` 속성을 직접 CSS 클래스를 사용 하 여 집중 하겠습니다. 명명 된 CSS 클래스를 만들었습니다 `AffordablePriceEmphasis` 노란색으로 배경색을 설정 하는입니다. 완료 된 `RowDataBound` 이벤트 처리기를 따릅니다.
 
-
 [!code-vb[Main](custom-formatting-based-upon-data-vb/samples/sample18.vb)]
-
 
 [![가장 저렴 한 제품 노란색 강조 표시 됩니다.](custom-formatting-based-upon-data-vb/_static/image26.png)](custom-formatting-based-upon-data-vb/_static/image25.png)
 
 **그림 11**: 가장 저렴 한 제품 노란색 강조 표시 됩니다 ([클릭 하 여 큰 이미지 보기](custom-formatting-based-upon-data-vb/_static/image27.png))
-
 
 ## <a name="summary"></a>요약
 

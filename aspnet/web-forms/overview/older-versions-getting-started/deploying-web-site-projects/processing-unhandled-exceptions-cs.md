@@ -8,12 +8,12 @@ ms.date: 06/09/2009
 ms.assetid: 5bc1afd5-2484-4528-b158-ab218ba150e8
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/processing-unhandled-exceptions-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 2940c17e8466eae1e72d3f7cbc6ff7127c8588b7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 0a048527aeaa44a452324530625583c00239d6f2
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59415858"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65109298"
 ---
 # <a name="processing-unhandled-exceptions-c"></a>처리되지 않은 예외 처리(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59415858"
 [예제 코드 살펴보기 및 다운로드](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/processing-unhandled-exceptions-cs/samples) ([다운로드 방법](/aspnet/core/tutorials/index#how-to-download-a-sample))
 
 > 프로덕션 환경에서 웹 응용 프로그램에서 런타임 오류가 발생할 때 개발자에 게 알림를 시간에 나중에 진단 수 있도록 오류 로그에 중요 한 것입니다. 이 자습서에는 ASP.NET 런타임 오류를 처리 하 고 ASP.NET 런타임이까지 처리 되지 않은 예외가 거품을 받을 때마다 실행할 사용자 지정 코드가 있는 한 가지 방법은 조사 하는 방법을 간략하게를 설명 합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -34,7 +33,6 @@ ASP.NET 런타임까지 전달 하는 ASP.NET 응용 프로그램에서 처리 �
 
 > [!NOTE]
 > 이 자습서에서는 검사 정보를 일부 고유 또는 사용자 지정 방식으로 처리 되지 않은 예외를 처리 해야 할 경우 가장 유용 합니다. 경우에 해야 하는 예외를 로그인 하 고 개발자에 게 알림, 오류 로깅 라이브러리를 사용 하 여는 이동 방법입니다. 이러한 라이브러리의 개요를 제공 하는 다음 두 자습서입니다.
-
 
 ## <a name="executing-code-when-theerrorevent-is-raised"></a>때 코드 실행을`Error`이벤트 발생
 
@@ -56,7 +54,6 @@ ASP.NET 런타임까지 전달 하는 ASP.NET 응용 프로그램에서 처리 �
 > [!NOTE]
 > 복사 해야 하는 ASP.NET 응용 프로그램을 배포 하는 경우는 `Global.asax` 프로덕션 환경에는 파일입니다. `Global.asax.cs` WAP에서 만들어진 파일을 프로젝트의 어셈블리에이 코드는 컴파일되기 때문에 프로덕션에 복사할 필요가 없습니다.
 
-
 Visual Studio의 전역 응용 프로그램 클래스 템플릿에서 만든 이벤트 처리기 하지는 않습니다. 에 대 한 이벤트 처리기를 추가할 수 있습니다 `HttpApplication` 이벤트 처리기의 이름을 지정 하 여 이벤트 `Application_EventName`합니다. 예를 들어, 다음 코드를 추가할 수 있습니다 합니다 `Global.asax` 에 대 한 이벤트 처리기를 만들려는 파일의 [ `AuthorizeRequest` 이벤트](https://msdn.microsoft.com/library/system.web.httpapplication.authorizerequest.aspx):
 
 [!code-cs[Main](processing-unhandled-exceptions-cs/samples/sample1.cs)]
@@ -65,7 +62,6 @@ Visual Studio의 전역 응용 프로그램 클래스 템플릿에서 만든 이
 
 > [!NOTE]
 > *HTTP 모듈* 에 대 한 이벤트 처리기를 정의 하는 또 다른 방법은 제공 `HttpApplication` 이벤트입니다. HTTP 모듈은 별도 클래스 라이브러리로 웹 응용 프로그램 프로젝트 내에서 직접 배치 하거나 분리할 수 있는 클래스 파일으로 생성 됩니다. HTTP 모듈을 만들기 위한 더 유연 하 고 다시 사용할 수 있는 모델을 제공 클래스 라이브러리로 구분할 수 있습니다, 되므로 `HttpApplication` 이벤트 처리기입니다. 반면 합니다 `Global.asax` 파일은 특정 있는 웹 응용 프로그램에 HTTP 컴파일할 수 있는 모듈을 어셈블리에이 시점에서 웹 사이트에 HTTP 모듈을 추가 하기만 하면 됩니다에서 어셈블리를 삭제 합니다 `Bin` 폴더 및 등록 합니다 모듈에서 `Web.config`합니다. 이 자습서를 작성 하 고 HTTP 모듈을 사용 하 여 찾지 않습니다 하지만 다음 두 가지 자습서에서 사용 된 두 개의 오류 로깅 라이브러리는 HTTP 모듈로 구현 됩니다. 참조에 대 한 자세한 배경 HTTP 모듈의 이점 [를 사용 하 여 HTTP 모듈 및 처리기 플러그형 ASP.NET 구성 요소 만들기를](https://msdn.microsoft.com/library/aa479332.aspx)입니다.
-
 
 ## <a name="retrieving-information-about-the-unhandled-exception"></a>처리 되지 않은 예외에 대 한 정보를 검색합니다.
 
@@ -92,7 +88,6 @@ Global.asax 파일이 있다고 이때는 `Application_Error` 이벤트 처리�
 > [!NOTE]
 > 합니다 `<system.net>` 요소에서 사용 하는 SMTP 서버 설정을 포함 합니다 `SmtpClient` 전자 메일을 보낼 때 클래스입니다. 웹 호스팅 가능성이 회사 전자 메일을 보내는 응용 프로그램에서 사용할 수 있는 SMTP 서버를 있습니다. 웹 응용 프로그램에서 사용 해야 하는 SMTP 서버 설정에 대 한 정보는 웹 호스트의 지원 섹션을 참조 하세요.
 
-
 다음 코드를 추가 합니다 `Application_Error` 개발자는 전자 메일을 보내는 오류가 발생할 때 이벤트 처리기:
 
 [!code-csharp[Main](processing-unhandled-exceptions-cs/samples/sample4.cs)]
@@ -105,7 +100,6 @@ Global.asax 파일이 있다고 이때는 `Application_Error` 이벤트 처리�
 
 > [!NOTE]
 > 웹 응용 프로그램에서이 코드를 사용 하기 전에 값을 변경 하려는 합니다 `ToAddress` 및 `FromAddress` 상수 support@example.com 모든 전자 메일에 오류 알림 전자 메일 주소를 보낼 및에서 발생 합니다. 에 SMTP 서버 설정을 지정 해야 합니다 `<system.net>` 단원의 `Web.config`합니다. 사용할 SMTP 서버 설정을 확인 하 여 웹 호스트 공급자를 참조 하세요.
-
 
 이 코드를 사용 하 여 오류가 발생 하는 언제 든 지 개발자가 보내집니다 오류를 요약 하 고는 YSOD 포함 한 전자 메일 메시지. 이전 자습서에서 주었습니다 런타임 오류가 Genre.aspx를 방문 하 고 잘못에서 전달 `ID` querystring을 통해 같은 값 `Genre.aspx?ID=foo`합니다. 사용 하 여 페이지를 방문 하 여 `Global.asax` -이전 자습서에서 개발 환경에서 계속 해 서 하면 프로덕션 환경에서 하는 동안 예외 세부 정보 노란색 화면의 쇠퇴, 보려는 처럼 동일한 사용자 환경을 생성 하는 준비 된 파일 사용자 지정 오류 페이지를 참조 하세요. 이 기존 동작 외에도 개발자는 전자 메일이 전송 됩니다.
 

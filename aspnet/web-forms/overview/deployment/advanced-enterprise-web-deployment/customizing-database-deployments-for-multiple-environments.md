@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: a172979a-1318-4318-a9c6-4f9560d26267
 msc.legacyurl: /web-forms/overview/deployment/advanced-enterprise-web-deployment/customizing-database-deployments-for-multiple-environments
 msc.type: authoredcontent
-ms.openlocfilehash: 865e901618b48bc4bfdc6d7a3ca4e8868d4cb46b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8ae8cb1a322afb95c5d2e8d5e73c7825c7b2fe5a
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59412985"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108328"
 ---
 # <a name="customizing-database-deployments-for-multiple-environments"></a>다중 환경을 위한 데이터베이스 배포 사용자 지정
 
@@ -30,7 +30,6 @@ ms.locfileid: "59412985"
 > 여러 대상에 데이터베이스 프로젝트를 배포할 때 각 대상 환경에 대 한 데이터베이스 배포 속성을 사용자 지정 하려는 경우가 많습니다 됩니다. 예를 들어 테스트 환경에서 일반적으로 다시 만드는 모든 배포에서 데이터베이스 반면 스테이징 또는 프로덕션 환경에서 데이터를 유지 하기 위해 증분 업데이트를 수행할 가능성이 훨씬 더 됩니다.
 > 
 > Visual Studio 2010 데이터베이스 프로젝트에서 배포 설정 배포 (.sqldeployment) 구성 파일 안에 포함 됩니다. 이 항목에서는 환경 관련 배포 구성 파일을 만들고 VSDBCMD 매개 변수로 사용 하려면 지정 하는 방법을 보여줍니다.
-
 
 이 항목의 Fabrikam, Inc. 라는 가상 회사의 엔터프라이즈 배포 요구 사항 기반 자습서 시리즈의 일부를 형성 합니다. 샘플 솔루션을 사용 하 여이 자습서 시리즈&#x2014;는 [Contact Manager 솔루션](../web-deployment-in-the-enterprise/the-contact-manager-solution.md)&#x2014;현실적인 수준의 복잡성을 Windows Communication ASP.NET MVC 3 응용 프로그램을 포함 하 여 웹 응용 프로그램을 나타내는 Foundation (WCF) 서비스 및 데이터베이스 프로젝트입니다.
 
@@ -76,11 +75,9 @@ ms.locfileid: "59412985"
 | **배포 하기 전에 데이터베이스 백업** | False | 아마도 | True |
 | **대상 데이터베이스에 있지만 데이터베이스 프로젝트에 없는 개체에 대해 DROP 문 생성** | False | True | True |
 | **CLR 유형 업데이트 하려면 ALTER ASSEMBLY 문을 사용 하지 마십시오** | False | False | False |
-  
 
 > [!NOTE]
 > 데이터베이스 배포 속성 및 환경 고려 사항에 대 한 자세한 내용은 참조 하세요. [An 개요의 데이터베이스 프로젝트 설정이](https://msdn.microsoft.com/library/aa833291(v=VS.100).aspx), [방법: 배포 세부 정보에 대 한 속성을 구성](https://msdn.microsoft.com/library/dd172125.aspx), [격리 된 개발 환경에 데이터베이스를 빌드하여](https://msdn.microsoft.com/library/dd193409.aspx), 및 [에 빌드 및 배포 데이터베이스를 준비 또는 프로덕션 환경](https://msdn.microsoft.com/library/dd193413.aspx).
-
 
 여러 대상에 데이터베이스 프로젝트의 배포를 지원 하려면 각 대상 환경에 대 한 배포 구성 파일을 만들어야 합니다.
 
@@ -104,13 +101,10 @@ Visual Studio 2010 내에서 (예: 디버그 및 릴리스) 솔루션 구성을 
 
 프로그램 VSDBCMD에서 배포 구성 파일을 지정 하려면 사용 합니다 **p: / DeploymentConfigurationFile** 전환 하 고 파일의 전체 경로 제공 합니다. 배포 매니페스트를 식별 하는 배포 구성 파일을 덮어씁니다. 예를 들어 배포 하려면이 VSDBCMD 명령을 사용할 수 있습니다 합니다 **ContactManager** 테스트 환경에 데이터베이스:
 
-
 [!code-console[Main](customizing-database-deployments-for-multiple-environments/samples/sample1.cmd)]
-
 
 > [!NOTE]
 > 참고 출력 디렉터리에 파일을 복사 하는 경우 빌드 프로세스.sqldeployment 파일 이름을 바꿀 수 있습니다.
-
 
 배포 전 또는 배포 후 SQL 스크립트에서 SQL 명령 변수를 사용 하는 경우 배포 환경별.sqlcmdvars 파일을 연결 하려면 유사한 방법을 사용할 수 있습니다. 이 경우 사용 합니다 **p: / SqlCommandVariablesFile** .sqlcmdvars 파일을 식별 하는 스위치입니다.
 
@@ -118,9 +112,7 @@ Visual Studio 2010 내에서 (예: 디버그 및 릴리스) 솔루션 구성을 
 
 MSBuild 프로젝트 파일에서 VSDBCMD 명령을 사용 하 여 호출할 수는 **Exec** MSBuild 대상 내의 태스크입니다. 가장 간단한 형태로, 다음과 같이 표시 됩니다.
 
-
 [!code-xml[Main](customizing-database-deployments-for-multiple-environments/samples/sample2.xml)]
-
 
 - 실제로 프로젝트 파일을 더 쉽게 읽고 다시 사용 하면 만들려고 다양 한 명령줄 매개 변수를 저장 하는 속성입니다. 이 쉽게 MSBuild 명령줄에서 기본값을 재정의 하려면 사용자 환경 관련 프로젝트 파일에서 속성 값을 제공 합니다. 에 설명 된 분할 프로젝트 파일 접근법을 사용 하는 경우 [프로젝트 파일 이해](../web-deployment-in-the-enterprise/understanding-the-project-file.md), 두 파일 사이 속성과 빌드 지침을 적절 하 게 분할 해야 합니다.
 - 환경 관련 프로젝트 파일에서 배포 구성 파일 이름, 데이터베이스 연결 문자열 및 대상 데이터베이스 이름으로 같은 환경 관련 설정을 이동 해야 합니다.

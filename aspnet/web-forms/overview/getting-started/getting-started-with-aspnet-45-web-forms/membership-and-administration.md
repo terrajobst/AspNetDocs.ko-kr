@@ -8,12 +8,12 @@ ms.date: 09/08/2014
 ms.assetid: 732a2316-e49f-4f72-becd-0cd72f14457e
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/membership-and-administration
 msc.type: authoredcontent
-ms.openlocfilehash: 7263a7d7ee791be8a1369934aac4d091736a658b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 59f859ea30572fbe66184f29555ac2c5c2f22f82
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59417483"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132139"
 ---
 # <a name="membership-and-administration"></a>멤버 자격 및 관리
 
@@ -22,7 +22,6 @@ ms.locfileid: "59417483"
 [Wingtip Toys 샘플 프로젝트 (C#)를 다운로드](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 또는 [전자책 (PDF) 다운로드](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
 
 > 이 자습서 시리즈는 ASP.NET 4.5와 Microsoft Visual Studio Express 2013 for Web 사용 하 여 ASP.NET Web Forms 응용 프로그램을 빌드하는 기본 사항을 설명 합니다. Visual Studio 2013 [C# 소스 코드를 사용 하 여 프로젝트](https://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 이 자습서 시리즈를 함께 사용할 수 있습니다.
-
 
 이 자습서는 사용자 지정 역할을 추가 하 고 ASP.NET Id를 사용 하 여 Wingtip Toys 샘플 응용 프로그램을 업데이트 하는 방법을 보여 줍니다. 또한 사용자 지정 역할을 사용 하 여 사용자를 추가 하 고 웹 사이트에서 제품을 제거는 관리 페이지를 구현 하는 방법을 보여 줍니다.
 
@@ -81,7 +80,6 @@ ASP.NET Id를 사용 하 여 사용자 지정 역할을 추가할 수 있으며 
 > 
 > 제품 데이터와 함께 멤버 자격 데이터를 저장 하려는 경우 동일한 사용을 고려할 수 있습니다 **DbContext** 사용 하 여를 위 코드에서 제품 데이터를 저장 합니다.
 
-
  합니다 *내부* 키워드는 형식 (예: 클래스) 및 형식 멤버 (예: 메서드 또는 속성)에 대 한 액세스 한정자입니다. 내부 형식 또는 멤버는 동일한 어셈블리에 포함 된 파일 내 에서만 액세스할 수 있습니다 *(.dll* 파일). 응용 프로그램에 어셈블리 파일을 작성 하는 경우 *(.dll*) 만들어진 응용 프로그램을 실행할 때 실행 되는 코드를 포함 하는 합니다. 
 
 `RoleStore` 역할 관리를 제공 하는 개체를 데이터베이스 컨텍스트에 따라 만들어집니다.
@@ -89,7 +87,6 @@ ASP.NET Id를 사용 하 여 사용자 지정 역할을 추가할 수 있으며 
 > [!NOTE] 
 > 
 > 때 합니다 `RoleStore` 개체를 만들 제네릭을 사용 하 여 `IdentityRole` 형식입니다. 즉 합니다 `RoleStore` 만 포함할 수 `IdentityRole` 개체입니다. 또한 제네릭을 사용 하 여 사용 하에서 메모리 리소스를 더 잘에 처리 됩니다.
-
 
 다음으로 `RoleManager` 개체를 기반으로 생성 됩니다는 `RoleStore` 방금 만든 개체입니다. 합니다 `RoleManager` 개체는 역할 관련 API의 변경 내용을 자동으로 저장을 사용할 수 있는 `RoleStore`합니다. 합니다 `RoleManager` 만 포함할 수 `IdentityRole` 코드를 사용 하기 때문에 개체를 `<IdentityRole>` 제네릭 형식입니다.
 
@@ -102,7 +99,6 @@ ASP.NET Id를 사용 하 여 사용자 지정 역할을 추가할 수 있으며 
 > [!NOTE] 
 > 
 > 이 자습서 시리즈의 뒷부분에 나오는 "ASP.NET 오류 처리" 자습서 중 오류 처리에 업데이트 됩니다.
-
 
 다음 응용 프로그램을 시작할 때 "canEditUser" 명명 된 사용자 라는 응용 프로그램의 "canEdit" 역할에 추가 됩니다. 이 자습서의 뒷부분에 나오는이 자습서 중에 추가 하면 추가 기능을 표시 하려면 "canEditUser" 사용자로 로그인 합니다. ASP.NET Id에 대 한 API 세부 정보를 참조 하세요. 합니다 [Microsoft.AspNet.Identity Namespace](https://msdn.microsoft.com/library/microsoft.aspnet.identity(v=vs.111).aspx)합니다. ASP.NET Id 시스템을 초기화 하는 방법에 대 한 자세한 내용은 참조는 [AspnetIdentitySample](https://github.com/rustd/AspnetIdentitySample/blob/master/AspnetIdentitySample/App_Start/IdentityConfig.cs)합니다.
 

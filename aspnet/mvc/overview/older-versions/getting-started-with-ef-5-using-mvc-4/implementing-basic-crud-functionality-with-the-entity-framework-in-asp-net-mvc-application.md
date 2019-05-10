@@ -8,12 +8,12 @@ ms.date: 07/30/2013
 ms.assetid: f7bace3f-b85a-47ff-b5fe-49e81441cdf9
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-basic-crud-functionality-with-the-entity-framework-in-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: be1fcf2c7a0eec5473b2e3a10f51d7e22656b671
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: d42c13b01d798b6c35327826812e853d327eeae9
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402208"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112488"
 ---
 # <a name="implementing-basic-crud-functionality-with-the-entity-framework-in-aspnet-mvc-application-2-of-10"></a>ASP.NET MVC 응용 프로그램 (2 / 10)에서 Entity Framework 사용 하 여 기본 CRUD 기능 구현
 
@@ -27,12 +27,10 @@ ms.locfileid: "59402208"
 > > 
 > > 해결할 수 없는 문제가 발생 하는 경우 [완성 된 장 다운로드](building-the-ef5-mvc4-chapter-downloads.md) 문제를 재현 하려고 합니다. 일반적으로 코드의 완성 된 코드를 비교 하 여 문제에 솔루션을 찾을 수 있습니다. 몇 가지 일반적인 오류 및 해결 하는 방법에 대 한 참조 [오류 및 해결 방법입니다.](advanced-entity-framework-scenarios-for-an-mvc-web-application.md#errors)
 
-
 이전 자습서에서 저장 하 고 Entity Framework 및 SQL Server LocalDB를 사용 하 여 데이터를 표시 하는 MVC 응용 프로그램을 만들었습니다. 이 자습서를 검토 및 CRUD 사용자 지정 됩니다 (만들기, 읽기, 업데이트, 삭제) MVC 스 캐 폴딩 자동으로 만드는 코드를 컨트롤러 및 보기에서 합니다.
 
 > [!NOTE]
 > 컨트롤러와 데이터 액세스 계층 간에 추상화 계층을 만들기 위해 리포지토리 패턴을 구현하는 일반적인 사례입니다. 이러한 자습서를 간단히 유지 하기까지이 시리즈의 뒷부분에 나오는 자습서 리포지토리를 구현할 없습니다.
-
 
 이 자습서에서는 다음 웹 페이지를 만듭니다.
 

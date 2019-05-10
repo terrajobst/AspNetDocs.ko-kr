@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 1b87d8d6-b3f7-4126-b51c-d41442fbf947
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/animation-depending-on-a-condition-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 78140f56184e88fb4dbe29f234aebd5732b69ad9
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: cfac2d5ac7ea652648db3c11a8357d95c8f78ffe
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59418874"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132256"
 ---
 # <a name="animation-depending-on-a-condition-vb"></a>조건에 따른 애니메이션(VB)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation4.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation4VB.pdf)
 
 > ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이지만 컨트롤에 애니메이션을 추가 하는 전체 프레임 워크 아닙니다. 여부 애니메이션 실행 되는 여부 일부 JavaScript 코드의 형태로 조건에도 달라질 수 있습니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -51,7 +50,6 @@ ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이�
 [!code-aspx[Main](animation-depending-on-a-condition-vb/samples/sample5.aspx)]
 
 보다 작음 부호 (`<`)에 `ConditionScript` 이스케이프 ()을 설정 해야 합니다. 경우 하거나 애니메이션 실행이 없습니다,이 스크립트를 실행 하면 아니라 둘 중 하나 또는 둘 다 수행 합니다.
-
 
 [![패널은 페이드아웃 크기 조정 없이 첫 번째 두 번째 애니메이션 실행 하지 않은 하므로](animation-depending-on-a-condition-vb/_static/image2.png)](animation-depending-on-a-condition-vb/_static/image1.png)
 

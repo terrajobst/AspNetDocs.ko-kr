@@ -8,23 +8,22 @@ ms.date: 11/14/2011
 ms.assetid: a923735c-2d34-456c-8327-40aa62a4c1d6
 msc.legacyurl: /web-forms/videos/data-access
 msc.type: chapter
-ms.openlocfilehash: b41843143dfbd957ef242c67e67101af79d9efba
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 66c8851d53cef59ea560818a054729115ca62b3b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59419407"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65106748"
 ---
 # <a name="data-access"></a>데이터 액세스
 
 > 데이터 액세스 계층 (DAL)를 만드는 방법입니다.
 
-
 - [ADO.NET Data Services](adonet-data-services/index.md)
 
     - [ASP.NET 애플리케이션의 데이터 액세스 레이어](adonet-data-services/data-access-layers-in-aspnet-applications.md)
     - [데이터 세트를 Datagrid에 수동으로 바인딩](adonet-data-services/how-to-manually-bind-a-dataset-to-a-datagrid.md)
-    - [ASP 애플리케이션에서 데이터 세트 및 필터 작업](adonet-data-services/how-to-work-with-datasets-and-filters-from-an-asp-application.md)
+    - [ASP 애플리케이션에서 데이터 집합 및 필터 작업](adonet-data-services/how-to-work-with-datasets-and-filters-from-an-asp-application.md)
 - [LINQ 사용 방법](how-do-i-with-linq/index.md)
 
     - [LINQ to SQL: 개요](how-do-i-with-linq/how-do-i-linq-to-sql-overview.md)

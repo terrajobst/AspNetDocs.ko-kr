@@ -9,17 +9,16 @@ ms.custom: seoapril2019
 ms.assetid: f5bc7426-27c6-492c-914f-b9d2eb49753d
 msc.legacyurl: /web-api/overview/older-versions
 msc.type: chapter
-ms.openlocfilehash: 1e5fecca826a74fd8ff60ecd415f39c4f51917a2
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 9ef642b52d61d7737b37d4499564d71a3bedcd8a
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59391366"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65109113"
 ---
 # <a name="documentation-on-older-versions-of-web-api"></a>이전 버전의 웹 API에 대 한 설명서
 
 > ASP.NET Web API의 이전 버전 설명서 4.x 합니다.
-
 
 - [Web API 1에서 CRUD 작업 사용](creating-a-web-api-that-supports-crud-operations.md)
 - [Entity Framework 5에 ASP.NET Web API 1 사용](using-web-api-1-with-entity-framework-5/index.md)

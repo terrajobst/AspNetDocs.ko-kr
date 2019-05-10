@@ -8,12 +8,12 @@ ms.date: 03/14/2008
 ms.assetid: 6ab4efb6-aab6-45ac-ad2c-bdec5848ef9e
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/aspnet-ajax/understanding-asp-net-ajax-authentication-and-profile-application-services
 msc.type: authoredcontent
-ms.openlocfilehash: 18056c917b32680678c536229e8e26d5cc7db161
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1087d9120411e51fd61d073169a88cac6cdaf15b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59395136"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65109488"
 ---
 # <a name="understanding-aspnet-ajax-authentication-and-profile-application-services"></a>ASP.NET AJAX 인증 및 프로필 애플리케이션 서비스 이해
 
@@ -22,7 +22,6 @@ ms.locfileid: "59395136"
 [PDF 다운로드](http://download.microsoft.com/download/C/1/9/C19A3451-1D14-477C-B703-54EF22E197EE/AJAX_tutorial03_MSAjax_ASP.NET_Services_cs.pdf)
 
 > 인증 서비스를 사용 하면 사용자가 인증 쿠키를 받으려면 자격 증명을 제공 하 고 ASP.NET에서 사용자 지정 사용자 프로필을 허용 하도록 게이트웨이 서비스를 제공 됩니다. ASP.NET AJAX 인증 서비스의 사용 하 여 표준 ASP.NET 폼 인증을 사용 하 여 호환 이므로 현재 폼 인증을 사용 하 여 응용 프로그램 (예: 로그인을 사용 하 여 제어)를 분리할 수 없는 AJAX 인증 서비스를 업그레이드 하 여 합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -63,7 +62,7 @@ Login () 메서드는 사용자의 자격 증명을 인증 하는 요청을 시�
 | **매개 변수 이름** | **의미** |
 | --- | --- |
 | userName | 필수 요소. 사용자 이름 인증입니다. |
-| 암호 | 옵션 (기본값은 null)입니다. 사용자의 암호입니다. |
+| password | 옵션 (기본값은 null)입니다. 사용자의 암호입니다. |
 | isPersistent | 선택 사항 (기본값은 false)입니다. 여부 사용자의 인증 쿠키는 세션 간에 유지 되어야 합니다. False 인 경우 사용자가 로그 아웃 브라우저 닫히거나 세션이 만료 되 면 합니다. |
 | redirectUrl | 옵션 (기본값은 null)입니다. 인증이 성공 하면 브라우저를 리디렉션할 대상 URL입니다. 이 매개 변수가 null 이거나 빈 문자열 이면 리디렉션되지 않습니다 발생 합니다. |
 | customInfo | 옵션 (기본값은 null)입니다. 이 매개 변수 현재 사용 되지 않으며 나중에 사용 하기 위해 예약 됩니다. |

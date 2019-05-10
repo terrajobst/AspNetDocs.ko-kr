@@ -8,12 +8,12 @@ ms.date: 10/09/2014
 ms.assetid: 716264ae-ab72-45de-bfc5-53a6237089cf
 msc.legacyurl: /web-forms/overview/security/create-an-aspnet-web-forms-app-with-sms-two-factor-authentication
 msc.type: authoredcontent
-ms.openlocfilehash: 2010de510cf44bba1b95d29dbdb573ab78f452f7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 02c511f0e99e306daaf595da5bc618fe738e806c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59411360"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65106782"
 ---
 # <a name="create-an-aspnet-web-forms-app-with-sms-two-factor-authentication-c"></a>SMS 2단계 인증을 사용하는 ASP.NET Web Forms 앱 만들기(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59411360"
 [전자 메일 및 SMS 2 단계 인증을 사용 하 여 ASP.NET Web Forms 앱 다운로드](https://code.msdn.microsoft.com/ASPNET-Web-Forms-App-with-5a0ff94e)
 
 > 이 자습서에서는 2 단계 인증을 사용 하 여 ASP.NET Web Forms 앱을 빌드하는 방법을 보여 줍니다. 이 자습서는 라는 제목의 자습서를 보완 하기 위해 설계 되었습니다 [사용자 등록을 사용 하 여 보안 ASP.NET Web Forms 앱 만들기, 전자 메일 확인 및 암호 재설정 기능이](create-a-secure-aspnet-web-forms-app-with-user-registration-email-confirmation-and-password-reset.md)합니다. 또한이 자습서 기반 Rick Anderson [MVC 자습서](../../../mvc/overview/security/aspnet-mvc-5-app-with-sms-and-email-two-factor-authentication.md)합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -42,7 +41,6 @@ ms.locfileid: "59411360"
 
 > [!NOTE]
 > 중요: 설치 해야 합니다 [Visual Studio 2013 업데이트 3](https://go.microsoft.com/fwlink/?LinkId=390465) 이상이 자습서를 완료 합니다.
-
 
 1. 새 프로젝트를 만듭니다 (**파일**  - &gt; **새 프로젝트**) 선택 합니다 **ASP.NET 웹 응용 프로그램** .NET Framework와 함께 템플릿 버전 4.5.2 **새 프로젝트** 대화 상자.
 2. **새 ASP.NET 프로젝트** 대화 상자를 선택 합니다 **Web Forms** 템플릿. 기본 인증을 유지 **개별 사용자 계정**합니다. 클릭 **확인** 새 프로젝트를 만듭니다.  

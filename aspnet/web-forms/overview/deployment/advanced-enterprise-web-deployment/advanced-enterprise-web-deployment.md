@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 7dcaba80-f2ec-4db3-ad98-daadc3afdb49
 msc.legacyurl: /web-forms/overview/deployment/advanced-enterprise-web-deployment/advanced-enterprise-web-deployment
 msc.type: authoredcontent
-ms.openlocfilehash: 2f27e9436f246e3da2fbb129bbcd2d80e39b5f28
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: bf4c7d021763017592483df35cb717295c4924aa
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59385321"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108904"
 ---
 # <a name="advanced-enterprise-web-deployment"></a>고급 엔터프라이즈 웹 배포
 
@@ -24,7 +24,6 @@ ms.locfileid: "59385321"
 > 이 자습서에서는 필수 또는 다양 한 엔터프라이즈 배포 시나리오에서에서 적합할 수 있는 다양 한 작업을 수행 하는 방법을 보여줍니다.
 > 
 > 이 자습서의 번역을 이탈리아어를 방문 [ http://www.lucamorelli.it ](http://www.lucamorelli.it)합니다.
-
 
 이 Fabrikam, Inc. 라는 가상 회사의 엔터프라이즈 배포 요구 사항 기반 자습서 시리즈의 일부를 형성 샘플 솔루션을 사용 하 여이 자습서 시리즈&#x2014;는 [Contact Manager](../web-deployment-in-the-enterprise/the-contact-manager-solution.md) 솔루션&#x2014;현실적인 수준의 복잡성을 Windows Communication ASP.NET MVC 3 응용 프로그램을 포함 하 여 웹 응용 프로그램을 나타내는 Foundation (WCF) 서비스 및 데이터베이스 프로젝트입니다.
 

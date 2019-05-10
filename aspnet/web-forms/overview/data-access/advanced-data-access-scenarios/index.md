@@ -8,17 +8,16 @@ ms.date: 10/05/2011
 ms.assetid: 00d198ed-fddc-4fd3-a86e-3f29c5f707cc
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios
 msc.type: chapter
-ms.openlocfilehash: 735832675b48427d866612817ce7c8ef0290374b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 25041560b9e8ff0a8c944572dad344e655100b0d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59421305"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108541"
 ---
 # <a name="advanced-data-access-scenarios"></a>고급 데이터 액세스 시나리오
 
 > 이 자습서에는 저장된 프로시저 및 계산된 열을 사용 하는 방법, 데이터베이스 테이블 조인을 사용 하는 방법 및 데이터 연결 정보를 암호화 하는 방법을 설명 합니다.
-
 
 - [형식화된 데이터 세트의 Tableadapter에 대한 새로운 저장 프로시저 만들기(C#)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-cs.md)
 - [형식화된 데이터 세트의 Tableadapter에 대한 기존 저장 프로시저 사용(C#)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-cs.md)

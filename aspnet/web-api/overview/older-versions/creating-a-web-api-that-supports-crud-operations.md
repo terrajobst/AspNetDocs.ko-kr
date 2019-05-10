@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: c125ca47-606a-4d6f-a1fc-1fc62928af93
 msc.legacyurl: /web-api/overview/older-versions/creating-a-web-api-that-supports-crud-operations
 msc.type: authoredcontent
-ms.openlocfilehash: 855c3fa35d82173c87d13adb51e10fd13698ade5
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3c2a41482b7f9b60a8864b853df23ab5991b6da7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381356"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108743"
 ---
 # <a name="enabling-crud-operations-in-aspnet-web-api-1"></a>ASP.NET Web API 1에서에서 CRUD 작업을 사용 하도록 설정
 
@@ -29,7 +29,6 @@ ms.locfileid: "59381356"
 > 
 > - Visual Studio 2012
 > - Web API 1 (또한 Web API 2를 사용 하 여 작동)
-
 
 CRUD &quot;만들기, 읽기, 업데이트 및 삭제,&quot; 는 4 개의 기본 데이터베이스 작업입니다. 많은 HTTP 서비스는도 비슷한 REST Api 또는 REST를 통해 CRUD 작업을 모델링합니다.
 
@@ -136,7 +135,6 @@ ASP.NET MVC를 사용 하 여 보았다면 다음 이미 잘 알고 있다면 �
 > [!NOTE]
 > 컨트롤러 컨트롤러 라는 폴더에 배치 하는 데 필요한 것입니다. 폴더 이름은 중요 하지 않습니다. 원본 파일을 구성 하려면 편리한 방법일 뿐 이며
 
-
 합니다 **컨트롤러 추가** Controllers 폴더에서 ProductsController.cs 라는 파일을 자동으로 만들어집니다. 이 파일이 열려 있지 않으면 이미를 열려는 파일을 두 번 클릭 합니다. 다음을 추가 합니다 **를 사용 하 여** 문:
 
 [!code-csharp[Main](creating-a-web-api-that-supports-crud-operations/samples/sample4.cs)]
@@ -147,7 +145,6 @@ ASP.NET MVC를 사용 하 여 보았다면 다음 이미 잘 알고 있다면 �
 
 > [!NOTE]
 > 호출 `new ProductRepository()` 컨트롤러의 아니므로 가장 적합 한 디자인의 특정 구현에 컨트롤러 통제 `IProductRepository`합니다. 더 나은 방법은 참조 하세요 [웹 API 종속성 확인자를 사용 하 여](../advanced/dependency-injection.md)입니다.
-
 
 ## <a name="getting-a-resource"></a>리소스 가져오기
 
@@ -205,7 +202,6 @@ ASP.NET Web API 쉽게 HTTP 응답 메시지를 조작할 수 있습니다. 향�
 
 > [!NOTE]
 > 이 예제에서는 유효성을 검사 하지 않습니다는 `Product`합니다. 모델 유효성 검사에 대 한 자세한 내용은 [ASP.NET Web API의 모델 유효성 검사](../formats-and-model-binding/model-validation-in-aspnet-web-api.md)합니다.
-
 
 ## <a name="updating-a-resource"></a>리소스 업데이트
 

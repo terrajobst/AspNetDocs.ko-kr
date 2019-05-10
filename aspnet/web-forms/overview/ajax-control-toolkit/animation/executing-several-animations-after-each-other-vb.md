@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 21ece509-79cc-4d9d-892d-7b6e9c4d3502
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/executing-several-animations-after-each-other-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 53984f03cf01caab859f44fdc018b1598ed62def
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 0e0c9aa2c9ce8b55824c24ef43881e35a0788d28
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59383046"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108323"
 ---
 # <a name="executing-several-animations-after-each-other-vb"></a>여러 애니메이션을 순차적으로 실행(VB)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation3.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation3VB.pdf)
 
 > ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이지만 컨트롤에 애니메이션을 추가 하는 전체 프레임 워크 아닙니다. 다른 여러 애니메이션 하나를 실행할 수 있습니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -52,11 +51,9 @@ ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이�
 
 실행할 때이 스크립트를 패널 넓거나 다음 작은 첫 번째 가져옵니다.
 
-
 [![너비는 증가 하는 먼저](executing-several-animations-after-each-other-vb/_static/image2.png)](executing-several-animations-after-each-other-vb/_static/image1.png)
 
 먼저 너비 증가 됩니다 ([클릭 하 여 큰 이미지 보기](executing-several-animations-after-each-other-vb/_static/image3.png))
-
 
 [![높이 감소 한 다음](executing-several-animations-after-each-other-vb/_static/image5.png)](executing-several-animations-after-each-other-vb/_static/image4.png)
 

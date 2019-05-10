@@ -8,19 +8,18 @@ ms.date: 02/10/2010
 ms.assetid: 5a5537bf-2aaa-49e7-839f-9e6522b829d8
 msc.legacyurl: /whitepapers/aspnet-and-iis6
 msc.type: content
-ms.openlocfilehash: dbdf6d2815a05465b0ffb7bb322c9f80af13a251
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2e7812f34481afe9a71927c0d9ba2a9abc9632e4
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59405159"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65106800"
 ---
 # <a name="running-aspnet-11-with-iis-60"></a>IIS 6.0에서 ASP.NET 1.1 실행
 
 > Windows Server 2003에서 IIS 6.0 및 ASP.NET 1.1 모두를 포함 하는 동안 이러한 구성 요소는 기본적으로 비활성화 됩니다. 이 백서는 IIS 6.0 및 ASP.NET 1.1을 사용 하도록 설정 하는 방법에 설명 하 고 IIS 및 ASP.NET에서 최적의 성능을 얻기 위해 다양 한 구성 설정을 권장 합니다.
 > 
 > IIS 6.0 및 ASP.NET 1.1에 적용 됩니다.
-
 
 또한 인터넷 정보 서버 (IIS) 버전 6.0의 최신 버전을 포함 하는 Windows Server 2003을 사용 하 여 ASP.NET 1.1 제공 됩니다. IIS 6.0 및 ASP.NET 1.1 원활 하 게 통합 하도록 설계 되어 새 IIS 6.0 작업자 프로세스 모델 이제 기본적으로 ASP.NET을
 

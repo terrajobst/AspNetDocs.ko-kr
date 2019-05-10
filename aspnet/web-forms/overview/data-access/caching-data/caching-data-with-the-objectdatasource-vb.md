@@ -8,12 +8,12 @@ ms.date: 05/30/2007
 ms.assetid: 2e56a733-5512-48a6-9276-70a65bbe4d5d
 msc.legacyurl: /web-forms/overview/data-access/caching-data/caching-data-with-the-objectdatasource-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 6bde070dae3b295c8d7a04098b874d41fab54830
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: bdec60c1d031cb8b6516f03801b5306a1c9fbe09
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59380212"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108216"
 ---
 # <a name="caching-data-with-the-objectdatasource-vb"></a>ObjectDataSource를 사용하여 데이터 캐싱(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59380212"
 [샘플 앱을 다운로드](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_58_VB.exe) 또는 [PDF 다운로드](caching-data-with-the-objectdatasource-vb/_static/datatutorial58vb1.pdf)
 
 > 캐싱은 느린와 웹 응용 프로그램의 속도 차이 의미할 수 있습니다. 이 자습서는 ASP.NET에서 캐싱를 자세히 보기를 사용 하는 4 개 중 첫 번째입니다. 캐시의 주요 개념 및 ObjectDataSource 컨트롤을 통해 프레젠테이션 계층에 캐싱을 적용 하는 방법에 알아봅니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -57,32 +56,25 @@ ObjectDataSource s 캐싱 기능 탐색을 시작 하기 전에 s를 먼저 시�
 - `AtApplicationStartup.aspx`
 - `SqlCacheDependencies.aspx`
 
-
 ![캐싱 관련 자습서에 대 한 ASP.NET 페이지 추가](caching-data-with-the-objectdatasource-vb/_static/image1.png)
 
 **그림 1**: 캐싱 관련 자습서에 대 한 ASP.NET 페이지 추가
 
-
 다른 폴더와 같이 `Default.aspx` 에 `Caching` 폴더 섹션의 자습서를 나열 됩니다. 이전에 설명한 대로 `SectionLevelTutorialListing.ascx` 사용자 컨트롤은이 기능을 제공 합니다. 따라서이 사용자 정의 컨트롤을 추가 `Default.aspx`의 디자인 뷰에서 페이지의 솔루션 탐색기에서 끌어 합니다.
-
 
 [![그림 2: Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](caching-data-with-the-objectdatasource-vb/_static/image3.png)](caching-data-with-the-objectdatasource-vb/_static/image2.png)
 
 **그림 2**: 그림 2: 추가 된 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤 `Default.aspx` ([클릭 하 여 큰 이미지 보기](caching-data-with-the-objectdatasource-vb/_static/image4.png))
 
-
 마지막으로, 이러한 페이지에 항목으로 추가 된 `Web.sitemap` 파일입니다. 특히 다음 태그를 이진 데이터로 작업 후 추가 `<siteMapNode>`:
-
 
 [!code-xml[Main](caching-data-with-the-objectdatasource-vb/samples/sample1.xml)]
 
 업데이트 한 후 `Web.sitemap`, 잠시 브라우저를 통해 자습서 웹 사이트를 확인 합니다. 이제는 왼쪽 메뉴에서 캐싱 자습서에 대 한 항목이 포함 됩니다.
 
-
 ![사이트 맵 항목이 포함 되어 있습니다 캐싱 자습서](caching-data-with-the-objectdatasource-vb/_static/image5.png)
 
 **그림 3**: 사이트 맵 항목이 포함 되어 있습니다 캐싱 자습서
-
 
 ## <a name="step-2-displaying-a-list-of-products-in-a-web-page"></a>2단계: 웹 페이지에서 제품 목록을 표시
 
@@ -90,19 +82,15 @@ ObjectDataSource s 캐싱 기능 탐색을 시작 하기 전에 s를 먼저 시�
 
 열어서 시작 합니다 `ObjectDataSource.aspx` 페이지에 `Caching` 폴더입니다. 디자이너 도구 상자에서 GridView를 끌거나, 설정 해당 `ID` 속성을 `Products`, 선택한, 스마트 태그, 라는 새 ObjectDataSource 컨트롤을 바인딩할 `ProductsDataSource`합니다. ObjectDataSource를 사용 하려면 구성 된 `ProductsBLL` 클래스입니다.
 
-
 [![ProductsBLL 클래스를 사용 하는 ObjectDataSource 구성](caching-data-with-the-objectdatasource-vb/_static/image7.png)](caching-data-with-the-objectdatasource-vb/_static/image6.png)
 
 **그림 4**: ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLL` 클래스 ([큰 이미지를 보려면 클릭](caching-data-with-the-objectdatasource-vb/_static/image8.png))
 
-
 이 페이지에 대 한 s를 ObjectDataSource에 캐시 된 데이터는 GridView가의 인터페이스를 통해 수정 되 면 어떻게 될까요 살펴볼 수 있도록 편집할 수는 GridView를 만들 수 있습니다. 드롭다운 목록에 기본값을 설정 하 고 선택 탭 유지 `GetProducts()`, [업데이트] 탭에서 선택한 항목을 변경 하지만 `UpdateProduct` 받아들이는 오버 로드가 `productName`, `unitPrice`, 및 `productID` 입력된 매개 변수로.
-
 
 [![적절 한 UpdateProduct 오버 로드로 업데이트 탭의 드롭 다운 목록 설정](caching-data-with-the-objectdatasource-vb/_static/image10.png)](caching-data-with-the-objectdatasource-vb/_static/image9.png)
 
 **그림 5**: 드롭다운 목록에서 업데이트 탭 s는 적절으로 `UpdateProduct` 오버 로드 ([큰 이미지를 보려면 클릭](caching-data-with-the-objectdatasource-vb/_static/image11.png))
-
 
 마지막으로, INSERT 및 DELETE 탭 (없음)을에서 드롭 다운 목록을 설정 하 고 마침을 클릭 합니다. 데이터 소스 구성 마법사를 완료 하면 Visual Studio 설정 ObjectDataSource s `OldValuesParameterFormatString` 속성을 `original_{0}`입니다. 에 설명 된 대로 합니다 [An 개요의 삽입, 업데이트 및 데이터 삭제](../editing-inserting-and-deleting-data/an-overview-of-inserting-updating-and-deleting-data-vb.md) 자습서에서는이 속성에 선언적 구문에서 제거 되거나 해당 기본값으로 다시 설정 하려면 필요 `{0}`, 업데이트 워크플로를 위해 오류 없이 진행 합니다.
 
@@ -113,24 +101,19 @@ GridView가 스마트 태그 편집 사용 확인란을 선택 하 여 GridView�
 > [!NOTE]
 > GridView s 편집 인터페이스 사용자 지정 하는 방법에 대 한 검토 필요 하십니까? 그렇다면 다시 참조를 [데이터 수정 인터페이스 사용자 지정](../editing-inserting-and-deleting-data/customizing-the-data-modification-interface-vb.md) 자습서입니다.
 
-
 [![지원할 GridView 편집, 정렬 및 페이징](caching-data-with-the-objectdatasource-vb/_static/image13.png)](caching-data-with-the-objectdatasource-vb/_static/image12.png)
 
 **그림 6**: GridView 편집, 정렬 및 페이징 지원을 사용 하도록 설정 ([클릭 하 여 큰 이미지 보기](caching-data-with-the-objectdatasource-vb/_static/image14.png))
 
-
 이러한 GridView 수정을 마치면 GridView 및 ObjectDataSource가 선언적 태그 다음과 비슷하게 표시 됩니다.
-
 
 [!code-aspx[Main](caching-data-with-the-objectdatasource-vb/samples/sample2.aspx)]
 
 그림 7에서 알 수 있듯이, 편집 가능한 GridView 이름, 범주 및 각 데이터베이스에서 제품의 가격을 나열 합니다. 잠시 s 페이지 기능 정렬, 페이징 결과 테스트 하 고 레코드를 편집 합니다.
 
-
 [![각 제품의의 이름이, Category 및 Price 정렬 가능, Pageable 편집 가능한 GridView에 나열 됩니다.](caching-data-with-the-objectdatasource-vb/_static/image16.png)](caching-data-with-the-objectdatasource-vb/_static/image15.png)
 
 **그림 7**: 각 제품의의 이름이, Category 및 Price 정렬 가능, Pageable 편집 가능한 GridView에 나열 됩니다 ([클릭 하 여 큰 이미지 보기](caching-data-with-the-objectdatasource-vb/_static/image17.png))
-
 
 ## <a name="step-3-examining-when-the-objectdatasource-is-requesting-data"></a>3단계: 경우는 ObjectDataSource 검사 데이터가 요청
 
@@ -140,14 +123,11 @@ GridView가 스마트 태그 편집 사용 확인란을 선택 하 여 GridView�
 
 완벽 하 게 파악할 있는 데이터를 데이터베이스에서 검색 하는 빈도, 데이터를 다시 검색 될 때 메시지가 표시 되는 s 수 있습니다. 명명 된 GridView 위에 레이블을 웹 컨트롤을 추가 `ODSEvents`합니다. 지웁니다 해당 `Text` 속성 집합과 해당 `EnableViewState` 속성을 `False`입니다. 레이블 아래에 있는 단추 웹 컨트롤을 추가 하 고 설정 해당 `Text` 속성을 다시 게시 합니다.
 
-
 [![GridView 위에 있는 페이지에 레이블 및 단추 추가](caching-data-with-the-objectdatasource-vb/_static/image19.png)](caching-data-with-the-objectdatasource-vb/_static/image18.png)
 
 **그림 8**: GridView의 위에서 페이지에 레이블 및 단추를 추가 ([클릭 하 여 큰 이미지 보기](caching-data-with-the-objectdatasource-vb/_static/image20.png))
 
-
 데이터 액세스 워크플로 ObjectDataSource가 중 `Selecting` 기본 개체가 만들어지기 전에 이벤트가 발생 하 고 해당 구성된 메서드를 호출 합니다. 이 이벤트에 대 한 이벤트 처리기를 만들고 다음 코드를 추가 합니다.
-
 
 [!code-vb[Main](caching-data-with-the-objectdatasource-vb/samples/sample3.vb)]
 
@@ -155,16 +135,13 @@ ObjectDataSource 데이터에 대 한 아키텍처에 요청 될 때마다 레�
 
 브라우저에서이 페이지를 방문 합니다. 페이지가 처음 방문할 때 발생 하는 이벤트에 텍스트 선택이 표시 됩니다. 다시 게시 단추를 클릭 하 고 텍스트가 사라집니다 있는지 확인 (가정 GridView s `EnableViewState` 속성이 `True`, 기본값). 포스트백에서 GridView를 해당 뷰 상태를 재구성 및 해당 데이터에 대 한 ObjectDataSource 만들어지고 t 전환 하 고 따라서 때문입니다. 하지만 정렬, 페이징 또는 데이터를 편집 해당 데이터 원본에 바인딩할 GridView 시키고 따라서 선택 하면 이벤트가 텍스트 다시 나타납니다.
 
-
 [![해당 데이터 원본에 GridView는 차츰 회복 되면서 때마다 선택 하면 이벤트 발생 표시 됩니다.](caching-data-with-the-objectdatasource-vb/_static/image22.png)](caching-data-with-the-objectdatasource-vb/_static/image21.png)
 
 **그림 9**: 해당 데이터 원본에 GridView는 차츰 회복 되면서 때마다 선택 하면 이벤트 발생 표시 됩니다 ([클릭 하 여 큰 이미지 보기](caching-data-with-the-objectdatasource-vb/_static/image23.png))
 
-
 [![클릭 하면 포스트백 단추를 클릭 하면 GridView 보기 상태에서 다시 구성](caching-data-with-the-objectdatasource-vb/_static/image25.png)](caching-data-with-the-objectdatasource-vb/_static/image24.png)
 
 **그림 10**: 다시 게시 단추를 클릭 하면 GridView 보기 상태에서 다시 구성 ([클릭 하 여 큰 이미지 보기](caching-data-with-the-objectdatasource-vb/_static/image26.png))
-
 
 데이터를 통해 페이징 하거나 정렬 될 때마다 데이터베이스 데이터를 검색할 필요가 없습니다 보일 수 있습니다. 결국 기본 페이징을 사용 하 여 다시 우리 이후로 ObjectDataSource가 검색 레코드를 모두 첫 번째 페이지를 표시 하는 경우. GridView에는 정렬 및 페이징 지원을 제공 하지 않습니다, 경우에 데이터를 검색 해야 데이터베이스에서 페이지가 모든 사용자 (및 상태 보기를 사용 하지 않도록 설정 하는 경우 모든 포스트백에서)에 처음 방문할 때마다 합니다. 하지만 이러한 추가 데이터베이스 요청은 불필요 한 GridView는 모든 사용자에 게 동일한 데이터를 표시 하는 경우. 반환 된 결과 캐시 하지 않는 이유는 `GetProducts()` 메서드 및 bind를 GridView가 캐시 된 결과?
 
@@ -179,11 +156,9 @@ ObjectDataSource 데이터에 대 한 아키텍처에 요청 될 때마다 레�
 
 구성 s는 `ProductsDataSource` ObjectDataSource 절대 확장에서 30 초 동안 해당 데이터를 캐시 합니다. 집합 ObjectDataSource s `EnableCaching` 속성을 `True` 고 `CacheDuration` 30 속성입니다. 유지 된 `CacheExpirationPolicy` 속성이 해당 기본값으로 설정 `Absolute`합니다.
 
-
 [![30 초 동안 해당 데이터를 캐시 하는 ObjectDataSource 구성](caching-data-with-the-objectdatasource-vb/_static/image28.png)](caching-data-with-the-objectdatasource-vb/_static/image27.png)
 
 **그림 11**: 30 초 동안 해당 데이터를 캐시 하는 ObjectDataSource 구성 ([클릭 하 여 큰 이미지 보기](caching-data-with-the-objectdatasource-vb/_static/image29.png))
-
 
 변경 내용을 저장 하 고 브라우저에서이 페이지를 다시 확인 합니다. 해제 되는 처음에 데이터를 캐시에서 발생 하는 이벤트 텍스트 선택 페이지를 처음 방문 하면 표시 됩니다. 않지만 후속 포스트백 정렬 하 고 다시 게시 단추를 클릭 하 여 트리거할 페이징 또는 편집 취소 단추를 클릭 하는 *되지* 텍스트 발생 합니다. 다시 선택 하면 이벤트를 표시 합니다. 왜냐하면 합니다 `Selecting` ObjectDataSource 해당 기본 개체에서 해당 데이터를 가져오는 경우에 이벤트가 발생 합니다 `Selecting` 데이터 데이터 캐시에서 끌어온 구성 인 경우 이벤트가 발생 하지 않습니다.
 
@@ -192,14 +167,11 @@ ObjectDataSource 데이터에 대 한 아키텍처에 요청 될 때마다 레�
 > [!NOTE]
 > 선택 하면 발생 하는 이벤트 텍스트를 자주 표시 되 면 캐시 된 데이터를 사용 하 여 작동 하는 ObjectDataSource를 예상 하는 경우에 것 메모리 제약 조건으로 인해. 사용 가능한 메모리가 없는 경우 ObjectDataSource 하 여 캐시에 추가 된 데이터 청소 되었습니다 수 있습니다. ObjectDataSource 만들어지고 t만 캐시를 데이터를 올바르게 캐시 수를 표시 하는 경우 데이터는 산발적으로 일부 응용 프로그램의 사용 가능한 메모리 닫고 다시 시도 하십시오.
 
-
 그림 12에서는 워크플로 캐싱 ObjectDataSource가 보여 줍니다. 선택 하면 이벤트가 발생할 때 화면에 표시 되는 텍스트, 하므로 데이터 캐시에 없었으며 내부 개체에서 검색 해야 합니다. 이 텍스트는 사용할 수 없는 경우에 있지만 해당 s 캐시에서 데이터를 사용할 수 있으므로 합니다. 캐시에서 데이터가 반환 되는 경우 여기서 s는 내부 개체에 대 한 호출이 및 따라서 데이터베이스 쿼리가 실행 됩니다.
-
 
 ![ObjectDataSource 저장소 및 데이터 캐시에서 해당 데이터를 검색 합니다](caching-data-with-the-objectdatasource-vb/_static/image30.png)
 
 **그림 12**: ObjectDataSource 저장소 및 데이터 캐시에서 해당 데이터를 검색 합니다
-
 
 각 ASP.NET 응용 프로그램에는 s의 모든 페이지와 방문자 공유 인스턴스는 자체 데이터 캐시가 있습니다. 즉, ObjectDataSource에서 데이터 캐시에 저장 된 데이터 페이지를 방문 하는 모든 사용자에 대해 마찬가지로 공유 되도록 합니다. 이 확인 하려면 엽니다는 `ObjectDataSource.aspx` 브라우저에서 페이지입니다. 먼저 페이지를 방문 하 고, (가정 이전 테스트 하 여 캐시에 추가 된 데이터를 지금 제거 되었습니다.) 선택 하면 발생 하는 이벤트 텍스트가 표시 됩니다. 복사본을 두 번째 브라우저 인스턴스를 열고 두 번째 첫 번째 브라우저 인스턴스의 URL을 붙여 넣습니다. 두 번째 브라우저 인스턴스에서 발생 하는 이벤트 텍스트 선택 표시 되지 것 s 동일한를 사용 하 여 첫 번째 데이터를 캐시 합니다.
 

@@ -8,12 +8,12 @@ ms.date: 02/15/2013
 ms.assetid: 9cad0833-486a-4474-a7f3-7715542ec4ce
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/deploying-a-database-update
 msc.type: authoredcontent
-ms.openlocfilehash: 86dcac0b95f07a310bdaaa4e69db0a83f8734744
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 942cc3cbf472f76d2521247df97c856deb19b06b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59416638"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131919"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-deploying-a-database-update"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 데이터베이스 업데이트 배포
 
@@ -22,7 +22,6 @@ ms.locfileid: "59416638"
 [시작 프로젝트 다운로드](http://go.microsoft.com/fwlink/p/?LinkId=282627)
 
 > 이 자습서 시리즈를 배포 하는 방법을 보여 줍니다. ASP.NET (게시) Visual Studio 2012 또는 Visual Studio 2010을 사용 하 여 웹 응용 프로그램을 Azure App Service Web Apps 또는 타사 호스팅 공급자입니다. 시리즈에 대 한 자세한 내용은 [시리즈의 첫 번째 자습서](introduction.md)합니다.
-
 
 ## <a name="overview"></a>개요
 
