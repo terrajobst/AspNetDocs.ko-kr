@@ -9,12 +9,12 @@ ms.assetid: 44925849-5762-4504-a8cd-8f0cd06f6dc3
 ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/extensibility/change-primary-key-for-users-in-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: 212b07494381d13f6ded96a41b846dcdf7e8ff16
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 540a355819ac2b2e58d7c73284899f6ca2f684d1
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59393745"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118091"
 ---
 # <a name="change-primary-key-for-users-in-aspnet-identity"></a>ASP.NET Identity에서 사용자의 기본 키 변경
 
@@ -29,7 +29,6 @@ ms.locfileid: "59393745"
 > 
 > - Visual Studio 2013 업데이트 2를 사용 하 여 (또는 이상)
 > - ASP.NET Id 2.1 이상
-
 
 이 자습서의 단계를 수행 하려면 Visual Studio 2013 업데이트 2 (또는 이상) 및 ASP.NET 웹 응용 프로그램 템플릿에서 만든 웹 응용 프로그램을 해야 합니다. 업데이트 3에서 변경 하는 템플릿. 이 항목에는 업데이트 2와 업데이트 3에서 템플릿을 변경 하는 방법을 보여 줍니다.
 

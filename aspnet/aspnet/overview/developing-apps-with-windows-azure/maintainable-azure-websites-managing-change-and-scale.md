@@ -8,12 +8,12 @@ ms.date: 07/16/2014
 ms.assetid: ecfd0eb4-c4ad-44e6-9db9-a2a66611ff6a
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/maintainable-azure-websites-managing-change-and-scale
 msc.type: authoredcontent
-ms.openlocfilehash: ec0058472f8bc1d8d58e7c78deeb8b6097532510
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c88bae40a8aa092037c0b359ee391acaf161cf10
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59409735"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118306"
 ---
 # <a name="hands-on-lab-maintainable-azure-websites-managing-change-and-scale"></a>실습: 유지 관리 가능한 Azure 웹 사이트: 변경 및 확장 관리
 
@@ -34,7 +34,6 @@ ms.locfileid: "59409735"
 > 웹 캠프 교육 키트에서에서 사용할 수 있는 모든 샘플 코드 및 코드 조각 포함 됩니다 [ https://aka.ms/webcamps-training-kit ](https://aka.ms/webcamps-training-kit)합니다.
 >
 > 이 항목의 자세한 자세한 검사를 참조 하세요. 합니다 [전자책은 Azure를 사용 하 여 실제 클라우드 앱 빌드](building-real-world-cloud-apps-with-windows-azure/introduction.md)합니다.
-
 
 <a id="Overview"></a>
 ## <a name="overview"></a>개요
@@ -79,7 +78,6 @@ ms.locfileid: "59409735"
 > [!NOTE]
 > 설치 프로그램을 실행 하기 전에이 랩에 대 한 모든 종속성을 선택 했는지 확인 합니다.
 
-
 <a id="CodeSnippets"></a>
 ### <a name="using-the-code-snippets"></a>코드 조각 사용
 
@@ -87,7 +85,6 @@ ms.locfileid: "59409735"
 
 > [!NOTE]
 > 각 실습에 시작 솔루션을 함께 표시 됩니다는 **시작** 다른 독립적으로 각 연습에 따라 할 수 있는 연습 하는 폴더입니다. 주의 하십시오 연습 하는 동안 추가 되는 코드 조각은 솔루션부터 이러한 누락 되어 연습을 완료 될 때까지 작동 하지 않을 수 있습니다. 연습에 대 한 소스 코드 안에 있습니다.는 **최종** 해당 연습에서 단계를 완료 합니다. 결과로 생성 되는 코드를 사용 하 여 Visual Studio 솔루션에 포함 된 폴더입니다. 이 실습을 통해 작업 하는 동안 추가 도움이 필요한 경우 지침으로 이러한 솔루션을 사용할 수 있습니다.
-
 
 ---
 
@@ -106,7 +103,6 @@ ms.locfileid: "59409735"
 
 > [!NOTE]
 > Visual Studio를 처음 시작 하면 미리 정의 된 설정 컬렉션 중 하나를 선택 해야 합니다. 미리 정의 된 각 컬렉션에는 특정 개발 스타일에 맞게 설계 되었습니다 및 창 레이아웃, 동작 편집기, IntelliSense 코드 조각 및 대화 상자 옵션을 결정 합니다. 이 랩의 절차에서는 사용 하는 경우 Visual Studio에서 지정된 된 태스크를 수행 하는 데 필요한 작업을 설명 합니다 **일반 개발 설정** 컬렉션입니다. 개발 환경에 대 한 다양 한 설정 컬렉션을 선택 하는 경우를 고려해 야 하는 단계에 차이가 있을 수 있습니다.
-
 
 <a id="Exercise1"></a>
 ### <a name="exercise-1-using-entity-framework-migrations"></a>연습 1: Entity Framework 마이그레이션을 사용 하 여
@@ -249,7 +245,6 @@ ms.locfileid: "59409735"
 
 > [!NOTE]
 > 스테이징 된 게시를 사용 하려면 웹 앱에 있어야 **표준 모드**합니다. 표준 모드에 웹 앱을 변경 하면 추가 요금이 발생는 note 합니다. 가격 책정에 대 한 자세한 내용은 참조 하세요. [App Service 가격 책정](https://azure.microsoft.com/pricing/details/app-service/)합니다.
-
 
 <a id="Ex2Task1"></a>
 #### <a name="task-1--creating-a-web-app-in-azure-app-service"></a>작업 1-Azure App Service에서 웹 앱 만들기
@@ -576,7 +571,7 @@ ms.locfileid: "59409735"
     [!code-console[Main](maintainable-azure-websites-managing-change-and-scale/samples/sample16.cmd)]
 
 <a id="Exercise4"></a>
-### <a name="exercise-4-scaling-using-azure-storage"></a>실습 4: Azure Storage를 사용 하 여 확장
+### <a name="exercise-4-scaling-using-azure-storage"></a>연습 4: Azure Storage를 사용 하 여 확장
 
 **Blob** 많은 양의 구조화 되지 않은 텍스트 또는 비디오, 오디오 및 이미지와 같은 이진 데이터를 저장 하는 가장 간단한 방법입니다. 저장소에 응용 프로그램의 정적 콘텐츠를 이동, 브라우저에 직접 이미지 또는 문서를 제공 함으로써 응용 프로그램을 확장할 수 있습니다.
 
@@ -726,11 +721,10 @@ ms.locfileid: "59409735"
     *URL 리디렉션 확인*
 
 <a id="Exercise5"></a>
-### <a name="exercise-5-using-autoscale-for-web-apps"></a>실습 5: 웹 앱에 대 한 자동 크기 조정 사용
+### <a name="exercise-5-using-autoscale-for-web-apps"></a>연습 5: 웹 앱에 대 한 자동 크기 조정 사용
 
 > [!NOTE]
 > 웹 부하에 대 한 지원이 필요 하므로이 실습은 선택 사항 &amp; 에서만 사용할 수 있는 성능 테스트 **Visual Studio 2013 Ultimate Edition**합니다. Visual Studio 2013의 특정 기능에 대 한 자세한 내용은 버전 비교 [여기](https://www.microsoft.com/visualstudio/eng/products/compare)합니다.
-
 
 **Azure App Service Web Apps** 에서 실행 중인 웹 앱에 대 한 자동 크기 조정 기능을 제공 **표준 모드**합니다. 자동 크기 조정에 Azure를 부하에 따라 웹 앱의 인스턴스 수를 자동으로 확장할 수 있습니다. 자동 크기 조정 설정 되 면 Azure 웹 앱의 CPU가 5 분 마다 한 번 확인 하 고 해당 시점에 필요한 만큼 인스턴스가 추가 합니다. CPU 사용량이 낮은 경우 인스턴스가 제거 됩니다 두 시간 마다 한 번씩 웹 앱의 성능을 성능이 저하 되었음을 확인 합니다.
 

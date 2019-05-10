@@ -8,12 +8,12 @@ ms.date: 10/16/2008
 ms.assetid: e83812f2-c53e-4a43-a7c1-d64c59ecf694
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/understanding-action-filters-vb
 msc.type: authoredcontent
-ms.openlocfilehash: bbedc11b9b1225b1047350c1c84a116ecef0c380
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: fb3ed252a9232a2f5a1ad4257156a142bbe5b174
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59407408"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123173"
 ---
 # <a name="understanding-action-filters-vb"></a>작업 필터 이해(VB)
 
@@ -22,7 +22,6 @@ by [Microsoft](https://github.com/microsoft)
 [PDF 다운로드](http://download.microsoft.com/download/e/f/3/ef3f2ff6-7424-48f7-bdaa-180ef64c3490/ASPNET_MVC_Tutorial_14_VB.pdf)
 
 > 이 자습서의 목표는 작업 필터를 설명 합니다. 작업 필터는 컨트롤러 동작-또는 작업 실행 되는 방식을 수정 하는 전체 controller--에 적용할 수 있는 특성입니다.
-
 
 ## <a name="understanding-action-filters"></a>작업 필터 이해
 
@@ -48,11 +47,9 @@ by [Microsoft](https://github.com/microsoft)
 
 반복적으로 호출 하는 경우는 `Index()` 브라우저의 주소 표시줄에 입력 된 URL 데이터/인덱스 새로 고침에 도달 하는 작업 단추를 여러 번 10 초 동안 동일한 시간을 표시 됩니다. 출력을 `Index()` 작업 (그림 1 참조)는 10 초 동안 캐시 됩니다.
 
-
 [![캐시 된 시간](understanding-action-filters-vb/_static/image2.png)](understanding-action-filters-vb/_static/image1.png)
 
 **그림 01**: 캐시 시간 ([클릭 하 여 큰 이미지 보기](understanding-action-filters-vb/_static/image3.png))
-
 
 목록 1로 설정 하는 단일 작업 필터 – 합니다 `OutputCache` – 작업 필터에 적용 되는 `Index()` 메서드. 필요한 경우에 동일한 작업에 여러 작업 필터를 적용할 수 있습니다. 둘 다 적용 하려는 하는 예를 들어 합니다 `OutputCache` 및 `HandleError` 동일한 작업에 작업 필터.
 
@@ -106,11 +103,9 @@ ASP.NET MVC 프레임 워크는 네 가지 유형의 필터를 지원합니다.
 
 목록 2에서 합니다 `OnActionExecuting()`, `OnActionExecuted()`, `OnResultExecuting()`, 및 `OnResultExecuted()` 모든 메서드를 호출 합니다 `Log()` 메서드. 메서드 및 현재 경로 데이터의 이름을 전달 됩니다는 `Log()` 메서드. `Log()` 메서드는 Visual Studio 출력 창에 메시지를 씁니다 (그림 2 참조).
 
-
 [![Visual Studio 출력 창에 쓰기](understanding-action-filters-vb/_static/image5.png)](understanding-action-filters-vb/_static/image4.png)
 
 **그림 02**: Visual Studio 출력 창에 작성 ([클릭 하 여 큰 이미지 보기](understanding-action-filters-vb/_static/image6.png))
-
 
 보기 3의 Home 컨트롤러 전체 컨트롤러 클래스에 로그 작업 필터를 적용 하는 방법을 보여 줍니다. 호출 될 때마다 홈 컨트롤러에서 노출 하는 동작 중 하나는 – 하거나 합니다 `Index()` 메서드 또는 `About()` 메서드-단계의 처리 작업을 Visual Studio 출력 창에 기록 됩니다.
 

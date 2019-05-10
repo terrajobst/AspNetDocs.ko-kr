@@ -8,12 +8,12 @@ ms.date: 08/08/2014
 ms.assetid: 30060acb-be3e-4347-996f-3870f0c37829
 msc.legacyurl: /signalr/overview/testing-and-debugging/enabling-signalr-tracing
 msc.type: authoredcontent
-ms.openlocfilehash: 1dadbdb6fa1dc58b855402f1d6f18e8af861f756
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 34fe2cdb10c4b41a6e8cac7fb1741d53c02dfc80
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59399361"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65114398"
 ---
 # <a name="enabling-signalr-tracing"></a>SignalR 추적 사용
 
@@ -37,7 +37,6 @@ ms.locfileid: "59399361"
 > ## <a name="questions-and-comments"></a>질문이 나 의견이 있으면
 >
 > 이 자습서를 연결 하는 방법 및 새로운 개선할 수 있습니다 페이지의 맨 아래에 의견에서에 의견을 남겨 주세요. 에 자습서로 직접 관련 되지 않은 질문이 있을 경우 게시할 수 하는 [ASP.NET SignalR 포럼](https://forums.asp.net/1254.aspx/1?ASP+NET+SignalR) 또는 [StackOverflow.com](http://stackoverflow.com/)합니다.
-
 
 추적을 사용 하는 경우는 SignalR 응용 프로그램 이벤트 로그 항목을 만듭니다. 클라이언트와 서버 모두에서 이벤트를 기록할 수 있습니다. 서버 로그 연결, 확장 공급자 및 메시지 버스 이벤트를 추적 합니다. 클라이언트 로그 연결 이벤트에서 추적 합니다. SignalR 2.1 이상 버전에서는 추적 클라이언트 허브 호출 메시지의 전체 콘텐츠를 기록합니다.
 

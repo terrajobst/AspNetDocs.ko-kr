@@ -9,12 +9,12 @@ ms.assetid: 8d54180d-f826-4df7-b503-7debf5ed9fb3
 ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/features-api/account-confirmation-and-password-recovery-with-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: 2e4cd21d66e69590fb1642d7974e4b7f82cba0cb
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ded3a9d931cc4cd4b99c1cb5012469fe66209f76
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396423"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118034"
 ---
 # <a name="account-confirmation-and-password-recovery-with-aspnet-identity-c"></a>ASP.NET Id를 사용 하 여 확인 및 암호 복구 계정 (C#)
 
@@ -66,7 +66,6 @@ ms.locfileid: "59396423"
 ## <a name="create-an-aspnet-web-app"></a>ASP.NET 웹앱 만들기
 
 설치 및 실행 하 여 시작 [Visual Studio 2017](https://visualstudio.microsoft.com/)합니다.
-
 
 1. 새 ASP.NET 웹 프로젝트를 만들고 MVC 템플릿을 선택 합니다. 또한 web Forms web forms 앱에서 비슷한 단계를 수행할 수 있도록 ASP.NET Id를 지원 합니다.
 2. 에 대 한 인증 변경 **개별 사용자 계정**합니다.
@@ -153,7 +152,6 @@ OWIN `AuthenticationManager.SignIn` 메서드에 전달 된 `ClaimsIdentity` 사
 > [!WARNING]
 > 이 샘플의 보안 설정을 변경 하면 프로덕션 앱 변경 내용을 명시적으로 호출 하는 보안 감사를 수행 해야 합니다.
 
-
 ## <a name="examine-the-code-in-appstartidentityconfigcs"></a>앱에서 코드를 검사할\_Start\IdentityConfig.cs
 
 이 샘플에서는 계정을 만들고 추가 하는 방법을 보여줍니다. 합니다 *관리자* 역할입니다. 관리자 계정에 사용할 전자 메일을 통해 샘플 전자 메일을 바꿔야 합니다. 관리자 계정을 만들어야 하는 현재 가장 쉬운 방법은 프로그래밍 방식으로 `Seed` 메서드. 도구가 나중에 만들고 사용자 및 역할을 관리할 수 있도록 되기를 바랍니다. 샘플 코드에서는 수를 만들고 사용자 및 역할을 관리 하지만 먼저 역할 및 사용자 관리 페이지를 실행 하는 관리자 계정이 있어야 합니다. 이 샘플에서는 관리자 계정에 DB 시드 되는 경우 만들어집니다.
@@ -184,14 +182,12 @@ OWIN `AuthenticationManager.SignIn` 메서드에 전달 된 `ClaimsIdentity` 사
 > [!NOTE]
 > 전자 메일 클라이언트에는 자주 텍스트 메시지 (HTML)만 수락합니다. 텍스트 및 HTML의 메시지를 제공 해야 합니다. 위의 SendGrid 샘플에서 사용 하 여 수행 됩니다이 `myMessage.Text` 고 `myMessage.Html` 위에 표시 된 코드입니다.
 
-
 다음 코드에 사용 하 여 전자 메일을 보내는 방법을 보여 줍니다 합니다 [MailMessage](https://msdn.microsoft.com/library/system.net.mail.mailmessage.aspx) where 클래스 `message.Body` 링크만 반환 합니다.
 
 [!code-csharp[Main](account-confirmation-and-password-recovery-with-aspnet-identity/samples/sample8.cs)]
 
 > [!WARNING]
 > 보안-소스 코드에서 중요 한 데이터 저장 되지 않습니다. 계정 및 자격 증명 appSetting에 저장 됩니다. Azure에서 안전 하 게에 저장할 수 있습니다 이러한 값을 **[구성](https://blogs.msdn.com/b/webdev/archive/2014/06/04/queuebackgroundworkitem-to-reliably-schedule-and-run-long-background-process-in-asp-net.aspx)** Azure portal에서 탭 합니다. 참조 [ASP.NET 및 Azure에 암호 및 기타 중요 한 데이터 배포에 대 한 유용한](best-practices-for-deploying-passwords-and-other-sensitive-data-to-aspnet-and-azure.md)합니다.
-
 
 SendGrid 자격 증명을 입력를 앱을 실행 등록 전자 메일 별칭을 사용 하 여 선택할 수 확인 링크를 전자 메일. 이 작업을 수행 하는 방법을 보려면 하 [Outlook.com](http://outlook.com) 전자 메일 계정, John Atten 참조 [ C# Outlook.Com SMTP 호스트에 대 한 SMTP 구성](http://typecastexception.com/post/2013/12/20/C-SMTP-Configuration-for-OutlookCom-SMTP-Host.aspx) 및 his[ASP.NET Identity 2.0: 계정 구성 설정 유효성 검사 및 2 단계 인증](http://typecastexception.com/post/2014/04/20/ASPNET-Identity-20-Setting-Up-Account-Validation-and-Two-Factor-Authorization.aspx) 게시 합니다.
 

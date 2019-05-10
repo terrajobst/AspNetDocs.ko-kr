@@ -8,12 +8,12 @@ ms.date: 03/14/2008
 ms.assetid: c1a35f18-bab9-41f7-8497-15530c37a09d
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/aspnet-ajax/understanding-asp-net-ajax-localization
 msc.type: authoredcontent
-ms.openlocfilehash: 11e70493478d6810d63ba6b3ac813e32f03052eb
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ef4ee57496337fb13b4d1c09c058e89e04eb3138
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381330"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65114599"
 ---
 # <a name="understanding-aspnet-ajax-localization"></a>ASP.NET AJAX 지역화 이해
 
@@ -22,7 +22,6 @@ ms.locfileid: "59381330"
 [PDF 다운로드](http://download.microsoft.com/download/C/1/9/C19A3451-1D14-477C-B703-54EF22E197EE/AJAX_tutorial04_Localization_cs.pdf)
 
 > 지역화는 응용 프로그램 또는 응용 프로그램 구성 요소는 특정 언어와 문화권에 대 한 지원을 통합 및 설계 프로세스입니다. Microsoft ASP.NET 플랫폼은 표준.NET 지역화 모델을 통합 하 여 표준 ASP.NET 응용 프로그램에 대 한 지역화에 대 한 광범위 하 게 지원 제공 Microsoft AJAX 프레임 워크는 지역화를 수행할 수 있는 다양 한 시나리오를 지원 하도록 통합된 모델을 활용 합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -105,16 +104,13 @@ JavaScript 정규식 구문에 단일 슬래시 내의 텍스트를 사용 하 �
 1. F5 키를 누릅니다. 메시지가 표시 되 면 디버깅을 사용 합니다. 페이지가 로드 될 때 삭제 단추를 누릅니다. Note는 영어에서 (하지 않는 한 컴퓨터는 스페인어 리소스를 사용 하려면 기본적으로 설정 됨)를 묻는 확인 합니다.
 2. 브라우저 창을 닫고 default.aspx로 돌아갑니다. 에 @Page 헤더 지시문, ES-ES를 사용 하 여 Culture 및 UICulture에 대 한 대체 자동입니다. F5 키를 눌러 브라우저에서 웹 응용 프로그램 다시 시작을 다시 합니다. 이 이번에는 스페인어에서 파일을 삭제할 것인지 묻는 note:
 
-
 [![](understanding-asp-net-ajax-localization/_static/image2.png)](understanding-asp-net-ajax-localization/_static/image1.png)
 
 ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-localization/_static/image3.png))
 
-
 [![](understanding-asp-net-ajax-localization/_static/image5.png)](understanding-asp-net-ajax-localization/_static/image4.png)
 
 ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-localization/_static/image6.png))
-
 
 이 연습에 대 한 여러 변형이 참고 합니다. 예를 들어 스크립트 등록 못했습니다 ScriptManager 컨트롤을 사용 하 여 프로그래밍 방식으로 페이지를 로드 하는 동안.
 

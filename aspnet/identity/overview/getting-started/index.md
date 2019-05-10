@@ -9,17 +9,16 @@ ms.assetid: 72bb0051-a696-437e-a4e6-ca1225a6e271
 ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/getting-started
 msc.type: chapter
-ms.openlocfilehash: 36933f42806b82437f0ba8e59ad1c90024ed6b9e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 78679828dadacc1ba36eeaced9c21b741806ba47
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59401233"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65121509"
 ---
 # <a name="getting-started-with-aspnet-identity"></a>ASP.NET Identity 시작
 
 > ASP.NET Id 시스템은 이전 ASP.NET 멤버 자격 및 단순 멤버 자격 시스템을 대체 하도록 설계 되었습니다. 프로필 지원, OAuth 통합을 포함, OWIN을 사용 하 여 작동 하 고 Visual Studio 2013와 함께 제공 되는 ASP.NET 템플릿을 사용 하 여 포함 됩니다.
-
 
 - [ASP.NET ID 소개](introduction-to-aspnet-identity.md)
 - [ASP.NET ID 권장 리소스](aspnet-identity-recommended-resources.md)

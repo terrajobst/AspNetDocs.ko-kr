@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: 9e10a700-8d91-4d2e-a31e-b8b569fe867c
 msc.legacyurl: /web-api/overview/advanced/configuring-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 39629ba404e536b29318db00bce8c4443a782497
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 4f76728fa5e4602e35e1b7cb2d41b2245093cad8
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59411945"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65115956"
 ---
 # <a name="configuring-aspnet-web-api-2"></a>ASP.NET Web API 2 구성
 
@@ -45,7 +45,6 @@ ms.locfileid: "59411945"
 | **속성** | 제네릭 속성 모음입니다. |
 | **경로** | 경로의 컬렉션입니다. 참조 [ASP.NET Web API에서에서 라우팅](../web-api-routing-and-actions/routing-in-aspnet-web-api.md)합니다. |
 | **서비스** | 서비스의 컬렉션입니다. 참조 [Services](#services)합니다. |
-
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -91,11 +90,9 @@ OWIN을 사용 하 여 자체 호스팅 인 경우 새로 만듭니다 **HttpCon
 > [!NOTE]
 > 합니다 **Services** 컬렉션 서비스 검색 또는 종속성 주입을 위한 일반 용도의 메커니즘은 없습니다. Web API 프레임 워크에 알려지지 않은 서비스 유형 저장 하기만 합니다.
 
-
 합니다 **Services** 컬렉션 서비스의 기본 집합을 사용 하 여 초기화 되 고 사용자 고유의 사용자 지정 구현을 제공할 수 있습니다. 일부 서비스 인스턴스를 하나만 가질 수 있습니다 다른 여러 인스턴스를 지원 합니다. 그러나 (컨트롤러 수준에서 서비스를 제공할 수도 있습니다; 참조 [-컨트롤러 구성](#percontrollerconfig)합니다.
 
 단일 인스턴스 서비스
-
 
 | 서비스 | 설명 |
 | --- | --- |
@@ -116,7 +113,6 @@ OWIN을 사용 하 여 자체 호스팅 인 경우 새로 만듭니다 **HttpCon
 | **IModelValidatorCache** | 모델 유효성 검사기의 캐시를 제공합니다. |
 
 다중 인스턴스 서비스
-
 
 |                 서비스                 |                                                                                                              설명                                                                                                               |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -8,17 +8,16 @@ ms.date: 08/08/2011
 ms.assetid: caeb0bcb-b2e3-4c37-a1d5-420bb4e917ac
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/tailspin-spyworks
 msc.type: chapter
-ms.openlocfilehash: cdd26f05aef75d1511482ae357f62258fbffce25
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ccb083a3ccb3228b8efe27a34d599e118ad84dff
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59422319"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65121960"
 ---
 # <a name="aspnet-4---tailspin-spyworks"></a>ASP.NET 4 - Tailspin Spyworks
 
 > 쇼핑, 체크 아웃 및 관리를 포함 하는 온라인 상점을 구축 하려면 ASP.NET 4의 새 기능을 사용 하는 방법.
-
 
 - [1부: 파일-> 새 프로젝트](tailspin-spyworks-part-1.md)
 - [2부: 데이터 액세스 계층](tailspin-spyworks-part-2.md)

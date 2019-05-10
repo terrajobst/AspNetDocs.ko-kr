@@ -8,19 +8,18 @@ ms.date: 02/20/2005
 ms.assetid: 43f6ac47-76fc-4cf7-8e9f-c18ce673dfd8
 msc.legacyurl: /web-forms/overview/moving-to-aspnet-20/server-controls
 msc.type: authoredcontent
-ms.openlocfilehash: bfbc151af40bf7ccceb5ac298ba812730d4e4ed9
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c02a633013f061c09141d4f98871848c011a799e
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59420759"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65116718"
 ---
 # <a name="server-controls"></a>서버 컨트롤
 
 by [Microsoft](https://github.com/microsoft)
 
 > ASP.NET 2.0에는 여러 가지 방법으로 서버 컨트롤 강화합니다. 이 단원에서는 ASP.NET 2.0 방법 아키텍처 변경 사항 중 일부를 다룹니다 및 서버 컨트롤을 사용 하 여 Visual Studio 2005를 처리 합니다.
-
 
 ASP.NET 2.0에는 여러 가지 방법으로 서버 컨트롤 강화합니다. 이 단원에서는 ASP.NET 2.0 방법 아키텍처 변경 사항 중 일부를 다룹니다 및 서버 컨트롤을 사용 하 여 Visual Studio 2005를 처리 합니다.
 
@@ -59,15 +58,11 @@ ASP.NET 2.0 컨트롤 상태 컨트롤 상태의 도입을 통해 원활 하 게
 > [!NOTE]
 > 컨트롤 상태에서 뷰 상태와 함께 유지 되는 \_ \_VIEWSTATE 숨겨진된 폼 필드입니다.
 
-
 이 비디오는 보기 상태 및 컨트롤 상태를 연습 합니다.
-
 
 ![](server-controls/_static/image1.png)
 
-
 [전체 화면 비디오 열기](server-controls/_static/state1.wmv)
-
 
 읽기 및 쓰기 상태를 제어 하는 서버 컨트롤에 대 한 순서 대로 세 가지 단계를 수행 해야 합니다.
 
@@ -114,7 +109,6 @@ Asp.net에서 1.x에서 포함 된 구성 파일을 &lt;browserCaps&gt; HttpBrow
 > [!NOTE]
 > ControlAdapter 클래스는 추상 클래스입니다.
 
-
 마찬가지로 합니다 &lt;browserCaps&gt; 1.x의 경우 브라우저 정의 파일의 섹션에서는 요청 하는 브라우저를 식별 하기 위해 사용자 에이전트 문자열을 구문 분석할 정규식을 사용 합니다. 이 사용자 에이전트에 대 한 특정 기능을 정의 합니다. ControlAdapter 렌더링 메서드를 통해 컨트롤을 렌더링합니다. 따라서 Render 메서드를 재정의 하는 경우 호출 하지 않아야 렌더링 기본 클래스입니다. 이렇게 하면 어댑터에 한 번씩와 자체 컨트롤을 두 번 발생 하도록 렌더링 발생할 수 있습니다.
 
 ## <a name="developing-a-custom-adapter"></a>사용자 지정 어댑터 개발
@@ -157,21 +151,17 @@ ASP.NET 2.0 포커스를 설정 하는 클라이언트 쪽 함수를 렌더링 �
 
 ImageMap 컨트롤을 사용 하면 핫스폿 다시 게시를 시작 하거나 URL을 탐색할 수 있는 이미지를 추가할 수 있습니다. 사용할 수는 핫스폿 CircleHotSpot RectangleHotSpot, 하며 PolygonHotSpot 합니다. 핫스폿 Visual Studio 또는 프로그래밍 방식으로 코드에서 컬렉션 편집기를 통해 추가 됩니다. 핫스폿 이미지의 그리기에 사용할 수 있는 사용자 인터페이스가 없는 있습니다. 좌표 및 크기나 핫스폿의 radius를 선언적으로 지정 되어야 합니다. 디자이너에서 핫스팟의 시각적 표시가 있습니다. 핫스팟을 URL로 이동 하도록 구성 하는 경우 URL의 핫스폿 NavigateUrl 속성을 통해 지정 됩니다. 게시물의 경우 속성을 사용 하면 서버 쪽 코드에서 게시물을 다시 검색할 수 있는 문자열을 전달할 수 있습니다 PostBackValue 핫스팟으로 전환한 후를 다시 초대 합니다.
 
-
 ![Visual Studio에서 hotSpot 컬렉션 편집기](server-controls/_static/image1.jpg)
 
 **그림 1**: Visual Studio에서 hotSpot 컬렉션 편집기
-
 
 ## <a name="bulletedlist-control"></a>BulletedList 컨트롤
 
 BulletedList 컨트롤에 바인딩된 데이터를 쉽게 수 있는 글머리 기호 목록입니다. 목록 (번호가 매겨진) 정렬할 수 또는 BulletStyle 속성을 통해 순서가 지정 되지 않은 합니다. 목록의 각 항목은 ListItem 개체로 표시 됩니다.
 
-
 ![Visual Studio에서 BulletedList 컨트롤](server-controls/_static/image1.gif)
 
 **그림 2**: Visual Studio에서 BulletedList 컨트롤
-
 
 ## <a name="hiddenfield-control"></a>HiddenField 컨트롤
 
@@ -204,15 +194,11 @@ ASP.NET 2.0에서는 httpRuntime 요소의 저장할지 킬로바이트 수를 �
 > [!NOTE]
 > 마법사 컨트롤은 ASP.NET 컨트롤 상태를 사용 하 여 해당 상태입니다. 따라서 EnableViewState 속성은 모든 손해를 주지 않고 false로 설정할 수 있습니다.
 
-
 이 비디오는 Wizard 컨트롤의 연습입니다.
-
 
 ![](server-controls/_static/image2.png)
 
-
 [전체 화면 비디오 열기](server-controls/_static/wizard1.wmv)
-
 
 ## <a name="localize-control"></a>컨트롤 지역화
 

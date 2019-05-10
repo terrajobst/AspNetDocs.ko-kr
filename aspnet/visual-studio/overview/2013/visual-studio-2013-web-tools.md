@@ -8,12 +8,12 @@ ms.date: 07/16/2014
 ms.assetid: 09e82351-816b-402d-acd1-0f9ac6901d16
 msc.legacyurl: /visual-studio/overview/2013/visual-studio-2013-web-tools
 msc.type: authoredcontent
-ms.openlocfilehash: 874542305bd3f47066cfae595919285ed079aa53
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2fb987dd9b26ad9f0e8a88fd881bde4505ec4148
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59421071"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65115890"
 ---
 # <a name="hands-on-lab-visual-studio-2013-web-tools"></a>실습: Visual Studio 2013 웹 도구
 
@@ -28,7 +28,6 @@ ms.locfileid: "59421071"
 > 이 전원의 모든 확장을 쉽게 확장 요구에 맞게 강력한 새 기능을 사용 하 여 편집기를 사용할 수도 있습니다. Web Essentials는 대부분 웹 관련 향상 된 Visual Studio의 컬렉션입니다. 여기에 많은 새 IntelliSense 완성 (특히에 대 한 CSS), 새 브라우저 링크 기능, 자동 JSHint JavaScript에 대 한 파일, HTML 및 CSS 및 최신 웹 개발에 필수적인 기타 많은 기능이 대 한 새 경고 합니다.
 > 
 > 웹 캠프 교육 키트에서에서 사용할 수 있는 모든 샘플 코드 및 코드 조각 포함 됩니다 [ https://aka.ms/webcamps-training-kit ](https://aka.ms/webcamps-training-kit)합니다.
-
 
 <a id="Overview"></a>
 ## <a name="overview"></a>개요
@@ -64,7 +63,6 @@ ms.locfileid: "59421071"
 > [!NOTE]
 > 설치 프로그램을 실행 하기 전에이 랩에 대 한 모든 종속성을 선택 했는지 확인 합니다.
 
-
 <a id="CodeSnippets"></a>
 ### <a name="using-the-code-snippets"></a>코드 조각 사용
 
@@ -72,7 +70,6 @@ ms.locfileid: "59421071"
 
 > [!NOTE]
 > 각 실습에 시작 솔루션을 함께 표시 됩니다는 **시작** 다른 독립적으로 각 연습에 따라 할 수 있는 연습 하는 폴더입니다. 주의 하십시오 연습 하는 동안 추가 되는 코드 조각은 솔루션부터 이러한 누락 되어 연습을 완료 될 때까지 작동 하지 않을 수 있습니다. 연습에 대 한 소스 코드 안에 있습니다.는 **최종** 해당 연습에서 단계를 완료 합니다. 결과로 생성 되는 코드를 사용 하 여 Visual Studio 솔루션에 포함 된 폴더입니다. 이 실습을 통해 작업 하는 동안 추가 도움이 필요한 경우 지침으로 이러한 솔루션을 사용할 수 있습니다.
-
 
 ---
 
@@ -86,7 +83,6 @@ ms.locfileid: "59421071"
 
 > [!NOTE]
 > Visual Studio를 처음 시작 하면 미리 정의 된 설정 컬렉션 중 하나를 선택 해야 합니다. 미리 정의 된 각 컬렉션에는 특정 개발 스타일에 맞게 설계 되었습니다 및 창 레이아웃, 동작 편집기, IntelliSense 코드 조각 및 대화 상자 옵션을 결정 합니다. 이 랩의 절차에서는 사용 하는 경우 Visual Studio에서 지정된 된 태스크를 수행 하는 데 필요한 작업을 설명 합니다 **일반 개발 설정** 컬렉션입니다. 개발 환경에 대 한 다양 한 설정 컬렉션을 선택 하는 경우를 고려해 야 하는 단계에 차이가 있을 수 있습니다.
-
 
 <a id="Exercise1"></a>
 ### <a name="exercise-1-working-with-browser-link-and-web-essentials"></a>연습 1: 브라우저 링크 및 Web Essentials 사용

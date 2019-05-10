@@ -8,12 +8,12 @@ ms.date: 02/05/2013
 ms.assetid: a8367c6d-ef94-4dff-a010-5eff9e6eea96
 msc.legacyurl: /single-page-application/overview/introduction/other-libraries
 msc.type: authoredcontent
-ms.openlocfilehash: 70ced1d53b66fbe5ced3606413594707099dda28
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 64a4ad1fb411f7291a5cba634afdf4d2fdb16d55
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59406446"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65116077"
 ---
 # <a name="know-a-library-other-than-knockout"></a>Knockout 이외의 라이브러리를 알고 있으신가요?
 
@@ -54,7 +54,6 @@ Hot Towel 템플릿 여기에 나열 된 다른 템플릿을 사용 하 여 비�
 
 다음은 각 SPA 템플릿에서 제공 하는 기능입니다.
 
-
 |                        | ASP.NET SPA | 백본 | Breeze/Angular | Breeze/KO |  Ember와   | 핫 수건 |
 |------------------------|-------------|----------|----------------|-----------|----------|-----------|
 |      할 일 샘플       |  &#10003;   |          |    &#10003;    | &#10003;  | &#10003; |           |
@@ -67,4 +66,3 @@ Hot Towel 템플릿 여기에 나열 된 다른 템플릿을 사용 하 여 비�
 |        durandal        |             |          |                |           |          | &#10003;  |
 |         Ember와          |             |          |                |           | &#10003; |           |
 |        Knockout        |  &#10003;   |          |                | &#10003;  |          | &#10003;  |
-

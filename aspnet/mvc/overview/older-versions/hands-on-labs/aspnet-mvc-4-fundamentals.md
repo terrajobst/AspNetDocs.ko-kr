@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: b7dba543-73c3-4534-a9a0-ba70fa2c6a8a
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-fundamentals
 msc.type: authoredcontent
-ms.openlocfilehash: 38aea3b3480dde6ec6182a45c4f61f44eea8e05e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 95e9b9f55b2080c0ed01dc34e3a32f9f1c905644
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59380225"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65117245"
 ---
 # <a name="aspnet-mvc-4-fundamentals"></a>ASP.NET MVC 4 기본 사항
 
@@ -107,7 +107,6 @@ MVC 패턴을 사용 하면 이러한 요소 간의 느슨한 결합을 제공 �
 
 > [!NOTE]
 > 각 실습 동반 되는 **최종** 연습을 완료 한 후 가져와야 결과 솔루션이 포함 된 폴더입니다. 이 연습을 진행 하는 추가 도움이 필요한 경우이 솔루션 가이드로 사용할 수 있습니다.
-
 
 이 랩을 완료 하는 시간을 예상 합니다. **60 분**합니다.
 
@@ -359,7 +358,7 @@ MVC 프레임 워크를 사용 하지 않는 ASP.NET 응용 프로그램에서 �
 <a id="Exercise4"></a>
 
 <a id="Exercise_4_Creating_a_View"></a>
-### <a name="exercise-4-creating-a-view"></a>실습 4: 뷰 만들기
+### <a name="exercise-4-creating-a-view"></a>연습 4: 뷰 만들기
 
 지금 있습니다가 된 문자열에서에서 반환 컨트롤러 작업입니다. 컨트롤러의 작동 방식을 이해 하는 데 도움이 인 이지만 방식을 실제 웹 응용 프로그램은 빌드되지 있습니다. 뷰는 템플릿 파일을 사용 하 여 브라우저로 HTML을 생성 하는 것에 대 한 더 나은 방법을 제공 하는 구성 요소입니다.
 
@@ -471,7 +470,7 @@ MVC 프레임 워크를 사용 하지 않는 ASP.NET 응용 프로그램에서 �
 <a id="Exercise5"></a>
 
 <a id="Exercise_5_Creating_a_View_Model"></a>
-### <a name="exercise-5-creating-a-view-model"></a>실습 5: 뷰 모델 만들기
+### <a name="exercise-5-creating-a-view-model"></a>연습 5: 뷰 모델 만들기
 
 지금 하드 코드 된 HTML을 표시 하 여 보기를 수행 하지만 동적 웹 응용 프로그램을 만들기 위해 보기 템플릿 받아야 정보 컨트롤러에서. 해당 용도에 사용 되는 일반적인 방법은 하나는 **ViewModel** 적절 한 HTML 응답을 생성 하는 데 필요한 모든 정보를 패키지 하는 컨트롤러를 허용 하는 패턴입니다.
 
@@ -945,7 +944,6 @@ A **StoreBrowseViewModel** 선택한 장르가 일치 하는 앨범에 표시할
 
 > [!NOTE]
 > 또한 다음 Windows Azure 웹 사이트에이 응용 프로그램을 배포할 수 [부록 b: 웹 배포를 사용 하 여 ASP.NET MVC 4 응용 프로그램 게시](#AppendixB)합니다.
-
 
 ---
 

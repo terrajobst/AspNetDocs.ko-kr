@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: 7d82d5e9-0619-4f22-9e03-32a6d52940a5
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/single-sign-on
 msc.type: authoredcontent
-ms.openlocfilehash: da1136e085776c63886b6ac25533521fa1479d4f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8f6c23eb71ea323b6ab06943097f927f717a8099
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59406290"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118740"
 ---
 # <a name="single-sign-on-building-real-world-cloud-apps-with-azure"></a>Single sign On (실제 클라우드 앱 빌드 Azure 사용 하 여)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59406290"
 [다운로드 해결 프로젝트](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자책 다운로드](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
 > 합니다 **실제 세계 클라우드 앱 빌드 Azure** 전자책 Scott Guthrie를 개발한 프레젠테이션을 기반으로 합니다. 13 패턴 설명 하 고 도움이 될 수 있는 사례 성공적인 클라우드를 위한 웹 앱을 개발할 수 있습니다. 전자책에 대 한 정보를 참조 하세요 [첫 번째 장에서](introduction.md)합니다.
-
 
 클라우드 앱을 개발 하는 경우 고려해 야 하는 많은 보안 문제가 있지만이 시리즈에 대 한 집중 하나만: single sign on입니다. 많이 자주 묻는 질문은 다음과 같습니다. "주로 작성 앱 내 회사의 직원 어떻게 이러한 클라우드 앱을 호스트 하 고 계속 사용 하는 내 직원 인지 알고 있어야 하 고 앱을 실행 중인 경우 온-프레미스 환경에서 사용 하는 동일한 보안 모델을 사용 하는 방화벽 내에서 호스팅되 "? 이 시나리오 사용 하도록 설정 하는 방법 중 하나를 Azure Active Directory (Azure AD) 라고 합니다. Azure AD를 사용 하면 엔터프라이즈 기간 업무 (LOB) 응용 프로그램이 사용할 수 있도록 인터넷을 통해 및도 비즈니스 파트너에 게 이러한 앱을 제공 하는 수 있습니다.
 

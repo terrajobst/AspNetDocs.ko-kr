@@ -8,12 +8,12 @@ ms.date: 09/27/2013
 ms.assetid: 6dae249f-5ac6-4f6e-bc49-13bcd5a54a70
 msc.legacyurl: /aspnet/overview/owin-and-katana/getting-started-with-owin-and-katana
 msc.type: authoredcontent
-ms.openlocfilehash: 5b5ecfcc7561e3e7bc13e1c8819a548e73ae1ab3
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 4dfd7b8ebb2bb48d7ef800fd522b79a7b4a045c2
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59408097"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118337"
 ---
 # <a name="getting-started-with-owin-and-katana"></a>OWIN 및 Katana 시작
 
@@ -59,7 +59,6 @@ OWIN 파이프라인을 수신 하는 함수로 구현에 간단한 부분 미�
 
 > [!NOTE]
 > OWIN 시작 클래스 템플릿을 Visual Studio 2013에서 제공 됩니다. 라는 비어 있는 새 클래스가 추가 Visual Studio 2012를 사용 하는 경우 `Startup1`, 다음 코드에 붙여 넣습니다.
-
 
 [!code-csharp[Main](getting-started-with-owin-and-katana/samples/sample2.cs)]
 

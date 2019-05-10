@@ -8,12 +8,12 @@ ms.date: 03/26/2015
 ms.assetid: d4911cb3-1afb-4805-b860-10818c4b1280
 msc.legacyurl: /mvc/overview/security/create-an-aspnet-mvc-5-web-app-with-email-confirmation-and-password-reset
 msc.type: authoredcontent
-ms.openlocfilehash: 165343fd20b92becee1956c7a19870219323e073
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ebdae3f4d1261407feecd50ec81b3f329b2a3c0c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59409397"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65117135"
 ---
 # <a name="create-a-secure-aspnet-mvc-5-web-app-with-log-in-email-confirmation-and-password-reset-c"></a>로그인, 전자 메일 확인 및 암호 재설정 기능이 있는 보안 ASP.NET MVC 5 웹앱 만들기(C#)
 
@@ -23,7 +23,6 @@ ms.locfileid: "59409397"
 > 
 > 이 자습서를 통해 작성 했습니다 [Rick Anderson](https://blogs.msdn.com/rickAndy) (Twitter: [ @RickAndMSFT ](https://twitter.com/RickAndMSFT) ).
 
-
 <a id="createMvc"></a>
 ## <a name="create-an-aspnet-mvc-app"></a>ASP.NET MVC 앱 만들기
 
@@ -31,7 +30,6 @@ ms.locfileid: "59409397"
 
 > [!NOTE]
 > 경고: 설치 해야 합니다 [Visual Studio 2013 업데이트 3](https://go.microsoft.com/fwlink/?LinkId=390465) 이상이 자습서를 완료 합니다.
-
 
 1. 새 ASP.NET 웹 프로젝트를 만들고 MVC 템플릿을 선택 합니다. 또한 web Forms web forms 앱에서 비슷한 단계를 수행할 수 있도록 ASP.NET Id를 지원 합니다.  
     ![](create-an-aspnet-mvc-5-web-app-with-email-confirmation-and-password-reset/_static/image1.png)
@@ -78,7 +76,6 @@ ms.locfileid: "59409397"
 
 > [!WARNING]
 > 보안-소스 코드에서 중요 한 데이터 저장 되지 않습니다. 계정 및 자격 증명 appSetting에 저장 됩니다. Azure에서 안전 하 게에 저장할 수 있습니다 이러한 값을 **[구성](https://blogs.msdn.com/b/webdev/archive/2014/06/04/queuebackgroundworkitem-to-reliably-schedule-and-run-long-background-process-in-asp-net.aspx)** Azure portal에서 탭 합니다. 참조 [ASP.NET 및 Azure에 암호 및 기타 중요 한 데이터 배포에 대 한 유용한](../../../identity/overview/features-api/best-practices-for-deploying-passwords-and-other-sensitive-data-to-aspnet-and-azure.md)합니다.
-
 
 ### <a name="enable-email-confirmation-in-the-account-controller"></a>Account 컨트롤러의 전자 메일 확인을 사용 하도록 설정
 

@@ -8,12 +8,12 @@ ms.date: 06/10/2014
 ms.assetid: 6ecd08c1-e364-4cd7-ad4c-806521911585
 msc.legacyurl: /signalr/overview/performance/scaleout-with-redis
 msc.type: authoredcontent
-ms.openlocfilehash: 78efe409ab59df17ae71c26d4e280cc9971a64d2
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 58a7affa1769523955adc76455a1c33be6f49751
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59393253"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65114304"
 ---
 # <a name="signalr-scaleout-with-redis"></a>Redis로 SignalR 규모 확장
 
@@ -38,7 +38,6 @@ ms.locfileid: "59393253"
 >
 > 이 자습서를 연결 하는 방법 및 새로운 개선할 수 있습니다 페이지의 맨 아래에 의견에서에 의견을 남겨 주세요. 에 자습서로 직접 관련 되지 않은 질문이 있을 경우 게시할 수 하는 [ASP.NET SignalR 포럼](https://forums.asp.net/1254.aspx/1?ASP+NET+SignalR) 또는 [StackOverflow.com](http://stackoverflow.com/)합니다.
 
-
 이 자습서에서는 사용할지 [Redis](http://redis.io/) 에 메시지를 두 개의 별도 IIS 인스턴스에 배포 된 SignalR 응용 프로그램을 분산 합니다.
 
 Redis는 메모리 내 키-값 저장소입니다. 또한 게시/구독 모델을 사용 하 여 메시징 시스템을 지원합니다. SignalR에서 Redis 백플레인에서 pub/sub 기능을 사용 하 여 다른 서버에 메시지를 전달 합니다.
@@ -57,7 +56,6 @@ Redis는 메모리 내 키-값 저장소입니다. 또한 게시/구독 모델�
 > [!NOTE]
 >
 > Redis로 SignalR 규모 확장에서 Redis 클러스터를 지원 하지 않습니다.
-
 
 ## <a name="overview"></a>개요
 

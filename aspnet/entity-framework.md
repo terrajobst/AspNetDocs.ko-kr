@@ -8,23 +8,21 @@ ms.author: riande
 ms.date: 03/12/2010
 msc.legacyurl: /entity-framework
 msc.type: content
-ms.openlocfilehash: 26862565b23f60baf3698c0c6d63c7daa147abe0
-ms.sourcegitcommit: 2d53ed9e4c8b19d3526cbc689bfa8394c9449cec
+ms.openlocfilehash: c6fe7605a7386621bd4a962b3c3b011fb80b11c8
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59905659"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118245"
 ---
 # <a name="entity-framework"></a>Entity Framework
 
 EF (entity Framework)는.NET 개발자가 도메인별 개체를 사용 하 여 관계형 데이터로 작업할 수 있도록 개체 관계형 매퍼입니다. 개발자들이 보통 작성해야 하는 데이터 액세스 코드가 대부분 필요하지 않게 됩니다.
 
-
 - [가져오기:](https://msdn.com/data/ee712906) 이 프로젝트에 추가 하 고이 강력한 O/RM. 활용 하 고 시작
 - [시작할 수 있습니다.](https://msdn.com/data/ee712907) 비디오 및 자습서의 데이터를 최대한 활용할 수 있도록 가이드를 참조 하세요.
 - [도움말 가져오기:](https://msdn.com/data/hh913619) 전문가 로부터 도움 Stack Overflow에서 데이터 커뮤니티에 기여 하는 방법을 알아봅니다.
 - [참여:](https://github.com/aspnet/EntityFramework6) 어떻게 만들 수 있습니다 Entity Framework, 오픈 개발 모델을 더욱 GitHub 사이트를 방문 하 여 확인 합니다.
-
 
 ASP.NET을 사용 하 여 Entity Framework를 사용 합니다.
 

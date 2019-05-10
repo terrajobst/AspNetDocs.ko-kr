@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: e3d3e7ba-87f0-4032-bdd3-31f3c1aa9d9c
 msc.legacyurl: /web-api/overview/advanced/dependency-injection
 msc.type: authoredcontent
-ms.openlocfilehash: 0ad0b3c63741803e05274df4da3fcbe5481d32a4
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 138ccb5800e801d382c11e3989ec3e3c074a79fe
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59391937"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65115698"
 ---
 # <a name="dependency-injection-in-aspnet-web-api-2"></a>ASP.NET Web API 2에서에서 종속성 주입
 
@@ -30,7 +30,6 @@ ms.locfileid: "59391937"
 > - Web API 2
 > - [Unity Application Block](https://www.nuget.org/packages/Unity/)
 > - Entity Framework 6 (버전 5 에서도 작동)
-
 
 ## <a name="what-is-dependency-injection"></a>종속성 주입 이란?
 
@@ -88,7 +87,6 @@ IoC 컨테이너는 종속성을 관리 하는 일을 담당 하는 소프트웨
 > [!NOTE]
 > "IoC"는 "제어 반전"에 대 한 일반적인 패턴을 설정 하는 프레임 워크 응용 프로그램 코드를 호출 하는 경우이 합니다. IoC 컨테이너 생성 개체를 "반전" 컨트롤의 일반적인 흐름입니다.
 
-
 이 자습서에서는 [Unity](https://msdn.microsoft.com/library/ff647202.aspx) 에서 Microsoft Patterns &amp; 사례입니다. (다른 인기 있는 라이브러리 포함 [Castle Windsor](http://www.castleproject.org/)를 [Spring.Net](http://www.springframework.net/)를 [Autofac](https://code.google.com/p/autofac/)를 [Ninject](http://www.ninject.org/), 및 [StructureMap ](http://structuremap.github.io/documentation/).) Unity를 설치 하려면 NuGet 패키지 관리자를 사용할 수 있습니다. **도구** Visual Studio에서 메뉴 **NuGet 패키지 관리자**을 선택한 후 **패키지 관리자 콘솔**합니다. 패키지 관리자 콘솔 창에서 다음 명령을 입력 합니다.
 
 [!code-console[Main](dependency-injection/samples/sample7.cmd)]
@@ -99,7 +97,6 @@ IoC 컨테이너는 종속성을 관리 하는 일을 담당 하는 소프트웨
 
 > [!NOTE]
 > 경우는 **GetService** 메서드는 형식을 확인할 수 없습니다, 반환할 **null**합니다. 경우는 **GetServices** 메서드는 형식을 확인할 수 없습니다, 빈 컬렉션 개체를 반환 해야 합니다. 알 수 없는 형식에 대 한 예외를 throw 하지 마십시오.
-
 
 ## <a name="configuring-the-dependency-resolver"></a>종속성 확인자를 구성합니다.
 

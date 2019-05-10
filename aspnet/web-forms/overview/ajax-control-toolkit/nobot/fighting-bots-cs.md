@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 0a1917e0-884a-4576-8e93-9ed660faae51
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/nobot/fighting-bots-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 178d839f67d70670b3b5acf470acb7ae8cf1c33f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e45fa613e985b797eef4348d26492af88a688fd8
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59405809"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65115537"
 ---
 # <a name="fighting-bots-c"></a>대체 봇(C#)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/NoBot0.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/nobot0CS.pdf)
 
 > 자동화 된 봇 스팸, 사용자 개입 없이 주석 양식을 제출를 사용 하 여 웹 로그 및 기타 웹 사이트를 석고 합니다. ASP.NET AJAX Control Toolkit에서 NoBot 컨트롤 이러한 봇 싸 하는 데 도움이 됩니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -63,7 +62,6 @@ by [Christian Wenz](https://github.com/wenz)
 [!code-aspx[Main](fighting-bots-cs/samples/sample4.aspx)]
 
 이 스크립트를 실행 및 JavaScript를 비활성화 또는 처음 2 초 안에 양식을 제출 하거나 30 초 내에 7 번 양식을 제출, 오류 메시지가 표시 됩니다. 그러나이 컨트롤을 현명 하 게 사용, 사용자의 약 90 95% 활성화 하는 JavaScript가 사용자의 5 ~ 10% 실패는 `NoBot`의 테스트 합니다.
-
 
 [![이 오류 메시지는 봇 인해 발생할 수 있습니다.](fighting-bots-cs/_static/image2.png)](fighting-bots-cs/_static/image1.png)
 

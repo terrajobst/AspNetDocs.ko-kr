@@ -8,12 +8,12 @@ ms.date: 05/29/2009
 ms.assetid: 7ca8013e-9dfc-4e33-8336-cdccfd5f9414
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/validation-with-the-data-annotation-validators-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 300fc9f7e82fe8201b083de9e740e1620f5d09b9
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e154384c08adf0c14920afff85e983a67b41707c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59411815"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65122296"
 ---
 # <a name="validation-with-the-data-annotation-validators-c"></a>데이터 주석 유효성 검사기를 사용한 유효성 검사(C#)
 
@@ -21,14 +21,11 @@ by [Microsoft](https://github.com/microsoft)
 
 > ASP.NET MVC 응용 프로그램 내에서 유효성 검사를 수행 하려면 데이터 주석 모델 바인더를 활용 합니다. 다양 한 유형의 유효성 검사기 특성을 사용 하 고 Microsoft Entity Framework에서 사용 하는 방법에 알아봅니다.
 
-
 이 자습서에서는 ASP.NET MVC 응용 프로그램에서 유효성 검사를 수행 하려면 데이터 주석 유효성 검사기를 사용 하는 방법을 알아봅니다. 데이터 주석 유효성 검사기를 사용 하 여의 장점은 필요한 같은 하나 이상의 특성 – 또는 StringLength 특성을 추가 하면 – 클래스 속성에 유효성 검사를 수행할 수 있도록 한다는 점입니다.
 
 데이터 주석 유효성 검사기를 사용 하려면 먼저 데이터 주석 모델 바인더를 다운로드 해야 합니다. 클릭 하 여 CodePlex 웹 사이트에서 데이터 주석 모델 바인더 샘플을 다운로드할 수 있습니다 [여기](http://aspnet.codeplex.com/Release/ProjectReleases.aspx?ReleaseId=24471)합니다.
 
-
 데이터 주석 모델 바인더는 공식 Microsoft ASP.NET MVC 프레임 워크 부분 아님을 이해 하는 것이 반드시 합니다. Microsoft ASP.NET MVC 팀에서 데이터 주석 모델 바인더를 만들었지만 Microsoft 공식 제품 지원 데이터 주석 모델 바인더에 대 한 설명 및이 자습서에 사용 되는 제공 하지 않습니다.
-
 
 ## <a name="using-the-data-annotation-model-binder"></a>데이터 주석 모델 바인더를 사용 하 여
 
@@ -40,9 +37,7 @@ ASP.NET MVC 응용 프로그램에서 데이터 주석 모델 바인더를 사�
 
 Microsoft.Web.Mvc.DataAnnotations.dll 어셈블리와 System.ComponentModel.DataAnnotations.dll 어셈블리를 선택 하 고 클릭 합니다 **확인** 단추입니다.
 
-
 데이터 주석 모델 바인더를 사용 하 여.NET Framework 서비스 팩 1에 포함 된 System.ComponentModel.DataAnnotations.dll 어셈블리를 사용할 수 없습니다. 데이터 주석 모델 바인더 샘플 다운로드에 포함 된 System.ComponentModel.DataAnnotations.dll 어셈블리의 버전을 사용 해야 합니다.
-
 
 마지막으로 DataAnnotations 모델 바인더의 Global.asax 파일에 등록 해야 합니다. 응용 프로그램에 다음 코드 줄을 추가\_start () 이벤트 처리기를 응용 프로그램\_start () 메서드는 다음과 같습니다.
 
@@ -64,7 +59,6 @@ Microsoft.Web.Mvc.DataAnnotations.dll 어셈블리와 System.ComponentModel.Data
 > 
 > 표준 유효성 검사기에서 유효성 검사 요구 사항을 충족 되지 않은 경우 항상 해야 새 유효성 검사기 특성의 기본 유효성 검사 특성에서 상속 하 여 사용자 지정 유효성 검사기 특성을 만들 수 합니다.
 
-
 Product 클래스 **코드 1** 이러한 유효성 검사기 특성을 사용 하는 방법을 보여 줍니다. 이름, 설명 및 UnitPrice 속성은 표시 해야 하는 경우. Name 속성에는 문자열 길이가 10 자 미만인 인 있어야 합니다. 마지막으로, UnitPrice 속성이 통화 금액을 나타내는 정규식 패턴과 일치 해야 합니다.
 
 [!code-csharp[Main](validation-with-the-data-annotation-validators-cs/samples/sample2.cs)]
@@ -76,7 +70,6 @@ Product 클래스에는 하나의 추가 특성을 사용 하는 방법을 보�
 > [!NOTE] 
 > 
 > 유효성 검사기에서 표시 되는 오류 메시지를 완전히 사용자 지정 하려는 경우 다음과 같은 유효성 검사기의 ErrorMessage 속성에 사용자 지정 오류 메시지를 할당할 수 있습니다. `<Required(ErrorMessage:="This field needs a value!")>`
-
 
 Product 클래스를 사용할 수 있습니다 **1 나열** create () 컨트롤러 동작을 사용 하 여 **목록 2**합니다. 모델 상태 오류를 포함 하는 경우이 컨트롤러 작업 만들기 뷰를 다시 표시 됩니다.
 
@@ -97,7 +90,6 @@ Product 클래스를 사용할 수 있습니다 **1 나열** create () 컨트롤
 > [!NOTE] 
 > 
 > 생성 된 양식 만들기에서에서 Id 필드를 제거 합니다 **뷰 추가** 메뉴 옵션입니다. Id 필드에 Id 열에 해당 하기 때문에이 필드에 대 한 값을 입력할 수 있도록 하려는 하지 않습니다.
-
 
 제품을 만드는 폼을 제출 하 고 필수 필드에 대 한 값을 입력 하지 않으면 경우 유효성 검사 오류 메시지를 **그림 3** 표시 됩니다.
 
@@ -138,7 +130,6 @@ Entity Framework에서 생성 된 클래스를 사용 하 여 유효성 검사�
 > [!NOTE] 
 > 
 > 동영상 메타 데이터 클래스의 프록시 속성 영화 클래스의 해당 속성과 동일한 형식을 나타내는 데 필요 하지 않다는 것을 확인 합니다. 예를 들어, Director 속성이 영화 클래스의 문자열 속성 및 동영상 메타 데이터 클래스의 개체 속성입니다.
-
 
 페이지 **그림 6** 영화 속성에 대 한 잘못 된 값을 입력할 때 반환 된 오류 메시지를 보여 줍니다.
 

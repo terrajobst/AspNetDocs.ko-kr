@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: 585351c4-809a-4bf5-bcbe-35d624f565fe
 msc.legacyurl: /web-api/overview/advanced/sending-html-form-data-part-1
 msc.type: authoredcontent
-ms.openlocfilehash: fb0309af11910125943737ebb721b356b7bd08bc
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 7243069dbd8051b1374ed6e0112c273b8fe26f61
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59418302"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65115463"
 ---
 # <a name="sending-html-form-data-in-aspnet-web-api-form-urlencoded-data"></a>ASP.NET Web API에서에서 HTML 양식 데이터 보내기: Form-urlencoded 데이터
 
@@ -31,7 +31,6 @@ ms.locfileid: "59418302"
 
 > [!NOTE]
 > [완료 된 프로젝트 다운로드](https://code.msdn.microsoft.com/ASPNET-Web-API-Sending-a6f9d007)합니다.
-
 
 <a id="overview_of_html_forms"></a>
 ## <a name="overview-of-html-forms"></a>HTML 폼의 개요
@@ -62,7 +61,6 @@ HTML 양식 사용 하 여 GET 또는 게시 서버로 데이터를 보내도록
 
 > [!NOTE]
 > 이 컨트롤러를 사용 하 여 [동작 기반 라우팅을](../web-api-routing-and-actions/routing-in-aspnet-web-api.md#routing_by_action_name)이므로 경로 템플릿은 &quot;api / {컨트롤러} / {action} / {id}&quot;합니다. 클라이언트 데이터를 게시할 예정 &quot;/api/updates/complex&quot;합니다.
-
 
 이제 상태 업데이트를 제출 하는 사용자에 대 한 HTML 폼을 작성해 보겠습니다.
 
@@ -101,7 +99,6 @@ JQuery **제출** 함수는 새 함수를 사용 하 여 form action을 대체 �
 > [!NOTE]
 > 단순 형식을 보내기 전에 대신 복합 형식의 값을 배치 하는 것이 좋습니다. 이 서버 쪽에서 모델 유효성 검사의 이점을 제공 하며, 쉽게 모델을 확장 하는 데 필요한 경우.
 
-
 단순 형식을 전송 하는 기본 단계는 동일 하지만 두 가지 미묘한 차이점이 있습니다. 첫째, 컨트롤러에서 데코레이트해야 매개 변수 이름 앞에 **FromBody** 특성입니다.
 
 [!code-csharp[Main](sending-html-form-data-part-1/samples/sample7.cs?highlight=3)]
@@ -110,7 +107,6 @@ JQuery **제출** 함수는 새 함수를 사용 하 여 form action을 대체 �
 
 > [!NOTE]
 > 웹 API 응답 본문을 읽습니다 많아야 한 번만 매개 변수는 작업 중 하나는 요청 본문에서 가져올 수 있습니다. 요청 본문에서 여러 값을 얻으려면 해야 할 경우에 복합 형식을 정의 합니다.
-
 
 둘째, 클라이언트는 다음 형식으로 값을 보낼 필요 합니다.
 

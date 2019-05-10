@@ -8,12 +8,12 @@ ms.author: riande
 ms.date: 03/12/2010
 msc.legacyurl: ''
 msc.type: content
-ms.openlocfilehash: 1ab51453913b387ffecf898536eb55b7418b0285
-ms.sourcegitcommit: 2d53ed9e4c8b19d3526cbc689bfa8394c9449cec
+ms.openlocfilehash: d4b96bd2ff99bb30ff59b9697a27e33acb0f719d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59905633"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65120089"
 ---
 # <a name="aspnet-overview"></a>ASP.NET 개요
 
@@ -100,10 +100,6 @@ WebHook는 Web API와 SaaS 서비스를 연결하는 간단한 pub/sub 모델을
 Dropbox, GitHub, Instagram, MailChimp, PayPal, Slack, Trello를 포함한 여러 서비스에 WebHook가 노출됩니다. 예를 들어 WebHook는 Dropbox에서 파일이 변경되었거나, GitHub에서 코드가 변경되었거나, PayPal에서 대금 결제가 시작되었거나, Trello에서 카드가 생성되었음을 나타낼 수 있습니다.
 
 [WebHook에 대한 자세한 정보](webhooks/index.md)
-
-
-
-
 
 <!--
 Create Deployment TOC based on https://www.asp.net/aspnet/overview/deployment

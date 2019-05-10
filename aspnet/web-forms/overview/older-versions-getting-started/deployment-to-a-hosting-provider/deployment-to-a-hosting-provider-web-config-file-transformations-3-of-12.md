@@ -8,12 +8,12 @@ ms.date: 11/17/2011
 ms.assetid: 2b0df3d9-450b-4ea6-b315-4c9650722cad
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-web-config-file-transformations-3-of-12
 msc.type: authoredcontent
-ms.openlocfilehash: 2b289099f7f9a928b2d63a09ac5ccd685d9d4386
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ed442e2bd3140264facc7644d89589dbbe8840e7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59406536"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65119365"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-webconfig-file-transformations---3-of-12"></a>SQL Server Compact Visual Studio 또는 Visual Web Developer를 사용 하 여를 사용 하 여 ASP.NET 웹 응용 프로그램을 배포 합니다. Web.Config 파일 변환-3 / 12
 
@@ -24,7 +24,6 @@ ms.locfileid: "59406536"
 > 이 시리즈의 자습서에서는 배포 하는 방법을 보여 줍니다 (게시) ASP.NET 웹용 Visual Studio 2012 RC 또는 Visual Studio Express 2012 RC를 사용 하 여 SQL Server Compact 데이터베이스를 포함 하는 웹 응용 프로그램 프로젝트입니다. Visual Studio 2010 웹 게시 업데이트를 설치 하는 경우에 사용할 수 있습니다. 계열에 대 한 소개를 참조 하세요 [시리즈의 첫 번째 자습서](deployment-to-a-hosting-provider-introduction-1-of-12.md)합니다.
 > 
 > Visual Studio 2012 RC 출시 이후 도입 된 배포 기능을 보여 줍니다, 이외의 SQL Server Compact, SQL Server 버전을 배포 하는 방법을 보여 줍니다 및 Azure App Service Web Apps를 배포 하는 방법을 보여 줍니다 하는 자습서를 참조 하세요 [ASP.NET 웹 배포 Visual Studio를 사용 하 여](../../deployment/visual-studio-web-deployment/introduction.md)입니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -95,7 +94,6 @@ Web.config 파일을 마우스 오른쪽 단추로 클릭 하 고 선택 하 여
 > [!NOTE] 
 > 
 > **보안 정보** 프로덕션 응용 프로그램에서 public에 오류 세부 정보를 표시 하거나 공용 위치에 해당 정보를 저장 하지 않습니다. 공격자는 오류 정보를 사용 하 여 취약점으로 인 한 사이트를 검색할 수 있습니다. 사용자 고유의 응용 프로그램에서 ELMAH를 사용 하는 경우에 보안 위험을 최소화 하기 위해 ELMAH를 구성할 수 있는 방법을 조사 해야 합니다. 이 자습서에서 ELMAH 예제 간주 되지 않아야 권장된 구성. 예제 응용 프로그램에서 파일을 만들 수 있어야 하는 폴더를 처리 하는 방법을 보여 주기 위해 선택 된 경우
-
 
 ## <a name="setting-an-environment-indicator"></a>환경 표시기를 설정합니다.
 

@@ -8,19 +8,18 @@ ms.date: 08/14/2010
 ms.assetid: aa7b3e8e-e23d-49f1-b160-f99a7f2982bd
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part7
 msc.type: authoredcontent
-ms.openlocfilehash: 3db6947f36eb51b41d929f8c7d8835a95db8ea75
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 9403be574324c34edf93bef1e0e4fd7ba68a3a9d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59392354"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65122772"
 ---
 # <a name="adding-validation-to-the-model"></a>모델에 유효성 검사 추가
 
 [Scott Hanselman](https://github.com/shanselman)
 
 > ASP.NET MVC의 기본 사항을 소개 하는 초보자를 위한 자습서입니다. 읽기 및 쓰기 데이터베이스는 간단한 웹 응용 프로그램을 만들어야 합니다. 방문 합니다 [ASP.NET MVC 학습 센터](../../../index.md) 자습서 및 샘플 다른 ASP.NET MVC를 찾아볼 수 있습니다.
-
 
 이 섹션의 응용 프로그램 내에서 입력된 유효성 검사를 사용 하도록 설정 하는 데 필요한 지원을 구현 하려고 합니다. 협력 수는 데이터베이스 콘텐츠 항상 정확 하 고 시도 하 고 잘못 된 영화 데이터를 입력할 때 최종 사용자에 게 유용한 오류 메시지를 제공 합니다. 영화 클래스에 약간의 유효성 검사 논리를 추가 하 여 시작 됩니다.
 

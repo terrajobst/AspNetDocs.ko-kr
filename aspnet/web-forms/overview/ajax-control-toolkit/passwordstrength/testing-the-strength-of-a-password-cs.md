@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: cb4afbae-9b8f-483d-9729-476d4b9f85fc
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/passwordstrength/testing-the-strength-of-a-password-cs
 msc.type: authoredcontent
-ms.openlocfilehash: d8ac50874d0325ed9583a16e1b4e19b3becabb99
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1aeea5af6fee22a91893e52b6ebe15f9ed00db45
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59391522"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65115279"
 ---
 # <a name="testing-the-strength-of-a-password-c"></a>암호 강도 테스트(C#)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/PasswordStrength0.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/passwordstrength0CS.pdf)
 
 > 암호는 지연 사용자 해독 하기 쉬운 간단한 암호를 선택 하는 경향이 있습니다 있도록 거의 모든 곳에서 필요 합니다. ASP.NET AJAX Control Toolkit에서 PasswordStrength 컨트롤 성이나 암호를 확인할 수 있습니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -42,7 +41,6 @@ by [Christian Wenz](https://github.com/wenz)
 [!code-aspx[Main](testing-the-strength-of-a-password-cs/samples/sample1.aspx)]
 
 페이지 실행 한 번 입력 합니다. 소문자, 대문자, 숫자 및 기호를 입력 한 후에 암호 unbreakable으로 간주 됩니다.
-
 
 [![이제 암호 양호 (매우)](testing-the-strength-of-a-password-cs/_static/image2.png)](testing-the-strength-of-a-password-cs/_static/image1.png)
 

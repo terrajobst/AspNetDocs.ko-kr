@@ -8,12 +8,12 @@ ms.date: 05/21/2008
 ms.assetid: 78f8d194-03b9-44a5-8255-90e7cd1c2ee1
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/creating-a-site-wide-layout-using-master-pages-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 866aea01488cee26a7419fe12b7ffa7a0655e9ce
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 4ef4cc44a5d1adb936beea421a295ae84052d3c4
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59385048"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65116616"
 ---
 # <a name="creating-a-site-wide-layout-using-master-pages-c"></a>마스터 페이지를 사용하여 사이트 전체 레이아웃 만들기(C#)
 
@@ -23,16 +23,13 @@ ms.locfileid: "59385048"
 
 > 이 자습서에서는 기본 사항 마스터 페이지를 보여 줍니다. 즉, 마스터 페이지, 마스터 페이지를 만들려면지 않습니다 어떻게 하나 콘텐츠 자리 표시자 무엇지 않습니다 하나 만드는 방법을 수정 하는 방법을 마스터 페이지를 자동으로 반영 됩니다 해당 연결 된 콘텐츠 페이지의 마스터 페이지를 사용 하는 ASP.NET 페이지입니다.
 
-
 ## <a name="introduction"></a>소개
 
 잘 디자인 된 웹 사이트의 하나의 특성에는 일관성 있는 사이트 전체 페이지 레이아웃입니다. www.asp.net 웹 사이트를 예로 들어 보겠습니다. 이 문서 작성 당시 모든 페이지에 페이지의 아래쪽과 위쪽에 있는 동일한 콘텐츠 그림 1에서 볼 수 있듯이 각 페이지의 맨 Microsoft 커뮤니티의 목록이 있는 회색 막대를 표시 합니다. 아래는 다음과 같습니다. 사이트 로고는 사이트 번역도 마쳤고, 언어 및 core 섹션의 목록 홈, 시작, 학습, 다운로드 및 등입니다. 마찬가지로 페이지의 맨 아래 www.asp.net , 저작권, 개인정보취급방침 대 한 링크에 광고 정보를 포함 합니다.
 
-
 [![모든 페이지에 걸쳐 일관 된 모양과 느낌을 사용 하는 www.asp.net 웹 사이트](creating-a-site-wide-layout-using-master-pages-cs/_static/image2.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image1.png)
 
 <strong>그림 01</strong>: 일관성 확인 및 모든 페이지에서 느낌 www.asp.net 웹 사이트 사용 ([클릭 하 여 큰 이미지 보기](creating-a-site-wide-layout-using-master-pages-cs/_static/image3.png))
-
 
 잘 설계 된 사이트의 다른 특성은 사이트의 모양을 변경할 수 있는 간편 하 게 합니다. 그림 1은 2008 년 3 월을 기준으로 www.asp.net 홈 페이지를 보여 줍니다 않지만 이제 사이의이 자습서의이 게시 모양 및 느낌과 변경 될 수 있습니다. 아마도 맨 위에 있는 메뉴 항목은 MVC 프레임 워크에 대 한 새 섹션을 포함 하도록 확장 됩니다. 또는 아마도 다른 색, 글꼴 및 레이아웃을 사용 하 여 근본적으로 새로운 디자인의 소개 해제 됩니다. 전체 사이트에 이러한 변경 내용을 적용 수천 개의 사이트를 구성 하는 웹 페이지를 수정 하지 않아도 되는 빠르고 간단한 프로세스 여야 합니다.
 
@@ -64,28 +61,22 @@ ASP.NET 버전 2.0에서는 이전 페이지 개발자가 종종 일반적인 �
 > [!NOTE]
 > 핵심 개념과 기능 마스터 페이지의 ASP.NET 2.0 버전 이후 변경 되지 않았습니다. 그러나 Visual Studio 2008에는 Visual Studio 2005의 부족 했습니다 하는 기능 중첩된 마스터 페이지에 대 한 디자인 타임 지원을 제공 합니다. 이후 자습서에서 중첩 된 마스터 페이지를 사용 하 여 살펴보겠습니다.
 
-
 그림 2 www.asp.net 에 대 한 마스터 페이지 모양을 보여 줍니다. 마스터 페이지 왼쪽-가운데에서 각 개별 웹 페이지에 대 한 고유한 콘텐츠를 위치한 ContentPlaceHolder 뿐만 아니라-위쪽, 아래쪽 및 오른쪽의 모든 페이지에서 태그-일반적인 사이트 전체 레이아웃을 정의 하는 note 합니다.
-
 
 ![마스터 페이지 콘텐츠 페이지에서 콘텐츠 페이지 별로 사이트 전체 레이아웃 및 편집 가능한 영역 정의](creating-a-site-wide-layout-using-master-pages-cs/_static/image4.png)
 
 **그림 02**: 마스터 페이지 콘텐츠 페이지에서 콘텐츠 페이지 별로 사이트 전체 레이아웃 및 편집 가능한 영역 정의
 
-
 마스터 페이지를 정의한 후에 눈금의 확인란을 통해 새 ASP.NET 페이지에 바인딩할 수 있습니다. 이러한 ASP.NET 페이지-콘텐츠 페이지 라는-각 마스터 페이지의 ContentPlaceHolder 컨트롤에 대 한 콘텐츠 컨트롤을 포함 합니다. 브라우저를 통해 콘텐츠 페이지를 방문 하는 경우 ASP.NET 엔진 마스터 페이지의 컨트롤 계층 구조를 만들고 적절 한 위치에 콘텐츠 페이지의 컨트롤 계층 구조를 삽입 합니다. 이 결합 된 컨트롤 계층 구조는 렌더링 및 최종 사용자의 브라우저에 반환 되는 결과 HTML입니다. 따라서 콘텐츠 페이지 ContentPlaceHolder 컨트롤 외부에서 해당 마스터 페이지에 정의 하는 일반적인 태그와 콘텐츠 컨트롤 자체 내에 정의 된 페이지-관련 태그를 모두 내보냅니다. 그림 3에서는이 개념을 보여 줍니다.
-
 
 [![마스터 페이지에는 요청 된 페이지의 태그를 결합 하는](creating-a-site-wide-layout-using-master-pages-cs/_static/image6.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image5.png)
 
 **그림 03**: 마스터 페이지에는 요청 된 페이지의 태그를 결합 하는 ([클릭 하 여 큰 이미지 보기](creating-a-site-wide-layout-using-master-pages-cs/_static/image7.png))
 
-
 마스터 페이지 작동 하는 방법을 살펴보았습니다 했으므로 마스터 페이지 및 Visual Web Developer를 사용 하 여 연결 된 콘텐츠 페이지를 만들기에 대해를 살펴보겠습니다.
 
 > [!NOTE]
 > 많은 도달 하기 위해이 자습서 시리즈 전체에 걸쳐 구축 하는 ASP.NET 웹 사이트 만들어집니다 ASP.NET 3.5를 사용 하 여 Visual Studio 2008의 Microsoft의 무료 버전과 [Visual Web Developer 2008](https://www.microsoft.com/express/vwd/)합니다. ASP.NET 3.5로 업그레이드 걱정-아직 처리 하지 않은 경우 이러한 자습서에 설명 된 개념에 잘 ASP.NET 2.0 및 Visual Studio 2005입니다. 하지만 일부 데모 응용 프로그램은.NET framework 버전 3.5; 새로운 기능을 사용할 수 있습니다 3.5 관련 기능을 사용 하는 경우 버전 2.0에서에서 유사한 기능을 구현 하는 방법에 설명 하는 포함 합니다. 자습서 각 대상에서 다운로드에 사용할 수 있는 데모 응용 프로그램에는.NET Framework 버전 3.5는에서 보관 하나요는 `Web.config` 3.5 관련 구성 요소 및 3.5 관련 네임 스페이스에 대 한 참조를 포함 하는 파일을 `using` ASP.NET 페이지의 코드 숨김 클래스에는 문입니다. 결론부터 말하자면, 다운로드할 수 있는 웹 응용 프로그램이 다음 컴퓨터에.NET 3.5를 설치 하려면 아직 3.5 관련 태그를 제거 하지 않고 작동 하지 것입니다 `Web.config`합니다. 참조 [분석 ASP.NET 버전 3.5의 `Web.config` 파일](http://www.4guysfromrolla.com/articles/121207-1.aspx) 이 항목에 대 한 자세한 내용은 합니다. 제거 해야 합니다 `using` 3.5 관련 네임 스페이스를 참조 하는 문입니다.
-
 
 ## <a name="step-1-creating-a-master-page"></a>1단계: 마스터 페이지 만들기
 
@@ -94,19 +85,15 @@ ASP.NET 버전 2.0에서는 이전 페이지 개발자가 종종 일반적인 �
 > [!NOTE]
 > Visual Studio에서는 프로젝트 관리의 두 가지 모드를 지원합니다. 웹 사이트 프로젝트와 웹 응용 프로그램 프로젝트입니다. 프로젝트 아키텍처에 Visual Studio.NET 2002/2003을 모방 하는 웹 응용 프로그램 프로젝트-프로젝트 파일을 포함 하 고 프로젝트의 소스 코드에 배치 되는 단일 어셈블리로 컴파일할 때 반면 웹 사이트 프로젝트 없는 프로젝트 파일을 `/bin` 폴더입니다. 하지만 visual Studio 2005는 지원 되는 웹 사이트를 처음에 프로젝트를 [웹 응용 프로그램 프로젝트 모델](https://msdn.microsoft.com/library/aa730880(vs.80).aspx) 서비스 팩 1로 다시 도입 되었습니다 Visual Studio 2008 프로젝트 모델을 모두 제공합니다. 그러나 Visual Web Developer 2005 및 2008 edition만 지원 웹 사이트 프로젝트입니다. 이 자습서 시리즈에서 내 데모 웹 사이트 프로젝트 모델로 사용 합니다. Express 이외의 버전을 사용 하는 웹 응용 프로그램 프로젝트 모델을 대신 사용 하려는 경우 자유롭게 있을 수 있다는 일부 불일치 화면 표시 된 스크린샷 및 instructio 및 수행 해야 하는 단계에 표시 되는 내용 간에 수 있지만 이렇게 이 자습서에서 제공 하는 ns.
 
-
 [![새 파일 시스템 기반 웹 사이트 만들기](creating-a-site-wide-layout-using-master-pages-cs/_static/image9.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image8.png)
 
 **그림 04**: New File System-Based 웹 사이트 만들기 ([클릭 하 여 큰 이미지 보기](creating-a-site-wide-layout-using-master-pages-cs/_static/image10.png))
 
-
 다음으로, 프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고, 새 항목 추가 선택 하 고, 마스터 페이지 템플릿을 선택 하 여 사이트의 루트 디렉터리에 마스터 페이지를 추가 합니다. 마스터 페이지 확장명으로 끝나야 하는 참고 `.master`합니다. 이 새 마스터 페이지 이름을 `Site.master` 추가를 클릭 합니다.
-
 
 [![마스터 페이지 추가 웹 사이트에 Site.master 라는](creating-a-site-wide-layout-using-master-pages-cs/_static/image12.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image11.png)
 
 **그림 05**: 마스터 페이지 이름이 지정 된 추가 `Site.master` 웹 사이트 ([큰 이미지를 보려면 클릭](creating-a-site-wide-layout-using-master-pages-cs/_static/image13.png))
-
 
 Visual Web Developer를 통해 새 마스터 페이지 파일을 추가 합니다. 다음 선언적 태그를 사용 하 여 마스터 페이지를 만듭니다.
 
@@ -126,16 +113,13 @@ Visual Web Developer를 통해 새 마스터 페이지 파일을 추가 합니�
 > [!NOTE]
 > 마스터 페이지 디자인을 확인 하는 경우 마스터 페이지는 Web Form을 포함 하 고이 Web Form 내에 하나 이상의 각각의 ContentPlaceHolder 컨트롤로 나타납니다.
 
-
 ### <a name="creating-a-simple-site-layout"></a>간단한 사이트 레이아웃 만들기
 
 확장 `Site.master`의 모든 페이지를 공유 하는 사이트 레이아웃을 만드는 기본 선언적 태그: 공용 헤더, 탐색, 뉴스 및 다른 사이트 전체 콘텐츠 및 "Microsoft ASP.NET으로 전원이" 아이콘을 표시 하는 바닥글을 사용 하 여 왼쪽된 열입니다. 그림 6에서는 브라우저를 통해 콘텐츠 페이지 중 하나를 볼 때 마스터 페이지의 최종 결과를 보여 줍니다. 그림 6의 빨간색 원으로 표시 된 항목된 영역 방문 페이지에 따라 다릅니다 (`Default.aspx`); 모든 콘텐츠 페이지에 걸쳐 마스터 페이지에 정의 되 고 따라서 일치를 하는 다른 콘텐츠입니다.
 
-
 [![위쪽, 왼쪽 및 아래쪽 부분에 대 한 태그를 정의 하는 마스터 페이지](creating-a-site-wide-layout-using-master-pages-cs/_static/image15.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image14.png)
 
 **그림 06**: 마스터 페이지 정의 위쪽, 왼쪽 및 아래쪽 부분에 대 한 태그 ([클릭 하 여 큰 이미지 보기](creating-a-site-wide-layout-using-master-pages-cs/_static/image16.png))
-
 
 그림 6 에서처럼 사이트 레이아웃을 달성 하려면 업데이트 하 여 시작 합니다 `Site.master` 마스터 페이지는 다음과 같은 선언적 태그가 포함 되도록 합니다.
 
@@ -152,7 +136,6 @@ Visual Web Developer를 통해 새 마스터 페이지 파일을 추가 합니�
 > [!NOTE]
 > CSS 및 웹 페이지 서식을 설명은이 문서의 범위를 벗어납니다. CSS에 자세한 체크 아웃 합니다 [CSS 자습서](http://www.w3schools.com/css/default.asp) 에서 [W3Schools.com](http://www.w3schools.com/)합니다. 이 자습서의 함께 제공 되는 코드를 다운로드 하 여 CSS 설정이 재생도 바랍니다 `Styles.css` 다양 한 서식 지정 규칙의 영향을 확인 하려면.
 
-
 ### <a name="creating-a-master-page-using-an-existing-design-template"></a>기존 디자인 템플릿을 사용 하 여 마스터 페이지 만들기
 
 년에 걸쳐 다양 한 소규모-회사에 대 한 ASP.NET 웹 응용 프로그램 작성 했습니다. 내 클라이언트 중 일부가 했습니다 사용할; 기존 사이트 레이아웃 다른 유능한 그래픽 디자이너를 고용 합니다. 몇 가지 웹 사이트 레이아웃을 디자인을 위임 합니다. 그림 6에서 알 수 있듯이, 웹 사이트의 레이아웃을 디자인 하려면 프로그래머가 태스크는 일반적으로 과장에 세금을 수행 하는 동안 open-heart surgery 수행 하 여 회계사 것으로 좋습니다.
@@ -161,7 +144,6 @@ Visual Web Developer를 통해 새 마스터 페이지 파일을 추가 합니�
 
 > [!NOTE]
 > Microsoft는 다양 한도 제공 합니다. [무료 ASP.NET 디자인 시작 키트 템플릿](https://msdn.microsoft.com/asp.net/aa336613.aspx) Visual Studio에서 새 웹 사이트 대화 상자에 통합 합니다.
-
 
 ## <a name="step-2-creating-associated-content-pages"></a>2단계: 연결 된 콘텐츠 페이지 만들기
 
@@ -172,16 +154,13 @@ Visual Web Developer를 통해 새 마스터 페이지 파일을 추가 합니�
 > [!NOTE]
 > 웹 응용 프로그램 프로젝트 모델을 사용 하 여 웹 사이트 프로젝트 모델 대신 ASP.NET 웹 사이트를 만든 경우 그림 7의 새 항목 추가 대화 상자에서 "마스터 페이지 선택" 확인란을 표시 되지 않습니다. 콘텐츠 만들기 페이지 모델 웹 응용 프로그램 프로젝트를 사용 하는 경우 웹 양식 서식 파일 대신 웹 콘텐츠 폼 템플릿을 선택 해야 합니다. 웹 콘텐츠 폼 템플릿을 선택 하 고 추가 클릭 하면을 그림 8 에서처럼 대화 상자가 표시 됩니다 마스터 페이지 선택 동일 합니다.
 
-
 [![새 콘텐츠 페이지 추가](creating-a-site-wide-layout-using-master-pages-cs/_static/image18.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image17.png)
 
 **그림 07**: 새 콘텐츠 페이지 추가 ([클릭 하 여 큰 이미지 보기](creating-a-site-wide-layout-using-master-pages-cs/_static/image19.png))
 
-
 [![Site.master 마스터 페이지를 선택 합니다.](creating-a-site-wide-layout-using-master-pages-cs/_static/image21.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image20.png)
 
 **그림 08**: 선택 된 `Site.master` 마스터 페이지 ([큰 이미지를 보려면 클릭](creating-a-site-wide-layout-using-master-pages-cs/_static/image22.png))
-
 
 새 콘텐츠 페이지에 포함 된 다음 선언적 태그에서 알 수 있듯이는 `@Page` 를 가리키지만 마스터 페이지 및 콘텐츠 컨트롤을 각 마스터 페이지의 ContentPlaceHolder 컨트롤에 대 한 지시문입니다.
 
@@ -190,28 +169,23 @@ Visual Web Developer를 통해 새 마스터 페이지 파일을 추가 합니�
 > [!NOTE]
 > 1 단계에서에서 "간단한 사이트 레이아웃 만들기" 섹션에서 이름을 바꾼 `ContentPlaceHolder1` 에 `MainContent`입니다. 이 각각의 ContentPlaceHolder 컨트롤로 이름을 변경 하지 않으면 경우 `ID` 동일한 방법으로 콘텐츠 페이지의 선언적 태그는 약간 다를 위에 표시 된 태그에서. 즉, 두 번째 콘텐츠 컨트롤의 `ContentPlaceHolderID` 반영 됩니다는 `ID` 해당 ContentPlaceHolder의 마스터 페이지에서 제어 합니다.
 
-
 ASP.NET 엔진 페이지의 fuse 해야 콘텐츠 페이지를 렌더링 하는 경우 콘텐츠는 마스터 페이지의 ContentPlaceHolder 컨트롤로 컨트롤입니다. ASP.NET 엔진에서 콘텐츠 페이지의 마스터 페이지를 결정 합니다 `@Page` 지시문의 `MasterPageFile` 특성입니다. 위의 태그에서 알 수 있듯이,이 콘텐츠 페이지에 바인딩되어 `~/Site.master`합니다.
 
 마스터 페이지에 두 개의 ContentPlaceHolder 컨트롤-있어서 `head` 고 `MainContent` -Visual Web Developer 두 콘텐츠 컨트롤을 생성 합니다. 각 콘텐츠 컨트롤 참조를 통해 특정 ContentPlaceHolder 해당 `ContentPlaceHolderID` 속성입니다.
 
 여기서 이전 사이트 전체 템플릿 기법을 통해 마스터 페이지 반짝이 디자인 타임 지원을입니다. 그림 9를 `About.aspx` Visual Web Developer의 디자인 뷰를 통해 볼 때 콘텐츠 페이지입니다. 마스터 페이지 콘텐츠를 하는 동안 표시 되는 참고를 회색으로 표시 되 고 수정할 수 없습니다. 그러나 콘텐츠 컨트롤이 해당 마스터 페이지의 ContentPlaceHolders 하 되는 경우 편집할 수 있습니다. 것 처럼, 다른 ASP.NET 페이지를 사용 하 여 원본 또는 디자인 뷰를 통해 웹 컨트롤을 추가 하 여 콘텐츠 페이지의 인터페이스를 만들 수 있습니다.
 
-
 [![콘텐츠 페이지의 디자인 뷰에서 페이지별 및 마스터 페이지 콘텐츠를 표시합니다.](creating-a-site-wide-layout-using-master-pages-cs/_static/image24.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image23.png)
 
 **그림 09**: 콘텐츠 페이지의 디자인 뷰가 표시 페이지-특정과 마스터 페이지 콘텐츠 ([클릭 하 여 큰 이미지 보기](creating-a-site-wide-layout-using-master-pages-cs/_static/image25.png))
-
 
 ### <a name="adding-markup-and-web-controls-to-the-content-page"></a>콘텐츠 페이지에 태그 및 웹 컨트롤 추가
 
 잠시 시간에 대 한 일부 콘텐츠를 만들 수는 `About.aspx` 페이지입니다. 그림 10에서 참조는 "작성자 정보" 제목 및 몇 가지 텍스트 단락을 입력 하지만 너무 웹 컨트롤을 추가할 수 있습니다. 이 인터페이스를 만든 후 방문는 `About.aspx` 브라우저를 통해 페이지입니다.
 
-
 [![브라우저를 통해 about.aspx로 페이지를 참조 하세요.](creating-a-site-wide-layout-using-master-pages-cs/_static/image27.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image26.png)
 
 **그림 10**: 방문 합니다 `About.aspx` 는 브라우저를 통해 페이지 ([큰 이미지를 보려면 클릭](creating-a-site-wide-layout-using-master-pages-cs/_static/image28.png))
-
 
 요청 된 콘텐츠 페이지와 연결 된 해당 마스터 페이지가 결합 되 고 웹 서버에서 완전히 전체 렌더링을 이해 하는 것이 반드시 합니다. 최종 사용자의 브라우저 결과, 퓨즈 HTML을 전송 됩니다. 이 확인 하려면 보기 메뉴로 이동 하 고 소스를 선택 하 여 브라우저에서 받은 HTML을 봅니다. 프레임이 없는 또는 기타 특수 기술을 단일 창에 두 개의 다른 웹 페이지를 표시 하는 것에 대 한 참고 합니다.
 
@@ -232,7 +206,6 @@ ASP.NET 엔진 페이지의 fuse 해야 콘텐츠 페이지를 렌더링 하는 
 > [!NOTE]
 > 새 ASP.NET 응용 프로그램을 만들 때 Visual Web Developer 추가 `Default.aspx` 마스터 페이지에 얽매이지 않는 페이지입니다. 실제로 콘텐츠 페이지에 기존 ASP.NET 페이지를 변환 하려는 경우 계속 해 서 사용 하 여 이렇게 `Default.aspx`합니다. 삭제할 수 있습니다 `Default.aspx` , 이번 "마스터 페이지 선택" 확인란을 선택한 다음 다시 추가 합니다.
 
-
 ## <a name="step-3-updating-the-master-pages-markup"></a>3단계: 마스터 페이지의 태그를 업데이트 하는 중
 
 마스터 페이지의 주요 이점 중 하나는 사이트에서 다양 한 페이지에 대 한 전체 레이아웃을 정의 하는 단일 마스터 페이지를 사용할 수 있습니다. 따라서 사이트의 모양과 느낌을 업데이트 한 파일-마스터 페이지를 업데이트 해야 합니다.
@@ -247,15 +220,12 @@ ASP.NET 엔진 페이지의 fuse 해야 콘텐츠 페이지를 렌더링 하는 
 
 위의 코드에 레이블 설정 `Text` 는 요일, 월 및 두 일의 이름으로 속성을 현재 날짜 및 시간 형식 (그림 11 참조). 이 변경으로 콘텐츠 페이지 중 하나를 다시 확인 합니다. 그림 11에서 알 수 있듯이, 결과 태그는 즉시 마스터 페이지에 변경 내용을 포함 하도록 업데이트 됩니다.
 
-
 [![마스터 페이지 변경 사항이 반영 때는 표시 된 콘텐츠 페이지](creating-a-site-wide-layout-using-master-pages-cs/_static/image30.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image29.png)
 
 **그림 11**: 마스터 페이지 변경 사항이 반영 때는 표시 된 콘텐츠 페이지 ([클릭 하 여 큰 이미지 보기](creating-a-site-wide-layout-using-master-pages-cs/_static/image31.png))
 
-
 > [!NOTE]
 > 이 예제에서 알 수 있듯이, 마스터 페이지 서버 쪽 웹 컨트롤, 코드 및 이벤트 처리기를 포함할 수 있습니다.
-
 
 ## <a name="summary"></a>요약
 

@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: e51fcecb-cb33-4f9e-8428-6d2b3d0fe1bf
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/data-storage-options
 msc.type: authoredcontent
-ms.openlocfilehash: 9969a68a3e1aa043845fb5affd6d3b73dec4136d
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 8656f4a4211c2e97d71d76dd2f799412539896ca
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425394"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118841"
 ---
 # <a name="data-storage-options-building-real-world-cloud-apps-with-azure"></a>데이터 저장소 옵션 (실제 클라우드 앱 빌드 Azure 사용 하 여)
 
@@ -22,7 +22,6 @@ ms.locfileid: "58425394"
 [다운로드 해결 프로젝트](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자책 다운로드](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
 > 합니다 **실제 세계 클라우드 앱 빌드 Azure** 전자책 Scott Guthrie를 개발한 프레젠테이션을 기반으로 합니다. 13 패턴 설명 하 고 도움이 될 수 있는 사례 성공적인 클라우드를 위한 웹 앱을 개발할 수 있습니다. 전자책에 대 한 정보를 참조 하세요 [첫 번째 장에서](introduction.md)합니다.
-
 
 클라우드 앱을 디자인 하는 경우 다른 데이터 저장소 옵션을 간과 하기가 및 대부분의 사람들은 관계형 데이터베이스에 사용 됩니다. 표시 될 수 있습니다, 더 나쁜 경우 최적 상태가 아닌 성능, 높은 비용 때문 [NoSQL](http://en.wikipedia.org/wiki/NoSQL) (비관계형) 데이터베이스는 몇 가지 작업을 관계형 데이터베이스 보다 더 효율적으로 처리할 수 있습니다. 고객에 게 중요 한 데이터 저장소 문제를 해결할 수 있도록 문의 경우에 종종 관계형 데이터베이스를 설정 하는 위치 NoSQL 옵션 중 하나 작동 했겠지만 향상이 있기 때문에 있습니다. 이러한 상황에서는 고객 좋았을 해제 프로덕션에 앱을 배포 하기 전에 NoSQL 솔루션을 구현 했습니다.
 

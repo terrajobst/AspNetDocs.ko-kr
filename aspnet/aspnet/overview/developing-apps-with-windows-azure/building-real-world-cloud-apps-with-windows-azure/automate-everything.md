@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: ba6e6baa-9b9f-471f-b39d-b007a3addadc
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/automate-everything
 msc.type: authoredcontent
-ms.openlocfilehash: d27c8c1910a79cea8ccdf4231d3bc2b80a20dc68
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: fd78385e563b7204b29beb4180b7bc932266bdec
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59418367"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65119013"
 ---
 # <a name="automate-everything-building-real-world-cloud-apps-with-azure"></a>(Azure 사용 하 여 실제 클라우드 앱 빌드) 모든 것을 자동화합니다
 
@@ -22,7 +22,6 @@ ms.locfileid: "59418367"
 [다운로드 해결 프로젝트](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자책 다운로드](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
 > 합니다 **실제 세계 클라우드 앱 빌드 Azure** 전자책 Scott Guthrie를 개발한 프레젠테이션을 기반으로 합니다. 13 패턴 설명 하 고 도움이 될 수 있는 사례 성공적인 클라우드를 위한 웹 앱을 개발할 수 있습니다. 전자책 소개를 참조 하세요 [첫 번째 장에서](introduction.md)합니다.
-
 
 살펴보겠습니다 처음 세 패턴은 모든 소프트웨어 개발 프로젝트에 있지만 클라우드 프로젝트에 특히에 실제로 적용 합니다. 이 패턴은 개발 작업을 자동화 하는 방법에 대 한 합니다. 중요 한 항목을 있기 수동 프로세스 속도가 느리고 오류가 발생 하기 쉽습니다. 가능 하면 빠르고 안정적으로 agile 워크플로 설정으로 많은 자동화 합니다. 되므로 고유 하 게 클라우드 개발에 대 한 온-프레미스 환경에서 자동화 하기가 어렵거나 되는 많은 작업을 쉽게 자동화할 수 있습니다. 예를 들어, 전체 테스트를 설정할 수 있습니다 새 웹 서버와 백 엔드 Vm을 포함 하 여 환경, 데이터베이스, blob storage (파일 저장소), 큐 등입니다.
 
@@ -58,10 +57,8 @@ Fix It 응용 프로그램에 대 한 테스트 환경을 만들고 해당 환�
 
 ### <a name="run-the-script"></a>스크립트 실행
 
-
 > [!NOTE]
 > 챕터의이 부분에는 스크립트 및 명령을 실행 하기 위해 입력 하는 예제를 보여 줍니다. 이 데모 스크립트를 실행 하기 위해 알아야 할 모든 것을 제공 하지 않습니다. 단계별 방법-을 수행-it 지침은 [부록: 수정 샘플 응용 프로그램](the-fix-it-sample-application.md#deploybase)합니다.
-
 
 Azure 서비스를 관리 하는 PowerShell 스크립트를 실행 하려면 Azure PowerShell 콘솔을 설치 하 고 Azure 구독을 사용 하도록 구성 해야 합니다. 설정한 후에 다음과 같은 명령을 사용 하 여 Fix It 환경 만들기 스크립트를 실행할 수 있습니다.
 

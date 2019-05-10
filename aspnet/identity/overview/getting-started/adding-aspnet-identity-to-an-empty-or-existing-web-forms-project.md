@@ -9,15 +9,14 @@ ms.assetid: 1cbc0ed2-5bd6-4b62-8d34-4c193dcd8b25
 ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/getting-started/adding-aspnet-identity-to-an-empty-or-existing-web-forms-project
 msc.type: authoredcontent
-ms.openlocfilehash: 8f66cdb46e4cd02509092ea3bdcb7af9c292eb8f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8e82951d57f0b8052ee3f6530a7470be7d030206
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59394317"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65121433"
 ---
 # <a name="adding-aspnet-identity-to-an-empty-or-existing-web-forms-project"></a>비어 있는 또는 기존 Web Forms 프로젝트에 ASP.NET Identity 추가
-
 
 > 이 자습서에서는 추가 하는 방법을 보여 줍니다 [ASP.NET Id](introduction-to-aspnet-identity.md) (ASP.NET에 대 한 새 멤버 자격 시스템) ASP.NET 응용 프로그램에 있습니다.
 > 

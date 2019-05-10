@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: c61560e9-9f6c-4985-834a-08a3eabf9c3c
 msc.legacyurl: /web-forms/overview/deployment/web-deployment-in-the-enterprise/creating-and-running-a-deployment-command-file
 msc.type: authoredcontent
-ms.openlocfilehash: cbad35c9ef83b41e9d3f9a48ff37672d22338e7e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f1477ff423e4898385066a35b42503f3c70dcc68
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59395227"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65119455"
 ---
 # <a name="creating-and-running-a-deployment-command-file"></a>배포 명령 파일 만들기 및 실행
 
@@ -22,7 +22,6 @@ ms.locfileid: "59395227"
 [PDF 다운로드](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > 이 항목에서는 Microsoft Build Engine (MSBuild) 프로젝트 파일을 사용 하 여 단일 단계 및 반복 가능한 프로세스로 배포를 실행할 수 있도록 명령 파일을 작성 하는 방법을 설명 합니다.
-
 
 이 항목의 Fabrikam, Inc. 라는 가상 회사의 엔터프라이즈 배포 요구 사항 기반 자습서 시리즈의 일부를 형성 합니다. 샘플 솔루션을 사용 하 여이 자습서 시리즈&#x2014;는 [Contact Manager](the-contact-manager-solution.md) 솔루션&#x2014;현실적인 수준의 복잡성을 Windows Communication ASP.NET MVC 3 응용 프로그램을 포함 하 여 웹 응용 프로그램을 나타내는 Foundation (WCF) 서비스 및 데이터베이스 프로젝트입니다.
 
@@ -41,9 +40,7 @@ ms.locfileid: "59395227"
 
 합니다 *Publish.proj* 사용 하 여 파일을 **가져오기** 환경별 프로젝트 파일을 가져올 요소입니다.
 
-
 [!code-xml[Main](creating-and-running-a-deployment-command-file/samples/sample1.xml)]
-
 
 따라서 MSBuild.exe를 사용 하 여 Contact Manager 솔루션을 빌드 및 배포 하는 경우에 필요 합니다.
 
@@ -52,19 +49,14 @@ ms.locfileid: "59395227"
 
 이렇게 하려면 MSBuild 명령은 다음과 같습니다.
 
-
 [!code-console[Main](creating-and-running-a-deployment-command-file/samples/sample2.cmd)]
-
 
 여기에서 단일 단계를 반복 가능 하 고 배포를 이동 하는 간단한 단계가 것입니다. 하기만 하면 MSBuild 명령.cmd 파일에 추가 하는 것입니다. Contact Manager 솔루션을 게시 폴더 포함 이라는 파일로 *게시 Dev.cmd* 이 정확 하 게 수행 하는 합니다.
 
-
 [!code-console[Main](creating-and-running-a-deployment-command-file/samples/sample3.cmd)]
-
 
 > [!NOTE]
 > 합니다 **/fl** 스위치를 지정 하면 명명 된 로그 파일을 만드는 MSBuild *msbuild.log* MSBuild.exe 호출 된 작업 디렉터리에 있습니다.
-
 
 를 배포 하거나 Contact Manager 솔루션을 다시 배포 하기만 하면 실행 되는 *게시 Dev.cmd* 파일입니다. 파일을 실행 하는 경우 MSBuild는:
 
@@ -99,19 +91,14 @@ ms.locfileid: "59395227"
 
 MSBuild 지침이 포함 된 명령 파일을 만들어 구축 하 고 다중 프로젝트 솔루션을 특정 대상 환경에 배포 하는 빠르고 쉬운 방법을 제공 합니다. 반복적으로 여러 대상 환경에 솔루션을 배포 하는 경우에 여러 명령 파일을 만들 수 있습니다. 각 명령 파일의 MSBuild 명령이 빌드할 동일한 유니버설 프로젝트 파일을 하지만 다양 한 환경 관련 프로젝트 파일을 지정 합니다. 예를 들어 테스트 환경 또는 개발자에 게 게시 하는 명령 파일에는이 MSBuild 명령을 포함할 수 있습니다.
 
-
 [!code-console[Main](creating-and-running-a-deployment-command-file/samples/sample4.cmd)]
-
 
 스테이징 환경에 게시 하는 명령 파일을이 MSBuild 명령을 포함할 수 있습니다.
 
-
 [!code-console[Main](creating-and-running-a-deployment-command-file/samples/sample5.cmd)]
-
 
 > [!NOTE]
 > 사용자 고유의 서버 환경에 대 한 환경 관련 프로젝트 파일 사용자 지정 하는 방법에 대 한 지침을 참조 하세요 [대상 환경에 대 한 배포 속성 구성](../configuring-server-environments-for-web-deployment/configuring-deployment-properties-for-a-target-environment.md)합니다.
-
 
 또한 속성을 재정의 하거나 MSBuild 명령에 다른 다양 한 스위치를 설정 하 여 각 환경에 대 한 빌드 프로세스를 지정할 수 있습니다. 자세한 내용은 [MSBuild 명령줄 참조](https://msdn.microsoft.com/library/ms164311.aspx)합니다.
 

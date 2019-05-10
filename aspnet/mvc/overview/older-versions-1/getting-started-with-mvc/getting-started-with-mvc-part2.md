@@ -8,12 +8,12 @@ ms.date: 08/14/2010
 ms.assetid: ff03dcc0-da97-458d-838f-0823e7482642
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part2
 msc.type: authoredcontent
-ms.openlocfilehash: 84f9c822f041808184b2c586ce933ba3b24615dc
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e2a298584473f57c2b14edf507f0f6886d906ea3
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59419836"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123058"
 ---
 # <a name="adding-a-controller"></a>컨트롤러 추가
 
@@ -24,7 +24,6 @@ ms.locfileid: "59419836"
 >
 >
 > ASP.NET MVC의 기본 사항을 소개 하는 초보자를 위한 자습서입니다. 읽기 및 쓰기 데이터베이스는 간단한 웹 응용 프로그램을 만들어야 합니다. 방문 합니다 [ASP.NET MVC 학습 센터](../../../index.md) 자습서 및 샘플 다른 ASP.NET MVC를 찾아볼 수 있습니다.
-
 
 MVC는 모델, 뷰, 컨트롤러를 나타냅니다. MVC에는 각 파트에는 서로 다른 책임을 응용 프로그램을 개발 하기 위한 패턴입니다.
 

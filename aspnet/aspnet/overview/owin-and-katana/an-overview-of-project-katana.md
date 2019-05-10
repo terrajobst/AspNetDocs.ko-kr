@@ -8,19 +8,18 @@ ms.date: 08/30/2013
 ms.assetid: 0ee21741-c1bf-4025-a9b0-24580cae24bc
 msc.legacyurl: /aspnet/overview/owin-and-katana/an-overview-of-project-katana
 msc.type: authoredcontent
-ms.openlocfilehash: 72f70faa151007558ecbb270143ecd5b37c2134d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1f28db822930cdfd2ebf4cf9bb27d173f4aa4201
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59392575"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118287"
 ---
 # <a name="an-overview-of-project-katana"></a>프로젝트 Katana 개요
 
 [Howard Dierking](https://github.com/howarddierking)
 
 > ASP.NET 프레임 워크는 10 년 넘게 오랫동안 및 수많은 웹 사이트 및 서비스의 개발 플랫폼이 사용 하도록 설정 합니다. 웹 응용 프로그램 개발 전략 진화 하는 대로 프레임 워크를 ASP.NET MVC 및 ASP.NET Web API와 같은 기술 사용 하 여 단계에서 진화 할 수 되었습니다. 클라우드 컴퓨팅의 세계로 다음 진화 단계를 사용 하는 웹 응용 프로그램 개발을 하는 대로 프로젝트 [Katana](https://channel9.msdn.com/Shows/Web+Camps+TV/The-Katana-Project-OWIN-for-ASPNET) ASP.NET 응용 프로그램을 유연 하 고 이식 가능 하며 사용할 수 있도록 구성 요소의 기본 집합을 제공 합니다. 경량 – 더 나은 성능을 제공 하 고 프로젝트, 다른 말로 [Katana](https://channel9.msdn.com/Shows/Web+Camps+TV/The-Katana-Project-OWIN-for-ASPNET) 클라우드 ASP.NET 응용 프로그램을 최적화 합니다.
-
 
 ## <a name="why-katana--why-now"></a>왜 Katana – 이제 이유?
 
@@ -214,7 +213,6 @@ Katana 2.0 미들웨어 구성 요소는 주로 다른 인증 수단을 제공 �
 ## <a name="conclusion"></a>결론
 
  해당부터 Katana 프로젝트의 목표를 만들고 있으므로 개발자가 또 웹 프레임 워크에 알아보려면 강제 적용 되지 않았습니다. 대신, 목표.NET 웹 응용 프로그램 개발자가 가능 했습니다 이전 보다 더 많은 선택 옵션이 제공 하는 추상화를 만들려고 했습니다. 논리적 계층을 일반적인 웹 응용 프로그램 스택의 대체할 수 있는 구성 요소 집합으로 나누면 Katana 프로젝트에서 이러한 구성 요소에 적합 한 모든 속도 향상 시킬 스택 전체에서 구성 요소를 수 있습니다. 간단한 OWIN 추상화 모든 구성 요소를 빌드하여 Katana은 프레임 워크 및 응용 프로그램을 기반으로 구축 된 다양 한 서로 다른 서버와 호스트 간에 이식 가능 합니다. 스택의 컨트롤에서 개발자를 넣어 Katana 개발자 경량 하는 방법에 대 한 궁극적인 선택할 수 있도록 보장 하는 방법 기능을 갖춘 자신의 웹 스택 이어야 합니다.  
-  
 
 ## <a name="for-more-information-about-katana"></a>Katana에 대 한 자세한 내용은
 

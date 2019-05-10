@@ -8,12 +8,12 @@ ms.date: 04/10/2013
 ms.assetid: ab7b2554-956a-4f6d-b2a0-4ae0c62e8580
 msc.legacyurl: /signalr/overview/older-versions/tutorial-server-broadcast-with-aspnet-signalr
 msc.type: authoredcontent
-ms.openlocfilehash: a63bca69f137a4d4765db6a4925ff027c9d8bf7d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 68908be34f6b010e512677fe5f5e31bfdefab592
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59403586"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65116062"
 ---
 # <a name="tutorial-server-broadcast-with-aspnet-signalr-1x"></a>자습서: ASP.NET SignalR 1.x를 사용하여 서버 브로드캐스트
 
@@ -26,7 +26,6 @@ ms.locfileid: "59403586"
 > 이 자습서에서 만들어야 하는 응용 프로그램 주식 시세 표시기, 서버 브로드캐스트 기능에 대 한 일반적인 시나리오를 시뮬레이션 합니다.
 > 
 > 이 자습서에 대 한 의견을 기다리겠습니다. 에 자습서로 직접 관련 되지 않은 질문이 있을 경우 게시할 수 하는 [ASP.NET SignalR 포럼](https://forums.asp.net/1254.aspx/1?ASP+NET+SignalR) 또는 [StackOverflow.com](http://stackoverflow.com)합니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -54,7 +53,6 @@ ms.locfileid: "59403586"
 
 > [!NOTE]
 > 응용 프로그램을 구축 하는 단계를 진행 하지 않으려는 경우 새 SignalR.Sample 패키지를 설치할 수 있습니다 **빈 ASP.NET 웹 응용 프로그램** 프로젝트 및 코드를 설명 하려면 다음이 단계를 읽어보세요. 자습서의 첫 번째 부분에서는 SignalR.Sample 코드의 하위 집합 및 두 번째 부분은 SignalR.Sample 패키지에 추가 기능의 주요 기능에 설명 합니다.
-
 
 <a id="prerequisites"></a>
 

@@ -8,19 +8,18 @@ ms.date: 01/27/2009
 ms.assetid: 4341f5b1-6fe5-44c5-8b8a-18fa84f80177
 msc.legacyurl: /mvc/overview/older-versions-1/security/authenticating-users-with-forms-authentication-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 0a4e8dc3ce5764c6b2ec59c7e3f507064f8a8cb5
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: a2c2140631d59a7f8b21aa73613a92ea5c7a91d0
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59422163"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65122067"
 ---
 # <a name="authenticating-users-with-forms-authentication-vb"></a>폼 인증으로 사용자 인증(VB)
 
 by [Microsoft](https://github.com/microsoft)
 
 > [Authorize] 특성을 사용 하는 방법을 알아봅니다 암호로 MVC 응용 프로그램의 특정 페이지를 보호 합니다. 사용자 및 역할 만들기 및 관리 하는 웹 사이트 관리 도구를 사용 하는 방법을 알아봅니다. 또한 사용자 계정 및 역할 정보를 저장 하는 위치를 구성 하는 방법에 알아봅니다.
-
 
 이 자습서의 목표는 Forms를 사용 하는 방법을 설명 합니다. ASP.NET MVC 응용 프로그램에서 뷰를 보호 하는 암호를 인증 합니다. 사용자 및 역할을 만들려는 웹 사이트 관리 도구를 사용 하는 방법을 알아봅니다. 또한 권한이 없는 사용자가 컨트롤러 작업을 호출 하지 못하도록 하는 방법에 알아봅니다. 마지막으로, 사용자 이름 및 암호 저장 되는 위치를 구성 하는 방법에 알아봅니다.
 
@@ -117,7 +116,6 @@ ASP.NET SQL Server 설치 마법사를 사용 하면 네트워크에서 SQL Serv
 > 
 > 
 > C:\Windows\Microsoft.NET\Framework\v2.0.50727
-
 
 필요한 데이터베이스 개체를 만든 후에 MVC 응용 프로그램에서 사용 하 여 데이터베이스 연결을 수정 해야 합니다. 프로덕션 데이터베이스를 가리키도록 웹 구성 (web.config) 파일에서 ApplicationServices 연결 문자열을 수정 합니다. 예를 들어 목록 3에서 수정 된 연결 (원래 ApplicationServices 연결 문자열을 주석 처리 된) MyProductionDB 라는 데이터베이스를 가리킵니다.
 

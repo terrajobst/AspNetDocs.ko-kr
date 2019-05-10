@@ -8,19 +8,18 @@ ms.date: 11/07/2013
 ms.assetid: d031c021-33c2-45a5-bf9f-98f8fa78c2ab
 msc.legacyurl: /aspnet/overview/owin-and-katana/owin-middleware-in-the-iis-integrated-pipeline
 msc.type: authoredcontent
-ms.openlocfilehash: 484c01f19014639cc30244ed4f4d014794594aa2
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: bb1211de0a3fe876f5640538034ab5a58b3a070c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59391704"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118218"
 ---
 # <a name="owin-middleware-in-the-iis-integrated-pipeline"></a>IIS 통합된 파이프라인의 OWIN 미들웨어입니다.
 
 하 여 [Praburaj Thiagarajan](https://github.com/Praburaj), [Rick Anderson]((https://twitter.com/RickAndMSFT))
 
 > 실행 되는 OMC 파이프라인 이벤트를 설정 하는 방법 및이 문서에서는 IIS 통합된 파이프라인의 OWIN 미들웨어 구성 요소 (OMCs)를 실행 하는 방법을 보여 줍니다. 검토 해야 [는 프로젝트 Katana 개요](an-overview-of-project-katana.md) 하 고 [OWIN 시작 클래스 검색](owin-startup-class-detection.md) 이 자습서를 읽기 전에 합니다. Rick anderson이 자습서가 작성 ( [ @RickAndMSFT ](https://twitter.com/#!/RickAndMSFT) ), Chris Ross, Praburaj Thiagarajan 및 Howard Dierking ( [ @howard \_dierking](https://twitter.com/howard_dierking) ).
-
 
 하지만 [OWIN](an-overview-of-project-katana.md) 미들웨어 구성 요소 (OMCs)는 주로 서버 독립적인 파이프라인에서 실행 되도록 설계 되었습니다는 OMC 뿐 아니라 IIS 통합된 파이프라인에서 실행할 수 있습니다 (**클래식 모드가 *되지* 지원**). OMC 패키지 관리자 콘솔 (PMC)에서 다음 패키지를 설치 하 여 IIS 통합된 파이프라인의 작동 하도록 할 수 있습니다.
 

@@ -8,17 +8,16 @@ ms.date: 10/05/2011
 ms.assetid: 0078ceb6-3447-4ce4-90c2-d0e013ebc000
 msc.legacyurl: /web-forms/videos/iis
 msc.type: chapter
-ms.openlocfilehash: 883b5c3ad39922ddd51ea1d07b8d52d1c74d2153
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 30a6f4f944ba070d02aa8677085b9c7a07f5c162
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384294"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65114489"
 ---
 # <a name="general-iis-tips"></a>일반적인 IIS 팁
 
 > ASP.NET 응용 프로그램과 함께 작동 하도록 IIS를 구성 하는 방법입니다.
-
 
 - [공유 호스팅에서 개발 및 배포](developing-and-deploying-in-a-shared-hosting.md)
 - [IIS7 	위임된 관리자 작업](working-with-iis7-deligated-admin.md)

@@ -8,12 +8,12 @@ ms.date: 05/30/2007
 ms.assetid: 84afe4ac-cc53-4f2e-a867-27eaf692c2df
 msc.legacyurl: /web-forms/overview/data-access/caching-data/caching-data-at-application-startup-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 58c4654691084b9574283c03c77398cb43f6751a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 6c07b565329ab17496d2436f4c35bc4507694ed8
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59393472"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65119667"
 ---
 # <a name="caching-data-at-application-startup-vb"></a>애플리케이션 시작 시 데이터 캐싱(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59393472"
 [PDF 다운로드](caching-data-at-application-startup-vb/_static/datatutorial60vb1.pdf)
 
 > 모든 웹 응용 프로그램에서 일부 데이터는 자주 사용 됩니다 하 고 일부 데이터는 자주 사용 됩니다. 이라는 기술을 자주 사용 하는 데이터를 미리 로드 하 여 ASP.NET 응용 프로그램의 성능을 개선할 수 있습니다. 이 자습서에는 응용 프로그램 시작 시 캐시 데이터를 로드 하는 사전 로드는 한 가지 방법을 보여 줍니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -35,18 +34,15 @@ ms.locfileid: "59393472"
 > [!NOTE]
 > 장점과 단점, 구현 권장 사항 목록 뿐만 아니라 사전 및 사후 로드 간의 차이점에 대 한 자세한 설명에 대 한 참조를 [캐시의 내용을 관리](https://msdn.microsoft.com/library/ms978503.aspx) 섹션을 [ .NET Framework 응용 프로그램 아키텍처 가이드 캐싱](https://msdn.microsoft.com/library/ms978498.aspx)합니다.
 
-
 ## <a name="step-1-determining-what-data-to-cache-at-application-startup"></a>1단계: 응용 프로그램 시작 시 캐시 데이터를 결정합니다.
 
 캐싱 예제는 사후 로드를 사용 하 여 생성 하기 위해 데이터는 주기적으로 변경 될 수 있으며는 exorbitantly 오래 걸리지 않습니다 잘 이전 두 자습서 작업에서 검사 했습니다. 이지만 캐시 된 데이터를 변경 하지 않는 경우 사후 로드에서 사용 하는 만료 불필요 합니다. 마찬가지로, 생성 되 고 캐시 된 데이터를 사용 하는 매우 긴 시간이 요청이 찾을 캐시 빈 데이터 원본으로 사용 하는 동안 긴 대기를 허용 해야 합니다. 해당 사용자가 검색 됩니다. 정적 데이터 및 응용 프로그램 시작 시 생성 하는 매우 긴 시간이 소요 되는 데이터를 캐시 하는 것이 좋습니다.
 
 데이터베이스 많은 동적이 자주 변경 값을 대부분 정적 데이터의 상당한이 있을 합니다. 예를 들어, 거의 모든 데이터 모델 선택 항목의 고정된 된 집합에서 특정 값이 포함 된 하나 이상의 열을 가집니다. A `Patients` 데이터베이스 테이블에 있는 `PrimaryLanguage` 열, 영어, 스페인어, 프랑스어, 러시아어, 일본어 및 등 값 집합이 될 수 없습니다. 사용 하 여 이러한 유형의 열은 구현 경우가 많습니다 *조회 테이블*합니다. 영어 또는의 프랑스어 문자열을 저장 하는 대신는 `Patients` 테이블, 두 번째 테이블을 만들 열이 있는, 일반적으로 두 개의 고유 식별자 및 문자열 설명을-가능한 각 값에 대 한 레코드를 사용 하 여 합니다. 합니다 `PrimaryLanguage` 열에는 `Patients` 테이블 조회 테이블에서 해당 고유 식별자를 저장 합니다. 그림 1에서 환자 John Doe가 기본 언어는 영어, Ed Johnson s는 러시아어입니다.
 
-
 ![언어 테이블이 Patients 테이블에서 조회 테이블 사용](caching-data-at-application-startup-vb/_static/image1.png)
 
 **그림 1**: 합니다 `Languages` 테이블에서 조회 테이블 사용 되는 `Patients` 테이블
-
 
 새 환자를 만들거나 편집에 대 한 사용자 인터페이스를 허용 되는 언어의 레코드에 채워지는 드롭다운 목록이 포함 된 `Languages` 테이블입니다. 이 인터페이스는 때마다 캐싱 없이 시스템을 방문한 쿼리해야는 `Languages` 테이블. 이 경우 낭비 되 고 불필요 한 조회 테이블 값이 자주 변경 되므로 적입니다.
 
@@ -60,13 +56,11 @@ ms.locfileid: "59393472"
 
 클래스를 사용할 때는 일반적으로 클래스 먼저 전에 인스턴스화되어야 합니다 해당 멤버에 액세스할 수 있습니다. 예를 들어이 비즈니스 논리 계층의 클래스 중 하나에서 메서드를 호출 하려면 클래스의 인스턴스 먼저 만들어야 합니다.
 
-
 [!code-vb[Main](caching-data-at-application-startup-vb/samples/sample1.vb)]
 
 전에 호출할 수 있습니다 *SomeMethod* 하거나 작업할 *SomeProperty*를 사용 하 여 클래스의 인스턴스 먼저 만들어야 합니다를 `New` 키워드입니다. *SomeMethod* 하 고 *SomeProperty* 특정 인스턴스와 연결 합니다. 이러한 멤버의 수명 동안 해당 연결된 개체의 수명에 연결 됩니다. *정적 멤버*, 변수, 속성 및 메서드 간에 공유 되는 반면에 *모든* 클래스 인스턴스의 및 결과적으로 수명이 클래스도 합니다. 정적 멤버는 다음과 같은 키워드로 표시 됩니다. `Shared`합니다.
 
 정적 멤버 외에도 응용 프로그램 상태를 사용 하 여 데이터를 캐시할 수 있습니다. 각 ASP.NET 응용 프로그램 이름/값 컬렉션을 모든 사용자 및 응용 프로그램의 페이지 간에 공유 되는 s를 유지 관리 합니다. 사용 하 여이 컬렉션에 액세스할 수 합니다 [ `HttpContext` 클래스](https://msdn.microsoft.com/library/system.web.httpcontext.aspx) s [ `Application` 속성](https://msdn.microsoft.com/library/system.web.httpcontext.application.aspx), ASP.NET 페이지의 코드 숨김 클래스에서 사용 하 고 다음과 같이:
-
 
 [!code-vb[Main](caching-data-at-application-startup-vb/samples/sample2.vb)]
 
@@ -78,14 +72,11 @@ Ve 누계 구현에서는 데이터베이스 테이블에서 Northwind는 기존
 
 시작 하려면 라는 새 클래스를 만듭니다 `StaticCache.cs` 에 `CL` 폴더입니다.
 
-
 ![CL 폴더에서 StaticCache.vb 클래스 만들기](caching-data-at-application-startup-vb/_static/image2.png)
 
 **그림 2**: 만들기는 `StaticCache.vb` 클래스는 `CL` 폴더
 
-
 이 캐시에서 데이터를 반환 하는 방법 뿐만 아니라 적절 한 캐시 스토어에 시작 시 데이터를 로드 하는 메서드를 추가 해야 합니다.
-
 
 [!code-vb[Main](caching-data-at-application-startup-vb/samples/sample3.vb)]
 
@@ -93,13 +84,11 @@ Ve 누계 구현에서는 데이터베이스 테이블에서 Northwind는 기존
 
 캐시 저장소로 정적 멤버 변수를 사용 하는 대신 또는 사용 응용 프로그램 상태 또는 데이터 캐시 합니다. 다음 코드를 응용 프로그램 상태를 사용 하려면 retooled 클래스를 보여 줍니다.
 
-
 [!code-vb[Main](caching-data-at-application-startup-vb/samples/sample4.vb)]
 
 `LoadStaticCache()`, 공급 업체 정보를 응용 프로그램 변수에 저장 됩니다 *키*합니다. 것이 적절 한 형식으로 반환 (`Northwind.SuppliersDataTable`)에서 `GetSuppliers()`합니다. 응용 프로그램 상태를 사용 하 여 ASP.NET 페이지의 코드 숨김 클래스에서 액세스할 수 있습니다 하는 동안 `Application("key")`, 아키텍처를 사용 해야 합니다 `HttpContext.Current.Application("key")` 현재 얻으려면 `HttpContext`합니다.
 
 마찬가지로, 다음 코드와 같이 캐시 저장소로 데이터 캐시를 사용할 수 있습니다.
-
 
 [!code-vb[Main](caching-data-at-application-startup-vb/samples/sample5.vb)]
 
@@ -107,7 +96,6 @@ Ve 누계 구현에서는 데이터베이스 테이블에서 Northwind는 기존
 
 > [!NOTE]
 > 이 자습서가의 다운로드를 구현 하는 `StaticCache` 클래스 정적 멤버 변수 접근 방식을 사용 합니다. 응용 프로그램 상태 및 데이터 캐시 기술에 대 한 코드는 클래스 파일의 주석을 사용할 수 있습니다.
-
 
 ## <a name="step-4-executing-code-at-application-startup"></a>4단계: 응용 프로그램 시작 시 코드를 실행합니다.
 
@@ -118,11 +106,9 @@ Ve 누계 구현에서는 데이터베이스 테이블에서 Northwind는 기존
 > [!NOTE]
 > 이미 있는 경우는 `Global.asax` 프로젝트 항목 형식의 새 항목 추가 대화 상자에서 나열 되지 것입니다 하 고 전역 응용 프로그램 클래스에에서는 파일입니다.
 
-
 [![웹 응용 프로그램 s 루트 디렉터리를 Global.asax 파일 추가](caching-data-at-application-startup-vb/_static/image4.png)](caching-data-at-application-startup-vb/_static/image3.png)
 
 **그림 3**: 추가 된 `Global.asax` 웹 응용 프로그램 루트 디렉터리에 파일 ([큰 이미지를 보려면 클릭](caching-data-at-application-startup-vb/_static/image5.png))
-
 
 기본값 `Global.asax` 서버 쪽에서 5 개의 메서드를 포함 하는 파일 템플릿을 `<script>` 태그:
 
@@ -136,20 +122,16 @@ Ve 누계 구현에서는 데이터베이스 테이블에서 Northwind는 기존
 
 이 자습서에서는 하기만 코드를 추가 하는 `Application_Start` 메서드, 따라서 자유롭게 다른를 제거 합니다. `Application_Start`를 호출 하기만 하면 됩니다 합니다 `StaticCache` s 클래스 `LoadStaticCache()` 메서드를 로드 하 고 공급 업체 정보를 캐시:
 
-
 [!code-aspx[Main](caching-data-at-application-startup-vb/samples/sample6.aspx)]
 
 S 모두 완료 되었습니다! 응용 프로그램 시작 시 합니다 `LoadStaticCache()` 메서드는 BLL은에서 공급 업체 정보를 얻 및 정적 멤버 변수에 저장 (또는 원하는 캐시 저장에 사용 하 여 종료를 `StaticCache` 클래스). 이 동작을 확인 하려면에서 중단점을 설정 합니다 `Application_Start` 메서드 및 응용 프로그램을 실행 합니다. 응용 프로그램 시작 시이 중단점 note 합니다. 하지만 후속 요청 하지 않게 된 `Application_Start` 메서드를 실행 합니다.
-
 
 [![Application_Start 이벤트 처리기가 실행 되 고 확인 하도록 중단점을 사용 하 여](caching-data-at-application-startup-vb/_static/image7.png)](caching-data-at-application-startup-vb/_static/image6.png)
 
 **그림 4**: 확인에 중단점을 사용 하는 합니다 `Application_Start` 이벤트 처리기가 실행 중인 ([큰 이미지를 보려면 클릭](caching-data-at-application-startup-vb/_static/image8.png))
 
-
 > [!NOTE]
 > 에 도달 하지 하는 경우는 `Application_Start` 먼저 디버깅을 시작할 때 중단점을 있기 때문에 응용 프로그램이 이미 시작 되었습니다. 응용 프로그램을 수정 하 여 다시 시작을 강제 하 `Global.asax` 또는 `Web.config` 파일을 다시 시도 하십시오. 있습니다 수 단순히 추가 (또는 제거) 끝 신속 하 게 응용 프로그램 다시 시작 하려면 이러한 파일 중 하나에 빈 줄.
-
 
 ## <a name="step-5-displaying-the-cached-data"></a>5단계: 캐시 된 데이터를 표시합니다.
 
@@ -157,29 +139,23 @@ S 모두 완료 되었습니다! 응용 프로그램 시작 시 합니다 `LoadS
 
 열어서 시작 합니다 `AtApplicationStartup.aspx` 페이지에 `Caching` 폴더입니다. 설정 디자이너 도구 상자에서 GridView를 끌어 해당 `ID` 속성을 `Suppliers`입니다. 그런 다음 GridView에서 s 스마트 태그 선택 라는 새로운 ObjectDataSource는 만들려는 `SuppliersCachedDataSource`합니다. ObjectDataSource를 사용 하 여 구성 합니다 `StaticCache` s 클래스 `GetSuppliers()` 메서드.
 
-
 [![StaticCache 클래스를 사용 하는 ObjectDataSource 구성](caching-data-at-application-startup-vb/_static/image10.png)](caching-data-at-application-startup-vb/_static/image9.png)
 
 **그림 5**: ObjectDataSource를 사용 하 여 구성 합니다 `StaticCache` 클래스 ([큰 이미지를 보려면 클릭](caching-data-at-application-startup-vb/_static/image11.png))
-
 
 [![GetSuppliers() 메서드를 사용 하 여 캐시 된 공급자 데이터를 검색 합니다.](caching-data-at-application-startup-vb/_static/image13.png)](caching-data-at-application-startup-vb/_static/image12.png)
 
 **그림 6**: 사용 된 `GetSuppliers()` 캐시 된 공급자 데이터를 검색 하는 방법 ([큰 이미지를 보려면 클릭](caching-data-at-application-startup-vb/_static/image14.png))
 
-
 마법사를 완료 한 후 Visual Studio는 자동으로 추가 BoundFields 각 데이터 필드에 대 한 `SuppliersDataTable`합니다. GridView 및 ObjectDataSource가 선언적 태그는 다음과 비슷하게 표시 됩니다.
-
 
 [!code-aspx[Main](caching-data-at-application-startup-vb/samples/sample7.aspx)]
 
 그림 7에서는 브라우저를 통해 볼 때 페이지를 보여 줍니다. 출력은 동일한 BLL s에서 데이터를 우리가 가져온 했습니다 `SuppliersBLL` 클래스를 하지만 사용 하 여는 `StaticCache` 클래스에는 응용 프로그램 시작 시 캐시 된 공급자 데이터를 반환 합니다. 중단점을 설정할 수는 `StaticCache` s 클래스 `GetSuppliers()` 이 동작을 확인 하는 방법입니다.
 
-
 [![캐시 된 공급자 데이터를 GridView에 표시 됩니다.](caching-data-at-application-startup-vb/_static/image16.png)](caching-data-at-application-startup-vb/_static/image15.png)
 
 **그림 7**: 캐시 된 공급자 데이터를 GridView에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](caching-data-at-application-startup-vb/_static/image17.png))
-
 
 ## <a name="summary"></a>요약
 

@@ -8,12 +8,12 @@ ms.date: 10/17/2013
 ms.assetid: caa1ba4a-f9f0-4181-ba21-042e3997861d
 msc.legacyurl: /mvc/overview/getting-started/introduction/accessing-your-models-data-from-a-controller
 msc.type: authoredcontent
-ms.openlocfilehash: 91948b1b997b083606a53e6e02bc00d2c58cb791
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 17a176b8bf3b1de8a0ff9145ab6f5f26cf210503
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59418146"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65120858"
 ---
 # <a name="accessing-your-models-data-from-a-controller"></a>컨트롤러에서 모델의 데이터에 액세스
 
@@ -57,12 +57,10 @@ Visual Studio에서 자동으로 작성 된 [CRUD](http://en.wikipedia.org/wiki/
 
 **새로 만들기** 링크를 선택합니다. 영화에 대 한 일부 정보를 입력 한 다음 클릭 합니다 **만들기** 단추입니다.
 
-
 ![](accessing-your-models-data-from-a-controller/_static/image5.png)
 
 > [!NOTE]
 > Price 필드에서 소수점 또는 쉼표를 입력할 수 있습니다. 쉼표를 사용 하는 영어가 아닌 로캘의 jQuery 유효성 검사를 지원 하도록 (&quot;,&quot;), 소수점 및 미국 영어가 아닌 날짜 형식에 대 한 포함 해야 합니다 *globalize.js* 및 특정  *cultures/globalize.cultures.js* 파일 (에서 [ https://github.com/jquery/globalize ](https://github.com/jquery/globalize) ) 및 JavaScript를 사용 하 여 `Globalize.parseFloat`입니다. 다음 자습서에서이 작업을 수행 하는 방법을 살펴보겠습니다. 이제 10 같은 정수를 입력하면 됩니다.
-
 
 클릭 하는 **만들기** 단추 하면 폼이 데이터베이스에서 동영상 정보가 저장 된 서버에 게시할 수 있습니다. 다음으로 리디렉션됩니다 합니다 */Movies* URL을 목록에서 새로 만든된 동영상을 볼 수 있습니다.
 

@@ -8,19 +8,18 @@ ms.date: 02/10/2010
 ms.assetid: 1365eebb-bdf7-4a05-8d18-7f200531be55
 msc.legacyurl: /whitepapers/ms03-32-issue
 msc.type: content
-ms.openlocfilehash: faad1530a499fd3f46a6a6c6e7c194ba6c55fa6c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e0b6776cbfe22e341ac7105f03daac5074b480fc
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59386296"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65121542"
 ---
 # <a name="fix-for-server-application-unavailable-error-after-applying-security-update-for-ie"></a>IE 보안 업데이트 적용 후 ‘서버 애플리케이션을 사용할 수 없음’ 오류에 대한 수정
 
 > 이 문서에서는 Windows XP Professional을 실행 하는 ASP.NET 1.0 응용 프로그램에 영향을 주는 Internet Explorer에 대 한 m s 03-32 보안 업데이트를 사용 하 여 문제를 해결 하는 패치를 설명 합니다.
 > 
 > Windows XP Professional ASP.NET 1.0에 적용 됩니다.
-
 
 Microsoft은 Internet Explorer 보안 패치 m s 03-32 보안 업데이트 및 Windows XP에서 실행 중인 ASP.NET 1.0을 사용 하 여 문제를 식별 합니다. 수동으로 또는 Windows 업데이트 사이트에서 최신 중요 업데이트를 가져와서이 패치를 설치할 수 있습니다.
 

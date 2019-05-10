@@ -8,19 +8,18 @@ ms.date: 01/27/2009
 ms.assetid: ff8322c9-12f3-4e24-aba6-a38046b9bb0d
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-vb
 msc.type: authoredcontent
-ms.openlocfilehash: b3c6726c2d08e2e6ac37501f2ab455e427df82bb
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f6c896c6f5f6d898ac6f99d5998fb29cb73bcb10
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59414057"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65117597"
 ---
 # <a name="creating-model-classes-with-the-entity-framework-vb"></a>Entity Framework를 사용하여 모델 클래스 만들기(VB)
 
 by [Microsoft](https://github.com/microsoft)
 
 > 이 자습서에서는 Microsoft Entity Framework를 사용 하 여 ASP.NET MVC를 사용 하는 방법을 알아봅니다. ADO.NET 엔터티 데이터 모델을 만들려면 엔터티 마법사를 사용 하는 방법을 알아봅니다. 이 자습서의이 코스를 통해 선택, 삽입, 업데이트 및 Entity Framework를 사용 하 여 데이터베이스 데이터를 삭제 하는 방법을 보여 주는 웹 응용 프로그램을 빌드합니다.
-
 
 이 자습서의 목표는 ASP.NET MVC 응용 프로그램을 빌드할 때에 Microsoft Entity Framework를 사용 하 여 데이터 액세스 클래스를 만드는 방법을 설명 합니다. 이 자습서에서는 Microsoft Entity Framework의 이전 알지를 가정합니다. 이 자습서를 마치면 선택, 삽입, 업데이트 하려면 Entity Framework를 사용 하 여 데이터베이스 레코드를 삭제 하는 방법을 이해할 수 있습니다.
 
@@ -30,13 +29,11 @@ Microsoft Entity Framework는 개체 관계형 매핑 (O/RM) 도구는 데이터
 > 
 > ASP.NET MVC와 Microsoft Entity Framework 간의 필수 연결이 없습니다. ASP.NET MVC를 사용 하 여 사용할 수 있는 Entity Framework에 여러 가지 대안이 있습니다. 예를 들어 Microsoft LINQ to SQL, NHibernate 등 이나 SubSonic 등의 다른 O/RM 도구를 사용 하 여 MVC 모델 클래스를 빌드할 수 있습니다.
 
-
 ASP.NET MVC를 사용 하 여 Microsoft Entity Framework를 사용 하는 방법을 보여 주기를 위해 간단한 샘플 응용 프로그램을 빌드 해 보겠습니다. 표시 하 고 영화 데이터베이스 레코드를 편집할 수 있는 영화 데이터베이스 응용 프로그램을 만듭니다.
 
 이 자습서에서는 Visual Studio 2008 또는 Visual Web Developer 2008 서비스 팩 1을 사용 하 여 있다고 가정 합니다. Entity Framework를 사용 하려면 서비스 팩 1 해야 합니다. 다음 주소에서 Visual Studio 2008 서비스 팩 1 또는 서비스 팩 1을 사용 하 여 Visual Web Developer를 다운로드할 수 있습니다.
 
 > [https://www.asp.net/downloads/](https://www.asp.net/downloads)
-
 
 ## <a name="creating-the-movie-sample-database"></a>동영상 샘플 데이터베이스 만들기
 
@@ -108,9 +105,7 @@ Entity Framework를 사용 하려면 엔터티 데이터 모델을 만들려고 
 
 저장 단추 (플로피 디스크 아이콘)를 클릭 하 여 수정 작업을 수행한 후에 엔터티 데이터 모델을 저장 해야 합니다. 내부적으로 Entity Designer는 Visual Basic.NET 클래스 집합을 생성합니다. 솔루션 탐색기 창에서 MoviesDBModel.Designer.vb 파일을 열어 이러한 클래스를 볼 수 있습니다.
 
-
 변경 내용을 덮어씁니다 다음에 Entity Designer를 사용 하므로.designer.vb 파일의 코드를 수정 하지 마세요. .Designer.vb 파일에 정의 된 엔터티 클래스의 기능을 확장 하려는 경우 만들 수 있습니다 *partial 클래스* 를 별도 파일입니다.
-
 
 #### <a name="selecting-database-records-with-the-entity-framework"></a>Entity Framework 사용 하 여 데이터베이스 레코드를 선택합니다.
 
@@ -158,9 +153,7 @@ Entity Framework를 사용 하려면 엔터티 데이터 모델을 만들려고 
 
 두 번째 add () 작업을 ASP.NET MVC TryUpdateModel() 메서드를 사용 하 여 Entity Framework 영화 클래스의 새 인스턴스를 만듭니다. TryUpdateModel() 메서드 add () 메서드에 전달 된 FormCollection 필드 하며 영화 클래스에 이러한 HTML 폼 필드의 값을 할당 합니다.
 
-
 Entity Framework를 사용 하는 경우 UpdateModel 또는 tryupdatemodel에 전달 방법을 사용 하 여 엔터티 클래스의 속성을 업데이트 하는 경우 "white" 속성의 목록을 제공 해야 합니다.
-
 
 그런 다음 add () 작업을 몇 가지 간단한 양식 유효성 검사를 수행합니다. 작업 제목 및 Director 속성 값이 있다고을 확인 합니다. 유효성 검사 오류가 있으면 유효성 검사 오류 메시지를 ModelState에 추가 됩니다.
 

@@ -8,17 +8,16 @@ ms.date: 10/05/2011
 ms.assetid: cd51e6c4-6ff9-419d-8ac8-a39b79d63c78
 msc.legacyurl: /web-forms/videos/aspnet-dynamic-data
 msc.type: chapter
-ms.openlocfilehash: 11fca6096a1ada5df95971f2c77c8e72660ad864
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 622f4c5243d094d1ab6b58a909795bc5230c62ce
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59400154"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65116408"
 ---
 # <a name="aspnet-dynamic-data"></a>ASP.NET Dynamic Data
 
 > ASP.NET Dynamic Data를 사용 하 여 자동으로 데이터 액세스를 수행 하는 방법을 알 수 있는 스 캐 폴드 된 응용 프로그램을 만드는 방법입니다.
-
 
 - [첫 번째 스캐폴드 및 Dynamic Data](your-first-scaffold-and-what-is-dynamic-data.md)
 - [인라인 GridView 편집 사용](how-do-i-enable-inline-gridview-editing.md)

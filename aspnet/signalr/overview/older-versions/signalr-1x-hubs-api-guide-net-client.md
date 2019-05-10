@@ -8,12 +8,12 @@ ms.date: 04/17/2013
 ms.assetid: c334adc3-d6dc-44f3-9f06-f7634475aad3
 msc.legacyurl: /signalr/overview/older-versions/signalr-1x-hubs-api-guide-net-client
 msc.type: authoredcontent
-ms.openlocfilehash: 1551b4533e05a6cd7dcc29e4c6bc17e854889ee8
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2b22b53c405a865f91b04e677f60b82dd46dbf9b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402247"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65120116"
 ---
 # <a name="aspnet-signalr-hubs-api-guide---net-client-signalr-1x"></a>ASP.NET SignalR 허브 API 가이드-.NET 클라이언트 (SignalR 1.x)
 
@@ -26,7 +26,6 @@ ms.locfileid: "59402247"
 > SignalR 허브 API를 사용 하면 클라이언트가 서버에 연결 된 클라이언트에는 서버에서 원격 프로시저 호출 (Rpc)을 만들 수 있습니다. 서버 코드에서 클라이언트에서 호출할 수 있는 메서드를 정의 하 고 클라이언트에서 실행 되는 메서드를 호출 합니다. 클라이언트 코드에서 서버에서 호출할 수 있는 메서드를 정의 하 고 서버에서 실행 되는 메서드를 호출 합니다. SignalR은 모든 클라이언트-서버 연결 구조를 처리합니다.
 > 
 > 또한 SignalR 영구 연결을 호출 하는 하위 수준 API를 제공 합니다. SignalR에서 허브 및 영구 연결에 대 한 소개, 전체 SignalR 응용 프로그램을 빌드하는 방법을 보여 주는 자습서에 대 한 참조 [SignalR-Getting Started](../getting-started/index.md)합니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -87,7 +86,6 @@ ms.locfileid: "59402247"
 
 > [!NOTE]
 > JavaScript 클라이언트에 대 한 하나 이상의 이벤트 처리기를 호출 하기 전에 등록 해야 합니다 `Start` 연결을 설정 하는 방법입니다. .NET 클라이언트에 대 한 필요한 아닙니다. JavaScript 클라이언트에 대 한 생성 된 프록시 코드를 자동으로 존재 하는 모든 허브에 대 한 프록시 서버에서 만들어지고 있는 허브를 표시 하는 방법에 처리기를 등록 클라이언트에서 사용 하려고 합니다. .NET 클라이언트에 대 한 수 있지만 만들 허브 프록시를 수동으로 SignalR를 사용 하 게 모든 허브에 대 한 프록시를 만드는 것으로 가정 하므로.
-
 
 기본값을 사용 하 여 샘플 코드는 "/ signalr" SignalR 서비스에 연결 하는 URL입니다. 다른 기본 URL을 지정 하는 방법에 대 한 정보를 참조 하세요 [ASP.NET SignalR 허브 API 가이드-서버-/signalr URL](../guide-to-the-api/hubs-api-guide-server.md#signalrurl)합니다.
 

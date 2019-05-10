@@ -9,12 +9,12 @@ ms.assetid: 248f5fe7-39ba-40ea-ab1e-71a69b0bd649
 ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/extensibility/implementing-a-custom-mysql-aspnet-identity-storage-provider
 msc.type: authoredcontent
-ms.openlocfilehash: 224fa56a455affcbbdf76eceee5422850415037e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 227a48d76f099f948d89f38219e25ced026d7dcd
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59420772"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118111"
 ---
 # <a name="implementing-a-custom-mysql-aspnet-identity-storage-provider"></a>사용자 지정 MySQL ASP.NET Identity 스토리지 공급자 구현
 
@@ -31,7 +31,6 @@ ms.locfileid: "59420772"
 > - ASP.NET Id 저장소 구현을 기본 MVC 응용 프로그램 프로젝트에서 사용자 지정 구현으로 대체 하는 방법을 보여 줍니다.
 > 
 > 이 자습서가 원래 Raquel Soares De Almeida 및 Rick Anderson으로 작성 됩니다 ( [ @RickAndMSFT ](https://twitter.com/#!/RickAndMSFT) ). 샘플 프로젝트는 Suhas Joshi에서 Identity 2.0에 대 한 업데이트 했습니다. 항목은 Tom FitzMacken에서 Identity 2.0에 대 한 업데이트 했습니다.
-
 
 ## <a name="download-completed-project"></a>다운로드가 완료 된 프로젝트
 

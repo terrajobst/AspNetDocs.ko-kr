@@ -8,12 +8,12 @@ ms.date: 02/20/2009
 ms.assetid: 829f589f-e201-4f6e-9ae6-08ae84322065
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager/iteration-4-make-the-application-loosely-coupled-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 8caa88d928517e1c71210cbe55e3961d4baf461a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ce8e3c4ff8a59be9f2f572813db599604216119d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381278"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65117800"
 ---
 # <a name="iteration-4--make-the-application-loosely-coupled-c"></a>반복 #4 – 응용 프로그램을 느슨하게 결합 (C#) 확인
 
@@ -22,7 +22,6 @@ by [Microsoft](https://github.com/microsoft)
 [코드 다운로드](iteration-4-make-the-application-loosely-coupled-cs/_static/contactmanager_4_cs1.zip)
 
 > 이 네 번째 반복에서는 활용 쉽게 유지 관리 하 고 연락처 관리자 응용 프로그램을 수정 하려면 몇 가지 소프트웨어 디자인 패턴입니다. 예를 들어, 리포지토리 패턴 및 종속성 주입 패턴을 사용 하 여 응용 프로그램을 리팩터링 했습니다.
-
 
 ## <a name="building-a-contact-management-aspnet-mvc-application-c"></a>연락처 관리 ASP.NET MVC 응용 프로그램을 작성 (C#)
 
@@ -54,7 +53,6 @@ by [Microsoft](https://github.com/microsoft)
 > 
 > (SRP) 클래스는 둘 이상의 변경할 이유가 없습니다. 대규모 단일 책임 원칙을 위반 하는 컨트롤러, 유효성 검사 및 데이터베이스 논리를 혼합 합니다.
 
-
 응용 프로그램을 수정 해야 할 수 있는 방법은 여러 가지가 있습니다. 응용 프로그램에 새 기능을 추가 해야 하 고, 응용 프로그램에서 버그를 수정 해야 할 수 있습니다 또는 응용 프로그램의 기능 구현 되는 방식을 수정 해야 할 수 있습니다. 응용 프로그램은 정적 거의 없습니다. 경향이 증가 하 고 시간이 지남에 따라 변경 합니다.
 
 예를 들어, 데이터 액세스 계층을 구현 하는 방법을 변경 하려는 한다고 가정 합니다. 오른쪽 이제 연락처 관리자 응용 프로그램 Microsoft Entity Framework를 사용 데이터베이스에 액세스할 수 있습니다. 그러나 ADO.NET Data Services 또는 NHibernate 같은 새로운 또는 다른 데이터 액세스 기술으로 마이그레이션할 수도 있습니다. 그러나 데이터 액세스 코드를 유효성 검사 및 컨트롤러 코드에서 격리 없는 이므로 데이터 액세스 직접 관련이 없는 다른 코드를 수정 하지 않고 응용 프로그램에서 데이터 액세스 코드를 수정할 수 없습니다.
@@ -66,7 +64,6 @@ by [Microsoft](https://github.com/microsoft)
 > [!NOTE] 
 > 
 > 리팩터링 하는 것은 기존 기능이 손실 되지 않습니다 하는 방식으로 응용 프로그램을 다시 작성 하는 프로세스입니다.
-
 
 ## <a name="using-the-repository-software-design-pattern"></a>리포지토리 소프트웨어 디자인 패턴을 사용 하 여
 
@@ -105,7 +102,6 @@ EntityContactManagerRepository 클래스 IContactManagerRepository 인터페이�
 > 
 > 메뉴 옵션을 리팩터링, 인터페이스 추출를 선택 하 여 Visual Studio 내에서 구체적 클래스에서 인터페이스를 신속 하 게 만들 수 있습니다. 예를 들어 EntityContactManagerRepository 클래스를 먼저 만든 하 수를 사용 하 여 인터페이스 추출 IContactManagerRepository 인터페이스를 자동으로 생성 합니다.
 
-
 ## <a name="using-the-dependency-injection-software-design-pattern"></a>종속성 주입 소프트웨어 디자인 패턴을 사용 하 여
 
 데이터 액세스 코드를 별도 리포지토리 클래스를 마이그레이션에서는이 클래스를 사용 하 여 연락처 컨트롤러를 수정 해야 합니다. 에서는 컨트롤러에서 리포지토리 클래스를 사용 하는 종속성 주입을 호출 하는 소프트웨어 디자인 패턴의 이점은 걸립니다.
@@ -127,7 +123,6 @@ EntityContactManagerRepository 클래스 IContactManagerRepository 인터페이�
 > [!NOTE] 
 > 
 > 완전히 IContactManagerRepository 인터페이스의 특정 구현에서 연락처 컨트롤러 클래스를 분리 하려는 경우 다음 있습니다 활용 StructureMap 등 Microsoft 종속성 주입을 지 원하는 프레임 워크 Entity Framework (MEF)입니다. 종속성 주입 프레임 워크를 활용 하 여 코드에서 구체적 클래스를 참조할 필요가 없습니다.
-
 
 ## <a name="creating-a-service-layer"></a>서비스 레이어 만들기
 

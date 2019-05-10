@@ -8,12 +8,12 @@ ms.date: 08/19/2008
 ms.assetid: eb35710d-1d99-44ac-b61f-e50af8cb328a
 msc.legacyurl: /mvc/overview/older-versions-1/unit-testing/creating-unit-tests-for-asp-net-mvc-applications-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 47d42b8017837f15e0d56dfb3565257164c97bbe
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c97d202c702253f2ff79a70c1d6e43b11999ea14
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59421032"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65117257"
 ---
 # <a name="creating-unit-tests-for-aspnet-mvc-applications-vb"></a>ASP.NET MVC 애플리케이션에 대한 단위 테스트 만들기(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59421032"
 [PDF 다운로드](http://download.microsoft.com/download/8/4/8/84843d8d-1575-426c-bcb5-9d0c42e51416/ASPNET_MVC_Tutorial_07_VB.pdf)
 
 > 컨트롤러 작업에 대 한 단위 테스트를 만드는 방법에 알아봅니다. 이 자습서에서는 Stephen walther가 테스트 컨트롤러 작업을 특정 뷰를 반환, 데이터의 특정 집합을 반환 또는 다른 유형의 작업 결과 반환 하는 방법을 보여 줍니다.
-
 
 이 자습서의 목적은 작성 하는 방법의 컨트롤러에 대 한 단위 테스트에서 ASP.NET MVC 응용 프로그램을 보여 주기 위해 하는 것입니다. 세 가지 유형의 단위 테스트를 작성 하는 방법을 설명 합니다. 컨트롤러 작업에 의해 반환 된 보기를 테스트 하는 방법, 컨트롤러 작업에 의해 반환 되는 뷰 데이터를 테스트 하는 방법 및 하나의 컨트롤러 작업이 두 번째 컨트롤러 작업에 리디렉션됩니다 여부를 테스트 하는 방법에 알아봅니다.
 
@@ -58,16 +57,13 @@ ms.locfileid: "59421032"
 
 키보드 조합을 입력 하거나 목록 2에서 단위 테스트를 실행할 수 있습니다 **Ctrl + R, A** 클릭 하 여 합니다 **솔루션의 모든 테스트 실행** 단추 (그림 1 참조). 테스트를 통과 하면 그림 2에서 테스트 결과 창을 표시 됩니다.
 
-
 [![솔루션의 모든 테스트 실행](creating-unit-tests-for-asp-net-mvc-applications-vb/_static/image2.png)](creating-unit-tests-for-asp-net-mvc-applications-vb/_static/image1.png)
 
 **그림 01**: 솔루션의 모든 테스트 실행 ([클릭 하 여 큰 이미지 보기](creating-unit-tests-for-asp-net-mvc-applications-vb/_static/image3.png))
 
-
 [![성공 했습니다.](creating-unit-tests-for-asp-net-mvc-applications-vb/_static/image5.png)](creating-unit-tests-for-asp-net-mvc-applications-vb/_static/image4.png)
 
 **그림 02**: 성공 ([클릭 하 여 큰 이미지 보기](creating-unit-tests-for-asp-net-mvc-applications-vb/_static/image6.png))
-
 
 ## <a name="testing-the-view-data-returned-by-a-controller"></a>컨트롤러에 의해 반환 된 뷰 데이터를 테스트 합니다.
 

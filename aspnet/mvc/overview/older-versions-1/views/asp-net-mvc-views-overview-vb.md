@@ -8,19 +8,18 @@ ms.date: 02/16/2008
 ms.assetid: c28ba88d-3a93-47f5-a306-049bd766714d
 msc.legacyurl: /mvc/overview/older-versions-1/views/asp-net-mvc-views-overview-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 84af745d338e38ece438fa58d51d0929c7b92967
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f02728ed248f29b09d654e509977ed43889cbb83
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59408461"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65117431"
 ---
 # <a name="aspnet-mvc-views-overview-vb"></a>ASP.NET MVC 보기 개요(VB)
 
 [Stephen walther가](https://github.com/StephenWalther)
 
 > ASP.NET MVC 뷰를 무엇이 고 HTML 페이지에서와 어떻게 합니까? 이 자습서에서는 Stephen walther가 보기 소개 하 고 데이터 보기 및 보기 내에서 HTML 도우미 활용을 걸릴 수 있습니다 하는 방법을 보여 줍니다.
-
 
 이 자습서의 목적은 ASP.NET MVC 뷰, 데이터 보기 및 HTML 도우미에 대 한 간략 한 소개를 제공 하는 것입니다. 이 자습서를 마치면 새 보기 만들기, 보기를 컨트롤러에서 데이터를 전달 및 HTML 도우미를 사용 하 여 보기에 콘텐츠를 생성 하는 방법을 알아야 합니다.
 
@@ -68,7 +67,6 @@ View()
 > 
 > ASP.NET MVC 응용 프로그램에 대 한 단위 테스트를 만들 계획인 경우 다음 것 뷰 이름에 대 한 명시적 이어야 하는 것이 좋습니다. 이런 방식으로 필요한 뷰 컨트롤러 작업에 의해 반환 된 확인 하기 위한 단위 테스트를 만들 수 있습니다.
 
-
 ## <a name="adding-content-to-a-view"></a>보기에 콘텐츠 추가
 
 뷰는 (X) 스크립트를 포함할 수 있는 HTML 문서 표준. 스크립트를 사용 하 여 동적 콘텐츠 뷰를 추가 합니다.
@@ -103,11 +101,9 @@ Response.write ()를 자주 호출 되므로 Microsoft 제공 바로 가기를 �
 
 [!code-aspx[Main](asp-net-mvc-views-overview-vb/samples/sample4.aspx)]
 
-
 [![새 프로젝트 대화 상자](asp-net-mvc-views-overview-vb/_static/image1.jpg)](asp-net-mvc-views-overview-vb/_static/image1.png)
 
 **그림 01**: 표준 로그인 폼 ([클릭 하 여 큰 이미지 보기](asp-net-mvc-views-overview-vb/_static/image2.png))
-
 
 HTML 도우미 메서드의 모든 뷰의 Html 속성 이라고 합니다. 예를 들어 Html.TextBox() 메서드를 호출 하 여 텍스트를 렌더링 합니다.
 

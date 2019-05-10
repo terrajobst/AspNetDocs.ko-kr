@@ -8,12 +8,12 @@ ms.date: 03/30/2015
 ms.assetid: 9f05ccb1-2004-4661-ad8b-c370e6c09c8e
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/unstructured-blob-storage
 msc.type: authoredcontent
-ms.openlocfilehash: efe432f86b1d65b563efa056c2cb3bc5f2c6d83b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8148891f68ac8417400859540516e44be007dab7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59401311"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118318"
 ---
 # <a name="unstructured-blob-storage-building-real-world-cloud-apps-with-azure"></a>구조화 되지 않은 Blob 저장소 (Azure 사용 하 여 빌드 실제 클라우드 앱)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59401311"
 [다운로드 해결 프로젝트](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자책 다운로드](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
 > 합니다 **실제 세계 클라우드 앱 빌드 Azure** 전자책 Scott Guthrie를 개발한 프레젠테이션을 기반으로 합니다. 13 패턴 설명 하 고 도움이 될 수 있는 사례 성공적인 클라우드를 위한 웹 앱을 개발할 수 있습니다. 전자책에 대 한 정보를 참조 하세요 [첫 번째 장에서](introduction.md)합니다.
-
 
 이전 장에서 파티션 구성표를 살펴보고 고 Fix It 응용 프로그램을 Azure Storage Blob service 및 Azure SQL Database에서 다른 작업 데이터에 이미지를 저장 하는 방법을 설명 합니다. 이 장에서 자세히 Blob service로 이동 하 고 Fix It 프로젝트 코드에서 구현 하는 방법을 보여 줍니다.
 

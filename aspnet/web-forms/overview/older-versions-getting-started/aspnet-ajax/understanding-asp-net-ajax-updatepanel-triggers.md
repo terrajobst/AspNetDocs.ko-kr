@@ -8,12 +8,12 @@ ms.date: 03/12/2008
 ms.assetid: faab8503-2984-48a9-8a40-7728461abc50
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/aspnet-ajax/understanding-asp-net-ajax-updatepanel-triggers
 msc.type: authoredcontent
-ms.openlocfilehash: e3821eee8c7bf2c2f9b45ea75ade2bd5b3b8ef19
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c61d10c28ba3975cb6fbadc6eda1f7a3c9406dfc
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59406264"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65114603"
 ---
 # <a name="understanding-aspnet-ajax-updatepanel-triggers"></a>ASP.NET AJAX UpdatePanel 트리거 이해
 
@@ -22,7 +22,6 @@ ms.locfileid: "59406264"
 [PDF 다운로드](http://download.microsoft.com/download/C/1/9/C19A3451-1D14-477C-B703-54EF22E197EE/AJAX_tutorial02_Triggers_cs.pdf)
 
 > Visual Studio에서 태그 편집기를 사용할 때 표시 될 수도 있습니다 (IntelliSense)에서 UpdatePanel 컨트롤의 두 자식 요소는 합니다. 그 중 하나는 컨트롤의 페이지 (또는 사용자 정의 컨트롤을 하나를 사용 하는 경우)을 지정 하는 트리거 요소에는 요소가 상주 하 고 UpdatePanel 컨트롤의 부분 렌더링 트리거됩니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -76,11 +75,9 @@ Visual Studio에서 태그 편집기를 사용할 때 표시 될 수도 있습�
 
 1. F5 키를 눌러 프로젝트를 빌드하고 실행 합니다. 모두 패널 업데이트를 클릭 하면 두 레이블 텍스트입니다;이 변경 그러나이 패널 업데이트를 클릭 하면 Label1만 업데이트 합니다.
 
-
 [![](understanding-asp-net-ajax-updatepanel-triggers/_static/image2.png)](understanding-asp-net-ajax-updatepanel-triggers/_static/image1.png)
 
 ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-updatepanel-triggers/_static/image3.png))
-
 
 ## <a name="under-the-hood"></a>*내부 살펴보기*
 
@@ -90,11 +87,9 @@ Visual Studio에서 태그 편집기를 사용할 때 표시 될 수도 있습�
 
 이 패널 업데이트 단추를 클릭 상위 UpdatePanel 현재의 서버 시간으로 업데이트 됩니다. FireBug에서 요청을 검사할 수 있도록 콘솔 탭을 선택 합니다. POST 요청 매개 변수를 먼저 검토:
 
-
 [![](understanding-asp-net-ajax-updatepanel-triggers/_static/image5.png)](understanding-asp-net-ajax-updatepanel-triggers/_static/image4.png)
 
 ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-updatepanel-triggers/_static/image6.png))
-
 
 UpdatePanel에 표시 된 서버 쪽 AJAX 코드 ScriptManager1 매개 변수를 통해 컨트롤 트리 정확 하 게 발생 하는 참고: `Button1` 의 `UpdatePanel1` 제어 합니다. 이제 모두 패널 업데이트 단추를 클릭 합니다. 그런 다음 응답을 검사할 것을 볼 파이프로 구분 된 일련의 문자열을 설정 하는 변수 상위 UpdatePanel 볼 특히 `UpdatePanel1`를 브라우저로 전송 되는 해당 HTML 전체에 있습니다. UpdatePanel의 원래 HTML 콘텐츠를 통해 새 콘텐츠로 대체 하는 AJAX 클라이언트 스크립트 라이브러리는 `.innerHTML` 속성 이므로 서버는 HTML로 서버에서 변경 된 내용을 보냅니다.
 
@@ -104,11 +99,9 @@ UpdatePanel에 표시 된 서버 쪽 AJAX 코드 ScriptManager1 매개 변수를
 
 예를 들어 CheckBox 컨트롤을; 것이 좋습니다. .NET Reflector의 클래스 디스어셈블리를 검사 합니다. 이렇게 하려면 System.Web 어셈블리 열려 있는지 확인 하 고 이동 합니다 `System.Web.UI.WebControls.CheckBox` 클래스를 열고는 `RenderInputTag` 메서드. 확인 하는 조건부 찾습니다는 `AutoPostBack` 속성:
 
-
 [![](understanding-asp-net-ajax-updatepanel-triggers/_static/image8.png)](understanding-asp-net-ajax-updatepanel-triggers/_static/image7.png)
 
 ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-updatepanel-triggers/_static/image9.png))
-
 
 자동 포스트백에서 사용 되는 경우는 `CheckBox` 결과 (true AutoPostBack 속성)를 통해 제어할 `<input>` ASP.NET 이벤트 처리에서 스크립트를 사용 하 여는 태그를 렌더링 하므로 해당 `onclick` 특성입니다. 그런 다음 폼의 제출, 인터 셉 션의 주요 변경 내용 수 있습니다 정확 하지 않은 문자열 대체를 활용 하 여 발생할 수 있는 모든 가능성을 방지 하는 데 nonintrusively, 페이지에 주입 하려는 ASP.NET AJAX를 수 있습니다. 또한이 통해 *모든* 사용자 지정 ASP.NET 컨트롤을 UpdatePanel 컨테이너 내에서 해당 사용을 지원 하려면 추가 코드 없이 ASP.NET AJAX의 기능을 활용 합니다.
 
@@ -128,11 +121,9 @@ UpdatePanel에 표시 된 서버 쪽 AJAX 코드 ScriptManager1 매개 변수를
 
 이 페이지의 기본 개념 드롭다운 목록 두 번째 레이블을 표시 하려면 세 가지 색 중 하나를 선택 하, 확인란 굵게, 인지 및 레이블의 시간 뿐만 아니라 날짜를 표시 하는지 여부를 확인 하는 경우 확인란 AJAX 업데이트 발생 하지 않아야 하지만 UpdatePanel 내에 상주 하지는 경우에 드롭다운 목록 해야 합니다.
 
-
 [![](understanding-asp-net-ajax-updatepanel-triggers/_static/image11.png)](understanding-asp-net-ajax-updatepanel-triggers/_static/image10.png)
 
 ([클릭 하 여 큰 이미지 보기](understanding-asp-net-ajax-updatepanel-triggers/_static/image12.png))
-
 
 위의 스크린샷에서 명백한 경우 가장 최근의 단추를 클릭 한 오른쪽 단추를 아래쪽에 위쪽 시간에 관계 없이 업데이트는 업데이트가 패널 했습니다. 또한이 날짜를 날짜 아래쪽 레이블에 표시 되는 번의 클릭 만으로 간에 전환 됩니다. 마지막으로 관심은 맨 아래 레이블의 색: 컨트롤 상태는 중요 하는 방법을 보여 줍니다, 레이블의 텍스트 보다 더 최근에 업데이트 된 및 사용자 기대 AJAX 포스트백을 통해 유지 되도록 합니다. *그러나*, 시간 업데이트 되지 않았습니다. 시간을의 지 속성을 통해 자동으로 다시 채워야 합니다 \_ \_컨트롤이 서버에 다시 렌더링 되는 경우 ASP.NET 런타임에 의해 해석 되 고 페이지의 VIEWSTATE 필드입니다. ASP.NET AJAX 서버 코드를 인식 하지 못하는 컨트롤 메서드는 상태 변경 뷰 상태에서 단순히 다시 채웁니다 하 고 적절 한 이벤트를 실행 합니다.
 

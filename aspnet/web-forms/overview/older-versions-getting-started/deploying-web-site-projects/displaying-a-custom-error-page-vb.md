@@ -8,12 +8,12 @@ ms.date: 06/09/2009
 ms.assetid: 14873c5d-81a9-455b-bd71-30fb555583e7
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/displaying-a-custom-error-page-vb
 msc.type: authoredcontent
-ms.openlocfilehash: dc3ff989b6861fe62cce0199a62adef6107206d5
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 961959300f5481a297ed8a9a17131c076d1dfd69
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384190"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65116700"
 ---
 # <a name="displaying-a-custom-error-page-vb"></a>사용자 지정 오류 페이지 표시(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59384190"
 [코드를 다운로드](http://download.microsoft.com/download/1/0/C/10CC829F-A808-4302-97D3-59989B8F9C01/ASPNET_Hosting_Tutorial_11_VB.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/5/C/5/5C57DB8C-5DEA-4B3A-92CA-4405544D313B/aspnet_tutorial11_CustomErrors_vb.pdf)
 
 > 표시 되는 내용에 사용자는 ASP.NET 웹 응용 프로그램에서 런타임 오류가 발생 하는 경우 답변 하는 방법에 따라 달라 집니다 웹 사이트 &lt;customErrors&gt; 구성 합니다. 기본적으로 사용자 proclaiming 런타임 오류가 발생 하는 힘든 노란색 화면을 표시 됩니다. 이 자습서에는 사이트의 모양과 느낌을 일치 하는 사용자 지정 오류 페이지를 표시는 심미안-것과 달리 이러한 설정을 사용자 지정 하는 방법을 보여 줍니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -47,7 +46,6 @@ ms.locfileid: "59384190"
 > [!NOTE]
 > 데모 웹 응용 프로그램에서이 오류를 재현 하는 다운로드할 수 있습니다 방문 하거나 `Genre.aspx?ID=foo` 직접에서 "런타임 오류 생성" 링크를 클릭 또는 `Default.aspx`합니다.
 
-
 에 제공 된 예외 정보를 참조 하십시오 **그림 1**합니다. 예외 메시지를 "변환이 실패 한 문자열에서을 uniqueidentifier로" 페이지의 맨 위에 있는 없는 경우 예외의 유형을 `System.Data.SqlClient.SqlException`에 나열 됩니다. 스택 추적 이기도합니다.
 
 [![](displaying-a-custom-error-page-vb/_static/image2.png)](displaying-a-custom-error-page-vb/_static/image1.png)
@@ -61,7 +59,6 @@ ms.locfileid: "59384190"
 
 > [!NOTE]
 > 중인 DiscountASP.NET 웹 호스트를 사용 하는 경우, 라이브 사이트를 방문할 때 런타임 오류 YSOD 표시 되지 않습니다 볼 수 있습니다. DiscountASP.NET 기본적으로 예외 세부 정보 YSOD 표시 하도록 구성 하는 서버에 때문입니다. 다행 스럽게도 추가 하 여이 기본 동작을 재정의할 수 있습니다는 `<customErrors>` 섹션을 프로그램 `Web.config` 파일입니다. "구성 하는 오류 페이지가 표시 됩니다" 섹션을 검사 합니다 `<customErrors>` 자세히 섹션입니다.
-
 
 [![](displaying-a-custom-error-page-vb/_static/image5.png)](displaying-a-custom-error-page-vb/_static/image4.png)
 
@@ -139,7 +136,6 @@ ASP.NET 페이지에서 예외가 발생 했으며 처리 되지 않은, 경우 
 > [!NOTE]
 > 체크 아웃 [404 오류 페이지를 하나 더 시간](http://www.smashingmagazine.com/2009/01/29/404-error-pages-one-more-time/) 효과적인 404 오류 페이지를 만들기에 대 한 지침에 대 한 합니다.
 
-
 [![](displaying-a-custom-error-page-vb/_static/image19.png)](displaying-a-custom-error-page-vb/_static/image18.png)**그림 7**: 사용자 지정 404 오류 페이지 보다 구체적인된 메시지가 표시 됩니다. `Oops.aspx`  
  ([클릭 하 여 큰 이미지 보기](displaying-a-custom-error-page-vb/_static/image20.png)) 
 
@@ -147,7 +143,6 @@ ASP.NET 페이지에서 예외가 발생 했으며 처리 되지 않은, 경우 
 
 > [!NOTE]
 > 사용자 지정 오류 페이지는 ASP.NET 엔진에서 처리 하는 리소스에는 요청이 만들어질 때에 표시 됩니다. 설명한 대로 합니다 [IIS 간의 차이점 Core 및 ASP.NET Development Server](core-differences-between-iis-and-the-asp-net-development-server-vb.md) 자습서, 웹 서버 수 특정 요청을 처리 자체입니다. 기본적으로 IIS 웹 ASP.NET 엔진을 호출 하지 않고 HTML 파일 및 이미지와 같은 정적 콘텐츠에 대 한 서버 프로세스 요청 합니다. 따라서 존재 하지 않는 이미지 파일을 요청 하는 경우 이러한 드리겠습니다 ASP 보다는 IIS의 기본 404 오류 메시지입니다. NET의 오류 페이지를 구성 합니다.
-
 
 ## <a name="summary"></a>요약
 

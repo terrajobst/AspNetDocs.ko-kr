@@ -8,12 +8,12 @@ ms.date: 07/27/2010
 ms.assetid: a19ff2ce-3f7e-4358-9a51-a1403da9c63e
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/enable-automated-unit-testing
 msc.type: authoredcontent
-ms.openlocfilehash: b0c9cd7ab36a8414e0d7d50a68b05bb09a5f24f1
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 09a7aa186605a6cce48ee94028425ded957c00d3
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59387908"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65117349"
 ---
 # <a name="enable-automated-unit-testing"></a>자동화된 유닛 테스트 사용
 
@@ -26,7 +26,6 @@ by [Microsoft](https://github.com/microsoft)
 > 12 단계는 NerdDinner 기능을 확인 하 고 안심 하 고 변경 하 고 나중에 응용 프로그램의 향상 된 기능을 제공 합니다.는 자동화 된 단위 테스트 모음을 개발 하는 방법을 보여 줍니다.
 > 
 > ASP.NET MVC 3을 사용 하는 경우 수행 하는 것이 좋습니다 합니다 [가져오기 시작 MVC 3과](../../older-versions/getting-started-with-aspnet-mvc3/cs/intro-to-aspnet-mvc-3.md) 하거나 [MVC Music Store](../../older-versions/mvc-music-store/mvc-music-store-part-1.md) 자습서입니다.
-
 
 ## <a name="nerddinner-step-12-unit-testing"></a>NerdDinner Step 12: 단위 테스트
 
@@ -264,7 +263,6 @@ FakeDinnerRepository 클래스 IDinnerRepository 인터페이스를 구현 하�
 다음은 양식 게시 UpdateModel() 도우미 메서드를 사용 하 여 값을 제공할 수 있는 방법을 보여 주는 두 가지 테스트입니다. 만들고 FormCollection 개체를 채워이 작업을 수행 하 고 컨트롤러에서 "ValueProvider" 속성에 할당 됩니다.
 
 첫 번째 테스트는 성공적으로 저장 브라우저 리디렉션됩니다 상세 작업을 확인 합니다. 두 번째 테스트는 잘못 된 입력이 게시 되었을 때 작업을 다시 표시 되는 오류 메시지와 함께 다시 편집 보기를 확인 합니다.
-
 
 [!code-csharp[Main](enable-automated-unit-testing/samples/sample17.cs)]
 

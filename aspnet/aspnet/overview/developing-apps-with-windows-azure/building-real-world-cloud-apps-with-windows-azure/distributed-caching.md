@@ -8,12 +8,12 @@ ms.date: 07/20/2015
 ms.assetid: 406518e9-3817-49ce-8b90-e82bc461e2c0
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/distributed-caching
 msc.type: authoredcontent
-ms.openlocfilehash: 61837d0087a297b6a677eb3503ce3e6c13d5e0ac
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: de4be20ed81ae356e0aa4e90e2ab61a6e25212a0
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59397476"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118816"
 ---
 # <a name="distributed-caching-building-real-world-cloud-apps-with-azure"></a>분산 캐싱 (실제 클라우드 앱 빌드 Azure 사용 하 여)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59397476"
 [다운로드 해결 프로젝트](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자책 다운로드](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
 > 합니다 **실제 세계 클라우드 앱 빌드 Azure** 전자책 Scott Guthrie를 개발한 프레젠테이션을 기반으로 합니다. 13 패턴 설명 하 고 도움이 될 수 있는 사례 성공적인 클라우드를 위한 웹 앱을 개발할 수 있습니다. 전자책에 대 한 정보를 참조 하세요 [첫 번째 장에서](introduction.md)합니다.
-
 
 이전 장에서 일시적인 오류 처리를 살펴보고 하 고 회로 차단기 전략으로 캐시를 언급 합니다. 이 장에서 캐싱, 하는 방법에 대 한 자세한 배경 정보 사용에 대 한 일반적인 패턴 사용 하는 경우를 포함 하 여 Azure에서 구현 하는 방법입니다.
 

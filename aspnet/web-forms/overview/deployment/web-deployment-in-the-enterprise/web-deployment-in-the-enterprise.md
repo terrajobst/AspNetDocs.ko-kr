@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: b8283698-7b82-42a8-8d83-3aeb18ca7fcc
 msc.legacyurl: /web-forms/overview/deployment/web-deployment-in-the-enterprise/web-deployment-in-the-enterprise
 msc.type: authoredcontent
-ms.openlocfilehash: 1f2dc0fea9eeca64b9389881470353c5cca473e0
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: bc7bb676a71af4ec3451aa3adf3c03ce3b5200d5
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396319"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65114761"
 ---
 # <a name="web-deployment-in-the-enterprise"></a>기업에서 웹 배포
 
@@ -24,7 +24,6 @@ ms.locfileid: "59396319"
 > 이 자습서에는 많은 개발, 테스트, 스테이징 및 프로덕션 환경에 엔터프라이즈급 웹 응용 프로그램 배포를 관리할 때 발생 하는 과제를 충족 하는 방법을 설명 합니다. 자습서에는 다양 한 일반 작업 및 절차를 안내 하는 개념 및 작업 기반 콘텐츠 혼합 함께 참조 솔루션을 포함 합니다.
 > 
 > 이 자습서의 번역을 이탈리아어를 방문 [ http://www.lucamorelli.it ](http://www.lucamorelli.it)합니다.
-
 
 ## <a name="enterprise-deployment-challenges"></a>엔터프라이즈 배포 과제
 

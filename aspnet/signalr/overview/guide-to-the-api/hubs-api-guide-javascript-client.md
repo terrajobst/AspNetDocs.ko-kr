@@ -8,15 +8,14 @@ ms.date: 01/15/2019
 ms.assetid: a9fd4dc0-1b96-4443-82ca-932a5b4a8ea4
 msc.legacyurl: /signalr/overview/guide-to-the-api/hubs-api-guide-javascript-client
 msc.type: authoredcontent
-ms.openlocfilehash: b4c6d850062e1b65eacd97ffc4f34c80fedea503
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8befe133c3627dac1f7d011959c68e2054d345da
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59404314"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65119649"
 ---
 # <a name="aspnet-signalr-hubs-api-guide---javascript-client"></a>ASP.NET SignalR 허브 API 가이드-JavaScript 클라이언트
-
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
@@ -124,7 +123,6 @@ JavaScript 클라이언트에 jQuery 및 SignalR core JavaScript 파일에 대 �
 > [!NOTE]
 > Windows 8 (Windows 스토어) JavaScript 클라이언트에 대 한 동적으로 생성 된 것 대신 실제 프록시 파일을 사용 합니다. 자세한 내용은 [SignalR에 대 한 실제 파일을 만드는 방법에는 프록시 생성](#manualproxy) 이 항목의에서 뒷부분에 있습니다.
 
-
 ASP.NET MVC 4, 5 Razor 뷰를 사용 하 여 물결표 프록시 파일 참조의 응용 프로그램 루트를 참조 합니다.
 
 [!code-html[Main](hubs-api-guide-javascript-client/samples/sample5.html)]
@@ -193,7 +191,6 @@ ASP.NET Web Forms 응용 프로그램에서 사용 하 여 `ResolveClientUrl` �
 > [!NOTE]
 > 호출 하기 전에 이벤트 처리기를 등록 하는 일반적으로 `start` 연결을 설정 하는 방법입니다. 연결을 설정한 후 몇 가지 이벤트 처리기를 등록 하려면를 수행할 수 있지만 호출 하기 전에 이벤트 처리기 중 하나 이상 등록 해야 하는 경우는 `start` 메서드. 그 이유 중 하나는 응용 프로그램에서 하는 많은 허브 있을 수 있지만 트리거 하려고 하는 `OnConnected` 그 중 하나를 사용 하 여만 하려는 경우 모든 허브에 이벤트입니다. 연결이 설정 되 면 클라이언트에 대 한 메서드는 허브 프록시는 어떤 지시를 트리거하는 SignalR을 `OnConnected` 이벤트입니다. 호출 하기 전에 이벤트 처리기를 등록 하지 않으면 합니다 `start` 허브에 있지만 허브의 메서드를 호출할 수 있는 메서드를 `OnConnected` 메서드를 호출할 수 없습니다 하 고 서버에서 클라이언트 메서드가 호출 됩니다.
 
-
 <a id="connequivalence"></a>
 
 ### <a name="connectionhub-is-the-same-object-that-hubconnection-creates"></a>$. connection.hub 동일 해당 $.hubConnection() 만듭니다 개체
@@ -251,7 +248,6 @@ JSONP (이전 브라우저에서 도메인 간 요청을 지원)를 클라이언
 > - Internet Explorer 9를 사용 하 여 도메인 간 연결을 사용 하는 방법에 대 한 내용은 [이 StackOverflow 스레드](http://stackoverflow.com/questions/13573397/siganlr-ie9-cross-domain-request-dont-work)합니다.
 > - Chrome을 사용 하 여 도메인 간 연결을 사용 하는 방법에 대 한 내용은 [이 StackOverflow 스레드](http://stackoverflow.com/questions/15467373/signalr-1-0-1-cross-domain-request-cors-with-chrome)합니다.
 > - 기본값을 사용 하 여 샘플 코드는 "/ signalr" SignalR 서비스에 연결 하는 URL입니다. 다른 기본 URL을 지정 하는 방법에 대 한 정보를 참조 하세요 [ASP.NET SignalR 허브 API 가이드-서버-/signalr URL](hubs-api-guide-server.md#signalrurl)합니다.
-
 
 <a id="configureconnection"></a>
 

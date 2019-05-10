@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: accfa16a-ab15-4c26-9ad4-babdc2a77d2e
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/introduction
 msc.type: authoredcontent
-ms.openlocfilehash: bf9cf1f5be22a5b97ec964277c11ae21066676f0
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 7daf08a88c614288170d676e665403cda244218a
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59412413"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118662"
 ---
 # <a name="building-real-world-cloud-apps-with-azure"></a>Azure 사용 하 여 실제 클라우드 앱 빌드
 
@@ -24,7 +24,6 @@ ms.locfileid: "59412413"
 > 이 전자책에서는 실제 클라우드 솔루션을 빌드하는 패턴 기반 접근 방식을 설명 합니다. 패턴은 아키텍처 및 코딩 방식 뿐만 아니라 개발 프로세스에 적용 합니다.
 > 
 > 콘텐츠는 고 제공한 프레젠테이션을 Scott Guthrie를 개발한 여 문의 사항이 있으면 노르웨이 개발자 회의 NDC ())의 2013 년 6 월을 기반으로 ([1 부](http://vimeo.com/68215538)를 [2 부](http://vimeo.com/68215602)), 및에서 Microsoft Tech Ed 오스트레일리아 2013 년 9 월 ([1 부](https://channel9.msdn.com/Events/TechEd/Australia/2013/AZR324)하십시오 [2 부](https://channel9.msdn.com/Events/TechEd/Australia/2013/AZR325)). [다른 많은](more-patterns-and-guidance.md#acknowledgments) 업데이트 하 고 양식으로 비디오에서 전환 하는 동안 콘텐츠를 쌓아 왔습니다.
-
 
 ## <a name="intended-audience"></a>대상
 

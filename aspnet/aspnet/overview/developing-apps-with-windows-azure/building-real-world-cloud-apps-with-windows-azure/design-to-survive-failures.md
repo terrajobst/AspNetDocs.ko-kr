@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: 364ce84e-5af8-4e08-afc9-75a512b01f84
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/design-to-survive-failures
 msc.type: authoredcontent
-ms.openlocfilehash: fbe618acfc70711933996f97657a4326d389b3dd
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 54bfa40a7d853e29c42512ba375271587fb6f565
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59411243"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118839"
 ---
 # <a name="design-to-survive-failures-building-real-world-cloud-apps-with-azure"></a>(실제 클라우드 앱 빌드 azure) 장애를 견딜 수 디자인
 
@@ -22,7 +22,6 @@ ms.locfileid: "59411243"
 [다운로드 해결 프로젝트](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자책 다운로드](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
 > 합니다 **실제 세계 클라우드 앱 빌드 Azure** 전자책 Scott Guthrie를 개발한 프레젠테이션을 기반으로 합니다. 13 패턴 설명 하 고 도움이 될 수 있는 사례 성공적인 클라우드를 위한 웹 앱을 개발할 수 있습니다. 전자책에 대 한 정보를 참조 하세요 [첫 번째 장에서](introduction.md)합니다.
-
 
 응용 프로그램을 사용할 수 있지만 특히 있는 많은 사람이 사용할 클라우드에서 실행 될 모든 유형의 작성 하는 경우 고려해 야 하는 중 하나는 정상적으로 오류를 처리 하 고 가치를 계속 수 있도록 앱을 디자인 하는 방법 만큼 가능 합니다. 충분 한 시간을 지정 합니다 작업 하려는 모든 환경이 나 모든 소프트웨어 시스템에서 문제가 발생 합니다. 어떻게 화가 고객에 게 받 및 시간을 결정 앱에서 이러한 상황을 처리 하는 방법을 분석 하 고 문제를 해결 해야 합니다.
 

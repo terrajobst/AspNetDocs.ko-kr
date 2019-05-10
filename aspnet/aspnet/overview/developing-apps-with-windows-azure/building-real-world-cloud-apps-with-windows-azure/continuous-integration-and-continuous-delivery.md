@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: eaece9f5-f80c-428b-b771-5db66d275b7d
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/continuous-integration-and-continuous-delivery
 msc.type: authoredcontent
-ms.openlocfilehash: 0fb0a331a2a6e2af5c5097db8b57942525d24ffc
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 25767303e3a8a3bfd9fc6c7c10cda32d73e9994d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384307"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118859"
 ---
 # <a name="continuous-integration-and-continuous-delivery-building-real-world-cloud-apps-with-azure"></a>연속 통합 및 지속적인 업데이트 (Azure 사용 하 여 빌드 실제 클라우드 앱)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59384307"
 [다운로드 해결 프로젝트](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자책 다운로드](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
 > 합니다 **실제 세계 클라우드 앱 빌드 Azure** 전자책 Scott Guthrie를 개발한 프레젠테이션을 기반으로 합니다. 13 패턴 설명 하 고 도움이 될 수 있는 사례 성공적인 클라우드를 위한 웹 앱을 개발할 수 있습니다. 전자책에 대 한 정보를 참조 하세요 [첫 번째 장에서](introduction.md)합니다.
-
 
 처음 두 개발 프로세스 패턴 된 하는 것이 좋습니다 [모든 자동화](automate-everything.md) 및 [소스 제어](source-control.md), 세 번째 프로세스 패턴을 결합 합니다. CI (지속적인 통합)는 개발자가 소스 리포지토리에 코드에 체크 인하면, 때마다 빌드를 자동으로 트리거됩니다 의미 합니다. 지속적인 업데이트 (CD)은이 한 단계 더: 자동화 된 단위 테스트 및 빌드를 성공한 후 자동으로 응용 프로그램을 배포한 환경 자세한 철저 한 테스트를 수행할 수 있습니다.
 
@@ -50,7 +49,6 @@ Azure DevOps 서비스에서 배포 하려는 응용 프로그램 개발에 도�
 - 자동화 된 부하 테스트를 지원합니다. 부하 테스트 클라우드 앱에 중요 한 있지만 너무 늦게 완료 될 때까지 들어오지 종종 됩니다. 수천 명의 사용자, 병목 지점 찾기 및 처리량을 향상 시킬 수 있도록 하 여 앱의 과도 한 사용 시뮬레이션 부하 테스트-프로덕션 환경에 앱을 출시 전에 합니다.
 - 단체 방 공동 작업, 실시간 통신 및 소규모 agile 팀을 위한 공동 작업을 용이 하 게 지원 합니다.
 - Agile 프로젝트 관리를 지원합니다.
-
 
 연속 통합 및 배달 기능 Azure DevOps 서비스에 대 한 자세한 내용은 참조 하세요. [Azure DevOps 설명서](/azure/devops/index)합니다.
 

@@ -8,19 +8,18 @@ ms.date: 12/03/2010
 ms.assetid: ccdc3f8c-2568-40a7-8f8b-3c23d2e05388
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-3
 msc.type: authoredcontent
-ms.openlocfilehash: 8f3eced3c482291203383c53aa97b97101839cce
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 88debb11a9157dce9ff000b1cb459b876dbceaf3
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59392822"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65116667"
 ---
 # <a name="getting-started-with-entity-framework-40-database-first-and-aspnet-4-web-forms---part-3"></a>먼저 Entity Framework 4.0 Database를 사용 하 여 시작 및 ASP.NET 4 Web Forms-3 부
 
 [Tom Dykstra](https://github.com/tdykstra)
 
 > Contoso University 샘플 웹 응용 프로그램에는 Entity Framework 4.0 및 Visual Studio 2010을 사용 하 여 ASP.NET Web Forms 응용 프로그램을 만드는 방법을 보여 줍니다. 자습서 시리즈에 대 한 정보를 참조 하세요. [시리즈의 첫 번째 자습서](the-entity-framework-and-aspnet-getting-started-part-1.md)
-
 
 ## <a name="filtering-ordering-and-grouping-data"></a>필터링, 정렬 및 데이터를 그룹화 합니다.
 
