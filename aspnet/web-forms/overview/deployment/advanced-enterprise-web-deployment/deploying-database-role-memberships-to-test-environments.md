@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 9b2af539-7ad9-47aa-b66e-873bd9906e79
 msc.legacyurl: /web-forms/overview/deployment/advanced-enterprise-web-deployment/deploying-database-role-memberships-to-test-environments
 msc.type: authoredcontent
-ms.openlocfilehash: fd0914ed62a280fea290b9f1b150fc25c8ed6d40
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: a15f5bf5f659d151e91ef9e53c5ad55bcd8e2b01
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59385334"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130402"
 ---
 # <a name="deploying-database-role-memberships-to-test-environments"></a>테스트 환경에 데이터베이스 역할 멤버 자격 배포
 
@@ -32,7 +32,6 @@ ms.locfileid: "59385334"
 > 이 시나리오에서는 자동으로 데이터베이스 사용자를 만들고 배포 프로세스의 일부로 데이터베이스 역할 멤버 자격을 할당 하는 데 유용한 경우가 있습니다.
 > 
 > 주요 요인은이 작업 해야 함을 조건부 대상 환경에 따라입니다. 스테이징 또는 프로덕션 환경에 배포 하는 경우 작업을 건너 뛰 려 합니다. 개발자에 게 배포 하는 환경 테스트 하거나, 추가 개입 없이 역할 멤버 자격을 배포 하려고 합니다. 이 항목에서는 한 가지 방법은이 문제를 해결 하기 위해 사용할 수 있습니다.
-
 
 이 항목의 Fabrikam, Inc. 라는 가상 회사의 엔터프라이즈 배포 요구 사항 기반 자습서 시리즈의 일부를 형성 합니다. 샘플 솔루션을 사용 하 여이 자습서 시리즈&#x2014;는 [Contact Manager 솔루션](../web-deployment-in-the-enterprise/the-contact-manager-solution.md)&#x2014;현실적인 수준의 복잡성을 Windows Communication ASP.NET MVC 3 응용 프로그램을 포함 하 여 웹 응용 프로그램을 나타내는 Foundation (WCF) 서비스 및 데이터베이스 프로젝트입니다.
 
@@ -79,13 +78,10 @@ ms.locfileid: "59385334"
 
 이상적으로 데이터베이스 프로젝트를 배포할 때 배포 후 스크립트의 일부로 모든 필요한 TRANSACT-SQL 스크립트를 실행할 것 있습니다. 그러나 배포 후 스크립트 솔루션 구성 또는 빌드 속성에 따라 조건부 논리를 실행할 수 없습니다. 대안은 만들어 MSBuild 프로젝트 파일에서 직접 SQL 스크립트를 실행 하는 **대상** sqlcmd.exe 명령을 실행 하는 요소입니다. 대상 데이터베이스에서 스크립트를 실행 하려면이 명령을 사용할 수 있습니다.
 
-
 [!code-console[Main](deploying-database-role-memberships-to-test-environments/samples/sample2.cmd)]
-
 
 > [!NOTE]
 > Sqlcmd 명령줄 옵션에 대 한 자세한 내용은 참조 하세요. [sqlcmd 유틸리티](https://msdn.microsoft.com/library/ms162773.aspx)합니다.
-
 
 이 명령은 MSBuild 대상에 포함 하면 전에 고려해 야 어떤 조건에서 스크립트를 실행 해야 합니다.
 
@@ -100,15 +96,11 @@ ms.locfileid: "59385334"
 
 환경 관련 프로젝트 파일에서 데이터베이스 서버 이름, 대상 데이터베이스 이름 및 역할 멤버 자격을 배포할지 여부를 지정할 수 있도록 하는 부울 속성을 정의 해야 합니다.
 
-
 [!code-xml[Main](deploying-database-role-memberships-to-test-environments/samples/sample3.xml)]
-
 
 유니버설 프로젝트 파일에서 sqlcmd 실행 파일의 위치 및를 실행 하려는 SQL 스크립트의 위치를 제공 해야 합니다. 이러한 속성 대상 환경에 관계 없이 동일 하 게 유지 됩니다. Sqlcmd 명령을 실행 하는 MSBuild 대상을 만드는 해야 합니다.
 
-
 [!code-xml[Main](deploying-database-role-memberships-to-test-environments/samples/sample4.xml)]
-
 
 다른 대상에 유용할 수 있습니다이으로 정적 속성으로 sqlcmd 실행 파일의 위치를 추가 하는 확인 합니다. 반면, SQL 스크립트의 위치 및 sqlcmd 명령의 구문을 대상 속성을 동적으로으로 정의한 되지 않으므로 필요한 대상이 실행 되기 전에 합니다. 이 경우에 **DeployTestDBPermissions** 대상 이러한 조건이 충족 될 경우에 실행 됩니다.
 
@@ -117,9 +109,7 @@ ms.locfileid: "59385334"
 
 마지막으로 반드시 대상을 호출 합니다. 에 *Publish.proj* 파일을 할 수 있는이 대상 기본값에 대 한 종속성 목록에 추가 하 여 **FullPublish** 대상입니다. 되도록 해야 합니다 **DeployTestDBPermissions** 대상 될 때까지 실행 되지 않습니다는 **PublishDbPackages** 대상이 실행 되었는지 합니다.
 
-
 [!code-xml[Main](deploying-database-role-memberships-to-test-environments/samples/sample5.xml)]
-
 
 ## <a name="conclusion"></a>결론
 

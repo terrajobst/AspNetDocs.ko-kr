@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 634ea84b-f904-4afe-b71b-49cccef4d9cc
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-models-and-data-access
 msc.type: authoredcontent
-ms.openlocfilehash: 53ca3bc4e550f488f3ae4c41f02a636e747107cb
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 90635b617930d0a9c126795f4c8790d542e33dc9
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384892"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129686"
 ---
 # <a name="aspnet-mvc-4-models-and-data-access"></a>ASP.NET MVC 4 모델 및 데이터 액세스
 
@@ -53,7 +53,6 @@ Code First 접근 방식 사용 하면 프레임 워크와 함께 일반적으�
 > 
 > 전체를 탐색 하려는 경우 **Music Store** 자습서 응용 프로그램에서 찾을 수 있습니다 [MVC 음악 스토어](https://github.com/evilDave/MVC-Music-Store)합니다.
 
-
 <a id="Prerequisites"></a>
 
 <a id="Prerequisites"></a>
@@ -89,7 +88,6 @@ Code First 접근 방식 사용 하면 프레임 워크와 함께 일반적으�
 
 > [!NOTE]
 > 각 실습 동반 되는 **최종** 연습을 완료 한 후 가져와야 결과 솔루션이 포함 된 폴더입니다. 이 연습을 진행 하는 추가 도움이 필요한 경우이 솔루션 가이드로 사용할 수 있습니다.
-
 
 이 랩을 완료 하는 시간을 예상 합니다. **35 분**합니다.
 
@@ -186,7 +184,6 @@ Code First 접근 방식 사용 하면 프레임 워크와 함께 일반적으�
     > [!NOTE]
     > T4 템플릿 (.tt)는 엔터티 클래스를 생성 하는 코드를 실행 하 고 동일한 이름의 기존 클래스를 덮어쓰게 됩니다. 이 예제에서는 클래스 &quot;앨범&quot;, &quot;장르&quot; 하 고 &quot;Artist&quot; 생성된 된 코드를 사용 하 여 덮어썼습니다.
 
-
 <a id="Ex1Task3"></a>
 
 <a id="Task_3_-_Building_the_Application"></a>
@@ -273,7 +270,6 @@ Code First 접근 방식 사용 하면 프레임 워크와 함께 일반적으�
 
 > [!NOTE]
 > 연습 1 완료 하 고 이미 Database First 접근 방식으로 작업을 수행 하는 경우 이제 다른 프로세스를 사용 하 여 동일한 결과를 얻는 방법을 배웁니다. 연습 1 공통 된 된 작업에 읽기 쉽게 표시 되어 있습니다. 실습 1 완료 되지 않은 하지만 경우 Code First 접근 방식에 알아보려면이 연습에서 시작할 수 있으며 항목의 전체 검사를 가져옵니다.
-
 
 <a id="Ex2Task1"></a>
 
@@ -383,7 +379,6 @@ Code First 접근 방식 사용 하면 프레임 워크와 함께 일반적으�
 > 연습 1 공통 된이 작업이입니다.
 > 
 > 연습 1을 완료 하는 경우 이러한 단계는 두 방법 모두 동일 하 게 기록 됩니다 (먼저 데이터베이스 Code first 또는). 데이터 모델을 사용 하면 연결 된 어떻게 서로 이지만 데이터 엔터티에 액세스 컨트롤러에서 투명 한 아직 있습니다.
-
 
 1. 열기 **Controllers\StoreController.cs** 의 인스턴스를 보관할 클래스에 다음 필드를 추가 합니다 **MusicStoreEntities** 이라는 클래스가 **storeDB**:
 

@@ -8,12 +8,12 @@ ms.date: 10/30/2006
 ms.assetid: 8dac22a7-91de-4e3b-888f-a4c438b03851
 msc.legacyurl: /web-forms/overview/data-access/editing-and-deleting-data-through-the-datalist/performing-batch-updates-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 7292736a9c12d5013fb4aeef15085bb8d7d74884
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 731272c5f240c97c3ecf845827216857ddc94802
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59405731"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132153"
 ---
 # <a name="performing-batch-updates-vb"></a>일괄 처리 업데이트 수행(VB)
 
@@ -23,16 +23,13 @@ ms.locfileid: "59405731"
 
 > 완벽 하 게 편집할 만드는 방법 알아보기 DataList에 있는 모든 해당 항목의 편집 모드 및 페이지의 "모두 업데이트" 단추를 클릭 하 여 해당 값을 저장할 수 있습니다.
 
-
 ## <a name="introduction"></a>소개
 
 에 [이전 자습서](an-overview-of-editing-and-deleting-data-in-the-datalist-vb.md) 는 항목 수준 DataList를 만드는 방법을 살펴보았습니다. 표준 편집 가능한 GridView DataList에서 각 항목에 포함 된 같은 편집 단추를 클릭 하면 항목 편집할 수 없게 합니다. 이 항목 수준만 가끔 업데이트 되는 데이터에 적합 합니다 편집 하는 동안 많은 레코드를 편집 하려면 사용자 특정 사용 사례 시나리오에 필요 합니다. 사용자 수십 개의 레코드를 편집 해야 하 고, 편집을 클릭 하 고, 해당 변경 하 고, 각각에 대 한 업데이트를 클릭 해야 하는 경우 자신의 생산성 클릭 양을 방해가 될 수 있습니다. 이러한 상황에서는 더 나은 옵션을 제공 하는 것을 완벽 하 게 편집할 DataList 곳 *모든* 해당 항목에 편집 모드와 페이지에서 모두 업데이트 단추를 클릭 하 여 해당 값을 편집할 수 있습니다 (그림 1 참조).
 
-
 [![완벽 하 게 편집 가능한 DataList의 각 항목을 수정할 수 있습니다.](performing-batch-updates-vb/_static/image2.png)](performing-batch-updates-vb/_static/image1.png)
 
 **그림 1**: 완벽 하 게 편집 가능한 DataList의 각 항목을 수정할 수 있습니다 ([클릭 하 여 큰 이미지 보기](performing-batch-updates-vb/_static/image3.png))
-
 
 이 자습서에서는 사용자가 완벽 하 게 편집할 DataList를 사용 하 여 공급 업체 주소 정보를 업데이트할 수 있게 하는 방법을 살펴보겠습니다.
 
@@ -49,48 +46,38 @@ DataList s `EditItemIndex` 속성은 무엇을 나타냅니다 `DataListItem` (�
 
 열어서 시작 합니다 `BatchUpdate.aspx` 페이지에서 DataList 컨트롤을 추가 하 고 설정 해당 `ID` 속성을 `Suppliers`입니다. DataList s 스마트 태그에서 이라는 새 ObjectDataSource 컨트롤을 추가 하도록 선택할 `SuppliersDataSource`합니다.
 
-
 [![SuppliersDataSource 라는 새로운 ObjectDataSource는 만들기](performing-batch-updates-vb/_static/image5.png)](performing-batch-updates-vb/_static/image4.png)
 
 **그림 2**: 명명 된 새 ObjectDataSource 만들려면 `SuppliersDataSource` ([큰 이미지를 보려면 클릭](performing-batch-updates-vb/_static/image6.png))
 
-
 ObjectDataSource를 사용 하 여 데이터를 검색할 구성 합니다 `SuppliersBLL` s 클래스 `GetSuppliers()` 메서드 (그림 3 참조). 이전 자습서에서가 아니라 ObjectDataSource 통해 공급 업체 정보를 업데이트와 마찬가지로 비즈니스 논리 계층와 직접 협업할 수 했습니다. 따라서 업데이트 탭에서 드롭 다운 목록 (없음)을 설정 (그림 4 참조).
-
 
 [![GetSuppliers() 메서드를 사용 하 여 공급 업체 정보를 검색 합니다.](performing-batch-updates-vb/_static/image8.png)](performing-batch-updates-vb/_static/image7.png)
 
 **그림 3**: 사용 하 여 공급 업체 정보를 검색 합니다 `GetSuppliers()` 메서드 ([큰 이미지를 보려면 클릭](performing-batch-updates-vb/_static/image9.png))
 
-
 [![(없음) 드롭다운 목록에서 업데이트 탭 설정](performing-batch-updates-vb/_static/image11.png)](performing-batch-updates-vb/_static/image10.png)
 
 **그림 4**: (없음) 드롭다운 목록에서 업데이트 탭 설정 ([클릭 하 여 큰 이미지 보기](performing-batch-updates-vb/_static/image12.png))
 
-
 마법사를 완료 한 후 Visual Studio를 자동으로 생성 DataList의 `ItemTemplate` Label 웹 컨트롤의 데이터 소스에서 반환 된 각 데이터 필드를 표시 합니다. 이 템플릿을 편집 인터페이스 대신 제공 하도록 수정 해야 합니다. `ItemTemplate` DataList s 스마트 태그에서 템플릿 편집 옵션을 사용 하 여 디자이너를 통해 또는 선언적 구문을 통해 직접 사용자 지정할 수 있습니다.
 
 시간을 내어 공급자의 이름을 텍스트로 표시 되지만 공급자의의 주소, 도시 및 국가 값에 대 한 텍스트를 포함 하는 편집 인터페이스를 만듭니다. 다음과 같이 변경한 후 페이지 s 선언적 구문을 다음과 비슷하게 표시 됩니다.
-
 
 [!code-aspx[Main](performing-batch-updates-vb/samples/sample1.aspx)]
 
 > [!NOTE]
 > 이전 자습서에서는이 자습서에서는 DataList 보기 상태로 사용할 수 있어야 합니다.
 
-
 `ItemTemplate` 있나요 두 개의 새 CSS 클래스를 사용 하 여 m `SupplierPropertyLabel` 및 `SupplierPropertyValue`를 추가할를 `Styles.css` 클래스와 동일한 스타일 설정을 사용 하도록 구성 합니다 `ProductPropertyLabel` 및 `ProductPropertyValue` CSS 클래스.
-
 
 [!code-css[Main](performing-batch-updates-vb/samples/sample2.css)]
 
 다음과 같이 변경한 후 브라우저를 통해이 페이지를 방문 합니다. 그림 5에서 볼 수 있듯이 각 DataList 항목 공급자 이름을 텍스트로 표시 하 고 주소, 도시 및 국가 표시 하려면 텍스트 상자를 사용 합니다.
 
-
 [![DataList에서 각 공급자는 편집 가능](performing-batch-updates-vb/_static/image14.png)](performing-batch-updates-vb/_static/image13.png)
 
 **그림 5**: 각 공급 업체 DataList의 편집 가능은 ([클릭 하 여 큰 이미지 보기](performing-batch-updates-vb/_static/image15.png))
-
 
 ## <a name="step-2-adding-an-update-all-button"></a>2단계: 업데이트를 모든 단추 추가
 
@@ -98,16 +85,13 @@ ObjectDataSource를 사용 하 여 데이터를 검색할 구성 합니다 `Supp
 
 DataList 및 집합 위에 단추 웹 컨트롤을 추가 하 여 시작 해당 `ID` 속성을 `UpdateAll1`입니다. 다음으로, DataList, 아래에 두 번째 단추 웹 컨트롤을 추가 설정 해당 `ID` 에 `UpdateAll2`입니다. 설정 된 `Text` 모두 업데이트 하려면 두 개의 단추에 대 한 속성입니다. 마지막으로, 두 단추에 대 한 이벤트 처리기를 만들 `Click` 이벤트입니다. 각 이벤트 처리기에서 업데이트 논리를 복제 하는 대신 let s 세 번째 메서드에 논리를 리팩터링할 `UpdateAllSupplierAddresses`, 단순히이 세 번째 메서드를 호출 하는 이벤트 처리기를 필요 합니다.
 
-
 [!code-vb[Main](performing-batch-updates-vb/samples/sample3.vb)]
 
 그림 6에서는 모두 업데이트 단추를 추가한 후 페이지를 보여 줍니다.
 
-
 [![두 업데이트 모두 단추가 페이지에 추가 되었습니다.](performing-batch-updates-vb/_static/image17.png)](performing-batch-updates-vb/_static/image16.png)
 
 **그림 6**: 두 업데이트 모두 단추가 페이지에 추가 되었습니다 ([클릭 하 여 큰 이미지 보기](performing-batch-updates-vb/_static/image18.png))
-
 
 ## <a name="step-3-updating-all-of-the-suppliers-address-information"></a>3단계: 공급 업체 주소 정보를 모두 업데이트
 
@@ -115,14 +99,12 @@ DataList 및 집합 위에 단추 웹 컨트롤을 추가 하 여 시작 해당 
 
 컬렉션인 `DataListItem` DataList의 DataList를 통해 액세스할 수는 구성 인스턴스 [ `Items` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.datalist.items.aspx)합니다. 에 대 한 참조를 사용 하 여는 `DataListItem`, 해당 것이 나옵니다 `SupplierID` 에서 합니다 `DataKeys` 컬렉션 및 프로그래밍 방식으로 텍스트 웹 컨트롤 내 참조는 `ItemTemplate` 다음 코드에서 볼 수 있듯이:
 
-
 [!code-vb[Main](performing-batch-updates-vb/samples/sample4.vb)]
 
 모두 업데이트 단추 중 하나를 클릭할 때를 `UpdateAllSupplierAddresses` 메서드는 각 반복 `DataListItem` 에 `Suppliers` DataList 및 호출 합니다 `SuppliersBLL` s 클래스 `UpdateSupplierAddress` 해당 값을 전달 하는 메서드. 주소, 도시 또는 국가 전달 되지 않은 입력 값의 값인 `Nothing` 하 `UpdateSupplierAddress` 데이터베이스의 결과입니다 (빈 문자열의 경우) 하는 대신 `NULL` 기본 s 레코드 필드에 대 한 합니다.
 
 > [!NOTE]
 > 향상 된 기능으로 일괄 처리 업데이트 수행 된 후 몇 가지 확인 메시지를 제공 하는 페이지에 상태 레이블 웹 컨트롤을 추가 하는 것이 좋습니다.
-
 
 ## <a name="updating-only-those-addresses-that-have-been-modified"></a>수정 된 주소에만 업데이트
 
@@ -132,7 +114,6 @@ ADO.NET DataTable 및 DataAdapter 클래스를 데이터베이스 통신만 수�
 
 에 `SuppliersBLL` 에 단일 공급 업체 레코드의 첫 번째 읽어 지정 된 공급자가의 주소 정보를 업데이트 하는 클래스를 `SuppliersDataTable` 설정한 후 합니다 `Address`를 `City`, 및 `Country` 다음 코드를 사용 하 여 열 값:
 
-
 [!code-vb[Main](performing-batch-updates-vb/samples/sample5.vb)]
 
 이 코드에서는 잡이 전달 된 주소, 도시 및 국가 값을 할당 합니다 `SuppliersRow` 에 `SuppliersDataTable` 값이 변경 되었는지 여부에 관계 없이 합니다. 이러한 수정으로 인해 합니다 `SuppliersRow` s `RowState` 속성을 수정 하는 것으로 표시 되어야 합니다. 때 데이터 액세스 계층 s `Update` 메서드를 호출 하는 발견 된 `SupplierRow` 수정 되었고 그 따라서 보냅니다는 `UPDATE` 명령을 데이터베이스에 합니다.
@@ -140,7 +121,6 @@ ADO.NET DataTable 및 DataAdapter 클래스를 데이터베이스 통신만 수�
 그러나 Imagine, 할당할만 전달 된 주소, 도시 및 국가 값에서 다를 경우이 메서드에 코드를 추가 했습니다는 `SuppliersRow` s 기존 값입니다. 주소, 도시 및 국가 있는 기존 데이터와 동일한 경우에는 변경 되지 하며 `SupplierRow` s `RowState` 왼쪽으로 표시 된 그대로입니다. 결과 경우 DAL s `Update` 메서드를 호출 하기 때문에 없는 데이터베이스 전화를 걸 수는 `SuppliersRow` 수정 되지 않았습니다.
 
 이 변경은 적용 하려면 맹목적으로 전달 된 주소, 도시 및 다음 코드를 사용 하 여 국가 값을 할당 하는 문을 바꿉니다.
-
 
 [!code-vb[Main](performing-batch-updates-vb/samples/sample6.vb)]
 
@@ -150,7 +130,6 @@ ADO.NET DataTable 및 DataAdapter 클래스를 데이터베이스 통신만 수�
 
 > [!NOTE]
 > 각 시간을 `UpdateSupplierAddress` 메서드가 호출 되 면 업데이트 된 레코드에 대 한 정보를 검색할 데이터베이스에 호출 됩니다. 그런 다음 데이터에서 변경한 경우 다른 데이터베이스로 호출 테이블 행을 업데이트 합니다. 이 워크플로 만들어 최적화할 수 있습니다는 `UpdateSupplierAddress` 허용 하는 메서드 오버 로드는 `EmployeesDataTable` 인스턴스가 있다고 *모든* 의 변경 사항는 `BatchUpdate.aspx` 페이지. 그런 다음 모든 레코드를 가져오려면 데이터베이스를 한 번 호출 선택하실는 `Suppliers` 테이블입니다. 두 개의 결과 집합을 열거할 수 다음 하 고 변경 사항이 발생 하는 레코드만 업데이트할 수 없습니다.
-
 
 ## <a name="summary"></a>요약
 

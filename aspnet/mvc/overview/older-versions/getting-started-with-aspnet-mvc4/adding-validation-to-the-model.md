@@ -8,12 +8,12 @@ ms.date: 08/28/2012
 ms.assetid: 5d9a2999-fcc4-4c45-a018-271fddf74a3b
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc4/adding-validation-to-the-model
 msc.type: authoredcontent
-ms.openlocfilehash: 266d2e3fda54a9e584622ccd595e41229c96e6b0
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 25037d2994354c92f9fe831c948393df32e120a1
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59420746"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129928"
 ---
 # <a name="adding-validation-to-the-model"></a>모델에 유효성 검사 추가
 
@@ -21,7 +21,6 @@ ms.locfileid: "59420746"
 
 > > [!NOTE]
 > > 이 자습서는 업데이트 된 버전을 사용할 수 [여기](../../getting-started/introduction/getting-started.md) 는 ASP.NET MVC 5 및 Visual Studio 2013을 사용 합니다. 보다 안전 하 고 더 간단 하 게 수행 되며 더 많은 기능을 보여 줍니다.
-
 
 이 섹션에서는 유효성 검사 논리를 추가 합니다 `Movie` 모델 및 있습니다 유효성 검사 규칙을 만들거나 응용 프로그램을 사용 하 여 동영상을 편집 하려면 사용자가 언제 든 지 사항이 적용 되도록 확인 됩니다.
 
@@ -79,7 +78,6 @@ ASP.NET MVC 및 Entity Framework Code First에서 제공 되는 유효성 검사
 
 > [!NOTE]
 > 쉼표를 사용 하는 영어가 아닌 로캘의 jQuery 유효성 검사를 지원 하도록 (&quot;,&quot;) 포함 해야 소수점 *globalize.js* 및 특정 *cultures/globalize.cultures.js* 파일 (에서 [ https://github.com/jquery/globalize ](https://github.com/jquery/globalize) ) 및 JavaScript를 사용 하 여 `Globalize.parseFloat`입니다. 다음 코드에서는 Views\Movies\Edit.cshtml 파일을 사용 하려면 수정 된 &quot;FR-FR&quot; 문화권:
-
 
 [!code-cshtml[Main](adding-validation-to-the-model/samples/sample6.cshtml)]
 

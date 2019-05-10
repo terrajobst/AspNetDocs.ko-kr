@@ -8,12 +8,12 @@ ms.date: 02/10/2014
 ms.assetid: 2a2c1833-0bfe-4e2e-9cc0-341b52c7b121
 msc.legacyurl: /web-pages/overview/testing-and-debugging/aspnet-web-pages-razor-troubleshooting-guide
 msc.type: authoredcontent
-ms.openlocfilehash: adbaa5cbda4a60a8b222ba49bb148b28b2e214cc
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: fc03767c16f46c1e282d24ee3a7df2409a7c38bb
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389208"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128565"
 ---
 # <a name="aspnet-web-pages-razor-troubleshooting-guide"></a>ASP.NET 웹 페이지(Razor) 문제 해결 가이드
 
@@ -28,7 +28,6 @@ ms.locfileid: "59389208"
 >   
 > 
 > 이 자습서는 또한 ASP.NET 웹 페이지 2 및 ASP.NET 웹 페이지 1.0과 함께 작동합니다.
-
 
 이 항목에는 다음과 같은 단원이 포함되어 있습니다.
 
@@ -150,7 +149,6 @@ ASP.NET Web Pages (Razor)에 기본 제공 보안 (멤버 자격) 시스템에 �
 
 > [!NOTE]
 > 오류를 표시 하는 태그를 제거 (`@errorMessage`) 페이지는 라이브 사이트에 게시 하기 전에 합니다. 사용자가 서버에서 얻을 수 있는 오류 메시지를 볼 수 있도록 좋은 방법이 아닙니다.
-
 
 <a id="AdditionalResources"></a>
 ## <a name="additional-resources"></a>추가 리소스

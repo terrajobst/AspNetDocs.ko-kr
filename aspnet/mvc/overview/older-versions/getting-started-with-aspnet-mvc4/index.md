@@ -8,17 +8,16 @@ ms.date: 02/15/2012
 ms.assetid: a35183ac-cbcb-4070-9233-6331cde921ad
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc4
 msc.type: chapter
-ms.openlocfilehash: 0cce120be702ffa4c21e56cbbbe472aebf7f1889
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: a73935f74d696bad9070c56b506d3aa2dbcceb25
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402260"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129854"
 ---
 # <a name="getting-started-with-aspnet-mvc-4"></a>ASP.NET MVC 4 시작
 
 > 이 자습서 시리즈는 Microsoft Visual Web Developer 2010 Express 서비스 팩 1, Microsoft Visual Studio의 무료 버전인를 사용 하 여 ASP.NET MVC 웹 응용 프로그램을 빌드하는 기본 사항을 설명 합니다.
-
 
 - [ASP.NET 4 소개](intro-to-aspnet-mvc-4.md)
 - [컨트롤러 추가](adding-a-controller.md)

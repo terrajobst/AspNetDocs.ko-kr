@@ -8,12 +8,12 @@ ms.date: 02/07/2014
 ms.assetid: aa67d304-583b-4bf8-a231-195656cfb587
 msc.legacyurl: /web-pages/overview/getting-started/introducing-razor-syntax-c
 msc.type: authoredcontent
-ms.openlocfilehash: 8237dc6b925ccefc5b411aebc8e7c399dcdc6746
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: d9edcd61e52941c0fd69e645da7e2cf467a632ac
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59407356"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131787"
 ---
 # <a name="introduction-to-aspnet-web-programming-using-the-razor-syntax-c"></a>Razor 구문 (C#)를 사용 하 여 ASP.NET 웹 프로그래밍 소개
 
@@ -36,14 +36,12 @@ ms.locfileid: "59407356"
 > 
 > 이 자습서는 ASP.NET 웹 페이지 2 에서도 작동합니다.
 
-
 ## <a name="the-top-8-programming-tips"></a>상위 8 프로그래밍 팁
 
 이 섹션에서는 반드시 알아야 할 Razor 구문을 사용 하 여 ASP.NET 서버 코드 작성을 시작 하는 몇 가지 팁을 나열 합니다.
 
 > [!NOTE]
 > Razor 구문을 C# 프로그래밍 언어를 기준으로 하며는 ASP.NET 웹 페이지를 사용 하 여 가장 자주 사용 되는 언어입니다. 그러나 Razor 구문을 Visual Basic 언어 및 Visual Basic에서도 수행할 수 있는 모든 지원 합니다. 자세한 내용은 부록을 참조 하세요 [Visual Basic 언어와 구문이](https://go.microsoft.com/fwlink/?LinkId=202908)합니다.
-
 
 대부분의 이러한 프로그래밍 기법에 대 한 자세한 내용은 문서의 뒷부분에서 찾을 수 있습니다.
 
@@ -66,7 +64,6 @@ ms.locfileid: "59407356"
 > 목표는 태그로 태그를 렌더링 하는 HTML 태그를 출력 하는 경우 (예를 들어 `<p></p>` 단락 또는 `<em></em>` 텍스트를 강조 하기 위해), 섹션을 참조 하세요 [결합 텍스트, 태그 및 코드 블록의 코드](#BM_CombiningTextMarkupAndCode) 이 문서의 뒷부분에 나오는.
 > 
 > 읽어보세요에서 HTML 인코딩에 대 한 [양식 작업](https://go.microsoft.com/fwlink/?LinkId=202892)합니다.
-
 
 ### <a name="2-you-enclose-code-blocks-in-braces"></a>2. 코드 블록을 중괄호로 묶습니다.
 
@@ -116,7 +113,6 @@ A *문자열* 텍스트로 처리 되는 문자 시퀀스입니다. 문자열을
 > [!NOTE]
 > 에 `@` 문자는 C#에서 축 자 문자열 리터럴은 표시 하 고 ASP.NET 페이지에서 코드를 표시 하기 위해 사용 됩니다.
 
-
 ### <a name="6-code-is-case-sensitive"></a>6. 코드는 대/소문자 구분
 
 C#에서는 키워드 (같은 `var`, `true`, 및 `if`) 변수 이름은 대/소문자 구분 및 합니다. 코드의 다음 줄은 두 개의 다른 변수를 만듭니다 `lastName` 및 `LastName.`
@@ -127,7 +123,6 @@ C#에서는 키워드 (같은 `var`, `true`, 및 `if`) 변수 이름은 대/소�
 
 > [!NOTE]
 > 키워드 및 변수는 Visual basic에서는 *되지* 대 소문자를 구분 합니다.
-
 
 ### <a name="7-much-of-your-coding-involves-objects"></a>7. 개체를 포함 하는 대부분의 코딩
 
@@ -161,7 +156,6 @@ C#에서는 키워드 (같은 `var`, `true`, 및 `if`) 변수 이름은 대/소�
 > 웹 페이지 (HTTP)에 사용 된 프로토콜 매우 제한 된 수의 서버에 요청을 확인 하는 데 사용 되는 메서드 (동사)를 지원 합니다. 두 가지 자주 사용 되는 가져오기에 사용 되는 페이지를 읽으려는 및 페이지를 제출 하는 데 사용 되는 게시물입니다. 일반적으로 사용자가 페이지를 요청할 처음 페이지가 요청 될 GET을 사용 하 여 합니다. 사용자 양식을 채우고 다음 제출 단추를 클릭을 하는 경우 브라우저는 서버에는 POST 요청을 만듭니다.
 > 
 > 웹 프로그래밍에서 유용 여부는 페이지 요청 POST 또는 GET으로 페이지를 처리 하는 방법을 알 수 있도록 알아야 합니다. ASP.NET 웹 페이지에서 사용할 수는 `IsPost` 속성 GET 또는 POST 요청 인지 여부를 확인 합니다. 요청을 POST 이면는 `IsPost` 속성은 true를 반환 하 고 폼의 입력란의 값 등 읽기를 수행할 수 있습니다. 표시 되는 많은 예제 값에 따라 다르게 페이지를 처리 하는 방법을 보여 줍니다. `IsPost`합니다.
-
 
 ## <a name="a-simple-code-example"></a>간단한 코드 예제
 
@@ -217,7 +211,6 @@ Razor 구문에도 쉽게 배울 초보자 생산성가 있는 경우 본인이 
 > 인스턴스를 만들고 응용 프로그램을 실제 고객 정보를 사용 하 여 작동 해야 하는 경우 (또는 *인스턴스화합니다*) customer 개체입니다. 각 개별 고객은 별도의 인스턴스는 `Customer` 클래스입니다. 모든 인스턴스가 동일한 속성 및 메서드를 지원 하지만 각 customer 개체가 고유 하므로 각 인스턴스에 대 한 속성 값은 일반적으로 다른 합니다. 한 고객 개체에는 `LastName` 속성에는 "Smith" 수 있습니다 다른 고객 개체에서는 `LastName` 속성 "Jones." 수 있습니다
 > 
 > 마찬가지로 모든 개별 웹 페이지 사이트에서이 `Page` 의 인스턴스인 개체를 `Page` 클래스. 페이지의 단추를 `Button` 개체의 인스턴스를는 `Button` 클래스 및 등입니다. 각 인스턴스는 고유한 특징이 있지만 모든 기반으로 하는 개체의 클래스 정의에 지정 된 것입니다.
-
 
 ## <a name="basic-syntax"></a>기본 구문
 
@@ -439,7 +432,6 @@ Razor C#의 중첩 된 블록에 제약이 따릅니다. 자세한 내용은 참
 ## <a name="operators"></a>연산자
 
 연산자는 키워드 또는 식에서 수행할 수 있는 명령의 종류를 ASP.NET에 지시 하는 문자입니다. C# 언어 (및 Razor 구문을 기반으로 하는) 다양 한 연산자를 지원 하지만 시작 하려면 몇 가지를 인식 해야 합니다. 다음 표에서 가장 일반적인 연산자를 보여 줍니다.
-
 
 :::row:::
     :::column:::
@@ -832,7 +824,6 @@ Razor 구문을 메서드에 매개 변수를 전달 하기 위한 두 가지 �
 > [!NOTE]
 > 사용 하지 않는 것이 좋습니다 합니다 `Response.Redirect` 의 메서드 `try/catch` 문을 페이지에서 예외가 발생할 수 있기 때문에 합니다.
 
-
 다음 예제에서는 첫 번째 요청에서 텍스트 파일을 만들고 다음 사용자가 파일을 열 수 있는 단추를 표시 하는 페이지를 보여 줍니다. 이 예제에서는 예외가 하면 있도록 의도적으로 잘못 된 파일 이름을 사용 합니다. 코드에 포함 되어 `catch` 두 가지 가능한 예외에 대 한 문을: `FileNotFoundException`, 파일 이름에 잘못 된 경우 발생 하는 및 `DirectoryNotFoundException`, ASP.NET 폴더를도 찾을 수 없는 경우 발생 합니다. (모든 항목이 제대로 작동 하는 경우 실행 방식을 확인 하기 위해이 예에서 문은 주석 수 있습니다.)
 
 코드에서 예외를 처리 하지 않은 경우 이전 스크린 샷에서 처럼 오류 페이지가 표시 됩니다. 그러나는 `try/catch` 섹션은 사용자가 이러한 종류의 오류를 표시 하지 못하도록 합니다.
@@ -843,12 +834,9 @@ Razor 구문을 메서드에 매개 변수를 전달 하기 위한 두 가지 �
 
 **Visual Basic을 사용한 프로그래밍**
 
-
 [부록: Visual Basic 언어 및 구문](https://go.microsoft.com/fwlink/?LinkId=202908)
 
-
 **참조 설명서**
-
 
 [ASP.NET](https://msdn.microsoft.com/library/ee532866.aspx)
 

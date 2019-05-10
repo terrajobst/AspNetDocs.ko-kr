@@ -8,12 +8,12 @@ ms.date: 02/10/2014
 ms.assetid: f3f4b8c8-e8f6-4474-ad94-69228a6c01ee
 msc.legacyurl: /web-pages/overview/ui-layouts-and-themes/4-working-with-forms
 msc.type: authoredcontent
-ms.openlocfilehash: 680739cbcf54bc9ca7a3bd8167d043ff537eaad5
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ec5ad784978b2d5191d59398fc4b5ed25ae516fb
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59417535"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128400"
 ---
 # <a name="working-with-html-forms-in-aspnet-web-pages-razor-sites"></a>ASP.NET 웹 페이지 (Razor) 사이트에서 HTML 양식 사용
 
@@ -42,7 +42,6 @@ ms.locfileid: "59417535"
 >   
 > 
 > 이 자습서는 ASP.NET 웹 페이지 2 에서도 작동합니다.
-
 
 ## <a name="creating-a-simple-html-form"></a>간단한 HTML 폼 만들기
 
@@ -89,7 +88,6 @@ ms.locfileid: "59417535"
 > 것이 HTML 문자열을 표시 하는 언제 든 지를 인코딩하는 데 (입력) 사용자에서 가져온 하는 것이 좋습니다. 그렇지 않으면 사용자 수에 웹 페이지나 악성 스크립트를 실행 하거나 다른 작업을 수행 하려면 사이트 보안을 손상 하는 의도 하지 않게 되는 가져오기를 시도 합니다. (사용자 입력을 받는, 위치, 저장 및 다음 나중에 표시 하는 경우이 특히 &#8212; 블로그 주석, 사용자 검토 또는 되죠으로 예를 들어.)
 > 
 > 이러한 문제를 ASP.NET 웹 페이지를 자동으로 방지 하는 데 HTML로 인코딩하고 모든 텍스트 콘텐츠를 코드에서 출력 합니다. 예를 들어, 변수 또는 같은 코드를 사용 하는 식의 내용을 표시할 때는 `@MyVar`, ASP.NET 웹 페이지 출력을 자동으로 인코딩합니다.
-
 
 ## <a name="validating-user-input"></a>사용자 입력 유효성 검사
 

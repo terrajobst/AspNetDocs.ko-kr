@@ -8,19 +8,18 @@ ms.date: 03/02/2009
 ms.assetid: ec26f264-d0ea-4031-9943-825505a3ac4b
 msc.legacyurl: /mvc/overview/older-versions-1/views/using-the-tagbuilder-class-to-build-html-helpers-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 4fe34858aadb705ffb59e06ba805493d89aa4028
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3b0aa9816209cc326d3dea4b8dfb1b13cf697fcd
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59403209"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130370"
 ---
 # <a name="using-the-tagbuilder-class-to-build-html-helpers-vb"></a>HTML 도우미 (VB)를 빌드하는 TagBuilder 클래스를 사용 하 여
 
 [Stephen walther가](https://github.com/StephenWalther)
 
 > Stephen walther가 ASP.NET MVC 프레임 워크는 TagBuilder 클래스 라는의 유용한 유틸리티 클래스를 소개 합니다. HTML 태그를 쉽게 빌드하는 TagBuilder 클래스를 사용할 수 있습니다.
-
 
 ASP.NET MVC 프레임 워크는 TagBuilder 클래스 HTML 도우미를 작성할 때 사용할 수 있는 유용한 유틸리티 클래스가 포함 됩니다. TagBuilder 클래스는 클래스의 이름에서 알 수 있듯이, 빌드할 수 있도록 쉽게 HTML 태그입니다. 이 간략 한 자습서는 TagBuilder 클래스의 개요가 제공 됩니다 및 HTML을 렌더링 하는 간단한 HTML 도우미를 작성 하는 경우이 클래스를 사용 하는 방법에 알아봅니다 &lt;img&gt; 태그입니다.
 
@@ -33,7 +32,6 @@ TagBuilder 클래스 System.Web.Mvc 네임 스페이스에 포함 됩니다. 다
 - MergeAttribute()-를 사용 하는 태그에 특성을 추가할 수 있습니다. 이 메서드의 여러 오버 로드가 있습니다.
 - SetInnerText()-를 사용 하면 태그의 내부 텍스트를 설정할 수 있습니다. 내부 텍스트 HTML 인코딩 자동입니다.
 - Tostring ()-를 사용 하면 태그를 렌더링할 수 있습니다. 일반 태그, 시작 태그, 끝 태그 또는 자체 닫음 태그를 만들 것인지 여부를 지정할 수 있습니다.
-  
 
 TagBuilder 클래스에는 네 가지 중요 한 속성에 있습니다.
 
@@ -64,11 +62,9 @@ TagBuilder.MergeAttribute() 메서드를 사용 하는 TagBuilder에 src 특성 
 
 [!code-aspx[Main](using-the-tagbuilder-class-to-build-html-helpers-vb/samples/sample2.aspx)]
 
-
 [![새 프로젝트 대화 상자](using-the-tagbuilder-class-to-build-html-helpers-vb/_static/image1.jpg)](using-the-tagbuilder-class-to-build-html-helpers-vb/_static/image1.png)
 
 **그림 01**: 이미지 도우미를 사용 하 여 ([클릭 하 여 큰 이미지 보기](using-the-tagbuilder-class-to-build-html-helpers-vb/_static/image2.png))
-
 
 알림 Index.aspx 뷰의 맨 위에 있는 이미지 도우미에 연결 된 네임 스페이스를 가져와야 합니다. 도우미는 다음 지시문을 사용 하 여 가져옵니다.
 

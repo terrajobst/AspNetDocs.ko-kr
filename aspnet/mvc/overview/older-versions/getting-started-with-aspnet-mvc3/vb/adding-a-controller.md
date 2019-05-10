@@ -8,12 +8,12 @@ ms.date: 01/12/2011
 ms.assetid: 741259e1-54ac-4f71-b4e8-2bd5560bb950
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc3/vb/adding-a-controller
 msc.type: authoredcontent
-ms.openlocfilehash: 144b00d9ec263231c29365caa2f3fb7b96a7ea16
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 0c637f5758f8196c19ef8d5c71009e85f9dd706e
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59415533"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130045"
 ---
 # <a name="adding-a-controller-vb"></a>컨트롤러 추가(VB)
 
@@ -28,7 +28,6 @@ ms.locfileid: "59415533"
 > Visual Studio 2010 Visual Web Developer 2010 대신를 사용 하는 경우 다음 링크를 클릭 하 여 필수 구성 요소를 설치 합니다. [Visual Studio 2010 필수 구성 요소](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack)합니다.
 > 
 > VB.NET 소스 코드를 사용 하 여 Visual Web Developer 프로젝트는 다음이 항목과 함께 사용할 수 있습니다. [VB.NET 버전](https://code.msdn.microsoft.com/Introduction-to-MVC-3-10d1b098)합니다. 원하는 경우 C#으로 전환 합니다 [C# 버전](../cs/adding-a-controller.md) 이 자습서의 합니다.
-
 
 MVC는 의미 *모델-뷰-컨트롤러*합니다. MVC는 각 파트에는 별도 책임이 되도록 응용 프로그램을 개발 하기 위한 패턴:
 

@@ -8,12 +8,12 @@ ms.date: 02/20/2014
 ms.assetid: fc49bcb9-f1a9-4048-8c3f-b60951853200
 msc.legacyurl: /web-pages/overview/getting-started/11-adding-email-to-your-web-site
 msc.type: authoredcontent
-ms.openlocfilehash: 0263f736b96f8e8572536f3783d86c261d7c0512
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 23e9717329525fb5a0ed505c9dc94505d4f9dbbe
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59411230"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130541"
 ---
 # <a name="sending-email-from-an-aspnet-web-pages-razor-site"></a>ASP.NET 웹 페이지 (Razor) 사이트에서 전자 메일 보내기
 
@@ -39,7 +39,6 @@ ms.locfileid: "59411230"
 > 
 > 이 자습서는 ASP.NET 웹 페이지 2 에서도 작동합니다.
 
-
 <a id="Sending_Email_Messages"></a>
 ## <a name="sending-email-messages-from-your-website"></a>웹 사이트에서 전자 메일 메시지 보내기
 
@@ -57,7 +56,6 @@ ms.locfileid: "59411230"
 
 > [!NOTE]
 > 코드를 간단히 유지 하기 위해이 예제에서는 다음을 초기화 합니다.는 `WebMail` 사용할 위치 페이지에서 오른쪽 도우미입니다. 그러나 실제 웹 사이트에 대 한 것을 전역 파일에 다음과 같은 초기화 코드를 저장 하는 것이 좋습니다 초기화할 수 있도록는 `WebMail` 웹 사이트의 모든 파일에 대 한 도우미입니다. 자세한 내용은 [ASP.NET 웹 페이지에 대 한 사이트 전체 동작 사용자 지정](https://go.microsoft.com/fwlink/?LinkId=202906#Setting_Values_For_Helpers)합니다.
-
 
 1. 새 웹 사이트를 만듭니다.
 2. 명명 된 새 페이지 추가 *EmailRequest.cshtml* 다음 태그를 추가 합니다. 
@@ -133,7 +131,6 @@ ms.locfileid: "59411230"
 
 <a id="Additional_Resources"></a>
 ## <a name="additional-resources"></a>추가 리소스
-
 
 - [ASP.NET 웹 페이지(Razor) 문제 해결 가이드](https://go.microsoft.com/fwlink/?LinkId=253001)
 - [Simple Mail Transfer Protocol](https://msdn.microsoft.com/library/aa480435.aspx)

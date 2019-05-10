@@ -8,12 +8,12 @@ ms.date: 06/09/2009
 ms.assetid: 09a6c74e-936a-4c04-8547-5bb313a4e4a3
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/logging-error-details-with-asp-net-health-monitoring-vb
 msc.type: authoredcontent
-ms.openlocfilehash: a9dd4268ef20b58b674f8ec8313132398fc5f19d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 053b88594e961246d4d9ed6f16d9716d0b9ca955
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59413128"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132377"
 ---
 # <a name="logging-error-details-with-aspnet-health-monitoring-vb"></a>ASP.NET 상태 모니터링을 사용하여 오류 세부 정보 로깅(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59413128"
 [코드를 다운로드](http://download.microsoft.com/download/1/0/C/10CC829F-A808-4302-97D3-59989B8F9C01/ASPNET_Hosting_Tutorial_13_VB.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/5/C/5/5C57DB8C-5DEA-4B3A-92CA-4405544D313B/aspnet_tutorial13_HealthMonitoring_vb.pdf)
 
 > Microsoft의 상태 모니터링 시스템에는 처리 되지 않은 예외를 비롯 한 다양 한 웹 이벤트를 기록 하는 쉽고 사용자 지정 가능한 방법을 제공 합니다. 이 자습서는 데이터베이스에 처리 되지 않은 예외를 기록 하 고 전자 메일 메시지를 통해 개발자에 게 알립니다 상태 시스템 모니터링 설정 안내 합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -67,7 +66,6 @@ ms.locfileid: "59413128"
 > [!NOTE]
 > `aspnet_regsql.exe` 년대 도구에서 설명한 합니다 [ *서비스를 구성 하는 웹 사이트를 사용 하 여 응용 프로그램* 자습서](configuring-a-website-that-uses-application-services-vb.md) ASP에 대 한 지원을 추가한 경우. NET의 응용 프로그램 서비스입니다. 결과적으로,도 서 리뷰 웹 사이트의 데이터베이스에 이미 합니다 `aspnet_WebEvent_LogEvent` 저장 프로시저 라는 테이블에 이벤트 정보를 저장 하는 `aspnet_WebEvent_Events`합니다.
 
-
 필요한 저장된 프로시저 및 데이터베이스에 추가 된 테이블을 만든 후에 상태 모니터링을 데이터베이스에 모든 처리 되지 않은 예외를 기록 하도록 지시 합니다. 웹 사이트의 다음 태그를 추가 하 여이 작업을 수행할 `Web.config` 파일:
 
 [!code-xml[Main](logging-error-details-with-asp-net-health-monitoring-vb/samples/sample2.xml)]
@@ -82,7 +80,6 @@ ms.locfileid: "59413128"
 
 > [!NOTE]
 > `WebBaseErrorEvent` 만 이벤트는 서버 오류에 대 한; 찾을 수 없는 ASP.NET 리소스 요청과 같은 HTTP 오류는 발생 하지 않습니다. 이 동작에서 다릅니다 합니다 `HttpApplication` 클래스의 `Error` 서버와 HTTP 오류에 대 한 발생 하는 이벤트입니다.
-
 
 모니터링 작업의 시스템 상태를 확인 하려면 웹 사이트를 방문 하 고 방문 하 여 런타임 오류를 발생 `Genre.aspx?ID=foo`합니다. 예외 세부 정보 노란색 화면의 쇠퇴 (로컬로 방문) 하는 경우 또는 사용자 지정 오류 페이지 (프로덕션 환경에서 사이트를 방문 하) 하는 경우 적절 한 오류 페이지를 표시 됩니다. 내부적으로 상태 모니터링 시스템 데이터베이스에 오류 정보를 기록 합니다. 하나의 레코드와만 있어야 합니다 `aspnet_WebEvent_Events` 테이블 (참조 **그림 1**);이 레코드에만 발생 한 런타임 오류에 대 한 정보를 포함 합니다.
 
@@ -99,7 +96,6 @@ ms.locfileid: "59413128"
 
 > [!NOTE]
 > 후속 자습서에서는 ELMAH 라는 대체 오류 로깅 및 알림 시스템을 살펴봅니다. ELMAH는 모두 웹 페이지에서 RSS 피드로 오류 로그를 볼 수 있는 기본 제공 메커니즘을 포함 합니다.
-
 
 ## <a name="logging-events-to-email"></a>전자 메일에 이벤트를 기록합니다.
 

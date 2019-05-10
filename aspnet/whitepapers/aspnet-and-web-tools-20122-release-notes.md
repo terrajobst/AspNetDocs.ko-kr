@@ -8,17 +8,16 @@ ms.date: 02/14/2013
 ms.assetid: bdb18d02-9f61-4676-836d-6fdea94f9282
 msc.legacyurl: /whitepapers/aspnet-and-web-tools-20122-release-notes
 msc.type: content
-ms.openlocfilehash: 45e2d1b10665a8ca1965f0761bfa6bfd13444c8e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: a4ea1d7c146309e1d5e8be944d496e9fd87bca3e
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59419511"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125717"
 ---
 # <a name="aspnet-and-web-tools-20122-release-notes"></a>ASP.NET 및 Web Tools 2012.2 릴리스 정보
 
 > 이 문서에서는 ASP.NET 및 웹 도구 2012.2 릴리스를 설명 합니다. Visual Studio Web Tooling 및 ASP.NET에 대 한 업데이트는 것입니다.
-
 
 - [설치 참고 사항](#_Installation)
 - [문서](#_Documentation)

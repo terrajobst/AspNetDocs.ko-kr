@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: e42c8388-04ed-4341-9fdb-41b1b4c06320
 msc.legacyurl: /web-api/overview/formats-and-model-binding/parameter-binding-in-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: f121f12ce689a079412bbd5392fde4fea863ff1f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: da0b9e12fcbe5cd2bfb5478162b7453d34931edf
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59401974"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65127516"
 ---
 # <a name="parameter-binding-in-aspnet-web-api"></a>ASP.NET Web API에서에서 매개 변수 바인딩
 
@@ -173,7 +173,6 @@ ETag를 가져옵니다을 여부를 나타내는 열거형도 정의 합니다 
 
 > [!NOTE]
 > 경우에 **ExecuteBindingAsync** 메서드는 요청 메시지의 본문을 읽고, 재정의 **WillReadBody** 속성을 true를 반환 합니다. 요청 본문에만 읽을 수 있는 한 번, Web API 규칙을 시행 최대 하나의 바인딩 있도록 버퍼링 되지 않은 스트림을 메시지 본문을 읽을 수 수 있습니다.
-
 
 사용자 지정을 적용할 **HttpParameterBinding**에서 파생 되는 특성을 정의할 수 있습니다 **ParameterBindingAttribute**합니다. 에 대 한 `ETagParameterBinding`에 대 한 두 가지 특성을 정의 하겠습니다 `if-match` 머리글과 프로그램용 `if-none-match` 헤더입니다. 둘 다 추상 기본 클래스에서 파생 됩니다.
 

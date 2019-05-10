@@ -8,12 +8,12 @@ ms.date: 02/27/2014
 ms.assetid: 3cbab37b-fb0f-4751-9ec4-74e068c3f380
 msc.legacyurl: /web-forms/overview/presenting-and-managing-data/model-binding/integrating-jquery-ui
 msc.type: authoredcontent
-ms.openlocfilehash: 5e9cbb4ca4c45fabfa53f9e3d2537250f1231ba0
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c8d711dd44950116f3a3e09d5d12c507918c543f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59421968"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132006"
 ---
 # <a name="integrating-jquery-ui-datepicker-with-model-binding-and-web-forms"></a>모델 바인딩 및 web forms를 사용 하 여 JQuery UI Datepicker 통합
 
@@ -26,7 +26,6 @@ ms.locfileid: "59421968"
 > 이 자습서에서 만든 프로젝트를 기반 합니다 [첫 번째](retrieving-data.md) 하 고 [두 번째](updating-deleting-and-creating-data.md) 시리즈의 파트입니다.
 > 
 > 할 수 있습니다 [다운로드](https://go.microsoft.com/fwlink/?LinkId=286116) C# 또는 VB. 전체 프로젝트 다운로드 가능한 코드를 Visual Studio 2012 또는 Visual Studio 2013을 사용 하 여 작동합니다. 이 자습서에 표시 된 Visual Studio 2013 서식 파일 보다 약간 다른 Visual Studio 2012 템플릿을 사용 합니다.
-
 
 ## <a name="what-youll-build"></a>만들 내용
 

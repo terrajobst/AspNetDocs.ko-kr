@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: c979535f-48a3-4ec4-a633-a77889b86ddb
 msc.legacyurl: /web-forms/overview/deployment/configuring-team-foundation-server-for-web-deployment/deploying-a-specific-build
 msc.type: authoredcontent
-ms.openlocfilehash: 0ab58aee6f1203beaf3990536b059f8209e66547
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 6bede6b36c24ade928ab052e14daec1e017bd0b2
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59393485"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131936"
 ---
 # <a name="deploying-a-specific-build"></a>특정 빌드 배포
 
@@ -22,7 +22,6 @@ ms.locfileid: "59393485"
 [PDF 다운로드](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > 이 항목에서는 특정 이전 빌드에서 스테이징 또는 프로덕션 환경이 새 대상 데이터베이스 스크립트 및 웹 패키지를 배포 하는 방법을 설명 합니다.
-
 
 이 항목의 Fabrikam, Inc. 라는 가상 회사의 엔터프라이즈 배포 요구 사항 기반 자습서 시리즈의 일부를 형성 합니다. 샘플 솔루션을 사용 하 여이 자습서 시리즈&#x2014;는 [Contact Manager 솔루션](../web-deployment-in-the-enterprise/the-contact-manager-solution.md)&#x2014;현실적인 수준의 복잡성을 Windows Communication ASP.NET MVC 3 응용 프로그램을 포함 하 여 웹 응용 프로그램을 나타내는 Foundation (WCF) 서비스 및 데이터베이스 프로젝트입니다.
 
@@ -47,21 +46,15 @@ ms.locfileid: "59393485"
 > [!NOTE]
 > **OutputRoot** 자주 사용 되는 속성 이름입니다. Visual C# 및 Visual Basic 프로젝트 파일 모든 빌드 출력에 대 한 루트 위치를 저장 하려면이 속성을 선언할 수도 있습니다.
 
-
 [!code-xml[Main](deploying-a-specific-build/samples/sample1.xml)]
-
 
 웹 패키지를 배포 하 고 데이터베이스의 다른 위치에서 스크립트를 프로젝트 파일을 원하는 경우&#x2014;이전 TFS 빌드 출력 같은&#x2014;를 재정의 해야 하는 **OutputRoot** 속성입니다. 팀 빌드 서버에 관련 빌드 폴더에 속성 값을 설정 해야 합니다. 명령줄에서 MSBuild를 실행 했던, 경우에 대 한 값을 지정할 수 있습니다 **OutputRoot** 명령줄 인수:
 
-
 [!code-console[Main](deploying-a-specific-build/samples/sample2.cmd)]
-
 
 그러나 실제로는 또한 건너 뛰 려는 **빌드할** 대상&#x2014;빌드 출력을 사용할 계획이 없다면 솔루션을 빌드에 대 한 지점이 없습니다. 명령줄에서 실행 하려는 대상을 지정 하 여이 수행할 수 있습니다.
 
-
 [!code-console[Main](deploying-a-specific-build/samples/sample3.cmd)]
-
 
 그러나 대부분의 경우 TFS 빌드 정의를 위한 배포 논리를 작성할 해야 합니다. 이 통해 사용 하 여 사용자를 **큐에 빌드 대기** TFS 서버에 대 한 연결을 사용 하 여 Visual Studio 설치에서 배포를 트리거할 수 있는 권한이 있습니다.
 

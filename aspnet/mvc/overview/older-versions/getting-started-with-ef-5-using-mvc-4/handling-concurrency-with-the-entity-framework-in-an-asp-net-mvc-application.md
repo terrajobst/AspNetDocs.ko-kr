@@ -8,12 +8,12 @@ ms.date: 07/30/2013
 ms.assetid: b83f47c4-8521-4d0a-8644-e8f77e39733e
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/handling-concurrency-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: a79cca143df9a10b4255796a6d034688713e4e52
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: d55f01bd2204a2fdb26664827b92c72d68e00a89
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379757"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129812"
 ---
 # <a name="handling-concurrency-with-the-entity-framework-in-an-aspnet-mvc-application-7-of-10"></a>(7 / 10) ASP.NET MVC 응용 프로그램에서 Entity Framework 사용 하 여 동시성 처리
 
@@ -26,7 +26,6 @@ ms.locfileid: "59379757"
 > > [!NOTE] 
 > > 
 > > 해결할 수 없는 문제가 발생 하는 경우 [완성 된 장 다운로드](building-the-ef5-mvc4-chapter-downloads.md) 문제를 재현 하려고 합니다. 일반적으로 코드의 완성 된 코드를 비교 하 여 문제에 솔루션을 찾을 수 있습니다. 몇 가지 일반적인 오류 및 해결 하는 방법에 대 한 참조 [오류 및 해결 방법입니다.](advanced-entity-framework-scenarios-for-an-mvc-web-application.md#errors)
-
 
 이전 두 자습서의 관련된 데이터를 사용 하 여 작동 합니다. 이 자습서에는 동시성을 처리 하는 방법을 보여 줍니다. 작동 하는 웹 페이지를 만들어야 합니다 `Department` 엔터티와 편집 및 삭제 하는 페이지 `Department` 엔터티 동시성 오류를 처리 합니다. 다음 그림은 동시성 충돌이 발생 하는 경우 표시 되는 일부 메시지를 비롯 한 인덱스 및 삭제 페이지를 보여 줍니다.
 

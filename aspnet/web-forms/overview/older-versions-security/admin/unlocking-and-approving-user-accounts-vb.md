@@ -8,12 +8,12 @@ ms.date: 04/01/2008
 ms.assetid: 041854a5-ea8c-4de0-82f1-121ba6cb2893
 msc.legacyurl: /web-forms/overview/older-versions-security/admin/unlocking-and-approving-user-accounts-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 1f6ade517bda60ac0f44811853ee9b9d06070091
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 05b82451fd3dc859109160dd6b8358c568194100
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384177"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65126842"
 ---
 # <a name="unlocking-and-approving-user-accounts-vb"></a>사용자 계정 잠금 해제 및 승인(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59384177"
 [코드를 다운로드](http://download.microsoft.com/download/6/0/e/60e1bd94-e5f9-4d5a-a079-f23c98f4f67d/VB.14.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/0/e/60e1bd94-e5f9-4d5a-a079-f23c98f4f67d/aspnet_tutorial14_UnlockAndApprove_vb.pdf)
 
 > 이 자습서에서는 관리자가 관리 하는 웹 페이지를 빌드하는 방법을 보여 줍니다. 사용자의 잠긴 및 상태를 승인 합니다. 전자 메일 주소를 확인 한 후에 새 사용자를 승인 하는 방법 또한 살펴보겠습니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -41,18 +40,15 @@ ms.locfileid: "59384177"
 > [!NOTE]
 > 에 대 한 코드를 다운로드 하는 경우는 <a id="Tutorial13"> </a> [ *복구 및 암호 변경* ](recovering-and-changing-passwords-vb.md) 했을 수 있는 자습서를 `ManageUsers.aspx` 페이지 집합이 이미 " 관리"링크 및 `UserInformation.aspx` 페이지에서는 선택한 사용자의 암호를 변경 하는 것에 대 한 인터페이스를 제공 합니다. 멤버 자격 API를 우회 하 고 사용자의 암호를 변경 하는 SQL Server 데이터베이스와 직접 작동 하 여 작동 하므로이 자습서를 사용 하 여 관련 코드의 해당 기능을 복제할 필요가 하기로 결정 합니다. 이 자습서를 사용 하 여 처음부터 새로 시작 된 `UserInformation.aspx` 페이지입니다.
 
-
 ### <a name="adding-manage-links-to-theuseraccountsgridview"></a>추가 "관리"에 대 한 링크는`UserAccounts`GridView
 
 엽니다는 `ManageUsers.aspx` 페이지 및 추가에 HyperLinkField는 `UserAccounts` GridView. HyperLinkField의 설정 `Text` 속성을 "Manage" 및 해당 `DataNavigateUrlFields` 하 고 `DataNavigateUrlFormatString` 속성을 `UserName` 및 "UserInformation.aspx?user={0}", 각각. "관리" 텍스트를 표시 하는 모든 하이퍼링크 되지만 각 링크에 적절 한 전달 되도록 이러한 설정을 구성 합니다 HyperLinkField *UserName* 값을 쿼리 합니다.
 
 GridView에는 HyperLinkField를 추가한 후 잠시 보기는 `ManageUsers.aspx` 브라우저를 통해 페이지입니다. 그림 1에서 볼 수 있듯이 각 GridView 행은 이제 "Manage" 링크를 포함 합니다. Bruce에 대 한 "Manage" 링크가 가리키는 `UserInformation.aspx?user=Bruce`Dave에 대 한 "Manage" 링크가 가리키는 반면, `UserInformation.aspx?user=Dave`합니다.
 
-
 [![HyperLinkField 추가](unlocking-and-approving-user-accounts-vb/_static/image2.png)](unlocking-and-approving-user-accounts-vb/_static/image1.png)
 
 **그림 1**: HyperLinkField 각 사용자 계정에 대 한 "Manage" 링크를 추가 합니다 ([클릭 하 여 큰 이미지 보기](unlocking-and-approving-user-accounts-vb/_static/image3.png))
-
 
 사용자 인터페이스를 대 한 코드는 `UserInformation.aspx` 보겠습니다 talk 현재 있지만 첫 번째 페이지에 대 한 프로그래밍 방식으로 사용자를 변경 하는 방법의 잠긴 및 상태를 승인 합니다. [ `MembershipUser` 클래스](https://msdn.microsoft.com/library/system.web.security.membershipuser.aspx) 했습니다 [ `IsLockedOut` ](https://msdn.microsoft.com/library/system.web.security.membershipuser.islockedout.aspx) 고 [ `IsApproved` 속성](https://msdn.microsoft.com/library/system.web.security.membershipuser.isapproved.aspx)합니다. `IsLockedOut` 속성은 읽기 전용입니다. 프로그래밍 방식으로 사용자를 잠그지 메커니즘이 없습니다. 사용자 잠금 해제 하려면 사용 합니다 `MembershipUser` 클래스의 [ `UnlockUser` 메서드](https://msdn.microsoft.com/library/system.web.security.membershipuser.unlockuser.aspx)합니다. `IsApproved` 속성을 읽고 쓰기 가능 합니다. 이 속성에 모든 변경 내용을 저장 하려면 호출 해야 합니다 `Membership` 클래스의 [ `UpdateUser` 메서드](https://msdn.microsoft.com/library/system.web.security.membership.updateuser.aspx)수정 된 전달 `MembershipUser` 개체입니다.
 
@@ -71,11 +67,9 @@ GridView에는 HyperLinkField를 추가한 후 잠시 보기는 `ManageUsers.asp
 
 이러한 컨트롤을 추가한 후 Visual Studio의 디자인 뷰에서 그림 2의 스크린샷과 유사 합니다.
 
-
 [![UserInformation.aspx에 대 한 사용자 인터페이스 만들기](unlocking-and-approving-user-accounts-vb/_static/image5.png)](unlocking-and-approving-user-accounts-vb/_static/image4.png)
 
 **그림 2**: 에 대 한 사용자 인터페이스를 만듭니다 `UserInformation.aspx` ([큰 이미지를 보려면 클릭](unlocking-and-approving-user-accounts-vb/_static/image6.png))
-
 
 다음 작업은 전체 사용자 인터페이스를 사용 하 여 설정 하는 `IsApproved` 선택한 사용자의 정보를 기반으로 다른 컨트롤과 확인란을 선택 합니다. 페이지에 대 한 이벤트 처리기를 만들고 `Load` 이벤트 다음 코드를 추가 합니다.
 
@@ -97,29 +91,23 @@ GridView에는 HyperLinkField를 추가한 후 잠시 보기는 `ManageUsers.asp
 
 현재 위치에서 이러한 이벤트 처리기를 사용 하 여 페이지를 다시 방문 및 승인 되지 않은 사용자입니다. 그림 3과 같이 표시 되어야 사용자를 나타내는 페이지의 메시지 간단한 `IsApproved` 속성 성공적으로 수정 합니다.
 
-
 [![Chris 승인 되었으면 합니다.](unlocking-and-approving-user-accounts-vb/_static/image8.png)](unlocking-and-approving-user-accounts-vb/_static/image7.png)
 
 **그림 3**: Chris 승인 되었습니다 ([클릭 하 여 큰 이미지 보기](unlocking-and-approving-user-accounts-vb/_static/image9.png))
 
-
 다음으로, 로그 아웃 하 고 계정을 가진 사용자로 로그인 시도 방금 승인 없습니다. 사용자 승인 되지 않은, 때문에 로그인 할 수 없습니다. 기본적으로 로그인 컨트롤 어떤 이유로 든 사용자 로그인 할 수 없는 경우 동일한 메시지를 표시 합니다. 하지만 합니다 <a id="Tutorial6"> </a> [ *유효성 검사 사용자 자격 증명에 대 한 멤버 자격 사용자 스토어* ](../membership/validating-user-credentials-against-the-membership-user-store-vb.md) 자습서 더 적절 한 메시지를 표시 하려면 Login 컨트롤 향상에 대해 살펴보았습니다. 그림 4에서 알 수 있듯이, Chris 계정을 아직 승인 되지 않은 때문에 로그인 할 수 없는 그 설명 하는 메시지가 표시 됩니다.
-
 
 [![Chris 없습니다 때문에 His 로그인은 승인 되지 않음](unlocking-and-approving-user-accounts-vb/_static/image11.png)](unlocking-and-approving-user-accounts-vb/_static/image10.png)
 
 **그림 4**: Chris 없습니다 때문에 His 로그인은 승인 되지 않음 ([클릭 하 여 큰 이미지 보기](unlocking-and-approving-user-accounts-vb/_static/image12.png))
 
-
 잠금된 기능을 테스트 하려면 승인 된 권한으로 로그인 하지만 잘못 된 암호를 사용 하려고 합니다. 필요한 횟수 사용자 계정이 잠겨 때까지이 프로세스를 반복 합니다. Login 컨트롤 사용자 지정을 표시 하도록 업데이트 되었습니다 잠긴된 계정에서 로그인 하려고 하는 경우. 알고 계정 로그인 페이지에 다음 메시지가 표시 되 면 잠 궜 습니다. "계정에이 잠겨 잘못 된 로그인 시도 너무 많이 때문입니다. 관리자 계정이 잠금 해제에 문의 하십시오. "
 
 반환 합니다 `ManageUsers.aspx` 페이지 및 잠긴된 사용자 관리 링크를 클릭 합니다. 그림 5에서 알 수 있듯이의 값이 표시 됩니다 하는 `LastLockedOutDateLabel` 사용자 잠금 해제 단추를 사용 해야 합니다. 사용자 계정의 잠금을 해제 하려면 사용자 잠금 해제 단추를 클릭 합니다. 사용자 잠금 해제 한 후 다시 로그인 할 수 있습니다.
 
-
 [![Dave는 시스템에서 잠 궜 습니다.](unlocking-and-approving-user-accounts-vb/_static/image14.png)](unlocking-and-approving-user-accounts-vb/_static/image13.png)
 
 **그림 5**: Dave는 된 잠긴 개 시스템 ([클릭 하 여 큰 이미지 보기](unlocking-and-approving-user-accounts-vb/_static/image15.png))
-
 
 ## <a name="step-2-specifying-new-users-approved-status"></a>2단계: 새 사용자 지정 상태를 승인
 
@@ -129,7 +117,6 @@ CreateUserWizard 컨트롤 기본적으로 새 계정을 승인합니다. 컨트
 
 > [!NOTE]
 > 기본적으로 CreateUserWizard 컨트롤을 자동으로 새 사용자 계정에 기록합니다. 이 동작은 컨트롤에 의해 결정 됩니다 [ `LoginCreatedUser` 속성](https://msdn.microsoft.com/en-gb/library/system.web.ui.webcontrols.createuserwizard.logincreateduser.aspx)합니다. 승인 되지 않은 사용자가 사이트에 로그인 할 수 없습니다 때문에 때 `DisableCreatedUser` 됩니다 `True` 의 값에 관계 없이 사이트에 새 사용자 계정 기록 되지 않습니다는 `LoginCreatedUser` 속성입니다.
-
 
 새 사용자 계정을 통해 프로그래밍 방식으로 만들려는 경우 합니다 `Membership.CreateUser` 승인 되지 않은 사용자 계정을 만들려면 메서드를 새 사용자를 받아들이는 오버 로드 중 하나를 사용 합니다. `IsApproved` 입력된 매개 변수로 속성 값입니다.
 
@@ -148,7 +135,6 @@ CreateUserWizard 컨트롤에서 전자 메일을 보내도록 구성 해당 `Ma
 > [!NOTE]
 > 사용 하는 `MailDefinition` 메일 배달을 지정 해야 하는 속성의 옵션 `Web.config`합니다. 자세한 내용은 참조 [ASP.NET에서 전자 메일 보내기](http://aspnet.4guysfromrolla.com/articles/072606-1.aspx)합니다.
 
-
 라는 새 email 템플릿을 만들어 시작 `CreateUserWizard.txt` 에 `EmailTemplates` 폴더입니다. 템플릿에 대 한 다음 텍스트를 사용 합니다.
 
 [!code-aspx[Main](unlocking-and-approving-user-accounts-vb/samples/sample3.aspx)]
@@ -165,15 +151,12 @@ CreateUserWizard 컨트롤에서 전자 메일을 보내도록 구성 해당 `Ma
 
 최종적은 새 사용자 아니라는 승인 사이트에 로그인 할 수 없습니다.을 의미 합니다. 또한 자동으로 전송 됩니다 링크를 사용 하 여 전자 메일 확인 URL (그림 6 참조).
 
-
 [![새 사용자에 게 확인 URL에 대 한 링크를 사용 하 여 전자 메일](unlocking-and-approving-user-accounts-vb/_static/image17.png)](unlocking-and-approving-user-accounts-vb/_static/image16.png)
 
 **그림 6**: 새 사용자는 확인 URL에 대 한 링크를 사용 하 여 전자 메일을 받습니다 ([클릭 하 여 큰 이미지 보기](unlocking-and-approving-user-accounts-vb/_static/image18.png))
 
-
 > [!NOTE]
 > CreateUserWizard 컨트롤의 기본 CreateUserWizard 단계에는 사용자가 만든 계정과 계속 단추를 표시 하는 메시지가 표시 됩니다. 컨트롤의 지정 된 URL로 이동이 클릭 하면 `ContinueDestinationPageUrl` 속성입니다. CreateUserWizard `EnhancedCreateUserWizard.aspx` 새 사용자를 보내도록 구성 된는 `~/Membership/AdditionalUserInfo.aspx`, 사용자에 게 해당 출생지, 홈 페이지 URL 및 서명 확인 메시지를 표시 합니다. 사이트의 홈 페이지를 다시 사용자에 게 전송 하려면이 속성을 업데이트 하는 데이 정보만 추가할 수 있으므로 하 여 로그온 한 사용자, 적합 (`~/Default.aspx`). 또한는 `EnhancedCreateUserWizard.aspx` 페이지나 CreateUserWizard 단계 확인 전자 메일이 전송 된 하 고 해당 계정을이 전자 메일의 지침에 따라 해당 될 때까지 활성화 되지 않습니다 사용자에 게 확장할 수 해야 합니다. I 이러한 수정 사항을 판독기에 대 한 연습을 그대로 둡니다.
-
 
 ### <a name="creating-the-verification-page"></a>확인 페이지 만들기
 
@@ -187,11 +170,9 @@ Label 웹 컨트롤을 추가 합니다 `Verification.aspx` 페이지에서 해�
 
 그림 7은는 `Verification.aspx` 브라우저를 통해 방문 페이지입니다.
 
-
 [![새 사용자의 계정이 이제 승인](unlocking-and-approving-user-accounts-vb/_static/image20.png)](unlocking-and-approving-user-accounts-vb/_static/image19.png)
 
 **그림 7**: 새 사용자의 계정이 이제 승인 ([클릭 하 여 큰 이미지 보기](unlocking-and-approving-user-accounts-vb/_static/image21.png))
-
 
 ## <a name="summary"></a>요약
 

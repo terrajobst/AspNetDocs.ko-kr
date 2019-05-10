@@ -8,12 +8,12 @@ ms.date: 04/21/2011
 ms.assetid: ab55ca81-ab9b-44a0-8700-dc6da2599335
 msc.legacyurl: /mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-4
 msc.type: authoredcontent
-ms.openlocfilehash: 40fec3a2ef4ee8d5e4abe4be4dfa144720a88a41
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 402be340f1ea3344675e7b859cea8c5130cfc8ee
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59391184"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129656"
 ---
 # <a name="part-4-models-and-data-access"></a>4부: 모델 및 데이터 액세스
 
@@ -24,7 +24,6 @@ ms.locfileid: "59391184"
 > MVC Music Store는 온라인 음악 앨범을 판매 하 고 기본 사이트 관리, 사용자 로그인 및 장바구니 기능을 구현 하는 간단한 샘플 저장소 구현입니다.
 > 
 > 이 자습서 시리즈 모든 ASP.NET MVC Music Store 샘플 응용 프로그램 빌드를 수행 하는 단계를 자세히 설명 합니다. 4 부에서는 모델 및 데이터 액세스에 설명 합니다.
-
 
 지금 우리 했습니다 되었습니다 전달 하기만 "더미 데이터"는 컨트롤러에서 우리의 보기 템플릿에 합니다. 이제 실제 데이터베이스를 연결할 준비가 되었습니다. 이 자습서는 데이터베이스 엔진으로 SQL Server Compact Edition (SQL CE 라고도 함)를 사용 하는 방법을 다루는 것입니다. SQL CE는 무료, 임베디드, 파일 기반 데이터베이스를 설치 및 구성으로 로컬 개발 매우 편리 하 게 필요 하지 않습니다.
 

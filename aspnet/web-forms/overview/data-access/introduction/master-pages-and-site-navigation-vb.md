@@ -8,12 +8,12 @@ ms.date: 03/31/2010
 ms.assetid: 022801d8-a327-4d0c-8780-6094c9cee00d
 msc.legacyurl: /web-forms/overview/data-access/introduction/master-pages-and-site-navigation-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 38bc21c1a7809c235a85638cbb40183f2d0b422d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 4d12efbda00e75dad55cffc45955fb8b4c75dc26
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59398516"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130701"
 ---
 # <a name="master-pages-and-site-navigation-vb"></a>마스터 페이지 및 사이트 탐색(VB)
 
@@ -23,7 +23,6 @@ ms.locfileid: "59398516"
 
 > 친숙 한 웹 사이트의 일반적인 특징 중 하나는 일관 되 고 사이트 전체 페이지 레이아웃 및 탐색 체계를가지고 있다고 합니다. 이 자습서를 쉽게 업데이트할 수 있는 모든 페이지에 걸쳐 일관 된 모양과 느낌을 만드는 방법을 살펴봅니다.
 
-
 ## <a name="introduction"></a>소개
 
 친숙 한 웹 사이트의 일반적인 특징 중 하나는 일관 되 고 사이트 전체 페이지 레이아웃 및 탐색 체계를가지고 있다고 합니다. ASP.NET 2.0 간소화한 다음 두 사이트 전체 페이지 레이아웃 및 탐색 체계를 구현 하는 두 가지 새로운 기능이 도입 되었습니다: 마스터 페이지 및 사이트 탐색 합니다. 지정 된 편집 가능한 영역을 사용 하 여 사이트 전체 서식 파일을 만드는 개발자를 위한 마스터 페이지를 사용 합니다. 그런 다음 사이트의 ASP.NET 페이지에이 서식 파일을 적용할 수 있습니다. 마스터 페이지 지정 된 편집 가능한 영역에 대 한 이러한 ASP.NET 페이지 콘텐츠를 제공만 필요한 마스터 페이지를 사용 하는 모든 ASP.NET 페이지에 걸쳐 마스터 페이지의 다른 모든 태그는 동일 합니다. 이 모델에는 개발자를 정의 하 고 쉽게 업데이트할 수 있는 모든 페이지에 걸쳐 일관 된 모양과 느낌을 만들려면 보다 쉽게 사이트 전체 페이지 레이아웃을 중앙 집중화할 수 있습니다.
@@ -32,34 +31,27 @@ ms.locfileid: "59398516"
 
 이러한 개념을 설명 하 고 자습서 웹 사이트를 더 사용할 수 있도록 하려면이 단원에서는 사이트 전체 페이지 레이아웃을 정의 하 고, 사이트 맵을 구현, 탐색 UI를 추가 해 보겠습니다 줄입니다. 이 자습서의 끝에서 자습서 웹 페이지를 빌드하기 위한 세련 된 웹 사이트 디자인을 해야 합니다.
 
-
 [![이 자습서의 최종 결과](master-pages-and-site-navigation-vb/_static/image2.png)](master-pages-and-site-navigation-vb/_static/image1.png)
 
 **그림 1**: 최종 결과의 자습서 ([클릭 하 여 큰 이미지 보기](master-pages-and-site-navigation-vb/_static/image3.png))
-
 
 ## <a name="step-1-creating-the-master-page"></a>1단계: 마스터 페이지 만들기
 
 첫 번째 단계는 사이트의 마스터 페이지를 만드는 것입니다. 이제 웹 사이트 구성만 입력 데이터 집합을 마우스 오른쪽 단추로 (`Northwind.xsd`를 `App_Code` 폴더), 클래스 BLL (`ProductsBLL.vb`, `CategoriesBLL.vb`등, 모두는 `App_Code` 폴더), 데이터베이스 (`NORTHWND.MDF`의 `App_Data` 폴더)에 구성 파일 (`Web.config`), 및 CSS 스타일 시트 파일 (`Styles.css`). 해당 페이지와 이후 사용 하 여 BLL 및 DAL을 처음 두 자습서를 통해 우리는 수 다시 검토 이러한 예제를 자세히 이후 자습서에서 설명 하는 파일 I 정리 합니다.
 
-
 ![프로젝트의 파일](master-pages-and-site-navigation-vb/_static/image4.png)
 
 **그림 2**: 프로젝트의 파일
 
-
 마스터 페이지를 만들려면 솔루션 탐색기에서 프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 새 항목 추가 선택 합니다. 다음 템플릿 목록에서 마스터 페이지의 유형을 선택 하 고 이름을 `Site.master`입니다.
-
 
 [![웹 사이트에 새 마스터 페이지를 추가 합니다.](master-pages-and-site-navigation-vb/_static/image6.png)](master-pages-and-site-navigation-vb/_static/image5.png)
 
 **그림 3**: 웹 사이트에 새 마스터 페이지 추가 ([클릭 하 여 큰 이미지 보기](master-pages-and-site-navigation-vb/_static/image7.png))
 
-
 마스터 페이지에서 사이트 전체 페이지 레이아웃 여기를 정의 합니다. 디자인 뷰를 사용할 수 있으며 필요한 모든 레이아웃 또는 웹 컨트롤을 추가 하거나 수동으로 소스 뷰에서 태그를 수동으로 추가할 수 있습니다. 마스터 페이지 내에서 사용 하 여 [cascading style sheet](http://www.w3schools.com/css/default.asp) 배치 및 외부 파일에 정의 된 CSS 설정 사용 하 여 스타일 `Style.css`합니다. 아래에 표시 된 태그에서 알 수 없습니다, 하는 동안 CSS 규칙을 정의 하는 탐색 `<div>`의 콘텐츠는 왼쪽에 표시 되 고 고정 너비가 200 픽셀이 있도록 절대적으로 배치 됩니다.
 
 Site.master
-
 
 [!code-aspx[Main](master-pages-and-site-navigation-vb/samples/sample1.aspx)]
 
@@ -67,34 +59,27 @@ Site.master
 
 위에 입력 한 태그를 사용 하 여 마스터 페이지의 레이아웃을 표시 디자인 뷰로 전환 합니다. 이 마스터 페이지를 사용 하는 모든 ASP.NET 페이지에 대 한 태그를 지정 하는 기능을 사용 하 여이 균일 한 레이아웃을 해야 합니다.는 `MainContent` 지역입니다.
 
-
 [![마스터 페이지, 디자인 뷰를 통해 볼 때](master-pages-and-site-navigation-vb/_static/image9.png)](master-pages-and-site-navigation-vb/_static/image8.png)
 
 **그림 4**: 마스터 페이지 때 볼 통해 디자인 뷰 ([클릭 하 여 큰 이미지 보기](master-pages-and-site-navigation-vb/_static/image10.png))
-
 
 ## <a name="step-2-adding-a-homepage-to-the-website"></a>2단계: 웹 사이트 홈 페이지 추가
 
 정의 된 마스터 페이지에서는 웹 사이트에 대 한 ASP.NET 페이지를 추가할 준비가 된 것입니다. 추가 하 여 시작 해 보겠습니다 `Default.aspx`, 웹 사이트의 홈 페이지입니다. 솔루션 탐색기에서 프로젝트 이름을 마우스 오른쪽 새 항목 추가 선택 합니다. 파일 이름과 템플릿 목록에서 Web Form 옵션을 선택 `Default.aspx`합니다. 또한 "마스터 페이지 선택" 확인란을 확인 합니다.
 
-
 [![확인란을 선택 마스터 페이지를 확인 하는 중 새 Web Form을 추가 합니다.](master-pages-and-site-navigation-vb/_static/image12.png)](master-pages-and-site-navigation-vb/_static/image11.png)
 
 **그림 5**: 확인 확인란을 선택 마스터 페이지를 새 Web Form 추가 ([클릭 하 여 큰 이미지 보기](master-pages-and-site-navigation-vb/_static/image13.png))
 
-
 확인 단추를 클릭 한 후이 새 ASP.NET 페이지를 사용 해야 하는 마스터 페이지를 선택 하 라는 메시지가 표시 하는 것입니다. 프로젝트에 여러 마스터 페이지를 지정할 수 있습니다, 하나만 있는 것입니다.
-
 
 [![이 ASP.NET 페이지를 사용 해야 하는 마스터 페이지를 선택 합니다.](master-pages-and-site-navigation-vb/_static/image15.png)](master-pages-and-site-navigation-vb/_static/image14.png)
 
 **그림 6**: ASP.NET 페이지는 사용이 마스터 페이지 선택 ([클릭 하 여 큰 이미지 보기](master-pages-and-site-navigation-vb/_static/image16.png))
 
-
 마스터 페이지를 선택한 후 새 ASP.NET 페이지에는 다음과 같은 태그가 포함 됩니다.
 
 Default.aspx
-
 
 [!code-aspx[Main](master-pages-and-site-navigation-vb/samples/sample2.aspx)]
 
@@ -102,18 +87,15 @@ Default.aspx
 
 Default.aspx
 
-
 [!code-aspx[Main](master-pages-and-site-navigation-vb/samples/sample3.aspx)]
 
 `Title` 특성을 `@Page` 지시문을 사용 하면 ASP.NET 페이지에서 페이지의 제목도 설정 하는 `<title>` 요소가 마스터 페이지에 정의 되어 합니다. 설정할 수도 있습니다 제목 프로그래밍 방식으로 사용 하 여 `Page.Title`입니다. 또한 마스터 페이지의 스타일 시트에 대 한 참조 (같은 `Style.css`) 하는 방법과 ASP.NET 페이지의 마스터 페이지를 기준으로 어떤 디렉터리에 관계 없이 모든 ASP.NET 페이지에 자동으로 업데이트 됩니다.
 
 브라우저에서 페이지 모양을 보면 디자인 뷰로 전환 합니다. 디자인에서 마스터 페이지에 정의 되지 않은 ContentPlaceHolder 태그의 콘텐츠 편집 가능한 영역에만 적용 하는 편집할 수는 ASP.NET 페이지에 대 한 보기에 회색으로 표시 합니다.
 
-
 [![ASP.NET 페이지의 디자인 뷰를 편집할 수 및 편집할 수 없는 영역을 보여 줍니다.](master-pages-and-site-navigation-vb/_static/image18.png)](master-pages-and-site-navigation-vb/_static/image17.png)
 
 **그림 7**: 디자인 뷰에서 ASP.NET 페이지를 보여 줍니다 모두의 편집 가능 및 비-편집 가능 영역에 ([클릭 하 여 큰 이미지 보기](master-pages-and-site-navigation-vb/_static/image19.png))
-
 
 경우는 `Default.aspx` 브라우저에서 페이지를 방문, ASP.NET 엔진은 자동으로 페이지의 마스터 페이지 콘텐츠 및 ASP 병합 합니다. 장치와 콘텐츠를 요청한 브라우저에 전송 되는 최종 HTML에 병합 된 콘텐츠를 렌더링 합니다. 마스터 페이지의 콘텐츠 업데이트 되 면이 마스터 페이지를 사용 하는 모든 ASP.NET 페이지는 해당 콘텐츠를 요청 하는 다음에 새 마스터 페이지 콘텐츠를 사용 하 여 remerged 해야 합니다. 단일 페이지에 대 한 마스터 페이지 모델을 사용 하면 간단히 말해 되도록 레이아웃 템플릿 정의 (마스터 페이지) 해당 변경 내용이 전체 사이트에 바로 반영 됩니다.
 
@@ -127,11 +109,9 @@ Default.aspx
 
 마지막으로, 그림 8의 솔루션 탐색기에서 표시 된 것과 같이 새 파일을 추가 합니다. 각 파일에 추가 하는 경우 "마스터 페이지 선택" 확인란을 선택 해야 합니다.
 
-
 ![다음 파일 추가](master-pages-and-site-navigation-vb/_static/image20.png)
 
 **그림 8**: 다음 파일 추가
-
 
 ## <a name="step-2-creating-a-site-map"></a>2단계: 사이트 맵 만들기
 
@@ -141,11 +121,9 @@ ASP.NET 2.0 사이트 탐색 시스템 사이트 맵을 정의 하 고 다음 �
 
 그러나이 자습서에서는 보겠습니다 사용 하 여 제공 되는 기본 사이트 맵 공급자 ASP.NET 2.0을 사용 하 여 합니다. 사이트 맵을 단순히 솔루션 탐색기에서 프로젝트 이름을 마우스 오른쪽 단추로 클릭, 새 항목 추가 만든 사이트 맵 옵션을 선택 합니다. 이름으로 그대로 `Web.sitemap` 추가 단추를 클릭 합니다.
 
-
 [![사이트 맵을 프로젝트에 추가](master-pages-and-site-navigation-vb/_static/image22.png)](master-pages-and-site-navigation-vb/_static/image21.png)
 
 **그림 9**: 사이트 맵을 프로젝트에 추가 ([클릭 하 여 큰 이미지 보기](master-pages-and-site-navigation-vb/_static/image23.png))
-
 
 사이트 맵 파일은 XML 파일입니다. Visual Studio는 사이트 맵 구조에 대 한 IntelliSense를 제공 하는 참고 합니다. 사이트 맵 파일이 있어야 합니다 `<siteMap>` 정확 하 게 하나 포함 해야 하는 해당 루트 노드를 노드 `<siteMapNode>` 자식 요소입니다. 먼저 `<siteMapNode>` 포함할 수 있는 다음 요소 하위는 임의의 수 `<siteMapNode>` 요소입니다.
 
@@ -153,16 +131,13 @@ ASP.NET 2.0 사이트 탐색 시스템 사이트 맵을 정의 하 고 다음 �
 
 Web.sitemap
 
-
 [!code-xml[Main](master-pages-and-site-navigation-vb/samples/sample4.xml)]
 
 사이트 맵은 사이트의 다양 한 섹션을 설명 하는 계층 구조는 웹 사이트의 탐색 구조를 정의 합니다. 각 `<siteMapNode>` 요소에서 `Web.sitemap` 사이트의 탐색 구조에서 섹션을 나타냅니다.
 
-
 [![사이트 맵 탐색 계층 구조를 나타냅니다.](master-pages-and-site-navigation-vb/_static/image25.png)](master-pages-and-site-navigation-vb/_static/image24.png)
 
 **그림 10**: 사이트 맵 탐색 계층 구조를 나타냅니다 ([클릭 하 여 큰 이미지 보기](master-pages-and-site-navigation-vb/_static/image26.png))
-
 
 ASP.NET 사이트 맵 구조.NET Framework를 통해 노출 [SiteMap 클래스](https://msdn.microsoft.com/library/system.web.sitemap.aspx)합니다. 이 클래스에는 `CurrentNode` 사용자가 현재 방문; 섹션에 대 한 정보를 반환 하는 속성을 `RootNode` 속성 사이트 맵의 루트를 반환 합니다. (집이 사이트 맵에서). 모두를 `CurrentNode` 및 `RootNode` 속성 반환 [있으면](https://msdn.microsoft.com/library/system.web.sitemapnode.aspx) 속성을 포함 하는 경우와 같은 `ParentNode`를 `ChildNodes`, `NextSibling`, `PreviousSibling`, 등 사이트 맵에 대 한 허용 하는 진행할 계층입니다.
 
@@ -174,11 +149,9 @@ ASP.NET 2.0의 데이터에 액세스할 수 ASP.NET에서와 같이 프로그�
 
 사이트 맵 데이터를 사용 하 여 작업을 지원 하기 위해 ASP.NET 웹 사이트의 사이트 맵에 대 한 웹 컨트롤에 바인딩할 수 있는 SiteMapDataSource 컨트롤을 포함 합니다. 두 웹 컨트롤의 TreeView 및 메뉴 탐색 사용자 인터페이스를 제공 하 여 자주 사용 됩니다. 이러한 두 컨트롤 중 하나에 사이트 맵 데이터를 바인딩할 SiteMapDataSource TreeView와 함께 페이지에 추가 또는 메뉴 컨트롤 `DataSourceID` 속성을 적절 하 게 설정 합니다. 예를 들어, 다음 태그를 사용 하 여 마스터 페이지 메뉴 컨트롤을 추가 수 없습니다.
 
-
 [!code-aspx[Main](master-pages-and-site-navigation-vb/samples/sample5.aspx)]
 
 내보낸된 HTML에 대 한 제어를 더 세부적인 수준에 대 한 Repeater 컨트롤, SiteMapDataSource 컨트롤을 바인딩할 수 있습니다 다음과 같이 합니다.
-
 
 [!code-aspx[Main](master-pages-and-site-navigation-vb/samples/sample6.aspx)]
 
@@ -186,28 +159,23 @@ SiteMapDataSource 컨트롤 수준을 반환 합니다 사이트 맵 계층 1 �
 
 위의 반복기 예제는 다음과 같은 태그가 렌더링 됩니다.
 
-
 [!code-html[Main](master-pages-and-site-navigation-vb/samples/sample7.html)]
 
 이러한 사이트 맵 노드 (기본 보고, 보고서 필터링 및 사용자 지정 서식 지정)를 구성 하는 *두 번째* 렌더링 되 고 첫 번째 사이트 맵의 수준입니다. 왜냐하면 SiteMapDataSource의 `ShowStartingNode` 속성이 False로 루트 사이트 맵 노드를 무시 하는 사이트 맵 계층에서 두 번째 수준을 반환 하 여 시작 대신 SiteMapDataSource 발생 합니다.
 
 기본 보고, 보고서 필터링 및 사용자 지정 서식 지정에 대 한 자식을 표시할 `SiteMapNode` 개이면 다른 반복기 초기 Repeater를 추가할 수 `ItemTemplate`입니다. 이 두 번째 반복기에 바인딩될 합니다 `SiteMapNode` 인스턴스의 `ChildNodes` 속성을 다음과 같이:
 
-
 [!code-aspx[Main](master-pages-and-site-navigation-vb/samples/sample8.aspx)]
 
 이러한 두 반복기 (일부 태그 제거 되었습니다 간략하게 표현 하기 위해) 다음 태그에서 발생 합니다.
-
 
 [!code-html[Main](master-pages-and-site-navigation-vb/samples/sample9.html)]
 
 선택한 스타일 CSS를 사용 하 여에서 [Rachel Andrew](http://www.rachelandrew.co.uk/)책의 [The CSS Anthology: 101 필수 팁, 요령 &amp; 해킹](https://www.amazon.com/gp/product/0957921888/qid=1137565739/sr=8-1/ref=pd_bbs_1/103-0562306-3386214?n=507846&amp;s=books&amp;v=glance)의 `<ul>` 및 `<li>` 태그는 다음과 같이 visual 출력 되도록 요소의 스타일이 지정:
 
-
 ![두 반복기 및 일부 CSS에서 구성 메뉴](master-pages-and-site-navigation-vb/_static/image27.png)
 
 **그림 11**: 두 반복기 및 일부 CSS에서 구성 메뉴
-
 
 이 메뉴 마스터 페이지 및에 정의 된 사이트 맵에 바인딩된 `Web.sitemap`즉, 사용 하는 페이지는 사이트 맵 변경 내용이 즉시 반영 됩니다 모든는 `Site.master` 마스터 페이지입니다.
 
@@ -223,7 +191,6 @@ SiteMapDataSource 컨트롤 수준을 반환 합니다 사이트 맵 계층 1 �
 
 페이지의 뷰 상태를 보겠습니다 줄이려면 설정 Repeater 컨트롤 `EnableViewState` 속성을 `False`입니다. 또는 선언적으로 원본 뷰 디자이너에서 속성 창을 통해이 수행할 수 있습니다. 이렇게 변경한 후 반복기의 선언적 태그 같이 표시 됩니다.
 
-
 [!code-aspx[Main](master-pages-and-site-navigation-vb/samples/sample10.aspx)]
 
 이렇게이 변경 하면 페이지의 보기 상태 크기 뿐 축소에 렌더링 후 52 바이트, 97% 절감 보기 상태 크기! 이 시리즈 전체 자습서에서에서는 비활성화 데이터 웹 컨트롤의 뷰 상태를 기본적으로 렌더링된 된 태그의 크기를 줄이기 위해. 대부분의 예제는 `EnableViewState` 속성에 설정할 `False` 언급 없이 수행 하 고 합니다. 에 보기 상태에 설명 합니다는 여기서 데이터에 대 한 순서 대로 설정 해야 하는 시나리오의 웹 예상 되는 기능을 제공 하도록 제어 합니다.
@@ -234,16 +201,13 @@ SiteMapDataSource 컨트롤 수준을 반환 합니다 사이트 맵 계층 1 �
 
 이 사이트에 대 한 헤더에이 컨트롤을 추가 `<div>`:
 
-
 [!code-aspx[Main](master-pages-and-site-navigation-vb/samples/sample11.aspx)]
 
 루트까지 사용자는 해당 사이트의 "상위" 맵 노드를 비롯 하 여 사이트 맵 계층 구조에 방문 하 여 이동 경로 탐색이 현재 페이지를 보여 줍니다. (집이 사이트 맵에서).
 
-
 ![현재 페이지를 표시 하는 이동 경로 및 해당 상위 사이트의 계층 구조를 매핑합니다.](master-pages-and-site-navigation-vb/_static/image28.png)
 
 **그림 12**: 현재 페이지를 표시 하는 이동 경로 및 해당 상위 사이트의 계층 구조를 매핑합니다.
-
 
 ## <a name="step-5-adding-the-default-page-for-each-section"></a>5단계: 각 섹션에 대 한 기본 페이지를 추가합니다.
 
@@ -251,19 +215,15 @@ SiteMapDataSource 컨트롤 수준을 반환 합니다 사이트 맵 계층 1 �
 
 마찬가지로 이번 제목 및 자습서의 설명을 표시 됩니다는 반복기를 사용 하 여 순서 없는 목록에 표시 해 보겠습니다. 태그 및이 수행 하는 코드를 각각에 대해 반복 해야 하므로 `Default.aspx` 페이지에서이 UI 논리를 캡슐화 수 것을 [사용자 정의 컨트롤](https://msdn.microsoft.com/library/y6wb1a0e.aspx)합니다. 이라는 웹 사이트에 폴더를 만듭니다 `UserControls` 라는 웹 사용자 컨트롤 유형의 새 항목을 추가 하 고 `SectionLevelTutorialListing.ascx`, 다음 태그를 추가 하 고:
 
-
 [![UserControls 폴더에 새 웹 사용자 컨트롤 추가](master-pages-and-site-navigation-vb/_static/image30.png)](master-pages-and-site-navigation-vb/_static/image29.png)
 
 **그림 13**: 새 웹 사용자 컨트롤을 추가 합니다 `UserControls` 폴더 ([큰 이미지를 보려면 클릭](master-pages-and-site-navigation-vb/_static/image31.png))
 
-
 SectionLevelTutorialListing.ascx
-
 
 [!code-aspx[Main](master-pages-and-site-navigation-vb/samples/sample12.aspx)]
 
 SectionLevelTutorialListing.ascx.vb
-
 
 [!code-vb[Main](master-pages-and-site-navigation-vb/samples/sample13.vb)]
 
@@ -271,16 +231,13 @@ SectionLevelTutorialListing.ascx.vb
 
 이 반복기를 만든 후 엽니다는 `Default.aspx` 폴더의 각 페이지 디자인 보기로 이동 하 여 간단히 사용자 정의 컨트롤에서에서 끌어서 솔루션 탐색기에서 디자인 화면으로 하려는 표시할 자습서 목록입니다.
 
-
 [![Default.aspx에 추가 된 사용자 컨트롤에](master-pages-and-site-navigation-vb/_static/image33.png)](master-pages-and-site-navigation-vb/_static/image32.png)
 
 **그림 14**: 사용자 정의 컨트롤에 추가할 `Default.aspx` ([큰 이미지를 보려면 클릭](master-pages-and-site-navigation-vb/_static/image34.png))
 
-
 [![기본 보고 자습서 나와 있습니다.](master-pages-and-site-navigation-vb/_static/image36.png)](master-pages-and-site-navigation-vb/_static/image35.png)
 
 **그림 15**: 기본 보고 자습서 나열 됩니다 ([클릭 하 여 큰 이미지 보기](master-pages-and-site-navigation-vb/_static/image37.png))
-
 
 ## <a name="summary"></a>요약
 

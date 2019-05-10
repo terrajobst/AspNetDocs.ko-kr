@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 969ab824-1b98-4552-81fe-b60ef5fc6887
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-custom-action-filters
 msc.type: authoredcontent
-ms.openlocfilehash: 32587c7b0fd3075cd46678922b40bda2019f3a26
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: eaeb32180f79fabf557cbc38ff067eb26b47fea7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381135"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129760"
 ---
 # <a name="aspnet-mvc-4-custom-action-filters"></a>ASP.NET MVC 4 사용자 지정 작업 필터
 
@@ -76,7 +76,6 @@ ASP.NET MVC는 작업 메서드가 호출 되기 전후 필터링 논리를 실�
 > [!NOTE]
 > 각 실습 동반 되는 **최종** 연습을 완료 한 후 가져와야 결과 솔루션이 포함 된 폴더입니다. 이 연습을 진행 하는 추가 도움이 필요한 경우이 솔루션 가이드로 사용할 수 있습니다.
 
-
 <a id="Exercise1"></a>
 
 <a id="Exercise_1_Logging_Actions"></a>
@@ -95,7 +94,6 @@ ASP.NET MVC는 작업 메서드가 호출 되기 전후 필터링 논리를 실�
 > - **예외** 어딘가에 메서드에서 예외를 throw 작업, 권한 부여 필터를 사용 하 여 시작 하 고 결과의 실행을 사용 하 여 종료 처리 되지 않은 예외가 발생 하는 경우를 실행 하는 필터입니다. 예외 필터는 로깅 또는 오류 페이지 표시 등의 작업에 사용할 수 있습니다.
 > 
 > 필터 공급자에 대 한 자세한 내용은이 MSDN 링크를 참조 하세요. ([https://msdn.microsoft.com/library/dd410209.aspx](https://msdn.microsoft.com/library/dd410209.aspx)).
-
 
 <a id="AboutLoggingFeature"></a>
 
@@ -132,7 +130,6 @@ ASP.NET MVC는 작업 메서드가 호출 되기 전후 필터링 논리를 실�
 > - **OnResultExecuted**(ResultExecutedContext filterContext): (뷰를 렌더링할) 후 결과 실행 합니다.
 > 
 > 이러한 방법 중 하나를 파생 클래스로 재정의 함으로써 필터링 사용자 고유의 코드를 실행할 수 있습니다.
-
 
 1. 엽니다는 **시작할** 솔루션에 있는 **\Source\Ex01-LoggingActions\Begin** 폴더.
 
@@ -352,7 +349,6 @@ ASP.NET MVC는 작업 메서드가 호출 되기 전후 필터링 논리를 실�
 
 > [!NOTE]
 > 또한 다음 Windows Azure 웹 사이트에이 응용 프로그램을 배포할 수 [부록 b: 웹 배포를 사용 하 여 ASP.NET MVC 4 응용 프로그램 게시](#AppendixB)합니다.
-
 
 ---
 

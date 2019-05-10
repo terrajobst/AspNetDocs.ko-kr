@@ -8,12 +8,12 @@ ms.date: 01/18/2008
 ms.assetid: 3c815a9e-2296-4b9b-b945-776d54989daa
 msc.legacyurl: /web-forms/overview/older-versions-security/membership/user-based-authorization-cs
 msc.type: authoredcontent
-ms.openlocfilehash: f596a4a9ae92e567a5ac98db26584d4575931a60
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3078c186431d7662d54bc7e05dde60124de1956d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59382106"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131877"
 ---
 # <a name="user-based-authorization-c"></a>사용자 기반 권한 부여(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59382106"
 [코드를 다운로드](http://download.microsoft.com/download/3/f/5/3f5a8605-c526-4b34-b3fd-a34167117633/ASPNET_Security_Tutorial_07_CS.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/3/f/5/3f5a8605-c526-4b34-b3fd-a34167117633/aspnet_tutorial07_UserAuth_cs.pdf)
 
 > 이 자습서에서는 살펴보겠습니다 페이지에 대 한 액세스를 제한 하 고 다양 한 기술을 통해 페이지 수준 기능을 제한 합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -44,11 +43,9 @@ ASP.NET을 사용 하면 쉽게 사용자 기반 권한 부여 규칙을 정의�
 
 그림 1은 ASP.NET 파이프라인의 워크플로 `FormsAuthenticationModule`, 및 `UrlAuthorizationModule` 권한이 없는 요청이 도착 하는 경우. 그림 1에 대 한 익명는 방문자에서 요청을 보여 줍니다 특히 `ProtectedPage.aspx`, 익명 사용자에 대 한 액세스를 거부 하는 페이지는 합니다. 방문자 익명 이므로 `UrlAuthorizationModule` 요청을 중단 하 고 HTTP 401 권한이 없음 상태를 반환 합니다. `FormsAuthenticationModule` 로그인 페이지로 302 리디렉션으로 401 상태를 변환 합니다. 사용자가 로그인 페이지를 통해 인증 되 면 그 리디렉션됩니다 `ProtectedPage.aspx`합니다. 이 이번에는 `FormsAuthenticationModule` 인증 티켓을 기반으로 사용자를 식별 합니다. 방문자가 인증 했으므로 `UrlAuthorizationModule` 페이지에 대 한 액세스를 허용 합니다.
 
-
 [![폼 인증 및 권한 부여 워크플로 URL](user-based-authorization-cs/_static/image2.png)](user-based-authorization-cs/_static/image1.png)
 
 **그림 1**: 폼 인증 및 권한 부여 워크플로 URL ([클릭 하 여 큰 이미지 보기](user-based-authorization-cs/_static/image3.png))
-
 
 그림 1에서는 익명 방문자는 익명 사용자에 게 제공 되지 않는 리소스에 액세스 하려고 할 때 발생 하는 상호 작용을 보여 줍니다. 이러한 경우 익명 방문자가 쿼리 문자열에 지정 된 방문 하려고 그녀는 페이지를 사용 하 여 로그인 페이지로 리디렉션됩니다. 사용자가 성공적으로 로그온 되 면 그녀 자동으로 리디렉션됩니다 다시 그녀 보고 하려고 처음 리소스입니다.
 
@@ -58,17 +55,14 @@ ASP.NET을 사용 하면 쉽게 사용자 기반 권한 부여 규칙을 정의�
 
 그림 2에서는이 혼란 스 러 워크플로 보여 줍니다.
 
-
 [![기본 워크플로 혼동 순환 시킬 수 있습니다.](user-based-authorization-cs/_static/image5.png)](user-based-authorization-cs/_static/image4.png)
 
 **그림 2**: 기본 워크플로 발생할 수 있습니다 혼동 주기 ([클릭 하 여 큰 이미지 보기](user-based-authorization-cs/_static/image6.png))
-
 
 그림 2의 워크플로에 대부분의 컴퓨터 전문 방문자를 befuddle 신속 하 게 수 있습니다. 이 2 단계에서에서 주기를 혼동을 방지 하는 방법을 살펴보겠습니다.
 
 > [!NOTE]
 > ASP.NET는 현재 사용자가 특정 웹 페이지를 액세스할 수 있는지를 확인 하려면 두 가지 메커니즘을 사용 합니다. URL 권한 부여 및 파일 권한 부여 합니다. 파일 권한 부여에 의해 구현 됩니다 합니다 [ `FileAuthorizationModule` ](https://msdn.microsoft.com/library/system.web.security.fileauthorizationmodule.aspx), 기관 요청한 파일 Acl을 참조 하 여 결정 합니다. 파일 권한 부여에 Windows 계정에 적용 되는 권한 Acl 때문에 Windows 인증을 사용 하 여 가장 많이 사용 됩니다. Forms 인증을 사용 하는 경우 모든 운영 체제 및 파일 시스템 수준 요청 사이트를 방문 하는 사용자에 관계 없이 동일한 Windows 계정에 의해 실행 됩니다. 이 자습서 시리즈는 폼 인증에 중점을 두고, 이후 하지 논의할 파일 권한 부여 합니다.
-
 
 ### <a name="the-scope-of-url-authorization"></a>URL 권한 부여 범위
 
@@ -80,7 +74,6 @@ ASP.NET을 사용 하면 쉽게 사용자 기반 권한 부여 규칙을 정의�
 
 > [!NOTE]
 > 가지는 방법에 몇 가지 미묘 하면서도 중요 한 차이점이 ASP 합니다. NET의 `UrlAuthorizationModule` 및 IIS 7의 URL 권한 부여 기능을 권한 부여 규칙을 처리 합니다. 이 자습서는 IIS 7의 URL 권한 부여 기능이 나 하는 방법에 비해 권한 부여 규칙을 구문 분석의 차이점을 검사 하지는 `UrlAuthorizationModule`합니다. 이러한 항목에 대 한 자세한 내용은 MSDN 또는 IIS 7 설명서를 참조 [www.iis.net](https://www.iis.net/)합니다.
-
 
 ## <a name="step-1-defining-url-authorization-rules-inwebconfig"></a>1단계: URL 권한 부여 규칙을 정의합니다.`Web.config`
 
@@ -100,7 +93,6 @@ ASP.NET을 사용 하면 쉽게 사용자 기반 권한 부여 규칙을 정의�
 > [!NOTE]
 > 합니다 `<allow>` 고 `<deny>` 요소는 역할에 대 한 권한 부여 규칙을 지정할 수도 있습니다. 이후 자습서에서 역할 기반 권한 부여를 살펴보겠습니다.
 
-
 다음 설정을 Sam (익명 방문자 포함) 이외의 모든 사용자에 게 액세스 권한을 부여 합니다.
 
 [!code-xml[Main](user-based-authorization-cs/samples/sample2.xml)]
@@ -115,19 +107,15 @@ ASP.NET을 사용 하면 쉽게 사이트에서 다른 파일 및 폴더에 대 
 
 인증 된 사용자만의 ASP.NET 페이지를 방문할 수 있도록 웹 사이트를 업데이트 해 보겠습니다는 `Membership` 폴더입니다. 추가 해야이 작업을 수행 하는 `Web.config` 파일을 `Membership` 폴더 익명 사용자를 거부 하려면 해당 권한 부여 설정을 합니다. 마우스 오른쪽 단추로 클릭 합니다 `Membership` 상황에 맞는 메뉴에서 새 항목 추가 메뉴를 선택 하 고 라는 새 웹 구성 파일을 추가 하는 솔루션 탐색기에서 폴더 `Web.config`합니다.
 
-
 [![멤버 자격 폴더에 Web.config 파일 추가](user-based-authorization-cs/_static/image8.png)](user-based-authorization-cs/_static/image7.png)
 
 **그림 3**: 추가 된 `Web.config` 파일을 합니다 `Membership` 폴더 ([전체 크기 이미지를 보려면 클릭](user-based-authorization-cs/_static/image9.png))
 
-
 이 시점에서 프로젝트 두 개 포함 해야 `Web.config` 파일: 루트 디렉터리에서 하나에 하나는 `Membership` 폴더.
-
 
 [![이제 응용 프로그램 Web.config 파일을 두 개 포함](user-based-authorization-cs/_static/image11.png)](user-based-authorization-cs/_static/image10.png)
 
 **그림 4**: 사용자 응용 프로그램은 이제 포함 두 `Web.config` 파일 ([큰 이미지를 보려면 클릭](user-based-authorization-cs/_static/image12.png))
-
 
 구성 파일 업데이트는 `Membership` 폴더는 익명 사용자에 대 한 액세스를 금지 합니다.
 
@@ -139,11 +127,9 @@ ASP.NET을 사용 하면 쉽게 사이트에서 다른 파일 및 폴더에 대 
 
 왼쪽된 열에서 찾은 사용자 계정 만들기 링크를 클릭 합니다. 이 데는 `~/Membership/CreatingUserAccounts.aspx`합니다. 때문를 `Web.config` 파일을 `Membership` 익명 액세스를 금지 하는 권한 부여 규칙을 정의 하는 폴더는 `UrlAuthorizationModule` 요청을 중단 하 고 HTTP 401 권한이 없음 상태를 반환 합니다. `FormsAuthenticationModule` 로그인 페이지에 보내는 302 리디렉션 상태에이 수정 합니다. 페이지에서는 하 려 했던 액세스 확인 (`CreatingUserAccounts.aspx`)를 통해 로그인 페이지로 전달 되는 `ReturnUrl` querystring 매개 변수입니다.
 
-
 [![URL 권한 부여 규칙 금지 익명 액세스를 로그인 페이지로 리디렉션됩니다 됩니다 것](user-based-authorization-cs/_static/image14.png)](user-based-authorization-cs/_static/image13.png)
 
 **그림 5**: URL 권한 부여 규칙 금지 익명 액세스를 로그인 페이지로 리디렉션됩니다는 것 ([클릭 하 여 큰 이미지 보기](user-based-authorization-cs/_static/image15.png))
-
 
 리디렉션됩니다에서는 성공적으로 로그인 할 때를 `CreatingUserAccounts.aspx` 페이지입니다. 이 이번에는 `UrlAuthorizationModule` 익명 하는 것을 더 이상 없으므로 페이지에 대 한 액세스를 허용 합니다.
 
@@ -161,7 +147,6 @@ ASP.NET을 사용 하면 쉽게 사이트에서 다른 파일 및 폴더에 대 
 
 > [!NOTE]
 > 합니다 `<location>` 외부 구성 요소와 야 `<system.web>` 요소입니다. 별도 사용 해야 할 `<location>` 권한 부여 설정을 재정의 하려는 각 리소스에 대 한 요소입니다.
-
 
 ### <a name="a-look-at-how-theurlauthorizationmoduleuses-the-authorization-rules-to-grant-or-deny-access"></a>확인 하는 방법을`UrlAuthorizationModule`권한 부여 규칙을 사용 하 여 액세스를 부여 하거나 거부할
 
@@ -195,11 +180,9 @@ A Look URL 권한 부여 워크플로 섹션에서이 자습서의 앞부분에�
 
 이 시점에서 우리는 익명 이므로 `Request.IsAuthenticated` 반환 `false` 것에 리디렉션되지 않습니다 및 `UnauthorizedAccess.aspx`합니다. 대신 로그인 페이지가 표시 됩니다. Bruce 같은 Tito 이외의 사용자로 로그인 합니다. 적절 한 자격 증명을 입력 한 후 로그인 페이지를 미국 리디렉션을 `~/Membership/CreatingUserAccounts.aspx`합니다. 그러나 Tito에 액세스할 수만이 페이지 이므로 볼 수 있는 권한이 하 고 로그인 페이지에 즉시 반환 됩니다. 그러나이 시간 `Request.IsAuthenticated` 반환 `true` (및 `ReturnUrl` querystring 매개 변수 존재) 이므로에서는 리디렉션됩니다는 `UnauthorizedAccess.aspx` 페이지.
 
-
 [![인증, 권한 없는 사용자가 리디렉션됩니다 UnauthorizedAccess.aspx](user-based-authorization-cs/_static/image17.png)](user-based-authorization-cs/_static/image16.png)
 
 **그림 6**: 인증, 권한 없는 사용자가 리디렉션됩니다 `UnauthorizedAccess.aspx` ([큰 이미지를 보려면 클릭](user-based-authorization-cs/_static/image18.png))
-
 
 이 사용자 지정된 워크플로 단락 (short-circuit) 그림 2에 나와 있는 주기에서 더욱 합리적인 하 고 간단한 사용자 환경을 제공 합니다.
 
@@ -216,7 +199,6 @@ GridView 내에서 특정 디렉터리의 파일을 나열 하는 페이지를 �
 > [!NOTE]
 > 빌드에 ASP.NET 페이지 파일의 목록을 표시 하려면 GridView 컨트롤을 사용 합니다. 계열 폼 인증, 권한 부여, 사용자 계정 및 역할에 중점을 두고이 자습서에서는 이후는 너무 많은 시간을 GridView 컨트롤의 내부 작업에 설명 하지 않겠습니다. 이 자습서에서이 페이지를 설정 하기 위한 특정 단계별 지침을 제공 하지만 특정 변경한 이유는 렌더링 된 출력을 미치는 효과 특정 속성의 세부 정보를 자세히 하지 않습니다. GridView 컨트롤의 철저 한 검사를 참조 하세요. 필자의 *[ASP.NET 2.0에서 데이터로 작업할](../../data-access/index.md)* 자습서 시리즈입니다.
 
-
 열어서 시작 합니다 `UserBasedAuthorization.aspx` 파일을 `Membership` 폴더 및 라는 페이지에 GridView 컨트롤을 추가 `FilesGrid`. GridView의 스마트 태그에서 필드 대화 상자를 시작 하는 열 편집 링크를 클릭 합니다. 여기에서 왼쪽된 아래 모서리에서 자동 생성 필드 확인란의 선택을 취소 합니다. 그런 다음 (선택한 Delete 단추 CommandField 형식에서 찾을 수 있습니다) 왼쪽된 위 모퉁이에서 선택 단추, Delete 단추 및 두 BoundFields를 추가 합니다. 선택 단추를 설정 `SelectText` 속성을 보고 된 첫 번째 BoundField `HeaderText` 및 `DataField` 속성 이름입니다. 두 번째 BoundField의 설정 `HeaderText` 속성 크기 (바이트), 해당 `DataField` 길이 속성 해당 `DataFormatString` 속성을 {0:N0} 고 `HtmlEncode` 속성을 false로 합니다.
 
 GridView의 열을 구성한 후 필드 대화 상자를 닫으려면 확인을 클릭 합니다. 속성 창에서 설정 된 GridView `DataKeyNames` 속성을 `FullName`입니다. 이 시점에서 GridView의 선언적 태그는 다음과 같아야 합니다.
@@ -232,14 +214,11 @@ GridView의 태그 생성에서는 특정 디렉터리의 파일을 검색 하 �
 > [!NOTE]
 > `DirectoryInfo` 하 고 `FileInfo` 클래스에서 발견 되는 [ `System.IO` 네임 스페이스](https://msdn.microsoft.com/library/system.io.aspx)합니다. 따라서가 해당 네임 스페이스 이름 사용 하 여 이러한 클래스 이름 앞에 클래스 파일을 가져올 네임 스페이스를 가진 (통해 `using System.IO`).
 
-
 잠시 브라우저를 통해이 페이지를 방문 합니다. 응용 프로그램의 루트 디렉터리에 있는 파일 목록이 표시 됩니다. 뷰 또는 Linkbutton 삭제 중 하나를 클릭 하면 포스트백을 하지만 조치가를 아직 했습니다 때문에 발생 합니다. 필요한 이벤트 처리기를 만들어야 합니다.
-
 
 [![웹 응용 프로그램의 루트 디렉터리의 파일을 나열 하는 GridView](user-based-authorization-cs/_static/image20.png)](user-based-authorization-cs/_static/image19.png)
 
 **그림 7**: 웹 응용 프로그램의 루트 디렉터리의 파일을 나열 하는 GridView ([클릭 하 여 큰 이미지 보기](user-based-authorization-cs/_static/image21.png))
-
 
 선택한 파일의 내용을 표시 하는 데 필요 합니다. Visual Studio로 돌아가서 라는 텍스트 상자 추가 `FileContents` GridView 위에 있습니다. 설정 해당 `TextMode` 속성을 `MultiLine` 및 해당 `Columns` 고 `Rows` 속성 95% 및 10을 각각.
 
@@ -251,15 +230,12 @@ GridView의 태그 생성에서는 특정 디렉터리의 파일을 검색 하 �
 
 이 코드에서는 GridView의 `SelectedValue` 선택한 파일의 전체 파일 이름을 확인 하는 속성입니다. 내부적으로 `DataKeys` 얻으려면 컬렉션은 참조를 `SelectedValue`GridView의 설정 하는 필수 이므로, `DataKeyNames` 속성 이름에이 단계의 앞부분에 설명 된 대로 합니다. [ `File` 클래스](https://msdn.microsoft.com/library/system.io.file.aspx) 에 할당 한 다음는 문자열로 선택한 파일의 콘텐츠를 읽는 데 사용 되는 `FileContents` 텍스트 상자의 `Text` 속성 페이지에서 선택한 파일의 내용을 표시할 수 있습니다.
 
-
 [![텍스트 상자에 선택한 파일의 내용이 표시 됩니다.](user-based-authorization-cs/_static/image23.png)](user-based-authorization-cs/_static/image22.png)
 
 **그림 8**: 텍스트 상자에 선택한 파일의 내용이 표시 됩니다 ([클릭 하 여 큰 이미지 보기](user-based-authorization-cs/_static/image24.png))
 
-
 > [!NOTE]
 > HTML 태그를 포함 하는 파일의 내용 보기를 보거나 파일 삭제를 시도 하는 경우 받게는 `HttpRequestValidationException` 오류입니다. 이 텍스트 상자의 내용을 다시 게시할 때 웹 서버에 다시 전송 되기 때문에 발생 합니다. 기본적으로 asp는 `HttpRequestValidationException` HTML 태그와 같은 잠재적으로 위험한 포스트백 콘텐츠를 감지 될 때마다 오류입니다. 이 오류가 발생 하는 사용 하지 않도록 설정, 해제 페이지에 대 한 요청 유효성 검사를 추가 하 여 `ValidateRequest="false"` 에 `@Page` 지시문입니다. 뿐만 아니라 예방 조치를 취해야 때로 요청 유효성 검사의 이점에 대 한 자세한 내용은 참조를 사용 하지 않도록 설정 [요청 유효성 검사-스크립트 공격 방지](https://asp.net/learn/whitepapers/request-validation/)합니다.
-
 
 마지막으로 gridview의 다음 코드를 사용 하 여 이벤트 처리기를 추가 [ `RowDeleting` 이벤트](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.rowdeleting.aspx):
 
@@ -267,11 +243,9 @@ GridView의 태그 생성에서는 특정 디렉터리의 파일을 검색 하 �
 
 코드에서 삭제할 파일의 전체 이름을 표시 합니다 `FileContents` 텍스트 상자 *없이* 실제로 파일을 삭제 합니다.
 
-
 [![삭제 단추를 클릭 하면 실제로 삭제 되지 않습니다 파일](user-based-authorization-cs/_static/image26.png)](user-based-authorization-cs/_static/image25.png)
 
 **그림 9**: 파일을 클릭 하 여 삭제 단추 실제로 삭제 되지 않습니다 ([클릭 하 여 큰 이미지 보기](user-based-authorization-cs/_static/image27.png))
-
 
 1 단계에서에서 익명 사용자의 페이지를 보고 하지 못하게 하려면 URL 권한 부여 규칙을 구성 했습니다는 `Membership` 폴더입니다. 더 잘 나타낼 세부적으로 인증을 위해 방문 하 여 익명 사용자를 허용 해 보겠습니다는 `UserBasedAuthorization.aspx` 페이지 하지만 제한 된 기능입니다. 에 모든 사용자가 액세스할 수 있도록이 페이지를 열려면 다음을 추가 `<location>` 요소를 `Web.config` 파일을 `Membership` 폴더:
 
@@ -297,11 +271,9 @@ LoginView의 템플릿에서 웹 컨트롤이 더 이상 코드 숨김 클래스
 
 텍스트 상자 LoginView의로 이동한 후 `LoggedInTemplate` 텍스트 상자를 통해 참조 페이지의 코드를 업데이트 하 고는 `FindControl("controlId")` 패턴 익명 사용자로 페이지를 방문 하십시오. 그림 10과 같이 `FileContents` 텍스트 상자에 표시 되지 않습니다. 그러나 보기 LinkButton 계속 표시 됩니다.
 
-
 [![LoginView 컨트롤에만 인증 된 사용자는 FileContents 텍스트 렌더링](user-based-authorization-cs/_static/image29.png)](user-based-authorization-cs/_static/image28.png)
 
 **그림 10**: LoginView 컨트롤만 렌더링 합니다 `FileContents` Authenticated Users에 대 한 텍스트 상자에 붙여넣습니다 ([큰 이미지를 보려면 클릭](user-based-authorization-cs/_static/image30.png))
-
 
 익명 사용자에 대 한 뷰 단추를 숨기려면 하나의 방법은 GridView 필드를 TemplateField로 변환 하는 것입니다. 이 보기 linkbutton 선언적 태그를 포함 하는 템플릿으로 생성 됩니다. 그런 다음를 TemplateField LoginView 컨트롤을 추가 하 고 LoginView의 내 LinkButton을 배치할 수 있습니다 `LoggedInTemplate`시켜 익명 방문자에서 뷰 단추를 숨기기. 이를 위해 필드 대화 상자를 시작 하려면 GridView의 스마트 태그에서 열 편집 링크를 클릭 합니다. 다음으로, 왼쪽된 아래 모서리에 있는 목록에서 선택 단추를 선택 하 고 변환을이 필드를 templatefield로 링크를 클릭 합니다. 이렇게 수정 필드의 선언 태그에서:
 
@@ -317,11 +289,9 @@ LoginView의 템플릿에서 웹 컨트롤이 더 이상 코드 숨김 클래스
 
 그림 11에서 알 수 있듯이, 최종 결과 아닌 경우는 상당히 뷰로 열이 여전히 표시 열 내의 보기 Linkbutton 숨겨진 경우에 살펴보겠습니다 전체 GridView 열 (및 뿐 아니라 LinkButton)를 숨기는 방법을 다음 섹션에 있습니다.
 
-
 [![LoginView 컨트롤 익명 방문자에 대 한 보기 Linkbutton을 숨깁니다.](user-based-authorization-cs/_static/image32.png)](user-based-authorization-cs/_static/image31.png)
 
 **그림 11**: LoginView 컨트롤 익명 방문자에 대 한 보기 Linkbutton을 숨깁니다 ([클릭 하 여 큰 이미지 보기](user-based-authorization-cs/_static/image33.png))
-
 
 ### <a name="programmatically-limiting-functionality"></a>프로그래밍 방식으로 기능 제한
 
@@ -340,16 +310,13 @@ LoginView의 템플릿에서 웹 컨트롤이 더 이상 코드 숨김 클래스
 
 설명한 대로 합니다 [ *는 폼 인증 개요* ](../introduction/an-overview-of-forms-authentication-cs.md) 자습서에서는 `User.Identity.Name` id의 이름을 반환 합니다. Login 컨트롤에 입력 한 사용자 이름에 해당 합니다. 방문 페이지에 GridView의 두 번째 열 Tito 인지 `Visible` 속성이로 설정 되어 `true`이 고, 그렇지 않으면로 설정 됩니다 `false`. 결과적으로는 다른 인증 된 사용자 또는 익명 사용자, 페이지를 방문 하는 Tito 아닌 다른 열 삭제는 렌더링 되지 않습니다 (그림 12 참조). 그러나 Tito 페이지를 방문 하면 삭제 열이 있는 (그림 13 참조).
 
-
 [![삭제할 열이 없습니다 렌더링 경우 방문 하 여 누군가가 이외의 Tito (예: Bruce)](user-based-authorization-cs/_static/image35.png)](user-based-authorization-cs/_static/image34.png)
 
 **그림 12**: 삭제할 열이 없습니다 렌더링 경우 방문 하 여 누군가가 이외의 Tito (예: Bruce) ([클릭 하 여 큰 이미지 보기](user-based-authorization-cs/_static/image36.png))
 
-
 [![열 삭제는 Tito 렌더링](user-based-authorization-cs/_static/image38.png)](user-based-authorization-cs/_static/image37.png)
 
 **그림 13**: 열 삭제는 Tito 렌더링 ([클릭 하 여 큰 이미지 보기](user-based-authorization-cs/_static/image39.png))
-
 
 ## <a name="step-4-applying-authorization-rules-to-classes-and-methods"></a>4단계: 클래스 및 메서드를 권한 부여 규칙을 적용합니다.
 
@@ -365,15 +332,12 @@ LoginView의 템플릿에서 웹 컨트롤이 더 이상 코드 숨김 클래스
 
 Tito 이외의 사용자 어떻게 해서든 실행 하려고 하는 경우는 `RowDeleting` 이벤트 처리기 또는 인증 되지 않은 사용자가 실행 하려고 합니다 `SelectedIndexChanged` .NET 런타임 발생 이벤트 처리기를 `SecurityException`.
 
-
 [![보안 컨텍스트는 메서드를 실행할 수 있는 권한이 없습니다, 경우 SecurityException이 Throw 됩니다.](user-based-authorization-cs/_static/image41.png)](user-based-authorization-cs/_static/image40.png)
 
 **그림 14**: 보안 컨텍스트 메서드를 실행할 권한이 없는 경우는 `SecurityException` 이 Throw 됩니다 ([큰 이미지를 보려면 클릭](user-based-authorization-cs/_static/image42.png))
 
-
 > [!NOTE]
 > 클래스 또는 메서드에 액세스할 수 있는 여러 보안 컨텍스트를 허용 하려면 클래스 또는 메서드를 데코레이팅하는 `PrincipalPermission` 각 보안 컨텍스트에 대 한 특성입니다. 즉, Tito 및 Bruce 실행을 허용 하는 `RowDeleting` 이벤트 처리기를 추가 *두* `PrincipalPermission` 특성:
-
 
 [!code-csharp[Main](user-based-authorization-cs/samples/sample23.cs)]
 

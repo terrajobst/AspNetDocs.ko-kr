@@ -8,12 +8,12 @@ ms.date: 07/25/2013
 ms.assetid: f8157be1-4ab9-469e-ad3a-0ccc80b56c00
 msc.legacyurl: /whitepapers/aspnet-data-access-content-map
 msc.type: content
-ms.openlocfilehash: d120c184f6cf7dd0db075bbfac17214d7467664a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1bb5c15f8b34c516dcc2d3c5723eb74b133a9188
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59383722"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125679"
 ---
 # <a name="aspnet-data-access---recommended-resources"></a>ASP.NET 데이터 액세스 - 권장 리소스
 
@@ -22,7 +22,6 @@ ms.locfileid: "59383722"
 > 훌륭한 블로그 게시물을 알고 있는 경우 [stackoverflow](http://stackoverflow.com) 스레드나 다른 것이 유용한 링크 [메일을 보내세요](mailto:aspnetue@microsoft.com?subject=Data Access Content Map) 링크를 사용 하 여 합니다.
 > 
 > 마지막 업데이트 4/3/2014
-
 
 이 항목에는 다음과 같은 단원이 포함되어 있습니다.
 
@@ -74,7 +73,6 @@ ms.locfileid: "59383722"
 <a id="cf"></a>
 
 ### <a name="using-entity-framework-code-first"></a>먼저 Entity Framework Code를 사용 하 여
-  
 
 다음 자습서를 다운로드할 수 있는 샘플 응용 프로그램을 제공합니다.
 
@@ -94,7 +92,6 @@ ms.locfileid: "59383722"
 <a id="efcfmigrations"></a>
 
 ### <a name="using-entity-framework-code-first-migrations"></a>Entity Framework Code First 마이그레이션을 사용 하 여
-  
 
 대부분의 표지 마이그레이션을 위에 나열 된 코드 첫 번째 자습서입니다. 다음 리소스를 참조 하세요.
 

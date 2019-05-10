@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 06a776fe-7c73-4ca7-8e02-5260a86edc03
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/picking-one-animation-out-of-a-list-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 1cbb60431824ce642625c06cba6b5194aa547b1b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: dd22d80775ebe3571fcf9d3225135766669ef85b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59419706"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128713"
 ---
 # <a name="picking-one-animation-out-of-a-list-c"></a>목록에서 애니메이션 하나 선택(C#)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation5.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation5CS.pdf)
 
 > ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이지만 컨트롤에 애니메이션을 추가 하는 전체 프레임 워크 아닙니다. 또한 프레임 워크에는 일부 JavaScript 코드의 평가 따라 애니메이션을 목록에서 애니메이션 하나 선택 하는 프로그래머가 수 있습니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -51,7 +50,6 @@ ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이�
 다음 태그는 세 가지 하위 애니메이션을 정의합니다. 너비, 높이, 크기 조정 및 페이딩 크기를 조정 합니다. JavaScript 코드 (`Math.floor(3 * Math.random())`) 다음 세 가지 애니메이션 중 실행 되는 0과 2 사이의 숫자를 선택 합니다.
 
 [!code-aspx[Main](picking-one-animation-out-of-a-list-cs/samples/sample5.aspx)]
-
 
 [![가능한 세 가지 애니메이션 중 하나입니다. 더 광범위 한 패널을 가져옵니다.](picking-one-animation-out-of-a-list-cs/_static/image2.png)](picking-one-animation-out-of-a-list-cs/_static/image1.png)
 

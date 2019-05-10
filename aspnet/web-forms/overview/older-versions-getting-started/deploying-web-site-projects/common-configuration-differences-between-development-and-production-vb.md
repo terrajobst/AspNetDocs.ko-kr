@@ -8,12 +8,12 @@ ms.date: 04/01/2009
 ms.assetid: 548e75f6-4d6c-4cb4-8da8-417915eb8393
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/common-configuration-differences-between-development-and-production-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 48af71fc5ff4dad3371687726660a5d914236df5
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 5ff344bdff379a72a5fc3d26ab66afb095cd2e0d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379380"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125744"
 ---
 # <a name="common-configuration-differences-between-development-and-production-vb"></a>개발 환경과 프로덕션 환경의 일반적인 구성 차이(VB)
 
@@ -23,9 +23,7 @@ ms.locfileid: "59379380"
 
 > 이전 자습서에서 모든 관련 파일을 개발 환경에서 프로덕션 환경으로 복사 하 여 웹 사이트를 배포 했습니다. 그러나 각 환경에 고유한 Web.config 파일이 있는지 필요로 하는 환경 간의 구성 차이 경우도 흔히 아닙니다. 이 자습서는 일반적인 구성 차이 검사 하 고 별도 구성 정보를 유지 관리 전략을 살펴봅니다.
 
-
 ## <a name="introduction"></a>소개
-
 
 마지막 두 자습서 연습을 통해 간단한 웹 응용 프로그램을 배포 합니다. 합니다 [ *FTP 클라이언트를 사용 하 여 사이트 배포* ](deploying-your-site-using-an-ftp-client-vb.md) 자습서에는 독립 실행형 FTP 클라이언트를 사용 하 여 프로덕션 개발 환경에서 필요한 파일을 복사 하는 방법을 보여 주었습니다. 이전 자습서 [ *배포 사이트를 사용 하 여 Visual Studio*](deploying-your-site-using-visual-studio-vb.md), Visual Studio의 웹 사이트 복사 도구 및 게시 옵션을 사용 하 여 배포를 살펴보았습니다. 두 자습서에서 프로덕션 환경에서 모든 파일 개발 환경에서 파일의 복사본을 했습니다. 그러나 개발 환경에서 다 프로덕션 환경에서 구성 파일에 대 한 일반적이 지 않은 아닙니다. 에 웹 응용 프로그램의 구성이 저장 되는 `Web.config` 파일을 일반적으로 데이터베이스, 웹 및 전자 메일 서버와 같은 외부 리소스에 대 한 정보를 포함 합니다. 이 또한 줄이지 않고 처리 되지 않은 예외가 발생할 때 수행할 동작의 코스와 같이 특정 상황에서 응용 프로그램의 동작 합니다.
 
@@ -40,7 +38,6 @@ ms.locfileid: "59379380"
 > [!NOTE]
 > 이후 자습서에서는 데이터 기반 응용 프로그램 배포, 구성 파일에서 데이터베이스 연결 문자열 저장 방법에 대해 구체적으로 알아보겠습니다 이때 살펴봅니다.
 
-
 개발 및 프로덕션 환경의 의도 한 동작에는 크게 다릅니다. 웹 응용 프로그램 개발 환경에서 만들어지고, 테스트 및 디버깅 개발자의 작은 그룹으로 있습니다. 프로덕션 환경에서 동일한 응용 프로그램에 많은 다른 동시 사용자가 방문 중인 합니다. ASP.NET에 다양 한 개발자가 테스트 및 응용 프로그램을 디버깅할 수 있도록 하는 기능이 포함 되어 있지만 성능 및 보안상의 이유로 프로덕션 환경에서 이러한 기능을 비활성화 해야 합니다. 이러한 몇 가지 구성 설정을 살펴보겠습니다.
 
 ### <a name="configuration-settings-that-impact-performance"></a>성능에 영향을 주는 구성 설정
@@ -51,7 +48,6 @@ Debug 특성을 사용 하면 가장 중요 한 특성 중 하나인는 `<compil
 
 > [!NOTE]
 > `WebResource.axd` 기본 제공 HTTP 처리기에에서 도입 된 ASP.NET 2.0 스크립트 파일, 이미지, CSS 파일 및 기타 콘텐츠 등의 포함된 리소스를 검색할 서버 컨트롤을 사용 하는 합니다. 하는 방법에 대 한 자세한 내용은 `WebResource.axd` 작동 하 고 사용 하 여 사용자 지정 서버 컨트롤에서 포함 된 리소스에 액세스 하는 방법을 참조 하세요 [액세스 포함 된 리소스를 통해을 사용 하 여 URL `WebResource.axd` ](http://aspnet.4guysfromrolla.com/articles/080906-1.aspx)합니다.
-
 
 `<compilation>` 요소의 `debug` 특성이 일반적으로로 설정 된 개발 환경에서 "true"입니다. 이 특성을 웹 응용 프로그램을 디버그 하려면 "true"로 설정 해야 실제로 Visual Studio에서 ASP.NET 응용 프로그램을 디버깅 하려고 하며 `debug` 특성이 "false"로 설정 된, Visual Studio에서 응용 프로그램까지 디버깅할 수 없습니다는 설명 메시지를 표시는 `debug` 특성이 고 "true"로 설정 된 이 변경 하려면이 옵션을 제공 합니다.
 
@@ -71,7 +67,6 @@ ASP.NET 응용 프로그램에서 처리 되지 않은 예외가 발생 하면 �
 
 > [!NOTE]
 > 기본 `<customErrors>` 섹션 설정 예외 세부 정보 페이지를 통해 localhost를 방문 하 고 그렇지 않으면 일반 런타임 오류 페이지를 보여 줍니다 하는 경우에 메시지를 보여 줍니다. 이러한 방식이 이상적 이지만 기본 동작은 로컬이 아닌 방문자에 게 예외 세부 정보를 표시 되지 않으며 알아야 보장 됩니다. 이후 자습서 검사는 `<customErrors>` 단원에서 자세히 프로덕션에서 오류가 발생 하는 경우 표시 된 사용자 지정 오류 페이지를 사용 하는 방법을 보여 줍니다.
-
 
 개발 하는 동안 사용 되는 다른 ASP.NET 기능 추적 됩니다. 추적을 사용 하도록 설정 하는 경우 들어오는 각 요청에 대 한 정보를 기록 하 고 특수 한 웹 페이지를 제공 `Trace.axd`, 최근 요청 세부 정보 보기에 대 한 합니다. 설정를 통해 추적을 구성 합니다 [ `<trace>` 요소](https://msdn.microsoft.com/library/6915t83k.aspx) 에서 `Web.config`합니다.
 
@@ -111,7 +106,6 @@ ASP.NET 응용 프로그램에서 처리 되지 않은 예외가 발생 하면 �
 
 > [!NOTE]
 > 웹 배포 프로젝트를 Visual Studio에서 추가 기능을 구현 되 고 Visual Studio Express Edition (Visual Web Developer) 추가 기능을 지원 하지 않습니다 때문에 Visual Web Developer를 사용 하 여 웹 배포 프로젝트를 사용할 수 없습니다.
-
 
 ## <a name="summary"></a>요약
 

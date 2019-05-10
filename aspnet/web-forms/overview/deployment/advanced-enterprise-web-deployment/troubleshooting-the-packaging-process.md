@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 794bd819-00fc-47e2-876d-fc5d15e0de1c
 msc.legacyurl: /web-forms/overview/deployment/advanced-enterprise-web-deployment/troubleshooting-the-packaging-process
 msc.type: authoredcontent
-ms.openlocfilehash: 79774c6a1a1d05d5a7bcd82a5d7aa888933cf089
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8ad649dfff085a8774cc13c11d8a3e3d48277d66
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59420109"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128697"
 ---
 # <a name="troubleshooting-the-packaging-process"></a>패키징 프로세스 문제 해결
 
@@ -34,7 +34,6 @@ ms.locfileid: "59420109"
 > > [!NOTE]
 > > 합니다 **EnablePackageProcessLoggingAndAssert** 속성이 사용 하 여 프로젝트를 빌드하는 경우에 작동 합니다 **디버그** 구성 합니다. 속성은 다른 구성에서 무시 됩니다.
 
-
 이 항목의 Fabrikam, Inc. 라는 가상 회사의 엔터프라이즈 배포 요구 사항 기반 자습서 시리즈의 일부를 형성 합니다. 샘플 솔루션을 사용 하 여이 자습서 시리즈&#x2014;는 [Contact Manager 솔루션](../web-deployment-in-the-enterprise/the-contact-manager-solution.md)&#x2014;현실적인 수준의 복잡성을 Windows Communication ASP.NET MVC 3 응용 프로그램을 포함 하 여 웹 응용 프로그램을 나타내는 Foundation (WCF) 서비스 및 데이터베이스 프로젝트입니다.
 
 이 자습서의 핵심 배포 방법에 설명 된 분할 프로젝트 파일 방법을 기반으로 [프로젝트 파일 이해](../web-deployment-in-the-enterprise/understanding-the-project-file.md), 두 개의 프로젝트 파일에서 빌드 프로세스에 의해 제어 되는&#x2014;포함 된 모든 대상 환경 및 환경 관련 빌드 및 배포 설정을 포함 하는 하나에 적용 되는 지침을 빌드하십시오. 빌드 시 환경 관련 프로젝트 파일은 빌드 지침의 전체 집합을 이루는 환경을 알 수 없는 프로젝트 파일에 병합 됩니다.
@@ -45,13 +44,10 @@ ms.locfileid: "59420109"
 
 이러한 WPP 대상 많은 추가 정보를 기록 하는 조건부 논리를 포함할 때 합니다 **EnablePackageProcessLoggingAndAssert** 속성이 **true**합니다. 예를 들어, 검토 하는 경우는 **패키지** 대상에 추가 로그 디렉터리를 만드는 경우 파일의 목록을 텍스트 파일에 쓰는 볼 수 있습니다 **EnablePackageProcessLoggingAndAssert** 같으면**true**합니다.
 
-
 [!code-xml[Main](troubleshooting-the-packaging-process/samples/sample1.xml)]
-
 
 > [!NOTE]
 > WPP 대상에 정의 된 합니다 *Microsoft.Web.Publishing.targets* %PROGRAMFILES (x86) %\MSBuild\Microsoft\VisualStudio\v10.0\Web 폴더의 파일입니다. 이 파일을 열고 Visual Studio 2010 또는 XML 편집기에서 대상 검토 합니다. 파일의 내용을 수정할 수 없도록 주의 해야 합니다.
-
 
 ## <a name="enabling-the-additional-logging"></a>추가 로깅을 사용 하도록 설정
 
@@ -59,27 +55,20 @@ ms.locfileid: "59420109"
 
 명령줄에서 프로젝트를 빌드하는 경우에 대 한 값을 제공할 수 있습니다 합니다 **EnablePackageProcessLoggingAndAssert** 명령줄 인수로 속성:
 
-
 [!code-console[Main](troubleshooting-the-packaging-process/samples/sample2.cmd)]
-
 
 사용자 지정 프로젝트 파일에 프로젝트 빌드를 사용 하는 경우 포함할 수 있습니다는 **EnablePackageProcessLoggingAndAssert** 값을 **속성** 특성을 **MSBuild**작업:
 
-
 [!code-xml[Main](troubleshooting-the-packaging-process/samples/sample3.xml)]
-
 
 를 사용 하 여 프로젝트를 빌드할 Team Foundation Server (TFS) 빌드 정의 사용 하는 경우에 대 한 값을 제공할 수 있습니다 합니다 **EnablePackageProcessLoggingAndAssert** 속성에는 **MSBuild 인수** 행:![](troubleshooting-the-packaging-process/_static/image1.png)
 
 > [!NOTE]
 > 작성 및 빌드 정의 구성에 대 한 자세한 내용은 참조 하세요. [배포를 만드는 빌드 정의 지 원하는](../configuring-team-foundation-server-for-web-deployment/creating-a-build-definition-that-supports-deployment.md)합니다.
 
-
 또는 모든 빌드에서 패키지를 포함 하려는 경우 수정할 수 있습니다 설정 하 여 웹 응용 프로그램 프로젝트용 프로젝트 파일을 **EnablePackageProcessLoggingAndAssert** 속성을 **true**합니다. 첫 번째 속성을 추가 해야 하면 **PropertyGroup** .csproj 또는.vbproj 파일 내의 요소입니다.
 
-
 [!code-xml[Main](troubleshooting-the-packaging-process/samples/sample4.xml)]
-
 
 ## <a name="reviewing-the-log-files"></a>로그 파일 검토
 
@@ -100,7 +89,6 @@ ms.locfileid: "59420109"
 
 > [!NOTE]
 > WPP 대상에 추가 로그 파일의 이름은 일반적으로 해당 합니다. 검사 하 여 이러한 목표를 검토할 수 있습니다 합니다 *Microsoft.Web.Publishing.targets* %PROGRAMFILES (x86) %\MSBuild\Microsoft\VisualStudio\v10.0\Web 폴더의 파일입니다.
-
 
 웹 패키지의 내용을 예상한 바가 없는 경우 이러한 파일을 검토 프로세스 작업에서 어떤 지점 잘못 식별 하는 유용한 방법 수 있습니다.
 

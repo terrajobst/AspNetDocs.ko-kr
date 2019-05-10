@@ -8,12 +8,12 @@ ms.date: 07/30/2013
 ms.assetid: f81f3d80-3674-4d8e-a9b1-87feed1a93c9
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/creating-a-more-complex-data-model-for-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: 15bdaa588792c3cf4a8e6eee651e0675f959f942
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2ba7ca22074fe3c131209482180f8f7706714dd5
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59382238"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129831"
 ---
 # <a name="creating-a-more-complex-data-model-for-an-aspnet-mvc-application-4-of-10"></a>(4 / 10) ASP.NET MVC 응용 프로그램을 위한 더 복잡 한 데이터 모델 만들기
 
@@ -26,7 +26,6 @@ ms.locfileid: "59382238"
 > > [!NOTE] 
 > > 
 > > 해결할 수 없는 문제가 발생 하는 경우 [완성 된 장 다운로드](building-the-ef5-mvc4-chapter-downloads.md) 문제를 재현 하려고 합니다. 일반적으로 코드의 완성 된 코드를 비교 하 여 문제에 솔루션을 찾을 수 있습니다. 몇 가지 일반적인 오류 및 해결 하는 방법에 대 한 참조 [오류 및 해결 방법입니다.](advanced-entity-framework-scenarios-for-an-mvc-web-application.md#errors)
-
 
 이전 자습서의 세 가지 엔터티로 구성 된 간단한 데이터 모델을 사용 하 여 작동 합니다. 이 자습서에서는 더 많은 엔터티 및 관계를 추가 합니다 및 서식 지정, 유효성 검사 및 데이터베이스 매핑 규칙을 지정 하 여 데이터 모델을 사용자 지정할 수 있습니다. 데이터 모델을 사용자 지정 하는 두 가지 방법 표시: 데이터베이스 컨텍스트 클래스에 코드를 추가 하 여 엔터티 클래스에 특성을 추가 하 여 합니다.
 
@@ -52,9 +51,7 @@ ms.locfileid: "59382238"
 
 `DisplayFormat` 특성은 날짜 형식을 명시적으로 지정하는 데 사용됩니다.
 
-
 [!code-csharp[Main](creating-a-more-complex-data-model-for-an-asp-net-mvc-application/samples/sample2.cs)]
-
 
 `ApplyFormatInEditMode` 설정은 지정 된 서식도 적용 되어야 함을 값 편집을 위해 텍스트 상자에 표시 되 면을 지정 합니다. (원하지 않을 수 있습니다 하는 일부 필드에 대 한-예를 들어 통화 값 하지 않을 텍스트 상자에 통화 기호 편집 합니다.)
 
@@ -124,7 +121,6 @@ PMC(패키지 관리자 콘솔)에서 다음 명령을 입력합니다.
 
 > [!NOTE]
 > 이러한 엔터티 클래스의 모든 만들기를 완료 하기 전에 컴파일을 하려고 하면 컴파일러 오류가 발생할 수 있습니다.
-
 
 ## <a name="create-the-instructor-entity"></a>강사 엔터티 만들기
 
@@ -260,7 +256,6 @@ Instructor 클래스를 다음과 같이 작성할 수도 수 있도록 한 줄�
 
 [!code-csharp[Main](creating-a-more-complex-data-model-for-an-asp-net-mvc-application/samples/sample24.cs)]
 
-
 ## <a name="modifying-the-student-entity"></a>학생 엔터티를 수정합니다.
 
 ![Student_entity](creating-a-more-complex-data-model-for-an-asp-net-mvc-application/_static/image10.png)
@@ -378,7 +373,6 @@ PMC에서 다음을 입력 합니다 `add-migration` 명령:
 > [!code-xml[Main](creating-a-more-complex-data-model-for-an-asp-net-mvc-application/samples/sample35.xml?highlight=1-2)]
 > 
 > 새 데이터베이스에 데이터가 없습니다. 마이그레이션할 및 `update-database` 명령은 오류 없이 완료 될 가능성이 훨씬 더 높습니다. 데이터베이스를 삭제 하는 방법에 지침은 [Visual Studio 2012에서 데이터베이스를 삭제 하는 방법](http://romiller.com/2013/05/17/how-to-drop-a-database-from-visual-studio-2012/)합니다.
-
 
 데이터베이스를 엽니다 **서버 탐색기** 을 이전 하 고 확장 합니다 **테이블** 모든 테이블이 만들어졌는지 확인 하려면 노드. (아직 있는 경우 **서버 탐색기** 이전 시점에서 열기를 클릭 합니다 **새로 고침** 단추입니다.)
 

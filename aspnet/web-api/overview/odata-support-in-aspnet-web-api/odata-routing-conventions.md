@@ -9,19 +9,18 @@ ms.custom: seoapril2019
 ms.assetid: adbc175a-14eb-4ab2-a441-d056ffa8266f
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-routing-conventions
 msc.type: authoredcontent
-ms.openlocfilehash: 8916f8b7a024636be1be055457081487f46a7936
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 63df4a82cd8df92631485b2544117844cfd0ca56
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59421630"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130482"
 ---
 # <a name="routing-conventions-in-aspnet-web-api-2-odata"></a>ASP.NET Web API 2에서에서 라우팅 규칙 Odata
 
 [Mike Wasson](https://github.com/MikeWasson)
 
 > 이 문서는 해당 Web API 2 OData 끝점에 대 한 ASP.NET 4.x의 라우팅 규칙을 설명합니다.
-
 
 Web API OData 요청을 받으면 요청을 작업 이름과 컨트롤러 이름의을 매핑합니다. 매핑을은 HTTP 메서드와 URI 기반으로 합니다. 예를 들어 `GET /odata/Products(1)` 매핑됩니다 `ProductsController.GetProduct`합니다.
 
@@ -53,7 +52,6 @@ Web API에서 OData 라우팅 규칙을 설명 하기 전에는 OData Uri를 이
 
 > [!NOTE]
 > OData 경로 세그먼트 URI 세그먼트를 항상 일치 하지 않습니다. 예를 들어, "1" 경로 세그먼트를 간주 됩니다.
-
 
 **컨트롤러 이름입니다.** 컨트롤러 이름은 엔터티 집합 리소스 경로의 루트에서 항상 파생 됩니다. 예를 들어 리소스 경로가 `/Products(1)/Supplier`, Web API 라는 컨트롤러를 찾습니다 `ProductsController`합니다.
 

@@ -8,12 +8,12 @@ ms.date: 01/12/2011
 ms.assetid: 28970e1b-1845-4015-86ef-121e52a6c397
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc3/vb/adding-a-new-field
 msc.type: authoredcontent
-ms.openlocfilehash: 387c0ab407df2badfd8ff848b6a13c68769fbba7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c723134e829da23db8a43ef228db47ce9826f3e8
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379861"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129986"
 ---
 # <a name="adding-a-new-field-to-the-movie-model-and-database-table-vb"></a>영화 모델 및 데이터베이스 테이블에 새 필드 추가(VB)
 
@@ -28,7 +28,6 @@ ms.locfileid: "59379861"
 > Visual Studio 2010 Visual Web Developer 2010 대신를 사용 하는 경우 다음 링크를 클릭 하 여 필수 구성 요소를 설치 합니다. [Visual Studio 2010 필수 구성 요소](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack)합니다.
 > 
 > VB.NET 소스 코드를 사용 하 여 Visual Web Developer 프로젝트는 다음이 항목과 함께 사용할 수 있습니다. [VB.NET 버전](https://code.msdn.microsoft.com/Introduction-to-MVC-3-10d1b098)합니다. 원하는 경우 C#으로 전환 합니다 [C# 버전](../cs/adding-a-new-field.md) 이 자습서의 합니다.
-
 
 이 섹션 모델 클래스에 일부 변경을 수행 하 고 모델 변경 내용과 일치 하도록 데이터베이스 스키마를 업데이트 하는 방법을 알아봅니다.
 
@@ -80,7 +79,6 @@ Code First 자동으로 삭제 하 고 응용 프로그램에 대 한 모델을 
 > [!NOTE] 
 > 
 > **경고** 자동으로 삭제 하 고 개발 또는 테스트 데이터베이스를 사용 하는 경우에 데이터베이스를 다시 작성 하는이 방법을 사용 하도록 설정 해야 하 고 *되지* 실제 데이터가 포함 된 프로덕션 데이터베이스에서. 사용 하 여 프로덕션 서버의 데이터가 손실 될 수 있습니다.
-
 
 **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 합니다 *모델* 폴더를 선택 **추가**를 선택한 후 **클래스**합니다.
 

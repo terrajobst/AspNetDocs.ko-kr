@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: e7700e7b-edc3-4183-a713-70e507cc7490
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/hovermenu/using-hovermenu-with-a-repeater-control-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 7f64e90eb2f8f87e2f382cb7897793e7071d305d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 01f8d71ef07bd48c16c2e9eb1bb12cd051f7a9e4
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384502"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65127018"
 ---
 # <a name="using-hovermenu-with-a-repeater-control-c"></a>반복기 컨트롤에 HoverMenu 사용(C#)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/b/0/6/b06fe835-5b8f-4c00-aef8-062c19d75b95/HoverMenu1.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/hovermenu1CS.pdf)
 
 > AJAX Control Toolkit에서 HoverMenu 컨트롤에는 간단한 팝업 효과를 제공합니다. 요소 위로 마우스 포인터를 가져가면 지정된 된 위치에는 팝업이 나타납니다. Repeater 내에서이 컨트롤을 사용 하는 것도 가능 합니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -51,7 +50,6 @@ ASP.NET AJAX와 Control Toolkit의 기능을 활성화 하기 위해 합니다 `
 [!code-aspx[Main](using-hovermenu-with-a-repeater-control-cs/samples/sample4.aspx)]
 
 이제 오른쪽 팝업을 표시 하는 데이터 소스의 모든 항목 (`PopupPosition` 특성) 50 밀리초의 지연 후 (`PopDelay` 특성).
-
 
 [![호버 메뉴 반복기의 각 항목 옆에 표시 됩니다.](using-hovermenu-with-a-repeater-control-cs/_static/image2.png)](using-hovermenu-with-a-repeater-control-cs/_static/image1.png)
 

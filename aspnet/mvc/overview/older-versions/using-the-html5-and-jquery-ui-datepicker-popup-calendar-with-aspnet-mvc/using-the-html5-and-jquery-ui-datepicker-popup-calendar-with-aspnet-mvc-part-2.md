@@ -8,19 +8,18 @@ ms.date: 08/29/2011
 ms.assetid: 21a178de-4c5a-4211-8a9c-74ec576c0f30
 msc.legacyurl: /mvc/overview/older-versions/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-2
 msc.type: authoredcontent
-ms.openlocfilehash: 9e3e22c1784b48bbbb7c1ea075951ea4c1fb39a5
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ba6246d97ecd48a5fe947d4998b42250133039e3
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59411035"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129604"
 ---
 # <a name="using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc---part-2"></a>ASP.NET MVC-2 부에서 HTML5 및 jQuery UI Datepicker 팝업 일정 사용
 
 [Rick Anderson]((https://twitter.com/RickAndMSFT))
 
 > 이 자습서는 편집기 템플릿, 표시 템플릿 및 ASP.NET MVC 웹 응용 프로그램에서 jQuery UI datepicker 팝업 일정을 사용 하는 방법의 기본 사항을 설명 합니다.
-
 
 ## <a name="adding-an-automatic-datetime-template"></a>자동 날짜/시간 서식 파일을 추가합니다.
 

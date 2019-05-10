@@ -8,12 +8,12 @@ ms.date: 07/27/2010
 ms.assetid: d4243a4a-e91c-4116-9ae0-5c08e5285677
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/re-use-ui-using-master-pages-and-partials
 msc.type: authoredcontent
-ms.openlocfilehash: e50fb6edb175bd1651212ae6b3daf7b1bf605068
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 0b17cb6ac14b7f187bf1f175097a37907689d46e
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59390144"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128350"
 ---
 # <a name="re-use-ui-using-master-pages-and-partials"></a>마스터 페이지 및 부분을 사용하여 UI 재사용
 
@@ -26,7 +26,6 @@ by [Microsoft](https://github.com/microsoft)
 > 7 단계 템플릿 부분 보기 및 마스터 페이지를 사용 하 여, 코드 중복을 제거 하는 보기 템플릿 내에서 "반복 금지 원칙의" 적용할 수 있습니다 하는 방법에 살펴봅니다.
 > 
 > ASP.NET MVC 3을 사용 하는 경우 수행 하는 것이 좋습니다 합니다 [가져오기 시작 MVC 3과](../../older-versions/getting-started-with-aspnet-mvc3/cs/intro-to-aspnet-mvc-3.md) 하거나 [MVC Music Store](../../older-versions/mvc-music-store/mvc-music-store-part-1.md) 자습서입니다.
-
 
 ## <a name="nerddinner-step-7-partials-and-master-pages"></a>NerdDinner Step 7: 부분 및 마스터 페이지
 

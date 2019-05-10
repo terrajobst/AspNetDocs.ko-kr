@@ -8,12 +8,12 @@ ms.date: 08/15/2012
 ms.assetid: ed66530a-04d5-49eb-b76a-85be1f57c437
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc4/intro-to-aspnet-mvc-4
 msc.type: authoredcontent
-ms.openlocfilehash: ecc0733c2850bc157c7ee5b251787152393481fc
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 9762ac77f7460cc123e67b9eb57a17f4b83ed54c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59385256"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129867"
 ---
 # <a name="intro-to-aspnet-mvc-4"></a>ASP.NET MVC 4 소개
 
@@ -36,12 +36,10 @@ ms.locfileid: "59385256"
 >
 > Rick anderson이 자습서가 작성 ( [ @RickAndMSFT ](https://twitter.com/#!/RickAndMSFT) ).
 
-
 ## <a name="what-youll-build"></a>만들 내용
 
 > [!NOTE]
 > 이 자습서는 사용할 수 있는 경우 업데이트 된 버전 [같습니다](../../getting-started/introduction/getting-started.md) 사용 하 여 [Visual Studio 2013](https://my.visualstudio.com/Downloads?q=visual%20studio%202013)합니다. 새 자습서에는이 자습서를 통해 많은 향상 된 기능을 제공 하는 ASP.NET MVC 5를 사용 합니다.
-
 
 만들기, 편집, 검색 및 나열 하는 데이터베이스에서 동영상을 지 원하는 간단한 영화 목록 응용 프로그램을 구현할 수 있습니다. 다음은 빌드할 응용 프로그램의 두 가지 스크린샷입니다. 데이터베이스에서 동영상 목록을 표시 하는 페이지가 포함 됩니다.
 

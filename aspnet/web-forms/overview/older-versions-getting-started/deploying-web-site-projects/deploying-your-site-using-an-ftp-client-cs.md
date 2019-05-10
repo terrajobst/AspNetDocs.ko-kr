@@ -8,12 +8,12 @@ ms.date: 04/01/2009
 ms.assetid: a3599cf7-8474-4006-954a-3bc693736b66
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/deploying-your-site-using-an-ftp-client-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 1ef796dc61cc65b6ca5205a5f8baf4dcc4ba05ae
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1d6adbb245ce534c15ac1adac722b8621002ab15
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389169"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65127069"
 ---
 # <a name="deploying-your-site-using-an-ftp-client-c"></a>FTP 클라이언트를 사용하여 사이트 배포(C#)
 
@@ -23,17 +23,14 @@ ms.locfileid: "59389169"
 
 > ASP.NET 응용 프로그램을 배포 하는 가장 간단한 방법은 개발 환경에서 프로덕션 환경에 필요한 파일을 수동으로 복사 방법은입니다. 이 자습서에서는 웹 호스트 공급자에 바탕 화면에서 파일을 가져올 FTP 클라이언트를 사용 하는 방법을 보여 줍니다.
 
-
 ## <a name="introduction"></a>소개
 
 이전 자습서를 간단한 책 검토 ASP.NET 웹 응용 프로그램을 ASP.NET 페이지, 마스터 페이지, 사용자 지정 기본 소수의 이루어집니다 도입 `Page` 클래스, 이미지, 개수 및 세 가지 CSS 스타일 시트입니다. 이제이 시점에서 응용 프로그램은 액세스할 수 있게 하려면 인터넷에 연결 된 웹 호스트 공급자를이 응용 프로그램을 배포할 준비가 되었습니다!
-
 
 토론에서 합니다 [ *결정 파일 필요한 배포할* ](determining-what-files-need-to-be-deployed-cs.md) 자습서, 알고 웹 호스트 공급자에 복사 해야 하는 파일입니다. (파일 복사는 회수에 따라 달라 집니다 여부 응용 프로그램이 명시적으로 또는 자동으로 컴파일됩니다.) 그러나에서는 어떻게 파일 (데스크톱) 개발 환경에서 프로덕션 환경 (웹 호스트 공급자에 의해 관리 되는 웹 서버)까지? 합니다 [ **F** ile **T** ransfer **P** rotocol (FTP)](http://en.wikipedia.org/wiki/File_Transfer_Protocol) 네트워크를 통해 다른 컴퓨터에서 파일을 복사 하는 데 자주 사용 되는 프로토콜입니다. 또 다른 방법은 FrontPage Server Extensions (FPSE)입니다. 이 자습서는 독립 실행형 FTP 클라이언트 소프트웨어를 사용 하 여 개발 환경에서 프로덕션 환경에 필요한 파일을 배포에 중점을 둡니다.
 
 > [!NOTE]
 > Visual Studio에는 FTP;를 통해 웹 사이트 게시 도구가 포함 되어 있습니다. 다음 자습서를 살펴보고 FPSE를 사용 하는 도구 뿐만 아니라 이러한 도구를 설명 합니다.
-
 
 해야 하는 FTP를 사용 하 여 파일을 복사 하는 *FTP 클라이언트* 개발 환경에서. FTP 클라이언트를 실행 하는 컴퓨터에 설치 된 컴퓨터에서 파일을 복사 하도록 디자인 된 응용 프로그램을 *FTP 서버*합니다. (을 대부분 마찬가지로 FTP 통해 파일 전송을 웹 호스트 공급자에 지 원하는 경우 다음 FTP server가 해당 웹 서버에서 실행 합니다.) 사용할 수 있는 FTP 클라이언트 응용 프로그램의 여러 가지가 있습니다. 웹 브라우저를 FTP 클라이언트로 double 수 있습니다. 내 즐겨 찾는 FTP 클라이언트와이 자습서에서는 사용할 것은 [FileZilla](http://filezilla-project.org/), Windows, Linux 및 Mac에 사용할 수 있는 무료, 오픈 소스 FTP 클라이언트입니다. 모든 FTP 클라이언트 작동, 그러나 하므로 자유롭게 가장 편안한는 모든 클라이언트를 사용 합니다.
 
@@ -68,11 +65,9 @@ ms.locfileid: "59389169"
 > [!NOTE]
 > 에 됩니다 프로덕션 서버에서 소스 코드 파일에 피해를 주지 무시 됩니다. ASP.NET 소스 코드 파일을 프로덕션 서버에 있는 경우에 없는 웹 사이트 방문자에 액세스할 수 있도록 기본적으로 소스 코드 파일에 HTTP 요청을 금지 합니다. (즉, 사용자가 방문 하려고 하는 경우 `http://www.yoursite.com/Default.aspx.cs` 설명 하는 오류 페이지가 이러한 종류의 파일-생깁니다 `.cs` 파일을 사용할 수 없습니다.)
 
-
 [![FTP 클라이언트를 사용 하 여 웹 서버는 웹 호스트 공급자에 바탕 화면에서 필요한 파일을 복사 하려면](deploying-your-site-using-an-ftp-client-cs/_static/image2.png)](deploying-your-site-using-an-ftp-client-cs/_static/image1.png)
 
 **그림 1**: 웹 서버는 웹 호스트 공급자에 바탕 화면에서 필요한 파일을 복사 하는 FTP 클라이언트를 사용 하 여 ([클릭 하 여 큰 이미지 보기](deploying-your-site-using-an-ftp-client-cs/_static/image3.png))
-
 
 사이트를 배포한 후 잠시 사이트를 테스트 합니다. 도메인 이름 구입 및 DNS 설정을 구성 해야 하는 경우 제대로 도메인 이름을 입력 하 여 사용자 사이트를 방문할 수 있습니다. 또는 웹 호스트 공급자는 제공한 하면 사이트에 대 한 URL을 사용 하 여는 모양은 *accountname*. *webhostprovider*.com 또는 *webhostprovider*.com /*accountname*합니다. 예를 들어 ASP.NET 할인에 내 계정에 대 한 URL은: `http://httpruntime.web703.discountasp.net`합니다.
 
@@ -81,11 +76,9 @@ ms.locfileid: "59389169"
 > [!NOTE]
 > 잠시가 되도록 응용 프로그램을 볼 때 오류가 발생 하는 경우 올바른 파일 집합이 배포 했습니다. 다음으로, 문제에 대 한 단서를 표시 하는 경우 오류 메시지를 확인 합니다. 다음 웹 호스트 회사의 헬프 데스크를 설정 하거나 적절 한 포럼에 질문을 게시 합니다 [ASP.NET 포럼](https://forums.asp.net/)합니다.
 
-
 [![인터넷에 연결 된 모든 사용자에 게 책 검토 사이트를 이제 액세스할 수](deploying-your-site-using-an-ftp-client-cs/_static/image5.png)](deploying-your-site-using-an-ftp-client-cs/_static/image4.png)
 
 **그림 2**: 인터넷에 연결 된 모든 사용자에 게 책 검토 사이트는 이제 액세스할 수 있습니다 ([클릭 하 여 큰 이미지 보기](deploying-your-site-using-an-ftp-client-cs/_static/image6.png))
-
 
 ## <a name="deploying-the-book-review-web-site-project"></a>책 검토 웹 사이트 프로젝트를 배포합니다.
 
@@ -97,7 +90,6 @@ ms.locfileid: "59389169"
 
 > [!NOTE]
 > 프로젝트는 있지만 BookReviewsWSP 프로젝트 배포를 시도 하려는 BookReviewsWAP을 이미 배포한 경우 먼저 BookReviewsWAP를 배포 하는 경우 업로드 된 웹 서버에 있는 파일의 모든를 삭제 하 고 BookReviewsWSP에 대 한 파일을 배포 합니다.
-
 
 - `~/Default.aspx`
 - `~/Default.aspx.cs`
@@ -123,11 +115,9 @@ ms.locfileid: "59389169"
 
 그림 3에서는 필요한 파일을 복사한 후 FileZilla를 보여 줍니다. ASP.NET 소스와 같은 코드 파일을 볼 수 있듯이 `About.aspx.cs`, 코드 파일에서 자동을 사용 하는 경우 배포 해야 하기 때문에 로컬 컴퓨터 (개발 환경)와 웹 호스트 공급자 (프로덕션 환경)에 컴파일입니다.
 
-
 [![FTP 클라이언트를 사용 하 여 웹 서버는 웹 호스트 공급자에 바탕 화면에서 필요한 파일을 복사 하려면](deploying-your-site-using-an-ftp-client-cs/_static/image8.png)](deploying-your-site-using-an-ftp-client-cs/_static/image7.png)
 
 **그림 3**: 웹 서버는 웹 호스트 공급자에 바탕 화면에서 필요한 파일을 복사 하는 FTP 클라이언트를 사용 하 여 ([클릭 하 여 큰 이미지 보기](deploying-your-site-using-an-ftp-client-cs/_static/image9.png))
-
 
 사용자 환경 응용 프로그램의 컴파일 모델에 의해 영향을 받지 않습니다. 동일한 ASP.NET 페이지에 액세스할 수 및 표시 하며 웹 사이트는 웹 응용 프로그램 프로젝트 모델 또는 웹 사이트 프로젝트 모델을 사용 하 여 만들었는지 여부를 동일 하 게 동작 합니다.
 
@@ -139,7 +129,6 @@ ms.locfileid: "59389169"
 
 > [!NOTE]
 > 염두에서에 두 경우 명시적 컴파일을 사용 하는 프로젝트에 새 ASP.NET 페이지를 추가 하거나 코드와 관련 된 내용을 변경, 언제 든 지 다시 작성 해야 프로젝트에서 어셈블리를 업데이트 하는 것은 `Bin` 폴더입니다. 따라서 프로덕션 (다른 새로운 기능과 업데이트 된 콘텐츠와 함께)에서 웹 응용 프로그램을 업데이트 하는 경우 프로덕션 환경에이 업데이트 된 어셈블리를 복사 해야 합니다.
-
 
 이해를 변경 하는 `Web.config` 또는 파일을 `Bin` 디렉터리 중지 하 고 웹 사이트의 응용 프로그램 풀을 다시 시작 합니다. 사용 하 여 세션 상태 저장 되는 경우는 `InProc` 모드 (기본값) 다음 사이트의 방문자에 게 이러한 키 파일이 수정 될 때마다 해당 세션 상태를 잃게 됩니다. 이 문제를 방지 하는 것이 좋습니다 사용 하 여 세션을 저장 합니다 `StateServer` 또는 `SQLServer` 모드입니다. 이 항목에 대 한 자세한 내용은 읽을 [세션 상태 모드](https://msdn.microsoft.com/library/ms178586.aspx)합니다.
 

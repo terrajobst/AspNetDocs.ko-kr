@@ -8,12 +8,12 @@ ms.date: 01/12/2011
 ms.assetid: 878f6c31-972d-45f4-8849-5c633b511409
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc3/vb/adding-validation-to-the-model
 msc.type: authoredcontent
-ms.openlocfilehash: 3eef7934fac8c16dc7517ca16cab67c0ae55907f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 0ed70876ed8c2eab450e0543874613bf34f75cb8
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59398022"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130012"
 ---
 # <a name="adding-validation-to-the-model-vb"></a>모델에 유효성 검사 추가(VB)
 
@@ -28,7 +28,6 @@ ms.locfileid: "59398022"
 > Visual Studio 2010 Visual Web Developer 2010 대신를 사용 하는 경우 다음 링크를 클릭 하 여 필수 구성 요소를 설치 합니다. [Visual Studio 2010 필수 구성 요소](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack)합니다.
 > 
 > VB.NET 소스 코드를 사용 하 여 Visual Web Developer 프로젝트는 다음이 항목과 함께 사용할 수 있습니다. [VB.NET 버전](https://code.msdn.microsoft.com/Introduction-to-MVC-3-10d1b098)합니다. 원하는 경우 C#으로 전환 합니다 [C# 버전](../cs/adding-validation-to-the-model.md) 이 자습서의 합니다.
-
 
 이 섹션에서는 유효성 검사 논리를 추가 합니다 `Movie` 모델 및 있습니다 유효성 검사 규칙을 만들거나 응용 프로그램을 사용 하 여 동영상을 편집 하려면 사용자가 언제 든 지 사항이 적용 되도록 확인 됩니다.
 

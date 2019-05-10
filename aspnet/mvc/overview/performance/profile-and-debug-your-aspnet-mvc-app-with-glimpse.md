@@ -8,19 +8,18 @@ ms.date: 03/26/2015
 ms.assetid: c205805f-efdd-4fa7-9616-f26eab180611
 msc.legacyurl: /mvc/overview/performance/profile-and-debug-your-aspnet-mvc-app-with-glimpse
 msc.type: authoredcontent
-ms.openlocfilehash: 078382191595d1f65b5ebe9d0de8d41cd70e376d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 051253d1e7a09f6285ebe0a83f87155de8467536
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59419888"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129420"
 ---
 # <a name="profile-and-debug-your-aspnet-mvc-app-with-glimpse"></a>Glimpse를 사용하여 ASP.NET MVC 앱 프로파일링 및 디버그
 
 [Rick Anderson]((https://twitter.com/RickAndMSFT))
 
 > Glimpse는 번성 하 고 자세한 성능을 제공 하는 오픈 소스 NuGet 패키지의 제품군 증가, 디버깅 및 ASP.NET 앱에 대 한 진단 정보. 설치가 간단 간단 하 고 매우 빠른 이며 모든 페이지의 맨 아래에 주요 성능 메트릭을 표시 합니다. 서버 진행 상황을 찾아야 할 때 앱에 드릴 수 있습니다. Glimpse Azure 테스트 환경을 포함 하 여 개발 주기 전체에서 사용 하는 것이 좋습니다는 훨씬 중요 한 정보를 제공 합니다. 하는 동안 [Fiddler](http://www.telerik.com/fiddler) 하며 [F-12 개발 도구](https://msdn.microsoft.com/library/ie/gg589512(v=vs.85).aspx) 제공 클라이언트 쪽 보기 Glimpse 서버의 상세 보기를 제공 합니다. 이 자습서는 간략 한 ASP.NET MVC 및 EF 패키지를 사용 하 여 중점 되지만 다른 많은 패키지 사용할 수 있습니다. 가능한 경우 적절 한 연결 됩니다 [docs 슬라이드](http://getglimpse.com/Docs/) 유지 관리할 수 있도록 하는 합니다. Glimpse는 오픈 소스 프로젝트, 너무 기여할 수 있는 소스 코드 및 문서입니다.
-
 
 - [Glimpse를 설치합니다.](#ig)
 - [Localhost에 대 한 이해를 사용 하도록 설정](#eg)
@@ -116,7 +115,6 @@ Tom Dykstra 수정 했지만 미해결 [EF 6/MVC 5 자습서](../getting-started
 
 > [!WARNING]
 > 보안-Glimpse이 제공한 다양 한 데이터에는 앱의 보안을 노출 될 수 있습니다. 프로덕션 앱에서 사용 하기 위해 Microsoft Glimpse의 보안 감사를 수행 하지.
-
 
 추가 역할에 대 한 정보를 참조 하세요. 필자의 [멤버 자격, OAuth 및 SQL Database를 사용 하 여 보안 ASP.NET MVC 5 웹 앱을 Azure에 배포](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-deploy-aspnet-mvc-app-membership-oauth-sql-database/) 자습서입니다.
 

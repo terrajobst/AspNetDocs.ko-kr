@@ -8,12 +8,12 @@ ms.date: 01/27/2009
 ms.assetid: d1608db3-660d-4079-8c15-f452ff01f1db
 msc.legacyurl: /mvc/overview/older-versions-1/overview/understanding-the-asp-net-mvc-execution-process
 msc.type: authoredcontent
-ms.openlocfilehash: 4a47f51b08b66dfe9636b3992786df19d0ad72ad
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 28940947253e0af43886cf1231f8aaf4615526cc
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59414935"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125478"
 ---
 # <a name="understanding-the-aspnet-mvc-execution-process"></a>ASP.NET MVC 실행 프로세스 이해
 
@@ -21,14 +21,12 @@ by [Microsoft](https://github.com/microsoft)
 
 > ASP.NET MVC 프레임 워크에서 단계별 브라우저 요청을 처리 하는 방법에 대해 알아봅니다.
 
-
 ASP.NET MVC 기반 웹 응용 프로그램에 대 한 요청을 통해 먼저 전달 합니다 **UrlRoutingModule** 개체는 HTTP 모듈입니다. 이 모듈 요청을 구문 분석 하 고 경로 선택을 수행 합니다. 합니다 **UrlRoutingModule** 개체가 현재 요청과 일치 하는 첫 번째 경로 개체를 선택 합니다. (경로 개체는 구현 하는 클래스 **RouteBase**, 이며 인스턴스는 일반적으로 **경로** 클래스입니다.) 경로가 일치 하는 경우는 **UrlRoutingModule** 개체 아무 작업도 수행 하지 및 대체 일반 ASP.NET 또는 IIS 요청 처리 요청을 수 있습니다.
 
 선택한 **경로** 개체를 **UrlRoutingModule** 개체를 가져옵니다 합니다 **IRouteHandler** 연관 된 개체는 **경로**개체입니다. 일반적으로 MVC 응용 프로그램에서이의 인스턴스여야 **MvcRouteHandler**합니다. 합니다 **IRouteHandler** 인스턴스를 만듭니다를 **IHttpHandler** 개체를 전달 합니다 **IHttpContext** 개체입니다. 기본적으로 **IHttpHandler** MVC에 대 한 인스턴스를 **MvcHandler** 개체입니다. 합니다 **MvcHandler** 개체에는 다음 최종적으로 요청을 처리 하는 컨트롤러를 선택 합니다.
 
 > [!NOTE]
 > ASP.NET MVC 웹 응용 프로그램을 IIS 7.0에서 실행 되 면 파일 이름 확장명이 없는 경우 MVC 프로젝트에 필요 하므로 그러나 IIS 6.0에서는 처리기가 ASP.NET ISAPI DLL에 따라.mvc 파일 확장명에 매핑하는 합니다.
-
 
 모듈 및 처리기는 ASP.NET MVC 프레임 워크에 대 한 진입점입니다. 다음 작업을 수행합니다.
 

@@ -8,12 +8,12 @@ ms.date: 06/17/2015
 ms.assetid: 7526ed45-a97d-4e8a-8301-01324ef0eff9
 msc.legacyurl: /web-pages/overview/getting-started/introducing-aspnet-web-pages-2/intro-to-web-pages-programming
 msc.type: authoredcontent
-ms.openlocfilehash: 81c2c6f0070a409c289128ccf5d39f9fff788b48
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 474de7671ac2931e5ba9ff635d77385403644521
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59387349"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130498"
 ---
 # <a name="introducing-aspnet-web-pages---programming-basics"></a>ASP.NET 웹 페이지 프로그래밍 기본 사항 소개
 
@@ -34,7 +34,6 @@ ms.locfileid: "59387349"
 > 
 > - NuGet 및 패키지 관리자입니다.
 > - `Gravatar` 도우미입니다.
-
 
 이 자습서는 주로 ASP.NET 웹 페이지를 사용 하는 프로그래밍 구문을 소개 연습입니다. 에 대해 알아봅니다 *Razor 구문* 및 C#에서 작성 된 코드는 프로그래밍 언어입니다. 이 구문의 잠깐은 이전 자습서에서 가져온 이 자습서에서는 자세한 구문에 설명 합니다.
 
@@ -60,7 +59,6 @@ ms.locfileid: "59387349"
 
 > [!NOTE]
 > 예제에서 코드 또는 태그를 페이지에 복사 하면 들여쓰기 및 맞춤 아닐 자습서와 동일 합니다. 들여쓰기 및 맞춤 어떻게 코드를 실행 하지만 영향을 주지 않습니다.
-
 
 [!code-cshtml[Main](intro-to-web-pages-programming/samples/sample1.cshtml)]
 
@@ -126,7 +124,6 @@ DateTime.Now 식이 됩니다. 간단히 말해에서 DateTime은는 *개체*합
 > 
 > 언급 하는 것이 있으므로 프로그래밍 ASP.NET 웹 페이지에 대 한 정보를 찾으려는 경우 많은 Razor에 대 한 참조를 찾을 수 있습니다. 그러나 이러한 참조의 많은 새로운 자신이 수행 하 고 혼동 될 수 있습니다에 적용 되지 않습니다. 그리고 실제로 다양 한 프로그래밍 질문은 실제로 C#을 사용 하 여 작업 또는 ASP.NET을 사용 하 여 작업에 대 한 합니다. 따라서 Razor에 대 한 정보에 대 한 구체적으로 살펴보면 찾을 수 없는 답변 합니다.
 
-
 ## <a name="adding-some-conditional-logic"></a>일부 조건부 논리 추가
 
 페이지의 코드를 사용 하는 방법에 대 한 유용한 기능 중 하나입니다는 다양 한 조건에 따라 발생 변경할 수 있습니다. 자습서의이 부분에서는 페이지에 표시 되는 항목을 변경 하는 몇 가지 이리저리 됩니다.
@@ -166,7 +163,6 @@ If가 방금 추가한 새로운 조건입니다. 코드에는 조건이 다음�
 
 > [!NOTE]
 > 같음 (= =)에 대 한 비교 연산자가 동일 하 게 =을 확인 해야 합니다. = 연산자에만 값을 할당 하는 (var을 = 2). 이러한 연산자를 혼합 하면 오류가 얻게 또는 이상한 결과 받게 됩니다.
-
 
 항목 인지를 테스트 하려면 전체 구문은 if(IsDone == true) 합니다. 하지만 바로 가기 if(IsDone) 이용할 수 있습니다. 비교 연산자 인 경우 ASP.NET true에 대해 테스트 하는 것을 가정 합니다.
 
@@ -231,7 +227,6 @@ Else 블록을 사용 하 여 유용이 시리즈의 뒷부분에 나오는 자�
 > **데이터 형식 및 as () 메서드**
 > 
 > 만 말한 지금 변수를 만들 때 사용 하는 키워드 차이 없는 전체 스토리를 통해입니다. 값을 조작 하기 위해-숫자를 추가 또는 연결 문자열, 날짜를 비교 하거나 true/false에 대 한 테스트-C#에서 값의 적절 한 내부 표현으로 사용 해야 합니다. C# 수 *일반적으로* 해야 해당 표현을 파악 (즉, 어떤 *형식* 데이터가) 값을 사용 하 여 수행 하는 기반입니다. 이제 합니다 그러나이 그렇게 할 수 없습니다. 그러지 않으면 C#은 데이터를 나타내는 방법을 명시적으로 지정 하 여 지원 해야 합니다. AsBool 메서드는-"true" 또는 "false"의 문자열 값을 부울 값으로 처리 해야 함을 C# 지시 합니다. 이와 유사한 메서드 AsInt (정수로 처리), AsDateTime (날짜/시간으로 처리), AsFloat (부동 소수점 숫자로 처리) 등도 다른 형식으로 문자열을 나타내기 위해 존재 합니다. 를 사용 하면 () 메서드로 이러한 C# 나타낼 수 없는 문자열 값을 요청 하는 경우 오류가 표시 됩니다.
-
 
 페이지의 태그를 제거 하거나이 요소에 주석 (여기 그림 주석):
 

@@ -8,12 +8,12 @@ ms.date: 01/12/2011
 ms.assetid: c5c14ef0-c128-4dc1-8c01-7f0fdb09e411
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc3/vb/improving-the-details-and-delete-methods
 msc.type: authoredcontent
-ms.openlocfilehash: 63930ebe35e4c37e0cc7c0882582c48348cf201a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1912a36c19b27993e2bf17368d671d5a3b7f6450
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59417665"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130014"
 ---
 # <a name="improving-the-details-and-delete-methods-vb"></a>세부 정보 및 삭제 메서드 개선(VB)
 
@@ -28,7 +28,6 @@ ms.locfileid: "59417665"
 > Visual Studio 2010 Visual Web Developer 2010 대신를 사용 하는 경우 다음 링크를 클릭 하 여 필수 구성 요소를 설치 합니다. [Visual Studio 2010 필수 구성 요소](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack)합니다.
 > 
 > VB.NET 소스 코드를 사용 하 여 Visual Web Developer 프로젝트는 다음이 항목과 함께 사용할 수 있습니다. [VB.NET 버전](https://code.msdn.microsoft.com/Introduction-to-MVC-3-10d1b098)합니다. 원하는 경우 C#으로 전환 합니다 [C# 버전](../cs/improving-the-details-and-delete-methods.md) 이 자습서의 합니다.
-
 
 자습서의이 부분에서는 일부 향상 된 자동 생성 된 만들어야 `Details` 고 `Delete` 메서드. 이러한 변경 내용이 필요 하지 않습니다 하지만 몇 가지 약간의 코드를 사용 하 여 쉽게 향상 시킬 수 있습니다 응용 프로그램입니다.
 

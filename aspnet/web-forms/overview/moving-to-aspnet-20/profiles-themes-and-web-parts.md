@@ -8,19 +8,18 @@ ms.date: 02/20/2005
 ms.assetid: 92df4051-77c6-492c-bd34-23d24189cea4
 msc.legacyurl: /web-forms/overview/moving-to-aspnet-20/profiles-themes-and-web-parts
 msc.type: authoredcontent
-ms.openlocfilehash: 0f3b376cee8d391eb087664a51cc25e3b58d16b9
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: cf5c45781be6d003d28c6aa27efa08032579a6dd
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59390040"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132777"
 ---
 # <a name="profiles-themes-and-web-parts"></a>프로필, 테마 및 웹 파트
 
 by [Microsoft](https://github.com/microsoft)
 
 > 구성의 주요 변경 사항 및 ASP.NET 2.0의 계측 됩니다. 새 ASP.NET 구성 API를 프로그래밍 방식으로 되도록 구성 변경 내용을 허용 합니다. 또한 많은 새 구성 설정이 새 구성 및 계측을 허용 합니다.
-
 
 ASP.NET 2.0에는 개인 설정 된 웹 사이트의 영역에서 향상을 시키고 나타냅니다. 이미 설명한의 멤버 자격 기능 외에도 ASP.NET 프로필, 테마 및 웹 파트 대폭 향상 시킬 웹 사이트에서 개인 설정 합니다.
 
@@ -155,16 +154,13 @@ ASP.NET 프로필 공급자 모델을 사용 합니다. 앱에서 SQL Server Exp
 
 **그림 1** 아래 테마가 적용 하지 않고 작은 ASP.NET 페이지를 검색 합니다. **그림 2** 테마가 적용 된 동일한 파일을 보여 줍니다. 배경색과 텍스트 색을 CSS 파일을 통해 구성 됩니다. 단추 및 텍스트의 모양은 위에 나열 된 스킨 파일을 사용 하 여 구성 됩니다.
 
-
 ![테마 없음](profiles-themes-and-web-parts/_static/image1.gif)
 
 **그림 1**: 테마 없음
 
-
 ![테마 적용](profiles-themes-and-web-parts/_static/image2.gif)
 
 **그림 2**: 테마 적용
-
 
 위에 나열 된 스킨 파일에는 모든 텍스트 상자 컨트롤 및 단추 컨트롤에 대 한 기본 스킨을 정의 합니다. 즉, 모든 TextBox 컨트롤 및 단추 컨트롤을 페이지에 삽입이 모양에 걸립니다. 사용 하 여 이러한 컨트롤의 특정 인스턴스에 적용할 수 있는 스킨을 정의할 수도 있습니다는 **SkinID** 컨트롤의 속성입니다.
 
@@ -329,7 +325,6 @@ UI 구조적 구성 요소는 개인 설정에 의존 하 고 핵심 구조 및 
 > [!NOTE]
 > 웹 파트 개인 설정;를 사용 하도록 설정 하려면 아무 작업도 수행할 필요가 없습니다. 웹 파트 컨트롤 집합에 대해 기본적으로 활성화 됩니다. 사이트에서 웹 파트 페이지를 처음 실행 하면 ASP.NET 사용자 개인 설정을 저장 하는 기본 개인 설정 공급자를 설정 합니다. 개인 설정에 대 한 자세한 내용은 웹 파트 개인 설정 개요를 참조 하세요.
 
-
 ### <a name="to-create-a-page-for-containing-web-parts-controls"></a>컨트롤이 웹 파트를 포함 하는 것에 대 한 페이지를 만들려면
 
 1. 기본 페이지를 닫고 WebPartsDemo.aspx 이라는 사이트에 새 페이지를 추가 합니다.
@@ -402,11 +397,9 @@ UI 구조적 구성 요소는 개인 설정에 의존 하 고 핵심 구조 및 
 
 **두 영역을 사용 하 여 웹 파트 데모 페이지**
 
-
 ![웹 파트 VS 연습 1 스크린 샷](profiles-themes-and-web-parts/_static/image3.gif)
 
 **그림 3**: 웹 파트 VS 연습 1 스크린 샷
-
 
 제목 표시줄 각 컨트롤의 동사 메뉴 컨트롤에 대해 수행 가능한 작업에 대 한 액세스를 제공 하는 아래쪽 화살표는 경우 동사 메뉴 컨트롤 중 하나를 클릭 합니다 **최소화** 동사와 참고 하 여 컨트롤이 최소화 됩니다. 동사 메뉴에서 클릭 **복원**, 보통 크기로 컨트롤을 반환 합니다.
 
@@ -449,11 +442,9 @@ UI 구조적 구성 요소는 개인 설정에 의존 하 고 핵심 구조 및 
 
 ### <a name="web-parts-demo-page-with-my-links-control-moved"></a>이동 내 링크 컨트롤을 사용 하 여 웹 파트 데모 페이지
 
-
 ![웹 파트 VS 연습 2 스크린 샷](profiles-themes-and-web-parts/_static/image4.gif)
 
 **그림 4**: 웹 파트 VS 연습 2 스크린 샷
-
 
 1. 클릭 합니다 **디스플레이 모드** 드롭 다운 메뉴에서 선택한 **찾아보기**합니다. 페이지가 새로 고쳐집니다, 영역 이름을 사라지는 하며 **내 링크** 유지 하는 위치를 제어 합니다.
 2. 개인 설정이 사용 되는 작업을 보여 주기 위해 브라우저를 닫고 페이지를 다시 로드 합니다. 이후의 브라우저 세션에 대 한 변경 내용을 저장 됩니다.
@@ -467,22 +458,18 @@ UI 구조적 구성 요소는 개인 설정에 의존 하 고 핵심 구조 및 
 
 ### <a name="web-parts-demo-page-in-edit-mode"></a>편집 모드에서 웹 파트 데모 페이지
 
-
 ![웹 파트 VS 연습 3 스크린 샷](profiles-themes-and-web-parts/_static/image5.gif)
 
 **그림 5**: 웹 파트 VS 연습 3 스크린 샷
-
 
 1. 클릭 합니다 **디스플레이 모드** 메뉴에서 선택한 **찾아보기** 찾아보기 모드로 돌아갑니다.
 2. 이제 컨트롤에는 업데이트 된 제목과 테두리가 없는 다음 스크린 샷과 같이 합니다.
 
 ### <a name="edited-web-parts-demo-page"></a>웹 파트 데모 페이지 편집된
 
-
 ![웹 파트 VS 연습 4 스크린 샷](profiles-themes-and-web-parts/_static/image6.gif)
 
 **그림 4**: 웹 파트 VS 연습 4 스크린 샷
-
 
 ### <a name="adding-web-parts-at-run-time"></a>런타임 시 웹 파트 추가
 

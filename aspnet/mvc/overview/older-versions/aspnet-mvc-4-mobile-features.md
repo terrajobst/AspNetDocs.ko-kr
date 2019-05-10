@@ -8,19 +8,18 @@ ms.date: 08/15/2012
 ms.assetid: 27dc4fc8-1b51-43b0-933f-fc1b52476523
 msc.legacyurl: /mvc/overview/older-versions/aspnet-mvc-4-mobile-features
 msc.type: authoredcontent
-ms.openlocfilehash: de65e01b888d9ed15da3903f086b40c49b32b9fb
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 62050f561440a2c0fbbe91ec49fb1f9e30885e9f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402416"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130354"
 ---
 # <a name="aspnet-mvc-4-mobile-features"></a>ASP.NET MVC 4 모바일 기능
 
 [Rick Anderson]((https://twitter.com/RickAndMSFT))
 
 > 이제는 MVC 5의 버전이이 자습서에서 샘플 코드 [ASP.NET MVC 5 모바일 웹 응용 프로그램이 Azure 웹 사이트에서 배포](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-deploy-aspnet-mvc-mobile-app/)합니다.
-
 
 이 자습서는 ASP.NET MVC 4 웹 응용 프로그램에서 모바일 기능을 사용 하는 방법의 기본 사항을 설명 합니다. 이 자습서에서는 사용할 수 있습니다 [Visual Studio Express 2012](https://www.microsoft.com/visualstudio/11/products/express) 또는 Visual Web Developer 2010 Express 서비스 팩 1 (&quot;VWD 또는 Visual Web Developer&quot;). 이미 있는 경우 Visual Studio professional 버전을 사용할 수 있습니다.
 
@@ -214,7 +213,6 @@ ASP.NET MVC 4의 중요 한 새로운 기능에는 모바일 브라우저는 개
 > [!NOTE]
 > Internet Explorer 9를 사용 하 고 표시 되지 않는 경우는 `BundleMobileConfig` 줄 위에 노란색 강조 표시를 클릭 합니다 [호환성 보기 단추](https://windows.microsoft.com/windows7/How-to-use-Compatibility-View-in-Internet-Explorer-9)![(해제) 호환성 뷰 단추 그림](http://res2.windows.microsoft.com/resbox/en/Windows 7/main/f080e77f-9b66-4ac8-9af0-803c4f8a859c_15.jpg " (해제) 호환성 뷰 단추 그림") 개요에서 변경 아이콘을 ie ![(해제) 호환성 뷰 단추 그림](http://res2.windows.microsoft.com/resbox/en/Windows 7/main/f080e77f-9b66-4ac8-9af0-803c4f8a859c_15.jpg "(해제) 호환성 뷰 단추 그림 ") 단색 ![(켜기) 호환성 뷰 단추 그림](http://res1.windows.microsoft.com/resbox/en/Windows 7/main/156805ff-3130-481b-a12d-4d3a96470f36_14.jpg "(on) 호환성 뷰 단추 그림")합니다. 또는 FireFox 또는 Chrome에서이 자습서를 볼 수 있습니다.
 
-
 엽니다는 *MvcMobile\Views\Shared\\_Layout.Mobile.cshtml* 파일과 후 직접 다음 태그를 추가 합니다 `Html.Partial` 호출:
 
 [!code-cshtml[Main](aspnet-mvc-4-mobile-features/samples/sample12.cshtml)]
@@ -229,7 +227,6 @@ ASP.NET MVC 4의 중요 한 새로운 기능에는 모바일 브라우저는 개
 
 > [!NOTE]
 > 특정 모바일 코드를 디버깅할 수 있습니다 [사용자 에이전트 문자열을 설정](http://www.howtogeek.com/113439/how-to-change-your-browsers-user-agent-without-installing-any-extensions/) IE 또는 iPhone 및 다음 F-12 개발자 도구를 사용 하 여 Chrome에 대 한 합니다. 모바일 브라우저가 표시 되지 않는 경우는 **홈**를 **발표자**를 **태그**, 및 **날짜** 단추 링크로, jQuery Mobile에 대 한 참조 스크립트 및 CSS 파일은 올바른 되지 않을 수 있습니다.
-
 
 표시 스타일이 변경 하는 것 외에도 **모바일 보기 표시** 및 모바일 보기에서 데스크톱 보기로 전환할 수 있는 링크입니다. 선택 된 **바탕 화면 보기** 링크 및 바탕 화면 보기에 표시 됩니다.
 
@@ -251,7 +248,6 @@ ASP.NET MVC 4의 중요 한 새로운 기능에는 모바일 브라우저는 개
 > 다음 머리글을 추가 합니다 *Views\Shared\\_Layout.cshtml* 파일입니다.
 >
 > [!code-html[Main](aspnet-mvc-4-mobile-features/samples/sample16.html)]
-
 
 로 이동 합니다 *AllTags* 데스크톱 브라우저에서 페이지입니다. 뷰 전환기 위젯 모바일 레이아웃 페이지에만 추가 되므로 데스크톱 브라우저에 표시 되지 않습니다. 이 자습서의 뒷부분에 나오는 데스크톱 뷰로 뷰 전환기 위젯을 추가 하는 방법을 볼 수 있습니다.
 

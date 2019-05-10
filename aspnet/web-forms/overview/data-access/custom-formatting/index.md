@@ -8,17 +8,16 @@ ms.date: 10/05/2011
 ms.assetid: 320b7d26-837f-4fa7-a242-1ab82f8bdbe9
 msc.legacyurl: /web-forms/overview/data-access/custom-formatting
 msc.type: chapter
-ms.openlocfilehash: 180059218bdbff4cb25249b0848fb2752fbbb75c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e7e54bd1c5d4b0e9a0afcd011c3389c267b891ec
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402923"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128685"
 ---
 # <a name="custom-formatting"></a>사용자 지정 형식 지정
 
 > 이 자습서는 GridView, FormView DetailsView 컨트롤에서 이벤트 처리기를 사용 하 여 데이터 바인딩 중에 데이터 표시를 사용자 지정 하는 방법을 살펴봅니다.
-
 
 - [데이터에 따라 사용자 지정 형식 지정(C#)](custom-formatting-based-upon-data-cs.md)
 - [GridView 컨트롤에서 TemplateFields 사용(C#)](using-templatefields-in-the-gridview-control-cs.md)

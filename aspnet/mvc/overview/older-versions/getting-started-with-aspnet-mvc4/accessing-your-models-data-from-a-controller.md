@@ -8,12 +8,12 @@ ms.date: 08/28/2012
 ms.assetid: 61e0206d-7f32-4018-992d-0a51b48b37dc
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc4/accessing-your-models-data-from-a-controller
 msc.type: authoredcontent
-ms.openlocfilehash: 45683fc2b40f58a6344ec8670e6a93df89b587fe
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b40bb8b06ae7c89a33ae2aead9578cf507503531
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59402910"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129944"
 ---
 # <a name="accessing-your-models-data-from-a-controller"></a>컨트롤러에서 모델의 데이터에 액세스
 
@@ -21,7 +21,6 @@ ms.locfileid: "59402910"
 
 > > [!NOTE]
 > > 이 자습서는 업데이트 된 버전을 사용할 수 [여기](../../getting-started/introduction/getting-started.md) 는 ASP.NET MVC 5 및 Visual Studio 2013을 사용 합니다. 보다 안전 하 고 더 간단 하 게 수행 되며 더 많은 기능을 보여 줍니다.
-
 
 이 섹션에서는 새 만듭니다 `MoviesController` 클래스 및 영화 데이터를 검색 하 고 뷰 템플릿을 사용 하 여 브라우저에 표시 하는 코드를 작성 합니다.
 
@@ -120,7 +119,6 @@ ASP.NET MVC는 또한 형식화 된 데이터 또는 개체를 뷰 템플릿으�
 > [!NOTE]
 > 데이터베이스 탐색기에 나타나지 않으면에서 **도구** 메뉴에서 **데이터베이스에 연결**를 취소 한 다음를 **데이터 소스 선택** 대화 합니다. 이렇게 하면 강제로 열기 면 데이터베이스 탐색기.
 
-
 > [!NOTE]
 > VWD 또는 Visual Studio 2010을 사용 하 고 다음 중 하나에 유사한 오류가 발생 하는:
 > 
@@ -128,7 +126,6 @@ ASP.NET MVC는 또한 형식화 된 데이터 또는 개체를 뷰 템플릿으�
 > - &quot;InvalidOperation 예외가 사용자 코드에서 처리 되지 않았습니다.&quot; 제공 된 SqlConnection이 초기 카탈로그를 지정 하지 않습니다.
 > 
 > 설치 해야 합니다 [SQL Server Data Tools](https://blogs.msdn.com/b/rickandy/archive/2012/08/02/installing-and-using-sql-server-data-tools-ssdt-on-visual-studio-2010-and-vwd.aspx) 하 고 [LocalDB](https://www.microsoft.com/web/gallery/install.aspx?appid=SQLLocalDBOnly_11_0)합니다. 확인 된 `MovieDBContext` 이전 페이지에서 지정 된 연결 문자열입니다.
-
 
 마우스 오른쪽 단추로 클릭 합니다 `Movies` 선택한 테이블 **테이블 데이터 표시** 만든 데이터를 볼 수 있습니다.
 

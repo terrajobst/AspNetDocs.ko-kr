@@ -8,12 +8,12 @@ ms.date: 08/15/2006
 ms.assetid: 778baa4e-4af8-4665-947e-7a01d1a4dff2
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting/sorting-custom-paged-data-cs
 msc.type: authoredcontent
-ms.openlocfilehash: a65fe60dc44eb40591733ba9371e409f690fea52
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: eaf11e48238353d098a1df8bbd13f71b5778ffb5
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59409241"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128089"
 ---
 # <a name="sorting-custom-paged-data-c"></a>사용자 지정 페이징 데이터 정렬(C#)
 
@@ -23,7 +23,6 @@ ms.locfileid: "59409241"
 
 > 이전 자습서에서 웹 페이지에서 데이터를 표시할 때는 사용자 지정 페이징을 구현 하는 방법을 알게 되었습니다. 이 자습서 정렬 사용자 지정 페이징 지원을 포함 하도록 앞의 예제를 확장 하는 방법을 볼 수 있습니다.
 
-
 ## <a name="introduction"></a>소개
 
 기본 페이징에 비해 몇 배 많은 규모로, 많은 양의 데이터를 페이징할 때는 사실상 페이징 구현 선택에 페이징 하는 사용자 지정 하 여 사용자 지정 페이징 데이터의 페이징의 성능을 향상 시킬 수 있습니다. 그러나 사용자 지정 페이징을 구현 하는 것은 기본 페이징 정렬 목록에 추가 하는 경우에 특히 구현 보다 더 복잡 합니다. 이 자습서에서는 정렬에 대 한 지원을 포함 하도록 앞에서 예제 확장할 예정 *고* 사용자 지정 페이징 합니다.
@@ -31,16 +30,13 @@ ms.locfileid: "59409241"
 > [!NOTE]
 > 시작 부분에서 선언적 구문을 복사할 잠시 전에이 자습서 이전 기반 이므로 합니다 `<asp:Content>` 이전 자습서가의 웹 페이지에서 요소 (`EfficientPaging.aspx`) 사이의 붙여넣습니다는 `<asp:Content>` 요소에는 `SortParameter.aspx` 페이지. 1 단계를 다시 참조를 [편집 및 삽입 인터페이스에 유효성 검사 컨트롤 추가](../editing-inserting-and-deleting-data/adding-validation-controls-to-the-editing-and-inserting-interfaces-cs.md) 다른 하나의 ASP.NET 페이지의 기능을 복제에 대 한 자세한 논의 자습서입니다.
 
-
 ## <a name="step-1-reexamining-the-custom-paging-technique"></a>1단계: 사용자 지정 페이징 기술을 다시 검토
 
 사용자 지정 페이징이 제대로 작동 하려면에서는 시작 하는 행 인덱스 및 최대 행 매개 변수를 지정 하는 레코드의 특정 하위 집합을 효율적으로 나옵니다는 몇 가지 기법을 구현 해야 합니다. 이 목표를 달성 하기 위해 사용할 수 있는 기술의 몇 가지 있습니다. 이 작업을 수행 살펴보았습니다 이전 자습서에서 사용 하 여 Microsoft SQL Server 2005가 새 `ROW_NUMBER()` 순위 함수입니다. 즉,는 `ROW_NUMBER()` 행 번호를 지정 된 정렬 순서에 따라 순위가 지정 되는 쿼리가 반환한 각 행에 할당 순위 함수입니다. 그런 다음 적절 한 레코드 하위 집합 번호가 매겨진된 결과의 특정 섹션을 반환 하 여 가져옵니다. 다음 쿼리는이 기술을 사용 하 여 결과 순위에 따라 사전순으로 정렬 하는 경우 11부터 20까지 번호가 매겨진 해당 제품을 반환 하는 방법을 보여 줍니다는 `ProductName`:
 
-
 [!code-sql[Main](sorting-custom-paged-data-cs/samples/sample1.sql)]
 
 이 기술은 특정 정렬 순서를 사용 하 여 페이징 적합 (`ProductName` 이 경우 사전순으로 정렬), 쿼리를 다른 정렬 식을 사용 하 여 정렬 된 결과 표시 하도록 수정 해야 합니다. 하지만 합니다. 이상적으로 위의 쿼리 다시 작성할 수 있습니다의 매개 변수를 사용 하는 `OVER` 절을 다음과 같이 합니다.
-
 
 [!code-sql[Main](sorting-custom-paged-data-cs/samples/sample2.sql)]
 
@@ -56,7 +52,6 @@ ms.locfileid: "59409241"
 
 이 기능을 구현 하려면 명명 된 Northwind 데이터베이스에 새 저장된 프로시저를 만들 `GetProductsPagedAndSorted`합니다. 이 저장된 프로시저에서 세 개의 입력 매개 변수를 수락 해야: `@sortExpression`, 형식의 입력된 매개 변수 `nvarchar(100`) 결과 정렬 해야와 바로 뒤에 삽입 됩니다 하는 방법을 지정 하는 합니다 `ORDER BY` 에서 텍스트를 `OVER` 절 및 `@startRowIndex` 하 고 `@maximumRows`, 동일한 두 개의 정수 입력된 매개 변수를는 `GetProductsPaged` 저장 프로시저는 이전 자습서에서 검사 합니다. 만들기는 `GetProductsPagedAndSorted` 다음 스크립트를 사용 하 여 프로시저를 저장 합니다.
 
-
 [!code-sql[Main](sorting-custom-paged-data-cs/samples/sample3.sql)]
 
 저장된 프로시저에 대 한 값을 확인 하 여 시작 된 `@sortExpression` 매개 변수를 지정 합니다. 누락 된 경우 결과 순으로 순위가 지정 `ProductID`합니다. 다음으로, 동적 SQL 쿼리가 생성 됩니다. 동적 SQL 쿼리를 여기 Products 테이블에서 모든 행을 검색 하는 데 사용 되는 이전 쿼리에서 약간 다른 것을 참고 합니다. 이전 예제에서 얻은 연결된 s 제품 범주별 하위 쿼리를 사용 하 여 공급 업체 및 s 이름입니다. 년대 결정 했지만이 [데이터 액세스 레이어 만들기](../introduction/creating-a-data-access-layer-cs.md) 자습서를 사용 하는 대신 수행 된 `JOIN`의 TableAdapter 연결된 삽입을 자동으로 만들 수 없습니다 때문에 업데이트 및 이러한 메서드를 삭제 쿼리 합니다. 그러나 합니다 `GetProductsPagedAndSorted` 저장된 프로시저를 사용 해야 합니다 `JOIN` 범주 또는 공급 업체 이름을 기준으로 정렬할 결과 대 한 합니다.
@@ -65,57 +60,44 @@ ms.locfileid: "59409241"
 
 잠시 다른 값이 저장된 프로시저를 테스트 하는 `@sortExpression`, `@startRowIndex`, 및 `@maximumRows` 매개 변수입니다. 서버 탐색기에서 저장된 프로시저 이름을 마우스 오른쪽 단추로 클릭 하 고 실행을 선택 합니다. (그림 1 참조) 입력된 매개 변수를 입력할 수는 저장 프로시저 실행 대화 상자를 표시 됩니다. 범주 이름으로 결과 정렬 하려면에 대 한 범주를 사용 하 여는 `@sortExpression` 공급자의 회사 이름을 기준으로 정렬 하려면 CompanyName을 사용 하 여 매개 변수 값입니다. 매개 변수 값을 입력 한 후 확인을 클릭 합니다. 결과 출력 창에 표시 됩니다. 그림 2 기준으로 정렬할 때 11 ~ 20 순위 제품을 반환 하는 경우 결과 보여 줍니다는 `UnitPrice` 내림차순으로 정렬 합니다.
 
-
 ![저장된 프로시저 s 세 개의 입력 매개 변수에 다른 값을 사용해 보십시오.](sorting-custom-paged-data-cs/_static/image1.png)
 
 **그림 1**: 저장된 프로시저 s 세 개의 입력 매개 변수에 다른 값을 사용해 보십시오.
-
 
 [![저장 프로시저의 결과 출력 창에 표시 됩니다.](sorting-custom-paged-data-cs/_static/image3.png)](sorting-custom-paged-data-cs/_static/image2.png)
 
 **그림 2**: 저장 프로시저의 결과 출력 창에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](sorting-custom-paged-data-cs/_static/image4.png))
 
-
 > [!NOTE]
 > 지정 된 결과 순위 지정 하는 경우 `ORDER BY` 열에는 `OVER` 절을 SQL Server에서 결과 정렬 해야 합니다. 이 결과 정렬할 열 위에 클러스터형 인덱스가 있는 경우 빠른 작업을 다루는 경우 인덱스를 하지만 그렇지 않은 경우 더 높은 비용이 들 수 있습니다. 충분히 큰 쿼리에 대 한 성능 향상을 위해 사용 되는 결과으로 정렬 열에 대 한 비클러스터형 인덱스를 추가 하는 것이 좋습니다. 가리킵니다 [SQL Server 2005의 성능과 순위 함수](http://www.sql-server-performance.com/ak_ranking_functions.asp) 대 한 자세한 내용은 합니다.
-
 
 ## <a name="step-2-augmenting-the-data-access-and-business-logic-layers"></a>2단계: 데이터 액세스 및 비즈니스 논리 계층 확대
 
 사용 하 여는 `GetProductsPagedAndSorted` 만든 저장된 프로시저를 다음 단계는 응용 프로그램 아키텍처를 통해 해당 저장된 프로시저를 실행 하는 수단을 제공 합니다. 이 BLL 및 DAL에 적절 한 메서드를 추가 해야 합니다. S를 DAL에 메서드를 추가 하 여 시작할 수 있습니다. 열기는 `Northwind.xsd` 형식화 된 데이터 집합을 마우스 오른쪽 단추로 클릭은 `ProductsTableAdapter`, 상황에 맞는 메뉴에서 추가 쿼리 옵션을 선택 합니다. 이 새 DAL 방법-기존 저장된 프로시저를 사용 하 여를 구성 하려면 이전 자습서에서 했던 것 처럼 `GetProductsPagedAndSorted`,이 경우. 기존 저장된 프로시저를 사용 하 여 새 TableAdapter 메서드를 클릭 하 여 시작 합니다.
 
-
 ![기존 저장된 프로시저를 사용 하도록 선택](sorting-custom-paged-data-cs/_static/image5.png)
 
 **그림 3**: 기존 저장된 프로시저를 사용 하도록 선택
 
-
 사용 하도록 저장된 프로시저를 지정 하려면 선택 합니다 `GetProductsPagedAndSorted` 다음 화면에서 드롭 다운 목록에서 프로시저를 저장 합니다.
-
 
 ![GetProductsPagedAndSorted를 사용 하 여 저장 프로시저](sorting-custom-paged-data-cs/_static/image6.png)
 
 **그림 4**: GetProductsPagedAndSorted를 사용 하 여 저장 프로시저
 
-
 이 저장된 프로시저 결과 다음 화면에서 나타내는 표 형식 데이터를 반환 레코드 집합을 반환 합니다.
-
 
 ![저장된 프로시저가 반환 테이블 형식 데이터를 나타냅니다.](sorting-custom-paged-data-cs/_static/image7.png)
 
 **그림 5**: 저장된 프로시저가 반환 테이블 형식 데이터를 나타냅니다.
 
-
 마지막으로 두는 채우기를 사용 하는 DAL 메서드 DataTable 만들고 메서드 명명 DataTable 패턴을 반환 `FillPagedAndSorted` 고 `GetProductsPagedAndSorted`, 각각.
-
 
 ![메서드 이름을 선택 합니다.](sorting-custom-paged-data-cs/_static/image8.png)
 
 **그림 6**: 메서드 이름을 선택 합니다.
 
-
 이제는 우리 ve 확장 DAL BLL을 설정 하려면 준비 된 것입니다. 엽니다는 `ProductsBLL` 클래스 파일 및 새 메서드를 추가 `GetProductsPagedAndSorted`합니다. 이 메서드를 세 개의 입력 매개 변수를 수락 해야 합니다. `sortExpression`, `startRowIndex`, 및 `maximumRows` DAL s에 호출 해야 하 고 `GetProductsPagedAndSorted` 메서드를 다음과 같이 합니다.
-
 
 [!code-csharp[Main](sorting-custom-paged-data-cs/samples/sample4.cs)]
 
@@ -127,12 +109,10 @@ ObjectDataSource가 변경 하 여 시작 `SelectMethod` 에서 `GetProductsPage
 
 구성을 변경한 후 이러한 두 ObjectDataSource가 선언적 구문을 다음과 비슷하게 표시 됩니다.
 
-
 [!code-aspx[Main](sorting-custom-paged-data-cs/samples/sample5.aspx)]
 
 > [!NOTE]
 > 이전 자습서를 사용 하 여 ObjectDataSource에 있는지를 확인 *되지* SelectParameters 컬렉션 sortExpression, startRowIndex, 또는 maximumRows 입력된 매개 변수를 포함 합니다.
-
 
 GridView에서 정렬 기능을 사용 GridView가 스마트 태그를 GridView s (으)로 설정 하는 정렬 사용 확인란을 단순히 확인 `AllowSorting` 속성을 `true` LinkButton으로 렌더링 하도록 각 열에 대 한 헤더 텍스트를 발생 합니다. Linkbutton 헤더 중 하나에서 최종 사용자가 포스트백 근거가 하 고 다음 단계를 지정 전까지 대기 합니다.
 
@@ -144,32 +124,25 @@ GridView에서 정렬 기능을 사용 GridView가 스마트 태그를 GridView 
 
 그림 7은 기준으로 정렬 된 결과의 첫 페이지는 `UnitPrice` 오름차순으로 정렬 합니다.
 
-
 [![UnitPrice 하 여 결과 정렬](sorting-custom-paged-data-cs/_static/image10.png)](sorting-custom-paged-data-cs/_static/image9.png)
 
 **그림 7**: 결과 UnitPrice로 정렬 됩니다 ([클릭 하 여 큰 이미지 보기](sorting-custom-paged-data-cs/_static/image11.png))
 
-
 현재 구현에는 제품 이름, 범주 이름, 수량 단위 및 단가 당 결과 정렬할 수 올바르게, 하는 동안 런타임 예외가 이름 결과 공급자가 결과 정렬 하려고 (그림 8 참조).
-
 
 ![다음 런타임 예외에서 공급자 결과 기준으로 결과 정렬 하려고 합니다.](sorting-custom-paged-data-cs/_static/image12.png)
 
 **그림 8**: 다음 런타임 예외에서 공급자 결과 기준으로 결과 정렬 하려고 합니다.
 
-
 때문에이 예외가 발생 합니다 `SortExpression` GridView s `SupplierName` BoundField로 설정 된 `SupplierName`합니다. 그러나 s 공급자 이름에 `Suppliers` 테이블은 실제로 호출 `CompanyName` 없어졌으며 별칭으로이 열 이름은 `SupplierName`합니다. 그러나 합니다 `OVER` 절에서 사용 하는 `ROW_NUMBER()` 함수 별칭을 사용할 수 없습니다 및 실제 열 이름을 사용 해야 합니다. 따라서 변경 합니다 `SupplierName` BoundField의 `SortExpression` 에서 CompanyName 공급 업체 이름 (그림 9 참조). 그림 10에서 알 수 있듯이, 공급자가 이렇게이 변경한 후 결과 정렬할 수 있습니다.
-
 
 ![공급 업체 이름 BoundField의 SortExpression CompanyName 변경](sorting-custom-paged-data-cs/_static/image13.png)
 
 **그림 9**: 공급 업체 이름 BoundField의 SortExpression CompanyName 변경
 
-
 [![공급 업체에서 결과 정렬할 수 있습니다.](sorting-custom-paged-data-cs/_static/image15.png)](sorting-custom-paged-data-cs/_static/image14.png)
 
 **그림 10**: 결과 이제 정렬할 수 있습니다 공급자 ([클릭 하 여 큰 이미지 보기](sorting-custom-paged-data-cs/_static/image16.png))
-
 
 ## <a name="summary"></a>요약
 

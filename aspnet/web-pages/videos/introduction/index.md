@@ -8,12 +8,12 @@ ms.date: 05/18/2012
 ms.assetid: b8a43660-177f-4a00-bb51-be887364c607
 msc.legacyurl: /web-pages/videos/introduction
 msc.type: chapter
-ms.openlocfilehash: d4e5ef19044a265f48d51586062fb7d2dc024b4c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e4e9d63ddc701205d9f102e05fe47dd2c552bdf1
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59413674"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65127734"
 ---
 # <a name="introduction-to-web-pages-videos"></a>웹 페이지 비디오 소개
 
@@ -21,7 +21,6 @@ ms.locfileid: "59413674"
 
 > [!NOTE] 
 > WebMatrix는 더 이상 권장 통합된 개발 환경으로 ASP.NET 웹 페이지에 대 한 합니다. 사용 하 여 [Visual Studio](xref:aspnet/web-pages/overview/getting-started/program-asp-net-web-pages-in-visual-studio) 하거나 [Visual Studio Code](https://code.visualstudio.com/)합니다.
-
 
 - [ASP.NET 웹 페이지 5분 소개](5-minute-introduction-to-aspnet-web-pages.md)
 - [Microsoft WebMatrix 도구 설치 및 사용](install-and-use-the-microsoft-webmatrix-tool.md)

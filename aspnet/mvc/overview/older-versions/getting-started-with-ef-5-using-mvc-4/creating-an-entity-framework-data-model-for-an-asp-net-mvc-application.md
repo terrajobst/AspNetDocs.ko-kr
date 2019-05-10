@@ -8,12 +8,12 @@ ms.date: 07/30/2013
 ms.assetid: 4ba029b6-ee7c-4e45-a0e7-b703c37e5d9a
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: eeed594e785b99146140dcd2833a95bf6e467823
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: abb59f16759a7d32c6900baf96fe3a1299170922
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59390443"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129798"
 ---
 # <a name="creating-an-entity-framework-data-model-for-an-aspnet-mvc-application-1-of-10"></a>(1 / 10) ASP.NET MVC 응용 프로그램에 대 한 Entity Framework 데이터 모델 만들기
 
@@ -57,7 +57,6 @@ ms.locfileid: "59390443"
 > ## <a name="original-version-of-the-tutorial"></a>자습서의 원래 버전
 > 
 > 자습서의 원래 버전이 제공 되는 [EF 4.1 / MVC 3 전자책](https://social.technet.microsoft.com/wiki/contents/articles/11608.e-book-gallery-for-microsoft-technologies.aspx#GettingStartedwiththeEntityFramework4.1usingASP.NETMVC)합니다.
-
 
 ## <a name="the-contoso-university-web-application"></a>Contoso University 웹 응용 프로그램
 
@@ -130,7 +129,6 @@ Visual Studio를 열고 새 C# 프로젝트 만들기 "ContosoUniversity"를 사
 
 > [!NOTE]
 > 이러한 엔터티 클래스의 모든 만들기를 완료 하기 전에 프로젝트를 컴파일할 하려고 하면 컴파일러 오류를 얻게 됩니다.
-
 
 ### <a name="the-student-entity"></a>학생 엔터티
 

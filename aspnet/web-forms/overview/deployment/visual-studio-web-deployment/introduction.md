@@ -8,12 +8,12 @@ ms.date: 02/15/2013
 ms.assetid: 24ad086d-865e-433c-9ac9-05f1a553da16
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/introduction
 msc.type: authoredcontent
-ms.openlocfilehash: 0edab77cd973af129e54c7867265f86b47c349a6
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8ed7414c0b27fc41360e259bfb0a4c82e88a4e15
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59410138"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128671"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-introduction"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 소개
 
@@ -30,7 +30,6 @@ ms.locfileid: "59410138"
 > 에 자습서로 직접 관련 되지 않은 질문이 있을 경우 게시할 수 하는 [ASP.NET 배포 포럼](https://forums.asp.net/26.aspx/1?Configuration+and+Deployment) 또는 [StackOverflow](http://stackoverflow.com)합니다.
 > 
 > 이 콘텐츠는 무료 전자책 제공 이기도 [TechNet 전자책 갤러리](https://social.technet.microsoft.com/wiki/contents/articles/11608.e-book-gallery-for-microsoft-technologies.aspx#ASPNETWebDeploymentusingVisualStudio)합니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -133,7 +132,6 @@ SDK 종속성 수에 이미 있는 컴퓨터에 따라 Azure SDK를 설치 하�
 
 > [!NOTE]
 > 이 자습서는 Azure SDK의 버전 1.8.1 사용 하 여 작성 되었습니다. 그 후 추가 기능을 사용 하 여 최신 버전 출시 되었습니다. 이러한 기능 및 리소스에 대 한 자세한 정보가 있는 링크를 언급 하는 자습서 업데이트 되었습니다.
-
 
 지침과 스크린샷은 Windows 8 기반으로 하지만 Windows 7에 대 한 차이점을 설명 하는 자습서입니다.
 

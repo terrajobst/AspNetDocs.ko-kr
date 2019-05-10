@@ -8,12 +8,12 @@ ms.date: 04/21/2011
 ms.assetid: 0c6e4c2f-fcdb-4978-9656-1990c6f15727
 msc.legacyurl: /mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-10
 msc.type: authoredcontent
-ms.openlocfilehash: 48404f449ce2641bdff55b9ad75aa5eec1aee46b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f701d1fbabc3e1a97c3750d00e96bf8dba1105cd
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59403300"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129713"
 ---
 # <a name="part-10-final-updates-to-navigation-and-site-design-conclusion"></a>10부: 탐색 및 사이트 디자인 최종 업데이트, 결론
 
@@ -24,7 +24,6 @@ ms.locfileid: "59403300"
 > MVC Music Store는 온라인 음악 앨범을 판매 하 고 기본 사이트 관리, 사용자 로그인 및 장바구니 기능을 구현 하는 간단한 샘플 저장소 구현입니다.  
 >   
 > 이 자습서 시리즈 모든 ASP.NET MVC Music Store 샘플 응용 프로그램 빌드를 수행 하는 단계를 자세히 설명 합니다. 10 부 탐색 및 사이트 설계, 결론 최종 업데이트를 설명합니다.
-
 
 이 사이트에 대 한 주요 기능을 모두 완료 했으므로 했지만 아직도 몇 가지 기능이 사이트 탐색, 홈 페이지 및 저장소 찾아보기 페이지에 추가 합니다.
 
@@ -133,7 +132,6 @@ HomeController 업데이트에 대 한 전체 코드는 아래와 같습니다.
 ## <a name="conclusion"></a>결론
 
 ASP.NET MVC 쉽게 살펴본 등 데이터베이스 액세스, 멤버 자격, AJAX 사용 하 여 정교한 웹 사이트를 만들려고 합니다. 매우 신속 하 게 합니다. 다행히이 자습서가 제공한 고유한 ASP.NET MVC 응용 프로그램 구축을 시작 하는 데 필요한 도구!
-
 
 > [!div class="step-by-step"]
 > [이전](mvc-music-store-part-9.md)

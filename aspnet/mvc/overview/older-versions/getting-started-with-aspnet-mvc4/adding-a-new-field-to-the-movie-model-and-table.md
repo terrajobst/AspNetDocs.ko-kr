@@ -8,12 +8,12 @@ ms.date: 08/28/2012
 ms.assetid: 9ef2c4f1-a305-4e0a-9fb8-bfbd9ef331d9
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc4/adding-a-new-field-to-the-movie-model-and-table
 msc.type: authoredcontent
-ms.openlocfilehash: 307719f30c9efc8001f63f3ab068e50f82e1c5c0
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b0a66cf62c34a59ca5c89c2f380093165e765100
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59399621"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129897"
 ---
 # <a name="adding-a-new-field-to-the-movie-model-and-table"></a>영화 모델 및 테이블에 새 필드 추가
 
@@ -21,7 +21,6 @@ ms.locfileid: "59399621"
 
 > > [!NOTE]
 > > 이 자습서는 업데이트 된 버전을 사용할 수 [여기](../../getting-started/introduction/getting-started.md) 는 ASP.NET MVC 5 및 Visual Studio 2013을 사용 합니다. 보다 안전 하 고 더 간단 하 게 수행 되며 더 많은 기능을 보여 줍니다.
-
 
 이 섹션에서는 Entity Framework Code First 마이그레이션을 데이터베이스에 변경 내용이 적용 되므로 일부 변경 내용은 모델 클래스로 마이그레이션하려 합니다.
 
@@ -68,7 +67,6 @@ Visual Studio가 열립니다는 *Configuration.cs* 파일입니다. 대체는 `
 > [!NOTE] 
 > 
 > 첫 번째 마이그레이션을 호출 코드를 `Seed` 모든 마이그레이션 후 메서드 (즉, 호출 **데이터베이스 업데이트** 패키지 관리자 콘솔에서),이 메서드가 이미 삽입 되었거나 경우 삽입 된 행을 업데이트 하 고 있습니다 아직 존재 하지 마십시오.
-
 
 **프로젝트를 빌드하려면 CTRL-SHIFT-B를 누릅니다.** (다음 단계를 실패 하는 경우에 시점에서 빌드하지 마세요.)
 
@@ -122,13 +120,11 @@ Code First 마이그레이션을에 다른 클래스 파일을 만듭니다는 *
 
 때문에이 오류를 표시 하는 업데이트 된 `Movie` 응용 프로그램에서 모델 클래스의 스키마와 다릅니다 이제는 `Movie` 기존 데이터베이스의 테이블입니다. (데이터베이스 테이블에 `Rating` 열이 없습니다.)
 
-
 오류를 해결하는 몇 가지 방법이 있습니다.
 
 1. Entity Framework에서 새 모델 클래스 스키마에 따라 데이터베이스를 자동으로 삭제하고 다시 만들도록 합니다. 이 방법은 편리에서 테스트 데이터베이스는 활발 한 개발을 수행 하는 경우 신속 하 게 모델 및 데이터베이스 스키마를 함께 개발할 수 있습니다. 그러나 단점은 데이터베이스의 기존 데이터를 손실 하는-있도록 있습니다 *하지* 프로덕션 데이터베이스에서이 방법을 사용 하려면! 테스트 데이터로 데이터베이스를 자동으로 시드하는 이니셜라이저를 사용 하는 종종 응용 프로그램을 개발 하는 효율적인 방법입니다. Entity Framework 데이터베이스 이니셜라이저에 대 한 자세한 내용은 참조 Tom Dykstra [ASP.NET MVC/Entity Framework 자습서](../../getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application.md)합니다.
 2. 모델 클래스와 일치하도록 기존 데이터베이스의 스키마를 명시적으로 수정합니다. 이 방법의 장점은 데이터를 유지한다는 점입니다. 이러한 변경을 수동으로 수행하거나 데이터베이스 변경 스크립트를 만들어 수행할 수 있습니다.
 3. Code First 마이그레이션을 사용하여 데이터베이스 스키마를 업데이트합니다.
-
 
 이 자습서의 경우 Code First 마이그레이션을 사용합니다.
 

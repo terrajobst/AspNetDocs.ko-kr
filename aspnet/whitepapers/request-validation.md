@@ -8,19 +8,18 @@ ms.date: 02/10/2010
 ms.assetid: fa429113-5f8f-4ef4-97c5-5c04900a19fa
 msc.legacyurl: /whitepapers/request-validation
 msc.type: content
-ms.openlocfilehash: d721bb14b9907ae594d1d5207b6f802e84326c9c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 807cccd6fe1acdd6359b014387abd3878840d4cd
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59414727"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130492"
 ---
 # <a name="request-validation---preventing-script-attacks"></a>요청 유효성 검사 - 스크립트 공격 방지
 
 > 이 문서는 여기서 기본적으로 응용 프로그램 금지에서 서버로 전송 하는 인코딩되지 않은 HTML 콘텐츠를 처리 하는 asp.net 요청 유효성 검사 기능을 설명 합니다. 응용 프로그램 HTML 데이터를 안전 하 게 처리 하도록 디자인 된 경우에이 요청 유효성 검사 기능을 해제할 수 있습니다.
 > 
 > ASP.NET 1.1 및 ASP.NET 2.0에 적용 됩니다.
-
 
 요청 유효성 검사, 버전 1.1부터 ASP.NET의 기능을 포함 하는 인코딩되지 않은 HTML 콘텐츠를 허용 하지 못하도록 서버를 방지 합니다. 이 기능은 가능해 집니다 클라이언트 스크립트 코드 또는 HTML 수 수 자신도 서버로 전송, 저장 및 다른 사용자에 게 표시 한 다음 몇 가지 스크립트 삽입 공격을 방지 하도록 설계 되었습니다. 여전히 좋습니다 모든 입력된 데이터를 유효성 검사를 적절 한 경우 HTML 인코딩합니다.
 

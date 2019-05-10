@@ -8,12 +8,12 @@ ms.date: 01/14/2008
 ms.assetid: 829d2f56-5c48-445b-b826-3418a450c788
 msc.legacyurl: /web-forms/overview/older-versions-security/introduction/forms-authentication-configuration-and-advanced-topics-vb
 msc.type: authoredcontent
-ms.openlocfilehash: c992c782ce52066452b42bc09052ec1985e13200
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 45e924559a88317950ae9fb8a596d3ee373dd661
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59417093"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65127849"
 ---
 # <a name="forms-authentication-configuration-and-advanced-topics-vb"></a>폼 인증 구성 및 고급 항목(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59417093"
 [코드를 다운로드](http://download.microsoft.com/download/2/F/7/2F705A34-F9DE-4112-BBDE-60098089645E/ASPNET_Security_Tutorial_03_VB.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/2/F/7/2F705A34-F9DE-4112-BBDE-60098089645E/aspnet_tutorial03_AuthAdvanced_vb.pdf)
 
 > 이 자습서에서는 다양 한 폼 인증 설정을 검사 하 고 폼 요소를 통해 수정 하는 방법을 참조 하세요. 이 작업을 자세히 살펴보고 사용자 지정 URL (예: SignIn.aspx Login.aspx 대신) 및 쿠키 없는 폼 인증 티켓을 사용 하 여 로그인 페이지를 사용 하 여 폼 인증 티켓 시간 제한 값을 사용자 지정 수반 합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -37,7 +36,6 @@ Asp.net에서 폼 인증 시스템은 다양 한 응용 프로그램 단위로 �
 [!code-xml[Main](forms-authentication-configuration-and-advanced-topics-vb/samples/sample1.xml)]
 
 표 1을 통해 사용자 지정할 수 있는 속성을 요약 합니다 &lt;forms&gt; 요소입니다. Web.config XML 파일 이므로 왼쪽된 열에 특성 이름이 대/소문자 구분 됩니다.
-
 
 | <strong>특성</strong> |                                                                                                                                                                                                                                     <strong>설명</strong>                                                                                                                                                                                                                                      |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -60,7 +58,6 @@ ASP.NET 2.0 이상에서 기본.NET Framework의 FormsAuthenticationConfiguratio
 > [!NOTE]
 > 시간 제한, 도메인, 경로 등의 여러 폼 인증 설정 결과 폼 인증 티켓 쿠키에 대 한 세부 정보를 지정 합니다. 쿠키, 그 작동 방법 및 다양 한 속성에 대 한 자세한 내용은 읽을 [이 쿠키 자습서](http://www.quirksmode.org/js/cookies.html)합니다.
 
-
 ### <a name="specifying-the-tickets-timeout-value"></a>티켓의 시간 제한 값 지정
 
 폼 인증 티켓에는 id를 나타내는 토큰입니다. 쿠키 기반 인증 티켓을 사용 하 여이 토큰은 쿠키 형식에 저장 되 고 각 요청에서 웹 서버로 전송 합니다. 토큰 소유 본질적으로 선언, 저는 *username*, 이미 로그인 했는지 그리고 방문 페이지에서 사용자의 id를 저장할 수 있습니다 하는 데 사용 됩니다.
@@ -72,7 +69,6 @@ ASP.NET 2.0 이상에서 기본.NET Framework의 FormsAuthenticationConfiguratio
 > [!NOTE]
 > 인증 티켓을 보호 하기 위해 폼 인증 시스템에서 사용 하는 세부 정보 추가 기술의 3 단계.
 
-
 인증 티켓을 만들 때 시간 제한 설정을 참조 하 여 해당 만료를 결정 하는 폼 인증 됩니다. 표 1에 설정이 기본적으로 30 분, 시간 제한에서 설명한 것 처럼 폼 인증 티켓을 만들면 해당 만료 날짜 및 시간 30 분에 나중에 설정 한다는 의미입니다.
 
 만료를 절대 나중에 폼 인증 티켓이 만료 되는 시간을 정의 합니다. 하지만 개발자가 일반적으로 사용자는 사이트를 다시 검토 때마다 다시 설정 하는 상대 (sliding) 만료를 구현 하려고 합니다. 이 동작은 slidingExpiration 설정에 따라 결정 됩니다. 경우 true로 설정 (기본값), formsauthenticationmodule은 사용자를 인증할 때마다 업데이트 티켓의 만료 합니다. 각 요청에 만료 false로 설정 업데이트 되지 않으면, 티켓을 정확 하 게 시간 초과 수가 티켓이 처음 분 후 만료로 인해 생성 됩니다.
@@ -80,28 +76,22 @@ ASP.NET 2.0 이상에서 기본.NET Framework의 FormsAuthenticationConfiguratio
 > [!NOTE]
 > 만료 된 인증 티켓에 저장 된 절대 날짜 및 시간 값을 2008 년 8 월 2 일 오전 11시 34분와 같은 경우 또한 날짜 및 시간을 웹 서버의 현지 시간을 기준으로 됩니다. 이 디자인 결정에는 몇 가지 흥미로운 의도 주위 일광 절약 시간 (DST) 미국의 시계를 이동할 때 계속 해 서 1 (웹 서버가 호스팅되는 일광 절약 시간은 관찰 된 로캘의 가정)는 있을 수 있습니다. DST 시작 하는 시간을 30 분 만료를 사용 하 여 ASP.NET 웹 사이트에 대 한 상황 하는 것이 좋습니다 (위치인 2:00 AM). 방문자를 로그온 합니다. 사이트에 2008 년 3 월 11 일 오전 1 시 55 한다고 가정 합니다. 이 오전 2 시 25 (30 분에 나중에 해당) 2008 년 3 월 11 일에 만료 되는 폼 인증 티켓을 생성 합니다. 그러나 일단 2:00 AM 시점이, 시계 이동 3:00 AM DST 때문입니다. 사용자 (오전 3 시 01)에 로그인 한 후 6 분 후 새 페이지를 로드 하는 경우 FormsAuthenticationModule 정보 티켓 만료 하는 사용자를 로그인 페이지로 리디렉션합니다. 이 및 다른 인증 티켓 시간 제한 oddities, 뿐만 아니라 해결 방법에 대 한 더 상세히 논의 Stefan Schackow 복사본 선택할 *Professional ASP.NET 2.0 보안, 멤버 자격 및 역할 관리* (ISBN: 978-0-7645-9698-8).
 
-
 그림 1에서는 slidingExpiration가 false로 설정 하 고 제한 시간 30으로 설정 된 경우 워크플로 보여 줍니다. 로그인에서 생성 된 인증 티켓 만료 날짜를 포함 하 고 이후 요청에서이 값이 업데이트 되지 않습니다. Formsauthenticationmodule은 티켓이 만료 되었습니다 찾으면를 무시 하 고 익명으로 요청을 처리 합니다.
-
 
 [![폼 인증 티켓이 만료 때 slidingExpiration의 그래픽 표현을 isfalse합니다](forms-authentication-configuration-and-advanced-topics-vb/_static/image2.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image1.png)
 
 **그림 01**: 그래픽으로 표현한 폼 인증 티켓이 만료 때 slidingExpiration이 false ([클릭 하 여 큰 이미지 보기](forms-authentication-configuration-and-advanced-topics-vb/_static/image3.png))
 
-
 그림 2 slidingExpiration로 설정 된 경우 워크플로 보여 줍니다 true이 고 시간 제한을 30으로 설정 됩니다. (만료 되지 않은 ticket)를 포함 한 인증된 요청을 받으면 해당 만료 시간 (분) 이후에 시간 초과 수로 업데이트 됩니다.
-
 
 [![폼 인증 티켓을 그래픽으로 표현한 slidingExpiration 참인 경우](forms-authentication-configuration-and-advanced-topics-vb/_static/image5.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image4.png)
 
 **그림 02**: 폼 인증 티켓을 그래픽으로 표현한 slidingExpiration 참인 경우 ([클릭 하 여 큰 이미지 보기](forms-authentication-configuration-and-advanced-topics-vb/_static/image6.png))
 
-
 쿠키 기반 인증 티켓 (기본값)를 사용 하 여 쿠키에 지정 된 자신의 expiries 수도 있으므로이 토론 다소 혼동 됩니다. 쿠키의 만료 (또는 결핍) 쿠키를 제거 해야 하는 경우 브라우저에 지시 합니다. 쿠키 만료에 없는 경우 브라우저 종료 될 때 제거 됩니다. 그러나 만료가 있는 경우 쿠키 날짜까지에 사용자의 컴퓨터에 저장 하는 상태로 유지 됩니다 및 만료에 지정 된 시간이 경과 합니다. 브라우저에서 쿠키를 제거 하는 경우 더 이상 웹 서버에 전송 됩니다. 따라서 쿠키의 소멸은 사이트에서 로그 아웃이 사용자와 비슷합니다.
 
 > [!NOTE]
 > 물론, 사용자가 컴퓨터에 저장 된 모든 쿠키를 사전에 제거할 수 있습니다. Internet Explorer 7의 도구, 옵션로 이동 하는 검색 기록 섹션에서 삭제 단추를 클릭 합니다. 여기에서 쿠키 삭제 단추를 클릭 합니다.
-
 
 Forms 인증 시스템에 전달 된 값에 따라 만료 기반 또는 세션 기반 쿠키를 만듭니다는 *persistCookie* 매개 변수입니다. FormsAuthentication 클래스의 GetAuthCookie, SetAuthCookie, 및 RedirectFromLoginPage 메서드는 두 개의 입력된 매개 변수에서 수행 하는 재현 율: *사용자 이름* 하 고 *persistCookie*합니다. 이전 자습서에서 만든 로그인 페이지에 암호 저장 확인란, 영구 쿠키가 만들어졌는지 여부를 결정 하는 포함 되어 있습니다. 영구 쿠키는 만료부터 시작 합니다. 비 영구적 쿠키는 세션 기반입니다.
 
@@ -137,7 +127,6 @@ Forms 인증 시스템에서 사용 된 쿠키 정책에서 쿠키 없는 설정
 > [!NOTE]
 > 이 데이터베이스의 장치 기능을 준수 하는 여러 개의 XML 파일에에서 저장 됩니다는 [브라우저 정의 파일 스키마](https://msdn.microsoft.com/library/ms228122.aspx)합니다. 기본 장치 프로필 파일이 %WINDIR%\Microsoft.Net\Framework\v2.0.50727\CONFIG\Browsers에서 있습니다. 응용 프로그램의 앱에 사용자 지정 파일을 추가할 수도 있습니다\_브라우저 폴더입니다. 자세한 내용은 참조 하세요. [방법: ASP.NET 웹 페이지에서 브라우저 종류를 검색](https://msdn.microsoft.com/library/3yekbd5b.aspx)합니다.
 
-
 기본 설정은 UseDeviceProfile 이기 때문에 장치 프로필이 쿠키를 지원 하지 않으면 보고 사이트를 방문 하는 경우 쿠키 없는 폼 인증 티켓 사용 됩니다.
 
 ### <a name="encoding-the-authentication-ticket-in-the-url"></a>URL에서 인증 티켓을 인코딩
@@ -169,7 +158,6 @@ Default.aspx에 변경 내용을 저장 하 고 방문 하 여 브라우저를 �
 > [!NOTE]
 > 쿠키 없는 폼 인증 티켓 쿠키 기반 인증 티켓으로 동일한 시간 제한 정책을 준수합니다. 그러나 쿠키 없는 인증 티켓은 인증 티켓을 URL에 직접 포함 되어 있으므로 재생 공격 하기 더 쉽습니다. Imagine 사용자는 웹 사이트를 방문 하 고, 로그인 후 동료에 게 전자 메일에 URL을 붙여 넣습니다. 동료는 만료에 도달 하기 전에 해당 링크를 클릭할 하는 경우 이러한로 기록 됩니다 전자 메일을 보낸 사용자에 게!
 
-
 ## <a name="step-3-securing-the-authentication-ticket"></a>3단계: 보안 인증 티켓
 
 폼 인증 티켓을 네트워크를 통해 전송 되 쿠키에 하나 또는 URL 내에서 직접 포함 합니다. Id 정보 외에도 인증 티켓이 포함 될 수 있습니다도 사용자 데이터 (4 단계에서에서 확인할 수)입니다. 따라서 것이 중요는 티켓의 데이터를 암호화할에서 침입자 (중요)는 forms 인증 시스템 티켓을 사용 하 여 손상 되지 않았음을 보장할 수 있습니다.
@@ -180,11 +168,9 @@ Default.aspx에 변경 내용을 저장 하 고 방문 하 여 브라우저를 �
 
 만드는 (또는 수정) 하는 경우 티켓을 forms 인증 시스템 MAC을 만들고 티켓의 데이터에 연결 합니다. 후속 요청이 도착 하면 폼 인증 시스템에서 티켓 데이터의 신뢰성이 유효한 지 유효성을 검사 하려면 MAC 및 티켓 데이터를 비교 합니다. 그림 3이이 워크플로 그래픽으로 보여 줍니다.
 
-
 [![MAC을 통해 티켓의 신뢰성이 유효한 지 확인](forms-authentication-configuration-and-advanced-topics-vb/_static/image8.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image7.png)
 
 **그림 03**: MAC을 통해 티켓의 신뢰성 보장 됩니다 ([클릭 하 여 큰 이미지 보기](forms-authentication-configuration-and-advanced-topics-vb/_static/image9.png))
-
 
 보호 설정에 따라 인증 티켓에는 보안 조치 적용 되는 &lt;forms&gt; 요소입니다. 보호 설정은 다음 세 값 중 하나에 할당할 수 있습니다.
 
@@ -226,7 +212,6 @@ Default.aspx에 변경 내용을 저장 하 고 방문 하 여 브라우저를 �
 > [!NOTE]
 > DecryptionKey 및 validationKey 값에서 가져왔습니다 [Steve Gibson](http://www.grc.com/stevegibson.htm)의 [완벽 하 게 암호 웹 페이지](https://www.grc.com/passwords.htm), 각 페이지 방문에서 64 임의의 16 진수 문자를 생성 하 합니다. 프로덕션 응용 프로그램으로 이러한 키의 가능성을 줄이려면를 잘 모르는 완벽 한 암호 페이지에서 임의로 생성 된 것으로 위의 키를 바꿉니다.
 
-
 ## <a name="step-4-storing-additional-user-data-in-the-ticket"></a>4단계: 티켓의 추가 사용자 데이터를 저장합니다.
 
 많은 웹 응용 프로그램에 대 한 정보를 표시 하거나 현재 로그온된 한 사용자를 기준으로 페이지를 표시 합니다. 예를 들어, 웹 페이지는 사용자의 이름과 모든 페이지의 맨 위에 있는 마지막 로그온 날짜를 표시할 수 있습니다. 폼 인증 티켓을 현재 로그온된 한 사용자의 사용자 이름, 저장 하지만 페이지 인증 티켓에 저장 되지 않은 정보를 조회 하는 사용자-데이터베이스-저장소로 이동 해야 다른 정보, 필요한 경우.
@@ -237,11 +222,9 @@ Default.aspx에 변경 내용을 저장 하 고 방문 하 여 브라우저를 �
 
 티켓에 저장 된 데이터에 액세스 해야 할 때마다 우리가 해결할 수 있으므로 현재 요청의 FormsAuthenticationTicket 위치와 UserData 속성을 역직렬화 합니다. 생년월일 및 고용주 이름 예의 날짜의 경우 구분 기호 (|)에 따라 두 문자열을 부분 UserData 문자열을 분할 됩니다.
 
-
 [![인증 티켓의 추가 사용자 정보를 저장할 수 있습니다.](forms-authentication-configuration-and-advanced-topics-vb/_static/image11.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image10.png)
 
 **그림 04**: 추가 사용자 정보에에서 저장할 수 있습니다 인증 티켓 ([클릭 하 여 큰 이미지 보기](forms-authentication-configuration-and-advanced-topics-vb/_static/image12.png))
-
 
 ### <a name="writing-information-to-userdata"></a>사용자 데이터에 정보를 기록
 
@@ -288,7 +271,6 @@ authCookie.Value = FormsAuthentication.Encrypt(newTicket)
 > [!NOTE]
 > 쿠키 기반 인증 티켓의 사용자 관련 정보를 저장 하는 코드 검사 했습니다. URL로 폼 인증 티켓을 직렬화 하는 일을 담당 클래스는.NET framework 내부. 결론부터 말하자면, 쿠키 없는 폼 인증 티켓의 사용자 데이터를 저장할 수 없습니다.
 
-
 ### <a name="accessing-the-userdata-information"></a>UserData 정보에 액세스
 
 이 시점에서 각 사용자의 회사 이름 및 title 속성에 저장 됩니다 폼 인증 티켓을 UserData 로그인 할 때입니다. 이 정보는 사용자 저장소를 이동 하지 않고도 모든 페이지에서 인증 티켓에서 액세스할 수 있습니다. 를 UserData 속성에서이 정보를 검색할 수 있는 방법을 보여 주기 위해 포함 하도록 해당 환영 메시지 뿐 아니라 사용자의 이름은 같지만 회사에 대 한 작동 및 직함 Default.aspx를 업데이트 해 보겠습니다.
@@ -301,15 +283,12 @@ Request.IsAuthenticated가 True 인 경우 다시 시작 하려면 먼저 Welcom
 
 그림 5에는 실행 중인이 디스플레이의 스크린샷을 보여 줍니다. Scott로 로그인 Scott의 회사 및 제목을 포함 하는 환영 백 메시지를 표시 합니다.
 
-
 [![현재 로그온 한 사용자의 회사 및 제목 표시 됩니다.](forms-authentication-configuration-and-advanced-topics-vb/_static/image14.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image13.png)
 
 **그림 05**: 현재 로그온 한 사용자의 회사 및 제목 표시 됩니다 ([클릭 하 여 큰 이미지 보기](forms-authentication-configuration-and-advanced-topics-vb/_static/image15.png))
 
-
 > [!NOTE]
 > 사용자 저장소에 대 한 캐시 된 인증 티켓의 UserData 속성이 제공 됩니다. 모든 캐시와 같은 기본 데이터가 수정 될 때 업데이트 해야 합니다. 예를 들어 사용자가 자신의 프로필을 업데이트할 수는 웹 페이지의 경우 UserData 속성에서 캐시 필드는 사용자가 변경한 내용을 반영 하도록 새로 고쳐야 합니다.
-
 
 ## <a name="step-5-using-a-custom-principal"></a>5단계: 사용자 지정 보안 주체를 사용 하 여
 
@@ -322,7 +301,6 @@ GenericPrincipal 클래스 역할이 사용 되지 않습니다 하는 대부분
 > [!NOTE]
 > 자습서, 나중에 확인할 수 있듯이 때 ASP 합니다. NET의 역할 framework가 활성화 형식의 사용자 지정 보안 주체 개체를 만듭니다 [파트너가](https://msdn.microsoft.com/library/system.web.security.roleprincipal.aspx) 폼 인증에서 만든 GenericPrincipal 개체를 덮어씁니다. 역할 프레임 워크의 API와 상호 작용 하는 주체의 IsInRole 메서드를 사용자 지정 하기 위해 수행 합니다.
 
-
 에서는 되지 관련해 서 직접 역할을 사용 하 여 아직 있으므로 시점에 사용자 지정 보안 주체를 만들기 위한 해야 하는 유일한 이유 주체에 사용자 지정 IIdentity 개체에 연결할 것입니다. 4 단계에서에서 사용자의 회사 이름과 직함 특히에서 인증 티켓의 UserData 속성에서 추가 사용자 정보 저장에 대해 살펴보았습니다. 그러나 UserData 정보 되며만 인증 티켓을 통해 액세스할 수만 다음 문자열로 serialize 된 티켓의 저장 된 사용자 정보를 보려는에서는 언제 든 지 해야 UserData 속성을 구문 분석 의미 합니다.
 
 IIdentity를 구현 하 고 속성을 CompanyName 및 제목을 포함 하는 클래스를 만들어 개발자 환경을 개선할 수 있습니다. 이런 방식으로 개발자 액세스 하는 현재 로그온된 한 사용자의 회사 이름 및 UserData 속성을 구문 분석 하는 방법을 알고 필요 없이 CompanyName 및 Title 속성을 통해 직접 제목입니다.
@@ -334,14 +312,11 @@ IIdentity를 구현 하 고 속성을 CompanyName 및 제목을 포함 하는 �
 > [!NOTE]
 > 앱\_코드 폴더는 웹 사이트 프로젝트 모델을 통해 프로젝트를 관리 하는 경우에 사용 해야 합니다. 사용 중인 경우는 [웹 응용 프로그램 프로젝트 모델](https://msdn.microsoft.com/asp.net/Aa336618.aspx), 표준 폴더를 만들고 클래스를 추가 합니다. 예를 들어, 클래스 라는 새 폴더를 추가 하 고 있는 코드를 배치 수 없습니다.
 
-
 다음으로 두 개의 새 클래스 파일에 앱을 추가할\_코드 폴더, 명명 된 CustomIdentity.vb 하나 및 하나 라는 CustomPrincipal.vb 합니다.
-
 
 [![CustomIdentity 및 CustomPrincipal 클래스를 프로젝트에 추가](forms-authentication-configuration-and-advanced-topics-vb/_static/image17.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image16.png)
 
 **그림 06**: CustomIdentity 및 CustomPrincipal 클래스를 프로젝트에 추가 ([클릭 하 여 큰 이미지 보기](forms-authentication-configuration-and-advanced-topics-vb/_static/image18.png))
-
 
 CustomIdentity 클래스는 AuthenticationType, IsAuthenticated, 및 이름 속성을 정의 하는 IIdentity 인터페이스를 구현 하는 일을 담당 합니다. 이러한 필수 속성 외에도 관심이 기본 폼 인증 티켓 뿐만 아니라 사용자의 회사 이름 및 제목에 대 한 속성을 노출 합니다. CustomIdentity 클래스에 다음 코드를 입력 합니다.
 
@@ -361,19 +336,15 @@ ASP.NET 파이프라인에는 들어오는 요청을 사용 하 고 여러 단�
 
 ASP.NET 파이프라인에서 AuthenticateRequest 이벤트가 후 발생 합니다 [PostAuthenticateRequest 이벤트](https://msdn.microsoft.com/library/system.web.httpapplication.postauthenticaterequest.aspx)는 formsauthenticationmodule은의 인스턴스를 사용 하 여 만든 GenericPrincipal 개체를 바꿀 수 것은 CustomPrincipal 개체입니다. 그림 7에서는이 워크플로 보여 줍니다.
 
-
 [![GenericPrincipal PostAuthenticationRequest 이벤트에서 CustomPrincipal으로 바뀝니다.](forms-authentication-configuration-and-advanced-topics-vb/_static/image20.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image19.png)
 
 **그림 07**: GenericPrincipal PostAuthenticationRequest 이벤트에서 CustomPrincipal 바뀝니다 ([클릭 하 여 큰 이미지 보기](forms-authentication-configuration-and-advanced-topics-vb/_static/image21.png))
 
-
 를 ASP.NET 파이프라인 이벤트에 대 한 응답에서 코드를 실행 하기 위해에서는 Global.asax의 적절 한 이벤트 처리기를 만듭니다 하거나 고유한 HTTP 모듈을 만듭니다. 이 자습서에 대 한 Global.asax의 이벤트 처리기를 만들어 보겠습니다. Global.asax 웹 사이트를 추가 하 여 시작 합니다. 솔루션 탐색기에서 프로젝트 이름을 마우스 오른쪽 Global.asax 이라는 전역 응용 프로그램 클래스 형식의 항목을 추가 합니다.
-
 
 [![Global.asax 파일을 웹 사이트 추가](forms-authentication-configuration-and-advanced-topics-vb/_static/image23.png)](forms-authentication-configuration-and-advanced-topics-vb/_static/image22.png)
 
 **그림 08**: Global.asax 파일을 웹 사이트 추가 ([클릭 하 여 큰 이미지 보기](forms-authentication-configuration-and-advanced-topics-vb/_static/image24.png))
-
 
 기본 Global.asax 템플릿은 시작, 끝을 포함 하 여 ASP.NET 파이프라인 이벤트의 수에 대 한 이벤트 처리기를 포함 하 고 [오류 이벤트](https://msdn.microsoft.com/library/system.web.httpapplication.error.aspx), 특히 합니다. 자유롭게에서는 필요 없는이 응용 프로그램으로 이러한 이벤트 처리기를 제거 합니다. 관심이 이벤트 PostAuthenticateRequest입니다. 태그는 다음과 비슷하게 표시 됩니다 Global.asax 파일을 업데이트 합니다.
 

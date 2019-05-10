@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: 2e260430-d13c-4658-bd05-e256fc0d63b8
 msc.legacyurl: /identity/overview/migrations/migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: 1043dce4cdd62f94ae9d2344a9301c1b03426f3d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: de154dde122886976054159ad745982669ca9315
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59422267"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65121380"
 ---
 # <a name="migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity-c"></a>멤버 자격 및 사용자 프로필의 범용 공급자 데이터를 ASP.NET Identity로 마이그레이션(C#)
 
@@ -22,14 +22,12 @@ by [Pranav Rastogi](https://github.com/rustd), [Rick Anderson]((https://twitter.
 
 > 이 자습서에서는 사용자 역할 데이터 및 ASP.NET Id 모델을 기존 응용 프로그램의 범용 공급자를 사용 하 여 만든 사용자 프로필 데이터를 마이그레이션하는 데 필요한 단계를 설명 합니다. 방법은 여기에 언급 된 사용자 프로필 데이터를 마이그레이션하 SQL 멤버 자격도를 사용 하 여 응용 프로그램에서 사용할 수 있습니다.
 
-
 ASP.NET 팀 Visual Studio 2013의 릴리스를 사용 하 여 새 ASP.NET Id 시스템을 도입 하 고 알아볼 수 있습니다 해당 릴리스에 대 한 [여기](../../index.md)합니다. 문서에서 웹 응용 프로그램 마이그레이션 이후의 [새 Id 시스템에 SQL 멤버 자격](migrating-an-existing-website-from-sql-membership-to-aspnet-identity.md),이 문서에서는 사용자 및 역할 관리를 위한 공급자 모델을 따르는 기존 응용 프로그램을 마이그레이션하는 단계를 보여 줍니다. 새 Id 모델입니다. 이 자습서의 포커스를 원활 하 게 새 시스템에 후크 할 사용자 프로필 데이터를 마이그레이션하기에 주로 됩니다. 마이그레이션 사용자 및 역할 정보를 SQL 멤버 자격에 대 한 것과 비슷합니다. SQL 멤버 자격도 응용 프로그램의 프로필 데이터를 마이그레이션하려면 다음 접근 방식을 사용할 수 있습니다.
 
 예를 들어 공급자 모델을 사용 하는 Visual Studio 2012를 사용 하 여 만든 웹 앱을 사용 하 여 시작 하겠습니다. 에서는 다음 프로필 관리에 대 한 코드를 추가, 사용자 등록, 사용자에 대 한 프로필 데이터를 추가, 데이터베이스 스키마로 마이그레이션하 고 변경한 다음 사용자 및 역할 관리에 대 한 Id 시스템을 사용 하도록 응용. 마이그레이션 테스트를 범용 공급자를 사용 하 여 만든 사용자가 로그인 할 수 있어야 합니다.와 새 사용자를 등록할 수 있어야 합니다.
 
 > [!NOTE]
 > 전체 샘플을 찾을 수 있습니다 [ https://github.com/suhasj/UniversalProviders-Identity-Migrations ](https://github.com/suhasj/UniversalProviders-Identity-Migrations)합니다.
-
 
 ## <a name="profile-data-migration-summary"></a>프로필 데이터 마이그레이션 요약
 

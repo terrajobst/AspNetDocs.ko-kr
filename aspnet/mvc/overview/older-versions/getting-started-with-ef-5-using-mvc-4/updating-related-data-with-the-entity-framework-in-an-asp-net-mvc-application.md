@@ -8,12 +8,12 @@ ms.date: 07/30/2013
 ms.assetid: 7871dc05-2750-470f-8b4c-3a52511949bc
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/updating-related-data-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: 5dc49d7467db01e62db147c7083ed62379d23940
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 68f8bdeeb85bc66cf790c2005cf0f0ff24b3b653
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59394161"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129764"
 ---
 # <a name="updating-related-data-with-the-entity-framework-in-an-aspnet-mvc-application-6-of-10"></a>(6 / 10) ASP.NET MVC 응용 프로그램에서 Entity Framework를 사용 하 여 관련된 데이터 업데이트
 
@@ -26,7 +26,6 @@ ms.locfileid: "59394161"
 > > [!NOTE] 
 > > 
 > > 해결할 수 없는 문제가 발생 하는 경우 [완성 된 장 다운로드](building-the-ef5-mvc4-chapter-downloads.md) 문제를 재현 하려고 합니다. 일반적으로 코드의 완성 된 코드를 비교 하 여 문제에 솔루션을 찾을 수 있습니다. 몇 가지 일반적인 오류 및 해결 하는 방법에 대 한 참조 [오류 및 해결 방법입니다.](advanced-entity-framework-scenarios-for-an-mvc-web-application.md#errors)
-
 
 이전 자습서에서 관련된 데이터 표시 이 자습서에서는 관련된 데이터를 업데이트 합니다. 대부분의 관계에 대 한 해당 외래 키 필드를 업데이트 하 여 수행할 수 있습니다. 다 대 다 관계에 대 한 Entity Framework 노출 하지 조인 테이블을 직접 않으므로 명시적으로 추가 하 고 해당 탐색 속성에서 엔터티를 제거 해야 합니다.
 
@@ -194,14 +193,12 @@ ms.locfileid: "59394161"
 일부 강좌 할당을 변경 하 고 클릭 **저장할**합니다. 변경 내용은 인덱스 페이지에 반영됩니다.
 
  참고: 강사 강좌 데이터를 편집을 수행 하는 방법은 제한 된 수의 과정 필요한 경우에 작동 합니다. 훨씬 큰 컬렉션의 경우 다른 UI 및 다른 업데이트 메서드가 필요합니다.  
- 
 
 ## <a name="update-the-delete-method"></a>Delete 메서드 업데이트
 
 강사 삭제 되 면 office 할당 레코드 (해당 되는 경우)가 삭제 되도록 HttpPost Delete 메서드의 코드를 변경 합니다.
 
 [!code-csharp[Main](updating-related-data-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample22.cs?highlight=6,10)]
-
 
 관리자 권한으로 부서에 배정 된 강사를 삭제 하려고 하면 참조 무결성 오류를 얻게 됩니다. 참조 [이 자습서의 현재 버전](../../getting-started/getting-started-with-ef-using-mvc/updating-related-data-with-the-entity-framework-in-an-asp-net-mvc-application.md) 강사 관리자로 할당 되는 모든 부서에서 강사를 자동으로 제거 됩니다는 코드를 추가 합니다.
 

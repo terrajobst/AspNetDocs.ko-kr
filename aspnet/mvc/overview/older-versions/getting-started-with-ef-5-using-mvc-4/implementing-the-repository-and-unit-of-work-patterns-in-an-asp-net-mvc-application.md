@@ -8,12 +8,12 @@ ms.date: 07/30/2013
 ms.assetid: 44761193-04ba-4990-9f90-145d3c10a716
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: 71ff3c269c5d1ed43a67d19442eda8e9d4728295
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: d0d6c9dd5234c8085b5c1dea5552854486314010
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59405705"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129781"
 ---
 # <a name="implementing-the-repository-and-unit-of-work-patterns-in-an-aspnet-mvc-application-9-of-10"></a>(9 / 10) ASP.NET MVC 응용 프로그램에서 리포지토리 및 작업 패턴 단위 구현
 
@@ -26,7 +26,6 @@ ms.locfileid: "59405705"
 > > [!NOTE] 
 > > 
 > > 해결할 수 없는 문제가 발생 하는 경우 [완성 된 장 다운로드](building-the-ef5-mvc4-chapter-downloads.md) 문제를 재현 하려고 합니다. 일반적으로 코드의 완성 된 코드를 비교 하 여 문제에 솔루션을 찾을 수 있습니다. 몇 가지 일반적인 오류 및 해결 하는 방법에 대 한 참조 [오류 및 해결 방법입니다.](advanced-entity-framework-scenarios-for-an-mvc-web-application.md#errors)
-
 
 이전 자습서에서 중복 코드를 줄이기 위해 상속 사용 합니다 `Student` 고 `Instructor` 엔터티 클래스입니다. 이 자습서에서 CRUD 작업에 대 한 리포지토리 및 작업 패턴 단위를 사용 하는 몇 가지 방법을 볼 수 있습니다. 이전 자습서와 같이 변경 방식과 코드 페이지를 사용 하 여 이미 생성 하지 않고 새 페이지를 만들 수 있습니다.
 
@@ -51,7 +50,6 @@ ms.locfileid: "59405705"
 
 > [!NOTE]
 > 리포지토리 및 작업 패턴 단위를 구현 하는 방법은 여러 가지가 있습니다. 작업 클래스의 단위 없이 리포지토리 클래스를 사용할 수 있습니다. 모든 엔터티 형식 또는 각 형식에 대 한 하나에 대 한 단일 리포지토리를 구현할 수 있습니다. 각 형식에 대 한 하나를 구현 하는 경우에 별도 클래스, 제네릭 기본 클래스 및 파생된 클래스 또는 추상 기본 클래스 및 파생된 클래스를 사용할 수 있습니다. 리포지토리에서 비즈니스 논리를 포함할 수도 있고 데이터 액세스 논리를 제한할 수 있습니다. 사용 하 여 데이터베이스 컨텍스트 클래스에 추상 계층을 빌드할 수도 있습니다 [IDbSet](https://msdn.microsoft.com/library/gg679233(v=vs.103).aspx) 대신 있습니다 인터페이스 [DbSet](https://msdn.microsoft.com/library/system.data.entity.dbset(v=vs.103).aspx) 엔터티 집합에는 형식입니다. 이 자습서에 나와 있는 추상화 계층을 구현 하는 방법에는 되지 모든 시나리오 및 환경에 대 한 권장 사항을 고려해 야 하는 한 가지 옵션입니다.
-
 
 ## <a name="creating-the-student-repository-class"></a>학생 리포지토리 클래스 만들기
 
@@ -142,7 +140,6 @@ CRUD 메서드에서 저장소 컨텍스트 대신 라고 합니다.
 > [!code-sql[Main](implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application/samples/sample16.sql)]
 > 
 > (다음 자습서에는 SQL Server로 전송 하는 쿼리를 검사 하는 방법을 설명 합니다.)
-
 
 다음 섹션에는 데이터베이스에서이 작업을 수행 해야는 지정할 수 있도록 하는 리포지토리 메서드를 구현 하는 방법을 보여 줍니다.
 

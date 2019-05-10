@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: 0150e67b-c50d-4613-83ea-7b4ef8cacc5a
 msc.legacyurl: /web-api/overview/getting-started-with-aspnet-web-api/creating-api-help-pages
 msc.type: authoredcontent
-ms.openlocfilehash: e3f6a9b8a6835b034a075d580cd9a33136969990
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8308dab8bd66aa8f5a3c5fb4133fc7a3df78f671
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59395019"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125240"
 ---
 # <a name="creating-help-pages-for-aspnet-web-api"></a>ASP.NET Web API에 대 한 도움말 페이지 만들기
 
@@ -92,7 +92,6 @@ Web API를 만들 때 유용 도움말 페이지를 만들려면 다른 개발�
 
 > [!NOTE]
 > 팁: 메서드 위의 줄에 캐럿을 배치 하 고 3 개의 슬래시를 입력 하는 경우 Visual Studio는 자동으로 XML 요소를 삽입 합니다. 그런 다음 빈 칸에서 채울 수 있습니다.
-
 
 이제 빌드 및 응용 프로그램을 다시 실행 및 도움말 페이지로 이동 합니다. 설명서 문자열 API 테이블에 표시 됩니다.
 

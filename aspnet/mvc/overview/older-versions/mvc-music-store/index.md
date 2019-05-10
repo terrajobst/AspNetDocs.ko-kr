@@ -8,17 +8,16 @@ ms.date: 09/28/2011
 ms.assetid: f016a6b4-2a38-4e83-8c34-f6d7f2b49ba2
 msc.legacyurl: /mvc/overview/older-versions/mvc-music-store
 msc.type: chapter
-ms.openlocfilehash: 65f4c90ed0038c56479995153ea0ad787b7b7e11
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2ad62c230984ac92f6377764c172643bf2cec9db
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59417392"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129702"
 ---
 # <a name="aspnet-mvc-3-music-store"></a>ASP.NET MVC 3 Music Store
 
 > MVC Music Store 응용 프로그램을 온라인 음악 앨범을 판매 하 고 사이트 관리, 사용자 로그인 및 쇼핑 카트 기능을 구현 하는 샘플 응용 프로그램을 만드는 방법입니다.
-
 
 - [1부: 개요 및 파일-> 새 프로젝트](mvc-music-store-part-1.md)
 - [2부: 컨트롤러](mvc-music-store-part-2.md)

@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 969fb28f-2bff-4fc4-b24a-27f5e2534a37
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/rating/creating-a-rating-control-cs
 msc.type: authoredcontent
-ms.openlocfilehash: fa118b4d733d7848b838f80e9918d62ae60033af
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1fde131086d4fb29c499f7f7c6281153c2766166
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59378977"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125057"
 ---
 # <a name="creating-a-rating-control-c"></a>등급 컨트롤 만들기(C#)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/rating0.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/rating0CS.pdf)
 
 > 전자 상거래 커뮤니티 사이트에서 여러 웹 사이트 비율 문서 또는 항목을 사용자에 게 제공합니다. 이 일반적으로 몇 가지 코딩 작업이 필요 하지만 Control Toolkit 목표인 필요가 합니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -64,7 +63,6 @@ by [Christian Wenz](https://github.com/wenz)
 [!code-aspx[Main](creating-a-rating-control-cs/samples/sample5.aspx)]
 
 페이지를 저장 하 고 브라우저에 로드 합니다. (처음에 비어 있음) 등급 항목 위로 마우스를 가져가면 JavaScript 효과 발생 합니다. 등급 변경 됩니다. 별 집합이 클릭 하면 현재 등급 유지 됩니다. 마지막으로 폼을 전송 하면 서버 쪽 코드를 선택한 등급을 출력 합니다.
-
 
 [![최소한의 코드를 사용 하 여 등급 시스템 만들기](creating-a-rating-control-cs/_static/image2.png)](creating-a-rating-control-cs/_static/image1.png)
 

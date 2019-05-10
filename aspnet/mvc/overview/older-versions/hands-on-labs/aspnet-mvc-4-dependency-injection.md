@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 84c7baca-1c54-4c44-8f52-4282122d6acb
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-dependency-injection
 msc.type: authoredcontent
-ms.openlocfilehash: 86781a1f46ce0c01a5d70b1f0cf8a81f3f96a032
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 15c9d4dcb9e2c6b9f6adf54d65d15737b32cca3b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59405926"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129735"
 ---
 # <a name="aspnet-mvc-4-dependency-injection"></a>ASP.NET MVC 4 종속성 주입
 
@@ -57,7 +57,6 @@ ms.locfileid: "59405926"
 > [!NOTE]
 > 종속성 주입 추상 팩터리 디자인 패턴을 따라 비교 되어 있지만 두 방법 간에 약간의 차이가 있습니다. DI는 프레임 워크는 팩터리 및 등록된 된 서비스를 호출 하 여 종속성을 해결 하기 위해 작업 뒤에 있습니다.
 
-
 종속성 주입 패턴을 이해 했으므로 배웁니다이 랩 전체 ASP.NET MVC 4에서 적용 하는 방법. 종속성 주입을 사용 하 여 시작 합니다 **컨트롤러** 데이터베이스 액세스 서비스를 포함 하도록 합니다. 다음으로, 종속성 주입에 적용할 합니다 **뷰** 서비스를 사용 하 여 정보를 표시 합니다. 마지막으로 확장 하면는 DI를 ASP.NET MVC 4 필터에 솔루션의 사용자 지정 작업 필터를 삽입 합니다.
 
 이 실습 랩에서 학습할 방법:
@@ -69,7 +68,6 @@ ms.locfileid: "59405926"
 
 > [!NOTE]
 > 이 랩에서 Unity.Mvc3 NuGet 패키지를 사용 하 여 종속성 확인에 있지만 ASP.NET MVC 4를 사용 하는 종속성 주입 프레임 워크를 조정할 수 있습니다.
-
 
 <a id="Prerequisites"></a>
 
@@ -107,7 +105,6 @@ ms.locfileid: "59405926"
 > [!NOTE]
 > 각 실습 동반 되는 **최종** 연습을 완료 한 후 가져와야 결과 솔루션이 포함 된 폴더입니다. 이 연습을 진행 하는 추가 도움이 필요한 경우이 솔루션 가이드로 사용할 수 있습니다.
 
-
 이 랩을 완료 하는 시간을 예상 합니다. **30 분**합니다.
 
 <a id="Exercise1"></a>
@@ -137,12 +134,10 @@ ms.locfileid: "59405926"
 > 
 > 종속성을 해결 하려면 컨트롤러 (지정 된 형식의 모든 개체를 반환 하는 클래스)는 추상 팩터리에서 만든 수 해야 합니다.
 
-
 [!code-csharp[Main](aspnet-mvc-4-dependency-injection/samples/sample2.cs)]
 
 > [!NOTE]
 > 클래스에서 선언 된 매개 변수가 없는 생성자는 서비스 개체를 전송 하지 않고는 StoreController 만들 하려고 할 때 오류를 받습니다.
-
 
 <a id="Ex1Task1"></a>
 
@@ -181,7 +176,6 @@ ms.locfileid: "59405926"
 > Unity.Mvc3 패키지 ASP.NET MVC 3에 대 한 디자인 되었지만 ASP.NET MVC 4를 사용 하 여 완전히 호환 됩니다.
 > 
 > Unity 지원 (옵션)를 사용 하 여 간단 하 고 확장 가능한 종속성 주입 컨테이너를 예를 들어 이며 인터 셉 션을 입력 합니다. 모든 유형의.NET 응용 프로그램에서 사용 하기 위해 범용 컨테이너입니다. 포함 하 여 종속성 주입 메커니즘에 있는 모든 일반적인 기능을 제공 합니다: 개체 만들기, 컨테이너에 구성 요소 구성 지연 하 여 런타임 및 유연성에 대 한 종속성을 지정 하 여 요구 사항의 추상화 합니다.
-
 
 1. 설치할 **Unity.Mvc3** NuGet 패키지에는 **MvcMusicStore** 프로젝트입니다. 이 작업을 수행 하려면 엽니다는 **패키지 관리자 콘솔** 에서 **뷰** | **기타 Windows**합니다.
 2. 다음 명령을 실행합니다.
@@ -310,7 +304,6 @@ ms.locfileid: "59405926"
 > 
 > 
 > [!code-csharp[Main](aspnet-mvc-4-dependency-injection/samples/sample11.cs)]
-
 
 1. 만들기는 /**팩터리** 프로젝트의 루트 폴더의 폴더입니다.
 2. 포함 **CustomViewPageActivator.cs** 에서 솔루션 **/자산/원본/** 하 **팩터리** 폴더입니다. 이렇게 하려면 마우스 오른쪽 단추로 클릭 합니다 **/Factories** 폴더 **추가 | 기존 항목** 선택한 후 **CustomViewPageActivator.cs**합니다. 이 클래스에서 구현 된 **IViewPageActivator** Unity 컨테이너를 보유 하는 인터페이스입니다.

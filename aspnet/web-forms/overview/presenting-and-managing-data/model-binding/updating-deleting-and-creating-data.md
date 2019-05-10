@@ -8,12 +8,12 @@ ms.date: 02/27/2014
 ms.assetid: 602baa94-5a4f-46eb-a717-7a9e539c1db4
 msc.legacyurl: /web-forms/overview/presenting-and-managing-data/model-binding/updating-deleting-and-creating-data
 msc.type: authoredcontent
-ms.openlocfilehash: 0ac1982a9476ea324f2faea0bf06f9406f9af1cf
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 11dc52ec79ca91119b37ea60e08164eb1b1d0e2b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59389325"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130313"
 ---
 # <a name="updating-deleting-and-creating-data-with-model-binding-and-web-forms"></a>업데이트, 삭제 및 데이터 모델 바인딩 및 web forms를 사용 하 여 만들기
 
@@ -32,7 +32,6 @@ ms.locfileid: "59389325"
 > 첫 번째 범위에서 만든 프로젝트를 기반으로 한이 자습서 [파트](retrieving-data.md) 계열의 합니다.
 > 
 > 할 수 있습니다 [다운로드](https://go.microsoft.com/fwlink/?LinkId=286116) C# 또는 VB. 전체 프로젝트 다운로드 가능한 코드를 Visual Studio 2012 또는 Visual Studio 2013을 사용 하 여 작동합니다. 이 자습서에 표시 된 Visual Studio 2013 서식 파일 보다 약간 다른 Visual Studio 2012 템플릿을 사용 합니다.
-
 
 ## <a name="what-youll-build"></a>만들 내용
 

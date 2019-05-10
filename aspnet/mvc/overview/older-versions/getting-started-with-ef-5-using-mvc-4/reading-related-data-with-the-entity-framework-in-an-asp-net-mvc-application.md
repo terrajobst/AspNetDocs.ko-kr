@@ -8,12 +8,12 @@ ms.date: 07/30/2013
 ms.assetid: 0d6fb83b-71f7-425d-8dec-981197d7ec42
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/reading-related-data-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: f86212c1cb559c164342997fb0e4208339b5e3cc
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: cc629f84bbf8c271780a8e7deba3d04d23d5fbb1
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59421123"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129815"
 ---
 # <a name="reading-related-data-with-the-entity-framework-in-an-aspnet-mvc-application-5-of-10"></a>관련 (5 / 10) ASP.NET MVC 응용 프로그램에서 Entity Framework 사용 하 여 데이터 읽기
 
@@ -26,7 +26,6 @@ ms.locfileid: "59421123"
 > > [!NOTE] 
 > > 
 > > 해결할 수 없는 문제가 발생 하는 경우 [완성 된 장 다운로드](building-the-ef5-mvc4-chapter-downloads.md) 문제를 재현 하려고 합니다. 일반적으로 코드의 완성 된 코드를 비교 하 여 문제에 솔루션을 찾을 수 있습니다. 몇 가지 일반적인 오류 및 해결 하는 방법에 대 한 참조 [오류 및 해결 방법입니다.](advanced-entity-framework-scenarios-for-an-mvc-web-application.md#errors)
-
 
 이전 자습서에서 School 데이터 모델을 완료 했습니다. 이 자습서에서는 읽기 및 관련된 데이터 표시 됩니다-즉, Entity Framework는 탐색 속성으로 로드 하는 데이터입니다.
 
@@ -176,7 +175,6 @@ Entity Framework 관련된 데이터를 엔터티의 탐색 속성으로 로드�
 > 
 > [!code-cshtml[Main](reading-related-data-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample11.cshtml)]
 
-
 코드는 보기 모델의 인스턴스를 만들고 강사 목록에 배치하여 시작합니다. 코드에 대 한 즉시 로드를 지정 합니다 `Instructor.OfficeAssignment` 하며 `Instructor.Courses` 탐색 속성입니다.
 
 [!code-csharp[Main](reading-related-data-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample12.cs?highlight=3-4)]
@@ -237,7 +235,6 @@ Entity Framework 관련된 데이터를 엔터티의 탐색 속성으로 로드�
 
 > [!NOTE]
 > 합니다 *.css* 파일은 브라우저에서 캐시 됩니다. 응용 프로그램을 실행 하는 경우 변경 내용이 표시 되지 않으면, 하드 새로 고침을 수행 (CTRL 키를 누른 채 클릭 하는 **새로 고침** 단추 또는 ctrl+f5).
-
 
 페이지를 실행 하 고 강사를 선택 합니다. 이제 선택된 강사에 할당된 강좌를 표시하는 표가 표시되고 각 강좌에 대해 할당된 부서의 이름이 표시됩니다.
 

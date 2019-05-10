@@ -8,12 +8,12 @@ ms.date: 11/17/2011
 ms.assetid: a8d776af-4735-4612-87f6-9f326587f2d3
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-deploying-a-database-update-9-of-12
 msc.type: authoredcontent
-ms.openlocfilehash: 3bae4d72c8b653a5cda500b05dde50c6a7201589
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3a5600aff3ba63cb7046e42d0bfd587c4181d99e
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59413115"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130280"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-deploying-a-database-update---9-of-12"></a>SQL Server Compact Visual Studio 또는 Visual Web Developer를 사용 하 여를 사용 하 여 ASP.NET 웹 응용 프로그램을 배포 합니다. 데이터베이스 업데이트-12 9를 배포합니다.
 
@@ -24,7 +24,6 @@ ms.locfileid: "59413115"
 > 이 시리즈의 자습서에서는 배포 하는 방법을 보여 줍니다 (게시) ASP.NET 웹용 Visual Studio 2012 RC 또는 Visual Studio Express 2012 RC를 사용 하 여 SQL Server Compact 데이터베이스를 포함 하는 웹 응용 프로그램 프로젝트입니다. Visual Studio 2010 웹 게시 업데이트를 설치 하는 경우에 사용할 수 있습니다. 계열에 대 한 소개를 참조 하세요 [시리즈의 첫 번째 자습서](deployment-to-a-hosting-provider-introduction-1-of-12.md)합니다.
 > 
 > Visual Studio 2012 RC 출시 이후 도입 된 배포 기능을 보여 줍니다, 이외의 SQL Server Compact, SQL Server 버전을 배포 하는 방법을 보여 줍니다 및 Azure App Service Web Apps를 배포 하는 방법을 보여 줍니다 하는 자습서를 참조 하세요 [ASP.NET 웹 배포 Visual Studio를 사용 하 여](../../deployment/visual-studio-web-deployment/introduction.md)입니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -88,7 +87,6 @@ Visual Studio 업데이트 된 응용 프로그램을 배포 하 고 브라우�
 
 > [!NOTE]
 > 응용 프로그램은 프로덕션 환경에서 사용 되는 동안 백업 계획을 구현 해야 합니다. 즉, 사용자는 주기적으로 복사 하는 합니다 *학교 Prod.sdf* 하 고 *aspnet Prod.sdf* 안전한 저장소 위치에 파일에서 프로덕션 사이트 및 등의 여러 세대를 유지 해야 백업 합니다. 데이터베이스를 업데이트할 때 변경 직전의 백업 복사본을 만들어야 합니다. 그런 다음 실수를 프로덕션에 배포한 후까지 검색 하지 해야 손상 하기 전의 상태로 데이터베이스를 복구할 수 있습니다.
-
 
 Visual Studio가 브라우저에서 홈 페이지 URL을 열면 합니다 *앱\_offline.htm* 페이지가 표시 됩니다. 삭제 한 후 합니다 *앱\_offline.htm* 홈 페이지에 업데이트를 성공적으로 배포 되었는지 확인 하려면 다시 찾아보면 파일입니다.
 

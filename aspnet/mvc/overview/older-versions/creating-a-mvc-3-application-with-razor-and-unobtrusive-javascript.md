@@ -8,12 +8,12 @@ ms.date: 11/01/2010
 ms.assetid: 658b149b-d770-46bf-8b4b-4e47cca242f3
 msc.legacyurl: /mvc/overview/older-versions/creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript
 msc.type: authoredcontent
-ms.openlocfilehash: 91c96cc413e63ad2fc160ffbb473c4f3e1ada3e4
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: fb63493ff22c9261fc5746a998a32f2511141f87
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59401064"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130397"
 ---
 # <a name="creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript"></a>Razor 및 Unobtrusive JavaScript를 사용하여 MVC 3 애플리케이션 만들기
 
@@ -22,7 +22,6 @@ by [Microsoft](https://github.com/microsoft)
 > 사용자 목록 샘플 웹 응용 프로그램에서는 Razor 보기 엔진을 사용 하 여 ASP.NET MVC 3 응용 프로그램을 만드는 얼마나 간단한 지 보여 줍니다. 샘플 응용 프로그램 작성, 표시, 편집 및 삭제 사용자 등의 기능을 포함 하는 가상의 사용자 목록 웹 사이트를 만드는 ASP.NET MVC 버전 3 사용 하 여 새로운 Razor 보기 엔진 및 Visual Studio 2010을 사용 하는 방법을 보여 줍니다.
 > 
 > 이 자습서에는 사용자 목록 샘플 ASP.NET MVC 3 응용 프로그램을 빌드하기 위해 수행 된 단계를 설명 합니다. Visual Studio 프로젝트를 사용 하 여 C# 이며 VB 소스 코드를 다음이 항목과 함께 사용할 수 있습니다. [다운로드](https://code.msdn.microsoft.com/aspnetmvcsamples/Release/ProjectReleases.aspx?ReleaseId=5114)합니다. 이 자습서에 대 한 질문이 있으면 게시 하세요 하는 [MVC 포럼](https://forums.asp.net/1146.aspx)합니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -185,7 +184,6 @@ ASP.NET MVC 3의 클라이언트 쪽 유효성 검사를 사용 하도록 설정
 
 > [!NOTE]
 > ASP.NET MVC 3 베타의 경우에 따라 클라이언트 쪽 유효성 검사를 시작 하려면 양식을 제출 해야 합니다. 이 최종 릴리스에서 변경 될 수 있습니다.
-
 
 ## <a name="creating-the-create-view"></a>만들기 뷰 만들기
 

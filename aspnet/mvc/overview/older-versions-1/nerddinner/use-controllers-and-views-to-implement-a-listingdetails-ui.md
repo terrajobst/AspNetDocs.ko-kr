@@ -8,12 +8,12 @@ ms.date: 07/27/2010
 ms.assetid: 64116e56-1c9a-4f07-8097-bb36cbb6e57f
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/use-controllers-and-views-to-implement-a-listingdetails-ui
 msc.type: authoredcontent
-ms.openlocfilehash: abff97e5cc2663465fdf61f41ff69d17104fe8b6
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 74319fe5ea4c79b50140834349e2fdf86420cfbb
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379471"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128213"
 ---
 # <a name="use-controllers-and-views-to-implement-a-listingdetails-ui"></a>컨트롤러 및 보기를 사용하여 목록/세부 정보 UI 구현
 
@@ -26,7 +26,6 @@ by [Microsoft](https://github.com/microsoft)
 > 4 단계 NerdDinner 사이트에서 dinners에 대 한 데이터 목록/세부 정보 탐색 환경을 제공 하기 위해 모델을 활용 하는 응용 프로그램에는 컨트롤러를 추가 하는 방법을 보여 줍니다.
 > 
 > ASP.NET MVC 3을 사용 하는 경우 수행 하는 것이 좋습니다 합니다 [가져오기 시작 MVC 3과](../../older-versions/getting-started-with-aspnet-mvc3/cs/intro-to-aspnet-mvc-3.md) 하거나 [MVC Music Store](../../older-versions/mvc-music-store/mvc-music-store-part-1.md) 자습서입니다.
-
 
 ## <a name="nerddinner-step-4-controllers-and-views"></a>NerdDinner Step 4: 컨트롤러 및 보기
 

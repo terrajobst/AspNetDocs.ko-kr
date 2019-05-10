@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: e1fec43e-1daf-49d2-b0c7-7f1b930455cc
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/dynamicpopulate/dynamically-populating-a-control-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 42c1cd684196c026f1435cba289fc2535187087c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1b3e944e45e8d2b746b2e42360693c245d93901f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59417301"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132867"
 ---
 # <a name="dynamically-populating-a-control-c"></a>동적으로 컨트롤 채우기(C#)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/d/8/f/d8f2f6f9-1b7c-46ad-9252-e1fc81bdea3e/dynamicpopulate0.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/dynamicpopulate0CS.pdf)
 
 > ASP.NET AJAX Control Toolkit에 DynamicPopulate 제어는 웹 서비스 (또는 페이지 메서드)를 호출 하 고 페이지 새로 고침 없이 페이지에서 대상 컨트롤에 결과 값을 채웁니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -64,7 +63,6 @@ by [Christian Wenz](https://github.com/wenz)
 [!code-aspx[Main](dynamically-populating-a-control-cs/samples/sample5.aspx)]
 
 브라우저에서 ASP.NET 페이지를 실행 하 고 단추 클릭 월-일-연도 형식의 현재 날짜를 받게 됩니다.
-
 
 [![서버에서 날짜를 검색 하는 단추 클릭](dynamically-populating-a-control-cs/_static/image2.png)](dynamically-populating-a-control-cs/_static/image1.png)
 

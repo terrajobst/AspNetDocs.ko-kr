@@ -8,12 +8,12 @@ ms.date: 11/13/2006
 ms.assetid: 1afdb14d-6e49-4e1f-aead-2934730d472e
 msc.legacyurl: /web-forms/overview/data-access/custom-button-actions-with-the-datalist-and-repeater/custom-buttons-in-the-datalist-and-repeater-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 1e1b6407dfff4513416869404a9565ed225b5e14
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f16ab831faf213a467624559f09dafc92826bfe5
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59392250"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130710"
 ---
 # <a name="custom-buttons-in-the-datalist-and-repeater-vb"></a>DataList 및 반복기의 사용자 지정 단추(VB)
 
@@ -23,18 +23,15 @@ ms.locfileid: "59392250"
 
 > 이 자습서에서는 BulletedList 컨트롤을 사용 하 여 연결 된 제품에 표시할 단추를 제공 하는 각 범주를 사용 하 여 시스템에서 범주를 나열 하는 반복기를 사용 하는 인터페이스를 빌드 해 보겠습니다.
 
-
 ## <a name="introduction"></a>소개
 
 지난 17 DataList 및 반복기 자습서 전체에서에서는 ve 모두 읽기 전용 예제 및 편집 및 삭제 예제를 생성 합니다. 편집 및 삭제 DataList 내에서 기능을 위해 단추에 추가한 s DataList `ItemTemplate` 를 클릭 하면 포스트백을 발생 하 고 s 단추에 해당 하는 DataList 이벤트를 발생 시킨 `CommandName` 속성입니다. 예를 들어, 단추를 추가 합니다 `ItemTemplate` 사용 하 여를 `CommandName` 속성은 편집 하면 DataList s `EditCommand` 포스트백에서 발생 개를 `CommandName` 발생 삭제는 `DeleteCommand`.
 
 또한를 편집 하 고 삭제 단추 DataList 및 반복기 컨트롤을 포함할 수도 Linkbutton을 단추나 ImageButtons,를 클릭 하면 일부 사용자 지정 서버 쪽 논리를 수행 합니다. 이 자습서에서는 시스템의 범주를 나열 하는 반복기를 사용 하는 인터페이스를 빌드 해 보겠습니다. 각 범주에 대 한 반복기 BulletedList 컨트롤을 사용 하 여 연결 된 제품 범주를 표시 하도록 단추가 포함 됩니다 (그림 1 참조).
 
-
 [![글머리 기호 목록에서 범주의 제품 표시 제품 링크 표시를 클릭합니다.](custom-buttons-in-the-datalist-and-repeater-vb/_static/image2.png)](custom-buttons-in-the-datalist-and-repeater-vb/_static/image1.png)
 
 **그림 1**: 글머리 기호 목록의 s 제품 범주 제품 표시 링크 표시를 클릭 ([클릭 하 여 큰 이미지 보기](custom-buttons-in-the-datalist-and-repeater-vb/_static/image3.png))
-
 
 ## <a name="step-1-adding-the-custom-button-tutorial-web-pages"></a>1단계: 사용자 지정 단추 자습서 웹 페이지 추가
 
@@ -43,57 +40,45 @@ ms.locfileid: "59392250"
 - `Default.aspx`
 - `CustomButtons.aspx`
 
-
 ![사용자 지정 단추 관련 자습서에 대 한 ASP.NET 페이지 추가](custom-buttons-in-the-datalist-and-repeater-vb/_static/image4.png)
 
 **그림 2**: 사용자 지정 단추 관련 자습서에 대 한 ASP.NET 페이지 추가
 
-
 다른 폴더와 같이 `Default.aspx` 에 `CustomButtonsDataListRepeater` 폴더 섹션의 자습서를 나열 됩니다. 이전에 설명한 대로 `SectionLevelTutorialListing.ascx` 사용자 컨트롤은이 기능을 제공 합니다. 이 사용자 정의 컨트롤을 추가 `Default.aspx`의 디자인 뷰에서 페이지의 솔루션 탐색기에서 끌어 합니다.
-
 
 [![Default.aspx SectionLevelTutorialListing.ascx 사용자 컨트롤 추가](custom-buttons-in-the-datalist-and-repeater-vb/_static/image6.png)](custom-buttons-in-the-datalist-and-repeater-vb/_static/image5.png)
 
 **그림 3**: 추가 된 `SectionLevelTutorialListing.ascx` 사용자 정의 컨트롤 `Default.aspx` ([클릭 하 여 큰 이미지 보기](custom-buttons-in-the-datalist-and-repeater-vb/_static/image7.png))
 
-
 마지막으로, 페이지에 항목으로 추가 된 `Web.sitemap` 파일입니다. 특히, DataList 및 반복기를 사용 하 여 페이징 및 정렬 한 후 다음 태그를 추가 `<siteMapNode>`:
-
 
 [!code-xml[Main](custom-buttons-in-the-datalist-and-repeater-vb/samples/sample1.xml)]
 
 업데이트 한 후 `Web.sitemap`, 잠시 브라우저를 통해 자습서 웹 사이트를 확인 합니다. 왼쪽 메뉴에는 이제 편집, 삽입 및 삭제 자습서에 대 한 항목이 포함 됩니다.
 
-
 ![이제 사이트 맵 사용자 지정 단추 자습서에 대 한 항목을 포함](custom-buttons-in-the-datalist-and-repeater-vb/_static/image8.png)
 
 **그림 4**: 이제 사이트 맵 사용자 지정 단추 자습서에 대 한 항목을 포함
-
 
 ## <a name="step-2-adding-the-list-of-categories"></a>2단계: 범주 목록 추가
 
 이 자습서에 대 한 제품 LinkButton 표시와 함께 모든 범주를 나열 하는 반복기를 생성 해야 하는, 클릭 하면 관련된 범주가의 제품 글머리 기호 목록에 표시 됩니다. S를 시스템의 범주를 나열 하는 간단한 Repeater를 처음 만들 수 있습니다. 열어서 시작 합니다 `CustomButtons.aspx` 페이지에 `CustomButtonsDataListRepeater` 폴더입니다. Repeater 집합과 디자이너 도구 상자에서 끌어 해당 `ID` 속성을 `Categories`입니다. 다음으로 반복기가 스마트 태그에서 새 데이터 소스 컨트롤을 만듭니다. 특히 이라는 새 ObjectDataSource 컨트롤을 만들어 `CategoriesDataSource` 에서 해당 데이터를 선택 하 여 `CategoriesBLL` s 클래스 `GetCategories()` 메서드.
 
-
 [![CategoriesBLL 클래스의 GetCategories() 메서드를 사용 하는 ObjectDataSource 구성](custom-buttons-in-the-datalist-and-repeater-vb/_static/image10.png)](custom-buttons-in-the-datalist-and-repeater-vb/_static/image9.png)
 
 **그림 5**: ObjectDataSource를 사용 하 여 구성 합니다 `CategoriesBLL` s 클래스 `GetCategories()` 메서드 ([클릭 하 여 큰 이미지 보기](custom-buttons-in-the-datalist-and-repeater-vb/_static/image11.png))
-
 
 Visual Studio는 기본 생성 DataList 컨트롤을 달리 `ItemTemplate` 데이터 원본에 따라 s 반복기 템플릿을 수동으로 정의 해야 합니다. 반복기가의 템플릿 해야 생성 및 선언적 편집 또한 (즉, 있는 s 편집 템플릿이 옵션에서 반복기가 스마트 태그에).
 
 원본 탭 왼쪽된 아래 모퉁이에서 클릭 하 고 추가 `ItemTemplate` 에서 s 범주 이름을 표시 하는 `<h3>` 요소 및 해당 설명을 단락에서 태그; 포함을 `SeparatorTemplate` 단락 구분선을 표시 하는 (`<hr />`) 간의 범주입니다. 추가적으로 LinkButton 사용 하 여 해당 `Text` 속성이 제품 표시로 설정 합니다. 다음이 단계를 완료 한 후 페이지 s 선언적 태그는 다음과 같이 표시 됩니다.
 
-
 [!code-aspx[Main](custom-buttons-in-the-datalist-and-repeater-vb/samples/sample2.aspx)]
 
 그림 6에서는 브라우저를 통해 볼 때 페이지를 보여 줍니다. 각 범주 이름 및 설명을 나열 됩니다. 제품 표시 단추를 클릭 하면 포스트백을 발생 시키는 하지만 모든 작업을 아직 수행 하지 않습니다.
 
-
 [![각 범주 이름이 설명과 함께 표시 됩니다, 제품 LinkButton 표시](custom-buttons-in-the-datalist-and-repeater-vb/_static/image13.png)](custom-buttons-in-the-datalist-and-repeater-vb/_static/image12.png)
 
 **그림 6**: 제품 표시 LinkButton 함께 각 이름이 범주와 설명이 표시 됩니다 ([클릭 하 여 큰 이미지 보기](custom-buttons-in-the-datalist-and-repeater-vb/_static/image14.png))
-
 
 ## <a name="step-3-executing-server-side-logic-when-the-show-products-linkbutton-is-clicked"></a>3단계: 서버 쪽 논리 때 the 표시 제품 LinkButton 실행를 클릭 합니다.
 
@@ -105,7 +90,6 @@ DataList 또는 Repeater 내에서 단추를 클릭 하면 종종 해야 (될 �
 - `CommandArgument` 기본 키 값과 같은 일부 데이터 필드의 값을 유지 하는 데 주로 사용
 
 이 예에서는 LinkButton s를 설정 `CommandName` ShowProducts 바인딩 현재 레코드 s 기본 키 값을 속성 `CategoryID` 에 `CommandArgument` 데이터 바인딩 구문을 사용 하 여 속성 `CategoryArgument='<%# Eval("CategoryID") %>'`합니다. 이러한 두 속성을 지정한 후 LinkButton s 선언적 구문을 다음과 같이 표시 됩니다.
-
 
 [!code-aspx[Main](custom-buttons-in-the-datalist-and-repeater-vb/samples/sample3.aspx)]
 
@@ -123,16 +107,13 @@ S 반복기에 대 한 이벤트 처리기를 만듭니다 `ItemCommand` 이벤�
 > [!NOTE]
 > S DataList `ItemCommand` 이벤트 처리기가 형식의 개체를 전달 [ `DataListCommandEventArgs` ](https://msdn.microsoft.com/library/system.web.ui.webcontrols.datalistcommandeventargs.aspx), 같은 네 가지 속성을 제공 하는 `RepeaterCommandEventArgs` 클래스입니다.
 
-
 ## <a name="step-4-displaying-the-selected-category-s-products-in-a-bulleted-list"></a>4단계: 글머리 기호 목록에서 선택한 범주의 제품 표시
 
 S Repeater 내 선택한 범주의 제품을 표시할 수 있습니다 `ItemTemplate` 모든 다양 한 컨트롤을 사용 합니다. 또 다른 중첩 된 Repeater, DataList, DropDownList, GridView 및 등에 추가할 수 있었습니다. 글머리 기호 목록으로 제품을 표시할 것 이므로 BulletedList 컨트롤 사용 하겠습니다 그러나. 반환 합니다 `CustomButtons.aspx` s 선언적 태그를 페이지, BulletedList 컨트롤을 추가 합니다 `ItemTemplate` 제품 LinkButton 표시 한 후 합니다. 집합 BulletedLists s `ID` 에 `ProductsInCategory`입니다. BulletedList를 통해 지정 된 데이터 필드의 값을 표시 합니다 `DataTextField` 속성에이 컨트롤에 바인딩되어 설정, 제품 정보를 포함 하므로 합니다 `DataTextField` 속성을 `ProductName`.
 
-
 [!code-aspx[Main](custom-buttons-in-the-datalist-and-repeater-vb/samples/sample4.aspx)]
 
 에 `ItemCommand` 이벤트 처리기를 사용 하 여이 컨트롤 참조 `e.Item.FindControl("ProductsInCategory")` 선택한 범주와 관련 된 제품 집합에 바인딩합니다.
-
 
 [!code-vb[Main](custom-buttons-in-the-datalist-and-repeater-vb/samples/sample5.vb)]
 
@@ -145,11 +126,9 @@ S Repeater 내 선택한 범주의 제품을 표시할 수 있습니다 `ItemTem
 > [!NOTE]
 > 한 번에 하나의 범주의 제품 나와 되도록이 보고서의 동작을 수정 하려면, s BulletedList 컨트롤을 설정 하면 됩니다 `EnableViewState` 속성을 `False`입니다.
 
-
 [![선택한 범주의 제품을 전시 하기를 BulletedList는](custom-buttons-in-the-datalist-and-repeater-vb/_static/image16.png)](custom-buttons-in-the-datalist-and-repeater-vb/_static/image15.png)
 
 **그림 7**: 선택한 범주의 제품을 전시 하기를 BulletedList 사용 됩니다 ([클릭 하 여 큰 이미지 보기](custom-buttons-in-the-datalist-and-repeater-vb/_static/image17.png))
-
 
 ## <a name="summary"></a>요약
 
