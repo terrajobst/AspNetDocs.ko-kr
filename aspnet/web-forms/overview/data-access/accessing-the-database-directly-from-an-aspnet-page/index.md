@@ -8,23 +8,22 @@ ms.date: 10/05/2011
 ms.assetid: 134a202f-4eef-41fc-8e91-70efba338389
 msc.legacyurl: /web-forms/overview/data-access/accessing-the-database-directly-from-an-aspnet-page
 msc.type: chapter
-ms.openlocfilehash: 9558d4131205b3d696f8ce70476ff575fbccf20e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 11266f9b347aeb994ac2d6c866f475feeeb244e3
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59407694"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132470"
 ---
-# <a name="accessing-the-database-directly-from-an-aspnet-page"></a><span data-ttu-id="a6852-103">ASP.NET 페이지에서 데이터베이스에 직접 액세스</span><span class="sxs-lookup"><span data-stu-id="a6852-103">Accessing the Database Directly from an ASP.NET Page</span></span>
+# <a name="accessing-the-database-directly-from-an-aspnet-page"></a><span data-ttu-id="112eb-103">ASP.NET 페이지에서 데이터베이스에 직접 액세스</span><span class="sxs-lookup"><span data-stu-id="112eb-103">Accessing the Database Directly from an ASP.NET Page</span></span>
 
-> <span data-ttu-id="a6852-104">이러한 자습서에는 프레젠테이션 및 데이터 액세스 레이어는 엄격 하 게 분리 필요 하지 않을 때 데이터베이스를 직접 쿼리할 SqlDataSource 컨트롤을 사용 하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="a6852-104">These tutorials show how to use the SqlDataSource control to query the database directly when you don't need a strict separation of the presentation and data access layers.</span></span>
+> <span data-ttu-id="112eb-104">이러한 자습서에는 프레젠테이션 및 데이터 액세스 레이어는 엄격 하 게 분리 필요 하지 않을 때 데이터베이스를 직접 쿼리할 SqlDataSource 컨트롤을 사용 하는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="112eb-104">These tutorials show how to use the SqlDataSource control to query the database directly when you don't need a strict separation of the presentation and data access layers.</span></span>
 
-
-- [<span data-ttu-id="a6852-105">SqlDataSource 컨트롤을 사용하여 데이터 쿼리(C#)</span><span class="sxs-lookup"><span data-stu-id="a6852-105">Querying Data with the SqlDataSource Control (C#)</span></span>](querying-data-with-the-sqldatasource-control-cs.md)
-- [<span data-ttu-id="a6852-106">SqlDataSource와 함께 매개 변수가 있는 쿼리 사용(C#)</span><span class="sxs-lookup"><span data-stu-id="a6852-106">Using Parameterized Queries with the SqlDataSource (C#)</span></span>](using-parameterized-queries-with-the-sqldatasource-cs.md)
-- [<span data-ttu-id="a6852-107">SqlDataSource를 사용하여 데이터 삽입, 업데이트 및 삭제(C#)</span><span class="sxs-lookup"><span data-stu-id="a6852-107">Inserting, Updating, and Deleting Data with the SqlDataSource (C#)</span></span>](inserting-updating-and-deleting-data-with-the-sqldatasource-cs.md)
-- [<span data-ttu-id="a6852-108">SqlDataSource를 사용하여 낙관적 동시성 구현(C#)</span><span class="sxs-lookup"><span data-stu-id="a6852-108">Implementing Optimistic Concurrency with the SqlDataSource (C#)</span></span>](implementing-optimistic-concurrency-with-the-sqldatasource-cs.md)
-- [<span data-ttu-id="a6852-109">SqlDataSource 컨트롤을 사용하여 데이터 쿼리(VB)</span><span class="sxs-lookup"><span data-stu-id="a6852-109">Querying Data with the SqlDataSource Control (VB)</span></span>](querying-data-with-the-sqldatasource-control-vb.md)
-- [<span data-ttu-id="a6852-110">SqlDataSource와 함께 매개 변수가 있는 쿼리 사용(VB)</span><span class="sxs-lookup"><span data-stu-id="a6852-110">Using Parameterized Queries with the SqlDataSource (VB)</span></span>](using-parameterized-queries-with-the-sqldatasource-vb.md)
-- [<span data-ttu-id="a6852-111">SqlDataSource를 사용하여 데이터 삽입, 업데이트 및 삭제(VB)</span><span class="sxs-lookup"><span data-stu-id="a6852-111">Inserting, Updating, and Deleting Data with the SqlDataSource (VB)</span></span>](inserting-updating-and-deleting-data-with-the-sqldatasource-vb.md)
-- [<span data-ttu-id="a6852-112">SqlDataSource를 사용하여 낙관적 동시성 구현(VB)</span><span class="sxs-lookup"><span data-stu-id="a6852-112">Implementing Optimistic Concurrency with the SqlDataSource (VB)</span></span>](implementing-optimistic-concurrency-with-the-sqldatasource-vb.md)
+- [<span data-ttu-id="112eb-105">SqlDataSource 컨트롤을 사용하여 데이터 쿼리(C#)</span><span class="sxs-lookup"><span data-stu-id="112eb-105">Querying Data with the SqlDataSource Control (C#)</span></span>](querying-data-with-the-sqldatasource-control-cs.md)
+- [<span data-ttu-id="112eb-106">SqlDataSource와 함께 매개 변수가 있는 쿼리 사용(C#)</span><span class="sxs-lookup"><span data-stu-id="112eb-106">Using Parameterized Queries with the SqlDataSource (C#)</span></span>](using-parameterized-queries-with-the-sqldatasource-cs.md)
+- [<span data-ttu-id="112eb-107">SqlDataSource를 사용하여 데이터 삽입, 업데이트 및 삭제(C#)</span><span class="sxs-lookup"><span data-stu-id="112eb-107">Inserting, Updating, and Deleting Data with the SqlDataSource (C#)</span></span>](inserting-updating-and-deleting-data-with-the-sqldatasource-cs.md)
+- [<span data-ttu-id="112eb-108">SqlDataSource를 사용하여 낙관적 동시성 구현(C#)</span><span class="sxs-lookup"><span data-stu-id="112eb-108">Implementing Optimistic Concurrency with the SqlDataSource (C#)</span></span>](implementing-optimistic-concurrency-with-the-sqldatasource-cs.md)
+- [<span data-ttu-id="112eb-109">SqlDataSource 컨트롤을 사용하여 데이터 쿼리(VB)</span><span class="sxs-lookup"><span data-stu-id="112eb-109">Querying Data with the SqlDataSource Control (VB)</span></span>](querying-data-with-the-sqldatasource-control-vb.md)
+- [<span data-ttu-id="112eb-110">SqlDataSource와 함께 매개 변수가 있는 쿼리 사용(VB)</span><span class="sxs-lookup"><span data-stu-id="112eb-110">Using Parameterized Queries with the SqlDataSource (VB)</span></span>](using-parameterized-queries-with-the-sqldatasource-vb.md)
+- [<span data-ttu-id="112eb-111">SqlDataSource를 사용하여 데이터 삽입, 업데이트 및 삭제(VB)</span><span class="sxs-lookup"><span data-stu-id="112eb-111">Inserting, Updating, and Deleting Data with the SqlDataSource (VB)</span></span>](inserting-updating-and-deleting-data-with-the-sqldatasource-vb.md)
+- [<span data-ttu-id="112eb-112">SqlDataSource를 사용하여 낙관적 동시성 구현(VB)</span><span class="sxs-lookup"><span data-stu-id="112eb-112">Implementing Optimistic Concurrency with the SqlDataSource (VB)</span></span>](implementing-optimistic-concurrency-with-the-sqldatasource-vb.md)

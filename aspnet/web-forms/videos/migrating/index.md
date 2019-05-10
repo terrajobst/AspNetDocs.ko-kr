@@ -8,23 +8,22 @@ ms.date: 10/05/2011
 ms.assetid: baa03541-3f84-4e46-8a2c-2395e64f484d
 msc.legacyurl: /web-forms/videos/migrating
 msc.type: chapter
-ms.openlocfilehash: c2a5b3ae768012156b0f46eda8caeb43451af258
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: a876326749f4a3b63bdedfccd77d6d5d19c9f644
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59413752"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131710"
 ---
-# <a name="migrating"></a><span data-ttu-id="d4310-103">마이그레이션</span><span class="sxs-lookup"><span data-stu-id="d4310-103">Migrating</span></span>
+# <a name="migrating"></a><span data-ttu-id="f01a8-103">마이그레이션</span><span class="sxs-lookup"><span data-stu-id="f01a8-103">Migrating</span></span>
 
-> <span data-ttu-id="d4310-104">ASP.NET으로 마이그레이션</span><span class="sxs-lookup"><span data-stu-id="d4310-104">Migrating to ASP.NET</span></span>
+> <span data-ttu-id="f01a8-104">ASP.NET으로 마이그레이션</span><span class="sxs-lookup"><span data-stu-id="f01a8-104">Migrating to ASP.NET</span></span>
 
-
-- <span data-ttu-id="d4310-105">[[ASP.NET 2.0 소개:] ASP.NET 2.0 기본 사항](intro-to-aspnet-20-aspnet-20-fundamentals.md)</span><span class="sxs-lookup"><span data-stu-id="d4310-105">[[Intro to ASP.NET 2.0:] ASP.NET 2.0 Fundamentals](intro-to-aspnet-20-aspnet-20-fundamentals.md)</span></span>
-- <span data-ttu-id="d4310-106">[[ASP.NET 2.0 소개:] 사용자 인터페이스 요소](intro-to-aspnet-20-user-interface-elements.md)</span><span class="sxs-lookup"><span data-stu-id="d4310-106">[[Intro to ASP.NET 2.0:] User Interface Elements](intro-to-aspnet-20-user-interface-elements.md)</span></span>
-- <span data-ttu-id="d4310-107">[[마이그레이션] 클래식 ASP에서 ASP.NET으로](migrating-from-classic-asp-to-aspnet.md)</span><span class="sxs-lookup"><span data-stu-id="d4310-107">[[Migrating from] Classic ASP to ASP.NET](migrating-from-classic-asp-to-aspnet.md)</span></span>
-- [<span data-ttu-id="d4310-108">JSP 개발자 용 ASP.NET 소개: ASP.NET 2.0 시작</span><span class="sxs-lookup"><span data-stu-id="d4310-108">Intro to ASP.NET for JSP Developers: Welcome to ASP.NET 2.0</span></span>](intro-to-aspnet-for-jsp-developers-welcome-to-aspnet-20.md)
-- [<span data-ttu-id="d4310-109">JSP 개발자 용 ASP.NET 소개: 응용 프로그램 빌드</span><span class="sxs-lookup"><span data-stu-id="d4310-109">Intro to ASP.NET for JSP Developers: Building Applications</span></span>](intro-to-aspnet-for-jsp-developers-building-applications.md)
-- [<span data-ttu-id="d4310-110">ColdFusion 개발자 용 ASP.NET 소개: ASP.NET 목록에 추가</span><span class="sxs-lookup"><span data-stu-id="d4310-110">Intro to ASP.NET for ColdFusion Developers: Adding ASP.NET to Your Repertoire</span></span>](intro-to-aspnet-for-coldfusion-developers-adding-aspnet-to-your-repertoire.md)
-- [<span data-ttu-id="d4310-111">ColdFusion 개발자 용 ASP.NET 소개: ASP.NET 응용 프로그램 빌드</span><span class="sxs-lookup"><span data-stu-id="d4310-111">Intro to ASP.NET for ColdFusion Developers: Building an ASP.NET Application</span></span>](introduction-to-aspnet-for-coldfusion-developers-building-an-aspnet-application.md)
-- [<span data-ttu-id="d4310-112">PHP와 Windows 플랫폼 간 상호 운용</span><span class="sxs-lookup"><span data-stu-id="d4310-112">Interop between PHP and the Windows Platform</span></span>](interop-between-php-and-the-windows-platform.md)
+- <span data-ttu-id="f01a8-105">[[ASP.NET 2.0 소개:] ASP.NET 2.0 기본 사항](intro-to-aspnet-20-aspnet-20-fundamentals.md)</span><span class="sxs-lookup"><span data-stu-id="f01a8-105">[[Intro to ASP.NET 2.0:] ASP.NET 2.0 Fundamentals](intro-to-aspnet-20-aspnet-20-fundamentals.md)</span></span>
+- <span data-ttu-id="f01a8-106">[[ASP.NET 2.0 소개:] 사용자 인터페이스 요소](intro-to-aspnet-20-user-interface-elements.md)</span><span class="sxs-lookup"><span data-stu-id="f01a8-106">[[Intro to ASP.NET 2.0:] User Interface Elements](intro-to-aspnet-20-user-interface-elements.md)</span></span>
+- <span data-ttu-id="f01a8-107">[[마이그레이션] 클래식 ASP에서 ASP.NET으로](migrating-from-classic-asp-to-aspnet.md)</span><span class="sxs-lookup"><span data-stu-id="f01a8-107">[[Migrating from] Classic ASP to ASP.NET](migrating-from-classic-asp-to-aspnet.md)</span></span>
+- [<span data-ttu-id="f01a8-108">JSP 개발자 용 ASP.NET 소개: ASP.NET 2.0 시작</span><span class="sxs-lookup"><span data-stu-id="f01a8-108">Intro to ASP.NET for JSP Developers: Welcome to ASP.NET 2.0</span></span>](intro-to-aspnet-for-jsp-developers-welcome-to-aspnet-20.md)
+- [<span data-ttu-id="f01a8-109">JSP 개발자 용 ASP.NET 소개: 응용 프로그램 빌드</span><span class="sxs-lookup"><span data-stu-id="f01a8-109">Intro to ASP.NET for JSP Developers: Building Applications</span></span>](intro-to-aspnet-for-jsp-developers-building-applications.md)
+- [<span data-ttu-id="f01a8-110">ColdFusion 개발자 용 ASP.NET 소개: ASP.NET 목록에 추가</span><span class="sxs-lookup"><span data-stu-id="f01a8-110">Intro to ASP.NET for ColdFusion Developers: Adding ASP.NET to Your Repertoire</span></span>](intro-to-aspnet-for-coldfusion-developers-adding-aspnet-to-your-repertoire.md)
+- [<span data-ttu-id="f01a8-111">ColdFusion 개발자 용 ASP.NET 소개: ASP.NET 응용 프로그램 빌드</span><span class="sxs-lookup"><span data-stu-id="f01a8-111">Intro to ASP.NET for ColdFusion Developers: Building an ASP.NET Application</span></span>](introduction-to-aspnet-for-coldfusion-developers-building-an-aspnet-application.md)
+- [<span data-ttu-id="f01a8-112">PHP와 Windows 플랫폼 간 상호 운용</span><span class="sxs-lookup"><span data-stu-id="f01a8-112">Interop between PHP and the Windows Platform</span></span>](interop-between-php-and-the-windows-platform.md)
