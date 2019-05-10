@@ -8,18 +8,17 @@ ms.date: 09/08/2014
 ms.assetid: ce798572-e7dc-44c1-a7fe-a029820e195e
 msc.legacyurl: /web-pages/overview/performance-and-traffic
 msc.type: chapter
-ms.openlocfilehash: 36cfc3435a832eaf8a6aeb24ff91fa03b99f2e39
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e8e27d316d93faec096f04c74a35fde462ce1eb6
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59385607"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128414"
 ---
-# <a name="performance"></a><span data-ttu-id="fcbbf-103">성능</span><span class="sxs-lookup"><span data-stu-id="fcbbf-103">Performance</span></span>
+# <a name="performance"></a><span data-ttu-id="c75ea-103">성능</span><span class="sxs-lookup"><span data-stu-id="c75ea-103">Performance</span></span>
 
-> <span data-ttu-id="fcbbf-104">성능 향상을 위해 콘텐츠를 캐시 하는 방법 및 사이트 트래픽을 측정 하는 방법.</span><span class="sxs-lookup"><span data-stu-id="fcbbf-104">How to cache content for faster performance and how to measure site traffic.</span></span>
+> <span data-ttu-id="c75ea-104">성능 향상을 위해 콘텐츠를 캐시 하는 방법 및 사이트 트래픽을 측정 하는 방법.</span><span class="sxs-lookup"><span data-stu-id="c75ea-104">How to cache content for faster performance and how to measure site traffic.</span></span>
 
-
-- [<span data-ttu-id="fcbbf-105">캐싱하여 웹 사이트 성능 향상</span><span class="sxs-lookup"><span data-stu-id="fcbbf-105">Caching to Improve the Performance of Your Website</span></span>](15-caching-to-improve-the-performance-of-your-website.md)
-- [<span data-ttu-id="fcbbf-106">트래픽 분석</span><span class="sxs-lookup"><span data-stu-id="fcbbf-106">Analyzing Traffic</span></span>](14-analyzing-traffic.md)
-- [<span data-ttu-id="fcbbf-107">ASP.NET 웹 페이지(Razor) 사이트에서 자산 묶음 및 축소</span><span class="sxs-lookup"><span data-stu-id="fcbbf-107">Bundling and Minifying Assets in an ASP.NET Web Pages (Razor) Site</span></span>](bundling-and-minifying-assets-in-an-aspnet-web-pages-razor-site.md)
+- [<span data-ttu-id="c75ea-105">캐싱하여 웹 사이트 성능 향상</span><span class="sxs-lookup"><span data-stu-id="c75ea-105">Caching to Improve the Performance of Your Website</span></span>](15-caching-to-improve-the-performance-of-your-website.md)
+- [<span data-ttu-id="c75ea-106">트래픽 분석</span><span class="sxs-lookup"><span data-stu-id="c75ea-106">Analyzing Traffic</span></span>](14-analyzing-traffic.md)
+- [<span data-ttu-id="c75ea-107">ASP.NET 웹 페이지(Razor) 사이트에서 자산 묶음 및 축소</span><span class="sxs-lookup"><span data-stu-id="c75ea-107">Bundling and Minifying Assets in an ASP.NET Web Pages (Razor) Site</span></span>](bundling-and-minifying-assets-in-an-aspnet-web-pages-razor-site.md)
