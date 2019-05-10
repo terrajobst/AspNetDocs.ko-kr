@@ -8,22 +8,21 @@ ms.date: 02/24/2012
 ms.assetid: 257373bb-eab0-47bc-b5a2-37a9e91666d6
 msc.legacyurl: /web-forms/videos/data-access/linq-videos-from-the-vb-team
 msc.type: chapter
-ms.openlocfilehash: 3db35464b448727ef3477a90149459a46e0f76d7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: fae7bc473ecbc655400220aa158dbd5285ae1ea8
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59412166"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65106832"
 ---
-# <a name="linq-videos-from-the-vb-team"></a><span data-ttu-id="d7b8f-103">VB 팀의 LINQ 비디오</span><span class="sxs-lookup"><span data-stu-id="d7b8f-103">LINQ Videos from the VB Team</span></span>
+# <a name="linq-videos-from-the-vb-team"></a><span data-ttu-id="cd978-103">VB 팀의 LINQ 비디오</span><span class="sxs-lookup"><span data-stu-id="cd978-103">LINQ Videos from the VB Team</span></span>
 
-> <span data-ttu-id="d7b8f-104">이러한 비디오는 시간 및 Visual Studio 2008에 포함 된 Visual Basic 9.0의 새로운 LINQ 언어 기능을 중심으로 하는 콘텐츠의 절반을 통해 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="d7b8f-104">These videos provide over an hour and half of content focused on the new LINQ language features of Visual Basic 9.0 included in Visual Studio 2008.</span></span>
+> <span data-ttu-id="cd978-104">이러한 비디오는 시간 및 Visual Studio 2008에 포함 된 Visual Basic 9.0의 새로운 LINQ 언어 기능을 중심으로 하는 콘텐츠의 절반을 통해 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="cd978-104">These videos provide over an hour and half of content focused on the new LINQ language features of Visual Basic 9.0 included in Visual Studio 2008.</span></span>
 
-
-- [<span data-ttu-id="d7b8f-105">LINQ 시작</span><span class="sxs-lookup"><span data-stu-id="d7b8f-105">Get Started with LINQ</span></span>](how-do-i-get-started-with-linq.md)
-- [<span data-ttu-id="d7b8f-106">그룹 및 집계 쿼리 수행</span><span class="sxs-lookup"><span data-stu-id="d7b8f-106">Perform Group and Aggregate Queries</span></span>](how-do-i-perform-group-and-aggregate-queries.md)
-- [<span data-ttu-id="d7b8f-107">LINQ를 사용하도록 Visual Basic 프로젝트 업그레이드</span><span class="sxs-lookup"><span data-stu-id="d7b8f-107">Upgrade Visual Basic Projects to Enable LINQ</span></span>](how-do-i-upgrade-visual-basic-projects-to-enable-linq.md)
-- [<span data-ttu-id="d7b8f-108">LINQ to XML 시작</span><span class="sxs-lookup"><span data-stu-id="d7b8f-108">Get Started with LINQ to XML</span></span>](how-do-i-get-started-with-linq-to-xml.md)
-- [<span data-ttu-id="d7b8f-109">XML IntelliSense 활성화 및 XML 네임스페이스 사용</span><span class="sxs-lookup"><span data-stu-id="d7b8f-109">Enable XML IntelliSense and Use XML Namespaces</span></span>](how-do-i-enable-xml-intellisense-and-use-xml-namespaces.md)
-- [<span data-ttu-id="d7b8f-110">SQL 데이터에서 XML 문서 만들기</span><span class="sxs-lookup"><span data-stu-id="d7b8f-110">Create XML Documents from SQL Data</span></span>](how-do-i-create-xml-documents-from-sql-data.md)
-- [<span data-ttu-id="d7b8f-111">LINQ to XML을 사용하여 Excel 스프레드시트 만들기</span><span class="sxs-lookup"><span data-stu-id="d7b8f-111">Create Excel Spreadsheets using LINQ to XML</span></span>](how-do-i-create-excel-spreadsheets-using-linq-to-xml.md)
+- [<span data-ttu-id="cd978-105">LINQ 시작</span><span class="sxs-lookup"><span data-stu-id="cd978-105">Get Started with LINQ</span></span>](how-do-i-get-started-with-linq.md)
+- [<span data-ttu-id="cd978-106">그룹 및 집계 쿼리 수행</span><span class="sxs-lookup"><span data-stu-id="cd978-106">Perform Group and Aggregate Queries</span></span>](how-do-i-perform-group-and-aggregate-queries.md)
+- [<span data-ttu-id="cd978-107">LINQ를 사용하도록 Visual Basic 프로젝트 업그레이드</span><span class="sxs-lookup"><span data-stu-id="cd978-107">Upgrade Visual Basic Projects to Enable LINQ</span></span>](how-do-i-upgrade-visual-basic-projects-to-enable-linq.md)
+- [<span data-ttu-id="cd978-108">LINQ to XML 시작</span><span class="sxs-lookup"><span data-stu-id="cd978-108">Get Started with LINQ to XML</span></span>](how-do-i-get-started-with-linq-to-xml.md)
+- [<span data-ttu-id="cd978-109">XML IntelliSense 활성화 및 XML 네임스페이스 사용</span><span class="sxs-lookup"><span data-stu-id="cd978-109">Enable XML IntelliSense and Use XML Namespaces</span></span>](how-do-i-enable-xml-intellisense-and-use-xml-namespaces.md)
+- [<span data-ttu-id="cd978-110">SQL 데이터에서 XML 문서 만들기</span><span class="sxs-lookup"><span data-stu-id="cd978-110">Create XML Documents from SQL Data</span></span>](how-do-i-create-xml-documents-from-sql-data.md)
+- [<span data-ttu-id="cd978-111">LINQ to XML을 사용하여 Excel 스프레드시트 만들기</span><span class="sxs-lookup"><span data-stu-id="cd978-111">Create Excel Spreadsheets using LINQ to XML</span></span>](how-do-i-create-excel-spreadsheets-using-linq-to-xml.md)
