@@ -6,12 +6,12 @@ description: 목록 ASP.NET 응용 프로그램을 개발 하기 위한 단계�
 ms.assetid: fddf8e5e-c055-4f81-b691-78deef871112
 ms.author: riande
 ms.date: 09/20/2017
-ms.openlocfilehash: 240260a496ee797556ca5dbd2c8faec79d23ac64
-ms.sourcegitcommit: 2d53ed9e4c8b19d3526cbc689bfa8394c9449cec
+ms.openlocfilehash: 106b4b88d2e7de90900b7a73570ecd6140e2db66
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59905672"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113188"
 ---
 # <a name="aspnet-tutorials"></a>ASP.NET 자습서
 
@@ -81,7 +81,6 @@ ASP.NET 응용 프로그램을 개발 하기 위한 다음 단계별 가이드�
 * [Web API에서에서 HTML 양식 데이터 보내기: 양식 urlencoded 데이터](web-api/overview/advanced/sending-html-form-data-part-1.md)
 * [Web API에서에서 HTML 양식 데이터 보내기: 파일 업로드 및 다중 파트 MIME](web-api/overview/advanced/sending-html-form-data-part-2.md)
 
-
 ## <a name="web-pages"></a>Web Pages
 
 * [Visual Studio에서 ASP.NET 웹 페이지 프로그래밍](web-pages/overview/getting-started/program-asp-net-web-pages-in-visual-studio.md)
@@ -111,7 +110,6 @@ ASP.NET 응용 프로그램을 개발 하기 위한 다음 단계별 가이드�
 * [트래픽 분석](web-pages/overview/performance-and-traffic/14-analyzing-traffic.md)
 * [ASP.NET 웹 페이지(Razor) 사이트에서 자산 묶음 및 축소](web-pages/overview/performance-and-traffic/bundling-and-minifying-assets-in-an-aspnet-web-pages-razor-site.md)
 
-
 ## <a name="aspnet-signalr"></a>ASP.NET SignalR
 
 * [자습서: SignalR 2 시작](signalr/overview/getting-started/tutorial-getting-started-with-signalr.md)
@@ -129,7 +127,6 @@ ASP.NET 응용 프로그램을 개발 하기 위한 다음 단계별 가이드�
 * [자습서: SignalR 자체 호스팅](signalr/overview/deployment/tutorial-signalr-self-host.md)
 * [Azure App Service에서 Web Apps에 SignalR 사용](signalr/overview/deployment/using-signalr-with-azure-web-sites.md)
 
-
 ## <a name="aspnet-identity"></a>ASP.NET ID
 
 * [비어 있는 또는 기존 Web Forms 프로젝트에 ASP.NET ID 추가](identity/overview/getting-started/adding-aspnet-identity-to-an-empty-or-existing-web-forms-project.md)
@@ -141,7 +138,6 @@ ASP.NET 응용 프로그램을 개발 하기 위한 다음 단계별 가이드�
 * [ASP.NET ID에서 사용자의 기본 키 변경](identity/overview/extensibility/change-primary-key-for-users-in-aspnet-identity.md)
 * [기존 웹 사이트를 SQL 멤버 자격에서 ASP.NET ID로 마이그레이션](identity/overview/migrations/migrating-an-existing-website-from-sql-membership-to-aspnet-identity.md)
 * [멤버 자격 및 사용자 프로필에 대한 범용 공급자를 ASP.NET ID로 마이그레이션(C#)](identity/overview/migrations/migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity.md)
-
 
 ## <a name="owin-and-katana"></a>OWIN 및 Katana
 

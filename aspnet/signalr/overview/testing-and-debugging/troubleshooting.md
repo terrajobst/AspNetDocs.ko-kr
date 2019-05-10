@@ -8,12 +8,12 @@ ms.date: 06/10/2014
 ms.assetid: 4b559e6c-4fb0-4a04-9812-45cf08ae5779
 msc.legacyurl: /signalr/overview/testing-and-debugging/troubleshooting
 msc.type: authoredcontent
-ms.openlocfilehash: 3e3ba353184f94621ffc0fb1c50647caf1a89514
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: bcd273d839aed64ad2712eb503dd1942a2d4e355
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402767"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113483"
 ---
 # <a name="signalr-troubleshooting"></a>SignalR 문제 해결
 
@@ -39,7 +39,6 @@ ms.locfileid: "59402767"
 > ## <a name="questions-and-comments"></a>질문이 나 의견이 있으면
 >
 > 이 자습서를 연결 하는 방법 및 새로운 개선할 수 있습니다 페이지의 맨 아래에 의견에서에 의견을 남겨 주세요. 에 자습서로 직접 관련 되지 않은 질문이 있을 경우 게시할 수 하는 [ASP.NET SignalR 포럼](https://forums.asp.net/1254.aspx/1?ASP+NET+SignalR) 또는 [StackOverflow.com](http://stackoverflow.com/)합니다.
-
 
 이 문서에는 다음과 같은 섹션이 있습니다.
 

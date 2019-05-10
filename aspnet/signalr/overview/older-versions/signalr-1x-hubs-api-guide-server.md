@@ -8,12 +8,12 @@ ms.date: 04/17/2013
 ms.assetid: 03e4b9f5-0fea-4d94-959f-014b2762a301
 msc.legacyurl: /signalr/overview/older-versions/signalr-1x-hubs-api-guide-server
 msc.type: authoredcontent
-ms.openlocfilehash: 7d75c832f704ea88d365f6a8b83c1c3a024b30ca
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: d9cd3fad36c0300d96c6dbdc61291ef119da2327
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59382253"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113041"
 ---
 # <a name="aspnet-signalr-hubs-api-guide---server-signalr-1x"></a>ASP.NET SignalR 허브 API 가이드-서버 (SignalR 1.x)
 
@@ -26,7 +26,6 @@ ms.locfileid: "59382253"
 > SignalR 허브 API를 사용 하면 클라이언트가 서버에 연결 된 클라이언트에는 서버에서 원격 프로시저 호출 (Rpc)을 만들 수 있습니다. 서버 코드에서 클라이언트에서 호출할 수 있는 메서드를 정의 하 고 클라이언트에서 실행 되는 메서드를 호출 합니다. 클라이언트 코드에서 서버에서 호출할 수 있는 메서드를 정의 하 고 서버에서 실행 되는 메서드를 호출 합니다. SignalR은 모든 클라이언트-서버 연결 구조를 처리합니다.
 > 
 > 또한 SignalR 영구 연결을 호출 하는 하위 수준 API를 제공 합니다. SignalR에서 허브 및 영구 연결에 대 한 소개, 전체 SignalR 응용 프로그램을 빌드하는 방법을 보여 주는 자습서에 대 한 참조 [SignalR-Getting Started](index.md)합니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -516,7 +515,6 @@ SignalR을 일반적으로 사용 하는 응용 프로그램 사용자 메시지
 
 > [!NOTE]
 > 지속 상태에 대 한이 메커니즘을 사용할 수 없습니다 많은 양의 데이터에 넣으면 모든 이후 합니다 `state` 또는 `Clients.Caller` 속성은 모든 메서드 호출을 사용 하 여 라운드트립 합니다. 사용자 이름이 나 카운터 같은 더 작은 항목에 대 한 두는 것이 유용합니다.
-
 
 <a id="handleErrors"></a>
 

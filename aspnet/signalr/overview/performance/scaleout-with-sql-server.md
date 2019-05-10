@@ -8,12 +8,12 @@ ms.date: 06/10/2014
 ms.assetid: 98358b6e-9139-4239-ba3a-2d7dd74dd664
 msc.legacyurl: /signalr/overview/performance/scaleout-with-sql-server
 msc.type: authoredcontent
-ms.openlocfilehash: c0c214ea32ad13b3a63be9ef84bcb4b8bc7311aa
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 709a9ebf8f3396842bee0d87e621c00ae1418ec1
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59393583"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113631"
 ---
 # <a name="signalr-scaleout-with-sql-server"></a>SQL Server로 SignalR 규모 확장
 
@@ -37,7 +37,6 @@ ms.locfileid: "59393583"
 > ## <a name="questions-and-comments"></a>질문이 나 의견이 있으면
 >
 > 이 자습서를 연결 하는 방법 및 새로운 개선할 수 있습니다 페이지의 맨 아래에 의견에서에 의견을 남겨 주세요. 에 자습서로 직접 관련 되지 않은 질문이 있을 경우 게시할 수 하는 [ASP.NET SignalR 포럼](https://forums.asp.net/1254.aspx/1?ASP+NET+SignalR) 또는 [StackOverflow.com](http://stackoverflow.com/)합니다.
-
 
 이 자습서에서는 SQL Server를 사용 하 여 메시지를 두 개의 별도 IIS 인스턴스에서 배포 되는 SignalR 응용 프로그램을 분산 하는 있습니다. 단일 테스트 컴퓨터에서이 자습서를 실행할 수도 있지만 모든 결과 얻으려면 두 개 이상의 서버에 SignalR 응용 프로그램을 배포 해야 합니다. 서버 중 하나에서 또는 별도 전용 서버에 SQL Server를 설치 해야 합니다. Azure에서 Vm을 사용 하는 자습서를 실행 하는 방법도 있습니다.
 
@@ -87,7 +86,6 @@ Service Broker를 사용 하도록 설정 하려면 다음 SQL 쿼리를 사용 
 
 > [!NOTE]
 > 교착 상태가 발생 했는지를이 쿼리가 나타납니다 경우 DB에 연결 하는 응용 프로그램이 없습니다.
-
 
 추적을 설정한 경우 추적 Service Broker 사용 되는지 여부를 표시도 됩니다.
 

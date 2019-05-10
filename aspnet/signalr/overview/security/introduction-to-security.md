@@ -8,12 +8,12 @@ ms.date: 06/10/2014
 ms.assetid: ed562717-8591-4936-8e10-c7e63dcb570a
 msc.legacyurl: /signalr/overview/security/introduction-to-security
 msc.type: authoredcontent
-ms.openlocfilehash: 6e96c9a086241b6f3fff40d4a5fb0a3636bfa4b7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 24ce20b45543468de28ad017ba62d2f6e5a00f3b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59387329"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113658"
 ---
 # <a name="introduction-to-signalr-security"></a>SignalR 보안 소개
 
@@ -39,7 +39,6 @@ ms.locfileid: "59387329"
 > ## <a name="questions-and-comments"></a>질문이 나 의견이 있으면
 >
 > 이 자습서를 연결 하는 방법 및 새로운 개선할 수 있습니다 페이지의 맨 아래에 의견에서에 의견을 남겨 주세요. 에 자습서로 직접 관련 되지 않은 질문이 있을 경우 게시할 수 하는 [ASP.NET SignalR 포럼](https://forums.asp.net/1254.aspx/1?ASP+NET+SignalR) 또는 [StackOverflow.com](http://stackoverflow.com/)합니다.
-
 
 ## <a name="overview"></a>개요
 

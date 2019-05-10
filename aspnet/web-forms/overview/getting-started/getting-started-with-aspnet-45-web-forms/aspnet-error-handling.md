@@ -8,12 +8,12 @@ ms.date: 09/08/2014
 ms.assetid: 423498f7-1a4b-44a1-b342-5f39d0bcf94f
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/aspnet-error-handling
 msc.type: authoredcontent
-ms.openlocfilehash: e4b8f059974dec33d6305e7b84919550713bf4e4
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3aff277a6e09504d9f7b610478c27af00c1d2d94
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59409891"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108520"
 ---
 # <a name="aspnet-error-handling"></a>ASP.NET 오류 처리
 
@@ -22,7 +22,6 @@ ms.locfileid: "59409891"
 [Wingtip Toys 샘플 프로젝트 (C#)를 다운로드](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 또는 [전자책 (PDF) 다운로드](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
 
 > 이 자습서 시리즈는 ASP.NET 4.5와 Microsoft Visual Studio Express 2013 for Web 사용 하 여 ASP.NET Web Forms 응용 프로그램을 빌드하는 기본 사항을 설명 합니다. Visual Studio 2013 [C# 소스 코드를 사용 하 여 프로젝트](https://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 이 자습서 시리즈를 함께 사용할 수 있습니다.
-
 
 이 자습서에서는 Wingtip Toys 샘플 응용 프로그램 오류 처리 및 오류 로그를 포함 하도록 수정 합니다. 오류 처리 응용 프로그램이 정상적으로 오류를 처리 하 고 오류 메시지를 적절 하 게 표시할 수 있습니다. 오류 로그를 사용 하면을 찾고 발생 한 오류를 해결할 수 있습니다. 이 자습서는 "URL 라우팅" 이전 자습서에서 작성 하 고 Wingtip Toys 자습서 시리즈의 일부입니다.
 

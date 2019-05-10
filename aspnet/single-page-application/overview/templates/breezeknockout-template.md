@@ -8,12 +8,12 @@ ms.date: 01/30/2013
 ms.assetid: 3bd94827-3c59-448f-abc3-36e6df4858db
 msc.legacyurl: /single-page-application/overview/templates/breezeknockout-template
 msc.type: authoredcontent
-ms.openlocfilehash: 482119a97f30e24472231897e8db31685c451a0f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 5bb9ee8f758a25afa6baf3ccbaf7d5864754c7df
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59400791"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113366"
 ---
 # <a name="breezeknockout-template"></a>Breeze/Knockout 템플릿
 
@@ -22,7 +22,6 @@ ms.locfileid: "59400791"
 > Breeze/Knockout MVC 템플릿 Ward 벨에 의해 작성 되었습니다.
 > 
 > [Breeze/Knockout MVC 템플릿 다운로드](https://go.microsoft.com/fwlink/?LinkId=282649)
-
 
 "단일 페이지 응용 프로그램" 보았다면 (SPA) 및 이것이 무엇 인지 궁금 합니다. 에 대 한 읽을 수 있습니다, 있지만 직접 대신 발생할는 있습니다. 하지만 시간 샘플을 다운로드 하려면? Visual Studio 있다면 예로 SPA 해야 하며 60 미만 실행 시간 (초) ASP.NET mvc 4 "Breeze/Knockout 단일 페이지 응용 프로그램" 템플릿을
 

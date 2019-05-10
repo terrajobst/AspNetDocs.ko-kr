@@ -8,12 +8,12 @@ ms.date: 12/01/2014
 ms.assetid: 61941e64-0c0d-4996-9270-cb8ccfd0cabc
 msc.legacyurl: /visual-studio/overview/2013/creating-web-projects-in-visual-studio
 msc.type: authoredcontent
-ms.openlocfilehash: a62c821159cd097507019d5efb29e01958ec9fba
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3a446be8e2dff2ac66e2432c51b2d9f43bcb817d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59398106"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113179"
 ---
 # <a name="creating-aspnet-web-projects-in-visual-studio-2013"></a>Visual Studio 2013에서 ASP.NET 웹 프로젝트 만들기
 
@@ -29,7 +29,6 @@ ms.locfileid: "59398106"
 > - 와 같은 MVC 용 으로만 제공 하는 데 사용 하는 Web Forms에 대 한 새로운 기능 [자동 테스트 프로젝트 만들기](#testproj) 와 [인트라넷 사이트 템플릿](#winauth)합니다.
 > 
 > Azure Cloud Services 또는 Azure Mobile Services에 대 한 웹 프로젝트를 만드는 방법에 대 한 자세한 내용은 [Azure Cloud Services 및 ASP.NET 시작](https://azure.microsoft.com/documentation/articles/cloud-services-dotnet-get-started/) 고 [Azure Mobile Services.NET을 사용 하 여 Leaderboard 앱 만들기 백 엔드](https://azure.microsoft.com/documentation/articles/mobile-services-dotnet-backend-windows-store-dotnet-leaderboard/)합니다.
-
 
 <a id="prerequisites"></a>
 ## <a name="prerequisites"></a>전제 조건
@@ -350,7 +349,6 @@ Azure AD 옵션 중 하나를 시도 하 긴 하지만 아직 계정이 없는 �
 > Azure AD 옵션 중 하나를 선택 하면 프로젝트에 필요한 데이터베이스 및 Azure AD 테 넌 트에 대 한 전역 관리자 계정에 로그인 해야 합니다. 조직 계정에 대 한 이름 및 암호를 입력 (예를 들어 admin@contoso.onmicrosoft.com) Azure AD 테 넌 트에 대 한 관리 권한이 있는 합니다.
 > 
 > **Microsoft 계정 자격 증명을 입력 하지 마세요 (예를 들어 contoso@hotmail.com) 로그인 대화 상자에서.**
-
 
 <a id="orgauthsingle"></a>
 ### <a name="cloud---single-organization-authentication"></a>클라우드-단일 조직 인증

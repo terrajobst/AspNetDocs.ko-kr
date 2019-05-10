@@ -8,12 +8,12 @@ ms.date: 09/13/2006
 ms.assetid: 83e3d759-82b8-41e6-8d62-f0f4b3edec41
 msc.legacyurl: /web-forms/overview/data-access/displaying-data-with-the-datalist-and-repeater/formatting-the-datalist-and-repeater-based-upon-data-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 7ea11f436d8f0455621d22c4d5a5b4d6b6ece68f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 00ae512a23b9097d1077ae572b4e4377e322882f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59386426"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108413"
 ---
 # <a name="formatting-the-datalist-and-repeater-based-upon-data-c"></a>데이터를 기반으로 DataList 및 반복기 서식 지정(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59386426"
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_30_CS.exe) 또는 [PDF 다운로드](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/datatutorial30cs1.pdf)
 
 > 이 자습서에서는 서식을에서는 템플릿 내에서 서식 지정 함수를 사용 하 여 또는 데이터 바인딩된 이벤트를 처리 하면 DataList 및 반복기 컨트롤의 모양을 지정 방법의 예제를 단계별로 실행 했습니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -60,7 +59,6 @@ Repeater 컨트롤 데이터 바인딩, 동일한 일련의 단계를 진행 합
 > [!NOTE]
 > 예리한 독자 GridView 데이터에 바인딩될 때 DataList 및 반복기와 데이터에 바인딩되는 경우 지정 전까지 대기 하는 단계의 순서 간에 약간의 변칙을 알 수 있습니다. GridView 데이터 바인딩 프로세스 비상 끝날 때 발생 합니다 `DataBound` 이벤트 DataList 아니고 반복기 컨트롤에서 이러한 이벤트를 포함 하는 단, 합니다. DataList 및 반복기 컨트롤을 전처리 및 후 수준 이벤트 처리기 패턴 했습니다 보편화 전에 ASP.NET 1.x 기간에서 다시 만든 때문입니다.
 
-
 GridView를 사용 하 여 데이터를 기반으로 하는 서식 지정 하는 한 가지 옵션에 대 한 이벤트 처리기를 만들 때 처럼는 `ItemDataBound` 이벤트입니다. 이 이벤트 처리기는 바인딩할 바로 있었습니다 하는 데이터를 검사 합니다 `DataListItem` 또는 `RepeaterItem` 필요에 따라 컨트롤의 서식에 영향을 줍니다.
 
 DataList 컨트롤에 대 한 변경 내용 서식 지정에 사용 하 여 전체 항목을 구현할 수 있습니다 합니다 `DataListItem` 스타일 관련 속성을 표준을 포함 하는 `Font`를 `ForeColor`, `BackColor`, `CssClass`등입니다. DataList의 템플릿 내에서 특정 웹 컨트롤의 서식에 영향을 주는를 프로그래밍 방식으로 액세스 하 고 해당 웹 컨트롤의 스타일을 수정 해야 합니다. 이 다시 수행 하는 방법에 살펴보았습니다 합니다 *데이터를 기반으로 사용자 지정 서식 지정* 자습서입니다. Repeater 컨트롤을 같은 합니다 `RepeaterItem` 클래스 없는 스타일 관련 속성에는 모든 스타일 관련 변경 내용이 있으므로 `RepeaterItem` 에 `ItemDataBound` 이벤트 처리기를 프로그래밍 방식으로 액세스 하 고 내에서 웹 컨트롤을 업데이트 하 여 수행 해야 합니다 템플릿입니다.
@@ -73,11 +71,9 @@ DataList 컨트롤에 대 한 변경 내용 서식 지정에 사용 하 여 전�
 
 DataList 및 ObjectDataSource 기능을 복제 한 후 `Basics.aspx` 에 `Formatting.aspx`, s DataList를 변경 하려면 잠시 `ID` 속성을 `DataList1` 하는 보다 자세한 `ItemDataBoundFormattingExample`합니다. 다음으로, 브라우저에서 DataList를 봅니다. 그림 1에서 알 수 있듯이, 서식 지정 각 제품 간의 점만 배경색 교대로 나타납니다.
 
-
 [![제품은 DataList 컨트롤에 나열 됩니다.](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image2.png)](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image1.png)
 
 **그림 1**: 제품 DataList 컨트롤에 나열 됩니다 ([클릭 하 여 큰 이미지 보기](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image3.png))
-
 
 이 자습서에서는 s $20.00 보다 낮은 가격으로 모든 제품에는 해당 이름을 모두 있고 단위 가격 노란색으로 강조 표시 되도록 DataList 서식을 지정 하도록 합니다.
 
@@ -86,7 +82,6 @@ DataList 및 ObjectDataSource 기능을 복제 한 후 `Basics.aspx` 에 `Format
 $20.00는 아래 가격을 사용 하 여 해당 제품에만 적용 되는 사용자 지정 서식이에서는 각 제품의 가격을 결정할 수 있어야 합니다. DataList에 데이터 바인딩할 경우 DataList 열거 데이터 원본에서 레코드를 만들고, 각 레코드에 대 한는 `DataListItem` 인스턴스를 바인딩 데이터 소스 레코드는 `DataListItem`합니다. 특정 레코드 s 후 데이터에 바인딩된 현재 `DataListItem` DataList의 개체 `ItemDataBound` 이벤트가 발생 합니다. 현재 데이터 값을 검사 하려면이 이벤트에 대 한 이벤트 처리기를 만들 수 있습니다 `DataListItem` 및 해당 값을 기준으로 서식 지정 필요한 경우 변경 합니다.
 
 만들기는 `ItemDataBound` DataList에 대 한 이벤트 다음 코드를 추가 합니다.
-
 
 [!code-csharp[Main](formatting-the-datalist-and-repeater-based-upon-data-cs/samples/sample1.cs)]
 
@@ -111,28 +106,22 @@ S 제품 가격 20.00 달러 임을 알고 있으므로에 이름과 가격을 �
 
 서식 지정을 적용 하려면 두 Label 웹 컨트롤을 설정 하기만 `CssClass` 속성을 `AffordablePriceEmphasis`다음 코드 에서처럼:
 
-
 [!code-csharp[Main](formatting-the-datalist-and-repeater-based-upon-data-cs/samples/sample2.cs)]
 
 사용 하 여 합니다 `ItemDataBound` 다시 확인을 완료 하는 이벤트 처리기는 `Formatting.aspx` 브라우저에서 페이지입니다. 그림 2에서 알 수 있듯이, 해당 이름 및 강조 표시 된 가격은 $20.00 아래 가격을 사용 하 여 해당 제품에 있습니다.
-
 
 [![이러한 제품 보다 $20.00 강조 표시 됩니다.](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image5.png)](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image4.png)
 
 **그림 2**: 이러한 제품 보다 $20.00 강조 표시 됩니다 ([클릭 하 여 큰 이미지 보기](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image6.png))
 
-
 > [!NOTE]
 > DataList를 HTML로 렌더링 됩니다 때문 `<table>`, 해당 `DataListItem` 인스턴스 전체 항목을 특정 스타일을 적용 하려면 설정할 수 있는 스타일 관련 속성을 가집니다. 예를 들어 드리고자 합니다 *전체* 가격은 20.00 달러를 때 노란색 항목, 수로 교체 했습니다 레이블을 참조 하는 코드를 설정 및 해당 `CssClass` 코드의 다음 줄을 사용 하 여 속성: `e.Item.CssClass = "AffordablePriceEmphasis"` (그림 3 참조).
 
-
 그러나 `RepeaterItem` don t Repeater 컨트롤을 구성 하는 이러한 수준의 스타일 속성을 제공 합니다. 따라서 반복기에는 사용자 지정 서식을 적용 그림 2에서 수행한 것 처럼 반복기의 템플릿 내에서 웹 컨트롤에 스타일 속성의 응용 프로그램이 필요 합니다.
-
 
 [![전체 제품 항목이 $20.00 아래에서 제품에 대 한 강조 표시](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image8.png)](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image7.png)
 
 **그림 3**: $20.00 아래에서 제품에 대 한 전체 제품 항목 강조 표시 됩니다 ([클릭 하 여 큰 이미지 보기](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image9.png))
-
 
 ## <a name="using-formatting-functions-from-within-the-template"></a>템플릿 내에서 서식 지정 함수를 사용 하 여
 
@@ -140,23 +129,19 @@ S 제품 가격 20.00 달러 임을 알고 있으므로에 이름과 가격을 �
 
 서식 지정 함수를 보여 주기 위해 s 수 있는 경우 제품의 이름 옆에 있는 [지원 되지 않는] 텍스트를 포함 하는 제품 정보를 해당 s 중단 합니다. 또한 let s가 가격 강조 표시 된 노란색 경우 해당 $20.00 보다 작거나 (에서 수행한 것 처럼는 `ItemDataBound` 이벤트 처리기 예제) 가격은 $20.00 또는 더 높은, s에 실제 가격을 표시 하지 이지만 가격 견적에 대 한 텍스트 하세요를 호출 하는 대신 하는 경우. 그림 4에 적용 되는 이러한 서식 지정 규칙을 사용 하 여 나열 하는 제품의 스크린 샷을 보여 줍니다.
 
-
 [![비용이 많이 드는 제품에 대 한 가격을 가격 견적에 대 한 호출 하십시오 텍스트로 바뀝니다.](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image11.png)](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image10.png)
 
 **그림 4**: 비용이 많이 드는 제품에 대 한 가격을 가격 견적에 대 한 호출 하십시오 텍스트로 바뀝니다 ([클릭 하 여 큰 이미지 보기](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image12.png))
 
-
 ## <a name="step-1-create-the-formatting-functions"></a>1단계: 서식 지정 함수 만들기
 
 이 예제에서는 두 가지 서식 지정, 필요한 경우 [DISCONTINUED], 텍스트와 함께 제품 이름을 표시 하는 함수와 다른 해야 하는 경우 강조 표시 된 가격을 표시 하는 대 한이 s 보다 작은지 $20.00, 또는 텍스트가 고 그렇지 가격 견적에 대 한 호출 하세요. ASP.NET 페이지가 코드 숨김 클래스에서 이러한 함수를 만들고 이름을 s `DisplayProductNameAndDiscontinuedStatus` 고 `DisplayPrice`입니다. 두 메서드를 문자열로 렌더링 하는 HTML을 반환 해야 하며 둘 다 표시 해야 `Protected` (또는 `Public`) 하려면 ASP.NET 페이지 s 선언적 구문 부분에서 호출할 수 있습니다. 이러한 두 가지 방법에 대 한 코드는 다음과 같습니다.
-
 
 [!code-csharp[Main](formatting-the-datalist-and-repeater-based-upon-data-cs/samples/sample3.cs)]
 
 `DisplayProductNameAndDiscontinuedStatus` 의 값을 허용 하는 메서드를 `productName` 및 `discontinued` 반면 스칼라 값으로 데이터 필드를 `DisplayPrice` 메서드에서 `ProductsRow` 인스턴스 (아닌 `unitPrice` 스칼라 값). 어느 방법이 든 작동 합니다. 그러나 데이터베이스를 포함할 수 있는 스칼라 값을 사용 하 여 서식 지정 함수가 작동 하는지 `NULL` 값 (같은 `UnitPrice`; 모두 `ProductName` 나 `Discontinued` 허용 `NULL` 값), 특별 한 주의 해야 이러한 처리 스칼라 입력 합니다.
 
 특히 입력된 매개 변수 형식 이어야 합니다 `Object` 들어오는 값이 될 수는 `DBNull` 예상된 데이터 형식 대신 인스턴스. 들어오는 값 데이터베이스 인지 여부를 결정 하는 검사가 해야 수행 하는 또한 `NULL` 값입니다. 즉, 원하는 경우는 `DisplayPrice` d에서는 스칼라 값으로 가격을 적용할 메서드를 다음 코드를 사용 해야 합니다.:
-
 
 [!code-csharp[Main](formatting-the-datalist-and-repeater-based-upon-data-cs/samples/sample4.cs)]
 
@@ -166,26 +151,21 @@ S 제품 가격 20.00 달러 임을 알고 있으므로에 이름과 가격을 �
 
 ASP.NET 페이지가 코드 숨김 클래스에 추가 하는 서식 지정 함수를 사용 하 여에 이러한 서식 s DataList에서 함수를 호출 하 `ItemTemplate`합니다. 템플릿에서 서식 지정 함수를 호출 하려면 데이터 바인딩 구문 내에서 함수 호출을 배치:
 
-
 [!code-aspx[Main](formatting-the-datalist-and-repeater-based-upon-data-cs/samples/sample5.aspx)]
 
 DataList s에서에서 `ItemTemplate` 는 `ProductNameLabel` Label 웹 컨트롤 현재 이름을 표시 하는 제품 s 할당 하 여 해당 `Text` 결과 속성의 `<%# Eval("ProductName") %>`합니다. 가 필요한 경우 이름과 [DISCONTINUED], 텍스트를 표시 하기 위해 선언적 구문 대신 할당 되도록 업데이트 합니다 `Text` 속성 값의는 `DisplayProductNameAndDiscontinuedStatus` 메서드. S 제품 이름 및 사용 하 여 지원 되지 않는 값의 전달 해야이 작업을 수행 하는 경우는 `Eval("columnName")` 구문입니다. `Eval` 형식의 값을 반환 `Object`, 하지만 `DisplayProductNameAndDiscontinuedStatus` 메서드에서 입력된 매개 변수 형식의 예상 `String` 및 `Boolean`이므로 반환 하는 값을 캐스팅 해야 했습니다는 `Eval` 같이 필요한 입력된 매개 변수 형식에 메서드:
-
 
 [!code-aspx[Main](formatting-the-datalist-and-repeater-based-upon-data-cs/samples/sample6.aspx)]
 
 가격을 표시 하려면 설정 하기만 했습니다 합니다 `UnitPriceLabel` 레이블 s `Text` 속성에서 반환 된 값을는 `DisplayPrice` 메서드를 수행한 s 제품 이름을 표시 하 고 [중단] 텍스트 처럼 합니다. 그러나에 전달 하는 대신에 합니다 `UnitPrice` 스칼라 입력된 매개 변수로 대신 전달 된 전체 `ProductsRow` 인스턴스:
 
-
 [!code-aspx[Main](formatting-the-datalist-and-repeater-based-upon-data-cs/samples/sample7.aspx)]
 
 곳의 서식 지정 함수에 대 한 호출을 사용 하 여 시간을 내어 브라우저에서 진행 상황을 보고 합니다. [지원 되지 않는] 텍스트를 포함 하 여 지원 되지 않는 제품을 사용 하 여 그림 5와 유사한 화면이 표시 됩니다 및 해당 제품 가격을 가진 $20.00 개 비용으로 대체 텍스트 하세요 가격 견적에 대 한 호출 합니다.
 
-
 [![비용이 많이 드는 제품에 대 한 가격을 가격 견적에 대 한 호출 하십시오 텍스트로 바뀝니다.](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image14.png)](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image13.png)
 
 **그림 5**: 비용이 많이 드는 제품에 대 한 가격을 가격 견적에 대 한 호출 하십시오 텍스트로 바뀝니다 ([클릭 하 여 큰 이미지 보기](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image15.png))
-
 
 ## <a name="summary"></a>요약
 

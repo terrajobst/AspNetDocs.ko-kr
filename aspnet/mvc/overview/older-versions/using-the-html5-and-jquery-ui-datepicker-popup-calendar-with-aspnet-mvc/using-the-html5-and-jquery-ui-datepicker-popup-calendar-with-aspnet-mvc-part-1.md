@@ -8,19 +8,18 @@ ms.date: 08/29/2011
 ms.assetid: c23d27f7-b0cf-44f2-8445-fb69e045c674
 msc.legacyurl: /mvc/overview/older-versions/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-1
 msc.type: authoredcontent
-ms.openlocfilehash: 31a01f250e4f5473e954f040e1a506dbaf61be76
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 6e7d31d96a36b55e2e1a9a475e2d90526cc6a5b2
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59393591"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112405"
 ---
 # <a name="using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc---part-1"></a>ASP.NET MVC-파트 1에서 HTML5 및 jQuery UI Datepicker 팝업 일정 사용
 
 [Rick Anderson]((https://twitter.com/RickAndMSFT))
 
 > 이 자습서는 편집기 템플릿, 표시 템플릿 및 ASP.NET MVC 웹 응용 프로그램에서 jQuery UI datepicker 팝업 일정을 사용 하는 방법의 기본 사항을 설명 합니다.
-
 
 이 자습서는 편집기 템플릿, 표시 템플릿 및 jQuery를 사용 하는 방법의 기본 사항을 설명 [UI datepicker 팝업 일정](http://plugins.jquery.com/project/datepicker) ASP.NET MVC 웹 응용 프로그램에서 합니다. 이 자습서에서는 Microsoft Visual Web Developer 2010 Express 서비스 팩 1을 사용할 수 있습니다 (&quot;Visual Web Developer&quot;), Microsoft Visual Studio의 무료 버전 또는 이미 있는 경우에 Visual Studio 2010 SP1을 사용할 수 있습니다.
 

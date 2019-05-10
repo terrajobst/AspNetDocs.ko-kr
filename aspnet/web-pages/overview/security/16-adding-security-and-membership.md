@@ -8,12 +8,12 @@ ms.date: 02/24/2014
 ms.assetid: 7a77c2c0-deea-4290-a9c3-97958891758e
 msc.legacyurl: /web-pages/overview/security/16-adding-security-and-membership
 msc.type: authoredcontent
-ms.openlocfilehash: 1291417755e3fa4fb030bc6ba3089c38c4719c71
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 0be3e767a42939a3c343f6d4a730eb1d9a6b367c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389667"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112372"
 ---
 # <a name="adding-security-and-membership-to-an-aspnet-web-pages-razor-site"></a>ASP.NET 웹 페이지 (Razor) 사이트에 보안 및 멤버 자격 추가
 
@@ -42,7 +42,6 @@ ms.locfileid: "59389667"
 > - ASP.NET Web Pages (Razor) 2
 > - WebMatrix 3
 > - ASP.NET Web Helpers Library
-
 
 사용자가 로그인 할 수 있도록 웹 사이트를 설정할 수 있습니다 &#8212; 즉, 사이트 지원 되도록 *멤버 자격*합니다. 이 유용할 수 있습니다 여러 가지 이유로 합니다. 예를 들어 사이트에는 멤버에만 사용할 수 있는 페이지가 있을 수 있습니다. 경우에 따라 사용자가 의견을 남기 피드백을 보낼 수 하기 위해 로그인 할 필요할 수 있습니다.
 

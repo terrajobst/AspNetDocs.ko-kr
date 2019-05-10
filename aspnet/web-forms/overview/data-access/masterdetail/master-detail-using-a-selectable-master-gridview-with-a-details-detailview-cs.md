@@ -8,12 +8,12 @@ ms.date: 03/31/2010
 ms.assetid: 0f982827-f8f9-420d-b36b-57b23f5aa519
 msc.legacyurl: /web-forms/overview/data-access/masterdetail/master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 13538e5e2f60745d338b87ba4ea08c21ae997424
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 6c6c4d6176dc87007346791dcf665e5288e4d6cc
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59409124"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108254"
 ---
 # <a name="masterdetail-using-a-selectable-master-gridview-with-a-details-detailview-c"></a>세부 정보 DetailView와 함께 선택 가능한 마스터 GridView를 사용하는 마스터/세부 정보(C#)
 
@@ -23,16 +23,13 @@ ms.locfileid: "59409124"
 
 > 이 자습서는 GridView 행이 있는 이름과 선택 단추와 함께 각 제품의 가격을 포함 해야 합니다. 특정 제품의 선택 단추를 클릭 하면 전체 세부 정보를 동일한 페이지의 DetailsView 컨트롤에 표시 합니다.
 
-
 ## <a name="introduction"></a>소개
 
 에 [이전 자습서](master-detail-filtering-across-two-pages-cs.md) 두 개의 웹 페이지를 사용 하 여 마스터/세부 정보 보고서를 만드는 방법에 살펴보았습니다:에서는 suppliers; 목록을 표시 하는 "마스터" 웹 페이지 및 선택한 제공한 이러한 제품을 나열 하는 "세부 정보" 웹 페이지 공급 업체입니다. 한 페이지에이 두 페이지 보고서 형식을 요약할 수 있습니다. 이 자습서는 GridView 행이 있는 이름과 선택 단추와 함께 각 제품의 가격을 포함 해야 합니다. 특정 제품의 선택 단추를 클릭 하면 전체 세부 정보를 동일한 페이지의 DetailsView 컨트롤에 표시 합니다.
 
-
 [![선택 단추를 클릭 하면 제품의 세부 정보가 표시 됩니다.](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image2.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image1.png)
 
 **그림 1**: 선택 단추를 클릭 하면 제품의 세부 정보가 표시 됩니다. ([클릭 하 여 큰 이미지 보기](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image3.png))
-
 
 ## <a name="step-1-creating-a-selectable-gridview"></a>1단계: 선택 가능한 GridView를 만들기
 
@@ -40,45 +37,35 @@ ms.locfileid: "59409124"
 
 GridView 컨트롤을 추가 하 여 시작 합니다 `DetailsBySelecting.aspx` 페이지에 `Filtering` 폴더를 설정 해당 `ID` 속성을 `ProductsGrid`입니다. 라는 새 ObjectDataSource를 다음으로, 추가 `AllProductsDataSource` 를 호출 하는 `ProductsBLL` 클래스의 `GetProducts()` 메서드.
 
-
 [![AllProductsDataSource 라는 ObjectDataSource 만들기](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image5.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image4.png)
 
 **그림 2**: 명명 된 ObjectDataSource 만들려면 `AllProductsDataSource` ([큰 이미지를 보려면 클릭](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image6.png))
-
 
 [![ProductsBLL 클래스 사용](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image8.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image7.png)
 
 **그림 3**: 사용 된 `ProductsBLL` 클래스 ([큰 이미지를 보려면 클릭](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image9.png))
 
-
 [![GetProducts() 메서드를 호출 하는 ObjectDataSource 구성](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image11.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image10.png)
 
 **그림 4**: Invoke ObjectDataSource를 구성 합니다 `GetProducts()` 메서드 ([큰 이미지를 보려면 클릭](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image12.png))
 
-
 제거 하는 GridView의 필드를 편집을 제외한 모든 `ProductName` 및 `UnitPrice` BoundFields 합니다. 또한 형식 지정과 같은 필요에 따라 이러한 BoundFields에 맞게 자유롭게 합니다 `UnitPrice` 통화로 BoundField 및 변경를 `HeaderText` 는 BoundFields의 속성입니다. GridView의 스마트 태그에서 열 편집 링크를 클릭 하 여 또는 선언적 구문을 수동으로 구성 하 여 이러한 단계를 그래픽으로 수행할 수 있습니다.
-
 
 [![ProductName 및 UnitPrice BoundFields 남기고 모두 제거](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image14.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image13.png)
 
 **그림 5**: 모두 제거 되지만 `ProductName` 하 고 `UnitPrice` BoundFields ([클릭 하 여 큰 이미지 보기](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image15.png))
 
-
 GridView에 대 한 최종 태그 다음과 같습니다.
-
 
 [!code-aspx[Main](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/samples/sample1.aspx)]
 
 다음으로, 각 행에 선택 단추를 추가 하는 GridView를 선택할 수 있는 것으로 표시 해야 합니다. 이렇게 하려면 단순히 GridView의 스마트 태그를 사용 하도록 설정 선택 확인란을 확인 합니다.
 
-
 [![GridView의 행을 선택할 수 있는 확인](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image17.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image16.png)
 
 **그림 6**: GridView의 행 선택 가능한 확인 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image18.png))
 
-
 CommandField 추가 설정 선택 옵션을 선택 합니다 `ProductsGrid` GridView를 사용 하 여 해당 `ShowSelectButton` 속성이 True로 설정 합니다. 이 인해 선택 단추의 GridView의 각 행에 대 한 그림 6에서 볼 수 있듯이 합니다. 기본적으로 선택 단추는 Linkbutton을으로 렌더링 됩니다 있지만 단추나 ImageButtons CommandField의를 통해 대신 사용할 수 있습니다 `ButtonType` 속성입니다.
-
 
 [!code-aspx[Main](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/samples/sample2.aspx)]
 
@@ -90,11 +77,9 @@ CommandField 추가 설정 선택 옵션을 선택 합니다 `ProductsGrid` Grid
 
 브라우저를 통해 지금까지 진행 상황을 확인해 보겠습니다. GridView 이름 및 모든 선택 LinkButton 함께 제품에 대 한 가격을 나열 하는 참고 합니다. 포스트백을 발생 시키는 선택 단추를 클릭 합니다. 2 단계에서에서 선택한 제품에 대 한 세부 정보를 표시 하 여이 포스트백을 DetailsView 대응 하는 방법을 살펴보겠습니다.
 
-
 [![각 제품 행 선택 LinkButton 포함](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image20.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image19.png)
 
 **그림 7**: 각 제품 행을 선택 하는 LinkButton 포함 되어 있습니다 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image21.png))
-
 
 ### <a name="highlighting-the-selected-row"></a>선택한 행을 강조 표시
 
@@ -102,52 +87,41 @@ CommandField 추가 설정 선택 옵션을 선택 합니다 `ProductsGrid` Grid
 
 이전 자습서에서와 마찬가지로 CSS 클래스로 정의 미학 관련 설정을 유지 하려면 노력 하겠습니다. 따라서 새 CSS 클래스를 만듭니다 `Styles.css` 라는 `SelectedRowStyle`합니다.
 
-
 [!code-css[Main](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/samples/sample3.css)]
 
 이 CSS 클래스를 적용 하는 `SelectedRowStyle` 의 속성 *모든* 자습서 시리즈에서 Gridview 편집를 `GridView.skin` 에서 스킨를 `DataWebControls` 포함 하는 테마를 `SelectedRowStyle` 설정을 아래와 같이:
-
 
 [!code-aspx[Main](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/samples/sample4.aspx)]
 
 이 또한을 사용 하 여 선택한 GridView 행 배경색을 노란색으로 강조 이제 표시 됩니다.
 
-
 [![GridView의 SelectedRowStyle 속성을 사용 하 여 선택된 된 행의 모양을 사용자 지정](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image23.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image22.png)
 
 **그림 8**: 사용자 지정 선택한 행의 모양을 사용 하는 GridView `SelectedRowStyle` 속성 ([큰 이미지를 보려면 클릭](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image24.png))
-
 
 ## <a name="step-2-displaying-the-selected-products-details-in-a-detailsview"></a>2단계: DetailsView에서 선택한 제품의 세부 정보를 표시합니다.
 
 사용 하 여는 `ProductsGrid` 선택한 특정 제품에 대 한 정보를 표시 하는 DetailsView를 추가 하려면 유지 된 모든 GridView 완료 합니다. GridView 위에 DetailsView 컨트롤을 추가 라는 새로운 ObjectDataSource는 만들고 `ProductDetailsDataSource`합니다. 선택한 제품에 대 한 특정 정보를 표시 하려면이 DetailsView를 것 이므로 구성 합니다 `ProductDetailsDataSource` 사용 하는 `ProductsBLL` 클래스의 `GetProductByProductID(productID)` 메서드.
 
-
 [![ProductsBLL 클래스의 GetProductByProductID(productID) 메서드를 호출 합니다.](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image26.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image25.png)
 
 **그림 9**: 호출 된 `ProductsBLL` 클래스의 `GetProductByProductID(productID)` 메서드 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image27.png))
 
-
 있어야 합니다 *`productID`* GridView 컨트롤에서 얻은 매개 변수의 값 `SelectedValue` 속성입니다. GridView의 앞에서 설명한 대로 `SelectedValue` 속성 첫 번째 데이터 키 선택한 행의 값을 반환 합니다. 따라서 반드시는 GridView의 `DataKeyNames` 속성이 `ProductID`되도록 선택한 행의 `ProductID` 반환한 값 `SelectedValue`합니다.
-
 
 [![GridView의 SelectedValue 속성에는 productID 매개 변수 설정](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image29.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image28.png)
 
 **그림 10**: 설정 된 *`productID`* GridView의 매개 변수 `SelectedValue` 속성 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image30.png))
 
-
 한 번의 `productDetailsDataSource` ObjectDataSource 올바르게 구성 되었으며 DetailsView에 바인딩된,이 자습서를 완료! 해당 페이지를 처음으로 방문 하는 경우 행을 선택 하면 하므로 GridView의 `SelectedValue` 속성이 반환 `null`합니다. 사용 하 여 제품이 있으므로 `NULL` `ProductID` 값으로 반환 된 레코드가 없을 `GetProductByProductID(productID)` 메서드입니다. DetailsView 표시 되지 않으면 즉, (그림 11 참조). GridView 행의 선택 단추를 클릭 하면 포스트백 근거가 및 DetailsView 새로 고쳐집니다. GridView의 이번 `SelectedValue` 속성에서 반환 합니다 `ProductID` 선택한 행의는 `GetProductByProductID(productID)` 메서드가 반환 되는 `ProductsDataTable` 해당 특정 제품 및 DetailsView에 대 한 정보를 사용 하 여 이러한 세부 정보를 보여 줍니다. (그림 12 참조).
-
 
 [![첫 번째 방문 GridView만 표시 되 면](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image32.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image31.png)
 
 **그림 11**: 먼저 방문 GridView만 표시 됩니다 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image33.png))
 
-
 [![행을 선택 하면 제품의 세부 정보가 표시 됩니다.](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image35.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image34.png)
 
 **그림 12**: 행을 선택 하면 제품의 세부 정보가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs/_static/image36.png))
-
 
 ## <a name="summary"></a>요약
 

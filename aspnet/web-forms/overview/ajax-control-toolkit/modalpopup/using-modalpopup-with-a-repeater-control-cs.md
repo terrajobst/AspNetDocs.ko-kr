@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: d686d84a-1c58-492e-8a77-3eb5a0cfe918
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/modalpopup/using-modalpopup-with-a-repeater-control-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 91758b7c329b78bcb3a3ab301650d6da6164d1a3
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f6d17fb9c09a9b0a7dda7335491c10e136a91170
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59411191"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65115392"
 ---
 # <a name="using-modalpopup-with-a-repeater-control-c"></a>반복기 컨트롤에 ModalPopup사용(C#)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/2/4/0/24052038-f942-4336-905b-b60ae56f0dd5/ModalPopup2.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/modalpopup2CS.pdf)
 
 > AJAX Control Toolkit의 ModalPopup 컨트롤 클라이언트 쪽 의미를 사용 하 여 모달 팝업을 만드는 간단한 방법을 제공 합니다. Repeater 내에서이 컨트롤을 사용 하는 것도 가능 합니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -47,7 +46,6 @@ AJAX Control Toolkit의 ModalPopup 컨트롤 클라이언트 쪽 의미를 사�
 [!code-aspx[Main](using-modalpopup-with-a-repeater-control-cs/samples/sample4.aspx)]
 
 그런 다음 데이터 원본에 있는 모든 항목은 모달 팝업을 트리거하는 옆에 있는 단추를 사용 하 여 표시 됩니다.
-
 
 [![모든 데이터 원본 항목에 대 한 모달 팝업을 트리거할 수 있습니다.](using-modalpopup-with-a-repeater-control-cs/_static/image2.png)](using-modalpopup-with-a-repeater-control-cs/_static/image1.png)
 

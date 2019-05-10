@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: a7fe5de5-a964-4780-ae5e-70821dfb50a0
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/changing-an-animation-using-client-side-code-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 4254b7e1f2086a9cc5fbc1e8c2a4f7e2e3d2925e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 476b807ca48744648b6e2435af6db7b343c0f854
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59416573"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108775"
 ---
 # <a name="changing-an-animation-using-client-side-code-vb"></a>클라이언트 쪽 코드를 사용하여 애니메이션 변경(VB)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation11.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation11VB.pdf)
 
 > ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이지만 컨트롤에 애니메이션을 추가 하는 전체 프레임 워크 아닙니다. 애니메이션은 사용자 지정 클라이언트 쪽 JavaScript 코드를 사용 하 여 변경할 수 있습니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -69,7 +68,6 @@ JSON 문자열은 다음과 같습니다 (구분 따옴표 없이 원활 하 게
 다음 JavaScript 코드를이 JSON descripting 할당 된 `OnClick` 현재 extender의 애니메이션 실행:
 
 [!code-html[Main](changing-an-animation-using-client-side-code-vb/samples/sample7.html)]
-
 
 [![마우스 클릭 하지 않고 (및 거의 태그를 사용 하 여)이 애니메이션은 즉시 실행](changing-an-animation-using-client-side-code-vb/_static/image2.png)](changing-an-animation-using-client-side-code-vb/_static/image1.png)
 

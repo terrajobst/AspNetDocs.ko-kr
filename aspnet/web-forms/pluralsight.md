@@ -8,12 +8,12 @@ ms.date: 12/16/2011
 ms.assetid: c71bb9b2-7136-4ce6-a40a-cc4d9978cfb7
 msc.legacyurl: /web-forms/pluralsight
 msc.type: content
-ms.openlocfilehash: ae41660d96260991defc23c75d2dda5b9183585e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 57885b3b05b3107bbd678791d38e7166a727e5de
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59400284"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113105"
 ---
 # <a name="web-forms-video-training-from-pluralsight"></a>Pluralsight의 Web Forms 비디오 교육
 
@@ -29,11 +29,9 @@ ms.locfileid: "59400284"
 - [ASP.NET Dynamic Data를 사용 하 여](https://pluralsight.com/training/Player?author=dan-wahlin&name=webforms-08&mode=live&clip=0&course=aspdotnet-webforms4-intro)
 - [웹 배포](https://pluralsight.com/training/Player?author=fritz-onion&name=webforms-09&mode=live&clip=0&course=aspdotnet-webforms4-intro)
 
-
 "Pluralsight에 대 한 Dan Wahlin 기록한이 과정에서는 ASP.NET Web Forms에 대 한 훌륭한 소개를가 하는 데 사용 합니다. .NET Framework 소개로 시작 하 설치 하 고 Visual Studio를 사용 하는 방법으로 계속 진행 됩니다 (서버 컨트롤, 데이터 액세스 및 Ajax 포함), 응용 프로그램을 빌드하는 방법을 안내 하며 배포 기술을 사용 하 여 완료 하는 그의 철저 한 검사. Dan의 진정한 ASP.NET 전문가 및 유용한 프레 젠 터에 있으므로이 무료 과정을 놓치지 마세요! "
 
 Scott Hanselman, 수석 프로그램 관리자, 웹 플랫폼 및 Microsoft Azure 도구
-
 
 ![pluralsight-logo-playbutton](pluralsight/_static/image1.png)
 

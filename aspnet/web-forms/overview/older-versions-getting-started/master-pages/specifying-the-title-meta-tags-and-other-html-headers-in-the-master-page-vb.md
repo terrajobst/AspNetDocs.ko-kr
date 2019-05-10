@@ -8,12 +8,12 @@ ms.date: 05/21/2008
 ms.assetid: ea8196f5-039d-43ec-8447-8997ad4d3900
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 6e86626c2949543c0a36a210d52ee8297156a017
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: fd4e628e15fa95531175c83fdf5853a5d671e705
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59382175"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65116297"
 ---
 # <a name="specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb"></a>마스터 페이지에서 제목, 메타 태그 및 기타 HTML 헤더 지정(VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59382175"
 [코드를 다운로드](http://download.microsoft.com/download/e/e/f/eef369f5-743a-4a52-908f-b6532c4ce0a4/ASPNET_MasterPages_Tutorial_03_VB.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/8/f/6/8f6349e4-6554-405a-bcd7-9b094ba5089a/ASPNET_MasterPages_Tutorial_03_VB.pdf)
 
 > 분류 된 정의 대 한 다양 한 기법을 살펴봅니다 &lt;head&gt; 콘텐츠 페이지에서 마스터 페이지의 요소입니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -36,7 +35,6 @@ HTML `<head>` 문서 자체의 일부가 아닌 웹 페이지 문서에 대 한 
 
 Visual Studio 2008에서 만든 기본 마스터 페이지 파일에 다음 태그를 포함 합니다. 해당 `<head>` 섹션:
 
-
 [!code-aspx[Main](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/samples/sample1.aspx)]
 
 있음을 합니다 `<head>` 요소를 포함을 `runat="server"` 를 서버 컨트롤 (HTML이 아닌 정적) 인지 여부를 나타내는 특성입니다. 파생 되는 모든 ASP.NET 페이지의 [ `Page` 클래스](https://msdn.microsoft.com/library/system.web.ui.page.aspx)에 있는 `System.Web.UI` 네임 스페이스입니다. 이 클래스를 포함 한 [ `Header` 속성](https://msdn.microsoft.com/library/system.web.ui.page.header.aspx) 페이지에 대 한 액세스를 제공 하는 `<head>` 지역입니다. 사용 하는 `Header` 속성에는 렌더링 된 추가 태그를 추가 또는 ASP.NET 페이지의 제목을 설정 수 있습니다 `<head>` 섹션입니다. 이 가능한 한 사용자 지정 하는 콘텐츠 페이지의 `<head>` 페이지의 약간의 코드를 작성 하 여 요소 `Page_Load` 이벤트 처리기입니다. 1 단계에서에서 페이지의 제목을 프로그래밍 방식으로 설정 하는 방법을 살펴봅니다.
@@ -44,7 +42,6 @@ Visual Studio 2008에서 만든 기본 마스터 페이지 파일에 다음 태�
 에 나와 있는 태그를 `<head>` 위의 요소에는 또한 라는 ContentPlaceHolder 컨트롤 `head`합니다. 콘텐츠 페이지 사용자 지정 콘텐츠를 추가할 수 있습니다이 각각의 ContentPlaceHolder 컨트롤로 필요 하지는 `<head>` 요소 프로그래밍 방식으로 합니다. 그러나 콘텐츠 페이지 정적 태그를 추가 해야 하는 경우 유용 것을 `<head>` 정적 태그로 요소를 해당 콘텐츠 컨트롤 보다는 프로그래밍 방식으로 선언적으로 추가할 수 있습니다.
 
 외에 `<title>` 요소 및 `head` ContentPlaceHolder, 마스터 페이지의 `<head>` 요소가 하나 있어야 `<head>`-모든 페이지에 공통적으로 적용 되는 수준 태그입니다. 당사 웹 사이트에서 모든 페이지에 정의 된 CSS 규칙을 사용 합니다 `Styles.css` 파일입니다. 결과적으로 업데이트 했습니다 합니다 `<head>` 요소에는 [ *마스터 페이지를 사용 하 여 사이트 전체 레이아웃 만들기* ](creating-a-site-wide-layout-using-master-pages-vb.md) 해당 포함 하는 자습서 `<link>` 요소입니다. 우리의 `Site.master` 마스터 페이지의 현재 `<head>` 태그는 다음과 같습니다.
-
 
 [!code-aspx[Main](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/samples/sample2.aspx)]
 
@@ -54,7 +51,6 @@ Visual Studio 2008에서 만든 기본 마스터 페이지 파일에 다음 태�
 
 > [!NOTE]
 > 기본적으로 Visual Studio 설정 된 `<title>` "제목 없음 페이지" 마스터 페이지에 있는 요소입니다. 새 ASP.NET 페이지에 마찬가지로 해당 `<title>` 너무 "제목 없음 페이지"로 설정 합니다. 적절 한 값으로 페이지의 제목을 설정를 잊기 쉬울 수 있기 때문에 여러 페이지 제목 "제목 없음 페이지"를 사용 하 여 인터넷에는 있습니다. Google이이 제목 사용 하 여 웹 페이지 검색 약 2,460,000 결과 반환 합니다. Microsoft는 제목 "제목 없음 페이지"를 사용 하 여 게시 웹 페이지에 취약 합니다. 이 문서 작성 당시 Google 검색 Microsoft.com 도메인의 이러한이 236 웹 페이지를 보고 합니다.
-
 
 ASP.NET 페이지 다음 방법 중 하나에서 제목을 지정할 수 있습니다.
 
@@ -70,26 +66,21 @@ ASP.NET 페이지 다음 방법 중 하나에서 제목을 지정할 수 있습�
 
 소스 뷰에서 찾습니다는 `<%@ Page %>` 선언적 태그를 페이지의 맨 위에 있는 지시문입니다. 합니다 `<%@ Page %>` 에 대 한 지시문 `Default.aspx` 따릅니다.
 
-
 [!code-aspx[Main](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/samples/sample3.aspx)]
 
 `<%@ Page %>` 지시문 구문 분석 하 고 페이지를 컴파일하는 경우 ASP.NET 엔진에서 사용 하는 페이지별 특성을 지정 합니다. 여기에 해당 마스터 페이지 파일, 해당 코드 파일 및 기타 정보 중에서 제목을의 위치입니다.
 
 Visual Studio를 설정 하는 새 콘텐츠 페이지를 만들 때 기본적으로는 `Title` "제목 없음 페이지"에 특성입니다. 변경 `Default.aspx`의 `Title` "마스터 페이지 자습서" 특성 "제목 없음 페이지"에서 선택한 다음 브라우저를 통해 페이지를 봅니다. 그림 1에 새 페이지 제목을 반영 하는 브라우저의 제목 표시줄을 보여 줍니다.
 
-
 ![이제 브라우저의 제목 표시줄에 표시 됩니다 &quot;마스터 페이지 자습서&quot; 대신 &quot;제목 없는 페이지&quot;](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image1.png)
 
 **그림 01**: 브라우저의 제목 표시줄에는 이제 "제목 없음된 페이지" 대신 "마스터 페이지 자습서" 표시
 
-
 페이지 제목 속성 창에서 설정할 수도 있습니다. 속성 창에서 문서 드롭다운 목록에서 로드 된 페이지 수준 속성을 포함 하는 선택 된 `Title` 속성입니다. 그림 2 후 속성 창을 보여 줍니다. `Title` "마스터 페이지 자습서"로 설정 되었습니다.
-
 
 ![속성 창에서 제목이 너무 구성할 수 있습니다.](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image2.png)
 
 **그림 02**: 속성 창에서 제목이 너무 구성할 수 있습니다.
-
 
 ### <a name="setting-the-pages-title-programmatically"></a>프로그래밍 방식으로 페이지 제목 설정
 
@@ -97,16 +88,13 @@ Visual Studio를 설정 하는 새 콘텐츠 페이지를 만들 때 기본적�
 
 프로그래밍 방식으로 페이지 제목 설정 방법,로 이동 합니다 `About.aspx` 페이지의 코드 숨김 페이지에 대 한 이벤트 처리기를 만들고 클래스 `Load` 이벤트입니다. 그런 다음, 페이지 제목 설정 "마스터 페이지 자습서:: :: 약 *날짜*", 여기서 *날짜* 은 현재 날짜입니다. 이 코드를 추가한 후에 `Page_Load` 이벤트 처리기는 다음과 유사 합니다.
 
-
 [!code-vb[Main](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/samples/sample4.vb)]
 
 그림 3를 방문할 때 브라우저의 제목 표시줄을 표시 합니다 `About.aspx` 페이지입니다.
 
-
 ![페이지 제목 프로그래밍 방식으로 설정 되 고 현재 날짜를 포함](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image3.png)
 
 **그림 03**: 페이지 제목 프로그래밍 방식으로 설정 되 고 현재 날짜를 포함
-
 
 ## <a name="step-2-automatically-assigning-a-page-title"></a>2단계: 페이지 제목이 자동으로 할당
 
@@ -119,30 +107,24 @@ Visual Studio를 설정 하는 새 콘텐츠 페이지를 만들 때 기본적�
 > [!NOTE]
 > 만들고 사용자 지정 기본 페이지 클래스를 사용 하 여 철저 한 검사는이 자습서 시리즈의 범위를 벗어납니다. 자세한 내용은 [Your ASP.NET 페이지의 코드 숨김 클래스에 대 한 사용자 지정 기본 클래스를 사용 하 여](http://aspnet.4guysfromrolla.com/articles/041305-1.aspx)입니다.
 
-
 ### <a name="creating-the-base-page-class"></a>기본 페이지 클래스 만들기
 
 우리의 첫 번째 작업을 확장 하는 클래스는 기본 페이지 클래스를 만드는 것은 `Page` 클래스입니다. 추가 하 여 시작 프로그램 `App_Code` 폴더를 프로젝트, 솔루션 탐색기에서 프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고, ASP.NET 폴더 추가 선택 하 고, 다음을 선택 하 여 `App_Code`입니다. 그런 다음 마우스 오른쪽 단추로 클릭 합니다 `App_Code` 폴더 라는 새 클래스를 추가 하 고 `BasePage.vb`입니다. 그림 4 후 솔루션 탐색기를 표시 합니다 `App_Code` 폴더 및 `BasePage.vb` 클래스 추가 되었습니다.
-
 
 ![App_Code 폴더 및 BasePage 라는 클래스를 추가 합니다.](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image4.png)
 
 **그림 04**: 추가 `App_Code` 폴더 및 라는 클래스 `BasePage`
 
-
 > [!NOTE]
 > Visual Studio에서는 프로젝트 관리의 두 가지 모드를 지원합니다. 웹 사이트 프로젝트와 웹 응용 프로그램 프로젝트입니다. `App_Code` 폴더는 웹 사이트 프로젝트 모델을 사용 하도록 설계 되었습니다. 웹 응용 프로그램 프로젝트 모델을 사용 하는 경우 배치 합니다 `BasePage.vb` 아닌 다른 이름의 폴더에는 클래스 `App_Code`와 같은 `Classes`합니다. 이 항목에 대 한 자세한 내용은 참조 [웹 응용 프로그램 프로젝트에 웹 사이트 프로젝트를 마이그레이션할](http://webproject.scottgu.com/VisualBasic/Migration2/Migration2.aspx)합니다.
 
-
 사용자 지정 기본 페이지를 ASP.NET 페이지의 코드 숨김 클래스에 대 한 기본 클래스를 제공 하므로 확장 해야 합니다 `Page` 클래스입니다.
-
 
 [!code-vb[Main](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/samples/sample5.vb)]
 
 ASP.NET 페이지를 요청할 때마다 일련의 단계를 HTML로 렌더링 되 고 요청된 된 페이지의 정점 진행 됩니다. 재정의 하 여 스테이지에 탭에서는 합니다 `Page` 클래스의 `OnEvent` 메서드. 보겠습니다 기본 페이지이 지정 되지 않은 명시적으로 여는 경우 제목을 자동으로 설정 합니다 `LoadComplete` 단계 (, 짐작할 수 후에 발생 합니다 `Load` 단계).
 
 이렇게 하려면 재정의 `OnLoadComplete` 메서드 다음 코드를 입력 합니다.
-
 
 [!code-vb[Main](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/samples/sample6.vb)]
 
@@ -151,16 +133,13 @@ ASP.NET 페이지를 요청할 때마다 일련의 단계를 HTML로 렌더링 �
 > [!NOTE]
 > 초대한 제목 형식의 개선 하기 위해이 논리를 강화할 수 있습니다. 예를 들어 페이지의 파일 이름이 `Company-Products.aspx`위의 코드는 "회사-제품" title을 생성 되지만 "회사 제품"와 같이 공백으로 대시는 대체 하는 것이 좋습니다. 또한 대/소문자 변경 될 때마다 공간을 추가 하는 것이 좋습니다. 즉, 파일을 변환 하는 코드를 추가 해 보십시오 `OurBusinessHours.aspx` 제목의 "당사의" 업무 시간으로 합니다.
 
-
 ### <a name="having-the-content-pages-inherit-the-base-page-class"></a>콘텐츠 페이지를 기본 페이지 클래스를 상속 합니다.
 
 이제 사용자 지정 기본 페이지에서 파생 하는 사이트에서 ASP.NET 페이지를 업데이트 해야 (`BasePage`) 대신를 `Page` 클래스입니다. 각 코드 숨김 클래스에이 이동이 수행 및에서 클래스 선언을 변경 합니다.
 
-
 [!code-vb[Main](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/samples/sample7.vb)]
 
 대상:
-
 
 [!code-vb[Main](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/samples/sample8.vb)]
 
@@ -168,11 +147,9 @@ ASP.NET 페이지를 요청할 때마다 일련의 단계를 HTML로 렌더링 �
 
 그림 5는 `MultipleContentPlaceHolders.aspx` 브라우저를 통해 볼 때 페이지입니다. 제목 (확장)을 덜 정확 하 게 페이지의 파일 이름에는 "MultipleContentPlaceHolders"입니다.
 
-
 [![제목을 명시적으로 지정 되지 않은 경우 페이지의 파일 이름이 자동으로 사용](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image6.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image5.png)
 
 **그림 05**: 제목을 명시적으로 지정 되지 않은 경우 페이지의 파일 이름이 자동으로 사용 됩니다 ([클릭 하 여 큰 이미지 보기](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image7.png))
-
 
 ## <a name="step-3-basing-the-page-title-on-the-site-map"></a>3단계: 사이트 맵 페이지 제목을 기준
 
@@ -183,31 +160,25 @@ ASP.NET은 페이지 개발자가 웹 컨트롤 (예:는 SiteMapPath 사이트 �
 > [!NOTE]
 > 이 자습서는 판독기를 이미 ASP를 사용 하 여 친숙 한가 가정 합니다. NET의 사이트 맵 기능입니다. 사이트 맵 사용에 대 한 자세한 내용은 참조 내 다중 파트 문서 시리즈에서는 [ASP 검사 합니다. NET의 사이트 탐색](http://aspnet.4guysfromrolla.com/articles/111605-1.aspx)합니다.
 
-
 ### <a name="creating-the-site-map"></a>사이트 맵 만들기
 
 사이트 맵 시스템 위에 빌드되는 [공급자 모델](http://aspnet.4guysfromrolla.com/articles/101905-1.aspx), 메모리 및 영구 저장소 간의 사이트 맵 정보를 serialize 하는 논리에서 사이트 맵 API를 분리 하는 합니다. .NET Framework와 함께 제공 되는 [ `XmlSiteMapProvider` 클래스](https://msdn.microsoft.com/library/system.web.xmlsitemapprovider.aspx), 기본 사이트 맵 공급자 인 합니다. 이름에서 알 수 있듯이 `XmlSiteMapProvider` XML 파일로 사이트 맵 저장소로 사용 합니다. 이 사이트 맵을 정의 하는 것에 대 한이 공급자를 사용해 보겠습니다.
 
 웹 사이트의 루트 폴더에 사이트 맵 파일을 만들어 시작 `Web.sitemap`합니다. 이렇게 하려면 솔루션 탐색기에서 웹 사이트 이름을 마우스 오른쪽 단추로 클릭을 새 항목 추가 선택 하 고 사이트 맵 템플릿을 선택 합니다. 파일 이름은 확인 `Web.sitemap` 추가를 클릭 합니다.
 
-
 [![웹 사이트의 루트 폴더에는 Web.sitemap 이라는 파일 추가](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image9.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image8.png)
 
 **그림 06**: 라는 파일을 추가 `Web.sitemap` 웹 사이트의 루트 폴더 ([큰 이미지를 보려면 클릭](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image10.png))
 
-
 다음 XML을 추가 하 여 `Web.sitemap` 파일:
-
 
 [!code-xml[Main](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/samples/sample9.xml)]
 
 이 XML은 그림 7과 같은 계층적 사이트 맵 구조를 정의 합니다.
 
-
 ![사이트 맵에 현재 구성의 세 가지 사이트 맵 노드](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image11.png)
 
 **그림 07**: 사이트 맵에 현재 구성의 세 가지 사이트 맵 노드
-
 
 새로운 예제가 추가 됨에 따라 사이트 맵 구조 이후 자습서에서 업데이트 됩니다.
 
@@ -218,19 +189,15 @@ ASP.NET은 페이지 개발자가 웹 컨트롤 (예:는 SiteMapPath 사이트 �
 > [!NOTE]
 > ListView 컨트롤은 ASP.NET 3.5 버전을 새입니다. 이전 버전의 ASP.NET 사용 하는 경우 Repeater 컨트롤을 대신 사용 합니다. ListView 컨트롤에 대 한 자세한 내용은 참조 하세요. [를 사용 하 여 ASP.NET 3.5의 ListView와 DataPager 컨트롤](http://aspnet.4guysfromrolla.com/articles/122607-1.aspx)합니다.
 
-
 단원 섹션에서 기존 순서가 지정 되지 않은 목록 태그를 제거 하 여 시작 합니다. 다음으로, ListView 컨트롤을 도구 상자에서 끌어서 단원을 아래 제목입니다. 다른 뷰 컨트롤과 함께 도구 상자의 데이터 섹션에는 ListView: GridView, DetailsView 및 FormView 합니다. ListView의 설정 `ID` 속성을 `LessonsList`입니다.
 
 데이터 소스 구성 마법사에서 선택 된 ListView 라는 새로운 SiteMapDataSource 컨트롤에 바인딩할 `LessonsDataSource`합니다. SiteMapDataSource 컨트롤 사이트 맵 시스템에서 계층 구조를 반환합니다.
-
 
 [![LessonsList ListView 컨트롤에 SiteMapDataSource 컨트롤 바인딩](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image13.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image12.png)
 
 **그림 08**: SiteMapDataSource 컨트롤 LessonsList ListView 컨트롤에 바인딩 ([클릭 하 여 큰 이미지 보기](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image14.png))
 
-
 SiteMapDataSource 컨트롤을 만든 후 SiteMapDataSource 컨트롤에 의해 반환 된 각 노드에 대 한 목록 항목을 사용 하 여 순서 없는 목록 렌더링 되도록 ListView의 템플릿 정의 해야 합니다. 다음 템플릿 태그를 사용 하 여 수행할 수 있습니다.
-
 
 [!code-aspx[Main](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/samples/sample10.aspx)]
 
@@ -238,39 +205,31 @@ SiteMapDataSource 컨트롤을 만든 후 SiteMapDataSource 컨트롤에 의해 
 
 ListView의 템플릿을 구성한 후 웹 사이트를 방문 합니다. 그림 9에서 알 수 있듯이, 단원 섹션 홈 단일 글머리 기호 항목을 포함 합니다. 정보 및 여러 Contentplaceholder 단원을 사용 하 여 여기서? SiteMapDataSource는 데이터의 계층적 집합을 반환 하도록 만들어졌지만 ListView 컨트롤 계층의 단일 수준을 표시할 수 있습니다. 따라서 SiteMapDataSource에서 반환 된 사이트 맵 노드의 첫 번째 수준만 표시 됩니다.
 
-
 [![단일 목록 항목을 포함 하는 단원 섹션](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image16.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image15.png)
 
 **그림 09**: 단일 목록 항목을 포함 하는 단원 섹션 ([클릭 하 여 큰 이미지 보기](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image17.png))
-
 
 여러 수준을 표시할 내에서 여러 Listview를 중첩할 수 우리는 `ItemTemplate`합니다. 이 기술은에서 검사 된 합니다 [ *마스터 페이지 및 사이트 탐색* 자습서](../../data-access/introduction/master-pages-and-site-navigation-vb.md) 의 내 [데이터 자습서 시리즈를 사용 하 여 작업](../../data-access/index.md)합니다. 그러나이 자습서 시리즈에 대 한 사이트 지도가 두 가지 수준에만 포함 됩니다. 홈 (최상위)입니다. 및 홈의 자식으로 각 학습 합니다. 중첩 된 ListView를 작성 하는 대신 수 대신 하도록 지시를 설정 하 여 시작 노드를 반환 하지 SiteMapDataSource 해당 [ `ShowStartingNode` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.sitemapdatasource.showstartingnode.aspx) 하려면 `False`합니다. Net 같습니다 SiteMapDataSource 사이트 맵 노드의 두 번째 계층을 반환 하 여 시작 하는 것입니다.
 
 이 변경으로 ListView는 정보에 대 한 글머리 기호 항목을 표시 하 고 여러 ContentPlaceHolder 컨트롤을 사용 하는 단원, 하지만 홈에 대 한 글머리 기호 항목을 생략 합니다. 이 해결 하려면 것을 명시적으로 추가 글머리 기호 항목을 홈에 대 한는 `LayoutTemplate`:
 
-
 [!code-aspx[Main](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/samples/sample11.aspx)]
 
 시작 노드를 생략 하려면 SiteMapDataSource를 구성 하 고 명시적으로 홈 글머리 기호 항목을 추가 하 여 이제 단원 섹션에는 의도 한 출력이 표시 됩니다.
-
 
 [![홈 및 각 자식 노드에 대 한 글머리 기호 항목을 포함 하는 단원 섹션](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image19.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image18.png)
 
 **그림 10**: 홈 및 각 자식 노드에 대 한 글머리 기호 항목을 포함 하는 단원 섹션 ([클릭 하 여 큰 이미지 보기](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image20.png))
 
-
 ### <a name="setting-the-title-based-on-the-site-map"></a>사이트 맵 기반 제목 설정
 
 업데이트 되어에서 사이트 맵을 사용 하 여이 `BasePage` 사이트 맵에서 지정 된 제목을 사용 하는 클래스입니다. 2 단계에서에서 했던 것 처럼 페이지 제목 페이지 개발자가 명시적으로 설정 되지 않은 경우 사이트 맵 노드 제목을 사용 하려고 합니다. 요청 된 페이지를 명시적으로 설정 되지 않은 경우에 없는 사이트 맵을 다시 이동 요청된 된 페이지의 파일 이름 (낮은, 확장)를 사용 하 여 2 단계에서에서 수행한 것 처럼 다음 및 페이지 제목입니다. 그림 11이 의사 결정 프로세스를 보여 줍니다.
-
 
 ![명시적으로 페이지 제목 설정가 없을 경우에서 해당 사이트 맵 노드 제목이 사용 됩니다.](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image21.png)
 
 **그림 11**: 명시적으로 페이지 제목 설정가 없을 경우에서 해당 사이트 맵 노드 제목이 사용 됩니다.
 
-
 업데이트를 `BasePage` 클래스의 `OnLoadComplete` 다음 코드를 포함 하는 방법.
-
 
 [!code-vb[Main](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/samples/sample12.vb)]
 
@@ -280,11 +239,9 @@ ListView의 템플릿을 구성한 후 웹 사이트를 방문 합니다. 그림
 
 그림 12는 `MultipleContentPlaceHolders.aspx` 브라우저를 통해 볼 때 페이지입니다. 이 페이지의이 제목 명시적으로 설정 되어 있지 않으므로 해당 해당 사이트 맵 노드 제목은 대신 사용 됩니다.
 
-
 ![사이트 맵에서 끌어온 구성 인 MultipleContentPlaceHolders.aspx 페이지 제목](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image22.png)
 
 **그림 12**: 사이트 맵에서 끌어온 구성 인 MultipleContentPlaceHolders.aspx 페이지 제목
-
 
 ## <a name="step-4-adding-other-page-specific-markup-to-theheadsection"></a>4단계: 다른 페이지 관련 태그를 추가 합니다`<head>`섹션
 
@@ -296,11 +253,9 @@ ListView의 템플릿을 구성한 후 웹 사이트를 방문 합니다. 그림
 
 `<meta>` description 요소는 다음과 같은 형식을 갖습니다.
 
-
 [!code-html[Main](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/samples/sample13.html)]
 
 이 태그는 콘텐츠 페이지에 추가 하려면 위의 텍스트 마스터 페이지에 매핑되는 콘텐츠 컨트롤에 추가 `head` ContentPlaceHolder 합니다. 예를 들어, 정의 하는 `<meta>` description 요소에 대 한 `Default.aspx`, 다음 태그를 추가:
-
 
 [!code-aspx[Main](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/samples/sample14.aspx)]
 
@@ -314,14 +269,12 @@ ListView의 템플릿을 구성한 후 웹 사이트를 방문 합니다. 그림
 
 콘텐츠를 프로그래밍 방식으로 추가할 수는 `<head>` 지역 추가할 콘텐츠를 동적 때 유용 합니다. 아마도 기반 페이지를 방문 하는 사용자 아마도 데이터베이스에서 풀링 하는 합니다. 어떤 이유로 든 콘텐츠를 추가할 수 있습니다 합니다 `HtmlHead` 컨트롤을 추가 하 여 해당 `Controls` 같이 컬렉션:
 
-
 [!code-vb[Main](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/samples/sample15.vb)]
 
 위의 코드를 추가 합니다 `<meta>` 키워드 요소는 `<head>` 페이지를 설명 하는 키워드의 쉼표로 구분 된 목록을 제공 하는 지역. 추가 하는 `<meta>` 만든 태그를 [ `HtmlMeta` ](https://msdn.microsoft.com/library/system.web.ui.htmlcontrols.htmlmeta.aspx) 인스턴스를 설정 해당 `Name` 및 `Content` 속성을 다음에 추가 합니다 `Header`의 `Controls` 컬렉션입니다. 마찬가지로, 프로그래밍 방식으로 추가할를 `<link>` 요소를 만들기는 [ `HtmlLink` ](https://msdn.microsoft.com/library/system.web.ui.htmlcontrols.htmllink.aspx) 개체 속성을 설정 하 고 추가한 다음이 `Header`의 `Controls` 컬렉션입니다.
 
 > [!NOTE]
 > 임의 태그를 추가 하려면 만듭니다는 [ `LiteralControl` ](https://msdn.microsoft.com/library/system.web.ui.literalcontrol.aspx) 인스턴스를 설정 해당 `Text` 속성을 다음에 추가 합니다 `Header`의 `Controls` 컬렉션.
-
 
 ## <a name="summary"></a>요약
 

@@ -8,12 +8,12 @@ ms.date: 01/20/2011
 ms.assetid: 3124f28e-cc32-418a-afe3-519fa56f4c36
 msc.legacyurl: /whitepapers/add-mobile-pages-to-your-aspnet-web-forms-mvc-application
 msc.type: content
-ms.openlocfilehash: db8f336f3fd9a88dfb32f99510fc53cd7b4a5178
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 63c555358d06a9506bb5c8c993800c3307108192
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59415988"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65114440"
 ---
 # <a name="how-to-add-mobile-pages-to-your-aspnet-web-forms--mvc-application"></a>방법: ASP.NET Web Forms/MVC 애플리케이션에 모바일 페이지 추가
 
@@ -25,7 +25,6 @@ ms.locfileid: "59415988"
 > **요약**
 > 
 > 이 방법에 ASP.NET Web Forms에서 모바일 장치에 대 한 액세스에 최적화 된 페이지를 제공 하는 다양 한 방법에 설명 / MVC 응용 프로그램 아키텍처를 제안 하 고 광범위 한 장치를 대상으로 할 때 고려해 야 할 문제를 디자인 합니다. 이 문서는 또한 3.5 ASP.NET 2.0에서 ASP.NET 모바일 컨트롤은 사용 되지 않는 이제 이유와 일부 최신 대안을 설명 설명 합니다.
-
 
 ## <a name="contents"></a>목차
 
@@ -158,7 +157,6 @@ ASP while입니다. NET의 기본 제공 브라우저 검색 지원 대부분의
 
 > [!NOTE]
 > 이 방법은 일반적으로 코드의 일부 중복을 포함 하므로 (모바일 페이지 가능성이 데스크톱 페이지를 사용 하 여 일부 유사성을 공유), 모든 일반적인 비즈니스 논리 또는 데이터 액세스 코드 공유 기본 계층 또는 서비스에 대 한 비율을 고려해 야 합니다. 그렇지 않으면 double 만들고 응용 프로그램 유지 관리 작업 표시 됩니다.
-
 
 #### <a name="redirecting-mobile-visitors-to-your-mobile-pages"></a>모바일 페이지에 리디렉션 모바일 방문자
 
@@ -310,7 +308,6 @@ Web.config 파일의 fiftyOne 섹션에 추가 된 다음 요소를 페이지에
 
 > [!NOTE]
 > 있습니다 *수* 수 있지만 ASP.NET MVC 응용 프로그램에서 사용 하 여 51Degrees.mobi Foundation의 리디렉션 기능 라우팅 매개 변수가 아니라 또는 MVC 필터를 배치 하 여 일반 Url 기준으로 리디렉션 구성을 정의 해야 합니다. 동작 합니다. 왜냐하면 (작성 당시) 필터 또는 라우팅 51Degrees.mobi Foundation 인식 하지 못합니다.
-
 
 ### <a name="disabling-transcoders-and-proxy-servers"></a>트랜스코더 및 프록시 서버를 사용 하지 않도록 설정
 

@@ -8,12 +8,12 @@ ms.date: 04/21/2011
 ms.assetid: 998ce4e1-9d72-435b-8f1c-399a10ae4360
 msc.legacyurl: /mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-2
 msc.type: authoredcontent
-ms.openlocfilehash: b452c59f16107be6d356f86e6c313ba3229dbce6
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 9dc2226f4951d4bed122df37d35bbb94730a00ad
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59392757"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112408"
 ---
 # <a name="part-2-controllers"></a>2부: 컨트롤러
 
@@ -24,7 +24,6 @@ ms.locfileid: "59392757"
 > MVC Music Store는 온라인 음악 앨범을 판매 하 고 기본 사이트 관리, 사용자 로그인 및 장바구니 기능을 구현 하는 간단한 샘플 저장소 구현입니다.  
 >   
 > 이 자습서 시리즈 모든 ASP.NET MVC Music Store 샘플 응용 프로그램 빌드를 수행 하는 단계를 자세히 설명 합니다. 2 부에서는 컨트롤러를 설명합니다.
-
 
 기존 웹 프레임 워크를 들어오는 Url은 일반적으로 디스크에 파일이 매핑됩니다. 예를 들어:와 같은 URL에 대 한 요청을 "/ 대" 하거나 "/ Products.php" "Products.aspx" 또는 "Products.php" 파일에서 처리 될 수 있습니다.
 
@@ -136,7 +135,6 @@ ASP.NET MVC 쉽게 아무 것도 구성 하지 않고도 이렇게 할 수 있�
 - ASP.NET Development Server를 사용 하 여 웹 사이트를 실행 하는 방법을 알게합니다
 - 두 컨트롤러 클래스를 만들었습니다: HomeController 및는 StoreController
 - URL 요청에 응답 하 고 브라우저에 텍스트를 반환 하는 컨트롤러 작업 메서드에 추가 했습니다.
-
 
 > [!div class="step-by-step"]
 > [이전](mvc-music-store-part-1.md)

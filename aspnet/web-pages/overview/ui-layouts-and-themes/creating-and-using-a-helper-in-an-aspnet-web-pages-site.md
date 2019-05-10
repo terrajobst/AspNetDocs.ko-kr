@@ -8,12 +8,12 @@ ms.date: 02/17/2014
 ms.assetid: 46bff772-01e0-40f0-9ae6-9e18c5442ee6
 msc.legacyurl: /web-pages/overview/ui-layouts-and-themes/creating-and-using-a-helper-in-an-aspnet-web-pages-site
 msc.type: authoredcontent
-ms.openlocfilehash: 28cb3af081f68c20dd9cd9e0b2578f5656d2d652
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1f5109324ff3ce919e88fe976587a179eeaa5a5d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389442"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65116044"
 ---
 # <a name="creating-and-using-a-helper-in-an-aspnet-web-pages-razor-site"></a>만들기 및 ASP.NET 웹 페이지 (Razor) 사이트에서 도우미 사용
 
@@ -37,7 +37,6 @@ ms.locfileid: "59389442"
 >   
 > 
 > 이 자습서는 ASP.NET 웹 페이지 2 에서도 작동합니다.
-
 
 ## <a name="overview-of-helpers"></a>도우미의 개요
 
@@ -75,7 +74,6 @@ ms.locfileid: "59389442"
     ![페이지에는 브라우저 도우미에서 지정된 된 텍스트 주위에 상자를 배치 하는 태그를 생성 하는 방법을 보여주는 스크린샷.](creating-and-using-a-helper-in-an-aspnet-web-pages-site/_static/image1.jpg)
 
 ## <a name="additional-resources"></a>추가 리소스
-
 
 [Razor 도우미로 가로 메뉴](http://mikepope.com/blog/DisplayBlog.aspx?permalink=2341)합니다. Mike 되 여이 블로그 항목에는 태그, CSS 및 코드를 사용 하 여 도우미로 가로 메뉴를 만드는 방법을 보여 줍니다.
 

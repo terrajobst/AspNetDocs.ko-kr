@@ -8,12 +8,12 @@ ms.date: 04/03/2015
 ms.assetid: 81ee500f-fc37-40d6-8722-f1b64720fbb6
 msc.legacyurl: /mvc/overview/security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on
 msc.type: authoredcontent
-ms.openlocfilehash: f78100178d5cdc25a10603907e77fe81386877a6
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8432a7610ac7be79ad03651a5fac21a62b0ca1f0
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59386465"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112963"
 ---
 # <a name="create-an-aspnet-mvc-5-app-with-facebook-twitter-linkedin-and-google-oauth2-sign-on-c"></a>Facebook, Twitter, LinkedIn 및 Google OAuth2 로그온을 제공하는 ASP.NET MVC 5 앱 만들기(C#)
 
@@ -27,7 +27,6 @@ ms.locfileid: "59386465"
 > 
 > 또한 자습서에는 사용자의 프로필 데이터를 추가 하는 방법 및 역할을 추가 하는 멤버 API를 사용 하는 방법을 보여 줍니다. 이 자습서를 통해 작성 했습니다 [Rick Anderson](https://blogs.msdn.com/rickAndy) (하세요 me Twitter에서 팔 로우: [ @RickAndMSFT ](https://twitter.com/RickAndMSFT) ).
 
-
 <a id="start"></a>
 ## <a name="getting-started"></a>시작
 
@@ -36,11 +35,9 @@ ms.locfileid: "59386465"
 > [!NOTE]
 > Visual Studio를 설치 해야 합니다 [2013 업데이트 3](https://go.microsoft.com/fwlink/?LinkId=390521) 이상 Google OAuth 2를 사용 하 고 SSL 경고 없이 로컬로 디버그 합니다.
 
-
 클릭 **새 프로젝트** 에서 합니다 **시작** 페이지 또는 사용자 메뉴를 사용 하 고 선택할 수 **파일**를 차례로 **새 프로젝트**합니다.
 
 ![](create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on/_static/image1.png)  
- 
 
 <a id="1st"></a>
 ## <a name="creating-your-first-application"></a>응용 프로그램 처음 만들기
@@ -56,7 +53,6 @@ ms.locfileid: "59386465"
 선택한 경우 **클라우드에서 호스트**, 구성 대화 상자를 완료 합니다.
 
 ![](create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on/_static/image4.png)
-
 
 ### <a name="use-nuget-to-update-to-the-latest-owin-middleware"></a>NuGet을 사용 하 여 최신 OWIN 미들웨어를 업데이트 하려면
 
@@ -161,7 +157,6 @@ Google 및 Facebook과 같은 인증 공급자에 연결 하려면 IIS Express S
 
 > [!WARNING]
 > 현재 Facebook OAuth2 인증 지침을 참조 하세요. [구성 Facebook 인증](/aspnet/core/security/authentication/social/facebook-logins)
-
 
 <a id="mdb"></a>
 ## <a name="examine-the-membership-data"></a>멤버 자격 데이터를 검사 합니다.

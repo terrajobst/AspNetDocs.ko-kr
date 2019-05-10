@@ -8,12 +8,12 @@ ms.date: 02/22/2015
 ms.assetid: 148d9ca7-1af1-44b6-a9fb-91e261b9b463
 msc.legacyurl: /signalr/overview/performance/signalr-connection-density-testing-with-crank
 msc.type: authoredcontent
-ms.openlocfilehash: bb8a7da1080dc325c0479b337d114b8dcdf6e102
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 901e039fbb81651ed18d560c99745b7e7f716e01
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59390066"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65116096"
 ---
 # <a name="signalr-connection-density-testing-with-crank"></a>Crank를 사용하여 SignalR 연결 밀도 테스트
 
@@ -22,7 +22,6 @@ ms.locfileid: "59390066"
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
 > 이 문서에서는 크랭크 도구를 사용 하 여 여러 시뮬레이션 된 클라이언트를 사용 하 여 응용 프로그램을 테스트 하는 방법을 설명 합니다.
-
 
 응용 프로그램 호스팅 환경 (중 하나는 Azure 웹 역할, IIS 또는 Owin을 사용 하 여 자체 호스팅)에서 실행 되 면 응용 프로그램의 높은 수준의 크랭크 도구를 사용 하 여 연결 밀도에 대 한 응답을 테스트할 수 있습니다. 인터넷 정보 서비스 (IIS) 서버를, Owin 호스트를 또는 Azure 웹 역할을 호스팅 환경 수 있습니다. (참고: 성능 카운터 하지 않으므로 Azure App Service Web Apps에서 사용할 수 있는 연결 밀도 테스트에서 성능 데이터를 가져올 수 없습니다.)
 

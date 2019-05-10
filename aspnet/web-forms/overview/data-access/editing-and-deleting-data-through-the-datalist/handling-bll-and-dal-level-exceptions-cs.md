@@ -8,12 +8,12 @@ ms.date: 10/30/2006
 ms.assetid: f8fd58e2-f932-4f08-ab3d-fbf8ff3295d2
 msc.legacyurl: /web-forms/overview/data-access/editing-and-deleting-data-through-the-datalist/handling-bll-and-dal-level-exceptions-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 5714b118a5894731820d8e9775c8f5c8a375856c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3edd37259a3624757dd5bc69ffba7159c9b85ad1
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59390131"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113739"
 ---
 # <a name="handling-bll--and-dal-level-exceptions-c"></a>BLL 및 DAL 수준의 예외 처리(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59390131"
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_38_CS.exe) 또는 [PDF 다운로드](handling-bll-and-dal-level-exceptions-cs/_static/datatutorial38cs1.pdf)
 
 > 이 자습서에서는 요령껏는 편집 가능한 DataList의 업데이트 워크플로 중에 발생 하는 예외를 처리 하는 방법을 살펴보겠습니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -35,38 +34,30 @@ ms.locfileid: "59390131"
 > [!NOTE]
 > 에 *An 개요의 편집 및 DataList에서 데이터 삭제* ObjectDataSource를 사용 하 여 업데이트에 대 한 편집 및 DataList에서 데이터 삭제에 대 한 다양 한 기법을 설명한 자습서에서는 몇 가지 기술을 관련 및 삭제 중입니다. 이러한 기법을 사용 하는 경우, ObjectDataSource s 통한 BLL 또는 DAL에서 예외를 처리할 수 있습니다 `Updated` 또는 `Deleted` 이벤트 처리기입니다.
 
-
 ## <a name="step-1-creating-an-editable-datalist"></a>1단계: 편집할 수는 DataList 만들기
 
 업데이트 워크플로 중에 발생 하는 예외를 처리 하는 방법에 대 한 걱정 했습니다 전에 편집 가능한 DataList를 먼저 만든 수 있습니다. 열기는 `ErrorHandling.aspx` 페이지에 `EditDeleteDataList` 폴더 집합 디자이너로 DataList를 추가 해당 `ID` 속성을 `Products`, 라는 새로운 ObjectDataSource는 추가 `ProductsDataSource`합니다. ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLL` s 클래스 `GetProducts()` 선택 하기 위한 메서드를 기록 하 고는 insert, UPDATE, 드롭 다운 목록을 설정 탭 (없음)을 삭제 합니다.
-
 
 [![GetProducts() 메서드를 사용 하 여 제품 정보를 반환 합니다.](handling-bll-and-dal-level-exceptions-cs/_static/image2.png)](handling-bll-and-dal-level-exceptions-cs/_static/image1.png)
 
 **그림 1**: 사용 하 여 제품 정보를 반환 합니다 `GetProducts()` 메서드 ([큰 이미지를 보려면 클릭](handling-bll-and-dal-level-exceptions-cs/_static/image3.png))
 
-
 Visual Studio에서 자동으로 ObjectDataSource 마법사를 완료 한 후 만듭니다는 `ItemTemplate` DataList에 대 한 합니다. 사용 하 여 대체는 `ItemTemplate` 각 s 제품 이름과 가격을 표시 하 고 편집 단추를 포함 합니다. 다음으로 만듭니다는 `EditItemTemplate` 이름과 가격 업데이트 및 취소 단추에 대 한 텍스트 웹 컨트롤을 사용 합니다. 마지막으로 설정 하는 DataList의 `RepeatColumns` 속성을 2로 합니다.
 
 이러한 변경 이후 페이지 s 선언적 태그 다음과 유사 합니다. 특정는 편집을 취소, 확인 하 고 [업데이트] 단추는 `CommandName` 속성 편집을 취소 하 고 각각 업데이트로 설정 합니다.
-
 
 [!code-aspx[Main](handling-bll-and-dal-level-exceptions-cs/samples/sample1.aspx)]
 
 > [!NOTE]
 > 이 자습서는 DataList의 뷰 상태가 활성화 되어야 합니다.
 
-
 브라우저를 통해 진행 상황을 보려면 잠시 (그림 2 참조).
-
 
 [![각 제품에 편집 단추가 포함 됩니다.](handling-bll-and-dal-level-exceptions-cs/_static/image5.png)](handling-bll-and-dal-level-exceptions-cs/_static/image4.png)
 
 **그림 2**: 각 제품에 편집 단추를 포함 됩니다 ([클릭 하 여 큰 이미지 보기](handling-bll-and-dal-level-exceptions-cs/_static/image6.png))
 
-
 현재 편집 단추만 포스트백을 발생 시키는 해당 대상이 t 아직 제품 편집할 수 있도록 합니다. 편집을 사용 하려면 DataList s에 대 한 이벤트 처리기를 생성 해야 `EditCommand`하십시오 `CancelCommand`, 및 `UpdateCommand` 이벤트입니다. 합니다 `EditCommand` 하 고 `CancelCommand` 이벤트의 DataList를 간단 하 게 업데이트할 `EditItemIndex` 속성과 rebind DataList 데이터:
-
 
 [!code-csharp[Main](handling-bll-and-dal-level-exceptions-cs/samples/sample2.cs)]
 
@@ -74,16 +65,13 @@ Visual Studio에서 자동으로 ObjectDataSource 마법사를 완료 한 후 �
 
 이제 let s 사용에서 동일한 코드를 `UpdateCommand` 이벤트 처리기는 *DataList에서 데이터 삭제 및 편집 개요* 자습서. 2 단계에서 예외를 매끄럽게 처리할 코드를 추가 합니다.
 
-
 [!code-csharp[Main](handling-bll-and-dal-level-exceptions-cs/samples/sample3.cs)]
 
 잘못 된 입력 발생 하는 경우는 부적절 하 게 서식이 지정 된 단위 가격, $5.00과 같은 잘못 된 단위 가격 값을 또는 예외가 발생 제품의 이름 생략 형식의 수 있습니다. 이후는 `UpdateCommand` 이벤트 처리기에서 예외 처리 코드를이 시점에서 다루지 않습니다, 예외는 버블링 ASP.NET 런타임 있는 최종 사용자에 게 표시 됩니다 (그림 3 참조).
 
-
 ![최종 사용자가 오류 페이지가 처리 되지 않은 예외가 발생 하는 경우](handling-bll-and-dal-level-exceptions-cs/_static/image7.png)
 
 **그림 3**: 최종 사용자가 오류 페이지가 처리 되지 않은 예외가 발생 하는 경우
-
 
 ## <a name="step-2-gracefully-handling-exceptions-in-the-updatecommand-event-handler"></a>2단계: UpdateCommand 이벤트 처리기에서 예외를 정상적으로 처리
 
@@ -93,13 +81,11 @@ Visual Studio에서 자동으로 ObjectDataSource 마법사를 완료 한 후 �
 
 오류가 발생 하는 경우만 한 번에 표시할 레이블을 포함 하려고 합니다. 즉, 후속 포스트백에서 레이블에의 경고 메시지 사라져야 합니다. 레이블 s 아웃 하거나 선택을 취소 하 여이 작업을 수행할 수 있습니다 `Text` 속성이 나 설정을 해당 `Visible` 속성을 `False` 에 `Page_Load` 이벤트 처리기 (다시에서 수행한 것 처럼는 [처리 BLL 및 DAL 수준의 예외는 ASP에서 .NET 페이지](../editing-inserting-and-deleting-data/handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs.md) 자습서) 또는 레이블의 보기 상태 지원을 사용 하지 않도록 설정 합니다. S를 후자의 옵션을 사용할 수 있습니다.
 
-
 [!code-aspx[Main](handling-bll-and-dal-level-exceptions-cs/samples/sample4.aspx)]
 
 예외가 발생 하면 예외의 세부 정보를 할당 하겠습니다 합니다 `ExceptionDetails` 레이블 컨트롤의 `Text` 속성입니다. 후속 포스트백에서 해당 뷰 상태의 비활성화 되어 있으므로 `Text`의 속성 프로그래밍 방식으로 변경 내용이 손실, 복귀 하 여 경고 메시지를 숨기고 기본 텍스트 (빈 문자열), 됩니다.
 
 페이지에서 유용한 메시지를 표시 하기 위해 오류가 발생 했습니다 시기를 확인 하려면 추가 해야는 `Try ... Catch` 블록을 `UpdateCommand` 이벤트 처리기입니다. `Try` 부분 예외를 발생 시킬 수 있는 코드를 포함 하는 동안는 `Catch` 블록에 예외가 발생 하는 경우 실행 되는 코드를 포함 합니다. 체크 아웃 합니다 [예외 처리 기본 사항](https://msdn.microsoft.com/library/2w8f0bss.aspx) 대 한 자세한 내용은.NET Framework 설명서 섹션의 `Try ... Catch` 블록입니다.
-
 
 [!code-csharp[Main](handling-bll-and-dal-level-exceptions-cs/samples/sample5.cs)]
 
@@ -107,23 +93,19 @@ Visual Studio에서 자동으로 ObjectDataSource 마법사를 완료 한 후 �
 
 메시지 텍스트를 발견 하는 예외 유형을 기반으로 최종 사용자에 게 더 유용한 설명을 제공 수 있습니다. 거의 동일한 양식에서 사용 된 다음 코드를 다시는 [처리 BLL 및 DAL 수준의 예외 ASP.NET 페이지에서](../editing-inserting-and-deleting-data/handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs.md) 자습서에서는이 수준의 세부 정보를 제공 합니다.
 
-
 [!code-csharp[Main](handling-bll-and-dal-level-exceptions-cs/samples/sample6.cs)]
 
 이 자습서를 완료 하려면 호출 하기만 하면 됩니다 합니다 `DisplayExceptionDetails` 메서드를 `Catch` 포착를 전달 하는 블록 `Exception` 인스턴스 (`ex`).
 
 사용 하 여는 `Try ... Catch` 차단 되어에서, 사용자는 그림 4와 5 표시 자세한 오류 메시지와 함께 표시 됩니다. DataList 예외가 발생 하는 경우에 남아 있는 참고 편집 모드입니다. 제어 흐름으로 즉시 리디렉션되는 예외 발생 후 이므로이 `Catch` 블록, DataList 미리 편집 상태로 반환 하는 코드를 무시 합니다.
 
-
 [![필요한 필드를 생략 하는 경우 오류 메시지가 표시 됩니다.](handling-bll-and-dal-level-exceptions-cs/_static/image9.png)](handling-bll-and-dal-level-exceptions-cs/_static/image8.png)
 
 **그림 4**: 필요한 필드를 생략 하는 경우 오류 메시지가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](handling-bll-and-dal-level-exceptions-cs/_static/image10.png))
 
-
 [![오류 메시지를 표시 하면 입력 된 음수 가격](handling-bll-and-dal-level-exceptions-cs/_static/image12.png)](handling-bll-and-dal-level-exceptions-cs/_static/image11.png)
 
 **그림 5**: 오류 메시지를 표시 하면 입력 된 음수 가격 ([클릭 하 여 큰 이미지 보기](handling-bll-and-dal-level-exceptions-cs/_static/image13.png))
-
 
 ## <a name="summary"></a>요약
 

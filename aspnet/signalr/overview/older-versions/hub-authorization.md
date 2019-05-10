@@ -8,12 +8,12 @@ ms.date: 10/17/2013
 ms.assetid: 3d2dfc0e-eac2-4076-a468-325d3d01cc7b
 msc.legacyurl: /signalr/overview/older-versions/hub-authorization
 msc.type: authoredcontent
-ms.openlocfilehash: af97ff2488841b2d65e50122691736603be2a686
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8182677c8931f060d98d17008b16ad545bee4e69
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59401415"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112303"
 ---
 # <a name="authentication-and-authorization-for-signalr-hubs-signalr-1x"></a>SignalR 허브에 대한 인증 및 권한 부여(SignalR 1.x)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59401415"
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
 > 이 항목에서는 어떤 사용자 또는 역할에는 허브 메서드에 액세스할 수를 제한 하는 방법을 설명 합니다.
-
 
 ## <a name="overview"></a>개요
 

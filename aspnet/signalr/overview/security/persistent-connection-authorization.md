@@ -8,12 +8,12 @@ ms.date: 06/10/2014
 ms.assetid: e264677b-9c01-47ec-94f9-3cd8f08f94af
 msc.legacyurl: /signalr/overview/security/persistent-connection-authorization
 msc.type: authoredcontent
-ms.openlocfilehash: 9399addc76b7ba0844efe5b935d16edfdd9ec9f0
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 7e69d3c1a18f1239142891734ba58cd2b0078f84
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384989"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113534"
 ---
 # <a name="authentication-and-authorization-for-signalr-persistent-connections"></a>SignalR 영구 연결에 대한 인증 및 권한 부여
 
@@ -39,7 +39,6 @@ ms.locfileid: "59384989"
 > ## <a name="questions-and-comments"></a>질문이 나 의견이 있으면
 >
 > 이 자습서를 연결 하는 방법 및 새로운 개선할 수 있습니다 페이지의 맨 아래에 의견에서에 의견을 남겨 주세요. 에 자습서로 직접 관련 되지 않은 질문이 있을 경우 게시할 수 하는 [ASP.NET SignalR 포럼](https://forums.asp.net/1254.aspx/1?ASP+NET+SignalR) 또는 [StackOverflow.com](http://stackoverflow.com/)합니다.
-
 
 ## <a name="enforce-authorization"></a>권한 부여를 적용 합니다.
 

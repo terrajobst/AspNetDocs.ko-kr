@@ -8,12 +8,12 @@ ms.date: 10/17/2006
 ms.assetid: ee20742f-6fb7-49a0-a009-058fe363aacb
 msc.legacyurl: /web-forms/overview/data-access/filtering-scenarios-with-the-datalist-and-repeater/master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb
 msc.type: authoredcontent
-ms.openlocfilehash: bdf1d69ea8020ce055d7765591cf2d488de71245
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 0f7f42545d2492c7330da57f7e767199f50b659e
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59388703"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108437"
 ---
 # <a name="masterdetail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb"></a>세부 정보 DataList와 함께 마스터 레코드의 글머리 기호 목록을 사용하는 마스터/세부 정보(VB)
 
@@ -23,18 +23,15 @@ ms.locfileid: "59388703"
 
 > 이 자습서에서 압축할 이전 자습서의 2 페이지 분량 마스터/세부 정보 보고서를 단일 페이지에 화면 및 화면 오른쪽에는 선택한 범주 제품의 좌 변에 범주 이름의 글머리 기호 목록을 표시 합니다.
 
-
 ## <a name="introduction"></a>소개
 
 에 [이전 자습서](master-detail-filtering-acess-two-pages-datalist-vb.md) 두 페이지에 걸쳐 마스터/세부 정보 보고서를 구분 하는 방법에 살펴보았습니다. 마스터 페이지에서 범주의 글머리 기호 목록을 렌더링 하려면 Repeater 컨트롤을 사용 했습니다. 각 범주 이름은 된 하이퍼링크,를 클릭 하면는 take 2 열 DataList 해당 제품을 표시 하는 위치, 세부 정보 페이지로 사용자 범주에 속하는 선택 합니다.
 
 이 자습서에서는 압축할 두 페이지 자습서는 단일 페이지에 LinkButton으로 렌더링 되는 각 범주 이름의 범주 이름의 글머리 기호 목록 화면 왼쪽에 표시 합니다. Linkbutton 범주 이름 중 하나를 클릭 포스트백을 유도 하 고 화면 오른쪽에 열이 두 DataList를 선택한 범주의 제품을 바인딩합니다. 왼쪽 반복기 각 s 범주 이름을 표시 하는 것 외에도 지정된 된 범주에 있는 총 제품 있습니다 수를 보여 (그림 1 참조).
 
-
 [![이름이 범주와 제품의 총 수는 왼쪽에 표시 됩니다.](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image2.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image1.png)
 
 **그림 1**: 이름이 범주와 제품의 총 수는 왼쪽에 표시 됩니다 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image3.png))
-
 
 ## <a name="step-1-displaying-a-repeater-in-the-left-portion-of-the-screen"></a>1단계: Repeater 화면의 왼쪽된 부분에 표시
 
@@ -42,11 +39,9 @@ ms.locfileid: "59388703"
 
 엽니다는 `CategoriesAndProducts.aspx` 에서 페이지를 `DataListRepeaterFiltering` 폴더 Repeater 및 DataList 페이지에 추가 합니다. 반복기가 설정 `ID` 하 `Categories` 에 s DataList 및 `CategoryProducts`합니다. 소스 뷰로 이동 하 고 자체 내에서 Repeater 및 DataList 컨트롤을 배치 `<div>` 요소입니다. 즉, 내에서 반복기를 묶습니다를 `<div>` 요소 첫 번째 및 자체에서 DataList 다음 `<div>` Repeater 바로 뒤 요소입니다. 태그가 시점에서 표시 됩니다 다음과 비슷합니다.
 
-
 [!code-aspx[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample1.aspx)]
 
 DataList의 왼쪽에 반복기를 float로 사용 해야는 `float` CSS 스타일 특성을 다음과 같이 합니다.
-
 
 [!code-html[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample2.html)]
 
@@ -54,18 +49,15 @@ DataList의 왼쪽에 반복기를 float로 사용 해야는 `float` CSS 스타�
 
 첫 번째를 통해 직접 스타일 설정을 지정 하지 않고 `<p>` 요소 s `style` 특성에서 새로운 CSS 클래스를 대신 만든 `Styles.css` 라는 `FloatLeft`:
 
-
 [!code-css[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample3.css)]
 
 바꾼 수는 `<div>` 사용 하 여 `<div class="FloatLeft">`입니다.
 
 CSS 클래스를 추가 하 고 태그를 구성한 후의 `CategoriesAndProducts.aspx` 페이지, 디자이너로 이동 합니다. DataList의 왼쪽에 부동 (오른쪽 이제 둘 다 표시 회색 상자 이후로 ve 해당 데이터 원본 또는 템플릿을 구성 하는 대로) 하지만 반복기에 표시 됩니다.
 
-
 [![DataList의 왼쪽으로 움직이는 반복기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image5.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image4.png)
 
 **그림 2**: DataList의 왼쪽으로 움직이는 반복기 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image6.png))
-
 
 ## <a name="step-2-determining-the-number-of-products-for-each-category"></a>2단계: 각 범주에 대 한 제품의 수를 결정합니다.
 
@@ -80,11 +72,9 @@ CSS 클래스를 추가 하 고 태그를 구성한 후의 `CategoriesAndProduct
 
 반복기가 각 범주에 대 한 제품의 수를 결정 `ItemDataBound` 이벤트 처리기의 기존 데이터 액세스 계층을 수정할 필요가 없습니다. 내에서 직접 모든 수정을 만들 수는 `CategoriesAndProducts.aspx` 페이지입니다. 라는 새 ObjectDataSource를 추가 하 여 시작 `CategoriesDataSource` Repeater가 스마트 태그를 통해. 다음으로 구성 합니다 `CategoriesDataSource` ObjectDataSource는 해당 데이터를 검색 하도록 합니다 `CategoriesBLL` s 클래스 `GetCategories()` 메서드.
 
-
 [![S GetCategories() 메서드 CategoriesBLL 클래스를 사용 하는 ObjectDataSource 구성](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image8.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image7.png)
 
 **그림 3**: ObjectDataSource를 사용 하 여 구성 합니다 `CategoriesBLL` s 클래스 `GetCategories()` 메서드 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image9.png))
-
 
 각 항목에는 `Categories` Repeater를 클릭할 수 고를 클릭 하면 발생 해야 하는 `CategoryProducts` DataList 선택한 범주에 대 한 해당 제품을 전시 하기. 각 범주를이 동일한 페이지에 다시 연결 하 여 하이퍼링크를 만들어이 작업을 수행할 수 있습니다 (`CategoriesAndProducts.aspx`), 하지만 전달 된 `CategoryID` 이전 자습서에서 본 것과 마찬가지로 문자열을 통해. 이 방식의 장점은 특정 범주의 제품을 표시 하는 페이지를 책갈피 및 검색 엔진에 의해 인덱싱된 수는입니다.
 
@@ -93,23 +83,18 @@ CSS 클래스를 추가 하 고 태그를 구성한 후의 `CategoriesAndProduct
 > [!NOTE]
 > 하이퍼링크 컨트롤을 사용 하 여이 자습서를 반복 하는 것이 좋습니다 또는 `<a>` LinkButton 대신 요소입니다.
 
-
 다음 태그에는 Repeater 및 ObjectDataSource에 대 한 선언적 구문을 보여 줍니다. S 템플릿에 LinkButton 표시 된 각 항목을 사용 하 여 글머리 기호 목록을 렌더링 하는 참고:
-
 
 [!code-aspx[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample4.aspx)]
 
 > [!NOTE]
 > 이 자습서에 대 한 반복기 사용 하도록 설정 하는 해당 뷰 상태의 있어야 합니다 (생략 참고는 `EnableViewState="False"` Repeater가 선언적 구문에서). 3 단계에서는 만듭니다 이벤트 처리기가의 반복기에 대 한 `ItemCommand` 이벤트를 업데이트 합니다 DataList의 ObjectDataSource `SelectParameters` 컬렉션입니다. 그러나 반복기가의 `ItemCommand`, 보기 상태가 비활성화 되는 경우 발생 하지 않습니다. 참조 [는 ASP.NET 질문는 Stumper](http://scottonwriting.net/sowblog/posts/1263.aspx) 및 [자사 솔루션](http://scottonwriting.net/sowBlog/posts/1268.aspx) 이유에 대 한 자세한 내용은 뷰 상태를 Repeater s에 대 한 사용 해야 합니다 `ItemCommand` 이벤트가 발생 합니다.
 
-
 인 LinkButton 합니다 `ID` 속성 값이 `ViewCategory` 되지 않은 해당 `Text` 속성 집합입니다. 범주 이름을 표시 하려면 바로 원했던 것을 하는 경우는 설정 텍스트 속성 선언적으로 데이터 바인딩 구문을 통해 다음과 같이 합니다.
-
 
 [!code-aspx[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample5.aspx)]
 
 S 범주 이름을 표시 하려고 하는 반면 *고* 해당 범주에 속하는 제품의 수입니다. S 반복기에서이 정보를 검색할 수 있습니다 `ItemDataBound` 이벤트 처리기를 호출 하 여는 `ProductBLL` s 클래스 `GetCategoriesByProductID(categoryID)` 메서드와 레코드 개수 결과에 반환 됩니다 결정 `ProductsDataTable`, 다음 코드와 보여 줍니다.
-
 
 [!code-vb[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample6.vb)]
 
@@ -118,71 +103,55 @@ S 범주 이름을 표시 하려고 하는 반면 *고* 해당 범주에 속하�
 > [!NOTE]
 > 추가한 수 또는 *함수를 서식 지정* s 범주를 허용 하는 ASP.NET 페이지가 코드 숨김 클래스에 `CategoryName` 및 `CategoryID` 값 및 반환는 `CategoryName` 개수를 사용 하 여 연결 범주에는 제품 (호출 하 여 결정 된 대로 `GetCategoriesByProductID(categoryID)` 메서드). LinkButton s에 대 한 필요성을 대체 하는 텍스트 속성에 선언적으로 지정할 수 있습니다 이러한 서식 지정 함수 결과 `ItemDataBound` 이벤트 처리기입니다. 참조를 [GridView 컨트롤에서 TemplateFields 사용 하 여](../custom-formatting/using-templatefields-in-the-gridview-control-vb.md) 또는 [DataList 및 반복기 기반으로 데이터 서식 지정](../displaying-data-with-the-datalist-and-repeater/formatting-the-datalist-and-repeater-based-upon-data-vb.md) 서식 지정 함수를 사용 하 여 자세한 정보에 대 한 자습서입니다.
 
-
 이 이벤트 처리기를 추가한 후 시간을 내어 브라우저를 통해 페이지를 테스트 합니다. 각 범주의 범주 이름 및 범주와 관련 된 제품의 수를 표시, 글머리 기호 목록에 표시 됩니다 하는 방법 (그림 4 참조).
-
 
 [![각 이름이 범주와 제품 번호 표시 됩니다.](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image11.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image10.png)
 
 **그림 4**: 각 이름이 범주와 제품 번호 표시 됩니다 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image12.png))
 
-
 ## <a name="updating-thecategoriesdatatableandcategoriestableadapterto-include-the-number-of-products-for-each-category"></a>업데이트를`CategoriesDataTable`고`CategoriesTableAdapter`각 범주에 대 한 제품 개수를 포함 하려면
 
 하므로 각 범주에 대 한 제품 개수를 확인 하는 대신 s 바인딩할 반복기를 조정 하 여이 프로세스를 간소화할 수 있습니다 것 합니다 `CategoriesDataTable` 및 `CategoriesTableAdapter` 기본적으로이 정보를 포함 하도록 데이터 액세스 계층에서. 이렇게 하려면 새 열을 추가 해야 합니다 `CategoriesDataTable` 관련된 제품의 수를 보유 하 합니다. DataTable에 새 열을 추가할 입력 데이터 집합을 엽니다 (`App_Code\DAL\Northwind.xsd`), 데이터를 수정 하려면 테이블을 마우스 오른쪽 단추로 클릭 하 고 추가 선택 / 열입니다. 새 열을 추가 하 여 `CategoriesDataTable` (그림 5 참조).
-
 
 [![CategoriesDataSource에 새 열 추가](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image14.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image13.png)
 
 **그림 5**: 새 열을 추가 합니다 `CategoriesDataSource` ([큰 이미지를 보려면 클릭](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image15.png))
 
-
 이라는 새 열이 추가 `Column1`, 다른 이름을 입력 하 여 변경할 수 있습니다. 이 새 열 이름 바꾸기 `NumberOfProducts`합니다. 다음으로,이 열의 속성을 구성 해야 합니다. 새 열에서 클릭 하 고 속성 창으로 이동 합니다. S 열 변경 `DataType` 속성을 `System.String` 를 `System.Int32` 설정 합니다 `ReadOnly` 속성을 `True`그림 6 에서처럼 합니다.
-
 
 ![데이터 형식 및 새 열의 읽기 전용 속성을 설정 합니다.](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image16.png)
 
 **그림 6**: 설정 된 `DataType` 고 `ReadOnly` 새 열의 속성
 
-
 하는 동안를 `CategoriesDataTable` 이제는 `NumberOfProducts` 열, 해당 TableAdapter가의 쿼리 중 하나에서 해당 값을 설정 하지 않으면. 업데이트할 수 있습니다는 `GetCategories()` 범주 정보를 검색할 때마다 이러한 정보를 원하는 경우이 정보를 반환 하는 메서드 반환 합니다. 그러나 경우 드문 경우 (예:이 자습서를 위해 간단히) 범주에 대 한 연결 된 제품의 수를 가져오는 하기만 삭제할 수 있습니다. `GetCategories()` 으로-이며이 정보를 반환 하는 새 메서드를 만듭니다. Let s 라는 새 메서드 생성이 두 번째 접근 방식을 사용 `GetCategoriesAndNumberOfProducts()`합니다.
 
 이 새로 추가 하려면 `GetCategoriesAndNumberOfProducts()` 메서드를 마우스 오른쪽 단추로 클릭은 `CategoriesTableAdapter` 새 쿼리를 선택 합니다. 이렇게 하면 TableAdapter 쿼리 구성 마법사, 우리는 여러 번 이전 자습서에서에서 사용한 ve 가동 됩니다. 이 메서드에 대 한 쿼리는 행을 반환 하는 임시 SQL 문을 지정 하 여 마법사를 시작 합니다.
-
 
 [![임시 SQL 문을 사용 하는 메서드 만들기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image18.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image17.png)
 
 **그림 7**: 임시 SQL 문을 사용 하 여 메서드를 만듭니다 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image19.png))
 
-
 [![SQL 문이 행을 반환합니다.](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image21.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image20.png)
 
 **그림 8**: SQL 문이 반환 행 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image22.png))
 
-
 마법사의 다음 화면을 사용 하 여 쿼리에 대 한 요청입니다. 범주별 s 반환할 `CategoryID`, `CategoryName`, 및 `Description` 필드를 범주에 연관 된 제품 수와 함께 다음 사용 하 여 `SELECT` 문:
 
-
 [!code-sql[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample7.sql)]
-
 
 [![사용 하 여 쿼리를 지정 합니다.](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image24.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image23.png)
 
 **그림 9**: 쿼리를 사용 하 여 지정 합니다 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image25.png))
 
-
 범주와 관련 된 제품의 수를 계산 하는 하위 쿼리는 별칭이 `NumberOfProducts`합니다. 이 명명 일치 항목으로 인해 연결할이 하위 쿼리에서 반환한 값을 `CategoriesDataTable` s `NumberOfProducts` 열입니다.
 
 이 쿼리를 입력 한 후 마지막 단계는 새 메서드의 이름을 선택 하는 것입니다. 사용 하 여 `FillWithNumberOfProducts` 및 `GetCategoriesAndNumberOfProducts` 채우기 돌아가 DataTable DataTable 패턴, 각각.
-
 
 [![새 TableAdapter의 메서드 FillWithNumberOfProducts 이름과 GetCategoriesAndNumberOfProducts](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image27.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image26.png)
 
 **그림 10**: 새 tableadapter 메서드 이름을 `FillWithNumberOfProducts` 하 고 `GetCategoriesAndNumberOfProducts` ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image28.png))
 
-
 이 시점에서 데이터 액세스 계층 범주별 제품의 수를 포함 하도록 확장 되었습니다. 해당 추가 해야 하므로 모든 프레젠테이션 계층에는 dal과 별도 비즈니스 논리 레이어를 통해 모든 호출을 라우팅합니다 `GetCategoriesAndNumberOfProducts` 메서드는 `CategoriesBLL` 클래스:
-
 
 [!code-vb[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample8.vb)]
 
@@ -190,14 +159,11 @@ DAL 및 완료 하는 BLL을 사용 하 여 다시에서는 준비 된이 데이
 
 원래 상태의 Repeater를 사용 하 여 추가 라는 새로운 ObjectDataSource는 `CategoriesDataSource` Repeater가 스마트 태그를 통해. ObjectDataSource 사용 하도록 구성 합니다 `CategoriesBLL` 클래스를 사용 하는 대신 합니다 `GetCategories()` 메서드를 사용 했습니다 `GetCategoriesAndNumberOfProducts()` 대신 (그림 11 참조).
 
-
 [![GetCategoriesAndNumberOfProducts 메서드를 사용 하는 ObjectDataSource 구성](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image30.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image29.png)
 
 **그림 11**: ObjectDataSource를 사용 하 여 구성 합니다 `GetCategoriesAndNumberOfProducts` 메서드 ([큰 이미지를 보려면 클릭](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image31.png))
 
-
 다음으로 업데이트 하는 `ItemTemplate` 있도록 LinkButton s `Text` 속성이 데이터 바인딩 구문을 사용 하 여 선언적으로 할당 되었고이 모두 포함 합니다 `CategoryName` 및 `NumberOfProducts` 데이터 필드. 반복기에 대 한 전체 선언적 태그 및 `CategoriesDataSource` ObjectDataSource 따릅니다.
-
 
 [!code-aspx[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample9.aspx)]
 
@@ -212,29 +178,23 @@ DAL 포함 하도록 업데이트 하 여 렌더링 된 출력을 `NumberOfProdu
 > [!NOTE]
 > Repeater에 LinkButton을 사용 하는 경우 표시 되는 이러한 과제 중 하나입니다. 에서는 사용한 하이퍼링크에 전달 하는 `CategoryID` querystring을 통해 대신에서는 수 QueryString 필드 원본으로 사용할 매개 변수 s 값입니다.
 
-
 부족이 지 걱정 되기 전에 `SelectedValue` 는 반복기에 대 한 속성에는 하지만 먼저 DataList ObjectDataSource에 바인딩하고 지정 s 수 있도록 해당 `ItemTemplate`합니다.
 
 DataList s 스마트 태그에서 이라는 새 ObjectDataSource를 추가 하도록 선택할 `CategoryProductsDataSource` 를 사용 하도록 구성 합니다 `ProductsBLL` s 클래스 `GetProductsByCategoryID(categoryID)` 메서드. 이 자습서에서는 DataList 읽기 전용 인터페이스를 제공 하므로 자유롭게는 insert, UPDATE, 드롭 다운 목록을 설정 하 고 탭 (없음)를 삭제 합니다.
-
 
 [![ProductsBLL 클래스의 GetProductsByCategoryID(categoryID) 메서드를 사용 하는 ObjectDataSource 구성](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image33.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image32.png)
 
 **그림 12**: ObjectDataSource를 사용 하 여 구성할 `ProductsBLL` s 클래스 `GetProductsByCategoryID(categoryID)` 메서드 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image34.png))
 
-
 있으므로 합니다 `GetProductsByCategoryID(categoryID)` 메서드에서 입력된 매개 변수를 예상 (*`categoryID`*), 데이터 소스 구성 마법사를 사용 하면 매개 변수의 소스를 지정할 수 있도록 합니다. GridView 또는 DataList에 나열 된 범주를 d 설정 매개 변수 원본 드롭다운 목록 컨트롤에 대 한 ControlID를는 `ID` 데이터 웹 컨트롤입니다. Repeater에 있지만 이후에 `SelectedValue` 속성 매개 변수 원본으로 사용할 수 없습니다. 를 확인 하는 경우 있습니다 ControlID 드롭다운 목록 컨트롤을 하나씩만 포함 되어 있는지 `ID``CategoryProducts`, `ID` DataList입니다.
 
 이제 매개 변수 원본 드롭 다운 목록 None으로 설정 합니다. 우리가 최종적으로 프로그래밍 방식으로 범주 반복기에서 LinkButton을 클릭할 때이 매개 변수 값을 할당 합니다.
-
 
 [![매개 변수 원본에 대 한 categoryID 매개 변수를 지정 하지 않습니다](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image36.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image35.png)
 
 **그림 13**: 지정 하지 매개 변수 원본에 대해 수행 된 *`categoryID`* 매개 변수 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image37.png))
 
-
 데이터 소스 구성 마법사를 완료 한 후 Visual Studio 자동으로 생성 DataList의 `ItemTemplate`입니다. 이 기본값을 바꿉니다 `ItemTemplate` 템플릿을 사용 하 여 이전 자습서에서 사용 되는 것,이 또한 s DataList를 설정 `RepeatColumns` 속성을 2로 합니다. 이러한 변경을 수행한 후에 DataList 및 해당 관련된 ObjectDataSource의 선언 태그는 다음과 같이 표시 됩니다.
-
 
 [!code-aspx[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample10.aspx)]
 
@@ -250,28 +210,23 @@ DataList s 스마트 태그에서 이라는 새 ObjectDataSource를 추가 하�
 
 다음 `ItemTemplate` 범주 반복기에 대 한 태그 1 및 2 단계를 구현 합니다. 참고 하는 방법을 `CommandArgument` 값은 s 데이터 항목을 할당 `CategoryID` 데이터 바인딩 구문을 사용 하 여:
 
-
 [!code-aspx[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample11.aspx)]
 
 만들 때마다를 `ItemCommand` 이벤트 처리기를 항상 먼저 들어오는 확인 하는 것이 바람직합니다 `CommandName` 때문에 값 *든* `Command` 이벤트에 의해 발생 *모든* 단추, LinkButton, 또는 Repeater 내에서 ImageButton 하면는 `ItemCommand` 이벤트가 발생 합니다. 있지만 현재만 이러한 LinkButton 하나 지금, 나중에 것 (또는 팀의 다른 개발자) 수 추가 단추 웹 컨트롤을 추가 Repeater를 클릭 하면 발생 동일한 `ItemCommand` 이벤트 처리기입니다. 따라서이 항상 확인 해야 하는 최선의 s는 `CommandName` 속성 예상 값에 일치 하는 경우만 프로그래밍 논리를 진행 합니다.
 
 전달-에서 확인 한 후 `CommandName` 값이 ListProducts 이면 이벤트 처리기를 할당 합니다 `CategoryProductsDataSource` ObjectDataSource s `CategoryID` 매개 변수 값의 전달 기능 `CommandArgument`합니다. ObjectDataSource가이 수정 `SelectParameters` 자체 새로 선택한 범주의 제품을 보여 주는 데이터 원본에 바인딩할 DataList를 자동으로 발생 합니다.
 
-
 [!code-vb[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample12.vb)]
 
 이러한 추가 기능을 사용 하 여 자습서 완료 되었습니다! 브라우저에서 테스트에 대해 잠시 설명. 그림 14에서는 먼저 페이지를 방문할 때 화면을 보여 줍니다. 범주를 선택 해야 아직에 있으므로 제품이 표시 됩니다. 생성, 같은 범주를 클릭 하면 해당 제품 2 열 뷰에서 제품 범주에 표시 됩니다 (그림 15 참조).
-
 
 [![제품이 표시 되는 경우 첫 번째 페이지를 방문 하는](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image39.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image38.png)
 
 **그림 14**: 제품이 표시 되는 경우 첫 번째 페이지를 방문 하는 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image40.png))
 
-
 [![생성 범주 목록이 일치 하는 제품 오른쪽을 클릭합니다.](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image42.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image41.png)
 
 **그림 15**: 오른쪽에 일치 하는 제품을 나열 생성 범주를 클릭 하면 ([클릭 하 여 큰 이미지 보기](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image43.png))
-
 
 ## <a name="summary"></a>요약
 

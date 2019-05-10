@@ -8,17 +8,16 @@ ms.date: 10/05/2011
 ms.assetid: 754b8c66-cefc-42d6-9f02-685efabdfcc6
 msc.legacyurl: /web-forms/videos/aspnet-ajax
 msc.type: chapter
-ms.openlocfilehash: 5fc85b5ac4771d6784e9afa41e09d74474a605ba
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 52cc785a92bc3e902f0f3266333d6157c6a78354
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381304"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65116127"
 ---
 # <a name="aspnet-ajax"></a>ASP.NET AJAX
 
 > JavaScript 전문가 모르는 경우에 응답성이 뛰어난 페이지를 만드는 ASP.NET AJAX와 함께 작동 하는 방법입니다.
-
 
 - [ASP.NET AJAX 시작](how-do-i-get-started-with-aspnet-ajax.md)
 - [ASP.NET AJAX를 사용하여 동적 부분 페이지 업데이트 구현](how-do-i-implement-dynamic-partial-page-updates-with-aspnet-ajax.md)

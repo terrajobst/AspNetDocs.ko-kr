@@ -8,12 +8,12 @@ ms.date: 06/01/2015
 ms.assetid: c0090595-ab3b-4b9b-9e16-7a1891e8cb2f
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/troubleshooting
 msc.type: authoredcontent
-ms.openlocfilehash: b59cd34036c733579e678eab78097d3393f3e671
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 652ed86826616dec5a4d1900dd57d7e6fd43a4e7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59421084"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108886"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-troubleshooting"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 문제 해결
 
@@ -22,7 +22,6 @@ ms.locfileid: "59421084"
 [시작 프로젝트 다운로드](http://go.microsoft.com/fwlink/p/?LinkId=282627)
 
 > 이 자습서 시리즈를 배포 하는 방법을 보여 줍니다. ASP.NET (게시) Visual Studio 2012 또는 Visual Studio 2010을 사용 하 여 웹 응용 프로그램을 Azure App Service Web Apps 또는 타사 호스팅 공급자입니다. 시리즈에 대 한 자세한 내용은 [시리즈의 첫 번째 자습서](introduction.md)합니다.
-
 
 이 페이지에서는 Visual Studio를 사용 하 여 ASP.NET 웹 응용 프로그램을 배포할 때 발생할 수 있는 몇 가지 일반적인 문제를 설명 합니다. 각각에 대 한 가능한 원인과 해당 솔루션은 하나 이상의 제공 됩니다.
 

@@ -8,12 +8,12 @@ ms.date: 04/23/2009
 ms.assetid: ff537a10-9f1f-43fe-9bcb-3dda161ba8f5
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/deploying-a-database-cs
 msc.type: authoredcontent
-ms.openlocfilehash: da63b39fcad58580dd1f9c86b811b1a2dcc1cf7e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 7c0c563308df56594c518e15a9ef3088017b6d71
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59416651"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108977"
 ---
 # <a name="deploying-a-database-c"></a>데이터베이스 배포(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59416651"
 [코드를 다운로드](http://download.microsoft.com/download/E/6/F/E6FE3A1F-EE3A-4119-989A-33D1A9F6F6DD/ASPNET_Hosting_Tutorial_07_CS.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/C/3/9/C391A649-B357-4A7B-BAA4-48C96871FEA6/aspnet_tutorial07_DeployDB_cs.pdf)
 
 > ASP.NET 웹 응용 프로그램 개발 환경에서 프로덕션 환경에 필요한 파일 및 리소스를 시작 하는 작업을 수반 합니다. 데이터 기반 웹 응용 프로그램에 대 한 데이터베이스 스키마 및 데이터 포함 합니다. 이 자습서는 성공적으로 프로덕션 개발 환경에서 데이터베이스를 배포 하는 데 필요한 단계를 탐색 하는 일련의 첫 번째입니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -42,30 +41,24 @@ ASP.NET 웹 응용 프로그램 개발 환경에서 프로덕션 환경에 필�
 - `Books` -같은 열이 포함 된 각 검토에 대 한 레코드를 포함 `Title`, `GenreId`를 `ReviewDate`, 및 `Review`, 특히 합니다.
 - `Authors` -검토 북에 기여한 각 작성자에 대 한 정보를 포함 합니다.
 - `BooksAuthors` -어떤 작성자가 어떤 권의 책을 저술 하는 것을 지정 하는 다 대 다 조인 테이블이 있습니다.
-  
 
 그림 1에서는 이러한 네 가지 테이블의 ER 다이어그램을 보여 줍니다.
-
 
 [![책 검토 웹 응용 프로그램의 데이터베이스는 네 가지 테이블의 구성](deploying-a-database-cs/_static/image2.jpg)](deploying-a-database-cs/_static/image1.jpg) 
 
 **그림 1**: 책 검토 웹 응용 프로그램의 데이터베이스는 네 가지 테이블의 구성 ([클릭 하 여 큰 이미지 보기](deploying-a-database-cs/_static/image3.jpg))
 
-
 이전 버전도 서 리뷰 웹 사이트의 각 책에 대 한 별도 ASP.NET 페이지를 했습니다. 예를 들어 라는 페이지 했습니다 `~/Tech/TYASP35.aspx` 에 대 한 검토를 포함 하는 *가르치는 직접 ASP.NET 3.5 24 시간 동안에서*합니다. 웹 사이트의이 새 데이터 기반 버전에는 데이터베이스 및 Review.aspx?ID= 단일 ASP.NET 페이지에 저장 된 검토*bookId*, 지정 된 책에 대 한 검토를 표시 합니다. 마찬가지로, 있는지는 Genre.aspx?ID=*genreId* 지정 장르의 검토 책을 나열 하는 페이지입니다.
 
 그림 2와 3 표시 합니다 `Genre.aspx` 및 `Review.aspx` 작업의 페이지입니다. 각 페이지에 대 한 주소 표시줄에 URL을 note 합니다. 그림 2 it s Genre.aspx? ID = 4-1123 85d164ba-c 47-82a0-c8ec75de7e0e 합니다. 85d164ba-1123-4c47-82a0-c8ec75de7e0e 이므로 `GenreId` 기술 장르, "기술 검토" s 페이지 머리글 읽기 및 글머리 기호 목록에 대 한 값이이 장르에 속하는 사이트에서 해당 검토를 열거 합니다.
-
 
 [![기술 장르 페이지](deploying-a-database-cs/_static/image5.jpg)](deploying-a-database-cs/_static/image4.jpg) 
 
 **그림 2**: 기술 장르 페이지 ([클릭 하 여 큰 이미지 보기](deploying-a-database-cs/_static/image6.jpg))
 
-
 [![에 대 한 검토를 익힐 ASP.NET 3.5에서 24 시간](deploying-a-database-cs/_static/image8.jpg)](deploying-a-database-cs/_static/image7.jpg) 
 
 **그림 3**: 에 대 한 검토 *가르치는 직접 ASP.NET 3.5 24 시간 동안의* ([클릭 하 여 큰 이미지 보기](deploying-a-database-cs/_static/image9.jpg))
-
 
 서평 웹 응용 프로그램에 있는 관리자 수 추가, 편집, 삭제 장르를 검토 하 고 정보를 작성 하는 관리 섹션도를 포함 됩니다. 현재 모든 방문자의 관리 섹션을 액세스할 수 있습니다. 이후 자습서에서 사용자 계정에 대 한 지원을 추가 하 고 관리 페이지에만 권한이 있는 사용자를 허용 했습니다.
 
@@ -95,48 +88,38 @@ ASP.NET 웹 응용 프로그램 개발 환경에서 프로덕션 환경에 필�
 
 Visual Studio를 열고 이동할는 `Reviews.mdf` 데이터베이스입니다. Visual Web Developer를 사용 하는 경우 데이터베이스 탐색기;로 이동 Visual Studio를 사용 하는 경우 서버 탐색기를 사용 합니다. 그림 4는 `Reviews.mdf` Visual Web Developer에서 데이터베이스 탐색기에서 데이터베이스입니다. 그림 4에서 알 수 있듯이는 `Reviews.mdf` 데이터베이스 4 개의 테이블, 3 개의 저장된 프로시저 및 사용자 정의 함수를 이루어집니다.
 
-
 [![데이터베이스 탐색기 또는 서버 탐색기에서 데이터베이스를 찾아](deploying-a-database-cs/_static/image11.jpg)](deploying-a-database-cs/_static/image10.jpg) 
 
 **그림 4**: 데이터베이스 탐색기 또는 서버 탐색기에서 데이터베이스를 찾습니다 ([클릭 하 여 큰 이미지 보기](deploying-a-database-cs/_static/image12.jpg))
 
-
 데이터베이스 이름을 마우스 오른쪽 상황에 맞는 메뉴에서 "공급자에 게시" 옵션을 선택 합니다. 데이터베이스 게시 마법사가 시작 됩니다 (그림 5 참조). 시작 화면을 지 나 고급을 클릭 합니다.
-
 
 [![데이터베이스 게시 마법사 시작 화면](deploying-a-database-cs/_static/image14.jpg)](deploying-a-database-cs/_static/image13.jpg) 
 
 **그림 5**: 데이터베이스 게시 마법사 시작 화면 ([클릭 하 여 큰 이미지 보기](deploying-a-database-cs/_static/image15.jpg))
-
 
 마법사에서 두 번째 화면 데이터베이스 게시 마법사에 액세스할 수 있는 데이터베이스를 나열 하 고 선택한 데이터베이스의 모든 개체 스크립팅 또는 스크립팅할 개체 선택 여부를 선택할 수 있습니다. 적절 한 데이터베이스를 선택 하 고 "모든 스크립트는 선택한 데이터베이스에서 개체" 옵션을 선택한 상태로 둡니다.
 
 > [!NOTE]
 > 오류가 발생 하는 경우 "데이터베이스에 개체가 없는 *databaseName* 이 마법사에서 스크립팅 가능한 형식" 그림 6에 표시 된 화면에서 다음을 클릭 하는 경우에 데이터베이스 파일의 경로를 지나치게 긴 없습니다 인지 확인 합니다. 검색 데이터베이스 파일에 경로가 너무 깁니다.이 오류가 발생할 수 있습니다.
 
-
 [![데이터베이스 게시 마법사 시작 화면](deploying-a-database-cs/_static/image17.jpg)](deploying-a-database-cs/_static/image16.jpg) 
 
 **그림 6**: 데이터베이스 게시 마법사 시작 화면 ([클릭 하 여 큰 이미지 보기](deploying-a-database-cs/_static/image18.jpg))
 
-
 다음 화면에서 스크립트 파일 생성을 하거나 수 웹 호스트가 지 원하는 경우 웹 호스트 공급자가의 데이터베이스 서버에 직접 데이터베이스를 게시 합니다. 그림 7에서 알 수 있듯이, 있음 파일에 작성 된 스크립트 `C:\REVIEWS.MDF.sql`합니다.
-
 
 [![데이터베이스를 파일에 스크립트 또는 사용자 웹 호스트 공급자에 게 직접 게시](deploying-a-database-cs/_static/image20.jpg)](deploying-a-database-cs/_static/image19.jpg) 
 
 **그림 7**: 데이터베이스를 파일에 스크립트 또는 해당 웹 호스트 공급자에 직접 게시할 ([클릭 하 여 큰 이미지 보기](deploying-a-database-cs/_static/image21.jpg))
 
-
 후속 화면 다양 한 스크립팅 옵션에 대 한 라는 메시지를 표시 합니다. 스크립트에서 이러한 기존 개체를 제거 하려면 drop 문을 포함할지 여부를 지정할 수 있습니다. 이 기본값은 True로 되어 있는데 처음으로 데이터베이스를 배포 하는 경우입니다. SQL Server 2000, SQL Server 2005 또는 SQL Server 2008 데이터베이스에서 대상 데이터베이스로 인지 여부를 지정할 수 있습니다. 마지막으로, 스키마 및 데이터를 스크립팅할 지 여부를 지정할 수 있습니다는 데이터만 또는 스키마만 합니다. 스키마는 데이터베이스 개체, 테이블, 저장된 프로시저, 뷰 및 등의 컬렉션입니다. 데이터는 테이블에 있는 정보입니다.
 
 그림 8에서 알 수 있듯이, I ve SQL Server 2008 데이터베이스에 대 한 스크립트를 생성 하 고 스키마와 데이터를 게시 하려면 기존 데이터베이스 개체를 삭제 하려면 구성 마법사를 가져왔습니다.
 
-
 [![지정 된 게시 옵션](deploying-a-database-cs/_static/image23.jpg)](deploying-a-database-cs/_static/image22.jpg) 
 
 **그림 8**: 게시 옵션 지정 ([클릭 하 여 큰 이미지 보기](deploying-a-database-cs/_static/image24.jpg))
-
 
 마지막 두 개의 화면 요약 작업을 수행 하 고 다음 스크립트의 상태를 표시 하려고 합니다. 마법사를 실행 결과 프로덕션에서 데이터베이스를 만들고 개발에서와 동일한 데이터를 입력 하는 데 필요한 SQL 명령이 포함 된 스크립트 파일을 하는 것입니다.
 
@@ -148,32 +131,25 @@ SQL Server Management Studio (SSMS)를 사용 하 여 프로덕션 데이터베�
 
 SSMS를 시작 하 고 웹 호스트 공급자가 제공한 정보를 사용 하 여 웹 호스트의 데이터베이스 서버에 연결 합니다.
 
-
 [![웹 호스트 공급자가의 데이터베이스 서버에 연결](deploying-a-database-cs/_static/image26.jpg)](deploying-a-database-cs/_static/image25.jpg) 
 
 **그림 9**: 해당 웹 호스트 공급자가의 데이터베이스 서버에 연결 ([클릭 하 여 큰 이미지 보기](deploying-a-database-cs/_static/image27.jpg))
 
-
 데이터베이스 탭을 확장 하 고 데이터베이스를 찾습니다. 도구 모음의 왼쪽된 위 모퉁이에 있는 새 쿼리 단추를 클릭 하 고 데이터베이스 게시 마법사에서 만든 스크립트 파일에서 SQL 명령에 붙여 넣습니다 프로덕션 데이터베이스 서버에서 다음이 명령을 실행 하려면 실행 단추를 클릭 합니다. 스크립트 파일은 특히 큰 명령을 실행 하는 데 몇 분 정도 걸릴 수 있습니다.
-
 
 [![웹 호스트 공급자가의 데이터베이스 서버에 연결](deploying-a-database-cs/_static/image29.jpg)](deploying-a-database-cs/_static/image28.jpg) 
 
 **그림 10**: 해당 웹 호스트 공급자가의 데이터베이스 서버에 연결 ([클릭 하 여 큰 이미지 보기](deploying-a-database-cs/_static/image30.jpg))
 
-
 S 모두 완료 되었습니다! 이 시점에서 개발 데이터베이스를 프로덕션 중복 되었습니다. SSMS에서 데이터베이스를 새로 고치는 경우 새 데이터베이스 개체가 표시 됩니다. 그림 11에는 프로덕션 데이터베이스의 테이블, 저장된 프로시저 및 개발 데이터베이스의 미러는 사용자 정의 함수를 보여 줍니다. 및 프로덕션 데이터베이스의 테이블 마법사 실행 된 시간 개발 데이터베이스 s 테이블과 동일한 데이터에 있으므로 데이터를 게시할 데이터베이스 게시 마법사에 지시 했습니다. 데이터를 표시 하는 그림 12는 `Books` 프로덕션 데이터베이스에서 테이블입니다.
-
 
 [![프로덕션 데이터베이스에서 중복 된 데이터베이스 개체](deploying-a-database-cs/_static/image32.jpg)](deploying-a-database-cs/_static/image31.jpg) 
 
 **그림 11**: 데이터베이스 개체는 복제 된 프로덕션 데이터베이스에서 ([클릭 하 여 큰 이미지 보기](deploying-a-database-cs/_static/image33.jpg))
 
-
 [![프로덕션 데이터베이스 개발 데이터베이스와 동일한 데이터를 포함합니다.](deploying-a-database-cs/_static/image35.jpg)](deploying-a-database-cs/_static/image34.jpg) 
 
 **그림 12**: 개발 데이터베이스에서 동일한 데이터를 포함 하는 프로덕션 데이터베이스 ([클릭 하 여 큰 이미지 보기](deploying-a-database-cs/_static/image36.jpg))
-
 
 이 시점에서 프로덕션 환경에 개발 데이터베이스를 배포만 했습니다. 아직 웹 응용 프로그램 자체 배포 살펴보았습니다 중이거나 응용 프로그램을 프로덕션에서 프로덕션 데이터베이스를 사용 하는 데 필요한 구성 변경 내용을 검사 했습니다. 여기서 다음 자습서에서 이러한 문제를 살펴보겠습니다.
 

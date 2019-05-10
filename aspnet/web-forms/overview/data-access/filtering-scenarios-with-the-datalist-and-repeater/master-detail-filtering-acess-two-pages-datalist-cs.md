@@ -8,12 +8,12 @@ ms.date: 10/30/2010
 ms.assetid: 68b8c023-92fa-4df6-9563-1764e16e4b04
 msc.legacyurl: /web-forms/overview/data-access/filtering-scenarios-with-the-datalist-and-repeater/master-detail-filtering-acess-two-pages-datalist-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 4fbb165f8ce80d560589a43c60920a6e68893d46
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: cdb6accefc97e413c5b4c9be30af3c729db6a452
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59390508"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65109583"
 ---
 # <a name="masterdetail-filtering-across-two-pages-c"></a>두 페이지에 걸쳐 마스터/세부 정보 필터링(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59390508"
 [샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_34_CS.exe) 또는 [PDF 다운로드](master-detail-filtering-acess-two-pages-datalist-cs/_static/datatutorial34cs1.pdf)
 
 > 이 자습서에서는 두 페이지에 걸쳐 마스터/세부 정보 보고서를 구분 하는 방법에 살펴봅니다. "마스터" 페이지에서 클릭, 두 개의 열 DataList 선택한 범주에 속하는 해당 제품을 표시 하는 위치 "정보" 페이지로 사용자 이동 됩니다 때 범주 목록이 렌더링할 Repeater 컨트롤을 사용 합니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -36,11 +35,9 @@ DataList 및 반복기 컨트롤을 사용 하 여 이러한 두 페이지 마�
 
 마스터/세부 정보 보고서를 만드는 첫 번째 단계는 "마스터" 레코드를 표시 하 여 시작 하는 것입니다. 따라서 우선 "마스터" 페이지에서 범주를 표시 하는 것입니다. 엽니다는 `CategoryListMaster.aspx` 페이지에 `DataListRepeaterFiltering` 폴더 Repeater 컨트롤을 추가 하 고, 스마트 태그에서 새 ObjectDataSource를 추가 하도록 선택할. 해당 데이터에 액세스할 수 있도록 새 ObjectDataSource를 구성 합니다 `CategoriesBLL` 클래스의 `GetCategories` 메서드 (그림 1 참조).
 
-
 [![CategoriesBLL 클래스의 GetCategories 메서드를 사용 하는 ObjectDataSource 구성](master-detail-filtering-acess-two-pages-datalist-cs/_static/image2.png)](master-detail-filtering-acess-two-pages-datalist-cs/_static/image1.png)
 
 **그림 1**: ObjectDataSource를 사용 하 여 구성 합니다 `CategoriesBLL` 클래스의 `GetCategories` 메서드 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-acess-two-pages-datalist-cs/_static/image3.png))
-
 
 그런 다음 각 범주 이름과 설명을 글머리 기호 목록에 항목으로 표시 되도록 반복기의 템플릿을 정의 합니다. 보겠습니다 아직 걱정할 범주별 세부 정보 페이지에 링크 합니다. 다음은 반복기 및 ObjectDataSource에 대 한 선언적 태그.
 
@@ -48,11 +45,9 @@ DataList 및 반복기 컨트롤을 사용 하 여 이러한 두 페이지 마�
 
 전체이 태그를 사용 하 여 시간을 내어 브라우저를 통해 진행 상황을 확인 합니다. 그림 2에서 볼 수 있듯이 각 범주 이름과 설명을 보여 주는 글머리 기호 목록으로 반복기를 렌더링 합니다.
 
-
 [![각 범주에 글머리 기호 목록 항목으로 표시 됩니다.](master-detail-filtering-acess-two-pages-datalist-cs/_static/image5.png)](master-detail-filtering-acess-two-pages-datalist-cs/_static/image4.png)
 
 **그림 2**: 각 범주에 글머리 기호 목록 항목으로 표시 됩니다 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-acess-two-pages-datalist-cs/_static/image6.png))
-
 
 ## <a name="step-2-turning-the-category-name-into-a-link-to-the-details-page"></a>2단계: 세부 정보 페이지에 대 한 링크에 범주 이름 설정
 
@@ -72,29 +67,23 @@ DataList 및 반복기 컨트롤을 사용 하 여 이러한 두 페이지 마�
 
 수행 하는 경우 자유롭게 페이지 앵커 요소 또는 하이퍼링크 컨트롤 접근 방식을 사용 합니다. 각 범주 이름에 대 한 링크로 렌더링 되어야 하는 브라우저를 통해 페이지를 볼 때 접근 방식에 관계 없이 `ProductsForCategoryDetails.aspx`해당 전달 `CategoryID` 값 (그림 3 참조).
 
-
 [![범주 이름이 이제 ProductsForCategoryDetails.aspx에 연결](master-detail-filtering-acess-two-pages-datalist-cs/_static/image8.png)](master-detail-filtering-acess-two-pages-datalist-cs/_static/image7.png)
 
 **그림 3**: 범주 이름은 이제 대 한 링크 `ProductsForCategoryDetails.aspx` ([큰 이미지를 보려면 클릭](master-detail-filtering-acess-two-pages-datalist-cs/_static/image9.png))
-
 
 ## <a name="step-3-listing-the-products-that-belong-to-the-selected-category"></a>3단계: 선택한 범주에 속하는 제품 나열
 
 사용 하 여 합니다 `CategoryListMaster.aspx` 완료 페이지에서 준비가 "정보" 페이지를 구현 하는 데 알아보겠습니다 `ProductsForCategoryDetails.aspx`합니다. 이 페이지를 열려면 DataList 디자이너 도구 상자에서 끌어서 설정 해당 `ID` 속성을 `ProductsInCategory`입니다. 다음으로, DataList의 스마트 태그에서 새 ObjectDataSource 이름을 지정 하는 페이지에 추가 하도록 선택할 `ProductsInCategoryDataSource`합니다. 호출 되도록 구성 합니다 `ProductsBLL` 클래스의 `GetProductsByCategoryID(categoryID)` 방법으로, 드롭다운 목록에서 INSERT, UPDATE 및 DELETE 탭 (없음)을 나열 하는 집합입니다.
 
-
 [![ProductsBLL 클래스의 GetProductsByCategoryID(categoryID) 메서드를 사용 하는 ObjectDataSource 구성](master-detail-filtering-acess-two-pages-datalist-cs/_static/image11.png)](master-detail-filtering-acess-two-pages-datalist-cs/_static/image10.png)
 
 **그림 4**: ObjectDataSource를 사용 하 여 구성 합니다 `ProductsBLL` 클래스의 `GetProductsByCategoryID(categoryID)` 메서드 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-acess-two-pages-datalist-cs/_static/image12.png))
 
-
 이후 합니다 `GetProductsByCategoryID(categoryID)` 메서드에서 입력된 매개 변수 (*`categoryID`*), 매개 변수의 소스를 지정할 수 있도록 데이터 원본 선택 마법사에서 제공 합니다. QueryStringField를 사용 하 여 쿼리 문자열 매개 변수 원본으로 `CategoryID`합니다.
-
 
 [![Querystring 필드 CategoryID 매개 변수의 원본으로 사용](master-detail-filtering-acess-two-pages-datalist-cs/_static/image14.png)](master-detail-filtering-acess-two-pages-datalist-cs/_static/image13.png)
 
 **그림 5**: 쿼리 문자열 필드를 사용 하 여 `CategoryID` 매개 변수의 원본으로 ([큰 이미지를 보려면 클릭](master-detail-filtering-acess-two-pages-datalist-cs/_static/image15.png))
-
 
 앞서 설명한 것 처럼 이전 자습서에서는 데이터 소스 선택 마법사를 완료 한 후 자동으로 만들어지고는 `ItemTemplate` 각 데이터 필드 이름 및 값을 나열 하는 DataList에 대 한 합니다. 제품의 이름, 공급자 및 가격을 나열 하는 하나를 사용 하 여이 서식 파일을 대체 합니다. DataList의 설정, `RepeatColumns` 속성을 2로 합니다. 이러한 변경 된 후에 DataList 및 ObjectDataSource의 선언 태그 다음과 비슷하게 표시 됩니다.
 
@@ -102,11 +91,9 @@ DataList 및 반복기 컨트롤을 사용 하 여 이러한 두 페이지 마�
 
 시작 작업에서이 페이지를 보려는 `CategoryListMaster.aspx` 페이지를 다음으로, 범주 글머리 기호 목록에서 링크를 클릭 합니다. 이렇게 하면 `ProductsForCategoryDetails.aspx`함께 전달 된 `CategoryID` querystring을 통해. `ProductsInCategoryDataSource` ObjectDataSource `ProductsForCategoryDetails.aspx` 지정한 범주에 대 한 해당 제품을 가져옵니다 되며 행 마다 두 개의 제품을 렌더링 하는 DataList를 표시 합니다. 그림 6의 스크린샷이 나와 `ProductsForCategoryDetails.aspx` 음료를 볼 때.
 
-
 [![음료 표시 되는 행 당 2 개](master-detail-filtering-acess-two-pages-datalist-cs/_static/image17.png)](master-detail-filtering-acess-two-pages-datalist-cs/_static/image16.png)
 
 **그림 6**: 음료 표시 되는 행 당 2 개 ([전체 크기 이미지를 보려면 클릭](master-detail-filtering-acess-two-pages-datalist-cs/_static/image18.png))
-
 
 ## <a name="step-4-displaying-category-information-on-productsforcategorydetailsaspx"></a>4단계: ProductsForCategoryDetails.aspx에 범주 정보를 표시합니다.
 
@@ -114,11 +101,9 @@ DataList 및 반복기 컨트롤을 사용 하 여 이러한 두 페이지 마�
 
 이렇게 하려면 추가 Repeater 컨트롤 위에 FormView `ProductsForCategoryDetails.aspx`합니다. 그런 다음 새 ObjectDataSource 라는 FormView의 스마트 태그에서 페이지 추가 `CategoryDataSource` 를 사용 하도록 구성 합니다 `CategoriesBLL` 클래스의 `GetCategoryByCategoryID(categoryID)` 메서드.
 
-
 [![CategoriesBLL 클래스의 GetCategoryByCategoryID(categoryID) 메서드를 통해 범주에 대 한 액세스 정보](master-detail-filtering-acess-two-pages-datalist-cs/_static/image20.png)](master-detail-filtering-acess-two-pages-datalist-cs/_static/image19.png)
 
 **그림 7**: 통해 범주에 대 한 정보에 액세스 합니다 `CategoriesBLL` 클래스의 `GetCategoryByCategoryID(categoryID)` 메서드 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-acess-two-pages-datalist-cs/_static/image21.png))
-
 
 와 마찬가지로 `ProductsInCategoryDataSource` ObjectDataSource 3 단계에서에서 추가 `CategoryDataSource`의 데이터 소스 구성 마법사에 대 한 소스에 대 한 요청을 `GetCategoryByCategoryID(categoryID)` 메서드 매개 변수 입력 합니다. 정확히 동일한 설정을 사용 앞으로 QueryString QueryStringField 값을로 설정 하는 매개 변수 원본 `CategoryID` (그림 5를 다시 참조).
 
@@ -131,11 +116,9 @@ DataList 및 반복기 컨트롤을 사용 하 여 이러한 두 페이지 마�
 > [!NOTE]
 > FormView, 외에도 추가 했습니다 하는 데 필요한 사용자 범주의 목록으로 돌아가기 FormView 위에 하이퍼링크 컨트롤 (`CategoryListMaster.aspx`). 이 링크를 다른 곳에서 배치 하거나 완전히 생략 해도 됩니다.
 
-
 [![범주 정보는 이제 페이지의 맨 위에 표시](master-detail-filtering-acess-two-pages-datalist-cs/_static/image23.png)](master-detail-filtering-acess-two-pages-datalist-cs/_static/image22.png)
 
 **그림 8**: 범주 정보는 이제 페이지의 맨 위에 표시 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-acess-two-pages-datalist-cs/_static/image24.png))
-
 
 ## <a name="step-5-displaying-a-message-if-no-products-belong-to-the-selected-category"></a>5단계: 제품이 없습니다. 선택한 범주에 속하는 경우에 메시지를 표시 합니다.
 
@@ -157,11 +140,9 @@ DataList 및 반복기 컨트롤을 사용 하 여 이러한 두 페이지 마�
 
 데이터베이스를 그에 따라 업데이트 한 후에 반환 된 `CategoryListMaster.aspx` 페이지 및 생성 링크를 클릭 합니다. 더 이상 생성 범주에 속하는 모든 제품을 없으므로 그림 9에 표시 된 대로 "제품이 없습니다 선택한 범주..." 메시지를 표시 됩니다.
 
-
 [![선택한 범주에 없는 제품 속하는 경우 메시지가 표시 됩니다.](master-detail-filtering-acess-two-pages-datalist-cs/_static/image26.png)](master-detail-filtering-acess-two-pages-datalist-cs/_static/image25.png)
 
 **그림 9**: 선택한 범주에 없는 제품 속하는 경우 메시지가 표시 됩니다 ([클릭 하 여 큰 이미지 보기](master-detail-filtering-acess-two-pages-datalist-cs/_static/image27.png))
-
 
 ## <a name="summary"></a>요약
 

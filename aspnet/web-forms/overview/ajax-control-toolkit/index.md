@@ -8,12 +8,12 @@ ms.date: 10/05/2011
 ms.assetid: 76242ce9-e611-41d2-95e8-dc5f406d4bfc
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit
 msc.type: chapter
-ms.openlocfilehash: 795283c33d63272b29b91fd7037c3463bc71abad
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: d7d0426ed427f3b8fc8c7f9c2fe1518b1887d695
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59410749"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65115382"
 ---
 # <a name="older-versions---ajax-control-toolkit"></a>이전 버전 - Ajax 컨트롤 도구 키트
 
@@ -21,7 +21,6 @@ ms.locfileid: "59410749"
 > 
 > 
 > ![](index/_static/image1.png) DevExpress, 수상 경력이 있는 ASP.NET WebForms, MVC 및 HTML5 UI 컨트롤 및 프레임 워크의 개발자가이 높은 요구 하는 오픈 소스 라이브러리를 신뢰할 수 있는 상태로 전환 하기 위해 ASP.NET AJAX Control Toolkit의 유지 관리 인계 합니다. [자세한](https://go.devexpress.com/AjaxControlToolkit_ASP_Resources_Tutorials.aspx)합니다.
-
 
 - [시작](getting-started/index.md)
 

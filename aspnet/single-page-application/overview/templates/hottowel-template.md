@@ -8,12 +8,12 @@ ms.date: 02/09/2013
 ms.assetid: 75af2e17-6ed3-4d24-8ea1-bc340027c318
 msc.legacyurl: /single-page-application/overview/templates/hottowel-template
 msc.type: authoredcontent
-ms.openlocfilehash: 017f550e2caffe1b20823e9b1880cbb4e968005a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f3457840d1597d06c1a1b1ec2a865dd70726446c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379939"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113339"
 ---
 # <a name="hot-towel-template"></a>Hot Towel 템플릿
 
@@ -30,13 +30,11 @@ ms.locfileid: "59379939"
 > 
 > 핫 수건: 없는 SPA로 이동 하려고 하지 마세요 때문에!
 
-
 SPA를 작성 하 고 싶지만 시작 위치를 결정할 수 없습니다. 핫 수건을 사용 하 고 (초)에서 수 있고 SPA를 토대로 하는 데 필요한 모든 도구!
 
 핫 수건 단일 페이지 응용 프로그램 (SPA) ASP.NET 사용 하 여 구축 하기 위한 좋은 시작점이 만듭니다. 즉시 있습니다 제공 모듈형 구조 코드, 뷰 탐색, 데이터 바인딩, 다양 한 데이터 관리 및 간단 하지만 세련 된 스타일을 지정 합니다. 핫 수건은 앱을 연결 하지에 집중할 수 있도록 SPA를 작성 하는 데 필요한 모든 것을 제공 합니다.
 
 > SPA를 빌드하는 방법을 자세히 알아봅니다 [John Papa의 비디오, 자습서 및 Pluralsight 과정](http://johnpapa.net/spa?vsix)합니다.
-
 
 ## <a name="application-structure"></a>응용 프로그램 구조
 

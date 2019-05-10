@@ -8,12 +8,12 @@ ms.date: 01/30/2013
 ms.assetid: f9c07af0-4b20-4b08-af8f-47fc3df169a2
 msc.legacyurl: /single-page-application/overview/introduction/knockoutjs-template
 msc.type: authoredcontent
-ms.openlocfilehash: 20d2d4412345399acdde1535447cc18b6611b572
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3a551db1caa9636eb7f2e04c287d3ef371263584
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59412855"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113454"
 ---
 # <a name="single-page-application-knockoutjs-template"></a>단일 페이지 애플리케이션: KnockoutJS 템플릿
 
@@ -22,7 +22,6 @@ ms.locfileid: "59412855"
 > ASP.NET 및 웹 도구 2012.2의 일부인 Knockout MVC 템플릿
 > 
 > [ASP.NET 및 Web Tools 2012.2 다운로드](https://go.microsoft.com/fwlink/?LinkId=282650)
-
 
 ASP.NET MVC 4에 대 한 단일 페이지 응용 프로그램 (SPA) 템플릿을 포함 하는 ASP.NET 및 웹 도구 2012.2 업데이트 합니다. 이 템플릿은 신속 하 게 대화형 클라이언트 쪽 웹 앱을 빌드하기 시작할 수 있도록 설계 되었습니다.
 

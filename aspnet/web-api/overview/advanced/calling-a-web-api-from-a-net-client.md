@@ -8,12 +8,12 @@ ms.date: 11/24/2017
 ms.custom: seoapril2019
 msc.legacyurl: /web-api/overview/advanced/calling-a-web-api-from-a-net-client
 msc.type: authoredcontent
-ms.openlocfilehash: 113600ca1e77ae9667465464da505478fc948c9b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ca3b9424f30f48c7b8c71b850ffeca64244b123b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59421110"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112836"
 ---
 # <a name="call-a-web-api-from-a-net-client-c"></a>.NET 클라이언트 (C#)에서 Web API 호출
 
@@ -165,7 +165,7 @@ GET, 같은 삭제 요청 되지 않은 요청 본문입니다. 삭제를 사용
 
 클라이언트 앱을 테스트 합니다.
 
-1. [다운로드](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client/sample/server) 및 서버 앱을 실행 합니다. [지침을 다운로드하세요](/aspnet/core/tutorials/#how-to-download-a-sample). 서버 앱이 작동을 확인 합니다. 예를 들어 `http://localhost:64195/api/products` 제품 목록을 반환 해야 합니다.
+1. [다운로드](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client/sample/server) 및 서버 앱을 실행 합니다. [지침을 다운로드하세요](/aspnet/core/#how-to-download-a-sample). 서버 앱이 작동을 확인 합니다. 예를 들어 `http://localhost:64195/api/products` 제품 목록을 반환 해야 합니다.
 2. HTTP 요청에 대 한 기본 URI를 설정 합니다. 서버 앱에서 사용 되는 포트를 포트 번호를 변경 합니다.
     [!code-csharp[Main](calling-a-web-api-from-a-net-client/sample/client/Program.cs?name=snippet5&highlight=2)]
 

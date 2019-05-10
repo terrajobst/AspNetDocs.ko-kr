@@ -8,12 +8,12 @@ ms.date: 02/20/2007
 ms.assetid: 9673bef3-892c-45ba-a7d8-0da3d6f48ec5
 msc.legacyurl: /web-forms/overview/data-access/accessing-the-database-directly-from-an-aspnet-page/inserting-updating-and-deleting-data-with-the-sqldatasource-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 5be1fd787c1ee001ce46384162eaebc89ec5c0a8
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: a52f5db8dbda2ec8f556d2627271f53ffbcc3045
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59404782"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65115074"
 ---
 # <a name="inserting-updating-and-deleting-data-with-the-sqldatasource-vb"></a>SqlDataSource를 사용하여 데이터 삽입, 업데이트 및 삭제(VB)
 
@@ -23,7 +23,6 @@ ms.locfileid: "59404782"
 
 > 이전 자습서에서 삽입, 업데이트 및 데이터 삭제에 대 한 ObjectDataSource 컨트롤을 허용 하는 방법을 알게 되었습니다. SqlDataSource 컨트롤 같은 연산을 지원 하지만 방법은 다른 및이 자습서에서는 삽입, 업데이트 및 데이터를 삭제 하려면 SqlDataSource를 구성 하는 방법을 보여 줍니다.
 
-
 ## <a name="introduction"></a>소개
 
 에 설명 된 대로 [An 개요의 삽입, 업데이트 및 삭제](../editing-inserting-and-deleting-data/an-overview-of-inserting-updating-and-deleting-data-vb.md)GridView 컨트롤 기본 제공 업데이트를 제공 하며 함께 삽입 FormView 및 DetailsView 컨트롤을 포함 하는 동안 삭제 기능을 지원 합니다. 편집 및 삭제 기능입니다. 이러한 데이터 수정 기능 쓸 필요 없이 코드 줄을 하지 않고 데이터 소스 컨트롤에 직접 연결할 수 있습니다. [개요의 삽입, 업데이트 및 삭제](../editing-inserting-and-deleting-data/an-overview-of-inserting-updating-and-deleting-data-vb.md) ObjectDataSource를 사용 하 여 삽입, 업데이트 및 GridView, DetailsView 및 FormView 컨트롤을 사용 하 여 삭제를 용이 하 게 검사 합니다. 또는, SqlDataSource ObjectDataSource 대신 사용할 수 있습니다.
@@ -32,7 +31,6 @@ ms.locfileid: "59404782"
 
 > [!NOTE]
 > 이후로 ve 설명한 삽입, 편집 및 삭제 DetailsView GridView의 기능 및 FormView 컨트롤,이 자습서는 이러한 작업을 지 원하는 SqlDataSource 컨트롤 구성 중점을 합니다. 사용 방법을 복습 GridView, DetailsView 및 FormView 돌아갑니다 편집, 삽입, 및 데이터 삭제 자습서에서 이러한 기능을 구현 해야 할 경우부터 [An 개요의 삽입, 업데이트 및 삭제](../editing-inserting-and-deleting-data/an-overview-of-inserting-updating-and-deleting-data-vb.md)합니다.
-
 
 ## <a name="step-1-specifyinginsertupdate-anddeletestatements"></a>1단계: 지정`INSERT`,`UPDATE`, 및`DELETE`문
 
@@ -49,11 +47,9 @@ ms.locfileid: "59404782"
 
 열어서 시작 합니다 `InsertUpdateDelete.aspx` 하 고 `Querying.aspx` 에서 페이지를 `SqlDataSource` 폴더. 디자이너에서 합니다 `Querying.aspx` 페이지에서 첫 번째 예제에서 SqlDataSource 및 GridView를 선택 (합니다 `ProductsDataSource` 및 `GridView1` 컨트롤). 두 컨트롤을 선택한 후 편집 메뉴 및 복사를 선택 (또는 Ctrl + C를 누르면 방금). 디자이너를 이동한 다음 `InsertUpdateDelete.aspx` 컨트롤에 붙여넣습니다. 두 개의 이동한 후 `InsertUpdateDelete.aspx`, 브라우저에서 페이지를 테스트 합니다. 값을 표시 합니다 `ProductID`, `ProductName`, 및 `UnitPrice` 열에 있는 레코드의 모든를 `Products` 데이터베이스 테이블.
 
-
 [![모든 제품이 나열 된 ProductID에 따라 정렬](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image1.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image1.png)
 
 **그림 1**: 모든 제품이 나열 된 정렬할 `ProductID` ([큰 이미지를 보려면 클릭](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image2.png))
-
 
 ## <a name="adding-the-sqldatasource-sdeletecommandanddeleteparametersproperties"></a>SqlDataSource s 추가`DeleteCommand`고`DeleteParameters`속성
 
@@ -70,15 +66,12 @@ SqlDataSource에서 레코드를 모두 반환 하는 것이 시점에서 `Produ
 
 디자이너에서 `InsertUpdateDelete.aspx`를 클릭 합니다 `ProductsDataSource` SqlDataSource 및 속성 창을 표시 한 다음 (보기 메뉴에서 속성 창을 선택 하거나 f4 키를 누르면 됩니다). 줄임표의 집합을 가져오는 DeleteQuery 속성을 선택 합니다.
 
-
 ![속성 창에서 DeleteQuery 속성을 선택 합니다.](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image2.gif)
 
 **그림 2**: 속성 창에서 DeleteQuery 속성을 선택 합니다.
 
-
 > [!NOTE]
 > SqlDataSource 만들어지고 t DeleteQuery 속성을 가집니다. 아니라 DeleteQuery 결합 한 것을 `DeleteCommand` 및 `DeleteParameters` 속성 및 디자이너를 통해 창을 표시 하는 경우 속성 창에 나열만 됩니다. 소스 뷰에서 속성 창에서 찾으려는 경우 있습니다를 `DeleteCommand` 속성 대신 합니다.
-
 
 명령 및 매개 변수 편집기 대화 상자를 표시 DeleteQuery 속성에서 줄임표 상자 (그림 3 참조)를 클릭 합니다. 이 대화 상자에서 지정할 수 있습니다는 `DELETE` SQL 문의 매개 변수를 지정 합니다. 다음 쿼리를 입력 합니다 `DELETE` 명령 텍스트 상자에 붙여넣습니다 (하거나 수동으로 또는 원하는 경우 쿼리 작성기를 사용 하 여):
 
@@ -86,17 +79,14 @@ SqlDataSource에서 레코드를 모두 반환 하는 것이 시점에서 `Produ
 
 다음으로, 추가할 매개 변수 새로 고침 단추를 클릭 합니다 `@ProductID` 아래 매개 변수 목록에 매개 변수입니다.
 
-
 [![속성 창에서 DeleteQuery 속성을 선택 합니다.](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image3.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image3.png)
 
 **그림 3**: 속성 창에서 DeleteQuery 속성 선택 ([클릭 하 여 큰 이미지 보기](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image4.png))
-
 
 수행할 *되지* 이 매개 변수 (의 매개 변수는 원본 위치 없음 상태로 유지 함)에 대 한 값을 제공 합니다. GridView에 삭제 지원을 추가 하기 면 GridView는 자동으로 적용이 매개 변수 값의 값을 사용 하 여 해당 `DataKeys` 있는 삭제 단추를 클릭 한 행에 대 한 컬렉션입니다.
 
 > [!NOTE]
 > 사용 되는 매개 변수 이름 합니다 `DELETE` 쿼리 *해야 합니다* 의 이름이 같을 수는 `DataKeyNames` GridView, DetailsView 또는 FormView 값. 즉, 매개 변수를 `DELETE` 문을 의도적으로 이름이 `@ProductID` (대신 예를 들어, `@ID`) 이므로 Products 테이블 (및 따라서 GridView DataKeyNames 값)의 기본 키 열 이름이 `ProductID`합니다.
-
 
 경우 매개 변수 이름 및 `DataKeyNames` 값 만들어지고 t 일치 하는 GridView 할당할 수 없습니다 자동으로 매개 변수에서 값을 `DataKeys` 컬렉션입니다.
 
@@ -110,25 +100,20 @@ SqlDataSource에서 레코드를 모두 반환 하는 것이 시점에서 `Produ
 
 사용 하 여는 `DeleteCommand` 속성이 추가 GridView가 스마트 태그는 이제 삭제 사용 옵션을 포함 합니다. 계속 해 서이 확인란을 선택 합니다. 에 설명 된 대로 [는 개요의 삽입, 업데이트 및 삭제](../editing-inserting-and-deleting-data/an-overview-of-inserting-updating-and-deleting-data-vb.md)를 사용 하 여 CommandField 추가할 GridView이로 인해 해당 `ShowDeleteButton` 속성이로 설정 `True`합니다. 그림 4에서는, 브라우저를 통해 해당 페이지를 방문 하는 경우 처럼 삭제 단추가 포함 됩니다. 일부 제품을 삭제 하 여이 페이지 출력을 테스트 합니다.
 
-
 [![각 GridView 행에는 이제 삭제 단추](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image4.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image5.png)
 
 **그림 4**: 각 GridView 행에는 이제 삭제 단추가 포함 됩니다 ([클릭 하 여 큰 이미지 보기](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image6.png))
-
 
 삭제 단추를 클릭 하면 포스트백이 발생할 GridView 할당 합니다 `ProductID` 매개 변수 값의 합니다 `DataKeys` 해당 삭제 단추 클릭 되었는지 및 SqlDataSource s 호출 행의 컬렉션 값 `Delete()` 메서드. SqlDataSource 컨트롤에서 그런 다음 데이터베이스에 연결 하 고 실행 된 `DELETE` 문입니다. GridView는 SqlDataSource를 다시 시작 하 고 (포함 하는 더 이상만 삭제 된 레코드) 제품의 현재 집합을 표시 하려면 다음 다시 바인딩합니다.
 
 > [!NOTE]
 > GridView를 사용 하므로 해당 `DataKeys` SqlDataSource 매개 변수를 채울 컬렉션입니다이 중요 한 s는 GridView s `DataKeyNames` 하 고 기본 키를 구성 하는 열에 속성을 설정할 수 SqlDataSource의 `SelectCommand` 반환 이러한 열입니다. 또한 해당가 SqlDataSource에서 매개 변수 이름을 지정 하는 중요 `DeleteCommand` 로 설정 된 `@ProductID`합니다. 경우는 `DataKeyNames` 속성이 설정 되어 있지 않거나 매개 변수 이름이 지정 되지 않은 `@ProductsID`, 포스트백을 발생 하지만 실제로 모든 레코드를 삭제 하지 않습니다 삭제 단추를 클릭 합니다.
 
-
 그림 5이 상호이 작용을 그래픽으로 보여 줍니다. 다시 참조를 [삽입, 업데이트 및 삭제와 관련 된 이벤트 검사](../editing-inserting-and-deleting-data/examining-the-events-associated-with-inserting-updating-and-deleting-vb.md) 삽입, 업데이트 및 데이터 웹 컨트롤에서에서 삭제와 관련 된 이벤트 체인에 더 자세히 알아보려면 자습서입니다.
-
 
 ![SqlDataSource s delete () 메서드를 호출 하는 GridView에서 삭제 단추를 클릭](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image5.gif)
 
 **그림 5**: SqlDataSource s를 호출 하는 GridView에서 삭제 단추를 클릭 `Delete()` 메서드
-
 
 ## <a name="step-2-automatically-generating-theinsertupdate-anddeletestatements"></a>2단계: 자동으로 생성 합니다`INSERT`,`UPDATE`, 및`DELETE`문
 
@@ -136,27 +121,21 @@ SqlDataSource에서 레코드를 모두 반환 하는 것이 시점에서 `Produ
 
 가이 자동 생성 옵션을 탐색할 수 있습니다. 디자이너는 DetailsView 추가할 `InsertUpdateDelete.aspx` 설정 및 해당 `ID` 속성을 `ManageProducts`입니다. 그런 다음 DetailsView가 스마트 태그에서 라는 SqlDataSource를 만들고 새 데이터 원본을 만들려면 선택 `ManageProductsDataSource`합니다.
 
-
 [![ManageProductsDataSource 라는 새 SqlDataSource 만들기](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image6.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image7.png)
 
 **그림 6**: 명명 된 새 SqlDataSource 만들려면 `ManageProductsDataSource` ([큰 이미지를 보려면 클릭](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image8.png))
 
-
 데이터 소스 구성 마법사에서 사용 하도록 선택 된 `NORTHWINDConnectionString` 연결 문자열 하 고 다음을 클릭 합니다. Select 문 화면 구성에서 선택한 테이블 또는 뷰 라디오 단추에서 지정 열을 그대로 두고 및 선택은 `Products` 드롭 다운 목록에서 테이블입니다. 선택 된 `ProductID`, `ProductName`를 `UnitPrice`, 및 `Discontinued` 확인란 목록에서 열.
-
 
 [![ProductID, ProductName, UnitPrice, 및 지원 되지 않는 열을 반환할 Products 테이블 사용](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image7.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image9.png)
 
 **그림 7**: 사용 하 여는 `Products` 테이블을 반환 합니다 `ProductID`를 `ProductName`, `UnitPrice`, 및 `Discontinued` 열 ([전체 크기 이미지를 보려면 클릭](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image10.png))
 
-
 자동으로 생성 `INSERT`, `UPDATE`, 및 `DELETE` 선택한 테이블 및 열을 기반으로 하는 문을 고급 단추를 클릭 하 고 생성을 확인 `INSERT`를 `UPDATE`, 및 `DELETE` 문 확인란을 선택 합니다.
-
 
 ![확인란 삽입 생성, 업데이트 및 삭제 문을 확인 합니다.](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image8.gif)
 
 **그림 8**: 생성을 확인 `INSERT`, `UPDATE`, 및 `DELETE` 문을 확인란
-
 
 생성 `INSERT`, `UPDATE`, 및 `DELETE` 문을 확인란 수 들면 선택한 테이블에 기본 키 및 기본 키 열 (또는 열)은 반환 된 열 목록에 포함 됩니다. 사용 하 여 낙관적 동시성 확인란을 선택할 수 있게 하는 한 번 생성 `INSERT`, `UPDATE`, 및 `DELETE` 문을 확인란이 선택 되어 보강 됩니다 합니다 `WHERE` 결과 절 `UPDATE` 및 `DELETE` 낙관적 동시성 제어를 제공 하는 문입니다. 이제 둡니다이 확인란을 선택 취소 합니다. 다음 자습서에서 SqlDataSource 컨트롤을 사용 하 여 낙관적 동시성을 검사 합니다.
 
@@ -172,17 +151,14 @@ DetailsView의 데이터 수정 기능을 켜려면 삽입 사용, 편집 사용
 
 브라우저에서 페이지를 방문 하 고 편집, 삭제 및 DetailsView에 포함 된 새 단추입니다. DetailsView 각 BoundField 표시 하는 편집 모드로 설정 편집 단추를 클릭 하면 해당 `ReadOnly` 속성이 `False` (기본값) 텍스트 상자 및 확인란으로 CheckBoxField.
 
-
 [![DetailsView s 기본 편집 인터페이스](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image9.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image11.png)
 
 **그림 9**: DetailsView s 기본 편집 인터페이스 ([클릭 하 여 큰 이미지 보기](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image12.png))
-
 
 마찬가지로, 현재 선택 된 제품 삭제 수도 있고 시스템에 새 제품을 추가할 수 있습니다. 때문를 `InsertCommand` 문을 에서만 작동 합니다 `ProductName`, `UnitPrice`, 및 `Discontinued` 열을 다른 열에도 하거나 `NULL` 또는 기본값으로 삽입 시 데이터베이스에서 할당. 와 마찬가지로 ObjectDataSource가 하는 경우는 `InsertCommand` 데이터베이스 테이블 t 있는 열 수 없습니다 `NULL` s 및 안 기본값이, SQL 오류가 발생 실행 하려고 할 때를 `INSERT` 문입니다.
 
 > [!NOTE]
 > DetailsView s 삽입 하 고 편집 인터페이스 사용자 지정 또는 유효성 검사의 부족 합니다. 유효성 검사 컨트롤을 추가 하거나 인터페이스를 사용자 지정 하는 BoundFields TemplateFields 변환 해야 합니다. 참조를 [편집 및 삽입 인터페이스에 유효성 검사 컨트롤 추가](../editing-inserting-and-deleting-data/adding-validation-controls-to-the-editing-and-inserting-interfaces-vb.md) 하 고 [데이터 수정 인터페이스 사용자 지정](../editing-inserting-and-deleting-data/customizing-the-data-modification-interface-vb.md) 자세한 자습서입니다.
-
 
 또한 염두에 업데이트 및 삭제, DetailsView는 현재 제품 s `DataKey` 만 값을 `DataKeyNames` 속성이 구성 되어 있습니다. 아무 효과도 없는 나타나면 편집 하거나 삭제 했는지를 `DataKeyNames` 속성을 설정 합니다.
 
@@ -198,7 +174,6 @@ DetailsView의 데이터 수정 기능을 켜려면 삽입 사용, 편집 사용
 
 > [!NOTE]
 > 데이터의 해당 필드가 없는 매개 변수 추가 웹 컨트롤 때 이러한 매개 변수 값은 몇 가지 방식으로 값을 할당할 수 해야 하는 염두에 둡니다. 이러한 값은: 하드 코드에서 직접 합니다 `InsertCommand` 또는 `UpdateCommand`; (쿼리 문자열, 세션 상태, 페이지 및 등의 웹 컨트롤); 일부 미리 정의 된 소스에서 가져올 수 있습니다 또는 이전 자습서에서 살펴본 대로 프로그래밍 방식으로 할당할 수 있습니다.
-
 
 ## <a name="summary"></a>요약
 

@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: c99bbc72-d4de-41ed-92a4-9a4632368363
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/numericupdown/creating-a-numeric-up-down-control-with-a-web-service-backend-cs
 msc.type: authoredcontent
-ms.openlocfilehash: b8160c6f5ac090e120e86f4273749b756857967e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: afe712dd2b09eda49a4972e8d34fe27760d5b6f6
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59385711"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65115334"
 ---
 # <a name="creating-a-numeric-updown-control-with-a-web-service-backend-c"></a>웹 서비스 백 엔드를 사용하여 숫자 위로/아래로 컨트롤 만들기(C#)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/numericupdown1.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/numericupdown1CS.pdf)
 
 > 확인 상자에 값을 입력 하는 사용자를 대신 숫자 위로/아래로 컨트롤 (존재 하는 Windows 및 기타 운영 체제에서) 증명 하는 점점 더 많은 편리 하 게 합니다. 기본적으로 NumericUpDown 컨트롤 항상 만큼 늘어나거나 줄어들 값 1, 하지만 더 많은 유연성을 증명 하는 웹 서비스입니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -52,7 +51,6 @@ ASP.NET AJAX Control Toolkit에 포함 된 `NumericUpDown` 텍스트 상자에 �
 [!code-aspx[Main](creating-a-numeric-up-down-control-with-a-web-service-backend-cs/samples/sample3.aspx)]
 
 페이지를 실행 하는 방법을 텍스트 상자에 값을 항상 두 배로 위쪽 단추를 클릭 하 고 아래쪽 단추를 클릭할 때 절반이 됩니다 알 수 있습니다.
-
 
 [![2의 제곱 된 번호만 표시](creating-a-numeric-up-down-control-with-a-web-service-backend-cs/_static/image2.png)](creating-a-numeric-up-down-control-with-a-web-service-backend-cs/_static/image1.png)
 

@@ -8,19 +8,18 @@ ms.date: 10/17/2013
 ms.assetid: 08815768-2702-42ae-ae85-0a59934a11d1
 msc.legacyurl: /visual-studio/overview/2013/release-notes
 msc.type: authoredcontent
-ms.openlocfilehash: 8234bd1b7eb74d9b03e507f00d9ad937314288be
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 4346303967a2446be92910355597feb19c47f338
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59411282"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113020"
 ---
 # <a name="aspnet-and-web-tools-for-visual-studio-2013-release-notes"></a>Visual Studio 2013용 ASP.NET 및 Web Tools 릴리스 정보
 
 by [Microsoft](https://github.com/microsoft)
 
 > 이 문서에서는 Visual Studio 2013 용 ASP.NET 및 웹 도구 릴리스를 설명 합니다.
-
 
 ## <a name="contents"></a>목차
 

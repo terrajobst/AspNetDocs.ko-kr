@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: c8204c05-ec27-40fe-933d-88e4e727a482
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/animating-in-response-to-user-interaction-vb
 msc.type: authoredcontent
-ms.openlocfilehash: c38160ffa9965384cf4eae2ebda52bd62b766bba
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: fa774eecd872e79e3b05f6a6ebe177be895b8191
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396241"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112921"
 ---
 # <a name="animating-in-response-to-user-interaction-vb"></a>사용자 상호 작용에 대한 응답으로 애니메이션(VB)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation6.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation6VB.pdf)
 
 > ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이지만 컨트롤에 애니메이션을 추가 하는 전체 프레임 워크 아닙니다. 애니메이션은 자동으로 시작 하거나 트리거될 수 있습니다 사용자 상호 작용 하 여 예를 들어 마우스로 클릭 하 여.
-
 
 ## <a name="overview"></a>개요
 
@@ -57,7 +56,6 @@ ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이�
 이 시나리오에서는 `<OnClick>` 사용 됩니다. 패널에서 사용자가 크기를 조정 하 고 동시에 페이드 아웃 합니다.
 
 [!code-aspx[Main](animating-in-response-to-user-interaction-vb/samples/sample5.aspx)]
-
 
 [![애니메이션을 시작 하는 마우스 클릭](animating-in-response-to-user-interaction-vb/_static/image2.png)](animating-in-response-to-user-interaction-vb/_static/image1.png)
 

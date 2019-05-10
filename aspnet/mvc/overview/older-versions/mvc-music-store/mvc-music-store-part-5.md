@@ -8,12 +8,12 @@ ms.date: 04/21/2011
 ms.assetid: 6b09413a-6d6a-425a-87c9-629f91b91b28
 msc.legacyurl: /mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-5
 msc.type: authoredcontent
-ms.openlocfilehash: e02e15a8955fa42692fac486dadfa426540295f7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 20b99cbe57b5dfa623205838a5929733a6c2d70d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59387493"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112982"
 ---
 # <a name="part-5-edit-forms-and-templating"></a>5부: 폼 편집 및 템플릿 서식 지정
 
@@ -24,7 +24,6 @@ ms.locfileid: "59387493"
 > MVC Music Store는 온라인 음악 앨범을 판매 하 고 기본 사이트 관리, 사용자 로그인 및 장바구니 기능을 구현 하는 간단한 샘플 저장소 구현입니다.
 > 
 > 이 자습서 시리즈 모든 ASP.NET MVC Music Store 샘플 응용 프로그램 빌드를 수행 하는 단계를 자세히 설명 합니다. 5 부에서는 폼 편집 및 템플릿 설명합니다.
-
 
 이전 장에서 된 데이터베이스에서 데이터를 로드 하 고 표시 합니다. 이 챕터에서는 또한 데이터를 편집 지원할 예정입니다.
 
@@ -260,7 +259,6 @@ Razor의 @helper 구문에 매우 쉽게 해 주었다 보기에서 사용할 �
 ![](mvc-music-store-part-5/_static/image18.png)
 
 참고: 간단한 경우 만들고 도우미를 사용 하 여 하나의 뷰에 표시 됩니다. 사이트 전체에서 사용할 수 있는 도우미 만들기에 대 한 자세한 내용은 필자의 블로그 게시물을 참조 하세요. [http://bit.ly/mvc3-helper-options](http://bit.ly/mvc3-helper-options)
-
 
 > [!div class="step-by-step"]
 > [이전](mvc-music-store-part-4.md)

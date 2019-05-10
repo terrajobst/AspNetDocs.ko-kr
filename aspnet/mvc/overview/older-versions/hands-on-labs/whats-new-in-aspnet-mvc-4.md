@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 48f7feb3-872f-485d-b96f-e30011ff8c4a
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/whats-new-in-aspnet-mvc-4
 msc.type: authoredcontent
-ms.openlocfilehash: b9da2522cfaed324a23f43265d4e234ebb4950bd
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: adb6e990d0ca98df38c47adf8c37fdffeb6d3d73
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59411126"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112995"
 ---
 # <a name="whats-new-in-aspnet-mvc-4"></a>ASP.NET MVC 4의 새로운 기능
 
@@ -82,7 +82,6 @@ ASP.NET MVC 4는 체계적인 디자인 패턴 및 ASP.NET 및.NET framework의 
 
 > [!NOTE]
 > 각 실습 동반 되는 **최종** 연습을 완료 한 후 가져와야 결과 솔루션이 포함 된 폴더입니다. 이 연습을 진행 하는 추가 도움이 필요한 경우이 솔루션 가이드로 사용할 수 있습니다.
-
 
 이 랩을 완료 하는 시간을 예상 합니다. **60 분**합니다.
 
@@ -223,7 +222,6 @@ ASP.NET MVC 4 웹 사이트에 모바일 및 태블릿 브라우저의 개발을
 8. 새 템플릿을 사용 하 여도 합니다 **뷰포트 meta 태그**합니다. 대부분의 모바일 브라우저에는 가상 브라우저 창의 너비를 정의 하거나 &quot;뷰포트&quot;, 모바일 장치의 실제 너비 보다 큰 시간 세분화 합니다. 따라서 모바일 브라우저를 가상 표시 내의 전체 웹 페이지를 표시할 수 있습니다. 합니다 **뷰포트 meta 태그** 웹 개발자가 모바일 장치의 너비, 높이 및 브라우저 영역의 규모를 설정 하려면 **합니다.** 장치 너비 뷰포트를 설정 하는 모바일 응용 프로그램에 대 한 ASP.NET MVC 4 템플릿 (&quot;너비 = 장치&quot;) 레이아웃 템플릿에 (*Views\Shared\_Layout.cshtml*)는 모든 합니다 페이지에는 해당 뷰포트 장치 화면 너비를 설정 해야 합니다. 알림 뷰포트 메타 태그 기본 브라우저 보기를 변경 되지 것입니다.
 9. 오픈  **\_Layout.cshtml**에 있는 **보기 | 공유** 폴더 및 주석 뷰포트 메타 태그입니다. 응용 프로그램을 실행 합니다. 그렇지 않은 경우 이미 열리고 차이점을 확인 합니다.
 
-
 [!code-cshtml[Main](whats-new-in-aspnet-mvc-4/samples/sample2.cshtml)]
 
 ![뷰포트 meta 태그를 주석 처리 한 후 사이트](whats-new-in-aspnet-mvc-4/_static/image15.png "뷰포트 meta 태그를 주석 처리 한 후 사이트")
@@ -231,7 +229,6 @@ ASP.NET MVC 4 웹 사이트에 모바일 및 태블릿 브라우저의 개발을
 *뷰포트 meta 태그를 주석 처리 한 후 사이트*
 10. Visual Studio에서 눌러 **SHIFT** + **F5** 응용 프로그램 디버깅을 중지 합니다.
 11. 뷰포트 meta 태그 주석 처리를 제거 합니다.
-
 
 [!code-cshtml[Main](whats-new-in-aspnet-mvc-4/samples/sample3.cshtml)]
 
@@ -249,7 +246,6 @@ ASP.NET MVC 4 웹 사이트에 모바일 및 태블릿 브라우저의 개발을
 > [!NOTE]
 > 미디어 쿼리의 기본 형식은 다음과 같습니다. @media \[범위: 모든 | 핸드헬드 | 인쇄 | 프로젝션 | 화면\] ([속성: 값] 및... [속성: 값])
 
-
 미디어 쿼리 예: &gt;  **@media 모든 및 (최대 너비: 1000px) 및 (최소 너비: 700px) {}:** 700px 1000px 사이의 모든 해상도 대해
 
 > **@media 화면 및 (최소 너비: 400px) 및 (최대 너비: 700px) { ... }:** 화면에 대해서만 해상도 400 700px 사이 여야 합니다.
@@ -257,7 +253,6 @@ ASP.NET MVC 4 웹 사이트에 모바일 및 태블릿 브라우저의 개발을
 > **@media 핸드헬드 및 (최소 너비: 20em), 화면 및 (최소 너비: 20em) {...}:** 휴대 장치 (휴대폰 및 장치) 및 화면 최소 너비는 20em 보다 커야 합니다.
 > 
 > 이 대 한 자세한 정보를 찾을 수 있습니다 합니다 [W3C 사이트](http://www.w3.org/TR/css3-mediaqueries/)합니다.
-
 
 적응형 렌더링의 작동 원리 이제 탐색, 4는 웹 사이트 템플릿을 기본 ASP.NET MVC의 가독성을 향상 합니다.
 
@@ -584,7 +579,6 @@ jQuery Mobile의 기본 테마에는 문자를 지정 된 5 견본 포함 (a, b,
 5. 오픈  **\_Layout.iPhone.cshtml** 이전 단계에서 만들었습니다.
 6. 으로 설정 된 데이터 역할 특성을 사용 하 여 div 요소를 찾습니다 **페이지** 변경 합니다 **데이터 테마** 특성을 &quot; **는**&quot;합니다.
 
-
 [!code-cshtml[Main](whats-new-in-aspnet-mvc-4/samples/sample17.cshtml)]
 
 ASP.NET MVC 4 응용 프로그램에서 3 레이아웃을 이제 해야합니다.
@@ -602,7 +596,7 @@ ASP.NET MVC 4 응용 프로그램에서 3 레이아웃을 이제 해야합니다
 <a id="Exercise4"></a>
 
 <a id="Exercise_4_Using_Asynchronous_Controllers"></a>
-### <a name="exercise-4-using-asynchronous-controllers"></a>실습 4: 비동기 컨트롤러를 사용 하 여
+### <a name="exercise-4-using-asynchronous-controllers"></a>연습 4: 비동기 컨트롤러를 사용 하 여
 
 Microsoft.NET Framework 4.5에서는 C# 및 Visual Basic.NET 프로그래밍의 비동기에 대 한 새 기반을 제공 하는 새로운 언어 기능을 소개 합니다. 이 새 foundation에서 비동기 프로그래밍을 비슷합니다-및 약-동기 프로그래밍 만큼 간단 합니다. ASP.NET MVC 4에서 비동기 작업 메서드를 사용 하 여 쓸 수 있습니다 합니다 **AsyncController** 클래스입니다. CPU 바인딩되지 않은 요청, 장기 실행에 대 한 비동기 작업 메서드를 사용할 수 있습니다. 웹 서버 요청을 처리 하는 동안 작업을 수행할 수 없도록 차단 하는 것이 이렇게 없습니다. AsyncController 클래스는 일반적으로 장기 실행 웹 서비스 호출에 사용 됩니다.
 
@@ -696,7 +690,6 @@ Microsoft.NET Framework 4.5에서는 C# 및 Visual Basic.NET 프로그래밍의 
 
 > [!NOTE]
 > 또한 다음 Windows Azure 웹 사이트에이 응용 프로그램을 배포할 수 [부록 d: 웹 배포를 사용 하 여 ASP.NET MVC 4 응용 프로그램 게시](#AppendixD)합니다.
-
 
 <a id="Summary"></a>
 

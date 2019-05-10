@@ -8,12 +8,12 @@ ms.date: 04/21/2011
 ms.assetid: bd356ca3-5bdb-4067-9dac-c9e9923a86e8
 msc.legacyurl: /mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-1
 msc.type: authoredcontent
-ms.openlocfilehash: 63d85ec5f1f2fbadd92fd0210e67332df30aab5a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 48428ff4ab5888253ed93ac41e79006eec823ad2
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59419602"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112938"
 ---
 # <a name="part-1-overview-and-file-new-project"></a>1부: 개요 및 파일->새 프로젝트
 
@@ -24,7 +24,6 @@ ms.locfileid: "59419602"
 > MVC Music Store는 온라인 음악 앨범을 판매 하 고 기본 사이트 관리, 사용자 로그인 및 장바구니 기능을 구현 하는 간단한 샘플 저장소 구현입니다.  
 >   
 > 이 자습서 시리즈 모든 ASP.NET MVC Music Store 샘플 응용 프로그램 빌드를 수행 하는 단계를 자세히 설명 합니다. 1 부에서는 개요 및 파일 기반&gt;새 프로젝트입니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -74,11 +73,9 @@ MVC Music Store 자습서 응용 프로그램을 소개 하 고 웹 개발을 �
 
 응용 프로그램을 빌드하려면 Visual Studio 2010 SP1 또는 Visual Web Developer 2010 Express SP1 (Visual Studio 2010의 무료 버전)를 사용할 수 있습니다. 사용는 SQL Server Compact (또한 무료) 데이터베이스를 호스트 합니다. 시작 하기 전에 아래에 나열 된 필수 구성 요소를 설치한 다음 있는지 확인 합니다.
 
-
 - [Visual Studio Web Developer Express SP1 필수 구성 요소]
 - [ASP.NET MVC 3 도구 업데이트]
 - [SQL Server Compact 4.0]-런타임 및 도구 지원을 비롯 하 여
-
 
 ### <a name="creating-a-new-aspnet-mvc-3-project"></a>새 ASP.NET MVC 3 프로젝트 만들기
 

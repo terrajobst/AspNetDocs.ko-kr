@@ -8,12 +8,12 @@ ms.date: 01/18/2008
 ms.assetid: b4ac129d-1b8e-41ca-a38f-9b19d7c7bb0e
 msc.legacyurl: /web-forms/overview/older-versions-security/membership/creating-the-membership-schema-in-sql-server-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 8a2cc19ea2ebd0e3be8ba5de40cd6c0c94dbc9dd
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b172990c87a1433678d05e004a592d44802ff25d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59409280"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113642"
 ---
 # <a name="creating-the-membership-schema-in-sql-server-c"></a>SQL Server에서 멤버 자격 스키마 만들기(C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59409280"
 [코드를 다운로드](http://download.microsoft.com/download/3/f/5/3f5a8605-c526-4b34-b3fd-a34167117633/ASPNET_Security_Tutorial_04_CS.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/3/f/5/3f5a8605-c526-4b34-b3fd-a34167117633/aspnet_tutorial04_MembershipSetup_cs.pdf)
 
 > 이 자습서는 SqlMembershipProvider를 사용 하려면 데이터베이스에 필요한 스키마를 추가 하는 기술을 검사 하 여 시작 합니다. 다음 스키마에 있는 키 테이블을 검사 하 고 목적 및 중요도 설명 합니다. 이 자습서는 ASP.NET 응용 프로그램 멤버 자격 프레임 워크를 사용 해야 하는 공급자를 구별 하는 방법 살펴보기 끝납니다.
-
 
 ## <a name="introduction"></a>소개
 
@@ -54,22 +53,17 @@ ASP.NET 응용 프로그램의 데이터는 일반적으로 다양 한 데이터
 > [!NOTE]
 > 이 자습서 시리즈 전체에서 사용할 것임을 [Microsoft SQL Server 2005 Express Edition](https://msdn.microsoft.com/sql/Aa336346.aspx) 응용 프로그램 테이블을 저장 하는 데이터베이스 및 `SqlMembershipProvider` 스키마입니다. 두 가지 이유로이 결정 되었습니다: 먼저 비용-인해 무료-Express Edition은 액세스할 때 가장의 버전 SQL Server 2005; 둘째, 웹 응용 프로그램에 직접 SQL Server 2005 Express Edition 데이터베이스를 배치할 수 있습니다 `App_Data` 데이터베이스 패키지 ZIP 파일 하나에 응용 프로그램을 함께 웹 하 고 별도 설치 지침 없이 다시 배포 하는 작업도 매우 간단 하므로 폴더 또는 구성 옵션을 지정 합니다. 비-Express Edition 버전의 SQL Server를 사용 하 여 수행 하려는 경우 자유롭게 있습니다. 단계를 거의 동일합니다. `SqlMembershipProvider` 스키마는 Microsoft SQL Server 2000의 모든 버전을 사용 하 여 작업 및 설정 합니다.
 
-
 솔루션 탐색기에서 마우스 오른쪽 단추로 클릭는 `App_Data` 폴더 새 항목 추가 선택 합니다. (표시 되지 않는 경우는 `App_Data` 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭, ASP.NET 폴더 추가 선택 및 선택 된 프로젝트에서 폴더 `App_Data`.) 새 항목 추가 대화 상자에서 명명 된 새 SQL 데이터베이스를 추가 하도록 선택할 `SecurityTutorials.mdf`합니다. 이 자습서에서는 추가 된 `SqlMembershipProvider` 스키마 추가 만들겠습니다 후속 자습서에서는이 데이터베이스에 응용 프로그램 데이터를 캡처 테이블입니다.
-
 
 [![App_Data 폴더에 SecurityTutorials.mdf 데이터베이스 라는 새 SQL 데이터베이스를 추가 합니다.](creating-the-membership-schema-in-sql-server-cs/_static/image2.png)](creating-the-membership-schema-in-sql-server-cs/_static/image1.png)
 
 **그림 1**: 명명 된 새 SQL 데이터베이스 추가 `SecurityTutorials.mdf` 데이터베이스를 `App_Data` 폴더 ([클릭 하 여 큰 이미지 보기](creating-the-membership-schema-in-sql-server-cs/_static/image3.png))
 
-
 데이터베이스를 추가 합니다 `App_Data` 폴더 자동으로 포함 데이터베이스 탐색기 보기에서. (비-Express Edition 버전의 Visual Studio 데이터베이스 탐색기 라고 서버 탐색기.) 데이터베이스 탐색기로 이동 하 고는 방금 추가 된 확장 `SecurityTutorials` 데이터베이스입니다. 데이터베이스 탐색기 화면에 표시 되지 않는다면 보기 메뉴 이동 및 데이터베이스 탐색기를 선택 하거나 Ctrl + Alt + S를 누릅니다. 그림 2에서 볼 수 있듯이 `SecurityTutorials` 데이터베이스가 비어-가 있는 테이블이 없는지, 없습니다 뷰 및 저장된 프로시저가 없습니다 포함 합니다.
-
 
 [![현재 SecurityTutorials 데이터베이스가 비어 있습니다.](creating-the-membership-schema-in-sql-server-cs/_static/image5.png)](creating-the-membership-schema-in-sql-server-cs/_static/image4.png)
 
 **그림 2**: 합니다 `SecurityTutorials` 데이터베이스가 현재 비어 ([큰 이미지를 보려면 클릭](creating-the-membership-schema-in-sql-server-cs/_static/image6.png))
-
 
 ## <a name="step-2-adding-thesqlmembershipproviderschema-to-the-database"></a>2단계: 추가 된`SqlMembershipProvider`데이터베이스 스키마
 
@@ -77,7 +71,6 @@ ASP.NET 응용 프로그램의 데이터는 일반적으로 다양 한 데이터
 
 > [!NOTE]
 > `aspnet_regsql.exe` 도구는 그래픽 사용자 인터페이스 및 명령줄 기능을 제공 합니다. 그래픽 인터페이스를 더 사용자 친화적 이며이 자습서에 맞게 살펴보겠습니다. 명령줄 인터페이스는 유용한 추가 `SqlMembershipProvider` 자동화 해야 하는 스키마, 스크립트 또는 테스트 시나리오를 자동화 된 빌드 같이 합니다.
-
 
 합니다 `aspnet_regsql.exe` 도구는 추가 또는 제거 하는 데 사용 됩니다 *ASP.NET 응용 프로그램 서비스* 지정 된 SQL Server 데이터베이스에 있습니다. ASP.NET 응용 프로그램 서비스에 대 한 스키마를 포함 합니다 `SqlMembershipProvider` 및 `SqlRoleProvider`, 다른 ASP.NET 2.0 프레임 워크에 대 한 SQL 기반 공급자에 대 한 스키마와 함께 합니다. 두 개의 비트 정보를 제공 해야 합니다 `aspnet_regsql.exe` 도구:
 
@@ -99,37 +92,29 @@ ASP.NET 응용 프로그램의 데이터는 일반적으로 다양 한 데이터
 > [!NOTE]
 > 바탕 화면에 설치 된 SQL Server 2005의 비-Express Edition 버전도 있는 경우 Management Studio의 전체 버전 가능성이 설치 됩니다. Express Edition에 대 한 아래 설명 된 대로 동일한 단계를 따라 데이터베이스 이름으로 확인 하려면 전체 버전을 사용할 수 있습니다.
 
-
 Visual Studio 데이터베이스 파일에 따른 잠금을 닫았는지 확인 해야 하는 Visual Studio를 닫아 시작 합니다. 다음으로, SQL Server Management Studio를 시작 하 고 연결 하는 `localhost\InstanceName` SQL Server 2005 Express edition 데이터베이스입니다. 앞에서 설명한 대로 가능성이 인스턴스 이름이 `SQLExpress`합니다. 인증 옵션에 대 한 Windows 인증을 선택 합니다.
-
 
 [![SQL Server 2005 Express Edition 인스턴스를 연결 합니다.](creating-the-membership-schema-in-sql-server-cs/_static/image8.png)](creating-the-membership-schema-in-sql-server-cs/_static/image7.png)
 
 **그림 3**: SQL Server 2005 Express Edition 인스턴스를 연결 ([클릭 하 여 큰 이미지 보기](creating-the-membership-schema-in-sql-server-cs/_static/image9.png))
 
-
 SQL Server 2005 Express Edition 인스턴스를 연결한 후 Management Studio는 데이터베이스, 보안 설정, 서버 개체 등에 대 한 폴더를 표시 합니다. 데이터베이스 탭을 확장 하는 경우 표시 됩니다는 합니다 `SecurityTutorials.mdf` 데이터베이스가 *하지* 데이터베이스 인스턴스에 등록 해야 데이터베이스를 먼저 연결 합니다.
 
 데이터베이스 폴더 단추로 클릭 하 고 상황에 맞는 메뉴에서 연결을 선택 합니다. 이 데이터베이스 연결 대화 상자가 표시 됩니다. 여기에서 추가 단추 클릭로 이동는 `SecurityTutorials.mdf` 데이터베이스 및 확인을 클릭 합니다. 그림 4 후 데이터베이스 연결 대화 상자를 보여 줍니다.는 `SecurityTutorials.mdf` 데이터베이스를 선택 합니다. 그림 5에서는 데이터베이스에 연결 되 면 Management Studio 개체 탐색기를 보여 줍니다.
-
 
 [![SecurityTutorials.mdf 데이터베이스 연결](creating-the-membership-schema-in-sql-server-cs/_static/image11.png)](creating-the-membership-schema-in-sql-server-cs/_static/image10.png)
 
 **그림 4**: 연결 된 `SecurityTutorials.mdf` 데이터베이스 ([큰 이미지를 보려면 클릭](creating-the-membership-schema-in-sql-server-cs/_static/image12.png))
 
-
 [![SecurityTutorials.mdf 데이터베이스 데이터베이스 폴더에 표시 됩니다.](creating-the-membership-schema-in-sql-server-cs/_static/image14.png)](creating-the-membership-schema-in-sql-server-cs/_static/image13.png)
 
 **그림 5**: 합니다 `SecurityTutorials.mdf` 데이터베이스가 데이터베이스 폴더에 나타납니다 ([큰 이미지를 보려면 클릭](creating-the-membership-schema-in-sql-server-cs/_static/image15.png))
 
-
 그림 5에서 알 수 있듯이는 `SecurityTutorials.mdf` 데이터베이스 대신 abstruse 이름이 있습니다. 변경해 보겠습니다 (및 쉽게 입력할)를 보다 기억 하기 쉬운 이름. 데이터베이스를 마우스 오른쪽 단추로 클릭 하 고, 이름 바꾸기 상황에 맞는 메뉴에서 선택 하 고, 이름을 바꾸거나 `SecurityTutorialsDatabase`합니다. 파일 이름을 변경 하지 않습니다, 그리고 데이터베이스 이름만 사용 하 여 SQL server 자체를 식별 합니다.
-
 
 [![SecurityTutorialsDatabase에 데이터베이스 이름을 바꾸려면](creating-the-membership-schema-in-sql-server-cs/_static/image17.png)](creating-the-membership-schema-in-sql-server-cs/_static/image16.png)
 
 **그림 6**: 데이터베이스 이름 바꾸기 `SecurityTutorialsDatabase`([큰 이미지를 보려면 클릭](creating-the-membership-schema-in-sql-server-cs/_static/image18.png))
-
 
 이 시점에 대 한 서버 및 데이터베이스 이름을 알고 합니다 `SecurityTutorials.mdf` 데이터베이스 파일: `localhost\InstanceName` 고 `SecurityTutorialsDatabase`각각. 통해 응용 프로그램 서비스를 설치할 준비가 됩니다.는 `aspnet_regsql.exe` 도구입니다.
 
@@ -139,19 +124,15 @@ SQL Server 2005 Express Edition 인스턴스를 연결한 후 Management Studio�
 
 실행 된 `aspnet_regsql.exe` 도구 명령줄 인수 없이 ASP.NET SQL Server 설치 마법사 그래픽 사용자 인터페이스를 시작 합니다. 마법사를 쉽게 추가 하거나 지정된 된 데이터베이스에 ASP.NET 응용 프로그램 서비스를 제거 합니다. 그림 7 에서처럼 마법사의 첫 번째 화면 도구의 용도 설명 합니다.
 
-
 [![ASP.NET SQL Server 설치 마법사는 사용 하 여 멤버 자격 스키마를 추가 합니다.](creating-the-membership-schema-in-sql-server-cs/_static/image20.png)](creating-the-membership-schema-in-sql-server-cs/_static/image19.png)
 
 **그림 7**: 멤버 자격 스키마를 추가 하는 ASP.NET SQL Server 설치 마법사를 사용 하면 사용 하 여 ([클릭 하 여 큰 이미지 보기](creating-the-membership-schema-in-sql-server-cs/_static/image21.png))
 
-
 응용 프로그램 서비스를 추가 하거나 제거 하려는 지 여부는 마법사의 두 번째 단계에서는 합니다. 테이블, 뷰 및 저장된 프로시저에 필요한 추가 하고자 하므로 `SqlMembershipProvider`, 응용 프로그램 서비스 옵션에 대 한 SQL Server 구성를 선택 합니다. 나중에 데이터베이스에서이 스키마를 제거 하려는 경우이 마법사를 다시 실행 하지만 대신 기존 데이터베이스 옵션에서 응용 프로그램 서비스 정보 제거를 선택 합니다.
-
 
 [![선택 된 응용 프로그램 서비스 옵션에 대 한 SQL Server 구성](creating-the-membership-schema-in-sql-server-cs/_static/image23.png)](creating-the-membership-schema-in-sql-server-cs/_static/image22.png)
 
 **그림 8**: 응용 프로그램 서비스 옵션에 대 한 SQL Server 구성 선택 ([클릭 하 여 큰 이미지 보기](creating-the-membership-schema-in-sql-server-cs/_static/image24.png))
-
 
 데이터베이스 정보를 묻는 메시지가 세 번째 단계: 서버 이름, 인증 정보 및 데이터베이스 이름입니다. 이 자습서와 함께 수행 하 고 추가한 경우 합니다 `SecurityTutorials.mdf` 데이터베이스를 `App_Data`에 연결 `localhost\InstanceName`, 및로 바꾸었습니다 `SecurityTutorialsDatabase`, 다음 값을 사용 합니다:
 
@@ -159,29 +140,23 @@ SQL Server 2005 Express Edition 인스턴스를 연결한 후 Management Studio�
 - Windows 인증
 - 데이터베이스: `SecurityTutorialsDatabase`
 
-
 [![데이터베이스 정보를 입력 합니다.](creating-the-membership-schema-in-sql-server-cs/_static/image26.png)](creating-the-membership-schema-in-sql-server-cs/_static/image25.png)
 
 **그림 9**: 데이터베이스 정보를 입력 ([클릭 하 여 큰 이미지 보기](creating-the-membership-schema-in-sql-server-cs/_static/image27.png))
-
 
 데이터베이스 정보를 입력 한 후 다음을 클릭 합니다. 마지막 단계는 단계를 요약 합니다. 응용 프로그램 서비스를 설치 하 고 다음 마법사를 완료 하려면 완료 하려면 다음을 클릭 합니다.
 
 > [!NOTE]
 > Management Studio를 사용 하는 데이터베이스 연결 및 데이터베이스 파일의 이름을 바꿀 경우에 Visual Studio를 다시 열어 하기 전에 Management Studio를 닫고 데이터베이스를 분리 하려면 해야 합니다. 분리 된 `SecurityTutorialsDatabase` 데이터베이스, 데이터베이스 이름을 마우스 오른쪽 단추로 클릭 하 고, 작업 메뉴에서 분리를 선택 합니다.
 
-
 마법사를 완료 하면 Visual Studio 돌아가서 데이터베이스 탐색기로 이동 합니다. 테이블 폴더를 확장 합니다. 일련의 이름이 접두사로 시작 하는 테이블로 표시 `aspnet_`합니다. 마찬가지로, 뷰 및 저장된 프로시저의 다양 한 뷰 및 저장 프로시저 폴더에서 찾을 수 있습니다. 이러한 데이터베이스 개체 응용 프로그램 서비스 스키마를 구성 합니다. 3 단계에에서 있는 멤버 자격 및 역할 관련 데이터베이스 개체를 살펴보겠습니다.
-
 
 [![데이터베이스에 추가 된 다양 한 테이블, 뷰 및 저장된 프로시저](creating-the-membership-schema-in-sql-server-cs/_static/image29.png)](creating-the-membership-schema-in-sql-server-cs/_static/image28.png)
 
 **그림 10**: 다양 한의 테이블, 뷰 및 저장 프로시저에 추가 된 데이터베이스 ([클릭 하 여 큰 이미지 보기](creating-the-membership-schema-in-sql-server-cs/_static/image30.png))
 
-
 > [!NOTE]
 > `aspnet_regsql.exe` 도구의 그래픽 사용자 인터페이스는 전체 응용 프로그램 서비스 스키마를 설치 합니다. 하지만 실행 하는 경우 `aspnet_regsql.exe` 명령줄에서 지정할 수 있습니다 특정 응용 프로그램 서비스 구성 요소 설치 (또는 제거) 합니다. 따라서 테이블만 추가 하려는 경우 뷰, 저장 프로시저에 대 한 필요한 합니다 `SqlMembershipProvider` 및 `SqlRoleProvider` 공급자를 실행 `aspnet_regsql.exe` 명령줄에서. 또는 수동으로 실행할 수 있습니다 적절 한 T-SQL의 하위 집합에 사용 하 여 스크립트 만들기 `aspnet_regsql.exe`합니다. 이러한 스크립트에 있는 합니다 `WINDIR%\Microsoft.Net\Framework\v2.0.50727\` 와 같은 이름의 폴더 `InstallCommon.sql`,`InstallMembership.sql`,`InstallRoles.sql`를 `InstallProfile.sql`,`InstallSqlState.sql`등.
-
 
 이 시점에서 필요한 데이터베이스 개체를 만들었습니다는 `SqlMembershipProvider`합니다. 그러나 해야 지시 멤버 자격 프레임 워크를 사용 하도록 합니다 `SqlMembershipProvider` (versus, 예를 들어, `ActiveDirectoryMembershipProvider`) 하 고는 `SqlMembershipProvider` 사용 해야는 `SecurityTutorials` 데이터베이스. 사용 하 여 어떤 공급자를 지정 하는 방법 및 4 단계에서에서 선택한 공급자의 설정을 사용자 지정 하는 방법을 살펴보겠습니다. 먼저, 방금 만든 데이터베이스 개체에서 자세히 살펴보겠습니다.
 
@@ -195,11 +170,9 @@ ASP.NET 응용 프로그램에서 멤버 자격 및 역할 프레임 워크를 �
 
 멤버 자격 및 역할 프레임 워크는 단일 사용자 및 역할 저장소 다양 한 응용 프로그램 간에 공유할 수 있도록 설계 되었습니다. 멤버 자격 또는 역할 프레임 워크를 사용 하는 ASP.NET 응용 프로그램에 사용 하기 위해 어떤 응용 프로그램 파티션을 지정 해야 합니다. 즉, 여러 웹 응용 프로그램 같은 사용자 및 역할 저장소를 사용할 수 있습니다. 그림 11에서는 세 개의 응용 프로그램에 분할 된 사용자 및 역할 저장소를 보여 줍니다. HRSite CustomerSite, 하며 SalesSite 합니다. 이러한 세 가지 웹 응용 프로그램 각각가 자신의 고유한 사용자 및 역할을 아직 모두 실제로 해당 사용자 계정 및 역할 정보 같은 데이터베이스 테이블에 저장 합니다.
 
-
 [![여러 응용 프로그램 사용자 계정에 분할 될 수 있습니다.](creating-the-membership-schema-in-sql-server-cs/_static/image32.png)](creating-the-membership-schema-in-sql-server-cs/_static/image31.png)
 
 **그림 11**: 사용자 계정 수 수 분할에서 여러 응용 프로그램 ([클릭 하 여 큰 이미지 보기](creating-the-membership-schema-in-sql-server-cs/_static/image33.png))
-
 
 `aspnet_Applications` 테이블은 이러한 파티션을 정의 합니다. 데이터베이스를 사용 하 여 사용자 계정 정보를 저장 하는 각 응용 프로그램은이 테이블의 행으로 표시 됩니다. `aspnet_Applications` 테이블에 열이 4: `ApplicationId`, `ApplicationName`, `LoweredApplicationName`, 및 `Description`합니다. `ApplicationId` 유형의 [ `uniqueidentifier` ](https://msdn.microsoft.com/library/ms187942.aspx) 테이블의 기본 키 이며 `ApplicationName` 각 응용 프로그램에 대 한 고유 사용자에 게 친숙 한 이름을 제공 합니다.
 
@@ -242,7 +215,6 @@ ASP.NET 응용 프로그램에서 멤버 자격 및 역할 프레임 워크를 �
 > [!NOTE]
 > 사용 되는 해시 알고리즘을 특정 암호화 합니다 `SqlMembershipProvider` 설정에 따라 결정 됩니다는 `<machineKey>` 요소입니다. 이 구성 요소 3 단계에서에서 설명한 합니다 <a id="Tutorial3"> </a> [ *폼 인증 구성 및 고급 항목* ](../introduction/forms-authentication-configuration-and-advanced-topics-cs.md) 자습서입니다.
 
-
 ### <a name="storing-roles-and-role-associations"></a>역할 및 역할 연결 저장
 
 역할 프레임 워크에는 개발자를 역할 집합을 정의 하 고 어떤 역할에 속한 사용자를 지정할 수 있습니다. 두 테이블을 통해 데이터베이스에이 정보가 캡처됩니다: `aspnet_Roles` 고 `aspnet_UsersInRoles`입니다. 각 레코드는 `aspnet_Roles` 테이블에는 특정 응용 프로그램에 대 한 역할을 나타냅니다. 마찬가지로 합니다 `aspnet_Users` 테이블을 `aspnet_Roles` 테이블에 세 개의 열이 설명에 관련:
@@ -272,7 +244,6 @@ ASP.NET 응용 프로그램에서 멤버 자격 및 역할 프레임 워크를 �
 > [!NOTE]
 > 표 2에 명시 된 기본값에 정의 된 기본값 참조는 `SqlMembershipProvider` 클래스입니다. 것은 아닙니다 모든 구성 설정이 `AspNetSqlMembershipProvider` 의 기본 값에 해당 하는 `SqlMembershipProvider` 클래스입니다. 예를 들어, 멤버 자격 공급자를 지정 하지는 `requiresUniqueEmail` 기본값을 true로 설정 합니다. 그러나 합니다 `AspNetSqlMembershipProvider` 의 값을 명시적으로 지정 하 여이 기본값을 재정의 `false`합니다.
 
-
 | **Setting&lt;\_o3a\_p /&gt;** | **Description&lt;\_o3a\_p /&gt;** |
 | --- | --- |
 | `ApplicationName` | 멤버 자격 프레임 워크는 단일 사용자 저장소에 여러 응용 프로그램에서 분할 될 수 있도록 회수 합니다. 이 설정은 멤버 자격 공급자에서 사용 하는 응용 프로그램 파티션의 이름을 나타냅니다. 경우이 값은 명시적으로 지정 되지, 설정 되어, 런타임, 응용 프로그램의 가상 루트 경로 값입니다. |
@@ -298,7 +269,6 @@ ASP.NET 응용 프로그램에서 멤버 자격 및 역할 프레임 워크를 �
 
 > [!NOTE]
 > 역할 framework 거의 동일한 방식:에 기본 등록 된 역할 공급자가 `machine.config` 등록된 된 공급자에는 응용 프로그램 별로 사용자 지정할 수 있습니다 및 `Web.config`합니다. 이후 자습서 역할 프레임 워크 및 해당 구성 태그 자세히 검토할 것입니다.
-
 
 ### <a name="customizing-thesqlmembershipprovidersettings"></a>사용자 지정을`SqlMembershipProvider`설정
 
@@ -332,7 +302,6 @@ ASP.NET 응용 프로그램에서 멤버 자격 및 역할 프레임 워크를 �
 
 > [!NOTE]
 > 멤버 자격 프레임 워크는 단일 사용자 저장소에 여러 응용 프로그램에서 분할 될 수 있도록 회수 합니다. 멤버 자격 공급자의 `applicationName` 설정은 사용자 저장소를 사용 하 여 작업 하는 경우 공급자를 사용 하 여 응용 프로그램을 나타냅니다. 값 명시적으로 설정 하는 것이 중요 합니다 `applicationName` 구성 설정 때문에 경우는 `applicationName` 명시적으로 설정 하지 않으면 런타임 시 웹 응용 프로그램의 가상 루트 경로에 할당 됩니다. 이 정상적으로 응용 프로그램의 가상 루트 경로 변경 하지 않습니다 하지만 응용 프로그램을 다른 경로로 이동 하는 경우는 `applicationName` 설정이 너무 변경 됩니다. 이 경우 멤버 자격 공급자는 이전에 사용한 것 보다 다양 한 응용 프로그램 파티션 작업 시작 됩니다. 이동 하기 전에 만든 사용자 계정을 다른 응용 프로그램 파티션에 있고 해당 사용자는 더 이상 사이트에 로그인 할 수 없습니다. 이 문제에 대 한 자세한 논의 참조 하세요 [항상 설정 합니다 `applicationName` 속성 때 구성 ASP.NET 2.0 멤버 자격 및 기타 공급자](https://weblogs.asp.net/scottgu/443634)합니다.
-
 
 ## <a name="summary"></a>요약
 

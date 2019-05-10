@@ -8,12 +8,12 @@ ms.date: 03/29/2013
 ms.assetid: eeef9f73-6de3-49f9-b50b-9af22108f2ce
 msc.legacyurl: /signalr/overview/older-versions/tutorial-getting-started-with-signalr-and-mvc-4
 msc.type: authoredcontent
-ms.openlocfilehash: abedf2dbf6fbc632b1857bf447f70aeb8f826d81
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 9186915df6d5de6bc20dfc0adabc54056d2f3a8c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59410827"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113849"
 ---
 # <a name="tutorial-getting-started-with-signalr-1x-and-mvc-4"></a>자습서: SignalR 1.x 및 MVC 4 시작
 
@@ -22,7 +22,6 @@ ms.locfileid: "59410827"
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
 > 이 자습서에는 ASP.NET SignalR을 사용 하 여 실시간 채팅 응용 프로그램을 만드는 방법을 보여 줍니다. SignalR MVC 4 응용 프로그램에 추가 하 고 보내고 메시지를 표시 하려면 채팅 뷰를 만듭니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -76,7 +75,6 @@ ms.locfileid: "59410827"
 
 > [!NOTE]
 > 설치한 후 Visual Studio 2012를 사용 하는 경우는 [ASP.NET 및 웹 도구 2012.2 업데이트](../../../visual-studio/overview/2012/aspnet-and-web-tools-20122-release-notes-rtw.md#_Installation), 허브 클래스를 만들려면 새 SignalR 항목 템플릿을 사용할 수 있습니다. 이렇게 하려면 마우스 오른쪽 단추로 클릭 합니다 **Hubs** 폴더를 클릭 **추가 | 새 항목**을 선택 **SignalR 허브 클래스 (v1)**, 및 클래스 이름을 **ChatHub.cs**합니다.
-
 
 1. 코드를 대체 합니다 **ChatHub** 다음 코드를 사용 하 여 클래스입니다.
 
@@ -151,7 +149,6 @@ SignalR 채팅 응용 프로그램에는 두 개의 기본 SignalR 개발 작업
 > [!NOTE]
 > JQuery에서는 서버 클래스 및 해당 멤버에 대 한 참조 (camel case) 에서입니다. 코드 샘플을 참조 하는 C# **ChatHub** 클래스와 jquery에서 **chatHub**합니다. 참조 하려는 경우는 `ChatHub` 클래스 기존 파스칼을 사용 하 여 jquery에서 ChatHub.cs 클래스 파일을 편집 하듯이 C#에서는 대/소문자 구분 합니다. 추가 `using` 문을 참조 하는 `Microsoft.AspNet.SignalR.Hubs` 네임 스페이스입니다. 추가한 합니다 `HubName` 특성을 합니다 `ChatHub` 클래스, 예를 들어 `[HubName("ChatHub")]`합니다. 마지막으로 업데이트 하려면 jQuery 참조는 `ChatHub` 클래스입니다.
 
-
 다음 코드에는 스크립트에 콜백 함수를 만드는 방법을 보여 줍니다. 서버의 허브 클래스는 각 클라이언트에 콘텐츠 업데이트를 푸시 하려면이 함수를 호출 합니다. 에 대 한 선택적인 호출을 `htmlEncode` 함수 표시 방법은 HTML 스크립트 삽입을 방지 하는 방법으로 페이지에 표시 하기 전에 메시지 콘텐츠를 인코딩.
 
 [!code-html[Main](tutorial-getting-started-with-signalr-and-mvc-4/samples/sample7.html)]
@@ -160,7 +157,6 @@ SignalR 채팅 응용 프로그램에는 두 개의 기본 SignalR 개발 작업
 
 > [!NOTE]
 > 이 방법은 이벤트 처리기 실행 되기 전에 연결이 설정 되어 있는지 확인 합니다.
-
 
 [!code-javascript[Main](tutorial-getting-started-with-signalr-and-mvc-4/samples/sample8.js)]
 

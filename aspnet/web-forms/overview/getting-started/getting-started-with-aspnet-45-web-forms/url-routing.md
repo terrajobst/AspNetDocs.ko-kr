@@ -8,12 +8,12 @@ ms.date: 09/08/2014
 ms.assetid: 4f4bf092-c400-471f-a876-78fda0417890
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/url-routing
 msc.type: authoredcontent
-ms.openlocfilehash: 992cea256302231ee7031a21c798117b73eaa01c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f8a374be79a41b34dc8f17fa8d44c6e0680984d7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384326"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108617"
 ---
 # <a name="url-routing"></a>URL 라우팅
 
@@ -22,7 +22,6 @@ ms.locfileid: "59384326"
 [Wingtip Toys 샘플 프로젝트 (C#)를 다운로드](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 또는 [전자책 (PDF) 다운로드](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
 
 > 이 자습서 시리즈는 ASP.NET 4.5와 Microsoft Visual Studio Express 2013 for Web 사용 하 여 ASP.NET Web Forms 응용 프로그램을 빌드하는 기본 사항을 설명 합니다. Visual Studio 2013 [C# 소스 코드를 사용 하 여 프로젝트](https://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 이 자습서 시리즈를 함께 사용할 수 있습니다.
-
 
 이 자습서에서는 Wingtip Toys 샘플 응용 프로그램 URL 라우팅을 지원 하도록 수정 합니다. 라우팅 친숙 한, 기억 하기 쉽고 검색 엔진에서 더 잘 지원 되는 Url을 사용 하도록 웹 응용 프로그램을 사용 하도록 설정 합니다. 이 자습서는 이전 자습서 "멤버 자격 및 관리" 빌드하고 Wingtip Toys 자습서 시리즈의 일부입니다.
 
@@ -82,7 +81,6 @@ Wingtip Toys 샘플 응용 프로그램 시작 되 면 호출 하 여 `Applicati
 > **선택 사항**
 > 
 > 쉽게 이동 하 여 코드를 관리할 찾을 수 있습니다는 `RegisterCustomRoutes` 메서드는 별도 클래스입니다. 에 *논리* 폴더를 별도 만들기 `RouteActions` 클래스입니다. 위의 이동 `RegisterCustomRoutes` 메서드를 *Global.asax.cs* 파일을 새 `RoutesActions` 클래스입니다. 사용 합니다 `RoleActions` 클래스 및 `createAdmin` 메서드를 호출 하는 방법의 예로 `RegisterCustomRoutes` 메서드에서 *Global.asax.cs* 파일입니다.
-
 
 알 수도 수 있습니다는 `RegisterRoutes` 사용 하 여 메서드 호출을 `RouteConfig` 맨 앞에 개체를 `Application_Start` 이벤트 처리기입니다. 이 호출이 기본 라우팅을 구현 하기 위해 수행 됩니다. 이 Visual Studio Web Forms 템플릿을 사용 하 여 응용 프로그램을 만들 때 기본 코드로 포함 되었습니다.
 

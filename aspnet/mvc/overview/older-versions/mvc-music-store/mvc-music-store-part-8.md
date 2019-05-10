@@ -8,12 +8,12 @@ ms.date: 04/21/2011
 ms.assetid: 26b2f55e-ed42-4277-89b0-c941eb754145
 msc.legacyurl: /mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-8
 msc.type: authoredcontent
-ms.openlocfilehash: 2ba210d8c541c6c330dda74706470fa73a81474a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 89897ad41b217764cbd17317d4bf5d6a5c5d488f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379484"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112904"
 ---
 # <a name="part-8-shopping-cart-with-ajax-updates"></a>8부: Ajax 업데이트와 쇼핑 카트
 
@@ -24,7 +24,6 @@ ms.locfileid: "59379484"
 > MVC Music Store는 온라인 음악 앨범을 판매 하 고 기본 사이트 관리, 사용자 로그인 및 장바구니 기능을 구현 하는 간단한 샘플 저장소 구현입니다.  
 >   
 > 이 자습서 시리즈 모든 ASP.NET MVC Music Store 샘플 응용 프로그램 빌드를 수행 하는 단계를 자세히 설명 합니다. 8 부 Ajax 업데이트와 쇼핑 카트를 설명합니다.
-
 
 등록 하지 않으면 카트에 앨범을 배치할 수 있게 될 것 이지만 전체를 체크 아웃 게스트로 등록 해야 합니다. 쇼핑 및 체크 아웃 프로세스를 두 명의 컨트롤러도 구분 됩니다: 익명으로 항목을 카트에 추가 허용 하는 ShoppingCart 컨트롤러 및 체크 아웃 프로세스를 처리 하는 체크 아웃 컨트롤러입니다. 이 섹션에서는 쇼핑 카트를 사용 하 여 시작 하 고 다음 섹션에서 체크 아웃 프로세스를 빌드 하겠습니다.
 
@@ -156,7 +155,6 @@ ViewModels 폴더를 이름을 지정 합니다.
 ![](mvc-music-store-part-8/_static/image8.png)
 
 쇼핑 카트 등록 되지 않은 사용자가 자신의 카트에 항목을 추가할 수 있는 작업을 빌드 했습니다. 다음 섹션에서는 등록 및 체크 아웃 프로세스를 완료 하도록 수 됩니다.
-
 
 > [!div class="step-by-step"]
 > [이전](mvc-music-store-part-7.md)

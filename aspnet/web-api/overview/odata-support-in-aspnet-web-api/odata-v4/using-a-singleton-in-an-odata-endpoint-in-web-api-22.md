@@ -8,19 +8,18 @@ ms.date: 06/27/2014
 ms.assetid: 4064ab14-26ee-4d5c-ae58-1bdda525ad06
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v4/using-a-singleton-in-an-odata-endpoint-in-web-api-22
 msc.type: authoredcontent
-ms.openlocfilehash: 935448a1f9770e1f11460c95997aa778c4208c9f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 218449c18759b306e425c55f8e7b573d837b4658
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59403339"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113123"
 ---
 # <a name="create-a-singleton-in-odata-v4-using-web-api-22"></a>Web API 2.2 사용 하 여 OData v4에서 Singleton 만들기
 
 Zoe Luo 여
 
 > 일반적으로 엔터티는 엔터티 집합 내에서 캡슐화 된 경우에 액세스할 수 없습니다. 하지만 OData v4 단일, 포함, WebAPI 2.2 둘 다 지원 두 개의 추가 옵션을 제공 합니다.
-
 
 이 문서에서는 Web API 2.2에서 OData 끝점에는 단일 항목을 정의 하는 방법을 보여 줍니다. 어떤 단일 이며이 사용 하 여 얻을 수 있습니다 하는 방법에 대 한 내용은 참조 하세요 [특별 한 엔터티를 정의 하는 단일 항목을 사용 하 여](https://blogs.msdn.com/b/odatateam/archive/2014/03/05/use-singleton-to-define-your-special-entity.aspx)입니다. Web API에서 OData V4 끝점을 만들려면 참조 [OData v4 끝점 사용 하 여 ASP.NET Web API 2.2 만들기](create-an-odata-v4-endpoint.md)합니다. 
 

@@ -8,12 +8,12 @@ ms.date: 06/10/2014
 ms.assetid: b19913e5-cd8a-4e4b-a872-5ac7a858a934
 msc.legacyurl: /signalr/overview/guide-to-the-api/hubs-api-guide-server
 msc.type: authoredcontent
-ms.openlocfilehash: adfd540562ec54938860740ab280c770e24f492e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c681b104b15bfc4a04587c7abf685dcf20def2ca
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59411412"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112786"
 ---
 # <a name="aspnet-signalr-hubs-api-guide---server-c"></a>ASP.NET SignalR 허브 API 가이드-서버 (C#)
 
@@ -562,7 +562,6 @@ SignalR을 일반적으로 사용 하는 응용 프로그램 사용자 메시지
 
 > [!NOTE]
 > 지속 상태에 대 한이 메커니즘을 사용할 수 없습니다 많은 양의 데이터에 넣으면 모든 이후 합니다 `state` 또는 `Clients.Caller` 속성은 모든 메서드 호출을 사용 하 여 라운드트립 합니다. 사용자 이름이 나 카운터 같은 더 작은 항목에 대 한 두는 것이 유용합니다.
-
 
 VB.NET 또는 강력한 형식의 허브의 호출자 상태 개체를 통해 액세스할 수 없습니다 `Clients.Caller`대신 사용 하 여 `Clients.CallerState` (SignalR 2.1에 도입 됨):
 

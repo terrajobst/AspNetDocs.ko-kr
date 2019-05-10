@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: fdc3599a-5217-44c1-951f-0eec9812dce7
 msc.legacyurl: /signalr/overview/older-versions/tutorial-getting-started-with-signalr
 msc.type: authoredcontent
-ms.openlocfilehash: 288f5017acde5a103460ace688933609fba0b02c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 87a90b47ae30bee43e0b0c1e078597db54b8e67d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59391028"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113866"
 ---
 # <a name="tutorial-getting-started-with-signalr-1x"></a>자습서: SignalR 1.x 시작
 
@@ -22,7 +22,6 @@ ms.locfileid: "59391028"
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
 > 이 자습서에는 SignalR을 사용하여 실시간 채팅 애플리케이션을 만드는 방법을 보여 줍니다. SignalR 빈 ASP.NET 웹 응용 프로그램에 추가 하 고 보내고 메시지를 표시 하려면 HTML 페이지를 만듭니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -148,7 +147,6 @@ SignalR 채팅 응용 프로그램에는 두 개의 기본 SignalR 개발 작업
 > [!NOTE]
 > JQuery에서는 서버 클래스 및 해당 멤버에 대 한 참조 (camel case) 에서입니다. 코드 샘플을 참조 하는 C# **ChatHub** 클래스와 jquery에서 **chatHub**합니다.
 
-
 다음 코드는 스크립트에서 만든 콜백 함수입니다. 서버의 허브 클래스는 각 클라이언트에 콘텐츠 업데이트를 푸시 하려면이 함수를 호출 합니다. HTML을 표시 하기 전에 콘텐츠를 인코딩할 두 줄은 선택 사항 이므로 스크립트 삽입을 방지 하는 간단한 방법을 보여 줍니다.
 
 [!code-html[Main](tutorial-getting-started-with-signalr/samples/sample7.html)]
@@ -157,7 +155,6 @@ SignalR 채팅 응용 프로그램에는 두 개의 기본 SignalR 개발 작업
 
 > [!NOTE]
 > 이 방법은 이벤트 처리기 실행 되기 전에 연결이 설정 되는 시나리오.
-
 
 [!code-javascript[Main](tutorial-getting-started-with-signalr/samples/sample8.js)]
 

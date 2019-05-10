@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 8e11b813-ba0d-4c29-b0f8-f65db6dbef1e
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/mutuallyexclusivecheckbox/creating-mutually-exclusive-checkboxes-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 01d6d2988278d3d371d93b23bbdf089d83900405
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c8fd0f6af612f99e14679b04554a8d1585af44b0
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59397853"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65115362"
 ---
 # <a name="creating-mutually-exclusive-checkboxes-c"></a>상호 배타적인 확인란 만들기(C#)
 
@@ -22,7 +22,6 @@ by [Christian Wenz](https://github.com/wenz)
 [코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/MutuallyExclusiveCheckBox0.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/mutuallyexclusivecheckbox0CS.pdf)
 
 > 일련의 옵션 중 하나만 선택할 수 있습니다, 라디오 단추는 일반적으로 사용 합니다. 그러나 단점은, 포함 되어 있습니다. 그룹에 하나의 라디오 단추를 선택 하면 모든 라디오 단추를 선택 취소 하는 것이 불가능 합니다. 그러나 확인란 선택 취소할 수 있습니다 언제 든 지, 배타적이 지 않습니다. 이 자습서에는 두 가지 장점을 제공 합니다: 상호 배타적인 확인란 합니다.
-
 
 ## <a name="overview"></a>개요
 
@@ -45,7 +44,6 @@ ASP.NET AJAX Control Toolkit MutuallyExclusiveCheckBox extender를 포함합니�
 [!code-aspx[Main](creating-mutually-exclusive-checkboxes-cs/samples/sample3.aspx)]
 
 저장 하 고 페이지를 실행 합니다. 하지만 확인을 모두 확인란의 선택을 취소 순식간에 확인란을 모두 확인할 수 있습니다.
-
 
 [![한 번에 하나씩만 확인할 수 있습니다.](creating-mutually-exclusive-checkboxes-cs/_static/image2.png)](creating-mutually-exclusive-checkboxes-cs/_static/image1.png)
 

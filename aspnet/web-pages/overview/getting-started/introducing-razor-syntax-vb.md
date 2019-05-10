@@ -8,12 +8,12 @@ ms.date: 02/07/2014
 ms.assetid: 5da59646-e973-41cd-88a9-c6b2c0594027
 msc.legacyurl: /web-pages/overview/getting-started/introducing-razor-syntax-vb
 msc.type: authoredcontent
-ms.openlocfilehash: e6b63afb9492e810e19999c7c7ffe074ad510bda
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2be57655b8c9b76b94e1d9a7ae5fbee27545a0a9
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59406771"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113083"
 ---
 # <a name="introduction-to-aspnet-web-programming-using-the-razor-syntax-visual-basic"></a>Razor 구문 (Visual Basic)를 사용 하 여 ASP.NET 웹 프로그래밍 소개
 
@@ -36,12 +36,10 @@ ms.locfileid: "59406771"
 > 
 > 이 자습서는 ASP.NET 웹 페이지 2 에서도 작동합니다.
 
-
 Razor 구문이 있는 ASP.NET 웹 페이지를 사용 하 여 대부분의 예제 C#을 사용 합니다. 하지만 Razor 구문을 Visual Basic을 지원 합니다. 사용 하 여 웹 페이지를 만들면 Visual Basic의 ASP.NET 웹 페이지를 프로그래밍 하는 *.vbhtml* 파일 이름 확장명, Visual Basic 코드를 추가 합니다. 이 문서에서는 Visual Basic 언어 및 ASP.NET 웹 페이지를 만드는 구문을 사용 하 여 작업의 개요를 제공 합니다.
 
 > [!NOTE]
 > Microsoft WebMatrix에 대 한 기본 웹 사이트 템플릿 (**빵집**를 **사진 갤러리**, 및 **시작 사이트**등) C# 및 Visual Basic 버전에서 사용할 수 있습니다. Visual Basic 템플릿을 NuGet 패키지로 설치할 수 있습니다. 라는 폴더에 사이트의 루트 폴더에 설치 된 웹 사이트 템플릿을 *Microsoft 템플릿*합니다.
-
 
 ## <a name="the-top-8-programming-tips"></a>상위 8 프로그래밍 팁
 
@@ -66,7 +64,6 @@ Razor 구문이 있는 ASP.NET 웹 페이지를 사용 하 여 대부분의 예�
 > 목표는 태그로 태그를 렌더링 하는 HTML 태그를 출력 하는 경우 (예를 들어 `<p></p>` 단락 또는 `<em></em>` 텍스트를 강조 하기 위해), 섹션을 참조 하세요 [결합 텍스트, 태그 및 코드 블록의 코드](#BM_CombiningTextMarkupAndCode) 이 문서의 뒷부분에 나오는.
 > 
 > 알아볼 수 있습니다에 HTML 인코딩에 대 한 [ASP.NET Web Pages 사이트에서 HTML 양식 작업](https://go.microsoft.com/fwlink/?LinkId=202892)합니다.
-
 
 ### <a name="2-you-enclose-code-blocks-with-codeend-code"></a>2. 코드를 사용 하 여 코드 블록 안에 포함 하는 중... 종료 코드
 
@@ -151,7 +148,6 @@ Visual Basic 언어는 대/소문자 구분 아닙니다. 프로그래밍 키워
 > 웹 페이지 (HTTP)에 사용 되는 프로토콜은 매우 제한 된 몇 가지 지원 (&quot;동사&quot;) 서버에 요청을 확인 하는 데 사용 되는 합니다. 두 가지 자주 사용 되는 가져오기에 사용 되는 페이지를 읽으려는 및 페이지를 제출 하는 데 사용 되는 게시물입니다. 일반적으로 사용자가 페이지를 요청할 처음 페이지가 요청 될 GET을 사용 하 여 합니다. 사용자 양식을 채웁니다을 클릭 하는 경우 **제출**, 브라우저는 서버에는 POST 요청을 만듭니다.
 > 
 > 웹 프로그래밍에서 유용 여부는 페이지 요청 POST 또는 GET으로 페이지를 처리 하는 방법을 알 수 있도록 알아야 합니다. ASP.NET 웹 페이지에서 사용할 수는 `IsPost` 속성 GET 또는 POST 요청 인지 여부를 확인 합니다. 요청을 POST 이면는 `IsPost` 속성은 true를 반환 하 고 폼의 입력란의 값 등 읽기를 수행할 수 있습니다. 표시 되는 많은 예제 값에 따라 다르게 페이지를 처리 하는 방법을 보여 줍니다. `IsPost`합니다.
-
 
 ## <a name="a-simple-code-example"></a>간단한 코드 예제
 
@@ -272,7 +268,6 @@ Razor 구문 주석은 코드 블록 내에서 사용 하거나 작은따옴표�
 
 다음 표에서 변수에 대 한 몇 가지 일반적인 변환 및 테스트 메서드를 나열합니다.
 
-
 :::row:::
     :::column:::
         <strong>Method</strong>
@@ -369,11 +364,9 @@ Razor 구문 주석은 코드 블록 내에서 사용 하거나 작은따옴표�
     :::column-end:::
 :::row-end:::
 
-
 ## <a name="operators"></a>연산자
 
 연산자는 키워드 또는 식에서 수행할 수 있는 명령의 종류를 ASP.NET에 지시 하는 문자입니다. Visual Basic에서는 다양 한 연산자를 지원 하지만 ASP.NET 웹 페이지 개발을 시작 하려면 몇 가지를 인식 해야 합니다. 다음 표에서 가장 일반적인 연산자를 보여 줍니다.
-
 
 :::row:::
     :::column:::
@@ -732,7 +725,6 @@ ASP.NET에서 가장 기본적인 개체는 페이지입니다. 조건에 맞는
 
 > [!NOTE]
 > 사용 하지 않는 것이 좋습니다 합니다 `Response.Redirect` 의 메서드 `Try/Catch` 문을 페이지에서 예외가 발생할 수 있기 때문에 합니다.
-
 
 다음 예제에서는 첫 번째 요청에서 텍스트 파일을 만들고 다음 사용자가 파일을 열 수 있는 단추를 표시 하는 페이지를 보여 줍니다. 이 예제에서는 예외가 하면 있도록 의도적으로 잘못 된 파일 이름을 사용 합니다. 코드에 포함 되어 `Catch` 두 가지 가능한 예외에 대 한 문을: `FileNotFoundException`, 파일 이름에 잘못 된 경우 발생 하는 및 `DirectoryNotFoundException`, ASP.NET 폴더를도 찾을 수 없는 경우 발생 합니다. (모든 항목이 제대로 작동 하는 경우 실행 방식을 확인 하기 위해이 예에서 문은 주석 수 있습니다.)
 

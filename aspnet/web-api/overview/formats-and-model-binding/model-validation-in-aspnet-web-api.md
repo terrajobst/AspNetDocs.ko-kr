@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: 7d061207-22b8-4883-bafa-e89b1e7749ca
 msc.legacyurl: /web-api/overview/formats-and-model-binding/model-validation-in-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: d4e792f8cc2f79c2ab82c5a74fd50f49475fac4f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 531a66b7ab642bd012663517640f2766f1917f25
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59404574"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112810"
 ---
 # <a name="model-validation-in-aspnet-web-api"></a>ASP.NET Web API의에서 모델 유효성 검사
 
@@ -66,7 +66,6 @@ JSON에서 존재 하지 않는 속성 ("Color")를 포함 하는 여기에 `Pro
 
 > [!NOTE]
 > Brad Wilson의 블로그 게시물 "[입력 유효성 검사 vs. ASP.NET MVC의 모델 유효성 검사](http://bradwilson.typepad.com/blog/2010/01/input-validation-vs-model-validation-in-aspnet-mvc.html)"언더 게시 하 고 과도 한 게시의 훌륭한 토론이 있습니다. ASP.NET MVC 2에 대 한 게시물 경우에 문제는 웹 API에 여전히 관련이 있습니다.
-
 
 ## <a name="handling-validation-errors"></a>유효성 검사 오류를 처리합니다.
 

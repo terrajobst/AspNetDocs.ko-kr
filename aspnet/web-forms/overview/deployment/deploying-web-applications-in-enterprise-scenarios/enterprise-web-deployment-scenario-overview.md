@@ -8,12 +8,12 @@ ms.date: 05/03/2012
 ms.assetid: aa862153-4cd8-4e33-beeb-abf502c6664f
 msc.legacyurl: /web-forms/overview/deployment/deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview
 msc.type: authoredcontent
-ms.openlocfilehash: 326abfe4fe86d0741b0bf807d5454d6cf87a7c12
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 9786879844da13c21e6a953b1ab24b29ca8121e2
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59411971"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65109136"
 ---
 # <a name="enterprise-web-deployment-scenario-overview"></a>엔터프라이즈 웹 배포: 시나리오 개요
 
@@ -22,7 +22,6 @@ ms.locfileid: "59411971"
 [PDF 다운로드](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > 이 자습서 집합 참조 구현을 제공 하 고 작업 및 연습 일반적인 컨텍스트를 제공 하기 현실적인 수준의 복잡성을 가상의 엔터프라이즈 배포 시나리오와 함께 샘플 솔루션을 사용 합니다. 이 항목에서는 자습서 시나리오를 설명 하 고 샘플 솔루션을 소개 합니다.
-
 
 ## <a name="scenario-description"></a>시나리오 설명
 

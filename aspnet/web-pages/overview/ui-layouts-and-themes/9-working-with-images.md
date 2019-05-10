@@ -8,12 +8,12 @@ ms.date: 02/20/2014
 ms.assetid: 778c4e58-4372-4d25-bab9-aec4a8d8e38d
 msc.legacyurl: /web-pages/overview/ui-layouts-and-themes/9-working-with-images
 msc.type: authoredcontent
-ms.openlocfilehash: fedd1013c036ebdb85877a868aaaa172733e5b8a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 53514b3c314fc182a43c82974ffcfa8158a636a1
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59394707"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65114371"
 ---
 # <a name="working-with-images-in-an-aspnet-web-pages-razor-site"></a>ASP.NET 웹 페이지 (Razor) 사이트에서 이미지 작업
 
@@ -44,7 +44,6 @@ ms.locfileid: "59394707"
 >   
 > 
 > 이 자습서 에서도 WebMatrix 3를 사용 하 여 작동합니다.
-
 
 <a id="Adding_an_Image"></a>
 ## <a name="adding-an-image-to-a-web-page-dynamically"></a>웹 페이지에 이미지를 동적으로 추가
@@ -133,7 +132,6 @@ HTML 페이지에 표시 하려는 이미지에서 이미 사용 가능한 사�
 > 
 > GUID (globally unique ID)는 일반적으로 다음과 같은 형식으로 렌더링 되는 식별자: `936DA01F-9ABD-4d9d-80C7-02AF85C822A8`합니다. 숫자와 문자 A-f) (에서 각 guid 다르지만 모두 8-4-4-4-12 문자의 그룹을 사용 하 여 패턴을 따릅니다. (기술적으로 GUID는 16 바이트/128 비트 숫자입니다.) GUID를 해야 하는 경우에 GUID를 생성 하는 특수 한 코드를 호출할 수 있습니다. Guid의 기본 개념을 사용 하면 숫자의 엄청난 크기 간에 (3.4 x 10<sup>38</sup>)이 고 생성에 대 한 알고리즘은 결과 수를 거의 라고 보장 종류 중 하나일 수 있습니다. 따라서 Guid이 동일한 이름을 두 번 사용 되지 않습니다 보장 해야 하는 경우 작업의 이름을 생성 하는 것이 좋습니다. 물론 단점은 이름이 코드에만 사용 됩니다 때 사용 되는 경향이 있으므로 Guid 사용자에 게 친숙 한 특히는 되지 않습니다.
 
-
 <a id="Resizing_an_Image"></a>
 ## <a name="resizing-an-image"></a>이미지 크기 조정
 
@@ -218,7 +216,6 @@ HTML 페이지에 표시 하려는 이미지에서 이미 사용 가능한 사�
 
 <a id="Additional_Resources"></a>
 ## <a name="additional-resources"></a>추가 리소스
-
 
 [ASP.NET 웹 페이지 사이트에서 파일 사용](https://go.microsoft.com/fwlink/?LinkId=202896)
 

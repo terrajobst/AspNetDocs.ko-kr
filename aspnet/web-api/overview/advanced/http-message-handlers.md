@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: 9002018b-3aa3-4358-bb1c-fbb5bc751d01
 msc.legacyurl: /web-api/overview/advanced/http-message-handlers
 msc.type: authoredcontent
-ms.openlocfilehash: 308d2e3dd21917e7656f7ffe889dc965d9275d74
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: a8e6f1da8df4802e1acf7779a2fc75bfe8ab876f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59392108"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65115541"
 ---
 # <a name="http-message-handlers-in-aspnet-web-api"></a>ASP.NET Web API의에서 HTTP 메시지 처리기
 
@@ -47,7 +47,6 @@ A *메시지 처리기* 는 HTTP 요청을 수신 하 고 HTTP 응답을 반환 
 > [!NOTE]
 > 클라이언트 쪽에서는 HttpClient 메시지 처리기도 사용합니다. 자세한 내용은 [HttpClient 메시지 처리기](httpclient-message-handlers.md)합니다.
 
-
 ## <a name="custom-message-handlers"></a>사용자 지정 메시지 처리기
 
 파생 되는 사용자 지정 메시지 처리기를 작성 하려면 **System.Net.Http.DelegatingHandler** 재정의 **SendAsync** 메서드. 이 메서드의 서명은 다음과 같습니다.
@@ -67,7 +66,6 @@ A *메시지 처리기* 는 HTTP 요청을 수신 하 고 HTTP 응답을 반환 
 
 > [!NOTE]
 > 에 대 한 호출 `base.SendAsync` 은 비동기입니다. 이 호출 후에 모든 작업 수행 하는 처리기를 사용 합니다 **await** 키워드를 표시 된 것 처럼 합니다.
-
 
 위임 처리기는 내부 처리기를 건너뛸 수도 하 고 응답을 직접 만들 수 있습니다.
 
@@ -131,7 +129,6 @@ HTTP 메서드 재정의 X에 대 한 지원을 추가 하는 메시지 처리�
 
 > [!NOTE]
 > API 키를 특정 컨트롤러 작업에만 적용 되는 경우에 작업 필터를 사용 하 여 메시지 처리기를 대신 하는 것이 좋습니다. 작업 필터 URI 라우팅 수행 된 후 실행 합니다.
-
 
 ## <a name="per-route-message-handlers"></a>경로 당 메시지 처리기
 

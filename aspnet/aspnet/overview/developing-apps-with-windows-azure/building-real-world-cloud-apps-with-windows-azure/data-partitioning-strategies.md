@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: 513837a7-cfea-4568-a4e9-1f5901245d24
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/data-partitioning-strategies
 msc.type: authoredcontent
-ms.openlocfilehash: 1050018794526e12aad43cd473665de5ff575d7d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3aecd64bc59ffa961aa97dd30b037f9aeb2acdd8
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59403560"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118905"
 ---
 # <a name="data-partitioning-strategies-building-real-world-cloud-apps-with-azure"></a>데이터 분할 전략 (실제 클라우드 앱 빌드 Azure 사용 하 여)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59403560"
 [다운로드 해결 프로젝트](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자책 다운로드](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
 > 합니다 **실제 세계 클라우드 앱 빌드 Azure** 전자책 Scott Guthrie를 개발한 프레젠테이션을 기반으로 합니다. 13 패턴 설명 하 고 도움이 될 수 있는 사례 성공적인 클라우드를 위한 웹 앱을 개발할 수 있습니다. 시리즈에 대 한 자세한 내용은 [첫 번째 장에서](introduction.md)합니다.
-
 
 이전에 추가 하 고 웹 서버를 제거 하 여 클라우드 응용 프로그램의 웹 계층의 크기를 얼마나 쉬운지 살펴보았습니다. 그러나 이러한 모든 발생 동일한 데이터 저장소, 응용 프로그램의 병목 상태에서 이동 프런트 엔드 백 엔드에 데이터 계층은 확장 하기 어렵습니다. 이 챕터에 만드는 방법을 데이터 계층의 확장 가능한 여러 관계형 데이터베이스로 데이터를 분할 하 여 또는 다른 데이터 저장소 옵션을 사용 하 여 관계형 데이터베이스 저장소를 결합 하 여 살펴봅니다.
 

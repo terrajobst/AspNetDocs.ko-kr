@@ -8,12 +8,12 @@ ms.date: 07/16/2014
 ms.assetid: 4fe2558d-67cc-4d12-a5c1-6fb9f6f16137
 msc.legacyurl: /visual-studio/overview/2013/one-aspnet-integrating-aspnet-web-forms-mvc-and-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 1023d9bef311e58fb5fb0bb24cde80e8320e6bac
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 165d104b5d3ef3281af449cc8673ad96f531d628
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59419056"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113074"
 ---
 # <a name="hands-on-lab-one-aspnet-integrating-aspnet-web-forms-mvc-and-web-api"></a>실습: 하나의 ASP.NET: ASP.NET Web Forms, MVC 및 Web API 통합
 
@@ -26,7 +26,6 @@ ms.locfileid: "59419056"
 > Visual Studio 2013 응용 프로그램을 빌드하고 프로젝트 중 하나에 모든 ASP.NET 기술을 사용 하 여 수 있는 새로운 통합형된 프로젝트 시스템인을 소개 합니다. 이 기능은, 스틱을 프로젝트의 시작 부분에 한 기술을 선택 하지 않아도 되며 대신 하나의 프로젝트 내에서 여러 ASP.NET 프레임 워크를 사용 하도록 할.
 > 
 > 웹 캠프 교육 키트에서에서 사용할 수 있는 모든 샘플 코드 및 코드 조각 포함 됩니다 [ https://aka.ms/webcamps-training-kit ](https://aka.ms/webcamps-training-kit)합니다.
-
 
 <a id="Overview"></a>
 ## <a name="overview"></a>개요
@@ -62,7 +61,6 @@ ms.locfileid: "59419056"
 > [!NOTE]
 > 설치 프로그램을 실행 하기 전에이 랩에 대 한 모든 종속성을 선택 했는지 확인 합니다.
 
-
 <a id="CodeSnippets"></a>
 ### <a name="using-the-code-snippets"></a>코드 조각 사용
 
@@ -70,7 +68,6 @@ ms.locfileid: "59419056"
 
 > [!NOTE]
 > 각 실습에 시작 솔루션을 함께 표시 됩니다는 **시작** 다른 독립적으로 각 연습에 따라 할 수 있는 연습 하는 폴더입니다. 주의 하십시오 연습 하는 동안 추가 되는 코드 조각은 솔루션부터 이러한 누락 되어 연습을 완료 될 때까지 작동 하지 않을 수 있습니다. 연습에 대 한 소스 코드 안에 있습니다.는 **최종** 해당 연습에서 단계를 완료 합니다. 결과로 생성 되는 코드를 사용 하 여 Visual Studio 솔루션에 포함 된 폴더입니다. 이 실습을 통해 작업 하는 동안 추가 도움이 필요한 경우 지침으로 이러한 솔루션을 사용할 수 있습니다.
-
 
 ---
 
@@ -87,7 +84,6 @@ ms.locfileid: "59419056"
 
 > [!NOTE]
 > Visual Studio를 처음 시작 하면 미리 정의 된 설정 컬렉션 중 하나를 선택 해야 합니다. 미리 정의 된 각 컬렉션에는 특정 개발 스타일에 맞게 설계 되었습니다 및 창 레이아웃, 동작 편집기, IntelliSense 코드 조각 및 대화 상자 옵션을 결정 합니다. 이 랩의 절차에서는 사용 하는 경우 Visual Studio에서 지정된 된 태스크를 수행 하는 데 필요한 작업을 설명 합니다 **일반 개발 설정** 컬렉션입니다. 개발 환경에 대 한 다양 한 설정 컬렉션을 선택 하는 경우를 고려해 야 하는 단계에 차이가 있을 수 있습니다.
-
 
 <a id="Exercise1"></a>
 ### <a name="exercise-1-creating-a-new-web-forms-project"></a>연습 1: 새 웹 폼 프로젝트 만들기
@@ -189,7 +185,6 @@ Entity Framework Code First 모델링 워크플로가 있습니다 나타내기 
 
 > [!NOTE]
 > Entity Framework에 대 한 자세히 알아볼 수 있습니다 [여기](../../../entity-framework.md)합니다.
-
 
 <a id="Ex2Task1"></a>
 #### <a name="task-1--creating-a-new-model"></a>작업 1-새 모델 만들기
@@ -342,7 +337,6 @@ Web API 프레임 워크 ASP.NET 스택에의 일부 이며 쉽게 구현 하는
 > ![Internet Explorer 옵션](one-aspnet-integrating-aspnet-web-forms-mvc-and-web-api/_static/image27.png)
 > 
 > 합니다 **F12 개발자 도구** 와이드이 실습 랩에 적용 되지 않는 기능 집합이 있습니다. 자세한 내용을 원한다 면 가리킵니다 [F12 개발자 도구를 사용 하 여](https://msdn.microsoft.com/library/ie/bg182326(v=vs.85))입니다.
-
 
 1. 키를 눌러 **F5** 솔루션을 실행 합니다.
 

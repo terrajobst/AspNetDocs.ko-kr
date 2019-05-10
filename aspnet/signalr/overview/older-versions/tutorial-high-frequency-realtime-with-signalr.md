@@ -8,12 +8,12 @@ ms.date: 04/16/2013
 ms.assetid: ad2a5da5-2e79-40ea-bc84-028d327f5982
 msc.legacyurl: /signalr/overview/older-versions/tutorial-high-frequency-realtime-with-signalr
 msc.type: authoredcontent
-ms.openlocfilehash: 179f6dd3a60f8c49770ee34af93d54defad0adc4
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e37e63a410952ec170cbbaadeeb54eae7e82b3b5
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379417"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113685"
 ---
 # <a name="high-frequency-realtime-with-signalr-1x"></a>SignalR 1.x를 사용하는 고주파수 실시간
 
@@ -28,7 +28,6 @@ ms.locfileid: "59379417"
 > 이 자습서에 도입 된 개념 실시간 게임에서 응용 프로그램 및 다른 시뮬레이션 응용 프로그램을 갖습니다.
 > 
 > 이 자습서에 대 한 의견을 기다리겠습니다. 에 자습서로 직접 관련 되지 않은 질문이 있을 경우 게시할 수 하는 [ASP.NET SignalR 포럼](https://forums.asp.net/1254.aspx/1?ASP+NET+SignalR) 또는 [StackOverflow.com](http://stackoverflow.com)합니다.
-
 
 ## <a name="overview"></a>개요
 
