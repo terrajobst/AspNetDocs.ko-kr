@@ -88,7 +88,7 @@ ms.locfileid: "65108328"
 
     ![](customizing-database-deployments-for-multiple-environments/_static/image1.png)
 3. 에 **새 배포 구성 파일** 대화 상자에서 파일에 의미 있는 이름을 (예를 들어 **TestEnvironment.sqldeployment**)를 클릭 하 고 **저장**합니다.
-4. 에 *[Filename] * * *.sqldeployment** 페이지에서 대상 환경의 요구 사항에 맞게 배포 속성을 설정 하 고 파일을 저장 합니다.
+4. 에 *[Filename]* **.sqldeployment** 페이지에서 대상 환경의 요구 사항에 맞게 배포 속성을 설정 하 고 파일을 저장 합니다.
 
     ![](customizing-database-deployments-for-multiple-environments/_static/image2.png)
 5. 데이터베이스 프로젝트의 Properties 폴더로 새 파일 추가 있는지 확인 합니다.
