@@ -70,13 +70,13 @@ SQL Server 2000 또는 2005 데이터베이스 서버에 연결할 수 없는 �
 데이터베이스에 대 한 연결을 만드는 등의 데이터 원본에 관련 된 모든 코드 발급 **선택**를 **삽입**를 **UPDATE**, 및  **삭제** 명령과 등 DAL에 배치 해야 합니다. 프레젠테이션 계층 이러한 데이터 액세스 코드에 대 한 참조를 포함 해야 하지만 모든 데이터를 요청에 대 한 DAL 대신 호출 해야 합니다. 데이터 액세스 레이어는 일반적으로 기본 데이터베이스 데이터에 액세스 하기 위한 메서드를 포함 합니다. Northwind 데이터베이스를 예를 들어,이 **제품** 하 고 **범주** 속한 범주 및 판매에 대 한 제품을 기록 하는 테이블입니다. DAL에서 등의 방법을 얻게 됩니다.
 
 - **GetCategories(),** 모든 범주에 대 한 정보를 반환 하는
-- **GetProducts()**, 모든 제품에 대 한 정보를 반환 하는
+- **GetProducts()** , 모든 제품에 대 한 정보를 반환 하는
 - **GetProductsByCategoryID (*categoryID*)** 를 반환 하는 지정된 된 범주에 속하는 모든 제품
-- **GetProductByProductID (*productID*)**, 특정 제품에 대 한 정보를 반환 하는
+- **GetProductByProductID (*productID*)** , 특정 제품에 대 한 정보를 반환 하는
 
 이러한 메서드를 호출 하는 경우 데이터베이스에 연결 됩니다, 그리고 적절 한 쿼리를 실행 및 결과 반환 합니다. 이러한 결과 반환 하는 방법을 하는 것이 중요 합니다. 데이터 집합 또는 데이터베이스 쿼리를 채워지는 DataReader이 방법으로든 반환할 수 있지만 사용 하 여 이러한 결과 반환할 것이 좋습니다 *강력한 형식의 개체*합니다. 강력한 형식의 개체는 그 반대는 느슨한 형 개체는 스키마 런타임 전에 알 수 없는 하나 해당 스키마가 컴파일 타임에 엄격 하 게 정의 하나입니다.
 
-예를 들어 DataReader와 기본적으로 데이터 집합은 자유로운 개체 스키마 채우는 데 데이터베이스 쿼리에서 반환 된 열에 의해 정의 되므로입니다. 느슨한 형 DataTable에서 특정 열에 액세스할 수와 같은 구문을 사용 해야 합니다. <strong><em>DataTable</em>.Rows[<em>index</em>]["<em>columnName</em>"]</strong>. 이 예제에서 DataTable의 느슨한 형식 문자열 또는 서 수 인덱스를 사용 하 여 열 이름에 액세스 해야 하는 팩트에서 직접 제작한 잠금에서 합니다. 강력한 형식화 된 DataTable에 반면에 해야 각 속성으로 구현 하는 열의 결과 다음과 같은 코드에서: <strong><em>DataTable</em>.Rows[<em>index</em>].*columnName</strong>*.
+예를 들어 DataReader와 기본적으로 데이터 집합은 자유로운 개체 스키마 채우는 데 데이터베이스 쿼리에서 반환 된 열에 의해 정의 되므로입니다. 느슨한 형 DataTable에서 특정 열에 액세스할 수와 같은 구문을 사용 해야 합니다. <strong><em>DataTable</em>.Rows[<em>index</em>]["<em>columnName</em>"]</strong>. 이 예제에서 DataTable의 느슨한 형식 문자열 또는 서 수 인덱스를 사용 하 여 열 이름에 액세스 해야 하는 팩트에서 직접 제작한 잠금에서 합니다. 강력한 형식화 된 DataTable에 반면에 해야 각 속성으로 구현 하는 열의 결과 다음과 같은 코드에서: <strong><em>DataTable</em>.Rows[<em>index</em>].*columnName</strong>* .
 
 강력한 형식의 개체를 반환 하려면 개발자가 자신의 사용자 지정 비즈니스 개체를 만들 또는 형식화 된 데이터 집합을 사용 하 여 수 있습니다. 비즈니스 개체 속성은 일반적으로 기본 데이터베이스 테이블 비즈니스 개체의 열을 반영 하는 클래스를 나타내는 대로 개발자가 구현 됩니다. 입력 데이터 집합은 데이터베이스 스키마 및 해당 멤버는이 스키마에 따라 강력한 형식에 따라 Visual Studio에서 생성 하는 클래스입니다. ADO.NET DataSet, DataTable 및 DataRow 클래스를 확장 하는 클래스의 형식화 된 데이터 집합 자체 구성 됩니다. 뿐만 아니라 DataTables 강력한 형식화 된 데이터 집합 이제도 포함할 DataSet의 Datatable 채우기 및 수정은 Datatable 내에서 데이터베이스에 다시 전파 하기 위한 메서드를 사용 하 여 클래스에는 Tableadapter.
 
@@ -148,13 +148,13 @@ SQL 쿼리를 정의 합니다. 시작 하려면 TableAdapter 쿼리를 실행 �
 
 이러한 패턴 중 하나 또는 모두를 구현 하는 TableAdapter를 사용할 수 있습니다. 또한 여기에 제공 하는 메서드를 바꿀 수 있습니다. 이 자습서 전체에서 두 번째 패턴 사용만 하는 경우에 두 확인란이 모두 선택 하면 두겠습니다. 또한 이름을 대신 제네릭 **GetData** 메서드를 **GetProducts**합니다.
 
-이 옵션을 선택 하는 경우 최종 확인란 "GenerateDBDirectMethods," 만듭니다 **insert ()** 를 **update ()**, 및 **delete ()** TableAdapter에 대 한 메서드. 이 옵션을 선택 취소 하지 않으면 모든 업데이트 해야 TableAdapter의 유일한 작업은 수행할 **update ()** 형식의 DataSet, DataTable, 단일 DataRow 또는 Datarow 배열을 사용 하는 메서드. (설정한 경우이 확인란을 그림 9의 고급 속성에서 확인 되지 않은 "생성 Insert, Update 및 Delete 문을" 옵션 설정은 영향을 주지 것입니다.) 이 확인란을 선택 두겠습니다. 합니다.
+이 옵션을 선택 하는 경우 최종 확인란 "GenerateDBDirectMethods," 만듭니다 **insert ()** 를 **update ()** , 및 **delete ()** TableAdapter에 대 한 메서드. 이 옵션을 선택 취소 하지 않으면 모든 업데이트 해야 TableAdapter의 유일한 작업은 수행할 **update ()** 형식의 DataSet, DataTable, 단일 DataRow 또는 Datarow 배열을 사용 하는 메서드. (설정한 경우이 확인란을 그림 9의 고급 속성에서 확인 되지 않은 "생성 Insert, Update 및 Delete 문을" 옵션 설정은 영향을 주지 것입니다.) 이 확인란을 선택 두겠습니다. 합니다.
 
 [![GetProducts getdata에서 메서드 이름 변경](creating-a-data-access-layer-cs/_static/image30.png)](creating-a-data-access-layer-cs/_static/image29.png)
 
 **그림 11**: 메서드 이름을 **GetData** 하 **GetProducts** ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image31.png))
 
-마침을 클릭 하 여 마법사를 완료 합니다. 마법사를 닫은 후 방금 만든 DataTable을 보여 주는 데이터 집합 디자이너도 돌아옵니다. 열 목록을 볼 수 있습니다는 **제품** DataTable (**ProductID**를 **ProductName**등)의 메서드는  **ProductsTableAdapter** (**Fill()** 하 고 **GetProducts()**).
+마침을 클릭 하 여 마법사를 완료 합니다. 마법사를 닫은 후 방금 만든 DataTable을 보여 주는 데이터 집합 디자이너도 돌아옵니다. 열 목록을 볼 수 있습니다는 **제품** DataTable (**ProductID**를 **ProductName**등)의 메서드는  **ProductsTableAdapter** (**Fill()** 하 고 **GetProducts()** ).
 
 [![제품 DataTable 및 ProductsTableAdapter 형식화 된 데이터 집합에 추가 되었습니다.](creating-a-data-access-layer-cs/_static/image33.png)](creating-a-data-access-layer-cs/_static/image32.png)
 
@@ -184,7 +184,7 @@ AllProducts.aspx.cs
 
 ## <a name="step-3-adding-parameterized-methods-to-the-data-access-layer"></a>3단계: 매개 변수가 있는 데이터 액세스 계층에 메서드 추가
 
-이 시점에서 우리의 **ProductsTableAdapter** 클래스에는 한 가지 방법은 있지만 **GetProducts()**, 데이터베이스의 모든 제품을 반환 하는 합니다. 모든 제품을 작업할 수 유용 하지만 분명히, 특정 제품 또는 특정 범주에 속하는 모든 제품에 대 한 정보를 검색 하고자 하는 경우 경우가 있습니다. 데이터 액세스 계층에 이러한 기능을 추가할 매개 변수가 있는 메서드가 TableAdapter에 추가할 수 있습니다.
+이 시점에서 우리의 **ProductsTableAdapter** 클래스에는 한 가지 방법은 있지만 **GetProducts()** , 데이터베이스의 모든 제품을 반환 하는 합니다. 모든 제품을 작업할 수 유용 하지만 분명히, 특정 제품 또는 특정 범주에 속하는 모든 제품에 대 한 정보를 검색 하고자 하는 경우 경우가 있습니다. 데이터 액세스 계층에 이러한 기능을 추가할 매개 변수가 있는 메서드가 TableAdapter에 추가할 수 있습니다.
 
 추가 된 **GetProductsByCategoryID (*categoryID*)** 메서드. DAL, 데이터 집합 디자이너를 반환 하는 새 메서드를 추가 하려면 마우스 오른쪽 단추로 클릭 합니다 **ProductsTableAdapter** 섹션을 추가 하는 쿼리를 선택 합니다.
 
@@ -252,7 +252,7 @@ Beverages.aspx.cs
 
 **그림 22**: 업데이트 메서드가 호출 되 면 모든 변경 내용을 데이터베이스와 동기화 됩니다 ([클릭 하 여 큰 이미지 보기](creating-a-data-access-layer-cs/_static/image60.png))
 
-TableAdapter는 기본적으로 일괄 처리 업데이트 패턴을 사용 하지만 DB 직접 패턴을 지원 합니다. 우리의 TableAdapter를 만들 때 고급 속성에서 "생성 Insert, Update 및 Delete 문을" 옵션을 선택한 후는 **ProductsTableAdapter** 포함을 **update ()** 메서드 일괄 처리 업데이트 패턴을 구현 합니다. TableAdapter가 포함 된 예는 **update ()** 형식화 된 데이터 집합, 강력한 형식화 된 DataTable에 하나 이상의 Datarow 전달할 수 있는 메서드. 생략 하면 "GenerateDBDirectMethods" 확인란이 선택 경우 먼저 TableAdapter를 DB 직접 패턴 만들기는 또한를 통해 구현 될 **insert ()** 하십시오 **update ()**, 및 **delete)**  메서드.
+TableAdapter는 기본적으로 일괄 처리 업데이트 패턴을 사용 하지만 DB 직접 패턴을 지원 합니다. 우리의 TableAdapter를 만들 때 고급 속성에서 "생성 Insert, Update 및 Delete 문을" 옵션을 선택한 후는 **ProductsTableAdapter** 포함을 **update ()** 메서드 일괄 처리 업데이트 패턴을 구현 합니다. TableAdapter가 포함 된 예는 **update ()** 형식화 된 데이터 집합, 강력한 형식화 된 DataTable에 하나 이상의 Datarow 전달할 수 있는 메서드. 생략 하면 "GenerateDBDirectMethods" 확인란이 선택 경우 먼저 TableAdapter를 DB 직접 패턴 만들기는 또한를 통해 구현 될 **insert ()** 하십시오 **update ()** , 및 **delete)**  메서드.
 
 데이터 수정 패턴을 모두 사용 하 여 TableAdapter의 **InsertCommand**하십시오 **UpdateCommand**, 및 **DeleteCommand** 발급 하는 속성 해당 **삽입** , **업데이트**, 및 **삭제** 명령을 데이터베이스에 있습니다. 검사 및 수정할 수는 **InsertCommand**를 **UpdateCommand**, 및 **DeleteCommand** 데이터 집합 디자이너의 TableAdapter에 클릭 한 다음 이동 하 여 속성 속성 창. (및 TableAdapter를 선택 했는지 확인 합니다 **ProductsTableAdapter** 이 개체는 속성 창에서 드롭 다운 목록에서 선택 합니다.)
 
@@ -276,7 +276,7 @@ TableAdapter는 기본적으로 일괄 처리 업데이트 패턴을 사용 하�
 
 ## <a name="creating-custom-insert-update-and-delete-methods"></a>Insert, Update 및 Delete 메서드를 만드는 사용자 지정
 
-합니다 **insert ()** 를 **update ()**, 및 **delete ()** DB 직접 메서드에 의해 생성 되는 메서드는 특히 많은 열이 있는 테이블에 대 한 약간 복잡할 수 있습니다. IntelliSense의 도움말 어떻게 하지 않은 특히의 선택을 취소 하지 않고 이전 코드 예제를 살펴보면 **제품** 테이블 열에 각 입력된 매개 변수에 매핑되는 **update ()** 고 **insert)**  메서드. 만 해야 단일 열 또는 두 업데이트 하거나 사용자 지정 하는 경우가 있을 수 있습니다 **insert ()** 메서드는 아마도, 새로 삽입된 된 레코드의 값을 반환 **IDENTITY** (자동 증분) 필드입니다.
+합니다 **insert ()** 를 **update ()** , 및 **delete ()** DB 직접 메서드에 의해 생성 되는 메서드는 특히 많은 열이 있는 테이블에 대 한 약간 복잡할 수 있습니다. IntelliSense의 도움말 어떻게 하지 않은 특히의 선택을 취소 하지 않고 이전 코드 예제를 살펴보면 **제품** 테이블 열에 각 입력된 매개 변수에 매핑되는 **update ()** 고 **insert)**  메서드. 만 해야 단일 열 또는 두 업데이트 하거나 사용자 지정 하는 경우가 있을 수 있습니다 **insert ()** 메서드는 아마도, 새로 삽입된 된 레코드의 값을 반환 **IDENTITY** (자동 증분) 필드입니다.
 
 이러한 사용자 지정 메서드를 만들려면 데이터 집합 디자이너를 반환 합니다. TableAdapter 단추로 클릭 하 고 TableAdapter 마법사를 반환 하는 추가 쿼리를 선택 합니다. 두 번째 화면에서 만들 쿼리의 형식을 나타낼 수 있습니다. 새 제품을 추가한 후 새로 추가 된 레코드의 값을 반환 하는 메서드를 만들어 보겠습니다 **ProductID**합니다. 따라서 만들도록 선택할를 **삽입** 쿼리 합니다.
 
@@ -310,7 +310,7 @@ TableAdapter는 기본적으로 일괄 처리 업데이트 패턴을 사용 하�
 
 ## <a name="step-5-completing-the-data-access-layer"></a>5단계: 데이터 액세스 계층 완료
 
-합니다 **ProductsTableAdapters** 반환 클래스는 **CategoryID** 및 **SupplierID** 에서 값을 **제품** 테이블 하지만 포함 되지 않습니다는 **CategoryName** 에서 열을 **범주** 테이블 또는 **CompanyName** 열에서를 **Suppliers**테이블에 있지만이 제품 정보를 표시 하는 경우 표시 하려는 열 수 있습니다. TableAdapter의 초기 메서드를 살펴보면서 수 **GetProducts()**, 둘 다 포함 하는 **CategoryName** 및 **CompanyName** 업데이트는 열 값과는 이러한 새 열을 포함 하려면 강력한 DataTable입니다.
+합니다 **ProductsTableAdapters** 반환 클래스는 **CategoryID** 및 **SupplierID** 에서 값을 **제품** 테이블 하지만 포함 되지 않습니다는 **CategoryName** 에서 열을 **범주** 테이블 또는 **CompanyName** 열에서를 **Suppliers**테이블에 있지만이 제품 정보를 표시 하는 경우 표시 하려는 열 수 있습니다. TableAdapter의 초기 메서드를 살펴보면서 수 **GetProducts()** , 둘 다 포함 하는 **CategoryName** 및 **CompanyName** 업데이트는 열 값과는 이러한 새 열을 포함 하려면 강력한 DataTable입니다.
 
 이으로 제공할 수 문제가 있지만 TableAdapter의 메서드를 삽입, 업데이트 및 삭제 데이터는이 초기 메서드 기반입니다. 다행 스럽게도 자동으로 생성 된 메서드를 삽입, 업데이트 및 삭제 하지 않은 영향을 받는 하위 쿼리는 **선택** 절. 처리 하는 쿼리를 추가 하 여 **범주** 및 **공급 업체** 하위 쿼리로 대신 **조인** s, 것을 피할 데이터 수정에 대 한 해당 메서드를 재작업 하지 않아도 됩니다. 마우스 오른쪽 단추로 클릭 합니다 **GetProducts()** 에서 메서드는 **ProductsTableAdapter** 구성 선택 합니다. 그런 다음 조정 된 **선택** 절 표시 되도록 같은:
 
@@ -334,7 +334,7 @@ TableAdapter는 기본적으로 일괄 처리 업데이트 패턴을 사용 하�
 
 지금 까지는 단일 데이터베이스 테이블에 대 한 단일 TableAdapter를 사용 하 여 작업만 살펴보았습니다. 그러나 Northwind 데이터베이스는 웹 응용 프로그램에서 사용 하 여 작업 해야 하는 몇 가지 관련된 테이블을 포함 합니다. Datatable을 관련 입력 데이터 집합에 여러 포함 될 수 있습니다. 따라서는 DAL을 완료 해야이 자습서에서 사용할 다른 테이블에 대 한 Datatable을 추가 합니다. 입력 데이터 집합에 새 TableAdapter를 추가 하려면 데이터 집합 디자이너를 열고 디자이너에서 마우스 오른쪽 단추로 클릭 추가 선택 / TableAdapter. 이 새 DataTable 및 TableAdapter를 만들고이 자습서의 앞부분에서 검사할 마법사를 안내 합니다.
 
-잠시 다음 Tableadapter 및 다음 쿼리를 사용 하 여 메서드를 만듭니다. 쿼리에 **ProductsTableAdapter** 각 제품 범주 및 공급 업체 이름을 가져오는 하위 쿼리를 포함 합니다. 또한 수행 했다면를 이미 추가한 경우 합니다 **ProductsTableAdapter** 클래스의 **GetProducts()** 하 고 **GetProductsByCategoryID (*categoryID* )** 메서드.
+잠시 다음 Tableadapter 및 다음 쿼리를 사용 하 여 메서드를 만듭니다. 쿼리에 **ProductsTableAdapter** 각 제품 범주 및 공급 업체 이름을 가져오는 하위 쿼리를 포함 합니다. 또한 수행 했다면를 이미 추가한 경우 합니다 **ProductsTableAdapter** 클래스의 **GetProducts()** 하 고 **GetProductsByCategoryID (*categoryID*)** 메서드.
 
 - **ProductsTableAdapter**
 
