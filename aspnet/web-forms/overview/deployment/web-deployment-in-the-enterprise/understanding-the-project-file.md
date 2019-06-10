@@ -83,7 +83,7 @@ MSBuild 프로젝트 파일의 주요 요소 간의 관계를 보여 줍니다.
 
 [!code-xml[Main](understanding-the-project-file/samples/sample2.xml)]
 
-속성 값을 검색 하 형식을 사용 하면 **$(***PropertyName***) * * * 합니다.* 예를 들어의 값을 검색 하는 **ServerName** 속성 입력:
+속성 값을 검색 하 형식을 사용 하면 * *$(***PropertyName***)*** 합니다.* 예를 들어의 값을 검색 하는 **ServerName** 속성 입력:
 
 [!code-powershell[Main](understanding-the-project-file/samples/sample3.ps1)]
 

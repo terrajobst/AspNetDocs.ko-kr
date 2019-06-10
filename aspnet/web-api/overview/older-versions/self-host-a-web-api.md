@@ -121,7 +121,7 @@ Netsh.exe를 사용 하려면 관리자 권한으로 명령 프롬프트를 열�
 
 [!code-console[Main](self-host-a-web-api/samples/sample5.cmd)]
 
-여기서 *컴퓨터 \* 는 사용자 계정입니다.
+여기서 *컴퓨터* 는 사용자 계정입니다.
 
 자체 호스팅 완료 되 면 예약을 삭제 해야 합니다.
 
