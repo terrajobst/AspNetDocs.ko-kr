@@ -164,7 +164,7 @@ MSBuild에서 발생 하는 다음 요소는 라는 항목이 포함 된 단일 
 
 [!code-xml[Main](understanding-the-build-process/samples/sample10.xml)]
 
-이 예가 *대상 일괄 처리*합니다. MSBuild 프로젝트 파일에서 일괄 처리는 컬렉션을 반복 하기 위한 기술입니다. 값은 **출력** 특성 **"% (DbPublishPackages.Identity)"**, 참조 하는 **Identity** 의 메타 데이터 속성은 **DbPublishPackages** 항목 목록입니다. 이 표기법 **Outputs=%***(ItemList.ItemMetadataName)*,으로 변환 됩니다.
+이 예가 *대상 일괄 처리*합니다. MSBuild 프로젝트 파일에서 일괄 처리는 컬렉션을 반복 하기 위한 기술입니다. 값은 **출력** 특성 **"% (DbPublishPackages.Identity)"** , 참조 하는 **Identity** 의 메타 데이터 속성은 **DbPublishPackages** 항목 목록입니다. 이 표기법 **Outputs=%** *(ItemList.ItemMetadataName)* ,으로 변환 됩니다.
 
 - 항목 분할 **DbPublishPackages** 같은 포함 된 항목의 일괄 처리로 **Identity** 메타 데이터 값입니다.
 - 대상 일괄 처리 마다 한 번씩 실행 합니다.
@@ -178,7 +178,7 @@ MSBuild에서 발생 하는 다음 요소는 라는 항목이 포함 된 단일 
 
 [!code-xml[Main](understanding-the-build-process/samples/sample11.xml)]
 
-이 예에서 **%(DbPublishPackages.DatabaseConnectionString)** 를 **%(DbPublishPackages.TargetDatabase)**, 및 **%(DbPublishPackages.FullPath)** 모든 참조 메타 데이터 값을 **DbPublishPackages** 항목 컬렉션입니다.  **\_Cmd** 속성을 사용 합니다 **Exec** 명령을 호출 하는 작업을 합니다.
+이 예에서 **%(DbPublishPackages.DatabaseConnectionString)** 를 **%(DbPublishPackages.TargetDatabase)** , 및 **%(DbPublishPackages.FullPath)** 모든 참조 메타 데이터 값을 **DbPublishPackages** 항목 컬렉션입니다. **\_Cmd** 속성을 사용 합니다 **Exec** 명령을 호출 하는 작업을 합니다.
 
 [!code-xml[Main](understanding-the-build-process/samples/sample12.xml)]
 
