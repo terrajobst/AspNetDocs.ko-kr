@@ -8,12 +8,12 @@ ms.date: 02/20/2014
 ms.assetid: eee916e4-ba4c-439a-a24e-68df7d45a569
 msc.legacyurl: /web-pages/overview/data/working-with-files
 msc.type: authoredcontent
-ms.openlocfilehash: 3ff852232212ddda4930597731911be60c092667
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 684c47a8a8480dc040e5144144577c94c35d39e5
+ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65108942"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67411194"
 ---
 # <a name="working-with-files-in-an-aspnet-web-pages-razor-site"></a>ASP.NET 웹 페이지 (Razor) 사이트에서 파일 사용
 
@@ -22,7 +22,7 @@ ms.locfileid: "65108942"
 > 이 문서는 읽기, 쓰기, 추가, 삭제 및 ASP.NET Web Pages (Razor) 사이트에서 파일을 업로드 하는 방법을 설명 합니다.
 > 
 > > [!NOTE]
-> > 이미지를 업로드 하 고 조작 하는 경우 (예를 들어, 대칭 이동 하거나 크기를 조정할)를 참조 하세요 [ASP.NET 웹 페이지 사이트에서 이미지를 사용 하 여 작업](https://go.microsoft.com/fwlink/?LinkId=202897)합니다.
+> > 이미지를 업로드 하 고 조작 하는 경우 (예를 들어, 대칭 이동 하거나 크기를 조정할)를 참조 하세요 [ASP.NET 웹 페이지 사이트에서 이미지를 사용 하 여 작업](/aspnet/web-pages/overview/ui-layouts-and-themes/9-working-with-images)합니다.
 > 
 > 
 > **학습할 내용:** 
@@ -72,7 +72,7 @@ ms.locfileid: "65108942"
 
     그런 다음 변수를 만듭니다 (`dataFile`) 데이터를 저장할 파일의 이름과 위치를 포함 하는 합니다. 몇 가지 특별 한 처리가 필요 위치를 설정 합니다. 웹 사이트에서는 코드와 같은 절대 경로 참조 바람직하지 *C:\Folder\File.txt* 웹 서버의 파일에 대 한 합니다. 웹 사이트를 이동 하는 경우에 절대 경로 잘못 됩니다. 또한 호스팅된 사이트 (아니라 사용자 고유의 컴퓨터) 일반적으로 모르는 올바른 경로 이란 코드를 작성할 때.
 
-    하지만 경우에 따라 (예: 이제 파일을 작성 하는 것에 대 한) 전체 경로 필요가 있습니다. 솔루션을 사용 하는 것을 `MapPath` 메서드는 `Server` 개체입니다. 이 웹 사이트에 전체 경로 반환 합니다. 사용자는 웹 사이트 루트에 대 한 경로 가져오려고 합니다 `~` 연산자 (represen 사이트의 가상 루트)를 `MapPath`입니다. (같은, 하위 폴더 이름을 전달할 수도 있습니다 *~/App\_데이터 /*, 해당 하위 폴더에 대 한 경로 가져오려고 합니다.) 그런 다음 전체 경로 만들기 위해 모든 메서드에서 반환에 대 한 추가 정보를 연결할 수 있습니다. 이 예제에서는 파일 이름을 추가합니다. (자세한에서 파일 및 폴더 경로 사용 하는 방법에 대 한 [ASP.NET 웹 페이지 Razor 구문으로 프로그래밍 소개](https://go.microsoft.com/fwlink/?LinkId=195205#ID_WorkingWithFileAndFolderPaths).)
+    하지만 경우에 따라 (예: 이제 파일을 작성 하는 것에 대 한) 전체 경로 필요가 있습니다. 솔루션을 사용 하는 것을 `MapPath` 메서드는 `Server` 개체입니다. 이 웹 사이트에 전체 경로 반환 합니다. 사용자는 웹 사이트 루트에 대 한 경로 가져오려고 합니다 `~` 연산자 (represen 사이트의 가상 루트)를 `MapPath`입니다. (같은, 하위 폴더 이름을 전달할 수도 있습니다 *~/App\_데이터 /* , 해당 하위 폴더에 대 한 경로 가져오려고 합니다.) 그런 다음 전체 경로 만들기 위해 모든 메서드에서 반환에 대 한 추가 정보를 연결할 수 있습니다. 이 예제에서는 파일 이름을 추가합니다. (자세한에서 파일 및 폴더 경로 사용 하는 방법에 대 한 [ASP.NET 웹 페이지 Razor 구문으로 프로그래밍 소개](https://go.microsoft.com/fwlink/?LinkId=195205#ID_WorkingWithFileAndFolderPaths).)
 
     파일에 저장 되는 *앱\_데이터* 폴더입니다. 이 폴더는에 설명 된 대로 데이터 파일을 저장 하는 데 사용 되는 ASP.NET의 특수 폴더 [ASP.NET Web Pages 사이트에서 데이터베이스를 사용 하 여 작업 소개](https://go.microsoft.com/fwlink/?LinkId=195209)합니다.
 
@@ -142,12 +142,12 @@ ms.locfileid: "65108942"
 > 
 > **Microsoft Excel 쉼표로 구분 된 파일에서 데이터를 표시합니다.**
 > 
-> Microsoft Excel을 사용 하 여 쉼표로 구분 된 파일로 스프레드시트에 포함 된 데이터를 저장할 수 있습니다 (*.csv* 파일). 작업을 수행 하면 파일은 Excel 형식이 일반 텍스트로 저장 됩니다. 스프레드시트의 각 행은 텍스트 파일의 줄 바꿈으로 구분 됩니다 하 고 각 데이터 항목을 쉼표로 구분 됩니다. 파일을 읽을 Excel 쉼표로 구분 된 코드에서 데이터 파일의 이름을 변경 하 여 이전 예제에 나와 있는 코드를 사용할 수 있습니다.
+> Microsoft Excel을 사용 하 여 쉼표로 구분 된 파일로 스프레드시트에 포함 된 데이터를 저장할 수 있습니다 ( *.csv* 파일). 작업을 수행 하면 파일은 Excel 형식이 일반 텍스트로 저장 됩니다. 스프레드시트의 각 행은 텍스트 파일의 줄 바꿈으로 구분 됩니다 하 고 각 데이터 항목을 쉼표로 구분 됩니다. 파일을 읽을 Excel 쉼표로 구분 된 코드에서 데이터 파일의 이름을 변경 하 여 이전 예제에 나와 있는 코드를 사용할 수 있습니다.
 
 <a id="Deleting_Files"></a>
 ## <a name="deleting-files"></a>파일 삭제
 
-웹 사이트에서 파일을 삭제 하려면 사용 된 `File.Delete` 메서드. 이 절차에서는 사용자가 이미지를 삭제할 수 있도록 하는 방법을 보여 줍니다 (*.jpg* 파일)에서 *이미지* 폴더 파일의 이름을 알고 있는 경우.
+웹 사이트에서 파일을 삭제 하려면 사용 된 `File.Delete` 메서드. 이 절차에서는 사용자가 이미지를 삭제할 수 있도록 하는 방법을 보여 줍니다 ( *.jpg* 파일)에서 *이미지* 폴더 파일의 이름을 알고 있는 경우.
 
 > [!NOTE] 
 > 

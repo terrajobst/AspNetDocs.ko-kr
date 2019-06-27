@@ -8,12 +8,12 @@ ms.date: 03/10/2014
 ms.assetid: d7bd001b-6db2-4422-9b78-f3d08b743b00
 msc.legacyurl: /web-pages/overview/ui-layouts-and-themes/3-creating-a-consistent-look
 msc.type: authoredcontent
-ms.openlocfilehash: 7d580b3812c4a09d6bc8d34c46dc82339ba40ee8
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 3f63ce68ae4c13970ac0df196167ace0b22b592c
+ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65133368"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67411251"
 ---
 # <a name="creating-a-consistent-layout-in-aspnet-web-pages-razor-sites"></a>ASP.NET 웹 페이지 (Razor) 사이트에서 일관적인 레이아웃 만들기
 
@@ -53,7 +53,7 @@ ms.locfileid: "65133368"
 
 이 절차에서는 별도 파일에 있는 두 개의 콘텐츠 블록 (헤더 및 바닥글)를 참조 하는 페이지를 만들어야 합니다. 사이트의 모든 페이지에 이러한 동일한 콘텐츠 블록을 사용할 수 있습니다. 완료 되 면 다음과 같은 페이지가 표시 됩니다.
 
-![RenderPage 메서드에 대 한 호출을 포함 하는 페이지 실행 결과로 생성 되는 브라우저에서 페이지를 보여주는 스크린샷.](3-creating-a-consistent-look/_static/image2.jpg)
+![RenderPage 메서드에 대 한 호출을 포함 하는 페이지 실행 결과로 생성 되는 브라우저에서 페이지를 보여주는 스크린샷.](3-creating-a-consistent-look/_static/image2.png)
 
 1. 웹 사이트의 루트 폴더에서 이라는 파일을 만듭니다 *Index.cshtml*합니다.
 2. 기존 태그를 다음으로 바꿉니다.
@@ -118,7 +118,7 @@ ms.locfileid: "65133368"
     레이아웃 페이지를 사용 하는 페이지입니다. 페이지의 맨 위에 있는 코드 블록은이 콘텐츠 형식을 지정 하는 데는 레이아웃 페이지를 나타냅니다.
 7. 실행할 *Content1.cshtml* 브라우저에서 합니다. 렌더링된 된 페이지 형식을 사용 및 스타일 시트에 정의 된  *\_Layout1.cshtml* 에 정의 된 텍스트 (콘텐츠)와 *Content1.cshtml*합니다.
 
-    ![[image]](3-creating-a-consistent-look/_static/image4.jpg)
+    ![[image]](3-creating-a-consistent-look/_static/image4.png)
 
     그런 다음 동일한 레이아웃 페이지를 공유할 수 있는 추가 콘텐츠 페이지를 만들려면 6 단계를 반복할 수 있습니다.
 
@@ -148,7 +148,7 @@ ms.locfileid: "65133368"
     이 콘텐츠 페이지는 페이지의 맨 위에 있는 코드 블록을 포함합니다. 각 명명 된 섹션은 섹션 블록에 포함 됩니다. 페이지의 나머지 기본 (명명 되지 않은) 콘텐츠 섹션을 포함 합니다.
 4. 실행할 *Content2.cshtml* 브라우저에서 합니다.
 
-    ![RenderSection 메서드에 대 한 호출을 포함 하는 페이지 실행 결과로 생성 되는 브라우저에서 페이지를 보여주는 스크린샷.](3-creating-a-consistent-look/_static/image6.jpg)
+    ![RenderSection 메서드에 대 한 호출을 포함 하는 페이지 실행 결과로 생성 되는 브라우저에서 페이지를 보여주는 스크린샷.](3-creating-a-consistent-look/_static/image6.png)
 
 ## <a name="making-content-sections-optional"></a>선택적 콘텐츠 섹션 만들기
 
@@ -165,7 +165,7 @@ ms.locfileid: "65133368"
     [!code-cshtml[Main](3-creating-a-consistent-look/samples/sample12.cshtml)]
 2. 페이지를 저장 하 고 브라우저에서 실행 합니다. 콘텐츠 페이지 레이아웃 페이지, 즉 헤더 섹션에에서 정의 된 섹션에 대 한 콘텐츠를 제공 하지 않습니다 오류 메시지가 표시 됩니다.
 
-    ![RenderSection 메서드를 호출 하는 페이지를 실행 하는 경우 발생 하는 오류를 보여 주는 스크린샷 하 하지만 해당 섹션이 제공 되지 않았습니다.](3-creating-a-consistent-look/_static/image7.jpg)
+    ![RenderSection 메서드를 호출 하는 페이지를 실행 하는 경우 발생 하는 오류를 보여 주는 스크린샷 하 하지만 해당 섹션이 제공 되지 않았습니다.](3-creating-a-consistent-look/_static/image7.png)
 3. 에 *Shared* 폴더를 열고 합니다  *\_Layout2.cshtml* 이 줄을 바꾸고 페이지:
 
     [!code-javascript[Main](3-creating-a-consistent-look/samples/sample13.js)]
@@ -210,10 +210,10 @@ ms.locfileid: "65133368"
     [!code-html[Main](3-creating-a-consistent-look/samples/sample18.html)]
 4. 실행 합니다 *Content3.cshtml* 브라우저에서 페이지입니다. 페이지의 왼쪽에 표시 된 목록을 사용 하 여 페이지가 표시 됩니다 및 **숨기기 목록** 아래쪽 단추입니다.
 
-    ![목록 및 목록 숨기기 ' 라는 단추를 포함 하는 페이지를 보여주는 스크린샷.](3-creating-a-consistent-look/_static/image10.jpg)
+    ![목록 및 목록 숨기기 ' 라는 단추를 포함 하는 페이지를 보여주는 스크린샷.](3-creating-a-consistent-look/_static/image10.png)
 5. 클릭 **목록 숨기기**합니다. 목록 사라지고 단추가로 바뀝니다 **표시 목록**합니다.
 
-    ![목록 및 목록 표시 ' 라는 단추를 포함 하지 않는 페이지를 보여주는 스크린샷.](3-creating-a-consistent-look/_static/image11.jpg)
+    ![목록 및 목록 표시 ' 라는 단추를 포함 하지 않는 페이지를 보여주는 스크린샷.](3-creating-a-consistent-look/_static/image11.png)
 6. 클릭 합니다 **표시 목록** 단추 및 목록을 다시 표시 됩니다.
 
 ## <a name="additional-resources"></a>추가 리소스

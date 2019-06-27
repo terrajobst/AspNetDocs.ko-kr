@@ -8,12 +8,12 @@ ms.date: 05/18/2012
 ms.assetid: 79eca52c-e7ad-44ab-a3e4-d8093e9da5a7
 msc.legacyurl: /web-pages/pluralsight
 msc.type: content
-ms.openlocfilehash: 5485b68f8ed87952a6d09e1880e6d8ce39eea73a
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: ce6d8a678e07945eff05baa080bb877bf06f6c6e
+ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65108574"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67411224"
 ---
 # <a name="webmatrix-and-web-pages-video-training-from-pluralsight"></a>Pluralsight의 WebMatrix 및 웹 페이지 비디오 교육
 
@@ -39,4 +39,4 @@ Scott Hanselman, 수석 프로그램 관리자, 웹 플랫폼 및 Microsoft Azur
 
 3,000 + 개발에 대 한 액세스를 잠금 해제 IT 및 언제, 어디서 나 볼 수 있는 창조적인 과정입니다.
 
-**부터 시작 되며 요금은 $ 29/mo.**[무료 평가판 시작](https://pluralsight.com/microsoft/olt/subscribe/SubscriptionRedirector.aspx?freetrial=true&amp;utm_source=microsoft&amp;utm_medium=sponsored-page&amp;utm_content=webmatrix&amp;utm_campaign=microsoft-sponsored-course) [지금 등록](https://pluralsight.com/microsoft/OLT/subscriptions.aspx?utm_source=microsoft&amp;utm_medium=sponsored-page&amp;utm_content=webmatrix&amp;utm_campaign=microsoft-sponsored-course)
+**35 달러/mo.부터**[무료 평가판을 시작 하거나 지금 구독](https://www.pluralsight.com/pricing&amp;utm_source=microsoft&amp;utm_medium=sponsored-page&amp;utm_content=webmatrix&amp;utm_campaign=microsoft-sponsored-course)

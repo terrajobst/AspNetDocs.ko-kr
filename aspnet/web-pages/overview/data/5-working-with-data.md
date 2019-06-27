@@ -8,12 +8,12 @@ ms.date: 02/18/2014
 ms.assetid: 673d502f-2c16-4a6f-bb63-dbfd9a77ef47
 msc.legacyurl: /web-pages/overview/data/5-working-with-data
 msc.type: authoredcontent
-ms.openlocfilehash: 4ed2a2a1ee3cff7a50e67b6571b85f74d01efab7
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 45e988d037465e59ad352bb9444af2c69fd3cd70
+ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65133229"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67411262"
 ---
 # <a name="introduction-to-working-with-a-database-in-aspnet-web-pages-razor-sites"></a>Asp.net에서 데이터베이스를 사용 하 여 작업 소개 페이지 (Razor) 사이트
 
@@ -94,7 +94,7 @@ ms.locfileid: "65133229"
 
     완료 되 면 정의 다음과 같이 표시 됩니다.
 
-    ![[image]](5-working-with-data/_static/image2.jpg)
+    ![[image]](5-working-with-data/_static/image2.png)
 17. 테이블을 저장 하려면 Ctrl + S를 누릅니다.
 
 ## <a name="adding-data-to-the-database"></a>데이터베이스에 데이터 추가

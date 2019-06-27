@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.assetid: 27d110fc-d1b7-4628-a763-26f1e6087549
 msc.legacyurl: /mvc/overview/getting-started/getting-started-with-ef-using-mvc/async-and-stored-procedures-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: 9041167af076d80ebf294e054ffe51293d11e888
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5612f2f25d06feb904a205505ed8f048d2263266
+ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033180"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67410934"
 ---
 # <a name="tutorial-use-async-and-stored-procedures-with-ef-in-an-aspnet-mvc-app"></a>자습서: ASP.NET MVC 앱에서 EF를 사용 하 여 비동기 및 저장된 프로시저 사용
 
@@ -113,7 +113,7 @@ Entity Framework를 사용한 비동기 프로그래밍을 사용할 때 알아�
 
     `add-migration DepartmentSP`
 
-    오픈 *마이그레이션을\&l t; 타임 스탬프&gt;\_DepartmentSP.cs* 의 코드를 참조 하는 `Up` 만드는 메서드를 삽입, 업데이트 및 삭제 저장 프로시저:
+    오픈 *마이그레이션을\\&lt;타임 스탬프&gt;\_DepartmentSP.cs* 의 코드를 참조 하는 `Up` 만드는 메서드를 삽입, 업데이트 및 삭제 저장 프로시저:
 
     [!code-csharp[Main](async-and-stored-procedures-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample8.cs?highlight=3-4,26-27,42-43)]
 3. 패키지 관리 콘솔에서 다음 명령을 입력 합니다.

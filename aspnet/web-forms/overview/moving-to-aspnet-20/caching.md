@@ -8,12 +8,12 @@ ms.date: 02/20/2005
 ms.assetid: 2bb109d2-e299-46ea-9054-fa0263b59165
 msc.legacyurl: /web-forms/overview/moving-to-aspnet-20/caching
 msc.type: authoredcontent
-ms.openlocfilehash: 39f4eb7b0859cf52fe3ed2531e9c349b465b9327
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 4f0b021ca6ca151544dd9fb0587ed9e0cf14ff65
+ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65116859"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67411247"
 ---
 # <a name="caching"></a>캐싱
 
@@ -94,7 +94,7 @@ SQL Server 7 및 2000 SQL 캐시 종속성에 대 한 폴링 기반 모델을 �
 | AspNet\_SqlCacheUnRegisterTableStoredProcedure | 알림 테이블에 항목을 제거 하 여 SQL 캐시 종속성에 대 한 테이블을 등록 취소 하 고 트리거를 제거 합니다. |
 | AspNet\_SqlCacheUpdateChangeIdStoredProcedure | 변경된 테이블에 대 한 changeId 증가 시켜 알림 테이블을 업데이트 합니다. ASP.NET은 데이터 변경 되었는지 여부를 확인 하려면이 값을 사용 합니다. 아래와 같이이 저장된 프로시저는 테이블에 활성화 될 때 생성 된 트리거에 의해 실행 됩니다. |
 
-- SQL Server 트리거를 호출 ***테이블\_이름 *\_AspNet\_SqlCacheNotification\_트리거** 테이블에 대해 만들어집니다. 이 트리거가 실행 AspNet\_SqlCacheUpdateChangeIdStoredProcedure 삽입, 업데이트 또는 삭제 테이블에서 수행 될 때입니다.
+- SQL Server 트리거를 호출  **_표\_이름_\_AspNet\_SqlCacheNotification\_트리거** 테이블에 대해 만들어집니다. 이 트리거가 실행 AspNet\_SqlCacheUpdateChangeIdStoredProcedure 삽입, 업데이트 또는 삭제 테이블에서 수행 될 때입니다.
 - SQL Server 역할을 호출 **aspnet\_ChangeNotification\_ReceiveNotificationsOnlyAccess** 데이터베이스에 추가 됩니다.
 
 합니다 **aspnet\_ChangeNotification\_ReceiveNotificationsOnlyAccess** SQL Server 역할 권한이 EXEC AspNet\_SqlCachePollingStoredProcedure 합니다. 제대로 작동 하려면 폴링 모델에 대 한 순서로 프로세스 계정의을 더해야 aspnet\_ChangeNotification\_ReceiveNotificationsOnlyAccess 역할입니다. Aspnet\_regsql.exe 도구는 이렇게 하지 있습니다.
@@ -263,7 +263,7 @@ ASP.NET 2.0에서 캐싱 구성에 여러 변경 내용이 있습니다. 합니�
     - 전용 바이트 제한에 가까워 진 매우는
     - 사용 가능한 메모리가 10% 보다 작거나 거의
 - 효과적으로 trim을 사용 하지 않도록 설정 하 고 설정 하 여 사용 가능한 메모리가 부족 조건에 대 한 캐시 수 &lt;percentagePhysicalMemoryUseLimit 캐시 /&gt; 100입니다.
-- 1.x와 달리 2.0에서 일시 중단 trim 및 수집 호출을 마지막 GC 합니다. 수집 전용 바이트 또는 메모리 제한 (캐시)의 1%를 초과 하 여 관리 되는 힙 크기는 줄어들지 않습니다 않았습니다.
+- 1\.x와 달리 2.0에서 일시 중단 trim 및 수집 호출을 마지막 GC 합니다. 수집 전용 바이트 또는 메모리 제한 (캐시)의 1%를 초과 하 여 관리 되는 힙 크기는 줄어들지 않습니다 않았습니다.
 
 ## <a name="lab1-custom-cache-dependencies"></a>Lab1: 사용자 지정 캐시 종속성
 

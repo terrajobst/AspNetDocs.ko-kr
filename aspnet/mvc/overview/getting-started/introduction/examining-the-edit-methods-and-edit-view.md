@@ -8,12 +8,12 @@ ms.date: 01/06/2019
 ms.assetid: 52a4d5fe-aa31-4471-b3cb-a064f82cb791
 msc.legacyurl: /mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view
 msc.type: authoredcontent
-ms.openlocfilehash: c42ec77b5d5107f3ef70e13b779fc1bebef70a14
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 264f2ec5c497682f5e3e202dd69a835ff228e75b
+ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65120711"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67410864"
 ---
 # <a name="examining-the-edit-methods-and-edit-view"></a>편집 메서드 및 편집 보기 검사
 
@@ -21,7 +21,7 @@ ms.locfileid: "65120711"
 
 [!INCLUDE [Tutorial Note](sample/code-location.md)]
 
-이 섹션에서는 생성 된 살펴보겠습니다 `Edit` 작업 메서드와 뷰 영화 컨트롤러에 대 한 합니다. 하지만 먼저 좋게 출시일 수 있도록 짧은 전환 수행 됩니다. 열기는 *Models\Movie.cs* 파일과 아래 강조 표시 된 줄을 추가 합니다.
+이 섹션에서는 생성 된 살펴보겠습니다 `Edit` 작업 메서드와 뷰 영화 컨트롤러에 대 한 합니다. 하지만 먼저 좋게 출시일 수 있도록 짧은 전환을 알아보겠습니다. 열기는 *Models\Movie.cs* 파일과 아래 강조 표시 된 줄을 추가 합니다.
 
 [!code-csharp[Main](examining-the-edit-methods-and-edit-view/samples/sample1.cs?highlight=2,12-14)]
 
@@ -43,7 +43,7 @@ ms.locfileid: "65120711"
 
 합니다 `Html` 에서 속성을 사용 하 여 노출 되는 도우미 개체가 합니다 [System.Web.Mvc.WebViewPage](https://msdn.microsoft.com/library/gg402107(VS.98).aspx) 기본 클래스입니다. `ActionLink` 도우미 메서드를 사용 하면 쉽게 컨트롤러 동작 메서드에 연결 하는 HTML 하이퍼링크를 동적으로 생성할 수 있습니다. 첫 번째 인수는 `ActionLink` 메서드는 링크 텍스트 렌더링입니다 (예를 들어 `<a>Edit Me</a>`). 두 번째 인수는 호출할 동작 메서드의 이름 (이 경우에 `Edit` 작업). 마지막 인수는를 [익명 개체](https://weblogs.asp.net/scottgu/archive/2007/05/15/new-orcas-language-feature-anonymous-types.aspx) (이 경우 ID가 4)에서 경로 데이터를 생성 합니다.
 
-이전 이미지에 나와 있는 생성 된 링크는 `http://localhost:1234/Movies/Edit/4`합니다. 기본 경로 (설정 된 *앱\_start\*) URL 패턴을 사용 `{controller}/{action}/{id}`합니다. 따라서 ASP.NET으로 변환 `http://localhost:1234/Movies/Edit/4` 하는 요청에는 `Edit` 의 동작 메서드는 `Movies` 매개 변수를 사용 하 여 컨트롤러 `ID` 4와 같습니다. 다음 코드를 검토 합니다 *앱\_start\* 파일. 합니다 [MapRoute](../../older-versions-1/controllers-and-routing/asp-net-mvc-routing-overview-cs.md) 메서드는 HTTP 요청을 올바른 컨트롤러와 작업 메서드로 라우팅하고 선택적 ID 매개 변수를 제공 하는 데 사용 됩니다. 합니다 [MapRoute](../../older-versions-1/controllers-and-routing/asp-net-mvc-routing-overview-cs.md) 메서드 에서도 사용 합니다 [HtmlHelpers](https://msdn.microsoft.com/library/system.web.mvc.htmlhelper(v=vs.108).aspx) 와 같은 `ActionLink` 컨트롤러, 작업 메서드 및 경로 데이터를 지정 하는 Url을 생성 하 합니다.
+이전 이미지에 나와 있는 생성 된 링크는 `http://localhost:1234/Movies/Edit/4`합니다. 기본 경로 (설정 된 *앱\_start\* ) URL 패턴을 사용 `{controller}/{action}/{id}`합니다. 따라서 ASP.NET으로 변환 `http://localhost:1234/Movies/Edit/4` 하는 요청에는 `Edit` 의 동작 메서드는 `Movies` 매개 변수를 사용 하 여 컨트롤러 `ID` 4와 같습니다. 다음 코드를 검토 합니다 *앱\_start\* 파일. 합니다 [MapRoute](../../older-versions-1/controllers-and-routing/asp-net-mvc-routing-overview-cs.md) 메서드는 HTTP 요청을 올바른 컨트롤러와 작업 메서드로 라우팅하고 선택적 ID 매개 변수를 제공 하는 데 사용 됩니다. 합니다 [MapRoute](../../older-versions-1/controllers-and-routing/asp-net-mvc-routing-overview-cs.md) 메서드 에서도 사용 합니다 [HtmlHelpers](https://msdn.microsoft.com/library/system.web.mvc.htmlhelper(v=vs.108).aspx) 와 같은 `ActionLink` 컨트롤러, 작업 메서드 및 경로 데이터를 지정 하는 Url을 생성 하 합니다.
 
 [!code-csharp[Main](examining-the-edit-methods-and-edit-view/samples/sample4.cs?highlight=7)]
 
@@ -100,7 +100,7 @@ ms.locfileid: "65120711"
 영어 (미국) 컴퓨터를 사용 하는 경우이 섹션을 건너뛸 하 수 다음 자습서로 이동 합니다. 이 자습서의 Globalize 버전을 다운로드할 수 있습니다 [여기](https://archive.msdn.microsoft.com/Project/Download/FileDownload.aspx?ProjectName=aspnetmvcsamples&amp;DownloadId=16475)합니다. 국제화에 뛰어난 2 부 자습서를 참조 하세요 [Nadeem의 ASP.NET MVC 5 국제화](http://afana.me/post/aspnet-mvc-internationalization.aspx)합니다.
 
 > [!NOTE]
-> 쉼표를 사용 하는 영어가 아닌 로캘의 jQuery 유효성 검사를 지원 하도록 (&quot;,&quot;), 소수점 및 미국 영어가 아닌 날짜 형식에 대 한 포함 해야 합니다 *globalize.js* 및 특정  *cultures/globalize.cultures.js* 파일 (에서 [ https://github.com/jquery/globalize ](https://github.com/jquery/globalize) ) 및 JavaScript를 사용 하 여 `Globalize.parseFloat`입니다. NuGet에서 영어가 아닌 jQuery 유효성 검사를 가져올 수 있습니다. (설치 하지 마십시오 Globalize 영어 로캘을 사용 하는 경우.)
+> 쉼표를 사용 하는 영어가 아닌 로캘의 jQuery 유효성 검사를 지원 하도록 (&quot;,&quot;), 소수점 및 미국 영어가 아닌 날짜 형식에 대 한 포함 해야 합니다 *globalize.js* 및 특정  *cultures/globalize.cultures.js* 파일 (에서 [ https://github.com/jquery/globalize ](https://github.com/jquery/globalize) ) 및 JavaScript를 사용 하 여 `Globalize.parseFloat` 입니다. NuGet에서 영어가 아닌 jQuery 유효성 검사를 가져올 수 있습니다. (설치 하지 마십시오 Globalize 영어 로캘을 사용 하는 경우.)
 
 1. **도구** 메뉴 **NuGet 패키지 관리자**를 클릭 하 고 **솔루션용 NuGet 패키지 관리**합니다.
 

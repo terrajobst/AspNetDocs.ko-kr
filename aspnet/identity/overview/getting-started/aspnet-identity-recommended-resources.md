@@ -9,12 +9,12 @@ ms.assetid: 0f78aec2-f509-46fa-b20f-d5208425d8ec
 ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/getting-started/aspnet-identity-recommended-resources
 msc.type: authoredcontent
-ms.openlocfilehash: 8e476f8a4172ebbe55819cda1ceb5458426243bd
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: fa4b22438fffe4f5b95a877e96eb4ec26b6de8d9
+ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381902"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67410889"
 ---
 # <a name="aspnet-identity-recommended-resources"></a>ASP.NET Identity 권장 리소스
 
@@ -147,7 +147,6 @@ ms.locfileid: "59381902"
 - 블로그: [ASP.NET Id를 구현합니다.](http://odetocode.com/blogs/scott/archive/2014/01/20/implementing-asp-net-identity.aspx)
 - 자습서:[는 기본 Id 계정은 설정 하 고 외부 DB를 가리키면 해당](http://typecastexception.com/post/2013/10/27/Configuring-Db-Connection-and-Code-First-Migration-for-Identity-Accounts-in-ASPNET-MVC-5-and-Visual-Studio-2013.aspx)합니다. 하 여 [ @xivSolutions ](https://twitter.com/xivSolutions)합니다.
 - 자습서[: 사용자 지정 MySQL ASP.NET Id 저장소 공급자 구현](../extensibility/implementing-a-custom-mysql-aspnet-identity-storage-provider.md)
-- [CodeFluent 엔터티](http://blog.codefluententities.com/2014/04/30/asp-net-identity-v2-and-codefluent-entities/) 여 [SoftFluent](http://www.softfluent.com/)
 - [Azure Table Storage](https://www.nuget.org/packages/accidentalfish.aspnet.identity.azure/) James randall 합니다.
 - Azure Table Storage: [AspNet.Identity.TableStorage](https://github.com/stuartleeks/leeksnet.AspNet.Identity.TableStorage) 하 여 [ @stuartleeks ](https://twitter.com/stuartleeks)합니다.
 - [CouchDB / Daniel Wertheim 여 Cloudant입니다.](https://github.com/danielwertheim/mycouch.aspnet.identity)

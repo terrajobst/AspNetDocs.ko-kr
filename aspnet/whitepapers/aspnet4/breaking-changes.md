@@ -8,12 +8,12 @@ ms.date: 02/10/2010
 ms.assetid: d601c540-f86b-4feb-890c-20c806b3da6c
 msc.legacyurl: /whitepapers/aspnet4/breaking-changes
 msc.type: content
-ms.openlocfilehash: 65b13065ae5324ce64ec1b87b2127e5277542fb8
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 8ccad3b40a723c92a3164de082e1f94577141008
+ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65125666"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67411207"
 ---
 # <a name="aspnet-4-breaking-changes"></a>ASP.NET 4 주요 변경 내용
 
@@ -317,11 +317,11 @@ ASP.NET 4에 웹 사이트를 실행 하기 위해 필요한 경우 모든 자�
 
 ASP.NET 4를 변경 하는 수정 내용을 포함 하는 방법을 **동작** html 특성 **폼** 확장명 없는 URL을 기본 문서를 확인 하는 경우 요소가 렌더링 됩니다. 기본 문서를 확인 하는 확장명 없는 URL의 예로 [ http://contoso.com/ ](http://contoso.com/)로 요청이 [ http://contoso.com/Default.aspx ](http://contoso.com/Default.aspx)합니다.
 
-ASP.NET 4는 이제 HTML 렌더링 **폼** 요소의 **동작** 는 기본 문서가 매핑된 확장명 없는 URL에는 요청이 만들어질 때 빈 문자열로 특성 값입니다. 예를 들어, 요청을 ASP.NET의 이전 릴리스에서 [ http://contoso.com ](http://contoso.com) 요청을 초래 `Default.aspx`합니다. 여는 문서의 **폼** 태그는 다음 예제와 같이 렌더링 됩니다.
+ASP.NET 4는 이제 HTML 렌더링 **폼** 요소의 **동작** 는 기본 문서가 매핑된 확장명 없는 URL에는 요청이 만들어질 때 빈 문자열로 특성 값입니다. 예를 들어, 요청을 ASP.NET의 이전 릴리스에서 [ http://contoso.com ](http://contoso.com) 요청을 초래 `Default.aspx` 합니다. 여는 문서의 **폼** 태그는 다음 예제와 같이 렌더링 됩니다.
 
 `<form action="Default.aspx" />`
 
-ASP.NET 4에서 요청이 [ http://contoso.com ](http://contoso.com) 하는 요청에는 결과도 `Default.aspx`합니다. ASP.NET HTML 여는 이제 렌더링 되는 반면 **폼** 다음 예제와 같이 태그:
+ASP.NET 4에서 요청이 [ http://contoso.com ](http://contoso.com) 하는 요청에는 결과도 `Default.aspx` 합니다. ASP.NET HTML 여는 이제 렌더링 되는 반면 **폼** 다음 예제와 같이 태그:
 
 `<form action="" />`
 
@@ -362,7 +362,7 @@ ASP.NET 2.0 확장 하 여 3.5에 추가 된 ASP.NET 기능에서는.NET Framewo
 - 여러 다른 권한 집합을 단일 응용 프로그램 도메인에서 허용 됩니다.
 - 명시적 사용 권한을 어설션 ASP.NET 또는 다른.NET Framework 코드 스택에 때 호출 되는 GAC의 어셈블리에 대 한 필요 하지 않습니다.
 
-.NET Framework 4에서 한 가지 시나리오를 되돌릴 수 없습니다: 비 웹 부분 신뢰 응용 프로그램 System.Web.Extensions.dll System.Web.dll에서 특정 Api를 더 이상 호출할 수 없습니다. .NET Framework의 이전 버전에서는 비 웹 부분 신뢰 응용 프로그램을 명시적으로 부여 받아야을 수 있었습니다 <strong>AspNetHostingPermission</strong> 권한. 이러한 응용 프로그램에 사용 하 여 수 <strong>System.Web.HttpUtility</strong>, 형식 합니다 <strong>System.Web.ClientServices.\< / s o n > * 네임 스페이스 및 형식 멤버 자격, 역할 및 프로필 관련이 있습니다. 비 웹 부분 신뢰 응용 프로그램에서 이러한 형식을 호출 하는.NET Framework 4에서 더 이상 지원 되지.
+.NET Framework 4에서 한 가지 시나리오를 되돌릴 수 없습니다: 비 웹 부분 신뢰 응용 프로그램 System.Web.Extensions.dll System.Web.dll에서 특정 Api를 더 이상 호출할 수 없습니다. .NET Framework의 이전 버전에서는 비 웹 부분 신뢰 응용 프로그램을 명시적으로 부여 받아야을 수 있었습니다 **AspNetHostingPermission** 권한. 이러한 응용 프로그램에 사용 하 여 수 **System.Web.HttpUtility**, 형식 합니다 **System.Web.ClientServices.\***  네임 스페이스 및 형식 멤버 자격, 역할 및 프로필 관련이 있습니다. 비 웹 부분 신뢰 응용 프로그램에서 이러한 형식을 호출 하는.NET Framework 4에서 더 이상 지원 되지.
 
 > [!NOTE]
 > 합니다 **HtmlEncode** 및 **HtmlDecode** 의 기능을 **System.Web.HttpUtility** 클래스는 새.NET Framework 4로 이동 되었습니다  **System.Net.WebUtility** 클래스입니다. 사용 중이 던만 ASP.NET 기능을 하는 경우 새 사용 하도록 응용 프로그램의 코드를 수정 **WebUtility** 클래스를 대신 합니다.

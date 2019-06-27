@@ -8,12 +8,12 @@ ms.date: 10/14/2017
 ms.assetid: 8935bf14-ca6d-4a4e-9dbe-b96ce74cef49
 msc.legacyurl: /ajax/cdn
 msc.type: content
-ms.openlocfilehash: 6040f1fa32e9df340ebf3f8635b9d07be871ee40
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 7b0b42c02439fdb76bceecc80af881e1d58e470d
+ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65118923"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67410830"
 ---
 # <a name="microsoft-ajax-content-delivery-network"></a>Microsoft Ajax Content Delivery Network
 
@@ -76,7 +76,7 @@ Microsoft Ajax CDN에는 Microsoft에서 업로드 된 다음 라이브러리를
 
 Microsoft는이 CDN에 호스트 된 모든 타사 라이브러리의 소유권을 주장 하지 않습니다. 라이브러리의 저작권 소유자는 이러한 라이브러리를 라이선스 다운로드 하 고 이러한 라이브러리를 사용할 수 있는 권리는 해당 하는 저작권 소유자가 단독으로 부여 됩니다. 이들은 Microsoft 라이브러리, Microsoft 없습니다 보증 또는 지적 재산 권한 라이선스가 없는 묵시적인된 특허 권한 등이 CDN에 호스트 된 타사 라이브러리에 대 한 제공 합니다.
 
-JavaScript 라이브러리를 제출 하려는 경우 라이브러리를 사용 하면 상위 JavaScript 라이브러리 중 하나인 (에 나열 http://trends.builtwith.com) (a) 인기 있는; 또는 (b) 하는 데 도움이 ASP.NET에서 사용 된 후에 문의 하세요 이러한 라이브러리를 확장/플러그 인 또는 AjaxCDNSubmission@Microsoft.com합니다.
+JavaScript 라이브러리를 제출 하려는 경우 라이브러리를 사용 하면 상위 JavaScript 라이브러리 중 하나인 (에 나열 http://trends.builtwith.com) (a) 인기 있는; 또는 (b) 하는 데 도움이 ASP.NET에서 사용 된 후에 문의 하세요 이러한 라이브러리를 확장/플러그 인 또는 AjaxCDNSubmission@Microsoft.com 합니다.
 
 <a id="ajaxmicrosoftcom_renamed_to_ajaxaspnetcdncom_18"></a>
 
@@ -205,7 +205,7 @@ CDN에서 jQuery의 다음 릴리스가 호스팅됩니다.
 - https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.slim.min.js
 - https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.slim.min.map
 
-#### <a name="jquery-version-311"></a>3.1.1 jQuery 버전
+#### <a name="jquery-version-311"></a>3\.1.1 jQuery 버전
 
 - https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.js
 - https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js
@@ -776,7 +776,7 @@ JQuery DataTables 플러그인의 다음 릴리스에서이 CDN에서 호스트 
 
 ### <a name="respond-releases-on-the-cdn"></a>CDN에서 릴리스 응답
 
-다음 릴리스에서 [https://github.com/scottjehl/Respond](https://github.com/scottjehl/Respond "https://github.com/scottjehl/Respond") 응답 CDN에서 호스팅됩니다.
+다음 릴리스에서 [응답](https://github.com/scottjehl/Respond "응답") CDN에서 호스팅됩니다.
 
 #### <a name="respond-version-142"></a>응답 버전 1.4.2
 
@@ -953,7 +953,7 @@ JQuery DataTables 플러그인의 다음 릴리스에서이 CDN에서 호스트 
 - https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/fonts/glyphicons-halflings-regular.woff
 - https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/fonts/glyphicons-halflings-regular.woff2
 
-#### <a name="bootstrap-version-334"></a>3.3.4 부트스트랩 버전
+#### <a name="bootstrap-version-334"></a>3\.3.4 부트스트랩 버전
 
 - https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.4/bootstrap.js
 - https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.4/bootstrap.min.js
@@ -969,7 +969,7 @@ JQuery DataTables 플러그인의 다음 릴리스에서이 CDN에서 호스트 
 - https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.4/fonts/glyphicons-halflings-regular.woff
 - https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.4/fonts/glyphicons-halflings-regular.woff2
 
-#### <a name="bootstrap-version-332"></a>3.3.2 버전을 부트스트랩
+#### <a name="bootstrap-version-332"></a>3\.3.2 버전을 부트스트랩
 
 - https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.2/bootstrap.js
 - https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.2/bootstrap.min.js
@@ -1030,7 +1030,7 @@ JQuery DataTables 플러그인의 다음 릴리스에서이 CDN에서 호스트 
 - https://ajax.aspnetcdn.com/ajax/bootstrap/3.2.0/fonts/glyphicons-halflings-regular.ttf
 - https://ajax.aspnetcdn.com/ajax/bootstrap/3.2.0/fonts/glyphicons-halflings-regular.woff
 
-#### <a name="bootstrap-version-311"></a>3.1.1 부트스트랩 버전
+#### <a name="bootstrap-version-311"></a>3\.1.1 부트스트랩 버전
 
 - https://ajax.aspnetcdn.com/ajax/bootstrap/3.1.1/bootstrap.js
 - https://ajax.aspnetcdn.com/ajax/bootstrap/3.1.1/bootstrap.min.js

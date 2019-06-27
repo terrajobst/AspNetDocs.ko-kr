@@ -8,12 +8,12 @@ ms.date: 02/10/2010
 ms.assetid: bdea2003-e964-4db5-9092-d56cc7560616
 msc.legacyurl: /whitepapers/side-by-side-with-10
 msc.type: content
-ms.openlocfilehash: d03919e8465c28cf00bf057193452396523cb1af
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: c123545099013af71569bce4707f2b3eb732c344
+ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65125619"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67411221"
 ---
 # <a name="aspnet-side-by-side-execution-of-net-framework-10-and-11"></a>.NET Framework 1.0 및 1.1의 ASP.NET Side-by-Side 실행
 
@@ -53,7 +53,7 @@ ASP.NET에서 실행 되 고 함께 동일한 컴퓨터에 설치 되어 있지�
 4. **확인**을 클릭합니다.  
   
     ![](side-by-side-with-10/_static/image1.gif)
-5. 명령 프롬프트에서.NET Framework의 설치를 시작 하려면 다음 줄을 입력 합니다. **Dotnetfx.exe /c:"install /noaspupgrade?**.  
+5. 명령 프롬프트에서.NET Framework의 설치를 시작 하려면 다음 줄을 입력 합니다. **Dotnetfx.exe /c:"install /noaspupgrade?** .  
   
     ![](side-by-side-with-10/_static/image2.gif)
 6. 클릭 **예** Microsoft.NET Framework 1.1 설치에서 합니다. 이.NET Framework 1.1의 설치 프로세스를 시작 됩니다.  
@@ -68,11 +68,11 @@ ASP.NET IIS Registration Tool의 버전을 포함 하는 각 버전의.NET Frame
 
 Aspnet\_regiis.exe 버전 1.0에 대 한 위치는:
 
-- C:\WINDOWS\Microsoft.NET\Framework\**v1.0.3705**\aspnet\_regiis
+- C:\WINDOWS\Microsoft.NET\Framework\\**v1.0.3705**\aspnet\_regiis
 
 Aspnet\_regiis.exe 버전 1, 1에 대 한 위치는:
 
-- C:\WINDOWS\Microsoft.NET\Framework\**v1.1.4322**\aspnet\_regiis
+- C:\WINDOWS\Microsoft.NET\Framework\\**v1.1.4322**\aspnet\_regiis
 
 Aspnet\_regiis.exe 스크립트 매핑 웹 응용 프로그램에 대 한 두 가지 옵션을 제공 합니다.
 

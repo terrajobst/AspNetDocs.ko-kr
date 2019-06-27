@@ -8,12 +8,12 @@ ms.date: 02/17/2014
 ms.assetid: 46bff772-01e0-40f0-9ae6-9e18c5442ee6
 msc.legacyurl: /web-pages/overview/ui-layouts-and-themes/creating-and-using-a-helper-in-an-aspnet-web-pages-site
 msc.type: authoredcontent
-ms.openlocfilehash: 1f5109324ff3ce919e88fe976587a179eeaa5a5d
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 380663951094c9fc7d5f0601e30995fa073a204b
+ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65116044"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67410975"
 ---
 # <a name="creating-and-using-a-helper-in-an-aspnet-web-pages-razor-site"></a>만들기 및 ASP.NET 웹 페이지 (Razor) 사이트에서 도우미 사용
 
@@ -71,7 +71,7 @@ ms.locfileid: "65116044"
     사용 하 여 만든 도우미를 호출 하려면 `@` 여기서 도우미는, 점, 파일 이름 및 다음 도우미 이름 뒤에 있습니다. (여러 폴더 설치한 경우 합니다 *앱\_코드* 폴더를 구문을 사용할 수 있습니다 `@FolderName.FileName.HelperName` 중첩 된 폴더 수준 내에서 도우미를 호출 하). 괄호 안에 인용 부호 안에 추가 하는 텍스트에는 웹 페이지에서 메모의 일부로 도우미를 표시 하는 텍스트가입니다.
 3. 페이지를 저장 하 고 브라우저에서 실행 합니다. 참고 항목 오른쪽 도우미를 호출 하는 위치를 생성 하는 도우미: 두 단락 간에 합니다.
 
-    ![페이지에는 브라우저 도우미에서 지정된 된 텍스트 주위에 상자를 배치 하는 태그를 생성 하는 방법을 보여주는 스크린샷.](creating-and-using-a-helper-in-an-aspnet-web-pages-site/_static/image1.jpg)
+    ![페이지에는 브라우저 도우미에서 지정된 된 텍스트 주위에 상자를 배치 하는 태그를 생성 하는 방법을 보여주는 스크린샷.](creating-and-using-a-helper-in-an-aspnet-web-pages-site/_static/image1.png)
 
 ## <a name="additional-resources"></a>추가 리소스
 

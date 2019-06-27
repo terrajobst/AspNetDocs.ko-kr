@@ -8,12 +8,12 @@ ms.date: 02/10/2014
 ms.assetid: f3f4b8c8-e8f6-4474-ad94-69228a6c01ee
 msc.legacyurl: /web-pages/overview/ui-layouts-and-themes/4-working-with-forms
 msc.type: authoredcontent
-ms.openlocfilehash: ec5ad784978b2d5191d59398fc4b5ed25ae516fb
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: c7d4802063c8610a246afe67bd15eea429f7304a
+ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65128400"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67410838"
 ---
 # <a name="working-with-html-forms-in-aspnet-web-pages-razor-sites"></a>ASP.NET 웹 페이지 (Razor) 사이트에서 HTML 양식 사용
 
@@ -51,7 +51,7 @@ ms.locfileid: "65128400"
     [!code-html[Main](4-working-with-forms/samples/sample1.html)]
 3. 브라우저에서 페이지를 시작 합니다. (WebMatrix에서에 **파일** 작업 영역에서 파일을 마우스 오른쪽 단추로 클릭 하 고 선택한 **브라우저에서 시작**.) 세 가지 입력된 필드를 사용 하 여 간단한 양식으로 **제출** 단추가 표시 됩니다.
 
-    ![세 개의 텍스트 상자를 사용 하 여 폼의 스크린샷입니다.](4-working-with-forms/_static/image1.jpg)
+    ![세 개의 텍스트 상자를 사용 하 여 폼의 스크린샷입니다.](4-working-with-forms/_static/image1.png)
 
     이때 클릭할 경우는 **제출** 단추를 아무 일도 발생 합니다. 폼을 유용 하 게 하려면 서버에서 실행 되는 일부 코드를 추가 해야 합니다.
 
@@ -67,7 +67,7 @@ ms.locfileid: "65128400"
 
     이 페이지를 제출 하면 폼 바로 위에 입력 한 값이 표시 됩니다.
 
-    ![페이지에 표시 되는 입력 한 값을 보여 주는 스크린샷.](4-working-with-forms/_static/image2.jpg)
+    ![페이지에 표시 되는 입력 한 값을 보여 주는 스크린샷.](4-working-with-forms/_static/image2.png)
 
     페이지에 대 한 코드를 확인 합니다. 먼저 사용 하 여는 `IsPost` 페이지가 게시 되 고 있는지 여부를 결정 하는 방법 &#8212; 즉, 여부를 사용자를 클릭 하는 **제출** 단추입니다. 게시물을 경우 `IsPost` true를 반환 합니다. 이 초기 요청 (GET 요청) 또는 다시 게시 (POST 요청을)를 사용 하 여 작업할 여부를 확인 하는 표준 방법은 ASP.NET 웹 페이지의 경우 (GET 및 POST에 대 한 자세한 내용은 HTTP GET 및 POST 및 the IsPost "속성" 보충 기사를 참조 하세요 [ASP.NET 웹 페이지 Razor 구문으로 프로그래밍 소개](https://go.microsoft.com/fwlink/?LinkId=202890#SB_HttpGetPost).)
 
