@@ -389,7 +389,7 @@ FTP를 통해 연 웹 응용 프로그램을 원격으로 디버그할 수 이�
 
 ASP.NET Development Server는 제한 된 웹 서버입니다. 원격 연결을 허용 하지 않습니다, 그리고 웹 서버를 시작한 사용자 이외의 다른 사용자의 모든 요청을 허용 하지 않습니다. 또한 없기 ASP 페이지를 제공 하는 기능입니다. ASP.NET 리소스 및 HTML 리소스 (이미지, CSS 파일 등 포함)만 제공 됩니다.
 
-C:/Windows/Microsoft.NET/Framework/v2.0./ 위치한 WebDev.WebServer.exe 파일을 실행 하 여 명령줄을 통해 ASP.NET Development Server를 시작할 수 있습니다*/* /  */*/*. 다음 대화 상자에는 사용할 수 있는 매개 변수를 표시 합니다.
+C:/Windows/Microsoft.NET/Framework/v2.0./ 위치한 WebDev.WebServer.exe 파일을 실행 하 여 명령줄을 통해 ASP.NET Development Server를 시작할 수 있습니다 */* /  */* /*. 다음 대화 상자에는 사용할 수 있는 매개 변수를 표시 합니다.
 
 ![](improvements-in-visual-studio-2005/_static/image11.jpg)
 

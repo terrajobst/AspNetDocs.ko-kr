@@ -309,7 +309,7 @@ ELMAH 로그를 확인 하는 것은 쉽지만 있지만 ELMAH 로그에 기록 
 
 ## <a name="tutorial-series-conclusion"></a>자습서 시리즈 결론
 
-*에 따라 다음에 참여해 주셔서 감사 합니다. 이 자습서 집합을 통해 ASP.NET Web Forms에 더 익숙해질 수 있기를 기대 합니다. ASP.NET 4.5와 Visual Studio 2013에서 사용 가능한 Web Forms 기능에 대 한 자세한 내용은 참조 하세요* [ *ASP.NET 및 Web Tools for Visual Studio 2013 릴리스 정보* ](../../../../visual-studio/overview/2013/release-notes.md)  *. 또한에 언급 된 자습서를 살펴보려면 해야 합니다* ***다음 단계 * * * 섹션과 defintely 사용해 합니다* [ *무료 Azure 평가판* ](https://azure.microsoft.com/pricing/free-trial/)*.*
+*에 따라 다음에 참여해 주셔서 감사 합니다. 이 자습서 집합을 통해 ASP.NET Web Forms에 더 익숙해질 수 있기를 기대 합니다. ASP.NET 4.5와 Visual Studio 2013에서 사용 가능한 Web Forms 기능에 대 한 자세한 내용은 참조 하세요* [ *ASP.NET 및 Web Tools for Visual Studio 2013 릴리스 정보* ](../../../../visual-studio/overview/2013/release-notes.md)  *. 또한에 언급 된 자습서를 살펴보려면 해야 합니다* * **다음 단계 * * * 섹션과 defintely 사용해 합니다* [ *무료 Azure 평가판* ](https://azure.microsoft.com/pricing/free-trial/)* .*
 
 ![감사-Erik](aspnet-error-handling/_static/image10.png)  
 

@@ -234,7 +234,7 @@ HomeController 모바일 지역 내에서 인덱스 작업에 연결할 URL /Mob
 
 즉, 모바일 홈페이지 이제 배치 될/Mobile/Home, 보다는 /Mobile, 이므로 "홈" 이제는 모바일 페이지에 대 한 암시적으로 기본 컨트롤러 이름입니다.
 
-다음으로 두 번째 HomeController에 응용 프로그램 (즉, 모바일 하나, 기존 데스크톱 것 외에도)를 추가 하면 됩니다 해제 일반 데스크톱 홈페이지 note 합니다. 오류와 함께 실패 "*'홈' 라는 컨트롤러와 일치 하는 여러 유형을 찾았습니다*"입니다. 이 해결 하려면 최상위 라우팅 구성 (Global.asax.cs)에 모호성이 경우 데스크톱 프로그램 HomeController가 우선 순위를 수행 해야 되도록 업데이트:
+다음으로 두 번째 HomeController에 응용 프로그램 (즉, 모바일 하나, 기존 데스크톱 것 외에도)를 추가 하면 됩니다 해제 일반 데스크톱 홈페이지 note 합니다. 오류와 함께 실패 " *'홈' 라는 컨트롤러와 일치 하는 여러 유형을 찾았습니다*"입니다. 이 해결 하려면 최상위 라우팅 구성 (Global.asax.cs)에 모호성이 경우 데스크톱 프로그램 HomeController가 우선 순위를 수행 해야 되도록 업데이트:
 
 [!code-csharp[Main](add-mobile-pages-to-your-aspnet-web-forms-mvc-application/samples/sample9.cs)]
 

@@ -292,7 +292,7 @@ Code First의 이전 버전에서 마이그레이션이 릴리스되기 전에 �
 4. 에 **연결 추가** 대화 상자에 입력 합니다 **(localdb) \v11.0** 에 대 한 합니다 **서버 이름**합니다. 아래 **데이터베이스 이름 선택 또는 입력**, 선택 **ContosoUniversity 합니다.**  
   
     ![](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image17.png)
-5.  **확인**을 클릭합니다.
+5. **확인**을 클릭합니다.
 6. 확장 **SchoolContext** 펼친 다음 **테이블**합니다.  
   
     ![](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image18.png)
@@ -309,7 +309,7 @@ Code First의 이전 버전에서 마이그레이션이 릴리스되기 전에 �
    - 컨트롤러 이름: **StudentController**.
    - 템플릿: **읽기/쓰기 동작 및 Entity Framework를 사용 하 여 뷰를 사용 하 여 MVC 컨트롤러**합니다.
    - 모델 클래스: **학생 (ContosoUniversity.Models)** 합니다. (드롭다운 목록에서이 옵션을 보이지 않으면 프로젝트를 빌드 및 다시 시도 하십시오.)
-   - 데이터 컨텍스트 클래스: **SchoolContext (ContosoUniversity.Models)**.
+   - 데이터 컨텍스트 클래스: **SchoolContext (ContosoUniversity.Models)** .
    - 레이아웃: **Razor (CSHTML)** 합니다. (기본값입니다.)
 
      ![Add_Controller_dialog_box_for_Student_controller](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image20.png)
