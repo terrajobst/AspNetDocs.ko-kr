@@ -97,7 +97,7 @@ URL 세그먼트 위 샘플에서 ( `Parameters`)를 사용 하지 않으면 합
 
 [!code-csharp[Main](adding-a-controller/samples/sample5.cs?highlight=7)]
 
-ASP.NET MVC 응용 프로그램의 것이 더 일반적 쿼리 문자열로 전달 보다 경로 데이터 (예: 위의 ID를 사용 하 여 했던)와 매개 변수를 전달 합니다. 모두 전달 하는 경로 추가할 수도 있습니다는 `name` 및 `numtimes` url에서 경로 데이터 매개 변수에서입니다. 에 *앱\_start\* 파일을 "Hello" 경로 추가 합니다.
+ASP.NET MVC 응용 프로그램의 것이 더 일반적 쿼리 문자열로 전달 보다 경로 데이터 (예: 위의 ID를 사용 하 여 했던)와 매개 변수를 전달 합니다. 모두 전달 하는 경로 추가할 수도 있습니다는 `name` 및 `numtimes` url에서 경로 데이터 매개 변수에서입니다. 에 *앱\_start\\* 파일을 "Hello" 경로 추가 합니다.
 
 [!code-csharp[Main](adding-a-controller/samples/sample6.cs?highlight=13-16)]
 
