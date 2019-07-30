@@ -63,19 +63,19 @@ API를 통해 데이터베이스에 대 한 CRUD 작업을 수 있습니다. 다
 
 | 만든 이 |  |
 | --- | -- |
-| Api/작성자 가져오기 | 모든 작성자를 가져옵니다. |
-| GET api/작성자 / {id} | 작성자 id 가져오기 |
-| POST/api/작성자 | 새 작성자를 만듭니다. |
-| PUT/a p i/작성자 / {id} | 기존 author를 업데이트 합니다. |
-| 삭제/a p i/작성자 / {id} | 작성자를 삭제 합니다. |
+| GET api/authors | 모든 작성자를 가져옵니다. |
+| GET api/authors/{id} | 작성자 id 가져오기 |
+| POST /api/authors | 새 작성자를 만듭니다. |
+| PUT /api/authors/{id} | 기존 author를 업데이트 합니다. |
+| DELETE /api/authors/{id} | 작성자를 삭제 합니다. |
 
 | 책 |  |
 | --- | -- |
-| /Api/books 가져오기 | 모든 책을 가져옵니다. |
+| GET /api/books | 모든 책을 가져옵니다. |
 | GET /api/books/{id} | 책 id 가져오기 |
-| Api 설명서를 게시 합니다. | 새 책을 만듭니다. |
-| PUT/a p i/책 / {id} | 기존 책을 업데이트 합니다. |
-| 삭제/a p i/책 / {id} | 책을 삭제 합니다. |
+| POST /api/books | 새 책을 만듭니다. |
+| PUT /api/books/{id} | 기존 책을 업데이트 합니다. |
+| DELETE /api/books/{id} | 책을 삭제 합니다. |
 
 ## <a name="view-the-database-optional"></a>(선택 사항) 데이터베이스 보기
 
