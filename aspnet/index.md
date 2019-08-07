@@ -7,12 +7,12 @@ ms.author: riande
 title: ASP.NET 설명서
 ms.date: 08/24/2018
 description: ASP.NET 및 ASP.NET 웹 애플리케이션을 개발하는 방법을 알아봅니다. 설명서, 예제 코드, 자습서 등을 가져옵니다.
-ms.openlocfilehash: c907f2ba66ba6ff197ced0c67243a963ffab17e3
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 4bfa5b2a161cdf67f3d2df0057bd68958d8a5769
+ms.sourcegitcommit: f774732a3960fca079438a88a5472c37cf7be08a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384723"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68810745"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -27,7 +27,7 @@ ms.locfileid: "59384723"
                         <ul id="core_overview" class="cardsC">
                             <li>
                                 <div class="container intro">
-                                    <p>ASP.NET Core는 Windows, Mac 또는 Linux에서 최신 클라우드 기반 웹 애플리케이션을 빌드하기 위한 새로운 오픈 소스 플랫폼 간 .NET 프레임워크입니다.</p>
+                                    <p>ASP.NET Core는 Windows, Mac 또는 Linux에서 최신 클라우드 기반 웹 애플리케이션을 빌드하기 위한 오픈 소스 플랫폼 간 .NET 프레임워크입니다.</p>
                                     <p><a href="https://docs.microsoft.com/aspnet/core/choose-aspnet-framework" data-raw-source="[Learn the benefits of both ASP.NET Core and ASP.NET](https://docs.microsoft.com/aspnet/core/choose-aspnet-framework)">ASP.NET Core 및 ASP.NET의 이점</a>을 알아보고 둘 중에서 적합한 것을 선택하면 됩니다.</p>
                                 </div>
                             </li>
@@ -148,7 +148,6 @@ ms.locfileid: "59384723"
                             <li class="fullSpan">
                                 <div class="container footer">
                                     <p><a href="https://github.com/aspnet/Docs/blob/master/CONTRIBUTING.md">ASP.NET Core 문서 및 샘플에 참여</a></p>
-                                    <p><a href="https://docs.microsoft.com/dotnet/articles/project-json">Visual Studio 2015/project.json 버전 설명서 찾기</a></p>
                                 </div>
                             </li>
                         </ul>
