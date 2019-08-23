@@ -5,15 +5,15 @@ author: rick-anderson
 description: 웹 사이트, 웹 애플리케이션 및 Web API를 만들 수 있는 무료 프레임워크 ASP.NET을 소개합니다.
 ms.assetid: 3a309468-f1ca-4e51-b9c3-536af79d7a8b
 ms.author: riande
-ms.date: 03/12/2010
+ms.date: 08/10/2019
 msc.legacyurl: ''
 msc.type: content
-ms.openlocfilehash: d4b96bd2ff99bb30ff59b9697a27e33acb0f719d
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 9a6d08849f09c9d7a779df64f70e8770d2af3c87
+ms.sourcegitcommit: b67ffd5b2c5cff01ec4c8eb12a21f693f2e11887
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65120089"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69995282"
 ---
 # <a name="aspnet-overview"></a>ASP.NET 개요
 
@@ -27,7 +27,7 @@ ASP.NET용 무료 IDE인 [Visual Studio 2017](https://visualstudio.microsoft.com
 
 ## <a name="websites-and-web-applications"></a>웹 사이트 및 웹 애플리케이션
 
- ASP.NET 웹 응용 프로그램을 만들기 위한 세 가지 프레임 워크를 제공 합니다. Web Forms, ASP.NET MVC 및 ASP.NET 웹 페이지를 선택 합니다. 세 프레임워크 모두 안정적이고 완성된 기술이며, 어떤 것을 사용해도 멋진 웹 애플리케이션을 만들 수 있습니다. 또, 어떤 프레임워크를 선택하더라도 어디에서나 ASP.NET의 모든 장점과 기능을 사용할 수 있습니다.
+ ASP.NET는 웹 응용 프로그램을 만들기 위한 세 가지 프레임 워크를 제공 합니다. Web Forms, ASP.NET MVC 및 ASP.NET 웹 페이지. 세 프레임워크 모두 안정적이고 완성된 기술이며, 어떤 것을 사용해도 멋진 웹 애플리케이션을 만들 수 있습니다. 또, 어떤 프레임워크를 선택하더라도 어디에서나 ASP.NET의 모든 장점과 기능을 사용할 수 있습니다.
 
 각 프레임워크는 서로 다른 개발 스타일을 대상으로 합니다. 어떤 프레임워크를 선택해야 하는지는 프로그래밍 자산(지식, 기술 및 개발 경험), 만들려는 애플리케이션 종류, 익숙한 개발 방식에 따라 달라집니다.
 
