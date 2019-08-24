@@ -91,7 +91,7 @@ Google 및 Facebook과 같은 인증 공급자에 연결 하려면 IIS Express S
 7. 추가 된 [RequireHttps](https://msdn.microsoft.com/library/system.web.mvc.requirehttpsattribute.aspx) 특성을 `Home` 모든 요청을 요구 하는 컨트롤러에서 HTTPS를 사용 해야 합니다. 추가 하는 것 보다 안전한 방법을 사용 합니다 [RequireHttps](https://msdn.microsoft.com/library/system.web.mvc.requirehttpsattribute.aspx) 응용 프로그램에는 필터입니다. 섹션을 참조 하세요 &quot;SSL 및 권한 부여 특성을 사용 하 여 응용 프로그램 보호&quot; 내 자습서에서 [인증 및 SQL DB를 사용 하 여 ASP.NET MVC 앱을 만들고 Azure App Service에 배포](https://docs.microsoft.com/aspnet/core/security/authorization/secure-data)합니다. Home 컨트롤러의 일부는 다음과 같습니다.
 
     [!code-csharp[Main](create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on/samples/sample1.cs?highlight=1)]
-8. Ctrl+F5를 눌러 응용 프로그램을 실행합니다. 이전에 인증서를 설치한 경우이 섹션의 나머지 부분을 건너뛰고 이동할 [OAuth 2 용 Google 앱 만들기 및 앱 프로젝트에 연결 하는](#goog), 그렇지 않은 경우 자체 서명 된 신뢰 지침에 따라 IIS Express에서 생성 하는 인증서입니다.  
+8. Ctrl+F5를 눌러 애플리케이션을 실행합니다. 이전에 인증서를 설치한 경우이 섹션의 나머지 부분을 건너뛰고 이동할 [OAuth 2 용 Google 앱 만들기 및 앱 프로젝트에 연결 하는](#goog), 그렇지 않은 경우 자체 서명 된 신뢰 지침에 따라 IIS Express에서 생성 하는 인증서입니다.  
   
     ![](create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on/_static/image11.png)
 9. 읽기를 **보안 경고** 대화 상자 및 클릭 **예** 나타내는 localhost 인증서를 설치 하려는 경우.  

@@ -149,7 +149,7 @@ JQuery [getJSON](http://api.jquery.com/jQuery.getJSON/) 함수 AJAX 요청을 �
 
 여전히 호출 `getJSON` AJAX 요청이 이번에 보낼 요청 URI에서에서 ID를 입력 합니다. 이 요청의 응답에는 단일 제품의 JSON 표현입니다.
 
-## <a name="running-the-application"></a>응용 프로그램 실행
+## <a name="running-the-application"></a>애플리케이션 실행
 
 F5 키를 눌러 응용 프로그램 디버깅을 시작 합니다. 웹 페이지는 다음과 같이 표시 됩니다.
 

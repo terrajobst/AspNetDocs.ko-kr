@@ -36,7 +36,7 @@ Visual Studio의 새 인스턴스를 시작 하 고 새 콘솔 응용 프로그�
 
 ## <a name="run-the-odata-service-locally"></a>OData 서비스를 로컬로 실행
 
-Visual Studio에서 ProductService 프로젝트를 실행 합니다. 기본적으로 Visual Studio가 응용 프로그램 루트에 브라우저를 시작 합니다. URI; 참고 다음 단계에서 해야 합니다. 응용 프로그램을 실행 상태로 둡니다.
+Visual Studio에서 ProductService 프로젝트를 실행 합니다. 기본적으로 Visual Studio가 응용 프로그램 루트에 브라우저를 시작 합니다. URI; 참고 다음 단계에서 해야 합니다. 애플리케이션을 실행 상태로 둡니다.
 
 ![](create-an-odata-v4-client-app/_static/image4.png)
 

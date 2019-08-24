@@ -41,7 +41,7 @@ ms.locfileid: "65129604"
 
 [!code-csharp[Main](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-2/samples/sample3.cs)]
 
-Ctrl+F5를 눌러 응용 프로그램을 실행합니다.
+Ctrl+F5를 눌러 애플리케이션을 실행합니다.
 
 다음에 유의 합니다 `ReleaseDate` 속성 없는 서식 지정 정보를 제공 하는 경우 기본값 이기 때문에 해당 날짜와 시간을 이제 표시 합니다.
 
@@ -91,7 +91,7 @@ Ctrl+F5를 눌러 응용 프로그램을 실행합니다.
 
 완료 했으면 생성 되 고 ASP.NET가 날짜를 표시 하는 데 사용할 템플릿을 사용자 지정할 수도 있습니다. 일반 템플릿 (에 *Views\Shared\DisplayTemplates* 폴더) 간단한 짧은 날짜를 표시 합니다. 템플릿을 합니다 `Movie` 컨트롤러 (에 *Views\Movies\DisplayTemplates* 폴더) 포맷 하는 간단한 날짜를 굵은 빨간색 텍스트로 표시 합니다.
 
-Ctrl+F5를 눌러 응용 프로그램을 실행합니다. 브라우저 응용 프로그램에 대 한 인덱스 뷰를 렌더링합니다.
+Ctrl+F5를 눌러 애플리케이션을 실행합니다. 브라우저 응용 프로그램에 대 한 인덱스 뷰를 렌더링합니다.
 
 `ReleaseDate` 속성 시간 없이 굵은 빨간색 글꼴로 이제 날짜를 표시 합니다. 이렇게 확인 하면를 `DateTime` 에서 템플릿 기반 도우미는 *Views\Movies\DisplayTemplates* 를 통해 폴더를 선택 합니다 `DateTime` 공유 폴더에서 템플릿 기반 도우미 (*Views\Shared\ DisplayTemplates*).
 
@@ -99,7 +99,7 @@ Ctrl+F5를 눌러 응용 프로그램을 실행합니다. 브라우저 응용 �
 
 이제 이름을 변경 합니다 *Views\Movies\DisplayTemplates\DateTime.cshtml* 파일을 *Views\Movies\DisplayTemplates\LoudDateTime.cshtml*합니다.
 
-Ctrl+F5를 눌러 응용 프로그램을 실행합니다.
+Ctrl+F5를 눌러 애플리케이션을 실행합니다.
 
 이 이번에는 `ReleaseDate` 빨간색 굵게 하지 않고 시간 날짜를 표시 하는 속성입니다. 데이터의 이름을 가진 템플릿 형식 있음을 보여줍니다 (이 경우 `DateTime`)는 자동으로 해당 형식의 모든 모델 속성을 표시 하는 데 사용 됩니다. 이름을 바꾼 후는 *DateTime.cshtml* 파일을 *LoudDateTime.cshtml*, ASP.NET에서 템플릿을 찾을 수 없는 합니다 *Views\Movies\DisplayTemplates* 폴더를 사용 하므로 합니다 *DateTime.cshtml* 템플릿에서 * Views\Movies\Shared\* 폴더입니다.
 
@@ -123,11 +123,11 @@ Ctrl+F5를 눌러 응용 프로그램을 실행합니다.
 
 그러면 ASP.NET MVC는 표시 될 때를 `ReleaseDate` 속성 (특히 및 되지 `DateTime` 개체)를 사용 해야 합니다 *LoudDateTime.cshtml* 템플릿.
 
-Ctrl+F5를 눌러 응용 프로그램을 실행합니다.
+Ctrl+F5를 눌러 애플리케이션을 실행합니다.
 
 다음에 유의 합니다 `ReleaseDate` 속성 이제 날짜와 시간을 표시는 큰 녹색 글꼴로 합니다.
 
-돌아가서를 `UIHint` 특성을 *Movie.cs* 파일을 주석으로 처리 하므로 *LoudDateTime.cshtml* 템플릿을 사용할 수 없습니다. 응용 프로그램을 다시 실행합니다. 릴리스 날짜 크고 녹색 표시 되지 않습니다. 이 있는지 확인 합니다 *Views\Shared\DisplayTemplates\DateTime.cshtml* 템플릿이 인덱스 및 세부 정보 보기에 사용 됩니다.
+돌아가서를 `UIHint` 특성을 *Movie.cs* 파일을 주석으로 처리 하므로 *LoudDateTime.cshtml* 템플릿을 사용할 수 없습니다. 애플리케이션을 다시 실행합니다. 릴리스 날짜 크고 녹색 표시 되지 않습니다. 이 있는지 확인 합니다 *Views\Shared\DisplayTemplates\DateTime.cshtml* 템플릿이 인덱스 및 세부 정보 보기에 사용 됩니다.
 
 앞에서 설명한 대로 뷰의 일부 데이터의 개별 인스턴스에 템플릿을 적용할 수 있는 템플릿을 적용할 수도 있습니다. 엽니다는 *Views\Movies\Details.cshtml* 보기. 추가 `"LoudDateTime"` 의 두 번째 매개 변수로 합니다 [Html.DisplayFor](https://msdn.microsoft.com/library/ee407420.aspx) 에 대 한 호출을 `ReleaseDate` 필드입니다. 완성된 코드는 다음과 같습니다.
 
@@ -135,7 +135,7 @@ Ctrl+F5를 눌러 응용 프로그램을 실행합니다.
 
 이 지정 된 `LoudDateTime` 어떤 특성이 모델에 적용 되었는지에 관계 없이 모델 속성을 표시 하려면 사용 되는 템플릿.
 
-Ctrl+F5를 눌러 응용 프로그램을 실행합니다.
+Ctrl+F5를 눌러 애플리케이션을 실행합니다.
 
 영화 인덱스 페이지를 사용 하는지 확인 합니다 *Views\Shared\DisplayTemplates\DateTime.cshtml* 템플릿 (굵은 빨간색) 및 *Movie\Details* 페이지를 사용 하는 *Views\Movies\ DisplayTemplates\LoudDateTime.cshtml* 템플릿 (크고 녹색).
 

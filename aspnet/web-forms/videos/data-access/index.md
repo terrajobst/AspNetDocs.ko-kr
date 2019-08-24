@@ -23,7 +23,7 @@ ms.locfileid: "65106748"
 
     - [ASP.NET 애플리케이션의 데이터 액세스 레이어](adonet-data-services/data-access-layers-in-aspnet-applications.md)
     - [데이터 세트를 Datagrid에 수동으로 바인딩](adonet-data-services/how-to-manually-bind-a-dataset-to-a-datagrid.md)
-    - [ASP 애플리케이션에서 데이터 집합 및 필터 작업](adonet-data-services/how-to-work-with-datasets-and-filters-from-an-asp-application.md)
+    - [ASP 애플리케이션에서 데이터 세트 및 필터 작업](adonet-data-services/how-to-work-with-datasets-and-filters-from-an-asp-application.md)
 - [LINQ 사용 방법](how-do-i-with-linq/index.md)
 
     - [LINQ to SQL: 개요](how-do-i-with-linq/how-do-i-linq-to-sql-overview.md)

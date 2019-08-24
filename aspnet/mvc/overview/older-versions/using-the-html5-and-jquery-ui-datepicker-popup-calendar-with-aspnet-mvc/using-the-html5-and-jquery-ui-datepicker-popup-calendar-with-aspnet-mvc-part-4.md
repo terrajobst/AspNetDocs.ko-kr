@@ -31,7 +31,7 @@ ms.locfileid: "65129568"
 
 이 코드는 `ReleaseDate` 모두에 템플릿을 표시 및 서식 파일을 편집 하지 않고 표시할 필드입니다. 응용 프로그램을 포함 하는 경우는 *date.cshtml* 에서 서식 파일을 *Views\Shared\EditorTemplates* 폴더 또는 *Views\Movies\EditorTemplates* 폴더에서 해당 템플릿을 모든 렌더링 하는 데 사용할 `DateTime` 편집 하는 동안 속성입니다. 그렇지 않은 경우 기본 제공 ASP.NET 템플릿 시스템 날짜로 속성이 표시 됩니다.
 
-Ctrl+F5를 눌러 응용 프로그램을 실행합니다. 릴리스 날짜에 대 한 입력된 필드는 날짜만 표시 확인에 대 한 편집 링크를 선택 합니다.
+Ctrl+F5를 눌러 애플리케이션을 실행합니다. 릴리스 날짜에 대 한 입력된 필드는 날짜만 표시 확인에 대 한 편집 링크를 선택 합니다.
 
 ![](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-4/_static/image1.png)
 
@@ -57,7 +57,7 @@ Ctrl+F5를 눌러 응용 프로그램을 실행합니다. 릴리스 날짜에 �
 
 `date` 형식은 HTML5 인식 브라우저는 HTML5 달력 컨트롤을 렌더링할 수 있도록 설정 하는 HTML5 입력된 형식입니다. 나중에 JavaScript를 jQuery datepicker 후크를 추가 합니다 `Html.TextBox` 사용 하 여 요소를 `datefield` 클래스.
 
-Ctrl+F5를 눌러 응용 프로그램을 실행합니다. 중인지 확인할 수 있습니다 합니다 `ReleaseDate` 템플릿을 표시 하기 때문에 편집 보기에서 속성 편집 템플릿을 사용 하 여는 &quot;날짜 템플릿을 사용 하 여&quot; 직전를 `ReleaseDate` 이 이미지에 표시 된 대로 텍스트 입력 상자에서:
+Ctrl+F5를 눌러 애플리케이션을 실행합니다. 중인지 확인할 수 있습니다 합니다 `ReleaseDate` 템플릿을 표시 하기 때문에 편집 보기에서 속성 편집 템플릿을 사용 하 여는 &quot;날짜 템플릿을 사용 하 여&quot; 직전를 `ReleaseDate` 이 이미지에 표시 된 대로 텍스트 입력 상자에서:
 
 ![](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-4/_static/image2.png)
 
@@ -127,7 +127,7 @@ JQuery를 사용 하 여 잘 모르는 경우이 기능에 대해 간략히 설�
 
 합니다 [URL 콘텐츠 도우미](https://msdn.microsoft.com/library/system.web.mvc.urlhelper.content.aspx) 메서드는 리소스 경로를 절대 경로로 변환 합니다. 사용 해야 `@URL.Content` 올바르게 응용 프로그램은 IIS에서 실행 중인 경우 이러한 리소스를 참조 합니다.
 
-Ctrl+F5를 눌러 응용 프로그램을 실행합니다. 편집 링크를 선택한 다음에 삽입 포인터를 **ReleaseDate** 필드입니다. JQuery UI 팝업 일정 표시 됩니다.
+Ctrl+F5를 눌러 애플리케이션을 실행합니다. 편집 링크를 선택한 다음에 삽입 포인터를 **ReleaseDate** 필드입니다. JQuery UI 팝업 일정 표시 됩니다.
 
 ![](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-4/_static/image7.png)
 

@@ -51,7 +51,7 @@ Microsoft.Owin.Host.SystemWeb를 사용 하 여 IIS에서 Windows 인증 간단�
 
 [!code-csharp[Main](enabling-windows-authentication-in-katana/samples/sample2.cs)]
 
-이것이 전부 owin을 IIS에서 실행 되는 "Hello world" 응용 프로그램을 만들어야 합니다. F5 키를 눌러 응용 프로그램을 디버깅합니다. "Hello World!" 표시 브라우저 창에서.
+이것이 전부 owin을 IIS에서 실행 되는 "Hello world" 응용 프로그램을 만들어야 합니다. F5 키를 눌러 애플리케이션을 디버깅합니다. "Hello World!" 표시 브라우저 창에서.
 
 ![](enabling-windows-authentication-in-katana/_static/image2.png)
 

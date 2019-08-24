@@ -425,7 +425,7 @@ PayPal에서 반환 된 후의 *CheckoutReview.aspx* Wingtip Toys 샘플 응용 
 
 합니다 *CheckoutError.aspx* 체크 아웃 프로세스 중에 오류가 발생 하는 경우 오류 세부 정보를 사용 하 여 페이지가 표시 됩니다.
 
-## <a name="running-the-application"></a>응용 프로그램 실행
+## <a name="running-the-application"></a>애플리케이션 실행
 
 제품을 구매 하는 방법은 응용 프로그램을 실행 합니다. 실행 된 PayPal에서 테스트 환경 note 합니다. 실제 미지불 교환 되 고 있습니다.
 

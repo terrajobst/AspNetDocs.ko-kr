@@ -50,7 +50,7 @@ Fix It 응용 프로그램에 대 한 테스트 환경을 만들고 해당 환�
 살펴보겠습니다 첫 번째 스크립트 라고 *새로 만들기-AzureWebsiteEnv.ps1*합니다. Fix It 테스트용으로 앱을 배포할 수 있습니다 Azure 환경을 만듭니다. 이 스크립트가 수행 하는 주요 작업은 다음과 같습니다.
 
 - 웹앱을 만듭니다.
-- 저장소 계정을 만듭니다. (필수 blob 및 큐에 대 한 뒷부분에서 살펴보겠지만.)
+- 스토리지 계정을 만듭니다. (필수 blob 및 큐에 대 한 뒷부분에서 살펴보겠지만.)
 - SQL Database 서버 및 두 개의 데이터베이스를 만듭니다: 응용 프로그램 데이터베이스 및 멤버 자격 데이터베이스입니다.
 - 저장소 계정 및 데이터베이스에 액세스 하는 앱은 사용 하는 Azure의 설정을 저장 합니다.
 - 배포를 자동화 하는 데 사용할 설정 파일을 만듭니다.
@@ -120,9 +120,9 @@ Azure 서비스를 관리 하는 PowerShell 스크립트를 실행 하려면 Azu
 
 [!code-powershell[Main](automate-everything/samples/sample3.ps1?highlight=2)]
 
-### <a name="create-the-storage-account"></a>저장소 계정 만들기
+### <a name="create-the-storage-account"></a>스토리지 계정 만들기
 
-기본 스크립트를 실행 합니다는 *새로 만들기-AzureStorage.ps1* 스크립트를 지정 "*&lt;websitename&gt;* 저장소" 저장소 계정 이름에 대 한 동일한 데이터 센터의 위치 및 웹 앱입니다.
+기본 스크립트를 실행 합니다는 *새로 만들기-AzureStorage.ps1* 스크립트를 지정 " *&lt;websitename&gt;* 저장소" 저장소 계정 이름에 대 한 동일한 데이터 센터의 위치 및 웹 앱입니다.
 
 [!code-powershell[Main](automate-everything/samples/sample4.ps1?highlight=3)]
 

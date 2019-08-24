@@ -109,7 +109,7 @@ SignalR while *있습니다* 를 이전 버전의 브라우저에서 주요 문�
 
 **Windows 데스크톱 및 Silverlight 전송 요구 사항**
 
-| 전송 | .NET 응용 프로그램 | Silverlight |
+| 전송 | .NET 애플리케이션 | Silverlight |
 | --- | --- | --- |
 | 웹 소켓 | Windows 8 이상 및.NET 4.5 이상 | N/A |
 | 영원히 프레임 | N/A | N/A |

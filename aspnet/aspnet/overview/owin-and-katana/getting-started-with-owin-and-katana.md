@@ -62,7 +62,7 @@ OWIN 파이프라인을 수신 하는 함수로 구현에 간단한 부분 미�
 
 [!code-csharp[Main](getting-started-with-owin-and-katana/samples/sample2.cs)]
 
-### <a name="run-the-application"></a>응용 프로그램 실행
+### <a name="run-the-application"></a>애플리케이션 실행
 
 F5 키를 눌러 디버깅을 시작 합니다. Visual Studio는 브라우저 창이 열립니다 `http://localhost:*port*/`합니다. 페이지는 다음과 같이 표시 됩니다.
 

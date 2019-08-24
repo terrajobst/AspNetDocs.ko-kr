@@ -119,7 +119,7 @@ Wingtip Toys 샘플 응용 프로그램 시작 되 면 호출 하 여 `Applicati
 
     [!code-csharp[Main](url-routing/samples/sample7.cs)]
 
-## <a name="running-the-application"></a>응용 프로그램 실행
+## <a name="running-the-application"></a>애플리케이션 실행
 
 업데이트 된 경로 확인 하려면 응용 프로그램을 실행할 수 있습니다.
 

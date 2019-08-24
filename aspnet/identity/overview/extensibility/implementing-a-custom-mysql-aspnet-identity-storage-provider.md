@@ -53,7 +53,7 @@ ms.locfileid: "65118111"
 
 MySQL 저장소 공급자를 만드는 단계에 들어가기 전에 살펴보겠습니다 저장소 공급자를 구성 하는 클래스입니다. 데이터베이스 작업을 관리 하는 클래스 및 사용자 및 역할 관리 응용 프로그램에서 호출 되는 클래스 해야 합니다.
 
-### <a name="storage-classes"></a>저장소 클래스
+### <a name="storage-classes"></a>스토리지 클래스
 
 - [IdentityUser](https://aspnet.codeplex.com/SourceControl/latest#Samples/Identity/AspNet.Identity.MySQL/IdentityUser.cs) -사용자에 대 한 속성을 포함 합니다.
 - [UserStore](https://aspnet.codeplex.com/SourceControl/latest#Samples/Identity/AspNet.Identity.MySQL/UserStore.cs) -추가, 업데이트 또는 사용자 검색에 대 한 작업을 포함 합니다.

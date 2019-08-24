@@ -21,4 +21,4 @@ ms.locfileid: "65106771"
 
 - [ASP.NET 응용 프로그램의 데이터 액세스 레이어](data-access-layers-in-aspnet-applications.md)
 - [데이터 세트를 Datagrid에 수동으로 바인딩](how-to-manually-bind-a-dataset-to-a-datagrid.md)
-- [ASP 애플리케이션에서 데이터 집합 및 필터 작업](how-to-work-with-datasets-and-filters-from-an-asp-application.md)
+- [ASP 애플리케이션에서 데이터 세트 및 필터 작업](how-to-work-with-datasets-and-filters-from-an-asp-application.md)

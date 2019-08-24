@@ -1,30 +1,30 @@
 ---
 uid: webhooks/source
-title: ASP.NET 웹 후크 소스 코드와 NuGet 패키지 | Microsoft Docs
+title: ASP.NET WebHooks 원본 코드 및 NuGet 패키지 | Microsoft Docs
 author: rick-anderson
-description: ASP.NET 웹 후크 소스 코드와 NuGet 패키지에 대 한 링크
+description: ASP.NET WebHooks 소스 코드 및 NuGet 패키지에 대 한 링크
 ms.author: riande
 ms.date: 01/17/2012
 ms.assetid: 91a62bfa-ea3a-41f9-a2e1-e90d2c8fc8ca
-ms.openlocfilehash: f88d9247f9d8aa0c5edc1ffc462be21d9319a725
-ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
+ms.openlocfilehash: 8d07848754d9efda9c893b8ba54ac6d0c0214a53
+ms.sourcegitcommit: b95316530fa51087d6c400ff91814fe37e73f7e8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67410796"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000711"
 ---
-# <a name="aspnet-webhooks-source-code-and-nuget-packages"></a>ASP.NET 웹 후크 소스 코드와 NuGet 패키지
+# <a name="aspnet-webhooks-source-code-and-nuget-packages"></a>ASP.NET WebHooks 소스 코드 및 NuGet 패키지
 
-Microsoft ASP.NET 웹 후크 모듈의 Microsoft ASP.NET 제품군의 일부 이며로 호스트 되는 [GitHub에서 오픈 소스 프로젝트](https://github.com/aspnet/WebHooks)합니다. 즉, 참여를 허용 하지만 살펴보세요 해 합니다 [기여 지침](https://github.com/aspnet/Home/blob/master/CONTRIBUTING.md) 끌어오기 요청을 제출 하기 전에 합니다.
+Microsoft ASP.NET 웹 후크는 Microsoft ASP.NET 된 모듈 패밀리의 일부 이며 [GitHub에서 오픈 소스 프로젝트로](https://github.com/aspnet/WebHooks)호스팅됩니다. 즉, 기여를 수락 하지만 끌어오기 요청을 제출 하기 전에 [기여 지침](https://github.com/aspnet/Home/blob/master/CONTRIBUTING.md) 을 확인 하세요.
 
-이 온라인 설명서를 읽어 나갈는 이제는 또한으로 호스팅됩니다 [GitHub에서 오픈 소스](http://docs.asp.net/en/latest/contribute/style-guide.html#style-guide) 도 기여를 수락 합니다.
+지금 읽고 있는이 온라인 설명서는 [GitHub에서 오픈 소스로](http://docs.asp.net/en/latest/contribute/style-guide.html#style-guide) 도 호스트 되며 기여도 수락 합니다.
 
 ## <a name="nuget-packages"></a>NuGet 패키지
 
-합니다 [NuGet 패키지](https://nuget.org/packages?q=Microsoft.AspNet.WebHooks) 세 부분으로 나뉩니다.
+[NuGet 패키지](https://nuget.org/packages?q=Microsoft.AspNet.WebHooks) 는 다음 세 부분으로 구분 됩니다.
 
-* [일반적인](https://www.nuget.org/packages?q=Microsoft.AspNet.WebHooks.Common): 발신자와 수신자 간에 공유 되는 일반적인 패키지입니다.
+* [일반](https://www.nuget.org/packages?q=Microsoft.AspNet.WebHooks.Common): 발신자와 수신자 간에 공유 되는 공통 패키지입니다.
 
-* [보낸 사람](https://www.nuget.org/packages?q=Microsoft.AspNet.WebHooks.Custom): 패키지 집합을 다른 사용자에 게 고유한 웹 후크를 보내는 지원 합니다. 웹 후크를 보내는 기능에서 더 자세히 설명 되어 [웹 후크에 보낼](sending/senders)합니다.
+* [보낸 사람](https://www.nuget.org/packages?q=Microsoft.AspNet.WebHooks.Custom): 다른 사용자에 게 고유한 웹 후크를 보내는 것을 지 원하는 패키지 집합입니다. Webhook 전송에 대 한 기능은 [웹 후크 전송](sending/senders.md)에 자세히 설명 되어 있습니다.
 
-* [수신기](https://www.nuget.org/packages?q=Microsoft.AspNet.WebHooks.Receivers): 패키지 집합을 다른 사용자의 웹 후크를 수신 지원. 웹 후크를 수신 하기 위한 기능에서 더 자세히 설명 되어 [수신 웹 후크](receiving/index.md)합니다.
+* [수신자](https://www.nuget.org/packages?q=Microsoft.AspNet.WebHooks.Receivers): 다른 사용자 로부터 웹 후크를 수신 하는 것을 지 원하는 패키지 집합입니다. 웹 후크를 수신 하는 기능은 [웹 후크 수신](receiving/index.md)에 자세히 설명 되어 있습니다.

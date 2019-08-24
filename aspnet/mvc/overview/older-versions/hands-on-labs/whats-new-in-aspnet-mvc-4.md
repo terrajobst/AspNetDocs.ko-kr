@@ -318,7 +318,7 @@ ASP.NET MVC 4 웹 사이트에 모바일 및 태블릿 브라우저의 개발을
 
     *모의 사진 서비스를 테스트합니다.*
 
-실제 구현에서 사용할 수 있습니다 [ASP.NET Web API](../../../../web-api/index.md) 사진 갤러리 서비스를 구현 합니다. ASP.NET Web API는 브라우저 및 모바일 디바이스를 비롯한 광범위한 클라이언트에 연결하는 HTTP 서비스를 쉽게 빌드할 수 있게 해 주는 프레임워크입니다. ASP.NET Web API는 .NET Framework에서 RESTful 응용 프로그램을 빌드하는 데 이상적인 플랫폼입니다.
+실제 구현에서 사용할 수 있습니다 [ASP.NET Web API](../../../../web-api/index.md) 사진 갤러리 서비스를 구현 합니다. ASP.NET Web API는 브라우저 및 모바일 디바이스를 비롯한 광범위한 클라이언트에 연결하는 HTTP 서비스를 쉽게 빌드할 수 있게 해 주는 프레임워크입니다. ASP.NET Web API는 .NET Framework에서 RESTful 애플리케이션을 빌드하는 데 이상적인 플랫폼입니다.
 
 <a id="Task_2_-_Displaying_the_Photo_Gallery"></a>
 #### <a name="task-2---displaying-the-photo-gallery"></a>작업 2-사진 갤러리를 표시 합니다.
@@ -538,7 +538,7 @@ jQuery Mobile의 기본 테마에는 문자를 지정 된 5 견본 포함 (a, b,
     ![바탕 화면 보기에서 렌더링 전환기 보고](whats-new-in-aspnet-mvc-4/_static/image32.png "바탕 화면 보기에서 렌더링 하는 뷰 전환기")
 
     *바탕 화면 보기에서 렌더링 하는 뷰 전환기*
-7. 모바일 뷰로 다시 전환 하 고 찾아보기 **에 대 한** 페이지 (http://localhost[port]/Home/About). About.Mobile.cshtml 뷰를 만들지 않은, 경우에 정보 페이지 표시 됩니다 모바일 레이아웃을 사용 하 여 (\_Layout.Mobile.cshtml).
+7. 모바일 뷰로 다시 전환 하 고 찾아보기 **에 대 한** 페이지 (http://localhost [port]/Home/About). About.Mobile.cshtml 뷰를 만들지 않은, 경우에 정보 페이지 표시 됩니다 모바일 레이아웃을 사용 하 여 (\_Layout.Mobile.cshtml).
 
     ![페이지에 대 한](whats-new-in-aspnet-mvc-4/_static/image33.png "페이지에 대 한")
 
@@ -568,7 +568,7 @@ jQuery Mobile의 기본 테마에는 문자를 지정 된 5 견본 포함 (a, b,
 
     [!code-csharp[Main](whats-new-in-aspnet-mvc-4/samples/sample16.cs)]
 
-새 등록 **라는 DefaultDisplayMode &quot;iPhone&quot;**, 정적 내 **DisplayModeProvider.Instance.Modes** 과 일치 하는 정적 목록 들어오는 각 요청입니다. 들어오는 요청 문자열을 포함 하는 경우 &quot;iPhone&quot;, ASP.NET MVC 이름이 포함 하는 뷰를 찾을 수 합니다 &quot;iPhone&quot; 접미사. 매개 변수 0 나타냅니다 어떻게 특정 새 모드입니다. 이 보기는 일반 보다 구체적인 예를 들어 &quot;.mobile&quot; 모바일 장치에서 요청을 일치 하는 규칙입니다.
+새 등록 **라는 DefaultDisplayMode &quot;iPhone&quot;** , 정적 내 **DisplayModeProvider.Instance.Modes** 과 일치 하는 정적 목록 들어오는 각 요청입니다. 들어오는 요청 문자열을 포함 하는 경우 &quot;iPhone&quot;, ASP.NET MVC 이름이 포함 하는 뷰를 찾을 수 합니다 &quot;iPhone&quot; 접미사. 매개 변수 0 나타냅니다 어떻게 특정 새 모드입니다. 이 보기는 일반 보다 구체적인 예를 들어 &quot;.mobile&quot; 모바일 장치에서 요청을 일치 하는 규칙입니다.
 
 응용 프로그램에서 사용할이 코드를 실행 한 후 iPhone 브라우저는 요청을 생성 하는 경우에 **Views\Shared\\_Layout.iPhone.cshtml** 다음 단계에서 만든 레이아웃 합니다.
 
@@ -755,7 +755,7 @@ Microsoft.NET Framework 4.5에서는 C# 및 Visual Basic.NET 프로그래밍의 
 <a id="Appendix_B_Installing_Visual_Studio_Express_2012_for_Web"></a>
 ## <a name="appendix-b-installing-visual-studio-express-2012-for-web"></a>부록 b: Express 2012 for Web Visual Studio 설치
 
-설치할 수 있습니다 **Microsoft Visual Studio Express 2012 for Web** 또는 다른 &quot;Express&quot; 사용 하 여 버전을 **[Microsoft Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx)**. 다음 지침을 설치 하는 데 필요한 단계를 안내 *Visual studio Express 2012 for Web* 사용 하 여 *Microsoft Web Platform Installer*합니다.
+설치할 수 있습니다 **Microsoft Visual Studio Express 2012 for Web** 또는 다른 &quot;Express&quot; 사용 하 여 버전을 **[Microsoft Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx)** . 다음 지침을 설치 하는 데 필요한 단계를 안내 *Visual studio Express 2012 for Web* 사용 하 여 *Microsoft Web Platform Installer*합니다.
 
 1. 로 이동 [ [ https://go.microsoft.com/?linkid=9810169 ](https://go.microsoft.com/?linkid=9810169) ](https://go.microsoft.com/?linkid=9810169)합니다. 또는, 이미 설치한 경우 웹 플랫폼 설치 관리자를 열 수 있습니다 하 고 제품에 대 한 검색 &quot; *Visual Studio Express 2012 for Windows Azure SDK를 사용 하 여 Web*&quot;합니다.
 2. 클릭할 **지금 설치**합니다. 없는 경우 **웹 플랫폼 설치 관리자** 를 다운로드 하 여 앱을 먼저 설치 리디렉션됩니다.

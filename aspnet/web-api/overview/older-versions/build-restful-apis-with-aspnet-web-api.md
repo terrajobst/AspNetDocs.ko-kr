@@ -121,7 +121,7 @@ ms.locfileid: "65132259"
     (코드 조각- *웹 API 랩-Ex01-Get API 메서드*)
 
     [!code-csharp[Main](build-restful-apis-with-aspnet-web-api/samples/sample1.cs)]
-5. 키를 눌러 **F5** 응용 프로그램을 디버그 합니다. Web API 프로젝트에 대 한 기본 홈 페이지가 표시 됩니다.
+5. **F5** 키를 눌러 애플리케이션을 디버그합니다. Web API 프로젝트에 대 한 기본 홈 페이지가 표시 됩니다.
 
     ![ASP.NET Web API 응용 프로그램의 기본 홈페이지](build-restful-apis-with-aspnet-web-api/_static/image5.png "ASP.NET Web API 응용 프로그램의 기본 홈 페이지")
 
@@ -236,7 +236,7 @@ ms.locfileid: "65132259"
     [!code-csharp[Main](build-restful-apis-with-aspnet-web-api/samples/sample7.cs)]
 9. 변경 된 **가져오기** 메서드를 사용 하면 연락처 저장소 서비스를 사용 합니다.
 
-    (코드 조각- *리포지토리를 통해 연락처 목록을 반환 웹 API 랩-Ex01-*)
+    (코드 조각- *리포지토리를 통해 연락처 목록을 반환 웹 API 랩-Ex01-* )
 
     [!code-csharp[Main](build-restful-apis-with-aspnet-web-api/samples/sample8.cs)]
 10. 중단점을 설정 하는 **contact ¡© Controller**의 **가져오기** 메서드 정의 합니다.
@@ -484,7 +484,7 @@ ASP.NET 웹 사이트에서 ASP.NET Web API 프레임 워크에 전용 영역이
 <a id="Appendix_B_Installing_Visual_Studio_Express_2012_for_Web"></a>
 ## <a name="appendix-b-installing-visual-studio-express-2012-for-web"></a>부록 b: Express 2012 for Web Visual Studio 설치
 
-설치할 수 있습니다 **Microsoft Visual Studio Express 2012 for Web** 또는 다른 &quot;Express&quot; 사용 하 여 버전을 **[Microsoft Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx)**. 다음 지침을 설치 하는 데 필요한 단계를 안내 *Visual studio Express 2012 for Web* 사용 하 여 *Microsoft Web Platform Installer*합니다.
+설치할 수 있습니다 **Microsoft Visual Studio Express 2012 for Web** 또는 다른 &quot;Express&quot; 사용 하 여 버전을 **[Microsoft Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx)** . 다음 지침을 설치 하는 데 필요한 단계를 안내 *Visual studio Express 2012 for Web* 사용 하 여 *Microsoft Web Platform Installer*합니다.
 
 1. 로 이동 [ [ https://go.microsoft.com/?linkid=9810169 ](https://go.microsoft.com/?linkid=9810169) ](https://go.microsoft.com/?linkid=9810169)합니다. 또는, 이미 설치한 경우 웹 플랫폼 설치 관리자를 열 수 있습니다 하 고 제품에 대 한 검색 &quot; <em>Visual Studio Express 2012 for Web Azure SDK를 사용 하 여</em>&quot;합니다.
 2. 클릭할 **지금 설치**합니다. 없는 경우 **웹 플랫폼 설치 관리자** 를 다운로드 하 여 앱을 먼저 설치 리디렉션됩니다.

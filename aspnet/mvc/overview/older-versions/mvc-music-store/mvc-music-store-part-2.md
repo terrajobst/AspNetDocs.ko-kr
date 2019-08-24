@@ -54,7 +54,7 @@ MVC Music Store 응용 프로그램 사이트의 홈 페이지 Url을 처리 하
 
 [!code-csharp[Main](mvc-music-store-part-2/samples/sample2.cs)]
 
-## <a name="running-the-application"></a>응용 프로그램 실행
+## <a name="running-the-application"></a>애플리케이션 실행
 
 이제 사이트를 실행 해 보겠습니다. 수는 웹 서버를 시작 하 고 다음 중 하나를 사용 하 여 사이트를 사용해::
 
@@ -112,7 +112,7 @@ TheIndex() "Hello에서 Store.Index()" 문자열을 반환 하는 방법을 변�
 
 [!code-csharp[Main](mvc-music-store-part-2/samples/sample4.cs)]
 
-*참고: 사용자 입력을 삭제 하려면 HttpUtility.HtmlEncode 유틸리티 메서드를 사용 하는 것입니다. 이로써 /Store/Browse와 같은 링크를 사용 하 여 뷰에 Javascript 주입에서 사용자? 장르 =&lt;스크립트&gt;window.location = 'http://hackersite.com'&lt;/script&gt;합니다.*
+*참고: 사용자 입력을 삭제 하려면 HttpUtility.HtmlEncode 유틸리티 메서드를 사용 하는 것입니다. 이로써 /Store/Browse와 같은 링크를 사용 하 여 뷰에 Javascript 주입에서 사용자? 장르 =&lt;스크립트&gt;window.location = 'http://hackersite.com '&lt; /script&gt; 합니다.*
 
 이제/저장소 / 찾아보기 탐색 해 보겠습니다. 장르 Disco =
 

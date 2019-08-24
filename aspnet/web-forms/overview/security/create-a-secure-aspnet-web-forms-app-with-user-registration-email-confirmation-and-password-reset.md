@@ -117,7 +117,7 @@ ms.locfileid: "65133798"
 
     [!code-csharp[Main](create-a-secure-aspnet-web-forms-app-with-user-registration-email-confirmation-and-password-reset/samples/sample6.cs?highlight=9-19,45-46)]
 
-### <a name="run-the-application"></a>응용 프로그램 실행
+### <a name="run-the-application"></a>애플리케이션 실행
 
  사용자의 전자 메일 주소 확인 되었는지 여부를 확인 하는 코드를 구현한 했으므로 둘 다에서 기능을 확인할 수 있습니다는 **등록할** 하 고 **로그인** 페이지. 
 
