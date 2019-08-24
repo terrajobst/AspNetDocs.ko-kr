@@ -15,10 +15,10 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 05/06/2019
 ms.locfileid: "65106771"
 ---
-# <a name="adonet-data-services"></a><span data-ttu-id="b5cd7-103">ADO.NET 데이터 서비스</span><span class="sxs-lookup"><span data-stu-id="b5cd7-103">ADO.NET Data Services</span></span>
+# <a name="adonet-data-services"></a><span data-ttu-id="b7013-103">ADO.NET 데이터 서비스</span><span class="sxs-lookup"><span data-stu-id="b7013-103">ADO.NET Data Services</span></span>
 
-> <span data-ttu-id="b5cd7-104">이러한 비디오는 간단한 ASP.NET 응용 프로그램에 대 한 형식화 된 데이터 집합을 사용 하 여 데이터 액세스 계층을 만드는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="b5cd7-104">These videos show you how to create a data access layer using a typed data set for a simple ASP.NET application.</span></span>
+> <span data-ttu-id="b7013-104">이러한 비디오는 간단한 ASP.NET 응용 프로그램에 대 한 형식화 된 데이터 집합을 사용 하 여 데이터 액세스 계층을 만드는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="b7013-104">These videos show you how to create a data access layer using a typed data set for a simple ASP.NET application.</span></span>
 
-- [<span data-ttu-id="b5cd7-105">ASP.NET 응용 프로그램의 데이터 액세스 레이어</span><span class="sxs-lookup"><span data-stu-id="b5cd7-105">Data Access Layers in ASP.NET Applications</span></span>](data-access-layers-in-aspnet-applications.md)
-- [<span data-ttu-id="b5cd7-106">데이터 세트를 Datagrid에 수동으로 바인딩</span><span class="sxs-lookup"><span data-stu-id="b5cd7-106">Manually Bind a Dataset to a Datagrid</span></span>](how-to-manually-bind-a-dataset-to-a-datagrid.md)
-- [<span data-ttu-id="b5cd7-107">ASP 애플리케이션에서 데이터 집합 및 필터 작업</span><span class="sxs-lookup"><span data-stu-id="b5cd7-107">Work with Datasets and Filters from an ASP Application</span></span>](how-to-work-with-datasets-and-filters-from-an-asp-application.md)
+- [<span data-ttu-id="b7013-105">ASP.NET 응용 프로그램의 데이터 액세스 레이어</span><span class="sxs-lookup"><span data-stu-id="b7013-105">Data Access Layers in ASP.NET Applications</span></span>](data-access-layers-in-aspnet-applications.md)
+- [<span data-ttu-id="b7013-106">데이터 세트를 Datagrid에 수동으로 바인딩</span><span class="sxs-lookup"><span data-stu-id="b7013-106">Manually Bind a Dataset to a Datagrid</span></span>](how-to-manually-bind-a-dataset-to-a-datagrid.md)
+- [<span data-ttu-id="b7013-107">ASP 애플리케이션에서 데이터 세트 및 필터 작업</span><span class="sxs-lookup"><span data-stu-id="b7013-107">Work with Datasets and Filters from an ASP Application</span></span>](how-to-work-with-datasets-and-filters-from-an-asp-application.md)
