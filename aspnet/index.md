@@ -1,18 +1,18 @@
 ---
 uid: index
 layout: HubPage
-ms.topic: conceptual
+ms.topic: hub-page
 author: Rick-Anderson
 ms.author: riande
 title: ASP.NET 설명서
 ms.date: 08/24/2018
 description: ASP.NET 및 ASP.NET 웹 애플리케이션을 개발하는 방법을 알아봅니다. 설명서, 예제 코드, 자습서 등을 가져옵니다.
-ms.openlocfilehash: 4bfa5b2a161cdf67f3d2df0057bd68958d8a5769
-ms.sourcegitcommit: f774732a3960fca079438a88a5472c37cf7be08a
+ms.openlocfilehash: 6309704444d60d42d49c3a8f1683045dc503e761
+ms.sourcegitcommit: cd35be4b25eb05724a5f074214bbdf6573349eda
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68810745"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70161690"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
