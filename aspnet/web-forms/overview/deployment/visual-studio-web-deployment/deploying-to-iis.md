@@ -15,7 +15,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 09/13/2019
 ms.locfileid: "70985851"
 ---
-# <a name="aspnet-web-deployment-using-visual-studio-deploying-to-test"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 테스트 환경에 배포
+# <a name="aspnet-web-deployment-using-visual-studio-deploying-to-test"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 테스트에 배포
 
 만든 사람 [Tom Dykstra](https://github.com/tdykstra)
 
@@ -43,7 +43,7 @@ ms.locfileid: "70985851"
 
 Visual Studio에서 웹 서버를 사용 하는 방법에 대 한 자세한 내용은 [ASP.NET 웹 프로젝트용 Visual studio의 웹 서버](https://msdn.microsoft.com/library/58wxa9w5.aspx)를 참조 하세요.
 
-지났으므로 자습서를 진행할 때 오류 메시지가 나타나거나 문제가 해결 되지 않으면 [문제 해결 페이지](troubleshooting.md)를 확인 해야 합니다.
+미리 알림: 자습서를 진행할 때 오류 메시지가 표시 되거나 문제가 해결 되지 않으면 [문제 해결 페이지](troubleshooting.md)를 확인 해야 합니다.
 
 ## <a name="download-the-contoso-university-starter-project"></a>Contoso 대학 스타터 프로젝트 다운로드
 
@@ -67,7 +67,7 @@ Contoso 대학 Visual Studio 시작 솔루션 및 프로젝트를 다운로드 �
 
      IIS 7이 설치 됨을 나타내는 메시지가 표시 됩니다. 이 링크는 Windows 8에서 IIS 8에 대해 작동 합니다. 그러나 Windows 8 이상에서는 다음 단계를 수행 하 여 ASP.NET 4.7가 설치 되어 있는지 확인 합니다.
 
-   * **제어판**프로그램 프로그램 및기능 > **Windows 기능 사용/사용 안 함을**엽니다. >  > 
+   * **제어판** **을 열고 프로그램 및 기능** ** > ** **Windows 기능을 설정 하거나 해제** >  > 합니다.
 
    * **인터넷 정보 서비스**, **World Wide Web 서비스**및 **응용 프로그램 개발 기능**을 확장 합니다.
    
@@ -95,7 +95,7 @@ IIS를 설치한 후 **Iis 관리자** 를 실행 하 여 .NET Framework 버전 
 
 4. 응용 프로그램 풀이 두 개만 표시 되 고 둘 다 .NET Framework 2.0로 설정 된 경우 IIS에 ASP.NET 4를 설치 합니다.
 
-   Windows 8 이상에서는 ASP.NET 4.7가 설치 되어 있는지 확인 하는 방법에 대 한 이전 섹션의 지침을 참조 하거나 [windows 8 및 Windows Server 2012에 ASP.NET 4.5을 설치 하는 방법](https://support.microsoft.com/kb/2736284)을 참조 하세요. Windows 7의 경우 Windows **시작** 메뉴에서 **명령 프롬프트** 를 마우스 오른쪽 단추로 클릭 하 고 **관리자 권한으로 실행**을 선택 하 여 명령 프롬프트 창을 엽니다. 다음 명령을 사용 하 여 [\_aspnet regiis](https://msdn.microsoft.com/library/k6h9cz8h.aspx) 를 실행 하 여 iis에 ASP.NET 4를 설치 합니다. 32 비트 시스템에서는 "Framework64"를 "Framework"로 바꿉니다.
+   Windows 8 이상에서는 ASP.NET 4.7가 설치 되어 있는지 확인 하는 방법에 대 한 이전 섹션의 지침을 참조 하거나 [windows 8 및 Windows Server 2012에 ASP.NET 4.5을 설치 하는 방법](https://support.microsoft.com/kb/2736284)을 참조 하세요. Windows 7의 경우 Windows **시작** 메뉴에서 **명령 프롬프트** 를 마우스 오른쪽 단추로 클릭 하 고 **관리자 권한으로 실행**을 선택 하 여 명령 프롬프트 창을 엽니다. 다음 명령을 사용 하 여 IIS에 ASP.NET 4를 설치 하려면 다음과 같이 [aspnet\_](https://msdn.microsoft.com/library/k6h9cz8h.aspx) 를 실행 합니다. 32 비트 시스템에서는 "Framework64"를 "Framework"로 바꿉니다.
 
    [!code-console[Main](deploying-to-iis/samples/sample1.cmd)]
 
@@ -119,7 +119,7 @@ IIS를 설치한 후 **Iis 관리자** 를 실행 하 여 .NET Framework 버전 
 
 LocalDB는 IIS에서 작동 하도록 설계 되지 않았으므로 테스트 환경에 SQL Server Express 설치 되어 있어야 합니다. Visual Studio 2010 SQL Server Express를 사용 하는 경우 이미 기본적으로 설치 되어 있습니다. Visual Studio 2012 이상 버전을 사용 하는 경우 SQL Server Express를 설치 합니다.
 
-SQL Server Express를 설치 하려면 다운로드 센터에서 [다운로드 하 여 설치 합니다. Microsoft SQL Server 2017 Express edition](https://www.microsoft.com/sql-server/sql-server-editions-express) 
+SQL Server Express를 설치 하려면 [다운로드 센터: Microsoft SQL Server 2017 Express edition](https://www.microsoft.com/sql-server/sql-server-editions-express)에서 다운로드 하 여 설치 합니다. 
 
 SQL Server 설치 센터의 첫 페이지에서 **새로 만들기 SQL Server 독립 실행형 설치 또는 기존 설치에 기능 추가** 를 선택 하 고 지침에 따라 기본 선택 항목을 적용 합니다. 설치 마법사에서 기본 설정을 적용 합니다. 설치 옵션에 대 한 자세한 내용은 설치 [마법사에서 SQL Server 설치 (설치 프로그램)](https://msdn.microsoft.com/library/ms143219.aspx)를 참조 하세요.
 
@@ -144,7 +144,7 @@ Visual Studio의 **보기** 메뉴에서 **서버 탐색기** (visual Web Develo
 
 ![Create aspnet-ContosoUniversity](deploying-to-iis/_static/image9.png)
 
-동일한 절차에 따라 이라는 `ContosoUniversity`새 SQL Server Express School 데이터베이스를 만듭니다.
+동일한 절차에 따라 `ContosoUniversity`라는 새 SQL Server Express School 데이터베이스를 만듭니다.
 
 **서버 탐색기** 는 두 개의 새 데이터베이스를 보여 줍니다.
 
@@ -164,7 +164,7 @@ Visual Studio에서 Contoso 대학 솔루션을 엽니다. 프로젝트 중 하�
 > 이 스크립트는이 자습서에 지정 된 대로 2012 이상 및 Windows 10, Windows 8 또는 Windows 7의 IIS 설정에서 SQL Server Express 사용할 수 있도록 설계 되었습니다. 다른 버전의 SQL Server 또는 Windows를 사용 하는 경우 또는 컴퓨터에 IIS를 다르게 설정 하는 경우이 스크립트를 변경 해야 할 수 있습니다. SQL Server 스크립트에 대 한 자세한 내용은 [SQL Server 온라인 설명서](https://go.microsoft.com/fwlink/?LinkId=132511)을 참조 하십시오.
 
 > [!NOTE] 
-> **보안 정보** 이 스크립트는 `db_owner` 런타임에 데이터베이스에 액세스 하는 사용자에 게 사용 권한을 부여 합니다 .이 작업은 프로덕션 환경에서 사용할 수 있습니다. 일부 시나리오에서는 배포에 대해서만 전체 데이터베이스 스키마 업데이트 권한이 있는 사용자를 지정 하 고 데이터를 읽고 쓸 수 있는 권한만 있는 다른 사용자를 런타임에 지정할 수 있습니다. 자세한 내용은이 자습서의 뒷부분에 나오는 [Code First 마이그레이션의 자동 Web.config 변경 내용 검토](#reviewingmigrations) 를 참조 하세요.
+> **보안 정보** 이 스크립트는 런타임에 데이터베이스에 액세스 하는 사용자에 게 `db_owner` 권한을 제공 하며,이는 프로덕션 환경에 포함 됩니다. 일부 시나리오에서는 배포에 대해서만 전체 데이터베이스 스키마 업데이트 권한이 있는 사용자를 지정 하 고 데이터를 읽고 쓸 수 있는 권한만 있는 다른 사용자를 런타임에 지정할 수 있습니다. 자세한 내용은이 자습서의 뒷부분에 나오는 [Code First 마이그레이션의 자동 Web.config 변경 내용 검토](#reviewingmigrations) 를 참조 하세요.
 
 <a id="publish"></a>
 
@@ -205,7 +205,7 @@ Visual Studio 및 웹 배포를 사용 하 여 IIS에 배포 하는 방법에는
 
 2. **새 프로필**을 선택 합니다. **게시 대상 선택** 대화 상자가 나타납니다.
 
-3. **IIS, FTP 등을**선택 합니다. **프로필 만들기**를 선택합니다. **게시** 마법사가 나타납니다.
+3. **IIS, FTP 등을**선택 합니다. **프로필 만들기**를 선택 합니다. **게시** 마법사가 나타납니다.
 
    ![웹 게시 마법사 프로필 탭](deploying-to-iis/_static/image26.png)
 
@@ -215,7 +215,7 @@ Visual Studio 및 웹 배포를 사용 하 여 IIS에 배포 하는 방법에는
 
 6. **사이트 이름**에는 *기본 웹 사이트/ContosoUniversity*를 입력 합니다.
 
-7. **대상 URL**에 대해를 *http://localhost/ContosoUniversity* 입력 합니다.
+7. **대상 URL**에 *http://localhost/ContosoUniversity* 을 입력 합니다.
 
    **대상 URL** 설정은 필요 하지 않습니다. Visual Studio에서 응용 프로그램 배포를 마치면이 URL에 대 한 기본 브라우저가 자동으로 열립니다. 배포 후 브라우저를 자동으로 열지 않으려면이 상자를 비워 둡니다.
 
@@ -229,9 +229,9 @@ Visual Studio 및 웹 배포를 사용 하 여 IIS에 배포 하는 방법에는
 
 10. **구성** 드롭다운 상자는 배포할 빌드 구성을 지정 합니다. 기본값인 **Release**로 설정 된 상태로 둡니다. 이 자습서에서는 디버그 빌드를 배포 하지 않습니다.
 
-11. **파일 게시 옵션**을 확장 합니다. **앱\_데이터 폴더에서 파일 제외**를 선택 합니다.
+11. **파일 게시 옵션**을 확장 합니다. **앱\_데이터 폴더에서 파일 제외를**선택 합니다.
 
-    테스트 환경에서 응용 프로그램은 응용 프로그램 *\_데이터* 폴더의 .mdf 파일이 아닌 로컬 SQL Server Express 인스턴스에서 만든 데이터베이스에 액세스 합니다.
+    테스트 환경에서 응용 프로그램은 응용 프로그램 *\_Data* 폴더의 .mdf 파일이 아니라 로컬 SQL Server Express 인스턴스에서 만든 데이터베이스에 액세스 합니다.
 
 12. 게시 하 **는 동안 미리 컴파일** 을 그대로 두고 **대상에서 추가 파일 제거** 확인란의 선택을 취소 합니다.
 
@@ -246,7 +246,7 @@ Visual Studio 및 웹 배포를 사용 하 여 IIS에 배포 하는 방법에는
     > 
     > 예를 들어 루트 폴더에 프로젝트를 배포할 때 서버의 하위 폴더에 웹 응용 프로그램이 있는 경우 하위 폴더가 삭제 됩니다. Contoso.com에 기본 사이트에 대 한 프로젝트가 하나 있고 contoso.com/blog에 블로그의 다른 프로젝트가 있을 수 있습니다. 블로그 응용 프로그램은 하위 폴더에 있습니다. 기본 사이트를 배포할 때 **대상에서 추가 파일 제거** 를 선택 하면 블로그 응용 프로그램이 삭제 됩니다.
     > 
-    > 또 다른 예로, 앱\_데이터 폴더가 예기치 않게 삭제 될 수 있습니다. SQL Server Compact와 같은 특정 데이터베이스는 응용 프로그램\_데이터 폴더에 데이터베이스 파일을 저장 합니다. 초기 배포 후에 후속 배포에서 데이터베이스 파일을 복사 하는 것을 원하지 않으므로 패키지/웹 게시 탭에서 **\_앱 데이터 제외** 를 선택 합니다. 선택한 **대상에서 추가 파일을 제거** 하는 경우 다음에 게시할 때 데이터베이스 파일과 앱\_데이터 폴더 자체가 삭제 됩니다.
+    > 또 다른 예로, 응용 프로그램\_데이터 폴더는 예기치 않게 삭제 될 수 있습니다. SQL Server Compact와 같은 특정 데이터베이스는 응용 프로그램\_데이터 폴더에 데이터베이스 파일을 저장 합니다. 초기 배포 후에 후속 배포에서 데이터베이스 파일을 복사 하는 것을 원하지 않으므로 패키지/웹 게시 탭에서 **앱\_데이터 제외** 를 선택 합니다. 선택한 **대상에서 추가 파일을 제거** 하는 경우 다음에 게시할 때 데이터베이스 파일과 앱\_데이터 폴더 자체가 삭제 됩니다.
 
 ### <a name="configure-deployment-for-the-membership-database"></a>멤버 자격 데이터베이스에 대 한 배포 구성
 
@@ -258,7 +258,7 @@ Visual Studio 및 웹 배포를 사용 하 여 IIS에 배포 하는 방법에는
 
    **런타임에이 연결 문자열 사용** 을 선택 했기 때문에 배포 프로세스는 배포 된 web.config 파일에이 연결 문자열을 넣습니다.
 
-    **서버 탐색기**에서 연결 문자열을 가져올 수도 있습니다. **서버 탐색기**에서 **데이터 연결** 을 확장  **&lt;하 고 machinename&gt;\sqlexpress.aspnet-ContosoUniversity** 데이터베이스를 선택한 다음 **속성** 창에서 **연결 문자열을 복사 합니다.** 값입니다. 이 연결 문자열에는 삭제할 `Pooling=False`수 있는 추가 설정이 하나 있습니다.
+    **서버 탐색기**에서 연결 문자열을 가져올 수도 있습니다. **서버 탐색기**에서 **데이터 연결** 을 확장 하 고 **&lt;machinename&gt;\Sqlexpress.aspnet-ContosoUniversity** 데이터베이스를 선택한 다음 **속성** 창에서 **연결 문자열** 값을 복사 합니다. 이 연결 문자열에는 `Pooling=False`삭제할 수 있는 추가 설정이 하나 있습니다.
 
 2. **데이터베이스 업데이트**를 선택 합니다.
 
@@ -276,9 +276,9 @@ Visual Studio 및 웹 배포를 사용 하 여 IIS에 배포 하는 방법에는
 
 ### <a name="configure-deployment-for-the-application-database"></a>응용 프로그램 데이터베이스에 대 한 배포 구성
 
-`DbContext` Visual Studio는 Entity Framework 클래스를 검색 하면 **데이터베이스 업데이트** 확인란 대신 **Code First 마이그레이션 실행** 확인란이 있는 **데이터베이스** 섹션에 항목을 만듭니다. 이 자습서에서는이 확인란을 사용 하 여 Code First 마이그레이션 배포를 지정 합니다.
+Visual Studio는 Entity Framework `DbContext` 클래스를 검색 하면 **데이터베이스 업데이트** 확인란 대신 **Code First 마이그레이션 실행** 확인란이 있는 **데이터베이스** 섹션에 항목을 만듭니다. 이 자습서에서는이 확인란을 사용 하 여 Code First 마이그레이션 배포를 지정 합니다.
 
-일부 시나리오에서는 데이터베이스를 `DbContext` 사용할 수 있지만 마이그레이션 대신 dbDacFx 공급자를 사용 하 여 데이터베이스를 배포 하는 것이 좋습니다. 이 경우 MSDN의 ASP.NET 웹 배포 FAQ에서 [마이그레이션을 사용 하지 않고 Code First 데이터베이스 배포를 어떻게 할까요?](https://msdn.microsoft.com/library/ee942158.aspx#deploy_code_first_without_migrations) 참조 하세요.
+일부 시나리오에서는 `DbContext` 데이터베이스를 사용 하 고 있지만 마이그레이션 대신 dbDacFx 공급자를 사용 하 여 데이터베이스를 배포 하려는 경우가 있습니다. 이 경우 MSDN의 ASP.NET 웹 배포 FAQ에서 [마이그레이션을 사용 하지 않고 Code First 데이터베이스 배포를 어떻게 할까요?](https://msdn.microsoft.com/library/ee942158.aspx#deploy_code_first_without_migrations) 참조 하세요.
 
 다음 단계는 대화 상자의 **데이터베이스** 섹션에 있는 **schoolcontext.cs** 데이터베이스에 적용 됩니다.
 
@@ -292,7 +292,7 @@ Visual Studio 및 웹 배포를 사용 하 여 IIS에 배포 하는 방법에는
 
 2. **Code First 마이그레이션 실행 (응용 프로그램 시작 시 실행)** 을 선택 합니다.
 
-   이 옵션을 선택 하면 배포 프로세스에서 배포 된 web.config 파일을 구성 하 여 `MigrateDatabaseToLatestVersion` 이니셜라이저를 지정 합니다. 이 이니셜라이저는 응용 프로그램이 배포 후 처음으로 데이터베이스에 액세스 하는 경우 데이터베이스를 최신 버전으로 자동으로 업데이트 합니다.
+   이 옵션을 선택 하면 배포 프로세스에서 배포 된 Web.config 파일을 구성 하 여 `MigrateDatabaseToLatestVersion` 이니셜라이저를 지정 합니다. 이 이니셜라이저는 응용 프로그램이 배포 후 처음으로 데이터베이스에 액세스 하는 경우 데이터베이스를 최신 버전으로 자동으로 업데이트 합니다.
 
 ### <a name="configure-publish-profile-transforms"></a>게시 프로필 변환 구성
 
@@ -314,7 +314,7 @@ Visual Studio 및 웹 배포를 사용 하 여 IIS에 배포 하는 방법에는
 
     테스트 게시 프로필을 사용 하는 경우이 변환은 환경 표시기를 "Test"로 설정 합니다. 배포 된 사이트에 "Contoso 대학" H1 제목 뒤에 "(테스트)"가 표시 됩니다.
 
-6. 파일을 저장한 후 닫습니다.
+6. 파일을 저장하고 닫습니다.
 
 7. *Web.config* 파일을 마우스 오른쪽 단추로 클릭 하 고 **변환 미리 보기** 를 선택 하 여 코딩 된 변환이 필요한 변경 내용을 생성 하는지 확인 합니다.
 
@@ -344,7 +344,7 @@ Visual Studio 및 웹 배포를 사용 하 여 IIS에 배포 하는 방법에는
 
 환경 표시기는 환경 표시기에 대 한 *web.config 변환이 성공* 했음을 보여 주는 "(Dev)" 대신 "(테스트)"를 표시 합니다.
 
-**강사 페이지를** 실행 하 여 Code First가 강사 데이터로 데이터베이스를 시드 하는지 확인 합니다. Code First 데이터베이스를 만든 다음 메서드를 `Seed` 실행 하기 때문에이 페이지를 선택 하면 로드 하는 데 몇 분 정도 걸릴 수 있습니다. 응용 프로그램이 아직 데이터베이스에 액세스를 시도 하지 않았기 때문에 홈 페이지에 있는 경우에는이 작업을 수행 하지 않습니다.
+**강사 페이지를** 실행 하 여 Code First가 강사 데이터로 데이터베이스를 시드 하는지 확인 합니다. Code First 데이터베이스를 만든 다음 `Seed` 메서드를 실행 하기 때문에이 페이지를 선택 하면 로드 하는 데 몇 분 정도 걸릴 수 있습니다. 응용 프로그램이 아직 데이터베이스에 액세스를 시도 하지 않았기 때문에 홈 페이지에 있는 경우에는이 작업을 수행 하지 않습니다.
 
 **학생** 탭을 선택 하 여 배포 된 데이터베이스에 학생이 없는 경우를 확인 합니다.
 
@@ -364,11 +364,11 @@ Visual Studio 및 웹 배포를 사용 하 여 IIS에 배포 하는 방법에는
 
 또한 배포 프로세스에서는 데이터베이스 스키마를 업데이트 하는 데 독점적으로 사용할 Code First 마이그레이션에 대 한 새 연결 문자열을 만들었습니다.
 
-![Database_Publish 연결 문자열](deploying-to-iis/_static/image22.png)
+![연결 문자열 Database_Publish](deploying-to-iis/_static/image22.png)
 
-이 추가 연결 문자열을 사용 하 여 데이터베이스 스키마 업데이트에 대 한 사용자 계정과 응용 프로그램 데이터 액세스에 대 한 다른 사용자 계정을 지정할 수 있습니다. 예를 들어 db **\_소유자** 역할을 **db\_datawriter 여부** 역할을 사용 하 여 Code First 마이그레이션 및 **\_db datareader** 응용 프로그램에 할당할 수 있습니다. 응용 프로그램의 잠재적으로 악의적인 코드가 데이터베이스 스키마를 변경 하지 못하도록 하는 일반적인 심층 방어 패턴입니다. 예를 들어이 문제는 SQL 삽입 공격이 성공할 때 발생할 수 있습니다. 이러한 자습서에서는이 패턴을 사용 하지 않습니다. 시나리오에서이 패턴을 구현 하려면 다음 단계를 수행 합니다.
+이 추가 연결 문자열을 사용 하 여 데이터베이스 스키마 업데이트에 대 한 사용자 계정과 응용 프로그램 데이터 액세스에 대 한 다른 사용자 계정을 지정할 수 있습니다. 예를 들어 db **\_소유자** 역할을 **db\_datawriter 여부** 역할을 사용 하 여 응용 프로그램에 Code First 마이그레이션 및 **db\_datareader** 에 할당할 수 있습니다. 응용 프로그램의 잠재적으로 악의적인 코드가 데이터베이스 스키마를 변경 하지 못하도록 하는 일반적인 심층 방어 패턴입니다. 예를 들어이 문제는 SQL 삽입 공격이 성공할 때 발생할 수 있습니다. 이러한 자습서에서는이 패턴을 사용 하지 않습니다. 시나리오에서이 패턴을 구현 하려면 다음 단계를 수행 합니다.
 
-1. **웹 게시** 마법사의 **설정** 탭에서 전체 데이터베이스 스키마 업데이트 권한을 가진 사용자를 지정 하는 연결 문자열을 입력 합니다. **런타임에이 연결 문자열 사용** 확인란의 선택을 취소 합니다. 배포 된 web.config 파일에서 `DatabasePublish` 연결 문자열이 됩니다.
+1. **웹 게시** 마법사의 **설정** 탭에서 전체 데이터베이스 스키마 업데이트 권한을 가진 사용자를 지정 하는 연결 문자열을 입력 합니다. **런타임에이 연결 문자열 사용** 확인란의 선택을 취소 합니다. 배포 된 web.config 파일에서는 `DatabasePublish` 연결 문자열이 됩니다.
 
 2. 응용 프로그램에서 런타임에 사용 하려는 연결 문자열에 대 한 web.config 파일 변환을 만듭니다.
 
