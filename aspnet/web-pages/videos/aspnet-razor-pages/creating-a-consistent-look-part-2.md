@@ -15,15 +15,15 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/02/2019
 ms.locfileid: "73445567"
 ---
-# <a name="creating-a-consistent-look-part-2"></a><span data-ttu-id="370d4-103">일관적인 모양 만들기(2부)</span><span class="sxs-lookup"><span data-stu-id="370d4-103">Creating a Consistent Look (Part 2)</span></span>
+# <a name="creating-a-consistent-look-part-2"></a><span data-ttu-id="0cb52-103">일관적인 모양 만들기(2부)</span><span class="sxs-lookup"><span data-stu-id="0cb52-103">Creating a Consistent Look (Part 2)</span></span>
 
-<span data-ttu-id="370d4-104">만든 사람 [Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="370d4-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="0cb52-104">만든 사람 [Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="0cb52-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="370d4-105">일관 된 모양 자습서 만들기 (2 부) 비디오 좋을</span><span class="sxs-lookup"><span data-stu-id="370d4-105">Video accompaniment to the Creating a Consistent Look tutorial (Part 2)</span></span>
+<span data-ttu-id="0cb52-105">일관 된 모양 자습서 만들기 (2 부) 비디오 좋을</span><span class="sxs-lookup"><span data-stu-id="0cb52-105">Video accompaniment to the Creating a Consistent Look tutorial (Part 2)</span></span>
 
-<span data-ttu-id="370d4-106">[&#9654;비디오 보기 (5 분)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/creating-a-consistent-look-(part-2))</span><span class="sxs-lookup"><span data-stu-id="370d4-106">[&#9654; Watch video (5 minutes)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/creating-a-consistent-look-(part-2))</span></span>
+<span data-ttu-id="0cb52-106">[&#9654;비디오 보기 (5 분)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/creating-a-consistent-look-(part-2))</span><span class="sxs-lookup"><span data-stu-id="0cb52-106">[&#9654; Watch video (5 minutes)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/creating-a-consistent-look-(part-2))</span></span>
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="370d4-107">[이전](creating-a-consistent-look-part-1.md)
-> [다음](working-with-forms-part-1.md)</span><span class="sxs-lookup"><span data-stu-id="370d4-107">[Previous](creating-a-consistent-look-part-1.md)
+> <span data-ttu-id="0cb52-107">[이전](creating-a-consistent-look-part-1.md)
+> [다음](working-with-forms-part-1.md)</span><span class="sxs-lookup"><span data-stu-id="0cb52-107">[Previous](creating-a-consistent-look-part-1.md)
 [Next](working-with-forms-part-1.md)</span></span>

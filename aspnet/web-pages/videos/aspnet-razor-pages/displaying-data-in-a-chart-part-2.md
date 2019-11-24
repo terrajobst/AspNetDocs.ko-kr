@@ -15,15 +15,15 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/02/2019
 ms.locfileid: "73445622"
 ---
-# <a name="displaying-data-in-a-chart-part-2"></a><span data-ttu-id="97a62-103">차트에 데이터 표시(2부)</span><span class="sxs-lookup"><span data-stu-id="97a62-103">Displaying Data in a Chart (Part 2)</span></span>
+# <a name="displaying-data-in-a-chart-part-2"></a><span data-ttu-id="83612-103">차트에 데이터 표시(2부)</span><span class="sxs-lookup"><span data-stu-id="83612-103">Displaying Data in a Chart (Part 2)</span></span>
 
-<span data-ttu-id="97a62-104">만든 사람 [Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="97a62-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="83612-104">만든 사람 [Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="83612-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="97a62-105">차트에 데이터를 표시 하는 비디오 좋을 (2 부) 자습서</span><span class="sxs-lookup"><span data-stu-id="97a62-105">Video accompaniment to the Displaying Data in a Chart (Part 2) tutorial</span></span>
+<span data-ttu-id="83612-105">차트에 데이터를 표시 하는 비디오 좋을 (2 부) 자습서</span><span class="sxs-lookup"><span data-stu-id="83612-105">Video accompaniment to the Displaying Data in a Chart (Part 2) tutorial</span></span>
 
-<span data-ttu-id="97a62-106">[&#9654;비디오 보기 (9 분)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/displaying-data-in-a-chart-(part-2))</span><span class="sxs-lookup"><span data-stu-id="97a62-106">[&#9654; Watch video (9 minutes)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/displaying-data-in-a-chart-(part-2))</span></span>
+<span data-ttu-id="83612-106">[&#9654;비디오 보기 (9 분)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/displaying-data-in-a-chart-(part-2))</span><span class="sxs-lookup"><span data-stu-id="83612-106">[&#9654; Watch video (9 minutes)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/displaying-data-in-a-chart-(part-2))</span></span>
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="97a62-107">[이전](displaying-data-in-a-chart-part-1.md)
-> [다음](working-with-files.md)</span><span class="sxs-lookup"><span data-stu-id="97a62-107">[Previous](displaying-data-in-a-chart-part-1.md)
+> <span data-ttu-id="83612-107">[이전](displaying-data-in-a-chart-part-1.md)
+> [다음](working-with-files.md)</span><span class="sxs-lookup"><span data-stu-id="83612-107">[Previous](displaying-data-in-a-chart-part-1.md)
 [Next](working-with-files.md)</span></span>

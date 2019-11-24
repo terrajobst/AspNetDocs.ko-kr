@@ -15,15 +15,15 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/02/2019
 ms.locfileid: "73445503"
 ---
-# <a name="working-with-forms-part-1"></a><span data-ttu-id="b6434-103">양식 사용(1부)</span><span class="sxs-lookup"><span data-stu-id="b6434-103">Working with Forms (Part 1)</span></span>
+# <a name="working-with-forms-part-1"></a><span data-ttu-id="0bc23-103">양식 사용(1부)</span><span class="sxs-lookup"><span data-stu-id="0bc23-103">Working with Forms (Part 1)</span></span>
 
-<span data-ttu-id="b6434-104">만든 사람 [Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="b6434-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="0bc23-104">만든 사람 [Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="0bc23-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="b6434-105">양식 작업 자습서에 대 한 비디오 좋을 (1 부)</span><span class="sxs-lookup"><span data-stu-id="b6434-105">Video accompaniment to the Working with Forms tutorial (Part 1)</span></span>
+<span data-ttu-id="0bc23-105">양식 작업 자습서에 대 한 비디오 좋을 (1 부)</span><span class="sxs-lookup"><span data-stu-id="0bc23-105">Video accompaniment to the Working with Forms tutorial (Part 1)</span></span>
 
-<span data-ttu-id="b6434-106">[&#9654;비디오 보기 (14 분)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/working-with-forms-(part-1))</span><span class="sxs-lookup"><span data-stu-id="b6434-106">[&#9654; Watch video (14 minutes)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/working-with-forms-(part-1))</span></span>
+<span data-ttu-id="0bc23-106">[&#9654;비디오 보기 (14 분)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/working-with-forms-(part-1))</span><span class="sxs-lookup"><span data-stu-id="0bc23-106">[&#9654; Watch video (14 minutes)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/working-with-forms-(part-1))</span></span>
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="b6434-107">[이전](creating-a-consistent-look-part-2.md)
-> [다음](working-with-forms-part-2.md)</span><span class="sxs-lookup"><span data-stu-id="b6434-107">[Previous](creating-a-consistent-look-part-2.md)
+> <span data-ttu-id="0bc23-107">[이전](creating-a-consistent-look-part-2.md)
+> [다음](working-with-forms-part-2.md)</span><span class="sxs-lookup"><span data-stu-id="0bc23-107">[Previous](creating-a-consistent-look-part-2.md)
 [Next](working-with-forms-part-2.md)</span></span>
