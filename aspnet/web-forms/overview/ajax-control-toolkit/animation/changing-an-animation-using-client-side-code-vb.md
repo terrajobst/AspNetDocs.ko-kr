@@ -1,43 +1,43 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/animation/changing-an-animation-using-client-side-code-vb
-title: 클라이언트 쪽 코드 (VB)를 사용 하 여 애니메이션 변경 | Microsoft Docs
+title: 클라이언트 쪽 코드를 사용 하 여 애니메이션 변경 (VB) | Microsoft Docs
 author: wenz
-description: ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이지만 컨트롤에 애니메이션을 추가 하는 전체 프레임 워크 아닙니다. 애니메이션을 선택 하십시오.
+description: ASP.NET AJAX 컨트롤 도구 키트의 애니메이션 컨트롤은 컨트롤이 아니라 컨트롤에 애니메이션을 추가 하기 위한 전체 프레임 워크입니다. 애니메이션을 사용할 수도 있습니다.
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: a7fe5de5-a964-4780-ae5e-70821dfb50a0
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/changing-an-animation-using-client-side-code-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 476b807ca48744648b6e2435af6db7b343c0f854
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: cce0a5a901f71edd40eada59ac7eeba93222e2b3
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65108775"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74606945"
 ---
 # <a name="changing-an-animation-using-client-side-code-vb"></a>클라이언트 쪽 코드를 사용하여 애니메이션 변경(VB)
 
-by [Christian Wenz](https://github.com/wenz)
+[Christian Wenz](https://github.com/wenz) 별
 
-[코드를 다운로드](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation11.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation11VB.pdf)
+[코드 다운로드](https://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation11.vb.zip) 또는 [PDF 다운로드](https://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation11VB.pdf)
 
-> ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이지만 컨트롤에 애니메이션을 추가 하는 전체 프레임 워크 아닙니다. 애니메이션은 사용자 지정 클라이언트 쪽 JavaScript 코드를 사용 하 여 변경할 수 있습니다.
+> ASP.NET AJAX 컨트롤 도구 키트의 애니메이션 컨트롤은 컨트롤이 아니라 컨트롤에 애니메이션을 추가 하기 위한 전체 프레임 워크입니다. 사용자 지정 클라이언트 쪽 JavaScript 코드를 사용 하 여 애니메이션을 변경할 수도 있습니다.
 
 ## <a name="overview"></a>개요
 
-ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이지만 컨트롤에 애니메이션을 추가 하는 전체 프레임 워크 아닙니다. 애니메이션은 사용자 지정 클라이언트 쪽 JavaScript 코드를 사용 하 여 변경할 수 있습니다.
+ASP.NET AJAX 컨트롤 도구 키트의 애니메이션 컨트롤은 컨트롤이 아니라 컨트롤에 애니메이션을 추가 하기 위한 전체 프레임 워크입니다. 사용자 지정 클라이언트 쪽 JavaScript 코드를 사용 하 여 애니메이션을 변경할 수도 있습니다.
 
 ## <a name="steps"></a>단계
 
-첫째, 포함 된 `ScriptManager` 페이지 그런 다음 ASP.NET AJAX 라이브러리 로드 되 면 컨트롤 도구 키트를 사용 하 여:
+먼저 페이지에 `ScriptManager`를 포함 합니다. 그런 다음 ASP.NET AJAX 라이브러리가 로드 되어 컨트롤 도구 키트를 사용할 수 있습니다.
 
 [!code-aspx[Main](changing-an-animation-using-client-side-code-vb/samples/sample1.aspx)]
 
-그러면 다음과 같은 텍스트 패널에 애니메이션 적용 됩니다.
+애니메이션은 다음과 같은 텍스트 패널에 적용 됩니다.
 
 [!code-aspx[Main](changing-an-animation-using-client-side-code-vb/samples/sample2.aspx)]
 
-패널에 대 한 연결 된 CSS 클래스에 유용한 배경 색을 정의 하 고 패널 고정된 너비를 설정할 수도:
+패널의 연결 된 CSS 클래스에서 좋은 배경색을 정의 하 고 패널의 고정 폭도 설정 합니다.
 
 [!code-css[Main](changing-an-animation-using-client-side-code-vb/samples/sample3.css)]
 
@@ -45,13 +45,13 @@ ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이�
 
 [!code-aspx[Main](changing-an-animation-using-client-side-code-vb/samples/sample4.aspx)]
 
-그런 다음 추가 `AnimationExtender` 페이지에서 제공 하는 `ID`, `TargetControlID` 특성과 필수 항목 이지만 `runat="server"`:
+그런 다음 `ID`, `TargetControlID` 특성 및 obligatory `runat="server"`를 제공 하 여 페이지에 `AnimationExtender`를 추가 합니다.
 
 [!code-aspx[Main](changing-an-animation-using-client-side-code-vb/samples/sample5.aspx)]
 
-없습니다 `<Animations>` 내에서 노드를 `AnimationExtender` 제어 합니다. 사용자 지정 JavaScript 코드는 컨트롤을 사용 하 여 사용할 애니메이션을 위해 사용 됩니다.
+`AnimationExtender` 컨트롤 내에 `<Animations>` 노드가 없습니다. 사용자 지정 JavaScript 코드는 컨트롤과 함께 사용 되는 애니메이션을 제공 하는 데 사용 됩니다.
 
-서버 API와 마찬가지로 `AnimationExtender`을 extender에 애니메이션을 아직 할당할 간편한 방법이 없습니다. 하지만 다양 한 이벤트를 사용 하 여 등록 된 extender는 읽기 및 쓰기 애니메이션 하는 여러 메서드를 노출 하는 (`OnClick`, `OnLoad`등). 다음은 몇 가지 예입니다.
+`AnimationExtender`의 서버 API와 마찬가지로 extender에 아직 애니메이션을 할당 하는 쉬운 방법은 없습니다. 그러나 extender는 다양 한 이벤트 (`OnClick`, `OnLoad`등)에 등록 된 애니메이션을 읽고 쓰는 여러 메서드를 노출 합니다. 다음은 몇 가지 예입니다.
 
 - `get_OnClick()`
 - `set_OnClick()`
@@ -59,19 +59,19 @@ ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이�
 - `set_OnLoad()`
 - `...`
 
-반환 값의 형식을 `get_*()` 의 인수 형식과 함수는 `set_*()` 함수는 JSON 문자열 것 XML 태그의 개체 표현을 제공 합니다. 현재, 개체를 전달할 방법이 없기 하지만 지정 된 애니메이션에서 개체를 읽을 수 있습니다 (`get_OnXXXBehavior()` 메서드).
+`get_*()` 함수의 반환 값 형식 및 `set_*()` 함수에 대 한 인수 형식은 JSON 문자열이 며 XML 태그가 무엇 인지에 대 한 개체 표현을 제공 합니다. 현재에서는 개체를 전달할 방법이 없지만 지정 된 애니메이션 (`get_OnXXXBehavior()` 메서드)에서 개체를 읽을 수 있습니다.
 
-JSON 문자열은 다음과 같습니다 (구분 따옴표 없이 원활 하 게 서식이 지정) 단추를 트리거한 애니메이션을 나타내는 이지만 패널 크기를 조정 하 여 동시에 페이드아웃 애니메이션 합니다.
+다음은 단추에 의해 트리거되는 애니메이션을 나타내는 JSON 문자열 (구분 기호를 사용 하 여 깔끔하게 형식이 지정 되지 않음)이 고, 패널 크기를 조정 하 여 패널에 애니메이션을 적용 하 고 동시에 페이드 아웃 하는 것입니다.
 
 [!code-json[Main](changing-an-animation-using-client-side-code-vb/samples/sample6.json)]
 
-다음 JavaScript 코드를이 JSON descripting 할당 된 `OnClick` 현재 extender의 애니메이션 실행:
+다음 JavaScript 코드는이 JSON descripting을 현재 extender의 `OnClick` 애니메이션에 할당 하 고 실행 합니다.
 
 [!code-html[Main](changing-an-animation-using-client-side-code-vb/samples/sample7.html)]
 
-[![마우스 클릭 하지 않고 (및 거의 태그를 사용 하 여)이 애니메이션은 즉시 실행](changing-an-animation-using-client-side-code-vb/_static/image2.png)](changing-an-animation-using-client-side-code-vb/_static/image1.png)
+[마우스를 클릭 하지 않고 매우 작은 태그를 사용 하 여 애니메이션이 즉시 실행 ![](changing-an-animation-using-client-side-code-vb/_static/image2.png)](changing-an-animation-using-client-side-code-vb/_static/image1.png)
 
-마우스 클릭 하지 않고과 거의 태그를 사용 하 여 애니메이션은 즉시 실행 ([클릭 하 여 큰 이미지 보기](changing-an-animation-using-client-side-code-vb/_static/image3.png))
+애니메이션은 마우스 클릭 없이 (또는 매우 작은 태그를 사용 하 여) 즉시 실행 됩니다 ([전체 크기 이미지를 보려면 클릭](changing-an-animation-using-client-side-code-vb/_static/image3.png)).
 
 > [!div class="step-by-step"]
 > [이전](executing-animations-using-client-side-code-vb.md)

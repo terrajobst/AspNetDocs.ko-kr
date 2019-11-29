@@ -8,18 +8,18 @@ ms.date: 09/08/2014
 ms.assetid: 423498f7-1a4b-44a1-b342-5f39d0bcf94f
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/aspnet-error-handling
 msc.type: authoredcontent
-ms.openlocfilehash: f420be369801208fa875d9a60e6e154afbe84aa7
-ms.sourcegitcommit: b67ffd5b2c5cff01ec4c8eb12a21f693f2e11887
+ms.openlocfilehash: 9514142ca50b33470a3f4c033e4f8e319a9ee09b
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69995315"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74636463"
 ---
 # <a name="aspnet-error-handling"></a>ASP.NET 오류 처리
 
 [Erik Reitan](https://github.com/Erikre)
 
-[정문 장난감 샘플 프로젝트 (C#) 다운로드](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 또는 [전자 서적 다운로드 (PDF)](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
+[정문 장난감 샘플 프로젝트 (C#) 다운로드](https://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 또는 [전자 서적 다운로드 (PDF)](https://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
 
 > 이 자습서 시리즈에서는 ASP.NET 4.5 및 Microsoft Visual Studio Express 2013 for Web을 사용 하 여 ASP.NET Web Forms 응용 프로그램을 빌드하는 기본 사항을 설명 합니다. [소스 코드를 포함 C# ](https://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) 하는 Visual Studio 2013 프로젝트는이 자습서 계열과 함께 사용할 수 있습니다.
 
@@ -39,15 +39,15 @@ ASP.NET 응용 프로그램은 실행 중에 발생 하는 오류를 일관 된 
 
 .NET Framework에서 예외는 `System.Exception`에서 상속받은 개체입니다. 예외는 문제가 발생한 코드 영역에서 throw됩니다. 예외는 응용 프로그램에서 예외를 처리 하는 코드를 제공 하는 위치로 호출 스택을 전달 합니다. 응용 프로그램에서 예외를 처리 하지 않는 경우 브라우저는 오류 세부 정보를 표시 하도록 강제 합니다.
 
-코드 내에서 `Try` 블록의 / `Catch` 코드수준에서`Finally` 오류를 처리 하는 것이 가장 좋습니다. / 사용자가 발생 하는 상황에서 문제를 해결할 수 있도록 이러한 블록을 추가 합니다. 오류 처리 블록이 오류가 발생 한 위치에서 너무 멀리 떨어져 있는 경우 문제를 해결 하는 데 필요한 정보를 사용자에 게 제공 하는 것이 더 어려워집니다.
+모범 사례로, `Try`/의 코드 수준에서 오류를 처리 하 여 코드 내에서 `Finally` 블록을 /`Catch`합니다. 사용자가 발생 하는 상황에서 문제를 해결할 수 있도록 이러한 블록을 추가 합니다. 오류 처리 블록이 오류가 발생 한 위치에서 너무 멀리 떨어져 있는 경우 문제를 해결 하는 데 필요한 정보를 사용자에 게 제공 하는 것이 더 어려워집니다.
 
-### <a name="exception-class"></a>Exception 클래스
+### <a name="exception-class"></a>예외 클래스
 
-예외 클래스는 예외가 상속 되는 기본 클래스입니다. 대부분의 예외 개체는 `SystemException` 클래스 `IndexOutOfRangeException` , 클래스 또는 `ArgumentNullException` 클래스와 같은 예외 클래스의 일부 파생 클래스의 인스턴스입니다. Exception 클래스에는 발생 한 오류에 대 `StackTrace` 한 특정 정보를 제공 하는 `Message` 속성, 속성, 속성 등의 속성이 있습니다 `InnerException` .
+예외 클래스는 예외가 상속 되는 기본 클래스입니다. 대부분의 예외 개체는 `SystemException` 클래스, `IndexOutOfRangeException` 클래스 또는 `ArgumentNullException` 클래스와 같은 예외 클래스의 일부 파생 클래스의 인스턴스입니다. Exception 클래스에는 발생 한 오류에 대 한 특정 정보를 제공 하는 속성 (예: `StackTrace` 속성, `InnerException` 속성 및 `Message` 속성)이 있습니다.
 
 ### <a name="exception-inheritance-hierarchy"></a>예외 상속 계층 구조
 
-런타임에는 예외가 발생할 때 런타임이 throw 하는 `SystemException` 클래스에서 파생 되는 기본 예외 집합이 있습니다. `IndexOutOfRangeException` 클래스`ArgumentNullException` 및 클래스와 같은 예외 클래스에서 상속 되는 대부분의 클래스는 추가 멤버를 구현 하지 않습니다. 따라서 예외에 대 한 가장 중요 한 정보는 예외 계층 구조, 예외 이름 및 예외에 포함 된 정보에서 찾을 수 있습니다.
+런타임에는 예외가 발생할 때 런타임이 throw 하는 `SystemException` 클래스에서 파생 되는 기본 예외 집합이 있습니다. `IndexOutOfRangeException` 클래스 및 `ArgumentNullException` 클래스와 같이 예외 클래스에서 상속 되는 대부분의 클래스는 추가 멤버를 구현 하지 않습니다. 따라서 예외에 대 한 가장 중요 한 정보는 예외 계층 구조, 예외 이름 및 예외에 포함 된 정보에서 찾을 수 있습니다.
 
 ### <a name="exception-handling-hierarchy"></a>예외 처리 계층 구조
 
@@ -61,15 +61,15 @@ ASP.NET Web Forms 응용 프로그램에서는 특정 처리 계층 구조를 �
 
 ### <a name="application-level-error-handling"></a>응용 프로그램 수준 오류 처리
 
-응용 프로그램의 구성을 수정 하거나 응용 프로그램의 `Application_Error` *global.asax* 파일에 처리기를 추가 하 여 응용 프로그램 수준에서 기본 오류를 처리할 수 있습니다.
+응용 프로그램의 구성을 수정 하거나 응용 프로그램의 *global.asax* 파일에 `Application_Error` 처리기를 추가 하 여 응용 프로그램 수준에서 기본 오류를 처리할 수 있습니다.
 
-Web.config 파일에 섹션을 `customErrors` 추가 하 여 기본 오류 및 HTTP 오류를 처리할 수 있습니다. 섹션 `customErrors` 에서는 오류가 발생할 때 사용자가 리디렉션되는 기본 페이지를 지정할 수 있습니다. 또한 특정 상태 코드 오류에 대 한 개별 페이지를 지정할 수 있습니다.
+*Web.config 파일에* `customErrors` 섹션을 추가 하 여 기본 오류 및 HTTP 오류를 처리할 수 있습니다. `customErrors` 섹션에서는 오류가 발생 했을 때 사용자가 리디렉션되는 기본 페이지를 지정할 수 있습니다. 또한 특정 상태 코드 오류에 대 한 개별 페이지를 지정할 수 있습니다.
 
 [!code-xml[Main](aspnet-error-handling/samples/sample1.xml?highlight=3-5)]
 
 그러나 구성을 사용 하 여 사용자를 다른 페이지로 리디렉션하는 경우 발생 한 오류에 대 한 세부 정보가 없습니다.
 
-그러나 `Application_Error` *global.asax* 파일의 처리기에 코드를 추가 하 여 응용 프로그램의 어디에서 나 발생 하는 오류를 트래핑할 수 있습니다.
+그러나 *global.asax* 파일의 `Application_Error` 처리기에 코드를 추가 하 여 응용 프로그램의 어디에서 나 발생 하는 오류를 트래핑할 수 있습니다.
 
 [!code-csharp[Main](aspnet-error-handling/samples/sample2.cs)]
 
@@ -79,43 +79,43 @@ Web.config 파일에 섹션을 `customErrors` 추가 하 여 기본 오류 및 H
 
 일반적으로 페이지 수준 오류 처리기를 사용 하 여 처리 되지 않은 오류를 기록 하거나 사용자가 유용한 정보를 표시할 수 있는 페이지로 이동 합니다.
 
-이 코드 예제에서는 ASP.NET 웹 페이지의 오류 이벤트에 대 한 처리기를 보여 줍니다. 이 처리기는 페이지의 블록 내 `try` / `catch` 에서 아직 처리 되지 않은 모든 예외를 catch 합니다.
+이 코드 예제에서는 ASP.NET 웹 페이지의 오류 이벤트에 대 한 처리기를 보여 줍니다. 이 처리기는 페이지에서 `catch` 블록 /`try`내에서 아직 처리 되지 않은 모든 예외를 catch 합니다.
 
 [!code-csharp[Main](aspnet-error-handling/samples/sample3.cs)]
 
-오류를 처리 한 후에는 서버 개체 ( `ClearError` `HttpServerUtility` 클래스)의 메서드를 호출 하 여 해당 오류를 지워야 합니다. 그렇지 않으면 이전에 발생 한 오류가 표시 됩니다.
+오류를 처리 한 후에는 서버 개체 (`HttpServerUtility` 클래스)의 `ClearError` 메서드를 호출 하 여이를 지워야 합니다. 그렇지 않으면 이전에 발생 한 오류가 표시 됩니다.
 
 ### <a name="code-level-error-handling"></a>코드 수준 오류 처리
 
 Try-catch 문은 다른 예외에 대 한 처리기를 지정 하는 하나 이상의 catch 절 뒤에 try 블록으로 구성 됩니다. 예외가 throw 되 면 CLR (공용 언어 런타임)에서이 예외를 처리 하는 catch 문을 찾습니다. 현재 실행 중인 메서드에 catch 블록이 없는 경우 CLR에서는 현재 메서드를 호출한 메서드 등을 확인 하 여 호출 스택을 확인 합니다. Catch 블록을 찾을 수 없는 경우 CLR은 처리 되지 않은 예외 메시지를 사용자에 게 표시 하 고 프로그램의 실행을 중지 합니다.
 
-다음 코드 예제에서는를 사용 `try` 하 여 / `catch` / `finally` 오류를 처리 하는 일반적인 방법을 보여 줍니다.
+다음 코드 예제에서는 `try`/`catch`/`finally`를 사용 하 여 오류를 처리 하는 일반적인 방법을 보여 줍니다.
 
 [!code-csharp[Main](aspnet-error-handling/samples/sample4.cs)]
 
-위의 코드에서 try 블록은 가능한 예외에 대해 보호 해야 하는 코드를 포함 합니다. 블록은 예외가 throw 되거나 블록이 성공적으로 완료 될 때까지 실행 됩니다. `FileNotFoundException` 예외가 발생`IOException` 하거나 예외가 발생 하면 실행이 다른 페이지로 전송 됩니다. 그런 다음 오류가 발생 했는지 여부에 관계 없이 finally 블록에 포함 된 코드를 실행 합니다.
+위의 코드에서 try 블록은 가능한 예외에 대해 보호 해야 하는 코드를 포함 합니다. 블록은 예외가 throw 되거나 블록이 성공적으로 완료 될 때까지 실행 됩니다. `FileNotFoundException` 예외 또는 `IOException` 예외가 발생 하면 실행이 다른 페이지로 전송 됩니다. 그런 다음 오류가 발생 했는지 여부에 관계 없이 finally 블록에 포함 된 코드를 실행 합니다.
 
 ## <a name="adding-error-logging-support"></a>오류 로깅 지원 추가
 
-정문 장난감 샘플 응용 프로그램에 오류 처리를 추가 하기 전에 `ExceptionUtility` *논리* 폴더에 클래스를 추가 하 여 오류 로깅 지원을 추가 합니다. 이렇게 하면 응용 프로그램에서 오류를 처리할 때마다 오류 로그 파일에 오류 정보가 추가 됩니다.
+정문 장난감 샘플 응용 프로그램에 오류 처리를 추가 하기 전에 *논리* 폴더에 `ExceptionUtility` 클래스를 추가 하 여 오류 로깅 지원을 추가 합니다. 이렇게 하면 응용 프로그램에서 오류를 처리할 때마다 오류 로그 파일에 오류 정보가 추가 됩니다.
 
-1. *논리* 폴더를 마우스 오른쪽 단추로 클릭 한 다음 **새 항목** **추가**  - &gt; 를 선택 합니다.   
+1. *논리* 폴더를 마우스 오른쪽 단추로 클릭 한 다음 **추가** -&gt; **새 항목**을 선택 합니다.   
    **새 항목 추가** 대화 상자가 표시됩니다.
-2. 왼쪽의 **시각적 C#**   -코드템플릿 그룹을 선택 합니다. &gt; 그런 다음 가운데 목록에서 **클래스**를 선택 하 고 이름을 **ExceptionUtility.cs**로 지정한 다음
+2. 왼쪽의 **Visual C#**  -&gt; **코드** 템플릿 그룹을 선택 합니다. 그런 다음 가운데 목록에서 **클래스**를 선택 하 고 이름을 **ExceptionUtility.cs**로 지정한 다음
 3. **추가**를 선택합니다. 새 클래스 파일이 표시 됩니다.
 4. 기존 코드를 다음으로 바꿉니다.  
 
     [!code-csharp[Main](aspnet-error-handling/samples/sample5.cs)]
 
-예외가 발생 하면 메서드를 `LogException` 호출 하 여 예외를 예외 로그 파일에 쓸 수 있습니다. 이 메서드는 예외 개체와 예외의 소스에 대 한 세부 정보를 포함 하는 문자열의 두 매개 변수를 사용 합니다. 예외 로그는 *응용 프로그램\_데이터* 폴더의 *오류 로그 .txt* 파일에 기록 됩니다.
+예외가 발생 하면 `LogException` 메서드를 호출 하 여 예외를 예외 로그 파일에 쓸 수 있습니다. 이 메서드는 예외 개체와 예외의 소스에 대 한 세부 정보를 포함 하는 문자열의 두 매개 변수를 사용 합니다. 예외 로그는 *응용 프로그램\_Data* 폴더의 *오류 로그 .txt* 파일에 기록 됩니다.
 
 ### <a name="adding-an-error-page"></a>오류 페이지 추가
 
 정문 장난감 샘플 응용 프로그램에서 한 페이지는 오류를 표시 하는 데 사용 됩니다. 오류 페이지는 사이트 사용자에 게 보안 오류 메시지를 표시 하도록 설계 되었습니다. 그러나 사용자가 코드가 있는 컴퓨터에서 로컬로 제공 되는 HTTP 요청을 작성 하는 개발자 인 경우 오류 페이지에 추가 오류 정보가 표시 됩니다.
 
-1. **솔루션 탐색기** 에서 프로젝트 이름 (**정문 장난감**)을 마우스 오른쪽 단추로 클릭 하 고 **새 항목** **추가**  - &gt; 를 선택 합니다.   
+1. **솔루션 탐색기** 에서 프로젝트 이름 (**정문 장난감**)을 마우스 오른쪽 단추로 클릭 하 고 **추가** -&gt; **새 항목**을 선택 합니다.   
    **새 항목 추가** 대화 상자가 표시됩니다.
-2. 왼쪽의 **시각적 C#**   -웹템플릿 그룹을 선택 합니다. &gt; 중간 목록에서 **마스터 페이지로 웹 폼**을 선택 하 고 이름을 **errorpage .aspx**로 바꿉니다.
+2. 왼쪽의 **Visual C#**  -&gt; **웹** 템플릿 그룹을 선택 합니다. 중간 목록에서 **마스터 페이지로 웹 폼**을 선택 하 고 이름을 **errorpage .aspx**로 바꿉니다.
 3. **추가**를 클릭합니다.
 4. 마스터 페이지로 *site.master* 파일을 선택 하 고 **확인**을 선택 합니다.
 5. 기존 태그를 다음으로 바꿉니다.   
@@ -125,31 +125,31 @@ Try-catch 문은 다른 예외에 대 한 처리기를 지정 하는 하나 이�
 
     [!code-csharp[Main](aspnet-error-handling/samples/sample7.cs)]
 
-오류 페이지가 표시 `Page_Load` 되 면 이벤트 처리기가 실행 됩니다. `Page_Load` 처리기에서 오류가 처음 처리 된 위치가 결정 됩니다. 그런 다음 서버 개체의 메서드를 `GetLastError` 호출 하 여 마지막으로 발생 한 오류를 확인 합니다. 예외가 더 이상 존재 하지 않는 경우 일반 예외가 생성 됩니다. 그런 다음 HTTP 요청을 로컬로 만든 경우 모든 오류 정보가 표시 됩니다. 이 경우 웹 응용 프로그램을 실행 하는 로컬 컴퓨터에만 이러한 오류 정보가 표시 됩니다. 오류 정보가 표시 된 후 오류가 로그 파일에 추가 되 고 서버에서 오류가 지워집니다.
+오류 페이지가 표시 되 면 `Page_Load` 이벤트 처리기가 실행 됩니다. `Page_Load` 처리기에서 오류가 처음 처리 된 위치가 결정 됩니다. 그런 다음 서버 개체의 `GetLastError` 메서드를 호출 하 여 마지막으로 발생 한 오류를 확인 합니다. 예외가 더 이상 존재 하지 않는 경우 일반 예외가 생성 됩니다. 그런 다음 HTTP 요청을 로컬로 만든 경우 모든 오류 정보가 표시 됩니다. 이 경우 웹 응용 프로그램을 실행 하는 로컬 컴퓨터에만 이러한 오류 정보가 표시 됩니다. 오류 정보가 표시 된 후 오류가 로그 파일에 추가 되 고 서버에서 오류가 지워집니다.
 
 ### <a name="displaying-unhandled-error-messages-for-the-application"></a>응용 프로그램에 대해 처리 되지 않은 오류 메시지 표시
 
-Web.config 파일에 `customErrors` 섹션을 추가 하면 응용 프로그램 전체에서 발생 하는 단순한 오류를 신속 하 게 처리할 수 있습니다. 404-파일을 찾을 수 없는 경우와 같이 상태 코드 값을 기반으로 오류를 처리 하는 방법을 지정할 수도 있습니다.
+*Web.config 파일에* `customErrors` 섹션을 추가 하면 응용 프로그램 전체에서 발생 하는 단순한 오류를 신속 하 게 처리할 수 있습니다. 404-파일을 찾을 수 없는 경우와 같이 상태 코드 값을 기반으로 오류를 처리 하는 방법을 지정할 수도 있습니다.
 
 #### <a name="update-the-configuration"></a>구성 업데이트
 
-Web.config 파일에 섹션을 `customErrors` 추가 하 여 구성을 업데이트 합니다.
+*Web.config 파일에* `customErrors` 섹션을 추가 하 여 구성을 업데이트 합니다.
 
 1. **솔루션 탐색기**에서 정문 장난감 샘플 응용 프로그램의 루트에 있는 *web.config* 파일을 찾아 엽니다.
-2. 다음과 같이 `<system.web>` 노드 내의 web.config 파일에 섹션을추가합니다.`customErrors`   
+2. 다음과 같이 `<system.web>` 노드 내의 web.config *파일에* `customErrors` 섹션을 추가 합니다.   
 
     [!code-xml[Main](aspnet-error-handling/samples/sample8.xml?highlight=3-5)]
-3. Web.config 파일 을 저장 합니다.
+3. *Web.config 파일을* 저장 합니다.
 
-섹션 `customErrors` 은 "설정"으로 설정 된 모드를 지정 합니다. 또한 오류가 발생할 때 `defaultRedirect`탐색할 페이지를 응용 프로그램에 알리는를 지정 합니다. 또한 페이지를 찾을 수 없을 때 404 오류를 처리 하는 방법을 지정 하는 특정 오류 요소를 추가 했습니다. 이 자습서의 뒷부분에서는 응용 프로그램 수준에서 오류에 대 한 세부 정보를 캡처하는 추가 오류 처리를 추가 합니다.
+`customErrors` 섹션에서는 "설정"으로 설정 된 모드를 지정 합니다. 또한 오류가 발생할 때 탐색할 페이지를 응용 프로그램에 알리는 `defaultRedirect`지정 합니다. 또한 페이지를 찾을 수 없을 때 404 오류를 처리 하는 방법을 지정 하는 특정 오류 요소를 추가 했습니다. 이 자습서의 뒷부분에서는 응용 프로그램 수준에서 오류에 대 한 세부 정보를 캡처하는 추가 오류 처리를 추가 합니다.
 
 #### <a name="running-the-application"></a>응용 프로그램 실행
 
 이제 응용 프로그램을 실행 하 여 업데이트 된 경로를 확인할 수 있습니다.
 
 1. **F5** 키를 눌러 정문 장난감 샘플 응용 프로그램을 실행 합니다.  
- 브라우저가 열리고 default.aspx 페이지가 표시 됩니다 .
-2. 브라우저에 다음 URL을 입력 합니다. 포트 번호를 사용 해야 합니다.  
+ 브라우저가 열리고 *default.aspx 페이지가 표시 됩니다.*
+2. 브라우저에 다음 URL을 입력 합니다 **. 포트 번호를 사용** 해야 합니다.  
     `https://localhost:44300/NoPage.aspx`
 3. 브라우저에 표시 된 *Errorpage .aspx* 를 검토 합니다. 
 
@@ -161,13 +161,13 @@ Web.config 파일에 섹션을 `customErrors` 추가 하 여 구성을 업데이
 
 오류가 발생 했을 때 응용 프로그램이 어떻게 작동 하는지 확인 하려면 의도적으로 ASP.NET에서 오류 조건을 만들 수 있습니다. 정문 장난감 샘플 응용 프로그램에서 기본 페이지가 로드 되 면 테스트 예외를 throw 하 여 발생 하는 상황을 확인 합니다.
 
-1. Visual Studio에서 default.aspx 페이지의 코드 를 엽니다.   
+1. Visual Studio에서 *default.aspx 페이지의* 코드를 엽니다.   
    *Default.aspx.cs* 코드 숨겨진 페이지가 표시 됩니다.
 2. `Page_Load` 처리기에서 처리기가 다음과 같이 표시 되도록 코드를 추가 합니다.   
 
     [!code-csharp[Main](aspnet-error-handling/samples/sample9.cs?highlight=3-4)]
 
-다양 한 형식의 예외를 만들 수 있습니다. 위의 코드에서 default.aspx 페이지가 로드 `InvalidOperationException` 될 때를 만듭니다.
+다양 한 형식의 예외를 만들 수 있습니다. 위의 코드에서 *default.aspx 페이지가 로드* 되 면 `InvalidOperationException`를 만듭니다.
 
 #### <a name="running-the-application"></a>응용 프로그램 실행
 
@@ -183,46 +183,46 @@ Web.config 파일에 섹션을 `customErrors` 추가 하 여 구성을 업데이
 
     ![ASP.NET 오류 처리-오류 페이지](aspnet-error-handling/_static/image2.png)
 
-오류 세부 정보에서 볼 수 있듯이, web.config 파일의 `customError` 섹션에서 예외를 트래핑 했습니다.
+오류 세부 정보에서 볼 수 있듯이, *web.config 파일의* `customError` 섹션에서 예외를 트래핑 했습니다.
 
 ### <a name="adding-application-level-error-handling"></a>응용 프로그램 수준 오류 처리 추가
 
-예외에 대 한 정보를 거의 `customErrors` 얻지 못하는 *web.config* 파일의 섹션을 사용 하 여 예외를 트래핑 하는 대신 응용 프로그램 수준에서 오류를 포착 하 고 오류 정보를 검색할 수 있습니다.
+예외에 대 한 정보를 거의 얻지 못하는 *web.config* 파일의 `customErrors` 섹션을 사용 하 여 예외를 트래핑 하는 대신 응용 프로그램 수준에서 오류를 트래핑 하 고 오류 정보를 검색할 수 있습니다.
 
 1. **솔루션 탐색기**에서 *Global.asax.cs* 파일을 찾아 엽니다.
-2. **\_응용 프로그램 오류** 처리기를 추가 하 여 다음과 같이 표시 되도록 합니다.   
+2. **응용 프로그램\_오류** 처리기를 추가 하 여 다음과 같이 표시 되도록 합니다.   
 
     [!code-csharp[Main](aspnet-error-handling/samples/sample10.cs)]
 
-응용 프로그램에서 오류가 발생 하 `Application_Error` 는 경우 처리기가 호출 됩니다. 이 처리기에서 마지막 예외를 검색 하 고 검토 합니다. 예외가 처리 되지 않은 경우 예외에 내부 예외 세부 정보 (즉, `InnerException` 가 null이 아님)가 포함 된 경우 응용 프로그램은 예외 정보가 표시 되는 오류 페이지로 실행을 전송 합니다.
+응용 프로그램에서 오류가 발생 하면 `Application_Error` 처리기가 호출 됩니다. 이 처리기에서 마지막 예외를 검색 하 고 검토 합니다. 예외가 처리 되지 않은 경우 예외에 내부 예외 세부 정보 (`InnerException`가 null이 아님)가 포함 된 경우 응용 프로그램은 예외 정보가 표시 되는 오류 페이지로 실행을 전송 합니다.
 
 #### <a name="running-the-application"></a>응용 프로그램 실행
 
 응용 프로그램을 실행 하 여 응용 프로그램 수준에서 예외를 처리 하 여 제공 된 추가 오류 세부 정보를 볼 수 있습니다.
 
 1. **Ctrl + F5** 키를 눌러 정문 장난감 샘플 응용 프로그램을 실행 합니다.  
- 응용 프로그램은을 `InvalidOperationException` throw 합니다.
+ 응용 프로그램이 `InvalidOperationException`를 throw 합니다.
 2. 브라우저에 표시 된 *Errorpage .aspx* 를 검토 합니다. 
 
     ![ASP.NET 오류 처리-응용 프로그램 수준 오류](aspnet-error-handling/_static/image3.png)
 
 ### <a name="adding-page-level-error-handling"></a>페이지 수준 오류 처리 추가
 
-페이지의 `ErrorPage` `@Page` 지시문에 특성을 추가 하거나 페이지의 코드 숨김으로 `Page_Error` 이벤트 처리기를 추가 하 여 페이지에 페이지 수준 오류 처리를 추가할 수 있습니다. 이 섹션에서는 *errorpage .aspx* 페이지로 실행 `Page_Error` 을 전송 하는 이벤트 처리기를 추가 합니다.
+페이지의 `@Page` 지시문에 `ErrorPage` 특성을 추가 하거나 페이지의 코드 숨김으로 `Page_Error` 이벤트 처리기를 추가 하 여 페이지에 페이지 수준 오류 처리를 추가할 수 있습니다. 이 섹션에서는 *errorpage .aspx* 페이지로 실행을 전송 하는 `Page_Error` 이벤트 처리기를 추가 합니다.
 
 1. **솔루션 탐색기**에서 *Default.aspx.cs* 파일을 찾아 엽니다.
-2. 코드 숨김이 `Page_Error` 다음과 같이 표시 되도록 처리기를 추가 합니다.   
+2. 코드 숨김이 다음과 같이 표시 되도록 `Page_Error` 처리기를 추가 합니다.   
 
     [!code-csharp[Main](aspnet-error-handling/samples/sample11.cs?highlight=18-30)]
 
-페이지에서 오류가 발생 하면 `Page_Error` 이벤트 처리기가 호출 됩니다. 이 처리기에서 마지막 예외를 검색 하 고 검토 합니다. 이 발생 하는 경우 `Page_Error` 이벤트 처리기는 예외 정보가 표시 되는 오류 페이지로 실행을 전송 합니다. `InvalidOperationException`
+페이지에서 오류가 발생 하면 `Page_Error` 이벤트 처리기가 호출 됩니다. 이 처리기에서 마지막 예외를 검색 하 고 검토 합니다. `InvalidOperationException` 발생 하는 경우 `Page_Error` 이벤트 처리기는 예외 정보가 표시 되는 오류 페이지로 실행을 전송 합니다.
 
 #### <a name="running-the-application"></a>응용 프로그램 실행
 
 이제 응용 프로그램을 실행 하 여 업데이트 된 경로를 확인할 수 있습니다.
 
 1. **Ctrl + F5** 키를 눌러 정문 장난감 샘플 응용 프로그램을 실행 합니다.  
- 응용 프로그램은을 `InvalidOperationException` throw 합니다.
+ 응용 프로그램이 `InvalidOperationException`를 throw 합니다.
 2. 브라우저에 표시 된 *Errorpage .aspx* 를 검토 합니다. 
 
     ![ASP.NET 오류 처리-페이지 수준 오류](aspnet-error-handling/_static/image4.png)
@@ -232,8 +232,8 @@ Web.config 파일에 섹션을 `customErrors` 추가 하 여 구성을 업데이
 
 이 자습서의 앞부분에서 추가한 예외를 발생 시 키 지 않고 정문 장난감 샘플 응용 프로그램이 작동 하도록 허용 하려면 예외를 제거 합니다.
 
-1. Default.aspx 페이지의 코드 숨김이 열립니다.
-2. `Page_Load` 처리기에서 처리기가 다음과 같이 표시 되도록 예외를 throw 하는 코드를 제거 합니다.   
+1. *Default.aspx 페이지의* 코드 숨김이 열립니다.
+2. 처리기가 다음과 같이 표시 되도록 `Page_Load` 처리기에서 예외를 throw 하는 코드를 제거 합니다.   
 
     [!code-csharp[Main](aspnet-error-handling/samples/sample12.cs)]
 
@@ -242,17 +242,17 @@ Web.config 파일에 섹션을 `customErrors` 추가 하 여 구성을 업데이
 이 자습서의 앞부분에서 설명한 것 처럼 try/catch 문을 추가 하 여 코드 섹션을 실행 하 고 발생 한 첫 번째 오류를 처리할 수 있습니다. 이 예에서는 오류 로그 파일에 오류 정보를 기록 하 여 나중에 오류를 검토할 수 있도록 합니다.
 
 1. **솔루션 탐색기**의 *논리* 폴더에서 *PayPalFunctions.cs* 파일을 찾아 엽니다.
-2. 다음과 같이 `HttpCall` 코드를 표시 하도록 메서드를 업데이트 합니다.   
+2. 코드가 다음과 같이 표시 되도록 `HttpCall` 메서드를 업데이트 합니다.   
 
     [!code-csharp[Main](aspnet-error-handling/samples/sample13.cs?highlight=20,22-23)]
 
-위의 코드는 `ExceptionUtility` 클래스에 `LogException` 포함 된 메서드를 호출 합니다. 이 자습서의 앞부분에 나오는 *논리* 폴더에 *ExceptionUtility.cs* 클래스 파일을 추가 했습니다. `LogException` 메서드는 두 개의 매개 변수를 사용합니다. 첫 번째 매개 변수는 exception 개체입니다. 두 번째 매개 변수는 오류의 원인을 인식 하는 데 사용 되는 문자열입니다.
+위의 코드는 `ExceptionUtility` 클래스에 포함 된 `LogException` 메서드를 호출 합니다. 이 자습서의 앞부분에 나오는 *논리* 폴더에 *ExceptionUtility.cs* 클래스 파일을 추가 했습니다. `LogException` 메서드는 두 개의 매개 변수를 사용합니다. 첫 번째 매개 변수는 exception 개체입니다. 두 번째 매개 변수는 오류의 원인을 인식 하는 데 사용 되는 문자열입니다.
 
 ### <a name="inspecting-the-error-logging-information"></a>오류 로깅 정보 검사
 
 앞에서 설명한 것 처럼 오류 로그를 사용 하 여 먼저 해결할 응용 프로그램의 오류를 확인할 수 있습니다. 물론 오류 로그에 포착 되어 기록 된 오류만 기록 됩니다.
 
-1. **솔루션 탐색기**에서 *응용 프로그램\_데이터* 폴더의 *오류 로그 .txt* 파일을 찾아 엽니다.   
+1. **솔루션 탐색기**에서 *응용 프로그램\_Data* 폴더의 *오류 로그 .txt* 파일을 찾아 엽니다.   
  "**모든 파일 표시**" 옵션을 선택 하거나 **솔루션 탐색기** 맨 위에 있는 "**새로 고침**" 옵션을 선택 하 여 *오류 로그 .txt* 파일을 확인 해야 할 수도 있습니다.
 2. Visual Studio에 표시 된 오류 로그를 검토 합니다. 
 
@@ -287,7 +287,7 @@ ELMAH를 사용 하려면 먼저 설치 해야 합니다. 이는 *NuGet* 패키�
     ![ASP.NET 오류 처리-프로젝트 선택 대화 상자](aspnet-error-handling/_static/image8.png)
 6. 필요한 경우 **NuGet 패키지 관리** 대화 상자에서 **닫기** 를 클릭 합니다.
 7. Visual Studio에서 열려 있는 모든 파일을 다시 로드 하도록 요청 하는 경우 "**모두 예**"를 선택 합니다.
-8. ELMAH 패키지는 프로젝트의 루트에 있는 web.config 파일에 자신에 대 한 항목을 추가 합니다. Visual Studio에서 수정 된 *web.config* 파일을 다시 로드할지 여부를 묻는 메시지를 표시 하려면 **예**를 클릭 합니다.
+8. ELMAH 패키지는 프로젝트의 루트에 있는 web.config *파일에* 자신에 대 한 항목을 추가 합니다. Visual Studio에서 수정 된 *web.config* 파일을 다시 로드할지 여부를 묻는 메시지를 표시 하려면 **예**를 클릭 합니다.
 
 이제 ELMAH는 발생 하는 처리 되지 않은 오류를 저장할 준비가 되었습니다.
 
@@ -297,7 +297,7 @@ ELMAH 로그는 쉽게 볼 수 있지만 먼저 ELMAH 로그에 기록 되는 �
 
 1. **Ctrl + F5** 키를 눌러 정문 장난감 샘플 응용 프로그램을 실행 합니다.
 2. ELMAH 로그에 처리 되지 않은 예외를 쓰려면 브라우저에서 포트 번호를 사용 하 여 다음 URL로 이동 합니다.  
-    `https://localhost:44300/NoPage.aspx`오류 페이지가 표시 됩니다.
+    `https://localhost:44300/NoPage.aspx` 오류 페이지가 표시 됩니다.
 3. ELMAH 로그를 표시 하려면 브라우저에서 포트 번호를 사용 하 여 다음 URL로 이동 합니다.  
     `https://localhost:44300/elmah.axd`
 
@@ -324,25 +324,25 @@ Microsoft Azure에 웹 응용 프로그램을 배포 하는 방법에 대 한 �
 
 ## <a name="additional-resources"></a>추가 리소스
 
-[ASP.NET Health Monitoring을 사용 하 여 오류 세부 정보 로깅](../../older-versions-getting-started/deploying-web-site-projects/logging-error-details-with-asp-net-health-monitoring-cs.md)   
+[ASP.NET 상태 모니터링을 사용 하 여 오류 세부 정보 로깅](../../older-versions-getting-started/deploying-web-site-projects/logging-error-details-with-asp-net-health-monitoring-cs.md)   
 [ELMAH](https://code.google.com/p/elmah/)
 
-## <a name="acknowledgements"></a>감사의 글
+## <a name="acknowledgements"></a>승인
 
 이 자습서 시리즈의 내용에 대해 상당한 기여를 수행한 다음 사용자에 게 감사 합니다.
 
-- [Alberto poblacion, MVP &amp; MCT, 스페인](https://mvp.microsoft.com/mvp/Alberto%20Poblacion%20Bolano-36772)
+- [Alberto Poblacion, MVP &amp; MCT, 스페인](https://mvp.microsoft.com/mvp/Alberto%20Poblacion%20Bolano-36772)
 - [Alex Thissen, 네덜란드](http://blog.alexthissen.nl/) (twitter: [@alexthissen](http://twitter.com/alexthissen))
 - [Andre Tournier, USA](http://andret503.wordpress.com/)
 - Apurva Joshi, Microsoft
 - [Bojan 월 Vrhovnik, 슬로베니아](http://twitter.com/bvrhovnik)
 - [Bruno Sonnino, 브라질](http://msmvps.com/blogs/bsonnino) (twitter: [@bsonnino](http://twitter.com/bsonnino))
 - [Carlos dos Santos, 브라질](http://www.carloscds.net/)
-- [Dave Campbell, 미국](http://www.wynapse.com/) (twitter: [@windowsdevnews](http://twitter.com/windowsdevnews))
+- [Dave Campbell, USA](http://www.wynapse.com/) (twitter: [@windowsdevnews](http://twitter.com/windowsdevnews))
 - [Jon Galloway, Microsoft](https://weblogs.asp.net/jgalloway) (twitter: [@jongalloway](http://twitter.com/jongalloway))
-- [Michael 정자, 미국](http://www.930solutions.com/) (twitter: [@mrsharps](http://twitter.com/mrsharps))
+- [Michael 정자, USA](http://www.930solutions.com/) (twitter: [@mrsharps](http://twitter.com/mrsharps))
 - Mike Pope
-- [Mitchel 판매자, 미국](http://www.mitchelsellers.com/) (twitter: [@MitchelSellers](http://twitter.com/MitchelSellers))
+- [Mitchel 판매자, USA](http://www.mitchelsellers.com/) (twitter: [@MitchelSellers](http://twitter.com/MitchelSellers))
 - [Paul Cociuba, Microsoft](http://linqto.me/Links/pcociuba)
 - [파울로 Ggado, 포르투갈](http://paulomorgado.net/)
 - [Pranav Rastogi, Microsoft](https://blogs.msdn.com/b/pranav_rastogi)
@@ -355,7 +355,7 @@ Microsoft Azure에 웹 응용 프로그램을 배포 하는 방법에 대 한 �
   MSDN의 Visual Studio 2012 관련 코드 샘플: [정문 장난감 탐색](https://code.msdn.microsoft.com/Navigation-Wingtip-Toys-5f0daba2)
 - James Chaney ([jchaney@agvance.net](mailto:jchaney@agvance.net))  
   MSDN의 Visual Studio 2012 관련 코드 샘플: [ASP.NET 4.5 Web Forms 자습서 시리즈 Visual Basic](https://code.msdn.microsoft.com/ASPNET-45-Web-Forms-f37f0f63)
-- Andrielle Azevedo-Microsoft의 twitter: @driazevedo(기술 대상 사용자 참여자)  
+- Andrielle Azevedo-Microsoft 기술 대상 참여자 (twitter: @driazevedo)  
   Visual Studio 2012 translation: [Iniciando com ASP.NET Web Forms 4.5-Parte 1-Introdução e Visão Geral](https://andrielleazevedo.wordpress.com/2013/01/24/iniciando-com-asp-net-web-forms-4-5-introducao-e-visao-geral/)
 
 > [!div class="step-by-step"]

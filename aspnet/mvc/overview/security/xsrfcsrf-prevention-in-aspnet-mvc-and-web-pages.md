@@ -8,12 +8,12 @@ ms.date: 03/14/2013
 ms.assetid: aadc5fa4-8215-4fc7-afd5-bcd2ef879728
 msc.legacyurl: /mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages
 msc.type: authoredcontent
-ms.openlocfilehash: 6fcfcda5b95e5844f7d357ac0cbb6d1fd2e215ac
-ms.sourcegitcommit: 84b1681d4e6253e30468c8df8a09fe03beea9309
+ms.openlocfilehash: fb7e76101cbe6a874ddf5b3429ca2dc6d474334b
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445771"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74595754"
 ---
 # <a name="xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages"></a>ASP.NET MVC 및 웹 페이지에서 XSRF/CSRF 방지
 
@@ -128,7 +128,7 @@ XSRF 시스템은 익명 사용자에 대 한 특별 한 지원을 포함 합니
 
 클레임 기반 인증을 사용 하는 대부분의 배포는 특히 ACS ( [Azure Access Control Service](https://msdn.microsoft.com/library/windowsazure/gg429786.aspx) )를 사용 합니다. 개발자는 ACS를 사용 하 여 개별 *id 공급자* (예: ADFS, Microsoft 계정 공급자, yahoo!와 같은 openid connect 공급자 등)를 구성 하 고 id 공급자는 *이름 식별자*를 반환할 수 있습니다. 이러한 이름 식별자에는 전자 메일 주소와 같은 PII (개인적으로 식별이 가능한 정보)가 포함 될 수도 있고, 익명화 수 있습니다. 에 관계 없이 튜플 (id 공급자, 이름 식별자)은 사이트를 검색 하는 동안 특정 사용자에 대 한 적절 한 추적 토큰 역할을 하기 때문에 ASP.NET 웹 스택 런타임은 및를 생성할 때 사용자 이름 대신 튜플을 사용할 수 있습니다. XSRF 필드 토큰의 유효성을 검사 합니다. Id 공급자와 이름 식별자에 대 한 특정 Uri는 다음과 같습니다.
 
-- `http://schemas.microsoft.com/accesscontrolservice/2010/07/claims/identityprovider`
+- `https://schemas.microsoft.com/accesscontrolservice/2010/07/claims/identityprovider`
 - `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier`
 
 자세한 내용은이 [ACS 문서 페이지](https://msdn.microsoft.com/library/windowsazure/gg185971.aspx) 를 참조 하세요.

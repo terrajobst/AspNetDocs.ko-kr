@@ -1,71 +1,71 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/nobot/fighting-bots-vb
-title: 대체 봇 (VB) | Microsoft Docs
+title: 싸 봇 (VB) | Microsoft Docs
 author: wenz
-description: 자동화 된 봇 스팸, 사용자 개입 없이 주석 양식을 제출를 사용 하 여 웹 로그 및 기타 웹 사이트를 석고 합니다. ASP.NET AJAX Con NoBot 컨트롤 하는 중...
+description: 자동화 된 bot plaster 웹 로그 및 기타 웹 사이트를 사용 하 여 사용자 개입 없이 주석 양식을 제출 합니다. ASP.NET AJAX Con의 NoBot 컨트롤
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: e9803150-452d-4521-97e3-d75d5599383c
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/nobot/fighting-bots-vb
 msc.type: authoredcontent
-ms.openlocfilehash: e493ecfb31716355f33c320bb4467fcef1a2437d
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: a8ca71b96cb84c97b1a60ae6a3d1a129cd1b0b10
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65132563"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74606378"
 ---
 # <a name="fighting-bots-vb"></a>대체 봇(VB)
 
-by [Christian Wenz](https://github.com/wenz)
+[Christian Wenz](https://github.com/wenz) 별
 
-[코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/NoBot0.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/nobot0VB.pdf)
+[코드 다운로드](https://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/NoBot0.vb.zip) 또는 [PDF 다운로드](https://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/nobot0VB.pdf)
 
-> 자동화 된 봇 스팸, 사용자 개입 없이 주석 양식을 제출를 사용 하 여 웹 로그 및 기타 웹 사이트를 석고 합니다. ASP.NET AJAX Control Toolkit에서 NoBot 컨트롤 이러한 봇 싸 하는 데 도움이 됩니다.
+> 자동화 된 bot plaster 웹 로그 및 기타 웹 사이트를 사용 하 여 사용자 개입 없이 주석 양식을 제출 합니다. ASP.NET AJAX 컨트롤 도구 키트의 NoBot 컨트롤은 이러한 봇을 지 원하는 데 도움이 될 수 있습니다.
 
 ## <a name="overview"></a>개요
 
-자동화 된 봇 스팸, 사용자 개입 없이 주석 양식을 제출를 사용 하 여 웹 로그 및 기타 웹 사이트를 석고 합니다. ASP.NET AJAX Control Toolkit에서 NoBot 컨트롤 이러한 봇 싸 하는 데 도움이 됩니다.
+자동화 된 bot plaster 웹 로그 및 기타 웹 사이트를 사용 하 여 사용자 개입 없이 주석 양식을 제출 합니다. ASP.NET AJAX 컨트롤 도구 키트의 NoBot 컨트롤은 이러한 봇을 지 원하는 데 도움이 될 수 있습니다.
 
 ## <a name="steps"></a>단계
 
-봇을 무력화 하는 데 한 가지 일반적인 방법은 컴퓨터와 사용자 떨어져 CAPTCHAs 완전히 자동화 된 공용 Turing 테스트를 사용 하는 것입니다. Turing 테스트 원래 테스트 사람 또는 컴퓨터 통신 파트너 인지 여부를 결정 해야 사용자가 있습니다. 웹에서 CAPTCHA를 왜곡 되어 일부 문자를 사용 하 여 이미지의 일반적으로 구성 됩니다. OCR 알고리즘 실패 하는 반면 것만 사람이 이미지의 문자를 읽을 수 있도록입니다.
+Bot 봇의 일반적인 방법 중 하나는 CAPTCHAs 완전히 자동화 된 Public Turing test를 사용 하 여 컴퓨터와 사람을 분리 하는 것입니다. Turing 테스트는 원래 통신 파트너가 사람이 나 컴퓨터 인지 여부를 결정 해야 하는 테스트 였습니다. 웹에서 CAPTCHA는 일반적으로 일부 문자가 비틀어 진 이미지로 구성 됩니다. 그 이유는 사람이 이미지의 문자를 읽을 수 있는 반면 OCR 알고리즘은 실패 한다는 것입니다.
 
-몇 가지 장점과이 방식의 단점은 있지만이 설명은이 자습서의 범위를 벗어납니다. 그러나 유사한 접근 방식을 제공 하는 ASP.NET AJAX Control Toolkit의 컨트롤: `NoBot`합니다. 대부분 스팸 시도 하는 경우 성공적인 간주 됩니다. 여기서 블로그 같은 웹 사이트에서 매우 잘 경우 약 48gb), 되며에 극복 CAPTCHA를 보다 쉽게 하지만 매우 쉽게 사용할 수는는 `NoBot` 제어 작업을 수행할 수 있습니다.
+이 방법에는 몇 가지 장점과 단점이 있지만이에 대 한 설명은이 자습서의 범위를 벗어나는 것입니다. 그러나 ASP.NET AJAX 컨트롤 도구 키트에는 `NoBot`유사한 방법을 제공 하는 컨트롤이 있습니다. CAPTCHA 보다 더 쉽게 극복할 수 있습니다. 그러나 대부분의 스팸 시도 `NoBot`를 방해 하는 경우 성공으로 간주 되는 블로그 등의 웹 사이트에서는 사용 하기 쉽고 정의 요금를 사용 하는 것이 좋습니다.
 
-`NoBot` 이러한 조건 중 하나 이상이 충족 되 면 현재 ASP.NET web form의 포스트백을 가로채:
+다음 조건 중 하나 이상이 충족 되는 경우 `NoBot`는 현재 ASP.NET 웹 폼의 포스트백을 가로챕니다.
 
-- 브라우저 JavaScript 퍼즐 실패 (예를 들어 경우 JavaScript가 비활성화)
-- 사용자를 빠르게 양식을 제출
-- 특정 시간 내에 너무 자주 양식을 제출 하는 클라이언트 IP 주소입니다.
+- 브라우저에서 javascript 퍼즐을 해결 하지 못했습니다 (예를 들어 JavaScript가 비활성화 된 경우).
+- 사용자가 폼을 빠르게 제출 함
+- 클라이언트 IP 주소가 특정 기간 내에 너무 자주 양식을 전송 했습니다.
 
-이러한 조건을 확인 하기 위해는 `NoBot` 컨트롤 (모든 선택 사항) 이러한 특성이 필요 합니다.
+이러한 조건을 확인 하기 위해 `NoBot` 컨트롤에는 다음과 같은 특성이 필요 합니다 (모두 선택 사항).
 
-- `ResponseMinimumDelaySeconds` 최소한의 포스트백 간격 (초)
-- `CutoffWindowSeconds` 하나의 IP에서 포스트백에 측정 하는 시간 간격의 길이
-- `CutoffMaximumInstances` 최대 시간 간격 (초)
+- 다시 게시 사이의 최소 시간 (초)을 `ResponseMinimumDelaySeconds` 합니다.
+- 한 IP의 다시 게시를 측정 하는 `CutoffWindowSeconds` 시간 간격입니다.
+- 시간 간격 당 최대 시간 (초)을 `CutoffMaximumInstances` 합니다.
 
-다음 태그 요구는 적어도 2 초 포스트백 간에 경과 하 고 5 개만 포스트백을 가지는 작거나 30 초 간격 내에서:
+다음 태그는 다시 게시 사이에 최소 2 초가 경과 하 고 30 초 간격 내에 다시 게시를 5 개만 수행 하도록 요구 합니다.
 
 [!code-aspx[Main](fighting-bots-vb/samples/sample1.aspx)]
 
-다음 일반적인 방식으로 포함 해야 합니다 `ScriptManager` 페이지에서 ASP.NET AJAX library가 로드 하 고 컨트롤 도구 키트를 사용할 수 있도록 합니다.
+그런 다음 ASP.NET AJAX 라이브러리가 로드 되 고 Control Toolkit를 사용할 수 있도록 페이지에 `ScriptManager`를 포함 해야 합니다.
 
 [!code-aspx[Main](fighting-bots-vb/samples/sample2.aspx)]
 
-대부분의 검사 이후 `NoBot` 수행 하는 서버 쪽에서 발생이 유효성 검사의 결과 확인 해야 합니다. 호출 하 여 이렇게 `NoBot`의 `IsValid()` 메서드. 에 인수가 하나 (으로 `out` 매개 변수 /`ByRef` 매개 변수)가 형식의 `NoBotState`합니다. 확인이 실패 하는 경우 해당 문자열 표현 이유를 포함 하 고 `Valid` 그렇지 않은 경우. 다음 코드에 따라 메시지를 출력 `NoBot`의 결과:
+서버 쪽에서 대부분의 검사 `NoBot` 수행 되므로 이러한 유효성 검사의 결과를 확인 해야 합니다. `NoBot`의 `IsValid()` 메서드를 호출 하 여이 작업을 수행할 수 있습니다. `NoBotState`형식의 인수 하나 (`out` 매개 변수/`ByRef` 매개 변수)가 있습니다. 해당 문자열 표현에는 확인이 실패 한 이유가 포함 되 고, 그렇지 않으면 `Valid` 있습니다. 다음 코드는 `NoBot`결과에 따라 메시지를 출력 합니다.
 
 [!code-aspx[Main](fighting-bots-vb/samples/sample3.aspx)]
 
-마지막으로 전송할 폼 및 레이블 요소를 메시지를 출력 해야 하 고 완료!
+마지막으로 제출할 폼과 메시지를 출력 하는 label 요소가 필요 합니다.
 
 [!code-aspx[Main](fighting-bots-vb/samples/sample4.aspx)]
 
-이 스크립트를 실행 및 JavaScript를 비활성화 또는 처음 2 초 안에 양식을 제출 하거나 30 초 내에 7 번 양식을 제출, 오류 메시지가 표시 됩니다. 그러나이 컨트롤을 현명 하 게 사용, 사용자의 약 90 95% 활성화 하는 JavaScript가 사용자의 5 ~ 10% 실패는 `NoBot`의 테스트 합니다.
+이 스크립트를 실행 하 고 JavaScript를 비활성화 하거나 처음 2 초 이내에 양식을 제출 하거나 30 초 이내에 폼을 7 번 전송 하면 오류 메시지가 표시 됩니다. 그러나이 컨트롤은 약 90-95%의 사용자만 JavaScript를 활성화 했기 때문에이 컨트롤을 사용 하는 것이 좋습니다. 따라서 5-10%의 사용자는 `NoBot`테스트에 실패 합니다.
 
-[![이 오류 메시지는 봇 인해 발생할 수 있습니다.](fighting-bots-vb/_static/image2.png)](fighting-bots-vb/_static/image1.png)
+[이 오류 메시지 ![봇에 의해 발생 했을 수 있습니다.](fighting-bots-vb/_static/image2.png)](fighting-bots-vb/_static/image1.png)
 
-이 오류 메시지는 봇 인해 발생할 수 있습니다 ([클릭 하 여 큰 이미지 보기](fighting-bots-vb/_static/image3.png))
+이 오류 메시지는 bot로 인해 발생 했을 수 있습니다 ([전체 크기 이미지를 보려면 클릭](fighting-bots-vb/_static/image3.png)).
 
 > [!div class="step-by-step"]
 > [이전](fighting-bots-cs.md)

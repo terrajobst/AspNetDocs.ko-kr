@@ -8,12 +8,12 @@ ms.date: 01/16/2019
 ms.assetid: 8bf2c4fb-4ee5-4841-bfc2-03462c1f7a7a
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis
 msc.type: authoredcontent
-ms.openlocfilehash: c45003325832258466a787bc589bf40e844248a2
-ms.sourcegitcommit: 4b324a11131e38f920126066b94ff478aa9927f8
+ms.openlocfilehash: 738318cce442fdc5d58dd1e4c992d4941be2487e
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "70985851"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74591252"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-deploying-to-test"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 테스트에 배포
 
@@ -49,7 +49,7 @@ Visual Studio에서 웹 서버를 사용 하는 방법에 대 한 자세한 내�
 
 Contoso 대학 Visual Studio 시작 솔루션 및 프로젝트를 다운로드 하 여 설치 합니다. 이 솔루션에는 완료 된 자습서가 포함 되어 있습니다. 
 
-[시작 프로젝트 다운로드](http://go.microsoft.com/fwlink/p/?LinkId=282627)
+[시작 프로젝트 다운로드](https://go.microsoft.com/fwlink/p/?LinkId=282627)
 
 ## <a name="install-iis"></a>IIS 설치
 
@@ -91,7 +91,7 @@ IIS를 설치한 후 **Iis 관리자** 를 실행 하 여 .NET Framework 버전 
 
 3. **연결** 창에서 서버 노드를 확장 하 고 **응용 프로그램 풀**을 선택 합니다. 다음 그림과 같이 **DefaultAppPool** 이 .net framework 버전 4에 할당 된 경우 **응용 프로그램 풀** 창에서 다음 섹션으로 건너뜁니다.
 
-   ![Inetmgr_showing_4.0_app_pools](deploying-to-iis/_static/image5a.png)
+   ![Inetmgr_showing_4 0_app_pools](deploying-to-iis/_static/image5a.png)
 
 4. 응용 프로그램 풀이 두 개만 표시 되 고 둘 다 .NET Framework 2.0로 설정 된 경우 IIS에 ASP.NET 4를 설치 합니다.
 
@@ -109,7 +109,7 @@ IIS를 설치한 후 **Iis 관리자** 를 실행 하 여 .NET Framework 버전 
 
 7. **응용 프로그램 풀 편집** 대화 상자에서 **.net clr 버전** 을 **.net clr v 4.0.30319**로 변경 합니다. **확인**을 선택합니다.
 
-   ![Selecting_.NET_4_for_DefaultAppPool](deploying-to-iis/_static/image6a.png)
+   ![Selecting_ NET_4_for_DefaultAppPool](deploying-to-iis/_static/image6a.png)
 
 이제 웹 응용 프로그램을 IIS에 게시할 준비가 되었습니다. 그러나 먼저 테스트를 위한 데이터베이스를 만듭니다.
 
@@ -142,7 +142,7 @@ Visual Studio의 **보기** 메뉴에서 **서버 탐색기** (visual Web Develo
 
 **새 SQL Server 데이터베이스 만들기** 대화 상자에서 **서버 이름** 상자에 ".\SQLExpress"를 입력 하 고 **새 데이터베이스 이름** 상자에 "ContosoUniversity"을 입력 합니다. **확인**을 선택합니다.
 
-![Create aspnet-ContosoUniversity](deploying-to-iis/_static/image9.png)
+![Aspnet-ContosoUniversity 만들기](deploying-to-iis/_static/image9.png)
 
 동일한 절차에 따라 `ContosoUniversity`라는 새 SQL Server Express School 데이터베이스를 만듭니다.
 
@@ -174,11 +174,11 @@ Visual Studio에서 Contoso 대학 솔루션을 엽니다. 프로젝트 중 하�
 
 1. Visual Studio에서 이전에 만든 *Grant .sql* 파일을 엽니다.
 
-2. **연결**을 선택합니다. 
+2. **연결**을 선택 합니다. 
 
     ![연결 단추](deploying-to-iis/_static/image11.png)
 
-3. **서버에 연결** 대화 상자에서 **서버 이름**으로 *.\SQLExpress* 을 입력 합니다. **연결**을 선택합니다.
+3. **서버에 연결** 대화 상자에서 **서버 이름**으로 *.\SQLExpress* 을 입력 합니다. **연결**을 선택 합니다.
 
 4. 데이터베이스 드롭다운 목록에서 **ContosoUniversity**를 선택 합니다. **실행**을 선택 합니다. 
 
@@ -314,7 +314,7 @@ Visual Studio는 Entity Framework `DbContext` 클래스를 검색 하면 **데�
 
     테스트 게시 프로필을 사용 하는 경우이 변환은 환경 표시기를 "Test"로 설정 합니다. 배포 된 사이트에 "Contoso 대학" H1 제목 뒤에 "(테스트)"가 표시 됩니다.
 
-6. 파일을 저장하고 닫습니다.
+6. 파일을 저장한 후 닫습니다.
 
 7. *Web.config* 파일을 마우스 오른쪽 단추로 클릭 하 고 **변환 미리 보기** 를 선택 하 여 코딩 된 변환이 필요한 변경 내용을 생성 하는지 확인 합니다.
 
@@ -380,7 +380,7 @@ Visual Studio는 Entity Framework `DbContext` 클래스를 검색 하면 **데�
 
 이렇게 하면 배포 프로세스가 응용 프로그램의 콘텐츠를 올바른 위치 (배포 하지 않으려는 파일 제외)에 복사 하 고 배포 중에 IIS를 올바르게 구성 웹 배포 확인 됩니다. 다음 자습서에서는 아직 수행 되지 않은 배포 작업을 찾는 테스트를 하나 더 실행 합니다. *느릅나무 ah* 폴더에 대 한 폴더 사용 권한을 설정 합니다.
 
-## <a name="more-information"></a>자세한 정보
+## <a name="more-information"></a>추가 정보
 
 Visual Studio에서 IIS 또는 IIS Express를 실행 하는 방법에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
