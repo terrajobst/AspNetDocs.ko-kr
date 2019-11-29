@@ -1,91 +1,91 @@
 ---
 uid: web-forms/overview/data-access/displaying-data-with-the-datalist-and-repeater/formatting-the-datalist-and-repeater-based-upon-data-cs
-title: 데이터 (C#)를 기반으로 DataList 및 반복기 서식 지정 | Microsoft Docs
+title: 데이터에 따라 DataList 및 Repeater 서식 지정 (C#) | Microsoft Docs
 author: rick-anderson
-description: 이 자습서에서는 서식을에서는 서식 지정 함수를 사용 하 여 DataList 및 반복기 컨트롤의 모양을 지정 방법의 예제를 통해 단계별로...
+description: 이 자습서에서는 ...로 서식 지정 함수를 사용 하 여 DataList 및 Repeater 컨트롤의 모양을 지정 하는 방법에 대 한 예제를 단계별로 설명 합니다.
 ms.author: riande
 ms.date: 09/13/2006
 ms.assetid: 83e3d759-82b8-41e6-8d62-f0f4b3edec41
 msc.legacyurl: /web-forms/overview/data-access/displaying-data-with-the-datalist-and-repeater/formatting-the-datalist-and-repeater-based-upon-data-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 00ae512a23b9097d1077ae572b4e4377e322882f
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 68de3450ed97fc7bd0efb27e089d9db8e3e85fb0
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65108413"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74633194"
 ---
 # <a name="formatting-the-datalist-and-repeater-based-upon-data-c"></a>데이터를 기반으로 DataList 및 반복기 서식 지정(C#)
 
 [Scott Mitchell](https://twitter.com/ScottOnWriting)
 
-[샘플 앱을 다운로드](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_30_CS.exe) 또는 [PDF 다운로드](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/datatutorial30cs1.pdf)
+[샘플 앱 다운로드](https://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_30_CS.exe) 또는 [PDF 다운로드](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/datatutorial30cs1.pdf)
 
-> 이 자습서에서는 서식을에서는 템플릿 내에서 서식 지정 함수를 사용 하 여 또는 데이터 바인딩된 이벤트를 처리 하면 DataList 및 반복기 컨트롤의 모양을 지정 방법의 예제를 단계별로 실행 했습니다.
+> 이 자습서에서는 템플릿 내에서 형식 지정 함수를 사용 하거나 데이터 바인딩된 이벤트를 처리 하 여 DataList 및 Repeater 컨트롤의 모양을 지정 하는 방법에 대 한 예제를 단계별로 설명 합니다.
 
 ## <a name="introduction"></a>소개
 
-이전 자습서에서 보았듯이 DataList는 다양 한 해당 모양에 영향을 주는 스타일 관련 속성을 제공 합니다. DataList s에 기본 CSS 클래스를 할당 하는 방법을 살펴보았습니다 특히 `HeaderStyle`, `ItemStyle`를 `AlternatingItemStyle`, 및 `SelectedItemStyle` 속성입니다. DataList 이러한 네 가지 속성 외에 다른 스타일 관련 속성의 숫자와 같은 포함 `Font`, `ForeColor`를 `BackColor`, 및 `BorderWidth`, 등입니다. Repeater 컨트롤에는 모든 스타일 관련 속성이 없습니다. 이러한 스타일 설정은 Repeater가 템플릿에 태그 내에서 직접 수행 되어야 합니다.
+위의 자습서에서 살펴본 것 처럼 DataList는 모양에 영향을 주는 다양 한 스타일 관련 속성을 제공 합니다. 특히 DataList s `HeaderStyle`, `ItemStyle`, `AlternatingItemStyle`및 `SelectedItemStyle` 속성에 기본 CSS 클래스를 할당 하는 방법을 살펴보았습니다. 이러한 네 가지 속성 외에도 DataList에는 `Font`, `ForeColor`, `BackColor`, `BorderWidth`등의 여러 가지 다른 스타일 관련 속성이 포함 되어 있습니다. Repeater 컨트롤에는 스타일 관련 속성이 포함 되어 있지 않습니다. 이러한 스타일 설정은 Repeater 템플릿의 태그 내에서 직접 수행 해야 합니다.
 
-종종 하지만 데이터를 포맷 해야 하는 방법에 따라 달라 집니다 데이터 자체입니다. 예를 들어, 제품을 나열할 때 수 하고자 단종 된 경우 강조 표시 해야 할 수도 있으므로 밝은 회색 글꼴 색으로 제품 정보를 표시 합니다 `UnitsInStock` 값 이면 0입니다. 이전 자습서에서 보았듯이 GridView, DetailsView 및 FormView 해당 서식을 지정 해당 데이터를 기반으로 하는 두 가지 방법으로 제공 합니다.
+그러나 데이터의 형식을 지정 하는 방법은 데이터 자체에 따라 달라 집니다. 예를 들어 제품을 나열 하는 경우 제품 정보를 밝은 회색 글꼴 색으로 표시 하는 것이 좋습니다. 그렇지 않으면 0 인 경우 `UnitsInStock` 값을 강조 표시할 수 있습니다. 이전 자습서에서 살펴본 것 처럼 GridView, DetailsView 및 FormView는 데이터에 따라 모양을 지정 하는 두 가지 고유한 방법을 제공 합니다.
 
-- **`DataBound` 이벤트** 적절 한에 대 한 이벤트 처리기를 만듭니다 `DataBound` 데이터를 각 항목에 바인딩된 후 발생 하는 경우 (된 gridview는 `RowDataBound` 이벤트 DataList 및 반복기는 것은 `ItemDataBound`이벤트). 이벤트의 처리기를 바인딩된만 데이터를 검사할 수 있습니다 하 고 의사 결정을 서식 지정. 이 기법을 살펴보았습니다 합니다 [데이터를 기반으로 사용자 지정 서식 지정](../custom-formatting/custom-formatting-based-upon-data-cs.md) 자습서입니다.
-- **템플릿 함수를 서식 지정** FormView 컨트롤에서 템플릿이나 DetailsView 또는 GridView 컨트롤에서 TemplateFields 사용 하는 경우 ASP.NET 페이지가 코드 숨김 클래스, 비즈니스 논리 레이어 또는에 서식 지정 함수를 추가할 수 있습니다 웹 응용 프로그램에서 액세스할 수 있는 다른 클래스 라이브러리입니다. 이 서식 지정 함수는 임의 개수의 입력된 매개 변수를 수락할 수 있지만 템플릿에서 렌더링 하는 HTML을 반환 해야 합니다. 서식 지정 함수에서 먼저 검사 된 합니다 [GridView 컨트롤에서 TemplateFields 사용 하 여](../custom-formatting/using-templatefields-in-the-gridview-control-cs.md) 자습서입니다.
+- **`DataBound` 이벤트는** 데이터를 각 항목에 바인딩한 후에 발생 하는 적절 한 `DataBound` 이벤트에 대 한 이벤트 처리기를 만듭니다 .이 이벤트는 GridView가 `RowDataBound` 이벤트 였던 경우에 발생 합니다. DataList 및 Repeater는 `ItemDataBound` 이벤트입니다. 이 이벤트 처리기에서 방금 바인딩된 데이터를 검사 하 고 형식을 결정할 수 있습니다. 데이터 자습서에 [따라 사용자 지정 서식 지정](../custom-formatting/custom-formatting-based-upon-data-cs.md) 에서이 기법을 검토 했습니다.
+- **템플릿의 서식 지정 함수** DetailsView 또는 GridView 컨트롤에서 템플릿 필드를 사용할 때 또는 FormView 컨트롤의 템플릿에 서식 지정 함수를 추가할 수 있습니다. ASP.NET 페이지의 코드 숨겨진 클래스, 비즈니스 논리 계층 또는 웹 응용 프로그램에서 액세스할 수 있는 다른 클래스 라이브러리에 서식 함수를 추가할 수 있습니다. 이 서식 지정 함수는 임의의 수의 입력 매개 변수를 사용할 수 있지만 템플릿에서 렌더링할 HTML을 반환 해야 합니다. 서식 지정 함수는 [GridView 컨트롤 자습서의 템플릿 사용 필드](../custom-formatting/using-templatefields-in-the-gridview-control-cs.md) 에서 먼저 검사 되었습니다.
 
-이러한 기술을 서식 모두 DataList 및 반복기 컨트롤을 사용 하 여 사용할 수 있습니다. 이 자습서에서는 두 컨트롤에 대 한 두 가지 방법을 모두 사용 하는 예제를 단계별로 실행 했습니다.
+이러한 서식 지정 기법은 DataList 및 Repeater 컨트롤에서 사용할 수 있습니다. 이 자습서에서는 두 가지 방법을 모두 사용 하 여 예제를 단계별로 안내 합니다.
 
-## <a name="using-theitemdataboundevent-handler"></a>사용 하 여`ItemDataBound`이벤트 처리기
+## <a name="using-theitemdataboundevent-handler"></a>`ItemDataBound`이벤트 처리기 사용
 
-경우에 바인딩된 데이터가 DataList, 데이터 소스 컨트롤에서 또는 프로그래밍 방식으로 s 컨트롤에 데이터를 할당 하 여 `DataSource` 속성과 호출 해당 `DataBind()` 메서드, DataList의 `DataBinding` 이벤트가 발생 하면 데이터 원본 열거 및 각 데이터 레코드 DataList에 바인딩됩니다. 데이터 소스의 각 레코드에 대해 DataList 만듭니다는 [ `DataListItem` ](https://msdn.microsoft.com/library/system.web.ui.webcontrols.datalistitem.aspx) 되는 개체를 현재 레코드에 바인딩됩니다. 이 과정에서 DataList 두 이벤트를 발생 시킵니다.
+데이터 소스 컨트롤이 나 컨트롤 `DataSource` 속성에 데이터를 프로그래밍 방식으로 할당 하 고 해당 `DataBind()` 메서드를 호출 하 여 데이터를 DataList에 바인딩하면 DataList s `DataBinding` 이벤트가 발생 하 고, 데이터 소스가 열거 되며, 각 데이터 레코드가 DataList에 바인딩됩니다. 데이터 소스의 각 레코드에 대해 DataList는 [`DataListItem`](https://msdn.microsoft.com/library/system.web.ui.webcontrols.datalistitem.aspx) 개체를 만든 다음 현재 레코드에 바인딩됩니다. 이 과정에서 DataList는 다음과 같은 두 이벤트를 발생 시킵니다.
 
-- **`ItemCreated`** 후 발생 합니다 `DataListItem` 만들었습니다
-- **`ItemDataBound`** 현재 레코드에 바인딩된 후에 발생 합니다 `DataListItem`
+- `DataListItem`를 만든 후에 **`ItemCreated`** 발생 합니다.
+- 현재 레코드가 `DataListItem`에 바인딩된 후에 **`ItemDataBound`** 발생 합니다.
 
-다음 단계에는 DataList 컨트롤에 대 한 데이터 바인딩 프로세스를 간략하게 설명합니다.
+다음 단계에서는 DataList 컨트롤의 데이터 바인딩 프로세스를 간략하게 설명 합니다.
 
-1. S DataList [ `DataBinding` 이벤트](https://msdn.microsoft.com/library/system.web.ui.control.databinding.aspx) 발생 합니다.
-2. DataList에 바인딩된 데이터  
+1. DataList s [`DataBinding` 이벤트가](https://msdn.microsoft.com/library/system.web.ui.control.databinding.aspx) 발생 합니다.
+2. 데이터는 DataList에 바인딩됩니다.  
   
-   데이터 소스의 각 레코드에 대 한 
+   데이터 원본의 각 레코드에 대해 
 
-    1. 만들기는 `DataListItem` 개체
-    2. 실행 된 [ `ItemCreated` 이벤트](https://msdn.microsoft.com/library/system.web.ui.webcontrols.datalist.itemcreated.aspx)
-    3. 레코드를 바인딩하는 `DataListItem`
-    4. 실행 된 [ `ItemDataBound` 이벤트](https://msdn.microsoft.com/library/system.web.ui.webcontrols.datalist.itemdatabound.aspx)
-    5. 추가 된 `DataListItem` 에 `Items` 컬렉션
+    1. `DataListItem` 개체 만들기
+    2. [`ItemCreated` 이벤트](https://msdn.microsoft.com/library/system.web.ui.webcontrols.datalist.itemcreated.aspx) 를 발생 시킵니다.
+    3. 레코드를 `DataListItem`에 바인딩
+    4. [`ItemDataBound` 이벤트](https://msdn.microsoft.com/library/system.web.ui.webcontrols.datalist.itemdatabound.aspx) 를 발생 시킵니다.
+    5. `Items` 컬렉션에 `DataListItem` 추가
 
-Repeater 컨트롤 데이터 바인딩, 동일한 일련의 단계를 진행 합니다. 유일한 차이점은 대신 `DataListItem` 사용 하 여 만들어지는 경우 반복기 [ `RepeaterItem` ](https://msdn.microsoft.com/library/system.web.ui.webcontrols.repeateritem(VS.80).aspx)s입니다.
+Repeater 컨트롤에 데이터를 바인딩할 때 동일한 일련의 단계를 진행 합니다. 유일한 차이점은 `DataListItem` 인스턴스가 생성 되는 대신, Repeater는 [`RepeaterItem`](https://msdn.microsoft.com/library/system.web.ui.webcontrols.repeateritem(VS.80).aspx)s를 사용 한다는 것입니다.
 
 > [!NOTE]
-> 예리한 독자 GridView 데이터에 바인딩될 때 DataList 및 반복기와 데이터에 바인딩되는 경우 지정 전까지 대기 하는 단계의 순서 간에 약간의 변칙을 알 수 있습니다. GridView 데이터 바인딩 프로세스 비상 끝날 때 발생 합니다 `DataBound` 이벤트 DataList 아니고 반복기 컨트롤에서 이러한 이벤트를 포함 하는 단, 합니다. DataList 및 반복기 컨트롤을 전처리 및 후 수준 이벤트 처리기 패턴 했습니다 보편화 전에 ASP.NET 1.x 기간에서 다시 만든 때문입니다.
+> Astute reader는 데이터에 데이터에 바인딩될 때 DataList 및 Repeater가 데이터에 바인딩될 때 수행 되는 단계 시퀀스 사이에 약간의 비정상을 발견할 수 있습니다. 데이터 바인딩 프로세스의 비상 끝에서 GridView는 `DataBound` 이벤트를 발생 시킵니다. 그러나 DataList 또는 Repeater 컨트롤에는 이러한 이벤트가 없습니다. 이는 ASP.NET 1. x 시간 안에 DataList 및 Repeater 컨트롤이 다시 만들어졌으므로 사전 및 사후 수준 이벤트 처리기 패턴이 보편화 되기 때문입니다.
 
-GridView를 사용 하 여 데이터를 기반으로 하는 서식 지정 하는 한 가지 옵션에 대 한 이벤트 처리기를 만들 때 처럼는 `ItemDataBound` 이벤트입니다. 이 이벤트 처리기는 바인딩할 바로 있었습니다 하는 데이터를 검사 합니다 `DataListItem` 또는 `RepeaterItem` 필요에 따라 컨트롤의 서식에 영향을 줍니다.
+GridView와 마찬가지로 데이터를 기반으로 서식을 지정 하는 한 가지 옵션은 `ItemDataBound` 이벤트에 대 한 이벤트 처리기를 만드는 것입니다. 이 이벤트 처리기는 `DataListItem` 또는 `RepeaterItem`에만 바인딩된 데이터를 검사 하 고 필요에 따라 컨트롤의 서식에 영향을 줍니다.
 
-DataList 컨트롤에 대 한 변경 내용 서식 지정에 사용 하 여 전체 항목을 구현할 수 있습니다 합니다 `DataListItem` 스타일 관련 속성을 표준을 포함 하는 `Font`를 `ForeColor`, `BackColor`, `CssClass`등입니다. DataList의 템플릿 내에서 특정 웹 컨트롤의 서식에 영향을 주는를 프로그래밍 방식으로 액세스 하 고 해당 웹 컨트롤의 스타일을 수정 해야 합니다. 이 다시 수행 하는 방법에 살펴보았습니다 합니다 *데이터를 기반으로 사용자 지정 서식 지정* 자습서입니다. Repeater 컨트롤을 같은 합니다 `RepeaterItem` 클래스 없는 스타일 관련 속성에는 모든 스타일 관련 변경 내용이 있으므로 `RepeaterItem` 에 `ItemDataBound` 이벤트 처리기를 프로그래밍 방식으로 액세스 하 고 내에서 웹 컨트롤을 업데이트 하 여 수행 해야 합니다 템플릿입니다.
+DataList 컨트롤의 경우 표준 `Font`, `ForeColor`, `BackColor`, `CssClass`등을 포함 하는 `DataListItem`의 스타일 관련 속성을 사용 하 여 전체 항목에 대 한 서식 지정 변경을 구현할 수 있습니다. DataList의 템플릿 내에서 특정 웹 컨트롤의 형식에 영향을 주려면 이러한 웹 컨트롤의 스타일을 프로그래밍 방식으로 액세스 하 고 수정 해야 합니다. 데이터 자습서에 *따라 사용자 지정 서식 지정* 에서이를 다시 수행 하는 방법을 살펴보았습니다. Repeater 컨트롤과 마찬가지로 `RepeaterItem` 클래스에는 스타일 관련 속성이 없습니다. 따라서 `ItemDataBound` 이벤트 처리기의 `RepeaterItem`에 대 한 모든 스타일 관련 변경 내용은 프로그래밍 방식으로 템플릿 내에서 웹 컨트롤에 액세스 하 고 업데이트 하 여 수행 해야 합니다.
 
-이후는 `ItemDataBound` DataList 및 반복기는 거의 동일한 예에서 DataList를 사용 하 여 중점적 기술 형식입니다.
+DataList 및 Repeater의 `ItemDataBound` 서식 지정 기법은 거의 동일 하므로 예제에서는 DataList를 사용 하는 데 중점을 둡니다.
 
-## <a name="step-1-displaying-product-information-in-the-datalist"></a>1단계: DataList에서 제품 정보를 표시합니다.
+## <a name="step-1-displaying-product-information-in-the-datalist"></a>1 단계: DataList에서 제품 정보 표시
 
-서식 지정 걱정을 먼저 let s DataList를 사용 하 여 제품 정보를 표시 하는 페이지를 만듭니다. 에 [이전 자습서](displaying-data-with-the-datalist-and-repeater-controls-cs.md) DataList를 만들었습니다 인 `ItemTemplate` 각 s 제품 이름, 범주, 공급자, 단위 및 가격 당 수량을 표시 합니다. 이 자습서에서는이 기능을 여기서 반복 s 수 있습니다. 이렇게 하려면 DataList 및부터 해당 ObjectDataSource 하거나 다시 만들 수 있습니다 또는 이전 자습서에서 만든 페이지에서 이러한 컨트롤을 복사할 수 있습니다 (`Basics.aspx`)이이 자습서에 대 한 페이지에 붙여 넣을 (`Formatting.aspx`).
+서식 지정에 대해 걱정 하기 전에 먼저 DataList를 사용 하 여 제품 정보를 표시 하는 페이지를 만들어 보겠습니다. [이전 자습서](displaying-data-with-the-datalist-and-repeater-controls-cs.md) 에서는 `ItemTemplate` 각 제품 이름, 범주, 공급자, 단위당 수량 및 가격을 표시 하는 DataList를 만들었습니다. 이 자습서의 여기에서이 기능을 반복 해 보세요. 이렇게 하려면 DataList와 ObjectDataSource를 처음부터 다시 만들거나 이전 자습서에서 만든 페이지 (`Basics.aspx`)에서 해당 컨트롤을 복사 하 여이 자습서의 페이지 (`Formatting.aspx`)에 붙여 넣을 수 있습니다.
 
-DataList 및 ObjectDataSource 기능을 복제 한 후 `Basics.aspx` 에 `Formatting.aspx`, s DataList를 변경 하려면 잠시 `ID` 속성을 `DataList1` 하는 보다 자세한 `ItemDataBoundFormattingExample`합니다. 다음으로, 브라우저에서 DataList를 봅니다. 그림 1에서 알 수 있듯이, 서식 지정 각 제품 간의 점만 배경색 교대로 나타납니다.
+`Basics.aspx`에서 DataList 및 ObjectDataSource 기능을 `Formatting.aspx`로 복제 한 후에는 `ID` 속성을 `DataList1`에서 더 설명적인 `ItemDataBoundFormattingExample`으로 변경 합니다. 다음으로, 브라우저에서 DataList를 봅니다. 그림 1에 나와 있는 것 처럼 각 제품의 형식 차이는 배경색을 대체 하기 위한 것입니다.
 
-[![제품은 DataList 컨트롤에 나열 됩니다.](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image2.png)](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image1.png)
+[![는 제품이 DataList 컨트롤에 나열 됩니다.](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image2.png)](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image1.png)
 
-**그림 1**: 제품 DataList 컨트롤에 나열 됩니다 ([클릭 하 여 큰 이미지 보기](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image3.png))
+**그림 1**:이 제품은 DataList 컨트롤 ([전체 크기 이미지를 보려면 클릭](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image3.png))에 나열 되어 있습니다.
 
-이 자습서에서는 s $20.00 보다 낮은 가격으로 모든 제품에는 해당 이름을 모두 있고 단위 가격 노란색으로 강조 표시 되도록 DataList 서식을 지정 하도록 합니다.
+이 자습서에서는 가격이 $20.00 미만인 제품의 이름과 단가가 모두 노란색으로 강조 표시 되도록 DataList의 형식을 지정 합니다.
 
-## <a name="step-2-programmatically-determining-the-value-of-the-data-in-the-itemdatabound-event-handler"></a>2단계: 프로그래밍 방식으로 ItemDataBound 이벤트 처리기에서 데이터의 값을 결정 하기
+## <a name="step-2-programmatically-determining-the-value-of-the-data-in-the-itemdatabound-event-handler"></a>2 단계: ItemDataBound 바인딩된 이벤트 처리기에서 프로그래밍 방식으로 데이터 값 확인
 
-$20.00는 아래 가격을 사용 하 여 해당 제품에만 적용 되는 사용자 지정 서식이에서는 각 제품의 가격을 결정할 수 있어야 합니다. DataList에 데이터 바인딩할 경우 DataList 열거 데이터 원본에서 레코드를 만들고, 각 레코드에 대 한는 `DataListItem` 인스턴스를 바인딩 데이터 소스 레코드는 `DataListItem`합니다. 특정 레코드 s 후 데이터에 바인딩된 현재 `DataListItem` DataList의 개체 `ItemDataBound` 이벤트가 발생 합니다. 현재 데이터 값을 검사 하려면이 이벤트에 대 한 이벤트 처리기를 만들 수 있습니다 `DataListItem` 및 해당 값을 기준으로 서식 지정 필요한 경우 변경 합니다.
+가격이 $20.00 미만 인 제품만 사용자 지정 서식 지정이 적용 되므로 각 제품의 가격을 확인할 수 있어야 합니다. DataList에 데이터를 바인딩할 때 DataList는 데이터 원본에 있는 레코드를 열거 하 고 각 레코드에 대해 `DataListItem` 인스턴스를 만들어 데이터 원본 레코드를 `DataListItem`에 바인딩합니다. 특정 레코드의 데이터가 현재 `DataListItem` 개체에 바인딩된 후에는 DataList s `ItemDataBound` 이벤트가 발생 합니다. 이 이벤트에 대 한 이벤트 처리기를 만들어 현재 `DataListItem`의 데이터 값을 검사 하 고, 이러한 값에 따라 형식 변경을 수행 하는 데 필요한 값을 확인할 수 있습니다.
 
-만들기는 `ItemDataBound` DataList에 대 한 이벤트 다음 코드를 추가 합니다.
+DataList에 대 한 `ItemDataBound` 이벤트를 만들고 다음 코드를 추가 합니다.
 
 [!code-csharp[Main](formatting-the-datalist-and-repeater-based-upon-data-cs/samples/sample1.cs)]
 
-개념 및 DataList s 뒤 의미 체계를 while `ItemDataBound` 이벤트 처리기는 GridView s에서 사용 하는 것과 동일 `RowDataBound` 이벤트 처리기는 *데이터를 기반으로 사용자 지정 서식 지정* 자습서에서는 구문을 다릅니다 약간 있습니다. 경우는 `ItemDataBound` 이벤트가 발생 합니다 `DataListItem` 만 데이터에 바인딩된을 통해 해당 이벤트 처리기에 전달 됩니다 `e.Item` (대신 `e.Row`GridView s와 마찬가지로, `RowDataBound` 이벤트 처리기). S DataList `ItemDataBound` 이벤트 처리기에 대 한 발생 *각* 행이 머리글 행을 바닥글 행 및 행 구분 기호를 포함 하 여 DataList를 추가 합니다. 그러나 제품 정보를만 데이터 행에 바인딩되어 있습니다. 따라서 사용 하는 경우는 `ItemDataBound` DataList에 바인딩된 이벤트 데이터 검사를 먼저 확인 해야 하는 데이터 항목을 사용 하는 다시 했습니다. 이 확인 하 여 수행할 수 있습니다 합니다 `DataListItem` s [ `ItemType` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.datalistitem.itemtype.aspx), 중 하나일 수 있습니다 하는 [다음 8 개 값](https://msdn.microsoft.com/library/system.web.ui.webcontrols.listitemtype.aspx):
+DataList s `ItemDataBound` 이벤트 처리기의 개념 및 의미 체계는 데이터 자습서에 *따라 사용자 지정 서식 지정* 에서 GridView s `RowDataBound` 이벤트 처리기에서 사용 하는 것과 동일 하지만 구문은 약간 다릅니다. `ItemDataBound` 이벤트가 발생 하면 데이터에 바인딩되는 `DataListItem` `e.Item`를 통해 해당 이벤트 처리기로 전달 됩니다 `e.Row`(예를 들어, GridView s `RowDataBound` 이벤트 처리기와 마찬가지로). DataList s `ItemDataBound` 이벤트 처리기는 머리글 행, 바닥글 행 및 구분 기호 행을 포함 하 여 DataList에 추가 된 *각* 행에 대해 발생 합니다. 그러나 제품 정보는 데이터 행에만 바인딩됩니다. 따라서 `ItemDataBound` 이벤트를 사용 하 여 DataList에 바인딩된 데이터를 검사 하는 경우 먼저 데이터 항목을 다시 사용 하 고 있는지 확인 해야 합니다. 이 작업을 수행 하려면 [다음 8 개 값](https://msdn.microsoft.com/library/system.web.ui.webcontrols.listitemtype.aspx)중 하나를 사용할 수 있는 `DataListItem` s [`ItemType` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.datalistitem.itemtype.aspx)을 확인 하면 됩니다.
 
 - `AlternatingItem`
 - `EditItem`
@@ -96,92 +96,92 @@ $20.00는 아래 가격을 사용 하 여 해당 제품에만 적용 되는 사�
 - `SelectedItem`
 - `Separator`
 
-둘 다 `Item` 고 `AlternatingItem``DataListItem`의 구성 DataList의 데이터 항목입니다. 작업 다시 가정 하는 것을 `Item` 또는 `AlternatingItem`, 실제 액세스 `ProductsRow` 현재 바인딩된 인스턴스 `DataListItem`합니다. 합니다 `DataListItem` s [ `DataItem` 속성](https://msdn.microsoft.com/system.web.ui.webcontrols.datalistitem.dataitem.aspx) 에 대 한 참조를 포함 합니다 `DataRowView` 개체입니다 `Row` 속성은 실제에 대 한 참조를 제공 `ProductsRow` 개체입니다.
+`Item`와 `AlternatingItem``DataListItem`는 모두 DataList s 데이터 항목을 구성을 합니다. `Item` 또는 `AlternatingItem`를 사용 하 여 작업을 다시 수행 한다고 가정 하 고 현재 `DataListItem`에 바인딩된 실제 `ProductsRow` 인스턴스에 액세스 합니다. `DataListItem` s [`DataItem` 속성](https://msdn.microsoft.com/system.web.ui.webcontrols.datalistitem.dataitem.aspx) 에는 `DataRowView` 개체에 대 한 참조가 포함 되어 있으며, 해당 `Row` 속성은 실제 `ProductsRow` 개체에 대 한 참조를 제공 합니다.
 
-다음으로 확인 합니다 `ProductsRow` 인스턴스의 `UnitPrice` 속성입니다. S 제품 이므로 `UnitPrice` 필드를 사용 하면 `NULL` 값에 액세스 하기 전에 `UnitPrice` 속성에서는 먼저 확인 해야 있는지를 `NULL` 를 사용 하 여 값를 `IsUnitPriceNull()` 메서드. 경우는 `UnitPrice` 값이 아닙니다 `NULL`, 하 고 확인 하 고 $20.00 보다 작거나. $20.00 실제로 아래에 있는 경우 다음 사용자 지정 서식을 적용 해야 합니다.
+다음으로 `ProductsRow` 인스턴스 `UnitPrice` 속성을 확인 합니다. Products 테이블 s `UnitPrice` 필드는 `NULL` 값을 허용 하므로 `UnitPrice` 속성에 액세스 하기 전에 먼저 `IsUnitPriceNull()` 메서드를 사용 하 여 `NULL` 값이 있는지 확인 해야 합니다. `UnitPrice` 값이 `NULL`되지 않은 경우 $20.00 보다 작음을 확인 합니다. 실제로 $20.00 아래에 있는 경우 사용자 지정 서식 지정을 적용 해야 합니다.
 
-## <a name="step-3-highlighting-the-product-s-name-and-price"></a>3단계: 가격 및 제품 이름을 강조 표시
+## <a name="step-3-highlighting-the-product-s-name-and-price"></a>3 단계: 제품 이름 및 가격 강조 표시
 
-S 제품 가격 20.00 달러 임을 알고 있으므로에 이름과 가격을 강조 표시 합니다. 이렇게 하려면 해야 먼저 프로그래밍 방식으로 참조에서 Label 컨트롤은 `ItemTemplate`의 제품 이름 및 가격을 표시 하는 합니다. 다음으로, 노란색 배경이 표시 하도록 해야 합니다. 이 서식 지정 정보를 직접 레이블을 수정 하 여 적용할 수 있습니다 `BackColor` 속성 (`LabelID.BackColor = Color.Yellow`); 이상적으로 그러나 연계 스타일 시트를 통해 모든 표시와 관련 된 문제를 표현 되어야 합니다. 사실, 스타일 시트에 정의 된 원하는 형식 지정을 제공 하는 이미 보유 `Styles.css`  -  `AffordablePriceEmphasis`, 생성 되어에서 설명 하는 합니다 *데이터를 기반으로 사용자 지정 서식 지정* 자습서.
+제품 가격이 $20.00 미만 이라는 것을 확인 한 후에는 이름 및 가격을 강조 표시 하기만 하면 됩니다. 이를 위해 먼저 제품 이름 및 가격을 표시 하는 `ItemTemplate`에서 레이블 컨트롤을 프로그래밍 방식으로 참조 해야 합니다. 다음에는 노란색 배경을 표시 해야 합니다. 이러한 서식 지정 정보는`LabelID.BackColor = Color.Yellow`(레이블 `BackColor` 속성)를 직접 수정 하 여 적용할 수 있습니다. 하지만 모든 표시 관련 문제는 연계 스타일 시트를 통해 표현 해야 합니다. 실제로는 `Styles.css` - `AffordablePriceEmphasis`에 정의 된 원하는 서식을 제공 하는 스타일 시트를 이미 사용 하 고 있습니다 .이 스타일 시트는 *데이터 자습서에 따라 사용자 지정 서식 지정* 에서 작성 및 설명 합니다.
 
-서식 지정을 적용 하려면 두 Label 웹 컨트롤을 설정 하기만 `CssClass` 속성을 `AffordablePriceEmphasis`다음 코드 에서처럼:
+서식 지정을 적용 하려면 다음 코드에 표시 된 것 처럼 두 개의 Label 웹 컨트롤 `CssClass` 속성을 `AffordablePriceEmphasis`로 설정 하면 됩니다.
 
 [!code-csharp[Main](formatting-the-datalist-and-repeater-based-upon-data-cs/samples/sample2.cs)]
 
-사용 하 여 합니다 `ItemDataBound` 다시 확인을 완료 하는 이벤트 처리기는 `Formatting.aspx` 브라우저에서 페이지입니다. 그림 2에서 알 수 있듯이, 해당 이름 및 강조 표시 된 가격은 $20.00 아래 가격을 사용 하 여 해당 제품에 있습니다.
+`ItemDataBound` 이벤트 처리기가 완료 되 면 브라우저에서 `Formatting.aspx` 페이지를 다시 방문 합니다. 그림 2에 나와 있는 것 처럼 가격이 $20.00 인 제품의 이름과 가격은 모두 강조 표시 됩니다.
 
-[![이러한 제품 보다 $20.00 강조 표시 됩니다.](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image5.png)](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image4.png)
+[$20.00 미만의 제품이 강조 표시 된 ![](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image5.png)](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image4.png)
 
-**그림 2**: 이러한 제품 보다 $20.00 강조 표시 됩니다 ([클릭 하 여 큰 이미지 보기](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image6.png))
+**그림 2**: $20.00 미만의 제품이 강조 표시 됨 ([전체 크기 이미지를 보려면 클릭](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image6.png))
 
 > [!NOTE]
-> DataList를 HTML로 렌더링 됩니다 때문 `<table>`, 해당 `DataListItem` 인스턴스 전체 항목을 특정 스타일을 적용 하려면 설정할 수 있는 스타일 관련 속성을 가집니다. 예를 들어 드리고자 합니다 *전체* 가격은 20.00 달러를 때 노란색 항목, 수로 교체 했습니다 레이블을 참조 하는 코드를 설정 및 해당 `CssClass` 코드의 다음 줄을 사용 하 여 속성: `e.Item.CssClass = "AffordablePriceEmphasis"` (그림 3 참조).
+> DataList는 HTML `<table>`렌더링 되므로 해당 `DataListItem` 인스턴스에는 전체 항목에 특정 스타일을 적용 하기 위해 설정할 수 있는 스타일 관련 속성이 있습니다. 예를 들어 가격이 $20.00 미만이 면 *전체* 항목을 강조 표시 하려는 경우 레이블을 참조 하는 코드를 대체 하 고 `CssClass` 속성을 다음 코드 줄로 설정할 수 있습니다. `e.Item.CssClass = "AffordablePriceEmphasis"` (그림 3 참조).
 
-그러나 `RepeaterItem` don t Repeater 컨트롤을 구성 하는 이러한 수준의 스타일 속성을 제공 합니다. 따라서 반복기에는 사용자 지정 서식을 적용 그림 2에서 수행한 것 처럼 반복기의 템플릿 내에서 웹 컨트롤에 스타일 속성의 응용 프로그램이 필요 합니다.
+그러나 Repeater 컨트롤을 구성 하는 `RepeaterItem`는 이러한 스타일 수준 속성을 제공 하지 않습니다. 따라서 사용자 지정 서식을 Repeater에 적용 하려면 그림 2에서 했던 것 처럼 Repeater의 템플릿 내에서 웹 컨트롤에 대 한 스타일 속성의 응용 프로그램이 필요 합니다.
 
-[![전체 제품 항목이 $20.00 아래에서 제품에 대 한 강조 표시](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image8.png)](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image7.png)
+[![$20.00 아래의 제품에 대해 전체 제품 항목이 강조 표시 됩니다.](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image8.png)](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image7.png)
 
-**그림 3**: $20.00 아래에서 제품에 대 한 전체 제품 항목 강조 표시 됩니다 ([클릭 하 여 큰 이미지 보기](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image9.png))
+**그림 3**: $20.00의 제품에 대 한 전체 제품 항목 강조 표시 ([전체 크기 이미지를 보려면 클릭](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image9.png))
 
-## <a name="using-formatting-functions-from-within-the-template"></a>템플릿 내에서 서식 지정 함수를 사용 하 여
+## <a name="using-formatting-functions-from-within-the-template"></a>템플릿 내에서 서식 함수 사용
 
-에 *GridView 컨트롤에서 TemplateFields 사용 하 여* GridView s 개의 행에 바인딩된 자습서에서 데이터에 기반한 사용자 지정 서식을 적용 하려면 GridView templatefield로 내에서 서식 지정 함수를 사용 하는 방법에 살펴보았습니다. 서식 지정 함수는 서식 파일에서 호출할 수 있으며 해당 위치에 내보낼 HTML을 반환 하는 메서드. 서식 지정 함수는 ASP.NET 페이지의 코드 숨김 클래스에 있을 수 있습니다 또는 있는 클래스 파일을 중앙 집중화할 수 있습니다는 `App_Code` 폴더 또는 별도 클래스 라이브러리 프로젝트. ASP.NET 페이지의 코드 숨김 클래스 외부에서 서식 지정 함수를 이동 하는 것은 여러 ASP.NET 페이지 또는 다른 ASP.NET 웹 응용 프로그램에서 동일한 서식 지정 기능을 사용 하려는 경우에 적합 합니다.
+Gridview *컨트롤의 템플릿 필드 사용* 자습서에서는 gridview templatefield로 변환 내에서 서식 함수를 사용 하 여 gridview의 행에 바인딩된 데이터에 따라 사용자 지정 서식을 적용 하는 방법을 살펴보았습니다. 서식 지정 함수는 템플릿에서 호출할 수 있는 메서드 이며 그 자리에 내보낼 HTML을 반환 합니다. 서식 지정 함수는 ASP.NET 페이지의 코드 숨김이 클래스에 상주할 수도 있고, `App_Code` 폴더나 별도의 클래스 라이브러리 프로젝트에 있는 클래스 파일에 중앙 집중화 될 수도 있습니다. 여러 ASP.NET 페이지 또는 다른 ASP.NET 웹 응용 프로그램에서 동일한 서식 지정 함수를 사용 하도록 계획 하는 경우 ASP.NET 페이지의 코드 숨김으로 서식 지정 함수를 이동 하는 것이 적합 합니다.
 
-서식 지정 함수를 보여 주기 위해 s 수 있는 경우 제품의 이름 옆에 있는 [지원 되지 않는] 텍스트를 포함 하는 제품 정보를 해당 s 중단 합니다. 또한 let s가 가격 강조 표시 된 노란색 경우 해당 $20.00 보다 작거나 (에서 수행한 것 처럼는 `ItemDataBound` 이벤트 처리기 예제) 가격은 $20.00 또는 더 높은, s에 실제 가격을 표시 하지 이지만 가격 견적에 대 한 텍스트 하세요를 호출 하는 대신 하는 경우. 그림 4에 적용 되는 이러한 서식 지정 규칙을 사용 하 여 나열 하는 제품의 스크린 샷을 보여 줍니다.
+서식 지정 함수를 보여 주기 위해 제품 정보에 제품 이름 옆에 있는 [중단] 텍스트 (단종 된 텍스트)를 포함 하도록 합니다. 또한 `ItemDataBound` 이벤트 처리기 예제에서와 같이 $20.00 보다 작은 경우에는 가격이 노란색으로 강조 표시 되도록 합니다. 가격이 $20.00 이상인 경우에는를 사용 하 여 실제 가격을 표시 하지 않고 텍스트 대신 가격 견적에 대해를 호출 해 보세요. 그림 4에서는 이러한 서식 규칙이 적용 된 제품의 스크린샷을 보여 줍니다.
 
-[![비용이 많이 드는 제품에 대 한 가격을 가격 견적에 대 한 호출 하십시오 텍스트로 바뀝니다.](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image11.png)](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image10.png)
+[비용이 많이 드는 제품에 대 한 ![가격은 텍스트로 바뀌고 가격 견적에 대해를 호출 하세요.](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image11.png)](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image10.png)
 
-**그림 4**: 비용이 많이 드는 제품에 대 한 가격을 가격 견적에 대 한 호출 하십시오 텍스트로 바뀝니다 ([클릭 하 여 큰 이미지 보기](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image12.png))
+**그림 4**: 비용이 많이 드는 제품의 경우 가격은 텍스트로 바뀌고 통화에 대해를 호출 하세요 ([전체 크기 이미지를 보려면 클릭](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image12.png)).
 
-## <a name="step-1-create-the-formatting-functions"></a>1단계: 서식 지정 함수 만들기
+## <a name="step-1-create-the-formatting-functions"></a>1 단계: 서식 지정 함수 만들기
 
-이 예제에서는 두 가지 서식 지정, 필요한 경우 [DISCONTINUED], 텍스트와 함께 제품 이름을 표시 하는 함수와 다른 해야 하는 경우 강조 표시 된 가격을 표시 하는 대 한이 s 보다 작은지 $20.00, 또는 텍스트가 고 그렇지 가격 견적에 대 한 호출 하세요. ASP.NET 페이지가 코드 숨김 클래스에서 이러한 함수를 만들고 이름을 s `DisplayProductNameAndDiscontinuedStatus` 고 `DisplayPrice`입니다. 두 메서드를 문자열로 렌더링 하는 HTML을 반환 해야 하며 둘 다 표시 해야 `Protected` (또는 `Public`) 하려면 ASP.NET 페이지 s 선언적 구문 부분에서 호출할 수 있습니다. 이러한 두 가지 방법에 대 한 코드는 다음과 같습니다.
+이 예제에서는 두 가지 형식 지정 함수를 사용 합니다. 하나는 [단종 됨] 텍스트와 함께 제품 이름을 표시 하 고, 필요한 경우에는 강조 표시 된 가격이 $20.00 보다 작은 경우에는 강조 표시 된 가격을 표시 하 고, 그렇지 않은 경우에는를 호출 하 여 해당 하는 경우에는를 호출 하세요 ASP.NET 페이지의 코드 숨김이 클래스에서 이러한 함수를 만들고 `DisplayProductNameAndDiscontinuedStatus` 하 고 `DisplayPrice`이름을 지정 합니다. 두 메서드는 모두 문자열로 렌더링할 HTML을 반환 해야 하며, ASP.NET 페이지의 선언적 구문 부분에서 호출 하기 위해 둘 다 `Protected` (또는 `Public`)로 표시 되어야 합니다. 이러한 두 메서드의 코드는 다음과 같습니다.
 
 [!code-csharp[Main](formatting-the-datalist-and-repeater-based-upon-data-cs/samples/sample3.cs)]
 
-`DisplayProductNameAndDiscontinuedStatus` 의 값을 허용 하는 메서드를 `productName` 및 `discontinued` 반면 스칼라 값으로 데이터 필드를 `DisplayPrice` 메서드에서 `ProductsRow` 인스턴스 (아닌 `unitPrice` 스칼라 값). 어느 방법이 든 작동 합니다. 그러나 데이터베이스를 포함할 수 있는 스칼라 값을 사용 하 여 서식 지정 함수가 작동 하는지 `NULL` 값 (같은 `UnitPrice`; 모두 `ProductName` 나 `Discontinued` 허용 `NULL` 값), 특별 한 주의 해야 이러한 처리 스칼라 입력 합니다.
+`DisplayProductNameAndDiscontinuedStatus` 메서드는 `productName` 및 `discontinued` 데이터 필드의 값을 스칼라 값으로 수락 하는 반면 `DisplayPrice` 메서드는 `ProductsRow` 스칼라 값이 아닌 `unitPrice` 인스턴스를 허용 합니다. 어느 방법이 든 작동 합니다. 그러나 형식 지정 함수가 데이터베이스 `NULL` 값을 포함할 수 있는 스칼라 값을 사용 하는 경우 (예: `UnitPrice`, `ProductName` 또는 `Discontinued` `NULL` 값을 허용 하지 않음) 이러한 스칼라 입력을 처리할 때 특별히 주의 해야 합니다.
 
-특히 입력된 매개 변수 형식 이어야 합니다 `Object` 들어오는 값이 될 수는 `DBNull` 예상된 데이터 형식 대신 인스턴스. 들어오는 값 데이터베이스 인지 여부를 결정 하는 검사가 해야 수행 하는 또한 `NULL` 값입니다. 즉, 원하는 경우는 `DisplayPrice` d에서는 스칼라 값으로 가격을 적용할 메서드를 다음 코드를 사용 해야 합니다.:
+특히 들어오는 값은 필요한 데이터 형식이 아닌 `DBNull` 인스턴스일 수 있으므로 입력 매개 변수는 `Object` 형식 이어야 합니다. 또한 들어오는 값이 데이터베이스 `NULL` 값 인지 여부를 확인 하는 검사를 수행 해야 합니다. 즉, `DisplayPrice` 메서드를 사용 하 여 가격을 스칼라 값으로 적용 하려는 경우에는 다음 코드를 사용 해야 합니다.
 
 [!code-csharp[Main](formatting-the-datalist-and-repeater-based-upon-data-cs/samples/sample4.cs)]
 
-합니다 `unitPrice` 입력된 매개 변수는 형식 `Object` 및 경우를 정확 하 게 수정 된 조건문 `unitPrice` 는 `DBNull` 여부입니다. 또한 이후 합니다 `unitPrice` 입력된 매개 변수로 전달 됩니다는 `Object`, 10 진수 값으로 캐스팅 되어야 합니다.
+`unitPrice` 입력 매개 변수는 `Object` 형식이 며 `unitPrice` `DBNull` 인지 여부를 확인 하도록 조건문을 수정 합니다. 또한 `unitPrice` 입력 매개 변수는 `Object`으로 전달 되기 때문에 10 진수 값으로 캐스팅 해야 합니다.
 
-## <a name="step-2-calling-the-formatting-function-from-the-datalist-s-itemtemplate"></a>2단계: DataList의 ItemTemplate에서 서식 지정 함수를 호출합니다.
+## <a name="step-2-calling-the-formatting-function-from-the-datalist-s-itemtemplate"></a>2 단계: DataList s ItemTemplate에서 형식 지정 함수 호출
 
-ASP.NET 페이지가 코드 숨김 클래스에 추가 하는 서식 지정 함수를 사용 하 여에 이러한 서식 s DataList에서 함수를 호출 하 `ItemTemplate`합니다. 템플릿에서 서식 지정 함수를 호출 하려면 데이터 바인딩 구문 내에서 함수 호출을 배치:
+ASP.NET page s의 코드 숨김이 클래스에 서식 지정 함수를 추가 하면 DataList s `ItemTemplate`에서 이러한 형식 지정 함수를 호출 하는 것만 남았습니다. 템플릿에서 서식 함수를 호출 하려면 데이터 바인딩 구문 내에 함수 호출을 추가 합니다.
 
 [!code-aspx[Main](formatting-the-datalist-and-repeater-based-upon-data-cs/samples/sample5.aspx)]
 
-DataList s에서에서 `ItemTemplate` 는 `ProductNameLabel` Label 웹 컨트롤 현재 이름을 표시 하는 제품 s 할당 하 여 해당 `Text` 결과 속성의 `<%# Eval("ProductName") %>`합니다. 가 필요한 경우 이름과 [DISCONTINUED], 텍스트를 표시 하기 위해 선언적 구문 대신 할당 되도록 업데이트 합니다 `Text` 속성 값의는 `DisplayProductNameAndDiscontinuedStatus` 메서드. S 제품 이름 및 사용 하 여 지원 되지 않는 값의 전달 해야이 작업을 수행 하는 경우는 `Eval("columnName")` 구문입니다. `Eval` 형식의 값을 반환 `Object`, 하지만 `DisplayProductNameAndDiscontinuedStatus` 메서드에서 입력된 매개 변수 형식의 예상 `String` 및 `Boolean`이므로 반환 하는 값을 캐스팅 해야 했습니다는 `Eval` 같이 필요한 입력된 매개 변수 형식에 메서드:
+DataList s `ItemTemplate`에서 `ProductNameLabel` 레이블 웹 컨트롤은 현재 `Text` 속성을 `<%# Eval("ProductName") %>`결과에 할당 하 여 제품 이름을 표시 합니다. 이름에 [단종] 텍스트를 표시 하도록 하려면 필요한 경우 `Text` 속성에 `DisplayProductNameAndDiscontinuedStatus` 메서드의 값을 할당 하도록 선언적 구문을 업데이트 합니다. 이 작업을 수행 하는 경우 `Eval("columnName")` 구문을 사용 하 여 제품 이름과 중단 된 값을 전달 해야 합니다. `Eval`는 `Object`형식의 값을 반환 하지만 `DisplayProductNameAndDiscontinuedStatus` 메서드에서는 `String` 및 `Boolean`형식의 입력 매개 변수가 필요 합니다. 따라서 `Eval` 메서드에서 반환 되는 값을 필요한 입력 매개 변수 형식으로 캐스팅 해야 합니다. 예를 들면 다음과 같습니다.
 
 [!code-aspx[Main](formatting-the-datalist-and-repeater-based-upon-data-cs/samples/sample6.aspx)]
 
-가격을 표시 하려면 설정 하기만 했습니다 합니다 `UnitPriceLabel` 레이블 s `Text` 속성에서 반환 된 값을는 `DisplayPrice` 메서드를 수행한 s 제품 이름을 표시 하 고 [중단] 텍스트 처럼 합니다. 그러나에 전달 하는 대신에 합니다 `UnitPrice` 스칼라 입력된 매개 변수로 대신 전달 된 전체 `ProductsRow` 인스턴스:
+가격을 표시 하려면 제품 이름과 [단종] 텍스트를 표시 하는 것 처럼 `UnitPriceLabel` 레이블 s `Text` 속성을 `DisplayPrice` 메서드에서 반환 된 값으로 설정 하면 됩니다. 그러나 `UnitPrice`를 스칼라 입력 매개 변수로 전달 하는 대신 전체 `ProductsRow` 인스턴스를 전달 합니다.
 
 [!code-aspx[Main](formatting-the-datalist-and-repeater-based-upon-data-cs/samples/sample7.aspx)]
 
-곳의 서식 지정 함수에 대 한 호출을 사용 하 여 시간을 내어 브라우저에서 진행 상황을 보고 합니다. [지원 되지 않는] 텍스트를 포함 하 여 지원 되지 않는 제품을 사용 하 여 그림 5와 유사한 화면이 표시 됩니다 및 해당 제품 가격을 가진 $20.00 개 비용으로 대체 텍스트 하세요 가격 견적에 대 한 호출 합니다.
+현재 위치의 형식 지정 함수에 대 한 호출을 사용 하 여 브라우저에서 진행 상황을 확인 합니다. 화면은 그림 5와 유사 하 게 표시 됩니다. 즉, [단종] 텍스트와 해당 제품에 대 한 가격 책정을 포함 하 여 더 $20.00 이상 사용 되지 않는 제품의 가격을 텍스트로 바꿀 수 있습니다.
 
-[![비용이 많이 드는 제품에 대 한 가격을 가격 견적에 대 한 호출 하십시오 텍스트로 바뀝니다.](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image14.png)](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image13.png)
+[비용이 많이 드는 제품에 대 한 ![가격은 텍스트로 바뀌고 가격 견적에 대해를 호출 하세요.](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image14.png)](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image13.png)
 
-**그림 5**: 비용이 많이 드는 제품에 대 한 가격을 가격 견적에 대 한 호출 하십시오 텍스트로 바뀝니다 ([클릭 하 여 큰 이미지 보기](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image15.png))
+**그림 5**: 비용이 많이 드는 제품의 경우 가격은 텍스트로 바뀌고 통화에 대해를 호출 하세요 ([전체 크기 이미지를 보려면 클릭](formatting-the-datalist-and-repeater-based-upon-data-cs/_static/image15.png)).
 
 ## <a name="summary"></a>요약
 
-데이터를 기반으로 DataList 또는 Repeater 컨트롤 내용의 서식을 두 기술을 사용 하 여 수행할 수 있습니다. 첫 번째 방법은 대 한 이벤트 처리기를 만들려면 합니다 `ItemDataBound` 새에 바인딩된 데이터 소스의 각 레코드가 발생 하는 이벤트 `DataListItem` 또는 `RepeaterItem`합니다. 에 `ItemDataBound` 이벤트 처리기의 현재 항목의 데이터를 검사할 수 있습니다 및 서식을 지정 하는 템플릿 또는 내용에 적용할 수 있습니다 `DataListItem` 전체 항목 자체가 s입니다.
+두 가지 기술을 사용 하 여 데이터에 따라 DataList 또는 Repeater 컨트롤의 내용에 서식을 지정할 수 있습니다. 첫 번째 방법은 `ItemDataBound` 이벤트에 대 한 이벤트 처리기를 만드는 것입니다 .이 이벤트는 데이터 원본의 각 레코드가 새 `DataListItem` 나 `RepeaterItem`에 바인딩되어 있을 때 발생 합니다. `ItemDataBound` 이벤트 처리기에서 현재 항목의 데이터를 검사할 수 있고 서식 지정을 템플릿 내용에 적용 하거나 `DataListItem` 전체 항목 자체에 적용할 수 있습니다.
 
-또는 사용자 지정 서식 지정 함수를 서식 지정을 통해 실현할 수 있습니다. 서식 지정 기능은 DataList에서 호출할 수 있는 메서드 또는 해당 위치에 내보낼 HTML을 반환 하는 반복기가의 템플릿. 종종 HTML 서식 지정 함수에서 반환 된 현재 항목에 바인딩되는 값을 기준으로 결정 됩니다. 스칼라 값 또는 항목에 바인딩되는 전체 개체에 전달 하 여 서식 지정 함수에 이러한 값을 전달할 수 있습니다 (예는 `ProductsRow` 인스턴스).
+또는 형식 지정 함수를 통해 사용자 지정 서식 지정을 실현할 수 있습니다. 서식 지정 함수는 해당 위치로 내보낼 HTML을 반환 하는 DataList 또는 Repeater s 템플릿에서 호출할 수 있는 메서드입니다. 서식 함수에서 반환 하는 HTML은 현재 항목에 바인딩되는 값에 의해 결정 되는 경우가 많습니다. 이러한 값은 스칼라 값으로 형식 지정 함수에 전달 하거나 항목에 바인딩되는 전체 개체 (예: `ProductsRow` 인스턴스)에 전달할 수 있습니다.
 
-즐거운 프로그래밍!
+행복 한 프로그래밍
 
-## <a name="about-the-author"></a>저자 소개
+## <a name="about-the-author"></a>작성자 정보
 
-[Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml), 7 ASP/ASP.NET 서적의 저자 이자 설립자입니다 [4GuysFromRolla.com](http://www.4guysfromrolla.com), 1998 Microsoft 웹 기술을 사용 하 여 왔습니다. Scott는 독립 컨설턴트, 강사, 그리고 기록기로 작동합니다. 최근 저서는 [ *Sams 설명 직접 ASP.NET 2.0 24 시간 동안의*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)합니다. 그에 도달할 수 있습니다 [ mitchell@4GuysFromRolla.com합니다.](mailto:mitchell@4GuysFromRolla.com) 찾을 수 있는 저자의 블로그를 통해 또는 [ http://ScottOnWriting.NET ](http://ScottOnWriting.NET)합니다.
+[Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 
-## <a name="special-thanks-to"></a>특별히 감사
+## <a name="special-thanks-to"></a>특별히 감사 합니다.
 
-이 자습서 시리즈는 많은 유용한 검토자가 검토 되었습니다. 이 자습서에 대 한 선행 검토자 Yaakov Ellis, Randy Schmidt 및 Liz Shulok 되었습니다. 내 향후 MSDN 문서를 검토에 관심이 있으십니까? 그렇다면 삭제 나에서 선 [ mitchell@4GuysFromRolla.com합니다.](mailto:mitchell@4GuysFromRolla.com)
+이 자습서 시리즈는 많은 유용한 검토자가 검토 했습니다. 이 자습서의 리드 검토자는 Yaakov Ellis, Randy Schmidt 및 Liz Shulok 였습니다. 예정 된 MSDN 문서를 검토 하는 데 관심이 있나요? 그렇다면mitchell@4GuysFromRolla.com에서 줄을 삭제 [합니다.](mailto:mitchell@4GuysFromRolla.com)
 
 > [!div class="step-by-step"]
 > [이전](displaying-data-with-the-datalist-and-repeater-controls-cs.md)

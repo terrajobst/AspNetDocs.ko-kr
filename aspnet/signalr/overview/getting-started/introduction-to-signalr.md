@@ -2,18 +2,18 @@
 uid: signalr/overview/getting-started/introduction-to-signalr
 title: SignalR 소개 | Microsoft Docs
 author: bradygaster
-description: 이 문서에서는 설명 SignalR 이란, 일부 솔루션을 만들도록 설계 되었습니다.
+description: 이 문서에서는 SignalR 무엇 이며, 만들려는 솔루션 중 일부를 설명 합니다.
 ms.author: bradyg
 ms.date: 06/10/2014
 ms.assetid: 0fab5e35-8c1f-43d4-8635-b8aba8766a71
 msc.legacyurl: /signalr/overview/getting-started/introduction-to-signalr
 msc.type: authoredcontent
-ms.openlocfilehash: 3598ac3d16a2065d1fb76d1637f0ae84797f630c
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 11b494b4839c646b018098c76a8a9ae0a2169757
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65120084"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74600499"
 ---
 # <a name="introduction-to-signalr"></a>SignalR 소개
 
@@ -21,107 +21,107 @@ ms.locfileid: "65120084"
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
-> 이 문서에서는 설명 SignalR 이란, 일부 솔루션을 만들도록 설계 되었습니다. 
+> 이 문서에서는 SignalR 무엇 이며, 만들려는 솔루션 중 일부를 설명 합니다. 
 > 
-> ## <a name="questions-and-comments"></a>질문이 나 의견이 있으면
+> ## <a name="questions-and-comments"></a>질문 및 설명
 > 
-> 이 자습서를 연결 하는 방법 및 새로운 개선할 수 있습니다 페이지의 맨 아래에 의견에서에 의견을 남겨 주세요. 에 자습서로 직접 관련 되지 않은 질문이 있을 경우 게시할 수 하는 [ASP.NET SignalR 포럼](https://forums.asp.net/1254.aspx/1?ASP+NET+SignalR) 또는 [StackOverflow.com](https://stackoverflow.com/questions/tagged/signalr)합니다.
+> 이 자습서와 페이지 맨 아래에 있는 의견에서 개선할 수 있는 방법에 대 한 의견을 남겨 주세요. 자습서와 직접 관련 되지 않은 질문이 있는 경우 [ASP.NET SignalR 포럼](https://forums.asp.net/1254.aspx/1?ASP+NET+SignalR) 또는 [StackOverflow.com](https://stackoverflow.com/questions/tagged/signalr)에 게시할 수 있습니다.
 
-## <a name="what-is-signalr"></a>SignalR이란?
+## <a name="what-is-signalr"></a>SignalR 란?
 
-ASP.NET SignalR은 ASP.NET 개발자를 위한 응용 프로그램에 실시간 웹 기능을 추가 하는 프로세스를 간소화 하는 라이브러리입니다. 실시간 웹 기능은 서버 코드 푸시를 사용할 수 있게 되 면 즉시 연결 된 클라이언트에 콘텐츠 대신 서버는 클라이언트가 새 데이터를 요청을 대기 하는 기능을 합니다.
+ASP.NET SignalR는 응용 프로그램에 실시간 웹 기능을 추가 하는 프로세스를 간소화 하는 ASP.NET 개발자를 위한 라이브러리입니다. 실시간 웹 기능은 서버가 클라이언트에서 새 데이터를 요청할 때까지 대기 하는 것이 아니라 서버 코드에서 연결 된 클라이언트에 콘텐츠를 즉시 푸시하는 기능을 제공 합니다.
 
-SignalR은 ASP.NET 응용 프로그램에 모든 종류의 "실시간" 웹 기능을 추가 하려면 사용할 수 있습니다. 예를 들어 채팅 흔히 하는 동안 더 많은 작업을 수행할 수 있습니다. 페이지 구현 또는 사용자 든 지 새 데이터를 보려면 웹 페이지를 새로 고칩니다 [긴 폴링](http://en.wikipedia.org/wiki/Push_technology#Long_polling) 새 데이터를 검색 하려면 SignalR을 사용 하 여에 대 한 대상 인지 합니다. 예로 대시보드 및 진행 상황 업데이트 및 실시간 양식 (예: 동시 편집 문서의) 공동 작업 응용 프로그램 작업 응용 프로그램을 모니터링 합니다.
+SignalR는 ASP.NET 응용 프로그램에 "실시간" 웹 기능을 추가 하는 데 사용할 수 있습니다. 채팅은 종종 예로 사용 되지만 전체적으로 더 많은 작업을 수행할 수 있습니다. 사용자가 새 데이터를 볼 수 있도록 웹 페이지를 새로 고치거 나 페이지에서 [긴 폴링을](http://en.wikipedia.org/wiki/Push_technology#Long_polling) 구현 하 여 새 데이터를 검색 하는 경우에는 SignalR을 사용 하는 후보가 됩니다. 예를 들면 대시보드 및 모니터링 응용 프로그램, 공동 작업 응용 프로그램 (예: 문서를 동시에 편집), 작업 진행률 업데이트 및 실시간 양식이 있습니다.
 
-SignalR 있습니다 완전히 새로운 유형의 웹 응용 프로그램 서버에서 자주 업데이트 해야 하는 예를 들어, 실시간 게임입니다.
+또한 SignalR를 사용 하면 실시간 게임과 같이 서버에서 빈도가 높은 업데이트가 필요한 웹 응용 프로그램을 완전히 새로운 형식으로 사용할 수 있습니다.
 
-SignalR 서버 쪽.NET 코드에서 브라우저 (및 다른 클라이언트 플랫폼) 클라이언트에서 JavaScript 함수를 호출 하는 서버와 클라이언트 간 원격 프로시저 호출 (RPC)을 만들기 위한 간단한 API를 제공 합니다. 또한 SignalR 연결 관리에 대 한 API를 포함 (예를 들어, 연결 및 연결 끊기 이벤트) 및 연결을 그룹화 합니다.
+SignalR는 서버 쪽 .NET 코드에서 클라이언트 브라우저 (및 다른 클라이언트 플랫폼)의 JavaScript 함수를 호출 하는 서버-클라이언트 원격 프로시저 호출 (RPC)을 만들기 위한 간단한 API를 제공 합니다. SignalR에는 연결 관리 (예를 들어, 이벤트 연결 및 연결 끊기), 연결 그룹화를 위한 API도 포함 됩니다.
 
-![SignalR 사용 하 여 메서드를 호출합니다.](introduction-to-signalr/_static/image1.png)
+![SignalR를 사용 하 여 메서드 호출](introduction-to-signalr/_static/image1.png)
 
-SignalR 연결 관리를 자동으로 처리 하 고는 대화방 같은 각 항목 수 브로드캐스트 메시지 연결 된 모든 클라이언트를 동시에 있습니다. 또한 특정 클라이언트에 메시지를 보낼 수 있습니다. 클라이언트와 서버 간의 연결이 영구적 이므로, 각 통신에 대 한 연결이 다시 설정 하는 클래식 HTTP 연결을 달리 합니다.
+SignalR는 연결 관리를 자동으로 처리 하며 대화방 처럼 연결 된 모든 클라이언트에 동시에 메시지를 브로드캐스트할 수 있습니다. 특정 클라이언트에 메시지를 보낼 수도 있습니다. 클라이언트와 서버 간의 연결은 각 통신에 대해 다시 설정 되는 클래식 HTTP 연결과 달리 영구적입니다.
 
-SignalR은 클라이언트 코드를 사용 하 여 일반적인 요청-응답 모델 보다는 원격 프로시저 호출 (RPC)는 웹에서 현재 브라우저에서 서버 코드 호출할 수 있습니다 "서버 푸시" 기능을 지원 합니다.
+SignalR는 "서버 푸시" 기능을 지원 합니다 .이 기능은 서버 코드가 현재 웹에서 자주 사용 하는 요청-응답 모델 대신 RPC (원격 프로시저 호출)를 사용 하 여 브라우저에서 클라이언트 코드를 호출할 수 있습니다.
 
-SignalR 응용 프로그램의 Service Bus, SQL Server를 사용 하 여 클라이언트를 확장할 수 또는 [Redis](http://redis.io)합니다.
+SignalR 응용 프로그램은 Service Bus, SQL Server 또는 [Redis](http://redis.io)를 사용 하 여 수천 개의 클라이언트로 확장할 수 있습니다.
 
-SignalR은 오픈 소스를 통해 액세스할 수 있습니다 [GitHub](https://github.com/signalr)합니다.
+SignalR는 [GitHub](https://github.com/signalr)를 통해 액세스할 수 있는 오픈 소스입니다.
 
 ## <a name="signalr-and-websocket"></a>SignalR 및 WebSocket
 
-SignalR 사용 가능한 경우 새 WebSocket 전송 사용 및 필요한 경우 이전 전송으로 대체 합니다. 하지만 물론 직접 WebSocket을 사용 하 여, 많은 구현 해야 하는 추가 기능을 이미 수행 즉 SignalR을 사용 하 여 앱을 작성할 수 있습니다. 가장 중요 한 점은이 이전 버전의 클라이언트에 대 한 별도 코드 경로 생성 하는 방법에 대 한 걱정 없이 WebSocket을 활용 하려면 앱을 코딩할 수 있습니다 의미 합니다. SignalR도 보호 SignalR 기본 전송에 대 한 변경을 지원 하도록 업데이트 됩니다 WebSocket의 버전 간에 응용 프로그램을 일관 된 인터페이스를 제공 하므로 WebSocket에 대 한 업데이트에 걱정할 필요가 없도록 합니다.
+SignalR는 사용 가능한 경우 새 WebSocket 전송을 사용 하 고 필요한 경우 이전 전송으로 대체 합니다. WebSocket을 직접 사용 하 여 앱을 직접 작성할 수 있지만 SignalR를 사용 하면 구현 해야 할 많은 추가 기능이 이미 수행 된 것입니다. 가장 중요 한 점은 이전 클라이언트에 대 한 별도의 코드 경로를 만드는 방법에 대해 걱정할 필요 없이 WebSocket을 활용 하기 위해 앱을 코딩할 수 있음을 의미 합니다. 또한 SignalR는 websocket에 대 한 업데이트에 대해 걱정 하지 않아도 됩니다. SignalR가 기본 전송의 변경을 지원 하도록 업데이트 되므로 응용 프로그램에 WebSocket 버전 간에 일관 된 인터페이스를 제공 합니다.
 
 <a id="transports"></a>
 
 ## <a name="transports-and-fallbacks"></a>전송 및 대체
 
-SignalR은 클라이언트와 서버 간의 실시간 작업을 수행 하는 데 필요한 전송의 몇 가지 추상화입니다. SignalR 연결 HTTP로 시작 하 고 가능한 경우에 WebSocket 연결을 다음 승격 됩니다. 서버 메모리의 가장 효율적인 사용, 낮은 대기 시간, 고 (예: 완전 한 이중 클라이언트와 서버 간 통신), 기능이 가장 기본 뿐만 아니라 가장 엄격한 되므로 WebSocket는 SignalR에 대 한 이상적인 전송 요구 사항: WebSocket을 사용 하려면 Windows Server 2012 또는 Windows 8 및.NET Framework 4.5로 서버. 이러한 요구 사항을 충족 되지 않으면, SignalR 연결 되도록 다른 전송을 사용 하려고 합니다.
+SignalR는 클라이언트와 서버 간의 실시간 작업을 수행 하는 데 필요한 일부 전송에 대 한 추상화입니다. SignalR 연결은 HTTP로 시작 된 다음 사용할 수 있는 경우 WebSocket 연결로 승격 됩니다. WebSocket은 서버 메모리를 가장 효율적으로 사용 하 고, 대기 시간을 최소화 하며, 가장 기본적인 기능 (예: 클라이언트와 서버 간의 전이중 통신)이 있지만 가장 엄격한 기능을 제공 하기 때문에 SignalR에 이상적인 전송입니다. 요구 사항: WebSocket을 사용 하려면 서버에서 Windows Server 2012 또는 Windows 8을 사용 하 고 .NET Framework 4.5을 사용 해야 합니다. 이러한 요구 사항이 충족 되지 않으면 SignalR는 다른 전송을 사용 하 여 연결을 시도 합니다.
 
 ### <a name="html-5-transports"></a>HTML 5 전송
 
-이러한 전송에 대 한 지원에 따라 달라 집니다 [HTML 5](http://en.wikipedia.org/wiki/HTML5)합니다. 클라이언트 브라우저는 html5 표준을 지원 하지 않으면, 이전 전송이 됩니다.
+이러한 전송은 [HTML 5](http://en.wikipedia.org/wiki/HTML5)에 대 한 지원에 따라 달라 집니다. 클라이언트 브라우저에서 HTML 5 표준을 지원 하지 않는 경우 이전 전송이 사용 됩니다.
 
-- **WebSocket** (하는 경우는 Websocket을 지원할 수 있는 서버 및 브라우저 표시). WebSocket은 클라이언트와 서버 간에 true 영구 양방향 연결을 설정 하는 유일한 전송 됩니다. 그러나, WebSocket에 요구 사항이 가장 엄격한; Microsoft Internet Explorer, Google Chrome 및 Mozilla Firefox의 최신 버전에만 완전히 지원 되 고 Opera 및 Safari와 같은 다른 브라우저에 부분적으로 구현만 합니다.
-- **서버 전송 이벤트**EventSource (브라우저에서 지 원하는 경우 서버 전송 이벤트는 기본적으로 Internet Explorer를 제외한 모든 브라우저)로 알려진,
+- **Websocket** (서버와 브라우저가 모두 websocket을 지원할 수 있음을 나타냄). WebSocket은 클라이언트와 서버 간에 진정한 영구 양방향 연결을 설정 하는 유일한 전송입니다. 그러나 WebSocket에는 가장 엄격한 요구 사항이 있습니다. 최신 버전의 Microsoft Internet Explorer, Google Chrome 및 Mozilla Firefox 에서만 완전히 지원 되며 Opera 및 Safari와 같은 다른 브라우저에서는 부분 구현이 있습니다.
+- **서버에서 이벤트를 보냈습니다**(브라우저에서 서버 전송 이벤트를 지 원하는 경우 기본적으로 Internet Explorer를 제외한 모든 브라우저).
 
 ### <a name="comet-transports"></a>Comet 전송
 
-다음 전송에 기반한 합니다 [Comet](http://en.wikipedia.org/wiki/Comet_(programming)) 브라우저 또는 다른 클라이언트 유지 관리 하는 장기 보관 HTTP 요청을 서버에 특히 클라이언트는 클라이언트에 데이터 푸시를 사용할 수 있는 웹 응용 프로그램 모델 요청 합니다.
+다음 전송은 [Comet](http://en.wikipedia.org/wiki/Comet_(programming)) 웹 응용 프로그램 모델을 기반으로 합니다 .이 모델에서는 브라우저 또는 다른 클라이언트에서 장기 보유 HTTP 요청을 유지 관리 하며,이를 통해 클라이언트는 특정 클라이언트를 요청 하지 않고 클라이언트에 데이터를 푸시할 수 있습니다.
 
-- **프레임 영원히** (예: Internet Explorer에만 해당). 영원히 프레임 완료 되지 않은 서버에서 끝점에 요청을 수행 하는 숨겨진된 IFrame을 만듭니다. 서버는 다음 스크립트가 클라이언트에 서버에서 단방향 실시간 연결을 제공 하는 즉시 실행 하는 클라이언트에 지속적으로 전송 됩니다. 서버에 클라이언트에서 연결에서 클라이언트 연결을 서버에서 별도 연결을 사용 하 고 같은 표준 HTTP 요청을 전송 해야 하는 데이터의 각 부분에 대 한 새 연결을 만들어집니다.
-- **긴 폴링 Ajax**합니다. 긴 폴링 영구 연결을 만들지는 않지만 대신이 시점에서 연결이 닫히고 서버 응답 하 고 새 연결을 즉시 요청 될 때까지 열린 상태로 유지 하는 요청을 사용 하 여 서버를 폴링합니다. 연결 다시 설정 하는 동안 약간의 대기 시간이 발생할 수 있습니다.
+- **영원히 Frame** (Internet Explorer에만 해당). 영원히 Frame은 서버의 끝점에 대 한 요청을 완료 하지 않는 숨겨진 IFrame을 만듭니다. 그런 다음 서버는 즉시 실행 되는 클라이언트로 스크립트를 지속적으로 전송 하 여 서버에서 클라이언트로의 단방향 실시간 연결을 제공 합니다. 클라이언트에서 서버로의 연결에서는 서버와 클라이언트 간의 별도 연결을 사용 하 고 표준 HTTP 요청과 마찬가지로 전송 해야 하는 각 데이터 조각에 대해 새 연결을 만듭니다.
+- **Ajax 긴 폴링**. Long 폴링은 영구 연결을 만들지 않고 대신 서버가 응답할 때까지 열린 상태로 유지 되는 요청을 사용 하 여 서버를 폴링합니다. 그러면 연결이 닫히고 새 연결이 즉시 요청 됩니다. 연결을 다시 설정 하는 동안 약간의 대기 시간이 발생할 수 있습니다.
 
-어떤 전송 되는 구성에서 지원 되는 자세한 내용은 [지원 되는 플랫폼](supported-platforms.md)합니다.
+구성에서 지원 되는 전송에 대 한 자세한 내용은 [지원 되는 플랫폼](supported-platforms.md)을 참조 하세요.
 
 ### <a name="transport-selection-process"></a>전송 선택 프로세스
 
-다음 목록에는 SignalR 사용할 전송을 결정 하는 데 사용 하는 단계를 보여 줍니다.
+다음 목록에서는 SignalR에서 사용할 전송을 결정 하는 데 사용 하는 단계를 보여 줍니다.
 
-1. 브라우저를 Internet Explorer 8 이하의 경우 긴 폴링 사용 됩니다.
-2. JSONP 구성 된 경우 (즉, 합니다 `jsonp` 매개 변수는 설정 `true` 연결을 시작할 때), 되 긴 폴링.
-3. (즉, SignalR 끝점에에서 없는 경우 호스팅 페이지와 동일한 도메인)는 도메인 간 연결이 설정 되는 경우 다음 WebSocket 사용한 다음 기준이 충족 될 경우:
+1. 브라우저가 Internet Explorer 8이 하 이면 긴 폴링이 사용 됩니다.
+2. JSONP가 구성 된 경우 (즉, 연결이 시작 되 면 `jsonp` 매개 변수는 `true`로 설정 됨) 긴 폴링이 사용 됩니다.
+3. 도메인 간 연결이 설정 되는 경우 (즉, SignalR 끝점이 호스팅 페이지와 동일한 도메인에 있지 않은 경우) 다음 조건을 충족 하는 경우 WebSocket이 사용 됩니다.
 
-   - 클라이언트에서 CORS (크로스-원본 자원 공유)을 지원 합니다. 클라이언트는 CORS를 지원 세부 정보를 참조 하세요 [caniuse.com에서 CORS](http://www.caniuse.com/CORS)합니다.
-   - 클라이언트에서 WebSocket을 지원합니다.
-   - 서버에서 WebSocket을 지원합니다.
+   - 클라이언트는 CORS (크로스-원본 자원 공유)를 지원 합니다. CORS를 지 원하는 클라이언트에 대 한 자세한 내용은 [caniuse.com에서 cors](http://www.caniuse.com/CORS)를 참조 하세요.
+   - 클라이언트가 WebSocket을 지원 합니다.
+   - 서버에서 WebSocket을 지원 합니다.
 
-     이러한 조건 중 하나라도 충족 되지 않는 경우 긴 폴링 사용 됩니다. 도메인 간 연결에 대 한 자세한 내용은 참조 하세요. [도메인 간 연결을 설정 하는 방법을](../guide-to-the-api/hubs-api-guide-javascript-client.md#crossdomain)합니다.
-4. JSONP 구성 되지 않은 경우 연결이 아닙니다. 도메인 간 WebSocket 클라이언트와 서버 모두에서 지 원하는 경우 사용 됩니다.
-5. 클라이언트 또는 서버에는 WebSocket을 지원 하지 않으면, 사용 가능한 경우 이벤트를 전송 하는 서버 사용 됩니다.
-6. 이벤트를 전송 하는 서버를 사용할 수 없는 경우 계속 프레임 시도 됩니다.
-7. 프레임 계속 실패 하면 긴 폴링 사용 됩니다.
+     이러한 조건 중 하나라도 충족 되지 않으면 긴 폴링이 사용 됩니다. 도메인 간 연결에 대 한 자세한 내용은 [도메인 간 연결을 설정 하는 방법](../guide-to-the-api/hubs-api-guide-javascript-client.md#crossdomain)을 참조 하세요.
+4. JSONP가 구성 되지 않은 경우 연결이 도메인이 아닌 경우 클라이언트와 서버에서 모두 지 원하는 경우 WebSocket이 사용 됩니다.
+5. 클라이언트나 서버에서 WebSocket을 지원 하지 않는 경우 사용할 수 있는 경우 서버에서 보낸 이벤트를 사용 합니다.
+6. 서버에서 보낸 이벤트를 사용할 수 없는 경우 영원히 프레임을 시도 합니다.
+7. 계속 해 서 프레임에 오류가 발생 하면 긴 폴링이 사용 됩니다.
 
 <a id="MonitoringTransports"></a>
 ### <a name="monitoring-transports"></a>전송 모니터링
 
-응용 프로그램이 사용자 허브에서 로깅 및 브라우저에서 콘솔 창 열기를 사용 하 여 사용 중인 전송을 확인할 수 있습니다.
+허브에서 로깅을 사용 하도록 설정 하 고 브라우저에서 콘솔 창을 열어 응용 프로그램에서 사용 하는 전송을 확인할 수 있습니다.
 
-브라우저에서 허브의 이벤트에 대 한 로깅을 사용 하려면 다음 명령을 클라이언트 응용 프로그램에 추가 합니다.
+브라우저에서 허브 이벤트에 대 한 로깅을 사용 하도록 설정 하려면 클라이언트 응용 프로그램에 다음 명령을 추가 합니다.
 
 `$.connection.hub.logging = true;`
 
 - Internet Explorer에서 F12 키를 눌러 개발자 도구를 열고 콘솔 탭을 클릭 합니다.
 
-    ![Microsoft Internet Explorer에서 콘솔](introduction-to-signalr/_static/image2.png)
-- Chrome에서는 Ctrl + Shift + J를 눌러 콘솔을 엽니다.
+    ![Microsoft Internet Explorer의 콘솔](introduction-to-signalr/_static/image2.png)
+- Chrome에서 Ctrl + Shift + J를 눌러 콘솔을 엽니다.
 
-    ![Google Chrome에서 콘솔](introduction-to-signalr/_static/image3.png)
+    ![Google Chrome의 콘솔](introduction-to-signalr/_static/image3.png)
 
-콘솔 열기 및 로깅을 사용 하도록 설정, 사용 하 여 SignalR에서 사용 되는 전송 확인할 수 있습니다.
+콘솔 열기 및 로깅을 사용 하도록 설정 하면 SignalR에서 어떤 전송을 사용 하는지 확인할 수 있습니다.
 
-![Internet Explorer WebSocket 전송이 보여 주는 콘솔](introduction-to-signalr/_static/image4.png)
+![WebSocket 전송을 보여 주는 Internet Explorer의 콘솔](introduction-to-signalr/_static/image4.png)
 
 ### <a name="specifying-a-transport"></a>전송 지정
 
-전송 협상 리소스 일정량의 시간과 클라이언트/서버를 사용 합니다. 클라이언트 기능에 알고 있는 경우 다음 전송 때 지정할 수 있습니다 클라이언트 연결을 시작 합니다. 다음 코드 조각은 클라이언트가 다른 프로토콜을 지원 하지 않은 것이 던 경우에 사용 되는 대로 Ajax 긴 폴링 전송을 사용 하 여 연결을 시작 하는 방법을 보여 줍니다.
+전송 협상은 특정 시간 및 클라이언트/서버 리소스를 사용 합니다. 클라이언트 기능을 알고 있는 경우 클라이언트 연결을 시작할 때 전송을 지정할 수 있습니다. 다음 코드 조각에서는 Ajax 긴 폴링 전송을 사용 하 여 연결을 시작 하는 방법을 보여 줍니다. 클라이언트에서 다른 프로토콜을 지원 하지 않는 것으로 알려진 경우에 사용 됩니다.
 
 `connection.start({ transport: 'longPolling' });`
 
-시도 하도록 클라이언트를 순서 대로 특정 전송 하려는 경우 대체 (fallback) 순서를 지정할 수 있습니다. 다음 코드 조각은 동안 WebSocket을 실패 하는 긴 폴링으로 직접 이동 하는 방법을 보여 줍니다.
+클라이언트가 특정 전송을 순서 대로 시도 하도록 하려면 대체 (fallback) 순서를 지정할 수 있습니다. 다음 코드 조각에서는 WebSocket을 시도 하 고 실패 하 여 긴 폴링으로 직접 이동 하는 방법을 보여 줍니다.
 
 `connection.start({ transport: ['webSockets','longPolling'] });`
 
-전송을 지정 하는 것에 대 한 문자열 상수는 다음과 같이 정의 됩니다.
+전송을 지정 하는 문자열 상수는 다음과 같이 정의 됩니다.
 
 - `webSockets`
 - `foreverFrame`
@@ -130,32 +130,32 @@ SignalR은 클라이언트와 서버 간의 실시간 작업을 수행 하는 �
 
 ## <a name="connections-and-hubs"></a>연결 및 허브
 
-SignalR API는 클라이언트와 서버 간의 통신을 위한 두 가지 모델을 포함 되어 있습니다. 영구 연결 및 허브입니다.
+SignalR API에는 클라이언트와 서버 간 통신을 위한 두 가지 모델 (영구 연결 및 허브)이 포함 되어 있습니다.
 
-연결에는 간단한 단일 받는 사람, 그룹화 또는 브로드캐스트 메시지를 보낼 끝점을 나타냅니다. 개발자는 SignalR 노출 하는 하위 수준 통신 프로토콜에 대 한 액세스를 직접 (PersistentConnection 클래스에 의해.NET 코드에 표시 됨) 영구 연결 API 제공 합니다. 연결 통신 모델을 사용 하 여 Windows Communication Foundation 같은 연결 기반 Api를 사용한 적이 있는 개발자에 게 친숙 한 됩니다.
+연결은 단일 받는 사람, 그룹화 또는 브로드캐스트 메시지를 보내기 위한 간단한 끝점을 나타냅니다. PersistentConnection 클래스를 사용 하 여 .NET 코드에 표시 된 영구 연결 API를 통해 개발자는 SignalR가 노출 하는 하위 수준 통신 프로토콜에 직접 액세스할 수 있습니다. 연결 통신 모델 사용은 Windows Communication Foundation와 같은 연결 기반 Api를 사용 하는 개발자에 게 친숙 합니다.
 
-허브는 클라이언트 및 서버에서 서로 다른 메서드를 직접 호출할 수 있도록 연결 API를 기반으로 보다 높은 수준의 파이프라인. 클라이언트가 서버에서 로컬 메서드로 쉽게 이동 하 고 그 반대의 경우로 메서드를 호출 하도록 허용 매직에서 작업 하는 것 처럼 컴퓨터 경계를 넘어 디스패치 SignalR에서 처리 합니다. 허브 통신 모델을 사용 하 여 원격 호출.NET Remoting 등의 Api를 사용한 적이 있는 개발자에 게 친숙 한 됩니다. 또한 허브를 사용 하 여 모델 바인딩을 사용 하도록 설정 하는 메서드에 강력한 형식의 매개 변수를 전달할 수 있습니다.
+허브는 클라이언트와 서버에서 직접 메서드를 호출할 수 있도록 하는 연결 API를 기반으로 하는 더 높은 수준의 파이프라인입니다. SignalR는 클라이언트에서 서버에 대 한 메서드를 로컬 메서드로 호출할 수 있도록 하는 것 처럼 컴퓨터 경계 간 디스패치를 처리 하 고 그 반대의 경우도 마찬가지입니다. 허브 통신 모델 사용은 .NET Remoting과 같은 원격 호출 Api를 사용 하는 개발자에 게 친숙 합니다. 또한 허브를 사용 하면 강력한 형식의 매개 변수를 메서드에 전달 하 여 모델 바인딩을 사용 하도록 설정할 수 있습니다.
 
 ### <a name="architecture-diagram"></a>아키텍처 다이어그램
 
-다음 다이어그램은 허브, 영구 연결 및 전송에 사용 되는 기본 기술 간의 관계를 보여줍니다.
+다음 다이어그램에서는 허브, 영구 연결 및 전송에 사용 되는 기본 기술 간의 관계를 보여 줍니다.
 
 ![Api, 전송 및 클라이언트를 보여 주는 SignalR 아키텍처 다이어그램](introduction-to-signalr/_static/image5.png)
 
-### <a name="how-hubs-work"></a>허브의 작동 방식
+### <a name="how-hubs-work"></a>허브 작동 방법
 
-클라이언트에서 메서드를 호출 하는 서버 쪽 코드, 이름 및 호출할 메서드의 매개 변수를 포함 하는 활성 전송에서 패킷을 전송 됩니다 (개체 메서드 매개 변수로 보내면 serialize 된 JSON을 사용 하 여). 클라이언트에는 다음 클라이언트 쪽 코드에 정의 된 메서드를 메서드 이름과 일치 합니다. 일치 하는 클라이언트 메서드는 deserialize 된 매개 변수 데이터를 사용 하 여 실행 됩니다.
+서버 쪽 코드에서 클라이언트의 메서드를 호출 하면 호출 될 메서드의 이름 및 매개 변수를 포함 하는 활성 전송에서 패킷이 전송 됩니다 (개체를 메서드 매개 변수로 보냈을 때 JSON을 사용 하 여 serialize). 클라이언트는 메서드 이름과 클라이언트 쪽 코드에 정의 된 메서드를 일치 시킵니다. 일치 하는 항목이 있는 경우 클라이언트 메서드는 deserialize 된 매개 변수 데이터를 사용 하 여 실행 됩니다.
 
-메서드 호출 수와 같은 도구를 사용 하 여 모니터링할 [Fiddler.](http://fiddler2.com/) 다음 이미지에는 Fiddler의 로그 창에서 웹 브라우저 클라이언트에 SignalR 서버에서 전송 하는 메서드 호출을 보여 줍니다. 허브 호출에서 전송 되는 메서드 호출 `MoveShapeHub`를 호출할 메서드를 호출 하 고 `updateShape`입니다.
+Fiddler와 같은 도구를 사용 하 여 메서드 호출을 모니터링할 수 있습니다 [.](http://fiddler2.com/) 다음 이미지는 Fiddler의 로그 창에서 SignalR 서버에서 웹 브라우저 클라이언트로 전송 된 메서드 호출을 보여 줍니다. 메서드 호출은 `MoveShapeHub`라는 허브에서 전송 되며 호출 되는 메서드를 `updateShape`이라고 합니다.
 
 ![SignalR 트래픽을 보여 주는 Fiddler 로그 보기](introduction-to-signalr/_static/image6.png)
 
-이 예제에서는 허브 이름으로 식별 됩니다는 `H` 매개 변수; 메서드를 이름으로 식별 됩니다를 `M` 메서드에 전송 되는 데이터 및 매개 변수를 사용 하 여 식별 되는 `A` 매개 변수. 이 메시지를 생성 하는 응용 프로그램에서 만들어진 합니다 [고주파수](tutorial-high-frequency-realtime-with-signalr.md) 자습서입니다.
+이 예에서는 허브 이름이 `H` 매개 변수를 사용 하 여 식별 됩니다. 메서드 이름은 `M` 매개 변수로 식별 되며 메서드로 전송 되는 데이터는 `A` 매개 변수를 사용 하 여 식별 됩니다. 이 메시지를 생성 한 응용 프로그램은 [빈도가 높은 실시간](tutorial-high-frequency-realtime-with-signalr.md) 자습서에서 만들어집니다.
 
 ### <a name="choosing-a-communication-model"></a>통신 모델 선택
 
-대부분의 응용 프로그램 허브 API를 사용 해야 합니다. 다음과 같은 경우에는 연결 API는 사용할 수 있습니다.
+대부분의 응용 프로그램은 허브 API를 사용 해야 합니다. 연결 API는 다음과 같은 경우에 사용할 수 있습니다.
 
-- 형식 지정 보낸 실제 메시지 요구 사항입니다.
-- 개발자는 원격 호출 모델 보다는 메시징 및 디스패치 모델을 사용 하 여 작업을 선호 합니다.
-- SignalR을 사용 하는 메시징 모델을 사용 하는 기존 응용 프로그램 이식 중인 합니다.
+- 보낸 실제 메시지의 형식을 지정 해야 합니다.
+- 개발자는 원격 호출 모델 대신 메시징 및 디스패치 모델을 사용 하는 것이 선호 됩니다.
+- 메시징 모델을 사용 하는 기존 응용 프로그램은 SignalR를 사용 하도록 포팅 됩니다.

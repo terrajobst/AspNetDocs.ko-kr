@@ -1,65 +1,65 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/animation/animating-in-response-to-user-interaction-vb
-title: 사용자 상호 작용 (VB)에 대 한 응답으로 애니메이션 효과 주는 | Microsoft Docs
+title: 사용자 상호 작용에 대 한 응답으로 애니메이션 효과 주기 (VB) | Microsoft Docs
 author: wenz
-description: ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이지만 컨트롤에 애니메이션을 추가 하는 전체 프레임 워크 아닙니다. 애니메이션 별 있습니다...
+description: ASP.NET AJAX 컨트롤 도구 키트의 애니메이션 컨트롤은 컨트롤이 아니라 컨트롤에 애니메이션을 추가 하기 위한 전체 프레임 워크입니다. 애니메이션은 별이 될 수 있습니다 ...
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: c8204c05-ec27-40fe-933d-88e4e727a482
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/animating-in-response-to-user-interaction-vb
 msc.type: authoredcontent
-ms.openlocfilehash: fa774eecd872e79e3b05f6a6ebe177be895b8191
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 629d79505cebd49c2f05333bfbf78166f80fc6cb
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65112921"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74607048"
 ---
 # <a name="animating-in-response-to-user-interaction-vb"></a>사용자 상호 작용에 대한 응답으로 애니메이션(VB)
 
-by [Christian Wenz](https://github.com/wenz)
+[Christian Wenz](https://github.com/wenz) 별
 
-[코드를 다운로드](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation6.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation6VB.pdf)
+[코드 다운로드](https://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation6.vb.zip) 또는 [PDF 다운로드](https://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation6VB.pdf)
 
-> ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이지만 컨트롤에 애니메이션을 추가 하는 전체 프레임 워크 아닙니다. 애니메이션은 자동으로 시작 하거나 트리거될 수 있습니다 사용자 상호 작용 하 여 예를 들어 마우스로 클릭 하 여.
+> ASP.NET AJAX 컨트롤 도구 키트의 애니메이션 컨트롤은 컨트롤이 아니라 컨트롤에 애니메이션을 추가 하기 위한 전체 프레임 워크입니다. 애니메이션은 자동으로 시작 되거나 사용자 상호 작용 (예: 마우스로 클릭)에 의해 트리거될 수 있습니다.
 
 ## <a name="overview"></a>개요
 
-ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이지만 컨트롤에 애니메이션을 추가 하는 전체 프레임 워크 아닙니다. 애니메이션은 자동으로 시작 하거나 트리거될 수 있습니다 사용자 상호 작용 하 여 예를 들어 마우스로 클릭 하 여.
+ASP.NET AJAX 컨트롤 도구 키트의 애니메이션 컨트롤은 컨트롤이 아니라 컨트롤에 애니메이션을 추가 하기 위한 전체 프레임 워크입니다. 애니메이션은 자동으로 시작 되거나 사용자 상호 작용 (예: 마우스로 클릭)에 의해 트리거될 수 있습니다.
 
 ## <a name="steps"></a>단계
 
-첫째, 포함 된 `ScriptManager` 페이지 그런 다음 ASP.NET AJAX 라이브러리 로드 되 면 컨트롤 도구 키트를 사용 하 여:
+먼저 페이지에 `ScriptManager`를 포함 합니다. 그런 다음 ASP.NET AJAX 라이브러리가 로드 되어 컨트롤 도구 키트를 사용할 수 있습니다.
 
 [!code-aspx[Main](animating-in-response-to-user-interaction-vb/samples/sample1.aspx)]
 
-그러면 다음과 같은 텍스트 패널에 애니메이션 적용 됩니다.
+애니메이션은 다음과 같은 텍스트 패널에 적용 됩니다.
 
 [!code-aspx[Main](animating-in-response-to-user-interaction-vb/samples/sample2.aspx)]
 
-패널에 대 한 연결 된 CSS 클래스에 유용한 배경 색을 정의 하 고 패널 고정된 너비를 설정할 수도:
+패널의 연결 된 CSS 클래스에서 좋은 배경색을 정의 하 고 패널의 고정 폭도 설정 합니다.
 
 [!code-css[Main](animating-in-response-to-user-interaction-vb/samples/sample3.css)]
 
-그런 다음 추가 `AnimationExtender` 페이지에서 제공 하는 `ID`, `TargetControlID` 특성과 필수 항목 이지만 `runat="server"`:
+그런 다음 `ID`, `TargetControlID` 특성 및 obligatory `runat="server"`를 제공 하 여 페이지에 `AnimationExtender`를 추가 합니다.
 
 [!code-aspx[Main](animating-in-response-to-user-interaction-vb/samples/sample4.aspx)]
 
-내 합니다 `<Animations>` 노드를 사용자 상호 작용을 통해 애니메이션을 시작 하는 방법은 5 가지가 있습니다 (누락 된 요소는 `<OnLoad>` 전체 페이지가 완전히 로드 되 면 실행 되는):
+`<Animations>` 노드 내에는 사용자 상호 작용을 통해 애니메이션을 시작 하는 5 가지 방법이 있습니다. 누락 된 요소는 전체 페이지가 완전히 로드 된 후 실행 되는 `<OnLoad>`입니다.
 
-- `<OnClick>` (컨트롤의 마우스 클릭)
-- `<OnHoverOut>` (마우스가 컨트롤)
-- `<OnHoverOver>` (중지 컨트롤을 마우스로 `<OnHoverOut>` 애니메이션)
-- `<OnMouseOut>` (마우스가 컨트롤)
-- `<OnMouseOver>` (중지 컨트롤을 마우스로 `<OnMouseOut>` 애니메이션)
+- `<OnClick>` (컨트롤에서 마우스 클릭)
+- `<OnHoverOut>` (마우스가 컨트롤을 벗어납니다.)
+- `<OnHoverOver>` (마우스 마우스로 컨트롤 가리키기, `<OnHoverOut>` 애니메이션 중지)
+- `<OnMouseOut>` (마우스가 컨트롤을 벗어나면)
+- `<OnMouseOver>` (`<OnMouseOut>` 애니메이션을 중지 하지 않고 컨트롤을 마우스로 가리키기)
 
-이 시나리오에서는 `<OnClick>` 사용 됩니다. 패널에서 사용자가 크기를 조정 하 고 동시에 페이드 아웃 합니다.
+이 시나리오에서는 `<OnClick>` 사용 됩니다. 사용자가 패널을 클릭 하면 크기가 조정 되 고 동시에 페이드 아웃 됩니다.
 
 [!code-aspx[Main](animating-in-response-to-user-interaction-vb/samples/sample5.aspx)]
 
-[![애니메이션을 시작 하는 마우스 클릭](animating-in-response-to-user-interaction-vb/_static/image2.png)](animating-in-response-to-user-interaction-vb/_static/image1.png)
+[마우스 클릭 ![애니메이션 시작](animating-in-response-to-user-interaction-vb/_static/image2.png)](animating-in-response-to-user-interaction-vb/_static/image1.png)
 
-마우스 클릭 애니메이션을 시작 ([클릭 하 여 큰 이미지 보기](animating-in-response-to-user-interaction-vb/_static/image3.png))
+마우스 클릭으로 애니메이션 시작 ([전체 크기 이미지를 보려면 클릭](animating-in-response-to-user-interaction-vb/_static/image3.png))
 
 > [!div class="step-by-step"]
 > [이전](picking-one-animation-out-of-a-list-vb.md)

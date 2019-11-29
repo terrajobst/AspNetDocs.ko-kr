@@ -1,61 +1,61 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/modalpopup/positioning-a-modalpopup-cs
-title: (C#) ModalPopup 위치 지정 | Microsoft Docs
+title: ModalPopup 위치 지정 (C#) | Microsoft Docs
 author: wenz
-description: AJAX Control Toolkit의 ModalPopup 컨트롤 클라이언트 쪽 의미를 사용 하 여 모달 팝업을 만드는 간단한 방법을 제공 합니다. 그러나 컨트롤을 제공 하지 않습니다는 중...
+description: AJAX 컨트롤 도구 키트의 ModalPopup 컨트롤은 클라이언트 쪽을 사용 하 여 모달 팝업을 만드는 간단한 방법을 제공 합니다. 그러나 컨트롤은 다음을 제공 하지 않습니다.
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: 1caac9d0-e21e-49d6-a8ff-e563a736d6ca
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/modalpopup/positioning-a-modalpopup-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 362e0f84ce336d320e016dd19d2dd286560f75c6
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 8034f5aeb5a1a80f1ea8cbc9d638f3dfb1a38706
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65115400"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74599002"
 ---
 # <a name="positioning-a-modalpopup-c"></a>ModalPopup 위치 지정(C#)
 
-by [Christian Wenz](https://github.com/wenz)
+[Christian Wenz](https://github.com/wenz) 별
 
-[코드를 다운로드](http://download.microsoft.com/download/2/4/0/24052038-f942-4336-905b-b60ae56f0dd5/ModalPopup4.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/modalpopup4CS.pdf)
+[코드 다운로드](https://download.microsoft.com/download/2/4/0/24052038-f942-4336-905b-b60ae56f0dd5/ModalPopup4.cs.zip) 또는 [PDF 다운로드](https://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/modalpopup4CS.pdf)
 
-> AJAX Control Toolkit의 ModalPopup 컨트롤 클라이언트 쪽 의미를 사용 하 여 모달 팝업을 만드는 간단한 방법을 제공 합니다. 그러나 컨트롤은 팝업의 위치는 기본 제공 기능을 제공 하지 않습니다.
+> AJAX 컨트롤 도구 키트의 ModalPopup 컨트롤은 클라이언트 쪽을 사용 하 여 모달 팝업을 만드는 간단한 방법을 제공 합니다. 그러나 컨트롤은 팝업을 배치 하는 기본 제공 기능을 제공 하지 않습니다.
 
 ## <a name="overview"></a>개요
 
-AJAX Control Toolkit의 ModalPopup 컨트롤 클라이언트 쪽 의미를 사용 하 여 모달 팝업을 만드는 간단한 방법을 제공 합니다. 그러나 컨트롤은 팝업의 위치는 기본 제공 기능을 제공 하지 않습니다.
+AJAX 컨트롤 도구 키트의 ModalPopup 컨트롤은 클라이언트 쪽을 사용 하 여 모달 팝업을 만드는 간단한 방법을 제공 합니다. 그러나 컨트롤은 팝업을 배치 하는 기본 제공 기능을 제공 하지 않습니다.
 
 ## <a name="steps"></a>단계
 
-ASP.NET AJAX와 Control Toolkit의 기능을 활성화 하기 위해는 `ScriptManager`합니다. 컨트롤 페이지의 아무 곳 이나 배치 해야 합니다 (하지만 내는 `<form>` 요소).
+ASP.NET AJAX 및 Control Toolkit의 기능을 활성화 하기 위해 `ScriptManager`합니다. 컨트롤은 페이지의 아무 곳에 나 배치 되어야 합니다 (`<form>` 요소 내).
 
 [!code-aspx[Main](positioning-a-modalpopup-cs/samples/sample1.aspx)]
 
-다음으로 모달 팝업으로 사용 되는 패널을 추가 합니다. 단추는 팝업을 닫는 데 사용 됩니다.
+다음으로, 모달 popup으로 사용 되는 패널을 추가 합니다. 단추는 팝업을 닫는 데 사용 됩니다.
 
 [!code-aspx[Main](positioning-a-modalpopup-cs/samples/sample2.aspx)]
 
-팝업이 표시 될 때마다 페이지에는 특정 위치에 배치 됩니다. 이 태스크에 대 한 클라이언트 쪽 JavaScript 함수가 만들어집니다. 패널에 액세스 하려면 먼저 시도 합니다. 성공 하면 패널의 위치는 CSS 및 JavaScript (에서 팝업의 위치는 변경)를 사용 하 여 설정 됩니다. 그러나 `ModalPopupExtender` 제어도 팝업 배치 하려고 시도 합니다. 따라서 JavaScript 코드를 반복적으로 팝업 0.1 초 마다 배치합니다.
+팝업이 표시 될 때마다 페이지의 특정 위치에 배치 됩니다. 이 작업의 경우 클라이언트 쪽 JavaScript 함수가 생성 됩니다. 먼저 패널에 액세스 하려고 시도 합니다. 성공적으로 수행 되 면 패널의 위치는 CSS 및 JavaScript를 사용 하 여 설정 됩니다 (에서 팝업의 위치 변경). 그러나 `ModalPopupExtender` 컨트롤은 팝업도 배치 하려고 합니다. 따라서 JavaScript 코드는 각각 1/10 초 마다 팝업을 반복 해 서 배치 합니다.
 
 [!code-html[Main](positioning-a-modalpopup-cs/samples/sample3.html)]
 
-알 수 있듯이의 반환 값은 `setTimeout()` JavaScript 메서드는 전역 변수에 저장 됩니다. 이렇게 하면 요청 시 팝업의 위치 지정 반복을 중지 하려면 사용 하는 `clearTimeout()` 메서드:
+여기에서 볼 수 있듯이 `setTimeout()` JavaScript 메서드의 반환 값은 전역 변수에 저장 됩니다. 이렇게 하면 `clearTimeout()` 메서드를 사용 하 여 요청 시 팝업의 반복적인 배치를 중지할 수 있습니다.
 
 [!code-javascript[Main](positioning-a-modalpopup-cs/samples/sample4.js)]
 
-이제 위해 남아 있는 모든 적절 한 때마다 이러한 함수를 호출 하는 브라우저를 확인 하는 것입니다. `movePanel()` 패널을 트리거하는 단추를 클릭할 때 JavaScript 함수를 호출 해야 합니다.
+이제는이 작업을 수행 하는 데 필요한 모든 작업을 수행 하는 것이 좋습니다. 패널을 트리거하는 단추를 클릭 하면 `movePanel()` JavaScript 함수를 호출 해야 합니다.
 
 [!code-aspx[Main](positioning-a-modalpopup-cs/samples/sample5.aspx)]
 
-하며 `stopMoving()` 팝업이이 있습니다 닫힐 때 함수 고려해 야 트리거할 수는 `ModalPopupExtender` 제어:
+`stopMoving()` 함수는 팝업을 닫을 때 실행 됩니다 .이는 `ModalPopupExtender` 컨트롤에서 트리거될 수 있습니다.
 
 [!code-aspx[Main](positioning-a-modalpopup-cs/samples/sample6.aspx)]
 
-[![지정 된 위치에서 모달 팝업 표시](positioning-a-modalpopup-cs/_static/image2.png)](positioning-a-modalpopup-cs/_static/image1.png)
+[모달 팝업이 지정 된 위치에 표시 ![](positioning-a-modalpopup-cs/_static/image2.png)](positioning-a-modalpopup-cs/_static/image1.png)
 
-모달 팝업에 지정 된 위치에 있는 표시 되는 경우 ([클릭 하 여 큰 이미지 보기](positioning-a-modalpopup-cs/_static/image3.png))
+모달 팝업이 지정 된 위치에 나타납니다 ([전체 크기 이미지를 보려면 클릭](positioning-a-modalpopup-cs/_static/image3.png)).
 
 > [!div class="step-by-step"]
 > [이전](handling-postbacks-from-a-modalpopup-cs.md)

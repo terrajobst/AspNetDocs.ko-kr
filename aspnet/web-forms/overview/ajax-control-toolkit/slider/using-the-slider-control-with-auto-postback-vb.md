@@ -1,61 +1,61 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/slider/using-the-slider-control-with-auto-postback-vb
-title: 슬라이더 컨트롤을 사용 하 여 포스트백 (VB) | Microsoft Docs
+title: 자동 포스트백에 슬라이더 컨트롤 사용 (VB) | Microsoft Docs
 author: wenz
-description: AJAX Control Toolkit의 슬라이더 컨트롤에 마우스를 사용 하 여 제어할 수 있는 그래픽 슬라이더를 제공 합니다. 슬라이더 autopost를 확인 하는 것이 불가능 하는 중...
+description: AJAX 컨트롤 도구 키트의 슬라이더 컨트롤은 마우스를 사용 하 여 제어할 수 있는 그래픽 슬라이더를 제공 합니다. 슬라이더를 autopost 하 게 만들 수 있습니다.
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: 41d1abba-97a5-4a45-9b44-d05624c19777
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/slider/using-the-slider-control-with-auto-postback-vb
 msc.type: authoredcontent
-ms.openlocfilehash: c4ee6642726b4209d09907f615ee3286ca00caa3
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: e7a3286bcf7ca844f5dcfa4848c15e0bd4767c0f
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65124615"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74598536"
 ---
-# <a name="using-the-slider-control-with-auto-postback-vb"></a>슬라이더 컨트롤을 사용 하 여 포스트백 (VB)
+# <a name="using-the-slider-control-with-auto-postback-vb"></a>자동 포스트백에 슬라이더 컨트롤 사용 (VB)
 
-by [Christian Wenz](https://github.com/wenz)
+[Christian Wenz](https://github.com/wenz) 별
 
-[코드를 다운로드](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/Slider1.vb.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/slider1VB.pdf)
+[코드 다운로드](https://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/Slider1.vb.zip) 또는 [PDF 다운로드](https://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/slider1VB.pdf)
 
-> AJAX Control Toolkit의 슬라이더 컨트롤에 마우스를 사용 하 여 제어할 수 있는 그래픽 슬라이더를 제공 합니다. 슬라이더 autopostback을 해당 값이 변경 되 면 확인 하는 것이 가능 합니다.
+> AJAX 컨트롤 도구 키트의 슬라이더 컨트롤은 마우스를 사용 하 여 제어할 수 있는 그래픽 슬라이더를 제공 합니다. 값이 변경 되 면 슬라이더를 autopostback 할 수 있습니다.
 
 ## <a name="overview"></a>개요
 
-AJAX Control Toolkit의 슬라이더 컨트롤에 마우스를 사용 하 여 제어할 수 있는 그래픽 슬라이더를 제공 합니다. 슬라이더 autopostback을 해당 값이 변경 되 면 확인 하는 것이 가능 합니다.
+AJAX 컨트롤 도구 키트의 슬라이더 컨트롤은 마우스를 사용 하 여 제어할 수 있는 그래픽 슬라이더를 제공 합니다. 값이 변경 되 면 슬라이더를 autopostback 할 수 있습니다.
 
 ## <a name="steps"></a>단계
 
-슬라이더를 변경 하면 자동으로 다시 게시 하려면 두 텍스트 상자에 특성을 추가 해야 `AutoPostBack="true"`: 자체 슬라이더에 텍스트 상자 및 슬라이더의 위치를 보유 하는 텍스트 상자입니다. 에 대 한 필수 태그는 다음과 같습니다.
+변경 시 슬라이더가 자동으로 다시 게시 되도록 하기 위해 두 텍스트 상자에는 `AutoPostBack="true"`특성이 필요 합니다. 슬라이더 자체가 될 텍스트 상자와 슬라이더의 위치를 포함 하는 텍스트 상자가 필요 합니다. 이에 대 한 필수 태그는 다음과 같습니다.
 
 [!code-aspx[Main](using-the-slider-control-with-auto-postback-vb/samples/sample1.aspx)]
 
-`SliderExtender` ASP.NET AJAX Control Toolkit에서 컨트롤의 두 텍스트 상자에 슬라이더 기능을 할당 합니다.
+ASP.NET AJAX 컨트롤 도구 키트의 `SliderExtender` 컨트롤은 슬라이더 기능을 두 개의 텍스트 상자에 할당 합니다.
 
 [!code-aspx[Main](using-the-slider-control-with-auto-postback-vb/samples/sample2.aspx)]
 
-추가 레이블 요소 포스트백의 사용자에 게 알려 나중에 사용 됩니다.
+추가 레이블 요소는 나중에 다시 게시를 사용자에 게 알리는 데 사용 됩니다.
 
 [!code-aspx[Main](using-the-slider-control-with-auto-postback-vb/samples/sample3.aspx)]
 
-마지막으로 `ScriptManager` ASP.NET AJAX의 컨트롤 컨트롤 도구 키트 작동 하려면 필요한 JavaScript를 로드 합니다.
+마지막으로 ASP.NET AJAX의 `ScriptManager` 제어는 컨트롤 Toolkit이 작동 하는 데 필요한 JavaScript를 로드 합니다.
 
 [!code-aspx[Main](using-the-slider-control-with-auto-postback-vb/samples/sample4.aspx)]
 
-이제 슬라이더는 포스트백; 서버 쪽에서이 이벤트 수 발견 되 고 취해야 합니다.
+이제 슬라이더가 다시 게시 됩니다. 서버 쪽에서이 이벤트를 catch 하 고 처리할 수 있습니다.
 
 [!code-aspx[Main](using-the-slider-control-with-auto-postback-vb/samples/sample5.aspx)]
 
-[![포스트백을 트리거하는 슬라이더를 이동 합니다.](using-the-slider-control-with-auto-postback-vb/_static/image2.png)](using-the-slider-control-with-auto-postback-vb/_static/image1.png)
+[슬라이더를 이동 ![포스트백이 트리거됩니다.](using-the-slider-control-with-auto-postback-vb/_static/image2.png)](using-the-slider-control-with-auto-postback-vb/_static/image1.png)
 
-포스트백을 트리거하는 슬라이더를 이동 ([클릭 하 여 큰 이미지 보기](using-the-slider-control-with-auto-postback-vb/_static/image3.png))
+슬라이더를 이동 하면 다시 게시가 트리거됩니다 ([전체 크기 이미지를 보려면 클릭](using-the-slider-control-with-auto-postback-vb/_static/image3.png)).
 
-[![레이블을이 변경의 날짜 이후에 작성 된](using-the-slider-control-with-auto-postback-vb/_static/image5.png)](using-the-slider-control-with-auto-postback-vb/_static/image4.png)
+[이후에 ![이 변경 날짜는 레이블에 기록 됩니다.](using-the-slider-control-with-auto-postback-vb/_static/image5.png)](using-the-slider-control-with-auto-postback-vb/_static/image4.png)
 
-그런 다음이 변경의 날짜 레이블을 작성 됩니다 ([클릭 하 여 큰 이미지 보기](using-the-slider-control-with-auto-postback-vb/_static/image6.png))
+그런 다음이 변경 날짜는 레이블에 기록 됩니다 ([전체 크기 이미지를 보려면 클릭](using-the-slider-control-with-auto-postback-vb/_static/image6.png)).
 
 > [!div class="step-by-step"]
 > [이전](databinding-the-slider-control-cs.md)

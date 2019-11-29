@@ -1,20 +1,20 @@
 ---
 uid: webhooks/receiving/dependencies
-title: ASP.NET 웹 후크 수신기 종속성 | Microsoft Docs
+title: ASP.NET WebHooks 수신기 종속성 | Microsoft Docs
 author: rick-anderson
-description: 수신기 종속성 및 ASP.NET Webhook의 종속성 주입 합니다.
+description: ASP.NET 웹 후크에 받는 사람 종속성 및 종속성 주입.
 ms.author: riande
 ms.date: 01/17/2012
 ms.assetid: 5125e483-c2bb-435b-8cd1-21d3499bfaaf
-ms.openlocfilehash: c44cfe3ed310aa728a989b108c410e8786e4f514
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 477b8828209d0da1d485ef883b0f99b4e1b9b5bf
+ms.sourcegitcommit: 6f0e10e4ca61a1e5534b09c655fd35cdc6886c8a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57048730"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564867"
 ---
-# <a name="aspnet-webhooks-receiver-dependencies"></a>ASP.NET 웹 후크 수신기 종속성
+# <a name="aspnet-webhooks-receiver-dependencies"></a>ASP.NET WebHooks 수신기 종속성
 
-Microsoft ASP.NET 웹 후크는 염두에서 종속성 주입을 사용 하 여 설계 되었습니다. 대부분의 종속성 시스템에서 종속성 주입 엔진을 사용 하는 대체 구현으로 바꿀 수 있습니다.
+Microsoft ASP.NET 웹 후크는 종속성 주입을 염두에 두면 설계 되었습니다. 시스템의 대부분 종속성은 종속성 주입 엔진을 사용 하 여 대체 구현으로 바꿀 수 있습니다.
 
-참조 하세요 [DependencyScopeExtensions](https://github.com/aspnet/WebHooks/blob/master/src/Microsoft.AspNet.WebHooks.Receivers/Extensions/DependencyScopeExtensions.cs) 수신기 종속성 목록은 합니다. 종속성 없이 등록 하는 경우에 기본 구현을 사용 됩니다. 참조 하세요 [ReceiverServices](https://github.com/aspnet/WebHooks/blob/master/src/Microsoft.AspNet.WebHooks.Receivers/Services/ReceiverServices.cs) 목록은 기본 구현입니다.
+수신자 종속성 목록은 [DependencyScopeExtensions](https://github.com/aspnet/aspnetWebHooks/blob/master/src/Microsoft.AspNet.WebHooks.Receivers/Extensions/DependencyScopeExtensions.cs) 를 참조 하세요. 종속성이 등록 되지 않은 경우 기본 구현이 사용 됩니다. 기본 구현 목록은 [ReceiverServices](https://github.com/aspnet/aspnetWebHooks/blob/master/src/Microsoft.AspNet.WebHooks.Receivers/Services/ReceiverServices.cs) 를 참조 하세요.

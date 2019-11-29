@@ -1,61 +1,61 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/animation/executing-several-animations-at-the-same-time-cs
-title: 여러 애니메이션을 동시에 (C#) 실행 | Microsoft Docs
+title: 동시에 여러 애니메이션 실행 (C#) | Microsoft Docs
 author: wenz
-description: ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이지만 컨트롤에 애니메이션을 추가 하는 전체 프레임 워크 아닙니다. 떨어져서를 실행할 수 있도록 하는 중...
+description: ASP.NET AJAX 컨트롤 도구 키트의 애니메이션 컨트롤은 컨트롤이 아니라 컨트롤에 애니메이션을 추가 하기 위한 전체 프레임 워크입니다. Severa을 실행할 수 있습니다.
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: 219149e1-3ee9-4b79-8fe4-7433f6b7d15b
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/executing-several-animations-at-the-same-time-cs
 msc.type: authoredcontent
-ms.openlocfilehash: f6ca48ff8bc4be982e0eff55d8d9c3385176897b
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: fe71feccbcbc4ee8e9cdc09d6220de6a53dd2d2b
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65108227"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74575379"
 ---
-# <a name="executing-several-animations-at-the-same-time-c"></a>(C#) 동시에 여러 애니메이션을 실행합니다.
+# <a name="executing-several-animations-at-the-same-time-c"></a>동시에 여러 애니메이션 실행 (C#)
 
-by [Christian Wenz](https://github.com/wenz)
+[Christian Wenz](https://github.com/wenz) 별
 
-[코드를 다운로드](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation2.cs.zip) 또는 [PDF 다운로드](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation2CS.pdf)
+[코드 다운로드](https://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation2.cs.zip) 또는 [PDF 다운로드](https://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation2CS.pdf)
 
-> ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이지만 컨트롤에 애니메이션을 추가 하는 전체 프레임 워크 아닙니다. 병렬 방식으로 여러 애니메이션을 실행할 수 있습니다.
+> ASP.NET AJAX 컨트롤 도구 키트의 애니메이션 컨트롤은 컨트롤이 아니라 컨트롤에 애니메이션을 추가 하기 위한 전체 프레임 워크입니다. 이를 통해 여러 애니메이션을 병렬 방식으로 실행할 수 있습니다.
 
 ## <a name="overview"></a>개요
 
-ASP.NET AJAX Control Toolkit에서 애니메이션 컨트롤 컨트롤 뿐 이지만 컨트롤에 애니메이션을 추가 하는 전체 프레임 워크 아닙니다. 병렬 방식으로 여러 애니메이션을 실행할 수 있습니다.
+ASP.NET AJAX 컨트롤 도구 키트의 애니메이션 컨트롤은 컨트롤이 아니라 컨트롤에 애니메이션을 추가 하기 위한 전체 프레임 워크입니다. 이를 통해 여러 애니메이션을 병렬 방식으로 실행할 수 있습니다.
 
 ## <a name="steps"></a>단계
 
-첫째, 포함 된 `ScriptManager` 페이지 그런 다음 ASP.NET AJAX 라이브러리 로드 되 면 컨트롤 도구 키트를 사용 하 여:
+먼저 페이지에 `ScriptManager`를 포함 합니다. 그런 다음 ASP.NET AJAX 라이브러리가 로드 되어 컨트롤 도구 키트를 사용할 수 있습니다.
 
 [!code-aspx[Main](executing-several-animations-at-the-same-time-cs/samples/sample1.aspx)]
 
-그러면 다음과 같은 텍스트 패널에 애니메이션 적용 됩니다.
+애니메이션은 다음과 같은 텍스트 패널에 적용 됩니다.
 
 [!code-aspx[Main](executing-several-animations-at-the-same-time-cs/samples/sample2.aspx)]
 
-패널에 대 한 연결 된 CSS 클래스에 유용한 배경 색을 정의 하 고 패널 고정된 너비를 설정할 수도:
+패널의 연결 된 CSS 클래스에서 좋은 배경색을 정의 하 고 패널의 고정 폭도 설정 합니다.
 
 [!code-css[Main](executing-several-animations-at-the-same-time-cs/samples/sample3.css)]
 
-그런 다음 추가 `AnimationExtender` 페이지에서 제공 하는 `ID`, `TargetControlID` 특성과 필수 항목 이지만 `runat="server"`:
+그런 다음 `ID`, `TargetControlID` 특성 및 obligatory `runat="server"`를 제공 하 여 페이지에 `AnimationExtender`를 추가 합니다.
 
 [!code-aspx[Main](executing-several-animations-at-the-same-time-cs/samples/sample4.aspx)]
 
-내 합니다 `<Animations>` 노드를 사용 하 여 `<OnLoad>` 페이지가 완전히 로드 되 면 애니메이션을 실행 합니다. 일반적으로 `<OnLoad>` 만 하나의 애니메이션을 허용 합니다. 애니메이션 프레임 워크를 사용 하 여 여러 애니메이션을 조인할 수는 `<Parallel>` 요소입니다. 내에서 모든 애니메이션이 `<Parallel>` 동시에 실행 됩니다.
+`<Animations>` 노드 내에서 `<OnLoad>`를 사용 하 여 페이지가 완전히 로드 되 면 애니메이션을 실행 합니다. 일반적으로 `<OnLoad>`는 하나의 애니메이션만 허용 합니다. 애니메이션 프레임 워크를 사용 하면 `<Parallel>` 요소를 사용 하 여 여러 애니메이션을 하나로 조인할 수 있습니다. `<Parallel>` 내의 모든 애니메이션은 동시에 실행 됩니다.
 
-다음은에 대 한 가능한 태그를 `AnimationExtender` 제어, 페이드아웃 및 동시 패널 크기 조정:
+다음은 `AnimationExtender` 컨트롤에 사용할 수 있는 태그 이며, 동시에 패널을 페이드 아웃 하 고 크기를 조정 합니다.
 
 [!code-aspx[Main](executing-several-animations-at-the-same-time-cs/samples/sample5.aspx)]
 
-실제로 및: 패널 다음 크기 조정 (너비 보다 더 커지고 및 높이 양분) 표시 되 고 동시에 페이드 아웃이 스크립트를 실행 합니다.
+그리고 실제로이 스크립트를 실행 하면 패널이 표시 되 고 크기를 조정 하 여 (너비를 tripling 하 고 높이를 나누어) 동시에 페이드 아웃 합니다.
 
-[![패널 페이드아웃 되며 (해당 콘텐츠를 브라우저의 렌더링 엔진 덕분 포함) 크기 조정](executing-several-animations-at-the-same-time-cs/_static/image2.png)](executing-several-animations-at-the-same-time-cs/_static/image1.png)
+[패널을 페이드 아웃 하 고 크기를 조정 하는 ![(브라우저의 렌더링 엔진 덕분에 콘텐츠 포함)](executing-several-animations-at-the-same-time-cs/_static/image2.png)](executing-several-animations-at-the-same-time-cs/_static/image1.png)
 
-패널 페이드아웃 되며 (해당 콘텐츠를 브라우저의 렌더링 엔진 덕분 포함) 크기 조정 ([클릭 하 여 큰 이미지 보기](executing-several-animations-at-the-same-time-cs/_static/image3.png))
+패널을 페이드 아웃 하 고 크기를 조정 합니다 (브라우저의 렌더링 엔진 덕분에 콘텐츠 포함). ([전체 이미지를 보려면 클릭](executing-several-animations-at-the-same-time-cs/_static/image3.png))
 
 > [!div class="step-by-step"]
 > [이전](adding-animation-to-a-control-cs.md)
