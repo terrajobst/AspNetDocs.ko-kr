@@ -2310,7 +2310,7 @@
               items:
                 - name: '1부: 개요 및 파일->새 프로젝트'
                   href: mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-1.md
-                - name: '2부: 컨트롤러'
+                - name: '2부: Controllers'
                   href: mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-2.md
                 - name: '3부: 보기 및 ViewModels'
                   href: mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-3.md
@@ -2671,7 +2671,7 @@
               items:
                 - name: 'MVC Music Store 1부: 소개, 도구 및 프로젝트 구조'
                   href: mvc/videos/mvc-2/music-store/mvc-music-store-part-1-intro-tools-and-project-structure.md
-                - name: 'MVC Music Store 2부: 컨트롤러'
+                - name: 'MVC Music Store 2부: Controllers'
                   href: mvc/videos/mvc-2/music-store/mvc-music-store-part-2-controllers.md
                 - name: 'MVC Music Store 3부: 보기 및 ViewModels'
                   href: mvc/videos/mvc-2/music-store/mvc-music-store-part-3-views-and-viewmodels.md
@@ -3768,6 +3768,8 @@
   items:
     - name: 백서
       href: whitepapers/overview.md
+    - name: ASP.NET SameSite
+      href: SameSite/system-web-samesite.md
     - name: ASP.NET 4 및 Visual Studio 2010 웹 개발 개요
       href: whitepapers/aspnet4/index.md
       items:
