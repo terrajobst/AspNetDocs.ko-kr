@@ -5,12 +5,12 @@ description: SameSite 쿠키 및 OWIN (Open Web Interface for .NET) 사용
 ms.author: riande
 ms.date: 12/6/2019
 uid: owin-samesite
-ms.openlocfilehash: fc64315e8c3614e460c9a8d551bcb0848b3fe8f9
-ms.sourcegitcommit: 516a168548252ff0eaae2c02ec4bd9ffcfa8375e
+ms.openlocfilehash: ac5ae24eeb9e8e1cc6296667a4bebef72c3eb62c
+ms.sourcegitcommit: 7b1e1784213dd4c301635f9e181764f3e2f94162
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74951883"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74993081"
 ---
 # <a name="samesite-cookies-and-the-open-web-interface-for-net-owin"></a>SameSite 쿠키 및 OWIN (Open Web Interface for .NET)
 
@@ -39,7 +39,7 @@ ms.locfileid: "74951883"
 
 `SystemWebCookieManager`는 .NET 4.7.2 `System.Web` Api에 따라 `SameSite` 지원을 사용 하도록 설정 하 고 패치를 사용 하 여 동작을 변경 합니다.
 
-`SystemWebCookieManager`를 사용 하는 이유는 [OWIN 및 system.web response 쿠키 통합 문제](https://github.com/aspnet/AspNetKatana/wiki/System.Web-response-cookie-integration-issues)에 설명 되어 있습니다. `System.Web`에서 실행 하는 경우 `SystemWebCookieManager` 권장 됩니다. 
+`SystemWebCookieManager`를 사용 하는 이유는 [OWIN 및 system.web response 쿠키 통합 문제](https://github.com/aspnet/AspNetKatana/wiki/System.Web-response-cookie-integration-issues)에 설명 되어 있습니다. `System.Web`에서 실행 하는 경우 `SystemWebCookieManager` 권장 됩니다.
 
 다음 코드는 `Lax``SameSite`를 설정 합니다.
 
@@ -74,9 +74,7 @@ owinContext.Response.Cookies.Append("My Key", "My Value", new CookieOptions()
 * 기본적으로 `SameSite=Lax`로 처리 되는 쿠키를 지정 합니다.
 * 교차 사이트 배달을 사용 하도록 설정 하기 위해 `SameSite=None`를 명시적으로 어설션하는 쿠키를 `Secure`으로 표시 해야 합니다. `None`은 옵트아웃 (opt out) 할 새 항목입니다.
 * 는 기본적으로 [2 월 2020](https://blog.chromium.org/2019/10/developers-get-ready-for-new.html)에 [Chrome](https://chromestatus.com/feature/5088147346030592) 에서 사용 하도록 예약 됩니다. 브라우저에서 2019의이 표준으로 이동 하기 시작 했습니다.
-* 는 다음 KB에 설명 된 대로 발급 된 패치에 의해 지원 됩니다.
-  * [기술 자료 문서 4531182](https://support.microsoft.com/help/4531182/kb4531182)
-  * [기술 자료 문서 4524421](https://support.microsoft.com/help/4524421/kb4524421)
+* 는 KB 문서에 설명 된 대로 발급 된 패치에 의해 지원 됩니다. 자세한 내용은 <xref:samesite/kbs-samesite>를 참조하세요.
 
 <a name="sob"></a>
 
