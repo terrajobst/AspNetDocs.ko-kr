@@ -3,14 +3,14 @@ title: ASP.NET에서 SameSite 쿠키 사용
 author: rick-anderson
 description: 를 사용 하 여 ASP.NET에서 쿠키를 SameSite 하는 방법을 알아봅니다.
 ms.author: riande
-ms.date: 12/03/2019
+ms.date: 1/22/2019
 uid: samesite/system-web-samesite
-ms.openlocfilehash: 47a3d7576edb0e818c39b32fbbcb98475248e18e
-ms.sourcegitcommit: 7b1e1784213dd4c301635f9e181764f3e2f94162
+ms.openlocfilehash: d2160bd9aeb93398b49b3a0e5e7a8a4404a5bc63
+ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74993068"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76519195"
 ---
 # <a name="work-with-samesite-cookies-in-aspnet"></a>ASP.NET에서 SameSite 쿠키 사용
 
@@ -25,7 +25,7 @@ SameSite은 CSRF (교차 사이트 요청 위조) 공격에 대 한 보호를 �
 
 `None` 매개 변수를 사용 하면 이전 [2016 초안 표준](https://tools.ietf.org/html/draft-west-first-party-cookies-07) (예: iOS 12)을 구현한 클라이언트에서 호환성 문제가 발생 합니다. 이 문서의 [이전 브라우저 지원](#sob) 을 참조 하세요.
 
-쿠키를 내보내는 각 ASP.NET Core 구성 요소는 SameSite가 적절 한지 결정 해야 합니다.
+쿠키를 내보내는 각 ASP.NET 구성 요소는 SameSite가 적절 한지 결정 해야 합니다.
 
 ## <a name="api-usage-with-samesite"></a>SameSite를 사용 하는 API 사용
 
@@ -44,6 +44,10 @@ SameSite 지원은 [2016 초안 표준을](https://tools.ietf.org/html/draft-wes
 * 교차 사이트 배달을 사용 하도록 설정 하기 위해 `SameSite=None`를 명시적으로 어설션하는 쿠키를 `Secure`으로 표시 해야 합니다. `None`은 옵트아웃 (opt out) 할 새 항목입니다.
 * 는 위에 나열 된 KB에 설명 된 대로 발급 된 패치에 의해 지원 됩니다.
 * 는 기본적으로 [2 월 2020](https://blog.chromium.org/2019/10/developers-get-ready-for-new.html)에 [Chrome](https://chromestatus.com/feature/5088147346030592) 에서 사용 하도록 예약 됩니다. 브라우저에서 2019의이 표준으로 이동 하기 시작 했습니다.
+
+### <a name="azure-app-servicesamesite-cookie-handling"></a>Azure App Service-SameSite 쿠키 처리
+
+자세한 내용은 [Azure App Service-SameSite 쿠키 처리 및 .NET Framework 4.7.2 patch](https://azure.microsoft.com/updates/app-service-samesite-cookie-update/) 를 참조 하세요.
 
 <a name="sob"></a>
 

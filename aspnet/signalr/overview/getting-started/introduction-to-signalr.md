@@ -8,12 +8,12 @@ ms.date: 06/10/2014
 ms.assetid: 0fab5e35-8c1f-43d4-8635-b8aba8766a71
 msc.legacyurl: /signalr/overview/getting-started/introduction-to-signalr
 msc.type: authoredcontent
-ms.openlocfilehash: 11b494b4839c646b018098c76a8a9ae0a2169757
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: 8dbc31a5c8d59fa55dc5b513c1a51d24d18a685f
+ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74600499"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76519403"
 ---
 # <a name="introduction-to-signalr"></a>SignalR 소개
 
@@ -27,7 +27,7 @@ ms.locfileid: "74600499"
 > 
 > 이 자습서와 페이지 맨 아래에 있는 의견에서 개선할 수 있는 방법에 대 한 의견을 남겨 주세요. 자습서와 직접 관련 되지 않은 질문이 있는 경우 [ASP.NET SignalR 포럼](https://forums.asp.net/1254.aspx/1?ASP+NET+SignalR) 또는 [StackOverflow.com](https://stackoverflow.com/questions/tagged/signalr)에 게시할 수 있습니다.
 
-## <a name="what-is-signalr"></a>SignalR 란?
+## <a name="what-is-signalr"></a>SignalR이란?
 
 ASP.NET SignalR는 응용 프로그램에 실시간 웹 기능을 추가 하는 프로세스를 간소화 하는 ASP.NET 개발자를 위한 라이브러리입니다. 실시간 웹 기능은 서버가 클라이언트에서 새 데이터를 요청할 때까지 대기 하는 것이 아니라 서버 코드에서 연결 된 클라이언트에 콘텐츠를 즉시 푸시하는 기능을 제공 합니다.
 
@@ -39,11 +39,19 @@ SignalR는 서버 쪽 .NET 코드에서 클라이언트 브라우저 (및 다른
 
 ![SignalR를 사용 하 여 메서드 호출](introduction-to-signalr/_static/image1.png)
 
-SignalR는 연결 관리를 자동으로 처리 하며 대화방 처럼 연결 된 모든 클라이언트에 동시에 메시지를 브로드캐스트할 수 있습니다. 특정 클라이언트에 메시지를 보낼 수도 있습니다. 클라이언트와 서버 간의 연결은 각 통신에 대해 다시 설정 되는 클래식 HTTP 연결과 달리 영구적입니다.
+SignalR은 연결 관리를 자동으로 처리하며, 대화방처럼 메시지를 연결된 모든 클라이언트에 동시에 브로드캐스트할 수 있습니다. 메시지를 특정 클라이언트에 보낼 수도 있습니다. 클라이언트와 서버 간의 연결은 기존 HTTP 연결과 달리 영구적이며, 각 통신에 대해 다시 설정됩니다.
 
 SignalR는 "서버 푸시" 기능을 지원 합니다 .이 기능은 서버 코드가 현재 웹에서 자주 사용 하는 요청-응답 모델 대신 RPC (원격 프로시저 호출)를 사용 하 여 브라우저에서 클라이언트 코드를 호출할 수 있습니다.
 
-SignalR 응용 프로그램은 Service Bus, SQL Server 또는 [Redis](http://redis.io)를 사용 하 여 수천 개의 클라이언트로 확장할 수 있습니다.
+SignalR 응용 프로그램은 기본 제공 및 타사 스케일 아웃 공급자를 사용 하 여 수천 개의 클라이언트로 확장할 수 있습니다.
+
+기본 제공 공급자는 다음과 같습니다.
+* [Service Bus](https://www.nuget.org/packages/Microsoft.AspNet.SignalR.ServiceBus3)
+* [SQL Server](https://www.nuget.org/packages/Microsoft.AspNet.SignalR.SqlServer)
+* [Redis](https://www.nuget.org/packages/Microsoft.AspNet.SignalR.Redis)
+
+타사 공급자는 다음과 같습니다.
+* [NCache](https://www.alachisoft.com/ncache/asp-net-core-signalr.html).
 
 SignalR는 [GitHub](https://github.com/signalr)를 통해 액세스할 수 있는 오픈 소스입니다.
 

@@ -8,20 +8,20 @@ ms.date: 03/26/2015
 ms.assetid: d4911cb3-1afb-4805-b860-10818c4b1280
 msc.legacyurl: /mvc/overview/security/create-an-aspnet-mvc-5-web-app-with-email-confirmation-and-password-reset
 msc.type: authoredcontent
-ms.openlocfilehash: 07f5b290b73f75000e6f29fe09e4dc25e144452f
-ms.sourcegitcommit: 969e7db924ebad3cc0f0cb0d65d148e8b9221b9a
+ms.openlocfilehash: 6169c972ad0f4ee2079d3638c54a5accc4b8b3de
+ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899704"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76519351"
 ---
 # <a name="create-a-secure-aspnet-mvc-5-web-app-with-log-in-email-confirmation-and-password-reset-c"></a>로그인, 전자 메일 확인 및 암호 재설정 기능이 있는 보안 ASP.NET MVC 5 웹앱 만들기(C#)
 
-[Rick Anderson]((https://twitter.com/RickAndMSFT))
+[Rick Anderson](https://twitter.com/RickAndMSFT)
 
 이 자습서에서는 ASP.NET Identity 멤버 자격 시스템을 사용 하 여 전자 메일 확인 및 암호 재설정으로 ASP.NET MVC 5 웹 앱을 빌드하는 방법을 보여 줍니다.
 
-.NET Core를 사용 하는이 자습서의 업데이트 된 버전은 [계정 확인 및 암호 복구 ASP.NET Core [/aspnet/core/security/authentication/accconfirm)를 참조 하세요.
+.NET Core를 사용 하는이 자습서의 업데이트 된 버전은 [ASP.NET Core의 계정 확인 및 암호 복구](/aspnet/core/security/authentication/accconfirm)를 참조 하세요.
 
 <a id="createMvc"></a>
 ## <a name="create-an-aspnet-mvc-app"></a>ASP.NET MVC 앱 만들기

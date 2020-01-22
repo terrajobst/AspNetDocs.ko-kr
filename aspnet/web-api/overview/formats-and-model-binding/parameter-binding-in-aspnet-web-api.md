@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: e42c8388-04ed-4341-9fdb-41b1b4c06320
 msc.legacyurl: /web-api/overview/formats-and-model-binding/parameter-binding-in-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 5386532ab581e023d93d16a5d4107e07f40b986f
-ms.sourcegitcommit: 4b324a11131e38f920126066b94ff478aa9927f8
+ms.openlocfilehash: 032368f94ce32cf6231458649e8fdd42bee685e9
+ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "70985811"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76519260"
 ---
 # <a name="parameter-binding-in-aspnet-web-api"></a>ASP.NET Web API의 매개 변수 바인딩
 
@@ -26,14 +26,14 @@ ms.locfileid: "70985811"
 
 기본적으로 웹 API는 다음 규칙을 사용 하 여 매개 변수를 바인딩합니다.
 
-- 매개 변수가 "simple" 형식이 면 Web API는 URI에서 값을 가져오려고 시도 합니다. 단순 형식에는 .NET [기본 형식](https://msdn.microsoft.com/library/system.type.isprimitive.aspx) (**int**, **bool**, **Double**등)이 *포함 되 고* **TimeSpan**, **DateTime**, **Guid**, **decimal**및 **문자열과**형식의 모든 형식이 포함 됩니다. 문자열에서 변환할 수 있는 변환기입니다. 형식 변환기에 대 한 자세한 내용은 뒷부분에 있습니다.
+- 매개 변수가 "simple" 형식이 면 Web API는 URI에서 값을 가져오려고 시도 합니다. 단순 형식에는 .NET [기본 형식](https://msdn.microsoft.com/library/system.type.isprimitive.aspx) (**int**, **bool**, **double**등)과 **TimeSpan**, **DateTime**, **Guid**, **decimal**및 **string**과 문자열에서 변환할 수 있는 형식 변환기가 *있는 모든 형식이* 포함 됩니다. 형식 변환기에 대 한 자세한 내용은 뒷부분에 있습니다.
 - 복합 형식의 경우 Web API는 [미디어 형식 포맷터](media-formatters.md)를 사용 하 여 메시지 본문에서 값을 읽으려고 시도 합니다.
 
 예를 들어 다음은 일반적인 Web API controller 메서드입니다.
 
 [!code-csharp[Main](parameter-binding-in-aspnet-web-api/samples/sample1.cs)]
 
-*Id* 매개 변수 &quot;는 단순&quot; 형식 이므로 Web API는 요청 URI에서 값을 가져오려고 시도 합니다. *항목* 매개 변수는 복합 유형 이므로 Web API는 미디어 유형 포맷터를 사용 하 여 요청 본문에서 값을 읽습니다.
+*Id* 매개 변수는 &quot;단순&quot; 유형 이므로 Web API는 요청 URI에서 값을 가져오려고 시도 합니다. *항목* 매개 변수는 복합 유형 이므로 Web API는 미디어 유형 포맷터를 사용 하 여 요청 본문에서 값을 읽습니다.
 
 URI에서 값을 가져오기 위해 Web API는 경로 데이터 및 URI 쿼리 문자열을 찾습니다. 경로 데이터는 라우팅 시스템이 URI를 구문 분석 하 여 경로와 일치 하는 경우에 채워집니다. 자세한 내용은 [라우팅 및 작업 선택](../web-api-routing-and-actions/routing-and-action-selection.md)을 참조 하세요.
 
@@ -41,11 +41,11 @@ URI에서 값을 가져오기 위해 Web API는 경로 데이터 및 URI 쿼리 
 
 ## <a name="using-fromuri"></a>Using [FromUri]
 
-Web API가 URI에서 복합 형식을 읽도록 하려면 **[Fromuri]** 특성을 매개 변수에 추가 합니다. 다음 예제에서는 URI `GeoPoint` `GeoPoint` 에서을 가져오는 컨트롤러 메서드와 함께 형식을 정의 합니다.
+Web API가 URI에서 복합 형식을 읽도록 하려면 **[Fromuri]** 특성을 매개 변수에 추가 합니다. 다음 예제에서는 URI에서 `GeoPoint`를 가져오는 컨트롤러 메서드와 함께 `GeoPoint` 형식을 정의 합니다.
 
 [!code-csharp[Main](parameter-binding-in-aspnet-web-api/samples/sample2.cs)]
 
-클라이언트는 쿼리 문자열에 위도 및 경도 값을 입력할 수 있으며 Web API는이 값을 사용 하 여 `GeoPoint`를 생성 합니다. 예:
+클라이언트는 쿼리 문자열에 위도 및 경도 값을 입력할 수 있으며 Web API는이 값을 사용 하 여 `GeoPoint`를 생성 합니다. 예를 들면 다음과 같습니다.:
 
 `http://localhost/api/values/?Latitude=47.678558&Longitude=-122.130989`
 
@@ -59,7 +59,7 @@ Web API가 요청 본문에서 단순 유형을 읽도록 하려면 **[Frombody]
 
 [!code-console[Main](parameter-binding-in-aspnet-web-api/samples/sample4.cmd)]
 
-매개 변수에 [FromBody]가 있는 경우 Web API는 Content-type 헤더를 사용 하 여 포맷터를 선택 합니다. 이 예제에서 콘텐츠 형식은 application/json &quot;&quot; 이 고 요청 본문은 json 개체가 아닌 원시 json 문자열입니다.
+매개 변수에 [FromBody]가 있는 경우 Web API는 Content-type 헤더를 사용 하 여 포맷터를 선택 합니다. 이 예제에서 콘텐츠 형식은 &quot;application/json&quot; 이며, 요청 본문은 JSON 개체가 아닌 원시 JSON 문자열입니다.
 
 메시지 본문에서 최대 하나의 매개 변수만 읽을 수 있습니다. 따라서이 작업은 작동 하지 않습니다.
 
@@ -71,11 +71,11 @@ Web API가 요청 본문에서 단순 유형을 읽도록 하려면 **[Frombody]
 
 웹 api에서 **TypeConverter** 를 만들고 문자열 변환을 제공 하 여 클래스를 단순 형식으로 처리 하도록 할 수 있습니다. 즉, web API가 URI에서 해당 클래스를 바인딩하려는 것을 시도 합니다.
 
-다음 코드에서는 지리적 지점을 `GeoPoint` 나타내는 클래스와 문자열에서 `GeoPoint` 인스턴스로 변환 하는 **TypeConverter** 를 보여 줍니다. 클래스 `GeoPoint` 는 **[TypeConverter]** 특성으로 데코레이팅 되어 형식 변환기를 지정 합니다. (이 예제는 Mike 정지의 블로그 게시물 [MVC/WebAPI에서 작업 서명의 사용자 지정 개체에 바인딩하는 방법](https://blogs.msdn.com/b/jmstall/archive/2012/04/20/how-to-bind-to-custom-objects-in-action-signatures-in-mvc-webapi.aspx)에 대해 설명 했습니다.)
+다음 코드에서는 지리적 지점을 나타내는 `GeoPoint` 클래스와 문자열에서 `GeoPoint` 인스턴스로 변환 하는 **TypeConverter** 를 보여 줍니다. `GeoPoint` 클래스는 **[TypeConverter]** 특성으로 데코레이팅 되어 형식 변환기를 지정 합니다. (이 예제는 Mike 정지의 블로그 게시물 [MVC/WebAPI에서 작업 서명의 사용자 지정 개체에 바인딩하는 방법](https://blogs.msdn.com/b/jmstall/archive/2012/04/20/how-to-bind-to-custom-objects-in-action-signatures-in-mvc-webapi.aspx)에 대해 설명 했습니다.)
 
 [!code-csharp[Main](parameter-binding-in-aspnet-web-api/samples/sample6.cs)]
 
-이제 Web API는 단순 `GeoPoint` 유형으로 처리 합니다. 즉, URI에서 매개 변수 `GeoPoint` 를 바인딩하려 려 합니다. 매개 변수에 **[Fromuri]** 를 포함할 필요가 없습니다.
+이제 Web API는 `GeoPoint`를 단순 형식으로 처리 합니다. 즉, URI에서 `GeoPoint` 매개 변수를 바인딩하려고 시도 합니다. 매개 변수에 **[Fromuri]** 를 포함할 필요가 없습니다.
 
 [!code-csharp[Main](parameter-binding-in-aspnet-web-api/samples/sample7.cs)]
 
@@ -91,7 +91,7 @@ Web API가 요청 본문에서 단순 유형을 읽도록 하려면 **[Frombody]
 
 [!code-csharp[Main](parameter-binding-in-aspnet-web-api/samples/sample8.cs)]
 
-개체에 대 한 `GeoPoint` 모델 바인더는 다음과 같습니다.
+`GeoPoint` 개체에 대 한 모델 바인더는 다음과 같습니다.
 
 [!code-csharp[Main](parameter-binding-in-aspnet-web-api/samples/sample9.cs)]
 
@@ -100,14 +100,14 @@ Web API가 요청 본문에서 단순 유형을 읽도록 하려면 **[Frombody]
 - 값 공급자는 HTTP 요청을 사용 하 여 키-값 쌍의 사전을 채웁니다.
 - 모델 바인더는이 사전을 사용 하 여 모델을 채웁니다.
 
-Web API의 기본 값 공급자는 경로 데이터 및 쿼리 문자열에서 값을 가져옵니다. 예를 들어 URI가 인 `http://localhost/api/values/1?location=48,-122`경우 값 공급자는 다음 키-값 쌍을 만듭니다.
+Web API의 기본 값 공급자는 경로 데이터 및 쿼리 문자열에서 값을 가져옵니다. 예를 들어 URI가 `http://localhost/api/values/1?location=48,-122`경우 값 공급자는 다음 키-값 쌍을 만듭니다.
 
 - id = &quot;1&quot;
 - location = &quot;48,122&quot;
 
-(Api/{controller}/{id} &quot;&quot;인 기본 경로 템플릿을 가정 합니다.)
+(&quot;api/{controller}/{id}&quot;기본 경로 템플릿을 가정 합니다.)
 
-바인딩할 매개 변수의 이름은 **ModelBindingContext** 속성에 저장 됩니다. 모델 바인더는 사전에서이 값을 사용 하 여 키를 찾습니다. 값이 존재 하 고로 `GeoPoint`변환할 수 있는 경우 모델 바인더는 **ModelBindingContext** 속성에 바인딩된 값을 할당 합니다.
+바인딩할 매개 변수의 이름은 **ModelBindingContext** 속성에 저장 됩니다. 모델 바인더는 사전에서이 값을 사용 하 여 키를 찾습니다. 값이 존재 하 고 `GeoPoint`변환할 수 있으면 모델 바인더는 바인딩된 값을 **ModelBindingContext** 속성에 할당 합니다.
 
 모델 바인더는 단순 형식 변환으로 제한 되지 않습니다. 이 예에서 모델 바인더는 먼저 알려진 위치 테이블을 확인 하 고, 실패 하면 형식 변환을 사용 합니다.
 
@@ -159,11 +159,11 @@ Web API는 모든 값 공급자를 작성 하므로 모델 바인더가 **Valuep
 
 **Httpparameterbinding** 은 값에 매개 변수를 바인딩하는 역할을 합니다. **[Modelbinder]** 의 경우 특성은 **imodelbinder** 를 사용 하 여 실제 바인딩을 수행 하는 **httpparameterbinding** 구현을 반환 합니다. 사용자 고유의 **Httpparameterbinding**을 구현할 수도 있습니다.
 
-예를 들어 요청에서 etag `if-match` 및 `if-none-match` 헤더를 가져오려고 한다고 가정 합니다. 먼저 Etag를 나타내는 클래스를 정의 합니다.
+예를 들어 `if-match`에서 Etag를 가져오고 요청에서 헤더를 `if-none-match` 하려고 한다고 가정 합니다. 먼저 Etag를 나타내는 클래스를 정의 합니다.
 
 [!code-csharp[Main](parameter-binding-in-aspnet-web-api/samples/sample19.cs)]
 
-또한 `if-match` 헤더`if-none-match` 또는 헤더에서 ETag를 가져올 것인지 여부를 나타내는 열거형을 정의 합니다.
+또한 `if-match` 헤더 또는 `if-none-match` 헤더에서 ETag를 가져올 것인지 여부를 나타내는 열거형을 정의 합니다.
 
 [!code-csharp[Main](parameter-binding-in-aspnet-web-api/samples/sample20.cs)]
 
@@ -176,19 +176,19 @@ Web API는 모든 값 공급자를 작성 하므로 모델 바인더가 **Valuep
 > [!NOTE]
 > **Executebindingasync** 메서드가 요청 메시지의 본문을 읽는 경우 **WillReadBody** 속성을 재정의 하 여 true를 반환 합니다. 요청 본문은 한 번만 읽을 수 있는 버퍼링 되지 않은 스트림이 될 수 있으므로 Web API는 하나 이상의 바인딩이 메시지 본문을 읽을 수 있는 규칙을 적용 합니다.
 
-사용자 지정 **Httpparameterbinding**을 적용 하려면 **parameterbindingattribute**에서 파생 되는 특성을 정의할 수 있습니다. 의 `ETagParameterBinding`경우 `if-match` 헤더와 헤더에 `if-none-match` 대해 각각 하나씩 두 개의 특성을 정의 합니다. 둘 다 추상 기본 클래스에서 파생 됩니다.
+사용자 지정 **Httpparameterbinding**을 적용 하려면 **parameterbindingattribute**에서 파생 되는 특성을 정의할 수 있습니다. `ETagParameterBinding`은 `if-match` 헤더와 `if-none-match` 헤더에 대 한 두 개의 특성을 정의 합니다. 둘 다 추상 기본 클래스에서 파생 됩니다.
 
 [!code-csharp[Main](parameter-binding-in-aspnet-web-api/samples/sample22.cs)]
 
-특성을 `[IfNoneMatch]` 사용 하는 컨트롤러 메서드는 다음과 같습니다.
+`[IfNoneMatch]` 특성을 사용 하는 컨트롤러 메서드는 다음과 같습니다.
 
 [!code-csharp[Main](parameter-binding-in-aspnet-web-api/samples/sample23.cs)]
 
-**Parameterbindingattribute**외에도 사용자 지정 **httpparameterbinding**을 추가 하는 또 다른 후크가 있습니다. **Httpconfiguration** 개체에서 **ParameterBindingRules** 속성은 (**httpparameterdescriptor**  - &gt; **httpparameterbinding**) 형식의 익명 함수 컬렉션입니다. 예를 들어 GET 메서드의 ETag 매개 변수가에서 사용 `ETagParameterBinding` `if-none-match`하는 규칙을 추가할 수 있습니다.
+**Parameterbindingattribute**외에도 사용자 지정 **httpparameterbinding**을 추가 하는 또 다른 후크가 있습니다. **Httpconfiguration** 개체에서 **ParameterBindingRules** 속성은 (**Httpparameterdescriptor** -&gt; **httpparameterbinding**) 형식의 익명 함수 컬렉션입니다. 예를 들어 GET 메서드의 ETag 매개 변수가 `if-none-match`와 `ETagParameterBinding`를 사용 하는 규칙을 추가할 수 있습니다.
 
 [!code-csharp[Main](parameter-binding-in-aspnet-web-api/samples/sample24.cs)]
 
-함수는 바인딩이 적용 `null` 되지 않는 매개 변수에 대 한를 반환 해야 합니다.
+함수는 바인딩이 적용 되지 않는 매개 변수에 대 한 `null`를 반환 해야 합니다.
 
 ## <a name="iactionvaluebinder"></a>IActionValueBinder
 
@@ -205,7 +205,7 @@ Web API는 모든 값 공급자를 작성 하므로 모델 바인더가 **Valuep
 
 ## <a name="additional-resources"></a>추가 리소스
 
-[사용자 지정 매개 변수 바인딩 샘플](http://aspnet.codeplex.com/sourcecontrol/latest#Samples/WebApi/CustomParameterBinding/ReadMe.txt)
+[사용자 지정 매개 변수 바인딩 샘플](http://github.com/aspnet/samples/tree/master/samples/aspnet/WebApi/CustomParameterBinding)
 
 Mike 정지는 Web API 매개 변수 바인딩에 대 한 좋은 일련의 블로그 게시물을 작성 했습니다.
 

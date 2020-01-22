@@ -8,12 +8,12 @@ ms.date: 09/08/2014
 ms.assetid: 6898c601-6c31-432f-8388-e6843f8a17cb
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/shopping-cart
 msc.type: authoredcontent
-ms.openlocfilehash: 46264a0ab2244cff24761ce94b41722e61e3f426
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: d3b619ebd9448d30857ffbaf17fd245b1d54a662
+ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74614917"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76519299"
 ---
 # <a name="shopping-cart"></a>쇼핑 카트
 
@@ -25,7 +25,7 @@ ms.locfileid: "74614917"
 
 이 자습서에서는 정문 장난감 sample ASP.NET Web Forms 응용 프로그램에 쇼핑 카트를 추가 하는 데 필요한 비즈니스 논리에 대해 설명 합니다. 이 자습서는 이전 자습서 인 "데이터 항목 및 세부 정보 표시"를 기반으로 하며, 정문 장난감 매장 자습서 시리즈의 일부입니다. 이 자습서를 완료 하면 샘플 앱의 사용자가 쇼핑 카트에 제품을 추가, 제거 및 수정할 수 있습니다.
 
-## <a name="what-youll-learn"></a>학습 내용:
+## <a name="what-youll-learn"></a>학습할 내용:
 
 1. 웹 응용 프로그램에 대 한 쇼핑 카트를 만드는 방법입니다.
 2. 사용자가 쇼핑 카트에 항목을 추가할 수 있도록 하는 방법입니다.
@@ -229,7 +229,7 @@ ms.locfileid: "74614917"
 지금 응용 프로그램을 실행 하 여 쇼핑 카트에 제품을 추가할 수 있을 뿐만 아니라 쇼핑 카트 합계를 볼 수 있습니다.
 
 1. **F5** 키를 눌러 애플리케이션을 실행합니다.  
- 브라우저가 열리고 *default.aspx 페이지가 표시 됩니다.*
+ 브라우저가 열리고 *Default.aspx* 페이지가 표시됩니다.
 2. 범주 탐색 메뉴에서 **자동차** 를 선택 합니다.
 3. 첫 번째 제품 옆에 있는 **카트에 추가** 링크를 클릭 합니다.   
  *ShoppingCart* 페이지가 주문 합계와 함께 표시 됩니다. 
@@ -311,6 +311,8 @@ ms.locfileid: "74614917"
 이 자습서에서는 정문 장난감 Web Forms 샘플 응용 프로그램에 대 한 쇼핑 카트를 만들었습니다. 이 자습서를 진행 하는 동안 Entity Framework Code First, 데이터 주석, 강력한 형식의 데이터 컨트롤 및 모델 바인딩을 사용 했습니다.
 
 쇼핑 카트는 사용자가 구매 하도록 선택한 항목의 추가, 삭제 및 업데이트를 지원 합니다. 쇼핑 카트 기능을 구현 하는 것 외에도 **GridView** 컨트롤에서 쇼핑 카트 항목을 표시 하 고 주문 합계를 계산 하는 방법을 배웠습니다.
+
+실제 비즈니스 응용 프로그램에서 설명 된 기능이 작동 하는 방식을 이해 하기 위해 [nopCommerce](https://github.com/nopSolutions/nopCommerce) -ASP.NET 기반 오픈 소스 전자 상거래 장바구니의 예제를 볼 수 있습니다. 처음에는 MVC로 이동 하 여 ASP.NET Core 하는 데 Web Forms를 기반으로 합니다.
 
 ## <a name="addition-information"></a>추가 정보
 

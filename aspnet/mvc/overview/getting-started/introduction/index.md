@@ -9,11 +9,11 @@ ms.assetid: 9afe7454-f1bd-4e81-8ecf-12fe54d080c1
 msc.legacyurl: /mvc/overview/getting-started/introduction
 msc.type: chapter
 ms.openlocfilehash: 055142be60257f0917eb22bc08471c0bec54ca2e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59387180"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76518749"
 ---
 # <a name="getting-started-with-aspnet-mvc-5"></a>ASP.NET MVC 5 시작
 
@@ -21,7 +21,7 @@ ms.locfileid: "59387180"
 
 [!INCLUDE [consider RP](../../../../includes/razor.md)]
 
-다음이 자습서 시리즈에서는 ASP.NET MVC에 설명 합니다. 원본에 있는 [GitHub](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/mvc/overview/getting-started/introduction/sample/MvcMovie/MvcMovie)
+다음 자습서 시리즈는 [GitHub](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/mvc/overview/getting-started/introduction/sample/MvcMovie/MvcMovie) 에 있는 ASP.NET MVC: Source에 대해 설명 합니다.
 
 - [시작](getting-started.md)
 - [컨트롤러 추가](adding-a-controller.md)
