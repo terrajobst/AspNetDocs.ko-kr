@@ -8,12 +8,12 @@ ms.date: 11/17/2011
 ms.assetid: 2b0df3d9-450b-4ea6-b315-4c9650722cad
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-web-config-file-transformations-3-of-12
 msc.type: authoredcontent
-ms.openlocfilehash: fe71e6cfb0f4c5f1d99b326e9d90edb6c8c5feee
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: 9e7902bcf8a16c154aee1a982824bfaedeea7d9d
+ms.sourcegitcommit: 7b1e1784213dd4c301635f9e181764f3e2f94162
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74600518"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76309238"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-webconfig-file-transformations---3-of-12"></a>Visual Studio 또는 Visual Web Developer를 사용 하 여 SQL Server Compact를 사용 하 여 ASP.NET 웹 응용 프로그램 배포: Web.config 파일 변환-3/12
 
@@ -43,7 +43,7 @@ ms.locfileid: "74600518"
 
 **솔루션 탐색기**에서 *web.config* 를 확장 하 여 두 기본 빌드 구성에 대해 기본적으로 생성 되는 *web.config 및 web.config 변환 파일을 표시* 합니다.
 
-![웹. config_transform_files](deployment-to-a-hosting-provider-web-config-file-transformations-3-of-12/_static/image1.png)
+![Web.config_transform_files](deployment-to-a-hosting-provider-web-config-file-transformations-3-of-12/_static/image1.png)
 
 Web.config 파일을 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 **구성 변환 추가** 를 선택 하 여 사용자 지정 빌드 구성에 대 한 변환 파일을 만들 수 있지만이 자습서에서는이 작업을 수행할 필요가 없습니다.
 
