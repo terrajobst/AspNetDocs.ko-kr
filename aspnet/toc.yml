@@ -3338,11 +3338,10 @@
             - name: SignalR 및 웹 소켓
               href: signalr/videos/getting-started/signalr-and-web-sockets.md
 - name: 휴대폰
-  href: mobile/index.md
   items:
-    - name: 휴대폰
+    - name: 개요
       href: mobile/overview.md
-    - name: ASP.NET 모바일 컨트롤 테스트를 마친 디바이스
+    - name: 컨트롤-테스트된 디바이스
       href: mobile/tested-devices.md
     - name: 인기 모바일 디바이스를 테스트용으로 시뮬레이션
       href: mobile/device-simulators.md
@@ -3464,7 +3463,7 @@
       href: visual-studio/overview/2012/aspnet-and-web-tools-20122-release-notes-rtw.md
 - name: Entity Framework
   href: entity-framework.md
-- name: 클레임
+- name: Identity
   href: identity/index.md
   items:
     - name: 개요
