@@ -8,12 +8,12 @@ ms.date: 04/10/2014
 ms.assetid: 7958d725-e958-4566-a85b-535eeb985f94
 msc.legacyurl: /mvc/overview/getting-started/recommended-resources-for-mvc
 msc.type: authoredcontent
-ms.openlocfilehash: 98089df48550216b50330d9b354168f570d857cd
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: daccaedae0b0e60f5086f270f214f87da564a85d
+ms.sourcegitcommit: e365196c75ce93cd8967412b1cfdc27121816110
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74583185"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77074932"
 ---
 # <a name="mvc-recommended-resources"></a>MVC 권장 리소스
 
@@ -26,7 +26,7 @@ ms.locfileid: "74583185"
 
 ## <a name="getting-started-with-aspnet-mvc"></a>ASP.NET MVC 시작
 
-- [ASP.NET MVC 5 소개](introduction/getting-started.md)
+- [ASP.NET MVC 5 소개(영문)](introduction/getting-started.md)
 - [ASP.NET MVC 소개](https://pluralsight.com/training/Player?author=scott-allen&amp;name=mvc4-building-m1-intro&amp;mode=live&amp;clip=0&amp;course=mvc4-building) (Pluralsight 비디오)
 - [ASP.NET MVC의 모델 뷰 컨트롤러 이해](http://www.dotnet-tricks.com/Tutorial/mvc/DIYG060113-Understanding-Model-View-Controller-in-Asp.Net-MVC.html) (짧은 블로그 소개).
 - [ASP.NET MVC 개요](../older-versions-1/overview/asp-net-mvc-overview.md)
@@ -123,7 +123,7 @@ ms.locfileid: "74583185"
 - [멤버 자격이 폼 인증과 동일 하지 않습니다.](http://brockallen.com/2012/06/04/membership-is-not-the-same-as-forms-authentication/)
 - [MembershipProvider (및 SimpleMembership) 사용에 대해 두 번 생각](http://brockallen.com/2012/09/02/think-twice-about-using-membershipprovider-and-simplemembership/)
 - [Google Authenticator를 사용 하 여 MVC 2 단계 인증 구현](http://www.codeproject.com/Articles/403355/Implementing-MVC-Two-Factor-Authentication-with-Go)
-- new
+- 신규
 - [ASP.NET Identity 및 Azure Table Storage](https://blogs.msdn.com/b/stuartleeks/archive/2014/01/15/asp-net-identity-and-windows-azure-table-storage.aspx)
 
 <a id="OWIN"></a>
@@ -189,7 +189,7 @@ ms.locfileid: "74583185"
 
 <a id="KO"></a>
 
-## <a name="angularjs-knockout-knockoutjs"></a>AngularJS, 녹아웃, KnockoutJS
+## <a name="angularjs-knockout-knockoutjs"></a>AngularJS, Knockout, KnockoutJS
 
 - [Knockout](http://knockoutjs.com/)
 - [ASP.NET MVC에서 KnockoutJS 시작](http://www.dotnetcurry.com/ShowArticle.aspx?ID=933)
@@ -274,7 +274,7 @@ ms.locfileid: "74583185"
 
 <a id="mobile"></a>
 
-## <a name="mobile"></a>휴대폰
+## <a name="mobile"></a>모바일
 
 - [ASP.NET MVC 4 모바일 자습서](../older-versions/aspnet-mvc-4-mobile-features.md)
 - [화면이 MVC 4를 사용 하 여 모바일 친화적인 웹 사이트 빌드](https://www.bitcast.io/v/building-mobile-friendly-websites-with-mvc-4)
@@ -291,7 +291,7 @@ ms.locfileid: "74583185"
 
 <a id="spa"></a>
 
-## <a name="single-page-application-spa"></a>SPA (단일 페이지 응용 프로그램)
+## <a name="single-page-application-spa"></a>SPA(단일 페이지 애플리케이션)
 
 - [단일 페이지 응용 프로그램에 대 한 .Net 개발자 입문](https://msdn.microsoft.com/magazine/dn605877.aspx) MSDN Magazine
 - [AngularJS 및 ASP.NET MVC 4를 사용 하는 단일 페이지 앱](http://tarkus.me/post/32121691785/angularjs-with-asp-net-mvc-4)
@@ -315,7 +315,7 @@ ms.locfileid: "74583185"
 - [ASP.NET MVC에서 단위 테스트 가능한 응용 프로그램 만들기-초보자를 위한 자습서](http://www.codeproject.com/Articles/579035/Creating-Unit-Testable-Applications-in-ASP-NET-MVC)
 - [초보자를 위한 ASP.NET MVC 컨트롤러 종속성 주입](http://www.codeproject.com/Articles/560798/ASP-NET-MVC-controller-dependency-injection-for-be)
 - [Ajax 요청 및 일반 요청을 처리 하는 ASP.NET MVC 작업 메서드에 대 한 단위 테스트 작성](https://weblogs.asp.net/shijuvarghese/archive/2012/12/09/writing-unit-tests-for-an-asp-net-mvc-action-method-that-handles-ajax-request-and-normal-request.aspx)
-- [참나무: ASP.NET MVC에 동적으로 적합 하 고 원활한를 가져옵니다.](http://amirrajan.github.com/Oak/)
+- [참나무: ASP.NET MVC에 동적으로 적합 하 고 원활한를 가져옵니다.](https://amirrajan.github.com/Oak/)
 - [XUnit 및 Moq를 사용 하 여 TDD 용 ASP.NET MVC 4 응용 프로그램 개발](http://www.dotnetcurry.com/ShowArticle.aspx?ID=836)
 - [새 프로젝트에서 빌드 서버로 ASP.NET MVC 뷰 테스트](https://channel9.msdn.com/Events/aspConf/aspConf/Testing-ASP-NET-MVC-Views-from-New-Project-to-the-Build-Server) (비디오)
 - [빠른 시작: 테스트 기반 개발](https://channel9.msdn.com/Events/aspConf/aspConf/Quick-Start-Test-Driven-Development)(비디오)
@@ -380,7 +380,7 @@ ms.locfileid: "74583185"
 - [ASP.NET MVC의 후드 5 부](http://www.pieterg.com/2013/4/aspnet-mvc-under-the-hood-part-5) [Actioninvoker](https://msdn.microsoft.com/library/system.web.mvc.controller.actioninvoker(v=vs.108).aspx)
 - [ASP.NET MVC의 후드 part 6](http://www.pieterg.com/2013/5/aspnet-mvc-under-the-hood-part-6) ActionFilters를 검색 하는 방법 및 적용 되는 방법
 - [ASP.NET MVC에 대 한 사용자 지정 ViewWebPage 페이지 만들기](http://www.love2dev.com/#!article/Create-Your-Own-Custom-ViewWebPage-for-ASPNET-MVC)
-- [ASP.NET MVC Razor 뷰의 추적](https://blogs.msdn.com/b/webdev/archive/2013/07/16/tracing-in-asp-net-mvc-razor-views.aspx)
+- [ASP.NET MVC Razor 뷰에서 추적](https://blogs.msdn.com/b/webdev/archive/2013/07/16/tracing-in-asp-net-mvc-razor-views.aspx)
 - [MVC를 통해 ASP.NET MVC Razor 뷰 렌더링](http://www.west-wind.com/weblog/posts/2013/Jul/15/Rendering-ASPNET-MVC-Razor-Views-outside-of-MVC-revisited)
 - [최신 MVC 프로젝트와 함께 사용 해야 하는 5 가지 필수 프런트 엔드 도구](http://www.adamtibi.net/06-2013/five-essential-front-end-tools-that-should-be-used-with-modern-mvc-projects)
 - [ASP.NET MVC 모델 바인딩의 기능 및 약점](https://msdn.microsoft.com/magazine/hh781022.aspx)

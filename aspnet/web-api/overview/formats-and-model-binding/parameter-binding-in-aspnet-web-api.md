@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: e42c8388-04ed-4341-9fdb-41b1b4c06320
 msc.legacyurl: /web-api/overview/formats-and-model-binding/parameter-binding-in-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 032368f94ce32cf6231458649e8fdd42bee685e9
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.openlocfilehash: 464cb9b45dc0b62c4da38b7cf612934808854d32
+ms.sourcegitcommit: e365196c75ce93cd8967412b1cfdc27121816110
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519260"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77074906"
 ---
 # <a name="parameter-binding-in-aspnet-web-api"></a>ASP.NET Web API의 매개 변수 바인딩
 
@@ -45,7 +45,7 @@ Web API가 URI에서 복합 형식을 읽도록 하려면 **[Fromuri]** 특성�
 
 [!code-csharp[Main](parameter-binding-in-aspnet-web-api/samples/sample2.cs)]
 
-클라이언트는 쿼리 문자열에 위도 및 경도 값을 입력할 수 있으며 Web API는이 값을 사용 하 여 `GeoPoint`를 생성 합니다. 예를 들면 다음과 같습니다.:
+클라이언트는 쿼리 문자열에 위도 및 경도 값을 입력할 수 있으며 Web API는이 값을 사용 하 여 `GeoPoint`를 생성 합니다. 다음은 그 예입니다.
 
 `http://localhost/api/values/?Latitude=47.678558&Longitude=-122.130989`
 
@@ -103,7 +103,7 @@ Web API가 요청 본문에서 단순 유형을 읽도록 하려면 **[Frombody]
 Web API의 기본 값 공급자는 경로 데이터 및 쿼리 문자열에서 값을 가져옵니다. 예를 들어 URI가 `http://localhost/api/values/1?location=48,-122`경우 값 공급자는 다음 키-값 쌍을 만듭니다.
 
 - id = &quot;1&quot;
-- location = &quot;48,122&quot;
+- location = &quot;48122&quot;
 
 (&quot;api/{controller}/{id}&quot;기본 경로 템플릿을 가정 합니다.)
 
@@ -205,7 +205,7 @@ Web API는 모든 값 공급자를 작성 하므로 모델 바인더가 **Valuep
 
 ## <a name="additional-resources"></a>추가 리소스
 
-[사용자 지정 매개 변수 바인딩 샘플](http://github.com/aspnet/samples/tree/master/samples/aspnet/WebApi/CustomParameterBinding)
+[사용자 지정 매개 변수 바인딩 샘플](https://github.com/aspnet/samples/tree/master/samples/aspnet/WebApi/CustomParameterBinding)
 
 Mike 정지는 Web API 매개 변수 바인딩에 대 한 좋은 일련의 블로그 게시물을 작성 했습니다.
 

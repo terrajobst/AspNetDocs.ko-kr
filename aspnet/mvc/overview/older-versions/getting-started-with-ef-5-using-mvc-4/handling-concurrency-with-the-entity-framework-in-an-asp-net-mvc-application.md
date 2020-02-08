@@ -8,12 +8,12 @@ ms.date: 07/30/2013
 ms.assetid: b83f47c4-8521-4d0a-8644-e8f77e39733e
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/handling-concurrency-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: 0383974baa16bb0d5fc588f9303290bdb0fd979c
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: 9800a313879477f36a730e6a70c79bc06d403ae3
+ms.sourcegitcommit: e365196c75ce93cd8967412b1cfdc27121816110
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74595340"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77074958"
 ---
 # <a name="handling-concurrency-with-the-entity-framework-in-an-aspnet-mvc-application-7-of-10"></a>ASP.NET MVC 응용 프로그램에서 Entity Framework를 사용 하 여 동시성 처리 (7/10)
 
@@ -85,6 +85,8 @@ Entity Framework throw 되는 [OptimisticConcurrencyException](https://msdn.micr
 [Timestamp](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.timestampattribute.aspx) 특성은이 열이 `Update`의 `Where` 절에 포함 되 고 `Delete` 명령이 데이터베이스로 전송 됨을 지정 합니다. 이전 버전의 SQL Server sql [rowversion](https://msdn.microsoft.com/library/ms182776(v=sql.110).aspx) 에서 sql [타임 스탬프](https://msdn.microsoft.com/library/ms182776(v=SQL.90).aspx) 데이터 형식을 사용 하기 때문에 특성을 [timestamp](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.timestampattribute.aspx) 라고 합니다. `rowversion`에 대 한 .Net 형식은 바이트 배열입니다. 흐름 API를 사용 하려는 경우 다음 예제와 같이 [IsConcurrencyToken](https://msdn.microsoft.com/library/gg679501(v=VS.103).aspx) 메서드를 사용 하 여 추적 속성을 지정할 수 있습니다.
 
 [!code-csharp[Main](handling-concurrency-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample2.cs)]
+
+GitHub 문제 [Replace IsConcurrencyToken By IsRowVersion](https://github.com/aspnet/AspNetDocs/issues/302)를 참조 하세요.
 
 속성을 추가하여 데이터베이스 모델을 변경했으므로 다른 마이그레이션을 수행해야 합니다. PMC(패키지 관리자 콘솔)에서 다음 명령을 입력합니다.
 

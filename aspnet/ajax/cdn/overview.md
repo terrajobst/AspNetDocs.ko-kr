@@ -8,12 +8,12 @@ ms.date: 10/14/2017
 ms.assetid: 8935bf14-ca6d-4a4e-9dbe-b96ce74cef49
 msc.legacyurl: /ajax/cdn
 msc.type: content
-ms.openlocfilehash: 51cb8d672139aaebd77bcdbe80bb579d4b3776aa
-ms.sourcegitcommit: 969e7db924ebad3cc0f0cb0d65d148e8b9221b9a
+ms.openlocfilehash: 228194a7b35e116cabae6d819e7a3a8060a3ef6a
+ms.sourcegitcommit: e365196c75ce93cd8967412b1cfdc27121816110
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899567"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77074919"
 ---
 # <a name="microsoft-ajax-content-delivery-network"></a>Microsoft Ajax Content Delivery Network
 
@@ -64,7 +64,7 @@ CDN은 해당 라이브러리의 소유자가 업로드 하 고 사용이 허가
 - jQuery (www.jquery.com)
 - jQuery UI (www.jqueryui.com)
 - jQuery Mobile (www.jquerymobile.com)
-- jQuery 유효성 검사 (www.jquery.com)
+- jQuery 유효성 검사 (https://jqueryvalidation.org/)
 - jQuery 주기 (www.malsup.com/jquery/cycle/)
 - jQuery Datatable (http://datatables.net/)
 
@@ -76,7 +76,7 @@ Microsoft Ajax CDN에는 Microsoft에서 업로드 한 다음 라이브러리도
 
 Microsoft는이 CDN에서 호스트 되는 타사 라이브러리의 소유권을 주장 하지 않습니다. 라이브러리의 저작권 소유자는 이러한 라이브러리에 대 한 라이선스를 사용자에 게 부여 합니다. 이러한 라이브러리를 다운로드 하 여 사용 해야 하는 모든 권한은 해당 저작권 소유자에 의해서만 부여 됩니다. Microsoft 라이브러리가 아니기 때문에 Microsoft는이 CDN에서 호스트 되는 타사 라이브러리에 대 한 보증 또는 지적 재산권 (묵시적 특허 권리 없음)을 제공 합니다.
 
-場合は、JavaScript ライブラリを提出して、ライブラリは、最上位の JavaScript ライブラリのいずれか (に示された http://trends.builtwith.com) または 拡張機能/プラグインには、人気のある (a)。 または (b) ASP.NET で使用するために役立ちますし、にお問い合わせくださいこれらのライブラリに AjaxCDNSubmission@Microsoft.com します。
+JavaScript 라이브러리를 제출 하려는 경우 라이브러리는 (a) 인기 있는 라이브러리에 대 한 http://trends.builtwith.com) 또는 확장/플러그인에 나열 된 최상위 JavaScript 라이브러리 중 하나 이며 (b) ASP.NET에서 사용 하는 데 도움이 되는 경우 AjaxCDNSubmission@Microsoft.com에 문의 하세요.
 
 <a id="ajaxmicrosoftcom_renamed_to_ajaxaspnetcdncom_18"></a>
 
@@ -148,7 +148,7 @@ CDN은 jQuery UI 라이브러리도 호스팅합니다. JQuery UI 라이브러�
 - Jquery ui 라이브러리 &mdash; jquery ui 라이브러리에는 위의 페이지에서 사용 된 Datepicker widget과 같은 모든 jQuery UI 효과 및 위젯이 포함 되어 있습니다.
 - Jquery ui 테마 &mdash; jquery UI는 다른 테마를 지원 합니다. 위의 페이지에는 Redmond 테마를 가져오는 CSS 파일에 대 한 링크가 포함 되어 있습니다.
 
-모든 표준 jQuery UI 테마는 CDN에서 호스팅됩니다. [이 페이지를 방문](jquery-ui/cdnjqueryui1910.md "jMicrosoft Ajax CDN의 1.8.10 쿼리 UI) 하 여 각 테마의 미리 보기를 볼 수 있습니다.
+모든 표준 jQuery UI 테마는 CDN에서 호스팅됩니다. [이 페이지를 방문](jquery-ui/cdnjqueryui1910.md "Microsoft Ajax CDN의 jQuery UI 1.8.10") 하 여 각 테마의 미리 보기를 볼 수 있습니다.
 
 JQuery UI 라이브러리에 대해 자세히 알아보려면 공식 [JQUERY ui 웹 사이트](http://jQueryUI.com "jQuery UI 웹 사이트")를 방문 하세요.
 
@@ -617,7 +617,7 @@ jQuery 마이그레이션 버전 1.2.0
 
 ### <a name="jquery-validation-releases-on-the-cdn"></a>CDN의 jQuery 유효성 검사 릴리스
 
-JQuery 유효성 검사 라이브러리의 다음 릴리스는이 CDN에서 호스팅됩니다. 각 링크를 클릭 하 여 파일의 실제 목록을 확인 합니다.
+[JQuery 유효성 검사](https://jqueryvalidation.org/ "jQuery 유효성 검사 플러그 인") 플러그 인의 다음 릴리스는이 CDN에서 호스팅됩니다. 각 링크를 클릭 하 여 파일의 실제 목록을 확인 합니다.
 
 - [jQuery Validate 1.19.1](jquery-validate/cdnjqueryvalidate1191.md "jQuery 유효성 검사 1.19.1")
 - [jQuery Validate 1.19.0](jquery-validate/cdnjqueryvalidate1190.md "jQuery 유효성 검사 1.19.0")
@@ -777,7 +777,7 @@ CDN에서 호스트 되는 [Modernizr](http://www.modernizr.com "Modernizr") 의
 
 ### <a name="respond-releases-on-the-cdn"></a>CDN에 대 한 응답 릴리스
 
-다음의 [응답](https://github.com/scottjehl/Respond "응답") 릴리스는 CDN에서 호스팅됩니다.
+다음의 [응답](https://github.com/scottjehl/Respond "대응") 릴리스는 CDN에서 호스팅됩니다.
 
 #### <a name="respond-version-142"></a>응답 버전 1.4.2
 
@@ -1180,7 +1180,7 @@ CDN에서 호스트 되는 [getbootstrap.com](http://getbootstrap.com "getbootst
 ASP.NET Ajax 라이브러리의 다음 릴리스는 CDN에서 호스팅됩니다. 각 링크를 클릭 하 여 파일의 실제 목록을 확인 합니다.
 
 - [ASP.NET Web Forms 및 Ajax 버전 4.5.2](cdnajax452.md "ASP.NET Web Forms 및 Ajax 4.5.2")
-- [ASP.NET Web Forms 및 Ajax 버전 4](cdnajax4.md "ASP.NET Web Forms 및 Ajax 4")
+- [ASP.NET Web Forms 및 Ajax 버전 4](cdnajax4.md "ASP.NET Web Forms and Ajax 4")
 - [ASP.NET Ajax 버전 3.5](cdnajax35.md "ASP.NET Ajax 3.5")
 
 <a id="ASPNET_MVC_Releases_on_the_CDN_16"></a>
@@ -1258,7 +1258,7 @@ ASP.NET Ajax 라이브러리의 다음 릴리스는 CDN에서 호스팅됩니다
 - https://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.1.0.min.js
 - https://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.1.0.js
 
-#### <a name="aspnet-signalr-203"></a>ASP.NET SignalR 2.0.3
+#### <a name="aspnet-signalr-203"></a>ASP.NET SignalR 2.0.3 라이브러리가
 
 - https://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.0.3.min.js
 - https://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.0.3.js

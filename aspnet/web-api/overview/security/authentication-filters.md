@@ -8,12 +8,12 @@ ms.date: 09/25/2014
 ms.assetid: b9882e53-b3ca-4def-89b0-322846973ccb
 msc.legacyurl: /web-api/overview/security/authentication-filters
 msc.type: authoredcontent
-ms.openlocfilehash: b6815baf05303d5f47a14ee5fe0fdfc2836c1868
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.openlocfilehash: 2ef9e62a6c634237e920b6d7aba2127b835f959d
+ms.sourcegitcommit: e365196c75ce93cd8967412b1cfdc27121816110
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519377"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075075"
 ---
 # <a name="authentication-filters-in-aspnet-web-api-2"></a>ASP.NET Web API 2의 인증 필터
 
@@ -23,7 +23,7 @@ ms.locfileid: "76519377"
 
 인증 필터를 사용 하면 개별 컨트롤러 또는 작업에 대 한 인증 체계를 설정할 수 있습니다. 이런 방식으로 앱은 다양 한 HTTP 리소스에 대해 서로 다른 인증 메커니즘을 지원할 수 있습니다.
 
-이 문서에서는 [https://github.com/aspnet/samples](https://github.com/aspnet/samples)에 대 한 [기본 인증](http://github.com/aspnet/samples/tree/master/samples/aspnet/WebApi/BasicAuthentication) 샘플의 코드를 표시 합니다. 이 샘플에서는 HTTP 기본 액세스 인증 체계 (RFC 2617)를 구현 하는 인증 필터를 보여 줍니다. 필터는 `IdentityBasicAuthenticationAttribute`이라는 클래스에서 구현 됩니다. 예제에서 코드를 모두 표시 하지는 않습니다. 인증 필터를 작성 하는 방법을 보여 주는 부분만 있으면 됩니다.
+이 문서에서는 [https://github.com/aspnet/samples](https://github.com/aspnet/samples)에 대 한 [기본 인증](https://github.com/aspnet/samples/tree/master/samples/aspnet/WebApi/BasicAuthentication) 샘플의 코드를 표시 합니다. 이 샘플에서는 HTTP 기본 액세스 인증 체계 (RFC 2617)를 구현 하는 인증 필터를 보여 줍니다. 필터는 `IdentityBasicAuthenticationAttribute`이라는 클래스에서 구현 됩니다. 예제에서 코드를 모두 표시 하지는 않습니다. 인증 필터를 작성 하는 방법을 보여 주는 부분만 있으면 됩니다.
 
 ## <a name="setting-an-authentication-filter"></a>인증 필터 설정
 
@@ -108,7 +108,7 @@ Web API에서 인증 필터는 인증을 처리 하지만 권한 부여는 처�
 5. 자격 증명이 잘못 된 경우 `context.ErrorResult`설정 하 여 401을 반환 합니다.
 6. 자격 증명이 유효 하면 **IPrincipal** 을 만들고 `context.Principal`를 설정 합니다.
 
-다음 코드는 [기본 인증](http://github.com/aspnet/samples/tree/master/samples/aspnet/WebApi/BasicAuthentication) 샘플의 **AuthenticateAsync** 메서드를 보여 줍니다. 주석은 각 단계를 표시 합니다. 이 코드는 자격 증명이 없는 인증 헤더, 잘못 된 자격 증명, 잘못 된 사용자 이름/암호 등의 여러 가지 오류 유형을 보여 줍니다.
+다음 코드는 [기본 인증](https://github.com/aspnet/samples/tree/master/samples/aspnet/WebApi/BasicAuthentication) 샘플의 **AuthenticateAsync** 메서드를 보여 줍니다. 주석은 각 단계를 표시 합니다. 이 코드는 자격 증명이 없는 인증 헤더, 잘못 된 자격 증명, 잘못 된 사용자 이름/암호 등의 여러 가지 오류 유형을 보여 줍니다.
 
 [!code-csharp[Main](authentication-filters/samples/sample5.cs)]
 
@@ -135,7 +135,7 @@ Web API에서 인증 필터는 인증을 처리 하지만 권한 부여는 처�
 원래 **IHttpActionResult** *내부 결과*를 호출 하 고 새 **IHttpActionResult** *외부 결과*를 호출 합니다. 외부 결과는 다음을 수행 해야 합니다.
 
 1. 내부 결과를 호출 하 여 HTTP 응답을 만듭니다.
-2. 응답을 검사합니다.
+2. 응답을 검사 합니다.
 3. 필요한 경우 응답에 인증 챌린지를 추가 합니다.
 
 다음 예제는 기본 인증 샘플에서 가져온 것입니다. 외부 결과에 대 한 **IHttpActionResult** 를 정의 합니다.
