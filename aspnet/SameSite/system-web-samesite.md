@@ -5,12 +5,12 @@ description: 를 사용 하 여 ASP.NET에서 쿠키를 SameSite 하는 방법�
 ms.author: riande
 ms.date: 1/22/2019
 uid: samesite/system-web-samesite
-ms.openlocfilehash: c81ca38648609aa5347d2a8cc11889fc85d81711
-ms.sourcegitcommit: 4d439e01c82c7c95b19216fedaf5b1a11a1deb06
+ms.openlocfilehash: c262e300361f33621e8bd126a34b251c23f56e1a
+ms.sourcegitcommit: 6bd0d7581ec36dc32cb85d0d5fc0e51068dd4423
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826616"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77234764"
 ---
 # <a name="work-with-samesite-cookies-in-aspnet"></a>ASP.NET에서 SameSite 쿠키 사용
 
@@ -55,7 +55,7 @@ SameSite은 CSRF (교차 사이트 요청 위조) 공격에 대 한 보호를 �
    <forms cookieSameSite="Lax" requireSSL="false" />
   </authentication>
   <sessionState cookieSameSite="Lax" /> <!-- No config attribute for Secure -->
-  <roleManager cookieRequiresSSL="false" /> <!-- No config attribute for SameSite -->
+  <roleManager cookieRequireSSL="false" /> <!-- No config attribute for SameSite -->
  <system.web>
 <configuration>
 ```  
@@ -66,7 +66,7 @@ SameSite은 CSRF (교차 사이트 요청 위조) 공격에 대 한 보호를 �
 
 SameSite 지원은 [2016 초안 표준을](https://tools.ietf.org/html/draft-west-first-party-cookies-07#section-4.1)사용 하 여 .net 4.7.2에서 처음 구현 되었습니다.
 
-2019 년 11 월 19 일 업데이트는 2016 표준에서 2019 standard로 업데이트 된 .NET 4.7.2 +입니다. 다른 버전의 Windows에 대 한 추가 업데이트가 곧 출시 됩니다. 자세한 내용은 <xref:samesite/kbs-samesite>를 참조하세요.
+2019 년 11 월 19 일 업데이트는 2016 표준에서 2019 standard로 업데이트 된 .NET 4.7.2 +입니다. 다른 버전의 Windows에 대 한 추가 업데이트가 곧 출시 됩니다. 자세한 내용은 <xref:samesite/kbs-samesite>을 참조하세요.
 
  SameSite 사양의 2019 초안:
 
@@ -78,7 +78,7 @@ SameSite 지원은 [2016 초안 표준을](https://tools.ietf.org/html/draft-wes
 
 <a name="known"><a/>
 
-## <a name="known-issues"></a>알려진 문제점
+## <a name="known-issues"></a>알려진 문제
 
 2016 및 2019 draft 사양이 호환 되지 않기 때문에 11 월 2019 .Net Framework 업데이트에서 일부 변경 내용이 적용 될 수 있습니다.
 
@@ -147,7 +147,7 @@ SameSite 플래그는 `edge://flags/#same-site-by-default-cookies` 페이지에 
 
 Electron 버전에는 이전 버전의 Chromium이 포함되어 있습니다. 예를 들어 팀에서 사용 하는 전자의 버전은 Chromium 66 이며,이는 이전 동작을 보여 주는 것입니다. 제품에서 사용 하는 전자 제품 버전으로 고유한 호환성 테스트를 수행 해야 합니다. 다음 섹션에서 [이전 브라우저 지원](#sob) 을 참조 하세요.
 
-## <a name="additional-resources"></a>추가 자료
+## <a name="additional-resources"></a>추가 리소스
 
 * [ASP.NET 및 ASP.NET Core의 예정 된 SameSite 쿠키 변경 내용](https://devblogs.microsoft.com/aspnet/upcoming-samesite-cookie-changes-in-asp-net-and-asp-net-core/)
 * [Chromium 블로그: 개발자: 새 SameSite를 사용할 준비가 되었습니다. 보안 쿠키 설정](https://blog.chromium.org/2019/10/developers-get-ready-for-new.html)
