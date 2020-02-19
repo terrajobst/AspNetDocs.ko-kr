@@ -8,16 +8,16 @@ ms.date: 06/12/2014
 ms.assetid: 7e97cfc3-d830-4002-8ff7-5790d1ff49e6
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/more-patterns-and-guidance
 msc.type: authoredcontent
-ms.openlocfilehash: afade34477d1136883e7543d09e73dfbe435690e
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: 57e32bf7568ecb0eb22f0f2b585310dcab2d5d43
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74585356"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457078"
 ---
 # <a name="more-patterns-and-guidance-building-real-world-cloud-apps-with-azure"></a>추가 패턴 및 지침 (Azure를 사용 하 여 실제 클라우드 앱 빌드)
 
-사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
+사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson](https://twitter.com/RickAndMSFT), [Tom Dykstra](https://github.com/tdykstra)
 
 [Fix It 프로젝트 다운로드](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자 서적 다운로드](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -41,17 +41,17 @@ ms.locfileid: "74585356"
 Microsoft 패턴 및 사례에서 추가 클라우드 컴퓨팅 패턴 및 지침 [(영문)-Azure 지침](https://msdn.microsoft.com/library/dn568099.aspx)을 참조 하세요.
 
 <a id="resources"></a>
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 
 이 설명서의 각 장에서는 특정 항목에 대 한 자세한 내용은 리소스에 대 한 링크를 제공 합니다. 다음 목록에는 Azure를 사용한 성공적인 클라우드 개발을 위한 모범 사례 및 권장 패턴의 개요 링크가 나와 있습니다.
 
-Documentation
+문서화
 
 - [Azure Cloud Services에서 대규모 서비스를 디자인 하는 방법에 대 한 모범 사례](https://msdn.microsoft.com/library/windowsazure/jj717232.aspx)입니다. 이 백서에서는 Simm 및 Michael Thomassy을 표시 합니다.
 - [비상 복구: 복원 력 있는 클라우드 아키텍처에 대 한 지침](https://msdn.microsoft.com/library/windowsazure/jj853352.aspx)입니다. Marc Mercuri, Ulrich Homann 및 Andrew Townhill의 백서입니다. 복구 비디오 시리즈의 웹 페이지 버전입니다.
 - [Azure 지침](https://azure.microsoft.com/develop/net/guidance/) Azure 용 응용 프로그램 개발과 관련 된 공식 설명서를 위한 포털 페이지입니다.
 
-비디오
+동영상
 
 - [Azure를 사용 하 여 실제 클라우드 앱 빌드-1 부](https://channel9.msdn.com/Events/TechEd/Australia/2013/AZR324) 및 [2 부](https://channel9.msdn.com/Events/TechEd/Australia/2013/AZR325). 이 e-learning의 기반이 되는 Scott Guthrie의 프레젠테이션 비디오입니다. 2013 년 9 월에 기술 Ed 오스트레일리아에 제공 됩니다. 이전 버전의 동일한 프레젠테이션은 2013 년 6 월,: ndc [파트 1](http://vimeo.com/68215538), [ndc 파트 2](http://vimeo.com/68215602)의 개발자 회의 (ndc)에서 제공 되었습니다.
 - [안전 하지 않음: 확장 가능 하 고 복원 가능한 Cloud Services 빌드](https://channel9.msdn.com/Series/FailSafe) 9 개 부분으로 구성 된 비디오 시리즈, Marc Mercuri 및 Mark Simm. 클라우드 앱을 설계 하는 방법에 대 한 400 수준 보기를 제공 합니다. 이 시리즈에서는 권장 되는 패턴의 이론적 및 이유를 중점적으로 다룹니다. 자세한 방법에 대 한 자세한 내용은 표시 Simm을 사용한 빅 시리즈 빌드를 참조 하세요.
@@ -74,7 +74,7 @@ Documentation
 마지막으로, 실제 앱 빌드를 시작 하 고 Azure에서 실행 하는 경우 더 빨리 전문가의 도움이 필요할 것입니다. [Azure 포럼 또는 StackOverflow](https://azure.microsoft.com/support/forums/)같은 커뮤니티 사이트에서 질문을 하거나 azure 지원에 대해 Microsoft에 직접 문의할 수 있습니다. Microsoft는 다양 한 수준의 기술 지원 Azure를 제공 합니다. 옵션을 요약 하 고 비교 하려면 [Azure 지원](https://azure.microsoft.com/support/plans/)을 참조 하세요.
 
 <a id="acknowledgments"></a>
-## <a name="acknowledgments"></a>감사의 글
+## <a name="acknowledgments"></a>승인
 
 이 콘텐츠는 Tom Dykstra, Rick Anderson 및 Mike Wasson에 의해 작성 되었습니다. 대부분의 원래 콘텐츠는 [Scott Guthrie](https://weblogs.asp.net/scottgu/)에서 제공 되 고, 그는 Simm 및 Microsoft 고객 자문 팀 (CAT)의 자료에 표시 됩니다.
 

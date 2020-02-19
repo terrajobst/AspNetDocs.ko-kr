@@ -8,19 +8,19 @@ ms.date: 05/22/2015
 ms.assetid: 8513a57a-2d45-4d6b-881c-15a01c5cbb1c
 msc.legacyurl: /mvc/overview/getting-started/mvc-learning-sequence
 msc.type: authoredcontent
-ms.openlocfilehash: abaf01ed91dfab8429b872b74c30d4b31a8a2583
-ms.sourcegitcommit: 84b1681d4e6253e30468c8df8a09fe03beea9309
+ms.openlocfilehash: 46b089a896c6b1b92437ff1f5488214a3a0a9838
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445733"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77455934"
 ---
 # <a name="mvc-recommended-tutorials-and-articles"></a>MVC 권장 자습서 및 문서
 
-[Rick Anderson]((https://twitter.com/RickAndMSFT))
+[Rick Anderson](https://twitter.com/RickAndMSFT)
 
 <a id="pwd"></a>
-## <a name="getting-started"></a>시작
+## <a name="getting-started"></a>시작하기
 
 - [ASP.NET MVC 5 시작](introduction/getting-started.md) 이 11 부 시리즈는 시작 하기에 적합 합니다.
 - [Pluralsight ASP.NET MVC 5 기본 사항](https://pluralsight.com/training/Player?author=scott-allen&amp;name=aspdotnet-mvc5-fundamentals-m1-introduction&amp;mode=live&amp;clip=0&amp;course=aspdotnet-mvc5-fundamentals) (비디오 과정)

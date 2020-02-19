@@ -9,22 +9,22 @@ ms.assetid: 053e23c4-13c9-40fa-87cb-3e9b0823b31e
 ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/features-api/two-factor-authentication-using-sms-and-email-with-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: 5f5218ca6c65ed3a2cd39d4e100349efa35d14cd
-ms.sourcegitcommit: 6f0e10e4ca61a1e5534b09c655fd35cdc6886c8a
+ms.openlocfilehash: 527b4392846e60dae0b216fdeabf21fd6618e4d7
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74115094"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77456740"
 ---
 # <a name="two-factorauthentication-using-sms-and-email-with-aspnet-identity"></a>SMS 및 전자 메일을 사용 하는 2 단계 인증 ASP.NET Identity
 
-[Jia-hao Kung](https://github.com/HaoK), [Pranav rastogi](https://github.com/rustd), [Rick Anderson]((https://twitter.com/RickAndMSFT)), [suhas](https://github.com/suhasj)
+[Jia-hao Kung](https://github.com/HaoK), [Pranav rastogi](https://github.com/rustd), [Rick Anderson](https://twitter.com/RickAndMSFT), [suhas](https://github.com/suhasj)
 
 > 이 자습서에서는 SMS 및 전자 메일을 사용 하 여 2 단계 인증 (2FA)을 설정 하는 방법을 보여 줍니다.
 > 
 > 이 문서는[@RickAndMSFT](https://twitter.com/#!/RickAndMSFT)(Rick Anderson), Pranav Rastogi ([@rustd](https://twitter.com/rustd)), jia-hao Kung, suhas Joshi에 의해 작성 되었습니다. NuGet 샘플은 주로 Jia-hao Kung에 의해 작성 되었습니다.
 
-이 항목에서는 다음에 대해 설명 합니다.
+이 항목에서는 다음에 대해 설명합니다.
 
 - [Identity 샘플 빌드](#build)
 - [2 단계 인증을 위한 SMS 설정](#SMS)
@@ -69,10 +69,10 @@ ms.locfileid: "74115094"
 2. **추가 패키지 설치 또는 서비스 참조 추가**  
   
    Twilio  
-   패키지 관리자 콘솔에서 다음 명령을 입력 합니다.  
+   패키지 관리자 콘솔에서 다음 명령을 입력합니다.  
     `Install-Package Twilio`  
   
-   다음 SMS:  
+   ASPSMS:  
    다음 서비스 참조를 추가 해야 합니다.  
   
     ![](two-factor-authentication-using-sms-and-email-with-aspnet-identity/_static/image1.png)  
@@ -87,7 +87,7 @@ ms.locfileid: "74115094"
    Twilio  
    Twilio 계정의 **대시보드** 탭에서 **계정 SID** 및 **인증 토큰**을 복사 합니다.  
   
-   다음 SMS:  
+   ASPSMS:  
    계정 설정에서 **Userkey** 로 이동 하 여 자체 정의 된 **암호**와 함께 복사 합니다.  
   
    나중에 `SMSAccountIdentification` 및 `SMSAccountPassword` 변수에 이러한 값을 저장 합니다.
@@ -96,7 +96,7 @@ ms.locfileid: "74115094"
    Twilio  
    **숫자** 탭에서 Twilio 전화 번호를 복사 합니다.  
   
-   다음 SMS:  
+   ASPSMS:  
    **보낸 사람 잠금 해제** 메뉴 내에서 하나 이상의 발신자의 잠금을 해제 하거나 영숫자 송신자 (모든 네트워크에서 지원 되지 않음)를 선택 합니다.  
   
    나중에 `SMSAccountFrom` 변수에이 값을 저장 합니다.
@@ -119,7 +119,7 @@ ms.locfileid: "74115094"
 8. `Manage` 컨트롤러에서 `Index` 작업 메서드를 활성화 하는 사용자 ID를 클릭 합니다.  
   
     ![](two-factor-authentication-using-sms-and-email-with-aspnet-identity/_static/image2.png)
-9. 추가를 클릭 합니다.  
+9. 추가를 클릭합니다.  
   
     ![](two-factor-authentication-using-sms-and-email-with-aspnet-identity/_static/image3.png)
 10. 몇 초 후에 확인 코드를 포함 하는 문자 메시지를 받게 됩니다. 입력 하 고 **제출**을 누릅니다.  
@@ -177,7 +177,7 @@ ms.locfileid: "74115094"
 
 <a id="enable2"></a>
 
-## <a name="enable-two-factor-authentication"></a>2 단계 인증 사용
+## <a name="enable-two-factor-authentication"></a>2 단계 인증을 사용 하도록 설정
 
 샘플 앱에서 2 단계 인증 (2FA)을 사용 하도록 설정 하려면 UI를 사용 해야 합니다. 2FA를 사용 하도록 설정 하려면 탐색 모음에서 사용자 ID (전자 메일 별칭)를 클릭 합니다.![](two-factor-authentication-using-sms-and-email-with-aspnet-identity/_static/image9.png)  
 2FA 사용을 클릭 합니다.![](two-factor-authentication-using-sms-and-email-with-aspnet-identity/_static/image10.png) 로그 아웃 한 다음 다시 로그인 합니다. 전자 메일을 사용 하도록 설정한 경우 ( [이전 자습서](account-confirmation-and-password-recovery-with-aspnet-identity.md)참조) 2FA의 SMS 또는 전자 메일을 선택할 수 있습니다.![](two-factor-authentication-using-sms-and-email-with-aspnet-identity/_static/image11.png) 코드를 입력할 수 있는 코드 확인 페이지가 표시 됩니다 (SMS 또는 전자 메일에서).![](two-factor-authentication-using-sms-and-email-with-aspnet-identity/_static/image12.png) **이 브라우저 기억을** 확인란을 클릭 하면 해당 컴퓨터 및 브라우저를 사용 하 여 로그온 하는 데 2fa를 사용할 필요가 없습니다. 2FA를 사용 하도록 설정 하 고 **이 브라우저** 를 클릭 하면 컴퓨터에 액세스할 수 없는 한 악의적인 사용자가 계정에 액세스 하는 것과 같은 강력한 2fa 보호를 제공 합니다. 정기적으로 사용 하는 모든 개인 컴퓨터에서이 작업을 수행할 수 있습니다. **이 브라우저 기억을**설정 하면 정기적으로 사용 하지 않는 컴퓨터에서 2fa의 보안을 강화 하 고, 사용자 컴퓨터에서 2fa를 거치지 않아도 편리 하 게 이용할 수 있습니다. 

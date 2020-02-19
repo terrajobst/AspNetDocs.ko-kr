@@ -8,16 +8,16 @@ ms.date: 10/17/2013
 ms.assetid: 4085de68-d243-4378-8a64-86236ea8d2da
 msc.legacyurl: /mvc/overview/getting-started/introduction/adding-a-new-field
 msc.type: authoredcontent
-ms.openlocfilehash: d79655bfadff83095bf4cb84445f5efaf44d6a89
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.openlocfilehash: 5974e53e4610dccc7812df261dc97a9b0327de85
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519078"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77456688"
 ---
 # <a name="adding-a-new-field"></a>새 필드 추가
 
-[Rick Anderson]((https://twitter.com/RickAndMSFT))
+[Rick Anderson](https://twitter.com/RickAndMSFT)
 
 [!INCLUDE [Tutorial Note](index.md)]
 
@@ -31,9 +31,9 @@ ms.locfileid: "76519078"
 
 ![](adding-a-new-field/_static/image1.png)
 
-응용 프로그램을 빌드하여 오류가 없는지 확인 합니다.
+애플리케이션을 빌드하여 오류가 없는지 확인합니다.
 
-**도구** 메뉴에서 **NuGet 패키지 관리자** , **패키지 관리자 콘솔**을 차례로 클릭 합니다.
+**도구** 메뉴에서 **NuGet 패키지 관리자**, **패키지 관리자 콘솔**을 차례로 클릭합니다.
 
 ![Pack Man 추가](adding-a-new-field/_static/image2.png)
 
@@ -99,7 +99,7 @@ Code First 마이그레이션는 *마이그레이션* 폴더에 다른 클래스
 
 ![](adding-a-new-field/_static/image8.png)
 
-## <a name="adding-a-rating-property-to-the-movie-model"></a>영화 모델에 등급 속성 추가
+## <a name="adding-a-rating-property-to-the-movie-model"></a>동영상 모델에 등급 속성 추가
 
 기존 `Movie` 클래스에 새 `Rating` 속성을 추가 하 여 시작 합니다. *Models\Movie.cs* 파일을 열고 다음과 같은 `Rating` 속성을 추가 합니다.
 
@@ -137,11 +137,11 @@ Code First 마이그레이션는 *마이그레이션* 폴더에 다른 클래스
 
 응용 프로그램의 업데이트 된 `Movie` 모델 클래스가 이제 기존 데이터베이스의 `Movie` 테이블의 스키마와 다르기 때문에이 오류가 표시 됩니다. (데이터베이스 테이블에 `Rating` 열이 없습니다.)
 
-오류를 해결하는 몇 가지 방법이 있습니다.
+이 오류를 해결할 수 있는 몇 가지 방법이 있습니다.
 
 1. Entity Framework에서 새 모델 클래스 스키마에 따라 데이터베이스를 자동으로 삭제하고 다시 만들도록 합니다. 이 방법은 테스트 데이터베이스에서 활발한 개발을 수행할 때 개발 주기의 초기 단계에서 매우 편리하며 신속하게 모델 및 데이터베이스 스키마를 함께 개발할 수 있습니다. 그러나 단점은 데이터베이스의 기존 데이터를 잃지 않으므로 프로덕션 데이터베이스에서이 방법을 사용 *하지* 않는 것입니다. 테스트 데이터로 데이터베이스를 자동으로 시드하는 데 이니셜라이저를 사용하는 것은 종종 애플리케이션을 개발하는 효율적인 방법입니다. Entity Framework 데이터베이스 이니셜라이저에 대 한 자세한 내용은 [ASP.NET MVC/Entity Framework 자습서](../getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application.md)를 참조 하세요.
 2. 모델 클래스와 일치하도록 기존 데이터베이스의 스키마를 명시적으로 수정합니다. 이 방법의 장점은 데이터가 유지된다는 점입니다. 이러한 변경을 수동으로 수행하거나 데이터베이스 변경 스크립트를 만들어 수행할 수 있습니다.
-3. Code First 마이그레이션을 사용하여 데이터베이스 스키마를 업데이트합니다.
+3. Code First 마이그레이션을 사용하여 데이터베이스 스키마를 수정합니다.
 
 이 자습서의 경우 Code First 마이그레이션을 사용합니다.
 

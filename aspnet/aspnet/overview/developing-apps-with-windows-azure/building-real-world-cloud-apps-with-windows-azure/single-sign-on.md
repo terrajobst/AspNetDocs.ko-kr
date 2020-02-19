@@ -8,16 +8,16 @@ ms.date: 06/12/2014
 ms.assetid: 7d82d5e9-0619-4f22-9e03-32a6d52940a5
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/single-sign-on
 msc.type: authoredcontent
-ms.openlocfilehash: 7e32f444dc38132296cffd45ac658f5abf51f314
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: 1ca93cce22487295a24aae95437b3e69dfc5b504
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74585274"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457143"
 ---
 # <a name="single-sign-on-building-real-world-cloud-apps-with-azure"></a>Single Sign-on (Azure를 사용 하 여 실제 클라우드 앱 빌드)
 
-사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
+사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson](https://twitter.com/RickAndMSFT), [Tom Dykstra](https://github.com/tdykstra)
 
 [Fix It 프로젝트 다운로드](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자 서적 다운로드](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -42,7 +42,7 @@ Azure AD를 사용 하 여 클라우드에서 디렉터리를 만들 수 있습�
 
 온-프레미스 Active Directory와 완전히 다를 수 있습니다. 원하는 모든 사용자를 추가 하 고 인터넷 앱에서 인증할 수 있습니다.
 
-![Microsoft Azure Active Directory](single-sign-on/_static/image2.png)
+![Windows Azure Active Directory](single-sign-on/_static/image2.png)
 
 또는 온-프레미스 AD와 통합할 수 있습니다.
 
@@ -175,11 +175,11 @@ Azure에 앱을 배포 하는 경우에는 **조직 인증 사용** 확인란만
 [다음 장에서](data-storage-options.md) 는 클라우드 앱에 사용할 수 있는 데이터 저장소 옵션을 살펴봅니다.
 
 <a id="resources"></a>
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 
-자세한 내용은 다음 참고 자료를 참조하십시오.
+자세한 내용은 다음 리소스를 참조하세요.
 
-- [설명서를 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/). Windowsazure.com 사이트의 Azure AD 설명서에 대 한 포털 페이지입니다. 단계별 자습서는 **개발** 섹션을 참조 하세요.
+- [Azure Active Directory 설명서](https://docs.microsoft.com/azure/active-directory/). Windowsazure.com 사이트의 Azure AD 설명서에 대 한 포털 페이지입니다. 단계별 자습서는 **개발** 섹션을 참조 하세요.
 - [Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication/). Azure의 multi-factor authentication에 대 한 설명서를 위한 포털 페이지입니다.
 - [조직 계정 인증 옵션](../../../../visual-studio/overview/2013/creating-web-projects-in-visual-studio.md#orgauthoptions)입니다. Visual Studio 2013 새 프로젝트 대화 상자에서 Azure AD 인증 옵션에 대 한 설명입니다.
 - [Microsoft 패턴 및 사례-페더레이션 Id 패턴](https://msdn.microsoft.com/library/dn589790.aspx).

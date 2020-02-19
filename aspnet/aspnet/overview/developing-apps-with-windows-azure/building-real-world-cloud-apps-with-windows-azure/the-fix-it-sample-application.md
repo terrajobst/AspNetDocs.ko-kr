@@ -8,16 +8,16 @@ ms.date: 06/12/2014
 ms.assetid: 1bc333c5-f096-4ea7-b170-779accc21c1a
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/the-fix-it-sample-application
 msc.type: authoredcontent
-ms.openlocfilehash: e6fda47babd3c2505315f42667c45f09482218c2
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: 896196bdb6a6b0d12a6c798ead510e37dd38a9fc
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74583741"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77456883"
 ---
 # <a name="appendix-the-fix-it-sample-application-building-real-world-cloud-apps-with-azure"></a>부록: Fix It 샘플 응용 프로그램 (Azure를 사용 하 여 실제 클라우드 앱 빌드)
 
-사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
+사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson](https://twitter.com/RickAndMSFT), [Tom Dykstra](https://github.com/tdykstra)
 
 [Fix It 프로젝트 다운로드](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4)
 
@@ -84,7 +84,7 @@ Fix It 앱은 업로드 된 이미지를 공개로 저장 합니다. 즉, URL을
 ASP.NET는 악의적인 사용자가 사용자 입력 텍스트 상자에 스크립트를 입력 하 여 사이트 간 스크립팅 공격을 시도할 수 있는 여러 가지 방법을 자동으로 방지 합니다. 그리고 작업 제목을 표시 하는 데 사용 되는 MVC `DisplayFor` 도우미와는 브라우저에 보내는 값을 자동으로 HTML로 인코딩합니다. 그러나 프로덕션 앱에서는 추가 측정을 수행 하는 것이 좋습니다. 자세한 내용은 [ASP.NET의 요청 유효성 검사](https://msdn.microsoft.com/library/hh882339.aspx)를 참조 하세요.
 
 <a id="bestpractices"></a>
-## <a name="best-practices"></a>최선의 구현 방법
+## <a name="best-practices"></a>모범 사례
 
 다음은 코드 검토에서 검색 된 후 수정 된 문제 및 Fix It 앱의 원래 버전에 대 한 테스트입니다. 일부는 코드를 신속 하 게 작성 하 고 릴리스 소프트웨어를 사용 하기 위한 것이 아니라 원래 코드 작성자 있는지 특정 모범 사례를 인식 하지 못하기 때문에 발생 했습니다. 웹 앱을 개발 하는 다른 사용자에 게 도움이 될 수 있는이 검토 및 테스트에서 배운 내용이 있는 경우 여기에서 문제를 나열 하 고 있습니다.
 
@@ -96,7 +96,7 @@ ASP.NET는 악의적인 사용자가 사용자 입력 텍스트 상자에 스크
 
 AutoFac가 자동으로 `FixItTaskRepository` 인스턴스를 삭제 하므로 명시적으로 삭제할 필요가 없습니다.
 
-또 다른 옵션은 `FixItTaskRepository`에서 `DbContext` 멤버 변수를 제거 하 고 대신 `using` 문 내에서 각 리포지토리 메서드 내에 로컬 `DbContext` 변수를 만드는 것입니다. 예를 들면 다음과 같습니다.:
+또 다른 옵션은 `FixItTaskRepository`에서 `DbContext` 멤버 변수를 제거 하 고 대신 `using` 문 내에서 각 리포지토리 메서드 내에 로컬 `DbContext` 변수를 만드는 것입니다. 다음은 그 예입니다.
 
 [!code-csharp[Main](the-fix-it-sample-application/samples/sample2.cs)]
 
@@ -215,7 +215,7 @@ Fix It 앱을 실행 하는 방법에는 두 가지가 있습니다.
 <a id="runbase"></a>
 ### <a name="run-the-base-application"></a>기본 응용 프로그램 실행
 
-1. [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)을 설치 합니다.
+1. [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)을 설치합니다.
 2. [Visual Studio 용 AZURE SDK for .net](https://azure.microsoft.com/downloads/)을 설치 합니다.
 3. [MSDN 코드 갤러리](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4)에서 .zip 파일을 다운로드 합니다.
 4. 파일 탐색기에서 .zip 파일을 마우스 오른쪽 단추로 클릭 하 고 속성을 클릭 한 다음 속성 창 차단 해제를 클릭 합니다.
@@ -250,7 +250,7 @@ Fix It 앱을 실행 하는 방법에는 두 가지가 있습니다.
    4. **여러 개의 시작 프로젝트**를 선택 합니다.
    5. MyFixIt 및 MyFixItCloudService의 **작업** 드롭다운 목록에서 **시작**을 선택 합니다.
    6. **확인**을 클릭합니다.
-   7. **F5** 키를 눌러 두 프로젝트를 실행 합니다.
+   7. **F5** 키를 눌러 두 프로젝트를 실행합니다.
 
       MyFixItCloudService 프로젝트를 실행 하면 Visual Studio에서 Azure 계산 에뮬레이터를 시작 합니다. 방화벽 구성에 따라 에뮬레이터를 방화벽을 통해 허용 해야 할 수도 있습니다.
 
@@ -263,7 +263,7 @@ Fix It 앱을 실행 하는 방법에는 두 가지가 있습니다.
 
 이 지침에서는 수정 It 솔루션을 로컬로 다운로드 하 여 실행 한 것으로 가정 하 고 Azure 계정이 있거나 관리할 수 있는 Azure 구독이 있다고 가정 합니다.
 
-1. **Azure PowerShell** 콘솔을 설치 합니다. 자세한 내용은 [Azure PowerShell 설치 및 구성 하는 방법](https://docs.microsoft.com/powershell/azure/overview?view=azurermps-4.3.1)을 참조 하세요.
+1. **Azure PowerShell** 콘솔을 설치 합니다. 자세한 내용은 [Azure PowerShell 설치 및 구성법](https://docs.microsoft.com/powershell/azure/overview?view=azurermps-4.3.1)을 참조하세요.
 
     이 사용자 지정 콘솔은 Azure 구독과 함께 작동 하도록 구성 됩니다. Azure 모듈은 *Program Files* 디렉터리에 설치 되며 Azure PowerShell 콘솔을 사용할 때마다 자동으로 가져옵니다.
 
@@ -322,7 +322,7 @@ Fix It 앱을 실행 하는 방법에는 두 가지가 있습니다.
     스크립트가 실패 하거나 오류를 생성 하는 경우 (예: "AzureWebsite: Call Get-azuresubscription and Get-azuresubscription first") Azure PowerShell의 구성을 완료 하지 않았을 수 있습니다.
 
     스크립트가 완료 되 면 Azure 관리 포털를 사용 하 여 생성 된 리소스를 볼 수 있습니다 .이에 대해서는 [모두 자동화](automate-everything.md) 단원을 참조 하세요.
-10. 새 Azure 환경에 FixIt 프로젝트를 배포 하려면 *AzureWebsite* 스크립트를 사용 합니다. 예를 들면 다음과 같습니다.:
+10. 새 Azure 환경에 FixIt 프로젝트를 배포 하려면 *AzureWebsite* 스크립트를 사용 합니다. 다음은 그 예입니다.
 
     [!code-console[Main](the-fix-it-sample-application/samples/sample28.cmd)]
 

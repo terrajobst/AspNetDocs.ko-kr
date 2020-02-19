@@ -8,16 +8,16 @@ ms.date: 07/20/2015
 ms.assetid: 406518e9-3817-49ce-8b90-e82bc461e2c0
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/distributed-caching
 msc.type: authoredcontent
-ms.openlocfilehash: c66187b990a828c53bd2f8115e3c9660fc6022ed
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: 87a7516415895e761d1589fd459b93e5c15c0f85
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74582806"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457000"
 ---
 # <a name="distributed-caching-building-real-world-cloud-apps-with-azure"></a>분산 캐싱 (Azure를 사용 하 여 실제 클라우드 앱 빌드)
 
-사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
+사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson](https://twitter.com/RickAndMSFT), [Tom Dykstra](https://github.com/tdykstra)
 
 [Fix It 프로젝트 다운로드](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자 서적 다운로드](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -86,11 +86,11 @@ Azure는 다음과 같은 캐싱 서비스를 제공 합니다. [Azure Redis Cac
 
 응답 시간 및 확장성을 개선 하기 위해 Fix It 앱이 캐싱을 구현 하는 방법을 확인 하 고, 데이터베이스를 사용할 수 없을 때 앱이 읽기 작업에 계속 응답할 수 있도록 합니다. [다음 장에서](queue-centric-work-pattern.md) 는 확장성을 더욱 개선 하 고 앱이 쓰기 작업에 계속 응답 하도록 하는 방법을 보여 줍니다.
 
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 
 캐싱에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
-Documentation
+문서화
 
 - [Azure 캐시](https://msdn.microsoft.com/library/gg278356.aspx). Azure의 캐싱에 대 한 공식 MSDN 설명서입니다.
 - [Microsoft 패턴 및 사례-Azure 지침](https://msdn.microsoft.com/library/dn568099.aspx) 캐싱 지침 및 캐시 배제 패턴을 참조 하세요.
@@ -98,7 +98,7 @@ Documentation
 - [Azure Cloud Services에서 대규모 서비스를 디자인 하는 방법에 대 한 모범 사례](https://msdn.microsoft.com/library/windowsazure/jj717232.aspx)입니다. W. 이 백서에서는 Simm 및 Michael Thomassy을 표시 합니다. 분산 캐싱에 대 한 섹션을 참조 하세요.
 - [확장성을 위한 경로에 분산 캐싱](https://msdn.microsoft.com/magazine/dd942840.aspx) 이전 (2009) MSDN Magazine 문서 이지만, 일반적으로 분산 캐싱 소개를 명확 하 게 작성 합니다. 는 안전 및 모범 사례 백서의 캐싱 섹션 보다 더 깊이 있습니다.
 
-비디오
+동영상
 
 - [안전 하지 않음: 확장 가능 하 고 복원 가능한 Cloud Services 빌드](https://channel9.msdn.com/Series/FailSafe) Ulrich HoMarc Mercuri 및 Mark Simm에서 9 부분으로 된 시리즈. 클라우드 앱을 설계 하는 방법에 대 한 400 수준 보기를 제공 합니다. 이 시리즈는 이론적 및 이유를 중점적으로 설명 합니다. 자세한 방법에 대 한 자세한 내용은 표시 Simm을 사용한 빅 시리즈 빌드를 참조 하세요. 1:24:14에서 시작 하는 에피소드 3의 캐싱 논의를 참조 하세요.
 - [대규모 빌드: Azure 고객 으로부터 얻은 교훈을](https://channel9.msdn.com/Events/Build/2012/3-029)확인 하세요. Simon Davies 46:00에서 시작 하는 분산 캐싱에 대해 설명 합니다. 안전 계열과 유사 하지만 자세한 방법에 대해 자세히 설명 합니다. 프레젠테이션은 2012 년 10 월 31 일에 제공 되었으므로 2013에 도입 된 Azure App Service의 캐싱 Web Apps 서비스에 대해서는 설명 하지 않습니다.

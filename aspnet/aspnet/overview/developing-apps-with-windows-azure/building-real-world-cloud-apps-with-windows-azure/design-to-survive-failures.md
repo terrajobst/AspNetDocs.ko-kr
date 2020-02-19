@@ -8,16 +8,16 @@ ms.date: 06/12/2014
 ms.assetid: 364ce84e-5af8-4e08-afc9-75a512b01f84
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/design-to-survive-failures
 msc.type: authoredcontent
-ms.openlocfilehash: 9bf9acb8b4f8521d03c053c124c5fc4a07d6cb9a
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: 348232af531b5d53dc3cb46d6d2c7931d95a572d
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74585660"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457130"
 ---
 # <a name="design-to-survive-failures-building-real-world-cloud-apps-with-azure"></a>장애 상태를 유지 하기 위한 디자인 (Azure를 사용 하 여 실제 클라우드 앱 빌드)
 
-사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
+사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson](https://twitter.com/RickAndMSFT), [Tom Dykstra](https://github.com/tdykstra)
 
 [Fix It 프로젝트 다운로드](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자 서적 다운로드](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -58,7 +58,7 @@ Azure에서 오류가 발생 한 서버는 자동으로 새 서버로 대체 되
 
 Azure의 목표는 이러한 종류의 모든 오류를 훨씬 더 쉽게 처리 하는 것이 고, 다음 장에서 설명 하는 방법에 대 한 몇 가지 예를 확인 하는 것입니다.
 
-## <a name="slas"></a>부합
+## <a name="slas"></a>SLA
 
 사용자는 클라우드 환경의 Sla (서비스 수준 계약)에 대 한 정보를 자주 듣고 있습니다. 기본적으로 회사에서 서비스의 신뢰성을 확인 하는 데 사용 됩니다. 99.9% SLA는 서비스가 정확히 99.9%의 시간 동안 작동 하는 것을 의미 합니다. SLA에 대 한이 값은 매우 일반적 이며 매우 높은 값 처럼 보이지만, 실제로 남은 시간 (%)을 알 수 없습니다. 다음 표에서는 연도, 월 및 주에 대 한 다양 한 SLA 비율을 보여 줍니다.
 
@@ -70,7 +70,7 @@ SLA에 대해 알고 있어야 하는 한 가지 사항은, 매월, 매월 또�
 
 물론 SLA 보다는 항상 따르는 것이 좋습니다. 일반적으로 그 보다 훨씬 더 낮습니다. 이 약속은 최대 중단 시간 보다 오랫동안 다운 되는 경우 비용을 다시 요청할 수 있다는 것입니다. 다시 얻게 되는 money의 양은 중단 시간에 대 한 비즈니스 영향을 완벽 하 게 보완 하지 못할 수 있지만 SLA의 해당 측면은 적용 정책으로 작동 하며 매우 심각 하 게 사용할 수 있다는 것을 알 수 있습니다.
 
-### <a name="composite-slas"></a>복합 Sla
+### <a name="composite-slas"></a>복합 SLA
 
 Sla를 살펴볼 때 고려해 야 할 중요 한 사항은 앱에서 여러 서비스를 사용 하는 경우 각 서비스에 별도의 SLA를 사용 하는 것입니다. 예를 들어 Fix It 앱은 Azure App Service Web Apps, Azure Storage 및 SQL Database를 사용 합니다. 다음은이 e-learning이 12 월 2013 일에 작성 되는 날짜를 기준으로 하는 SLA 번호입니다.
 
@@ -107,7 +107,7 @@ Sla를 살펴볼 때 고려해 야 할 중요 한 사항은 앱에서 여러 서
 - 데이터베이스 액세스와 관련 된 처리량, 대기 시간 및 연결 문제를 최소화 하기 위해 [분산 캐싱을](distributed-caching.md) 사용 합니다.
 - 백 엔드가 종료 될 때 앱 프런트 엔드가 계속 작동할 수 있도록 [큐 중심 작업 패턴](queue-centric-work-pattern.md)을 통해 느슨한 결합을 구현 합니다.
 
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 
 자세한 내용은이 전자 책의 이후 장과 다음 리소스를 참조 하세요.
 

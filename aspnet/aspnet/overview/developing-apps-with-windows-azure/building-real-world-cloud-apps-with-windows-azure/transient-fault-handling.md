@@ -8,16 +8,16 @@ ms.date: 11/03/2015
 ms.assetid: 7ead83bc-c08c-4b26-8617-00e07292e35c
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling
 msc.type: authoredcontent
-ms.openlocfilehash: fc281e3d8f7c9edd4d98b029a67e58113132a8b3
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: e798cb83cfb97db63fef6dc38c8f62804461d01b
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74583652"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77456857"
 ---
 # <a name="transient-fault-handling-building-real-world-cloud-apps-with-azure"></a>일시적인 오류 처리 (Azure를 사용 하 여 실제 클라우드 앱 빌드)
 
-사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
+사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson](https://twitter.com/RickAndMSFT), [Tom Dykstra](https://github.com/tdykstra)
 
 [Fix It 프로젝트 다운로드](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자 서적 다운로드](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -78,11 +78,11 @@ SQL Database 재시도 정책 지침은 [일시적인 오류 및 SQL Database에
 
 [다음 장에서](distributed-caching.md)는 분산 캐싱을 사용 하 여 성능 및 안정성을 향상 시키는 방법에 대해 살펴보겠습니다.
 
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 
-자세한 내용은 다음 참고 자료를 참조하십시오.
+자세한 내용은 다음 리소스를 참조하세요.
 
-Documentation
+문서화
 
 - [Azure Cloud Services에서 대규모 서비스를 디자인 하는 방법에 대 한 모범 사례](https://msdn.microsoft.com/library/windowsazure/jj717232.aspx)입니다. 이 백서에서는 Simm 및 Michael Thomassy을 표시 합니다. 안전 계열과 유사 하지만 자세한 방법에 대해 자세히 설명 합니다. 원격 분석 및 진단 섹션을 참조 하세요.
 - [비상 복구: 복원 력 있는 클라우드 아키텍처에 대 한 지침](https://msdn.microsoft.com/library/windowsazure/jj853352.aspx)입니다. Marc Mercuri, Ulrich Homann 및 Andrew Townhill의 백서입니다. 복구 비디오 시리즈의 웹 페이지 버전입니다.
@@ -91,14 +91,14 @@ Documentation
 - [Entity Framework 연결 복원 력/재시도 논리](https://msdn.microsoft.com/data/dn456835)입니다. Entity Framework 6의 일시적인 오류 처리 기능을 사용 하 고 사용자 지정 하는 방법입니다.
 - [ASP.NET MVC 응용 프로그램에서 Entity Framework를 사용 하 여 연결 복원 력 및 명령 가로채기](../../../../mvc/overview/getting-started/getting-started-with-ef-using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in-an-asp-net-mvc-application.md) 네 부분으로 구성 된 자습서 시리즈의 네 번째 부분에서는 SQL Database에 대 한 EF 6 연결 복원 력 기능을 설정 하는 방법을 보여 줍니다.
 
-비디오
+동영상
 
 - [안전 하지 않음: 확장 가능 하 고 복원 가능한 Cloud Services 빌드](https://channel9.msdn.com/Series/FailSafe) Ulrich HoMarc Mercuri 및 Mark Simm에서 9 부분으로 된 시리즈. Microsoft의 Microsoft CAT (고객 자문 팀) 경험을 통해 실제 고객과 함께 제공 되는 스토리를 통해 매우 편리 하 게 액세스할 수 있고 흥미로운 방식으로 높은 수준의 개념 및 아키텍처 원칙을 제공 합니다. 40:55에서 시작 하는 에피소드 3의 회로 차단기에 대 한 설명을 참조 하세요.
 - [대규모 빌드: Azure 고객 으로부터 얻은 교훈-2 부](https://channel9.msdn.com/Events/Build/2012/3-030). 표시 Simm은 오류 설계, 일시적인 오류 처리 및 모든 항목 계측에 대해 설명 합니다.
 
 코드 샘플
 
-- [Azure의 클라우드 서비스 기본 사항](https://code.msdn.microsoft.com/Cloud-Service-Fundamentals-4ca72649)입니다. [Enterprise Library TFH (일시적인 오류 처리 블록](http://nuget.org/packages/EnterpriseLibrary.TransientFaultHandling/) )를 사용 하는 방법을 보여 주는 Microsoft Azure 고객 자문 팀에서 만든 샘플 응용 프로그램입니다. 자세한 내용은 [클라우드 서비스의 기본 데이터 액세스 계층 – 일시적인 오류 처리](https://social.technet.microsoft.com/wiki/contents/articles/18665.cloud-service-fundamentals-data-access-layer-transient-fault-handling.aspx)를 참조 하세요. TFH는 ADO.NET를 사용 하 여 데이터베이스에 직접 액세스 하는 것이 좋습니다 (Entity Framework 사용 하지 않음).
+- [Azure의 클라우드 서비스 기본 사항](https://code.msdn.microsoft.com/Cloud-Service-Fundamentals-4ca72649)입니다. [Enterprise Library TFH (일시적인 오류 처리 블록](http://nuget.org/packages/EnterpriseLibrary.TransientFaultHandling/) )를 사용 하는 방법을 보여 주는 Microsoft Azure 고객 자문 팀에서 만든 샘플 응용 프로그램입니다. 자세한 내용은 [클라우드 서비스의 기본 데이터 액세스 계층 – 일시적인 오류 처리](https://social.technet.microsoft.com/wiki/contents/articles/18665.cloud-service-fundamentals-data-access-layer-transient-fault-handling.aspx)(영문)를 참조하세요. TFH는 ADO.NET를 사용 하 여 데이터베이스에 직접 액세스 하는 것이 좋습니다 (Entity Framework 사용 하지 않음).
 
 > [!div class="step-by-step"]
 > [이전](monitoring-and-telemetry.md)

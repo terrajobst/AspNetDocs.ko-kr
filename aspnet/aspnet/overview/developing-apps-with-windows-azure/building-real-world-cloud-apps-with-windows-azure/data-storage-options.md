@@ -8,16 +8,16 @@ ms.date: 06/12/2014
 ms.assetid: e51fcecb-cb33-4f9e-8428-6d2b3d0fe1bf
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/data-storage-options
 msc.type: authoredcontent
-ms.openlocfilehash: f97d973d87db895441f813376d757a8a2e94b255
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: 9357ed5aef39bed501cdac9ac26d46c884d4fae0
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74585926"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457182"
 ---
 # <a name="data-storage-options-building-real-world-cloud-apps-with-azure"></a>데이터 저장소 옵션 (Azure를 사용 하 여 실제 클라우드 앱 빌드)
 
-사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
+사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson](https://twitter.com/RickAndMSFT), [Tom Dykstra](https://github.com/tdykstra)
 
 [Fix It 프로젝트 다운로드](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자 서적 다운로드](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -37,14 +37,14 @@ ms.locfileid: "74585926"
 
 다음 표에서는 네 가지 유형의 NoSQL 데이터베이스를 보여 줍니다.
 
-- [키/값 데이터베이스](https://msdn.microsoft.com/library/dn313285.aspx#sec7) 는 각 키 값에 대해 직렬화 된 단일 개체를 저장 합니다. 이는 지정 된 키 값에 대해 하나의 항목을 가져오려는 많은 양의 데이터를 저장 하는 데 유용 하며 항목의 다른 속성을 기반으로 쿼리할 필요가 없습니다.
+- [키/값 데이터베이스](https://msdn.microsoft.com/library/dn313285.aspx#sec7) 는 각 키 값에 대해 직렬화 된 단일 개체를 저장 합니다. 이 데이터베이스는 지정된 키 값에 대해 하나의 항목을 가져오려고 하며 항목의 다른 속성을 기준으로 쿼리할 필요가 없는 경우에 대용량의 데이터를 저장하는 데 좋습니다.
 
     [Azure Blob storage](https://azure.microsoft.com/documentation/articles/storage-dotnet-how-to-use-blobs/) 는 폴더 및 파일 이름에 해당 하는 키 값을 사용 하 여 클라우드의 파일 저장소와 같은 기능을 하는 키/값 데이터베이스입니다. 파일 내용에서 값을 검색 하는 것이 아니라 폴더 및 파일 이름으로 파일을 검색 합니다.
 
     [Azure 테이블 저장소](https://azure.microsoft.com/documentation/articles/storage-dotnet-how-to-use-tables/) 는 키/값 데이터베이스 이기도 합니다. 각 값을 *엔터티* (파티션 키와 행 키로 식별 되는 행과 유사) 라고 하며 여러 *속성* (열과 유사 하지만 테이블의 모든 엔터티가 동일한 열을 공유 해야 하는 것은 아님)을 포함 합니다. 키가 아닌 열에 대 한 쿼리는 매우 비효율적 이므로 피해 야 합니다. 예를 들어 단일 사용자에 대 한 정보를 저장 하는 하나의 파티션이 있는 사용자 프로필 데이터를 저장할 수 있습니다. 사용자 이름, 암호 해시, 생년월일 등의 데이터를 한 엔터티의 개별 속성에 저장 하거나 동일한 파티션에 있는 별도의 엔터티에 저장할 수 있습니다. 그러나 지정 된 생년월일 범위를 가진 모든 사용자를 쿼리하지는 않지만 프로필 테이블과 다른 테이블 간에 조인 쿼리를 실행할 수 없습니다. 테이블 저장소는 관계형 데이터베이스 보다 확장성이 뛰어나고 비용이 저렴 하지만 복잡 한 쿼리 또는 조인을 사용 하지 않습니다.
 - [Documentdatabases](https://msdn.microsoft.com/library/dn313285.aspx#sec8) 는 값이 *문서인*키/값 데이터베이스입니다. 여기에서 "Document"는 Word 또는 Excel 문서에서 사용 되지 않지만 자식 문서 일 수 있는 명명 된 필드 및 값의 컬렉션을 의미 합니다. 예를 들어 주문 기록 테이블에서 주문 문서에 주문 번호, 주문 날짜 및 고객 필드가 있을 수 있습니다. 그리고 고객 필드에는 이름 및 주소 필드가 있을 수 있습니다. 데이터베이스는 필드 데이터를 XML, YAML, JSON 또는 BSON과 같은 형식으로 인코딩합니다. 또는 일반 텍스트를 사용할 수 있습니다. 키/값 데이터베이스와는 별도로 문서 데이터베이스를 설정 하는 기능 중 하나는 키가 아닌 필드를 쿼리하고 쿼리를 보다 효율적으로 만들기 위해 보조 인덱스를 정의 하는 기능입니다. 이 기능을 통해 문서 데이터베이스를 문서 키 값 보다 더 복잡 한 조건에 따라 데이터를 검색 해야 하는 응용 프로그램에 더 적합 하 게 만들 수 있습니다. 예를 들어 판매 주문 기록 문서 데이터베이스에서 제품 ID, 고객 ID, 고객 이름 등의 다양 한 필드를 쿼리할 수 있습니다. [MongoDB](http://www.mongodb.org/) 은 인기 있는 문서 데이터베이스입니다.
 - [열 패밀리 데이터베이스](https://msdn.microsoft.com/library/dn313285.aspx#sec9) 는 데이터 저장소를 열 패밀리 라는 관련 열 컬렉션으로 구조화 하는 데 사용할 수 있는 키/값 데이터 저장소입니다. 예를 들어 인구 조사 데이터베이스에는 개인의 이름 (first, middle, last)에 대해 한 개의 열 그룹, 사용자 주소에 대 한 그룹 한 개, 개인의 프로필 정보에 대 한 그룹 한 개 (DOB, 성별 등)가 있을 수 있습니다. 그런 다음 데이터베이스는 각 열 패밀리를 별도의 파티션에 저장 하 고 한 사용자의 모든 데이터를 동일한 키와 관련 시킬 수 있습니다. 그러면 모든 이름 및 주소 정보도 읽을 필요 없이 모든 프로필 정보를 읽을 수 있습니다. [Cassandra](http://cassandra.apache.org/) 은 인기 있는 열 패밀리 데이터베이스입니다.
-- [그래프 데이터베이스](https://msdn.microsoft.com/library/dn313285.aspx#sec10) 는 개체 및 관계의 컬렉션으로 정보를 저장 합니다. 그래프 데이터베이스의 목적은 응용 프로그램에서 개체의 네트워크와 개체 간의 관계를 트래버스하는 쿼리를 효율적으로 수행할 수 있도록 하는 것입니다. 예를 들어, 개체는 인적 자원 데이터베이스의 직원 일 수 있으며 "Scott에 게 직접 또는 간접적으로 작업 하는 모든 직원 찾기"와 같은 쿼리를 용이 하 게 할 수 있습니다. [Neo4j](http://www.neo4j.org/) 은 인기 있는 그래프 데이터베이스입니다.
+- [그래프 데이터베이스](https://msdn.microsoft.com/library/dn313285.aspx#sec10) 는 개체 및 관계의 컬렉션으로 정보를 저장 합니다. 그래프 데이터베이스의 목적은 응용 프로그램에서 개체의 네트워크와 개체 간의 관계를 트래버스하는 쿼리를 효율적으로 수행할 수 있도록 하는 것입니다. 예를 들어, 개체가 인사 데이터베이스의 직원일 수 있으며, “find all employees who directly or indirectly work for Scott”와 같은 쿼리를 용이하게 진행할 수 있습니다. [Neo4j](http://www.neo4j.org/) 은 인기 있는 그래프 데이터베이스입니다.
 
 NoSQL 옵션은 관계형 데이터베이스에 비해 구조화 되지 않은 데이터를 저장 하 고 분석 하는 데 훨씬 더 큰 확장성과 비용 효율성을 제공 합니다. 단점은 관계형 데이터베이스의 풍부한 queryability 강력한 데이터 무결성 기능을 제공 하지 않기 때문입니다. NoSQL은 조인 쿼리를 수행할 필요가 없는 많은 볼륨이 포함 된 IIS 로그 데이터에 적합 합니다. NoSQL은 절대 데이터 무결성이 필요 하 고 다른 계정 관련 데이터에 대 한 많은 관계를 포함 하는 은행 거래에 적합 하지 않습니다.
 
@@ -86,7 +86,7 @@ Azure에서 [HDInsight](https://azure.microsoft.com/services/hdinsight/) 를 사
 - MapReduce 작업 실행 파일 (jar 또는 .exe 파일)을 HDInsight 클러스터에 업로드 합니다.
 - Blob 저장소에 출력 데이터를 저장 하는 MapReduce를 제출 합니다.
 - 작업이 완료 될 때까지 기다립니다.
-- HDInsight 클러스터를 삭제 합니다.
+- HDInsight 클러스터 삭제
 - Blob 저장소에서 출력에 액세스 합니다.
 
 이를 모두 수행 하는 스크립트를 실행 하 여 HDInsight 클러스터가 프로 비전 되는 시간을 최소화 하 여 비용을 최소화 합니다.
@@ -99,8 +99,8 @@ Azure에서 [HDInsight](https://azure.microsoft.com/services/hdinsight/) 를 사
 Azure에서 제공 하는 PaaS 데이터 솔루션은 다음과 같습니다.
 
 - Azure SQL Database (이전의 SQL Azure). SQL Server 기반 클라우드 관계형 데이터베이스입니다.
-- Azure 테이블 저장소. 키/값 NoSQL 데이터베이스입니다.
-- Azure Blob storage. 클라우드의 파일 저장소입니다.
+- Azure Table Storage 키/값 NoSQL 데이터베이스입니다.
+- Azure Blob Storage. 클라우드의 파일 저장소입니다.
 
 IaaS의 경우 VM에 로드할 수 있는 모든 항목을 실행할 수 있습니다. 예를 들면 다음과 같습니다.
 
@@ -125,7 +125,7 @@ Azure는 IaaS 데이터 저장소 옵션을 최대한 쉽게 사용할 수 있�
 - Vm을 만들 필요가 없으며 포털 또는 스크립트를 사용 하 여 데이터 저장소를 설정 하기만 하면 됩니다. 200 테라바이트 데이터 저장소를 원하는 경우 단추를 클릭 하거나 명령을 실행 하 고 사용할 준비가 된 시간 (초)을 선택할 수 있습니다.
 - 서비스에서 사용 하는 Vm을 관리 하거나 패치할 필요가 없습니다. Microsoft에서 자동으로 작업을 수행 합니다.-확장 또는 고가용성을 위한 인프라 설정에 대해 걱정할 필요가 없습니다. Microsoft에서 모든 것을 처리 합니다.
 - 라이선스를 구매할 필요가 없습니다. 라이선스 요금은 서비스 요금에 포함 되어 있습니다.
-- 사용한 만큼만 요금을 지불 하면 됩니다.
+- 사용한 양만큼만 요금을 지급합니다.
 
 Azure의 PaaS 데이터 저장소 옵션에는 타사 공급자가 제공 하는 기능이 포함 되어 있습니다. 예를 들어 Azure 스토어에서 [MongoLab 추가 기능](https://azure.microsoft.com/documentation/articles/store-mongolab-web-sites-dotnet-store-data-mongodb/) 을 선택 하 여 MongoDB Database as a Service를 프로 비전 할 수 있습니다.
 
@@ -147,11 +147,11 @@ Azure의 PaaS 데이터 저장소 옵션에는 타사 공급자가 제공 하는
 | API 지원 | -플랫폼을 쉽게 사용할 수 있게 해 주는 API를 사용할 수 있나요? Azure Table Service의 경우 .NET 4.5 비동기 프로그래밍 모델을 지 원하는 .NET API를 포함 하는 SDK가 있습니다. .NET 앱을 작성 하는 경우 API가 없는 다른 키/값 열 데이터 저장소 플랫폼과 비교 하 여 Azure Table Service에 대 한 코드를 작성 하 고 테스트 하는 것이 훨씬 쉽습니다. |
 | 트랜잭션 무결성 및 데이터 일관성 | -데이터 일관성을 보장 하기 위해 플랫폼이 트랜잭션을 지원 하는 것이 중요 한가요? 전송 된 대량 전자 메일을 추적 하기 위해 데이터 플랫폼의 트랜잭션 또는 참조 무결성에 대 한 자동 지원 보다 성능 및 낮은 데이터 저장소 비용이 더 중요할 수 있으므로 Azure Table Service를 선택 하는 것이 좋습니다. 은행 계좌 잔액 또는 구매 주문을 추적 하는 경우 강력한 트랜잭션 보장을 제공 하는 관계형 데이터베이스 플랫폼을 선택 하는 것이 더 좋습니다. |
 | 비즈니스 연속성 | -백업, 복원 및 재해 복구의 용이성 더 빨리 또는 나중에 프로덕션 데이터가 손상 되 고 실행 취소 함수가 필요 합니다. 관계형 데이터베이스는 특정 시점으로 복원 하는 기능과 같은 보다 세분화 된 복원 기능을 포함 하는 경우가 많습니다. 고려 하 고 있는 각 플랫폼에서 사용할 수 있는 복원 기능을 이해 하는 것이 중요 한 요소입니다. |
-| Cost | -두 개 이상의 플랫폼에서 데이터 작업을 지원할 수 있는 경우 어떻게 비용이 어떻게 비교 되나요? 예를 들어 ASP.NET Identity 사용 하는 경우 Azure Table Service 또는 Azure SQL Database에 사용자 프로필 데이터를 저장할 수 있습니다. SQL Database의 풍부한 쿼리 기능이 필요 하지 않은 경우에는 지정 된 저장소 양에 비해 비용이 훨씬 줄어들기 때문에 Azure 테이블을 부분적으로 선택할 수 있습니다. |
+| 비용 | -두 개 이상의 플랫폼에서 데이터 작업을 지원할 수 있는 경우 어떻게 비용이 어떻게 비교 되나요? 예를 들어 ASP.NET Identity 사용 하는 경우 Azure Table Service 또는 Azure SQL Database에 사용자 프로필 데이터를 저장할 수 있습니다. SQL Database의 풍부한 쿼리 기능이 필요 하지 않은 경우에는 지정 된 저장소 양에 비해 비용이 훨씬 줄어들기 때문에 Azure 테이블을 부분적으로 선택할 수 있습니다. |
 
 일반적으로 데이터 저장소 솔루션을 선택 하기 전에 이러한 각 범주에 있는 질문에 대 한 답변을 알고 있는 것이 좋습니다.
 
-또한 일부 플랫폼에서 다른 플랫폼 보다 더 잘 지원할 수 있는 특정 요구 사항이 워크 로드에 있을 수 있습니다. 예를 들면 다음과 같습니다.:
+또한 일부 플랫폼에서 다른 플랫폼 보다 더 잘 지원할 수 있는 특정 요구 사항이 워크 로드에 있을 수 있습니다. 다음은 그 예입니다.
 
 - 응용 프로그램에 감사 기능이 필요 한가요?
 - 데이터 수명 요구 사항: 자동화 된 보관 또는 제거 기능이 필요 한가요?
@@ -243,7 +243,7 @@ SQL Server 및 Azure SQL Database에 대 한 좋은 점은 두 가지 모두에 
 
 다음은 두 모델 중에서 선택 하는 방법에 대 한 몇 가지 지침입니다.
 
-| Azure SQL Database (PaaS) | 가상 컴퓨터 (IaaS)의 SQL Server |
+| Azure SQL Database(PaaS) | 가상 컴퓨터 (IaaS)의 SQL Server |
 | --- | --- |
 | **장점** -vm을 만들거나 관리할 필요가 없으며, OS 또는 SQL을 업데이트 하거나 패치할 필요가 없습니다. Azure는 사용자를 위해이를 수행 합니다. -데이터베이스 수준 SLA를 사용 하 여 기본 제공 되는 고가용성 -사용한 양만큼만 요금을 지불 하기 때문에 TCO (총 소유 비용)가 부족 합니다 (라이선스 필요 없음). -많은 수의 작은 데이터베이스를 처리 하는 데 적합 합니다 (&lt;= 500 GB). -쉽게 확장할 수 있도록 새 데이터베이스를 동적으로 만들 수 있습니다. | ***전문가*** -온-프레미스 SQL Server와 호환 가능 합니다. -VM 수준 SLA를 사용 하 여 2 개 이상의 Vm에서 [AlwaysOn을 통해 SQL Server 고가용성](https://www.microsoft.com/sqlserver/solutions-technologies/mission-critical-operations/high-availability.aspx) 을 구현할 수 있습니다. -SQL을 관리 하는 방법을 완전히 제어할 수 있습니다. -이미 소유 하 고 있는 SQL 라이선스를 다시 사용 하거나 1 시간을 기준으로 요금을 지불할 수 있습니다. -더 적거나 큰 (1TB 이상) 데이터베이스를 처리 하는 데 적합 합니다. |
 | **단점** -온-프레미스 SQL Server ( [CLR 통합](https://technet.microsoft.com/library/ms131102.aspx), [tde](https://technet.microsoft.com/library/bb934049.aspx), [압축 지원](https://technet.microsoft.com/library/cc280449.aspx), [SQL Server Reporting Services](https://technet.microsoft.com/library/ms159106.aspx)등)에 비해 몇 가지 기능 간격이 며 데이터베이스 크기 제한은 500gb입니다. | ***단점*** -업데이트/패치 (OS 및 SQL)는 사용자의 책임을 생성 하 고 관리 합니다. 즉, 디스크 IOPS (초당 입력/출력 작업)는 약 8000 (16 개의 데이터 드라이브를 통해)로 제한 됩니다. |
@@ -260,7 +260,7 @@ SQL Server 이미지를 사용 하 여 VM을 만들 때 VM 사용에 따라 시�
 
 클라우드 컴퓨팅을 사용 하면 응용 프로그램의 요구 사항에 가장 적합 한 데이터 저장소 접근 방식을 조합 하 고 일치 시킬 수 있습니다. 새 응용 프로그램을 작성 하는 경우 응용 프로그램이 늘어날 때 계속 해 서 잘 작동 하는 방식을 선택 하기 위해 여기에 나열 된 질문에 대해 신중 하 게 생각 합니다. [다음 장에서](data-partitioning-strategies.md) 는 여러 데이터 저장소 접근 방식을 결합 하는 데 사용할 수 있는 몇 가지 분할 전략을 설명 합니다.
 
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 
 자세한 내용은 다음 리소스를 참조하세요.
 
@@ -282,7 +282,7 @@ SQL Server와 SQL Database 중에서 선택 합니다.
 ASP.NET 웹 앱의 Entity Framework 및 SQL Database 사용
 
 - [MVC 5를 사용 하 여 EF 6 시작](../../../../mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application.md) EF를 사용 하 고 데이터베이스를 Azure에 배포 하 고 SQL Database 하는 MVC 앱을 빌드하는 과정을 안내 하는 9 부 자습서 시리즈입니다.
-- [Visual Studio를 사용 하 여 웹 배포를 ASP.NET](../../../../web-forms/overview/deployment/visual-studio-web-deployment/introduction.md). EF Code First를 사용 하 여 데이터베이스를 배포 하는 방법에 대해 자세히 설명 하는 12 부 자습서 시리즈입니다.
+- [Visual Studio를 사용한 ASP.NET 웹 배포](../../../../web-forms/overview/deployment/visual-studio-web-deployment/introduction.md)(영문). EF Code First를 사용 하 여 데이터베이스를 배포 하는 방법에 대해 자세히 설명 하는 12 부 자습서 시리즈입니다.
 - [멤버 자격, OAuth 및 SQL Database가 포함 된 보안 ASP.NET MVC 5 앱을 Azure 웹 사이트에 배포](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-deploy-aspnet-mvc-app-membership-oauth-sql-database/)합니다. 인증을 사용 하는 웹 앱을 만들고, 멤버 자격 데이터베이스에 응용 프로그램 테이블을 저장 하 고, 데이터베이스 스키마를 수정 하 고, 앱을 Azure에 배포 하는 과정을 안내 하는 단계별 자습서입니다.
 - [ASP.NET Data Access Content Map](https://go.microsoft.com/fwlink/p/?LinkId=282414). EF 및 SQL Database을 사용 하기 위한 리소스에 대 한 링크입니다.
 

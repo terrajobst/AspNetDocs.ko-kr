@@ -8,16 +8,16 @@ ms.date: 06/12/2014
 ms.assetid: accfa16a-ab15-4c26-9ad4-babdc2a77d2e
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/introduction
 msc.type: authoredcontent
-ms.openlocfilehash: 8a4ef3aa37a9296e92fbeb513968e3abeee072d0
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: b88573b3702b755b155e8da35f5f8a67931bafc6
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74585527"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457117"
 ---
 # <a name="building-real-world-cloud-apps-with-azure"></a>Azure를 사용 하 여 실제 클라우드 앱 빌드
 
-사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
+사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson](https://twitter.com/RickAndMSFT), [Tom Dykstra](https://github.com/tdykstra)
 
 [Fix It 프로젝트 다운로드](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자 서적 다운로드](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -25,7 +25,7 @@ ms.locfileid: "74585527"
 > 
 > 콘텐츠는 Scott Guthrie에서 개발한 프레젠테이션을 기반으로 하며 2013, 2013 년 6 월 ([1](http://vimeo.com/68215538)부, [2 부](http://vimeo.com/68215602))의 Microsoft Tech Ed 오스트레일리아 ([1](https://channel9.msdn.com/Events/TechEd/Australia/2013/AZR324)부, [2](https://channel9.msdn.com/Events/TechEd/Australia/2013/AZR325)부)에서 Scott이 개발한 프레젠테이션을 기반으로 합니다. 비디오에서 필기 형식으로 전환 하는 동안 [다른 많은 사람들이](more-patterns-and-guidance.md#acknowledgments) 콘텐츠를 업데이트 하 고 보강 했습니다.
 
-## <a name="intended-audience"></a>적용 대상
+## <a name="intended-audience"></a>대상 그룹
 
 클라우드를 위한 개발, 클라우드로의 이동, 클라우드 개발에 대해 관심이 있는 개발자는 여기에서 알아야 하는 가장 중요 한 개념과 방법에 대 한 간결한 개요를 확인할 수 있습니다. 개념은 구체적인 예제와 함께 설명 되어 있으며, 각 챕터는 다른 리소스에 연결 되어 자세한 정보를 제공 합니다. Microsoft 프레임 워크 및 서비스에 대 한 추가 리소스의 예제와 링크는 다른 웹 개발 프레임 워크 및 클라우드 환경에도 적용 됩니다.
 
@@ -101,7 +101,7 @@ Scott Guthrie에서 *Azure 프레젠테이션을 사용 하 여 실제 클라우
 - [더 많은 클라우드 앱 패턴 및 지침](more-patterns-and-guidance.md)
 - [부록: Fix It 애플리케이션 예제](the-fix-it-sample-application.md)
 
-    - 알려진 문제점
+    - 알려진 문제
     - 모범 사례
     - 다운로드, 빌드, 실행 및 배포 하는 방법을 설명 합니다.
 
@@ -158,7 +158,7 @@ Visual Studio에서 웹 응용 프로그램을 만들고 Azure 웹 사이트에 
 
 이 소개에서는 책에서 다루는 항목의 목록, 샘플 응용 프로그램의 스크린샷 및 Azure App Service 클라우드 환경의 Web Apps에 대 한 간략 한 개요를 제공 했습니다. 및 클라우드에서 앱을 개발할 때의 뛰어난 이점 중 하나는 테스트 환경 만들기 및 코드 배포와 같은 반복적인 개발 작업을 쉽게 자동화할 수 있다는 것입니다. 이 작업을 수행 하는 방법은 [다음 장의](automate-everything.md)주제입니다.
 
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 
 이 장에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 

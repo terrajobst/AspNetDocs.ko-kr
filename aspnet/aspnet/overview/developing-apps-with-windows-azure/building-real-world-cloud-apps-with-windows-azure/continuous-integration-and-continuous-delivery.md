@@ -8,16 +8,16 @@ ms.date: 06/12/2014
 ms.assetid: eaece9f5-f80c-428b-b771-5db66d275b7d
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/continuous-integration-and-continuous-delivery
 msc.type: authoredcontent
-ms.openlocfilehash: 52c710053feca7872aa6fcc93c99bce90359f8fc
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: cf3c65ef95528173eed3fb08984035b2512861c4
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74585873"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457039"
 ---
 # <a name="continuous-integration-and-continuous-delivery-building-real-world-cloud-apps-with-azure"></a>지속적인 통합 및 지속적인 업데이트 (Azure를 사용 하 여 실제 클라우드 앱 빌드)
 
-사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
+사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson](https://twitter.com/RickAndMSFT), [Tom Dykstra](https://github.com/tdykstra)
 
 [Fix It 프로젝트 다운로드](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자 서적 다운로드](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -58,7 +58,7 @@ Azure DevOps Services의 지속적인 통합 및 배달 기능에 대 한 자세
 
 처음 세 가지 클라우드 개발 패턴은 주기 시간이 짧은 반복 가능 하 고 안정적 이며 예측 가능한 개발 프로세스를 구현 하는 방법에 대 한 것입니다. [다음 장에서](web-development-best-practices.md) 는 아키텍처 및 코딩 패턴을 확인 하기 시작 합니다.
 
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 
 자세한 내용은 [Azure App Service에서 웹 앱 배포](https://azure.microsoft.com/documentation/articles/web-sites-deploy/)를 참조 하세요.
 

@@ -8,16 +8,16 @@ ms.date: 01/06/2019
 ms.assetid: 52a4d5fe-aa31-4471-b3cb-a064f82cb791
 msc.legacyurl: /mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view
 msc.type: authoredcontent
-ms.openlocfilehash: 946c88d2b337e3bf634f815c7f1ce045f29d9d84
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.openlocfilehash: 6cef963910b957e8b4ad7c7909385f6dbdff95c1
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76518748"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77456065"
 ---
 # <a name="examining-the-edit-methods-and-edit-view"></a>편집 메서드 및 편집 보기 검사
 
-[Rick Anderson]((https://twitter.com/RickAndMSFT))
+[Rick Anderson](https://twitter.com/RickAndMSFT)
 
 [!INCLUDE [Tutorial Note](index.md)]
 
@@ -29,7 +29,7 @@ ms.locfileid: "76518748"
 
 [!code-csharp[Main](examining-the-edit-methods-and-edit-view/samples/sample2.cs?highlight=3)]
 
-다음 자습서에서는 [DataAnnotations](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.aspx)를 다룹니다. [Display](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.displayattribute.aspx) 특성은 필드의 이름에 표시할 대상을 지정합니다(이 경우 "ReleaseDate" 대신 "Release Date"). [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) 특성은 데이터의 유형을 지정 합니다 .이 경우 날짜 이므로 필드에 저장 된 시간 정보가 표시 되지 않습니다. 날짜 형식을 잘못 렌더링 하는 Chrome 브라우저의 버그에는 [Displayformat](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.displayformatattribute.aspx) 특성이 필요 합니다.
+다음 자습서에서 [DataAnnotations](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.aspx)를 다룰 예정입니다. [Display](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.displayattribute.aspx) 특성은 필드의 이름으로 표시할 내용을 지정합니다(이 경우 "ReleaseDate" 대신 "Release Date") [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) 특성은 데이터의 유형을 지정 합니다 .이 경우 날짜 이므로 필드에 저장 된 시간 정보가 표시 되지 않습니다. 날짜 형식을 잘못 렌더링 하는 Chrome 브라우저의 버그에는 [Displayformat](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.displayformatattribute.aspx) 특성이 필요 합니다.
 
 응용 프로그램을 실행 하 고 `Movies` 컨트롤러로 이동 합니다. **편집** 링크 위에 마우스 포인터를 놓으면 링크 되는 URL을 볼 수 있습니다.
 
@@ -77,13 +77,13 @@ ms.locfileid: "76518748"
 
 ## <a name="processing-the-post-request"></a>POST 요청 처리
 
-다음 목록은 `Edit` 작업 메서드의 `HttpPost` 버전을 보여줍니다.
+다음 목록은 `HttpPost` 작업 메서드의 `Edit` 버전을 보여줍니다.
 
 [!code-csharp[Main](examining-the-edit-methods-and-edit-view/samples/sample9.cs)]
 
 [ValidateAntiForgeryToken](https://msdn.microsoft.com/library/system.web.mvc.validateantiforgerytokenattribute(v=vs.108).aspx) 특성은 뷰에서 `@Html.AntiForgeryToken()` 호출에 의해 생성 된 [XSRF](../../security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages.md) 토큰의 유효성을 검사 합니다.
 
-[ASP.NET MVC 모델 바인더](https://msdn.microsoft.com/library/dd410405.aspx) 는 게시 된 양식 값을 사용 하 여 `movie` 매개 변수로 전달 되는 `Movie` 개체를 만듭니다. `ModelState.IsValid`는 폼에 전송 된 데이터를 사용 하 여 `Movie` 개체를 수정 (편집 또는 업데이트) 할 수 있는지 확인 합니다. 데이터가 유효 하면 동영상 데이터가 `db`(`MovieDBContext` 인스턴스)의 `Movies` 컬렉션에 저장 됩니다. 새 동영상 데이터는 `MovieDBContext`의 `SaveChanges` 메서드를 호출 하 여 데이터베이스에 저장 됩니다. 데이터를 저장한 후 코드는 사용자를 `MoviesController` 클래스의 `Index` 동작 메서드로 다시 전달하며, 여기에는 방금 수행한 변경 사항을 포함하여 동영상 컬렉션이 표시됩니다.
+[ASP.NET MVC 모델 바인더](https://msdn.microsoft.com/library/dd410405.aspx) 는 게시 된 양식 값을 사용 하 여 `movie` 매개 변수로 전달 되는 `Movie` 개체를 만듭니다. `ModelState.IsValid`는 폼에 전송 된 데이터를 사용 하 여 `Movie` 개체를 수정 (편집 또는 업데이트) 할 수 있는지 확인 합니다. 데이터가 유효 하면 동영상 데이터가 `db`(`MovieDBContext` 인스턴스)의 `Movies` 컬렉션에 저장 됩니다. 새 동영상 데이터는 `MovieDBContext`의 `SaveChanges` 메서드를 호출 하 여 데이터베이스에 저장 됩니다. 데이터를 저장한 후 코드는 사용자를 `Index` 클래스의 `MoviesController` 작업 메서드로 다시 전달하며, 여기에서는 방금 수행한 변경 사항을 포함한 영화 컬렉션이 표시됩니다.
 
 클라이언트 쪽 유효성 검사에서 필드의 값이 잘못 된 것으로 확인 되는 즉시 오류 메시지가 표시 됩니다. JavaScript를 사용 하지 않도록 설정 하면 클라이언트 쪽 유효성 검사가 사용 되지 않습니다. 그러나 서버는 게시 된 값이 유효 하지 않은 것을 감지 하 고 양식 값이 오류 메시지와 함께 다시 표시 됩니다.
 

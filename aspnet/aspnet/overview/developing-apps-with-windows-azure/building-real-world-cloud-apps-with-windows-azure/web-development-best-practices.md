@@ -8,16 +8,16 @@ ms.date: 06/12/2014
 ms.assetid: 52d6c941-2cd9-442f-9872-2c798d6d90cd
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/web-development-best-practices
 msc.type: authoredcontent
-ms.openlocfilehash: 0956aaaf1f6a1a0d2f5d93f98cb6959cec98dbaf
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: dfd8a3ac2328d3f17dfbe36e68b37d181177b0f4
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74582709"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457091"
 ---
 # <a name="web-development-best-practices-building-real-world-cloud-apps-with-azure"></a>웹 개발 모범 사례 (Azure를 사용 하 여 실제 클라우드 앱 빌드)
 
-사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
+사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson](https://twitter.com/RickAndMSFT), [Tom Dykstra](https://github.com/tdykstra)
 
 [Fix It 프로젝트 다운로드](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자 서적 다운로드](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -76,7 +76,7 @@ Microsoft Azure에서 CPU 사용량에 따라 웹 서버 수를 자동으로 늘
 <a id="sessionstate"></a>
 ## <a name="avoid-session-state"></a>세션 상태 방지
 
-사용자 세션에 대 한 일종의 상태를 저장 하는 것을 방지 하기 위해 실제 클라우드 앱에는 실용적이 지 않지만 몇 가지 접근 방식은 다른 방법 보다 성능 및 확장성에 영향을 줍니다. 상태를 저장 해야 하는 경우 가장 좋은 방법은 상태를 작은 값으로 유지 하 고 쿠키에 저장 하는 것입니다. 가능 하지 않은 경우 다음으로 가장 좋은 해결 방법은 [분산 된 메모리 내 캐시](distributed-caching.md#sessionstate)에 대 한 공급자와 ASP.NET 세션 상태를 사용 하는 것입니다. 성능 및 확장성 측면에서 가장 나쁜 솔루션은 데이터베이스 지원 세션 상태 공급자를 사용 하는 것입니다.
+종종 실제 클라우드 앱에서 사용자 세션에 대한 일종의 상태를 저장을 회피하는 데 실용적이지 않지만 일부 접근 방법은 다른 항목 보다 성능 및 확장성에 더 많은 영향을 줍니다. 상태를 저장해야 하는 경우 가장 좋은 해결법은 상태의 크기를 작게 유지하고 쿠키에 저장하는 것입니다. 가능 하지 않은 경우 다음으로 가장 좋은 해결 방법은 [분산 된 메모리 내 캐시](distributed-caching.md#sessionstate)에 대 한 공급자와 ASP.NET 세션 상태를 사용 하는 것입니다. 성능 및 확장성 측면에서 최악의 해결법은 데이터베이스 지원 세션 상태 제공자를 사용하는 것입니다.
 
 <a id="cdn"></a>
 ## <a name="use-a-cdn-to-cache-static-file-assets"></a>CDN을 사용 하 여 정적 파일 자산 캐시
@@ -132,7 +132,7 @@ Entity Framework 6에서는 쿼리 또는 명령을 데이터베이스에 전송
 
 [다음 장에서](single-sign-on.md) 는 클라우드에서 Single Sign-On 시나리오를 사용 하는 방법을 살펴봅니다.
 
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 
 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -141,7 +141,7 @@ Entity Framework 6에서는 쿼리 또는 명령을 데이터베이스에 전송
 - [Microsoft 패턴 및 사례-자동](https://msdn.microsoft.com/library/dn589774.aspx)크기 조정 지침
 - [Microsoft Azure 웹 사이트에서 ARR의 인스턴스 선호도를 사용 하지 않도록 설정](https://azure.microsoft.com/blog/2013/11/18/disabling-arrs-instance-affinity-in-windows-azure-web-sites/)합니다. Windows Azure 웹 사이트의 세션 선호도에 대해 설명 하는 Rez 용 Ari의 블로그 게시물입니다.
 
-CDN
+CDN:
 
 - [안전 하지 않음: 확장 가능 하 고 복원 가능한 Cloud Services 빌드](https://channel9.msdn.com/Series/FailSafe) 9 개 부분으로 구성 된 비디오 시리즈, Marc Mercuri 및 Mark Simm. 1:34:00에서 시작 하는 에피소드 3의 CDN 토론을 참조 하세요.
 - [Microsoft 패턴 및 구현 정적 콘텐츠 호스팅 패턴](https://msdn.microsoft.com/library/dn589776.aspx)

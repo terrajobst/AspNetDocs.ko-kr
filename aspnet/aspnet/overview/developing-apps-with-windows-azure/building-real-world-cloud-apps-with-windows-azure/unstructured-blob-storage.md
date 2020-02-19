@@ -8,16 +8,16 @@ ms.date: 03/30/2015
 ms.assetid: 9f05ccb1-2004-4661-ad8b-c370e6c09c8e
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/unstructured-blob-storage
 msc.type: authoredcontent
-ms.openlocfilehash: 2afd4b5cf640eb97080de7e5280409f5e5347731
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: f48b2be755b84dff9b2672bd348c73107602c6dd
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74583631"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77456793"
 ---
 # <a name="unstructured-blob-storage-building-real-world-cloud-apps-with-azure"></a>비구조적 Blob Storage (Azure를 사용 하 여 실제 클라우드 앱 빌드)
 
-사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
+사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson](https://twitter.com/RickAndMSFT), [Tom Dykstra](https://github.com/tdykstra)
 
 [Fix It 프로젝트 다운로드](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자 서적 다운로드](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -25,7 +25,7 @@ ms.locfileid: "74583631"
 
 이전 장에서는 파티션 구성표를 살펴보고 Fix It 앱이 Azure Storage Blob 서비스에 이미지를 저장 하는 방법 및 Azure SQL Database에 다른 작업 데이터를 저장 하는 방법에 대해 설명 했습니다. 이 장에서는 Blob service에 대해 자세히 살펴보고 수정 It 프로젝트 코드에서 구현 되는 방법을 보여 줍니다.
 
-## <a name="what-is-blob-storage"></a>Blob storage 란?
+## <a name="what-is-blob-storage"></a>Blob Storage란?
 
 Azure Storage Blob 서비스는 클라우드에 파일을 저장 하는 방법을 제공 합니다. Blob service에는 로컬 네트워크 파일 시스템에 파일을 저장 하는 것 보다 많은 이점이 있습니다.
 
@@ -135,7 +135,7 @@ Fix It 앱이 Blob service에 이미지를 저장 하 고 SQL database에 이미
 
 [다음 장에서](design-to-survive-failures.md) 는 클라우드 앱에서 오류를 정상적으로 처리할 수 있도록 하는 중요성에 대해 설명 합니다.
 
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 
 자세한 내용은 다음 리소스를 참조 하세요.
 

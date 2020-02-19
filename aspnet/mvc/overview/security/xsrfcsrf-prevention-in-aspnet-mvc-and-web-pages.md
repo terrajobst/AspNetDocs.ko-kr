@@ -8,20 +8,20 @@ ms.date: 03/14/2013
 ms.assetid: aadc5fa4-8215-4fc7-afd5-bcd2ef879728
 msc.legacyurl: /mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages
 msc.type: authoredcontent
-ms.openlocfilehash: fb7e76101cbe6a874ddf5b3429ca2dc6d474334b
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: 1965063a9b613d0e2857cddcc2165f5fda64ec0c
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74595754"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77455531"
 ---
 # <a name="xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages"></a>ASP.NET MVC 및 웹 페이지에서 XSRF/CSRF 방지
 
-[Rick Anderson]((https://twitter.com/RickAndMSFT))
+[Rick Anderson](https://twitter.com/RickAndMSFT)
 
-> 사이트 간 요청 위조 (XSRF 또는 CSRF 라고도 함)는 악의적인 웹 사이트가 클라이언트 브라우저와 해당 브라우저가 신뢰 하는 웹 사이트 간의 상호 작용에 영향을 줄 수 있는 웹 호스팅 응용 프로그램에 대 한 공격입니다. 웹 브라우저에서 웹 사이트에 대 한 모든 요청과 함께 인증 토큰을 자동으로 보내기 때문에 이러한 공격을 수행할 수 있습니다. 정식 예제는 ASP와 같은 인증 쿠키입니다. NET의 폼 인증 티켓입니다. 그러나 모든 영구 인증 메커니즘 (예: Windows 인증, 기본 등)을 사용 하는 웹 사이트는 이러한 공격의 대상이 될 수 있습니다.
+> 사이트 간 요청 위조 (XSRF 또는 CSRF 라고도 함)는 악의적인 웹 사이트가 클라이언트 브라우저와 해당 브라우저가 신뢰 하는 웹 사이트 간의 상호 작용에 영향을 줄 수 있는 웹 호스팅 응용 프로그램에 대 한 공격입니다. 웹 브라우저에서 웹 사이트에 대 한 모든 요청과 함께 인증 토큰을 자동으로 보내기 때문에 이러한 공격을 수행할 수 있습니다. 정식 예로는 ASP.NET의 폼 인증 티켓과 같은 인증 쿠키가 있습니다. 그러나 모든 영구 인증 메커니즘 (예: Windows 인증, 기본 등)을 사용 하는 웹 사이트는 이러한 공격의 대상이 될 수 있습니다.
 > 
-> XSRF 공격은 피싱 공격과는 다릅니다. 피싱 공격에는 교착 상태가 발생 한 상호 작용이 필요 합니다. 피싱 공격에서 악의적인 웹 사이트는 대상 웹 사이트를 모방 하 고, 공격자에 게 중요 한 정보를 제공 하는 것이 속기 됩니다. XSRF 공격으로 인해 일반적으로 교착 상태가 발생 하는 경우에는 상호 작용이 필요 하지 않습니다. 대신 공격자가 모든 관련 쿠키를 대상 웹 사이트로 자동으로 보내는 브라우저에 의존 합니다.
+> XSRF 공격은 피싱 공격과는 구분됩니다. 피싱 공격에는 피해자의 상호 작용이 필요합니다. 피싱 공격에서 악의적인 웹 사이트는 대상 웹 사이트를 모방 하 고, 공격자에 게 중요 한 정보를 제공 하는 것이 속기 됩니다. XSRF 공격에서는 종종 피해자의 상호 작용이 필요하지 않습니다. 대신 공격자가 모든 관련 쿠키를 대상 웹 사이트로 자동으로 보내는 브라우저에 의존 합니다.
 > 
 > 자세한 내용은 [Open Web Application Security Project](https://www.owasp.org/index.php/Main_Page)(OWASP) [XSRF](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF))를 참조 하세요.
 
@@ -159,13 +159,13 @@ XSRF 시스템은 익명 사용자에 대 한 특별 한 지원을 포함 합니
 
 개발자는 응용 프로그램\_시작에서 XSRF 시스템을 구성할 수 있습니다. 구성이 프로그래밍 방식입니다. 정적 *AntiForgeryConfig* 형식의 속성은 아래에 설명 되어 있습니다. 클레임을 사용 하는 대부분의 사용자는 UniqueClaimTypeIdentifier 속성을 설정 하려고 합니다.
 
-| **Property** | **설명** |
+| **속성** | **설명** |
 | --- | --- |
-| **AdditionalDataProvider** | 토큰을 생성 하는 동안 추가 데이터를 제공 하 고 토큰 유효성 검사 중에 추가 데이터를 사용 하는 [IAntiForgeryAdditionalDataProvider](https://msdn.microsoft.com/library/system.web.helpers.iantiforgeryadditionaldataprovider(v=vs.111).aspx) 입니다. 기본값은 *null*합니다. 자세한 내용은 [IAntiForgeryAdditionalDataProvider](https://msdn.microsoft.com/library/system.web.helpers.iantiforgeryadditionaldataprovider(v=vs.111).aspx) 섹션을 참조 하세요. |
-| **CookieName** | XSRF 세션 토큰을 저장 하는 데 사용 되는 HTTP 쿠키의 이름을 제공 하는 문자열입니다. 이 값을 설정 하지 않으면 응용 프로그램의 배포 된 가상 경로에 따라 이름이 자동으로 생성 됩니다. 기본값은 *null*합니다. |
-| **RequireSsl** | SSL 보안 채널을 통해 XSRF 토큰을 제출 해야 하는지 여부를 지정 하는 부울입니다. 이 값이 *true*이면 자동으로 생성 되는 모든 쿠키에 "secure" 플래그가 설정 되 고, SSL을 통해 제출 되지 않은 요청 내에서 호출 된 경우 XSRF api가 throw 됩니다. 기본값은 *false*입니다. |
-| **SuppressIdentityHeuristicChecks** | XSRF 시스템에서 클레임 기반 id에 대 한 지원을 비활성화 해야 하는지 여부를 지정 하는 부울입니다. 이 값이 *true*이면 시스템은 *IIdentity.Name* 이 고유한 사용자별 식별자로 사용 하기에 적합 한 것으로 가정 하 고 WIF/ACS/에 설명 된 대로 특수 한 *IClaimsIdentity* 또는 *ClClaimsIdentity* 를 시도 하지 않습니다. [ 클레임 기반 인증](#_WIF_ACS) 섹션. 기본값은 `false`여야 합니다. |
-| **UniqueClaimTypeIdentifier** | 고유한 사용자별 식별자로 사용 하기에 적합 한 클레임 형식을 나타내는 문자열입니다. 이 값을 설정 하 고 현재 *IIdentity* 가 클레임 기반 인 경우 시스템은 *UniqueClaimTypeIdentifier*에 지정 된 유형의 클레임을 추출 하려고 시도 하 고, 다음과 같은 경우 사용자의 사용자 이름 대신 해당 값이 사용 됩니다. 필드 토큰을 생성 합니다. 클레임 유형을 찾을 수 없는 경우 시스템에서 요청이 실패 합니다. 기본값은 *null*입니다 .이 값은 시스템에서 사용자의 사용자 이름 대신 앞에서 설명한 대로 (id 공급자, 이름 식별자) 튜플을 사용 해야 함을 나타냅니다. |
+| **AdditionalDataProvider** | 토큰을 생성 하는 동안 추가 데이터를 제공 하 고 토큰 유효성 검사 중에 추가 데이터를 사용 하는 [IAntiForgeryAdditionalDataProvider](https://msdn.microsoft.com/library/system.web.helpers.iantiforgeryadditionaldataprovider(v=vs.111).aspx) 입니다. 기본값은 *null*입니다. 자세한 내용은 [IAntiForgeryAdditionalDataProvider](https://msdn.microsoft.com/library/system.web.helpers.iantiforgeryadditionaldataprovider(v=vs.111).aspx) 섹션을 참조 하세요. |
+| **CookieName** | XSRF 세션 토큰을 저장 하는 데 사용 되는 HTTP 쿠키의 이름을 제공 하는 문자열입니다. 이 값을 설정 하지 않으면 응용 프로그램의 배포 된 가상 경로에 따라 이름이 자동으로 생성 됩니다. 기본값은 *null*입니다. |
+| **RequireSsl** | SSL 보안 채널을 통해 XSRF 토큰을 제출 해야 하는지 여부를 지정 하는 부울입니다. 이 값이 *true*이면 자동으로 생성 되는 모든 쿠키에 "secure" 플래그가 설정 되 고, SSL을 통해 제출 되지 않은 요청 내에서 호출 된 경우 XSRF api가 throw 됩니다. 기본 값은 *false*입니다. |
+| **SuppressIdentityHeuristicChecks** | XSRF 시스템에서 클레임 기반 id에 대 한 지원을 비활성화 해야 하는지 여부를 지정 하는 부울입니다. 이 값이 *true*이면 시스템은 *IIdentity.Name* 이 고유한 사용자별 식별자로 사용 하기에 적합 한 것으로 가정 하 고 [WIF/ACS/클레임 기반 인증](#_WIF_ACS) 섹션에 설명 된 대로 특수 한 *IClaimsIdentity* 또는 *ClClaimsIdentity* 를 시도 하지 않습니다. 기본값은 `false`입니다. |
+| **UniqueClaimTypeIdentifier** | 고유한 사용자별 식별자로 사용 하기에 적합 한 클레임 형식을 나타내는 문자열입니다. 이 값을 설정 하 고 현재 *IIdentity* 가 클레임 기반 인 경우 시스템은 *UniqueClaimTypeIdentifier*에 지정 된 유형의 클레임을 추출 하려고 시도 하며, 필드 토큰을 생성할 때 사용자의 사용자 이름 대신 해당 값이 사용 됩니다. 클레임 유형을 찾을 수 없는 경우 시스템에서 요청이 실패 합니다. 기본값은 *null*입니다 .이 값은 시스템에서 사용자의 사용자 이름 대신 앞에서 설명한 대로 (id 공급자, 이름 식별자) 튜플을 사용 해야 함을 나타냅니다. |
 
 <a id="_IAntiForgeryAdditionalDataProvider"></a>
 
@@ -185,6 +185,6 @@ XSRF 루틴은 현재 [클릭 재 킹](https://www.owasp.org/index.php/Clickjack
 
 웹 개발자는 사이트가 XSS 공격에 취약 하지 않은지 지속적으로 확인 해야 합니다. XSS 공격은 매우 강력 하며, 성공적인 익스플로잇은 XSRF 공격에 대해 ASP.NET 웹 스택 런타임 방어를 중단 시킬 수도 있습니다.
 
-## <a name="acknowledgment"></a>승인이
+## <a name="acknowledgment"></a>승인
 
 [@LeviBroderick](https://twitter.com/LeviBroderick), 많은 ASP.NET 보안 코드를 작성 한 사람이이 정보를 대량으로 작성 했습니다.

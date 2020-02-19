@@ -1,0 +1,1 @@
+영어 이외의 언어로이 문서를 읽는 경우 네이티브 언어로 작성 된 코드 주석을 보려는 경우이 [GitHub 토론 문제](https://github.com/aspnet/AspNetCore.Docs/issues/16455) 를 알려주세요.

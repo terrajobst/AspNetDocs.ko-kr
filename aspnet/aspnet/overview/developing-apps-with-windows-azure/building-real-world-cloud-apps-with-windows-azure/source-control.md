@@ -8,16 +8,16 @@ ms.date: 06/23/2015
 ms.assetid: 2a0370d3-c2fb-4bf3-88b8-aad5a736c793
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control
 msc.type: authoredcontent
-ms.openlocfilehash: a6f445e46d41b646cf6c25af2e65bc73e831d5ed
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: 5a1e0d7cd3c396d4be79c8958422602055eb3db1
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74583707"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457104"
 ---
 # <a name="source-control-building-real-world-cloud-apps-with-azure"></a>원본 제어 (Azure를 사용 하 여 실제 클라우드 앱 빌드)
 
-사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
+사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson](https://twitter.com/RickAndMSFT), [Tom Dykstra](https://github.com/tdykstra)
 
 [Fix It 프로젝트 다운로드](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자 서적 다운로드](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -147,7 +147,7 @@ Visual Studio는 TFVC (중앙 집중식 버전 제어) 또는 Git를 사용할�
 
 Git를 선택 하 고 **확인**을 클릭 하면 Visual Studio에서 솔루션 폴더에 새 로컬 Git 리포지토리를 만듭니다. 새 리포지토리에 파일이 아직 없습니다. Git 커밋을 수행 하 여 리포지토리에 추가 해야 합니다. **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭 한 다음 **커밋**을 클릭 합니다.
 
-![커밋](source-control/_static/image11.png)
+![Commit](source-control/_static/image11.png)
 
 Visual Studio는 커밋에 대 한 모든 프로젝트 파일을 자동으로 준비 하 고 **포함 된 변경 내용** 창에 **팀 탐색기** 에 나열 합니다. 커밋에 포함 하지 않으려는 항목이 있는 경우 해당 항목을 선택 하 고 마우스 오른쪽 단추를 클릭 한 다음 **제외**를 클릭 합니다.
 
@@ -192,7 +192,7 @@ Visual Studio에서 로컬 Git 리포지토리로 작업 하는 방법은 여기
 언제 든 지 변경 하 여 안전 하 고 예측 가능한 방식으로 사용할 수 있는 방법에 따라 원본 제어 시스템의 성공 여부를 측정 합니다. 1 일 또는 2 개의 수동 테스트를 수행 해야 하기 때문에 변경 하는 것을 알게 되 면 몇 분 내에 또는 최악의 경우에 변경 내용을 적용할 수 있도록 프로세스 또는 테스트를 수행 해야 하는 작업을 사용자에 게 요청할 수 있습니다. 이 작업을 수행 하는 한 가지 전략은 연속 통합 및 지속적인 업데이트를 구현 하는 것입니다 .이에 대해서는 [다음 장에서](continuous-integration-and-continuous-delivery.md)다룰 것입니다.
 
 <a id="resources"></a>
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 
 분기 전략에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 

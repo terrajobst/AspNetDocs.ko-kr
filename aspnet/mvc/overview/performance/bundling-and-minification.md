@@ -8,16 +8,16 @@ ms.date: 08/23/2012
 ms.assetid: 5894dc13-5d45-4dad-8096-136499120f1d
 msc.legacyurl: /mvc/overview/performance/bundling-and-minification
 msc.type: authoredcontent
-ms.openlocfilehash: 239980d747c6e0d6be1e9b4fe0371e276e37cf21
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.openlocfilehash: 61bfe5dbac04b57e1461183b66ead2f01fe0734c
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519286"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457767"
 ---
 # <a name="bundling-and-minification"></a>묶음 및 축소
 
-[Rick Anderson]((https://twitter.com/RickAndMSFT))
+[Rick Anderson](https://twitter.com/RickAndMSFT)
 
 > 번들 및 축소는 요청 로드 시간을 개선 하기 위해 ASP.NET 4.5에서 사용할 수 있는 두 가지 기술입니다. 묶음 및 축소는 서버에 대 한 요청 수를 줄이고 요청한 자산의 크기 (예: CSS 및 JavaScript)를 줄임으로써 로드 시간을 향상 시킵니다.
 
@@ -39,7 +39,7 @@ ms.locfileid: "76519286"
 
 ![](bundling-and-minification/_static/image3.png)
 
-## <a name="minification"></a>축소
+## <a name="minification"></a>필터로
 
 축소는 불필요 한 공백과 주석을 제거 하 고 변수 이름을 한 문자로 단축 하는 것과 같이 스크립트나 css에 대 한 다양 한 코드 최적화를 수행 합니다. 다음 JavaScript 함수를 살펴보겠습니다.
 
@@ -61,10 +61,10 @@ ms.locfileid: "76519286"
 
 다음 표에서는 샘플 프로그램에서 모든 자산을 개별적으로 나열 하 고 묶음 및 축소 (B/M)를 사용 하는 경우의 몇 가지 중요 한 차이점을 보여 줍니다.
 
-|  | **B/M 사용** | **B/M 없음** | **변경 내용** |
+|  | **B/M 사용** | **B/M 없음** | **변경** |
 | --- | --- | --- | --- |
-| **파일 요청** | 10 | 34 | 256% |
-| **KB Sent** | 3.26 | 11.92 | 266% |
+| **파일 요청** | 9 | 34 | 256% |
+| **보낸 KB** | 3.26 | 11.92 | 266% |
 | **받은 KB** | 388.51 | 530 | 36% |
 | **로드 시간** | 510 MS | 780 MS | 53% |
 
@@ -154,10 +154,10 @@ Render 메서드는 문자열 배열을 사용 하므로 한 줄의 코드에서
 
 다음 JavaScript 파일이 포함 된 프로젝트를 생각해 보세요.
 
-- *Scripts\\Common\\AddAltToImg.js*
-- *Scripts\\Common\\ToggleDiv.js*
-- *Scripts\\Common\\ToggleImg.js*
-- *Scripts\\Common\\Sub1\\ToggleLinks.js*
+- *스크립트\\Common\\AddAltToImg.*
+- *스크립트\\일반적인\\ToggleDiv*
+- *스크립트\\일반적인\\ToggleImg*
+- *스크립트\\일반\\Sub1\\ToggleLinks*
 
 ![dir imag](bundling-and-minification/_static/image7.png)
 
@@ -165,13 +165,13 @@ Render 메서드는 문자열 배열을 사용 하므로 한 줄의 코드에서
 
 | **Call** | **추가 된 파일 또는 예외 발생** |
 | --- | --- |
-| Include("~/Scripts/Common/\*.js") | *AddAltToImg.js*, *ToggleDiv.js*, *ToggleImg.js* |
-| Include("~/Scripts/Common/T\*.js") | 잘못 된 패턴 예외입니다. 와일드 카드 문자는 접두사 또는 접미사에만 사용할 수 있습니다. |
-| Include("~/Scripts/Common/\*og.\*") | 잘못 된 패턴 예외입니다. 와일드 카드 문자는 하나만 사용할 수 있습니다. |
-| Include("~/Scripts/Common/T\*") | *ToggleDiv.js*, *ToggleImg.js* |
-| Include("~/Scripts/Common/\*") | 잘못 된 패턴 예외입니다. 순수 와일드 카드 세그먼트가 잘못 되었습니다. |
-| IncludeDirectory("~/Scripts/Common", "T\*") | *ToggleDiv.js*, *ToggleImg.js* |
-| IncludeDirectory("~/Scripts/Common", "T\*", true) | *ToggleDiv.js*, *ToggleImg.js*, *ToggleLinks.js* |
+| Include ("~/Scripts/Common/\*.js") | *Addalttoimg*, *ToggleDiv*, *ToggleImg* |
+| Include ("~/Scripts/Common/T\*.js") | 잘못 된 패턴 예외입니다. 와일드 카드 문자는 접두사 또는 접미사에만 사용할 수 있습니다. |
+| Include ("~/Scripts/Common/\*og.\*") | 잘못 된 패턴 예외입니다. 와일드 카드 문자는 하나만 사용할 수 있습니다. |
+| Include ("~/Scripts/Common/T\*") | *ToggleDiv*, *ToggleImg* |
+| Include ("~/Scripts/Common/\*") | 잘못 된 패턴 예외입니다. 순수 와일드 카드 세그먼트가 잘못 되었습니다. |
+| IncludeDirectory ("~/Scripts/Common", "T\*") | *ToggleDiv*, *ToggleImg* |
+| IncludeDirectory ("~/Scripts/Common", "T\*", true) | *ToggleDiv*, *ToggleImg*, *ToggleLinks* |
 
 각 파일을 번들에 명시적으로 추가 하는 것은 일반적으로 다음과 같은 이유로 파일의 와일드 카드 로드 보다 선호 됩니다.
 
@@ -230,7 +230,7 @@ IE9 F12 개발자 도구를 실행 하 고 이전에 로드 한 페이지로 이
 
 *Twitter를 사용 하 여 빠른 게시를 수행 하 고 링크를 공유 합니다. 내 Twitter 핸들*: [@RickAndMSFT](http://twitter.com/RickAndMSFT)
 
-## <a name="additional-resources"></a>추가 자료
+## <a name="additional-resources"></a>추가 리소스
 
 - 비디오: [Howard Dierking](https://twitter.com/#!/howard_dierking) 에서[묶음 및 최적화](https://channel9.msdn.com/Events/aspConf/aspConf/Bundling-and-Optimizing)
 - 웹 [페이지 사이트에 웹 최적화를 추가](https://blogs.msdn.com/b/rickandy/archive/2012/08/15/adding-web-optimization-to-a-web-pages-site.aspx)합니다.

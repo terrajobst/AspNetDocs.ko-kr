@@ -5,16 +5,16 @@ description: MVC 앱에 뷰 추가
 ms.author: riande
 ms.date: 01/23/2019
 uid: mvc/overview/getting-started/introduction/adding-a-view
-ms.openlocfilehash: 4b369028aca1e8a6cace60466b8049ccc02a2ec2
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.openlocfilehash: 0bc6ac06d12aaee4b2a11c1bf246f9f20f0be017
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519065"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77456649"
 ---
 # <a name="adding-a-view"></a>보기 추가
 
-[Rick Anderson]((https://twitter.com/RickAndMSFT))
+[Rick Anderson](https://twitter.com/RickAndMSFT)
 
 [!INCLUDE [Tutorial Note](index.md)]
 
@@ -56,7 +56,7 @@ ms.locfileid: "76519065"
 
 *인덱스* 를 마우스 오른쪽 단추로 클릭 하 고 **페이지 검사기 보기** 를 선택할 수도 있습니다. 자세한 내용은 [페이지 검사기 자습서](../../views/using-page-inspector-in-aspnet-mvc.md) 를 참조 하십시오.
 
-또는 응용 프로그램을 실행 하 고 `HelloWorld` 컨트롤러 (`http://localhost:xxxx/HelloWorld`)로 이동 합니다. 컨트롤러의 `Index` 메서드가 많은 작업을 수행 하지 않았습니다. 메서드는 뷰 템플릿 파일을 사용 하 여 브라우저에 응답을 렌더링 하도록 지정 하는 `return View()`문을 실행 했습니다. 사용할 뷰 템플릿 파일의 이름을 명시적으로 지정 하지 않았기 때문에 ASP.NET *MVC는* \Views\HelloWorld 폴더에 있는 폴더에서 기본적으로  폴더를 사용 합니다. 아래 이미지는 보기 템플릿의 문자열 &quot;Hello를 보여 줍니다. 뷰에 하드 코드 된&quot; 합니다.
+또는 응용 프로그램을 실행 하 고 `HelloWorld` 컨트롤러 (`http://localhost:xxxx/HelloWorld`)로 이동 합니다. 컨트롤러의 `Index` 메서드가 많은 작업을 수행 하지 않았습니다. 메서드는 뷰 템플릿 파일을 사용 하 여 브라우저에 응답을 렌더링 하도록 지정 하는 `return View()`문을 실행 했습니다. 사용할 뷰 템플릿 파일의 이름을 명시적으로 지정 하지 않았기 때문에 ASP.NET *MVC는* \Views\HelloWorld 폴더에 있는 폴더에서 기본적으로 폴더를 사용 합니다. 아래 이미지는 보기 템플릿의 문자열 &quot;Hello를 보여 줍니다. 뷰에 하드 코드 된&quot; 합니다.
 
 ![](adding-a-view/_static/image6.png)
 
@@ -68,7 +68,7 @@ ms.locfileid: "76519065"
 
 ![_LayoutCshtml](adding-a-view/_static/image7.png)
 
-레이아웃 템플릿을 사용 하면 사이트의 HTML 컨테이너 레이아웃을 한 곳에서 지정한 다음 사이트의 여러 페이지에 적용할 수 있습니다. `@RenderBody()` 줄을 찾습니다. `RenderBody`는 사용자가 만드는 모든 보기 전용 페이지가 표시되는 자리 표시자이며 레이아웃 페이지에서 &quot;래핑됩니다&quot;. 예를 들어 **About** 링크를 선택 하는 경우 `RenderBody` 메서드 내에 *Views\Home\About.cshtml* 뷰가 렌더링 됩니다.
+레이아웃 템플릿을 사용 하면 사이트의 HTML 컨테이너 레이아웃을 한 곳에서 지정한 다음 사이트의 여러 페이지에 적용할 수 있습니다. `@RenderBody()` 줄을 찾습니다. `RenderBody`는 개발자가 만든 모든 보기 전용 페이지가 표시되는 자리 표시자이며 레이아웃 페이지으로 &quot;래핑됩니다&quot;. 예를 들어 **About** 링크를 선택 하는 경우 `RenderBody` 메서드 내에 *Views\Home\About.cshtml* 뷰가 렌더링 됩니다.
 
 제목 요소의 콘텐츠를 변경합니다. 레이아웃 템플릿의 [html.actionlink](https://msdn.microsoft.com/library/dd504972(v=vs.108).aspx) 를 &quot;응용 프로그램 이름&quot;에서 &quot;MVC Movie&quot;로 변경 하 고 컨트롤러를 `Home`에서 `Movies`로 변경 합니다. 전체 레이아웃 파일은 다음과 같습니다.
 
@@ -100,7 +100,7 @@ ms.locfileid: "76519065"
 
 이 `ViewBag` 방법을 사용 하면 보기 템플릿과 레이아웃 파일 사이에 다른 매개 변수를 쉽게 전달할 수 있습니다.
 
-응용 프로그램을 실행합니다. 브라우저 제목, 기본 제목 및 작은 제목이 변경된 것을 확인합니다. (브라우저에서 변경 내용을 확인할 수 없는 경우 캐시된 콘텐츠를 보고 있을 수도 있습니다. 브라우저에서 Ctrl + F5 키를 눌러 서버의 응답을 강제로 로드 합니다. 브라우저 제목은 인덱스에 설정 된 `ViewBag.Title`를 사용 하 여 만들어지며, 레이아웃 파일에 추가 &quot;동영상 앱&quot; 추가 됩니다 *.*
+애플리케이션을 실행합니다. 브라우저 제목, 기본 제목 및 작은 제목이 변경된 것을 확인합니다. (브라우저에서 변경 내용을 확인할 수 없는 경우 캐시된 콘텐츠를 보고 있을 수도 있습니다. 브라우저에서 Ctrl + F5 키를 눌러 서버의 응답을 강제로 로드 합니다. 브라우저 제목은 인덱스에 설정 된 `ViewBag.Title`를 사용 하 여 만들어지며, 레이아웃 파일에 추가 &quot;동영상 앱&quot; 추가 됩니다 *.*
 
 또한 *Index. cshtml* 뷰 템플릿의 콘텐츠가\_레이아웃과 병합 되었는지 확인 *합니다. cshtml* 뷰 템플릿과 단일 HTML 응답이 브라우저에 전송 되었습니다. 레이아웃 템플릿을 사용하면 애플리케이션의 모든 페이지에 걸쳐 적용되는 변경 내용을 쉽게 만들 수 있습니다.
 

@@ -8,16 +8,16 @@ ms.date: 08/15/2012
 ms.assetid: 27dc4fc8-1b51-43b0-933f-fc1b52476523
 msc.legacyurl: /mvc/overview/older-versions/aspnet-mvc-4-mobile-features
 msc.type: authoredcontent
-ms.openlocfilehash: 907a16946c93761cd543135b0b226c8696b041f0
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: 9716def069ca9f7115af32e16381f41bd4d13342
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74594640"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457650"
 ---
 # <a name="aspnet-mvc-4-mobile-features"></a>ASP.NET MVC 4 모바일 기능
 
-[Rick Anderson]((https://twitter.com/RickAndMSFT))
+[Rick Anderson](https://twitter.com/RickAndMSFT)
 
 > 이제 [Azure 웹 사이트에 ASP.NET MVC 5 모바일 웹 응용 프로그램 배포](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-deploy-aspnet-mvc-mobile-app/)의 코드 샘플과 함께이 자습서의 MVC 5 버전이 있습니다.
 
@@ -27,19 +27,19 @@ ms.locfileid: "74594640"
 
 - [Visual Studio Express 2012](https://www.microsoft.com/visualstudio/11/products/express) (권장) 또는 Visual Studio Web DEVELOPER Express SP1. Visual Studio 2012은 ASP.NET MVC 4를 포함 합니다. Visual Web Developer 2010를 사용 하는 경우 [ASP.NET MVC 4](https://go.microsoft.com/fwlink/?LinkId=243392)를 설치 해야 합니다.
 
-모바일 브라우저 에뮬레이터도 필요 합니다. 다음 중 하나가 작동 합니다.
+모바일 브라우저 에뮬레이터도 필요합니다. 다음을 사용할 수 있습니다.
 
 - [Windows 7 Phone 에뮬레이터](https://msdn.microsoft.com/library/ff402563(VS.92).aspx). 이 에뮬레이터는이 자습서의 스크린 샷 대부분에서 사용 되는 에뮬레이터입니다.
 - IPhone을 에뮬레이트 하도록 사용자 에이전트 문자열을 변경 합니다. [이](http://www.howtogeek.com/113439/how-to-change-your-browsers-user-agent-without-installing-any-extensions/) 블로그 항목을 참조 하세요.
 - [Opera 모바일 에뮬레이터](http://www.opera.com/developer/tools/mobile/)
 - 사용자 에이전트가 iPhone으로 설정 된 [Apple Safari](http://www.apple.com/safari/download/) . Safari의 사용자 에이전트를 "iPhone"으로 설정 하는 방법에 대 한 지침은 Alison의 블로그에서 [safari가 IE](http://www.davidalison.com/2008/05/how-to-let-safari-pretend-its-ie.html) 를 가장 하는 방법을 참조 하세요.
 
-소스 코드를 포함 C# 하는 Visual Studio 프로젝트는 다음 항목에 포함 될 수 있습니다.
+C# 소스 코드를 사용하는 Visual Studio 프로젝트를 다음 항목과 함께 사용할 수 있습니다.
 
 - [시작 프로젝트 다운로드](https://go.microsoft.com/fwlink/?linkid=228307&amp;clcid=0x409)
 - [완료 된 프로젝트 다운로드](https://go.microsoft.com/fwlink/?linkid=228306&amp;clcid=0x409)
 
-### <a name="what-youll-build"></a>빌드할 내용
+### <a name="what-youll-build"></a>만들 내용
 
 이 자습서에서는 [시작 프로젝트](https://go.microsoft.com/fwlink/?LinkId=228307)에 제공 된 간단한 회의 목록 응용 프로그램에 모바일 기능을 추가 합니다. 다음 스크린샷은 [Windows 7 Phone 에뮬레이터](https://msdn.microsoft.com/library/ff402563(VS.92).aspx)에 표시 된 대로 완료 된 응용 프로그램의 태그 페이지를 보여 줍니다. 키보드 입력을 단순화 하려면 [Windows Phone 에뮬레이터에 대 한 키보드 매핑](https://msdn.microsoft.com/library/ff754352(v=vs.92).aspx) 을 참조 하세요.
 
@@ -49,17 +49,17 @@ Internet Explorer 버전 9 또는 10, FireFox 또는 Chrome을 사용 하 여 [�
 
 ![](aspnet-mvc-4-mobile-features/_static/image3.png)
 
-### <a name="skills-youll-learn"></a>배울 기술
+### <a name="skills-youll-learn"></a>학습할 기술
 
-학습할 내용은 다음과 같습니다.
+다음 내용을 학습하게 됩니다.
 
 - ASP.NET MVC 4 템플릿에서 HTML5 `viewport` 특성 및 적응형 렌더링을 사용 하 여 모바일 장치에서 디스플레이를 개선 하는 방법입니다.
 - 모바일 관련 보기를 만드는 방법
 - 사용자가 모바일 뷰와 응용 프로그램의 데스크톱 보기 간을 전환할 수 있도록 하는 보기 전환기를 만드는 방법입니다.
 
-### <a name="getting-started"></a>시작
+### <a name="getting-started"></a>시작하기
 
-다음 링크를 사용 하 여 시작 프로젝트용 회의 목록 응용 프로그램을 다운로드 합니다. [다운로드](https://go.microsoft.com/fwlink/?LinkId=228307). 그런 다음 Windows 탐색기에서 *Mvcmobile .zip* 파일을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다. **Mvcmobile .Zip 속성** 대화 상자에서 **차단 해제** 단추를 선택 합니다. 차단 해제는 웹에서 다운로드 한 *.zip* 파일을 사용 하려고 할 때 발생 하는 보안 경고를 방지 합니다.
+다음 링크를 사용 하 여 시작 프로젝트용 회의 목록 응용 프로그램을 다운로드 합니다. [다운로드](https://go.microsoft.com/fwlink/?LinkId=228307). 그런 다음 Windows 탐색기에서 *Mvcmobile .zip* 파일을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다. **Mvcmobile .Zip 속성** 대화 상자에서 **차단 해제** 단추를 선택 합니다. (차단 해제는 웹에서 다운로드한 *.zip* 파일을 사용하려고 할 때 발생하는 보안 경고를 막습니다.)
 
 ![p1_unBlock](aspnet-mvc-4-mobile-features/_static/image4.png)
 
@@ -69,7 +69,7 @@ CTRL + f 5를 눌러 응용 프로그램을 실행 하면 데스크톱 브라우
 
 [![p1_browseTag](aspnet-mvc-4-mobile-features/_static/image6.png)](aspnet-mvc-4-mobile-features/_static/image5.png)
 
-모바일 장치에서 디스플레이를 매우 읽을 수 있습니다. ASP.NET 링크를 선택 합니다.
+이 화면은 모바일 디바이스에서 가독성이 뛰어납니다. ASP.NET 링크를 선택 합니다.
 
 [![p1_tagged_ASPNET](aspnet-mvc-4-mobile-features/_static/image8.png)](aspnet-mvc-4-mobile-features/_static/image7.png)
 
@@ -113,11 +113,11 @@ Viewport `<meta>` 태그와 CSS 미디어 쿼리는 ASP.NET MVC 4와 관련이 �
 
 Viewport `<meta>` 태그에 대 한 자세한 내용은 두 개의 [뷰포트 (2 부) tale of two](http://www.quirksmode.org/mobile/viewports2.html)를 참조 하세요.
 
-다음 섹션에서는 모바일 브라우저의 특정 뷰를 제공 하는 방법을 알아봅니다.
+다음 섹션에서는 모바일 브라우저 전용 뷰를 제공하는 방법을 설명합니다.
 
 ## <a name="overriding-views-layouts-and-partial-views"></a>뷰, 레이아웃 및 부분 뷰 재정의
 
-ASP.NET MVC 4의 중요 한 새로운 기능은 일반적으로, 개별 모바일 브라우저나 특정 브라우저에 대해 모바일 브라우저의 모든 보기 (레이아웃 및 부분 보기 포함)를 재정의할 수 있는 간단한 메커니즘입니다. 모바일 관련 보기를 제공 하기 위해 보기 파일을 복사 하 고를 추가할 수 있습니다 *.* 파일 이름으로 이동 합니다. 예를 들어, 모바일 *인덱스* 보기를 만들려면 *Views\Home\Index.cshtml* 을 *Views\Home\Index.Mobile.cshtml*에 복사 합니다.
+ASP.NET MVC 4의 중요 한 새로운 기능은 일반적으로, 개별 모바일 브라우저나 특정 브라우저에 대해 모바일 브라우저의 모든 보기 (레이아웃 및 부분 보기 포함)를 재정의할 수 있는 간단한 메커니즘입니다. 모바일 전용 뷰를 제공하기 위해 뷰 파일을 복사하여 파일 이름에 *.Mobile* 을 추가할 수 있습니다. 예를 들어, 모바일 *인덱스* 보기를 만들려면 *Views\Home\Index.cshtml* 을 *Views\Home\Index.Mobile.cshtml*에 복사 합니다.
 
 이 섹션에서는 모바일 전용 레이아웃 파일을 만듭니다.
 
@@ -127,11 +127,11 @@ ASP.NET MVC 4의 중요 한 새로운 기능은 일반적으로, 개별 모바�
 
 [!code-cshtml[Main](aspnet-mvc-4-mobile-features/samples/sample5.cshtml)]
 
-*Views\Home\AllTags.cshtml* 파일을 *Views\Home\AllTags.Mobile.cshtml*에 복사 합니다. 새 파일을 열고 `<h2>` 요소를 "Tags"에서 "Tags (M)"로 변경 합니다.
+*Views\Home\AllTags.cshtml* 파일을 *Views\Home\AllTags.Mobile.cshtml*에 복사 합니다. 새 파일을 열고 `<h2>` 요소를 "Tags"에서 "Tags (M)"으로 변경합니다.
 
 [!code-html[Main](aspnet-mvc-4-mobile-features/samples/sample6.html)]
 
-바탕 화면 브라우저를 사용 하 고 모바일 브라우저 에뮬레이터를 사용 하 여 태그 페이지로 이동 합니다. 모바일 브라우저 에뮬레이터에는 두 가지 변경 내용이 표시 됩니다.
+데스크톱 브라우저와 모바일 브라우저 에뮬레이터를 사용하여 태그 페이지로 이동합니다. 모바일 브라우저 에뮬레이터에는 두 가지 변경 내용이 표시 됩니다.
 
 [p2m_layoutTags ![](aspnet-mvc-4-mobile-features/_static/image12.png)](aspnet-mvc-4-mobile-features/_static/image11.png)
 
@@ -141,19 +141,19 @@ ASP.NET MVC 4의 중요 한 새로운 기능은 일반적으로, 개별 모바�
 
 ## <a name="browser-specific-views"></a>브라우저 관련 뷰
 
-모바일 특정 및 데스크톱 특정 보기 외에 개별 브라우저에 대 한 보기를 만들 수 있습니다. 예를 들어 iPhone 브라우저 전용 보기를 만들 수 있습니다. 이 섹션에서는 iPhone 브라우저 및 iPhone 버전의 *Alltags* 보기에 대 한 레이아웃을 만듭니다.
+모바일 전용 및 데스크톱 전용 뷰 외에도 개별 브라우저를 위한 뷰를 만들 수 있습니다. 예를 들어 iPhone 브라우저 전용 보기를 만들 수 있습니다. 이 섹션에서는 iPhone 브라우저를 위한 레이아웃과 iPhone 버전의 *AllTags* 뷰를 만들어 봅니다.
 
 *Global.asax* 파일을 열고 다음 코드를 `Application_Start` 메서드에 추가 합니다.
 
 [!code-csharp[Main](aspnet-mvc-4-mobile-features/samples/sample7.cs)]
 
-이 코드는 들어오는 각 요청에 대해 일치 하는 "iPhone" 이라는 새 표시 모드를 정의 합니다. 들어오는 요청이 사용자가 정의한 조건과 일치 하는 경우 (즉, 사용자 에이전트가 "iPhone" 문자열을 포함 하는 경우) ASP.NET MVC는 이름에 "iPhone" 접미사가 포함 된 뷰를 찾습니다.
+이 코드는 각 수신 요청에 맞출 "iPhone"이라는 새로운 디스플레이 모드를 정의합니다. 수신 요청이 정의된 조건과 일치하는 경우(즉, 사용자 에이전트가 "iPhone" 문자열을 포함하는 경우) ASP.NET MVC는 이름에 "iPhone" 접미사가 들어 있는 뷰를 찾습니다.
 
-코드에서 `DefaultDisplayMode`를 마우스 오른쪽 단추로 클릭 하 고 **해결**을 선택한 다음 `using System.Web.WebPages;`을 선택 합니다. 이렇게 하면 `DisplayModes` 및 `DefaultDisplayMode` 형식이 정의 된 `System.Web.WebPages` 네임 스페이스에 대 한 참조가 추가 됩니다.
+코드에서 `DefaultDisplayMode`를 마우스 오른쪽 단추로 클릭하고 **확인**을 선택한 다음 `using System.Web.WebPages;`를 선택합니다. 그러면 `System.Web.WebPages` 네임스페이스에 참조가 추가되고, 여기에서 `DisplayModes` 및 `DefaultDisplayMode` 유형이 정의됩니다.
 
 [![p2_resolve](aspnet-mvc-4-mobile-features/_static/image16.png)](aspnet-mvc-4-mobile-features/_static/image15.png)
 
-또는 파일의 `using` 섹션에 다음 줄을 수동으로 추가할 수 있습니다.
+또는 파일의 `using` 섹션에 다음 줄을 직접 추가할 수 있습니다.
 
 [!code-csharp[Main](aspnet-mvc-4-mobile-features/samples/sample8.cs)]
 
@@ -161,15 +161,15 @@ ASP.NET MVC 4의 중요 한 새로운 기능은 일반적으로, 개별 모바�
 
 [!code-csharp[Main](aspnet-mvc-4-mobile-features/samples/sample9.cs)]
 
-변경 사항을 저장합니다. *MvcMobile\Views\Shared\\_Layout* 파일을 *MvcMobile\Views\Shared\\_Layout*에 복사 합니다. 새 파일을 열고 `h1` 제목을 `Conference (Mobile)`에서 `Conference (iPhone)`으로 변경 합니다.
+변경 내용을 저장합니다. *MvcMobile\Views\Shared\\_Layout* 파일을 *MvcMobile\Views\Shared\\_Layout*에 복사 합니다. 새 파일을 열고 `h1` 제목을 `Conference (Mobile)`에서 `Conference (iPhone)`으로 변경 합니다.
 
-*MvcMobile\Views\Home\AllTags.Mobile.cshtml* 파일을 *MvcMobile\Views\Home\AllTags.iPhone.cshtml*에 복사 합니다. 새 파일에서 `<h2>` 요소를 "Tags (M)"에서 "Tags (iPhone)"로 변경 합니다.
+*MvcMobile\Views\Home\AllTags.Mobile.cshtml* 파일을 *MvcMobile\Views\Home\AllTags.iPhone.cshtml*에 복사 합니다. 새 파일에서 `<h2>` 요소를 "Tags (M)"에서 "Tags (iPhone)"로 변경합니다.
 
-응용 프로그램을 실행합니다. 모바일 브라우저 에뮬레이터를 실행 하 고 해당 사용자 에이전트가 "iPhone"으로 설정 되었는지 확인 한 다음 *Alltags* 보기로 이동 합니다. 다음 스크린샷은 [Safari](http://www.apple.com/safari/download/) 브라우저에 렌더링 된 *alltags* 뷰를 보여 줍니다. [여기](https://support.apple.com/kb/DL1531)에서 Windows 용 Safari를 다운로드할 수 있습니다.
+애플리케이션을 실행합니다. 모바일 브라우저 에뮬레이터를 실행하고, 사용자 에이전트가 "iPhone"으로 설정되었는지 확인하고, *AllTags* 뷰로 이동합니다. 다음 스크린샷은 [Safari](http://www.apple.com/safari/download/) 브라우저에 렌더링 된 *alltags* 뷰를 보여 줍니다. [여기](https://support.apple.com/kb/DL1531)에서 Windows 용 Safari를 다운로드할 수 있습니다.
 
 [![p2_iphoneView](aspnet-mvc-4-mobile-features/_static/image18.png)](aspnet-mvc-4-mobile-features/_static/image17.png)
 
-이 섹션에서는 모바일 레이아웃 및 보기를 만드는 방법과 iPhone 등의 특정 장치에 대 한 레이아웃 및 보기를 만드는 방법에 대해 살펴보았습니다. 다음 섹션에서는 더 강력한 모바일 보기를 위해 jQuery Mobile을 활용 하는 방법을 알아봅니다.
+이 섹션에서는 모바일 레이아웃 및 뷰를 만드는 방법과 iPhone과 같은 특정 디바이스용의 레이아웃 및 뷰를 만드는 방법을 살펴보았습니다. 다음 섹션에서는 더 강력한 모바일 보기를 위해 jQuery Mobile을 활용 하는 방법을 알아봅니다.
 
 ## <a name="using-jquery-mobile"></a>JQuery Mobile 사용
 
@@ -221,7 +221,7 @@ JQuery. Mobile. n a n.
 
 [!code-cshtml[Main](aspnet-mvc-4-mobile-features/samples/sample13.cshtml)]
 
-응용 프로그램을 빌드하고 모바일 브라우저 에뮬레이터에서 *Alltags* 뷰로 이동 합니다. 다음이 표시 됩니다.
+응용 프로그램을 빌드하고 모바일 브라우저 에뮬레이터에서 *Alltags* 뷰로 이동 합니다. 다음이 표시됩니다.
 
 [![p3_afterNuGet](aspnet-mvc-4-mobile-features/_static/image23.png)](aspnet-mvc-4-mobile-features/_static/image22.png)
 
@@ -255,7 +255,7 @@ JQuery. Mobile. n a n.
 
 ## <a name="improving-the-speakers-list"></a>발표자 목록 개선
 
-모바일 브라우저에서 **스피커** 링크를 선택 합니다. 모바일 보기 (*Allspeakers*)가 없으므로 기본 발표자 표시 (*allspeakers*)는 모바일 레이아웃 보기 ( *\_layout.* cshtml)를 사용 하 여 렌더링 됩니다.
+모바일 브라우저에서 **Speakers** 링크를 선택합니다. 모바일 보기 (*Allspeakers*)가 없으므로 기본 발표자 표시 (*allspeakers*)는 모바일 레이아웃 보기 ( *\_layout.* cshtml)를 사용 하 여 렌더링 됩니다.
 
 [![p3_speakersDeskTop](aspnet-mvc-4-mobile-features/_static/image31.png)](aspnet-mvc-4-mobile-features/_static/image30.png)
 
@@ -273,7 +273,7 @@ JQuery. Mobile. n a n.
 
 ## <a name="creating-a-mobile-speakers-view"></a>모바일 발표자 보기 만들기
 
-앞서 살펴본 것 처럼 *발표자* 보기는 읽을 수 있지만 링크는 작지만 모바일 장치에서 탭 하기 어렵습니다. 이 섹션에서는 최신 모바일 응용 프로그램 처럼 보이는 모바일 특정 *발표자* 보기를 만듭니다. 여기에는 크고 간편한 링크를 표시 하 고, 스피커를 빠르게 찾을 수 있는 검색 상자가 포함 되어 있습니다.
+방금 본 것처럼 *발표자* 보기는 가독성은 있지만 링크가 작고 모바일 디바이스에서 누르기 어렵습니다. 이 섹션에서는 최신 모바일 응용 프로그램 처럼 보이는 모바일 특정 *발표자* 보기를 만듭니다. 여기에는 크고 간편한 링크를 표시 하 고, 스피커를 빠르게 찾을 수 있는 검색 상자가 포함 되어 있습니다.
 
 Allspeakers를 *allspeakers* *로 복사* 합니다. *Allspeakers* 파일을 열고 `<h2>` 제목 요소를 제거 합니다.
 
@@ -281,7 +281,7 @@ Allspeakers를 *allspeakers* *로 복사* 합니다. *Allspeakers* 파일을 열
 
 [!code-cshtml[Main](aspnet-mvc-4-mobile-features/samples/sample19.cshtml)]
 
-모바일 브라우저를 새로 고칩니다. 업데이트 된 보기는 다음과 같습니다.
+모바일 브라우저를 새로 고칩니다. 업데이트된 뷰는 다음과 같이 표시됩니다.
 
 [![p3_updatedSpeakerView1](aspnet-mvc-4-mobile-features/_static/image35.png)](aspnet-mvc-4-mobile-features/_static/image34.png)
 
@@ -347,7 +347,7 @@ Allspeakers를 *allspeakers* *로 복사* 합니다. *Allspeakers* 파일을 열
 
 [!code-cshtml[Main](aspnet-mvc-4-mobile-features/samples/sample24.cshtml)]
 
-이 코드는 대화방 및 태그 열을 제거 하 고 제목, 스피커 및 날짜를 세로로 서식 지정 하 여 모든 정보를 모바일 브라우저에서 읽을 수 있도록 합니다. 다음 이미지는 코드 변경 내용을 반영 합니다.
+이 코드는 대화방 및 태그 열을 제거 하 고 제목, 스피커 및 날짜를 세로로 서식 지정 하 여 모든 정보를 모바일 브라우저에서 읽을 수 있도록 합니다. 아래 이미지는 코드 변경 내용이 반영된 화면입니다.
 
 [![ps_SessionsByScottHa](aspnet-mvc-4-mobile-features/_static/image51.png)](aspnet-mvc-4-mobile-features/_static/image50.png)
 
@@ -373,7 +373,7 @@ Allspeakers를 *allspeakers* *로 복사* 합니다. *Allspeakers* 파일을 열
 
 새 태그는 `data-role` 특성을 사용 하 여 뷰의 레이아웃을 향상 시킵니다.
 
-모바일 브라우저를 새로 고칩니다. 다음 이미지는 방금 만든 코드 변경 내용을 반영 합니다.
+모바일 브라우저를 새로 고칩니다. 다음 이미지는 방금 변경한 코드가 반영된 화면입니다.
 
 [![p3_love2](aspnet-mvc-4-mobile-features/_static/image59.png)](aspnet-mvc-4-mobile-features/_static/image58.png)
 
@@ -390,5 +390,5 @@ Allspeakers를 *allspeakers* *로 복사* 합니다. *Allspeakers* 파일을 열
 
 - [JQuery 모바일](http://jquerymobile.com) 사이트.
 - [jQuery 모바일 개요](http://jquerymobile.com/demos/1.0b3/docs/about/intro.html)
-- [W3C 권장 사항 모바일 웹 응용 프로그램 모범 사례](http://www.w3.org/TR/mwabp/)
-- [미디어 쿼리에 대 한 W3C 후보 권장 사항](http://www.w3.org/TR/css3-mediaqueries/)
+- [W3C에서 권장하는 모바일 웹 애플리케이션 모범 사례](http://www.w3.org/TR/mwabp/)
+- [미디어 쿼리에 대한 W3C 권장 사항](http://www.w3.org/TR/css3-mediaqueries/)

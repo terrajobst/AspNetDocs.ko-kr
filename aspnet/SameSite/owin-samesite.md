@@ -5,12 +5,12 @@ description: SameSite 쿠키 및 OWIN (Open Web Interface for .NET) 사용
 ms.author: riande
 ms.date: 12/6/2019
 uid: owin-samesite
-ms.openlocfilehash: ac5ae24eeb9e8e1cc6296667a4bebef72c3eb62c
-ms.sourcegitcommit: 7b1e1784213dd4c301635f9e181764f3e2f94162
+ms.openlocfilehash: a3353fd0f0332899aaba26b83aea0ff7c3a6d19b
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74993081"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77455739"
 ---
 # <a name="samesite-cookies-and-the-open-web-interface-for-net-owin"></a>SameSite 쿠키 및 OWIN (Open Web Interface for .NET)
 
@@ -74,14 +74,14 @@ owinContext.Response.Cookies.Append("My Key", "My Value", new CookieOptions()
 * 기본적으로 `SameSite=Lax`로 처리 되는 쿠키를 지정 합니다.
 * 교차 사이트 배달을 사용 하도록 설정 하기 위해 `SameSite=None`를 명시적으로 어설션하는 쿠키를 `Secure`으로 표시 해야 합니다. `None`은 옵트아웃 (opt out) 할 새 항목입니다.
 * 는 기본적으로 [2 월 2020](https://blog.chromium.org/2019/10/developers-get-ready-for-new.html)에 [Chrome](https://chromestatus.com/feature/5088147346030592) 에서 사용 하도록 예약 됩니다. 브라우저에서 2019의이 표준으로 이동 하기 시작 했습니다.
-* 는 KB 문서에 설명 된 대로 발급 된 패치에 의해 지원 됩니다. 자세한 내용은 <xref:samesite/kbs-samesite>를 참조하세요.
+* 는 KB 문서에 설명 된 대로 발급 된 패치에 의해 지원 됩니다. 자세한 내용은 <xref:samesite/kbs-samesite>을 참조하세요.
 
 <a name="sob"></a>
 
 ## <a name="supporting-older-browsers"></a>이전 브라우저 지원
 
 2016 `SameSite` 표준에서는 알 수 없는 값을 `SameSite=Strict` 값으로 처리 해야 합니다. 2016 `SameSite` 표준을 지 원하는 이전 브라우저에서 액세스 한 앱은 `None`값을 가진 `SameSite` 속성을 가져오면 중단 될 수 있습니다. 웹 앱은 이전 브라우저를 지원 하려는 경우 브라우저 검색을 구현 해야 합니다. 사용자 에이전트 값이 매우 휘발성 이며 자주 변경 되기 때문에 ASP.NET는 브라우저 검색을 구현 하지 않습니다. [ICookieManager](/previous-versions/aspnet/dn800238(v%3Dvs.113)) 의 확장 지점은 사용자 에이전트 특정 논리를 연결 하는 것을 허용 합니다.
-<!-- https://docs.microsoft.com/en-us/previous-versions/aspnet/dn800238(v%3Dvs.113) -->
+<!-- https://docs.microsoft.com/previous-versions/aspnet/dn800238(v%3Dvs.113) -->
 
 `Startup.Configuration`에서 다음과 유사한 코드를 추가 합니다.
 
@@ -144,7 +144,7 @@ Edge는 이전 `SameSite` 표준을 지원 합니다. Edge 버전 44에는 새�
 
 Electron 버전에는 이전 버전의 Chromium이 포함되어 있습니다. 예를 들어 팀에서 사용 하는 전자의 버전은 Chromium 66 이며,이는 이전 동작을 보여 주는 것입니다. 제품에서 사용 하는 전자 제품 버전으로 고유한 호환성 테스트를 수행 해야 합니다. 다음 섹션에서 [이전 브라우저 지원](#sob) 을 참조 하세요.
 
-## <a name="additional-resources"></a>추가 자료
+## <a name="additional-resources"></a>추가 리소스
 
 * [Chromium 블로그: 개발자: 새 SameSite를 사용할 준비가 되었습니다. 보안 쿠키 설정](https://blog.chromium.org/2019/10/developers-get-ready-for-new.html)
 * [SameSite 쿠키 설명](https://web.dev/samesite-cookies-explained/)

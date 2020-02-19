@@ -8,16 +8,16 @@ ms.date: 06/12/2014
 ms.assetid: ba6e6baa-9b9f-471f-b39d-b007a3addadc
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/automate-everything
 msc.type: authoredcontent
-ms.openlocfilehash: d5c8190d0b0c91bf9e42f6ef03adc5b07a65359a
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: e741a753a36ebdaefbff8eee0b38911785c716ac
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74582884"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457169"
 ---
 # <a name="automate-everything-building-real-world-cloud-apps-with-azure"></a>모든 항목 자동화 (Azure를 사용 하 여 실제 클라우드 앱 빌드)
 
-사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
+사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson](https://twitter.com/RickAndMSFT), [Tom Dykstra](https://github.com/tdykstra)
 
 [Fix It 프로젝트 다운로드](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자 서적 다운로드](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -49,8 +49,8 @@ Fix It 앱의 경우 테스트 환경을 만들고 해당 환경에 프로젝트
 
 여기서 살펴볼 첫 번째 스크립트의 이름은 *New-AzureWebsiteEnv*입니다. 테스트를 위해 Fix It 앱을 배포할 수 있는 Azure 환경을 만듭니다. 이 스크립트에서 수행 하는 주요 작업은 다음과 같습니다.
 
-- 웹앱 만들기
-- 저장소 계정을 만듭니다. (Blob 및 큐에 필요 합니다. 이후 단원에서 볼 수 있습니다.)
+- 웹앱을 만듭니다.
+- 스토리지 계정을 만듭니다. (Blob 및 큐에 필요 합니다. 이후 단원에서 볼 수 있습니다.)
 - SQL Database 서버와 두 개의 데이터베이스 (응용 프로그램 데이터베이스 및 멤버 자격 데이터베이스)를 만듭니다.
 - 앱이 저장소 계정 및 데이터베이스에 액세스 하는 데 사용할 수 있는 설정을 Azure에 저장 합니다.
 - 배포를 자동화 하는 데 사용 되는 설정 파일을 만듭니다.
@@ -74,7 +74,7 @@ Azure 서비스를 관리 하는 PowerShell 스크립트를 실행 하려면 Azu
 
 저장소 계정:
 
-![저장소 계정](automate-everything/_static/image4.png)
+![스토리지 계정](automate-everything/_static/image4.png)
 
 웹 앱:
 
@@ -84,7 +84,7 @@ Azure 서비스를 관리 하는 PowerShell 스크립트를 실행 하려면 Azu
 
 ![appSettings 및 connectionStrings](automate-everything/_static/image6.png)
 
-이제 *Automation* 폴더에 *&lt;websitename&gt;pubxml* 파일이 포함 되어 있습니다. 이 파일에는 MSBuild에서 방금 만든 Azure 환경에 응용 프로그램을 배포 하는 데 사용 하는 설정이 저장 됩니다. 예를 들면 다음과 같습니다.:
+이제 *Automation* 폴더에 *&lt;websitename&gt;pubxml* 파일이 포함 되어 있습니다. 이 파일에는 MSBuild에서 방금 만든 Azure 환경에 응용 프로그램을 배포 하는 데 사용 하는 설정이 저장 됩니다. 다음은 그 예입니다.
 
 [!code-xml[Main](automate-everything/samples/sample1.xml)]
 
@@ -114,13 +114,13 @@ Azure 서비스를 관리 하는 PowerShell 스크립트를 실행 하려면 Azu
 
 선택적 매개 변수를 사용 하 여 데이터 센터 위치 (기본값은 "미국 서 부"), 데이터베이스 서버 관리자 이름 (기본값은 "dbuser"), 데이터베이스 서버에 대 한 방화벽 규칙을 지정할 수 있습니다.
 
-### <a name="create-the-web-app"></a>웹 앱 만들기
+### <a name="create-the-web-app"></a>웹앱 만들기
 
 스크립트는 `New-AzureWebsite` cmdlet을 호출 하 여 웹 앱을 만들고 웹 앱 이름 및 위치 매개 변수 값으로 전달 하 여 웹 앱을 만드는 것이 가장 좋습니다.
 
 [!code-powershell[Main](automate-everything/samples/sample3.ps1?highlight=2)]
 
-### <a name="create-the-storage-account"></a>저장소 계정 만들기
+### <a name="create-the-storage-account"></a>스토리지 계정 만들기
 
 그런 다음 주 스크립트는 *New-AzureStorage* 스크립트를 실행 하 여 저장소 계정 이름에 대해 " *&lt;websitename&gt;* 저장소"를 지정 하 고 웹 앱과 동일한 데이터 센터 위치를 지정 합니다.
 
@@ -247,15 +247,15 @@ Azure에는 Web.config 파일에서 `appSettings` 또는 `connectionStrings` 컬
 
 [다음 장에서](source-control.md) 는 소스 코드를 살펴보고 소스 코드 리포지토리에 스크립트를 포함 하는 것이 중요 한 이유를 설명 합니다.
 
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 
 - [Azure 용 Windows PowerShell을 설치 하 고 구성](https://docs.microsoft.com/powershell/azure/overview?view=azurermps-4.3.1)합니다. Azure PowerShell cmdlet을 설치 하는 방법 및 Azure 계정을 관리 하기 위해 컴퓨터에 필요한 인증서를 설치 하는 방법에 대해 설명 합니다. PowerShell 자체를 학습 하기 위한 리소스 링크도 있으므로이 작업을 시작 하는 것이 좋습니다.
 - [Azure 스크립트 센터](https://docs.microsoft.com/azure/automation/automation-runbook-gallery). WindowsAzure.com 포털을 사용 하 여 Azure 서비스를 관리 하는 스크립트를 개발 하기 위한 링크, 시작 자습서에 대 한 링크, cmdlet 참조 설명서와 소스 코드 및 샘플 스크립트를 제공 합니다.
 - [주말 스크립터: Azure 및 PowerShell 시작](https://blogs.technet.com/b/heyscriptingguy/archive/2013/06/22/weekend-scripter-getting-started-with-windows-azure-and-powershell.aspx) Windows PowerShell 전용 블로그에서이 게시물은 Azure 관리 기능에 PowerShell을 사용 하는 것에 대 한 유용한 소개를 제공 합니다.
 - [Azure 플랫폼 간 명령줄 인터페이스를 설치 하 고 구성](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)합니다. Mac 및 Linux 및 Windows 시스템에서 작동 하는 Azure scripting framework에 대 한 시작 자습서입니다.
 - [Azure sdk 및 도구 다운로드 항목의 명령줄 도구 섹션을 참조](https://azure.microsoft.com/downloads/)하세요. Azure에 대 한 명령줄 도구와 관련 된 설명서 및 다운로드를 위한 포털 페이지입니다.
-- [Azure 관리 라이브러리 및 .net을 사용 하 여 모든 것을 자동화](http://www.hanselman.com/blog/PennyPinchingInTheCloudAutomatingEverythingWithTheWindowsAzureManagementLibrariesAndNET.aspx)합니다. Scott Hanselman는 Azure 용 .NET 관리 API를 소개 합니다.
-- [Windows PowerShell 스크립트를 사용 하 여 개발 및 테스트 환경에 게시](https://msdn.microsoft.com/library/azure/dn642480.aspx) Visual Studio에서 웹 프로젝트에 대해 자동으로 생성 하는 게시 스크립트를 사용 하는 방법을 설명 하는 MSDN 설명서입니다.
+- [Azure 관리 라이브러리 및 .NET을 사용한 자동화](http://www.hanselman.com/blog/PennyPinchingInTheCloudAutomatingEverythingWithTheWindowsAzureManagementLibrariesAndNET.aspx)(영문). Scott Hanselman는 Azure 용 .NET 관리 API를 소개 합니다.
+- [Windows PowerShell 스크립트를 사용하여 개발 및 테스트 환경에 게시](https://msdn.microsoft.com/library/azure/dn642480.aspx). Visual Studio에서 웹 프로젝트에 대해 자동으로 생성 하는 게시 스크립트를 사용 하는 방법을 설명 하는 MSDN 설명서입니다.
 - [PowerShell Tools for Visual Studio 2013](https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597). Visual studio에서 Windows PowerShell에 대 한 언어 지원을 추가 하는 visual Studio 확장입니다.
 
 > [!div class="step-by-step"]

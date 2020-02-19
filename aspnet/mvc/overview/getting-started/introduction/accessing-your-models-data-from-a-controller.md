@@ -8,16 +8,16 @@ ms.date: 10/17/2013
 ms.assetid: caa1ba4a-f9f0-4181-ba21-042e3997861d
 msc.legacyurl: /mvc/overview/getting-started/introduction/accessing-your-models-data-from-a-controller
 msc.type: authoredcontent
-ms.openlocfilehash: e01953dcfb2abf2db53a8aa869aa75b40485daca
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.openlocfilehash: 5d882d765133d32d3acdba9ffb5d43b69119a273
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519091"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457234"
 ---
 # <a name="accessing-your-models-data-from-a-controller"></a>컨트롤러에서 모델의 데이터에 액세스
 
-[Rick Anderson]((https://twitter.com/RickAndMSFT))
+[Rick Anderson](https://twitter.com/RickAndMSFT)
 
 [!INCLUDE [Tutorial Note](index.md)]
 
@@ -49,7 +49,7 @@ ms.locfileid: "76519091"
 
 Visual Studio에서 자동으로 [crud](http://en.wikipedia.org/wiki/Create,_read,_update_and_delete) (만들기, 읽기, 업데이트 및 삭제) 작업 메서드 및 보기를 만들었습니다 (crud 작업 메서드 및 보기의 자동 생성을 스 캐 폴딩 이라고 함). 이제 동영상 항목을 만들고, 나열 하 고, 편집 하 고, 삭제할 수 있는 완전히 작동 하는 웹 응용 프로그램이 있습니다.
 
-응용 프로그램을 실행 하 고 **MVC 영화** 링크를 클릭 하거나, 브라우저의 주소 표시줄에 있는 URL에 */movies* 를 추가 하 여 `Movies` 컨트롤러를 찾습니다. 응용 프로그램은 기본 라우팅을 의존 하기 때문에 (에 정의 된를 앱\_start\ 파일), 브라우저 요청 `http://localhost:xxxxx/Movies` 기본값으로 라우팅됩니다 `Index` 합니다 의동작메서드`Movies` 컨트롤러입니다. 즉, 브라우저 요청 `http://localhost:xxxxx/Movies`는 실제로 브라우저 요청 `http://localhost:xxxxx/Movies/Index`와 동일 합니다. 아직 추가 하지 않았기 때문에 빈 영화 목록이 생성 됩니다.
+응용 프로그램을 실행 하 고 **MVC 영화** 링크를 클릭 하거나, 브라우저의 주소 표시줄에 있는 URL에 */movies* 를 추가 하 여 `Movies` 컨트롤러를 찾습니다. 응용 프로그램은 기본 라우팅 ( *App\_Start\RouteConfig.cs* 파일에 정의 됨)을 기반으로 하기 때문에 브라우저 요청 `http://localhost:xxxxx/Movies` `Movies` 컨트롤러의 기본 `Index` 작업 메서드로 라우팅됩니다. 즉, 브라우저 요청 `http://localhost:xxxxx/Movies`는 실제로 브라우저 요청 `http://localhost:xxxxx/Movies/Index`와 동일 합니다. 아직 추가 하지 않았기 때문에 빈 영화 목록이 생성 됩니다.
 
 ![](accessing-your-models-data-from-a-controller/_static/image4.png)
 
@@ -100,7 +100,7 @@ Visual Studio에서 자동으로 [crud](http://en.wikipedia.org/wiki/Create,_rea
 
 [!code-cshtml[Main](accessing-your-models-data-from-a-controller/samples/sample5.cshtml?highlight=1-2)]
 
-뷰 템플릿 파일의 맨 위에 `@model` 문을 포함 하 여 뷰에 필요한 개체 유형을 지정할 수 있습니다. 영화 컨트롤러를 만들 때 Visual Studio에서는 *Details.cshtml* 파일의 맨 위에 다음 `@model` 문을 자동으로 포함했습니다.
+뷰 템플릿 파일의 맨 위에 `@model` 문을 포함 하 여 뷰에 필요한 개체 유형을 지정할 수 있습니다. 영화 컨트롤러를 만들 때 Visual Studio에서는 `@model`Details.cshtml*파일의 맨 위에 다음* 문을 자동으로 포함했습니다.
 
 [!code-cshtml[Main](accessing-your-models-data-from-a-controller/samples/sample6.cshtml)]
 

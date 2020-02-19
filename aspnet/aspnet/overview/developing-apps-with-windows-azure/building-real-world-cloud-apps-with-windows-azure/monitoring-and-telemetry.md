@@ -8,16 +8,16 @@ ms.date: 07/09/2015
 ms.assetid: 7e986ab5-6615-4638-add7-4614ce7b51db
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/monitoring-and-telemetry
 msc.type: authoredcontent
-ms.openlocfilehash: 44941c9fd0dcd3223604fc4a4f2836f587578acb
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: f61810ea7b486b2fa0bbb234edea7541eedde835
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74585599"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457065"
 ---
 # <a name="monitoring-and-telemetry-building-real-world-cloud-apps-with-azure"></a>모니터링 및 원격 분석 (Azure를 사용 하 여 실제 클라우드 앱 빌드)
 
-사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
+사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson](https://twitter.com/RickAndMSFT), [Tom Dykstra](https://github.com/tdykstra)
 
 [Fix It 프로젝트 다운로드](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자 서적 다운로드](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -32,7 +32,7 @@ ms.locfileid: "74585599"
 
 클라우드 환경에 대 한 유용한 사항 중 하나는 정말로 구매 하거나 승리 하는 방법에 대 한 것입니다. 원격 분석은 예입니다. 많은 노력이 없으면 매우 좋은 원격 분석 시스템을 가동 하 고 실행 하는 것은 매우 경제적입니다. Azure와 통합 되는 다양 한 파트너가 있으며, 그 중 일부는 무료 계층 이므로 아무 것도 기본 원격 분석을 얻을 수 있습니다. 다음은 현재 Azure에서 사용할 수 있는 몇 가지 방법입니다.
 
-- [새 유물](http://newrelic.com/)
+- [New Relic](http://newrelic.com/)
 - [AppDynamics](http://www.appdynamics.com/)
 - [Dynatrace](https://datamarket.azure.com/application/b4011de2-1212-4375-9211-e882766121ff)
 
@@ -58,7 +58,7 @@ Azure 관리 포털에서 서비스에 등록 합니다. **새로 만들기**를
 
 ![연결 정보](monitoring-and-telemetry/_static/image5.png)
 
-포털에서 웹 앱에 대 한 **구성** 탭으로 이동 하 여 **성능 모니터링** 을 **추가 기능**으로 설정 하 고 **추가 기능 선택** 드롭다운 목록을 **새 유물**으로 설정 합니다. 그런 다음 **저장**을 클릭 합니다.
+포털에서 웹 앱에 대 한 **구성** 탭으로 이동 하 여 **성능 모니터링** 을 **추가 기능**으로 설정 하 고 **추가 기능 선택** 드롭다운 목록을 **새 유물**으로 설정 합니다. 그런 다음 **Save**를 클릭합니다.
 
 ![구성 탭의 새 유물](monitoring-and-telemetry/_static/image6.png)
 
@@ -98,7 +98,7 @@ Visual Studio에서 앱에 새 유물 NuGet 패키지를 설치 합니다.
     ![외부 서비스](monitoring-and-telemetry/_static/image17.png)
 - 전 세계 또는 미국 웹 앱 트래픽 내의 위치에 대 한 정보를 제공 합니다.
 
-    ![지리](monitoring-and-telemetry/_static/image18.png)
+    ![Geography](monitoring-and-telemetry/_static/image18.png)
 
 보고서 및 이벤트를 설정할 수도 있습니다. 예를 들어, 오류를 볼 수 있는 경우 언제 든 지 경고 지원 담당자에 게 문제에 대 한 전자 메일을 보낼 수 있습니다.
 
@@ -253,7 +253,7 @@ Azure에서 로깅을 사용 하도록 설정 하면 생성 될 때 Visual Studi
 
 [다음 장에서](transient-fault-handling.md) 조사 해야 하는 프로덕션 문제가 되지 않도록 일시적인 오류를 처리 하는 방법을 살펴보겠습니다.
 
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 
 자세한 내용은 다음 리소스를 참조하세요.
 

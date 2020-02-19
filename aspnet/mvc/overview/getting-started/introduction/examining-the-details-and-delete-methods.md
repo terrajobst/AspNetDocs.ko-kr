@@ -8,16 +8,16 @@ ms.date: 03/26/2015
 ms.assetid: f1d2a916-626c-4a54-8df4-77e6b9fff355
 msc.legacyurl: /mvc/overview/getting-started/introduction/examining-the-details-and-delete-methods
 msc.type: authoredcontent
-ms.openlocfilehash: 4ec8d239377d37d7e27fa23c0b1caef7420046ae
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.openlocfilehash: da06815b5c1d76a939fdfb77ce11774081dfb881
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519013"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77456402"
 ---
 # <a name="examining-the-details-and-delete-methods"></a>세부 정보 및 삭제 메서드 검사
 
-[Rick Anderson]((https://twitter.com/RickAndMSFT))
+[Rick Anderson](https://twitter.com/RickAndMSFT)
 
 [!INCLUDE [Tutorial Note](index.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "76519013"
 
 Code First를 사용 하면 `Find` 메서드를 사용 하 여 데이터를 쉽게 검색할 수 있습니다. 메서드에 기본 제공 되는 중요 한 보안 기능은 코드에서 작업을 수행 하려고 시도 하기 전에 `Find` 메서드가 영화를 발견 했는지 확인 하는 것입니다. 예를 들어 해커가 `http://localhost:xxxx/Movies/Details/1`에서 만든 URL을 `http://localhost:xxxx/Movies/Details/12345` (또는 실제 영화를 나타내지 않는 다른 값)와 같이 변경 하 여 사이트에 오류를 발생 시킬 수 있습니다. Null 동영상을 검사 하지 않은 경우에는 null 영화에서 데이터베이스 오류가 발생 합니다.
 
-`Delete` 및 `DeleteConfirmed` 메서드를 검사합니다.
+`Delete` 및 `DeleteConfirmed` 메서드를 검토합니다.
 
 [!code-csharp[Main](examining-the-details-and-delete-methods/samples/sample2.cs?highlight=17)]
 

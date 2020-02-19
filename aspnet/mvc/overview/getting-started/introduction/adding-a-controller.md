@@ -8,16 +8,16 @@ ms.date: 10/17/2013
 ms.assetid: cc764f3b-6921-486a-8f44-c6ccd1249acd
 msc.legacyurl: /mvc/overview/getting-started/introduction/adding-a-controller
 msc.type: authoredcontent
-ms.openlocfilehash: 80000b366203eff4b9524b7a5995832753b9eed3
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.openlocfilehash: 194a8a7398e163f0c37164a8724f98b16444984b
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519052"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457221"
 ---
 # <a name="adding-a-controller"></a>컨트롤러 추가
 
-[Rick Anderson]((https://twitter.com/RickAndMSFT))
+[Rick Anderson](https://twitter.com/RickAndMSFT)
 
 [!INCLUDE [Tutorial Note](index.md)]
 
@@ -63,9 +63,9 @@ ASP.NET MVC는 들어오는 URL에 따라 서로 다른 컨트롤러 클래스 (
 
 응용 프로그램을 실행 하 고 URL 세그먼트를 제공 하지 않으면 기본적으로 "홈" 컨트롤러와 위 코드의 기본값 섹션에 지정 된 "인덱스" 작업 메서드로 지정 됩니다.
 
-URL의 첫 번째 부분은 실행할 컨트롤러 클래스를 결정 합니다. 따라서 */HelloWorld* 는 `HelloWorldController` 클래스에 매핑됩니다. URL의 두 번째 부분은 실행할 클래스에 대 한 작업 메서드를 결정 합니다. 따라서 */HelloWorld/Index* 을 실행 하면 `HelloWorldController` 클래스의 `Index` 메서드가 실행 될 수 있습니다. */Helloworld* 로 이동 하기만 하면 `Index` 메서드가 기본적으로 사용 되었습니다. 이는 `Index` 라는 메서드가 명시적으로 지정 되지 않은 경우 컨트롤러에서 호출 되는 기본 메서드 이기 때문입니다. URL 세그먼트(`Parameters`)의 세 번째 부분은 경로 데이터입니다. 이 자습서의 뒷부분에서 경로 데이터를 살펴보겠습니다.
+URL의 첫 번째 부분은 실행할 컨트롤러 클래스를 결정 합니다. 따라서 */HelloWorld* 는 `HelloWorldController` 클래스에 매핑됩니다. URL의 두 번째 부분은 실행할 클래스에 대 한 작업 메서드를 결정 합니다. 따라서 */HelloWorld/Index* 을 실행 하면 `HelloWorldController` 클래스의 `Index` 메서드가 실행 될 수 있습니다. */Helloworld* 로 이동 하기만 하면 `Index` 메서드가 기본적으로 사용 되었습니다. 이는 `Index` 라는 메서드가 명시적으로 지정 되지 않은 경우 컨트롤러에서 호출 되는 기본 메서드 이기 때문입니다. URL 세그먼트의 세 번째 부분(`Parameters`)은 경로 데이터입니다. 이 자습서의 뒷부분에서 경로 데이터를 살펴보겠습니다.
 
-`http://localhost:xxxx/HelloWorld/Welcome`으로 이동합니다. `Welcome` 메서드는 시작 작업 메서드인 &quot;문자열을 실행 하 고&quot;반환 합니다. 기본 MVC 매핑은 `/[Controller]/[ActionName]/[Parameters]`입니다. 이 URL의 경우 컨트롤러는 `HelloWorld`이고 `Welcome`은 작업 메서드입니다. 아직 URL의 `[Parameters]` 부분을 사용하지 않았습니다.
+[https://www.microsoft.com]\(`http://localhost:xxxx/HelloWorld/Welcome`) 로 이동합니다. `Welcome` 메서드는 시작 작업 메서드인 &quot;문자열을 실행 하 고&quot;반환 합니다. 기본 MVC 매핑은 `/[Controller]/[ActionName]/[Parameters]`입니다. 이 URL의 경우 컨트롤러는 `HelloWorld`이고 `Welcome`이 작업 메서드입니다. 아직 URL의 `[Parameters]` 부분을 사용하지 않았습니다.
 
 ![](adding-a-controller/_static/image6.png)
 
@@ -80,7 +80,7 @@ URL의 일부 매개 변수 정보를 컨트롤러에 전달할 수 있도록 �
 
 ![](adding-a-controller/_static/image7.png)
 
-위의 샘플에서 URL 세그먼트 (`Parameters`)는 사용 되지 않으며 `name` 및 `numTimes` 매개 변수는 [쿼리 문자열로](http://en.wikipedia.org/wiki/Query_string)전달 됩니다. ? 위의 URL에서 (물음표)는 구분 기호 이며 쿼리 문자열은 다음과 같습니다. &amp; 문자는 쿼리 문자열을 구분합니다.
+위의 샘플에서 URL 세그먼트 (`Parameters`)는 사용 되지 않으며 `name` 및 `numTimes` 매개 변수는 [쿼리 문자열로](http://en.wikipedia.org/wiki/Query_string)전달 됩니다. ?는 위의 URL에서 (물음표)는 구분 기호 이며 쿼리 문자열은 다음과 같습니다. &amp; 문자는 쿼리 문자열을 구분합니다.
 
 환영 메서드를 다음 코드로 바꿉니다.
 
@@ -94,7 +94,7 @@ URL의 일부 매개 변수 정보를 컨트롤러에 전달할 수 있도록 �
 
 [!code-csharp[Main](adding-a-controller/samples/sample5.cs?highlight=7)]
 
-ASP.NET MVC 응용 프로그램에서는 매개 변수를 쿼리 문자열로 전달 하는 것 보다 경로 데이터로 전달 하는 것이 더 일반적입니다 (위의 ID와 같이). 또한 경로를 추가 하 여 매개 변수에서 `name` 및 `numtimes`를 URL의 경로 데이터로 전달할 수도 있습니다. 에 *앱\_start\\* 파일을 "Hello" 경로 추가 합니다.
+ASP.NET MVC 응용 프로그램에서는 매개 변수를 쿼리 문자열로 전달 하는 것 보다 경로 데이터로 전달 하는 것이 더 일반적입니다 (위의 ID와 같이). 또한 경로를 추가 하 여 매개 변수에서 `name` 및 `numtimes`를 URL의 경로 데이터로 전달할 수도 있습니다. *앱\_Start\RouteConfig.cs* 파일에서 "Hello" 경로를 추가 합니다.
 
 [!code-csharp[Main](adding-a-controller/samples/sample6.cs?highlight=13-16)]
 

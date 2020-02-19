@@ -8,16 +8,16 @@ ms.date: 01/06/2019
 ms.assetid: 9f35ca15-e216-4db6-9ebf-24380b0f31b4
 msc.legacyurl: /mvc/overview/getting-started/introduction/adding-validation
 msc.type: authoredcontent
-ms.openlocfilehash: 67df1a473cd13a651c1276054b93f34323479082
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.openlocfilehash: f508d9e38dab5cc4cc44cc5aaa4eae87cf273bd5
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519026"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77456052"
 ---
 # <a name="adding-validation"></a>유효성 검사 추가
 
-[Rick Anderson]((https://twitter.com/RickAndMSFT))
+[Rick Anderson](https://twitter.com/RickAndMSFT)
 
 [!INCLUDE [Tutorial Note](index.md)]
 
@@ -71,7 +71,7 @@ Code First를 사용 하면 응용 프로그램에서 데이터베이스의 변�
 
 *하나 이상의 엔터티에 대 한 유효성 검사에 실패 했습니다. 자세한 내용은 ' EntityValidationErrors ' 속성을 참조 하세요.*
 
-.NET Framework에 의해 자동으로 적용 되는 유효성 검사 규칙이 있으면 응용 프로그램을 더욱 강력 하 게 만들 수 있습니다. 또한 유효성 검사를 잊거나, 데이터베이스에 불량 데이터가 실수로 들어가지 않게 할 수 있습니다.
+.NET Framework에 의해 자동으로 적용 되는 유효성 검사 규칙이 있으면 응용 프로그램을 더욱 강력 하 게 만들 수 있습니다. 또한 무언가의 유효성 검사를 잊거나, 실수로 데이터베이스에 불량 데이터가 들어가지 않도록 할 수 있습니다.
 
 ## <a name="validation-error-ui-in-aspnet-mvc"></a>ASP.NET MVC의 유효성 검사 오류 UI
 
@@ -86,7 +86,7 @@ Code First를 사용 하면 응용 프로그램에서 데이터베이스의 변�
 
 양식에서 자동으로 빨간색 테두리 색을 사용 하 여 잘못 된 데이터를 포함 하 고 각 텍스트 상자 옆에 적절 한 유효성 검사 오류 메시지를 내보낸 텍스트 상자를 강조 표시 하는 방법을 확인 합니다. 오류는 클라이언트 쪽(JavaScript 및 jQuery 사용 시) 및 서버 쪽(사용자가 JavaScript를 사용하지 않도록 설정한 경우) 모두에서 발생합니다.
 
-실제 혜택은이 유효성 검사 UI를 사용 하도록 설정 하기 위해 `MoviesController` 클래스 또는 *Create. cshtml* 뷰에서 코드 한 줄을 변경할 필요가 없다는 것입니다. 이 자습서에서 이전에 만든 컨트롤러 및 보기는 `Movie` 모델 클래스의 속성에 유효성 검사 특성을 사용하여 지정한 유효성 검사 규칙을 자동으로 가져옵니다. `Edit` 작업 메서드로 유효성 검사를 테스트하며 동일한 유효성 검사가 적용됩니다.
+실제 혜택은이 유효성 검사 UI를 사용 하도록 설정 하기 위해 `MoviesController` 클래스 또는 *Create. cshtml* 뷰에서 코드 한 줄을 변경할 필요가 없다는 것입니다. 이 자습서에서 이전에 만든 컨트롤러 및 보기는 `Movie` 모델 클래스의 속성에 유효성 검사 특성을 사용하여 지정한 유효성 검사 규칙을 자동으로 가져옵니다. `Edit` 작업 메서드로 유효성 검사를 테스트하여 동일한 유효성 검사가 적용되는지 확인해보세요.
 
 양식 데이터는 클라이언트 쪽 유효성 검사 오류가 없을 때까지 서버에 전송되지 않습니다. [Fiddler 도구](http://fiddler2.com/fiddler2/)또는 IE [F12 개발자 도구](https://msdn.microsoft.com/ie/aa740478)를 사용 하 여 HTTP Post 메서드에 중단점을 배치 하 여이를 확인할 수 있습니다.
 
@@ -96,19 +96,19 @@ Code First를 사용 하면 응용 프로그램에서 데이터베이스의 변�
 
 [!code-csharp[Main](adding-validation/samples/sample5.cs)]
 
-첫 번째(HTTP GET) `Create` 작업 메서드는 최초 Create 양식을 표시합니다. 두 번째(`[HttpPost]`) 버전은 양식 게시를 처리합니다. 두 번째 `Create` 메서드 (`HttpPost` 버전)는 `ModelState.IsValid` 확인 하 여 영화에 유효성 검사 오류가 있는지 여부를 확인 합니다. 이 속성을 가져오면 개체에 적용 된 유효성 검사 특성이 평가 됩니다. 개체에 유효성 검사 오류가 있는 경우 `Create` 메서드는 폼을 보다 합니다. 오류가 없으면 메서드가 데이터베이스에 새 동영상을 저장합니다. 이 동영상 예제에서는 **클라이언트 쪽에서 유효성 검사 오류가 발견 되 면 양식이 서버에 게시 되지 않습니다. 두 번째** `Create` **메서드는 호출 되지**않습니다. 브라우저에서 JavaScript를 사용 하지 않도록 설정 하는 경우 클라이언트 유효성 검사를 사용 하지 않도록 설정 하 고 HTTP POST `Create` 메서드를 `ModelState.IsValid` 하 여 영화에 유효성 검사 오류가 있는지 여부를 확인 합니다.
+첫 번째(HTTP GET) `Create` 작업 메서드는 최초 Create 양식을 표시합니다. 두 번째(`[HttpPost]`) 버전은 양식 게시를 처리합니다. 두 번째 `Create` 메서드 (`HttpPost` 버전)는 `ModelState.IsValid` 확인 하 여 영화에 유효성 검사 오류가 있는지 여부를 확인 합니다. 이 속성을 가져오면 개체에 적용 된 유효성 검사 특성이 평가 됩니다. 개체에 유효성 검사 오류가 있는 경우 `Create` 메서드는 폼을 보다 합니다. 오류가 없으면 메서드가 데이터베이스에 새 영화를 저장합니다. 이 동영상 예제에서는 **클라이언트 쪽에서 유효성 검사 오류가 발견 되 면 양식이 서버에 게시 되지 않습니다. 두 번째** `Create` **메서드는 호출 되지**않습니다. 브라우저에서 JavaScript를 사용 하지 않도록 설정 하는 경우 클라이언트 유효성 검사를 사용 하지 않도록 설정 하 고 HTTP POST `Create` 메서드를 `ModelState.IsValid` 하 여 영화에 유효성 검사 오류가 있는지 여부를 확인 합니다.
 
-`HttpPost Create` 메서드에서 중단점을 설정하고 메서드가 호출되지 않게 확인할 수 있으며, 유효성 검사 오류가 탐지되면 클라이언트 쪽 유효성 검사가 양식 데이터를 제출하지 않습니다. 브라우저에서 JavaScript를 사용하지 않으면서 오류가 있는 상태로 양식을 제출하면 중단점에 이르게 됩니다. JavaScript 없이도 여전히 완전한 유효성 검사가 가능합니다. 다음 그림에서는 Internet Explorer에서 JavaScript를 사용 하지 않도록 설정 하는 방법을 보여 줍니다.
+`HttpPost Create` 메서드에서 중단점을 설정하고 메서드가 호출되지 않게 확인할 수 있으며, 유효성 검사 오류가 탐지되면 클라이언트 쪽 유효성 검사가 양식 데이터를 제출하지 않습니다. 브라우저에서 JavaScript를 사용하지 않고 오류가 있는 상태로 양식을 제출하면 중단점에 이르게 됩니다. JavaScript 없이도 여전히 완전한 유효성 검사가 가능합니다. 다음 그림에서는 Internet Explorer에서 JavaScript를 사용 하지 않도록 설정 하는 방법을 보여 줍니다.
 
 ![](adding-validation/_static/image5.png)
 
 ![](adding-validation/_static/image6.png)
 
-다음 이미지에서는 FireFox 브라우저에서 JavaScript를 사용하지 않도록 설정하는 방법을 보여 줍니다.
+다음 이미지는 FireFox 브라우저에서 JavaScript를 사용하지 않도록 설정하는 방법을 보여줍니다.
 
 ![](adding-validation/_static/image7.png)
 
-다음 이미지에서는 Chrome 브라우저에서 JavaScript를 사용하지 않도록 설정하는 방법을 보여 줍니다.
+다음 이미지는 Chrome 브라우저에서 JavaScript를 사용하지 않도록 설정하는 방법을 보여줍니다.
 
 ![](adding-validation/_static/image8.png)
 
@@ -122,13 +122,13 @@ Code First를 사용 하면 응용 프로그램에서 데이터베이스의 변�
 
 유효성 검사 논리를 나중에 변경 하려면 모델에 유효성 검사 특성을 추가 하 여 정확히 한 곳에서 (이 예제에서는 `movie` 클래스) 유효성 검사 논리를 변경 합니다. 모든 유효성 검사 논리가 한 곳에서 정의되어 모든 곳에서 사용되므로 애플리케이션의 서로 다른 부분이 규칙 적용 방법에 부합하는지 우려하지 않아도 됩니다. 이렇게 하면 코드가 매우 깔끔해지고 유지 관리 및 확장이 간편합니다. 이는 *마른* 원칙을 완벽 하 게 활용 하는 것을 의미 합니다.
 
-## <a name="using-datatype-attributes"></a>DataType 특성 사용
+## <a name="using-datatype-attributes"></a>데이터 형식 특성 사용
 
 *Movie.cs* 파일을 열고 `Movie` 클래스를 검토합니다. [`System.ComponentModel.DataAnnotations`](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.aspx) 네임 스페이스는 기본 제공 유효성 검사 특성 집합 외에도 서식 특성을 제공 합니다. 릴리스 날짜 및 가격 필드에 [`DataType`](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) 열거형 값을 이미 적용 했습니다. 다음 코드에서는 적절 한 [`DataType`](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) 특성이 있는 `ReleaseDate` 및 `Price` 속성을 보여 줍니다.
 
 [!code-csharp[Main](adding-validation/samples/sample7.cs)]
 
-[DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) 특성은 데이터의 서식을 지정 하는 뷰 엔진에 대 한 힌트를 제공 하며 URL의 `<a>` 및 전자 메일 `<a href="mailto:EmailAddress.com">`에 대 한와 같은 특성을 제공 합니다. [RegularExpression](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.regularexpressionattribute.aspx) 특성을 사용 하 여 데이터 형식의 유효성을 검사할 수 있습니다. [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) 특성은 데이터베이스 내장 형식 보다 구체적인 데이터 형식을 지정 하는 데 사용 되며 유효성 검사 특성이 ***아닙니다*** . 이 경우에는 날짜 및 시간이 아닌 날짜만 추적하고자 합니다. [DataType 열거형](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) 은 *날짜, 시간, PhoneNumber, 통화, EmailAddress* 등과 같은 다양 한 데이터 형식을 제공 합니다. `DataType` 특성을 통해 애플리케이션에서 자동으로 유형별 기능을 제공하도록 설정할 수도 있습니다. 예를 들어 [EmailAddress](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx)에 대 한 `mailto:` 링크를 만들 수 있으며, [HTML5](http://html5.org/)를 지 원하는 브라우저에서 [데이터 형식](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) 에 날짜 선택기를 제공할 수 있습니다. [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) 특성은 html 5 브라우저에서 이해할 수 있는 html 5 [데이터](http://ejohn.org/blog/html-5-data-attributes/) ( *데이터 대시로*발음) 특성을 내보냅니다. [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) 특성은 유효성 검사를 제공 하지 않습니다.
+[DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) 특성은 데이터의 서식을 지정 하는 뷰 엔진에 대 한 힌트를 제공 하며 URL의 `<a>` 및 전자 메일 `<a href="mailto:EmailAddress.com">`에 대 한와 같은 특성을 제공 합니다. [RegularExpression](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.regularexpressionattribute.aspx) 특성을 사용 하 여 데이터 형식의 유효성을 검사할 수 있습니다. [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) 특성은 데이터베이스 내장 형식 보다 구체적인 데이터 형식을 지정 하는 데 사용 되며 유효성 검사 특성이 ***아닙니다*** . 이 경우에는 날짜 및 시간이 아닌 날짜만 추적하고자 합니다. [DataType 열거형](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) 은 *날짜, 시간, PhoneNumber, 통화, EmailAddress* 등과 같은 다양 한 데이터 형식을 제공 합니다. `DataType` 특성을 통해 응용 프로그램에서 자동으로 유형별 기능을 제공하도록 설정할 수도 있습니다. 예를 들어 [EmailAddress](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx)에 대 한 `mailto:` 링크를 만들 수 있으며, [HTML5](http://html5.org/)를 지 원하는 브라우저에서 [데이터 형식](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) 에 날짜 선택기를 제공할 수 있습니다. [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) 특성은 html 5 브라우저에서 이해할 수 있는 html 5 [데이터](http://ejohn.org/blog/html-5-data-attributes/) ( *데이터 대시로*발음) 특성을 내보냅니다. [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) 특성은 유효성 검사를 제공 하지 않습니다.
 
 `DataType.Date`는 표시되는 날짜의 서식을 지정하지 않습니다. 기본적으로 데이터 필드는 서버의 [CultureInfo](https://msdn.microsoft.com/library/vstudio/system.globalization.cultureinfo(v=vs.110).aspx)를 기준으로 기본 형식에 따라 표시 됩니다.
 
@@ -147,13 +147,13 @@ Code First를 사용 하면 응용 프로그램에서 데이터베이스의 변�
 `DataType` 특성을 날짜 필드와 함께 사용 하는 경우 Chrome 브라우저에서 필드가 올바르게 렌더링 되도록 하기 위해 `DisplayFormat` 특성도 지정 해야 합니다. 자세한 내용은 [이 StackOverflow 스레드](http://stackoverflow.com/questions/12633471/mvc4-datatype-date-editorfor-wont-display-date-value-in-chrome-fine-in-ie)를 참조 하세요.
 
 > [!NOTE]
-> jQuery 유효성 검사는 [Range](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.rangeattribute.aspx) 특성과 [DateTime](https://msdn.microsoft.com/library/system.datetime.aspx)에서 작동 하지 않습니다. 예를 들어 다음 코드는 날짜가 지정된 범위에 있을 경우에도 클라이언트 쪽 유효성 검사 오류를 항상 표시합니다.
+> jQuery 유효성 검사는 [Range](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.rangeattribute.aspx) 특성과 [DateTime](https://msdn.microsoft.com/library/system.datetime.aspx)에서 작동 하지 않습니다. 예를 들어 다음 코드는 날짜가 지정된 범위에 존재할 경우에도 항상 클라이언트 쪽 유효성 검사 오류를 표시합니다.
 > 
 > [!code-csharp[Main](adding-validation/samples/sample9.cs)]
 > 
 > [DateTime](https://msdn.microsoft.com/library/system.datetime.aspx)과 함께 [범위](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.rangeattribute.aspx) 특성을 사용 하려면 jQuery 날짜 유효성 검사를 사용 하지 않도록 설정 해야 합니다. 일반적으로 모델에서 하드 날짜를 컴파일하는 것은 좋지 않으므로 [범위](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.rangeattribute.aspx) 특성과 [DateTime](https://msdn.microsoft.com/library/system.datetime.aspx) 을 사용 하지 않는 것이 좋습니다.
 
-다음 코드는 한 줄에 결합 특성을 보여 줍니다.
+다음 코드는 특성을 한 줄로 결합하는 방법을 보여줍니다.
 
 [!code-csharp[Main](adding-validation/samples/sample10.cs?highlight=4,6,10,12)]
 

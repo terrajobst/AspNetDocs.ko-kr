@@ -9,16 +9,16 @@ ms.custom: seoapril2019
 ms.assetid: 220d3d75-16b2-4240-beae-a5b534f06419
 msc.legacyurl: /identity/overview/migrations/migrating-an-existing-website-from-sql-membership-to-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: eacfbb8a5b2d1aa3678892bc2077a56185fdebbc
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.openlocfilehash: 633229cc4311d151121bf6a91b9fa8aeecca1197
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519156"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77456155"
 ---
 # <a name="migrating-an-existing-website-from-sql-membership-to-aspnet-identity"></a>기존 웹 사이트를 SQL 멤버 자격에서 ASP.NET Identity로 마이그레이션
 
-[Rick Anderson]((https://twitter.com/RickAndMSFT)), [suhas Joshi](https://github.com/suhasj)
+[Rick Anderson](https://twitter.com/RickAndMSFT), [suhas Joshi](https://github.com/suhasj)
 
 > 이 자습서에서는 새 ASP.NET Identity 시스템에 SQL 멤버 자격을 사용 하 여 만든 사용자 및 역할 데이터를 사용 하 여 기존 웹 응용 프로그램을 마이그레이션하는 단계를 보여 줍니다. 이 방법은 기존 데이터베이스 스키마를 ASP.NET Identity에 필요한 것으로 변경 하 고 이전/새 클래스에 연결 하는 것을 포함 합니다. 이 접근 방식을 채택 하 고 나면 데이터베이스를 마이그레이션한 후에 Id에 대 한 향후 업데이트를 손쉽게 처리할 수 있습니다.
 
@@ -83,29 +83,29 @@ ms.locfileid: "76519156"
 
 ASP.NET Identity 클래스가 기존 사용자의 데이터와 함께 작동 하 게 하려면 데이터베이스 스키마를 ASP.NET Identity에 필요한 것으로 마이그레이션해야 합니다. 새 테이블을 추가 하 고 해당 테이블에 기존 정보를 복사 하 여이 작업을 수행할 수 있습니다. 기본적으로 ASP.NET Identity는 EntityFramework를 사용 하 여 Id 모델 클래스를 데이터베이스에 다시 매핑하여 정보를 저장/검색 합니다. 이러한 모델 클래스는 사용자 및 역할 개체를 정의 하는 핵심 Id 인터페이스를 구현 합니다. 데이터베이스의 테이블과 열은 이러한 모델 클래스를 기반으로 합니다. Id v 2.1.0의 EntityFramework 모델 클래스와 해당 속성은 아래에 정의 되어 있습니다.
 
-| **IdentityUser** | **Type** | **IdentityRole** | **IdentityUserRole** | **IdentityUserLogin** | **IdentityUserClaim** |
+| **IdentityUser** | **형식** | **IdentityRole** | **IdentityUserRole** | **IdentityUserLogin** | **IdentityUserClaim** |
 | --- | --- | --- | --- | --- | --- |
-| ID | string | ID | RoleId | ProviderKey | ID |
-| 사용자 이름 | string | 이름 | UserId | UserId | ClaimType |
-| PasswordHash | string |  |  | LoginProvider | ClaimValue |
-| SecurityStamp | string |  |  |  | 사용자\_Id |
-| 전자 메일 | string |  |  |  |  |
-| EmailConfirmed | 부울 |  |  |  |  |
-| PhoneNumber | string |  |  |  |  |
-| PhoneNumberConfirmed | 부울 |  |  |  |  |
-| LockoutEnabled | 부울 |  |  |  |  |
+| Id | 문자열 | Id | RoleId | ProviderKey | Id |
+| 사용자 이름 | 문자열 | 속성 | UserId | UserId | ClaimType |
+| PasswordHash | 문자열 |  |  | LoginProvider | ClaimValue |
+| SecurityStamp | 문자열 |  |  |  | 사용자\_Id |
+| Email | 문자열 |  |  |  |  |
+| EmailConfirmed | bool |  |  |  |  |
+| PhoneNumber | 문자열 |  |  |  |  |
+| PhoneNumberConfirmed | bool |  |  |  |  |
+| LockoutEnabled | bool |  |  |  |  |
 | LockoutEndDate | DateTime |  |  |  |  |
-| AccessFailedCount | 정수 |  |  |  |  |
+| AccessFailedCount | int |  |  |  |  |
 
 이러한 각 모델에 대 한 테이블은 속성에 해당 하는 열이 있어야 합니다. 클래스와 테이블 간의 매핑은 `IdentityDBContext`의 `OnModelCreating` 메서드에서 정의 됩니다. 이를 구성의 흐름 API 방법 이라고 하며, 자세한 내용은 [여기](https://msdn.microsoft.com/data/jj591617.aspx)를 참조 하세요. 클래스에 대 한 구성은 아래에서 설명 하는 것과 같습니다.
 
-| **클래스** | **Table** | **기본 키** | **외래 키** |
+| **클래스** | **테이블** | **기본 키** | **외래 키** |
 | --- | --- | --- | --- |
-| IdentityUser | AspnetUsers | ID |  |
-| IdentityRole | AspnetRoles | ID |  |
+| IdentityUser | AspnetUsers | Id |  |
+| IdentityRole | AspnetRoles | Id |  |
 | IdentityUserRole | AspnetUserRole | UserId + RoleId | 사용자\_Id-&gt;AspnetUsers RoleId-&gt;AspnetRoles |
 | IdentityUserLogin | AspnetUserLogins | ProviderKey + UserId + LoginProvider | UserId-&gt;AspnetUsers |
-| IdentityUserClaim | AspnetUserClaims | ID | User\_Id-&gt;AspnetUsers |
+| IdentityUserClaim | AspnetUserClaims | Id | 사용자\_Id-&gt;AspnetUsers |
 
 이 정보를 사용 하 여 새 테이블을 만드는 SQL 문을 만들 수 있습니다. 각 문을 개별적으로 작성 하거나 필요에 따라 편집할 수 있는 EntityFramework PowerShell 명령을 사용 하 여 전체 스크립트를 생성할 수 있습니다. 이렇게 하려면 VS의 **보기** 또는 **도구** 메뉴에서 **패키지 관리자 콘솔** 을 엽니다.
 
@@ -144,11 +144,11 @@ SQL 멤버 자격 사용자 정보에는 Id 사용자 모델 클래스 (전자 �
 
     다음은 SQL 멤버 자격 테이블의 정보가 새 Id 시스템에 매핑되는 방법입니다.
 
-    aspnet\_Roles --&gt; AspNetRoles
+    aspnet\_역할-&gt; AspNetRoles
 
     asp.net\_netUsers 및 asp\_Netusers--&gt; AspNetUsers
 
-    aspnet\_UserInRoles --&gt; AspNetUserRoles
+    aspnet\_UserInRoles--&gt; AspNetUserRoles
 
     위의 섹션에서 설명한 대로 AspNetUserClaims 및 AspNetUserLogins 테이블은 비어 있습니다. AspNetUser 테이블의 ' 판별자 ' 필드는 다음 단계로 정의 된 모델 클래스 이름과 일치 해야 합니다. 또한 PasswordHash 열은 ' 암호화 된 암호 | 암호 솔트 | 암호 형식 ' 형식입니다. 이렇게 하면 이전 암호를 다시 사용할 수 있도록 특별 한 SQL 멤버 자격 암호화 논리를 사용할 수 있습니다. 이에 대해서는이 문서의 뒷부분에서 설명 합니다.
 
@@ -201,7 +201,7 @@ SQL 멤버 자격 사용자 정보에는 Id 사용자 모델 클래스 (전자 �
 - 데이터베이스를 만드는 부분은 건너뛸 수 있습니다.
 - 개발자는 새 사용자의 ApplicationId를 현재 응용 프로그램 ID와 일치 하도록 설정 해야 합니다. 이 작업을 수행 하려면 Register.aspx.cs 클래스에서 사용자 개체가 만들어지기 전에이 응용 프로그램에 대 한 ApplicationId를 쿼리하고 사용자를 만들기 전에 설정 합니다.
 
-    예:
+    예제:
 
     Register.aspx.cs 페이지에서 메서드를 정의 하 여 aspnet\_응용 프로그램 테이블을 쿼리하고 응용 프로그램 이름에 따라 응용 프로그램 Id를 가져옵니다.
 

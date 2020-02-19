@@ -8,16 +8,16 @@ ms.date: 06/12/2014
 ms.assetid: cc1ad51b-40c3-4c68-8620-9aaa0fd1f6cf
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/queue-centric-work-pattern
 msc.type: authoredcontent
-ms.openlocfilehash: c73b070f11366e781bcea70ffc84fd49a47d469a
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: 1177336b25479c06706227e5c8ff4d027cdaebb8
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74582758"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77456987"
 ---
 # <a name="queue-centric-work-pattern-building-real-world-cloud-apps-with-azure"></a>큐 중심 작업 패턴 (Azure를 사용 하 여 실제 클라우드 앱 빌드)
 
-사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson]((https://twitter.com/RickAndMSFT)), [Tom Dykstra](https://github.com/tdykstra)
+사람, [Mike Wasson](https://github.com/MikeWasson), [Rick Anderson](https://twitter.com/RickAndMSFT), [Tom Dykstra](https://github.com/tdykstra)
 
 [Fix It 프로젝트 다운로드](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) 또는 [전자 서적 다운로드](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -173,7 +173,7 @@ Fix It 앱은 협동 생산자와 경쟁 소비자 모델에 적합 합니다.
 이는이 e-learning에서 다룬 13 가지 패턴 중 마지막 이지만, 성공적인 클라우드 앱을 빌드하는 데 도움이 될 수 있는 다른 많은 패턴 및 사례가 있습니다. [마지막 챕터](more-patterns-and-guidance.md) 에서는 이러한 13 개 패턴에서 다루지 않은 항목에 대 한 리소스 링크를 제공 합니다.
 
 <a id="resources"></a>
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 
 큐에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
