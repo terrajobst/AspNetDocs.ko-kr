@@ -42,9 +42,9 @@ ms.locfileid: "74057001"
 >
 > 이 자습서와 페이지 맨 아래에 있는 의견에서 개선할 수 있는 방법에 대 한 의견을 남겨 주세요. 자습서와 직접 관련 되지 않은 질문이 있는 경우 [ASP.NET SignalR 포럼](https://forums.asp.net/1254.aspx/1?ASP+NET+SignalR) 또는 [StackOverflow.com](http://stackoverflow.com/)에 게시할 수 있습니다.
 
-## <a name="overview"></a>概述
+## <a name="overview"></a>개요
 
-本文档包含以下各节：
+이 문서는 다음 섹션으로 구성됩니다.
 
 - [클라이언트 설정](#clientsetup)
 - [연결을 설정 하는 방법](#establishconnection)
@@ -85,7 +85,7 @@ API 참조 항목에 대 한 링크는 .NET 4.5 버전의 API에 대 한 링크�
 
 <a id="clientsetup"></a>
 
-## <a name="client-setup"></a>클라이언트 설정
+## <a name="client-setup"></a>클라이언트 설치
 
 [SignalR](http://nuget.org/packages/Microsoft.AspNet.SignalR.Client) NuGet 패키지를 설치 합니다 ( [SignalR](http://nuget.org/packages/microsoft.aspnet.signalr) 패키지는 아님). 이 패키지는 .NET 4와 .NET 4.5 모두에 대해 WinRT, Silverlight, WPF, 콘솔 응용 프로그램 및 Windows Phone 클라이언트를 지원 합니다.
 
@@ -189,7 +189,7 @@ HTTP 헤더를 설정 하려면 연결 개체에 대 한 `Headers` 속성을 사
 
 ## <a name="how-to-create-the-hub-proxy"></a>허브 프록시를 만드는 방법
 
-클라이언트에서 허브가 서버에서 호출할 수 있는 메서드를 정의 하 고 서버의 허브에서 메서드를 호출 하려면 연결 개체에 대해 `CreateHubProxy`를 호출 하 여 허브에 대 한 프록시를 만듭니다. `CreateHubProxy`에 전달 하는 문자열은 허브 클래스의 이름 이거나 서버에서 사용 되는 경우 `HubName` 특성에 지정 된 이름입니다. 이름 일치는 대/소문자를 구분 하지 않습니다.
+클라이언트에서 허브가 서버에서 호출할 수 있는 메서드를 정의 하 고 서버의 허브에서 메서드를 호출 하려면 연결 개체에 대해 `CreateHubProxy`를 호출 하 여 허브에 대 한 프록시를 만듭니다. `CreateHubProxy`에 전달 하는 문자열은 허브 클래스의 이름 이거나 서버에서 사용 되는 경우 `HubName` 특성에 지정 된 이름입니다. 이름 일치 시 대/소문자는 구분하지 않습니다.
 
 **서버의 허브 클래스**
 

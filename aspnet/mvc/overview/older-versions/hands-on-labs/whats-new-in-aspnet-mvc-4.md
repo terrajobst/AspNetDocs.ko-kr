@@ -15,7 +15,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/13/2019
 ms.locfileid: "74057038"
 ---
-# <a name="whats-new-in-aspnet-mvc-4"></a>ASP.NET MVC 4 的新增功能
+# <a name="whats-new-in-aspnet-mvc-4"></a>ASP.NET MVC 4의 새로운 기능
 
 [웹 캠프 팀](https://twitter.com/webcamps)
 
@@ -31,7 +31,7 @@ ASP.NET MVC 4는 잘 구성 된 디자인 패턴과 ASP.NET 및 .NET framework�
 > 모든 샘플 코드와 코드 조각은 [Microsoft 웹/WebCampTrainingKit 릴리스에서](https://aka.ms/webcamps-training-kit)제공 되는 웹 캠프 교육 키트에 포함 되어 있습니다. 이 랩에서 관련 된 프로젝트는 [ASP.NET 4.5의 Web Forms 새로운 기능](https://github.com/Microsoft-Web/HOL-ASPNETWebForms)에서 제공 됩니다.
 
 <a id="Objectives"></a>
-### <a name="objectives"></a>目标
+### <a name="objectives"></a>목표
 
 이 실습 랩에서는 다음 방법에 대해 알아봅니다.
 
@@ -45,7 +45,7 @@ ASP.NET MVC 4는 잘 구성 된 디자인 패턴과 ASP.NET 및 .NET framework�
 <a id="Prerequisites"></a>
 
 <a id="Prerequisites"></a>
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>사전 요구 사항
 
 이 랩을 완료 하려면 다음 항목이 있어야 합니다.
 
@@ -57,7 +57,7 @@ ASP.NET MVC 4는 잘 구성 된 디자인 패턴과 ASP.NET 및 .NET framework�
 <a id="Setup"></a>
 
 <a id="Setup"></a>
-### <a name="setup"></a>安装
+### <a name="setup"></a>설치 프로그램
 
 랩 문서 전체에서 코드 블록을 삽입 하 라는 지침이 표시 됩니다. 사용자 편의를 위해 대부분의 코드는 Visual Studio 내에서 사용 하 여 수동으로 추가할 필요가 없도록 하는 Visual Studio Code 코드 조각으로 제공 됩니다.
 
@@ -203,7 +203,7 @@ ASP.NET MVC 4는 모바일 및 태블릿 브라우저용 웹 사이트 개발을
 
         모바일 응용 프로그램 프로젝트 템플릿에는 모바일 브라우저 호환성을 위한 오픈 소스 라이브러리인 jQuery 모바일 라이브러리가 포함 되어 있습니다. jQuery Mobile은 CSS 및 JavaScript를 지 원하는 모바일 브라우저에 점진적 향상 기능을 적용 합니다. 점진적 향상 기능을 통해 모든 브라우저는 웹 페이지의 기본 콘텐츠를 표시할 수 있으며, 가장 강력한 브라우저 에서만 풍부한 콘텐츠를 표시할 수 있습니다. JQuery 모바일 스타일에 포함 된 JavaScript 및 CSS 파일은 페이지 태그를 변경 하지 않고 화면에 콘텐츠를 맞추는 데 도움이 됩니다.
 
-        ![jQuery-mobile library-포함 된 템플릿](whats-new-in-aspnet-mvc-4/_static/image12.png)
+        ![jQuery-mobile-library-included-in-the-template](whats-new-in-aspnet-mvc-4/_static/image12.png)
 
         *템플릿에 포함 된 jQuery mobile library*
     - **HTML5 기반 태그**
@@ -211,7 +211,7 @@ ASP.NET MVC 4는 모바일 및 태블릿 브라우저용 웹 사이트 개발을
         ![모바일-응용 프로그램-템플릿 사용-HTML5-태그](whats-new-in-aspnet-mvc-4/_static/image13.png)
 
         *HTML5 태그를 사용 하는 모바일 응용 프로그램 템플릿 (Login/cshtml)*
-4. **F5** 키를 눌러 솔루션을 실행 합니다.
+4. **F5** 키를 눌러 솔루션을 실행합니다.
 5. **Windows Phone 7 에뮬레이터**를 엽니다.
 6. 휴대폰 시작 화면에서 Internet Explorer를 엽니다. 데스크톱 응용 프로그램이 시작 된 URL을 확인 하 고 휴대폰에서 해당 URL로 이동 합니다 (예: `http://localhost:[PortNumber]/`).
 7. 이제 로그인 페이지를 입력 하거나 정보 페이지를 확인할 수 있습니다. 웹 사이트의 스타일은 모바일 용 새 Metro 앱을 기반으로 합니다. ASP.NET MVC 4 프로젝트 템플릿이 모바일 장치에 올바르게 표시 되므로 페이지의 모든 요소가 표시 되 고 사용 하도록 설정 됩니다. 헤더에 대 한 링크는 클릭 하거나 탭 할 만큼 충분히 큽니다.
@@ -256,7 +256,7 @@ ASP.NET MVC 4는 모바일 및 태블릿 브라우저용 웹 사이트 개발을
 
 이제 적응 렌더링의 작동 방식을 탐색 하 여 ASP.NET MVC 4 기본 웹 사이트 템플릿의 가독성을 향상 시킵니다.
 
-1. 작업 1에서 만든 **사진 갤러리 .sln** 솔루션을 열고 **사진 갤러리** 프로젝트를 선택 합니다. **F5** 키를 눌러 솔루션을 실행 합니다.
+1. 작업 1에서 만든 **사진 갤러리 .sln** 솔루션을 열고 **사진 갤러리** 프로젝트를 선택 합니다. **F5** 키를 눌러 솔루션을 실행합니다.
 2. 브라우저의 너비 크기를 조정 하 여 windows를 원래 크기의 절반 또는 1/4 미만으로 설정 합니다. 헤더의 항목에 대 한 결과, 일부 요소는 머리글의 표시 영역에 표시 되지 않습니다.
 3. **콘텐츠** 프로젝트 폴더에 있는 Visual Studio 솔루션 탐색기에서 **사이트 .css** 파일을 엽니다. **Ctrl + F** 를 눌러 Visual Studio 통합 검색을 열고 **CSS 미디어 쿼리**를 찾을 `@media`을 작성 합니다.
 
@@ -318,7 +318,7 @@ ASP.NET MVC 4는 모바일 및 태블릿 브라우저용 웹 사이트 개발을
 
     *모의 photo 서비스 테스트*
 
-실제 구현에서는 [ASP.NET Web API](../../../../web-api/index.md) 를 사용 하 여 사진 갤러리 서비스를 구현할 수 있습니다. ASP.NET Web API은 브라우저 및 모바일 장치를 비롯 한 광범위 한 클라이언트에 연결 되는 HTTP 서비스를 쉽게 빌드할 수 있게 해 주는 프레임 워크입니다. ASP.NET Web API 是用于在 .NET Framework 上生成 RESTful 应用程序的理想平台。
+실제 구현에서는 [ASP.NET Web API](../../../../web-api/index.md) 를 사용 하 여 사진 갤러리 서비스를 구현할 수 있습니다. ASP.NET Web API는 브라우저와 모바일 장치 등 광범위한 클라이언트를 연결하는 HTTP 서비스를 쉽게 빌드할 수 있도록 해주는 프레임워크입니다. ASP.NET Web API는 .NET Framework에 RESTful 응용 프로그램을 빌딩하기에 이상적인 플랫폼입니다.
 
 <a id="Task_2_-_Displaying_the_Photo_Gallery"></a>
 #### <a name="task-2---displaying-the-photo-gallery"></a>작업 2-사진 갤러리 표시
@@ -332,8 +332,8 @@ ASP.NET MVC 4는 모바일 및 태블릿 브라우저용 웹 사이트 개발을
     (코드 조각- *ASP.NET MVC 4 Lab-Ex02-Photo model*)
 
     [!code-csharp[Main](whats-new-in-aspnet-mvc-4/samples/sample5.cs)]
-4. 从“控制器”文件夹打开 HomeController.cs 文件。
-5. 添加下面的 using 语句。
+4. **컨트롤러** 폴더에서 **HomeController.cs** 파일을 엽니다.
+5. 다음 using 문을 추가합니다.
 
     (코드 조각- *ASP.NET MVC 4 Lab-Ex02-HomeController using*)
 
@@ -352,7 +352,7 @@ ASP.NET MVC 4는 모바일 및 태블릿 브라우저용 웹 사이트 개발을
     [!code-cshtml[Main](whats-new-in-aspnet-mvc-4/samples/sample8.cshtml)]
 8. **솔루션 탐색기**에서 프로젝트의 **콘텐츠** 폴더를 마우스 오른쪽 단추로 클릭 하 고 추가 |를 선택 합니다.  **기존 항목**입니다. 이 랩의 **Source\assets\content** 폴더로 이동 하 여 **사이트 .css** 파일을 추가 합니다. 교체를 확인 해야 합니다. **사이트 .css** 파일이 열려 있는 경우에도 파일을 다시 로드 해야 합니다.
 9. 파일 탐색기를 열고이 랩의 **Source\assets** 폴더 아래에 있는 전체 **사진** 폴더를 솔루션 탐색기 프로젝트의 루트 폴더에 복사 합니다.
-10. 运行该应用程序。 이제 갤러리에 사진을 표시 하는 홈 페이지가 표시 됩니다.
+10. 애플리케이션을 실행합니다. 이제 갤러리에 사진을 표시 하는 홈 페이지가 표시 됩니다.
 
     ![사진 갤러리](whats-new-in-aspnet-mvc-4/_static/image21.png "사진 갤러리")
 
@@ -433,7 +433,7 @@ ASP.NET MVC 4의 주요 업데이트 중 하나는 모바일 개발에 대 한 �
 
     > [!NOTE] 
     > 
-    > 请注意：
+    > 다음에 유의합니다.
     > 
     > - **Listview** 로 설정 된 **데이터 역할** 특성은 listview 스타일을 사용 하 여 목록을 렌더링 합니다.
     > 
@@ -538,9 +538,9 @@ jQuery Mobile의 기본 테마는 빠른 참조를 위해 문자 (a, b, c, d, e)
     ![데스크톱 보기에서 렌더링 된 뷰 전환기](whats-new-in-aspnet-mvc-4/_static/image32.png "데스크톱 보기에서 렌더링 된 뷰 전환기")
 
     *데스크톱 보기에서 렌더링 된 뷰 전환기*
-7. 모바일 보기로 다시 전환 하 고 **정보** 페이지 (http://localhost [port]/Home/About)로 이동 합니다. About. Mobile. cshtml 뷰를 만들지 않은 경우에도 모바일 레이아웃을 사용 하 여 About 페이지가 표시 됩니다 (\_Layout. cshtml).
+7. 모바일 보기로 다시 전환 하 고 **정보** 페이지 (http://localhost[port]/Home/About)로 이동 합니다. About. Mobile. cshtml 뷰를 만들지 않은 경우에도 모바일 레이아웃을 사용 하 여 About 페이지가 표시 됩니다 (\_Layout. cshtml).
 
-    ![정보 페이지](whats-new-in-aspnet-mvc-4/_static/image33.png "“关于”页面")
+    ![정보 페이지](whats-new-in-aspnet-mvc-4/_static/image33.png "[정보] 페이지")
 
     *정보 페이지*
 8. 마지막으로 데스크톱 웹 브라우저에서 사이트를 엽니다. 이전 업데이트가 바탕 화면 보기에 영향을 미치지 않습니다.
@@ -589,7 +589,7 @@ jQuery Mobile의 기본 테마는 빠른 참조를 위해 문자 (a, b, c, d, e)
 7. **F5** 키를 눌러 응용 프로그램을 실행 하 고 **Windows Phone 에뮬레이터**에서 사이트를 검색 합니다.
 8. **Iphone 시뮬레이터** 를 열고 (iphone 시뮬레이터를 설치 및 구성 하는 방법에 대 한 지침은 [부록 C](#AppendixC) 참조) 사이트를 찾아봅니다. 각 휴대폰은 특정 템플릿을 사용 하 고 있습니다.
 
-    ![-For each-장치 2에 대 한 보기 사용](whats-new-in-aspnet-mvc-4/_static/image35.png)
+    ![Using-different-views-for-each-mobile-device2](whats-new-in-aspnet-mvc-4/_static/image35.png)
 
     *각 모바일 장치에 대해 서로 다른 보기 사용*
 
@@ -598,7 +598,7 @@ jQuery Mobile의 기본 테마는 빠른 참조를 위해 문자 (a, b, c, d, e)
 <a id="Exercise_4_Using_Asynchronous_Controllers"></a>
 ### <a name="exercise-4-using-asynchronous-controllers"></a>연습 4: 비동기 컨트롤러 사용
 
-Microsoft .NET Framework 4.5에서는 및의 C# 새로운 언어 기능을 도입 하 여 .net 프로그래밍에 비동기에 대 한 새로운 토대를 제공 Visual Basic. 이 새로운 토대를 통해 비동기 프로그래밍은 및와 유사 하 게 동기 프로그래밍으로 만들 수 있습니다. 이제 **Asynccontroller** 클래스를 사용 하 여 ASP.NET MVC 4에서 비동기 작업 메서드를 작성할 수 있습니다. 장기 실행 CPU 바운드 요청에 비동기 작업 메서드를 사용할 수 있습니다. 이렇게 하면 요청이 처리 되는 동안 웹 서버에서 작업을 수행 하지 못하도록 차단 하지 않습니다. AsyncController 클래스는 일반적으로 장기 실행 웹 서비스 호출에 사용 됩니다.
+Microsoft .NET Framework 4.5에서는 및의 C# 새로운 언어 기능을 도입 하 여 .net 프로그래밍에 비동기에 대 한 새로운 토대를 제공 Visual Basic. 이 새로운 토대를 통해 비동기 프로그래밍은 및와 유사 하 게 동기 프로그래밍으로 만들 수 있습니다. 이제 **Asynccontroller** 클래스를 사용 하 여 ASP.NET MVC 4에서 비동기 작업 메서드를 작성할 수 있습니다. 비동기 작업 메서드는 CPU 바인딩되지 않은 장기 실행 요청에 대해 사용할 수 있습니다. 이렇게 하면 요청이 처리되는 동안 웹 서버의 작업 수행이 차단되지 않습니다. AsyncController 클래스는 일반적으로 장기 실행 웹 서비스 호출에 사용 됩니다.
 
 이 연습에서는 ASP.NET MVC 4의 비동기 작업에 대 한 기본 사항을 설명 합니다. 자세히 알아보려면 다음 문서를 참조 하세요. [ [https://msdn.microsoft.com/library/ee728598%28v=vs.100%29.aspx](https://msdn.microsoft.com/library/ee728598%28v=vs.100%29.aspx)](https://msdn.microsoft.com/library/ee728598%28v=vs.100%29.aspx)
 
@@ -641,7 +641,7 @@ Microsoft .NET Framework 4.5에서는 및의 C# 새로운 언어 기능을 도�
     (코드 조각- *ASP.NET MVC 4 Lab-Ex04-ReadAsStringAsync*)
 
     [!code-csharp[Main](whats-new-in-aspnet-mvc-4/samples/sample22.cs)]
-8. 运行该应用程序。 중요 한 변경 사항은 없지만 코드는 스레드 풀의 스레드를 차단 하 여 서버 리소스를 더 효율적으로 사용 하 고 성능을 개선 하지는 않습니다.
+8. 애플리케이션을 실행합니다. 중요 한 변경 사항은 없지만 코드는 스레드 풀의 스레드를 차단 하 여 서버 리소스를 더 효율적으로 사용 하 고 성능을 개선 하지는 않습니다.
 
     > [!NOTE]
     > Lab &quot;의 새로운 비동기 프로그래밍 기능에 대 한 자세한 내용은 Visual Studio 학습 키트에 포함 된 **.net C# 4.5의 .net 및 Visual Basic의 비동기 프로그래밍** 을&quot;.
@@ -694,7 +694,7 @@ Microsoft .NET Framework 4.5에서는 및의 C# 새로운 언어 기능을 도�
 <a id="Summary"></a>
 
 <a id="Summary"></a>
-## <a name="summary"></a>总结
+## <a name="summary"></a>요약
 
 이 실습 실습에서는 ASP.NET MVC 4의 새로운 기능 중 일부를 살펴보았습니다. 다음 개념에 대해 설명 했습니다.
 
@@ -771,7 +771,7 @@ Microsoft .NET Framework 4.5에서는 및의 C# 새로운 언어 기능을 도�
     *사용 조건 동의*
 5. 다운로드 및 설치 프로세스가 완료 될 때까지 기다립니다.
 
-    ![安装进度](whats-new-in-aspnet-mvc-4/_static/image46.png)
+    ![설치 진행률](whats-new-in-aspnet-mvc-4/_static/image46.png)
 
     *설치 진행률*
 6. 설치가 완료 되 면 **마침**을 클릭 합니다.
@@ -812,7 +812,7 @@ Microsoft .NET Framework 4.5에서는 및의 C# 새로운 언어 기능을 도�
     *사용 조건 동의*
 5. 다운로드 및 설치 프로세스가 완료 될 때까지 기다립니다.
 
-    ![설치 진행률](whats-new-in-aspnet-mvc-4/_static/image51.png "安装进度")
+    ![설치 진행률](whats-new-in-aspnet-mvc-4/_static/image51.png "설치 진행률")
 
     *설치 진행률*
 6. 설치가 완료 되 면 **마침**을 클릭 합니다.
@@ -933,7 +933,7 @@ Microsoft .NET Framework 4.5에서는 및의 C# 새로운 언어 기능을 도�
 7. **대시보드** 페이지의 **빠른** 보기 섹션에서 **게시 프로필 다운로드** 링크를 클릭 합니다.
 
     > [!NOTE]
-    > *게시 프로필* 에는 사용 하도록 설정 된 각 게시 방법에 대해 웹 응용 프로그램을 Windows Azure 웹 사이트에 게시 하는 데 필요한 모든 정보가 포함 되어 있습니다. 게시 프로필에는 게시 방법이 활성화 된 각 끝점에 대 한 연결 및 인증에 필요한 Url, 사용자 자격 증명 및 데이터베이스 문자열이 포함 되어 있습니다. **Microsoft WebMatrix 2**, **Microsoft Visual Studio Express for Web** 및 **Microsoft Visual Studio 2012** 는 게시 프로필 읽기를 지원 하 여 웹 응용 프로그램을 Windows Azure 웹 사이트에 게시 하기 위해 이러한 프로그램의 구성을 자동화 합니다.
+    > *게시 프로필* 에는 사용 하도록 설정 된 각 게시 방법에 대해 웹 응용 프로그램을 Windows Azure 웹 사이트에 게시 하는 데 필요한 모든 정보가 포함 되어 있습니다. 게시 프로필에는 게시 방법이 사용 설정된 각 엔드포인트에 연결하고 이에 대해 인증하는 데 필요한 URL, 사용자 자격 증명 및 데이터베이스 문자열이 포함되어 있습니다. **Microsoft WebMatrix 2**, **Microsoft Visual Studio Express for Web** 및 **Microsoft Visual Studio 2012** 는 게시 프로필 읽기를 지원 하 여 웹 응용 프로그램을 Windows Azure 웹 사이트에 게시 하기 위해 이러한 프로그램의 구성을 자동화 합니다.
 
     ![웹 사이트 게시 프로필을 다운로드 하는 중](whats-new-in-aspnet-mvc-4/_static/image67.png "웹 사이트 게시 프로필을 다운로드 하는 중")
 
@@ -974,7 +974,7 @@ Microsoft .NET Framework 4.5에서는 및의 C# 새로운 언어 기능을 도�
 
 1. ASP.NET MVC 4 솔루션으로 돌아갑니다. **솔루션 탐색기**에서 웹 사이트 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **게시**를 선택 합니다.
 
-    ![응용 프로그램 게시](whats-new-in-aspnet-mvc-4/_static/image73.png "发布应用程序")
+    ![응용 프로그램 게시](whats-new-in-aspnet-mvc-4/_static/image73.png "응용 프로그램 게시")
 
     *웹 사이트 게시*
 2. 첫 번째 작업에서 저장 한 게시 프로필을 가져옵니다.
@@ -1005,12 +1005,12 @@ Microsoft .NET Framework 4.5에서는 및의 C# 새로운 언어 기능을 도�
      ![대상 연결 문자열 구성](whats-new-in-aspnet-mvc-4/_static/image77.png "대상 연결 문자열 구성")
 
      *대상 연결 문자열 구성*
-6. 然后单击“确定”。 데이터베이스를 만들 것인지 묻는 메시지가 표시 되 면 **예**를 클릭 합니다.
+6. 그런 후 **OK**를 클릭합니다. 데이터베이스를 만들 것인지 묻는 메시지가 표시 되 면 **예**를 클릭 합니다.
 
     ![데이터베이스 만들기](whats-new-in-aspnet-mvc-4/_static/image78.png "데이터베이스 문자열 만들기")
 
     *데이터베이스 만들기*
-7. Windows Azure에서 SQL Database에 연결 하는 데 사용할 연결 문자열은 기본 연결 텍스트 상자 내에 표시 됩니다. 然后单击 **“下一步”** 。
+7. Windows Azure에서 SQL Database에 연결 하는 데 사용할 연결 문자열은 기본 연결 텍스트 상자 내에 표시 됩니다. 그런 후 **Next** 를 클릭합니다.
 
     ![SQL Database를 가리키는 연결 문자열](whats-new-in-aspnet-mvc-4/_static/image79.png "SQL Database를 가리키는 연결 문자열")
 
