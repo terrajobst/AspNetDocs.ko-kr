@@ -3770,7 +3770,19 @@
     - name: 백서
       href: whitepapers/overview.md
     - name: ASP.NET SameSite
-      href: SameSite/system-web-samesite.md
+      items:
+        - name: ASP.NET의 SameSite 쿠키
+          href: SameSite/system-web-samesite.md
+        - name: SameSite KB 문서
+          uid: samesite/kbs-samesite
+        - name: 'C# MVC'
+          uid: samesite/csMVC
+        - name: 'C# WebForms'
+          uid: samesite/CSharpWebForms
+        - name: VB WebForms
+          uid: samesite/vbWF
+        - name: VB MVC
+          uid: samesite/vbMVC
     - name: ASP.NET 4 및 Visual Studio 2010 웹 개발 개요
       href: whitepapers/aspnet4/index.md
       items:
