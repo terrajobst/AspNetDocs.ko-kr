@@ -8,11 +8,11 @@ title: ASP.NET 설명서
 ms.date: 08/24/2018
 description: ASP.NET 및 ASP.NET 웹 애플리케이션을 개발하는 방법을 알아봅니다. 설명서, 예제 코드, 자습서 등을 가져옵니다.
 ms.openlocfilehash: 6309704444d60d42d49c3a8f1683045dc503e761
-ms.sourcegitcommit: cd35be4b25eb05724a5f074214bbdf6573349eda
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70161690"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78419777"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
