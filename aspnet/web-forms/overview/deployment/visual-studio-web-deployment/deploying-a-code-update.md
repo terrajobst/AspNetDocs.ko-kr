@@ -9,11 +9,11 @@ ms.assetid: c76dbc35-a914-4ee3-919c-4f4d1fa05104
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/deploying-a-code-update
 msc.type: authoredcontent
 ms.openlocfilehash: 3881833bfe2a50a38a357614f92f434a04a8ab08
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74626776"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78457643"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-deploying-a-code-update"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 코드 업데이트 배포
 
@@ -53,7 +53,7 @@ ms.locfileid: "74626776"
 
 1. ContosoUniversity 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **게시**를 클릭 하 여 **웹 게시** 마법사를 엽니다.
 2. **프로필** 드롭다운 목록에서 **테스트** 프로필을 클릭 합니다.
-3. **설정** 탭을 클릭 합니다.
+3. **설정** 탭을 클릭합니다.
 4. **데이터베이스** 섹션의 **Defaultconnection** 에서 **데이터베이스 업데이트** 확인란의 선택을 취소 합니다.
 5. **프로필** 탭을 클릭 한 다음 **프로필** 드롭다운 목록에서 **스테이징** 프로필을 클릭 합니다.
 6. **테스트** 프로필에 대 한 변경 내용을 저장할지 묻는 메시지가 표시 되 면 **예**를 클릭 합니다.
@@ -96,7 +96,7 @@ ms.locfileid: "74626776"
 3. 템플릿 태그를 다음 태그로 바꿉니다.
 
     [!code-html[Main](deploying-a-code-update/samples/sample3.html)]
-4. 파일을 저장한 후 닫습니다.
+4. 파일을 저장하고 닫습니다.
 
 ### <a name="copy-app_offlinehtm-to-the-root-folder-of-the-web-site"></a>응용 프로그램을 웹 사이트의 루트 폴더에\_오프 라인으로 복사
 
@@ -184,7 +184,7 @@ Visual Studio 2012는 개별 파일을 배포 하는 기능을 제공 합니다.
 
     로컬 파일과 대상 환경에 있는 버전의 차이점을 보여 주는 창이 열립니다.
 
-    ![Diff-Content/사이트 .css](deploying-a-code-update/_static/image13.png)
+    ![Diff-Content/Site.css](deploying-a-code-update/_static/image13.png)
 4. **솔루션 탐색기**에서 **site. .css** 를 다시 마우스 오른쪽 단추로 클릭 하 고 **Publish Publish**를 클릭 합니다.
 
     **웹 게시 작업** 창에 파일이 게시 된 것으로 표시 됩니다.

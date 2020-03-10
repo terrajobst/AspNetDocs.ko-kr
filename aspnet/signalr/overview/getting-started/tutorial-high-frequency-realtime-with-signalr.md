@@ -10,11 +10,11 @@ msc.legacyurl: /signalr/overview/getting-started/tutorial-high-frequency-realtim
 msc.type: authoredcontent
 ms.topic: tutorial
 ms.openlocfilehash: 2503e90735d6cfa445ee08c9e43f8443aa106096
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74600450"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78450119"
 ---
 # <a name="tutorial-create-high-frequency-real-time-app-with-signalr-2"></a>자습서: SignalR 2를 사용 하 여 빈도가 높은 실시간 앱 만들기
 
@@ -24,7 +24,7 @@ ms.locfileid: "74600450"
 
 이 자습서에 소개 된 개념에는 실시간 게임과 기타 시뮬레이션 응용 프로그램의 응용 프로그램이 있습니다.
 
-이 자습서에서는 다음과 같은 작업을 수행합니다.
+이 자습서에서는 다음을 수행합니다.
 
 > [!div class="checklist"]
 > * 프로젝트 설정
@@ -38,9 +38,9 @@ ms.locfileid: "74600450"
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>사전 요구 사항
 
-* **ASP.NET 및 웹 개발** 워크 로드가 포함 된 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) .
+* [ASP.NET 및 웹 개발](https://visualstudio.microsoft.com/downloads/) 워크로드가 있는 **Visual Studio 2017**
 
 ## <a name="set-up-the-project"></a>프로젝트 설정
 
@@ -62,7 +62,7 @@ ms.locfileid: "74600450"
 
     이 단계에서는 *MoveShapeHub.cs* 클래스 파일을 만듭니다. 동시에 SignalR를 지 원하는 스크립트 파일 및 어셈블리 참조 집합을 프로젝트에 추가 합니다.
 
-1. **도구** > **NuGet 패키지 관리자** > **패키지 관리자 콘솔**을 선택 합니다.
+1. **도구** > **NuGet 패키지 관리자** > **패키지 관리자 콘솔**을 선택합니다.
 
 1. **패키지 관리자 콘솔**에서 다음 명령을 실행 합니다.
 
@@ -228,7 +228,7 @@ Javascript `setInterval` 함수를 사용 하 여 고정 속도로 서버에 새
 
 [완료 된 프로젝트 다운로드](https://code.msdn.microsoft.com/SignalR-20-MoveShape-Demo-6285b83a)
 
-## <a name="additional-resources"></a>추가 자료
+## <a name="additional-resources"></a>추가 리소스
 
 위에서 배운 통신 패러다임은 [SignalR를 사용 하 여 만든 ShootR 게임과](https://shootr.azurewebsites.net/)같이 온라인 게임 및 기타 시뮬레이션을 개발 하는 데 유용 합니다.
 
@@ -242,7 +242,7 @@ SignalR에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
 ## <a name="next-steps"></a>다음 단계
 
-이 자습서에서는 다음과 같은 작업을 수행합니다.
+이 자습서에서는 다음을 수행합니다.
 
 > [!div class="checklist"]
 > * 프로젝트 설정

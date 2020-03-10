@@ -1,6 +1,6 @@
 ---
 uid: ajax/cdn/jquery-datatables/cdnjquerydatatables182
-title: jQuery DataTables 1.8.2 | Microsoft Docs
+title: jQuery Datatable 1.8.2 | Microsoft Docs
 author: rick-anderson
 description: ''
 ms.author: riande
@@ -9,15 +9,15 @@ ms.assetid: 2a72d2f5-b387-41e6-9807-21f2ec8c2b7a
 msc.legacyurl: /ajax/cdn/jquery-datatables/cdnjquerydatatables182
 msc.type: content
 ms.openlocfilehash: f6690541333ce5329c0253572c18a3363f0d73f2
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59411906"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78454061"
 ---
 # <a name="jquery-datatables-182"></a>jQuery DataTables 1.8.2
 
-CDN에서 jQuery DataTables 플러그 인에 대 한 다음 파일이 호스팅됩니다.
+JQuery Datatable 플러그 인에 대 한 다음 파일은 CDN에서 호스팅됩니다.
 
 - https://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.8.2/jquery.dataTables.js
 - https://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.8.2/jquery.dataTables.min.js

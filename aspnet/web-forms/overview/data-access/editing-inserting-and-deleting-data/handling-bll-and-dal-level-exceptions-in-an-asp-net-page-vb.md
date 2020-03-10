@@ -9,11 +9,11 @@ ms.assetid: 129d4338-1315-4f40-89b5-2b84b807707d
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb
 msc.type: authoredcontent
 ms.openlocfilehash: ee277596ade18d2603892d134b47c2c8697836bb
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74621047"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78478991"
 ---
 # <a name="handling-bll--and-dal-level-exceptions-in-an-aspnet-page-vb"></a>ASP.NET 페이지에서 BLL 및 DAL 수준의 예외 처리(VB)
 
@@ -35,13 +35,13 @@ ms.locfileid: "74621047"
 
 1 단계에서 발생 하는 이벤트를 이미 검사 했으며이 이벤트를 사용 하 여 입력 매개 변수를 사용자 지정 하거나 작업을 취소할 수 있는 방법을 살펴보았습니다. 이 자습서에서는 작업이 완료 된 후에 발생 하는 이벤트에 주목 합니다. 이러한 사후 수준 이벤트 처리기를 사용 하면 작업 중에 예외가 발생 했는지 여부를 확인 하 고 정상적으로 처리할 수 있습니다. 표준 ASP.NET를 기본적으로 사용 하는 대신 화면에 친숙 한 정보 오류 메시지를 표시 합니다. 예외 페이지.
 
-이러한 사후 수준 이벤트 작업을 설명 하기 위해 편집 가능한 GridView의 제품을 나열 하는 페이지를 만들어 보겠습니다. 제품을 업데이트 하는 경우 예외가 발생 하는 경우 ASP.NET 페이지가 GridView 위에 오류가 발생 했음을 설명 하는 짧은 메시지를 표시 합니다. 시작 하겠습니다.
+이러한 사후 수준 이벤트 작업을 설명 하기 위해 편집 가능한 GridView의 제품을 나열 하는 페이지를 만들어 보겠습니다. 제품을 업데이트 하는 경우 예외가 발생 하는 경우 ASP.NET 페이지가 GridView 위에 오류가 발생 했음을 설명 하는 짧은 메시지를 표시 합니다. 이제 시작하겠습니다.
 
 ## <a name="step-1-creating-an-editable-gridview-of-products"></a>1 단계: 편집 가능한 제품 GridView 만들기
 
 이전 자습서에서는 두 개의 필드인 `ProductName`와 `UnitPrice`를 사용 하 여 편집 가능한 GridView를 만들었습니다. 이렇게 하려면 각 product 필드에 대 한 매개 변수 대신 세 개의 입력 매개 변수 (제품 이름, 단가 및 ID)만 허용 하는 `ProductsBLL` 클래스의 `UpdateProduct` 메서드에 대 한 추가 오버 로드를 만들어야 합니다. 이 자습서에서는이 기법을 다시 연습 하 여 제품의 이름, 단위 당 수량, 단가 및 재고 단위를 표시 하는 편집 가능한 GridView를 만들고 재고의 이름, 단가 및 단위도 편집할 수 있습니다.
 
-이 시나리오를 수용 하려면 제품의 이름, 단가, 재고 단위 및 ID의 네 가지 매개 변수를 허용 하는 `UpdateProduct` 메서드의 다른 오버 로드가 필요 합니다. `ProductsBLL` 클래스에 다음 메서드를 추가 합니다.
+이 시나리오를 수용 하려면 제품의 이름, 단가, 재고 단위 및 ID의 네 가지 매개 변수를 허용 하는 `UpdateProduct` 메서드의 다른 오버 로드가 필요 합니다. `ProductsBLL` 클래스에 다음 메서드를 추가합니다.
 
 [!code-vb[Main](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb/samples/sample1.vb)]
 
@@ -187,7 +187,7 @@ ASP.NET 페이지에 레이블을 추가 하 고 해당 `ID` 속성을 `Exceptio
 
 행복 한 프로그래밍
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

@@ -9,11 +9,11 @@ ms.assetid: 400db427-27af-4f2f-abf0-5486d5e024b5
 msc.legacyurl: /signalr/overview/deployment/tutorial-signalr-self-host
 msc.type: authoredcontent
 ms.openlocfilehash: 41c8c3803923e76ef238a5c5937cbe7f81e6aa82
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74578572"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78450167"
 ---
 # <a name="tutorial-signalr-self-host"></a>자습서: SignalR 자체 호스트
 
@@ -86,7 +86,7 @@ IIS에서를 호스팅하지 않는 이유는 다음과 같습니다.
     [!code-powershell[Main](tutorial-signalr-self-host/samples/sample2.ps1)]
 
     이 명령은 Owin 라이브러리를 프로젝트에 추가 합니다. 이 라이브러리는 SignalR를 호스트 하는 응용 프로그램 및 다른 도메인의 웹 페이지 클라이언트에 필요한 도메인 간 지원에 사용 됩니다. SignalR 서버와 웹 클라이언트를 서로 다른 포트에 호스트할 것 이므로 이러한 구성 요소 간 통신을 위해 도메인 간 사용을 설정 해야 합니다.
-5. Program.cs의 내용을 다음 코드로 바꿉니다.
+5. Program.cs 내용을 다음 코드로 바꿉니다.
 
     [!code-csharp[Main](tutorial-signalr-self-host/samples/sample3.cs)]
 
@@ -132,5 +132,5 @@ IIS에서를 호스팅하지 않는 이유는 다음과 같습니다.
 
     ![](tutorial-signalr-self-host/_static/image6.png)
 7. "Default .html"을 마우스 오른쪽 단추로 클릭 하 고 **시작 페이지로 설정**을 선택 합니다.
-8. 응용 프로그램을 실행합니다. 서버와 페이지가 시작 됩니다. 서버를 시작 하기 전에 페이지를 로드 하는 경우 웹 페이지를 다시 로드 하거나 디버거에서 **계속** 을 선택 해야 할 수 있습니다.
+8. 애플리케이션을 실행합니다. 서버와 페이지가 시작 됩니다. 서버를 시작 하기 전에 페이지를 로드 하는 경우 웹 페이지를 다시 로드 하거나 디버거에서 **계속** 을 선택 해야 할 수 있습니다.
 9. 브라우저에서 메시지가 표시 되 면 사용자 이름을 입력 합니다. 페이지의 URL을 다른 브라우저 탭 또는 창에 복사 하 고 다른 사용자 이름을 입력 합니다. 시작 자습서에서와 같이 브라우저 창 간에 메시지를 보낼 수 있습니다.

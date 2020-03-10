@@ -9,22 +9,22 @@ ms.date: 03/12/2010
 msc.legacyurl: /entity-framework
 msc.type: content
 ms.openlocfilehash: c6fe7605a7386621bd4a962b3c3b011fb80b11c8
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65118245"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78472277"
 ---
 # <a name="entity-framework"></a>Entity Framework
 
-EF (entity Framework)는.NET 개발자가 도메인별 개체를 사용 하 여 관계형 데이터로 작업할 수 있도록 개체 관계형 매퍼입니다. 개발자들이 보통 작성해야 하는 데이터 액세스 코드가 대부분 필요하지 않게 됩니다.
+EF (Entity Framework)는 .NET 개발자가 도메인별 개체를 사용 하 여 관계형 데이터를 사용할 수 있도록 하는 개체 관계형 매퍼입니다. 여기서는 개발자가 일반적으로 작성해야 하는 대부분의 데이터 액세스 코드가 필요하지 않습니다.
 
-- [가져오기:](https://msdn.com/data/ee712906) 이 프로젝트에 추가 하 고이 강력한 O/RM. 활용 하 고 시작
-- [시작할 수 있습니다.](https://msdn.com/data/ee712907) 비디오 및 자습서의 데이터를 최대한 활용할 수 있도록 가이드를 참조 하세요.
-- [도움말 가져오기:](https://msdn.com/data/hh913619) 전문가 로부터 도움 Stack Overflow에서 데이터 커뮤니티에 기여 하는 방법을 알아봅니다.
-- [참여:](https://github.com/aspnet/EntityFramework6) 어떻게 만들 수 있습니다 Entity Framework, 오픈 개발 모델을 더욱 GitHub 사이트를 방문 하 여 확인 합니다.
+- [다운로드:](https://msdn.com/data/ee712906) 이를 프로젝트에 추가 하 고이 강력한 O/RM을 활용 하기 시작 합니다.
+- [시작 하기:](https://msdn.com/data/ee712907) 데이터를 최대한 활용 하는 데 도움이 되는 비디오 및 자습서를 보려면 가이드를 방문 하세요.
+- [도움말 보기:](https://msdn.com/data/hh913619) 전문가의 도움을 받고 Stack Overflow의 데이터 커뮤니티에 기여 하는 방법을 알아보세요.
+- [참가:](https://github.com/aspnet/EntityFramework6) GitHub 사이트를 방문 하 여 Entity Framework 오픈 개발 모델을 만드는 데 도움이 되는 방법을 알아보세요.
 
-ASP.NET을 사용 하 여 Entity Framework를 사용 합니다.
+ASP.NET와 함께 Entity Framework 사용
 
 - [Web Forms 자습서](web-forms/overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1.md)
 - [MVC 자습서](mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application.md)

@@ -9,11 +9,11 @@ ms.assetid: cfe2a6a0-1e56-4dc8-9537-c8ec76ba96a4
 msc.legacyurl: /web-forms/overview/data-access/introduction/creating-a-data-access-layer-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 5aaf97dc8448dcb7b94ef2e4e23f34fd37ac4426
-ms.sourcegitcommit: 6f0e10e4ca61a1e5534b09c655fd35cdc6886c8a
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74115323"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78489905"
 ---
 # <a name="creating-a-data-access-layer-c"></a>데이터 액세스 레이어 만들기(C#)
 
@@ -168,7 +168,7 @@ TableAdapter에서 이러한 패턴 중 하나 또는 둘 모두를 구현할 �
 
 이 예제에서 사용 되는 각 개체는 강력 하 게 형식화 되어 있으므로 Visual Studio에서 IntelliSense 및 컴파일 시간 형식 검사를 제공할 수 있습니다. TableAdapter에서 반환 하는 모든 Datatable은 GridView, DetailsView, DropDownList, CheckBoxList 등과 같은 ASP.NET 데이터 웹 컨트롤에 바인딩될 수 있습니다. 다음 예제에서는 **Getproducts ()** 메서드에 의해 반환 된 DataTable을 **페이지\_Load** 이벤트 처리기에서 scant 세 줄의 코드를 GridView에 바인딩하는 방법을 보여 줍니다.
 
-AllProducts .aspx
+AllProducts.aspx
 
 [!code-aspx[Main](creating-a-data-access-layer-cs/samples/sample2.aspx)]
 
@@ -422,7 +422,7 @@ DAL을 사용자 지정 하는 방법을 보여 주기 위해 **Getproducts ()**
 
 이후 자습서에서 이러한 마스터-세부 보고서를 표시 하는 방법을 살펴보겠습니다. 지금은이 예제에서는 **SuppliersRow** 클래스에 추가 된 사용자 지정 메서드를 사용 하는 방법을 보여 주도록 디자인 되었습니다.
 
-SuppliersAndProducts
+SuppliersAndProducts.aspx
 
 [!code-aspx[Main](creating-a-data-access-layer-cs/samples/sample24.aspx)]
 
@@ -440,7 +440,7 @@ SuppliersAndProducts.aspx.cs
 
 행복 한 프로그래밍
 
-## <a name="further-reading"></a>추가 정보
+## <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -460,7 +460,7 @@ SuppliersAndProducts.aspx.cs
 - [데이터 집합을 Datagrid에 수동으로 바인딩하는 방법](../../../videos/data-access/adonet-data-services/how-to-manually-bind-a-dataset-to-a-datagrid.md)
 - [ASP 응용 프로그램에서 데이터 집합 및 필터를 사용 하는 방법](../../../videos/data-access/adonet-data-services/how-to-work-with-datasets-and-filters-from-an-asp-application.md)
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

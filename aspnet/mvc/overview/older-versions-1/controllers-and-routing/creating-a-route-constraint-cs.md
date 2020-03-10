@@ -1,75 +1,75 @@
 ---
 uid: mvc/overview/older-versions-1/controllers-and-routing/creating-a-route-constraint-cs
-title: 경로 제약 조건 (C#) 만들기 | Microsoft Docs
+title: 경로 제약 조건 만들기 (C#) | Microsoft Docs
 author: StephenWalther
-description: 이 자습서에서는 Stephen walther가 브라우저 정규식을 사용 하 여 경로 제약 조건을 만들면 일치 경로 요청 하는 방법을 제어 하는 방법을 보여 줍니다.
+description: 이 자습서에서 Stephen Walther은 정규식을 사용 하 여 경로 제약 조건을 만들어 브라우저에서 경로를 검색 하는 방식을 제어 하는 방법을 보여 줍니다.
 ms.author: riande
 ms.date: 02/16/2009
 ms.assetid: 0bfd06b1-12d3-4fbb-9779-a82e5eb7fe7d
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/creating-a-route-constraint-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 51ef859287b3424faf85f4a3606a220ab48a9466
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65123441"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78470165"
 ---
 # <a name="creating-a-route-constraint-c"></a>경로 제약 조건 만들기(C#)
 
-[Stephen walther가](https://github.com/StephenWalther)
+[Stephen Walther](https://github.com/StephenWalther)
 
-> 이 자습서에서는 Stephen walther가 브라우저 정규식을 사용 하 여 경로 제약 조건을 만들면 일치 경로 요청 하는 방법을 제어 하는 방법을 보여 줍니다.
+> 이 자습서에서 Stephen Walther은 정규식을 사용 하 여 경로 제약 조건을 만들어 브라우저에서 경로를 검색 하는 방식을 제어 하는 방법을 보여 줍니다.
 
-경로 제약 조건은 사용 하 여 특정 경로 일치 하는 브라우저 요청을 제한 합니다. 경로 제약 조건을 지정 하는 정규식을 사용할 수 있습니다.
+경로 제약 조건을 사용 하 여 특정 경로와 일치 하는 브라우저 요청을 제한할 수 있습니다. 정규식을 사용 하 여 경로 제약 조건을 지정할 수 있습니다.
 
-예를 들어 정의 했다고 경로 목록 1에서 Global.asax 파일에 한다고 가정 합니다.
+예를 들어 Global.asax 파일에서 목록 1에 경로를 정의 했다고 가정해 보겠습니다.
 
-**1-Global.asax.cs를 나열합니다.**
+**목록 1-Global.asax.cs**
 
 [!code-csharp[Main](creating-a-route-constraint-cs/samples/sample1.cs)]
 
-목록 1 Product 라는 경로 포함 합니다. 브라우저 요청 목록 2에 포함 된 ProductController 매핑할 제품 경로 사용할 수 있습니다.
+목록 1에는 Product 라는 경로가 포함 되어 있습니다. 제품 경로를 사용 하 여 브라우저 요청을 목록 2에 포함 된 제품 컨트롤러에 매핑할 수 있습니다.
 
-**Listing 2 - Controllers\ProductController.cs**
+**목록 2-Controllers\ProductController.cs**
 
 [!code-csharp[Main](creating-a-route-constraint-cs/samples/sample2.cs)]
 
-제품 컨트롤러에 의해 노출 Details() 작업 productId 라는 단일 매개 변수를 허용 하는지 확인 합니다. 이 매개 변수는 정수 매개 변수입니다.
+제품 컨트롤러에서 노출 하는 Details () 작업은 productId 라는 단일 매개 변수를 허용 합니다. 이 매개 변수는 정수 매개 변수입니다.
 
-목록 1에 정의 된 경로 다음 Url 중 하나라도 일치 합니다.
+목록 1에 정의 된 경로는 다음 Url과 일치 합니다.
 
-- / 제품/23
-- / 제품/7
+- /Cv3
+- /제품/7
 
-그러나 경로 다음 Url 일치도 합니다.
+불행 하 게도 경로는 다음 Url과 일치 합니다.
 
-- / 제품/아니오
-- / 제품/apple
+- /Product/blah
+- /> Apple
 
-Details() 작업에서 정수 매개 변수 예상 하기 때문에 정수 이외의 값을 포함 하는 요청을 수행 하면 오류가 발생 합니다. 예를 들어 URL /Product/apple 브라우저에 입력 하는 경우 다음 얻게 됩니다 오류 페이지 그림 1.
+Details () 작업에는 정수 매개 변수가 필요 하기 때문에 정수 값이 아닌 다른 항목을 포함 하는 요청을 수행 하면 오류가 발생 합니다. 예를 들어, 브라우저에 URL/Dva/>를 입력 하면 그림 1에 오류 페이지가 표시 됩니다.
 
-[![새 프로젝트 대화 상자](creating-a-route-constraint-cs/_static/image1.jpg)](creating-a-route-constraint-cs/_static/image1.png)
+[새 프로젝트 대화 상자 ![](creating-a-route-constraint-cs/_static/image1.jpg)](creating-a-route-constraint-cs/_static/image1.png)
 
-**그림 01**: 분해 하는 페이지가 표시 ([클릭 하 여 큰 이미지 보기](creating-a-route-constraint-cs/_static/image2.png))
+**그림 01**: 페이지 분해[보기 (전체 크기 이미지를 보려면 클릭](creating-a-route-constraint-cs/_static/image2.png))
 
-실제로 원하는 작업을 수행 하는 Url에는 적절 한 정수 productId와만 일치 합니다. 경로 일치 하는 Url을 제한 하는 제약 조건 경로 정의할 때 사용할 수 있습니다. 보기 3의 수정 된 제품 경로 정수 일치 하는 정규식 제약 조건을 포함 합니다.
+원하는 것은 적절 한 정수 productId를 포함 하는 Url과 일치 하는 것입니다. 경로를 정의할 때 제약 조건을 사용 하 여 경로와 일치 하는 Url을 제한할 수 있습니다. 목록 3의 수정 된 제품 경로에는 정수와 일치 하는 정규식 제약 조건이 포함 되어 있습니다.
 
-**3-Global.asax.cs를 나열합니다.**
+**목록 3-Global.asax.cs**
 
 [!code-csharp[Main](creating-a-route-constraint-cs/samples/sample3.cs)]
 
-정규식 \d+ 정수 하나 이상을 찾습니다. 이 제약 조건으로 인해 다음 Url에 맞게 제품 경로:
+정규식 \d +는 하나 이상의 정수와 일치 합니다. 이 제약 조건으로 인해 제품 경로가 다음 Url과 일치 합니다.
 
-- / 제품/3
-- / 제품/8999
+- /Product/3
+- /Cv99
 
-하지만 다음 Url에 없습니다.
+그러나 다음 Url은 그렇지 않습니다.
 
-- / 제품/apple
-- / 제품
+- /> Apple
+- /Product
 
-- 이러한 브라우저 요청을 다른 경로로 처리 또는 일치 하는 경로가 없을 경우는 *리소스를 찾을 수 없습니다* 오류가 반환 됩니다.
+- 이러한 브라우저 요청은 다른 경로에 의해 처리 되거나, 일치 하는 경로가 없는 경우 리소스를 *찾을* 수 없습니다. 오류가 반환 됩니다.
 
 > [!div class="step-by-step"]
 > [이전](creating-custom-routes-cs.md)
