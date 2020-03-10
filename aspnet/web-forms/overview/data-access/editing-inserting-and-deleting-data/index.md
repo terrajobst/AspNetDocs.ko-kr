@@ -1,37 +1,37 @@
 ---
 uid: web-forms/overview/data-access/editing-inserting-and-deleting-data/index
-title: 편집, 삽입 및 삭제 | Microsoft Docs
+title: 데이터 편집, 삽입 및 삭제 | Microsoft Docs
 author: rick-anderson
-description: 이러한 자습서 BLL 메서드에 ObjectDataSource 컨트롤의 메서드를 매핑하는 방법 및 GridView, DetailsView 및 FormView co를 구성 하는 방법을 표시 하는 중...
+description: 이러한 자습서에서는 ObjectDataSource 컨트롤의 메서드를 BLL 메서드에 매핑하고 GridView, DetailsView 및 FormView co를 구성 하는 방법에 대해 설명 합니다.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 9fc60498-ced4-47c6-b2cf-8d464e6aeef8
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data
 msc.type: chapter
 ms.openlocfilehash: 4657a52b05c1cf8a991158f212d6b6ce849ef276
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65109051"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78492197"
 ---
-# <a name="editing-inserting-and-deleting-data"></a><span data-ttu-id="ece31-103">데이터 편집, 삽입 및 삭제</span><span class="sxs-lookup"><span data-stu-id="ece31-103">Editing, Inserting, and Deleting Data</span></span>
+# <a name="editing-inserting-and-deleting-data"></a><span data-ttu-id="953eb-103">데이터 편집, 삽입 및 삭제</span><span class="sxs-lookup"><span data-stu-id="953eb-103">Editing, Inserting, and Deleting Data</span></span>
 
-> <span data-ttu-id="ece31-104">이 자습서에서 BLL 메서드에 ObjectDataSource 컨트롤의 메서드를 매핑하는 방법 및 DetailsView GridView를 구성 하는 방법 및 FormView 컨트롤 사용자가 데이터를 수정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="ece31-104">In these tutorials you see how to map methods of the ObjectDataSource control to BLL methods, and how to configure the GridView, DetailsView, and FormView controls to let users modify data.</span></span>
+> <span data-ttu-id="953eb-104">이러한 자습서에서는 ObjectDataSource 컨트롤의 메서드를 BLL 메서드에 매핑하는 방법 및 사용자가 데이터를 수정할 수 있도록 GridView, DetailsView 및 FormView 컨트롤을 구성 하는 방법에 대해 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="953eb-104">In these tutorials you see how to map methods of the ObjectDataSource control to BLL methods, and how to configure the GridView, DetailsView, and FormView controls to let users modify data.</span></span>
 
-- [<span data-ttu-id="ece31-105">데이터 삽입, 업데이트 및 삭제의 개요(C#)</span><span class="sxs-lookup"><span data-stu-id="ece31-105">Overview of Inserting, Updating, and Deleting Data (C#)</span></span>](an-overview-of-inserting-updating-and-deleting-data-cs.md)
-- [<span data-ttu-id="ece31-106">삽입, 업데이트 및 삭제와 연결된 이벤트 검사(C#)</span><span class="sxs-lookup"><span data-stu-id="ece31-106">Examining the Events Associated with Inserting, Updating, and Deleting (C#)</span></span>](examining-the-events-associated-with-inserting-updating-and-deleting-cs.md)
-- [<span data-ttu-id="ece31-107">ASP.NET 페이지에서 BLL 및 DAL 수준의 예외 처리(C#)</span><span class="sxs-lookup"><span data-stu-id="ece31-107">Handling BLL- and DAL-Level Exceptions in an ASP.NET Page (C#)</span></span>](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs.md)
-- [<span data-ttu-id="ece31-108">편집 및 삽입 인터페이스에 유효성 검사 컨트롤 추가(C#)</span><span class="sxs-lookup"><span data-stu-id="ece31-108">Adding Validation Controls to the Editing and Inserting Interfaces (C#)</span></span>](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs.md)
-- [<span data-ttu-id="ece31-109">데이터 수정 인터페이스 사용자 지정(C#)</span><span class="sxs-lookup"><span data-stu-id="ece31-109">Customizing the Data Modification Interface (C#)</span></span>](customizing-the-data-modification-interface-cs.md)
-- [<span data-ttu-id="ece31-110">낙관적 동시성 구현(C#)</span><span class="sxs-lookup"><span data-stu-id="ece31-110">Implementing Optimistic Concurrency (C#)</span></span>](implementing-optimistic-concurrency-cs.md)
-- [<span data-ttu-id="ece31-111">삭제할 때 클라이언트 쪽 확인 추가(C#)</span><span class="sxs-lookup"><span data-stu-id="ece31-111">Adding Client-Side Confirmation When Deleting (C#)</span></span>](adding-client-side-confirmation-when-deleting-cs.md)
-- [<span data-ttu-id="ece31-112">사용자에 따라 데이터 수정 기능 제한(C#)</span><span class="sxs-lookup"><span data-stu-id="ece31-112">Limiting Data Modification Functionality Based on the User (C#)</span></span>](limiting-data-modification-functionality-based-on-the-user-cs.md)
-- [<span data-ttu-id="ece31-113">데이터 삽입, 업데이트 및 삭제의 개요(VB)</span><span class="sxs-lookup"><span data-stu-id="ece31-113">Overview of Inserting, Updating, and Deleting Data (VB)</span></span>](an-overview-of-inserting-updating-and-deleting-data-vb.md)
-- [<span data-ttu-id="ece31-114">삽입, 업데이트 및 삭제와 연결된 이벤트 검사(VB)</span><span class="sxs-lookup"><span data-stu-id="ece31-114">Examining the Events Associated with Inserting, Updating, and Deleting (VB)</span></span>](examining-the-events-associated-with-inserting-updating-and-deleting-vb.md)
-- [<span data-ttu-id="ece31-115">ASP.NET 페이지에서 BLL 및 DAL 수준의 예외 처리(VB)</span><span class="sxs-lookup"><span data-stu-id="ece31-115">Handling BLL- and DAL-Level Exceptions in an ASP.NET Page (VB)</span></span>](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb.md)
-- [<span data-ttu-id="ece31-116">편집 및 삽입 인터페이스에 유효성 검사 컨트롤 추가(VB)</span><span class="sxs-lookup"><span data-stu-id="ece31-116">Adding Validation Controls to the Editing and Inserting Interfaces (VB)</span></span>](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb.md)
-- [<span data-ttu-id="ece31-117">데이터 수정 인터페이스 사용자 지정(VB)</span><span class="sxs-lookup"><span data-stu-id="ece31-117">Customizing the Data Modification Interface (VB)</span></span>](customizing-the-data-modification-interface-vb.md)
-- [<span data-ttu-id="ece31-118">낙관적 동시성 구현(VB)</span><span class="sxs-lookup"><span data-stu-id="ece31-118">Implementing Optimistic Concurrency (VB)</span></span>](implementing-optimistic-concurrency-vb.md)
-- [<span data-ttu-id="ece31-119">삭제할 때 클라이언트 쪽 확인 추가(VB)</span><span class="sxs-lookup"><span data-stu-id="ece31-119">Adding Client-Side Confirmation When Deleting (VB)</span></span>](adding-client-side-confirmation-when-deleting-vb.md)
-- [<span data-ttu-id="ece31-120">사용자에 따라 데이터 수정 기능 제한(VB)</span><span class="sxs-lookup"><span data-stu-id="ece31-120">Limiting Data Modification Functionality Based on the User (VB)</span></span>](limiting-data-modification-functionality-based-on-the-user-vb.md)
+- [<span data-ttu-id="953eb-105">데이터 삽입, 업데이트 및 삭제의 개요(C#)</span><span class="sxs-lookup"><span data-stu-id="953eb-105">Overview of Inserting, Updating, and Deleting Data (C#)</span></span>](an-overview-of-inserting-updating-and-deleting-data-cs.md)
+- [<span data-ttu-id="953eb-106">삽입, 업데이트 및 삭제와 연결된 이벤트 검사(C#)</span><span class="sxs-lookup"><span data-stu-id="953eb-106">Examining the Events Associated with Inserting, Updating, and Deleting (C#)</span></span>](examining-the-events-associated-with-inserting-updating-and-deleting-cs.md)
+- [<span data-ttu-id="953eb-107">ASP.NET 페이지에서 BLL 및 DAL 수준의 예외 처리(C#)</span><span class="sxs-lookup"><span data-stu-id="953eb-107">Handling BLL- and DAL-Level Exceptions in an ASP.NET Page (C#)</span></span>](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs.md)
+- [<span data-ttu-id="953eb-108">편집 및 삽입 인터페이스에 유효성 검사 컨트롤 추가(C#)</span><span class="sxs-lookup"><span data-stu-id="953eb-108">Adding Validation Controls to the Editing and Inserting Interfaces (C#)</span></span>](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs.md)
+- [<span data-ttu-id="953eb-109">데이터 수정 인터페이스 사용자 지정(C#)</span><span class="sxs-lookup"><span data-stu-id="953eb-109">Customizing the Data Modification Interface (C#)</span></span>](customizing-the-data-modification-interface-cs.md)
+- [<span data-ttu-id="953eb-110">낙관적 동시성 구현(C#)</span><span class="sxs-lookup"><span data-stu-id="953eb-110">Implementing Optimistic Concurrency (C#)</span></span>](implementing-optimistic-concurrency-cs.md)
+- [<span data-ttu-id="953eb-111">삭제할 때 클라이언트 쪽 확인 추가(C#)</span><span class="sxs-lookup"><span data-stu-id="953eb-111">Adding Client-Side Confirmation When Deleting (C#)</span></span>](adding-client-side-confirmation-when-deleting-cs.md)
+- [<span data-ttu-id="953eb-112">사용자에 따라 데이터 수정 기능 제한(C#)</span><span class="sxs-lookup"><span data-stu-id="953eb-112">Limiting Data Modification Functionality Based on the User (C#)</span></span>](limiting-data-modification-functionality-based-on-the-user-cs.md)
+- [<span data-ttu-id="953eb-113">데이터 삽입, 업데이트 및 삭제의 개요(VB)</span><span class="sxs-lookup"><span data-stu-id="953eb-113">Overview of Inserting, Updating, and Deleting Data (VB)</span></span>](an-overview-of-inserting-updating-and-deleting-data-vb.md)
+- [<span data-ttu-id="953eb-114">삽입, 업데이트 및 삭제와 연결된 이벤트 검사(VB)</span><span class="sxs-lookup"><span data-stu-id="953eb-114">Examining the Events Associated with Inserting, Updating, and Deleting (VB)</span></span>](examining-the-events-associated-with-inserting-updating-and-deleting-vb.md)
+- [<span data-ttu-id="953eb-115">ASP.NET 페이지에서 BLL 및 DAL 수준의 예외 처리(VB)</span><span class="sxs-lookup"><span data-stu-id="953eb-115">Handling BLL- and DAL-Level Exceptions in an ASP.NET Page (VB)</span></span>](handling-bll-and-dal-level-exceptions-in-an-asp-net-page-vb.md)
+- [<span data-ttu-id="953eb-116">편집 및 삽입 인터페이스에 유효성 검사 컨트롤 추가(VB)</span><span class="sxs-lookup"><span data-stu-id="953eb-116">Adding Validation Controls to the Editing and Inserting Interfaces (VB)</span></span>](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb.md)
+- [<span data-ttu-id="953eb-117">데이터 수정 인터페이스 사용자 지정(VB)</span><span class="sxs-lookup"><span data-stu-id="953eb-117">Customizing the Data Modification Interface (VB)</span></span>](customizing-the-data-modification-interface-vb.md)
+- [<span data-ttu-id="953eb-118">낙관적 동시성 구현(VB)</span><span class="sxs-lookup"><span data-stu-id="953eb-118">Implementing Optimistic Concurrency (VB)</span></span>](implementing-optimistic-concurrency-vb.md)
+- [<span data-ttu-id="953eb-119">삭제할 때 클라이언트 쪽 확인 추가(VB)</span><span class="sxs-lookup"><span data-stu-id="953eb-119">Adding Client-Side Confirmation When Deleting (VB)</span></span>](adding-client-side-confirmation-when-deleting-vb.md)
+- [<span data-ttu-id="953eb-120">사용자에 따라 데이터 수정 기능 제한(VB)</span><span class="sxs-lookup"><span data-stu-id="953eb-120">Limiting Data Modification Functionality Based on the User (VB)</span></span>](limiting-data-modification-functionality-based-on-the-user-vb.md)
