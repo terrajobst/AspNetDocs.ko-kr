@@ -9,11 +9,11 @@ ms.assetid: a2d7f33b-8c4a-4b48-9fb1-9139cf9b9878
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-introduction-1-of-12
 msc.type: authoredcontent
 ms.openlocfilehash: ea88da1e6d510f706fc7ca370cfa32974c1243f8
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74587718"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78421841"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-introduction---1-of-12"></a>Visual Studio를 사용 하 여 SQL Server Compact를 사용 하 여 ASP.NET 웹 응용 프로그램 배포: 소개-12 개
 
@@ -39,7 +39,7 @@ ms.locfileid: "74587718"
 
 자습서는 순서 대로 실행 되도록 설계 되었으며 각 부품은 이전 파트를 기반으로 합니다. 그러나 상황과 관련이 없는 부분은 건너뛸 수 있습니다. 파트를 건너뛰려면 이후 자습서의 절차를 조정 해야 할 수 있습니다.
 
-## <a name="intended-audience"></a>적용 대상
+## <a name="intended-audience"></a>대상 그룹
 
 이 자습서는 소규모 조직이 나 다른 환경에서 작업 하는 ASP.NET 개발자를 대상으로 합니다.
 
@@ -77,7 +77,7 @@ Contoso 대학은 Visual Studio 웹 응용 프로그램 프로젝트입니다. �
 
 자습서에 대 한 설명은 환영 하며 자습서를 업데이트할 때 자습서 설명에서 제공 되는 향상 된 기능에 대 한 제안 또는 제안 사항을 고려 하기 위해 모든 작업이 수행 됩니다.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>사전 요구 사항
 
 시작 하기 전에 컴퓨터에 Windows 7 이상 및 다음 제품 중 하나가 설치 되어 있는지 확인 합니다.
 

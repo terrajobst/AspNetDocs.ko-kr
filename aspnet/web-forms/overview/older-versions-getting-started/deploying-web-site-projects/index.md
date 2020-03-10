@@ -1,23 +1,23 @@
 ---
 uid: web-forms/overview/older-versions-getting-started/deploying-web-site-projects/index
-title: Visual Studio 2008 및 이전 버전의 웹 사이트 프로젝트 배포 | Microsoft Docs
+title: Visual Studio 2008 및 이전 버전에서 웹 사이트 프로젝트 배포 | Microsoft Docs
 author: rick-anderson
-description: ASP.NET 웹 응용 프로그램은 일반적으로 설계, 생성 및 로컬 개발 환경에서 테스트 및 프로덕션 환경 o에 배포 해야 하는 중...
+description: ASP.NET 웹 응용 프로그램은 일반적으로 로컬 개발 환경에서 설계 되 고 만들어지고 테스트 되며 프로덕션 환경에 배포 해야 합니다.
 ms.author: riande
 ms.date: 05/16/2012
 ms.assetid: 6f72bde8-f2f1-4e4a-94e5-494c3c153c14
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects
 msc.type: chapter
 ms.openlocfilehash: 43c2397ef4ccc5eacb2ff4c5d04f62b9c8c481b7
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65134419"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78420491"
 ---
 # <a name="deploying-web-site-projects-in-visual-studio-2008-and-earlier"></a>Visual Studio 2008 이하에서 웹 사이트 프로젝트 배포
 
-> ASP.NET 웹 응용 프로그램은 일반적으로 디자인, 생성 및 테스트 로컬 개발 환경 및 릴리스에 대 한 준비가 되 면 프로덕션 환경에 배포 해야 합니다. 이 자습서 시리즈 배포 프로세스를 자세히 설명합니다.
+> ASP.NET 웹 응용 프로그램은 일반적으로 로컬 개발 환경에서 디자인, 작성 및 테스트를 수행할 준비가 되 면 프로덕션 환경에 배포 해야 합니다. 이 자습서 시리즈는 배포 프로세스를 자세히 설명 합니다.
 
 - [ASP.NET 호스팅 옵션(C#)](asp-net-hosting-options-cs.md)
 - [배포할 파일 확인(C#)](determining-what-files-need-to-be-deployed-cs.md)

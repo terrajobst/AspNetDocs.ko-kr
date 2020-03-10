@@ -9,11 +9,11 @@ ms.assetid: 5e2bb092-cb22-4511-ad0a-22ae12dd99b3
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-deploying-a-sql-server-database-update-11-of-12
 msc.type: authoredcontent
 ms.openlocfilehash: 0894c0ac24737e66b6960ef3d48aa17f78c6aa1d
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74621065"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78423977"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-deploying-a-sql-server-database-update---11-of-12"></a>Visual Studio 또는 Visual Web Developer를 사용 하 여 SQL Server Compact를 사용 하 여 ASP.NET 웹 응용 프로그램 배포: SQL Server 데이터베이스 업데이트 배포-11/12
 
@@ -147,11 +147,11 @@ Code First 마이그레이션는 테스트 환경에서와 동일한 방식으�
 
 이제 SQL Server 데이터베이스를 사용 하 여 데이터베이스 변경 내용을 포함 하는 응용 프로그램 업데이트를 성공적으로 배포 했습니다.
 
-## <a name="more-information"></a>자세한 내용
+## <a name="more-information"></a>추가 정보
 
 이는 ASP.NET 웹 응용 프로그램을 타사 호스팅 공급자에 배포 하는 방법에 대 한 자습서 시리즈를 완료 합니다. 이러한 자습서에서 설명 하는 항목에 대 한 자세한 내용은 MSDN 웹 사이트에서 [ASP.NET Deployment Content Map](https://msdn.microsoft.com/library/bb386521(v=vs.110).aspx) 을 참조 하십시오.
 
-## <a name="acknowledgements"></a>승인
+## <a name="acknowledgements"></a>감사의 말
 
 이 자습서 시리즈의 내용에 대해 상당한 기여를 수행한 다음 사용자에 게 감사 합니다.
 

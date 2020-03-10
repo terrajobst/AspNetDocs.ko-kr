@@ -9,11 +9,11 @@ ms.assetid: 732a2316-e49f-4f72-becd-0cd72f14457e
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/membership-and-administration
 msc.type: authoredcontent
 ms.openlocfilehash: ab00bc90bfc767d06e747be6dfb973245b5aae88
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74615465"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78439931"
 ---
 # <a name="membership-and-administration"></a>멤버 자격 및 관리
 
@@ -25,11 +25,11 @@ ms.locfileid: "74615465"
 
 이 자습서에서는 정문 장난감 샘플 응용 프로그램을 업데이트 하 여 사용자 지정 역할을 추가 하 고 ASP.NET Identity를 사용 하는 방법을 보여 줍니다. 또한 사용자 지정 역할이 있는 사용자가 웹 사이트에서 제품을 추가 하 고 제거할 수 있는 관리 페이지를 구현 하는 방법도 보여 줍니다.
 
-[ASP.NET Identity](../../../../identity/overview/getting-started/introduction-to-aspnet-identity.md) 는 ASP.NET 웹 응용 프로그램을 빌드하는 데 사용 되는 멤버 자격 시스템이 며 ASP.NET 4.5에서 사용할 수 있습니다. ASP.NET Identity는 Visual Studio 2013 Web Forms 프로젝트 템플릿에서 사용 되며 [ASP.NET MVC](../../../../mvc/index.md), [ASP.NET Web API](../../../../web-api/index.md)및 [ASP.NET 단일 페이지 응용 프로그램](../../../../single-page-application/index.md)에 대 한 템플릿을 사용 합니다. 빈 웹 응용 프로그램으로 시작 하는 경우 NuGet을 사용 하 여 ASP.NET Identity 시스템을 설치할 수도 있습니다. 그러나이 자습서 시리즈에서는 ASP.NET Identity 시스템을 포함 하는 **Web Forms**projecttemplate을 사용 합니다. ASP.NET Identity를 사용 하면 사용자 관련 프로필 데이터를 응용 프로그램 데이터와 쉽게 통합할 수 있습니다. 또한 ASP.NET Identity를 사용 하 여 응용 프로그램의 사용자 프로필에 대 한 지 속성 모델을 선택할 수 있습니다. Windows Azure Storage 테이블과 같은 *Nosql* 데이터 저장소를 포함 하 여 SQL Server 데이터베이스 또는 다른 데이터 저장소에 데이터를 저장할 수 있습니다.
+[ASP.NET Identity](../../../../identity/overview/getting-started/introduction-to-aspnet-identity.md) 는 ASP.NET 웹 응용 프로그램을 빌드하는 데 사용 되는 멤버 자격 시스템이 며 ASP.NET 4.5에서 사용할 수 있습니다. ASP.NET Identity는 Visual Studio 2013 Web Forms 프로젝트 템플릿에서 사용 되며 [ASP.NET MVC](../../../../mvc/index.md), [ASP.NET Web API](../../../../web-api/index.md)및 [ASP.NET 단일 페이지 응용 프로그램](../../../../single-page-application/index.md)에 대 한 템플릿을 사용 합니다. 빈 웹 응용 프로그램으로 시작 하는 경우 NuGet을 사용 하 여 ASP.NET Identity 시스템을 설치할 수도 있습니다. 그러나이 자습서 시리즈에서는 ASP.NET Identity 시스템을 포함 하는 **Web Forms**projecttemplate을 사용 합니다. ASP.NET Identity를 사용 하면 사용자 관련 프로필 데이터를 응용 프로그램 데이터와 쉽게 통합할 수 있습니다. 또한 ASP.NET ID를 통해 애플리케이션의 사용자 프로필에 대한 지속성 모델을 선택할 수 있습니다. Windows Azure Storage 테이블과 같은 *Nosql* 데이터 저장소를 포함 하 여 SQL Server 데이터베이스 또는 다른 데이터 저장소에 데이터를 저장할 수 있습니다.
 
 이 자습서는 정문 장난감 tutorial 시리즈의 "PayPal Checkout and 결제" 라는 이전 자습서를 기반으로 합니다.
 
-## <a name="what-youll-learn"></a>학습 내용:
+## <a name="what-youll-learn"></a>학습할 내용:
 
 - 코드를 사용 하 여 사용자 지정 역할 및 사용자를 응용 프로그램에 추가 하는 방법입니다.
 - 관리 폴더 및 페이지에 대 한 액세스를 제한 하는 방법
@@ -61,7 +61,7 @@ ASP.NET Identity를 사용 하 여 사용자 지정 역할을 추가 하 고 코
 5. 다음과 같이 표시 되도록 노란색으로 강조 표시 된 코드를 추가 하 여 *Global.asax.cs* 파일을 수정 합니다.  
 
     [!code-csharp[Main](membership-and-administration/samples/sample2.cs?highlight=11,26-28)]
-6. `AddUserAndRole` 빨간색으로 밑줄이 그어집니다. AddUserAndRole 코드를 두 번 클릭 합니다.  
+6. `AddUserAndRole`는 빨간색으로 밑줄이 그어져 있습니다. AddUserAndRole 코드를 두 번 클릭 합니다.  
    강조 표시 된 메서드의 시작 부분에 있는 "A" 문자에 밑줄이 표시 됩니다.
 7. 문자 "A"를 마우스로 가리키고 `AddUserAndRole` 메서드에 대 한 메서드 스텁을 생성 하는 데 사용할 수 있는 UI를 클릭 합니다. 
 
@@ -128,7 +128,7 @@ ASP.NET Identity를 사용 하 여 사용자 지정 역할을 추가 하 고 코
 
     [!code-xml[Main](membership-and-administration/samples/sample4.xml)]
 
-*Web.config 파일을* 저장 합니다. Web.config *파일은* 응용 프로그램의 "canedit" 역할에 속하는 사용자만 *Admin* 폴더에 포함 된 페이지에 액세스할 수 있도록 지정 합니다.
+*Web.config* 파일을 저장합니다. Web.config *파일은* 응용 프로그램의 "canedit" 역할에 속하는 사용자만 *Admin* 폴더에 포함 된 페이지에 액세스할 수 있도록 지정 합니다.
 
 ### <a name="including-custom-role-navigation"></a>사용자 지정 역할 탐색 포함
 
@@ -175,7 +175,7 @@ ASP.NET Identity를 사용 하 여 사용자 지정 역할을 추가 하 고 코
 
 [!code-xml[Main](membership-and-administration/samples/sample10.xml)]
 
-#### <a name="regular-expressions"></a>정규식을 참조하세요.
+#### <a name="regular-expressions"></a>정규식
 
 **RegularExpressionValidator** 컨트롤을 사용 하 여 *adminpage .aspx* 페이지의 제품 가격에 대 한 유효성을 검사 합니다. 이 컨트롤은 연결 된 입력 컨트롤의 값 ("Add제품 가격" 텍스트 상자)이 정규식으로 지정 된 패턴과 일치 하는지 여부를 확인 합니다. 정규식은 패턴 일치 표기법으로, 특정 문자 패턴을 신속 하 게 찾고 일치 시킬 수 있습니다. **RegularExpressionValidator** 컨트롤에는 아래와 같이 가격 입력의 유효성을 검사 하는 데 사용 되는 정규식을 포함 하는 `ValidationExpression` 라는 속성이 포함 되어 있습니다.
 

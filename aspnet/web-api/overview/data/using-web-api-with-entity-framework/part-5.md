@@ -9,11 +9,11 @@ ms.assetid: 0fd07176-b74b-48f0-9fac-0f02e3ffa213
 msc.legacyurl: /web-api/overview/data/using-web-api-with-entity-framework/part-5
 msc.type: authoredcontent
 ms.openlocfilehash: fc0463420207eba764014b8ec7123c5150e38247
-ms.sourcegitcommit: 84b1681d4e6253e30468c8df8a09fe03beea9309
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445761"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78449027"
 ---
 # <a name="create-data-transfer-objects-dtos"></a>DTO(데이터 전송 개체) 만들기
 
@@ -21,7 +21,7 @@ ms.locfileid: "73445761"
 
 [완료 된 프로젝트 다운로드](https://github.com/MikeWasson/BookService)
 
-이제 web API는 데이터베이스 엔터티를 클라이언트에 노출 합니다. 클라이언트는 데이터베이스 테이블에 직접 매핑되는 데이터를 수신 합니다. 그러나 이것이 항상 좋은 것은 아닙니다. 클라이언트에 보내는 데이터의 셰이프를 변경 하려는 경우가 있습니다. 예를 들어 다음을 수행합니다.
+이제 web API는 데이터베이스 엔터티를 클라이언트에 노출 합니다. 클라이언트는 데이터베이스 테이블에 직접 매핑되는 데이터를 수신 합니다. 그러나 이것이 항상 좋은 것은 아닙니다. 클라이언트에 보내는 데이터의 셰이프를 변경 하려는 경우가 있습니다. 예를 들면 다음과 같습니다.
 
 - 순환 참조를 제거 합니다 (이전 섹션 참조).
 - 클라이언트가 볼 수 없는 특정 속성을 숨깁니다.

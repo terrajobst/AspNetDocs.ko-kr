@@ -5,12 +5,12 @@ description: 를 사용 하 여 ASP.NET에서 쿠키를 SameSite 하는 방법�
 ms.author: riande
 ms.date: 2/15/2019
 uid: samesite/system-web-samesite
-ms.openlocfilehash: edb368910b24be2d042afe3c19ffa1fb23245443
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.openlocfilehash: 7987a5d6c9b3a82679d42a2d381d471d56f495c2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77455709"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78439937"
 ---
 # <a name="work-with-samesite-cookies-in-aspnet"></a>ASP.NET에서 SameSite 쿠키 사용
 
@@ -177,7 +177,7 @@ Azure App Service .Net 4.7.2 앱에서 SameSite 동작을 구성 하는 방법�
 * 앱에서 테스트 사이트가 아닌 브라우저를 볼 수 있습니다.
 * 사용자 환경에 필요한 경우 검색을 추가할 준비를 해야 합니다.
 
-검색을 연결 하는 방법은 사용 중인 .NET 및 웹 프레임 워크의 버전에 따라 다릅니다. <xref:HTTP.HttpCookie> 호출 사이트에서 다음 코드를 호출할 수 있습니다.
+검색을 연결 하는 방법은 사용 중인 .NET 및 웹 프레임 워크의 버전에 따라 다릅니다. [되어](/dotnet/api/system.web.httpcookie) 호출 사이트에서 다음 코드를 호출할 수 있습니다.
 
 [!code-csharp[](sample/SameSiteCheck.cs?name=snippet)]
 
@@ -248,6 +248,8 @@ Google은 이전 chrome 버전을 사용할 수 없도록 설정 하지 않습�
 * [Chromium 74 Win64](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Win_x64/638880/)
 * 64 비트 버전의 Windows를 사용 하지 않는 경우 [OmahaProxy viewer](https://omahaproxy.appspot.com/) 를 사용 하 여 [Chromium에서 제공](https://www.chromium.org/getting-involved/download-chromium)하는 지침을 사용 하 여 Chrome 74 (v 74.0.3729.108)에 해당 하는 Chromium 분기를 조회할 수 있습니다.
 
+카나리아 버전 `80.0.3975.0`부터 완화 + 사후 임시 완화는 새로운 `--enable-features=SameSiteDefaultChecksMethodRigorously` 플래그를 사용 하 여 테스트 목적으로 사용 하지 않도록 설정할 수 있습니다 .이는 완화가 제거 된 기능의 최종 종료 상태에서 사이트 및 서비스의 테스트를 허용 하는 것입니다. 자세한 내용은 Chromium Projects [SameSite Updates](https://www.chromium.org/updates/same-site) 를 참조 하세요.
+
 #### <a name="test-with-chrome-80"></a>Chrome 80 이상으로 테스트
 
 새 특성을 지 원하는 Chrome 버전을 [다운로드](https://www.google.com/chrome/) 합니다. 작성 시점에 현재 버전은 Chrome 80입니다. Chrome 80에는 새 동작을 사용 하도록 설정 `chrome://flags/#same-site-by-default-cookies` 플래그가 필요 합니다. SameSite 특성을 사용 하지 않는 쿠키의 예정 된 동작을 테스트 하려면 (`chrome://flags/#cookies-without-same-site-must-be-secure`)도 사용 하도록 설정 해야 합니다. Chrome 80는 특정 요청에 대 한 시간 제한 유예 기간을 사용 하는 경우를 제외 하 고는 특성이 없는 쿠키를 `SameSite=Lax`으로 처리 하는 스위치를 대상으로 합니다. 시간이 지정 된 유예 기간을 사용 하지 않도록 설정 하려면 다음 명령줄 인수를 사용 하 여 Chrome 80을 시작할 수 있습니다.
@@ -302,6 +304,7 @@ Electron 버전에는 이전 버전의 Chromium이 포함되어 있습니다. �
 ## <a name="additional-resources"></a>추가 리소스
 
 * [ASP.NET 및 ASP.NET Core의 예정 된 SameSite 쿠키 변경 내용](https://devblogs.microsoft.com/aspnet/upcoming-samesite-cookie-changes-in-asp-net-and-asp-net-core/)
+* [SameSite 및 "SameSite = None; 테스트 및 디버깅에 대 한 팁 보안 "쿠키](https://www.chromium.org/updates/same-site/test-debug)
 * [Chromium 블로그: 개발자: 새 SameSite를 사용할 준비가 되었습니다. 보안 쿠키 설정](https://blog.chromium.org/2019/10/developers-get-ready-for-new.html)
 * [SameSite 쿠키 설명](https://web.dev/samesite-cookies-explained/)
 * [Chrome 업데이트](https://www.chromium.org/updates/same-site)

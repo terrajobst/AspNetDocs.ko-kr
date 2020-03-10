@@ -9,11 +9,11 @@ ms.assetid: ba92788f-9f03-44b1-b6b2-af8413e6a35d
 msc.legacyurl: /web-forms/overview/deployment/configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-offline-deployment
 msc.type: authoredcontent
 ms.openlocfilehash: f93cf11085fb19afb97b71aca8f638bd88fe658b
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74621094"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78440825"
 ---
 # <a name="configuring-a-web-server-for-web-deploy-publishing-offline-deployment"></a>웹 배포 게시용 웹 서버 구성(오프라인 배포)
 
@@ -23,7 +23,7 @@ ms.locfileid: "74621094"
 
 > 이 항목에서는 오프 라인 웹 게시 및 배포를 지원 하도록 IIS 웹 서버를 구성 하는 방법에 대해 설명 합니다.
 > 
-> 인터넷 정보 서비스 (IIS) 웹 배포 도구 (웹 배포) 2.0 이상으로 작업 하는 경우 응용 프로그램 또는 사이트를 웹 서버로 가져오는 데 사용할 수 있는 세 가지 주요 방법이 있습니다. 다음과 같은 작업을 수행할 수 있습니다.
+> 인터넷 정보 서비스 (IIS) 웹 배포 도구 (웹 배포) 2.0 이상으로 작업 하는 경우 응용 프로그램 또는 사이트를 웹 서버로 가져오는 데 사용할 수 있는 세 가지 주요 방법이 있습니다. 다음을 수행할 수 있습니다.
 > 
 > - *웹 배포 원격 에이전트 서비스*를 사용 합니다. 이 방법을 사용 하려면 웹 서버를 구성 해야 하지만 서버에 모든 항목을 배포 하려면 로컬 서버 관리자의 자격 증명을 제공 해야 합니다.
 > - *웹 배포 처리기*를 사용 합니다. 이 방법은 훨씬 복잡 하며 웹 서버를 설정 하는 데 더 많은 초기 노력이 필요 합니다. 그러나이 방법을 사용 하면 관리자가 아닌 사용자가 배포를 수행할 수 있도록 IIS를 구성할 수 있습니다. 웹 배포 처리기는 IIS 버전 7 이상 에서만 사용할 수 있습니다.
@@ -91,7 +91,7 @@ ms.locfileid: "74621094"
 7. 탐색 창에서 **서버**를 클릭 합니다.
 8. **IIS 7 권장 구성** 행에서 **추가**를 클릭 합니다.
 9. **웹 배포 도구 2.1** 행에서 **추가**를 클릭 합니다.
-10. **설치**를 클릭합니다. 웹 플랫폼 설치 관리자에는 제품&#x2014;목록과 함께 설치 되는 연결 된 종속성&#x2014;이 표시 되며, 사용 조건에 동의 하 라는 메시지가 표시 됩니다.
+10. **Install**을 클릭합니다. 웹 플랫폼 설치 관리자에는 제품&#x2014;목록과 함께 설치 되는 연결 된 종속성&#x2014;이 표시 되며, 사용 조건에 동의 하 라는 메시지가 표시 됩니다.
 
     ![](configuring-a-web-server-for-web-deploy-publishing-offline-deployment/_static/image2.png)
 11. 사용 약관을 검토 하 고 약관에 동의 하는 경우 동의 **함**을 클릭 합니다.
@@ -145,7 +145,7 @@ IIS의 기본 웹 사이트에 콘텐츠를 배포 하는 것은 아무 작업�
     > [!NOTE]
     > 프로덕션 환경에서는 포트 80에서 웹 사이트를 호스트 하 고 일치 하는 DNS 레코드와 함께 호스트 헤더를 구성할 수 있습니다. IIS 7에서 호스트 헤더를 구성 하는 방법에 대 한 자세한 내용은 [웹 사이트의 호스트 헤더 구성 (IIS 7)](https://technet.microsoft.com/library/cc753195(WS.10).aspx)을 참조 하십시오. Windows Server 2008 r 2의 DNS 서버 역할에 대 한 자세한 내용은 [Dns 서버 개요](https://technet.microsoft.com/library/cc770392.aspx) 및 [dns 서버](https://technet.microsoft.com/windowsserver/dd448607)를 참조 하세요.
 9. **작업** 창의 **사이트 편집**에서 **바인딩**을 클릭합니다.
-10. **사이트 바인딩** 대화 상자에서 **추가**를 클릭 합니다.
+10. **사이트 바인딩** 대화 상자에서 **추가**를 클릭합니다.
 
     ![](configuring-a-web-server-for-web-deploy-publishing-offline-deployment/_static/image5.png)
 11. **사이트 바인딩 추가** 대화 상자에서 기존 사이트 구성과 일치 하는 **IP 주소** 및 **포트** 를 설정 합니다.
@@ -154,8 +154,8 @@ IIS의 기본 웹 사이트에 콘텐츠를 배포 하는 것은 아무 작업�
     ![](configuring-a-web-server-for-web-deploy-publishing-offline-deployment/_static/image6.png)
 
     > [!NOTE]
-    > 첫 번째 사이트 바인딩을 사용 하면 IP 주소와 포트 또는 `http://localhost:85`를 사용 하 여 로컬에서 사이트에 액세스할 수 있습니다. 두 번째 사이트 바인딩을 사용 하면 컴퓨터 이름 (예: http://proweb1:85) )을 사용 하 여 도메인에 있는 다른 컴퓨터에서 사이트에 액세스할 수 있습니다.
-13. **사이트 바인딩** 대화 상자에서 **닫기**를 클릭 합니다.
+    > 첫 번째 사이트 바인딩을 사용 하면 IP 주소와 포트 또는 `http://localhost:85`를 사용 하 여 로컬에서 사이트에 액세스할 수 있습니다. 두 번째 사이트 바인딩을 사용 하면 컴퓨터 이름 (예: http://proweb1:85))을 사용 하 여 도메인에 있는 다른 컴퓨터에서 사이트에 액세스할 수 있습니다.
+13. **사이트 바인딩** 대화 상자에서 **닫기**를 클릭합니다.
 14. **연결** 창에서 **응용 프로그램 풀**을 클릭 합니다.
 15. **응용 프로그램 풀** 창에서 응용 프로그램 풀의 이름을 마우스 오른쪽 단추로 클릭 한 다음 **기본 설정**을 클릭 합니다. 기본적으로 응용 프로그램 풀의 이름은 웹 사이트의 이름 (예: **Demosite**)과 일치 합니다.
 16. **.NET Framework 버전** 목록에서 **.NET Framework v 4.0.30319**를 선택한 다음 **확인**을 클릭 합니다.
@@ -181,8 +181,8 @@ IIS의 기본 웹 사이트에 콘텐츠를 배포 하는 것은 아무 작업�
 
 1. Windows 탐색기에서 로컬 폴더의 위치로 이동 합니다.
 2. 폴더를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다.
-3. **보안** 탭에서 **편집**을 클릭 한 다음 **추가**를 클릭 합니다.
-4. **위치**를 클릭 합니다. **위치** 대화 상자에서 로컬 서버를 선택 하 고 **확인**을 클릭 합니다.
+3. **Security** 탭에서 **Edit**을 클릭한 다음 **Add**를 클릭합니다.
+4. **위치**를 클릭합니다. **위치** 대화 상자에서 로컬 서버를 선택 하 고 **확인**을 클릭 합니다.
 
     ![](configuring-a-web-server-for-web-deploy-publishing-offline-deployment/_static/image8.png)
 5. **사용자 또는 그룹 선택** 대화 상자에서 **IIS\_iusrs**를 입력 하 고 **이름 확인**을 클릭 한 다음 **확인**을 클릭 합니다.

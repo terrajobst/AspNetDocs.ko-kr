@@ -10,28 +10,28 @@ msc.legacyurl: /signalr/overview/getting-started/tutorial-getting-started-with-s
 msc.type: authoredcontent
 ms.topic: tutorial
 ms.openlocfilehash: 5671e4f0123ca2b0cb5314336cf4411467feac70
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74600480"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78431621"
 ---
 # <a name="tutorial-real-time-chat-with-signalr-2-and-mvc-5"></a>자습서: SignalR 2 및 MVC 5와 실시간 채팅
 
 이 자습서에서는 ASP.NET SignalR 2를 사용 하 여 실시간 채팅 응용 프로그램을 만드는 방법을 보여 줍니다. MVC 5 응용 프로그램에 SignalR를 추가 하 고 메시지를 보내고 표시 하는 채팅 보기를 만듭니다.
 
-이 자습서에서는 다음과 같은 작업을 수행합니다.
+이 자습서에서는 다음을 수행합니다.
 
 > [!div class="checklist"]
 > * 프로젝트 설정
-> * 예제 실행
+> * 샘플 실행
 > * 코드 검사
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>사전 요구 사항
 
-* **ASP.NET 및 웹 개발** 워크 로드가 포함 된 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) .
+* [ASP.NET 및 웹 개발](https://visualstudio.microsoft.com/downloads/) 워크로드가 있는 **Visual Studio 2017**
 
 ## <a name="set-up-the-project"></a>프로젝트 설정
 
@@ -180,7 +180,7 @@ SignalR chat 응용 프로그램은 두 가지 기본 SignalR 개발 작업을 �
 
 [완료 된 프로젝트 다운로드](https://code.msdn.microsoft.com/Getting-Started-with-c366b2f3)
 
-## <a name="additional-resources"></a>추가 자료
+## <a name="additional-resources"></a>추가 리소스
 
 SignalR에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -192,7 +192,7 @@ SignalR에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
 ## <a name="next-steps"></a>다음 단계
 
-이 자습서에서는 다음과 같은 작업을 수행합니다.
+이 자습서에서는 다음을 수행합니다.
 
 > [!div class="checklist"]
 > * 프로젝트 설정

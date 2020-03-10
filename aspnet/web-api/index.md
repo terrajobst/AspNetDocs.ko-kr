@@ -2,7 +2,7 @@
 uid: web-api/index
 title: ASP.NET Web API - ASP.NET 4.x
 author: rick-anderson
-description: ASP.NET MVC 4를 다운로드 하 고 광범위 한 클라이언트 연결 하는 HTTP 서비스를 빌드하십시오.
+description: ASP.NET MVC 4를 다운로드 하 고 광범위 한 클라이언트에 도달 하는 HTTP 서비스를 빌드합니다.
 ms.author: riande
 ms.date: 01/17/2012
 ms.custom: seoapril2019
@@ -10,11 +10,11 @@ ms.assetid: f571ca7a-c06b-400d-8051-f62f9f0bcc9b
 msc.legacyurl: /web-api
 msc.type: categoryindex
 ms.openlocfilehash: c04719e06c6c0900c8f8268b73f833b525ea3dd6
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59410840"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78449351"
 ---
 # <a name="aspnet-web-api"></a>ASP.NET Web API
 
@@ -26,7 +26,7 @@ ms.locfileid: "59410840"
         - [Web API 2의 작업 결과](overview/getting-started-with-aspnet-web-api/action-results.md)
         - [ASP.NET Web Forms에 Web API 사용](overview/getting-started-with-aspnet-web-api/using-web-api-with-aspnet-web-forms.md)
         - [Web API 도움말 페이지 만들기](overview/getting-started-with-aspnet-web-api/creating-api-help-pages.md)
-        - [실습: ASP.NET Web API 및 Angular.js를 사용 하 여 단일 페이지 응용 프로그램 (SPA) 빌드](overview/getting-started-with-aspnet-web-api/build-a-single-page-application-spa-with-aspnet-web-api-and-angularjs.md)
+        - [실습: ASP.NET Web API 및 Angular.js를 사용하여 SPA(단일 페이지 애플리케이션) 빌드](overview/getting-started-with-aspnet-web-api/build-a-single-page-application-spa-with-aspnet-web-api-and-angularjs.md)
     - [라우팅](overview/web-api-routing-and-actions/index.md)
 
         - [Web API에서 라우팅](overview/web-api-routing-and-actions/routing-in-aspnet-web-api.md)
@@ -101,7 +101,7 @@ ms.locfileid: "59410840"
         - [Web API 2의 인증 필터](overview/security/authentication-filters.md)
         - [Web API의 기본 인증](overview/security/basic-authentication.md)
         - [Web API의 폼 인증](overview/security/forms-authentication.md)
-        - [통합 Windows 인증](overview/security/integrated-windows-authentication.md)
+        - [Windows 통합 인증](overview/security/integrated-windows-authentication.md)
         - [SSL 사용](overview/security/working-with-ssl-in-web-api.md)
     - [배포 및 호스팅](overview/hosting-aspnet-web-api/index.md)
 
@@ -114,8 +114,8 @@ ms.locfileid: "59410840"
         - [.NET 클라이언트에서 Web API 호출(C#)](overview/advanced/calling-a-web-api-from-a-net-client.md)
         - [Web API의 HTTP 메시지 처리기](overview/advanced/http-message-handlers.md)
         - [Web API의 HttpClient 메시지 처리기](overview/advanced/httpclient-message-handlers.md)
-        - [Web API에서에서 HTML 양식 데이터 보내기: 양식 urlencoded 데이터](overview/advanced/sending-html-form-data-part-1.md)
-        - [Web API에서에서 HTML 양식 데이터 보내기: 파일 업로드 및 다중 파트 MIME](overview/advanced/sending-html-form-data-part-2.md)
+        - [Web API에서 HTML 양식 데이터 보내기: 양식 urlencoded 데이터](overview/advanced/sending-html-form-data-part-1.md)
+        - [Web API에서 HTML 양식 데이터 보내기: 파일 업로드 및 다중 파트 MIME](overview/advanced/sending-html-form-data-part-2.md)
         - [ASP.NET Web API의 HTTP 쿠키](overview/advanced/http-cookies.md)
     - [릴리스](overview/releases/index.md)
 
@@ -141,10 +141,10 @@ ms.locfileid: "59410840"
     - [개요 및 시작](videos/getting-started/index.md)
 
         - [ASP.NET Web API](videos/getting-started/aspnet-web-api.md)
-        - [ASP.NET Web API, 1 부: 첫 번째 Web API](videos/getting-started/your-first-web-api.md)
-        - [ASP.NET Web API, 2 부: 데이터 가져오기](videos/getting-started/getting-data.md)
-        - [ASP.NET Web API, 3 부: 삭제 및 업데이트](videos/getting-started/delete-and-update.md)
-        - [ASP.NET Web API, 4 부: 페이징 및 쿼리](videos/getting-started/paging-and-querying.md)
-        - [ASP.NET Web API, 5 부: 사용자 지정 유효성 검사](videos/getting-started/custom-validation.md)
-        - [ASP.NET Web API, 6 부: 권한 부여](videos/getting-started/authorization.md)
+        - [ASP.NET Web API, 1부: 첫 번째 Web API](videos/getting-started/your-first-web-api.md)
+        - [ASP.NET Web API, 2부: 데이터 가져오기](videos/getting-started/getting-data.md)
+        - [ASP.NET Web API, 3부: 삭제 및 업데이트](videos/getting-started/delete-and-update.md)
+        - [ASP.NET Web API, 4부: 페이징 및 쿼리](videos/getting-started/paging-and-querying.md)
+        - [ASP.NET Web API, 5부: 사용자 지정 유효성 검사](videos/getting-started/custom-validation.md)
+        - [ASP.NET Web API, 6부: 권한 부여](videos/getting-started/authorization.md)
 - [Web API 샘플 목록](samples-list.md)

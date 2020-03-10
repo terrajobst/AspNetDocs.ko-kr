@@ -9,11 +9,11 @@ ms.assetid: e4ba9786-734c-4eb3-91bb-089793325d0d
 msc.legacyurl: /mvc/overview/older-versions-1/movie-database/create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 0ce8161d29a8ab4005e2b20462b08c9e10ee815a
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74595737"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78435773"
 ---
 # <a name="create-a-movie-database-application-in-15-minutes-with-aspnet-mvc-vb"></a>ASP.NET MVC를 사용하여 15분 만에 영화 데이터베이스 애플리케이션 만들기(VB)
 
@@ -49,7 +49,7 @@ Active Server 페이지 또는 ASP.NET으로 작업 한 경우 ASP.NET MVC를 �
 4. ASP.NET MVC 컨트롤러 만들기
 5. ASP.NET MVC 뷰 만들기
 
-## <a name="preliminaries"></a>Preliminaries
+## <a name="preliminaries"></a>준비 단계
 
 ASP.NET MVC 응용 프로그램을 빌드하려면 Visual Studio 2008 또는 Visual Web Developer 2008 Express가 필요 합니다. ASP.NET MVC 프레임 워크도 다운로드 해야 합니다.
 
@@ -122,9 +122,9 @@ Visual Studio를 사용 하 여 새 MVC 응용 프로그램을 만들면 샘플 
 
 | **열 이름** | **데이터 형식** | **Null 허용** |
 | --- | --- | --- |
-| ID | 정수 | False |
-| 제목 | Nvarchar (100) | False |
-| Idm | Nvarchar (100) | False |
+| Id | Int | False |
+| 제목 | Nvarchar(100) | False |
+| 감독 | Nvarchar(100) | False |
 | DateReleased | DateTime | False |
 
 첫 번째 열인 Id 열에는 두 개의 특수 속성이 있습니다. 먼저 Id 열을 기본 키 열로 표시 해야 합니다. Id 열을 선택한 후 **기본 키 설정** 단추를 클릭 합니다 (키 처럼 보이는 아이콘). 둘째, Id 열을 id 열로 표시 해야 합니다. 속성 창 열에서 Id 사양 섹션으로 스크롤하고 확장 합니다. **Is Identity** 속성을 **Yes**값으로 변경 합니다. 작업이 완료 되 면 그림 4와 같이 테이블이 표시 됩니다.
@@ -158,7 +158,7 @@ Visual Studio를 사용 하 여 새 MVC 응용 프로그램을 만들면 샘플 
 추가 단추를 클릭 하면 엔터티 데이터 모델 마법사가 나타납니다 (그림 6 참조). 마법사를 완료 하려면 다음 단계를 수행 합니다.
 
 1. **모델 콘텐츠 선택** 단계에서 **데이터베이스에서 생성** 옵션을 선택 합니다.
-2. **데이터 연결 선택** 단계에서 연결 설정에 대해 *MoviesDB* 데이터 연결 및 이름 *MoviesDBEntities* 을 사용 합니다. **다음** 단추를 클릭 합니다.
+2. **데이터 연결 선택** 단계에서 연결 설정에 대해 *MoviesDB* 데이터 연결 및 이름 *MoviesDBEntities* 을 사용 합니다. **다음** 단추를 클릭합니다.
 3. **데이터베이스 개체 선택** 단계에서 테이블 노드를 확장 하 고 동영상 테이블을 선택 합니다. *MovieApp* 네임 스페이스를 입력 하 고 **마침** 단추를 클릭 합니다.
 
 [새 프로젝트 대화 상자 ![](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image6.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/_static/image11.png)
@@ -179,7 +179,7 @@ Visual Studio를 사용 하 여 새 MVC 응용 프로그램을 만들면 샘플 
 
 다음 단계는 ASP.NET MVC 컨트롤러를 만드는 것입니다. 컨트롤러는 사용자가 ASP.NET MVC 응용 프로그램과 상호 작용 하는 방법을 제어 해야 합니다.
 
-다음 단계를 수행하십시오.
+다음 단계를 수행하세요.
 
 1. 솔루션 탐색기 창에서 Controllers 폴더를 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션 **추가, 컨트롤러**를 선택 합니다.
 2. 컨트롤러 추가 대화 상자에서 이름 *HomeController* 을 입력 하 고 **Create, Update 및 Details 시나리오에 대 한 작업 메서드 추가** 라는 확인란을 선택 합니다 (그림 8 참조).
@@ -211,7 +211,7 @@ Index () 메서드를 사용 하 여 영화 데이터베이스 테이블의 레�
 
 [!code-vb[Main](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/samples/sample2.vb)]
 
-Index () 메서드는 Index 라는 뷰를 반환 합니다. 동영상 데이터베이스 레코드 목록을 표시 하려면이 뷰를 만들어야 합니다. 다음 단계를 수행하십시오.
+Index () 메서드는 Index 라는 뷰를 반환 합니다. 동영상 데이터베이스 레코드 목록을 표시 하려면이 뷰를 만들어야 합니다. 다음 단계를 수행하세요.
 
 **뷰 추가** 대화 상자를 열기 전에 프로젝트를 빌드하거나 ( **빌드, 솔루션 빌드**) 메뉴 옵션을 선택 해야 합니다. 그렇지 않으면 **데이터 클래스 보기** 드롭다운 목록에 클래스가 표시 되지 않습니다.
 
@@ -257,7 +257,7 @@ Home 컨트롤러는 Create () 라는 두 개의 메서드를 포함 합니다. 
 
 [!code-vb[Main](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb/samples/sample4.vb)]
 
-Visual Studio를 사용 하면 새 영화 데이터베이스 레코드를 만들기 위한 양식을 쉽게 만들 수 있습니다 (그림 12 참조). 다음 단계를 수행하십시오.
+Visual Studio를 사용 하면 새 영화 데이터베이스 레코드를 만들기 위한 양식을 쉽게 만들 수 있습니다 (그림 12 참조). 다음 단계를 수행하세요.
 
 1. 코드 편집기에서 Create () 메서드를 마우스 오른쪽 단추로 클릭 하 고 메뉴 옵션 **뷰 추가**를 선택 합니다.
 2. **강력한 형식의 뷰 만들기** 확인란을 선택 했는지 확인 합니다.

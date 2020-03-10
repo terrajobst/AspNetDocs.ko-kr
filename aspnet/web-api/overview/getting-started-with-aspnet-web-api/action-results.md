@@ -10,11 +10,11 @@ ms.assetid: 2fc4797c-38ef-4cc7-926c-ca431c4739e8
 msc.legacyurl: /web-api/overview/getting-started-with-aspnet-web-api/action-results
 msc.type: authoredcontent
 ms.openlocfilehash: f00ac0db453053e53d6d6942dd1557b409f4167b
-ms.sourcegitcommit: 4b324a11131e38f920126066b94ff478aa9927f8
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "70985844"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78448775"
 ---
 # <a name="action-results-in-web-api-2"></a>Web API 2의 작업 결과
 
@@ -42,7 +42,7 @@ Web API 컨트롤러 작업은 다음 중 하나를 반환할 수 있습니다.
 
 ## <a name="void"></a>void
 
-반환 형식이 `void`이면 웹 API는 상태 코드 204 (콘텐츠 없음)가 포함 된 빈 HTTP 응답을 반환 합니다.
+반환 형식이 `void`이면 Web API는 상태 코드 204 (내용 없음)이 포함 된 빈 HTTP 응답을 반환 합니다.
 
 컨트롤러 예:
 

@@ -2,22 +2,22 @@
 uid: web-forms/videos/authentication/index
 title: 인증 | Microsoft Docs
 author: rick-anderson
-description: 구현 및 ASP.NET 응용 프로그램에서 보안 (인증)를 관리 하는 방법입니다.
+description: ASP.NET 응용 프로그램에서 보안 (인증)을 구현 하 고 관리 하는 방법입니다.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 4a365e58-9b18-4bd2-bfd5-6981e7f2e179
 msc.legacyurl: /web-forms/videos/authentication
 msc.type: chapter
 ms.openlocfilehash: 9802eee31ecafeb17a09d6c154d811b3d0bb01de
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65133748"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78421721"
 ---
 # <a name="authentication"></a>인증
 
-> 구현 및 ASP.NET 응용 프로그램에서 보안 (인증)를 관리 하는 방법입니다.
+> ASP.NET 응용 프로그램에서 보안 (인증)을 구현 하 고 관리 하는 방법입니다.
 
 - [ASP.NET에서 기본 폼 인증 사용](using-basic-forms-authentication-in-aspnet.md)
 - [폼 인증 속성 변경](how-to-change-the-forms-authentication-properties.md)

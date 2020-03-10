@@ -4,14 +4,14 @@
 
 ## <a name="how-to-make-a-simple-correction-or-suggestion"></a>간단한 수정 또는 제안을 수행하는 방법
 
-문서는 리포지토리에 Markdown 파일로 저장됩니다. Markdown 파일의 내용에 대한 간단한 변경 작업은 브라우저 창의 오른쪽 상단 모서리에서 **편집** 링크를 선택하여 수행할 수 있습니다. (축소된 브라우저 창에서 **편집** 링크를 표시하려면 **옵션** 막대를 확장합니다.) 끌어오기 요청(PR)을 만들려면 지시를 따르세요. Microsoft에서 PR을 살펴보고 변경 사항을 수락하거나 제안합니다.
+문서는 리포지토리에 Markdown 파일로 저장됩니다. Markdown 파일의 내용에 대한 간단한 변경 작업은 브라우저 창의 오른쪽 상단 모서리에서 **편집** 링크를 선택하여 수행할 수 있습니다. (좁은 브라우저 창에서 **옵션** 모음을 확장 하 여 **편집** 링크를 표시 합니다.) 지침에 따라 끌어오기 요청 (PR)을 만듭니다. Microsoft에서 PR을 살펴보고 변경 사항을 수락하거나 제안합니다.
 
 ## <a name="how-to-make-a-more-complex-submission"></a>더 복잡한 제출을 수행하는 방법
 
 [Git 및 GitHub.com](https://guides.github.com/activities/hello-world/)의 기본적인 내용을 이해하고 있어야 합니다.
 
-* 기존 문서 변경 또는 새 문서 생성처럼 원하는 작업을 설명하는 [문제](https://github.com/aspnet/AspNetDocs/issues/new)를 엽니다. Microsoft에서는 새 항목 제안의 개요를 요청하는 경우가 많습니다. 많은 시간을 투자하기 전에 팀의 승인을 기다리세요.
-* 포크 합니다 [aspnet/AspNetDocs](https://github.com/aspnet/AspNetDocs/) 리포지토리 변경 내용을 분기를 만듭니다.
+* 기존 문서 변경 또는 새 문서 생성처럼 원하는 작업을 설명하는 [문제](https://github.com/dotnet/AspNetDocs/issues/new)를 엽니다. Microsoft에서는 새 항목 제안의 개요를 요청하는 경우가 많습니다. 많은 시간을 투자하기 전에 팀의 승인을 기다리세요.
+* [Dotnet/AspNetDocs](https://github.com/dotnet/AspNetDocs/) 리포지토리를 포크 하 고 변경에 대 한 분기를 만듭니다.
 * 마스터에게 변경 내용이 포함된 PR을 제출합니다.
 * PR에 'cla-required' 레이블이 할당되어 있으면 [CLA(기여 사용권 계약)를 작성](https://cla.dotnetfoundation.org/)하세요.
 * PR 피드백에 응답합니다.
@@ -24,11 +24,11 @@ Visual Studio Code를 사용하여 ASP.NET 문서에 참여하는 경우 [Docs A
 
 ## <a name="markdown-syntax"></a>Markdown 구문
 
-문서는 [GitHub-flavored Markdown(GFM)](https://guides.github.com/features/mastering-markdown/)의 상위 집합인 [DocFx-flavored Markdown](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html)으로 작성됩니다. ASP.NET 설명서에서 일반적으로 사용 하는 UI 기능에 대 한 DFM 구문 예제를 참조 하세요 [메타 데이터 및 Markdown 템플릿](https://github.com/dotnet/docs/blob/master/styleguide/template.md) .NET Docs 리포지토리 스타일 가이드에서.
+문서는 [GitHub-flavored Markdown(GFM)](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html)의 상위 집합인 [DocFx-flavored Markdown](https://guides.github.com/features/mastering-markdown/)으로 작성됩니다. ASP.NET 설명서에서 일반적으로 사용 되는 UI 기능에 대 한 DFM 구문 예제는 .NET Docs 리포지토리 스타일 가이드에서 [Metadata And Markdown Template](https://github.com/dotnet/docs/blob/master/styleguide/template.md) 을 참조 하세요.
 
 ## <a name="folder-structure-conventions"></a>폴더 구조 규칙
 
-각 Markdown 파일에는 이미지 폴더와 샘플 코드 폴더가 있을 수 있습니다. 경우 아티클이 [signalr/overview/advanced/dependency-injection.md](https://github.com/aspnet/AspNetDocs/blob/master/aspnet/signalr/overview/advanced/dependency-injection.md), 이미지에 [signalr/개요/고급/종속성 삽입 /\_정적](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/signalr/overview/advanced/dependency-injection/_static) 및 샘플 앱 프로젝트 파일이 [signalr/개요/고급/종속성 주입/샘플](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/signalr/overview/advanced/dependency-injection/samples)합니다. 이미지를 *signalr/overview/advanced/dependency-injection.md* 파일이 다음 Markdown에서 렌더링 됩니다.
+각 Markdown 파일에는 이미지 폴더와 샘플 코드 폴더가 있을 수 있습니다. 아티클이 [signalr/overview/advanced/](https://github.com/dotnet/AspNetDocs/blob/master/aspnet/signalr/overview/advanced/dependency-injection.md) [\_signalr](https://github.com/dotnet/AspNetDocs/tree/master/aspnet/signalr/overview/advanced/dependency-injection/_static) 인 경우 이미지는 고정 되어 있고 샘플 응용 프로그램 프로젝트 파일은 [signalr/개요/고급/종속성-삽입/샘플](https://github.com/dotnet/AspNetDocs/tree/master/aspnet/signalr/overview/advanced/dependency-injection/samples)에서 사용할 수 있습니다. *Signalr/개요/고급/종속성 주입* 파일의 이미지는 다음 Markdown에 의해 렌더링 됩니다.
 
 ```md
 ![description of image for alt attribute](dependency-injection/_static/image1.png)
@@ -67,11 +67,11 @@ Markdown 파일 이름 및 이미지 파일 이름에는 소문자를 사용하�
 
 ## <a name="code-snippets"></a>코드 조각
 
-문서에는 요점을 설명하는 코드 조각이 포함된 경우가 많습니다. DFM을 사용하여 Markdown 파일에 코드를 복사하거나 별도의 코드 파일을 참조할 수 있습니다. 코드에서 오류 가능성을 최소화하기 위해 가능하면 별도의 코드 파일을 사용하는 것이 좋습니다. 코드 파일 앞에서 설명한 샘플 프로젝트에 대 한 폴더 구조를 사용 하 여 저장소에 저장 됩니다.
+문서에는 요점을 설명하는 코드 조각이 포함된 경우가 많습니다. DFM을 사용하여 Markdown 파일에 코드를 복사하거나 별도의 코드 파일을 참조할 수 있습니다. 코드에서 오류 가능성을 최소화하기 위해 가능하면 별도의 코드 파일을 사용하는 것이 좋습니다. 코드 파일은 앞에서 샘플 프로젝트에 대해 설명한 폴더 구조를 사용 하 여 리포지토리에 저장 됩니다.
 
-다음 예에서는 *configuration/index.md* 파일에서 사용할 [DFM 코드 조각 구문](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#code-snippet)을 설명합니다.
+다음 예에서는 [configuration/index.md](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#code-snippet) 파일에서 사용할 *DFM 코드 조각 구문*을 설명합니다.
 
-전체 코드 파일을 코드 조각으로 렌더링하려면
+전체 코드 파일을 코드 조각으로 렌더링하려면:
 
 ```md
 [!code-csharp[](configuration/index/sample/Program.cs)]
@@ -92,7 +92,7 @@ C# 코드 조각의 경우 [C# 지역](https://docs.microsoft.com/dotnet/csharp/
 [!code-csharp[](configuration/index/sample/Program.cs?name=snippet_Example)]
 ```
 
-렌더링된 코드 조각에서 선택된 줄을 강조 표시하려면(일반적으로 노란색 배경으로 렌더링됨)
+렌더링된 코드 조각에서 선택된 줄을 강조 표시하려면(일반적으로 노란색 배경으로 렌더링됨):
 
 ```md
 [!code-csharp[](configuration/index/sample/Program.cs?name=snippet_Example&highlight=1-3,10,20-25)]
@@ -112,9 +112,9 @@ DocFX 요구 사항:
 
 ### <a name="windows-instructions"></a>Windows 지침
 
-* [DocFX 릴리스](https://github.com/dotnet/docfx/releases)에서 *docfx.zip*을 다운로드하고 압축을 풉니다.
+* *DocFX 릴리스*에서 [docfx.zip](https://github.com/dotnet/docfx/releases)을 다운로드하고 압축을 풉니다.
 * PATH에 DocFX를 추가합니다.
-* 명령 셸에서 이동 합니다 *aspnet* 포함 된 폴더를 *docfx.json* 파일을 다음 명령을 실행:
+* 명령 셸에서 *docfx. json* 파일이 포함 된 *aspnet* 폴더로 이동 하 고 다음 명령을 실행 합니다.
 
   ```console
   docfx --serve
@@ -139,7 +139,7 @@ DocFX 요구 사항:
   alias docfx-serve='mono $HOME/bin/docfx/docfx.exe --serve'
   ```
 
-* 명령 셸에서 이동 합니다 *aspnet* 포함 된 폴더를 *docfx.json* 파일을 작성 하 고 해당 별칭을 통해 문서를 제공 하려면 다음 명령을 실행:
+* 명령 셸에서 *docfx. json* 파일이 포함 된 *aspnet* 폴더로 이동 하 고 다음 명령을 실행 하 여 해당 별칭을 통해 문서를 빌드하고 제공 합니다.
 
   ```console
   docfx-serve
@@ -149,7 +149,7 @@ DocFX 요구 사항:
 
 ## <a name="voice-and-tone"></a>어투 및 어조
 
-가장 폭넓은 잠재 고객이 쉽게 이해할 수 있는 설명서를 작성하는 것이 목표입니다. 이에 따라 Microsoft는 기여자가 지켜주었으면 하는 문장체에 대한 지침을 정했습니다. 자세한 내용은 [어투 및 어조 지침](https://github.com/dotnet/docs/blob/master/styleguide/voice-tone.md) .NET 리포지토리에 있습니다.
+가장 폭넓은 잠재 고객이 쉽게 이해할 수 있는 설명서를 작성하는 것이 목표입니다. 이에 따라 Microsoft는 기여자가 지켜주었으면 하는 문장체에 대한 지침을 정했습니다. 자세한 내용은 .NET 리포지토리의 [음성 및 톤 지침](https://github.com/dotnet/docs/blob/master/styleguide/voice-tone.md) 을 참조 하세요.
 
 ## <a name="microsoft-writing-style-guide"></a>Microsoft 문장체 가이드
 
@@ -157,4 +157,4 @@ DocFX 요구 사항:
 
 ## <a name="redirects"></a>리디렉션
 
-문서를 삭제하거나, 파일 이름을 변경하거나, 다른 폴더로 이동할 경우 해당 문서를 책갈피에 추가한 사람이 *404 찾을 수 없음* 오류를 받지 않도록 리디렉션을 만드세요. [마스터 리디렉션 파일](https://github.com/aspnet/AspNetDocs/blob/master/.openpublishing.redirection.json)에 리디렉션을 추가합니다.
+문서를 삭제하거나, 파일 이름을 변경하거나, 다른 폴더로 이동할 경우 해당 문서를 책갈피에 추가한 사람이 *404 찾을 수 없음* 오류를 받지 않도록 리디렉션을 만드세요. [마스터 리디렉션 파일](https://github.com/dotnet/AspNetDocs/blob/master/.openpublishing.redirection.json)에 리디렉션을 추가합니다.

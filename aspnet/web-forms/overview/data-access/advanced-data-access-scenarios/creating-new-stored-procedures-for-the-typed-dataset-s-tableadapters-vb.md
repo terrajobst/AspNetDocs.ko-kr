@@ -9,11 +9,11 @@ ms.assetid: a5a4a9ba-d18d-489a-a6b0-a3c26d6b0274
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb
 msc.type: authoredcontent
 ms.openlocfilehash: a7cc890038e5bb4eb61c7c3b808154c196ab2423
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74605997"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78428711"
 ---
 # <a name="creating-new-stored-procedures-for-the-typed-datasets-tableadapters-vb"></a>형식화된 데이터 세트의 TableAdapter에 대한 새로운 저장 프로시저 만들기(VB)
 
@@ -310,7 +310,7 @@ GridView를 개선 하는지 여부에 관계 없이 브라우저에서 페이�
 
 행복 한 프로그래밍
 
-## <a name="further-reading"></a>추가 정보
+## <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -320,7 +320,7 @@ GridView를 개선 하는지 여부에 관계 없이 브라우저에서 페이�
 - [저장 프로시저: 개요](http://www.sqlteam.com/item.asp?ItemID=563)
 - [저장 프로시저 작성](http://www.4guysfromrolla.com/webtech/111499-1.shtml)
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

@@ -9,11 +9,11 @@ ms.assetid: 1cd91055-84bc-42c6-9d80-646f41429d4d
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/deploying-extra-files
 msc.type: authoredcontent
 ms.openlocfilehash: eaa3141c22980f0c816e2f33b5597ac9fe69c23c
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74594902"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78441365"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-deploying-extra-files"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 추가 파일 배포
 
@@ -77,11 +77,11 @@ ms.locfileid: "74594902"
 
 이는 ASP.NET 웹 응용 프로그램을 타사 호스팅 공급자에 배포 하는 방법에 대 한 자습서 시리즈를 완료 합니다. 이러한 자습서에서 설명 하는 항목에 대 한 자세한 내용은 [ASP.NET Deployment Content Map](https://go.microsoft.com/fwlink/p/?LinkId=282413)을 참조 하십시오.
 
-## <a name="more-information"></a>추가 정보
+## <a name="more-information"></a>자세한 정보
 
 MSBuild 파일을 사용 하는 방법을 알고 있는 경우에는 *pubxml* 파일 (프로필 관련 작업의 경우) *또는 프로젝트에* 대 한 코드를 작성 하 여 다른 여러 배포 작업을 자동화할 수 있습니다 (모든 프로필에 적용 되는 작업의 경우). *Pubxml* 및. n e t *. .targets* 파일에 대 한 자세한 내용은 [방법: Visual Studio 웹 프로젝트의 게시 프로필 (pubxml) 파일 및 Wpp. .Targets 파일에서 배포 설정 편집](https://msdn.microsoft.com/library/ff398069)을 참조 하세요. MSBuild 코드에 대 한 기본적인 소개는 엔터프라이즈 배포 시리즈의 **프로젝트 파일 분석** [: 프로젝트 파일 이해](../web-deployment-in-the-enterprise/understanding-the-project-file.md)를 참조 하세요. MSBuild 파일을 사용 하 여 사용자 고유의 시나리오에 대 한 작업을 수행 하는 방법에 대 한 자세한 내용은 [Microsoft Build Engine 내에서 msbuild 및 Team Foundation Build를 사용 하](http://msbuildbook.com) 여 Sayed Ibraham Hashimi 및 William (영문)을 참조 하세요.
 
-## <a name="acknowledgements"></a>승인
+## <a name="acknowledgements"></a>감사의 말
 
 이 자습서 시리즈의 내용에 대해 상당한 기여를 수행한 다음 사용자에 게 감사 합니다.
 

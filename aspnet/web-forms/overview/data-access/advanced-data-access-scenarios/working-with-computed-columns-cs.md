@@ -9,11 +9,11 @@ ms.assetid: 57459065-ed7c-4dfe-ac9c-54c093abc261
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/working-with-computed-columns-cs
 msc.type: authoredcontent
 ms.openlocfilehash: ad6a96f2721510c2478f707c8eed018ae797f27a
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74603169"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78427121"
 ---
 # <a name="working-with-computed-columns-c"></a>계산 열 작업(C#)
 
@@ -111,7 +111,7 @@ Microsoft SQL Server 계산 열에 대 한 자세한 내용은 [기술 문서](h
 
 ## <a name="step-4-including-the-computed-column-in-the-tableadapter-s-main-query"></a>4 단계: TableAdapter 주 쿼리에 계산 열 포함
 
-이제 `FullContactName` 계산 열을 포함 하도록 3 단계에서 만든 TableAdapter 및 DataTable을 업데이트 해야 합니다. 이 작업은 다음 두 단계로 구성됩니다.
+이제 `FullContactName` 계산 열을 포함 하도록 3 단계에서 만든 TableAdapter 및 DataTable을 업데이트 해야 합니다. 여기에는 다음 두 단계가 포함됩니다.
 
 1. `Suppliers_Select` 저장 프로시저를 업데이트 하 여 `FullContactName` 계산 열을 반환 합니다.
 2. 해당 `FullContactName` 열을 포함 하도록 DataTable을 업데이트 합니다.
@@ -218,7 +218,7 @@ GridView와 ObjectDataSource를 편집한 후에는 해당 선언적 태그가 �
 
 행복 한 프로그래밍
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

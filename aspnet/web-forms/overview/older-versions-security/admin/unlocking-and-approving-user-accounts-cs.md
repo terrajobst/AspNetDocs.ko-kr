@@ -9,11 +9,11 @@ ms.assetid: 5346aab1-9974-489f-a065-ae3883b8a350
 msc.legacyurl: /web-forms/overview/older-versions-security/admin/unlocking-and-approving-user-accounts-cs
 msc.type: authoredcontent
 ms.openlocfilehash: c19f7dfac0ddd12c2b4f3388a71a8ca0f71cbb18
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74580142"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78438887"
 ---
 # <a name="unlocking-and-approving-user-accounts-c"></a>사용자 계정 잠금 해제 및 승인(C#)
 
@@ -184,7 +184,7 @@ CreateUserWizard 컨트롤에서 전자 메일을 보내려면 해당 `MailDefin
 
 행복 한 프로그래밍
 
-### <a name="about-the-author"></a>작성자 정보
+### <a name="about-the-author"></a>저자 정보
 
 Scott Mitchell는 여러 ASP/ASP. NET books의 작성자와 4GuysFromRolla.com의 창립자가 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 *[24 시간 이내에 ASP.NET 2.0을 sams teach yourself](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)* 것입니다. Scott은 [mitchell@4guysfromrolla.com](mailto:mitchell@4guysfromrolla.com) 또는 [http://ScottOnWriting.NET](http://scottonwriting.net/)의 블로그를 통해 연결할 수 있습니다.
 

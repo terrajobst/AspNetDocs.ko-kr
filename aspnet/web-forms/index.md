@@ -2,20 +2,20 @@
 uid: web-forms/index
 title: ASP.NET Web Forms | Microsoft Docs
 author: rick-anderson
-description: Visual Web Developer Express를 다운로드 및 신속 하 게 웹 environ 시각적 디자인에서 ASP.NET Web Forms에서 이해 하기 쉬운 컨트롤을 사용 하 여 앱을 빌드하는 방법을 알아보세요...
+description: Visual Web Developer Express & 다운로드 visual design environ에서 ASP.NET Web Forms의 이해 하기 쉬운 컨트롤을 사용 하 여 웹 앱을 신속 하 게 빌드하는 방법을 알아봅니다.
 ms.author: riande
 ms.date: 08/08/2011
 ms.assetid: 7e4ce5d2-ab22-44f0-9825-c12eed7b8fcb
 msc.legacyurl: /web-forms
 msc.type: categoryindex
 ms.openlocfilehash: 623df5d3ffe357f42d72ee0a33bc50aa60a8c4d0
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59397008"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78446891"
 ---
-# <a name="aspnet-web-forms"></a>ASP.NET Web Forms
+# <a name="aspnet-web-forms"></a>ASP.NET 웹 양식
 
 - [지침](overview/index.md)
 
@@ -78,7 +78,7 @@ ms.locfileid: "59397008"
 
             - [Visual Studio 2010을 사용하여 엔터프라이즈 시나리오에서 웹 애플리케이션 배포](overview/deployment/deploying-web-applications-in-enterprise-scenarios/deploying-web-applications-in-enterprise-scenarios.md)
             - [엔터프라이즈 웹 배포: 시나리오 개요](overview/deployment/deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md)
-            - [응용 프로그램 수명 주기 관리: 개발부터 프로덕션까지](overview/deployment/deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production.md)
+            - [애플리케이션 수명 주기 관리: 개발부터 프로덕션까지](overview/deployment/deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production.md)
         - [ASP.NET 4 - 엔터프라이즈 배포 시리즈 1](overview/deployment/web-deployment-in-the-enterprise/index.md)
 
             - [기업에서 웹 배포](overview/deployment/web-deployment-in-the-enterprise/web-deployment-in-the-enterprise.md)
@@ -133,13 +133,13 @@ ms.locfileid: "59397008"
         - [ASP.NET 4 - Tailspin Spyworks](overview/older-versions-getting-started/tailspin-spyworks/index.md)
 
             - [1부: 파일-> 새 프로젝트](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-1.md)
-            - [2부: 데이터 액세스 계층](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-2.md)
-            - [3 부: 레이아웃 및 범주 메뉴](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-3.md)
-            - [4 부: 제품 목록](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-4.md)
-            - [5 부: 비즈니스 논리](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-5.md)
-            - [6 부: ASP.NET 멤버 자격](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-6.md)
-            - [7 부: 추가 기능](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-7.md)
-            - [8 부: 최종 페이지, 예외 처리 및 결론](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-8.md)
+            - [2부: 데이터 액세스 레이어](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-2.md)
+            - [3부: 레이아웃 및 범주 메뉴](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-3.md)
+            - [4부: 제품 나열](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-4.md)
+            - [5부: 비즈니스 논리](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-5.md)
+            - [6부: ASP.NET 멤버 자격](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-6.md)
+            - [7부: 기능 추가](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-7.md)
+            - [8부: 최종 페이지, 예외 처리 및 결론](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-8.md)
         - [ASP.NET 4 - Entity Framework 4 및 Web Forms 시작](overview/older-versions-getting-started/getting-started-with-ef/index.md)
 
             - [Entity Framework 4.0 Database First 시작](overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1.md)
@@ -152,9 +152,9 @@ ms.locfileid: "59397008"
             - [Entity Framework 4.0 Database First 시작 - 8부](overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-8.md)
         - [ASP.NET 4 - Entity Framework 4 및 Web Forms 계속](overview/older-versions-getting-started/continuing-with-ef/index.md)
 
-            - [Entity Framework 4.0 및 ObjectDataSource 컨트롤, 1 부: 시작 하기](overview/older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started.md)
-            - [Entity Framework 4.0 및 ObjectDataSource 컨트롤, 2 부: 비즈니스 논리 레이어 및 단위 테스트 추가](overview/older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests.md)
-            - [Entity Framework 4.0 및 ObjectDataSource 컨트롤, 3 부: 정렬 및 필터링](overview/older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering.md)
+            - [Entity Framework 4.0 및 ObjectDataSource 컨트롤, 1부: 시작](overview/older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started.md)
+            - [Entity Framework 4.0 및 the ObjectDataSource 컨트롤, 2부: 비즈니스 논리 레이어 및 단위 테스트 추가](overview/older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests.md)
+            - [Entity Framework 4.0 및 ObjectDataSource 컨트롤, 3부: 정렬 및 필터링](overview/older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering.md)
             - [ASP.NET 4에서 Entity Framework 4.0으로 동시성 처리](overview/older-versions-getting-started/continuing-with-ef/handling-concurrency-with-the-entity-framework-in-an-asp-net-web-application.md)
             - [ASP.NET 4에서 Entity Framework 4.0으로 성능 극대화](overview/older-versions-getting-started/continuing-with-ef/maximizing-performance-with-the-entity-framework-in-an-asp-net-web-application.md)
             - [Entity Framework 4.0의 새로운 기능](overview/older-versions-getting-started/continuing-with-ef/what-s-new-in-the-entity-framework-4.md)
@@ -358,7 +358,7 @@ ms.locfileid: "59397008"
 
             - [암호 강도 테스트(C#)](overview/ajax-control-toolkit/passwordstrength/testing-the-strength-of-a-password-cs.md)
             - [암호 강도 테스트(VB)](overview/ajax-control-toolkit/passwordstrength/testing-the-strength-of-a-password-vb.md)
-        - [Popup](overview/ajax-control-toolkit/popup/index.md)
+        - [팝업](overview/ajax-control-toolkit/popup/index.md)
 
             - [여러 팝업 컨트롤 사용(C#)](overview/ajax-control-toolkit/popup/using-multiple-popup-controls-cs.md)
             - [UpdatePanel을 사용하여 팝업 컨트롤에서 포스트백 처리(C#)](overview/ajax-control-toolkit/popup/handling-postbacks-from-a-popup-control-with-an-updatepanel-cs.md)
@@ -680,7 +680,7 @@ ms.locfileid: "59397008"
         - [ASP.NET 웹 페이지에서 브라우저 기능 검색](videos/how-do-i/how-do-i-detect-browser-capabilities-in-aspnet-web-pages.md)
         - [ASP.NET 서버 컨트롤을 렌더링에 사용되는 어댑터에 매핑](videos/how-do-i/how-do-i-map-an-aspnet-server-control-to-the-adaptor-used-to-render-it.md)
         - [쿼리 문자열을 사용하여 한 페이지에서 다른 페이지로 정보 전달](videos/how-do-i/how-do-i-pass-information-from-one-page-to-another-using-a-query-string.md)
-        - [Aspnet를 사용 하 여\_merge.exe 유틸리티 어셈블리 병합](videos/how-do-i/how-do-i-use-the-aspnet_mergeexe-utility-to-merge-assemblies.md)
+        - [Aspnet\_merge .exe 유틸리티를 사용 하 여 어셈블리를 병합 합니다.](videos/how-do-i/how-do-i-use-the-aspnet_mergeexe-utility-to-merge-assemblies.md)
         - [ASP.NET에서 교차 페이지 포스트백 구현](videos/how-do-i/how-do-i-implement-a-cross-page-postback-in-aspnet.md)
         - [프로그래밍 방식으로 ASP.NET 웹 페이지에 컨트롤 추가](videos/how-do-i/how-do-i-add-controls-to-an-aspnet-web-page-programmatically.md)
         - [숨겨진 필드를 사용하여 클라이언트 쪽 정보 저장 및 조작](videos/how-do-i/how-do-i-use-a-hidden-field-to-store-and-manipulate-client-side-information.md)
@@ -828,16 +828,16 @@ ms.locfileid: "59397008"
         - [[ASP.NET 2.0 소개:] ASP.NET 2.0 기본 사항](videos/migrating/intro-to-aspnet-20-aspnet-20-fundamentals.md)
         - [[ASP.NET 2.0 소개:] 사용자 인터페이스 요소](videos/migrating/intro-to-aspnet-20-user-interface-elements.md)
         - [[마이그레이션] 클래식 ASP에서 ASP.NET으로](videos/migrating/migrating-from-classic-asp-to-aspnet.md)
-        - [JSP 개발자 용 ASP.NET 소개: ASP.NET 2.0 시작](videos/migrating/intro-to-aspnet-for-jsp-developers-welcome-to-aspnet-20.md)
-        - [JSP 개발자 용 ASP.NET 소개: 응용 프로그램 빌드](videos/migrating/intro-to-aspnet-for-jsp-developers-building-applications.md)
-        - [ColdFusion 개발자 용 ASP.NET 소개: ASP.NET 목록에 추가](videos/migrating/intro-to-aspnet-for-coldfusion-developers-adding-aspnet-to-your-repertoire.md)
-        - [ColdFusion 개발자 용 ASP.NET 소개: ASP.NET 응용 프로그램 빌드](videos/migrating/introduction-to-aspnet-for-coldfusion-developers-building-an-aspnet-application.md)
+        - [JSP 개발자용 ASP.NET 소개: ASP.NET 2.0 시작](videos/migrating/intro-to-aspnet-for-jsp-developers-welcome-to-aspnet-20.md)
+        - [JSP 개발자용 ASP.NET 소개: 애플리케이션 빌드](videos/migrating/intro-to-aspnet-for-jsp-developers-building-applications.md)
+        - [ColdFusion 개발자용 ASP.NET 소개: 목록에 ASP.NET 추가](videos/migrating/intro-to-aspnet-for-coldfusion-developers-adding-aspnet-to-your-repertoire.md)
+        - [ColdFusion 개발자용 ASP.NET 소개: ASP.NET 애플리케이션 빌드](videos/migrating/introduction-to-aspnet-for-coldfusion-developers-building-an-aspnet-application.md)
         - [PHP와 Windows 플랫폼 간 상호 운용](videos/migrating/interop-between-php-and-the-windows-platform.md)
     - [2.0 애플리케이션 빌드](videos/building-20-applications/index.md)
 
         - [[강좌 1:] Visual Web Developer Express 시작](videos/building-20-applications/lesson-1-getting-started-with-visual-web-developer-express.md)
         - [[강좌 2:] Web Forms 사용자 인터페이스 만들기](videos/building-20-applications/lesson-2-creating-a-web-forms-user-interface.md)
-        - [[단원 3:] 이벤트 및 포스트백에 자세히 이해](videos/building-20-applications/lesson-3-understanding-more-about-events-and-postback.md)
+        - [[단원 3:] 이벤트 및 다시 게시에 대해 자세히 이해](videos/building-20-applications/lesson-3-understanding-more-about-events-and-postback.md)
         - [[강좌 4:] 웹 애플리케이션 상태 이해](videos/building-20-applications/lesson-4-understanding-web-application-state.md)
         - [[강좌 5:] 웹 사이트 디버깅 및 추적](videos/building-20-applications/lesson-5-debugging-and-tracing-your-website.md)
         - [[강좌 6:] 스타일시트 및 마스터 페이지 작업](videos/building-20-applications/lesson-6-working-with-stylesheets-and-master-pages.md)
@@ -864,7 +864,7 @@ ms.locfileid: "59397008"
         - [새로운 멀티 타기팅](videos/visual-studio-2010/visual-studio-2010-quick-hit-new-multi-targeting.md)
         - [웹 프로젝트 대신 웹 사이트](videos/visual-studio-2010/visual-studio-2010-quick-hit-websites-instead-of-web-projects.md)
         - [코드 조각 IntelliSense](videos/visual-studio-2010/visual-studio-2010-quick-hit-snippets-intellisense.md)
-    - [Ajax 컨트롤 도구 키트](videos/ajax-control-toolkit/index.md)
+    - [Ajax Control Toolkit](videos/ajax-control-toolkit/index.md)
 
         - [ASP.NET AJAX 컨트롤 도구 키트 시작](videos/ajax-control-toolkit/how-do-i-get-started-with-the-aspnet-ajax-control-toolkit.md)
         - [ASP.NET AJAX CascadingDropDown 컨트롤 Extender](videos/ajax-control-toolkit/how-do-i-use-the-aspnet-ajax-cascadingdropdown-control-extender.md)
@@ -963,11 +963,11 @@ ms.locfileid: "59397008"
             - [LINQ to SQL: 개요](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-overview.md)
             - [LINQ to SQL: 데이터 모델](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-data-model.md)
             - [LINQ to SQL: 데이터베이스 쿼리](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-querying-the-database.md)
-            - [LINQ to SQL: 데이터베이스를 업데이트 하는 중](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-updating-the-database.md)
+            - [LINQ to SQL: 데이터베이스 업데이트](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-updating-the-database.md)
             - [LINQ to SQL: LinqDataSource](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-linqdatasource.md)
-            - [LINQ to SQL: Custom LinqDataSource](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-custom-linqdatasource.md)
-            - [LINQ to SQL: 저장된 프로시저를 사용 하 여](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-using-stored-procedures.md)
-            - [LINQ to SQL: 저장된 프로시저를 사용 하 여 업데이트](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-updating-with-stored-procedures.md)
+            - [LINQ to SQL: 사용자 지정 LinqDataSource](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-custom-linqdatasource.md)
+            - [LINQ to SQL: 저장 프로시저 사용](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-using-stored-procedures.md)
+            - [LINQ to SQL: 저장 프로시저 업데이트](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-updating-with-stored-procedures.md)
             - [LINQ to SQL: 임의의 SQL 실행](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-executing-arbitrary-sql.md)
         - [VB 팀의 LINQ 비디오](videos/data-access/linq-videos-from-the-vb-team/index.md)
 
@@ -999,7 +999,7 @@ ms.locfileid: "59397008"
         - [ASP.NET Dynamic Data 사용자 지정 양식 서식 지정](videos/aspnet-dynamic-data/aspnet-dynamic-data-custom-form-formatting.md)
     - [ASP.NET 3.5](videos/aspnet-35/index.md)
 
-        - [작업 절차](videos/aspnet-35/how-do-i/index.md)
+        - [어떻게 할까요?](videos/aspnet-35/how-do-i/index.md)
 
             - [Visual Studio 2008에서 마스터 페이지 만들기](videos/aspnet-35/how-do-i/how-do-i-create-a-master-page-in-visual-studio-2008.md)
             - [Visual Studio 2008에서 중첩된 마스터 페이지 만들기](videos/aspnet-35/how-do-i/how-do-i-create-nested-master-page-in-visual-studio-2008.md)
@@ -1052,7 +1052,7 @@ ms.locfileid: "59397008"
 
             - [Chart Control](videos/net-4/chart/aspnet-4-quick-hit-chart-control.md)
             - [Visual Studio 2010의 새 차트 컨트롤 소개](videos/net-4/chart/aspnet-4-how-do-i-introducing-the-new-chart-control-in-visual-studio-2010.md)
-        - [코어](videos/net-4/core/index.md)
+        - [핵심 문서](videos/net-4/core/index.md)
 
             - [자동 시작](videos/net-4/core/aspnet-4-quick-hit-auto-start.md)
             - [Web.Config 파일 정리](videos/net-4/core/aspnet-4-quick-hit-clean-webconfig-files.md)

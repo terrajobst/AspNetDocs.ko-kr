@@ -9,11 +9,11 @@ ms.assetid: d50edc31-9286-4c6a-8635-be09e72752a4
 msc.legacyurl: /web-forms/overview/data-access/custom-formatting/displaying-summary-information-in-the-gridview-s-footer-cs
 msc.type: authoredcontent
 ms.openlocfilehash: b258a2bdeaea8da4e9c5c5d8043b167d94e1e817
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74616816"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78441779"
 ---
 # <a name="displaying-summary-information-in-the-gridviews-footer-c"></a>GridView의 바닥글에 요약 정보 표시(C#)
 
@@ -109,7 +109,7 @@ GridView 컨트롤은 머리글 및 바닥글 행을 모두 표시할 수 있습
 
 **그림 11**: GridView는 이제 바닥글 행을 포함 합니다 ([전체 크기 이미지를 보려면 클릭](displaying-summary-information-in-the-gridview-s-footer-cs/_static/image33.png)).
 
-그림 11의 바닥글 행은 흰색 배경 이므로 나타나지 않습니다. 진한 빨강 배경을 지정 하는 `Styles.css`에 `FooterStyle` CSS 클래스를 만든 다음 `DataWebControls` 테마에서 `GridView.skin` 스킨 파일을 구성 하 여이 CSS 클래스를 GridView의 `FooterStyle`속성에 할당 합니다. 스킨과 테마를 사용 하 여 브러시를 만들어야 하는 경우 ObjectDataSource 자습서를 [사용 하 여 데이터 표시](../basic-reporting/displaying-data-with-the-objectdatasource-cs.md) 를 다시 참조 하세요.
+그림 11의 바닥글 행은 흰색 배경 이므로 나타나지 않습니다. 진한 빨강 배경을 지정 하는 `Styles.css`에 `FooterStyle` CSS 클래스를 만든 다음 `DataWebControls` 테마에서 `GridView.skin` 스킨 파일을 구성 하 여이 CSS 클래스를 GridView의 `FooterStyle`속성에 할당 합니다.`CssClass` 스킨과 테마를 사용 하 여 브러시를 만들어야 하는 경우 ObjectDataSource 자습서를 [사용 하 여 데이터 표시](../basic-reporting/displaying-data-with-the-objectdatasource-cs.md) 를 다시 참조 하세요.
 
 `Styles.css`에 다음 CSS 클래스를 추가 하 여 시작 합니다.
 
@@ -183,7 +183,7 @@ GridView의 바닥글이 표시 되 면 다음에 직면 하는 문제는 요약
 
 행복 한 프로그래밍
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

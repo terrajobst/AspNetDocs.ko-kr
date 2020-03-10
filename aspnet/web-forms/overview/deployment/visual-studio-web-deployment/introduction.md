@@ -9,11 +9,11 @@ ms.assetid: 24ad086d-865e-433c-9ac9-05f1a553da16
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/introduction
 msc.type: authoredcontent
 ms.openlocfilehash: 96dd31d949633e001fc595621bedbf74e98000fc
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74640231"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78521759"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-introduction"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 소개
 
@@ -23,7 +23,7 @@ ms.locfileid: "74640231"
 
 > 이 자습서 시리즈에서는 Azure SDK for .NET과 함께 Visual Studio 2012을 사용 하 여 Azure App Service Web Apps 또는 타사 호스팅 공급자에 게 ASP.NET 웹 응용 프로그램을 배포 (게시) 하는 방법을 보여 줍니다. 대부분의 절차는 Visual Studio 2013와 비슷합니다.
 > 
-> 인터넷을 통해 사용자가 사용할 수 있도록 하기 위해 웹 응용 프로그램을 개발 합니다. 그러나 웹 프로그래밍 자습서는 일반적으로 개발 컴퓨터에서 작업을 수행 하는 방법을 본 후 바로 중지 됩니다. 이러한 일련의 자습서는 다른 사용자가 나갈 때 시작 합니다. 웹 앱을 빌드하고 테스트 했 고 준비가 완료 되었습니다. 새로운 기능 이러한 자습서는 테스트를 위해 로컬 개발 컴퓨터의 IIS에 먼저 배포 하 고 나 서 스테이징 및 프로덕션을 위해 Azure 또는 타사 호스팅 공급자를 배포 하는 방법을 보여 줍니다. 배포할 샘플 응용 프로그램은 Entity Framework, SQL Server 및 ASP.NET 멤버 자격 시스템을 사용 하는 웹 응용 프로그램 프로젝트입니다. 샘플 응용 프로그램은 ASP.NET Web Forms를 사용 하지만, 표시 된 절차는 ASP.NET MVC 및 Web API에도 적용 됩니다.
+> 인터넷을 통해 사용자가 사용할 수 있도록 하기 위해 웹 응용 프로그램을 개발 합니다. 그러나 웹 프로그래밍 자습서는 일반적으로 개발 컴퓨터에서 작업을 수행 하는 방법을 본 후 바로 중지 됩니다. 이러한 일련의 자습서는 다른 사용자가 나갈 때 시작 합니다. 웹 앱을 빌드하고 테스트 했 고 준비가 완료 되었습니다. 다음 단계 이러한 자습서는 테스트를 위해 로컬 개발 컴퓨터의 IIS에 먼저 배포 하 고 나 서 스테이징 및 프로덕션을 위해 Azure 또는 타사 호스팅 공급자를 배포 하는 방법을 보여 줍니다. 배포할 샘플 응용 프로그램은 Entity Framework, SQL Server 및 ASP.NET 멤버 자격 시스템을 사용 하는 웹 응용 프로그램 프로젝트입니다. 샘플 응용 프로그램은 ASP.NET Web Forms를 사용 하지만, 표시 된 절차는 ASP.NET MVC 및 Web API에도 적용 됩니다.
 > 
 > 이 자습서에서는 Visual Studio에서 ASP.NET로 작업 하는 방법을 알고 있다고 가정 합니다. 그렇지 않은 경우 [기본 ASP.NET Web Forms 자습서](../../older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-1.md) 또는 [기본 ASP.NET MVC 자습서](../../../../mvc/overview/older-versions/getting-started-with-aspnet-mvc4/intro-to-aspnet-mvc-4.md)를 시작 하는 것이 좋습니다.
 > 
@@ -39,7 +39,7 @@ ms.locfileid: "74640231"
 
 자습서는 순서 대로 실행 되도록 설계 되었으며 각 부품은 이전 파트를 기반으로 합니다. 상황과 관련이 없는 파트는 건너뛸 수 있지만 이후 자습서의 절차를 조정 해야 할 수도 있습니다.
 
-## <a name="intended-audience"></a>대상 사용자
+## <a name="intended-audience"></a>대상 그룹
 
 이 자습서는 다음과 같은 환경에서 작업 하는 ASP.NET 개발자를 대상으로 합니다.
 
@@ -49,7 +49,7 @@ ms.locfileid: "74640231"
 명령줄에서 배포 하는 방법을 보여 주는 자습서를 제외 하 고 [연속 배달](../../../../aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/continuous-integration-and-continuous-delivery.md) 프로세스를 사용 하 여 [원본 제어](../../../../aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control.md) 에서 배포 하는 것은 이러한 자습서에서 다루지 않습니다. 지속적인 업데이트에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
 - [지속적인 통합 및 지속적인 업데이트 (Microsoft Azure를 사용 하 여 실제 클라우드 앱 빌드)](../../../../aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/continuous-integration-and-continuous-delivery.md)
-- [Azure App Service에서 웹 앱 배포](https://azure.microsoft.com/documentation/articles/web-sites-deploy/)
+- [Azure App Service에서 웹앱 배포](https://azure.microsoft.com/documentation/articles/web-sites-deploy/)
 - [엔터프라이즈 시나리오에서 웹 응용 프로그램 배포](../deploying-web-applications-in-enterprise-scenarios/deploying-web-applications-in-enterprise-scenarios.md) (엔터프라이즈 환경에 유용한 정보를 포함 하는 Visual Studio 2010 용으로 작성 된 이전 자습서 집합)
 
 ## <a name="using-a-third-party-hosting-provider"></a>타사 호스팅 공급자 사용
@@ -110,13 +110,13 @@ Entity Framework Code First를 통해 관리 되지 않는 SQL Server 데이터�
 
 <a id="prerequisites"></a>
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>사전 요구 사항
 
 이 자습서는 다음 제품에 대해 작성 되었습니다.
 
 - Windows 8 또는 Windows 7
 - [최신 업데이트가](https://go.microsoft.com/fwlink/?LinkId=272486)포함 된 visual studio 2012 또는 visual Studio 2012 Express for Web
-- [Visual Studio 용 Azure SDK 2012](https://go.microsoft.com/fwlink/?LinkId=254364)
+- [Azure SDK for Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=254364)
 
 Visual Studio 2010 SP1 또는 Visual Studio 2013를 사용 하 여이 자습서를 수행할 수 있지만 일부 스크린 샷을 다르게 제공 되며 일부 기능이 다를 수 있습니다.
 
@@ -126,7 +126,7 @@ Visual Studio 2010 s p 1을 사용 하는 경우 다음 소프트웨어를 설�
 
 - [Visual Studio 용 Azure SDK 2010](https://go.microsoft.com/fwlink/?LinkID=254269)
 - [SQL Server Express LocalDB](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=SQLLocalDBOnly_11_0)
-- [SQL Server Data Tools](https://msdn.microsoft.com/library/hh500335.aspx).
+- [SQL Server Data Tools](https://msdn.microsoft.com/library/hh500335.aspx)
 
 컴퓨터에 이미 있는 SDK 종속성의 수에 따라 Azure SDK를 설치 하는 데 몇 분에서 30 분 이상까지 시간이 오래 걸릴 수 있습니다. SDK가 Visual Studio 웹 게시 기능에 대 한 최신 업데이트를 포함 하기 때문에 Azure 대신 타사 호스팅 공급자에 게시할 계획인 경우에도 Azure SDK가 필요 합니다.
 
@@ -137,7 +137,7 @@ Visual Studio 2010 s p 1을 사용 하는 경우 다음 소프트웨어를 설�
 
 자습서를 완료 하기 위해 다른 소프트웨어가 필요 하지만 아직 설치 하지 않아도 됩니다. 이 자습서에서는 필요할 때 설치 하는 단계를 안내 합니다.
 
-## <a name="download-the-sample-application"></a>샘플 응용 프로그램 다운로드
+## <a name="download-the-sample-application"></a>샘플 애플리케이션 다운로드
 
 배포할 응용 프로그램은 Contoso 대학 이라고 하며 이미 생성 되었습니다. [ASP.NET 사이트의 Entity Framework 자습서](https://asp.net/entity-framework/tutorials)에 설명 된 Contoso 대학 응용 프로그램을 느슨하게 기반으로 하는 대학 웹 사이트의 단순화 된 버전입니다.
 

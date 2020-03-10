@@ -2,18 +2,18 @@
 uid: web-forms/overview/older-versions-getting-started/deploying-web-site-projects/strategies-for-database-development-and-deployment-vb
 title: 데이터베이스 개발 및 배포 전략 (VB) | Microsoft Docs
 author: rick-anderson
-description: 처음으로 데이터 기반 응용 프로그램을 배포 하는 경우 개발 환경의 데이터베이스를 프로덕션 환경에 무조건 복사할 수 있습니다. B. ...
+description: 처음으로 데이터 기반 응용 프로그램을 배포 하는 경우 개발 환경의 데이터베이스를 프로덕션 환경에 무조건 복사할 수 있습니다. B...
 ms.author: riande
 ms.date: 04/23/2009
 ms.assetid: 07b8905d-78ac-4252-97fb-8675b3fb0bbf
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/strategies-for-database-development-and-deployment-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 1ea4ade32fb05b9e69647ece7d1a4c400fe9fb21
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74616119"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78439769"
 ---
 # <a name="strategies-for-database-development-and-deployment-vb"></a>데이터베이스 개발 및 배포 전략(VB)
 

@@ -9,11 +9,11 @@ ms.assetid: 9cad0833-486a-4474-a7f3-7715542ec4ce
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/deploying-a-database-update
 msc.type: authoredcontent
 ms.openlocfilehash: 805eb84c24764cf921291f89054435601dbac48e
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74636826"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78440789"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-deploying-a-database-update"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 데이터베이스 업데이트 배포
 
@@ -129,14 +129,14 @@ DbDacFx 공급자를 사용 하 여 배포 하려면 게시 프로필에서 **�
 
 1. ContosoUniversity 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **게시**를 클릭 하 여 **웹 게시** 마법사를 엽니다.
 2. **테스트** 프로필을 선택 합니다.
-3. **설정** 탭을 클릭 합니다.
+3. **설정** 탭을 클릭합니다.
 4. **Defaultconnection**에서 **데이터베이스 업데이트**를 선택 합니다.
 5. 초기 배포에 대해 실행 하도록 구성한 추가 스크립트를 사용 하지 않도록 설정 합니다.
 
     1. **데이터베이스 업데이트 구성**을 클릭 합니다.
     2. **데이터베이스 업데이트 구성** 대화 상자에서 *Grant .sql* and *aspnet-data-dev*옆에 있는 확인란의 선택을 취소 합니다.
     3. **닫기**를 클릭합니다.
-6. **미리 보기** 탭을 클릭 합니다.
+6. 미리 보기 도구 모음에서 **미리 보기** 탭을 클릭합니다.
 7. 데이터베이스 **에서** **defaultconnection**의 오른쪽에 있는 **데이터베이스 미리 보기** 링크를 클릭 합니다.
 
     ![데이터베이스 미리 보기](deploying-a-database-update/_static/image7.png)

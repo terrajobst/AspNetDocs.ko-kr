@@ -9,11 +9,11 @@ ms.assetid: dbc54313-5d05-4285-98b3-726edea6d0c9
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/users-and-roles-on-the-production-website-cs
 msc.type: authoredcontent
 ms.openlocfilehash: c47bd2c1661f129dd8856916de04b8ba459fbfec
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74616543"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78441221"
 ---
 # <a name="users-and-roles-on-the-production-website-c"></a>프로덕션 웹 사이트의 사용자 및 역할 (C#)
 
@@ -105,7 +105,7 @@ WSAT 접근 방식은 사용자 및 역할을 관리 하는 빠르고 쉬운 방
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 

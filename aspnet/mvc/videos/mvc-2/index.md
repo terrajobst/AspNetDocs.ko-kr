@@ -9,11 +9,11 @@ ms.assetid: 68968b8a-4f60-449e-8639-978fc40aed70
 msc.legacyurl: /mvc/videos/mvc-2
 msc.type: chapter
 ms.openlocfilehash: d2ddf52b01b8a1ae0e6c3b8db104d16775d144e6
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65120170"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78431903"
 ---
 # <a name="aspnet-mvc-2"></a>ASP.NET MVC 2
 
@@ -35,10 +35,10 @@ ms.locfileid: "65120170"
     - [데이터베이스 데이터의 테이블 표시](how-do-i/displaying-a-table-of-database-data.md)
     - [개발자를 위한 ASP.NET MVC란 무엇인가 80분 기술 비디오, NerdDinner 빌드](how-do-i/what-is-aspnet-mvc-80-minute-technical-video-for-developers-building-nerddinner.md)
     - [의사 결정자를 위한 ASP.NET MVC를 사용해야 하는 이유 3분 개요 비디오](how-do-i/why-aspnet-mvc-3-minute-overview-video-for-decision-makers.md)
-    - [ASP.NET MVC: 개발자를 위한 방법 10 분 기술 비디오](how-do-i/aspnet-mvc-how-10-minute-technical-video-for-developers.md)
+    - [ASP.NET MVC: 개발자를 위한 사용 방법 10분 기술 비디오](how-do-i/aspnet-mvc-how-10-minute-technical-video-for-developers.md)
     - [ASP.NET MVC 웹 애플리케이션에서 AJAX 호출에 대해 JSON 형식 데이터 반환](how-do-i/how-do-i-return-json-formatted-data-for-an-ajax-call-in-an-aspnet-mvc-web-application.md)
     - [ASP.NET MVC 부분 보기에서 데이터 작업](how-do-i/how-do-i-work-with-data-in-aspnet-mvc-partial-views.md)
-    - [ASP.NET MVC 뷰에 대 한 데이터를 관리 하는 보기 모델 구현](how-do-i/how-do-i-implement-view-models-to-manage-data-for-aspnet-mvc-views.md)
+    - [ASP.NET MVC 뷰에 대 한 데이터를 관리 하는 뷰 모델 구현](how-do-i/how-do-i-implement-view-models-to-manage-data-for-aspnet-mvc-views.md)
     - [MVC 애플리케이션에 대한 사용자 지정 HTML 도우미 만들기](how-do-i/how-do-i-create-a-custom-html-helper-for-an-mvc-application.md)
     - [MVC 애플리케이션에서 모델 바인더 사용](how-do-i/how-do-i-work-with-model-binders-in-an-mvc-application.md)
     - [MVC 애플리케이션에서 HttpVerbs 특성 사용](how-do-i/how-do-i-use-httpverbs-attributes-in-an-mvc-application.md)
@@ -52,12 +52,12 @@ ms.locfileid: "65120170"
     - [ASP.NET MVC 자세히 알아보기](how-do-i/how-to-best-learn-asp-net-mvc.md)
 - [나머지 개발자를 위한 ASP.NET MVC](aspnet-mvc-for-the-rest-of-us/index.md)
 
-    - [나머지에 대 한 ASP.NET MVC: 1 부](aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-1.md)
-    - [나머지에 대 한 ASP.NET MVC: 2 부](aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-2.md)
-    - [나머지에 대 한 ASP.NET MVC: 3 부](aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-3.md)
-    - [나머지에 대 한 ASP.NET MVC: 4 부](aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-4.md)
+    - [나머지 개발자를 위한 ASP.NET MVC: 1부](aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-1.md)
+    - [나머지 개발자를 위한 ASP.NET MVC: 2부](aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-2.md)
+    - [나머지 개발자를 위한 ASP.NET MVC: 3부](aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-3.md)
+    - [나머지 개발자를 위한 ASP.NET MVC: 4부](aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-4.md)
 - [Music Store](music-store/index.md)
 
-    - [MVC Music Store 1 부: 소개, 도구 및 프로젝트 구조](music-store/mvc-music-store-part-1-intro-tools-and-project-structure.md)
-    - [MVC Music Store 2 부: 컨트롤러](music-store/mvc-music-store-part-2-controllers.md)
-    - [MVC Music Store 3 부: 보기 및 ViewModels](music-store/mvc-music-store-part-3-views-and-viewmodels.md)
+    - [MVC Music Store 1부: 소개, 도구 및 프로젝트 구조](music-store/mvc-music-store-part-1-intro-tools-and-project-structure.md)
+    - [MVC Music Store 2부: 컨트롤러](music-store/mvc-music-store-part-2-controllers.md)
+    - [MVC Music Store 3부: 보기 및 ViewModels](music-store/mvc-music-store-part-3-views-and-viewmodels.md)

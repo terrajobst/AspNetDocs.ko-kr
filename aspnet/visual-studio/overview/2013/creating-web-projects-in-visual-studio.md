@@ -9,11 +9,11 @@ ms.assetid: 61941e64-0c0d-4996-9270-cb8ccfd0cabc
 msc.legacyurl: /visual-studio/overview/2013/creating-web-projects-in-visual-studio
 msc.type: authoredcontent
 ms.openlocfilehash: fbb4cd7afa2506879d47bce980bf0164aad40c2c
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519273"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78447203"
 ---
 # <a name="creating-aspnet-web-projects-in-visual-studio-2013"></a>Visual Studio 2013에서 ASP.NET 웹 프로젝트 만들기
 
@@ -31,7 +31,7 @@ ms.locfileid: "76519273"
 > Azure Cloud Services 또는 Azure Mobile Services 웹 프로젝트를 만드는 방법에 대 한 자세한 내용은 [azure Cloud Services 시작](https://azure.microsoft.com/documentation/articles/cloud-services-dotnet-get-started/) 및 [Azure Mobile Services .net 백 엔드를 사용 하 여 ASP.NET 및 순위표 앱 만들기](https://azure.microsoft.com/documentation/articles/mobile-services-dotnet-backend-windows-store-dotnet-leaderboard/)를 참조 하세요.
 
 <a id="prerequisites"></a>
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 이 문서는 [업데이트 3](https://go.microsoft.com/fwlink/?linkid=397827&amp;clcid=0x409) 이 설치 된 [Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=306566) 에 적용 됩니다.
 
@@ -54,7 +54,7 @@ ASP.NET에서는 두 가지 종류의 웹 프로젝트, 즉 *웹 응용 프로�
 3. 응용 프로그램에 대 한 상태 및 사용 모니터링을 원하는 경우 오른쪽 창에서 **프로젝트에 Application Insights 추가** 확인란을 클릭 합니다. 자세한 내용은 [웹 애플리케이션의 성능 모니터링](https://azure.microsoft.com/documentation/articles/app-insights-web-monitor-performance/)을 참조하세요.
 4. 프로젝트 **이름**, **위치**및 기타 옵션을 지정한 다음 **확인**을 클릭 합니다.
 
-    **새 ASP.NET 프로젝트** 대화 상자가 나타납니다.
+    **새 ASP.NET 프로젝트** 대화 상자가 표시됩니다.
 
     ![새 프로젝트 대화 상자](creating-web-projects-in-visual-studio/_static/image2.png)
 5. 템플릿을 클릭 합니다.

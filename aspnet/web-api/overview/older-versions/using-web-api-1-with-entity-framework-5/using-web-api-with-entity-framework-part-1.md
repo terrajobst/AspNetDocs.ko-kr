@@ -9,11 +9,11 @@ ms.assetid: 94421d86-68c4-4471-bf5f-82d654a17252
 msc.legacyurl: /web-api/overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-1
 msc.type: authoredcontent
 ms.openlocfilehash: a76a18f2bd95969358452085ef342fdca8a386e2
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74600323"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78447935"
 ---
 # <a name="part-1-overview-and-creating-the-project"></a>1 부: 개요 및 프로젝트 만들기
 
@@ -33,9 +33,9 @@ Entity Framework은 개체/관계형 매핑 프레임 워크입니다. 코드의
 
 ![](using-web-api-with-entity-framework-part-1/_static/image2.png)
 
-## <a name="skills-youll-learn"></a>배울 기술
+## <a name="skills-youll-learn"></a>학습할 기술
 
-학습할 내용은 다음과 같습니다.
+다음 내용을 학습하게 됩니다.
 
 - ASP.NET Web API에서 Entity Framework를 사용 하는 방법
 - Node.js를 사용 하 여 동적 클라이언트 UI를 만드는 방법
@@ -43,7 +43,7 @@ Entity Framework은 개체/관계형 매핑 프레임 워크입니다. 코드의
 
 이 자습서는 자체 포함 되어 있지만 먼저 다음 자습서를 읽을 수 있습니다.
 
-- [첫 번째 ASP.NET Web API](../../getting-started-with-aspnet-web-api/tutorial-your-first-web-api.md)
+- [최초 ASP.NET 앱 API](../../getting-started-with-aspnet-web-api/tutorial-your-first-web-api.md)
 - [CRUD 작업을 지 원하는 Web API 만들기](../creating-a-web-api-that-supports-crud-operations.md)
 
 [ASP.NET MVC](../../../../mvc/index.md) 에 대 한 일부 지식이 도움이 될 수도 있습니다.

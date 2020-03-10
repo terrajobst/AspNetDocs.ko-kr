@@ -2,22 +2,22 @@
 uid: web-forms/overview/deployment/visual-studio-web-deployment/index
 title: Visual Studio를 사용 하 여 ASP.NET 웹 배포 | Microsoft Docs
 author: rick-anderson
-description: 이 자습서 시리즈에는 t를 배포 하 여 인터넷을 통해 SQL Server (없습니다 SQL Server Compact) 사용할 수 있습니다를 사용 하는 ASP.NET 웹 응용 프로그램을 만드는 방법을 보여 줍니다...
+description: 이 자습서 시리즈는 SQL Server (SQL Server Compact)를 사용 하는 ASP.NET 웹 응용 프로그램을 배포 하 여 인터넷을 통해 사용할 수 있도록 하는 방법을 보여 줍니다.
 ms.author: riande
 ms.date: 02/15/2013
 ms.assetid: e733027a-525f-47ae-b1c0-2e5ecf6677aa
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment
 msc.type: chapter
 ms.openlocfilehash: 486042c428787ff03b964d04de4af59e540c62d6
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65128583"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78439469"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio"></a>Visual Studio를 사용하여 ASP.NET 웹 배포
 
-> 이 자습서 시리즈에서는 SQL Server (없습니다 SQL Server Compact) 사용할 수 있는 인터넷을 통해 타사 호스팅 공급자 또는 Windows Azure 웹 사이트에 배포 하 여 ASP.NET 웹 응용 프로그램을 확인 하는 방법을 보여 줍니다. Visual Studio 2012 및 ASP.NET 및 Web Tools 2012.2 업데이트 또는 Visual Studio 2010에 필요합니다. SQL Server Compact에 대 한 사용 되는 정보를 참조 하세요 [SQL Server Compact Visual Studio를 사용 하 여를 사용 하 여 ASP.NET 웹 배포](../../older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-introduction-1-of-12.md)합니다.
+> 이 자습서 시리즈에서는 Windows Azure 웹 사이트 또는 타사 호스팅 공급자에 게 배포 하 여 인터넷을 통해 사용할 수 있는 SQL Server (SQL Server Compact)를 사용 하는 ASP.NET 웹 응용 프로그램을 만드는 방법을 보여 줍니다. Visual Studio 2012 및 ASP.NET 및 Web Tools 2012.2 업데이트 또는 Visual Studio 2010가 필요 합니다. SQL Server Compact에 대 한 자세한 내용은 [Visual Studio를 사용 하 여 SQL Server Compact를 사용 하 여 웹 배포 ASP.NET](../../older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-introduction-1-of-12.md)를 참조 하세요.
 
 - [소개](introduction.md)
 - [데이터베이스 배포 준비](preparing-databases.md)

@@ -9,11 +9,11 @@ ms.assetid: ad8dd396-30f7-4abe-ac02-a0b84422e5be
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/protecting-connection-strings-and-other-configuration-information-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 15970bee1e990d3a139673efe12486e08f79814c
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74573451"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78421073"
 ---
 # <a name="protecting-connection-strings-and-other-configuration-information-c"></a>연결 문자열 및 기타 구성 정보 보호(C#)
 
@@ -27,7 +27,7 @@ ms.locfileid: "74573451"
 
 ASP.NET 응용 프로그램에 대 한 구성 정보는 일반적으로 `Web.config`이라는 XML 파일에 저장 됩니다. 이러한 자습서를 진행 하는 동안 `Web.config`를 몇 번 업데이트 했습니다. 예를 들어 [첫 번째 자습서](../introduction/creating-a-data-access-layer-cs.md)에서 `Northwind` 형식화 된 데이터 집합을 만들 때 연결 문자열 정보는 `<connectionStrings>` 섹션의 `Web.config`에 자동으로 추가 됩니다. 나중에 [마스터 페이지 및 사이트 탐색](../introduction/master-pages-and-site-navigation-cs.md) 자습서에서 `Web.config`를 수동으로 업데이트 하 여 프로젝트의 모든 ASP.NET 페이지가 `DataWebControls` 테마를 사용 해야 함을 나타내는 `<pages>` 요소를 추가 합니다.
 
-`Web.config`에는 연결 문자열과 같은 중요 한 데이터가 포함 될 수 있기 때문에 `Web.config`의 콘텐츠를 안전 하 게 유지 하 고 권한이 없는 뷰어에 숨어 두어야 합니다. 기본적으로 `.config` 확장을 사용 하는 파일에 대 한 모든 HTTP 요청은 그림 1에 표시 된 *이 유형의 페이지를 제공 하지 않는* 메시지를 반환 하는 ASP.NET 엔진에 의해 처리 됩니다. 즉, 방문자는 브라우저의 주소 표시줄에 http://www.YourServer.com/Web.config 를 입력 하기만 하면 `Web.config` 파일의 내용을 볼 수 없습니다.
+`Web.config`에는 연결 문자열과 같은 중요 한 데이터가 포함 될 수 있기 때문에 `Web.config`의 콘텐츠를 안전 하 게 유지 하 고 권한이 없는 뷰어에 숨어 두어야 합니다. 기본적으로 `.config` 확장을 사용 하는 파일에 대 한 모든 HTTP 요청은 그림 1에 표시 된 *이 유형의 페이지를 제공 하지 않는* 메시지를 반환 하는 ASP.NET 엔진에 의해 처리 됩니다. 즉, 방문자는 브라우저의 주소 표시줄에 http://www.YourServer.com/Web.config를 입력 하기만 하면 `Web.config` 파일의 내용을 볼 수 없습니다.
 
 [브라우저를 통해 web.config를 방문 하면이 형식의 페이지가 제공 되지 않습니다. 메시지를 반환 ![](protecting-connection-strings-and-other-configuration-information-cs/_static/image2.png)](protecting-connection-strings-and-other-configuration-information-cs/_static/image1.png)
 
@@ -187,7 +187,7 @@ Integrated Security = True 이며 사용자 이름 및 암호가 부족 하면 W
 
 행복 한 프로그래밍
 
-## <a name="further-reading"></a>추가 정보
+## <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -199,7 +199,7 @@ Integrated Security = True 이며 사용자 이름 및 암호가 부족 하면 W
 - [.NET 2.0의 구성 API](http://www.odetocode.com/Articles/418.aspx)
 - [Windows 데이터 보호](https://msdn.microsoft.com/library/ms995355.aspx)
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

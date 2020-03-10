@@ -2,22 +2,22 @@
 uid: mvc/overview/older-versions-1/controllers-and-routing/index
 title: 컨트롤러 및 라우팅 | Microsoft Docs
 author: rick-anderson
-description: 이 자습서 집합에 알아봅니다 ASP.NET 라우팅에 대 한 브라우저 요청을 ASP.NET MVC 컨트롤러 작업에 매핑하는 합니다.
+description: 이 자습서 집합에서는 브라우저 요청을 ASP.NET MVC 컨트롤러 작업에 매핑하는 ASP.NET routing에 대해 알아봅니다.
 ms.author: riande
 ms.date: 09/28/2011
 ms.assetid: 124df537-428c-4861-b6c2-4830c094fe0c
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing
 msc.type: chapter
 ms.openlocfilehash: 62e8c3c7451373829e2e8fbf65e37a14cfea54df
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65123303"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78437645"
 ---
 # <a name="controllers-and-routing"></a>컨트롤러 및 라우팅
 
-> 이 자습서 집합에 알아봅니다 ASP.NET 라우팅에 대 한 브라우저 요청을 ASP.NET MVC 컨트롤러 작업에 매핑하는 합니다.
+> 이 자습서 집합에서는 브라우저 요청을 ASP.NET MVC 컨트롤러 작업에 매핑하는 ASP.NET routing에 대해 알아봅니다.
 
 - [ASP.NET MVC 라우팅 개요(C#)](asp-net-mvc-routing-overview-cs.md)
 - [작업 필터 이해(C#)](understanding-action-filters-cs.md)

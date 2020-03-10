@@ -9,11 +9,11 @@ ms.assetid: aa67d304-583b-4bf8-a231-195656cfb587
 msc.legacyurl: /web-pages/overview/getting-started/introducing-razor-syntax-c
 msc.type: authoredcontent
 ms.openlocfilehash: c2f420bb7c2f7d2e31654c20fb9ec7497a30a9f7
-ms.sourcegitcommit: 6f0e10e4ca61a1e5534b09c655fd35cdc6886c8a
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564882"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78521207"
 ---
 # <a name="introduction-to-aspnet-web-programming-using-the-razor-syntax-c"></a>Razor 구문 (C#)을 사용 하는 ASP.NET 웹 프로그래밍 소개
 
@@ -221,7 +221,7 @@ Razor 구문는 ASP.NET의 모든 기능을 제공 하지만 초보자 인 경�
 <a id="BM_CombiningTextMarkupAndCode"></a>
 ### <a name="combining-text-markup-and-code-in-code-blocks"></a>코드 블록에서 텍스트, 태그 및 코드 결합
 
-서버 코드 블록에서 텍스트 또는 태그 (또는 둘 다)를 페이지에 출력 하는 경우가 많습니다. 서버 코드 블록에 코드가 아닌 텍스트가 포함 되어 있는 경우 해당 텍스트를 그대로 렌더링 해야 하는 경우 ASP.NET는 해당 텍스트를 코드와 구별할 수 있어야 합니다. 다음과 같은 여러 가지 방법으로 이 작업을 수행할 수 있습니다.
+서버 코드 블록에서 텍스트 또는 태그 (또는 둘 다)를 페이지에 출력 하는 경우가 많습니다. 서버 코드 블록에 코드가 아닌 텍스트가 포함 되어 있는 경우 해당 텍스트를 그대로 렌더링 해야 하는 경우 ASP.NET는 해당 텍스트를 코드와 구별할 수 있어야 합니다. 여러 가지 방법으로 이 작업을 수행할 수 있습니다.
 
 - `<p></p>` 또는 `<em></em>`같은 HTML 요소로 텍스트를 묶습니다.   
 
@@ -241,7 +241,7 @@ Razor 구문는 ASP.NET의 모든 기능을 제공 하지만 초보자 인 경�
     > [!NOTE]
     > HTML 요소를 사용 하 여이 섹션 &#8212; 에 표시 된 대로 텍스트를 출력 하는 경우 `@:` 연산자 또는 `<text>` &#8212; 요소 ASP.NET은 출력을 html로 인코딩하지 않습니다. 앞에서 설명한 것 처럼 ASP.NET는이 섹션에 설명 된 특수 한 사례를 제외 하 고 `@`뒤에 오는 서버 코드 식과 서버 코드 블록의 출력을 인코딩합니다.
 
-### <a name="whitespace"></a>Whitespace
+### <a name="whitespace"></a>공백
 
 문 (및 문자열 리터럴 외부)의 추가 공백은 문에 영향을 주지 않습니다.
 
@@ -295,7 +295,7 @@ Razor 주석과 달리 HTML 주석은 페이지 *에 렌더링 되며* 사용자
 
 Razor에는의 C#중첩 된 블록에 대 한 제한이 있습니다. 자세한 내용은 [명명 된 변수 C# 및 중첩 블록에서 손상 된 코드 생성을](http://aspnetwebstack.codeplex.com/workitem/1914) 참조 하세요.
 
-## <a name="variables"></a>변수
+## <a name="variables"></a>variables
 
 변수는 데이터를 저장 하는 데 사용 하는 명명 된 개체입니다. 변수 이름을 지정할 수 있지만 이름은 영문자로 시작 해야 하며 공백 또는 예약 문자를 포함할 수 없습니다.
 
@@ -341,7 +341,7 @@ ASP.NET는 일반적으로 데이터 형식을 자동으로 결정할 수 있지
     <strong>설명</strong>
     :::column-end:::
     :::column:::
-    <strong>예</strong>
+    <strong>예제</strong>
     :::column-end:::
 :::row-end:::
 
@@ -435,13 +435,13 @@ ASP.NET는 일반적으로 데이터 형식을 자동으로 결정할 수 있지
 
 :::row:::
     :::column:::
-    <strong>Operator</strong>
+    <strong>연산자</strong>
     :::column-end:::
     :::column:::
     <strong>설명</strong>
     :::column-end:::
     :::column:::
-    <strong>예제</strong>
+    <strong>예</strong>
     :::column-end:::
 :::row-end:::
 
@@ -648,7 +648,7 @@ C: 드라이브의 루트가 \ 인 것 처럼 가상 루트는/입니다. 가상
 
 ### <a name="referencing-the-virtual-root-the--operator-and-href-method"></a>가상 루트 참조: ~ operator 및 Href 메서드
 
-*Cshtml* 또는 *vbhtml* 파일에서 `~` 연산자를 사용 하 여 가상 루트 경로를 참조할 수 있습니다. 이는 사이트에서 페이지를 이동할 수 있으며 다른 페이지에 포함 된 모든 링크가 손상 되지 않도록 하기 때문에 매우 편리 합니다. 웹 사이트를 다른 위치로 이동 하는 경우에도 유용 합니다. 다음은 몇 가지 예입니다.
+*Cshtml* 또는 *vbhtml* 파일에서 `~` 연산자를 사용 하 여 가상 루트 경로를 참조할 수 있습니다. 이는 사이트에서 페이지를 이동할 수 있으며 다른 페이지에 포함 된 모든 링크가 손상 되지 않도록 하기 때문에 매우 편리 합니다. 웹 사이트를 다른 위치로 이동 하는 경우에도 유용 합니다. 예를 들어 다음과 같은 노래를 선택할 수 있다.
 
 [!code-cshtml[Main](introducing-razor-syntax-c/samples/sample47.cshtml)]
 
@@ -743,8 +743,8 @@ ASP.NET의 가장 기본적인 개체는 페이지입니다. 정규화 된 개�
 
 `Page` 개체의 속성을 사용 하 여 다음과 같은 많은 정보를 얻을 수 있습니다.
 
-- `Request`. 앞서 살펴본 것 처럼, 요청을 만든 브라우저의 유형, 페이지 URL, 사용자 id 등을 포함 하 여 현재 요청에 대 한 정보 컬렉션입니다.
-- `Response`. 서버 코드의 실행이 완료 되 면 브라우저로 전송 되는 응답 (페이지)에 대 한 정보 컬렉션입니다. 예를 들어이 속성을 사용 하 여 응답에 정보를 쓸 수 있습니다. 
+- `Request`입니다. 앞서 살펴본 것 처럼, 요청을 만든 브라우저의 유형, 페이지 URL, 사용자 id 등을 포함 하 여 현재 요청에 대 한 정보 컬렉션입니다.
+- `Response`입니다. 서버 코드의 실행이 완료 되 면 브라우저로 전송 되는 응답 (페이지)에 대 한 정보 컬렉션입니다. 예를 들어이 속성을 사용 하 여 응답에 정보를 쓸 수 있습니다. 
 
     [!code-cshtml[Main](introducing-razor-syntax-c/samples/sample58.cshtml)]
 
@@ -810,7 +810,7 @@ Razor 구문는 매개 변수를 메서드에 전달 하는 두 가지 옵션 ( 
 
 ### <a name="try-catch-statements"></a>Try-catch 문
 
-코드에 컨트롤 외부의 이유로 실패할 수 있는 문이 종종 있습니다. 예를 들면 다음과 같습니다.:
+코드에 컨트롤 외부의 이유로 실패할 수 있는 문이 종종 있습니다. 다음은 그 예입니다.
 
 - 코드에서 파일을 만들거나 액세스 하려고 하면 모든 종류의 오류가 발생할 수 있습니다. 필요한 파일이 없거나, 잠겨 있거나, 코드에 권한이 없을 수 있습니다.
 - 마찬가지로, 코드에서 데이터베이스의 레코드를 업데이트 하려고 시도 하는 경우에는 사용 권한 문제가 있을 수 있습니다. 데이터베이스에 대 한 연결이 삭제 될 수 있습니다. 저장할 데이터가 유효 하지 않을 수 있습니다.

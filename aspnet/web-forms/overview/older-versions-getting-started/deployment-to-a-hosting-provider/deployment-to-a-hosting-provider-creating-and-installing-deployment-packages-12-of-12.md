@@ -9,11 +9,11 @@ ms.assetid: 3fc23eed-921d-4d46-a610-a2d156e4bd03
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-creating-and-installing-deployment-packages-12-of-12
 msc.type: authoredcontent
 ms.openlocfilehash: db8f58e3679e6dea865dadb6f64916032dd9f38c
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74639870"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78424037"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-troubleshooting-12-of-12"></a>Visual Studio 또는 Visual Web Developer를 사용 하 여 SQL Server Compact를 사용 하 여 ASP.NET 웹 응용 프로그램 배포: 문제 해결 (12/12)
 
@@ -44,7 +44,7 @@ ms.locfileid: "74639870"
 1. 응용 프로그램 Web.config 파일의 `system.web` 요소에 `customErrors` 요소가 있으면 `mode` 특성을 "off"로 변경 합니다. 그렇지 않은 경우 다음 예제와 같이 `mode` 특성이 "off"로 설정 된 상태에서 `system.web` 요소에 `customErrors` 요소를 추가 합니다.
 
     [!code-xml[Main](deployment-to-a-hosting-provider-creating-and-installing-deployment-packages-12-of-12/samples/sample2.xml?highlight=3)]
-2. 응용 프로그램 배포
+2. 애플리케이션을 배포합니다.
 3. 응용 프로그램을 실행 하 고 이전에 발생 한 오류를 발생 시킨 모든 항목을 반복 합니다. 이제 실제 오류 메시지를 확인할 수 있습니다.
 4. 오류를 해결 한 경우 원래 `customErrors` 설정을 복원 하 고 응용 프로그램을 다시 배포 합니다.
 

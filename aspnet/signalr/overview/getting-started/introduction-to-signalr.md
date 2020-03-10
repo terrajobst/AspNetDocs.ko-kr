@@ -9,11 +9,11 @@ ms.assetid: 0fab5e35-8c1f-43d4-8635-b8aba8766a71
 msc.legacyurl: /signalr/overview/getting-started/introduction-to-signalr
 msc.type: authoredcontent
 ms.openlocfilehash: 8dbc31a5c8d59fa55dc5b513c1a51d24d18a685f
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519403"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78431099"
 ---
 # <a name="introduction-to-signalr"></a>SignalR 소개
 
@@ -39,7 +39,7 @@ SignalR는 서버 쪽 .NET 코드에서 클라이언트 브라우저 (및 다른
 
 ![SignalR를 사용 하 여 메서드 호출](introduction-to-signalr/_static/image1.png)
 
-SignalR은 연결 관리를 자동으로 처리하며, 대화방처럼 메시지를 연결된 모든 클라이언트에 동시에 브로드캐스트할 수 있습니다. 메시지를 특정 클라이언트에 보낼 수도 있습니다. 클라이언트와 서버 간의 연결은 기존 HTTP 연결과 달리 영구적이며, 각 통신에 대해 다시 설정됩니다.
+SignalR는 연결 관리를 자동으로 처리 하며 대화방 처럼 연결 된 모든 클라이언트에 동시에 메시지를 브로드캐스트할 수 있습니다. 특정 클라이언트에 메시지를 보낼 수도 있습니다. 클라이언트와 서버 간의 연결은 각 통신에 대해 다시 설정 되는 클래식 HTTP 연결과 달리 영구적입니다.
 
 SignalR는 "서버 푸시" 기능을 지원 합니다 .이 기능은 서버 코드가 현재 웹에서 자주 사용 하는 요청-응답 모델 대신 RPC (원격 프로시저 호출)를 사용 하 여 브라우저에서 클라이언트 코드를 호출할 수 있습니다.
 

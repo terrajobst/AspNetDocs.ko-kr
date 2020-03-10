@@ -1,6 +1,6 @@
 ---
 uid: signalr/overview/older-versions/scaleout-with-sql-server
-title: SQL Server로 SignalR 규모 확장 (SignalR 1.x) | Microsoft Docs
+title: SignalR 확장 with SQL Server (SignalR 1.x) | Microsoft Docs
 author: bradygaster
 description: ''
 ms.author: bradyg
@@ -9,53 +9,53 @@ ms.assetid: 1dca7967-8296-444a-9533-837eb284e78c
 msc.legacyurl: /signalr/overview/older-versions/scaleout-with-sql-server
 msc.type: authoredcontent
 ms.openlocfilehash: 8674b06a2a751c9a7b1c6c9b19782974d0602a62
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59386569"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78431129"
 ---
 # <a name="signalr-scaleout-with-sql-server-signalr-1x"></a>SQL Server로 SignalR 규모 확장(SignalR 1.x)
 
-하 여 [Mike Wasson](https://github.com/MikeWasson), [Patrick Fletcher](https://github.com/pfletcher)
+사람, [Mike Wasson](https://github.com/MikeWasson), [Patrick Fletcher](https://github.com/pfletcher)
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
-이 자습서에서는 SQL Server를 사용 하 여 메시지를 두 개의 별도 IIS 인스턴스에서 배포 되는 SignalR 응용 프로그램을 분산 하는 있습니다. 단일 테스트 컴퓨터에서이 자습서를 실행할 수도 있지만 모든 결과 얻으려면 두 개 이상의 서버에 SignalR 응용 프로그램을 배포 해야 합니다. 서버 중 하나에서 또는 별도 전용 서버에 SQL Server를 설치 해야 합니다. Azure에서 Vm을 사용 하는 자습서를 실행 하는 방법도 있습니다.
+이 자습서에서는 SQL Server를 사용 하 여 별도의 두 IIS 인스턴스에 배포 된 SignalR 응용 프로그램을 통해 메시지를 배포 합니다. 단일 테스트 컴퓨터에서이 자습서를 실행할 수도 있지만, 전체 결과를 얻으려면 SignalR 응용 프로그램을 둘 이상의 서버에 배포 해야 합니다. 또한 서버 중 하나 또는 별도의 전용 서버에 SQL Server를 설치 해야 합니다. 또 다른 옵션은 Azure에서 Vm을 사용 하 여 자습서를 실행 하는 것입니다.
 
 ![](scaleout-with-sql-server/_static/image1.png)
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
-Microsoft SQL Server 2005 이상입니다. 백플레인에서는 데스크톱 및 서버 모두 SQL Server 버전을 지원합니다. Azure SQL Database 또는 SQL Server Compact Edition을 지원 하지 않습니다. (응용 프로그램을 Azure에서 호스팅되는 경우 Service Bus 백플레인에서 대신 고려 합니다.)
+2005 이상 Microsoft SQL Server 합니다. 후면판은 SQL Server의 데스크톱 및 서버 버전을 모두 지원 합니다. SQL Server Compact Edition 또는 Azure SQL Database를 지원 하지 않습니다. 응용 프로그램이 Azure에서 호스트 되는 경우에는 Service Bus 후면판을 고려 하세요.)
 
 ## <a name="overview"></a>개요
 
-자세한 자습서를 시작 하기 전에 수행할 작업의 간략 한 개요는 다음과 같습니다.
+자세한 자습서를 시작 하기 전에 수행할 작업에 대 한 간략 한 개요를 참조 하세요.
 
-1. 새 빈 데이터베이스를 만듭니다. 백플레인에서이 데이터베이스에 필요한 테이블을 만들겠습니다.
-2. 응용 프로그램에 이러한 NuGet 패키지를 추가 합니다. 
+1. 비어 있는 새 데이터베이스를 만듭니다. 후면판이이 데이터베이스에 필요한 테이블을 만듭니다.
+2. 응용 프로그램에 다음 NuGet 패키지를 추가 합니다. 
 
-    - [Microsoft.AspNet.SignalR](http://nuget.org/packages/Microsoft.AspNet.SignalR)
-    - [Microsoft.AspNet.SignalR.SqlServer](http://nuget.org/packages/Microsoft.AspNet.SignalR.SqlServer)
+    - [SignalR](http://nuget.org/packages/Microsoft.AspNet.SignalR)
+    - [SignalR.](http://nuget.org/packages/Microsoft.AspNet.SignalR.SqlServer)
 3. SignalR 응용 프로그램을 만듭니다.
-4. Global.asax 백플레인에서 구성 하려면 다음 코드를 추가 합니다. 
+4. Global.asax에 다음 코드를 추가 하 여 후면판을 구성 합니다. 
 
     [!code-csharp[Main](scaleout-with-sql-server/samples/sample1.cs)]
 
 ## <a name="configure-the-database"></a>데이터베이스 구성
 
-응용 프로그램 Windows 인증 또는 SQL Server 인증을 사용 하는 데이터베이스에 액세스할 수 있는지 여부를 결정 합니다. 그럼에도 불구 하 고 데이터베이스 사용자 로그인, 스키마를 만들고, 테이블을 만들 수 있는 권한이 있는지 확인 합니다.
+응용 프로그램에서 데이터베이스에 액세스 하는 데 Windows 인증을 사용할지 또는 SQL Server 인증을 사용할지 결정 합니다. 에 관계 없이 데이터베이스 사용자에 게 로그인 하 고, 스키마를 만들고, 테이블을 만들 수 있는 권한이 있는지 확인 합니다.
 
-백플레인으로 사용에 대 한 새 데이터베이스를 만듭니다. 데이터베이스 이름을 지정할 수 있습니다. 데이터베이스에서 모든 테이블을 만들 필요가 없습니다. 백플레인에서 필요한 테이블을 만듭니다.
+후면판에서 사용할 새 데이터베이스를 만듭니다. 데이터베이스 이름을 지정할 수 있습니다. 데이터베이스에 테이블을 만들 필요가 없습니다. 후면판에서 필요한 테이블을 만듭니다.
 
 ![](scaleout-with-sql-server/_static/image2.png)
 
-## <a name="enable-service-broker"></a>Service Broker를 사용 하도록 설정
+## <a name="enable-service-broker"></a>Service Broker 사용
 
-백플레인에서 데이터베이스에 대 한 Service Broker를 활성화 하는 것이 좋습니다. Service Broker는 메시징 및 백플레인에서 업데이트를 보다 효율적으로 받을 수 있는 SQL Server의 큐에 대 한 기본 지원을 제공 합니다. 그러나 (백플레인에서 없이 이루어집니다 Service Broker.)
+후면판 데이터베이스에 대해 Service Broker를 사용 하도록 설정 하는 것이 좋습니다. Service Broker은 SQL Server의 메시징 및 큐에 대 한 기본 지원을 제공 하므로 후면판에서 업데이트를 보다 효율적으로 받을 수 있습니다. 그러나 후면판은 Service Broker 없이도 작동 합니다.
 
-Service Broker 사용 되는지 여부를 확인, 쿼리를 **은\_broker\_사용 하도록 설정** 열에는 **sys.databases** 카탈로그 뷰.
+Service Broker 사용 하도록 설정 되어 있는지 여부를 확인 하려면를 사용 **하 여** **\_Broker\_사용** 열을 쿼리 합니다.
 
 [!code-sql[Main](scaleout-with-sql-server/samples/sample2.sql)]
 
@@ -66,55 +66,55 @@ Service Broker를 사용 하도록 설정 하려면 다음 SQL 쿼리를 사용 
 [!code-sql[Main](scaleout-with-sql-server/samples/sample3.sql)]
 
 > [!NOTE]
-> 교착 상태가 발생 했는지를이 쿼리가 나타납니다 경우 DB에 연결 하는 응용 프로그램이 없습니다.
+> 이 쿼리가 교착 상태로 표시 되는 경우 DB에 연결 된 응용 프로그램이 없는지 확인 합니다.
 
-추적을 설정한 경우 추적 Service Broker 사용 되는지 여부를 표시도 됩니다.
+추적을 사용 하도록 설정한 경우 추적에 Service Broker 사용 되는지 여부도 표시 됩니다.
 
 ## <a name="create-a-signalr-application"></a>SignalR 응용 프로그램 만들기
 
-이러한 자습서 중 하나를 수행 하 여 SignalR 응용 프로그램을 만듭니다.
+다음 자습서 중 하나를 수행 하 여 SignalR 응용 프로그램을 만듭니다.
 
-- [SignalR 시작](../getting-started/tutorial-getting-started-with-signalr.md)
+- [SignalR 시작 하기](../getting-started/tutorial-getting-started-with-signalr.md)
 - [SignalR 및 MVC 4 시작](tutorial-getting-started-with-signalr-and-mvc-4.md)
 
-다음으로, SQL Server를 사용 하 여 확장을 지원 하기 위해 채팅 응용 프로그램을 수정 합니다. 먼저 프로젝트에 SignalR.SqlServer NuGet 패키지를 추가 합니다. Visual Studio에서에서 합니다 **도구** 메뉴에서 **NuGet 패키지 관리자**을 선택한 후 **패키지 관리자 콘솔**합니다. 패키지 관리자 콘솔 창에서 다음 명령을 입력 합니다.
+다음으로 SQL Server와의 확장을 지원 하도록 채팅 응용 프로그램을 수정 합니다. 먼저 SignalR NuGet 패키지를 프로젝트에 추가 합니다. Visual Studio의 **도구** 메뉴에서 **NuGet 패키지 관리자**를 선택한 다음 **패키지 관리자 콘솔**을 선택 합니다. 패키지 관리자 콘솔 창에서 다음 명령을 입력합니다.
 
 [!code-powershell[Main](scaleout-with-sql-server/samples/sample4.ps1)]
 
-다음으로 Global.asax 파일을 엽니다. 다음 코드를 추가 합니다 **응용 프로그램\_시작** 메서드:
+그런 다음, Global.asax 파일을 엽니다. **응용 프로그램\_Start** 메서드에 다음 코드를 추가 합니다.
 
 [!code-csharp[Main](scaleout-with-sql-server/samples/sample5.cs)]
 
-## <a name="deploy-and-run-the-application"></a>배포 하 고 응용 프로그램 실행
+## <a name="deploy-and-run-the-application"></a>응용 프로그램 배포 및 실행
 
-SignalR 응용 프로그램을 배포 하려면 Windows Server 인스턴스를 준비 합니다.
+Windows Server 인스턴스를 준비 하 여 SignalR 응용 프로그램을 배포 합니다.
 
 IIS 역할을 추가 합니다. WebSocket 프로토콜을 포함 하 여 "응용 프로그램 개발" 기능을 포함 합니다.
 
 ![](scaleout-with-sql-server/_static/image4.png)
 
-관리 서비스 ("관리 도구" 아래)를 포함 합니다.
+관리 서비스 ("관리 도구" 아래에 나열 됨)도 포함 합니다.
 
 ![](scaleout-with-sql-server/_static/image5.png)
 
-**설치 웹 배포 3.0.** IIS 관리자를 실행 하면, Microsoft 웹 플랫폼을 설치 하 라는 메시지가 나타납니다 것 또는 할 수 있습니다 [설치 관리자 다운로드](https://go.microsoft.com/fwlink/?LinkId=255386)합니다. 플랫폼 설치 관리자에서 웹 배포에 대 한 검색 하 고 웹 배포 3.0 설치
+**웹 배포 3.0을 설치 합니다.** IIS 관리자를 실행 하는 경우 Microsoft 웹 플랫폼을 설치 하 라는 메시지가 표시 되거나 [설치 관리자를 다운로드할](https://go.microsoft.com/fwlink/?LinkId=255386)수 있습니다. 플랫폼 설치 관리자에서 웹 배포을 검색 하 고 웹 배포 3.0를 설치 합니다.
 
 ![](scaleout-with-sql-server/_static/image6.png)
 
-Web Management Service가 실행 중인지 확인 합니다. 그렇지 않은 경우 서비스를 시작 합니다. (웹 관리 서비스 Windows 서비스 목록에 보이지 않으면 확인 IIS 역할을 추가 했을 때 Management 서비스를 설치 합니다.)
+웹 관리 서비스가 실행 중인지 확인 합니다. 그렇지 않은 경우 서비스를 시작 합니다. Windows 서비스 목록에 웹 관리 서비스가 표시 되지 않으면 IIS 역할을 추가할 때 관리 서비스를 설치 했는지 확인 합니다.
 
-마지막으로, tcp 8172 포트를 엽니다. 웹 배포 도구를 사용 하는 포트입니다.
+마지막으로 TCP에 대해 8172 포트를 엽니다. 웹 배포 도구에서 사용 하는 포트입니다.
 
-이제 서버에 개발 컴퓨터에서 Visual Studio 프로젝트를 배포할 준비가 되었습니다. 솔루션 탐색기에서 솔루션을 마우스 오른쪽 단추로 클릭 하 고 클릭 **게시**합니다.
+이제 개발 컴퓨터의 Visual Studio 프로젝트를 서버에 배포할 준비가 되었습니다. 솔루션 탐색기에서 솔루션을 마우스 오른쪽 단추로 클릭 하 고 **게시**를 클릭 합니다.
 
-자세한 내용을 보려면 웹 배포에 대 한 설명서를 참조 하세요 [Visual Studio 및 ASP.NET 웹 배포 콘텐츠 맵](../../../whitepapers/aspnet-web-deployment-content-map.md)합니다.
+웹 배포에 대 한 자세한 설명서는 [Visual Studio 및 ASP.NET 용 웹 배포 콘텐츠 맵](../../../whitepapers/aspnet-web-deployment-content-map.md)을 참조 하세요.
 
-두 명의 서버 응용 프로그램을 배포 하는 경우에 별도 브라우저 창에서 각 인스턴스를 엽니다 하 고 다른에서 SignalR 메시지를 받을 각각 볼 수 있습니다. (물론 프로덕션 환경에서 두 서버는 sit 부하 분산 합니다.)
+두 개의 서버에 응용 프로그램을 배포 하는 경우 별도의 브라우저 창에서 각 인스턴스를 열 수 있으며 각 인스턴스는 서로 SignalR 메시지를 수신 하는 것을 볼 수 있습니다. 물론 프로덕션 환경에서는 두 서버가 부하 분산 장치 뒤에 앉아 있습니다.
 
 ![](scaleout-with-sql-server/_static/image7.png)
 
-응용 프로그램을 실행 한 후에 SignalR에 데이터베이스의 테이블을 만들었다고 자동으로 확인할 수 있습니다.
+응용 프로그램을 실행 한 후 SignalR에서 데이터베이스에 자동으로 생성 된 테이블을 볼 수 있습니다.
 
 ![](scaleout-with-sql-server/_static/image8.png)
 
-SignalR의 테이블을 관리합니다. 응용 프로그램을 배포 하기만 없는 행을 삭제, 테이블을 수정 및 등입니다.
+SignalR는 테이블을 관리 합니다. 응용 프로그램이 배포 되는 동안에는 행을 삭제 하거나 테이블을 수정 하지 않습니다.

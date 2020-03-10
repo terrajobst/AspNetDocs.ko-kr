@@ -1,26 +1,26 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/index
-title: 이전 버전-Ajax Control Toolkit | Microsoft Docs
+title: 이전 버전-Ajax 컨트롤 Toolkit | Microsoft Docs
 author: rick-anderson
-description: Ajax Control Toolkit를 사용 하 여 시작 하는 방법 및 가장 인기 있는 컨트롤의 일부를 사용 하는 방법. DevExpress 무료 및 오픈 소스 Ajax Contr. 유지...
+description: Ajax 컨트롤 도구 키트를 시작 하는 방법 및 가장 많이 사용 되는 컨트롤 중 일부를 사용 하는 방법입니다. DevExpress는 무료 및 오픈 소스 Ajax를 유지 관리 합니다.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 76242ce9-e611-41d2-95e8-dc5f406d4bfc
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit
 msc.type: chapter
 ms.openlocfilehash: d7d0426ed427f3b8fc8c7f9c2fe1518b1887d695
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65115382"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78446279"
 ---
 # <a name="older-versions---ajax-control-toolkit"></a>이전 버전 - Ajax 컨트롤 도구 키트
 
-> Ajax Control Toolkit를 사용 하 여 시작 하는 방법 및 가장 인기 있는 컨트롤의 일부를 사용 하는 방법. DevExpress 무료 및 오픈 소스 Ajax Control Toolkit 유지 관리 합니다.
+> Ajax 컨트롤 도구 키트를 시작 하는 방법 및 가장 많이 사용 되는 컨트롤 중 일부를 사용 하는 방법입니다. DevExpress는 무료 오픈 소스 Ajax 컨트롤 도구 키트를 유지 관리 합니다.
 > 
 > 
-> ![](index/_static/image1.png) DevExpress, 수상 경력이 있는 ASP.NET WebForms, MVC 및 HTML5 UI 컨트롤 및 프레임 워크의 개발자가이 높은 요구 하는 오픈 소스 라이브러리를 신뢰할 수 있는 상태로 전환 하기 위해 ASP.NET AJAX Control Toolkit의 유지 관리 인계 합니다. [자세한](https://go.devexpress.com/AjaxControlToolkit_ASP_Resources_Tutorials.aspx)합니다.
+> ![](index/_static/image1.png) DevExpress, 뛰어난 ASP.NET WebForms, MVC 및 HTML5 UI 컨트롤 및 프레임 워크의 개발자를 위한 개발자는이 매우 요청 된 오픈 소스 라이브러리를 신뢰할 수 있는 상태로 되돌리기 위해 ASP.NET AJAX 컨트롤 도구 키트를 유지 관리 했습니다. [자세히 알아봅니다](https://go.devexpress.com/AjaxControlToolkit_ASP_Resources_Tutorials.aspx).
 
 - [시작](getting-started/index.md)
 
@@ -142,7 +142,7 @@ ms.locfileid: "65115382"
 
     - [암호 강도 테스트(C#)](passwordstrength/testing-the-strength-of-a-password-cs.md)
     - [암호 강도 테스트(VB)](passwordstrength/testing-the-strength-of-a-password-vb.md)
-- [Popup](popup/index.md)
+- [팝업](popup/index.md)
 
     - [여러 팝업 컨트롤 사용(C#)](popup/using-multiple-popup-controls-cs.md)
     - [UpdatePanel을 사용하여 팝업 컨트롤에서 포스트백 처리(C#)](popup/handling-postbacks-from-a-popup-control-with-an-updatepanel-cs.md)

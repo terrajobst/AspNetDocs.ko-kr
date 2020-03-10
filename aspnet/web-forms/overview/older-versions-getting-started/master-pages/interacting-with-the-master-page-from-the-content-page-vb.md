@@ -9,11 +9,11 @@ ms.assetid: 081fe010-ba0f-4e7d-b4ba-774840b601c2
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/interacting-with-the-master-page-from-the-content-page-vb
 msc.type: authoredcontent
 ms.openlocfilehash: fe1f7b80b26ff25c1ce744e4f823e3fb35eea074
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74577420"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78441197"
 ---
 # <a name="interacting-with-the-master-page-from-the-content-page-vb"></a>콘텐츠 페이지에서 마스터 페이지와 상호 작용(VB)
 
@@ -123,7 +123,7 @@ Site.master 마스터 페이지를 열고 레이블과 GridView 컨트롤을 `le
 
 마법사를 완료 한 후 DetailsView의 스마트 태그로 이동 하 여 "삽입 사용" 확인란을 선택 합니다. 그러면 `ShowInsertButton` 속성이 True로 설정 된 DetailsView에 CommandField가 추가 됩니다. 이 DetailsView은 데이터를 삽입 하는 용도로만 사용 되므로 DetailsView의 `DefaultMode` 속성을 `Insert`로 설정 합니다.
 
-이것이 전부입니다! 이 페이지를 테스트해 보겠습니다. 브라우저를 통해 `AddProduct.aspx`를 방문 하 고 이름 및 가격을 입력 합니다 (그림 6 참조).
+이제 모든 작업을 마쳤습니다. 이 페이지를 테스트해 보겠습니다. 브라우저를 통해 `AddProduct.aspx`를 방문 하 고 이름 및 가격을 입력 합니다 (그림 6 참조).
 
 [데이터베이스에 새 제품을 추가 ![](interacting-with-the-master-page-from-the-content-page-vb/_static/image17.png)](interacting-with-the-master-page-from-the-content-page-vb/_static/image16.png)
 
@@ -218,7 +218,7 @@ ASP.NET 엔진에 콘텐츠 페이지의 마스터 페이지 유형을 알리기
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -228,7 +228,7 @@ ASP.NET 엔진에 콘텐츠 페이지의 마스터 페이지 유형을 알리기
 - [콘텐츠 및 마스터 페이지 간에 정보 전달](http://aspnet.4guysfromrolla.com/articles/013107-1.aspx)
 - [ASP.NET 자습서에서 데이터 작업](../../data-access/index.md)
 
-### <a name="about-the-author"></a>작성자 정보
+### <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)는 여러 ASP/ASP. NET books의 작성자와 4GuysFromRolla.com의 창립자가 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 3.5을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672329972/4guysfromrollaco)것입니다. Scott은 [mitchell@4GuysFromRolla.com](mailto:mitchell@4GuysFromRolla.com) 또는 [http://ScottOnWriting.NET](http://scottonwriting.net/)의 블로그를 통해 연결할 수 있습니다.
 

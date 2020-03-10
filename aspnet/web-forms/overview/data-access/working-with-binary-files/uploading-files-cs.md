@@ -9,11 +9,11 @@ ms.assetid: b381b1da-feb3-4776-bc1b-75db53eb90ab
 msc.legacyurl: /web-forms/overview/data-access/working-with-binary-files/uploading-files-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 4e3e32a829de386a681504c8d5d61dd258b8b2e6
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74581701"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78441695"
 ---
 # <a name="uploading-files-c"></a>파일 업로드(C#)
 
@@ -170,7 +170,7 @@ TableAdapter에 대해 임시 SQL 문을 사용 하는 경우 주 쿼리에서 �
 
 ## <a name="updating-the-business-logic-layer-bll"></a>BLL (비즈니스 논리 계층) 업데이트
 
-DAL이 업데이트 되 면 새 `CategoriesTableAdapter` 메서드에 대 한 메서드를 포함 하도록 BLL (비즈니스 논리 계층)을 보강 하는 것만 남았습니다. `CategoriesBLL` 클래스에 다음 메서드를 추가 합니다.
+DAL이 업데이트 되 면 새 `CategoriesTableAdapter` 메서드에 대 한 메서드를 포함 하도록 BLL (비즈니스 논리 계층)을 보강 하는 것만 남았습니다. `CategoriesBLL` 클래스에 다음 메서드를 추가합니다.
 
 [!code-csharp[Main](uploading-files-cs/samples/sample4.cs)]
 
@@ -235,7 +235,7 @@ FileUpload 컨트롤은 대량 파일 업로드에 적합 하지 않습니다. �
 
 행복 한 프로그래밍
 
-## <a name="further-reading"></a>추가 정보
+## <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -244,7 +244,7 @@ FileUpload 컨트롤은 대량 파일 업로드에 적합 하지 않습니다. �
 - [ASP.NET 2.0 FileUpload Server 컨트롤](http://www.wrox.com/WileyCDA/Section/id-292158.html)
 - [파일 업로드의 어두운 쪽](http://www.aspnetresources.com/articles/dark_side_of_file_uploads.aspx)
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

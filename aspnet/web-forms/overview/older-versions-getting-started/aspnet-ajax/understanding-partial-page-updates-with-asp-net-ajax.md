@@ -9,11 +9,11 @@ ms.assetid: 54d9df99-1161-4899-b4e8-2679c85915e7
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/aspnet-ajax/understanding-partial-page-updates-with-asp-net-ajax
 msc.type: authoredcontent
 ms.openlocfilehash: 4b87cb8f58dbd7f27b16bcb0d488ff361770d4fe
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74622891"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78439271"
 ---
 # <a name="understanding-partial-page-updates-with-aspnet-ajax"></a>ASP.NET AJAX를 사용한 부분 페이지 업데이트 이해
 
@@ -49,7 +49,7 @@ ASP.NET AJAX 확장의 가장 눈에 띄는 기능은 코드를 변경 하거나
 
 1. Microsoft Visual Studio 2008에서 <em>파일</em> <em>-&gt; 새</em> <em>-&gt; 웹 사이트로</em> 이동 하 고 대화 상자에서 ASP.NET 웹 사이트를 선택 하 여 새 ASP.NET 웹 사이트 프로젝트를 만듭니다. 원하는 대로 이름을 지정할 수 있으며, 파일 시스템 또는 인터넷 정보 서비스 (IIS)에 설치할 수 있습니다.
 2. 기본 ASP.NET 마크업 (서버 쪽 폼 및 `@Page` 지시문)이 포함 된 빈 기본 페이지가 표시 됩니다. `Label1` 이라는 레이블과 폼 요소 내의 페이지에 `Button1` 이라는 단추를 놓습니다. 원하는 대로 텍스트 속성을 설정할 수 있습니다.
-3. 디자인 뷰에서 `Button1`를 두 번 클릭 하 여 코드 숨김으로 이벤트 처리기를 생성 합니다. 이 이벤트 처리기에서 단추를 클릭 한 `Label1.Text` 설정 합니다. 의 기본 클래스입니다.
+3. 디자인 뷰에서 `Button1`를 두 번 클릭 하 여 코드 숨김으로 이벤트 처리기를 생성 합니다. 이 이벤트 처리기에서 단추를 클릭 한 `Label1.Text` 설정 합니다. .
 
 **목록 1: 부분 렌더링을 사용 하도록 설정 하기 전의 default.aspx 태그**
 
@@ -103,44 +103,44 @@ Visual Studio 2008은 ASP.NET AJAX 사용 웹 사이트에 대해 미리 정의 
 
 태그 사용 속성:
 
-| **속성 이름** | **Type** | **설명** |
+| **속성 이름** | **형식** | **설명** |
 | --- | --- | --- |
-| AllowCustomErrors-리디렉션 | Bool | Web.config 파일의 사용자 지정 오류 섹션을 사용 하 여 오류를 처리할지 여부를 지정 합니다. |
-| AsyncPostBackError-메시지 | String | 오류가 발생 하는 경우 클라이언트에 전송 되는 오류 메시지를 가져오거나 설정 합니다. |
-| AsyncPostBack-시간 제한 | Int32 | 비동기 요청이 완료 될 때까지 클라이언트가 대기 해야 하는 기본 시간을 가져오거나 설정 합니다. |
-| EnableScript-세계화 | Bool | 스크립트 세계화를 사용 하는지 여부를 가져오거나 설정 합니다. |
-| EnableScript-지역화 | Bool | 스크립트 지역화를 사용 하는지 여부를 가져오거나 설정 합니다. |
+| AllowCustomErrors-Redirect | Bool | Web.config 파일의 사용자 지정 오류 섹션을 사용 하 여 오류를 처리할지 여부를 지정 합니다. |
+| AsyncPostBackError-Message | String | 오류가 발생 하는 경우 클라이언트에 전송 되는 오류 메시지를 가져오거나 설정 합니다. |
+| AsyncPostBack-Timeout | Int32 | 비동기 요청이 완료 될 때까지 클라이언트가 대기 해야 하는 기본 시간을 가져오거나 설정 합니다. |
+| EnableScript-Globalization | Bool | 스크립트 세계화를 사용 하는지 여부를 가져오거나 설정 합니다. |
+| EnableScript-Localization | Bool | 스크립트 지역화를 사용 하는지 여부를 가져오거나 설정 합니다. |
 | ScriptLoadTimeout | Int32 | 클라이언트에 스크립트를 로드 하는 데 허용 되는 시간 (초)을 결정 합니다. |
 | ScriptMode | Enum (자동, 디버그, 릴리스, 상속) | 스크립트의 릴리스 버전을 렌더링할지 여부를 가져오거나 설정 합니다. |
 | ScriptPath | String | 클라이언트에 보낼 스크립트 파일의 위치에 대 한 루트 경로를 가져오거나 설정 합니다. |
 
 코드 전용 속성:
 
-| **속성 이름** | **Type** | **설명** |
+| **속성 이름** | **형식** | **설명** |
 | --- | --- | --- |
-| AuthenticationService | AuthenticationService-관리자 | 클라이언트에 게 전송 될 ASP.NET 인증 서비스 프록시에 대 한 세부 정보를 가져옵니다. |
+| AuthenticationService | AuthenticationService-Manager | 클라이언트에 게 전송 될 ASP.NET 인증 서비스 프록시에 대 한 세부 정보를 가져옵니다. |
 | IsDebuggingEnabled | Bool | 스크립트 및 코드 디버깅이 사용 되는지 여부를 가져옵니다. |
 | IsInAsyncPostback | Bool | 페이지가 현재 비동기 포스트백 요청 인지 여부를 가져옵니다. |
-| ProfileService | ProfileService-관리자 | 클라이언트에 게 전송 될 ASP.NET 프로 파일링 서비스 프록시에 대 한 세부 정보를 가져옵니다. |
+| ProfileService | ProfileService-Manager | 클라이언트에 게 전송 될 ASP.NET 프로 파일링 서비스 프록시에 대 한 세부 정보를 가져옵니다. |
 | 스크립트 | 수집&lt;스크립트-참조&gt; | 클라이언트에 전송 되는 스크립트 참조의 컬렉션을 가져옵니다. |
 | Services | 컬렉션&lt;서비스 참조&gt; | 클라이언트에 전송 되는 웹 서비스 프록시 참조의 컬렉션을 가져옵니다. |
 | SupportsPartialRendering | Bool | 현재 클라이언트가 부분 렌더링을 지원 하는지 여부를 가져옵니다. 이 속성이 **false**를 반환 하는 경우 모든 페이지 요청은 표준 포스트백이 됩니다. |
 
 공용 코드 메서드:
 
-| **메서드 이름** | **Type** | **설명** |
+| **메서드 이름** | **형식** | **설명** |
 | --- | --- | --- |
-| SetFocus (string) | Void | 요청이 완료 되 면 클라이언트의 포커스를 특정 컨트롤로 설정 합니다. |
+| SetFocus(string) | Void | 요청이 완료 되 면 클라이언트의 포커스를 특정 컨트롤로 설정 합니다. |
 
 태그 하위 항목:
 
-| **태그가** | **설명** |
+| **Tag** | **설명** |
 | --- | --- |
 | &lt;AuthenticationService&gt; | ASP.NET 인증 서비스에 대 한 프록시에 대 한 세부 정보를 제공 합니다. |
 | &lt;ProfileService&gt; | ASP.NET 프로 파일링 서비스에 프록시에 대 한 세부 정보를 제공 합니다. |
 | &lt;스크립트&gt; | 추가 스크립트 참조를 제공 합니다. |
 | &lt;asp: System.web.ui.scriptreference&gt; | 특정 스크립트 참조를 나타냅니다. |
-| &lt;Service&gt; | 프록시 클래스를 생성 하는 추가 웹 서비스 참조를 제공 합니다. |
+| &lt;서비스&gt; | 프록시 클래스를 생성 하는 추가 웹 서비스 참조를 제공 합니다. |
 | &lt;asp: ServiceReference&gt; | 특정 웹 서비스 참조를 나타냅니다. |
 
 ScriptManager 컨트롤은 ASP.NET AJAX 확장의 필수 핵심입니다. 스크립트 라이브러리에 대 한 액세스를 제공 하 고 (광범위 한 클라이언트 쪽 스크립트 유형 시스템 포함) 부분 렌더링을 지원 하며, 추가 ASP.NET 서비스 (예: 인증 및 프로 파일링, 기타 웹 서비스)에 대 한 광범위 한 지원을 제공 합니다. 또한 ScriptManager 컨트롤은 클라이언트 스크립트에 대 한 세계화 및 지역화 지원을 제공 합니다.
@@ -177,30 +177,30 @@ ScriptManager 컨트롤은 스크립트 문자열 및 사용자 인터페이스 
 
 태그 사용 속성:
 
-| **속성 이름** | **Type** | **설명** |
+| **속성 이름** | **형식** | **설명** |
 | --- | --- | --- |
-| ChildrenAsTriggers | 부울 | 다시 게시할 때 자식 컨트롤이 새로 고침을 자동으로 호출할지 여부를 지정 합니다. |
+| ChildrenAsTriggers | bool | 다시 게시할 때 자식 컨트롤이 새로 고침을 자동으로 호출할지 여부를 지정 합니다. |
 | RenderMode | enum (블록, 인라인) | 콘텐츠를 시각적으로 표시 하는 방법을 지정 합니다. |
 | UpdateMode | enum (항상, 조건부) | 부분적 렌더링 중 UpdatePanel을 항상 새로 고칠지 아니면 트리거가 적중 될 때만 새로 고칠지를 지정 합니다. |
 
 코드 전용 속성:
 
-| **속성 이름** | **Type** | **설명** |
+| **속성 이름** | **형식** | **설명** |
 | --- | --- | --- |
-| IsInPartialRendering | 부울 | UpdatePanel이 현재 요청에 대 한 부분 렌더링을 지원 하는지 여부를 가져옵니다. |
-| System.windows.controls.contentcontrol.contenttemplate | ITemplate | 업데이트 요청에 대 한 태그 템플릿을 가져옵니다. |
-| ContentTemplateContainer | Control | 업데이트 요청에 대 한 프로그래밍 템플릿을 가져옵니다. |
+| IsInPartialRendering | bool | UpdatePanel이 현재 요청에 대 한 부분 렌더링을 지원 하는지 여부를 가져옵니다. |
+| ContentTemplate | ITemplate | 업데이트 요청에 대 한 태그 템플릿을 가져옵니다. |
+| ContentTemplateContainer | 제어 | 업데이트 요청에 대 한 프로그래밍 템플릿을 가져옵니다. |
 | 트리거 | UpdatePanel-TriggerCollection | 현재 UpdatePanel과 연결 된 트리거의 목록을 가져옵니다. |
 
 공용 코드 메서드:
 
-| **메서드 이름** | **Type** | **설명** |
+| **메서드 이름** | **형식** | **설명** |
 | --- | --- | --- |
 | Update () | Void | 지정 된 UpdatePanel을 프로그래밍 방식으로 업데이트 합니다. 서버 요청에서 트리거 되지 않은 UpdatePanel의 부분 렌더링을 트리거할 수 있도록 허용 합니다. |
 
 태그 하위 항목:
 
-| **태그가** | **설명** |
+| **Tag** | **설명** |
 | --- | --- |
 | &lt;System.windows.controls.contentcontrol.contenttemplate&gt; | 부분 렌더링 결과를 렌더링 하는 데 사용할 태그를 지정 합니다. &lt;asp: UpdatePanel&gt;의 자식입니다. |
 | &lt;트리거&gt; | 이 UpdatePanel 업데이트와 연결 된 *n 개* 컨트롤의 컬렉션을 지정 합니다. &lt;asp: UpdatePanel&gt;의 자식입니다. |
@@ -267,15 +267,15 @@ UpdatePanels는 전체 솔루션을 위한 것이 아닙니다. 대신, 프로�
 
 태그 사용 속성:
 
-| **속성 이름** | **Type** | **설명** |
+| **속성 이름** | **형식** | **설명** |
 | --- | --- | --- |
 | AssociatedUpdate-PanelID | String | 이 UpdateProgress에서 보고 해야 하는 UpdatePanel의 ID를 지정 합니다. |
-| DisplayAfter | 정수 | 비동기 요청이 시작 된 후이 컨트롤이 표시 되기까지 제한 시간 (밀리초)을 지정 합니다. |
-| DynamicLayout | 부울 | 진행률이 동적으로 렌더링 되는지 여부를 지정 합니다. |
+| DisplayAfter | Int | 비동기 요청이 시작 된 후이 컨트롤이 표시 되기까지 제한 시간 (밀리초)을 지정 합니다. |
+| DynamicLayout | bool | 진행률이 동적으로 렌더링 되는지 여부를 지정 합니다. |
 
 태그 하위 항목:
 
-| **태그가** | **설명** |
+| **Tag** | **설명** |
 | --- | --- |
 | &lt;ProgressTemplate&gt; | 이 컨트롤과 함께 표시 되는 콘텐츠에 대 한 컨트롤 템플릿 집합을 포함 합니다. |
 

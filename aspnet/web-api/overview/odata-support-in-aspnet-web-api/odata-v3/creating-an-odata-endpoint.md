@@ -9,11 +9,11 @@ ms.assetid: 262843d6-43a2-4f1c-82d9-0b90ae6df0cf
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v3/creating-an-odata-endpoint
 msc.type: authoredcontent
 ms.openlocfilehash: e68a454398f109dfd089be9c9a44d3fe662acc2f
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74600426"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78448223"
 ---
 # <a name="creating-an-odata-v3-endpoint-with-web-api-2"></a>Web API 2를 사용 하 여 OData v3 끝점 만들기
 
@@ -66,7 +66,7 @@ Visual Studio를 시작 하 고 시작 페이지에서 **새 프로젝트** 를 
 
 *모델*은 애플리케이션에서 데이터를 나타내는 개체입니다. 이 자습서에서는 제품을 나타내는 모델이 필요 합니다. 모델은 OData 엔터티 형식에 해당 합니다.
 
-솔루션 탐색기에서 모델 폴더를 마우스 오른쪽 단추로 클릭 합니다. 상황에 맞는 메뉴에서 **추가** 를 선택한 다음 **클래스**를 선택 합니다.
+솔루션 탐색기에서 Models 폴더를 마우스 오른쪽 단추로 클릭합니다. 상황에 맞는 메뉴에서 **추가**를 선택한 다음 **클래스**를 선택합니다.
 
 ![](creating-an-odata-endpoint/_static/image3.png)
 
@@ -90,7 +90,7 @@ ID 속성은 엔터티 키가 됩니다. 클라이언트는 ID로 제품을 쿼�
 
 *컨트롤러* 는 HTTP 요청을 처리 하는 클래스입니다. OData 서비스에서 각 엔터티 집합에 대해 별도의 컨트롤러를 정의 합니다. 이 자습서에서는 단일 컨트롤러를 만듭니다.
 
-솔루션 탐색기에서 Controllers 폴더를 마우스 오른쪽 단추로 클릭 합니다. **추가** 를 선택한 다음 **컨트롤러**를 선택 합니다.
+솔루션 탐색기에서 Controllers 폴더를 마우스 오른쪽 단추로 클릭 합니다. **추가**를 선택한 후 **컨트롤러**를 선택합니다.
 
 ![](creating-an-odata-endpoint/_static/image5.png)
 
@@ -152,7 +152,7 @@ EDM은 데이터의 추상 모델입니다. EDM은 메타 데이터 문서를 �
 
 이 단계에서는 Entity Framework를 사용 하 여 일부 테스트 데이터로 데이터베이스를 초기값으로 사용 합니다. 이 단계는 선택 사항 이지만 OData 끝점을 즉시 테스트할 수 있습니다.
 
-**도구** 메뉴에서 **NuGet 패키지 관리자**를 선택한 다음 **패키지 관리자 콘솔**을 선택 합니다. 패키지 관리자 콘솔 창에서 다음 명령을 입력 합니다.
+**도구** 메뉴에서 **NuGet 패키지 관리자**를 선택한 다음 **패키지 관리자 콘솔**을 선택 합니다. 패키지 관리자 콘솔 창에서 다음 명령을 입력합니다.
 
 [!code-console[Main](creating-an-odata-endpoint/samples/sample5.cmd)]
 
@@ -187,7 +187,7 @@ Fiddler를 사용 하 여 **작성기** 탭에 다음 URI를 입력 합니다 `h
 
 ![](creating-an-odata-endpoint/_static/image13.png)
 
-**실행** 단추를 클릭 합니다. Fiddler는 응용 프로그램에 HTTP GET 요청을 보냅니다. 웹 세션 목록에 응답이 표시 되어야 합니다. 모든 것이 작동 하는 경우 상태 코드는 200가 됩니다.
+**실행** 단추를 클릭합니다. Fiddler는 응용 프로그램에 HTTP GET 요청을 보냅니다. 웹 세션 목록에 응답이 표시 되어야 합니다. 모든 것이 작동 하는 경우 상태 코드는 200가 됩니다.
 
 ![](creating-an-odata-endpoint/_static/image14.png)
 
@@ -240,7 +240,7 @@ OData는 다음과 같은 여러 serialization 형식을 지원 합니다.
 
 기본적으로 Web API는 AtomPubJSON "light" 형식을 사용 합니다.
 
-AtomPub 형식을 가져오려면 Accept 헤더를 "application/atom + xml"로 설정 합니다. 예제 응답 본문은 다음과 같습니다.
+AtomPub 형식을 가져오려면 Accept 헤더를 "application/atom + xml"로 설정 합니다. 아래에는 예제 응답 본문이 나와 있습니다.
 
 [!code-console[Main](creating-an-odata-endpoint/samples/sample13.cmd)]
 

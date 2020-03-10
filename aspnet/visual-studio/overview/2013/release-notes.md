@@ -9,11 +9,11 @@ ms.assetid: 08815768-2702-42ae-ae85-0a59934a11d1
 msc.legacyurl: /visual-studio/overview/2013/release-notes
 msc.type: authoredcontent
 ms.openlocfilehash: d8af9c8e7ee1316a5eac90c5959d07c628154e09
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74600446"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78449525"
 ---
 # <a name="aspnet-and-web-tools-for-visual-studio-2013-release-notes"></a>Visual Studio 2013용 ASP.NET 및 Web Tools 릴리스 정보
 
@@ -21,10 +21,10 @@ ms.locfileid: "74600446"
 
 > 이 문서에서는 Visual Studio 2013의 ASP.NET 및 Web Tools 릴리스에 대해 설명 합니다.
 
-## <a name="contents"></a>내용
+## <a name="contents"></a>콘텐츠
 
 - [설치 참고 사항](#TOC1)
-- [문서](#TOC2)
+- [설명서](#TOC2)
 - [소프트웨어 요구 사항](#TOC4)
 
 ### <a name="new-features-in-aspnet-and-web-tools-for-visual-studio-2013"></a>Visual Studio 2013 ASP.NET 및 Web Tools의 새로운 기능
@@ -54,7 +54,7 @@ ms.locfileid: "74600446"
 Visual Studio 2013에 대 한 ASP.NET 및 Web Tools는 기본 설치 관리자에 번들로 제공 되며 [여기](https://www.asp.net/downloads)에서 다운로드할 수 있습니다.
 
 <a id="TOC2"></a>
-## <a name="documentation"></a>Documentation
+## <a name="documentation"></a>문서화
 
 Visual Studio 2013 ASP.NET 및 Web Tools에 대 한 자습서 및 기타 정보는 [ASP.NET 웹 사이트](https://www.asp.net/)에서 확인할 수 있습니다.
 
@@ -82,7 +82,7 @@ Visual Studio 2013에서 새 웹 프로젝트를 만드는 환경을 향상 시�
 
 새 대화 상자를 사용 하 여 많은 템플릿에 대 한 기본 인증 옵션을 변경할 수 있습니다. 예를 들어 ASP.NET Web Forms 프로젝트를 만들 때 다음 옵션 중 하나를 선택할 수 있습니다.
 
-- 인증 안 함
+- 인증 없음
 - 개별 사용자 계정 (ASP.NET 멤버 자격 또는 소셜 공급자 로그인)
 - 조직 계정 (인터넷 응용 프로그램의 Active Directory)
 - Windows 인증 (인트라넷 응용 프로그램의 Active Directory)
@@ -131,7 +131,7 @@ Visual Studio 2013는 CoffeeScript 및 LESS 편집기가 모두 내장 되어 �
 
 Azure SDK for .NET 2.2을 사용 하 Visual Studio 2013에서는 **서버 탐색기** 를 사용 하 여 원격 웹 앱과 직접 상호 작용할 수 있습니다. Azure 계정에 로그인 하 고, 새 웹 앱을 만들고, 앱을 구성 하 고, 실시간 로그를 볼 수 있습니다. SDK 2.2이 출시 된 후 곧 Azure에서 원격으로 디버그 모드에서 실행할 수 있습니다. Azure App Service Web Apps의 새로운 기능은 대부분 Azure SDK for .NET의 현재 릴리스를 설치할 때 Visual Studio 2012 에서도 작동 합니다.
 
-자세한 내용은 다음 참고 자료를 참조하십시오.
+자세한 내용은 다음 리소스를 참조하세요.
 
 - [Azure App Service에서 ASP.NET 웹 앱 만들기](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-get-started/)
 - [Visual Studio를 사용하여 Azure App Service의 웹앱 문제 해결](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-troubleshoot-visual-studio/)
@@ -139,7 +139,7 @@ Azure SDK for .NET 2.2을 사용 하 Visual Studio 2013에서는 **서버 탐색
 <a id="publish"></a>
 ## <a name="web-publish-enhancements"></a>웹 게시 향상
 
-Visual Studio 2013에는 새롭고 향상 된 웹 게시 기능이 포함 되어 있습니다. 다음은 몇 가지 예제입니다.
+Visual Studio 2013에는 새롭고 향상 된 웹 게시 기능이 포함 되어 있습니다. 다음은 몇 가지 옵션입니다.
 
 - [Web.config 파일 암호화](https://go.microsoft.com/fwlink/?LinkId=325529)를 쉽게 자동화 합니다. (이 링크와 다음 두 가지는 MSDN에 대 한 설명서를 참조 하 여 10/17 년에 출시 될 때까지 사용 하지 못할 수 있음)
 - [배포 하는 동안 응용 프로그램을 오프 라인 상태로 만들기](https://go.microsoft.com/fwlink/?LinkId=325530)를 쉽게 자동화 합니다.
@@ -156,7 +156,7 @@ NuGet 2.7에는 [nuget 2.7 릴리스 정보](http://docs.nuget.org/docs/release-
 또한이 버전의 NuGet은 패키지를 다운로드 하기 위해 NuGet의 패키지 복원 기능에 대 한 명시적 동의를 제공 하지 않아도 됩니다. 이제 NuGet을 설치 하 여 승인 (및 NuGet의 기본 설정 대화 상자에서 관련 된 확인란)이 허용 됩니다. 이제 패키지 복원은 기본적으로 작동 합니다.
 
 <a id="TOC9"></a>
-## <a name="aspnet-web-forms"></a>ASP.NET Web Forms
+## <a name="aspnet-web-forms"></a>ASP.NET 웹 양식
 
 ### <a name="one-aspnet"></a>ASP.NET 1 개
 
@@ -276,13 +276,13 @@ Web API 2를 사용 하면 API 컨트롤러를 더 쉽게 단위 테스트할 �
 
 요청에 대 한 보안 주체는 **system.threading.thread.currentprincipal**을 사용 하는 대신 요청으로 전달 되기 때문에 이제 웹 API 파이프라인에 있는 동안 요청 수명 내내 보안 주체를 사용할 수 있습니다.
 
-### <a name="cors"></a>용
+### <a name="cors"></a>CORS
 
 Brock Allen에서 좋은 다른 기여 덕분에 이제 ASP.NET는 CORS (원본 간 요청 공유)를 완벽 하 게 지원 합니다.
 
-브라우저 보안은 웹 페이지에서 다른 도메인에 대 한 AJAX 요청을 수행 하지 못하도록 합니다. [CORS](http://www.w3.org/TR/cors/) 는 서버에서 동일한 원본 정책을 완화할 수 있게 해 주는 W3C 표준입니다. CORS를 사용 하 여 서버는 다른 사용자를 거부 하는 동시에 일부 원본 간 요청을 명시적으로 허용할 수 있습니다.
+브라우저 보안은 웹 페이지에서 다른 도메인으로 AJAX 요청을 수행하지 못하도록 방지합니다. [CORS](http://www.w3.org/TR/cors/) 는 서버에서 동일한 원본 정책을 완화할 수 있게 해 주는 W3C 표준입니다. CORS를 사용하면 서버에서 명시적으로 일부 원본 간 요청을 허용하는 한편 다른 요청은 거부할 수 있습니다.
 
-이제 Web API 2는 실행 전 요청의 자동 처리를 비롯 한 CORS를 지원 합니다. 자세한 내용은 [ASP.NET Web API에서 크로스-원본 요청 사용](../../../web-api/overview/security/enabling-cross-origin-requests-in-web-api.md)을 참조 하세요.
+이제 Web API 2는 실행 전 요청의 자동 처리를 비롯 한 CORS를 지원 합니다. 자세한 내용은 [ASP.NET 웹 API에서 크로스-원본 리소스 요청 사용](../../../web-api/overview/security/enabling-cross-origin-requests-in-web-api.md)을 참조하세요.
 
 ### <a name="authentication-filters"></a>인증 필터
 
@@ -659,7 +659,7 @@ ASP.NET 앱 일시 중단은 단일 컴퓨터에서 많은 수의 ASP.NET 사이
 
     `@Html.EditorFor(person => person.Age)`
 
-    받는 사람:
+    아래와 같이 변경합니다.
 
     `@Html.TextBoxFor(person => person.Age)`
 4. ASP.NET MVC 5는 더 이상 부분 신뢰를 지원 하지 않습니다. MVC 또는 WebAPI 이진 파일에 연결 하는 프로젝트는 [Securitytransparent](https://msdn.microsoft.com/library/system.security.securitytransparentattribute.aspx) 특성 및 [AllowPartiallyTrustedCallers](https://msdn.microsoft.com/library/system.security.allowpartiallytrustedcallersattribute.aspx) 특성을 제거 해야 합니다. 이러한 특성을 제거 하면 다음과 같은 컴파일러 오류가 발생 하지 않습니다.
@@ -678,7 +678,7 @@ SPA 템플릿에서는 Facebook을 사용 하 여 외부 로그인을 제공 합
 
 2. IE 이외의 브라우저에서 시나리오를 테스트 합니다.
 
-### <a name="web-forms-scaffolding"></a>Web Forms 스 캐 폴딩
+### <a name="web-forms-scaffolding"></a>Web Forms 스캐폴딩
 
 Web Forms 스 캐 폴딩은 VS2013에서 제거 되었으며 Visual Studio에 대 한 향후 업데이트에서 사용할 수 있습니다. 그러나 mvc 종속성을 추가 하 고 MVC에 대 한 스 캐 폴딩을 생성 하 여 Web Forms 프로젝트 내에서 스 캐 폴딩을 계속 사용할 수 있습니다. 프로젝트에 Web Forms 및 MVC의 조합이 포함 됩니다.
 

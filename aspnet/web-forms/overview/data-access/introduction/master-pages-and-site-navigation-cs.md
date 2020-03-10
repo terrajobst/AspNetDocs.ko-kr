@@ -9,11 +9,11 @@ ms.assetid: 5aee8202-a4e3-4aa9-8a95-cd5d156cea4c
 msc.legacyurl: /web-forms/overview/data-access/introduction/master-pages-and-site-navigation-cs
 msc.type: authoredcontent
 ms.openlocfilehash: e1ddd43524a61ff2e012171eba1a8dc8efbf8f1d
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74587419"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78426305"
 ---
 # <a name="master-pages-and-site-navigation-c"></a>마스터 페이지 및 사이트 탐색(C#)
 
@@ -37,7 +37,7 @@ ms.locfileid: "74587419"
 
 ## <a name="step-1-creating-the-master-page"></a>1 단계: 마스터 페이지 만들기
 
-첫 번째 단계는 사이트의 마스터 페이지를 만드는 것입니다. 현재 웹 사이트는 형식화 된 데이터 집합 (`Northwind.xsd`, `App_Code` 폴더), BLL 클래스 (`ProductsBLL.cs`, `CategoriesBLL.cs`등), 데이터베이스 (`App_Code` 폴더의`NORTHWND.MDF`), 구성 파일 (`App_Data`) 및 CSS 스타일 시트 파일 (`Web.config`) 으로만 구성 됩니다. 앞의 자습서에서 이러한 예제를 더 자세히 reexamining 하기 때문에 처음 두 자습서에서 DAL 및 BLL을 사용 하는 것을 보여 주는 해당 페이지와 파일을 정리 했습니다.
+첫 번째 단계는 사이트의 마스터 페이지를 만드는 것입니다. 현재 웹 사이트는 형식화 된 데이터 집합 (`Northwind.xsd`, `App_Code` 폴더), BLL 클래스 (`ProductsBLL.cs`, `CategoriesBLL.cs`등), 데이터베이스 (`App_Code` 폴더의`NORTHWND.MDF`), 구성 파일 (`App_Data`) 및 CSS 스타일 시트 파일 (`Web.config`) 으로만 구성 됩니다.`Styles.css` 앞의 자습서에서 이러한 예제를 더 자세히 reexamining 하기 때문에 처음 두 자습서에서 DAL 및 BLL을 사용 하는 것을 보여 주는 해당 페이지와 파일을 정리 했습니다.
 
 ![프로젝트의 파일](master-pages-and-site-navigation-cs/_static/image4.png)
 
@@ -51,7 +51,7 @@ ms.locfileid: "74587419"
 
 마스터 페이지에서 사이트 전체 페이지 레이아웃을 정의 합니다. 디자인 뷰를 사용 하 여 필요한 모든 레이아웃 또는 웹 컨트롤을 추가 하거나 소스 뷰에서 직접 태그를 추가할 수 있습니다. 내 마스터 페이지에서 css [스타일 시트](http://www.w3schools.com/css/default.asp) 를 사용 하 여 외부 파일 `Style.css`에 정의 된 css 설정을 사용 하 여 위치를 지정 하 고 스타일을 지정 합니다. 아래에 표시 된 태그를 구분할 수는 없지만, 탐색 `<div>`의 내용이 왼쪽에 표시 되 고 너비가 200 픽셀이 고정 되도록 하는 것을 의미 합니다.
 
-사이트 마스터
+Site.master
 
 [!code-aspx[Main](master-pages-and-site-navigation-cs/samples/sample1.aspx)]
 
@@ -129,7 +129,7 @@ ASP.NET 2.0 사이트 탐색 시스템은 개발자가 사이트 맵을 정의�
 
 파일 시스템 구조와 비슷하게 사이트 맵을 정의 합니다. 즉, 3 개의 폴더 각각에 대해 `<siteMapNode>` 요소를 추가 하 고 다음과 같이 해당 폴더의 각 ASP.NET 페이지에 대해 자식 `<siteMapNode>` 요소를 추가 합니다.
 
-웹 사이트 맵
+Web.sitemap
 
 [!code-xml[Main](master-pages-and-site-navigation-cs/samples/sample4.xml)]
 
@@ -219,7 +219,7 @@ SiteMapDataSource 컨트롤은 루트 사이트 맵 노드 (홈, 사이트 맵),
 
 **그림 13**: `UserControls` 폴더에 새 웹 사용자 정의 컨트롤 추가 ([전체 크기 이미지를 보려면 클릭](master-pages-and-site-navigation-cs/_static/image31.png))
 
-SectionLevelTutorialListing
+SectionLevelTutorialListing.ascx
 
 [!code-aspx[Main](master-pages-and-site-navigation-cs/samples/sample12.aspx)]
 
@@ -247,7 +247,7 @@ SectionLevelTutorialListing.ascx.cs
 
 행복 한 프로그래밍
 
-## <a name="further-reading"></a>추가 정보
+## <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -261,7 +261,7 @@ SectionLevelTutorialListing.ascx.cs
 - [방법: ASP.NET 페이지에 추적 사용](https://msdn.microsoft.com/library/94c55d08%28VS.80%29.aspx)
 - [ASP.NET 사용자 정의 컨트롤](https://msdn.microsoft.com/library/y6wb1a0e.aspx)
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

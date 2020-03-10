@@ -9,11 +9,11 @@ ms.assetid: de2d65b9-aadc-42ba-abe1-4e87e66521a0
 msc.legacyurl: /web-forms/overview/older-versions-security/introduction/an-overview-of-forms-authentication-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 009c3f84e00d648ede4a15e530ceac2d23e01eec
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74620746"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78439667"
 ---
 # <a name="an-overview-of-forms-authentication-c"></a>폼 인증 개요 (C#)
 
@@ -205,7 +205,7 @@ ASP.NET 2.0를 사용 하는 개발자는 멤버 자격 공급자 중 하나를 
 
 사용자가 유효한 자격 증명을 입력 하면 "적절 한 페이지"로 리디렉션됩니다. 하지만 적절 한 페이지는 무엇 인가요? 사용자가 볼 수 있는 권한이 없는 페이지를 방문 하면 FormsAuthenticationModule가 자동으로 로그인 페이지로 리디렉션됩니다. 이렇게 하면 ReturnUrl 매개 변수를 통해 querystring에 요청 된 URL이 포함 됩니다. 즉, 사용자가 ProtectedPage를 방문 하려고 했 고이 작업을 수행할 수 있는 권한이 없는 경우 FormsAuthenticationModule는 다음으로 리디렉션됩니다.
 
-Login.aspx? ReturnUrl = ProtectedPage
+Login.aspx?ReturnUrl=ProtectedPage.aspx
 
 성공적으로 로그인 되 면 사용자는 ProtectedPage로 다시 리디렉션됩니다. 또는 사용자가 자신의 volition의 로그인 페이지를 방문할 수도 있습니다. 이 경우 사용자를 로그인 한 후 루트 폴더의 Default.aspx 페이지로 보내야 합니다.
 
@@ -221,7 +221,7 @@ GetAuthCookie는 쿠키 컬렉션에 쿠키를 쓰기 전에 인증 티켓을 �
 
 사용자를 로그인 하 여 적절 한 페이지로 리디렉션하도록 했으므로 RedirectFromLoginPage을 사용 하겠습니다. LoginButton의 Click 이벤트 처리기를 업데이트 하 여 주석 처리 된 두 개의 TODO 줄을 다음 코드 줄로 바꿉니다.
 
-RedirectFromLoginPage (FormsAuthentication, RememberMe. Checked);
+FormsAuthentication.RedirectFromLoginPage(UserName.Text, RememberMe.Checked);
 
 폼 인증 티켓을 만들 때 폼 인증 티켓 *사용자 이름* 매개 변수에 대 한 사용자 이름 텍스트 상자 텍스트 속성과 *persistcookie* 매개 변수에 대 한 rememberme 확인란의 선택 됨 상태를 사용 합니다.
 
@@ -279,7 +279,7 @@ RedirectFromLoginPage (FormsAuthentication, RememberMe. Checked);
 
 다음 코드를 사용 하 여 현재 방문자의 이름을 확인할 수 있습니다.
 
-문자열 Currentusers Name = User.Identity.Name;
+string currentUsersName = User.Identity.Name;
 
 폼 인증을 사용 하는 경우 GenericPrincipal의 Identity 속성에 대해 [FormsIdentity 개체가](https://msdn.microsoft.com/library/system.web.security.formsidentity.aspx) 생성 됩니다. FormsIdentity 클래스는 항상 AuthenticationType 속성에 대해 "Forms" 문자열을 반환 하 고 IsAuthenticated 속성에 대해 true를 반환 합니다. Name 속성은 폼 인증 티켓을 만들 때 지정 된 사용자 이름을 반환 합니다. FormsIdentity는 이러한 세 가지 속성 외에도 [티켓 속성](https://msdn.microsoft.com/library/system.web.security.formsidentity.ticket.aspx)을 통해 기본 인증 티켓에 대 한 액세스를 포함 합니다. 티켓 속성은 [양식 Authenticationticket](https://msdn.microsoft.com/library/system.web.security.formsauthenticationticket.aspx)형식의 개체를 반환 합니다. 여기에는 만료, Ispersistent, IssueDate, Name 등의 속성이 있습니다.
 
@@ -289,7 +289,7 @@ RedirectFromLoginPage (FormsAuthentication, RememberMe. Checked);
 
 Default.aspx에서 더 많은 개인 설정 된 메시지를 제공 하겠습니다. WelcomeBackMessage 레이블의 Text 속성에 "환영 뒤로, *username*!" 문자열이 할당 되도록 페이지\_Load 이벤트 처리기를 업데이트 합니다.
 
-WelcomeBackMessage = "환영", + User.Identity.Name + "!";
+WelcomeBackMessage.Text = "Welcome back, " + User.Identity.Name + "!";
 
 그림 13에서는 사용자의 Scott로 로그인 할 때 이러한 수정의 영향을 보여 줍니다.
 
@@ -404,7 +404,7 @@ LoginStatus는 LoginView 컨트롤 외부에 있기 때문에 익명 및 인증 
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -418,7 +418,7 @@ LoginStatus는 LoginView 컨트롤 외부에 있기 때문에 익명 및 인증 
 
 - [ASP.NET에서 기본 폼 인증 사용](../../../videos/authentication/using-basic-forms-authentication-in-aspnet.md)
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

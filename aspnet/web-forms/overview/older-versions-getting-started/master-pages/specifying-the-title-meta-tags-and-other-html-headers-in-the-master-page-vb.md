@@ -9,11 +9,11 @@ ms.assetid: ea8196f5-039d-43ec-8447-8997ad4d3900
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 160af664cdf27f9ede1273aaf915da749a39ad48
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74637691"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78522491"
 ---
 # <a name="specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb"></a>마스터 페이지에서 제목, 메타 태그 및 기타 HTML 헤더 지정(VB)
 
@@ -139,7 +139,7 @@ ASP.NET 페이지가 요청 될 때마다 요청 된 페이지의 culminating가
 
 [!code-vb[Main](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/samples/sample7.vb)]
 
-받는 사람:
+아래와 같이 변경합니다.
 
 [!code-vb[Main](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/samples/sample8.vb)]
 
@@ -282,7 +282,7 @@ SiteMapDataSource를 구성 하 여 시작 노드를 생략 하 고 홈 글머�
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -293,7 +293,7 @@ SiteMapDataSource를 구성 하 여 시작 노드를 생략 하 고 홈 글머�
 - [ASP.NET 3.5의 ListView 및 DataPager 컨트롤 사용](http://aspnet.4guysfromrolla.com/articles/122607-1.aspx)
 - [ASP.NET 페이지의 코드 숨김으로 클래스에 대 한 사용자 지정 기본 클래스 사용](http://aspnet.4guysfromrolla.com/articles/041305-1.aspx)
 
-### <a name="about-the-author"></a>작성자 정보
+### <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)는 여러 ASP/ASP. NET books의 작성자와 4GuysFromRolla.com의 창립자가 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 3.5을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. Scott은 [mitchell@4GuysFromRolla.com](mailto:mitchell@4GuysFromRolla.com) 또는 [http://ScottOnWriting.NET](http://scottonwriting.net/)의 블로그를 통해 연결할 수 있습니다.
 

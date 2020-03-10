@@ -9,11 +9,11 @@ ms.assetid: 07ec7d37-023f-43ea-b471-60b08ce338f7
 msc.legacyurl: /web-api/overview/testing-and-debugging/troubleshooting-http-405-errors-after-publishing-web-api-applications
 msc.type: authoredcontent
 ms.openlocfilehash: 1b47f1ade3619cfd010260352f6a96985ab3598b
-ms.sourcegitcommit: 84b1681d4e6253e30468c8df8a09fe03beea9309
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445713"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78447029"
 ---
 # <a name="troubleshoot-web-api2-apps-that-work-in-visual-studio-and-fail-on-a-production-iis-server"></a>Visual Studio에서 작동 하 고 프로덕션 IIS 서버에서 실패 하는 웹 API2 앱 문제 해결
 
@@ -23,29 +23,29 @@ ms.locfileid: "73445713"
 > 
 > 
 > - [인터넷 정보 서비스 (IIS)](https://www.iis.net/) (버전 7 이상)
-> - [Web API](../../index.md) 
+> - [앱 API](../../index.md) 
 
 웹 API 앱은 일반적으로 GET, POST, PUT, DELETE, 간혹 PATCH 등의 몇 가지 HTTP 동사를 사용 합니다. 즉, 개발자는 해당 동사가 프로덕션 IIS 서버의 다른 IIS 모듈에 의해 구현 되는 상황이 발생할 수 있으며,이로 인해 Visual Studio 또는 개발 서버에서 올바르게 작동 하는 Web API 컨트롤러가 있는 상황이 발생할 수 있습니다. 프로덕션 IIS 서버에 배포 되는 경우 HTTP 405 오류를 반환 합니다.
 
 ## <a name="what-causes-http-405-errors"></a>HTTP 405 오류를 발생 시키는 원인
 
-HTTP 405 오류 문제를 해결 하는 방법에 대 한 첫 번째 단계는 HTTP 405 오류가 실제로 무엇을 의미 하는지 이해 하는 것입니다. HTTP에 대 한 기본 관리 문서는 [RFC 2616](http://www.ietf.org/rfc/rfc2616.txt)로, http 405 상태 코드를 ***허용 되지 않는 메서드로***정의 하 고, 요청 줄에 지정 된 메서드가 &quot;요청 URI로 식별 되는 리소스입니다. 즉, http 동사는 HTTP 클라이언트가 요청한 특정 URL에 대해 허용 되지 않습니다.&quot;
+HTTP 405 오류 문제를 해결 하는 방법에 대 한 첫 번째 단계는 HTTP 405 오류가 실제로 무엇을 의미 하는지 이해 하는 것입니다. HTTP에 대 한 기본 관리 문서는 [RFC 2616](http://www.ietf.org/rfc/rfc2616.txt)로, http 405 상태 코드를 ***허용 되지 않는 메서드로***정의 하 고, 요청 줄에 지정 된 메서드가 요청 URI로 식별 되는 리소스에 허용 되지 않는 &quot;상황으로이 상태 코드를 추가로 설명 합니다. 즉, http 동사는 HTTP 클라이언트가 요청한 특정 URL에 대해 허용 되지 않습니다.&quot;
 
 간단한 검토로, RFC 2616, RFC 4918 및 RFC 5789에 정의 된 가장 많이 사용 되는 HTTP 메서드는 다음과 같습니다.
 
-| HTTP 메서드 | 설명 |
+| HTTP 메서드 | Description |
 | --- | --- |
-| **가져오기** | 이 메서드는 URI에서 데이터를 검색 하는 데 사용 되며, 가장 많이 사용 되는 HTTP 메서드입니다. |
+| **GET** | 이 메서드는 URI에서 데이터를 검색 하는 데 사용 되며, 가장 많이 사용 되는 HTTP 메서드입니다. |
 | **HEAD** | 이 메서드는 단순히 HTTP 상태를 검색 하는 요청 URI에서 데이터를 검색 하지 않는다는 점을 제외 하 고 GET 메서드와 매우 유사 합니다. |
-| **올리기** | 이 메서드는 일반적으로 새 데이터를 URI로 보내는 데 사용 됩니다. POST는 종종 양식 데이터를 전송 하는 데 사용 됩니다. |
-| **보관** | 이 메서드는 일반적으로 원시 데이터를 URI로 보내는 데 사용 됩니다. PUT은 Web API 응용 프로그램에 JSON 또는 XML 데이터를 전송 하는 데 종종 사용 됩니다. |
+| **POST** | 이 메서드는 일반적으로 새 데이터를 URI로 보내는 데 사용 됩니다. POST는 종종 양식 데이터를 전송 하는 데 사용 됩니다. |
+| **PUT** | 이 메서드는 일반적으로 원시 데이터를 URI로 보내는 데 사용 됩니다. PUT은 Web API 응용 프로그램에 JSON 또는 XML 데이터를 전송 하는 데 종종 사용 됩니다. |
 | **DELETE** | 이 메서드는 URI에서 데이터를 제거 하는 데 사용 됩니다. |
 | **OPTIONS** | 이 메서드는 일반적으로 URI에 대해 지원 되는 HTTP 메서드 목록을 검색 하는 데 사용 됩니다. |
 | **이동 복사** | 이러한 두 가지 메서드는 WebDAV와 함께 사용 되며 자체의 용도에 대 한 설명이 필요 합니다. |
 | **MKCOL** | 이 메서드는 WebDAV와 함께 사용 되며 지정 된 URI에 컬렉션 (예: 디렉터리)을 만드는 데 사용 됩니다. |
 | **PROPFIND PROPPATCH** | 이러한 두 메서드는 WebDAV에서 사용 되며, URI에 대 한 속성을 쿼리하거나 설정 하는 데 사용 됩니다. |
 | **잠금 잠금 해제** | 이러한 두 메서드는 WebDAV에서 사용 되며, 작성할 때 요청 URI에 의해 식별 되는 리소스를 잠그거나 잠금 해제 하는 데 사용 됩니다. |
-| **패치나** | 이 메서드는 기존 HTTP 리소스를 수정 하는 데 사용 됩니다. |
+| **PATCH** | 이 메서드는 기존 HTTP 리소스를 수정 하는 데 사용 됩니다. |
 
 이러한 HTTP 메서드 중 하나가 서버에서 사용 하도록 구성 된 경우 서버는 HTTP 상태 및 요청에 적절 한 기타 데이터를 사용 하 여 응답 합니다. 예를 들어 GET 메서드는 HTTP 200 ***OK*** 응답을 받을 수 있으며 PUT 메서드는 Http 201 ***생성*** 응답을 받을 수 있습니다.
 
@@ -69,7 +69,7 @@ HTTP 응답:
 
 ## <a name="resolve-http-405-errors"></a>HTTP 405 오류 해결
 
-특정 HTTP 동사가 허용 되지 않는 이유는 여러 가지가 있지만 IIS에서이 오류가 발생 하는 가장 큰 원인은 다음과 같습니다. 여러 처리기가 동일한 동사/메서드에 대해 정의 되 고 처리기 중 하나가 필요한 처리기를 차단 하 고 있습니다. 요청을 처리 하 고 있습니다. 설명에 따라 IIS는 *applicationhost.config* 및 *web.config* 파일의 주문 처리기 항목을 기반으로 처음부터 마지막으로 처리기를 처리 합니다. 여기서 경로, 동사, 리소스 등의 첫 번째 일치 하는 조합은를 처리 하는 데 사용 됩니다. 요청입니다.
+특정 HTTP 동사가 허용 되지 않는 이유는 여러 가지가 있지만 IIS에서이 오류가 발생 하는 가장 큰 원인은 다음과 같습니다. 동일한 동사/메서드에 대해 여러 처리기가 정의 되 고 처리기 중 하나가 요청 처리에서 예상한 처리기를 차단 하 고 있습니다. 설명 방식으로 IIS는 *applicationhost.config* 및 *web.config* 파일의 주문 처리기 항목을 기반으로 처음부터 마지막으로 처리기를 처리 합니다. 여기서 경로, 동사, 리소스 등의 첫 번째 일치 하는 조합이 요청을 처리 하는 데 사용 됩니다.
 
 다음 예제는 PUT 메서드를 사용 하 여 Web API 응용 프로그램에 데이터를 전송할 때 HTTP 405 오류를 반환 하는 IIS 서버의 *applicationhost.config* 파일에서 발췌 한 것입니다. 이 발췌문에서는 몇 가지 HTTP 처리기가 정의 되 고 각 처리기는 구성 된 다른 HTTP 메서드 집합을 가집니다. 목록의 마지막 항목은 다른 처리기에 chanc 된 후 사용 되는 기본 처리기 인 정적 콘텐츠 처리기입니다. e: 요청을 검토 합니다.
 

@@ -9,11 +9,11 @@ ms.assetid: faab8503-2984-48a9-8a40-7728461abc50
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/aspnet-ajax/understanding-asp-net-ajax-updatepanel-triggers
 msc.type: authoredcontent
 ms.openlocfilehash: b1cc869f373d4f8283b4d92af74707c3f11fef61
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74588780"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78440543"
 ---
 # <a name="understanding-aspnet-ajax-updatepanel-triggers"></a>ASP.NET AJAX UpdatePanel 트리거 이해
 
@@ -53,7 +53,7 @@ Visual Studio의 태그 편집기에서 작업 하는 경우 `UpdatePanel` 컨�
 
 *태그 하위 항목:*
 
-| **태그가** | **설명** |
+| **Tag** | **설명** |
 | --- | --- |
 | &lt;asp: AsyncPostBackTrigger&gt; | 이 트리거 참조를 포함 하는 UpdatePanel에 대 한 부분 페이지 업데이트를 발생 시킬 컨트롤 및 이벤트를 지정 합니다. |
 | &lt;asp: PostBackTrigger&gt; | 전체 페이지를 업데이트 (전체 페이지 새로 고침) 할 컨트롤 및 이벤트를 지정 합니다. 이 태그는 컨트롤이 부분 렌더링을 트리거하는 경우 전체 새로 고침을 강제 적용 하는 데 사용할 수 있습니다. |

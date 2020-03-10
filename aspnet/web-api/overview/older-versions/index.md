@@ -1,8 +1,8 @@
 ---
 uid: web-api/overview/older-versions/index
-title: Web API-ASP.NET의 이전 버전에 대 한 설명서 4.x
+title: 이전 버전의 Web API에 대 한 설명서-ASP.NET 4.x
 author: rick-anderson
-description: ASP.NET Web API의 이전 버전 설명서 4.x 합니다.
+description: ASP.NET 4.x 용 Web API의 이전 버전에 대 한 설명서입니다.
 ms.author: riande
 ms.date: 10/23/2014
 ms.custom: seoapril2019
@@ -10,15 +10,15 @@ ms.assetid: f5bc7426-27c6-492c-914f-b9d2eb49753d
 msc.legacyurl: /web-api/overview/older-versions
 msc.type: chapter
 ms.openlocfilehash: 9ef642b52d61d7737b37d4499564d71a3bedcd8a
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65109113"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78447995"
 ---
-# <a name="documentation-on-older-versions-of-web-api"></a>이전 버전의 웹 API에 대 한 설명서
+# <a name="documentation-on-older-versions-of-web-api"></a>이전 버전의 Web API에 대 한 설명서
 
-> ASP.NET Web API의 이전 버전 설명서 4.x 합니다.
+> ASP.NET 4.x 용 Web API의 이전 버전에 대 한 설명서입니다.
 
 - [Web API 1에서 CRUD 작업 사용](creating-a-web-api-that-supports-crud-operations.md)
 - [Entity Framework 5에 ASP.NET Web API 1 사용](using-web-api-1-with-entity-framework-5/index.md)

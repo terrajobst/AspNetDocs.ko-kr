@@ -9,11 +9,11 @@ ms.assetid: 0ee9318c-29bb-4d58-b1dc-94e575b8ae10
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/master-pages-and-asp-net-ajax-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 7be4ff422b91321ff83ed1f1c731c9a0bfe768f1
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74637767"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78421817"
 ---
 # <a name="master-pages-and-aspnet-ajax-vb"></a>마스터 페이지 및 ASP.NET AJAX(VB)
 
@@ -129,7 +129,7 @@ ASP.NET AJAX 프레임 워크에는 지정 된 시간에 다시 게시를 수행
 
 [!code-vb[Main](master-pages-and-asp-net-ajax-vb/samples/sample6.vb)]
 
-이것이 전부입니다! 브라우저를 통해 페이지를 다시 방문 합니다. 처음에는 임의의 제품 정보가 표시 됩니다. 화면을 patiently 하는 경우 15 초 후에 새 제품 magically에 대 한 정보가 기존 디스플레이를 대체 하는 것을 알 수 있습니다.
+이제 모든 작업을 마쳤습니다. 브라우저를 통해 페이지를 다시 방문 합니다. 처음에는 임의의 제품 정보가 표시 됩니다. 화면을 patiently 하는 경우 15 초 후에 새 제품 magically에 대 한 정보가 기존 디스플레이를 대체 하는 것을 알 수 있습니다.
 
 여기에서 발생 하는 상황을 더 잘 확인 하려면 표시를 마지막으로 업데이트 한 시간을 표시 하는 레이블 컨트롤을 UpdatePanel에 추가 해 보겠습니다. UpdatePanel 내에 Label 웹 컨트롤을 추가 하 고, 해당 `ID` `LastUpdateTime`로 설정 하 고, 해당 `Text` 속성의 선택을 취소 합니다. 그런 다음 UpdatePanel의 `Load` 이벤트에 대 한 이벤트 처리기를 만들고 레이블에 현재 시간을 표시 합니다. (전체 또는 부분 페이지 포스트백 마다 UpdatePanel의 `Load` 이벤트가 발생 합니다.)
 
@@ -212,7 +212,7 @@ ASP.NET AJAX 프레임 워크를 사용 하 여 AJAX 사용 웹 응용 프로그
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -223,7 +223,7 @@ ASP.NET AJAX 프레임 워크를 사용 하 여 AJAX 사용 웹 응용 프로그
 - [NEWID를 사용 하 여 레코드를 임의로 정렬](http://www.sqlteam.com/article/using-newid-to-randomly-sort-records)
 - [Timer 컨트롤 사용](http://aspnet.4guysfromrolla.com/articles/061808-1.aspx)
 
-### <a name="about-the-author"></a>작성자 정보
+### <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)는 여러 ASP/ASP. NET books의 작성자와 4GuysFromRolla.com의 창립자가 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 3.5을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672329972/4guysfromrollaco)것입니다. Scott은 [mitchell@4GuysFromRolla.com](mailto:mitchell@4GuysFromRolla.com) 또는 [http://ScottOnWriting.NET](http://scottonwriting.net/)의 블로그를 통해 연결할 수 있습니다.
 

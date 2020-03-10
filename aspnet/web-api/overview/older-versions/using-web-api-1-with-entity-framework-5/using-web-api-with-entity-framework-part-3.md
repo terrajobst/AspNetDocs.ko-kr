@@ -9,11 +9,11 @@ ms.assetid: 6b9ae3c4-0274-4170-a1bb-9df9c546b2a9
 msc.legacyurl: /web-api/overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-3
 msc.type: authoredcontent
 ms.openlocfilehash: f39be7a84e85db93487d246e9f8cb59c401fe5ce
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74600037"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78447911"
 ---
 # <a name="part-3-creating-an-admin-controller"></a>3 부: 관리 컨트롤러 만들기
 
@@ -64,12 +64,12 @@ OrdersContext.cs 파일을 엽니다. 생성자는 데이터베이스 연결 문
 
 `AdminController` 클래스는 기본 CRUD 기능을 구현 하는 5 개의 메서드를 정의 합니다. 각 메서드는 클라이언트에서 호출할 수 있는 URI에 해당 합니다.
 
-| Controller 메서드 | 설명 | URI | HTTP 메서드 |
+| Controller 메서드 | Description | URI | HTTP 메서드 |
 | --- | --- | --- | --- |
-| GetProducts | 모든 제품을 가져옵니다. | a p i/제품 | 가져오기 |
-| GetProduct | ID로 제품을 찾습니다. | a p i/제품/*i d* | 가져오기 |
+| GetProducts | 모든 제품을 가져옵니다. | a p i/제품 | GET |
+| GetProduct | ID로 제품을 찾습니다. | a p i/제품/*i d* | GET |
 | PutProduct | 제품을 업데이트 합니다. | a p i/제품/*i d* | PUT |
-| PostProduct | 새 제품을 만듭니다. | a p i/제품 | 올리기 |
+| PostProduct | 새 제품을 만듭니다. | a p i/제품 | POST |
 | DeleteProduct | 제품을 삭제 합니다. | a p i/제품/*i d* | Delete |
 
 각 메서드는 `OrdersContext`를 호출 하 여 데이터베이스를 쿼리 합니다. 컬렉션 (PUT, POST 및 DELETE) 호출을 수정 하는 메서드는 데이터베이스에 대 한 변경 내용을 유지 하는 `db.SaveChanges` 합니다. 컨트롤러는 HTTP 요청당 생성 된 다음 삭제 되므로 메서드가 반환 되기 전에 변경 내용을 유지 해야 합니다.
@@ -78,7 +78,7 @@ OrdersContext.cs 파일을 엽니다. 생성자는 데이터베이스 연결 문
 
 Entity Framework에는 시작 시 데이터베이스를 채우고 모델이 변경 될 때마다 자동으로 데이터베이스를 다시 만들 수 있는 유용한 기능이 있습니다. 이 기능은 모델을 변경 하는 경우에도 항상 일부 테스트 데이터가 있으므로 개발 하는 동안 유용 합니다.
 
-솔루션 탐색기에서 모델 폴더를 마우스 오른쪽 단추로 클릭 하 고 `OrdersContextInitializer`라는 새 클래스를 만듭니다. 다음 구현에 붙여넣습니다.
+솔루션 탐색기에서 모델 폴더를 마우스 오른쪽 단추로 클릭 하 고 `OrdersContextInitializer`라는 새 클래스를 만듭니다. 다음 구현에 붙여 넣습니다.
 
 [!code-csharp[Main](using-web-api-with-entity-framework-part-3/samples/sample4.cs)]
 

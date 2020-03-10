@@ -9,11 +9,11 @@ ms.assetid: d6e758b6-6571-484d-a132-34ee6c47747a
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/displaying-a-table-of-database-data-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 3c908d030076fc8400190ef3cf1672632ac1ed6b
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74589613"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78436847"
 ---
 # <a name="displaying-a-table-of-database-data-c"></a>데이터베이스 데이터의 테이블 표시(C#)
 
@@ -33,9 +33,9 @@ ms.locfileid: "74589613"
 
 | **열 이름** | **데이터 형식** | **Null 허용** |
 | --- | --- | --- |
-| ID | 정수 | False |
-| 제목 | Nvarchar (200) | False |
-| Idm | NVarchar (50) | False |
+| Id | Int | False |
+| 제목 | Nvarchar(200) | False |
+| 감독 | NVarchar(50) | False |
 | DateReleased | DateTime | False |
 
 ASP.NET MVC 응용 프로그램에서 영화 테이블을 나타내려면 모델 클래스를 만들어야 합니다. 이 자습서에서는 Microsoft Entity Framework를 사용 하 여 모델 클래스를 만듭니다.
@@ -53,7 +53,7 @@ ASP.NET MVC 응용 프로그램에서 영화 테이블을 나타내려면 모델
 추가 단추를 클릭 하면 엔터티 데이터 모델 마법사가 나타납니다 (그림 1 참조). 마법사를 완료 하려면 다음 단계를 수행 합니다.
 
 1. **모델 콘텐츠 선택** 단계에서 **데이터베이스에서 생성** 옵션을 선택 합니다.
-2. **데이터 연결 선택** 단계에서 연결 설정에 대해 *MoviesDB* 데이터 연결 및 이름 *MoviesDBEntities* 을 사용 합니다. **다음** 단추를 클릭 합니다.
+2. **데이터 연결 선택** 단계에서 연결 설정에 대해 *MoviesDB* 데이터 연결 및 이름 *MoviesDBEntities* 을 사용 합니다. **다음** 단추를 클릭합니다.
 3. **데이터베이스 개체 선택** 단계에서 테이블 노드를 확장 하 고 동영상 테이블을 선택 합니다. 네임 스페이스 *모델* 을 입력 하 고 **마침** 단추를 클릭 합니다.
 
 [LINQ to SQL 클래스 ![만들기](displaying-a-table-of-database-data-cs/_static/image1.jpg)](displaying-a-table-of-database-data-cs/_static/image1.png)

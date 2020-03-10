@@ -2,22 +2,22 @@
 uid: mvc/pluralsight
 title: Pluralsight의 MVC 비디오 교육 | Microsoft Docs
 author: rick-anderson
-description: Pluralsight 동영상 교육이의 MVC 비디오 교육을 얻게 됩니다 실행 ASP.NET MVC를 사용 합니다. 개발 설정에서 모든 내용을 설명 하는 중...
+description: Pluralsight에서 제공 하는 MVC 비디오 교육이 무료 비디오 교육은 ASP.NET MVC를 사용 하 여 시작 하 고 실행할 수 있습니다. 개발을 설정 하는 것부터 모든 항목을 다룹니다.
 ms.author: riande
 ms.date: 03/09/2011
 ms.assetid: 87612fe1-258c-4f50-88d8-c3047dec3f14
 msc.legacyurl: /mvc/pluralsight
 msc.type: content
 ms.openlocfilehash: 200e6b8cf8c32fbf70b383fc02e2fd74cbc313e5
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59419875"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78432371"
 ---
 # <a name="mvc-video-training-from-pluralsight"></a>Pluralsight의 MVC 비디오 교육
 
-### <a name="videos"></a>비디오
+### <a name="videos"></a>동영상
 
 - [소개 및 필수 구성 요소](https://pluralsight.com/training/Player?author=scott-allen&name=aspdotnet-mvc5-fundamentals-m1-introduction&mode=live&clip=0&course=aspdotnet-mvc5-fundamentals)
 - [OWIN 및 Katana](https://pluralsight.com/training/Player?author=scott-allen&name=aspdotnet-mvc5-fundamentals-m2-katana&mode=live&clip=0&course=aspdotnet-mvc5-fundamentals)
@@ -26,15 +26,15 @@ ms.locfileid: "59419875"
 - [Web API 2](https://pluralsight.com/training/Player?author=scott-allen&name=aspdotnet-mvc5-fundamentals-m5-webapi2&mode=live&clip=0&course=aspdotnet-mvc5-fundamentals)
 - [Entity Framework 6](https://pluralsight.com/training/Player?author=scott-allen&name=aspdotnet-mvc5-fundamentals-m6-ef6&mode=live&clip=0&course=aspdotnet-mvc5-fundamentals)
 - [SignalR](https://pluralsight.com/training/Player?author=scott-allen&name=aspdotnet-mvc5-fundamentals-m7-signalr&mode=live&clip=0&course=aspdotnet-mvc5-fundamentals)
-- [Web 개발자 도구 및 Visual Studio 2013](https://pluralsight.com/training/Player?author=scott-allen&name=aspdotnet-mvc5-fundamentals-m8-visualstudio&mode=live&clip=0&course=aspdotnet-mvc5-fundamentals)
+- [웹 개발자 도구 및 Visual Studio 2013](https://pluralsight.com/training/Player?author=scott-allen&name=aspdotnet-mvc5-fundamentals-m8-visualstudio&mode=live&clip=0&course=aspdotnet-mvc5-fundamentals)
 
-> Pluralsight K. Scott Allen 기록한이 MVC 5 과정에 신속 하 게 속도 ASP.NET MVC의 최신 릴리스에서 훌륭한 방법을 제공 합니다. Scott의 프레젠테이션 스타일 알아보기 쉬운 및 기술적으로 매력적 이며 과정 형식, 비디오 플레이어 및 전체 주기는 훌륭한 합니다. 또한 – 이므로 무료로 사용할 수 있는 MVC 5를 지금 알아봅니다 필요가 이유가 없습니다.
+> 이 MVC 5 강좌는 K b에 의해 기록 되었으며, Pluralsight 용 Scott Allen는 ASP.NET MVC의 최신 릴리스를 빠르게 파악할 수 있는 훌륭한 방법을 제공 합니다. Scott의 프레젠테이션 스타일은 따르고 기술적으로 강력 하며 강좌 형식, 비디오 플레이어 및 전체 흐름은 매우 유용 합니다. Plus – 무료 이므로 지금 MVC 5를 학습할 필요가 없습니다.
 >
-> &mdash;Scott Guthrie, 부사장, Microsoft 클라우드 및 엔터프라이즈 그룹, Microsoft
+> &mdash;Scott Guthrie, Microsoft 클라우드 및 Enterprise 그룹인 Microsoft
 
 ![pluralsight-logo-playbutton](pluralsight/_static/image1.png)
 
-3,000 + 개발에 대 한 액세스를 잠금 해제, IT 및 언제, 어디서 나 볼 수 있는 창조적인 과정입니다.
+언제 어디서 나 시청할 수 있는 3000 + dev, IT 및 creative 과정에 대 한 액세스를 잠금 해제 합니다.
 
-* [ASP.NET MVC 5의 기본](https://www.pluralsight.com/courses/aspdotnet-mvc5-fundamentals)
-* [Pluralsight 가격 책정 및 계획](https://www.pluralsight.com/pricing)
+* [ASP.NET MVC 5 기본 사항](https://www.pluralsight.com/courses/aspdotnet-mvc5-fundamentals)
+* [Pluralsight 가격 책정 및 요금제](https://www.pluralsight.com/pricing)

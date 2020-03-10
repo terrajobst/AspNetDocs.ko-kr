@@ -2,117 +2,117 @@
 uid: mvc/overview/older-versions-1/controllers-and-routing/aspnet-mvc-controllers-overview-cs
 title: ASP.NET MVC 컨트롤러 개요 (C#) | Microsoft Docs
 author: StephenWalther
-description: 이 자습서에서는 Stephen walther가 ASP.NET MVC 컨트롤러를 소개합니다. 새 컨트롤러를 만들고 다양 한 유형의 작업 응답을 반환 하는 방법을 배웁니다.
+description: 이 자습서에서 Stephen Walther는 ASP.NET MVC 컨트롤러를 소개 합니다. 새 컨트롤러를 만들고 다양 한 유형의 작업을 반환 하는 방법에 대해 알아봅니다.
 ms.author: riande
 ms.date: 02/16/2008
 ms.assetid: b985c49a-3668-455c-a366-f85f6bc64b12
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/aspnet-mvc-controllers-overview-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 1a287b37742400a17c2ed53cfd00bfb053b4f3d2
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65123601"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78437681"
 ---
 # <a name="aspnet-mvc-controller-overview-c"></a>ASP.NET MVC 컨트롤러 개요(C#)
 
-[Stephen walther가](https://github.com/StephenWalther)
+[Stephen Walther](https://github.com/StephenWalther)
 
-> 이 자습서에서는 Stephen walther가 ASP.NET MVC 컨트롤러를 소개합니다. 새 컨트롤러를 만들고 다양 한 유형의 작업 결과 반환 하는 방법을 알아봅니다.
+> 이 자습서에서 Stephen Walther는 ASP.NET MVC 컨트롤러를 소개 합니다. 새 컨트롤러를 만들고 다른 유형의 작업 결과를 반환 하는 방법에 대해 알아봅니다.
 
-이 자습서에서는 ASP.NET MVC 컨트롤러, 컨트롤러 작업 및 작업 결과의 항목을 살펴봅니다. 이 자습서를 완료 한 후에 컨트롤러 방문자는 ASP.NET MVC 웹 사이트와 상호 작용 하는 방식을 제어를 사용 하는 방법을 이해할 수 있습니다.
+이 자습서에서는 ASP.NET MVC 컨트롤러, 컨트롤러 작업 및 작업 결과 항목을 살펴봅니다. 이 자습서를 완료 한 후에는 컨트롤러가 ASP.NET MVC 웹 사이트와 상호 작용 하는 방식을 제어 하는 데 컨트롤러를 사용 하는 방법을 이해 하 게 됩니다.
 
-## <a name="understanding-controllers"></a>컨트롤러의 이해
+## <a name="understanding-controllers"></a>컨트롤러 이해
 
-MVC 컨트롤러는 ASP.NET MVC 웹 사이트에 대해 수행 된 요청에 응답 하는 것에 대 한 책임이 있습니다. 각 브라우저 요청을 특정 컨트롤러에 매핑됩니다. 예를 들어 브라우저의 주소 표시줄에 다음 URL을 입력 하는 가정해 보겠습니다.
+MVC 컨트롤러는 ASP.NET MVC 웹 사이트에 대 한 요청에 응답 해야 합니다. 각 브라우저 요청은 특정 컨트롤러에 매핑됩니다. 예를 들어 브라우저의 주소 표시줄에 다음 URL을 입력 한다고 가정 합니다.
 
 `http://localhost/Product/Index/3`
 
-이 경우 ProductController 라는 컨트롤러가 호출 됩니다. ProductController는 브라우저 요청에 대 한 응답을 생성 하는 일을 담당 합니다. 예를 들어 컨트롤러 브라우저로 특정 보기를 반환할 수 있습니다 또는 컨트롤러 다른 컨트롤러에 사용자를 리디렉션할 수 있습니다.
+이 경우에는 제품 컨트롤러 라는 컨트롤러가 호출 됩니다. 제품 컨트롤러는 브라우저 요청에 대 한 응답을 생성 합니다. 예를 들어 컨트롤러가 특정 뷰를 브라우저에 다시 반환 하거나 컨트롤러가 사용자를 다른 컨트롤러로 리디렉션할 수 있습니다.
 
-목록 1 ProductController 라는 간단한 컨트롤러가 포함 되어 있습니다.
+목록 1은 제품 컨트롤러 라는 간단한 컨트롤러를 포함 합니다.
 
-**Listing1 - Controllers\ProductController.cs**
+**Listing1-Controllers\ProductController.cs**
 
 [!code-csharp[Main](aspnet-mvc-controllers-overview-cs/samples/sample1.cs)]
 
-목록 1에서 보듯이 컨트롤러 클래스 (Visual Basic.NET 또는 C# 클래스)만 됩니다. 컨트롤러는 기본 System.Web.Mvc.Controller 클래스에서 파생 된 클래스입니다. 컨트롤러를 몇 가지 유용한 메서드를 무료로 상속 컨트롤러를이 기본 클래스에서 상속 하기 때문에 (에서는 이러한 메서드에 대해 잠시 후에).
+목록 1에서 볼 수 있듯이 컨트롤러는 단지 클래스 (Visual Basic .NET 또는 C# 클래스)입니다. 컨트롤러는 기본 System.object 클래스에서 파생 되는 클래스입니다. 컨트롤러가이 기본 클래스에서 상속 하기 때문에 컨트롤러는 몇 가지 유용한 메서드를 무료로 상속 합니다 (이 메서드에 대해 잠시 설명).
 
 ## <a name="understanding-controller-actions"></a>컨트롤러 작업 이해
 
-컨트롤러는 컨트롤러 작업을 노출합니다. 작업을 사용 하면 브라우저 주소 표시줄에서 특정 URL을 입력 하면 호출 되는 컨트롤러의 메서드입니다. 예를 들어 다음 URL에 대 한 요청을 수행 하는 가정해 보겠습니다.
+컨트롤러는 컨트롤러 작업을 노출 합니다. 작업은 브라우저 주소 표시줄에 특정 URL을 입력할 때 호출 되는 컨트롤러의 메서드입니다. 예를 들어 다음 URL에 대 한 요청을 수행 한다고 가정해 보겠습니다.
 
 `http://localhost/Product/Index/3`
 
-이 예에서 index () 메서드는 ProductController 클래스에서 호출 됩니다. Index () 메서드는 컨트롤러 동작의 예입니다.
+이 경우에는 Index () 메서드가 제품 컨트롤러 클래스에서 호출 됩니다. Index () 메서드는 컨트롤러 작업의 예입니다.
 
-컨트롤러 동작을 컨트롤러 클래스의 공용 메서드여야 합니다. 기본적으로 C# 메서드는 전용 메서드. 컨트롤러 클래스에 추가한 모든 public 메서드를 컨트롤러 작업으로 자동으로 노출 된다는 것을 실현 (않도록 주의 해야이 대 한 브라우저 주소 표시줄에 올바른 URL을 입력 하면 universe의 모든 사용자가 컨트롤러 작업을 호출할 수 있습니다 때문).
+컨트롤러 작업은 컨트롤러 클래스의 공용 메서드 여야 합니다. C#기본적으로 메서드는 전용 메서드입니다. 컨트롤러 클래스에 추가 하는 공용 메서드는 컨트롤러 작업으로 자동으로 노출 됩니다. 예를 들어, 컨트롤러 작업은 간단 하 게 브라우저 주소 표시줄에 올바른 URL을 입력 하 여 universe의 모든 사용자가 호출할 수 있기 때문에 주의 해야 합니다.
 
-컨트롤러 작업에 의해 충족 되어야 하는 몇 가지 추가 요구 사항이 있습니다. 컨트롤러 작업으로 사용 된 메서드를 오버 로드할 수 없습니다. 또한 컨트롤러 작업에는 정적 메서드 수 없습니다. 이외에 컨트롤러 작업으로 거의 모든 메서드를 사용할 수 있습니다.
+컨트롤러 작업에서 충족 해야 하는 몇 가지 추가 요구 사항이 있습니다. 컨트롤러 작업으로 사용 되는 메서드는 오버 로드할 수 없습니다. 또한 컨트롤러 작업은 정적 메서드가 될 수 없습니다. 그 외에는 모든 메서드를 컨트롤러 작업으로 사용할 수 있습니다.
 
 ## <a name="understanding-action-results"></a>작업 결과 이해
 
-컨트롤러 작업 반환 이라는 것을 *작업 결과*합니다. 작업 결과 브라우저 요청에 대 한 응답에서 컨트롤러 작업을 반환 하는 항목입니다.
+컨트롤러 작업은 *작업 결과*라고 하는 항목을 반환 합니다. 작업 결과는 브라우저 요청에 대 한 응답으로 컨트롤러 작업에서 반환 하는 작업입니다.
 
-ASP.NET MVC 프레임 워크는 여러 유형의 작업 결과 포함 하 여 지원 합니다.
+ASP.NET MVC 프레임 워크는 다음과 같은 몇 가지 유형의 작업 결과를 지원 합니다.
 
-1. ViewResult-나타내는 HTML 및 태그입니다.
-2. EmptyResult-없는 결과를 나타냅니다.
-3. 된 RedirectResult-새 URL로 리디렉션을 나타냅니다.
+1. ViewResult-HTML 및 태그를 나타냅니다.
+2. EmptyResult-결과가 없음을 나타냅니다.
+3. RedirectResult-새 URL로의 리디렉션을 나타냅니다.
 4. JsonResult-AJAX 응용 프로그램에서 사용할 수 있는 JavaScript Object Notation 결과를 나타냅니다.
 5. JavaScriptResult-JavaScript 스크립트를 나타냅니다.
 6. ContentResult-텍스트 결과를 나타냅니다.
-7. FileContentResult-은 다운로드 가능한 파일을 (이진 콘텐츠)를 나타냅니다.
-8. FilePathResult-다운로드 한 파일을 (경로로)를 나타냅니다.
-9. FileStreamResult-다운로드 한 파일을 (파일 스트림과)를 나타냅니다.
+7. FileContentResult-다운로드 가능한 파일 (이진 콘텐츠 포함)을 나타냅니다.
+8. FilePathResult-다운로드 가능한 파일 (경로 포함)을 나타냅니다.
+9. FileStreamResult-다운로드 가능한 파일 (파일 스트림 포함)을 나타냅니다.
 
-이러한 작업 결과의 모든 기본 ActionResult 클래스에서 상속합니다.
+이러한 모든 작업 결과는 기본 ActionResult 클래스에서 상속 됩니다.
 
-대부분의 경우 컨트롤러 작업을 ViewResult를 반환합니다. 예를 들어 인덱스 컨트롤러 작업 목록 2에서는 ViewResult를 반환합니다.
+대부분의 경우 컨트롤러 작업은 ViewResult를 반환 합니다. 예를 들어 목록 2의 인덱스 컨트롤러 동작은 ViewResult를 반환 합니다.
 
-**Listing 2 - Controllers\BookController.cs**
+**목록 2-Controllerss\intstscs**
 
 [!code-csharp[Main](aspnet-mvc-controllers-overview-cs/samples/sample2.cs)]
 
-액션을 ViewResult 반환 될 때 HTML 브라우저에 반환 됩니다. 목록 2에서 index () 메서드는 브라우저에 인덱스를 명명 된 뷰를 반환 합니다.
+작업에서 ViewResult를 반환 하면 HTML이 브라우저로 반환 됩니다. 목록 2의 Index () 메서드는 브라우저에 대 한 Index 라는 뷰를 반환 합니다.
 
-목록 2에서 index () 작업을 ViewResult() 반환 하지 않음을 알 수 있습니다. 대신, 기본 컨트롤러 클래스의 View() 메서드 호출 됩니다. 일반적으로 작업 결과 직접 돌아가지 않으면. 대신, 호출 기본 컨트롤러 클래스의 다음 메서드 중 하나:
+목록 2의 Index () 동작은 ViewResult ()를 반환 하지 않습니다. 대신 컨트롤러 기본 클래스의 View () 메서드를 호출 합니다. 일반적으로 작업 결과를 직접 반환 하지 않습니다. 대신 컨트롤러 기본 클래스의 다음 메서드 중 하나를 호출 합니다.
 
-1. 보기-ViewResult 작업 결과 반환 합니다.
-2. 리디렉션-된 RedirectResult 작업 결과 반환 합니다.
-3. RedirectToAction-RedirectToRouteResult 작업 결과 반환 합니다.
-4. RedirectToRoute-RedirectToRouteResult 작업 결과 반환 합니다.
-5. Json-JsonResult 작업 결과 반환 합니다.
-6. JavaScriptResult-JavaScriptResult를 반환 합니다.
-7. 콘텐츠-ContentResult 작업 결과 반환 합니다.
-8. 파일-반환 FileContentResult, FilePathResult, 또는 매개 변수에 따라 FileStreamResult 메서드에 전달 합니다.
+1. View-ViewResult 작업 결과를 반환 합니다.
+2. 리디렉션-RedirectResult 작업 결과를 반환 합니다.
+3. RedirectToAction-RedirectToRouteResult 작업 결과를 반환 합니다.
+4. RedirectToRoute-RedirectToRouteResult 작업 결과를 반환 합니다.
+5. Json-JsonResult 작업 결과를 반환 합니다.
+6. JavaScriptResult-JavaScriptResult을 반환 합니다.
+7. 콘텐츠-ContentResult 작업 결과를 반환 합니다.
+8. File-메서드에 전달 된 매개 변수에 따라 FileContentResult, FilePathResult 또는 FileStreamResult를 반환 합니다.
 
-따라서 브라우저에 뷰를 반환 하려는 경우에 View() 메서드를 호출 합니다. 다른 하나의 컨트롤러 작업에서 사용자를 리디렉션하 하려는 경우 RedirectToAction() 메서드를 호출 합니다. 예를 들어 목록 3에서 Details() 작업으로 표시 또는 Id 매개 변수 값에 있는지 여부에 따라 index () 작업에 사용자를 리디렉션합니다.
+따라서 브라우저에 뷰를 반환 하려는 경우 View () 메서드를 호출 합니다. 한 컨트롤러 동작에서 다른 컨트롤러로 사용자를 리디렉션하려면 RedirectToAction () 메서드를 호출 합니다. 예를 들어 목록 3의 Details () 동작은 Id 매개 변수에 값이 있는지 여부에 따라 뷰를 표시 하거나 사용자를 Index () 동작으로 리디렉션합니다.
 
-**3-CustomerController.cs 나열**
+**목록 3-CustomerController.cs**
 
 [!code-csharp[Main](aspnet-mvc-controllers-overview-cs/samples/sample3.cs)]
 
-ContentResult 작업 결과은 특별 합니다. 일반 텍스트로 된 작업 결과를 반환할 ContentResult 작업 결과 사용할 수 있습니다. 예를 들어, 4에서 index () 메서드는 일반 텍스트와 HTML 아니라 메시지를 반환합니다.
+ContentResult 작업 결과는 특수 합니다. ContentResult 작업 결과를 사용 하 여 일반 텍스트로 작업 결과를 반환할 수 있습니다. 예를 들어 4를 나열 하는 Index () 메서드는 메시지를 HTML이 아닌 일반 텍스트로 반환 합니다.
 
-**Listing 4 - Controllers\StatusController.cs**
+**목록 4-Controllers\StatusController.cs**
 
 [!code-csharp[Main](aspnet-mvc-controllers-overview-cs/samples/sample4.cs)]
 
-StatusController.Index() 작업이 호출 되 면 뷰를 반환 되지 않습니다. 대신 원시 텍스트 "Hello World!" 브라우저에 반환 됩니다.
+StatusController. Index () 동작을 호출 하면 뷰가 반환 되지 않습니다. 대신 "Hello World!" 원시 텍스트가 이 브라우저에 반환 됩니다.
 
-컨트롤러 작업 결과 작업 결과 없습니다-예를 들어, 날짜 또는-정수를 반환 하는 경우 다음 결과에 래핑됩니다 ContentResult를 자동으로. 예를 들어, index () 작업 목록 5에서 WorkController 호출 되 면 날짜도 반환 됩니다 ContentResult를 자동으로.
+컨트롤러 작업이 작업 결과가 아닌 결과 (예: 날짜 또는 정수)를 반환 하는 경우 결과가 ContentResult에 자동으로 래핑됩니다. 예를 들어 목록 5에서 작업 컨트롤러의 Index () 동작을 호출 하면 해당 날짜는 자동으로 ContentResult로 반환 됩니다.
 
-**5-WorkController.cs 나열**
+**목록 5-WorkController.cs**
 
 [!code-csharp[Main](aspnet-mvc-controllers-overview-cs/samples/sample5.cs)]
 
-목록 5에서 index () 작업에는 DateTime 개체를 반환합니다. ASP.NET MVC 프레임 워크 DateTime 개체를 문자열로 변환 하 고는 ContentResult에 DateTime 값을 자동으로 래핑합니다. 브라우저에는 날짜 및 시간을 일반 텍스트로 받습니다.
+목록 5의 Index () 동작은 DateTime 개체를 반환 합니다. ASP.NET MVC 프레임 워크는 DateTime 개체를 문자열로 변환 하 고 ContentResult의 DateTime 값을 자동으로 래핑합니다. 브라우저는 날짜와 시간을 일반 텍스트로 받습니다.
 
 ## <a name="summary"></a>요약
 
-이 자습서의 목적은 ASP.NET MVC 컨트롤러, 컨트롤러 작업 및 컨트롤러 작업 결과의 개념을 소개 하는 것 이었습니다. 첫 번째 섹션에서는 ASP.NET MVC 프로젝트에 새 컨트롤러를 추가 하는 방법을 알아보았습니다. 다음으로, 컨트롤러의 메서드를 공개 하는 방법을 알아보았습니다 우주 컨트롤러 작업으로 노출 됩니다. 마지막으로, 다양 한 컨트롤러 작업에서 반환 될 수 있는 작업 결과 설명 했습니다. 특히 ViewResult 고 RedirectToActionResult, ContentResult 컨트롤러 작업에서 반환 하는 방법에 설명 했습니다.
+이 자습서에서는 ASP.NET MVC 컨트롤러, 컨트롤러 작업 및 컨트롤러 작업 결과에 대 한 개념을 소개 합니다. 첫 번째 섹션에서는 ASP.NET MVC 프로젝트에 새 컨트롤러를 추가 하는 방법을 알아보았습니다. 다음으로 컨트롤러의 공용 메서드를 컨트롤러 작업으로 universe에 노출 하는 방법을 배웠습니다. 마지막으로, 컨트롤러 작업에서 반환 될 수 있는 다양 한 유형의 작업 결과에 대해 설명 했습니다. 특히 컨트롤러 작업에서 ViewResult, RedirectToActionResult 및 ContentResult를 반환 하는 방법에 대해 설명 했습니다.
 
 > [!div class="step-by-step"]
 > [이전](creating-an-action-vb.md)

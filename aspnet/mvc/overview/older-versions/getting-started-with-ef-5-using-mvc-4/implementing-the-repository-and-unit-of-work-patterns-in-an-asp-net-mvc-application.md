@@ -9,11 +9,11 @@ ms.assetid: 44761193-04ba-4990-9f90-145d3c10a716
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application
 msc.type: authoredcontent
 ms.openlocfilehash: 18de9b125ee5d10795b9ce1a366918dadf4fc4e3
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74595236"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78434381"
 ---
 # <a name="implementing-the-repository-and-unit-of-work-patterns-in-an-aspnet-mvc-application-9-of-10"></a>ASP.NET MVC 응용 프로그램에서 리포지토리 및 작업 단위 패턴 구현 (9/10)
 

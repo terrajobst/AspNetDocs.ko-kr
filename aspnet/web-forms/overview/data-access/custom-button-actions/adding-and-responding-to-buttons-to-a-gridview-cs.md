@@ -9,11 +9,11 @@ ms.assetid: 128fdb5f-4c5e-42b5-b485-f3aee90a8e38
 msc.legacyurl: /web-forms/overview/data-access/custom-button-actions/adding-and-responding-to-buttons-to-a-gridview-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 5c87386e4fe2c53b39162071689f2522dcc6c7ac
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74602767"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78442421"
 ---
 # <a name="adding-and-responding-to-buttons-to-a-gridview-c"></a>GridView에 단추를 추가하고 응답(C#)
 
@@ -245,7 +245,7 @@ ButtonField는 `e.CommandArgument` 매개 변수를 통해 단추를 클릭 한 
 
 > [!NOTE]
 > GridView (및 DetailsView)에는 해당 템플릿 필드에 단추, Linkbutton 또는 ImageButtons가 추가 될 수도 있습니다. BoundField와 마찬가지로 이러한 단추를 클릭 하면 다시 게시를 유도 하 고 GridView의 `RowCommand` 이벤트를 발생 시킵니다. 그러나 Templatefield로 변환에 단추를 추가 하는 경우 단추 `CommandArgument`는 ButtonFields를 사용할 때와 마찬가지로 행의 인덱스로 자동으로 설정 되지 않습니다. `RowCommand` 이벤트 처리기 내에서 클릭 된 단추의 행 인덱스를 확인 해야 하는 경우 다음과 같은 코드를 사용 하 여 Templatefield로 변환 내에서 해당 선언적 구문에 단추의 `CommandArgument` 속성을 수동으로 설정 해야 합니다.  
-> `<asp:Button runat="server" ... CommandArgument='<%# ((GridViewRow) Container).RowIndex %>'`.
+> `<asp:Button runat="server" ... CommandArgument='<%# ((GridViewRow) Container).RowIndex %>'`입니다.
 
 ## <a name="summary"></a>요약
 
@@ -255,7 +255,7 @@ GridView, DetailsView 및 FormView 컨트롤 모두 단추, Linkbutton 또는 Im
 
 행복 한 프로그래밍
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

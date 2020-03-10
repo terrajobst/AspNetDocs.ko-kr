@@ -1,23 +1,23 @@
 ---
 uid: mvc/videos/mvc-2/how-do-i/index
-title: 수행 방법 | Microsoft Docs
+title: 방법-I | Microsoft Docs
 author: rick-anderson
-description: 이 섹션에서 비디오 ' The Storefront'-완료부터 전체 전자 상거래 응용 프로그램을 빌드하는 방법을 포함 하 여 ASP.NET MVC를 설명 합니다.
+description: 이 섹션의 비디오에서는 ASP.NET MVC에 대해 설명 합니다. 여기에는 ' Storefront '를 빌드하는 방법, 전체 전자 상거래 응용 프로그램이 처음부터 끝까지 포함 됩니다.
 ms.author: riande
 ms.date: 09/15/2011
 ms.assetid: 9bc6c53a-3e54-4f9d-8bef-0f3359aecf7b
 msc.legacyurl: /mvc/videos/mvc-2/how-do-i
 msc.type: chapter
 ms.openlocfilehash: 7c2fd0d57cdd6775eb027c0dc9b360443bacbfed
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65120520"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78431957"
 ---
 # <a name="how-do-i"></a>작업 절차
 
-> 이 섹션에서 비디오 "The Storefront"-완료부터 전체 전자 상거래 응용 프로그램을 빌드하는 방법을 포함 하 여 ASP.NET MVC를 설명 합니다.
+> 이 섹션의 비디오에서는 "Storefront"를 빌드하는 방법, 즉 전체 전자 상거래 응용 프로그램을 처음부터 끝까지 포함 하는 ASP.NET MVC에 대해 다룹니다.
 
 - [ASP.NET MVC를 사용하여 Tasklist 애플리케이션 만들기](creating-a-tasklist-application-with-aspnet-mvc.md)
 - [ASP.NET MVC를 사용하여 15분만에 영화 데이터베이스 애플리케이션 만들기](creating-a-movie-database-application-in-15-minutes-with-aspnet-mvc.md)
@@ -33,10 +33,10 @@ ms.locfileid: "65120520"
 - [데이터베이스 데이터의 테이블 표시](displaying-a-table-of-database-data.md)
 - [개발자를 위한 ASP.NET MVC란 무엇인가 80분 기술 비디오, NerdDinner 빌드](what-is-aspnet-mvc-80-minute-technical-video-for-developers-building-nerddinner.md)
 - [의사 결정자를 위한 ASP.NET MVC를 사용해야 하는 이유 3분 개요 비디오](why-aspnet-mvc-3-minute-overview-video-for-decision-makers.md)
-- [ASP.NET MVC: 개발자를 위한 방법 10 분 기술 비디오](aspnet-mvc-how-10-minute-technical-video-for-developers.md)
+- [ASP.NET MVC: 개발자를 위한 사용 방법 10분 기술 비디오](aspnet-mvc-how-10-minute-technical-video-for-developers.md)
 - [ASP.NET MVC 웹 애플리케이션에서 AJAX 호출에 대해 JSON 형식 데이터 반환](how-do-i-return-json-formatted-data-for-an-ajax-call-in-an-aspnet-mvc-web-application.md)
 - [ASP.NET MVC 부분 보기에서 데이터 작업](how-do-i-work-with-data-in-aspnet-mvc-partial-views.md)
-- [ASP.NET MVC 뷰에 대 한 데이터를 관리 하는 보기 모델 구현](how-do-i-implement-view-models-to-manage-data-for-aspnet-mvc-views.md)
+- [ASP.NET MVC 뷰에 대 한 데이터를 관리 하는 뷰 모델 구현](how-do-i-implement-view-models-to-manage-data-for-aspnet-mvc-views.md)
 - [MVC 애플리케이션에 대한 사용자 지정 HTML 도우미 만들기](how-do-i-create-a-custom-html-helper-for-an-mvc-application.md)
 - [MVC 애플리케이션에서 모델 바인더 사용](how-do-i-work-with-model-binders-in-an-mvc-application.md)
 - [MVC 애플리케이션에서 HttpVerbs 특성 사용](how-do-i-use-httpverbs-attributes-in-an-mvc-application.md)

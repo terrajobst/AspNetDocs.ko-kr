@@ -9,11 +9,11 @@ ms.assetid: 9128aaac-afe2-449f-84b2-bb1d035083c4
 msc.legacyurl: /web-forms/overview/data-access/accessing-the-database-directly-from-an-aspnet-page/using-parameterized-queries-with-the-sqldatasource-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 241dc8c089d4faa9eb95a63684e8a56756bb302c
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74611039"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78444851"
 ---
 # <a name="using-parameterized-queries-with-the-sqldatasource-c"></a>SqlDataSource와 함께 매개 변수가 있는 쿼리 사용(C#)
 
@@ -143,7 +143,7 @@ SqlDataSource s `<SelectParameters>` 섹션 내의 매개 변수는 `ControlPara
 
 이 방법에 유의 해야 할 몇 가지 주의 사항이 있습니다. 먼저 SQL 쿼리에서 사용 되는 매개 변수의 데이터 형식을 유추 합니다. `WHERE` 절을 `@MaximumPrice = -1.0`에서 `@MaximumPrice = -1`으로 변경 하면 런타임에서는 매개 변수를 정수로 처리 합니다. 그런 다음 `MaxPrice` 텍스트 상자를 10 진수 값 (예: 5.00)에 할당 하려고 하면 5.00을 정수로 변환할 수 없으므로 오류가 발생 합니다. 이를 해결 하려면 `WHERE` 절에서 `@MaximumPrice = -1.0`를 사용 하 고 있는지 확인 하 고, `ControlParameter` 개체 s `Type` 속성을 10 진수로 설정 합니다.
 
-둘째, `WHERE` 절에 `OR @MaximumPrice = -1.0`를 추가 하 여 쿼리 엔진이 `UnitPrice` (있는 경우)에서 인덱스를 사용할 수 없기 때문에 테이블 스캔이 발생 합니다. 이는 `Products` 테이블에 충분 한 수의 레코드가 있는 경우 성능에 영향을 줄 수 있습니다. 이 논리를 저장 프로시저로 이동 하는 것이 더 효율적입니다. 모든 레코드를 반환 해야 하는 경우에는 `WHERE` 절을 사용 하지 않고 `Products` 테이블에서 `SELECT` 쿼리를 수행 하는 것이 `IF` 문이 `WHERE` 조건을 포함 하 여 인덱스를 사용할 수 있도록 해야 합니다.
+둘째, `WHERE` 절에 `OR @MaximumPrice = -1.0`를 추가 하 여 쿼리 엔진이 `UnitPrice` (있는 경우)에서 인덱스를 사용할 수 없기 때문에 테이블 스캔이 발생 합니다. 이는 `Products` 테이블에 충분 한 수의 레코드가 있는 경우 성능에 영향을 줄 수 있습니다. 이 논리를 저장 프로시저로 이동 하는 것이 더 효율적입니다. 모든 레코드를 반환 해야 하는 경우에는 `WHERE` 절을 사용 하지 않고 `Products` 테이블에서 `SELECT` 쿼리를 수행 하는 것이 `IF` 문이 `WHERE` 조건을 포함 하 여 인덱스를 사용할 수 있도록 해야 합니다.`UnitPrice`
 
 ## <a name="step-3-creating-and-using-parameterized-stored-procedures"></a>3 단계: 매개 변수화 된 저장 프로시저 만들기 및 사용
 
@@ -253,7 +253,7 @@ ObjectDataSource와 마찬가지로, SqlDataSource는 기본 데이터를 수정
 
 행복 한 프로그래밍
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

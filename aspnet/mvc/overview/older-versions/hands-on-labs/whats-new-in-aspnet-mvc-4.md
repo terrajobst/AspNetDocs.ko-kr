@@ -9,11 +9,11 @@ ms.assetid: 48f7feb3-872f-485d-b96f-e30011ff8c4a
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/whats-new-in-aspnet-mvc-4
 msc.type: authoredcontent
 ms.openlocfilehash: 4235f4fe666cdeb7d0821127a2b349f2ff30cd6e
-ms.sourcegitcommit: 295cf898a4c87e264b0c35c7254b0fa4169f2278
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74057038"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78433673"
 ---
 # <a name="whats-new-in-aspnet-mvc-4"></a>ASP.NET MVC 4의 새로운 기능
 
@@ -397,7 +397,7 @@ ASP.NET MVC 4의 주요 업데이트 중 하나는 모바일 개발에 대 한 �
 
     - **Views/Shared/\_layout. cshtml**: 더 작은 화면에 최적화 된 jQuery 모바일 기반 레이아웃입니다. 웹 사이트는 모바일 브라우저에서 요청을 받으면 원래 레이아웃 (\_레이아웃. cshtml)을이 항목으로 바꿉니다.
     - 뷰 전환기 구성 요소: **Views/Shared/\_ViewSwitcher** 로 구성 됩니다. cshtml 부분 뷰와 **ViewSwitcherController.cs** controller 이 구성 요소는 사용자가 페이지의 데스크톱 버전으로 전환 하는 데 사용할 수 있는 모바일 브라우저의 링크를 표시 합니다.  
-        ![모바일 지원이 있는 사진 갤러리 프로젝트](whats-new-in-aspnet-mvc-4/_static/image23.png "Ph모바일 지원이 있는 o Gallery 프로젝트 ")
+        ![모바일 지원이 있는 사진 갤러리 프로젝트](whats-new-in-aspnet-mvc-4/_static/image23.png "모바일 지원이 있는 사진 갤러리 프로젝트")
 
         *모바일 지원이 있는 사진 갤러리 프로젝트*
 4. 모바일 번들을 등록 합니다. 이렇게 하려면 **Global.asax.cs** 파일을 열고 다음 줄을 추가 합니다.
@@ -516,7 +516,7 @@ jQuery Mobile의 기본 테마는 빠른 참조를 위해 문자 (a, b, c, d, e)
 
     - **ClearOverriddenBrowser ()** 메서드는 현재 요청에 대해 재정의 된 사용자 에이전트를 제거 합니다.
     - **SetOverriddenBrowser ()** 메서드는 지정 된 사용자 에이전트를 사용 하 여 요청의 실제 사용자 에이전트 값을 재정의 합니다.  
-        ![ViewSwitcher 컨트롤러](whats-new-in-aspnet-mvc-4/_static/image31.png "ViewSwitcher 컨트롤러 ")  
+        ![ViewSwitcher 컨트롤러](whats-new-in-aspnet-mvc-4/_static/image31.png "ViewSwitcher 컨트롤러")  
 *ViewSwitcher 컨트롤러*
 
         브라우저 재정의는 ASP.NET MVC 4의 핵심 기능이 며, jQuery 패키지를 설치 하지 않은 경우에도 사용할 수 있습니다. 그러나이 기능은 뷰, 레이아웃 및 부분 뷰에만 영향을 주며, Browser 개체에 종속 된 기능에는 영향을 주지 않습니다.

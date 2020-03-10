@@ -9,6 +9,6 @@
 * 클라우드 지원 환경 기반 구성 시스템입니다.
 * 기본 제공 종속성 주입.
 * 간단한 고성능 모듈식 HTTP 요청 파이프라인을 포함합니다.
-* [Kestrel](/aspnet/core/fundamentals/servers/kestrel), [IIS] (f: host-and-deploy/IIS/Index, [http.sys](xref:fundamentals/servers/httpsys), [Nginx](xref:host-and-deploy/linux-nginx), [Apache](xref:host-and-deploy/linux-apache)및 [Docker](xref:host-and-deploy/docker/index)에서 호스팅할 수 있습니다.
+* [Kestrel](/aspnet/core/fundamentals/servers/kestrel), [IIS](xref:host-and-deploy/iis/index) [, http.sys](xref:fundamentals/servers/httpsys), [Nginx](xref:host-and-deploy/linux-nginx), [Apache](xref:host-and-deploy/linux-apache)및 [Docker](xref:host-and-deploy/docker/index)에서 호스트 하는 기능.
 * Side-by-side 버전 관리.
 * 최신 웹 개발을 간소화하는 도구를 포함합니다.
