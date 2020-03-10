@@ -9,24 +9,24 @@ ms.date: 01/30/2017
 msc.legacyurl: ''
 msc.type: content
 ms.openlocfilehash: 111fdb175fc24e29109b4868c686fbbb7014cda1
-ms.sourcegitcommit: 2d53ed9e4c8b19d3526cbc689bfa8394c9449cec
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59905620"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78472733"
 ---
-# <a name="aspnet-api-reference"></a><span data-ttu-id="57cd3-103">ASP.NET API 참조</span><span class="sxs-lookup"><span data-stu-id="57cd3-103">ASP.NET API reference</span></span>
+# <a name="aspnet-api-reference"></a><span data-ttu-id="476e1-103">ASP.NET API 참조</span><span class="sxs-lookup"><span data-stu-id="476e1-103">ASP.NET API reference</span></span>
 
-* [<span data-ttu-id="57cd3-104">ASP.NET API 참조</span><span class="sxs-lookup"><span data-stu-id="57cd3-104">ASP.NET API Reference</span></span>](/dotnet/api/?view=netframework-4.7&term=system.web)
+* [<span data-ttu-id="476e1-104">ASP.NET API 참조</span><span class="sxs-lookup"><span data-stu-id="476e1-104">ASP.NET API Reference</span></span>](/dotnet/api/?view=netframework-4.7&term=system.web)
 
-* [<span data-ttu-id="57cd3-105">ASP.NET MVC API 참조</span><span class="sxs-lookup"><span data-stu-id="57cd3-105">ASP.NET MVC API Reference</span></span>](https://msdn.microsoft.com/library/mt134468)
+* [<span data-ttu-id="476e1-105">ASP.NET MVC API 참조</span><span class="sxs-lookup"><span data-stu-id="476e1-105">ASP.NET MVC API Reference</span></span>](https://msdn.microsoft.com/library/mt134468)
 
-* [<span data-ttu-id="57cd3-106">ASP.NET Web API API 참조</span><span class="sxs-lookup"><span data-stu-id="57cd3-106">ASP.NET Web API API Reference</span></span>](https://msdn.microsoft.com/library/mt174857)
+* [<span data-ttu-id="476e1-106">ASP.NET Web API API 참조</span><span class="sxs-lookup"><span data-stu-id="476e1-106">ASP.NET Web API API Reference</span></span>](https://msdn.microsoft.com/library/mt174857)
 
-* [<span data-ttu-id="57cd3-107">ASP.NET Web Pages API 참조</span><span class="sxs-lookup"><span data-stu-id="57cd3-107">ASP.NET Web Pages API Reference</span></span>](https://msdn.microsoft.com/library/hh396384)
+* [<span data-ttu-id="476e1-107">ASP.NET 웹 페이지 API 참조</span><span class="sxs-lookup"><span data-stu-id="476e1-107">ASP.NET Web Pages API Reference</span></span>](https://msdn.microsoft.com/library/hh396384)
 
-* [<span data-ttu-id="57cd3-108">ASP.NET SignalR API 참조</span><span class="sxs-lookup"><span data-stu-id="57cd3-108">ASP.NET SignalR API Reference</span></span>](https://msdn.microsoft.com/library/dn440565)
+* [<span data-ttu-id="476e1-108">ASP.NET SignalR API 참조</span><span class="sxs-lookup"><span data-stu-id="476e1-108">ASP.NET SignalR API Reference</span></span>](https://msdn.microsoft.com/library/dn440565)
 
-* [<span data-ttu-id="57cd3-109">ASP.NET Id API 참조</span><span class="sxs-lookup"><span data-stu-id="57cd3-109">ASP.NET Identity API Reference</span></span>](https://msdn.microsoft.com/library/mt173608)
+* [<span data-ttu-id="476e1-109">ASP.NET Identity API 참조</span><span class="sxs-lookup"><span data-stu-id="476e1-109">ASP.NET Identity API Reference</span></span>](https://msdn.microsoft.com/library/mt173608)
 
-* [<span data-ttu-id="57cd3-110">Microsoft OWIN 구성 요소 API 참조</span><span class="sxs-lookup"><span data-stu-id="57cd3-110">Microsoft OWIN Components API Reference</span></span>](https://msdn.microsoft.com/library/mt152002)
+* [<span data-ttu-id="476e1-110">Microsoft OWIN Components API 참조</span><span class="sxs-lookup"><span data-stu-id="476e1-110">Microsoft OWIN Components API Reference</span></span>](https://msdn.microsoft.com/library/mt152002)

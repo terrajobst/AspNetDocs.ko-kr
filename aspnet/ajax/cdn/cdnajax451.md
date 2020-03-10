@@ -9,15 +9,15 @@ ms.assetid: d7ec655d-49b0-4968-af5e-3064616aff9a
 msc.legacyurl: /ajax/cdn/cdnajax451
 msc.type: content
 ms.openlocfilehash: a81abf2c57d1400a9c4b2f1d1febaddc9c569c6d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59414545"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78454175"
 ---
-# <a name="aspnet-web-forms-and-ajax-451"></a><span data-ttu-id="b9319-102">ASP.NET Web Forms 및 Ajax 4.5.1</span><span class="sxs-lookup"><span data-stu-id="b9319-102">ASP.NET Web Forms and Ajax 4.5.1</span></span>
+# <a name="aspnet-web-forms-and-ajax-451"></a><span data-ttu-id="97bde-102">ASP.NET Web Forms 및 Ajax 4.5.1</span><span class="sxs-lookup"><span data-stu-id="97bde-102">ASP.NET Web Forms and Ajax 4.5.1</span></span>
 
-<span data-ttu-id="b9319-103">다음 파일은 CDN에서 호스트 됩니다.</span><span class="sxs-lookup"><span data-stu-id="b9319-103">The following files are hosted on the CDN:</span></span>
+<span data-ttu-id="97bde-103">CDN에서 호스트 되는 파일은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="97bde-103">The following files are hosted on the CDN:</span></span>
 
 - https://ajax.aspnetcdn.com/ajax/4.5.1/1/Date.HijriCalendar.debug.js
 - https://ajax.aspnetcdn.com/ajax/4.5.1/1/Date.HijriCalendar.js
@@ -56,6 +56,6 @@ ms.locfileid: "59414545"
 - https://ajax.aspnetcdn.com/ajax/4.5.1/1/WebParts.js
 - https://ajax.aspnetcdn.com/ajax/4.5.1/1/WebUIValidation.js
 
-<span data-ttu-id="b9319-104">참고: Fr-FR.js 같은 세계화 스크립트를 다음 폴더에서 찾을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="b9319-104">Note: The globalization scripts, such as fr-FR.js, can be found in the following folder:</span></span>
+<span data-ttu-id="97bde-104">참고: fr-FR와 같은 세계화 스크립트는 다음 폴더에서 찾을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="97bde-104">Note: The globalization scripts, such as fr-FR.js, can be found in the following folder:</span></span>
 
 - https://ajax.aspnetcdn.com/ajax/4.5.1/1/globalization/

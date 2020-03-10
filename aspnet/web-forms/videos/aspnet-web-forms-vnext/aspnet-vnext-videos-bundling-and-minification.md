@@ -2,28 +2,28 @@
 uid: web-forms/videos/aspnet-web-forms-vnext/aspnet-vnext-videos-bundling-and-minification
 title: 'ASP.NET vNext 비디오: 묶음 및 축소 | Microsoft Docs'
 author: madskristensen
-description: Mads Kristensen는 방법을 보여 주는 ASP.NET vNext 수 자동으로 번들 성능 향상을 위해 JavaScript 및 CSS 리소스를 수정 합니다.
+description: Mads Kristensen는 ASP.NET vNext에서 JavaScript 및 CSS 리소스를 자동으로 번들로 묶어 수정 하 여 성능을 향상 시키는 방법을 보여 줍니다.
 ms.author: riande
 ms.date: 09/29/2011
 ms.assetid: 8d04a9db-fa17-4233-bc74-6c040fd1c17a
 msc.legacyurl: /web-forms/videos/aspnet-web-forms-vnext/aspnet-vnext-videos-bundling-and-minification
 msc.type: video
 ms.openlocfilehash: d2f994e4ede9cbbf5d3a3f9cbb392bffde4e1f4e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59380342"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78455753"
 ---
-# <a name="aspnet-vnext-videos-bundling-and-minification"></a><span data-ttu-id="0176c-103">ASP.NET vNext 비디오: 묶음 및 축소</span><span class="sxs-lookup"><span data-stu-id="0176c-103">ASP.NET vNext Videos: Bundling and Minification</span></span>
+# <a name="aspnet-vnext-videos-bundling-and-minification"></a><span data-ttu-id="4077f-103">ASP.NET vNext 비디오: 묶음 및 축소</span><span class="sxs-lookup"><span data-stu-id="4077f-103">ASP.NET vNext Videos: Bundling and Minification</span></span>
 
-<span data-ttu-id="0176c-104">[제작: Mads Kristensen](https://github.com/madskristensen)</span><span class="sxs-lookup"><span data-stu-id="0176c-104">by [Mads Kristensen](https://github.com/madskristensen)</span></span>
+<span data-ttu-id="4077f-104">[Mads Kristensen](https://github.com/madskristensen)</span><span class="sxs-lookup"><span data-stu-id="4077f-104">by [Mads Kristensen](https://github.com/madskristensen)</span></span>
 
-<span data-ttu-id="0176c-105">Mads Kristensen는 방법을 보여 주는 ASP.NET vNext 수 자동으로 번들 성능 향상을 위해 JavaScript 및 CSS 리소스를 수정 합니다.</span><span class="sxs-lookup"><span data-stu-id="0176c-105">Mads Kristensen demonstrates how the ASP.NET vNext can automatically bundle and modify JavaScript and CSS resources to improve performance.</span></span>
+<span data-ttu-id="4077f-105">Mads Kristensen는 ASP.NET vNext에서 JavaScript 및 CSS 리소스를 자동으로 번들로 묶어 수정 하 여 성능을 향상 시키는 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="4077f-105">Mads Kristensen demonstrates how the ASP.NET vNext can automatically bundle and modify JavaScript and CSS resources to improve performance.</span></span>
 
-[<span data-ttu-id="0176c-106">&#9654;비디오 (1 분)</span><span class="sxs-lookup"><span data-stu-id="0176c-106">&#9654; Watch video (1 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-vnext-videos-bundling-and-minification)
+[<span data-ttu-id="4077f-106">&#9654;비디오 보기 (1 분)</span><span class="sxs-lookup"><span data-stu-id="4077f-106">&#9654; Watch video (1 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-vnext-videos-bundling-and-minification)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="0176c-107">[이전](aspnet-45-web-forms-strong-typed-data-controls.md)
-> [다음](getting-started-with-the-next-version-of-aspnet.md)</span><span class="sxs-lookup"><span data-stu-id="0176c-107">[Previous](aspnet-45-web-forms-strong-typed-data-controls.md)
+> <span data-ttu-id="4077f-107">[이전](aspnet-45-web-forms-strong-typed-data-controls.md)
+> [다음](getting-started-with-the-next-version-of-aspnet.md)</span><span class="sxs-lookup"><span data-stu-id="4077f-107">[Previous](aspnet-45-web-forms-strong-typed-data-controls.md)
 [Next](getting-started-with-the-next-version-of-aspnet.md)</span></span>

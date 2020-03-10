@@ -9,15 +9,15 @@ ms.assetid: 67e9fda2-7895-4818-add6-fdc5be5be367
 msc.legacyurl: /ajax/cdn/jquery-mobile/cdnjquerymobile145
 msc.type: content
 ms.openlocfilehash: e46484f06e3cb75765c4891851d509d560600d3e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59416105"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78453647"
 ---
-# <a name="jquery-mobile-145-on-the-microsoft-ajax-cdn"></a><span data-ttu-id="2a6be-102">Microsoft Ajax CDN의 jQuery Mobile 1.4.5</span><span class="sxs-lookup"><span data-stu-id="2a6be-102">jQuery Mobile 1.4.5 on the Microsoft Ajax CDN</span></span>
+# <a name="jquery-mobile-145-on-the-microsoft-ajax-cdn"></a><span data-ttu-id="89f38-102">Microsoft Ajax CDN의 jQuery Mobile 1.4.5</span><span class="sxs-lookup"><span data-stu-id="89f38-102">jQuery Mobile 1.4.5 on the Microsoft Ajax CDN</span></span>
 
-<span data-ttu-id="2a6be-103">JQuery Mobile 1.4.5 라이브러리에는 다음 파일이 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="2a6be-103">The jQuery Mobile 1.4.5 library includes the following files:</span></span>
+<span data-ttu-id="89f38-103">JQuery Mobile 1.4.5 라이브러리에는 다음 파일이 포함 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="89f38-103">The jQuery Mobile 1.4.5 library includes the following files:</span></span>
 
 - https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.4.5/jquery.mobile.structure-1.4.5.css
 - https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css

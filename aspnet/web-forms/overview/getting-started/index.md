@@ -1,41 +1,41 @@
 ---
 uid: web-forms/overview/getting-started/index
-title: ASP.NET Web Forms를 사용 하 여 시작 | Microsoft Docs
+title: ASP.NET Web Forms 시작 | Microsoft Docs
 author: rick-anderson
-description: 설명에 대 한 ASP.NET Web Forms ASP.NET Web Forms 익숙한 끌어서 놓기, 이벤트 기반 모델을 사용 하 여 빌드 동적 웹 사이트 수 있습니다. 디자인 화면 및 hund...
+description: 익숙한 끌어서 놓기, 이벤트 기반 모델을 사용 하 여 동적 웹 사이트를 빌드할 수 있는 ASP.NET Web Forms ASP.NET Web Forms에 대해 알아봅니다. 디자인 화면 및 hund ...
 ms.author: riande
 ms.date: 08/08/2011
 ms.assetid: f645d3b1-1092-43c6-a28a-074b413924b4
 msc.legacyurl: /web-forms/overview/getting-started
 msc.type: chapter
 ms.openlocfilehash: d76e65ae807b1da97d07199e7f0fce21fbf14af6
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65133441"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78513617"
 ---
-# <a name="getting-started-with-aspnet-web-forms"></a><span data-ttu-id="0554b-104">ASP.NET Web Forms 시작</span><span class="sxs-lookup"><span data-stu-id="0554b-104">Getting Started with ASP.NET Web Forms</span></span>
+# <a name="getting-started-with-aspnet-web-forms"></a><span data-ttu-id="d29e0-104">ASP.NET Web Forms 시작</span><span class="sxs-lookup"><span data-stu-id="d29e0-104">Getting Started with ASP.NET Web Forms</span></span>
 
-> <span data-ttu-id="0554b-105">Web Forms 모델 및 페이지를 만들고 컨트롤을 사용 하는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="0554b-105">The Web Forms model and how to create pages and use controls.</span></span>
+> <span data-ttu-id="d29e0-105">Web Forms 모델 및 페이지를 만들고 컨트롤을 사용 하는 방법을 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="d29e0-105">The Web Forms model and how to create pages and use controls.</span></span>
 
-- [<span data-ttu-id="0554b-106">ASP.NET 4.5 Web Forms 및 Visual Studio 2013 시작</span><span class="sxs-lookup"><span data-stu-id="0554b-106">Getting Started with ASP.NET 4.5 Web Forms and Visual Studio 2013</span></span>](getting-started-with-aspnet-45-web-forms/index.md)
+- [<span data-ttu-id="d29e0-106">ASP.NET 4.5 Web Forms 및 Visual Studio 2013 시작</span><span class="sxs-lookup"><span data-stu-id="d29e0-106">Getting Started with ASP.NET 4.5 Web Forms and Visual Studio 2013</span></span>](getting-started-with-aspnet-45-web-forms/index.md)
 
-    - [<span data-ttu-id="0554b-107">Web Forms 및 Visual Studio 시작</span><span class="sxs-lookup"><span data-stu-id="0554b-107">Getting Started with Web Forms and Visual Studio</span></span>](getting-started-with-aspnet-45-web-forms/introduction-and-overview.md)
-    - [<span data-ttu-id="0554b-108">프로젝트 만들기</span><span class="sxs-lookup"><span data-stu-id="0554b-108">Create the Project</span></span>](getting-started-with-aspnet-45-web-forms/create-the-project.md)
-    - [<span data-ttu-id="0554b-109">데이터 액세스 레이어 만들기</span><span class="sxs-lookup"><span data-stu-id="0554b-109">Create the Data Access Layer</span></span>](getting-started-with-aspnet-45-web-forms/create_the_data_access_layer.md)
-    - [<span data-ttu-id="0554b-110">UI 및 탐색</span><span class="sxs-lookup"><span data-stu-id="0554b-110">UI and Navigation</span></span>](getting-started-with-aspnet-45-web-forms/ui_and_navigation.md)
-    - [<span data-ttu-id="0554b-111">데이터 항목 및 세부 정보 표시</span><span class="sxs-lookup"><span data-stu-id="0554b-111">Display Data Items and Details</span></span>](getting-started-with-aspnet-45-web-forms/display_data_items_and_details.md)
-    - [<span data-ttu-id="0554b-112">쇼핑 카트</span><span class="sxs-lookup"><span data-stu-id="0554b-112">Shopping Cart</span></span>](getting-started-with-aspnet-45-web-forms/shopping-cart.md)
-    - [<span data-ttu-id="0554b-113">PayPal로 체크 아웃 및 지불</span><span class="sxs-lookup"><span data-stu-id="0554b-113">Checkout and Payment with PayPal</span></span>](getting-started-with-aspnet-45-web-forms/checkout-and-payment-with-paypal.md)
-    - [<span data-ttu-id="0554b-114">멤버 자격 및 관리</span><span class="sxs-lookup"><span data-stu-id="0554b-114">Membership and Administration</span></span>](getting-started-with-aspnet-45-web-forms/membership-and-administration.md)
-    - [<span data-ttu-id="0554b-115">URL 라우팅</span><span class="sxs-lookup"><span data-stu-id="0554b-115">URL Routing</span></span>](getting-started-with-aspnet-45-web-forms/url-routing.md)
-    - [<span data-ttu-id="0554b-116">ASP.NET 오류 처리</span><span class="sxs-lookup"><span data-stu-id="0554b-116">ASP.NET Error Handling</span></span>](getting-started-with-aspnet-45-web-forms/aspnet-error-handling.md)
-- [<span data-ttu-id="0554b-117">Visual Studio 2013에서 기본적인 Web Forms 페이지 만들기</span><span class="sxs-lookup"><span data-stu-id="0554b-117">Creating a Basic Web Forms Page in Visual Studio 2013</span></span>](creating-a-basic-web-forms-page.md)
-- [<span data-ttu-id="0554b-118">Visual Studio 2013의 코드 편집 ASP.NET Web Forms</span><span class="sxs-lookup"><span data-stu-id="0554b-118">Code Editing ASP.NET Web Forms in Visual Studio 2013</span></span>](code-editing-in-web-forms-pages.md)
-- [<span data-ttu-id="0554b-119">ASP.NET Web Forms에서 Visual Studio 2012용 페이지 검사기 사용</span><span class="sxs-lookup"><span data-stu-id="0554b-119">Using Page Inspector for Visual Studio 2012 in ASP.NET Web Forms</span></span>](using-page-inspector-in-a-visual-studio-11-beta-web-forms-project.md)
-- [<span data-ttu-id="0554b-120">Visual Studio 2012 실습</span><span class="sxs-lookup"><span data-stu-id="0554b-120">Visual Studio 2012 Hands On Labs</span></span>](hands-on-labs/index.md)
+    - [<span data-ttu-id="d29e0-107">Web Forms 및 Visual Studio 시작</span><span class="sxs-lookup"><span data-stu-id="d29e0-107">Getting Started with Web Forms and Visual Studio</span></span>](getting-started-with-aspnet-45-web-forms/introduction-and-overview.md)
+    - [<span data-ttu-id="d29e0-108">프로젝트 만들기</span><span class="sxs-lookup"><span data-stu-id="d29e0-108">Create the Project</span></span>](getting-started-with-aspnet-45-web-forms/create-the-project.md)
+    - [<span data-ttu-id="d29e0-109">데이터 액세스 레이어 만들기</span><span class="sxs-lookup"><span data-stu-id="d29e0-109">Create the Data Access Layer</span></span>](getting-started-with-aspnet-45-web-forms/create_the_data_access_layer.md)
+    - [<span data-ttu-id="d29e0-110">UI 및 탐색</span><span class="sxs-lookup"><span data-stu-id="d29e0-110">UI and Navigation</span></span>](getting-started-with-aspnet-45-web-forms/ui_and_navigation.md)
+    - [<span data-ttu-id="d29e0-111">데이터 항목 및 세부 정보 표시</span><span class="sxs-lookup"><span data-stu-id="d29e0-111">Display Data Items and Details</span></span>](getting-started-with-aspnet-45-web-forms/display_data_items_and_details.md)
+    - [<span data-ttu-id="d29e0-112">쇼핑 카트</span><span class="sxs-lookup"><span data-stu-id="d29e0-112">Shopping Cart</span></span>](getting-started-with-aspnet-45-web-forms/shopping-cart.md)
+    - [<span data-ttu-id="d29e0-113">PayPal로 체크 아웃 및 지불</span><span class="sxs-lookup"><span data-stu-id="d29e0-113">Checkout and Payment with PayPal</span></span>](getting-started-with-aspnet-45-web-forms/checkout-and-payment-with-paypal.md)
+    - [<span data-ttu-id="d29e0-114">멤버 자격 및 관리</span><span class="sxs-lookup"><span data-stu-id="d29e0-114">Membership and Administration</span></span>](getting-started-with-aspnet-45-web-forms/membership-and-administration.md)
+    - [<span data-ttu-id="d29e0-115">URL 라우팅</span><span class="sxs-lookup"><span data-stu-id="d29e0-115">URL Routing</span></span>](getting-started-with-aspnet-45-web-forms/url-routing.md)
+    - [<span data-ttu-id="d29e0-116">ASP.NET 오류 처리</span><span class="sxs-lookup"><span data-stu-id="d29e0-116">ASP.NET Error Handling</span></span>](getting-started-with-aspnet-45-web-forms/aspnet-error-handling.md)
+- [<span data-ttu-id="d29e0-117">Visual Studio 2013에서 기본적인 Web Forms 페이지 만들기</span><span class="sxs-lookup"><span data-stu-id="d29e0-117">Creating a Basic Web Forms Page in Visual Studio 2013</span></span>](creating-a-basic-web-forms-page.md)
+- [<span data-ttu-id="d29e0-118">Visual Studio 2013의 코드 편집 ASP.NET Web Forms</span><span class="sxs-lookup"><span data-stu-id="d29e0-118">Code Editing ASP.NET Web Forms in Visual Studio 2013</span></span>](code-editing-in-web-forms-pages.md)
+- [<span data-ttu-id="d29e0-119">ASP.NET Web Forms에서 Visual Studio 2012용 페이지 검사기 사용</span><span class="sxs-lookup"><span data-stu-id="d29e0-119">Using Page Inspector for Visual Studio 2012 in ASP.NET Web Forms</span></span>](using-page-inspector-in-a-visual-studio-11-beta-web-forms-project.md)
+- [<span data-ttu-id="d29e0-120">Visual Studio 2012 실습</span><span class="sxs-lookup"><span data-stu-id="d29e0-120">Visual Studio 2012 Hands On Labs</span></span>](hands-on-labs/index.md)
 
-    - [<span data-ttu-id="0554b-121">Visual Studio 2012의 새로운 ASP.NET 및 웹 개발 기능</span><span class="sxs-lookup"><span data-stu-id="0554b-121">What's New in ASP.NET and Web Development in Visual Studio 2012</span></span>](hands-on-labs/whats-new-in-aspnet-and-web-development-in-visual-studio-2012.md)
-    - [<span data-ttu-id="0554b-122">ASP.NET 4.5의 새로운 Web Forms 기능</span><span class="sxs-lookup"><span data-stu-id="0554b-122">What's New in Web Forms in ASP.NET 4.5</span></span>](hands-on-labs/whats-new-in-web-forms-in-aspnet-45.md)
-    - [<span data-ttu-id="0554b-123">Visual Studio 2012에서 페이지 검사기 사용</span><span class="sxs-lookup"><span data-stu-id="0554b-123">Using Page Inspector in Visual Studio 2012</span></span>](hands-on-labs/using-page-inspector-in-visual-studio-2012.md)
+    - [<span data-ttu-id="d29e0-121">Visual Studio 2012의 새로운 ASP.NET 및 웹 개발 기능</span><span class="sxs-lookup"><span data-stu-id="d29e0-121">What's New in ASP.NET and Web Development in Visual Studio 2012</span></span>](hands-on-labs/whats-new-in-aspnet-and-web-development-in-visual-studio-2012.md)
+    - [<span data-ttu-id="d29e0-122">ASP.NET 4.5의 새로운 Web Forms 기능</span><span class="sxs-lookup"><span data-stu-id="d29e0-122">What's New in Web Forms in ASP.NET 4.5</span></span>](hands-on-labs/whats-new-in-web-forms-in-aspnet-45.md)
+    - [<span data-ttu-id="d29e0-123">Visual Studio 2012에서 페이지 검사기 사용</span><span class="sxs-lookup"><span data-stu-id="d29e0-123">Using Page Inspector in Visual Studio 2012</span></span>](hands-on-labs/using-page-inspector-in-visual-studio-2012.md)
