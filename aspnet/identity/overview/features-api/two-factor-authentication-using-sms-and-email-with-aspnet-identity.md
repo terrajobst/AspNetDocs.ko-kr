@@ -10,11 +10,11 @@ ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/features-api/two-factor-authentication-using-sms-and-email-with-aspnet-identity
 msc.type: authoredcontent
 ms.openlocfilehash: 527b4392846e60dae0b216fdeabf21fd6618e4d7
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77456740"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78499871"
 ---
 # <a name="two-factorauthentication-using-sms-and-email-with-aspnet-identity"></a>SMS 및 전자 메일을 사용 하는 2 단계 인증 ASP.NET Identity
 

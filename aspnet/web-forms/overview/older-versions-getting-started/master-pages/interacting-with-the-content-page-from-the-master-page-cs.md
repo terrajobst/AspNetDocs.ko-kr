@@ -9,11 +9,11 @@ ms.assetid: 3282df5e-516c-4972-8666-313828b90fb5
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/interacting-with-the-content-page-from-the-master-page-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 2cf57665aa584285351d874267949d61db69c7fc
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74635675"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78501167"
 ---
 # <a name="interacting-with-the-content-page-from-the-master-page-c"></a>마스터 페이지에서 콘텐츠 페이지와 상호 작용(C#)
 
@@ -79,7 +79,7 @@ Northwind 데이터베이스를 사용 하도록 마법사를 구성 합니다. 
 
 **그림 04**: `Products` 테이블의 `ProductName` 및 `UnitPrice` 필드 반환 ([전체 크기 이미지를 보려면 클릭](interacting-with-the-content-page-from-the-master-page-cs/_static/image12.png))
 
-이것이 전부입니다! 마법사를 완료 한 후 Visual Studio에서는 두 개의 BoundFields를 GridView에 추가 하 여 SqlDataSource 컨트롤에서 반환 된 두 필드를 미러링합니다. GridView 및 SqlDataSource 컨트롤의 태그는 다음과 같습니다. 그림 5는 브라우저를 통해 볼 때의 결과를 보여 줍니다.
+이제 모든 작업을 마쳤습니다. 마법사를 완료 한 후 Visual Studio에서는 두 개의 BoundFields를 GridView에 추가 하 여 SqlDataSource 컨트롤에서 반환 된 두 필드를 미러링합니다. GridView 및 SqlDataSource 컨트롤의 태그는 다음과 같습니다. 그림 5는 브라우저를 통해 볼 때의 결과를 보여 줍니다.
 
 [!code-aspx[Main](interacting-with-the-content-page-from-the-master-page-cs/samples/sample2.aspx)]
 
@@ -209,7 +209,7 @@ Northwind 데이터베이스를 사용 하도록 마법사를 구성 합니다. 
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -218,7 +218,7 @@ Northwind 데이터베이스를 사용 하도록 마법사를 구성 합니다. 
 - [콘텐츠 및 마스터 페이지 간에 정보 전달](http://aspnet.4guysfromrolla.com/articles/013107-1.aspx)
 - [ASP.NET 자습서에서 데이터 작업](../../data-access/index.md)
 
-### <a name="about-the-author"></a>작성자 정보
+### <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)는 여러 ASP/ASP. NET books의 작성자와 4GuysFromRolla.com의 창립자가 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 3.5을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672329972/4guysfromrollaco)것입니다. Scott은 [mitchell@4GuysFromRolla.com](mailto:mitchell@4GuysFromRolla.com) 또는 [http://ScottOnWriting.NET](http://scottonwriting.net/)의 블로그를 통해 연결할 수 있습니다.
 

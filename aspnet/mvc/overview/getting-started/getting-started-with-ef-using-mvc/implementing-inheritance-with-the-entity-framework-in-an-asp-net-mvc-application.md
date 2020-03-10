@@ -10,19 +10,19 @@ ms.assetid: 08834147-77ec-454a-bb7a-d931d2a40dab
 msc.legacyurl: /mvc/overview/getting-started/getting-started-with-ef-using-mvc/implementing-inheritance-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
 ms.openlocfilehash: 73a01ed47b0935a1a9734c197377470defb1fe36
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519390"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78471065"
 ---
 # <a name="tutorial-implement-inheritance-with-ef-in-an-aspnet-mvc-5-app"></a>자습서: ASP.NET MVC 5 앱에서 EF로 상속 구현
 
 이전 자습서에서는 동시성 예외를 처리 했습니다. 이 자습서에서는 데이터 모델에서 상속을 구현하는 방법을 보여 줍니다.
 
-개체 지향 프로그래밍에서는 [상속](http://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)) 을 사용 하 여 코드를 쉽게 [재사용할](http://en.wikipedia.org/wiki/Code_reuse)수 있습니다. 이 자습서에서는 강사와 학생 모두에게 공통적인 속성(예: `LastName`)이 포함된 `Person` 기본 클래스에서 클래스가 파생되도록 `Instructor` 및 `Student` 클래스를 변경합니다. 웹 페이지를 추가하거나 변경하지는 않지만 일부 코드를 변경하고 이러한 변경 내용이 데이터베이스에 자동으로 반영됩니다.
+개체 지향 프로그래밍에서는 [상속](http://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)) 을 사용 하 여 코드를 쉽게 [재사용할](http://en.wikipedia.org/wiki/Code_reuse)수 있습니다. 이 자습서에서는 강사와 학생 모두에게 공통적인 속성(예: `Instructor`)이 포함된 `Student` 기본 클래스에서 클래스가 파생되도록 `Person` 및 `LastName` 클래스를 변경합니다. 웹 페이지를 추가하거나 변경하지는 않지만 일부 코드를 변경하고 이러한 변경 내용이 데이터베이스에 자동으로 반영됩니다.
 
-이 자습서에서는 다음과 같은 작업을 수행합니다.
+이 자습서에서는 다음을 수행합니다.
 
 > [!div class="checklist"]
 > * 데이터베이스에 상속 매핑 방법 알아보기
@@ -31,9 +31,9 @@ ms.locfileid: "76519390"
 > * 모델에 사람 추가
 > * 마이그레이션 만들기 및 업데이트
 > * 구현 테스트
-> * Azure에 배포
+> * Deploy to Azure
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 * [동시성 처리](handling-concurrency-with-the-entity-framework-in-an-asp-net-mvc-application.md)
 
@@ -143,7 +143,7 @@ Person 테이블을 마우스 오른쪽 단추로 클릭한 후 **테이블 데�
 
 ![School_database_diagram](implementing-inheritance-with-the-entity-framework-in-an-asp-net-mvc-application/_static/image7.png)
 
-## <a name="deploy-to-azure"></a>Azure에 배포
+## <a name="deploy-to-azure"></a>Deploy to Azure
 
 이 섹션에서는이 자습서 시리즈의 [3 부, 정렬, 필터링 및 페이징](sorting-filtering-and-paging-with-the-entity-framework-in-an-asp-net-mvc-application.md) 에서 선택적으로 **Azure에 앱 배포** 섹션을 완료 해야 합니다. 로컬 프로젝트에서 데이터베이스를 삭제 하 여 마이그레이션 오류가 해결 된 경우에는이 단계를 건너뜁니다. 또는 새 사이트 및 데이터베이스를 만들고 새 환경에 배포 합니다.
 
@@ -161,7 +161,7 @@ Person 테이블을 마우스 오른쪽 단추로 클릭한 후 **테이블 데�
 
 [완료 된 프로젝트 다운로드](https://webpifeed.blob.core.windows.net/webpifeed/Partners/ASP.NET%20MVC%20Application%20Using%20Entity%20Framework%20Code%20First.zip)
 
-## <a name="additional-resources"></a>추가 자료
+## <a name="additional-resources"></a>추가 리소스
 
 [ASP.NET 데이터 액세스-권장 리소스](../../../../whitepapers/aspnet-data-access-content-map.md)에서 다른 Entity Framework 리소스에 대 한 링크를 찾을 수 있습니다.
 
@@ -169,7 +169,7 @@ Person 테이블을 마우스 오른쪽 단추로 클릭한 후 **테이블 데�
 
 ## <a name="next-steps"></a>다음 단계
 
-이 자습서에서는 다음과 같은 작업을 수행합니다.
+이 자습서에서는 다음을 수행합니다.
 
 > [!div class="checklist"]
 > * 상속을 데이터베이스로 매핑하기 위해 배웠습니다.

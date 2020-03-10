@@ -9,11 +9,11 @@ ms.assetid: b83ab819-2b05-4776-b7b4-79ef78d457a5
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-deploying-to-the-production-environment-7-of-12
 msc.type: authoredcontent
 ms.openlocfilehash: db838633accdedd7c0693b126a007e254ca681e4
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74627458"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78458171"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-deploying-to-the-production-environment---7-of-12"></a>Visual Studio 또는 Visual Web Developer를 사용 하 여 SQL Server Compact를 사용 하 여 ASP.NET 웹 응용 프로그램 배포: 프로덕션 환경에 배포-7/12
 
@@ -99,7 +99,7 @@ ASP.NET를 **2.0 통합 파이프라인** 에서 **4.0 (통합 파이프라인)*
 
 ![제어판 웹 게시 탭](deployment-to-a-hosting-provider-deploying-to-the-production-environment-7-of-12/_static/image21.png)
 
-사용자 이름 및 암호를 입력 하 여 웹 게시에 사용할 자격 증명을 만듭니다. 제어판에 로그온 하는 데 사용 하는 것과 동일한 자격 증명을 입력할 수 있습니다. 그런 다음 **사용**을 클릭 합니다.
+사용자 이름 및 암호를 입력 하 여 웹 게시에 사용할 자격 증명을 만듭니다. 제어판에 로그온 하는 데 사용 하는 것과 동일한 자격 증명을 입력할 수 있습니다. 그리고 **사용**을 클릭합니다.
 
 ![제어판에서 게시 자격 증명 만들기](deployment-to-a-hosting-provider-deploying-to-the-production-environment-7-of-12/_static/image22.png)
 
@@ -148,7 +148,7 @@ Publishsettings 파일은 사이트에 대해 계획 된 영구 URL을 대상 UR
 
 ![웹 게시 마법사 프로필 관리](deployment-to-a-hosting-provider-deploying-to-the-production-environment-7-of-12/_static/image29.png)
 
-**웹 게시 프로필 편집** 대화 상자에서 프로덕션 프로필을 선택 하 고 **이름 바꾸기**를 클릭 한 다음 프로필 이름을 production로 변경 합니다. 그런 다음 **닫기**를 클릭 합니다.
+**웹 게시 프로필 편집** 대화 상자에서 프로덕션 프로필을 선택 하 고 **이름 바꾸기**를 클릭 한 다음 프로필 이름을 production로 변경 합니다. 그런 다음 **닫기**를 클릭합니다.
 
 ![웹 게시 프로필 편집 대화 상자](deployment-to-a-hosting-provider-deploying-to-the-production-environment-7-of-12/_static/image30.png)
 

@@ -9,11 +9,11 @@ ms.assetid: f555c531-bf33-4699-9987-42dbfef23c1f
 msc.legacyurl: /web-forms/overview/data-access/displaying-data-with-the-datalist-and-repeater/showing-multiple-records-per-row-with-the-datalist-control-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 17283dae192896fbaa48f1d7fe49afdbaf4c9a02
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74627500"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78495305"
 ---
 # <a name="showing-multiple-records-per-row-with-the-datalist-control-vb"></a>DataList 컨트롤을 사용하여 행마다 여러 레코드 표시(VB)
 
@@ -93,7 +93,7 @@ DataList는 `RepeatDirection` 속성을 `Vertical`에서 `Horizontal`으로 변�
 
 기본적으로 DataList는 단일 열 다중 행 테이블에 항목을 나열 하며이는 단일 Templatefield로 변환를 사용 하 여 GridView의 레이아웃을 모방 합니다. 이 기본 레이아웃은 허용 되지만 행 마다 여러 데이터 원본 항목을 표시 하 여 화면 부동산을 최대화할 수 있습니다. 이를 수행 하려면 DataList s `RepeatColumns` 속성을 행당 표시할 열 수로 설정 하면 됩니다. 또한 DataList s `RepeatDirection` 속성을 사용 하 여 여러 열로 된 다중 행 테이블의 콘텐츠를 왼쪽에서 오른쪽, 위쪽에서 아래쪽으로, 왼쪽에서 오른쪽으로 왼쪽에서 오른쪽으로 배치 해야 하는지 여부를 나타낼 수 있습니다.
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

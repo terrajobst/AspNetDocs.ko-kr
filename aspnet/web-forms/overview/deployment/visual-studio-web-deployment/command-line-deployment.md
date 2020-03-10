@@ -9,11 +9,11 @@ ms.assetid: 82b8dea0-f062-4ee4-8784-3ffa30fbb1ca
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/command-line-deployment
 msc.type: authoredcontent
 ms.openlocfilehash: 13cfe4492398b59f2c80394689cc113ccb218c60
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74634198"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78512075"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-command-line-deployment"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 명령줄 배포
 
@@ -41,7 +41,7 @@ ms.locfileid: "74634198"
 
 프로젝트를 실행 하 고 **정보** 페이지를 선택 합니다.
 
-![정보 페이지](command-line-deployment/_static/image2.png)
+![[정보] 페이지](command-line-deployment/_static/image2.png)
 
 ## <a name="deploy-to-test-by-using-the-command-line"></a>명령줄을 사용 하 여 테스트에 배포
 
@@ -119,7 +119,7 @@ Azure에 배포 하려면 명령줄에 암호를 추가 해야 합니다. Visual
 
     앞에서 설명한 것 처럼 테스트 환경에 대 한 몇 가지 학생을 만들어 **정보** 페이지에 대 한 통계를 볼 수 있습니다.
 
-## <a name="deploy-to-production"></a>프로덕션 환경에 배포
+## <a name="deploy-to-production"></a>프로덕션에 배포
 
 프로덕션에 배포 하는 프로세스는 스테이징 프로세스와 유사 합니다.
 

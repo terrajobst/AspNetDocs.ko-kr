@@ -7,12 +7,12 @@ ms.date: 10/04/2018
 ms.assetid: f3d8adbe-55e7-4fd4-84a8-7155bc45c676
 msc.legacyurl: /mvc/overview/getting-started/introduction/getting-started
 msc.type: authoredcontent
-ms.openlocfilehash: c74daa37f68dda641cae97d3b0c19718f62d474d
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.openlocfilehash: ca39bc37c757c0452cf56624c8e37c04df4b41f2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77456389"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78487955"
 ---
 # <a name="getting-started-with-aspnet-mvc-5"></a>ASP.NET MVC 5 시작
 
@@ -20,7 +20,7 @@ ms.locfileid: "77456389"
 
 [!INCLUDE [consider RP](../../../../includes/razor.md)]
 
-이 자습서에서는 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)을 사용 하 여 ASP.NET MVC 5 웹 앱을 빌드하는 기본 사항을 설명 합니다. 자습서의 최종 소스 코드는 [GitHub](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/mvc/overview/getting-started/introduction/sample/MvcMovie/MvcMovie)에 있습니다.
+이 자습서에서는 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)을 사용 하 여 ASP.NET MVC 5 웹 앱을 빌드하는 기본 사항을 설명 합니다. 자습서의 최종 소스 코드는 [GitHub](https://github.com/dotnet/AspNetDocs/tree/master/aspnet/mvc/overview/getting-started/introduction/sample/MvcMovie/MvcMovie)에 있습니다.
 
 이 자습서는 [Scott Guthrie](https://weblogs.asp.net/scottgu/) (twitter[@scottgu](https://twitter.com/scottgu) ), [scott Hanselman](http://www.hanselman.com/blog/) (Twitter: [@shanselman](https://twitter.com/shanselman) ) 및 [Rick Anderson](https://twitter.com/RickAndMSFT) ( [@RickAndMSFT](https://twitter.com/#!/RickAndMSFT) )에 의해 작성 되었습니다.
 
@@ -67,7 +67,7 @@ Visual Studio는 방금 만든 ASP.NET MVC 프로젝트에 대 한 기본 템플
 
 완료 된 사이트가 라이브 웹 앱으로 실행 되 고 있는지 확인 하 시겠습니까? 다음 단추를 클릭 하기만 하면 Azure 계정에 전체 버전의 앱을 배포할 수 있습니다.
 
-[![](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/aspnet/AspNetDocs/tree/master/aspnet/mvc/overview/getting-started/introduction/sample/MvcMovie&amp;WT.mc_id=deploy_azure_aspnet)
+[![](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/dotnet/AspNetDocs/tree/master/aspnet/mvc/overview/getting-started/introduction/sample/MvcMovie&amp;WT.mc_id=deploy_azure_aspnet)
 
 Azure에이 솔루션을 배포 하려면 Azure 계정이 필요 합니다. 계정이 아직 없는 경우 다음 옵션 중 하나를 사용 하 여 계정을 만듭니다.
 

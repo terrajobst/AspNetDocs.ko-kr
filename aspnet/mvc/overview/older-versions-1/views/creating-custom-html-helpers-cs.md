@@ -9,11 +9,11 @@ ms.assetid: e454c67d-a86e-4119-a858-eb04bbec2dff
 msc.legacyurl: /mvc/overview/older-versions-1/views/creating-custom-html-helpers-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 264ff9850bad397826b45649d52fbfefafc53a01
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74594501"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78485789"
 ---
 # <a name="creating-custom-html-helpers-c"></a>사용자 지정 HTML 도우미 만들기(C#)
 
@@ -33,17 +33,17 @@ HTML 도우미는 문자열을 반환 하는 메서드 일 뿐입니다. 문자�
 
 ASP.NET MVC 프레임 워크에는 다음과 같은 표준 HTML 도우미 집합이 포함 되어 있습니다 (완전 한 목록이 아님).
 
-- Html.actionlink ()
-- Html.beginform ()
-- Html. CheckBox ()
-- Html DropDownList ()
-- .Html. EndForm ()
-- Html. Hidden ()
-- Html. ListBox ()
-- Html. Password ()
-- Html. RadioButton ()
-- Html. TextArea ()
-- Html. TextBox ()
+- Html.ActionLink()
+- Html.BeginForm()
+- Html.CheckBox()
+- Html.DropDownList()
+- Html.EndForm()
+- Html.Hidden()
+- Html.ListBox()
+- Html.Password()
+- Html.RadioButton()
+- Html.TextArea()
+- Html.TextBox()
 
 예를 들어 목록 1의 양식을 살펴보겠습니다. 이 폼은 두 가지 표준 HTML 도우미의 도움으로 렌더링 됩니다 (그림 1 참조). 이 폼에서는 `Html.BeginForm()` 및 `Html.TextBox()` 도우미 메서드를 사용 하 여 간단한 HTML 폼을 렌더링 합니다.
 

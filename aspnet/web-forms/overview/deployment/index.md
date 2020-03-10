@@ -2,22 +2,22 @@
 uid: web-forms/overview/deployment/index
 title: 배포 | Microsoft Docs
 author: rick-anderson
-description: 서버에 ASP.NET Web Forms 프로젝트를 배포 하는 방법입니다.
+description: ASP.NET Web Forms 프로젝트를 서버에 배포 하는 방법
 ms.author: riande
 ms.date: 08/18/2011
 ms.assetid: 05e4c88f-5101-4277-a323-b6774d98f69e
 msc.legacyurl: /web-forms/overview/deployment
 msc.type: chapter
 ms.openlocfilehash: 1483abc212b5f122ad3e2b88474c42b208bb748e
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65134300"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78520379"
 ---
 # <a name="deployment"></a>배포
 
-> 서버에 ASP.NET Web Forms 프로젝트를 배포 하는 방법입니다.
+> ASP.NET Web Forms 프로젝트를 서버에 배포 하는 방법
 
 - [Visual Studio를 사용하여 ASP.NET 웹 배포](visual-studio-web-deployment/index.md)
 
@@ -37,7 +37,7 @@ ms.locfileid: "65134300"
 
     - [Visual Studio 2010을 사용하여 엔터프라이즈 시나리오에서 웹 애플리케이션 배포](deploying-web-applications-in-enterprise-scenarios/deploying-web-applications-in-enterprise-scenarios.md)
     - [엔터프라이즈 웹 배포: 시나리오 개요](deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md)
-    - [응용 프로그램 수명 주기 관리: 개발부터 프로덕션까지](deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production.md)
+    - [애플리케이션 수명 주기 관리: 개발부터 프로덕션까지](deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production.md)
 - [ASP.NET 4 - 엔터프라이즈 배포 시리즈 1](web-deployment-in-the-enterprise/index.md)
 
     - [기업에서 웹 배포](web-deployment-in-the-enterprise/web-deployment-in-the-enterprise.md)

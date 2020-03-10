@@ -9,11 +9,11 @@ ms.assetid: 142e5181-29ce-4bb9-907b-2a0becf7928b
 msc.legacyurl: /web-forms/overview/data-access/introduction/creating-a-business-logic-layer-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 2ee4789ea9567b7bcd70eb63695e0b1d73076dc2
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74572588"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78490199"
 ---
 # <a name="creating-a-business-logic-layer-vb"></a>비즈니스 논리 레이어 만들기(VB)
 
@@ -62,7 +62,7 @@ DAL 및 BLL 관련 클래스를 보다 명확 하 게 구분 하려면 `App_Code
 - `UpdateProduct(productName, supplierID, categoryID, quantityPerUnit, unitPrice, unitsInStock, unitsOnOrder, reorderLevel, discontinued, productID)`은 전달 된 값을 사용 하 여 데이터베이스의 기존 제품을 업데이트 합니다. 정확히 하나의 행이 업데이트 된 경우 `True`을 반환 하 고, 그렇지 않으면 `False`
 - `DeleteProduct(productID)` 지정 된 제품을 데이터베이스에서 삭제 합니다.
 
-ProductsBLL
+ProductsBLL.vb
 
 [!code-vb[Main](creating-a-business-logic-layer-vb/samples/sample1.vb)]
 
@@ -147,7 +147,7 @@ BLL 클래스는 ObjectDataSource를 사용 하 여 형식화 된 데이터 집�
 
 그런 다음 `UnitPrice`, `UnitsInStock`, `UnitsOnOrder`및 `ReorderLevel` 열 값 (`NULL`되지 않는 경우)이 0 보다 크거나 같은 `ColumnChanging` 이벤트에 대 한 이벤트 처리기를 만듭니다. 이러한 열이 범위를 벗어나는 경우 `ArgumentException`를 throw 합니다.
 
-ProductsDataTable 변경. .vb
+ProductsDataTable.ColumnChanging.vb
 
 [!code-vb[Main](creating-a-business-logic-layer-vb/samples/sample5.vb)]
 
@@ -183,7 +183,7 @@ DAL 및 BLL이 완료 되 면 프레젠테이션 계층에서 시작할 준비�
 
 행복 한 프로그래밍
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

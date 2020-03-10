@@ -9,11 +9,11 @@ ms.assetid: b45fede3-c53a-4ea1-824b-20200808dbae
 msc.legacyurl: /web-forms/overview/data-access/working-with-batched-data/wrapping-database-modifications-within-a-transaction-cs
 msc.type: authoredcontent
 ms.openlocfilehash: da69e466a5b506b869dc8fc0624f3e6a479199a8
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74624624"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78489299"
 ---
 # <a name="wrapping-database-modifications-within-a-transaction-c"></a>트랜잭션 내에서 래핑된 데이터베이스 수정(C#)
 
@@ -118,7 +118,7 @@ ADO.NET에서 SqlClient 공급자를 사용 하는 경우 트랜잭션은 [`SqlT
 
 [!code-csharp[Main](wrapping-database-modifications-within-a-transaction-cs/samples/sample4.cs)]
 
-`ProductsTableAdapter.TransactionSupport.cs`의 partial 클래스를 통해 `ProductsTableAdapter` 클래스에 `UpdateWithTransaction` 메서드를 추가 합니다. 또는 몇 가지 사소한 구문이 변경 된 상태에서이 메서드를 비즈니스 논리 계층 s `ProductsBLL` 클래스에 추가할 수 있습니다. 즉, `this.BeginTransaction()`, `this.CommitTransaction()`및 `this.RollbackTransaction()`에서이 키워드를 `Adapter`으로 바꾸어야 합니다 (`Adapter` 형식 `ProductsBLL`의 속성 이름).
+`ProductsTableAdapter.TransactionSupport.cs`의 partial 클래스를 통해 `ProductsTableAdapter` 클래스에 `UpdateWithTransaction` 메서드를 추가 합니다. 또는 몇 가지 사소한 구문이 변경 된 상태에서이 메서드를 비즈니스 논리 계층 s `ProductsBLL` 클래스에 추가할 수 있습니다. 즉, `this.BeginTransaction()`, `this.CommitTransaction()`및 `this.RollbackTransaction()`에서이 키워드를 `Adapter`으로 바꾸어야 합니다 (`Adapter` 형식 `ProductsBLL`의 속성 이름).`ProductsTableAdapter`
 
 `UpdateWithTransaction` 메서드는 일괄 업데이트 패턴을 사용 하지만 다음과 같이 트랜잭션 범위 내에서 일련의 DB 직접 호출을 사용할 수도 있습니다. `DeleteProductsWithTransaction` 메서드는 삭제할 `ProductID` 인 `int`형식의 `List<T>` 입력으로 받아들입니다. 메서드는 `BeginTransaction`에 대 한 호출을 통해 트랜잭션을 시작한 다음 `try` 블록에서 각 `ProductID` 값에 대해 DB 직접 패턴 `Delete` 메서드를 호출 하는 제공 된 목록을 반복 합니다. `Delete`에 대 한 호출이 실패 하면 트랜잭션이 롤백된 `catch` 블록으로 제어가 전송 되 고 예외가 다시 throw 됩니다. `Delete`에 대 한 모든 호출이 성공 하면 트랜잭션이 커밋됩니다. `ProductsBLL` 클래스에이 메서드를 추가 합니다.
 
@@ -207,7 +207,7 @@ Refresh 단추 `Click` 이벤트 처리기는 `Products` GridView s `DataBind` �
 
 행복 한 프로그래밍
 
-## <a name="further-reading"></a>추가 정보
+## <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -217,7 +217,7 @@ Refresh 단추 `Click` 이벤트 처리기는 `Products` GridView s `DataBind` �
 - [TransactionScope 및 Dataadapter](http://andyclymer.blogspot.com/2007/01/transactionscope-and-dataadapters.html)
 - [.NET에서 Oracle Database 트랜잭션 사용](http://www.oracle.com/technology/pub/articles/price_dbtrans_dotnet.html)
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

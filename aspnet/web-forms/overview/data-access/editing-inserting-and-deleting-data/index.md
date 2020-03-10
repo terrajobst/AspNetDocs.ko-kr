@@ -1,23 +1,23 @@
 ---
 uid: web-forms/overview/data-access/editing-inserting-and-deleting-data/index
-title: 편집, 삽입 및 삭제 | Microsoft Docs
+title: 데이터 편집, 삽입 및 삭제 | Microsoft Docs
 author: rick-anderson
-description: 이러한 자습서 BLL 메서드에 ObjectDataSource 컨트롤의 메서드를 매핑하는 방법 및 GridView, DetailsView 및 FormView co를 구성 하는 방법을 표시 하는 중...
+description: 이러한 자습서에서는 ObjectDataSource 컨트롤의 메서드를 BLL 메서드에 매핑하고 GridView, DetailsView 및 FormView co를 구성 하는 방법에 대해 설명 합니다.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 9fc60498-ced4-47c6-b2cf-8d464e6aeef8
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data
 msc.type: chapter
 ms.openlocfilehash: 4657a52b05c1cf8a991158f212d6b6ce849ef276
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65109051"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78492197"
 ---
 # <a name="editing-inserting-and-deleting-data"></a>데이터 편집, 삽입 및 삭제
 
-> 이 자습서에서 BLL 메서드에 ObjectDataSource 컨트롤의 메서드를 매핑하는 방법 및 DetailsView GridView를 구성 하는 방법 및 FormView 컨트롤 사용자가 데이터를 수정할 수 있습니다.
+> 이러한 자습서에서는 ObjectDataSource 컨트롤의 메서드를 BLL 메서드에 매핑하는 방법 및 사용자가 데이터를 수정할 수 있도록 GridView, DetailsView 및 FormView 컨트롤을 구성 하는 방법에 대해 설명 합니다.
 
 - [데이터 삽입, 업데이트 및 삭제의 개요(C#)](an-overview-of-inserting-updating-and-deleting-data-cs.md)
 - [삽입, 업데이트 및 삭제와 연결된 이벤트 검사(C#)](examining-the-events-associated-with-inserting-updating-and-deleting-cs.md)

@@ -2,22 +2,22 @@
 uid: web-forms/videos/data-access/index
 title: 데이터 액세스 | Microsoft Docs
 author: rick-anderson
-description: 데이터 액세스 계층 (DAL)를 만드는 방법입니다.
+description: DAL (데이터 액세스 계층)을 만드는 방법
 ms.author: riande
 ms.date: 11/14/2011
 ms.assetid: a923735c-2d34-456c-8327-40aa62a4c1d6
 msc.legacyurl: /web-forms/videos/data-access
 msc.type: chapter
 ms.openlocfilehash: 66c8851d53cef59ea560818a054729115ca62b3b
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65106748"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78464297"
 ---
 # <a name="data-access"></a>데이터 액세스
 
-> 데이터 액세스 계층 (DAL)를 만드는 방법입니다.
+> DAL (데이터 액세스 계층)을 만드는 방법
 
 - [ADO.NET Data Services](adonet-data-services/index.md)
 
@@ -29,11 +29,11 @@ ms.locfileid: "65106748"
     - [LINQ to SQL: 개요](how-do-i-with-linq/how-do-i-linq-to-sql-overview.md)
     - [LINQ to SQL: 데이터 모델](how-do-i-with-linq/how-do-i-linq-to-sql-data-model.md)
     - [LINQ to SQL: 데이터베이스 쿼리](how-do-i-with-linq/how-do-i-linq-to-sql-querying-the-database.md)
-    - [LINQ to SQL: 데이터베이스를 업데이트 하는 중](how-do-i-with-linq/how-do-i-linq-to-sql-updating-the-database.md)
+    - [LINQ to SQL: 데이터베이스 업데이트](how-do-i-with-linq/how-do-i-linq-to-sql-updating-the-database.md)
     - [LINQ to SQL: LinqDataSource](how-do-i-with-linq/how-do-i-linq-to-sql-linqdatasource.md)
-    - [LINQ to SQL: Custom LinqDataSource](how-do-i-with-linq/how-do-i-linq-to-sql-custom-linqdatasource.md)
-    - [LINQ to SQL: 저장된 프로시저를 사용 하 여](how-do-i-with-linq/how-do-i-linq-to-sql-using-stored-procedures.md)
-    - [LINQ to SQL: 저장된 프로시저를 사용 하 여 업데이트](how-do-i-with-linq/how-do-i-linq-to-sql-updating-with-stored-procedures.md)
+    - [LINQ to SQL: 사용자 지정 LinqDataSource](how-do-i-with-linq/how-do-i-linq-to-sql-custom-linqdatasource.md)
+    - [LINQ to SQL: 저장 프로시저 사용](how-do-i-with-linq/how-do-i-linq-to-sql-using-stored-procedures.md)
+    - [LINQ to SQL: 저장 프로시저 업데이트](how-do-i-with-linq/how-do-i-linq-to-sql-updating-with-stored-procedures.md)
     - [LINQ to SQL: 임의의 SQL 실행](how-do-i-with-linq/how-do-i-linq-to-sql-executing-arbitrary-sql.md)
 - [VB 팀의 LINQ 비디오](linq-videos-from-the-vb-team/index.md)
 

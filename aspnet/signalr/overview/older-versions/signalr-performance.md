@@ -9,11 +9,11 @@ ms.assetid: 9594d644-66b6-4223-acdd-23e29a6e4c46
 msc.legacyurl: /signalr/overview/older-versions/signalr-performance
 msc.type: authoredcontent
 ms.openlocfilehash: 915fd822caae9bbcb0a688c6dd7a5b2bda12c9df
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65113896"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78468107"
 ---
 # <a name="signalr-performance-signalr-1x"></a>SignalR 성능(SignalR 1.x)
 
@@ -21,82 +21,82 @@ ms.locfileid: "65113896"
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
-> 이 항목에 대 한 디자인, 측정 및 SignalR 응용 프로그램의 성능을 향상 하는 방법을 설명 합니다.
+> 이 항목에서는 SignalR 응용 프로그램의 성능을 설계, 측정 및 개선 하는 방법에 대해 설명 합니다.
 
-SignalR 성능 및 크기 조정에서 최근 프레젠테이션을 참조 하세요 [ASP.NET SignalR을 사용 하 여 실시간 웹 크기 조정](https://channel9.msdn.com/Events/Build/2013/3-502)합니다.
+SignalR 성능 및 크기 조정에 대 한 최근 프레젠테이션은 [ASP.NET SignalR를 사용 하 여 실시간 웹 크기 조정](https://channel9.msdn.com/Events/Build/2013/3-502)을 참조 하세요.
 
-이 항목에는 다음과 같은 단원이 포함되어 있습니다.
+이 항목에는 다음과 같은 섹션이 포함되어 있습니다.
 
 - [디자인 고려 사항](#design)
-- [SignalR 서버 성능 튜닝](#tuning)
+- [성능을 위해 SignalR 서버 튜닝](#tuning)
 - [성능 문제 해결](#troubleshooting)
-- [SignalR 성능 카운터를 사용 하 여](#perfcounters)
-- [다른 성능 카운터를 사용 하 여](#othercounters)
-- [기타 리소스](#otherresources)
+- [SignalR 성능 카운터 사용](#perfcounters)
+- [다른 성능 카운터 사용](#othercounters)
+- [기타 참고 자료](#otherresources)
 
 <a id="design"></a>
 
 ## <a name="design-considerations"></a>디자인 고려 사항
 
-이 섹션에서는 성능 불필요 한 네트워크 트래픽을 생성 하 여 하지 저하 되는 되도록 SignalR 응용 프로그램을 설계할 때 구현할 수 있는 패턴을 설명 합니다.
+이 섹션에서는 SignalR 응용 프로그램을 디자인 하는 동안 구현할 수 있는 패턴을 설명 하 여 불필요 한 네트워크 트래픽을 생성 하 여 성능이 저하 되지 않도록 합니다.
 
-### <a name="throttling-message-frequency"></a>메시지 빈도 조정합니다.
+### <a name="throttling-message-frequency"></a>메시지 빈도 조정
 
-(예: 실시간 게임 응용 프로그램)는 높은 빈도로 메시지를 전송 하는 응용 프로그램에도 대부분의 응용 프로그램을 두 번째로 많은 메시지를 보낼 필요가 없습니다. 각 클라이언트를 생성 하는 트래픽 용량을 줄이기 위해 메시지 루프를 구현할 수 있습니다 큐 및 보내는 아웃 보다 자주 고정된 요금 메시지는 (즉, 특정 개수의 메시지를 최대 보내집니다 매초에서 해당 시간에 메시지가 있는 경우 보낼 terval)입니다. (클라이언트 및 서버)에서 특정 속도로 메시지를 제한 하는 샘플 응용 프로그램을 참조 하세요 [SignalR 고주파수](../getting-started/tutorial-high-frequency-realtime-with-signalr.md)합니다.
+실시간 게임 응용 프로그램과 같은 높은 빈도로 메시지를 전송 하는 응용 프로그램 에서도 대부분의 응용 프로그램은 몇 초 이상의 메시지를 보낼 필요가 없습니다. 각 클라이언트에서 생성 하는 트래픽 양을 줄이기 위해 메시지 루프를 구현 하 여 고정 된 속도 보다 더 자주 메시지를 전송 하지 않습니다. 즉, 해당 시간에 메시지가 있는 경우 몇 초 마다 전송 됩니다. 전송 될 terval). 클라이언트와 서버 모두에서 메시지를 특정 속도로 제한 하는 예제 응용 프로그램은 SignalR를 사용 하는 [빈도가 높은 실시간](../getting-started/tutorial-high-frequency-realtime-with-signalr.md)을 참조 하세요.
 
-### <a name="reducing-message-size"></a>메시지 크기를 줄임으로써
+### <a name="reducing-message-size"></a>메시지 크기 줄이기
 
-Serialize 된 개체의 크기를 줄임으로써 SignalR 메시지의 크기를 줄일 수 있습니다. 서버 코드에서 전송할 필요가 없는 속성을 포함 하는 개체를 보내는 경우 방지 속성만 사용 하 여 serialize 되는 `JsonIgnore` 특성입니다. 속성의 이름은 메시지에도 저장 됩니다. 속성의 이름을 사용 하 여 줄일 수 있습니다는 `JsonProperty` 특성입니다. 다음 코드 샘플에는 클라이언트에 전송 되는 속성을 제외 하는 방법 및 속성 이름을 단축 하는 방법을 보여 줍니다.
+Serialize 된 개체의 크기를 줄여 SignalR 메시지의 크기를 줄일 수 있습니다. 서버 코드에서 전송 하지 않아도 되는 속성을 포함 하는 개체를 전송 하는 경우 `JsonIgnore` 특성을 사용 하 여 이러한 속성이 serialize 되지 않도록 합니다. 속성의 이름도 메시지에 저장 됩니다. `JsonProperty` 특성을 사용 하 여 속성의 이름을 줄일 수 있습니다. 다음 코드 샘플에서는 클라이언트에 전송 되는 속성을 제외 하는 방법과 속성 이름을 단축 하는 방법을 보여 줍니다.
 
-**클라이언트에 전송 중인 데이터를 제외할 JsonIgnore 특성 및 메시지 크기를 줄이기 위해 JsonProperty 특성을 보여 주는.NET 서버 코드**
+**클라이언트에 전송 되는 데이터를 제외 하는 JsonIgnore 특성을 보여 주는 .NET server 코드와 메시지 크기를 줄이기 위해 Jsonpropery 특성**
 
 [!code-csharp[Main](signalr-performance/samples/sample1.cs?highlight=5,7,10)]
 
-가독성을 유지 하기 위해 / 클라이언트 코드에서 유지 관리를 약식된 속성 이름을 사람이 읽기 편한 매핑된 이름 메시지를 수신 합니다. 다음 코드 샘플을 보여 줍니다 (매핑), 메시지 계약을 정의 하 여 길이가 더 긴 약식된 이름 다시 매핑의 한 가지 방법을 사용 하는 `reMap` 계약 최적화 된 메시지 클래스에 적용할 함수입니다:
+클라이언트 코드에서 가독성/유지 관리를 유지 하기 위해 메시지를 받은 후 축약 된 속성 이름을 사용자에 게 친숙 한 이름으로 다시 매핑할 수 있습니다. 다음 코드 샘플에서는 메시지 계약 (매핑)을 정의 하 고 `reMap` 함수를 사용 하 여 최적화 된 메시지 클래스에 계약을 적용 하는 방법을 보여 줍니다.
 
-**클라이언트 쪽 JavaScript 코드가 다시 매핑하는 알기 쉬운 이름으로 속성 이름 단축**
+**사용자가 읽을 수 있는 이름에 축약 된 속성 이름을 다시 매핑하는 클라이언트 쪽 JavaScript 코드**
 
 [!code-javascript[Main](signalr-performance/samples/sample2.js)]
 
-이름이 같은 메서드를 사용 하 여도 서버에 클라이언트에서 메시지에 줄일 수 있습니다.
+동일한 방법을 사용 하 여 클라이언트에서 서버로의 메시지 에서도 이름을 줄일 수 있습니다.
 
-메모리 사용 공간 (즉, 메시지에 사용 되는 메모리의 양)를 줄이고 메시지의 개체 성능을 향상할 수도 있습니다. 예를 들어 경우의 전체 범위는 `int` 필요 하지 않은 `short` 또는 `byte` 대신 사용할 수 있습니다.
+메시지 개체의 메모리 공간 (즉, 메시지에 사용 되는 메모리 양)을 줄이면 성능도 향상 될 수 있습니다. 예를 들어 `int`의 전체 범위가 필요 하지 않은 경우 `short` 또는 `byte`를 대신 사용할 수 있습니다.
 
-메시지의 크기를 줄이면 서버 메모리에 메시지 버스에서 메시지 저장 되므로 서버 메모리 문제를 해결 수도 있습니다.
+메시지는 서버 메모리의 메시지 버스에 저장 되므로 메시지 크기를 줄이면 서버 메모리 문제를 해결할 수도 있습니다.
 
 <a id="tuning"></a>
 
-### <a name="tuning-your-signalr-server-for-performance"></a>SignalR 서버 성능 튜닝
+### <a name="tuning-your-signalr-server-for-performance"></a>성능을 위해 SignalR 서버 튜닝
 
-SignalR 응용 프로그램에서 성능 향상을 위해 서버를 튜닝 하려면 다음 구성 설정은 사용할 수 있습니다. ASP.NET 응용 프로그램에서 성능 향상 방법에 대 한 일반 정보를 참조 하세요 [ASP.NET 성능 향상](https://msdn.microsoft.com/library/ff647787.aspx)합니다.
+다음 구성 설정을 사용 하 여 SignalR 응용 프로그램의 성능을 향상 시키기 위해 서버를 튜닝할 수 있습니다. ASP.NET 응용 프로그램의 성능을 향상 시키는 방법에 대 한 일반적인 내용은 [ASP.NET 성능 향상](https://msdn.microsoft.com/library/ff647787.aspx)을 참조 하세요.
 
 **SignalR 구성 설정**
 
-- **DefaultMessageBufferSize**: 기본적으로 SignalR 허브 연결당 당 메모리에 1000 개의 메시지를 유지합니다. 큰 메시지를 사용 하는 경우이이 값을 줄여 완화할 수 있는 메모리 문제를 발생할 수 있습니다. 이 설정을 지정할 수 있습니다 합니다 `Application_Start` 또는 ASP.NET 응용 프로그램에서 이벤트 처리기는 `Configuration` 자체 호스팅된 응용 프로그램의 OWIN 시작 클래스의 메서드. 다음 샘플을 사용 하는 서버 메모리의 양을 줄이기 위해 응용 프로그램의 메모리 공간을 줄이기 위해이 값을 줄이는 방법을 보여 줍니다.
+- **Defaultmessagebuffersize**: 기본적으로 SignalR는 연결 당 허브 당 1000 메시지를 메모리에 보관 합니다. 많은 메시지를 사용 하는 경우이 값을 줄이면 메모리 문제가 발생할 수 있습니다. 이 설정은 ASP.NET 응용 프로그램의 `Application_Start` 이벤트 처리기 또는 자체 호스팅 응용 프로그램에서 OWIN startup 클래스의 `Configuration` 메서드에서 설정할 수 있습니다. 다음 샘플에서는 사용 되는 서버 메모리 양을 줄이기 위해 응용 프로그램의 메모리 사용 공간을 줄이기 위해이 값을 줄이는 방법을 보여 줍니다.
 
-    **Global.asax의 기본 메시지 버퍼 크기를 줄이면 대 한.NET 서버 코드**
+    **기본 메시지 버퍼 크기를 줄이기 위한 Global.asax의 .NET 서버 코드**
 
     [!code-csharp[Main](signalr-performance/samples/sample3.cs)]
 
 **IIS 구성 설정**
 
-- **응용 프로그램 당 최대 동시 요청**: 동시 IIS의 수를 늘리면 요청 요청을 처리 하는 것에 대 한 사용 가능한 서버 리소스를 증가 합니다. 기본값은 5000입니다. 이 설정을 늘릴, 관리자 권한 명령 프롬프트에서 다음 명령을 실행 합니다.
+- **응용 프로그램당 최대 동시 요청**수: 동시 IIS 요청 수를 늘리면 요청을 처리 하는 데 사용할 수 있는 서버 리소스가 늘어납니다. 기본값은 5000입니다. 이 설정을 늘리려면 관리자 권한 명령 프롬프트에서 다음 명령을 실행 합니다.
 
     [!code-console[Main](signalr-performance/samples/sample4.cmd)]
 
 **ASP.NET 구성 설정**
 
-이 섹션에서는 구성 파일에서 설정할 수 있는 `aspnet.config` 파일입니다. 이 파일은 플랫폼에 따라 두 위치 중 하나에 있습니다.
+이 섹션에는 `aspnet.config` 파일에서 설정할 수 있는 구성 설정이 포함 되어 있습니다. 이 파일은 플랫폼에 따라 다음 두 위치 중 하나에 있습니다.
 
 - `%windir%\Microsoft.NET\Framework\v4.0.30319\aspnet.config`
 - `%windir%\Microsoft.NET\Framework64\v4.0.30319\aspnet.config`
 
-SignalR 성능 향상 시킬 수 있는 ASP.NET 설정은 다음과 같습니다.
+SignalR 성능을 향상 시킬 수 있는 ASP.NET 설정에는 다음이 포함 됩니다.
 
-- **CPU 당 최대 동시 요청**: 이 설정을 성능 병목 현상을 줄일 수 있습니다. 이 설정을 늘릴를 추가 하려면 다음 구성 설정을 `aspnet.config` 파일:
+- **CPU 당 최대 동시 요청**수:이 설정을 높이면 성능 병목 현상이 발생할 수 있습니다. 이 설정을 늘리려면 `aspnet.config` 파일에 다음 구성 설정을 추가 합니다.
 
     [!code-xml[Main](signalr-performance/samples/sample5.xml?highlight=4)]
-- **요청 큐 제한**: 총 연결 수를 초과 하는 경우는 `maxConcurrentRequestsPerCPU` 설정을 ASP.NET 요청 큐를 사용 하 여 제한을 시작 됩니다. 큐의 크기를 늘리려면 늘릴 수 있습니다는 `requestQueueLimit` 설정 합니다. 이 작업을 수행 하려면 다음 구성 설정을 추가 합니다 `processModel` 에 노드 `config/machine.config` (대신 `aspnet.config`):
+- **요청 큐 제한**: 연결의 총 수가 `maxConcurrentRequestsPerCPU` 설정을 초과 하는 경우 ASP.NET는 큐를 사용 하 여 요청을 조정 하기 시작 합니다. 큐 크기를 늘리려면 `requestQueueLimit` 설정을 늘릴 수 있습니다. 이렇게 하려면 `aspnet.config`아닌 `config/machine.config`의 `processModel` 노드에 다음 구성 설정을 추가 합니다.
 
     [!code-xml[Main](signalr-performance/samples/sample6.xml)]
 
@@ -104,112 +104,112 @@ SignalR 성능 향상 시킬 수 있는 ASP.NET 설정은 다음과 같습니다
 
 ## <a name="troubleshooting-performance-issues"></a>성능 문제 해결
 
-이 섹션에서는 응용 프로그램에서 성능 병목 지점을 찾는 방법을 설명 합니다.
+이 섹션에서는 응용 프로그램에서 성능 병목 지점을 찾는 방법에 대해 설명 합니다.
 
-### <a name="verifying-that-websocket-is-being-used"></a>WebSocket 사용 되 고 있는지 확인 합니다.
+### <a name="verifying-that-websocket-is-being-used"></a>WebSocket이 사용 되 고 있는지 확인 하는 중
 
-SignalR 클라이언트와 서버 간의 통신에 대 한 다양 한 전송 방식 사용할 수 있습니다, WebSocket 상당한 성능 이점이 클라이언트 및 서버를 지 원하는 경우에 사용 해야 합니다. 클라이언트 및 서버에 WebSocket에 대 한 요구 사항을 충족 하는 경우를 확인 하려면 참조 [전송과 대체](../getting-started/introduction-to-signalr.md#transports)합니다. 전송 되는 응용 프로그램을 확인 하려면 브라우저 개발자 도구를 사용할 수 있으며 로그 전송 연결에 사용 되는 검사 키를 누릅니다. Internet Explorer 및 Chrome 브라우저 개발 도구 사용에 대 한 자세한 내용은 [전송과 대체](../getting-started/introduction-to-signalr.md#transports)합니다.
+SignalR는 클라이언트와 서버 간의 통신에 다양 한 전송을 사용할 수 있는 반면 WebSocket은 상당한 성능상의 이점을 제공 하며 클라이언트와 서버에서 지 원하는 경우 사용 해야 합니다. 클라이언트와 서버가 WebSocket에 대 한 요구 사항을 충족 하는지 확인 하려면 [전송 및 대체](../getting-started/introduction-to-signalr.md#transports)를 참조 하세요. 응용 프로그램에서 사용 되는 전송을 확인 하기 위해 브라우저 개발자 도구를 사용 하 고 로그를 검토 하 여 연결에 사용 되는 전송을 확인할 수 있습니다. Internet Explorer 및 Chrome에서 브라우저 개발 도구를 사용 하는 방법에 대 한 자세한 내용은 [전송 및 대체](../getting-started/introduction-to-signalr.md#transports)를 참조 하세요.
 
 <a id="perfcounters"></a>
 
-## <a name="using-signalr-performance-counters"></a>SignalR 성능 카운터를 사용 하 여
+## <a name="using-signalr-performance-counters"></a>SignalR 성능 카운터 사용
 
-이 섹션에서는 사용 하 여 SignalR 성능 카운터를 사용 하는 방법을 설명에 `Microsoft.AspNet.SignalR.Utils` 패키지 합니다.
+이 섹션에서는 `Microsoft.AspNet.SignalR.Utils` 패키지에 있는 SignalR 성능 카운터를 사용 하도록 설정 하 고 사용 하는 방법을 설명 합니다.
 
-### <a name="installing-signalrexe"></a>Signalr.exe 설치
+### <a name="installing-signalrexe"></a>Signalr를 설치 하는 중
 
-성능 카운터 SignalR.exe 라는 유틸리티를 사용 하 여 서버에 추가할 수 있습니다. 이 유틸리티를 설치 하려면 다음이 단계를 수행 합니다.
+SignalR 이라는 유틸리티를 사용 하 여 성능 카운터를 서버에 추가할 수 있습니다. 이 유틸리티를 설치 하려면 다음 단계를 수행 합니다.
 
-1. Visual Studio에서 선택 **도구가** > **NuGet 패키지 관리자** > **솔루션용 NuGet 패키지 관리**
-2. 검색할 **signalr.utils**, 설치를 선택 합니다.
+1. Visual Studio에서 **도구** > **nuget 패키지 관리자** > **솔루션에 대 한 nuget 패키지 관리** 를 선택 합니다.
+2. **Signalr. 유틸리티**를 검색 하 고 설치를 선택 합니다.
 
     ![](signalr-performance/_static/image1.png)
-3. 패키지를 설치 하려면 사용권 계약에 동의 합니다.
-4. SignalR.exe 되도록 설치 됩니다. `<project folder>/packages/Microsoft.AspNet.SignalR.Utils.<version>/tools`합니다.
+3. 사용권 계약에 동의 하 여 패키지를 설치 합니다.
+4. SignalR가 `<project folder>/packages/Microsoft.AspNet.SignalR.Utils.<version>/tools`에 설치 됩니다.
 
-### <a name="installing-performance-counters-with-signalrexe"></a>SignalR.exe를 사용 하 여 성능 카운터를 설치합니다.
+### <a name="installing-performance-counters-with-signalrexe"></a>SignalR를 사용 하 여 성능 카운터 설치
 
-SignalR 성능 카운터를 설치 하려면 다음 매개 변수를 사용 하 여 관리자 권한 명령 프롬프트에서 SignalR.exe를 실행 합니다.
+SignalR 성능 카운터를 설치 하려면 다음 매개 변수를 사용 하 여 관리자 권한 명령 프롬프트에서 SignalR를 실행 합니다.
 
 [!code-console[Main](signalr-performance/samples/sample7.cmd)]
 
-SignalR 성능 카운터를 제거 하려면 다음 매개 변수를 사용 하 여 관리자 권한 명령 프롬프트에서 SignalR.exe를 실행 합니다.
+SignalR 성능 카운터를 제거 하려면 다음 매개 변수를 사용 하 여 관리자 권한 명령 프롬프트에서 SignalR를 실행 합니다.
 
 [!code-console[Main](signalr-performance/samples/sample8.cmd)]
 
 ### <a name="signalr-performance-counters"></a>SignalR 성능 카운터
 
-유틸리티 패키지는 다음 성능 카운터를 설치합니다. 마지막 응용 프로그램 풀에 서버를 다시 시작한 이후 "전체" 카운터 이벤트 수를 측정 합니다.
+유틸리티 패키지는 다음 성능 카운터를 설치 합니다. "Total" 카운터는 마지막 응용 프로그램 풀 또는 서버 다시 시작 이후의 이벤트 수를 측정 합니다.
 
 **연결 메트릭**
 
-다음 메트릭을 측정 연결 수명 이벤트를 발생 합니다. 자세한 내용은 [이해 하 고 연결 수명 이벤트 처리](../guide-to-the-api/handling-connection-lifetime-events.md)합니다.
+다음 메트릭은 발생 하는 연결 수명 이벤트를 측정 합니다. 자세한 내용은 [연결 수명 이벤트 이해 및 처리](../guide-to-the-api/handling-connection-lifetime-events.md)를 참조 하세요.
 
 - **연결 된 연결**
-- **다시 연결**
-- **연결이 끊긴 연결**
+- **연결이 다시 연결 되었습니다.**
+- **연결 끊김**
 - **현재 연결**
 
-**메시지 메트릭스**
+**메시지 메트릭**
 
-다음 메트릭은 SignalR에서 생성 되는 메시지 트래픽을 측정 합니다.
+다음 메트릭은 SignalR에서 생성 된 메시지 트래픽을 측정 합니다.
 
 - **총 받은 연결 메시지**
 - **총 보낸 연결 메시지**
-- **연결에 수신 메시지/초**
-- **연결 메시지 전송 수/초**
+- **받은 연결 메시지/초**
+- **전송 되는 연결 메시지/초**
 
 **메시지 버스 메트릭**
 
-다음 메트릭은 내부 SignalR 메시지 버스에 배치 되는 모든 들어오고 나가는 SignalR 메시지 큐를 통해 트래픽을 측정 합니다. 메시지가 **게시** 전송 되거나 브로드캐스트 경우. A **구독자** 이 컨텍스트에서 메시지 버스에서 구독, 클라이언트 및 서버 자체의 수는 같아야 합니다. **할당 된 작업자** 활성 연결;에 데이터를 전송 하는 구성 요소를 **바쁜 작업자** 메시지를 보내는 것입니다.
+다음 메트릭은 내부 SignalR 메시지 버스, 들어오고 나가는 모든 SignalR 메시지가 배치 되는 큐를 통해 트래픽을 측정 합니다. 메시지는 보내거나 브로드캐스트할 때 **게시** 됩니다. 이 컨텍스트의 **구독자** 는 메시지 버스에 대 한 구독입니다. 이는 클라이언트 수와 서버 자체의 수와 같아야 합니다. **할당 된 작업자** 는 활성 연결에 데이터를 전송 하는 구성 요소입니다. **사용 중인 작업자** 는 메시지를 전송 하는 작업자입니다.
 
-- **메시지 버스 받은 총 메시지 수**
-- **메시지 버스 메시지 Received/Sec**
-- **메시지 버스 메시지 총 게시**
-- **메시지 버스에 게시 된 초당 메시지**
-- **메시지 버스 구독자 현재**
-- **메시지 버스에 대 한 구독자 총 수**
-- **메시지 버스 구독자/Sec**
-- **메시지 버스 작업자 할당**
+- **메시지 버스 총 수신 메시지**
+- **메시지 버스 받은 메시지/초**
+- **메시지 버스 총 게시 된 메시지**
+- **게시 된 메시지 버스 메시지/초**
+- **메시지 버스 구독자 최신**
+- **메시지 버스 구독자 합계**
+- **메시지 버스 구독자/초**
+- **메시지 버스 할당 된 작업자**
 - **메시지 버스 작업 중인 작업자**
 - **메시지 버스 항목 현재**
 
-**오차 메트릭**
+**오류 메트릭**
 
-다음 메트릭은 SignalR 메시지 트래픽에 의해 생성 된 오류를 측정 합니다. **허브 확인** 허브 또는 허브 메서드를 확인할 수 없는 경우 오류가 발생 합니다. **허브 호출** 오류는 허브 메서드를 호출 하는 동안 throw 된 예외입니다. **전송** 오류는 HTTP 요청 또는 응답 하는 동안 발생 하는 연결 오류입니다.
+다음 메트릭은 SignalR 메시지 트래픽에 의해 생성 된 오류를 측정 합니다. 허브 **확인** 오류는 허브 또는 허브 메서드를 확인할 수 없을 때 발생 합니다. 허브 **호출** 오류는 허브 메서드를 호출 하는 동안 throw 되는 예외입니다. **전송** 오류는 HTTP 요청 또는 응답 중에 throw 된 연결 오류입니다.
 
-- **오류: 모든 합계**
-- **오류: All/Sec**
-- **오류: 허브 확인 합계**
-- **오류: 초당 허브 확인**
-- **오류: 허브 호출 합계**
-- **오류: 초당 허브 호출**
-- **오류: 전송 합계**
+- **오류: 전체**
+- **오류: 모두/초**
+- **오류: 총 허브 해상도**
+- **오류: 허브 확인/초**
+- **오류: 총 허브 호출**
+- **오류: 허브 호출/초**
+- **오류: 총 전송**
 - **오류: Transport/Sec**
 
 **확장 메트릭**
 
-다음 메트릭은 트래픽 및 확장 공급자에 의해 생성 된 오류를 측정 합니다. A **Stream** 이 컨텍스트에서 확장 공급자에서 사용 하는 배율 단위는이 테이블은 SQL Server를 사용 하는 경우, Service Bus를 사용 하면 토픽 및 구독 Redis 사용 되는 경우. 기본적으로 스트림이 하나만 사용 되지만이 SQL Server 및 Service Bus에 대 한 구성을 통해 늘릴 수 있습니다. A **버퍼링** 스트림이 오류 상태가 된; 스트림이 오류 상태에 하는 경우를 백플레인에 보낸 모든 메시지 스트림을 더 이상 오류가 발생할 때까지 즉시 실패 합니다. 합니다 **전송 큐 길이** 게시 되었지만 아직 보내지 않은 메시지 수입니다.
+다음 메트릭은 확장 공급자에 의해 생성 된 트래픽 및 오류를 측정 합니다. 이 컨텍스트의 **스트림은** 확장 공급자에서 사용 되는 배율 단위입니다. 이는 SQL Server 사용 되는 경우 테이블이 고 Service Bus 사용 되는 경우 토픽 이며 Redis가 사용 되는 경우 구독입니다. 기본적으로 하나의 스트림만 사용 되지만 SQL Server 및 Service Bus에 대 한 구성을 통해이를 늘릴 수 있습니다. **버퍼링** 스트림은 오류가 발생 한 상태로 입력 된 스트림입니다. 스트림이 오류가 발생 한 경우에는 스트림이 더 이상 오류가 발생 하지 않을 때까지 후면판에 전송 된 모든 메시지가 즉시 실패 합니다. **송신 큐 길이** 는 게시 되었지만 아직 보내지 않은 메시지 수입니다.
 
-- **확장 메시지 버스 메시지 Received/Sec**
-- **확장 스트림 합계**
-- **Scaleout 스트림 열기**
-- **Scaleout 스트림 버퍼링**
-- **총 확장 오류 수**
-- **초당 확장 오류**
-- **Scaleout Send Queue Length**
+- **확장 메시지 버스 수신 메시지/초**
+- **총 확장 스트림**
+- **확장 스트림 열기**
+- **확장 스트림 버퍼링**
+- **총 확장 오류**
+- **확장 오류/초**
+- **확장 송신 큐 길이**
 
-이러한 카운터는 측정 되는 항목에 대 한 자세한 내용은 참조 하세요. [Azure Service Bus로 SignalR 규모 확장](scaleout-with-windows-azure-service-bus.md)합니다.
+이러한 카운터를 측정 하는 방법에 대 한 자세한 내용은 [SignalR 확장 with Azure Service Bus](scaleout-with-windows-azure-service-bus.md)를 참조 하세요.
 
 <a id="othercounters"></a>
 
-## <a name="using-other-performance-counters"></a>다른 성능 카운터를 사용 하 여
+## <a name="using-other-performance-counters"></a>다른 성능 카운터 사용
 
-다음 성능 카운터는 응용 프로그램의 성능을 모니터링할 때 유용한 수도 있습니다.
+다음 성능 카운터는 응용 프로그램의 성능을 모니터링 하는 데 유용할 수도 있습니다.
 
 **메모리**
 
-- .NET CLR 메모리 # 모든 힙의 (w3wp)에서 바이트
+- .NET CLR 메모리 # 모든 힙의 바이트 수 (w3wp.exe의 경우)
 
 **ASP.NET**
 
@@ -219,7 +219,7 @@ SignalR 성능 카운터를 제거 하려면 다음 매개 변수를 사용 하 
 
 **CPU**
 
-- 프로세서 Information\Processor 시간
+- 프로세서 Information\Processor Time
 
 **TCP/IP**
 
@@ -228,20 +228,20 @@ SignalR 성능 카운터를 제거 하려면 다음 매개 변수를 사용 하 
 
 **웹 서비스**
 
-- 웹 Connections
-- 웹 Service\Maximum 연결
+- 웹 서비스 \ 현재 연결
+- 웹 서비스 \ 최대 연결
 
 **스레딩**
 
-- .NET CLR LocksAndThreads\# 현재 논리 스레드
-- .NET CLR LocksAnd 스레드\# 현재 실제 스레드
+- 현재 논리 스레드의 .NET CLR LocksAndThreads\#
+- 현재 실제 스레드\# .NET CLR LocksAnd 스레드
 
 <a id="otherresources"></a>
 
-## <a name="other-resources"></a>기타 리소스
+## <a name="other-resources"></a>관련 자료
 
 ASP.NET 성능 모니터링 및 튜닝에 대 한 자세한 내용은 다음 항목을 참조 하세요.
 
 - [ASP.NET 성능 개요](https://msdn.microsoft.com/library/cc668225(v=vs.100).aspx)
-- [IIS 7.5, IIS 7.0 및 IIS 6.0에서 ASP.NET 스레드 사용량](https://blogs.msdn.com/b/tmarq/archive/2007/07/21/asp-net-thread-usage-on-iis-7-0-and-6-0.aspx)
+- [IIS 7.5, IIS 7.0 및 IIS 6.0의 ASP.NET 스레드 사용](https://blogs.msdn.com/b/tmarq/archive/2007/07/21/asp-net-thread-usage-on-iis-7-0-and-6-0.aspx)
 - [&lt;applicationPool&gt; 요소 (웹 설정)](https://msdn.microsoft.com/library/dd560842.aspx)

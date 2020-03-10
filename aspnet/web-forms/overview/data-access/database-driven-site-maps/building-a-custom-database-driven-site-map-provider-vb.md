@@ -9,11 +9,11 @@ ms.assetid: f904cd2c-a408-4484-9324-8b8d7fe33893
 msc.legacyurl: /web-forms/overview/data-access/database-driven-site-maps/building-a-custom-database-driven-site-map-provider-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 78051696bd75e1d574f55b1c5d5891fe67c3030d
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74630448"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78481613"
 ---
 # <a name="building-a-custom-database-driven-site-map-provider-vb"></a>사용자 지정 데이터베이스 중심 사이트 맵 공급자 빌드(VB)
 
@@ -170,7 +170,7 @@ ObjectDataSource를 만들고 GridView 필드를 사용자 지정한 후에 두 
 
 `SiteMap` 클래스 s 속성에 액세스 하는 경우 일부 영구 미디어에서 메모리로 사이트 맵 구조를 직렬화 해야 합니다. 그러나 사이트 맵 serialization 논리는 `SiteMap` 클래스로 하드 코딩 되지 않습니다. 대신 런타임에 `SiteMap` 클래스가 serialization에 사용할 사이트 맵 *공급자* 를 결정 합니다. 기본적으로 [`XmlSiteMapProvider` 클래스](https://msdn.microsoft.com/library/system.web.xmlsitemapprovider.aspx) 는 올바른 형식의 XML 파일에서 사이트 맵 s 구조를 읽는 데 사용 됩니다. 그러나 약간의 작업을 통해 사용자 지정 사이트 맵 공급자를 만들 수 있습니다.
 
-모든 사이트 맵 공급자는 사이트 맵 공급자에 필요한 필수 메서드 및 속성을 포함 하는 [`SiteMapProvider` 클래스](https://msdn.microsoft.com/library/system.web.sitemapprovider.aspx)에서 파생 되어야 하지만 대부분의 구현 세부 정보는 생략 됩니다. 두 번째 클래스 [`StaticSiteMapProvider`](https://msdn.microsoft.com/library/system.web.staticsitemapprovider.aspx)는 `SiteMapProvider` 클래스를 확장 하 고 필요한 기능의 보다 강력한 구현을 포함 합니다. 내부적으로 `StaticSiteMapProvider`는 사이트 맵의 `SiteMapNode` 인스턴스를 `Hashtable`에 저장 하 고 `RemoveNode(siteMapNode),`를 내부 `Clear()`에 추가 하 고 제거 하는 `AddNode(child, parent)`, `SiteMapNode`, `Hashtable`등의 메서드를 제공 합니다. `XmlSiteMapProvider`은 `StaticSiteMapProvider`에서 파생 됩니다.
+모든 사이트 맵 공급자는 사이트 맵 공급자에 필요한 필수 메서드 및 속성을 포함 하는 [`SiteMapProvider` 클래스](https://msdn.microsoft.com/library/system.web.sitemapprovider.aspx)에서 파생 되어야 하지만 대부분의 구현 세부 정보는 생략 됩니다. 두 번째 클래스 [`StaticSiteMapProvider`](https://msdn.microsoft.com/library/system.web.staticsitemapprovider.aspx)는 `SiteMapProvider` 클래스를 확장 하 고 필요한 기능의 보다 강력한 구현을 포함 합니다. 내부적으로 `StaticSiteMapProvider`는 사이트 맵의 `SiteMapNode` 인스턴스를 `Hashtable`에 저장 하 고 `RemoveNode(siteMapNode),`를 내부 `Clear()`에 추가 하 고 제거 하는 `AddNode(child, parent)`, `SiteMapNode`, `Hashtable`등의 메서드를 제공 합니다. `XmlSiteMapProvider`는 `StaticSiteMapProvider`에서 파생됩니다.
 
 `StaticSiteMapProvider`를 확장 하는 사용자 지정 사이트 맵 공급자를 만들 때 재정의 해야 하는 두 가지 추상 메서드 [`BuildSiteMap`](https://msdn.microsoft.com/library/system.web.staticsitemapprovider.buildsitemap.aspx) 및 [`GetRootNodeCore`](https://msdn.microsoft.com/library/system.web.sitemapprovider.getrootnodecore.aspx)있습니다. 이름에서 알 수 있듯이 `BuildSiteMap`은 영구 저장소에서 사이트 맵 구조를 로드 하 고 메모리에 생성 하는 일을 담당 합니다. `GetRootNodeCore`는 사이트 맵의 루트 노드를 반환 합니다.
 
@@ -292,7 +292,7 @@ ASP.NET 2.0 s 사이트 맵 기능에는 `SiteMap` 클래스, 다양 한 기본 
 
 행복 한 프로그래밍
 
-## <a name="further-reading"></a>추가 정보
+## <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -301,7 +301,7 @@ ASP.NET 2.0 s 사이트 맵 기능에는 `SiteMap` 클래스, 다양 한 기본 
 - [공급자 도구 키트](https://msdn.microsoft.com/asp.net/aa336558.aspx)
 - [ASP.NET 2.0 s 사이트 탐색 기능 검사](http://aspnet.4guysfromrolla.com/articles/111605-1.aspx)
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

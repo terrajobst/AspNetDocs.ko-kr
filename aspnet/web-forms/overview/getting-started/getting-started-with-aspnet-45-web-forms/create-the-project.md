@@ -9,11 +9,11 @@ ms.assetid: 2ce36f78-8ecb-4ab1-b748-6d0ab633ea3f
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/create-the-project
 msc.type: authoredcontent
 ms.openlocfilehash: 62918b17f42e54dfe4e45a08927b1039dcbb7012
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74576062"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78461573"
 ---
 # <a name="create-the-project"></a>프로젝트 만들기
 
@@ -25,7 +25,7 @@ ms.locfileid: "74576062"
 
 이 자습서에서는 ASP.NET의 기능에 익숙해질 수 있도록 Visual Studio에서 기본 프로젝트를 만들고, 검토 하 고, 실행 합니다. 또한 Visual Studio 환경을 검토할 것입니다.
 
-## <a name="what-youll-learn"></a>학습 내용:
+## <a name="what-youll-learn"></a>학습할 내용:
 
 - 새 Web Forms 프로젝트를 만드는 방법
 - Web Forms 프로젝트의 파일 구조입니다.
@@ -40,7 +40,7 @@ ms.locfileid: "74576062"
 
     ![프로젝트 만들기-새 프로젝트 메뉴 항목](create-the-project/_static/image1.png)
 3. 왼쪽에 있는  **C# Visual** -&gt; **웹** 템플릿 그룹 &gt; -**템플릿을** 선택 합니다.
-4. 가운데 열에서 **ASP.NET 웹 응용 프로그램** 템플릿을 선택 합니다.  
+4. 가운데 열에서 **ASP.NET 웹 애플리케이션** 템플릿을 선택합니다.  
  이 자습서 시리즈는 .NET Framework 4.5.2를 사용 합니다.
 5. 프로젝트 이름을 *WingtipToys* 로 선택 하 고 **확인** 단추를 선택 합니다. 
 
@@ -49,7 +49,7 @@ ms.locfileid: "74576062"
     > [!NOTE]
     > 이 자습서 시리즈의 프로젝트 이름은 **WingtipToys**입니다. 자습서 시리즈 전체에서 제공 된 코드가 예상 대로 작동 하도록이 *정확한* 프로젝트 이름을 사용 하는 것이 좋습니다.
 
-6. **인증 변경** 단추를 클릭 합니다. **개별 사용자 계정을** 선택 하 고 **확인** 단추를 클릭 합니다.
+6. **인증 변경** 단추를 클릭합니다. **개별 사용자 계정을** 선택 하 고 **확인** 단추를 클릭 합니다.
 
 7. **Web Forms** 템플릿을 선택 하 고 **확인** 단추를 클릭 합니다.
 
@@ -91,7 +91,7 @@ Visual Studio에서 **솔루션 탐색기** 창을 사용 하 여 프로젝트�
 
 Visual Studio는 프로젝트에 대 한 몇 가지 초기 폴더와 파일을 만듭니다. 이 자습서의 뒷부분에서 작업 하는 첫 번째 파일은 다음과 같습니다.
 
-| **파일** | **용도** |
+| **최근에 사용한 파일** | **용도** |
 | --- | --- |
 | *Default.aspx* | 일반적으로 응용 프로그램이 브라우저에서 실행 될 때 표시 되는 첫 번째 페이지입니다. |
 | *사이트 마스터* | 일관 된 레이아웃을 만들고 응용 프로그램의 페이지에 대해 표준 동작을 사용할 수 있는 페이지입니다. |

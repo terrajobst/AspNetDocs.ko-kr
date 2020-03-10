@@ -9,11 +9,11 @@ ms.assetid: 19c4d042-4e34-4b44-9f1d-6bf2253ba366
 msc.legacyurl: /web-forms/overview/older-versions-security/admin/recovering-and-changing-passwords-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 8c07b8a3c36e4863c6d2d356b8483544ac4cafeb
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74576559"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78457193"
 ---
 # <a name="recovering-and-changing-passwords-c"></a>암호 복구 및 변경(C#)
 
@@ -144,7 +144,7 @@ HTML 형식 전자 메일 집합 [`IsBodyHtml`](https://msdn.microsoft.com/libra
 
 ### <a name="programmatically-resetting-a-users-password"></a>프로그래밍 방식으로 사용자 암호 다시 설정
 
-사용자 암호를 다시 설정할 때 PasswordRecovery 컨트롤은 `MembershipUser` 개체의 [`ResetPassword` 메서드](https://msdn.microsoft.com/library/system.web.security.membershipuser.resetpassword.aspx)를 호출 합니다. 이 메서드에는 두 개의 오버 로드가 있습니다.
+사용자 암호를 다시 설정할 때 PasswordRecovery 컨트롤은 `MembershipUser` 개체의 [`ResetPassword` 메서드](https://msdn.microsoft.com/library/system.web.security.membershipuser.resetpassword.aspx)를 호출 합니다. 이 메서드에는 두 가지 오버로드가 있습니다.
 
 - **[`ResetPassword`](https://msdn.microsoft.com/library/d94bdzz2.aspx)** -사용자의 암호를 다시 설정 합니다. `RequiresQuestionAndAnswer` False 인 경우이 오버 로드를 사용 합니다.
 - **[`ResetPassword(securityAnswer)`](https://msdn.microsoft.com/library/d90zte4w.aspx)** -제공 된 *보안 대답이* 올바른 경우에만 사용자 암호를 다시 설정 합니다. `RequiresQuestionAndAnswer` True 인 경우이 오버 로드를 사용 합니다.
@@ -261,7 +261,7 @@ Login 및 CreateUserWizard 컨트롤과 마찬가지로 PasswordRecovery 및 Cha
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -270,7 +270,7 @@ Login 및 CreateUserWizard 컨트롤과 마찬가지로 PasswordRecovery 및 Cha
 - [ASP.NET에서 전자 메일 보내기](http://aspnet.4guysfromrolla.com/articles/072606-1.aspx)
 - [`System.Net.Mail` Faq](http://www.systemnetmail.com/)
 
-### <a name="about-the-author"></a>작성자 정보
+### <a name="about-the-author"></a>저자 정보
 
 Scott Mitchell는 여러 ASP/ASP. NET books의 작성자와 4GuysFromRolla.com의 창립자가 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 *[24 시간 이내에 ASP.NET 2.0을 sams teach yourself](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)* 것입니다. Scott은 [mitchell@4guysfromrolla.com](mailto:mitchell@4guysfromrolla.com) 또는 [http://ScottOnWriting.NET](http://scottonwriting.net/)의 블로그를 통해 연결할 수 있습니다.
 

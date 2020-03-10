@@ -1,154 +1,154 @@
 ---
 uid: web-forms/overview/older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering
-title: Entity Framework 4.0 및 ObjectDataSource 컨트롤, 3 부를 사용합니다. 정렬 및 필터링 | Microsoft Docs
+title: 'Entity Framework 4.0 및 ObjectDataSource 컨트롤 사용, 3 부: 정렬 및 필터링 | Microsoft Docs'
 author: tdykstra
-description: 이 자습서 시리즈의 Entity Framework 4.0 자습서 시리즈를 사용 하 여 시작 하 여 만든 Contoso University 웹 응용 프로그램 기반으로 합니다. I...
+description: 이 자습서 시리즈는 Entity Framework 4.0 자습서 시리즈 시작에서 만든 Contoso 대학 웹 응용 프로그램을 기반으로 합니다. I...
 ms.author: riande
 ms.date: 01/26/2011
 ms.assetid: 2990bd10-590d-43d5-9529-6b503ce5455d
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering
 msc.type: authoredcontent
 ms.openlocfilehash: 603120864528b9a5ff81214270eb9a7f1b68b347
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65130673"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78512717"
 ---
-# <a name="using-the-entity-framework-40-and-the-objectdatasource-control-part-3-sorting-and-filtering"></a>Entity Framework 4.0 및 ObjectDataSource 컨트롤, 3 부를 사용합니다. 정렬 및 필터링
+# <a name="using-the-entity-framework-40-and-the-objectdatasource-control-part-3-sorting-and-filtering"></a>Entity Framework 4.0 및 ObjectDataSource 컨트롤 사용, 3 부: 정렬 및 필터링
 
-[Tom Dykstra](https://github.com/tdykstra)
+만든 사람 [Tom Dykstra](https://github.com/tdykstra)
 
-> 이 자습서 시리즈에서 만든 Contoso University 웹 응용 프로그램 빌드를 [Entity Framework 4.0을 사용 하 여 시작](https://asp.net/entity-framework/tutorials#Getting%20Started) 자습서 시리즈입니다. 이전 자습서를 완료 하지 않은 경우이 자습서에 대 한 시작 지점으로 할 수 있습니다 [응용 프로그램을 다운로드](https://code.msdn.microsoft.com/ASPNET-Web-Forms-97f8ee9a) 만들어졌을 것입니다. 할 수도 있습니다 [응용 프로그램을 다운로드](https://code.msdn.microsoft.com/ASPNET-Web-Forms-6c7197aa) 전체 자습서 시리즈에서 만들어집니다. 이 자습서에 대 한 질문이 있으면 하기를 게시할 수 있습니다 합니다 [ASP.NET Entity Framework 포럼](https://forums.asp.net/1227.aspx)합니다.
+> 이 자습서 시리즈는 [Entity Framework 4.0](https://asp.net/entity-framework/tutorials#Getting%20Started) 자습서 시리즈 시작에서 만든 Contoso 대학 웹 응용 프로그램을 기반으로 합니다. 이전 자습서를 완료 하지 않은 경우이 자습서의 시작 점으로, 만든 [응용 프로그램을 다운로드할](https://code.msdn.microsoft.com/ASPNET-Web-Forms-97f8ee9a) 수 있습니다. 전체 자습서 시리즈에서 만든 [응용 프로그램을 다운로드할](https://code.msdn.microsoft.com/ASPNET-Web-Forms-6c7197aa) 수도 있습니다. 자습서에 대 한 질문이 있는 경우 [ASP.NET Entity Framework 포럼](https://forums.asp.net/1227.aspx)에 게시할 수 있습니다.
 
-이전 자습서에서 Entity Framework를 사용 하는 n 계층 웹 응용 프로그램에서 리포지토리 패턴을 구현 하 고 `ObjectDataSource` 제어 합니다. 이 자습서에서는 정렬 및 필터링을 수행 하 여 마스터-세부 시나리오를 처리 하는 방법을 보여 줍니다. 다음과 같은 향상 된 기능을 추가 합니다 *Departments.aspx* 페이지:
+이전 자습서에서는 Entity Framework 및 `ObjectDataSource` 컨트롤을 사용 하는 n 계층 웹 응용 프로그램에서 리포지토리 패턴을 구현 했습니다. 이 자습서에서는 마스터-세부 시나리오를 정렬 및 필터링 하 고 처리 하는 방법을 보여 줍니다. 다음과 같은 향상 된 기능을 *학과 페이지에 추가 합니다.*
 
-- 입력란을 이름으로 부서를 선택할 수 있도록 합니다.
-- 목록 표에 표시 되는 각 부서에 대 한 과정입니다.
+- 사용자가 이름을 기준으로 부서를 선택할 수 있는 입력란입니다.
+- 표에 표시 된 각 학과의 과정 목록입니다.
 - 열 머리글을 클릭 하 여 정렬할 수 있습니다.
 
 [![Image01](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/_static/image2.png)](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/_static/image1.png)
 
-## <a name="adding-the-ability-to-sort-gridview-columns"></a>GridView 열 정렬 하는 기능을 추가합니다.
+## <a name="adding-the-ability-to-sort-gridview-columns"></a>GridView 열을 정렬 하는 기능 추가
 
-엽니다는 *Departments.aspx* 페이지 및 추가 `SortParameterName="sortExpression"` 특성을 `ObjectDataSource` 라는 컨트롤 `DepartmentsObjectDataSource`합니다. (만들어 나중에 `GetDepartments` 라는 매개 변수를 갖는 메서드의 `sortExpression`.) 컨트롤의 여는 태그에 대 한 태그에는 이제 다음 예제와 유사합니다.
+학과 페이지 *를* 열고 `DepartmentsObjectDataSource`이라는 `ObjectDataSource` 컨트롤에 `SortParameterName="sortExpression"` 특성을 추가 합니다. 나중에 `sortExpression`이라는 매개 변수를 사용 하는 `GetDepartments` 메서드를 만듭니다. 이제 컨트롤의 여는 태그에 대 한 태그는 다음 예제와 유사 합니다.
 
 [!code-aspx[Main](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/samples/sample1.aspx)]
 
-추가 된 `AllowSorting="true"` 특성을 여는 태그를 `GridView` 컨트롤입니다. 컨트롤의 여는 태그에 대 한 태그에는 이제 다음 예제와 유사합니다.
+`GridView` 컨트롤의 여는 태그에 `AllowSorting="true"` 특성을 추가 합니다. 이제 컨트롤의 여는 태그에 대 한 태그는 다음 예제와 유사 합니다.
 
 [!code-aspx[Main](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/samples/sample2.aspx)]
 
-*Departments.aspx.cs*를 호출 하 여 기본 정렬 순서를 설정 합니다 `GridView` 컨트롤의 `Sort` 메서드에서 `Page_Load` 메서드:
+*Departments.aspx.cs*에서 `Page_Load` 메서드에서 `GridView` 컨트롤의 `Sort` 메서드를 호출 하 여 기본 정렬 순서를 설정 합니다.
 
 [!code-csharp[Main](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/samples/sample3.cs)]
 
-비즈니스 논리 클래스 또는 해당 리포지토리 클래스를 정렬 하거나 필터링 하는 코드를 추가할 수 있습니다. 비즈니스 논리 클래스에서 수행 하는 경우 정렬 또는 필터링 작업은 데이터베이스에서 데이터를 검색 한 후 있기 때문에 가능는 비즈니스 논리 클래스가 사용 되는 `IEnumerable` 저장소에서 반환 된 개체입니다. 정렬 및 필터링 리포지토리 클래스의 코드를 추가 하 고 그렇게 하는 LINQ 식 앞 또는 개체 쿼리 변환 된 경우는 `IEnumerable` 개체, 일반적으로 더 효율적인 처리를 위해 데이터베이스에 명령을 전달 됩니다. 이 자습서에서는 정렬 및 데이터베이스에서 완료 해야 하는 처리를 발생 시키는 방식으로 필터링를 구현 하-즉, 리포지토리에 있습니다.
+비즈니스 논리 클래스 또는 리포지토리 클래스에서 또는 필터를 정렬 하는 코드를 추가할 수 있습니다. 비즈니스 논리 클래스에서 수행 하는 경우 데이터를 데이터베이스에서 검색 한 후 정렬 또는 필터링 작업이 수행 됩니다. 비즈니스 논리 클래스가 리포지토리에서 반환 된 `IEnumerable` 개체를 사용 하 고 있기 때문입니다. 리포지토리 클래스에서 정렬 및 필터링 코드를 추가 하 고 LINQ 식 또는 개체 쿼리가 `IEnumerable` 개체로 변환 되기 전에 수행 하는 경우, 처리를 위해 명령이 데이터베이스로 전달 되며이는 일반적으로 더 효율적입니다. 이 자습서에서는 데이터베이스에서 처리를 수행 하는 방식으로 (즉, 리포지토리에서) 정렬과 필터링을 구현 합니다.
 
-정렬 기능을 추가 하 고 리포지토리 인터페이스는 비즈니스 논리 클래스에 대 한 리포지토리 클래스를도 새 메서드를 추가 해야 합니다. 에 *ISchoolRepository.cs* 파일에서 새 `GetDepartments` 메서드를는 `sortExpression` 반환 되는 부서 목록을 정렬 하는 데 사용할 수 있는 매개 변수:
+정렬 기능을 추가 하려면 리포지토리 인터페이스 및 리포지토리 클래스 뿐만 아니라 비즈니스 논리 클래스에 새 메서드를 추가 해야 합니다. *ISchoolRepository.cs* 파일에서 반환 되는 부서 목록을 정렬 하는 데 사용 되는 `sortExpression` 매개 변수를 사용 하는 새 `GetDepartments` 메서드를 추가 합니다.
 
 [!code-csharp[Main](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/samples/sample4.cs)]
 
-`sortExpression` 매개 변수 열을 기준으로 정렬 및 정렬 방향을 지정 합니다.
+`sortExpression` 매개 변수는 정렬 기준이 되는 열과 정렬 방향을 지정 합니다.
 
-새 메서드를 위한 코드를 추가 합니다 *SchoolRepository.cs* 파일:
+새 메서드에 대 한 코드를 *SchoolRepository.cs* 파일에 추가 합니다.
 
 [!code-csharp[Main](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/samples/sample5.cs)]
 
-매개 변수가 없는 기존 변경 `GetDepartments` 새 메서드를 호출 하는 방법.
+매개 변수가 없는 기존 `GetDepartments` 메서드를 변경 하 여 새 메서드를 호출 합니다.
 
 [!code-csharp[Main](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/samples/sample6.cs)]
 
-테스트 프로젝트에서 다음 새 메서드를 추가 합니다 *MockSchoolRepository.cs*:
+테스트 프로젝트에서 *MockSchoolRepository.cs*에 다음 새 메서드를 추가 합니다.
 
 [!code-csharp[Main](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/samples/sample7.cs)]
 
-정렬 된 목록을 반환 합니다.이 메서드를 종속 되어 있는 모든 단위 테스트를 만드는 것을 사용 하는 경우에 반환 하기 전에 목록을 정렬 합니다. 않습니다 만드시겠습니까 테스트는이 자습서에서는 메서드 수 정렬 되지 않은 부서 목록을 반환 하므로 합니다.
+정렬 된 목록을 반환 하는이 메서드에 종속 된 단위 테스트를 만들려는 경우에는 반환 하기 전에 목록을 정렬 해야 합니다. 이 자습서에서와 같은 테스트를 만들 수 없으므로 메서드는 정렬 되지 않은 부서 목록만 반환할 수 있습니다.
 
-에 *SchoolBL.cs* 파일에서 다음 새 메서드는 비즈니스 논리 클래스를 추가 합니다.
+*SchoolBL.cs* 파일에서 비즈니스 논리 클래스에 다음과 같은 새 메서드를 추가 합니다.
 
 [!code-csharp[Main](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/samples/sample8.cs)]
 
-이 코드는 리포지토리 메서드로 정렬 매개 변수를 전달합니다.
+이 코드는 sort 매개 변수를 리포지토리 메서드에 전달 합니다.
 
-실행 합니다 *Departments.aspx* 페이지입니다.
+*부서 .aspx* 페이지를 실행 합니다.
 
 [![Image02](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/_static/image4.png)](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/_static/image3.png)
 
-이제 해당 열으로 정렬 하려면 열 머리글을 클릭 수 있습니다. 열이 이미 정렬 하는 경우 제목을 클릭 하는 정렬 방향을 반대로 바꿉니다.
+이제 열 머리글을 클릭 하 여 해당 열을 기준으로 정렬할 수 있습니다. 열이 이미 정렬 된 경우 머리글을 클릭 하면 정렬 방향이 반전 됩니다.
 
 ## <a name="adding-a-search-box"></a>검색 상자 추가
 
-이 섹션의 검색 텍스트 상자 추가, 연결할 수는 `ObjectDataSource` 제어 매개 변수를 사용 하 여 제어 하 고 필터링을 지원 하도록 비즈니스 논리 클래스에 메서드를 추가 합니다.
+이 섹션에서는 검색 텍스트 상자를 추가 하 고, 컨트롤 매개 변수를 사용 하 여 `ObjectDataSource` 컨트롤에 연결 하 고, 필터링을 지원 하기 위해 비즈니스 논리 클래스에 메서드를 추가 합니다.
 
-엽니다는 *Departments.aspx* 첫 번째 머리글 사이 다음 태그를 추가한 페이지 `ObjectDataSource` 컨트롤:
+학과 페이지 *를* 열고 머리글과 첫 번째 `ObjectDataSource` 컨트롤 사이에 다음 태그를 추가 합니다.
 
 [!code-aspx[Main](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/samples/sample9.aspx)]
 
-`ObjectDataSource` 라는 컨트롤 `DepartmentsObjectDataSource`, 다음을 수행 합니다.
+`DepartmentsObjectDataSource`이라는 `ObjectDataSource` 컨트롤에서 다음을 수행 합니다.
 
-- 추가 `SelectParameters` 라는 매개 변수 요소 `nameSearchString` 에 입력 된 값을 가져옵니다는 `SearchTextBox` 제어 합니다.
-- 변경 된 `SelectMethod` 특성 값을 `GetDepartmentsByName`입니다. (나중에 만들이 메서드가 있습니다.)
+- `SearchTextBox` 컨트롤에 입력 한 값을 가져오는 `nameSearchString` 이라는 매개 변수에 대 한 `SelectParameters` 요소를 추가 합니다.
+- `SelectMethod` 특성 값을 `GetDepartmentsByName`로 변경 합니다. 이 메서드는 나중에 만듭니다.
 
-에 대 한 태그는 `ObjectDataSource` 컨트롤에는 이제 다음 예제와 유사 합니다.
+이제 `ObjectDataSource` 컨트롤의 태그는 다음 예제와 유사 합니다.
 
 [!code-aspx[Main](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/samples/sample10.aspx)]
 
-*ISchoolRepository.cs*, 추가 된 `GetDepartmentsByName` 둘 다 사용 하는 메서드 `sortExpression` 및 `nameSearchString` 매개 변수:
+*ISchoolRepository.cs*에서 `sortExpression` 및 `nameSearchString` 매개 변수를 모두 사용 하는 `GetDepartmentsByName` 메서드를 추가 합니다.
 
 [!code-csharp[Main](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/samples/sample11.cs)]
 
-*SchoolRepository.cs*, 다음 새 메서드를 추가 합니다.
+*SchoolRepository.cs*에 다음과 같은 새 메서드를 추가 합니다.
 
 [!code-csharp[Main](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/samples/sample12.cs)]
 
-이 코드에 사용 된 `Where` 검색 문자열이 포함 된 항목을 선택 하는 방법입니다. 검색 문자열이 비어 있으면 모든 레코드 선택 됩니다. 메서드를 다음과 같이 하나의 문에서 함께 호출을 지정 하는 경우 사용자에 게 유의 (`Include`, 한 다음 `OrderBy`, 다음 `Where`), `Where` 메서드 항상 마지막 이어야 합니다.
+이 코드는 `Where` 메서드를 사용 하 여 검색 문자열이 포함 된 항목을 선택 합니다. 검색 문자열이 비어 있으면 모든 레코드가 선택 됩니다. 예 `Where``OrderBy`를 들어`Include`와 같은 한 문에 메서드 호출을 함께 지정 하는 경우 `Where` 메서드는 항상 마지막 이어야 합니다.
 
-기존 변경 `GetDepartments` 사용 하는 메서드를 `sortExpression` 새 메서드를 호출 하는 매개 변수:
+`sortExpression` 매개 변수를 사용 하 여 새 메서드를 호출 하는 기존 `GetDepartments` 메서드를 변경 합니다.
 
 [!code-csharp[Main](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/samples/sample13.cs)]
 
-*MockSchoolRepository.cs* 테스트 프로젝트에서 다음 새 메서드를 추가 합니다.
+테스트 프로젝트의 *MockSchoolRepository.cs* 에 다음과 같은 새 메서드를 추가 합니다.
 
 [!code-csharp[Main](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/samples/sample14.cs)]
 
-*SchoolBL.cs*, 다음 새 메서드를 추가 합니다.
+*SchoolBL.cs*에 다음과 같은 새 메서드를 추가 합니다.
 
 [!code-csharp[Main](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/samples/sample15.cs)]
 
-실행 합니다 *Departments.aspx* 페이지 및 선택 논리 작동 하는지 확인 하려면 검색 문자열을 입력 합니다. 텍스트 상자를 비워 두고 모든 레코드가 반환 되도록 검색을 시도해 보세요.
+학과 페이지 *를* 실행 하 고 검색 문자열을 입력 하 여 선택 논리가 작동 하는지 확인 합니다. 텍스트 상자를 비워 두고 검색을 시도 하 여 모든 레코드가 반환 되는지 확인 합니다.
 
 [![Image03](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/_static/image6.png)](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/_static/image5.png)
 
-## <a name="adding-a-details-column-for-each-grid-row"></a>각 그리드 행에 대 한 세부 정보 열을 추가합니다.
+## <a name="adding-a-details-column-for-each-grid-row"></a>각 표 형태 창의 행에 대 한 세부 정보 열 추가
 
-다음으로, 모든 그리드의 오른쪽 셀에 표시 되는 각 부서에 대 한 강의 참조 하려고 합니다. 이 위해 사용 하 여 중첩 된 `GridView` 컨트롤과 databind 데이터로 하는 `Courses` 의 탐색 속성을 `Department` 엔터티.
+다음으로 표의 오른쪽 셀에 표시 되는 각 학과의 모든 과정을 확인 하려고 합니다. 이렇게 하려면 중첩 된 `GridView` 컨트롤을 사용 하 고이를 `Department` 엔터티의 `Courses` 탐색 속성의 데이터에 데이터 바인딩할 수 있습니다.
 
-열기 *Departments.aspx* 및 태그에는 `GridView` 컨트롤을 처리기를 지정에 대 한는 `RowDataBound` 이벤트입니다. 컨트롤의 여는 태그에 대 한 태그에는 이제 다음 예제와 유사합니다.
+학과 *.aspx* 를 열고 `GridView` 컨트롤에 대 한 태그에서 `RowDataBound` 이벤트에 대 한 처리기를 지정 합니다. 이제 컨트롤의 여는 태그에 대 한 태그는 다음 예제와 유사 합니다.
 
 [!code-aspx[Main](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/samples/sample16.aspx)]
 
-새 `TemplateField` 요소 뒤의 `Administrator` 템플릿 필드:
+`Administrator` 템플릿 필드 뒤에 새 `TemplateField` 요소를 추가 합니다.
 
 [!code-aspx[Main](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/samples/sample17.aspx)]
 
-이 태그는 중첩 된 만듭니다 `GridView` 강좌 번호 및 제목 목록은 과정을 보여주는 컨트롤입니다. Databind 해야 하기 때문에 데이터 소스를 지정 하지에서 코드에는 `RowDataBound` 처리기입니다.
+이 태그는 과정 번호와 코스 목록의 제목을 표시 하는 중첩 된 `GridView` 컨트롤을 만듭니다. `RowDataBound` 처리기에서 코드에 데이터를 바인딩할 수 있기 때문에 데이터 소스를 지정 하지 않습니다.
 
-오픈 *Departments.aspx.cs* 에 대 한 다음 처리기를 추가 하 고는 `RowDataBound` 이벤트:
+*Departments.aspx.cs* 를 열고 `RowDataBound` 이벤트에 대 한 다음 처리기를 추가 합니다.
 
 [!code-csharp[Main](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/samples/sample18.cs)]
 
-이 코드는 `Department` 이벤트 인수에서 엔터티 변환 합니다 `Courses` 탐색 속성을를 `List` 컬렉션 및 중첩 된 계열을 `GridView` 컬렉션에.
+이 코드는 이벤트 인수에서 `Department` 엔터티를 가져오고 `Courses` 탐색 속성을 `List` 컬렉션으로 변환한 다음 중첩 된 `GridView`를 컬렉션에 열의.
 
-열기는 *SchoolRepository.cs* 파일과 대해 즉시 로드를 지정 합니다 `Courses` 호출 하 여 탐색 속성을 `Include` 에서 만든 개체 쿼리에서 메서드를 `GetDepartmentsByName` 메서드. 합니다 `return` 문에서 `GetDepartmentsByName` 메서드에는 이제 다음 예제와 유사 합니다.
+*SchoolRepository.cs* 파일을 열고 `GetDepartmentsByName` 메서드에서 만든 개체 쿼리에서 `Include` 메서드를 호출 하 여 `Courses` 탐색 속성에 대해 즉시 로드를 지정 합니다. 이제 `GetDepartmentsByName` 메서드의 `return` 문은 다음 예제와 유사 합니다.
 
 [!code-csharp[Main](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/samples/sample19.cs)]
 
-페이지를 실행 합니다. 정렬 및 필터링 위에서 추가한 기능을 하는 것 외에도 GridView 컨트롤은 이제 각 부서에 대 한 중첩 된 강좌 세부 정보 표시 됩니다.
+페이지를 실행 합니다. 이전에 추가한 정렬 및 필터링 기능 외에도 GridView 컨트롤에는 각 부서에 대 한 중첩 된 과정 세부 정보가 표시 됩니다.
 
 [![Image01](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/_static/image8.png)](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/_static/image7.png)
 
-정렬, 필터링 및 마스터-세부 시나리오에 대 한 소개를 완료 합니다. 다음 자습서에서는 동시성을 처리 하는 방법을 배웁니다.
+이렇게 하면 정렬, 필터링 및 마스터-세부 시나리오에 대 한 소개를 완료 합니다. 다음 자습서에서는 동시성을 처리 하는 방법을 알아봅니다.
 
 > [!div class="step-by-step"]
 > [이전](using-the-entity-framework-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests.md)

@@ -1,23 +1,23 @@
 ---
 uid: web-pages/overview/getting-started/index
-title: ASP.NET 웹 페이지를 사용 하 여 시작 | Microsoft Docs
+title: ASP.NET 웹 페이지 시작 | Microsoft Docs
 author: rick-anderson
-description: 설명에 대 한 ASP.NET 웹 페이지 ASP.NET Web Pages 및 새 Razor 구문을 HTML t를 사용 하 여 서버 코드를 결합 하 여 빠르고 쉬우며 간단한 방법을 제공 하는 중...
+description: 서버 코드를 HTML과 결합 하는 빠르고 하기 쉬우며 하 고 간단한 방법을 제공 하는 ASP.NET 웹 페이지 ASP.NET 웹 페이지 및 새 Razor 구문에 대해 알아봅니다.
 ms.author: riande
 ms.date: 05/18/2012
 ms.assetid: 99253c4e-a125-4c21-85e7-a6dd74d93892
 msc.legacyurl: /web-pages/overview/getting-started
 msc.type: chapter
 ms.openlocfilehash: 50a249d0e64cff2a8c4f16f38f530b6d52f755de
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65133181"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78520649"
 ---
-# <a name="getting-started-with-aspnet-web-pages"></a>ASP.NET 웹 페이지를 사용 하 여 시작
+# <a name="getting-started-with-aspnet-web-pages"></a>ASP.NET 웹 페이지 시작
 
-> Web Pages 및 WebMatrix는 모든 설치, 시작 및 사이트를 배포 하는 방법 및 됩니다.
+> 웹 페이지와 WebMatrix는 무엇이 고, 모든 항목을 설치 하 고, 시작 하 고, 배포 하는 방법을 제공 합니다.
 
 - [Visual Studio에서 ASP.NET 웹 페이지 프로그래밍](program-asp-net-web-pages-in-visual-studio.md)
 - [ASP.NET 웹 프로그래밍 Razor 구문 소개](introducing-razor-syntax-c.md)

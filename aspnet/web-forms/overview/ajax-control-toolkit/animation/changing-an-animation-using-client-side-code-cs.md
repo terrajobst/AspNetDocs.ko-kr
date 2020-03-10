@@ -9,11 +9,11 @@ ms.assetid: 2bfbc5cc-f942-44b7-a62d-a29520f1da9a
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/changing-an-animation-using-client-side-code-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 84fc2d6646b89cfabb2193cdfca59462d6d7ef16
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74606974"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78484055"
 ---
 # <a name="changing-an-animation-using-client-side-code-c"></a>클라이언트 쪽 코드를 사용하여 애니메이션 변경(C#)
 
@@ -51,7 +51,7 @@ ASP.NET AJAX 컨트롤 도구 키트의 애니메이션 컨트롤은 컨트롤�
 
 `AnimationExtender` 컨트롤 내에 `<Animations>` 노드가 없습니다. 사용자 지정 JavaScript 코드는 컨트롤과 함께 사용 되는 애니메이션을 제공 하는 데 사용 됩니다.
 
-`AnimationExtender`의 서버 API와 마찬가지로 extender에 아직 애니메이션을 할당 하는 쉬운 방법은 없습니다. 그러나 extender는 다양 한 이벤트 (`OnClick`, `OnLoad`등)에 등록 된 애니메이션을 읽고 쓰는 여러 메서드를 노출 합니다. 다음은 몇 가지 예입니다.
+`AnimationExtender`의 서버 API와 마찬가지로 extender에 아직 애니메이션을 할당 하는 쉬운 방법은 없습니다. 그러나 extender는 다양 한 이벤트 (`OnClick`, `OnLoad`등)에 등록 된 애니메이션을 읽고 쓰는 여러 메서드를 노출 합니다. 예를 들어 다음과 같은 노래를 선택할 수 있다.
 
 - `get_OnClick()`
 - `set_OnClick()`

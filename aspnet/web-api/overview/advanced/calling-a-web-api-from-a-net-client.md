@@ -8,29 +8,29 @@ ms.date: 11/24/2017
 ms.custom: seoapril2019
 msc.legacyurl: /web-api/overview/advanced/calling-a-web-api-from-a-net-client
 msc.type: authoredcontent
-ms.openlocfilehash: 960960d26863cc3f725eee8a6c98844c5d3ce721
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.openlocfilehash: ab3ba71839123e848dffaa59871f9dac8c1a88d0
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519182"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78504959"
 ---
 # <a name="call-a-web-api-from-a-net-client-c"></a>.NET 클라이언트에서 Web API 호출 (C#)
 
 만든 사람 [Mike Wasson](https://github.com/MikeWasson) And [Rick Anderson](https://twitter.com/RickAndMSFT)
 
-[완료 된 프로젝트를 다운로드](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client/sample)합니다. [지침을 다운로드하세요](/aspnet/core/tutorials/#how-to-download-a-sample). 
+[완료 된 프로젝트를 다운로드](https://github.com/dotnet/AspNetDocs/tree/master/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client/sample)합니다. [지침을 다운로드하세요](/aspnet/core/tutorials/#how-to-download-a-sample). 
 
 이 자습서에서는 .NET 응용 프로그램에서 웹 API를 호출 하는 방법을 보여 [줍니다.](https://msdn.microsoft.com/library/system.net.http.httpclient(v=vs.110).aspx)
 
 이 자습서에서는 다음 web API를 사용 하는 클라이언트 앱이 작성 됩니다.
 
-| 동작 | HTTP 메서드 | 상대 URI |
+| 작업 | HTTP 메서드 | 상대 URI |
 | --- | --- | --- |
-| ID로 제품 가져오기 | 가져오기 | /api/products/*id* |
-| 새 제품 만들기 | 올리기 | /api/제품 |
+| ID로 제품 가져오기 | GET | /api/products/*id* |
+| 새 제품 만들기 | POST | /api/제품 |
 | 제품 업데이트 | PUT | /api/products/*id* |
-| 제품 삭제 | DELETE | /api/products/*id* |
+| 제품 삭제 | Delete | /api/products/*id* |
 
 ASP.NET Web API를 사용 하 여이 API를 구현 하는 방법을 알아보려면 [CRUD 작업을 지 원하는 WEB API 만들기](xref:web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api
 )를 참조 하세요.
@@ -93,7 +93,7 @@ Netwonsoft (Json.NET 라고도 함)는 .NET 용으로 널리 사용 되는 고�
 
 [!code-csharp[Main](calling-a-web-api-from-a-net-client/sample/client/Program.cs?name=snippet5)]
 
-위의 코드:
+위의 코드는:
 
 * HTTP 요청에 대 한 기본 URI를 설정 합니다. 서버 앱에서 사용 되는 포트로 포트 번호를 변경 합니다. 서버 앱에 대 한 포트를 사용 하지 않으면 앱이 작동 하지 않습니다.
 * Accept 헤더를 "application/json"으로 설정 합니다. 이 헤더를 설정 하면 서버에서 JSON 형식으로 데이터를 전송 합니다.
@@ -165,11 +165,11 @@ GET과 마찬가지로 DELETE 요청에는 요청 본문이 없습니다. DELETE
 
 클라이언트 앱을 테스트 하려면:
 
-1. 서버 앱을 [다운로드](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client/sample/server) 하 고 실행 합니다. [지침을 다운로드하세요](/aspnet/core/#how-to-download-a-sample). 서버 앱이 작동 하는지 확인 합니다. 예를 들어 `http://localhost:64195/api/products`는 제품 목록을 반환 해야 합니다.
+1. 서버 앱을 [다운로드](https://github.com/dotnet/AspNetDocs/tree/master/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client/sample/server) 하 고 실행 합니다. [지침을 다운로드하세요](/aspnet/core/#how-to-download-a-sample). 서버 앱이 작동 하는지 확인 합니다. 예를 들어 `http://localhost:64195/api/products`는 제품 목록을 반환 해야 합니다.
 2. HTTP 요청에 대 한 기본 URI를 설정 합니다. 서버 앱에서 사용 되는 포트로 포트 번호를 변경 합니다.
     [!code-csharp[Main](calling-a-web-api-from-a-net-client/sample/client/Program.cs?name=snippet5&highlight=2)]
 
-3. 클라이언트 앱을 실행합니다. 다음 출력이 생성됩니다.
+3. 클라이언트 앱을 실행 합니다. 다음 출력이 생성됩니다.
 
    ```console
    Created at http://localhost:64195/api/products/4

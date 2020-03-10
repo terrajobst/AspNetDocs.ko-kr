@@ -10,15 +10,15 @@ ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/extensibility/change-primary-key-for-users-in-aspnet-identity
 msc.type: authoredcontent
 ms.openlocfilehash: 0afea8eacfc646f1489b87629fdb2d437815d88c
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519143"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78472265"
 ---
 # <a name="change-primary-key-for-users-in-aspnet-identity"></a>ASP.NET Identity에서 사용자의 기본 키 변경
 
-[Tom FitzMacken](https://github.com/tfitzmac)
+만든 사람 [Tom FitzMacken](https://github.com/tfitzmac)
 
 > Visual Studio 2013에서 기본 웹 응용 프로그램은 사용자 계정에 대 한 키에 문자열 값을 사용 합니다. ASP.NET Identity를 사용 하 여 데이터 요구 사항에 맞게 키 유형을 변경할 수 있습니다. 예를 들어 키의 형식을 문자열에서 정수로 변경할 수 있습니다.
 > 
@@ -32,7 +32,7 @@ ms.locfileid: "76519143"
 
 이 자습서의 단계를 수행 하려면 Visual Studio 2013 업데이트 2 이상 및 ASP.NET 웹 응용 프로그램 템플릿에서 만든 웹 응용 프로그램이 있어야 합니다. 템플릿은 업데이트 3에서 변경 되었습니다. 이 항목에서는 업데이트 2 및 업데이트 3에서 템플릿을 변경 하는 방법을 보여 줍니다.
 
-이 항목에는 다음과 같은 단원이 포함되어 있습니다.
+이 항목에는 다음과 같은 섹션이 포함되어 있습니다.
 
 - [Id 사용자 클래스에서 키의 형식 변경](#userclass)
 - [키 유형을 사용 하는 사용자 지정 Id 클래스 추가](#customclass)
@@ -43,7 +43,7 @@ ms.locfileid: "76519143"
 - [업데이트 2를 사용 하는 Web Forms의 경우 키 유형을 전달 하도록 계정 페이지를 변경 합니다.](#webformsupdate2)
 - [업데이트 3의 Web Forms에 대해 키 유형을 전달 하도록 계정 페이지를 변경 합니다.](#webformsupdate3)
 - [응용 프로그램 실행](#run)
-- [기타 리소스](#other)
+- [기타 참고 자료](#other)
 
 <a id="userclass"></a>
 ## <a name="change-the-type-of-the-key-in-the-identity-user-class"></a>Id 사용자 클래스에서 키의 형식 변경

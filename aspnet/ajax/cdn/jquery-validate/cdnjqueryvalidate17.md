@@ -1,6 +1,6 @@
 ---
 uid: ajax/cdn/jquery-validate/cdnjqueryvalidate17
-title: jquery.validate 버전 1.7 | Microsoft Docs
+title: jquery. 1.7 버전의 유효성을 검사 합니다. | Microsoft Docs
 author: rick-anderson
 description: ''
 ms.author: riande
@@ -9,15 +9,15 @@ ms.assetid: cef6b8be-ac1a-4661-85e3-8e444782ad88
 msc.legacyurl: /ajax/cdn/jquery-validate/cdnjqueryvalidate17
 msc.type: content
 ms.openlocfilehash: 1b5b7f842b56a56bbc797499703e88c3ad8434e7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59378622"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78472799"
 ---
 # <a name="jqueryvalidate-version-17"></a>jquery.validate 버전 1.7
 
-다음 파일은 CDN에서 호스트 됩니다.
+CDN에서 호스트 되는 파일은 다음과 같습니다.
 
 - https://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.js
 - https://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js

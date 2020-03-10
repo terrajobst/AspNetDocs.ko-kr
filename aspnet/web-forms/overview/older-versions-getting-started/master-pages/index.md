@@ -2,22 +2,22 @@
 uid: web-forms/overview/older-versions-getting-started/master-pages/index
 title: ASP.NET 3.5-Web Forms 마스터 페이지 | Microsoft Docs
 author: rick-anderson
-description: 만들고 Web Forms 응용 프로그램에 일관 된 레이아웃을 만들려면 ASP.NET 마스터 페이지 및 콘텐츠 페이지를 사용 하는 방법입니다.
+description: ASP.NET 마스터 페이지 및 콘텐츠 페이지를 만들고 사용 하 여 Web Forms 응용 프로그램에서 일관 된 레이아웃을 만드는 방법
 ms.author: riande
 ms.date: 11/04/2011
 ms.assetid: bc30f0ec-cf8f-4a33-9eee-513be872ac9c
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages
 msc.type: chapter
 ms.openlocfilehash: 3847269a495d54b0986bab245023daff4a43386a
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65134148"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78473483"
 ---
 # <a name="aspnet-35---web-forms-master-pages"></a>ASP.NET 3.5 - Web Forms 마스터 페이지
 
-> 만들고 Web Forms 응용 프로그램에 일관 된 레이아웃을 만들려면 ASP.NET 마스터 페이지 및 콘텐츠 페이지를 사용 하는 방법입니다.
+> ASP.NET 마스터 페이지 및 콘텐츠 페이지를 만들고 사용 하 여 Web Forms 응용 프로그램에서 일관 된 레이아웃을 만드는 방법
 
 - [마스터 페이지를 사용하여 사이트 전체 레이아웃 만들기(C#)](creating-a-site-wide-layout-using-master-pages-cs.md)
 - [여러 ContentPlaceHolders 및 기본 콘텐츠(C#)](multiple-contentplaceholders-and-default-content-cs.md)

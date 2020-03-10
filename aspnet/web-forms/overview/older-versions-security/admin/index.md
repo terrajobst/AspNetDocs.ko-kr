@@ -2,22 +2,22 @@
 uid: web-forms/overview/older-versions-security/admin/index
 title: ASP.NET 3.5-보안 관리 | Microsoft Docs
 author: rick-anderson
-description: 이 자습서 시리즈를 사용자 및 역할을 관리할 수 있는 관리 페이지를 만드는 방법을 보여 줍니다.
+description: 이 자습서 시리즈는 사용자 및 역할을 관리할 수 있는 관리 페이지를 만드는 한 가지 방법을 보여 줍니다.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: b715c4ec-6f4b-4f7e-8ee3-b1613477ce61
 msc.legacyurl: /web-forms/overview/older-versions-security/admin
 msc.type: chapter
 ms.openlocfilehash: aa267058e1697c94f49f886087f769e3fcac25ca
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65130557"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78458261"
 ---
 # <a name="aspnet-35---security-administration"></a>ASP.NET 3.5 - 보안 관리
 
-> 이 자습서 시리즈를 사용자 및 역할을 관리할 수 있는 관리 페이지를 만드는 방법을 보여 줍니다.
+> 이 자습서 시리즈는 사용자 및 역할을 관리할 수 있는 관리 페이지를 만드는 한 가지 방법을 보여 줍니다.
 
 - [여러 사용자 계정 중 하나를 선택하는 인터페이스 빌드(C#)](building-an-interface-to-select-one-user-account-from-many-cs.md)
 - [암호 복구 및 변경(C#)](recovering-and-changing-passwords-cs.md)

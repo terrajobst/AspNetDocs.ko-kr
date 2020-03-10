@@ -9,11 +9,11 @@ ms.assetid: 1bc333c5-f096-4ea7-b170-779accc21c1a
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/the-fix-it-sample-application
 msc.type: authoredcontent
 ms.openlocfilehash: 896196bdb6a6b0d12a6c798ead510e37dd38a9fc
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77456883"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78471395"
 ---
 # <a name="appendix-the-fix-it-sample-application-building-real-world-cloud-apps-with-azure"></a>부록: Fix It 샘플 응용 프로그램 (Azure를 사용 하 여 실제 클라우드 앱 빌드)
 

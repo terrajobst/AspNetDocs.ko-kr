@@ -9,11 +9,11 @@ ms.assetid: d62c3a63-0940-4019-874e-4a4047df0c1c
 msc.legacyurl: /web-forms/overview/data-access/basic-reporting/displaying-data-with-the-objectdatasource-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 754188352cbfb08e610027f5b7890a32bd88ae26
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74609559"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78483053"
 ---
 # <a name="displaying-data-with-the-objectdatasource-vb"></a>ObjectDataSource를 사용하여 데이터 표시(VB)
 
@@ -140,7 +140,7 @@ DataWebControls 테마를 사용 하는 페이지에서 모든 GridView의 `CssC
 
 [!code-xml[Main](displaying-data-with-the-objectdatasource-vb/samples/sample5.xml)]
 
-이것이 전부입니다! `styleSheetTheme` 설정은 테마에 지정 된 속성이 컨트롤 수준에서 지정 된 속성을 재정의 *하지* 않아야 함을 나타냅니다. 테마 설정에서 제어 설정을 거부가 지정 하려면 `styleSheetTheme`대신 `theme` 특성을 사용 합니다. 그러나 테마 설정은 Visual Studio 디자인 뷰에 표시 되지 않습니다. 테마 및 스킨에 대 한 자세한 내용은 테마를 사용 하 여 [ASP.NET 테마 및 스킨 개요](https://msdn.microsoft.com/library/ykzx33wh.aspx) 및 [서버 쪽 스타일](https://quickstarts.asp.net/quickstartv20/aspnet/doc/themes/stylesheettheme.aspx) 을 참조 하세요. 테마를 사용 하도록 페이지를 구성 하는 방법에 대 한 자세한 내용은 [방법: ASP.NET 테마 적용](https://msdn.microsoft.com/library/0yy5hxdk%28VS.80%29.aspx) 을 참조 하세요.
+이제 모든 작업을 마쳤습니다. `styleSheetTheme` 설정은 테마에 지정 된 속성이 컨트롤 수준에서 지정 된 속성을 재정의 *하지* 않아야 함을 나타냅니다. 테마 설정에서 제어 설정을 거부가 지정 하려면 `styleSheetTheme`대신 `theme` 특성을 사용 합니다. 그러나 테마 설정은 Visual Studio 디자인 뷰에 표시 되지 않습니다. 테마 및 스킨에 대 한 자세한 내용은 테마를 사용 하 여 [ASP.NET 테마 및 스킨 개요](https://msdn.microsoft.com/library/ykzx33wh.aspx) 및 [서버 쪽 스타일](https://quickstarts.asp.net/quickstartv20/aspnet/doc/themes/stylesheettheme.aspx) 을 참조 하세요. 테마를 사용 하도록 페이지를 구성 하는 방법에 대 한 자세한 내용은 [방법: ASP.NET 테마 적용](https://msdn.microsoft.com/library/0yy5hxdk%28VS.80%29.aspx) 을 참조 하세요.
 
 [GridView ![제품의 이름, 범주, 공급자, 가격 및 단종 된 정보를 표시 합니다.](displaying-data-with-the-objectdatasource-vb/_static/image31.png)](displaying-data-with-the-objectdatasource-vb/_static/image30.png)
 
@@ -206,7 +206,7 @@ ASP.NET 2.0의 ObjectDataSource 컨트롤을 통해 코드 줄을 작성 하지 
 
 행복 한 프로그래밍
 
-## <a name="further-reading"></a>추가 정보
+## <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -217,7 +217,7 @@ ASP.NET 2.0의 ObjectDataSource 컨트롤을 통해 코드 줄을 작성 하지 
 - [테마를 사용 하는 서버 쪽 스타일](https://quickstarts.asp.net/quickstartv20/aspnet/doc/themes/stylesheettheme.aspx)
 - [방법: 프로그래밍 방식으로 ASP.NET 테마 적용](https://msdn.microsoft.com/library/tx35bd89.aspx)
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

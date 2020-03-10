@@ -9,11 +9,11 @@ ms.assetid: 7871dc05-2750-470f-8b4c-3a52511949bc
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/updating-related-data-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
 ms.openlocfilehash: d29cb172d642b67947b461d1a7e55d01872bb8c2
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74592436"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78468287"
 ---
 # <a name="updating-related-data-with-the-entity-framework-in-an-aspnet-mvc-application-6-of-10"></a>ASP.NET MVC 응용 프로그램에서 Entity Framework를 사용 하 여 관련 데이터 업데이트 (6/10)
 
@@ -105,7 +105,7 @@ ms.locfileid: "74592436"
 
 코드는 다음을 수행합니다.
 
-- `OfficeAssignment` 탐색 속성에 대한 즉시 로드를 사용하여 데이터베이스에서 현재 `Instructor` 엔터티를 가져옵니다. 이는 `HttpGet` `Edit` 메서드에서 수행한 것과 동일 합니다.
+- `Instructor` 탐색 속성에 대한 즉시 로드를 사용하여 데이터베이스에서 현재 `OfficeAssignment` 엔터티를 가져옵니다. 이는 `HttpGet` `Edit` 메서드에서 수행한 것과 동일 합니다.
 - 모델 바인더의 값으로 검색된 `Instructor` 엔터티를 업데이트합니다. [TryUpdateModel](https://msdn.microsoft.com/library/dd470908(v=vs.108).aspx) 오버 로드를 사용 하면 포함 하려는 속성을 *허용 목록* 수 있습니다. 이렇게 하면 [두 번째 자습서](implementing-basic-crud-functionality-with-the-entity-framework-in-asp-net-mvc-application.md)에 설명 된 대로 과도 한 게시를 방지할 수 있습니다.
 
     [!code-csharp[Main](updating-related-data-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample10.cs)]

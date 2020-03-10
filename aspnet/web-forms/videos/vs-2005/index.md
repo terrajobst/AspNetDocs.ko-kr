@@ -2,22 +2,22 @@
 uid: web-forms/videos/vs-2005/index
 title: Visual Studio 2005 | Microsoft Docs
 author: rick-anderson
-description: 테스트, 배포 및 기타 작업을 수행 하려면 Visual Studio 2005, Team System 및 추가 기능을 사용 하는 방법입니다.
+description: Visual Studio 2005, Team System 및 추가 기능을 사용 하 여 테스트, 배포 및 기타 작업을 수행 하는 방법을 설명 합니다.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 1bcf9a1c-ed34-4ed0-ab91-253df08fc6ff
 msc.legacyurl: /web-forms/videos/vs-2005
 msc.type: chapter
 ms.openlocfilehash: 7bfa41c62ece2c5ac34fc290560ee16a82248de0
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65131501"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78512915"
 ---
 # <a name="visual-studio-2005"></a>Visual Studio 2005
 
-> 테스트, 배포 및 기타 작업을 수행 하려면 Visual Studio 2005, Team System 및 추가 기능을 사용 하는 방법입니다.
+> Visual Studio 2005, Team System 및 추가 기능을 사용 하 여 테스트, 배포 및 기타 작업을 수행 하는 방법을 설명 합니다.
 
 - [Team System을 사용한 단위 테스트 소개](introduction-to-unit-testing-with-team-system.md)
 - [Team System을 사용한 웹 애플리케이션 테스트 소개](introduction-to-testing-web-applications-with-team-system.md)

@@ -9,11 +9,11 @@ ms.assetid: 07e15538-2f29-40c6-b2e7-e6115075ac83
 msc.legacyurl: /web-forms/overview/older-versions-security/introduction/security-basics-and-asp-net-support-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 1ccaac101a83d0e28b07b220b8b7b61a9039227e
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74642432"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78520073"
 ---
 # <a name="security-basics-and-aspnet-support-c"></a>보안 기본 사항 및 ASP.NET 지원(C#)
 
@@ -40,7 +40,7 @@ ms.locfileid: "74642432"
 
 이러한 자습서는 간결 하 게 만들어 프로세스를 시각적으로 안내 하는 다양 한 스크린 샷를 제공 하는 단계별 지침을 제공 합니다. 각 자습서는 및 Visual Basic C# 버전에서 사용할 수 있으며, 사용 되는 전체 코드의 다운로드를 포함 합니다. 이 첫 번째 자습서에서는 높은 수준의 관점에서 보안 개념에 중점을 둔 것 이므로 연결 된 코드를 포함 하지 않습니다.
 
-이 자습서에서는 폼 인증, 권한 부여, 사용자 계정 및 역할을 구현 하는 데 도움이 되는 중요 한 보안 개념과 ASP.NET에서 사용할 수 있는 기능에 대해 설명 합니다. 시작 하겠습니다.
+이 자습서에서는 폼 인증, 권한 부여, 사용자 계정 및 역할을 구현 하는 데 도움이 되는 중요 한 보안 개념과 ASP.NET에서 사용할 수 있는 기능에 대해 설명 합니다. 이제 시작하겠습니다.
 
 > [!NOTE]
 > 보안은 물리적, 기술 및 정책 결정에 걸친 응용 프로그램의 중요 한 측면으로, 높은 수준의 계획 및 도메인 지식이 필요 합니다. 이 자습서 시리즈는 보안 웹 응용 프로그램을 개발 하기 위한 가이드로 제공 되지 않습니다. 대신, 폼 인증, 권한 부여, 사용자 계정 및 역할에 특히 집중 합니다. 이러한 문제를 중심으로 하는 일부 보안 개념은이 시리즈에 설명 되어 있지만 다른 일부는 탐색 되지 않은 남아 있습니다.
@@ -121,7 +121,7 @@ ASP.NET 2.0 이전에는 개발자가 자신의 고유한 사용자 및 역할 �
 - GetAllUsers
 - GetUser
 - UpdateUser
-- System.web.security.membership.validateuser
+- ValidateUser
 
 멤버 자격 프레임 워크는 멤버 프레임 워크의 API를 구현과 완전히 분리 하는 [공급자 모델](http://aspnet.4guysfromrolla.com/articles/101905-1.aspx)을 사용 합니다. 이를 통해 개발자는 공용 API를 사용할 수 있지만 응용 프로그램의 사용자 지정 요구를 충족 하는 구현을 사용할 수 있습니다. 즉, 멤버 자격 클래스는 프레임 워크의 필수 기능 (메서드, 속성 및 이벤트)을 정의 하지만 실제로는 구현 세부 정보를 제공 하지 않습니다. 대신, 멤버 자격 클래스의 메서드는 구성 된 공급자를 호출 하 여 실제 작업을 수행 합니다. 예를 들어 멤버 자격 클래스의 CreateUser 메서드를 호출 하는 경우 멤버 자격 클래스는 사용자 저장소의 세부 정보를 알지 못합니다. 사용자가 데이터베이스 또는 XML 파일이 나 다른 저장소에서 유지 관리 되 고 있는지 여부를 알 수 없습니다. 멤버 자격 클래스는 웹 응용 프로그램의 구성을 검사 하 여 호출을 위임할 공급자를 결정 하 고, 해당 공급자 클래스는 실제로 적절 한 사용자 저장소에 새 사용자 계정을 만드는 작업을 담당 합니다. 이 상호 작용은 그림 3에 나와 있습니다.
 
@@ -158,7 +158,7 @@ ASP.NET 2.0에는 역할 프레임 워크도 도입 되었습니다. 멤버 프�
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -174,7 +174,7 @@ ASP.NET 2.0에는 역할 프레임 워크도 도입 되었습니다. 멤버 프�
 - [전문 ASP.NET 2.0 보안, 멤버 자격 및 역할 관리](http://www.wrox.com/WileyCDA/WroxTitle/productCd-0764596985.html) (ISBN: 978-0-7645-9698-8)
 - [공급자 도구 키트](https://msdn.microsoft.com/asp.net/aa336558.aspx)
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

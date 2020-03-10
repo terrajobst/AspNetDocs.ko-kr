@@ -9,11 +9,11 @@ ms.assetid: 37a1ebae-8773-408f-8645-d21da7ff9ae1
 msc.legacyurl: /mvc/overview/older-versions-1/views/passing-data-to-view-master-pages-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 9f768f47557adedc43cebfa2c092014bba5842de
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74593691"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78485675"
 ---
 # <a name="passing-data-to-view-master-pages-vb"></a>보기 마스터 페이지에 데이터 전달(VB)
 

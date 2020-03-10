@@ -9,11 +9,11 @@ ms.assetid: 22ca8efa-7cd1-45a7-b9ce-ce6eb3b3ff95
 msc.legacyurl: /web-forms/overview/data-access/caching-data/caching-data-at-application-startup-cs
 msc.type: authoredcontent
 ms.openlocfilehash: a0b55b0df1b7843120de284891e16178df23fabe
-ms.sourcegitcommit: fe5c7512383a9b0a05d321ff10d3cca1611556f0
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70386511"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78465791"
 ---
 # <a name="caching-data-at-application-startup-c"></a>애플리케이션 시작 시 데이터 캐싱(C#)
 
@@ -124,7 +124,7 @@ Visual Studio의 솔루션 탐색기에서 웹 사이트 프로젝트 이름을 
 
 [!code-aspx[Main](caching-data-at-application-startup-cs/samples/sample6.aspx)]
 
-이것이 전부입니다! 응용 프로그램 시작 시 `LoadStaticCache()` 메서드는 BLL에서 공급자 정보를 가져오고이를 정적 멤버 변수 (또는 `StaticCache` 클래스에서 사용 하 여 종료 한 캐시 저장소)에 저장 합니다. 이 동작을 확인 하려면 `Application_Start` 메서드에 중단점을 설정 하 고 응용 프로그램을 실행 합니다. 응용 프로그램이 시작 될 때 중단점이 적중 됩니다. 그러나 후속 요청으로 인해 `Application_Start` 메서드가 실행 되지 않습니다.
+이제 모든 작업을 마쳤습니다. 응용 프로그램 시작 시 `LoadStaticCache()` 메서드는 BLL에서 공급자 정보를 가져오고이를 정적 멤버 변수 (또는 `StaticCache` 클래스에서 사용 하 여 종료 한 캐시 저장소)에 저장 합니다. 이 동작을 확인 하려면 `Application_Start` 메서드에 중단점을 설정 하 고 응용 프로그램을 실행 합니다. 응용 프로그램이 시작 될 때 중단점이 적중 됩니다. 그러나 후속 요청으로 인해 `Application_Start` 메서드가 실행 되지 않습니다.
 
 [중단점 ![사용 하 여 Application_Start 이벤트 처리기가 실행 되 고 있는지 확인 합니다.](caching-data-at-application-startup-cs/_static/image7.png)](caching-data-at-application-startup-cs/_static/image6.png)
 
@@ -165,7 +165,7 @@ Visual Studio의 솔루션 탐색기에서 웹 사이트 프로젝트 이름을 
 
 행복 한 프로그래밍
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

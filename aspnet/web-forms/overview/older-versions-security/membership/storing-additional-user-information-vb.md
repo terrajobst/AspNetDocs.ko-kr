@@ -9,11 +9,11 @@ ms.assetid: ee4b924e-8002-4dc3-819f-695fca1ff867
 msc.legacyurl: /web-forms/overview/older-versions-security/membership/storing-additional-user-information-vb
 msc.type: authoredcontent
 ms.openlocfilehash: cb352de6f7c2d117b41532112a87956c8dde62f8
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74639181"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78488345"
 ---
 # <a name="storing-additional-user-information-vb"></a>추가 사용자 정보 저장(VB)
 
@@ -29,7 +29,7 @@ ASP. NET의 멤버 자격 프레임 워크는 사용자를 관리 하기 위한 
 
 응용 프로그램에서 멤버 자격 프레임 워크에 포함 되지 않은 추가 사용자 정보를 저장 해야 하는 경우가 종종 있습니다. 예를 들어 온라인 대리점에서 각 사용자에 게 배송 및 대금 청구 주소, 지불 정보, 배달 기본 설정 및 연락처 전화 번호를 저장 하도록 허용 해야 할 수 있습니다. 또한 시스템의 각 순서는 특정 사용자 계정에 연결 됩니다.
 
-`MembershipUser` 클래스는 `PhoneNumber` 또는 `DeliveryPreferences` 또는 `PastOrders`같은 속성을 포함 하지 않습니다. 응용 프로그램에 필요한 사용자 정보를 추적 하 고 멤버 자격 프레임 워크와 통합 하려면 어떻게 해야 하나요? 이 자습서에서는 매우 기본적인 방명록 응용 프로그램을 빌드하여이 질문에 대 한 답변을 제공 합니다. 이 작업을 수행 하는 경우 데이터베이스에서 사용자 정보를 모델링 하는 다양 한 옵션을 살펴본 다음이 데이터를 멤버 프레임 프레임 워크에서 만든 사용자 계정에 연결 하는 방법을 확인 합니다. 시작 하겠습니다.
+`MembershipUser` 클래스는 `PhoneNumber` 또는 `DeliveryPreferences` 또는 `PastOrders`같은 속성을 포함 하지 않습니다. 응용 프로그램에 필요한 사용자 정보를 추적 하 고 멤버 자격 프레임 워크와 통합 하려면 어떻게 해야 하나요? 이 자습서에서는 매우 기본적인 방명록 응용 프로그램을 빌드하여이 질문에 대 한 답변을 제공 합니다. 이 작업을 수행 하는 경우 데이터베이스에서 사용자 정보를 모델링 하는 다양 한 옵션을 살펴본 다음이 데이터를 멤버 프레임 프레임 워크에서 만든 사용자 계정에 연결 하는 방법을 확인 합니다. 이제 시작하겠습니다.
 
 ## <a name="step-1-creating-the-guestbook-applications-data-model"></a>1 단계: 방명록 응용 프로그램의 데이터 모델 만들기
 
@@ -243,7 +243,7 @@ DetailsView이 업데이트 될 때마다 `SettingsUpdatedMessage` 레이블을 
 
 `Guestbook.aspx` 페이지에서는 인증 된 사용자가 방명록을 보고 메모를 남길 수 있습니다. 새 방명록 주석을 추가 하는 인터페이스를 만드는 것부터 시작 해 보겠습니다.
 
-Visual Studio에서 `Guestbook.aspx` 페이지를 열고 두 개의 TextBox 컨트롤로 구성 된 사용자 인터페이스 (새 주석의 제목 및 본문에 대 한 하나)를 생성 합니다. 첫 번째 TextBox 컨트롤의 `ID` 속성을 `Subject`로 설정 하 고 `Columns` 속성을 40으로 설정 합니다. 두 번째 `ID` `Body`, `TextMode` `MultiLine`및 `Width` 속성을 각각 "95%" 및 8로 설정 합니다. 사용자 인터페이스를 완료 하려면 `PostCommentButton` 이라는 단추 웹 컨트롤을 추가 하 고 `Text` 속성을 "주석 게시"로 설정 합니다.
+Visual Studio에서 `Guestbook.aspx` 페이지를 열고 두 개의 TextBox 컨트롤로 구성 된 사용자 인터페이스 (새 주석의 제목 및 본문에 대 한 하나)를 생성 합니다. 첫 번째 TextBox 컨트롤의 `ID` 속성을 `Subject`로 설정 하 고 `Columns` 속성을 40으로 설정 합니다. 두 번째 `ID` `Body`, `TextMode` `MultiLine`및 `Width` 속성을 각각 "95%" 및 8로 설정 합니다.`Rows` 사용자 인터페이스를 완료 하려면 `PostCommentButton` 이라는 단추 웹 컨트롤을 추가 하 고 `Text` 속성을 "주석 게시"로 설정 합니다.
 
 각 방명록 주석에는 제목과 본문이 필요 하므로 각 텍스트 상자에 대해 RequiredFieldValidator를 추가 합니다. 이러한 컨트롤의 `ValidationGroup` 속성을 "추가 주석"으로 설정 합니다. 마찬가지로 `PostCommentButton` 컨트롤의 `ValidationGroup` 속성을 "추가 주석"으로 설정 합니다. ASP에 대 한 자세한 내용 NET의 유효성 검사 컨트롤, [ASP.NET의 폼 유효성](http://www.4guysfromrolla.com/webtech/090200-1.shtml)검사, [ASP.NET 2.0의 유효성 검사 컨트롤 개로 나누어서](http://aspnet.4guysfromrolla.com/articles/112305-1.aspx), [W3Schools](http://www.w3schools.com/)의 [유효성 검사 서버 컨트롤 자습서](http://www.w3schools.com/aspnet/aspnet_refvalidationcontrols.asp) 를 참조 하세요.
 
@@ -446,7 +446,7 @@ CreateUserWizard의 `ActiveStepChanged` 이벤트에 대 한 이벤트 처리기
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -465,7 +465,7 @@ CreateUserWizard의 `ActiveStepChanged` 이벤트에 대 한 이벤트 처리기
 - [Asp: ListView 컨트롤](https://weblogs.asp.net/scottgu/archive/2007/08/10/the-asp-listview-control-part-1-building-a-product-listing-page-with-clean-css-ui.aspx)
 - [사용자 프로필 빠른 시작](https://quickstarts.asp.net/QuickStartv20/aspnet/doc/profile/default.aspx)
 
-### <a name="about-the-author"></a>작성자 정보
+### <a name="about-the-author"></a>저자 정보
 
 Scott Mitchell는 여러 ASP/ASP. NET books의 작성자와 4GuysFromRolla.com의 창립자가 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 *[24 시간 이내에 ASP.NET 2.0을 sams teach yourself](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)* 것입니다. Scott은 [mitchell@4guysfromrolla.com](mailto:mitchell@4guysfromrolla.com) 또는 [http://ScottOnWriting.NET](http://scottonwriting.net/)의 블로그를 통해 연결할 수 있습니다.
 

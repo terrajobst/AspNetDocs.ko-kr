@@ -1,6 +1,6 @@
 ---
 uid: mvc/overview/getting-started/getting-started-with-ef-using-mvc/index
-title: Entity Framework 6 Code First MVC 5를 사용 하 여 시작 | Microsoft Docs
+title: MVC 5를 사용 하 여 Entity Framework 6 Code First 시작 하기 | Microsoft Docs
 author: rick-anderson
 description: Entity Framework 6를 사용하여 ASP.NET MVC 5 애플리케이션에서 데이터를 표시하고 편집하는 기본 사항입니다.
 ms.author: riande
@@ -9,11 +9,11 @@ ms.assetid: 2aebcde0-b04c-47db-b9c9-077714a5db77
 msc.legacyurl: /mvc/overview/getting-started/getting-started-with-ef-using-mvc
 msc.type: chapter
 ms.openlocfilehash: 6a420d5658c40bd6cc7d306f08c894651e1e74eb
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65121095"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78471035"
 ---
 # <a name="getting-started-with-entity-framework-6-code-first-using-mvc-5"></a>MVC 5를 사용하여 Entity Framework 6 Code First 시작
 

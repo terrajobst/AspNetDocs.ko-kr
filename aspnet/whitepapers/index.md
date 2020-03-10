@@ -2,18 +2,18 @@
 uid: whitepapers/index
 title: 백서 | Microsoft Docs
 author: rick-anderson
-description: 이 페이지에서 설치 하 고 ASP.NET을 구성 하는 데 빠르고 유연한 보안 ASP.NET 응용 프로그램을 작성 하는 데 도움이 하는 백서를 찾을 수 있습니다.
+description: 이 페이지에서는 ASP.NET를 설치 및 구성 하는 데 도움이 되는 백서와 안전 하 고 빠르고 유연한 ASP.NET 응용 프로그램을 작성 하는 데 도움이 되는 백서를 찾을 수 있습니다.
 ms.author: riande
 ms.date: 11/15/2011
 ms.assetid: 3824e2d7-446f-406b-9c8b-5a1634359a78
 msc.legacyurl: ''
 msc.type: content
 ms.openlocfilehash: 6d1251da10705867ad25b53afd69bb70c647fc18
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59388662"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78520595"
 ---
 # <a name="whitepapers"></a>백서
 
@@ -28,7 +28,7 @@ ms.locfileid: "59388662"
 - [ASP.NET MVC 3](mvc3-release-notes.md)
 - [ASP.NET MVC 4](mvc4-beta-release-notes.md)
 - [IIS 6.0에서 ASP.NET 1.1 실행](aspnet-and-iis6.md)
-- [방법: ASP.NET Web forms에 모바일 페이지 추가 / MVC 응용 프로그램](add-mobile-pages-to-your-aspnet-web-forms-mvc-application.md)
+- [방법: ASP.NET Web Forms/MVC 애플리케이션에 모바일 페이지 추가](add-mobile-pages-to-your-aspnet-web-forms-mvc-application.md)
 - [IE 보안 업데이트 적용 후 '서버 애플리케이션을 사용할 수 없음' 오류에 대한 픽스](ms03-32-issue.md)
 - [.NET Framework 1.0 및 1.1의 ASP.NET Side-by-Side 실행](side-by-side-with-10.md)
 - [ASP.NET MVC 4](mvc4-release-notes.md)

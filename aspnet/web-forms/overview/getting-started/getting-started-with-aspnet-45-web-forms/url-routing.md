@@ -9,11 +9,11 @@ ms.assetid: 4f4bf092-c400-471f-a876-78fda0417890
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/url-routing
 msc.type: authoredcontent
 ms.openlocfilehash: 66b727b69ca4f9a3d35b67f492f9a554146e09ef
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74590716"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78474815"
 ---
 # <a name="url-routing"></a>URL 라우팅
 
@@ -25,7 +25,7 @@ ms.locfileid: "74590716"
 
 이 자습서에서는 URL 라우팅을 지원 하도록 정문 장난감 샘플 응용 프로그램을 수정 합니다. 라우팅을 사용 하면 웹 응용 프로그램에서 친숙 하 고 쉽게 기억할 수 있는 Url을 사용 하 고 검색 엔진에서 지원할 수 있습니다. 이 자습서는 이전 자습서 "멤버 자격 및 관리"를 기반으로 하며, 정문 장난감 자습서 시리즈의 일부입니다.
 
-## <a name="what-youll-learn"></a>학습 내용:
+## <a name="what-youll-learn"></a>학습할 내용:
 
 - ASP.NET Web Forms 응용 프로그램에 대 한 경로를 등록 하는 방법입니다.
 - 웹 페이지에 경로를 추가 하는 방법
@@ -78,7 +78,7 @@ URL 패턴에서 자리 표시자를 중괄호 (`{` 및 `}`)로 묶어 정의 �
 
 > [!NOTE] 
 > 
-> **Optional**
+> **선택 사항**
 > 
 > `RegisterCustomRoutes` 메서드를 별도의 클래스로 이동 하 여 코드를 보다 쉽게 관리할 수 있습니다. *논리* 폴더에서 별도의 `RouteActions` 클래스를 만듭니다. *Global.asax.cs* 파일에서 위의 `RegisterCustomRoutes` 메서드를 새 `RoutesActions` 클래스로 이동 합니다. *Global.asax.cs* 파일에서 `RegisterCustomRoutes` 메서드를 호출 하는 방법의 예로 `RoleActions` 클래스 및 `createAdmin` 메서드를 사용 합니다.
 

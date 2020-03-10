@@ -9,11 +9,11 @@ ms.assetid: 493b2a66-816c-485c-8315-952ed1085ccc
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-deploying-to-iis-as-a-test-environment-5-of-12
 msc.type: authoredcontent
 ms.openlocfilehash: 5d85232ff2cb229d771d517db7173721c9e277bf
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74633423"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78515681"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-deploying-to-iis-as-a-test-environment---5-of-12"></a>Visual Studio 또는 Visual Web Developer를 사용 하 여 SQL Server Compact를 사용 하 여 ASP.NET 웹 응용 프로그램 배포: IIS에 테스트 환경으로 배포-5/12
 
@@ -233,7 +233,7 @@ Visual Studio가 관리자 모드에 있으면 **출력** 창에서 성공한 �
 
 이제 개발 컴퓨터의 IIS에 응용 프로그램을 배포 하 고 테스트 했습니다. 이렇게 하면 배포 프로세스가 응용 프로그램의 콘텐츠를 올바른 위치 (배포 하지 않으려는 파일 제외)에 복사 하 고 배포 중에 IIS를 올바르게 구성 웹 배포 확인 됩니다. 다음 자습서에서는 아직 수행 되지 않은 배포 작업을 찾는 테스트를 하나 더 실행 합니다. *Elmah* 폴더에 대 한 폴더 사용 권한을 설정 합니다.
 
-## <a name="more-information"></a>자세한 내용
+## <a name="more-information"></a>추가 정보
 
 Visual Studio에서 IIS 또는 IIS Express를 실행 하는 방법에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 

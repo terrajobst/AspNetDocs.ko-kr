@@ -10,11 +10,11 @@ ms.assetid: d4dfc435-bda6-4621-9762-9ba270f8de4e
 msc.legacyurl: /mvc/overview/getting-started/getting-started-with-ef-using-mvc/migrations-and-deployment-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
 ms.openlocfilehash: 989dd0f0e18b338be057b9c5657586eff996d8ea
-ms.sourcegitcommit: b95316530fa51087d6c400ff91814fe37e73f7e8
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000758"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78499367"
 ---
 # <a name="tutorial-use-ef-migrations-in-an-aspnet-mvc-app-and-deploy-to-azure"></a>자습서: ASP.NET MVC 앱에서 EF 마이그레이션 사용 및 Azure에 배포
 
@@ -25,13 +25,13 @@ ms.locfileid: "70000758"
 
 배포를 위해 원본 제어와 함께 연속 통합 프로세스를 사용 하는 것이 좋지만,이 자습서에서는 이러한 항목에 대해 다루지 않습니다. 자세한 내용은 [Azure를 사용 하 여 실제 클라우드 앱 빌드](xref:aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/introduction)에 대 한 [소스 제어](xref:aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control) 및 [연속 통합](xref:aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/continuous-integration-and-continuous-delivery) 챕터를 참조 하세요.
 
-이 자습서에서는 다음을 수행했습니다.
+이 자습서에서는 다음을 수행합니다.
 
 > [!div class="checklist"]
 > * Code First 마이그레이션 사용
 > * Azure에서 앱 배포 (선택 사항)
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 - [연결 복원력 및 명령 인터셉션](connection-resiliency-and-command-interception-with-the-entity-framework-in-an-asp-net-mvc-application.md)
 
@@ -41,7 +41,7 @@ ms.locfileid: "70000758"
 
 데이터베이스를 데이터 모델과 동기화된 상태로 유지하는 이 메서드는 애플리케이션을 프로덕션 환경에 배포할 때까지 잘 작동합니다. 응용 프로그램이 프로덕션 환경에서 실행 되는 경우 일반적으로 보관할 데이터를 저장 하 고, 새 열을 추가 하는 등의 변경 작업을 수행할 때마다 모든 항목을 손실 하지 않으려고 합니다. [Code First 마이그레이션](https://msdn.microsoft.com/data/jj591621) 기능은 Code First를 사용 하 여 데이터베이스를 삭제 하 고 다시 만드는 대신 데이터베이스 스키마를 업데이트할 수 있도록 하 여이 문제를 해결 합니다. 이 자습서에서는 응용 프로그램을 배포 하 고 마이그레이션을 사용 하도록 준비 합니다.
 
-1. 이전에 설정한 이니셜라이저를 사용 하지 않도록 설정 하 여 응용 프로그램 web.config `contexts` 파일에 추가한 요소를 주석으로 처리 하거나 삭제 합니다.
+1. 이전에 설정한 이니셜라이저를 사용 하지 않도록 설정 하 여 응용 프로그램 Web.config 파일에 추가한 `contexts` 요소를 주석으로 처리 하거나 삭제 합니다.
 
     [!code-xml[Main](migrations-and-deployment-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample1.xml?highlight=2,6)]
 2. 또한 응용 프로그램 *web.config* 파일에서 연결 문자열에 있는 데이터베이스의 이름을 ContosoUniversity2로 변경 합니다.
@@ -51,18 +51,18 @@ ms.locfileid: "70000758"
     이 변경 내용은 첫 번째 마이그레이션이 새 데이터베이스를 만들 때 프로젝트를 설정 합니다. 이는 필수는 아니지만 나중에 좋은 생각이 표시 될 것입니다.
 3. **도구** 메뉴에서 **NuGet 패키지 관리자** > **패키지 관리자 콘솔**을 선택합니다.
 
-1. `PM>` 프롬프트에 다음 명령을 입력 합니다.
+1. `PM>` 프롬프트에서 다음 명령을 입력 합니다.
 
     ```text
     enable-migrations
     add-migration InitialCreate
     ```
 
-    이 명령은 ContosoUniversity 프로젝트에 *마이그레이션* 폴더를 만들고 해당 폴더에 Configuration.cs 파일을 저장 합니다 .이 파일을 편집 하 여 마이그레이션을 구성할 수 있습니다. `enable-migrations`
+    `enable-migrations` 명령은 ContosoUniversity 프로젝트에 *마이그레이션* 폴더를 만들고 해당 폴더에 *Configuration.cs* 파일을 저장 합니다 .이 파일을 편집 하 여 마이그레이션을 구성할 수 있습니다.
 
-    데이터베이스 이름을 변경 하도록 지시 하는 위의 단계를 놓친 경우 마이그레이션은 기존 데이터베이스를 찾고 자동으로 `add-migration` 명령을 실행 합니다. 이는 데이터베이스를 배포 하기 전에 마이그레이션 코드 테스트를 실행 하지 않는다는 것을 의미 합니다. 나중에 `update-database` 명령을 실행할 때 데이터베이스가 이미 있기 때문에 아무 작업도 수행 되지 않습니다.
+    데이터베이스 이름을 변경 하도록 지시 하는 위의 단계를 놓친 경우 마이그레이션은 기존 데이터베이스를 찾고 자동으로 `add-migration` 명령을 수행 합니다. 이는 데이터베이스를 배포 하기 전에 마이그레이션 코드 테스트를 실행 하지 않는다는 것을 의미 합니다. 나중에 `update-database` 명령을 실행 하면 데이터베이스가 이미 있기 때문에 아무 작업도 수행 되지 않습니다.)
 
-    *ContosoUniversity\Migrations\Configuration.cs* 파일을 엽니다. 앞서 살펴본 이니셜라이저 클래스와 마찬가지로 클래스에 `Configuration` 는 `Seed` 메서드가 포함 되어 있습니다.
+    *ContosoUniversity\Migrations\Configuration.cs* 파일을 엽니다. 앞서 살펴본 이니셜라이저 클래스와 마찬가지로 `Configuration` 클래스에 `Seed` 메서드가 포함 됩니다.
 
     [!code-csharp[Main](migrations-and-deployment-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample3.cs)]
 
@@ -70,9 +70,9 @@ ms.locfileid: "70000758"
 
 ### <a name="set-up-the-seed-method"></a>초기값 설정
 
-모든 데이터 모델이 변경 될 때마다 데이터베이스를 삭제 하 고 다시 만들 때 이니셜라이저 클래스의 `Seed` 메서드를 사용 하 여 테스트 데이터를 삽입 합니다 .이 경우 모든 모델 변경 후 데이터베이스를 삭제 하 고 모든 테스트 데이터가 손실 되기 때문입니다. Code First 마이그레이션를 사용 하면 데이터베이스 변경 후에 테스트 데이터가 유지 되므로 [시드](https://msdn.microsoft.com/library/hh829453(v=vs.103).aspx) 메서드에 테스트 데이터를 포함 하는 것은 일반적으로 필요 하지 않습니다. 실제로는 `Seed` 메서드가 프로덕션 환경에서 실행 `Seed` 되기 때문에 마이그레이션을 사용 하 여 데이터베이스를 프로덕션 환경에 배포 하는 경우 테스트 데이터를 삽입 하는 것을 원하지 않습니다. 이 경우 `Seed` 프로덕션 환경에 필요한 데이터만 데이터베이스에 삽입 하려고 합니다. 예를 들어 응용 프로그램을 프로덕션 환경에서 사용할 수 있게 되 면 데이터베이스 `Department` 에 테이블의 실제 부서 이름이 포함 되도록 할 수 있습니다.
+모든 데이터 모델이 변경 될 때마다 데이터베이스를 삭제 하 고 다시 만들 때 이니셜라이저 클래스의 `Seed` 메서드를 사용 하 여 테스트 데이터를 삽입 합니다 .이 경우에는 모든 모델 변경 후 데이터베이스가 삭제 되 고 모든 테스트 데이터가 손실 되기 때문입니다. Code First 마이그레이션를 사용 하면 데이터베이스 변경 후에 테스트 데이터가 유지 되므로 [시드](https://msdn.microsoft.com/library/hh829453(v=vs.103).aspx) 메서드에 테스트 데이터를 포함 하는 것은 일반적으로 필요 하지 않습니다. 실제로는 `Seed` 메서드가 프로덕션 환경에서 실행 되므로 마이그레이션을 사용 하 여 데이터베이스를 프로덕션 환경에 배포 하는 경우에는 `Seed` 메서드에서 테스트 데이터를 삽입 하지 않으려고 합니다. 이 경우 `Seed` 메서드가 프로덕션에 필요한 데이터만 데이터베이스에 삽입 하려고 합니다. 예를 들어 응용 프로그램을 프로덕션 환경에서 사용할 수 있게 되 면 데이터베이스에 `Department` 테이블에 실제 부서 이름이 포함 되도록 할 수 있습니다.
 
-이 자습서에서는 배포에 대해 마이그레이션을 사용 하지만 `Seed` 많은 데이터를 수동으로 삽입 하지 않고도 응용 프로그램 기능이 작동 하는 방식을 쉽게 확인할 수 있도록 메서드가 테스트 데이터를 삽입 합니다.
+이 자습서에서는 배포에 대해 마이그레이션을 사용 하지만, 많은 데이터를 수동으로 삽입 하지 않고도 응용 프로그램 기능이 작동 하는 방식을 쉽게 확인할 수 있도록 `Seed` 메서드가 테스트 데이터를 삽입 합니다.
 
 1. *Configuration.cs* 파일의 내용을 새 데이터베이스에 테스트 데이터를 로드 하는 다음 코드로 바꿉니다.
 
@@ -80,9 +80,9 @@ ms.locfileid: "70000758"
 
     [초기값](https://msdn.microsoft.com/library/hh829453(v=vs.103).aspx) 메서드는 데이터베이스 컨텍스트 개체를 입력 매개 변수로 사용 하 고 메서드의 코드는 해당 개체를 사용 하 여 데이터베이스에 새 엔터티를 추가 합니다. 각 엔터티 형식에 대해 코드는 새 엔터티 컬렉션을 만들고 적절 한 [Dbset](https://msdn.microsoft.com/library/system.data.entity.dbset(v=vs.103).aspx) 속성에 추가한 다음 변경 내용을 데이터베이스에 저장 합니다. 여기에서 수행 하는 것 처럼 각 엔터티 그룹 다음에 [SaveChanges](https://msdn.microsoft.com/library/system.data.entity.dbcontext.savechanges(v=VS.103).aspx) 메서드를 호출할 필요는 없지만, 이렇게 하면 코드에서 데이터베이스에 쓰는 동안 예외가 발생 하는 경우 문제의 원인을 찾을 수 있습니다.
 
-    데이터를 삽입 하는 문 중 일부는 [Addorupdate](https://msdn.microsoft.com/library/system.data.entity.migrations.idbsetextensions.addorupdate(v=vs.103).aspx) 메서드를 사용 하 여 "upsert" 작업을 수행 합니다. 명령을 실행할 때마다 메서드가 실행 되기 때문에 일반적으로 각 마이그레이션 후에는 데이터베이스를 만드는 첫 번째 마이그레이션 후에 추가 하려는 행이 이미 있기 때문에 데이터를 삽입 하기만 하면 됩니다. `Seed` `update-database` "Upsert" 작업은 이미 있는 행을 삽입 하려고 할 때 발생 하는 오류를 방지 하지만 응용 프로그램을 테스트 하는 동안 수행 된 데이터의 변경 내용을 ***재정의*** 합니다. 일부 테이블에서 테스트 데이터를 사용 하는 경우 이러한 상황이 발생 하지 않을 수 있습니다. 테스트 하는 동안 데이터를 변경 하는 경우 데이터베이스 업데이트 후에 변경 내용을 유지 하려는 경우도 있습니다. 조건부 삽입 작업을 수행 하려는 경우: 행이 아직 없는 경우에만 행을 삽입 합니다. 초기값 메서드는 두 가지 방법을 모두 사용 합니다.
+    데이터를 삽입 하는 문 중 일부는 [Addorupdate](https://msdn.microsoft.com/library/system.data.entity.migrations.idbsetextensions.addorupdate(v=vs.103).aspx) 메서드를 사용 하 여 "upsert" 작업을 수행 합니다. `Seed` 메서드는 `update-database` 명령을 실행할 때마다 실행 되므로 일반적으로 각 마이그레이션 후에는 데이터베이스를 만드는 첫 번째 마이그레이션 후에 추가 하려는 행이 이미 존재 하기 때문에 데이터를 삽입 하기만 하면 됩니다. "Upsert" 작업은 이미 있는 행을 삽입 하려고 할 때 발생 하는 오류를 방지 하지만 응용 프로그램을 테스트 하는 동안 수행 된 데이터의 변경 내용을 ***재정의*** 합니다. 일부 테이블에서 테스트 데이터를 사용 하는 경우 이러한 상황이 발생 하지 않을 수 있습니다. 테스트 하는 동안 데이터를 변경 하는 경우 데이터베이스 업데이트 후에 변경 내용을 유지 하려는 경우도 있습니다. 조건부 삽입 작업을 수행 하려는 경우: 행이 아직 없는 경우에만 행을 삽입 합니다. 초기값 메서드는 두 가지 방법을 모두 사용 합니다.
 
-    [Addorupdate](https://msdn.microsoft.com/library/system.data.entity.migrations.idbsetextensions.addorupdate(v=vs.103).aspx) 메서드에 전달 된 첫 번째 매개 변수는 행이 이미 있는지 여부를 확인 하는 데 사용할 속성을 지정 합니다. 제공 하는 테스트 학생 데이터의 경우 목록의 각 성이 `LastName` 고유 하므로 속성을이 용도로 사용할 수 있습니다.
+    [Addorupdate](https://msdn.microsoft.com/library/system.data.entity.migrations.idbsetextensions.addorupdate(v=vs.103).aspx) 메서드에 전달 된 첫 번째 매개 변수는 행이 이미 있는지 여부를 확인 하는 데 사용할 속성을 지정 합니다. 제공 하는 테스트 학생 데이터의 경우 목록의 각 성이 고유 하기 때문에 `LastName` 속성을이 용도로 사용할 수 있습니다.
 
     [!code-csharp[Main](migrations-and-deployment-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample5.cs)]
 
@@ -90,15 +90,15 @@ ms.locfileid: "70000758"
 
     **시퀀스에 둘 이상의 요소가 포함 되어 있습니다.**
 
-    "Alexander Carson" 이라는 두 학생 같은 중복 데이터를 처리 하는 방법에 대 한 자세한 내용은 Rick Anderson의 블로그에서 [EF (시드 및 디버깅 Entity Framework) db](https://blogs.msdn.com/b/rickandy/archive/2013/02/12/seeding-and-debugging-entity-framework-ef-dbs.aspx) 를 참조 하세요. 메서드에 대 한 자세한 내용은 `AddOrUpdate` Julie Lerman의 블로그에서 [EF 4.3 addorupdate 메서드를 사용](http://thedatafarm.com/blog/data-access/take-care-with-ef-4-3-addorupdate-method/) 하는 방법을 참조 하세요.
+    "Alexander Carson" 이라는 두 학생 같은 중복 데이터를 처리 하는 방법에 대 한 자세한 내용은 Rick Anderson의 블로그에서 [EF (시드 및 디버깅 Entity Framework) db](https://blogs.msdn.com/b/rickandy/archive/2013/02/12/seeding-and-debugging-entity-framework-ef-dbs.aspx) 를 참조 하세요. `AddOrUpdate` 방법에 대 한 자세한 내용은 Julie Lerman의 블로그에서 [EF 4.3 AddOrUpdate 메서드를 사용](http://thedatafarm.com/blog/data-access/take-care-with-ef-4-3-addorupdate-method/) 하는 방법을 참조 하세요.
 
-    엔터티를 만드는 `Enrollment` 코드는 컬렉션을 만드는 코드에서 해당 속성을 설정 하지 `students` 않았지만 컬렉션의 엔터티에 `ID` 값이 있다고 가정 합니다.
+    `Enrollment` 엔터티를 만드는 코드는 컬렉션을 만드는 코드에서 해당 속성을 설정 하지 않았지만 `students` 컬렉션의 엔터티에 `ID` 값이 있다고 가정 합니다.
 
     [!code-csharp[Main](migrations-and-deployment-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample6.cs?highlight=2)]
 
-    컬렉션에 대해를 `ID` 호출할 `ID` `SaveChanges` 때 값이 설정 되므로 여기에서 속성을 사용할 수 있습니다. `students` EF는 데이터베이스에 엔터티를 삽입할 때 기본 키 값을 자동으로 가져오고, 메모리에서 엔터티의 `ID` 속성을 업데이트 합니다.
+    `students` 컬렉션에 대해 `SaveChanges`를 호출할 때 `ID` 값이 설정 되기 때문에 `ID` 속성을 사용할 수 있습니다. EF는 데이터베이스에 엔터티를 삽입할 때 기본 키 값을 자동으로 가져오고, 메모리에서 엔터티의 `ID` 속성을 업데이트 합니다.
 
-    엔터티 집합 `Enrollment` 에 각 엔터티를 추가 하는 코드는 메서드를 `AddOrUpdate` 사용 하지 않습니다. `Enrollments` 엔터티가 이미 있는지 확인 하 고 존재 하지 않는 경우 엔터티를 삽입 합니다. 이 방법은 응용 프로그램 UI를 사용 하 여 등록 등급에 대 한 변경 내용을 유지 합니다. 이 코드는 `Enrollment` [목록의](https://msdn.microsoft.com/library/6sh2ey19.aspx) 각 멤버를 반복 하 고, 등록을 데이터베이스에서 찾을 수 없는 경우 데이터베이스에 등록을 추가 합니다. 처음으로 데이터베이스를 업데이트할 때 데이터베이스는 비어 있으므로 각 등록을 추가 합니다.
+    `Enrollments` 엔터티 집합에 각 `Enrollment` 엔터티를 추가 하는 코드는 `AddOrUpdate` 메서드를 사용 하지 않습니다. 엔터티가 이미 있는지 확인 하 고 존재 하지 않는 경우 엔터티를 삽입 합니다. 이 방법은 응용 프로그램 UI를 사용 하 여 등록 등급에 대 한 변경 내용을 유지 합니다. 이 코드는 `Enrollment`[목록의](https://msdn.microsoft.com/library/6sh2ey19.aspx) 각 멤버를 반복 하 고, 등록을 데이터베이스에서 찾을 수 없는 경우 데이터베이스에 등록을 추가 합니다. 처음으로 데이터베이스를 업데이트할 때 데이터베이스는 비어 있으므로 각 등록을 추가 합니다.
 
     [!code-csharp[Main](migrations-and-deployment-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample7.cs)]
 
@@ -106,43 +106,43 @@ ms.locfileid: "70000758"
 
 ### <a name="execute-the-first-migration"></a>첫 번째 마이그레이션 실행
 
-`add-migration` 명령을 실행 하면 마이그레이션을 통해 데이터베이스를 처음부터 만드는 코드가 생성 됩니다. 이 코드는 또한  *&lt;타임&gt;스탬프\_InitialCreate.cs*이라는 파일의 *마이그레이션* 폴더에 있습니다. 클래스의 메서드는 `Up` 데이터 모델 엔터티 집합에 해당 하는 데이터베이스 테이블을 만들고 메서드는 `Down` 해당 테이블을 삭제 합니다. `InitialCreate`
+`add-migration` 명령을 실행 하면 마이그레이션을 통해 데이터베이스를 처음부터 만드는 코드가 생성 됩니다. 이 코드는 *마이그레이션* 폴더에 *&lt;timestamp&gt;\_InitialCreate.cs*이라는 파일에도 있습니다. `InitialCreate` 클래스의 `Up` 메서드는 데이터 모델 엔터티 집합에 해당 하는 데이터베이스 테이블을 만들고 `Down` 메서드에서 해당 테이블을 삭제 합니다.
 
 [!code-csharp[Main](migrations-and-deployment-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample8.cs)]
 
 마이그레이션에서는 마이그레이션을 위한 데이터 모델 변경을 구현하기 위해 `Up` 메서드를 호출합니다. 업데이트를 롤백하는 명령을 입력하면 마이그레이션에서 `Down` 메서드를 호출합니다.
 
-이는 `add-migration InitialCreate` 명령을 입력할 때 생성 된 초기 마이그레이션입니다. 파일 이름에`InitialCreate` 는 매개 변수 (예:)가 사용 되며 원하는 모든 항목을 사용할 수 있습니다. 일반적으로 마이그레이션에서 수행 되는 항목을 요약 하는 단어나 구를 선택 합니다. 예를 들어 이후 마이그레이션 &quot;AddDepartmentTable&quot;의 이름을로 할 수 있습니다.
+`add-migration InitialCreate` 명령을 입력할 때 생성 된 초기 마이그레이션입니다. 매개 변수 (예제의`InitialCreate`)는 파일 이름에 사용 되며 원하는 대로 지정할 수 있습니다. 일반적으로 마이그레이션에서 수행 되는 작업을 요약 하는 단어나 구를 선택 합니다. 예를 들어 AddDepartmentTable&quot;&quot;나중에 마이그레이션하는 이름을로 할 수 있습니다.
 
-데이터베이스가 이미 존재할 때 초기 마이그레이션을 만든 경우 데이터베이스 만들기 코드가 생성되지만 데이터베이스는 이미 데이터 모델과 일치하기 때문에 실행할 필요는 없습니다. 데이터베이스가 아직 없는 다른 환경에 앱을 배포하는 경우 이 코드를 실행하여 데이터베이스를 만들기 때문에 먼저 테스트하는 것이 좋습니다. 앞&mdash;에서 새로 만들 수 있도록 연결 문자열에서 데이터베이스 이름을 변경한 이유 때문입니다.
+데이터베이스가 이미 존재할 때 초기 마이그레이션을 만든 경우 데이터베이스 만들기 코드가 생성되지만 데이터베이스는 이미 데이터 모델과 일치하기 때문에 실행할 필요는 없습니다. 데이터베이스가 아직 없는 다른 환경에 앱을 배포하는 경우 이 코드를 실행하여 데이터베이스를 만들기 때문에 먼저 테스트하는 것이 좋습니다. 이전에&mdash;연결 문자열에서 데이터베이스 이름을 변경 하 여 마이그레이션이 새 항목을 처음부터 새로 만들 수 있도록 하는 이유입니다.
 
-1. **패키지 관리자 콘솔** 창에서 다음 명령을 입력 합니다.
+1. **패키지 관리자 콘솔** 창에서 다음 명령을 입력합니다.
 
     `update-database`
 
-    이 명령은 메서드를 실행 하 여 데이터베이스를 만든 다음 메서드를 `Seed` 실행 하 여 데이터베이스를 채웁니다. `Up` `update-database` 다음 섹션에서 볼 수 있듯이 응용 프로그램을 배포한 후 프로덕션 환경에서 동일한 프로세스가 자동으로 실행 됩니다.
+    `update-database` 명령은 `Up` 메서드를 실행 하 여 데이터베이스를 만든 다음 `Seed` 메서드를 실행 하 여 데이터베이스를 채웁니다. 다음 섹션에서 볼 수 있듯이 응용 프로그램을 배포한 후 프로덕션 환경에서 동일한 프로세스가 자동으로 실행 됩니다.
 2. **서버 탐색기** 를 사용 하 여 첫 번째 자습서에서 했던 것 처럼 데이터베이스를 검사 하 고 응용 프로그램을 실행 하 여 모든 항목이 이전과 동일 하 게 작동 하는지 확인 합니다.
 
-## <a name="deploy-to-azure"></a>Azure에 배포
+## <a name="deploy-to-azure"></a>Deploy to Azure
 
 지금까지 응용 프로그램은 개발 컴퓨터의 IIS Express에서 로컬로 실행 되었습니다. 다른 사용자가 인터넷을 통해 사용할 수 있도록 하려면 웹 호스팅 공급자에 배포 해야 합니다. 자습서의이 섹션에서는 Azure에 배포 합니다. 이 섹션은 선택 사항입니다. 이 작업을 건너뛰고 다음 자습서를 계속 진행 하거나, 선택한 다른 호스팅 공급자에 대해이 섹션의 지침을 적용할 수 있습니다.
 
 ### <a name="use-code-first-migrations-to-deploy-the-database"></a>Code First 마이그레이션을 사용 하 여 데이터베이스 배포
 
-데이터베이스를 배포 하려면 Code First 마이그레이션을 사용 합니다. Visual Studio에서 배포에 대 한 설정을 구성 하는 데 사용 하는 게시 프로필을 만들 때 **데이터베이스 업데이트**라는 확인란을 선택 합니다. 이 설정을 사용 하면 Code First가 이니셜라이저 클래스를 `MigrateDatabaseToLatestVersion` 사용 하도록 배포 프로세스에서 대상 서버에 응용 프로그램 *web.config* 파일을 자동으로 구성 합니다.
+데이터베이스를 배포 하려면 Code First 마이그레이션을 사용 합니다. Visual Studio에서 배포에 대 한 설정을 구성 하는 데 사용 하는 게시 프로필을 만들 때 **데이터베이스 업데이트**라는 확인란을 선택 합니다. 이 설정을 사용 하면 Code First에서 `MigrateDatabaseToLatestVersion` 이니셜라이저 클래스를 사용 하도록 배포 프로세스에서 대상 서버에 응용 프로그램 *web.config* 파일을 자동으로 구성 합니다.
 
-Visual Studio는 프로젝트를 대상 서버에 복사 하는 동안 배포 프로세스 중에 데이터베이스에서 어떤 작업도 수행 하지 않습니다. 배포 된 응용 프로그램을 실행 하 고 배포 후 처음으로 데이터베이스에 액세스 하는 경우 Code First는 데이터베이스가 데이터 모델과 일치 하는지 확인 합니다. 일치 하지 않는 경우 Code First는 데이터베이스를 자동으로 만들거나 (아직 존재 하지 않는 경우) 데이터베이스 스키마를 최신 버전으로 업데이트 합니다 (데이터베이스가 있지만 모델과 일치 하지 않는 경우). 응용 프로그램이 마이그레이션 `Seed` 방법을 구현 하는 경우이 메서드는 데이터베이스가 만들어지거나 스키마가 업데이트 된 후에 실행 됩니다.
+Visual Studio는 프로젝트를 대상 서버에 복사 하는 동안 배포 프로세스 중에 데이터베이스에서 어떤 작업도 수행 하지 않습니다. 배포 된 응용 프로그램을 실행 하 고 배포 후 처음으로 데이터베이스에 액세스 하는 경우 Code First는 데이터베이스가 데이터 모델과 일치 하는지 확인 합니다. 일치 하지 않는 경우 Code First는 데이터베이스를 자동으로 만들거나 (아직 존재 하지 않는 경우) 데이터베이스 스키마를 최신 버전으로 업데이트 합니다 (데이터베이스가 있지만 모델과 일치 하지 않는 경우). 응용 프로그램이 마이그레이션 `Seed` 메서드를 구현 하는 경우이 메서드는 데이터베이스가 만들어지거나 스키마가 업데이트 된 후에 실행 됩니다.
 
-마이그레이션 `Seed` 방법은 테스트 데이터를 삽입 합니다. 프로덕션 환경에 배포 하는 경우 프로덕션 데이터베이스에 삽입 하려는 데이터만 삽입 하도록 `Seed` 메서드를 변경 해야 합니다. 예를 들어 현재 데이터 모델에서는 개발 데이터베이스에 실제 강의를 포함 하 고 가상 학생이 있을 수 있습니다. 개발 중에를 `Seed` 로드 하는 메서드를 작성 한 다음 프로덕션에 배포 하기 전에 가상 학생을 주석으로 처리할 수 있습니다. 또는 단지 강좌를 로드 `Seed` 하는 메서드를 작성 하 고 응용 프로그램의 UI를 사용 하 여 테스트 데이터베이스에 가상 학생을 수동으로 입력할 수 있습니다.
+마이그레이션 `Seed` 메서드는 테스트 데이터를 삽입 합니다. 프로덕션 환경에 배포 하는 경우 프로덕션 데이터베이스에 삽입 하려는 데이터만 삽입 하도록 `Seed` 메서드를 변경 해야 합니다. 예를 들어 현재 데이터 모델에서는 개발 데이터베이스에 실제 강의를 포함 하 고 가상 학생이 있을 수 있습니다. 개발 중에를 로드 하는 `Seed` 메서드를 작성 한 다음 프로덕션에 배포 하기 전에 가상 학생을 주석으로 처리할 수 있습니다. 또는 `Seed` 메서드를 작성 하 여 과정을 로드 하 고 응용 프로그램의 UI를 사용 하 여 테스트 데이터베이스에 가상 학생을 수동으로 입력할 수 있습니다.
 
 ### <a name="get-an-azure-account"></a>Azure 계정 가져오기
 
-Azure 계정이 필요 합니다. 아직 없는 경우 Visual Studio 구독이 있는 경우 구독 혜택 [](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/
-)을 활성화할 수 있습니다. 그렇지 않으면 몇 분만에 무료 평가판 계정을 만들 수 있습니다. 자세한 내용은 참조 하세요 [Azure 무료 평가판](https://azure.microsoft.com/free/)합니다.
+Azure 계정이 필요 합니다. 아직 없는 경우 Visual Studio 구독이 있는 경우 [구독 혜택을 활성화할](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/
+)수 있습니다. 그렇지 않으면 몇 분만에 무료 평가판 계정을 만들 수 있습니다. 자세한 내용은 [Azure 평가판](https://azure.microsoft.com/free/)을 참조하세요.
 
 ### <a name="create-a-web-site-and-a-sql-database-in-azure"></a>Azure에서 웹 사이트 및 SQL 데이터베이스 만들기
 
-Azure의 웹 앱은 공유 호스팅 환경에서 실행 됩니다. 즉, 다른 Azure 클라이언트와 공유 되는 Vm (가상 머신)에서 실행 됩니다. 공유 호스팅 환경은 클라우드에서 시작할 수 있는 저렴 한 방법입니다. 나중에 웹 트래픽이 늘어나면 응용 프로그램은 전용 Vm에서를 실행 하 여 필요에 맞게 확장할 수 있습니다. Azure App Service에 대 한 가격 책정 옵션에 대 한 자세한 내용은 [App Service 가격 책정](https://azure.microsoft.com/pricing/details/app-service/)을 참조 하세요.
+Azure의 웹 앱은 공유 호스팅 환경에서 실행 됩니다. 즉, 다른 Azure 클라이언트와 공유 되는 Vm (가상 머신)에서 실행 됩니다. 공유 호스팅 환경은 클라우드를 시작하는 저비용 방법입니다. 나중에 웹 트래픽이 증가하면 애플리케이션이 전용 VM에서 실행되어 요구에 맞게 확장될 수 있습니다. Azure App Service에 대 한 가격 책정 옵션에 대 한 자세한 내용은 [App Service 가격 책정](https://azure.microsoft.com/pricing/details/app-service/)을 참조 하세요.
 
 Azure SQL database에 데이터베이스를 배포 합니다. SQL database는 SQL Server 기술을 기반으로 구축 된 클라우드 기반의 관계형 데이터베이스 서비스입니다. SQL Server와 함께 작동 하는 도구 및 응용 프로그램은 SQL database 에서도 작동 합니다.
 
@@ -178,7 +178,7 @@ Azure SQL database에 데이터베이스를 배포 합니다. SQL database는 SQ
 
 ### <a name="deploy-the-app-to-azure"></a>Azure에 앱 배포
 
-1. Visual Studio의 **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 **게시** 를 선택 합니다.
+1. Visual Studio의 **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 상황에 맞는 메뉴에서 **게시**를 선택합니다.
 
 2. **게시 대상 선택** 페이지에서 **App Service** 를 선택한 다음 **기존을 선택**하 고 **게시**를 선택 합니다.
 
@@ -188,7 +188,7 @@ Azure SQL database에 데이터베이스를 배포 합니다. SQL database는 SQ
 
 4. **App Service** 페이지에서 App Service 추가 된 **구독** 을 선택 합니다. **보기**아래에서 **리소스 그룹**을 선택 합니다. App Service 추가한 리소스 그룹을 확장 한 다음 App Service를 선택 합니다. **확인** 을 선택 하 여 앱을 게시 합니다.
 
-5. **출력** 창에 수행 된 배포 작업이 표시 되 고 성공적인 배포 완료가 보고 됩니다.
+5. **출력** 창에 수행된 배포 작업이 표시되고 성공적인 배포 완료가 보고됩니다.
 
 6. 성공적으로 배포 되 면 배포 된 웹 사이트의 URL에 대 한 기본 브라우저가 자동으로 열립니다.
 
@@ -196,15 +196,15 @@ Azure SQL database에 데이터베이스를 배포 합니다. SQL database는 SQ
 
     앱이 이제 클라우드에서 실행 되 고 있습니다.
 
-이 시점에서 **Code First 마이그레이션 실행 (앱 시작 시 실행)** 을 선택 하 여 Azure SQL Database에서 *schoolcontext.cs* 데이터베이스를 만들었습니다. 배포 된 웹 사이트의 web.config 파일이 변경 되어 코드가 처음으로 데이터베이스에서 데이터를 읽거나 쓸 때 ( **학생** 탭을 선택 했을 때 발생) [MigrateDatabaseToLatestVersion](https://msdn.microsoft.com/library/hh829476(v=vs.103).aspx) 이니셜라이저가 실행 되도록 변경 되었습니다. ):
+이 시점에서 **Code First 마이그레이션 실행 (앱 시작 시 실행)** 을 선택 하 여 Azure SQL Database에서 *schoolcontext.cs* 데이터베이스를 만들었습니다. 배포 된 웹 *사이트의 web.config 파일이 변경* 되어 코드가 처음으로 데이터베이스에서 데이터를 읽거나 쓸 때 ( **학생** 탭을 선택 했을 때 발생) [MigrateDatabaseToLatestVersion](https://msdn.microsoft.com/library/hh829476(v=vs.103).aspx) 이니셜라이저가 실행 됩니다.
 
 ![Web.config 파일 발췌](https://asp.net/media/4367421/mig.png)
 
-또한 배포 프로세스에서는 데이터베이스 스키마를 업데이트 하 고 데이터베이스를 시드 하는 데 사용할 Code First 마이그레이션에 대 한 새 연결 문자열 *(schoolcontext.cs\_databasepublish*)을 만들었습니다.
+또한 배포 프로세스에서는 데이터베이스 스키마를 업데이트 하 고 데이터베이스를 시드 하는 데 사용할 Code First 마이그레이션에 대 한 새 연결 문자열 *(schoolcontext.cs\_DatabasePublish*)을 만들었습니다.
 
 ![Web.config 파일의 연결 문자열](migrations-and-deployment-with-the-entity-framework-in-an-asp-net-mvc-application/_static/image26.png)
 
-*ContosoUniversity\obj\Release\Package\PackageTmp\Web.config*의 사용자 컴퓨터에서 배포 된 버전의 web.config 파일을 찾을 수 있습니다. FTP를 사용 하 여 배포 된 *web.config* 파일 자체에 액세스할 수 있습니다. 자세한 지침은 Visual Studio [를 사용 하 여 웹 배포 ASP.NET를 참조 하세요. 코드 업데이트](xref:web-forms/overview/deployment/visual-studio-web-deployment/deploying-a-code-update)를 배포 합니다. "FTP 도구를 사용 하려면 FTP URL, 사용자 이름 및 암호를 사용 해야 합니다."로 시작 하는 지침을 따르세요.
+*ContosoUniversity\obj\Release\Package\PackageTmp\Web.config*의 사용자 컴퓨터에서 배포 된 버전의 web.config 파일을 찾을 수 있습니다. FTP를 사용 하 여 배포 된 *web.config* 파일 자체에 액세스할 수 있습니다. 지침은 [Visual Studio를 사용 하 여 웹 배포 ASP.NET: 코드 업데이트 배포](xref:web-forms/overview/deployment/visual-studio-web-deployment/deploying-a-code-update)를 참조 하세요. "FTP 도구를 사용 하려면 FTP URL, 사용자 이름 및 암호를 사용 해야 합니다."로 시작 하는 지침을 따르세요.
 
 > [!NOTE]
 > 웹 앱은 보안을 구현 하지 않으므로 URL을 검색 하는 모든 사용자가 데이터를 변경할 수 있습니다. 웹 사이트를 보호 하는 방법에 대 한 지침은 [멤버 자격, OAuth 및 SQL database가 포함 된 secure ASP.NET MVC 앱을 Azure에 배포](/aspnet/core/security/authorization/secure-data)를 참조 하세요. Visual Studio에서 Azure 관리 포털 또는 **서버 탐색기** 를 사용 하 여 서비스를 중지 하 여 다른 사용자가 사이트를 사용 하지 못하도록 할 수 있습니다.
@@ -227,25 +227,25 @@ Azure SQL database에 데이터베이스를 배포 합니다. SQL database는 SQ
 
 `Add-migration MigrationName -ignoreChanges`
 
-`ignoreChanges`현재 모델을 스냅숏으로 사용 하 여 빈 마이그레이션을 만듭니다.
+`ignoreChanges` 현재 모델을 스냅숏으로 빈 마이그레이션을 만듭니다.
 
 ## <a name="code-first-initializers"></a>Code First 이니셜라이저
 
-배포 섹션에서 사용 되는 [MigrateDatabaseToLatestVersion](https://msdn.microsoft.com/library/hh829476(v=vs.103).aspx) 이니셜라이저를 살펴보았습니다. [Createdatabaseifnotexists](https://msdn.microsoft.com/library/gg679221(v=vs.103).aspx) (기본값), [Dropcreatedatabaseifmodelchanges](https://msdn.microsoft.com/library/gg679604(v=VS.103).aspx) (이전에 사용한) 및 [dropcreatedatabasealways](https://msdn.microsoft.com/library/gg679506(v=VS.103).aspx)를 비롯 한 다른 이니셜라이저가 제공 됩니다. Code First 이니셜라이저 `DropCreateAlways` 는 단위 테스트에 대 한 조건을 설정 하는 데 유용할 수 있습니다. 사용자 고유의 이니셜라이저를 작성 하 고 응용 프로그램이 데이터베이스에서 읽거나 데이터베이스에 쓸 때까지 기다리지 않으려는 경우 이니셜라이저를 명시적으로 호출할 수도 있습니다.
+배포 섹션에서 사용 되는 [MigrateDatabaseToLatestVersion](https://msdn.microsoft.com/library/hh829476(v=vs.103).aspx) 이니셜라이저를 살펴보았습니다. [Createdatabaseifnotexists](https://msdn.microsoft.com/library/gg679221(v=vs.103).aspx) (기본값), [Dropcreatedatabaseifmodelchanges](https://msdn.microsoft.com/library/gg679604(v=VS.103).aspx) (이전에 사용한) 및 [dropcreatedatabasealways](https://msdn.microsoft.com/library/gg679506(v=VS.103).aspx)를 비롯 한 다른 이니셜라이저가 제공 됩니다. Code First `DropCreateAlways` 이니셜라이저는 단위 테스트에 대 한 조건을 설정 하는 데 유용할 수 있습니다. 사용자 고유의 이니셜라이저를 작성 하 고 응용 프로그램이 데이터베이스에서 읽거나 데이터베이스에 쓸 때까지 기다리지 않으려는 경우 이니셜라이저를 명시적으로 호출할 수도 있습니다.
 
-이니셜라이저에 대 한 자세한 내용은 [Entity Framework Code First의 데이터베이스 이니셜라이저 이해](http://www.codeguru.com/csharp/article.php/c19999/Understanding-Database-Initializers-in-Entity-Framework-Code-First.htm) 및 책 [프로그래밍 Entity Framework의 6 장을 참조 하세요. Julie](http://shop.oreilly.com/product/0636920022220.do) Lerman 및 rowan를 통해 Code First 합니다.
+이니셜라이저에 대 한 자세한 내용은 [Entity Framework Code First의 데이터베이스 이니셜라이저 이해](http://www.codeguru.com/csharp/article.php/c19999/Understanding-Database-Initializers-in-Entity-Framework-Code-First.htm) 및 설명서의 6 장 [프로그래밍 Entity Framework:](http://shop.oreilly.com/product/0636920022220.do) Julie Lerman 및 rowan를 통해 Code First
 
 ## <a name="get-the-code"></a>코드 가져오기
 
 [완료 된 프로젝트 다운로드](https://webpifeed.blob.core.windows.net/webpifeed/Partners/ASP.NET%20MVC%20Application%20Using%20Entity%20Framework%20Code%20First.zip)
 
-## <a name="additional-resources"></a>추가 자료
+## <a name="additional-resources"></a>추가 리소스
 
 [ASP.NET 데이터 액세스-권장 리소스](xref:whitepapers/aspnet-data-access-content-map)에서 다른 Entity Framework 리소스에 대 한 링크를 찾을 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 
-이 자습서에서는 다음을 수행했습니다.
+이 자습서에서는 다음을 수행합니다.
 
 > [!div class="checklist"]
 > * Code First 마이그레이션 사용

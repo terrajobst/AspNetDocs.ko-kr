@@ -2,23 +2,23 @@
 uid: web-pages/index
 title: ASP.NET 웹 페이지 | Microsoft Docs
 author: rick-anderson
-description: WebMatrix 다운로드 및 서버 코드를 HTML과 결합 하 여 경량 방식으로 웹 페이지를 신속 하 게 빌드하는 방법을 알아봅니다.
+description: WebMatrix를 다운로드 하 여 서버 코드를 HTML과 결합 하는 간단한 방법으로 웹 페이지를 신속 하 게 빌드하는 방법을 알아보세요 &.
 ms.author: riande
 ms.date: 05/18/2012
 ms.assetid: 5418ba96-ff49-4a43-9cbb-09dea4949d23
 msc.legacyurl: /web-pages
 msc.type: categoryindex
 ms.openlocfilehash: 56bf82e22b3562893ef842a90d42aa7b6ff5858f
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65114526"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78520673"
 ---
-# <a name="aspnet-web-pages"></a>ASP.NET Web Pages
+# <a name="aspnet-web-pages"></a>ASP.NET 웹 페이지
 
 > [!NOTE] 
-> WebMatrix는 더 이상 권장 통합된 개발 환경으로 ASP.NET 웹 페이지에 대 한 합니다. 사용 하 여 [Visual Studio](xref:aspnet/web-pages/overview/getting-started/program-asp-net-web-pages-in-visual-studio) 하거나 [Visual Studio Code](https://code.visualstudio.com/)합니다.
+> WebMatrix는 ASP.NET 웹 페이지을 위한 통합 개발 환경으로 더 이상 권장 되지 않습니다. [Visual Studio](xref:aspnet/web-pages/overview/getting-started/program-asp-net-web-pages-in-visual-studio) 또는 [Visual Studio Code](https://code.visualstudio.com/)를 사용 합니다.
 
 - [지침](overview/index.md)
 
@@ -56,7 +56,7 @@ ms.locfileid: "65114526"
         - [도우미 설치](overview/ui-layouts-and-themes/installing-helpers.md)
         - [ASP.NET 웹 페이지와 Twitter 도우미](overview/ui-layouts-and-themes/twitter-helper.md)
         - [ASP.NET 웹 페이지 사이트에 맵 표시](overview/ui-layouts-and-themes/displaying-maps-in-an-aspnet-web-pages-site.md)
-    - [모바일](overview/mobile/index.md)
+    - [Mobile](overview/mobile/index.md)
 
         - [모바일 디바이스를 위한 ASP.NET 웹 페이지 사이트 렌더링](overview/mobile/rendering-aspnet-web-pages-sites-for-mobile-devices.md)
     - [데이터 작업](overview/data/index.md)
@@ -102,7 +102,7 @@ ms.locfileid: "65114526"
         - [WebMatrix에서 데이터 편집 페이지 만들기](videos/introduction/create-an-edit-data-page-in-webmatrix.md)
         - [WebMatrix에서 데이터 삭제 페이지 만들기](videos/introduction/create-a-delete-data-page-in-webmatrix.md)
         - [WebMatrix를 사용하여 인터넷에 웹 사이트 게시](videos/introduction/publish-a-website-to-the-internet-using-webmatrix.md)
-    - [ASP.NET Razor 페이지](videos/aspnet-razor-pages/index.md)
+    - [ASP.NET Razor Pages](videos/aspnet-razor-pages/index.md)
 
         - [WebMatrix 및 ASP.NET 웹 페이지 시작](videos/aspnet-razor-pages/getting-started-with-webmatrix-and-aspnet-web-pages.md)
         - [ASP.NET 웹 프로그래밍 Razor 구문 소개](videos/aspnet-razor-pages/introduction-to-aspnet-web-programming-using-the-razor-syntax.md)

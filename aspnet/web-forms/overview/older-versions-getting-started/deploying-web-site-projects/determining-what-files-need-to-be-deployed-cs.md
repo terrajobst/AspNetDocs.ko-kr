@@ -9,11 +9,11 @@ ms.assetid: f8d78a88-cc91-40d8-bce3-3d7954f6033b
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/determining-what-files-need-to-be-deployed-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 1dd4a1179d32f776626c08a07205dc9aabed588d
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74596373"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78516581"
 ---
 # <a name="determining-what-files-need-to-be-deployed-c"></a>배포할 파일 확인(C#)
 
@@ -47,8 +47,8 @@ ASP.NET 엔진이이 페이지에 대 한 요청을 처리 하기 위해 먼저 
 
 | **컴파일 모델** | **태그 부분 파일을 배포 하 시겠습니까?** | **소스 코드 파일을 배포 하 시겠습니까?** | **`Bin` 디렉터리에 어셈블리를 배포 하 시겠습니까?** |
 | --- | --- | --- | --- |
-| 명시적 컴파일 | 예 | 아니요 | 예 |
-| 자동 컴파일 | 예 | 예 | 예 (있는 경우) |
+| 명시적 컴파일 | yes | 예 | yes |
+| 자동 컴파일 | yes | yes | 예 (있는 경우) |
 
 **표 1:** 배포 하는 파일은 사용 된 컴파일 모델에 따라 달라 집니다.
 
@@ -157,7 +157,7 @@ ASP.NET 응용 프로그램을 배포 하면 개발 환경에서 프로덕션 �
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 

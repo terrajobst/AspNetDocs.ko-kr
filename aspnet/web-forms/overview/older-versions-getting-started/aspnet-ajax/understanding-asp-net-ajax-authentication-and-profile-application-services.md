@@ -9,11 +9,11 @@ ms.assetid: 6ab4efb6-aab6-45ac-ad2c-bdec5848ef9e
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/aspnet-ajax/understanding-asp-net-ajax-authentication-and-profile-application-services
 msc.type: authoredcontent
 ms.openlocfilehash: cab9acb1ffd75cca87f6c575a6abdd000235828e
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74635685"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78520313"
 ---
 # <a name="understanding-aspnet-ajax-authentication-and-profile-application-services"></a>ASP.NET AJAX 인증 및 프로필 애플리케이션 서비스 이해
 
@@ -39,7 +39,7 @@ Microsoft ASP.NET 프로필 및 인증 서비스는 ASP.NET Forms 인증 시스�
 
 프로필 서비스를 사용 하면 인증 서비스에서 제공 하는 멤버 자격에 따라 사용자 데이터를 자동으로 통합 하 고 저장할 수 있습니다. 저장 된 데이터는 web.config 파일에 의해 지정 되 고 다양 한 프로 파일링 서비스 공급자가 데이터 관리를 처리 합니다. 인증 서비스와 마찬가지로 AJAX 프로필 서비스는 표준 ASP.NET profile 서비스와 호환 되므로 ASP.NET Profile 서비스의 기능을 통합 하는 페이지는 AJAX 지원을 포함 하 여 중단 되어서는 안 됩니다.
 
-ASP.NET 인증 및 프로 파일링 서비스를 응용 프로그램에 통합 하는 것은이 백서에서 다루지 않습니다. 항목에 대 한 자세한 내용은 MSDN Library 참조 문서 [https://msdn.microsoft.com/library/tw292whz.aspx](https://msdn.microsoft.com/library/tw292whz.aspx)에서 멤버 자격을 사용 하 여 사용자 관리를 참조 하세요. ASP.NET에는 ASP.NET 멤버 자격에 대 한 기본 인증 서비스 공급자 인 SQL Server를 사용 하 여 멤버 자격을 자동으로 설정 하는 유틸리티도 포함 되어 있습니다. 자세한 내용은 [https://msdn.microsoft.com/library/ms229862(vs.80).aspx](https://msdn.microsoft.com/library/ms229862(vs.80).aspx)에서 ASP.NET SQL Server 등록 도구 (Aspnet\_ regsql .exe) 문서를 참조 하세요.
+ASP.NET 인증 및 프로 파일링 서비스를 응용 프로그램에 통합 하는 것은이 백서에서 다루지 않습니다. 항목에 대 한 자세한 내용은 MSDN Library 참조 문서 [https://msdn.microsoft.com/library/tw292whz.aspx](https://msdn.microsoft.com/library/tw292whz.aspx)에서 멤버 자격을 사용 하 여 사용자 관리를 참조 하세요. ASP.NET에는 ASP.NET 멤버 자격에 대 한 기본 인증 서비스 공급자 인 SQL Server를 사용 하 여 멤버 자격을 자동으로 설정 하는 유틸리티도 포함 되어 있습니다. 자세한 내용은 [https://msdn.microsoft.com/library/ms229862(vs.80).aspx](https://msdn.microsoft.com/library/ms229862(vs.80).aspx)에서 ASP.NET SQL Server 등록 도구 (Aspnet\_regsql .exe) 문서를 참조 하세요.
 
 ## <a name="using-the-aspnet-ajax-authentication-service"></a>*ASP.NET AJAX 인증 서비스 사용*
 
@@ -57,12 +57,12 @@ AJAX 인증 서비스를 사용 하도록 설정 하 고 구성 하면 클라이
 
 Login () 메서드는 사용자의 자격 증명을 인증 하는 요청을 시작 합니다. 이 메서드는 비동기적 이며 실행을 차단 하지 않습니다.
 
-*변수의*
+*매개 변수:*
 
-| **매개 변수 이름** | **임을** |
+| **매개 변수 이름** | **의미** |
 | --- | --- |
-| userName | 필수 인증할 사용자 이름입니다. |
-| 암호 | 선택 사항입니다. 기본값은 null입니다. 사용자의 암호입니다. |
+| userName | 필수 사항입니다. 인증할 사용자 이름입니다. |
+| password | 선택 사항입니다. 기본값은 null입니다. 사용자 암호입니다. |
 | isPersistent | 선택 사항입니다 (기본값은 false). 사용자의 인증 쿠키를 세션 간에 유지할지 여부를 지정 합니다. False 이면 브라우저가 닫히거나 세션이 만료 되 면 사용자가 로그 아웃 합니다. |
 | redirectUrl | 선택 사항입니다. 기본값은 null입니다. 인증에 성공 하면 브라우저를 리디렉션할 URL입니다. 이 매개 변수가 null 또는 빈 문자열인 경우 리디렉션이 발생 하지 않습니다. |
 | customInfo | 선택 사항입니다. 기본값은 null입니다. 이 매개 변수는 현재 사용 되지 않으며 나중에 사용 하도록 예약 되어 있습니다. |
@@ -70,7 +70,7 @@ Login () 메서드는 사용자의 자격 증명을 인증 하는 요청을 시�
 | failedCallback | 선택 사항입니다. 기본값은 null입니다. 로그인이 실패 했을 때 호출할 함수입니다. 지정 된 경우이 매개 변수는 defaultFailedCallback 속성을 재정의 합니다. |
 | userContext | 선택 사항입니다. 기본값은 null입니다. 콜백 함수에 전달 되어야 하는 사용자 지정 사용자 컨텍스트 데이터입니다. |
 
-*반환 값:*
+*Return Value(반환 값):*
 
 이 함수에는 반환 값이 포함 되지 않습니다. 그러나이 함수에 대 한 호출이 완료 되 면 많은 동작이 포함 됩니다.
 
@@ -82,16 +82,16 @@ Login () 메서드는 사용자의 자격 증명을 인증 하는 요청을 시�
 
 Logout () 메서드는 자격 증명 쿠키를 제거 하 고 웹 응용 프로그램에서 현재 사용자를 로그 아웃 합니다.
 
-*변수의*
+*매개 변수:*
 
-| **매개 변수 이름** | **임을** |
+| **매개 변수 이름** | **의미** |
 | --- | --- |
 | redirectUrl | 선택 사항입니다. 기본값은 null입니다. 인증에 성공 하면 브라우저를 리디렉션할 URL입니다. 이 매개 변수가 null 또는 빈 문자열인 경우 리디렉션이 발생 하지 않습니다. |
 | logoutCompletedCallback | 선택 사항입니다. 기본값은 null입니다. 로그 아웃이 성공적으로 완료 되었을 때 호출할 함수입니다. 지정 된 경우이 매개 변수는 defaultLogoutCompleted 속성을 재정의 합니다. |
 | failedCallback | 선택 사항입니다. 기본값은 null입니다. 로그인이 실패 했을 때 호출할 함수입니다. 지정 된 경우이 매개 변수는 defaultFailedCallback 속성을 재정의 합니다. |
 | userContext | 선택 사항입니다. 기본값은 null입니다. 콜백 함수에 전달 되어야 하는 사용자 지정 사용자 컨텍스트 데이터입니다. |
 
-*반환 값:*
+*Return Value(반환 값):*
 
 이 함수에는 반환 값이 포함 되지 않습니다. 그러나이 함수에 대 한 호출이 완료 되 면 많은 동작이 포함 됩니다.
 
@@ -107,11 +107,11 @@ Logout () 메서드는 자격 증명 쿠키를 제거 하 고 웹 응용 프로�
 
 [!code-javascript[Main](understanding-asp-net-ajax-authentication-and-profile-application-services/samples/sample2.js)]
 
-*변수의*
+*매개 변수:*
 
-| **매개 변수 이름** | **임을** |
+| **매개 변수 이름** | **의미** |
 | --- | --- |
-| 오류 | 오류 정보를 지정 합니다. |
+| error | 오류 정보를 지정 합니다. |
 | userContext | Login 또는 logout 함수를 호출할 때 제공 되는 사용자 컨텍스트 정보를 지정 합니다. |
 | methodName | 호출 메서드의 이름입니다. |
 
@@ -123,11 +123,11 @@ Logout () 메서드는 자격 증명 쿠키를 제거 하 고 웹 응용 프로�
 
 [!code-javascript[Main](understanding-asp-net-ajax-authentication-and-profile-application-services/samples/sample3.js)]
 
-*변수의*
+*매개 변수:*
 
-| **매개 변수 이름** | **임을** |
+| **매개 변수 이름** | **의미** |
 | --- | --- |
-| 유효한 자격 증명 | 사용자가 유효한 자격 증명을 제공 했는지 여부를 지정 합니다. 사용자가 성공적으로 로그인 한 경우 `true` 합니다. 그렇지 않으면 `false`합니다. |
+| validCredentials | 사용자가 유효한 자격 증명을 제공 했는지 여부를 지정 합니다. 사용자가 성공적으로 로그인 한 경우 `true` 합니다. 그렇지 않으면 `false`합니다. |
 | userContext | 로그인 함수가 호출 될 때 제공 되는 사용자 컨텍스트 정보를 지정 합니다. |
 | methodName | 호출 메서드의 이름입니다. |
 
@@ -139,9 +139,9 @@ Logout () 메서드는 자격 증명 쿠키를 제거 하 고 웹 응용 프로�
 
 [!code-javascript[Main](understanding-asp-net-ajax-authentication-and-profile-application-services/samples/sample4.js)]
 
-*변수의*
+*매개 변수:*
 
-| **매개 변수 이름** | **임을** |
+| **매개 변수 이름** | **의미** |
 | --- | --- |
 | result | 이 매개 변수는 항상 `null`됩니다. 나중에 사용 하도록 예약 되어 있습니다. |
 | userContext | 로그인 함수가 호출 될 때 제공 되는 사용자 컨텍스트 정보를 지정 합니다. |
@@ -203,9 +203,9 @@ AJAX 프로 파일링 서비스가 구성 되 면 페이지에서 즉시 사용�
 
 서버에서 선택한 목록 또는 모든 속성을 로드 합니다.
 
-*변수의*
+*매개 변수:*
 
-| **매개 변수 이름** | **임을** |
+| **매개 변수 이름** | **의미** |
 | --- | --- |
 | propertyNames | 선택 사항입니다. 기본값은 null입니다. 서버에서 로드 되는 속성입니다. |
 | loadCompletedCallback | 선택 사항입니다. 기본값은 null입니다. 로드가 완료 될 때 호출할 함수입니다. |
@@ -220,9 +220,9 @@ Load 함수에는 반환 값이 없습니다. 호출이 성공적으로 완료 �
 
 Save () 메서드는 지정 된 속성 목록 (또는 모든 속성)을 사용자의 ASP.NET 프로필에 저장 합니다.
 
-*변수의*
+*매개 변수:*
 
-| **매개 변수 이름** | **임을** |
+| **매개 변수 이름** | **의미** |
 | --- | --- |
 | propertyNames | 선택 사항입니다. 기본값은 null입니다. 서버에 저장 되는 속성입니다. |
 | saveCompletedCallback | 선택 사항입니다. 기본값은 null입니다. 저장이 완료 될 때 호출할 함수입니다. |
@@ -241,11 +241,11 @@ Save () 메서드는 지정 된 속성 목록 (또는 모든 속성)을 사용�
 
 [!code-javascript[Main](understanding-asp-net-ajax-authentication-and-profile-application-services/samples/sample9.js)]
 
-*변수의*
+*매개 변수:*
 
-| **매개 변수 이름** | **임을** |
+| **매개 변수 이름** | **의미** |
 | --- | --- |
-| 오류 | 오류 정보를 지정 합니다. |
+| Error | 오류 정보를 지정 합니다. |
 | userContext | Load 또는 save 함수를 호출할 때 제공 되는 사용자 컨텍스트 정보를 지정 합니다. |
 | methodName | 호출 메서드의 이름입니다. |
 
@@ -257,9 +257,9 @@ Save () 메서드는 지정 된 속성 목록 (또는 모든 속성)을 사용�
 
 [!code-javascript[Main](understanding-asp-net-ajax-authentication-and-profile-application-services/samples/sample10.js)]
 
-*변수의*
+*매개 변수:*
 
-| **매개 변수 이름** | **임을** |
+| **매개 변수 이름** | **의미** |
 | --- | --- |
 | numPropsSaved | 저장 된 속성의 수를 지정 합니다. |
 | userContext | Load 또는 save 함수를 호출할 때 제공 되는 사용자 컨텍스트 정보를 지정 합니다. |
@@ -273,9 +273,9 @@ Save () 메서드는 지정 된 속성 목록 (또는 모든 속성)을 사용�
 
 [!code-javascript[Main](understanding-asp-net-ajax-authentication-and-profile-application-services/samples/sample11.js)]
 
-*변수의*
+*매개 변수:*
 
-| **매개 변수 이름** | **임을** |
+| **매개 변수 이름** | **의미** |
 | --- | --- |
 | numPropsLoaded | 로드 되는 속성 수를 지정 합니다. |
 | userContext | Load 또는 save 함수를 호출할 때 제공 되는 사용자 컨텍스트 정보를 지정 합니다. |

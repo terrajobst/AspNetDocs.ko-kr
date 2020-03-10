@@ -9,11 +9,11 @@ ms.assetid: ad0f1014-1eff-465f-bdc6-93058de00e44
 msc.legacyurl: /web-forms/overview/data-access/filtering-scenarios-with-the-datalist-and-repeater/master-detail-filtering-with-a-dropdownlist-datalist-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 537f8e76bc0cbfa759a014b63ae5f68b5d3ca64d
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74630019"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78491087"
 ---
 # <a name="masterdetail-filtering-with-a-dropdownlist-vb"></a>DropDownList 한 개로 마스터/세부 정보 필터링(VB)
 
@@ -115,7 +115,7 @@ ms.locfileid: "74630019"
 
 DropDownList에 새 목록 항목을 추가 하려면 속성 창로 이동 하 여 `Items` 속성에서 줄임표를 클릭 합니다. `Text` "--범주 선택--"과 `Value` `0`를 사용 하 여 새 목록 항목을 추가 합니다.
 
-![추가](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image27.png)
+![사용자 지정](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image27.png)
 
 **그림 11**: "--범주 선택--" 목록 항목 추가
 
@@ -145,7 +145,7 @@ DropDownList에 새 목록 항목을 추가 하려면 속성 창로 이동 하 �
 
 행복 한 프로그래밍
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

@@ -9,11 +9,11 @@ ms.assetid: 6f448917-ad23-4dcc-9789-897fad74051b
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v3/calling-an-odata-service-from-a-net-client
 msc.type: authoredcontent
 ms.openlocfilehash: 6a289fcb843634eeeefef1e0767e04e0be8b6973
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74600373"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78498167"
 ---
 # <a name="calling-an-odata-service-from-a-net-client-c"></a>.NET 클라이언트에서 OData 서비스 호출(C#)
 
@@ -71,7 +71,7 @@ Visual Studio에서 OData 서비스 프로젝트를 열어 시작 합니다. IIS
 
 **네임 스페이스**에 "제품 서비스"를 입력 합니다. 이 옵션은 프록시 클래스의 네임 스페이스를 정의 합니다.
 
-**찾기**를 클릭합니다. Visual Studio는 OData 메타 데이터 문서를 읽어 서비스의 엔터티를 검색 합니다.
+**이동**을 클릭합니다. Visual Studio는 OData 메타 데이터 문서를 읽어 서비스의 엔터티를 검색 합니다.
 
 [![](calling-an-odata-service-from-a-net-client/_static/image7.png)](calling-an-odata-service-from-a-net-client/_static/image6.png)
 

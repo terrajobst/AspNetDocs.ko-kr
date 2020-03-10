@@ -9,11 +9,11 @@ ms.assetid: d7729af4-1eda-4ff2-8b61-dbbe4fc11d10
 msc.legacyurl: /whitepapers/aspnet4
 msc.type: content
 ms.openlocfilehash: ecde48f6bd88ee5f569bfeb8b70c26a50bc869c2
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74576864"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78511433"
 ---
 # <a name="aspnet-4-and-visual-studio-2010-web-development-overview"></a>ASP.NET 4 및 Visual Studio 2010 웹 개발 개요
 
@@ -21,7 +21,7 @@ ms.locfileid: "74576864"
 > 
 > [이 백서 다운로드](https://download.microsoft.com/download/7/1/A/71A105A9-89D6-4201-9CC5-AD6A3B7E2F22/ASP_NET_4_and_Visual_Studio_2010_Web_Development_Overview.pdf)
 
-**목차**
+**콘텐츠**
 
 **[핵심 서비스](#0.2__Toc253429238 "_Toc253429238")**  
 [Web.config 파일 리팩터링](#0.2__Toc253429239 "_Toc253429239")  
@@ -122,7 +122,7 @@ ASP.NET 4는 하나 이상의 사용자 지정 출력 캐시 공급자를 구성
 
 [!code-aspx[Main](overview/samples/sample3.aspx)]
 
-HTTP 요청에 다른 출력 캐시 공급자를 지정 하려면 약간 더 많은 작업이 필요 합니다. 공급자를 선언적으로 지정 하는 대신 `Global.asax` 파일에서 새 *Getouputcacheprovidername* 메서드를 재정의 하 여 특정 요청에 사용할 공급자를 프로그래밍 방식으로 지정 합니다. 다음 예제에서는 이 작업을 수행하는 방법을 보여 줍니다.
+HTTP 요청에 다른 출력 캐시 공급자를 지정 하려면 약간 더 많은 작업이 필요 합니다. 공급자를 선언적으로 지정 하는 대신 `Global.asax` 파일에서 새 *Getouputcacheprovidername* 메서드를 재정의 하 여 특정 요청에 사용할 공급자를 프로그래밍 방식으로 지정 합니다. 다음 예제에 이 작업을 수행하는 방법이 나와 있습니다.
 
 [!code-csharp[Main](overview/samples/sample4.cs)]
 
@@ -353,7 +353,7 @@ AjaxFrameworkMode 속성은 다음 값으로 설정할 수 있습니다.
 
 <a id="0.2__The_DataView_Control"></a><a id="0.2__The_DataContext_and"></a><a id="0.2__Refactoring_the_Microsoft"></a><a id="0.2__Toc224729032"></a><a id="0.2__Toc253429256"></a><a id="0.2__Toc243304630"></a>
 
-## <a name="web-forms"></a>Web Forms
+## <a name="web-forms"></a>웹 양식
 
 Web Forms ASP.NET 1.0 이후 ASP.NET의 핵심 기능입니다. ASP.NET 4의 경우 다음을 포함 하 여 다양 한 기능이 향상 되었습니다.
 
@@ -496,7 +496,7 @@ ASP.NET browser 기능 정의 기능을 완전히 교체 하려면 다음 단계
 
 #### <a name="caching-the-httpbrowsercapabilities-object"></a>HttpBrowserCapabilities 개체 캐시
 
-앞의 예제에는 *Httpbrowsercapabilities* 개체를 가져오기 위해 사용자 지정 공급자가 호출 될 때마다 코드가 실행 되는 한 가지 문제가 있습니다. 각 요청 중에 여러 번 발생할 수 있습니다. 이 예제에서는 공급자의 코드에서 많은 작업을 수행 하지 않습니다. 그러나 사용자 지정 공급자의 코드가 *Httpbrowsercapabilities* 개체를 가져오기 위해 중요 한 작업을 수행 하는 경우이는 성능에 영향을 줄 수 있습니다. 이러한 상황이 발생 하지 않도록 하려면 *Httpbrowsercapabilities* 개체를 캐시 하면 됩니다. 다음 단계를 수행하십시오.
+앞의 예제에는 *Httpbrowsercapabilities* 개체를 가져오기 위해 사용자 지정 공급자가 호출 될 때마다 코드가 실행 되는 한 가지 문제가 있습니다. 각 요청 중에 여러 번 발생할 수 있습니다. 이 예제에서는 공급자의 코드에서 많은 작업을 수행 하지 않습니다. 그러나 사용자 지정 공급자의 코드가 *Httpbrowsercapabilities* 개체를 가져오기 위해 중요 한 작업을 수행 하는 경우이는 성능에 영향을 줄 수 있습니다. 이러한 상황이 발생 하지 않도록 하려면 *Httpbrowsercapabilities* 개체를 캐시 하면 됩니다. 다음 단계를 수행하세요.
 
 1. 다음 예제와 같이 *HttpCapabilitiesProvider*에서 파생 되는 클래스를 만듭니다. 
 
@@ -927,8 +927,8 @@ ASP.NET 4의 주요 작업 영역 중 하나는 최신 HTML 표준과 호환 되
 
 *ControlRenderingCompatibility* 에 대 한 값은 이후 릴리스에서 새 버전 정의를 잠재적으로 허용 하는 문자열입니다. 현재 릴리스에서이 속성에 대해 지원 되는 값은 다음과 같습니다.
 
-- "3.5"입니다. 이 설정은 레거시 렌더링 및 태그를 나타냅니다. 컨트롤에 의해 렌더링 된 태그는 100% 이전 버전과 호환 되며 *Xhtmlconformance* 속성의 설정이 적용 됩니다.
-- "4.0"입니다. 속성에이 설정이 있으면 ASP.NET 웹 서버 컨트롤은 다음을 수행 합니다.
+- "3.5". 이 설정은 레거시 렌더링 및 태그를 나타냅니다. 컨트롤에 의해 렌더링 된 태그는 100% 이전 버전과 호환 되며 *Xhtmlconformance* 속성의 설정이 적용 됩니다.
+- "4.0". 속성에이 설정이 있으면 ASP.NET 웹 서버 컨트롤은 다음을 수행 합니다.
 - *Xhtmlconformance* 속성은 항상 "Strict"로 처리 됩니다. 따라서 컨트롤은 XHTML 1.0 Strict 태그를 렌더링 합니다.
 - 비 입력 컨트롤을 사용 하지 않도록 설정 하면 더 이상 잘못 된 스타일이 렌더링 되지 않습니다.
 - 숨겨진 필드 주변의 *div* 요소는 이제 사용자가 만든 CSS 규칙을 방해 하지 않도록 스타일이 지정 됩니다.
@@ -980,7 +980,7 @@ ASP.NET 2.0 이상 버전은 XHTML 표준을 준수 하기 위해 시스템 관�
 - *로그인*
 - *PasswordRecovery*
 - *ChangePassword*
-- *준비*
+- *마법사*
 - *CreateUserWizard*
 
 태그에서 외부 테이블을 제거할 수 있도록 하는 *RenderOuterTable* 라는 새 속성이 이러한 컨트롤에 추가 되었습니다. 예를 들어 *FormView* 컨트롤의 다음 예를 살펴보세요.
@@ -1194,7 +1194,7 @@ ASP.NET 4에서 Dynamic Data 지원의 주요 목표는 모든 ASP.NET 응용 �
 
 [!code-aspx[Main](overview/samples/sample96.aspx)]
 
-기본 템플릿을 편집 하 여 전체 사이트의 모양과 느낌을 변경할 수 있습니다. 표시, 편집 및 삽입 작업을 위한 템플릿이 있습니다. 데이터 개체의 이름을 기준으로 새 템플릿을 추가 하 여 하나의 개체 형식에 대 한 모양과 느낌을 변경할 수 있습니다. 예를 들어 다음 템플릿을 추가할 수 있습니다.
+기본 템플릿을 편집 하 여 전체 사이트의 모양과 느낌을 변경할 수 있습니다. 표시, 편집 및 삽입 작업에 대 한 템플릿이 있습니다. 데이터 개체의 이름을 기준으로 새 템플릿을 추가 하 여 하나의 개체 형식에 대 한 모양과 느낌을 변경할 수 있습니다. 예를 들어 다음 템플릿을 추가할 수 있습니다.
 
 [!code-console[Main](overview/samples/sample97.cmd)]
 
@@ -1347,7 +1347,7 @@ Visual Studio 2010에서는 IIS 원격 관리 서비스를 사용 하 여 원격
 
 <a id="0.2__Toc224729060"></a><a id="0.2__Toc253429297"></a><a id="0.2__Toc243304668"></a>
 
-### <a name="resources"></a>자료
+### <a name="resources"></a>리소스
 
 다음 웹 사이트는 ASP.NET 4 및 Visual Studio 2010에 대 한 추가 정보를 제공 합니다.
 
@@ -1364,18 +1364,18 @@ Visual Studio 2010에서는 IIS 원격 관리 서비스를 사용 하 여 원격
 
 본 문서는 예비 문서이며, 여기에 설명한 소프트웨어의 최종 상업적 출시 전에 크게 변경될 수 있습니다.
 
-이 문서에 포함된 정보는 문서 게시 날짜에 토론된 문제들에 대한 Microsoft Corporation의 당시 견해를 나타냅니다. Microsoft의 견해는 변화하는 시장 환경에 맞게 변화되어야 하기 때문에 이러한 정보는 Microsoft의 약속으로 해석되어서는 안되며, Microsoft는 문서 게시 날짜 이후 제공된 어떠한 정보에 대해서도 정확성을 보장할 수 없습니다.
+이 문서에 포함된 정보는 게시 날짜 당시 논의된 문제에 대한 Microsoft Corporation의 현재 관점을 나타냅니다. Microsoft는 변화하는 시장 상황에 대응해야 하므로 Microsoft의 약속으로 해석되지 않아야 하며, Microsoft는 게시 날짜 이후 제시된 정보의 정확성을 보증하지 않습니다.
 
 이 백서는 정보를 제공할 목적으로만 사용됩니다. MICROSOFT는 이 문서에 포함된 정보와 관련하여 명시적이든 암시적이든 어떠한 보증도 하지 않습니다.
 
-사용자는 해당 저작권 법을 모두 준수해야 합니다. 저작권에서의 권리와는 별도로, 이 설명서의 어떠한 부분도 Microsoft의 명시적인 서면 승인 없이는 어떠한 형식이나 수단(전자적, 기계적, 복사기에 의한 복사, 디스크 복사 또는 다른 방법) 또는 목적으로도 복제되거나, 검색 시스템에 저장 또는 도입되거나, 전송될 수 없습니다.
+해당 저작권법을 준수하는 것은 사용자의 책임입니다. 저작권에서의 권리와는 별도로 이 설명서의 어떠한 부분도 Microsoft의 명시적인 서면 승인 없이는 어떠한 형식이나 수단(전기적, 기계적, 복사기에 의한 복사, 디스크 복사 또는 다른 방법) 또는 목적으로도 복제되거나 검색 시스템에 저장 또는 도입되거나 전송될 수 없습니다.
 
-Microsoft가 이 설명서 본안에 관련된 특허권, 상표권, 저작권 또는 기타 지적 재산권 등을 보유할 수도 있습니다. 서면 사용권 계약에 따라 Microsoft로부터 귀하에게 명시적으로 제공된 권리 이외에, 이 설명서의 제공은 귀하에게 이러한 특허권, 상표권, 저작권, 또는 기타 지적 재산권 등에 대한 어떠한 사용권도 허여하지 않습니다.
+Microsoft는 이 설명서 본안에 관련된 특허권, 상표권, 저작권, 또는 기타 지적 재산권 등을 보유할 수도 있습니다. 서면 사용권 계약에 따라 Microsoft로부터 귀하에게 명시적으로 제공된 권리 이외에, 이 설명서의 제공은 귀하에게 이러한 특허권, 상표권, 저작권 또는 기타 지적 재산권 등에 대한 어떠한 사용권도 허용하지 않습니다.
 
 별도로 언급 하지 않는 한, 용례에 사용 된 회사, 조직, 제품, 도메인 이름, 전자 메일 주소, 로고, 사람, 장소 및 이벤트는 실제 데이터가 아닙니다. 어떠한 실제 회사, 조직, 제품, 도메인 이름, 전자 메일에도 연결 되지 않습니다. 주소, 로고, 사람, 장소 또는 이벤트를 작성 하거나 유추 해야 합니다.
 
-© 2009 Microsoft Corporation. 모든 권리 보유.
+© 2009 Microsoft Corporation. All rights reserved.
 
 Microsoft 및 Windows는 미국 및/또는 기타 국가에서 Microsoft Corporation의 상표이거나 등록된 상표입니다.
 
-여기에 언급된 실제 회사와 제품의 이름은 각각 해당 소유자의 상표일 수 있습니다.
+여기에 인용된 실제 회사와 제품 이름은 해당 소유자의 상표일 수 있습니다.

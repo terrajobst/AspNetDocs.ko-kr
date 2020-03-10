@@ -9,16 +9,16 @@ ms.assetid: febf2824-4e3d-4dc6-84c5-f99777ec6144
 msc.legacyurl: /web-pages/videos
 msc.type: book
 ms.openlocfilehash: 4c22b024240740d971740e9f043231ccbcdc47fb
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65127682"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78512783"
 ---
-# <a name="videos"></a>비디오
+# <a name="videos"></a>동영상
 
 > [!NOTE] 
-> WebMatrix는 더 이상 권장 통합된 개발 환경으로 ASP.NET 웹 페이지에 대 한 합니다. 사용 하 여 [Visual Studio](xref:aspnet/web-pages/overview/getting-started/program-asp-net-web-pages-in-visual-studio) 하거나 [Visual Studio Code](https://code.visualstudio.com/)합니다.
+> WebMatrix는 ASP.NET 웹 페이지을 위한 통합 개발 환경으로 더 이상 권장 되지 않습니다. [Visual Studio](xref:aspnet/web-pages/overview/getting-started/program-asp-net-web-pages-in-visual-studio) 또는 [Visual Studio Code](https://code.visualstudio.com/)를 사용 합니다.
 
 - [소개](introduction/index.md)
 
@@ -32,7 +32,7 @@ ms.locfileid: "65127682"
     - [WebMatrix에서 데이터 편집 페이지 만들기](introduction/create-an-edit-data-page-in-webmatrix.md)
     - [WebMatrix에서 데이터 삭제 페이지 만들기](introduction/create-a-delete-data-page-in-webmatrix.md)
     - [WebMatrix를 사용하여 인터넷에 웹 사이트 게시](introduction/publish-a-website-to-the-internet-using-webmatrix.md)
-- [ASP.NET Razor 페이지](aspnet-razor-pages/index.md)
+- [ASP.NET Razor Pages](aspnet-razor-pages/index.md)
 
     - [WebMatrix 및 ASP.NET 웹 페이지 시작](aspnet-razor-pages/getting-started-with-webmatrix-and-aspnet-web-pages.md)
     - [ASP.NET 웹 프로그래밍 Razor 구문 소개](aspnet-razor-pages/introduction-to-aspnet-web-programming-using-the-razor-syntax.md)

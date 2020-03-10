@@ -10,11 +10,11 @@ ms.assetid: 220d3d75-16b2-4240-beae-a5b534f06419
 msc.legacyurl: /identity/overview/migrations/migrating-an-existing-website-from-sql-membership-to-aspnet-identity
 msc.type: authoredcontent
 ms.openlocfilehash: 633229cc4311d151121bf6a91b9fa8aeecca1197
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77456155"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78471635"
 ---
 # <a name="migrating-an-existing-website-from-sql-membership-to-aspnet-identity"></a>기존 웹 사이트를 SQL 멤버 자격에서 ASP.NET Identity로 마이그레이션
 

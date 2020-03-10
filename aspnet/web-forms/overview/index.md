@@ -9,11 +9,11 @@ ms.assetid: b3fb4480-0f41-495b-add6-163ca92dc8a3
 msc.legacyurl: /web-forms/overview
 msc.type: book
 ms.openlocfilehash: 4b38d6b54f53508f7b568207fe7f1a624a7af5f3
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402273"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78519383"
 ---
 # <a name="aspnet-web-forms-guidance"></a>ASP.NET Web Forms 지침
 
@@ -76,7 +76,7 @@ ms.locfileid: "59402273"
 
         - [Visual Studio 2010을 사용하여 엔터프라이즈 시나리오에서 웹 애플리케이션 배포](deployment/deploying-web-applications-in-enterprise-scenarios/deploying-web-applications-in-enterprise-scenarios.md)
         - [엔터프라이즈 웹 배포: 시나리오 개요](deployment/deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md)
-        - [응용 프로그램 수명 주기 관리: 개발부터 프로덕션까지](deployment/deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production.md)
+        - [애플리케이션 수명 주기 관리: 개발부터 프로덕션까지](deployment/deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production.md)
     - [ASP.NET 4 - 엔터프라이즈 배포 시리즈 1](deployment/web-deployment-in-the-enterprise/index.md)
 
         - [기업에서 웹 배포](deployment/web-deployment-in-the-enterprise/web-deployment-in-the-enterprise.md)
@@ -131,13 +131,13 @@ ms.locfileid: "59402273"
     - [ASP.NET 4 - Tailspin Spyworks](older-versions-getting-started/tailspin-spyworks/index.md)
 
         - [1부: 파일-> 새 프로젝트](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-1.md)
-        - [2부: 데이터 액세스 계층](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-2.md)
-        - [3 부: 레이아웃 및 범주 메뉴](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-3.md)
-        - [4 부: 제품 목록](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-4.md)
-        - [5 부: 비즈니스 논리](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-5.md)
-        - [6 부: ASP.NET 멤버 자격](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-6.md)
-        - [7 부: 추가 기능](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-7.md)
-        - [8 부: 최종 페이지, 예외 처리 및 결론](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-8.md)
+        - [2부: 데이터 액세스 레이어](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-2.md)
+        - [3부: 레이아웃 및 범주 메뉴](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-3.md)
+        - [4부: 제품 나열](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-4.md)
+        - [5부: 비즈니스 논리](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-5.md)
+        - [6부: ASP.NET 멤버 자격](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-6.md)
+        - [7부: 기능 추가](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-7.md)
+        - [8부: 최종 페이지, 예외 처리 및 결론](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-8.md)
     - [ASP.NET 4 - Entity Framework 4 및 Web Forms 시작](older-versions-getting-started/getting-started-with-ef/index.md)
 
         - [Entity Framework 4.0 Database First 시작](older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1.md)
@@ -150,9 +150,9 @@ ms.locfileid: "59402273"
         - [Entity Framework 4.0 Database First 시작 - 8부](older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-8.md)
     - [ASP.NET 4 - Entity Framework 4 및 Web Forms 계속](older-versions-getting-started/continuing-with-ef/index.md)
 
-        - [Entity Framework 4.0 및 ObjectDataSource 컨트롤, 1 부: 시작 하기](older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started.md)
-        - [Entity Framework 4.0 및 ObjectDataSource 컨트롤, 2 부: 비즈니스 논리 레이어 및 단위 테스트 추가](older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests.md)
-        - [Entity Framework 4.0 및 ObjectDataSource 컨트롤, 3 부: 정렬 및 필터링](older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering.md)
+        - [Entity Framework 4.0 및 ObjectDataSource 컨트롤, 1부: 시작](older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started.md)
+        - [Entity Framework 4.0 및 the ObjectDataSource 컨트롤, 2부: 비즈니스 논리 레이어 및 단위 테스트 추가](older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests.md)
+        - [Entity Framework 4.0 및 ObjectDataSource 컨트롤, 3부: 정렬 및 필터링](older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering.md)
         - [ASP.NET 4에서 Entity Framework 4.0으로 동시성 처리](older-versions-getting-started/continuing-with-ef/handling-concurrency-with-the-entity-framework-in-an-asp-net-web-application.md)
         - [ASP.NET 4에서 Entity Framework 4.0으로 성능 극대화](older-versions-getting-started/continuing-with-ef/maximizing-performance-with-the-entity-framework-in-an-asp-net-web-application.md)
         - [Entity Framework 4.0의 새로운 기능](older-versions-getting-started/continuing-with-ef/what-s-new-in-the-entity-framework-4.md)
@@ -356,7 +356,7 @@ ms.locfileid: "59402273"
 
         - [암호 강도 테스트(C#)](ajax-control-toolkit/passwordstrength/testing-the-strength-of-a-password-cs.md)
         - [암호 강도 테스트(VB)](ajax-control-toolkit/passwordstrength/testing-the-strength-of-a-password-vb.md)
-    - [Popup](ajax-control-toolkit/popup/index.md)
+    - [팝업](ajax-control-toolkit/popup/index.md)
 
         - [여러 팝업 컨트롤 사용(C#)](ajax-control-toolkit/popup/using-multiple-popup-controls-cs.md)
         - [UpdatePanel을 사용하여 팝업 컨트롤에서 포스트백 처리(C#)](ajax-control-toolkit/popup/handling-postbacks-from-a-popup-control-with-an-updatepanel-cs.md)

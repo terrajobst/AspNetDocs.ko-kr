@@ -9,11 +9,11 @@ ms.assetid: 89a1d2bc-fdfd-4c5c-a3b0-49a08baaf63a
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/asp-net-hosting-options-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 2eafa750167d89fa996a442633e79dce3d5b85bd
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74620770"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78517433"
 ---
 # <a name="aspnet-hosting-options-c"></a>ASP.NET 호스팅 옵션(C#)
 
@@ -42,7 +42,7 @@ ms.locfileid: "74620770"
 - 개발 중에 변경 된 사항을 사용 하 여 프로덕션 환경에서 데이터베이스를 원활 하 게 업데이트 하기 위한 전략입니다.
 - 프로덕션에서 발생 하는 오류를 기록 하는 기술 및 오류가 발생할 때 개발자에 게 알리는 방법
 
-이러한 자습서는 간결 하 게 만들어 프로세스를 시각적으로 안내 하는 다양 한 스크린 샷를 사용 하는 단계별 지침을 제공 합니다. 이 개최 자습서에서는 ASP.NET 배포 프로세스에 대 한 개요와 웹 호스팅 공급자를 찾는 방법에 대해 설명 합니다. 시작 하겠습니다.
+이러한 자습서는 간결 하 게 만들어 프로세스를 시각적으로 안내 하는 다양 한 스크린 샷를 사용 하는 단계별 지침을 제공 합니다. 이 개최 자습서에서는 ASP.NET 배포 프로세스에 대 한 개요와 웹 호스팅 공급자를 찾는 방법에 대해 설명 합니다. 이제 시작하겠습니다.
 
 ## <a name="an-overview-of-the-aspnet-deployment-process"></a>ASP.NET 배포 프로세스 개요
 

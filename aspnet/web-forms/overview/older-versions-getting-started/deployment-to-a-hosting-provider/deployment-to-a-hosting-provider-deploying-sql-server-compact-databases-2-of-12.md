@@ -9,11 +9,11 @@ ms.assetid: c3c76516-4c48-4153-bd03-d70e3a3edbb0
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12
 msc.type: authoredcontent
 ms.openlocfilehash: 56ceabc79947967846d342354fd033510be5f05a
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74625501"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78458255"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-deploying-sql-server-compact-databases---2-of-12"></a>Visual Studio 또는 Visual Web Developer를 사용 하 여 SQL Server Compact를 사용 하 여 ASP.NET 웹 응용 프로그램 배포: SQL Server Compact 데이터베이스 배포-2/12
 
@@ -73,11 +73,11 @@ NuGet 패키지 설치는 일반적으로 응용 프로그램과 함께이 소�
 
 **Bin** 폴더를 확장 하 여 **amd64** 및 **x86** 폴더를 표시 한 다음 해당 폴더를 선택 하 고 마우스 오른쪽 단추를 클릭 한 다음 **프로젝트에 포함**을 선택 합니다.
 
-![amd64_and_x86_in_Solution_Explorer .png](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image2.png)
+![amd64_and_x86_in_Solution_Explorer.png](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image2.png)
 
 폴더 아이콘이 프로젝트에 포함 되어 있음을 표시 하도록 변경 됩니다.
 
-![Solution_Explorer_amd64_included .png](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image3.png)
+![Solution_Explorer_amd64_included.png](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image3.png)
 
 ## <a name="configuring-code-first-migrations-for-application-database-deployment"></a>응용 프로그램 데이터베이스 배포를 위한 Code First 마이그레이션 구성
 
@@ -108,13 +108,13 @@ Code First 마이그레이션를 사용할 예정 이므로 더 이상 **Dropcre
 
 첫 번째 단계는 ContosoUniversity 프로젝트가 시작 프로젝트로 설정 되어 있는지 확인 하는 것입니다. **솔루션 탐색기**에서 ContosoUniversity 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **시작 프로젝트로 설정**을 선택 합니다. Code First 마이그레이션는 시작 프로젝트에서 데이터베이스 연결 문자열을 찾습니다.
 
-**도구** 메뉴에서 **NuGet 패키지 관리자** , **패키지 관리자 콘솔**을 차례로 클릭 합니다.
+**도구** 메뉴에서 **NuGet 패키지 관리자**, **패키지 관리자 콘솔**을 차례로 클릭합니다.
 
 ![Selecting_Package_Manager_Console](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image6.png)
 
 **패키지 관리자 콘솔** 창의 맨 위에 있는 ContosoUniversity를 기본 프로젝트로 선택 하 고 `PM>` 프롬프트에서 "마이그레이션 사용"을 입력 합니다.
 
-![사용-migrations_command](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image7.png)
+![enable-migrations_command](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image7.png)
 
 이 명령은 ContosoUniversity 프로젝트의 새 *마이그레이션* 폴더에 *Configuration.cs* 파일을 만듭니다.
 
@@ -153,17 +153,17 @@ CTRL + SHIFT + B를 눌러 프로젝트를 빌드합니다.
 
 **패키지 관리자 콘솔** 창에서 "추가 마이그레이션 초기" 명령을 입력 하 여 초기 마이그레이션을 만들고 이름을 "초기"로 이름을 입력 합니다.
 
-![추가-migration_command](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image11.png)
+![add-migration_command](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image11.png)
 
 Code First 마이그레이션는 *마이그레이션* 폴더에 다른 클래스 파일을 만들고,이 클래스에는 데이터베이스 스키마를 만드는 코드가 포함 되어 있습니다.
 
 **패키지 관리자 콘솔**에서 "업데이트-데이터베이스" 명령을 입력 하 여 데이터베이스를 만들고 **초기값** 메서드를 실행 합니다.
 
-![업데이트-database_command](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image12.png)
+![update-database_command](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image12.png)
 
 테이블이 이미 존재 하 고 만들 수 없음을 나타내는 오류가 발생 하는 경우 데이터베이스를 삭제 한 후 `update-database`를 실행 하기 전에 응용 프로그램을 실행 했기 때문일 수 있습니다. 이 경우 *School* 파일을 다시 삭제 하 고 `update-database` 명령을 다시 시도 하세요.)
 
-응용 프로그램을 실행합니다. 이제 학생 페이지가 비어 있지만 강사 페이지가 강사를 포함 합니다. 응용 프로그램을 배포한 후 프로덕션 환경에서이 작업을 수행할 수 있습니다.
+애플리케이션을 실행합니다. 이제 학생 페이지가 비어 있지만 강사 페이지가 강사를 포함 합니다. 응용 프로그램을 배포한 후 프로덕션 환경에서이 작업을 수행할 수 있습니다.
 
 ![Empty_Students_page](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image13.png)
 
@@ -206,7 +206,7 @@ Contoso 대학 응용 프로그램은 ASP.NET 멤버 자격 시스템 및 폼 �
 
 브라우저를 닫습니다. **솔루션 탐색기**에서 새로 고침 단추를 클릭 하 여 새 *aspnet .sdf* 파일을 확인 합니다.
 
-![New_aspnet sdf_in_Solution_Explorer](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image25.png)
+![New_aspnet.sdf_in_Solution_Explorer](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image25.png)
 
 **Aspnet .sdf** 를 마우스 오른쪽 단추로 클릭 하 고 **프로젝트에 포함**을 선택 합니다.
 
@@ -216,7 +216,7 @@ Contoso 대학 응용 프로그램은 ASP.NET 멤버 자격 시스템 및 폼 �
 
 **솔루션 탐색기**에서 **새로 고침** 을 클릭 하 고 App\_Data 폴더를 확장 하 여 이전에 만든 School 데이터베이스를 확인 합니다. 마우스 오른쪽 단추로 클릭 하 고 **프로젝트에 포함**을 선택 합니다.
 
-![Including_School sdf_in_project](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image26.png)
+![Including_School.sdf_in_project](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image26.png)
 
 *Aspnet-Prod를* *로 바꿉니다.*
 
@@ -234,7 +234,7 @@ Visual Studio에서 응용 프로그램을 실행할 때 *-Prod* 버전의 데�
 
 이제 SQL Server Compact 데이터베이스 엔진과 두 데이터베이스를 모두 배포할 준비가 되었습니다. 다음 자습서에서는 개발, 테스트 및 프로덕션 환경에서 달라 야 하는 설정에 대 한 자동 *web.config* 파일 변환을 설정 합니다. 변경 해야 하는 설정 중에는 연결 문자열이 있지만 나중에 게시 프로필을 만들 때 이러한 변경 내용을 설정 합니다.
 
-## <a name="more-information"></a>자세한 내용
+## <a name="more-information"></a>추가 정보
 
 NuGet에 대 한 자세한 내용은 nuget 및 Nuget을 [사용 하 여 프로젝트 라이브러리 관리](https://msdn.microsoft.com/magazine/hh547106.aspx) [설명서](http://docs.nuget.org/docs/start-here/overview)를 참조 하세요. NuGet을 사용 하지 않으려면 NuGet 패키지를 분석 하 여 설치 시 수행 되는 작업을 확인 하는 방법을 알아야 합니다. 예를 들어 *web.config* 변환을 구성 하 고 빌드 시에 실행 되도록 PowerShell 스크립트를 구성할 수 있습니다. NuGet의 작동 방식에 대 한 자세한 내용은 특히 [패키지 만들기 및 게시](http://docs.nuget.org/docs/creating-packages/creating-and-publishing-a-package) 및 [구성 파일 및 소스 코드 변환](http://docs.nuget.org/docs/creating-packages/configuration-file-and-source-code-transformations)을 참조 하세요.
 

@@ -2,22 +2,22 @@
 uid: web-forms/videos/net-4/index
 title: .NET 4 | Microsoft Docs
 author: rick-anderson
-description: 새 ASP.NET 기능에는.NET Framework 4에서 사용할 수 있습니다.
+description: .NET Framework 4에서 제공 되는 새로운 ASP.NET 기능
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: bac10aee-6731-4a0f-84d7-9eef5e560ae5
 msc.legacyurl: /web-forms/videos/net-4
 msc.type: chapter
 ms.openlocfilehash: 47d4c49762768351246402b48373374f99fd636f
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65128459"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78501083"
 ---
 # <a name="net-4"></a>.NET 4
 
-> 새 ASP.NET 기능에는.NET Framework 4에서 사용할 수 있습니다.
+> .NET Framework 4에서 제공 되는 새로운 ASP.NET 기능
 
 - [Ajax](ajax/index.md)
 
@@ -29,7 +29,7 @@ ms.locfileid: "65128459"
 
     - [Chart Control](chart/aspnet-4-quick-hit-chart-control.md)
     - [Visual Studio 2010의 새 차트 컨트롤 소개](chart/aspnet-4-how-do-i-introducing-the-new-chart-control-in-visual-studio-2010.md)
-- [코어](core/index.md)
+- [핵심 문서](core/index.md)
 
     - [자동 시작](core/aspnet-4-quick-hit-auto-start.md)
     - [Web.Config 파일 정리](core/aspnet-4-quick-hit-clean-webconfig-files.md)

@@ -2,22 +2,22 @@
 uid: web-forms/videos/aspnet-web-forms-vnext/index
 title: ASP.NET 4.5 | Microsoft Docs
 author: rick-anderson
-description: ASP.NET 4.5에서 도입 된 새로운 Web Forms 기능에 대 한
+description: ASP.NET 4.5에 도입 된 새로운 Web Forms 기능에 대해 알아봅니다.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 98c78dad-22bf-45cd-807e-c2f3f59011b9
 msc.legacyurl: /web-forms/videos/aspnet-web-forms-vnext
 msc.type: chapter
 ms.openlocfilehash: e791cba586f71ffae251b007b14588e4c1e818f1
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65116137"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78518837"
 ---
 # <a name="aspnet-45"></a>ASP.NET 4.5
 
-> ASP.NET 4.5에서 도입 된 새로운 Web Forms 기능에 대 한
+> ASP.NET 4.5에 도입 된 새로운 Web Forms 기능에 대해 알아봅니다.
 
 - [강력한 형식의 데이터 컨트롤](aspnet-vnext-videos-strongly-typed-data-controls.md)
 - [모델 바인딩 파트 1 - 데이터 선택](aspnet-vnext-videos-model-binding-part-1-selecting-data.md)

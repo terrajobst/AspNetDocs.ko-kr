@@ -1,23 +1,23 @@
 ---
 uid: web-pages/videos/aspnet-razor-pages/index
-title: ASP.NET Razor 페이지 | Microsoft Docs
+title: ASP.NET Razor Pages | Microsoft Docs
 author: rick-anderson
-description: 비디오를 Web Pages 및 WebMatrix에 자세히 확인할 수 있습니다.
+description: 웹 페이지 및 WebMatrix로 드릴 다운 하기 위해 볼 수 있는 비디오
 ms.author: riande
 ms.date: 05/18/2012
 ms.assetid: ffad842d-548c-40c6-84c5-10858133e972
 msc.legacyurl: /web-pages/videos/aspnet-razor-pages
 msc.type: chapter
 ms.openlocfilehash: c1889f0eab6d2df41ac6e19d433303198c4789f4
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65127791"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78514193"
 ---
-# <a name="aspnet-web-pages"></a>ASP.NET Web Pages
+# <a name="aspnet-web-pages"></a>ASP.NET 웹 페이지
 
-> 비디오를 Web Pages 및 WebMatrix에 자세히 확인할 수 있습니다.
+> 웹 페이지 및 WebMatrix로 드릴 다운 하기 위해 볼 수 있는 비디오
 
 - [WebMatrix 및 ASP.NET 웹 페이지 시작](getting-started-with-webmatrix-and-aspnet-web-pages.md)
 - [ASP.NET 웹 프로그래밍 Razor 구문 소개](introduction-to-aspnet-web-programming-using-the-razor-syntax.md)

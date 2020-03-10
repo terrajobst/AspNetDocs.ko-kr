@@ -1,23 +1,23 @@
 ---
 uid: mvc/overview/older-versions/getting-started-with-aspnet-mvc3/vb/index
-title: ASP.NET MVC 3 (VB.NET) 시작 | Microsoft Docs
+title: ASP.NET MVC 3 시작 (VB.NET) | Microsoft Docs
 author: rick-anderson
-description: Microsoft Visual Web Developer 2010 Express VB.NET를 사용 하 여 사용 하 여 ASP.NET MVC 웹 응용 프로그램 빌드의 기초입니다.
+description: VB.NET를 사용 하 여 Microsoft Visual Web Developer 2010 Express를 사용 하 여 ASP.NET MVC 웹 응용 프로그램을 빌드하는 기본 사항입니다.
 ms.author: riande
 ms.date: 04/12/2012
 ms.assetid: c2f134f3-fc6b-4603-823f-d1eabe55bba2
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc3/vb
 msc.type: chapter
 ms.openlocfilehash: 5a0d16a9fe1750d9d47d9bc8fcf37717fb587770
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65130007"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78485501"
 ---
 # <a name="getting-started-with-aspnet-mvc-3-vbnet"></a>ASP.NET MVC 3 시작(VB.NET)
 
-> Microsoft Visual Web Developer 2010 Express VB.NET를 사용 하 여 사용 하 여 ASP.NET MVC 웹 응용 프로그램 빌드의 기초입니다.
+> VB.NET를 사용 하 여 Microsoft Visual Web Developer 2010 Express를 사용 하 여 ASP.NET MVC 웹 응용 프로그램을 빌드하는 기본 사항입니다.
 
 - [ASP.NET MVC 3 소개(VB)](intro-to-aspnet-mvc-3.md)
 - [컨트롤러 추가(VB)](adding-a-controller.md)

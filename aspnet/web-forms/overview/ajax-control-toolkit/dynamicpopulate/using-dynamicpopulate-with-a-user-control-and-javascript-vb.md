@@ -9,11 +9,11 @@ ms.assetid: 778b9009-76f2-4665-940e-afc0e35bc917
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/dynamicpopulate/using-dynamicpopulate-with-a-user-control-and-javascript-vb
 msc.type: authoredcontent
 ms.openlocfilehash: ee5923ad6d8b101f689a0564aef8b1e0e00a7639
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74599135"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78497303"
 ---
 # <a name="using-dynamicpopulate-with-a-user-control-and-javascript-vb"></a>사용자 정의 컨트롤 및 JavaScript에 DynamicPopulate 사용(VB)
 
@@ -63,7 +63,7 @@ ASP.NET AJAX 컨트롤 도구 키트의 `DynamicPopulate` 컨트롤은 웹 서�
 
 [!code-aspx[Main](using-dynamicpopulate-with-a-user-control-and-javascript-vb/samples/sample8.aspx)]
 
-됐습니다! 페이지가 예상 대로 동작 합니다. 사용자가 라디오 단추 중 하나를 클릭 하면 도구 키트의 컨트롤이 웹 서비스를 호출 하 고 원하는 형식으로 현재 날짜를 표시 합니다.
+이것으로 끝입니다! 페이지가 예상 대로 동작 합니다. 사용자가 라디오 단추 중 하나를 클릭 하면 도구 키트의 컨트롤이 웹 서비스를 호출 하 고 원하는 형식으로 현재 날짜를 표시 합니다.
 
 [사용자 정의 컨트롤에 있는 라디오 단추 ![](using-dynamicpopulate-with-a-user-control-and-javascript-vb/_static/image2.png)](using-dynamicpopulate-with-a-user-control-and-javascript-vb/_static/image1.png)
 

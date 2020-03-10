@@ -9,11 +9,11 @@ ms.assetid: 829d2f56-5c48-445b-b826-3418a450c788
 msc.legacyurl: /web-forms/overview/older-versions-security/introduction/forms-authentication-configuration-and-advanced-topics-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 4d77816a489a4fa16cd70ec4214cd2f8ee563029
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74632167"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78518135"
 ---
 # <a name="forms-authentication-configuration-and-advanced-topics-vb"></a>폼 인증 구성 및 고급 항목(VB)
 
@@ -37,7 +37,7 @@ ASP.NET의 폼 인증 시스템은 응용 프로그램 별로 사용자 지정�
 
 표 1에는 &lt;forms&gt; 요소를 통해 사용자 지정할 수 있는 속성이 요약 되어 있습니다. Web.config는 XML 파일 이므로 왼쪽 열에 있는 특성 이름은 대/소문자를 구분 합니다.
 
-| <strong>특성</strong> |                                                                                                                                                                                                                                     <strong>설명</strong>                                                                                                                                                                                                                                      |
+| <strong>Attribute</strong> |                                                                                                                                                                                                                                     <strong>설명</strong>                                                                                                                                                                                                                                      |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         쿠키         |                                                                                                                이 특성은 인증 티켓이 쿠키에 저장 되 고 URL에 포함 되는 조건을 지정 합니다. 허용 되는 값은 다음과 같습니다. UseCookies; UseUri; 자동 검색 및 UseDeviceProfile (기본값). 2 단계에서는이 설정을 자세히 검토 합니다.                                                                                                                |
 |         defaultUrl         |                                                                                                                                                         Querystring에 지정 된 RedirectUrl 값이 없는 경우 로그인 페이지에서 로그인 한 후 사용자가 리디렉션되는 URL을 나타냅니다. 기본값은 default.aspx입니다.                                                                                                                                                         |
@@ -47,7 +47,7 @@ ASP.NET의 폼 인증 시스템은 응용 프로그램 별로 사용자 지정�
 |            name            |                                                                                                                                                                                                   쿠키 기반 인증 티켓을 사용 하는 경우 쿠키의 이름입니다. 기본값은입니다. .ASPXAUTH.                                                                                                                                                                                                   |
 |            경로            |                                                                             쿠키 기반 인증 티켓을 사용 하는 경우이 설정은 쿠키의 경로 특성을 지정 합니다. 개발자는 path 특성을 사용 하 여 쿠키 범위를 특정 디렉터리 계층으로 제한할 수 있습니다. 기본값은/입니다 .이 값은 브라우저에서 도메인에 대 한 모든 요청에 인증 티켓 쿠키를 보내도록 알려 줍니다.                                                                              |
 |         보호         |                                                                                                                                            폼 인증 티켓을 보호 하는 데 사용 되는 기술을 나타냅니다. 허용 되는 값은 모두 (기본값)입니다. 암호화 없음을 및 유효성 검사. 이러한 설정은 3 단계에서 자세히 설명 합니다.                                                                                                                                            |
-|         requireSSL         |                                                                                                                                                                                인증 쿠키를 전송 하는 데 SSL 연결이 필요한 지 여부를 나타내는 부울 값입니다. 기본값은 false입니다.                                                                                                                                                                                |
+|         requireSSL         |                                                                                                                                                                                인증 쿠키를 전송 하는 데 SSL 연결이 필요한 지 여부를 나타내는 부울 값입니다. 기본값은 False입니다.                                                                                                                                                                                |
 |     slidingExpiration      |                                                                                                 단일 세션 중에 사용자가 사이트를 방문할 때마다 인증 쿠키 s 시간 제한이 다시 설정 되는지 여부를 나타내는 부울 값입니다. 기본값은 true입니다. 인증 티켓 시간 제한 정책에 대 한 자세한 내용은 티켓 s 시간 제한 값 지정 섹션을 자세히 설명 합니다.                                                                                                 |
 |          시간 제한           |                                                                                                                               인증 티켓 쿠키가 만료 되는 시간 (분)을 지정 합니다. 기본값은 30입니다. 인증 티켓 시간 제한 정책에 대 한 자세한 내용은 티켓 s 시간 제한 값 지정 섹션을 자세히 설명 합니다.                                                                                                                               |
 
@@ -149,7 +149,7 @@ URL에 이러한 정보를 포함 하는 방법을 확인 하는 가장 좋은 �
 
 쿠키 없는 인증 티켓이 작동 하려면 시스템에서 인증 티켓 데이터를 포함 하도록 페이지의 모든 Url을 인코딩해야 합니다. 그렇지 않으면 사용자가 링크를 클릭할 때 인증 티켓이 손실 됩니다. 다행히이 포함 논리는 자동으로 수행 됩니다. 이 기능을 설명 하려면 default.aspx 페이지를 열고 Text 및 NavigateUrl 속성을 테스트 링크와 SomePage로 각각 설정 하 여 하이퍼링크 컨트롤을 추가 합니다. SomePage 라는 프로젝트의 페이지는 정말로 중요 하지 않습니다.
 
-Default.aspx에 변경 내용을 저장 한 다음 브라우저를 통해 방문 합니다. 폼 인증 티켓이 URL에 포함 되도록 사이트에 로그온 합니다. 그런 다음 default.aspx에서 링크 테스트 링크를 클릭 합니다. 경우 SomePage 라는 페이지가 없으면 404 오류가 발생 했지만 여기서 중요 한 것은 아닙니다. 대신 브라우저의 주소 표시줄에 집중 합니다. URL에 폼 인증 티켓이 포함 되어 있습니다.
+Default.aspx에 변경 내용을 저장 한 다음 브라우저를 통해 방문 합니다. 폼 인증 티켓이 URL에 포함 되도록 사이트에 로그온 합니다. 그런 다음 default.aspx에서 링크 테스트 링크를 클릭 합니다. 어떻게 된 건가요? SomePage 라는 페이지가 없으면 404 오류가 발생 했지만 여기서 중요 한 것은 아닙니다. 대신 브라우저의 주소 표시줄에 집중 합니다. URL에 폼 인증 티켓이 포함 되어 있습니다.
 
 `http://localhost:2448/ASPNET\_Security\_Tutorial\_03\_CS/(F(jaIOIDTJxIr12xYS-VVgkqKCVAuIoW30Bu0diWi6flQC-FyMaLXJfow\_Vd9GZkB2Cv-rfezq0gKadKX0YPZCkA2))/SomePage.aspx`
 
@@ -185,11 +185,11 @@ Default.aspx에 변경 내용을 저장 한 다음 브라우저를 통해 방문
 
 Forms 인증 시스템에서 인증 티켓을 암호화 하 고 유효성을 검사 하는 데 사용 하는 암호화 및 해시 알고리즘은 Web.config의 [&lt;machineKey&gt; 요소](https://msdn.microsoft.com/library/w8h3skw9.aspx) 를 통해 사용자 지정할 수 있습니다. 표 2에서는 &lt;machineKey&gt; 요소의 특성과 가능한 값을 간략하게 설명 합니다.
 
-| **특성** | **설명** |
+| **Attribute** | **설명** |
 | --- | --- |
 | 암호 해독 | 암호화에 사용 되는 알고리즘을 나타냅니다. 이 특성에는 다음 네 가지 값 중 하나를 사용할 수 있습니다.-Auto-기본값 decryptionKey 특성의 길이를 기준으로 알고리즘을 결정 합니다. -AES- [AES(Advanced Encryption Standard) (aes)](http://en.wikipedia.org/wiki/Advanced_Encryption_Standard) 알고리즘을 사용 합니다. -DES- [des (Data Encryption Standard)](http://en.wikipedia.org/wiki/Data_Encryption_Standard) 를 사용 합니다 .이 알고리즘은 계산 weak로 간주 되므로 사용해 서는 안 됩니다. -3DES-DES 알고리즘을 세 번 적용 하 여 작동 하는 [TRIPLE des](http://en.wikipedia.org/wiki/Triple_DES) 알고리즘을 사용 합니다. |
 | decryptionKey | 암호화 알고리즘에서 사용 하는 비밀 키입니다. 이 값은 암호 해독의 값에 따라 적절 한 길이의 16 진수 문자열 이거나, 자동 생성 이거나, IsolateApps에 추가 된 값 이어야 합니다. IsolateApps를 추가 하면 ASP.NET가 각 응용 프로그램에 고유한 값을 사용 하도록 지시 합니다. 기본값은 자동 생성, IsolateApps입니다. |
-| 유효성 검사 | 유효성 검사에 사용 되는 알고리즘을 나타냅니다. 이 특성에는 다음 네 가지 값 중 하나를 사용할 수 있습니다.-AES-AES(Advanced Encryption Standard) (AES) 알고리즘을 사용 합니다. -MD5- [md5 (메시지 다이제스트 5)](http://en.wikipedia.org/wiki/MD5) 알고리즘을 사용 합니다. -SHA1- [sha1](http://en.wikipedia.org/wiki/Sha1) 알고리즘 (기본값)을 사용 합니다. -3DES-Triple DES 알고리즘을 사용 합니다. |
+| validation | 유효성 검사에 사용 되는 알고리즘을 나타냅니다. 이 특성에는 다음 네 가지 값 중 하나를 사용할 수 있습니다.-AES-AES(Advanced Encryption Standard) (AES) 알고리즘을 사용 합니다. -MD5- [md5 (메시지 다이제스트 5)](http://en.wikipedia.org/wiki/MD5) 알고리즘을 사용 합니다. -SHA1- [sha1](http://en.wikipedia.org/wiki/Sha1) 알고리즘 (기본값)을 사용 합니다. -3DES-Triple DES 알고리즘을 사용 합니다. |
 | validationKey | 유효성 검사 알고리즘에서 사용 하는 비밀 키입니다. 이 값은 유효성 검사의 값에 따라 적절 한 길이의 16 진수 문자열 이거나, 자동 생성 이거나, IsolateApps에 추가 된 값 이어야 합니다. IsolateApps를 추가 하면 ASP.NET가 각 응용 프로그램에 고유한 값을 사용 하도록 지시 합니다. 기본값은 자동 생성, IsolateApps입니다. |
 
 **표 2**: &lt;MachineKey&gt; 요소 특성
@@ -244,15 +244,15 @@ Forms 인증 시스템에서 인증 티켓을 암호화 하 고 유효성을 검
 
 이러한 단계는 위의 코드에서 복제 됩니다. 첫째, 궁극적으로 UserData 속성에 저장 되는 문자열은 회사 이름과 제목을 결합 하 여 두 값을 파이프 문자 (|)로 구분 하 여 구성 됩니다.
 
-Dim userDataString As String = String.format (companyName (i), "|", titleAtCompany (i))
+Dim userDataString As String = String.Concat(companyName(i), "|", titleAtCompany(i))
 
 그런 다음 FormsAuthentication 메서드를 호출 합니다 .이 메서드는 인증 티켓을 만들고, 구성 설정에 따라 암호화 하 고 유효성을 검사 하 고, 되어 개체에 배치 합니다.
 
-Dim authCookie As 되어 = FormsAuthentication (사용자 이름. 텍스트, RememberMe. Checked)
+Dim authCookie As HttpCookie = FormsAuthentication.GetAuthCookie(UserName.Text, RememberMe.Checked)
 
 쿠키 내에 포함 된 FormAuthenticationTicket 작업을 수행 하려면 FormAuthentication 클래스의 [암호 해독 메서드](https://msdn.microsoft.com/library/system.web.security.formsauthentication.decrypt.aspx)를 호출 하 여 쿠키 값을 전달 해야 합니다.
 
-Dim ticket As 양식 Authenticationticket = FormsAuthentication (authCookie. Value)
+Dim ticket As FormsAuthenticationTicket = FormsAuthentication.Decrypt(authCookie.Value)
 
 그런 다음 기존 양식 Authenticationticket의 값을 기반으로 *새* 양식 authenticationticket 인스턴스를 만듭니다. 그러나이 새 티켓에는 사용자 관련 정보 (userDataString)가 포함 됩니다.
 
@@ -260,7 +260,7 @@ Dim newTicket As 양식 Authenticationticket = 새 양식 Authenticationticket (
 
 그런 다음 [encrypt 메서드](https://msdn.microsoft.com/library/system.web.security.formsauthentication.encrypt.aspx)를 호출 하 여 새 양식 authenticationticket 인스턴스를 암호화 하 고 유효성을 검사 하 고이 암호화 된 데이터와 유효성이 검사 된 데이터를 authcookie에 다시 넣습니다.
 
-authCookie. Value = FormsAuthentication (newTicket)
+authCookie.Value = FormsAuthentication.Encrypt(newTicket)
 
 마지막으로, authCookie는 Response 컬렉션에 추가 되 고 사용자를 보낼 적절 한 페이지를 결정 하기 위해 GetRedirectUrl 메서드가 호출 됩니다.
 
@@ -376,7 +376,7 @@ Default.aspx의 페이지\_Load 이벤트 처리기로 돌아갑니다. 4 단계
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -399,7 +399,7 @@ Default.aspx의 페이지\_Load 이벤트 처리기로 돌아갑니다. 4 단계
 - [인증 방법에 사용자 지정 데이터 추가](../../../videos/authentication/add-custom-data-to-the-authentication-method.md)
 - [사용자 지정 보안 주체 개체 사용](../../../videos/authentication/use-custom-principal-objects.md)
 
-### <a name="about-the-author"></a>작성자 정보
+### <a name="about-the-author"></a>저자 정보
 
 Scott Mitchell는 여러 ASP/ASP. NET books의 작성자와 4GuysFromRolla.com의 창립자가 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 *[24 시간 이내에 ASP.NET 2.0을 sams teach yourself](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)* 것입니다. Scott은 [mitchell@4guysfromrolla.com](mailto:mitchell@4guysfromrolla.com) 또는 [http://ScottOnWriting.NET](http://scottonwriting.net/)의 블로그를 통해 연결할 수 있습니다.
 

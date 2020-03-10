@@ -9,13 +9,13 @@ ms.assetid: f215d6b9-8a84-4bd8-8881-e9527d814950
 msc.legacyurl: /web-forms/videos
 msc.type: book
 ms.openlocfilehash: 0082330e75a905469c66b04277d70416555c30c3
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59397216"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78514403"
 ---
-# <a name="videos"></a>비디오
+# <a name="videos"></a>동영상
 
 - [작업 절차](how-do-i/index.md)
 
@@ -73,7 +73,7 @@ ms.locfileid: "59397216"
     - [ASP.NET 웹 페이지에서 브라우저 기능 검색](how-do-i/how-do-i-detect-browser-capabilities-in-aspnet-web-pages.md)
     - [ASP.NET 서버 컨트롤을 렌더링에 사용되는 어댑터에 매핑](how-do-i/how-do-i-map-an-aspnet-server-control-to-the-adaptor-used-to-render-it.md)
     - [쿼리 문자열을 사용하여 한 페이지에서 다른 페이지로 정보 전달](how-do-i/how-do-i-pass-information-from-one-page-to-another-using-a-query-string.md)
-    - [Aspnet를 사용 하 여\_merge.exe 유틸리티 어셈블리 병합](how-do-i/how-do-i-use-the-aspnet_mergeexe-utility-to-merge-assemblies.md)
+    - [Aspnet\_merge .exe 유틸리티를 사용 하 여 어셈블리를 병합 합니다.](how-do-i/how-do-i-use-the-aspnet_mergeexe-utility-to-merge-assemblies.md)
     - [ASP.NET에서 교차 페이지 포스트백 구현](how-do-i/how-do-i-implement-a-cross-page-postback-in-aspnet.md)
     - [프로그래밍 방식으로 ASP.NET 웹 페이지에 컨트롤 추가](how-do-i/how-do-i-add-controls-to-an-aspnet-web-page-programmatically.md)
     - [숨겨진 필드를 사용하여 클라이언트 쪽 정보 저장 및 조작](how-do-i/how-do-i-use-a-hidden-field-to-store-and-manipulate-client-side-information.md)
@@ -221,16 +221,16 @@ ms.locfileid: "59397216"
     - [[ASP.NET 2.0 소개:] ASP.NET 2.0 기본 사항](migrating/intro-to-aspnet-20-aspnet-20-fundamentals.md)
     - [[ASP.NET 2.0 소개:] 사용자 인터페이스 요소](migrating/intro-to-aspnet-20-user-interface-elements.md)
     - [[마이그레이션] 클래식 ASP에서 ASP.NET으로](migrating/migrating-from-classic-asp-to-aspnet.md)
-    - [JSP 개발자 용 ASP.NET 소개: ASP.NET 2.0 시작](migrating/intro-to-aspnet-for-jsp-developers-welcome-to-aspnet-20.md)
-    - [JSP 개발자 용 ASP.NET 소개: 응용 프로그램 빌드](migrating/intro-to-aspnet-for-jsp-developers-building-applications.md)
-    - [ColdFusion 개발자 용 ASP.NET 소개: ASP.NET 목록에 추가](migrating/intro-to-aspnet-for-coldfusion-developers-adding-aspnet-to-your-repertoire.md)
-    - [ColdFusion 개발자 용 ASP.NET 소개: ASP.NET 응용 프로그램 빌드](migrating/introduction-to-aspnet-for-coldfusion-developers-building-an-aspnet-application.md)
+    - [JSP 개발자용 ASP.NET 소개: ASP.NET 2.0 시작](migrating/intro-to-aspnet-for-jsp-developers-welcome-to-aspnet-20.md)
+    - [JSP 개발자용 ASP.NET 소개: 애플리케이션 빌드](migrating/intro-to-aspnet-for-jsp-developers-building-applications.md)
+    - [ColdFusion 개발자용 ASP.NET 소개: 목록에 ASP.NET 추가](migrating/intro-to-aspnet-for-coldfusion-developers-adding-aspnet-to-your-repertoire.md)
+    - [ColdFusion 개발자용 ASP.NET 소개: ASP.NET 애플리케이션 빌드](migrating/introduction-to-aspnet-for-coldfusion-developers-building-an-aspnet-application.md)
     - [PHP와 Windows 플랫폼 간 상호 운용](migrating/interop-between-php-and-the-windows-platform.md)
 - [2.0 애플리케이션 빌드](building-20-applications/index.md)
 
     - [[강좌 1:] Visual Web Developer Express 시작](building-20-applications/lesson-1-getting-started-with-visual-web-developer-express.md)
     - [[강좌 2:] Web Forms 사용자 인터페이스 만들기](building-20-applications/lesson-2-creating-a-web-forms-user-interface.md)
-    - [[단원 3:] 이벤트 및 포스트백에 자세히 이해](building-20-applications/lesson-3-understanding-more-about-events-and-postback.md)
+    - [[단원 3:] 이벤트 및 다시 게시에 대해 자세히 이해](building-20-applications/lesson-3-understanding-more-about-events-and-postback.md)
     - [[강좌 4:] 웹 애플리케이션 상태 이해](building-20-applications/lesson-4-understanding-web-application-state.md)
     - [[강좌 5:] 웹 사이트 디버깅 및 추적](building-20-applications/lesson-5-debugging-and-tracing-your-website.md)
     - [[강좌 6:] 스타일시트 및 마스터 페이지 작업](building-20-applications/lesson-6-working-with-stylesheets-and-master-pages.md)
@@ -257,7 +257,7 @@ ms.locfileid: "59397216"
     - [새로운 멀티 타기팅](visual-studio-2010/visual-studio-2010-quick-hit-new-multi-targeting.md)
     - [웹 프로젝트 대신 웹 사이트](visual-studio-2010/visual-studio-2010-quick-hit-websites-instead-of-web-projects.md)
     - [코드 조각 IntelliSense](visual-studio-2010/visual-studio-2010-quick-hit-snippets-intellisense.md)
-- [Ajax 컨트롤 도구 키트](ajax-control-toolkit/index.md)
+- [Ajax Control Toolkit](ajax-control-toolkit/index.md)
 
     - [ASP.NET AJAX 컨트롤 도구 키트 시작](ajax-control-toolkit/how-do-i-get-started-with-the-aspnet-ajax-control-toolkit.md)
     - [ASP.NET AJAX CascadingDropDown 컨트롤 Extender](ajax-control-toolkit/how-do-i-use-the-aspnet-ajax-cascadingdropdown-control-extender.md)
@@ -356,11 +356,11 @@ ms.locfileid: "59397216"
         - [LINQ to SQL: 개요](data-access/how-do-i-with-linq/how-do-i-linq-to-sql-overview.md)
         - [LINQ to SQL: 데이터 모델](data-access/how-do-i-with-linq/how-do-i-linq-to-sql-data-model.md)
         - [LINQ to SQL: 데이터베이스 쿼리](data-access/how-do-i-with-linq/how-do-i-linq-to-sql-querying-the-database.md)
-        - [LINQ to SQL: 데이터베이스를 업데이트 하는 중](data-access/how-do-i-with-linq/how-do-i-linq-to-sql-updating-the-database.md)
+        - [LINQ to SQL: 데이터베이스 업데이트](data-access/how-do-i-with-linq/how-do-i-linq-to-sql-updating-the-database.md)
         - [LINQ to SQL: LinqDataSource](data-access/how-do-i-with-linq/how-do-i-linq-to-sql-linqdatasource.md)
-        - [LINQ to SQL: Custom LinqDataSource](data-access/how-do-i-with-linq/how-do-i-linq-to-sql-custom-linqdatasource.md)
-        - [LINQ to SQL: 저장된 프로시저를 사용 하 여](data-access/how-do-i-with-linq/how-do-i-linq-to-sql-using-stored-procedures.md)
-        - [LINQ to SQL: 저장된 프로시저를 사용 하 여 업데이트](data-access/how-do-i-with-linq/how-do-i-linq-to-sql-updating-with-stored-procedures.md)
+        - [LINQ to SQL: 사용자 지정 LinqDataSource](data-access/how-do-i-with-linq/how-do-i-linq-to-sql-custom-linqdatasource.md)
+        - [LINQ to SQL: 저장 프로시저 사용](data-access/how-do-i-with-linq/how-do-i-linq-to-sql-using-stored-procedures.md)
+        - [LINQ to SQL: 저장 프로시저 업데이트](data-access/how-do-i-with-linq/how-do-i-linq-to-sql-updating-with-stored-procedures.md)
         - [LINQ to SQL: 임의의 SQL 실행](data-access/how-do-i-with-linq/how-do-i-linq-to-sql-executing-arbitrary-sql.md)
     - [VB 팀의 LINQ 비디오](data-access/linq-videos-from-the-vb-team/index.md)
 
@@ -392,7 +392,7 @@ ms.locfileid: "59397216"
     - [ASP.NET Dynamic Data 사용자 지정 양식 서식 지정](aspnet-dynamic-data/aspnet-dynamic-data-custom-form-formatting.md)
 - [ASP.NET 3.5](aspnet-35/index.md)
 
-    - [작업 절차](aspnet-35/how-do-i/index.md)
+    - [어떻게 할까요?](aspnet-35/how-do-i/index.md)
 
         - [Visual Studio 2008에서 마스터 페이지 만들기](aspnet-35/how-do-i/how-do-i-create-a-master-page-in-visual-studio-2008.md)
         - [Visual Studio 2008에서 중첩된 마스터 페이지 만들기](aspnet-35/how-do-i/how-do-i-create-nested-master-page-in-visual-studio-2008.md)
@@ -445,7 +445,7 @@ ms.locfileid: "59397216"
 
         - [Chart Control](net-4/chart/aspnet-4-quick-hit-chart-control.md)
         - [Visual Studio 2010의 새 차트 컨트롤 소개](net-4/chart/aspnet-4-how-do-i-introducing-the-new-chart-control-in-visual-studio-2010.md)
-    - [코어](net-4/core/index.md)
+    - [핵심 문서](net-4/core/index.md)
 
         - [자동 시작](net-4/core/aspnet-4-quick-hit-auto-start.md)
         - [Web.Config 파일 정리](net-4/core/aspnet-4-quick-hit-clean-webconfig-files.md)

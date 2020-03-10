@@ -9,11 +9,11 @@ ms.assetid: 2b0df3d9-450b-4ea6-b315-4c9650722cad
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-web-config-file-transformations-3-of-12
 msc.type: authoredcontent
 ms.openlocfilehash: 9e7902bcf8a16c154aee1a982824bfaedeea7d9d
-ms.sourcegitcommit: 7b1e1784213dd4c301635f9e181764f3e2f94162
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76309238"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78515507"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-webconfig-file-transformations---3-of-12"></a>Visual Studio 또는 Visual Web Developer를 사용 하 여 SQL Server Compact를 사용 하 여 ASP.NET 웹 응용 프로그램 배포: Web.config 파일 변환-3/12
 
@@ -139,7 +139,7 @@ Contoso 대학 웹 페이지는 응용 프로그램이 실행 되는 환경을 �
 
 이제 테스트 및 프로덕션에 Contoso 대학 응용 프로그램을 배포 하는 데 필요한 모든 *web.config* 변환을 지정 했습니다. 다음 자습서에서는 프로젝트 속성을 설정 해야 하는 배포 설정 작업을 처리 합니다.
 
-## <a name="more-information"></a>자세한 내용
+## <a name="more-information"></a>추가 정보
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 [ASP.NET 배포 콘텐츠 맵의](https://msdn.microsoft.com/library/bb386521.aspx)web.config 변환 시나리오를 참조 하세요.
 

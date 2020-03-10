@@ -9,11 +9,11 @@ ms.assetid: 2e31b60b-8723-4f14-b7ee-37859454dc3b
 msc.legacyurl: /web-forms/overview/data-access/enhancing-the-gridview/adding-a-gridview-column-of-radio-buttons-vb
 msc.type: authoredcontent
 ms.openlocfilehash: ee67a4556c65d2c9570bf15b42fc3c8e5f555bda
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74592803"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78477689"
 ---
 # <a name="adding-a-gridview-column-of-radio-buttons-vb"></a>라디오 단추의 GridView 열 추가(VB)
 
@@ -134,7 +134,7 @@ RadioButton s [`GroupName` 속성](https://msdn.microsoft.com/library/system.web
 
 [!code-html[Main](adding-a-gridview-column-of-radio-buttons-vb/samples/sample4.html)]
 
-`name` 및 `id` 특성이 속성 창에 지정 된 정확한 값이 아니라 다른 `ID` 값이 앞에 표시 되는 것을 확인할 수 있습니다. 렌더링 된 `id` 및 `name` 특성의 앞에 추가 `ID` 값이 추가 되는 `ID`의 라디오 단추는 부모 컨트롤 `GridViewRow` s, GridView s `ID`, 콘텐츠 컨트롤의 `ID`및 웹 폼을 `ID`합니다. GridView의 렌더링 된 각 웹 컨트롤에는 고유한 `id` 및 `name` 값이 있도록 이러한 `ID`가 추가 됩니다.
+`name` 및 `id` 특성이 속성 창에 지정 된 정확한 값이 아니라 다른 `ID` 값이 앞에 표시 되는 것을 확인할 수 있습니다. 렌더링 된 `id` 및 `name` 특성의 앞에 추가 `ID` 값이 추가 되는 `ID`의 라디오 단추는 부모 컨트롤 `GridViewRow` s, GridView s `ID`, 콘텐츠 컨트롤의 `ID`및 웹 폼을 `ID`합니다.`ID` GridView의 렌더링 된 각 웹 컨트롤에는 고유한 `id` 및 `name` 값이 있도록 이러한 `ID`가 추가 됩니다.
 
 렌더링 되는 각 컨트롤에는 다른 `name`와 `id` 필요 합니다 .이는 브라우저에서 클라이언트 쪽의 각 컨트롤을 고유 하 게 식별 하는 방법과 웹 서버에서 다시 게시할 때 발생 하는 작업 또는 변경 작업을 식별 하는 방법 이기 때문입니다. 예를 들어 RadioButton의 선택 상태가 변경 될 때마다 일부 서버 쪽 코드를 실행 하려고 한다고 가정 합니다. RadioButton s `AutoPostBack` 속성을 `True`로 설정 하 고 `CheckChanged` 이벤트에 대 한 이벤트 처리기를 만들어이를 수행할 수 있습니다. 그러나 모든 라디오 단추에 대해 렌더링 된 `name` 및 `id` 값이 동일 하면 다시 게시할 때 클릭 한 특정 RadioButton을 확인할 수 없습니다.
 
@@ -278,7 +278,7 @@ GridView에서 공급자를 선택 하지 않은 경우 `ChooseSupplierMsg` 레�
 
 행복 한 프로그래밍
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

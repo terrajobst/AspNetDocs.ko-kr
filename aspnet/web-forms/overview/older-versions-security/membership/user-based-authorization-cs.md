@@ -9,11 +9,11 @@ ms.assetid: 3c815a9e-2296-4b9b-b945-776d54989daa
 msc.legacyurl: /web-forms/overview/older-versions-security/membership/user-based-authorization-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 059dbf42956268884dcfdade696491ac39e32da9
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74614324"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78463589"
 ---
 # <a name="user-based-authorization-c"></a>사용자 기반 권한 부여(C#)
 
@@ -29,7 +29,7 @@ ms.locfileid: "74614324"
 
 ASP.NET를 사용 하면 사용자 기반 권한 부여 규칙을 쉽게 정의할 수 있습니다. `Web.config`의 특정 웹 페이지 또는 전체 디렉터리는 지정 된 사용자의 하위 집합에만 액세스할 수 있도록 잠글 수 있습니다. 페이지 수준 기능을 사용 하거나 사용 하지 않도록 설정 하거나 사용 하지 않도록 설정할 수 있습니다.
 
-이 자습서에서는 다양 한 기술을 통해 페이지에 대 한 액세스를 제한 하 고 페이지 수준 기능을 제한 하는 방법을 살펴보겠습니다. 시작 하겠습니다.
+이 자습서에서는 다양 한 기술을 통해 페이지에 대 한 액세스를 제한 하 고 페이지 수준 기능을 제한 하는 방법을 살펴보겠습니다. 이제 시작하겠습니다.
 
 ## <a name="a-look-at-the-url-authorization-workflow"></a>URL 권한 부여 워크플로 살펴보기
 
@@ -121,7 +121,7 @@ ASP.NET를 사용 하면 사이트의 서로 다른 파일 및 폴더에 대 한
 
 [!code-xml[Main](user-based-authorization-cs/samples/sample4.xml)]
 
-이것이 전부입니다!
+이제 모든 작업을 마쳤습니다.
 
 이 변경 내용을 테스트 하려면 브라우저에서 홈 페이지를 방문 하 여 로그 아웃 되었는지 확인 합니다. ASP.NET 응용 프로그램의 기본 동작은 모든 방문자를 허용 하는 것이 고, 루트 디렉터리의 `Web.config` 파일에 대 한 권한 부여 수정 작업을 수행 하지 않았기 때문에, 루트 디렉터리의 파일을 익명 방문자로 방문할 수 있습니다.
 
@@ -279,7 +279,7 @@ LoginView의 템플릿에 있는 웹 컨트롤은 더 이상 코드 지향 클�
 
 [!code-aspx[Main](user-based-authorization-cs/samples/sample18.aspx)]
 
- 받는 사람: 
+ 아래와 같이 변경합니다. 
 
 [!code-aspx[Main](user-based-authorization-cs/samples/sample19.aspx)]
 
@@ -353,7 +353,7 @@ URL 권한 부여 프레임 워크는 페이지 별로 권한 부여 규칙을 �
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -367,7 +367,7 @@ URL 권한 부여 프레임 워크는 페이지 별로 권한 부여 규칙을 �
 - [`UrlAuthorizationModule` 기술 문서](https://msdn.microsoft.com/library/system.web.security.urlauthorizationmodule.aspx)
 - [ASP.NET 2.0에서 데이터 작업](../../data-access/index.md)
 
-### <a name="about-the-author"></a>작성자 정보
+### <a name="about-the-author"></a>저자 정보
 
 Scott Mitchell는 여러 ASP/ASP. NET books의 작성자와 4GuysFromRolla.com의 창립자가 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 *[24 시간 이내에 ASP.NET 2.0을 sams teach yourself](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)* 것입니다. Scott은 [mitchell@4guysfromrolla.com](mailto:mitchell@4guysfromrolla.com) 또는 [http://ScottOnWriting.NET](http://scottonwriting.net/)의 블로그를 통해 연결할 수 있습니다.
 

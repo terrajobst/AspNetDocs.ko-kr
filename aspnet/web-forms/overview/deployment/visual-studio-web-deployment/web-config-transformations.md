@@ -9,11 +9,11 @@ ms.assetid: 5a2a927b-14cb-40bc-867a-f0680f9febd7
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/web-config-transformations
 msc.type: authoredcontent
 ms.openlocfilehash: a9d39547c94a63003442ba6fe1257693dde24b05
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74621784"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78513713"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-webconfig-file-transformations"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: web.config 파일 변환
 
@@ -47,7 +47,7 @@ ms.locfileid: "74621784"
 
 **솔루션 탐색기**에서 *web.config* 를 확장 하 여 두 기본 빌드 구성에 대해 기본적으로 생성 되는 *web.config 및 web.config 변환 파일을 표시* 합니다.
 
-![웹. config_transform_files](web-config-transformations/_static/image1.png)
+![Web.config_transform_files](web-config-transformations/_static/image1.png)
 
 Web.config 파일을 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 **구성 변환 추가** 를 선택 하 여 사용자 지정 빌드 구성에 대 한 변환 파일을 만들 수 있습니다. 이 자습서에서는 사용자 지정 빌드 구성을 만들지 않았기 때문에이 작업을 수행할 필요가 없으며 메뉴 옵션을 사용할 수 없습니다.
 
@@ -142,7 +142,7 @@ Contoso 대학 웹 페이지는 응용 프로그램이 실행 되는 환경을 �
 
 다음 자습서에서는 프로젝트 속성을 설정 해야 하는 배포 설정 작업을 처리 합니다.
 
-## <a name="more-information"></a>자세한 내용
+## <a name="more-information"></a>추가 정보
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 Visual Studio 및 ASP.NET 용 웹 배포 콘텐츠 맵에서 [배포 하는 동안 web.config 변환을 사용 하 여 대상 web.config 파일 또는 app.config 파일의 설정 변경을](https://go.microsoft.com/fwlink/p/?LinkId=282413#transforms) 참조 하세요.
 

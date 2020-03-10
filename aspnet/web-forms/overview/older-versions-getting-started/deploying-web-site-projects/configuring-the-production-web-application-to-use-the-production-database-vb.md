@@ -9,11 +9,11 @@ ms.assetid: a64a7aa0-6608-449e-83bf-1ef8cceee504
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/configuring-the-production-web-application-to-use-the-production-database-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 7fe4f545a76992ad687827af447d9a9e95bea73f
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74633637"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78516623"
 ---
 # <a name="configuring-the-production-web-application-to-use-the-production-database-vb"></a>프로덕션 데이터베이스를 사용하도록 프로덕션 웹 애플리케이션 구성(VB)
 
@@ -127,7 +127,7 @@ DatabaseConnectionStrings 파일의 복사본을 만들고 이름을 databaseCon
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 

@@ -10,11 +10,11 @@ ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/features-api/account-confirmation-and-password-recovery-with-aspnet-identity
 msc.type: authoredcontent
 ms.openlocfilehash: 4b2c88280df39aa81d60f9508910e8fe5d6db6b8
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519117"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78499985"
 ---
 # <a name="account-confirmation-and-password-recovery-with-aspnet-identity-c"></a>ASP.NET Identity (C#)를 사용 하 여 계정 확인 및 암호 복구
 
@@ -224,7 +224,7 @@ SendGrid 자격 증명을 입력 하 고, 앱을 실행 하 고, 전자 메일 �
  앱을 더 안전 하 게 만들기 위해 ASP.NET Identity 2 단계 인증 (2FA)을 지원 합니다. ASP.NET Identity 2.0: John Atten에서 [계정 유효성 검사 및 2 단계 권한 부여 설정](http://typecastexception.com/post/2014/04/20/ASPNET-Identity-20-Setting-Up-Account-Validation-and-Two-Factor-Authorization.aspx) 을 참조 하세요. 로그인 암호 시도 실패 시 계정 잠금을 설정할 수 있지만이 방법을 사용 하면 로그인이 [DOS](http://en.wikipedia.org/wiki/Denial-of-service_attack) 잠금에 취약 해질 수 있습니다. 2FA와만 계정 잠금을 사용 하는 것이 좋습니다.  
 <a id="addRes"></a>
 
-## <a name="additional-resources"></a>추가 자료
+## <a name="additional-resources"></a>추가 리소스
 
 - [ASP.NET ID에 대한 사용자 지정 스토리지 공급자 개요](../extensibility/overview-of-custom-storage-providers-for-aspnet-identity.md)
 - [Facebook, Twitter, LinkedIn 및 Google OAuth2 sign-on이 포함 된 MVC 5 앱](../../../mvc/overview/security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on.md) 은 사용자 테이블에 프로필 정보를 추가 하는 방법을 보여 줍니다.

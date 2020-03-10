@@ -9,11 +9,11 @@ ms.assetid: 48b58a18-5ea4-468c-b326-f35331b3e1e9
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/urls-in-master-pages-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 2551a5361256234883bb37e46e794037284445a4
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74640950"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78473453"
 ---
 # <a name="urls-in-master-pages-c"></a>마스터 페이지의 URL(C#)
 
@@ -58,7 +58,7 @@ ms.locfileid: "74640950"
 
 [!code-xml[Main](urls-in-master-pages-cs/samples/sample3.xml)]
 
-새로 만든 `Default.aspx` 페이지에는 `Site.master`에서 4 개의 ContentPlaceHolders 표시자에 해당 하는 4 개의 콘텐츠 컨트롤이 있어야 합니다. `MainContent` ContentPlaceHolder를 참조 하는 콘텐츠 컨트롤에 일부 텍스트를 추가한 다음 브라우저를 통해 페이지를 방문 합니다. 그림 2에서 볼 수 있듯이 브라우저는 `PoweredByASPNET.gif` 이미지 파일을 찾을 수 없습니다. 여기에 무슨 일이 일어나고 있나요?
+새로 만든 `Default.aspx` 페이지에는 `Site.master`에서 4 개의 ContentPlaceHolders 표시자에 해당 하는 4 개의 콘텐츠 컨트롤이 있어야 합니다. `MainContent` ContentPlaceHolder를 참조 하는 콘텐츠 컨트롤에 일부 텍스트를 추가한 다음 브라우저를 통해 페이지를 방문 합니다. 그림 2에서 볼 수 있듯이 브라우저는 `PoweredByASPNET.gif` 이미지 파일을 찾을 수 없습니다. 무슨 일이 일어나고 있는 건가요?
 
 `~/Admin/Default.aspx` 콘텐츠 페이지는 `About.aspx` 페이지와 같이 `footerContent` 영역에 대해 동일한 HTML로 전송 됩니다.
 
@@ -127,7 +127,7 @@ ASP.NET 서버 컨트롤만 URL 관련 속성에서 `~`를 변환 한다는 점�
 
 [!code-aspx[Main](urls-in-master-pages-cs/samples/sample8.aspx)]
 
-정말 간단하죠. 이 시점에서 마스터 페이지의 모든 Url은 마스터 페이지 및 콘텐츠 페이지가 있는 폴더에 관계 없이 콘텐츠 페이지에서 렌더링 될 때 적절 하 게 기반 합니다.
+이것으로 끝입니다. 이 시점에서 마스터 페이지의 모든 Url은 마스터 페이지 및 콘텐츠 페이지가 있는 폴더에 관계 없이 콘텐츠 페이지에서 렌더링 될 때 적절 하 게 기반 합니다.
 
 ### <a name="automatic-url-resolution-in-theheadsection"></a>`<head>`섹션의 자동 URL 확인
 
@@ -149,7 +149,7 @@ ASP.NET 서버 컨트롤만 URL 관련 속성에서 `~`를 변환 한다는 점�
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -157,7 +157,7 @@ ASP.NET 서버 컨트롤만 URL 관련 속성에서 `~`를 변환 한다는 점�
 - [마스터 페이지의 URL의 기준 주소](https://quickstarts.asp.net/QuickStartv20/aspnet/doc/masterpages/default.aspx#urls)
 - [태그에서 `ResolveClientUrl` 사용](https://www.pluralsight.com/blogs/fritz/archive/2006/02/06/18596.aspx)
 
-### <a name="about-the-author"></a>작성자 정보
+### <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)는 여러 ASP/ASP. NET books의 작성자와 4GuysFromRolla.com의 창립자가 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 3.5을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. Scott은 [mitchell@4GuysFromRolla.com](mailto:mitchell@4GuysFromRolla.com) 또는 [http://ScottOnWriting.NET](http://scottonwriting.net/)의 블로그를 통해 연결할 수 있습니다.
 
