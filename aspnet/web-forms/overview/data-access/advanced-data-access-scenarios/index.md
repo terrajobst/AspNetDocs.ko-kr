@@ -2,38 +2,38 @@
 uid: web-forms/overview/data-access/advanced-data-access-scenarios/index
 title: 고급 데이터 액세스 시나리오 | Microsoft Docs
 author: rick-anderson
-description: 이러한 자습서에는 저장된 프로시저 및 계산된 열을 사용 하는 방법, 데이터베이스 테이블 조인을 사용 하는 방법 및 데이터 연결 정보를 암호화 하는 방법을 포함 하는 중...
+description: 이러한 자습서에서는 저장 프로시저 및 계산 열을 사용 하는 방법, 데이터베이스 테이블에서 조인을 사용 하는 방법 및 데이터 연결 정보를 암호화 하는 방법을 다룹니다.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 00d198ed-fddc-4fd3-a86e-3f29c5f707cc
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios
 msc.type: chapter
 ms.openlocfilehash: 25041560b9e8ff0a8c944572dad344e655100b0d
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65108541"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78428201"
 ---
-# <a name="advanced-data-access-scenarios"></a><span data-ttu-id="e9041-103">고급 데이터 액세스 시나리오</span><span class="sxs-lookup"><span data-stu-id="e9041-103">Advanced Data Access Scenarios</span></span>
+# <a name="advanced-data-access-scenarios"></a><span data-ttu-id="4a312-103">고급 데이터 액세스 시나리오</span><span class="sxs-lookup"><span data-stu-id="4a312-103">Advanced Data Access Scenarios</span></span>
 
-> <span data-ttu-id="e9041-104">이 자습서에는 저장된 프로시저 및 계산된 열을 사용 하는 방법, 데이터베이스 테이블 조인을 사용 하는 방법 및 데이터 연결 정보를 암호화 하는 방법을 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="e9041-104">These tutorials cover how to work with stored procedures and computed columns, how to use joins with database tables, and how to encrypt data connection information.</span></span>
+> <span data-ttu-id="4a312-104">이러한 자습서에서는 저장 프로시저 및 계산 열을 사용 하는 방법, 데이터베이스 테이블에서 조인을 사용 하는 방법 및 데이터 연결 정보를 암호화 하는 방법을 다룹니다.</span><span class="sxs-lookup"><span data-stu-id="4a312-104">These tutorials cover how to work with stored procedures and computed columns, how to use joins with database tables, and how to encrypt data connection information.</span></span>
 
-- [<span data-ttu-id="e9041-105">형식화된 데이터 세트의 Tableadapter에 대한 새로운 저장 프로시저 만들기(C#)</span><span class="sxs-lookup"><span data-stu-id="e9041-105">Creating New Stored Procedures for the Typed DataSet's TableAdapters (C#)</span></span>](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-cs.md)
-- [<span data-ttu-id="e9041-106">형식화된 데이터 세트의 Tableadapter에 대한 기존 저장 프로시저 사용(C#)</span><span class="sxs-lookup"><span data-stu-id="e9041-106">Using Existing Stored Procedures for the Typed DataSet's TableAdapters (C#)</span></span>](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-cs.md)
-- [<span data-ttu-id="e9041-107">JOIN을 사용하도록 TableAdapter 업데이트(C#)</span><span class="sxs-lookup"><span data-stu-id="e9041-107">Updating the TableAdapter to Use JOINs (C#)</span></span>](updating-the-tableadapter-to-use-joins-cs.md)
-- [<span data-ttu-id="e9041-108">추가 DataTable 열 추가(C#)</span><span class="sxs-lookup"><span data-stu-id="e9041-108">Adding Additional DataTable Columns (C#)</span></span>](adding-additional-datatable-columns-cs.md)
-- [<span data-ttu-id="e9041-109">계산 열 작업(C#)</span><span class="sxs-lookup"><span data-stu-id="e9041-109">Working with Computed Columns (C#)</span></span>](working-with-computed-columns-cs.md)
-- [<span data-ttu-id="e9041-110">데이터 액세스 레이어의 연결 및 명령 수준 설정 구성(C#)</span><span class="sxs-lookup"><span data-stu-id="e9041-110">Configuring the Data Access Layer's Connection- and Command-Level Settings (C#)</span></span>](configuring-the-data-access-layer-s-connection-and-command-level-settings-cs.md)
-- [<span data-ttu-id="e9041-111">연결 문자열 및 기타 구성 정보 보호(C#)</span><span class="sxs-lookup"><span data-stu-id="e9041-111">Protecting Connection Strings and Other Configuration Information (C#)</span></span>](protecting-connection-strings-and-other-configuration-information-cs.md)
-- [<span data-ttu-id="e9041-112">저장 프로시저 디버깅(C#)</span><span class="sxs-lookup"><span data-stu-id="e9041-112">Debugging Stored Procedures (C#)</span></span>](debugging-stored-procedures-cs.md)
-- [<span data-ttu-id="e9041-113">관리 코드를 사용하여 저장 프로시저 및 사용자 정의 함수 만들기(C#)</span><span class="sxs-lookup"><span data-stu-id="e9041-113">Creating Stored Procedures and User-Defined Functions with Managed Code (C#)</span></span>](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs.md)
-- [<span data-ttu-id="e9041-114">형식화된 데이터 세트의 Tableadapter에 대한 새로운 저장 프로시저 만들기(VB)</span><span class="sxs-lookup"><span data-stu-id="e9041-114">Creating New Stored Procedures for the Typed DataSet's TableAdapters (VB)</span></span>](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb.md)
-- [<span data-ttu-id="e9041-115">형식화된 데이터 세트의 Tableadapter에 대한 기존 저장 프로시저 사용(VB)</span><span class="sxs-lookup"><span data-stu-id="e9041-115">Using Existing Stored Procedures for the Typed DataSet's TableAdapters (VB)</span></span>](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb.md)
-- [<span data-ttu-id="e9041-116">JOIN을 사용하도록 TableAdapter 업데이트(VB)</span><span class="sxs-lookup"><span data-stu-id="e9041-116">Updating the TableAdapter to Use JOINs (VB)</span></span>](updating-the-tableadapter-to-use-joins-vb.md)
-- [<span data-ttu-id="e9041-117">추가 DataTable 열 추가(VB)</span><span class="sxs-lookup"><span data-stu-id="e9041-117">Adding Additional DataTable Columns (VB)</span></span>](adding-additional-datatable-columns-vb.md)
-- [<span data-ttu-id="e9041-118">계산 열 작업(VB)</span><span class="sxs-lookup"><span data-stu-id="e9041-118">Working with Computed Columns (VB)</span></span>](working-with-computed-columns-vb.md)
-- [<span data-ttu-id="e9041-119">데이터 액세스 레이어의 연결 및 명령 수준 설정 구성(VB)</span><span class="sxs-lookup"><span data-stu-id="e9041-119">Configuring the Data Access Layer's Connection- and Command-Level Settings (VB)</span></span>](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb.md)
-- [<span data-ttu-id="e9041-120">연결 문자열 및 기타 구성 정보 보호(VB)</span><span class="sxs-lookup"><span data-stu-id="e9041-120">Protecting Connection Strings and Other Configuration Information (VB)</span></span>](protecting-connection-strings-and-other-configuration-information-vb.md)
-- [<span data-ttu-id="e9041-121">저장 프로시저 디버깅(VB)</span><span class="sxs-lookup"><span data-stu-id="e9041-121">Debugging Stored Procedures (VB)</span></span>](debugging-stored-procedures-vb.md)
-- [<span data-ttu-id="e9041-122">관리 코드를 사용하여 저장 프로시저 및 사용자 정의 함수 만들기(VB)</span><span class="sxs-lookup"><span data-stu-id="e9041-122">Creating Stored Procedures and User-Defined Functions with Managed Code (VB)</span></span>](creating-stored-procedures-and-user-defined-functions-with-managed-code-vb.md)
+- [<span data-ttu-id="4a312-105">형식화된 데이터 세트의 Tableadapter에 대한 새로운 저장 프로시저 만들기(C#)</span><span class="sxs-lookup"><span data-stu-id="4a312-105">Creating New Stored Procedures for the Typed DataSet's TableAdapters (C#)</span></span>](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-cs.md)
+- [<span data-ttu-id="4a312-106">형식화된 데이터 세트의 Tableadapter에 대한 기존 저장 프로시저 사용(C#)</span><span class="sxs-lookup"><span data-stu-id="4a312-106">Using Existing Stored Procedures for the Typed DataSet's TableAdapters (C#)</span></span>](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-cs.md)
+- [<span data-ttu-id="4a312-107">JOIN을 사용하도록 TableAdapter 업데이트(C#)</span><span class="sxs-lookup"><span data-stu-id="4a312-107">Updating the TableAdapter to Use JOINs (C#)</span></span>](updating-the-tableadapter-to-use-joins-cs.md)
+- [<span data-ttu-id="4a312-108">추가 DataTable 열 추가(C#)</span><span class="sxs-lookup"><span data-stu-id="4a312-108">Adding Additional DataTable Columns (C#)</span></span>](adding-additional-datatable-columns-cs.md)
+- [<span data-ttu-id="4a312-109">계산 열 작업(C#)</span><span class="sxs-lookup"><span data-stu-id="4a312-109">Working with Computed Columns (C#)</span></span>](working-with-computed-columns-cs.md)
+- [<span data-ttu-id="4a312-110">데이터 액세스 레이어의 연결 및 명령 수준 설정 구성(C#)</span><span class="sxs-lookup"><span data-stu-id="4a312-110">Configuring the Data Access Layer's Connection- and Command-Level Settings (C#)</span></span>](configuring-the-data-access-layer-s-connection-and-command-level-settings-cs.md)
+- [<span data-ttu-id="4a312-111">연결 문자열 및 기타 구성 정보 보호(C#)</span><span class="sxs-lookup"><span data-stu-id="4a312-111">Protecting Connection Strings and Other Configuration Information (C#)</span></span>](protecting-connection-strings-and-other-configuration-information-cs.md)
+- [<span data-ttu-id="4a312-112">저장 프로시저 디버깅(C#)</span><span class="sxs-lookup"><span data-stu-id="4a312-112">Debugging Stored Procedures (C#)</span></span>](debugging-stored-procedures-cs.md)
+- [<span data-ttu-id="4a312-113">관리 코드를 사용하여 저장 프로시저 및 사용자 정의 함수 만들기(C#)</span><span class="sxs-lookup"><span data-stu-id="4a312-113">Creating Stored Procedures and User-Defined Functions with Managed Code (C#)</span></span>](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs.md)
+- [<span data-ttu-id="4a312-114">형식화된 데이터 세트의 Tableadapter에 대한 새로운 저장 프로시저 만들기(VB)</span><span class="sxs-lookup"><span data-stu-id="4a312-114">Creating New Stored Procedures for the Typed DataSet's TableAdapters (VB)</span></span>](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb.md)
+- [<span data-ttu-id="4a312-115">형식화된 데이터 세트의 Tableadapter에 대한 기존 저장 프로시저 사용(VB)</span><span class="sxs-lookup"><span data-stu-id="4a312-115">Using Existing Stored Procedures for the Typed DataSet's TableAdapters (VB)</span></span>](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb.md)
+- [<span data-ttu-id="4a312-116">JOIN을 사용하도록 TableAdapter 업데이트(VB)</span><span class="sxs-lookup"><span data-stu-id="4a312-116">Updating the TableAdapter to Use JOINs (VB)</span></span>](updating-the-tableadapter-to-use-joins-vb.md)
+- [<span data-ttu-id="4a312-117">추가 DataTable 열 추가(VB)</span><span class="sxs-lookup"><span data-stu-id="4a312-117">Adding Additional DataTable Columns (VB)</span></span>](adding-additional-datatable-columns-vb.md)
+- [<span data-ttu-id="4a312-118">계산 열 작업(VB)</span><span class="sxs-lookup"><span data-stu-id="4a312-118">Working with Computed Columns (VB)</span></span>](working-with-computed-columns-vb.md)
+- [<span data-ttu-id="4a312-119">데이터 액세스 레이어의 연결 및 명령 수준 설정 구성(VB)</span><span class="sxs-lookup"><span data-stu-id="4a312-119">Configuring the Data Access Layer's Connection- and Command-Level Settings (VB)</span></span>](configuring-the-data-access-layer-s-connection-and-command-level-settings-vb.md)
+- [<span data-ttu-id="4a312-120">연결 문자열 및 기타 구성 정보 보호(VB)</span><span class="sxs-lookup"><span data-stu-id="4a312-120">Protecting Connection Strings and Other Configuration Information (VB)</span></span>](protecting-connection-strings-and-other-configuration-information-vb.md)
+- [<span data-ttu-id="4a312-121">저장 프로시저 디버깅(VB)</span><span class="sxs-lookup"><span data-stu-id="4a312-121">Debugging Stored Procedures (VB)</span></span>](debugging-stored-procedures-vb.md)
+- [<span data-ttu-id="4a312-122">관리 코드를 사용하여 저장 프로시저 및 사용자 정의 함수 만들기(VB)</span><span class="sxs-lookup"><span data-stu-id="4a312-122">Creating Stored Procedures and User-Defined Functions with Managed Code (VB)</span></span>](creating-stored-procedures-and-user-defined-functions-with-managed-code-vb.md)

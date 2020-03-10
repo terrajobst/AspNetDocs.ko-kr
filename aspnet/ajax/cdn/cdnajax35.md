@@ -9,15 +9,15 @@ ms.assetid: d5af74c6-3bdf-4d56-8dba-316e3dc0092f
 msc.legacyurl: /ajax/cdn/cdnajax35
 msc.type: content
 ms.openlocfilehash: 0ec7f95cd592bee4731a3eed15468cee329c38f4
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59406823"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78438431"
 ---
-# <a name="aspnet-ajax-35"></a><span data-ttu-id="4eb43-102">ASP.NET Ajax 3.5</span><span class="sxs-lookup"><span data-stu-id="4eb43-102">ASP.NET Ajax 3.5</span></span>
+# <a name="aspnet-ajax-35"></a><span data-ttu-id="37439-102">ASP.NET Ajax 3.5</span><span class="sxs-lookup"><span data-stu-id="37439-102">ASP.NET Ajax 3.5</span></span>
 
-<span data-ttu-id="4eb43-103">다음 파일은 CDN에서 호스트 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4eb43-103">The following files are hosted on the CDN:</span></span>
+<span data-ttu-id="37439-103">CDN에서 호스트 되는 파일은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="37439-103">The following files are hosted on the CDN:</span></span>
 
 - https://ajax.aspnetcdn.com/ajax/3.5/MicrosoftAjax.debug.js
 - https://ajax.aspnetcdn.com/ajax/3.5/MicrosoftAjax.js

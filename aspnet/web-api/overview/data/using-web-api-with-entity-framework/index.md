@@ -1,31 +1,31 @@
 ---
 uid: web-api/overview/data/using-web-api-with-entity-framework/index
-title: Entity Framework 6 사용 하 여 Web API 2 사용 하 여 | Microsoft Docs
+title: Entity Framework 6에서 Web API 2 사용 Microsoft Docs
 author: rick-anderson
-description: 지 속성 데이터베이스에 대 한 Entity Framework를 사용 하는 Web API 응용 프로그램을 만드는 방법입니다.
+description: 데이터베이스 지 속성을 위해 Entity Framework를 사용 하는 Web API 응용 프로그램을 만드는 방법입니다.
 ms.author: riande
 ms.date: 07/03/2012
 ms.assetid: 6c3c4f27-2fa3-49dc-bcaf-1ee3ef620f8e
 msc.legacyurl: /web-api/overview/data/using-web-api-with-entity-framework
 msc.type: chapter
 ms.openlocfilehash: a29a4450ededc8dce01711604ddc8eadc96c5ed8
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65126204"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78449201"
 ---
-# <a name="using-web-api-2-with-entity-framework-6"></a><span data-ttu-id="d7837-103">Entity Framework 6에 Web API 2 사용</span><span class="sxs-lookup"><span data-stu-id="d7837-103">Using Web API 2 with Entity Framework 6</span></span>
+# <a name="using-web-api-2-with-entity-framework-6"></a><span data-ttu-id="320cb-103">Entity Framework 6에 Web API 2 사용</span><span class="sxs-lookup"><span data-stu-id="320cb-103">Using Web API 2 with Entity Framework 6</span></span>
 
-> <span data-ttu-id="d7837-104">지 속성 데이터베이스에 대 한 Entity Framework를 사용 하는 Web API 응용 프로그램을 만드는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="d7837-104">How to create a Web API application that uses Entity Framework for database persistence.</span></span>
+> <span data-ttu-id="320cb-104">데이터베이스 지 속성을 위해 Entity Framework를 사용 하는 Web API 응용 프로그램을 만드는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="320cb-104">How to create a Web API application that uses Entity Framework for database persistence.</span></span>
 
-- [<span data-ttu-id="d7837-105">프로젝트 만들기</span><span class="sxs-lookup"><span data-stu-id="d7837-105">Create the Project</span></span>](part-1.md)
-- [<span data-ttu-id="d7837-106">모델 및 컨트롤러 추가</span><span class="sxs-lookup"><span data-stu-id="d7837-106">Add Models and Controllers</span></span>](part-2.md)
-- [<span data-ttu-id="d7837-107">데이터베이스 시드</span><span class="sxs-lookup"><span data-stu-id="d7837-107">Seed the Database</span></span>](part-3.md)
-- [<span data-ttu-id="d7837-108">엔터티 관계 처리</span><span class="sxs-lookup"><span data-stu-id="d7837-108">Handling Entity Relations</span></span>](part-4.md)
-- [<span data-ttu-id="d7837-109">DTO(데이터 전송 개체 만들기)</span><span class="sxs-lookup"><span data-stu-id="d7837-109">Create Data Transfer Objects (DTOs)</span></span>](part-5.md)
-- [<span data-ttu-id="d7837-110">JavaScript 클라이언트 만들기</span><span class="sxs-lookup"><span data-stu-id="d7837-110">Create the JavaScript Client</span></span>](part-6.md)
-- [<span data-ttu-id="d7837-111">보기(UI) 만들기</span><span class="sxs-lookup"><span data-stu-id="d7837-111">Create the View (UI)</span></span>](part-7.md)
-- [<span data-ttu-id="d7837-112">항목 세부 정보 표시</span><span class="sxs-lookup"><span data-stu-id="d7837-112">Display Item Details</span></span>](part-8.md)
-- [<span data-ttu-id="d7837-113">데이터베이스에 새 항목 추가</span><span class="sxs-lookup"><span data-stu-id="d7837-113">Add a New Item to the Database</span></span>](part-9.md)
-- [<span data-ttu-id="d7837-114">Azure 웹 사이트 앱 게시</span><span class="sxs-lookup"><span data-stu-id="d7837-114">Publish the App to Azure Websites</span></span>](part-10.md)
+- [<span data-ttu-id="320cb-105">프로젝트 만들기</span><span class="sxs-lookup"><span data-stu-id="320cb-105">Create the Project</span></span>](part-1.md)
+- [<span data-ttu-id="320cb-106">모델 및 컨트롤러 추가</span><span class="sxs-lookup"><span data-stu-id="320cb-106">Add Models and Controllers</span></span>](part-2.md)
+- [<span data-ttu-id="320cb-107">데이터베이스 시드</span><span class="sxs-lookup"><span data-stu-id="320cb-107">Seed the Database</span></span>](part-3.md)
+- [<span data-ttu-id="320cb-108">엔터티 관계 처리</span><span class="sxs-lookup"><span data-stu-id="320cb-108">Handling Entity Relations</span></span>](part-4.md)
+- [<span data-ttu-id="320cb-109">DTO(데이터 전송 개체 만들기)</span><span class="sxs-lookup"><span data-stu-id="320cb-109">Create Data Transfer Objects (DTOs)</span></span>](part-5.md)
+- [<span data-ttu-id="320cb-110">JavaScript 클라이언트 만들기</span><span class="sxs-lookup"><span data-stu-id="320cb-110">Create the JavaScript Client</span></span>](part-6.md)
+- [<span data-ttu-id="320cb-111">보기(UI) 만들기</span><span class="sxs-lookup"><span data-stu-id="320cb-111">Create the View (UI)</span></span>](part-7.md)
+- [<span data-ttu-id="320cb-112">항목 세부 정보 표시</span><span class="sxs-lookup"><span data-stu-id="320cb-112">Display Item Details</span></span>](part-8.md)
+- [<span data-ttu-id="320cb-113">데이터베이스에 새 항목 추가</span><span class="sxs-lookup"><span data-stu-id="320cb-113">Add a New Item to the Database</span></span>](part-9.md)
+- [<span data-ttu-id="320cb-114">Azure 웹 사이트 앱 게시</span><span class="sxs-lookup"><span data-stu-id="320cb-114">Publish the App to Azure Websites</span></span>](part-10.md)
