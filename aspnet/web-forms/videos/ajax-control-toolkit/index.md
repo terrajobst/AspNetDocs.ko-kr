@@ -1,61 +1,61 @@
 ---
 uid: web-forms/videos/ajax-control-toolkit/index
-title: Ajax Control Toolkit | Microsoft Docs
+title: Ajax 컨트롤 도구 키트 | Microsoft Docs
 author: rick-anderson
-description: 매우 빠르게 응답 Asp.net Ajax Control Toolkit를 사용 하 여 페이지를 만드는 방법입니다.
+description: Ajax 컨트롤 도구 키트를 사용 하 여 매우 응답성이 뛰어난 ASP.NET 웹 페이지를 만드는 방법
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 6f7b1c74-cc73-42f9-8ef0-8b3d058dabfa
 msc.legacyurl: /web-forms/videos/ajax-control-toolkit
 msc.type: chapter
 ms.openlocfilehash: c92d686cdb7883efbb5e5b2997e4a490f83607f0
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65131516"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78518939"
 ---
-# <a name="ajax-control-toolkit"></a><span data-ttu-id="f4b74-103">Ajax Control Toolkit</span><span class="sxs-lookup"><span data-stu-id="f4b74-103">Ajax Control Toolkit</span></span>
+# <a name="ajax-control-toolkit"></a><span data-ttu-id="01bcd-103">Ajax Control Toolkit</span><span class="sxs-lookup"><span data-stu-id="01bcd-103">Ajax Control Toolkit</span></span>
 
-> <span data-ttu-id="f4b74-104">매우 빠르게 응답 Asp.net Ajax Control Toolkit를 사용 하 여 페이지를 만드는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="f4b74-104">How to create very responsive ASP.NET Web pages using the Ajax Control Toolkit.</span></span>
+> <span data-ttu-id="01bcd-104">Ajax 컨트롤 도구 키트를 사용 하 여 매우 응답성이 뛰어난 ASP.NET 웹 페이지를 만드는 방법</span><span class="sxs-lookup"><span data-stu-id="01bcd-104">How to create very responsive ASP.NET Web pages using the Ajax Control Toolkit.</span></span>
 
-- [<span data-ttu-id="f4b74-105">ASP.NET AJAX 컨트롤 도구 키트 시작</span><span class="sxs-lookup"><span data-stu-id="f4b74-105">Get Started with the ASP.NET AJAX Control Toolkit</span></span>](how-do-i-get-started-with-the-aspnet-ajax-control-toolkit.md)
-- [<span data-ttu-id="f4b74-106">ASP.NET AJAX CascadingDropDown 컨트롤 Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-106">ASP.NET AJAX CascadingDropDown Control Extender</span></span>](how-do-i-use-the-aspnet-ajax-cascadingdropdown-control-extender.md)
-- [<span data-ttu-id="f4b74-107">ASP.NET AJAX TextBoxWatermark 컨트롤 Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-107">ASP.NET AJAX TextBoxWatermark Control Extender</span></span>](how-do-i-use-the-aspnet-ajax-textboxwatermark-control-extender.md)
-- [<span data-ttu-id="f4b74-108">ASP.NET AJAX Popup 컨트롤 Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-108">ASP.NET AJAX Popup Control Extender</span></span>](how-do-i-use-the-aspnet-ajax-popup-control-extender.md)
-- [<span data-ttu-id="f4b74-109">ASP.NET AJAX ModalPopup Extender 컨트롤</span><span class="sxs-lookup"><span data-stu-id="f4b74-109">ASP.NET AJAX ModalPopup Extender Control</span></span>](how-do-i-use-the-aspnet-ajax-modalpopup-extender-control.md)
-- [<span data-ttu-id="f4b74-110">ASP.NET AJAX AlwaysVisible 컨트롤 Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-110">ASP.NET AJAX AlwaysVisible Control Extender</span></span>](how-do-i-use-the-aspnet-ajax-alwaysvisible-control-extender.md)
-- [<span data-ttu-id="f4b74-111">ASP.NET AJAX Accordion 컨트롤</span><span class="sxs-lookup"><span data-stu-id="f4b74-111">ASP.NET AJAX Accordion Control</span></span>](how-do-i-use-the-aspnet-ajax-accordion-control.md)
-- [<span data-ttu-id="f4b74-112">ASP.NET AJAX Collapsable 패널 Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-112">ASP.NET AJAX Collapsable Panel Extender</span></span>](how-do-i-use-the-aspnet-ajax-collapsable-panel-extender.md)
-- [<span data-ttu-id="f4b74-113">ASP.NET AJAX Draggable 패널 Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-113">ASP.NET AJAX Draggable Panel Extender</span></span>](how-do-i-use-the-aspnet-ajax-draggable-panel-extender.md)
-- [<span data-ttu-id="f4b74-114">ASP.NET AJAX DynamicPopulate Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-114">ASP.NET AJAX DynamicPopulate Extender</span></span>](how-do-i-use-the-aspnet-ajax-dynamicpopulate-extender.md)
-- [<span data-ttu-id="f4b74-115">ASP.NET AJAX FilteredTextbox Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-115">ASP.NET AJAX FilteredTextbox Extender</span></span>](how-do-i-use-the-aspnet-ajax-filteredtextbox-extender.md)
-- [<span data-ttu-id="f4b74-116">ASP.NET AJAX HoverMenu Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-116">ASP.NET AJAX HoverMenu Extender</span></span>](how-do-i-use-the-aspnet-ajax-hovermenu-extender.md)
-- [<span data-ttu-id="f4b74-117">ASP.NET AJAX ToggleButton Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-117">ASP.NET AJAX ToggleButton Extender</span></span>](how-do-i-use-the-aspnet-ajax-togglebutton-extender.md)
-- [<span data-ttu-id="f4b74-118">ASP.NET AJAX DropShadow Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-118">ASP.NET AJAX DropShadow Extender</span></span>](how-do-i-use-the-aspnet-ajax-dropshadow-extender.md)
-- [<span data-ttu-id="f4b74-119">ASP.NET AJAX PasswordStrength Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-119">ASP.NET AJAX PasswordStrength Extender</span></span>](how-do-i-use-the-aspnet-ajax-passwordstrength-extender.md)
-- [<span data-ttu-id="f4b74-120">ASP.NET AJAX 애니메이션 Extender 컨트롤 시작</span><span class="sxs-lookup"><span data-stu-id="f4b74-120">Get Started with the ASP.NET AJAX Animation Extender Control</span></span>](how-do-i-get-started-with-the-aspnet-ajax-animation-extender-control.md)
-- [<span data-ttu-id="f4b74-121">ASP.NET AJAX ConfirmButton Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-121">ASP.NET AJAX ConfirmButton Extender</span></span>](how-do-i-use-the-aspnet-ajax-confirmbutton-extender.md)
-- [<span data-ttu-id="f4b74-122">ASP.NET AJAX 슬라이더 컨트롤</span><span class="sxs-lookup"><span data-stu-id="f4b74-122">ASP.NET AJAX Slider Control</span></span>](how-do-i-use-the-aspnet-ajax-slider-control.md)
-- [<span data-ttu-id="f4b74-123">ASP.NET AJAX AutoComplete 컨트롤</span><span class="sxs-lookup"><span data-stu-id="f4b74-123">ASP.NET AJAX AutoComplete Control</span></span>](how-do-i-use-the-aspnet-ajax-autocomplete-control.md)
-- [<span data-ttu-id="f4b74-124">ASP.NET AJAX 일정 컨트롤 구성</span><span class="sxs-lookup"><span data-stu-id="f4b74-124">Configure the ASP.NET AJAX Calendar Control</span></span>](how-do-i-configure-the-aspnet-ajax-calendar-control.md)
-- [<span data-ttu-id="f4b74-125">ASP.NET AJAX 드롭다운 컨트롤</span><span class="sxs-lookup"><span data-stu-id="f4b74-125">ASP.NET AJAX DropDown Control</span></span>](how-do-i-use-the-aspnet-ajax-dropdown-control.md)
-- [<span data-ttu-id="f4b74-126">ASP.NET AJAX MaskedEdit 컨트롤</span><span class="sxs-lookup"><span data-stu-id="f4b74-126">ASP.NET AJAX MaskedEdit Controls</span></span>](how-do-i-use-the-aspnet-ajax-maskededit-controls.md)
-- [<span data-ttu-id="f4b74-127">ASP.NET AJAX MutuallyExclusive 확인란 Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-127">ASP.NET AJAX MutuallyExclusive Checkbox Extender</span></span>](how-do-i-use-the-aspnet-ajax-mutuallyexclusive-checkbox-extender.md)
-- [<span data-ttu-id="f4b74-128">ASP.NET AJAX NoBot 컨트롤</span><span class="sxs-lookup"><span data-stu-id="f4b74-128">ASP.NET AJAX NoBot Control</span></span>](how-do-i-use-the-aspnet-ajax-nobot-control.md)
-- [<span data-ttu-id="f4b74-129">ASP.NET AJAX ListSearch Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-129">ASP.NET AJAX ListSearch Extender</span></span>](how-do-i-use-the-aspnet-ajax-listsearch-extender.md)
-- [<span data-ttu-id="f4b74-130">PagingBulletedList Extender 컨트롤</span><span class="sxs-lookup"><span data-stu-id="f4b74-130">PagingBulletedList Extender Control</span></span>](how-do-i-use-the-pagingbulletedlist-extender-control.md)
-- [<span data-ttu-id="f4b74-131">NumericUpDown Extender 컨트롤</span><span class="sxs-lookup"><span data-stu-id="f4b74-131">NumericUpDown Extender Control</span></span>](how-do-i-use-the-numericupdown-extender-control.md)
-- [<span data-ttu-id="f4b74-132">ASP.NET AJAX ValidatorCallout Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-132">ASP.NET AJAX ValidatorCallout Extender</span></span>](how-do-i-use-the-aspnet-ajax-validatorcallout-extender.md)
-- [<span data-ttu-id="f4b74-133">ASP.NET AJAX ResizableControl Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-133">ASP.NET AJAX ResizableControl Extender</span></span>](how-do-i-use-the-aspnet-ajax-resizablecontrol-extender.md)
-- [<span data-ttu-id="f4b74-134">ASP.NET AJAX 탭 컨트롤</span><span class="sxs-lookup"><span data-stu-id="f4b74-134">ASP.NET AJAX Tabs Control</span></span>](how-do-i-use-the-aspnet-ajax-tabs-control.md)
-- [<span data-ttu-id="f4b74-135">ASP.NET AJAX 슬라이드 쇼 Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-135">ASP.NET AJAX SlideShow Extender</span></span>](how-do-i-use-the-aspnet-ajax-slideshow-extender.md)
-- [<span data-ttu-id="f4b74-136">ASP.NET AJAX UpdatePanelAnimation Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-136">ASP.NET AJAX UpdatePanelAnimation Extender</span></span>](how-do-i-use-the-aspnet-ajax-updatepanelanimation-extender.md)
-- [<span data-ttu-id="f4b74-137">AJAX Toolkit 재정렬 컨트롤</span><span class="sxs-lookup"><span data-stu-id="f4b74-137">AJAX Toolkit Reorder Control</span></span>](how-do-i-the-ajax-toolkit-reorder-control.md)
-- [<span data-ttu-id="f4b74-138">ASP.NET 도구 키트에 AJAX 평가 컨트롤 사용</span><span class="sxs-lookup"><span data-stu-id="f4b74-138">Utilize the AJAX Rating Control in the ASP.NET Toolkit</span></span>](utilize-the-ajax-rating-control-in-the-aspnet-toolkit.md)
-- [<span data-ttu-id="f4b74-139">컨트롤 Extender</span><span class="sxs-lookup"><span data-stu-id="f4b74-139">Control Extenders</span></span>](control-extenders.md)
-- [<span data-ttu-id="f4b74-140">색 편집기</span><span class="sxs-lookup"><span data-stu-id="f4b74-140">Color Picker</span></span>](color-picker.md)
-- [<span data-ttu-id="f4b74-141">콤보 상자</span><span class="sxs-lookup"><span data-stu-id="f4b74-141">Combo Box</span></span>](combo-box.md)
-- [<span data-ttu-id="f4b74-142">편집기 컨트롤</span><span class="sxs-lookup"><span data-stu-id="f4b74-142">Editor Control</span></span>](editor-control.md)
-- [<span data-ttu-id="f4b74-143">편집기 컨트롤 사용자 지정</span><span class="sxs-lookup"><span data-stu-id="f4b74-143">Editor Control Custom</span></span>](editor-control-custom.md)
-- [<span data-ttu-id="f4b74-144">새로운 사용자 지정 Extender 만들기</span><span class="sxs-lookup"><span data-stu-id="f4b74-144">Create a New Custom Extender</span></span>](create-a-new-custom-extender.md)
+- [<span data-ttu-id="01bcd-105">ASP.NET AJAX 컨트롤 도구 키트 시작</span><span class="sxs-lookup"><span data-stu-id="01bcd-105">Get Started with the ASP.NET AJAX Control Toolkit</span></span>](how-do-i-get-started-with-the-aspnet-ajax-control-toolkit.md)
+- [<span data-ttu-id="01bcd-106">ASP.NET AJAX CascadingDropDown 컨트롤 Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-106">ASP.NET AJAX CascadingDropDown Control Extender</span></span>](how-do-i-use-the-aspnet-ajax-cascadingdropdown-control-extender.md)
+- [<span data-ttu-id="01bcd-107">ASP.NET AJAX TextBoxWatermark 컨트롤 Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-107">ASP.NET AJAX TextBoxWatermark Control Extender</span></span>](how-do-i-use-the-aspnet-ajax-textboxwatermark-control-extender.md)
+- [<span data-ttu-id="01bcd-108">ASP.NET AJAX Popup 컨트롤 Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-108">ASP.NET AJAX Popup Control Extender</span></span>](how-do-i-use-the-aspnet-ajax-popup-control-extender.md)
+- [<span data-ttu-id="01bcd-109">ASP.NET AJAX ModalPopup Extender 컨트롤</span><span class="sxs-lookup"><span data-stu-id="01bcd-109">ASP.NET AJAX ModalPopup Extender Control</span></span>](how-do-i-use-the-aspnet-ajax-modalpopup-extender-control.md)
+- [<span data-ttu-id="01bcd-110">ASP.NET AJAX AlwaysVisible 컨트롤 Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-110">ASP.NET AJAX AlwaysVisible Control Extender</span></span>](how-do-i-use-the-aspnet-ajax-alwaysvisible-control-extender.md)
+- [<span data-ttu-id="01bcd-111">ASP.NET AJAX Accordion 컨트롤</span><span class="sxs-lookup"><span data-stu-id="01bcd-111">ASP.NET AJAX Accordion Control</span></span>](how-do-i-use-the-aspnet-ajax-accordion-control.md)
+- [<span data-ttu-id="01bcd-112">ASP.NET AJAX Collapsable 패널 Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-112">ASP.NET AJAX Collapsable Panel Extender</span></span>](how-do-i-use-the-aspnet-ajax-collapsable-panel-extender.md)
+- [<span data-ttu-id="01bcd-113">ASP.NET AJAX Draggable 패널 Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-113">ASP.NET AJAX Draggable Panel Extender</span></span>](how-do-i-use-the-aspnet-ajax-draggable-panel-extender.md)
+- [<span data-ttu-id="01bcd-114">ASP.NET AJAX DynamicPopulate Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-114">ASP.NET AJAX DynamicPopulate Extender</span></span>](how-do-i-use-the-aspnet-ajax-dynamicpopulate-extender.md)
+- [<span data-ttu-id="01bcd-115">ASP.NET AJAX FilteredTextbox Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-115">ASP.NET AJAX FilteredTextbox Extender</span></span>](how-do-i-use-the-aspnet-ajax-filteredtextbox-extender.md)
+- [<span data-ttu-id="01bcd-116">ASP.NET AJAX HoverMenu Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-116">ASP.NET AJAX HoverMenu Extender</span></span>](how-do-i-use-the-aspnet-ajax-hovermenu-extender.md)
+- [<span data-ttu-id="01bcd-117">ASP.NET AJAX ToggleButton Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-117">ASP.NET AJAX ToggleButton Extender</span></span>](how-do-i-use-the-aspnet-ajax-togglebutton-extender.md)
+- [<span data-ttu-id="01bcd-118">ASP.NET AJAX DropShadow Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-118">ASP.NET AJAX DropShadow Extender</span></span>](how-do-i-use-the-aspnet-ajax-dropshadow-extender.md)
+- [<span data-ttu-id="01bcd-119">ASP.NET AJAX PasswordStrength Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-119">ASP.NET AJAX PasswordStrength Extender</span></span>](how-do-i-use-the-aspnet-ajax-passwordstrength-extender.md)
+- [<span data-ttu-id="01bcd-120">ASP.NET AJAX 애니메이션 Extender 컨트롤 시작</span><span class="sxs-lookup"><span data-stu-id="01bcd-120">Get Started with the ASP.NET AJAX Animation Extender Control</span></span>](how-do-i-get-started-with-the-aspnet-ajax-animation-extender-control.md)
+- [<span data-ttu-id="01bcd-121">ASP.NET AJAX ConfirmButton Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-121">ASP.NET AJAX ConfirmButton Extender</span></span>](how-do-i-use-the-aspnet-ajax-confirmbutton-extender.md)
+- [<span data-ttu-id="01bcd-122">ASP.NET AJAX 슬라이더 컨트롤</span><span class="sxs-lookup"><span data-stu-id="01bcd-122">ASP.NET AJAX Slider Control</span></span>](how-do-i-use-the-aspnet-ajax-slider-control.md)
+- [<span data-ttu-id="01bcd-123">ASP.NET AJAX AutoComplete 컨트롤</span><span class="sxs-lookup"><span data-stu-id="01bcd-123">ASP.NET AJAX AutoComplete Control</span></span>](how-do-i-use-the-aspnet-ajax-autocomplete-control.md)
+- [<span data-ttu-id="01bcd-124">ASP.NET AJAX 일정 컨트롤 구성</span><span class="sxs-lookup"><span data-stu-id="01bcd-124">Configure the ASP.NET AJAX Calendar Control</span></span>](how-do-i-configure-the-aspnet-ajax-calendar-control.md)
+- [<span data-ttu-id="01bcd-125">ASP.NET AJAX 드롭다운 컨트롤</span><span class="sxs-lookup"><span data-stu-id="01bcd-125">ASP.NET AJAX DropDown Control</span></span>](how-do-i-use-the-aspnet-ajax-dropdown-control.md)
+- [<span data-ttu-id="01bcd-126">ASP.NET AJAX MaskedEdit 컨트롤</span><span class="sxs-lookup"><span data-stu-id="01bcd-126">ASP.NET AJAX MaskedEdit Controls</span></span>](how-do-i-use-the-aspnet-ajax-maskededit-controls.md)
+- [<span data-ttu-id="01bcd-127">ASP.NET AJAX MutuallyExclusive 확인란 Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-127">ASP.NET AJAX MutuallyExclusive Checkbox Extender</span></span>](how-do-i-use-the-aspnet-ajax-mutuallyexclusive-checkbox-extender.md)
+- [<span data-ttu-id="01bcd-128">ASP.NET AJAX NoBot 컨트롤</span><span class="sxs-lookup"><span data-stu-id="01bcd-128">ASP.NET AJAX NoBot Control</span></span>](how-do-i-use-the-aspnet-ajax-nobot-control.md)
+- [<span data-ttu-id="01bcd-129">ASP.NET AJAX ListSearch Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-129">ASP.NET AJAX ListSearch Extender</span></span>](how-do-i-use-the-aspnet-ajax-listsearch-extender.md)
+- [<span data-ttu-id="01bcd-130">PagingBulletedList Extender 컨트롤</span><span class="sxs-lookup"><span data-stu-id="01bcd-130">PagingBulletedList Extender Control</span></span>](how-do-i-use-the-pagingbulletedlist-extender-control.md)
+- [<span data-ttu-id="01bcd-131">NumericUpDown Extender 컨트롤</span><span class="sxs-lookup"><span data-stu-id="01bcd-131">NumericUpDown Extender Control</span></span>](how-do-i-use-the-numericupdown-extender-control.md)
+- [<span data-ttu-id="01bcd-132">ASP.NET AJAX ValidatorCallout Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-132">ASP.NET AJAX ValidatorCallout Extender</span></span>](how-do-i-use-the-aspnet-ajax-validatorcallout-extender.md)
+- [<span data-ttu-id="01bcd-133">ASP.NET AJAX ResizableControl Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-133">ASP.NET AJAX ResizableControl Extender</span></span>](how-do-i-use-the-aspnet-ajax-resizablecontrol-extender.md)
+- [<span data-ttu-id="01bcd-134">ASP.NET AJAX 탭 컨트롤</span><span class="sxs-lookup"><span data-stu-id="01bcd-134">ASP.NET AJAX Tabs Control</span></span>](how-do-i-use-the-aspnet-ajax-tabs-control.md)
+- [<span data-ttu-id="01bcd-135">ASP.NET AJAX 슬라이드 쇼 Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-135">ASP.NET AJAX SlideShow Extender</span></span>](how-do-i-use-the-aspnet-ajax-slideshow-extender.md)
+- [<span data-ttu-id="01bcd-136">ASP.NET AJAX UpdatePanelAnimation Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-136">ASP.NET AJAX UpdatePanelAnimation Extender</span></span>](how-do-i-use-the-aspnet-ajax-updatepanelanimation-extender.md)
+- [<span data-ttu-id="01bcd-137">AJAX Toolkit 재정렬 컨트롤</span><span class="sxs-lookup"><span data-stu-id="01bcd-137">AJAX Toolkit Reorder Control</span></span>](how-do-i-the-ajax-toolkit-reorder-control.md)
+- [<span data-ttu-id="01bcd-138">ASP.NET 도구 키트에 AJAX 평가 컨트롤 사용</span><span class="sxs-lookup"><span data-stu-id="01bcd-138">Utilize the AJAX Rating Control in the ASP.NET Toolkit</span></span>](utilize-the-ajax-rating-control-in-the-aspnet-toolkit.md)
+- [<span data-ttu-id="01bcd-139">컨트롤 Extender</span><span class="sxs-lookup"><span data-stu-id="01bcd-139">Control Extenders</span></span>](control-extenders.md)
+- [<span data-ttu-id="01bcd-140">색 편집기</span><span class="sxs-lookup"><span data-stu-id="01bcd-140">Color Picker</span></span>](color-picker.md)
+- [<span data-ttu-id="01bcd-141">콤보 상자</span><span class="sxs-lookup"><span data-stu-id="01bcd-141">Combo Box</span></span>](combo-box.md)
+- [<span data-ttu-id="01bcd-142">편집기 컨트롤</span><span class="sxs-lookup"><span data-stu-id="01bcd-142">Editor Control</span></span>](editor-control.md)
+- [<span data-ttu-id="01bcd-143">편집기 컨트롤 사용자 지정</span><span class="sxs-lookup"><span data-stu-id="01bcd-143">Editor Control Custom</span></span>](editor-control-custom.md)
+- [<span data-ttu-id="01bcd-144">새로운 사용자 지정 Extender 만들기</span><span class="sxs-lookup"><span data-stu-id="01bcd-144">Create a New Custom Extender</span></span>](create-a-new-custom-extender.md)

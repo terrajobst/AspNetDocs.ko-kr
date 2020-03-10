@@ -9,15 +9,15 @@ ms.assetid: 89c96d26-6777-4e1d-839a-df67d2d5c1c2
 msc.legacyurl: /ajax/cdn/jquery-mobile/cdnjquerymobile141
 msc.type: content
 ms.openlocfilehash: 0c6697d87521f8c1fce8ac1bcf82df8241faff81
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59394109"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78453617"
 ---
-# <a name="jquery-mobile-141-on-the-microsoft-ajax-cdn"></a><span data-ttu-id="fc199-102">Microsoft Ajax CDN의 jQuery Mobile 1.4.1</span><span class="sxs-lookup"><span data-stu-id="fc199-102">jQuery Mobile 1.4.1 on the Microsoft Ajax CDN</span></span>
+# <a name="jquery-mobile-141-on-the-microsoft-ajax-cdn"></a><span data-ttu-id="3c103-102">Microsoft Ajax CDN의 jQuery Mobile 1.4.1</span><span class="sxs-lookup"><span data-stu-id="3c103-102">jQuery Mobile 1.4.1 on the Microsoft Ajax CDN</span></span>
 
-<span data-ttu-id="fc199-103">JQuery Mobile 1.4.1 라이브러리에는 다음 파일이 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="fc199-103">The jQuery Mobile 1.4.1 library includes the following files:</span></span>
+<span data-ttu-id="3c103-103">JQuery Mobile 1.4.1 라이브러리에는 다음 파일이 포함 되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="3c103-103">The jQuery Mobile 1.4.1 library includes the following files:</span></span>
 
 - https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.4.1/jquery.mobile.structure-1.4.1.css
 - https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.4.1/jquery.mobile.structure-1.4.1.min.css

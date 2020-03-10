@@ -1,29 +1,29 @@
 ---
 uid: web-forms/videos/ajax-control-toolkit/how-do-i-use-the-aspnet-ajax-accordion-control
-title: '[어떻게 할까요?] ASP.NET AJAX Accordion 컨트롤 사용 | Microsoft 문서'
+title: '[방법:] ASP.NET AJAX 아코디언 컨트롤을 사용 하나요? | Microsoft Docs'
 author: JoeStagner
-description: ASP.NET AJAX Accordion 컨트롤 다른 콘텐츠 p 전환 부드러운 애니메이션된을 사용 하 여 효율적으로 활용할 화면 부동산을 사용 하는 방법 알아보기...
+description: ASP.NET AJAX 아코디언 컨트롤이 서로 다른 콘텐츠 (...) 간에 부드러운 애니메이션 전환을 사용 하도록 설정 하 여 화면 부동산을 효율적으로 사용 하는 방법을 알아봅니다.
 ms.author: riande
 ms.date: 01/30/2007
 ms.assetid: 9e81b071-89a2-4674-aeec-ba49a0f23429
 msc.legacyurl: /web-forms/videos/ajax-control-toolkit/how-do-i-use-the-aspnet-ajax-accordion-control
 msc.type: video
 ms.openlocfilehash: e34430d17e22f73d1a4aaabdcf714e9ae9cc2752
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59386010"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78454709"
 ---
-# <a name="how-do-i-use-the-aspnet-ajax-accordion-control"></a><span data-ttu-id="38a7f-104">[어떻게 할까요?] ASP.NET AJAX Accordion 컨트롤 사용</span><span class="sxs-lookup"><span data-stu-id="38a7f-104">[How Do I:] Use the ASP.NET AJAX Accordion Control?</span></span>
+# <a name="how-do-i-use-the-aspnet-ajax-accordion-control"></a><span data-ttu-id="2d64a-104">[방법:] ASP.NET AJAX 아코디언 컨트롤을 사용 하나요?</span><span class="sxs-lookup"><span data-stu-id="2d64a-104">[How Do I:] Use the ASP.NET AJAX Accordion Control?</span></span>
 
-<span data-ttu-id="38a7f-105">[Joe Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="38a7f-105">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="2d64a-105">만든 사람 [Stagner](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="2d64a-105">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="38a7f-106">ASP.NET AJAX Accordion 컨트롤 다른 콘텐츠 창 전환 부드러운 애니메이션된을 사용 하 여 효율적으로 활용할 화면 부동산을 사용 하는 방법에 대해 알아봅니다.</span><span class="sxs-lookup"><span data-stu-id="38a7f-106">Learn how the ASP.NET AJAX Accordion control makes efficient use of screen real-estate by enabling the smooth animated transition between different content panes.</span></span>
+<span data-ttu-id="2d64a-106">서로 다른 콘텐츠 창 간에 부드러운 애니메이션 전환을 사용 하도록 설정 하 여 ASP.NET AJAX 아코디언 컨트롤에서 화면 부동산을 효율적으로 사용 하는 방법을 알아봅니다.</span><span class="sxs-lookup"><span data-stu-id="2d64a-106">Learn how the ASP.NET AJAX Accordion control makes efficient use of screen real-estate by enabling the smooth animated transition between different content panes.</span></span>
 
-[<span data-ttu-id="38a7f-107">&#9654;비디오 (9 분)</span><span class="sxs-lookup"><span data-stu-id="38a7f-107">&#9654; Watch video (9 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-the-aspnet-ajax-accordion-control)
+[<span data-ttu-id="2d64a-107">&#9654;비디오 보기 (9 분)</span><span class="sxs-lookup"><span data-stu-id="2d64a-107">&#9654; Watch video (9 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-the-aspnet-ajax-accordion-control)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="38a7f-108">[이전](how-do-i-use-the-aspnet-ajax-alwaysvisible-control-extender.md)
-> [다음](how-do-i-use-the-aspnet-ajax-collapsable-panel-extender.md)</span><span class="sxs-lookup"><span data-stu-id="38a7f-108">[Previous](how-do-i-use-the-aspnet-ajax-alwaysvisible-control-extender.md)
+> <span data-ttu-id="2d64a-108">[이전](how-do-i-use-the-aspnet-ajax-alwaysvisible-control-extender.md)
+> [다음](how-do-i-use-the-aspnet-ajax-collapsable-panel-extender.md)</span><span class="sxs-lookup"><span data-stu-id="2d64a-108">[Previous](how-do-i-use-the-aspnet-ajax-alwaysvisible-control-extender.md)
 [Next](how-do-i-use-the-aspnet-ajax-collapsable-panel-extender.md)</span></span>

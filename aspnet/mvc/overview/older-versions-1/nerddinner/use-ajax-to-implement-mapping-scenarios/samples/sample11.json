@@ -1,7 +1,7 @@
 [
     {
         "DinnerID": 53,
-        "Title": "<span data-ttu-id=\"0840a-101\">패밀리를 통한 저녁 식사</span><span class=\"sxs-lookup\"><span data-stu-id=\"0840a-101\">Dinner with the Family</span></span>",
+        "Title": "제품군의 저녁 식사",
         "Latitude": 47.64312,
         "Longitude": -122.130609,
         "Description": "Fun dinner",
@@ -9,7 +9,7 @@
     },
     {
         "DinnerID": 54,
-        "Title": "<span data-ttu-id=\"0840a-102\">다른 Dinner</span><span class=\"sxs-lookup\"><span data-stu-id=\"0840a-102\">Another Dinner</span></span>",
+        "Title": "다른 Dinner",
         "Latitude": 47.632546,
         "Longitude": -122.21201,
         "Description": "Dinner with Friends",
