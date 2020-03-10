@@ -9,11 +9,11 @@ ms.assetid: dddc8812-a0bc-49f9-aafb-caf2064c2b8c
 msc.legacyurl: /mvc/mvc3
 msc.type: content
 ms.openlocfilehash: 421a06c89d4dbcb05d4080033813cc6558b7c698
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74586745"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78499649"
 ---
 # <a name="aspnet-mvc-3"></a>ASP.NET MVC 3
 
@@ -132,11 +132,11 @@ ASP.NET MVC 3에는 다음과 같은 이점을 제공 하는 Razor 라는 새로
 
 Razor는 다음과 같은 새로운 HTML 도우미도 포함 합니다.
 
-- `Chart`. ASP.NET 4에서 차트 컨트롤과 동일한 기능을 제공 하 여 차트를 렌더링 합니다.
-- `WebGrid`. 페이징 및 정렬 기능을 사용 하 여 데이터 표를 렌더링 합니다.
-- `Crypto`. 는 해싱 알고리즘을 사용 하 여 적절 한 솔트된 및 해시 된 암호를 만듭니다.
-- `WebImage`. 이미지를 렌더링 합니다.
-- `WebMail`. 이메일 메시지를 보냅니다.
+- `Chart`입니다. ASP.NET 4에서 차트 컨트롤과 동일한 기능을 제공 하 여 차트를 렌더링 합니다.
+- `WebGrid`입니다. 페이징 및 정렬 기능을 사용 하 여 데이터 표를 렌더링 합니다.
+- `Crypto`입니다. 는 해싱 알고리즘을 사용 하 여 적절 한 솔트된 및 해시 된 암호를 만듭니다.
+- `WebImage`입니다. 이미지를 렌더링 합니다.
+- `WebMail`입니다. 메일 메시지를 전송합니다.
 
 Razor에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 

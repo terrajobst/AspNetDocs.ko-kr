@@ -1,23 +1,23 @@
 ---
 uid: mvc/overview/older-versions/hands-on-labs/index
-title: ASP.NET MVC 4 실습 | Microsoft Docs
+title: ASP.NET MVC 4 Labs 실습 | Microsoft Docs
 author: rick-anderson
-description: 이러한 실습에서 Labs를 사용 하 여 ASP.NET MVC를 사용 하 여 개발 하는 방법 알아보기
+description: 이러한 실습을 통해 ASP.NET MVC를 사용 하 여 개발 하는 방법을 알아봅니다.
 ms.author: riande
 ms.date: 02/18/2013
 ms.assetid: eb23eb99-bfca-4043-9b48-2cf7838dd754
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs
 msc.type: chapter
 ms.openlocfilehash: 02ef51cd3320df200920cba19a59d8ab23836c95
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57023150"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78451415"
 ---
-# <a name="aspnet-mvc-4-hands-on-labs"></a>ASP.NET MVC 4 실습
+# <a name="aspnet-mvc-4-hands-on-labs"></a>ASP.NET MVC 4 Labs 실습
 
-이러한 실습에서 Labs를 사용 하 여 ASP.NET MVC를 사용 하 여 개발 하는 방법 알아보기
+이러한 실습을 통해 ASP.NET MVC를 사용 하 여 개발 하는 방법을 알아봅니다.
 
 - [ASP.NET MVC 4의 새로운 기능](whats-new-in-aspnet-mvc-4.md)
 - [ASP.NET MVC 4 기본 사항](aspnet-mvc-4-fundamentals.md)

@@ -9,11 +9,11 @@ ms.assetid: 416438a1-3b2f-4d27-bf53-6b76223c33bf
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-production
 msc.type: authoredcontent
 ms.openlocfilehash: ddc3d15f0436c4c3a24491cf0377111768da67df
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74617637"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78513671"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-deploying-to-production"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 프로덕션 환경에 배포
 
@@ -33,7 +33,7 @@ ms.locfileid: "74617637"
 
 ## <a name="get-a-microsoft-azure-account"></a>Microsoft Azure 계정 가져오기
 
-아직 Azure 계정이 없는 경우 몇 분만에 무료 평가판 계정을 만들 수 있습니다. 자세한 내용은 [Azure 무료 평가판](https://azure.microsoft.com/free/?WT.mc_id=A443DD604)을 참조 하세요.
+아직 Azure 계정이 없는 경우 몇 분만에 무료 평가판 계정을 만들 수 있습니다. 자세한 내용은 [Azure 평가판](https://azure.microsoft.com/free/?WT.mc_id=A443DD604)을 참조하세요.
 
 ## <a name="create-a-staging-environment"></a>스테이징 환경 만들기
 
@@ -55,7 +55,7 @@ ms.locfileid: "74617637"
     **새 웹 사이트-사용자 지정 만들기** 마법사가 열립니다. **사용자 지정 만들기** 마법사를 사용 하면 웹 사이트와 데이터베이스를 동시에 만들 수 있습니다.
 3. 마법사의 **웹 사이트 만들기** 단계에서 **URL** 상자에 문자열을 입력 하 여 응용 프로그램의 스테이징 환경에 대 한 고유 url로 사용 합니다. 예를 들어 ContosoUniversity를 사용 하는 경우 ContosoUniversity-staging123 (끝에 난수 포함)를 입력 합니다.
 
-    전체 URL은 여기에 입력 한 이름과 텍스트 상자 옆에 표시 되는 접미사로 구성 됩니다.
+    전체 URL은 여기에 입력한 문자열과 텍스트 상자 옆에 표시되는 접미사로 구성됩니다.
 4. **지역** 드롭다운 목록에서 가장 가까운 지역을 선택 합니다.
 
     이 설정은 웹 앱이 실행 되는 데이터 센터를 지정 합니다.
@@ -67,12 +67,12 @@ ms.locfileid: "74617637"
 
     ![웹 사이트 단계 만들기](deploying-to-production/_static/image1.png)
 
-    마법사에서 **데이터베이스 설정 지정** 단계가 진행 됩니다.
+    마법사가 **Specify database settings** 단계로 진행합니다.
 8. **이름** 상자에 *ContosoUniversity* 를 입력 하 여 고유 하 게 만듭니다 (예: *ContosoUniversity123*).
 9. **서버** 상자에서 **새로 만들기 SQL Database 서버**를 선택 합니다.
 10. 관리자 이름 및 암호를 입력 합니다.
 
-    여기에 기존 이름과 암호를 입력 하지 않습니다. 나중에 데이터베이스에 액세스할 때 사용 하기 위해 정의 하는 새 이름과 암호를 입력 하 게 됩니다.
+    여기에 기존 이름과 암호를 입력 하지 않습니다. 나중에 데이터베이스에 액세스할 때 사용할 새 이름과 암호를 입력해야 합니다.
 11. **지역** 상자에서 웹 앱에 대해 선택한 것과 동일한 지역을 선택 합니다.
 
     웹 서버와 데이터베이스 서버를 동일한 지역에 유지 하면 최상의 성능을 제공 하 고 비용을 최소화할 수 있습니다.
@@ -110,14 +110,14 @@ ms.locfileid: "74617637"
     ![publishsettings 파일을 저장 하는 중](deploying-to-production/_static/image6.png)
 
     > [!WARNING]
-    > 보안- *publishsettings* 파일에는 Azure 구독 및 서비스를 관리 하는 데 사용 되는 자격 증명 (인코딩되지 않음)이 포함 되어 있습니다. 이 파일에 대 한 보안 모범 사례는 원본 디렉터리 외부 (예:: Libraries\documents 폴더)에 임시로 저장 한 다음 가져오기가 완료 되 면 삭제 하는 것입니다. *Publishsettings* 파일에 대 한 액세스 권한을 획득 하는 악의적인 사용자는 Azure 서비스를 편집, 생성 및 삭제할 수 있습니다.
+    > 보안- *publishsettings* 파일에는 Azure 구독 및 서비스를 관리 하는 데 사용 되는 자격 증명 (인코딩되지 않음)이 포함 되어 있습니다. 이 파일의 보안을 유지하는 가장 좋은 방법은 소스 디렉터리 밖(예: 라이브러리\문서 폴더)에 임시로 파일을 저장한 다음 일단 가져오기가 완료되면 삭제하는 것입니다. *Publishsettings* 파일에 대 한 액세스 권한을 획득 하는 악의적인 사용자는 Azure 서비스를 편집, 생성 및 삭제할 수 있습니다.
 
 ### <a name="create-a-publish-profile"></a>게시 프로필 만들기
 
 1. Visual Studio의 **솔루션 탐색기** 에서 ContosoUniversity 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 **게시** 를 선택 합니다.
 
     **웹 게시** 마법사가 열립니다.
-2. **프로필** 탭을 클릭 합니다.
+2. **프로필** 탭을 클릭합니다.
 3. **가져오기**를 클릭합니다.
 4. 이전에 다운로드 한 *publishsettings* 파일로 이동한 다음 **열기**를 클릭 합니다.
 
@@ -204,7 +204,7 @@ ms.locfileid: "74617637"
 2. **준비** 프로필을 선택 했는지 확인 합니다.
 3. **게시**를 클릭합니다.
 
-    **출력** 창에 수행 된 배포 작업이 표시 되 고 성공적인 배포 완료가 보고 됩니다. 기본 브라우저가 자동으로 열리고 배포 된 웹 앱의 URL이 열립니다.
+    **출력** 창에 수행된 배포 작업이 표시되고 성공적인 배포 완료가 보고됩니다. 기본 브라우저가 자동으로 열리고 배포 된 웹 앱의 URL이 열립니다.
 
 ## <a name="test-in-the-staging-environment"></a>스테이징 환경에서 테스트
 
@@ -224,7 +224,7 @@ ELMAH에서 추적 되는 오류를 발생 시키는 잘못 된 URL을 요청 �
 
 만든 응용 프로그램은 이제 프로덕션에 사용 하는 것과 동일한 웹 앱의 클라우드에서 실행 됩니다. 모든 것이 올바르게 작동 하므로 다음 단계는 프로덕션 환경에 배포 하는 것입니다.
 
-## <a name="deploy-to-production"></a>프로덕션 환경에 배포
+## <a name="deploy-to-production"></a>프로덕션에 배포
 
 프로덕션 웹 앱을 만들고 프로덕션에 배포 하는 프로세스는 스테이징의 경우와 동일 합니다. 단, 배포에서 *로봇이* 아닌를 제외 해야 한다는 점이 다릅니다. 이렇게 하려면 게시 프로필 파일을 편집 합니다.
 
@@ -265,7 +265,7 @@ ELMAH에서 추적 되는 오류를 발생 시키는 잘못 된 URL을 요청 �
 
     파일 및 폴더를 제외 하는 방법에 대 한 자세한 내용은 MSDN의 **Visual Studio 및 ASP.NET에 대 한 웹 배포 FAQ** 의 [배포에서 특정 파일 또는 폴더를 제외할 수 있나요?](https://msdn.microsoft.com/library/ee942158.aspx#can_i_exclude_specific_files_or_folders_from_deployment) 를 참조 하세요.
 
-### <a name="deploy-to-production"></a>프로덕션 환경에 배포
+### <a name="deploy-to-production"></a>프로덕션에 배포
 
 1. **웹 게시** 마법사를 열고 **프로덕션** 게시 프로필을 선택 했는지 확인 한 다음 **미리** 보기 탭에서 **미리 보기 시작** 을 클릭 하 여 *로봇이 .txt* 파일이 프로덕션 앱에 복사 되지 않는지 확인 합니다.
 
@@ -287,7 +287,7 @@ ELMAH에서 추적 되는 오류를 발생 시키는 잘못 된 URL을 요청 �
 다음 자습서에서는 응용 프로그램 코드를 업데이트 하 고 변경 내용을 테스트, 스테이징 및 프로덕션 환경에 배포 합니다.
 
 > [!NOTE]
-> 프로덕션 환경에서 응용 프로그램을 사용 하는 동안에는 복구 계획을 구현 해야 합니다. 즉, 프로덕션 앱에서 안전한 저장소 위치로 데이터베이스를 정기적으로 백업 해야 하며 이러한 백업에 대 한 여러 세대를 유지 해야 합니다. 데이터베이스를 업데이트 하는 경우 변경 직전에 백업 복사본을 만들어야 합니다. 그런 다음, 실수를 하 고 프로덕션 환경에 배포한 후에도이를 검색 하지 않으면 데이터베이스가 손상 되기 전의 상태로 복구 될 수 있습니다. 자세한 내용은 [Azure SQL Database 백업 및 복원](https://msdn.microsoft.com/library/windowsazure/jj650016.aspx)을 참조 하세요.
+> 프로덕션 환경에서 응용 프로그램을 사용 하는 동안에는 복구 계획을 구현 해야 합니다. 즉, 프로덕션 앱에서 안전한 저장소 위치로 데이터베이스를 정기적으로 백업 해야 하며 이러한 백업에 대 한 여러 세대를 유지 해야 합니다. 데이터베이스를 업데이트 하는 경우 변경 직전에 백업 복사본을 만들어야 합니다. 그런 다음, 실수를 하 고 프로덕션 환경에 배포한 후에도이를 검색 하지 않으면 데이터베이스가 손상 되기 전의 상태로 복구 될 수 있습니다. 자세한 내용은 [Azure SQL Database Backup 및 복원](https://msdn.microsoft.com/library/windowsazure/jj650016.aspx)을 참조하세요.
 > 
 > 
 > [!NOTE]

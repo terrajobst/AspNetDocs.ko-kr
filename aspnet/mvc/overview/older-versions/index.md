@@ -2,22 +2,22 @@
 uid: mvc/overview/older-versions/index
 title: 이전 버전-MVC 3 및 4 | Microsoft Docs
 author: rick-anderson
-description: 이전 버전의 ASP.NET MVC를 사용 하는 방법에 대 한 리소스에 연결 합니다.
+description: 이전 버전의 ASP.NET MVC를 사용 하는 방법을 학습할 수 있는 리소스에 대 한 링크입니다.
 ms.author: riande
 ms.date: 10/09/2014
 ms.assetid: 151cd274-3daa-4f88-ad3b-bffb99a9d545
 msc.legacyurl: /mvc/overview/older-versions
 msc.type: chapter
 ms.openlocfilehash: aa38ea8984f958939261d494f65bfa2108f87068
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65112449"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78451343"
 ---
 # <a name="older-versions---mvc-3-and-4"></a>이전 버전 - MVC 3 및 4
 
-> 이전 버전의 ASP.NET MVC를 사용 하는 방법에 대 한 리소스에 연결 합니다.
+> 이전 버전의 ASP.NET MVC를 사용 하는 방법을 학습할 수 있는 리소스에 대 한 링크입니다.
 
 - [ASP.NET MVC 4 시작](getting-started-with-aspnet-mvc4/index.md)
 
@@ -81,24 +81,24 @@ ms.locfileid: "65112449"
 - [Razor 및 Unobtrusive JavaScript를 사용하여 MVC 3 애플리케이션 만들기](creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript.md)
 - [MVC 3 Music Store](mvc-music-store/index.md)
 
-    - [1부: 개요 및 파일-> 새 프로젝트](mvc-music-store/mvc-music-store-part-1.md)
+    - [1부: 개요 및 파일->새 프로젝트](mvc-music-store/mvc-music-store-part-1.md)
     - [2부: 컨트롤러](mvc-music-store/mvc-music-store-part-2.md)
-    - [3 부: 보기 및 ViewModels](mvc-music-store/mvc-music-store-part-3.md)
-    - [4 부: 모델 및 데이터 액세스](mvc-music-store/mvc-music-store-part-4.md)
-    - [5 부: 폼 편집 및 템플릿](mvc-music-store/mvc-music-store-part-5.md)
-    - [6 부: 모델 유효성 검사에 대 한 데이터 주석 사용](mvc-music-store/mvc-music-store-part-6.md)
-    - [7 부: 멤버 자격 및 권한 부여](mvc-music-store/mvc-music-store-part-7.md)
-    - [8 부: Ajax 업데이트와 쇼핑 카트](mvc-music-store/mvc-music-store-part-8.md)
-    - [9 부: 등록 및 체크 아웃](mvc-music-store/mvc-music-store-part-9.md)
-    - [10 부: 탐색 및 사이트 설계, 결론에 대 한 마지막 업데이트](mvc-music-store/mvc-music-store-part-10.md)
+    - [3부: 보기 및 ViewModels](mvc-music-store/mvc-music-store-part-3.md)
+    - [4부: 모델 및 데이터 액세스](mvc-music-store/mvc-music-store-part-4.md)
+    - [5부: 폼 편집 및 템플릿 서식 지정](mvc-music-store/mvc-music-store-part-5.md)
+    - [6부: 모델 유효성 검사에 데이터 주석 사용](mvc-music-store/mvc-music-store-part-6.md)
+    - [7부: 멤버 자격 및 권한 부여](mvc-music-store/mvc-music-store-part-7.md)
+    - [8부: Ajax 업데이트와 쇼핑 카트](mvc-music-store/mvc-music-store-part-8.md)
+    - [9단계: 등록 및 체크 아웃](mvc-music-store/mvc-music-store-part-9.md)
+    - [10부: 탐색 및 사이트 설계 최종 업데이트, 결론](mvc-music-store/mvc-music-store-part-10.md)
 - [MVC 3 - HTML5 및 jQuery UI Datepicker 팝업 일정](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc/index.md)
 
     - [ASP.NET MVC를 사용하는 HTML5 및 jQuery UI Datepicker 팝업 일정 - 1부](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-1.md)
     - [ASP.NET MVC를 사용하는 HTML5 및 jQuery UI Datepicker 팝업 일정 - 2부](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-2.md)
-    - [HTML5 및 jQuery UI Datepicker 팝업 일정 사용 하 여 ASP.NET MVC-3 부](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-3.md)
+    - [ASP.NET MVC를 사용 하는 HTML5 및 jQuery UI Datepicker Popup 일정-3 부](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-3.md)
     - [ASP.NET MVC를 사용하는 HTML5 및 jQuery UI Datepicker 팝업 일정 - 4부](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-4.md)
 - [MVC 3 - DropDownList Box 및 jQuery 사용](working-with-the-dropdownlist-box-and-jquery/index.md)
 
     - [ASP.NET MVC와 함께 DropDownList 도우미 사용](working-with-the-dropdownlist-box-and-jquery/using-the-dropdownlist-helper-with-aspnet-mvc.md)
-    - [ASP.NET MVC DropDownList 도우미를 스 캐 폴딩 하는 방법 검사](working-with-the-dropdownlist-box-and-jquery/examining-how-aspnet-mvc-scaffolds-the-dropdownlist-helper.md)
+    - [ASP.NET MVC가 DropDownList 도우미를 스 캐 폴드 하는 방법 검사](working-with-the-dropdownlist-box-and-jquery/examining-how-aspnet-mvc-scaffolds-the-dropdownlist-helper.md)
     - [JQuery UI를 사용하여 DropDownList에 새 범주 추가](working-with-the-dropdownlist-box-and-jquery/adding-a-new-category-to-the-dropdownlist-using-jquery-ui.md)

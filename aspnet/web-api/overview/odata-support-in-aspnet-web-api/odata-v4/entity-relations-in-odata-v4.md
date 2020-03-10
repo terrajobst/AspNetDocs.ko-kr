@@ -1,163 +1,163 @@
 ---
 uid: web-api/overview/odata-support-in-aspnet-web-api/odata-v4/entity-relations-in-odata-v4
-title: ASP.NET Web API 2.2 사용 하 여 OData v4의 엔터티 관계 | Microsoft Docs
+title: ASP.NET Web API 2.2를 사용 하는 OData v4의 엔터티 관계 Microsoft Docs
 author: MikeWasson
-description: 대부분의 데이터 집합 엔터티 간의 관계를 정의합니다. 고객은 주문; 온라인 설명서가 작성자; 제품 공급 업체에 있습니다. OData를 사용 하 여 클라이언트를 탐색할 수 있습니다...
+description: 대부분의 데이터 집합은 엔터티 간의 관계를 정의 합니다. 고객에 게는 주문이 있습니다. 서적에는 작성자가 있습니다. 제품에는 공급자가 있습니다. 클라이언트는 OData를 사용 하 여 탐색할 수 있습니다 ...
 ms.author: riande
 ms.date: 06/26/2014
 ms.assetid: 72657550-ec09-4779-9bfc-2fb15ecd51c7
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v4/entity-relations-in-odata-v4
 msc.type: authoredcontent
 ms.openlocfilehash: fbafb2b2346689271905db5790cdddeeb809b070
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59418809"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78484463"
 ---
-# <a name="entity-relations-in-odata-v4-using-aspnet-web-api-22"></a>ASP.NET Web API 2.2 사용 하 여 OData v4의 엔터티 관계
+# <a name="entity-relations-in-odata-v4-using-aspnet-web-api-22"></a>ASP.NET Web API 2.2를 사용 하는 OData v4의 엔터티 관계
 
 [Mike Wasson](https://github.com/MikeWasson)
 
-> 대부분의 데이터 집합 엔터티 간의 관계를 정의합니다. 고객은 주문; 온라인 설명서가 작성자; 제품 공급 업체에 있습니다. OData를 클라이언트 엔터티 관계 탐색할 수 있습니다. 제품에 지정 된 공급자를 찾을 수 있습니다. 만들기 또는 관계를 제거할 수도 있습니다. 예를 들어, 제품 공급 업체를 설정할 수 있습니다.
+> 대부분의 데이터 집합은 엔터티 간의 관계를 정의 합니다. 고객에 게는 주문이 있습니다. 서적에는 작성자가 있습니다. 제품에는 공급자가 있습니다. 클라이언트는 OData를 사용 하 여 엔터티 관계를 탐색할 수 있습니다. 제품을 제공 하는 경우 공급자를 찾을 수 있습니다. 관계를 만들거나 제거할 수도 있습니다. 예를 들어 제품의 공급 업체를 설정할 수 있습니다.
 >
-> 이 자습서에는 ASP.NET Web API를 사용 하 여 OData v4의 이러한 작업을 지 원하는 방법을 보여 줍니다. 자습서를 기반으로 한 자습서 [OData v4 끝점 사용 하 여 ASP.NET 웹 API 2 만들](create-an-odata-v4-endpoint.md)합니다.
+> 이 자습서에서는 ASP.NET Web API를 사용 하 여 OData v4에서 이러한 작업을 지 원하는 방법을 보여 줍니다. 자습서에서는 [ASP.NET Web API 2를 사용 하 여 OData V4 끝점 만들기](create-an-odata-v4-endpoint.md)자습서를 빌드합니다.
 >
-> ## <a name="software-versions-used-in-the-tutorial"></a>이 자습서에 사용 되는 소프트웨어 버전
+> ## <a name="software-versions-used-in-the-tutorial"></a>자습서에서 사용 되는 소프트웨어 버전
 >
-> - Web API 2.1
+> - 웹 API 2.1
 > - OData v4
-> - Visual Studio 2013 (Visual Studio 2017 다운로드 [여기](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017))
+> - Visual Studio 2013 (Visual [Studio 2017 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017))
 > - Entity Framework 6
 > - .NET 4.5
 >
 > ## <a name="tutorial-versions"></a>자습서 버전
 >
-> OData 버전 3에 대 한 참조 [OData v3의 엔터티 관계를 지 원하는](https://asp.net/web-api/overview/odata-support-in-aspnet-web-api/odata-v3/working-with-entity-relations)합니다.
+> OData 버전 3의 경우 [odata v3에서 엔터티 관계 지원](https://asp.net/web-api/overview/odata-support-in-aspnet-web-api/odata-v3/working-with-entity-relations)을 참조 하세요.
 
-## <a name="add-a-supplier-entity"></a>Supplier 엔터티를 추가 합니다.
+## <a name="add-a-supplier-entity"></a>공급자 엔터티 추가
 
 > [!NOTE]
-> 자습서를 기반으로 한 자습서 [OData v4 끝점 사용 하 여 ASP.NET 웹 API 2 만들](create-an-odata-v4-endpoint.md)합니다.
+> 자습서에서는 [ASP.NET Web API 2를 사용 하 여 OData V4 끝점 만들기](create-an-odata-v4-endpoint.md)자습서를 빌드합니다.
 
-첫째, 관련된 엔터티를 해야합니다. 라는 클래스를 추가 `Supplier` Models 폴더에 있습니다.
+먼저 관련 엔터티가 필요 합니다. 모델 폴더에 `Supplier` 라는 클래스를 추가 합니다.
 
 [!code-csharp[Main](entity-relations-in-odata-v4/samples/sample1.cs)]
 
-탐색 속성을 추가 하 여 `Product` 클래스:
+`Product` 클래스에 탐색 속성을 추가 합니다.
 
 [!code-csharp[Main](entity-relations-in-odata-v4/samples/sample2.cs?highlight=13-15)]
 
-새 **DbSet** 에 `ProductsContext` 클래스, Entity Framework에 공급 업체 테이블 데이터베이스에 포함 되도록 합니다.
+Entity Framework `ProductsContext` 클래스에 새 **Dbset** 을 추가 하 여 데이터베이스에 공급자 테이블을 포함 합니다.
 
 [!code-csharp[Main](entity-relations-in-odata-v4/samples/sample3.cs?highlight=10)]
 
-WebApiConfig.cs에서 추가 된 &quot;공급 업체&quot; 엔터티 데이터 모델 엔터티 집합:
+WebApiConfig.cs에서 엔터티 데이터 모델에 &quot;Suppliers&quot; 엔터티 집합을 추가 합니다.
 
 [!code-csharp[Main](entity-relations-in-odata-v4/samples/sample4.cs?highlight=6)]
 
-## <a name="add-a-suppliers-controller"></a>공급 업체 컨트롤러 추가
+## <a name="add-a-suppliers-controller"></a>Suppliers 컨트롤러 추가
 
-추가 된 `SuppliersController` 클래스 Controllers 폴더를 합니다.
+Controllers 폴더에 `SuppliersController` 클래스를 추가 합니다.
 
 [!code-csharp[Main](entity-relations-in-odata-v4/samples/sample5.cs)]
 
-이 컨트롤러에 대 한 CRUD 작업을 추가 하는 방법을 표시 하지 않습니다. 단계는 Products 컨트롤러 동일 (참조 [OData v4 엔드포인트 만들기](create-an-odata-v4-endpoint.md)).
+이 컨트롤러에 대 한 CRUD 작업을 추가 하는 방법을 표시 하지 않습니다. 이러한 단계는 Products 컨트롤러의 경우와 동일 합니다 ( [OData V4 끝점 만들기](create-an-odata-v4-endpoint.md)참조).
 
-## <a name="getting-related-entities"></a>관련된 엔터티를 가져오는 중
+## <a name="getting-related-entities"></a>관련 엔터티 가져오기
 
-제품에 대 한 공급자를 가져오려면 클라이언트는 GET 요청을 보냅니다.
+제품에 대 한 공급자를 가져오기 위해 클라이언트는 GET 요청을 보냅니다.
 
 [!code-console[Main](entity-relations-in-odata-v4/samples/sample6.cmd)]
 
-이 요청을 지원 하려면 다음 메서드를 추가 합니다 `ProductsController` 클래스:
+이 요청을 지원 하려면 `ProductsController` 클래스에 다음 메서드를 추가 합니다.
 
 [!code-csharp[Main](entity-relations-in-odata-v4/samples/sample7.cs)]
 
-이 메서드는 기본 명명 규칙
+이 메서드는 기본 명명 규칙을 사용 합니다.
 
 - 메서드 이름: GetX, 여기서 X는 탐색 속성입니다.
-- 매개 변수 이름: *키*
+- 매개 변수 이름: *key*
 
-이 명명 규칙을 따르는 경우 Web API 컨트롤러 메서드에 HTTP 요청을 자동으로 매핑합니다.
+이 명명 규칙을 따르는 경우 Web API는 자동으로 HTTP 요청을 컨트롤러 메서드에 매핑합니다.
 
 예제 HTTP 요청:
 
 [!code-console[Main](entity-relations-in-odata-v4/samples/sample8.cmd)]
 
-예제 HTTP 응답:
+HTTP 응답 예제:
 
 [!code-console[Main](entity-relations-in-odata-v4/samples/sample9.cmd)]
 
-### <a name="getting-a-related-collection"></a>관련된 컬렉션 가져오기
+### <a name="getting-a-related-collection"></a>관련 컬렉션 가져오기
 
-이전 예제에서는 제품에는 공급자가 있습니다. 탐색 속성 컬렉션을 반환할 수도 있습니다. 다음 코드는 공급자에 대 한 제품을 가져옵니다.
+이전 예제에서 제품에는 하나의 공급 업체가 있습니다. 탐색 속성은 컬렉션을 반환할 수도 있습니다. 다음 코드는 공급자에 대 한 제품을 가져옵니다.
 
 [!code-csharp[Main](entity-relations-in-odata-v4/samples/sample10.cs)]
 
-메서드를 반환 하는 경우에 **IQueryable** 대신에 **SingleResult&lt;T&gt;**
+이 경우 메서드는 **SingleResult&lt;t** 대신 **IQueryable** 을 반환&gt;
 
 예제 HTTP 요청:
 
 [!code-console[Main](entity-relations-in-odata-v4/samples/sample11.cmd)]
 
-예제 HTTP 응답:
+HTTP 응답 예제:
 
 [!code-console[Main](entity-relations-in-odata-v4/samples/sample12.cmd)]
 
-## <a name="creating-a-relationship-between-entities"></a>엔터티 간의 관계 만들기
+## <a name="creating-a-relationship-between-entities"></a>엔터티 간 관계 만들기
 
-OData를 만들거나 기존 두 엔터티 간의 관계를 제거를 지원 합니다. 관계의 OData v4 용어는 &quot;참조&quot;합니다. (관계 호출한 OData v3에는 *링크*합니다. 프로토콜 차이점이이 자습서에 대 한 중요 하지 않습니다.)
+OData는 기존의 두 엔터티 간의 관계를 만들거나 제거 하는 것을 지원 합니다. OData v4 용어에서 관계는 &quot;참조&quot;입니다. (OData v3에서 관계를 *링크*라고 합니다. 이 자습서에서는 프로토콜 차이가 중요 하지 않습니다.
 
-참조에 폼을 사용 하 여 고유한 URI `/Entity/NavigationProperty/$ref`합니다. 예를 들어, 다음은 제품 및 공급 업체 간의 참조를 해결 하기 위해 URI입니다.
+참조에는 `/Entity/NavigationProperty/$ref`형식의 고유한 URI가 있습니다. 예를 들어 다음은 제품과 공급자 간의 참조를 처리 하는 URI입니다.
 
 [!code-console[Main](entity-relations-in-odata-v4/samples/sample13.cmd)]
 
-관계를 추가 하려면 클라이언트는이 주소로 POST 또는 PUT 요청을 보냅니다.
+관계를 추가 하기 위해 클라이언트는이 주소에 POST 또는 PUT 요청을 보냅니다.
 
-- 탐색 속성은 단일 엔터티를 같은 경우 `Product.Supplier`합니다.
-- 탐색 속성은 컬렉션 등 게시 `Supplier.Products`합니다.
+- 탐색 속성이 단일 엔터티 (예: `Product.Supplier`) 인 경우에는를 입력 합니다.
+- 탐색 속성이 컬렉션인 경우 POST (예: `Supplier.Products`)
 
-관계의 다른 엔터티의 URI를 포함 하는 요청의 본문입니다. 요청 예제는 다음과 같습니다.
+요청의 본문에는 관계에 있는 다른 엔터티의 URI가 포함 됩니다. 예제 요청은 다음과 같습니다.
 
 [!code-console[Main](entity-relations-in-odata-v4/samples/sample14.cmd)]
 
-이 예에서 클라이언트는 PUT 요청을 보냅니다 `/Products(6)/Supplier/$ref`, $ref URI는는 `Supplier` ID 사용 하 여 제품의 = 6. 요청이 성공 하는 경우 서버는 204 (내용 없음) 응답을 보냅니다.
+이 예제에서 클라이언트는 `/Products(6)/Supplier/$ref`에 PUT 요청을 보냅니다 .이는 ID = 6 인 제품의 `Supplier`에 대 한 $ref URI입니다. 요청이 성공 하면 서버는 204 (콘텐츠 없음) 응답을 보냅니다.
 
 [!code-console[Main](entity-relations-in-odata-v4/samples/sample15.cmd)]
 
-같습니다. 관계를 추가할 컨트롤러 메서드는 `Product`:
+`Product`에 관계를 추가 하는 컨트롤러 메서드는 다음과 같습니다.
 
 [!code-csharp[Main](entity-relations-in-odata-v4/samples/sample16.cs)]
 
-합니다 *navigationProperty* 매개 변수 설정 하는 관계를 지정 합니다. (엔터티의 탐색 속성이 둘 이상 있으면 더 추가할 수 있습니다 `case` 문.)
+*NavigationProperty* 매개 변수는 설정할 관계를 지정 합니다. 엔터티에 대 한 탐색 속성이 두 개 이상 있는 경우 더 많은 `case` 문을 추가할 수 있습니다.
 
-합니다 *링크* 매개 변수는 공급자의 URI를 포함 합니다. 웹 API에는 자동으로이 매개 변수에 대 한 값을 검색할 요청 본문 구문 분석 합니다.
+*Link* 매개 변수는 공급자의 URI를 포함 합니다. Web API는 요청 본문을 자동으로 구문 분석 하 여이 매개 변수의 값을 가져옵니다.
 
-ID (또는 키), 해야 공급자를 조회 하의 일부인 합니다 *링크* 매개 변수입니다. 이 작업을 수행 하려면 다음 도우미 메서드를 사용 합니다.
+공급자를 조회 하려면 *링크* 매개 변수의 일부인 ID (또는 키)가 필요 합니다. 이렇게 하려면 다음 도우미 메서드를 사용 합니다.
 
 [!code-csharp[Main](entity-relations-in-odata-v4/samples/sample17.cs)]
 
-기본적으로,이 메서드가 URI 경로 세그먼트로 분할할 키를 포함 하는 세그먼트를 찾고, 키를 올바른 형식으로 변환 하는 OData 라이브러리를 사용 합니다.
+기본적으로이 메서드는 OData 라이브러리를 사용 하 여 URI 경로를 세그먼트로 분할 하 고, 키를 포함 하는 세그먼트를 찾고, 키를 올바른 형식으로 변환 합니다.
 
-## <a name="deleting-a-relationship-between-entities"></a>엔터티 간의 관계를 삭제합니다.
+## <a name="deleting-a-relationship-between-entities"></a>엔터티 간 관계 삭제
 
-관계를 삭제 하려면 클라이언트가 $ref URI에 HTTP DELETE 요청을 보냅니다.
+관계를 삭제 하기 위해 클라이언트는 $ref URI에 HTTP DELETE 요청을 보냅니다.
 
 [!code-console[Main](entity-relations-in-odata-v4/samples/sample18.cmd)]
 
-제품 및 공급자 간의 관계를 삭제 하려면 컨트롤러 메서드는 다음과 같습니다.
+제품 및 공급자 간의 관계를 삭제 하는 컨트롤러 메서드는 다음과 같습니다.
 
 [!code-csharp[Main](entity-relations-in-odata-v4/samples/sample19.cs)]
 
-이 예에서 `Product.Supplier` 은 &quot;1&quot; 1 대 다 관계를 설정 하 여 관계를 제거할 수 있도록 끝 `Product.Supplier` 를 `null`.
+이 경우 `Product.Supplier`는 일 대 다 관계의 &quot;1&quot; 끝 이므로 `Product.Supplier`를 `null`로 설정 하기만 하면 관계를 제거할 수 있습니다.
 
-에 &quot;많은&quot; 클라이언트 관계의 end는 관련 엔터티를 제거 하려면을 지정 해야 합니다. 이렇게 하려면 클라이언트는 관련 엔터티의 URI 요청의 쿼리 문자열에 보냅니다. 예를 들어 "제품 1"을 제거 하려면 "1" 공급자:
+관계의 여러&quot; 끝 &quot;에서 클라이언트는 제거할 관련 엔터티를 지정 해야 합니다. 이렇게 하기 위해 클라이언트는 요청의 쿼리 문자열에 관련 엔터티의 URI를 보냅니다. 예를 들어 "공급 업체 1"에서 "제품 1"을 제거 하려면 다음을 수행 합니다.
 
 [!code-console[Main](entity-relations-in-odata-v4/samples/sample20.cmd?highlight=1)]
 
-이 지 원하는 웹 api에서에 추가 매개 변수를 포함 해야 합니다 `DeleteRef` 메서드. 여기에서 제품을 제거 하려면 컨트롤러 메서드는는 `Supplier.Products` 관계입니다.
+Web API에서이를 지원 하려면 `DeleteRef` 메서드에 추가 매개 변수를 포함 해야 합니다. `Supplier.Products` 관계에서 제품을 제거 하는 컨트롤러 메서드는 다음과 같습니다.
 
 [!code-csharp[Main](entity-relations-in-odata-v4/samples/sample21.cs)]
 
-*키* 매개 변수는 공급자에 대 한 키 및 *relatedKey* 매개 변수는에서 제거할 제품에 대 한 키를 `Products` 관계입니다. Web API는 쿼리 문자열에서 키를 자동으로 가져옵니다는 note 합니다.
+*키* 매개 변수는 공급자에 대 한 키이 고 *relatedKey* 매개 변수는 `Products` 관계에서 제거할 제품의 키입니다. Web API는 쿼리 문자열에서 키를 자동으로 가져옵니다.

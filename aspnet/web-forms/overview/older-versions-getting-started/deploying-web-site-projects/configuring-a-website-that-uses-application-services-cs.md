@@ -9,11 +9,11 @@ ms.assetid: 1e33d1c6-3f9f-4c26-81e2-2a8f8907bb05
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/configuring-a-website-that-uses-application-services-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 72aaca84b8c8d6e558d4c946faa57fa999d48bf8
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74570145"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78511781"
 ---
 # <a name="configuring-a-website-that-uses-application-services-c"></a>애플리케이션 서비스를 사용하는 웹 사이트 구성(C#)
 
@@ -127,7 +127,7 @@ ASP.NET는 Visual Studio에서 시작할 수 있는 훌륭한 [*웹 사이트 �
 
 ### <a name="copying-user-accounts-from-development-to-production"></a>개발에서 프로덕션으로 사용자 계정 복사
 
-`SqlMembershipProvider` 및 `SqlRoleProvider` 공급자 클래스를 사용 하 여 SQL Server 데이터베이스에 응용 프로그램 서비스 정보를 저장 하는 경우 사용자 계정 및 역할 정보는 `aspnet_Users`, `aspnet_Membership`, `aspnet_Roles`및 `aspnet_UsersInRoles`를 비롯 한 다양 한 데이터베이스 테이블에 저장 됩니다. 개발 중에 개발 환경에서 사용자 계정을 만드는 경우 해당 하는 데이터베이스 테이블에서 해당 레코드를 복사 하 여 프로덕션에서 해당 사용자 계정을 복제할 수 있습니다. 데이터베이스 게시 마법사를 사용 하 여 응용 프로그램 서비스 데이터베이스 개체를 배포한 경우에도 레코드를 복사 하도록 선택 했을 수 있습니다. 이렇게 하면 개발에서 만든 사용자 계정이 프로덕션 환경에도 포함 됩니다. 그러나 구성 설정에 따라 계정이 개발에서 만들어지고 프로덕션 환경으로 복사 된 사용자가 프로덕션 웹 사이트에서 로그인 할 수 없다는 것을 알 수 있습니다. 어떤 기능을 제공 하나요?
+`SqlMembershipProvider` 및 `SqlRoleProvider` 공급자 클래스를 사용 하 여 SQL Server 데이터베이스에 응용 프로그램 서비스 정보를 저장 하는 경우 사용자 계정 및 역할 정보는 `aspnet_Users`, `aspnet_Membership`, `aspnet_Roles`및 `aspnet_UsersInRoles`를 비롯 한 다양 한 데이터베이스 테이블에 저장 됩니다. 개발 중에 개발 환경에서 사용자 계정을 만드는 경우 해당 하는 데이터베이스 테이블에서 해당 레코드를 복사 하 여 프로덕션에서 해당 사용자 계정을 복제할 수 있습니다. 데이터베이스 게시 마법사를 사용 하 여 응용 프로그램 서비스 데이터베이스 개체를 배포한 경우에도 레코드를 복사 하도록 선택 했을 수 있습니다. 이렇게 하면 개발에서 만든 사용자 계정이 프로덕션 환경에도 포함 됩니다. 그러나 구성 설정에 따라 계정이 개발에서 만들어지고 프로덕션 환경으로 복사 된 사용자가 프로덕션 웹 사이트에서 로그인 할 수 없다는 것을 알 수 있습니다. 무엇을 제공하나요?
 
 `SqlMembershipProvider` 및 `SqlRoleProvider` 공급자 클래스는 단일 데이터베이스를 여러 응용 프로그램에 대 한 사용자 저장소로 사용할 수 있도록 설계 되었습니다. 각 응용 프로그램에는 동일한 이름의 사용자 이름 및 역할이 겹치는 사용자가 있습니다. 이러한 유연성을 위해 데이터베이스는 `aspnet_Applications` 테이블의 응용 프로그램 목록을 유지 관리 하 고 각 사용자는 이러한 응용 프로그램 중 하 나와 연결 됩니다. 특히 `aspnet_Users` 테이블에는 각 사용자를 `aspnet_Applications` 테이블의 레코드에 연결 하는 `ApplicationId` 열이 있습니다.
 
@@ -167,7 +167,7 @@ WSAT의 전체 기능을 확인 해야 하는 경우 사용자 지정 WSAT와 �
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 

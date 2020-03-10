@@ -9,11 +9,11 @@ ms.assetid: a89d6f32-b71b-4036-8ff7-5f8ac2a6eca8
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-migrating-to-sql-server-10-of-12
 msc.type: authoredcontent
 ms.openlocfilehash: c5281a42596d95e725b32e652c75785abe0fd64e
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74640636"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78462839"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-migrating-to-sql-server---10-of-12"></a>Visual Studio 또는 Visual Web Developer를 사용 하 여 SQL Server Compact를 사용 하 여 ASP.NET 웹 응용 프로그램 배포: SQL Server로 마이그레이션 (12/10)
 
@@ -112,7 +112,7 @@ SQL Server Express는 기본적으로 Visual Studio 2010와 함께 자동으로 
 
 **Web.config에서 가져오기를**클릭 합니다.
 
-![Selecting_Import_from_Web .config](deployment-to-a-hosting-provider-migrating-to-sql-server-10-of-12/_static/image5.png)
+![Selecting_Import_from_Web.config](deployment-to-a-hosting-provider-migrating-to-sql-server-10-of-12/_static/image5.png)
 
 Visual Studio는 web.config 파일에서 연결 문자열을 찾고, 멤버 자격 데이터베이스와 School 데이터베이스에 대해 하나를 찾고, **데이터베이스 항목** 테이블의 각 연결 문자열에 해당 하는 행을 *추가 합니다.* 기존 SQL Server Compact 데이터베이스에 대 한 연결 문자열을 찾은 후 다음 단계는 이러한 데이터베이스를 배포할 방법 및 위치를 구성 하는 것입니다.
 
@@ -224,7 +224,7 @@ SqlServerCompact NuGet 패키지는 Contoso 대학 응용 프로그램에 대 �
 
 **프로필** 탭을 선택 합니다.
 
-**프로필 관리**를 클릭 합니다.
+**프로필 관리**를 클릭합니다.
 
 **테스트**를 선택 하 고 **제거**를 클릭 한 다음 **닫기**를 클릭 합니다.
 
@@ -281,7 +281,7 @@ Visual Studio에서 응용 프로그램을 배포 하 고 테스트 환경에서
 **SQL 사용자 속성** 페이지에서 필수 필드를 입력 합니다.
 
 - 이름으로 "다음으로"를 입력 합니다.
-- 암호를 입력 하십시오.
+- 암호를 입력합니다.
 - 기본 데이터베이스로 **contosouSchool** 를 선택 합니다.
 - **ContosouSchool** 확인란을 선택 합니다.
 
@@ -347,7 +347,7 @@ Visual Studio에서 응용 프로그램을 배포 하 고 테스트 환경에서
 
 **프로필** 탭을 선택 합니다.
 
-**프로필 관리**를 클릭 합니다.
+**프로필 관리**를 클릭합니다.
 
 **프로덕션**을 선택 하 고 **제거**를 클릭 한 다음 **닫기**를 클릭 합니다.
 
@@ -361,7 +361,7 @@ Visual Studio에서 응용 프로그램을 배포 하 고 테스트 환경에서
 
 **가져오기**를 클릭 하 고 앞에서 다운로드 한 publishsettings 파일을 선택 합니다.
 
-**연결** 탭에서 **대상 url** 을 올바른 임시 url로 변경 합니다 .이 예제에서는 http://contosouniversity.com.vserver01.cytanium.com 합니다.
+**연결** 탭에서 **대상 url** 을 올바른 임시 url로 변경 합니다 .이 예제에서는 http://contosouniversity.com.vserver01.cytanium.com합니다.
 
 프로필의 이름을 Production로 바꿉니다. ( **프로필** 탭을 선택 하 고 **프로필 관리** 를 클릭 하 여 해당 작업을 수행 합니다.)
 
@@ -414,7 +414,7 @@ Visual Studio에서 응용 프로그램을 배포 하 고 테스트 환경에서
 
 **기본 프로젝트** 드롭다운 목록에서 ContosoUniversity 프로젝트를 선택 합니다.
 
-명령을 입력하십시오.
+다음 명령을 입력합니다.
 
 [!code-powershell[Main](deployment-to-a-hosting-provider-migrating-to-sql-server-10-of-12/samples/sample9.ps1)]
 

@@ -9,11 +9,11 @@ ms.assetid: 7f9380c6-19f7-4c82-a019-916ec6dffc9c
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/aspnet-ajax/understanding-asp-net-ajax-debugging-capabilities
 msc.type: authoredcontent
 ms.openlocfilehash: 08ced380f3551407d757524dbc84b5feeeb5482b
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74601682"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78510863"
 ---
 # <a name="understanding-aspnet-ajax-debugging-capabilities"></a>ASP.NET AJAX 디버깅 기능 이해
 
@@ -35,7 +35,7 @@ Internet Explorer에 표시 된 페이지를 디버그 하기 전에 디버깅�
 
 ## <a name="configuring-internet-explorer-for-debugging"></a>디버깅을 위해 Internet Explorer 구성
 
-대부분의 사용자는 Internet Explorer와 함께 표시 되는 웹 사이트에서 발생 하는 JavaScript 문제를 살피지 않습니다. 사실, 평균 사용자에 게 오류 메시지가 나타나는 경우 수행할 작업을 알아야 합니다. 따라서 브라우저에서 디버깅 옵션이 기본적으로 해제 되어 있습니다. 그러나 디버깅을 설정 하 고 새 AJAX 응용 프로그램을 개발할 때 사용 하도록 설정 하는 것은 매우 간단 합니다.
+대부분의 사용자는 Internet Explorer와 함께 표시 되는 웹 사이트에서 발생 하는 JavaScript 문제를 보지 않습니다. 사실, 평균 사용자에 게 오류 메시지가 나타나는 경우 수행할 작업을 알아야 합니다. 따라서 브라우저에서 디버깅 옵션이 기본적으로 해제 되어 있습니다. 그러나 디버깅을 설정 하 고 새 AJAX 응용 프로그램을 개발할 때 사용 하도록 설정 하는 것은 매우 간단 합니다.
 
 디버깅 기능을 사용 하도록 설정 하려면 Internet Explorer 메뉴에서 도구 인터넷 옵션으로 이동 하 고 고급 탭을 선택 합니다. 검색 섹션 내에서 다음 항목이 선택 취소 되어 있는지 확인 합니다.
 
@@ -218,11 +218,11 @@ Sys.debug 클래스는 표 1에 표시 된 대로 추적, 코드 어설션 또�
 
 | **함수 이름** | **설명** |
 | --- | --- |
-| assert (condition, message, displayCaller) | Condition 매개 변수가 true 임을 어설션 합니다. 테스트 중인 조건이 false 인 경우 메시지 상자는 메시지 매개 변수 값을 표시 하는 데 사용 됩니다. DisplayCaller 매개 변수가 true 이면 메서드는 호출자에 대 한 정보도 표시 합니다. |
-| clearTrace () | 추적 작업에서 문 출력을 지웁니다. |
+| assert(condition, message, displayCaller) | Condition 매개 변수가 true 임을 어설션 합니다. 테스트 중인 조건이 false 인 경우 메시지 상자는 메시지 매개 변수 값을 표시 하는 데 사용 됩니다. DisplayCaller 매개 변수가 true 이면 메서드는 호출자에 대 한 정보도 표시 합니다. |
+| clearTrace() | 추적 작업에서 문 출력을 지웁니다. |
 | fail (메시지) | 프로그램이 실행을 중지 하 고 디버거로 중단 되도록 합니다. 메시지 매개 변수를 사용 하 여 실패 이유를 제공할 수 있습니다. |
-| 추적 (메시지) | 메시지 매개 변수를 추적 출력에 씁니다. |
-| traceDump (개체, 이름) | 개체의 데이터를 읽을 수 있는 형식으로 출력 합니다. Name 매개 변수는 추적 덤프에 대 한 레이블을 제공 하는 데 사용할 수 있습니다. 덤프 되는 개체 내의 모든 하위 개체는 기본적으로 작성 됩니다. |
+| trace(message) | 메시지 매개 변수를 추적 출력에 씁니다. |
+| traceDump(object, name) | 개체의 데이터를 읽을 수 있는 형식으로 출력 합니다. Name 매개 변수는 추적 덤프에 대 한 레이블을 제공 하는 데 사용할 수 있습니다. 덤프 되는 개체 내의 모든 하위 개체는 기본적으로 작성 됩니다. |
 
 클라이언트 쪽 추적은 ASP.NET에서 사용할 수 있는 추적 기능과 거의 동일한 방식으로 사용할 수 있습니다. 응용 프로그램의 흐름을 중단 하지 않고 다른 메시지를 쉽게 볼 수 있습니다. 목록 5는 추적 로그에 쓰는 데 사용 하는 예를 보여 줍니다. trace 함수를 사용 합니다. 이 함수는 매개 변수로 서 써야 하는 메시지를 가져옵니다.
 

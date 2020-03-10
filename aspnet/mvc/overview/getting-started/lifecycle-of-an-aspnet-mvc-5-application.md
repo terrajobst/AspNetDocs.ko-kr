@@ -9,11 +9,11 @@ ms.assetid: 9c1e3a75-b644-4480-8326-11300b1ec4b3
 msc.legacyurl: /mvc/overview/getting-started/lifecycle-of-an-aspnet-mvc-5-application
 msc.type: authoredcontent
 ms.openlocfilehash: f4a9b3fb61552b070db11fba617b5627fcd71cd5
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65124090"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78470327"
 ---
 # <a name="lifecycle-of-an-aspnet-mvc-5-application"></a>ASP.NET MVC 5 애플리케이션의 수명 주기
 
@@ -23,7 +23,7 @@ ms.locfileid: "65124090"
 
 HTTP 요청을 받고 HTTP 요청을 다시 클라이언트로 보내는 ASP.NET MVC 5 애플리케이션의 수명 주기를 차트로 보여주는 PDF 문서를 여기서 다운로드할 수 있습니다. 이 문서는 ASP.NET MVC를 처음 접하는 분들을 위한 교육 도구이자 애플리케이션의 특정 기능을 자세히 알아보려는 분들을 위한 참조 자료로 작성되었습니다. PDF 문서의 특징은 다음과 같습니다.
 
-- MVC가 [ASP.NET 애플리케이션 수명 주기](https://msdn.microsoft.com/library/bb470252.aspx)의 어느 부분에 통합되는지 이해를 도와주는 관련 [HttpApplication](https://msdn.microsoft.com/library/system.web.httpapplication.aspx) 단계.
+- MVC가 [ASP.NET 애플리케이션 수명 주기](https://msdn.microsoft.com/library/system.web.httpapplication.aspx)의 어느 부분에 통합되는지 이해를 도와주는 관련 [HttpApplication](https://msdn.microsoft.com/library/bb470252.aspx) 단계.
 - 요청 처리 파이프라인에서 모든 MVC 애플리케이션이 통과하는 주요 단계를 이해할 수 있는 MVC 애플리케이션 수명 주기에 대한 개요 보기.  
     ![](lifecycle-of-an-aspnet-mvc-5-application/_static/image1.jpg)
 - 요청 처리 파이프라인의 세부 정보를 보여주는 세부 정보 보기. 개요 보기와 세부 정보 보기를 비교하여 수명 주기에 대한 상세 정보가 다양한 단계로 수집되는 원리를 볼 수 있습니다. 더 크게 보려면 [PDF를 다운로드](lifecycle-of-an-aspnet-mvc-5-application/_static/lifecycle-of-an-aspnet-mvc-5-application1.pdf)하세요.

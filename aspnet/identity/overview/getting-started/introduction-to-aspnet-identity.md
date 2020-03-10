@@ -1,8 +1,8 @@
 ---
 uid: identity/overview/getting-started/introduction-to-aspnet-identity
-title: Introduction to ASP.NET Id-ASP.NET 4.x
+title: ASP.NET Identity 소개-ASP.NET 4.x
 author: jongalloway
-description: ASP.NET 멤버 자격 시스템 도입 된 ASP.NET 2.0 백을 사용 하 여 이후 2005 년에 같은 방법으로 웹 응용 프로그램 정도가에 많은 변경 내용이 다음...
+description: ASP.NET 멤버 자격 시스템은 2005에서 ASP.NET 2.0에 다시 도입 된 것으로, 웹 응용 프로그램의 typicall ...
 ms.author: riande
 ms.date: 01/22/2019
 ms.assetid: 38717fc1-5989-43cf-952d-4007cc1dd923
@@ -10,148 +10,148 @@ ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/getting-started/introduction-to-aspnet-identity
 msc.type: authoredcontent
 ms.openlocfilehash: 0268dfc16cd2cfb1e79ee14997a4c5eb247af950
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65121563"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78471737"
 ---
 # <a name="introduction-to-aspnet-identity"></a>ASP.NET Identity 소개
 
-> ASP.NET 멤버 자격 시스템에 도입 되었습니다 ASP.NET 2.0 백 이후 2005 년에 웹 응용 프로그램 인증 및 권한 부여를 일반적으로 처리 하는 방법에 많은 변경 내용이 다음. ASP.NET Id가 보안 정책 살펴보기 멤버 자격 시스템 웹, 휴대폰 또는 태블릿 용 최신 응용 프로그램을 작성 하는 경우 여야 합니다.
+> ASP.NET 멤버 자격 시스템은 2005의 ASP.NET 2.0에 다시 도입 된 것으로, 웹 응용 프로그램이 일반적으로 인증 및 권한 부여를 처리 하는 방법에 많은 변화가 있었습니다. ASP.NET Identity는 웹, 휴대폰 또는 태블릿에 대 한 최신 응용 프로그램을 빌드할 때 멤버 자격 시스템을 새로 디자인 하는 것입니다.
 
-## <a name="background-membership-in-aspnet"></a>배경: Asp.net에서 멤버 자격
+## <a name="background-membership-in-aspnet"></a>배경: ASP.NET의 멤버 자격
 
 ### <a name="aspnet-membership"></a>ASP.NET 멤버 자격
 
-[ASP.NET 멤버 자격](https://msdn.microsoft.com/library/yh26yfzy(v=VS.100).aspx) 폼 인증 및 사용자 이름, 암호 및 프로필 데이터에 대 한 SQL Server 데이터베이스를 포함 하는 2005 년 공통 된 사이트 구성원 자격 요구 사항을 해결 하도록 설계 되었습니다. 현재는 웹 응용 프로그램에 대 한 데이터 저장소 옵션의 훨씬 더 광범위 한 배열 및 대부분의 개발자가 인증 및 권한 부여 기능에 대 한 소셜 id 공급자를 사용 하도록 해당 사이트를 사용 하도록 설정 하려면. ASP.NET 멤버 자격의 디자인 제한 사항 어렵게이 전환:
+[ASP.NET 멤버 자격은](https://msdn.microsoft.com/library/yh26yfzy(v=VS.100).aspx) 폼 인증 및 사용자 이름, 암호 및 프로필 데이터에 대 한 SQL Server 데이터베이스와 관련 된 2005에서 공통적으로 적용 되는 사이트 멤버 자격 요구 사항을 해결 하도록 설계 되었습니다. 현재 웹 응용 프로그램에 대 한 다양 한 데이터 저장소 옵션 배열이 있으며 대부분의 개발자는 사이트에서 인증 및 권한 부여 기능을 위해 소셜 id 공급자를 사용할 수 있도록 합니다. ASP.NET 멤버 자격 디자인의 제한 사항으로 인해 이러한 전환이 어려워집니다.
 
-- 데이터베이스 스키마가 SQL Server에 맞게 디자인 하 고 변경할 수 없습니다. 프로필 정보를 추가할 수 있지만 어렵습니다 액세스 프로필 공급자 API를 통해를 제외한 모든 방법으로 다른 테이블에 추가 데이터를 압축 됩니다.
-- 공급자 시스템을 사용 하면 백업 데이터 저장소를 변경할 수 있습니다 하지만 시스템 관계형 데이터베이스에 대 한 적절 한 가정을 중심으로 디자인 되었습니다. Azure Storage Tables와 같은 비관계형 저장소 메커니즘을에 멤버 자격 정보를 저장 하려면 공급자를 작성할 수 있지만 관계형 디자인의 많으며 많은 코드를 작성 하 여 해결 해야 `System.NotImplementedException` 하지 않는 메서드에 대 한 예외 NoSQL 데이터베이스에 적용 됩니다.
-- 폼 인증에 따라 로그-/ 로그 아웃 기능이 있으므로 멤버 자격 시스템을 사용할 수 없습니다 [OWIN](../../../aspnet/overview/owin-and-katana/an-overview-of-project-katana.md)합니다. OWIN 인증의 경우 외부 id 공급자 (예: Microsoft 계정, Facebook, Google의, Twitter)를 사용 하 여 로그인에 대 한 지원을 비롯 하 여 미들웨어 구성 요소를 포함 하 고 로그인에서 조직 계정을 사용 하 여 온-프레미스 Active Directory 또는 Azure Active Directory입니다. OWIN은 OAuth 2.0, JWT 및 CORS에 대 한 지원이 포함 됩니다.
+- 데이터베이스 스키마는 SQL Server 용으로 설계 되었으며 변경할 수 없습니다. 프로필 정보를 추가할 수 있지만 추가 데이터는 다른 테이블에 압축 되므로 프로필 공급자 API를 제외 하 고는 어떤 방법으로도 액세스 하기 어렵습니다.
+- 공급자 시스템을 사용 하면 지원 데이터 저장소를 변경할 수 있지만 시스템은 관계형 데이터베이스에 대 한 적절 한 가정을 기반으로 설계 되었습니다. Azure Storage 테이블과 같은 비관계형 저장소 메커니즘에 멤버 자격 정보를 저장 하는 공급자를 작성할 수 있지만, NoSQL 데이터베이스에 적용 되지 않는 메서드에 대 한 많은 코드와 많은 `System.NotImplementedException` 예외를 작성 하 여 관계형 설계를 해결 해야 합니다.
+- 로그인/로그 아웃 기능은 폼 인증을 기반으로 하기 때문에 멤버 자격 시스템에서는 [OWIN](../../../aspnet/overview/owin-and-katana/an-overview-of-project-katana.md)를 사용할 수 없습니다. OWIN에는 외부 id 공급자 (예: Microsoft 계정, Facebook, Google, Twitter)를 사용 하 여 로그인을 지원 하 고 온-Active Directory 프레미스에서 조직 계정을 사용 하 여 로그인 하는 것을 비롯 하 여 인증을 위한 미들웨어 구성 요소가 포함 됩니다. 또는 Azure Active Directory. OWIN에는 OAuth 2.0, JWT 및 CORS도 지원 됩니다.
 
 ### <a name="aspnet-simple-membership"></a>ASP.NET 단순 멤버 자격
 
-[ASP.NET 단순 멤버 자격](../../../web-pages/overview/security/16-adding-security-and-membership.md) ASP.NET 웹 페이지에 대 한 멤버 자격 시스템으로 개발 되었습니다. WebMatrix 및 Visual Studio 2010 SP1을 사용 하 여 릴리스 되었습니다. 단순 멤버 자격의 목적은 웹 페이지 응용 프로그램 멤버 자격 기능을 추가할 수 있도록 하는 것 이었습니다.
+[ASP.NET 단순 멤버 자격은](../../../web-pages/overview/security/16-adding-security-and-membership.md) ASP.NET 웹 페이지에 대 한 멤버 자격 시스템으로 개발 되었습니다. WebMatrix 및 Visual Studio 2010 s p 1과 함께 출시 되었습니다. 간단한 멤버 자격의 목표는 웹 페이지 응용 프로그램에 멤버 자격 기능을 쉽게 추가할 수 있도록 하는 것 이었습니다.
 
-단순 멤버 자격 않았습니다 쉽게 사용자 프로필 정보를 사용자 지정할 수 있지만 ASP.NET 멤버 자격을 사용 하 여 다른 문제가 여전히 공유 있으며 몇 가지 제한 사항이:
+간단한 구성원 자격으로 사용자 프로필 정보를 쉽게 사용자 지정할 수 있지만 ASP.NET 멤버 자격과 관련 된 다른 문제를 여전히 공유 하 고 몇 가지 제한 사항이 있습니다.
 
-- 비관계형 저장소에서 멤버 자격 시스템 데이터를 유지 하는 것이 어려웠습니다.
-- OWIN을 사용 하 여 사용할 수 없습니다.
-- 기존 ASP.NET 멤버 자격 공급자에서 잘 작동 하지 않으면 및은 확장할 수 없습니다.
+- 관계형이 아닌 저장소에 멤버 자격 시스템 데이터를 유지 하기는 어렵습니다.
+- OWIN와 함께 사용할 수 없습니다.
+- 기존 ASP.NET 멤버 자격 공급자와는 잘 작동 하지 않으며 확장할 수 없습니다.
 
 ### <a name="aspnet-universal-providers"></a>ASP.NET 범용 공급자
 
-[ASP.NET Universal Providers](http://www.hanselman.com/blog/IntroducingSystemWebProvidersASPNETUniversalProvidersForSessionMembershipRolesAndUserProfileOnSQLCompactAndSQLAzure.aspx) 있으며 Azure SQL Database 에서도 SQL Server Compact를 사용 하 여 작동 microsoft에서 멤버 자격 정보를 유지할 수 있도록 하기 위해 개발 되었습니다. Universal Providers 된 Entity Framework Code First, Universal Providers EF에서 지원 되는 모든 저장소에서 데이터를 유지 하기 위해 사용할 수 있다는 의미를 기반으로 합니다. 범용 공급자를 사용 하 여 데이터베이스 스키마가 상당한도 정리 합니다.
+[ASP.NET Universal Providers](http://www.hanselman.com/blog/IntroducingSystemWebProvidersASPNETUniversalProvidersForSessionMembershipRolesAndUserProfileOnSQLCompactAndSQLAzure.aspx) 은 Microsoft Azure SQL Database에 멤버 자격 정보를 유지할 수 있도록 개발 되었으며 SQL Server Compact 에서도 작동 합니다. Universal Providers은 Entity Framework Code First을 기반으로 작성 되었습니다. 즉, Universal Providers를 사용 하 여 EF에서 지 원하는 모든 저장소에 데이터를 유지할 수 있습니다. Universal Providers를 사용 하는 경우 데이터베이스 스키마도 상당히 많이 정리 되었습니다.
 
-Universal Providers SqlMembership 공급자과 동일한 제한 사항이 여전히 수행 하므로 ASP.NET 멤버 자격 인프라에 빌드됩니다. 즉, 관계형 데이터베이스에 대 한 설계 하 고 프로필 및 사용자 정보를 사용자 지정 하기가 어렵습니다. 이러한 공급자도 여전히 로그인 및 로그 아웃 기능에 대 한 폼 인증을 사용 합니다.
+Universal Providers는 ASP.NET 멤버 자격 인프라를 기반으로 하므로 SqlMembership Provider와 동일한 제한 사항을 계속 제공 합니다. 즉, 관계형 데이터베이스용으로 설계 되었으며 프로필 및 사용자 정보를 사용자 지정 하기가 어렵습니다. 이러한 공급자는 로그인 및 로그 아웃 기능에도 폼 인증을 사용 합니다.
 
 ## <a name="aspnet-identity"></a>ASP.NET ID
 
-멤버 자격으로 스토리 ASP.NET에서 ASP.NET 팀에서 고객의 의견을 많이 얻었습니다 년에 걸쳐 발전 했습니다.
+ASP.NET의 멤버 자격 스토리가 년에 걸쳐 발전 함에 따라 ASP.NET 팀은 고객의 의견을 많이 얻었습니다.
 
-가정 사용자 이름 및 응용 프로그램에서 등록 한 암호를 입력 하 여 사용자가 로그인 하는 더 이상 유효 합니다. 웹에 더 많은 소셜 되었습니다. 사용자가 Facebook, Twitter 및 기타 소셜 웹 사이트와 같은 소셜 채널을 통해 실시간으로에서 서로 상호 작용 합니다. 개발자는 해당 소셜 id를 갖도록 수 풍부한 경험을 해당 웹 사이트에 로그인 할 수 있는 사용자를 원합니다. 최신 멤버 자격 시스템 리디렉션 기반 로그인에서 인증 공급자로 Facebook, Twitter 등을 사용 해야 합니다.
+사용자가 자신의 응용 프로그램에 등록 한 사용자 이름 및 암호를 입력 하 여 로그인 하는 것은 더 이상 유효 하지 않습니다. 웹이 더 소셜 되었습니다. 사용자는 Facebook, Twitter 및 기타 소셜 웹 사이트와 같은 소셜 채널을 통해 실시간으로 서로 상호 작용 합니다. 개발자는 자신의 웹 사이트에서 풍부한 환경을 사용할 수 있도록 사용자가 소셜 id를 사용 하 여 로그인 할 수 있도록 하려고 합니다. 최신 멤버 자격 시스템은 Facebook, Twitter 등의 인증 공급자에 대 한 리디렉션 기반 로그인을 사용 하도록 설정 해야 합니다.
 
-웹 개발이 발전 하는 대로 웹 개발의 패턴 커졌습니다. 단위는 중요 한 문제가 응용 프로그램 개발자가 응용 프로그램 코드의 테스트 합니다. 2008 ASP.NET 일부 개발자가 단위 테스트 가능한 ASP.NET 응용 프로그램을 빌드할 수 있도록 모델-뷰-컨트롤러 (MVC) 패턴을 기반으로 하는 새로운 프레임 워크를 추가 합니다. 단위 하려는 개발자는 또한 멤버 자격 시스템을 사용 하 여 그렇게 할 수 하고자 하는 응용 프로그램 논리를 테스트 합니다.
+웹 개발이 진화 함에 따라 웹 개발의 패턴을 했습니다. 응용 프로그램 코드의 단위 테스트는 응용 프로그램 개발자에 게 중요 한 문제입니다. 2008 ASP.NET는 개발자가 단위 테스트 가능한 ASP.NET 응용 프로그램을 빌드하는 데 도움이 되는 MVC (모델-뷰-컨트롤러) 패턴을 기반으로 새 프레임 워크를 추가 했습니다. 응용 프로그램 논리를 단위 테스트 하려는 개발자는 멤버 자격 시스템을 사용 하 여이 작업을 수행할 수 있습니다.
 
-웹 응용 프로그램 개발에 이러한 변경 내용을 고려 ASP.NET Id는 다음과 같은 목표를 사용 하 여 개발 되었습니다.
+웹 응용 프로그램 개발의 이러한 변경을 고려 하 여 다음과 같은 목적으로 ASP.NET Identity 개발 되었습니다.
 
-- **ASP.NET Id 시스템**
+- **1 ASP.NET Identity 시스템**
 
-    - 모든 ASP.NET MVC, Web Forms, 웹 페이지, 웹 API 및 SignalR 같은 ASP.NET 프레임 워크를 사용 하 여 ASP.NET Id는 사용할 수 있습니다.
-    - 웹, phone, 스토어 또는 하이브리드 응용 프로그램을 작성 하는 경우 ASP.NET Id는 사용할 수 있습니다.
-- **사용자에 대 한 프로필 데이터에 연결 하는 편의성**
+    - ASP.NET Identity는 ASP.NET MVC, Web Forms, 웹 페이지, Web API 및 SignalR와 같은 모든 ASP.NET 프레임 워크와 함께 사용할 수 있습니다.
+    - ASP.NET Identity는 웹, 휴대폰, 스토어 또는 하이브리드 응용 프로그램을 빌드할 때 사용할 수 있습니다.
+- **사용자에 대 한 프로필 데이터의 용이성**
 
-    - 프로필 정보와 사용자의 스키마를 통해 제어할 수 있습니다. 예를 들어, 응용 프로그램에서 계정을 등록할 때 사용자가 입력 한 생년월일 저장 시스템을 쉽게 사용할 수 있습니다.
+    - 사용자는 사용자 및 프로필 정보 스키마를 제어할 수 있습니다. 예를 들어 사용자가 응용 프로그램에 계정을 등록할 때 사용자가 입력 한 생년월일을 저장 하도록 시스템을 쉽게 설정할 수 있습니다.
 
 - **지 속성 컨트롤**
 
-    - 기본적으로 ASP.NET Id 시스템 데이터베이스의 모든 사용자 정보를 저장합니다. ASP.NET Id를 사용 하 여 Entity Framework Code First는 지 속성 메커니즘의 모든 구현 합니다.
-    - 데이터베이스 스키마, 테이블 이름 변경 또는 변경 등의 일반적인 작업을 제어 데이터 형식의 기본 키 이므로 간단 하 게 수행할.
-    - Throw 할 필요 없이 SharePoint, Azure Storage Table Service, NoSQL 데이터베이스 등과 같은 다른 저장소 메커니즘에 연결할 쉽습니다 `System.NotImplementedExceptions` 예외입니다.
-- **단위 테스트 용이성**
+    - 기본적으로 ASP.NET Identity 시스템은 모든 사용자 정보를 데이터베이스에 저장 합니다. ASP.NET Identity는 Entity Framework Code First를 사용 하 여 모든 지 속성 메커니즘을 구현 합니다.
+    - 데이터베이스 스키마를 제어 하므로 테이블 이름을 변경 하거나 기본 키의 데이터 형식을 변경 하는 등의 일반적인 작업은 간단 합니다.
+    - `System.NotImplementedExceptions` 예외를 throw 하지 않고도 SharePoint, Azure Storage Table Service, NoSQL 데이터베이스 등의 다양 한 저장소 메커니즘을 쉽게 연결할 수 있습니다.
+- **유닛 테스트 용이성**
 
-    - ASP.NET Id를 사용 하므로 웹 응용 프로그램 더 많은 단위 테스트할 수 있습니다. ASP.NET Id를 사용 하는 응용 프로그램의 부분에 대 한 단위 테스트를 작성할 수 있습니다.
+    - ASP.NET Identity를 사용 하면 웹 응용 프로그램을 더 많은 장치를 테스트할 수 있습니다. ASP.NET Identity를 사용 하는 응용 프로그램의 일부에 대 한 단위 테스트를 작성할 수 있습니다.
 - **역할 공급자**
 
-    - 역할에 의해 응용 프로그램의 일부에 대 한 액세스를 제한할 수 있습니다 하는 역할 공급자가 있습니다. "Admin"와 같은 역할을 만들고 역할에 사용자 추가 쉽게 있습니다.
+    - 역할을 통해 응용 프로그램의 일부에 대 한 액세스를 제한할 수 있는 역할 공급자가 있습니다. "관리자"와 같은 역할을 쉽게 만들고 역할에 사용자를 추가할 수 있습니다.
 - **클레임 기반**
 
-    - ASP.NET Id 사용자의 id 클레임 집합으로 표시 됩니다는 클레임 기반 인증을 지원 합니다. 클레임 개발자의 역할을 사용 하는 보다 사용자의 id를 설명 하는 훨씬 더 적합할 수 있습니다. 역할 멤버 자격만을 부울 (멤버 또는 비멤버) 인 반면 클레임을 사용자의 id 및 멤버 자격에 대 한 풍부한 정보를 포함할 수 있습니다.
+    - ASP.NET Identity은 클레임 기반 인증을 지원 합니다. 여기서 사용자의 id는 클레임 집합으로 표시 됩니다. 개발자는 클레임을 사용 하 여 역할에서 허용 하는 것 보다 사용자의 id를 설명할 때 훨씬 더 많은 정보를 사용할 수 있습니다. 역할 멤버 자격은 부울 (멤버 또는 비 멤버) 뿐 이지만 클레임에는 사용자의 id 및 멤버 자격에 대 한 다양 한 정보가 포함 될 수 있습니다.
 - **소셜 로그인 공급자**
 
-    - 쉽게 응용 프로그램에 Microsoft 계정, Facebook, Twitter, Google 및 기타와 같은 소셜 로그인을 추가 하 고 응용 프로그램에서 사용자 고유의 데이터를 저장할 수 있습니다.
+    - Microsoft 계정, Facebook, Twitter, Google 등의 소셜 로그인을 응용 프로그램에 쉽게 추가 하 고 사용자 관련 데이터를 응용 프로그램에 저장할 수 있습니다.
 
 - **OWIN 통합**
 
-    - ASP.NET 인증은 이제 OWIN 미들웨어는 OWIN 기반 호스트에 사용할 수 있는 기반으로 합니다. System.Web에 대 한 종속성을 없습니다 ASP.NET Id. 완전 한 준수 상태가 OWIN 프레임 워크 이며 호스팅되는 OWIN 응용 프로그램에서 사용할 수 있습니다.
-    - ASP.NET Id 로그-/ 로그 아웃 웹 사이트의 사용자에 대 한 OWIN 인증을 사용합니다. 이 FormsAuthentication 쿠키를 생성 하려면를 사용 하는 대신 응용 프로그램을 사용 하 여 OWIN CookieAuthentication 수행 하는 것을 의미 합니다.
+    - ASP.NET 인증은 이제 모든 OWIN 기반 호스트에서 사용할 수 있는 OWIN 미들웨어를 기반으로 합니다. ASP.NET Identity은 System.web에 종속 되지 않습니다. 완벽 하 게 호환 되는 OWIN 프레임 워크 이며 모든 OWIN 호스팅된 응용 프로그램에서 사용할 수 있습니다.
+    - ASP.NET Identity은 웹 사이트에서 사용자의 로그인/로그 아웃에 대해 OWIN 인증을 사용 합니다. 즉, FormsAuthentication를 사용 하 여 쿠키를 생성 하는 대신 응용 프로그램에서 OWIN CookieAuthentication를 사용 하 여이 작업을 수행 합니다.
 - **NuGet 패키지**
 
-    - ASP.NET Id는 Visual Studio 2017을 사용 하 여 제공 되는 ASP.NET MVC, Web Forms 및 Web API 템플릿에서 설치 된 NuGet 패키지로 배분 됩니다. NuGet 갤러리에서이 NuGet 패키지를 다운로드할 수 있습니다.
-    - NuGet으로 ASP.NET Id 해제 패키지 쉽게 ASP.NET 팀이 새 기능 및 버그 수정에 반복 하 고 민첩 한 방식으로 이러한 개발자에 게 제공 합니다.
+    - ASP.NET Identity는 Visual Studio 2017와 함께 제공 되는 ASP.NET MVC, Web Forms 및 Web API 템플릿에 설치 되는 NuGet 패키지로 재배포할 수 있습니다. NuGet 갤러리에서이 NuGet 패키지를 다운로드할 수 있습니다.
+    - ASP.NET Identity를 NuGet 패키지로 해제 하면 ASP.NET 팀이 새로운 기능 및 버그 수정을 반복 하 고 민첩 한 방식으로 개발자에 게 제공할 수 있습니다.
 
-## <a name="get-started-with-aspnet-identity"></a>ASP.NET Id 시작
+## <a name="get-started-with-aspnet-identity"></a>ASP.NET Identity 시작
 
-ASP.NET Id는 ASP.NET MVC, Web Forms, Web API 및 SPA에 대 한 Visual Studio 2017 프로젝트 템플릿에서 사용 됩니다. 이 연습에서는 프로젝트 템플릿 등록, 로그인 및 사용자 로그 아웃 기능을 추가 하려면 ASP.NET Id를 사용 하는 방법을 보여 줍니다 됩니다 것입니다.
+ASP.NET Identity는 ASP.NET MVC, Web Forms, Web API 및 SPA에 대 한 Visual Studio 2017 프로젝트 템플릿에서 사용 됩니다. 이 연습에서는 프로젝트 템플릿이 ASP.NET Identity를 사용 하 여 사용자를 등록 하 고 로그인 하 고 로그 아웃 하는 기능을 추가 하는 방법을 설명 합니다.
 
-ASP.NET Id는 다음 절차를 사용 하 여 구현 됩니다. 이 문서의 목적은 ASP.NET Id;의 높은 수준의 개요를 제공 하는 것 단계별로 따르거나 세부 정보를 읽었습니다. 사용자, 역할 및 프로필 정보를 추가 하려면 새 API를 사용 하는 등 ASP.NET Id를 사용 하 여 앱을 만드는 방법에 대 한 자세한 내용은이 문서의 끝에 있는 다음 단계 섹션을 참조 하세요.
+ASP.NET Identity는 다음 절차를 사용 하 여 구현 됩니다. 이 문서의 목적은 ASP.NET Identity에 대 한 개략적인 개요를 제공 하는 것입니다. 이 단계를 단계별로 수행 하거나 세부 정보를 읽을 수 있습니다. 새 API를 사용 하 여 사용자, 역할 및 프로필 정보를 추가 하는 등 ASP.NET Identity를 사용 하 여 앱을 만드는 방법에 대 한 자세한 내용은이 문서의 끝에 있는 다음 단계 섹션을 참조 하세요.
 
-1. 개별 계정을 사용 하 여 ASP.NET MVC 응용 프로그램을 만듭니다. ASP.NET MVC, Web Forms, Web API, SignalR 등 ASP.NET Id를 사용할 수 있습니다. 이 문서의 ASP.NET MVC 응용 프로그램을 사용 하 여 시작 하겠습니다.  
+1. 개별 계정으로 ASP.NET MVC 응용 프로그램을 만듭니다. ASP.NET MVC, Web Forms, Web API, SignalR 등에서 ASP.NET Identity를 사용할 수 있습니다. 이 문서에서는 ASP.NET MVC 응용 프로그램부터 시작 합니다.  
   
     ![](introduction-to-aspnet-identity/_static/image1.png)
-2. 만든된 프로젝트를 ASP.NET Id에 대 한 다음 세 가지 패키지를 포함합니다.
+2. 만든 프로젝트에는 ASP.NET Identity에 대 한 다음 3 개의 패키지가 포함 됩니다.
 
     - [`Microsoft.AspNet.Identity.EntityFramework`](http://www.nuget.org/packages/Microsoft.AspNet.Identity.EntityFramework/)  
-   이 패키지에는 ASP.NET Id 데이터 및 SQL Server에 대 한 스키마를 유지 하는 ASP.NET Identity의 Entity Framework 구현이 있습니다.
+   이 패키지에는 SQL Server에 대 한 ASP.NET Identity 데이터 및 스키마를 유지 하는 ASP.NET Identity Entity Framework 구현이 있습니다.
     - [`Microsoft.AspNet.Identity.Core`](http://www.nuget.org/packages/Microsoft.AspNet.Identity.Core/)  
-   이 패키지에는 ASP.NET Id에 대 한 핵심 인터페이스에 있습니다. 이 패키지는 대상 다른 지 속성와 같은 저장소 Azure Table Storage, NoSQL 데이터베이스 등 ASP.NET Id에 대 한 구현을 쓰는 데 사용할 수 있습니다.
+   이 패키지에는 ASP.NET Identity에 대 한 핵심 인터페이스가 있습니다. 이 패키지를 사용 하 여 Azure Table Storage, NoSQL 데이터베이스 등의 서로 다른 지 속성 저장소를 대상으로 하는 ASP.NET Identity에 대 한 구현을 작성할 수 있습니다.
     - [`Microsoft.AspNet.Identity.OWIN`](http://www.nuget.org/packages/Microsoft.AspNet.Identity.Owin/)  
-   이 패키지에는 ASP.NET 응용 프로그램에서 ASP.NET Id를 사용 하 여 OWIN 인증에 연결 하는 데 사용 되는 기능이 들어 있습니다. 이 응용 프로그램 및 쿠키를 생성 하려면 OWIN 쿠키 인증 미들웨어를 호출 하 기능에서 로그인을 추가할 때 사용 됩니다.
-3. 사용자를 만드는 중입니다.  
-   응용 프로그램을 시작 하 고 클릭 합니다 **등록** 링크는 사용자를 만듭니다. 다음 이미지는 사용자 이름 및 암호를 수집 하는 등록 페이지를 보여 줍니다.  
+   이 패키지에는 ASP.NET 응용 프로그램의 ASP.NET Identity에 OWIN 인증을 연결 하는 데 사용 되는 기능이 포함 되어 있습니다. 응용 프로그램에 로그인 기능을 추가 하 고 OWIN 쿠키 인증 미들웨어를 호출 하 여 쿠키를 생성할 때 사용 됩니다.
+3. 사용자 만들기  
+   응용 프로그램을 시작 하 고 **등록** 링크를 클릭 하 여 사용자를 만듭니다. 다음 그림은 사용자 이름 및 암호를 수집 하는 등록 페이지를 보여 줍니다.  
   
     ![](introduction-to-aspnet-identity/_static/image2.png)  
   
-   사용자가 선택 하는 경우는 **등록** 단추를는 `Register` Account 컨트롤러의 작업은 아래 강조 표시 된 대로 ASP.NET Identity API를 호출 하 여 사용자를 만듭니다.
+   사용자가 **등록** 단추를 선택 하면 계정 컨트롤러의 `Register` 작업에서 아래 강조 표시 된 것 처럼 ASP.NET Identity API를 호출 하 여 사용자를 만듭니다.
 
     [!code-csharp[Main](introduction-to-aspnet-identity/samples/sample1.cs?highlight=8-9)]
-4. 서명하세요.  
-   사용자 성공적으로 만들어진 경우 그녀는 로그인 하 여는 `SignInAsync` 메서드.  
+4. 로그인합니다.  
+   사용자가 성공적으로 만들어지면 `SignInAsync` 메서드로 로그인 됩니다.  
 
     [!code-csharp[Main](introduction-to-aspnet-identity/samples/sample6.cs?highlight=12)]
 
-   합니다 `SignInManager.SignInAsync` 메서드를 생성 한 [ClaimsIdentity](https://msdn.microsoft.com/library/system.security.claims.claimsidentity.aspx)합니다. ASP.NET Id 및 OWIN 쿠키 인증 클레임 기반 시스템 이므로, 사용자에 대 한 ClaimsIdentity를 생성할 앱 프레임 워크에 필요 합니다. ClaimsIdentity에 사용자가 속한 역할 등 사용자에 대 한 모든 클레임에 대 한 정보가 있습니다.   
+   `SignInManager.SignInAsync` 메서드는 [ClaimsIdentity](https://msdn.microsoft.com/library/system.security.claims.claimsidentity.aspx)을 생성 합니다. ASP.NET Identity 및 OWIN 쿠키 인증은 클레임 기반 시스템 이므로 프레임 워크를 사용 하려면 앱에서 사용자에 대 한 ClaimsIdentity를 생성 해야 합니다. ClaimsIdentity에는 사용자가 속한 역할 등 사용자에 대 한 모든 클레임에 대 한 정보가 있습니다.   
  
 5. 로그 오프 합니다.  
-   선택 된 **로그 오프** account 컨트롤러의 로그 오프 작업을 호출 하는 링크입니다. 
+   계정 컨트롤러에서 로그 오프 작업을 호출 하려면 **로그 오프** 링크를 선택 합니다. 
 
     [!code-csharp[Main](introduction-to-aspnet-identity/samples/sample5.cs?highlight=6)]
 
-   강조 표시 된 코드 위의 OWIN `AuthenticationManager.SignOut` 메서드. 이 비슷합니다 [FormsAuthentication.SignOut](https://msdn.microsoft.com/library/system.web.security.formsauthentication.signout.aspx) 에서 사용 하는 메서드는 [FormsAuthentication](https://msdn.microsoft.com/library/system.web.security.formsauthenticationmodule.aspx) Web Forms에서 모듈입니다.
+   위의 강조 표시 된 코드는 OWIN `AuthenticationManager.SignOut` 메서드를 보여 줍니다. 이는 Web Forms의 [FormsAuthentication](https://msdn.microsoft.com/library/system.web.security.formsauthenticationmodule.aspx) 모듈에서 사용 하는 SignOut 메서드와 유사 합니다 [.](https://msdn.microsoft.com/library/system.web.security.formsauthentication.signout.aspx)
 
-## <a name="components-of-aspnet-identity"></a>ASP.NET Id의 구성 요소
+## <a name="components-of-aspnet-identity"></a>ASP.NET Identity 구성 요소
 
-아래 다이어그램에서는 ASP.NET Id 시스템의 구성 요소를 보여 줍니다 (선택 [이](introduction-to-aspnet-identity/_static/image3.png) 또는 다이어그램을 확대) 합니다. 녹색에서 패키지를 ASP.NET Id 시스템을 구성 합니다. 다른 모든 패키지는 ASP.NET 응용 프로그램의 ASP.NET Id 시스템을 사용 하는 데 필요한 종속성입니다.
+아래 다이어그램은 ASP.NET Identity 시스템의 구성 요소를 보여 줍니다. [이](introduction-to-aspnet-identity/_static/image3.png) 구성 요소를 확장 하려면 다이어그램에서 선택 합니다. 녹색의 패키지는 ASP.NET Identity 시스템을 구성 합니다. 다른 모든 패키지는 ASP.NET 응용 프로그램에서 ASP.NET Identity 시스템을 사용 하는 데 필요한 종속성입니다.
 
 [![](introduction-to-aspnet-identity/_static/image5.png)](introduction-to-aspnet-identity/_static/image4.png)
 
-다음은 이전에 언급 되지 않은 NuGet 패키지의 간략 한 설명입니다.
+다음은 앞에서 언급 되지 않은 NuGet 패키지에 대 한 간단한 설명입니다.
 
 - [Microsoft.Owin.Security.Cookies](http://www.nuget.org/packages/Microsoft.Owin.Security.Cookies/)  
- 응용 프로그램이 쿠키를 사용할 수 있게 해 주는 미들웨어 기반 인증, ASP와 비슷합니다. NET의 폼 인증입니다.
+ 응용 프로그램에서 ASP와 비슷한 쿠키 기반 인증을 사용할 수 있도록 하는 미들웨어입니다. NET의 폼 인증.
 - [EntityFramework](http://www.nuget.org/packages/EntityFramework/)  
- Entity Framework는 관계형 데이터베이스에 대 한 Microsoft의 권장 되는 데이터 액세스 기술입니다.
+ Entity Framework 관계형 데이터베이스에 대해 Microsoft에서 권장 하는 데이터 액세스 기술입니다.
 
-## <a name="migrating-from-membership-to-aspnet-identity"></a>멤버 자격에서 ASP.NET Id로 마이그레이션
+## <a name="migrating-from-membership-to-aspnet-identity"></a>멤버 자격에서 ASP.NET Identity로 마이그레이션
 
-곧 새 ASP.NET Id 시스템에 ASP.NET 멤버 자격 또는 단순 멤버 자격을 사용 하는 기존 앱 마이그레이션하는 방법에 지침을 제공 하기를 바랍니다.
+ASP.NET 멤버 자격 또는 간단한 구성원 자격을 사용 하는 기존 앱을 새 ASP.NET Identity 시스템으로 마이그레이션하는 방법에 대 한 지침을 곧 제공할 예정입니다.
 
 ## <a name="next-steps"></a>다음 단계
 
-- [Facebook 및 Google OAuth2 및 OpenID Sign on을 사용 하 여 ASP.NET MVC 5 앱 만들기](../../../mvc/overview/security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on.md)  
- 자습서는 ASP.NET Id API를 사용 하 여 Google 및 Facebook을 사용 하 여 인증 하는 방법과 사용자 데이터베이스에 대 한 프로필 정보를 추가 합니다.
-- [인증 및 SQL DB를 사용 하 여 ASP.NET MVC 앱을 만들고 Azure App Service에 배포](https://docs.microsoft.com/aspnet/core/security/authorization/secure-data)  
- 이 자습서에는 사용자 및 역할에 추가할 Id API를 사용 하는 방법을 보여 줍니다.
+- [Facebook 및 Google OAuth2 및 Openid connect Sign-on을 사용 하 여 ASP.NET MVC 5 앱 만들기](../../../mvc/overview/security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on.md)  
+ 이 자습서에서는 ASP.NET Identity API를 사용 하 여 사용자 데이터베이스에 프로필 정보를 추가 하 고 Google 및 Facebook으로 인증 하는 방법을 설명 합니다.
+- [인증 및 SQL DB를 사용하여 ASP.NET MVC 앱을 만들고 Azure App Service에 배포](https://docs.microsoft.com/aspnet/core/security/authorization/secure-data)  
+ 이 자습서에서는 Id API를 사용 하 여 사용자 및 역할을 추가 하는 방법을 보여 줍니다.
 - [https://github.com/rustd/AspnetIdentitySample](https://github.com/rustd/AspnetIdentitySample)  
- 기본 역할 및 사용자 지원 추가 하는 방법 및 역할 및 사용자 관리를 수행 하는 방법을 보여 주는 샘플 응용 프로그램입니다.
+ 기본 역할 및 사용자 지원을 추가 하는 방법과 역할 및 사용자 관리를 수행 하는 방법을 보여 주는 샘플 응용 프로그램입니다.

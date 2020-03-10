@@ -1,123 +1,123 @@
 ---
 uid: whitepapers/side-by-side-with-10
-title: .NET Framework 1.0 및 1.1의 ASP.NET-Side-by-side 실행 | Microsoft Docs
+title: ASP.NET .NET Framework 1.0 및 1.1의 Side-by-side 실행 | Microsoft Docs
 author: rick-anderson
-description: 이 백서는 타이밍의 버전 중 하나에서 실행 되도록 ASP.NET 웹 응용 프로그램 수 있도록 컴퓨터에.NET 1.0와.NET 1.1을 설치 하는 방법에 설명 하는 중...
+description: 이 백서에서는 컴퓨터에 .NET 1.0 및 .NET 1.1를 모두 설치 하 여 ASP.NET 웹 응용 프로그램이 두 버전의 fram에서 실행 되도록 하는 방법에 대해 설명 합니다.
 ms.author: riande
 ms.date: 02/10/2010
 ms.assetid: bdea2003-e964-4db5-9092-d56cc7560616
 msc.legacyurl: /whitepapers/side-by-side-with-10
 msc.type: content
 ms.openlocfilehash: c123545099013af71569bce4707f2b3eb732c344
-ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67411221"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78513833"
 ---
 # <a name="aspnet-side-by-side-execution-of-net-framework-10-and-11"></a>.NET Framework 1.0 및 1.1의 ASP.NET Side-by-Side 실행
 
-> 이 백서에는 ASP.NET 웹 응용 프로그램 프레임 워크의 버전 중 하나에서 실행할 수 있도록 컴퓨터에.NET 1.0와.NET 1.1을 설치 하는 방법을 설명 합니다.
+> 이 백서에서는 컴퓨터에 .NET 1.0 및 .NET 1.1를 모두 설치 하 여 ASP.NET 웹 응용 프로그램이 두 가지 버전의 프레임 워크에서 실행 될 수 있도록 하는 방법을 설명 합니다.
 > 
 > ASP.NET 1.0 및 ASP.NET 1.1에 적용 됩니다.
 
-ASP.NET에서 실행 되 고 함께 동일한 컴퓨터에 설치 되어 있지만 다른 버전의.NET Framework를 사용 하는 경우 응용 프로그램 이라고 합니다. 다음 항목에서는-병렬 실행에 대 한 ASP.NET 응용 프로그램을 구성 하는 방법에 설명 하 고 하는 자세한 단계를 제공 합니다.
+ASP.NET에서는 응용 프로그램을 동일한 컴퓨터에 설치 하 고 다른 버전의 .NET Framework를 사용 하는 경우 함께 실행 하는 것으로 간주 됩니다. 다음 항목에서는 side-by-side 실행을 위해 ASP.NET 응용 프로그램을 구성 하는 방법에 대해 설명 하 고 다음에 대 한 자세한 단계를 제공 합니다.
 
-- [.NET Framework 버전 1.0 설치 하는 동안 웹 응용 프로그램의 매핑을 유지 관리](#1)
-- [특정 버전.NET Framework의 웹 응용 프로그램 맵](#2)
-- [웹 사이트를 사용 하는.NET Framework의 버전을 확인](#3)
+- [설치 하는 동안 .NET Framework 버전 1.0에 대 한 웹 응용 프로그램의 매핑을 유지 합니다.](#1)
+- [웹 응용 프로그램을 특정 버전의 .NET Framework에 매핑](#2)
+- [웹 사이트에서 사용 하는 .NET Framework 버전 찾기](#3)
 
-일반적으로 구성 요소 또는 응용 프로그램을 컴퓨터에 업데이트 되 면 이전 버전은 제거 되 고 최신 버전으로 대체 됩니다. 새 버전이 이전 버전과 호환 되지 않으면 일반적으로 응용 프로그램 구성 요소 또는 응용 프로그램 사용 중단 됩니다. .NET Framework 어셈블리 또는 동시에 동일한 컴퓨터에 설치할 응용 프로그램의 여러 버전을 허용 하는-병렬 실행에 대 한 지원을 제공 합니다. 여러 버전이 동시에 설치할 수 있으므로 관리 되는 응용 프로그램 다른 버전을 사용 하는 응용 프로그램에 영향을 주지 않고 사용할 버전을 선택할 수 있습니다.
+일반적으로 컴퓨터에서 구성 요소나 응용 프로그램을 업데이트 하면 이전 버전이 제거 되 고 최신 버전으로 대체 됩니다. 새 버전이 이전 버전과 호환 되지 않는 경우이는 일반적으로 구성 요소 또는 응용 프로그램을 사용 하는 다른 응용 프로그램을 중단 합니다. .NET Framework는 side-by-side 실행을 지원 합니다 .이를 통해 여러 버전의 어셈블리 또는 응용 프로그램을 동시에 같은 컴퓨터에 설치할 수 있습니다. 여러 버전을 동시에 설치할 수 있으므로 관리 되는 응용 프로그램은 다른 버전을 사용 하는 응용 프로그램에 영향을 주지 않고 사용할 버전을 선택할 수 있습니다.
 
-기본적으로.NET Framework 버전 1.1 설치 하는 동안 기존 ASP.NET 응용 프로그램 모두 자동으로 재구성 됩니다.NET Framework의 최신 버전을 사용 하도록 합니다. ASP.NET 응용 프로그램을.NET Framework 1.1을 기본값으로 하지 않으려면 클릭 [여기](#1) 를 설치 하는 동안이 방지 하는 방법을 알아봅니다.
+기본적으로 .NET Framework 버전 1.1을 설치 하는 동안 모든 기존 ASP.NET 응용 프로그램은 최신 버전의 .NET Framework를 사용 하도록 자동으로 다시 구성 됩니다. ASP.NET 응용 프로그램을 기본적으로 .NET Framework 1.1으로 설정 하지 않으려는 경우 설치 하는 동안이를 방지 하는 방법을 알아보려면 [여기](#1) 를 클릭 하십시오.
 
-.NET Framework 1.1로 웹 서버를 업데이트 하 고 하나 이상의 웹 응용 프로그램에.NET Framework 1.0을 실행 하는 경우 인터넷 정보 서비스 (IIS) 스크립트 맵을 업데이트 해야 합니다. 스크립트 매핑은 특정 웹 응용 프로그램을.NET Framework의 버전에 대 한.aspx 파일 확장명을 매핑하려 메커니즘입니다. 클릭 [여기](#2) 에 특정 버전.NET Framework의 웹 응용 프로그램을 매핑하는 방법에 알아봅니다.
+1\.1 .NET Framework 웹 서버를 업데이트 하 고 하나 이상의 웹 응용 프로그램을 .NET Framework 1.0를 실행 하려면 인터넷 정보 서비스 (IIS) 스크립트 맵을 업데이트 해야 합니다. 스크립트 매핑은 특정 웹 응용 프로그램에 대 한 .aspx 파일 확장명을 .NET Framework 버전에 매핑하는 메커니즘입니다. 웹 응용 프로그램을 특정 버전의 .NET Framework에 매핑하는 방법을 알아보려면 [여기](#2) 를 클릭 하십시오.
 
-인터넷 정보 관리자 또는 ASP.NET IIS 등록 도구를 사용할 수 있습니다 (Aspnet\_regiis.exe) 특정 웹 응용 프로그램을 실행 중인.NET Framework 버전을 찾을 수 있습니다. 클릭 [여기](#3) 에 웹 사이트를 사용 하는.NET Framework의 버전을 확인 하는 방법을 알아봅니다.
+인터넷 정보 관리자 또는 ASP.NET IIS 등록 도구 (Aspnet\_regiis .exe)를 사용 하 여 특정 웹 응용 프로그램을 실행 하는 .NET Framework 버전을 찾을 수 있습니다. 웹 사이트에서 사용 하는 .NET Framework 버전을 확인 하는 방법을 알아보려면 [여기](#3) 를 클릭 하십시오.
 
-각 버전의.NET Framework는 자체의 Machine.config 파일은.NET Framework 1.1로 마이그레이션하는 경우 하나의 가져오기 고려 합니다. 결과적으로, 웹 관리자가 변경할 경우 Machine.config 파일,.NET Framework 1.1 Machine.config 파일에 이러한 변경 내용은 마이그레이션해야 합니다.
+.NET Framework 1.1으로 마이그레이션하는 경우의 한 가지 가져오기 고려 사항은 .NET Framework의 각 버전이 자체 Machine.config 파일을 사용 한다는 것입니다. 따라서 web.config 파일을 변경 하는 경우에는 해당 변경 내용을 .NET Framework 1.1 Machine.config 파일로 마이그레이션해야 합니다.
 
 <a id="1"></a>
 
-## <a name="maintaining-your-web-applications-mapping-to-net-framework-10-during-installation"></a>.NET Framework 1.0을 설치 하는 동안 웹 응용 프로그램의 매핑을 유지 관리
+## <a name="maintaining-your-web-applications-mapping-to-net-framework-10-during-installation"></a>설치 하는 동안 .NET Framework 1.0에 대 한 웹 응용 프로그램의 매핑 유지 관리
 
-기본적으로 모든 기존 ASP.NET 응용 프로그램 설치 중.NET Framework의 최신 버전을 사용 하기 위해 자동으로 재구성 됩니다. .NET Framework의 최신 버전을 사용 하 여 응용 프로그램 개선 사항과 새 버전에 포함 된 새로운 기능을 완전히 활용을 걸릴 수 있습니다. 동시에 응용 프로그램을 세부적으로 제어 하려는 웹 관리자는 업데이트, 자동 다시 매핑할 모든 기존 ASP.NET 응용 프로그램의.NET Framework를 설치 하는 동안 방지할 수 있습니다.
+기본적으로 모든 기존 ASP.NET 응용 프로그램은 설치 중에 자동으로 다시 구성 되어 최신 버전의 .NET Framework을 사용 합니다. 최신 버전의 .NET Framework을 사용 하 여 응용 프로그램은 새로운 릴리스에 포함 된 향상 된 기능 및 새로운 기능을 모두 활용할 수 있습니다. 이와 동시에 업데이트 되는 응용 프로그램을 세밀 하 게 제어할 수 있는 웹 관리자는 .NET Framework 설치 하는 동안 모든 기존 ASP.NET 응용 프로그램을 자동으로 다시 매핑할 수 없도록 할 수 있습니다.
 
-.NET Framework의 최신 버전으로 전체 ASP.NET 응용 프로그램의 자동 다시 매핑을 사용 하지 않으려면 웹 관리자 Dotnetfx.exe 설치 프로그램을 사용 하 여 /noaspupgrade 명령줄 옵션을 사용 수 있습니다.
+전체 ASP.NET 응용 프로그램이 최신 버전의 .NET Framework 자동으로 다시 매핑 되지 않도록 웹 관리자는 Dotnetfx.exe 설치 프로그램과 함께/noaspupgrade 명령줄 옵션을 사용할 수 있습니다.
 
-**ASP.NET 응용 프로그램을 최신 버전의 전체 다시 매핑을 방지 하기 위해**
+**ASP.NET 응용 프로그램의 전체 다시 매핑을 최신 버전으로 방지 하려면**
 
-1. 로 이동 **시작**합니다.
-2. 클릭할 **실행**합니다.
+1. **시작**으로 이동합니다.
+2. **실행**을 클릭 합니다.
 3. **cmd**를 입력합니다.
 4. **확인**을 클릭합니다.  
   
     ![](side-by-side-with-10/_static/image1.gif)
-5. 명령 프롬프트에서.NET Framework의 설치를 시작 하려면 다음 줄을 입력 합니다. **Dotnetfx.exe /c:"install /noaspupgrade?** .  
+5. 명령 프롬프트에서 다음 줄을 입력 하 여 .NET Framework 설치를 시작 합니다. **dotnetfx.exe/c: "install/noaspupgrade?**  
   
     ![](side-by-side-with-10/_static/image2.gif)
-6. 클릭 **예** Microsoft.NET Framework 1.1 설치에서 합니다. 이.NET Framework 1.1의 설치 프로세스를 시작 됩니다.  
+6. Microsoft .NET Framework 1.1 설치에서 **예** 를 클릭 합니다. 그러면 .NET Framework 1.1의 설치 프로세스가 시작 됩니다.  
   
     ![](side-by-side-with-10/_static/image3.gif)
 
 <a id="2"></a>
 
-## <a name="map-a-web-application-to-a-specific-version-of-the-net-framework"></a>특정 버전.NET Framework의 웹 응용 프로그램 맵
+## <a name="map-a-web-application-to-a-specific-version-of-the-net-framework"></a>웹 응용 프로그램을 특정 버전의 .NET Framework에 매핑
 
-ASP.NET IIS Registration Tool의 버전을 포함 하는 각 버전의.NET Framework (Aspnet\_regiis.exe). 이 도구에는 관리자를 웹 응용 프로그램을.NET Framework의 특정 버전에서 실행 되도록 지정할 수 있습니다. 이 웹 응용 프로그램을.NET Framework의 버전 매핑 이라고 합니다. 관리자를 선택 하 여 Aspnet 해야\_regiis.exe 웹 응용 프로그램과 관련 된.NET Framework의 버전에 해당 합니다. 예를 들어, 웹 사이트를.NET Framework 1.1을 사용 하도록 지정 하려는 관리자 Aspnet를 사용 해야\_regiis.exe.NET Framework 1.1을 사용 하 여 제공 되는 합니다.
+각 버전의 .NET Framework에는 ASP.NET IIS 등록 도구 (Aspnet\_regiis) 버전이 포함 되어 있습니다. 이 도구를 사용 하면 관리자가 특정 버전의 .NET Framework에서 웹 응용 프로그램을 실행 하도록 지정할 수 있습니다. 이를 .NET Framework 버전의 웹 응용 프로그램에 매핑 이라고 합니다. 관리자는 웹 응용 프로그램과 연결 될 .NET Framework 버전에 해당 하는 Aspnet\_regiis .exe를 선택 해야 합니다. 예를 들어 웹 사이트에서 .NET Framework 1.1를 사용 하도록 지정 하려는 관리자는 .NET Framework 1.1과 함께 제공 되는 Aspnet\_를 사용 해야 합니다.
 
-Aspnet\_regiis.exe 버전 1.0에 대 한 위치는:
+버전 1.0에 대 한 Aspnet\_regiis .exe는 다음 위치에 있습니다.
 
-- C:\WINDOWS\Microsoft.NET\Framework\\**v1.0.3705**\aspnet\_regiis
+- C:\windows\ microsoft.net \framework\\**v v1.0.3705**\aspnet\_regiis
 
-Aspnet\_regiis.exe 버전 1, 1에 대 한 위치는:
+버전 1, 1에 대 한 Aspnet\_은 다음 위치에 있습니다.
 
-- C:\WINDOWS\Microsoft.NET\Framework\\**v1.1.4322**\aspnet\_regiis
+- C:\windows\ microsoft.net \framework\\**v 1.1.4322**\aspnet\_regiis
 
-Aspnet\_regiis.exe 스크립트 매핑 웹 응용 프로그램에 대 한 두 가지 옵션을 제공 합니다.
+Aspnet\_regiis는 웹 응용 프로그램을 매핑하는 스크립트에 대 한 두 가지 옵션을 제공 합니다.
 
-- **-s** 설정 스크립트 맵을 경로 및 해당 하위 디렉터리입니다.
-- **-sn** 만 경로에 스크립트 맵을 설정 합니다.
+- **-** 는 경로 및 해당 하위 디렉터리에 스크립트 맵을 설정 합니다.
+- **-sn** 경로에 스크립트 맵을 설정 합니다.
 
-W3SVC/루트 형식에 정의 되어 있는 웹 응용 프로그램 IIS 메타 데이터 경로 정의 하는 경로 / {WebSiteNumber} / {응용 프로그램\_이름}. 예를 들어 기본 웹 사이트 아래에 있는 포털 이라는 웹 응용 프로그램, 메타 베이스 경로 W3SVC/1/루트/포털입니다.
+경로는 W3SVC/ROOT/{WebSiteNumber}/{Application\_Name} 형식으로 정의 되는 웹 응용 프로그램 IIS 메타 데이터 경로를 정의 합니다. 예를 들어 기본 웹 사이트 아래에 있는 Portal 이라는 웹 응용 프로그램의 경우 메타 베이스 경로는 W3SVC/1/ROOT/Portal입니다.
 
 ![](side-by-side-with-10/_static/image4.gif)
 
-메타 베이스 경로를 가져오는 메타 베이스 편집기 라는 도구를 사용할 수도 있습니다 note 합니다. Microsoft 지원 사이트에서이 도구를 다운로드할 수 있습니다 [ https://support.microsoft.com/default.aspx?scid=kb; en-우리; 232068 합니다.](https://support.microsoft.com/default.aspx?scid=kb;en-us;232068)
+메타 베이스 편집기 라는 도구를 사용 하 여 메타 베이스 경로를 가져올 수도 있습니다. 이 도구는 [https://support.microsoft.com/default.aspx?scid=kb; en-us; 232068](https://support.microsoft.com/default.aspx?scid=kb;en-us;232068) 의 Microsoft 지원 사이트에서 다운로드할 수 있습니다.
 
-- Aspnet 실행\_맵과 해당 subapplication regiis.exe-s W3SVC/1/루트/포털 IIS 포털 업데이트를 스크립팅 합니다.  
+- Aspnet\_regiis .exe/1/ROOT/Portal을 실행 하 여 포털 IIS 스크립트 맵과 해당 하위 응용 프로그램을 업데이트 합니다.  
   
     ![](side-by-side-with-10/_static/image5.gif)
 
-- Aspnet 실행\_regiis.exe-sn W3SVC/1/루트/포털 포털 IIS 스크립트를 업데이트 하에 매핑하는 포털에서 응용 프로그램에 영향을 주지 않고? s 하위 디렉터리입니다.  
+- 포털의 하위 디렉터리에 있는 응용 프로그램에 영향을 주지 않고 포털 IIS 스크립트 맵을 업데이트 하려면 Aspnet-sn W3SVC/1/ROOT/Portal\_를 실행 합니다.  
   
     ![](side-by-side-with-10/_static/image6.gif)
 
 <a id="3"></a>
 
-## <a name="find-the-net-framework-version-that-a-web-application-is-using"></a>웹 응용 프로그램을 사용 하는.NET Framework 버전 확인
+## <a name="find-the-net-framework-version-that-a-web-application-is-using"></a>웹 응용 프로그램에서 사용 하는 .NET Framework 버전 찾기
 
-관리자로는 인터넷 서비스 관리자를 사용 하 여 웹 사이트를 실행 하는.NET Framework의 버전을 찾을 수 있습니다. 다른 운영 체제 버전 다르게 인터넷 서비스 관리자를 시작합니다. 서비스 관리자를 시작 하려면 아래에 나열 된 단계를 수행 합니다.
+관리자는 Internet Service Manager를 사용 하 여 웹 사이트를 실행 하는 .NET Framework 버전을 찾을 수 있습니다. 서로 다른 운영 체제 버전은 인터넷 Service Manager를 다르게 시작 합니다. Service manager를 시작 하려면 아래 나열 된 단계를 따르세요.
 
-**인터넷 서비스 관리자를 시작 하려면**
+**인터넷 Service Manager를 시작 하려면**
 
-1. 로 이동 **시작**합니다.
-2. 클릭할 **실행**합니다.
-3. 형식 **inetmgr**합니다.  
+1. **시작**으로 이동합니다.
+2. **실행**을 클릭 합니다.
+3. **Inetmgr**을 입력 합니다.  
   
     ![](side-by-side-with-10/_static/image7.gif)
-4. 인터넷 서비스 관리자에서 웹 응용 프로그램 확인 하려는.NET Framework의 버전을 선택 합니다.  
+4. 인터넷 Service Manager에서 보려는 .NET Framework의 버전을 포함 하는 웹 응용 프로그램을 선택 합니다.  
   
     ![](side-by-side-with-10/_static/image8.gif)
-5. 웹 응용 프로그램을 마우스 오른쪽 단추로 클릭 하 고 클릭 **속성입니다.**  
+5. 웹 응용 프로그램을 마우스 오른쪽 단추로 클릭 하 고 속성을 클릭 **합니다.**  
   
     ![](side-by-side-with-10/_static/image9.gif)
-6. 속성 창에서 선택 **구성 합니다.**  
+6. 속성 창에서 구성을 선택 **합니다.**  
   
     ![](side-by-side-with-10/_static/image10.gif)
-7. 응용 프로그램 매핑 테이블에서 선택 **.aspx**, 클릭 **편집**합니다.  
+7. 응용 프로그램 매핑 테이블에서 **.aspx**를 선택 하 고 **편집**을 클릭 합니다.  
   
     ![](side-by-side-with-10/_static/image11.gif)
-8. **실행 파일** 텍스트 상자를 스크롤하여 버전 디렉터리를 살펴봅니다. 버전 디렉터리 v.1.1.4322 인 경우 응용 프로그램이.NET Framework 1.1에 매핑됩니다. 반대로, 버전 디렉터리 v1.0.3705 인 경우 응용 프로그램이.NET Framework 1.0에 매핑됩니다.  
+8. **실행 파일** 텍스트 상자에서 스크롤하여 버전 디렉터리를 확인 합니다. 버전 디렉터리가 1.1.4322 인 경우 응용 프로그램은 .NET Framework 1.1에 매핑됩니다. 반대로 버전 디렉터리가 v v1.0.3705 인 경우 응용 프로그램은 .NET Framework 1.0에 매핑됩니다.  
   
     ![](side-by-side-with-10/_static/image12.gif)

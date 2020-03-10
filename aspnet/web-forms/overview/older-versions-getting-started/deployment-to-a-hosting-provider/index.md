@@ -1,23 +1,23 @@
 ---
 uid: web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/index
-title: ASP.NET 4-SQL Server Compact Visual Studio를 사용 하 여를 사용 하 여 웹 배포 | Microsoft Docs
+title: ASP.NET 4-Visual Studio를 사용 하 여 SQL Server Compact 웹 배포 | Microsoft Docs
 author: rick-anderson
-description: 이 자습서 시리즈에 사용 하는 SQL Server Compact 사용 가능한 인터넷을 통해 타사 h에 배포 하 여 ASP.NET 웹 응용 프로그램을 만드는 방법을 보여 줍니다...
+description: 이 자습서 시리즈는 인터넷을 통해 사용할 수 있는 SQL Server Compact를 사용 하는 ASP.NET 웹 응용 프로그램을 타사 h ...로 배포 하는 방법을 보여 줍니다.
 ms.author: riande
 ms.date: 11/29/2011
 ms.assetid: 6798c7e4-f08e-4802-9fa5-443f67d5df62
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider
 msc.type: chapter
 ms.openlocfilehash: bb9a47eeb4197348e85bb469b68c0055e7c696a0
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65119451"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78514697"
 ---
 # <a name="aspnet-4---web-deployment-with-sql-server-compact-using-visual-studio"></a>ASP.NET 4 - Visual Studio를 사용하여 SQL Server Compact로 웹 배포
 
-> 이 자습서 시리즈를 사용 하는 SQL Server Compact 사용 가능한 인터넷을 통해 타사 호스팅 공급자에 배포 하 여 ASP.NET 웹 응용 프로그램을 확인 하는 방법을 보여 줍니다. Visual Studio 2012 RC 또는 Visual Studio 2010에 필요합니다. 배포 기능에 대 한 자세한 최신 정보 또는 SQL Server Compact 이외의 SQL Server 버전을 배포 하는 방법에 대 한 정보를 참조 하세요 [Visual Studio를 사용 하 여 ASP.NET 웹 배포](../../deployment/visual-studio-web-deployment/introduction.md)합니다.
+> 이 자습서 시리즈에서는 ASP.NET 웹 응용 프로그램을 SQL Server Compact 사용 하 여 인터넷을 통해 사용할 수 있는 웹 응용 프로그램을 타사 호스팅 공급자에 게 배포 하는 방법을 보여 줍니다. Visual Studio 2012 RC 또는 Visual Studio 2010가 필요 합니다. 배포 기능에 대 한 최신 정보 또는 SQL Server Compact 이외의 SQL Server 버전을 배포 하는 방법에 대 한 자세한 내용은 [Visual Studio를 사용 하 여 웹 배포 ASP.NET](../../deployment/visual-studio-web-deployment/introduction.md)를 참조 하세요.
 
 - [SQL Server Compact를 사용하여 Visual Studio 웹 배포 - 소개](deployment-to-a-hosting-provider-introduction-1-of-12.md)
 - [SQL Server Compact를 사용하여 Visual Studio 웹 배포 - SQL Server Compact 데이터베이스 배포](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12.md)

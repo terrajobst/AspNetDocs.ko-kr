@@ -1,23 +1,23 @@
 ---
 uid: mvc/overview/older-versions-1/contact-manager/index
-title: Contact Manager | Microsoft Docs
+title: 연락처 관리자 | Microsoft Docs
 author: rick-anderson
-description: 전체 연락처 관리 응용 프로그램 빌드 시작부터 완료 하는 방법.
+description: 전체 연락처 관리 응용 프로그램을 빌드하는 방법부터 완료까지
 ms.author: riande
 ms.date: 09/28/2011
 ms.assetid: 6b0f1fd7-6768-4549-ae9c-be9131103c4d
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager
 msc.type: chapter
 ms.openlocfilehash: 3ec9811be5afc00a126936529480082bf2d620e9
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65124135"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78470315"
 ---
 # <a name="contact-manager"></a>연락처 관리
 
-> 전체 연락처 관리 응용 프로그램 빌드 시작부터 완료 하는 방법.
+> 전체 연락처 관리 응용 프로그램을 빌드하는 방법부터 완료까지
 
 - [반복 #1 – 애플리케이션 만들기(C#)](iteration-1-create-the-application-cs.md)
 - [반복 #2 – 애플리케이션 모양 꾸미기(C#)](iteration-2-make-the-application-look-nice-cs.md)

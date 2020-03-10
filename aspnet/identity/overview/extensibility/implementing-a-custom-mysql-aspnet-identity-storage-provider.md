@@ -10,11 +10,11 @@ ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/extensibility/implementing-a-custom-mysql-aspnet-identity-storage-provider
 msc.type: authoredcontent
 ms.openlocfilehash: 2f0b47d45bce82c71d1864536309f9e2ffed2d63
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519130"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78500069"
 ---
 # <a name="implementing-a-custom-mysql-aspnet-identity-storage-provider"></a>사용자 지정 MySQL ASP.NET Identity 스토리지 공급자 구현
 
@@ -40,7 +40,7 @@ ms.locfileid: "76519130"
 
 ## <a name="the-steps-you-will-perform"></a>수행 하는 단계
 
-이 자습서에서는 다음 작업을 수행하게 됩니다.
+이 자습서에서는 다음 작업을 수행합니다.
 
 1. Azure에서 MySQL 데이터베이스 만들기
 2. MySQL에서 ASP.NET Identity 테이블 만들기
@@ -121,7 +121,7 @@ MySQL 저장소 공급자를 만드는 단계를 수행 하기 전에 저장소 
 5. IdentityMySQLDemo 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가**, **참조, 솔루션, 프로젝트** 를 차례로 선택한 다음, 프로젝트를 선택 하 고 **확인**을 클릭 합니다.
 6. IdentityMySQLDemo 프로젝트에서 다음에 대 한 모든 참조를 바꿉니다.  
     `using Microsoft.AspNet.Identity.EntityFramework;`  
-   를 사용하는 경우  
+   다음과 같이 바꿉니다.  
      `using AspNet.Identity.MySQL;`
 7. IdentityModels.cs에서 **ApplicationDbContext** 를 **MySqlDatabase** 에서 파생 하도록 설정 하 고 연결 이름과 함께 단일 매개 변수를 사용 하는 생성자를 포함 합니다.  
 

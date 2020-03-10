@@ -10,11 +10,11 @@ ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/extensibility/overview-of-custom-storage-providers-for-aspnet-identity
 msc.type: authoredcontent
 ms.openlocfilehash: 21baedf6285b411f89627df9ca25d47a2a42e387
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519104"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78472223"
 ---
 # <a name="overview-of-custom-storage-providers-for-aspnet-identity"></a>ASP.NET Identity에 대한 사용자 지정 스토리지 공급자 개요
 
@@ -253,15 +253,15 @@ UserStore 클래스 내에서 작업을 수행 하기 위해 만든 데이터 �
 - 블로그: [ASP.NET Identity 구현](http://odetocode.com/blogs/scott/archive/2014/01/20/implementing-asp-net-identity.aspx)
 - 자습서 및 GIT 코드: [Simple. Data Asp.Net Id 공급자](http://designcoderelease.blogspot.co.uk/2015/03/simpledata-aspnet-identity-provider.html)
 - 자습서:[기본 id 계정 설정 및 외부 DB에서 가리키기](http://typecastexception.com/post/2013/10/27/Configuring-Db-Connection-and-Code-First-Migration-for-Identity-Accounts-in-ASPNET-MVC-5-and-Visual-Studio-2013.aspx) [@xivSolutions](https://twitter.com/xivSolutions)합니다.
-- 자습서[: 사용자 지정 MySQL ASP.NET Identity 저장소 공급자 구현](implementing-a-custom-mysql-aspnet-identity-storage-provider.md)
+- 자습서[: 사용자 지정 MySQL ASP.NET Identity 저장소 공급자](implementing-a-custom-mysql-aspnet-identity-storage-provider.md) 구현
 - [SoftFluent](http://www.softfluent.com/) 별 [엔터티](http://blog.codefluententities.com/2014/04/30/asp-net-identity-v2-and-codefluent-entities/)
 - James Randall, "의 [Azure Table Storage](https://www.nuget.org/packages/accidentalfish.aspnet.identity.azure/) 입니다.
-- Azure Table Storage: [AspNet. Identity.](https://github.com/stuartleeks/leeksnet.AspNet.Identity.TableStorage) [@stuartleeks](https://twitter.com/stuartleeks).
+- Azure Table Storage: [AspNet. id. TableStorage](https://github.com/stuartleeks/leeksnet.AspNet.Identity.TableStorage) 를 [@stuartleeks](https://twitter.com/stuartleeks)합니다.
 - [Daniel Wertheim의](https://github.com/danielwertheim/mycouch.aspnet.identity)
-- 탄력적 Searc[h:](https://github.com/bmbsqd/elastic-identity) Bombsquad AB에서 탄력적 id를 확인 합니다.
+- 탄력적 Searc[h: Bombsquad AB에서 탄력적 Id를](https://github.com/bmbsqd/elastic-identity).
 - [MongoDB](http://www.nuget.org/packages/MongoDB.AspNet.Identity/) Jonathan Sheely Jonathan Sheely.
 - [Nhibernate](https://github.com/milesibastos/NHibernate.AspNet.Identity) Milesi Bastos by를 확인 합니다.
 - [@tourismgeek](https://twitter.com/tourismgeek) [RavenDB](http://www.nuget.org/packages/AspNet.Identity.RavenDB/1.0.0) .
 - [RavenDB.AspNet.Identity](https://github.com/ILMServices/RavenDB.AspNet.Identity) by [ILMServices](http://www.ilmservice.com/).
-- Redis: [Redis.AspNet.Identity](https://github.com/aminjam/Redis.AspNet.Identity)
-- "데이터베이스 우선" 사용자 저장소에 대 한 EF 코드를 생성 하는 T4 템플릿: [AspNet. id. EntityFramework](https://github.com/cbfrank/AspNet.Identity.EntityFramework)
+- Redis [Redis.AspNet.Identity](https://github.com/aminjam/Redis.AspNet.Identity)
+- "Database first" 사용자 저장소에 대 한 EF 코드를 생성 하는 T4 템플릿: [AspNet.Identity.EntityFramework](https://github.com/cbfrank/AspNet.Identity.EntityFramework)

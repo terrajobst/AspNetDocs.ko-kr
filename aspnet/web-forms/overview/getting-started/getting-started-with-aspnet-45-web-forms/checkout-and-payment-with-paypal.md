@@ -9,11 +9,11 @@ ms.assetid: 664ec95e-b0c9-4f43-a39f-798d0f2a7e08
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/checkout-and-payment-with-paypal
 msc.type: authoredcontent
 ms.openlocfilehash: 62d00a86c6c5845fb894896df65002c7086d039f
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74615143"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78455933"
 ---
 # <a name="checkout-and-payment-with-paypal"></a>PayPal로 체크 아웃 및 지불
 
@@ -31,7 +31,7 @@ ms.locfileid: "74615143"
 > 
 > 정문 장난감 샘플 응용 프로그램은 ASP.NET 웹 개발자가 사용할 수 있는 특정 ASP.NET 개념 및 기능을 보여 주도록 설계 되었습니다. 이 샘플 응용 프로그램은 확장성 및 보안과 관련 하 여 가능한 모든 상황에 대해 최적화 되지 않았습니다.
 
-## <a name="what-youll-learn"></a>학습 내용:
+## <a name="what-youll-learn"></a>학습할 내용:
 
 - 폴더의 특정 페이지에 대 한 액세스를 제한 하는 방법
 - 익명 쇼핑 카트에서 알려진 장바구니를 만드는 방법
@@ -92,10 +92,10 @@ ms.locfileid: "74615143"
 6. 이전과 마찬가지로 *사이트 .master* 파일을 마스터 페이지로 선택 합니다.
 7. 위의 동일한 단계를 사용 하 여 다음과 같은 추가 페이지를 *체크 아웃* 폴더에 추가 합니다.   
 
-    - CheckoutReview
-    - CheckoutComplete
-    - CheckoutCancel
-    - CheckoutError
+    - CheckoutReview.aspx
+    - CheckoutComplete.aspx
+    - CheckoutCancel.aspx
+    - CheckoutError.aspx
 
 ### <a name="add-a-webconfig-file"></a>Web.config 파일 추가
 
@@ -107,43 +107,43 @@ ms.locfileid: "74615143"
 3. *Web.config* 파일의 기존 XML 콘텐츠를 다음으로 바꿉니다.  
 
     [!code-xml[Main](checkout-and-payment-with-paypal/samples/sample4.xml)]
-4. *Web.config 파일을* 저장 합니다.
+4. *Web.config* 파일을 저장합니다.
 
 Web.config *파일은* 웹 응용 프로그램의 모든 알 수 없는 사용자가 *체크 아웃* 폴더에 포함 된 페이지에 대 한 액세스를 거부 하도록 지정 합니다. 그러나 사용자가 계정을 등록 하 고 로그온 한 경우에는 알려진 사용자가 되며 *Checkout* 폴더의 페이지에 액세스할 수 있습니다.
 
 ASP.NET 구성은 계층 구조를 따르며, 여기서 각 *web.config* 파일은 구성 설정이 있는 폴더와 그 아래에 있는 모든 하위 디렉터리에 구성 설정을 적용 합니다.
 
 <a id="SSLWebForms"></a>
-## <a name="enable-ssl-for-the-project"></a>프로젝트에 대해 SSL을 사용 하도록 설정
+## <a name="enable-ssl-for-the-project"></a>프로젝트에 SSL 사용
 
- SSL (SSL(Secure Sockets Layer))은 웹 서버와 웹 클라이언트가 암호화를 사용 하 여 더 안전 하 게 통신할 수 있도록 정의 된 프로토콜입니다. SSL을 사용 하지 않는 경우 클라이언트와 서버 간에 전송 되는 데이터는 네트워크에 물리적으로 액세스 하는 모든 사용자가 패킷 스니핑에 대해 열립니다. 또한 몇 가지 일반적인 인증 체계가 일반 HTTP를 통해 안전 하지 않습니다. 특히 기본 인증 및 폼 인증에서는 암호화 되지 않은 자격 증명을 보냅니다. 보안을 유지 하려면 이러한 인증 체계에서 SSL을 사용 해야 합니다. 
+ SSL(Secure Sockets Layer)은 웹 서버 및 웹 클라이언트가 암호화를 사용하여 더욱 안전하게 통신할 수 있도록 정의된 프로토콜입니다. SSL을 사용하지 않으면 네트워크에 실제로 액세스하여 패킷을 스니핑하는 누군가에게 클라이언트와 서버 간에 전송된 데이터가 노출됩니다. 또한 몇 가지 일반적인 인증 체계는 일반 HTTP를 통해서는 보호되지 않습니다. 특히, 기본 인증 및 폼 인증은 암호화되지 않은 자격 증명을 보냅니다. 보안을 위해서 인증 체계는 SSL을 사용해야 합니다. 
 
 1. **솔루션 탐색기**에서 **WingtipToys** 프로젝트를 클릭 한 다음 **F4** 키를 눌러 **속성** 창을 표시 합니다.
 2. **SSL 사용** 을 `true`으로 변경 합니다.
-3. 나중에 사용할 수 있도록 **SSL URL** 을 복사 합니다.   
+3. 나중에 사용할 수 있도록 **SSL URL** 을 복사합니다.   
  이전에 SSL 웹 사이트를 만들지 않은 경우 SSL URL이 `https://localhost:44300/` 됩니다 (아래 참조).   
     ![프로젝트 속성](checkout-and-payment-with-paypal/_static/image4.png)
 4. **솔루션 탐색기**에서 **WingtipToys** 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 클릭 합니다.
-5. 왼쪽 탭에서 **웹**을 클릭 합니다.
+5. 왼쪽 탭에서 **웹**을 클릭합니다.
 6. 이전에 저장 한 **SSL url** 을 사용 하도록 **프로젝트 url** 을 변경 합니다.   
-    프로젝트 웹 속성을 ![](checkout-and-payment-with-paypal/_static/image5.png)
-7. **Ctrl + S**를 눌러 페이지를 저장 합니다.
-8. **Ctrl+F5**를 눌러 애플리케이션을 실행합니다. Visual Studio는 SSL 경고를 방지할 수 있는 옵션을 표시 합니다.
-9. **예** 를 클릭 하 IIS Express SSL 인증서를 신뢰 하 고 계속 합니다.   
-    SSL 인증서 세부 정보를 IIS Express ![](checkout-and-payment-with-paypal/_static/image6.png)  
- 보안 경고가 표시 됩니다.
-10. **예** 를 클릭 하 여 localhost에 인증서를 설치 합니다.   
+    ![프로젝트 웹 속성](checkout-and-payment-with-paypal/_static/image5.png)
+7. **CTRL+S**키를 눌러 페이지를 저장합니다.
+8. **Ctrl+F5**를 눌러 애플리케이션을 실행합니다. Visual Studio에서 SSL 경고를 방지할 수 있도록 하는 옵션을 표시합니다.
+9. **예** 를 클릭하여 IIS Express SSL 인증서를 신뢰하고 계속합니다.   
+    ![IIS Express SSL 인증서 정보](checkout-and-payment-with-paypal/_static/image6.png)  
+ 보안 경고가 표시됩니다.
+10. **예** 를 클릭하여 인증서를 localhost에 설치합니다.   
     ![보안 경고 대화 상자](checkout-and-payment-with-paypal/_static/image7.png)  
- 브라우저 창이 표시 됩니다.
+ 브라우저 창이 표시됩니다.
 
 이제 SSL을 사용 하 여 웹 응용 프로그램을 로컬로 쉽게 테스트할 수 있습니다.
 
 <a id="OAuthWebForms"></a>
 ## <a name="add-an-oauth-20-provider"></a>OAuth 2.0 공급자 추가
 
-ASP.NET Web Forms는 멤버 자격과 인증에 대 한 고급 옵션을 제공 합니다. 이러한 향상 된 기능에는 OAuth가 포함 됩니다. OAuth는 웹, 모바일 및 데스크톱 응용 프로그램에서 간단한 표준 방법으로 보안 권한 부여를 허용 하는 개방형 프로토콜입니다. ASP.NET Web Forms 템플릿에서는 OAuth를 사용 하 여 Facebook, Twitter, Google 및 Microsoft를 인증 공급자로 노출 합니다. 이 자습서에서는 인증 공급자로 Google만 사용 하지만 공급자를 사용 하도록 코드를 쉽게 수정할 수 있습니다. 다른 공급자를 구현 하는 단계는이 자습서에 표시 되는 단계와 매우 비슷합니다.
+ASP.NET Web Forms는 멤버 자격 및 인증을 위해 개선된 옵션을 제공합니다. 이러한 개선 사항에는 OAuth가 포함됩니다. OAuth는 웹, 모바일 및 데스크톱 애플리케이션에서 간단한 표준 메서드로 보안 권한 부여를 허용하는 개방형 프로토콜입니다. ASP.NET Web Forms 템플릿에서는 OAuth를 사용 하 여 Facebook, Twitter, Google 및 Microsoft를 인증 공급자로 노출 합니다. 이 자습서에서는 인증 공급자로 Google만 사용하지만 다른 공급자를 사용하도록 코드를 쉽게 수정할 수 있습니다. 다른 공급자를 구현하는 단계도 이 자습서에 표시되는 단계와 매우 비슷합니다.
 
-이 자습서에서는 인증 외에도 역할을 사용 하 여 권한 부여를 구현 합니다. `canEdit` 역할에 추가 하는 사용자만 데이터를 변경할 수 있습니다 (연락처 만들기, 편집 또는 삭제).
+자습서에서는 인증 외에도 역할을 사용하여 권한 부여를 구현합니다. `canEdit` 역할에 추가한 사용자만 데이터를 변경할 수 있습니다(연락처 만들기, 편집 또는 삭제).
 
 > [!NOTE] 
 > 
@@ -152,29 +152,29 @@ ASP.NET Web Forms는 멤버 자격과 인증에 대 한 고급 옵션을 제공 
 다음 단계를 통해 Google 인증 공급자를 추가할 수 있습니다.
 
 1. *앱\_Start\Startup.Auth.cs* 파일을 엽니다.
-2. 메서드가 다음과 같이 표시 되도록 `app.UseGoogleAuthentication()` 메서드에서 주석 문자를 제거 합니다. 
+2. 메서드가 다음과 같이 나타나도록 `app.UseGoogleAuthentication()` 메서드에서 주석 문자를 제거합니다. 
 
     [!code-csharp[Main](checkout-and-payment-with-paypal/samples/sample5.cs)]
-3. [Google 개발자 콘솔로](https://console.developers.google.com/)이동 합니다. 또한 Google developer 메일 계정 (gmail.com)을 사용 하 여 로그인 해야 합니다. Google 계정이 없으면 **계정 만들기** 링크를 선택 합니다.   
-   다음으로 **Google 개발자 콘솔**을 볼 수 있습니다.   
-    Google 개발자 콘솔 ![](checkout-and-payment-with-paypal/_static/image8.png)
+3. [Google Developers Console](https://console.developers.google.com/)로 이동합니다. Google 개발자 메일 계정(gmail.com)으로 로그인해야 합니다. Google 계정이 없으면 **계정 만들기** 링크를 선택합니다.   
+   다음으로, **Google 개발자 콘솔**이 표시됩니다.   
+    ![Google Developers Console](checkout-and-payment-with-paypal/_static/image8.png)
 4. **프로젝트 만들기** 단추를 클릭 하 고 프로젝트 이름 및 ID (기본값을 사용할 수 있음)를 입력 합니다. 그런 다음 **규약 확인란** 을 클릭 하 고 **만들기** 단추를 클릭 합니다.  
 
     ![Google-새 프로젝트](checkout-and-payment-with-paypal/_static/image9.png)
 
-   몇 초 후에 새 프로젝트가 만들어지고 브라우저에 새 프로젝트 페이지가 표시 됩니다.
+   몇 초 내에 새 프로젝트가 만들어지고 브라우저에 새 프로젝트 페이지가 표시됩니다.
 5. 왼쪽 탭에서 **api &amp; auth**를 클릭 한 다음 **자격 증명**을 클릭 합니다.
 6. **OAuth**에서 **새 클라이언트 ID 만들기** 를 클릭 합니다.   
-   **클라이언트 ID 만들기** 대화 상자가 표시 됩니다.   
-    ![Google-클라이언트 ID 만들기](checkout-and-payment-with-paypal/_static/image10.png)
+   **Create Client ID** 대화 상자가 표시됩니다.   
+    ![Google - 클라이언트 ID 만들기](checkout-and-payment-with-paypal/_static/image10.png)
 7. **클라이언트 ID 만들기** 대화 상자에서 응용 프로그램 유형에 대 한 기본 **웹 응용 프로그램** 을 유지 합니다.
 8. 권한 있는 **JavaScript 원본을** 이 자습서의 앞부분에서 사용한 ssl URL (다른 ssl 프로젝트를 만들지 않은 경우`https://localhost:44300/`)으로 설정 합니다.   
-   이 URL은 응용 프로그램의 원본입니다. 이 샘플의 경우 localhost 테스트 URL만 입력 하면 됩니다. 그러나 localhost 및 production를 고려 하 여 여러 Url을 입력할 수 있습니다.
-9. 권한 있는 **리디렉션 URI** 를 다음으로 설정 합니다. 
+   이 URL이 애플리케이션의 원점입니다. 이 샘플의 경우 localhost 테스트 URL만 입력합니다. 그러나 localhost 및 production를 고려 하 여 여러 Url을 입력할 수 있습니다.
+9. **Authorized Redirect URI** 를 다음으로 설정합니다. 
 
     [!code-html[Main](checkout-and-payment-with-paypal/samples/sample6.html)]
 
-   이 값은 ASP.NET OAuth 사용자가 google OAuth 서버와 통신 하는 데 사용 하는 URI입니다. 위에서 사용한 SSL URL (다른 SSL 프로젝트를 만들지 않은 경우 `https://localhost:44300/`)을 명심 하세요.
+   이 값은 ASP.NET OAuth 사용자가 Google OAuth 서버와 통신하는 데 사용하는 URI입니다. 위에서 사용한 SSL URL (다른 SSL 프로젝트를 만들지 않은 경우 `https://localhost:44300/`)을 명심 하세요.
 10. **클라이언트 ID 만들기** 단추를 클릭 합니다.
 11. Google 개발자 콘솔의 왼쪽 메뉴에서 **동의 화면** 메뉴 항목을 클릭 한 다음 전자 메일 주소 및 제품 이름을 설정 합니다. 양식을 완료 했으면 **저장**을 클릭 합니다.
 12. **Api** 메뉴 항목을 클릭 하 고 아래로 스크롤하여 **Google + API**옆의 **끄기** 단추를 클릭 합니다.   
@@ -185,16 +185,16 @@ ASP.NET Web Forms는 멤버 자격과 인증에 대 한 고급 옵션을 제공 
 14. Visual Studio에서 **클라이언트 ID** 및 **클라이언트 암호** 를 복사 하 여 메서드에 붙여넣어 *Startup.Auth.cs* 페이지의 `UseGoogleAuthentication` 메서드를 업데이트 합니다. 아래 표시 된 **클라이언트 ID** 및 **클라이언트 암호** 값은 샘플 이며 작동 하지 않습니다. 
 
     [!code-csharp[Main](checkout-and-payment-with-paypal/samples/sample7.cs?highlight=64-65)]
-15. **Ctrl + F5** 키를 눌러 응용 프로그램을 빌드하고 실행 합니다. **로그인** 링크를 클릭 합니다.
+15. **CTRL+F5** 키를 눌러 애플리케이션을 빌드 및 실행합니다. **로그인** 링크를 클릭합니다.
 16. **다른 서비스를 사용 하 여 로그인**에서 **Google**을 클릭 합니다.  
     ![로그인](checkout-and-payment-with-paypal/_static/image11.png)
-17. 자격 증명을 입력 해야 하는 경우 자격 증명을 입력 하는 google 사이트로 리디렉션됩니다.  
-    ![Google-로그인](checkout-and-payment-with-paypal/_static/image12.png)
+17. 자격 증명을 입력해야 하는 경우 자격 증명을 입력할 google 사이트로 리디렉션됩니다.  
+    ![Google - 로그인](checkout-and-payment-with-paypal/_static/image12.png)
 18. 자격 증명을 입력 하면 방금 만든 웹 응용 프로그램에 대 한 권한을 부여 하 라는 메시지가 표시 됩니다.  
     ![프로젝트 기본 서비스 계정](checkout-and-payment-with-paypal/_static/image13.png)
-19. **수락**을 클릭 합니다. 이제 Google 계정을 등록할 수 있는 **WingtipToys** 응용 프로그램의 **등록** 페이지로 다시 리디렉션됩니다.  
-    Google 계정](checkout-and-payment-with-paypal/_static/image14.png)에 등록 ![
-20. Gmail 계정에 사용 되는 로컬 전자 메일 등록 이름을 변경 하는 옵션을 사용할 수 있지만 일반적으로 기본 전자 메일 별칭 (인증에 사용한 계정)을 유지 하려고 합니다. 위와 같이 **로그인을** 클릭 합니다.
+19. **Accept**를 클릭합니다. 이제 Google 계정을 등록할 수 있는 **WingtipToys** 응용 프로그램의 **등록** 페이지로 다시 리디렉션됩니다.  
+    ![Google 계정을 사용하여 등록](checkout-and-payment-with-paypal/_static/image14.png)
+20. Gmail 계정에 사용되는 로컬 전자 메일 등록 이름을 변경할 수 있지만 일반적으로 기본 전자 메일 별칭(즉, 인증에 사용하는 별칭)을 그대로 사용합니다. 위와 같이 **로그인을** 클릭 합니다.
 
 ### <a name="modifying-login-functionality"></a>로그인 기능 수정
 
@@ -381,7 +381,7 @@ PayPal에서 반환 된 후에는 정문 장난감 샘플 응용 프로그램의
 
 > [!NOTE] 
 > 
-> **잠깐만**
+> **팁**
 > 
 > *CheckoutReview* 페이지의 태그에서 `<ItemStyle>` 태그는 페이지 아래쪽의 **DetailsView** 컨트롤 내에 있는 항목의 스타일을 변경 하는 데 사용 됩니다. Visual Studio의 왼쪽 아래에 있는 **디자인** 을 선택 하 여 **디자인 뷰에서** 페이지를 본 다음, **detailsview** 컨트롤을 선택 하 고 **스마트 태그** (컨트롤의 오른쪽 위에 있는 화살표 아이콘)를 선택 하면 **DetailsView 작업**을 볼 수 있습니다.
 > 
@@ -482,7 +482,7 @@ PayPal에서 반환 된 후에는 정문 장난감 샘플 응용 프로그램의
  폴더에 대 한 **모든 파일 표시** 아이콘을 선택 해야 할 수도 있습니다.
 4. *Wingtiptoys* 데이터베이스 파일을 마우스 오른쪽 단추로 클릭 하 고 **열기**를 선택 합니다.  
     **서버 탐색기** 표시 됩니다.
-5. **Tables** 폴더를 확장 합니다.
+5. **테이블** 폴더를 확장합니다.
 6. **Orders**테이블을 마우스 오른쪽 단추로 클릭 하 고 **테이블 데이터 표시**를 선택 합니다.  
  **Orders** 테이블이 표시 됩니다.
 7. **PaymentTransactionID** 열을 검토 하 여 성공한 트랜잭션을 확인 합니다. 

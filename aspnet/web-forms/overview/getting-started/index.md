@@ -1,23 +1,23 @@
 ---
 uid: web-forms/overview/getting-started/index
-title: ASP.NET Web Forms를 사용 하 여 시작 | Microsoft Docs
+title: ASP.NET Web Forms 시작 | Microsoft Docs
 author: rick-anderson
-description: 설명에 대 한 ASP.NET Web Forms ASP.NET Web Forms 익숙한 끌어서 놓기, 이벤트 기반 모델을 사용 하 여 빌드 동적 웹 사이트 수 있습니다. 디자인 화면 및 hund...
+description: 익숙한 끌어서 놓기, 이벤트 기반 모델을 사용 하 여 동적 웹 사이트를 빌드할 수 있는 ASP.NET Web Forms ASP.NET Web Forms에 대해 알아봅니다. 디자인 화면 및 hund ...
 ms.author: riande
 ms.date: 08/08/2011
 ms.assetid: f645d3b1-1092-43c6-a28a-074b413924b4
 msc.legacyurl: /web-forms/overview/getting-started
 msc.type: chapter
 ms.openlocfilehash: d76e65ae807b1da97d07199e7f0fce21fbf14af6
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65133441"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78513617"
 ---
 # <a name="getting-started-with-aspnet-web-forms"></a>ASP.NET Web Forms 시작
 
-> Web Forms 모델 및 페이지를 만들고 컨트롤을 사용 하는 방법입니다.
+> Web Forms 모델 및 페이지를 만들고 컨트롤을 사용 하는 방법을 설명 합니다.
 
 - [ASP.NET 4.5 Web Forms 및 Visual Studio 2013 시작](getting-started-with-aspnet-45-web-forms/index.md)
 

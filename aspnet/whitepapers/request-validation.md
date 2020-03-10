@@ -2,93 +2,93 @@
 uid: whitepapers/request-validation
 title: 요청 유효성 검사-스크립트 공격 방지 | Microsoft Docs
 author: rick-anderson
-description: 이 문서에서는 여기서 기본적으로 응용 프로그램 금지에서 인코딩되지 않은 HTML 콘텐츠 submitt 처리 하는 asp.net 요청 유효성 검사 기능을 설명 하는 중...
+description: 이 문서에서는 기본적으로 응용 프로그램에서 인코딩되지 않은 HTML 콘텐츠 submitt ...를 처리 하지 못하도록 ASP.NET의 요청 유효성 검사 기능에 대해 설명 합니다.
 ms.author: riande
 ms.date: 02/10/2010
 ms.assetid: fa429113-5f8f-4ef4-97c5-5c04900a19fa
 msc.legacyurl: /whitepapers/request-validation
 msc.type: content
 ms.openlocfilehash: 807cccd6fe1acdd6359b014387abd3878840d4cd
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65130492"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78520583"
 ---
 # <a name="request-validation---preventing-script-attacks"></a>요청 유효성 검사 - 스크립트 공격 방지
 
-> 이 문서는 여기서 기본적으로 응용 프로그램 금지에서 서버로 전송 하는 인코딩되지 않은 HTML 콘텐츠를 처리 하는 asp.net 요청 유효성 검사 기능을 설명 합니다. 응용 프로그램 HTML 데이터를 안전 하 게 처리 하도록 디자인 된 경우에이 요청 유효성 검사 기능을 해제할 수 있습니다.
+> 이 문서에서는 기본적으로 응용 프로그램에서 서버에 전송 된 인코딩되지 않은 HTML 콘텐츠를 처리 하지 못하도록 하는 ASP.NET의 요청 유효성 검사 기능에 대해 설명 합니다. HTML 데이터를 안전 하 게 처리 하도록 응용 프로그램을 디자인 하는 경우이 요청 유효성 검사 기능을 사용 하지 않도록 설정할 수 있습니다.
 > 
 > ASP.NET 1.1 및 ASP.NET 2.0에 적용 됩니다.
 
-요청 유효성 검사, 버전 1.1부터 ASP.NET의 기능을 포함 하는 인코딩되지 않은 HTML 콘텐츠를 허용 하지 못하도록 서버를 방지 합니다. 이 기능은 가능해 집니다 클라이언트 스크립트 코드 또는 HTML 수 수 자신도 서버로 전송, 저장 및 다른 사용자에 게 표시 한 다음 몇 가지 스크립트 삽입 공격을 방지 하도록 설계 되었습니다. 여전히 좋습니다 모든 입력된 데이터를 유효성 검사를 적절 한 경우 HTML 인코딩합니다.
+버전 1.1부터 ASP.NET 기능 중 하나인 요청 유효성 검사는 서버에서 인코딩되지 않은 HTML을 포함한 콘텐츠를 허용하지 않도록 방지합니다. 이 기능은 클라이언트 스크립트 코드 또는 HTML을 무의식적으로 서버에 제출하고 저장한 다음 다른 사용자에게 제공할 수 있는 스크립트 삽입 공격을 방지하도록 설계되었습니다. 모든 입력 데이터의 유효성을 검사하고 적절한 경우 HTML로 인코딩하는 것이 좋습니다.
 
-예를 들어, 사용자의 전자 메일 주소 및 다음 저장소 데이터베이스에서 전자 메일 주소를 요청 하는 웹 페이지를 만들 있습니다. 사용자가 입력 &lt;스크립트&gt;경고 ("hello from 스크립트")&lt;/script&gt; 유효한 전자 메일 주소 대신 해당 데이터가 표시 되 면이 스크립트를 실행할 수 경우 콘텐츠가 제대로 인코딩되지 않았습니다. Asp.net 요청 유효성 검사 기능에서에서이 방지합니다.
+예를 들어 사용자의 전자 메일 주소를 요청 하 고 해당 전자 메일 주소를 데이터베이스에 저장 하는 웹 페이지를 만듭니다. 사용자가 유효한 전자 메일 주소 대신 &lt;스크립트&gt;경고 ("hello from SCRIPT")&lt;/스크립트&gt;를 입력 하는 경우 해당 데이터가 표시 되 면 콘텐츠가 제대로 인코딩되지 않은 경우이 스크립트를 실행할 수 있습니다. ASP.NET의 요청 유효성 검사 기능으로 인해이 문제가 발생 하지 않습니다.
 
-## <a name="why-this-feature-is-useful"></a>이 기능은 유용
+## <a name="why-this-feature-is-useful"></a>이 기능이 유용한 이유
 
-대부분의 사이트는 간단한 스크립트 삽입 공격에 열려 있는지 확인 하지 않습니다. 이러한 공격의 목적은 잠재적 해커의 사이트에 사용자를 리디렉션할 클라이언트 스크립트를 실행 하거나 HTML을 표시 하 여 사이트를 손상 시키기 인지 스크립트 주입 공격은 웹 개발자와 씨름 해야 하는 문제입니다.
+많은 사이트에서 간단한 스크립트 삽입 공격에 대해 공개 된 것을 인식 하지 못합니다. 이러한 공격의 목적이 HTML을 표시 하 여 사이트를 사용 하거나 잠재적으로 클라이언트 스크립트를 실행 하 여 사용자를 해커 사이트로 리디렉션하는 것이 든, 스크립트 삽입 공격은 웹 개발자가 경쟁 해야 하는 문제입니다.
 
-스크립트 삽입 공격 ASP.NET, ASP, 또는 다른 웹 개발 기술을 사용 하는 모든 웹 개발자에 게 문제가 됩니다.
+스크립트 삽입 공격은 ASP.NET, ASP 또는 기타 웹 개발 기술을 사용 하는지에 관계 없이 모든 웹 개발자에 게 중요 합니다.
 
-사전에 ASP.NET 요청 유효성 검사 기능을 해당 콘텐츠를 허용 하도록 결정 하는 개발자는 서버에서 처리 해야 하는 인코딩되지 않은 HTML 콘텐츠를 허용 하지 않음으로써 이러한 공격을 방지 합니다.
+ASP.NET 요청 유효성 검사 기능은 개발자가 해당 콘텐츠를 허용 하도록 결정 하지 않는 한 서버에서 인코딩되지 않은 HTML 콘텐츠를 처리할 수 없도록 하 여 이러한 공격을 사전에 방지 합니다.
 
-## <a name="what-to-expect-error-page"></a>예상 되는: 오류 페이지
+## <a name="what-to-expect-error-page"></a>예상치 못한 항목: 오류 페이지
 
-아래의 스크린 샷에서 몇 가지 샘플 ASP.NET 코드를 보여 줍니다.
+아래 스크린샷은 몇 가지 샘플 ASP.NET 코드를 보여 줍니다.
 
 ![](request-validation/_static/image1.png)
 
-이 코드 결과 텍스트 상자에 일부 텍스트를 입력할 수 있는 간단한 페이지에서 실행 단추를 클릭 하 고 텍스트 레이블 컨트롤에 표시:
+이 코드를 실행 하면 텍스트 상자에 일부 텍스트를 입력할 수 있는 간단한 페이지가 표시 되며 단추를 클릭 하 고 레이블 컨트롤에 텍스트를 표시할 수 있습니다.
 
 ![](request-validation/_static/image2.png)
 
-그러나 JavaScript와 같은 된 `<script>alert("hello!")</script>` 를 입력 하 고 예외를 얻게 제출:
+그러나 입력 및 제출할 `<script>alert("hello!")</script>`와 같은 JavaScript는 예외를 가져옵니다.
 
 ![](request-validation/_static/image3.png)
 
-오류 메시지를 나타내는 '잠재적으로 위험한 Request.Form 값이 발견 되었습니다' 정확 하 게 발생 한 문제 및 동작을 변경 하는 방법에 대 한 설명에 자세한 세부 정보를 제공 합니다. 예를 들어:
+오류 메시지는 ' 잠재적으로 위험한 요청. 양식 값이 검색 되었습니다. ' 라는 메시지를 나타내고, 설명에 정확히 발생 한 작업과 동작을 변경 하는 방법에 대 한 자세한 정보를 제공 합니다. 다음은 그 예입니다.
 
-요청 유효성 검사가 잠재적으로 위험한 클라이언트 입력된 값을 검색 하 고 요청의 처리가 중단 되었습니다. 이 값에는 사이트 간 스크립팅 공격 등의 응용 프로그램의 보안을 손상 시키는 시도가 나타낼 수 있습니다. 요청 유효성 검사를 사용 하지 않도록 설정 하 여 수 `validateRequest=false` Page 지시문 또는 구성 섹션입니다. 그러나는 응용 프로그램이 명시적으로 확인 모든 입력이 경우 것이 좋습니다.
+요청 유효성 검사에서 잠재적으로 위험한 클라이언트 입력 값을 감지 하 여 요청 처리가 중단 되었습니다. 이 값은 사이트 간 스크립팅 공격과 같은 응용 프로그램의 보안을 손상 시키려는 시도를 나타낼 수 있습니다. 페이지 지시문 또는 구성 섹션에서 `validateRequest=false`을 설정 하 여 요청 유효성 검사를 사용 하지 않도록 설정할 수 있습니다. 그러나이 경우 응용 프로그램에서 모든 입력을 명시적으로 확인 하는 것이 좋습니다.
 
-## <a name="disabling-request-validation-on-a-page"></a>요청 유효성 검사는 페이지를 사용 하지 않도록 설정
+## <a name="disabling-request-validation-on-a-page"></a>페이지에서 요청 유효성 검사를 사용 하지 않도록 설정
 
-요청 유효성 검사 설정 해야 하는 페이지를 사용 하지 않도록 설정 합니다 `validateRequest` 페이지 지시문의 특성 `false`:
+페이지에서 요청 유효성 검사를 사용 하지 않도록 설정 하려면 Page 지시어의 `validateRequest` 특성을 `false`으로 설정 해야 합니다.
 
 [!code-aspx[Main](request-validation/samples/sample1.aspx)]
 
 > [!CAUTION]
-> 요청 유효성 검사를 사용 하지 않도록 설정 하는 경우 페이지에 콘텐츠를 제출할 수 있습니다. 확인 페이지 개발자의 책임은 제대로 인코딩된 또는 처리입니다.
+> 요청 유효성 검사를 사용 하지 않도록 설정 하면 콘텐츠를 페이지에 제출할 수 있습니다. 콘텐츠를 제대로 인코드 또는 처리 하는지 확인 하는 것은 페이지 개발자의 책임입니다.
 
-## <a name="disabling-request-validation-for-your-application"></a>응용 프로그램에 대 한 요청 유효성 검사를 사용 하지 않도록 설정
+## <a name="disabling-request-validation-for-your-application"></a>응용 프로그램에 대 한 요청 유효성 검사 사용 안 함
 
-응용 프로그램에 대 한 요청 유효성 검사를 사용 하지 않도록 설정, 수정 또는 응용 프로그램에 대 한 Web.config 파일을 만들어 하며 validateRequest 특성을 설정 합니다 `<pages />` 섹션을 `false`:
+응용 프로그램에 대 한 요청 유효성 검사를 사용 하지 않도록 설정 하려면 응용 프로그램에 대 한 web.config 파일을 수정 하거나 만들고 `<pages />` 섹션의 validateRequest 특성을 `false`으로 설정 해야 합니다.
 
 [!code-xml[Main](request-validation/samples/sample2.xml)]
 
-서버의 모든 응용 프로그램에 대 한 요청 유효성 검사를 사용 하지 않도록 설정 하려는 경우 Machine.config 파일을이 수정이 가능 합니다.
+서버에 있는 모든 응용 프로그램에 대 한 요청 유효성 검사를 사용 하지 않도록 설정 하려면 Machine.config 파일을 수정 하면 됩니다.
 
 > [!CAUTION]
-> 요청 유효성 검사를 사용 하지 않도록 설정 하는 경우 응용 프로그램에 콘텐츠를 제출할 수 있습니다. 인지 확인 하려면 응용 프로그램 개발자의 책임은 제대로 인코딩된 처리 합니다.
+> 요청 유효성 검사를 사용 하지 않도록 설정 하면 응용 프로그램에 콘텐츠를 제출할 수 있습니다. 응용 프로그램 개발자는 콘텐츠를 제대로 인코드 또는 처리 하는지 확인 해야 합니다.
 
-아래 코드는 요청 유효성 검사를 해제 하도록 수정 됩니다.
+아래 코드를 수정 하 여 요청 유효성 검사를 해제 합니다.
 
 ![](request-validation/_static/image4.png)
 
-텍스트 상자에 다음 JavaScript에 들어 갔으 면 이제 `<script>alert("hello!")</script>` 결과:
+이제 다음 JavaScript가 텍스트 상자에 입력 되 면 결과가 `<script>alert("hello!")</script>` 됩니다.
 
 ![](request-validation/_static/image5.png)
 
-이 방지 하려면 기능을 해제 하는 요청 유효성 검사를 사용 하 여 필요한 HTML로 인코딩합니다 콘텐츠를입니다.
+이 문제가 발생 하지 않도록 하려면 요청 유효성 검사가 꺼져 있으면 콘텐츠를 HTML로 인코딩해야 합니다.
 
-## <a name="how-to-html-encode-content"></a>Html 콘텐츠를 인코딩 방법
+## <a name="how-to-html-encode-content"></a>콘텐츠를 HTML 인코딩하는 방법
 
-요청 유효성 검사를 사용 하지 않도록 설정한를 경우 콘텐츠를 HTML 인코딩하 나중에 사용할 저장 되는 것이 좋습니다. HTML 인코딩을 자동으로 대체할 모든 '&lt;'또는'&gt;' (다른 여러 기호)와 함께 해당 HTML을 사용 하 여 인코딩 표현입니다. 예를 들어, '&lt;'으로 바뀝니다'&amp;lt;' 및 '&gt;'바뀝니다'&amp;gt;'. 표시할 이러한 특수 코드를 사용 하는 브라우저는 '&lt;'또는'&gt;' 브라우저에서 합니다.
+요청 유효성 검사를 사용 하지 않도록 설정한 경우 나중에 사용 하기 위해 저장 되는 콘텐츠를 HTML로 인코딩하는 것이 좋습니다. HTML 인코딩은 '&lt;' 또는 '&gt;' (다른 여러 기호와 함께)를 해당 하는 HTML 인코딩된 표현으로 자동으로 바꿉니다. 예를 들어 '&lt;'는 '&amp;l t; '로 바뀌고 '&gt;'는 '&amp;gt; '로 바뀝니다. 브라우저는 이러한 특수 코드를 사용 하 여 브라우저에서 '&lt;' 또는 '&gt;'를 표시 합니다.
 
-콘텐츠를 쉽게 HTML로 인코딩된 사용 하 여 서버 수를 `Server.HtmlEncode(string)` API. 콘텐츠 일 수도 있습니다 쉽게 HTML 디코딩된,를 사용 하 여 표준 HTML 되돌릴는 `Server.HtmlDecode(string)` 메서드.
+`Server.HtmlEncode(string)` API를 사용 하 여 서버에서 콘텐츠를 쉽게 HTML로 인코딩할 수 있습니다. 콘텐츠를 쉽게 HTML 디코딩할 수 있습니다. 즉, `Server.HtmlDecode(string)` 메서드를 사용 하 여 표준 HTML로 되돌릴 수도 있습니다.
 
 ![](request-validation/_static/image6.png)
 
-발생 합니다.
+결과:
 
 ![](request-validation/_static/image7.png)

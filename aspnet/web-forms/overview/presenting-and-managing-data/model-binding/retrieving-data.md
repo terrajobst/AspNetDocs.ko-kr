@@ -9,11 +9,11 @@ ms.assetid: 9f24fb82-c7ac-48da-b8e2-51b3da17e365
 msc.legacyurl: /web-forms/overview/presenting-and-managing-data/model-binding/retrieving-data
 msc.type: authoredcontent
 ms.openlocfilehash: 81cca22cb4752d071d2a68986ae9ac2bed737594
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74633178"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78520025"
 ---
 # <a name="retrieving-and-displaying-data-with-model-binding-and-web-forms"></a>모델 바인딩 및 web forms를 사용 하 여 데이터 검색 및 표시
 
@@ -36,7 +36,7 @@ ms.locfileid: "74633178"
 
 ## <a name="what-youll-build"></a>빌드할 내용
 
-이 자습서에서는 다음을 수행 합니다.
+이 자습서에서는 다음을 수행합니다.
 
 * 강좌에 등록 된 학생 들과 대학을 반영 하는 데이터 개체 작성
 * 개체에서 데이터베이스 테이블 작성
@@ -121,7 +121,7 @@ ms.locfileid: "74633178"
 
 이 자습서에서는 [Code First 마이그레이션](https://docs.microsoft.com/ef/ef6/modeling/code-first/migrations/) 를 사용 하 여 개체와 데이터베이스 테이블을 만듭니다. 이러한 테이블에는 학생 및 해당 과정에 대 한 정보가 저장 됩니다.
 
-   1. **도구** > **NuGet 패키지 관리자** > **패키지 관리자 콘솔**을 선택 합니다.
+   1. **도구** > **NuGet 패키지 관리자** > **패키지 관리자 콘솔**을 선택합니다.
 
    2. **패키지 관리자 콘솔**에서 다음 명령을 실행 합니다.  
       `enable-migrations -ContextTypeName ContosoUniversityModelBinding.Models.SchoolContext`

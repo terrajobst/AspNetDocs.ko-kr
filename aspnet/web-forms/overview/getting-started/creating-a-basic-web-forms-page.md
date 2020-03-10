@@ -9,11 +9,11 @@ ms.assetid: a2f1c635-0817-4a9a-8c13-d5b5d29727c0
 msc.legacyurl: /web-forms/overview/getting-started/creating-a-basic-web-forms-page
 msc.type: authoredcontent
 ms.openlocfilehash: 5d13a51128eecd92a82cfd06054448582a348e11
-ms.sourcegitcommit: 84b1681d4e6253e30468c8df8a09fe03beea9309
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445683"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78511079"
 ---
 # <a name="using-visual-studio-2013-to-create-a-basic-aspnet-45-web-forms-page"></a>Visual Studio 2013를 사용 하 여 기본 ASP.NET 4.5 Web Forms 페이지 만들기
 
@@ -32,9 +32,9 @@ ms.locfileid: "73445683"
 - 이벤트 처리기를 추가 합니다.
 - Visual Studio에서 페이지를 실행 하 고 테스트 합니다.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>사전 요구 사항
 
-이 연습을 완료하려면 다음 사항이 필요합니다.
+이 연습을 완료하려면 다음이 필요합니다.
 
 - [Microsoft Visual Studio 2013](https://www.microsoft.com/visualstudio/11/downloads#vs) 또는 [Microsoft Visual Studio Express 2013 for Web](https://www.microsoft.com/visualstudio/11/downloads#express-web). .NET Framework 자동으로 설치 됩니다. 
 
@@ -58,7 +58,7 @@ ms.locfileid: "73445683"
 
     **새 프로젝트** 대화 상자가 나타납니다.
 3. 왼쪽에 있는  **C# Visual** -&gt; **웹** 템플릿 그룹 &gt; -**템플릿을** 선택 합니다.
-4. 가운데 열에서 **ASP.NET 웹 응용 프로그램** 템플릿을 선택 합니다.
+4. 가운데 열에서 **ASP.NET 웹 애플리케이션** 템플릿을 선택합니다.
 5. 프로젝트 이름을 ***BasicWebApp*** 로 하 고 **확인** 단추를 클릭 합니다.   
 ![새 프로젝트 대화 상자](creating-a-basic-web-forms-page/_static/image2.png)
 6. 그런 다음 **Web Forms** 템플릿을 선택 하 고 **확인** 단추를 클릭 하 여 프로젝트를 만듭니다.  
@@ -101,7 +101,7 @@ ms.locfileid: "73445683"
 2. **솔루션 탐색기**에서 웹 응용 프로그램 이름을 마우스 오른쪽 단추로 클릭 하 고 (이 자습서에서는 응용 프로그램 이름이 **basicwebsite 사이트인**경우) **추가** -&gt; **새 항목**을 클릭 합니다.   
 **새 항목 추가** 대화 상자가 표시됩니다.
 3. 왼쪽의 **Visual C#**  -&gt; **웹** 템플릿 그룹을 선택 합니다. 그런 다음 중간 목록에서 **Web Form** 을 선택 하 고 이름을 *firstwebpage .aspx*로 표시 합니다.   
-    새 항목 추가 대화 상자 ![](creating-a-basic-web-forms-page/_static/image6.png)
+    ![새 항목 추가 대화 상자](creating-a-basic-web-forms-page/_static/image6.png)
 4. **추가** 를 클릭 하 여 웹 페이지를 프로젝트에 추가 합니다.  
 Visual Studio에서 새 페이지를 만들어 엽니다.
 
@@ -180,7 +180,7 @@ Visual Studio는 페이지의 컨트롤 속성을 설정 하는 다양 한 방�
 
     > [!NOTE] 
     > 
-    > 모든 컨트롤이 **runat =&quot;server&quot;** 특성도 포함 하는 **form** 요소 내에 있습니다. **Runat =&quot;server&quot;** 특성 및 asp.net 태그의 **asp:** 접두사는 페이지가 실행 될 때 서버에서 ASP.NET에 의해 처리 되도록 컨트롤을 표시 합니다. **&lt;폼 runat =&quot;server&quot;&gt;** 및 **&lt;스크립트 runat =&quot;server&quot;&gt;** 요소가 브라우저에 변경 되지 않은 상태로 전송 됩니다. 따라서 ASP.NET 코드는 요소 내에 있어야 합니다. 여는 태그에 **runat =&quot;server&quot;** 특성이 포함 되어 있습니다.
+    > 모든 컨트롤이 **runat =&quot;server&quot;** 특성도 포함 하는 **form** 요소 내에 있습니다. **Runat =&quot;server&quot;** 특성 및 asp.net 태그의 **asp:** 접두사는 페이지가 실행 될 때 서버에서 ASP.NET에 의해 처리 되도록 컨트롤을 표시 합니다. **&lt;폼 runat =&quot;server&quot;&gt;** 및 **&lt;스크립트 runat =&quot;server&quot;** 요소가 변경 되지 않은 상태로 브라우저에 전송 됩니다. 따라서 ASP.NET 코드는 여는 태그에 **runat = &gt;server&quot;** 특성을 포함 하는 요소 내에 있어야 합니다.&quot;
 4. 다음에는 [Label](https://msdn.microsoft.com/library/system.web.ui.webcontrols.label.aspx) 컨트롤에 추가 속성을 추가 합니다. **&lt;asp: label&gt;** 태그에서 **asp: label** 바로 뒤에 삽입 지점을 넣은 다음 **스페이스바**를 누릅니다.
 
     [레이블](https://msdn.microsoft.com/library/system.web.ui.webcontrols.label.aspx) 컨트롤에 대해 설정할 수 있는 사용 가능한 속성 목록을 표시 하는 드롭다운 목록이 나타납니다. **IntelliSense**라고 하는이 기능을 사용 하면 페이지의 서버 컨트롤, HTML 요소 및 기타 항목의 구문을 사용 하 여 **소스** 뷰에 쉽게 연결할 수 있습니다. 다음 그림에서는 [레이블](https://msdn.microsoft.com/library/system.web.ui.webcontrols.label.aspx) 컨트롤의 **IntelliSense** 드롭다운 목록을 보여 줍니다.

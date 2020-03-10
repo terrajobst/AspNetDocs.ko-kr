@@ -9,11 +9,11 @@ ms.assetid: 1e4c2eb4-b6cf-42ff-8a65-4d71ddca0394
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v3/working-with-entity-relations
 msc.type: authoredcontent
 ms.openlocfilehash: 726a7d51123805e05f6831ef9cd7eaa84b6c44bd
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74600308"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78484505"
 ---
 # <a name="supporting-entity-relations-in-odata-v3-with-web-api-2"></a>Web API 2를 사용 하 여 OData v3에서 엔터티 관계 지원
 
@@ -104,7 +104,7 @@ OData는 두 엔터티 간의 관계를 만들거나 제거 하는 것을 지원
 
 [!code-csharp[Main](working-with-entity-relations/samples/sample11.cs)]
 
-이 예제에서 탐색 속성은 단일 `Supplier` 엔터티입니다. 탐색 속성이 컬렉션인 경우 링크를 삭제 하는 URI에는 관련 엔터티에 대 한 키가 포함 되어야 합니다. 예를 들면 다음과 같습니다.:
+이 예제에서 탐색 속성은 단일 `Supplier` 엔터티입니다. 탐색 속성이 컬렉션인 경우 링크를 삭제 하는 URI에는 관련 엔터티에 대 한 키가 포함 되어야 합니다. 다음은 그 예입니다.
 
 [!code-console[Main](working-with-entity-relations/samples/sample12.cmd)]
 

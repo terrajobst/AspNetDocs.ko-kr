@@ -1,6 +1,6 @@
 ---
 uid: identity/overview/index
-title: ASP.NET Id 개요-ASP.NET 4.x
+title: ASP.NET Identity 개요-ASP.NET 4.x
 author: rick-anderson
 description: ''
 ms.author: riande
@@ -9,13 +9,13 @@ ms.assetid: d3972a0e-9ff6-4de1-bf4d-c94943cab048
 msc.legacyurl: /identity/overview
 msc.type: book
 ms.openlocfilehash: ef4eb7428770453596090af111576ab23a27206b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59406174"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78471713"
 ---
-# <a name="aspnet-identity-overview"></a>ASP.NET Id 개요
+# <a name="aspnet-identity-overview"></a>ASP.NET Identity 개요
 
 - [ASP.NET ID 시작](getting-started/index.md)
 
@@ -23,7 +23,7 @@ ms.locfileid: "59406174"
     - [ASP.NET ID 권장 리소스](getting-started/aspnet-identity-recommended-resources.md)
     - [비어 있는 또는 기존 Web Forms 프로젝트에 ASP.NET ID 추가](getting-started/adding-aspnet-identity-to-an-empty-or-existing-web-forms-project.md)
     - [Azure Active Directory를 사용하여 ASP.NET 앱 개발](getting-started/developing-aspnet-apps-with-windows-azure-active-directory.md)
-    - [ASP.NET Id: EntityFramework MySQL 공급자를 사용 하 여 MySQL 저장소를 사용 하 여 (C#)](getting-started/aspnet-identity-using-mysql-storage-with-an-entityframework-mysql-provider.md)
+    - [ASP.NET ID: EntityFramework MySQL 공급자에 MySQL 스토리지 사용(C#)](getting-started/aspnet-identity-using-mysql-storage-with-an-entityframework-mysql-provider.md)
 - [기능 및 API](features-api/index.md)
 
     - [ASP.NET 및 Azure App Service에 암호와 기타 중요한 데이터를 배포하는 방법에 대한 모범 사례](features-api/best-practices-for-deploying-passwords-and-other-sensitive-data-to-aspnet-and-azure.md)

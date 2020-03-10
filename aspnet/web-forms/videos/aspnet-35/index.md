@@ -2,24 +2,24 @@
 uid: web-forms/videos/aspnet-35/index
 title: ASP.NET 3.5 | Microsoft Docs
 author: rick-anderson
-description: 새로운 기능에 중점을 두어 ASP.NET 3.5 응용 프로그램을 빌드하는 방법입니다.
+description: 새 기능을 강조 하 여 ASP.NET 3.5 응용 프로그램을 빌드하는 방법을 설명 합니다.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 2e6e9c24-bb97-446a-b05e-1bd88824d352
 msc.legacyurl: /web-forms/videos/aspnet-35
 msc.type: chapter
 ms.openlocfilehash: 369f3f1516dace0c7d8fc3a87b2d50ec71889de0
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65133773"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78462437"
 ---
 # <a name="aspnet-35"></a>ASP.NET 3.5
 
-> 새로운 기능에 중점을 두어 ASP.NET 3.5 응용 프로그램을 빌드하는 방법입니다.
+> 새 기능을 강조 하 여 ASP.NET 3.5 응용 프로그램을 빌드하는 방법을 설명 합니다.
 
-- [작업 절차](how-do-i/index.md)
+- [어떻게 할까요?](how-do-i/index.md)
 
     - [Visual Studio 2008에서 마스터 페이지 만들기](how-do-i/how-do-i-create-a-master-page-in-visual-studio-2008.md)
     - [Visual Studio 2008에서 중첩된 마스터 페이지 만들기](how-do-i/how-do-i-create-nested-master-page-in-visual-studio-2008.md)

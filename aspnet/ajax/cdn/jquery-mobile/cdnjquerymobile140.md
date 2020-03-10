@@ -9,15 +9,15 @@ ms.assetid: 423d024d-eda3-4c9d-b6e8-4c6d479be692
 msc.legacyurl: /ajax/cdn/jquery-mobile/cdnjquerymobile140
 msc.type: content
 ms.openlocfilehash: 4b97fa8b367c4fdd314c4c807d4be29440bfe0f3
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59383501"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78453599"
 ---
 # <a name="jquery-mobile-140-on-the-microsoft-ajax-cdn"></a>Microsoft Ajax CDN의 jQuery Mobile 1.4.0
 
-JQuery Mobile 1.4.0 라이브러리에는 다음 파일이 포함 됩니다.
+JQuery Mobile 1.4.0 라이브러리에는 다음 파일이 포함 되어 있습니다.
 
 - https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.4.0/jquery.mobile.structure-1.4.0.css
 - https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css

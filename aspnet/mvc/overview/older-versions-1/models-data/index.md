@@ -2,22 +2,22 @@
 uid: mvc/overview/older-versions-1/models-data/index
 title: 모델 (데이터) | Microsoft Docs
 author: rick-anderson
-description: 이 자습서 시리즈에서는 Microsoft Entity Framework를 사용 하 여 ASP.NET MVC를 사용 하는 방법을 알아봅니다. 이 자습서의이 코스를 통해 웹 응용 프로그램을 작성 하는 중...
+description: 이 자습서 시리즈에서는 Microsoft Entity Framework에서 ASP.NET MVC를 사용 하는 방법에 대해 알아봅니다. 이 자습서에서는 웹 응용 프로그램을 빌드하는 과정을 안내 합니다.
 ms.author: riande
 ms.date: 09/28/2011
 ms.assetid: 9086d8a8-7952-4a7e-82a7-724d48178555
 msc.legacyurl: /mvc/overview/older-versions-1/models-data
 msc.type: chapter
 ms.openlocfilehash: e4e4cce840d46ceceeb3ea77db91ad99d73ef483
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65117583"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78469427"
 ---
 # <a name="models-data"></a>모델(데이터)
 
-> 이 자습서 시리즈에서는 Microsoft Entity Framework를 사용 하 여 ASP.NET MVC를 사용 하는 방법을 알아봅니다. 이 자습서의이 코스를 통해 선택, 삽입, 업데이트 및 Entity Framework를 사용 하 여 데이터베이스 데이터를 삭제 하는 방법을 보여 주는 웹 응용 프로그램을 빌드할 수 있습니다.
+> 이 자습서 시리즈에서는 Microsoft Entity Framework에서 ASP.NET MVC를 사용 하는 방법에 대해 알아봅니다. 이 자습서에서는 Entity Framework를 사용 하 여 데이터베이스 데이터를 선택, 삽입, 업데이트 및 삭제 하는 방법을 보여 주는 웹 응용 프로그램을 작성 합니다.
 
 - [Entity Framework를 사용하여 모델 클래스 만들기(C#)](creating-model-classes-with-the-entity-framework-cs.md)
 - [LINQ to SQL을 사용하여 모델 클래스 만들기(C#)](creating-model-classes-with-linq-to-sql-cs.md)

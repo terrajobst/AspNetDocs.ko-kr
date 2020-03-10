@@ -9,11 +9,11 @@ ms.assetid: ecd5a4de-beb7-4d1d-bbbb-e31003633267
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/precompiling-your-website-cs
 msc.type: authoredcontent
 ms.openlocfilehash: cb42398f44f3cd16ab83a9976e7b34f132384456
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74635788"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78462875"
 ---
 # <a name="precompiling-your-website-c"></a>웹 사이트 미리 컴파일(C#)
 
@@ -172,7 +172,7 @@ ASP.NET는 automatic 및 explicit의 두 가지 컴파일 모드를 지원 합�
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 

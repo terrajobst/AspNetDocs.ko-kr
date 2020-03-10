@@ -1,226 +1,226 @@
 ---
 uid: aspnet/overview/owin-and-katana/an-overview-of-project-katana
-title: 프로젝트 Katana 개요 | Microsoft Docs
+title: Project Katana 개요 Microsoft Docs
 author: howarddierking
-description: ASP.NET 프레임 워크는 10 년 넘게 오랫동안 및 수많은 웹 사이트 및 서비스의 개발 플랫폼이 사용 하도록 설정 합니다. 웹 응용 프로그램으로 하는 중...
+description: ASP.NET 프레임 워크는 10 년 이상 사용 되었으며 플랫폼은 수많은 웹 사이트 및 서비스의 개발을 지원 합니다. 웹 응용 프로그램로 ...
 ms.author: riande
 ms.date: 08/30/2013
 ms.assetid: 0ee21741-c1bf-4025-a9b0-24580cae24bc
 msc.legacyurl: /aspnet/overview/owin-and-katana/an-overview-of-project-katana
 msc.type: authoredcontent
 ms.openlocfilehash: 1f28db822930cdfd2ebf4cf9bb27d173f4aa4201
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65118287"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78500345"
 ---
 # <a name="an-overview-of-project-katana"></a>프로젝트 Katana 개요
 
 [Howard Dierking](https://github.com/howarddierking)
 
-> ASP.NET 프레임 워크는 10 년 넘게 오랫동안 및 수많은 웹 사이트 및 서비스의 개발 플랫폼이 사용 하도록 설정 합니다. 웹 응용 프로그램 개발 전략 진화 하는 대로 프레임 워크를 ASP.NET MVC 및 ASP.NET Web API와 같은 기술 사용 하 여 단계에서 진화 할 수 되었습니다. 클라우드 컴퓨팅의 세계로 다음 진화 단계를 사용 하는 웹 응용 프로그램 개발을 하는 대로 프로젝트 [Katana](https://channel9.msdn.com/Shows/Web+Camps+TV/The-Katana-Project-OWIN-for-ASPNET) ASP.NET 응용 프로그램을 유연 하 고 이식 가능 하며 사용할 수 있도록 구성 요소의 기본 집합을 제공 합니다. 경량 – 더 나은 성능을 제공 하 고 프로젝트, 다른 말로 [Katana](https://channel9.msdn.com/Shows/Web+Camps+TV/The-Katana-Project-OWIN-for-ASPNET) 클라우드 ASP.NET 응용 프로그램을 최적화 합니다.
+> ASP.NET 프레임 워크는 10 년 이상 사용 되었으며 플랫폼은 수많은 웹 사이트 및 서비스의 개발을 지원 합니다. 웹 응용 프로그램 개발 전략이 발전 함에 따라 프레임 워크는 ASP.NET MVC 및 ASP.NET Web API와 같은 기술을 사용 하 여 발전 시킬 수 있었습니다. 웹 응용 프로그램 개발에서 클라우드 컴퓨팅 세계에 대 한 다음 발전 단계를 수행 하기 때문에 project [Katana](https://channel9.msdn.com/Shows/Web+Camps+TV/The-Katana-Project-OWIN-for-ASPNET) 는 ASP.NET 응용 프로그램에 대 한 기본 구성 요소 집합을 제공 하 여 유연 하 고 이식 가능 하며 경량 이며 더 나은 성능을 제공할 수 있습니다. 다른 방법으로 project [Katana](https://channel9.msdn.com/Shows/Web+Camps+TV/The-Katana-Project-OWIN-for-ASPNET) cloud는 ASP.NET 응용 프로그램을 최적화 합니다.
 
-## <a name="why-katana--why-now"></a>왜 Katana – 이제 이유?
+## <a name="why-katana--why-now"></a>왜 Katana?
 
- 개발자 프레임 워크 또는 최종 사용자가 제품을 논의 하는 하나는 여부에 관계 없이, 것을 만들기 위한 기본 동기를 이해 해야 제품 – 및에 포함 제품에 대해 생성 된 사용자를 파악 합니다. ASP.NET 염두에서에 두 고객을 사용 하 여 원래 만들어졌습니다.   
+ 개발자가 개발자 프레임 워크 또는 최종 사용자 제품을 설명 하 고 있는지 여부에 관계 없이 제품을 만드는 기본 동기를 이해 하는 것이 중요 합니다. 여기에는 제품을 만든 사람을 확인 하는 것이 포함 됩니다. ASP.NET는 원래 두 명의 고객과 함께 만들어졌습니다.   
   
-**고객의 첫 번째 그룹에는 기존 ASP 개발자 들은 했습니다.** 동시에 ASP interweaving 태그 및 서버 쪽 스크립트에서 동적, 데이터 기반 웹 사이트 및 응용 프로그램을 만들기 위한 기본 기술 중 하나 였습니다. ASP 런타임 캐시, 등 추가에 대 한 액세스는 이러한 세션 및 응용 프로그램 상태 관리 서비스 제공 및 기본 HTTP 프로토콜 및 웹 서버 핵심 측면을 추상화 하는 개체의 집합을 사용 하 여 서버 쪽 스크립트를 제공 합니다. 강력, 클래식 ASP 응용 프로그램의 크기와 복잡성 증가할 때 관리 하는 문제를 되었습니다. 이 구조 스크립팅 중복 되는 코드와 태그의 인터리빙에서 발생 하는 코드를 사용 하 여 결합 된 환경에서 찾을 수 없어서 대부분 이었습니다. 해당 과제 중 일부를 해결 하는 동안 기본 ASP의 장점을 활용을 위해 ASP.NET 활용도 서버 쪽 프로그래밍 모델을 유지 하면서.NET Framework의 개체 지향 언어에서 제공 하는 코드 조직 에 클래식 ASP 개발자 토대로 했습니다.
+**고객의 첫 번째 그룹은 기본 ASP 개발자 였습니다.** 당시 ASP는 태그 및 서버 쪽 스크립트를 interweaving 하 여 동적 데이터 기반 웹 사이트 및 응용 프로그램을 만들기 위한 기본 기술 중 하나 였습니다. 기본 HTTP 프로토콜 및 웹 서버의 핵심 측면을 추상화 하 고 세션 및 응용 프로그램 상태 관리, 캐시 등의 추가 서비스에 대 한 액세스를 제공 하는 개체 집합을 제공 하는 ASP 런타임은 서버 쪽 스크립트를 제공 합니다. 강력 하지만 기존 ASP 응용 프로그램은 크기와 복잡성이 증가 함에 따라 관리 하기가 쉽지 않습니다. 이는 주로 코드 및 태그 인터리브로 인해 발생 하는 코드의 중복과 결합 된 스크립팅 환경에서 발견 된 구조가 없기 때문입니다. 일부 문제를 해결 하는 동안 클래식 ASP의 장점에 대 한 대문자화를 위해 ASP.NET .NET Framework는 개체 지향 언어에서 제공 하는 코드 조직을 활용 하는 동시에 서버 쪽 프로그래밍 모델도 유지 합니다. 기존 ASP 개발자에 게 익숙한 것입니다.
 
-**ASP.NET에 대 한 대상 고객의 두 번째 그룹에는 Windows 비즈니스 응용 프로그램 개발자가 되었습니다.** HTML 태그 및 자세한 HTML 태그를 생성 하는 코드를 작성 하는 데 익숙한 인 클래식 ASP 개발자에 달리 (예: 앞 VB6 개발자) WinForms 개발자 캔버스 및 다양 한 사용자를 포함 하는 디자인 타임 환경에 익숙한 것 인터페이스를 제어 합니다. 첫 번째 버전의 ASP.NET – 라고도 "Web Forms" 제공 된 사용자 인터페이스 구성 요소에 대 한 서버 쪽 이벤트 모델 및 인프라 기능 (예: ViewState) 집합이 함께 비슷한 디자인 타임 환경을 완전무결 한 개발자 환경을 만들려면 클라이언트와 서버 쪽 프로그래밍 합니다. Web Forms에서 WinForms 개발자에 게 친숙 한 상태 저장 이벤트 모델을 웹의 상태 비저장 특성을 효과적으로 hid 합니다.
+**ASP.NET에 대 한 대상 고객의 두 번째 그룹은 Windows 비즈니스 응용 프로그램 개발자 였습니다.** HTML 태그를 작성 하 고 html 태그를 생성 하는 코드를 작성 하는 데 익숙한 기존 ASP 개발자와는 달리 WinForms 개발자 (이전에는 VB6 개발자)가 캔버스와 풍부한 사용자 집합을 포함 하는 디자인 타임 환경에 익숙합니다. 인터페이스 컨트롤. ASP.NET의 첫 번째 버전 ("Web Forms" 라고도 함)은 사용자 인터페이스 구성 요소에 대 한 서버 쪽 이벤트 모델과 유사한 디자인 타임 환경을 제공 하 고,이를 통해 ViewState와 같은 인프라 기능 집합을 제공 하 여 원활한 개발자 환경을 만들 수 있습니다. 클라이언트 및 서버 쪽 프로그래밍 WinForms 개발자에 게 친숙 한 상태 저장 이벤트 모델에서 웹의 상태 비저장 특성을 효과적으로 hid Web Forms 합니다.
 
-### <a name="challenges-raised-by-the-historical-model"></a>기록 모델에서 발생 한 문제
+### <a name="challenges-raised-by-the-historical-model"></a>기록 모델에서 발생 하는 문제
 
-**결과 완성도 높은, 풍부한 기능의 런타임 및 개발자 프로그래밍 모델을 했습니다.** 그러나 풍부한 기능을 강화 된 몇 가지 주목할 만한 문제를 제공 합니다. 먼저는 프레임 워크가 **모놀리식**를 논리적으로 서로 다른 단위의 동일한 System.Web.dll 어셈블리 (예를 들어, Web forms 프레임 워크를 사용 하 여 HTTP 핵심 개체)에 밀접 하 게 결합 되는 기능을 사용 하 여 합니다. ASP.NET 있음을 의미 하는 큰.NET Framework의 일부로 포함 된 둘째,는 **릴리스 간의 시간은 년 순서입니다.** 이 인해 모든 변경 내용을 빠르게 발전 하는 웹 개발에서 발생 하는 ASP.NET 어렵습니다. 마지막으로, 자체 System.Web.dll 특정 웹 호스팅 옵션에는 몇 가지 방법으로 결합 되었습니다. 인터넷 정보 서비스 (IIS).
+**결과적으로 풍부한 기능의 런타임 및 개발자 프로그래밍 모델이 있습니다.** 그러나이 기능을 사용 하는 경우 몇 가지 주목할 만한 과제가 제공 됩니다. 첫째, 프레임 워크는 논리적으로 서로 다른 기능 단위를 동일한 **모놀리식**어셈블리 (예: web forms 프레임 워크를 사용 하는 핵심 HTTP 개체)와 긴밀 하 게 결합 된 상태로 만들었습니다. 둘째로, ASP.NET는 더 큰 .NET Framework의 일부로 포함 되었으며 **릴리스 간의 시간이 연 순서에** 해당 합니다. 이로 인해 신속 하 게 진화 하는 웹 개발에서 발생 하는 모든 변경 사항을 ASP.NET 하는 데 어려움이 있었습니다. 마지막으로, System.web .dll 자체는 특정 웹 호스팅 옵션인 인터넷 정보 서비스 (IIS)와 몇 가지 다른 방법으로 결합 되었습니다.
 
-### <a name="evolutionary-steps-aspnet-mvc-and-aspnet-web-api"></a>진화 단계: ASP.NET MVC 및 ASP.NET Web API
+### <a name="evolutionary-steps-aspnet-mvc-and-aspnet-web-api"></a>혁신적인 단계: ASP.NET MVC 및 ASP.NET Web API
 
-및 웹 개발에서 발생 한 변경 많은! 많은 프레임 워크를 사용 하지 않고 구성 요소를 강조 하는 일련의 작은 웹 응용 프로그램을 개발한 되 고 점점 더 합니다. 적이 더 빠른 속도로 증가 하 고 있는 출시 빈도 뿐만 아니라 구성 요소 수 있었습니다. 웹과 속도 유지 프레임 워크를 작고 분리 된 더 크고 더 풍부한 기능의 대신 따라서 가져올 필요는 명백 합니다 **ASP.NET 팀의 제품군으로 ASP.NET을 사용 하도록 설정 하려면 몇 가지 진화 단계를 진행 합니다. 단일 프레임 워크 보다는 플러그형 웹 구성**합니다.
+웹 개발에서 많은 변화가 있었습니다. 웹 응용 프로그램은 점점 더 많은 프레임 워크가 아닌 일련의 작고 집중 된 구성 요소로 개발 되 고 있습니다. 구성 요소 수와 해당 구성 요소가 릴리스되는 빈도는 점점 더 빠른 속도로 늘어나고 있습니다. 웹을 사용 하는 데는 더 크고 더 많은 기능을 제공 하는 것이 아니라 더 작은 기능을 제공 하는 프레임 워크가 필요 합니다. 따라서 **ASP.NET 팀은 단일 프레임 워크가 아닌 플러그형 웹 구성 요소 제품군으로 ASP.NET을 사용 하기 위한 여러 가지 혁신적인 단계를 수행**했습니다.
 
-초기 변경이 Rails에 Ruby와 같은 웹 개발 프레임 워크 덕분 잘 알려진 모델-뷰-컨트롤러 (MVC) 디자인 패턴의 널리 사용 되 고 증가 했습니다. 이 스타일의 웹 응용 프로그램 빌드 개발자를 지정한 ASP.NET에 대 한 초기 selling 지점 중 하나는 태그 및 비즈니스 논리 분리를 보존 하면서 자신의 응용 프로그램의 태그를 통해 제어 합니다. 이 스타일의 웹 응용 프로그램 개발에 대 한 요청을 충족 하기 위해 Microsoft는 자체 위치로 기회 하 여 미래를 위한 더 나은 **대역 외에서 ASP.NET MVC 개발** (및.NET Framework의 제외). ASP.NET MVC는 독립적인 다운로드로 출시 되었습니다. 이 기능을 통해 엔지니어링 팀에 가능 했던 것 보다 훨씬 더 자주 업데이트를 제공 하는 유연성입니다.
+초기 변경 내용 중 하나는 Ruby의 Ruby와 같은 웹 개발 프레임 워크 덕분에 잘 알려진 MVC (모델-뷰-컨트롤러) 디자인 패턴의 인기입니다. 이러한 웹 응용 프로그램 빌드 스타일을 통해 개발자는 ASP.NET의 초기 판매 시점 중 하나인 태그와 비즈니스 논리의 분리를 유지 하면서 응용 프로그램의 태그를 더 강력 하 게 제어할 수 있습니다. 이러한 스타일의 웹 응용 프로그램 개발에 대 한 수요를 충족 하기 위해 Microsoft는 **ASP.NET MVC를 대역 외에서 개발** 하 여 (그리고 .NET Framework에 포함 하지 않고) 나중에 더 나은 위치를 제공할 수 있었습니다. ASP.NET MVC는 독립적인 다운로드로 릴리스 되었습니다. 이를 통해 엔지니어링 팀은 이전 보다 훨씬 더 자주 업데이트를 제공할 수 있는 유연성을 제공 했습니다.
 
-웹 응용 프로그램 개발의 다른 변화 된 통신 하는 클라이언트 쪽 스크립트에서 생성 된 페이지의 동적 섹션을 사용 하 여 정적 초기 태그를 동적으로 서버에서 생성 된 웹 페이지에서 shift **백 엔드 Web Api를 사용 하 여을 통해 AJAX 요청**합니다. 이 아키텍처 shift ASP.NET Web API 프레임 워크를 개발 및 웹 Api의 날 려 보내는 하는 데 도움이 되었습니다. ASP.NET MVC의 경우와 같이 ASP.NET Web API의 릴리스는 ASP.NET 모듈식 프레임 워크로 더 발전 하는 또 다른 기회를 제공 합니다. 엔지니어링 팀 기회를 활용 하 고 **System.Web.dll 있는 core 프레임 워크 형식 중 하나에 종속성이 없는 이었습니다 되도록 ASP.NET Web API를 작성**. 이 두 가지를 사용 하도록 설정: 하는 것 먼저 ASP.NET Web API를 완전히 독립적인 방식으로 개선할 수 (및 NuGet을 통해 배달 되기 때문에 신속 하 게 반복을 계속 될 수 있습니다). 둘째, System.Web.dll 하는 외부 종속성 및 IIS에 종속성이 없는 따라서 있었습니다, ASP.NET Web API (예를 들어는 콘솔 응용 프로그램, Windows 서비스 등)는 사용자 지정 호스트에서 실행 하는 기능 포함
+웹 응용 프로그램 개발의 또 다른 주요 변화는 **AJAX 요청을 통해 백 엔드 웹 api와**통신 하는 클라이언트 쪽 스크립트에서 생성 된 페이지의 동적 섹션을 사용 하 여 서버에서 생성 된 동적 웹 페이지에서 정적 초기 태그로의 이동 이었습니다. 이 아키텍처 시프트는 웹 Api의 propel 및 ASP.NET Web API 프레임 워크의 개발에 도움이 됩니다. ASP.NET MVC의 경우와 마찬가지로 ASP.NET Web API 릴리스에서는 더 많은 모듈식 프레임 워크로 ASP.NET를 한층 더 발전 시킬 수 있는 기회를 제공 했습니다. 엔지니어링 팀이 기회 및 빌드 ASP.NET Web API를 활용 하 여 **system.web에서 찾은 핵심 프레임 워크 형식에 종속 되지 않도록 했습니다**. 이 기능을 사용 하도록 설정 하는 두 가지 작업이 있습니다. 첫 번째는 ASP.NET Web API 완전히 자체 포함 된 방식으로 발전할 수 있음을 의미 하며, NuGet을 통해 전달 되기 때문에 계속 해 서 신속 하 게 반복할 수 있습니다. 둘째, System.web에 대 한 외부 종속성이 없으므로 IIS에 대 한 종속성이 없으므로 사용자 지정 호스트에서 실행할 수 있는 기능 (예: 콘솔 응용 프로그램, Windows 서비스 등)이 포함 ASP.NET Web API.
 
 ### <a name="the-future-a-nimble-framework"></a>미래: 민첩 프레임 워크
 
-다른 프레임 워크 구성 요소를 분리 하 고 다음 NuGet에서 해제 하 여 프레임 워크 수 이제 **요금과 보다 신속 하 게 반복**합니다. 성능과 유연성 Web API의 자체 호스팅 기능을 입증 하려고 했던 개발자에 게 그다지 또한을 **소규모의 간단한 호스트** 해당 서비스에 대 한 합니다. 그다지 매력적으로 증명, 실제로 다른 프레임 워크는이 기능에도 또 다른 목표 및 각 프레임 워크 자체 기본 주소에서 자체 호스트 프로세스에서 실행 및 관리 하는 데 필요한 (시작, 중지 등)에 새로운 과제를 표시이 독립적으로 유지 합니다. 최신 웹 응용 프로그램에는 일반적으로 정적 파일 처리, 동적 페이지를 생성, Web API 및 보다 최근에 실시간으로 시간/푸시 알림을 지원합니다. 이러한 서비스의 각 실행 있고 독립적으로 관리할 필요 없었던 현실적인 합니다.
+프레임 워크 구성 요소를 다른 구성 요소에서 분리 한 다음 NuGet에서 해제 하 여 프레임 워크는 이제 **보다 독립적이 고 더 빠르게 반복**될 수 있습니다. 또한 Web API의 자체 호스팅 기능을 강력 하 고 유연 하 게 관리할 **수 있는 개발자** 에 게 매우 매력적인 서비스를 원했습니다. 이는 다른 프레임 워크 에서도이 기능을 필요로 하는 것을 입증 했으며,이는 각 프레임 워크가 자체의 기본 주소에서 자체 호스트 프로세스로 실행 되 고 독립적으로 관리 (시작, 중지 등) 해야 한다는 점에서 새로운 문제를 겪고 있습니다. 최신 웹 응용 프로그램은 일반적으로 정적 파일 처리, 동적 페이지 생성, 웹 API 및 최근 실시간/푸시 알림을 지원 합니다. 이러한 각 서비스를 실행 하 고 독립적으로 관리 해야 하는 것은 간단 하지 않습니다.
 
-개발자는 다양 한 다른 구성 요소 및 프레임 워크에서에서 응용 프로그램을 작성 및 지 원하는 호스트에 해당 응용 프로그램을 실행 하는 단일 호스팅 추상화를가 필요 했습니다.
+개발자가 다양 한 구성 요소와 프레임 워크에서 응용 프로그램을 작성 한 다음 지원 호스트에서 해당 응용 프로그램을 실행할 수 있도록 하는 단일 호스팅 추상화가 필요 합니다.
 
-## <a name="the-open-web-interface-for-net-owin"></a>Open Web Interface for.NET (OWIN)
+## <a name="the-open-web-interface-for-net-owin"></a>OWIN (Open Web Interface for .NET)
 
- 얻을 수 있는 장점을에서 영감을 받았습니다 [랙](http://rack.github.io/) Ruby 커뮤니티의.NET 커뮤니티의 몇몇 구성원이 웹 서버와 프레임 워크 구성 요소 간의 추상화를 만듭니다. OWIN 추상화에 대 한 두 가지 디자인 목표 간단한 되었는지 및 다른 프레임 워크 형식에 가능한 한 최소한의 종속성 걸린다는 것 이었습니다. 이러한 두 가지 목표 수 있도록 합니다.
+ Ruby 커뮤니티의 [랙에](http://rack.github.io/) 의해 제공 되는 혜택을 통해 .net 커뮤니티의 여러 멤버가 웹 서버와 프레임 워크 구성 요소 간의 추상화를 만들도록 설정 했습니다. OWIN 추상화에 대 한 두 가지 디자인 목표는 간단 하 고 다른 프레임 워크 형식에 대해 가능한 최소한의 종속성을 가져왔습니다. 이러한 두 가지 목표는 다음을 확인 하는 데 도움이 됩니다.
 
-- 새 구성 요소를 보다 쉽게 개발 및 사용 될 수 없습니다.
-- 응용 프로그램 호스트와 잠재적으로 전체 플랫폼/운영 체제 간에 더 쉽게 이식할 수 없습니다.
+- 새 구성 요소를 보다 쉽게 개발 하 고 소비할 수 있습니다.
+- 응용 프로그램은 호스트와 잠재적으로 전체 플랫폼/운영 체제 간에 더 쉽게 이식할 수 있습니다.
 
-결과 추상화 두 가지 핵심 요소로 구성 됩니다. 첫 번째는 환경 사전을 합니다. 이 데이터 구조는 모든 HTTP 요청 및 응답 뿐만 아니라 해당 하는 서버 상태를 처리 하는 데 필요한 상태를 저장 하는 일을 담당 합니다. 환경 사전은 다음과 같이 정의 됩니다.
+결과 추상화는 두 개의 핵심 요소로 구성 됩니다. 첫 번째는 환경 사전입니다. 이 데이터 구조는 모든 관련 서버 상태 뿐만 아니라 HTTP 요청 및 응답을 처리 하는 데 필요한 모든 상태를 저장 합니다. 환경 사전은 다음과 같이 정의 됩니다.
 
 [!code-console[Main](an-overview-of-project-katana/samples/sample1.cmd)]
 
-OWIN 호환 웹 서버를 본문 스트림 및 HTTP 요청 및 응답 헤더 컬렉션 같은 데이터를 사용 하 여 환경 사전을 채우는 담당 합니다. 응용 프로그램 또는 프레임 워크 구성 요소 채우기 또는 추가 값을 사용 하 여 사전 업데이트 및 응답 본문 스트림에 쓸를 해야 됩니다.
+OWIN 호환 웹 서버는 HTTP 요청 및 응답에 대 한 본문 스트림 및 헤더 컬렉션과 같은 데이터를 사용 하 여 환경 사전을 채우는 역할을 합니다. 그런 다음 응용 프로그램 또는 프레임 워크 구성 요소는 사전을 추가 값으로 채우거 나 업데이트 하 고 응답 본문 스트림에 써야 합니다.
 
-환경 사전에 대 한 유형을 지정 하는 것 외에도 OWIN 사양 core 사전 키 값 쌍의 목록을 정의 합니다. 예를 들어, 다음 표에서 HTTP 요청에 필요한 사전 키를 보여 줍니다.
+환경 사전의 유형을 지정 하는 것 외에도 OWIN 사양은 코어 사전 키 값 쌍의 목록을 정의 합니다. 예를 들어 다음 표에는 HTTP 요청에 대 한 필수 사전 키가 나와 있습니다.
 
 | 키 이름 | 값 설명 |
 | --- | --- |
-| `"owin.RequestBody"` | 요청 본문에 있는 경우는 Stream입니다. 요청 본문이 있으면 Stream.Null 자리 표시자로 사용할 수 있습니다. 참조 [요청 본문](http://owin.org/html/owin.html#34-request-body-100-continue-and-completed-semantics)합니다. |
-| `"owin.RequestHeaders"` | `IDictionary<string, string[]>` 요청 헤더입니다. 참조 [헤더](http://owin.org/html/owin.html#3-3-headers)합니다. |
-| `"owin.RequestMethod"` | A `string` 요청의 HTTP 요청 메서드를 포함 (예를 들어 `"GET"`, `"POST"`). |
-| `"owin.RequestPath"` | `string` 요청 경로 포함 합니다. 응용 프로그램 대리자;의 "루트"에 상대적인 경로 여야 합니다. 참조 [경로](http://owin.org/html/owin.html#5-3-paths)합니다. |
-| `"owin.RequestPathBase"` | A `string` 참조 응용 프로그램 대리자;의 "루트"에 해당 하는 요청 경로의 일부를 포함 하 [경로](http://owin.org/html/owin.html#5-3-paths)합니다. |
-| `"owin.RequestProtocol"` | A `string` 프로토콜 이름 및 버전 (예: `"HTTP/1.0"` 또는 `"HTTP/1.1"`). |
-| `"owin.RequestQueryString"` | `string` 앞에 오는 하지 않고 HTTP 요청 URI 쿼리 문자열 구성 요소가 포함 된 "?" (예를 들어 `"foo=bar&baz=quux"`). 값은 빈 문자열일 수 있습니다. |
-| `"owin.RequestScheme"` | `string` 요청에 사용 된 URI 구성표를 포함 (예를 들어 `"http"`를 `"https"`); 참조 [URI 체계](http://owin.org/html/owin.html#5-1-uri-scheme)합니다. |
+| `"owin.RequestBody"` | 요청 본문 (있는 경우)을 포함 하는 스트림입니다. Stream. 요청 본문이 없는 경우 Null을 자리 표시자로 사용할 수 있습니다. [요청 본문](http://owin.org/html/owin.html#34-request-body-100-continue-and-completed-semantics)을 참조 하세요. |
+| `"owin.RequestHeaders"` | 요청 헤더의 `IDictionary<string, string[]>`입니다. [헤더](http://owin.org/html/owin.html#3-3-headers)를 참조 하세요. |
+| `"owin.RequestMethod"` | 요청에 대 한 HTTP 요청 메서드 (예: `"GET"`, `"POST"`)를 포함 하는 `string`입니다. |
+| `"owin.RequestPath"` | 요청 경로를 포함 하는 `string`입니다. 경로는 응용 프로그램 대리자의 "루트"에 상대적 이어야 합니다. [경로](http://owin.org/html/owin.html#5-3-paths)를 참조 하세요. |
+| `"owin.RequestPathBase"` | 응용 프로그램 대리자의 "루트"에 해당 하는 요청 경로의 일부를 포함 하는 `string`입니다. [경로](http://owin.org/html/owin.html#5-3-paths)를 참조 하세요. |
+| `"owin.RequestProtocol"` | 프로토콜 이름 및 버전이 포함 된 `string` (예: `"HTTP/1.0"` 또는 `"HTTP/1.1"`) |
+| `"owin.RequestQueryString"` | 앞에 "?"가 없는 HTTP 요청 URI의 쿼리 문자열 구성 요소가 포함 된 `string` (예: `"foo=bar&baz=quux"`). 값은 빈 문자열일 수 있습니다. |
+| `"owin.RequestScheme"` | 요청에 사용 되는 URI 체계를 포함 하는 `string` (예: `"http"`, `"https"`) [URI 체계](http://owin.org/html/owin.html#5-1-uri-scheme)를 참조 하세요. |
 
-OWIN의 두 번째 핵심 요소는 응용 프로그램 대리자입니다. OWIN 응용 프로그램의 모든 구성 요소 간의 기본 인터페이스로 사용 되는 함수 시그니처입니다. 응용 프로그램 대리자에 대 한 정의 다음과 같습니다.
+OWIN의 두 번째 주요 요소는 응용 프로그램 대리자입니다. OWIN 응용 프로그램의 모든 구성 요소 간의 기본 인터페이스 역할을 하는 함수 서명입니다. 응용 프로그램 대리자의 정의는 다음과 같습니다.
 
 `Func<IDictionary<string, object>, Task>;`
 
-다음 응용 프로그램 대리자는 함수 환경 사전을 입력으로 허용 하 고는 작업을 반환 하는 여기서 Func 대리자 형식의 구현 하기만 하면 됩니다. 이 디자인은 개발자를 위한 여러 가지를 의미 합니다.
+그런 다음 응용 프로그램 대리자는 함수가 환경 사전을 입력으로 수락 하 고 작업을 반환 하는 Func 대리자 형식의 구현 일 뿐입니다. 이 디자인은 개발자에 게 다음과 같은 영향을 미칩니다.
 
-- OWIN 구성 요소를 작성 하는 데 필요한 유형 종속성의 매우 작은 여러 가지가 있습니다. 이 개발자에 게 OWIN의 접근성을 향상 되었습니다.
-- 비동기 디자인 하 여 컴퓨팅 리소스에 더 많은 I/O 집약적인 작업에 특히 처리를 사용 하 여 효율적으로 추상화를 수 있습니다.
-- 응용 프로그램 대리자 실행의 원자 단위 이며 OWIN 구성 요소를 쉽게 연결할 수 있으므로 환경 사전에 대리자에 매개 변수로 작업 하기 때문에 복잡 한 HTTP 처리 파이프라인을 만들어야 합니다.
+- OWIN 구성 요소를 작성 하는 데 필요한 형식 종속성이 매우 적습니다. 이렇게 하면 개발자에 게 OWIN의 접근성이 크게 향상 됩니다.
+- 비동기 디자인을 사용 하면 특히 i/o를 많이 사용 하는 작업을 통해 컴퓨팅 리소스의 처리를 효율적으로 수행할 수 있습니다.
+- 응용 프로그램 대리자는 실행의 원자성 단위 이며 환경 사전은 대리자에서 매개 변수로 전달 되기 때문에 OWIN 구성 요소를 쉽게 연결 하 여 복잡 한 HTTP 처리 파이프라인을 만들 수 있습니다.
 
-OWIN은 사양 구현 측면에서 볼 때 ([http://owin.org/html/owin.html](http://owin.org/html/owin.html)). 목표 다음 웹 프레임 워크를 하지만 웹 프레임 워크 및 웹 서버 상호 작용 하는 방법에 대 한 사양 대신 해서는 안 됩니다.
+구현 관점에서 OWIN은 사양 ([http://owin.org/html/owin.html](http://owin.org/html/owin.html))입니다. 그 목표는 다음 웹 프레임 워크가 아니라 웹 프레임 워크와 웹 서버가 상호 작용 하는 방식에 대 한 사양입니다.
 
-조사 했습니다 하는 경우 [OWIN](http://owin.org/) 또는 [Katana](https://github.com/aspnet/AspNetKatana/wiki), 또한 했을 수는 [Owin NuGet 패키지](http://nuget.org/packages/Owin) 및 Owin.dll 합니다. 이 라이브러리는 단일 인터페이스를 포함 [IAppBuilder](https://github.com/owin/owin/blob/master/src/Owin/IAppBuilder.cs)를 공식화 하 고 시작 시퀀스에 설명 된 체계화 [섹션 4](http://owin.org/html/owin.html#4-application-startup) OWIN 사양입니다. OWIN 서버를 구축 하기 위해 필요는 없지만 합니다 [IAppBuilder](https://github.com/owin/owin/blob/master/src/Owin/IAppBuilder.cs) 인터페이스는 구체적 참조 지점으로 제공 하며 Katana 프로젝트 구성 요소에서 사용 됩니다.
+[OWIN](http://owin.org/) 또는 [Katana](https://github.com/aspnet/AspNetKatana/wiki)를 조사 했다면 [OWIN NuGet 패키지](http://nuget.org/packages/Owin) 및 OWIN도 확인할 수 있습니다. 이 라이브러리에는 OWIN 사양의 [4 단원](http://owin.org/html/owin.html#4-application-startup) 에 설명 된 시작 시퀀스를 공식화 하 고 체계화 하는 [iappbuilder](https://github.com/owin/owin/blob/master/src/Owin/IAppBuilder.cs)의 단일 인터페이스가 포함 되어 있습니다. OWIN 서버를 작성 하는 데 필요한 것은 아니지만 [Iappbuilder](https://github.com/owin/owin/blob/master/src/Owin/IAppBuilder.cs) 인터페이스는 구체적 참조 지점을 제공 하며 Katana 프로젝트 구성 요소에서 사용 됩니다.
 
-## <a name="project-katana"></a>Project Katana
+## <a name="project-katana"></a>프로젝트 Katana
 
-반면 모두를 [OWIN](http://owin.org/html/owin.html) 사양 및 *Owin.dll* 소유 하는 커뮤니티 및 오픈 소스 작업을 실행 하는 커뮤니티를 [Katana](https://github.com/aspnet/AspNetKatana/wiki) 프로젝트에 OWIN의 집합을 나타내는 여전히 오픈 소스, 하는 동안 빌드하고 Microsoft에서 출시 되는 구성 요소입니다. 이러한 구성 요소 호스트 및 서버와 같은 인프라 구성 요소 뿐만 아니라 인증 구성 요소 및 프레임 워크에 대 한 바인딩을 같은 기능적 구성 요소 포함 등 [SignalR](../../../signalr/index.md) 고 [ASP.NET 웹 API](../../../web-api/overview/getting-started-with-aspnet-web-api/index.md)합니다. 프로젝트에 다음과 같은 세 가지 상위 수준의 목표: 
+[OWIN](http://owin.org/html/owin.html) 사양과 *OWIN* 는 모두 커뮤니티 소유 이며 커뮤니티에서 오픈 소스를 실행 하는 반면, [Katana](https://github.com/aspnet/AspNetKatana/wiki) 프로젝트는 오픈 소스에서 MICROSOFT가 빌드하고 출시 하는 OWIN 구성 요소 집합을 나타냅니다. 이러한 구성 요소에는 호스트 및 서버와 같은 인프라 구성 요소와 [SignalR](../../../signalr/index.md) 및 [ASP.NET Web API](../../../web-api/overview/getting-started-with-aspnet-web-api/index.md)같은 프레임 워크에 대 한 바인딩 구성 요소와 같은 기능 구성 요소가 포함 됩니다. 프로젝트에는 다음과 같은 세 가지 높은 수준의 목표가 있습니다. 
 
-- **이식 가능한** – 구성 요소를 쉽게 대체할 새 구성 요소에 대 한 사용 가능 해지면 수 있어야 합니다. 이 모든 유형의 서버 및 호스트 하기 위해 프레임 워크에서 구성 요소를 포함합니다. 이 목표의 Microsoft 프레임 워크가 타사 서버와 호스트에서 실행할 수 있지만 타사 프레임 워크 Microsoft 서버에는 실행 원활 하 게 수입니다.
-- **모듈식/유연한**– 기본적으로 켜져 있는 기능이 포함 되어 있는 많은 프레임 워크와는 달리 작고 집중 된 구성 요소를 결정 하는 데 응용 프로그램 개발자에 게 컨트롤을 통해 제공 Katana 프로젝트 구성 요소 이어야 합니다 응용 프로그램에서 사용 합니다.
-- **경량/성능/확장성** – 프레임 워크의 기존 개념을 작은 집합으로 분할 하 여 구성 요소는 명시적으로 추가 응용 프로그램 개발자가 더 적은 계산 결과 Katana 응용 프로그램을 사용할 수 있음 집중 리소스 및 결과적으로, 다른 유형의 서버 및 프레임 워크를 사용 하 여 보다 더 많은 부하를 처리 합니다. 응용 프로그램의 요구 사항을 기본 인프라에서 더 많은 기능을 요청 하는 대로 OWIN 파이프라인에 추가할 수는 있지만 응용 프로그램 개발자는 명시적 의사 결정 합니다. 또한 하위 수준 구성 요소 대체는 사용 가능 해지면 새로운 고성능 서버 원활 하 게 도입할 수 있습니다 이러한 응용 프로그램을 중단 하지 않고 OWIN 응용 프로그램의 성능을 개선 하기 위해 의미 합니다.
+- **이식** 가능 – 구성 요소가 사용할 수 있게 되 면 새 구성 요소를 쉽게 대체할 수 있습니다. 여기에는 프레임 워크에서 서버 및 호스트로 모든 유형의 구성 요소가 포함 됩니다. 이러한 목표는 타사 프레임 워크가 Microsoft 서버에서 원활 하 게 실행 될 수 있는 반면 Microsoft 프레임 워크는 타사 서버 및 호스트에서 실행 될 수 있다는 것을 의미 합니다.
+- **모듈식/유연한**기능-기본적으로 설정 되는 방대한 기능을 포함 하는 많은 프레임 워크와 달리, Katana 프로젝트 구성 요소는 작고 집중 되어야 하며 응용 프로그램 개발자에 게 응용 프로그램에 사용할 구성 요소를 결정 하는 제어 기능을 제공 합니다.
+- 간단 하 고 성능이 **뛰어나고 확장 가능** 합니다. 프레임 워크의 기존 개념을 응용 프로그램 개발자가 명시적으로 추가 하는 소규모의 작은 구성 요소 집합으로 나누면 그 결과 Katana 응용 프로그램은 더 적은 컴퓨팅 리소스를 소비할 수 있으며 그 결과 다른 유형의 서버 및 프레임 워크 보다 더 많은 부하를 처리할 수 있습니다. 응용 프로그램의 요구 사항에 따라 기본 인프라에서 더 많은 기능을 요구 하기 때문에 OWIN 파이프라인에 추가 될 수 있지만 응용 프로그램 개발자의 일부에 대 한 명시적인 결정을 내려야 합니다. 또한 하위 수준 구성 요소의 substitutability는 사용할 수 있게 되 면 새로운 고성능 서버를 원활 하 게 도입 하 여 응용 프로그램을 손상 시 키 지 않고 OWIN 응용 프로그램의 성능을 향상 시킬 수 있음을 의미 합니다.
 
-## <a name="getting-started-with-katana-components"></a>Katana 구성 요소를 사용 하 여 시작
+## <a name="getting-started-with-katana-components"></a>Katana 구성 요소 시작 하기
 
-처음으로 도입의 측면 중 하나는 [Node.js](http://nodejs.org/) 즉시 사람들의 관심을 그린는 프레임 워크가 있는 작성 및 웹 서버를 실행할 수 있습니다 하나는 단순성입니다. Katana 목표 light의 포함 된 경우 [Node.js](http://nodejs.org/), Katana 다양 한 장점을 제공 하는 한다는 것으로 요약할 수 있습니다 하나 [Node.js](http://nodejs.org/) (및 그와 같은 프레임 워크) 버릴 수 개발자 시작 하지 않고 모든 ASP.NET 웹 응용 프로그램을 개발 하는 방법에 대 한 알고 있습니다. 참이 문에 대 한 Katana 프로젝트 시작 동일 하 게 간단해 야 기본적에서 [Node.js](http://nodejs.org/)합니다.
+처음 도입 된 경우, 사용자의 주의가 즉시 제공 되는 [node.js](http://nodejs.org/) 프레임 워크의 한 가지 측면은 웹 서버를 작성 하 고 실행할 수 있는 단순성 이었습니다. Katana 목표가 [node.js](http://nodejs.org/)에 포함 된 경우 개발자가 ASP.NET 웹 응용 프로그램 개발에 대해 알고 있는 모든 것을 강제로 제공 하지 않고도 Katana [(및](http://nodejs.org/) 이와 유사한 프레임 워크)의 많은 이점을 제공 한다는 것을 설명 하 여이를 요약할 수 있습니다. 이 문이 true를 유지 하려면 Katana 프로젝트를 시작 하는 것은 [node.js](http://nodejs.org/)에 대 한 특성의 성격을 동일 하 게 유지 해야 합니다.
 
-## <a name="creating-hello-world"></a>"Hello World!" 만들기
+## <a name="creating-hello-world"></a>"Hello World!"을 (를) 만드는 중
 
-JavaScript 및.NET 개발 간의 주요 차이점 중 하나 (유무) 컴파일러의 경우 따라서 간단한 Katana 서버에 대 한 시작 지점에는 Visual Studio 프로젝트입니다. 그러나 프로젝트 형식의 가장 최소를 사용 하 여 시작할 수 있습니다: 빈 ASP.NET 웹 응용 프로그램입니다.
+JavaScript와 .NET 개발의 중요 한 차이점 중 하나는 컴파일러의 존재 여부입니다. 따라서 간단한 Katana 서버의 시작 지점은 Visual Studio 프로젝트입니다. 그러나 비어 있는 ASP.NET 웹 응용 프로그램의 프로젝트 형식 중에서 가장 적은 작업을 시작할 수 있습니다.
 
 [![](an-overview-of-project-katana/_static/image1.png)](http://nuget.org/packages/Microsoft.Owin.Host.SystemWeb)
 
-다음으로 설치 합니다 [Microsoft.Owin.Host.SystemWeb](http://nuget.org/packages/Microsoft.Owin.Host.SystemWeb) 프로젝트에 NuGet 패키지. 이 패키지는 ASP.NET 요청 파이프라인에서 실행 되는 OWIN 서버를 제공 합니다. 찾을 수 있습니다 합니다 [NuGet 갤러리](http://nuget.org/packages/Microsoft.Owin.Host.SystemWeb) Visual Studio 패키지 관리자 대화 상자 또는 패키지 관리자 콘솔을 사용 하 여 다음 명령을 사용 하 여 설치할 수 있습니다.
+다음에는 [Owin 웹](http://nuget.org/packages/Microsoft.Owin.Host.SystemWeb) NuGet 패키지를 프로젝트에 설치 합니다. 이 패키지는 ASP.NET 요청 파이프라인에서 실행 되는 OWIN 서버를 제공 합니다. [NuGet 갤러리](http://nuget.org/packages/Microsoft.Owin.Host.SystemWeb) 에서 찾을 수 있으며 다음 명령을 사용 하 여 Visual Studio 패키지 관리자 대화 상자 또는 패키지 관리자 콘솔을 사용 하 여 설치할 수 있습니다.
 
 [!code-console[Main](an-overview-of-project-katana/samples/sample2.cmd)]
 
-설치는 `Microsoft.Owin.Host.SystemWeb` 패키지 종속성으로 몇 가지 추가 패키지를 설치 합니다. 해당 종속성 중 하나는 `Microsoft.Owin`, 몇 가지 도우미 형식 및 OWIN 응용 프로그램을 개발 하기 위한 메서드를 제공 하는 라이브러리입니다. "Hello world" 서버를 신속 하 게 쓸 이러한 형식을 사용할 수 있습니다.
+`Microsoft.Owin.Host.SystemWeb` 패키지를 설치 하면 몇 가지 추가 패키지를 종속성으로 설치 합니다. 이러한 종속성 중 하나는 OWIN 응용 프로그램을 개발 하기 위한 몇 가지 도우미 형식 및 메서드를 제공 하는 라이브러리인 `Microsoft.Owin`입니다. 이러한 형식을 사용 하 여 다음 "hello 세계" 서버를 신속 하 게 작성할 수 있습니다.
 
 [!code-csharp[Main](an-overview-of-project-katana/samples/sample3.cs)]
 
-Visual Studio를 사용 하 여이 간단한 웹 서버를 실행할 수 있습니다 **F5** 명령 및 디버깅에 대 한 전체 지원을 포함 합니다.
+이제 Visual Studio의 **F5** 명령을 사용 하 여 매우 간단한이 웹 서버를 실행 하 고 디버깅을 완벽 하 게 지원할 수 있습니다.
 
-## <a name="switching-hosts"></a>호스트를 전환합니다.
+## <a name="switching-hosts"></a>호스트 전환
 
-기본적으로 이전 "hello world" 예제는 IIS의 컨텍스트에서 System.Web를 사용 하는 ASP.NET 요청 파이프라인에서 실행 됩니다. 이 수 자체로 엄청난 하므로 값을 추가 유연성 및 관리 기능을 사용 하 여 OWIN 파이프라인을 작성 하 고 IIS의 전체 완성도 활용할 수 있도록 합니다. 그러나 여기서 IIS에서 제공 되는 혜택은 필요 하지 않습니다 하 고 더 작은가 벼 워 졌습니다 호스트에 대 한 요구는 경우가 있을 수 있습니다. 필요한 것, 그런 다음 IIS 및 System.Web와 같이 외부에서 간단한 웹 서버를 실행 하 시겠습니까?
+기본적으로 이전 "hello 세계" 예제는 IIS의 컨텍스트에서 System.web를 사용 하는 ASP.NET request 파이프라인에서 실행 됩니다. 이는 자체를 사용 하 여 OWIN 파이프라인의 유연성과 composability에서 관리 기능 및 전체 IIS 완성도를 활용할 수 있으므로 엄청난 가치를 추가할 수 있습니다. 그러나 IIS에서 제공 하는 혜택이 필요 하지 않으며 더 작고 간단한 호스트에 대 한 혜택이 있는 경우가 있을 수 있습니다. IIS 및 System.web 외부에서 간단한 웹 서버를 실행 하려면 어떻게 해야 하나요?
 
-이식성 목표를 설명 하기 위해 명령줄 호스트 웹 서버 호스트에서 이동 하려면 프로젝트의 출력 폴더에 새 서버와 호스트 종속성을 추가 하기만 하면 및 다음 호스트를 시작 합니다. 이 예제에서는 웹 서버 라는 Katana 호스트에서 호스트할 `OwinHost.exe` Katana HttpListener 기반 서버를 사용 합니다. 마찬가지로 다른 Katana 구성 요소로, 이러한 획득 다음 명령을 사용 하 여 NuGet에서:
+이식성 목표를 설명 하기 위해 웹 서버 호스트에서 명령줄 호스트로 이동 하는 경우에는 단순히 새 서버 및 호스트 종속성을 프로젝트의 출력 폴더에 추가한 다음 호스트를 시작 해야 합니다. 이 예제에서는 `OwinHost.exe` 이라는 Katana 호스트에 웹 서버를 호스팅하고 Katana HttpListener 기반 서버를 사용 합니다. 다른 Katana 구성 요소와 마찬가지로, 다음 명령을 사용 하 여 NuGet에서 가져올 수 있습니다.
 
 [!code-console[Main](an-overview-of-project-katana/samples/sample4.cmd)]
 
-명령줄에서 수 후 프로젝트 루트 폴더로 이동 하 고 실행 하는 `OwinHost.exe` (함께 설치 된 각 NuGet 패키지의 tools 폴더에서). 기본적으로 `OwinHost.exe` HttpListener 기반 서버에 대 한 확인 하도록 구성 된 이므로 추가 구성이 필요 하지 않습니다. 웹 브라우저에서 탐색 `http://localhost:5000/` 콘솔을 통해 이제 실행 중인 응용 프로그램을 보여 줍니다.
+그런 다음 명령줄에서 프로젝트 루트 폴더로 이동 하 여 `OwinHost.exe` (해당 NuGet 패키지의 tools 폴더에 설치 된)만 실행할 수 있습니다. 기본적으로 `OwinHost.exe`는 HttpListener 기반 서버를 찾도록 구성 되므로 추가 구성이 필요 하지 않습니다. 웹 브라우저에서 `http://localhost:5000/`로 이동 하면 현재 콘솔을 통해 실행 중인 응용 프로그램이 표시 됩니다.
 
 ![](an-overview-of-project-katana/_static/image2.png)
 
 ## <a name="katana-architecture"></a>Katana 아키텍처
 
- Katana 구성 요소 아키텍처 아래와 같이 4 개의 논리적 계층으로 응용 프로그램을 나누는: *호스트, 서버, 미들웨어* 하 고 *응용 프로그램*합니다. 구성 요소 아키텍처는 이러한 계층의 구현을 쉽게 대체할 수, 대부분의 경우 응용 프로그램의 다시 컴파일하지 않고도 하는 방식으로 구분 됩니다.   
+ Katana 구성 요소 아키텍처는 응용 프로그램을 *호스트, 서버, 미들웨어* 및 *응용 프로그램*등의 논리적 계층 4 개로 나눕니다. 구성 요소 아키텍처는 응용 프로그램을 다시 컴파일할 필요 없이 대부분의 경우 이러한 계층의 구현을 쉽게 대체할 수 있는 방법으로 구성 됩니다.   
 
 ![](an-overview-of-project-katana/_static/image3.png)
 
 ## <a name="host"></a>호스트
 
- 호스트는 담당 합니다.
+ 호스트는 다음을 담당 합니다.
 
-- 기본 프로세스를 관리 합니다.
-- 서버를 선택 하 고는 요청을 통해 OWIN 파이프라인을 생성 하는 워크플로 오케스트레이션 처리 됩니다.
+- 기본 프로세스 관리
+- 서버를 선택 하 고 요청을 처리 하는 OWIN 파이프라인을 생성 하는 워크플로를 오케스트레이션 합니다.
 
-  현재는 Katana 기반 응용 프로그램에 대 한 3 주 호스팅 옵션이 있습니다.  
+  현재 Katana 기반 응용 프로그램에 대 한 세 가지 기본 호스팅 옵션이 있습니다.  
   
-**IIS/ASP.NET**: OWIN 파이프라인 표준 HttpModule 및 HttpHandler 형식을 사용 하는 ASP.NET 요청 흐름의 일부로 IIS에서 실행할 수 있습니다. ASP.NET 호스팅 지원 웹 응용 프로그램 프로젝트로 Microsoft.AspNet.Host.SystemWeb NuGet 패키지를 설치 하 여 활성화 됩니다. 또한 IIS 호스트와 서버 역할을 하므로 OWIN 서버/호스트 구분은 부모의 SystemWeb 호스트를 사용 하는 경우 개발자 수 없습니다. 대체 서버 구현을 대체 하므로이 NuGet 패키지에 있습니다.  
+**Iis/asp.net**: 표준 HttpModule 및 HttpHandler 형식을 사용 하 여 OWIN 파이프라인은 ASP.NET 요청 흐름의 일부로 IIS에서 실행할 수 있습니다. 웹 응용 프로그램 프로젝트에 Microsoft ASP.NET 웹 NuGet 패키지를 설치 하 여 호스팅 지원을 사용할 수 있습니다. 또한 IIS는 호스트 및 서버 역할을 수행 하므로이 NuGet 패키지에 OWIN 서버/호스트의 차이가 있습니다. 즉, SystemWeb 호스트를 사용 하는 경우 개발자는 대체 서버 구현을 대체할 수 없습니다.  
   
-**사용자 지정 호스트**: Katana 구성 요소 제품군을 통해 콘솔 응용 프로그램, Windows 서비스 등 무엇 인지에 자신의 사용자 지정 프로세스에서 응용 프로그램 호스트 수 개발자. 이 기능은 Web API에서 제공 되는 기능은 자체 호스트 하는 것과 유사 합니다. 다음 예제에서는 웹 API 코드의 사용자 지정 호스트를 보여 줍니다.  
+**사용자 지정 호스트**: Katana 구성 요소 모음을 통해 개발자는 콘솔 응용 프로그램, Windows 서비스 등의 고유한 사용자 지정 프로세스에서 응용 프로그램을 호스팅할 수 있습니다. 이 기능은 Web API에서 제공 하는 자체 호스트 기능과 유사 합니다. 다음 예제에서는 Web API 코드의 사용자 지정 호스트를 보여 줍니다.  
 
 [!code-csharp[Main](an-overview-of-project-katana/samples/sample5.cs)]
 
-Katana 응용 프로그램을 위한 자체 호스트 설정이 비슷합니다.
+Katana 응용 프로그램에 대 한 자체 호스트 설치는 다음과 유사 합니다.
 
 [!code-csharp[Main](an-overview-of-project-katana/samples/sample6.cs)]
 
-Web API 및 Katana self-host 예제 간의 주요 차이점 중 하나는 Web API 구성 코드 Katana self-host 예제에서 누락 된 경우 Katana는 이식성 및 작성을 사용 하도록 설정 하기 위해 요청 처리 파이프라인을 구성 하는 코드에서 서버를 시작 하는 코드를 구분 합니다. 그런 다음 웹 API를 구성 하는 코드는 또한 WebApplication.Start에서 형식 매개 변수로 지정 된 시작 클래스에 포함 됩니다.
+Web API와 Katana 자체 호스트 예제에서 주목할 만한 차이점 중 하나는 웹 API 구성 코드가 Katana 자체 호스트 예제에 없다는 것입니다. 이식성과 composability를 모두 사용 하기 위해 Katana는 서버를 시작 하는 코드를 요청 처리 파이프라인을 구성 하는 코드에서 분리 합니다. Web API를 구성 하는 코드는 시작 클래스에 포함 되어 있습니다 .이 클래스는 WebApplication. Start에서 형식 매개 변수로 추가로 지정 됩니다.
 
 [!code-csharp[Main](an-overview-of-project-katana/samples/sample7.cs)]
 
-Startup 클래스는 문서의 뒷부분에서 자세히 설명 합니다. 그러나 코드는 ASP.NET Web API를 자체 호스팅하는 응용 프로그램에서 사용 하 여 현재 코드를 자체 호스트 프로세스 것과 상당히 비슷한 Katana를 시작 해야 합니다.
+시작 클래스는이 문서의 뒷부분에서 자세히 설명 합니다. 그러나 Katana 자체 호스트 프로세스를 시작 하는 데 필요한 코드는 ASP.NET Web API 자체 호스트 응용 프로그램에서 현재 사용 하 고 있는 코드와 비슷합니다 strikingly.
 
-**OwinHost.exe**: Katana 웹 응용 프로그램을 실행 하는 사용자 지정 프로세스를 작성 하려고 하는 일부를 하는 동안 여러 하려는 서버를 시작 하 고 응용 프로그램을 실행할 수 있는 미리 빌드된 실행 파일을 시작 합니다. Katana 구성 요소 suite는이 시나리오에서는 다음을 포함 합니다. `OwinHost.exe`합니다. 프로젝트의 루트 디렉터리 내에서 실행 하는 경우이 실행 파일 (HttpListener 서버 기본적으로 사용) 하는 서버 시작 되며를 찾아 사용자의 startup 클래스를 실행 하려면 규칙을 사용 됩니다. 보다 세분화 된 컨트롤에 대 한 실행 파일 추가 명령줄 매개 변수 개수를 제공합니다.
+**Owinhost**: 일부는 Katana 웹 응용 프로그램을 실행 하는 사용자 지정 프로세스를 작성 하려고 하지만, 대부분 서버를 시작 하 고 응용 프로그램을 실행할 수 있는 미리 작성 된 실행 파일을 시작 하는 것이 좋습니다. 이 시나리오의 경우 Katana 구성 요소 모음에 `OwinHost.exe`포함 됩니다. 프로젝트의 루트 디렉터리 내에서 실행 하는 경우이 실행 파일은 서버를 시작 하 고 (기본적으로 HttpListener 서버 사용) 규칙을 사용 하 여 사용자의 시작 클래스를 찾고 실행 합니다. 더 세부적인 제어를 위해 실행 파일은 다양 한 명령줄 매개 변수를 추가로 제공 합니다.
 
 ![](an-overview-of-project-katana/_static/image4.png)
 
 ## <a name="server"></a>서버
 
- 호스트는 시작 하 고 있는 응용 프로그램이 실행 되는 프로세스를 서버의 책임을 유지 관리 하는 일을 담당 하는 동안 네트워크 소켓을 열고, 요청에 대 한 수신 파이프라인의 OWIN 구성 요소를 통해 보낼 지정 (때 사용자가 이미 나타나는데,이 파이프라인은 응용 프로그램 개발자의 Startup 클래스에 지정 된) 현재 Katana 프로젝트에 두 가지 서버 구현을 포함 합니다. 
+ 호스트는 응용 프로그램이 실행 되는 프로세스의 시작 및 유지 관리를 담당 하는 반면 서버는 네트워크 소켓을 열고, 요청을 수신 하 고, 사용자가 지정한 OWIN 구성 요소의 파이프라인을 통해 전송 하는 것입니다. 이미 알고 있을 수 있습니다 .이 파이프라인은 응용 프로그램 개발자의 시작 클래스에서 지정 됩니다. 현재 Katana 프로젝트에는 두 개의 서버 구현이 포함 되어 있습니다. 
 
-- **Microsoft.Owin.Host.SystemWeb**: 앞서 언급 했 듯이, ASP.NET 파이프라인 역할을 호스트 및 서버 모두와 함께에서 IIS입니다. 따라서이 호스팅 옵션을 선택 하는 경우 IIS 프로세스 활성화 같은 호스트 수준 문제를 관리 및 HTTP 요청을 수신 합니다. ASP.NET 웹 응용 프로그램에 대 한 다음 보냅니다 요청은 ASP.NET 파이프라인에. Katana SystemWeb 호스트는 HTTP 파이프라인을 통과 하며 사용자가 지정한 OWIN 파이프라인을 통해 보낼 요청을 가로채 ASP.NET HttpModule 및 HttpHandler를 등록 합니다.
-- **Microsoft.Owin.Host.HttpListener**: 해당 이름으로이 Katana 서버 소켓을 열고 개발자가 지정한 OWIN 파이프라인으로 요청을 전송 합니다..NET Framework의 HttpListener 클래스를 사용 합니다. 이 옵션은 현재 Katana 자체 호스팅하는 API와 OwinHost.exe에 대 한 기본 서버 선택 합니다.
+- **Owin 웹**: 앞에서 설명한 것 처럼 ASP.NET 파이프라인과 함께 사용 되는 IIS는 호스트와 서버 역할을 모두 수행 합니다. 따라서이 호스팅 옵션을 선택 하는 경우 IIS는 프로세스 활성화와 같은 호스트 수준 문제를 관리 하 고 HTTP 요청을 수신 합니다. ASP.NET 웹 응용 프로그램의 경우 요청을 ASP.NET 파이프라인으로 보냅니다. Katana SystemWeb 호스트는 HTTP 파이프라인을 통해 전달 되는 요청을 가로채서 사용자 지정 OWIN 파이프라인을 통해 보내는 ASP.NET HttpModule 및 HttpHandler를 등록 합니다.
+- **Owin. HttpListener**: 이름에 따라이 Katana 서버는 .NET Framework의 HttpListener 클래스를 사용 하 여 소켓을 열고 개발자가 지정한 Owin 파이프라인으로 요청을 보냅니다. 이는 현재 Katana 자체 호스트 API와 OwinHost 모두에 대 한 기본 서버 선택입니다.
 
 ## <a name="middlewareframework"></a>미들웨어/프레임 워크
 
- 이전에 설명한 것 처럼 서버가 클라이언트에서 요청을 수락 하는 경우 담당 OWIN 구성 요소 개발자의 시작 코드에서 지정 하는 파이프라인을 통해 전달 합니다. 이러한 파이프라인 구성 요소를 사용 하 여 미들웨어 라고 합니다.  
- 기본적인 수준에서 OWIN 미들웨어 구성 요소는 간단히 호출할 수 있도록 OWIN 응용 프로그램 대리자를 구현 하 해야 합니다.
+ 앞에서 설명한 것 처럼 서버가 클라이언트의 요청을 수락 하면 개발자의 시작 코드에 지정 된 OWIN 구성 요소의 파이프라인을 통해 전달 해야 합니다. 이러한 파이프라인 구성 요소를 미들웨어 라고 합니다.  
+ 매우 기본적인 수준에서 OWIN 미들웨어 구성 요소는 단순히 OWIN 응용 프로그램 대리자를 구현 하 여 호출할 수 있도록 해야 합니다.
 
 [!code-console[Main](an-overview-of-project-katana/samples/sample8.cmd)]
 
-그러나 미들웨어 구성 요소 조합 고 개발을 간소화 하기 위해 Katana는 적은 수의 규칙 및 도우미 형식 미들웨어 구성 요소에 대 한 지원 합니다. 이러한 가장 일반적입니다는 `OwinMiddleware` 클래스입니다. 이 클래스를 사용 하 여 빌드된 사용자 지정 미들웨어 구성 요소는 다음과 비슷하게 표시 됩니다. 
+그러나 미들웨어 구성 요소의 개발과 컴퍼지션을 간소화 하기 위해 Katana는 미들웨어 구성 요소에 대 한 몇 가지 규칙과 도우미 유형을 지원 합니다. 가장 일반적인 방법은 `OwinMiddleware` 클래스입니다. 이 클래스를 사용 하 여 작성 된 사용자 지정 미들웨어 구성 요소는 다음과 유사 합니다. 
 
 [!code-csharp[Main](an-overview-of-project-katana/samples/sample9.cs)]
 
- 이 클래스에서 파생 됩니다 `OwinMiddleware`, 해당 인수 중 하나로 파이프라인의 다음 미들웨어의 인스턴스를 받고 그런 다음 기본 생성자에 전달 하는 생성자를 구현 합니다. 또한 미들웨어를 구성 하는 데 사용 되는 추가 인수는 다음 미들웨어 매개 변수 뒤 생성자 매개 변수로 선언 됩니다.   
+ 이 클래스는 `OwinMiddleware`에서 파생 되 고, 파이프라인의 다음 미들웨어 인스턴스를 해당 인수 중 하나로 수락한 다음 기본 생성자에 전달 하는 생성자를 구현 합니다. 미들웨어를 구성 하는 데 사용 되는 추가 인수도 다음 미들웨어 매개 변수 뒤에 생성자 매개 변수로 선언 됩니다.   
   
-런타임 시 미들웨어가 실행 되는 재정의 통해 `Invoke` 메서드. 이 메서드는 형식의 단일 인수 `OwinContext`합니다. 이 컨텍스트 개체에서 제공 되는 `Microsoft.Owin` NuGet 패키지는 앞에서 설명한 하 고 몇 가지 추가 도우미 형식과 함께 요청, 응답 및 환경 사전에 대 한 강력한 형식의 액세스를 제공 합니다.   
+런타임에 미들웨어는 재정의 된 `Invoke` 메서드를 통해 실행 됩니다. 이 메서드는 `OwinContext`형식의 단일 인수를 사용 합니다. 이 컨텍스트 개체는 앞에서 설명한 `Microsoft.Owin` NuGet 패키지에서 제공 하며, 몇 가지 추가 도우미 형식과 함께 요청, 응답 및 환경 사전에 대 한 강력한 형식의 액세스를 제공 합니다.   
   
-미들웨어 클래스 쉽게 추가할 수를 OWIN 파이프라인에 응용 프로그램 시작 코드를 다음과 같이 합니다.   
+미들웨어 클래스는 응용 프로그램 시작 코드의 OWIN 파이프라인에 다음과 같이 쉽게 추가할 수 있습니다.   
 
 [!code-csharp[Main](an-overview-of-project-katana/samples/sample10.cs)]
 
-미들웨어 구성 요소에서 간단한에 이르기까지 Katana 인프라 OWIN 미들웨어 구성 요소를 파이프라인을 간단히 구축 및 구성 요소는 단순히 파이프라인에 참여 하도록 응용 프로그램 대리자를 지원 해야 하기 때문에 ASP.NET Web API와 같은 전체 프레임 워크에로 거 나 [SignalR](../../../signalr/index.md)합니다. 예를 들어, 이전 OWIN 파이프라인에 ASP.NET Web API를 추가할 필요 다음 시작 코드를 추가 합니다.
+Katana 인프라는 단순히 OWIN 미들웨어 구성 요소의 파이프라인을 구축 하 고, 구성 요소가 파이프라인에 참여할 응용 프로그램 대리자를 지원 해야 하기 때문에 미들웨어 구성 요소는 단순로 거에서 ASP.NET, Web API, [SignalR](../../../signalr/index.md)등의 전체 프레임 워크로 복잡 한 범위를 만들 수 있습니다. 예를 들어 이전 OWIN 파이프라인에 ASP.NET Web API를 추가 하려면 다음 시작 코드를 추가 해야 합니다.
 
 [!code-csharp[Main](an-overview-of-project-katana/samples/sample11.cs)]
 
-Katana 인프라 구성 방법 IAppBuilder 개체에 추가 된 순서에 따라 미들웨어 구성 요소는 파이프라인을 작성 합니다. 그런 다음 예에서 LoggerMiddleware 이러한 요청은 궁극적으로 처리 하는 방법에 관계 없이 파이프라인을 통해 이동 하는 모든 요청을 처리할 수 있습니다. 이 미들웨어 구성 요소 (예: 인증 구성 요소) 여러 구성 요소 및 프레임 워크 (예: ASP.NET Web API, SignalR 및 정적 파일 서버)를 포함 하는 파이프라인에 대 한 요청을 처리할 수 있는 강력한 시나리오를 사용 하도록 설정 합니다.
+Katana 인프라는 구성 메서드의 IAppBuilder 개체에 추가 된 순서에 따라 미들웨어 구성 요소의 파이프라인을 빌드합니다. 이 예제에서 LoggerMiddleware는 이러한 요청이 궁극적으로 처리 되는 방식에 관계 없이 파이프라인을 통해 흐르는 모든 요청을 처리할 수 있습니다. 이를 통해 미들웨어 구성 요소 (예: 인증 구성 요소)가 여러 구성 요소 및 프레임 워크 (예: ASP.NET Web API, SignalR 및 정적 파일 서버)를 포함 하는 파이프라인에 대 한 요청을 처리할 수 있는 강력한 시나리오를 사용할 수 있습니다.
  
 ## <a name="applications"></a>애플리케이션
 
-이전 예제에서 볼 수 있듯이, OWIN 및 Katana 프로젝트 없습니다 생각해 야 응용 프로그램 프로그래밍 모델 및 프레임 워크 서버 및 호스팅 인프라에서 분리 하는 추상화 대신 새 응용 프로그램 프로그래밍 모델을 아니라 합니다. 예를 들어, Web API 응용 프로그램을 빌드할 때 개발자 프레임 워크 Katana 프로젝트에서 구성 요소를 사용 하 여 OWIN 파이프라인의 응용 프로그램을 실행 하는 여부에 관계 없이 ASP.NET Web API 프레임 워크를 사용 하 여 계속 합니다. OWIN 관련 코드 응용 프로그램 개발자에 게 표시 될 위치 한곳 개발자 OWIN 파이프라인을 작성 하는 여기서 응용 프로그램 시작 코드에 게 됩니다. 시작 코드에서 개발자는 일련의 들어오는 요청을 처리 하는 각 미들웨어 구성 요소에 대 한 일반적으로 UseXx 문 등록 됩니다. 이 환경은 현재 System.Web 전 세계에서 HTTP 모듈을 등록 하는 것과 같은 효과 갖습니다. 일반적으로 더 큰 프레임 워크와 같은 미들웨어 ASP.NET Web API 또는 [SignalR](../../../signalr/index.md) 파이프라인의 끝에 등록 됩니다. 모든 프레임 워크 및 파이프라인의 뒷부분에서 등록 된 구성 요소에 대 한 요청 처리 됩니다 있도록 캐싱 또는 인증에 대 한 것과 같은 교차 미들웨어 구성 요소는 일반적으로 파이프라인의 시작 부분 쪽으로 등록 됩니다. 이 분리 미들웨어 구성 요소 및 기본 인프라 구성 요소에서 서로 다른 구성 요소를 전체 시스템이 안정적으로 유지 하면서 다양 한 속도에서 진화를 수 있습니다.
+앞의 예제에서 설명한 것 처럼 OWIN와 Katana 프로젝트는 새로운 응용 프로그램 프로그래밍 모델 이라고 생각 해서는 안 되며 응용 프로그램 프로그래밍 모델 및 프레임 워크를 서버 및 호스팅 인프라에서 분리 하는 추상화로 간주 되어야 합니다. 예를 들어 웹 API 응용 프로그램을 빌드할 때 개발자 프레임 워크는 Katana 프로젝트의 구성 요소를 사용 하 여 OWIN 파이프라인에서 응용 프로그램을 실행 하는지 여부에 관계 없이 계속 해 서 ASP.NET Web API 프레임 워크를 사용 합니다. OWIN 관련 코드가 응용 프로그램 개발자에 게 표시 되는 한 위치는 개발자가 OWIN 파이프라인을 작성 하는 응용 프로그램 시작 코드입니다. 시작 코드에서 개발자는 일련의 UseXx 문을 등록 합니다. 일반적으로 들어오는 요청을 처리 하는 각 미들웨어 구성 요소에 대해 하나씩입니다. 이 환경은 현재 System.web 환경에 HTTP 모듈을 등록 하는 것과 동일한 효과를 가집니다. 일반적으로 ASP.NET Web API 또는 [SignalR](../../../signalr/index.md) 와 같은 더 큰 프레임 워크 미들웨어는 파이프라인의 끝에 등록 됩니다. 인증 또는 캐싱에 대 한 이러한 구성 요소는 일반적으로 파이프라인의 시작 부분에 등록 되므로 파이프라인에서 나중에 등록 된 모든 프레임 워크 및 구성 요소에 대 한 요청을 처리할 수 있습니다. 이러한 미들웨어 구성 요소와 기본 인프라 구성 요소를 분리 하면 전체 시스템이 안정적으로 유지 되도록 하는 동시에 구성 요소가 서로 다른 속도로 발전할 수 있습니다.
 
-## <a name="components--nuget-packages"></a>구성 요소-NuGet 패키지
+## <a name="components--nuget-packages"></a>구성 요소 – NuGet 패키지
 
-Katana 프로젝트 구성 요소는 많은 현재 라이브러리 및 프레임 워크와 마찬가지로 NuGet 패키지 집합으로 전달 됩니다. 이후 버전 2.0에 대 한 Katana 패키지 종속성 그래프의 형식은 다음과 같습니다. (더 크게 보려면 이미지 클릭).
+많은 최신 라이브러리 및 프레임 워크와 마찬가지로 Katana 프로젝트 구성 요소는 NuGet 패키지 집합으로 제공 됩니다. 이후 버전 2.0의 경우 Katana 패키지 종속성 그래프는 다음과 같습니다. (더 큰 보기를 보려면 이미지를 클릭 하세요.)
 
 [![](an-overview-of-project-katana/_static/image6.png)](an-overview-of-project-katana/_static/image5.png)
 
-Katana 프로젝트에서 거의 모든 패키지에 따라 달라 집니다, 직접 또는 간접적으로 Owin 패키지 있습니다. 이 섹션 4 OWIN 사양에 설명 된 응용 프로그램 시작 시퀀스의 구체적인 구현을 제공 하는 IAppBuilder 인터페이스를 포함 하는 패키지는 아마 기억하실 것입니다. 또한 많은 패키지에 따라 달라 집니다 Microsoft.Owin HTTP 요청 및 응답 작업에 대 한 도우미 형식 집합을 제공 합니다. 패키지의 나머지 부분에서는 호스팅 인프라 패키지 (서버 또는 호스트) 또는 미들웨어로 분류할 수 있습니다. 패키지 및 종속성 Katana 프로젝트 외부에 주황색으로 표시 됩니다.
+Katana 프로젝트의 거의 모든 패키지는 Owin 패키지에서 직접적으로 또는 간접적으로 종속 됩니다. OWIN 사양의 4 단원에 설명 된 응용 프로그램 시작 시퀀스의 구체적인 구현을 제공 하는 IAppBuilder 인터페이스를 포함 하는 패키지를 기억할 수 있습니다. 또한 대부분의 패키지는 HTTP 요청 및 응답을 사용 하기 위한 도우미 형식 집합을 제공 하는 Owin에 종속 됩니다. 패키지의 나머지 부분은 호스팅 인프라 패키지 (서버 또는 호스트) 또는 미들웨어로 분류할 수 있습니다. Katana 프로젝트 외부에 있는 패키지 및 종속성은 주황색으로 표시 됩니다.
 
-Katana 2.0에 대 한 호스팅 인프라의 SystemWeb 및 HttpListener 기반 서버, OwinHost.exe를 사용 하 여 OWIN 응용 프로그램을 실행 하기 위한 OwinHost 패키지 및 OWIN 응용 프로그램에서 자체 호스팅 Microsoft.Owin.Hosting 패키지 모두를 포함 한 사용자 지정 호스트 (예: 콘솔 응용 프로그램, Windows 서비스 등)
+Katana 2.0에 대 한 호스팅 인프라에는 SystemWeb 및 HttpListener 기반 서버, OwinHost .exe를 사용 하 여 OWIN 응용 프로그램을 실행 하기 위한 OwinHost 패키지 및에서 자체 호스팅 OWIN 응용 프로그램을 위한 Owin 패키지가 포함 되어 있습니다. 사용자 지정 호스트 (예: 콘솔 응용 프로그램, Windows 서비스 등)
 
-Katana 2.0 미들웨어 구성 요소는 주로 다른 인증 수단을 제공 합니다. 시작 및 오류 페이지에 대 한 지원을 사용 하도록 설정 하는 하나의 추가 미들웨어 구성 요소 진단을 위해 제공 됩니다. OWIN 호스팅 사실상 추상화로 증가 함에 따라, Microsoft 및 타사에서 개발한 것 모두 미들웨어 구성 요소 에코 시스템도 수에서 증가 합니다.
+Katana 2.0의 경우 미들웨어 구성 요소는 주로 다양 한 인증 방법을 제공 하는 데 중점을 두었습니다. 진단을 위한 추가 미들웨어 구성 요소가 하나씩 제공 되며이를 통해 시작 및 오류 페이지를 지원할 수 있습니다. OWIN가 사실상 호스트 하는 추상화로 성장 하 게 되 면 미들웨어 구성 요소 (Microsoft와 타사에서 개발한 구성 요소 모두)의 에코 시스템도 증가 합니다.
 
 ## <a name="conclusion"></a>결론
 
- 해당부터 Katana 프로젝트의 목표를 만들고 있으므로 개발자가 또 웹 프레임 워크에 알아보려면 강제 적용 되지 않았습니다. 대신, 목표.NET 웹 응용 프로그램 개발자가 가능 했습니다 이전 보다 더 많은 선택 옵션이 제공 하는 추상화를 만들려고 했습니다. 논리적 계층을 일반적인 웹 응용 프로그램 스택의 대체할 수 있는 구성 요소 집합으로 나누면 Katana 프로젝트에서 이러한 구성 요소에 적합 한 모든 속도 향상 시킬 스택 전체에서 구성 요소를 수 있습니다. 간단한 OWIN 추상화 모든 구성 요소를 빌드하여 Katana은 프레임 워크 및 응용 프로그램을 기반으로 구축 된 다양 한 서로 다른 서버와 호스트 간에 이식 가능 합니다. 스택의 컨트롤에서 개발자를 넣어 Katana 개발자 경량 하는 방법에 대 한 궁극적인 선택할 수 있도록 보장 하는 방법 기능을 갖춘 자신의 웹 스택 이어야 합니다.  
+ 처음부터 Katana 프로젝트의 목표는 개발자가 아직 다른 웹 프레임 워크를 배워야 합니다. 대신 .NET 웹 응용 프로그램 개발자에 게 이전에 사용할 수 있는 것 보다 더 많은 옵션을 제공 하는 추상화를 만드는 것이 목표입니다. Katana 프로젝트는 일반적인 웹 응용 프로그램 스택의 논리적 계층을 대체 가능한 구성 요소 집합으로 분할 하 여 해당 구성 요소에 적합 한 비율을 개선 하기 위해 스택 전체에서 구성 요소를 사용할 수 있도록 합니다. Katana는 간단한 OWIN 추상화를 중심으로 모든 구성 요소를 빌드하여 프레임 워크와 프레임 워크를 기반으로 구축 된 응용 프로그램을 다양 한 서버 및 호스트에서 이식할 수 있습니다. 개발자가 stack의 제어를 설정 하 여 Katana는 개발자가 기능을 사용 하는 방법에 대 한 최고의 선택 이나 기능을 갖춘 웹 스택이 무엇 인지를 확인 합니다.  
 
-## <a name="for-more-information-about-katana"></a>Katana에 대 한 자세한 내용은
+## <a name="for-more-information-about-katana"></a>Katana에 대 한 자세한 내용
 
-- GitHub에서 Katana 프로젝트: [ https://github.com/aspnet/AspNetKatana/ ](https://github.com/aspnet/AspNetKatana/)합니다.
-- 비디오: [Katana 프로젝트-ASP.NET 용 OWIN](https://channel9.msdn.com/Shows/Web+Camps+TV/The-Katana-Project-OWIN-for-ASPNET), Howard Dierking 여 합니다.
+- GitHub의 Katana 프로젝트: [https://github.com/aspnet/AspNetKatana/](https://github.com/aspnet/AspNetKatana/).
+- 비디오: Howard Dierking에서 [ASP.NET에 대 한 Katana 프로젝트-OWIN](https://channel9.msdn.com/Shows/Web+Camps+TV/The-Katana-Project-OWIN-for-ASPNET).
 
-## <a name="acknowledgements"></a>감사의 글
+## <a name="acknowledgements"></a>감사의 말
 
-- [Rick Anderson](https://blogs.msdn.com/b/rickandy/): (twitter [ @RickAndMSFT ](http://twitter.com/RickAndMSFT) ) Rick은 프로그래밍 수석 테크니컬 Microsoft Azure 및 MVC에 집중 합니다.
-- [Scott Hanselman](http://www.hanselman.com/blog/): (twitter [ @shanselman ](https://twitter.com/shanselman) )
-- [Jon Galloway](https://weblogs.asp.net/jgalloway/default.aspx): (twitter [ @jongalloway ](https://twitter.com/jongalloway) )
+- [Rick Anderson](https://blogs.msdn.com/b/rickandy/): (twitter [@RickAndMSFT](http://twitter.com/RickAndMSFT) ) RICK는 Azure 및 MVC에 초점을 맞춘 Microsoft의 선임 프로그래밍 기록기입니다.
+- [Scott Hanselman](http://www.hanselman.com/blog/): (twitter [@shanselman](https://twitter.com/shanselman) )
+- [Jon Galloway](https://weblogs.asp.net/jgalloway/default.aspx): (twitter [@jongalloway](https://twitter.com/jongalloway) )

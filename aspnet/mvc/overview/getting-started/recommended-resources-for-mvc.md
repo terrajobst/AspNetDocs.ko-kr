@@ -9,11 +9,11 @@ ms.assetid: 7958d725-e958-4566-a85b-535eeb985f94
 msc.legacyurl: /mvc/overview/getting-started/recommended-resources-for-mvc
 msc.type: authoredcontent
 ms.openlocfilehash: 11f4a7cae8d425873b1828a9e5f51471def954fb
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77457156"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78470321"
 ---
 # <a name="mvc-recommended-resources"></a>MVC 권장 리소스
 

@@ -2,22 +2,22 @@
 uid: web-forms/overview/presenting-and-managing-data/index
 title: ASP.NET Web Forms에서 데이터 작업 | Microsoft Docs
 author: rick-anderson
-description: 컨트롤을 사용 하 여 데이터에 액세스 하는 방법 및 요청 사이 정보를 유지 하는 방법.
+description: 컨트롤을 사용 하 여 데이터에 액세스 하는 방법 및 요청 간에 정보를 유지 하는 방법
 ms.author: riande
 ms.date: 08/08/2011
 ms.assetid: bb2b79bd-aaf4-4f5e-82a1-fc199514a3e2
 msc.legacyurl: /web-forms/overview/presenting-and-managing-data
 msc.type: chapter
 ms.openlocfilehash: 0a439ca8d0631dabdc224693f4d7bb23b04d4dad
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65133072"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78512573"
 ---
 # <a name="working-with-data-in-aspnet-web-forms"></a>ASP.NET Web Forms에서 데이터 작업
 
-> 컨트롤을 사용 하 여 데이터에 액세스 하는 방법 및 요청 사이 정보를 유지 하는 방법.
+> 컨트롤을 사용 하 여 데이터에 액세스 하는 방법 및 요청 간에 정보를 유지 하는 방법
 
 - [Visual Studio 2013의 모델 바인딩 및 Web Forms](model-binding/index.md)
 

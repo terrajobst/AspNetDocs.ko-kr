@@ -9,11 +9,11 @@ ms.assetid: ddf6252f-9413-4c0c-a360-2cef8d231717
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-deploying-a-code-only-update-8-of-12
 msc.type: authoredcontent
 ms.openlocfilehash: e4d094ef84a747c36ce05ddb0e3d1ce0391d5605
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74572757"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78455075"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-deploying-a-code-only-update---8-of-12"></a>Visual Studio 또는 Visual Web Developer를 사용 하 여 SQL Server Compact를 사용 하 여 ASP.NET 웹 응용 프로그램 배포: 코드 전용 업데이트 배포-8/12
 
@@ -110,7 +110,7 @@ ContosoUniversity 프로젝트에 대 한 **프로젝트 속성** 창을 열고 
 
 [![Upload_dialog_box_in_File_Manager](deployment-to-a-hosting-provider-deploying-a-code-only-update-8-of-12/_static/image14.png)](deployment-to-a-hosting-provider-deploying-a-code-only-update-8-of-12/_static/image13.png)
 
-사이트의 URL로 이동 합니다. 이제 홈 페이지 대신 *앱\_오프 라인 .htm* 페이지가 표시 되는 것을 볼 수 있습니다.
+사용 중인 사이트의 URL로 이동합니다. 이제 홈 페이지 대신 *앱\_오프 라인 .htm* 페이지가 표시 되는 것을 볼 수 있습니다.
 
 [App_offline ![htm_page_in_production](deployment-to-a-hosting-provider-deploying-a-code-only-update-8-of-12/_static/image16.png)](deployment-to-a-hosting-provider-deploying-a-code-only-update-8-of-12/_static/image15.png)
 

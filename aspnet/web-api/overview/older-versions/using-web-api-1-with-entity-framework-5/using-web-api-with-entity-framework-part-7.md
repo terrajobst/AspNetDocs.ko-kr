@@ -9,11 +9,11 @@ ms.assetid: eb32a17b-626c-4373-9a7d-3387992f3c04
 msc.legacyurl: /web-api/overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-7
 msc.type: authoredcontent
 ms.openlocfilehash: fe4074c701159a137be3644d65ca844f160c2399
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74599982"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78484451"
 ---
 # <a name="part-7-creating-the-main-page"></a>7 부: 기본 페이지 만들기
 
@@ -72,7 +72,7 @@ ms.locfileid: "74599982"
 
 코드는 많지만,이를 단계별로 작성 했으므로 디자인을 명확 하 게 만들 수 있습니다. 이제 HTML에 일부 녹아웃 바인딩을 추가할 수 있습니다.
 
-**상품**
+**제품**
 
 제품 목록에 대 한 바인딩은 다음과 같습니다.
 

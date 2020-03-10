@@ -1,23 +1,23 @@
 ---
 uid: web-forms/videos/how-do-i/index
-title: 작업 절차 | Microsoft 문서
+title: 어떻게 할까요? | Microsoft Docs
 author: rick-anderson
-description: 다양 한 일반적인 작업을 수행 하는 방법.
+description: 여러 가지 일반적인 작업을 수행 하는 방법
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 27591afa-3c14-47e6-8323-573f8f7aa862
 msc.legacyurl: /web-forms/videos/how-do-i
 msc.type: chapter
 ms.openlocfilehash: 12c988e64c5b724e04b6fc5f8eddc6a181764e1d
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65114917"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78519845"
 ---
-# <a name="how-do-i"></a>작업 절차
+# <a name="how-do-i"></a>어떻게 할까요?
 
-> 다양 한 일반적인 작업을 수행 하는 방법.
+> 여러 가지 일반적인 작업을 수행 하는 방법
 
 - [전문가의 팁과 트릭 배우기](how-do-i-learn-the-tips-and-tricks-of-experts.md)
 - [지역화 기능을 사용하여 다국어 사이트 만들기](how-do-i-create-a-multi-lingual-site-with-localization.md)
@@ -73,7 +73,7 @@ ms.locfileid: "65114917"
 - [ASP.NET 웹 페이지에서 브라우저 기능 검색](how-do-i-detect-browser-capabilities-in-aspnet-web-pages.md)
 - [ASP.NET 서버 컨트롤을 렌더링에 사용되는 어댑터에 매핑](how-do-i-map-an-aspnet-server-control-to-the-adaptor-used-to-render-it.md)
 - [쿼리 문자열을 사용하여 한 페이지에서 다른 페이지로 정보 전달](how-do-i-pass-information-from-one-page-to-another-using-a-query-string.md)
-- [Aspnet를 사용 하 여\_merge.exe 유틸리티 어셈블리 병합](how-do-i-use-the-aspnet_mergeexe-utility-to-merge-assemblies.md)
+- [Aspnet\_merge .exe 유틸리티를 사용 하 여 어셈블리를 병합 합니다.](how-do-i-use-the-aspnet_mergeexe-utility-to-merge-assemblies.md)
 - [ASP.NET에서 교차 페이지 포스트백 구현](how-do-i-implement-a-cross-page-postback-in-aspnet.md)
 - [프로그래밍 방식으로 ASP.NET 웹 페이지에 컨트롤 추가](how-do-i-add-controls-to-an-aspnet-web-page-programmatically.md)
 - [숨겨진 필드를 사용하여 클라이언트 쪽 정보 저장 및 조작](how-do-i-use-a-hidden-field-to-store-and-manipulate-client-side-information.md)

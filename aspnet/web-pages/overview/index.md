@@ -9,11 +9,11 @@ ms.assetid: 1a2ed0e8-63da-4110-9896-e2731d86f7c4
 msc.legacyurl: /web-pages/overview
 msc.type: book
 ms.openlocfilehash: b4c9e9eb85f6ba9a1e2b2d0a1bbaf027ee25bc0d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381850"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78520559"
 ---
 # <a name="web-pages-guidance"></a>웹 페이지 지침
 
@@ -51,7 +51,7 @@ ms.locfileid: "59381850"
     - [도우미 설치](ui-layouts-and-themes/installing-helpers.md)
     - [ASP.NET 웹 페이지와 Twitter 도우미](ui-layouts-and-themes/twitter-helper.md)
     - [ASP.NET 웹 페이지 사이트에 맵 표시](ui-layouts-and-themes/displaying-maps-in-an-aspnet-web-pages-site.md)
-- [모바일](mobile/index.md)
+- [Mobile](mobile/index.md)
 
     - [모바일 디바이스를 위한 ASP.NET 웹 페이지 사이트 렌더링](mobile/rendering-aspnet-web-pages-sites-for-mobile-devices.md)
 - [데이터 작업](data/index.md)

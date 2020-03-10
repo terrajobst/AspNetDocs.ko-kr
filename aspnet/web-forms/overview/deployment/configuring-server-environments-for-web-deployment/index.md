@@ -2,22 +2,22 @@
 uid: web-forms/overview/deployment/configuring-server-environments-for-web-deployment/index
 title: ASP.NET 4-엔터프라이즈 배포 시리즈 2 서버 구성 | Microsoft Docs
 author: rick-anderson
-description: 이 자습서에서는 한 번의 클릭 또는 자동화 된 지원, 웹 사이트 배포 및 다양 한 다른 시나리오에는 게시 서버 환경을 설정 하는 방법을 보여 줍니다...
+description: 이 자습서에서는 여러 다른 scen에서 한 번 클릭 하거나 자동화 된 웹 사이트 배포 및 게시를 지원 하도록 서버 환경을 설정 하는 방법을 보여 줍니다.
 ms.author: riande
 ms.date: 05/16/2012
 ms.assetid: 489b414b-2322-4385-8638-04e08c0b6c90
 msc.legacyurl: /web-forms/overview/deployment/configuring-server-environments-for-web-deployment
 msc.type: chapter
 ms.openlocfilehash: 382ed4a919418dc862caeb7d7e476690a155a4ea
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65125883"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78457019"
 ---
 # <a name="aspnet-4---enterprise-deployment-series-2-configuring-servers"></a>ASP.NET 4 - 엔터프라이즈 배포 시리즈 2 서버 구성
 
-> 이 자습서에서는 한 번의 클릭 또는 자동화 된 지원, 웹 사이트 배포 및 다양 한 다른 시나리오에서 게시 서버 환경을 설정 하는 방법을 보여줍니다.
+> 이 자습서에서는 여러 가지 시나리오에서 한 번 클릭 하거나 자동화 된 웹 사이트 배포 및 게시를 지원 하도록 서버 환경을 설정 하는 방법을 보여 줍니다.
 
 - [웹 배포용 서버 환경 구성](configuring-server-environments-for-web-deployment.md)
 - [웹 배포에 적합한 접근 방식 선택](choosing-the-right-approach-to-web-deployment.md)

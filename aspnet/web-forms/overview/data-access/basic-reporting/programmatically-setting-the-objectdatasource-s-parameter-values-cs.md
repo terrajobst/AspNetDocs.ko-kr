@@ -9,11 +9,11 @@ ms.assetid: 1c4588bb-255d-4088-b319-5208da756f4d
 msc.legacyurl: /web-forms/overview/data-access/basic-reporting/programmatically-setting-the-objectdatasource-s-parameter-values-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 8aa57172abcfc779fa74b128ad76d42c41dc5b98
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74602164"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78465941"
 ---
 # <a name="programmatically-setting-the-objectdatasources-parameter-values-c"></a>ObjectDataSource의 매개 변수 값을 프로그래밍 방식으로 설정(C#)
 
@@ -37,7 +37,7 @@ Objectdatasource의 `Select` 메서드가 호출 될 때마다 ObjectDataSource�
 
 이 자습서에서는 `int` 형식 `Month`단일 입력 매개 변수를 허용 하는 DAL 및 BLL에 메서드를 추가 하는 방법에 대해 설명 하 고, 지정 된 `Month`에서 채용 기념일이 있는 직원으로 채워진 `EmployeesDataTable` 개체를 반환 합니다. 이 예제에서는 현재 월을 기준으로이 매개 변수를 설정 하 여 "이번 달 직원 기념일" 목록을 표시 합니다.
 
-시작 하겠습니다.
+이제 시작하겠습니다.
 
 ## <a name="step-1-adding-a-method-toemployeestableadapter"></a>1 단계:`EmployeesTableAdapter`에 메서드 추가
 
@@ -119,7 +119,7 @@ ObjectDataSource의 매개 변수 값은 일반적으로 코드 줄을 요구 �
 
 행복 한 프로그래밍
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 
