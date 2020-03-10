@@ -9,18 +9,18 @@ ms.assetid: f44c166e-7e91-48a0-a6f8-d9285f3594e5
 msc.legacyurl: /whitepapers/mvc3-release-notes
 msc.type: content
 ms.openlocfilehash: 504202068f5db4f8614bba02e8066ffecfd15b48
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74619234"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78501041"
 ---
 # <a name="aspnet-mvc-3"></a>ASP.NET MVC 3
 
 - [개요](#overview)
 - [설치 참고 사항](#installation-notes)
 - [소프트웨어 요구 사항](#software-requirements)
-- [문서](#documentation)
+- [설명서](#documentation)
 - [지원](#support)
 - [ASP.NET MVC 2 프로젝트를 ASP.NET MVC 3 Tools 업데이트로 업그레이드](#upgrading)
 - [ASP.NET MVC 3 도구 업데이트 (4 월 12 일, 2011)](#tu-changes)
@@ -130,7 +130,7 @@ ASP.NET MVC 3 런타임 구성 요소에는 다음 소프트웨어가 필요 합
 - Visual Studio 2010 또는 Visual Web Developer 2010 Express
 
 <a id="documentation"></a>
-## <a name="documentation"></a>Documentation
+## <a name="documentation"></a>문서화
 
 ASP.NET MVC에 대 한 설명서는 다음 URL의 MSDN 웹 사이트에서 제공 됩니다.
 
@@ -293,7 +293,7 @@ ASP.NET MVC에서 코드 Firstwith에 대 한 설명서는 다음 Url의 ASP.NET
 JQuery는 파일 이름에 버전 번호를 포함 하므로 jQuery를 최신 버전으로 업데이트 하려면 새 파일 이름을 사용 하기 위해 jQuery 파일을 참조 하는 `<script>` 태그도 업데이트 해야 합니다. 포함된 기타 스크립트 라이브러리는 스크립트 이름에 버전 번호를 포함하지 않으므로 최신 버전으로 더욱 쉽게 업데이트할 수 있습니다.
 
 <a id="tu-KI"></a>
-## <a name="known-issues"></a>알려진 문제점
+## <a name="known-issues"></a>알려진 문제
 
 - 경우에 따라 "설치 하지 못했습니다 (오류 코드 0x80070643)" 오류 메시지와 함께 설치에 실패할 수 있습니다. 이 문제를 해결 하는 방법에 대 한 자세한 내용은 [기술 자료 문서 2531566](https://support.microsoft.com/kb/2531566)를 참조 하십시오.
 - 컨트롤러를 추가하기 위해 스캐폴딩하면 Entity Framework에서 지원되는 엔터티 상속을 활용하는 엔터티를 스캐폴딩하지 않습니다. 예를 들어 *학생* 클래스에서 상속 되는 기본 *Person* 클래스가 지정 된 경우 *학생* 클래스의 스 캐 폴딩은 컴파일되지 않는 코드를 생성 합니다.
@@ -341,7 +341,7 @@ ASP.NET MVC 3의 시험판 버전에서는 공백이 포함 된 Razor 식의 일
 편집기 창에서 파일을 여는 동안 솔루션 탐색기를 사용 하 여 Razor 파일의 이름을 바꾸면 구문이 강조 표시 되 고 IntelliSense가 해당 파일에 대 한 작업을 중지 합니다. 이 문제는 이름 바꾸기 후 강조 표시와 IntelliSense를 유지 하기 위해 수정 되었습니다.
 
 <a id="RTM-KI"></a>
-## <a name="known-issues"></a>알려진 문제점
+## <a name="known-issues"></a>알려진 문제
 
 - NuGet 패키지 관리자 콘솔이 열려 있는 상태에서 Visual Studio 2010 SP1 Beta를 닫으면 Visual Studio가 작동을 중단 하 고 다시 시작을 시도 합니다. 이 문제는 Visual Studio 2010 s p 1의 RTM 릴리스에서 수정 될 예정입니다.
 - ASP.NET MVC 3 설치 관리자는 초기 버전의 NuGet 패키지 관리자만 설치할 수 있습니다. 초기 버전을 설치한 후에는 Visual Studio 확장 관리자를 사용 하 여 NuGet을 설치 하 고 업데이트할 수 있습니다. NuGet이 이미 설치 되어 있는 경우 Visual Studio 확장 갤러리로 이동 하 여 최신 버전의 NuGet로 업데이트 합니다.
@@ -465,7 +465,7 @@ ASP.NET MVC 3에 대 한 프로젝트 템플릿에는 이제 jQuery, jQuery Vali
 - *IControllerFactory* 인터페이스를 직접 구현 하는 사용자 지정 컨트롤러 팩터리 구현은이 릴리스에서 인터페이스에 추가 된 새 *Getcontrollersessionbehavior* 메서드의 구현을 제공 해야 합니다. 일반적으로이 인터페이스를 직접 구현 하지 말고 *Defaultcontrollerfactory*에서 클래스를 파생 하는 것이 좋습니다.
 
 <a id="_Toc2_KI"></a>
-## <a name="known-issues"></a>알려진 문제점
+## <a name="known-issues"></a>알려진 문제
 
 - ASP.NET MVC 3 설치 관리자는 초기 버전의 NuGet 패키지 관리자만 설치할 수 있습니다. 초기 버전을 설치한 후에는 Visual Studio 확장 관리자를 사용 하 여 NuGet을 설치 하 고 업데이트할 수 있습니다. NuGet이 이미 설치 되어 있는 경우 Visual Studio 확장 갤러리로 이동 하 여 최신 버전의 NuGet로 업데이트 합니다.
 - 솔루션 폴더 내에 새 ASP.NET MVC 3 프로젝트를 만들면 *NullReferenceException* 오류가 발생 합니다. 해결 방법은 솔루션의 루트에 ASP.NET MVC 3 프로젝트를 만든 다음 솔루션 폴더로 이동 하는 것입니다.
@@ -578,7 +578,7 @@ ClassName (네임 스페이스)
 
 이전 릴리스에서는 다음과 같이 표시 됩니다.
 
-Namespace. ClassName
+Namespace.ClassName
 
 <a id="_Toc276711793"></a>
 ### <a name="granular-request-validation"></a>세부적인 요청 유효성 검사
@@ -608,7 +608,7 @@ Namespace. ClassName
 - *Virtualpathproviderviewengine* 기본 클래스에 *FileExtensions* 라는 새 속성을 추가 했습니다. 경로를 기준으로 뷰를 조회 하는 경우 (이름으로는 아님)이 새 속성으로 지정 된 목록에 파일 확장명을 포함 하는 뷰만 고려 됩니다. 이는 사용자 지정 빌드 공급자를 등록 하 여 웹 폼 보기에 사용자 지정 파일 확장명을 사용 하도록 설정 하 고 이름이 아니라 전체 경로를 사용 하 여 해당 뷰를 참조 하는 사용자에 대 한 주요 변경 내용입니다. 해결 방법은 사용자 지정 파일 확장명을 포함 하도록 *FileExtensions* 속성의 값을 수정 하는 것입니다.
 
 <a id="_Toc276711795"></a>
-## <a name="known-issues"></a>알려진 문제점
+## <a name="known-issues"></a>알려진 문제
 
 - 설치 관리자는 Visual Studio 2010의 구성 요소를 업데이트 하기 때문에 ASP.NET MVC의 이전 버전 보다 훨씬 더 오래 걸릴 수 있습니다.
 - 강력한 형식의 뷰 스 캐 폴드 쓰기 전용 속성을 선택 하는 경우 뷰 추가 스 캐 폴딩입니다. 이는 항상 스 캐 폴딩에서 무시 해야 합니다. 뷰 추가 대화 상자는 또한 "편집" 또는 "만들기" 뷰를 생성할 때 읽기 전용 속성을 스 캐 폴드 합니다. 읽기 전용 속성은 표시 및 목록 뷰에만 스 캐 폴드 합니다.
@@ -672,7 +672,7 @@ NuGet에 대 한 자세한 내용은 [Nuget 설명서](https://docs.microsoft.co
 | 암호화 | 는 해싱 알고리즘을 사용 하 여 적절 한 솔트된 및 해시 된 암호를 만듭니다. |
 | WebGrid | 개체의 컬렉션 (일반적으로 데이터베이스의 데이터)을 표로 렌더링 합니다. 페이징 및 정렬을 지원 합니다. |
 | WebImage | 이미지를 렌더링 합니다. |
-| 웹 메일 | 이메일 메시지를 보냅니다. |
+| WebMail | 메일 메시지를 전송합니다. |
 
 도우미 및 기본 구문을 나열 하는 빠른 참조 항목은 다음 URL에서 ASP.NET Razor 구문 설명서의 일부로 제공 됩니다.
 
@@ -733,15 +733,15 @@ DefaultControllerFactory 클래스에는 IControllerFactory 인스턴스를 허�
 
 ASP.NET MVC는 다음과 같은 Ajax 도우미 메서드를 포함 합니다.
 
-- Ajax. a.
-- RouteLink
-- Html.beginform
-- BeginRouteForm
+- Ajax.ActionLink
+- Ajax.RouteLink
+- Ajax.BeginForm
+- Ajax.BeginRouteForm
 
 이러한 메서드는 JavaScript를 사용 하 여 전체 포스트백을 사용 하는 대신 서버에서 작업 메서드를 호출 합니다. 이 기능은 사용 하지 않는 방식으로 jQuery를 활용 하도록 업데이트 되었습니다. 인라인 클라이언트 스크립트를 intrusively 내보내는 대신 이러한 도우미 메서드는 *데이터 ajax* 접두사를 사용 하 여 HTML5 특성을 내보내 태그의 동작을 분리 합니다. 그런 다음 적절 한 JavaScript 파일을 참조 하 여 동작을 태그에 적용 합니다. 다음 JavaScript 파일이 참조 되는지 확인 합니다.
 
-- jquery-1.10.2.min.js 1.4.1
-- jquery.
+- jquery-1.4.1.js
+- jquery.unobtrusive.ajax.js
 
 이 기능은 ASP.NET MVC 3 새 프로젝트 템플릿의 Web.config 파일에서 기본적으로 사용 하도록 설정 되어 있지만 기존 프로젝트에 대해서는 기본적으로 사용 되지 않습니다. 자세한 내용은이 문서의 뒷부분에 나오는 [클라이언트 유효성 검사 및 없는 JavaScript에 대 한 응용 프로그램 전체 플래그 추가](#0.1_AddedApplicationWideFlagsForClientValida) 를 참조 하세요.
 
@@ -757,9 +757,9 @@ ASP.NET MVC는 다음과 같은 Ajax 도우미 메서드를 포함 합니다.
 
 또한 다음 JavaScript 파일이 참조 되는지 확인 합니다.
 
-- jquery-1.10.2.min.js 1.4.1
-- jquery. js를 확인 합니다.
-- jquery. 유효성을 검사 합니다.
+- jquery-1.4.1.js
+- jquery.validate.js
+- jquery.validate.unobtrusive.js
 
 이 기능은 ASP.NET MVC 3 새 프로젝트 템플릿의 Web.config 파일에서 기본적으로 사용 하도록 설정 되어 있지만 기존 프로젝트에 대해서는 기본적으로 사용 되지 않습니다. 자세한 내용은이 문서의 뒷부분에 나오는 [클라이언트 유효성 검사 및 없는 JavaScript에 대 한 새로운 응용 프로그램 전체 플래그](#0.1_AddedApplicationWideFlagsForClientValida) 를 참조 하세요.
 
@@ -839,7 +839,7 @@ JsonValueProviderFactory는 이제 기본적으로 등록 됩니다.
 
 순서 값이 같은 예외 필터에 대 한 예외 필터 실행 순서가 변경 되었습니다. ASP.NET MVC 2 및 이전 버전에서는 작업 메서드의 예외 필터 보다 먼저 작업 메서드의 순서와 동일한 순서를 사용 하 여 컨트롤러에서 예외 필터를 실행 했습니다. 이는 일반적으로 예외 필터가 지정 된 순서 값 없이 적용 된 경우입니다. ASP.NET MVC 3에서 가장 구체적인 예외 핸들러가 가장 먼저 실행 되도록이 순서는 반대입니다. 이전 버전과 마찬가지로 Order 속성이 명시적으로 지정 된 경우 필터는 지정 된 순서로 실행 됩니다.
 
-## <a id="0.1__Toc274034230"></a>알려진 문제
+## <a id="0.1__Toc274034230"></a>  알려진 문제
 
 설치하는 동안 EULA 동의 대화 상자에 사용 조건이 표시됩니다.
 
@@ -849,7 +849,7 @@ Razor 보기 (CSHTML 파일) <a id="0.1__Toc224729061"></a> <a id="0.1__Toc23805
 
 @model 구문을 사용 하 여 강력한 형식의 CSHTML 뷰를 지정 하는 경우 형식에 대 한 언어별 바로 가기가 인식 되지 않습니다. 예를 들어 @model int는 작동 하지 않지만 @model Int32가 작동 합니다. 이 버그에 대 한 해결 방법은 모델 형식을 지정할 때 실제 형식 이름을 사용 하는 것입니다.
 
-@model 구문을 사용 하 여 강력한 형식의 CSHTML 뷰 (또는 강력한 형식의 VBHTML 뷰를 지정 하는 @ModelType)를 지정 하는 경우 nullable 형식 및 배열 선언이 지원 되지 않습니다. 예를 들어 @model int? 은 지원 되지 않습니다. 대신 `@model Nullable<Int32>`를 사용 합니다. 문자열 [] @model 구문도 지원 되지 않습니다. 대신 `@model IList<string>`를 사용 합니다.
+@model 구문을 사용 하 여 강력한 형식의 CSHTML 뷰 (또는 강력한 형식의 VBHTML 뷰를 지정 하는 @ModelType)를 지정 하는 경우 nullable 형식 및 배열 선언이 지원 되지 않습니다. 예를 들어 @model int? 은 지원 되지 않습니다. 대신 `@model Nullable<Int32>` 을(를) 사용하세요. 문자열 [] @model 구문도 지원 되지 않습니다. 대신 `@model IList<string>`를 사용 합니다.
 
 ASP.NET MVC 2 프로젝트를 ASP.NET MVC 3으로 업그레이드 하는 경우 web.config 파일의 appSettings 섹션에 다음을 추가 해야 합니다.
 
@@ -861,6 +861,6 @@ Web.config에서 사용 되는 폼 인증 설정을 무시 하 고 폼 인증에
 
 ## <a id="0.1__Toc274034231"></a>내용을
 
-© 2011 Microsoft Corporation. 모든 권리 보유. 이 문서는 "있는 그대로" 제공됩니다. URL 및 기타 인터넷 웹 사이트 참조를 비롯한 본 문서의 정보 및 언급된 내용은 예고 없이 변경될 수 있습니다. 본 문서 사용에 따른 위험은 사용자가 감수해야 합니다.
+© 2011 Microsoft Corporation. All rights reserved. 이 문서는 "있는 그대로" 제공됩니다. URL 및 기타 인터넷 웹 사이트 참조를 포함하여 본 문서에 명시된 정보 및 보기는 통지 없이 변경될 수 있습니다. 해당 사용으로 인해 발생하는 모든 위험은 귀하의 책임입니다.
 
-이 문서는 귀하에게 Microsoft 제품의 어떠한 지적 재산에 대한 법적 권리도 부여하지 않습니다. 귀하는 참조를 위해 내부적으로 이 문서를 복사하고 사용할 수 있습니다.
+이 문서는 Microsoft 제품의 지적 소유권에 대한 법적 권한을 사용자에게 제공하지 않습니다. 이 문서는 내부 참조용으로만 복사 및 사용할 수 있습니다.

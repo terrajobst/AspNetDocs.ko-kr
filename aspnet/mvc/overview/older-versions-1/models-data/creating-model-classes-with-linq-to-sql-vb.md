@@ -9,11 +9,11 @@ ms.assetid: a4a25a75-d71f-4509-98b4-df72e748985a
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/creating-model-classes-with-linq-to-sql-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 88a5f1037d93ef3bdc95bf60b6005ebb254ab440
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74588548"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78469529"
 ---
 # <a name="creating-model-classes-with-linq-to-sql-vb"></a>LINQ to SQL을 사용하여 모델 클래스 만들기(VB)
 
@@ -65,9 +65,9 @@ Mvc 모델에는 MVC 뷰나 MVC 컨트롤러에 포함 되지 않은 모든 응�
 
 | **열 이름** | **데이터 형식** | **Null 허용** |
 | --- | --- | --- |
-| ID | 정수 | False |
-| 제목 | Nvarchar (200) | False |
-| Idm | Nvarchar (50) | False |
+| Id | Int | False |
+| 제목 | Nvarchar(200) | False |
+| 감독 | Nvarchar(50) | False |
 
 Id 열에 대 한 두 가지 특별 한 작업을 수행 해야 합니다. 먼저 테이블 디자이너에서 열을 선택 하 고 키 아이콘을 클릭 하 여 Id 열을 기본 키 열로 표시 해야 합니다. LINQ to SQL를 사용 하려면 데이터베이스에 대 한 삽입 또는 업데이트를 수행할 때 기본 키 열을 지정 해야 합니다.
 

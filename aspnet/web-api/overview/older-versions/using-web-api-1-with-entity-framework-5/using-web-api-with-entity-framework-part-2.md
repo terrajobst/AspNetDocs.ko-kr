@@ -9,11 +9,11 @@ ms.assetid: fe3ef85f-bdc6-4e10-9768-25aa565c01d0
 msc.legacyurl: /web-api/overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-2
 msc.type: authoredcontent
 ms.openlocfilehash: 7c5ed1bdb4b390c94907b14e208231f16ad42d96
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74600363"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78504275"
 ---
 # <a name="part-2-creating-the-domain-models"></a>2 부: 도메인 모델 만들기
 
@@ -35,8 +35,8 @@ POCOs는 [데이터베이스 상태](https://msdn.microsoft.com/library/system.d
 
 다음 POCOs를 만들게 됩니다.
 
-- 제품
-- Order
+- Product
+- 주문
 - OrderDetail
 
 각 클래스를 만들려면 솔루션 탐색기의 모델 폴더를 마우스 오른쪽 단추로 클릭 합니다. 상황에 맞는 메뉴에서 **추가** 를 선택한 다음 클래스를 선택 **합니다.**

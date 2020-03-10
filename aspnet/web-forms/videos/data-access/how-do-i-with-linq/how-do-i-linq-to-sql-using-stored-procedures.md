@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-using-stored-procedures
-title: '[어떻게 할까요?] LINQ to SQL: 저장된 프로시저를 사용 하 여 | Microsoft Docs'
+title: '[방법:] LINQ to SQL: 저장 프로시저 사용 | Microsoft Docs'
 author: scottstanfield
-description: 기존 저장된 프로시저 및 함수를 사용 하 여 LINQ를 사용 하 여 쉽습니다. 단순히 저장된 프로시저를 O/R 매핑 화면으로 끌어서 하 고는 ge에서 호출 하는 중...
+description: LINQ를 사용 하면 기존 저장 프로시저 및 함수를 쉽게 사용할 수 있습니다. 저장 프로시저를 O/R 매핑 화면으로 끌어다 놓고 ge ...
 ms.author: riande
 ms.date: 01/10/2008
 ms.assetid: b1abfcaa-3b7d-42b9-be11-38904910ece0
 msc.legacyurl: /web-forms/videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-using-stored-procedures
 msc.type: video
 ms.openlocfilehash: cbfa28aa6814df404337a8a5d739e2b3c15d31a5
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59385009"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78516335"
 ---
-# <a name="how-do-i-linq-to-sql-using-stored-procedures"></a>[어떻게 할까요?] LINQ to SQL: 저장 프로시저 사용
+# <a name="how-do-i-linq-to-sql-using-stored-procedures"></a>[방법:] LINQ to SQL: 저장 프로시저 사용
 
 [Scott Stanfield](https://github.com/scottstanfield)
 
-기존 저장된 프로시저 및 함수를 사용 하 여 LINQ를 사용 하 여 쉽습니다. 단순히 저장된 프로시저를 O/R 매핑 화면으로 끌어서 하 고 생성 된 데이터 컨텍스트 개체에서 호출 합니다.
+LINQ를 사용 하면 기존 저장 프로시저 및 함수를 쉽게 사용할 수 있습니다. 저장 프로시저를 O/R 매핑 화면으로 끌어 생성 된 데이터 컨텍스트 개체에서 호출 하기만 하면 됩니다.
 
-[&#9654;비디오 (9 분)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-linq-to-sql-using-stored-procedures)
+[&#9654;비디오 보기 (9 분)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-linq-to-sql-using-stored-procedures)
 
 > [!div class="step-by-step"]
 > [이전](how-do-i-linq-to-sql-custom-linqdatasource.md)

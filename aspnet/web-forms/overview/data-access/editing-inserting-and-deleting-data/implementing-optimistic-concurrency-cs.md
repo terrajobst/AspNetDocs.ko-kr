@@ -9,11 +9,11 @@ ms.assetid: 56e15b33-93b8-43ad-8e19-44c6647ea05c
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/implementing-optimistic-concurrency-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 3cddb0efd28249ffc5708ece39c80581d078a5a2
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74617479"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78492425"
 ---
 # <a name="implementing-optimistic-concurrency-c"></a>낙관적 동시성 구현(C#)
 
@@ -141,7 +141,7 @@ ASP.NET 페이지는 제품 정보만 업데이트 하 고 삭제할 수 있으�
 
 기존 `ProductsBLL` 클래스에는 batch 업데이트 및 DB 직접 패턴을 모두 사용 하는 예가 포함 되어 있습니다. `AddProduct` 메서드와 `UpdateProduct` 오버 로드는 모두 일괄 업데이트 패턴을 사용 하 여 `ProductRow` 인스턴스를 TableAdapter의 업데이트 메서드로 전달 합니다. 반면에 `DeleteProduct` 메서드는 DB direct 패턴을 사용 하 여 TableAdapter의 `Delete(productID)` 메서드를 호출 합니다.
 
-새 `ProductsOptimisticConcurrency` TableAdapter를 사용 하는 경우 DB direct 메서드는 이제 원래 값도 전달 해야 합니다. 예를 들어 `Delete` 메서드는 이제 원래 `ProductID`, `ProductName`, `SupplierID`, `CategoryID`, `QuantityPerUnit`, `UnitPrice`, `UnitsInStock`, `UnitsOnOrder`, `ReorderLevel`의 입력 매개 변수를 예상 합니다. 데이터베이스에 전송 된 `DELETE` 문의 `WHERE` 절에 이러한 추가 입력 매개 변수의 값을 사용 하 고 데이터베이스의 현재 값이 원래 값으로 매핑되는 경우에만 지정 된 레코드만 삭제 합니다.
+새 `ProductsOptimisticConcurrency` TableAdapter를 사용 하는 경우 DB direct 메서드는 이제 원래 값도 전달 해야 합니다. 예를 들어 `Delete` 메서드는 이제 원래 `ProductID`, `ProductName`, `SupplierID`, `CategoryID`, `QuantityPerUnit`, `UnitPrice`, `UnitsInStock`, `UnitsOnOrder`, `ReorderLevel`의 입력 매개 변수를 예상 합니다.`Discontinued` 데이터베이스에 전송 된 `DELETE` 문의 `WHERE` 절에 이러한 추가 입력 매개 변수의 값을 사용 하 고 데이터베이스의 현재 값이 원래 값으로 매핑되는 경우에만 지정 된 레코드만 삭제 합니다.
 
 일괄 처리 업데이트 패턴에 사용 된 TableAdapter의 `Update` 메서드에 대 한 메서드 시그니처는 변경 되지 않지만 원래 값과 새 값을 기록 하는 데 필요한 코드는입니다. 따라서 기존 `ProductsBLL` 클래스에서 낙관적 동시성을 사용 하는 DAL을 사용 하는 대신 새 DAL 작업을 위한 새로운 비즈니스 논리 계층 클래스를 만들어 보겠습니다.
 
@@ -364,7 +364,7 @@ BLL 메서드의 반환 값은 이벤트 처리기로 전달 되는 `ObjectDataS
 
 행복 한 프로그래밍
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

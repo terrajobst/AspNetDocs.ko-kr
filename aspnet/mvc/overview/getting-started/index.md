@@ -2,22 +2,22 @@
 uid: mvc/overview/getting-started/index
 title: ASP.NET MVC 시작 | Microsoft Docs
 author: rick-anderson
-description: 에 대해 알아봅니다에 대 한 ASP.NET MVC ASP.NET MVC를 사용는 강력한 패턴 기반 방식으로 우려 및 필요한 해당 g를 깔끔하게 분리 하는 동적 웹 사이트를 빌드하는 중...
+description: ASP.NET MVC ASP.NET MVC에 대 한 자세한 내용은 문제를 명확 하 게 분리 하는 동적 웹 사이트를 빌드하는 강력한 패턴 기반 방법을 제공 합니다.
 ms.author: riande
 ms.date: 08/31/2011
 ms.assetid: d916dbe0-1895-491b-8bb6-93f4594ce757
 msc.legacyurl: /mvc/overview/getting-started
 msc.type: chapter
 ms.openlocfilehash: 8e25c3a01634df6c3d9c81df8ab1738cc079d341
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65121118"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78471023"
 ---
 # <a name="aspnet-mvc-getting-started"></a>ASP.NET MVC 시작
 
-> ASP.NET MVC는 및 시작 하는 방법을 보여 줍니다. 다음 지침에 설명 합니다.
+> 다음 지침에서는 ASP.NET MVC가 무엇 인지 설명 하 고 시작 하는 방법을 보여 줍니다.
 
 - [ASP.NET MVC 5 시작](introduction/index.md)
 

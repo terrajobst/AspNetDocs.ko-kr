@@ -9,11 +9,11 @@ ms.assetid: 9b96eaa1-8ef0-4338-a2e8-e0f970bfaf68
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/introduction-and-overview
 msc.type: authoredcontent
 ms.openlocfilehash: 52d5eb7abe4520ebdf6667d299d055fc7619a635
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74615460"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78458345"
 ---
 # <a name="getting-started-with-aspnet-45-web-forms-and-visual-studio-2017"></a>ASP.NET 4.5 Web Forms 및 Visual Studio 2017 시작
 
@@ -48,7 +48,7 @@ ASP.NET Web Forms를 처음 접하는 개발자는이 자습서 시리즈의 대
 이 시리즈에서 제공 되는 ASP.NET Web Form 기능은 다음과 같습니다.
 
 - 웹 응용 프로그램 프로젝트 (웹 사이트 프로젝트가 아님)
-- Web Forms
+- 웹 양식
 - 마스터 페이지, 구성
 - 부트스트랩
 - Entity Framework Code First, LocalDB
@@ -134,7 +134,7 @@ PayPal에서 반환 된 후 주문을 검토 하 고 완료할 수 있습니다.
 
 ![동 장난감 주문 검토](introduction-and-overview/_static/image7.png)
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>사전 요구 사항
 
 시작 하기 전에 다음 소프트웨어가 컴퓨터에 설치 되어 있는지 확인 합니다.
 
@@ -154,7 +154,7 @@ Visual Studio에 대 한 다음 사항에 유의 하세요.
 
 필수 구성 요소를 설치한 후이 자습서 시리즈에 제공 된 웹 프로젝트를 만들 준비가 되었습니다.
 
-## <a name="download-the-sample-application"></a>샘플 응용 프로그램 다운로드
+## <a name="download-the-sample-application"></a>샘플 애플리케이션 다운로드
 
  언제 든 지 MSDN Samples 사이트에서 완성 된 샘플 응용 프로그램을 다운로드할 수 있습니다.
 

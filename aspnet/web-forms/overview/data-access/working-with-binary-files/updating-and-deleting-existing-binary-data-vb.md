@@ -9,11 +9,11 @@ ms.assetid: 3a052ced-9cf5-47b8-a400-934f0b687c26
 msc.legacyurl: /web-forms/overview/data-access/working-with-binary-files/updating-and-deleting-existing-binary-data-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 27ff6941008b4e7bf6d632e4c248fd1d35fb3589
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74621596"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78475013"
 ---
 # <a name="updating-and-deleting-existing-binary-data-vb"></a>기존 이진 데이터 업데이트 및 삭제(VB)
 
@@ -53,7 +53,7 @@ DAL에는 자동으로 생성 된 `Insert`, `Update`및 `Delete` 메서드가 �
 
 DAL을 업데이트 하는 것 외에도 범주를 업데이트 하 고 삭제 하는 메서드를 포함 하도록 BLL을 업데이트 해야 합니다. 이러한 메서드는 프레젠테이션 계층에서 호출 됩니다.
 
-범주를 삭제 하는 경우 `CategoriesTableAdapter` s 자동 생성 `Delete` 메서드를 사용할 수 있습니다. `CategoriesBLL` 클래스에 다음 메서드를 추가 합니다.
+범주를 삭제 하는 경우 `CategoriesTableAdapter` s 자동 생성 `Delete` 메서드를 사용할 수 있습니다. `CategoriesBLL` 클래스에 다음 메서드를 추가합니다.
 
 [!code-vb[Main](updating-and-deleting-existing-binary-data-vb/samples/sample2.vb)]
 
@@ -306,7 +306,7 @@ DetailsView s `ItemInserting` 이벤트 처리기에서 리팩터링 된 `ValidP
 
 행복 한 프로그래밍
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

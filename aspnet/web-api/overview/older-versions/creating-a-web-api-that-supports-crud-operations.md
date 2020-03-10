@@ -10,11 +10,11 @@ ms.assetid: c125ca47-606a-4d6f-a1fc-1fc62928af93
 msc.legacyurl: /web-api/overview/older-versions/creating-a-web-api-that-supports-crud-operations
 msc.type: authoredcontent
 ms.openlocfilehash: a096fd1c54df33b40115907a5c2517b2e3fec5b8
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74600332"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78448043"
 ---
 # <a name="enabling-crud-operations-in-aspnet-web-api-1"></a>ASP.NET Web API 1에서 CRUD 작업 사용
 
@@ -36,18 +36,18 @@ CRUD는 네 가지 기본 데이터베이스 작업 인 &quot;만들기, 읽기,
 
 Products API는 다음 메서드를 노출 합니다.
 
-| 동작 | HTTP 메서드 | 상대 URI |
+| 작업 | HTTP 메서드 | 상대 URI |
 | --- | --- | --- |
-| 모든 제품 목록 가져오기 | 가져오기 | /api/제품 |
-| ID로 제품 가져오기 | 가져오기 | /api/products/*id* |
-| 범주별로 제품 가져오기 | 가져오기 | /api/products? 범주 =*범주* |
-| 새 제품 만들기 | 올리기 | /api/제품 |
+| 모든 제품 목록 가져오기 | GET | /api/제품 |
+| ID로 제품 가져오기 | GET | /api/products/*id* |
+| 범주별로 제품 가져오기 | GET | /api/products? 범주 =*범주* |
+| 새 제품 만들기 | POST | /api/제품 |
 | 제품 업데이트 | PUT | /api/products/*id* |
 | 제품 삭제 | Delete | /api/products/*id* |
 
 일부 Uri에는 경로에 제품 ID가 포함 되어 있습니다. 예를 들어 ID가 28 인 제품을 가져오기 위해 클라이언트는 `http://hostname/api/products/28`에 대 한 GET 요청을 보냅니다.
 
-### <a name="resources"></a>자료
+### <a name="resources"></a>리소스
 
 제품 API는 다음 두 리소스 유형에 대 한 Uri를 정의 합니다.
 
@@ -85,7 +85,7 @@ Products API는 다음 메서드를 노출 합니다.
 
 제품 저장소 API의 경우 데이터는 제품으로 구성 되므로 `Product`이라는 새 클래스를 만듭니다.
 
-솔루션 탐색기 아직 표시 되지 않으면 **보기** 메뉴를 클릭 하 고 **솔루션 탐색기**을 선택 합니다. 솔루션 탐색기에서 **모델** 폴더를 마우스 오른쪽 단추로 클릭 합니다. 상황에 맞는 메뉴에서 **추가**를 선택한 다음 **클래스**를 선택 합니다. 클래스 이름을 Product&quot;&quot;합니다.
+솔루션 탐색기가 표시되지 않는 경우 **보기** 메뉴를 클릭하고 **솔루션 탐색기**를 선택합니다. 솔루션 탐색기에서 **모델** 폴더를 마우스 오른쪽 단추로 클릭 합니다. 상황에 맞는 메뉴에서 **추가**를 선택한 다음 **클래스**를 선택 합니다. 클래스 이름을 Product&quot;&quot;합니다.
 
 ![](creating-a-web-api-that-supports-crud-operations/_static/image3.png)
 
@@ -124,18 +124,18 @@ ASP.NET MVC를 사용 하 여 작업 한 경우 이미 컨트롤러에 대해 �
 
 솔루션 탐색기에서 파일을 마우스 오른쪽 단추로 클릭 하 고 삭제를 선택 하 여 다음으로 이동 하 여 Valuecontroller를 삭제 **합니다.** 이제 다음과 같이 새 컨트롤러를 추가 합니다.
 
-**솔루션 탐색기**에서 Controllers 폴더를 마우스 오른쪽 단추로 클릭 합니다. **추가** 를 선택한 다음 **컨트롤러**를 선택 합니다.
+**솔루션 탐색기**에서 Controllers 폴더를 마우스 오른쪽 단추로 클릭합니다. **추가**를 선택한 후 **컨트롤러**를 선택합니다.
 
 ![](creating-a-web-api-that-supports-crud-operations/_static/image6.png)
 
-**컨트롤러 추가** 마법사에서 컨트롤러 이름을 ProductsController&quot;로 &quot;합니다. **템플릿** 드롭다운 목록에서 **빈 API 컨트롤러**를 선택 합니다. **추가**를 클릭합니다.
+**컨트롤러 추가** 마법사에서 컨트롤러 이름을 ProductsController&quot;로 &quot;합니다. **템플릿** 드롭다운 목록에서 **빈 API 컨트롤러**를 선택 합니다. 그런 다음, **추가**를 클릭합니다.
 
 ![](creating-a-web-api-that-supports-crud-operations/_static/image7.png)
 
 > [!NOTE]
 > 컨트롤러를 컨트롤러 라는 폴더에 배치할 필요는 없습니다. 폴더 이름은 중요 하지 않습니다. 단순히 소스 파일을 구성 하는 편리한 방법입니다.
 
-**컨트롤러 추가** 마법사가 Controllers 폴더에 ProductsController.cs 라는 파일을 만듭니다. 이 파일이 아직 열려 있지 않으면 파일을 두 번 클릭 하 여 엽니다. 다음 **using** 문을 추가 합니다.
+**컨트롤러 추가** 마법사가 Controllers 폴더에 ProductsController.cs 라는 파일을 만듭니다. 이 파일이 열려 있지 않으면 파일을 두 번 클릭하여 엽니다. 다음 **using** 문을 추가합니다.
 
 [!code-csharp[Main](creating-a-web-api-that-supports-crud-operations/samples/sample4.cs)]
 
@@ -150,11 +150,11 @@ ASP.NET MVC를 사용 하 여 작업 한 경우 이미 컨트롤러에 대해 �
 
 제품 저장소 API는 여러 &quot;&quot; 작업을 HTTP GET 메서드로 표시 합니다. 각 작업은 `ProductsController` 클래스의 메서드에 해당 합니다.
 
-| 동작 | HTTP 메서드 | 상대 URI |
+| 작업 | HTTP 메서드 | 상대 URI |
 | --- | --- | --- |
-| 모든 제품 목록 가져오기 | 가져오기 | /api/제품 |
-| ID로 제품 가져오기 | 가져오기 | /api/products/*id* |
-| 범주별로 제품 가져오기 | 가져오기 | /api/products? 범주 =*범주* |
+| 모든 제품 목록 가져오기 | GET | /api/제품 |
+| ID로 제품 가져오기 | GET | /api/products/*id* |
+| 범주별로 제품 가져오기 | GET | /api/products? 범주 =*범주* |
 
 모든 제품 목록을 가져오려면 `ProductsController` 클래스에 다음 메서드를 추가 합니다.
 

@@ -1,24 +1,24 @@
 ---
 uid: web-forms/videos/how-do-i/how-do-i-implement-health-monitoring-for-an-aspnet-application
-title: '[어떻게 할까요?]  ASP.NET 응용 프로그램에 대 한 상태 모니터링 구현? | Microsoft 문서'
+title: '[방법:]  ASP.NET 응용 프로그램에 대 한 상태 모니터링 구현 | Microsoft Docs'
 author: rick-anderson
-description: 이 비디오 Chris Pels에서 ASP.NET 응용 프로그램에 대 한 자세한 런타임 정보를 모니터링 하는 상태를 구현 하는 방법을 표시 됩니다. 강력한 알아봅니다 및...
+description: 이 비디오에서 Chris Pel는 ASP.NET 응용 프로그램에 대 한 자세한 런타임 정보를 얻기 위해 상태 모니터링을 구현 하는 방법을 보여 줍니다. 강력한 기능 알아보기 ...
 ms.author: riande
 ms.date: 11/05/2007
 ms.assetid: b3abd282-840a-42e3-ac27-cddbb22c5e33
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-implement-health-monitoring-for-an-aspnet-application
 msc.type: video
 ms.openlocfilehash: 18b84615d60deac2f06122d3d2b9689dc8efb09a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402858"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78457913"
 ---
-# <a name="how-do-i--implement-health-monitoring-for-an-aspnet-application"></a>[어떻게 할까요?]  ASP.NET 응용 프로그램에 대 한 상태 모니터링 구현?
+# <a name="how-do-i--implement-health-monitoring-for-an-aspnet-application"></a>[방법:]  ASP.NET 응용 프로그램에 대 한 상태 모니터링 구현
 
-[Chris Pels](https://twitter.com/chrispels)
+사람- [Chris pel](https://twitter.com/chrispels)
 
-이 비디오 Chris Pels에서 ASP.NET 응용 프로그램에 대 한 자세한 런타임 정보를 모니터링 하는 상태를 구현 하는 방법을 표시 됩니다. 상태를 포함 하 여 모니터링에 대 한 강력 하 고 유연한 구성 옵션에 알아봅니다 자주 사용 되는 설정 및 최적화 하기 위해의 buffermode에 대 한 상태 모니터링 이벤트, 웹 이벤트, 데이터, 매핑 이벤트 공급자에 대 한 규칙을 저장 하기 위한 공급자 즉, 프로필 상태에 대 한 최상의 성능을 모니터링 합니다. Windows 이벤트 로그에 이벤트 쓰기를 사용 하도록 설정 상태 모니터링 작업의 샘플 웹 응용 프로그램을 참조 합니다.
+이 비디오에서 Chris Pel는 ASP.NET 응용 프로그램에 대 한 자세한 런타임 정보를 얻기 위해 상태 모니터링을 구현 하는 방법을 보여 줍니다. 상태 모니터링 이벤트, 즉, 웹 이벤트, 데이터를 저장 하기 위한 공급자, 공급자에 게 이벤트를 매핑하기 위한 규칙, 일반적으로 사용 되는 설정에 대 한 프로필 및 최적화할 수 있는 buffermode를 비롯 하 여 상태 모니터링에 대 한 강력 하 고 유연한 구성 옵션 최상의 성능을 위한 상태 모니터링. 그런 다음 Windows 이벤트 로그에 이벤트를 기록 하는 상태 모니터링을 사용 하는 작업에서 샘플 웹 응용 프로그램을 확인 합니다.
 
-[&#9654;비디오 (21 분)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-implement-health-monitoring-for-an-aspnet-application)
+[&#9654;비디오 보기 (21 분)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-implement-health-monitoring-for-an-aspnet-application)

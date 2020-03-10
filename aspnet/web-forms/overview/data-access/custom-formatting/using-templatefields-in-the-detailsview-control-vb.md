@@ -9,11 +9,11 @@ ms.assetid: 0b91d5f8-127d-4f6a-b204-f2e2b35ef703
 msc.legacyurl: /web-forms/overview/data-access/custom-formatting/using-templatefields-in-the-detailsview-control-vb
 msc.type: authoredcontent
 ms.openlocfilehash: e96f954c27ae1c8ccc18a9c40fe7e541b487c1cc
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74624934"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78481799"
 ---
 # <a name="using-templatefields-in-the-detailsview-control-vb"></a>DetailsView 컨트롤에서 TemplateFields 사용(VB)
 
@@ -37,7 +37,7 @@ GridView에서 사용할 수 있는 것과 동일한 템플릿 필드 기능을 
 
 **그림 1**: 표시를 사용자 지정 하는 데 사용 되는 두 개의 템플릿 필드 ([전체 크기 이미지를 보려면 클릭](using-templatefields-in-the-detailsview-control-vb/_static/image3.png))
 
-시작 하겠습니다.
+이제 시작하겠습니다.
 
 ## <a name="step-1-binding-the-data-to-the-detailsview"></a>1 단계: DetailsView에 데이터 바인딩
 
@@ -167,7 +167,7 @@ FormView 컨트롤을 통해 렌더링 된 출력을 보다 유연 하 게 구�
 
 행복 한 프로그래밍
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

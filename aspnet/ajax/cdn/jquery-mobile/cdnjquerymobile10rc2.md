@@ -9,15 +9,15 @@ ms.assetid: 8e588bfd-15f7-4bbd-8b3e-97223b70af52
 msc.legacyurl: /ajax/cdn/jquery-mobile/cdnjquerymobile10rc2
 msc.type: content
 ms.openlocfilehash: 2ac948330bf54b3c17410aab7165d82eca983e8c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59392562"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78453953"
 ---
 # <a name="jquery-mobile-10-rc2-on-the-microsoft-ajax-cdn"></a>Microsoft Ajax CDN의 jQuery Mobile 1.0 RC2
 
-JQuery Mobile 1.0 RC 2 라이브러리에는 다음 파일이 포함 됩니다.
+JQuery Mobile 1.0 RC 2 라이브러리에는 다음 파일이 포함 되어 있습니다.
 
 - https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.0rc2/jquery.mobile-1.0rc2.js
 - https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.0rc2/jquery.mobile-1.0rc2.min.js

@@ -9,11 +9,11 @@ ms.assetid: d522639a-5aca-421e-9a76-d73f95607f57
 msc.legacyurl: /web-forms/overview/older-versions-security/roles/assigning-roles-to-users-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 3346e47cf604ed1d4003ca83203116666e37cb1b
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74634071"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78461387"
 ---
 # <a name="assigning-roles-to-users-c"></a>사용자에 역할 할당(C#)
 
@@ -29,7 +29,7 @@ ms.locfileid: "74634071"
 
 이 자습서에서는 사용자가 어떤 역할에 속하는지를 관리 하는 데 도움을 주는 두 개의 ASP.NET 페이지를 빌드합니다. 첫 번째 페이지에는 지정 된 역할에 속한 사용자, 특정 사용자가 속한 역할 및 특정 역할에서 특정 사용자를 할당 하거나 제거 하는 기능을 확인 하는 기능이 포함 됩니다. 두 번째 페이지에서는 새로 만든 사용자가 속한 역할을 지정 하는 단계가 포함 되도록 CreateUserWizard 컨트롤을 보강 합니다. 이는 관리자가 새 사용자 계정을 만들 수 있는 시나리오에서 유용 합니다.
 
-시작 하겠습니다.
+이제 시작하겠습니다.
 
 ## <a name="listing-what-users-belong-to-what-roles"></a>어떤 역할에 속한 사용자 나열
 
@@ -315,7 +315,7 @@ GridView를 추가 하 고 구성한 후에는 "역할별" 인터페이스의 �
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -323,7 +323,7 @@ GridView를 추가 하 고 구성한 후에는 "역할별" 인터페이스의 �
 - [ASP를 검사 합니다. 네트워크의 멤버 자격, 역할 및 프로필](http://aspnet.4guysfromrolla.com/articles/120705-1.aspx)
 - [웹 사이트 관리 도구 롤링](http://aspnet.4guysfromrolla.com/articles/052307-1.aspx)
 
-### <a name="about-the-author"></a>작성자 정보
+### <a name="about-the-author"></a>저자 정보
 
 Scott Mitchell는 여러 ASP/ASP. NET books의 작성자와 4GuysFromRolla.com의 창립자가 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 *[24 시간 이내에 ASP.NET 2.0을 sams teach yourself](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)* 것입니다. Scott은 [mitchell@4guysfromrolla.com](mailto:mitchell@4guysfromrolla.com) 또는 [http://ScottOnWriting.NET](http://scottonwriting.net/)의 블로그를 통해 연결할 수 있습니다.
 

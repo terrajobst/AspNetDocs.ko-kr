@@ -2,7 +2,7 @@
 uid: web-api/overview/index
 title: 웹 API 지침-ASP.NET 4.x
 author: rick-anderson
-description: ASP.NET에 대 한 ASP.NET Web API 지침 목록을 4.x
+description: ASP.NET 4.x의 ASP.NET Web API 지침 목록
 ms.author: riande
 ms.date: 01/17/2012
 ms.custom: seoapril2019
@@ -10,13 +10,13 @@ ms.assetid: daca6735-b5d3-4ef5-af33-ee682926238b
 msc.legacyurl: /web-api/overview
 msc.type: book
 ms.openlocfilehash: 304c0d71e5e18f9d3f0768464fe39d6e6946600d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59422904"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78448301"
 ---
-# <a name="web-api-guidance"></a>웹 API 설명서
+# <a name="web-api-guidance"></a>웹 API 지침
 
 - [시작](getting-started-with-aspnet-web-api/index.md)
 
@@ -24,7 +24,7 @@ ms.locfileid: "59422904"
     - [Web API 2의 작업 결과](getting-started-with-aspnet-web-api/action-results.md)
     - [ASP.NET Web Forms에 Web API 사용](getting-started-with-aspnet-web-api/using-web-api-with-aspnet-web-forms.md)
     - [Web API 도움말 페이지 만들기](getting-started-with-aspnet-web-api/creating-api-help-pages.md)
-    - [실습: ASP.NET Web API 및 Angular.js를 사용 하 여 단일 페이지 응용 프로그램 (SPA) 빌드](getting-started-with-aspnet-web-api/build-a-single-page-application-spa-with-aspnet-web-api-and-angularjs.md)
+    - [실습: ASP.NET Web API 및 Angular.js를 사용하여 SPA(단일 페이지 애플리케이션) 빌드](getting-started-with-aspnet-web-api/build-a-single-page-application-spa-with-aspnet-web-api-and-angularjs.md)
 - [라우팅](web-api-routing-and-actions/index.md)
 
     - [Web API에서 라우팅](web-api-routing-and-actions/routing-in-aspnet-web-api.md)
@@ -99,7 +99,7 @@ ms.locfileid: "59422904"
     - [Web API 2의 인증 필터](security/authentication-filters.md)
     - [Web API의 기본 인증](security/basic-authentication.md)
     - [Web API의 폼 인증](security/forms-authentication.md)
-    - [통합 Windows 인증](security/integrated-windows-authentication.md)
+    - [Windows 통합 인증](security/integrated-windows-authentication.md)
     - [SSL 사용](security/working-with-ssl-in-web-api.md)
 - [배포 및 호스팅](hosting-aspnet-web-api/index.md)
 
@@ -112,8 +112,8 @@ ms.locfileid: "59422904"
     - [.NET 클라이언트에서 Web API 호출(C#)](advanced/calling-a-web-api-from-a-net-client.md)
     - [Web API의 HTTP 메시지 처리기](advanced/http-message-handlers.md)
     - [Web API의 HttpClient 메시지 처리기](advanced/httpclient-message-handlers.md)
-    - [Web API에서에서 HTML 양식 데이터 보내기: 양식 urlencoded 데이터](advanced/sending-html-form-data-part-1.md)
-    - [Web API에서에서 HTML 양식 데이터 보내기: 파일 업로드 및 다중 파트 MIME](advanced/sending-html-form-data-part-2.md)
+    - [Web API에서 HTML 양식 데이터 보내기: 양식 urlencoded 데이터](advanced/sending-html-form-data-part-1.md)
+    - [Web API에서 HTML 양식 데이터 보내기: 파일 업로드 및 다중 파트 MIME](advanced/sending-html-form-data-part-2.md)
     - [ASP.NET Web API의 HTTP 쿠키](advanced/http-cookies.md)
 - [릴리스](releases/index.md)
 

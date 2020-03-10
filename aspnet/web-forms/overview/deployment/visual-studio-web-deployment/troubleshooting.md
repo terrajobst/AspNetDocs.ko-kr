@@ -9,11 +9,11 @@ ms.assetid: c0090595-ab3b-4b9b-9e16-7a1891e8cb2f
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/troubleshooting
 msc.type: authoredcontent
 ms.openlocfilehash: b42476fca18b04f4557a216ee205cfd9220023e8
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74623581"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78465095"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-troubleshooting"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 문제 해결
 
@@ -25,7 +25,7 @@ ms.locfileid: "74623581"
 
 이 페이지에서는 Visual Studio를 사용 하 여 ASP.NET 웹 응용 프로그램을 배포할 때 발생할 수 있는 몇 가지 일반적인 문제에 대해 설명 합니다. 각각에 대해 하나 이상의 가능한 원인과 해당 솔루션이 제공 됩니다.
 
-표시 되는 시나리오는 Azure 및 타사 호스팅 공급자에 모두 적용 됩니다. Azure App Service에서 웹 앱 문제를 해결 하는 방법에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
+표시 되는 시나리오는 Azure 및 타사 호스팅 공급자에 모두 적용 됩니다. Azure App Service에서 웹앱 문제 해결에 대한 자세한 내용은 다음 리소스를 참조하십시오.
 
 - [Visual Studio를 사용하여 Azure App Service의 웹앱 문제 해결](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-troubleshoot-visual-studio/)
 - [Azure App Service에서 Web Apps 모니터링](https://azure.microsoft.com/documentation/articles/web-sites-monitor//)
@@ -48,7 +48,7 @@ ms.locfileid: "74623581"
 1. 응용 프로그램 Web.config 파일의 system.web 요소에 customErrors 요소가 있으면 mode 특성을 "off"로 변경 합니다. 그렇지 않은 경우 다음 예제와 같이 mode 특성을 "off"로 설정 하 여 system.web 요소에 customErrors 요소를 추가 합니다. 
 
     [!code-xml[Main](troubleshooting/samples/sample2.xml)]
-2. 응용 프로그램 배포
+2. 애플리케이션을 배포합니다.
 3. 응용 프로그램을 실행 하 고 이전에 발생 한 오류를 발생 시킨 모든 항목을 반복 합니다. 이제 실제 오류 메시지를 확인할 수 있습니다.
 4. 오류가 해결 되 면 원래 customErrors 설정을 복원 하 고 응용 프로그램을 다시 배포 합니다.
 
@@ -58,7 +58,7 @@ ms.locfileid: "74623581"
 
 Visual Studio에서 프로젝트를 실행 하려고 하면 다음 예제와 같은 메시지가 포함 된 오류 페이지가 표시 됩니다.
 
-'/' 응용 프로그램에서 서버 오류 해당 파일이 이미 있는 경우 ' ContosoUniversity '를 만들거나 섀도 복사할 수 없습니다.
+'/' 애플리케이션의 서버 오류. 해당 파일이 이미 있는 경우 ' ContosoUniversity '를 만들거나 섀도 복사할 수 없습니다.
 
 ### <a name="possible-cause-and-solution"></a>가능한 원인 및 해결 방법
 
@@ -172,7 +172,7 @@ HTTP 오류 500.21-내부 서버 오류입니다. "PageHandlerFactory 통합" �
 
 응용 프로그램 *\_Data* 폴더의 .mdf 파일로 SQL Server Express 데이터베이스를 가리키도록 *web.config* 파일 연결 문자열을 업데이트 하 고 응용 프로그램을 처음 실행할 때 다음과 같은 오류 메시지가 표시 *됩니다* .
 
-SqlException: 로그인에서 요청한 "DatabaseName" 데이터베이스를 열 수 없습니다. 로그인에 실패했습니다.
+SqlException: 로그인에서 요청한 "DatabaseName" 데이터베이스를 열 수 없습니다. 로그인이 실패했습니다.
 
 ### <a name="possible-cause-and-solution"></a>가능한 원인 및 해결 방법
 

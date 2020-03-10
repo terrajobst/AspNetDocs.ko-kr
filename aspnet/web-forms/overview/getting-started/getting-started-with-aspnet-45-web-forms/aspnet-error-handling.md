@@ -9,11 +9,11 @@ ms.assetid: 423498f7-1a4b-44a1-b342-5f39d0bcf94f
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/aspnet-error-handling
 msc.type: authoredcontent
 ms.openlocfilehash: 9514142ca50b33470a3f4c033e4f8e319a9ee09b
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74636463"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78457025"
 ---
 # <a name="aspnet-error-handling"></a>ASP.NET 오류 처리
 
@@ -25,7 +25,7 @@ ms.locfileid: "74636463"
 
 이 자습서에서는 오류 처리 및 오류 로깅을 포함 하도록 정문 장난감 샘플 응용 프로그램을 수정 합니다. 오류를 처리 하면 응용 프로그램에서 오류를 정상적으로 처리 하 고 오류 메시지를 적절 하 게 표시할 수 있습니다. 오류 로깅을 사용 하면 발생 한 오류를 찾아 수정할 수 있습니다. 이 자습서는 이전 자습서 "URL 라우팅"을 기반으로 하며, 정문 장난감 자습서 시리즈의 일부입니다.
 
-## <a name="what-youll-learn"></a>학습 내용:
+## <a name="what-youll-learn"></a>학습할 내용:
 
 - 응용 프로그램의 구성에 전역 오류 처리를 추가 하는 방법입니다.
 - 응용 프로그램, 페이지 및 코드 수준에서 오류 처리를 추가 하는 방법입니다.
@@ -53,7 +53,7 @@ ASP.NET 응용 프로그램은 실행 중에 발생 하는 오류를 일관 된 
 
 ASP.NET Web Forms 응용 프로그램에서는 특정 처리 계층 구조를 기반으로 예외를 처리할 수 있습니다. 다음 수준에서 예외를 처리할 수 있습니다.
 
-- 응용 프로그램 수준
+- 애플리케이션 수준
 - 페이지 수준
 - 코드 수준
 
@@ -139,7 +139,7 @@ Try-catch 문은 다른 예외에 대 한 처리기를 지정 하는 하나 이�
 2. 다음과 같이 `<system.web>` 노드 내의 web.config *파일에* `customErrors` 섹션을 추가 합니다.   
 
     [!code-xml[Main](aspnet-error-handling/samples/sample8.xml?highlight=3-5)]
-3. *Web.config 파일을* 저장 합니다.
+3. *Web.config* 파일을 저장합니다.
 
 `customErrors` 섹션에서는 "설정"으로 설정 된 모드를 지정 합니다. 또한 오류가 발생할 때 탐색할 페이지를 응용 프로그램에 알리는 `defaultRedirect`지정 합니다. 또한 페이지를 찾을 수 없을 때 404 오류를 처리 하는 방법을 지정 하는 특정 오류 요소를 추가 했습니다. 이 자습서의 뒷부분에서는 응용 프로그램 수준에서 오류에 대 한 세부 정보를 캡처하는 추가 오류 처리를 추가 합니다.
 
@@ -317,7 +317,7 @@ ELMAH 로그는 쉽게 볼 수 있지만 먼저 ELMAH 로그에 기록 되는 �
 
 Microsoft Azure에 웹 응용 프로그램을 배포 하는 방법에 대 한 자세한 내용은 [멤버 자격, OAuth 및 SQL Database Azure 웹 사이트에 보안 ASP.NET Web Forms 앱 배포](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-deploy-aspnet-webforms-app-membership-oauth-sql-database/)를 참조 하세요.
 
-## <a name="free-trial"></a>무료 평가판
+## <a name="free-trial"></a>평가판
 
 [Microsoft Azure-무료 평가판](https://azure.microsoft.com/pricing/free-trial/)  
  웹 사이트를 Microsoft Azure에 게시 하면 시간, 유지 관리 및 비용을 절감할 수 있습니다. Azure에 웹 앱을 배포 하는 빠른 프로세스입니다. 웹 앱을 유지 관리 하 고 모니터링 해야 하는 경우 Azure에서는 다양 한 도구와 서비스를 제공 합니다. Azure에서 데이터, 트래픽, id, 백업, 메시징, 미디어 및 성능을 관리 합니다. 그리고이 모든 것이 매우 비용 효과적인 방법으로 제공 됩니다.
@@ -327,7 +327,7 @@ Microsoft Azure에 웹 응용 프로그램을 배포 하는 방법에 대 한 �
 [ASP.NET 상태 모니터링을 사용 하 여 오류 세부 정보 로깅](../../older-versions-getting-started/deploying-web-site-projects/logging-error-details-with-asp-net-health-monitoring-cs.md)   
 [ELMAH](https://code.google.com/p/elmah/)
 
-## <a name="acknowledgements"></a>승인
+## <a name="acknowledgements"></a>감사의 말
 
 이 자습서 시리즈의 내용에 대해 상당한 기여를 수행한 다음 사용자에 게 감사 합니다.
 

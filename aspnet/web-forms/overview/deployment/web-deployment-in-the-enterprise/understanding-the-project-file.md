@@ -9,11 +9,11 @@ ms.assetid: 07978d9d-341c-4524-bcba-62976f390f77
 msc.legacyurl: /web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file
 msc.type: authoredcontent
 ms.openlocfilehash: 419fe51aaf65bddcc2c50380f099f842a8d9439c
-ms.sourcegitcommit: 84b1681d4e6253e30468c8df8a09fe03beea9309
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445692"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78508055"
 ---
 # <a name="understanding-the-project-file"></a>프로젝트 파일 이해
 
@@ -23,7 +23,7 @@ ms.locfileid: "73445692"
 
 > MSBuild (Microsoft Build Engine) 프로젝트 파일은 빌드 및 배포 프로세스의 핵심입니다. 이 항목에서는 MSBuild 및 프로젝트 파일에 대 한 개념적인 개요부터 시작 합니다. 프로젝트 파일을 사용할 때 제공 되는 주요 구성 요소에 대해 설명 하 고, 프로젝트 파일을 사용 하 여 실제 응용 프로그램을 배포 하는 방법의 예제를 통해 작동 합니다.
 > 
-> 학습 내용:
+> 학습할 내용:
 > 
 > - MSBuild에서 MSBuild 프로젝트 파일을 사용 하 여 프로젝트를 빌드하는 방법입니다.
 > - MSBuild는 인터넷 정보 서비스 (IIS) 웹 배포 도구 (웹 배포)와 같은 배포 기술과 통합 됩니다.
@@ -130,7 +130,7 @@ MSBuild는이 속성 정의를 처리할 때 먼저 **$ (Outputroot)** 속성 �
 
 ### <a name="targets-and-tasks"></a>대상 및 작업
 
-MSBuild 스키마에서 [task](https://msdn.microsoft.com/library/77f2hx1s.aspx) 요소는 개별 빌드 명령 (또는 작업)을 나타냅니다. MSBuild에는 미리 정의 된 여러 작업이 포함 되어 있습니다. 예를 들면 다음과 같습니다.
+MSBuild 스키마에서 [task](https://msdn.microsoft.com/library/77f2hx1s.aspx) 요소는 개별 빌드 명령 (또는 작업)을 나타냅니다. MSBuild에는 미리 정의 된 여러 작업이 포함 되어 있습니다. 다음은 그 예입니다.
 
 - **복사** 작업은 파일을 새 위치에 복사 합니다.
 - **Csc** 작업은 Visual C# 컴파일러를 호출 합니다.
@@ -219,7 +219,7 @@ MSBuild 스키마에서 [task](https://msdn.microsoft.com/library/77f2hx1s.aspx)
 
 다음 항목인 [빌드 프로세스](understanding-the-build-process.md)에 대 한 자세한 내용은 프로젝트 파일을 사용 하 여 빌드 및 배포를 제어 하는 방법에 대 한 자세한 정보를 제공 합니다.
 
-## <a name="further-reading"></a>추가 정보
+## <a name="further-reading"></a>추가 참고 자료
 
 프로젝트 파일 및 WPP에 대 한 자세한 소개는 Microsoft Build Engine 내부: Sayed Ibrahim Hashimi에서 [MSBuild 및 Team Foundation Build 사용](http://amzn.com/0735645248) 및 WILLIAM, ISBN: 978-0-7356-4524-0을 참조 하세요.
 

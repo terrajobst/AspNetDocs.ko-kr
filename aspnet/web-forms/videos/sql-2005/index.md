@@ -2,22 +2,22 @@
 uid: web-forms/videos/sql-2005/index
 title: SQL 2005 | Microsoft Docs
 author: rick-anderson
-description: ASP.NET 응용 프로그램에 데이터베이스 기능을 추가 하려면 SQL Server Express를 사용 하는 방법입니다.
+description: SQL Server Express를 사용 하 여 데이터베이스 기능을 ASP.NET 응용 프로그램에 추가 하는 방법
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: cf0b487c-f387-46dd-b3bc-6b3c4af17c9c
 msc.legacyurl: /web-forms/videos/sql-2005
 msc.type: chapter
 ms.openlocfilehash: de0e83d09d0610a72915173479c9ef0541093890
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65132949"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78518063"
 ---
 # <a name="sql-2005"></a>SQL 2005
 
-> ASP.NET 응용 프로그램에 데이터베이스 기능을 추가 하려면 SQL Server Express를 사용 하는 방법입니다.
+> SQL Server Express를 사용 하 여 데이터베이스 기능을 ASP.NET 응용 프로그램에 추가 하는 방법
 
 - [데이터베이스란?](what-is-a-database.md)
 - [데이터베이스 테이블 및 레코드의 이해](understanding-database-tables-and-records.md)

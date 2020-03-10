@@ -9,11 +9,11 @@ ms.assetid: 32b7fb6e-d74b-4048-91f8-70631b2523ee
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/nested-master-pages-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 67093266567a97cd22b353115616484fd9ef155e
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74596777"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78463625"
 ---
 # <a name="nested-master-pages-c"></a>중첩 마스터 페이지(C#)
 
@@ -185,7 +185,7 @@ ContentPlaceHolder 컨트롤을 포함 하도록 중첩 된 마스터 페이지 
 
 첫 번째 작업은 관리 섹션의 페이지에서 사용할 중첩 된 마스터 페이지를 만드는 것입니다. 2 단계에서 살펴본 것 처럼 새 중첩 된 마스터 페이지를 추가 하는 경우 중첩 된 마스터 페이지의 부모 마스터 페이지를 지정 해야 합니다. 그러나 두 개의 최상위 마스터 페이지인 `Site.master`와 `Alternate.master`있습니다. 이전 자습서에서 `Alternate.master`를 만들었으며 `Alternate.master` 세션 변수의 값에 따라 런타임에 Page 개체의 `MasterPageFile` 속성을 `Site.master` 또는 `MyMasterPage`로 설정 하는 코드를 `BasePage` 클래스에 작성 했습니다.
 
-중첩 된 마스터 페이지를 적절 한 최상위 마스터 페이지를 사용 하도록 구성 하려면 어떻게 해야 하나요? 두 가지 옵션이 있습니다.
+중첩 된 마스터 페이지를 적절 한 최상위 마스터 페이지를 사용 하도록 구성 하려면 어떻게 해야 하나요? 다음 두 가지 옵션이 있습니다.
 
 - 두 개의 중첩 된 마스터 페이지, `AdminNestedSite.master` 및 `AdminNestedAlternate.master`을 만들고 최상위 마스터 페이지 `Site.master` 및 `Alternate.master`에 각각 바인딩합니다. `BasePage`에서 `Page` 개체의 `MasterPageFile`를 적절 한 중첩 마스터 페이지로 설정 합니다.
 - 단일 중첩 마스터 페이지를 만들고 콘텐츠 페이지에서이 특정 마스터 페이지를 사용 하도록 합니다. 그런 다음 런타임에 중첩 된 마스터 페이지의 `MasterPageFile` 속성을 적절 한 최상위 마스터 페이지로 설정 해야 합니다. (지금까지 파악 했을 수 있으므로 마스터 페이지에도 `MasterPageFile` 속성이 있습니다.)
@@ -232,7 +232,7 @@ ContentPlaceHolder 컨트롤을 포함 하도록 중첩 된 마스터 페이지 
 
 [!code-csharp[Main](nested-master-pages-cs/samples/sample12.cs)]
 
-받는 사람:
+아래와 같이 변경합니다.
 
 [!code-csharp[Main](nested-master-pages-cs/samples/sample13.cs)]
 
@@ -252,7 +252,7 @@ ContentPlaceHolder 컨트롤을 포함 하도록 중첩 된 마스터 페이지 
 
 [!code-csharp[Main](nested-master-pages-cs/samples/sample14.cs)]
 
-받는 사람:
+아래와 같이 변경합니다.
 
 [!code-csharp[Main](nested-master-pages-cs/samples/sample15.cs)]
 
@@ -298,7 +298,7 @@ ContentPlaceHolder 컨트롤을 포함 하도록 중첩 된 마스터 페이지 
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -306,7 +306,7 @@ ContentPlaceHolder 컨트롤을 포함 하도록 중첩 된 마스터 페이지 
 - [중첩 된 마스터 페이지 및 VS 2005 디자인 타임에 대 한 팁](https://weblogs.asp.net/scottgu/archive/2005/11/11/430382.aspx)
 - [VS 2008 중첩 된 마스터 페이지 지원](https://weblogs.asp.net/scottgu/archive/2007/07/09/vs-2008-nested-master-page-support.aspx)
 
-### <a name="about-the-author"></a>작성자 정보
+### <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)는 여러 ASP/ASP. NET books의 작성자와 4GuysFromRolla.com의 창립자가 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 3.5을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672329972/4guysfromrollaco)것입니다. Scott은 [mitchell@4GuysFromRolla.com](mailto:mitchell@4GuysFromRolla.com) 또는 [http://ScottOnWriting.NET](http://scottonwriting.net/)의 블로그를 통해 연결할 수 있습니다.
 

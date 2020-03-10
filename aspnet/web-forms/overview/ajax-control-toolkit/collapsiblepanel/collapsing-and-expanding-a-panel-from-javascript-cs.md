@@ -9,11 +9,11 @@ ms.assetid: de5500be-75e5-461a-8064-b70ae52ea6a4
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/collapsiblepanel/collapsing-and-expanding-a-panel-from-javascript-cs
 msc.type: authoredcontent
 ms.openlocfilehash: bed14d82394d28336493bec10e31ddb4d411a192
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74599450"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78497717"
 ---
 # <a name="collapsing-and-expanding-a-panel-from-javascript-c"></a>JavaScript에서 패널 축소 및 확장(C#)
 

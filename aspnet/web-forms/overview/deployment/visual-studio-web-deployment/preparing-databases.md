@@ -9,11 +9,11 @@ ms.assetid: ae4def81-fa37-4883-a13e-d9896cbf6c36
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/preparing-databases
 msc.type: authoredcontent
 ms.openlocfilehash: cdcb3578725c41e3c801afd54e6d34455bc4b281
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74618526"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78517283"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-preparing-for-database-deployment"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 데이터베이스 배포 준비
 
@@ -197,7 +197,7 @@ SQL Server 설치 센터의 첫 페이지에서 **새로 만들기 SQL Server �
 10. **다음** 을 클릭 하 여 **요약** 탭으로 이동한 후 다시 **다음** 을 클릭 하 여 스크립트를 만듭니다.
 
     ![SSMS 스크립트를 만듦](preparing-databases/_static/image14.png)
-11. **마침**을 클릭합니다.
+11. **Finish**를 클릭합니다.
 
 ### <a name="create-the-production-database-script"></a>프로덕션 데이터베이스 스크립트 만들기
 
@@ -220,7 +220,7 @@ SQL Server 설치 센터의 첫 페이지에서 **새로 만들기 SQL Server �
 
 다음 자습서에서는 배포에 영향을 주는 프로젝트 설정을 구성 하 고 배포 된 응용 프로그램에서 다른 설정에 *대해 자동 web.config* 파일 변환을 설정 합니다.
 
-## <a name="more-information"></a>자세한 내용
+## <a name="more-information"></a>추가 정보
 
 NuGet에 대 한 자세한 내용은 nuget 및 Nuget을 [사용 하 여 프로젝트 라이브러리 관리](https://msdn.microsoft.com/magazine/hh547106.aspx) [설명서](http://docs.nuget.org/docs/start-here/overview)를 참조 하세요. NuGet을 사용 하지 않으려면 NuGet 패키지를 분석 하 여 설치 시 수행 되는 작업을 확인 하는 방법을 알아야 합니다. 예를 들어 *web.config* 변환을 구성 하 고 빌드 시에 실행 되도록 PowerShell 스크립트를 구성할 수 있습니다. NuGet의 작동 방식에 대해 자세히 알아보려면 [패키지 만들기 및 게시](http://docs.nuget.org/docs/creating-packages/creating-and-publishing-a-package) 및 [구성 파일 및 소스 코드 변환](http://docs.nuget.org/docs/creating-packages/configuration-file-and-source-code-transformations)을 참조 하세요.
 

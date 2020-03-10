@@ -9,11 +9,11 @@ ms.assetid: dbb024a6-f043-4fc5-ad66-56556711875b
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/control-id-naming-in-content-pages-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 3cb8dec47040bc65f1a024325c91590729ffbdb7
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74586659"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78519239"
 ---
 # <a name="control-id-naming-in-content-pages-vb"></a>콘텐츠 페이지에서 컨트롤 ID 이름 지정(VB)
 
@@ -213,7 +213,7 @@ ASP.NET 엔진이 서버 컨트롤의 렌더링 된 `id` 값에 대해 수행 �
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -224,7 +224,7 @@ ASP.NET 엔진이 서버 컨트롤의 렌더링 된 `id` 값에 대해 수행 �
 - [마스터 페이지: 팁, 요령 및 트랩](http://www.odetocode.com/articles/450.aspx)
 - [클라이언트 쪽 스크립트 작업](https://msdn.microsoft.com/library/aa479302.aspx)
 
-### <a name="about-the-author"></a>작성자 정보
+### <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)는 여러 ASP/ASP. NET books의 작성자와 4GuysFromRolla.com의 창립자가 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 3.5을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. Scott은 [mitchell@4GuysFromRolla.com](mailto:mitchell@4GuysFromRolla.com) 또는 [http://ScottOnWriting.NET](http://scottonwriting.net/)의 블로그를 통해 연결할 수 있습니다.
 

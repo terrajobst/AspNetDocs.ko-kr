@@ -9,11 +9,11 @@ ms.assetid: 362ade25-3965-4fb2-88d2-835c4786244f
 msc.legacyurl: /web-forms/overview/data-access/working-with-binary-files/including-a-file-upload-option-when-adding-a-new-record-cs
 msc.type: authoredcontent
 ms.openlocfilehash: f1287e180151b3034a7b90ef4b3f1fbe68354a09
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74576908"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78475541"
 ---
 # <a name="including-a-file-upload-option-when-adding-a-new-record-c"></a>새 레코드를 추가할 때 파일 업로드 옵션 포함(C#)
 
@@ -112,7 +112,7 @@ ms.locfileid: "74576908"
 
 삽입 인터페이스에서 DetailsView을 영구적으로 렌더링 하려면 해당 `DefaultMode` 속성을 `Insert`로 설정 합니다.
 
-BoundField는 `BrochurePath` 속성이 `CategoryID`로 설정 되어 있으므로 삽입 인터페이스에서 렌더링 되지 않지만, `CategoryName`, `Description`, `NumberOfProducts`및 `InsertVisible` BoundFields에는 5 개의 `CategoryID`있습니다. 이러한 BoundFields는 `GetCategories()` 메서드에서 반환 되는 열 이기 때문에 존재 합니다 .이는 ObjectDataSource가 데이터를 검색 하기 위해 호출 하는 것입니다. 그러나 삽입을 위해 사용자가 `NumberOfProducts`에 대 한 값을 지정할 수 있도록 합니다. 또한 새 범주에 대 한 그림을 업로드 하 고 브로슈어에 PDF를 업로드 하도록 허용 해야 합니다.
+BoundField는 `BrochurePath` 속성이 `CategoryID`로 설정 되어 있으므로 삽입 인터페이스에서 렌더링 되지 않지만, `CategoryName`, `Description`, `NumberOfProducts`및 `InsertVisible` BoundFields에는 5 개의 `CategoryID`있습니다.`false` 이러한 BoundFields는 `GetCategories()` 메서드에서 반환 되는 열 이기 때문에 존재 합니다 .이는 ObjectDataSource가 데이터를 검색 하기 위해 호출 하는 것입니다. 그러나 삽입을 위해 사용자가 `NumberOfProducts`에 대 한 값을 지정할 수 있도록 합니다. 또한 새 범주에 대 한 그림을 업로드 하 고 브로슈어에 PDF를 업로드 하도록 허용 해야 합니다.
 
 DetailsView에서 `NumberOfProducts` BoundField를 완전히 제거한 다음 `CategoryName`의 `HeaderText` 속성 및 `BrochurePath` BoundFields를 각각 Category 및 브로셔로 업데이트 합니다. 그런 다음 `BrochurePath` BoundField를 Templatefield로 변환로 변환 하 고 그림에 대 한 새 Templatefield로 변환를 추가 하 여이 새 Templatefield로 변환에 그림의 `HeaderText` 값을 제공 합니다. `BrochurePath` Templatefield로 변환와 CommandField Templatefield로 변환 `Picture`를 이동 합니다.
 
@@ -234,7 +234,7 @@ ObjectDataSource s `Insert()` 메서드를 호출 하기 전에 먼저 사용자
 
 행복 한 프로그래밍
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

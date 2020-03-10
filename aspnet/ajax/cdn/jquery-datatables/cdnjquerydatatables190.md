@@ -1,6 +1,6 @@
 ---
 uid: ajax/cdn/jquery-datatables/cdnjquerydatatables190
-title: jQuery DataTables 1.9.0 | Microsoft Docs
+title: jQuery Datatable 1.9.0 | Microsoft Docs
 author: rick-anderson
 description: ''
 ms.author: riande
@@ -9,15 +9,15 @@ ms.assetid: 0f9c7b5e-bac0-40f1-b353-bd46e8759836
 msc.legacyurl: /ajax/cdn/jquery-datatables/cdnjquerydatatables190
 msc.type: content
 ms.openlocfilehash: c2f251f6b2ca9a810de5d6e7fb93886ae510094b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59408552"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78454031"
 ---
 # <a name="jquery-datatables-190"></a>jQuery DataTables 1.9.0
 
-CDN에서 jQuery DataTables 플러그 인에 대 한 다음 파일이 호스팅됩니다.
+JQuery Datatable 플러그 인에 대 한 다음 파일은 CDN에서 호스팅됩니다.
 
 - https://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/jquery.dataTables.js
 - https://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/jquery.dataTables.min.js

@@ -9,11 +9,11 @@ ms.assetid: 3ecc21c5-da0e-40ab-abb4-fac1e47398ad
 msc.legacyurl: /web-forms/overview/data-access/editing-and-deleting-data-through-the-datalist/adding-validation-controls-to-the-datalist-s-editing-interface-cs
 msc.type: authoredcontent
 ms.openlocfilehash: e3c14b7098da832bd28f57026e81dcb7f7ba7130
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74640467"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78480857"
 ---
 # <a name="adding-validation-controls-to-the-datalists-editing-interface-c"></a>DataList의 편집 인터페이스에 유효성 검사 컨트롤 추가(C#)
 
@@ -29,7 +29,7 @@ ms.locfileid: "74640467"
 
 이 자습서에서는 보다 간단 하 게 편집할 수 있는 사용자 인터페이스를 제공 하기 위해 DataList s `EditItemTemplate`에 유효성 검사 컨트롤을 추가 하는 것이 얼마나 쉬운지 알아봅니다. 특히이 자습서에서는 이전 자습서에서 만든 예제를 사용 하 고 편집 인터페이스를 보강 하 여 적절 한 유효성 검사를 포함 합니다.
 
-## <a name="step-1-replicating-the-example-fromhandling-bll--and-dal-level-exceptionshandling-bll-and-dal-level-exceptions-csmd"></a>1 단계:[BLL 및 DAL 수준의 예외 처리](handling-bll-and-dal-level-exceptions-cs.md) 에서 예제 복제
+## <a name="step-1-replicating-the-example-fromhandling-bll--and-dal-level-exceptions"></a>1 단계:[BLL 및 DAL 수준의 예외 처리](handling-bll-and-dal-level-exceptions-cs.md) 에서 예제 복제
 
 [BLL 및 DAL 수준 예외 처리](handling-bll-and-dal-level-exceptions-cs.md) 자습서에서 2 열 편집 가능 DataList에서 제품의 이름과 가격을 나열 하는 페이지를 만들었습니다. 이 자습서의 목표는 유효성 검사 컨트롤을 포함 하도록 DataList s 편집 인터페이스를 확대 하는 것입니다. 특히 유효성 검사 논리는 다음과 같습니다.
 
@@ -166,7 +166,7 @@ DataList의 편집 인터페이스에 유효성 검사 컨트롤을 추가 하�
 
 행복 한 프로그래밍
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

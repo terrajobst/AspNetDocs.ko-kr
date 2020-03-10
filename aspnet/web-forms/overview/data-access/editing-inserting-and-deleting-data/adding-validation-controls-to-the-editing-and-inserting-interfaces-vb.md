@@ -9,11 +9,11 @@ ms.assetid: e3d7028a-7a22-4a4f-babe-d53afc41c0e2
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/adding-validation-controls-to-the-editing-and-inserting-interfaces-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 5c5ad110ee0836f0a464b02a2b29254e2e06381e
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74571347"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78479435"
 ---
 # <a name="adding-validation-controls-to-the-editing-and-inserting-interfaces-vb"></a>편집 및 삽입 인터페이스에 유효성 검사 컨트롤 추가(VB)
 
@@ -33,7 +33,7 @@ BoundField 및 CheckBoxField에 대 한 기본 편집 및 삽입 인터페이스
 
 이 자습서에서는 Templatefield로 변환의 `EditItemTemplate`에 유효성 검사 컨트롤을 추가 하는 것이 얼마나 쉬운지 확인 하 고 `InsertItemTemplate` 하 여 보다 간단 하 게 사용자 인터페이스를 제공 합니다. 특히이 자습서에서는 [삽입, 업데이트 및 삭제 자습서와 관련 된 이벤트를 검사](examining-the-events-associated-with-inserting-updating-and-deleting-vb.md) 하 고 적절 한 유효성 검사를 포함 하는 편집 및 삽입 인터페이스를 보강 하 여 만든 예제를 사용 합니다.
 
-## <a name="step-1-replicating-the-example-fromexamining-the-events-associated-with-inserting-updating-and-deletingexamining-the-events-associated-with-inserting-updating-and-deleting-vbmd"></a>1 단계:[삽입, 업데이트 및 삭제와 관련 된 이벤트를 검사](examining-the-events-associated-with-inserting-updating-and-deleting-vb.md) 하 여 예제를 복제 합니다.
+## <a name="step-1-replicating-the-example-fromexamining-the-events-associated-with-inserting-updating-and-deleting"></a>1 단계:[삽입, 업데이트 및 삭제와 관련 된 이벤트를 검사](examining-the-events-associated-with-inserting-updating-and-deleting-vb.md) 하 여 예제를 복제 합니다.
 
 [삽입, 업데이트 및 삭제 자습서와 관련 된 이벤트를 검사](examining-the-events-associated-with-inserting-updating-and-deleting-vb.md) 하는 중에는 편집 가능한 GridView에서 제품의 이름과 가격을 나열 하는 페이지를 만들었습니다. 또한이 페이지에는 `DefaultMode` 속성이 `Insert`로 설정 된 DetailsView이 포함 되어 있으므로 항상 삽입 모드로 렌더링 됩니다. 이 DetailsView에서 사용자는 새 제품의 이름과 가격을 입력 한 다음 삽입을 클릭 하 여 시스템에 추가할 수 있습니다 (그림 1 참조).
 
@@ -203,11 +203,11 @@ RequiredFieldValidator가 `ProductName` `EditItemTemplate`에 추가 되 면 `Un
 
 ASP.NET 2.0의 유효성 검사 컨트롤은 `ValidationGroup` 속성을 통해 유효성 검사 그룹으로 분할할 수 있습니다. 그룹의 유효성 검사 컨트롤 집합을 연결 하려면 `ValidationGroup` 속성을 동일한 값으로 설정 하면 됩니다. 이 자습서의 경우 GridView의 템플릿 필드에서 유효성 검사 컨트롤의 `ValidationGroup` 속성을 `EditValidationControls`로 설정 하 고 DetailsView의 템플릿 필드의 `ValidationGroup` 속성을 `InsertValidationControls`로 설정 합니다. 이러한 변경은 선언적 태그에서 직접 수행 하거나 디자이너의 편집 템플릿 인터페이스를 사용할 때 속성 창을 통해 수행할 수 있습니다.
 
-유효성 검사 컨트롤 외에도 ASP.NET 2.0의 단추 및 단추 관련 컨트롤에는 `ValidationGroup` 속성이 포함 되어 있습니다. 유효성 검사 그룹의 유효성 검사기는 동일한 `ValidationGroup` 속성 설정을 가진 단추로 포스트백이 발생 한 경우에만 유효성 검사를 수행 합니다. 예를 들어 DetailsView의 삽입 단추가 `InsertValidationControls` 유효성 검사 그룹을 트리거하기 위해 CommandField의 `ValidationGroup` 속성을 `InsertValidationControls`으로 설정 해야 합니다 (그림 14 참조). 또한 GridView의 CommandField's 속성을 `EditValidationControls`로 설정 합니다.
+유효성 검사 컨트롤 외에도 ASP.NET 2.0의 단추 및 단추 관련 컨트롤에는 `ValidationGroup` 속성이 포함 되어 있습니다. 유효성 검사 그룹의 유효성 검사기는 동일한 `ValidationGroup` 속성 설정을 가진 단추로 포스트백이 발생 한 경우에만 유효성 검사를 수행 합니다. 예를 들어 DetailsView의 삽입 단추가 `InsertValidationControls` 유효성 검사 그룹을 트리거하기 위해 CommandField의 `ValidationGroup` 속성을 `InsertValidationControls`으로 설정 해야 합니다 (그림 14 참조). 또한 GridView의 CommandField's 속성을 `EditValidationControls`로 설정 합니다.`ValidationGroup`
 
 [![DetailsView의 CommandField's ValidationGroup 속성을 InsertValidationControls로 설정 합니다.](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image41.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image40.png)
 
-**그림 14**: DetailsView의 commandfield's 속성을 `InsertValidationControls`로 설정 ([전체 크기 이미지를 보려면 클릭](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image42.png))
+**그림 14**: DetailsView의 commandfield's 속성을 `InsertValidationControls`로 설정 ([전체 크기 이미지를 보려면 클릭](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image42.png))`ValidationGroup`
 
 이러한 변경 후에는 DetailsView 및 GridView의 템플릿 필드와 CommandFields가 다음과 같이 표시 됩니다.
 
@@ -233,7 +233,7 @@ BoundFields는 삽입 및 편집 인터페이스를 모두 제공할 수 있지�
 
 행복 한 프로그래밍
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

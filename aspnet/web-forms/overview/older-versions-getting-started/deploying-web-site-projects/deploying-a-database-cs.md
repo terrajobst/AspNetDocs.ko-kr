@@ -9,11 +9,11 @@ ms.assetid: ff537a10-9f1f-43fe-9bcb-3dda161ba8f5
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/deploying-a-database-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 83657be794e1ea31f6ad2f2b4adc274724d60cf2
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74579659"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78518321"
 ---
 # <a name="deploying-a-database-c"></a>데이터베이스 배포(C#)
 
@@ -161,7 +161,7 @@ SSMS를 실행 하 고 웹 호스트 공급자가 제공한 정보를 사용 하
 
 행복 한 프로그래밍
 
-#### <a name="further-reading"></a>추가 정보
+#### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 

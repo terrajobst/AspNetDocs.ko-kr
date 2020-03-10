@@ -1,6 +1,6 @@
 ---
 uid: web-api/overview/data/using-web-api-with-entity-framework/part-10
-title: Azure의 Azure App Service에 앱 게시 | Microsoft Docs
+title: Azure Azure App Service에 앱 게시 Microsoft Docs
 author: MikeWasson
 description: ''
 ms.author: riande
@@ -9,50 +9,50 @@ ms.assetid: 10fd812b-94d6-4967-be97-a31ce9c45e2c
 msc.legacyurl: /web-api/overview/data/using-web-api-with-entity-framework/part-10
 msc.type: authoredcontent
 ms.openlocfilehash: a9a7b74a07c71b47253c0af304c7a26ffa4eaae5
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59417366"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78504761"
 ---
-# <a name="publish-the-app-to-azure-azure-app-service"></a>Azure의 Azure App Service에 앱 게시
+# <a name="publish-the-app-to-azure-azure-app-service"></a>Azure Azure App Service에 앱 게시
 
 [Mike Wasson](https://github.com/MikeWasson)
 
 [완료 된 프로젝트 다운로드](https://github.com/MikeWasson/BookService)
 
-마지막 단계로, Azure에 응용 프로그램을 게시 합니다. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 선택 **게시**합니다.
+마지막 단계로 Azure에 응용 프로그램을 게시 합니다. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **게시**를 선택 합니다.
 
 ![](part-10/_static/image1.png)
 
-클릭 **게시** 를 호출 하는 **웹 게시** 대화 합니다. 선택한 경우 **클라우드에서 호스트** 때 먼저 프로젝트에 다음 연결을 만든 설정이 이미 구성 되었습니다. 이 경우 클릭 합니다 **설정을** 탭을 확인 &quot;Execute Code First Migrations&quot;합니다. (확인 하지 않은 경우 **클라우드에서 호스트** 를 시작할 때의 단계에 따라 다음을 [다음 섹션에서는](#new-website).)
+**게시** 를 클릭 하면 **웹 게시** 대화 상자가 호출 됩니다. 프로젝트를 처음 만들 때 **클라우드에서 호스트** 를 선택한 경우 연결 및 설정이 이미 구성 되어 있습니다. 이 경우 **설정** 탭을 클릭 하 고 Code First 마이그레이션&quot;&quot;실행을 선택 합니다. (처음부터 **클라우드의 호스트** 를 확인 하지 않은 경우 [다음 섹션](#new-website)의 단계를 따르세요.)
 
 [![](part-10/_static/image3.png)](part-10/_static/image2.png)
 
-앱을 배포 하려면 **게시**합니다. 게시 진행률을 볼 수는 **웹 게시 활동** 창입니다. (에서 합니다 **보기** 메뉴에서 **다른 Windows**을 선택한 후 **웹 게시 활동**.)
+앱을 배포 하려면 **게시**를 클릭 합니다. **웹 게시 작업** 창에서 게시 진행률을 볼 수 있습니다. **보기** 메뉴에서 **다른 창**을 선택한 다음 **웹 게시 작업**을 선택 합니다.
 
 ![](part-10/_static/image4.png)
 
-Visual Studio는 앱 배포 완료 되 면 기본 브라우저가 자동으로 배포 된 웹 사이트의 URL로 열립니다 및 사용자가 만든 응용 프로그램은 이제 클라우드에서 실행 됩니다. 브라우저 주소 표시줄에서 URL 사이트는 인터넷에서 로드 되 고 있음을 보여 줍니다.
+Visual Studio에서 앱 배포가 완료 되 면 기본 브라우저가 자동으로 배포 된 웹 사이트의 URL로 열리며, 만든 응용 프로그램은 이제 클라우드에서 실행 됩니다. 브라우저 주소 표시줄의 URL은 사이트가 인터넷에서 로드 되 고 있음을 보여 줍니다.
 
 [![](part-10/_static/image6.png)](part-10/_static/image5.png)
 
 <a id="new-website"></a>
 ## <a name="deploying-to-a-new-website"></a>새 웹 사이트에 배포
 
-확인 하지 않은 경우 **클라우드에서 호스트** 프로젝트를 처음 만들 때 새 웹 앱을 지금 구성할 수 있습니다. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 선택 **게시**합니다. 선택 된 **프로필** 탭을 클릭 **Microsoft Azure Websites**합니다. Azure에 로그인 현재 없는 경우 로그인을 묻는 메시지가 나타납니다.
+프로젝트를 처음 만들 때 **클라우드의 호스트** 를 확인 하지 않은 경우 지금 새 웹 앱을 구성할 수 있습니다. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **게시**를 선택 합니다. **프로필** 탭을 선택 하 고 **Microsoft Azure Websites**를 클릭 합니다. 현재 Azure에 로그인 하지 않은 경우 로그인 하 라는 메시지가 표시 됩니다.
 
 [![](part-10/_static/image8.png)](part-10/_static/image7.png)
 
-에 **기존 웹 사이트** 대화 상자에서 클릭 **새로 만들기**합니다.
+**기존 웹 사이트** 대화 상자에서 **새로 만들기**를 클릭 합니다.
 
 ![](part-10/_static/image9.png)
 
-사이트 이름을 입력 합니다. Azure 구독 및 지역을 선택 합니다. 아래 **데이터베이스 서버**를 선택 **새 서버 만들기**, 또는 기존 서버를 선택 합니다. **만들기**를 클릭합니다.
+사이트 이름을 입력 합니다. Azure 구독 및 지역을 선택 합니다. **데이터베이스 서버**에서 **새 서버 만들기**를 선택 하거나 기존 서버를 선택 합니다. **만들기**를 클릭합니다.
 
 [![](part-10/_static/image11.png)](part-10/_static/image10.png)
 
-클릭 합니다 **설정을** 탭을 확인 &quot;Execute Code First Migrations&quot;합니다. 누른 **게시**합니다.
+**설정** 탭을 클릭 하 &quot;Code First 마이그레이션&quot;실행을 선택 합니다. 그런 다음, **게시**를 클릭합니다.
 
 > [!div class="step-by-step"]
 > [이전](part-9.md)

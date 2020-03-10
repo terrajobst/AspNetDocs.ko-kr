@@ -9,11 +9,11 @@ ms.assetid: 113f10b3-a19a-471b-8ff6-db3c79ce8a91
 msc.legacyurl: /web-forms/overview/older-versions-security/roles/creating-and-managing-roles-cs
 msc.type: authoredcontent
 ms.openlocfilehash: a7883d0b05f2fa5a3fdac887f8c8b39d70418fb3
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74595958"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78520067"
 ---
 # <a name="creating-and-managing-roles-c"></a>역할 만들기 및 관리(C#)
 
@@ -31,7 +31,7 @@ ms.locfileid: "74595958"
 
 ASP.NET는 역할을 정의 하 고 사용자 계정과 연결 하는 역할 프레임 워크를 제공 합니다. 역할 프레임 워크를 사용 하면 역할을 만들고 삭제 하 고, 역할에서 사용자를 추가 하거나 제거 하 고, 특정 역할에 속한 사용자 집합을 확인 하 고, 사용자가 특정 역할에 속하는지 여부를 알 수 있습니다. 역할 프레임 워크가 구성 된 후에는 URL 권한 부여 규칙을 통해 역할 별로 페이지에 대 한 액세스를 제한 하 고, 현재 로그온 한 사용자의 역할에 따라 페이지에 추가 정보나 기능을 표시 하거나 숨길 수 있습니다.
 
-이 자습서에서는 역할 프레임 워크를 구성 하는 데 필요한 단계를 살펴봅니다. 그 다음에는 역할을 만들고 삭제 하는 웹 페이지를 빌드합니다. <a id="_msoanchor_2"> </a> [*사용자에 게 역할 할당*](assigning-roles-to-users-cs.md) 자습서에서는 역할에서 사용자를 추가 및 제거 하는 방법을 살펴보겠습니다. <a id="_msoanchor_3"> </a> [*역할 기반 권한 부여*](role-based-authorization-cs.md) 자습서에서는 방문한 사용자의 역할에 따라 페이지 기능을 조정 하는 방법과 함께 역할 별로 페이지에 대 한 액세스를 제한 하는 방법을 알아봅니다. 시작 하겠습니다.
+이 자습서에서는 역할 프레임 워크를 구성 하는 데 필요한 단계를 살펴봅니다. 그 다음에는 역할을 만들고 삭제 하는 웹 페이지를 빌드합니다. <a id="_msoanchor_2"> </a> [*사용자에 게 역할 할당*](assigning-roles-to-users-cs.md) 자습서에서는 역할에서 사용자를 추가 및 제거 하는 방법을 살펴보겠습니다. <a id="_msoanchor_3"> </a> [*역할 기반 권한 부여*](role-based-authorization-cs.md) 자습서에서는 방문한 사용자의 역할에 따라 페이지 기능을 조정 하는 방법과 함께 역할 별로 페이지에 대 한 액세스를 제한 하는 방법을 알아봅니다. 이제 시작하겠습니다.
 
 ## <a name="step-1-adding-new-aspnet-pages"></a>1 단계: 새 ASP.NET 페이지 추가
 
@@ -226,7 +226,7 @@ GridView의 `AutoGenerateColumns` 속성을 False로 설정 하 여 시작 합�
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -237,7 +237,7 @@ GridView의 `AutoGenerateColumns` 속성을 False로 설정 하 여 시작 합�
 - [`<roleManager>` 요소에 대 한 기술 설명서](https://msdn.microsoft.com/library/ms164660.aspx)
 - [멤버 자격 및 역할 관리자 Api 사용](https://quickstarts.asp.net/QuickStartv20/aspnet/doc/security/membership.aspx)
 
-### <a name="about-the-author"></a>작성자 정보
+### <a name="about-the-author"></a>저자 정보
 
 Scott Mitchell는 여러 ASP/ASP. NET books의 작성자와 4GuysFromRolla.com의 창립자가 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 *[24 시간 이내에 ASP.NET 2.0을 sams teach yourself](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)* 것입니다. Scott은 [mitchell@4guysfromrolla.com](mailto:mitchell@4guysfromrolla.com) 또는 [http://ScottOnWriting.NET](http://scottonwriting.net/)의 블로그를 통해 연결할 수 있습니다.
 

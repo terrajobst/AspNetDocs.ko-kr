@@ -9,11 +9,11 @@ ms.assetid: cd03a188-e947-4f55-9bda-b8bce201d8c6
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-setting-folder-permissions-6-of-12
 msc.type: authoredcontent
 ms.openlocfilehash: 85a77a196cf3458bbb2e6308838a846936cd070b
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74633571"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78511721"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-setting-folder-permissions---6-of-12"></a>Visual Studio 또는 Visual Web Developer를 사용 하 여 SQL Server Compact를 사용 하 여 ASP.NET 웹 응용 프로그램 배포: 폴더 권한 설정-6/12
 
@@ -73,7 +73,7 @@ Visual Studio 개발 서버 (Cassini)를 사용 하 여 Visual Studio에서 웹 
 
 이제 Contoso 대학이 로컬 컴퓨터의 IIS에서 올바르게 작동 하는 데 필요한 모든 작업을 완료 했습니다. 다음 자습서에서는 호스팅 공급자에 게 배포 하 여 사이트를 공개적으로 사용할 수 있도록 설정 합니다.
 
-## <a name="more-information"></a>자세한 내용
+## <a name="more-information"></a>추가 정보
 
 이 예제에서 Elmah가 로그 파일을 저장할 수 없는 이유는 매우 명확 합니다. 문제의 원인이 명확 하지 않은 경우에 IIS 추적을 사용할 수 있습니다. IIS.net 사이트에서 [IIS 7에서 추적을 사용 하 여 실패 한 요청 문제 해결](https://www.iis.net/learn/troubleshoot/using-failed-request-tracing/troubleshooting-failed-requests-using-tracing-in-iis) 을 참조 하세요.
 

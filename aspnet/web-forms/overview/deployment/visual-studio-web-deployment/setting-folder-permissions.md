@@ -9,11 +9,11 @@ ms.assetid: 9715a121-fa55-4f1b-a5d2-fb3f6cd8be8f
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/setting-folder-permissions
 msc.type: authoredcontent
 ms.openlocfilehash: 410525bb2e3f6e5a0be6d7d6b33fb3a40509041a
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74614934"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78465065"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-setting-folder-permissions"></a>Visual Studio를 사용 하 여 ASP.NET 웹 배포: 폴더 사용 권한 설정
 
@@ -67,7 +67,7 @@ Visual Studio 개발 서버 (Cassini) 또는 IIS Express를 사용 하 여 Visua
 
 이제 Contoso 대학이 로컬 컴퓨터의 IIS에서 올바르게 작동 하는 데 필요한 모든 작업을 완료 했습니다. 다음 자습서에서는 Azure에 배포 하 여 사이트를 공개적으로 사용할 수 있도록 설정 합니다.
 
-## <a name="more-information"></a>추가 정보
+## <a name="more-information"></a>자세한 정보
 
 이 예제에서 Elmah가 로그 파일을 저장할 수 없는 이유는 매우 명확 합니다. 문제의 원인이 명확 하지 않은 경우에 IIS 추적을 사용할 수 있습니다. IIS.net 사이트에서 [IIS 7에서 추적을 사용 하 여 실패 한 요청 문제 해결](https://www.iis.net/learn/troubleshoot/using-failed-request-tracing/troubleshooting-failed-requests-using-tracing-in-iis) 을 참조 하세요.
 

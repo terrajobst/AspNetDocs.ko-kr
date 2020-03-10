@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/vs-2005/how-do-i-implement-continuous-integration-with-team-foundation
-title: '[어떻게 할까요?] Team Foundation 사용 하 여 연속 통합 구현? | Microsoft 문서'
+title: '[방법:] Team Foundation과의 연속 통합 구현 | Microsoft Docs'
 author: rick-anderson
-description: Team Foundation Server를 기반으로 작동 하는 연속 통합 도구는 여러 가지 및 무료 Norton TeamCI 도구 avail에서 살펴봅니다이 비디오는 중...
+description: Team Foundation Server을 기반으로 작동 하는 다양 한 연속 통합 도구가 있으며,이 비디오에서는 무료 Norton TeamCI 도구를 사용 하는 것을 볼 수 있습니다.
 ms.author: riande
 ms.date: 08/01/2007
 ms.assetid: 525c3f23-586a-4594-a2cf-efb5a1ef6898
 msc.legacyurl: /web-forms/videos/vs-2005/how-do-i-implement-continuous-integration-with-team-foundation
 msc.type: video
 ms.openlocfilehash: 80c9852395345f8ad7266dc469b34821d75e444b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59394017"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78520883"
 ---
-# <a name="how-do-i-implement-continuous-integration-with-team-foundation"></a>[어떻게 할까요?] Team Foundation 사용 하 여 연속 통합 구현?
+# <a name="how-do-i-implement-continuous-integration-with-team-foundation"></a>[방법:] Team Foundation과의 연속 통합 구현
 
-[Chris Menegay](https://twitter.com/CMenegay)
+사람 [별](https://twitter.com/CMenegay)
 
-이 비디오에 대해 살펴봅니다 무료 및 Team Foundation Server를 기반으로 작동 하는 연속 통합 도구는 여러 가지가 [Norton TeamCI](http://teamsystemrocks.com/files/12/tools/entry1018.aspx) 에서 사용할 수 있는 도구인 [Team System Rocks](http://teamsystemrocks.com/)합니다. TeamCI는 주기적으로 확인 업데이트 여부를 Team Foundation server 체크 인 된 파일과, 그렇다면는 솔루션을 빌드하고 자동화 된 테스트를 실행 합니다.
+Team Foundation Server을 기반으로 작동 하는 다양 한 연속 통합 도구가 있으며,이 비디오에서는 [팀 시스템 암석](http://teamsystemrocks.com/)지에서 제공 되는 무료 [Norton teamci](http://teamsystemrocks.com/files/12/tools/entry1018.aspx) 도구를 살펴봅니다. TeamCI는 업데이트 된 파일이 Team Foundation Server에 체크 인 되었는지 주기적으로 확인 하 고, 해당 하는 경우 솔루션을 빌드하고 자동화 된 테스트를 실행 합니다.
 
-[&#9654;비디오 (6 분)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-implement-continuous-integration-with-team-foundation)
+[&#9654;비디오 보기 (6 분)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-implement-continuous-integration-with-team-foundation)
 
 > [!div class="step-by-step"]
 > [이전](how-do-i-discover-application-changes-prior-to-deployment.md)

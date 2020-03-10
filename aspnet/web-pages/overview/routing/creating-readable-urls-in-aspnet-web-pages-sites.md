@@ -1,93 +1,93 @@
 ---
 uid: web-pages/overview/routing/creating-readable-urls-in-aspnet-web-pages-sites
-title: 페이지 (Razor) 사이트를 Asp.net에서 읽을 수 있는 Url 만들기 | Microsoft Docs
+title: ASP.NET 웹 페이지 (Razor) 사이트에서 읽을 수 있는 Url 만들기 | Microsoft Docs
 author: Rick-Anderson
-description: 이 문서에서는 웹 사이트를 ASP.NET Web Pages (Razor) 및 읽을 수 있는 및 SEO에 대 한 향상 된 Url을 선택할 수 있습니다 하는 방법의 라우팅 설명 합니다. 하겠습니다...
+description: 이 문서에서는 Razor (ASP.NET 웹 페이지) 웹 사이트의 라우팅을 설명 하 고이를 통해 SEO에 대해 더 읽기 쉽고 향상 된 Url을 사용 하는 방법을 설명 합니다. 수행할 작업 ...
 ms.author: riande
 ms.date: 02/17/2014
 ms.assetid: a8aac1ac-89de-4415-afe0-97a41c6423d2
 msc.legacyurl: /web-pages/overview/routing/creating-readable-urls-in-aspnet-web-pages-sites
 msc.type: authoredcontent
 ms.openlocfilehash: 832db8e144cab730f16c78f67c12feb9b7c92c7c
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65131763"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78509909"
 ---
 # <a name="creating-readable-urls-in-aspnet-web-pages-razor-sites"></a>ASP.NET 웹 페이지 (Razor) 사이트에서 읽을 수 있는 Url 만들기
 
-[Tom FitzMacken](https://github.com/tfitzmac)
+만든 사람 [Tom FitzMacken](https://github.com/tfitzmac)
 
-> 이 문서에서는 웹 사이트를 ASP.NET Web Pages (Razor) 및 읽을 수 있는 및 SEO에 대 한 향상 된 Url을 선택할 수 있습니다 하는 방법의 라우팅 설명 합니다.
+> 이 문서에서는 Razor (ASP.NET 웹 페이지) 웹 사이트의 라우팅을 설명 하 고이를 통해 SEO에 대해 더 읽기 쉽고 향상 된 Url을 사용 하는 방법을 설명 합니다.
 > 
 > 학습할 내용:
 > 
-> - 어떻게 ASP.NET 라우팅을 사용 하 여 더 읽기 쉽고 검색 가능한 Url을 사용할 수 있도록 합니다.
+> - ASP.NET에서 라우팅을 사용 하 여 더 읽기 쉽고 검색 가능한 Url을 사용할 수 있도록 하는 방법입니다.
 >   
 > 
-> ## <a name="software-versions-used-in-the-tutorial"></a>이 자습서에 사용 되는 소프트웨어 버전
+> ## <a name="software-versions-used-in-the-tutorial"></a>자습서에서 사용 되는 소프트웨어 버전
 > 
 > 
-> - ASP.NET Web Pages (Razor) 3
+> - ASP.NET 웹 페이지 (Razor) 3
 >   
 > 
-> 이 자습서는 ASP.NET 웹 페이지 2 에서도 작동합니다.
+> 이 자습서는 ASP.NET 웹 페이지 2 에서도 작동 합니다.
 
 ## <a name="about-routing"></a>라우팅 정보
 
-사이트의 페이지에 대 한 Url에 얼마나 잘 사이트 작동에 영향 있을 수 있습니다. URL 이지요 &quot;친숙 한&quot; 사이트를 사용 하는 데 쉽게 수 있습니다. 또한 사이트에 대 한 검색 엔진 최적화 (SEO)를 사용 하 여는 것이 도움이 됩니다. ASP.NET 웹 사이트 Url을 자동으로 사용 하는 기능을 포함 합니다.
+사이트의 페이지에 대 한 Url은 사이트의 작동 방식에 영향을 줄 수 있습니다. 친숙 한&quot; &quot;URL을 사용 하면 사용자가 사이트를 보다 쉽게 사용할 수 있습니다. 사이트의 SEO (검색 엔진 최적화)에도 도움이 될 수 있습니다. ASP.NET 웹 사이트에는 친숙 한 Url을 자동으로 사용 하는 기능이 포함 됩니다.
 
-ASP.NET을 통해 방금 서버에서 파일을 가리키는 대신 사용자 작업을 설명 하는 의미 있는 Url을 만들 수 있습니다. 이러한 Url에 대해 고려할 가상의 블로그:
+ASP.NET를 사용 하면 단순히 서버의 파일을 가리키는 대신 사용자 동작을 설명 하는 의미 있는 Url을 만들 수 있습니다. 가상 블로그에 대해 다음 Url을 고려 합니다.
 
 - `http://www.contoso.com/Blog/blog.cshtml?categories=hardware`
 - `http://www.contoso.com//Blog/blog.cshtml?startdate=2009-11-01&enddate=2009-11-30`
 
-다음에 해당 Url을 비교 합니다.
+이러한 Url을 다음과 같이 비교 합니다.
 
 - `http://www.contoso.com/Blog/categories/hardware/`
 - `http://www.contoso.com/Blog/2009/November`
 
-블로그를 사용 하 여 표시 되는 알고 첫 번째 쌍은 사용자가 해야 합니다 *blog.cshtml* 페이지 및 올바른 범주 또는 날짜 범위를 가져오는 쿼리 문자열을 구성 해야 합니다. 두 번째 예제 집합을 만들어 이해할 훨씬 쉽습니다.
+첫 번째 쌍의 사용자 *는 블로그의 blog 페이지를* 사용 하 여 블로그를 표시 하 고 올바른 범주나 날짜 범위를 가져오는 쿼리 문자열을 생성 해야 한다는 것을 알고 있어야 합니다. 두 번째 예제 집합은 이해 하 고 만드는 것이 훨씬 쉽습니다.
 
-첫 번째 예제에 대 한 Url도 직접 가리키도록 특정 파일 (*blog.cshtml*). 어떤 이유로 블로그 된 다른 폴더로 이동할 서버의 또는 블로그 다른 페이지를 사용 하도록 다시 작성 된 경우 링크는 잘못 된 것입니다. Url의 두 번째 집합을 특정 페이지를 가리키지 않습니다.도 블로그 구현 또는 위치를 변경 하는 경우, Url은 계속 유효 합니다.
+또한 첫 번째 예제에 대 한 Url은 특정 파일 (*블로그. cshtml*)을 직접 가리킵니다. 어떤 이유로 든 블로그를 서버의 다른 폴더로 이동 했거나 다른 페이지를 사용 하도록 블로그를 다시 작성 한 경우 링크가 잘못 된 것입니다. 두 번째 Url 집합은 특정 페이지를 가리키지 않으므로 블로그 구현이 나 위치가 변경 되더라도 Url은 여전히 유효 합니다.
 
-ASP.NET Web Pages에서 ASP.NET을 사용 하기 때문에 위의 예제에서와 같이 친숙 한 Url을 만들 수 있습니다 *라우팅*합니다. 라우팅 요청을 수행할 수 있는 URL 페이지 (또는 페이지)에서 논리 매핑을 만듭니다. 매핑이 논리 기 때문에 사이트에 대 한 Url을 정의 하는 방법에 뛰어난 유연성을 제공 라우팅 (물리적이 지 특정 파일을)를 합니다.
+ASP.NET는 *라우팅을*사용 하므로 ASP.NET 웹 페이지에서 위의 예제와 같은 친숙 한 url을 만들 수 있습니다. 라우팅은 URL에서 요청을 수행할 수 있는 페이지 (또는 페이지)로의 논리적 매핑을 만듭니다. 매핑은 논리적이 아닌 특정 파일에 대 한 논리적 이기 때문에 라우팅은 사이트의 Url을 정의 하는 방법에 뛰어난 유연성을 제공 합니다.
 
-## <a name="how-routing-works"></a>라우팅의 작동 원리
+## <a name="how-routing-works"></a>라우팅 작동 방법
 
-ASP.NET 요청을 처리할 때 URL이 라우팅하는 방법을 결정을 읽습니다. ASP.NET는 왼쪽에서 오른쪽으로 이동 하는 디스크, 파일에 URL의 개별 세그먼트를 일치 시 키 려 합니다. 일치 하는 경우 페이지에 전달 됩니다 URL에 남아 있는 모든 항목 *경로 정보*합니다.
+ASP.NET에서 요청을 처리 하는 경우 URL을 읽어 라우팅하는 방법을 결정 합니다. ASP.NET는 URL의 개별 세그먼트를 디스크의 파일 (왼쪽에서 오른쪽으로 이동)과 일치 시 키 려 고 시도 합니다. 일치 하는 항목이 있으면 URL에 남아 있는 항목이 *경로 정보*로 페이지에 전달 됩니다.
 
-이 URL을 사용 하 여 요청을 수행 하는 사용자가 있다고 가정해 봅시다.
+누군가가 다음 URL을 사용 하 여 요청을 한다고 가정 합니다.
 
 `http://www.contoso.com/a/b/c`
 
-검색은 다음과 같이 이루어집니다.
+검색은 다음과 같습니다.
 
-1. 파일의 이름과 경로 사용 하 여 거기 */a/b/c.cshtml*? 그렇다면 해당 페이지를 실행 하 고 전달할 정보가 없습니다. 그렇지 않은 경우...
-2. 파일의 이름과 경로 사용 하 여 거기 */a/b.cshtml*? 따라서 해당 페이지를 실행 하 고 값을 전달 하는 경우 `c` 되도록 합니다. 그렇지 않은 경우...
-3. 파일의 이름과 경로 사용 하 여 거기 */a.cshtml*? 따라서 해당 페이지를 실행 하 고 값을 전달 하는 경우 `b/c` 되도록 합니다.
+1. */A/b/c.cshtml*경로와 이름을 가진 파일이 있나요? 이 경우 해당 페이지를 실행 하 고 정보를 전달 하지 않습니다. 기타...
+2. */A/b.cshtml*경로와 이름을 가진 파일이 있나요? 이 경우 해당 페이지를 실행 하 여 `c` 값을 전달 합니다. 그렇지 않은 경우 ...
+3. */A.cshtml*경로와 이름을 가진 파일이 있나요? 이 경우 해당 페이지를 실행 하 여 `b/c` 값을 전달 합니다.
 
-더 정확 하 게 찾을 수 검색에 대 한 일치 하는 경우 *.cshtml* 가 지정 된 폴더의 파일을 ASP.NET 계속 해 서 이러한 파일에:
+지정 된 폴더에 있는 ASP.NET 파일에 *대해 정확* 하 게 일치 하는 항목이 검색에서 발견 된 경우에는 해당 파일을 계속 검색 합니다.
 
 1. */a/b/c/default.cshtml* (경로 정보 없음).
 2. */a/b/c/index.cshtml* (경로 정보 없음).
 
 > [!NOTE]
-> 그렇다고 해 특정 페이지에 대 한 요청 (즉, 포함 하는 요청은 *.cshtml* 파일 이름 확장명) 예상한 것 처럼 작동 합니다. 와 같은 요청 `http://www.contoso.com/a/b.cshtml` 페이지에 실행될지 *b.cshtml* 아무 문제 없이 합니다.
+> 명확 하 게 하기 위해 특정 페이지에 대 한 요청 (즉 *, 파일 확장명을 포함* 하는 요청)은 예상한 것과 똑같이 작동 합니다. `http://www.contoso.com/a/b.cshtml` 같은 요청은 b 페이지를 실행 합니다 *.*
 
-페이지 내에서 페이지를 통해 경로 정보를 얻을 수 있습니다 `UrlData` 속성 사전입니다. 라는 파일에 있다고 가정해 보십시오 *ViewCustomers.cshtml* 사이트가이 요청을 가져옵니다.
+페이지 내에서 페이지의 `UrlData` 속성 (사전)을 통해 경로 정보를 가져올 수 있습니다. 이름이 *Viewcustomers* 인 파일이 있고 사이트에서이 요청을 가져옵니다.
 
 `http://mysite.com/myWebSite/ViewCustomers/1000`
 
-위의 규칙에서 설명한 대로, 요청 페이지로 이동 됩니다. 페이지 내에서 가져오고 경로 정보를 표시 하려면 다음과 같은 코드를 사용할 수 있습니다 (이 경우 값 &quot;1000&quot;):
+위의 규칙에 설명 된 대로 요청이 페이지로 이동 합니다. 페이지 내에서 다음과 같은 코드를 사용 하 여 경로 정보를 가져오고 표시할 수 있습니다 (이 경우 값 &quot;1000&quot;).
 
 [!code-html[Main](creating-readable-urls-in-aspnet-web-pages-sites/samples/sample1.html)]
 
 > [!NOTE]
-> 라우팅 전체 파일 이름을 포함 하지 않습니다, 때문에 있을 수 있습니다 모호성은 동일 페이지가 있는 경우 다른 파일 이름 확장명 (예를 들어 *MyPage.cshtml* 하 고 *MyPage.html*) . 라우팅을 사용 하 여 문제를 방지 하기 위해 없는지 페이지 이름이 해당 확장만 다른 사이트에 있는지 확인 하는 것이 좋습니다.
+> 라우팅은 전체 파일 이름을 포함 하지 않으므로 이름이 같지만 파일 이름 확장명 (예: *m* 및 *m*)이 다른 페이지가 있는 경우 모호성이 있을 수 있습니다. 라우팅 문제를 방지 하기 위해 사이트에 이름이 서로 다른 페이지가 없는지 확인 하는 것이 가장 좋습니다.
 
 <a id="Additional_Resources"></a>
 ## <a name="additional-resources"></a>추가 리소스
 
-[WebMatrix-Url, UrlData 및 SEO에 대 한 라우팅](http://www.mikesdotnetting.com/Article/165/WebMatrix-URLs-UrlData-and-Routing-for-SEO)합니다. 이 블로그 항목 Mike Brind 하 여 라우팅 작동 방법을 ASP.NET 웹 페이지에서에 몇몇 추가 세부 정보를 제공합니다.
+[WebMatrix-url, UrlData 및 SEO에 대 한 라우팅](http://www.mikesdotnetting.com/Article/165/WebMatrix-URLs-UrlData-and-Routing-for-SEO)입니다. Mike Brind의이 블로그 항목에서는 ASP.NET 웹 페이지에서 라우팅의 작동 방식에 대 한 추가 정보를 제공 합니다.

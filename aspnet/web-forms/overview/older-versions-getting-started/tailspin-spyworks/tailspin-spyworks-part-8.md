@@ -1,81 +1,81 @@
 ---
 uid: web-forms/overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-8
-title: '8부: 최종 페이지, 예외 처리 및 결론 | Microsoft Docs'
+title: '8 부: 최종 페이지, 예외 처리 및 결론 | Microsoft Docs'
 author: JoeStagner
-description: 이 자습서 시리즈 모든 Tailspin Spyworks 샘플 응용 프로그램 빌드를 수행 하는 단계를 자세히 설명 합니다. 8 부 페이지 및 예외에 대 한 연락처 페이지를 추가 하는 중...
+description: 이 자습서 시리즈에서는 Tailspin Spyworks 샘플 응용 프로그램을 빌드하는 데 필요한 모든 단계에 대해 자세히 설명 합니다. 8 부에서 연락처 페이지, 정보 페이지 및 예외를 추가 합니다.
 ms.author: riande
 ms.date: 07/21/2010
 ms.assetid: 5aeadf8f-39f3-4f07-a78f-1c310c64fb23
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-8
 msc.type: authoredcontent
 ms.openlocfilehash: 707dc9d87ae324a7897c971a451e40bc54c96cb3
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65130600"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78474341"
 ---
-# <a name="part-8-final-pages-exception-handling-and-conclusion"></a>8부: 최종 페이지, 예외 처리 및 결론
+# <a name="part-8-final-pages-exception-handling-and-conclusion"></a>8 부: 최종 페이지, 예외 처리 및 결론
 
-[Joe Stagner](https://github.com/JoeStagner)
+만든 사람 [Stagner](https://github.com/JoeStagner)
 
-> Tailspin Spyworks.NET 플랫폼에 대 한 강력 하 고 확장 가능한 응용 프로그램을 생성 하는 방법을 매우 단순 하는 방법을 보여 줍니다. 해제 쇼핑, 체크 아웃 및 관리를 포함 하는 온라인 상점을 만들려고 ASP.NET 4에서 강력한 새 기능을 사용 하는 방법을 보여 줍니다.
+> Tailspin Spyworks는 .NET 플랫폼을 위한 강력 하 고 확장 가능한 응용 프로그램을 만드는 방법을 보여 줍니다. ASP.NET 4의 새로운 기능을 사용 하 여 쇼핑, 구매 및 관리를 포함 한 온라인 상점을 구축 하는 방법을 보여 줍니다.
 > 
-> 이 자습서 시리즈 모든 Tailspin Spyworks 샘플 응용 프로그램 빌드를 수행 하는 단계를 자세히 설명 합니다. 8 부 페이지 및 예외 처리에 대 한 연락처 페이지를 추가합니다. 시리즈의 결론입니다.
+> 이 자습서 시리즈에서는 Tailspin Spyworks 샘플 응용 프로그램을 빌드하는 데 필요한 모든 단계에 대해 자세히 설명 합니다. 8 부에서는 연락처 페이지, 정보 페이지 및 예외 처리를 추가 합니다. 이는 계열의 결론입니다.
 
-## <a id="_Toc260221680"></a>  페이지 (ASP.NET에서 이메일 보내기)에 문의
+## <a id="_Toc260221680"></a>연락처 페이지 (ASP.NET에서 전자 메일 보내기)
 
-ContactUs.aspx 라는 새 페이지 만들기
+ContactUs 라는 새 페이지를 만듭니다.
 
-디자이너를 사용 하는 ToolkitScriptManager 등의 AjaxControlToolkit 편집기 컨트롤을 특수 기록 형식을 만듭니다. .
+디자이너를 사용 하 여 ToolkitScriptManager 및 AjaxControlToolkit의 편집기 컨트롤을 포함 하는 다음과 같은 특수 노트를 만듭니다. .
 
 ![](tailspin-spyworks-part-8/_static/image1.jpg)
 
-코드 숨김 파일에서에서 클릭 이벤트 처리기를 생성 하 고 연락처 정보를 전자 메일로 보내기 위한 메서드를 구현 하 여 "제출" 단추를 두 번 클릭 합니다.
+"제출" 단추를 두 번 클릭 하 여 코드 뒤 파일에서 클릭 이벤트 처리기를 생성 하 고 연락처 정보를 전자 메일로 보내는 메서드를 구현 합니다.
 
 [!code-csharp[Main](tailspin-spyworks-part-8/samples/sample1.cs)]
 
-이 코드는 web.config 파일을 메일을 보내는 데 사용할 SMTP 서버를 지정 하는 구성 섹션의 항목 포함 필요 합니다.
+이 코드를 사용 하려면 web.config 파일에 메일을 보내는 데 사용할 SMTP 서버를 지정 하는 항목을 구성 섹션에 포함 해야 합니다.
 
 [!code-xml[Main](tailspin-spyworks-part-8/samples/sample2.xml)]
 
-## <a id="_Toc260221681"></a>  페이지에 대 한
+## <a id="_Toc260221681"></a>정보 페이지
 
-AboutUs.aspx 라는 페이지를 만들고 원하는 모든 콘텐츠를 추가 합니다.
+AboutUs 라는 페이지를 만들고 원하는 콘텐츠를 추가 합니다.
 
-## <a id="_Toc260221682"></a>  전역 예외 처리기
+## <a id="_Toc260221682"></a>전역 예외 처리기
 
-마지막으로, 응용 프로그램에 걸쳐 우리는 throw 된 예외 되며 예측할 수 없는 경우에는 콜드 또한 웹 응용 프로그램에서 처리 되지 않은 원인 예외입니다.
+마지막으로, 응용 프로그램 전체에서 예외가 throw 되 고 콜드에서 웹 응용 프로그램에 처리 되지 않은 예외가 발생 하는 예측할 수 없는 상황이 발생 합니다.
 
-웹 사이트 방문자에 게 표시할 처리 되지 않은 예외가 없습니다 하려고 합니다.
+처리 되지 않은 예외가 웹 사이트 방문자에 게 표시 되는 것을 원하지 않습니다.
 
 ![](tailspin-spyworks-part-8/_static/image2.jpg)
 
-처리 되지 않은 예외는 끔찍한 사용자 경험 중 외에도 보안 문제가 될 수도 있습니다.
+처리 되지 않은 사용자 환경 외에도 보안 문제가 발생할 수 있습니다.
 
-이 문제를 해결 하려면 전역 예외 처리기를 구현 합니다.
+이 문제를 해결 하기 위해 전역 예외 처리기를 구현 합니다.
 
-이렇게 하려면 Global.asax 파일을 열고 다음 미리 생성 된 이벤트 처리기를 확인 합니다.
+이렇게 하려면 Global.asax 파일을 열고 미리 생성 된 다음 이벤트 처리기를 확인 합니다.
 
 [!code-csharp[Main](tailspin-spyworks-part-8/samples/sample3.cs)]
 
-응용 프로그램을 구현 하는 코드를 추가\_다음과 같은 오류 처리기입니다.
+다음과 같이 응용 프로그램\_오류 처리기를 구현 하는 코드를 추가 합니다.
 
 [!code-csharp[Main](tailspin-spyworks-part-8/samples/sample4.cs)]
 
-그런 다음 솔루션에 Error.aspx 라는 페이지를 추가 하 고이 마크업 코드 조각 추가.
+그런 다음, .aspx 이라는 페이지를 솔루션에 추가 하 고이 마크업 코드 조각을 추가 합니다.
 
 [!code-aspx[Main](tailspin-spyworks-part-8/samples/sample5.aspx)]
 
-페이지에서 이제\_Request 개체에서 이벤트 처리기 추출 오류 메시지를 로드 합니다.
+이제 페이지\_Load 이벤트 처리기에서 요청 개체의 오류 메시지를 추출 합니다.
 
 [!code-csharp[Main](tailspin-spyworks-part-8/samples/sample6.cs)]
 
-## <a id="_Toc260221683"></a>  결론
+## <a id="_Toc260221683"></a>끝낼
 
-ASP.NET WebForms 쉽게 살펴본 등 데이터베이스 액세스, 멤버 자격, AJAX 사용 하 여 정교한 웹 사이트를 만들려고 합니다. 매우 신속 하 게 합니다.
+ASP.NET WebForms를 사용 하면 데이터베이스 액세스, 멤버 자격, AJAX 등의 복잡 한 웹 사이트를 쉽게 만들 수 있습니다. 매우 빠르게 합니다.
 
-다행히이 자습서가 제공한 고유한 ASP.NET WebForms 응용 프로그램 구축을 시작 하는 데 필요한 도구!
+이 자습서에서는 사용자 고유의 ASP.NET WebForms 응용 프로그램 빌드를 시작 하는 데 필요한 도구를 제공 하는 데 도움을 바랍니다.
 
 > [!div class="step-by-step"]
 > [이전](tailspin-spyworks-part-7.md)

@@ -2,25 +2,25 @@
 uid: web-pages/videos/introduction/index
 title: 웹 페이지 비디오 소개 | Microsoft Docs
 author: rick-anderson
-description: 비디오는 Web Pages 및 WebMatrix에 대 한 기본 사항을 볼 수 있습니다.
+description: 웹 페이지 및 WebMatrix에 대 한 기본 사항을 배우기 위해 볼 수 있는 비디오입니다.
 ms.author: riande
 ms.date: 05/18/2012
 ms.assetid: b8a43660-177f-4a00-bb51-be887364c607
 msc.legacyurl: /web-pages/videos/introduction
 msc.type: chapter
 ms.openlocfilehash: e4e9d63ddc701205d9f102e05fe47dd2c552bdf1
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65127734"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78512735"
 ---
 # <a name="introduction-to-web-pages-videos"></a>웹 페이지 비디오 소개
 
-> 비디오는 Web Pages 및 WebMatrix에 대 한 기본 사항을 볼 수 있습니다.
+> 웹 페이지 및 WebMatrix에 대 한 기본 사항을 배우기 위해 볼 수 있는 비디오입니다.
 
 > [!NOTE] 
-> WebMatrix는 더 이상 권장 통합된 개발 환경으로 ASP.NET 웹 페이지에 대 한 합니다. 사용 하 여 [Visual Studio](xref:aspnet/web-pages/overview/getting-started/program-asp-net-web-pages-in-visual-studio) 하거나 [Visual Studio Code](https://code.visualstudio.com/)합니다.
+> WebMatrix는 ASP.NET 웹 페이지을 위한 통합 개발 환경으로 더 이상 권장 되지 않습니다. [Visual Studio](xref:aspnet/web-pages/overview/getting-started/program-asp-net-web-pages-in-visual-studio) 또는 [Visual Studio Code](https://code.visualstudio.com/)를 사용 합니다.
 
 - [ASP.NET 웹 페이지 5분 소개](5-minute-introduction-to-aspnet-web-pages.md)
 - [Microsoft WebMatrix 도구 설치 및 사용](install-and-use-the-microsoft-webmatrix-tool.md)

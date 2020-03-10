@@ -9,11 +9,11 @@ ms.assetid: c1a35f18-bab9-41f7-8497-15530c37a09d
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/aspnet-ajax/understanding-asp-net-ajax-localization
 msc.type: authoredcontent
 ms.openlocfilehash: 003e7939accd7a68dab97441b3d999bca835b85a
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74600838"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78456629"
 ---
 # <a name="understanding-aspnet-ajax-localization"></a>ASP.NET AJAX 지역화 이해
 
@@ -59,10 +59,10 @@ Microsoft AJAX 프레임 워크 스크립트 관리는 스크립트의 배포 �
 
 | 파일 이름 | 의미 |
 | --- | --- |
-| Node.js | 릴리스 버전의 문화권 중립 스크립트입니다. |
-| 스크립트. node.js | 디버그 버전의 문화권 중립 스크립트입니다. |
-| Greeting.en-us.txt | 릴리스 버전 영어, 미국 스크립트 |
-| Script.debug.es | 디버그 버전 스페인어, 특별구 스크립트입니다. |
+| Script.js | 릴리스 버전의 문화권 중립 스크립트입니다. |
+| Script.debug.js | 디버그 버전의 문화권 중립 스크립트입니다. |
+| Script.en-US.js | 릴리스 버전 영어, 미국 스크립트 |
+| Script.debug.es-CO.js | 디버그 버전 스페인어, 특별구 스크립트입니다. |
 
 ## <a name="walkthrough-create-an-localized-embedded-script"></a>연습: 지역화 된 포함 스크립트 만들기
 
