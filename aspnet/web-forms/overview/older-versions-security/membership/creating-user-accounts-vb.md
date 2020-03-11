@@ -9,11 +9,11 @@ ms.assetid: 9ef3e893-bebe-4b13-9fe5-8b71720dd85e
 msc.legacyurl: /web-forms/overview/older-versions-security/membership/creating-user-accounts-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 01be198c329f372ddcd529ad8a369f2d3426a9fc
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74628125"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78474287"
 ---
 # <a name="creating-user-accounts-vb"></a>사용자 계정 만들기(VB)
 
@@ -29,7 +29,7 @@ ms.locfileid: "74628125"
 
 새 사용자 계정을 만드는 방법을 배우는 것 외에도 *<a id="_msoanchor_2"></a>[폼 인증 개요 개요](../introduction/an-overview-of-forms-authentication-vb.md)* 에서 만든 데모 웹 사이트를 업데이트 한 후 *<a id="_msoanchor_3"></a>[폼 인증 구성 및 고급 항목](../introduction/forms-authentication-configuration-and-advanced-topics-vb.md)* 자습서에서 고급을 업데이트 해야 합니다. 데모 웹 응용 프로그램에는 하드 코드 된 사용자 이름/암호 쌍에 대해 사용자 자격 증명의 유효성을 검사 하는 로그인 페이지가 있습니다. 또한 `Global.asax`에는 인증 된 사용자에 대 한 사용자 지정 `IPrincipal` 및 `IIdentity` 개체를 만드는 코드가 포함 되어 있습니다. 로그인 페이지를 업데이트 하 여 멤버 자격 프레임 워크에 대 한 사용자 자격 증명의 유효성을 검사 하 고 사용자 지정 주 및 id 논리를 제거 합니다.
 
-시작 하겠습니다.
+이제 시작하겠습니다.
 
 ## <a name="the-forms-authentication-and-membership-checklist"></a>폼 인증 및 멤버 자격 검사 목록
 
@@ -337,7 +337,7 @@ CreateUserWizard 컨트롤에 입력 한 사용자 이름 및 암호는 각각 [
 - [마스터 페이지 및 사이트 탐색](https://asp.net/learn/data-access/tutorial-03-vb.aspx)
 - [대기 중인 SQL 사이트 맵 공급자](https://msdn.microsoft.com/msdnmag/issues/06/02/WickedCode/default.aspx)
 
-### <a name="about-the-author"></a>작성자 정보
+### <a name="about-the-author"></a>저자 정보
 
 Scott Mitchell는 여러 ASP/ASP. NET books의 작성자와 4GuysFromRolla.com의 창립자가 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 *[24 시간 이내에 ASP.NET 2.0을 sams teach yourself](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)* 것입니다. Scott은 [mitchell@4guysfromrolla.com](mailto:mitchell@4guysfromrolla.com) 또는 [http://ScottOnWriting.NET](http://scottonwriting.net/)의 블로그를 통해 연결할 수 있습니다.
 

@@ -7,11 +7,11 @@ ms.author: riande
 ms.date: 10/29/2018
 msc.type: content
 ms.openlocfilehash: 5299d9ab057c3096773955a7461e77a80673ebfe
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74586758"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78472307"
 ---
 # <a name="configuration-builders-for-aspnet"></a>ASP.NET에 대 한 구성 빌더
 
