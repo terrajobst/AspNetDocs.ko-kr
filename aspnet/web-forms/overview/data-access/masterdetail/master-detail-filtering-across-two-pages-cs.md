@@ -9,11 +9,11 @@ ms.assetid: 552d2d50-fe73-4153-9a7f-2b379bec4625
 msc.legacyurl: /web-forms/overview/data-access/masterdetail/master-detail-filtering-across-two-pages-cs
 msc.type: authoredcontent
 ms.openlocfilehash: ccb3bfa5f215ba6e65b8a10b40041d5c2896c7e3
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74620411"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78424877"
 ---
 # <a name="masterdetail-filtering-across-two-pages-c"></a>두 페이지에 걸쳐 마스터/세부 정보 필터링(C#)
 
@@ -114,7 +114,7 @@ GridView 행에 바인딩된 내부 데이터를 기반으로 하는 텍스트 �
 
 **그림 11**: `SupplierID` Querystring 값에서 *`supplierID`* 매개 변수 값 채우기 ([전체 크기 이미지를 보려면 클릭](master-detail-filtering-across-two-pages-cs/_static/image31.png))
 
-이것이 전부입니다! 그림 12는 `SupplierListMaster.aspx`에서 도쿄 Traders 링크를 클릭 하 여 방문한 `ProductsForSupplierDetails.aspx` 페이지를 보여 줍니다.
+이제 모든 작업을 마쳤습니다. 그림 12는 `SupplierListMaster.aspx`에서 도쿄 Traders 링크를 클릭 하 여 방문한 `ProductsForSupplierDetails.aspx` 페이지를 보여 줍니다.
 
 [도쿄 Traders에서 제공 하는 제품이 표시 ![](master-detail-filtering-across-two-pages-cs/_static/image33.png)](master-detail-filtering-across-two-pages-cs/_static/image32.png)
 
@@ -178,7 +178,7 @@ Products GridView 위에 FormView를 추가 하 여 시작 합니다. `Suppliers
 
 행복 한 프로그래밍
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

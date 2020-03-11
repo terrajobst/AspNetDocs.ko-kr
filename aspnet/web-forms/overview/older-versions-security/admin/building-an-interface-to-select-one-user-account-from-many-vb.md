@@ -9,11 +9,11 @@ ms.assetid: da53380c-a16b-41c7-a20d-24343c735c52
 msc.legacyurl: /web-forms/overview/older-versions-security/admin/building-an-interface-to-select-one-user-account-from-many-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 6c711cdaab113d589d9c2535cb1b422de3f38103
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74614910"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78517751"
 ---
 # <a name="building-an-interface-to-select-one-user-account-from-many-vb"></a>여러 사용자 계정 중 하나를 선택하는 인터페이스 빌드(VB)
 
@@ -29,7 +29,7 @@ ms.locfileid: "74614910"
 
 이 자습서에서는 이러한 사용자 인터페이스를 빌드합니다. 특히 사용자 인터페이스는 사용자 이름의 시작 문자를 기준으로 결과를 필터링 하는 일련의 Linkbutton와 일치 하는 사용자를 표시 하는 GridView 컨트롤로 구성 됩니다. 먼저 GridView의 모든 사용자 계정을 나열 합니다. 그런 다음 3 단계에서 Linkbutton 필터를 추가 합니다. 4 단계에서는 필터링 된 결과의 페이징에 대해 살펴봅니다. 2 ~ 4 단계에서 생성 된 인터페이스는 이후 자습서에서 특정 사용자 계정에 대 한 관리 작업을 수행 하는 데 사용 됩니다.
 
-시작 하겠습니다.
+이제 시작하겠습니다.
 
 ## <a name="step-1-adding-new-aspnet-pages"></a>1 단계: 새 ASP.NET 페이지 추가
 
@@ -222,7 +222,7 @@ First, Previous, Next 및 Last Linkbutton를 사용 하 여 페이징 인터페�
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -230,7 +230,7 @@ First, Previous, Next 및 Last Linkbutton를 사용 하 여 페이징 인터페�
 - [대량의 데이터를 효율적으로 페이징](https://asp.net/learn/data-access/tutorial-25-vb.aspx)
 - [웹 사이트 관리 도구 롤링](http://aspnet.4guysfromrolla.com/articles/052307-1.aspx)
 
-### <a name="about-the-author"></a>작성자 정보
+### <a name="about-the-author"></a>저자 정보
 
 Scott Mitchell는 여러 ASP/ASP. NET books의 작성자와 4GuysFromRolla.com의 창립자가 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 *[24 시간 이내에 ASP.NET 2.0을 sams teach yourself](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)* 것입니다. Scott은 [mitchell@4guysfromrolla.com](mailto:mitchell@4guysfromrolla.com) 또는 [http://ScottOnWriting.NET](http://scottonwriting.net/)의 블로그를 통해 연결할 수 있습니다.
 

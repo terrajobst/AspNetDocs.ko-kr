@@ -9,11 +9,11 @@ ms.assetid: 213eea41-1ab4-4371-8b24-1a1a66c515de
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/creating-stored-procedures-and-user-defined-functions-with-managed-code-cs
 msc.type: authoredcontent
 ms.openlocfilehash: c6aec9ca70fe3ab568b3d17fea6bfd56671edc03
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74605054"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78428615"
 ---
 # <a name="creating-stored-procedures-and-user-defined-functions-with-managed-code-c"></a>관리 코드를 사용하여 저장 프로시저 및 사용자 정의 함수 만들기(C#)
 
@@ -136,7 +136,7 @@ Northwind 데이터베이스에 관리 되는 저장 프로시저를 추가 하�
 
 ## <a name="step-4-deploying-the-managed-stored-procedure"></a>4 단계: 관리 되는 저장 프로시저 배포
 
-이 코드가 완료 되 면 Northwind 데이터베이스에 배포할 준비가 된 것입니다. SQL Server 프로젝트를 배포 하면 코드를 어셈블리로 컴파일하고, 어셈블리를 데이터베이스에 등록 하 고, 어셈블리의 적절 한 메서드에 연결 하 여 데이터베이스에 해당 개체를 만듭니다. 배포 옵션에 의해 수행 되는 정확한 작업 집합은 13 단계에서 보다 정확 하 게 알 수 있습니다. 솔루션 탐색기에서 `ManagedDatabaseConstructs` 프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 배포 옵션을 선택 합니다. 그러나 다음 오류로 인해 배포가 실패 합니다. ' EXTERNAL ' 근처의 구문이 잘못 되었습니다. 이 기능을 사용 하려면 현재 데이터베이스의 호환성 수준을 더 높은 값으로 설정 해야 할 수 있습니다. `sp_dbcmptlevel`저장 프로시저에 대 한 도움말을 참조 하세요.
+이 코드가 완료 되 면 Northwind 데이터베이스에 배포할 준비가 된 것입니다. SQL Server 프로젝트를 배포 하면 코드를 어셈블리로 컴파일하고, 어셈블리를 데이터베이스에 등록 하 고, 어셈블리의 적절 한 메서드에 연결 하 여 데이터베이스에 해당 개체를 만듭니다. 배포 옵션에 의해 수행 되는 정확한 작업 집합은 13 단계에서 보다 정확 하 게 알 수 있습니다. 솔루션 탐색기에서 `ManagedDatabaseConstructs` 프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 배포 옵션을 선택 합니다. 그러나 다음 오류로 인해 배포가 실패 합니다. ' EXTERNAL ' 근처의 구문이 잘못 되었습니다. 이 기능을 사용하려면 현재 데이터베이스의 호환성 수준 값을 더 높게 설정해야 합니다. `sp_dbcmptlevel`저장 프로시저에 대 한 도움말을 참조 하세요.
 
 이 오류 메시지는 어셈블리를 Northwind 데이터베이스에 등록 하려고 할 때 발생 합니다. SQL Server 2005 데이터베이스에 어셈블리를 등록 하려면 데이터베이스 호환성 수준을 90으로 설정 해야 합니다. 기본적으로 새 SQL Server 2005 데이터베이스의 호환성 수준은 90입니다. 그러나 Microsoft SQL Server 2000를 사용 하 여 만든 데이터베이스의 기본 호환성 수준은 80입니다. Northwind 데이터베이스는 처음에 Microsoft SQL Server 2000 데이터베이스 이므로 호환성 수준이 현재 80로 설정 되어 있으므로 관리 되는 데이터베이스 개체를 등록 하려면 90로 늘려야 합니다.
 
@@ -456,7 +456,7 @@ Visual Studio s SQL Server 프로젝트 형식은 관리 되는 데이터베이�
 
 행복 한 프로그래밍
 
-## <a name="further-reading"></a>추가 정보
+## <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -468,10 +468,10 @@ Visual Studio s SQL Server 프로젝트 형식은 관리 되는 데이터베이�
 - [방법: SQL 개체를 실행 하는 `Test.sql` 스크립트 편집](https://msdn.microsoft.com/library/ms233682(VS.80).aspx)
 - [사용자 정의 함수 소개](http://www.sqlteam.com/item.asp?ItemID=1955)
 - [관리 코드 및 SQL Server 2005 (비디오)](https://channel9.msdn.com/Showpost.aspx?postid=142413)
-- [Transact-sql 참조](https://msdn.microsoft.com/library/aa299742(SQL.80).aspx)
+- [Transact-SQL 참조](https://msdn.microsoft.com/library/aa299742(SQL.80).aspx)
 - [연습: 관리 코드에서 저장 프로시저 만들기](https://msdn.microsoft.com/library/zxsa8hkf(VS.80).aspx)
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 

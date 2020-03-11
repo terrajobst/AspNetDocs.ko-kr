@@ -9,11 +9,11 @@ ms.assetid: 61aa4e08-aa81-4aeb-8ebe-19ba7a65e04c
 msc.legacyurl: /web-forms/overview/older-versions-security/membership/validating-user-credentials-against-the-membership-user-store-cs
 msc.type: authoredcontent
 ms.openlocfilehash: aaf6df6f52253ef0f7369a7e77211b6786b97db1
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74618308"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78420293"
 ---
 # <a name="validating-user-credentials-against-the-membership-user-store-c"></a>멤버 자격 사용자 저장소에 대해 사용자 자격 증명의 유효성 검사(C#)
 
@@ -29,7 +29,7 @@ ms.locfileid: "74618308"
 
 사용자 계정을 만드는 것과 매우 유사 하 게 자격 증명을 프로그래밍 방식으로 또는 선언적으로 확인할 수 있습니다. 멤버 자격 API에는 사용자 저장소에 대해 사용자의 자격 증명을 프로그래밍 방식으로 확인 하는 메서드가 포함 되어 있습니다. 및 ASP.NET에는 사용자 이름 및 암호에 대 한 텍스트 상자와 로그인 단추를 사용 하 여 사용자 인터페이스를 렌더링 하는 로그인 웹 컨트롤이 함께 제공 됩니다.
 
-이 자습서에서는 프로그래밍 방식 및 로그인 제어를 모두 사용 하 여 멤버 자격 사용자 저장소에 대해 사용자 자격 증명의 유효성을 검사 하는 방법을 설명 합니다. 로그인 컨트롤의 모양과 동작을 사용자 지정 하는 방법에 대해서도 살펴봅니다. 시작 하겠습니다.
+이 자습서에서는 프로그래밍 방식 및 로그인 제어를 모두 사용 하 여 멤버 자격 사용자 저장소에 대해 사용자 자격 증명의 유효성을 검사 하는 방법을 설명 합니다. 로그인 컨트롤의 모양과 동작을 사용자 지정 하는 방법에 대해서도 살펴봅니다. 이제 시작하겠습니다.
 
 ## <a name="step-1-validating-credentials-against-the-membership-user-store"></a>1 단계: 멤버 자격 사용자 저장소에 대 한 자격 증명 유효성 검사
 
@@ -51,7 +51,7 @@ ms.locfileid: "74618308"
 
 이 코드는 매우 간단 합니다. `Membership.ValidateUser` 메서드를 호출 하 여 제공 된 사용자 이름과 암호를 전달 하는 것부터 시작 합니다. 해당 메서드가 true를 반환 하는 경우 사용자는 `FormsAuthentication` 클래스의 RedirectFromLoginPage 메서드를 통해 사이트에 로그인 됩니다. ( <a id="Tutorial2"> </a> [*폼 인증 자습서 개요*](../introduction/an-overview-of-forms-authentication-cs.md) 에서 설명 했 듯이 `FormsAuthentication.RedirectFromLoginPage` 폼 인증 티켓을 만든 다음 사용자를 적절 한 페이지로 리디렉션합니다.) 그러나 자격 증명이 유효 하지 않은 경우에는 사용자 이름 또는 암호가 잘못 되었음을 사용자에 게 알리는 `InvalidCredentialsMessage` 레이블이 표시 됩니다.
 
-이것이 전부입니다!
+이제 모든 작업을 마쳤습니다.
 
 로그인 페이지가 예상 대로 작동 하는지 테스트 하려면 이전 자습서에서 만든 사용자 계정 중 하나를 사용 하 여 로그인을 시도 합니다. 계정을 아직 만들지 않은 경우 계속 진행 하 여 `~/Membership/CreatingUserAccounts.aspx` 페이지에서 만드세요.
 
@@ -230,7 +230,7 @@ ms.locfileid: "74618308"
 
 ## <a name="step-4-improving-the-login-controls-invalid-credentials-message"></a>4 단계: 로그인 컨트롤의 잘못 된 자격 증명 메시지 개선
 
-사용자가 잘못 된 자격 증명을 사용 하 여 로그온을 시도 하는 경우 로그인 컨트롤은 로그인 시도가 실패 했음을 설명 하는 메시지를 표시 합니다. 특히 사용자의 로그인 시도에 대 한 기본값을 포함 하는 [`FailureText` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.login.failuretext.aspx)으로 지정 된 메시지를 컨트롤에 표시 합니다. 다시 시도하세요.
+사용자가 잘못 된 자격 증명을 사용 하 여 로그온을 시도 하는 경우 로그인 컨트롤은 로그인 시도가 실패 했음을 설명 하는 메시지를 표시 합니다. 특히 사용자의 로그인 시도에 대 한 기본값을 포함 하는 [`FailureText` 속성](https://msdn.microsoft.com/library/system.web.ui.webcontrols.login.failuretext.aspx)으로 지정 된 메시지를 컨트롤에 표시 합니다. 나중에 다시 시도하세요.
 
 사용자의 자격 증명이 유효 하지 않은 이유는 여러 가지가 있습니다.
 
@@ -251,7 +251,7 @@ ms.locfileid: "74618308"
 
 이 코드를 테스트 하려면 의도적으로 기존 사용자로 로그인을 시도 하지만 잘못 된 암호를 사용 합니다. 10 분의 시간 프레임 내에 행에서이 작업을 5 번 수행 하면 계정이 잠깁니다. 그림 11에 표시 된 것 처럼 후속 로그인 시도는 항상 올바른 암호를 사용 하 여 실패 하지만 로그인 시도가 너무 많기 때문에 계정이 잠긴 것으로 표시 됩니다. 관리자에 게 문의 하 여 계정 잠금이 해제 된 메시지를 확인 하세요.
 
-[Tito 잘못 된 로그인 시도를 너무 많이 수행 하 여 잠 궜 습니다.](validating-user-credentials-against-the-membership-user-store-cs/_static/image32.png)](validating-user-credentials-against-the-membership-user-store-cs/_static/image31.png)
+[Tito 잘못 된 로그인 시도를 너무 많이 수행 하 여 잠 궜 습니다.](validating-user-credentials-against-the-membership-user-store-cs/_static/image32.png)](validating-user-credentials-against-the-membership-user-store-cs/_static/image31.png)![
 
 **그림 11**: 잘못 된 로그인 시도를 너무 많이 수행 하 여 잠금 ([전체 크기 이미지를 보려면 클릭](validating-user-credentials-against-the-membership-user-store-cs/_static/image33.png))
 
@@ -265,7 +265,7 @@ ms.locfileid: "74618308"
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -275,7 +275,7 @@ ms.locfileid: "74618308"
 - [로그인 컨트롤 기술 설명서](https://msdn.microsoft.com/library/system.web.ui.webcontrols.login.aspx)
 - [Login 컨트롤 사용](https://quickstarts.asp.net/QuickStartv20/aspnet/doc/security/login.aspx)
 
-### <a name="about-the-author"></a>작성자 정보
+### <a name="about-the-author"></a>저자 정보
 
 Scott Mitchell는 여러 ASP/ASP. NET books의 작성자와 4GuysFromRolla.com의 창립자가 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 *[24 시간 이내에 ASP.NET 2.0을 sams teach yourself](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)* 것입니다. Scott은 [mitchell@4guysfromrolla.com](mailto:mitchell@4guysfromrolla.com) 또는 [http://ScottOnWriting.NET](http://scottonwriting.net/)의 블로그를 통해 연결할 수 있습니다.
 

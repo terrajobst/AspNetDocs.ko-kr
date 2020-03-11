@@ -9,11 +9,11 @@ ms.assetid: b4ac129d-1b8e-41ca-a38f-9b19d7c7bb0e
 msc.legacyurl: /web-forms/overview/older-versions-security/membership/creating-the-membership-schema-in-sql-server-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 97623e7c13ab7799b9dadbb8e52be8e0cd99e252
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74594932"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78464441"
 ---
 # <a name="creating-the-membership-schema-in-sql-server-c"></a>SQL Server에서 멤버 자격 스키마 만들기(C#)
 
@@ -33,7 +33,7 @@ ASP.NET 2.0 이전에는 개발자가 이러한 모든 사용자 계정 관련 �
 
 이 자습서에서는 먼저 `SqlMembershipProvider`를 사용 하기 위해 필요한 스키마를 데이터베이스에 추가 하는 기술에 대해 검토 합니다. 다음에는 스키마의 키 테이블을 살펴보고 목적과 중요도에 대해 설명 합니다. 이 자습서에서는 멤버 프레임 워크에서 사용 해야 하는 공급자를 ASP.NET 응용 프로그램에 알리는 방법에 대해 살펴봅니다.
 
-시작 하겠습니다.
+이제 시작하겠습니다.
 
 ## <a name="step-1-deciding-where-to-place-the-user-store"></a>1 단계: 사용자 저장소를 보관할 위치 결정
 
@@ -202,13 +202,13 @@ ASP.NET 응용 프로그램의 멤버 자격 및 역할 프레임 워크를 사�
 
 암호 저장을 담당 하는 열은 `Password`, `PasswordFormat`및 `PasswordSalt`입니다. `PasswordFormat`은 암호를 저장 하는 데 사용 되는 기술을 나타내는 값을 갖는 `int` 형식의 필드입니다. 0은 암호를 저장 하는 데 사용 됩니다. 1은 해시 됩니다. 2는 암호화 됩니다. 사용 된 암호 저장소 기술에 관계 없이 임의로 생성 된 문자열이 `PasswordSalt`에 할당 됩니다. `PasswordSalt` 값은 암호의 해시를 계산 하는 경우에만 사용 됩니다. 마지막으로, `Password` 열에는 실제 암호 데이터, 일반 텍스트 암호, 암호 해시 또는 암호화 된 암호가 포함 됩니다.
 
-표 1에서는 암호 MySecret을 저장할 때 다양 한 저장소 기술에 대해 이러한 세 개의 열이 어떻게 표시 될 수 있는지를 보여 줍니다. 의 기본 클래스입니다.
+표 1에서는 암호 MySecret을 저장할 때 다양 한 저장소 기술에 대해 이러한 세 개의 열이 어떻게 표시 될 수 있는지를 보여 줍니다. .
 
 | **저장소 기술&lt;\_o3a\_p/&gt;** | **암호&lt;\_o3a\_p/&gt;** | **PasswordFormat&lt;\_o3a\_p/&gt;** | **PasswordSalt&lt;\_o3a\_p/&gt;** |
 | --- | --- | --- | --- |
-| 지우기 | MySecret! | 0 | tTnkPlesqissc2y2SMEygA = = |
-| 된 | 2oXm6sZHWbTHFgjgkGQsc2Ec9ZM = | 1 | wFgjUfhdUFOCKQiI61vtiQ = = |
-| 됨 | 62RZgDvhxykkqsMchZ0Yly7HS6onhpaoCYaRxV8g0F4CW56OXUU3e7Inza9j9BKp | 2 | LSRzhGS/aa/oqAXGLHJNBw = = |
+| 지우기 | MySecret! | 0 | tTnkPlesqissc2y2SMEygA== |
+| 된 | 2oXm6sZHWbTHFgjgkGQsc2Ec9ZM= | 1 | wFgjUfhdUFOCKQiI61vtiQ== |
+| 암호화 | 62RZgDvhxykkqsMchZ0Yly7HS6onhpaoCYaRxV8g0F4CW56OXUU3e7Inza9j9BKp | 2 | LSRzhGS/aa/oqAXGLHJNBw== |
 
 **표 1**: 암호 Mysecret을 저장할 때 암호 관련 필드에 대 한 예제 값
 
@@ -250,7 +250,7 @@ ASP.NET 응용 프로그램의 멤버 자격 및 역할 프레임 워크를 사�
 | `commandTimeout` | SQL 명령 제한 시간 값 (초)을 지정 합니다. 기본값은 30입니다. |
 | `connectionStringName` | 사용자 저장소 데이터베이스에 연결 하는 데 사용할 `<connectionStrings>` 요소에 있는 연결 문자열의 이름입니다. 이 값은 필수입니다. |
 | `description` | 등록 된 공급자에 대 한 사용자에 게 친숙 한 설명을 제공 합니다. |
-| `enablePasswordRetrieval` | 사용자가 잊어버린 암호를 검색할 수 있는지 여부를 지정 합니다. 기본값은 `false`여야 합니다. |
+| `enablePasswordRetrieval` | 사용자가 잊어버린 암호를 검색할 수 있는지 여부를 지정 합니다. 기본값은 `false`입니다. |
 | `enablePasswordReset` | 사용자가 자신의 암호를 재설정할 수 있는지 여부를 나타냅니다. 기본값은 `true`입니다. |
 | `maxInvalidPasswordAttempts` | 사용자가 잠기기 전에 `passwordAttemptWindow` 지정 된 사용자가 지정 된 사용자에 대해 발생할 수 있는 최대 로그인 실패 횟수입니다. 기본값은 5입니다. |
 | `minRequiredNonalphanumericCharacters` | 사용자의 암호에 표시 되어야 하는 영숫자가 아닌 최소 문자 수입니다. 이 값은 0에서 128 사이 여야 합니다. 기본값은 1입니다. |
@@ -259,8 +259,8 @@ ASP.NET 응용 프로그램의 멤버 자격 및 역할 프레임 워크를 사�
 | `passwordAttemptWindow` | 실패 한 로그인 시도가 추적 되는 시간 (분)입니다. 사용자가 지정 된 기간 내에 잘못 된 로그인 자격 `maxInvalidPasswordAttempts` 증명을 제공 하는 경우에는 잠금이 잠깁니다. 기본값은 10입니다. |
 | `PasswordFormat` | 암호 저장소 형식: `Clear`, `Hashed`또는 `Encrypted`. 기본값은 `Hashed`입니다. |
 | `passwordStrengthRegularExpression` | 제공 되는 경우이 정규식은 새 계정을 만들 때 또는 암호를 변경할 때 사용자가 선택한 암호의 강도를 평가 하는 데 사용 됩니다. 기본값은 빈 문자열입니다. |
-| `requiresQuestionAndAnswer` | 사용자가 암호를 검색 하거나 다시 설정 하는 경우 보안 질문에 답변해 야 하는지 여부를 지정 합니다. 기본값은 `true`여야 합니다. |
-| `requiresUniqueEmail` | 지정 된 응용 프로그램 파티션의 모든 사용자 계정에 고유한 전자 메일 주소가 있어야 하는지 여부를 나타냅니다. 기본값은 `true`여야 합니다. |
+| `requiresQuestionAndAnswer` | 사용자가 암호를 검색 하거나 다시 설정 하는 경우 보안 질문에 답변해 야 하는지 여부를 지정 합니다. 기본값은 `true`입니다. |
+| `requiresUniqueEmail` | 지정 된 응용 프로그램 파티션의 모든 사용자 계정에 고유한 전자 메일 주소가 있어야 하는지 여부를 나타냅니다. 기본값은 `true`입니다. |
 | `type` | 공급자의 유형을 지정 합니다. 이 값은 필수입니다. |
 
 **표 2**: 멤버 자격 및 `SqlMembershipProvider` 구성 설정
@@ -311,7 +311,7 @@ ASP.NET 응용 프로그램의 멤버 자격 및 역할 프레임 워크를 사�
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -331,7 +331,7 @@ ASP.NET 응용 프로그램의 멤버 자격 및 역할 프레임 워크를 사�
 - [멤버 자격 스키마와 함께 작동하도록 SQL 구성](../../../videos/authentication/configuring-sql-to-work-with-membership-schemas.md)
 - [기본 멤버 자격 스키마에서 멤버 자격 설정 변경](../../../videos/authentication/changing-membership-settings-in-the-default-membership-schema.md)
 
-### <a name="about-the-author"></a>작성자 정보
+### <a name="about-the-author"></a>저자 정보
 
 Scott Mitchell는 여러 ASP/ASP. NET books의 작성자와 4GuysFromRolla.com의 창립자가 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 *[24 시간 이내에 ASP.NET 2.0을 sams teach yourself](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)* 것입니다. Scott은 [mitchell@4guysfromrolla.com](mailto:mitchell@4guysfromrolla.com) 또는 [http://ScottOnWriting.NET](http://scottonwriting.net/)의 블로그를 통해 연결할 수 있습니다.
 

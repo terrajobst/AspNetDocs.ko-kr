@@ -9,11 +9,11 @@ ms.assetid: 59c01998-9326-4ecb-9392-cb9615962140
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting/efficiently-paging-through-large-amounts-of-data-cs
 msc.type: authoredcontent
 ms.openlocfilehash: a3e9562035cb24987b01fcdff5fbfb5fa8a1f894
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74629710"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78477011"
 ---
 # <a name="efficiently-paging-through-large-amounts-of-data-c"></a>대량의 데이터를 효율적으로 페이징(C#)
 
@@ -298,12 +298,12 @@ ObjectDataSource가 현재 `GetProductsPaged` `startRowIndex` 및 `maximumRows` 
 
 [SQL Server 2005를 사용 하는 ASP.NET 2.0의 사용자 지정 페이징이](http://aspnet.4guysfromrolla.com/articles/031506-1.aspx)포함 된 문서에는 5만 레코드를 사용 하 여 데이터베이스 테이블을 페이징할 때 이러한 두 페이징 기술 간의 성능 차이를 보이는 몇 가지 성능 테스트가 포함 되어 있습니다. 이러한 테스트에서는 [SQL Profiler](https://msdn.microsoft.com/library/ms173757.aspx)를 사용 하 여 SQL Server 수준에서 쿼리를 실행 하 고 [ASP.NET s 추적 기능](https://msdn.microsoft.com/library/y13fw6we.aspx)을 사용 하는 ASP.NET 페이지에서 쿼리를 실행 하는 시간을 모두 검사 했습니다. 이러한 테스트는 단일 활성 사용자로 개발 상자에서 실행 되었으며 일반적인 웹 사이트 로드 패턴을 모방 하지 unscientific. 상관 없이 결과는 충분 한 양의 데이터로 작업할 때의 기본 및 사용자 지정 페이징에 대 한 실행 시간의 상대적 차이를 보여 줍니다.
 
-|  | **평균 기간 (초)** | **읽기** |
+|  | **평균 기간 (초)** | **Reads** |
 | --- | --- | --- |
 | **기본 페이징 SQL 프로파일러** | 1.411 | 383 |
 | **사용자 지정 페이징 SQL 프로파일러** | 0.002 | 29 |
-| **기본 페이징 ASP.NET 추적** | 2.379 | *해당 없음* |
-| **사용자 지정 페이징 ASP.NET 추적** | 0.029 | *해당 없음* |
+| **기본 페이징 ASP.NET 추적** | 2.379 | *해당 사항 없음* |
+| **사용자 지정 페이징 ASP.NET 추적** | 0.029 | *해당 사항 없음* |
 
 여기에서 볼 수 있듯이 데이터의 특정 페이지를 검색 하는 데는 평균적으로 평균을 354 하 고 시간을 단축 하 여 완료 해야 합니다. ASP.NET 페이지에서 사용자 지정 페이지는 기본 페이징을 사용 하는 경우 발생 하는 시간<sup>을 1/100 이상으로 렌더링할</sup> 수 있었습니다. 사용자 환경에서 이러한 테스트를 재현 하기 위해 다운로드할 수 있는 코드 및 데이터베이스와 함께 이러한 결과에 대 한 자세한 내용은 [my 문서](http://aspnet.4guysfromrolla.com/articles/031506-1.aspx) 를 참조 하세요.
 
@@ -317,7 +317,7 @@ ObjectDataSource가 현재 `GetProductsPaged` `startRowIndex` 및 `maximumRows` 
 
 행복 한 프로그래밍
 
-## <a name="about-the-author"></a>작성자 정보
+## <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)(7 개의 ASP/ASP. NET books 및 [4GuysFromRolla.com](http://www.4guysfromrolla.com)창립자)은 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 2.0을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. mitchell@4GuysFromRolla.com에 도달할 수 있습니다 [.](mailto:mitchell@4GuysFromRolla.com) 또는 블로그를 통해 [http://ScottOnWriting.NET](http://ScottOnWriting.NET)에서 찾을 수 있습니다.
 
