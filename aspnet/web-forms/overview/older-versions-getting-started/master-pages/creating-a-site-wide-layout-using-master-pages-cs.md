@@ -9,11 +9,11 @@ ms.assetid: 78f8d194-03b9-44a5-8255-90e7cd1c2ee1
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/creating-a-site-wide-layout-using-master-pages-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 1a5e85c443a2a3642ec185ab1897c43cdb2ab1f7
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74619366"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78507335"
 ---
 # <a name="creating-a-site-wide-layout-using-master-pages-c"></a>마스터 페이지를 사용하여 사이트 전체 레이아웃 만들기(C#)
 
@@ -25,7 +25,7 @@ ms.locfileid: "74619366"
 
 ## <a name="introduction"></a>소개
 
-잘 디자인 된 웹 사이트의 한 가지 특성은 일관 된 사이트 전체 페이지 레이아웃입니다. Www.asp.net 웹 사이트를 예로 들어 보겠습니다. 이 문서를 작성할 당시에는 페이지의 위쪽과 아래쪽에 있는 모든 페이지의 내용이 동일 합니다. 그림 1에 나와 있는 것 처럼 각 페이지의 맨 위에는 Microsoft 커뮤니티 목록과 함께 회색 막대가 표시 됩니다. 그 아래에 사이트 로고, 사이트가 번역 된 언어 목록 및 핵심 섹션인 홈, 시작, 학습, 다운로드 등이 있습니다. 마찬가지로 페이지 아래쪽에는 www.asp.net의 광고, 저작권 설명 및 개인 정보 취급 방침에 대 한 링크가 포함 되어 있습니다.
+잘 디자인 된 웹 사이트의 한 가지 특성은 일관 된 사이트 전체 페이지 레이아웃입니다. [www.asp.net](www.asp.net) 웹 사이트를 예로 들어 보겠습니다. 이 문서를 작성할 당시에는 페이지의 위쪽과 아래쪽에 있는 모든 페이지의 내용이 동일 합니다. 그림 1에 나와 있는 것 처럼 각 페이지의 맨 위에는 Microsoft 커뮤니티 목록과 함께 회색 막대가 표시 됩니다. 그 아래에 사이트 로고, 사이트가 번역 된 언어 목록 및 핵심 섹션인 홈, 시작, 학습, 다운로드 등이 있습니다. 마찬가지로 페이지의 맨 아래 www.asp.net , 저작권, 개인정보취급방침 대 한 링크에 광고 정보를 포함 합니다.
 
 [www.asp.net 웹 사이트 ![모든 페이지에서 일관 된 모양과 느낌을 적용 합니다.](creating-a-site-wide-layout-using-master-pages-cs/_static/image2.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image1.png)
 
@@ -46,7 +46,7 @@ ms.locfileid: "74619366"
 
 이러한 자습서는 간결 하 게 만들어 프로세스를 시각적으로 안내 하는 다양 한 스크린 샷를 제공 하는 단계별 지침을 제공 합니다. 각 자습서는 및 Visual Basic C# 버전에서 사용할 수 있으며, 사용 되는 전체 코드의 다운로드를 포함 합니다.
 
-이 개최 자습서에서는 마스터 페이지 기본 사항에 대해 살펴봅니다. 마스터 페이지의 작동 방식에 대해 설명 하 고, Visual Web Developer를 사용 하 여 마스터 페이지 및 연결 된 콘텐츠 페이지 만들기를 살펴보고, 마스터 페이지의 변경 내용이 해당 콘텐츠 페이지에 즉시 반영 되는 방식을 확인 합니다. 시작 하겠습니다.
+이 개최 자습서에서는 마스터 페이지 기본 사항에 대해 살펴봅니다. 마스터 페이지의 작동 방식에 대해 설명 하 고, Visual Web Developer를 사용 하 여 마스터 페이지 및 연결 된 콘텐츠 페이지 만들기를 살펴보고, 마스터 페이지의 변경 내용이 해당 콘텐츠 페이지에 즉시 반영 되는 방식을 확인 합니다. 이제 시작하겠습니다.
 
 ## <a name="understanding-how-master-pages-work"></a>마스터 페이지의 작동 방식 이해
 
@@ -61,7 +61,7 @@ ASP.NET 버전 2.0 이전에는 페이지 개발자가 일반적으로 [사용�
 > [!NOTE]
 > ASP.NET 버전 2.0 이후에는 마스터 페이지의 핵심 개념 및 기능이 변경 되지 않았습니다. 그러나 Visual Studio 2008는 Visual Studio 2005에 없는 기능인 중첩 된 마스터 페이지에 대 한 디자인 타임 지원을 제공 합니다. 이후 자습서에서 중첩 된 마스터 페이지를 사용 하는 방법을 살펴보겠습니다.
 
-그림 2에서는 www.asp.net의 마스터 페이지가 어떻게 표시 되는지 보여 줍니다. 마스터 페이지는 각 페이지의 위쪽, 아래쪽 및 오른쪽에 있는 태그와 각 개별 웹 페이지에 대 한 고유한 콘텐츠가 있는 왼쪽 가운데에 있는 ContentPlaceHolder 공통 사이트 전체 레이아웃을 정의 합니다.
+그림 2 www.asp.net 에 대 한 마스터 페이지 모양을 보여 줍니다. 마스터 페이지는 각 페이지의 위쪽, 아래쪽 및 오른쪽에 있는 태그와 각 개별 웹 페이지에 대 한 고유한 콘텐츠가 있는 왼쪽 가운데에 있는 ContentPlaceHolder 공통 사이트 전체 레이아웃을 정의 합니다.
 
 ![마스터 페이지는 콘텐츠 페이지 별로 사이트 전체 레이아웃 및 편집 가능한 영역을 정의 합니다.](creating-a-site-wide-layout-using-master-pages-cs/_static/image4.png)
 
@@ -235,7 +235,7 @@ Visual Web Developer를 통해 새 마스터 페이지 파일을 추가 하면 �
 
 행복 한 프로그래밍
 
-### <a name="further-reading"></a>추가 정보
+### <a name="further-reading"></a>추가 참고 자료
 
 이 자습서에서 설명 하는 항목에 대 한 자세한 내용은 다음 리소스를 참조 하세요.
 
@@ -246,7 +246,7 @@ Visual Web Developer를 통해 새 마스터 페이지 파일을 추가 하면 �
 - [ASP.NET의 마스터 페이지](http://www.odetocode.com/articles/419.aspx)
 - [마스터 페이지 빠른 시작 자습서](https://quickstarts.asp.net/QuickStartv20/aspnet/doc/masterpages/default.aspx)
 
-### <a name="about-the-author"></a>작성자 정보
+### <a name="about-the-author"></a>저자 정보
 
 [Scott Mitchell](http://www.4guysfromrolla.com/ScottMitchell.shtml)는 여러 ASP/ASP. NET books의 작성자와 4GuysFromRolla.com의 창립자가 1998부터 Microsoft 웹 기술을 사용 하 여 작업 했습니다. Scott은 독립 컨설턴트, 강사 및 기록기로 작동 합니다. 최신 책은 [*24 시간 이내에 ASP.NET 3.5을 sams teach yourself*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco)것입니다. Scott은 [mitchell@4GuysFromRolla.com](mailto:mitchell@4GuysFromRolla.com) 또는 [http://ScottOnWriting.NET](http://scottonwriting.net/)의 블로그를 통해 연결할 수 있습니다.
 
