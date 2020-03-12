@@ -8,12 +8,12 @@ ms.date: 11/28/2017
 ms.custom: seoapril2019
 msc.legacyurl: /web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 3e35c2bc0e46dfdb4544b772775eddd533f27be3
-ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
+ms.openlocfilehash: 2717d93f47be9d4a6548731d8deeca312b25f39f
+ms.sourcegitcommit: 9e3ca74997a67c18589729d4b7303799905473eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78448553"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79084048"
 ---
 # <a name="get-started-with-aspnet-web-api-2-c"></a>ASP.NET Web API 2 (C#) 시작
 
@@ -137,7 +137,7 @@ Web API에서 *컨트롤러*는 HTTP 요청을 처리하는 개체입니다. 제
 
 제품 목록을 가져오려면 HTTP GET 요청을 &quot;/api/products&quot;보냅니다.
 
-JQuery [Getjson](http://api.jquery.com/jQuery.getJSON/) 함수는 AJAX 요청을 보냅니다. For response에 JSON 개체의 배열이 포함 되어 있습니다. `done` 함수는 요청이 성공 하는 경우 호출 되는 콜백을 지정 합니다. 콜백에서 제품 정보를 사용 하 여 DOM을 업데이트 합니다.
+JQuery [Getjson](http://api.jquery.com/jQuery.getJSON/) 함수는 AJAX 요청을 보냅니다. 응답에는 JSON 개체의 배열이 포함 되어 있습니다. `done` 함수는 요청이 성공 하는 경우 호출 되는 콜백을 지정 합니다. 콜백에서 제품 정보를 사용 하 여 DOM을 업데이트 합니다.
 
 [!code-html[Main](tutorial-your-first-web-api/samples/sample4.html)]
 
@@ -165,7 +165,7 @@ ID로 제품을 가져오려면 ID를 입력 하 고 검색을 클릭 합니다.
 
 ## <a name="using-f12-to-view-the-http-request-and-response"></a>F12 키를 사용 하 여 HTTP 요청 및 응답 보기
 
-HTTP 서비스를 사용 하는 경우 HTTP 요청 및 요청 메시지를 확인 하는 것이 매우 유용할 수 있습니다. Internet Explorer 9의 F12 개발자 도구를 사용 하 여이 작업을 수행할 수 있습니다. Internet Explorer 9에서 **F12** 키를 눌러 도구를 엽니다. **네트워크** 탭을 클릭 하 고 **캡처 시작**을 누릅니다. 이제 웹 페이지로 돌아가 **F5** 키를 눌러 웹 페이지를 다시 로드 합니다. Internet Explorer는 브라우저와 웹 서버 간의 HTTP 트래픽을 캡처합니다. 요약 보기에는 페이지에 대 한 모든 네트워크 트래픽이 표시 됩니다.
+HTTP 서비스를 사용 하는 경우 HTTP 요청 및 응답 메시지를 확인 하는 것이 매우 유용할 수 있습니다. Internet Explorer 9의 F12 개발자 도구를 사용 하 여이 작업을 수행할 수 있습니다. Internet Explorer 9에서 **F12** 키를 눌러 도구를 엽니다. **네트워크** 탭을 클릭 하 고 **캡처 시작**을 누릅니다. 이제 웹 페이지로 돌아가 **F5** 키를 눌러 웹 페이지를 다시 로드 합니다. Internet Explorer는 브라우저와 웹 서버 간의 HTTP 트래픽을 캡처합니다. 요약 보기에는 페이지에 대 한 모든 네트워크 트래픽이 표시 됩니다.
 
 ![](tutorial-your-first-web-api/_static/image14.png)
 
